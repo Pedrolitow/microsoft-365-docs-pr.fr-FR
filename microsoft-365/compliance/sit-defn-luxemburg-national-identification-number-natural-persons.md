@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible du numéro d’identification national de Luxemburg (personnes physiques).
-ms.openlocfilehash: d70052fdccfae70302a89069b5292c0daf5b8b2f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3640f35086c72262013ad3e25b5aec1bfe8b6fa3
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997711"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367222"
 ---
 # <a name="luxemburg-national-identification-number-natural-persons"></a>Numéro national d’identité luxembourgeois (personnes physiques)
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 
@@ -45,7 +37,7 @@ Ce type d’informations sensibles est uniquement disponible pour une utilisatio
 13 chiffres :
 
 - 11 chiffres
-- deux chiffres de vérification
+- deux chiffres de contrôle
 
 ## <a name="checksum"></a>Somme de contrôle
 
@@ -98,7 +90,7 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - identification personnelle
 - identité personnelle
 - personalidno #
-- personalidnumber #
+- #numéroidpersonnel
 - persönliche identifikationsnummer
 - ID unique
 - identité unique

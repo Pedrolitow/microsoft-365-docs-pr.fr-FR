@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
-ms.openlocfilehash: 363ef1fbf760d54e843994347e1e4c1ad3e40146
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 41afd4f726ecef8b63003a1e639f8430a759e5e7
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306611"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325306"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -69,7 +69,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 | [Empêcher les applications Office de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v | v | v | v | v |
 | [Empêcher les applications Office d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | v | v | v | v | v |
 | [Empêcher l’application de communication Office de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v | v | v | v | v |
-| [Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) <br> \*_Exclusions de fichiers et de dossiers non prises en charge._ | v <br> version 1903 (build 18362) ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v <br> version 1903 (build 18362) ou ultérieure | N | N |
+| [Bloquer la persistance via l’abonnement aux événements WMI (Windows Management Instrumentation)](#block-persistence-through-wmi-event-subscription) <br> \*_Exclusions de fichiers et de dossiers non prises en charge._ | v <br> version 1903 (build 18362) ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v <br> version 1903 (build 18362) ou ultérieure | N | N |
 | [Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v <br> version 1803 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v | v | v | v |
 | [Bloquer les appels d’API Win32 à partir de macros Office](#block-win32-api-calls-from-office-macros) | v | v | v | N | N |
@@ -349,7 +349,7 @@ Type d’action de chasse avancé :
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Dépendances : Antivirus Microsoft Defender, AMSI
+Dépendances : Antivirus Microsoft Defender, interface d’analyse anti-programme malveillant (AMSI)
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé
 

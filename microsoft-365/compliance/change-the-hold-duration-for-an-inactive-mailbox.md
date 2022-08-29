@@ -20,14 +20,16 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Une fois qu’une boîte aux lettres Office 365 est inactive, modifiez la durée de conservation ou Office 365 stratégie de rétention affectée à la boîte aux lettres inactive.
-ms.openlocfilehash: 6fdb3993fd6b6503ab672a0c6465a394f3824c4b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c131aabd87b130a72c334ec2399f09e0d9910dab
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628878"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359906"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Une [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) est l’état de boîte aux lettres qui est utilisé pour conserver l’adresse e-mail d’un ancien employé après qu’il a quitté votre organisation. Une boîte aux lettres devient inactive lorsqu’une conservation applicable lui est appliquée avant la suppression de l’objet utilisateur Microsoft 365.  Les types de conservation suivants lancent la création d’une boîte aux lettres inactive lors de la suppression du compte d’utilisateur :
 
@@ -278,7 +280,7 @@ In-Place les conservations ont été mises hors service et ne peuvent plus être
 
     À l’inverse, toutes les stratégies d’archivage (balises de rétention MRM configurées avec une action **MoveToArchive** ) incluses dans la stratégie de rétention MRM affectée à une boîte aux lettres inactive sont ignorées. Cela signifie que les éléments dans une boîte aux lettres inactive qui sont marqués avec une stratégie d'archivage restent dans la boîte aux lettres principale à l'expiration de la période de rétention. Ils ne sont pas déplacés vers la boîte aux lettres d'archivage ni vers le dossier Éléments récupérables dans la boîte aux lettres d'archivage. Ils seront conservés indéfiniment.
     > [!NOTE]
-    > L’application d’une stratégie de rétention Exchange (fonctionnalité gestion des enregistrements de messagerie ou MRM dans Exchange Online) ne crée pas de boîte aux lettres inactive lorsque le compte d’utilisateur est supprimé.
+    > L’application d’une stratégie de rétention Exchange (la fonctionnalité de gestion des enregistrements de messagerie ou MRM dans Exchange Online) ne crée pas de boîte aux lettres inactive lorsque le compte d’utilisateur est supprimé.
 
 - **Comme pour les boîtes aux lettres normales, l’Assistant Dossier géré (MFA) traite également les boîtes aux lettres inactives.** Dans Exchange Online, l’authentification multifacteur traite les boîtes aux lettres environ une fois tous les sept jours. Après avoir modifié la durée de la conservation pour une boîte aux lettres inactive, vous pouvez utiliser la cmdlet **Start-ManagedFolderAssistant** pour démarrer immédiatement le traitement de la nouvelle durée de la conservation pour la boîte aux lettres inactive. Exécutez la commande suivante. 
 

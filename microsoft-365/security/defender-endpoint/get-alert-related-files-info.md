@@ -1,7 +1,7 @@
 ---
-title: Obtenir des informations sur les fichiers associés à une alerte
-description: Récupérez tous les fichiers liés à une alerte spécifique à l’aide de Microsoft Defender for Endpoint.
-keywords: api, api de graphique, api pris en charge, obtenir des informations d’alerte, informations d’alerte, fichiers associés
+title: Obtenir des informations sur les fichiers liés aux alertes
+description: Récupérez tous les fichiers liés à une alerte spécifique à l’aide de Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, obtention d’informations d’alerte, informations d’alerte, fichiers associés
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 609329739849c87dc45dfb5a0767bd2b4b850485
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 778442e5e7804c394eda928a2150dfe3f8ac25f6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283904"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323182"
 ---
-# <a name="get-alert-related-files-information-api"></a>API Obtenir les informations sur les fichiers associés à une alerte
+# <a name="get-alert-related-files-information-api"></a>Obtenir l’API d’informations sur les fichiers liés aux alertes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "61283904"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour une version d’essai gratuite.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,23 +43,23 @@ Récupère tous les fichiers liés à une alerte spécifique.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez interroger les alertes mises à jour pour la dernière fois en fonction de votre période de rétention configurée.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|File.Read.All|« Lire les profils de fichiers »
-Déléguée (compte professionnel ou scolaire)|File.Read.All|« Lire les profils de fichiers »
+Application|File.Read.All|« Lire les profils de fichier »
+Déléguée (compte professionnel ou scolaire)|File.Read.All|« Lire les profils de fichier »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -71,7 +71,7 @@ GET /api/alerts/{id}/files
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -79,7 +79,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’alerte et les fichiers existent : 200 - OK. Si l’alerte est in trouvée - 404 - In trouvé.
+En cas de réussite et d’alerte et de fichiers existent - 200 OK. Si l’alerte est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 

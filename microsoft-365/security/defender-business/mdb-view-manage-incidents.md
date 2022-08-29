@@ -10,18 +10,19 @@ ms.topic: how-to
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 0072cd6088d7fa560e5dbd6f449b766cb6afb694
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2c751289c9d365d72909433fe6534f3f00ba3638
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772640"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320413"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Afficher et gérer les incidents dans Microsoft Defender pour entreprises
 
@@ -55,10 +56,10 @@ Lorsque l’Antivirus Microsoft Defender attribue une gravité d’alerte en fon
 
 | Scénario | Gravité et raison de l’alerte |
 |:---|:---|
-| L’Antivirus Microsoft Defender détecte et arrête une menace avant de causer des dommages. | Informatif <br/><br/>La menace a été arrêtée avant que des dommages n’ont été causés. |
-| L’Antivirus Microsoft Defender détecte les programmes malveillants qui s’exécutaient au sein de votre entreprise. Le programme malveillant est arrêté et corrigé. | Faible <br/><br/>Bien que certains dommages aient pu être causés à un point de terminaison individuel, le programme malveillant ne représente désormais aucune menace pour votre entreprise. |
-| Les programmes malveillants en cours d’exécution sont détectés par Defender entreprise. Le programme malveillant est bloqué presque immédiatement. | Moyenne ou élevée <br/><br/>Le programme malveillant représente une menace pour les points de terminaison individuels et pour votre entreprise. |
-| Un comportement suspect est détecté, mais aucune action de correction n’est encore effectuée. | Faible, moyen ou élevé <br/><br/>La gravité dépend de la mesure dans laquelle le comportement représente une menace pour votre entreprise. |
+| L’Antivirus Microsoft Defender détecte et arrête une menace avant de causer des dommages. | **Information.** La menace a été arrêtée avant que des dommages n’ont été causés. |
+| L’Antivirus Microsoft Defender détecte les programmes malveillants qui s’exécutaient au sein de votre entreprise. Le programme malveillant est arrêté et corrigé. | **Faible**. Bien que certains dommages aient pu être causés à un point de terminaison individuel, le programme malveillant ne représente désormais aucune menace pour votre entreprise. |
+| Les programmes malveillants en cours d’exécution sont détectés par Defender entreprise. Le programme malveillant est bloqué presque immédiatement. | **Moyen** ou **élevé**. Le programme malveillant représente une menace pour les points de terminaison individuels et pour votre entreprise. |
+| Un comportement suspect est détecté, mais aucune action de correction n’est encore effectuée. | **Faible**, **moyen** ou **élevé**. La gravité dépend de la mesure dans laquelle le comportement représente une menace pour votre entreprise. |
 
 ## <a name="next-steps"></a>Prochaines étapes
 

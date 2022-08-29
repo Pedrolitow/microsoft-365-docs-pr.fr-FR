@@ -8,18 +8,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 750b00bf2418765c780471356ad01208667b4d2c
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.openlocfilehash: 5b336a0650bc30eb1ebf23f8356b6c3c1ebb4e79
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294608"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324164"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender pour point de terminaison installation de l’appareil Device Control
 
@@ -29,7 +29,7 @@ ms.locfileid: "67294608"
 
 
 > [!NOTE]
-> Si vous gérez le stockage amovible, consultez Microsoft Defender pour point de terminaison Access Control de [stockage amovible du contrôle d’appareil](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
+> Si vous souhaitez gérer le stockage amovible, consultez Microsoft Defender pour point de terminaison Access Control de [stockage amovible Device Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
 Microsoft Defender pour point de terminaison’installation de l’appareil Device Control vous permet d’effectuer la tâche suivante :
 

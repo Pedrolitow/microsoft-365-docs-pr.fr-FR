@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: b253fe7dad271684f5c0e927ec162ea4e993df29
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: d8db3816e050d7384070cf31e458921231f0df9b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607386"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327308"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Gérer Microsoft Defender pour point de terminaison avec Configuration Manager
 
@@ -57,8 +57,8 @@ Si vous ne l’avez pas encore fait, configurez votre portail Microsoft 365 Defe
 - [Vue d’ensemble de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint Protection : Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-- [Obtenir une vue d’ensemble de la gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Obtenir une vue d’ensemble de La gestion des vulnérabilités defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visitez le tableau de bord des opérations de sécurité du portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Gérer Microsoft Defender pour point de terminaison avec Intune](manage-mde-post-migration-intune.md)

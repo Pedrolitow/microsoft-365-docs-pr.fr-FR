@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9b8009af5bd88c1dfd37dc7e8297e3c7e05f1356
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 7f732b38c108d50b2c8950cdc5e30ba1153944b3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280760"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324383"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison
 
@@ -69,7 +69,7 @@ Rubrique | Description
 [Méthodes et propriétés **d’alerte**](alerts.md) | Exécutez des appels d’API tels que \- obtenir des alertes, créer une alerte, mettre à jour l’alerte, etc.
 [Exporter des méthodes et des propriétés **d’évaluation** par appareil](get-assessment-methods-properties.md) | Exécutez des appels d’API pour collecter des évaluations des vulnérabilités par appareil, par exemple : \- exporter l’évaluation de la configuration sécurisée, exporter l’évaluation de l’inventaire logiciel, exporter l’évaluation des vulnérabilités logicielles et exporter delta des vulnérabilités logicielles.
 [Méthodes et propriétés **d’investigation automatisées**](investigation.md) | Exécutez des appels d’API tels que \- la collecte get d’Investigation.
-[Exporter les propriétés et les méthodes d’intégrité des appareils](device-health-api-methods-properties.md) | Exécutez des appels d’API tels que - GET /api/public/avdeviceshealth.
+[Méthodes et propriétés de l'état de santé de l'appareil d'exportation](device-health-api-methods-properties.md) | Exécutez des appels d’API tels que - GET /api/public/avdeviceshealth.
 [Alertes liées au **domaine**](get-domain-related-alerts.md) | Exécutez des appels d’API tels que \- l’obtention d’appareils liés au domaine, de statistiques de domaine, etc.
 [Méthodes et propriétés **de fichier**](files.md) | Exécutez des appels d’API tels que \- l’obtention d’informations sur les fichiers, les alertes liées aux fichiers, les appareils liés aux fichiers et les statistiques de fichier.
 [**Méthodes et propriétés des indicateurs**](ti-indicator.md) | Exécutez un appel d’API tel que \- obtenir des indicateurs, créer un indicateur et supprimer des indicateurs.

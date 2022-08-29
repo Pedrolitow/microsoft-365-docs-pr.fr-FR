@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’ensemble du Centre de messages Microsoft 365 et de son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
-ms.openlocfilehash: 403b16f0f1624034a1224dfe53841a81ee53d572
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8368e86e0ab4431aeb07c387daf0a57f89ea1827
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085660"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322912"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Suivre les fonctionnalités nouvelles et modifiées dans le Centre de messages Microsoft 365
 
@@ -284,5 +284,4 @@ Pour une vue d’ensemble du Centre de messages, consultez [Centre de messages d
 ## <a name="related-content"></a>Contenu associé
 
 [Configurer les options de publication standard ou ciblée](../manage/release-options-in-office-365.md) (article)\
-[Gérer les fonctionnalités Office qui apparaissent dans Nouveautés](../manage/show-hide-new-features.md) (article)\
 [Abonnements professionnels et documentation de facturation](../../commerce/index.yml) (page de lien)

@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.date: 08/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 search.appverid:
@@ -17,18 +16,18 @@ search.appverid:
 - MET150
 description: Tirez le meilleur parti de votre essai de Defender pour entreprise grâce à ce guide. Installez-vous rapidement et commencez à utiliser vos nouvelles capacités de sécurité.
 ms.custom: trial-playbook
-ms.openlocfilehash: 3b588dba1ee1a3df5719ece9c2db50e76acf36b2
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
-ms.translationtype: HT
+ms.openlocfilehash: dafd2cc871db96453d38c753b7bd10568ec7123d
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309480"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343040"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>Manuel d'essai : Microsoft Defender pour entreprise
 
 **Bienvenue au guide d'essai de Defender pour entreprises**
 
-Ce manuel est un guide simple qui vous aidera à tirer le meilleur parti de votre essai gratuit de 30 jours. Utilisez les recommandations de cet article de l'équipe Microsoft Defender pour apprendre comment Defender pour entreprise peut vous aider à élever votre sécurité de la protection antivirus traditionnelle à la protection de nouvelle génération, à la détection et à la réponse des points d'extrémité, et à la gestion des menaces et des vulnérabilités.
+Ce manuel est un guide simple qui vous aidera à tirer le meilleur parti de votre essai gratuit de 30 jours. Utilisez les recommandations de cet article de l’équipe Microsoft Defender pour découvrir comment Defender entreprise peut vous aider à élever votre sécurité, de la protection antivirus traditionnelle à la protection de nouvelle génération, à la détection et à la réponse des points de terminaison et à la gestion des vulnérabilités.
 
 ## <a name="what-is-defender-for-business"></a>Qu’est-ce que Defender pour les PME ?
 
@@ -110,10 +109,10 @@ Si vous avez utilisé l'assistant d'installation mais que vous devez embarquer p
 
    | Type d’appareil | Méthodes d'embarquement |
    |:---|:---|
-   | [Clients Windows](mdb-onboard-devices.md) | Choisissez l'une des options suivantes pour intégrer des appareils clients Windows à Defender pour entreprises :<ul><li>Script local (pour l'intégration manuelle des appareils dans le portail Microsoft 365 Defender)</li><li>Stratégie de groupe (si vous utilisez déjà la stratégie de groupe et préférez cette méthode)</li><li>Microsoft Intune (si vous utilisez déjà Intune et préférez continuer à l’utiliser)</li></ul> |
-   | [Mac](mdb-onboard-devices.md) | Choisissez l'une des options suivantes pour le Mac embarqué :<ul><li>Script local pour Mac (*recommandé*)</li><li>Microsoft Intune pour Mac </li></ul><p>Nous vous recommandons d'utiliser un script local pour embarquer le Mac. Bien que vous puissiez [configurer l'inscription des appareils Mac dans Intune](/mem/intune/enrollment/macos-enroll), le script local est la méthode la plus simple pour intégrer Mac à Defender pour entreprise. |
+   | [Clients Windows](mdb-onboard-devices.md) | Choisissez l'une des options suivantes pour intégrer des appareils clients Windows à Defender pour entreprises :<ul><li>Script local (pour l'intégration manuelle des appareils dans le portail Microsoft 365 Defender)</li><li>Stratégie de groupe (si vous utilisez déjà la stratégie de groupe et préférez cette méthode)</li><li>Microsoft Intune (*recommandé* ; inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md))</li></ul> |
+   | [Mac](mdb-onboard-devices.md) | Choisissez l'une des options suivantes pour le Mac embarqué :<ul><li>Script local pour Mac (*recommandé*)</li><li>Microsoft Intune pour Mac (Intune est inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md))</li></ul><p>Nous vous recommandons d'utiliser un script local pour embarquer le Mac. Bien que vous puissiez [configurer l'inscription des appareils Mac dans Intune](/mem/intune/enrollment/macos-enroll), le script local est la méthode la plus simple pour intégrer Mac à Defender pour entreprise. |
    | Serveurs Windows et Linux | *La possibilité d'embarquer une instance de Windows Server ou de Linux Server est actuellement en phase d'essai et nécessite une licence supplémentaire.*. Voir les articles suivants pour en savoir plus : <ul><li>[Defender pour les besoins de l'entreprise](mdb-requirements.md)</li><li>[Transférer les appareils vers Defender pour entreprise](mdb-onboard-devices.md)</li></ul> |
-   | [Appareils mobiles](mdb-onboard-devices.md) | Utilisez Microsoft Intune pour intégrer des appareils mobiles, tels que des appareils Android et iOS/iPadOS. Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :<ul><li>[Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)</li><li>[Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)</li></ul> |
+   | [Appareils mobiles](mdb-onboard-devices.md) | Vous avez besoin de Microsoft Intune pour embarquer des appareils mobiles, tels que les appareils Android et iOS/iPadOS. Si vous disposez de [Microsoft 365 Business Premium](../../business-premium/index.md), Intune fait partie de votre abonnement. Intune peut également être acheté séparément. Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :<ul><li>[Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)</li><li>[Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)</li></ul> |
 
 5. **[Afficher et configurer vos stratégies de sécurité](mdb-configure-security-settings.md)**. Après avoir intégré les appareils de votre entreprise à Defender pour entreprise, l'étape suivante consiste à afficher et à modifier vos stratégies et paramètres de sécurité. Defender pour entreprise comprend des stratégies de sécurité préconfigurées qui utilisent des paramètres recommandés. Mais vous pouvez modifier les paramètres en fonction des besoins de votre entreprise.
 
@@ -130,14 +129,14 @@ Si vous avez utilisé l'assistant d'installation mais que vous devez embarquer p
 
 Au cours des 30 prochains jours, nous vous recommandons de tester vos nouvelles capacités de sécurité, comme décrit dans les sections suivantes :
 
-- [Utilisez votre tableau de bord de gestion des menaces et des vulnérabilités](#use-the-threat--vulnerability-management-dashboard) 
+- [Utiliser votre tableau de bord Gestion des vulnérabilités Microsoft Defender](#use-the-defender-vulnerability-management-dashboard) 
 - [Visualiser et répondre aux menaces détectées](#view-and-respond-to-detected-threats)
 - [Examiner les stratégies de sécurité](#review-security-policies).
 - [Se préparer à la gestion continue de la sécurité](#prepare-for-ongoing-security-management)
 
-### <a name="use-the-threat--vulnerability-management-dashboard"></a>Utilisez le tableau de bord de gestion des menaces et des vulnérabilités.
+### <a name="use-the-defender-vulnerability-management-dashboard"></a>Utiliser le tableau de bord Gestion des vulnérabilités Defender
 
-Defender pour entreprise comprend un tableau de bord de gestion des menaces et des vulnérabilités, conçu pour faire gagner du temps et de l'énergie à votre équipe de sécurité. [Utilisez votre tableau de bord de gestion des menaces et des vulnérabilités](mdb-view-tvm-dashboard.md).
+Defender entreprise inclut un tableau de bord de gestion des vulnérabilités Defender conçu pour économiser du temps et des efforts de votre équipe de sécurité. [Utilisez votre tableau de bord Gestion des vulnérabilités Defender](mdb-view-tvm-dashboard.md).
 
 - Consultez votre score d'exposition, qui est associé aux appareils de votre organisation.
 - Consultez vos principales recommandations en matière de sécurité, telles que la résolution des problèmes de communication avec les appareils, l'activation de la protection par pare-feu ou la mise à jour des définitions de l'antivirus Microsoft Defender.

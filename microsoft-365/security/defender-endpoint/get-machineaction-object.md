@@ -1,7 +1,7 @@
 ---
-title: API Obtenir un objet MachineAction
-description: Découvrez comment utiliser l’API Obtenir MachineAction pour récupérer une action ordinateur spécifique par son ID dans Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, objet machineaction
+title: Obtenir l’API d’objet MachineAction
+description: Découvrez comment utiliser l’API Get MachineAction pour récupérer une action de machine spécifique par son ID dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, objet Machineaction
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea532b791b15320379655546ca86c798dbfc8674
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 4fa508be9abdbf0f589b1dd488d905386c42a183
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301605"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326934"
 ---
-# <a name="get-machineaction-api"></a>API Obtenir machineAction
+# <a name="get-machineaction-api"></a>Obtenir l’API machineAction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,27 +38,27 @@ ms.locfileid: "61301605"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère [l’action de l’ordinateur spécifique](machineaction.md) par son ID.
+Récupère une [action de machine](machineaction.md) spécifique par son ID.
 
 ## <a name="limitations"></a>Limites
 
-- Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+- Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Defender pour les API de point de terminaison.](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Defender pour les API de point de terminaison](apis-intro.md).
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
-Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur l’ordinateur »
+Application|Machine.Read.All|'Lire tous les profils d’ordinateur'
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations de l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur la machine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -78,7 +78,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une [entité Action](machineaction.md) de l’ordinateur. Si l’entité d’action de l’ordinateur avec l’ID spécifié est in trouvée - 404 - In trouvé.
+Si elle réussit, cette méthode renvoie 200, code de réponse OK avec une entité Action de la [machine](machineaction.md) . Si l’entité d’action de machine avec l’ID spécifié est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie, zéro virus
 description: Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 925a64e1d7852aeed6f596e99b20dbff8b34d1be
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
-ms.translationtype: HT
+ms.openlocfilehash: 50e18f41f14964f1856519a444a6f3e9be13ed09
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825099"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325332"
 ---
 # <a name="step-1-configure-security-baselines"></a>Étape 1. Configurer les lignes de base de sécurité
 
@@ -73,7 +73,7 @@ Appliquez les [lignes de base de sécurité](https://techcommunity.microsoft.com
 
 ## <a name="impact-on-users-and-change-management"></a>Impact sur les utilisateurs et la gestion des modifications
 
-En tant que meilleure pratique pour une règle de réduction de la surface d’attaque, évaluez l’impact d’une règle sur votre réseau en ouvrant la recommandation de sécurité pour cette règle dans Gestion des menaces et des vulnérabilités. Le volet des détails de recommandation décrit l’impact sur l’utilisateur, que vous pouvez utiliser pour déterminer le pourcentage de vos appareils qui peuvent accepter une nouvelle stratégie activant la règle en mode de blocage sans impact négatif sur la productivité des utilisateurs.
+En guise de bonne pratique pour une règle de réduction de la surface d’attaque, évaluez l’impact d’une règle sur votre réseau en ouvrant la recommandation de sécurité pour cette règle dans Gestion des vulnérabilités Defender. Le volet des détails de recommandation décrit l’impact sur l’utilisateur, que vous pouvez utiliser pour déterminer le pourcentage de vos appareils qui peuvent accepter une nouvelle stratégie activant la règle en mode de blocage sans impact négatif sur la productivité des utilisateurs.
 
 En outre, les paramètres de ligne de base de courrier Exchange peuvent bloquer le courrier entrant et empêcher l’envoi d’e-mails ou le clic sur des liens dans un courrier électronique. Informez vos employés sur ce comportement et sur la raison pour laquelle ces précautions sont prises.
 

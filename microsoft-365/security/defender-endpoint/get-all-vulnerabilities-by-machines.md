@@ -1,8 +1,7 @@
 ---
-title: Obtenir toutes les vulnérabilités par ordinateur et par logiciel
-description: Récupère une liste de toutes les vulnérabilités affectant l’organisation par l’ordinateur et les logiciels
-keywords: api, api de graphique, api pris en charge, obtenir, informations de vulnérabilité, api tvm Microsoft Defender pour endpoint
-search.product: eADQiWindows 10XVcnh
+title: Obtenir toutes les vulnérabilités par ordinateur et logiciel
+description: Récupère une liste de toutes les vulnérabilités affectant l’organisation par machine et logiciel
+keywords: api, api graphe, api prises en charge, get, informations sur les vulnérabilités, Microsoft Defender pour point de terminaison api tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,21 +13,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 44605ad5787f0d0513ccc9ca0e38a6e5f77904ba
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a2a5086ddd56df3dee50a849526021a92e9dfc43
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168185"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342862"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Répertorier les vulnérabilités par ordinateur et logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,20 +36,20 @@ ms.locfileid: "61168185"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Récupère une liste de toutes les vulnérabilités affectant l’organisation par [ordinateur et](machine.md) [par logiciel.](software.md)
+Récupère une liste de toutes les vulnérabilités affectant l’organisation par [ordinateur](machine.md) et [logiciel](software.md).
 
-- Si la vulnérabilité a une ko de réparation, elle apparaît dans la réponse.
-- Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
-- La requête OData est prise en charge sur `$filter` : , , , , , , `id` et `cveId` `machineId` `fixingKbId` `productName` `productVersion` `severity` `productVendor` propriétés.
+- Si la vulnérabilité a une base de connaissances de correction, elle apparaît dans la réponse.
+- Prend [en charge les requêtes OData V4](https://www.odata.org/documentation/).
+- La requête OData `$filter` est prise en charge sur : `id`, , `cveId``machineId`, `fixingKbId`, `productName`, `productVersion`, `severity`et `productVendor` les propriétés.
 <br>```$stop``` avec une valeur maximale de 10 000
 <br>```$skip```
 
 > [!TIP]
-> Il s’agit d’une EXCELLENTE API [pour Power BI’intégration.](api-power-bi.md)
+> Il s’agit d’une excellente API pour [l’intégration de Power BI](api-power-bi.md).
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -67,7 +66,7 @@ GET /api/vulnerabilities/machinesVulnerabilities
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -75,7 +74,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec la liste des vulnérabilités dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec la liste des vulnérabilités dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -123,5 +122,5 @@ Voici un exemple de réponse.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des risques Gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités de votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnérabilités dans votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -1,8 +1,7 @@
 ---
 title: Type de ressource Fichier
-description: Récupérer les alertes récentes de Microsoft Defender for Endpoint relatives aux fichiers.
-keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
-search.product: eADQiWindows 10XVcnh
+description: Récupérez les alertes de Microsoft Defender pour point de terminaison récentes liées aux fichiers.
+keywords: api, api graphe, api prises en charge, get, alertes, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: aa1eaf1cf26af415d134c6a8f0faed5643e787b5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 85ce81f3d99aa789c68e9967f6bcafb68ca681f2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167801"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323439"
 ---
 # <a name="file-resource-type"></a>Type de ressource Fichier
 
@@ -29,8 +28,8 @@ ms.locfileid: "61167801"
 
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -38,15 +37,15 @@ ms.locfileid: "61167801"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Représente une entité de fichier dans Defender pour le point de terminaison.
+Représente une entité de fichier dans Defender pour point de terminaison.
 
 ## <a name="methods"></a>Méthodes
 
 Méthode|Type renvoyé |Description
 :---|:---|:---
-[Obtenir un fichier](get-file-information.md) | [file](files.md) | Obtenir un fichier unique 
-[Liste des alertes associées au fichier](get-file-related-alerts.md) | collection[alert](alerts.md) | Obtenez les [entités](alerts.md) d’alerte associées au fichier.
-[List file related machines](get-file-related-machines.md) | [collection d’ordinateurs](machine.md) | Obtenez les [entités de](machine.md) l’ordinateur associées à l’alerte.
+[Obtenir un fichier](get-file-information.md) | [file](files.md) | Obtenir un seul fichier 
+[Répertorier les alertes liées aux fichiers](get-file-related-alerts.md) | collection[alert](alerts.md) | Obtenez les entités [d’alerte](alerts.md) associées au fichier.
+[Répertorier les machines associées aux fichiers](get-file-related-machines.md) | [collection d’ordinateurs](machine.md) | Obtenez les entités [de machine](machine.md) associées à l’alerte.
 [statistiques de fichier](get-file-statistics.md) | Résumé des statistiques | Récupère la prévalence du fichier donné.
 
 
@@ -54,22 +53,22 @@ Méthode|Type renvoyé |Description
 
 |Propriété | Type | Description |
 |:---|:---|:---|
-|sha1 | String | Hachage Sha1 du contenu du fichier |
-|sha256 | String | Hachage Sha256 du contenu du fichier |
-|globalPrevalence | Nullable long | Prévalence des fichiers au sein de l’organisation |
-|globalFirstObserved | DateTimeOffset | Première observation du fichier |
-|globalLastObserved | DateTimeOffset | Dernière observation du fichier |
-|taille | Nullable long | Taille du fichier |
-|fileType | String | Type du fichier |
-|isPeFile | Boolean | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
-|filePublisher | String | Éditeur de fichiers |
-|fileProductName | String | Nom du produit |
-|signataire | String | Signataire de fichiers |
-|émetteur | String | Émetteur de fichier |
-|signerHash | String | Hachage du certificat de signature |
-|isValidCertificate | Boolean | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
-|determinationType | String | Type de détermination du fichier |
-|determinationValue | String | Valeur de détermination |
+|sha1 | Chaîne | Hachage Sha1 du contenu du fichier |
+|sha256 | Chaîne | Hachage Sha256 du contenu du fichier |
+|globalPrevalence | Valeur nullable longue | Prévalence des fichiers au sein de l’organisation |
+|globalFirstObserved | DateTimeOffset | Première fois que le fichier a été observé |
+|globalLastObserved | DateTimeOffset | Dernière fois que le fichier a été observé |
+|size | Valeur nullable longue | Taille du fichier |
+|Filetype | Chaîne | Type du fichier |
+|isPeFile | Boolean | true si le fichier est exécutable portable (par exemple, « DLL », « EXE », etc.) |
+|filePublisher | Chaîne | Éditeur de fichiers |
+|fileProductName | Chaîne | Nom du produit |
+|Signataire | Chaîne | Signataire de fichier |
+|Émetteur | Chaîne | Émetteur de fichier |
+|signerHash | Chaîne | Hachage du certificat de signature |
+|isValidCertificate | Boolean | Le certificat de signature a été vérifié avec succès par Microsoft Defender pour point de terminaison agent |
+|determinationType | Chaîne | Type de détermination du fichier |
+|determinationValue | Chaîne | Valeur de détermination |
 
 ## <a name="json-representation"></a>Représentation Json
 

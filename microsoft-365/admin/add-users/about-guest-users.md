@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment remplir la liste des utilisateurs invités dans le Centre d'administration Microsoft 365 afin que les invités puissent participer à des réunions, afficher des documents et discuter dans Teams auxquels ils sont invités.
-ms.openlocfilehash: 56bef3039a0e00cc0f0ae6914eac11dca3b06713
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 724925acbcbbda9cbe1b5d272caac60357c507ce
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274624"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319558"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Utilisateurs invités dans Centre d'administration Microsoft 365
 
@@ -53,19 +53,19 @@ Vous devez être un administrateur global pour effectuer cette tâche.
 ## <a name="understanding-guest-accounts-in-microsoft-365"></a>Présentation des comptes invités dans Microsoft 365
 
 La possibilité de partager facilement des fichiers et des documents avec les bonnes personnes tout en empêchant le surpartage nécessite une planification. Les ressources suivantes fournissent plus d’informations pour vous aider à créer un environnement de partage d’invités sécurisé dans Microsoft 365.
-- Planifier la collaboration externe
-- Créer un environnement de partage d’invités sécurisé
-- Configurer le partage sécurisé de fichiers et de documents et la collaboration avec Teams dans Microsoft 365
-- Accès invité dans Microsoft Teams
+- [Planifier la collaboration externe](../../solutions/plan-external-collaboration.md)
+- [Créer un environnement de partage sécurisé avec des invités](../../solutions/create-secure-guest-sharing-environment.md)
+- [Configurer le partage sécurisé de fichiers et de documents et la collaboration avec Teams dans Microsoft 365](../../solutions/setup-secure-collaboration-with-teams.md)
+- [Accès invité dans Microsoft Teams](/microsoftteams/guest-access)
 
 Outre Microsoft Teams et SharePoint, Microsoft 365 prend également en charge l’accès invité dans d’autres applications. Les produits Microsoft 365 suivants prennent en charge l’accès invité.
 
-- Power Apps (applications canevas) : partagez une application canevas avec des utilisateurs invités.
-- Listes : partage externe ou invité dans OneDrive, SharePoint et Listes.
-- OneDrive - Partage externe ou invité dans OneDrive, SharePoint et Listes.
-- Planificateur : s’applique aux plateformes web et mobiles. Accès invité dans Planificateur Microsoft.
-- Groupes Microsoft 365 - Gérer l’accès invité dans les groupes Microsoft 365.
-- Yammer - Utiliser des groupes externes dans des réseaux Yammer non alignés sur le mode natif.
+- Power Apps (applications canevas) : [partagez une application canevas avec des utilisateurs invités](/power-apps/maker/canvas-apps/share-app-guests).
+- Listes : [partage externe ou invité dans OneDrive, SharePoint et Listes](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7).
+- OneDrive - [Partage externe ou invité dans OneDrive, SharePoint et Listes](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7).
+- Planificateur : s’applique aux plateformes web et mobiles. [Accès invité dans Planificateur Microsoft](https://support.microsoft.com/office/guest-access-in-microsoft-planner-cc5d7f96-dced-4da4-ab62-08c72d9759c6).
+- Groupes Microsoft 365 - [Gérer l’accès invité dans les groupes Microsoft 365](../create-groups/manage-guest-access-in-groups.md).
+- Yammer - [Utiliser des groupes externes dans des réseaux Yammer non alignés sur le mode natif](/yammer/work-with-external-users/create-and-manage-external-groups).
 
 Pour les applications Microsoft Office comme Microsoft Word et Excel, l’accès invité est contrôlé par l’emplacement du fichier de sortie, par exemple, Microsoft SharePoint, Teams et OneDrive.
 
@@ -79,6 +79,6 @@ Consultez [ajouter des invités en bloc](/azure/active-directory/b2b/tutorial-bu
 
 ## <a name="related-content"></a>Contenu associé
 
-[Gérer l’accès invité dans les groupes Microsoft 365](../create-groups/manage-guest-access-in-groups.md)\
-[Empêcher l’ajout d’invités à un groupe Microsoft 365 spécifique ou à Microsoft Teams](../../solutions/per-group-guest-access.md)\
+[Gérer l’accès invité dans les groupes Microsoft 365](../create-groups/manage-guest-access-in-groups.md) (article)\
+[Empêcher l’ajout d’invités à un groupe Microsoft 365 spécifique ou à Microsoft Teams](../../solutions/per-group-guest-access.md) (article)\
 [Commutateur d’organisation dans le Centre d'administration Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-organization-switcher-in-the-microsoft-365-admin-center/ba-p/1165543) (article)

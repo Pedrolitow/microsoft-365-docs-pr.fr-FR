@@ -17,15 +17,19 @@ search.appverid:
 - MET150
 description: Découvrez comment exporter des données sources pour un type d’informations sensibles basé sur des correspondances de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 644c62dce3069899aba33737dd1e6452c81fee24
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 4c79123ab44e9be20a96d19c058df6aecfb6aeeb
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918065"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359862"
 ---
 # <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exporter les données sources pour le type d’informations sensibles basé sur la correspondance exacte des données
 
+## <a name="applies-to"></a>S’applique à
+
+- [Nouvelle expérience](sit-create-edm-sit-unified-ux-workflow.md)
+- [Expérience classique](sit-create-edm-sit-classic-ux-workflow.md)
 
 La table de données sensibles est un fichier texte contenant des lignes de valeurs par rapport auquel vous allez comparer le contenu de vos documents pour identifier les données sensibles. Ces valeurs peuvent être des informations d’identification personnelle, des enregistrements de produit ou d’autres données sensibles sous forme de texte que vous souhaitez détecter dans le contenu et prendre des mesures de protection.
 
@@ -57,7 +61,11 @@ Le fichier de données peut inclure au maximum :
 
 ## <a name="next-step"></a>Étape suivante
 
-- [Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- **Pour une nouvelle expérience** : [créer un exemple de fichier SIT EDM pour la nouvelle expérience](sit-create-edm-sit-unified-ux-sample-file.md)
+
+ou
+
+- **Pour une expérience classique** : [créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-create-schema.md)
 
 ## <a name="see-also"></a>Voir aussi
 

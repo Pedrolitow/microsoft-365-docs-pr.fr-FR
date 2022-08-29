@@ -20,12 +20,12 @@ description: Découvrez comment les administrateurs peuvent supprimer des élém
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 3878d68504264433f583bb26ccc74eb844afac42
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 717ecf671635713b2bd7a39eb80c16fc998038c6
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641885"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335625"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
 
@@ -212,7 +212,7 @@ Exécutez la commande suivante dans [Security & Compliance PowerShell](/powershe
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Après avoir identifié la stratégie de rétention, accédez à la page **Conservation** de **la gestion** >  du cycle de vie des données dans le portail de conformité, modifiez la stratégie de rétention que vous avez identifiée à l’étape précédente et supprimez la boîte aux lettres de la liste des destinataires inclus dans la stratégie de rétention.
+Après avoir identifié la stratégie de rétention, accédez à la page de **gestion** >  du cycle de vie des données **Microsoft 365** > **Retention** dans le portail de conformité, modifiez la stratégie de rétention que vous avez identifiée à l’étape précédente et supprimez la boîte aux lettres de la liste des destinataires inclus dans la stratégie de rétention.
   
 ### <a name="organization-wide-retention-policies"></a>Stratégies de rétention à l’échelle de l’organisation
   
@@ -222,7 +222,7 @@ Les stratégies de rétention à l’échelle de l’organisation, Exchange et T
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Après avoir identifié les stratégies de rétention à l’échelle de l’organisation, accédez à la page **Conservation** de **la gestion** >  du cycle de vie des données dans le portail de conformité, modifiez chaque stratégie de rétention à l’échelle de l’organisation que vous avez identifiée à l’étape précédente, puis ajoutez la boîte aux lettres à la liste des destinataires exclus. Cette opération supprime la boîte aux lettres de l’utilisateur de la stratégie de rétention.
+Après avoir identifié les stratégies de rétention à l’échelle de l’organisation, accédez à la page de **gestion** >  du cycle de vie des données **Microsoft 365** > **Retention** dans le portail de conformité, modifiez chaque stratégie de rétention à l’échelle de l’organisation que vous avez identifiée à l’étape précédente, puis ajoutez la boîte aux lettres à la liste des destinataires exclus. Cette opération supprime la boîte aux lettres de l’utilisateur de la stratégie de rétention.
 
 > [!IMPORTANT]
 > Après avoir exclu une boîte aux lettres d’une stratégie de rétention à l’échelle de l’organisation, la synchronisation de cette modification et la suppression de la boîte aux lettres de la stratégie peuvent prendre jusqu’à 24 heures.
@@ -397,11 +397,11 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
 
     **Stratégies de rétention appliquées à des boîtes aux lettres spécifiques**
 
-    Utilisez le portail de conformité pour rajouter la boîte aux lettres à la stratégie de rétention. Accédez à la page **Conservation** du **cycle** >  de vie des données dans le centre de conformité, modifiez la stratégie de rétention et ajoutez la boîte aux lettres à la liste des destinataires auxquels la stratégie de rétention est appliquée.
+    Utilisez le portail de conformité pour rajouter la boîte aux lettres à la stratégie de rétention. Accédez à la page de **gestion** >  du cycle de vie des données **Microsoft 365** > **Retention** dans le centre de conformité, modifiez la stratégie de rétention et ajoutez la boîte aux lettres à la liste des destinataires auxquels la stratégie de rétention est appliquée.
 
     **Stratégies de rétention à l’échelle de l’organisation**
 
-    Si vous avez supprimé une stratégie de rétention à l’échelle de l’organisation ou Exchange en l’excluant de la stratégie, utilisez le portail de conformité pour supprimer la boîte aux lettres de la liste des utilisateurs exclus. Accédez à la page **Conservation** du **cycle** >  de vie des données dans le Centre de conformité, modifiez la stratégie de rétention à l’échelle de l’organisation et supprimez la boîte aux lettres de la liste des destinataires exclus. Cette opération réapplique la stratégie de rétention dans la boîte aux lettres de l’utilisateur.
+    Si vous avez supprimé une stratégie de rétention à l’échelle de l’organisation ou Exchange en l’excluant de la stratégie, utilisez le portail de conformité pour supprimer la boîte aux lettres de la liste des utilisateurs exclus. Accédez à la page de **gestion** >  du cycle de vie des données **Microsoft 365** > **Retention** dans le Centre de conformité, modifiez la stratégie de rétention à l’échelle de l’organisation et supprimez la boîte aux lettres de la liste des destinataires exclus. Cette opération réapplique la stratégie de rétention dans la boîte aux lettres de l’utilisateur.
 
     **Conservations de cas eDiscovery**
 

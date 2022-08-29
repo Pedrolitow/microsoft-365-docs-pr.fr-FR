@@ -1,7 +1,7 @@
 ---
-title: Type de ressource Machine
-description: Découvrez les méthodes et les propriétés du type de ressource Machine dans Microsoft Defender for Endpoint.
-keywords: api, api pris en charge, obtenir, ordinateurs
+title: Type de ressource de machine
+description: Découvrez les méthodes et les propriétés du type de ressource Machine dans Microsoft Defender pour point de terminaison.
+keywords: api, api prises en charge, get, machines
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 80ac3e9ed43de98d32fd14063261452cfd5b1372
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: d5b6c51fd6f0e581a1299e72600930d9ef4a2a3e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284048"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327396"
 ---
-# <a name="machine-resource-type"></a>Type de ressource Machine
+# <a name="machine-resource-type"></a>Type de ressource de machine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,19 +47,19 @@ ms.locfileid: "61284048"
 
 |Méthode|Type renvoyé|Description|
 |---|---|---|
-|[Répertorier les ordinateurs](get-machines.md)|[collection d’ordinateurs](machine.md)|Liste des [ensembles d’entités](machine.md) d’ordinateur dans l’organisation.|
-|[Obtenir un ordinateur](get-machine-by-id.md)|[ordinateur](machine.md)|Obtenir un [ordinateur par](machine.md) son identité.|
-|[Obtenir des utilisateurs connectés](get-machine-log-on-users.md)|Collection d’[utilisateurs](user.md)|Obtenez l’ensemble [de l’utilisateur](user.md) qui s’est connecté à l’ordinateur. [](machine.md)|
-|[Obtenir les alertes associées](get-machine-related-alerts.md)|collection[alert](alerts.md)|Obtenir l’ensemble des [entités](alerts.md) d’alerte qui ont été élevés sur [l’ordinateur](machine.md).|
-|[Obtenir les logiciels installés](get-installed-software.md)|[collection de logiciels](software.md)|Extrait une collection de logiciels installés liés à un ID d’ordinateur donné.|
+|[Répertorier les ordinateurs](get-machines.md)|[collection d’ordinateurs](machine.md)|Répertorie l’ensemble d’entités de [machine](machine.md) dans l’organisation.|
+|[Obtenir une machine](get-machine-by-id.md)|[Machine](machine.md)|Obtenez une [machine](machine.md) par son identité.|
+|[Se connecter aux utilisateurs](get-machine-log-on-users.md)|Collection d’[utilisateurs](user.md)|Obtenez l’ensemble de [l’utilisateur](user.md) connecté à [l’ordinateur](machine.md).|
+|[Obtenir des alertes associées](get-machine-related-alerts.md)|collection[alert](alerts.md)|Obtenez l’ensemble des entités [d’alerte](alerts.md) qui ont été déclenchées sur [l’ordinateur](machine.md).|
+|[Obtenir les logiciels installés](get-installed-software.md)|[collection de logiciels](software.md)|Récupère une collection de logiciels installés liés à un ID d’ordinateur donné.|
 |[Obtenir les vulnérabilités découvertes](get-discovered-vulnerabilities.md)|[collection de vulnérabilités](vulnerability.md)|Récupère une collection de vulnérabilités découvertes liées à un ID d’ordinateur donné.|
-|[Obtenir les recommandations de sécurité](get-security-recommendations.md)|[collection de recommandations](recommendation.md)|Récupère une collection de recommandations de sécurité relatives à un ID d’ordinateur donné.|
-|[Ajouter ou supprimer les balises de l’ordinateur](add-or-remove-machine-tags.md)|[ordinateur](machine.md)|Ajouter ou supprimer une balise à un ordinateur spécifique.|
-|[Rechercher des ordinateurs par IP](find-machines-by-ip.md)|[collection d’ordinateurs](machine.md)|Recherchez les ordinateurs visibles avec l’adresse IP.|
-|[Rechercher des ordinateurs par balise](find-machines-by-tag.md)|[collection d’ordinateurs](machine.md)|Rechercher des ordinateurs par [balise](machine-tags.md).|
-|[Obtenir des Ko manquants](get-missing-kbs-machine.md)|Collection KB|Obtenir la liste des ko manquants associés à l’ID de l’ordinateur|
-|[Définir la valeur de l’appareil](set-device-value.md)|[collection d’ordinateurs](machine.md)|Définissez [la valeur d’un appareil.](tvm-assign-device-value.md)|
-|[Mettre à jour l’ordinateur](update-machine-method.md)|[collection d’ordinateurs](machine.md)|Obtenir l’état de mise à jour d’un ordinateur.|
+|[Obtenir les recommandations de sécurité](get-security-recommendations.md)|[collection de recommandations](recommendation.md)|Récupère une collection de recommandations de sécurité liées à un ID de machine donné.|
+|[Ajouter ou supprimer les balises de l’ordinateur](add-or-remove-machine-tags.md)|[Machine](machine.md)|Ajouter ou supprimer une balise à un ordinateur spécifique.|
+|[Rechercher des ordinateurs par IP](find-machines-by-ip.md)|[collection d’ordinateurs](machine.md)|Recherchez les ordinateurs affichés avec l’adresse IP.|
+|[Rechercher des ordinateurs par balise](find-machines-by-tag.md)|[collection d’ordinateurs](machine.md)|Rechercher des machines par [balise](machine-tags.md).|
+|[Obtenir des Ko manquants](get-missing-kbs-machine.md)|Collection de bases de connaissances|Obtenir la liste des ko manquants associés à l’ID d’ordinateur|
+|[Définir la valeur de l’appareil](set-device-value.md)|[collection d’ordinateurs](machine.md)|Définissez la [valeur d’un appareil](tvm-assign-device-value.md).|
+|[Mettre à jour l’ordinateur](update-machine-method.md)|[collection d’ordinateurs](machine.md)|Obtenez l’état de mise à jour d’un ordinateur.|
 |
 
 ## <a name="properties"></a>Propriétés
@@ -70,25 +70,25 @@ ms.locfileid: "61284048"
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|String|[identité de](machine.md) l’ordinateur.|
-|computerDnsName|String|[nom complet](machine.md) de l’ordinateur.|
-|firstSeen|DateTimeOffset|Date et heure de la première observation [de l’ordinateur](machine.md) par Microsoft Defender pour le point de terminaison.|
+|id|Chaîne|[identité de la machine](machine.md) .|
+|computerDnsName|Chaîne|nom complet de [l’ordinateur](machine.md).|
+|firstSeen|DateTimeOffset|Première date et heure auxquelles [l’ordinateur](machine.md) a été observé par Microsoft Defender pour point de terminaison.|
 |lastSeen|DateTimeOffset|Heure et date du dernier rapport d’appareil complet reçu. Un appareil envoie généralement un rapport complet toutes les 24 heures.|
-|osPlatform|String|Plateforme du système d’exploitation.|
-|onboardingstatus|String|État de l’intégration de l’ordinateur. Les valeurs possibles sont : « onboarded » et « offboarded ».|
-|osProcessor|String|Processeur du système d’exploitation. Utilisez la propriété osArchitecture à la place.|
+|osPlatform|Chaîne|Plateforme du système d’exploitation.|
+|onboardingstatus|Chaîne|État de l’intégration de l’ordinateur. Les valeurs possibles sont : « intégré » et « hors-carte ».|
+|osProcessor|Chaîne|Processeur de système d’exploitation. Utilisez plutôt la propriété osArchitecture.|
 |version|String|Version du système d’exploitation.|
-|osBuild|Nullable long|Numéro de build du système d’exploitation.|
-|lastIpAddress|String|Dernière adresse IP sur la NIC locale sur [l’ordinateur.](machine.md)|
-|lastExternalIpAddress|String|Dernière adresse IP via laquelle [l’ordinateur](machine.md) a accédé à Internet.|
-|healthStatus|Énum|[état d’état](machine.md) de l’ordinateur. Les valeurs possibles sont : « Active », « Inactive », « ImpairedCommunication », « NoSensorData », « NoSensorDataImpairedCommunication » et « Unknown ».|
-|rbacGroupName|String|Nom du groupe d’ordinateurs.|
-|rbacGroupId|String|ID de groupe d’ordinateurs.|
-|riskScore|Nullable, enum|Score de risque tel qu’évalué par Microsoft Defender pour le point de terminaison. Les valeurs possibles sont : « None » (aucun), « Informational » (information), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
-|aadDeviceId|Guid de représentation nullable|AAD’ID de l’appareil [(lorsque](machine.md) l’ordinateur AAD joint).|
-|machineTags|String collection|Ensemble de [balises d’ordinateur.](machine.md)|
-|exposureLevel|Nullable, enum|Niveau d’exposition tel qu’évalué par Microsoft Defender pour le point de terminaison. Les valeurs possibles sont : « None » (aucun), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
-|deviceValue|Nullable, enum|Valeur [de l’appareil.](tvm-assign-device-value.md) Les valeurs possibles sont : « Normal » (normal), « Low » (faible) et « High » (élevé).|
-|ipAddresses|Collection IpAddress|Ensemble ***d’objets IpAddress.*** Voir [API Obtenir des ordinateurs.](get-machines.md)|
-|osArchitecture|String|Architecture du système d’exploitation. Les valeurs possibles sont : « 32 bits », « 64 bits ». Utilisez cette propriété au lieu d’osProcessor.|
+|osBuild|Valeur nullable longue|Numéro de build du système d’exploitation.|
+|lastIpAddress|Chaîne|Dernière adresse IP sur la carte réseau locale sur [l’ordinateur](machine.md).|
+|lastExternalIpAddress|Chaîne|Dernière adresse IP via laquelle [l’ordinateur](machine.md) a accédé à Internet.|
+|healthStatus|Énum|[état](machine.md) d’intégrité de la machine. Les valeurs possibles sont : « Active », « Inactive », « ImpairedCommunication », « NoSensorData », « NoSensorDataImpairedCommunication » et « Unknown ».|
+|rbacGroupName|Chaîne|Nom du groupe d’ordinateurs.|
+|rbacGroupId|Chaîne|ID de groupe d’ordinateurs.|
+|riskScore|Énumération nullable|Score de risque tel qu’évalué par Microsoft Defender pour point de terminaison. Les valeurs possibles sont : « None », « Informational », « Low », « Medium » et « High ».|
+|aadDeviceId|Guid de représentation nullable|ID d’appareil AAD (quand [l’ordinateur](machine.md) est joint à AAD).|
+|machineTags|String collection|Ensemble de balises [d’ordinateur](machine.md) .|
+|exposureLevel|Énumération nullable|Niveau d’exposition tel qu’évalué par Microsoft Defender pour point de terminaison. Les valeurs possibles sont : « None », « Low », « Medium » et « High ».|
+|deviceValue|Énumération nullable|[Valeur de l’appareil](tvm-assign-device-value.md). Les valeurs possibles sont : ' Normal', 'Low' et 'High'.|
+|ipAddresses|Collection IpAddress|Ensemble d’objets ***IpAddress*** . Consultez [l’API Obtenir des machines](get-machines.md).|
+|osArchitecture|Chaîne|Architecture du système d’exploitation. Les valeurs possibles sont : « 32 bits », « 64 bits ». Utilisez cette propriété au lieu d’osProcessor.|
 |

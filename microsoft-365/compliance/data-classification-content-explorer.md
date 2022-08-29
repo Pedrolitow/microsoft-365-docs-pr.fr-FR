@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: ca3fc3deb542af582f2c38457bbd460c1241b5ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: d00d8febe5c30b438d77e3c9b82b6a8bb6011812
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637348"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360454"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -95,7 +95,7 @@ L’Explorateur de contenu présente un instantané actuel des éléments qui on
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Une [stratégie DLP](dlp-learn-about-dlp.md) peut aider à protéger les informations sensibles, définies selon des type d’**informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courantes](sensitive-information-type-entity-definitions.md) de nombreuses régions différentes qui sont prêtes à être utilisées. Par exemple, un numéro de carte de crédit, des numéros de compte bancaire, des numéros de carte d’identité nationale et des numéros de service Windows Live ID.
+Une [stratégie DLP](dlp-learn-about-dlp.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) provenant de nombreuses régions différentes qui sont prêtes à l’emploi. Par exemple, un numéro de carte de crédit, un numéro de compte bancaire et un numéro d’ID national.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 

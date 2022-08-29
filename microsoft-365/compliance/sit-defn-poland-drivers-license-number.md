@@ -19,28 +19,28 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro de permis de conduire en Pologne.
-ms.openlocfilehash: e0bb04fb1d6e7dc6a56fc0a487bba3dc9cf60b49
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 120e000e5d7666d213062d812b2b5d6b6555c18e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997209"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325702"
 ---
 # <a name="poland-drivers-license-number"></a>Numéro de permis de conduire polonais
 
 ## <a name="format"></a>Format
 
-14 chiffres contenant deux barres obliques
+11 ou 14 chiffres contenant deux barres obliques
 
 ## <a name="pattern"></a>Modèle
 
-14 chiffres et deux barres obliques :
+11 ou 14 chiffres contenant deux barres obliques
 
 - cinq chiffres
 - une barre oblique
 - deux chiffres
 - une barre oblique
-- sept chiffres
+- quatre ou sept chiffres
 
 ## <a name="checksum"></a>Somme de contrôle
 
@@ -70,124 +70,124 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
-- driverlic
-- driverlics
-- driverlicense
-- driverlicenses
-- driverlicence
-- driverlicences
-- driver lic
-- driver lics
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permis de conduire
+- permis de conduire
 - Permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- driverslic
-- driverslics
-- driverslicence
-- driverslicences
-- driverslicense
-- driverslicenses
-- drivers lic
-- drivers lics
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- driver’lic
-- driver’lics
-- driver’license
+- permisconduire
+- permisconduire
+- permisconduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- driver' lic
-- driver' lics
+- permis conduire
+- permis conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- driver’slic
-- driver’slics
-- driver’slicense
-- driver’slicenses
-- driver’slicence
-- driver’slicences
-- driver’s lic
-- driver’s lics
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permis de conduire
+- permis de conduire
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- Dl #
-- Dls #
-- driverlic #
-- driverlics #
-- driverlicense #
-- driverlicenses #
-- driverlicence #
-- driverlicences #
-- driver lic #
-- driver lics #
-- permis de conduire #
-- licences de pilote #
-- permis de conduire #
-- driverslic #
-- driverslics #
-- driverslicense #
-- driverslicenses #
-- driverslicence #
-- driverslicences #
-- drivers lic #
-- drivers lics #
-- permis de conduire #
-- licences de pilotes #
-- permis de conduire #
-- permis de conduire #
-- driver’lic #
-- driver’lics #
-- driver’license #
-- permis de conduire #
-- permis de conduire #
-- permis de conduire #
-- driver' lic #
-- driver' lics #
+- pc#
+- pc#
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- driver’slic #
-- driver’slics #
-- driver’slicense #
-- driver’slicenses #
-- driver’slicence #
-- driver’slicences #
-- driver’s lic #
-- driver’s lics #
-- permis de conduire #
-- permis de conduire #
-- permis de conduire #
-- permis de conduire #
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
 - permis de conduire
 - permis de conduire
-- dlno #
-- driv lic
-- driv licen
-- licence driv
-- licences driv
-- licence driv
-- licences driv
-- licen du pilote
-- drivers licen
-- licen du conducteur
-- conduite lic
-- conduite licen
+- pc #
+- permis conduire
+- permis conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- dl no
-- dlno
-- numéro dl
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis conduire
+- permis conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduite
+- pc no
+- pcno
+- pc numéro
 
 ### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver s_license_number
 

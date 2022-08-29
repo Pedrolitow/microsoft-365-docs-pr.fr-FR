@@ -70,6 +70,8 @@
   items:
     - name: Créer des documents à l’aide de l’assembly de contenu
       href: content-assembly.md
+    - name: Générer des documents à l’aide de Power Automate
+      href: automate-document-generation.md
 - name: Recherche de métadonnées
   items:
     - name: Rechercher des métadonnées dans les bibliothèques de documents

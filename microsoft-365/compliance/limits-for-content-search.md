@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Découvrez les limites en vigueur pour les fonctionnalités de recherche de contenu et eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 79078818ca3975dcbfee0ce72b93f1c3d6039802
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53af013e5e247d617e88bc0600bd3c0324c7627f
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629528"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357519"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limites pour la recherche eDiscovery
 
@@ -41,10 +41,6 @@ Le tableau suivant répertorie les limites de recherche lors de l’utilisation 
 |Description de la limite|Limite|
 |---|---|
 |Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche unique|Aucune limite <sup>1</sup>|
-|Nombre maximal de recherches qui peuvent s’exécuter en même temps dans votre organisation.|30|
-|Nombre maximal de recherches à l’échelle de l’organisation qui peuvent être exécutées en même temps.|3|
-|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. Cette limite est probablement atteinte lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **Get-ComplianceSearch \|Start-ComplianceSearch** dans Security & Compliance PowerShell.|10|
-|Nombre maximal d’éléments par boîte aux lettres utilisateur qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu.|100|
 |Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres utilisateur qui peuvent éventuellement être affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche. Les éléments les plus récents sont affichés.|1 000 <sup>2</sup>|
 |Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S’il existe plus de 1 000 boîtes aux lettres contenant du contenu qui correspond à la requête de recherche, au maximum, seules les 1 000 boîtes aux lettres ayant le plus de résultats de recherche sont disponibles en préversion.|1 000|
 |Nombre maximal d’éléments trouvés dans SharePoint et OneDrive Entreprise sites affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche. Les éléments les plus récents sont affichés.|200 |
@@ -97,8 +93,6 @@ Le tableau suivant répertorie les limites lors de l’exportation des résultat
 |---|---|
 |Quantité maximale de données exportables à partir d’une seule recherche  <p> **Note:** Si les résultats de la recherche sont supérieurs à 2 To, envisagez d’utiliser des plages de dates ou d’autres types de filtres pour réduire la taille totale des résultats de la recherche.|2 To|
 |Nombre maximal d’exportations d’une organisation en une seule journée <p> **Note:** Cette limite est réinitialisée tous les jours à 00:00 UTC|2 To|
-|Nombre maximal d’exportations simultanées pouvant être exécutées en même temps au sein de votre organisation <p> **Note:** L’exécution d’un **rapport uniquement** compte pour les exportations simultanées totales de votre organisation. Si trois utilisateurs effectuent 3 exportations chacune, une seule autre exportation peut être effectuée. Qu’il s’agisse de l’exportation d’un rapport ou de résultats de recherche, aucune autre exportation ne peut être effectuée tant que l’exportation n’est pas terminée.|10|
-|Nombre maximal d’exportations qu’un seul utilisateur peut exécuter à tout moment|3|
 |Nombre maximal de boîtes aux lettres pour les résultats de recherche qui peuvent être téléchargés à l’aide de l’outil d’exportation eDiscovery|100 000|
 |Taille maximale du fichier PST pouvant être exporté <p> **Note:** Si les résultats de recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de recherche de la boîte aux lettres sont exportés dans deux fichiers PST distincts (ou plus). Si vous choisissez d’exporter tous les résultats de recherche dans un seul fichier PST, le fichier PST sera placé dans des fichiers PST supplémentaires si la taille totale des résultats de recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Voir [Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md). Les résultats de recherche d’une boîte aux lettres spécifique ne seront pas répartis entre plusieurs fichiers PST, sauf si le contenu d’une seule boîte aux lettres est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST pour lequel contient tous les messages d’un dossier unique et que les résultats de recherche sont supérieurs à 10 Go, les éléments sont toujours organisés dans l’ordre chronologique, de sorte qu’ils seront placés dans des fichiers PST supplémentaires en fonction de la date d’envoi.|10 Go|
 |Taux auquel les résultats de recherche des boîtes aux lettres et des sites sont chargés vers un emplacement de stockage Azure fourni par Microsoft.|Maximum de 2 Go par heure|
@@ -123,6 +117,19 @@ Le tableau suivant décrit les limites d’indexation qui peuvent entraîner le 
 |Taille maximale du corps dans l’index|67 millions de caractères|Nombre total de caractères dans le corps d’un e-mail et toutes ses pièces jointes. Lorsqu’un e-mail est indexé, tout le texte dans le corps du message et dans toutes les pièces jointes est concaténé en une seule chaîne. La taille maximale de cette chaîne indexée est de 67 millions de caractères.|
 |Nombre maximal de jetons uniques dans le corps|1 million|Comme expliqué précédemment, les jetons sont le résultat de l’extraction du texte du contenu, de la suppression de la ponctuation et des espaces, puis de sa division en mots (appelés jetons) stockés dans l’index. Par exemple, l’expression `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seuls 4 d’entre eux sont des jetons uniques. Il existe une limite de 1 million de jetons uniques par e-mail, ce qui permet d’empêcher l’index de devenir trop volumineux avec des jetons aléatoires.|
 |||
+
+## <a name="jobs-limits"></a>Limites des travaux
+
+> [!NOTE]
+> Les travaux eDiscovery (Premium) sont comptabilisés dans les limites eDiscovery (Standard). Par exemple, si vous avez 50 travaux en cours d’exécution dans eDiscovery (Premium), vous ne pourrez pas démarrer des travaux dans eDiscovery (Standard). Les travaux eDiscovery (Standard) ne sont pas comptabilisés dans les limites eDiscovery (Premium).
+
+|Description|Limite|
+|---|---|
+|Nombre maximal de travaux simultanés dans votre organisation.|50|
+|Nombre maximal de travaux simultanés qu’un seul utilisateur peut démarrer en même temps.|25|
+|Nombre maximal de travaux simultanés à l’échelle du locataire (par exemple, recherches à l’échelle du locataire) dans votre organisation.|5|
+|Nombre maximal de travaux simultanés à l’échelle du locataire (par exemple, les recherches à l’échelle du locataire) qu’un seul utilisateur peut démarrer à la fois.|5|
+|Nombre maximal de travaux par jour dans votre organisation. <p> **Note:** Cette limite est réinitialisée tous les jours à 00:00 UTC|500|
 
 ## <a name="more-information"></a>Plus d’informations
 

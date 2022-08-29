@@ -15,13 +15,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - zerotrust-solution
+ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a0c5b3cbc34bf24c04a476091e3dc08b0655a74
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 5aff82e0909388cddcef5672ded6578e0701f47f
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750251"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323614"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Stratégies de Microsoft Defender for Cloud Apps recommandées pour les applications SaaS
 

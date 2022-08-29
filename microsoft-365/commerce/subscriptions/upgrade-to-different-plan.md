@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Le moyen le plus simple de mettre à niveau les plans consiste à utiliser l’onglet Mise à niveau dans le centre d’administration. Toutefois, l’onglet Mise à niveau n’est pas toujours pris en charge.
 ms.date: 04/21/2021
-ms.openlocfilehash: 557070177fac2e1ae91d3ddb9e2125221c6b4f3f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 18e5da20b67068b2834793a0b7013bb27e6c5adf
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489143"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324558"
 ---
 # <a name="upgrade-to-a-different-microsoft-plan"></a>Effectuer une mise à niveau vers un autre plan Microsoft
 
@@ -165,4 +165,4 @@ Le jour de la mise à niveau de votre plan, la facturation de votre ancien abonn
 ## <a name="related-content"></a>Contenu associé
 
 [Modifier les plans manuellement](change-plans-manually.md) (article)\
-[Sauvegarder des données avant de changer de plan Microsoft 365 pour les entreprises](back-up-data-before-switching-plans.md) (article)
+[Sauvegarder des données avant de changer de plan Microsoft 365 pour les entreprises](move-users-different-subscription.md) (article)

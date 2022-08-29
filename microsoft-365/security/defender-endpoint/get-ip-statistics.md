@@ -1,8 +1,7 @@
 ---
-title: API Obtenir des statistiques IP
-description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, obtenir, ip, statistiques, prévalence
-search.product: eADQiWindows 10XVcnh
+title: Obtenir l’API de statistiques IP
+description: Obtenez les statistiques les plus récentes pour votre adresse IP à l’aide de Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, ip, statistiques, prévalence
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f0503f85d27e7d3872b03e865b6ce9b5248fb0b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: df3da83e8f92247429029c8acf7212f164b3ea5a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165293"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325944"
 ---
-# <a name="get-ip-statistics-api"></a>API Obtenir des statistiques IP
+# <a name="get-ip-statistics-api"></a>Obtenir l’API de statistiques IP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,12 +41,12 @@ ms.locfileid: "61165293"
 Récupère les statistiques de l’adresse IP donnée.
 
 ## <a name="limitations"></a>Limites
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
-2. La valeur maximale pour lookbackhours est de 720 heures (30 jours).
+1. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+2. La valeur maximale de Lookbackhours est de 720 heures (30 jours).
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -56,7 +55,7 @@ Déléguée (compte professionnel ou scolaire)|Ip.Read.All|« Lire les profils d
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -68,13 +67,13 @@ GET /api/ips/{ip}/stats
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
-## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
+## <a name="request-uri-parameters"></a>Paramètres d’URI de requête
 
 Nom|Type|Description
 :---|:---|:---
-lookBackHours|Int32|Définit les heures que nous allons rechercher pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
+lookBackHours|Int32|Définit les heures de recherche pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -82,7 +81,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si ip existe : 200 - OK avec des données statistiques dans le corps. L’adresse IP est valide mais n’existe pas - organizationPrevalence 0, IP n’est pas valide - HTTP 400.
+En cas de réussite et d’adresse IP - 200 OK avec les données statistiques dans le corps. L’adresse IP est valide, mais n’existe pas : organizationPrevalence 0, IP non valide - HTTP 400.
 
 ## <a name="example"></a>Exemple
 
@@ -110,9 +109,9 @@ Voici un exemple de réponse.
 
 |Nom|Description|
 |---|---|
-|Prévalence de l’organisation|nombre distinct d’appareils qui ont ouvert une connexion réseau à cette adresse IP;|
-|Organisation vue pour la première fois|première connexion pour cette adresse IP dans l’organisation.|
-|Organisation vue pour la dernière fois|dernière connexion pour cette adresse IP dans l’organisation.|
+|Prévalence de l’organisation|nombre distinct d’appareils qui ont ouvert la connexion réseau à cette adresse IP.|
+|L’organisation a été vue pour la première fois|première connexion pour cette adresse IP dans l’organisation.|
+|Organisation vu pour la dernière fois|dernière connexion pour cette adresse IP dans l’organisation.|
 
 > [!NOTE]
-> Ces informations de statistique sont basées sur les données des 30 derniers jours.
+> Ces informations statistiques sont basées sur les données des 30 derniers jours.

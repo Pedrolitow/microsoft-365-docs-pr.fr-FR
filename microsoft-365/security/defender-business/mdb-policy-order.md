@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 361a1a08569f24c83498fddeb0e4c2b9bd8c5d02
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 4d3f2f7a04891fdf3e08f06d6744894e18e944dd
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770874"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320347"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Comprendre l’ordre des stratégies dans Microsoft Defender pour entreprises
 
@@ -31,7 +32,6 @@ Defender entreprise inclut des stratégies prédéfinies pour vous assurer que l
 À mesure que des stratégies sont ajoutées, vous remarquerez qu’un ordre de priorité est attribué. Vous pouvez modifier l’ordre de priorité des stratégies que vous définissez, mais vous ne pouvez pas modifier l’ordre de priorité des stratégies par défaut. Par exemple, supposons que pour vos appareils clients Windows, vous disposez de trois stratégies de protection de nouvelle génération. Dans ce cas, votre stratégie par défaut est le numéro 3 en priorité. Vous pouvez modifier l’ordre de vos stratégies numérotées 1 et 2, mais la stratégie par défaut reste numéro 3 dans votre liste. 
 
 **La chose importante à retenir sur plusieurs stratégies est que les appareils recevront la première stratégie appliquée uniquement.** Si vous faites référence à notre exemple précédent de trois stratégies de nouvelle génération, supposons que vous avez des appareils ciblés par les trois stratégies. Dans ce cas, ces appareils recevront le numéro de stratégie 1, mais ne recevront pas les stratégies numérotées 2 et 3. 
-
 
 ## <a name="key-points-to-remember-about-policy-order"></a>Points clés à retenir sur l’ordre de stratégie
 

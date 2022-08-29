@@ -1,7 +1,7 @@
 ---
-title: API Obtenir les alertes liées au domaine
-description: Découvrez comment utiliser l’API Obtenir les alertes liées au domaine pour récupérer les alertes liées à une adresse de domaine donnée dans Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, obtenir, domaine, associé, alertes
+title: Obtenir l’API d’alertes liées au domaine
+description: Découvrez comment utiliser l’API Obtenir des alertes liées au domaine pour récupérer des alertes liées à une adresse de domaine donnée dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, domain, related, alerts
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b67b97ac115057b0e17bfd492e6330a13ee9e213
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 0d2cc5c906110b0159439fc27de0f5690460928d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284636"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325454"
 ---
-# <a name="get-domain-related-alerts-api"></a>API Obtenir les alertes liées au domaine
+# <a name="get-domain-related-alerts-api"></a>Obtenir l’API d’alertes liées au domaine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,29 +39,29 @@ ms.locfileid: "61284636"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère une collection d’alertes [liées](alerts.md) à une adresse de domaine donnée.
+Récupère une collection [d’alertes](alerts.md) liées à une adresse de domaine donnée.
 
 ## <a name="limitations"></a>Limites
 
-- Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-- Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+- Vous pouvez interroger les alertes mises à jour pour la dernière fois en fonction de votre période de rétention configurée.
+- Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Alert.Read.All|« Lire toutes les alertes »
-Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
+Application|Alert.Read.All|« Lire toutes les alertes »
+Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire)|Alert.Read|« Lire les alertes »
 Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - La réponse inclut uniquement les alertes, associées aux appareils, à qui [](machine-groups.md) l’utilisateur a accès, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils pour plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - La réponse inclut uniquement les alertes, associées aux appareils, auxquelles l’utilisateur a accès, en fonction des paramètres de groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/alerts
 
 |En-tête|Valeur|
 |---|---|
-|Autorisation|String|
+|Autorisation|Chaîne|
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -81,13 +81,13 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si le domaine existe : 200 - OK avec la liste des entités [d’alerte.](alerts.md) Si le domaine n’existe pas : 200 - OK avec un ensemble vide.
+En cas de réussite et de domaine : 200 OK avec la liste des entités [d’alerte](alerts.md) . Si le domaine n’existe pas - 200 OK avec un jeu vide.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de la demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/client.wns.windows.com/alerts

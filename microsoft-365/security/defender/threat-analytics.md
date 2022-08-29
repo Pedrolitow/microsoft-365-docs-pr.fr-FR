@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a24b887edefa21807ca544a68b0721e70b6b512c
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: ee74b1b5af9af8e657329f973855cdee926a61f8
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050785"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328362"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Analyse des menaces dans Microsoft 365 Defender
 
@@ -191,7 +191,7 @@ Dans la section **Atténuations de l’exposition &** , passez en revue la liste
   - Protection des applications potentiellement indésirables (PUA)
   - Protection en temps réel
 
-Les informations d’atténuation contenues dans cette section incorporent des données de [Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), qui fournissent également des informations détaillées d’exploration à partir de divers liens du rapport.
+Les informations d’atténuation contenues dans cette section incorporent des données de [Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), qui fournissent également des informations détaillées d’exploration à partir de divers liens du rapport.
 
 :::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="Section atténuations d’un rapport d’analyse des menaces montrant les détails de la configuration sécurisée" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
@@ -251,7 +251,7 @@ Pour accéder aux rapports d’analyse des menaces, vous avez besoin de certains
 
 - Pour afficher les alertes, les incidents ou les données de ressources affectées, vous devez disposer d’autorisations sur Microsoft Defender pour Office ou Microsoft Defender pour point de terminaison données d’alertes, ou les deux.
 - Pour afficher les tentatives d’e-mail empêchées, vous devez disposer d’autorisations sur les données de repérage Microsoft Defender pour Office.
-- Pour afficher les atténuations, vous devez disposer d’autorisations pour Gestion des menaces et des vulnérabilités données dans Microsoft Defender pour point de terminaison.
+- Pour afficher les atténuations, vous devez disposer d’autorisations sur les données de gestion des vulnérabilités Defender dans Microsoft Defender pour point de terminaison.
 
 Lorsque vous examinez les données d’analyse des menaces, n’oubliez pas les facteurs suivants :
 

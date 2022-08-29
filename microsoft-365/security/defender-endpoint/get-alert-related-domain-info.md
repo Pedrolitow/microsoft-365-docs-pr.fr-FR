@@ -1,8 +1,7 @@
 ---
 title: Obtenir les informations des domaines liés à l’alerte
-description: Récupérez tous les domaines liés à une alerte spécifique à l’aide de Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, obtenir des informations d’alerte, informations d’alerte, domaine associé
-search.product: eADQiWindows 10XVcnh
+description: Récupérez tous les domaines liés à une alerte spécifique à l’aide de Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, obtention d’informations d’alerte, informations d’alerte, domaine associé
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,20 +13,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9780379ee78989c718b4a017b16e26646a58d429
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1371aa1ec6ce53276300883b6e049db9457cfc19
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166385"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326648"
 ---
-# <a name="get-alert-related-domain-information-api"></a>API Obtenir les informations de domaine associées à une alerte
+# <a name="get-alert-related-domain-information-api"></a>Obtenir l’API d’informations de domaine liées aux alertes
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -41,23 +40,23 @@ Récupère tous les domaines liés à une alerte spécifique.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez interroger les alertes mises à jour pour la dernière fois en fonction de votre période de rétention configurée.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|URL. Read.All|« Lire les URL »
-Déléguée (compte professionnel ou scolaire)|URL. Read.All|« Lire les URL »
+Application|Url. Read.All|'URL de lecture'
+Déléguée (compte professionnel ou scolaire)|Url. Read.All|'URL de lecture'
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -69,7 +68,7 @@ GET /api/alerts/{id}/domains
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -77,7 +76,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’alerte et le domaine existent : 200 - OK. Si l’alerte est in trouvée - 404 - In trouvé.
+Si l’opération réussit et que l’alerte et le domaine existent - 200 OK. Si l’alerte est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 

@@ -1,9 +1,8 @@
 ---
-title: Liste des logiciels par recommandation
+title: Répertorier les logiciels par recommandation
 description: Récupère une recommandation de sécurité liée à un logiciel spécifique.
-keywords: api, api de graphique, api pris en charge, obtenir, recommandation de sécurité, recommandation de sécurité pour les logiciels, Gestion des menaces et des vulnérabilités, Gestion des menaces et des vulnérabilités api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+keywords: api, api graphe, api prises en charge, get, recommandation de sécurité, recommandation de sécurité pour les logiciels, Gestion des menaces et des vulnérabilités, api Gestion des menaces et des vulnérabilités
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,23 +13,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 67ac6f1bb77df74c3c44cac57624c14e20625e7e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 47006759937d8fb9130dc04c6669f064f4e4b9d7
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166253"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342910"
 ---
-# <a name="list-software-by-recommendation"></a>Liste des logiciels par recommandation
+# <a name="list-software-by-recommendation"></a>Répertorier les logiciels par recommandation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,12 +42,12 @@ Récupère une recommandation de sécurité liée à un logiciel spécifique.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
 Application|Software.Read.All|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire)|SecurityRecommendation.Read|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|SecurityRecommendation.Read|« Lire les informations de recommandation de sécurité sur la gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -60,7 +59,7 @@ GET /api/recommendations/{id}/software
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -68,7 +67,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec le logiciel associé aux recommandations de sécurité dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec le logiciel associé aux recommandations de sécurité dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -98,7 +97,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recommandations & sécurité des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recommandation de sécurité de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

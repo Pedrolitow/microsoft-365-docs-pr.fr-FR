@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer des étiquettes de rétention pour les exceptions aux stratégies de rétention pour la gestion du cycle de vie des données afin de pouvoir conserver ce dont vous avez besoin et supprimer ce dont vous n’avez pas besoin.
-ms.openlocfilehash: 0951ce1fea2f9324c19ec0bf17451d458b4914d1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: ca78c4df6decaf71bfddd899ac13afaa9ada5df6
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632572"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336219"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>Créer des étiquettes de rétention pour les exceptions à vos stratégies de rétention
 
@@ -51,7 +51,7 @@ L’administrateur général de votre organisation dispose de toutes les autoris
 
 ## <a name="how-to-create-retention-labels-for-data-lifecycle-management"></a>Comment créer des étiquettes de rétention pour la gestion du cycle de vie des données
 
-1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à l’onglet **Solutions** > **Gestion du cycle de vie des données** > **Étiquettes** > + **Créer une étiquette**
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à l’onglet **Solutions** > **Data lifecycle management** > **Microsoft 365** > **Labels** > + **Create a label**
     
     Vous ne voyez pas immédiatement la solution **Gestion du cycle de vie des données** ? Sélectionnez tout d’abord **Afficher tout**. 
 

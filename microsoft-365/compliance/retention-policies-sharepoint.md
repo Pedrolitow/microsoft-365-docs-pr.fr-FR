@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le fonctionnement de la rétention Microsoft 365 pour SharePoint et OneDrive, à l’aide de stratégies de rétention et d’étiquettes de rétention pour gérer la rétention automatique ou la suppression des données pour votre organisation.
-ms.openlocfilehash: 54e1b1493eecd763853e4b3968ce744b21d4eebf
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.openlocfilehash: 3e21d720b2d4afa70a83011b1e2486151f6c3cd2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112502"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326428"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -133,6 +133,8 @@ Si le fichier d’origine est partagé à nouveau mais n’est pas modifié, la 
 ![Fonctionnement de la rétention pour les pièces jointes cloud stockées dans SharePoint et OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
 
 La copie stockée dans la bibliothèque de conservation et de préservation des données est généralement créée dans l’heure qui s’agit de la pièce jointe cloud partagée.
+
+Pour vous protéger contre la suppression du fichier d’origine par les utilisateurs avant que la copie puisse être créée et étiquetée, les fichiers situés dans les emplacements inclus dans la stratégie d’étiquetage automatique sont automatiquement copiés dans la bibliothèque de conservation de la conservation, s’ils sont supprimés. Ces fichiers ont une période de rétention temporaire d’une journée, puis suivent le processus de nettoyage standard décrit sur cette page. Une fois le fichier d’origine supprimé, la copie permettant de conserver les pièces jointes cloud utilise cette version du fichier. La conservation automatique et temporaire des fichiers supprimés dans la bibliothèque de conservation est unique aux stratégies d’étiquetage automatique pour les pièces jointes cloud.
 
 ## <a name="how-retention-works-with-onenote-content"></a>Fonctionnement de la rétention avec OneNote contenu
 

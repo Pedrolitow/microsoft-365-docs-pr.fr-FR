@@ -1,7 +1,7 @@
 ---
-title: API Obtenir l’ordinateur par ID
-description: Découvrez comment utiliser l’API Obtenir un ordinateur par ID pour récupérer un ordinateur par son ID d’appareil ou son nom d’ordinateur dans Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, obtenir, appareils, entité, ID
+title: Obtenir une machine par API d’ID
+description: Découvrez comment utiliser l’API Get machine by ID pour récupérer un ordinateur par son ID d’appareil ou son nom d’ordinateur dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, appareils, entité, ID
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 14b00e936111c54cd100e847a9ec18f921e34880
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 8b9186e37b102b9b27b0231167c119ce1a104048
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283232"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324142"
 ---
-# <a name="get-machine-by-id-api"></a>API Obtenir l’ordinateur par ID
+# <a name="get-machine-by-id-api"></a>Obtenir une machine par API d’ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,36 +31,36 @@ ms.locfileid: "61283232"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Description de l’API
-Récupère un ordinateur [spécifique par](machine.md) son ID d’appareil ou son nom d’ordinateur.
+Récupère une [machine](machine.md) spécifique par son ID d’appareil ou son nom d’ordinateur.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez obtenir la dernière vue des appareils en fonction de votre stratégie de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez obtenir les appareils pour la dernière fois en fonction de votre stratégie de rétention configurée.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
-Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire) | Machine.Read | « Lire les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire) | Machine.ReadWrite | « Lire et écrire des informations sur l’ordinateur »
+Application|Machine.Read.All|'Lire tous les profils d’ordinateur'
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire) | Machine.Read | « Lire les informations de l’ordinateur »
+Déléguée (compte professionnel ou scolaire) | Machine.ReadWrite | « Lire et écrire des informations sur la machine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -72,7 +72,7 @@ GET /api/machines/{id}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -80,8 +80,8 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’appareil existe : 200 - OK avec l’entité [de l’ordinateur](machine.md) dans le corps.
-Si l’ordinateur avec l’ID spécifié est in trouvé - 404 - In trouvé.
+En cas de réussite et si l’appareil existe - 200 OK avec l’entité [de machine](machine.md) dans le corps.
+Si l’ordinateur avec l’ID spécifié est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 

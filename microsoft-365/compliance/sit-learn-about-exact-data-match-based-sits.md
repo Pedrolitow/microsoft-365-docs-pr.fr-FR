@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Découvrez les types d’informations sensibles basés sur des correspondances de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25a48a13e66803dec592680c0ad0e9c01b611dc0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: eced8c769f7c1b8f35fd0eb4524d3518ea891881
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949280"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360060"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données
 
-[Les types d’informations sensibles](sensitive-information-type-learn-about.md) sont utilisés pour aider à identifier les éléments sensibles afin que vous puissiez les empêcher d’être partagés par inadvertance ou de manière inappropriée, pour faciliter la localisation des données pertinentes dans eDiscovery et pour appliquer des actions de gouvernance à certains types d’informations. Vous définissez un type d’informations sensibles personnalisé (SIT) en fonction des éléments suivants :
+[Les types d’informations sensibles](sensitive-information-type-learn-about.md) sont utilisés pour aider à identifier les éléments sensibles afin que vous puissiez les empêcher d’être partagés par inadvertance ou de manière inappropriée. Ils sont également utilisés pour aider à localiser les données pertinentes dans eDiscovery et à appliquer des actions de gouvernance à certains types d’informations. Vous définissez un type d’informations sensibles personnalisé (SIT) en fonction des éléments suivants :
 
 - modèles
 - preuve de mot clé, comme *un employé*, un *numéro de sécurité sociale* ou un *ID*
@@ -36,7 +36,6 @@ ms.locfileid: "66949280"
 Mais que se passe-t-il si vous souhaitez un type d’informations sensibles personnalisé (SIT) qui utilise des valeurs de données exactes ou presque exactes, au lieu d’un type qui a trouvé des correspondances basées sur des modèles génériques ? Avec la classification EDM (Exact Data Match), vous pouvez créer un type d’informations sensibles personnalisé conçu pour :
 
 - être dynamique et actualisé facilement ;
-- être plus évolutif ;
 - entraîner moins de faux positifs ;
 - utiliser des données sensibles structurées ;
 - gérer les informations sensibles de manière plus sécurisée, sans les partager avec quiconque, y compris Microsoft
@@ -71,7 +70,7 @@ Le schéma est un fichier xml qui définit :
 
 ### <a name="sensitive-information-source-table"></a>Table source d’informations sensibles
 
-La table source sensible contient les valeurs d’informations sensibles que le SIT EDM recherche. Il est constitué de colonnes et de lignes. Les en-têtes de colonne sont les noms de champs, les lignes sont une instance de données et chaque cellule contient les valeurs de cette instance pour ce champ.
+La table source d’informations sensibles contient les valeurs que le SIT EDM recherche. Il est constitué de colonnes et de lignes. Les en-têtes de colonne sont les noms de champs, les lignes sont une instance d’élément et chaque cellule contient les valeurs de cette instance d’élément pour ce champ.
 
 Voici un exemple simple de table source d’informations sensibles.
 
@@ -86,25 +85,33 @@ Voici un exemple simple de table source d’informations sensibles.
 Chaque SIT a un package de règles. Vous utilisez le package de règles dans un sit EDM pour définir :
 
 - Correspond, qui spécifient le champ qui sera l’élément principal à utiliser dans la recherche exacte. Il peut s’agir d’une expression régulière avec ou sans validation de somme de contrôle, d’une liste de mots clés, d’un dictionnaire de mots clés ou d’une fonction.
-- Classification, qui spécifie la correspondance de type sensible qui déclenche la recherche EDM.
-- Élément de soutien qui sont des éléments qui, s’ils sont trouvés, fournissent des preuves de soutien qui contribuent à accroître la confiance de la correspondance. Par exemple, le mot clé « SSN » à proximité d’un numéro SSN. Il peut s’agir d’une expression régulière avec ou sans validation de somme de contrôle, liste de mots clés, dictionnaire de mots clés.
-- Les niveaux de confiance (élevé, moyen, faible) reflètent la quantité de preuves à l’appui détectées avec l’élément principal. Plus un élément contient de preuves à l’appui, plus la confiance qu’un élément correspondant contient contient les informations sensibles que vous recherchez. Pour plus d’informations sur les niveaux de confiance, consultez les [parties fondamentales d’un type d’informations sensibles](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) .
-Proximité : nombre de caractères entre l’élément principal et l’élément de prise en charge
+- Classification, qui spécifie la correspondance de type d’informations sensibles qui déclenche une recherche EDM.
+- Élément de prise en charge, qui sont des éléments qui, lorsqu’ils sont trouvés, fournissent des preuves qui aident à augmenter la confiance de la correspondance. Par exemple, l’occurrence du mot clé « SSN » à proximité d’un numéro de sécurité sociale réel. Un élément de prise en charge peut être une expression régulière avec ou sans validation de somme de contrôle, liste de mots clés ou dictionnaire de mots clés.
+- Les niveaux de confiance (élevé, moyen, faible) reflètent la quantité de preuves à l’appui détectées en plus de l’élément principal. Plus un élément contient de preuves à l’appui, plus la confiance qu’un élément correspondant contient contient les informations sensibles que vous recherchez. Pour plus d’informations sur les niveaux de confiance, consultez les [parties fondamentales d’un type d’informations sensibles](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) .
+- Proximité : nombre de caractères entre l’élément principal et l’élément de prise en charge.
 
 ### <a name="you-supply-your-own-schema-and-data"></a>Vous fournissez votre propre schéma et vos propres données
 
-[Microsoft Purview est fourni avec plus de 200 SITS](sensitive-information-type-entity-definitions.md) avec des schémas prédéfinis, des modèles regex, des mots clés et des niveaux de confiance. Avec les SIT EDM, vous êtes responsable de la définition du schéma, ainsi que des champs principaux et secondaires qui identifient les éléments sensibles. Étant donné que le schéma et les valeurs de données primaires et secondaires sont hautement sensibles, vous les chiffrez via une fonction de [hachage](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) qui inclut une valeur [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) générée de manière aléatoire ou auto-fournie. Ces valeurs hachées sont ensuite chargées sur le service, de sorte que vos données sensibles ne sont jamais ouvertes.
+[Microsoft Purview est fourni avec de nombreux SIÈGES prédéfinis](sensitive-information-type-entity-definitions.md). Ces ÉLÉMENTS SONT fournis avec des schémas, des modèles d’expression régulière, des mots clés et des niveaux de confiance. Toutefois, avec les SIT EDM, vous êtes responsable de la définition du schéma, ainsi que des champs principaux et secondaires qui identifient les éléments sensibles. Étant donné que le schéma et les valeurs de données primaires et secondaires sont hautement sensibles, vous les chiffrez via une fonction de [hachage](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) qui inclut une valeur [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) générée de manière aléatoire ou auto-fournie. Seules les valeurs hachées sont chargées sur le service, de sorte que vos données sensibles ne sont jamais ouvertes.
 
 ### <a name="primary-and-secondary-support-elements"></a>Éléments de support principal et secondaire
 
-Lorsque vous créez un sit EDM, vous définissez un champ *d’élément principal* dans le package de règles. Les champs principaux sont les éléments pour lesquels tout votre contenu sera recherché et qui doivent suivre un modèle défini pour être identifiés. Lorsque l’élément principal est trouvé dans les éléments analysés, EDM recherche ensuite les éléments *secondaires* ou de prise en charge, qui n’ont pas besoin de suivre un modèle et leur proximité avec l’élément principal. EDM requiert que l’élément principal soit d’abord détectable via un SIT existant. Consultez les [définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md) pour obtenir la liste complète des SIT disponibles. Vous devez trouver l’une de celles qui détectent la classe que vous souhaitez que votre sit EDM détecte. Par exemple, si votre schéma SIT EDM comporte le numéro de sécurité sociale des États-Unis comme élément principal, lorsque vous créez votre schéma EDM, vous l’avez associé au [numéro de sécurité sociale (SSN) SIT des États-Unis](sit-defn-us-social-security-number.md) .
+Lorsque vous créez un sit EDM, vous définissez un champ *d’élément principal* dans le package de règles. Tout le contenu sera recherché pour l’élément principal. EDM requiert que l’élément principal soit détectable via un SIT existant. 
+
+> [!NOTE]
+> Consultez les [définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md) pour obtenir la liste complète des SIT disponibles.  
+
+Vous devez trouver un SIT prédéfini qui détecte les informations sensibles que vous souhaitez que votre sit EDM détecte. Par exemple, si votre schéma SIT EDM comporte le numéro de sécurité sociale des États-Unis comme élément principal, lorsque vous créez votre schéma EDM, vous l’avez associé au [numéro de sécurité sociale (SSN) SIT des États-Unis](sit-defn-us-social-security-number.md) . Les éléments principaux doivent suivre un modèle défini pour être détectés.
+
+Lorsque l’élément principal est trouvé dans un élément analysé, EDM recherche ensuite les éléments *secondaires* ou de prise en charge. Les éléments secondaires n’ont pas besoin de suivre un modèle, mais doivent se trouver à une certaine proximité de l’élément principal.
 
 ## <a name="how-matching-works"></a>Fonctionnement de la correspondance
 
-EDM recherche des correspondances en comparant le contenu qu’il trouve à une table de données sensibles que vous définissez. Le test de correspondance est effectué à l’aide d’une combinaison de règles et de modèles traditionnels pour vous assurer que les données correspondantes sont une instance réelle de données que vous souhaitez rechercher et protéger. À la base, EDM fonctionne en comparant les chaînes de vos documents et e-mails aux valeurs d’une table de données sensibles que vous fournissez pour déterminer si les valeurs de votre contenu sont présentes dans la table en comparant des hachages de chiffrement unidirectionnels.
+EDM fonctionne en comparant les chaînes de vos documents et e-mails avec les valeurs de la table source d’informations sensibles pour voir si les valeurs du contenu analysé sont présentes dans la table. La comparaison est effectuée en comparant des hachages de chiffrement unidirectionnels.
+
 
 > [!TIP]
-> Une pratique courante consiste à combiner l’utilisation de types d’informations sensibles EDM et les types d’informations sensibles standard sur lesquels ils sont basés dans les règles DLP, avec différents seuils. Par exemple, vous pouvez utiliser un type d’informations sensibles EDM qui recherche des numéros de sécurité sociale et d’autres données, avec des exigences strictes et une faible tolérance où une ou plusieurs correspondances entraînent une alerte DLP, et utiliser le type d’informations sensibles standard, comme le numéro de sécurité sociale intégré aux États-Unis pour des nombres plus élevés.  
+> Vous pouvez utiliser les SIT EDM et les SIT prédéfinis sur lesquels ils sont basés, ensemble, dans les règles DLP pour une meilleure détection. Utilisez l’EDM SIT avec des niveaux de confiance plus élevés et le SIT prédéfini avec des niveaux de confiance inférieurs. Par exemple, utilisez un SIT EDM qui recherche le numéro de sécurité sociale et d’autres données de prise en charge avec des exigences strictes avec une confiance élevée. L’utilisation de la confiance élevée génère une correspondance DLP lorsque peu d’instances sont détectées. Utilisez ensuite un SIT prédéfini, comme le numéro de sécurité sociale des États-Unis, avec des niveaux de confiance inférieurs qui déclencheront une correspondance DLP lorsque des nombres plus élevés d’occurrences sont détectés.  
 
 ## <a name="services-that-edm-supports"></a>Services pris en charge par EDM
 

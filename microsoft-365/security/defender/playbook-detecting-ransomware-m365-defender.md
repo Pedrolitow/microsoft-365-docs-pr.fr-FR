@@ -11,13 +11,14 @@ ms.date: 05/30/2022
 ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance.
+ms.technology: m365d
 f1.keywords: NOCSH
-ms.openlocfilehash: 95e916c02bc01a2e3e84d05efe4e5f5e66d3d491
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 421e3cfbe3d16d0adc38e3fe1cbbcb7d64867eb9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107082"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328384"
 ---
 # <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Détection des attaques par rançongiciels gérées par l’homme avec Microsoft 365 Defender
 
@@ -36,7 +37,7 @@ Cet article décrit la détection proactive des attaques par ransomware nouvelle
 * Microsoft Defender for Cloud Apps (y compris le module complémentaire de gouvernance des applications)
 * Microsoft Azure AD Identity Protection
 * Microsoft Defender pour IoT
-* Microsoft 365 Business Premium
+* Microsoft 365 Business Premium
 * Microsoft Defender pour les PME
 
 Pour plus d’informations sur la prévention des attaques par ransomware, consultez [Protection rapide contre les ransomwares et l’extorsion](/security/compass/protect-against-ransomware-phase3).
@@ -288,7 +289,7 @@ Envisagez ces étapes pour préparer votre équipe et votre organisation SecOps 
 3. Assemblez un catalogue de requêtes de chasse avancées paramétrées pour les méthodes d’attaque par ransomware connues ou les phases d’attaque.
 4. Créez l’ensemble de règles de détection personnalisées pour des requêtes de chasse avancées spécifiques qui créent des alertes pour les méthodes d’attaque par ransomware connues, notamment leur planification, leur nommage d’alerte et leurs actions automatisées.
 5. Déterminer l’ensemble de [balises ou de normes personnalisées](/manage-incidents.md) pour en créer un nouveau afin d’identifier les incidents connus pour faire partie d’une attaque de ransomware plus importante et coordonnée
-6. Déterminez l’ensemble des tâches opérationnelles pour la gestion des incidents de ransomware et des alertes. Par exemple :
+6. Déterminez l’ensemble des tâches opérationnelles pour la gestion des incidents de ransomware et des alertes. Par exemple :
 
 * Processus pour l’analyse par les analystes de niveau 1 des incidents entrants et des alertes et affectation aux analystes de niveau 2 à des fins d’investigation.
 * Exécution manuelle de requêtes de chasse avancées et de leur planification (quotidienne, hebdomadaire, mensuelle).

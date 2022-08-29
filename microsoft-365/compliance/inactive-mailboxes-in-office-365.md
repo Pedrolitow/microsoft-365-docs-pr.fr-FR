@@ -20,14 +20,16 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment conserver le contenu de boîte aux lettres pour les anciens employés en transformant la boîte aux lettres en boîte aux lettres inactive.
-ms.openlocfilehash: 981675f64015e0320805e2be8e955cbd6d98769a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9043c71118b00638d8671063c623ada7dcf25bcd
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627214"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359184"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>En savoir plus sur les boîtes aux lettres inactives
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Votre organisation peut avoir besoin de conserver le courrier électronique des anciens employés après leur départ. En fonction des exigences de rétention de votre organisation, il se peut que vous deviez conserver le contenu de la boîte aux lettres pendant quelques mois ou quelques années après la fin du contrat, ou indéfiniment. Quel que soit le temps nécessaire pour conserver les messages électroniques, vous pouvez créer des boîtes aux lettres inactives pour conserver la boîte aux lettres des anciens employés.
 
@@ -128,7 +130,7 @@ Une boîte aux lettres inactive configurée avec une archive à expansion automa
 
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Boîtes aux lettres inactives et stratégies de rétention Exchange MRM
 
-L’application d’une stratégie de rétention Exchange (fonctionnalité gestion des enregistrements de messagerie ou MRM dans Exchange Online) ne crée pas de boîte aux lettres inactive lorsque le compte d’utilisateur est supprimé.
+L’application d’une stratégie de rétention Exchange (la fonctionnalité de gestion des enregistrements de messagerie ou MRM dans Exchange Online) ne crée pas de boîte aux lettres inactive lorsque le compte d’utilisateur est supprimé.
 
 Toutefois, si cette stratégie de rétention MRM a été appliquée à une boîte aux lettres avant qu’elle ne soit inactive, toutes les stratégies de suppression (balises de rétention MRM configurées avec une action **de suppression** ) continueront d’être traitées sur la boîte aux lettres inactive. Cela signifie que les éléments marqués avec une stratégie de suppression MRM seront déplacés vers le [dossier Éléments récupérables](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) à l’expiration de la période de rétention. Ces éléments sont supprimés définitivement de la boîte aux lettres inactive à l'expiration de la durée de la conservation. Si aucune durée de conservation n'est spécifiée pour la boîte aux lettres inactive, les éléments du dossier Éléments récupérables seront conservés indéfiniment.
 

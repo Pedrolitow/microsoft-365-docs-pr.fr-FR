@@ -1,7 +1,7 @@
 ---
 title: Obtenir des résultats de réponse en direct
-description: Découvrez comment récupérer un résultat de commande de réponse en direct spécifique par son index.
-keywords: api, api de graphique, api pris en charge, téléchargement vers la bibliothèque
+description: Découvrez comment récupérer un résultat de commande de réponse dynamique spécifique par son index.
+keywords: api, API de graphe, api prises en charge, chargement dans la bibliothèque
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,20 +16,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd8b3c997a8efceb2791eca4de0b0e42d47513f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fb001d0212b6eabcbabd0a2f5c3a108e7a1a9c33
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314404"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324427"
 ---
 # <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -42,43 +42,43 @@ ms.locfileid: "63314404"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère un résultat de commande de réponse en direct spécifique par son index.
+Récupère un résultat de commande de réponse dynamique spécifique par son index.
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="minimum-requirements"></a>Configuration minimale requise
 
-Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
+Avant de pouvoir lancer une session sur un appareil, vérifiez que vous remplissez les conditions suivantes :
 
 - **Vérifiez que vous exécutez une version prise en charge de Windows**.
 
-  Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
+  Les appareils doivent exécuter l’une des versions suivantes de Windows
 
   - **Windows 11**
   
   - **Windows 10**
-    - [Version 1909 ou](/windows/whats-new/whats-new-windows-10-version-1909) ultérieure
-    - [Version 1903 avec](/windows/whats-new/whats-new-windows-10-version-1903) [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) avec [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) ou ultérieure
+    - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) avec [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) [avec KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) avec [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) avec [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **Windows Server 2019 - Applicable uniquement pour la prévisualisation publique**
-    - Version 1903 ou (avec [KB4515384) ultérieure](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - Version 1809 ( [avec KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+  - **Windows Server 2019 - Applicable uniquement pour la préversion publique**
+    - Version 1903 ou (avec [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) ultérieure
+    - Version 1809 (avec [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**  
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place](apis-intro.md).
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Prise en main](apis-intro.md).
 
 |Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation|
 |---|---|---|
-Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
-Application|« Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Application|Machine.Read.All|''Lire tous les profils d’ordinateur''
+Application|« Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
 |Déléguée (compte professionnel ou scolaire)|Machine.LiveResponse|Exécuter une réponse en direct sur un ordinateur spécifique|
 
 ## <a name="http-request"></a>Requête HTTP
@@ -92,7 +92,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|String|Porteur {token}. Obligatoire.|
+|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -100,14 +100,14 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie un code de réponse 200, Ok avec un objet qui contient le lien vers le résultat de commande dans la *propriété value* . Ce lien est valide pendant 30 minutes et doit être utilisé immédiatement pour télécharger le package dans un stockage local. Un lien expiré peut être re-créé par un autre appel et il n’est pas nécessaire d’exécuter à nouveau une réponse en direct.
+Si elle réussit, cette méthode renvoie le code de réponse 200 ok avec l’objet qui contient le lien vers le résultat de commande dans la propriété *value* . Ce lien est valide pendant 30 minutes et doit être utilisé immédiatement pour télécharger le package dans un stockage local. Un lien expiré peut être recréé par un autre appel, et il n’est pas nécessaire d’exécuter à nouveau la réponse en direct.
 
 *Propriétés de transcription Runscript :*
 
 |Propriété|Description|
 |---|---|
 |script_name|Nom du script exécuté|
-|exit_code|Code de sortie de script exécuté|
+|exit_code|Code de sortie du script exécuté|
 |script_output|Sortie standard du script exécuté|
 |script_errors|Sortie d’erreur standard du script exécuté|
 
@@ -127,7 +127,7 @@ Voici un exemple de réponse.
 
 HTTP/1.1 200 Ok
 
-Content-type: application/json
+Type de contenu : application/json
 
 ```JSON
 {
@@ -150,6 +150,6 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
+- [Obtenir l’API d’action de machine](get-machineaction-object.md)
 - [Annuler l’action de l’ordinateur](cancel-machine-action.md)
 - [Exécuter la réponse en direct](run-live-response.md) 

@@ -23,14 +23,16 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Découvrez comment activer ou désactiver les boîtes aux lettres d’archivage pour prendre en charge la conservation des messages, la découverte électronique et les exigences de conservation de votre organisation.
-ms.openlocfilehash: 0fef0db0af845a0e3e03f7747775eb41591002a3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 67a134051d9c586b27fdc6168b2b1902a22d03d5
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635532"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360257"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Activer l’archivage des boîtes aux lettres dans le portail de conformité Microsoft Purview
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 L’archivage dans Microsoft 365 (également appelé *Archivage local*) fournit aux utilisateurs de l’espace de stockage de boîtes aux lettres supplémentaire. Pour plus d’informations, consultez [En savoir plus sur les boîtes aux lettres d’archivage](archive-mailboxes.md).
 
@@ -46,7 +48,7 @@ Si vous ne voyez pas la page **Archive** dans le Centre de conformité Microsoft
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous.
 
-2. Dans le volet gauche du portail de conformité, sélectionnez **Gestion du cycle de vie des données** > **Archive**.
+2. Dans le volet gauche du portail de conformité, sélectionnez **Gestion du** >  cycle de vie des données **Microsoft 365** > **Archive**.
 
    La page **Archive** s’affiche. La colonne **Boîte aux lettres d’archivage** indique si une boîte aux lettres d’archivage est activée ou désactivée pour chaque utilisateur.
 

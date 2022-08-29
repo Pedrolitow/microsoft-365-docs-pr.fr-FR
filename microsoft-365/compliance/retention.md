@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les stratégies de rétention et les étiquettes de rétention Microsoft 365 pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas afin de gérer les données de votre organisation.
-ms.openlocfilehash: 24750145bb1361ede8d7519a1d08c74baafdf10d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 7e4c0384cd2678d666be4d65f59a1651d1e2d03e
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949302"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336263"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -150,7 +150,7 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
 
 - **Permettre aux personnes de votre organisation d’appliquer manuellement une étiquette de rétention** à du contenu dans Outlook, Outlook sur le web, OneDrive, SharePoint et Groupes Microsoft 365. Les utilisateurs ont souvent une meilleure connaissance du type de contenu qu’ils utilisent. Ils peuvent donc le classer et lui appliquer la stratégie appropriée.
 
-- **Appliquez automatiquement des étiquettes de rétention au contenu** s’il correspond à des conditions spécifiques, qui incluent des pièces jointes cloud partagées dans un e-mail ou des Teams, ou lorsque le contenu contient :
+- **Appliquez automatiquement des étiquettes de rétention au contenu** s’il correspond à des conditions spécifiques, qui incluent des pièces jointes cloud partagées dans l’e-mail ou Teams, ou lorsque le contenu contient :
   - des types spécifiques d’informations sensibles.
   - des mots clés spécifiques correspondant à une requête que vous créez.
   - Le modèle correspond à un classifieur entraînable.
@@ -586,7 +586,7 @@ Si vous utilisez des outils eDiscovery plus anciens pour conserver les données,
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Utilisez des stratégies et étiquettes de rétention plutôt que les anciennes fonctionnalités
 
-Si, dans le cadre de la gestion du cycle de vie des données, vous avez besoin de conserver ou de supprimer proactivement du contenu dans Microsoft 365, nous vous recommandons d’utiliser les stratégies de rétention et les étiquettes de rétention plutôt que les anciennes fonctionnalités suivantes.
+Si vous devez conserver ou supprimer de manière proactive du contenu dans Microsoft 365 pour la gestion du cycle de vie des données, nous vous recommandons d’utiliser des stratégies de rétention et des étiquettes de rétention Microsoft 365 au lieu des fonctionnalités plus anciennes suivantes.
 
 Si vous utilisez actuellement ces fonctionnalités, elles continueront de fonctionner parallèlement à Microsoft 365 aux stratégies et étiquettes de rétention. Toutefois, nous vous recommandons d’utiliser à l’avenir, Microsoft 365 des stratégies et des étiquettes de rétention pour tirer parti d’une solution unique afin de gérer la rétention et la suppression de contenu sur plusieurs charges de travail dans Microsoft 365.
 
@@ -599,6 +599,10 @@ Si vous utilisez actuellement ces fonctionnalités, elles continueront de foncti
   - Une stratégie d’archivage pour [archive mailboxes](enable-archive-mailboxes.md) pour déplacer automatiquement les e-mails de la boîte aux lettres principale d’un utilisateur vers sa boîte aux lettres d’archivage après une période spécifiée. Une stratégie d’archivage (avec tous les paramètres) peut être utilisée conjointement avec une stratégie de rétention Microsoft 365 qui s’applique à la boîte aux lettres principale et d’archivage d’un utilisateur.
 
   - Stratégies de rétention appliquées par un administrateur à des dossiers spécifiques au sein d’une boîte aux lettres. Une stratégie de rétention Microsoft 365 s’applique à tous les dossiers de la boîte aux lettres. Toutefois, un administrateur peut configurer différents paramètres de rétention à l’aide d’étiquettes de rétention qu’un utilisateur peut appliquer aux dossiers dans Outlook en tant que [étiquette de rétention par défaut](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+- [Journalisation](/exchange/security-and-compliance/journaling/journaling) (rétention et archive)
+    
+    Peut être nécessaire pour s’intégrer à des solutions tierces et des copies de messages électroniques et leurs communications de données sont stockées en dehors de Exchange Online. Étant donné que vous déplacez des données en dehors de Microsoft 365, vous devez prendre des précautions supplémentaires pour les sécuriser et également résoudre les doublons susceptibles de résulter de cette solution. Il vous incombera de surveiller et de suivre les reçus non remis à la boîte aux lettres de journalisation qui peuvent se produire en raison de services externes et dépendants. Vous n’avez pas ces surcharges administratives supplémentaires lorsque vous utilisez la rétention Microsoft 365 et d’autres solutions de conformité Microsoft Purview qui ne sont pas limitées aux seuls messages électroniques.
 
 - [Conservation pour litige](create-a-litigation-hold.md) (rétention uniquement)
 

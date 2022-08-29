@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5c509c046dfb50d8fefd0843535e77dbe49bd58a
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 55517599dabee5ee4304b3347f71bd53d8d9bfcc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306237"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325746"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -93,7 +93,7 @@ Les versions de système d’exploitation suivantes sont prises en charge :
 
 Version du système d'exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows 11|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows 11|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 21H1 et ultérieures|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 20H2 (avec [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 2004 (avec [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), veuillez mettre à niveau|![Oui](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), veuillez mettre à niveau|![Oui](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), veuillez mettre à niveau
@@ -103,7 +103,7 @@ Windows 10, version 1809 (avec [KB4586839](https://support.microsoft.com/help/45
 Windows 10, version 1803 (avec [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), veuillez mettre à niveau|![Oui](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), veuillez mettre à niveau|![Oui](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), veuillez mettre à niveau
 Windows 10, version 1709|![Non.](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge|![Oui](images/svg/check-yes.svg) avec [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Remarque : [Déconseillé](/lifecycle/announcements/revised-end-of-service-windows-10-1709), veuillez mettre à niveau|![Non](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge
 Windows 10, version 1703 et antérieure|![Non.](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge|![Non](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge|![Non](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge
-Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019 (avec [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016 (moderne) <sup>2</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2012 R2 (moderne) <sup>2</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -138,7 +138,7 @@ Version du système d'exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 
@@ -207,4 +207,4 @@ Voici les fonctionnalités et les lacunes connues pour [Mobile Threat Defense (M
 |Accès conditionnel/lancement conditionnel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Prise en charge de la gestion des applications mobiles|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Contrôles de confidentialité|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-|Gestion des menaces et des vulnérabilités (TVM)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
+|Gestion des vulnérabilités Microsoft Defender (MDVM))|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|

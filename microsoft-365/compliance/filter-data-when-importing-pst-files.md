@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment filtrer des données à l’aide de la fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 lorsque vous importez des fichiers PST dans Microsoft 365.
-ms.openlocfilehash: 1a9483d77ff575b643d4ab9717d286b608bea35d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b18db6e684df522e863219cac5c7dc5f0ec3179e
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640069"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360345"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrer les données lors de l’importation de fichiers PST
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Utilisez la nouvelle fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 pour filtrer les éléments des fichiers PST qui sont réellement importés dans les boîtes aux lettres cibles. Voici le principe de fonctionnement :
   
@@ -68,7 +70,7 @@ Après avoir créé un travail d’importation PST, procédez comme suit pour fi
   
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification d’un compte administrateur dans votre organisation.
     
-2. Dans le volet gauche du portail de conformité, cliquez sur **Gestion du cycle de vie des données** \> **Importer**.
+2. Dans le volet gauche du portail de conformité, cliquez sur Gestion **du cycle de** \> vie des données **Microsoft 365** \> **Import**.
     
     Les travaux d’importation de votre organisation sont répertoriés sous l’onglet **Importation** . La valeur **Analyse terminée** dans la colonne **État** indique les travaux d’importation qui ont été analysés par Microsoft 365 et qui sont prêts à être importés.
     
@@ -107,7 +109,7 @@ Après avoir créé un travail d’importation PST, procédez comme suit pour fi
       - **Utilisateurs** : vous pouvez exclure les messages envoyés ou reçus par des personnes spécifiques. Pour exclure les personnes qui apparaissent dans le champ From:, To: field, or the Cc: field of messages, cliquez sur **Exclure les utilisateurs** en regard de ce type de destinataire. Tapez l’adresse e-mail (adresse SMTP) de la personne, puis cliquez sur **Ajouter**![une nouvelle icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) pour les ajouter à la liste des utilisateurs exclus pour ce type de destinataire, puis cliquez sur **Enregistrer** pour enregistrer la liste des utilisateurs exclus. 
   
         > [!NOTE]
-        > Microsoft 365 n’affiche pas les insights de données résultant de la définition du filtre **Contacts** . Toutefois, si vous définissez ce filtre pour exclure les messages envoyés ou reçus par des personnes spécifiques, ces messages seront exclus pendant le processus d’importation réel. 
+        > Microsoft 365 n’affiche pas les insights de données résultant de la définition du filtre **Personnes**. Toutefois, si vous définissez ce filtre pour exclure les messages envoyés ou reçus par des personnes spécifiques, ces messages seront exclus pendant le processus d’importation réel. 
   
     c. Cliquez sur **Appliquer** dans la page **Autres options de filtrage** pour enregistrer vos paramètres de filtre. 
   
@@ -139,14 +141,14 @@ Après avoir créé un travail d’importation PST, procédez comme suit pour fi
   
     |**ID de la classe de message**|**Éléments de boîte aux lettres qui utilisent cette classe de message**|
     |:-----|:-----|
-    |IPM. Activité  <br/> |Entrées de journal  <br/> |
-    |IPM. Document  <br/> |Documents et fichiers (non joints à un e-mail)  <br/> |
-    |IPM. Fichier  <br/> |(identique à IPM. Document)  <br/> |
-    |IPM. Note.IMC.Notification  <br/> |Rapports envoyés par Internet Mail Connect, qui est la passerelle Exchange Server vers Internet  <br/> |
-    |IPM. Note.Microsoft.Fax  <br/> |Télécopie de messages  <br/> |
-    |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Messages d’autoreply d’absence du bureau  <br/> |
-    |IPM. Note.Rules.ReplyTemplate.Microsoft  <br/> |Réponses envoyées par une règle de boîte de réception  <br/> |
-    |IPM. OLE. Classe  <br/> |Exceptions pour une série périodique  <br/> |
-    |IPM. Recall.Report  <br/> |Rapports de rappel de message  <br/> |
-    |IPM. Distance  <br/> |Messages électroniques distants  <br/> |
-    |IPM. Rapport  <br/> |Rapports d’état d’élément  <br/> |
+    |Ipm. Activité  <br/> |Entrées de journal  <br/> |
+    |Ipm. Document  <br/> |Documents et fichiers (non joints à un e-mail)  <br/> |
+    |Ipm. Fichier  <br/> |(identique à IPM. Document)  <br/> |
+    |Ipm. Note.IMC.Notification  <br/> |Rapports envoyés par Internet Mail Connect, qui est la passerelle Exchange Server vers Internet  <br/> |
+    |Ipm. Note.Microsoft.Fax  <br/> |Télécopie de messages  <br/> |
+    |Ipm. Note.Rules.Oof.Template.Microsoft  <br/> |Messages d’autoreply d’absence du bureau  <br/> |
+    |Ipm. Note.Rules.ReplyTemplate.Microsoft  <br/> |Réponses envoyées par une règle de boîte de réception  <br/> |
+    |Ipm. Ole. Classe  <br/> |Exceptions pour une série périodique  <br/> |
+    |Ipm. Recall.Report  <br/> |Rapports de rappel de message  <br/> |
+    |Ipm. Distance  <br/> |Messages électroniques distants  <br/> |
+    |Ipm. Rapport  <br/> |Rapports d’état d’élément  <br/> |

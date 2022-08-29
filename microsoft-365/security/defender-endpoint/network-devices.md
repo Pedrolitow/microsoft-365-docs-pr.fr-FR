@@ -1,5 +1,5 @@
 ---
-title: Découverte et gestion des vulnérabilités d’appareils réseau
+title: Détection d’appareils réseau et gestion des vulnérabilités
 description: Les recommandations de sécurité et la détection des vulnérabilités sont désormais disponibles pour les systèmes d’exploitation des commutateurs, routeurs, contrôleurs WLAN et pare-feu.
 keywords: appareils réseau, détection des vulnérabilités des appareils réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
 ms.prod: m365-security
@@ -17,20 +17,20 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5c2f1c7c73f150c02192fa7e275a07b12c64c79
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1ff2bb5e7381f09d1a6bf448c18096f0f9263fe0
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438375"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323900"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et gestion des vulnérabilités d’appareils réseau
+# <a name="network-device-discovery-and-vulnerability-management"></a>Détection d’appareils réseau et gestion des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Gestion des vulnérabilités Defender](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -40,7 +40,7 @@ ms.locfileid: "65438375"
 
 Les fonctionnalités de découverte du réseau sont disponibles dans la section **Inventaire des appareils** du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et des consoles Microsoft 365 Defender.
 
-Un appareil Microsoft Defender pour point de terminaison désigné sera utilisé sur chaque segment réseau pour effectuer des analyses périodiques authentifiées des appareils réseau préconfigurés. Une fois découvertes, les fonctionnalités de Gestion des menaces et des vulnérabilités de Defender pour point de terminaison fournissent des workflows intégrés pour sécuriser les commutateurs, routeurs, contrôleurs WLAN, pare-feu et passerelles VPN détectés.
+Un appareil Microsoft Defender pour point de terminaison désigné sera utilisé sur chaque segment réseau pour effectuer des analyses périodiques authentifiées des appareils réseau préconfigurés. Une fois découvertes, les fonctionnalités de gestion des vulnérabilités de Defender pour point de terminaison fournissent des workflows intégrés pour sécuriser les commutateurs détectés, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.
 
 Une fois que les appareils réseau sont découverts et classifiés, les administrateurs de sécurité peuvent recevoir les dernières recommandations de sécurité et examiner les vulnérabilités récemment découvertes sur les appareils réseau déployés au sein de leur organisation.
 
@@ -98,12 +98,12 @@ La première étape consiste à sélectionner un appareil qui effectuera les ana
 
 ## <a name="permissions"></a>Autorisations
 
-Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : **Gérer les paramètres de sécurité dans Defender**. Vous pouvez trouver l’autorisation en accédant à **Paramètres** \> **Rôles**. Pour plus d’informations, consultez [Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle](user-roles.md).
+Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : **Gérer les paramètres de sécurité dans Defender**. Vous pouvez trouver l’autorisation en accédant à **Paramètres Rôles**\>. Pour plus d’informations, consultez [Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Installer le scanneur réseau
 
-1. Accédez à **Microsoft 365 tâches de sécurité** \> **Paramètres** \> **d’évaluation des** points de **terminaison** \> (sous **Évaluations réseau**).
-    1. Dans le portail Microsoft 365 Defender, accédez à Paramètres > page Travaux d’évaluation.
+1. Accédez aux **travaux d’évaluation** des points de terminaison **des paramètres** \>  \> de **sécurité** \> Microsoft 365 (sous **Évaluations réseau**).
+    1. Dans le portail Microsoft 365 Defender, accédez à la page Paramètres > Travaux d’évaluation.
 
 2. Téléchargez le scanneur réseau et installez-le sur l’appareil d’évaluation Defender pour point de terminaison désigné.
 
@@ -130,7 +130,7 @@ Pour terminer le processus d’inscription du scanneur réseau :
 
 ## <a name="configure-a-new-assessment-job"></a>Configurer un nouveau travail d’évaluation
 
-Dans la page Travaux d’évaluation dans **Paramètres**, sélectionnez **Ajouter un travail d’évaluation réseau**. Suivez le processus de configuration pour choisir les appareils réseau à analyser régulièrement et à ajouter à l’inventaire des appareils.
+Dans la page Tâches d’évaluation dans **Paramètres**, **sélectionnez Ajouter un travail d’évaluation réseau**. Suivez le processus de configuration pour choisir les appareils réseau à analyser régulièrement et à ajouter à l’inventaire des appareils.
 
 Pour empêcher la duplication d’appareils dans l’inventaire des appareils réseau, assurez-vous que chaque adresse IP n’est configurée qu’une seule fois sur plusieurs appareils d’évaluation.
 
@@ -189,7 +189,7 @@ Si vous n’obtenez toujours pas de résultats après 5 minutes, redémarrez le 
 
 Vérifiez que le scanneur s’exécute correctement. Accédez ensuite à la définition d’analyse et sélectionnez « Exécuter le test ». Vérifiez les messages d’erreur renvoyés par les adresses IP appropriées.
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>Autorisation utilisateur requise Gestion des menaces et des vulnérabilités
+### <a name="required-defender-vulnerability-management-user-permission"></a>Autorisation d’utilisateur Defender Vulnerability Management requise
 
 L’inscription s’est terminée par une erreur : « Il semble que vous ne disposez pas des autorisations suffisantes pour ajouter un nouvel agent. L’autorisation requise est « Gérer les paramètres de sécurité dans Defender ». »
 

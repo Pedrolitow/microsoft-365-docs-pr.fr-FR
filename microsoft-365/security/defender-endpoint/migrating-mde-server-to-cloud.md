@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.technology: mde
-ms.openlocfilehash: b32a47ba4ca01c3f6b99cde639063c1fc2373ed2
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 7906589143e99213795c2e3961e237beb6c813bd
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275749"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316378"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Migration de serveurs de Microsoft Defender pour point de terminaison vers Microsoft Defender pour cloud
 
@@ -54,7 +54,7 @@ Pour activer Defender pour serveurs pour les machines virtuelles Azure et les ma
 
      :::image type="content" source="images/mde-integration.png" alt-text="Capture d’écran montrant comment activer l’intégration MDE." lightbox="images/mde-integration.png":::
 
-   Si vous avez l’un de ces boutons dans votre environnement, veillez à activer l’intégration pour les deux. Sur les nouveaux abonnements, les deux options sont activées par défaut.
+   Si vous avez l’un de ces boutons dans votre environnement, veillez à activer l’intégration pour les deux. Sur les nouveaux abonnements, les deux options sont activées par défaut. Dans ce cas, vous ne verrez pas ces boutons dans votre environnement.
 
 5. Assurez-vous que les exigences de connectivité pour Azure Arc sont remplies. Microsoft Defender pour cloud requiert que toutes les machines locales et non Azure soient connectées via l’agent Azure Arc. En outre, Azure Arc ne prend pas en charge tous les systèmes d’exploitation pris en charge par MDE. Découvrez donc comment planifier [les déploiements Azure Arc ici](/azure/azure-arc/servers/plan-at-scale-deployment).
 
@@ -68,7 +68,7 @@ Pour les machines virtuelles Azure, aucune étape supplémentaire n’est requis
 
 ## <a name="how-do-i-migrate-on-premises-machines-to-microsoft-defender-for-servers"></a>Comment faire migrer des machines locales vers Microsoft Defender pour serveurs ?
 
-[Connectez](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) vos machines locales via des serveurs connectés à Azure Arc.
+Une fois que toutes les conditions préalables sont remplies, [connectez](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) vos machines locales via des serveurs connectés à Azure Arc.
 
 ## <a name="how-do-i-migrate-vms-from-aws-or-gcp-environments"></a>Comment faire migrer des machines virtuelles à partir d’environnements AWS ou GCP ?
 

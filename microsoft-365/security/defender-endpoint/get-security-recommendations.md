@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e00937145cfff6eb9a0996683eacfb424b68091b
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: d2b4c57bda9084d1e76ad011869e27b05c5c1f4f
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020043"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344742"
 ---
 # <a name="get-security-recommendations"></a>Obtenir les recommandations de sécurité
 
@@ -118,5 +118,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des vulnérabilités & des menaces basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recommandation sur la sécurité des menaces & des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recommandation de sécurité de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

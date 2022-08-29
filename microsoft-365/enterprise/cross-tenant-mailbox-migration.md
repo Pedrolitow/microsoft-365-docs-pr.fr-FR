@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 60e79a0b4b8aff7785bca24bbd974492b3a1e795
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 307754dec24549c320a8ea9e2d8064b7e6d44d68
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071632"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336021"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
@@ -658,15 +658,24 @@ Cette opération peut être effectuée avant la fin de la migration, mais vous n
       | Exchange Online (plan 1)                           |
       | Exchange Online POP                              |
       | Exchange Online Protection                       |
+      | Recherche de connecteurs Graph avec index                |
       | Obstacles aux informations                             |
       | Protection des informations pour Office 365 – Premium  |
       | Protection des informations pour Office 365 – Standard |
       | Insights de MyAnalytics                          |
+      | Gouvernance des informations Microsoft                 |
       | Audit de Microsoft Purview (Premium)                  |
       | Microsoft Bookings                               |
       | Centre d’affaires Microsoft                        |
-      | Microsoft MyAnalytics (complet)                     |
+      | Microsoft Data Investigations                    |
+      | Microsoft MyAnalytics (complet)       
+      | Conformité des communications Microsoft               |
+      | Microsoft Communications DLP                     |
+      | Clé client Microsoft                           |
+      | Audit avancé Microsoft 365                  |
+      | Gestion des enregistrements Microsoft                     |
       | Office 365 eDiscovery (Premium)                   |
+      | Office 365 Advanced eDiscovery                   |
       | Microsoft Defender pour Office 365 (Plan 1)       |
       | Microsoft Defender pour Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |

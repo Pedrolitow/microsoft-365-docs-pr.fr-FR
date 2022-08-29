@@ -1,7 +1,7 @@
 ---
-title: API Obtenir un objet Investigation
-description: Utilisez cette API pour créer des appels liés à l’accès à l’objet Investigation
-keywords: api, api de graphique, api pris en charge, objet Investigation
+title: API Obtenir l’objet Investigation
+description: Utiliser cette API pour créer des appels liés à l’obtention d’un objet Investigation
+keywords: api, api graphe, api prises en charge, objet Investigation
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8fc4fea909fcaa2ebfd755d47a7282419c2860b9
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: d086ffb524038ea7a487508d1fbe387c859220b2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282813"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326582"
 ---
-# <a name="get-investigation-api"></a>API Obtenir l’examen
+# <a name="get-investigation-api"></a>Get Investigation API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,29 +39,29 @@ ms.locfileid: "61282813"
 
 
 ## <a name="api-description"></a>Description de l’API
-Récupère un examen [spécifique par](investigation.md) son ID.
+Récupère une [investigation](investigation.md) spécifique par son ID.
 <br> L’ID peut être l’ID d’investigation ou l’ID d’alerte déclenchant l’enquête.
 
 
 ## <a name="limitations"></a>Limites
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Alert.Read.All|« Lire toutes les alertes »
-Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
+Application|Alert.Read.All|« Lire toutes les alertes »
+Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire) | Alert.Read | « Lire les alertes »
 Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,7 +73,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations/{id}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -81,5 +81,5 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une [entité Investigations.](investigation.md)
+Si elle réussit, cette méthode renvoie 200, code de réponse OK avec une entité [Investigations](investigation.md) .
 

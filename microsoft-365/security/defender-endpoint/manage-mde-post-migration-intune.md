@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 1cbaff007a5ef2839cbcf51babc7a057c7b756c0
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: c8a7b949118375fa10ac12a18ce82c4fadebd6f3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607452"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327154"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Gérer Microsoft Defender pour point de terminaison avec Intune
 
@@ -70,7 +70,7 @@ Le tableau suivant répertorie les différentes tâches que vous pouvez effectue
 |**Configurer l’accès contrôlé aux dossiers** pour vous protéger contre les ransomware <br/><br/> *[L’accès contrôlé aux dossiers](/microsoft-365/security/defender-endpoint/controlled-folders) est également appelé protection antiransomware.*|[Endpoint Protection : accès contrôlé aux dossiers](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/> [Activer l’accès contrôlé aux dossiers dans Intune](/microsoft-365/security/defender-endpoint/enable-controlled-folders#intune)|
 |**Configurer exploit protection** pour protéger les appareils de votre organisation contre les programmes malveillants qui utilisent des exploits pour propager et infecter d’autres appareils <br/><br/> *[Exploit Protection](/microsoft-365/security/defender-endpoint/exploit-protection) est également appelé Exploit Guard.*|[Endpoint Protection : Microsoft Defender Exploit Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-exploit-guard) <br/><br/> [Activer la protection contre les attaques dans Intune](/microsoft-365/security/defender-endpoint/enable-exploit-protection#intune)|
 |**Configurez Microsoft Defender SmartScreen** pour vous protéger contre les sites et fichiers malveillants sur Internet. <br/><br/> *Microsoft Edge doit être installé sur les appareils de votre organisation. Pour la protection sur les navigateurs Google Chrome et FireFox, configurez exploit protection.*|[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) <br/><br/> [Restrictions d’appareil : Microsoft Defender SmartScreen](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-smartscreen) <br/><br/> [Paramètres de stratégie pour la gestion de SmartScreen dans Intune](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#mdm-settings)|
-|**Configurer Pare-feu Microsoft Defender** pour bloquer le trafic réseau non autorisé entrant ou sortant des appareils de votre organisation|[Endpoint Protection : Pare-feu Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Pare-feu Microsoft Defender avec Advanced Security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
+|**Configurer le Pare-feu Microsoft Defender** pour bloquer le trafic réseau non autorisé entrant ou sortant des appareils de votre organisation|[Protection des points de terminaison : Pare-feu Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Pare-feu Microsoft Defender avec sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
 |**Configurer le chiffrement et BitLocker** pour protéger les informations sur les appareils de votre organisation exécutant Windows|[Protection des points de terminaison : Chiffrement Windows](/mem/intune/protect/endpoint-protection-windows-10#windows-encryption) <br/><br/> [BitLocker pour les appareils Windows 10 et Windows 11](/windows/security/information-protection/bitlocker/bitlocker-overview)|
 |**Configurer Microsoft Defender Credential Guard** pour vous protéger contre les attaques par vol d’informations d’identification|Pour Windows 10, Windows 11, Windows Server 2016 et Windows Server 2019 et Windows Server 2022, consultez [Endpoint Protection : Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <br/><br/> Pour Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 et Windows Server 2012 R2, consultez [Atténuant les attaques par pass-the-hash (PtH) et autres vols](https://www.microsoft.com/download/details.aspx?id=36036) d’informations d’identification, versions 1 et 2|
 |**Configurer Microsoft Defender Application Control** pour choisir d’auditer ou d’approuver des applications sur les appareils de votre organisation <br/><br/> *Microsoft Defender Application Control est également appelé [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Déployer des stratégies De contrôle d’application Microsoft Defender à l’aide de Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <br/><br/> [Endpoint Protection : Microsoft Defender Application Control](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <br/><br/> [CSP AppLocker](/windows/client-management/mdm/applocker-csp)|
@@ -83,7 +83,7 @@ Si vous ne l’avez pas encore fait, configurez votre portail Microsoft 365 Defe
 - [Vue d’ensemble de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint Protection : Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-- [Obtenir une vue d’ensemble de la gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Obtenir une vue d’ensemble de La gestion des vulnérabilités defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visitez le tableau de bord des opérations de sécurité du portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

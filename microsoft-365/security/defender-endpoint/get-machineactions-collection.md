@@ -1,7 +1,7 @@
 ---
-title: List machineActions API
-description: Découvrez comment utiliser l’API List MachineActions pour récupérer une collection d’actions de l’ordinateur dans Microsoft Defender pour endpoint.
-keywords: api, api de graphique, api pris en charge, collection machineaction
+title: Répertorier l’API machineActions
+description: Découvrez comment utiliser l’API List MachineActions pour récupérer une collection d’actions de machine dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, collection Machineaction
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0c7f5b1097e7fe59f9ccaa28800da27d943f1176
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 2cabdbc069e1d8a4efdb1bd3e931b12f0fe2f963
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301593"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325387"
 ---
-# <a name="list-machineactions-api"></a>List MachineActions API
+# <a name="list-machineactions-api"></a>RÉPERTORIER l’API MachineActions
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,38 +39,38 @@ ms.locfileid: "61301593"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère une collection d’actions [de l’ordinateur.](machineaction.md)
+Récupère une collection [d’actions de machine](machineaction.md).
 
-Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
+Prend [en charge les requêtes OData V4](https://www.odata.org/documentation/).
 
-La requête OData est prise en charge sur `$filter` : , , , , et `id` `status` `machineId` `type` `requestor` `creationDateTimeUtc` propriétés.
+La requête OData `$filter` est prise en charge sur : `id`, `status`, `machineId`, `type`, `requestor`et `creationDateTimeUtc` les propriétés.
 
 `$stop` avec une valeur maximale de 10 000
 
 `$skip`
 
-Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+Consultez des exemples dans [les requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>Limites
 
-1. La taille maximale de page est de 10 000.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. La taille maximale de la page est de 10 000.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
-Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur l’ordinateur »
+Application|Machine.Read.All|'Lire tous les profils d’ordinateur'
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations de l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur la machine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -90,19 +90,19 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une collection [d’entités machineAction.](machineaction.md)
+Si elle réussit, cette méthode renvoie 200, code de réponse OK avec une collection d’entités [machineAction](machineaction.md) .
 
 ## <a name="example-1"></a>Exemple 1
 
-### <a name="example-1-request"></a>Exemple de requête 1
+### <a name="example-1-request"></a>Exemple de demande 1
 
-Voici un exemple de demande sur une organisation qui possède trois MachineActions.
+Voici un exemple de requête sur une organisation qui a trois MachineActions.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions
 ```
 
-### <a name="example-1-response"></a>Réponse de l’exemple 1
+### <a name="example-1-response"></a>Exemple de réponse 1
 
 Voici un exemple de réponse.
 
@@ -160,15 +160,15 @@ Content-type: application/json
 
 ## <a name="example-2"></a>Exemple 2
 
-### <a name="example-2-request"></a>Exemple 2 de requête
+### <a name="example-2-request"></a>Exemple de demande 2
 
-Voici un exemple de demande qui filtre les MachineActions par ID d’ordinateur et affiche les deux derniers MachineActions.
+Voici un exemple de requête qui filtre les MachinesActions par ID d’ordinateur et affiche les deux dernières MachinesActions.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions?$filter=machineId eq 'f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f'&$top=2
 ```
 
-### <a name="example-2-response"></a>Réponse de l’exemple 2
+### <a name="example-2-response"></a>Exemple de réponse 2
 
 Voici un exemple de réponse.
 
@@ -210,4 +210,4 @@ Content-type: application/json
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Requêtes OData avec Microsoft Defender pour le point de terminaison](exposed-apis-odata-samples.md)
+- [Requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md)

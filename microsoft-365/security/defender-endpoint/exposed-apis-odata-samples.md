@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 808ff3e6cc0dc69d748dabed102c478a27593790
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: b10c54474427002e82a3639578ce2c9192bf735f
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172288"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327798"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour point de terminaison
 
@@ -33,7 +33,7 @@ ms.locfileid: "65172288"
 - [Microsoft Defender pour les PME](../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour les PME aux plans Microsoft Defender pour point de terminaison 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour entreprises à Microsoft Defender pour point de terminaison plans 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

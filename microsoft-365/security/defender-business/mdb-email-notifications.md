@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 7b74a58601d5d6463d81d244a7f3cb2119486d15
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 58de1c63995521794fa368f64601221a3c9668ee
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969351"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319886"
 ---
 # <a name="set-up-email-notifications"></a>Configurer des notifications par e-mail
 
@@ -31,8 +31,6 @@ Vous pouvez configurer des notifications par e-mail pour votre équipe de sécur
 1. [Découvrez les types de notifications par e-mail](#types-of-email-notifications).
 2. [Afficher et modifier les paramètres de notification par e-mail](#view-and-edit-email-notifications).
 3. [Passez à vos étapes suivantes](#next-steps).
-
-
 
 ## <a name="types-of-email-notifications"></a>Types de notifications par e-mail
 
@@ -71,6 +69,6 @@ Pour afficher ou modifier les paramètres de notification par e-mail de votre en
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Passez à :
+Effectuez les actions suivantes:
 
 - [Étape 4 : Intégrer des appareils à Defender entreprise](mdb-onboard-devices.md)

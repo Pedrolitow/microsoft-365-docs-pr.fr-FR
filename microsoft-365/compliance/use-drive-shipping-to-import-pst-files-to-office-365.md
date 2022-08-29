@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Administration pouvez apprendre à importer en bloc des fichiers PST dans des boîtes aux lettres Microsoft 365 en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: ac8b24c04823bf3635b7762d160cee71a356ebfd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a81755b4c36664f215387cfa11b149af03e307b3
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626070"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335779"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’envoi de lecteurs pour importer des fichiers PST
 
@@ -113,7 +113,7 @@ La première étape consiste à télécharger l’outil et à l’utiliser à l�
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Importation** de **gestion du cycle de** \> vie des données.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur Gestion **du cycle de** \> vie des données **Microsoft 365** \> **Import**.
     
     > [!NOTE]
     > Comme indiqué précédemment, vous devez disposer des autorisations appropriées pour accéder à la page **Importer** dans le portail de conformité.
@@ -168,7 +168,7 @@ Pour réaliser cette étape, vous devez utiliser l’outil WAImportExport.exe po
     | `/t:` <br/> |Indique la lettre de lecteur du disque dur quand celui-ci est connecté à votre ordinateur local.  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |Indique le nom de la session de copie. Une session est définie dès que vous exécutez l’outil WAImportExport.exe pour copier des fichiers sur le disque dur. Les fichiers PST sont copiés dans un dossier portant le même nom que la session spécifiée par ce paramètre.   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |Indique le répertoire source de votre organisation contenant les fichiers PST qui seront copiés pendant la session. N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |Spécifie le répertoire de destination dans la zone Stockage Azure dans le cloud Microsoft où les fichiers PST seront chargés. Vous devez utiliser la valeur  `ingestiondata/`. N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> Si vous le souhaitez, vous pouvez également ajouter un chemin d’accès de fichier supplémentaire à la valeur de ce paramètre. Par exemple, vous pouvez utiliser le chemin d’accès au fichier du répertoire source sur le disque dur (converti en format URL), qui est spécifié dans le  `/srcdir:` paramètre. Par exemple,  `\\FILESERVER01\PSTs` est remplacé par  `FILESERVER01/PSTs`. Dans ce cas, vous devez toujours inclure  `ingestiondata` dans le chemin d’accès du fichier. Ainsi, dans cet exemple, la valeur du  `/dstdir:` paramètre serait  `"ingestiondata/FILESERVER01/PSTs"`.  <br/> Ajouter un chemin d’accès supplémentaire peut être utile si plusieurs fichiers PST portent le même nom.  <br/> > [!NOTE]> Si vous incluez le chemin d’accès facultatif, l’espace de noms d’un fichier PST après son chargement dans la zone de stockage Azure inclut le nom du chemin d’accès et le nom du fichier PST ; par exemple,  `FILESERVER01/PSTs/annb.pst`. Si vous n’incluez pas de nom de chemin d’accès, l’espace de noms est uniquement le nom de fichier PST ; par exemple  `annb.pst`.           | `/dstdir:"ingestiondata/"` <br/> Ou  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |Spécifie le répertoire de destination dans la zone Stockage Azure dans le cloud Microsoft où les fichiers PST seront chargés. Vous devez utiliser la valeur  `ingestiondata/`. N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> Si vous le souhaitez, vous pouvez également ajouter un chemin d’accès de fichier supplémentaire à la valeur de ce paramètre. Par exemple, vous pouvez utiliser le chemin d’accès au fichier du répertoire source sur le disque dur (converti en format URL), qui est spécifié dans le  `/srcdir:` paramètre. Par exemple,  `\\FILESERVER01\PSTs` est remplacé par  `FILESERVER01/PSTs`. Dans ce cas, vous devez toujours inclure  `ingestiondata` dans le chemin d’accès du fichier. Ainsi, dans cet exemple, la valeur du  `/dstdir:` paramètre serait  `"ingestiondata/FILESERVER01/PSTs"`.  <br/> L’une des raisons d’ajouter le chemin d’accès de fichier supplémentaire est si vous avez des fichiers PST avec le même nom de fichier.  <br/> > [!NOTE]> Si vous incluez le chemin d’accès facultatif, l’espace de noms d’un fichier PST après son chargement dans la zone de stockage Azure inclut le nom du chemin d’accès et le nom du fichier PST ; par exemple,  `FILESERVER01/PSTs/annb.pst`. Si vous n’incluez pas de nom de chemin d’accès, l’espace de noms est uniquement le nom de fichier PST ; par exemple  `annb.pst`.           | `/dstdir:"ingestiondata/"` <br/> Ou  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/blobtype:` <br/> |Spécifie le type d’objets blob dans la zone stockage Azure dans lequel importer les fichiers PST. Pour importer des fichiers PST, utilisez la valeur **BlockBlob**. Ce paramètre est obligatoire.   <br/> | `/blobtype:BlockBlob` <br/> |
     | `/encrypt` <br/> |Ce commutateur active BitLocker pour le disque dur. Ce paramètre est obligatoire la première fois que vous exécutez l’outil WAImportExport.exe.  <br/> La clé de chiffrement BitLocker est copiée dans le fichier journal et le fichier journal créé si vous utilisez le  `/logfile:` paramètre. Comme indiqué précédemment, le fichier journal est enregistré dans le dossier où se trouve l’outil WAImportExport.exe.  <br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |Ce paramètre facultatif indique le dossier dans lequel les fichiers journaux seront enregistrés. S’il n’est pas spécifié, les fichiers journaux sont enregistrés dans le dossier où se trouve l’outil WAImportExport.exe. N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
@@ -241,7 +241,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Importation** de **gestion du cycle de** \> vie des données.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur Gestion **du cycle de** \> vie des données **Microsoft 365** \> **Import**.
 
 3. Sous l’onglet **Importer** , cliquez sur ![Ajouter une icône.](../media/ITPro-EAC-AddIcon.gif) **Nouveau travail d’importation**.
 
@@ -296,7 +296,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
 
     Une fois le travail d’importation créé, une page d’état s’affiche qui explique les étapes suivantes du processus d’expédition du lecteur.
 
-16. Sous l’onglet **Importer** , cliquez sur ![l’icône Actualiser.](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualisez** pour afficher le nouveau travail d’importation d’expédition de lecteur dans la liste des travaux d’importation. L’état est défini sur **En attente du numéro de suivi**. Vous pouvez également cliquer sur le travail d’importation pour afficher la page de menu volant d’état, qui contient des informations plus détaillées sur le travail d’importation.
+16. Sous l’onglet **Importer** , cliquez sur ![l’icône Actualiser.](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour afficher le nouveau travail d’importation d’expédition de lecteur dans la liste des travaux d’importation. L’état est défini sur **En attente du numéro de suivi**. Vous pouvez également cliquer sur le travail d’importation pour afficher la page de menu volant d’état, qui contient des informations plus détaillées sur le travail d’importation.
 
 ## <a name="step-5-ship-the-hard-drive-to-microsoft"></a>Étape 5 : Expédier le disque dur à Microsoft
 
@@ -351,7 +351,7 @@ Une fois les fichiers PST chargés sur Azure, l’état est remplacé par **Anal
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
 
-2. Dans le volet de navigation gauche du portail de conformité, cliquez sur Gestion \> du **cycle de vie des données** **Importer****.
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Gestion** \> du cycle de vie des données **Microsoft 365** \> **Importer*****.
 
 3. Sous l’onglet **Importer**, sélectionnez le travail d’importation que vous avez créé à l’étape 4, puis cliquez sur **Importer pour Office 365**.
   

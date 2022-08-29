@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en veillant à ce que les deux abonnements soient répertoriés et actifs.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5e2d9e3da47c8d9c86e3e0b6d3d0b648c6016509
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f9e1a6eed45da6a125917a3ba6b181537248c9c6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493550"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322934"
 ---
 # <a name="manually-change-microsoft-plans"></a>Modifier manuellement les plans Microsoft
 
@@ -42,7 +42,7 @@ La meilleure façon de changer tous vos utilisateurs d’un plan à un autre con
 Pour poursuivre avec une modification manuelle, lisez [l’étape 2 : Acheter un nouvel abonnement](#step-2-buy-a-new-subscription) dans cette rubrique.
 
 > [!IMPORTANT]
-> Si vous basculez vers un plan avec moins de services liés aux données que votre plan actuel (rétrogradation), vous devez sauvegarder manuellement toutes les données que vous souhaitez conserver. Pour plus d’informations, consultez [Sauvegarder les données avant de modifier les plans](back-up-data-before-switching-plans.md).
+> Si vous basculez vers un plan avec moins de services liés aux données que votre plan actuel (rétrogradation), vous devez sauvegarder manuellement toutes les données que vous souhaitez conserver. Pour plus d’informations, consultez [Sauvegarder les données avant de modifier les plans](move-users-different-subscription.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>Étape 2 : Acheter un nouvel abonnement
 

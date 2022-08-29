@@ -1,8 +1,8 @@
 ---
 title: Hello World pour l’API Microsoft Defender pour point de terminaison
 ms.reviewer: ''
-description: Créez un appel d’API pratique de type « Hello World » à l’API Microsoft Defender for Endpoint.
-keywords: api, api pris en charge, recherche avancée, requête, microsoft defender atp, microsoft defender pour le point de terminaison
+description: Créez un appel d’API de type « Hello World » pratique à l’API Microsoft Defender pour point de terminaison.
+keywords: api, api prises en charge, repérage avancé, requête, microsoft defender atp, microsoft defender pour point de terminaison
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd8f48e8396225fc03441cfc7c8ed69fa3f378bb
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 2805736c3d612716f3b99ba0f97fc74a0070bc68
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475606"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328033"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
@@ -42,77 +42,77 @@ ms.locfileid: "64475606"
 
 ## <a name="get-alerts-using-a-simple-powershell-script"></a>Obtenir des alertes à l’aide d’un script PowerShell simple
 
-### <a name="how-long-it-takes-to-go-through-this-example"></a>Combien de temps faut-il pour passer par cet exemple ?
+### <a name="how-long-it-takes-to-go-through-this-example"></a>Combien de temps faut-il pour suivre cet exemple ?
 
 Cela ne prend que 5 minutes en deux étapes :
 
 - Inscription de l’application
-- Exemples : nécessite uniquement une copie/coller d’un court script PowerShell
+- Utiliser des exemples : nécessite uniquement le copier/coller d’un script PowerShell court
 
 ### <a name="do-i-need-a-permission-to-connect"></a>Ai-je besoin d’une autorisation pour me connecter ?
 
-Pour l’étape d’inscription de l’application, vous devez avoir un rôle d’administrateur général dans votre client Azure Active Directory (Azure AD).
+Pour l’étape d’inscription de l’application, vous devez avoir un rôle **Administrateur général** dans votre locataire Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Étape 1 : créer une application dans Azure Active Directory
 
-1. Connectez-vous [à Azure](https://portal.azure.com) avec votre **utilisateur administrateur** général.
+1. Connectez-vous à [Azure](https://portal.azure.com) avec votre utilisateur **Administrateur général**.
 
-2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription**.
+2. Accédez à **Azure Active Directory** \> **inscriptions d'applications** \> **Nouvelle inscription**.
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Option Inscriptions d’applications sous le volet Gérer dans le portail Azure Active Directory"  lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Option inscriptions d'applications sous le volet Gérer dans le portail Azure Active Directory"  lightbox="images/atp-azure-new-app2.png":::
 
-3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis cliquez sur **Enregistrer**.
+3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis cliquez sur **Inscrire**.
 
-4. Autorisez votre application à accéder à Defender pour endpoint et attribuez-lui **l’autorisation « Lire toutes les alertes** » :
+4. Autorisez votre application à accéder à Defender pour point de terminaison et attribuez-lui l’autorisation **« Lire toutes les alertes »** :
 
-   - Dans la page de votre application, cliquez sur **Autorisations** \>  \> d’API Ajouter des API d’autorisation que **mon organisation >** **tapez WindowsDefenderATP** et cliquez sur **WindowsDefenderATP**.
+   - Dans la page de votre application, cliquez sur **Autorisations d’API Ajouter des** \> API **d’autorisation** \> **que mon organisation utilise** > type **WindowsDefenderATP** , puis cliquez sur **WindowsDefenderATP**.
 
      > [!NOTE]
-     > WindowsDefenderATP n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
+     > WindowsDefenderATP n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
 
-     :::image type="content" source="images/add-permission.png" alt-text="Option d’autorisations d’API sous le volet Gérer dans le portail Azure Active Directory web" lightbox="images/add-permission.png":::
+     :::image type="content" source="images/add-permission.png" alt-text="Option d’autorisations d’API sous le volet Gérer dans le portail Azure Active Directory" lightbox="images/add-permission.png":::
 
-   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
+   - Choisissez **Autorisations** \> d’application **Alert.Read.All** > Cliquez sur **Ajouter des autorisations**.
 
      :::image type="content" source="images/application-permissions.png" alt-text="Le type d’autorisation et les volets de paramètres dans la page Demander des autorisations d’API" lightbox="images/application-permissions.png":::
 
      > [!IMPORTANT]
-     > Vous devez sélectionner les autorisations pertinentes. « Lire toutes les alertes » n’est qu’un exemple !
+     > Vous devez sélectionner les autorisations appropriées. « Lire toutes les alertes » n’est qu’un exemple !
 
      Par exemple :
 
      - Pour [exécuter des requêtes avancées](run-advanced-query-api.md), sélectionnez l’autorisation « Exécuter des requêtes avancées ».
      - Pour [isoler un ordinateur](isolate-machine.md), sélectionnez l’autorisation « Isoler l’ordinateur ».
-     - Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** de l’API que vous souhaitez appeler.
+     - Pour déterminer l’autorisation dont vous avez besoin, consultez la section **Autorisations** de l’API que vous souhaitez appeler.
 
 5. Cliquez sur **Accorder le consentement**.
 
    > [!NOTE]
    > Chaque fois que vous ajoutez une autorisation, vous devez cliquer sur **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
 
-   :::image type="content" source="images/grant-consent.png" alt-text="Option de consentement d’octroi d’autorisation dans Azure Active Directory web" lightbox="images/grant-consent.png":::
+   :::image type="content" source="images/grant-consent.png" alt-text="Option d’octroi de consentement d’autorisation dans le portail Azure Active Directory" lightbox="images/grant-consent.png":::
 
-6. Ajoutez une secret à l’application.
+6. Ajoutez un secret à l’application.
 
-    Cliquez **sur Certificats & secrets**, ajoutez une description à la secret, puis cliquez sur **Ajouter**.
+    Cliquez sur **Certificats & secrets**, ajoutez une description au secret, puis cliquez sur **Ajouter**.
 
     > [!IMPORTANT]
-    > Après avoir cliqué sur Ajouter, **copiez la valeur de secret générée**. Vous ne pourrez plus récupérer une fois que vous êtes parti !
+    > Après avoir cliqué sur Ajouter, **copiez la valeur de secret générée**. Vous ne pourrez pas récupérer après votre départ !
 
-    :::image type="content" source="images/webapp-create-key2.png" alt-text="Élément de menu Certificats & secrets dans le volet Gérer du portail Azure Active Directory" lightbox="images/webapp-create-key2.png":::
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="L’élément de menu Certificats & secrets dans le volet Gérer dans le portail Azure Active Directory" lightbox="images/webapp-create-key2.png":::
 
-7. Notez votre ID d’application et votre ID de client.
+7. Notez votre ID d’application et votre ID de locataire.
 
-   Dans la page de votre application, allez à **Vue d’ensemble** et copiez ce qui suit :
+   Dans la page de votre application, accédez à **Vue d’ensemble** et copiez les éléments suivants :
 
-   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Volet Détails de l’application sous l’élément de menu Vue d’ensemble du portail Azure Active Directory web" lightbox="images/app-and-tenant-ids.png":::
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Volet Détails de l’application sous l’élément de menu Vue d’ensemble dans le portail Azure Active Directory" lightbox="images/app-and-tenant-ids.png":::
 
-Terminé ! Vous avez réussi à inscrire une application !
+Terminé ! Vous avez inscrit une application avec succès !
 
-### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>Étape 2 : obtenir un jeton à l’aide de l’application et utiliser ce jeton pour accéder à l’API.
+### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>Étape 2 : obtenez un jeton à l’aide de l’application et utilisez ce jeton pour accéder à l’API.
 
-- Copiez le script ci-dessous sur PowerShell ISE ou dans un éditeur de texte, puis enregistrez-le sous **Get-Token.ps1**.
-- L’exécution de ce script génère un jeton et l’enregistre dans le dossier de travail sous le **nomLatest-token.txt**.
+- Copiez le script ci-dessous dans PowerShell ISE ou dans un éditeur de texte, puis enregistrez-le **en tant queGet-Token.ps1**.
+- L’exécution de ce script génère un jeton et l’enregistre dans le dossier de travail sous le nom **Latest-token.txt**.
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -136,20 +136,20 @@ Terminé ! Vous avez réussi à inscrire une application !
    return $token
    ```
 
-- Vérification de la  sanité :
+- Vérification de l’intégrité :
   - Exécutez le script.
-  - Dans votre navigateur, allez à : <https://jwt.ms/>.
-  - Copiez le jeton (le contenu du Latest-token.txt fichier).
-  - Coller dans la zone supérieure.
-  - Recherchez la section « rôles ». Recherchez _le rôle Alert.Read.All_ .
+  - Dans votre navigateur, accédez à : <https://jwt.ms/>.
+  - Copiez le jeton (contenu du fichier Latest-token.txt).
+  - Collez dans la zone supérieure.
+  - Recherchez la section « rôles ». Recherchez le rôle _Alert.Read.All_ .
 
   :::image type="content" source="images/api-jwt-ms.png" alt-text="Volet Jeton décodé pour jwt.ms" lightbox="images/api-jwt-ms.png":::
 
-### <a name="lets-get-the-alerts"></a>Permet d’obtenir les alertes !
+### <a name="lets-get-the-alerts"></a>Permet d’obtenir les alertes!
 
-- Le script ci-dessous utilise **Get-Token.ps1** pour accéder à l’API et reçoit les dernières alertes de 48 heures.
-- Enregistrez ce script dans le dossier que vous avez enregistré le script **précédentGet-Token.ps1**.
-- Le script crée deux fichiers (json et csv) avec les données du même dossier que les scripts.
+- Le script ci-dessous utilise **Get-Token.ps1** pour accéder à l’API et obtient les dernières 48 heures d’alertes.
+- Enregistrez ce script dans le dossier que vous avez enregistré le script précédent **Get-Token.ps1**.
+- Le script crée deux fichiers (json et csv) avec les données dans le même dossier que les scripts.
 
   ```powershell
   # Returns Alerts created in the past 48 hours.
@@ -187,15 +187,15 @@ Terminé ! Vous avez réussi à inscrire une application !
   ($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation
   ```
 
-Vous avez terminé ! Vous avez réussi :
+Vous avez terminé ! Vous venez de réussir :
 
 - Créé et inscrit et application
 - Autorisation accordée à cette application pour lire les alertes
-- Connecté à l’API
-- Utilisation d’un script PowerShell pour renvoyer les alertes créées au cours des dernières 48 heures
+- Connexion de l’API
+- Utilisation d’un script PowerShell pour retourner des alertes créées au cours des dernières 48 heures
 
 ## <a name="related-topic"></a>Rubrique connexe
 
 - [API Microsoft Defender pour point de terminaison](exposed-apis-list.md)
-- [Accéder à Microsoft Defender pour le point de terminaison avec le contexte de l’application](exposed-apis-create-app-webapp.md)
-- [Accéder à Microsoft Defender pour le point de terminaison avec le contexte utilisateur](exposed-apis-create-app-nativeapp.md)
+- [Accéder Microsoft Defender pour point de terminaison avec le contexte d’application](exposed-apis-create-app-webapp.md)
+- [Accéder Microsoft Defender pour point de terminaison avec le contexte utilisateur](exposed-apis-create-app-nativeapp.md)

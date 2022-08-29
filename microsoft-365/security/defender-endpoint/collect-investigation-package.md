@@ -1,7 +1,7 @@
 ---
-title: API collecter un package d’examen
-description: Utilisez cette API pour créer des appels liés à la collecte d’un package d’enquête à partir d’un appareil.
-keywords: api, api de graphique, api pris en charge, collecter un package d’enquête
+title: Collecter l’API de package d’investigation
+description: Utilisez cette API pour créer des appels liés à la collecte d’un package d’investigation à partir d’un appareil.
+keywords: api, api graphe, api prises en charge, collecter le package d’investigation
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e6a310c167a0f77f0022b9ba35ed9aa94e437eb9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13cc4e0a1c5a72beb6c5c65ceb4a408d7d43a6ea
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302217"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326164"
 ---
-# <a name="collect-investigation-package-api"></a>API collecter un package d’examen
+# <a name="collect-investigation-package-api"></a>Collecter l’API de package d’investigation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,30 +40,30 @@ ms.locfileid: "61302217"
 
 ## <a name="api-description"></a>Description de l’API
 
-Collecter un package d’examen à partir d’un appareil.
+Collectez le package d’investigation à partir d’un appareil.
 
 ## <a name="limitations"></a>Limites
 
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 > [!IMPORTANT]
 >
-> - Ces actions de réponse sont uniquement disponibles pour les appareils Windows 10, version 1703 ou ultérieure, et Windows 11.
+> - Ces actions de réponse sont disponibles uniquement pour les appareils sur Windows 10, version 1703 ou ultérieure, et sur Windows 11.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Defender pour les API de point de terminaison](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.CollectForensics|« Collecter les enquêtes légales »
-Déléguée (compte professionnel ou scolaire)|Machine.CollectForensics|« Collecter les enquêtes légales »
+Application|Machine.CollectForensics|'Collecter les données légales'
+Déléguée (compte professionnel ou scolaire)|Machine.CollectForensics|'Collecter les données légales'
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Alerts Investigation » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Investigation des alertes » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -75,12 +75,12 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
-Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
+Dans le corps de la demande, fournissez un objet JSON avec les paramètres suivants :
 
 Paramètre|Type|Description
 :---|:---|:---
@@ -88,7 +88,7 @@ Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse. Si une collection est déjà en cours d’exécution, cela renvoie 400 demandes non bonnes.
+Si elle réussit, cette méthode renvoie le code de réponse 201 - Créé et [l’action de l’ordinateur](machineaction.md) dans le corps de la réponse. Si une collection est déjà en cours d’exécution, cette opération retourne 400 demandes incorrectes.
 
 ## <a name="example"></a>Exemple
 

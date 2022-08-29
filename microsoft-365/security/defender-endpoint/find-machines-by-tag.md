@@ -1,7 +1,7 @@
 ---
 title: Rechercher des appareils par API de balise
 description: Rechercher tous les appareils qui contiennent une balise specifc
-keywords: api, api pris en charge, obtenir, appareil, rechercher, rechercher un appareil, par balise, balise
+keywords: api, api prises en charge, get, device, find, find device, by tag, tag
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93363ba9cb6252a32406c0c29dfb7d757d2f411d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: f7926003a11c5aa27da5bbf4913feb54504a60d1
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302193"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327814"
 ---
 # <a name="find-devices-by-tag-api"></a>Rechercher des appareils par API de balise
 
@@ -39,31 +39,31 @@ ms.locfileid: "61302193"
 
 ## <a name="api-description"></a>Description de l’API
 
-Rechercher [des ordinateurs](machine.md) par [balise](machine-tags.md).
+Rechercher [des machines](machine.md) par [balise](machine-tags.md).
 
-`startswith` est prise en charge.
+`startswith` la requête est prise en charge.
 
 ## <a name="limitations"></a>Limites
 
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
-Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur l’ordinateur »
+Application|Machine.Read.All|'Lire tous les profils d’ordinateur'
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations de l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur la machine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - La réponse inclut uniquement les appareils accessibles par l’utilisateur en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils). [](machine-groups.md)
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - La réponse inclut uniquement les appareils accessibles par l’utilisateur en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils). [](machine-groups.md)
+> - La réponse inclut uniquement les appareils auxquels l’utilisateur a accès en fonction des paramètres de groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - La réponse inclut uniquement les appareils auxquels l’utilisateur a accès en fonction des paramètres de groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -75,14 +75,14 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
-## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
+## <a name="request-uri-parameters"></a>Paramètres d’URI de requête
 
 Nom|Type|Description
 :---|:---|:---
 tag|Chaîne|Nom de la balise. **Obligatoire**.
-useStartsWithFilter|Boolean|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
+useStartsWithFilter|Boolean|Lorsque la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -90,7 +90,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite : 200 - OK avec la liste des ordinateurs dans le corps de la réponse.
+En cas de réussite - 200 OK avec la liste des machines dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

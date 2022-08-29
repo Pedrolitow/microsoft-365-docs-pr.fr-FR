@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Dans cet article, découvrez comment utiliser PowerShell pour attribuer une licence Microsoft 365 à des utilisateurs sans licence.
-ms.openlocfilehash: a336c932ca31cc145e50baaaf9c77a992f39ab33
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 94c3c8dd58ed0ac424e027b30a7d83fd6dda1556
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940379"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336153"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Attribuer des licences Microsoft 365 à des comptes d’utilisateur avec PowerShell
 
@@ -34,23 +34,23 @@ ms.locfileid: "65940379"
 
 Les utilisateurs ne peuvent utiliser aucun service Microsoft 365 tant que leur compte n’a pas reçu une licence d’un plan de licences. Vous pouvez utiliser PowerShell pour affecter rapidement des licences à des comptes sans licence. 
 
-Un emplacement doit d’abord être attribué aux comptes d’utilisateur. La spécification d’un emplacement est une partie requise de la création d’un compte d’utilisateur dans le [Centre d’administration Microsoft 365](../admin/add-users/add-users.md). 
+Un emplacement doit d’abord être attribué aux comptes d’utilisateur. La spécification d’un emplacement est une partie requise de la création d’un compte d’utilisateur dans le [Centre d'administration Microsoft 365](../admin/add-users/add-users.md). 
 
-Les comptes synchronisés à partir de vos services de domaine Active Directory locaux n’ont pas par défaut d’emplacement spécifié. Vous pouvez configurer un emplacement pour ces comptes à partir de :
+Les comptes synchronisés à partir de vos services de domaine Active Directory local n’ont pas par défaut d’emplacement spécifié. Vous pouvez configurer un emplacement pour ces comptes à partir de :
 
 - Le Centre d’administration Microsoft 365
 - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
-- Portail [Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**utilisateurs** **Active Directory** >  > compte d’utilisateur > pays **ou région** **d’informations de** >  contact **de profil** > ).
+- Le [Portail Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**utilisateurs** **Active Directory** >  > compte d’utilisateur > pays **ou région** **d’informations de** >  contact **de profil** > ).
 
 >[!Note]
->[Découvrez comment attribuer des licences à des comptes d’utilisateurs](../admin/manage/assign-licenses-to-users.md) avec le Centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, consultez [Gérer les utilisateurs et les groupes](/admin).
+>[Découvrez comment attribuer des licences à des comptes d’utilisateur](../admin/manage/assign-licenses-to-users.md) avec le Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, consultez [Gérer les utilisateurs et les groupes](/admin).
 >
 
 ## <a name="use-the-microsoft-graph-powershell-sdk"></a>Utiliser le Kit de développement logiciel (SDK) Microsoft Graph PowerShell
 
 Tout [d’abord, connectez-vous à votre locataire Microsoft 365](/graph/powershell/get-started#authentication).
 
-L’attribution et la suppression de licences pour un utilisateur nécessitent l’étendue d’autorisation User.ReadWrite.All ou l’une des autres autorisations répertoriées dans la [page de référence de l’API Graph « Attribuer une licence](/graph/api/user-assignlicense) ».
+L’attribution et la suppression de licences pour un utilisateur nécessitent l’étendue d’autorisation User.ReadWrite.All ou l’une des autres autorisations répertoriées dans la [page de référence « Attribuer une licence » API Graph](/graph/api/user-assignlicense).
 
 L’étendue d’autorisation Organization.Read.All est nécessaire pour lire les licences disponibles dans le locataire.
 
@@ -66,6 +66,11 @@ Pour rechercher les comptes sans licence dans votre organisation, exécutez cett
 Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
 ```
 
+Pour rechercher les utilisateurs synchronisés sans licence dans votre organisation, exécutez cette commande.
+
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count eq 0 and OnPremisesSyncEnabled eq true' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All -Select UserPrincipalName
+```
 Vous pouvez uniquement attribuer des licences à des comptes d’utilisateur dont la propriété **UsageLocation** est définie sur un code de pays ISO 3166-1 alpha-2 valide. Par exemple, US pour les États-Unis et FR pour la France. Certains services Microsoft 365 ne sont pas disponibles dans certains pays. Pour plus d’informations, consultez [À propos des restrictions de licence](https://go.microsoft.com/fwlink/p/?LinkId=691730).
 
 Pour rechercher des comptes qui n’ont pas de valeur **UsageLocation** , exécutez cette commande.
@@ -99,14 +104,14 @@ Pour attribuer une licence à un utilisateur, utilisez la commande suivante dans
 Set-MgUserLicense -UserId $userUPN -AddLicenses @{SkuId = "<SkuId>"} -RemoveLicenses @()
 ```
 
-Cet exemple attribue une licence du plan de **licences SPE_E5** (Microsoft 365 E5) au **litwareinc.com de l’utilisateur\@** sans licence :
+Cet exemple montre comment attribuer une licence du plan de licence **SPE_E5** (Microsoft 365 E5) à l’utilisateur sans licence **litwareinc.com\@** :
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
 Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
 ```
 
-Cet exemple montre **comment affecter SPE_E5** (Microsoft 365 E5) et **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) à l’utilisateur **litwareinc.com\@** :
+Cet exemple attribue **SPE_E5** (Microsoft 365 E5) et **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) à l’utilisateur **litwareinc.com\@** :
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
@@ -119,7 +124,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-Cet exemple montre comment affecter **SPE_E5** (Microsoft 365 E5) avec les services **MICROSOFTBOOKINGS** (Microsoft Bookings) et **LOCKBOX_ENTERPRISE** (Customer Lockbox) désactivés :
+Cet exemple attribue **des SPE_E5** (Microsoft 365 E5) avec les services **MICROSOFTBOOKINGS** (Microsoft Bookings) et **LOCKBOX_ENTERPRISE** (Customer Lockbox) désactivés :
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
@@ -284,7 +289,7 @@ Pour attribuer une licence à un utilisateur, utilisez la commande suivante dans
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-Cet exemple attribue une licence du plan de licence **litwareinc:ENTERPRISEPACK** (Office 365 Entreprise E3) au **litwareinc.com de l’utilisateur\@** sans licence :
+Cet exemple attribue une licence du plan de licence **litwareinc:ENTERPRISEPACK** (Office 365 Entreprise E3) au **litwareinc.com de l’utilisateur sans licence :\@**
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -306,7 +311,7 @@ Cet exemple attribue des licences du plan de licence **litwareinc:ENTERPRISEPACK
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-Cet exemple montre comment attribuer ces mêmes licences aux utilisateurs sans licence du service Ventes aux États-Unis :
+Cet exemple montre comment attribuer ces mêmes licences à des utilisateurs sans licence dans le service Ventes du États-Unis :
   
 ```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"

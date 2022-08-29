@@ -1,8 +1,7 @@
 ---
 title: Obtenir des informations d’alerte par API d’ID
-description: Découvrez comment utiliser l’API Obtenir des informations d’alerte par ID pour récupérer une alerte spécifique par son ID dans Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, obtenir, alerte, informations, ID
-search.product: eADQiWindows 10XVcnh
+description: Découvrez comment utiliser l’API Obtenir des informations d’alerte par ID pour récupérer une alerte spécifique par son ID dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 76d7032b278a848fa74d149293c9a3d5d70dcc6f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 50b1642bd70e9cf54f2f9a21fd9b9d9d07ac444f
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168233"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323348"
 ---
 # <a name="get-alert-information-by-id-api"></a>Obtenir des informations d’alerte par API d’ID
 
@@ -29,8 +28,8 @@ ms.locfileid: "61168233"
 
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -40,29 +39,29 @@ ms.locfileid: "61168233"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère une alerte [spécifique par](alerts.md) son ID.
+Récupère une [alerte](alerts.md) spécifique par son ID.
 
 ## <a name="limitations"></a>Limites
 
 - Vous pouvez obtenir la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-- Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+- Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison.](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md).
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Alert.Read.All|« Lire toutes les alertes »
-Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
+Application|Alert.Read.All|« Lire toutes les alertes »
+Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire)|Alert.Read|« Lire les alertes »
 Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -74,7 +73,7 @@ GET /api/alerts/{id}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -82,4 +81,4 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK et l’entité [d’alerte](alerts.md) dans le corps de la réponse. Si l’alerte avec l’ID spécifié est in trouvée - 404 - In trouvé.
+Si elle réussit, cette méthode retourne 200 OK et l’entité [d’alerte](alerts.md) dans le corps de la réponse. Si l’alerte avec l’ID spécifié est introuvable - 404 Introuvable.

@@ -17,14 +17,18 @@ search.appverid:
 - MET150
 description: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16da97f249eff856fd1b0e671d71d813b3cbac73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ff8a9d39dec1fe46924dc02f8e05473947fd61f
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628504"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359118"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Créer des données exactes correspondant au type d’informations sensibles/au package de règles
+
+## <a name="applies-to"></a>S’applique à
+
+- [Expérience classique](sit-create-edm-sit-classic-ux-workflow.md)
 
 Vous pouvez créer un type d’informations sensibles (SIT) de correspondance de données exacte (SIT) à [l’aide du schéma EDM et de l’Assistant SIT](#use-the-edm-schema-and-sit-wizard) dans le Centre de conformité ou créer [manuellement](#create-a-rule-package-manually) le fichier XML du package de règles. Vous pouvez également combiner les deux à l’aide d’une méthode pour créer le schéma et le modifier ultérieurement à l’aide de l’autre méthode.
 
@@ -103,7 +107,7 @@ Pour des raisons de performances, il est essentiel d’utiliser des modèles qui
 
 Cela correspondrait à chaque mot ou numéro individuel dans un document ou un e-mail. Cela entraînerait une surcharge du service avec des correspondances et une absence de détection des correspondances vraies. L’utilisation de modèles plus précis peut éviter cette situation. Voici quelques recommandations pour identifier la configuration appropriée pour certains types de données courants.
 
-**Adresses e-mail** : les adresses e-mail peuvent être faciles à identifier, mais étant donné qu’elles sont si courantes dans le contenu, elles peuvent entraîner une charge importante dans le système si elles sont utilisées comme champ principal. Utilisez-les uniquement comme preuve secondaire. S’ils doivent être utilisés comme preuve principale, essayez de définir un type d’informations sensibles personnalisé qui utilise la logique pour exclure leur utilisation en tant que `From` ou `To` champs dans les e-mails, et d’exclure ceux avec l’adresse e-mail de votre entreprise afin de réduire le nombre de chaînes inutiles qui doivent être mises en correspondance.
+**Email adresses** : Email adresses peuvent être faciles à identifier, mais étant donné qu’elles sont si courantes dans le contenu, elles peuvent entraîner une charge importante dans le système si elles sont utilisées comme champ principal. Utilisez-les uniquement comme preuve secondaire. S’ils doivent être utilisés comme preuve principale, essayez de définir un type d’informations sensibles personnalisé qui utilise la logique pour exclure leur utilisation en tant que `From` ou `To` champs dans les e-mails, et d’exclure ceux avec l’adresse e-mail de votre entreprise afin de réduire le nombre de chaînes inutiles qui doivent être mises en correspondance.
 
 **Numéros de téléphone** : les numéros de téléphone peuvent être dans de nombreux formats différents, y compris ou à l’exclusion des préfixes de pays, des codes régionaux et des séparateurs. Pour réduire les faux négatifs tout en maintenant la charge au minimum, utilisez-les uniquement comme éléments secondaires, excluez tous les séparateurs probables, comme les parenthèses et les tirets, et incluez uniquement dans votre table de données sensible la partie qui sera toujours présente dans le numéro de téléphone.
 
@@ -215,4 +219,4 @@ Cette procédure vous montre comment créer un fichier au format XML appelé pac
 
 ## <a name="next-step"></a>Étape suivante
 
-- [Tester un type d’informations sensibles correspondant exactement aux données](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+- **Pour une expérience classique** : [tester un type d’informations sensibles correspondant exactement aux données](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)

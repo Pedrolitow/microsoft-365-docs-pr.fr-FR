@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible IBAN (International Banking Account Number).
-ms.openlocfilehash: 739c0a1fd90da1da817f46019cd1023be8ab27a3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 016196af1d36c3d246d275848f7339a74d0878a2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996700"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322340"
 ---
 # <a name="international-banking-account-number-iban"></a>Numéro de compte bancaire international (IBAN)
 
@@ -41,7 +41,7 @@ Le modèle doit inclure tous les éléments suivants :
 - 1 à 7 groupes de quatre lettres ou chiffres (séparés par des espaces facultatifs)
 - 1 à 3 lettres ou chiffres
 
-Le format pour chaque pays est légèrement différent. Le type d’informations sensibles IBAN recouvre ces 60 pays :
+Le format pour chaque pays est légèrement différent. Le type d’informations sensibles IBAN couvre ces 68 pays :
 
 - ad
 - Ae
@@ -52,6 +52,7 @@ Le format pour chaque pays est légèrement différent. Le type d’informations
 - be
 - bg
 - Bh
+- br
 - Ch
 - Cr
 - cy
@@ -69,12 +70,14 @@ Le format pour chaque pays est légèrement différent. Le type d’informations
 - Gi
 - gl
 - Gr
+- gt
 - hr
 - hu
 - Ie
 - il
 - is
 - it
+- jo
 - Kw
 - Kz
 - lb
@@ -82,7 +85,7 @@ Le format pour chaque pays est légèrement différent. Le type d’informations
 - lt
 - lu
 - lv
-- Mc
+- mc
 - md
 - me
 - mk
@@ -91,8 +94,11 @@ Le format pour chaque pays est légèrement différent. Le type d’informations
 - Mu
 - nl
 - Non
+- Pk
 - pl
+- ps
 - pt
+- Qa
 - ro
 - rs
 - sa
@@ -100,9 +106,12 @@ Le format pour chaque pays est légèrement différent. Le type d’informations
 - si
 - sk
 - Sm
+- tl
 - Amt
 - tr
 - Vg
+- Xk
+
 
 ## <a name="checksum"></a>Somme de contrôle
 

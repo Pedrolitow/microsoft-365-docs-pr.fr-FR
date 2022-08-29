@@ -18,17 +18,16 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1144326c626c565a1bb231ddccd998c2ca7a2195
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: e1bf29eb817649f2e736da2a80aed3b0108157a5
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300823"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319952"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Utiliser l’Assistant Installation dans Microsoft Defender pour entreprises
 
 Defender pour entreprise a été conçu pour faire gagner du temps et de l'énergie aux petites et moyennes entreprises. Par exemple, vous pouvez effectuer l’installation et la configuration initiales avec un Assistant Installation. L’Assistant Installation vous guide tout au long de l’octroi de l’accès à votre équipe de sécurité, de la configuration des notifications par e-mail pour votre équipe de sécurité et de l’intégration des appareils Windows de votre entreprise.
-
 
 > [!TIP]
 > L'utilisation de l'assistant d'installation est facultative Vous pouvez choisir de travailler manuellement via le processus d’installation et de configuration. Pour en savoir plus, reportez-vous à la rubrique :
@@ -64,18 +63,16 @@ L’Assistant Installation est conçu pour vous aider à configurer Defender ent
 
 2. **Configurez les notifications par e-mail**. Dans cette étape, vous pouvez configurer des notifications par e-mail pour votre équipe de sécurité. Ensuite, lorsqu’une alerte est générée ou qu’une nouvelle vulnérabilité est détectée, votre équipe de sécurité ne la manque pas, même si elle est loin de son bureau. [En savoir plus sur les notifications par e-mail](mdb-email-notifications.md). 
 
-3. **Embarquer et configurer les appareils Windows**. Dans cette étape, vous pouvez intégrer rapidement les appareils Windows de votre entreprise à Defender entreprise. L’intégration immédiate des appareils permet de protéger ces appareils dès le premier jour. 
+3. **Embarquer et configurer les appareils Windows**. Dans cette étape, vous pouvez intégrer rapidement les appareils Windows de votre entreprise à Defender entreprise. L’intégration immédiate des appareils permet de protéger ces appareils dès le premier jour. [En savoir plus sur l’intégration d’appareils à Defender entreprise](mdb-onboard-devices.md).
 
-   - **Si vous utilisez déjà Microsoft Intune** et que votre entreprise dispose d’appareils inscrits dans Intune, vous pouvez continuer à utiliser Intune. 
    - **Si vous n’utilisez pas Intune**, vous pouvez intégrer des appareils dans le portail Microsoft 365 Defender. 
+   - **Si vous utilisez déjà Microsoft Intune** et que votre entreprise dispose d’appareils inscrits dans Intune, vous pouvez continuer à utiliser Intune. Consultez [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security).
    
-   [En savoir plus sur l’intégration d’appareils à Defender entreprise](mdb-onboard-devices.md).
-   
-4. **Configurez vos stratégies de sécurité**. Defender pour entreprise comprend des stratégies de sécurité par défaut pour une protection de nouvelle génération et une protection par pare-feu qui peuvent être appliquées aux appareils de votre entreprise. Ces stratégies par défaut utilisent les paramètres recommandés et sont conçues pour fournir une protection renforcée pour vos appareils. Vous pouvez également créer vos propres stratégies de sécurité. 
+4. **Configurez vos stratégies de sécurité**. Defender pour entreprise comprend des stratégies de sécurité par défaut pour une protection de nouvelle génération et une protection par pare-feu qui peuvent être appliquées aux appareils de votre entreprise. Ces stratégies par défaut utilisent les paramètres recommandés et sont conçues pour fournir une protection renforcée pour vos appareils. Vous pouvez également créer vos propres stratégies de sécurité. Consultez [Afficher et modifier vos stratégies et paramètres de sécurité](mdb-configure-security-settings.md).
 
-   Si vous utilisez déjà Intune pour gérer vos appareils et stratégies de sécurité, vous pouvez continuer à utiliser le Centre d’administration Microsoft Endpoint Manager.
+   > [!NOTE]
+   > Si vous utilisez déjà Intune pour gérer vos appareils et stratégies de sécurité, vous pouvez continuer à utiliser le Centre d’administration Microsoft Endpoint Manager. Consultez [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security).
 
-   [Affichez et modifiez vos stratégies et paramètres de sécurité](mdb-configure-security-settings.md).
 
 ## <a name="what-is-automatic-onboarding"></a>Qu’est-ce que l’intégration automatique ?
 

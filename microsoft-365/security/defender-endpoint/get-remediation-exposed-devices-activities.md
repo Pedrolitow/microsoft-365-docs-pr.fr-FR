@@ -1,8 +1,7 @@
 ---
 title: Répertorier les appareils exposés d’une activité de correction
 description: Retourne des informations sur les appareils exposés pour la tâche de correction spécifiée.
-keywords: api, correction, api de correction, obtenir, tâches de correction, correction des appareils exposés
-search.product: eADQiWindows 10XVcnh
+keywords: api, correction, api de correction, get, tâches de correction, appareils exposés à la correction
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1bcd4f04ee48376d30b8b216de3efe49ab3a9db3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 34a12fbe5d97345a7a0a5a9c491d10489d6ac601
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165269"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344782"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 
@@ -29,7 +28,7 @@ ms.locfileid: "61165269"
 
 **S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,15 +43,15 @@ ms.locfileid: "61165269"
 
 Retourne des informations sur les appareils exposés pour la tâche de correction spécifiée.
 
-[En savoir plus sur les activités de correction.](tvm-remediation.md)
+[En savoir plus sur les activités de correction](tvm-remediation.md).
 
-## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>Liste des appareils exposés associés à une tâche de correction (ID)
+## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>Répertorier les appareils exposés associés à une tâche de correction (ID)
 
-**URL :** GET : /api/remediationTasks/ \{ id \} /machineReferences
+**URL:** GET : /api/remediationTasks/\{id\}/machineReferences
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -63,10 +62,10 @@ Déléguée (compte professionnel ou scolaire)|RemediationTask.Read.Read|\'Lire 
 
 Propriété (id)|Type de données|Description|Exemple
 :---|:---|:---|:---
-id|String|ID d'appareil|w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName|String|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform|String|Système d’exploitation d’appareil|WindowsServer2012R2
-rbacGroupName|String|Nom du groupe d’appareils associé à cet appareil|Serveurs
+id|Chaîne|ID d'appareil|w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName|Chaîne|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|Chaîne|Système d’exploitation de l’appareil|WindowsServer2012R2
+rbacGroupName|Chaîne|Nom du groupe d’appareils auquel cet appareil est associé|Serveurs
 
 ## <a name="example"></a>Exemple
 
@@ -119,5 +118,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Méthodes et propriétés de correction](get-remediation-methods-properties.md)
 - [Obtenir une activité de correction par son ID](get-remediation-one-activity.md)
 - [Répertorier toutes les activités de correction](get-remediation-all-activities.md)
-- [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Gestion des vulnérabilités Microsoft Defender](next-gen-threat-and-vuln-mgt.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

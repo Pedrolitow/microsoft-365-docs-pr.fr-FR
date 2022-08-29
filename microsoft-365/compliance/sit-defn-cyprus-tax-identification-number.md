@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité du numéro d’identification fiscale de Chypre.
-ms.openlocfilehash: ef2b1d1790993a7ed9b42ccf1bfd662f20b662df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fb24f1841483e48b6cfec5167772be13743297e0
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950563"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367596"
 ---
-# <a name="cyprus-tax-identification-number"></a>Numéro d’identification fiscale de Chypre
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
+# <a name="cyprus-tax-identification-number"></a>Numéro d’identification fiscale de l’Espagne
 
 ## <a name="format"></a>Format
 
@@ -54,14 +46,14 @@ non applicable
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_cyprus_eu_tax_file_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keywords_cyprus_eu_tax_file_number` trouvé.
+- La fonction `Func_cyprus_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_cyprus_eu_tax_file_number` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_cyprus_eu_tax_file_number` recherche le contenu qui correspond au modèle.
+- La fonction `Func_cyprus_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -82,23 +74,23 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - id fiscal
 - code d’identification fiscale
-- identification fiscale non
+- numéro d’identification fiscal
+- numéro d’identification fiscal
+- taxe nº#
+- nº fiscal
+- numéro de contribuable
 - numéro d’identification fiscale
-- tax no #
-- tax no
-- numéro d’impôt
-- numéro d’enregistrement fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
 - taxnumber
 - tic #
 - tic
-- iD d’tin
-- tin no
-- Étain #
+- id de tin
+- nº de tin
+- tin#
 - vergi kimlik kodu
 - vergi kimlik numarası
 - αριθμός φορολογικού μητρώου

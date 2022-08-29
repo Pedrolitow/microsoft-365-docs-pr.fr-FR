@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 04/08/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 99e2a26294d8e67854387d3c4f3d41c469a97a50
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 16d8dd96b9fef1aaa01437f3c1175021a1f9f33d
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65811059"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315699"
 ---
 # <a name="creating-and-testing-binary-files-on-test-base"></a>Création et test de fichiers binaires sur la base de test
 
@@ -94,7 +94,7 @@ Dans le menu de gauche sous **Catalogue de packages**, sélectionnez le **nouvea
 2. Dans la **préversion du package**, selon vos besoins, vous pouvez
    - Créez un dossier.
    - Créez un script.
-   - Télécharger un nouveau fichier.
+   - Chargez un nouveau fichier.
 
    > [!div class="mx-imgBorder"]
    > ![Créer des ressources](Media/testapplication10.png)
@@ -129,26 +129,26 @@ Dans le menu de gauche sous **Catalogue de packages**, sélectionnez le **nouvea
 
 4. Une fois toutes les informations requises remplies, vous pouvez passer à l’étape 4 en cliquant sur le bouton Suivant en bas.
 
-### <a name="step-4-test-matrix"></a>Étape 4. Matrice de test
+### <a name="step-4-test-matrix"></a>Étape 4. Matrice de test
 
 1. Sous l’onglet Matrice de test, sélectionnez le **type de mise à jour du système d’exploitation**. Deux types de mises à jour du système d’exploitation sont pris en charge.
-   - Les **mises à jour de sécurité** permettent de tester votre package par rapport aux évolutions incrémentielles de Windows mises à jour de sécurité mensuelles préversion.
-   - Les **mises à jour des fonctionnalités** permettent de tester votre package par rapport à Windows versions de mises à jour de fonctionnalités bi-annuelles préversion de la Programme Windows Insider.
+   - Les **mises à jour de sécurité** permettent de tester votre package par rapport aux évolutions incrémentielles des mises à jour de sécurité mensuelles préversion de Windows.
+   - Les **mises à jour des fonctionnalités** permettent de tester votre package sur les builds de mises à jour de fonctionnalités bi-annuelles préversion windows du programme Windows Insider.
 
 2. Sélectionnez la ou les versions du système d’exploitation pour les tests de mise à jour de sécurité.
 
-   Si **les mises à jour de sécurité** sont sélectionnées dans le type de mise à jour du système d’exploitation, vous devez sélectionner la ou les versions de système d’exploitation de Windows votre package sera testé.
+   Si **les mises à jour de sécurité** sont sélectionnées dans le type de mise à jour du système d’exploitation, vous devez sélectionner la ou les versions du système d’exploitation de Windows sur laquelle votre package sera testé.
 
    > [!NOTE]
    > Si vous sélectionnez de tester votre package sur les systèmes d’exploitation serveur et client, assurez-vous que le package est compatible et qu’il peut s’exécuter sur les deux systèmes d’exploitation.
 
 3. Sélectionnez les options pour les tests de mise à jour des fonctionnalités.
    - Si **les mises à jour des fonctionnalités** sont sélectionnées dans le type de mise à jour du système d’exploitation, vous devez terminer les options suivantes.
-   - Pour **Insider Channel**, sélectionnez le canal Programme Windows Insider comme build sur laquelle vos packages doivent être testés. Nous utilisons actuellement des builds en version d’évaluation dans le **canal bêta Insider**.
-   - Pour la **base de référence du système d’exploitation pour Insight**, sélectionnez la Windows version du système d’exploitation à utiliser comme base de référence pour comparer vos résultats de test.
+   - Pour **le canal Insider**, sélectionnez le canal du programme Windows Insider comme build sur laquelle vos packages doivent être testés. Nous utilisons actuellement des builds en version d’évaluation dans le **canal bêta Insider**.
+   - Pour la **base de référence du système d’exploitation pour Insight**, sélectionnez la version du système d’exploitation Windows à utiliser comme base de référence pour comparer vos résultats de test.
 
    > [!div class="mx-imgBorder"]
-   > ![Sélectionnez la version du système d’exploitation Windows](Media/testapplication14.png)
+   > ![Sélectionner la version du système d’exploitation Windows](Media/testapplication14.png)
 
 4. Une fois toutes les informations requises renseignées, vous pouvez passer à l’étape 5 (dernière étape) en cliquant sur le bouton Suivant en bas.
 

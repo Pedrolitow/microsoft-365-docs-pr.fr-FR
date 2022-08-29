@@ -1,7 +1,7 @@
 ---
 title: Répertorier les vulnérabilités par logiciel
-description: Récupérez la liste des vulnérabilités dans le logiciel installé.
-keywords: api, api de graphique, api pris en charge, obtenir, liste de vulnérabilités, api tvm Microsoft Defender pour endpoint
+description: Récupérez une liste des vulnérabilités dans le logiciel installé.
+keywords: api, api graphe, api prises en charge, get, liste des vulnérabilités, Microsoft Defender pour point de terminaison api tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ac182b9d8e2cc79dfa7d42328ea4fbcacb7f6f9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 61a85b5e3a52cdf936058a08ad71f08348c4a553
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300885"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327634"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Répertorier les vulnérabilités par logiciel
 
@@ -28,9 +28,9 @@ ms.locfileid: "61300885"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,11 +38,11 @@ ms.locfileid: "61300885"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupérez la liste des vulnérabilités dans le logiciel installé.
+Récupérez une liste des vulnérabilités dans le logiciel installé.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -59,7 +59,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 |Nom|Type|Description
 |---|---|---|
-|Autorisation|String|Porteur {token}. **Obligatoire**.
+|Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -67,7 +67,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec une liste de vulnérabilités exposées par le logiciel spécifié.
+Si elle réussit, cette méthode retourne 200 OK avec une liste de vulnérabilités exposées par le logiciel spécifié.
 
 ## <a name="example"></a>Exemple
 

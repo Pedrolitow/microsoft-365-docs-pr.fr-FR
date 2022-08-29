@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les paramètres que vous pouvez configurer pour les stratégies de conservation et les étiquettes de conservation de Microsoft 365 afin de conserver ou de supprimer les données de votre organisation.
-ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: c0c5003a1e4a8b8aba231a0f3790aa0a82f26e15
+ms.sourcegitcommit: a1c86e51f6fec7517356251c3b99b1a86705c8c5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943329"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336707"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -63,10 +63,10 @@ Lorsque vous choisissez d’utiliser des étendues adaptatives, vous êtes invit
 
 Les noms des propriétés des sites sont basés sur les propriétés gérées des sites SharePoint. Pour plus d'informations sur les attributs personnalisés, voir [Utilisation de propriétés de site SharePoint personnalisées pour appliquer la rétention Microsoft 365 avec des étendues de politique adaptative](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-Les noms d'attributs des utilisateurs et des groupes sont basés [sur les propriétés](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) filtrables des destinataires qui correspondent aux attributs d'Azure AD. Par exemple :
+Les noms d’attributs des utilisateurs et des groupes sont [basés sur des propriétés de destinataire filtrables](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) qui sont mappées aux attributs Azure AD. Par exemple :
 
-- **Alias** correspond au nom LDAP **mailNickname**, qui s’affiche comme **e-mail** dans le centre d’administration Azure AD.
-- **Adresses e-mail** correspond au nom LDAP **adresses proxy**, qui s’affiche sous la forme **adresse proxy** dans le centre d’administration Azure AD.
+- **Alias** mappé au nom LDAP **mailNickname** qui s’affiche comme **Email** dans le Centre d’administration Azure AD.
+- **Email adresses** correspond aux **adresses proxyAddresses** de nom LDAP qui s’affichent en tant **qu’adresse proxy** dans le Centre d’administration Azure AD.
 
 Les attributs et propriétés répertoriés dans la table peuvent être facilement spécifiés lorsque vous configurez une étendue adaptative à l’aide du générateur de requêtes simple. Les attributs et propriétés supplémentaires sont pris en charge avec le générateur de requêtes avancé, comme décrit dans la section suivante.
 
@@ -86,10 +86,10 @@ Pour les sites SharePoint, une configuration SharePoint supplémentaire peut êt
 1. Dans le [Centre de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
     - Si vous utilisez la solution de gestion des enregistrements :
-        - **Solutions** > **Gestion des enregistrements** > **étendues adaptatives** onglet > + **Créer l’étendue**
+        - **Solutions** \> **Gestion des** \> enregistrements **Onglet Étendues adaptatives** \> + **Créer une étendue**
         
     - Si vous utilisez la solution de gestion du cycle de vie des données :
-       - **Solutions** > **Gestion du cycle de vie des données** > **Étendues adaptatives** onglet > + **Créer une étendue**
+       - **Solutions** \> **Gestion du cycle de vie des** \> données **Microsoft 365** \> **Onglet Étendues adaptatives** \> + **Créer une étendue**
     
     Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**. 
 
@@ -127,7 +127,7 @@ Pour les sites SharePoint, une configuration SharePoint supplémentaire peut êt
     
     - Pour les **sites Microsoft Office SharePoint Online** étendues, utilisez le langage KQL (Keyword Query Language). Vous connaissez peut-être déjà l’utilisation de KQL pour rechercher Microsoft Office SharePoint Online à l’aide de propriétés de site indexées. Pour vous aider à spécifier ces requêtes KQL, consultez [En savoir plus sur la syntaxe KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
-        Par exemple, étant donné que les étendues d'application des sites SharePoint incluent automatiquement tous les types de sites SharePoint, qui comprennent les sites Microsoft 365 connectés à un groupe et les sites OneDrive, vous pouvez utiliser la propriété de site indexée **SiteTemplate** pour inclure ou exclure des types de sites spécifiques. Les modèles que vous pouvez spécifier :
+        Par exemple, étant donné que les étendues de site SharePoint incluent automatiquement tous les types de sites SharePoint, qui incluent les sites Microsoft 365 connectés à un groupe et OneDrive, vous pouvez utiliser la propriété de site indexée **SiteTemplate** pour inclure ou exclure des types de sites spécifiques. Les modèles que vous pouvez spécifier :
         - `SITEPAGEPUBLISHING` pour les sites de communication modernes
         - `GROUP` pour les sites Microsoft 365 connectés à un groupe
         - `TEAMCHANNEL` pour les sites de canal privé Microsoft Teams
@@ -302,6 +302,10 @@ Lorsque vous configurez une stratégie de rétention qui utilise des étendues d
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les Groupes Microsoft 365
 
 Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365**. Pour les stratégies de rétention, cet emplacement inclut la boîte aux lettres de groupe et SharePoint site d’équipes. Pour les étiquettes de rétention, cet emplacement inclut SharePoint site d’équipes uniquement.
+
+Pour plus d’informations sur les éléments inclus et exclus pour Groupes Microsoft 365 :
+- Pour les boîtes aux lettres de groupe, consultez [Ce qui est inclus pour la rétention et la suppression](retention-policies-exchange.md#whats-included-for-retention-and-deletion) pour la rétention Exchange.
+- Pour les sites d’équipes SharePoint, consultez [Ce qui est inclus pour la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion) pour la rétention SharePoint.
 
 Les boîtes aux lettres que vous ciblez avec cet emplacement de stratégie nécessitent au moins 10 Mo de données avant que les paramètres de rétention ne s’appliquent à celles-ci.
 

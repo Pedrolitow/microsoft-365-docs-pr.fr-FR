@@ -1,7 +1,7 @@
 ---
-title: Obtenir les ko manquants par ID logiciel
+title: Obtenir les bases de connaissances manquantes par ID logiciel
 description: Récupère les mises à jour de sécurité manquantes par ID logiciel
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID logiciel, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
+keywords: api, api graphe, api prises en charge, get, list, file, information, software id, threat & vulnerability management api, Microsoft Defender pour point de terminaison tvm api, mdvm, Gestion des vulnérabilités Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 692d0ca44a46ef11bd7ab3e9bb32a0c98dd7e01a
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: d587951bd201e921f48244a823a11747ceed776a
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301437"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342886"
 ---
-# <a name="get-missing-kbs-by-software-id"></a>Obtenir les ko manquants par ID logiciel
+# <a name="get-missing-kbs-by-software-id"></a>Obtenir les bases de connaissances manquantes par ID logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,11 +35,11 @@ ms.locfileid: "61301437"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Récupère les ko manquants (mises à jour de sécurité) par ID logiciel
+Récupère les bases de connaissances manquantes (mises à jour de sécurité) par ID logiciel
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -52,11 +52,11 @@ Déléguée (compte professionnel ou scolaire)|Software.Read|« Lire les informa
 GET /api/Software/{Id}/getmissingkbs
 ```
 
-## <a name="request-header"></a>En-tête de demande
+## <a name="request-header"></a>En-tête de requête
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -64,7 +64,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK, avec les données kb du logiciel spécifié manquantes dans le corps.
+Si elle réussit, cette méthode retourne 200 OK, avec les données kb du logiciel spécifiées dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -102,5 +102,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire logiciel de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

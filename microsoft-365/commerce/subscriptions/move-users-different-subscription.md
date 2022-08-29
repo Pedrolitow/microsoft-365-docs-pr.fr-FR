@@ -14,19 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid: MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 05/12/2022
-ms.openlocfilehash: b8427e383e40a4061e92e4d02b64a6a16a4412db
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c3450cecf4219f825740d5777cebeb05782b3dc4
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083968"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322626"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
@@ -57,6 +56,47 @@ Vous devez être un administrateur global, de licence ou d'utilisateur pour attr
 4. Dans le volet **Gérer les licences de produit** , **sélectionnez Remplacer**  et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
 
 5. En bas, **sélectionnez Enregistrer les modifications** \> **close**.
+
+## <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sauvegarder des données avant de changer de plan Microsoft 365 pour les entreprises
+
+Si un utilisateur est basculé vers un autre abonnement qui a moins de services liés aux données ou si un utilisateur quitte l’organisation, vous pouvez télécharger une copie de ses données stockées dans Microsoft 365 avant de passer au nouvel abonnement.
+
+Si vous déplacez un utilisateur vers un abonnement qui a les mêmes services ou plus, vous n’avez pas besoin de sauvegarder les données utilisateur.
+  
+### <a name="save-a-copy-of-outlook-information"></a>Enregistrer une copie des informations Outlook
+
+Si les utilisateurs disposent d’Outlook, ils peuvent [exporter ou sauvegarder des e-mails, des contacts et du calendrier vers un fichier .pst Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) avant que leur plan ne soit basculé.
+  
+Une fois le basculement vers le nouveau plan terminé, les utilisateurs peuvent [importer des e-mails, des contacts et un calendrier à partir d’un fichier .pst Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+  
+### <a name="save-files-stored-in-onedrive-for-business"></a>Enregistrer les fichiers stockés dans OneDrive Entreprise
+
+Avant de passer à un autre abonnement, les [utilisateurs peuvent télécharger des fichiers et dossiers à partir de OneDrive ou SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) vers un autre emplacement, tel qu’un dossier sur le disque dur de leur ordinateur ou un partage de fichiers sur le réseau de l’organisation.
+  
+### <a name="save-yammer-information"></a>Enregistrer les informations Yammer
+
+Les administrateurs peuvent exporter tous les messages, notes, fichiers, rubriques, utilisateurs et groupes vers un fichier .zip. Pour plus d’informations, consultez [Exporter des données à partir de Yammer Entreprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Les développeurs peuvent également utiliser [l’API Yammer](https://go.microsoft.com/fwlink/p/?linkid=842495) pour ce faire.
+  
+### <a name="how-to-save-sharepoint-information"></a>Comment enregistrer des informations SharePoint
+
+Si un utilisateur passe d’un abonnement avec SharePoint Online à un abonnement qui ne l’a pas, la vignette **SharePoint** n’apparaît plus dans son menu Microsoft 365.
+  
+Toutefois, tant que le nouvel abonnement se trouve dans la même organisation que celui à partir de lequel ils sont basculés, les utilisateurs peuvent toujours accéder au site d’équipe SharePoint. Ils peuvent afficher et mettre à jour des blocs-notes, des documents, des tâches et des calendriers à l’aide de l’URL directe vers le site d’équipe.
+  
+> [!TIP]
+> Nous recommandons aux utilisateurs d’accéder au site d’équipe avant que leur abonnement ne soit basculé et d’enregistrer l’URL en tant que favori ou signet dans leur navigateur.
+  
+Par défaut, l’URL du site web de l’équipe se présente sous la forme suivante :
+  
+```html
+https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
+```
+
+où  _\<orgDomain\>_ se trouve l’URL de l’organisation.
+  
+Par exemple, si le domaine de l’organisation est contoso.onmicrosoft.com, l’URL directe vers le site d’équipe est `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx`.
+  
+Bien sûr, les utilisateurs peuvent également télécharger des documents SharePoint Online à partir du site d’équipe SharePoint sur leur ordinateur local ou vers un autre emplacement à tout moment.
 
 ## <a name="next-steps"></a>Prochaines étapes
 

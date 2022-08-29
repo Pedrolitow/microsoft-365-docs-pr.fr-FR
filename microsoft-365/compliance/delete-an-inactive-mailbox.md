@@ -18,14 +18,16 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Lorsque vous n’avez plus besoin de conserver le contenu d’une boîte aux lettres inactive Microsoft 365, vous pouvez supprimer définitivement la boîte aux lettres inactive.
-ms.openlocfilehash: a8bdd0cb98d744b6c64f651b7b7bb1754ff4f12e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a4037d22939adfa46a28a20966cb2ef5ca50f0e8
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634486"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359950"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Suppression d’une boîte aux lettres inactive
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Une boîte aux lettres inactive est utilisée pour conserver l’adresse e-mail d’un ancien employé après son départ de votre organisation. Si vous n'avez plus besoin du contenu d'une boîte aux lettres inactive, vous pouvez le supprimer de façon définitive en supprimant le blocage. En outre, il est possible que plusieurs blocages soient placés sur une boîte aux lettres inactive. Par exemple, une boîte aux lettres inactive peut être placée en suspension pour litige et sur une ou plusieurs blocages sur place. En outre, la rétention de Microsoft 365 peut être appliquée à la boîte aux lettres inactive. Vous devez supprimer toutes les conservations et stratégies de rétention d’une boîte aux lettres inactive pour la supprimer. Après avoir supprimé les stratégies de conservation et de rétention, la boîte aux lettres inactive est marquée pour suppression et est définitivement supprimée après son traitement.
   

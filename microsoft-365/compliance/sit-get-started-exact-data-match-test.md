@@ -17,14 +17,19 @@ search.appverid:
 - MET150
 description: configurer les services
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 31f51a0bfe3833fb45132d1a9f9093b1dcccf285
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0c8e43e9d732535bc15b7c231cc7ac91dabe3898
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622082"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359840"
 ---
 # <a name="test-an-exact-data-match-sensitive-information-type"></a>Tester un type d’informations sensibles correspondant exactement aux données
+
+## <a name="applies-to"></a>S’applique à
+
+- [Nouvelle expérience](sit-create-edm-sit-unified-ux-workflow.md)
+- [Expérience classique](sit-create-edm-sit-classic-ux-workflow.md)
 
 Une fois votre type d’informations sensibles (SIT) EDM (Exact Data Match) créé et une heure après avoir vérifié que votre table d’informations sensibles a terminé le chargement et l’indexation, vous pouvez tester qu’elle détecte les informations que vous souhaitez détecter à l’aide de la fonction de test dans la section Types d’informations sensibles du Centre de conformité.
  

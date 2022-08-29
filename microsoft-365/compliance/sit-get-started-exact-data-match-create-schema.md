@@ -17,14 +17,18 @@ search.appverid:
 - MET150
 description: Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 87b90d2aabb3dd23e7f891a740bcaf98a5cb996a
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622016"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359928"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
+
+## <a name="applies-to"></a>S’applique à
+
+- Expérience classique
 
 Vous pouvez créer le schéma et EDM SIT à l’aide de [l’Assistant Utiliser le schéma de correspondance exacte des données et le modèle de type d’informations sensibles](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) ou [manuellement](#create-exact-data-match-schema-manually-and-upload). Vous pouvez également combiner les deux à l’aide d’une méthode pour créer le schéma et le modifier ultérieurement à l’aide de l’autre méthode.
 
@@ -35,7 +39,6 @@ Si vous n’êtes pas familiarisé avec les services SES basés sur EDM ou leur 
 - [Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 Un schéma EDM unique peut être utilisé dans plusieurs types d’informations sensibles qui utilisent la même table de données sensibles. Vous pouvez créer jusqu’à 10 schémas EDM différents dans un locataire Microsoft 365.
-
 
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
@@ -143,6 +146,28 @@ L’indicateur `ignoredDelimiters` ne prend pas en charge :
 > Lors de la définition de votre type d’informations sensibles EDM, *ignoreDelimiters* n’affecte pas la façon dont le type d’informations sensibles classification associé à l’élément principal dans un modèle EDM identifie le contenu d’un élément. Par conséquent, si vous configurez *ignoreDelimiters* pour un champ pouvant faire l’objet d’une recherche, vous devez vous assurer que le type d’informations sensibles utilisé pour un élément principal basé sur ce champ choisira des chaînes avec et sans ces caractères présents.
 >
 > Le nombre de colonnes dans votre table source d’informations sensibles et le nombre de champs dans votre schéma doivent correspondre, l’ordre n’a pas d’importance.
+
+Les caractères utilisés comme *séparateurs de jetons* se comportent différemment des autres délimiteurs. Voici quelques exemples :
+- \ (espace)
+- \\T
+- \,
+- \.
+- \;
+- \?
+- \!
+- \\R
+- \\Â¡n  
+
+Lorsque vous incluez un *séparateur de jetons*, EDM arrête le jeton où se trouve le séparateur. Par exemple, EDM voit la valeur **Middle-Last Name** en **Middle-Last** et **Name** pour le `LastName` champ. Si les *ignoredDelimiters* sont inclus pour le `LastName` champ avec le caractère « - », cette action ne se produit qu’après la rupture de la valeur. À la fin, EDM voit les valeurs suivantes **MiddleLast** et **Name**.
+
+Pour utiliser les caractères suivants en tant que *séparateurs ignorés* et non *séparateurs de jetons*, un SIT qui correspond au format correspondant doit être associé au champ. Par exemple, un SIT qui détecte une chaîne à plusieurs mots avec des tirets doit être associé au `LastName` champ.
+- \.
+- \;
+- \!
+- \?
+- \\
+
+Il est possible d’associer des SIT à des éléments secondaires à l’aide de PowerShell.
 
 1. Définissez le schéma au format XML (comme dans notre exemple ci-dessous). Nommez ce fichier de schéma **edm.xml** et configurez-le de telle sorte que pour chaque colonne de la table source d’informations sensibles, il existe une ligne qui utilise la syntaxe :
 

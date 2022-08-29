@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: a028cfc80dfdba7bea0ddbf89b6f528d5e0726ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 7173e57eaed4f4fcaec9fe240385004419918f8e
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634806"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335647"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -142,7 +142,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
   Comme pour le contenu des autres Teams, le lieu de stockage du contenu de la carte est basé sur l'endroit où la carte a été utilisée. Le contenu des cartes utilisées dans un canal Teams est stocké dans la boîte aux lettres du groupe Teams. Le contenu des cartes pour les chats 1:1 et 1xN est stocké dans les boîtes aux lettres des participants au conversation.
 
-  Pour rechercher le contenu d'une carte, vous pouvez utiliser les`kind:microsoftteams` conditions`itemclass:IPM.SkypeTeams.Message` de recherche. Lors de l'examen des résultats de recherche, le contenu de la carte généré par les robots dans un canal Teams a la propriété **Sender/Author** email comme `<appname>@teams.microsoft.com` , où `appname`est le nom de l'application qui a généré le contenu de la carte. Si le contenu de la carte a été généré par un utilisateur, la valeur **d'Expéditeur/Autorisateur** permet d'identifier l'utilisateur.
+  Pour rechercher le contenu d'une carte, vous pouvez utiliser les`kind:microsoftteams` conditions`itemclass:IPM.SkypeTeams.Message` de recherche. Lors de l’examen des résultats de la recherche, le contenu de la carte généré par les bots dans un canal Teams a la propriété d’e-mail **Expéditeur/Auteur** en tant que `<appname>@teams.microsoft.com`, où `appname` est le nom de l’application qui a généré le contenu de la carte. Si le contenu de la carte a été généré par un utilisateur, la valeur **d'Expéditeur/Autorisateur** permet d'identifier l'utilisateur.
 
   Lorsque vous consultez le contenu de la carte dans les résultats de la recherche de contenu, le contenu apparaît comme une pièce jointe au message. La pièce jointe est nommée `appname.html`, où`appname` se trouve le nom de l'application qui a généré le contenu de la carte. Les captures d'écran suivantes montrent comment le contenu des cartes (pour une application nommée Asana) apparaît dans les équipes et dans les résultats d'une recherche.
 
@@ -190,7 +190,7 @@ Vous pouvez utiliser la propriété d’e-mail **ItemClass** ou la condition de 
 
 ## <a name="searching-inactive-mailboxes"></a>Recherche des boîtes aux lettres inactives
 
-Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à la gestion du **cycle de vie des**\>**données** – Conservation dans le portail de conformité Microsoft Purview, puis cliquer **sur Autres**![ ellipses de la barre de navigation.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Boîtes aux lettres inactives**.
+Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **la gestion** \> du cycle de vie des données **Microsoft 365** \> **Retention** dans le portail de conformité Microsoft Purview, puis cliquer sur **Autres**![points de suspension de barre de navigation.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Boîtes aux lettres inactives**.
 
 Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
 

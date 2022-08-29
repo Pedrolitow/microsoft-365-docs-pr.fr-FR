@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
 ms.date: 09/16/2021
-ms.openlocfilehash: a9837a146ff6494ceaa94adeefeeaf6ed7769986
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
-ms.translationtype: HT
+ms.openlocfilehash: 74d2ff2a2df4ed24a0fb13512d1f320bf24d6b42
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128698"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325724"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 
@@ -59,7 +59,7 @@ Le tableau suivant explique ce à quoi vous pouvez vous attendre à l'expiration
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Que se passe-t-il si j’annule un abonnement ?
 
-Si vous annulez votre abonnement avant sa date d'expiration, l'abonnement passe directement à l'état Désactivé (lequel dure 90 jours pour la plupart des abonnements et dans la plupart des pays et régions).en ignorant l’état Expiré. Nous vous recommandons de [sauvegarder vos données](back-up-data-before-switching-plans.md) avant d'annuler votre abonnement. En tant qu'administrateur, vous pouvez toujours accéder aux données de votre organisation et les sauvegarder lorsque votre abonnement présente un état Désactivé. Les données client que vous laissez peuvent être supprimées après 90 jours, et seront supprimées au maximum 180 jours après l'annulation.
+Si vous annulez votre abonnement avant sa date d'expiration, l'abonnement passe directement à l'état Désactivé (lequel dure 90 jours pour la plupart des abonnements et dans la plupart des pays et régions).en ignorant l’état Expiré. Nous vous recommandons de [sauvegarder vos données](move-users-different-subscription.md) avant d'annuler votre abonnement. En tant qu'administrateur, vous pouvez toujours accéder aux données de votre organisation et les sauvegarder lorsque votre abonnement présente un état Désactivé. Les données client que vous laissez peuvent être supprimées après 90 jours, et seront supprimées au maximum 180 jours après l'annulation.
   
 Voici ce à quoi vous et vos utilisateurs devez vous attendre si vous annulez un abonnement.
   
@@ -105,7 +105,7 @@ Voici ce à quoi vous pouvez vous attendre lorsque votre abonnement atteint ces 
 
 Dans cet état, les utilisateurs disposent d’un accès normal au portail Microsoft 365, aux applications d’Office et aux services tels que le courrier et SharePoint Online.
   
-En tant qu'administrateur, vous avez toujours accès au Centre d'administration. Ne vous inquiétez pas, un administrateur général ou un administrateur de facturation peut [réactiver un abonnement](reactivate-your-subscription.md) et continuer à utiliser Microsoft 365. Si vous ne procédez pas à la réactivation, [sauvegardez vos données](back-up-data-before-switching-plans.md).
+En tant qu'administrateur, vous avez toujours accès au Centre d'administration. Ne vous inquiétez pas, un administrateur général ou un administrateur de facturation peut [réactiver un abonnement](reactivate-your-subscription.md) et continuer à utiliser Microsoft 365. Si vous ne procédez pas à la réactivation, [sauvegardez vos données](move-users-different-subscription.md).
   
 ### <a name="state-disabled"></a>État : Désactivé
 
@@ -113,7 +113,7 @@ En tant qu'administrateur, vous avez toujours accès au Centre d'administration.
 
 Dans cet état, votre niveau d'accès est considérablement restreint. Vos utilisateurs ne peuvent pas se connecter ou accéder à des services tels que la messagerie électronique ou SharePoint Online. Les applications Office passent en mode lecture seule avec des fonctionnalités réduites et affichent des [notifications Produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). Vous pouvez toujours vous connecter et accéder au Centre d'administration, mais vous ne pouvez plus attribuer de licences aux utilisateurs. Vos données client, notamment les données, messages électroniques et fichiers d'utilisateurs stockés sur des sites d'équipe, sont accessibles uniquement par vous et d’autres administrateurs.
 
-En tant qu'administrateur général ou de facturation, vous pouvez [réactiver l'abonnement](reactivate-your-subscription.md) et prolonger l’utilisation de Microsoft 365 avec toutes vos données client intactes. Si vous décidez de ne pas réactiver, [sauvegardez vos données](back-up-data-before-switching-plans.md).
+En tant qu'administrateur général ou de facturation, vous pouvez [réactiver l'abonnement](reactivate-your-subscription.md) et prolonger l’utilisation de Microsoft 365 avec toutes vos données client intactes. Si vous décidez de ne pas réactiver, [sauvegardez vos données](move-users-different-subscription.md).
 
 ### <a name="state-deleted"></a>État : Supprimé
   

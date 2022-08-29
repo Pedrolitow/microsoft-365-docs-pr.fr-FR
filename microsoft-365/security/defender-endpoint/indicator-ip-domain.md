@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab8ff3069a59c59f509396158c747cae35bccfe3
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: e7858fb525bbe55859897764f930251c2159e4e5
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301285"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326459"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les IP et URL/domaines
 
@@ -66,13 +66,13 @@ Il est important de comprendre les prérequis suivants avant de créer des indic
 > S’il existe des stratégies d’indicateur d’URL en conflit, le chemin d’accès le plus long est appliqué. Par exemple, la stratégie `https://support.microsoft.com/office` d’indicateur d’URL est prioritaire sur la stratégie `https://support.microsoft.com`d’indicateur d’URL.
 
 > [!NOTE]
-> Pour tous les autres processus, les scénarios de protection web tirent parti de la protection réseau pour l’inspection et l’application :
+> Pour les processus autres que Microsoft Edge et Internet Explorer, les scénarios de protection web tirent parti de la protection réseau pour l’inspection et l’application :
 >
-> - L’adresse IP est prise en charge pour les trois protocoles
-> - Seules les adresses IP uniques sont prises en charge (ni blocs CIDR ni plages d’adresses IP)
+> - L’adresse IP est prise en charge pour les trois protocoles (TCP, HTTP et HTTPS (TLS))
+> - Seules les adresses IP uniques sont prises en charge (pas de blocs CIDR ou de plages d’adresses IP) dans les indicateurs personnalisés
 > - Les URL chiffrées (chemin d’accès complet) ne peuvent être bloquées que sur les navigateurs internes (Internet Explorer, Edge)
-> - Les URL chiffrées (FQDN uniquement) peuvent être bloquées en dehors des navigateurs tiers (Internet Explorer, Edge)
-> - Des blocs de chemin d’URL complets peuvent être appliqués au niveau du domaine et à toutes les URL non chiffrées
+> - Les URL chiffrées (FQDN uniquement) peuvent être bloquées dans des navigateurs tiers (c’est-à-dire autres qu’Internet Explorer, Edge)
+> - Des blocs de chemin d’URL complets peuvent être appliqués pour les URL non chiffrées
 >
 > Il peut y avoir jusqu’à 2 heures de latence (généralement moins) entre le moment où l’action est effectuée et l’URL et l’adresse IP bloquées.
 

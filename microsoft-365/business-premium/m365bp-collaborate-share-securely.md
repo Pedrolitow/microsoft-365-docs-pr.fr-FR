@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/05/2022
+ms.date: 08/11/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble sur la façon de collaborer et de partager des fichiers et de communiquer en toute sécurité à l’aide de Teams dans Microsoft 365 Business Premium. Dans l’environnement fermé fourni par Teams, les fichiers et les communications sont exempts de cybermenaces et de cyberattaques.
-ms.openlocfilehash: 3538cc8a5e48969aa8cfba08ce5d438f9adfe774
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: 9149bb4c07573df5327e9748c1830291eff5f3e9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275693"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322868"
 ---
 # <a name="collaborate-and-share-securely"></a>Collaborer et partager de manière sécurisée
 

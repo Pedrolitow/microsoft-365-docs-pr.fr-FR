@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36b7703aeaf0fdf4ff30c9bd0dd1486ebe27f618
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: f02dc28eb3204922386d0fae26bc1191779641e6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923180"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327198"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender pour point de terminaison - Mobile Threat Defense
 
@@ -48,14 +48,14 @@ Microsoft Defender pour point de terminaison sur Android et iOS fournit les fonc
 |Web Protection|Anti-hameçonnage, blocage des connexions réseau non sécurisées et prise en charge des indicateurs personnalisés.|
 |Protection contre les programmes malveillants (Android uniquement)|Recherche d’applications malveillantes.|
 |Détection jailbreak (iOS uniquement)|Détection d’appareils jailbreakés.|
-|Gestion des menaces et des vulnérabilités (TVM) |Évaluation des vulnérabilités des appareils mobiles intégrés. Visitez cette [page](next-gen-threat-and-vuln-mgt.md) pour en savoir plus sur la gestion des menaces et des vulnérabilités dans Microsoft Defender pour point de terminaison. *Notez que sur iOS, seules les vulnérabilités de système d’exploitation sont prises en charge dans cette préversion.*|
-|Protection réseau *(préversion publique)*| Protection contre les menaces Wi-Fi non autorisées et les certificats non autorisés; possibilité d’autoriser la liste des certificats d’autorité de certification racine racine et privées dans Intune ; établir une confiance avec les points de terminaison.|
+|Gestion des vulnérabilités Microsoft Defender (MDVM) |Évaluation des vulnérabilités des appareils mobiles intégrés. Visitez cette [page](next-gen-threat-and-vuln-mgt.md) pour en savoir plus sur Gestion des vulnérabilités Microsoft Defender dans Microsoft Defender pour point de terminaison. *Notez que sur iOS, seules les vulnérabilités de système d’exploitation sont prises en charge dans cette préversion.*|
+|Protection réseau *(préversion publique)*| Protection contre les menaces Wi-Fi non autorisées et les certificats non autorisés; possibilité d’autoriser la liste des certificats d’autorité de certification racine racine et privés dans Intune ; établir une confiance avec les points de terminaison.|
 |Alertes unifiées|Alertes de toutes les plateformes dans la console de sécurité M365 unifiée|
 |Accès conditionnel, lancement conditionnel|Empêcher les appareils à risque d’accéder aux ressources d’entreprise. Les signaux de risque Defender pour point de terminaison peuvent également être ajoutés aux stratégies de protection des applications (MAM)|
 |Contrôles de confidentialité. En préversion (voir la note ci-dessous)|Configurez la confidentialité dans les rapports sur les menaces en contrôlant les données envoyées par Microsoft Defender pour point de terminaison. *Notez que les contrôles de confidentialité sont actuellement disponibles uniquement pour les appareils inscrits. Les contrôles pour les appareils non inscrits seront ajoutés ultérieurement*|
 |Intégration à Microsoft Tunnel|Peut s’intégrer à Microsoft Tunnel, une solution de passerelle VPN pour activer la sécurité et la connectivité dans une seule application. Disponible sur Android et désormais en disponibilité générale sur iOS également.|
 
-Toutes ces fonctionnalités sont disponibles pour les titulaires de licences Microsoft Defender pour point de terminaison. Pour plus d’informations, consultez [Les exigences en matière de licences](minimum-requirements.md#licensing-requirements).
+Toutes ces fonctionnalités sont disponibles pour Microsoft Defender pour point de terminaison titulaires de licence. Pour plus d’informations, consultez [Les exigences en matière de licences](minimum-requirements.md#licensing-requirements).
 
 
 ## <a name="overview-and-deploy"></a>Vue d’ensemble et déploiement
@@ -69,30 +69,30 @@ Le déploiement de Microsoft Defender pour point de terminaison sur mobile peut 
 ### <a name="deploy"></a>Déployer
 
 Le tableau suivant récapitule comment déployer Microsoft Defender pour point de terminaison sur Android et iOS. Pour obtenir une documentation détaillée, consultez 
-- [Vue d’ensemble de Microsoft Defender pour point de terminaison sur Android](microsoft-defender-endpoint-android.md) et
+- [Vue d’ensemble des Microsoft Defender pour point de terminaison sur Android](microsoft-defender-endpoint-android.md) et
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison iOS](microsoft-defender-endpoint-ios.md)
 
 **Android**
 
 |Type d’inscription     |Détails      |
 |--------------------|-------------|
-|Android Enterprise avec Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Déployer sur des appareils Android Entreprise inscrits](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Administrateur d’appareil avec Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Déployer sur des appareils inscrits par l’administrateur d’appareil](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Android Enterprise avec Intune Endpoint Manager unifiée (Microsoft Endpoint Manager)|[Déployer sur des appareils Android Entreprise inscrits](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
+|Administrateur d’appareil avec Intune Endpoint Manager unifiée (Microsoft Endpoint Manager)|[Déployer sur des appareils inscrits par l’administrateur d’appareil](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
 |Appareils BYOD OR non managés gérés par d’autres Gestionnaires de points de terminaison unifiés / Stratégie de protection des applications d’installation (MAM)|[Configurer les signaux de risque Defender dans la stratégie de protection des applications (MAM)](android-configure-mam.md)|
 
 **iOS**
 
 |Type d’inscription     |Détails      |
 |--------------------|-------------|
-|Appareils supervisés avec Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|1. [Déployer en tant qu’application du Store iOS](ios-install.md)<br/>2. [Configurer la protection web sans VPN pour les appareils iOS supervisés](ios-install.md#complete-deployment-for-supervised-devices)|
-|Appareils non supervisés (BYOD) inscrits auprès d’Intune UEM (Microsoft Endpoint Manager)|[Déployer en tant qu’application du Store iOS](ios-install.md)|
+|Appareils supervisés avec Intune Endpoint Manager unifiée (Microsoft Endpoint Manager)|1. [Déployer en tant qu’application du Store iOS](ios-install.md)<br/>2. [Configurer la protection web sans VPN pour les appareils iOS supervisés](ios-install.md#complete-deployment-for-supervised-devices)|
+|Appareils non supervisés (BYOD) inscrits auprès de Intune UEM (Microsoft Endpoint Manager)|[Déployer en tant qu’application du Store iOS](ios-install.md)|
 |Appareils BYOD OR non managés gérés par d’autres uems / Stratégie de protection des applications de configuration (MAM)|[Configurer les signaux de risque Defender dans la stratégie de protection des applications (MAM)](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Intégration des utilisateurs finaux
 
-- [Configurer l’intégration sans interaction tactile pour les appareils inscrits sur iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint) : les administrateurs peuvent configurer l’installation sans contact pour intégrer en mode silencieux Microsoft Defender pour point de terminaison sur les appareils iOS inscrits sans obliger l’utilisateur à ouvrir l’application. 
+- [Configurer l’intégration sans interaction tactile pour les appareils inscrits sur iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint) : les administrateurs peuvent configurer l’installation sans contact pour intégrer en mode silencieux Microsoft Defender pour point de terminaison sur les appareils iOS inscrits sans que l’utilisateur doive ouvrir l’application. 
 
-- [Configurer l’accès conditionnel pour appliquer l’intégration des utilisateurs](android-configure.md#conditional-access-with-defender-for-endpoint-on-android) : cela peut être appliqué pour garantir l’intégration des utilisateurs finaux à l’application Microsoft Defender pour point de terminaison après le déploiement. Regardez cette vidéo pour une démonstration rapide de la configuration de l’accès conditionnel avec les signaux de risque Defender pour point de terminaison. 
+- [Configurer l’accès conditionnel pour appliquer l’intégration des utilisateurs](android-configure.md#conditional-access-with-defender-for-endpoint-on-android) : cela peut être appliqué pour garantir que les utilisateurs finaux sont intégrés à l’application Microsoft Defender pour point de terminaison après le déploiement. Regardez cette vidéo pour une démonstration rapide de la configuration de l’accès conditionnel avec les signaux de risque Defender pour point de terminaison. 
 
   <br/>
 
@@ -114,7 +114,7 @@ Cela permet de réduire les problèmes potentiels qui peuvent survenir lors du d
 
 - Exécutez un test de détection de programmes malveillants sur un appareil Android : installez n’importe quelle application antivirus de test à partir de Google Play Store et vérifiez qu’elle est détectée par Microsoft Defender pour point de terminaison. Voici un exemple d’application qui peut être utilisé pour ce test : [Tester le virus](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). Notez que sur Android Entreprise avec un profil professionnel, seul le profil professionnel est pris en charge.
 
-- Exécutez un test d’hameçonnage : accédez à https://smartscreentestratings2.net microsoft Defender pour point de terminaison et vérifiez qu’il est bloqué. Notez que sur Android Entreprise avec un profil professionnel, seul le profil professionnel est pris en charge.
+- Exécuter un test d’hameçonnage : accédez à https://smartscreentestratings2.net et vérifiez qu’il est bloqué par Microsoft Defender pour point de terminaison. Notez que sur Android Entreprise avec un profil professionnel, seul le profil professionnel est pris en charge.
 
 - Les alertes apparaissent dans le tableau de bord : vérifiez que les alertes pour les tests de détection ci-dessus apparaissent sur la [console de sécurité](https://security.microsoft.com).
 

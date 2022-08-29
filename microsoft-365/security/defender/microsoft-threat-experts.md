@@ -15,15 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 7c39e6010015a6b645924aec04119b4e5e9c586b
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ab8689ffa5b557b77f7c88c7c4cde6f11ac14584
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276195"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328494"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>vue d’ensemble de Spécialistes des menaces Microsoft dans Microsoft 365
 
@@ -35,6 +36,9 @@ ms.locfileid: "67276195"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
+
+> [!NOTE]
+> Depuis août 2022, l’option Experts à la demande pour **consulter un expert en menaces** a été renommée **Ask Defender Experts**.
 
 Les notifications d’attaque de point de terminaison (précédemment appelées Spécialistes des menaces Microsoft - Notification d’attaque ciblée) sont un service de chasse aux menaces managée. Une fois que vous avez appliqué et accepté, vous recevrez des notifications d’attaque de point de terminaison de la part d’experts en menaces Microsoft, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation.
 
@@ -70,13 +74,22 @@ Sélectionnez **Demander aux experts Defender** directement à l’intérieur du
 - Clarifier les appareils suspects, les alertes ou les incidents et suivre les étapes suivantes si vous êtes confronté à un attaquant avancé
 - Déterminer les risques et les protections disponibles liés aux acteurs de menace, aux campagnes ou aux techniques d’attaquant émergentes
 
+> [!NOTE]
+> Depuis août 2022, l’option Experts à la demande pour **consulter un expert en menaces** a été renommée **Ask Defender Experts**.
+
 L’option **Demander aux experts Defender** est disponible à plusieurs endroits dans le portail :
 
-- <i>**Menu Actions de la page d’appareil**</i><BR>
-- <i>**Menu volant de la page d’inventaire des appareils**</i><BR>
-- <i>**Menu volant de la page Alertes**</i><BR>
-- <i>**Menu Actions de la page Incidents**</i><BR>
-- <i>**Page d’inventaire des incidents**</i><BR>
+- ***Menu Actions de la page d’appareil***
+
+![Capture d’écran de l’option de menu Ask Defender Experts dans le menu Action de la page Appareil dans le portail Microsoft 365 Defender.](../../media/mte/device-page-actions-menu.png)
+
+- ***Menu Actions de la page Alertes***
+
+![Capture d’écran de l’option de menu Ask Defender Experts dans le menu Action de la page Alertes dans le portail Microsoft 365 Defender.](../../media/mte/alerts-page-actions-menu.png)
+
+- ***Menu Actions de la page de fichiers***
+
+![Capture d’écran de l’option de menu Ask Defender Experts dans le menu Action de la page Incidents dans le portail Microsoft 365 Defender.](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > Si vous disposez d’un abonnement Premier Support mappé à votre licence Microsoft Defender pour Office 365, vous pouvez suivre l’état de vos cas d’experts à la demande via Microsoft Services Hub.

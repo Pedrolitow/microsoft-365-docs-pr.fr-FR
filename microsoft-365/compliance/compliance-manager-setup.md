@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft Purview, et configurez le test automatisé des actions. Gérez l’historique des utilisateurs et filtrez l’affichage de votre tableau de bord.
-ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 940396ad6334e646a37a359f4ed73345056f51ef
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634762"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357453"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -88,8 +88,7 @@ Le tableau ci-dessous présente les fonctions autorisées par chaque rôle dans 
 | **Lire les données mais ne peut pas les modifier**| Gestionnaire de conformité - Lecteur  | Lecteur Azure AD Global, Lecteur Sécurité |
 | **Modifier les données**| Contribution du Gestionnaire de conformité | Administrateur de conformité |
 | **Modifier les résultats des tests**| Gestionnaire de conformité - Analyste | Administrateur de conformité |
-| **Gérer les évaluations et les données de modèle et de locataire**| Administration du Gestionnaire de conformité | Administrateur de conformité, administrateur des données de conformité, administrateur de sécurité  |
-| **Affecter des utilisateurs**| Administrateur général | Administrateur général |
+| **Gérer les évaluations, les modèles et les données de locataire ; affecter des actions d’amélioration**| Administration du Gestionnaire de conformité | Administrateur de conformité, administrateur des données de conformité, administrateur de sécurité  |
 
 ## <a name="start-a-premium-assessments-trial"></a>Démarrer une version d’évaluation Premium
 

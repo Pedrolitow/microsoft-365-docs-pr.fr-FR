@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft Purview pour vous aider à répondre aux exigences des réglementations et des certifications qui sont importantes pour votre organisation.
-ms.openlocfilehash: 6eeb77e1e5d6adea3489764626910e63ce443a2d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 187820e789f376b990414bb7208b1eaa004a4be2
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633562"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357331"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -212,7 +212,7 @@ Après avoir sélectionné **Vérifier la mise à jour dans** la page détails d
 - Vue d’ensemble expliquant la mise à jour
 - Détails spécifiques sur les modifications, notamment l’impact sur votre score de conformité, la progression vers l’achèvement de l’évaluation et le nombre spécifique de modifications apportées aux actions d’amélioration et aux contrôles.
 
-La sélection du lien **Modèle mis à jour** télécharge un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du lien Modèle **actuel** télécharge un fichier du modèle existant sans les modifications.
+La sélection de la commande **Modèle mis à jour** télécharge un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection de la commande **Modèle actuel** télécharge un fichier du modèle existant sans les mises à jour.
 
 Pour accepter la mise à jour et apporter les modifications à votre évaluation, sélectionnez **Accepter la mise à jour**. Les modifications acceptées sont permanentes.
 

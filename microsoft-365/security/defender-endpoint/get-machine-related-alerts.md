@@ -1,7 +1,7 @@
 ---
-title: API Obtenir les alertes associées à l’ordinateur
-description: Découvrez comment utiliser l’API Obtenir les alertes associées à l’ordinateur. Cette API vous permet de récupérer toutes les alertes liées à un appareil spécifique dans Microsoft Defender for Endpoint.
-keywords: api, api de graphique, api pris en charge, obtenir, appareils, associés, alertes
+title: Obtenir l’API d’alertes liées à la machine
+description: Découvrez comment utiliser l’API d’alertes liées à l’ordinateur. Cette API vous permet de récupérer toutes les alertes liées à un appareil spécifique dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, appareils, connexes, alertes
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 49cc0fca3ae7617b86ab079daace92eb3790db94
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: d5a7673ef10e374a830c5410ec96a057d150b36d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283508"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326516"
 ---
-# <a name="get-machine-related-alerts--api"></a>API Obtenir les alertes associées à l’ordinateur
+# <a name="get-machine-related-alerts--api"></a>Obtenir l’API d’alertes liées à la machine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,25 +38,25 @@ ms.locfileid: "61283508"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère toutes les [alertes associées](alerts.md) à un appareil spécifique.
+Récupère toutes les [alertes](alerts.md) liées à un appareil spécifique.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez interroger sur les appareils la dernière mise à jour en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez interroger sur les appareils mis à jour pour la dernière fois en fonction de votre période de rétention configurée.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Alert.Read.All|« Lire toutes les alertes »
-Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
+Application|Alert.Read.All|« Lire toutes les alertes »
+Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire) | Alert.Read | « Lire les alertes »
 Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données ». Pour plus d’informations sur les autorisations, voir [Créer et gérer des rôles.](user-roles.md)
-> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils. Pour plus d’informations sur les paramètres de groupe d’appareils, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données ». Pour plus d’informations sur les autorisations, consultez [Créer et gérer des rôles](user-roles.md).
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils. Pour plus d’informations sur les paramètres de groupe d’appareils, consultez [Créer et gérer des groupes d’appareils](machine-groups.md).
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -68,7 +68,7 @@ GET /api/machines/{id}/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -76,4 +76,4 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’appareil existe : 200 OK avec la liste [des](alerts.md) entités d’alerte dans le corps. Si l’appareil est in trouvé : 404 In trouvé.
+En cas de réussite et d’appareil : 200 OK avec la liste des entités [d’alerte](alerts.md) dans le corps. Si l’appareil est introuvable : 404 Introuvable.

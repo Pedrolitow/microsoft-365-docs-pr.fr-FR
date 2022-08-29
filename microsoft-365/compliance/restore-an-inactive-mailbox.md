@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Découvrez comment restaurer (ou fusionner) le contenu d’une boîte aux lettres inactive vers une boîte aux lettres existante.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c1a976013f522e45b4e96d6b28653fa860fe16f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b12df38ff1cf9ed5ffef748ea21a86aca742e3c5
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629220"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359555"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurer une boîte aux lettres inactive
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Une boîte aux lettres inactive (qui est un type de boîte aux lettres supprimée de manière réversible) est utilisée pour conserver l’adresse e-mail d’un ancien employé après son départ de votre organisation. Si un autre employé assume les responsabilités de l'employé qui est parti ou si ce dernier réintègre votre organisation, deux méthodes vous permettent de mettre à disposition le contenu de la boîte aux lettres inactive :
 

@@ -8,31 +8,31 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 04/11/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: e2e56b931dd7ae26fa5881036f4cf208b66922d6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2fbe3a21762f6bf048d5f35485a359389df93ce2
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950808"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315983"
 ---
 # <a name="test-your-intune-application-on-test-base"></a>Tester votre application Intune sur la base de test 
   > [!Note] 
   > Ce guide vous guidera pour charger votre package de format intunewin dans la base de test. Pour obtenir des instructions générales sur le chargement du package de base de test, reportez-vous à ce [document](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9).
 
-## <a name="intunewin-upload-flow"></a>Intunewin Télécharger Flow
+## <a name="intunewin-upload-flow"></a>Flux de chargement Intunewin
 Afin d’activer davantage l’utilisation commerciale, Test Base a commencé à prendre en charge le format intunewin pour les professionnels de l’informatique qui gèrent les applications pour leurs applications dans Intune en tant que format de package d’intégration standard. Le flux de chargement intunewin offre l’expérience permettant aux professionnels de l’informatique de réutiliser leurs packages de format intunewin, qui contiennent les applications qu’ils ont déployées sur leurs appareils finaux via MEM/Intune pour intégrer rapidement leurs applications et tester les configurations sur La base de test. 
 
-**Configuration requise**
+**Conditions préalables**
   - Actuellement, Test Base prend en charge la synchronisation via le même abonnement entre le compte Intune et le compte de base de test (vous n’avez pas besoin d’un compte Intune pour charger votre package Intunewin. Toutefois, si vous souhaitez synchroniser la configuration Intune pour les applications correspondantes du fichier Intunewin à partir de Intune, vous devez vous assurer que votre Intune  est créé sous le même abonnement que votre compte de base de test).
   - Packages Intunewin à charger. 
 
-**Télécharger Flow de fichiers Intunwin (synchronisées avec Intune compte)** <br/>
+**Flux de chargement de fichier Intunwin (synchronisé avec Intune compte)** <br/>
 En tant que client Intune qui dispose d’un package Intune, qui a déjà été intégré à Intune portail. Le client peut intégrer le package intunewin (contenant une application avec/sans dépendances d’applications préinstalles gérées dans Intune) au service de base de test. (via Intune compte, qui dispose de l’autorisation appropriée pour synchroniser les informations d’application Intune).
 
 **Étape de préparation**
@@ -45,18 +45,18 @@ En tant que client Intune qui dispose d’un package Intune, qui a déjà été 
 
 
 **Étape 1 : Définir le contenu**
-1. Télécharger le package intunewin que vous choisissez.
+1. Chargez le package intunewin que vous choisissez.
 2. Accordez le jeton en cliquant sur le lien ci-dessous « Accorder le jeton et sélectionner l’application ».
 3. Après la synchronisation automatique avec votre compte Intune, vous êtes répertorié avec l’application de vos applications sous votre compte Intune. Choisissez l’application correspondant à votre package Intunewin chargé, puis cliquez sur « Sélectionner ».
     
     > [!div class="mx-imgBorder"] 
-    > ![Télécharger le package Intune](Media/testintuneapplication02.png) 
+    > ![Charger le package Intune](Media/testintuneapplication02.png) 
 
 
 5. Dans la page Étape 1, vous verrez les dépendances répertoriées dans la section Dépendances. Vous pouvez choisir de charger le fichier d’installation de la dépendance ou de le supprimer de cette étape (si vous envisagez de gérer la dépendance à l’étape 3 en fournissant automatiquement les fichiers binaires associés). Les dépendances sélectionnées dans cette section seront préinstallées de la même façon qu’elles seront installées via Intune.
     
     > [!div class="mx-imgBorder"] 
-    > ![Télécharger package de dépendances](Media/testintuneapplication03.png) 
+    > ![Charger le package de dépendances](Media/testintuneapplication03.png) 
 
 
 **Étape 2 : Configurer le test**
@@ -85,7 +85,7 @@ En tant que client Intune qui dispose d’un package Intune, qui a déjà été 
 Passez en revue la configuration après laquelle le package a pu être publié.<br/><br/>
 
 
-**Télécharger Flow de fichier Intunwin (impossible de synchroniser avec Intune compte)** <br/>
+**Flux de chargement de fichier Intunwin (impossible de synchroniser avec Intune compte)** <br/>
 En tant que client de base de test disposant d’un package intunewin autonome. Le client peut intégrer le package intunewin (contenant une application avec/sans dépendances d’applications préinstallées gérées dans Intune) sans avoir besoin d’obtenir l’autorisation accordée sur Intune compte pour terminer le processus d’intégration.
 
 **Étape de préparation**
@@ -98,7 +98,7 @@ En tant que client de base de test disposant d’un package intunewin autonome. 
 
 
 **Étape 1 : Définir le contenu**
-1. Télécharger le package intunewin.
+1. Chargez le package intunewin.
 2. Spécifiez toutes les informations en fonction de vos préférences.
 
 

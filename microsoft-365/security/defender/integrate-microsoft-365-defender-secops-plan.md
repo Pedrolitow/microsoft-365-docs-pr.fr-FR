@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8c69e92390e6ed6515be6f399703124ece99cc39
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 72535a88f6718724a4d87774d393a4ef0c6955a8
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664015"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344456"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Étape 1. Planifier la préparation des opérations Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Quelle que soit la maturité actuelle de vos opérations de sécurité, il est important que vous vous aligniez sur votre Centre des opérations de sécurité (SOC). Bien qu’il n’existe aucun modèle unique adapté à chaque organisation, certains aspects sont plus courants que d’autres.
@@ -50,7 +50,7 @@ Le SOC est la première ligne de défense contre les événements et incidents d
 
 ## <a name="centralize-monitoring-and-logging-of-your-organizations-security-sources"></a>Centraliser la surveillance et la journalisation des sources de sécurité de votre organisation
 
-En règle générale, la fonction principale de l’équipe SOC est de s’assurer que tous les appareils de sécurité tels que les pare-feu, les systèmes de prévention des intrusions, les systèmes de protection contre la perte de données, les systèmes Gestion des menaces et des vulnérabilités et les systèmes d’identité fonctionnent correctement et sont surveillés. Les équipes SOC travailleront avec les opérations réseau plus larges telles que les identités, les DevOps, le cloud, les applications, la science des données et d’autres équipes commerciales pour s’assurer que l’analyse des informations de sécurité est centralisée et sécurisée. En outre, l’équipe SOC est responsable de la gestion des journaux des données dans des formats utilisables et lisibles, ce qui peut inclure l’analyse et la normalisation de formats disparates.
+En règle générale, la fonction principale de l’équipe SOC est de s’assurer que tous les appareils de sécurité tels que les pare-feu, les systèmes de prévention des intrusions, les systèmes de protection contre la perte de données, les systèmes de gestion des vulnérabilités et les systèmes d’identité fonctionnent correctement et sont surveillés. Les équipes SOC travailleront avec les opérations réseau plus larges telles que l’identité, DevOps, le cloud, les applications, la science des données et d’autres équipes commerciales pour s’assurer que l’analyse des informations de sécurité est centralisée et sécurisée. En outre, l’équipe SOC est responsable de la gestion des journaux des données dans des formats utilisables et lisibles, ce qui peut inclure l’analyse et la normalisation de formats disparates.
 
 ## <a name="establish-red-blue-and-purple-team-operational-readiness"></a>Établir la préparation opérationnelle de l’équipe Rouge, Bleu et Violet
 

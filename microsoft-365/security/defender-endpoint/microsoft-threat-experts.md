@@ -2,7 +2,7 @@
 title: Spécialistes des menaces Microsoft
 ms.reviewer: ''
 description: Spécialistes des menaces Microsoft fournit une couche supplémentaire d’expertise pour Microsoft Defender pour point de terminaison.
-keywords: service de chasse aux menaces managée, repérage des menaces managées, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft, notification d’attaque de point de terminaison, notification d’attaque de point de terminaison
+keywords: service de repérage des menaces managées, repérage des menaces managées, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft, notification d’attaque de point de terminaison, notification d’attaque de point de terminaison, experts Ask Defender
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9f612e79eaed1403592668feae1144aab7f6fddf
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 907f69bc081033002c45cd37b690e174d0b530ed
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280738"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323957"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -34,6 +34,9 @@ ms.locfileid: "67280738"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> Depuis août 2022, l’option Experts à la demande pour **consulter un expert en menaces** a été renommée **Ask Defender Experts**.
 
 Spécialistes des menaces Microsoft est un service de chasse aux menaces managée qui fournit à vos centres d’opérations de sécurité (SOC) une surveillance et une analyse de niveau expert pour les aider à s’assurer que les menaces critiques dans vos environnements uniques ne sont pas manquées.
 
@@ -73,12 +76,22 @@ Les clients peuvent faire appel à nos experts en sécurité directement à part
 - Clarifier le comportement suspect des appareils et les étapes suivantes si vous êtes confronté à un attaquant avancé
 - Déterminer les risques et la protection concernant les acteurs de menace, les campagnes ou les techniques émergentes des attaquants
 
+> [!NOTE]
+> Depuis août 2022, l’option Experts à la demande pour **consulter un expert en menaces** a été renommée **Ask Defender Experts**.
+
 L’option **Demander aux experts Defender** est disponible à plusieurs endroits dans le portail pour vous permettre d’interagir avec des experts dans le contexte de votre enquête :
 
-- ***Menu Aide et support***
 - ***Menu Actions de la page d’appareil***
+
+![Capture d’écran de l’option de menu Ask Defender Experts dans le menu Action de la page Appareil dans le portail Microsoft 365 Defender.](../../media/mte/device-page-actions-menu.png)
+
 - ***Menu Actions de la page Alertes***
+
+![Capture d’écran de l’option de menu Ask Defender Experts dans le menu Action de la page Alertes dans le portail Microsoft 365 Defender.](../../media/mte/alerts-page-actions-menu.png)
+
 - ***Menu Actions de la page de fichiers***
+
+![Capture d’écran de l’option de menu Ask Defender Experts dans le menu Action de la page Incidents dans le portail Microsoft 365 Defender.](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > Si vous souhaitez suivre l’état de vos cas d’experts à la demande par le biais de Microsoft Services Hub, contactez votre gestionnaire de compte customer success.

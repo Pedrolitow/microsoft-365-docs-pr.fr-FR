@@ -1,7 +1,7 @@
 ---
 title: Répertorier les logiciels
 description: Récupère une liste d’inventaire logiciel
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, inventaire logiciel, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
+keywords: api, api graphe, api prises en charge, obtenir, lister, fichier, informations, inventaire logiciel, api de gestion des menaces & vulnérabilité, api de gestion des vulnérabilités Microsoft Defender pour point de terminaison api tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f2db10e24212808253e197c562468c03f3ae293
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e58abcb2f7e3f7432d3c855422d07182020596f9
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300897"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342874"
 ---
-# <a name="list-software-inventory-api"></a>API d’inventaire de logiciels de liste
+# <a name="list-software-inventory-api"></a>Répertorier l’API d’inventaire logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,16 +38,16 @@ ms.locfileid: "61300897"
 ## <a name="api-description"></a>Description de l’API
 
 Récupère l’inventaire logiciel de l’organisation.
-<br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
-<br>Opérateurs pris en charge par OData :
-<br>```$filter``` on:  ```id``` , et les ```name``` ```vendor``` propriétés.
+<br>Prend [en charge les requêtes OData V4](https://www.odata.org/documentation/).
+<br>Opérateurs OData pris en charge :
+<br>```$filter``` on:  ```id```, ```name```et ```vendor``` properties.
 <br>```$top``` avec une valeur maximale de 10 000.
 <br>```$skip```.
-<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+<br>Consultez des exemples dans les [requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -64,7 +64,7 @@ GET /api/Software
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -72,7 +72,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec l’inventaire logiciel dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec l’inventaire logiciel dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -109,5 +109,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire logiciel de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

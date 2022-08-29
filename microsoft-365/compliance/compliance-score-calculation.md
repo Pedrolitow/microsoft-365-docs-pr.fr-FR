@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Découvrez comment le Gestionnaire de conformité Microsoft Purview calcule un score personnalisé en fonction des actions prises pour résoudre les risques et améliorer votre posture de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a33cbe9c4ea5b12ab0fec40068ba7dcd2f561e4e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 177f3eb5a16da6541c2331d68f4d2a3b8cf215ac
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635674"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357397"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
 
@@ -33,15 +33,11 @@ ms.locfileid: "66635674"
 
 Le tableau de bord du Gestionnaire de conformité affiche votre score de conformité global. Ce score mesure votre progression dans l’exécution des actions d’amélioration recommandées dans les contrôles. Votre score peut vous aider à comprendre votre posture de conformité actuelle. Il peut également vous aider à hiérarchiser les actions en fonction de leur potentiel de réduction des risques.
 
-Une valeur de score est affectée à trois niveaux :
+Une valeur de score est affectée à ces niveaux :
 
-1. **Score d’action d’amélioration** : chaque action a un impact différent sur votre score en fonction du risque potentiel impliqué
+1. **Action d’amélioration** : chaque action a un impact différent sur votre score en fonction du risque potentiel impliqué. Pour plus [d’informations, consultez les types d’actions et les points](#action-types-and-points) ci-dessous.
 
-2. **Score de contrôle** : ce score est la somme des points gagnés en effectuant des actions d’amélioration dans le contrôle. Cette somme est appliquée dans son intégralité à votre score de conformité global lorsque le contrôle remplit les deux conditions suivantes :
-    - **L’état d’implémentation** est égal **à Implémentation implémentée** ou **Autre implémentation**, et
-    - **Résultat du test** égal à **Passé**.
-
-3. **Score d’évaluation** : ce score est la somme de vos scores de contrôle. Il est calculé à l’aide de scores d’action. Chaque action Microsoft et chaque action d’amélioration gérée par votre organisation sont comptées une seule fois, quelle que soit la fréquence à laquelle elle est référencée dans un contrôle.
+2. **Évaluation** : ce score est calculé à l’aide des scores d’action d’amélioration. Chaque action Microsoft et chaque action d’amélioration gérée par votre organisation sont comptées une seule fois, quelle que soit la fréquence à laquelle elle est référencée dans un contrôle.
 
 Le score de conformité global est calculé à l’aide de scores d’action, où chaque action Microsoft est comptée une fois, chaque action technique que vous gérez est comptée une fois et chaque action non technique que vous gérez est comptée une fois par groupe. Cette logique est conçue pour fournir la comptabilité la plus précise de la façon dont les actions sont implémentées et testées dans votre organisation. Vous remarquerez peut-être que votre score de conformité global peut différer de la moyenne de vos scores d’évaluation. En savoir plus ci-dessous sur la [façon dont les actions sont notées](#action-types-and-points).
 
@@ -67,8 +63,8 @@ En savoir plus sur [le degré de sécurisation et son fonctionnement](../securit
 
 Le Gestionnaire de conformité effectue le suivi de deux types d’actions :
 
-1. **Vos actions d’amélioration** : actions gérées par votre organisation.
-2. **Actions Microsoft** : actions gérées par Microsoft.
+1. **Vos actions d’amélioration** : gérées par votre organisation
+2. **Actions Microsoft** : gérées par Microsoft
 
 Les deux types d’actions ont des points qui comptent pour votre score global une fois terminé.
 

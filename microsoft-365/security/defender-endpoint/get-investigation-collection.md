@@ -1,7 +1,7 @@
 ---
-title: API Enquêtes de liste
-description: Utilisez cette API pour créer des appels liés à l’utilisation de la collection Investigations
-keywords: api, api de graphique, api pris en charge, collection Investigations
+title: List Investigations API
+description: Utiliser cette API pour créer des appels liés à la collecte d’investigations
+keywords: api, api graphe, api prises en charge, collection Investigations
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f5a37d8cbbaeca3dd14c51e1d5c6adcefabf2db8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 746cf78bce54651cc24dd07a90c5fc11772903d2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284192"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325988"
 ---
-# <a name="list-investigations-api"></a>API Enquêtes de liste
+# <a name="list-investigations-api"></a>List Investigations API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,36 +39,36 @@ ms.locfileid: "61284192"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère une collection [d’enquêtes.](investigation.md)
+Récupère une collection [d’investigations](investigation.md).
 
-Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
+Prend [en charge les requêtes OData V4](https://www.odata.org/documentation/).
 
-La requête OData est prise en charge sur `$filter` : , et les `startTime` `id` `state` `machineId` `triggeringAlertId` propriétés.
+La requête OData `$filter` est prise en charge sur : `startTime`, `id`, `state``machineId` et `triggeringAlertId` les propriétés.
 <br>```$stop``` avec une valeur maximale de 10 000
 <br>```$skip```
 
-Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+Consultez des exemples dans [les requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>Limites
 
-1. La taille maximale de page est de 10 000.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. La taille maximale de la page est de 10 000.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Alert.Read.All|« Lire toutes les alertes »
-Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
+Application|Alert.Read.All|« Lire toutes les alertes »
+Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire)|Alert.Read|« Lire les alertes »
 Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -80,7 +80,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -88,13 +88,13 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une collection d’entités [Investigations.](investigation.md)
+Si elle réussit, cette méthode renvoie 200, code de réponse OK avec une collection d’entités [Investigations](investigation.md) .
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de demande d’obtenir toutes les enquêtes :
+Voici un exemple de demande d’obtention de toutes les investigations :
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/investigations

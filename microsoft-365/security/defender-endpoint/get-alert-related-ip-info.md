@@ -1,8 +1,7 @@
 ---
-title: Obtenir les informations d’IP associées aux alertes
-description: Récupérez toutes les IP associées à une alerte spécifique à l’aide de Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, obtenir des informations d’alerte, informations d’alerte, adresse IP associée
-search.product: eADQiWindows 10XVcnh
+title: Obtenir des informations sur les adresses IP liées aux alertes
+description: Récupérez toutes les adresses IP associées à une alerte spécifique à l’aide de Microsoft Defender pour point de terminaison.
+keywords: api, API de graphe, api prises en charge, obtention d’informations d’alerte, informations d’alerte, adresse IP associée
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 00761e07dd0018236e58aaa5a36efec0cc16ebd5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e2988e7c4c88e5f7727c132db2c8f5e6e3aba2bb
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168209"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323198"
 ---
-# <a name="get-alert-related-ips-information-api"></a>API d’informations sur l’accès aux informations liées aux alertes
+# <a name="get-alert-related-ips-information-api"></a>Obtenir l’API d’informations sur les adresses IP liées aux alertes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -41,16 +40,16 @@ ms.locfileid: "61168209"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère toutes les IP associées à une alerte spécifique.
+Récupère toutes les adresses IP associées à une alerte spécifique.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez interroger les alertes mises à jour pour la dernière fois en fonction de votre période de rétention configurée.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -60,8 +59,8 @@ Déléguée (compte professionnel ou scolaire)|Ip.Read.All|« Lire les profils d
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (pour plus d’informations, voir [Créer et gérer des rôles)](user-roles.md)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes [d’appareils)](machine-groups.md)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,7 +72,7 @@ GET /api/alerts/{id}/ips
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -81,13 +80,13 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si une alerte et une adresse IP existent : 200 - OK. Si l’alerte est in trouvée - 404 - In trouvé.
+En cas de réussite et d’alerte et si une adresse IP existe - 200 OK. Si l’alerte est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de la demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/ips

@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Créez et gérez des boîtes aux lettres inactives qui conservent le contenu des boîtes aux lettres supprimées dans Microsoft 365.
-ms.openlocfilehash: 15a9db1099eb687195d5c54b12d5bfca9a8c6f22
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c4a4719d34b7e1097e43152644d3d0bedf53b293
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634618"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360301"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
+
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Les boîtes aux lettres inactives vous permettent de conserver les courriers électroniques des anciens employés après leur départ de votre organisation et sont accessibles par des personnes autorisées qui ont reçu [des autorisations eDiscovery pour des raisons légales](assign-ediscovery-permissions.md) ou de conformité. Par exemple, les administrateurs, les agents de conformité et les gestionnaires d’enregistrements qui peuvent ensuite utiliser la recherche de contenu pour rechercher et exporter le contenu d’une boîte aux lettres inactive. Les boîtes aux lettres inactives ne peuvent pas recevoir de courriers, et n'apparaissent pas dans le carnet d'adresses partagé de votre organisation ou d'autres listes.
 
@@ -38,7 +40,7 @@ Pour plus d’informations sur les boîtes aux lettres inactives, voir [En savoi
 
 Rendre une boîte aux lettres inactive nécessite une conservation de la boîte aux lettres, puis la suppression de la boîte aux lettres ou du compte d’utilisateur correspondant.
 
-Pour rendre une boîte aux lettres inactive, vous devez lui attribuer une licence Exchange Online Plan 2 (ou une licence plan 1 Exchange Online avec une licence de module complémentaire Archivage Exchange Online) afin qu’une conservation puisse être appliquée à la boîte aux lettres avant sa suppression. Une fois le compte d’utilisateur supprimé, toute licence Exchange Online associée au compte d’utilisateur sera disponible pour être attribuée à un nouvel utilisateur.
+Pour rendre une boîte aux lettres inactive, elle doit être [concédée sous licence correctement](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#email-archiving) afin qu’une conservation puisse être appliquée à la boîte aux lettres avant sa suppression. Une fois le compte d’utilisateur supprimé, toute licence Exchange Online associée au compte d’utilisateur sera disponible pour être attribuée à un nouvel utilisateur.
 
 Nous vous recommandons d’utiliser la rétention Microsoft 365 pour appliquer la conservation sur la boîte aux lettres. D’autres méthodes sont abordées dans [En savoir plus sur les boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md).
 
@@ -64,7 +66,7 @@ Pour afficher la liste des boîtes aux lettres inactives de votre organisation :
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification d’un Administrateur général ou d’un compte d’administrateur de conformité dans votre organisation.
 
-2. Dans le volet de navigation gauche, **sélectionnez Afficher tout**, puis sélectionnez Stratégies de **rétention de la gestion** >  du cycle de vie des **données**.
+2. Dans le volet de navigation gauche, sélectionnez **Gestion du cycle de vie des données** Stratégies de **rétention** >  **Microsoft 365** > .
 
 3. Sélectionnez l’option **Boîte aux lettres inactive** :
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f8726c006bac66b18d0e8359fe391a5d6e39ad69
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: d16be2d9a072b43fba591a65b78eaa3111b25f65
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306427"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325774"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -165,7 +165,7 @@ S’il existe des stratégies IoC de fichier en conflit avec le même type d’a
 > [!WARNING]
 > La gestion des conflits de stratégie pour les fichiers et les certificats diffère de la gestion des conflits de stratégie pour les domaines/URL/adresses IP.
 
-Les fonctionnalités d’application vulnérables de la gestion des menaces et des vulnérabilités utilisent les IOC de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
+les fonctionnalités d’application vulnérables de bloc de Gestion des vulnérabilités Microsoft Defender utilisent les E/S de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
 
 ### <a name="examples"></a>Exemples
 

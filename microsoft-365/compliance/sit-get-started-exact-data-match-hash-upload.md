@@ -17,16 +17,21 @@ search.appverid:
 - MET150
 description: Hachez et chargez la table source d’informations sensibles pour que les données exactes correspondent aux types d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e443b583fa3db007d3c2448dca29b5795dd17ad2
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641293"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360038"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Hacher et charger la table de source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles
 
 Cet article vous montre comment hacher et charger votre table source d’informations sensibles.
+
+## <a name="applies-to"></a>S’applique à
+
+- [Créer une nouvelle expérience de type de données exactes correspondant à des informations sensibles](sit-create-edm-sit-unified-ux-workflow.md)
+- [Créer une expérience classique de type de données exactes correspondant à des informations sensibles](sit-create-edm-sit-classic-ux-workflow.md)
 
 ## <a name="hash-and-upload-the-sensitive-information-source-table"></a>Hachage et chargement de la table source d’informations sensibles
 
@@ -48,7 +53,7 @@ Si vous ne souhaitez pas exposer votre fichier de table source d’informations 
 > [!NOTE]
 > Si votre organisation a configuré [la clé client pour Microsoft 365 au niveau du locataire, la](customer-key-overview.md) correspondance exacte des données utilise automatiquement ses fonctionnalités de chiffrement. Cette offre est disponible uniquement pour les clients sous licence E5 dans le cloud commercial.
 
-### <a name="best-practices"></a>Meilleures pratiques
+### <a name="best-practices"></a>Bonnes pratiques
 
 Séparez les processus de hachage et de chargement des données sensibles afin de pouvoir isoler plus facilement les problèmes du processus.
 
@@ -80,6 +85,9 @@ Si l’outil indique une incompatibilité dans le nombre de colonnes, cela peut 
   - votre fichier d’élément sensible au format .csv, .tsv ou pipe (|), **PatientRecords.csv** dans nos exemples
   - les fichiers de hachage et de sel de sortie créés dans cette procédure
   - Le nom du magasin de données provenant du fichier **edm.xml**, ici `PatientRecords`
+
+> [!IMPORTANT]
+Installez [l’agent de chargement EDM](#links-to-edm-upload-agent-by-subscription-type) dans un dossier personnalisé afin que vous n’ayez pas besoin d’autorisations d’administrateur. Si vous l’installez dans les *fichiers* de programme par défaut, des autorisations d’administrateur sont requises.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
 
@@ -233,6 +241,10 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 > [!NOTE]
 > Pour automatiser le processus de hachage et de chargement une fois que vous l’avez créé la première fois, consultez [Actualiser votre fichier de table source d’informations sensibles correspondant exactement aux données](sit-use-exact-data-refresh-data.md).
 
-## <a name="next-step"></a>Étape suivante
+## <a name="next-steps"></a>Prochaines étapes
 
-- [Créer des données exactes correspondant au type d’informations sensibles/au package de règles](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
+- **Pour une nouvelle expérience** : [tester un type d’informations sensibles correspondant exactement aux données](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+
+ou
+
+- **Pour une expérience classique** : [Créer un package de type/règle d’informations sensibles correspondant exactement aux données](sit-get-started-exact-data-match-create-rule-package.md)

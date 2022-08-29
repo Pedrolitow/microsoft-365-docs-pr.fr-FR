@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité du type d’informations sensibles du numéro de taxe sur la valeur ajoutée en France.
-ms.openlocfilehash: 782030e563b59540b721ecfd40ee7470a2aaaa87
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 0bec456bdfb4c41f4ab9c3cf4b33e99d7a91b9d4
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996640"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367244"
 ---
 # <a name="france-value-added-tax-number"></a>Numéro de taxe sur la valeur ajoutée en France
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 

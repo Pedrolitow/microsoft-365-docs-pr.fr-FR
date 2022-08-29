@@ -20,19 +20,19 @@ ms.topic: article
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: a5ca2613028e892229da1888c6176cb729e0cf1b
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 001bbea4a2bfcf04227e10a509fc4297aaf4b7ce
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469577"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326274"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -54,7 +54,7 @@ Pour plus d’informations sur la configuration des règles de réduction de la 
 
 ## <a name="assess-rule-impact-before-deployment"></a>Évaluer l’impact des règles avant le déploiement
 
-Vous pouvez évaluer la façon dont une règle de réduction de la surface d’attaque peut affecter votre réseau en ouvrant la recommandation de sécurité pour cette règle dans [Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/#tvm).
+Vous pouvez évaluer la façon dont une règle de réduction de la surface d’attaque peut affecter votre réseau en ouvrant la recommandation de sécurité pour cette règle dans [Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/).
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="La recommandation ASR" lightbox="images/asrrecommendation.png":::
 
@@ -77,12 +77,12 @@ Le mode d’avertissement permet à votre organisation de mettre en place des r�
 Le mode d’avertissement est pris en charge sur les appareils exécutant les versions suivantes de Windows :
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809) ou version ultérieure
-- Windows 11
+- Windows 11
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809) ou ultérieure
 
-Antivirus Microsoft Defender doit s’exécuter avec une protection en temps réel en [mode Actif](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
+L’antivirus Microsoft Defender doit s’exécuter avec une protection en temps réel en [mode Actif](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
-Assurez-vous également que [Antivirus Microsoft Defender et les mises à jour anti-programme malveillant](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) sont installées.
+Assurez-vous également que les [mises à jour antivirus et anti-programme malveillant Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) sont installées.
 
 - Condition de mise en production minimale de la plateforme : `4.18.2008.9`
 - Condition de mise en production minimale du moteur : `1.1.17400.5`
@@ -117,26 +117,26 @@ Par exemple, supposons qu’un événement de réduction de la surface d’attaq
 
 Pour plus d’informations sur la chasse avancée, consultez [La chasse proactive contre les menaces avec la chasse avancée](advanced-hunting-overview.md).
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>Fonctionnalités de réduction de la surface d’attaque dans Windows versions
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>Fonctionnalités de réduction de la surface d’attaque dans les versions de Windows
 
 Vous pouvez définir des règles de réduction de la surface d’attaque pour les appareils qui exécutent l’une des éditions et versions suivantes de Windows :
 
 - Windows 10 Professionnel, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) ou ultérieure
 - Windows 10 Entreprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) ou ultérieure
-- Windows Server, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou ultérieure
+- Windows Server, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
 
   >[!NOTE]
-  >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions fournies dans [Intégrer des serveurs Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne.
+  >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions fournies dans [les serveurs Windows intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne.
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de [licence Windows E5](/windows/deployment/deploy-enterprise-licenses), si vous avez Windows E5, vous bénéficiez de fonctionnalités de gestion avancées. Les fonctionnalités avancées disponibles uniquement dans Windows E5 sont les suivantes :
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de [licence Windows E5](/windows/deployment/deploy-enterprise-licenses), si vous disposez de Windows E5, vous bénéficiez de fonctionnalités de gestion avancées. Les fonctionnalités avancées , disponibles uniquement dans Windows E5, sont les suivantes :
 
 - Surveillance, analytique et flux de travail disponibles dans [Defender pour point de terminaison](microsoft-defender-endpoint.md)
 - Fonctionnalités de création de rapports et de configuration dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professional ou Windows E3. Toutefois, si vous disposez de ces licences, vous pouvez utiliser observateur d'événements et Antivirus Microsoft Defender journaux pour passer en revue vos événements de règle de réduction de la surface d’attaque.
+Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3. Toutefois, si vous disposez de ces licences, vous pouvez utiliser observateur d'événements et les journaux de l’Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Examiner les événements de réduction de la surface d’attaque dans le portail Microsoft 365 Defender
 
@@ -151,13 +151,13 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Examiner les événements de réduction de la surface d’attaque dans Windows observateur d'événements
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Passer en revue les événements de réduction de la surface d’attaque dans Windows observateur d'événements
 
 Vous pouvez consulter le journal des événements Windows pour afficher les événements générés par les règles de réduction de la surface d’attaque :
 
 1. Téléchargez le [package d’évaluation](https://aka.ms/mp7z2w) et extrayez le fichier *cfa-events.xml* à un emplacement facilement accessible sur l’appareil.
 
-2. Entrez les mots, *observateur d'événements*, dans le menu Démarrer pour ouvrir le Windows observateur d'événements.
+2. Entrez les mots *, observateur d'événements*, dans le menu Démarrer pour ouvrir le observateur d'événements Windows.
 
 3. Sous **Actions**, sélectionnez **Importer un affichage personnalisé...**.
 

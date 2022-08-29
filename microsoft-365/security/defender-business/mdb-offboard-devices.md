@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: bd6ea78daa1a19d84efc23c34bdb58704484c0d1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 24c6e511b32b88ca72de7a7a0654fbea2761bf78
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66992111"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325636"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>Désintégrage d’un appareil à partir de Microsoft Defender pour entreprises
 
@@ -57,6 +58,6 @@ Si vous souhaitez déconnecter un appareil, utilisez l’une des procédures sui
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Utiliser votre tableau de bord Threat & Vulnerability Management dans Microsoft Defender pour entreprises](mdb-view-tvm-dashboard.md)
+- [Utiliser votre tableau de bord Gestion des vulnérabilités Microsoft Defender dans Microsoft Defender pour entreprises](mdb-view-tvm-dashboard.md)
 - [Afficher ou modifier des stratégies dans Microsoft Defender pour entreprises](mdb-view-edit-create-policies.md)
 - [Gérer les appareils dans Microsoft Defender pour entreprises](mdb-manage-devices.md)

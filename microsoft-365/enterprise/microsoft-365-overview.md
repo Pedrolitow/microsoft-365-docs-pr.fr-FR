@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/01/2021
+ms.date: 08/08/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - it-pro
 - intro-overview
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 6c79427f48867f5da7cf869e4856ad6b31dc6ed1
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
-ms.translationtype: HT
+ms.openlocfilehash: b4ebce35c1f642a6cfa8ee72489c1d8f531e3f67
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037663"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335757"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -120,7 +120,7 @@ Pour un exemple sur la façon dont une organisation multinationale fictive mais 
 
 ## <a name="additional-microsoft-365-products"></a>Autres produits Microsoft 365
 
-- [Microsoft 365 Business Premium](../admin/index.yml)
+- [Microsoft 365 Business Premium](/microsoft-365/business/)
 
   Associer les meilleures capacités de productivité et de collaboration de leur catégorie à des solutions de gestion et de sécurité des appareils afin de protéger les données professionnelles des petites et moyennes entreprises.
 

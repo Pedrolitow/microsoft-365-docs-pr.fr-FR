@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 455b80f590edf255362c7bb047c7aa1b23916666
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 4a21b62e7ab8cad349dbcabebdd1e0d6eeceacd7
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128563"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345148"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Suivre et répondre aux menaces émergentes par le biais de l’analytique des menaces
 
@@ -59,9 +59,9 @@ Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analytiq
 ## <a name="required-roles-and-permissions"></a>Rôles et des autorisations requis
 Le tableau suivant décrit les rôles et les autorisations nécessaires pour accéder à Threat Analytics. Les rôles définis dans le tableau ci-dessous font référence à des rôles personnalisés dans des portails individuels et ne sont pas connectés à des rôles globaux dans Azure AD, même s’ils sont également nommés.
 
-| **L’un des rôles suivants est requis pour Microsoft 365 Defender**  | **L’un des rôles suivants est requis pour Defender pour point de terminaison**  | **L’un des rôles suivants est requis pour Defender pour Office 365** | **L’un des rôles suivants est requis pour Defender pour le cloud Apps** | 
+| **L’un des rôles suivants est requis pour Microsoft 365 Defender**  | **L’un des rôles suivants est requis pour Defender pour point de terminaison**  | **L’un des rôles suivants est requis pour Defender pour Office 365** | **L’un des rôles suivants est requis pour Defender pour Cloud Apps** | 
 |---------|---------|---------|---------|
-| Analyses de menaces | Données d’alertes et d’incidents : <ul><li>Afficher les opérations de sécurité des données</li></ul>Atténuations tvm :<ul><li>Afficher les données - Menaces et gestion des vulnérabilités</li></ul> | Données d’alertes et d’incidents :<ul> <li>Gérer les alertes en mode affichage uniquement</li> <li>Gérer des alertes</li> <li>Configuration de l'organisation</li><li>Journaux d'audit</li> <li>Afficher uniquement les journaux d’audit</li><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires d’affichage uniquement</li> </ul> Tentatives d’e-mail empêchées : <ul><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires d’affichage uniquement</li> | Non disponible pour les utilisateurs Defender pour le cloud Apps ou MDI |
+| Analyses de menaces | Données d’alertes et d’incidents : <ul><li>Afficher les opérations de sécurité des données</li></ul>Atténuations de la gestion des vulnérabilités Defender :<ul><li>Afficher les données - Gestion des menaces et des vulnérabilités</li></ul> | Données d’alertes et d’incidents :<ul> <li>Gérer les alertes en mode affichage uniquement</li> <li>Gérer des alertes</li> <li>Configuration de l'organisation</li><li>Journaux d’audit</li> <li>Afficher uniquement les journaux d’audit</li><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires d’affichage uniquement</li> </ul> Tentatives d’e-mail empêchées : <ul><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires d’affichage uniquement</li> | Non disponible pour les utilisateurs Defender pour Cloud Apps ou MDI |
 
 ## <a name="view-the-threat-analytics-dashboard"></a>Afficher le tableau de bord Analyse des menaces
 
@@ -111,13 +111,13 @@ Accédez à la section **Rapport de l’analyste** pour lire l’écriture déta
 Dans la section **Atténuations** , passez en revue la liste des recommandations actionnables spécifiques qui peuvent vous aider à accroître la résilience de votre organisation face à la menace. La liste des atténuations suivies comprend :
 
 - **Mises à jour de sécurité** : déploiement de mises à jour de sécurité ou de correctifs pour les vulnérabilités
-- **paramètres de Antivirus Microsoft Defender**
+- **Paramètres de l’Antivirus Microsoft Defender**
   - Version du renseignement de sécurité
   - Protection fournie par le cloud
   - Protection des applications potentiellement indésirables (PUA)
   - Protection en temps réel
 
-Les informations d’atténuation contenues dans cette section incorporent des données de [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md), qui fournissent également des informations détaillées d’exploration à partir de divers liens du rapport.
+Les informations d’atténuation contenues dans cette section incorporent des données de [Gestion des vulnérabilités Microsoft Defender](next-gen-threat-and-vuln-mgt.md), qui fournissent également des informations détaillées d’exploration à partir de divers liens du rapport.
 
 :::image type="content" source="images/ta-mitigations.png" alt-text="Section Atténuations d’un rapport d’analyse des menaces" lightbox="images/ta-mitigations.png":::
 
@@ -132,9 +132,9 @@ Lorsque vous utilisez les rapports, gardez à l’esprit les éléments suivants
 - Les graphiques reflètent uniquement les atténuations suivies. Consultez la vue d’ensemble du rapport pour obtenir des atténuations supplémentaires qui ne sont pas affichées dans les graphiques.
 - Les atténuations ne garantissent pas une résilience complète. Les atténuations fournies reflètent les meilleures actions possibles nécessaires pour améliorer la résilience.
 - Les appareils sont considérés comme « indisponibles » s’ils n’ont pas transmis de données au service.
-- Les statistiques relatives aux antivirus sont basées sur Antivirus Microsoft Defender paramètres. Les appareils avec des solutions antivirus tierces peuvent apparaître comme étant « exposés ».
+- Les statistiques relatives aux antivirus sont basées sur les paramètres de l’Antivirus Microsoft Defender. Les appareils avec des solutions antivirus tierces peuvent apparaître comme étant « exposés ».
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Rechercher de manière proactive les menaces avec la chasse avancée](advanced-hunting-overview.md)
 - [Comprendre la section rapport de l’analyste](threat-analytics-analyst-reports.md)

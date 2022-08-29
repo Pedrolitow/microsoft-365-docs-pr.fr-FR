@@ -1,7 +1,7 @@
 ---
 title: Obtenir les informations de l’utilisateur lié à l’alerte
-description: Découvrez comment utiliser l’API Obtenir des informations utilisateur liées aux alertes pour récupérer l’utilisateur associé à une alerte spécifique dans Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, obtenir, alerte, informations, associé, utilisateur
+description: Découvrez comment utiliser l’API Obtenir des informations utilisateur liées aux alertes pour récupérer l’utilisateur associé à une alerte spécifique dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, alert, information, related, user
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bbf417139a1bfb64f528df97d4d8d0ce9cbb2045
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 7650be579cc3276308044754be6720e6c6dcf0f3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284480"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326098"
 ---
-# <a name="get-alert-related-user-information-api"></a>API Obtenir les informations utilisateur associées à une alerte
+# <a name="get-alert-related-user-information-api"></a>Obtenir l’API d’informations utilisateur associées aux alertes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,12 +44,12 @@ Récupère l’utilisateur associé à une alerte spécifique.
 
 ## <a name="limitations"></a>Limites
 
-- Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-- Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+- Vous pouvez interroger les alertes mises à jour pour la dernière fois en fonction de votre période de rétention configurée.
+- Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -59,8 +59,8 @@ Déléguée (compte professionnel ou scolaire)|User.Read.All|« Lire les profils
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}/user
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -80,13 +80,13 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et d’alerte et si un utilisateur existe : 200 - OK avec l’utilisateur dans le corps. Si l’alerte ou l’utilisateur est in found - 404 - In trouvé.
+En cas de réussite et d’alerte et qu’un utilisateur existe - 200 OK avec l’utilisateur dans le corps. Si l’alerte ou l’utilisateur est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de la demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user

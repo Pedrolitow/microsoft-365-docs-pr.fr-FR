@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Découvrez comment utiliser le réseau de distribution de contenu (CDN) Office 365 pour accélérer la livraison de vos ressources SharePoint Online.
-ms.openlocfilehash: 19a6ef51c73340c9f048ffa60208a5216a1959db
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: ca3d6c1158c93c9f897540e4b73565fd5a518e2a
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492510"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336197"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -163,7 +163,6 @@ Sauf indication contraire, Office 365 configure certaines origines par défaut l
 
 Origine du CDN privé par défaut :
 
-+ \*/userphoto.aspx
 + \*/siteassets
 
 Origine du CDN public par défaut :
@@ -399,7 +398,7 @@ Une fois que vous avez exécuté la commande, le système synchronise la configu
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exemple : Configurer une origine privée pour une collection de sites pour SharePoint Online
 
-Utilisez l’applet de commande **Add-SPOTenantCdnOrigin** pour définir une collection de sites comme une origine privée. Par exemple :
+Utilisez l’applet de commande **Add-SPOTenantCdnOrigin** pour définir une collection de sites comme une origine privée. Par exemple :
 
 ```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -682,7 +681,7 @@ Une fois que vous avez exécuté la commande, le système synchronise la configu
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exemple : Configurer une origine privée pour une collection de sites pour SharePoint Online
 
-Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir une collection de sites comme une origine privée. Par exemple :
+Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir une collection de sites comme une origine privée. Par exemple :
 
 ```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -962,7 +961,7 @@ Le diagramme suivant illustre le flux de travail lorsque SharePoint reçoit une 
 
 L’accès aux ressources d’origine privée dans la Office 365 CDN est accordé par les jetons générés par SharePoint Online. Les utilisateurs qui ont déjà l’autorisation d’accéder au dossier ou à la bibliothèque désigné par l’origine reçoivent automatiquement des jetons qui permettent à l’utilisateur d’accéder au fichier en fonction de son niveau d’autorisation. Ces jetons d’accès sont valides pendant 30 à 90 minutes après leur génération pour empêcher les attaques par relecture de jetons.
 
-Une fois le jeton d’accès généré, SharePoint Online retourne un URI personnalisé au client contenant deux paramètres d’autorisation _eat_ (jeton d’autorisation edge) et _oat_ (jeton d’autorisation d’origine). La structure de chaque jeton est _<'heure d’expiration au format époque'>__<'>de signature sécurisée_. Par exemple :
+Une fois le jeton d’accès généré, SharePoint Online retourne un URI personnalisé au client contenant deux paramètres d’autorisation _eat_ (jeton d’autorisation edge) et _oat_ (jeton d’autorisation d’origine). La structure de chaque jeton est _<'heure d’expiration au format époque'>__<'>de signature sécurisée_. Par exemple :
 
 ```http
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -997,7 +996,7 @@ Vous pouvez également utiliser les outils de développement de votre navigateur
 > [!NOTE]
 > Si vous utilisez un outil réseau tel que Fiddler pour tester vos ressources en dehors du rendu de la ressource à partir d’une page SharePoint, vous devez ajouter manuellement l’en-tête de référent « Referer : `https://yourdomain.sharepoint.com`» à la requête GET où l’URL est l’URL racine de votre locataire SharePoint Online.
 
-Vous ne pouvez pas tester les URL CDN directement dans un navigateur web, car vous devez disposer d’un référent venant de SharePoint Online. Toutefois, si vous ajoutez l’URL de la ressource CDN à une page SharePoint, puis que vous ouvrez la page dans un navigateur, vous verrez la ressource CDN affichée sur la page.
+Vous ne pouvez pas tester les URL CDN directement dans un navigateur web, car vous devez disposer d’un référent provenant de SharePoint Online. Toutefois, si vous ajoutez l’URL de la ressource CDN à une page SharePoint, puis que vous ouvrez la page dans un navigateur, vous verrez la ressource CDN affichée sur la page.
 
 Pour plus d’informations sur l’utilisation des outils de développement dans le navigateur Microsoft Edge, consultez [Microsoft Edge Developer Tools](/microsoft-edge/devtools-guide).
 

@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Cette page d’accueil fournit des liens et des informations de planification pour la sécurité et la conformité dans Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ecc9d01f82393aa20f8993abfffd6cca78c656f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: acc98ae381af6035be46eb6708d26213c4540d22
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639817"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360016"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planifier la conformité de la sécurité &amp;
 
@@ -38,7 +38,7 @@ Orientez-vous vers les fonctionnalités de protection des informations dans le I
 
 Après avoir configuré votre abonnement Microsoft 365, notez votre score de départ. Le degré de sécurisation fournit des suggestions de configuration que vous pouvez prendre pour augmenter votre score. L’objectif est d’être conscient des opportunités que vous pouvez prendre pour protéger votre environnement, ce qui n’affectera pas négativement la productivité de vos utilisateurs.
   
-- [Présentation du score de sécurité Office 365](../security/defender/microsoft-secure-score.md)
+- [Niveau de sécurité Microsoft](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Étape 3 : Planifier la protection de l’accès pour les identités et les appareils
 
@@ -81,5 +81,5 @@ Configurer vos paramètres de sécurité et de conformité dans ces centres d’
 |**Subscription**|**URL de gestion**|**Tableaux de bord et centres d’administration**|
 |:-----|:-----|:-----|
 |Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d’administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  Centre d’administration SharePoint et centre d’administration OneDrive Entreprise  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender for Cloud Apps  <br/> |

@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: aec4c7bdc0da76a6a52a8b8f19d89b8b54f3df9f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c7adaa79ef98b0ccfc1c12e2f84b30c8cd5600fe
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173490"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327901"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Utiliser Microsoft Defender pour point de terminaison API
 
@@ -33,7 +33,7 @@ ms.locfileid: "65173490"
 - [Microsoft Defender pour les PME](../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour les PME aux plans Microsoft Defender pour point de terminaison 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour entreprises à Microsoft Defender pour point de terminaison plans 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -48,7 +48,7 @@ Si vous avez besoin d’un accès par programmation Microsoft Defender pour poin
 
 Si vous n’êtes pas sûr de l’accès dont vous avez besoin, lisez la [page Introduction](apis-intro.md).
 
-Microsoft Defender pour point de terminaison expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction de Microsoft Defender pour point de terminaison fonctionnalités. L’accès à l’API nécessite l’authentification OAuth2.0. Pour plus d’informations, consultez [Flow du code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction de Microsoft Defender pour point de terminaison fonctionnalités. L’accès à l’API nécessite l’authentification OAuth2.0. Pour plus d’informations, consultez [le flux de code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En général, vous devez effectuer les étapes suivantes pour utiliser les API :
 
@@ -71,7 +71,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
 2. Accédez à **Azure Active Directory** \> **inscriptions d'applications** \> **Nouvelle inscription**.
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Page inscriptions d'applications dans le portail Microsoft Azure" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Page inscriptions d'applications dans microsoft Portail Azure" lightbox="images/atp-azure-new-app2.png":::
 
 3. Lorsque la page **Inscrire une application** s’affiche, saisissez les informations d’inscription de votre application :
    - **Nom** : saisissez un nom d’application cohérent qui s’affichera pour les utilisateurs de l’application.
@@ -111,7 +111,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
    > [!IMPORTANT]
    > Sélectionnez les autorisations appropriées. Les alertes de lecture ne sont qu’un exemple.
 
-     Par exemple :
+     Par exemple :
 
      - Pour [exécuter des requêtes avancées](run-advanced-query-api.md), sélectionnez **Exécuter des requêtes avancées** .
      - Pour [isoler un appareil](isolate-machine.md), sélectionnez Isoler l’autorisation **de l’ordinateur** .
@@ -132,7 +132,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-Pour plus d’informations sur AAD jetons, consultez [Azure AD didacticiel](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Pour plus d’informations sur les jetons AAD, consultez [le didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### <a name="using-c"></a>Utilisation de C\#
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 71b18f5e78301ac144faef9046420e817c65fa6b
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 4003f2a41674ec6dbaa875235ccc12412d23ddba
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607364"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327176"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Gérer Microsoft Defender pour point de terminaison avec PowerShell, WMI et MPCmdRun.exe
 
@@ -55,7 +55,7 @@ Vous pouvez utiliser PowerShell pour gérer l’antivirus Microsoft Defender, ex
 |**Configurer des règles de réduction de la surface d’attaque** avec PowerShell <br/><br/> *Vous pouvez utiliser PowerShell pour exclure les fichiers et dossiers des règles de réduction de la surface d’attaque.*|[Personnaliser les règles de réduction de la surface d’attaque : Utiliser PowerShell pour exclure des fichiers & dossiers](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction) <br/><br/> Consultez également [l’outil d’interface utilisateur graphique d’António Vasconcelo pour définir des règles de réduction de la surface d’attaque avec PowerShell](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI).|
 |**Activer la protection réseau** avec PowerShell <br/><br/> *Vous pouvez utiliser PowerShell pour activer la protection réseau.*|[Activer la protection réseau avec PowerShell](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |**Configurer l’accès contrôlé aux dossiers** pour vous protéger contre les ransomware <br/><br/> *[L’accès contrôlé aux dossiers](/microsoft-365/security/defender-endpoint/controlled-folders) est également appelé protection antiransomware.*|[Activer l’accès contrôlé aux dossiers avec PowerShell](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
-|**Configurer Pare-feu Microsoft Defender** pour bloquer le trafic réseau non autorisé entrant ou sortant des appareils de votre organisation|[Pare-feu Microsoft Defender avec Advanced Security Administration à l’aide de Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
+|**Configurer le Pare-feu Microsoft Defender** pour bloquer le trafic réseau non autorisé entrant ou sortant des appareils de votre organisation|[Pare-feu Microsoft Defender avec Administration avancée de la sécurité à l’aide de Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
 |**Configurer le chiffrement et BitLocker** pour protéger les informations sur les appareils de votre organisation exécutant Windows|[Guide de référence sur BitLocker PowerShell](/powershell/module/bitlocker/)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>Configurer Microsoft Defender pour point de terminaison avec Windows Management Instrumentation (WMI)
@@ -82,8 +82,8 @@ Vous pouvez également configurer si et quelles fonctionnalités les utilisateur
 - [Vue d’ensemble de la Centre de sécurité Microsoft Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint Protection : Centre de sécurité Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-- [Obtenir une vue d’ensemble de la gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Obtenir une vue d’ensemble de La gestion des vulnérabilités defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visitez le tableau de bord des opérations de sécurité Centre de sécurité Microsoft Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Gérer Microsoft Defender pour point de terminaison avec Intune](manage-mde-post-migration-intune.md)

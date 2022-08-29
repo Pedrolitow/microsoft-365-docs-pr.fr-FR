@@ -1,7 +1,7 @@
 ---
-title: Liste des appareils par logiciel
-description: Récupérez la liste des appareils sur qui ce logiciel est installé.
-keywords: api, api de graphique, api pris en charge, obtenir, lister les appareils, liste des appareils, liste des appareils par logiciel, Api tvm microsoft Defender pour point de terminaison
+title: Répertorier les appareils par logiciel
+description: Récupérez la liste des appareils sur lesquels ce logiciel est installé.
+keywords: api, api graphe, api prises en charge, get, list devices, devices list, list devices by software, Microsoft Defender pour point de terminaison tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 32dd0531d0919613621d656f7f3b9aef3e4bec0d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fba7fc216f126a9b6f166fe0287a75f5a3b38214
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301581"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345094"
 ---
-# <a name="list-devices-by-software"></a>Liste des appareils par logiciel
+# <a name="list-devices-by-software"></a>Répertorier les appareils par logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,11 +37,11 @@ ms.locfileid: "61301581"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupérez la liste des références d’appareils sur les appareils sur qui ce logiciel est installé.
+Récupérez la liste des références d’appareils sur lesquelles ce logiciel est installé.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -58,7 +58,7 @@ GET /api/Software/{Id}/machineReferences
 
 |Nom|Type|Description
 |---|---|---|
-|Autorisation|String|Porteur {token}. **Obligatoire**.
+|Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -106,5 +106,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire logiciel de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

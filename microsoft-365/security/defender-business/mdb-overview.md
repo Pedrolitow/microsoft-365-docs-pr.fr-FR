@@ -10,6 +10,7 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -17,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: e4210c2540e3d6d85dae38134148b5564d18fcf4
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 3d0449bbf62e95032b236b8e239652368227d332
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051577"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320522"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>Qu’est-ce que Microsoft Defender pour entreprises ?
 

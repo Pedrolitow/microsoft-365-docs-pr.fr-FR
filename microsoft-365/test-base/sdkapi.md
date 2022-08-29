@@ -3,27 +3,27 @@ title: Kit de développement logiciel (SDK) d’API de base de test &
 description: Kit de développement logiciel (SDK) d’API de base de test &
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 6ae0fdf9cc49faaaff84eb3f96e076d1efba8a4c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5a3959e723dbf78f56de0b33b280de13b1c3b59e
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077437"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315918"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>Gérer votre ressource avec le Kit de développement logiciel (SDK) & DES API
 
-L’automatisation est un aspect clé du développement DevOps et agile. Cherchez-vous à gérer la base de tests pour Microsoft 365 ressources, à obtenir des résultats de test par programme et à les intégrer à nos outils CI ? Les API de base de test/kit de développement logiciel (SDK) peuvent vous aider à atteindre tous ces objectifs et bien plus encore !
+L’automatisation est un aspect clé de DevOps et du développement agile. Cherchez-vous à gérer la base de tests pour les ressources Microsoft 365, à obtenir des résultats de test par programmation et à les intégrer à nos outils CI ? Les API de base de test/kit de développement logiciel (SDK) peuvent vous aider à atteindre tous ces objectifs et bien plus encore !
 
 Ces API/SDK permettent aux professionnels de l’informatique et aux développeurs d’applications d’effectuer les opérations suivantes :
 
@@ -32,7 +32,7 @@ Ces API/SDK permettent aux professionnels de l’informatique et aux développeu
 - Obtenez le résumé des tests, les résultats détaillés des tests et les résultats d’analyse. Le résultat de l’analyse inclut l’analyse de régression du processeur, l’analyse de l’utilisation du processeur, l’analyse de régression de la mémoire et l’analyse de l’utilisation de la mémoire.
 - Téléchargez les résultats des tests et l’enregistrement vidéo de l’exécution des tests.
 
-Consultez le plan pas à pas ci-dessous pour savoir comment accéder à cette nouvelle fonctionnalité dans la base de test pour Microsoft 365 service.
+Consultez le plan détaillé ci-dessous pour savoir comment accéder à cette nouvelle fonctionnalité dans la base de test pour le service Microsoft 365.
 
 ## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>Exemple pas à pas de création de compte de base de test à l’aide du Kit de développement logiciel (SDK) Python
 
