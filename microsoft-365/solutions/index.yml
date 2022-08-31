@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 03/23/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 49a8bfe703c1d68fcf4a63ac8dd07f9fadd8da63
-  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
-  ms.translationtype: HT
+  ms.openlocfilehash: bd4b9d1cfdecf69a9b3ff0d1c5c4769d3fb73b19
+  ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+  ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64939035"
+  ms.lasthandoff: 08/31/2022
+  ms.locfileid: "67479839"
 landingContent:
 - title: Guides des solutions de base
   linkLists:
@@ -147,8 +147,10 @@ landingContent:
       url: financial-services-secure-collaboration.md
     - text: Sécurité et conformité pour les services énergétiques et utilitaires
       url: energy-secure-collaboration.md
-    - text: Teams pour la santé publique
-      url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Microsoft 365 pour la santé
+      url: ../frontline/teams-in-hc.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Microsoft 365 pour la vente au détail
+      url: ../frontline/teams-for-retail-landing-page.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Teams pour l’éducation
       url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Teams pour le secteur public

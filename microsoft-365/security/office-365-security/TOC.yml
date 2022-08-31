@@ -410,15 +410,15 @@
               href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
             - name: Connecter Microsoft Defender pour Office 365 à Microsoft Sentinel
               href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
-            - name: Connecter Microsoft Defender pour Office 365 à Microsoft Sentinel
-              href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+            - name: Comment activer la création de rapports DMARC pour Microsoft Online Email l’adresse de routage (MOERA) et les domaines parqués
+              href: step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md
             - name: Guide pratique pour déployer et configurer le complément de message de rapport
               href: step-by-step-guides/deploy-and-configure-the-report-message-add-in.md
-            - name: Garantir que vous disposez toujours des contrôles de sécurité optimaux avec des stratégies de sécurité prédéfinies
-              href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+            - name: Utiliser Microsoft Defender pour Office 365 dans SharePoint Online
+              href: step-by-step-guides/utilize-microsoft-defender-for-office-365-in-sharepoint-online.md
         - name: Utilisation
           items:
-            - name: Restez informé des modifications à venir apportées à Microsoft Defender pour Office 365 à l’aide du centre de messages
+            - name: Configurer une notification digeste des modifications apportées à Microsoft Defender pour Office 365 à partir du centre de messages
               href: step-by-step-guides/stay-informed-with-message-center.md
             - name: 'Comment hiérarchiser, gérer, examiner et répondre aux incidents dans Microsoft 365 Defender'
               href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
