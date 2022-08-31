@@ -2,7 +2,8 @@
 title: Microsoft Defender for Cloud Apps dans Microsoft 365 Defender (préversion)
 description: En savoir plus sur les modifications apportées à la Microsoft Defender for Cloud Apps à Microsoft 365 Defender
 keywords: Bien démarrer avec Microsoft 365 Defender, Microsoft Defender for Cloud Apps
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +20,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 13d178f77efa19ed53c93afa454ddaf6e481a8a6
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: c806122171b54bf5bb8693d900bb7c520093d792
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408416"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482623"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps dans Microsoft 365 Defender (préversion)
 

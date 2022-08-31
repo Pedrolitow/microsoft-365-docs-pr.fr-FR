@@ -4,7 +4,8 @@ description: Répertorie les nouvelles fonctionnalités dans Microsoft 365 Defen
 keywords: nouveautés de Microsoft 365 Defender, ga, généralement disponibles, fonctionnalités, disponibles, nouvelles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: d7a49b76efb824160157b9bf10315562149edb02
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: e7b992f22e58cca007e1ed3afecf02ecac830857
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67405617"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483363"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -92,7 +92,7 @@ L’équipe des opérations de sécurité peut afficher toutes les actions en at
 
   Vous pouvez affecter un incident et toutes les alertes qui lui sont associées à un compte d’utilisateur de **Assign to:** dans le volet **Gérer les incidents** d’un incident ou le volet **Gérer les alertes** d’une alerte.
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 - (Préversion) Microsoft Defender pour Office 365 données disponibles dans la chasse avancée
 
@@ -108,7 +108,7 @@ L’équipe des opérations de sécurité peut afficher toutes les actions en at
 
   Améliorez les fonctionnalités de détection, d’investigation et de renseignement sur les menaces de la plateforme avec des connexions partenaires prises en charge.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 - (Préversion) [Afficher les rapports par balises de menace](threat-analytics.md#view-reports-per-threat-tags)
 
@@ -130,7 +130,7 @@ L’équipe des opérations de sécurité peut afficher toutes les actions en at
 
   Obtenez des informations sur les appareils auxquels une adresse IP spécifique a été attribuée à un intervalle de temps donné.
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 - [Nouvelle page d’alerte dans le portail Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243)
 

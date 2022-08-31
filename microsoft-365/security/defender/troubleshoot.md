@@ -1,9 +1,10 @@
 ---
-title: Résoudre les problèmes de service Microsoft 365 Defender
+title: Résoudre les problèmes liés au service Microsoft 365 Defender
 description: Trouver des solutions et des solutions de contournement aux problèmes connus de Microsoft 365 Defender
 keywords: résoudre les problèmes Microsoft 365 Defender, résoudre les problèmes, Microsoft Defender pour Identity, problèmes, module complémentaire, page paramètres
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,20 +20,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 656599cf9ec66987119819b2f28f9a8eff1d4e77
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1bc37191d83ebe4e2a6d483d4f490d96d195082b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731667"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474949"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Résoudre les problèmes de service Microsoft 365 Defender
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Résoudre les problèmes liés au service Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Cette section traite des problèmes qui peuvent survenir lorsque vous utilisez le service Microsoft 365 Defender.
@@ -51,7 +51,7 @@ Pour plus d’informations, consultez [Microsoft Defender pour Identity intégra
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>Où se trouve la page des paramètres pour l’activation du service ?
 
-Pour activer Microsoft 365 Defender, accédez **à Paramètres** à partir du volet de navigation du portail Microsoft 365 Defender. Cet élément de navigation est visible uniquement si vous [disposez des autorisations et des licences requises](m365d-enable.md#check-license-eligibility-and-required-permissions).
+Pour activer Microsoft 365 Defender, **accédez aux paramètres** à partir du volet de navigation du portail Microsoft 365 Defender. Cet élément de navigation est visible uniquement si vous [disposez des autorisations et des licences requises](m365d-enable.md#check-license-eligibility-and-required-permissions).
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Comment faire créer une exception pour mon fichier/URL ?
 

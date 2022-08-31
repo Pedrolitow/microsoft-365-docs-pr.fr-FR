@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 description: Découvrez les modifications apportées par le Centre de sécurité & conformité à Microsoft 365 Defender.
-keywords: sécurité Microsoft 365, Prise en main de Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour point de terminaison, MDO, MDE, nouvelle sécurité defender Portail
+keywords: Sécurité Microsoft 365, Prise en main de Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour point de terminaison, MDO, MDE, nouveau portail de sécurité Defender
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.prod: m365-security
-ms.technology: m365d
-ms.openlocfilehash: 4cd43c5f9e8ecad35ed574d5b60eaf1fa2e635d9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.service: microsoft-365-security
+ms.subservice: m365d
+ms.openlocfilehash: 0a1bf4dd4d46490ed85cbb8631d2581da0a2f7af
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438277"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482777"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
@@ -45,9 +45,9 @@ Le tableau ci-dessous répertorie les modifications apportées à la navigation 
 |Protection contre la perte de données||Voir [portail de conformité Microsoft Purview](https://compliance.microsoft.com/homepage)||
 |Gestion des enregistrements||Voir [portail de conformité Microsoft Purview](https://compliance.microsoft.com/homepage)||
 |Gouvernance des informations||Voir [portail de conformité Microsoft Purview](https://compliance.microsoft.com/homepage)||
-|Gestion des menaces|[Collaboration & par e-mail](https://security.microsoft.com/homepage)|||
+|Gestion des menaces|[collaboration Email &](https://security.microsoft.com/homepage)|||
 |Autorisations|[Autorisations & rôles](https://security.microsoft.com/emailandcollabpermissions)|Voir [portail de conformité Microsoft Purview](https://compliance.microsoft.com/homepage)||
-|Flux de messagerie|||Voir [Exchange centre d’administration](https://admin.exchange.microsoft.com/#/)|
+|Flux de messagerie|||Voir [le Centre d’administration Exchange](https://admin.exchange.microsoft.com/#/)|
 |Confidentialité des données||Voir [portail de conformité Microsoft Purview](https://compliance.microsoft.com/homepage)||
 |Rechercher|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Recherche (recherche de contenu)||
 |Rapports|[Report](https://security.microsoft.com/emailandcollabreport)|||
@@ -65,7 +65,7 @@ Si vous recherchez des éléments liés à la conformité, visitez le <a href="h
 
 ## <a name="new-and-improved-capabilities"></a>Fonctionnalités nouvelles et améliorées
 
-La barre de navigation gauche, ou la barre de lancement rapide, vous semblera familière. Toutefois, ce Defender pour le cloud comporte des éléments nouveaux et mis à jour.
+La barre de navigation gauche, ou la barre de lancement rapide, vous semblera familière. Toutefois, il existe des éléments nouveaux et mis à jour dans ce Defender pour cloud.
 
 Avec la solution unifiée Microsoft 365 Defender, vous pouvez assembler les signaux de menace et déterminer l’étendue et l’impact complets de la menace, ainsi que son impact sur l’organisation.
 
@@ -114,11 +114,11 @@ En savoir plus sur le [suivi et la réponse aux menaces émergentes avec l’ana
 
 Suivez et examinez les menaces contre l’e-mail, le suivi des campagnes et autres de vos utilisateurs. Si vous avez utilisé le Centre de sécurité & conformité, cela vous sera familier.
 
-![Menu de lancement rapide de l’e-mail & collab, dans le volet de navigation gauche du portail Microsoft 365 Defender.](../../media/mdo-m365d-nav.png)
+![Menu de lancement rapide pour Email & collab, dans le volet de navigation gauche du portail Microsoft 365 Defender.](../../media/mdo-m365d-nav.png)
   
 #### <a name="email-entity-page"></a>Page de l’entité d’e-mail
 
-La [page d’entité e-mail](../office-365-security/mdo-email-entity-page.md) *unifie les* informations de courrier qui avaient été dispersées dans différentes pages ou vues dans le passé. L’étude de l’e-mail en matière de menaces et de tendances est *centralisée*. Les informations d’en-tête et l’aperçu d’e-mail sont accessibles via la même page e-mail, ainsi que d’autres informations utiles liées à l’e-mail. De même, vous pouvez trouver l’état de détonation des pièces jointes ou URL de fichiers malveillants dans un onglet de la même page. La page Entité d’e-mail permet aux administrateurs et aux équipes des opérations de sécurité de comprendre une menace d’e-mail et son état, rapidement, puis d’agir rapidement pour déterminer la gestion.
+La [page d’entité Email](../office-365-security/mdo-email-entity-page.md) *unifie les* informations de messagerie qui avaient été dispersées dans différentes pages ou vues dans le passé. L’étude de l’e-mail en matière de menaces et de tendances est *centralisée*. Les informations d’en-tête et l’aperçu d’e-mail sont accessibles via la même page e-mail, ainsi que d’autres informations utiles liées à l’e-mail. De même, vous pouvez trouver l’état de détonation des pièces jointes ou URL de fichiers malveillants dans un onglet de la même page. La page Entité d’e-mail permet aux administrateurs et aux équipes des opérations de sécurité de comprendre une menace d’e-mail et son état, rapidement, puis d’agir rapidement pour déterminer la gestion.
 
 ### <a name="access-and-reports"></a>Accès et rapports
 

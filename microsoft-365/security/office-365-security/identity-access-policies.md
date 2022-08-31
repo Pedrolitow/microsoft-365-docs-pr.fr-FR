@@ -20,13 +20,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 35acb32c9a27ec32c78f4f247257d589a9fefc04
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e47dffc84870a34cb22aa8246b82ce230bcd7ebd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750053"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468182"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies d’accès aux identités et aux appareils Confiance nulle courantes
 
@@ -110,7 +111,7 @@ Les tableaux suivants décrivent les paramètres de stratégie d’accès condit
 
 Dans la section **Affectations** :
 
-|Paramètre|Propriétés|Valeurs|Remarques|
+|Setting|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionner des utilisateurs et des groupes > Utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateur pilotes.|
 ||Exclure|**Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée temporairement en fonction des besoins.|
@@ -130,7 +131,7 @@ Appliquez les paramètres de niveau de risque en fonction du niveau de protectio
 
 Dans la section **Contrôles d’accès** :
 
-|Paramètre|Propriétés|Valeurs|Action|
+|Setting|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Grant access**||Sélectionner|
 |||**Exiger l’authentification multifacteur**|Chèque|
@@ -150,7 +151,7 @@ Consultez [cet article](../../enterprise/microsoft-365-client-support-multi-fact
 
 Dans la section **Affectations** :
 
-|Paramètre|Propriétés|Valeurs|Remarques|
+|Setting|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionner des utilisateurs et des groupes > Utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateur pilotes.|
 ||Exclure|**Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée temporairement en fonction des besoins.|
@@ -159,7 +160,7 @@ Dans la section **Affectations** :
 
 Dans la section **Contrôles d’accès** :
 
-|Paramètre|Propriétés|Valeurs|Action|
+|Setting|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Bloquer l’accès**||Sélectionner|
 ||**Demander tous les contrôles sélectionnés**||Sélectionner|
@@ -189,7 +190,7 @@ Dans la deuxième section **Affectations** :
 
 |Type|Propriétés|Valeurs|Action|
 |---|---|---|---|
-|Accès|**Autoriser l’accès**||Sélectionner|
+|Access|**Autoriser l’accès**||Sélectionner|
 |||**Exiger le changement du mot de passe**|Chèque|
 
 Choisissez **Terminé** pour enregistrer les paramètres **d’accès** .
@@ -214,7 +215,7 @@ Pour afficher les recommandations spécifiques pour chaque niveau de configurati
 
 À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de point de départ et de protection d’entreprise correspondent étroitement aux paramètres de protection des données améliorés de niveau 2 entreprise. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de protection des données élevées d’entreprise de niveau 3.
 
-|Niveau de protection|Stratégie de protection des applications|Plus d’informations|
+|Niveau de protection|Stratégie de protection des applications|Informations supplémentaires|
 |---|---|---|
 |Point de départ|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Entreprise|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.|
@@ -299,7 +300,7 @@ Pour les appareils supervisés :
 
 À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de point de départ et de protection d’entreprise correspondent étroitement aux paramètres de sécurité améliorés de niveau 2. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de sécurité de niveau 3.
 
-|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
+|Niveau de protection  |Stratégie d’appareil |Informations supplémentaires  |
 |---------|---------|---------|
 |Point de départ     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.         |
@@ -331,7 +332,7 @@ Pour les appareils Android Entreprise entièrement gérés :
 
 Pour les appareils de profil professionnel Android Entreprise :
 
-|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
+|Niveau de protection  |Stratégie d’appareil |Informations supplémentaires  |
 |---------|---------|---------|
 |Point de départ     |Profil professionnel : Sécurité de base (niveau 1)      |S/O         |
 |Entreprise     |Profil professionnel : Sécurité de base (niveau 1)         |S/O         |
@@ -364,7 +365,7 @@ Pour **la sécurité du système**, consultez ce tableau.
 |Password|Exiger un mot de passe pour déverrouiller des appareils mobiles|Require (Rendre obligatoire)|Sélectionner|
 ||Mots de passe simples|Bloquer|Sélectionner|
 ||Type de mot de passe|Valeur par défaut de l’appareil|Sélectionner|
-||Longueur minimale du mot de passe|6 |Type|
+||Longueur minimale du mot de passe|6|Type|
 ||Nombre maximal de minutes d’inactivité avant demande du mot de passe|15|Type <p> Ce paramètre est pris en charge pour les versions Android 4.0 et ultérieures ou KNOX 4.0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8.0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41|Type|
 ||Nombre de mots de passe précédents avant d’autoriser leur réutilisation|5|Type|

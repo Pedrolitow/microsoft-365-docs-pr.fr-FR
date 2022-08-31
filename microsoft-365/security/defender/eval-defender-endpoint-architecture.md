@@ -3,7 +3,8 @@ title: Passer en revue les exigences en matière d’architecture Microsoft Defe
 description: Le diagramme technique de Microsoft Defender pour point de terminaison dans Microsoft 365 Defender vous aidera à comprendre l’identité dans Microsoft 365 avant de créer votre laboratoire d’essai ou votre environnement pilote.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 5197acd8ceb3a2dea7c03b0ef076bca5dc9138dd
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 5a446047168394fd8506f2aaed911ce3af284f10
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749130"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467962"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Passer en revue les exigences en matière d’architecture Microsoft Defender pour point de terminaison et les concepts clés
 
@@ -63,7 +64,7 @@ Concept | Description | Plus d’informations
 :---|:---|:---|
 Portail d’administration | Microsoft 365 Defender portail pour surveiller et aider à répondre aux alertes de menaces persistantes avancées potentielles ou de violations de données. | [Vue d’ensemble du portail Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/portal-overview)
 Réduction de la surface d’attaque | Contribuez à réduire vos surfaces d’attaque en réduisant les endroits où votre organisation est vulnérable aux cybermenaces et aux attaques. | [Vue d’ensemble de la réduction de la surface d'attaque](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
-Détection et réponse des points de terminaison | Les fonctionnalités de détection et de réponse des points de terminaison fournissent des détections d’attaque avancées qui sont quasiment en temps réel et exploitables. | [Vue d’ensemble des fonctionnalités de détection et de réponse des points de terminaison](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+Détection et réponse du point de terminaison | Les fonctionnalités de détection et de réponse des points de terminaison fournissent des détections d’attaque avancées qui sont quasiment en temps réel et exploitables. | [Vue d’ensemble des fonctionnalités de détection et de réponse des points de terminaison](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 Blocage comportemental et confinement | Les fonctionnalités de blocage comportemental et d’endiguement peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et de leurs arborescences de traitement, même lorsque la menace a démarré l’exécution. | [Blocage et confinement comportementaux](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 Investigation et réponse automatisées | L’investigation automatisée utilise différents algorithmes d’inspection basés sur des processus utilisés par les analystes de sécurité et conçus pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. | [Utiliser des investigations automatisées pour examiner et corriger les menaces](/microsoft-365/security/defender-endpoint/automated-investigations)
 Repérage avancé | La chasse avancée est un outil de chasse aux menaces basé sur une requête qui vous permet d’explorer jusqu’à 30 jours de données brutes afin de pouvoir inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités de menace. | [Vue d’ensemble de la chasse avancée](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)

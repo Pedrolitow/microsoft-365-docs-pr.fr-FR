@@ -1,8 +1,8 @@
 ---
 title: Feuille de route pour la fin de l’assistance pour Project Server 2007
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
@@ -19,12 +19,12 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: Le 10 octobre 2017, le support a pris fin pour Project Server 2007, Project Portfolio Server et Project 2007. Utilisez cet article pour planifier votre mise à niveau maintenant.
-ms.openlocfilehash: c072daf811ec8e175c830aaa95b2163c80fa2b6f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: a99b65bde9f2e3eb559351fddcf62141c1bfa323
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487313"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473720"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour Project Server 2007
 
@@ -219,7 +219,7 @@ Autres ressources :
     
 - [Guide de migration de Microsoft Office Project Portfolio Server 2007.](https://go.microsoft.com/fwlink/p/?linkid=841279)
     
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Feuille de route de fin du support SharePoint Server 2007](sharepoint-2007-end-of-support.md)
   

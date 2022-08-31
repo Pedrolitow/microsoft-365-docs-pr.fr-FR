@@ -17,16 +17,22 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Cet article vous offre des informations sur la gestion des paramètres pour vos utilisateurs.
-ms.openlocfilehash: 291d6a0207c8ed0f94bcfa224accc217dfc1d78f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
-ms.translationtype: HT
+ms.openlocfilehash: ec83579e5a3c4a264f5030db1cdbf1ac6aa915fe
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437126"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470250"
 ---
 # <a name="user-email-settings-in-microsoft-365"></a>Paramètres de la messagerie utilisateur dans Microsoft 365
 
 En tant qu’administrateur d’une organisation, vous pouvez gérer les paramètres de messagerie des utilisateurs. Cet article vous offre des informations sur la gestion de ces paramètres.
+
+## <a name="manage-email-settings"></a>Gérer les paramètres de courrier
+
+1. Accédez au centre d’administration sur <https://admin.microsoft.com>.
+2. Accédez à **Utilisateurs** > **actifs** et sélectionnez l’utilisateur pour lequel vous souhaitez gérer les paramètres de messagerie.
+3. Dans le nouveau volet, sélectionnez **Courrier** pour gérer les paramètres de messagerie.
 
 ## <a name="summary-of-email-settings"></a>Synthèse des paramètres de courrier
 

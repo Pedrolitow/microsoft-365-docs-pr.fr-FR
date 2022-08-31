@@ -19,13 +19,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
+- highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: d224da7f03d93769c3bd37f10af9b888c630c441
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 2b092edc2c4fabc0a48a7f4865d237e8974c8c65
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969877"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469753"
 ---
 # <a name="test-attack-surface-reduction-asr-rules"></a>Tester des règles de réduction de la surface d’attaque (ASR)
 
@@ -113,7 +114,7 @@ Les **volets GroupBy** et **Filter** fournissent les options suivantes :
 - Application source
 - Device
 - Utilisateur
-- Publisher
+- Éditeur
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="Les règles de réduction de la surface d’attaque détectent le filtre GroupBy" lightbox="images/asr-defender365-reports-detections.png":::

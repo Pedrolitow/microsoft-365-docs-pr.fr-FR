@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tierces et messages remis aux boîtes aux lettres d’opérations de sécurité (SecOps).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 826eb2d2b860900ed0f73ecd85f3162bb90de2a9
-ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 82d1f38430769b00cdb8fc5cc7c9cd02884f66d1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420981"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482989"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres SecOps
 
@@ -33,7 +33,7 @@ ms.locfileid: "67420981"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Pour assurer la [sécurité de votre organisation par défaut](secure-by-default.md), Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement du filtrage pour les messages identifiés comme des programmes malveillants ou un hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour assurer la [sécurité de votre organisation par défaut](secure-by-default.md), Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement du filtrage pour les messages identifiés comme des programmes malveillants ou un hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations d’hameçonnage tierces : les attaques** simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’affecte votre organisation.
 - Boîtes **aux lettres d’opérations de sécurité (SecOps)** : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bons et mauvais).

@@ -1,9 +1,10 @@
 ---
 title: Table AADSpnSignInEventsBeta dans le schéma de chasse avancé
-description: Découvrez les informations associées à la table des événements de connexion au principal de service et à l’identité managée de Azure Active Directory.
+description: Découvrez les informations associées à la table des événements de connexion au principal de service et à l’identité managée d’Azure Active Directory.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,23 +17,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b1b9d6405abdddea42652cfd4c532df91eeb6b30
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 74e8ff6319799da8e9893a65b447a8e3c693cd8f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842211"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472939"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> La `AADSpnSignInEventsBeta` table est actuellement en version bêta et est proposée à court terme pour vous permettre de chasser les événements de connexion Azure Active Directory (AAD). Les clients doivent disposer d’une licence Azure Active Directory Premium P2 pour collecter et afficher les activités de cette table. Microsoft finira par déplacer toutes les informations de schéma de connexion vers la `IdentityLogonEvents` table.
+> La `AADSpnSignInEventsBeta` table est actuellement en version bêta et est proposée à court terme pour vous permettre de rechercher des événements de connexion Azure Active Directory (AAD). Les clients doivent disposer d’une licence Azure Active Directory Premium P2 pour collecter et afficher les activités de cette table. Microsoft finira par déplacer toutes les informations de schéma de connexion vers la `IdentityLogonEvents` table.
 
-La `AADSpnSignInEventsBeta` table du schéma de repérage avancé contient des informations sur Azure Active Directory principal de service et les connexions d’identité managée. Vous pouvez en savoir plus sur les différents types de connexions dans [Azure Active Directory rapports d’activité de connexion - préversion](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+La `AADSpnSignInEventsBeta` table du schéma de repérage avancé contient des informations sur le principal de service Azure Active Directory et les connexions d’identité managée. Vous pouvez en savoir plus sur les différents types de connexions dans les [rapports d’activité de connexion Azure Active Directory - préversion](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 

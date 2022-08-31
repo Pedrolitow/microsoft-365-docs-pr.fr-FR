@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 9a06b695d6e9cffe03ed2a42590c1489f3678056
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: e833def27e88a9f59c756bd769a09191e9b2dd5c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439583"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467380"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Déployer des équipes à grande échelle pour les travailleurs de première ligne
 
@@ -143,7 +143,7 @@ Vous utilisez l’applet ```New-CsBatchTeamsDeployment``` de commande pour envoy
     Get-Command -Module MicrosoftTeams
     ```
 
-    Vérifiez cela ```New-CsBatchTeamsDeployment``` et ```Get-CsBatchTeamsDeployment``` sont répertoriés.
+    Vérifiez cela ```New-CsBatchTeamsDeployment``` et ```Get-CsBatchTeamsDeploymentStatus``` sont répertoriés.
 
 1. Exécutez la commande suivante pour déployer un lot d’équipes. Dans cette commande, vous spécifiez le chemin d’accès à vos fichiers CSV et les adresses e-mail de cinq destinataires maximum pour les informer de ce déploiement.
 
@@ -162,7 +162,7 @@ Vous utilisez l’applet ```New-CsBatchTeamsDeployment``` de commande pour envoy
 1. Exécutez ce qui suit pour vérifier l’état du lot que vous avez envoyé.
 
     ```powershell
-    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
 ## <a name="send-us-feedback"></a>Nous envoyer des commentaires

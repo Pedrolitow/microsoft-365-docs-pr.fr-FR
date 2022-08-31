@@ -4,7 +4,8 @@ description: Le portail Microsoft 365 Defender combine la protection, la détect
 keywords: présentation de MMicrosoft 365 Defender, cybersécurité, menace persistante avancée, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, investigation et correction automatisées, repérage avancé
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,14 +23,13 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-overview
 ms.topic: conceptual
-ms.technology: m365d
 adobe-target: true
-ms.openlocfilehash: f55172bf0a7df4e15e690a5e0847c81b3cc537dc
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: ea1a6138204dd75855ade67ce06822c347160e4f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328582"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467896"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 

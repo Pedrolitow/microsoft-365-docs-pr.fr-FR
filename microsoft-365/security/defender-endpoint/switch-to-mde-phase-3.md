@@ -15,20 +15,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- highpri
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: d927f1a5972e24c3bae0329bd866a4b56b0a5d95
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: cc07b9324c8c3e0f1c37e7bd8c4d235945fc1092
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717247"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482535"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Basculer vers Microsoft Defender pour point de terminaison - Phase 3 : Intégration
 
@@ -63,7 +62,7 @@ ms.locfileid: "66717247"
 > [!NOTE]
 > Si un problème se produit lors de l’intégration, consultez [Résolution des problèmes d’intégration Microsoft Defender pour point de terminaison](troubleshoot-onboarding.md). Cet article explique comment résoudre les problèmes d’intégration et les erreurs courantes sur les points de terminaison.
 
-### <a name="onboarding-methods"></a>Méthodes d’intégration
+### <a name="onboarding-methods"></a>Méthodes d'embarquement
 
 > [!IMPORTANT]
 > Si vous utilisez Microsoft Defender pour le cloud, consultez [Intégration à Microsoft Defender pour cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
@@ -88,7 +87,7 @@ Pour vérifier que vos appareils intégrés sont correctement connectés à Defe
 
 |Système d’exploitation|Aide|
 |---|---|
-|Windows 10 ou version ultérieure<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, version 1803 ou ultérieure<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consultez [Exécuter un test de détection](run-detection-test.md).|
+|Windows 10 ou version ultérieure<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, version 1803 ou ultérieure<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consultez [Exécuter un test de détection](run-detection-test.md).|
 |macOS (voir [Configuration requise](microsoft-defender-endpoint-mac.md)|Téléchargez et utilisez l’application DIY à l’adresse <https://aka.ms/mdatpmacosdiy>. <br/><br/> Pour plus d’informations, consultez [Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (voir [Configuration système requise](microsoft-defender-endpoint-linux.md#system-requirements))|1. Exécutez la commande suivante et recherchez un résultat de **1** : `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Ouvrez une fenêtre terminal et exécutez la commande suivante : `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Exécutez la commande suivante pour répertorier toutes les menaces détectées : `mdatp threat list`.<br/><br/>Pour plus d’informations, consultez [Defender pour point de terminaison sur Linux](microsoft-defender-endpoint-linux.md).|
 
@@ -167,7 +166,7 @@ Maintenant que vous êtes intégré à Defender pour point de terminaison et que
 
 Pour plus d’informations, consultez [l’inventaire des appareils](machines-view-overview.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 **Félicitations**! Vous avez terminé votre [migration vers Defender pour point de terminaison](switch-to-mde-overview.md#the-migration-process) !
 

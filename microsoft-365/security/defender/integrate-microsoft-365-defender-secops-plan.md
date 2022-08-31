@@ -3,7 +3,8 @@ title: Étape 1. Planifier la préparation des opérations Microsoft 365 Defende
 description: Principes de base de la planification de la préparation des opérations Microsoft 365 Defender lors de l’intégration de Microsoft 365 Defender dans vos opérations de sécurité.
 keywords: incidents, alertes, examiner, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365, réponse aux incidents, cyberattaque, étendues, opérations de sécurité, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 72535a88f6718724a4d87774d393a4ef0c6955a8
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: e4cae3512e9f4d856dd97f04f3678ac113d0ecb6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344456"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483143"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Étape 1. Planifier la préparation des opérations Microsoft 365 Defender
 

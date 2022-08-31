@@ -5,20 +5,20 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 Plan 2.
-ms.technology: mdo
-ms.openlocfilehash: 755b6b514027125f0570469ba3c683422b8d1edf
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.openlocfilehash: 7983e1767565870cec1fb3457fc3466e99b0d8db
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408084"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474202"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque dans Defender pour Office 365
 

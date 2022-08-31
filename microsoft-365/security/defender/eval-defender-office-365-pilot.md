@@ -3,7 +3,8 @@ title: Pilotez Microsoft Defender pour Office 365, utilisez l’évaluation dans
 description: Étapes de pilote de votre évaluation avec des groupes d’utilisateurs actifs et existants afin de tester correctement les fonctionnalités de Microsoft Defender pour Office 365.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,15 +21,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
-ms.technology: m365d
-ms.openlocfilehash: fb246805ebf38cddfda6fe308d19e1dd1419531b
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 9202923afc7e86e15a03b03e053e86590f4fae60
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748800"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482689"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365 pilote
 
@@ -158,7 +159,7 @@ Maintenant que votre pilote est configuré et configuré, il est utile de se fam
 |---|---|---|
 |Threat Explorer|L’Explorateur des menaces est un outil puissant en quasi-temps réel qui permet aux équipes des opérations de sécurité d’examiner et de répondre aux menaces et d’afficher des informations sur les programmes malveillants suspects et les hameçonnages dans les e-mails et les fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.|[Affichages dans l’Explorateur de menaces et détections en temps réel](../office-365-security/threat-explorer-views.md)|
 |Simulateur d’attaques|Vous pouvez utiliser l’apprentissage de simulation d’attaque dans le portail Microsoft 365 Defender pour exécuter des scénarios d’attaque réalistes dans votre organisation, qui vous aident à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’affecte votre environnement.|[Commencer à utiliser la formation à la simulation d’attaque](../office-365-security/attack-simulation-training-get-started.md)|
-|Tableau de bord rapports|Dans le menu de navigation de gauche, cliquez sur Rapports et développez l’en-tête e-mail & collaboration. Les rapports e-mail & collaboration traitent de la détection des tendances de sécurité dont certaines vous permettront d’agir (par le biais de boutons tels que « Accéder aux soumissions ») et d’autres qui afficheront des tendances, telles que le résumé de l’état du flux de courrier, les principaux programmes malveillants, les détections d’usurpation d’identité, les utilisateurs compromis, la latence du courrier, les liens sécurisés et les rapports de pièces jointes sécurisées. Ces métriques sont générées automatiquement.|[Afficher les rapports](../office-365-security/view-email-security-reports.md)|
+|Tableau de bord rapports|Dans le menu de navigation de gauche, cliquez sur Rapports et développez l’en-tête Email & collaboration. Les rapports de collaboration Email & portent sur la détection des tendances de sécurité, dont certaines vous permettront d’agir (par le biais de boutons tels que « Accéder aux soumissions ») et d’autres qui afficheront des tendances, telles que le résumé de l’état du flux de courrier, les principaux programmes malveillants, les détections d’usurpation d’identité, les utilisateurs compromis, la latence du courrier, les liens fiables et les rapports de pièces jointes sécurisées. Ces métriques sont générées automatiquement.|[Afficher les rapports](../office-365-security/view-email-security-reports.md)|
 |
 
 ## <a name="next-steps"></a>Prochaines étapes

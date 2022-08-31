@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft Purview, et configurez le test automatisé des actions. Gérez l’historique des utilisateurs et filtrez l’affichage de votre tableau de bord.
-ms.openlocfilehash: 940396ad6334e646a37a359f4ed73345056f51ef
-ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
+ms.openlocfilehash: 295ba35eeb454314adb364a0203b6d6c337c8ba8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67357453"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467940"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -155,7 +155,7 @@ L’administrateur général de votre organisation peut modifier les paramètres
 
 ### <a name="manage-user-history"></a>Gérer l’historique des utilisateurs
 
-Les paramètres **gérer l’historique des utilisateurs** vous aident à identifier rapidement les utilisateurs qui ont travaillé avec des actions d’amélioration dans le Gestionnaire de conformité. Les données utilisateur identifiables associées aux actions d’amélioration incluent tout travail d’implémentation et de test effectué, les documents qu’ils ont chargés et les notes qu’ils ont entrées. La compréhension et la récupération de ce type de données peuvent être nécessaires pour les propres besoins de conformité de votre organisation.
+Les paramètres **gérer l’historique des utilisateurs** vous aident à identifier rapidement les utilisateurs qui ont travaillé avec des actions d’amélioration dans le Gestionnaire de conformité. Les données utilisateur identifiables associées aux actions d’amélioration incluent l’état des actions d’amélioration et des documents qu’ils ont chargés. La compréhension et la récupération de ce type de données peuvent être nécessaires pour les propres besoins de conformité de votre organisation.
 
 Les paramètres d’historique utilisateur vous permettent également de réattribuer toutes les actions d’amélioration d’un utilisateur à un autre.
 

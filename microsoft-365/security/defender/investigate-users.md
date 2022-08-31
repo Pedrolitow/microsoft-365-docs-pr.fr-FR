@@ -2,7 +2,8 @@
 title: Examiner les utilisateurs dans Microsoft 365 Defender
 description: Examinez les utilisateurs à la recherche d’un incident dans le portail Microsoft 365 Defender.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, security center, monitor, rapport, identités, données, appareils, applications, incident, analyse, réponse
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -18,13 +19,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.technology: m365d
-ms.openlocfilehash: 75fa4b76017c8fcb1f0ab65b5ed88440c04f47d2
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 02d766d9d4cb29eac72f781259148b2cfe6992c6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051621"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474465"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
 

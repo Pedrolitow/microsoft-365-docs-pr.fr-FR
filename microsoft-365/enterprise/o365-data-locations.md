@@ -3,7 +3,7 @@ title: Emplacements des données Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/13/2022
+ms.date: 08/30/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: 8ece0439bafcb6c183cf57cef7648c6bfa3f62ee
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.openlocfilehash: b786892b99e2b67114c34006c77f2e394cba6f45
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67393107"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467918"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
@@ -37,9 +37,9 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 Recherchez des informations sur les engagements contractuels pour l’emplacement de stockage des données client au repos dans l’[Autorité de protection des données (DPA) et produits Microsoft](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
-Pour connaître l'emplacement des données Azure Active Directory, veuillez consulter la section [Résidences de données dans Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
+Pour les emplacements de données Azure Active Directory, consultez [Résidence des données dans Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
 
-Si l'adresse de facturation du client est en dehors de l'Europe et que le client a un abonnement à Office 365 Éducation, alors nonobstant la section « Localisation des données client au repos pour les services en ligne de base » du fichier OST, Microsoft peut fournir le locataire d'Office 365 du client, transférer les données client et stocker les données client au repos partout en Europe ou en Amérique du Nord.  Si l'adresse de facturation du client est en Europe et que le client a un abonnement à Office 365 Éducation, alors nonobstant la section « Localisation des données client au repos pour les services en ligne de base » du fichier OST, Microsoft peut fournir le locataire d'Office 365 du client, transférer les données client et stocker les données client en tout lieu au sein de l’Union européenne.
+Si votre adresse de facturation est en dehors de l’Europe et que vous disposez d’un abonnement Office 365 Éducation, malgré la section « Emplacement des données client au repos pour core Online Services » de l’OST, Microsoft peut approvisionner votre locataire Office 365, transférer vos données vers et stocker vos données au repos n’importe où en Europe ou Amérique du Nord.  Si votre adresse de facturation se trouve en Europe et que vous disposez d’un abonnement Office 365 Éducation, malgré la section « Emplacement des données client au repos pour core Online Services » de l’OST, Microsoft peut approvisionner votre locataire Office 365, transférer vos données et stocker vos données au repos n’importe où dans l’Union européenne.
 
 ## <a name="faq"></a>FAQ
 
@@ -5209,6 +5209,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Apprentissage Viva | Union européenne |
 | Yammer | Union européenne |
 | Formulaires | États-Unis |
+
 *Chaque service qui stocke les données client au repos dans Exchange Online, SharePoint Online ou OneDrive Entreprise, ou est déployé localement.
 </p></details>
 

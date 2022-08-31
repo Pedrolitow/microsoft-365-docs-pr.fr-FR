@@ -2,7 +2,8 @@
 title: Alerte suspecte d’activité d’adresse IP liée à la pulvérisation de mots de passe
 description: Classement des alertes pour l’activité suspecte d’adresse IP liée à la pulvérisation de mots de passe pour passer en revue les alertes et prendre les mesures recommandées pour corriger l’attaque et protéger votre réseau.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, appareils, utilisateurs, 365, microsoft, m365, mot de passe, pulvérisation, classification des alertes, classement des alertes, applications cloud, adresse IP suspecte
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: 621f52f4dc400d8a3afe56d3f6f08005547d7014
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 43b736b88e79091f27baba400819bac92a03cb2e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360559"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482951"
 ---
 # <a name="suspicious-password-spray-related-ip-activity"></a>Activité d’adresse IP suspecte liée à la pulvérisation de mots de passe
 

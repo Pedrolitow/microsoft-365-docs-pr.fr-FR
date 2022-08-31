@@ -4,7 +4,8 @@ description: Comment rediriger des comptes et des sessions de Defender pour Iden
 keywords: Microsoft 365 Defender, Prise en main de Microsoft 365 Defender, redirection du centre de sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,26 +20,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b5c122f01d37d066e0f20bf817ca45ad5c57480b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: c66794d8f09d93b2582938d3eda996be7f9b5400
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864624"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471056"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-identity-to-microsoft-365-defender"></a>Redirection de comptes de Microsoft Defender pour Identity vers Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 - Defender pour l’identité
 
 Ce guide explique comment router des comptes vers Microsoft 365 Defender en activant la redirection automatique de l’ancien portail Microsoft Defender pour Identity (portal.atp.azure.com) vers <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
-## <a name="what-to-expect"></a>À quoi s’attendre
+## <a name="what-to-expect"></a>À quoi s'attendre
 
 Une fois la redirection automatique activée, les comptes qui accèdent à l’ancien portail Microsoft Defender pour Identity à portal.atp.azure.com sont automatiquement routées vers le portail Microsoft 365 Defender à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">security.microsoft.com</a>.
 
@@ -54,7 +54,7 @@ Pour démarrer le routage des comptes vers Microsoft 365 Defender :
 
 1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
-1. Accédez à **Paramètres** >  **Identities** > **General** > **Portal redirection** ou [cliquez ici](https://security.microsoft.com/preferences2/portal_redirection).
+1. Accédez à la **redirection du portail** **général** > **Des identités de** >  **paramètres** >  ou [cliquez ici](https://security.microsoft.com/preferences2/portal_redirection).
 
     :::image type="content" source="../../media/portal-redirection.png" alt-text="Redirection du portail."lightbox="../../media/portal-redirection.png":::
 
@@ -74,7 +74,7 @@ Pour revenir à l’ancien portail Microsoft Defender pour Identity :
 
 1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> en tant qu’administrateur général ou utilisez et comptez avec des autorisations d’administrateur de sécurité dans Azure Active Directory.
 
-2. Accédez à **Paramètres** >  **Identities** > **General** > **Portal redirection** ou [ouvrez la page ici](https://security.microsoft.com/preferences2/portal_redirection).  
+2. Accédez à la **redirection du portail** **Général** > **des identités de** >  **paramètres** >  ou [ouvrez la page ici](https://security.microsoft.com/preferences2/portal_redirection).  
 
 3. Basculez le paramètre de redirection automatique sur **Désactivé**.
 

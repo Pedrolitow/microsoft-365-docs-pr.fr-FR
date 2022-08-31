@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Découvrez les vues de campagne dans Microsoft Defender pour Office 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5308770e4ddb72ead5e4d5dac7506c507aa407f6
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 7d705e77e7d288ea6cee594d02277d2c9bb54db1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739624"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473961"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -47,9 +47,9 @@ Regardez cette courte vidéo sur la façon dont les vues de campagne dans Micros
 
 ## <a name="what-is-a-campaign"></a>Qu’est-ce qu’une campagne ?
 
-Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par e-mail qui volent des informations d’identification et des données d’entreprise sont un secteur important et lucratif. À mesure que les technologies augmentent afin d’arrêter les attaques, les attaquants modifient leurs méthodes afin d’assurer la réussite continue.
+Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Email attaques qui volent des informations d’identification et des données d’entreprise sont un secteur important et lucratif. À mesure que les technologies augmentent afin d’arrêter les attaques, les attaquants modifient leurs méthodes afin d’assurer la réussite continue.
 
-Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant sur l’ensemble du service pour aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
+Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant sur l’ensemble du service pour aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Source d’attaque** : adresses IP sources et domaines de messagerie de l’expéditeur.
 - **Propriétés du message** : contenu, style et tonalité des messages.
@@ -60,16 +60,16 @@ Une campagne peut être de courte durée ou peut s’étendre sur plusieurs jour
 
 ## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Vues de campagne dans le portail Microsoft 365 Defender
 
-Les vues de campagne sont disponibles dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> **e-mail & campagnes de collaboration**\>, ou directement à .<https://security.microsoft.com/campaigns>
+Les vues de campagne sont disponibles dans le portail Microsoft 365 Defender à <https://security.microsoft.com> **l’adresse Email & campagnes de collaboration**\>, ou directement à <https://security.microsoft.com/campaigns>.
 
 :::image type="content" source="../../media/campaigns-overview.png" alt-text="Vue d’ensemble des campagnes dans le portail Microsoft 365 Defender" lightbox="../../media/campaigns-overview.png":::
 
 Vous pouvez également accéder aux vues de campagne à partir de :
 
-- Collaboration & \> **par e-mail** **Explorateur** \> **Vue** \> **Campagnes**
-- Collaboration & \> **par e-mail** **Explorateur** \> **Vue** \> **Tous les e-mails** \> **Onglet Campagne**
-- Collaboration & \> **par e-mail** **Explorateur** \> **Vue** \> **Phish** \> **Onglet Campagne**
-- Collaboration & \> **par e-mail** **Explorateur** \> **Vue** \> **Malware** \> **Onglet Campagne**
+- Email & campagnes  **d’affichage de** \> **l’Explorateur** \> **de collaboration** \>
+- Email &'onglet **Afficher** \> la **campagne** **de tous les e-mails** \> de **l’Explorateur** \> **de collaboration** \>
+- **Email &'onglet**  Campagne **de hameçonnage** \> **de l’Explorateur** \>  \> de collaboration \>
+-  onglet Campagne contre les **programmes malveillants** \> **de l’Explorateur**  \> \> de Email & collaboration  \>
 
 Pour accéder aux vues de campagne, vous devez être membre des groupes de **rôles Gestion de l’organisation**, **Administrateur de la sécurité** ou **Lecteur de sécurité** dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
@@ -92,7 +92,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Type** : cette valeur est **phish** ou **malware**.
 
-- **Sous-type** : cette valeur contient plus de détails sur la campagne. Par exemple :
+- **Sous-type** : cette valeur contient plus de détails sur la campagne. Par exemple :
   - **Phish**: Si disponible, la marque qui est hameçonnée par cette campagne. Par exemple, `Microsoft`, `365`, `Unknown`, `Outlook`ou `DocuSign`.
   - **Programme malveillant** : par exemple, `HTML/PHISH` ou `HTML/<MalwareFamilyName>`.
 
@@ -100,7 +100,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Destinataires** : nombre d’utilisateurs qui ont été ciblés par cette campagne.
 
-- **Boîte de réception** : nombre d’utilisateurs qui ont reçu des messages de cette campagne dans leur boîte de réception (non remis à leur dossier Courrier indésirable).
+- **Boîte de réception** : nombre d’utilisateurs qui ont reçu des messages de cette campagne dans leur boîte de réception (non remis à leur dossier Junk Email).
 
 - **Clic** : nombre d’utilisateurs qui ont cliqué sur l’URL ou ouvert la pièce jointe dans le message d’hameçonnage.
 
@@ -108,7 +108,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
   Notez que **le taux de clics** n’est pas utilisé dans les campagnes de programmes malveillants.
 
-- **Visité** : combien d’utilisateurs ont réussi à accéder au site web de la charge utile. S’il existe des valeurs **cliquées**, mais Coffre liens ont bloqué l’accès au site web, cette valeur sera égale à zéro.
+- **Visité** : combien d’utilisateurs ont réussi à accéder au site web de la charge utile. S’il existe des valeurs **cliquées** , mais que les liens sécurisés ont bloqué l’accès au site web, cette valeur sera égale à zéro.
 
 **L’onglet Origine** de la campagne affiche les sources de message sur une carte du monde.
 
@@ -145,9 +145,9 @@ Les propriétés de campagne filtrables disponibles dans le bouton **Type** de c
 
 - **Avancé** :
   - **ID de message Internet** : disponible dans le champ **d’en-tête Message-ID de l’en-tête** de message. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (notez les crochets d’angle).
-  - **ID de message réseau** : valeur GUID disponible dans le champ d’en-tête **X-MS-Exchange-Organization-Network-Message-Id dans l’en-tête** de message.
+  - **ID de message réseau** : valeur GUID disponible dans le champ d’en-tête **X-MS-Exchange-Organization-Network-Message-Id de l’en-tête** de message.
   - **IP de l’expéditeur**
-  - **Pièce jointe SHA256** : pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes : `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
+  - **Pièce jointe SHA256** : Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes : `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
   - **Cluster ID**
   - **ID d’alerte**
   - **ID de stratégie d’alerte**
@@ -173,7 +173,7 @@ Après avoir créé un filtre de base ou avancé, vous pouvez l’enregistrer à
 
 Pour exporter le graphique ou la liste des campagnes, cliquez sur **Exporter** et sélectionnez **Exporter les données du graphique** ou exporter la liste des **campagnes**.
 
-Si vous avez un abonnement Microsoft Defender pour point de terminaison, vous pouvez cliquer sur **MDE Paramètres** pour connecter ou déconnecter les informations de campagnes avec Microsoft Defender pour point de terminaison. Pour plus d’informations, consultez [Intégrer Microsoft Defender pour Office 365 à Microsoft Defender pour point de terminaison](integrate-office-365-ti-with-mde.md).
+Si vous avez un abonnement Microsoft Defender pour point de terminaison, vous pouvez cliquer sur **Paramètres MDE** pour connecter ou déconnecter les informations de campagnes avec Microsoft Defender pour point de terminaison. Pour plus d’informations, consultez [Intégrer Microsoft Defender pour Office 365 à Microsoft Defender pour point de terminaison](integrate-office-365-ti-with-mde.md).
 
 ## <a name="campaign-details"></a>Détails de la campagne
 
@@ -188,7 +188,7 @@ En haut de l’affichage des détails de la campagne, les informations de campag
 - Les données suivantes pour le filtre de plage de dates que vous avez sélectionné (ou que vous sélectionnez dans la chronologie) :
 - **Impact**
 - **Messages** : nombre total de destinataires.
-- **Boîte de réception** : nombre de messages qui ont été remis à la boîte de réception, et non au dossier Courrier indésirable.
+- **Boîte de réception** : nombre de messages qui ont été remis à la boîte de réception, et non au dossier Junk Email.
 - **Lien cliqué** : nombre d’utilisateurs qui ont cliqué sur la charge utile de l’URL dans le message de hameçonnage.
 - **Lien visité** : nombre d’utilisateurs qui ont visité l’URL.
 - **Ciblé (%)**: pourcentage calculé par : (nombre de destinataires de la campagne dans votre organisation) / (nombre total de destinataires de la campagne dans toutes les organisations du service). Notez que cette valeur est calculée pendant toute la durée de vie de la campagne et ne change pas en fonction des filtres de dates.
@@ -223,15 +223,15 @@ Le diagramme contient les informations suivantes :
   |**Date de publication**|`SFV:SKQ`|Le message a ignoré le filtrage du courrier indésirable, car il a été libéré de la quarantaine.|
   |**Autoriser le locataire**<sup>\*</sup>|`SFV:SKA`|Le message a ignoré le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
   |**Bloc de locataire**<sup>\*\*</sup>|`SFV:SKA`|Le message a été bloqué par le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
-  |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs Coffre d’un utilisateur.|
+  |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs approuvés d’un utilisateur.|
   |**Bloc d’utilisateur**<sup>\*\*</sup>|`SFV:BLK`|Le message a été bloqué par filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs bloqués d’un utilisateur.|
-  |**ZAP**|s/o|[Le vidage automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) a déplacé le message remis vers le dossier courrier indésirable ou la mise en quarantaine. Vous configurez l’action dans les [stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
+  |**ZAP**|s/o|[Le vidage automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) a déplacé le message remis vers le dossier junk Email ou la mise en quarantaine. Vous configurez l’action dans les [stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
 
   <sup>\*</sup> Passez en revue vos stratégies anti-courrier indésirable, car le message autorisé aurait probablement été bloqué par le service.
 
   <sup>\*\*</sup> Passez en revue vos stratégies anti-courrier indésirable, car ces messages doivent être mis en quarantaine et non remis.
 
-- **Destinations des messages** : vous souhaiterez probablement examiner les messages qui ont été remis aux destinataires (dans la boîte de réception ou le dossier Courrier indésirable), même si les utilisateurs n’ont pas cliqué sur l’URL de la charge utile dans le message. Vous pouvez également supprimer les messages mis en quarantaine de la mise en quarantaine. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).
+- **Destinations des messages** : vous souhaiterez probablement examiner les messages qui ont été remis aux destinataires (dans la boîte de réception ou le dossier Courrier indésirable Email), même si les utilisateurs n’ont pas cliqué sur l’URL de la charge utile dans le message. Vous pouvez également supprimer les messages mis en quarantaine de la mise en quarantaine. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).
   - **Dossier supprimé**
   - **Abandonné**
   - **Externe** : le destinataire se trouve dans votre organisation de messagerie locale dans des environnements hybrides.
@@ -249,14 +249,14 @@ Le diagramme contient les informations suivantes :
 
 #### <a name="url-clicks"></a>Clics d’URL
 
-Lorsqu’un message d’hameçonnage est remis au dossier Boîte de réception ou Courrier indésirable d’un destinataire, il est toujours possible que l’utilisateur clique sur l’URL de la charge utile. Le fait de ne pas cliquer sur l’URL est une petite mesure de réussite, mais vous devez déterminer pourquoi le message de hameçonnage a même été remis à la boîte aux lettres.
+Lorsqu’un message d’hameçonnage est remis au dossier Boîte de réception ou Courrier indésirable Email d’un destinataire, il est toujours possible que l’utilisateur clique sur l’URL de la charge utile. Le fait de ne pas cliquer sur l’URL est une petite mesure de réussite, mais vous devez déterminer pourquoi le message de hameçonnage a même été remis à la boîte aux lettres.
 
 Si un utilisateur a cliqué sur l’URL de charge utile dans le message de hameçonnage, les actions sont affichées dans la zone **de clics d’URL** du diagramme dans l’affichage des détails de la campagne.
 
 - **Autorisé**
-- **BlockPage** : le destinataire a cliqué sur l’URL de la charge utile, mais son accès au site web malveillant a été bloqué par une [stratégie de liens Coffre](safe-links.md) dans votre organisation.
-- **BlockPageOverride** : le destinataire a cliqué sur l’URL de charge utile dans le message, Coffre Liens a essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Inspectez vos [stratégies de liens Coffre](set-up-safe-links-policies.md) pour voir pourquoi les utilisateurs sont autorisés à remplacer le verdict Coffre Liens et à continuer sur le site web malveillant.
-- **PendingDetonationPage** : Coffre pièces jointes dans Microsoft Defender pour Office 365 est en cours d’ouverture et d’examen de l’URL de charge utile dans un environnement d’ordinateur virtuel.
+- **BlockPage** : le destinataire a cliqué sur l’URL de la charge utile, mais son accès au site web malveillant a été bloqué par une stratégie [liens fiables](safe-links.md) dans votre organisation.
+- **BlockPageOverride** : le destinataire a cliqué sur l’URL de charge utile dans le message, les liens sécurisés ont essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Inspectez vos [stratégies de liens fiables](set-up-safe-links-policies.md) pour voir pourquoi les utilisateurs sont autorisés à remplacer le verdict liens fiables et à continuer sur le site web malveillant.
+- **PendingDetonationPage** : les pièces jointes sécurisées dans Microsoft Defender pour Office 365 sont en cours d’ouverture et d’examen de l’URL de charge utile dans un environnement d’ordinateur virtuel.
 - **PendingDetonationPageOverride** : le destinataire a été autorisé à remplacer le processus de détonation de charge utile et à ouvrir l’URL sans attendre les résultats.
 
 ### <a name="tabs"></a>Onglets

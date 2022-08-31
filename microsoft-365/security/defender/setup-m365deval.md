@@ -4,7 +4,8 @@ description: Accédez Microsoft 365 Defender portail, puis configurez votre envi
 keywords: Microsoft 365 Defender configuration d’essai, Microsoft 365 Defender configuration pilote, essayez Microsoft 365 Defender, Microsoft 365 Defender configuration du laboratoire d’évaluation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,21 +18,21 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- highpri
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 5d516a7062d8c6f617cee2a260f27ee896689f2c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 116efc949edace902b8e71abb27f5c091407fb14
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667337"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482271"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Configurer votre version d’évaluation Microsoft 365 Defender dans un environnement lab 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender 
 
 Cette rubrique vous guide dans la configuration d’un environnement lab dédié. Pour plus d’informations sur la configuration d’un essai en production, consultez le nouveau guide [Évaluer et piloter Microsoft 365 Defender](eval-overview.md). 
@@ -71,7 +72,7 @@ Cette rubrique vous guide dans la configuration d’un environnement lab dédié
 
    :::image type="content" source="../../media/mtp-eval-15.png" alt-text="La page Office 365 E5 configuration de l’inscription d’essai vous invitant à cliquer sur le bouton Atteindre le programme d’installation" lightbox="../../media/mtp-eval-15.png":::
 
-8. Connecter votre domaine d’entreprise au locataire Office 365. [Facultatif] Choisissez **Connecter un domaine que vous possédez déjà** et tapez votre nom de domaine. Cliquez sur **Suivant**.
+8. Connectez votre domaine d’entreprise au locataire Office 365. [Facultatif] Choisissez **Connecter un domaine que vous possédez déjà** et tapez votre nom de domaine. Cliquez sur **Suivant**.
 
    :::image type="content" source="../../media/mtp-eval-16.png" alt-text="Page d’installation Office 365 E5 dans laquelle vous devez personnaliser votre connexion et votre e-mail" lightbox="../../media/mtp-eval-16.png":::
  
@@ -83,7 +84,7 @@ Cette rubrique vous guide dans la configuration d’un environnement lab dédié
 
     :::image type="content" source="../../media/mtp-eval-18.png" alt-text="Page d’installation Office 365 E5 où vous pouvez ajouter d’autres utilisateurs" lightbox="../../media/mtp-eval-18.png":::
  
-11. [Facultatif] Téléchargez Office applications. Cliquez sur **Suivant** pour ignorer cette étape. 
+11. [Facultatif] Téléchargez les applications Office. Cliquez sur **Suivant** pour ignorer cette étape. 
 
     :::image type="content" source="../../media/mtp-eval-19.png" alt-text="Page Office 365 E5 où vous pouvez installer vos applications Office" lightbox="../../media/mtp-eval-19.png":::
 
@@ -91,7 +92,7 @@ Cette rubrique vous guide dans la configuration d’un environnement lab dédié
 
     :::image type="content" source="../../media/mtp-eval-20.png" alt-text="Le Office 365 E5 où vous pouvez définir s’il faut ou non migrer des messages électroniques" lightbox="../../media/mtp-eval-20.png":::
  
-13. Choisissez services en ligne. Sélectionnez **Exchange**, puis cliquez sur **Suivant**. 
+13. Choisissez services en ligne. Sélectionnez **Exchange** , puis cliquez sur **Suivant**. 
 
     :::image type="content" source="../../media/mtp-eval-21.png" alt-text="Le Office 365 E5 où vous pouvez choisir votre services en ligne" lightbox="../../media/mtp-eval-21.png":::
 
@@ -104,10 +105,10 @@ Cette rubrique vous guide dans la configuration d’un environnement lab dédié
     :::image type="content" source="../../media/mtp-eval-23.png" alt-text="Page de confirmation de la fin de la configuration Office 365 E5" lightbox="../../media/mtp-eval-23.png":::
     
 
-## <a name="enable-microsoft-365-trial-subscription"></a>Activer Microsoft 365 abonnement d’évaluation
+## <a name="enable-microsoft-365-trial-subscription"></a>Activer l’abonnement d’évaluation Microsoft 365
 
 >[!NOTE]
->L’inscription à une version d’évaluation vous donne 25 licences utilisateur à utiliser pendant un mois. Pour plus d’informations, consultez [Essayer ou acheter un abonnement Microsoft 365](../../commerce/try-or-buy-microsoft-365.md).
+>L’inscription à une version d’évaluation vous donne 25 licences utilisateur à utiliser pendant un mois. Pour plus d’informations, consultez [Essayer ou acheter un abonnement Microsoft 365](../../commerce/try-or-buy-microsoft-365.md) .
 
 1. Dans [Administration Microsoft 365 Centre](https://admin.microsoft.com/), cliquez sur **Facturation**, puis accédez à **Acheter des services**.
 
@@ -127,7 +128,7 @@ Cette rubrique vous guide dans la configuration d’un environnement lab dédié
 
    :::image type="content" source="../../media/mtp-eval-27.png" alt-text="La page Microsoft 365 E5 Démarrer la version d’évaluation gratuite où vous devez horloger le bouton Essayer maintenant pour démarrer" lightbox="../../media/mtp-eval-27.png":::
  
-6. Accédez à **l’Administration Microsoft 365** **utilisateurs CenterUsersActive** >  > . Sélectionnez votre compte d’utilisateur, sélectionnez **Gérer les licences de produit**, puis remplacez la licence de Office 365 E5 par **Microsoft 365 E5**. Cliquez sur **Enregistrer**.
+6. Accédez à l’Administration Microsoft 365 **Utilisateurs actifs** >  **du Centre** > . Sélectionnez votre compte d’utilisateur, sélectionnez **Gérer les licences de produit**, puis remplacez la licence de Office 365 E5 par **Microsoft 365 E5**. Cliquez sur **Enregistrer**.
 
    :::image type="content" source="../../media/mtp-eval-28.png" alt-text="Page centre Administration Microsoft 365 dans laquelle vous pouvez sélectionner la licence Microsoft 365 E5" lightbox="../../media/mtp-eval-28.png":::
  

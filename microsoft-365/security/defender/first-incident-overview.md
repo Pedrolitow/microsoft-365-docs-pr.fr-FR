@@ -3,7 +3,8 @@ title: Réponse à votre premier incident
 description: Principes de base de la réponse à votre premier incident dans Microsoft 365 Defender.
 keywords: incidents, alertes, examen, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365, réponse aux incidents, cyberattaque, auto-étude, montée en puissance, montée en puissance, intégration, répondeur d’incident
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 3774d4bbf68196b5253bdfa4d5c55a0bf4014728
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: deeda4f3a09c548d8368f65ba0e26289faa88120
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66895138"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470096"
 ---
 # <a name="responding-to-your-first-incident"></a>Réponse à votre premier incident
 

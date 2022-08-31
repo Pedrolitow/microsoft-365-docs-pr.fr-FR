@@ -3,7 +3,8 @@ title: Rôles personnalisés pour le contrôle d’accès en fonction du rôle
 description: Découvrez comment gérer des rôles personnalisés dans le portail Microsoft 365 Defender
 keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Sécurité des applications infonuagiques, Microsoft Defender pour point de terminaison , étendue, étendue, RBAC, accès en fonction des rôles, accès personnalisé basé sur les rôles, authentification basée sur les rôles, RBAC dans MDO, rôles, groupes de rôles, héritage des autorisations, autorisations affinées
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: f36e57af9cf1c593ba157454bdfe90b840094c02
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: db9cd679fd5c8fe49384655b7bb94925252a6be1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344578"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482315"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Rôles personnalisés dans le contrôle d’accès en fonction du rôle pour Microsoft 365 Defender
 

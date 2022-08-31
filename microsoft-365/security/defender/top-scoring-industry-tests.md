@@ -3,7 +3,8 @@ title: Test le plus élevé parmi les tests du secteur d’activité – Microso
 ms.reviewer: ''
 description: Consultez les analyses et les scores les plus récents de Microsoft 365 Defender. La solution réalise constamment les meilleurs scores en tests indépendants (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Affichez les analyses et les scores les plus récents.
 keywords: Antivirus Microsoft Defender, Antivirus Microsoft Defender, évaluations de l’antivirus, test de l’antivirus, test antivirus, scores antivirus les plus récents, test de sécurité du produit, tests de sécurité du secteur d’activité, tests antivirus du secteur d’activité, meilleur antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, plateforme de protection de point de terminaison, EPP, détection et réponse du point de terminaison, EDR, Windows 10, Windows 11, Antivirus Microsoft Defender, WDAV, Microsoft Defender pour point de terminaison, Microsoft 365 Defender, sécurité, logiciel malveillant, av, antivirus, scores, score, protection de nouvelle génération, classement, succès
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: high
@@ -14,13 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: a61590b614631b738198001a56e29096d4a7d957
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
-ms.translationtype: HT
+ms.openlocfilehash: 02d996e9e2da6083b228a55bb4a173601a378dcb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731304"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474685"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Test le plus élevé parmi les tests du secteur d’activité
 

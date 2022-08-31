@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment implémenter et tester des contrôles en travaillant avec des actions d’amélioration dans le Gestionnaire de conformité Microsoft Purview. Attribuez des rapports de travail, de stockage de documentation et d’exportation.
-ms.openlocfilehash: 4eb75e23825e8e60fc0ea3ecfcbb75e1292ac5e9
-ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.openlocfilehash: 6388a4e1c4ce73e29481e1e1daa0ee27d733ed8b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67333761"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472961"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Utilisation des actions d’amélioration dans le Gestionnaire de conformité
 
@@ -154,7 +154,7 @@ Le Gestionnaire de conformité vous propose des options pour tester les actions 
 Les actions d’amélioration définies pour les tests manuels sont des actions que vous testez et implémentez manuellement. Vous définissez les états d’implémentation et d’état de test nécessaires, puis chargez tous les fichiers de preuve sous l’onglet **Documents** . Pour certaines actions, il s’agit de la seule méthode disponible pour tester les actions d’amélioration.
 
 #### <a name="automatic-testing-source"></a>Source de test automatique
-Certaines actions d’amélioration peuvent être automatiquement testées par le Gestionnaire de conformité. [Obtenez des détails sur les](compliance-manager-improvement-actions.md#update-testing-source) actions d’amélioration qui peuvent et ne peuvent pas être testées automatiquement.
+Certaines actions d’amélioration peuvent être automatiquement testées par le Gestionnaire de conformité. [Obtenez des détails sur les](compliance-manager-setup.md#set-up-automated-testing) actions d’amélioration qui peuvent et ne peuvent pas être testées automatiquement.
 
 Pour les actions d’amélioration qui peuvent être testées automatiquement, vous verrez l’option **Automatique** pour tester la source. Le Gestionnaire de conformité détecte les signaux provenant d’autres solutions de conformité que vous avez configurées dans votre environnement Microsoft 365, ainsi que toutes les actions complémentaires que Microsoft Secure Score surveille également. Le champ **Logique de test** sous l’onglet **Test** indique le type de stratégie ou de configuration requis dans une autre solution afin que l’action passe et gagne des points vers votre score de conformité.
 

@@ -8,17 +8,17 @@ manager: dolmont
 audience: ITPro
 ms.topic: article
 ms.date: 05/30/2022
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-ms.technology: m365d
 f1.keywords: NOCSH
-ms.openlocfilehash: aaf672f8ec913b8d0e206f9d630452bac36185ee
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.openlocfilehash: a3e0cc3c79829ad5a13a6da29858d6d7c60cf322
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445091"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469797"
 ---
 # <a name="responding-to-ransomware-attacks"></a>Réponse aux attaques par rançongiciels
 

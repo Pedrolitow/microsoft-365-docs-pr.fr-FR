@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Découvrez les actions de correction dans les fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: aaa444a2bada254aeed83540aee361ed806ab0a0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f7a8c1b4ae7df1d69d48dbcb1f1954e4fae3e51b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649118"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468700"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
@@ -47,7 +47,7 @@ Il existe quatre façons différentes de rechercher et d’effectuer des actions
 
 - [File d’attente d’incidents](https://security.microsoft.com/incidents)
 - Investigation proprement dite (accessible via un incident ou à partir d’une alerte)
-- [Centre de notifications](https://security.microsoft.com/action-center/pending)
+- [Centre d’action](https://security.microsoft.com/action-center/pending)
 - [File d’attente d’investigations et de corrections](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>File d’attente d’incidents
@@ -68,7 +68,7 @@ Il existe quatre façons différentes de rechercher et d’effectuer des actions
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>File d’attente d’investigations et de corrections
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **d’enquête** sur les **menaces** à **l’adresse e-mail &** investigations de collaboration\>. Pour accéder directement à la page **d’enquête sur les menaces** , utilisez <https://security.microsoft.com/airinvestigation>.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Enquête sur les menaces** à **l’adresse Email &** **Investigations de** collaboration\>. Pour accéder directement à la page **d’enquête sur les menaces** , utilisez <https://security.microsoft.com/airinvestigation>.
 2. Dans la page **d’enquête sur les menaces** , recherchez et un élément de la liste dont l’état est **En attente d’action**.
 3. Cliquez sur ![Ouvrir dans l’icône Nouvelle fenêtre.](../../media/m365-cc-sc-open-icon.png) **Ouvrez dans une nouvelle fenêtre** l’heure de la liste (entre **l’ID** et **l’état**).
 4. Dans la page qui s’ouvre, effectuez des actions d’approbation ou de rejet.
@@ -86,15 +86,15 @@ Il existe deux façons différentes de reconsidérer les actions soumises :
 2. Dans la page **Centre d’actions** , sélectionnez l’onglet **Historique** , puis sélectionnez l’action que vous souhaitez modifier ou annuler.
 3. Dans le volet à droite de l’écran, sélectionnez l’action appropriée (**accéder à la boîte de réception**, **passer à la boîte de** réception, **accéder aux éléments supprimés**, **supprimer de manière réversible** ou **supprimer en dur**).
 
-## <a name="change-or-undo-through-the-office-action-center"></a>Modifier ou annuler via le centre d’action Office
+## <a name="change-or-undo-through-the-office-action-center"></a>Modifier ou annuler via le centre d’actions Office
 
-1. Dans le portail Microsoft 365 Defender, accédez au <https://security.microsoft.com>centre d’action Office du **Centre** d’action **e-mail & collaboration** \> **.** \> Pour accéder directement au centre d’action Office, utilisez <https://security.microsoft.com/threatincidents>.
+1. Dans le portail Microsoft 365 Defender, accédez au <https://security.microsoft.com>Centre d’action Office à Email & **centre d’action** de **révision** \> de **collaboration**\>. Pour accéder directement au centre d’action Office, utilisez <https://security.microsoft.com/threatincidents>.
 2. Dans la page **Centre d’actions** , sélectionnez la correction appropriée.
 3. Dans le volet latéral, cliquez sur l’entrée des soumissions de courrier et attendez le chargement de la liste.
 4. Attendez que le bouton Action en haut active et sélectionnez le bouton Action pour modifier le type d’action.
 5. Cela crée les actions appropriées.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Utiliser l’Explorateur de menaces](threat-explorer.md)
 - [Administration /Actions manuelles](remediate-malicious-email-delivered-office-365.md)

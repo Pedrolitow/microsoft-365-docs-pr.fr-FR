@@ -5,7 +5,8 @@ description: Découvrez les étapes à suivre pour commencer à utiliser Microso
 keywords: prise en main, Microsoft 365 Defender, activer, intégrer, déployer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,15 +18,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-getstarted
+- highpri
 ms.custom: intro-get-started
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 7cc3a28062ffa052d42172adabb72443eb5b10bb
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: a4b9d0ad556f78fef0338de94a256cb13114dda2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893494"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483033"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Prise en main de Microsoft 365 Defender
 

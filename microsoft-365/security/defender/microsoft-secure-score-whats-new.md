@@ -2,11 +2,12 @@
 title: Nouveautés de Microsoft Secure Score
 description: Décrit les nouvelles modifications apportées au score de sécurité Microsoft dans le portail Microsoft 365 Defender.
 keywords: score de sécurité Microsoft, degré de sécurisation, score de sécurité Office 365, score de sécurité Microsoft, portail Microsoft 365 Defender
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -20,13 +21,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.technology: m365d
-ms.openlocfilehash: 6f478959d8e6de84ad64fdc128c4f7a9eea73a62
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: e5bea982a1cbc776a9529532bbbac4da4199fb4a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369134"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482579"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure Score
 

@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 28273f2445784ea269364f62a49bdc6ba871b960
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: ff0abacf0961bf1df7751ca3e1fca8293902887c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388256"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474070"
 ---
 # <a name="corporate-communications-with-frontline-workers"></a>Communications d’entreprise avec les employés de première ligne
 
@@ -36,11 +36,9 @@ Gardez votre équipe de première ligne connectée à l’ensemble de votre orga
 
 Engagez et informez les employés à l’aide de Viva Connections. Viva Connections crée un hub dans Teams où votre équipe de première ligne peut afficher un flux d’actualités personnalisé de votre organisation et un tableau de bord personnalisé avec les ressources dont elle a besoin. Lorsque les employés utilisent Viva Connections, ils sont en mesure d’obtenir plus rapidement des informations importantes, ce qui signifie que les responsables n’ont pas à consacrer un temps précieux au relais d’informations actualisées. Informations clés de surface, actualités personnalisées, tâches, annonces et autres ressources sur le Tableau de bord Viva Connections. Par exemple, un détaillant peut partager de nouvelles annonces de produits et de promotion avec ses collaborateurs, ou un coordinateur de coordinateurs pour une association peut partager des objectifs trimestriels avec des volontaires.
 
-
 | Vue d’un employé de vente au détail  |Vue d’un gestionnaire de vente au détail                  | 
 | :------------------- | :------------------- |
 | ![Capture d’écran du tableau de bord Viva Connections sur un appareil mobile affichant des informations pour un employé de la vente au détail.](media/frontline-worker-1.png)  | ![Capture d’écran du tableau de bord Viva Connections sur un appareil mobile affichant des informations pour un responsable commercial.](media/frontline-worker-2.png) | 
-
 
 Apprenez-en davantage sur [Viva Connections](/sharepoint/viva-connections-overview) et permettez à vos employés et vendeurs de commencer à l’aide de [Viva Connections dans Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b).
 

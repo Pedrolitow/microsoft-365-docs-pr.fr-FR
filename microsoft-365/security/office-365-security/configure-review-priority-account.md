@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Découvrez comment identifier les personnes critiques d’une organisation et ajouter la balise de compte prioritaire pour leur fournir une protection supplémentaire.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 466061562ba0ccc1a33a9fe6ca58073196f4f7e0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: ff8617f84c7e774d2dd119f3706ad08ea7591e31
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492179"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482557"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes Priority dans Microsoft Defender pour Office 365
 
@@ -40,7 +40,7 @@ Les comptes prioritaires sont plus souvent ciblés par des attaquants et sont g�
 
 La protection de compte prioritaire est activée par défaut pour les utilisateurs critiques pré-identifiés. Toutefois, l’administrateur de sécurité de votre organisation peut également activer la protection de compte prioritaire en procédant comme suit :
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **e-mail &** **protection du compte Priorité** de collaboration\>. Pour accéder directement à la page **de protection du compte Priority** , utilisez <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Settings** \> **Email & collaboration** \> **Priority account protection**. Pour accéder directement à la page **de protection du compte Priority** , utilisez <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
 2. Dans la page **Protection du compte Prioritaire** , activez **la protection du compte Priority** (:::image type="icon" source="../../media/scc-toggle-on.png" border="false":::).
 
@@ -94,12 +94,12 @@ Le rapport **d’état de la protection contre les menaces** est une vue unique 
 
 Pour afficher le rapport, procédez comme suit :
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Rapports** \> **e-mail & collaboration** \> **E-mail & rapports** \> de collaboration recherchez **l’état de la protection contre les menaces**, puis cliquez sur **Afficher les détails**. Pour accéder directement au rapport, utilisez <https://security.microsoft.com/reports/TPSAggregateReportATP>.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Rapports** \> **Email & collaboration** \> **Email & les rapports** \> de collaboration recherchent l’état **de la protection contre les menaces**, puis cliquez sur **Afficher les détails**. Pour accéder directement au rapport, utilisez <https://security.microsoft.com/reports/TPSAggregateReportATP>.
 
 2. La vue par défaut est **Afficher les données par vue d’ensemble**. Cliquez sur cette valeur pour modifier l’affichage en sélectionnant l’une des valeurs suivantes :
-   - **Afficher les données par phish par e-mail \>**
-   - **Afficher les données par programme malveillant par e-mail \>**
-   - **Afficher les données par courrier indésirable par e-mail \>**
+   - **Afficher les données par Email \> Phish**
+   - **Afficher les données par Email \> malware**
+   - **Afficher les données par Email \> Spam**
 
 3. Cliquez sur l’icône ![Filtrer.](../../media/m365-cc-sc-filter-icon.png) **Filtre**.
 
@@ -113,7 +113,7 @@ Le filtre de contexte dans l’Explorateur de menaces permet de rechercher des e
 
 Pour afficher la protection supplémentaire dans l’Explorateur de menaces, procédez comme suit :
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Email & Collaboration** \> **Explorer**. Pour accéder directement à la page **Explorateur de menaces** , utilisez <https://security.microsoft.com/threatexplorer>.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à Email & **Explorateur** **de collaboration**\>. Pour accéder directement à la page **Explorateur de menaces** , utilisez <https://security.microsoft.com/threatexplorer>.
 
 2. Sélectionnez **Contexte** dans la liste déroulante, puis cochez la case en regard de **la protection du compte Priority**.
 
@@ -126,7 +126,7 @@ La page d’entité d’e-mail est disponible dans **l’Explorateur de menaces*
 
 Les onglets situés en haut de la page d’entité vous permettent d’examiner efficacement les e-mails. Cliquez sur l’onglet **Analyse** . La protection des comptes prioritaires est désormais répertoriée sous **Les détails de la détection des menaces**.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - [Balises utilisateur dans Microsoft Defender pour Office 365](user-tags.md)
 - [Gérer et surveiller les comptes prioritaires](../../admin/setup/priority-accounts.md)

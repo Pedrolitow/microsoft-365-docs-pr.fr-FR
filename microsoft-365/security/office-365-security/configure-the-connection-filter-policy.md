@@ -17,33 +17,33 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les e-mails des serveurs de messagerie.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0c09f445bf3d204f9e22d116dc9fda4c3fea9735
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 1e82df7ac66b11b323d88c00d29a89d7c9d3e237
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974122"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483099"
 ---
 # <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) sans Exchange Online  boîtes aux lettres, vous utilisez le filtrage des connexions dans EOP (en particulier, la stratégie de filtre de connexion par défaut) pour identifier les serveurs de courrier source bons ou incorrects par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
+Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier, la stratégie de filtre de connexion par défaut) pour identifier les serveurs de courrier source corrects ou incorrects par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
 
 - **Liste verte IP** : ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios où le filtrage du courrier indésirable peut toujours se produire sur les messages de ces sources, consultez les [scénarios où les messages provenant de sources dans la liste d’autorisations IP sont toujours filtrés](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) plus loin dans cet article. Pour plus d’informations sur la façon dont la liste d’autorisations IP doit s’intégrer à votre stratégie globale d’expéditeurs sécurisés, consultez [Créer des listes d’expéditeurs sécurisés dans EOP](create-safe-sender-lists-in-office-365.md).
 
 - **Liste de blocage IP** : bloquez tous les messages entrants des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire n’est effectué. Pour plus d’informations sur la façon dont la liste de blocs IP doit s’intégrer à votre stratégie globale d’expéditeurs bloqués, consultez [Créer des listes d’expéditeurs de blocs dans EOP](create-block-sender-lists-in-office-365.md).
 
-- **Coffre liste** : la *liste sécurisée* est une liste verte dynamique dans le centre de données Microsoft qui ne nécessite aucune configuration du client. Microsoft identifie ces sources de messagerie approuvées à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste sécurisée. Le filtrage du courrier indésirable est ignoré sur les messages entrants des serveurs de messagerie de la liste sécurisée.
+- **Liste sécurisée** : la *liste sécurisée* est une liste verte dynamique dans le centre de données Microsoft qui ne nécessite aucune configuration du client. Microsoft identifie ces sources de messagerie approuvées à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste sécurisée. Le filtrage du courrier indésirable est ignoré sur les messages entrants des serveurs de messagerie de la liste sécurisée.
 
-Cet article explique comment configurer la stratégie de filtre de connexion par défaut dans le portail Microsoft 365 Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ; PowerShell EOP autonome pour les organisations sans boîte aux lettres Exchange Online). Pour plus d’informations sur la façon dont EOP utilise le filtrage des connexions fait partie des paramètres anti-courrier indésirable globaux de votre organisation, consultez [La protection anti-courrier indésirable](anti-spam-protection.md).
+Cet article explique comment configurer la stratégie de filtre de connexion par défaut dans le portail Microsoft 365 Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online boîtes aux lettres). Pour plus d’informations sur la façon dont EOP utilise le filtrage des connexions fait partie des paramètres anti-courrier indésirable globaux de votre organisation, consultez [La protection anti-courrier indésirable](anti-spam-protection.md).
 
 > [!NOTE]
 > La liste d’adresses IP autorisées, la liste sécurisée et la liste des blocs d’adresses IP font partie de votre stratégie globale pour autoriser ou bloquer les e-mails dans votre organisation. Pour plus d’informations, consultez [Créer des listes d’expéditeurs sécurisés](create-safe-sender-lists-in-office-365.md) et [Créer des listes d’expéditeurs bloqués](create-block-sender-lists-in-office-365.md).
@@ -167,7 +167,7 @@ Les sections suivantes identifient les éléments supplémentaires que vous deve
 
 ### <a name="skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range"></a>Ignorer le filtrage du courrier indésirable pour une adresse IP CIDR en dehors de la plage disponible
 
-Comme décrit précédemment dans cet article, vous pouvez uniquement utiliser une adresse IP CIDR avec le masque réseau /24 à /32 dans la liste d’autorisations IP. Pour ignorer le filtrage du courrier indésirable sur les messages des serveurs de messagerie source de la plage /1 à /23, vous devez utiliser Exchange règles de flux de courrier (également appelées règles de transport). Toutefois, nous vous recommandons de ne pas le faire si possible, car les messages seront bloqués si une adresse IP de la plage d’adresses IP CIDR /1 à /23 apparaît sur l’une des listes de blocs propriétaires ou tierces de Microsoft.
+Comme décrit précédemment dans cet article, vous pouvez uniquement utiliser une adresse IP CIDR avec le masque réseau /24 à /32 dans la liste d’autorisations IP. Pour ignorer le filtrage du courrier indésirable sur les messages des serveurs de messagerie source de la plage /1 à /23, vous devez utiliser des règles de flux de messagerie Exchange (également appelées règles de transport). Toutefois, nous vous recommandons de ne pas le faire si possible, car les messages seront bloqués si une adresse IP de la plage d’adresses IP CIDR /1 à /23 apparaît sur l’une des listes de blocs propriétaires ou tierces de Microsoft.
 
 Maintenant que vous êtes pleinement conscient des problèmes potentiels, vous pouvez créer une règle de flux de courrier avec les paramètres suivants (au minimum) pour vous assurer que les messages de ces adresses IP ignorent le filtrage du courrier indésirable :
 
@@ -180,7 +180,7 @@ Vous pouvez auditer la règle, tester la règle, activer la règle pendant une p
 
 En règle générale, l’ajout d’une adresse IP ou d’une plage d’adresses à la liste d’autorisations IP signifie que vous approuvez tous les messages entrants de cette source de messagerie. Mais que se passe-t-il si cette source envoie des e-mails à partir de plusieurs domaines et que vous souhaitez ignorer le filtrage du courrier indésirable pour certains de ces domaines, mais pas pour d’autres ? Vous ne pouvez pas utiliser la liste d’autorisation IP seule pour ce faire, mais vous pouvez utiliser la liste d’autorisation IP en combinaison avec une règle de flux de messagerie.
 
-Par exemple, le serveur de messagerie source 192.168.1.25 envoie des e-mails à partir des domaines contoso.com, fabrikam.com et tailspintoys.com, mais vous ne souhaitez ignorer le filtrage du courrier indésirable pour les messages des expéditeurs dans fabrikam.com. Pour ce faire, procédez comme suit :
+Par exemple, le serveur de messagerie source 192.168.1.25 envoie des e-mails à partir des domaines contoso.com, fabrikam.com et tailspintoys.com, mais vous ne souhaitez ignorer le filtrage du courrier indésirable pour les messages des expéditeurs dans fabrikam.com. Pour ce faire, utilisez la procédure suivante :
 
 1. Ajoutez 192.168.1.25 à la liste d’autorisations IP.
 
@@ -193,7 +193,7 @@ Par exemple, le serveur de messagerie source 192.168.1.25 envoie des e-mails à 
 
 Les messages d’un serveur de messagerie dans votre liste d’autorisations IP sont toujours soumis au filtrage du courrier indésirable dans les scénarios suivants :
 
-- Une adresse IP dans votre liste d’autorisations IP est également configurée dans un connecteur entrant local basé sur IP dans *n’importe quel* locataire de Microsoft 365 (appelons ce locataire A), **et** le locataire A et le serveur EOP qui rencontrent d’abord le message se trouve dans *la même* forêt Active Directory dans les centres de données Microsoft. Dans ce scénario, **IPV:CAL** *est* ajouté aux [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md) du message (indiquant que le message a contourné le filtrage du courrier indésirable), mais le message est toujours soumis au filtrage du courrier indésirable.
+- Une adresse IP dans votre liste d’autorisations IP est également configurée dans un connecteur entrant local basé sur IP dans *n’importe quel* locataire dans Microsoft 365 (appelons ce locataire A), **et** le locataire A et le serveur EOP qui rencontrent d’abord le message se trouve dans *la même* forêt Active Directory dans les centres de données Microsoft. Dans ce scénario, **IPV:CAL** *est* ajouté aux [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md) du message (indiquant que le message a contourné le filtrage du courrier indésirable), mais le message est toujours soumis au filtrage du courrier indésirable.
 
 - Votre locataire qui contient la liste d’autorisations IP et le serveur EOP qui rencontre le message se trouve dans *différentes* forêts Active Directory dans les centres de données Microsoft. Dans ce scénario, **IPV:CAL** *n’étant pas* ajouté aux en-têtes de message, le message est toujours soumis au filtrage du courrier indésirable.
 
@@ -206,4 +206,4 @@ Si vous rencontrez l’un de ces scénarios, vous pouvez créer une règle de fl
 
 ****
 
-![Petit icône de LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Microsoft 365 ?** Découvrez des cours vidéo gratuits pour **les administrateurs Microsoft 365 et les professionnels de l’informatique, proposés** par LinkedIn Learning.
+![Petit icône de LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Microsoft 365 ?** Découvrez des cours vidéo gratuits pour **les administrateurs microsoft 365 et les professionnels de l’informatique, proposés** par LinkedIn Learning.

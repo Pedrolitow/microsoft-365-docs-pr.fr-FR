@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f5d1b60a2fea570375f4b85170af016fdcfacf71
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 6712359eeff1ee57ef75caea6e46452394062c43
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087635"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482359"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 

@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres asf (Advanced Spam Filter) disponibles dans les stratégies anti-courrier indésirable dans Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 75fca937049e71576e1dd599b4cc0f7fba2a2211
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 67b35aceb9507683ebe83c7a5bcde2c2bcec4d94
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647664"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473610"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres asf (Advanced Spam Filter) dans EOP
 
@@ -32,7 +32,7 @@ ms.locfileid: "65647664"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans toutes les organisations Microsoft 365, les paramètres ASF (Advanced Spam Filter) dans les stratégies anti-courrier indésirable dans EOP permettent aux administrateurs de marquer les messages comme courrier indésirable en fonction de propriétés de message spécifiques. ASF cible spécifiquement ces propriétés, car elles se trouvent généralement dans le courrier indésirable. Selon la propriété, les détections ASF marquent le message comme **courrier indésirable** ou **courrier indésirable à haut niveau de confiance**.
+Dans toutes les organisations Microsoft 365, les paramètres asf (Advanced Spam Filter) dans les stratégies anti-courrier indésirable dans EOP permettent aux administrateurs de marquer les messages comme courrier indésirable en fonction de propriétés de message spécifiques. ASF cible spécifiquement ces propriétés, car elles se trouvent généralement dans le courrier indésirable. Selon la propriété, les détections ASF marquent le message comme **courrier indésirable** ou **courrier indésirable à haut niveau de confiance**.
 
 > [!NOTE]
 > L’activation d’un ou de plusieurs paramètres ASF est une approche agressive du filtrage du courrier indésirable. Vous ne pouvez pas signaler les messages filtrés par ASF en tant que faux positifs. Vous pouvez identifier les messages qui ont été filtrés par ASF par :
@@ -94,4 +94,4 @@ Les paramètres **ASF Mark as spam** suivants définissent la liste SCL des mess
 |Paramètre de stratégie anti-courrier indésirable|Description|En-tête X ajouté|
 |---|---|---|
 |**Échec du filtrage de l’ID de l’expéditeur** <p> *MarkAsSpamFromAddressAuthFail*|Les messages qui échouent fortement à une vérification conditionnelle de l’ID de l’expéditeur sont marqués comme courrier indésirable. <p> Ce paramètre combine une vérification SPF avec une vérification d’ID d’expéditeur pour vous protéger contre les en-têtes de message qui contiennent des expéditeurs falsifiés. <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: SPF From Record Fail`|
-|**Rétrodiffusion** <p> *MarkAsSpamNdrBackscatter*|*La rétrodiffusion* est un rapport de non-remise inutile (également appeléS DNR ou messages de rebond) causé par des expéditeurs falsifiés dans les messages électroniques. Pour plus d’informations, consultez [Les messages de rétrodiffusion et EOP](backscatter-messages-and-eop.md). <p> Vous n’avez pas besoin de configurer ce paramètre dans les environnements suivants, car les DNR légitimes sont remis et la rétrodiffusion est marquée comme courrier indésirable : <ul><li>Microsoft 365 organisations avec des boîtes aux lettres Exchange Online.</li><li>Organisations de messagerie locales où vous routez le courrier *sortant* via Exchange Online Protection (EOP).</li></ul> <p> Dans les environnements EOP autonomes qui protègent les e-mails entrants vers des boîtes aux lettres locales, l’activation ou la désactivation de ce paramètre a le résultat suivant : <ul><li> **Activé** : Les DNR légitimes sont remises et la rétrodiffusion est marquée comme courrier indésirable.</li><li>**Désactivé** : les DNR légitimes et la rétrodiffusion passent par un filtrage normal du courrier indésirable. La plupart des NDR légitimes seront remises à l’expéditeur du message d’origine. Certains, mais pas tous, la rétrodiffusion est marquée comme courrier indésirable. Par définition, la rétrodiffusion ne peut être remise qu’à l’expéditeur usurpé, et non à l’expéditeur d’origine.</li></ul> <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: Backscatter NDR`|
+|**Rétrodiffusion** <p> *MarkAsSpamNdrBackscatter*|*La rétrodiffusion* est un rapport de non-remise inutile (également appeléS DNR ou messages de rebond) causé par des expéditeurs falsifiés dans les messages électroniques. Pour plus d’informations, consultez [Les messages de rétrodiffusion et EOP](backscatter-messages-and-eop.md). <p> Vous n’avez pas besoin de configurer ce paramètre dans les environnements suivants, car les DNR légitimes sont remis et la rétrodiffusion est marquée comme courrier indésirable : <ul><li>Organisations Microsoft 365 avec des boîtes aux lettres Exchange Online.</li><li>Organisations de messagerie locales où vous routez le courrier *sortant* via Exchange Online Protection (EOP).</li></ul> <p> Dans les environnements EOP autonomes qui protègent les e-mails entrants vers des boîtes aux lettres locales, l’activation ou la désactivation de ce paramètre a le résultat suivant : <ul><li> **Activé** : Les DNR légitimes sont remises et la rétrodiffusion est marquée comme courrier indésirable.</li><li>**Désactivé** : les DNR légitimes et la rétrodiffusion passent par un filtrage normal du courrier indésirable. La plupart des NDR légitimes seront remises à l’expéditeur du message d’origine. Certains, mais pas tous, la rétrodiffusion est marquée comme courrier indésirable. Par définition, la rétrodiffusion ne peut être remise qu’à l’expéditeur usurpé, et non à l’expéditeur d’origine.</li></ul> <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: Backscatter NDR`|

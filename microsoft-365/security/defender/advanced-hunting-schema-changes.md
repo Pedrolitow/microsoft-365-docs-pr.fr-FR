@@ -4,7 +4,8 @@ description: Suivre et passer en revue les modifications de nommage des tables e
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, données, changement de nom, renommer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,31 +18,30 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4e58bb3d8c8cc7c507c4136abcabeb7e42b6827d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 12653741e10eaba0e8a658e24d3001e16af4e5d5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731502"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482513"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de chasse avancé - Modifications de nommage
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le [schéma de chasse avancé](advanced-hunting-schema-tables.md) est mis à jour régulièrement pour ajouter de nouvelles tables et colonnes. Dans certains cas, les noms de colonnes existants sont renommés ou remplacés pour améliorer l’expérience utilisateur. Reportez-vous à cet article pour passer en revue les modifications de nommage susceptibles d’avoir un impact sur vos requêtes.
 
-Les modifications de nommage sont automatiquement appliquées aux requêtes enregistrées dans le Defender pour le cloud, y compris les requêtes utilisées par les règles de détection personnalisées. Vous n’avez pas besoin de mettre à jour ces requêtes manuellement. Toutefois, vous devez mettre à jour les requêtes suivantes :
+Les modifications de nommage sont automatiquement appliquées aux requêtes enregistrées dans Defender pour cloud, y compris les requêtes utilisées par les règles de détection personnalisées. Vous n’avez pas besoin de mettre à jour ces requêtes manuellement. Toutefois, vous devez mettre à jour les requêtes suivantes :
 - Requêtes exécutées à l’aide de l’API
-- Requêtes enregistrées ailleurs en dehors du Defender pour le cloud
+- Requêtes enregistrées ailleurs en dehors de Defender pour cloud
 
-## <a name="december-2020"></a>Décembre 2020
+## <a name="december-2020"></a>Décembre 2020
 
 | Nom du tableau | Nom de colonne d’origine | Nouveau nom de colonne | Raison du changement
 |--|--|--|--|
@@ -54,13 +54,13 @@ Les modifications de nommage sont automatiquement appliquées aux requêtes enre
 | Nom de colonne | Nom de la valeur d’origine | Nouveau nom de valeur | Raison du changement
 |--|--|--|--|
 | `DetectionSource` | Defender for Cloud Apps | Microsoft Defender for Cloud Apps | Rebranding |
-| `DetectionSource` | WindowsDefenderAtp| PEPT| Rebranding |
+| `DetectionSource` | WindowsDefenderAtp| EDR| Rebranding |
 | `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
 | `DetectionSource` | WindowsDefenderSmartScreen |  Smartscreen | Rebranding |
 | `DetectionSource` | CustomerTI | TI personnalisée | Rebranding |
 | `DetectionSource` | OfficeATP | Microsoft Defender pour Office 365 | Rebranding |
-| `DetectionSource` | MTP | Microsoft 365 Defender | Rebranding |
-| `DetectionSource` | AzureATP | Microsoft Defender pour Identity | Rebranding |
+| `DetectionSource` | Mtp | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | AzureATP | Microsoft Defender pour l’identité | Rebranding |
 | `DetectionSource` | CustomDetection | Détection personnalisée | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Investigation automatisée | Rebranding |
 | `DetectionSource` | ThreatExperts | Spécialistes des menaces Microsoft | Rebranding |
@@ -68,7 +68,7 @@ Les modifications de nommage sont automatiquement appliquées aux requêtes enre
 | `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Rebranding |
 |`ServiceSource` |Protection Microsoft contre les menaces | Microsoft 365 Defender | Rebranding |
 | `ServiceSource` | Office 365 – Protection avancée contre les menaces |Microsoft Defender pour Office 365 | Rebranding |
-| `ServiceSource` |Azure ATP |Microsoft Defender pour Identity | Rebranding |
+| `ServiceSource` |Azure ATP |Microsoft Defender pour l’identité | Rebranding |
 
 `DetectionSource` est disponible dans la table [AlertInfo](advanced-hunting-alertinfo-table.md) . `ServiceSource` est disponible dans les tables [AlertEvidence](advanced-hunting-alertevidence-table.md) et [AlertInfo](advanced-hunting-alertinfo-table.md) . 
 

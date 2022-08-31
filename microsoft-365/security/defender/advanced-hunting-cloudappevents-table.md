@@ -1,10 +1,11 @@
 ---
 title: Table CloudAppEvents dans le schéma de chasse avancé
 description: En savoir plus sur les événements des applications et services cloud dans la table CloudAppEvents du schéma de chasse avancé
-keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, CloudAppEvents, Defender pour le cloud Apps
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, CloudAppEvents, Defender pour les applications cloud
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,19 +18,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 77b4ebd42a8c105340d6d965380aa42b64ae6734
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8892a672cb9fc77b4cf606f32581c1928decc45f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664961"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470140"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Le `CloudAppEvents` tableau du schéma [de chasse avancé](advanced-hunting-overview.md) contient des informations sur les activités dans différentes applications et services cloud couverts par Microsoft Defender for Cloud Apps. Pour obtenir la liste complète, accédez à [Applications et services couverts](#apps-and-services-covered). Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
@@ -46,7 +46,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Application` | `string` | Application qui a effectué l’action enregistrée |
 | `ApplicationId` | `string` | Identificateur unique de l’application |
 | `AccountObjectId` | `string` | Identificateur unique du compte dans Azure Active Directory |
-| `AccountId` | `string` | Identificateur du compte trouvé par Microsoft Defender for Cloud Apps. Peut être Azure Active Directory ID, nom d’utilisateur principal ou autres identificateurs. |
+| `AccountId` | `string` | Identificateur du compte trouvé par Microsoft Defender for Cloud Apps. Il peut s’agir de l’ID Azure Active Directory, du nom d’utilisateur principal ou d’autres identificateurs. |
 | `AccountDisplayName` | `string` | Nom de l’utilisateur de compte affiché dans le carnet d’adresses. En règle générale, il s’agit d’une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
 | `IsAdminOperation` | `string` | Indique si l’activité a été effectuée par un administrateur |
 | `DeviceType` | `string` | Type d’appareil basé sur l’objectif et les fonctionnalités, tels que « Périphérique réseau », « Station de travail », « Serveur », « Mobile », « Console de jeu » ou « Imprimante » |
@@ -65,7 +65,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ReportId` | `string` | Identificateur unique de l’événement |
 | `RawEventData` | `string` | Informations sur les événements bruts de l’application ou du service source au format JSON |
 | `AdditionalFields` | `dynamic` | Informations supplémentaires sur l’entité ou l’événement |
-| `AccountType` | `string` | Type de compte d’utilisateur, indiquant son rôle général et ses niveaux d’accès, tels que Regular, System, Admin, DcAdmin, System, Application |
+| `AccountType` | `string` | Type de compte d’utilisateur, indiquant son rôle général et ses niveaux d’accès, tels que Regular, System, Administration, DcAdmin, System, Application |
 | `IsExternalUser` | `boolean` | Indique si un utilisateur à l’intérieur du réseau n’appartient pas au domaine de l’organisation |
 | `IsImpersonated` | `boolean` | Indique si l’activité a été effectuée par un utilisateur pour un autre utilisateur (emprunt d’identité) |
 | `IPTags` | `dynamic` | Informations définies par le client appliquées à des adresses IP et plages d’adresses IP spécifiques |

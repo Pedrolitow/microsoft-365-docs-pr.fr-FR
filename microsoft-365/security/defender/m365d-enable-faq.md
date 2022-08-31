@@ -1,9 +1,10 @@
 ---
 title: Forum aux questions lors de l’activation de Microsoft 365 Defender
 description: Obtenez des réponses aux questions les plus fréquemment posées sur les licences, les autorisations, les paramètres initiaux et d’autres produits et services liés à l’activation de Microsoft 365 Defender
-keywords: forum aux questions, FAQ, Cloud de la communauté du secteur public, bien démarrer, activer Microsoft 365 Defender, Microsoft 365 Defender, M365, sécurité, emplacement des données, autorisations requises, éligibilité de la licence, page paramètres
+keywords: forum aux questions, FAQ, GCC, prise en main, activer Microsoft 365 Defender, Microsoft 365 Defender, M365, sécurité, emplacement des données, autorisations requises, éligibilité de la licence, page paramètres
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,20 +21,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 73dddcfc1389eb5bb0b0115f0666c413dc7d2a01
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 55a5dbaf78ff19b9ef70d77493f7ac8568a0039d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663201"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483407"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Forum aux questions lors de l’activation de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Lisez les réponses aux questions les plus fréquemment posées sur l’activation [des Microsoft 365 Defender](microsoft-365-defender.md), notamment les licences et autorisations requises, le déploiement des services de support et les paramètres initiaux.
@@ -64,7 +64,7 @@ Microsoft 365 Defender sélectionne automatiquement un emplacement optimal pour 
 >[!NOTE]
 >Microsoft Defender pour point de terminaison provisionne automatiquement dans les centres de données de l’Union européenne (UE) lorsqu’ils sont activés via Microsoft Defender pour le cloud. Microsoft 365 Defender provisionne automatiquement dans le même centre de données de l’UE pour les clients qui ont approvisionné Microsoft Defender pour point de terminaison de cette manière.
 
-L’emplacement du centre de données s’affiche avant et après l’approvisionnement du service dans la page des paramètres de Microsoft 365 Defender (**Paramètres > Microsoft 365 Defender**). Si vous préférez utiliser un autre emplacement de centre de données, sélectionnez **Besoin d’aide dans** le portail Microsoft 365 Defender pour contacter le support Microsoft.
+L’emplacement du centre de données s’affiche avant et après le provisionnement du service dans la page paramètres de Microsoft 365 Defender (**Paramètres > Microsoft 365 Defender**). Si vous préférez utiliser un autre emplacement de centre de données, sélectionnez **Besoin d’aide dans** le portail Microsoft 365 Defender pour contacter le support Microsoft.
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>Où puis-je accéder à Microsoft 365 Defender ?
 
@@ -72,7 +72,7 @@ Microsoft 365 Defender est disponible à l’adresse suivante : <a href="https:/
 
 ## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>Quelles sont les autorisations dont j’ai besoin pour accéder à Microsoft 365 Defender ?
 
-Les comptes auxquels les rôles Azure Active Directory (Azure AD) suivants peuvent accéder aux fonctionnalités et aux données Microsoft 365 Defender :
+Les comptes auxquels les rôles Azure Active Directory (Azure AD) suivants sont affectés peuvent accéder à Microsoft 365 Defender fonctionnalités et données :
 
 - Administrateur général
 - Administrateur de sécurité
@@ -97,7 +97,7 @@ Par défaut, Microsoft 365 Defender affiche les informations d’heure dans le f
 Microsoft fournit régulièrement des informations via les différents canaux, notamment :
 
 - Centre [de messages](../../admin/manage/message-center.md) dans Centre d'administration Microsoft 365
-- Billets de blog dans la [communauté des technologies de sécurité & de conformité Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
+- Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
 Obtenez les dernières expériences disponibles publiquement en activant les [fonctionnalités en préversion](preview.md).
 

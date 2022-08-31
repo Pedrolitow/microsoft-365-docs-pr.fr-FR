@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 5d5c6596d0981ad9787a784c0d189a8e11c07ac6
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 5265c8f4a2135fdeee800ebdd465bc3cbb53a6f5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432394"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470968"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Choisissez vos scénarios pour les Microsoft 365 pour les travailleurs de première ligne
 
@@ -37,6 +37,11 @@ Utilisez ces vues d’ensemble de scénarios pour commencer à envisager ce que 
 :::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 Les solutions de communication connectent vos employés de première ligne et leur permettent de collaborer entre eux, avec d’autres membres de l’organisation et avec vos clients.
+
+Regardez la vidéo suivante pour voir un exemple de la façon dont vous pouvez aider vos employés de première ligne à se connecter et à collaborer dans des organisations de vente au détail :
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
 
 | Scénario | Description | Services | Applications Teams |
 | --- | --- | --- |--- |
@@ -84,6 +89,11 @@ Simplifiez et rationalisez la coordination des planifications avec votre personn
 
 Optimisez l’efficacité opérationnelle en numérisant les processus papier et en automatisant les étapes répétitives et de routine.
 
+Regardez la vidéo suivante pour voir un exemple de la façon dont vous pouvez simplifier les processus métier dans les environnements de vente au détail :
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
+
 | Scénario | Description | Services | Applications Teams |
 | --- | --- | --- | --- |
 | [Simplifiez les processus d’entreprise](simplify-business-processes.md) | Utilisez la publication de tâches pour créer des processus standard sur les sites, des listes pour gérer les informations et suivre les processus en cours, et simplifier les demandes avec approbations. Les workflows automatisés peuvent accélérer et automatiser des actions, telles que la collecte de données ou les notifications de routage. | Microsoft Teams<br>Plateforme Power | Tâches<br>Listes<br>Approbations |
@@ -94,6 +104,11 @@ Optimisez l’efficacité opérationnelle en numérisant les processus papier et
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
 Utilisez Microsoft Bookings et Microsoft Teams pour planifier et héberger des rendez-vous virtuels avec des clients et des clients. Vous pouvez intégrer Forms à votre expérience de rendez-vous virtuel pour obtenir les informations appropriées sur vos clients, ou dans le cadre de votre expérience de support client pour découvrir ce dont vos clients ont besoin.
+
+Regardez la vidéo suivante pour voir un exemple de rendez-vous virtuels dans les organisations de soins de santé : 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+
 
 Informations complémentaires : [Rendez-vous virtuels avec Microsoft Teams et l’application Bookings](bookings-virtual-visits.md)
 

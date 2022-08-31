@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir les différences entre le courrier indésirable (courrier indésirable) et le courrier en bloc (courrier gris) dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5117954e668c4e64444628078f38dab61b0597cb
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: d8fc8bdc3740c5103c33a1e3fdd1d98dc67f8704
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441786"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482403"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre le courrier indésirable et le courrier électronique en bloc dans EOP ?
 
@@ -52,14 +52,13 @@ En raison de la réaction mixte à l’e-mail en bloc, il n’existe pas de cons
 Les stratégies anti-courrier indésirable ont un seuil BCL par défaut qui est utilisé pour identifier les courriers électroniques en bloc comme courrier indésirable. Les administrateurs peuvent augmenter ou diminuer le seuil. Pour plus d’informations, voir les rubriques suivantes :
 
 - [Configurez des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
-
 - [Paramètres de stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
 Une autre option facile à ignorer : si un utilisateur se plaint de recevoir des e-mails en bloc, mais que les messages proviennent d’expéditeurs réputés qui transmettent le filtrage du courrier indésirable dans EOP, faites vérifier par l’utilisateur une option de désabonnement dans le message électronique en bloc.
 
 ## <a name="how-to-tune-bulk-email"></a>Comment régler les e-mails en bloc
 
-Dans Septemeber 2022, les clients Microsoft Defender pour Office 365 Plan 2 peuvent accéder à BCL à partir de [la chasse avancée](/microsoft-365/security/defender/advanced-hunting-overview). Cette fonctionnalité permet aux administrateurs d’examiner tous les expéditeurs en bloc qui ont envoyé des messages à leur organisation, ainsi que les valeurs BCL correspondantes et le volume de courrier reçu. Vous pouvez explorer les expéditeurs en bloc à l’aide d’autres colonnes de la table **EmailEvents** dans le schéma **de collaboration Email &**. Pour plus d’informations, consultez [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table).
+En septembre 2022, les clients Microsoft Defender pour Office 365 Plan 2 peuvent accéder à BCL à partir de [la chasse avancée](/microsoft-365/security/defender/advanced-hunting-overview). Cette fonctionnalité permet aux administrateurs d’examiner tous les expéditeurs en bloc qui ont envoyé des messages à leur organisation, ainsi que les valeurs BCL correspondantes et le volume de courrier reçu. Vous pouvez explorer les expéditeurs en bloc à l’aide d’autres colonnes de la table **EmailEvents** dans le schéma **de collaboration Email &**. Pour plus d’informations, consultez [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table).
 
 Par exemple, si Contoso a défini son seuil en bloc actuel sur 7 dans les stratégies anti-courrier indésirable, les destinataires de Contoso recevront un e-mail de tous les expéditeurs avec BCL \< 7 dans leur boîte de réception. Les administrateurs peuvent exécuter la requête suivante pour obtenir la liste de tous les expéditeurs en bloc de l’organisation :
 
@@ -71,12 +70,15 @@ EmailEvents
 
 Cette requête permet aux administrateurs d’identifier les expéditeurs souhaités et indésirables. Si un expéditeur en bloc a un score BCL qui ne répond pas au seuil en bloc, les administrateurs peuvent [envoyer les messages de l’expéditeur à Microsoft à des fins d’analyse](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), ce qui ajoute l’expéditeur en tant qu’entrée verte à la liste d’autorisation/de blocage du locataire.
 
-Les organisations sans Defender pour Office 365 Plan 2 peuvent utiliser le [rapport d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) pour identifier les expéditeurs en bloc souhaités et indésirables :
+Les organisations sans plan 2 Defender pour Office 365 peuvent essayer les fonctionnalités de Microsoft 365 Defender pour Office 365 plan 2 gratuitement. Utilisez l’évaluation de Defender pour Office 365 de 90 jours à l’adresse <https://security.microsoft.com/atpEvaluation>. Découvrez qui peut s’inscrire et les conditions d’évaluation [ici](try-microsoft-defender-for-office-365.md) ou vous pouvez utiliser le [rapport d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) pour identifier les expéditeurs en bloc souhaités et indésirables :
 
-1. Accédez au rapport d’état de la protection contre les <https://security.microsoft.com/reports/URLProtectionActionReport> menaces et **filtrez en affichant les données par Email** \> **courrier indésirable**.
- 
+1. Dans le rapport d’état de la protection contre les menaces, sélectionnez **Afficher les données par Email \> Courrier indésirable**. Pour accéder directement au rapport, ouvrez l’une des URL suivantes :
+
+   - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
+   - Defender pour Office 365 :<https://security.microsoft.com/reports/TPSAggregateReportATP>
+
 2. Filtrez les e-mails en bloc, sélectionnez un e-mail à examiner, puis cliquez sur l’entité de messagerie pour en savoir plus sur l’expéditeur. Email entité est disponible uniquement pour les clients Defender pour Office 365 Plan 2.
 
 3. Une fois que vous avez identifié les expéditeurs souhaités et indésirables, ajustez le seuil en bloc au niveau souhaité. S’il existe des expéditeurs en bloc avec un score BCL qui ne correspond pas à votre seuil en bloc, [envoyez les messages à Microsoft à des fins d’analyse](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), ce qui ajoute l’expéditeur en tant qu’entrée d’autorisation à la liste d’autorisation/de blocage du locataire.
 
-Les administrateurs peuvent suivre les valeurs de seuil en bloc recommédées ou choisir une valeur de seuil en bloc qui répond aux besoins de leur organisation.
+Les administrateurs peuvent suivre les [valeurs de seuil en bloc recommandées](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) ou choisir une valeur de seuil en bloc qui répond aux besoins de leur organisation.

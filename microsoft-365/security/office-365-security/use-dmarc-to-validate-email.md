@@ -18,12 +18,12 @@ ms.collection:
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f33ea4cfe9323121f928e9a07247167c9d536721
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7723105d4617937b85a29911122a0e43e2076350
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388416"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470272"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -40,6 +40,9 @@ DMARC garantit que les systèmes de messagerie de destination font confiance aux
 
 > [!TIP]
 > Visitez le catalogue [Association de sécurité intelligente de Microsoft (MISA)](https://www.microsoft.com/misapartnercatalog) pour afficher les fournisseurs tiers proposant des rapports DMARC pour Microsoft 365.
+
+> [!TIP]
+> **Hove vous avez vu nos guides pas à pas ?** Configuration 1-2-3s et sans fioritures, pour les administrateurs pressés. Visitez les étapes permettant *[d’activer la création de rapports DMARC pour Microsoft Online Email les adresses de routage (MOERA) et les domaines parqués](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)*.
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>Comment SPF et DMARC fonctionnent-ils ensemble pour protéger les messages électroniques dans Microsoft 365 ?
 

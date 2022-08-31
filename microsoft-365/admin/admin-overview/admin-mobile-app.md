@@ -26,16 +26,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez l’application Administration Microsoft 365, votre compagnon du Centre d'administration Microsoft 365 web, pour gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8766098509a0c7cea22e177907b77199d6e6c690
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084628"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469116"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’application mobile Administration Microsoft 365
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Êtes-vous un administrateur qui est généralement en déplacement ? Même si ce n’est pas le cas, il peut arriver que vous deviez gérer Microsoft 365 à partir de votre téléphone ou tablette. Découvrez [l’application de Administration Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216) gratuite, le compagnon idéal pour le Centre d'administration Microsoft 365 web. Vous pouvez télécharger l’application à partir [d’Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8), de [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp), ainsi que de Administration Microsoft 365 lien d’application dans le coin supérieur droit du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
 
@@ -58,7 +58,7 @@ Si vous êtes administrateur et que vous êtes responsable de plusieurs organisa
 
 ## <a name="watch-install-the-admin-mobile-app"></a>Regarder : Installer l’application mobile d’administration
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
@@ -77,9 +77,15 @@ Vous devez être administrateur dans une organisation Microsoft 365 pour utilise
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 Voici les réponses aux questions fréquemment posées.
+
+### <a name="does-the-admin-app-support-multi-tenant-billing-features"></a>L’application d’administration prend-elle en charge les fonctionnalités de facturation mutualisée ? 
+
+L’application mobile d’administration manque quelques fonctionnalités multilocataires dans lesquelles l’administrateur autorisé peut voir les produits et licences du locataire en question, ainsi que les produits et licences des locataires associés dans un affichage unique. 
+
+Cette fonctionnalité ne fait pas encore partie de Administration Microsoft 365 application mobile et sera bientôt disponible. Pour plus d’informations, les administrateurs peuvent accéder au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.  
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>De quoi ai-je besoin pour pouvoir utiliser l'application ?
 
@@ -87,7 +93,7 @@ Pour utiliser l’application, vous devez disposer d’autorisations d’adminis
 
 - Applications Microsoft 365 pour Entreprise
 - Microsoft 365 Apps entreprise
-- Microsoft 365 Business Premium
+- Microsoft 365 Business Premium
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Basic
 - Microsoft 365 E3/E5

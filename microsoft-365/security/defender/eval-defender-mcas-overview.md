@@ -3,7 +3,8 @@ title: Étape 5. Évaluer Microsoft Defender for Cloud Apps vue d’ensemble
 description: Étapes de configuration de votre laboratoire d’essai ou de votre environnement pilote Microsoft 365 Defender pour tester et découvrir la solution de sécurité conçue pour protéger les appareils, les identités, les données et les applications de votre organisation.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 747475f8c213cde1154d32dc2efef430b7462827
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 159c676179ceb3ee71c90f700f9af2573ba92f9b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748712"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473202"
 ---
 # <a name="step-5-evaluate-microsoft-defender-for-cloud-apps"></a>Étape 5. Évaluer Microsoft Defender for Cloud Apps
 

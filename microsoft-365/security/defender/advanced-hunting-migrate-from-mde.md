@@ -4,7 +4,8 @@ description: Découvrez comment ajuster vos requêtes Microsoft Defender pour po
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, Microsoft Defender pour point de terminaison, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, mappage
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,19 +20,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.technology: m365d
-ms.openlocfilehash: 9fd00df5e61d37e5133f23e5f06973ceb99c4636
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 05e498d7208e9cd72cde4b6899fedc70a70db766
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666171"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483517"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrer des requêtes de chasse avancées à partir de Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Déplacez vos flux de travail de chasse avancés de Microsoft Defender pour point de terminaison à la recherche proactive des menaces à l’aide d’un ensemble plus large de données. Dans Microsoft 365 Defender, vous avez accès aux données d’autres solutions de sécurité Microsoft 365, notamment :
@@ -48,7 +48,7 @@ Vous pouvez effectuer une transition sans affecter vos workflows Defender pour p
 
 ## <a name="schema-tables-in-microsoft-365-defender-only"></a>Tables de schémas dans Microsoft 365 Defender uniquement
 
-Le [Microsoft 365 Defender schéma de chasse avancé](advanced-hunting-schema-tables.md) fournit des tables supplémentaires contenant des données provenant de différentes solutions de sécurité Microsoft 365. Les tableaux suivants sont disponibles uniquement dans Microsoft 365 Defender :
+Le [Microsoft 365 Defender schéma de repérage avancé](advanced-hunting-schema-tables.md) fournit des tables supplémentaires contenant des données provenant de différentes solutions de sécurité Microsoft 365. Les tableaux suivants sont disponibles uniquement dans Microsoft 365 Defender :
 
 | Nom du tableau | Description |
 |------------|-------------|

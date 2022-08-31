@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdep1
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: ace1eae6ab668a34e4ceff676b9edf01196521dd
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: d3d0118c75f2ac183b6a7c6b6eef599b2a943b1f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872717"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468898"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour point de terminaison Plan 1
 
@@ -43,7 +43,7 @@ Utilisez ce guide pour :
 - [Obtenir une vue d’ensemble de ce qui est inclus dans Defender pour point de terminaison Plan 1](#defender-for-endpoint-plan-1-capabilities)
 - [Comparer Defender for Endpoint Plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
 - [Découvrez comment configurer Defender pour point de terminaison Plan 1](mde-p1-setup-configuration.md)
-- [Démarrage à l’aide du portail Microsoft 365 Defender, où vous pouvez afficher des incidents et des alertes, gérer des appareils et utiliser des rapports sur les menaces détectées](mde-plan1-getting-started.md)
+- [Commencez à utiliser le portail Microsoft 365 Defender, où vous pouvez afficher les incidents et les alertes, gérer les appareils et utiliser des rapports sur les menaces détectées](mde-plan1-getting-started.md)
 - [Obtenir une vue d’ensemble de la maintenance et des opérations](mde-p1-maintenance-operations.md)
 
 > [!TIP]
@@ -67,7 +67,7 @@ La protection de nouvelle génération inclut une protection antivirus et anti-p
 
 - Protection antivirus basée sur le comportement, heuristique et en temps réel 
 - Protection fournie par le cloud, qui inclut la détection quasi instantanée et le blocage des menaces nouvelles et émergentes 
-- Protection dédiée et mises à jour du produit, y compris les mises à jour liées à Antivirus Microsoft Defender 
+- Mises à jour de produits et de protection dédiées, y compris les mises à jour liées à l’antivirus Microsoft Defender 
 
 Pour en savoir plus, consultez [la vue d’ensemble de la protection nouvelle génération](next-generation-protection.md).
 
@@ -77,10 +77,10 @@ Les actions de réponse manuelle sont des actions que votre équipe de sécurit�
 
 | Fichier/appareil | Opération | Description |
 |:---|:---|:---|
-| Appareil | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
-| Appareil | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender pour point de terminaison. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
-| Fichier | Arrêter et mettre en quarantaine |Empêche l’exécution des processus et met en quarantaine les fichiers associés. |
-| Fichier | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de bloc empêchent la lecture, l’écriture ou l’exécution des fichiers exécutables portables sur les appareils. <p>Les indicateurs d’autorisation empêchent le blocage ou la correction des fichiers. |
+| Device | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
+| Device | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender pour point de terminaison. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
+| File | Arrêter et mettre en quarantaine |Empêche l’exécution des processus et met en quarantaine les fichiers associés. |
+| File | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de bloc empêchent la lecture, l’écriture ou l’exécution des fichiers exécutables portables sur les appareils. <p>Les indicateurs d’autorisation empêchent le blocage ou la correction des fichiers. |
 
 Pour en savoir plus, consultez les articles suivants :
 
@@ -119,7 +119,7 @@ Avec l’accès contrôlé aux dossiers, vous obtenez l’atténuation des ranso
 
 Pour en savoir plus, consultez [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md).
 
-### <a name="device-control"></a>Contrôle d’appareil
+### <a name="device-control"></a>Contrôle des appareils
 
 Parfois, les menaces pesant sur les appareils de votre organisation se présentent sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour point de terminaison inclut des fonctionnalités pour empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
@@ -148,7 +148,7 @@ Avec la protection pare-feu réseau, vous pouvez définir des règles qui déter
 - Protéger les données sensibles et la propriété intellectuelle
 - Étendre votre investissement en matière de sécurité
 
-Pour en savoir plus, consultez [Pare-feu Windows Defender avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Pour plus d’informations, consultez [Windows Defender Pare-feu avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>Contrôle d’application
 
@@ -164,11 +164,11 @@ Pour en savoir plus, consultez [Microsoft 365 Defender vue d’ensemble du porta
 
 ### <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
 
-À l’aide du contrôle d’accès en fonction du rôle (RBAC), votre administrateur de sécurité peut créer des rôles et des groupes pour accorder un accès approprié au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Avec RBAC, vous disposez d’un contrôle précis sur qui peut accéder à la Defender pour le cloud, et ce qu’ils peuvent voir et faire. 
+À l’aide du contrôle d’accès en fonction du rôle (RBAC), votre administrateur de sécurité peut créer des rôles et des groupes pour accorder un accès approprié au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Avec RBAC, vous disposez d’un contrôle précis sur qui peut accéder à Defender pour cloud, et ce qu’ils peuvent voir et faire. 
 
 Pour plus d’informations, consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).
 
-### <a name="reporting"></a>Rapports
+### <a name="reporting"></a>Reporting
 
 Le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) permet d’accéder facilement aux informations sur les menaces détectées et les actions permettant de résoudre ces menaces. 
 
@@ -177,7 +177,7 @@ Le portail Microsoft 365 Defender ([https://security.microsoft.com](https://secu
 - Le **Centre d’actions** répertorie les actions de correction qui ont été effectuées. Par exemple, si un fichier est envoyé en quarantaine ou si une URL est bloquée, chaque action est répertoriée dans le centre d’actions de l’onglet **Historique** .
 - La section **Rapports** inclut des rapports qui montrent les menaces détectées et leur état. 
 
-Pour en savoir plus, consultez [Démarrage avec Microsoft Defender pour point de terminaison Plan 1](mde-plan1-getting-started.md).
+Pour en savoir plus, consultez [Prise en main de Microsoft Defender pour point de terminaison Plan 1](mde-plan1-getting-started.md).
 
 ### <a name="apis"></a>API
 
@@ -199,9 +199,9 @@ La plupart des organisations utilisent différents appareils et systèmes d’ex
 - iOS
 - Système d’exploitation Android
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Comparer Microsoft Defender pour point de terminaison plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
 - [Installer et configurer Defender pour Endpoint Plan 1](mde-p1-setup-configuration.md)
-- [Démarrage avec Defender pour point de terminaison Plan 1](mde-plan1-getting-started.md)
+- [Prise en main de Defender pour point de terminaison Plan 1](mde-plan1-getting-started.md)
 - [Gérer Defender pour point de terminaison Plan 1](mde-p1-maintenance-operations.md)

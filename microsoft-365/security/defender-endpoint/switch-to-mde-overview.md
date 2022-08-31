@@ -15,20 +15,19 @@ ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
 - m365solution-overview
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
 - m365initiative-defender-endpoint
+- highpri
 ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 63b932df7337a757a0358719e32409ab8c6ea117
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 5194200b942870f27f784b11c55cd8dbba2e816f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331294"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470682"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passez de la protection des points de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
 

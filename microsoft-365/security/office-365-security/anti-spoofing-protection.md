@@ -20,14 +20,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c342dd6a3e33c77b2c6b729ac389b7ea979b0fb7
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 57e7f0c599262270f25c1258bb36a19ae4b07963
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385812"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482667"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 

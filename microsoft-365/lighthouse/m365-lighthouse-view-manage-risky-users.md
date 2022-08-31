@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher et gérer les utilisateurs à risque.
-ms.openlocfilehash: 6f3fdaca1b89561e623d195faa4804c431e43a69
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 0239dd4c56de9203f01df04cc4f0fce8c73fb27e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055831"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474861"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Afficher et gérer les utilisateurs à risque dans Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ Dans Azure AD Identity Protection, les détections de risques incluent toutes le
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque**.
 
-2. Sous l’onglet **Utilisateurs à** risque, passez en revue les utilisateurs de la liste avec un état **de risque À risque**.
+2. Dans la page **Utilisateurs à** risque, passez en revue les utilisateurs de la liste avec un état de risque **« À risque** ».
 
 3. Sélectionnez **Afficher les détections de risque** pour obtenir des informations détaillées sur les risques détectés pour chaque utilisateur. Pour plus d’informations sur les types de risques et la détection, consultez [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
@@ -73,7 +73,7 @@ Pour prendre des mesures sur plusieurs utilisateurs affectés à la fois :
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque**.
 
-2. Sous l’onglet **Utilisateurs à risque** , sélectionnez l’ensemble des utilisateurs sur lesquels vous souhaitez effectuer une action.
+2. Dans la page **Utilisateurs à risque** , sélectionnez l’ensemble des utilisateurs sur lesquels vous souhaitez agir.
 
 3. Choisissez l’une des actions suivantes à effectuer :
 
