@@ -19,14 +19,14 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 226791c0d157a553ab731f837bfbdfe46697a4dd
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 766f366a12e46bc5c02796203420379bf0b64b3a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385350"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466831"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "67385350"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
+Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
 
 - **Le harponnage** utilise du contenu ciblé et personnalisé spécifiquement adapté aux destinataires ciblés (généralement, après reconnaissance sur les destinataires par l’attaquant).
 

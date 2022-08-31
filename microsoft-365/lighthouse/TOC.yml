@@ -40,6 +40,8 @@
       href: m365-lighthouse-users-page-overview.md
     - name: Bloquer la connexion de l’utilisateur
       href: m365-lighthouse-block-user-signin.md
+    - name: Gérer les utilisateurs inactifs
+      href: m365-lighthouse-manage-inactive-users.md
     - name: Gérer l’authentification multifacteur
       href: m365-lighthouse-manage-mfa.md
     - name: Gérer la réinitialisation de mot de passe en libre-service
@@ -78,7 +80,7 @@
   items:
     - name: Obtenir de l’aide et de l’assistance
       href: m365-lighthouse-get-help-and-support.md
-    - name: Problèmes détectés
+    - name: Problèmes connus
       href: m365-lighthouse-known-issues.md
     - name: Résoudre les messages d’erreur et les problèmes
       href: m365-lighthouse-troubleshoot.md
