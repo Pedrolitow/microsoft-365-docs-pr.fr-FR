@@ -1,10 +1,11 @@
 ---
 title: Tableau EmailEvents dans le schéma de repérage avancé
-description: En savoir plus sur les événements associés à Microsoft 365 e-mails dans la table EmailEvents du schéma de chasse avancé
+description: En savoir plus sur les événements associés aux e-mails Microsoft 365 dans la table EmailEvents du schéma de repérage avancé
 keywords: repérage avancé, chasse aux menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, EmailEvents, ID de message réseau, expéditeur, destinataire, ID de pièce jointe, nom de pièce jointe, verdict de logiciel malveillant, verdict de hameçonnage, nombre de pièces jointes, nombre de liens, nombre d’URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b34ac5538a2c38261f7da0a0cd3a75452660ef6e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5ac64dfbfd42d76e350d27a5d7a1594e6c055cba
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128802"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482051"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -37,7 +37,7 @@ ms.locfileid: "65128802"
 La `EmailEvents` table du schéma [de chasse avancé](advanced-hunting-overview.md) contient des informations sur les événements impliquant le traitement des e-mails sur Microsoft Defender pour Office 365. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 > [!TIP]
-> Pour plus d’informations sur les types d’événements (`ActionType`valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible dans le Defender pour le cloud.
+> Pour plus d’informations sur les types d’événements (`ActionType` valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible dans Defender pour cloud.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -82,7 +82,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
 | `AuthenticationDetails` | `string` | Liste des verdicts de réussite ou d’échec par protocoles d’authentification par e-mail tels que DMARC, DKIM, SPF ou une combinaison de plusieurs types d’authentification (CompAuth) |
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)

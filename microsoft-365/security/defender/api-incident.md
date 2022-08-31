@@ -3,7 +3,8 @@ title: Microsoft 365 Defender les API d’incidents et le type de ressource inci
 description: En savoir plus sur les méthodes et les propriétés du type de ressource Incidents dans Microsoft 365 Defender
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 45a6e14d6c3514a63869cc9d7229cda8dd511334
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 8531a2f647f9f8adaeb952c08cae596142fc884f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100072"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471365"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender l’API incidents et le type de ressource incidents
 
@@ -69,14 +69,14 @@ Propriété | Type | Description
 -|-|-
 incidentId | long | ID unique de l’incident.
 redirectIncidentId | valeur nullable long | ID d’incident vers lequel l’incident actuel a été fusionné.
-incidentName | string | Nom de l’incident.
+incidentName | chaîne | Nom de l’incident.
 createdTime | DateTimeOffset | Date et heure (en UTC) de création de l’incident.
 lastUpdateTime | DateTimeOffset | Date et heure (UTC) de la dernière mise à jour de l’incident.
 assignedTo | chaîne | Propriétaire de l’incident.
 Sévérité  | Énum | Gravité de l’incident. Les valeurs possibles sont : ```UnSpecified```, ```Informational```, ```Low```, ```Medium```et ```High```.
 status | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles sont : ```Active```, ```InProgress```, ```Resolved```, et ```Redirected```
 classification | Énum | Spécification de l’incident. Les valeurs possibles sont ```Unknown```, ```FalsePositive``` et ```TruePositive```.
-détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
+Détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
 étiquettes | string List | Liste des balises d’incident.
 commentaires | Liste des commentaires d’incident | L’objet Commentaire d’incident contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.
 alertes | Liste des alertes | Liste des alertes associées. Consultez des exemples dans la documentation [de l’API List incidents](api-list-incidents.md) .

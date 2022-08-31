@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: ''
 ms.date: 06/10/2021
 description: Découvrez comment accélérer le processus de détection et de traitement des comptes d’utilisateur compromis avec des fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8628f1952f37f43a66daccb5f0792097ce798c31
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 5c6bd48759382209375201b2e95ac71ccce4d0f4
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649040"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482205"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis avec une investigation et une réponse automatisées
 
@@ -70,7 +70,7 @@ Regardez cette courte vidéo pour découvrir comment détecter et répondre aux 
 
 ### <a name="view-and-investigate-restricted-users"></a>Afficher et examiner les utilisateurs restreints
 
-Vous disposez de quelques options pour accéder à une liste d’utilisateurs restreints. Par exemple, dans le portail Microsoft 365 Defender, vous pouvez accéder à **Email & Collaboration** \> **Review** \> **Restricted Users**. La procédure suivante décrit la navigation à l’aide du tableau de bord **Alertes** , qui est un bon moyen de voir différents types d’alertes qui ont pu être déclenchées.
+Vous disposez de quelques options pour accéder à une liste d’utilisateurs restreints. Par exemple, dans le portail Microsoft 365 Defender, vous pouvez accéder à **Email & collaboration** \> **Vérifier** \> **les utilisateurs restreints**. La procédure suivante décrit la navigation à l’aide du tableau de bord **Alertes** , qui est un bon moyen de voir différents types d’alertes qui ont pu être déclenchées.
 
 1. Ouvrez le portail Microsoft 365 Defender et accédez à <https://security.microsoft.com> **Incidents & alertes Alertes**\>. Ou, pour accéder directement à la page **Alertes** , utilisez <https://security.microsoft.com/alerts>.
 
@@ -96,7 +96,7 @@ Pour plus d’informations, consultez [Afficher les détails d’une enquête](a
 
 - **Ne vous fiez pas à une alerte de connexion suspecte comme seul indicateur**. Lorsqu’un compte d’utilisateur est compromis, il peut déclencher ou non une alerte de connexion suspecte. Parfois, c’est la série d’activités qui se produit après la compromission d’un compte qui déclenche une alerte. Vous souhaitez en savoir plus sur les alertes ? Consultez les [stratégies d’alerte](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Passer en revue les autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 
@@ -104,4 +104,4 @@ Pour plus d’informations, consultez [Afficher les détails d’une enquête](a
 
 - [En savoir plus sur AIR dans Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Visitez la feuille de route Microsoft 365 pour voir ce qui va bientôt se déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Visitez la feuille de route Microsoft 365 pour voir ce qui sera bientôt disponible et le déploiement](https://www.microsoft.com/microsoft-365/roadmap?filters=)

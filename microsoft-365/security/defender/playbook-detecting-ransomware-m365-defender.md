@@ -8,17 +8,17 @@ manager: dolmont
 audience: ITPro
 ms.topic: article
 ms.date: 05/30/2022
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance.
-ms.technology: m365d
 f1.keywords: NOCSH
-ms.openlocfilehash: 421e3cfbe3d16d0adc38e3fe1cbbcb7d64867eb9
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: f982c6771e165b42bf8e99876909608ca3200953
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328384"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481963"
 ---
 # <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Détection des attaques par rançongiciels gérées par l’homme avec Microsoft 365 Defender
 
@@ -289,7 +289,7 @@ Envisagez ces étapes pour préparer votre équipe et votre organisation SecOps 
 3. Assemblez un catalogue de requêtes de chasse avancées paramétrées pour les méthodes d’attaque par ransomware connues ou les phases d’attaque.
 4. Créez l’ensemble de règles de détection personnalisées pour des requêtes de chasse avancées spécifiques qui créent des alertes pour les méthodes d’attaque par ransomware connues, notamment leur planification, leur nommage d’alerte et leurs actions automatisées.
 5. Déterminer l’ensemble de [balises ou de normes personnalisées](/manage-incidents.md) pour en créer un nouveau afin d’identifier les incidents connus pour faire partie d’une attaque de ransomware plus importante et coordonnée
-6. Déterminez l’ensemble des tâches opérationnelles pour la gestion des incidents de ransomware et des alertes. Par exemple :
+6. Déterminez l’ensemble des tâches opérationnelles pour la gestion des incidents de ransomware et des alertes. Par exemple :
 
 * Processus pour l’analyse par les analystes de niveau 1 des incidents entrants et des alertes et affectation aux analystes de niveau 2 à des fins d’investigation.
 * Exécution manuelle de requêtes de chasse avancées et de leur planification (quotidienne, hebdomadaire, mensuelle).

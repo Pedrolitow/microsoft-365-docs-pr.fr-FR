@@ -7,19 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment modifier la vue dans une bibliothèque de documents dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: f850cbe57964d13b2d2e36fee3e2cd455e48d9fe
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: abbe2f80459bef6b9b354ed1a6cd136ea2ef5274
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738449"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483996"
 ---
 Il existe plusieurs façons de voir comment vous voyez les informations dans une bibliothèque de documents SharePoint. Vous pouvez modifier l’affichage de votre bibliothèque de documents en fonction de vos besoins ou préférences.
 

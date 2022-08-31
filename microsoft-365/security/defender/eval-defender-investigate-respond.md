@@ -3,7 +3,8 @@ title: Examiner et répondre à l’aide de Microsoft 365 Defender dans un envir
 description: Configurez des simulations d’attaque dans Microsoft 365 Defender laboratoire d’essai ou un environnement pilote pour tester la solution de sécurité conçue pour apprendre aux utilisateurs à protéger les appareils, les identités, les données et les applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 71ba536b3d93a4bff003e9094a1e6fab83660253
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: b795896521bdf4f7230e2011f753d140a5bbddd3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748008"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481787"
 ---
 # <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Étape 6. Examiner et répondre à l’aide de Microsoft 365 Defender dans un environnement pilote
 

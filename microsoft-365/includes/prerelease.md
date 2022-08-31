@@ -6,13 +6,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.author: macapara
 author: mjcaparas
-ms.prod: w10
-ms.openlocfilehash: 08b0fafff93fdbc777e3729c41846fb1f6c95324e3774092f96b1bc033ad9fd6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.service: microsoft-365-security
+ms.openlocfilehash: 190921204dd77760b6ec1bf1f0b3fa0d84ec974d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792732"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483993"
 ---
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.

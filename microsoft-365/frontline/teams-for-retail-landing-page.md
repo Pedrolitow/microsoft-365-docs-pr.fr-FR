@@ -23,12 +23,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: c4b176d0da2d6caa9b6126ddfbd1e4d02ab1417e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: db40235a7ef2b278cd532fec06745e58054580ee
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66992502"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471983"
 ---
 # <a name="get-started-with-microsoft-365-for-retail"></a>Démarrage avec Microsoft 365 pour la vente au détail
 
@@ -48,6 +48,16 @@ Microsoft 365 et Microsoft Teams offrir plusieurs fonctionnalités qui peuvent a
 
 > [!NOTE]
 > Ces scénarios font également partie du cloud Microsoft pour le commerce de détail. Ces scénarios vous offrent davantage de possibilités si vous utilisez également d’autres fonctionnalités de Microsoft Cloud pour la distribution, telles que Microsoft Dynamics 365. En savoir plus sur l’utilisation de cette solution qui regroupe les fonctionnalités Azure, Dynamics 365 et Microsoft 365 dans [Microsoft Cloud for Retail](/industry/retail)
+
+Regardez la vidéo suivante pour voir comment vous pouvez aider vos associés de magasin à se connecter et à collaborer :
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
+
+Regardez la vidéo suivante pour voir comment simplifier les processus métier dans les environnements de vente au détail :
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
 
 ### <a name="in-store-communication-and-collaboration"></a>Communication et collaboration en magasin
 
@@ -129,8 +139,8 @@ Pour les environnements de vente au détail, les applis et les services suivants
 | Documents | Partagez des procédures d’exploitation standard, des stratégies de magasin, des plans, etc. | [Intégration Teams et groupe SharePoint](/sharepoint/teams-connected-sites) | [Partager des fichiers](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Compliment | Reconnaissez vos collègues pour travailler en équipe avec l’appli Compliment. | [Gérer l’application Compliment](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Envoyer des Compliments aux personnes](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
 | Appareils Real Agent | Communication mains libres avec les appareils | [Microsoft Teams pour RealWear](/microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Utiliser Microsoft Teams pour Real Grouper](https://support.microsoft.com/office/using-microsoft-teams-for-realwear-af20d232-d18c-476f-8031-843a4edccd5f) |
-| Shifts | Gérez les planifications et les heures d’entrée et de sortie avec Shifts. | [Gérer l’application Shifts](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Utiliser Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
-| Tâches | Aidez les employés à savoir sur quoi ils doivent se concentrer lorsqu’ils ne sont pas avec des clients en leur attribuant des tâches. Les opérations peuvent utiliser [la publication de tâches](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) pour envoyer des tâches à des emplacements et effectuer le suivi de leur avancement. | [Gérer l’application Tâches](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Utiliser les Tâches](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
+| Shifts | Gérez les plannings et les heures d’avance ou de fin avec Plannings. | [Gérer l’application Shifts](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Utiliser Plannings](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
+| Tâches | Aidez les employés à savoir sur quoi ils doivent se concentrer lorsqu’ils ne sont pas avec des clients en leur attribuant des tâches. Les opérations peuvent utiliser [la publication de tâches](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) pour envoyer des tâches à des emplacements et effectuer le suivi de leur avancement. | [Gérer l’application Tâches](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Utiliser les tâches](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Mises à jour | Vérifiez les priorités récurrentes ou ponctuelles, telles que le nettoyage quotidien. Les responsables peuvent créer des modèles que les employés peuvent remplir et soumettre. | [Gérer l’application Mises à jour](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Utiliser Mises à jour](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Talkie-walkie | Appuyez pour parler d’une communication rapide qui n’est pas limitée par des zones géographiques telles que les radios 2 sens standard.| [Gérer l’application Talkie Walkie](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Utiliser le Talkie-walkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
 

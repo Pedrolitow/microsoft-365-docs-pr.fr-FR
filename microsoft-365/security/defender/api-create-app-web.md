@@ -3,7 +3,8 @@ title: Créer une application pour accéder à Microsoft 365 Defender sans utili
 description: Découvrez comment créer une application pour accéder à Microsoft 365 Defender sans utilisateur.
 keywords: application, access, api, create
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 05450912d78e7da774de76e02dfe4d42a1569084
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: fbcf081bda20dd470837614c985de77d037673a3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102391"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471387"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Créer une application pour accéder à Microsoft 365 Defender sans utilisateur
 
@@ -41,9 +41,9 @@ ms.locfileid: "66102391"
 
 Cette page explique comment créer une application pour obtenir un accès programmatique à Microsoft 365 Defender sans utilisateur défini, par exemple, si vous créez un démon ou un service en arrière-plan.
 
-Si vous avez besoin d’un accès par programmation à Microsoft 365 Defender pour le compte d’un ou de plusieurs utilisateurs, consultez [Créer une application pour accéder aux API Microsoft 365 Defender pour le compte d’un utilisateur](api-create-app-user-context.md) et [Créer une application avec accès partenaire aux API Microsoft 365 Defender](api-partner-access.md). Si vous n’êtes pas sûr du type d’accès dont vous avez besoin, consultez [Első lépések](api-access.md).
+Si vous avez besoin d’un accès par programmation à Microsoft 365 Defender pour le compte d’un ou de plusieurs utilisateurs, consultez [Créer une application pour accéder aux API Microsoft 365 Defender pour le compte d’un utilisateur](api-create-app-user-context.md) et [Créer une application avec accès partenaire aux API Microsoft 365 Defender](api-partner-access.md). Si vous ne savez pas quel type d’accès vous avez besoin, consultez [Prise en main](api-access.md).
 
-Microsoft 365 Defender expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aident à automatiser les flux de travail et à utiliser les fonctionnalités de Microsoft 365 Defender. Cet accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, consultez [Flow du code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aident à automatiser les flux de travail et à utiliser les fonctionnalités de Microsoft 365 Defender. Cet accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, consultez [le flux de code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En général, vous devez effectuer les étapes suivantes pour utiliser ces API :
 
@@ -61,7 +61,7 @@ Cet article explique comment :
 
 1. Connectez-vous à [Azure](https://portal.azure.com) en tant qu’utilisateur avec le rôle **Administrateur général** .
 
-2. Accédez à **Azure Active Directory** >  **App-registraties** >  **En savoir plus sur l’inscription**.
+2. Accédez à **l’inscription** **Azure Active Directory** >  inscriptions d'applications  > **New**.
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Onglet Nouvelle inscription dans le portail Microsoft 365 Defender" lightbox="../../media/atp-azure-new-app2.png":::
 
@@ -120,10 +120,10 @@ Cet article explique comment :
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-Pour plus d’informations sur Azure Active Directory jetons, consultez le [didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Pour plus d’informations sur les jetons Azure Active Directory, consultez le [didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous **ne devez jamais coder en dur les secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure 密钥保管库](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, consultez [Gérer les secrets dans vos applications serveur avec Azure 密钥保管库](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous **ne devez jamais coder en dur les secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, consultez [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
 ### <a name="get-an-access-token-using-powershell"></a>Obtenir un jeton d’accès à l’aide de PowerShell
 
@@ -222,7 +222,7 @@ aadToken = jsonResponse["access_token"]
 ### <a name="get-an-access-token-using-curl"></a>Obtenir un jeton d’accès à l’aide de curl
 
 > [!NOTE]
-> Curl est préinstallé sur Windows 10, versions 1803 et ultérieures. Pour d’autres versions de Windows, téléchargez et installez l’outil directement à partir du [site web curl officiel](https://curl.haxx.se/windows/).
+> Curl est préinstallé sur Windows 10, versions 1803 et ultérieures. Pour les autres versions de Windows, téléchargez et installez l’outil directement à partir du [site web curl officiel](https://curl.haxx.se/windows/).
 
 1. Ouvrez une invite de commandes et définissez CLIENT_ID sur votre ID d’application Azure.
 
@@ -280,5 +280,5 @@ L’exemple suivant montre comment envoyer une demande pour obtenir une liste d�
 - [Créer une application avec un accès partenaire multilocataire aux API Microsoft 365 Defender](api-partner-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)
-- [Gérer les secrets dans vos applications serveur avec Azure 密钥保管库](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [Autorisation OAuth 2.0 pour la connexion utilisateur et l’accès à l’API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

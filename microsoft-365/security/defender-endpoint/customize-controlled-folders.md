@@ -2,7 +2,7 @@
 title: Personnaliser l’accès contrôlé aux dossiers
 description: Ajoutez d’autres dossiers qui doivent être protégés par un accès contrôlé aux dossiers ou autorisez les applications qui bloquent incorrectement les modifications apportées aux fichiers importants.
 keywords: Accès contrôlé aux dossiers, windows 10, windows 11, windows defender, ransomware, protéger, fichiers, dossiers, personnaliser, ajouter un dossier, ajouter une application, autoriser, ajouter un exécutable
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,16 +11,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 5b46a2a4f520ea1d7d92366b8e356b895d12563a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139338"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471607"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
@@ -49,7 +49,7 @@ L’accès contrôlé aux dossiers vous permet de protéger les données précie
 
 L’accès contrôlé aux dossiers s’applique à de nombreux dossiers système et emplacements par défaut, notamment des dossiers tels que **Documents**, **Images** et **Films**. Vous pouvez ajouter d’autres dossiers à protéger, mais vous ne pouvez pas supprimer les dossiers par défaut dans la liste par défaut.
 
-L’ajout d’autres dossiers à l’accès contrôlé aux dossiers peut être utile dans les cas où vous ne stockez pas de fichiers dans les bibliothèques Windows par défaut, ou si vous avez modifié l’emplacement par défaut de vos bibliothèques.
+L’ajout d’autres dossiers à un accès contrôlé aux dossiers peut s’avérer utile dans les cas où vous ne stockez pas de fichiers dans les bibliothèques Windows par défaut ou si vous avez modifié l’emplacement par défaut de vos bibliothèques.
 
 Vous pouvez également spécifier des partages réseau et des lecteurs mappés. Les variables d’environnement et les caractères génériques sont pris en charge. Pour plus d’informations sur l’utilisation de caractères génériques, consultez [Utiliser des caractères génériques dans le nom de fichier et le chemin d’accès au dossier ou les listes d’exclusion d’extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
@@ -57,7 +57,7 @@ Vous pouvez utiliser l’application Sécurité Windows, les stratégie de group
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>Utiliser l’application Sécurité Windows pour protéger des dossiers supplémentaires
 
-1. Ouvrez l’application Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant la *sécurité* dans le menu Démarrer.
+1. Ouvrez l’application Sécurité Windows en sélectionnant l’icône du bouclier dans la barre des tâches ou en recherchant la *sécurité* dans le menu Démarrer.
 
 2. Sélectionnez **Virus & protection contre les menaces**, puis faites défiler jusqu’à la section **Protection contre les ransomware** .
 
@@ -77,7 +77,7 @@ Vous pouvez utiliser l’application Sécurité Windows, les stratégie de group
 
 3. Dans votre **éditeur de gestion stratégie de groupe**, accédez aux **modèles d’administration des** stratégies de configuration  \> \> de l’ordinateur.
 
-4. Développez l’arborescence pour **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender’accès contrôlé aux dossiers** **Exploit Guard**\>. <br/>**REMARQUE** : Sur les versions antérieures de Windows, vous pouvez voir **Antivirus Windows Defender** au lieu de **Antivirus Microsoft Defender**.
+4. Développez l’arborescence sur **les composants** \> Windows **antivirus** \> Microsoft Defender Windows Defender **l’accès aux dossiers contrôlés** **Exploit Guard**\>. <br/>**REMARQUE** : Sur les versions antérieures de Windows, vous pouvez voir **Antivirus Windows Defender** au lieu de **l’antivirus Microsoft Defender**.
 
 5. Double-cliquez sur **Dossiers protégés configurés**, puis définissez l’option **sur Activé**. Sélectionnez **Afficher** et spécifiez chaque dossier que vous souhaitez protéger.
 
@@ -101,7 +101,7 @@ Vous pouvez utiliser l’application Sécurité Windows, les stratégie de group
 
 ### <a name="use-mdm-csps-to-protect-additional-folders"></a>Utiliser des CSP GPM pour protéger des dossiers supplémentaires
 
-Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) (fournisseur de solutions Cloud) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
+Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
 
 ## <a name="allow-specific-apps-to-make-changes-to-controlled-folders"></a>Autoriser des applications spécifiques à apporter des modifications à des dossiers contrôlés
 
@@ -132,7 +132,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence pour **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender’accès contrôlé aux dossiers** **Exploit Guard**\>.
+3. Développez l’arborescence sur **les composants** \> Windows **antivirus** \> Microsoft Defender Windows Defender **l’accès aux dossiers contrôlés** **Exploit Guard**\>.
 
 4. Double-cliquez sur le paramètre **Configurer les applications autorisées** et définissez l’option **sur Activé**. Sélectionnez **Afficher** et entrez chaque application.
 
@@ -160,7 +160,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>Utiliser des CSP MDM pour autoriser des applications spécifiques
 
-Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) (fournisseur de solutions Cloud) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
+Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) (CSP) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>Autoriser les fichiers exécutables signés à accéder aux dossiers protégés
 

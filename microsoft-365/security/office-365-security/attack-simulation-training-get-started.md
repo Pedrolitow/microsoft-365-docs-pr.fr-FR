@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser Exercice de simulation d'attaque pour exécuter des attaques par hameçonnage et par mot de passe simulées dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: cee9ca2160a5840860efb4400e9a289cb90fd509
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 4ae78b01a2f3b156f0842f13c03ef296b9dca492
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409155"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481721"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Prise en main de Exercice de simulation d'attaque dans Defender pour Office 365
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 5e9f9eb04d2fb239c69aacd8927cde7f295c7716
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 50eab9a7cf521258119597f10a1e2d27d49192d0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787537"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472455"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques internes
 
@@ -56,12 +56,13 @@ La protection de la confidentialité des utilisateurs disposant de correspondanc
 
 ## <a name="indicators"></a>Indicateurs
 
-Les modèles de stratégie de risque interne définissent le type d’activités à risque que vous souhaitez détecter et examiner. Chaque modèle de stratégie est basé sur des indicateurs spécifiques qui correspondent à des déclencheurs spécifiques et à des activités à risque. Tous les indicateurs sont désactivés par défaut et vous devez sélectionner un ou plusieurs indicateurs de stratégie avant de configurer une stratégie de gestion des risques internes.
+Les modèles de stratégie de risque interne définissent le type d’activités à risque que vous souhaitez détecter et examiner. Chaque modèle de stratégie est basé sur des indicateurs spécifiques qui correspondent à des déclencheurs spécifiques et à des activités à risque. Tous les indicateurs globaux sont désactivés par défaut, et vous devez sélectionner un ou plusieurs indicateurs pour configurer une stratégie de gestion des risques internes.
 
-Les alertes sont déclenchées par des stratégies lorsque les utilisateurs effectuent des activités liées à des indicateurs de stratégie qui répondent à un seuil obligatoire. La gestion des risques internes utilise deux types d’indicateurs :
+Les signaux sont collectés et les alertes sont déclenchées par des stratégies lorsque les utilisateurs effectuent des activités liées aux indicateurs. La gestion des risques internes utilise différents types d’événements et d’indicateurs pour collecter des signaux et créer des alertes :
 
 - **Déclenchement d’événements** : événements qui déterminent si un utilisateur est actif dans une stratégie de gestion des risques internes. Si un utilisateur est ajouté à une stratégie de gestion des risques internes n’a pas d’événement déclencheur, l’activité de l’utilisateur n’est pas évaluée par la stratégie. Par exemple, l’utilisateur A est ajouté à une stratégie créée à partir du *vol de données en quittant* le modèle de stratégie des utilisateurs et la stratégie et le connecteur MICROSOFT 365 HR sont correctement configurés. Tant que l’utilisateur A n’a pas une date de fin signalée par le connecteur RH, les activités de l’utilisateur A ne sont pas évaluées par cette stratégie de gestion des risques internes pour les risques. Un autre exemple d’événement de déclenchement est si un utilisateur a une alerte de stratégie DLP de gravité *élevée* lors de l’utilisation *de stratégies de fuite de données* .
-- **Indicateurs de** stratégie : indicateurs inclus dans les stratégies de gestion des risques internes utilisées pour déterminer un score de risque pour un utilisateur dans l’étendue. Ces indicateurs de stratégie sont activés uniquement après qu’un événement de déclenchement se produit pour un utilisateur. Certains exemples d’indicateurs de stratégie sont lorsqu’un utilisateur copie des données vers des services de stockage cloud personnels ou des périphériques de stockage portables, si un compte d’utilisateur est supprimé d’Azure Active Directory ou si un utilisateur partage des fichiers et dossiers internes avec des parties externes non autorisées.
+- **Indicateurs de paramètres globaux : les indicateurs** activés dans les paramètres globaux pour la gestion des risques internes définissent à la fois les indicateurs disponibles pour la configuration dans les stratégies et les types de signaux d’activité utilisateur collectés par la gestion des risques internes. Par exemple, si un utilisateur copie des données vers des services de stockage cloud personnels ou des périphériques de stockage portables et que ces indicateurs sont sélectionnés uniquement dans les paramètres globaux, cette activité sera disponible pour examen dans l’Explorateur d’activités. Toutefois, étant donné que cette activité n’a pas été définie dans une stratégie de gestion des risques internes, l’activité ne reçoit pas de score de risque ou ne génère pas d’alerte.
+- **Indicateurs de** stratégie : les indicateurs inclus dans les stratégies de gestion des risques internes sont utilisés pour déterminer un score de risque pour un utilisateur dans l’étendue. Les indicateurs de stratégie sont activés à partir d’indicateurs définis dans les paramètres globaux et ne sont activés qu’après qu’un événement déclencheur se produit pour un utilisateur.  Certains exemples d’indicateurs de stratégie sont lorsqu’un utilisateur copie des données vers des services de stockage cloud personnels ou des périphériques de stockage portables, si un compte d’utilisateur est supprimé d’Azure Active Directory ou si un utilisateur partage des fichiers et dossiers internes avec des parties externes non autorisées.
 
 Certains indicateurs de stratégie peuvent également être utilisés pour personnaliser les événements de déclenchement pour des modèles de stratégie spécifiques. Lorsqu’ils sont configurés dans l’Assistant Stratégie pour *les fuites de données générales* ou *les fuites de données par les modèles d’utilisateurs prioritaires* , ces indicateurs vous offrent plus de flexibilité et de personnalisation pour vos stratégies et lorsque les utilisateurs sont dans l’étendue d’une stratégie. En outre, vous pouvez définir des seuils d’activité individuels pour ces indicateurs déclencheurs pour un contrôle plus précis dans une stratégie.
 
@@ -75,9 +76,9 @@ Les indicateurs de stratégie sont segmentés dans les domaines suivants. Vous p
 - **Microsoft Defender for Cloud Apps indicateurs (préversion)** : il s’agit notamment d’indicateurs de stratégie provenant d’alertes partagées de Defender pour Cloud Apps. La détection d’anomalies activée automatiquement dans Defender pour Cloud Apps commence immédiatement à détecter et à rassembler les résultats, en ciblant de nombreuses anomalies comportementales au sein de vos utilisateurs et des ordinateurs et appareils connectés à votre réseau. Pour inclure ces activités dans les alertes de stratégie de gestion des risques internes, sélectionnez un ou plusieurs indicateurs dans cette section. Pour en savoir plus sur l’analytique Defender pour Cloud Apps et la détection d’anomalies, consultez [Obtenir l’analyse comportementale et la détection des anomalies](/cloud-app-security/anomaly-detection-policy).
 - **Rappels de score de risque** : il s’agit notamment d’augmenter le score de risque pour une activité supérieure à l’activité habituelle de l’utilisateur pendant une journée ou pour les utilisateurs dont les cas précédents ont été résolus en tant que violation de stratégie. L’activation des rappels de score de risque augmente les scores de risque et la probabilité d’alertes pour ces types d’activités. Pour une activité supérieure à l’activité habituelle de l’utilisateur pendant une journée, les scores sont optimisés si l’activité détectée s’écarte du comportement classique de l’utilisateur. Pour les utilisateurs dont les cas précédents ont été résolus en tant que violation de stratégie, les scores sont optimisés si un utilisateur a déjà résolu plusieurs cas en tant que violation de stratégie confirmée. Les rappels de score de risque ne peuvent être sélectionnés que si un ou plusieurs indicateurs sont sélectionnés.
 
-Dans certains cas, vous souhaiterez peut-être limiter les indicateurs de stratégie de risque interne appliqués aux stratégies de risque interne de votre organisation. Vous pouvez désactiver les indicateurs de stratégie pour des domaines spécifiques en les désactivant de toutes les stratégies de risque interne. Les événements de déclenchement ne peuvent être modifiés que pour les stratégies créées à partir *des fuites de données générales* ou *des fuites de données par des modèles d’utilisateurs prioritaires* . Les stratégies créées à partir de tous les autres modèles n’ont pas d’indicateurs ou d’événements de déclenchement personnalisables.
+Dans certains cas, vous souhaiterez peut-être limiter les indicateurs de stratégie de risque interne appliqués aux stratégies de risque interne de votre organisation. Vous pouvez désactiver les indicateurs de stratégie pour des domaines spécifiques en les désactivant de toutes les stratégies de risque interne dans les paramètres globaux. Les événements de déclenchement ne peuvent être modifiés que pour les stratégies créées à partir *des fuites de données générales* ou *des fuites de données par des modèles d’utilisateurs prioritaires* . Les stratégies créées à partir de tous les autres modèles n’ont pas d’indicateurs ou d’événements de déclenchement personnalisables.
 
-Pour définir les indicateurs de stratégie de risque interne activés dans toutes les stratégies de risque interne, accédez aux **indicateurs des paramètres** >  de risque Insider et sélectionnez un ou plusieurs indicateurs de stratégie. Les indicateurs sélectionnés dans la page Paramètres des indicateurs ne peuvent pas être configurés individuellement lors de la création ou de la modification d’une stratégie de risque interne dans l’Assistant Stratégie.
+Pour définir les indicateurs de stratégie de risque interne activés dans toutes les stratégies de risque interne, accédez aux **indicateurs des paramètres** >  de risque Insider et sélectionnez un ou plusieurs indicateurs de stratégie. Les indicateurs sélectionnés dans la page **Paramètres des indicateurs** ne peuvent pas être configurés individuellement lors de la création ou de la modification d’une stratégie de risque interne dans l’Assistant Stratégie.
 
 > [!NOTE]
 > L’apparition de nouveaux utilisateurs ajoutés manuellement dans le tableau de **bord Utilisateurs** peut prendre plusieurs heures. L’affichage des activités des 90 jours précédents de ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés manuellement, sélectionnez l’utilisateur dans le **tableau de bord Utilisateurs** et ouvrez **l’onglet Activité utilisateur** dans le volet d’informations.
@@ -262,19 +263,19 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | AlertType | Le type de l’alerte est *Personnalisé*.  |
 | AlertId | GUID de l’alerte. Les alertes de gestion des risques internes sont mutables. À mesure que l’état de l’alerte change, un nouveau journal avec le même ID d’alerte est généré. Cet ID d’alerte peut être utilisé pour mettre en corrélation les mises à jour d’une alerte. |
 | Catégorie | La catégorie de l’alerte est *InsiderRiskManagement*. Cette catégorie peut être utilisée pour distinguer ces alertes des autres alertes de sécurité & conformité. |
-| Commentaires | Commentaires par défaut pour l’alerte. Les valeurs sont *Nouvelle alerte* (journalisée lors de la création d’une alerte) et *Alerte mise à jour* (journalisée en cas de mise à jour d’une alerte). Utilisez l’ID d’alerte pour mettre en corrélation les mises à jour d’une alerte. |
+| Comments | Commentaires par défaut pour l’alerte. Les valeurs sont *Nouvelle alerte* (journalisée lors de la création d’une alerte) et *Alerte mise à jour* (journalisée en cas de mise à jour d’une alerte). Utilisez l’ID d’alerte pour mettre en corrélation les mises à jour d’une alerte. |
 | Données | Les données de l’alerte incluent l’ID d’utilisateur unique, le nom d’utilisateur principal et la date et l’heure (UTC) lorsque l’utilisateur a été déclenché dans une stratégie. |
 | Nom | Nom de la stratégie de gestion des risques internes qui a généré l’alerte. |
 | PolicyId | GUID de la stratégie de gestion des risques internes qui a déclenché l’alerte. |
 | Severity | Gravité de l’alerte. Les valeurs sont *Élevée*, *Moyenne* ou *Faible*. |
 | Source | Source de l’alerte. La valeur est *Office 365 Sécurité & Conformité*. |
-| Statut | État de l’alerte. Les valeurs sont *actives* (*révision des besoins* en cas de risque interne), *examen* (*confirmé* dans le risque interne), *Résolu* (*Résolu* dans le risque interne), *Ignoré* (*ignoré* dans le risque interne). |
+| État | État de l’alerte. Les valeurs sont *actives* (*révision des besoins* en cas de risque interne), *examen* (*confirmé* dans le risque interne), *Résolu* (*Résolu* dans le risque interne), *Ignoré* (*ignoré* dans le risque interne). |
 | Version | Version du schéma d’alerte de sécurité et de conformité. |
 
 Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le [schéma commun de l’API activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 
 - UserId
-- Id
+- ID
 - RecordType
 - CreationTime
 - Opération

@@ -2,7 +2,8 @@
 title: Classement des alertes pour l’activité de transfert de courrier suspect
 description: Classement des alertes pour l’activité de transfert de courrier suspect afin de passer en revue les alertes et de prendre les mesures recommandées pour corriger l’attaque et protéger votre réseau.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,26 +21,25 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: dcfb6d01503dd4499ce6431b95a433c4cb598de1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 088cb74f16fae1155b86b1bfa6b5c72aae287720
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663223"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482095"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Classement des alertes pour l’activité de transfert de courrier suspect
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Les acteurs des menaces peuvent utiliser des comptes d’utilisateur compromis à plusieurs fins malveillantes, notamment la lecture d’e-mails dans la boîte de réception d’un utilisateur, le transfert d’e-mails à des destinataires externes et l’envoi de courriers de hameçonnage, entre autres. L’utilisateur ciblé peut ne pas savoir que ses e-mails sont transférés. Il s’agit d’une tactique très courante que les attaquants utilisent lorsque des comptes d’utilisateur sont compromis.
 
-Les e-mails peuvent être transférés manuellement ou automatiquement à l’aide de règles de transfert. Le transfert automatique peut être implémenté de plusieurs façons, comme les règles de boîte de réception, Exchange règle de transport (ETR) et le transfert SMTP. Bien que le transfert manuel nécessite une action directe de la part des utilisateurs, il se peut qu’ils ne soient pas au courant de tous les e-mails transférés automatiquement. Dans Microsoft 365, une alerte est déclenchée lorsqu’un utilisateur transfère automatiquement un e-mail à une adresse e-mail potentiellement malveillante.
+Les e-mails peuvent être transférés manuellement ou automatiquement à l’aide de règles de transfert. Le transfert automatique peut être implémenté de plusieurs façons, comme les règles de boîte de réception, la règle de transport Exchange (ETR) et le transfert SMTP. Bien que le transfert manuel nécessite une action directe de la part des utilisateurs, il se peut qu’ils ne soient pas au courant de tous les e-mails transférés automatiquement. Dans Microsoft 365, une alerte est déclenchée lorsqu’un utilisateur transfère automatiquement un e-mail à une adresse e-mail potentiellement malveillante.
 
-Ce playbook vous aide à examiner les alertes d’activité de transfert de courrier suspect et à les classer rapidement comme un vrai positif (TP) ou un faux positif (FP). Vous pouvez ensuite prendre les actions recommandées pour les alertes TP afin de corriger l’attaque.
+Ce playbook vous aide à examiner les alertes suspectes d’activité de transfert Email et à les classer rapidement comme un vrai positif (TP) ou un faux positif (FP). Vous pouvez ensuite prendre les actions recommandées pour les alertes TP afin de corriger l’attaque.
 
 Pour obtenir une vue d’ensemble de la notation des alertes pour Microsoft Defender pour Office 365 et Microsoft Defender for Cloud Apps, consultez [l’article d’introduction](alert-grading-playbooks.md).
 
@@ -51,9 +51,9 @@ Les résultats de l’utilisation de ce playbook sont les suivants :
 
 - Vous avez pris les mesures nécessaires si des e-mails ont été transférés vers une adresse e-mail malveillante.
 
-## <a name="email-forwarding-rules"></a>Règles de transfert de courrier électronique
+## <a name="email-forwarding-rules"></a>Email règles de transfert
 
-Les règles de transfert de courrier permettent aux utilisateurs de créer une règle pour transférer les messages électroniques envoyés à la boîte aux lettres d’un utilisateur vers la boîte aux lettres d’un autre utilisateur à l’intérieur ou à l’extérieur de l’organisation. Certains utilisateurs de messagerie, en particulier ceux qui ont plusieurs boîtes aux lettres, configurent des règles de transfert pour déplacer les e-mails de l’employeur vers leur compte de messagerie privé. Le transfert de courrier électronique est une fonctionnalité utile, mais il peut également poser un risque pour la sécurité en raison de la divulgation potentielle d’informations. Les attaquants peuvent utiliser ces informations pour attaquer votre organisation ou ses partenaires.
+Email règles de transfert permettent aux utilisateurs de créer une règle pour transférer les messages électroniques envoyés à la boîte aux lettres d’un utilisateur vers la boîte aux lettres d’un autre utilisateur à l’intérieur ou à l’extérieur de l’organisation. Certains utilisateurs de messagerie, en particulier ceux qui ont plusieurs boîtes aux lettres, configurent des règles de transfert pour déplacer les e-mails de l’employeur vers leur compte de messagerie privé. Email transfert est une fonctionnalité utile, mais peut également poser un risque pour la sécurité en raison de la divulgation potentielle d’informations. Les attaquants peuvent utiliser ces informations pour attaquer votre organisation ou ses partenaires.
 
 ### <a name="suspicious-email-forwarding-activity"></a>Activité suspecte de transfert d’e-mail
 
@@ -65,12 +65,12 @@ Microsoft Defender pour Office 365 pouvez détecter et alerter les règles de tr
 
 Pour plus d’informations, consultez les billets de blog suivants :
 
-- [Compromission des e-mails professionnels](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
+- [Compromis Email d’entreprise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
 - [Compromission de la messagerie professionnelle en arrière-plan : utilisation de données de menace inter-domaines pour interrompre une grande campagne DEC](https://www.microsoft.com/security/blog/2021/06/14/behind-the-scenes-of-business-email-compromise-using-cross-domain-threat-data-to-disrupt-a-large-bec-infrastructure/)
 
 ## <a name="alert-details"></a>Détails de l’alerte
 
-Pour passer en revue l’alerte d’activité de transfert de courrier suspect, ouvrez la page **Alertes** pour afficher la section **Liste d’activités** . Voici un exemple.
+Pour passer en revue l’alerte d’activité de transfert suspecte Email, ouvrez la page **Alertes** pour afficher la section **Liste d’activités**. Voici un exemple.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="Liste des activités liées à l’alerte" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -81,7 +81,7 @@ Sélectionnez **Activité**  pour afficher les détails de cette activité dans 
 Le champ **Raison** contient les informations suivantes relatives à cette alerte.
 
 - Le type de transfert (FT) est l’un des éléments suivants :
-  - Exchange règle de transport (ETR) : transfert à l’aide et Exchange règle de transport
+  - Règle de transport Exchange (ETR) : transfert à l’aide et règle de transport Exchange
   - SMTP : transféré à l’aide du transfert de boîte aux lettres
   - InboxRule : transféré à l’aide d’une règle de boîte de réception
 
@@ -107,7 +107,7 @@ Vous pouvez également analyser ces activités supplémentaires pour la boîte a
   - Observez le nombre d’e-mails récents envoyés par l’expéditeur qui sont détectés comme des hameçonnages, du courrier indésirable ou des programmes malveillants.
   - Observez le nombre d’e-mails envoyés contenant des informations sensibles.
 
-- Évaluez le comportement de connexion à risque dans le portail Microsoft Azure.
+- Évaluez le comportement de connexion à risque dans microsoft Portail Azure.
 - Recherchez les activités malveillantes sur l’appareil de l’utilisateur.
 
 ### <a name="are-the-activities-malicious"></a>Les activités sont-elles malveillantes ?
@@ -236,15 +236,15 @@ IdentityLogonEvents
 
 ### <a name="investigating-forwarding-rules"></a>Examen des règles de transfert
 
-Vous pouvez également trouver des règles de transfert suspectes à l’aide du centre d’administration Exchange, en fonction du type de règle (valeur FT dans l’alerte).
+Vous pouvez également trouver des règles de transfert suspectes à l’aide du Centre d’administration Exchange, en fonction du type de règle (valeur FT dans l’alerte).
 
 - ETR
 
-  Exchange règles de transport sont répertoriées dans la section **Règles**. Vérifiez que toutes les règles sont comme prévu.
+  Les règles de transport Exchange sont répertoriées dans la section **Règles** . Vérifiez que toutes les règles sont comme prévu.
 
 - SMTP
 
-  Vous pouvez voir les règles de transfert de boîte aux lettres en sélectionnant la boîte aux **lettres\> gérer les paramètres \> de flux de courrier de l’expéditeur Modification du transfert de \> courrier**.
+  Vous pouvez voir les règles de transfert de boîte aux lettres en sélectionnant la boîte aux **lettres\> gérer les paramètres \> de flux de courrier de l’expéditeur Email modifier le \> transfert**.
 
 - InboxRule
 

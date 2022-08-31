@@ -6,12 +6,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.author: dansimp
 author: dansimp
-ms.prod: w10
+ms.service: microsoft-365-security
 ms.topic: include
-ms.openlocfilehash: 61f61d753e302f0bc166081ac8ac1dd6585eed02
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 569d4712ab51be2251d054d71bbaccfa23c91071
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106635"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483992"
 ---

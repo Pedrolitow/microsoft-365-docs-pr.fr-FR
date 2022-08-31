@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer la réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 4760953d3d25c925dbe1bad6e2c67f43c621761b
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 2b530b7f0d2d8707a0876788fd22132a5cb998c5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055919"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471629"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Gérer la réinitialisation de mot de passe en libre-service dans Microsoft 365 Lighthouse
 
@@ -40,13 +40,13 @@ Les conditions suivantes doivent être remplies pour qu’un locataire apparaiss
 
 - Dans le volet de navigation gauche de Lighthouse, sélectionnez **Réinitialisation du mot de passe** **utilisateur** > .
 
-L’onglet Réinitialisation de mot de passe fournit une vue d’ensemble des locataires qui ont activé la réinitialisation de mot de passe via les paramètres recommandés, le nombre d’utilisateurs qui ne se sont pas inscrits à SSPR et une répartition détaillée par locataire de la progression du déploiement SSPR au sein des organisations que vous gérez.
+La page de réinitialisation de mot de passe fournit une vue d’ensemble des locataires qui ont activé la réinitialisation de mot de passe par le biais des paramètres recommandés, du nombre d’utilisateurs qui ne se sont pas inscrits à SSPR et d’une répartition détaillée par locataire de la progression du déploiement SSPR au sein des organisations que vous gérez.
 
 ## <a name="enable-sspr-for-a-tenant"></a>Activer SSPR pour un locataire
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Réinitialisation du mot de passe** **utilisateur** > .
 
-2. Sous l’onglet **Réinitialisation du mot de passe** , sélectionnez un locataire dans la liste pour ouvrir le volet d’informations.
+2. Dans la page **réinitialisation du mot de passe** , sélectionnez un locataire dans la liste pour ouvrir le volet d’informations.
 
 3. Sélectionnez **Modifier les paramètres SSPR dans Azure Active Directory** pour accéder à Azure Active Directory (Azure AD).
 
@@ -56,7 +56,7 @@ L’onglet Réinitialisation de mot de passe fournit une vue d’ensemble des lo
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Réinitialisation du mot de passe** **utilisateur** > .
 
-2. Sous l’onglet **Réinitialisation du mot de passe** , sélectionnez un locataire dans la liste pour ouvrir le volet d’informations.
+2. Dans la page **réinitialisation du mot de passe** , sélectionnez un locataire dans la liste pour ouvrir le volet d’informations.
 
 3. Sélectionnez les utilisateurs que vous souhaitez notifier.
 

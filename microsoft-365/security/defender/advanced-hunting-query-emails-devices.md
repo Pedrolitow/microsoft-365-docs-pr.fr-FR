@@ -1,10 +1,11 @@
 ---
 title: Rechercher les menaces sur les appareils, les e-mails, les applications et les identités avec repérage avancé
 description: Étudiez les scénarios de chasse courants et les exemples de requêtes qui couvrent les appareils, les e-mails, les applications et les identités.
-keywords: repérage avancé, données Office365, appareils Windows, normalisation des e-mails Office365, e-mails, applications, identités, chasse aux menaces, repérage de cybermenaces, recherche, requête, télémétrie, Microsoft 365, Microsoft 365 Defender
+keywords: repérage avancé, données Office365, appareils Windows, messages électroniques Office 365 normalisés, e-mails, applications, identités, repérage des menaces, repérage de cybermenaces, recherche, requête, télémétrie, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 740f9c5e683297f2a4d990cad5fdbc8c6295ed57
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739946"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481853"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Repérer des menaces sur les appareils, les e-mails, les applications, et les identités
 
@@ -50,7 +50,7 @@ Utilisez ces requêtes pour découvrir comment obtenir rapidement des informatio
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Obtenir des comptes d’utilisateur des adresses de messagerie électronique :
 Lorsque vous construisez des requêtes sur des [tableaux qui traitent des appareils et des e-mail](advanced-hunting-schema-tables.md), vous devez peut-être obtenir des noms de compte d’utilisateur à partir des adresses e-mail d’expéditeur ou de destinataire. Vous pouvez généralement effectuer cette opération pour le destinataire ou l’adresse de l’expéditeur à l’aide de l’hôte local à partir de l’adresse *e-mail* .
 
-Dans l’extrait de code ci-dessous, nous utilisons la fonction [Kusto tostring()](/azure/data-explorer/kusto/query/tostringfunction) pour extraire l’hôte local juste avant les `@` adresses e-mail du destinataire dans la colonne`RecipientEmailAddress`.
+Dans l’extrait de code ci-dessous, nous utilisons la fonction Kusto [tostring()](/azure/data-explorer/kusto/query/tostringfunction) pour extraire l’hôte local juste avant les `@` adresses e-mail du destinataire dans la colonne `RecipientEmailAddress`.
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address

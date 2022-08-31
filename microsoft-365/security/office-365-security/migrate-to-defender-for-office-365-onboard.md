@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365solution-mdo-migration
+- highpri
 ms.custom: migrationguides
 description: Effectuez les étapes de migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d30f13e77f0b7da864d266ddb2607afe7de1d451
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: e7a4be34a4ee93609a167314c0d822e11cde5586
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388084"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481831"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 3 : Intégration
 
@@ -52,7 +53,7 @@ Bienvenue dans **la phase 3 : Intégration** de votre **[migration vers Microsof
 
 Si votre organisation dispose d’une équipe de réponse de sécurité, il est maintenant temps de commencer à intégrer Microsoft Defender pour Office 365 dans vos processus de réponse, y compris les systèmes de tickets. Il s’agit d’un sujet entier à lui-même, mais il est parfois négligé. L’implication précoce de l’équipe de réponse de sécurité garantit que votre organisation est prête à faire face aux menaces lorsque vous changez d’enregistrement MX. La réponse aux incidents doit être bien équipée pour gérer les tâches suivantes :
 
-- Découvrez les nouveaux outils et intégrez-les aux flux existants. Par exemple :
+- Découvrez les nouveaux outils et intégrez-les aux flux existants. Par exemple :
   - Administration gestion des messages mis en quarantaine est importante. Pour obtenir des instructions, consultez [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
   - La trace des messages vous permet de voir ce qui est arrivé aux messages à mesure qu’ils entrent ou quittent Microsoft 365. Pour plus d’informations, consultez la [trace des messages dans le centre d’administration Exchange moderne dans Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identifiez les risques qui peuvent avoir été laissés dans l’organisation.

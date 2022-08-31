@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer l’authentification multifacteur.
-ms.openlocfilehash: aa9d25ce633088d840a38e1927c4ebf3baef56b3
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: ef658f19aba9530ab4f1cd76e1e32a1733f3594c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056458"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471773"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Gérer l’authentification multifacteur dans Microsoft 365 Lighthouse
 
-Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) permet de protéger l’accès aux données et aux applications, fournissant une autre couche de sécurité à l’aide d’une deuxième forme d’authentification. L’onglet Authentification multifacteur fournit des informations détaillées sur l’état de l’activation de l’authentification multifacteur sur vos locataires. Sélectionnez un locataire dans la liste pour afficher plus de détails pour ce locataire, notamment les stratégies d’accès conditionnel nécessitant l’authentification multifacteur qui sont déjà configurées et les utilisateurs qui ne se sont pas encore inscrits à l’authentification multifacteur.
+Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) permet de protéger l’accès aux données et aux applications, fournissant une autre couche de sécurité à l’aide d’une deuxième forme d’authentification. La page Authentification multifacteur fournit des informations détaillées sur l’état de l’activation de l’authentification multifacteur sur vos locataires. Sélectionnez un locataire dans la liste pour afficher plus de détails pour ce locataire, notamment les stratégies d’accès conditionnel nécessitant l’authentification multifacteur qui sont déjà configurées et les utilisateurs qui ne se sont pas encore inscrits à l’authentification multifacteur.
 
 Pour les clients de petite et moyenne entreprise (SMB), Microsoft recommande d’activer au minimum [les paramètres de sécurité par défaut](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) . Pour les scénarios plus complexes, vous pouvez utiliser [l’accès conditionnel](/azure/active-directory/conditional-access/overview) pour configurer des stratégies spécifiques.
 
@@ -42,7 +42,7 @@ Les conditions suivantes doivent être remplies pour qu’un locataire apparaiss
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Authentification multifacteur** **Utilisateurs** > .
 
-2. Sous l’onglet **Authentification multifacteur** , recherchez un locataire qui n’utilise pas l’authentification multifacteur, puis sélectionnez ce locataire pour ouvrir le volet des détails du locataire.
+2. Dans la page **Authentification multifacteur** , recherchez un locataire qui n’utilise pas l’authentification multifacteur, puis sélectionnez ce locataire pour ouvrir le volet des détails du locataire.
 
 3. Sous l’onglet **Activation de l’authentification multifacteur** , sous **MFA avec paramètres de sécurité par défaut**, **sélectionnez Activer la sécurité par défaut**.
 
@@ -54,7 +54,7 @@ Pour activer l’authentification multifacteur via l’accès conditionnel, cons
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Authentification multifacteur** **Utilisateurs** > .
 
-2. Sous l’onglet **Authentification multifacteur** , recherchez les locataires dont les utilisateurs ne sont pas inscrits à l’authentification multifacteur, puis sélectionnez le locataire pour ouvrir le volet d’informations du locataire.
+2. Dans la page **Authentification multifacteur** , recherchez les locataires dont les utilisateurs ne sont pas inscrits à l’authentification multifacteur, puis sélectionnez le locataire pour ouvrir le volet des détails du locataire.
 
 3. Sélectionnez **Utilisateurs non inscrits à l’onglet MFA** .
 

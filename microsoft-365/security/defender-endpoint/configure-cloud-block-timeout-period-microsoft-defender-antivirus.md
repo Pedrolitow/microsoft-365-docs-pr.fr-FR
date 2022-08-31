@@ -1,8 +1,8 @@
 ---
-title: Configurer le délai d’expiration du bloc cloud Antivirus Microsoft Defender
-description: Vous pouvez configurer la durée pendant laquelle Antivirus Microsoft Defender bloquera l’exécution d’un fichier en attendant une détermination du cloud.
+title: Configurer le délai d’expiration du bloc cloud de l’Antivirus Microsoft Defender
+description: Vous pouvez configurer la durée pendant laquelle l’Antivirus Microsoft Defender bloquera l’exécution d’un fichier en attendant une détermination du cloud.
 keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, cloud, délai d’expiration, bloc, période, secondes
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0ad46ff70ed2542ebed423a02eba6cc0810a99ca
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d147ef775d012628ff6e5a4410f800d08a792adb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418759"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481875"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurer le délai de blocage du cloud
 
@@ -33,9 +33,9 @@ ms.locfileid: "65418759"
 **Plateformes**
 - Windows
 
-Lorsque Antivirus Microsoft Defender détecte un fichier suspect, il peut empêcher l’exécution du fichier pendant qu’il interroge le [service cloud Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
+Lorsque l’Antivirus Microsoft Defender détecte un fichier suspect, il peut empêcher l’exécution du fichier pendant qu’il interroge le [service cloud de l’Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
-La période par défaut pendant laquelle le fichier est [bloqué](configure-block-at-first-sight-microsoft-defender-antivirus.md) est de 10 secondes. Si vous êtes administrateur de sécurité, vous pouvez spécifier plus de temps d’attente avant que le fichier ne soit autorisé à s’exécuter. L’extension du délai d’expiration du bloc cloud peut vous aider à vous assurer qu’il y a suffisamment de temps pour recevoir une détermination appropriée du service cloud Antivirus Microsoft Defender.
+La période par défaut pendant laquelle le fichier est [bloqué](configure-block-at-first-sight-microsoft-defender-antivirus.md) est de 10 secondes. Si vous êtes administrateur de sécurité, vous pouvez spécifier plus de temps d’attente avant que le fichier ne soit autorisé à s’exécuter. L’extension du délai d’expiration du bloc cloud peut vous aider à vous assurer qu’il y a suffisamment de temps pour recevoir une détermination correcte du service cloud antivirus Microsoft Defender.
 
 ## <a name="prerequisites-to-use-the-extended-cloud-block-timeout"></a>Conditions préalables à l’utilisation du délai d’expiration du bloc cloud étendu
 
@@ -51,9 +51,9 @@ Vous pouvez spécifier le délai d’expiration du bloc cloud avec une [stratég
 
 3. Sélectionnez (ou créez) une stratégie antivirus.
 
-4. Dans la section **Paramètres de configuration** , développez **la protection cloud**. Ensuite, dans la **zone Antivirus Microsoft Defender délai d’expiration étendu en secondes**, spécifiez le temps plus long, en secondes, de 1 seconde à 50 secondes. Tout ce que vous spécifiez est ajouté aux 10 secondes par défaut.
+4. Dans la section **Paramètres de configuration** , développez **la protection cloud**. Ensuite, dans la zone **Délai d’expiration étendu de l’antivirus Microsoft Defender en secondes** , spécifiez le délai d’attente supérieur, en secondes, de 1 seconde à 50 secondes. Tout ce que vous spécifiez est ajouté aux 10 secondes par défaut.
 
-5. (Cette étape est facultative) Apportez d’autres modifications à votre stratégie antivirus. (Vous avez besoin d’aide ? Consultez [Paramètres pour Antivirus Microsoft Defender stratégie dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
+5. (Cette étape est facultative) Apportez d’autres modifications à votre stratégie antivirus. (Vous avez besoin d’aide ? Consultez [Paramètres de la stratégie antivirus Microsoft Defender dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
 6. Choisissez **Suivant**, puis terminez la configuration de votre stratégie.
 
@@ -67,7 +67,7 @@ Vous pouvez utiliser stratégie de groupe pour spécifier un délai d’expirati
 
 3. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **La configuration de l’ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence pour **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
+3. Développez l’arborescence sur **les composants** \> Windows **MpEngine** **de l’antivirus** \> Microsoft Defender.
 
 4. Double-cliquez sur **Configurer la vérification cloud étendue** et vérifiez que l’option est activée. 
 

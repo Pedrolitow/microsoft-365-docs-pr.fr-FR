@@ -2,8 +2,8 @@
 title: Configurer les fonctionnalités d’investigation et de correction automatisées
 description: Configurez vos fonctionnalités d’investigation et de correction automatisées dans Microsoft Defender pour point de terminaison.
 keywords: configurer, configurer, automatiser, investigation, détection, alertes, correction, réponse
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 7e94cd14f392eb47a9b747cfb5e5f846f03fdc63
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 09d9860119a7c4aeb8949357b277fb395e09a9c2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535755"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481897"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurer des fonctionnalités d’investigation et de correction automatisées dans Microsoft Defender pour point de terminaison
 
@@ -62,7 +62,7 @@ Pour configurer l’investigation et la correction automatisées :
    - Spécifiez un nom et une description pour le groupe d’appareils.
    - Dans la **liste des niveaux Automation**, sélectionnez un niveau, par exemple **Full - Corriger automatiquement les menaces**. Le niveau d’automatisation détermine si les actions de correction sont effectuées automatiquement ou uniquement après approbation. Pour plus d’informations, consultez [les niveaux Automation dans l’examen et la correction automatisés](automation-levels.md).
    - Dans la section **Membres** , utilisez une ou plusieurs conditions pour identifier et inclure des appareils.
-   - Sous **l’onglet Accès utilisateur**, sélectionnez les [groupes Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) qui doivent avoir accès au groupe d’appareils que vous créez.
+   - Sous **l’onglet Accès utilisateur** , sélectionnez les [groupes Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) qui doivent avoir accès au groupe d’appareils que vous créez.
 
 4. Sélectionnez **Terminé** lorsque vous avez terminé la configuration de votre groupe d’appareils.
 
