@@ -20,13 +20,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 97e81f020c18a4f51e8af99f3633c8edb2559a41
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 7480fdcf3d394e152ff3b1de738d48f5723d7b75
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750361"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481193"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configurations des identités Zéro confiance et de l’accès aux appareils
 
@@ -34,15 +35,15 @@ Les architectures de sécurité qui s’appuient sur des pare-feu réseau et des
 
 Pour résoudre ce nouveau monde de l’informatique, Microsoft recommande vivement le modèle de sécurité Confiance nulle, qui est basé sur ces principes directeurs :
 
-- Vérifier explicitement
+- Vérifiez explicitement.
 
   Toujours s’authentifier et autoriser en fonction de tous les points de données disponibles. C’est là que Confiance nulle stratégies d’identité et d’accès aux appareils sont cruciales pour la connexion et la validation continue.
 
-- Utiliser l’accès aux privilèges minimum
+- Utilisez des autorisations selon le principe des privilèges minimum.
 
   Limitez l’accès utilisateur avec des stratégies adaptatives juste-à-temps et juste-à-accès (JIT/JEA), des stratégies adaptatives basées sur les risques et la protection des données.
 
-- Supposer une violation
+- Supposez une violation.
 
   Réduisez le rayon d’explosion et l’accès au segment. Vérifiez le chiffrement de bout en bout et utilisez l’analyse pour obtenir la visibilité, détecter les menaces et améliorer les défenses.
 

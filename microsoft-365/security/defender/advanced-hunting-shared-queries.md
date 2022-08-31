@@ -4,7 +4,8 @@ description: Commencez immédiatement le repérage des menaces à l’aide de re
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, référentiel github, mes requêtes, requêtes partagées
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 2e86d733304eeaa0e5e16f3ce1bfde87c21258d4
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: d9e90d1c4e353b9ac460420867ed56632b1e5eeb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761627"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477118"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utiliser des requêtes partagées dans un repérage avancé
 
@@ -36,10 +36,10 @@ ms.locfileid: "64761627"
 
 Les requêtes de [repérage avancé](advanced-hunting-overview.md) peuvent être partagées entre les utilisateurs au sein de la même organisation. Vous pouvez également enregistrer des requêtes qui ne sont accessibles qu’à vous. Vous pouvez également trouver des requêtes de communauté qui sont partagées publiquement sur GitHub. Ces requêtes enregistrées vous permettent de poursuivre rapidement des scénarios spécifiques de chasse aux menaces sans avoir à écrire des requêtes à partir de zéro.
 
-Sous l’onglet Requêtes de la recherche avancée, vous trouverez les menus **déroulants pour les requêtes partagées**, **Mes requêtes** et **Community requêtes**. Vous pouvez sélectionner une flèche orientée vers le bas pour développer un menu.
+Sous l’onglet Requêtes de la recherche avancée, vous trouverez les menus **déroulants pour les requêtes partagées**, **Mes requêtes** et **Les requêtes de la communauté**. Vous pouvez sélectionner une flèche orientée vers le bas pour développer un menu.
 
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Requêtes partagées, Mes requêtes et requêtes Community dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Requêtes partagées, Mes requêtes et requêtes communauté dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 
 
@@ -70,14 +70,14 @@ Vous pouvez enregistrer une requête nouvelle ou existante pour qu’elle soit u
 ## <a name="create-a-direct-link-to-a-query"></a>Créer un lien direct vers une requête
 Pour générer un lien qui ouvre votre requête directement dans l’éditeur de requête de chasse avancé, finalisez votre requête et sélectionnez **Le lien Partager**.
 
-## <a name="access-community-queries-in-the-github-repo"></a>Accéder aux requêtes de la communauté dans le dépôt GitHub  
+## <a name="access-community-queries-in-the-github-repo"></a>Accéder aux requêtes de la communauté dans le référentiel GitHub  
 Les chercheurs en matière de sécurité Microsoft partagent régulièrement des requêtes de repérage avancée dans un [référentiel public désigné sur GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender). Les contributions à ce référentiel sont examinées avant d’être publiées. Si vous souhaitez contribuer, [ veuillez rejoindre GitHub gratuitement](https://github.com/).
 
-Vous pouvez facilement trouver ces requêtes dans le menu déroulant **Community requêtes**.
+Vous pouvez facilement trouver ces requêtes dans le menu déroulant **des requêtes de la Communauté** .
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Community requêtes organisées par dossier dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Requêtes de la communauté organisées par dossier dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
-Community requêtes sont regroupées dans des dossiers tels que *Campagnes*, *Collection*, *Évasion de défense*, etc. Des informations supplémentaires sur la requête sont fournies en tant que commentaires en ligne dans la requête elle-même. 
+Les requêtes de la communauté sont regroupées dans des dossiers tels que *Campagnes*, *Collection*, *Évasion de défense*, etc. Des informations supplémentaires sur la requête sont fournies en tant que commentaires en ligne dans la requête elle-même. 
 
 >[!tip]
 >Les chercheurs en matière de sécurité Microsoft proposent également des requêtes de repérage avancé que vous pouvez utiliser pour localiser les activités et indicateurs associés aux menaces émergentes. Ces requêtes sont fournies dans le cadre des rapports [d’analyse des menaces](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) dans Microsoft 365 Defender.

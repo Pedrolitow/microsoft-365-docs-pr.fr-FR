@@ -3,7 +3,8 @@ title: Actions de correction dans Microsoft 365 Defender
 description: Obtenir une vue d’ensemble des actions de correction qui suivent des investigations automatisées dans Microsoft 365 Defender
 keywords: automatisation, examen, alerte, déclencheur, action, correction
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 669d4f3b4e8c2d805f72f9113cea1e9e926f3390
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6e1648b8c2e02eb17635597026e48535c4bfa402
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492363"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479419"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Actions de correction dans Microsoft 365 Defender
 
@@ -80,7 +80,7 @@ En plus des actions de correction qui suivent des investigations automatisées, 
 - Action de [réponse dynamique](/windows/security/threat-protection/microsoft-defender-atp/live-response) manuelle, telle que la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche planifiée
 - Action de réponse en direct avec [des API Microsoft Defender pour point de terminaison](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), telles que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Visiter le Centre de notifications](m365d-action-center.md)
 - [Afficher et gérer les actions de correction](m365d-autoir-actions.md)

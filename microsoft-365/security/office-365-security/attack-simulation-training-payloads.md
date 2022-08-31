@@ -5,20 +5,20 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer et à gérer des charges utiles pour Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 plan 2.
-ms.technology: mdo
-ms.openlocfilehash: 4f763bc7c0fc47e845beabedfe6eff4968338934
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.openlocfilehash: e9827614ed2ef03a7ac26efe1edcca10bfd68234
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408438"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481237"
 ---
 # <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Charges utiles dans Exercice de simulation d'attaque dans Defender pour Office 365
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 611719819bf64918cdd4f974214d8926e59aecb3
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: b986d875bc8a3368cdb6e85aa00c23b4783eaa46
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434523"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476569"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -92,7 +92,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |:-----|:-----|:-----|
 |Dépendance de l’application|Oui ([versions minimales](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |Non \* |
 |Limiter par emplacement|Non |Oui |
-|Conditions : classifieurs formés|Oui |Non |
+|Conditions : classifieurs formés|Oui |Dans la préversion |
 |Conditions : options de partage et options supplémentaires pour le courrier électronique|Non |Oui |
 |Conditions : exceptions|Non |Oui (e-mail uniquement) |
 |Recommandations, info-bulle de stratégie et remplacements de l’utilisateur|Oui |Non |
@@ -162,7 +162,7 @@ Lorsqu’une étiquette de confidentialité est appliquée automatiquement, l’
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Configuration des types d’informations sensibles pour une étiquette
 
-Lorsque vous sélectionnez l’option **Types d’informations sensibles**, vous voyez la même liste de types d’informations sensibles que lorsque vous créez une stratégie de protection contre la perte de données (DLP). Par exemple, vous pouvez appliquer automatiquement une étiquette Hautement confidentiel à tout contenu contenant les informations personnelles des clients, tels que les numéros de carte de crédit, les numéros de sécurité sociale ou les numéros de passeport :
+Lorsque vous sélectionnez l’option **Types d’informations sensibles** , vous voyez la même liste de [types d’informations sensibles](sensitive-information-type-learn-about.md) que lorsque vous créez une stratégie de protection contre la perte de données (DLP). Par exemple, vous pouvez appliquer automatiquement une étiquette hautement confidentiel à tout contenu ayant des informations d’identification personnelle (PII) de clients, comme les numéros de carte de crédit ou les numéros de sécurité sociale :
 
 ![Types d’informations sensibles pour l’étiquetage automatique dans les applications Office.](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -335,9 +335,9 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 7. Pour la page **Configurer des règles communes ou avancées** : conservez la valeur par défaut de **Règles communes** pour définir des règles qui identifient le contenu à étiqueter dans tous vos emplacements sélectionnés. Si vous avez besoin de règles différentes par emplacement, sélectionnez **Règles avancées**. Sélectionnez ensuite **Suivant**.
 
-    Les règles utilisent des conditions qui incluent des types d’informations sensibles et des options de partage :
-    - Vous pouvez sélectionner des types d’informations sensibles intégrés et personnalisés.
-    - Pour les options partagées, vous pouvez choisir **uniquement avec des personnes au sein de mon organisation** ou **avec des personnes extérieures à mon organisation**.
+    Les règles utilisent des conditions qui incluent des [types d’informations sensibles](sensitive-information-type-learn-about.md), [des classifieurs pouvant être formés et des](classifier-learn-about.md) options de partage :
+    - Pour sélectionner un type d’informations sensibles ou un classifieur pouvant être formé en tant que condition, sous **Contenu contient**, sélectionnez **Ajouter**, puis choisissez **Types d’informations sensibles** ou **Classifieurs Pouvant être formés**.
+    - Pour sélectionner les options de partage comme condition, sous **Contenu partagé**, choisissez **uniquement avec des personnes au sein de mon organisation** ou **avec des personnes extérieures à mon organisation**.
 
     Si votre seul emplacement est **Exchange**, et vous avez sélectionné **Règles avancées**, vous pouvez sélectionner d'autres conditions :
     - L’adresse IP de l’expéditeur est

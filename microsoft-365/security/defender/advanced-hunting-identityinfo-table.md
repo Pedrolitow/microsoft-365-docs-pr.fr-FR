@@ -1,10 +1,11 @@
 ---
-title: Table IdentityInfo dans le schéma de recherche avancé
-description: En savoir plus sur les informations de compte d’utilisateur dans la table IdentityInfo du schéma de recherche avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AccountInfo, IdentityInfo, account
+title: Table IdentityInfo dans le schéma de chasse avancé
+description: En savoir plus sur les informations de compte d’utilisateur dans la table IdentityInfo du schéma de repérage avancé
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, AccountInfo, IdentityInfo, compte
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,26 +18,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b09d1774ab35dbca9119deb98864d6c6f78051a9
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 587cba0befbed71d1f051858211efce63aa711f6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531434"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476679"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Le tableau du schéma de recherche avancée contient des informations sur les comptes d’utilisateurs obtenus à partir de différents services, notamment `IdentityInfo` Azure Active Directory. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+La `IdentityInfo` table du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les comptes d’utilisateur obtenus à partir de différents services, notamment Azure Active Directory. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!NOTE]
->Cette table a été renommée à partir `AccountInfo` de . Pendant les changements de nom, toutes les requêtes enregistrées dans le portail sont automatiquement mises à jour. Vérifiez les requêtes que vous avez enregistrées ailleurs.
+>Cette table a été renommée de `AccountInfo`. Pendant les renommations, toutes les requêtes enregistrées dans le portail sont automatiquement mises à jour. Vérifiez les requêtes que vous avez enregistrées ailleurs.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -46,15 +46,15 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountUpn` | `string` | Nom d’utilisateur principal (UPN) du compte |
 | `OnPremSid` | `string` | Identificateur de sécurité local (SID) du compte |
 | `CloudSid` | `string` | Identificateur de sécurité cloud du compte |
-| `GivenName` | `string` | Prénom ou nom de l’utilisateur du compte |
+| `GivenName` | `string` | Nom donné ou prénom de l’utilisateur du compte |
 | `Surname` | `string` | Nom de famille, nom de famille ou nom de l’utilisateur du compte |
-| `AccountDisplayName` | `string` | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
-| `Department` | `string` | Nom du service à qui appartient l’utilisateur du compte |
-| `JobTitle` | `string` | Fonction de l’utilisateur du compte |
+| `AccountDisplayName` | `string` | Nom de l’utilisateur de compte affiché dans le carnet d’adresses. En règle générale, il s’agit d’une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `Department` | `string` | Nom du service auquel appartient l’utilisateur du compte |
+| `JobTitle` | `string` | Titre du travail de l’utilisateur du compte |
 | `AccountName` | `string` | Nom d’utilisateur du compte |
 | `AccountDomain` | `string` | Domaine du compte |
 | `EmailAddress` | `string` | Adresse SMTP du compte |
-| `SipProxyAddress` | `string` | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
+| `SipProxyAddress` | `string` | Adresse SIP (Voice over IP) du compte |
 | `City` | `string` | Ville où se trouve l’utilisateur du compte |
 | `Country` | `string` | Pays/région où se trouve l’utilisateur du compte |
 | `IsAccountEnabled` | `boolean` | Indique si le compte est activé ou non |

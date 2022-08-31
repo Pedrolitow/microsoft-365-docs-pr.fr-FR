@@ -1,8 +1,8 @@
 ---
 title: Erreurs courantes à éviter lors de la définition d’exclusions
-description: Évitez les erreurs courantes lors de la définition d’exclusions pour les analyses Antivirus Microsoft Defender.
+description: Évitez les erreurs courantes lors de la définition d’exclusions pour les analyses antivirus Microsoft Defender.
 keywords: exclusions, fichiers, extension, type de fichier, nom de dossier, nom de fichier, analyses
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.date: 06/16/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 99d59c2027d3b34ad5c9c19444a51dd08cc22276
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 3c1139ee63bb6b53297d1c13c46b72bf4a41db19
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128655"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481017"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Erreurs courantes à éviter lors de la définition d’exclusions
 
@@ -37,11 +37,11 @@ ms.locfileid: "66128655"
 - Linux
 
 > [!IMPORTANT]
-> **Ajoutez des exclusions avec précaution**. Les exclusions pour les analyses Antivirus Microsoft Defender réduisent le niveau de protection des appareils.
+> **Ajoutez des exclusions avec précaution**. Les exclusions pour les analyses antivirus Microsoft Defender réduisent le niveau de protection des appareils.
 
-Vous pouvez définir une liste d’exclusion pour les éléments que vous ne souhaitez pas Antivirus Microsoft Defender analyser. Toutefois, les éléments exclus peuvent contenir des menaces qui rendent votre appareil vulnérable. Cet article décrit certaines erreurs courantes que vous devez éviter lors de la définition d’exclusions.
+Vous pouvez définir une liste d’exclusion pour les éléments que vous ne souhaitez pas analyser par l’Antivirus Microsoft Defender. Toutefois, les éléments exclus peuvent contenir des menaces qui rendent votre appareil vulnérable. Cet article décrit certaines erreurs courantes que vous devez éviter lors de la définition d’exclusions.
 
-Avant de définir vos listes d’exclusions, consultez [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
+Avant de définir vos listes d’exclusions, consultez [Recommandations pour la définition des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## <a name="excluding-certain-trusted-items"></a>Exclusion de certains éléments approuvés
 
@@ -66,7 +66,7 @@ En général, ne définissez pas d’exclusions pour les emplacements de dossier
 - `%ProgramFiles%\Contoso\`, `C:\Program Files\Contoso\`, `%ProgramFiles(x86)%\Contoso\`ou `C:\Program Files (x86)\Contoso\`
 - `C:\Temp`, `C:\Temp\`ou `C:\Temp\*`
 - `C:\Users\` ou `C:\Users\*`
-- `C:\Users\<UserProfileName>\AppData\Local\Temp\` ou `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`. **Notez les exceptions importantes suivantes pour SharePoint** : **excluez** `C:\Users\ServiceAccount\AppData\Local\Temp` ou `C:\Users\Default\AppData\Local\Temp` utilisez la [protection antivirus au niveau des fichiers dans SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
+- `C:\Users\<UserProfileName>\AppData\Local\Temp\` ou `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`. **Notez les exceptions importantes suivantes pour SharePoint** : **Excluez** `C:\Users\ServiceAccount\AppData\Local\Temp` ou `C:\Users\Default\AppData\Local\Temp` utilisez la [protection antivirus au niveau des fichiers dans SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
 - `%Windir%\Prefetch`, `C:\Windows\Prefetch`, `C:\Windows\Prefetch\`ou `C:\Windows\Prefetch\*`
 - `%Windir%\System32\Spool` ou `C:\Windows\System32\Spool`
 - `C:\Windows\System32\CatRoot2`
@@ -192,7 +192,7 @@ N’utilisez pas une seule liste d’exclusions pour définir des exclusions pou
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Utilisation de variables d’environnement incorrectes comme caractères génériques dans les listes d’exclusions de nom de fichier et de dossier ou d’extension
 
-Antivirus Microsoft Defender service s’exécute dans le contexte système à l’aide du compte LocalSystem, ce qui signifie qu’il obtient des informations à partir de la variable d’environnement système, et non de la variable d’environnement utilisateur. L’utilisation de variables d’environnement comme caractère générique dans les listes d’exclusion est limitée aux variables système et à celles applicables aux processus s’exécutant en tant que compte NT AUTHORITY\SYSTEM. Par conséquent, n’utilisez pas les variables d’environnement utilisateur comme caractères génériques lors de l’ajout d’exclusions de dossiers et de processus Antivirus Microsoft Defender. Consultez le tableau sous [Variables d’environnement système](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) pour obtenir la liste complète des variables d’environnement système.
+Le service antivirus Microsoft Defender s’exécute dans le contexte système à l’aide du compte LocalSystem, ce qui signifie qu’il obtient des informations à partir de la variable d’environnement système, et non de la variable d’environnement utilisateur. L’utilisation de variables d’environnement comme caractère générique dans les listes d’exclusion est limitée aux variables système et à celles applicables aux processus s’exécutant en tant que compte NT AUTHORITY\SYSTEM. Par conséquent, n’utilisez pas les variables d’environnement utilisateur comme caractères génériques lors de l’ajout d’un dossier antivirus Microsoft Defender et d’exclusions de processus. Consultez le tableau sous [Variables d’environnement système](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) pour obtenir la liste complète des variables d’environnement système.
 
 Pour plus d’informations sur [l’utilisation des caractères génériques dans les listes d’exclusions de nom de fichier et de dossier ou d’extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) , voir Utiliser des caractères génériques dans les listes d’exclusions.
 

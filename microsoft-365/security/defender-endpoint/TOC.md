@@ -298,7 +298,6 @@
 ### Protection de nouvelle génération
 #### [Vue d’ensemble de la protection nouvelle génération](next-generation-protection.md)
 ##### [Vue d’ensemble de l’antivirus Microsoft Defender](microsoft-defender-antivirus-windows.md)
-##### [Antivirus Microsoft Defender dans Windows](microsoft-defender-antivirus-windows.md)
 ##### [Activer et mettre à jour l’antivirus Microsoft Defender sur Windows Server](enable-update-mdav-to-latest-ws.md)
 ##### [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour point de terminaison](why-use-microsoft-defender-antivirus.md)
 ##### [Mieux ensemble : Antivirus Microsoft Defender et Office 365](office-365-microsoft-defender-antivirus.md)
@@ -524,7 +523,11 @@
 ####### [Exporter l’évaluation de l’inventaire logiciel de code non-produit](get-assessment-non-cpe-software-inventory.md)
 ####### [Exporter une évaluation de vulnérabilités de logiciel](get-assessment-software-vulnerabilities.md)
 
-###### [Examen automatisé]()
+###### [Extensions de navigateur]()
+####### [Exporter l’évaluation des extenstions de broswer](get-assessment-browser-extensions.md)
+####### [Obtenir des informations permisson sur les extenstions de navigateur](get-browser-extensions-permission-info.md)
+
+###### [Investigation automatisée]()
 ####### [Méthodes et propriétés de l’examen](investigation.md)
 ####### [Répertorier les examens](get-investigation-collection.md)
 ####### [Obtenir l’examen](get-investigation-object.md)

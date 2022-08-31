@@ -18,14 +18,14 @@ ms.custom:
 - seo-marvel-apr2020
 - intro-overview
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: fe021a2ba40f6e5e4d2bb9221ef0e2bef70a2371
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
-ms.translationtype: HT
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 73df1e43bb4046a5569d8416fde2237f27e66c78
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004321"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480315"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 

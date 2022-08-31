@@ -15,16 +15,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Pendant et après une enquête automatisée dans Microsoft 365, vous pouvez afficher les résultats et les résultats clés.
+description: Pendant et après une enquête automatisée dans Microsoft 365, vous pouvez afficher les résultats et les principales conclusions.
 ms.date: 01/29/2021
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6e3234168383a0dad6d8a9de3fb680b27b7ce6cb
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 75700ed2c5eaa197750cf8634ccbdeadf0ee204e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139692"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481545"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
 
@@ -77,11 +77,11 @@ Certains types d’alertes déclenchent une investigation automatisée dans Micr
 
 ## <a name="keep-the-following-points-in-mind"></a>Gardez à l’esprit les points suivants
 
-- Le nombre de courriers électroniques est calculé au moment de l’enquête, et certains nombres sont recalculés lorsque vous ouvrez des menus volants d’investigation (basés sur une requête sous-jacente).
+- Email nombres sont calculés au moment de l’enquête, et certains comptes sont recalculés lorsque vous ouvrez des menus volants d’investigation (basés sur une requête sous-jacente).
 
-- Les nombres de courriers affichés pour les clusters de messagerie sous l’onglet **E-mail** et la valeur de quantité de courrier affichée dans le menu volant du cluster sont calculés au moment de l’examen et ne changent pas.
+- Les nombres de courriers affichés pour les clusters de messagerie sous l’onglet **Email** et la valeur de quantité d’e-mail affichée dans le menu volant du cluster sont calculés au moment de l’examen et ne changent pas.
 
-- Le nombre d’e-mails affiché en bas de l’onglet **E-mail** du menu volant du cluster de messagerie et le nombre d’e-mails affichés dans l’Explorateur reflètent les messages électroniques reçus après l’analyse initiale de l’enquête.
+- Le nombre d’e-mails affiché en bas de l’onglet **Email** du menu volant du cluster de messagerie et le nombre de messages électroniques affichés dans l’Explorateur reflètent les messages électroniques reçus après l’analyse initiale de l’enquête.
 
   Ainsi, un cluster de courrier qui affiche une quantité d’origine de 10 e-mails affiche une liste de courriers de 15 au total lorsque cinq messages électroniques supplémentaires arrivent entre la phase d’analyse de l’enquête et lorsque l’administrateur examine l’enquête. De même, les anciennes investigations peuvent commencer à afficher des nombres plus élevés que ne le montrent les requêtes de l’Explorateur, car les données de Microsoft Defender pour Office 365 Plan 2 expirent après sept jours pour les essais et après 30 jours pour les licences payantes.
 
@@ -95,6 +95,6 @@ Certains types d’alertes déclenchent une investigation automatisée dans Micr
 
 - L’approbation et/ou le rejet de toutes les actions permettent à l’enquête de se fermer complètement (l’état est corrigé), tout en laissant certaines actions incomplètes pour que l’état de l’enquête passe à un état partiellement corrigé.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Examiner et approuver les actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

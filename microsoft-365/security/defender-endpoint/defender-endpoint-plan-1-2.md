@@ -9,20 +9,20 @@ manager: dansimp
 audience: ITPro
 ms.topic: overview
 ms.date: 07/25/2022
-ms.prod: m365-security
-ms.technology: mdep1
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: shlomi, efratka
 f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: b16322581b9d57418a7b0f70b5a23add8e00bb95
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 3340ec1b97cde08ed0aa7b3e74df3d0157d65474
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345192"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481325"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Comparer les plans de sécurité des points de terminaison Microsoft
 

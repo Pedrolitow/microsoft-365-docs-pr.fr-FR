@@ -15,12 +15,13 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 58de1c63995521794fa368f64601221a3c9668ee
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+- highpri
+ms.openlocfilehash: 31f3d1d11331ccb6fc800c0dabdcc41e19abe295
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67319886"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480644"
 ---
 # <a name="set-up-email-notifications"></a>Configurer des notifications par e-mail
 

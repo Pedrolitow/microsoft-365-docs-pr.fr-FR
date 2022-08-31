@@ -3,7 +3,7 @@ title: Configurer les options d’analyse pour l’antivirus Microsoft Defender
 description: Vous pouvez configurer l’Antivirus Microsoft Defender pour analyser les fichiers de stockage de courrier électronique, les points de sauvegarde ou d’analyse, les fichiers réseau et les fichiers archivés (tels que les fichiers .zip).
 keywords: analyses avancées, analyse, e-mail, archive, zip, rar, archive, analyse d’analyse
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 873ea8ee0b8f3f392a312b811b79f9a6e59f9825
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 6668bfc3cd9b8b2494458a1434f3d296f56c8b09
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387878"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479310"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 

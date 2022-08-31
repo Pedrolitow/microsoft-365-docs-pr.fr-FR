@@ -1,5 +1,5 @@
 ---
-title: Recommandations de sécurité pour les comptes prioritaires dans les Microsoft 365, les comptes de priorité, les comptes de priorité dans Office 365, les comptes de priorité dans Microsoft 365
+title: Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365, les comptes prioritaires, les comptes de priorité dans Office 365, les comptes de priorité dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,24 +17,25 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-protecthve
+- highpri
 ms.custom: ''
-description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes de priorité dans leurs organisations Microsoft 365.
+description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans leurs organisations Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 99e4726af1226e044715d33e92a176c9292b49ab
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 89452cca1e3871c864204053049c05938b576b91
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873377"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481633"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Tous les comptes d’utilisateurs n’ont pas accès aux mêmes informations d’entreprise. Certains comptes ont accès à des informations sensibles, telles que les données financières, les informations de développement de produits, l’accès des partenaires aux systèmes de build critiques, etc. En cas de compromission, les comptes qui ont accès à des informations hautement confidentielles constituent une menace sérieuse. Nous appelons ces types de _comptes prioritaires_. Les comptes prioritaires incluent (mais ne sont pas limités à) les chefs de la direction, les directeurs financiers, les directeurs financiers, les comptes d’administrateur d’infrastructure, les comptes système de build et bien plus encore.
 
@@ -69,13 +70,13 @@ Pour obtenir des instructions, consultez [l’étape 1. Augmentez la sécurité 
   - [Activer ou désactiver l’accès POP3 ou IMAP4 pour un utilisateur](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [Activer ou désactiver la soumission SMTP du client authentifié (SMTP AUTH)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
-Il est également important de noter que l’authentification de base est en cours de dépréciation dans Exchange Online pour Exchange Web Services (EWS), Exchange ActiveSync, POP3, IMAP4 et PowerShell distant. Pour plus d’informations, consultez ce [billet de blog](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
+Il est également important de noter que l’authentification de base est en cours de dépréciation dans Exchange Online pour les services web Exchange (EWS), Exchange ActiveSync, POP3, IMAP4 et PowerShell distant. Pour plus d’informations, consultez ce [billet de blog](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
 
 ## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>Utiliser des stratégies de sécurité prédéfinies strictes pour les comptes prioritaires
 
 Les utilisateurs prioritaires nécessitent des actions plus strictes pour les différentes protections disponibles dans Exchange Online Protection (EOP) et Defender pour Office 365.
 
-Par exemple, au lieu de remettre des messages classés comme courrier indésirable au dossier Courrier indésirable, vous devez mettre en quarantaine ces mêmes messages s’ils sont destinés aux comptes prioritaires.
+Par exemple, au lieu de remettre des messages classés comme courrier indésirable au dossier Junk Email, vous devez mettre en quarantaine ces mêmes messages s’ils sont destinés aux comptes prioritaires.
 
 Vous pouvez implémenter cette approche stricte pour les comptes prioritaires à l’aide du profil Strict dans les stratégies de sécurité prédéfinies.
 
@@ -98,10 +99,10 @@ Une fois que vous avez sécurisé et étiqueté vos utilisateurs prioritaires, v
 |Fonctionnalité|Description|
 |---|---|
 |Alertes|Les balises utilisateur des utilisateurs affectés sont visibles et disponibles sous forme de filtres sur la page **Alertes** du portail Microsoft 365 Defender. Pour plus d’informations, consultez [Affichage des alertes](../../compliance/alert-policies.md#viewing-alerts).|
-|Explorer <p> Détections en temps réel|Dans **l’Explorateur** (Defender pour Office 365 Plan 2) ou **les détections en temps réel** (Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans la vue Grille e-mail et le menu volant Détails de l’e-mail. Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, consultez  [Balises dans l’Explorateur](threat-explorer.md#tags-in-threat-explorer).|
+|Explorer <p> Détections en temps réel|Dans **l’Explorateur** (Defender pour Office 365 Plan 2) ou **les détections en temps réel** (Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans la grille Email et le menu volant des détails Email. Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, consultez  [Balises dans l’Explorateur](threat-explorer.md#tags-in-threat-explorer).|
 |Vues de campagne|Les balises utilisateur sont l’une des nombreuses propriétés filtrables dans les vues de campagne dans Microsoft Defender pour Office 365 Plan 2. Pour plus d’informations, consultez [Vues de campagne](campaigns.md).|
 |Rapport sur l’état de la protection contre les menaces|Dans pratiquement toutes les vues et tables de détails du **rapport d’état de la protection contre les menaces**, vous pouvez filtrer les résultats par **comptes de priorité**. Pour plus d’informations, consultez le [rapport d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report).|
-|Rapport sur les problèmes de messagerie pour les comptes prioritaires|Le rapport **des problèmes de courrier pour les comptes prioritaires** dans le centre d’administration Exchange contient des informations sur les messages non remis et différés pour les **comptes prioritaires**. Pour plus d’informations, consultez [le rapport Des problèmes de messagerie pour les comptes prioritaires](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
+|Email problèmes liés au rapport des comptes prioritaires|Le **rapport Email problèmes liés aux comptes prioritaires** dans le Centre d’administration Exchange (EAC) contient des informations sur les messages non remis et différés pour les **comptes prioritaires**. Pour plus d’informations, consultez [Email problèmes liés au rapport des comptes prioritaires](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 
 ## <a name="train-users"></a>Former les utilisateurs
 
@@ -109,14 +110,14 @@ La formation des utilisateurs avec des comptes prioritaires peut aider à faire 
 
 Le [manuel de la campagne de cybersécurité](https://www.belfercenter.org/CyberPlaybook) de l’École Harvard Kennedy fournit d’excellents conseils pour établir une culture forte de la sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
 
-Microsoft 365 fournit les ressources suivantes pour informer les utilisateurs de votre organisation :
+Microsoft 365 fournit les ressources suivantes pour aider à informer les utilisateurs de votre organisation :
 
 |Concept|Ressources|Description|
 |---|---|---|
 |Microsoft 365|[Parcours d’apprentissage personnalisables](/office365/customlearning/)|Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs de votre organisation.|
-|Sécurité Microsoft 365|[module Learning : Sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365)|Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
+|Sécurité Microsoft 365|[Module d’apprentissage : Sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365)|Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
 |Authentification multifacteur|[Vérification en deux étapes : quelle est la page de vérification supplémentaire ?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Cet article aide les utilisateurs finaux à comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée auprès de votre organisation.|
-|Formation à la simulation d'attaque|[Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)|La formation à la simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2 permet à l’administrateur de configurer, lancer et suivre des attaques par hameçonnage simulées contre des groupes d’utilisateurs spécifiques.|
+|Formation à la simulation d'attaque|[Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)|Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 Plan 2 permet à l’administrateur de configurer, lancer et suivre des attaques par hameçonnage simulées contre des groupes d’utilisateurs spécifiques.|
 
 En outre, Microsoft recommande aux utilisateurs d’effectuer les actions décrites dans cet article : [Protéger votre compte et vos appareils contre les pirates et les programmes malveillants](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Ces actions incluent :
 

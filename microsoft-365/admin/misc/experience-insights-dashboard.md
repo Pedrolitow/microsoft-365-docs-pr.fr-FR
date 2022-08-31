@@ -8,16 +8,17 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Obtenez un rapport périodique sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour plus d’informations.
-ms.openlocfilehash: 4894eb931f392d4d760e15e37f33e8a1f8d88a0d
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.openlocfilehash: daedfcee251619df1adb1d228b13036150dea35d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437735"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475441"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Tableau de bord Microsoft 365 Experience Insights
 
-Le tableau de bord Insights d’expérience (préversion) affiche les données sur l’utilisation et les sentiments pour vous donner une vue plus complète de l’expérience de votre organisation avec Microsoft 365. Ces informations et données sur le tableau de bord vous aideront à mieux comprendre et améliorer l’expérience de vos utilisateurs avec Microsoft 365. Le tableau de bord affiche les données sur l’utilisation et les sentiments de l’utilisateur, et vous donne une image plus complète de l’expérience globale de votre utilisateur. Vous pouvez explorer des informations spécifiques telles que l’utilisation des fonctionnalités pour certaines applications, les commentaires exacts et les commentaires NPS (Net Promoter Score), ainsi que les articles d’aide les plus consultés par les utilisateurs de votre organisation. Ces informations peuvent vous aider à identifier les opportunités d’amélioration des produits et des expériences d’application Microsoft 365 de l’utilisateur dans votre organisation.
+Le tableau de bord Insights d’expérience (préversion) affiche les données sur l’utilisation et les sentiments pour vous donner une vue plus complète de l’expérience de votre organisation avec Microsoft 365.
+Les insights d’expérience sont optimisés pour les organisations avec des volumes de données plus élevés. Il n’est donc disponible que pour les organisations avec plus de 20 000 sièges. Nous travaillons à apporter l’expérience aux petites organisations à l’avenir. Ces informations et données du tableau de bord vous aideront à mieux comprendre et à améliorer l’expérience de vos utilisateurs avec Microsoft 365. Le tableau de bord affiche les données sur l’utilisation et les sentiments des utilisateurs et vous donne une image plus complète de l’expérience globale de vos utilisateurs. Vous pouvez explorer des informations spécifiques telles que l’utilisation des fonctionnalités pour certaines applications, les commentaires exacts et les commentaires NPS (Net Promoter Score), ainsi que les articles d’aide les plus consultés par les utilisateurs de votre organisation. Ces informations peuvent vous aider à identifier les opportunités d’amélioration des produits et des expériences d’application Microsoft 365 des utilisateurs dans votre organisation.
 
 <!--To learn more about adoption and training for users in your organization, see [Experience insights help article report](experience-insights-help-articles.md). -->
 
@@ -43,15 +44,15 @@ Les informations du graphique vous donnent un aperçu des applications et des se
 
 :::image type="content" source="../../media/apps-services-latest.png" alt-text="Capture d’écran : image montrant les données du graphique applications et services":::
 
-**Les utilisateurs actifs** vous indiquent le nombre total d’utilisateurs uniques qui ont effectué au moins une action intentionnelle, comme l’ouverture d’un fichier, dans l’application sur la période sélectionnée. Utilisez ces données pour vous assurer que vous atteignez vos objectifs d’adoption. [En savoir plus](../activity-reports/active-users-ww.md)
+**Les utilisateurs actifs** vous indiquent le nombre total d’utilisateurs uniques qui ont effectué au moins une action intentionnelle, comme l’ouverture d’un fichier, dans l’application sur la période sélectionnée. Utilisez ces données pour vous assurer que vous atteignez vos objectifs d’adoption. [Si vous souhaitez en savoir plus](../activity-reports/active-users-ww.md)
 
 **L’utilisation** des produits est le pourcentage de personnes qui utilisent activement les produits qui sont activés pour leur utilisation. Utilisez ces données pour prendre des décisions sur l’emplacement d’optimisation des affectations de produits.
 
-**Commentaires dans le produit** Nombre total de réponses de commentaires provenant de l’application ou du service qui ont été lancées et envoyées par vos utilisateurs. Utilisez ces données pour évaluer la réussite et la satisfaction des utilisateurs avec les applications. [Si vous souhaitez en savoir plus](feedback-user-control.md)
+**Commentaires dans le produit** Nombre total de réponses de commentaires provenant de l’application ou du service qui ont été lancées et envoyées par vos utilisateurs. Utilisez ces données pour évaluer la réussite et la satisfaction des utilisateurs avec les applications. [En savoir plus](feedback-user-control.md)
 
 Le **volume de réponses aux enquêtes NPS** correspond au nombre total de réponses à l’enquête NPS (Net Promoter Score). Par défaut, Microsoft envoie l’enquête à 5 % de vos utilisateurs et demande « Recommanderiez-vous ce produit ? » Utilisez ces données pour évaluer la satisfaction des utilisateurs et voir ce que les utilisateurs disent de l’application. [Si vous souhaitez en savoir plus](../manage/manage-feedback-product-insights.md)
 
-**Les vues d’article d’aide** sont le nombre total de vues d’articles d’aide microsoft et de vidéos de formation sur l’application. Utilisez ces données pour rechercher des sujets d’intérêt et partager la formation suggérée avec vos utilisateurs. [Si vous souhaitez en savoir plus](experience-insights-help-articles.md)
+**Les vues d’article d’aide** sont le nombre total de vues d’articles d’aide microsoft et de vidéos de formation sur l’application. Utilisez ces données pour rechercher des sujets d’intérêt et partager la formation suggérée avec vos utilisateurs. [En savoir plus](experience-insights-help-articles.md)
 
 > [!NOTE]
 > Vous pouvez filtrer les données du graphique pour les tendances des 30 derniers jours, 90 jours ou 180 jours.

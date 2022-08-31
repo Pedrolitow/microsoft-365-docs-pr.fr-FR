@@ -3,7 +3,8 @@ title: Déployer des services pris en charge par Microsoft 365 Defender
 description: Découvrez les services de sécurité Microsoft qui peuvent être intégrés par Microsoft 365 Defender, leurs exigences de licence et leurs procédures de déploiement
 keywords: déployer, licences, services pris en charge, provisionnement, Microsoft 365 Defender de configuration, M365, éligibilité aux licences, Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-getstarted
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: cf2e95a4d129280537f1d7a9d7dcf1b76b492ead
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 8c7b5f44097bcf2e18b1b9d39e82c4ca468c38aa
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893768"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480710"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 

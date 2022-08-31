@@ -2,7 +2,8 @@
 title: Classement des alertes pour les connecteurs d’échange malveillants
 description: Alerte grading recipients from malicious exchange connectors activity and protect their network from malicious attack.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: b815e088152a055b532e748c469c78065421d255
-ms.sourcegitcommit: f72ea75c6d5c1bca0e0ed8fd228d3a84c6104361
+ms.openlocfilehash: 16f168fc772e4b4c9e7f48221dbd14039690ba83
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301939"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480232"
 ---
 # <a name="alert-grading-for-malicious-exchange-connectors"></a>Classement des alertes pour les connecteurs d’échange malveillants
 

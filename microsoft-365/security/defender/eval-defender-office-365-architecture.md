@@ -3,7 +3,8 @@ title: Passer en revue les exigences d’architecture et les concepts de planifi
 description: Le diagramme technique de Microsoft Defender pour Office 365 dans Microsoft 365 Defender vous aidera à comprendre l’identité de Microsoft 365 avant de créer votre laboratoire d’essai ou votre environnement pilote.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 1002b03a0ebb3940d544343476045d52e8209273
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: c4bf7a3c2449bd330bebcb6e4fa33dd2c2fb4584
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749943"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480512"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Passer en revue les exigences d’architecture Microsoft Defender pour Office 365 et les concepts clés
 
@@ -54,7 +55,7 @@ Le tableau suivant décrit cette illustration.
 |3     | Exchange Online s’intègre à Microsoft Defender pour Office 365 pour offrir une protection, une atténuation et une correction des menaces plus avancées. |
 |4     | Un message qui n’est pas malveillant, bloqué ou mis en quarantaine est traité et remis au destinataire dans EXO, où les préférences utilisateur liées à la courrier indésirable, aux règles de boîte aux lettres ou à d’autres paramètres sont évaluées et déclenchées. |
 |5     | L’intégration à Active Directory local peut être activée à l’aide d’Azure AD Connect pour synchroniser et approvisionner des objets et des comptes à extension messagerie dans Azure Active Directory et, en fin de compte, Exchange Online. |
-|6      | Lors de l’intégration d’un environnement local, il est recommandé d’utiliser un serveur Exchange pour la gestion et l’administration prises en charge des attributs, paramètres et configurations liés à la messagerie |
+|6     | Lors de l’intégration d’un environnement local, il est recommandé d’utiliser un serveur Exchange pour la gestion et l’administration prises en charge des attributs, paramètres et configurations liés à la messagerie |
 |7      | Microsoft Defender pour Office 365 partage des signaux vers Microsoft 365 Defender pour la détection et la réponse étendues (XDR).|
 
 L’intégration locale est courante, mais facultative. Si votre environnement est cloud uniquement, ces conseils fonctionneront également pour vous.

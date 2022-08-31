@@ -1,33 +1,33 @@
 ---
-title: Automatisations de charge utile pour l’entraînement de simulation d’attaque
+title: Automatisations de charge utile pour Exercice de simulation d'attaque
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Les administrateurs peuvent apprendre à utiliser les automatisations de charge utile (collecte de charge utile) pour collecter et lancer des simulations automatisées pour l’entraînement de simulation d’attaque dans Microsoft Defender pour Office 365 plan 2.
-ms.technology: mdo
-ms.openlocfilehash: bc7bba0d91e9b2ff1f9baddc52f717450660d070
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+description: Les administrateurs peuvent apprendre à utiliser les automatisations de charge utile (collecte de charge utile) pour collecter et lancer des simulations automatisées pour Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 plan 2.
+ms.subservice: mdo
+ms.openlocfilehash: 340ca76086e7696017e1433433a5294a8003b225
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838910"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480468"
 ---
-# <a name="payload-automations-for-attack-simulation-training"></a>Automatisations de charge utile pour l’entraînement de simulation d’attaque
+# <a name="payload-automations-for-attack-simulation-training"></a>Automatisations de charge utile pour Exercice de simulation d'attaque
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à** [Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
-Dans l’apprentissage de la simulation d’attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 2, les automatisations de charge utile (également appelées _collectes de charge utile) collectent_ des informations à partir de messages d’attaque par hameçonnage réels signalés par les utilisateurs de votre organisation. Bien que le nombre de ces messages soit probablement faible dans votre organisation, vous pouvez spécifier les conditions à rechercher dans les attaques par hameçonnage (par exemple, les destinataires, la technique d’ingénierie sociale, les informations de l’expéditeur, etc.). L’entraînement de simulation d’attaque imite ensuite les messages et les charges utiles utilisés dans l’attaque pour lancer automatiquement des simulations inoffensifs pour les utilisateurs ciblés.
+Dans Exercice de simulation d'attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, les automatisations de charge utile (également appelées _collectes de charge utile_) collectent des informations à partir de messages d’attaque par hameçonnage réels signalés par les utilisateurs dans votre Organisation. Bien que le nombre de ces messages soit probablement faible dans votre organisation, vous pouvez spécifier les conditions à rechercher dans les attaques par hameçonnage (par exemple, les destinataires, la technique d’ingénierie sociale, les informations de l’expéditeur, etc.). Exercice de simulation d'attaque imitera ensuite les messages et les charges utiles utilisés dans l’attaque pour lancer automatiquement des simulations sans danger pour les utilisateurs ciblés.
 
-Pour voir les automatisations de charge utile disponibles, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **e-mail &'onglet** \> **Automations** de formation \> de **simulation d’attaque** de collaboration\>, puis sélectionnez **Automations de charge utile**. Pour accéder directement à l’onglet **Automations** où vous pouvez sélectionner **Les automatisations de charge utile**, utilisez <https://security.microsoft.com/attacksimulator?viewid=automations>.
+Pour voir les automatisations de charge utile disponibles, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **Email & collaboration** \> **Exercice de simulation d'attaque** \> onglet \> **Automations**, puis sélectionnez **Automations de charge utile**. Pour accéder directement à l’onglet **Automations** où vous pouvez sélectionner **Les automatisations de charge utile**, utilisez <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 Les informations suivantes s’affichent pour chaque automatisation de charge utile :
 
@@ -46,11 +46,11 @@ Lorsque vous sélectionnez une automatisation de charge utile dans la liste, un 
 
 Pour créer une automatisation de charge utile, procédez comme suit :
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com/>l’onglet **Automatisations** de la charge utile de l’onglet \> Email **& Collaboration** \> **Attack Simulation Training** \> **Automations**. Pour accéder directement à l’onglet **Automations** où vous pouvez sélectionner **Les automatisations de charge utile**, utilisez <https://security.microsoft.com/attacksimulator?viewid=automations>.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com/>accédez à **Email & collaboration** \> **Exercice de simulation d'attaque** \> **automations** de l’onglet \> **Automations.** Pour accéder directement à l’onglet **Automations** où vous pouvez sélectionner **Les automatisations de charge utile**, utilisez <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
    Cliquez sur l’icône ![Créer une automatisation.](../../media/m365-cc-sc-create-icon.png) **Créez l’automatisation**.
 
-   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Bouton Créer une simulation sous l’onglet Automations de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Bouton Créer une simulation sous l’onglet Automations de la charge utile dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
    > [!NOTE]
    > À tout moment pendant l’Assistant création, vous pouvez cliquer sur **Enregistrer et fermer** pour enregistrer votre progression et continuer à configurer l’automatisation de la charge utile ultérieurement. Vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant l’automatisation de charge utile dans **les automatisations** de charge utile, puis en ![cliquant sur l’icône Modifier l’automatisation.](../../media/m365-cc-sc-edit-icon.png) **Modifier l’automatisation**. L’automatisation de charge utile partiellement terminée aura la valeur **Status** **Draft**.
@@ -121,10 +121,10 @@ L’Assistant Automation de charge utile s’ouvre avec les paramètres et les v
 
 Pour supprimer une automatisation de charge utile, sélectionnez l’automatisation de charge utile dans la liste en cliquant sur la case à cocher. Cliquez sur l’icône ![Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Icône Supprimer** qui s’affiche, puis cliquez sur **Confirmer** dans la boîte de dialogue.
 
-## <a name="related-links"></a>Liens connexes
+## <a name="related-links"></a>Liens associés
 
 [Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)
 
-[Automatisations de simulation pour l’entraînement de simulation d’attaque](attack-simulation-training-simulation-automations.md)
+[Automatisations de simulation pour Exercice de simulation d'attaque](attack-simulation-training-simulation-automations.md)
 
 [Découvrez les formations à la simulation d’attaque](attack-simulation-training-insights.md)

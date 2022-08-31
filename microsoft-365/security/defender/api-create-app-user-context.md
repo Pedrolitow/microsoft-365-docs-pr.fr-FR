@@ -3,7 +3,8 @@ title: Créer une application pour accéder aux API Microsoft 365 Defender pour 
 description: Découvrez comment accéder à Microsoft 365 Defender API pour le compte d’un utilisateur.
 keywords: access, pour le compte de l’utilisateur, de l’API, de l’application, de l’utilisateur, du jeton d’accès, du jeton,
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 41f2763d73bbb9ed0b7ae32dce431cb2c1a4d71f
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: b7fa369729873b21b3e775b3b3fdb2e26c9130f6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102589"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479441"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Créer une application pour accéder aux API Microsoft 365 Defender pour le compte d’un utilisateur
 
@@ -41,9 +41,9 @@ ms.locfileid: "66102589"
 
 Cette page explique comment créer une application pour obtenir un accès par programmation à Microsoft 365 Defender pour le compte d’un seul utilisateur.
 
-Si vous avez besoin d’un accès par programmation à Microsoft 365 Defender sans utilisateur défini (par exemple, si vous écrivez une application ou un démon en arrière-plan), consultez [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md). Si vous devez fournir l’accès à plusieurs locataires , par exemple, si vous servez une grande organisation ou un groupe de clients, consultez [Créer une application avec un accès partenaire à Microsoft 365 Defender API](api-partner-access.md). Si vous n’êtes pas sûr du type d’accès dont vous avez besoin, consultez [Első lépések](api-access.md).
+Si vous avez besoin d’un accès par programmation à Microsoft 365 Defender sans utilisateur défini (par exemple, si vous écrivez une application ou un démon en arrière-plan), consultez [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md). Si vous devez fournir l’accès à plusieurs locataires , par exemple, si vous servez une grande organisation ou un groupe de clients, consultez [Créer une application avec un accès partenaire à Microsoft 365 Defender API](api-partner-access.md). Si vous ne savez pas quel type d’accès vous avez besoin, consultez [Prise en main](api-access.md).
 
-Microsoft 365 Defender expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aident à automatiser les flux de travail et à utiliser les fonctionnalités de Microsoft 365 Defender. Cet accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, consultez [Flow du code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aident à automatiser les flux de travail et à utiliser les fonctionnalités de Microsoft 365 Defender. Cet accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, consultez [le flux de code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En général, vous devez effectuer les étapes suivantes pour utiliser ces API :
 
@@ -67,13 +67,13 @@ Cet article explique comment :
 
 1. Connectez-vous à [Azure](https://portal.azure.com) en tant qu’utilisateur avec le rôle **Administrateur général** .
 
-2. Accédez à **Azure Active Directory** >  **App-registraties** >  **En savoir plus sur l’inscription**.
+2. Accédez à **l’inscription** **Azure Active Directory** >  inscriptions d'applications  > **New**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Option Nouvelle inscription dans le volet Gérer du Azure-Portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Option Nouvelle inscription dans le volet Gérer du Portail Azure" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. Dans le formulaire, choisissez un nom pour votre application, entrez les informations suivantes pour l’URI de redirection, puis **sélectionnez Inscrire**.
 
-   :::image type="content" source="../../media/nativeapp-create2.PNG" alt-text="Volet Inscription de l’application dans le Azure-Portal" lightbox="../../media/nativeapp-create2.PNG":::
+   :::image type="content" source="../../media/nativeapp-create2.PNG" alt-text="Volet Inscription de l’application dans le Portail Azure" lightbox="../../media/nativeapp-create2.PNG":::
    
 
    - **Type d’application :** Client public
@@ -105,7 +105,7 @@ Cet article explique comment :
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-Pour plus d’informations sur Azure Active Directory jetons, consultez le [didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Pour plus d’informations sur les jetons Azure Active Directory, consultez le [didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### <a name="get-an-access-token-on-behalf-of-a-user-using-powershell"></a>Obtenir un jeton d’accès pour le compte d’un utilisateur à l’aide de PowerShell
 

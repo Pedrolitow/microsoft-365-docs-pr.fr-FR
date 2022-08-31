@@ -17,16 +17,19 @@ search.appverid:
 - MET150
 description: En savoir plus sur le nombre d’instances et d’autres limites de type d’informations sensibles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5cb574ac9aa0d20818379d7f11ace0a40b68905f
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: 4a1f01e26fa36496affbc696befaba60effa6c08
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434544"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477994"
 ---
 # <a name="sensitive-information-type-limits"></a>Limites des types d’informations sensibles
 
-Ces limites s’appliquent à tous les types d’informations sensibles (SIT), à l’exception des données exactes correspondant aux types d’informations sensibles.
+Ces limites s’appliquent à tous les types d’informations sensibles (SIT), à l’exception des données exactes correspondant aux types d’informations sensibles qui prennent en charge jusqu’à 100.
+
+> [!NOTE]
+> Nous prenons en charge jusqu’à 100 évaluations de correspondance de données exactes (EDM). Les stratégies qui utilisent des SIT EDM ne doivent pas être écrites **avec une valeur** minimale ou **maximale** de nombre d’instances supérieure à 100.
 
 Ces limites s’appliquent à toutes les stratégies Microsoft Purview qui utilisent des SIT.
 
@@ -67,6 +70,5 @@ Pour qu’un élément analysé réponde aux critères de règle, le nombre d’
 
 Par exemple, si vous souhaitez que la règle déclenche une correspondance quand au moins 500 instances uniques d’un SIT sont trouvées dans un seul élément, définissez la valeur `500` **minimale** sur et la valeur **maximale** sur `Any`.
 
-> [!NOTE]
-> Nous prenons en charge jusqu’à 100 évaluations de correspondance de données exactes (EDM). Les stratégies qui utilisent des SIT EDM ne doivent pas être écrites **avec une valeur** minimale ou **maximale** de nombre d’instances supérieure à 100.
+
 

@@ -3,7 +3,8 @@ title: Microsoft Defender pour Identity pilote
 description: Pilotez Microsoft Defender pour Identity, définissez des benchmarks, suivez des didacticiels sur la reconnaissance, les informations d’identification compromises, le mouvement latéral, la domination du domaine et les alertes d’exfiltration, entre autres.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 4805c97d79d36879a7b5081c347bd81c655c58c4
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: b6cf54408fff8139f1cd06a303f91c9785cca98a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747898"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481281"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Microsoft Defender pour Identity pilote
 

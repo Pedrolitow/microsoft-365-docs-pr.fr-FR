@@ -6,8 +6,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender pour Office 365
-ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 883e91227ccf99835d85ea5253f89d765c3693df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773254"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481369"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de l’essai Microsoft Defender pour Office 365
 
@@ -48,7 +48,7 @@ Une version d’évaluation Microsoft Defender pour Office 365 est un moyen simp
 |[Suivis des menaces](threat-trackers.md)<sup>\*</sup>|Utilisez des widgets et des vues informatifs pour identifier les problèmes de cybersécurité susceptibles d’avoir un impact sur votre organisation.|
 |[Explorateur de menaces](threat-explorer.md)<sup>\*</sup>|Recherchez des informations en quasi temps réel sur les menaces dans votre e-mail Office 365.|
 |[Investigation et réponse automatisées (AIR)](office-365-air.md)<sup>\*</sup>|Localisez et corrigez automatiquement les objets de menace à mesure que des alertes sont déclenchées.|
-|[Formation à la simulation d’attaque](attack-simulation-training.md)<sup>\*</sup>|Formez vos utilisateurs pour identifier les attaques par hameçonnage et répondre de manière appropriée.|
+|[Exercice de simulation d'attaque](attack-simulation-training.md)<sup>\*</sup>|Formez vos utilisateurs pour identifier les attaques par hameçonnage et répondre de manière appropriée.|
 |[Vues de campagne](campaigns.md)<sup>\*</sup>|Examinez et répondez à une activité de messagerie malveillante à grande échelle.|
 |[Rapports utilisant des fonctionnalités de Defender pour Office 365](view-reports-for-mdo.md)|Affichez des rapports, notamment l’état de la protection contre les menaces, la protection contre les menaces d’URL, la latence du courrier, etc.|
 |[Protection de compte prioritaire](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Les utilisateurs que vous identifiez en tant que comptes Priority sont marqués dans les alertes, les rapports et les enquêtes afin qu’ils se distinguent. Vous pouvez également utiliser la balise Priority dans les filtres.|
@@ -88,7 +88,7 @@ La carte de licence pour l’essai affiche les informations suivantes :
   - **Détection & réponse uniquement** : nombre total d’utilisateurs inclus dans les scénarios suivants :
     - Pendant la version d’évaluation, vous avez étendu les stratégies à des utilisateurs spécifiques.
     - Vous avez des stratégies personnalisées qui sont limitées à des utilisateurs spécifiques.
-  - **Protection complète** : nombre total d’utilisateurs protégés par Defender pour Office 365 fonctionnalités du plan 2 (AIR, Explorateur de menaces, entraînement de simulation d’attaque, etc.).
+  - **Protection complète** : nombre total d’utilisateurs protégés par Defender pour Office 365 fonctionnalités du plan 2 (AIR, Explorateur de menaces, Exercice de simulation d'attaque, etc.).
 
 Pour plus d’informations sur la tarification, consultez [Microsoft Defender pour Office 365](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
 
@@ -108,7 +108,7 @@ La version d’évaluation Defender pour Office 365 est progressivement déploy�
 
 Pour plus d’informations, consultez [Microsoft Defender pour Office 365 conditions d’évaluation &](defender-for-office-365-trial-terms-and-conditions.md) conditions.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="q-how-do-i-extend-the-trial"></a>Q : Comment faire prolonger l’essai?
 

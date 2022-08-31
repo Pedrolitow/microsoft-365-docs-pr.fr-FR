@@ -3,7 +3,8 @@ title: Évaluer et piloter Microsoft 365 Defender, une solution XDR
 description: Qu’est-ce que la sécurité XDR ? Comment évaluer un XDR Microsoft dans Microsoft 365 Defender ? Utilisez cette série de blog pour planifier votre laboratoire d’essai ou votre environnement pilote Microsoft 365 Defender afin de tester et de piloter une solution de sécurité conçue pour protéger les appareils, l’identité, les données et les applications. Commencez votre parcours de cybersécurité XDR ici et effectuez ce test en production.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 5256a578abb515f7d8d2d6e73b5a01fe71404dd0
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 5689dd9f493ce148b02146ddca7ca7c570e005e4
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750075"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481655"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Évaluer et piloter Microsoft 365 Defender
 
@@ -128,7 +129,7 @@ Le tableau suivant décrit cette illustration.
 |3     | [Activer Defender pour Office 365 ](eval-defender-office-365-overview.md)       | Vérifiez que vous répondez aux exigences d’architecture, activez l’évaluation, puis créez l’environnement pilote. Ce composant inclut Exchange Online Protection et vous allez donc évaluer *les deux* ici.      |
 |4     | [Activer Defender pour point de terminaison ](eval-defender-endpoint-overview.md)       | Vérifiez que vous répondez aux exigences d’architecture, activez l’évaluation, puis créez l’environnement pilote.         |
 |5     | [Activer Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)        |  Vérifiez que vous répondez aux exigences d’architecture, activez l’évaluation, puis créez l’environnement pilote.        |
-|6      | [Examiner et répondre aux menaces](eval-defender-investigate-respond.md)        |   Simuler une attaque et commencer à utiliser des fonctionnalités de réponse aux incidents.      |
+|6     | [Examiner et répondre aux menaces](eval-defender-investigate-respond.md)        |   Simuler une attaque et commencer à utiliser des fonctionnalités de réponse aux incidents.      |
 |7      | [Promouvoir la version d’évaluation en production](eval-defender-promote-to-production.md)        | Promouvoir les composants Microsoft 365 en production un par un.        |
 
 Il s’agit d’un ordre généralement recommandé conçu pour tirer parti de la valeur des fonctionnalités rapidement en fonction de la quantité d’efforts généralement nécessaires pour déployer et configurer les fonctionnalités. Par exemple, Defender pour Office 365 peut être configuré en moins de temps que nécessaire pour inscrire des appareils dans Defender pour point de terminaison. Bien sûr, vous devez hiérarchiser les composants pour répondre aux besoins de votre entreprise et les activer dans un ordre différent.

@@ -15,14 +15,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails légitimes bloqués, des e-mails suspects, des e-mails suspects de hameçonnage, du courrier indésirable, d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 692bef65a37f1411952e3848147913a64daf72a1
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b5b54a0d6d8e760d392578997461be44a19cf92a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67392910"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480534"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL, des e-mails légitimes bloqués et des pièces jointes à Microsoft
 
@@ -124,7 +124,7 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 2. Dans la page **Soumissions**, sélectionnez l’onglet **Email pièces jointes**.
 
-3. Sous l’onglet **Email pièces jointes**, cliquez sur ![l’icône Envoyer à Microsoft pour l’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+3. Sous **l’onglet Email pièces jointes**, cliquez sur ![Icône Envoyer à Microsoft pour analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
 
 4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
 
@@ -166,7 +166,7 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 2. Dans la page **Soumissions** , sélectionnez l’onglet **URL** .
 
-3. Sous l’onglet **URL** , cliquez sur ![l’icône Envoyer à Microsoft pour analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+3. Sous l’onglet **URL** , cliquez sur ![Envoyer à Microsoft pour l’analyse, bouton Ajouter.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
 
 4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
 
@@ -441,7 +441,7 @@ Une fois qu’un utilisateur envoie un e-mail suspect à la boîte aux lettres p
 
 Si vous avez configuré la boîte aux lettres personnalisée pour intercepter les messages signalés par l’utilisateur sans envoyer les messages à Microsoft, vous pouvez rechercher et envoyer des messages spécifiques à Microsoft à des fins d’analyse.
 
-Sous **l’onglet Messages signalés par l’utilisateur** , sélectionnez un message dans la liste, cliquez sur ![Envoyer à Microsoft pour l’icône d’analyse.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Soumettez à Microsoft pour analyse**, puis sélectionnez l’une des valeurs suivantes dans la liste déroulante :
+Sous **l’onglet Messages signalés par l’utilisateur** , sélectionnez un message dans la liste, cliquez sur ![Envoyer à Microsoft pour l’ajout d’analyse.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Soumettez à Microsoft pour analyse**, puis sélectionnez l’une des valeurs suivantes dans la liste déroulante :
 
 - **Nettoyer le rapport**
 - **Signaler le hameçonnage**

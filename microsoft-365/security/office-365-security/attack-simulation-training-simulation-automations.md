@@ -5,19 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et charges utiles spécifiques qui sont lancées lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 plan 2.
-ms.technology: mdo
-ms.openlocfilehash: 0b2a177947384d456b2e9a93f6252a98c879458f
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.openlocfilehash: 0099373996cee691eacab8b6469d368d711128eb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409133"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476141"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour Exercice de simulation d'attaque
 

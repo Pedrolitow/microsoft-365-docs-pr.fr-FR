@@ -4,7 +4,8 @@ description: Tirer le meilleur parti des résultats de requête retournés par l
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, visualisation, graphique, filtres, exploration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: cb17e2a3624471031eb4f72199705d6b8fe06979
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 451e45b60bbb8bc9ea552b616ccd230b5cf7caf6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092864"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481699"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utiliser des résultats de requête de chasse avancés
 
@@ -112,7 +112,7 @@ Le graphique en courbes ci-dessous met clairement en évidence les périodes ave
 
 Après avoir exécuté une requête, sélectionnez **Exporter** pour enregistrer les résultats dans un fichier local. La vue choisie détermine la façon dont les résultats sont exportés :
 
-- **Vue Table** : les résultats de la requête sont exportés sous forme tabulaire en tant que classeur Microsoft Excel
+- **Vue Table** : les résultats de la requête sont exportés sous forme tabulaire sous la forme d’un classeur Microsoft Excel
 - **N’importe quel graphique** : les résultats de la requête sont exportés sous forme d’image JPEG du graphique rendu
 
 ## <a name="drill-down-from-query-results"></a>Explorer les résultats de la requête

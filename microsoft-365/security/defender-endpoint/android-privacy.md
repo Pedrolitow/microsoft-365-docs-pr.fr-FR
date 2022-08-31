@@ -1,8 +1,8 @@
 ---
 title: 'Microsoft Defender pour point de terminaison Android : informations sur la confidentialité'
-description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour point de terminaison sur Android.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, android, confidentialité, diagnostic
-ms.prod: m365-security
+description: Contrôles de confidentialité, configuration des paramètres de stratégie qui ont un impact sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour point de terminaison sur Android.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, android, confidentialité, diagnostic
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 6772539f4ca4ea819a0f8cd2a92a817fcea650f3
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.subservice: mde
+ms.openlocfilehash: 204d4c4bb2549d78b601e1e91c31ace16edf475a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295133"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475501"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender pour point de terminaison Android : informations sur la confidentialité
 
@@ -30,80 +30,80 @@ ms.locfileid: "62295133"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Defender pour le point de terminaison sur Android collecte des informations à partir de vos appareils Android configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir defender pour point de terminaison pour Android sécurisé, à jour, performant comme prévu et pour prendre en charge le service.
+Defender pour point de terminaison sur Android collecte des informations à partir de vos appareils Android configurés et les stocke dans le même locataire que defender pour point de terminaison. Les informations sont collectées pour vous aider à maintenir Defender pour point de terminaison pour Android sécurisé, à jour, à effectuer les performances attendues et à prendre en charge le service.
 
-Pour plus d’informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité [des données des points de terminaison](data-storage-privacy.md).
+Pour plus d’informations sur le stockage des données, consultez [Microsoft Defender pour point de terminaison stockage des données et la confidentialité](data-storage-privacy.md).
 
-Des informations sont collectées pour aider à maintenir defender pour point de terminaison pour Android sécurisé, à jour, en cours d’application et pour prendre en charge le service.
+Des informations sont collectées pour aider à maintenir Defender pour point de terminaison pour Android sécurisé, à jour, performant comme prévu et à prendre en charge le service.
 
-Pour plus d’informations sur les questions de confidentialité les plus courantes concernant Microsoft Defender pour point de terminaison sur les appareils mobiles Android et iOS, voir [Microsoft Defender pour endpoint](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a) et votre confidentialité sur les appareils mobiles Android et iOS.
+Pour plus d’informations sur les questions de confidentialité les plus courantes sur Microsoft Defender pour point de terminaison sur les appareils mobiles Android et iOS, consultez [Microsoft Defender pour point de terminaison et votre confidentialité sur les appareils mobiles Android et iOS](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a).
 
 ## <a name="required-data"></a>Données requises
 
-Les données requises sont constituées de données nécessaires pour que Defender for Endpoint for Android fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications. Voici une liste des types de données collectées :
+Les données requises sont constituées de données nécessaires pour que Defender pour point de terminaison pour Android fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications. Voici une liste des types de données collectées :
 
 ### <a name="app-information"></a>Informations sur l’application
 
-Informations sur **les** packages d’application Android malveillants (APK) sur l’appareil, y compris
+Informations sur les packages d’application Android **malveillants** (APK) sur l’appareil, notamment
 
-- Source d’installation
-- Stockage emplacement (chemin d’accès du fichier) de l’APIK
-- Heure d’installation, taille de l’API et autorisations
+- Installer la source
+- Emplacement de stockage (chemin d’accès au fichier) de l’APK
+- Heure d’installation, taille d’APK et autorisations
 
-Pour les appareils Enterprise Android - Informations sur les packages d’application Android installés sur l’appareil, y compris
-
-- Nom et nom du package de l’application
-- Numéro de version de l’application
-- Nom de fournisseur
-
-Pour les Enterprise Android avec un profil de travail : informations sur les packages d’application Android (APK) installés sur le profil de travail de l’appareil, y compris
+Pour les appareils Android Enterprise entièrement gérés : informations sur les packages d’application Android (APK) installés sur l’appareil, notamment
 
 - Nom et nom du package de l’application
 - Numéro de version de l’application
 - Nom de fournisseur
 
-*Votre organisation peut également choisir de configurer Defender for Endpoint pour envoyer des informations sur toutes les applications installées sur l’appareil. Par défaut, ces informations ne sont pas envoyées à votre organisation.*
+Pour Android Enterprise avec un profil professionnel - Informations sur les packages d’application Android (APK) installés sur le profil Professionnel de l’appareil, notamment
+
+- Nom et nom du package de l’application
+- Numéro de version de l’application
+- Nom de fournisseur
+
+*Votre organisation peut également choisir de configurer Defender pour point de terminaison pour envoyer des informations sur toutes les applications installées sur l’appareil. Par défaut, ces informations ne sont pas envoyées à votre organisation.*
 
 
 ### <a name="web-page--network-information"></a>Page Web / Informations réseau
 
 - URL complète du site web uniquement lorsqu’une connexion malveillante ou une page web est détectée et bloquée.
 - Informations de connexion
-- Type de protocole (par exemple, HTTP, HTTPS, etc.)
+- Type de protocole (tel que HTTP, HTTPS, etc.)
 
 ### <a name="device-and-account-information"></a>Informations sur l’appareil et le compte
 
-- Informations sur l’appareil telles que l'& date, la version Android, le modèle OEM, les informations sur l’UC et l’identificateur de l’appareil.
-- L’identificateur de l’appareil est l’un des éléments suivants :
-  - Wi-Fi'adaptateur MAC
-  - [ID Android](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID) (tel que généré par Android au moment du premier démarrage de l’appareil).
+- Informations sur l’appareil telles que la date & l’heure, la version Android, le modèle OEM, les informations d’UC et l’identificateur d’appareil.
+- L’identificateur d’appareil est l’un des éléments suivants :
+  - adresse MAC de l’adaptateur Wi-Fi
+  - [ID Android](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID) (généré par Android au moment du premier démarrage de l’appareil).
   - Identificateur global unique (GUID) généré de manière aléatoire.
 
-- Informations sur le client, l’appareil et l’utilisateur
-  - Azure Active Directory (AD) ID d’appareil et ID utilisateur Azure : identifie de manière unique l’appareil, Utilisateur, respectivement dans Azure Active Directory.
-  - ID client Azure : GUID qui identifie votre organisation au sein Azure Active Directory.
-  - ID d’organisation Microsoft Defender pour point de terminaison : identificateur unique associé à l’entreprise à qui appartient l’appareil. Permet à Microsoft d’identifier si les problèmes ont un impact sur un ensemble d’entreprises sélectionné et le nombre d’entreprises qui en sont touchées.
-  - Nom d’utilisateur principal : ID de messagerie de l’utilisateur
+- Informations sur le locataire, l’appareil et l’utilisateur
+  - ID d’appareil Azure Active Directory (AD) et ID d’utilisateur Azure : identifie de façon unique l’appareil, l’utilisateur, respectivement dans Azure Active Directory.
+  - ID de locataire Azure : GUID qui identifie votre organisation au sein d’Azure Active Directory.
+  - Microsoft Defender pour point de terminaison ID d’organisation : identificateur unique associé à l’entreprise à laquelle appartient l’appareil. Permet à Microsoft d’identifier si les problèmes affectent un ensemble sélectionné d’entreprises et le nombre d’entreprises concernées.
+  - Nom d’utilisateur principal : ID Email de l’utilisateur
 
-### <a name="product-and-service-usage-data"></a>Données d’utilisation des produits et services
+### <a name="product-and-service-usage-data"></a>Données d’utilisation des produits et des services
 
-Les informations suivantes sont collectées uniquement pour l’application Microsoft Defender for Endpoint installée sur l’appareil. 
+Les informations suivantes sont collectées uniquement pour Microsoft Defender pour point de terminaison application installée sur l’appareil. 
 
-- Informations sur le package d’application, y compris le nom, la version et l’état de la mise à niveau de l’application.
+- Informations sur le package d’application, notamment le nom, la version et l’état de mise à niveau de l’application.
 - Actions effectuées dans l’application.
-- Informations sur la détection des menaces, telles que le nom de la menace, la catégorie, etc.
-- Journaux de rapport d’incident générés par Android.
+- Informations de détection des menaces, telles que le nom de la menace, la catégorie, etc.
+- Journaux des rapports d’incident générés par Android.
 
 ## <a name="optional-data"></a>Données facultatives
 
 Les données facultatives incluent les données de diagnostic et les données de commentaires. Les données de diagnostic facultatives nous aident à améliorer le produit et nous fournissent des informations complémentaires pour détecter, diagnostiquer et résoudre les problèmes. Les données de diagnostic facultatives incluent :
 
 - Utilisation de l’application, du processeur et du réseau.
-- État de l’appareil du point de vue de l’application, y compris l’état de l’analyse, le minutage de l’analyse, les autorisations d’application accordées et l’état de mise à niveau.
+- État de l’appareil du point de vue de l’application, notamment l’état de l’analyse, le minutage de l’analyse, les autorisations d’application accordées et l’état de mise à niveau.
 - Fonctionnalités configurées par l’administrateur.
 - Informations de base sur les navigateurs sur l’appareil.
 
-**Les données de** commentaires sont collectées par le biais de commentaires dans l’application fournis par l’utilisateur
+**Les données de commentaires** sont collectées via les commentaires dans l’application fournis par l’utilisateur
 
-- Adresse de messagerie de l’utilisateur, s’il choisit de la fournir.
-- Type de commentaires (souris, frown, idée) et tous les commentaires envoyés par l’utilisateur.
+- Adresse e-mail de l’utilisateur, s’il choisit de la fournir.
+- Type de commentaires (sourire, froncement de sourcils, idée) et tous les commentaires envoyés par l’utilisateur.

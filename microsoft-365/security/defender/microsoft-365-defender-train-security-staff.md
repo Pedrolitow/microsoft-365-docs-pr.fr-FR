@@ -1,9 +1,10 @@
 ---
 title: Former votre personnel de sécurité pour Microsoft 365 Defender
-description: Obtenez les ressources de formation clés pour une montée en puissance rapide de votre personnel de sécurité.
-keywords: vidéos, auto-aide, auto-étude, montée en puissance, instructions, cours, parcours d’apprentissage, Microsoft Learn, cours, cours, cours, SecOps, analyste de sécurité
+description: Accédez aux ressources de formation clés pour une montée en puissance rapide de votre personnel de sécurité.
+keywords: vidéos, auto-assistance, auto-étude, montée en puissance, instructions, cours, parcours d’apprentissage, Microsoft Learn, cours, cours, SecOps, analyste de sécurité
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,55 +22,54 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: f500b830a2a12674c53fdf1611c41ae7d59b6916
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 0656ec0d5194ea14deec293a505c5563a74ec939
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526947"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481083"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Former votre personnel de sécurité pour Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Avec l’urgence de protéger votre organisation et ses données contre les personnes malveillantes, vous devez rapidement intégrer votre personnel de sécurité pour Microsoft 365 Defender. Microsoft fournit plusieurs types de ressources d’apprentissage et d’auto-étude pour Microsoft 365 Defender et les services associés.
+Avec l’urgence de protéger votre organisation et ses données contre les attaquants, vous devez intégrer rapidement votre personnel de sécurité à Microsoft 365 Defender. Microsoft fournit plusieurs types de ressources d’apprentissage et d’auto-apprentissage pour les Microsoft 365 Defender et les services associés.
 
 
-## <a name="microsoft-365-defender-ninja-training"></a>Microsoft 365 Defender Training
+## <a name="microsoft-365-defender-ninja-training"></a>formation Microsoft 365 Defender Ninja
 
-[Microsoft 365 Defender Training Est](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376) un ensemble de sections et de modules organisés qui vous permet de vous aider à travers les fonctionnalités et les fonctions de Microsoft 365 Defender. La formation passe par les sources du signal de&mdash; menace, car Microsoft Defender pour le point de terminaison et othersbut&mdash; ne couvrent pas les sources individuelles. 
+[Microsoft 365 Defender formation Ninja](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376) est un ensemble de sections et de modules organisés qui vous guident dans les fonctionnalités et les fonctions de Microsoft 365 Defender. La formation couvre les sources&mdash;de signal de menace telles que Microsoft Defender pour point de terminaison et d’autres&mdash;, mais ne couvre pas les sources individuelles elles-mêmes. 
 
-Le contenu est structuré en trois niveaux de connaissances différents, avec plusieurs modules : Fundamentals, Intermediate et Expert. Chaque niveau inclut une vérification des connaissances pour tester votre compréhension du matériel.
+Le contenu est structuré en trois niveaux de connaissances différents, avec plusieurs modules : Notions de base, Intermédiaire et Expert. Chaque niveau comprend une vérification des connaissances pour tester votre compréhension du matériel.
 
 ## <a name="microsoft-learn-learning-paths"></a>Parcours d’apprentissage Microsoft Learn
 
-Utilisez ces parcours d’apprentissage Microsoft Learn et leurs modules pour comprendre Microsoft 365 Defender et Microsoft Defender pour le point de terminaison, un module et une unité à la fois.
+Utilisez ces parcours d’apprentissage Microsoft Learn et leurs modules pour comprendre Microsoft 365 Defender et Microsoft Defender pour point de terminaison, un module et une unité à la fois.
 
  - [Détecter les cyberattaques et y répondre avec Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
 
  - [Sécuriser votre organisation avec Microsoft Defender pour point de terminaison](/learn/paths/defender-endpoint-fundamentals/)  
 
 
-## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Learning chemins d’accès dans Microsoft 365 Defender portail d’apprentissage
+## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Parcours d’apprentissage dans le hub d’apprentissage du portail Microsoft 365 Defender
 
-Le hub [d Microsoft 365 Defender portail d’apprentissage comprend](https://security.microsoft.com/learning) les parcours d’apprentissage ci-après :
+Le [hub d’apprentissage du portail Microsoft 365 Defender](https://security.microsoft.com/learning) inclut les parcours d’apprentissage suivants :
 
-- Mise en place du centre de Microsoft 365 de sécurité
-- Comment examiner l’utilisation des Microsoft 365 Defender
-- Microsoft 365 Defender formation de base
-- Microsoft Defender for Endpoint Basic Training
-- Meilleures pratiques Office 365 Microsoft Defender pour les entreprises
+- Prise en main de la Centre de sécurité Microsoft 365
+- Comment examiner l’utilisation de Microsoft 365 Defender
+- formation de base Microsoft 365 Defender
+- formation de base Microsoft Defender pour point de terminaison
+- meilleures pratiques de Microsoft Defender pour Office 365
 - Configuration
 
 ## <a name="hands-on-with-a-trial-environment"></a>Pratique avec un environnement d’essai
 
-L’une des meilleures façons d’apprendre consiste à configurer et tester Microsoft 365 Defender et ses services associés dans un environnement d’évaluation. Voir [Évaluer et piloter Microsoft 365 Defender](eval-overview.md) pour plus d’informations.
+L’une des meilleures façons d’apprendre consiste à configurer et tester Microsoft 365 Defender et ses services associés dans un environnement d’essai. Pour plus d’informations, consultez [Évaluer et piloter Microsoft 365 Defender](eval-overview.md).
 
 ## <a name="simulating-an-attack"></a>Simulation d’une attaque
 
-Pour tester votre personnel de sécurité sur sa capacité à détecter une cyberattaque et à y répondre, utilisez une attaque simulée. Pour [plus d’informations, voir Simuler des attaques avec Microsoft 365 Defender web](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal). 
+Pour tester votre personnel de sécurité sur sa capacité à détecter et à répondre à une cyberattaque, utilisez une attaque simulée. Pour plus d’informations, consultez [Simuler des attaques avec le portail Microsoft 365 Defender](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal). 
 

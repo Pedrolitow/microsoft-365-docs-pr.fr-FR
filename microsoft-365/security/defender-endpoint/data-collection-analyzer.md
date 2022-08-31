@@ -1,8 +1,8 @@
 ---
 title: Collecte de données pour la résolution avancée des problèmes sur Windows
-description: Découvrez comment utiliser l’analyseur client pour collecter des données pour des scénarios de dépannage complexes
+description: Découvrez comment utiliser l’analyseur client pour collecter des données dans des scénarios de dépannage complexes
 keywords: analzyer, collecter des données, dépanner mdeclientanalyzer, résolution avancée des problèmes
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 2825bc87750dc9bb130e35f9a4997283e470f869
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: m365d
+ms.openlocfilehash: d85b44777098c4b013746e138fe1b057f7b0edb2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469886"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479905"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
 
@@ -29,56 +29,56 @@ ms.locfileid: "64469886"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Lorsque vous collaborez avec des professionnels du support technique Microsoft, vous pouvez être invité à utiliser l’analyseur client pour collecter des données afin de résoudre les problèmes de scénarios plus complexes. Le script de l’analyseur prend en charge d’autres paramètres à cet effet et peut collecter un ensemble de journaux spécifique en fonction des symptômes observés qui doivent être examinés.
+Lorsque vous collaborez avec des professionnels du support Microsoft, vous pouvez être invité à utiliser l’analyseur client pour collecter des données pour résoudre les problèmes de scénarios plus complexes. Le script de l’analyseur prend en charge d’autres paramètres à cet effet et peut collecter un jeu de journaux spécifique en fonction des symptômes observés qui doivent être étudiés.
 
-Exécuter « **MDEClientAnalyzer.cmd /?** » pour voir la liste des paramètres disponibles et leur description :
+Exécutez « **MDEClientAnalyzer.cmd /?** » pour afficher la liste des paramètres disponibles et leur description :
 
 :::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="Paramètres de MDEClientAnalyzer.cmd" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
-> Lorsqu’un paramètre de dépannage avancé est utilisé, l’analyseur [ ](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) appelle égalementMpCmdRun.exepour collecter Antivirus Microsoft Defender journaux de support associés.
+> Quand un paramètre de dépannage avancé est utilisé, l’analyseur appelle également [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) pour collecter les journaux de support relatifs à l’Antivirus Microsoft Defender.
 
-**-h** : appelle [l’enregistreur Windows performance](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter un suivi détaillé des performances générales en plus du jeu de journaux standard.
+**-h** : appelle [l’enregistreur de performances Windows](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter une trace générale détaillée des performances en plus du jeu de journaux standard.
 
-**-l** - Appels dans l’Windows [Performance Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) pour collecter un suivi perfmon léger. Cela peut s’avérer utile lors du diagnostic de problèmes de dégradation des performances lents qui se produisent au fil du temps, mais qui sont difficiles à reproduire à la demande.
+**-l** : appelle des [Analyseur de performances Windows](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) intégrés pour collecter une trace de perfmon légère. Cela peut être utile lors du diagnostic de problèmes de dégradation des performances lents qui se produisent au fil du temps, mais difficiles à reproduire à la demande.
 
-**-c** - Appels dans le moniteur de [processus](/sysinternals/downloads/procmon) pour la surveillance avancée de l’activité en temps réel du système de fichiers, du Registre et des processus/threads. Cela est particulièrement utile lors du dépannage de différents scénarios de compatibilité d’application.
+**-c** - Appels dans [le moniteur de processus](/sysinternals/downloads/procmon) pour une surveillance avancée du système de fichiers, du registre et de l’activité de processus/threads en temps réel. Cela est particulièrement utile lors de la résolution des différents scénarios de compatibilité des applications.
 
-**-i** : appelle une commandenetsh.exeintégrée [](/windows/win32/winsock/netsh-exe) pour démarrer un suivi du réseau et du pare-feu Windows qui est utile lors de la résolution de divers problèmes liés au réseau.
+**-i** : appelle une commande [netsh.exe](/windows/win32/winsock/netsh-exe) intégrée pour démarrer une trace de pare-feu réseau et Windows qui est utile lors de la résolution de divers problèmes liés au réseau.
 
-**-b** - Identique à '-c', mais la trace du moniteur de processus sera lancée lors du prochain démarrage et arrêtée uniquement lorsque le -b est de nouveau utilisé.
+**-b** - Identique à '-c', mais la trace du moniteur de processus est lancée lors du démarrage suivant et arrêtée uniquement lorsque le -b est à nouveau utilisé.
 
-**-a** - Appelle l’Enregistreur de [performances Windows](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter un suivi des performances détaillée spécifique à l’analyse des problèmes de processeur élevés liés au processus antivirus (MsMpEng.exe).
+**-a** - Appelle [l’enregistreur de performances Windows](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter une trace détaillée des performances spécifique à l’analyse des problèmes d’UC élevés liés au processus antivirus (MsMpEng.exe).
 
-**-v** - Utilise l’antivirus [MpCmdRun.exe'argument de ligne](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) de commande avec la plupart des indicateurs de suivi détaillées.
+**-v** : utilise [ l’antivirusMpCmdRun.exe argument de ligne de commande](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) avec la plupart des indicateurs de trace détaillés.
 
-**-t** : démarre la trace détaillée de tous les composants côté client pertinents pour le point de terminaison DLP. Cela est utile dans les scénarios où les [actions DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) ne se produisent pas comme prévu pour les fichiers.
+**-t** - Démarre la trace détaillée de tous les composants côté client pertinents pour endpoint DLP. Cela est utile pour les scénarios où les [actions DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) ne se produisent pas comme prévu pour les fichiers.
 
-**-q** - Appels dans DLPDiagnose.ps1 script à partir du répertoire « Outils » de l’analyseur qui valide la configuration de base et la configuration requise pour le point de terminaison DLP.
+**-q** : appelle DLPDiagnose.ps1 script à partir du répertoire « Tools » de l’analyseur qui valide la configuration de base et les exigences pour la protection contre la perte de données du point de terminaison.
 
-**-d** - Collecte un vidage mémoire de MsSenseS.exe (processus de capteur sur Windows Server 2016 ou un système d’exploitation plus ancien) et des processus associés.
+**-d** : collecte un vidage de mémoire de MsSense **S**.exe (processus de capteur sur Windows Server 2016 ou un système d’exploitation plus ancien) et des processus connexes.
 
 - \* Cet indicateur peut être utilisé conjointement avec les indicateurs mentionnés ci-dessus.
-- \*\* La capture d’un vidage mémoire de processus protégés par [PPL](/windows-hardware/drivers/install/early-launch-antimalware) tels que MsSense.exe ou MsMpEng.exe n’est pas prise en charge par l’analyseur pour le moment.
+- \*\* Pour l’instant, l’analyseur ne prend pas en charge la capture d’un vidage de mémoire de [processus protégés par PPL](/windows-hardware/drivers/install/early-launch-antimalware) tels que MsSense.exe ou MsMpEng.exe.
 
-**-z** : configure les clés de Registre sur l’ordinateur pour la préparer à la collecte de vidage mémoire complète de l’ordinateur via [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard). Cela serait utile pour l’analyse des problèmes de blocage de l’ordinateur.
+**-z** - Configure les clés de Registre sur l’ordinateur pour la préparer pour la collecte complète de mémoire de la machine via [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard). Cela serait utile pour l’analyse des problèmes de blocage de l’ordinateur.
 
-\* Maintenez la touche Ctrl la plus à droite, puis appuyez deux fois sur la touche DE VERROUILLAGE DE DÉFILEMENT.
+\* Maintenez la touche CTRL la plus à droite, puis appuyez deux fois sur la touche SCROLL LOCK.
 
-**-k** - Utilise [l’outil NotMyFault](/sysinternals/downloads/notmyfault) pour forcer le système à se crasher et à générer un vidage de mémoire de l’ordinateur. Cela serait utile pour l’analyse de divers problèmes de stabilité du système d’exploitation.
+**-k** - Utilise l’outil [NotMyFault](/sysinternals/downloads/notmyfault) pour forcer le système à se bloquer et générer un vidage de mémoire de la machine. Cela serait utile pour l’analyse de divers problèmes de stabilité du système d’exploitation.
 
-L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lancés à distance en exécutant « RemoteMDEClientAnalyzer.cmd » qui est également regroupé dans l’ensemble d’outils de l’analyseur :
+L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lancés à distance en exécutant « RemoteMDEClientAnalyzer.cmd », qui est également regroupé dans l’ensemble d’outils de l’analyseur :
 
 :::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="Paramètres de RemoteMDEClientAnalyzer.cmd" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 >
 > - Lorsque vous utilisez RemoteMDEClientAnalyzer.cmd, il appelle psexec pour télécharger l’outil à partir du partage de fichiers configuré, puis l’exécuter localement via PsExec.exe.
-    Le script CMD utilise l’indicateur « -r » pour spécifier qu’il s’exécute à distance dans le contexte SYSTÈME et qu’aucune invite ne sera donc présentée à l’utilisateur.
-> - Ce même indicateur peut être utilisé avec MDEClientAnalyzer.cmd pour éviter une invite à l’utilisateur qui demande de spécifier le nombre de minutes pour la collecte de données. Par exemple :
+    Le script CMD utilise l’indicateur « -r » pour spécifier qu’il s’exécute à distance dans le contexte SYSTEM et qu’aucune invite à l’utilisateur n’est présentée.
+> - Ce même indicateur peut être utilisé avec MDEClientAnalyzer.cmd pour éviter une invite à l’utilisateur qui demande à spécifier le nombre de minutes pour la collecte de données. Par exemple :
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >
 >   - **-r** : indique que l’outil est exécuté à partir d’un contexte distant (ou non interactif)
->   - **-i** - Indicateur de scénario pour la collecte de suivi réseau avec d’autres journaux associés
+>   - **-i** - Indicateur de scénario pour la collecte de la trace réseau avec d’autres journaux associés
 >   - **-m** \# - Nombre de minutes à exécuter (5 minutes dans l’exemple ci-dessus)

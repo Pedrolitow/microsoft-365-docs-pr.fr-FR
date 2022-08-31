@@ -1,9 +1,9 @@
 ---
 title: Configurer les fonctionnalités antivirus Microsoft Defender
-description: Vous pouvez configurer Antivirus Microsoft Defender fonctionnalités avec Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe et PowerShell.
-keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, configurer, configuration, Gestionnaire de configuration, Microsoft Endpoint Configuration Manager, SCCM, Intune, GPM, gestion des appareils mobiles, stratégie de groupe, PowerShell
-ms.prod: m365-security
-ms.technology: mde
+description: Vous pouvez configurer les fonctionnalités de l’Antivirus Microsoft Defender avec Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe et PowerShell.
+keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, configurer, configuration, Gestionnaire de configuration, point de terminaison Microsoft Configuration Manager, SCCM, Intune, GPM, gestion des appareils mobiles, stratégie de groupe, PowerShell
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8271f6d0fcc58ce5a7e1ce08f6034a8a90afab48
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: c0950ead64f39dced48bbdea0e242bdc1d8fe3b6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115452"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479529"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurer les fonctionnalités antivirus Microsoft Defender
 
@@ -35,9 +35,9 @@ ms.locfileid: "66115452"
 **Plateformes**
 - Windows
 
-Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’outils, tels que :
+Vous pouvez configurer l’antivirus Microsoft Defender avec un certain nombre d’outils, tels que :
 
-- Microsoft Endpoint Manager (qui inclut Microsoft Intune et Microsoft Endpoint Configuration Manager)
+- Microsoft Endpoint Manager (qui inclut Microsoft Intune et Configuration Manager de point de terminaison Microsoft)
 - Stratégie de groupe
 - Cmdlets PowerShell
 - WMI (Windows Management Instrumentation)
@@ -45,13 +45,13 @@ Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’o
 
 Les grandes catégories de fonctionnalités suivantes peuvent être configurées :
 
-- Protection fournie par le cloud. Voir protection [et Antivirus Microsoft Defender fournies par le cloud](cloud-protection-microsoft-defender-antivirus.md)
+- Protection fournie par le cloud. Consultez [la protection fournie par le cloud et l’antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
 - Protection en temps réel en permanence, y compris la protection comportementale, heuristique et basée sur l’apprentissage automatique. Consultez [Configurer la protection comportementale, heuristique et en temps réel](configure-protection-features-microsoft-defender-antivirus.md).
 
 - Comment les utilisateurs finaux interagissent avec le client sur des points de terminaison individuels. Consultez les ressources suivantes :
-  - [Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur Antivirus Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)
-  - [Empêcher ou autoriser les utilisateurs à modifier localement Antivirus Microsoft Defender paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+  - [Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur de l’Antivirus Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie antivirus Microsoft Defender](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > Consultez [les rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md).

@@ -5,19 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Les administrateurs peuvent apprendre à créer des e-mails de notification de l’utilisateur final pour la formation de simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
-ms.technology: mdo
-ms.openlocfilehash: b26c8060fb869ea9e02ab06396a5a91281bcf3f0
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+description: Les administrateurs peuvent apprendre à créer des e-mails de notification de l’utilisateur final pour Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 Plan 2.
+ms.subservice: mdo
+ms.openlocfilehash: 6297fafeb572c807a49161b1bd3e11a0820b7686
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839266"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481061"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Automatisations de charge utile pour la formation à la simulation d’attaque
 
@@ -26,14 +26,14 @@ ms.locfileid: "65839266"
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-Dans l’entraînement de simulation d’attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, les notifications de l’utilisateur final sont des messages électroniques envoyés aux [utilisateurs](attack-simulation-training.md) à la suite de simulations ou [d’automatisations de simulation](attack-simulation-training-simulation-automations.md). Les types de notifications d’utilisateur final suivants sont disponibles :
+Dans Exercice de simulation d'attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, les notifications de l’utilisateur final sont des messages électroniques envoyés aux [utilisateurs](attack-simulation-training.md) à la suite de simulations ou [d’automatisations de simulation](attack-simulation-training-simulation-automations.md). Les types de notifications d’utilisateur final suivants sont disponibles :
 
 - **Notification de renforcement positif** : envoyée lorsque les utilisateurs signalent un message de hameçonnage simulé.
 - **Notification de simulation** : envoyée lorsque les utilisateurs sont inclus dans une automatisation de simulation ou de simulation, mais qu’aucune formation n’est sélectionnée.
 - **Notification d’affectation** de formation : envoyée lorsque des formations requises sont attribuées aux utilisateurs à la suite d’une simulation ou d’automatisations de simulation.
 - **Notification de rappel de formation** : envoyée en tant que rappels pour les formations requises.
 
-Pour afficher les notifications disponibles de l’utilisateur final, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse \> **e-mail &** onglet **Simulation** de **simulation** \> d’attaque de collaboration\>, puis sélectionnez **Notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **les notifications de l’utilisateur final**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Pour afficher les notifications d’utilisateur final disponibles, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **Email &'onglet** \> Collaboration \> **Exercice de simulation d'attaque** \> **Bibliothèque de contenu simulation**, puis sélectionnez **Notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **les notifications de l’utilisateur final**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Les notifications de l’utilisateur final** comportent deux onglets :
 
@@ -79,7 +79,7 @@ Dans le menu volant des détails de l’onglet **Notifications du locataire** un
 
 ## <a name="create-end-user-notifications"></a>Créer des notifications d’utilisateur final
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à l’onglet \> **e-mail & bibliothèque** de **contenu simulation** de **simulation** \> d’attaque de collaboration\>, puis sélectionnez **notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **les notifications de l’utilisateur final**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & onglet Collaboration** \> **Exercice de simulation d'attaque** \> Bibliothèque \> de **contenu Simulation**, puis sélectionnez **Notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **les notifications de l’utilisateur final**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 2. Sous l’onglet **Notifications du locataire** , cliquez sur ![Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en un** pour démarrer l’Assistant notification de l’utilisateur final.
 
@@ -104,7 +104,7 @@ Dans le menu volant des détails de l’onglet **Notifications du locataire** un
    - **Marquez-la comme langue par défaut** : étant donné qu’il s’agit de la première langue et de la seule langue de la notification, cette valeur est sélectionnée et vous ne pouvez pas la modifier.
    - **Objet** : La valeur par défaut est **Merci pour la création de rapports de hameçonnage**, mais vous pouvez la modifier.
    - **Importer un e-mail** : vous pouvez éventuellement cliquer sur ce bouton, puis cliquer sur **Choisir un fichier** pour importer un fichier de message en texte brut existant.
-   - Zone de contenu de l’e-mail : deux onglets sont disponibles :
+   - Email zone de contenu : deux onglets sont disponibles :
      - **Onglet Texte** : un éditeur de texte enrichi est disponible pour créer votre e-mail de notification. Outre les paramètres de police et de mise en forme classiques, les paramètres suivants sont disponibles :
        - **Balise dynamique** : sélectionnez parmi les balises suivantes :
          - **Insérer un prénom**
@@ -183,12 +183,12 @@ Vous ne pouvez pas supprimer les notifications intégrées de l’onglet **Notif
 Pour supprimer une notification personnalisée existante de l’onglet Notifications du locataire, effectuez l’une des **étapes suivantes** :
 
 - Sélectionnez la notification dans la liste en cochant la case, puis cliquez sur l’icône ![Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Icône Supprimer** qui s’affiche.
-- Cliquez sur **⋮** (**Actions**) entre les valeurs **Notifications** et **Langue** de la notification dans la liste, puis sélectionnez ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**.
+- Cliquez sur **⋮** (**Actions**) entre les valeurs **Notifications** et **Langue** de la notification dans la liste, puis sélectionnez ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**
 
-## <a name="related-links"></a>Liens connexes
+## <a name="related-links"></a>Liens associés
 
 [Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)
 
 [Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
 
-[Automatisations de simulation pour l’entraînement de simulation d’attaque](attack-simulation-training-simulation-automations.md)
+[Automatisations de simulation pour Exercice de simulation d'attaque](attack-simulation-training-simulation-automations.md)

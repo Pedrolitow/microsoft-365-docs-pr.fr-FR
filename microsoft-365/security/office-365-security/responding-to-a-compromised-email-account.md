@@ -11,6 +11,7 @@ ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
 - m365solution-smb
+- highpri
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -20,21 +21,21 @@ search.appverid:
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bdce44bc54c71d03e8064fa10187c06237d38b5b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: HT
+ms.openlocfilehash: 50819867e5912ee0ae4993cadfe0d5238229c7d3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941419"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479949"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Résumé** Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Microsoft 365.
 

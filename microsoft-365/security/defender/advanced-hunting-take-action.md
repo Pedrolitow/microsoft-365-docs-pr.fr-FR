@@ -4,7 +4,8 @@ description: Résoudre rapidement les menaces et les ressources affectées dans 
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, prendre des mesures
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b7fbe659902bf89023e994f4e1304f25f3934db8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c83370c302b10159d4d2325e66224685ab232cad
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097590"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479507"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Prendre des mesures sur les résultats de la requête de chasse avancée
 
@@ -46,7 +46,7 @@ Vous pouvez rapidement contenir des menaces ou traiter les ressources compromise
 ## <a name="required-permissions"></a>Autorisations requises
 Pour prendre des mesures sur les appareils par le biais de la chasse avancée, vous avez besoin d’un rôle dans Microsoft Defender pour point de terminaison avec [les autorisations nécessaires pour envoyer des actions de correction sur les appareils](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si vous ne pouvez pas prendre d’action, contactez un administrateur général pour obtenir l’autorisation suivante :
 
-*Actions de correction actives > Menace et gestion des vulnérabilités - Gestion des corrections*
+*Actions de correction actives > gestion des menaces et des vulnérabilités - Gestion des corrections*
 
 Pour prendre des mesures sur les e-mails par le biais d’une chasse avancée, vous avez besoin d’un rôle dans Microsoft Defender pour Office 365 pour [rechercher et vider les e-mails](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
@@ -76,14 +76,14 @@ Pour en savoir plus sur la façon dont les actions de quarantaine sont effectué
 
 Pour effectuer l’une des actions décrites, sélectionnez un ou plusieurs enregistrements dans les résultats de votre requête, puis **sélectionnez Effectuer des actions**. Un Assistant vous guide tout au long du processus de sélection, puis d’envoi de vos actions préférées.
 
-:::image type="content" source="../../media/take-action-multiple.png" alt-text="Option Prendre des mesures dans le portail Microsoft 365 Defender" lightbox="../../media/take-action-multiple.png":::
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Option Effectuer des actions dans le portail Microsoft 365 Defender" lightbox="../../media/take-action-multiple.png":::
 
 
 ## <a name="take-various-actions-on-emails"></a>Effectuer différentes actions sur les e-mails
 Outre les étapes de correction axées sur l’appareil, vous pouvez également effectuer certaines actions sur les e-mails provenant des résultats de votre requête. Sélectionnez les enregistrements sur lesquels vous souhaitez effectuer une action, **sélectionnez Effectuer des actions**, puis, sous **Choisir des actions, sélectionnez** votre choix parmi les éléments suivants :
 - `Move to mailbox folder` - Sélectionnez cette option pour déplacer les messages électroniques vers le dossier Courrier indésirable, Boîte de réception ou Éléments supprimés
 
-   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="Option Prendre des mesures dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-take-actions-email.png":::
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="L’option Effectuer des actions dans le portail Microsoft 365 Defender" lightbox="../../media/advanced-hunting-take-actions-email.png":::
 
 - `Delete email` - Sélectionnez cette option pour déplacer les messages électroniques vers le dossier Éléments supprimés (**suppression réversible**) ou les supprimer définitivement (**Suppression** définitive)
 
@@ -97,7 +97,7 @@ Ces actions de messagerie s’appliquent également aux [détections personnalis
 
 
 ## <a name="review-actions-taken"></a>Passer en revue les actions effectuées
-Chaque action est enregistrée individuellement dans le [centre d’action](m365d-action-center.md) sous **Action** **centerHistory** >  ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Accédez au centre d’actions pour vérifier l’état de chaque action.
+Chaque action est enregistrée individuellement dans le [centre d’action](m365d-action-center.md) sous **Historique** du **centre** >  d’actions ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Accédez au centre d’actions pour vérifier l’état de chaque action.
  
 >[!NOTE]
 >Certaines tables de cet article peuvent ne pas être disponibles dans Microsoft Defender pour point de terminaison. [Activez Microsoft 365 Defender](m365d-enable.md) pour rechercher des menaces à l’aide de sources de données supplémentaires. Vous pouvez déplacer vos flux de travail de chasse avancés de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de migration [des requêtes de chasse avancées à partir de Microsoft Defender pour point de terminaison](advanced-hunting-migrate-from-mde.md).

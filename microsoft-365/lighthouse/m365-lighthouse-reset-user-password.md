@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment réinitialiser un mot de passe pour un seul utilisateur ou pour plusieurs utilisateurs à risque sur différents locataires.
-ms.openlocfilehash: c46f7e744e06118eb3a8cf8dc48bf5dcf1b36e31
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 1133b545cc3b817f06b88112fc9670247dd0dd66
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055875"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475645"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Réinitialiser un mot de passe utilisateur dans Microsoft 365 Lighthouse
 
@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse vous permet de modifier ou de réinitialiser les mots d
 
 ## <a name="reset-a-password-for-a-user"></a>Réinitialiser un mot de passe pour un utilisateur
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **de la recherche d’utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** >  de **la recherche de gestion des** >  comptes **d’utilisateurs**.
 
 2. Sous l’onglet **Rechercher des utilisateurs** , entrez le nom d’un utilisateur dans la zone de recherche.
 
@@ -50,7 +50,7 @@ Microsoft 365 Lighthouse vous permet de modifier ou de réinitialiser les mots d
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque**.
 
-2. Sous l’onglet **Utilisateurs à** risque, sélectionnez un utilisateur à risque dans la liste.
+2. Dans la page **Utilisateurs à risque** , sélectionnez un utilisateur à risque dans la liste.
 
 3. Cliquez sur **Réinitialiser le mot de passe**.
 

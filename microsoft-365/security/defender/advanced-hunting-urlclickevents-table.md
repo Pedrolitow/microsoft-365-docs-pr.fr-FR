@@ -4,7 +4,8 @@ description: Découvrez comment rechercher des campagnes de hameçonnage et des 
 keywords: repérage avancé, chasse aux menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, UrlClickEvents, SafeLinks, hameçonnage, programmes malveillants, clics malveillants, outlook, équipes, e-mail, office365
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: bb7ee0397c79cc64c6f7396b6c3ca9450c8306f2
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 068e083321b465410df9e734660344c03e6b55ce
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "66991681"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476041"
 ---
 # <a name="urlclickevents"></a>UrlClickEvents
 

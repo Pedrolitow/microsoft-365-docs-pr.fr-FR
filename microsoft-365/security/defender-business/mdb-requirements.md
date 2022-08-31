@@ -17,12 +17,13 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 4968a6318138b4c3b6bd5958de195dcd1677106b
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+- highpri
+ms.openlocfilehash: d5d1cae1ce1b8a468668991165dd8222a68b375d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309414"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479288"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>exigences de Microsoft Defender pour entreprises
 

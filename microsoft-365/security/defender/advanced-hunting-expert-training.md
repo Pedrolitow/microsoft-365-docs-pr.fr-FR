@@ -4,7 +4,8 @@ description: Formation gratuite et conseils d’experts de chasse avancés
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, langue, formation, scénarios, de base à avancé, vidéos, étape par étape
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4c83db02acea02b076b84f8b180e4d9ff8460a80
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: ac9e28a51e79eea85a56fea652931d9db38f1907
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603316"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477646"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtenir une formation d’expert sur la chasse avancée
 

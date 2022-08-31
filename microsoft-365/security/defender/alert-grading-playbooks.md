@@ -1,9 +1,10 @@
 ---
 title: Playbooks de notation d’alerte
-description: Examinez les alertes pour les attaques connues et prenez les mesures recommandées pour corriger l’attaque et protéger votre réseau.
-keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
+description: Passez en revue les alertes pour les attaques connues et prenez les mesures recommandées pour corriger l’attaque et protéger votre réseau.
+keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,81 +23,80 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 129a4f2efd9a47c09535be3ba0f56504f3da697c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 83935f8ad4fda1848a15bfe34599b80683ee95fe
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328006"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477404"
 ---
 # <a name="alert-grading-playbooks"></a>Playbooks de notation d’alerte
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Les manuels de notation des alertes vous permettent de passer en revue et de classer rapidement les alertes pour les attaques connues et de prendre les mesures recommandées pour corriger l’attaque et protéger votre réseau. La notation des alertes vous aidera également à classer correctement l’incident global.
+Les playbooks de notation d’alertes vous permettent d’examiner et de classer rapidement les alertes pour les attaques connues et de prendre des mesures recommandées pour corriger l’attaque et protéger votre réseau. La notation des alertes permet également de classifier correctement l’incident global.
 
-En tant qu’analyste du Centre d’opérations de sécurité ou de recherche sur la sécurité, vous devez avoir accès au portail Microsoft 365 Defender pour pouvoir :
+En tant que chercheur en sécurité ou analyste du Centre des opérations de sécurité (SOC), vous devez avoir accès au portail Microsoft 365 Defender afin de pouvoir :
 
-- Évaluez et examinez les alertes générées et les incidents associés. Voir [examiner les alertes](investigate-alerts.md).
-- Recherchez les données du signal de sécurité de votre client et recherchez les menaces potentielles et les activités suspectes. Voir [la recherche avancée](advanced-hunting-overview.md).
+- Évaluez et examinez les alertes générées et les incidents associés. Consultez [examiner les alertes](investigate-alerts.md).
+- Recherchez les données de signal de sécurité de votre locataire et recherchez les menaces potentielles et les activités suspectes. Consultez [la chasse avancée](advanced-hunting-overview.md).
 
 >[!Note]
->Vous pouvez fournir des commentaires à Microsoft sur les alertes vraies positives et fausses positives, non seulement à la fin de l’enquête, mais également pendant le processus d’examen. Cela peut aider Microsoft à analyser et à classificationr ultérieurement les événements de sécurité.
+>Vous pouvez envoyer des commentaires à Microsoft sur les alertes de vrais positifs et de faux positifs, non seulement à la fin de l’enquête, mais également pendant le processus d’investigation. Cela peut aider Microsoft à effectuer une analyse et une classification ultérieures des événements de sécurité.
 >
 
 ## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
-[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Defender pour Office 365 inclut :
+[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) protège votre organisation contre les menaces malveillantes posées par les e-mails, les liens (URL) et les outils de collaboration. Defender pour Office 365 inclut :
 
 - Stratégies de protection contre les menaces
 
-   Définir des stratégies de protection contre les menaces pour définir le niveau de protection approprié pour votre organisation.
+   Définissez des stratégies de protection contre les menaces pour définir le niveau de protection approprié pour votre organisation.
 
 - Rapports
 
-  Affichez les rapports en temps réel pour surveiller Defender pour Office 365 performances au niveau de votre organisation.
+  Affichez les rapports en temps réel pour surveiller Defender pour Office 365 performances dans votre organisation.
 
-- Fonctionnalités d’examen et de réponse aux menaces
+- Fonctionnalités d’investigation et de réponse aux menaces
 
-  Utilisez des outils de pointe pour examiner, comprendre, simuler et prévenir les menaces.
+  Utilisez des outils de pointe pour examiner, comprendre, simuler et empêcher les menaces.
 
-- Fonctionnalités automatisées d’examen et de réponse
+- Fonctionnalités d’investigation et de réponse automatisées
 
   Gagnez du temps et des efforts pour examiner et atténuer les menaces.
 
-Defender for Office 365 alerts can be classified as: 
+Defender pour Office 365 alertes peuvent être classées comme suit : 
 
-- Vrai positif (TP) pour les activités malveillantes confirmées. 
+- Vrai positif (TP) pour une activité malveillante confirmée. 
 - Faux positif (FP) pour une activité non malveillante confirmée.
 
 >[!Note]
->Microsoft 365 Defender portail regroupe [https://security.microsoft.com](https://security.microsoft.com) les fonctionnalités des portails de sécurité Microsoft existants. Le portail Microsoft 365 Defender met l’accent sur l’accès rapide aux informations, des dispositions plus simples et la mise en réseau des informations associées pour faciliter leur utilisation.
+>Microsoft 365 Defender portail [https://security.microsoft.com](https://security.microsoft.com) rassemble les fonctionnalités des portails de sécurité Microsoft existants. Le portail Microsoft 365 Defender met l’accent sur l’accès rapide aux informations, les dispositions plus simples et le regroupement d’informations connexes pour faciliter leur utilisation.
 >
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-[Microsoft Defender pour les applications cloud](/defender-cloud-apps) est un courtier de sécurité d’accès cloud (CASB) qui prend en charge différents modes de déploiement, notamment la collecte de journaux, les connecteurs d’API et le proxy inverse. Il vous offre une visibilité riche, un contrôle sur le déplacement des données et des analyses sophistiquées pour identifier et combattre les cybermenaces sur l’ensemble de vos services cloud tiers et Microsoft.
+[Microsoft Defender for Cloud Apps](/defender-cloud-apps) est un service Cloud Access Security Broker (CASB) qui prend en charge différents modes de déploiement, notamment la collecte des journaux, les connecteurs d’API et le proxy inverse. Il vous offre une visibilité riche, un contrôle sur le déplacement des données et des analyses sophistiquées pour identifier et combattre les cybermenaces sur l’ensemble de vos services cloud tiers et Microsoft.
 
-Defender pour les applications cloud s’intègre en natif aux solutions Microsoft de pointe et est conçu avec les professionnels de la sécurité à l’esprit. Il offre un déploiement simple, une gestion centralisée et des fonctionnalités d’automatisation innovantes.
+Defender pour Cloud Apps s’intègre en mode natif aux principales solutions Microsoft et est conçu avec les professionnels de la sécurité à l’esprit. Il offre un déploiement simple, une gestion centralisée et des fonctionnalités d’automatisation innovantes.
 
-L’infrastructure Defender pour les applications cloud inclut la possibilité de protéger votre réseau contre les cybermenaces et les anomalies, détecte un comportement inhabituel entre les applications cloud pour identifier les ransomware, les utilisateurs compromis ou les applications non malveillantes. Il permet d’analyser l’utilisation à risque élevé et peut corriger automatiquement les risques pour votre organisation.
+Defender pour Cloud Apps framework offre la possibilité de protéger votre réseau contre les cybermenaces et les anomalies, de détecter les comportements inhabituels entre les applications cloud pour identifier les ransomware, les utilisateurs compromis ou les applications non autorisées. Il permet l’analyse de l’utilisation à haut risque et peut corriger automatiquement pour limiter le risque pour votre organisation.
 
-Les alertes Defender pour les applications cloud peuvent être classées comme : 
+Les alertes Defender pour Cloud Apps peuvent être classées comme suit : 
 
-- TP pour les activités malveillantes confirmées. 
-- Vrai positif non positif (B-TP) pour les activités suspectes mais non malveillantes, telles qu’un test de pénétration ou toute autre action suspecte autorisée. 
+- TP pour une activité malveillante confirmée. 
+- Vrai positif bénin (B-TP) pour une activité suspecte mais non malveillante, telle qu’un test de pénétration ou une autre action suspecte autorisée. 
 - FP pour les activités non malveillantes confirmées.
 
 ## <a name="alert-grading-playbooks"></a>Playbooks de notation d’alerte
 
-Consultez ces manuels pour obtenir la procédure à suivre pour obtenir une note plus rapide des alertes pour les menaces suivantes :
+Consultez ces playbooks pour connaître les étapes permettant de classer plus rapidement les alertes pour les menaces suivantes :
 
 - [Activité suspecte de transfert d’e-mail](alert-grading-playbook-email-forwarding.md)
 - [Règles de manipulation de la boîte de réception suspectes](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Règle de transfert de boîte de réception suspect](alert-grading-playbook-inbox-forwarding-rules.md)
 
-Voir [Examiner les alertes](investigate-alerts.md) pour plus d’informations sur la façon d’examiner les alertes à l’Microsoft 365 Defender portail.
+Consultez [Examiner les alertes](investigate-alerts.md) pour plus d’informations sur l’examen des alertes avec le portail Microsoft 365 Defender.

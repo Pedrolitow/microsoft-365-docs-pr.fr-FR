@@ -362,6 +362,8 @@
   items:
     - name: Services financiers
       items:
+        - name: Vue d'ensemble
+          href: financial-services-overview.md
         - name: Sécurité et conformité pour les services financiers
           href: financial-services-secure-collaboration.md
     - name: Services énergétiques et utilitaires
@@ -373,7 +375,7 @@
         - name: Vue d’ensemble
           href: healthcare-overview.md
         - name: Teams pour la santé publique
-          href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+          href: /frontline/teams-in-hc
     - name: Éducation
       items:
         - name: Teams pour l’éducation
@@ -389,7 +391,7 @@
         - name: Vue d’ensemble
           href: retail-overview.md
         - name: Teams pour la vente au détail
-          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
+          href: /frontline/teams-for-retail-landing-page
 - name: Principes de conception de l’architecture d’entreprise
   items:
     - name: Vue d’ensemble

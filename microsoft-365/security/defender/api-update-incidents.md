@@ -3,7 +3,8 @@ title: Mettre à jour l’API d’incident
 description: Découvrez comment mettre à jour des incidents à l’aide de l’API Microsoft 365 Defender
 keywords: mise à jour, API, incident
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: f0d8ec43cc67ab07b2c69104e79730ab522118ad
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: d15f7a580964736ebc81bd0dbeed534c4965426b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100050"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480973"
 ---
 # <a name="update-incidents-api"></a>API Mettre à jour les incidents
 
@@ -84,7 +84,7 @@ Propriété|Type|Description
 statut|Énum|Spécifie l’état actuel de l’incident. Les valeurs possibles sont : `Active`, `Resolved`et `Redirected`.
 assignedTo|string|Propriétaire de l’incident.
 classification|Énum|Spécification de l’incident. Les valeurs possibles sont `Unknown`, `FalsePositive` et `TruePositive`.
-détermination|Énum|Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware` et `Other`.
+Détermination|Énum|Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware` et `Other`.
 étiquettes|string List|Liste des balises d’incident.
 comment|string|Commentaire à ajouter à l’incident.
 

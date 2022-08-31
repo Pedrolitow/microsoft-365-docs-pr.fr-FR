@@ -1,9 +1,10 @@
 ---
-title: Aperçu des fonctionnalités dans Microsoft 365 Defender
+title: Fonctionnalités en préversion dans Microsoft 365 Defender
 description: En savoir plus sur les nouvelles fonctionnalités de la Sécurité Microsoft 365
 keywords: aperçu, nouveautés, sécurité M365, sécurité, 365, capacités
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,43 +20,42 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 6693fc853370e1c5b2cd2f3ae09f54da2af14ca8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 724ddc1c4958811609e6b442f781f4e3371c0edb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162241"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479707"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender fonctionnalités d’aperçu
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender fonctionnalités en préversion
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Le service Microsoft 365 Defender est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
+Le service Microsoft 365 Defender est constamment mis à jour pour inclure de nouvelles fonctionnalités et améliorations.
 
-Découvrez les nouvelles fonctionnalités de la Microsoft 365 Defender prévisualisation et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
+Découvrez les nouvelles fonctionnalités de la préversion Microsoft 365 Defender et soyez parmi les premiers à essayer les fonctionnalités à venir en activant l’expérience de préversion.
 
-Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés](whats-new.md)de Microsoft 365 Defender .
+Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, consultez [Les nouveautés de Microsoft 365 Defender](whats-new.md).
 
  ## <a name="what-you-need-to-know"></a>Ce que vous devez savoir
 
-Lorsque vous travaillez avec des fonctionnalités en prévisualisation publique, ces fonctionnalités :
+Les caractéristiques des fonctionnalités en préversion publique sont les suivantes :
 
-- Fonctionnalités restreintes ou limitées. Par exemple, la fonctionnalité ne peut s’appliquer qu’à une seule plateforme.
-- En règle générale, les modifications apportées aux fonctionnalités sont apportées avant d’être généralement disponibles.
-- Sont entièrement pris en charge par Microsoft.
-- Peut être disponible uniquement dans les régions géographiques ou les environnements cloud sélectionnés. Par exemple, la fonctionnalité n’existe peut-être pas dans le cloud du gouvernement.
-- Les fonctionnalités individuelles en prévisualisation peuvent avoir davantage de restrictions d’utilisation et de prise en charge. Si tel est le cas, ces informations sont généralement notées dans la documentation des fonctionnalités.
-- Les versions d’aperçu sont fournies avec un niveau de prise en charge standard et peuvent être utilisées pour les environnements de production. 
+- Elles peuvent avoir des fonctionnalités restreintes ou limitées. Par exemple, la fonctionnalité peut ne s’appliquer qu’à une seule plateforme.
+- Elles peuvent subir des modifications avant d’être généralement disponibles (GA).
+- Elles sont entièrement prises en charge par Microsoft.
+- Elles peuvent n’être disponibles que dans des régions géographiques ou des environnements cloud sélectionnés. Par exemple, la fonctionnalité peut ne pas exister dans le cloud Government.
+- Les fonctionnalités individuelles en préversion peuvent avoir des restrictions d’utilisation et de prise en charge supplémentaires. Si c’est le cas, ces informations sont généralement notées dans la documentation de la fonctionnalité.
+- Les versions préliminaires sont fournies avec un niveau de support standard et peuvent être utilisées pour les environnements de production. 
 
 
 
 ## <a name="required-permissions"></a>Autorisations requises
 
-Les comptes affectés aux rôles Azure Active Directory (Azure AD) peuvent activer Microsoft 365 Defender fonctionnalités d’aperçu :
+Les comptes auxquels les rôles Azure Active Directory (Azure AD) suivants sont attribués peuvent activer Microsoft 365 Defender fonctionnalités en préversion :
 
 - Administrateur général
 - Administrateur de sécurité
@@ -63,7 +63,7 @@ Les comptes affectés aux rôles Azure Active Directory (Azure AD) peuvent activ
 
 ## <a name="turn-on-preview-features"></a>Activer les fonctionnalités d’aperçu
 
-Vous aurez accès aux fonctionnalités à venir sur qui vous pourrez nous faire part de vos commentaires afin d’améliorer l’expérience globale avant que les fonctionnalités ne soient généralement disponibles.
+Vous aurez accès aux fonctionnalités à venir sur lesquelles vous pouvez fournir des commentaires afin d’améliorer l’expérience globale avant que les fonctionnalités ne soient généralement disponibles.
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 

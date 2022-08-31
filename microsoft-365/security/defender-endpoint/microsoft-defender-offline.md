@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/30/2022
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 33f41114c0647de2987a5ed5abdaec4c885fcbfd
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 350ab278281cc436bb49c6d27827ac73ae2bea43
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387438"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476525"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 
@@ -141,6 +141,14 @@ Pour plus d’informations, consultez les rubriques suivantes :
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
 > - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+
+### <a name="where-can-i-find-the-scan-results"></a>Où puis-je trouver les résultats de l’analyse ?
+
+Pour afficher les résultats de l’analyse hors connexion de Microsoft Defender :
+
+1. Sélectionnez **Démarrer**, puis sélectionnez Mise à jour **des paramètres**  > **& Sécurité**  >  **Sécurité Windows**  >  **Virus & protection contre les menaces**.
+
+2. Dans l’écran **Virus & protection contre les menaces** , sous **Menaces actuelles**, sélectionnez **Options d’analyse**, puis historique **de protection**.
 
 ## <a name="related-articles"></a>Articles connexes
 

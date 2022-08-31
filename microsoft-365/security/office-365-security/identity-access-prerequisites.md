@@ -19,19 +19,20 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 6883782a942b7fda8e2dedc721756b59a3e7ede6
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 27c6557219db62d17ebb90e3e5b36169fc397874
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749987"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477338"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Travail requis pour implémenter Confiance nulle stratégies d’identité et d’accès aux appareils
 
 Cet article décrit les prérequis que les administrateurs doivent remplir pour utiliser les stratégies d’identité et d’accès aux appareils Confiance nulle recommandées et pour utiliser l’accès conditionnel. Il décrit également les valeurs par défaut recommandées pour la configuration des plateformes clientes pour la meilleure expérience d’authentification unique (SSO).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 Avant d’utiliser les stratégies d’identité et d’accès aux appareils Confiance nulle recommandées, votre organisation doit respecter les prérequis. Les exigences sont différentes pour les différents modèles d’identité et d’authentification répertoriés :
 

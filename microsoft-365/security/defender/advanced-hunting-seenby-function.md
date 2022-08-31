@@ -4,7 +4,8 @@ description: Découvrez comment utiliser la fonction SeenBy() pour rechercher qu
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, SeenBy, découverte d’appareil, fonction, enrichissement
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4a17efeeaf62ddcf63988f055ca93b536e68c962
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c44288276431d5a479f47a46289dfaad8089448f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "66991685"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477184"
 ---
 # <a name="seenby"></a>SeenBy()
 

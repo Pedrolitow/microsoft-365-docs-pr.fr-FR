@@ -2,7 +2,8 @@
 title: Fournir un accès au fournisseur de services de sécurité managé (MSSP)
 description: En savoir plus sur les modifications apportées par le Centre de sécurité Microsoft Defender au portail Microsoft 365 Defender
 keywords: Prise en main du portail Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour point de terminaison, MDO, MDE, volet unique de verre, portail convergé, portail de sécurité, portail de sécurité Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,12 +18,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 3df43fd4de6bd040db0acd13678434c7302aff5d
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 58f5076cd29383b4eb37231df5704a92176ca6f8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050717"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480863"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité managé (MSSP) 
 

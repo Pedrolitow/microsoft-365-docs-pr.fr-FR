@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 551c3356adb0e5c3ded15d5bf942f0ac0bbd515d
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f26f2f1056b17725761181e5b606bafcd421c923
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087657"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481215"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -117,7 +117,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
    - **Exclure ces utilisateurs, groupes et domaines** : pour ajouter des exceptions pour les expéditeurs internes auxquels la stratégie s’applique (exceptions de destinataire), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    > [!IMPORTANT]
-   > Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+   > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
    > - Le destinataire est : romain@contoso.com
    > - Le destinataire est membre de : Exécutifs

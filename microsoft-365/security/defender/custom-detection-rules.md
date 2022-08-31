@@ -4,7 +4,8 @@ description: Découvrez comment créer et gérer des règles de détection perso
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, règles, schéma, kusto, RBAC, autorisations, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 0bc0ff6c0ccd9013685ff59e2ce3f12745a7e82e
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 100eb64b5c99cb2292c7b10bb2345ebf634b61e6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387020"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477888"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 

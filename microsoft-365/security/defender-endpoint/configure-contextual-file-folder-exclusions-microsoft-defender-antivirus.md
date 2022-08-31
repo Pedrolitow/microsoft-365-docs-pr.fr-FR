@@ -2,7 +2,7 @@
 title: Exclusions de fichiers et de dossiers contextuels
 description: Décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuelles pour l’antivirus Microsoft Defender sur Windows. Cette fonctionnalité vous permet d’être plus spécifique lorsque vous définissez dans quel contexte l’Antivirus Microsoft Defender ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions
 keywords: Antivirus Microsoft Defender, processus, exclusion, fichiers, analyses
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 8d1516d00a693a56b99ad6eabad59722867f3db0
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.subservice: mde
+ms.openlocfilehash: 0868250b04120a4eed0cf254e4a9d3692eb661fa
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439561"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477954"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Exclusions de fichiers et de dossiers contextuels
 
@@ -94,7 +94,7 @@ Si vous ne spécifiez aucune autre option, le fichier/dossier est exclu de tous 
 
 #### <a name="folders"></a>Folders
 
-Pour vous assurer qu’une exclusion s’applique uniquement si la cible est un dossier, et non un fichier, vous pouvez utiliser la restriction **PathType:folder** . Par exemple :
+Pour vous assurer qu’une exclusion s’applique uniquement si la cible est un dossier, et non un fichier, vous pouvez utiliser la restriction **PathType:folder** . Par exemple :
 
 `C:\documents\:{PathType:folder}`
 

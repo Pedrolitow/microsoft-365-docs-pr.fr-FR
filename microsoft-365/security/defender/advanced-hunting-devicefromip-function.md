@@ -1,10 +1,11 @@
 ---
-title: Fonction DeviceFromIP() dans le recherche avancée d’Microsoft 365 Defender
-description: Découvrez comment utiliser la fonction DeviceFromIP() pour obtenir les appareils affectés à une adresse IP spécifique
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, device, devicefromIP, function, enrichment
+title: Fonction DeviceFromIP() dans la chasse avancée pour Microsoft 365 Defender
+description: Découvrez comment utiliser la fonction DeviceFromIP() pour obtenir les appareils auxquels une adresse IP spécifique a été attribuée
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, appareil, devicefromIP, fonction, enrichissement
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,31 +18,30 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4a1f1198c247aefbcbb093d1a5f5105704255692
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 62df7a7c7bbf61c176d69b115f88bddae09fa04f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531578"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479397"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement la liste des appareils qui ont été affectés à une certaine adresse IP à `DeviceFromIP()` un moment donné dans le temps. [](advanced-hunting-overview.md) 
+Utilisez la `DeviceFromIP()` fonction dans vos requêtes de [repérage avancées](advanced-hunting-overview.md) pour obtenir rapidement la liste des appareils qui ont été affectés à une certaine adresse IP à un moment donné. 
 
-Cette fonction renvoie un tableau avec les colonnes suivantes :
+Cette fonction retourne une table avec les colonnes suivantes :
 
-| Colonne | Type de données | Description |
+| Column | Type de données | Description |
 |------------|-------------|-------------|
 | `IP` | `string` | Adresse IP  |
 | `DeviceId` | `string` | Identificateur unique de l’appareil dans le service |
@@ -55,15 +55,15 @@ invoke DeviceFromIP()
 
 ## <a name="arguments"></a>Arguments
 
-Cette fonction est invoquée dans le cadre d’une requête.
+Cette fonction est appelée dans le cadre d’une requête.
 
-- **x**— Le premier paramètre est généralement déjà une colonne dans la requête. Dans ce cas, il s’agit de la colonne nommée , l’adresse IP pour laquelle vous souhaitez voir la liste des appareils qui lui ont `IP` été affectés. Il doit s’agit d’une adresse IP locale. Les adresses IP externes ne sont pas pris en charge.
-- **y**— Un deuxième paramètre facultatif est le , qui indique à la fonction d’obtenir les appareils affectés les plus `Timestamp` récents à partir d’un moment spécifique. Si elle n’est pas spécifiée, la fonction renvoie les derniers enregistrements disponibles.
+- **x** : le premier paramètre est généralement déjà une colonne dans la requête. Dans ce cas, il s’agit de la colonne nommée `IP`, l’adresse IP pour laquelle vous souhaitez afficher la liste des appareils qui lui ont été affectés. Il doit s’agir d’une adresse IP locale. Les adresses IP externes ne sont pas prises en charge.
+- **y** : un deuxième paramètre facultatif est le `Timestamp`, qui indique à la fonction d’obtenir les appareils affectés les plus récents à partir d’un moment spécifique. Si elle n’est pas spécifiée, la fonction retourne les derniers enregistrements disponibles.
 
 ## <a name="example"></a>Exemple
 
 
-### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Obtenir les appareils les plus récents qui ont été affectés à des adresses IP spécifiques
+### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Obtenir les derniers appareils auxquels des adresses IP spécifiques ont été attribuées
 
 ```kusto
 DeviceNetworkEvents 

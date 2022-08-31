@@ -13,15 +13,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - m365solution-ransomware
-description: Microsoft 365 administrateurs peuvent apprendre à récupérer après une attaque par ransomware.
+- highpri
+description: Les administrateurs Microsoft 365 peuvent apprendre à récupérer après une attaque par ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 328457e37ea6ae351abb2c5d5f0089246145b32c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 23cc51d34244ebdb0d37141879df25da7e8429df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648654"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481127"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupérer à la suite d’une attaque par ransomware dans Microsoft 365
 
@@ -70,7 +71,7 @@ Exécutez une analyse antivirus complète et actuelle sur tous les ordinateurs e
 
 N’oubliez pas d’analyser les appareils qui synchronisent des données ou les cibles des lecteurs réseau mappés.
 
-Vous pouvez utiliser [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) ou (pour les clients plus anciens) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
+Vous pouvez utiliser [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) ou (pour les clients plus [anciens) Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
 Une alternative qui vous aidera également à supprimer les ransomware ou les programmes malveillants est [l’outil de suppression de logiciels malveillants (MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
 
@@ -78,13 +79,13 @@ Si ces options ne fonctionnent pas, vous pouvez essayer [Windows Defender hors c
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Étape 4 : Récupérer des fichiers sur un ordinateur ou un appareil nettoyé
 
-Une fois que vous avez terminé l’étape précédente pour supprimer la charge utile de ransomware de votre environnement (ce qui empêchera le ransomware de chiffrer ou de supprimer vos fichiers), vous pouvez utiliser [Historique des fichiers](https://support.microsoft.com/help/17128) dans Windows 11, Windows 10, Windows 8.1 et en utilisant la protection système dans Windows  7 pour tenter de récupérer vos fichiers et dossiers locaux.
+Une fois que vous avez terminé l’étape précédente pour supprimer la charge utile de ransomware de votre environnement (ce qui empêchera le ransomware de chiffrer ou de supprimer vos fichiers), vous pouvez utiliser [l’historique](https://support.microsoft.com/help/17128) des fichiers dans Windows 11, Windows 10, Windows 8.1 et en utilisant la protection système dans Windows 7 pour tenter de récupérer vos fichiers et dossiers locaux.
 
 **Remarques** :
 
-- Certains ransomware chiffrent ou suppriment également les versions de sauvegarde. Vous ne pouvez donc pas utiliser Historique des fichiers ou System Protection pour restaurer des fichiers. Si cela se produit, vous devez utiliser des sauvegardes sur des lecteurs externes ou des appareils qui n’ont pas été affectés par le ransomware ou OneDrive comme décrit dans la section suivante.
+- Certains ransomware chiffrent ou suppriment également les versions de sauvegarde. Vous ne pouvez donc pas utiliser l’historique des fichiers ou la protection système pour restaurer les fichiers. Si cela se produit, vous devez utiliser des sauvegardes sur des lecteurs externes ou des appareils qui n’ont pas été affectés par le ransomware ou OneDrive, comme décrit dans la section suivante.
 
-- Si un dossier est synchronisé avec OneDrive et que vous n’utilisez pas la dernière version de Windows, il peut y avoir certaines limitations à l’aide de Historique des fichiers.
+- Si un dossier est synchronisé avec OneDrive et que vous n’utilisez pas la dernière version de Windows, l’historique des fichiers peut être limité.
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Étape 5 : Récupérer vos fichiers dans votre OneDrive Entreprise
 
@@ -92,7 +93,7 @@ La restauration de fichiers dans OneDrive Entreprise vous permet de restaurer l�
 
 ## <a name="step-6-recover-deleted-email"></a>Étape 6 : Récupérer les e-mails supprimés
 
-Dans les rares cas où le ransomware a supprimé tous vos e-mails, vous pouvez probablement récupérer les éléments supprimés. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Dans les rares cas où le ransomware a supprimé tous vos e-mails, vous pouvez probablement récupérer les éléments supprimés. Pour plus d’informations, consultez l’article suivant :
 
 - [Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -168,7 +169,7 @@ Microsoft Azure :
 - [Défenses Azure pour les attaques par rançongiciel](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Optimisez la résilience aux ransomwares avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de sauvegarde et de restauration pour se protéger contre les rançongiciels](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Protéger contre les ransomwares avec Sauvegarde Microsoft Azure](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
+- [Protéger contre les ransomwares avec Microsoft Sauvegarde Azure](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Détection avancée d’attaques à plusieurs niveaux dans Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Détection de fusion pour les ransomware dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)

@@ -2,7 +2,8 @@
 title: Gérer les incidents dans Microsoft 365 Defender
 description: Découvrez comment attribuer, mettre à jour l’état,
 keywords: incidents, incidents, analyse, réponse, alertes, alertes corrélées, assigner, mettre à jour, état, gérer, classification, microsoft, 365, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: 9aa293a84f3bdca6988b1bf8437906f8b1cfbd39
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 5bc9135419dfcc85fa1a942c1d06fc52029fbc84
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739997"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480775"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 

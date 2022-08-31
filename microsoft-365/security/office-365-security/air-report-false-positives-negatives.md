@@ -1,7 +1,7 @@
 ---
-title: Comment signaler des faux positifs ou des faux négatifs à la suite d’examens automatisés dans Microsoft Defender pour Office 365
-description: Un problème a-t-il été manqué ou détecté à tort par AIR dans Microsoft Defender pour Office 365 ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
-keywords: automatisé, examen, alerte, déclencheur, action, correction, faux positif, faux négatif
+title: Comment signaler des faux positifs ou des faux négatifs à la suite d’une enquête automatisée dans Microsoft Defender pour Office 365
+description: Quelque chose a-t-il été manqué ou détecté à tort par AIR dans Microsoft Defender pour Office 365 ? Découvrez comment envoyer des faux positifs ou des faux négatifs à Microsoft à des fins d’analyse.
+keywords: automatisé, investigation, alerte, déclencheur, action, correction, faux positif, faux négatif
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,7 +10,7 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,68 +21,68 @@ ms.collection:
 ms.topic: how-to
 ms.custom:
 - autoir
-ms.technology: mdo
-ms.openlocfilehash: 4b1de0e19cbf241936aa02f957cdd0920f2a580a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.subservice: mdo
+ms.openlocfilehash: 0b48a5d954bb77a8982fa09d03d3acc103973430
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682480"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478660"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse
+# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler des faux positifs/négatifs dans les fonctionnalités d’investigation et de réponse automatisées
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si des fonctionnalités d’investigation et de réponse automatisées [(AIR)](automated-investigation-response-office.md) Office 365 manquées ou détectées à tort, il existe des étapes que votre équipe des opérations de sécurité peut suivre pour résoudre ce problème. Ces actions sont les suivantes :
+Si [les fonctionnalités d’investigation et de réponse automatisées (AIR) dans Office 365](automated-investigation-response-office.md) manquées ou détectées à tort, votre équipe des opérations de sécurité peut effectuer des étapes pour la corriger. Ces actions sont les suivantes :
 
 - [Signalement d’un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis) ;
-- [Ajustement des alertes](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si nécessaire) ; et
-- [Annuler les actions de correction qui ont été prises](#undo-a-remediation-action).
+- [Ajustement des alertes](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si nécessaire) ; Et
+- [Annulation des actions de correction qui ont été effectuées](#undo-a-remediation-action).
 
 Utilisez cet article comme guide.
 
-## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Signaler un faux positif/négatif à Microsoft pour analyse
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Signaler un faux positif/négatif à Microsoft à des fins d’analyse
 
-Si AIR dans Microsoft Defender pour Office 365 a manqué un message électronique, une pièce jointe, une URL dans un message électronique ou une URL dans un fichier Office, vous pouvez soumettre des messages suspects de courrier indésirable, de hameçonnage[, d’URL](admin-submission.md) et de fichiers à Microsoft pour l’analyse Office 365.
+Si AIR dans Microsoft Defender pour Office 365 manqué un e-mail, une pièce jointe, une URL dans un e-mail ou une URL dans un fichier Office, vous pouvez [envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft pour Office 365 analyse](admin-submission.md).
 
-Vous pouvez également [soumettre un fichier à Microsoft pour analyse des programmes malveillants](https://www.microsoft.com/wdsi/filesubmission).
+Vous pouvez également [envoyer un fichier à Microsoft pour l’analyse des programmes malveillants](https://www.microsoft.com/wdsi/filesubmission).
 
-## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajuster une alerte pour éviter que les faux positifs ne se répètent
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajuster une alerte pour éviter que les faux positifs ne se reproduisent
 
-Si une alerte est déclenchée par un usage légitime ou si l’alerte est inexacte, vous pouvez gérer les alertes dans le portail [Defender pour les applications cloud](/cloud-app-security/managing-alerts).
+Si une alerte est déclenchée par une utilisation légitime ou si elle est inexacte, vous pouvez [gérer les alertes dans le portail Defender pour Cloud Apps](/cloud-app-security/managing-alerts).
 
-Si votre organisation utilise [Microsoft Defender](/windows/security/threat-protection) pour le point de terminaison en plus de Office 365 et qu’un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sécurisé, vous pouvez créer un indicateur personnalisé avec une [action](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) « Autoriser » pour votre appareil.
+Si votre organisation utilise [Microsoft Defender pour point de terminaison](/windows/security/threat-protection) en plus de Office 365 et qu’un fichier, une adresse IP, une URL ou un domaine sont traités comme des programmes malveillants sur un appareil, même s’il est sécurisé, vous pouvez [créer un indicateur personnalisé avec une action « Autoriser » pour votre appareil](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## <a name="undo-a-remediation-action"></a>Annuler une action de correction
 
-Dans la plupart des cas, si une action corrective a été prise sur un message électronique, une pièce jointe ou une URL, et que l’élément n’est pas une menace, votre équipe des opérations de sécurité peut annuler l’action de correction et prendre des mesures pour empêcher le faux positif de se reproduire. Vous pouvez utiliser [l’Explorateur de](#undo-an-action-using-threat-explorer) menaces ou [l’onglet Actions pour un examen](#undo-an-action-in-the-action-center) afin d’annuler une action.
+Dans la plupart des cas, si une action de correction a été effectuée sur un e-mail, une pièce jointe ou une URL, et que l’élément n’est en fait pas une menace, votre équipe des opérations de sécurité peut annuler l’action de correction et prendre des mesures pour empêcher le faux positif de se reproduise. Vous pouvez utiliser [l’Explorateur de menaces](#undo-an-action-using-threat-explorer) ou l’onglet [Actions pour une enquête](#undo-an-action-in-the-action-center) afin d’annuler une action.
 
 > [!IMPORTANT]
-> Assurez-vous que vous avez les autorisations nécessaires avant d’essayer d’effectuer les tâches suivantes.
+> Vérifiez que vous disposez des autorisations nécessaires avant de tenter d’effectuer les tâches suivantes.
 
 ### <a name="undo-an-action-using-threat-explorer"></a>Annuler une action à l’aide de l’Explorateur de menaces
 
-Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut trouver un message électronique affecté par une action et éventuellement annuler l’action.
+Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut trouver un e-mail affecté par une action et éventuellement annuler l’action.
 
-|Scénario|Options d’annuler|En savoir plus|
+|Scénario|Options d’annulation|En savoir plus|
 |---|---|---|
-|Un message électronique a été acheminé vers le dossier Courrier indésirable d’un utilisateur|<ul><li>Déplacer le message vers le dossier Éléments supprimés de l’utilisateur</li><li>Déplacer le message vers la boîte de réception de l’utilisateur</li><li>Supprimer le message</li></ul>|[Rechercher et examiner les e-mails malveillants qui ont été remis dans Office 365](investigate-malicious-email-that-was-delivered.md)|
-|Un message électronique ou un fichier a été mis en quarantaine|<ul><li>Libérer le courrier électronique ou le fichier</li><li> Supprimer le courrier électronique ou le fichier</li></ul>|[Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)|
+|Un e-mail a été routée vers le dossier Junk Email d’un utilisateur|<ul><li>Déplacer le message vers le dossier Éléments supprimés de l’utilisateur</li><li>Déplacer le message vers la boîte de réception de l’utilisateur</li><li>Supprimer le message</li></ul>|[Rechercher et examiner les e-mails malveillants qui ont été remis dans Office 365](investigate-malicious-email-that-was-delivered.md)|
+|Un e-mail ou un fichier a été mis en quarantaine|<ul><li>Libérer l’e-mail ou le fichier</li><li> Supprimer l’e-mail ou le fichier</li></ul>|[Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)|
 
-### <a name="undo-an-action-in-the-action-center"></a>Annuler une action dans le centre de l’action
+### <a name="undo-an-action-in-the-action-center"></a>Annuler une action dans le centre d’action
 
-Dans le centre de correction, vous pouvez voir les actions de correction qui ont été prises et éventuellement annuler l’action.
+Dans le Centre d’actions, vous pouvez voir les actions de correction qui ont été effectuées et qui peuvent éventuellement annuler l’action.
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>allez au centre de l’action en sélectionnant Centre **de l’action**. Pour aller directement au centre de l’action, utilisez <https://security.microsoft.com/action-center/>.
-2. Dans le centre de actions, sélectionnez **l’onglet** Historique pour afficher la liste des actions terminées.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez au Centre d’actions en sélectionnant **Centre d’actions**. Pour accéder directement au Centre d’actions, utilisez <https://security.microsoft.com/action-center/>.
+2. Dans le Centre d’actions, sélectionnez l’onglet **Historique** pour afficher la liste des actions terminées.
 3. Sélectionnez un élément. Son volet volant s’ouvre.
-4. Dans le volet volant, sélectionnez **Annuler**. (Seules les actions qui peuvent être annulées auront **un bouton Annuler** .)
+4. Dans le volet de menu volant, sélectionnez **Annuler**. (Seules les actions pouvant être annulées auront un bouton **Annuler** .)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Microsoft Defender pour Office 365](defender-for-office-365.md)
-- [Examens automatisés dans Microsoft Defender pour Office 365](office-365-air.md)
+- [Investigations automatisées dans Microsoft Defender pour Office 365](office-365-air.md)

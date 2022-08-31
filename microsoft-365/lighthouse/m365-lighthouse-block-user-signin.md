@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment bloquer un compte d’utilisateur si vous pensez qu’il est compromis afin que les utilisateurs ne puissent pas se connecter.
-ms.openlocfilehash: b9e02ba0696d76ec58ec880e12001cdc6800430c
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 27cfcff4fd3d56a276e1499d8241395f48551003
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056502"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477976"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>Bloquer la connexion utilisateur Microsoft 365 Lighthouse
 
@@ -30,7 +30,7 @@ Vous pouvez bloquer un compte d’utilisateur si vous pensez qu’il est comprom
 
 ## <a name="block-sign-in-for-a-user"></a>Bloquer la connexion pour un utilisateur
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **de la recherche d’utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** >  de **la recherche de gestion des** > comptes **d’utilisateurs**.
 
 2. Sous l’onglet **Rechercher des utilisateurs** , entrez le nom d’un utilisateur dans la zone de recherche.
 
@@ -46,7 +46,7 @@ Vous pouvez bloquer un compte d’utilisateur si vous pensez qu’il est comprom
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque**.
 
-2. Sous l’onglet **Utilisateurs à risque** , sélectionnez l’ensemble des utilisateurs sur lesquels vous souhaitez effectuer une action.
+2. Dans la page **Utilisateurs à risque** , sélectionnez l’ensemble des utilisateurs sur lesquels vous souhaitez agir.
 
 3. Sélectionnez **Bloquer la connexion**.
 

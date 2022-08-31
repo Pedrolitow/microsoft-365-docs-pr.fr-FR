@@ -16,14 +16,14 @@ ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les considérations relatives au déploiement et poser fréquemment des questions sur la simulation d’attaque et la formation dans les organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 50f82d975e9dc4f534f9223b85fd9e841a3ad725
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f0a4bf3f408b48a4feb48ae4fad39cfe1e11420d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490484"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480600"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
 
@@ -32,9 +32,9 @@ ms.locfileid: "66490484"
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-La formation à la simulation d’attaque permet aux organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2 de mesurer et de gérer les risques d’ingénierie sociale en autorisant la création et la gestion de simulations d’hameçonnage alimentées par des charges utiles de hameçonnage réelles et désassurables. La formation hyper-ciblée, dispensée en partenariat avec la sécurité Terranova, permet d’améliorer les connaissances et de modifier le comportement des employés.
+Exercice de simulation d'attaque permet aux organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2 de mesurer et de gérer les risques d’ingénierie sociale en autorisant la création et la gestion de simulations de hameçonnage alimentées par le monde réel, charges utiles d’hameçonnage d’armes. La formation hyper-ciblée, dispensée en partenariat avec la sécurité Terranova, permet d’améliorer les connaissances et de modifier le comportement des employés.
 
-Pour plus d’informations sur la prise en main de la formation à la simulation d’attaque, consultez [Prise en main de la simulation d’attaque](attack-simulation-training-get-started.md).
+Pour plus d’informations sur la prise en main de Exercice de simulation d'attaque, consultez [Prise en main de Exercice de simulation d'attaque](attack-simulation-training-get-started.md).
 
 Bien que toute l’expérience de création et de planification de simulation ait été conçue pour être fluide et sans friction, l’exécution de simulations à l’échelle de l’entreprise nécessite souvent une planification. Cet article aide à relever des défis spécifiques que nous voyons lorsque nos clients exécutent des simulations dans leurs propres environnements.
 
@@ -42,7 +42,7 @@ Bien que toute l’expérience de création et de planification de simulation ai
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>URL de simulation d’hameçonnage bloquées par Google Safe Browsing
 
-Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par l’entraînement de simulation d’attaque comme non sécurisées. Google Safe Browsing dans Google Chrome bloque certaines DES URL de hameçonnage simulées avec un **message de site trompeur** . Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
+Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par Exercice de simulation d'attaque comme non sécurisées. Google Safe Browsing dans Google Chrome bloque certaines DES URL de hameçonnage simulées avec un **message de site trompeur** . Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
 
 :::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Avertissement du site trompeur dans Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
@@ -50,7 +50,7 @@ Notez que ce problème n’affecte pas Microsoft Edge.
 
 Dans le cadre de la phase de planification, veillez à vérifier la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne de hameçonnage. Si les URL sont bloquées par Google Safe Browsing, [suivez ces instructions](https://support.google.com/chrome/a/answer/7532419) de Google pour autoriser l’accès aux URL.
 
-[Reportez-vous à l’option Prise en main de la simulation d’attaque](attack-simulation-training-get-started.md) pour obtenir la liste des URL actuellement utilisées par l’entraînement de simulation d’attaque.
+[Reportez-vous à La](attack-simulation-training-get-started.md) prise en main de Exercice de simulation d'attaque pour obtenir la liste des URL actuellement utilisées par Exercice de simulation d'attaque.
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Simulation d’hameçonnage et URL d’administrateur bloquées par des solutions de proxy réseau et des pilotes de filtre
 
@@ -62,7 +62,7 @@ Les URL de simulation d’hameçonnage et les URL d’administrateur peuvent êt
 
 Bien que nous ayons vu peu de clients bloqués à cette couche, cela se produit. Si vous rencontrez des problèmes, envisagez de configurer les URL suivantes pour contourner l’analyse par vos appareils de sécurité ou filtres en fonction des besoins :
 
-- URL d’hameçonnage simulées, comme décrit dans [Prise en main de l’entraînement de simulation d’attaque](attack-simulation-training-get-started.md).
+- URL de hameçonnage simulées, comme décrit dans [Prise en main à l’aide de Exercice de simulation d'attaque](attack-simulation-training-get-started.md).
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -77,13 +77,13 @@ Il est possible que le nombre d’utilisateurs qui reçoivent réellement les me
 
 Seuls les utilisateurs valides et non invités avec une boîte aux lettres valide seront inclus dans les simulations. Si vous utilisez des groupes de distribution ou des groupes de sécurité à extension messagerie pour cibler des utilisateurs, vous pouvez utiliser l’applet de commande [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) pour afficher et valider les membres du groupe de distribution.
 
-## <a name="issues-with-attack-simulation-training-reporting"></a>Problèmes liés aux rapports d’entraînement de simulation d’attaque
+## <a name="issues-with-attack-simulation-training-reporting"></a>Problèmes liés à la création de rapports Exercice de simulation d'attaque
 
-### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Les rapports d’entraînement de simulation d’attaque ne contiennent aucun détail d’activité
+### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Exercice de simulation d'attaque rapports ne contiennent aucun détail d’activité
 
-La formation à la simulation d’attaque est accompagnée d’insights riches et exploitables qui vous tiennent informé de la progression de la préparation aux menaces de vos employés. Si les rapports d’entraînement de simulation d’attaque ne sont pas remplis avec des données, vérifiez que la recherche dans le journal d’audit est activée dans votre organisation (elle est activée par défaut).
+Exercice de simulation d'attaque est fourni avec des insights riches et exploitables qui vous tiennent informé de la progression de la préparation aux menaces de vos employés. Si Exercice de simulation d'attaque rapports ne sont pas renseignés avec des données, vérifiez que la recherche dans le journal d’audit est activée dans votre organisation (elle est activée par défaut).
 
-La recherche dans le journal d’audit est requise par l’entraînement de simulation d’attaque afin que les événements puissent être capturés, enregistrés et lus. La désactivation de la recherche dans les journaux d’audit a les conséquences suivantes pour l’entraînement de simulation d’attaque :
+La recherche dans le journal d’audit est requise par Exercice de simulation d'attaque afin que les événements puissent être capturés, enregistrés et lus. La désactivation de la recherche dans les journaux d’audit a les conséquences suivantes pour Exercice de simulation d'attaque :
 
 - Les données de création de rapports ne sont pas disponibles dans tous les rapports. Les rapports s’affichent vides.
 - Les affectations d’entraînement sont bloquées, car les données ne sont pas disponibles.
@@ -127,7 +127,7 @@ Les rapports de simulation dans l’entraînement du simulateur d’attaque four
 - Utilisateurs qui ont abandonné leurs informations d’identification.
 - Utilisateurs qui ont signalé le message comme hameçonnage.
 
-Si les messages signalés comme hameçonnage par les utilisateurs ne sont pas capturés dans les rapports de simulation d’entraînement de simulation d’attaque, il peut y avoir une règle de flux de messagerie Exchange (également appelée règle de transport) qui bloque la remise des messages signalés à Microsoft. Vérifiez que les règles de flux de courrier ne bloquent pas la remise aux adresses de messagerie suivantes :
+Si les messages signalés par les utilisateurs comme hameçonnage ne sont pas capturés dans Exercice de simulation d'attaque rapports de simulation, il peut y avoir une règle de flux de messagerie Exchange (également appelée règle de transport) qui bloque la remise des messages signalés à Microsoft. Vérifiez que les règles de flux de courrier ne bloquent pas la remise aux adresses de messagerie suivantes :
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com

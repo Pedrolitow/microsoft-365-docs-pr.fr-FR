@@ -2,7 +2,7 @@
 title: Activer Bloquer à la première consultation pour la détection d’un programme malveillant en quelques secondes
 description: Activer la fonctionnalité Bloquer à la première consultation pour la détection et le blocage d’un programme malveillant en quelques secondes.
 keywords: analyser, bloquer à la première consultation, programme malveillant, à la première consultation, cloud, defender, antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,15 +12,15 @@ ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
 ms.date: 07/11/2022
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 945c1c84559b6022790c47890494998d1027ce56
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: b1238e6dfbccaf0aa498f8b6f7feff4c6414cbf8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387790"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477712"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 

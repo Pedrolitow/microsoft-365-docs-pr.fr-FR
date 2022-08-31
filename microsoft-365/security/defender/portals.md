@@ -2,7 +2,8 @@
 title: Portails de sécurité et centres d’administration Microsoft
 description: Rechercher le centre d’administration ou le portail Microsoft approprié pour la gestion de différents services liés à la sécurité Microsoft 365
 keywords: sécurité, portails, Microsoft 365, M365, security center, centre d’administration, URL, lien, Microsoft 365 Defender, Microsoft Defender pour point de terminaison, Centre de sécurité Microsoft Defender, Microsoft Defender pour Identity, Microsoft Defender pour Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Sécurité des applications infonuagiques, Azure AD, centre de sécurité & conformité
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -15,13 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 837d4fc455c31aee0aac35e7f73f0d19a40d700a
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: f0ca8e03bf89afd148611c0af26c9ad4ca30f269
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433704"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479751"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité et centres d’administration Microsoft
 

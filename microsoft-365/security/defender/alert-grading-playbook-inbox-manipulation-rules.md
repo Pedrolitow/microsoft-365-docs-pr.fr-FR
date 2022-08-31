@@ -2,7 +2,8 @@
 title: Classement des alertes pour les règles de manipulation de boîte de réception suspectes
 description: Classement des alertes pour les règles de manipulation de boîte de réception suspectes afin de passer en revue les alertes et de prendre les mesures recommandées pour corriger l’attaque et protéger votre réseau.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,19 +21,18 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: e663d02037633599b9dffc19e1ebbd174aa279e1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cf342707849235c0322cd7bffbceaad837fbed20
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663179"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481589"
 ---
 # <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>Classement des alertes pour les règles de manipulation de boîte de réception suspectes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Les acteurs des menaces peuvent utiliser des comptes d’utilisateur compromis à de nombreuses fins malveillantes, notamment la lecture des e-mails dans la boîte de réception d’un utilisateur, la création de règles de boîte de réception pour transférer des e-mails vers des comptes externes, la suppression de traces et l’envoi de messages de hameçonnage. Les règles de boîte de réception malveillantes sont courantes lors des campagnes de compromission de messagerie professionnelle (BEC) et de hameçonnage, et il est important de les surveiller de manière cohérente.
@@ -81,7 +81,7 @@ Voici un exemple des détails d’une alerte déclenchée par une règle de mani
 
 Déterminez si les règles semblent suspectes en fonction des paramètres ou des critères de règle suivants :
 
-- Mots clés
+- Mots-clés
 
    L’attaquant peut appliquer la règle de manipulation uniquement aux e-mails qui contiennent certains mots. Vous pouvez trouver ces mots clés sous certains attributs tels que : « BodyContainsWords », « SubjectContainsWords » ou « SubjectOrBodyContainsWords ».
 
@@ -186,7 +186,7 @@ CloudAppEvents
 ## <a name="recommended-actions"></a>Actions recommandées
 
 1. Désactivez la règle de boîte de réception malveillante.
-2. Réinitialiser les informations d’identification du compte d’utilisateur. Vous pouvez également vérifier si le compte d’utilisateur a été compromis avec Microsoft Defender for Cloud Apps, qui obtient les signaux de sécurité de Azure Active Directory (Azure AD) Identity Protection.
+2. Réinitialiser les informations d’identification du compte d’utilisateur. Vous pouvez également vérifier si le compte d’utilisateur a été compromis avec Microsoft Defender for Cloud Apps, qui obtient les signaux de sécurité d’Azure Active Directory (Azure AD) Identity Protection.
 3. Recherchez d’autres activités malveillantes effectuées par le compte d’utilisateur concerné.
 4. Recherchez d’autres activités suspectes dans le locataire provenant de la même adresse IP ou du même fournisseur de services Internet (si le fournisseur de services Internet est rare) pour trouver d’autres comptes d’utilisateur compromis.
 

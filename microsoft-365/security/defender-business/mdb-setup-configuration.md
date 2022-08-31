@@ -17,12 +17,13 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 4dfd112af96bbb421ace15e3ac4bd9a8e4e2733a
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+- highpri
+ms.openlocfilehash: 3c2f22cb7ec397847fb25adaa485588386b62e5c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328076"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481039"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Configurer et configurer Microsoft Defender pour entreprises
 

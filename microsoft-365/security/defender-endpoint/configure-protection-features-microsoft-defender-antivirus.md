@@ -2,8 +2,8 @@
 title: Activer et configurer les fonctionnalités de protection antivirus Microsoft Defender
 description: Activez la protection basée sur le comportement, heuristique et en temps réel dans l’antivirus Microsoft Defender.
 keywords: heuristic, machine learning, moniteur de comportement, protection en temps réel, always-on, Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0c67af35776d5fdc55dcc06472b9121ead19a571
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 52ddae872fbb41c9cab6329a9d9ef4ff8381556f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387768"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481501"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurer la protection comportementale, heuristique et en temps réel.
 

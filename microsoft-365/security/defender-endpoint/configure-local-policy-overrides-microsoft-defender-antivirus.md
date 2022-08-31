@@ -2,8 +2,8 @@
 title: Configurer des remplacements locaux pour les paramètres de l’Antivirus Microsoft Defender
 description: Activez ou désactivez les utilisateurs des paramètres modifiés localement dans l’Antivirus Microsoft Defender.
 keywords: remplacement local, stratégie locale, stratégie de groupe, gpo, verrouillage, fusion, listes
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +16,12 @@ ms.date: 08/02/2022
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 397fb835d73c2e18c3cc044f95d8b294e2ef762d
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 93a949c274928c467e5d3fa65ef8be47ce960d2b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388163"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480929"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie antivirus Microsoft Defender
 

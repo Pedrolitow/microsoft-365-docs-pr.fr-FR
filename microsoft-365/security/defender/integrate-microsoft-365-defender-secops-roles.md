@@ -1,9 +1,10 @@
 ---
 title: Étape 4. Définir Microsoft 365 Defender rôles, responsabilités et supervision
 description: Principes de base de la définition des rôles, des responsabilités et de la supervision lors de l’intégration de Microsoft 365 Defender dans vos opérations de sécurité.
-keywords: incidents, alertes, investigation, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, Microsoft 365, réponse aux incidents, cyberattaque, étendues, opérations de sécurité, soc
+keywords: incidents, alertes, examiner, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, Microsoft, Microsoft 365, réponse aux incidents, cyberattaque, étendues, opérations de sécurité, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,22 +22,21 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 5410db413ece81a39453070985e6c744e8b684a6
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 11deb4cd56c77202e002162542b8a9e30db56916
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664059"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478032"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>Étape 4. Définir Microsoft 365 Defender rôles, responsabilités et supervision
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Votre organisation doit établir la propriété et la responsabilité des Microsoft 365 Defender licences, configurations et administration en tant que tâches initiales avant de pouvoir définir des rôles opérationnels. En règle générale, la propriété des licences, les coûts d’abonnement et l’administration des services Microsoft 365 et Enterprise Sécurité + Mobilité (EMS) (qui peuvent inclure Microsoft 365 Defender) relèvent des équipes du Centre des opérations de sécurité (SOC). Les équipes de la SOC devraient collaborer avec ces personnes pour assurer une surveillance adéquate des Microsoft 365 Defender. 
+Votre organisation doit établir la propriété et la responsabilité des Microsoft 365 Defender licences, configurations et administration en tant que tâches initiales avant de pouvoir définir des rôles opérationnels. En règle générale, la propriété des licences, des coûts d’abonnement et de l’administration des services Microsoft 365 et Enterprise Security + Mobility (EMS) (qui peuvent inclure Microsoft 365 Defender) relèvent des équipes du Centre des opérations de sécurité (SOC). Les équipes de la SOC devraient collaborer avec ces personnes pour assurer une surveillance adéquate des Microsoft 365 Defender. 
 
 De nombreuses SOC modernes attribuent à ses membres d’équipe des catégories en fonction de leurs compétences et de leurs fonctions. Par exemple :
 

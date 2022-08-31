@@ -5,27 +5,27 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer et à gérer des pages de connexion pour les attaques par hameçonnage simulées dans Microsoft Defender pour Office 365 Plan 2.
-ms.technology: mdo
-ms.openlocfilehash: 7057f443675cb0715a41f78c80feb69cdc75d22c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.subservice: mdo
+ms.openlocfilehash: d0a129bfdd43009a854bffea27a18717bf95df7b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66992045"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480148"
 ---
 # <a name="login-pages-in-attack-simulation-training"></a>Pages de connexion dans l’entraînement de simulation d’attaque
 
 **S’applique à** [Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
-Dans l’entraînement de simulation d’attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, les pages de connexion sont affichées aux utilisateurs dans des simulations qui utilisent la **collecte des informations d’identification** et **le lien dans** les [techniques d’ingénierie sociale des pièces jointes](attack-simulation-training.md#select-a-social-engineering-technique).
+Dans Exercice de simulation d'attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, les pages de connexion sont affichées aux utilisateurs dans des simulations qui utilisent la **collecte des informations d’identification** et **le lien dans** les [techniques d’ingénierie sociale des pièces jointes](attack-simulation-training.md#select-a-social-engineering-technique).
 
-Pour afficher les pages de connexion disponibles, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **Email &** onglet \> **de la bibliothèque de contenu simulation** de simulation \> **d’attaque** de collaboration\>, puis sélectionnez **Pages de** connexion. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **des pages de** connexion, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Pour afficher les pages de connexion disponibles, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse suivante : accédez à **Email & onglet Collaboration** \> **Exercice de simulation d'attaque** \> Bibliothèque \> de **contenu Simulation**, puis **sélectionnez Pages de** connexion. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **des pages de** connexion, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Les pages de connexion** comportent deux onglets :
 
@@ -67,7 +67,7 @@ Lorsque vous sélectionnez une page de connexion dans la liste, un menu volant d
 
 ## <a name="create-login-pages"></a>Créer des pages de connexion
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & onglet \> de **la bibliothèque de contenu simulation** de **simulation** \> d’attaque de **collaboration**\>, puis sélectionnez **Pages de connexion**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **des pages de** connexion, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & onglet Collaboration** \> **Exercice de simulation d'attaque** \> Bibliothèque \> de **contenu Simulation**, puis sélectionnez **Pages de** connexion. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **des pages de** connexion, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 Vous pouvez créer des pages de connexion personnalisées aux emplacements suivants :
 
    Cliquez sur ![Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en un** pour démarrer l’Assistant Création d’une page de connexion de l’utilisateur final.
@@ -173,7 +173,7 @@ Pour faire d’une page de connexion la valeur par défaut dans les **onglets Pa
 >
 > La page de connexion par défaut est également marquée dans la liste, même si vous devrez peut-être élargir la colonne **Name** pour la voir :
 >
-> ![Page de connexion par défaut marquée dans la liste des pages de connexion dans l’entraînement de simulation d’attaque.](../../media/attack-sim-training-login-pages-default.png)
+> ![Page de connexion par défaut marquée dans la liste des pages de connexion dans Exercice de simulation d'attaque.](../../media/attack-sim-training-login-pages-default.png)
 
 ## <a name="related-links"></a>Liens associés
 
@@ -181,4 +181,4 @@ Pour faire d’une page de connexion la valeur par défaut dans les **onglets Pa
 
 [Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
 
-[Automatisations de simulation pour l’entraînement de simulation d’attaque](attack-simulation-training-simulation-automations.md)
+[Automatisations de simulation pour Exercice de simulation d'attaque](attack-simulation-training-simulation-automations.md)

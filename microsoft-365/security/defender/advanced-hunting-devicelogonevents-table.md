@@ -4,7 +4,8 @@ description: En savoir plus sur les événements d’authentification ou de conn
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, logonevents, DeviceLogonEvents, authentification, ouverture de session, connexion
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: ec3002a30e9b5f20636a272574dcc3d6d00e4389
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: fce533175f899c01a9aa8503622879f679a8a324
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044407"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479882"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -39,7 +39,7 @@ ms.locfileid: "66044407"
 Le `DeviceLogonEvents` tableau du schéma [de chasse avancé](advanced-hunting-overview.md) contient des informations sur les logons utilisateur et d’autres événements d’authentification sur les appareils. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d’informations sur les types d’événements (`ActionType`valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible dans le Defender pour le cloud.
+> Pour plus d’informations sur les types d’événements (`ActionType` valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible dans Defender pour cloud.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 

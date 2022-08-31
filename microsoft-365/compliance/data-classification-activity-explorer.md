@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur d’activités vous permet de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: 06e77cf567c34f49da7206dd22f030ddb35e6b3d
-ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.openlocfilehash: 0091c1b48544f4e693554901aec5ef645b5a908c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67417387"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478616"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activités
 
-La [vue d’ensemble de la classification des données](data-classification-overview.md) et les onglets [de l’Explorateur de contenu](data-classification-content-explorer.md) vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, ainsi que l’emplacement de ce contenu. L’explorateur d’activité complète cette suite de fonctionnalités en vous permettant de contrôler les opérations effectuées avec votre contenu étiqueté. L’Explorateur d’activités fournit une vue historique des activités sur votre contenu étiqueté. Les informations d’activité sont collectées à partir des journaux d’audit unifiés Microsoft 365, transformées et mises à disposition dans l’interface utilisateur de l’Explorateur d’activités. L’Explorateur d’activités fournit des rapports sur jusqu’à 30 jours de données.
+La [vue d’ensemble de la classification des données](data-classification-overview.md) et les onglets [de l’Explorateur de contenu](data-classification-content-explorer.md) vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, ainsi que l’emplacement de ce contenu. [L’Explorateur d’activités](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) complète cette suite de fonctionnalités en vous permettant de surveiller ce qui est fait avec votre contenu étiqueté. L’Explorateur d’activités fournit une vue historique des activités sur votre contenu étiqueté. Les informations d’activité sont collectées à partir des journaux d’audit unifiés Microsoft 365, transformées et mises à disposition dans l’interface utilisateur de l’Explorateur d’activités. L’Explorateur d’activités fournit des rapports sur jusqu’à 30 jours de données.
 
 ![Capture d’écran de la capture d’écran de l’explorateur d’activités de l’espace réservé.](../media/data-classification-activity-explorer-1.png)
 

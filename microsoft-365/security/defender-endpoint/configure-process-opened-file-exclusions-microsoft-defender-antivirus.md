@@ -2,8 +2,8 @@
 title: Configurer des exclusions pour les fichiers ouverts par des processus spécifiques
 description: Vous pouvez exclure des fichiers des analyses s’ils ont été ouverts par un processus spécifique.
 keywords: Antivirus Microsoft Defender, processus, exclusion, fichiers, analyses
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 897a443be70afb8248e6a49f24f32b678060b976
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: ba64dd57323433f82d27b48bf844ec4b1fda5e50
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388746"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479485"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -83,7 +83,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme malveilla
     2. Dans la section **Options** , cliquez sur **Afficher...**.
     3. Entrez chaque processus sur sa propre ligne sous la colonne **Nom de** la valeur. Consultez l’exemple de tableau pour connaître les différents types d’exclusions de processus. Entrez **0** dans la colonne **Valeur** pour tous les processus.
 
-5. Cliquez sur **OK**.
+5. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser des applets de commande PowerShell pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 

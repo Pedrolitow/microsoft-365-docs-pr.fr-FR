@@ -9,25 +9,25 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
 ms.collection: m365-security-compliance
-ms.technology: mde
-ms.openlocfilehash: 95c138b6613d610520a4e6870ae7a59b46159f5d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mde
+ms.openlocfilehash: 3947d29b4115c2f08e57aab26de951b733762c07
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418737"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480622"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateforme**
@@ -45,7 +45,7 @@ La protection antivirus fonctionne mieux lorsqu’elle est associée à la prote
 
 ## <a name="how-client-behavioral-blocking-works"></a>Fonctionnement du blocage comportemental du client
 
-[Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) pouvez détecter les comportements suspects, le code malveillant, les attaques sans fichier et en mémoire, etc. sur un appareil. Lorsque des comportements suspects sont détectés, Antivirus Microsoft Defender surveille et envoie ces comportements suspects et leurs arborescences de processus au service de protection cloud. Le Machine Learning fait la distinction entre les applications malveillantes et les bons comportements en quelques millisecondes, et classifie chaque artefact. En quasi temps réel, dès qu’un artefact est détecté comme malveillant, il est bloqué sur l’appareil.
+[L’Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) peut détecter les comportements suspects, le code malveillant, les attaques sans fichier et en mémoire, et bien plus encore sur un appareil. Lorsque des comportements suspects sont détectés, l’Antivirus Microsoft Defender surveille et envoie ces comportements suspects et leurs arborescences de processus au service de protection cloud. Le Machine Learning fait la distinction entre les applications malveillantes et les bons comportements en quelques millisecondes, et classifie chaque artefact. En quasi temps réel, dès qu’un artefact est détecté comme malveillant, il est bloqué sur l’appareil.
 
 Chaque fois qu’un comportement suspect est détecté, une [alerte](alerts-queue.md) est générée et est visible pendant que l’attaque a été détectée et arrêtée ; Les alertes, telles qu’une « alerte d’accès initial », sont déclenchées et apparaissent dans le [portail Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) (anciennement Microsoft 365 Defender).
 
@@ -53,7 +53,7 @@ Le blocage comportemental du client est efficace, car il permet non seulement d�
 
 ## <a name="behavior-based-detections"></a>Détections basées sur le comportement
 
-Les détections basées sur le comportement sont nommées en fonction de [mitre ATT&matrice CK pour Enterprise](https://attack.mitre.org/matrices/enterprise). La convention d’affectation de noms permet d’identifier l’étape d’attaque où le comportement malveillant a été observé :
+Les détections basées sur le comportement sont nommées en fonction du [MITRE ATT&matrice CK pour Entreprise](https://attack.mitre.org/matrices/enterprise). La convention d’affectation de noms permet d’identifier l’étape d’attaque où le comportement malveillant a été observé :
 
 |Tactique|Nom de la menace de détection|
 |---|---|
