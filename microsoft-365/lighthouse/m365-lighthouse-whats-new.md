@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez les éléments ajoutés, modifiés et corrigés dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: fd5e7d611146237482fd53753c7362ce83639225
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: b1c8a3f3a965f21ab5197c6d13196c092f8ebc68
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432285"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496876"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 
@@ -42,18 +42,6 @@ Microsoft 365 Lighthouse fournit maintenant une liste de tous les comptes d’ut
 Nous avons ajouté une tâche de déploiement de stratégie Microsoft Edge à la base de référence par défaut. Cette tâche de déploiement vous permet de sécuriser les navigateurs de votre locataire client avec des paramètres de sécurité Edge, qui incluent une protection intégrée contre le hameçonnage et les programmes malveillants. Microsoft Edge s’est avéré plus sécurisé que Google Chromium pour les petites et moyennes entreprises avec des appareils exécutant Windows 10 ou une version ultérieure.
 
 Pour plus d’informations, consultez [La sécurité Microsoft Edge pour votre entreprise](/deployedge/ms-edge-security-for-business).
-
-### <a name="deployment-status-reporting"></a>Rapports d’état du déploiement 
-
-Microsoft 365 Lighthouse fournit désormais un état de déploiement pour chaque plan de déploiement afin de vous aider à optimiser et à hiérarchiser vos efforts de déploiement en conséquence.
-
-### <a name="enhanced-deployment-insights-for-licensing"></a>Insights de déploiement améliorés pour la gestion des licences
-
-Microsoft 365 Lighthouse fournit désormais des insights sur les tâches de déploiement qui ne peuvent pas être effectuées pour les utilisateurs en raison d’une gestion insuffisante des licences. Ces insights vous aident à ajuster les licences ou le plan de déploiement en conséquence pour terminer votre plan de déploiement.
-
-### <a name="enhanced-baseline-deployment-with-direct-links-to-existing-configurations"></a>Déploiement de base de référence amélioré avec des liens directs vers des configurations existantes
-
-Nous avons amélioré l’expérience de déploiement de la base de référence pour faciliter et accélérer l’intégrité et la sécurité de vos locataires clients. Nous avons ajouté des liens vers des configurations de locataire client détectées, afin que vous puissiez facilement trouver, examiner et modifier ces configurations de locataire dans le portail de gestion applicable.
 
 ## <a name="july-2022"></a>Juillet 2022
 
@@ -224,7 +212,7 @@ Vos commentaires sont importants pour nous. Nous avons donc ajouté de nouvelles
 
 Nous avons apporté des modifications à l’expérience de filtrage des locataires pour vous aider à afficher et gérer rapidement les locataires et les balises à partir de n’importe quelle page dans Microsoft 365 Lighthouse. Sélectionnez le filtre **Locataires** en haut de n’importe quelle page, puis parcourez ou entrez le nom du locataire ou de la balise sur lequel vous souhaitez filtrer.
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 ### <a name="in-product-email-workflows-to-communicate-with-users"></a>Flux de travail de messagerie dans le produit pour communiquer avec les utilisateurs 
 
@@ -248,7 +236,7 @@ Nous avons modifié nos exigences d’intégration pour vous permettre d’inté
 
 Pour plus d’informations sur les exigences, consultez [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="capability-to-add-custom-tags-to-customer-tenants"></a>Possibilité d’ajouter des balises personnalisées aux locataires du client
 
@@ -267,7 +255,7 @@ Avec la nouvelle fonctionnalité des bases de référence, vous pouvez désormai
 
 Pour suivre ces étapes de déploiement, sélectionnez **Locataires** dans le volet de navigation gauche de Microsoft 365 Lighthouse, sélectionnez un locataire dans la liste des locataires, puis sélectionnez l’onglet **Plan de déploiement** . 
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="enhancements-to-tenants-page"></a>Page Améliorations apportées aux locataires
 

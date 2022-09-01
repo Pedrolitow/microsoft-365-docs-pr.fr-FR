@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bloquez l’accès à Microsoft 365 afin qu’un ancien employé ne puisse pas se connecter, sécurise les données de l’organisation et autorise les autres employés à accéder à leurs e-mails et à leurs données OneDrive.
-ms.openlocfilehash: 12c1656ba0826e9d4d2472427642914cdcc7b2e6
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 163cb427ce66f9c1f583681895f18fc67d0745dc
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601715"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496590"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Vue d’ensemble : Supprimer un ancien employé et sécuriser les données
 
@@ -82,7 +82,7 @@ Pour effectuer les étapes de cette série, vous utilisez ces fonctionnalités e
 
 ## <a name="watch-delete-a-user"></a>Regarder : Supprimer un utilisateur
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198203).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198203).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
@@ -98,9 +98,10 @@ Lorsqu’un employé quitte l’entreprise, vous devez le supprimer de Microsoft
 1. Passez en revue vos résultats, puis sélectionnez **Fermer**.
 
 Après avoir supprimé un utilisateur, vous avez jusqu’à 30 jours pour restaurer son compte.
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Restaurer un utilisateur](restore-user.md) (article)\
 [Ajouter un nouvel employé dans Microsoft 365](add-new-employee.md) (article)\
 [Attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md) (article)\
+[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)\
 [Annuler l’affectation des licences des utilisateurs](../manage/remove-licenses-from-users.md) (article)

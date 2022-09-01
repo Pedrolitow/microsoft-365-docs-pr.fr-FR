@@ -20,14 +20,14 @@ ms.collection:
 - highpri
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans leurs organisations Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 89452cca1e3871c864204053049c05938b576b91
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 047c4aaffdad5831ec7b5bca76449cb909fe870d
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481633"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497266"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
 

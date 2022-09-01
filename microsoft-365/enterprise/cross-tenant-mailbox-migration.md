@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 307754dec24549c320a8ea9e2d8064b7e6d44d68
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: a0146159ebbb5e960bb375228e87fbfe43c0276e
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336021"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497157"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
@@ -226,6 +226,9 @@ Les utilisateurs qui migrent doivent être présents dans le locataire cible et 
 
 Vérifiez que les objets et attributs suivants sont définis dans l’organisation cible.
 
+>[!TIP]
+>Microsoft développe une fonctionnalité pour fournir une méthode automatisée sécurisée pour définir un grand nombre d’attributs dans la section suivante. Cette fonctionnalité, nommée Mappage des identités entre locataires, recherche actuellement des clients prêts à participer à une petite préversion privée. Pour plus d’informations sur cette fonctionnalité en préversion et sur la façon dont elle peut simplifier vos processus de migration entre locataires, consultez l’article **[Mappage des identités entre locataires](cross-tenant-identity-mapping.md)**.
+
 1. Pour toute boîte aux lettres se déplaçant à partir d’une organisation source, vous devez provisionner un objet MailUser dans l’organisation cible :
 
    - Le MailUser cible doit avoir les attributs suivants à partir de la boîte aux lettres source ou affectés avec le nouvel objet Utilisateur :
@@ -367,7 +370,7 @@ La soumission par lot de migration est également prise en charge à partir du n
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs du courrier local, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="do-we-need-to-update-remotemailboxes-in-source-on-premises-after-the-move"></a>Devons-nous mettre à jour remoteMailboxes dans la source localement après le déplacement ?
 
@@ -547,7 +550,7 @@ Ces conversions se produisent automatiquement pendant le processus de migration.
 
 Cette opération peut être effectuée avant la fin de la migration, mais vous ne devez pas attribuer de licence avant l’horodatage de l’attribut _ExchangeGuid_ , sinon la conversion de l’objet MailUser en boîte aux lettres échouera et une nouvelle boîte aux lettres sera créée à la place. Pour atténuer ce risque, il est préférable d’attendre la fin de la migration et d’attribuer des licences pendant la période de grâce de 30 jours.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - **Problème : les fonctionnalités de Post migration Teams dans le locataire source seront limitées.** Une fois la boîte aux lettres migrée vers le locataire cible, Teams dans le locataire source n’a plus accès à la boîte aux lettres de l’utilisateur. Par conséquent, si un utilisateur se connecte à Teams avec les informations d’identification du locataire source, il y aura une perte de fonctionnalités, comme l’incapacité de mettre à jour votre image de profil, aucune application de calendrier et une incapacité à rechercher et à rejoindre des équipes publiques.
 

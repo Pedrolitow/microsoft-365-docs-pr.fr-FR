@@ -1,5 +1,5 @@
 ---
-title: Déployer des équipes à grande échelle pour les travailleurs de première ligne
+title: Déployer Teams à grande échelle pour les travailleurs de première ligne
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: rahuldey
@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Découvrez comment déployer des équipes à grande échelle pour les employés de première ligne de votre organisation.
+description: Découvrez comment déployer Teams à grande échelle pour les employés de première ligne de votre organisation.
 ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
@@ -16,44 +16,38 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: e833def27e88a9f59c756bd769a09191e9b2dd5c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c9eca5d4d805b3eb9663a3aacf82d8e922585da7
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467380"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497716"
 ---
-# <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Déployer des équipes à grande échelle pour les travailleurs de première ligne
-
-> [!NOTE]
-> Cette fonctionnalité est actuellement disponible en préversion publique. Si vous souhaitez participer, contactez-nous à [dscale@microsoft.com](mailto:dscale@microsoft.com).
+# <a name="deploy-teams-at-scale-for-frontline-workers"></a>Déployer Teams à grande échelle pour les travailleurs de première ligne
 
 ## <a name="overview"></a>Vue d’ensemble
- 
-Votre organisation peut avoir un grand nombre d’équipes que vous utilisez pour favoriser la communication et la collaboration entre votre personnel de première ligne, qui sont réparties dans différents magasins, emplacements et rôles. Actuellement, il n’existe pas de solution simple pour déployer, configurer et gérer ces équipes et ces utilisateurs à grande échelle.
 
-Nous créons une solution pour permettre aux administrateurs de déployer et de gérer des équipes à grande échelle.
+Votre organisation utilise-t-elle un grand nombre d’équipes pour favoriser la communication et la collaboration entre votre personnel de première ligne ? Cet article vous est destiné si vous devez créer et gérer des équipes à grande échelle.
 
-Voici une vue d’ensemble des fonctionnalités disponibles aujourd’hui pour la création et la gestion d’un grand nombre d’équipes à la fois et de ce que nous prévoyons dans un avenir proche.
+Vous pouvez utiliser PowerShell pour déployer jusqu’à 500 équipes et ajouter jusqu’à 25 utilisateurs par équipe à la fois. Vous pouvez également ajouter et supprimer des utilisateurs d’équipes existantes à grande échelle. Utilisez cette solution pour répondre aux besoins d’échelle de votre organisation et réduire considérablement le temps de déploiement.
 
-||Disponible aujourd’hui |Plus tard en 2022  |
-|---------|---------|---------|
-|**Nombre d’équipes que vous pouvez créer par lot**|Jusqu’à 100 Go |Jusqu’à 500|
-|**Nombre d’utilisateurs que vous pouvez ajouter par équipe**|Jusqu’à 25 téraoctets (To) par locataire|Jusqu’à 25 téraoctets (To) par locataire|
-
-Le déploiement d’équipes à grande échelle vous permet d’effectuer les opérations suivantes :
+Le déploiement de Teams à grande échelle vous permet d’effectuer les opérations suivantes :
 
 - Créez des équipes en utilisant des modèles préétablis ou vos propres modèles personnalisés.
 - Ajoutez des utilisateurs aux équipes en tant que propriétaires ou membres.
 - Gérez les équipes à grande échelle en ajoutant ou en supprimant des utilisateurs des équipes existantes.
 - Restez informé par e-mail, y compris la saisie semi-automatique, l’état et les erreurs (le cas échéant). Vous pouvez choisir d’informer jusqu’à cinq personnes de l’état de chaque lot d’équipes que vous déployez. Les propriétaires et les membres de l’équipe sont automatiquement avertis lorsqu’ils sont ajoutés à une équipe.
 
-## <a name="how-to-deploy-teams-at-scale"></a>Comment déployer des équipes à grande échelle
+Cet article vous guide tout au long du déploiement de Teams à grande échelle.
+
+:::image type="content" source="media/deploy-teams-at-scale.png" alt-text="Vue d’ensemble des étapes de déploiement de Teams à grande échelle.":::
+
+## <a name="set-up-and-deploy-your-teams"></a>Configurer et déployer vos équipes
 
 > [!NOTE]
 > Avant de déployer vos équipes, assurez-vous que tous les propriétaires d’équipes disposent d’une licence Teams.
 
-Suivez ces étapes pour déployer un grand nombre d’équipes à la fois.
+Suivez ces étapes pour déployer jusqu’à 500 équipes à la fois.
 
 ### <a name="step-1-prepare-your-csv-files"></a>Étape 1 : Préparer vos fichiers CSV
 
@@ -112,11 +106,9 @@ Utilisez les exemples suivants pour vous aider à créer vos fichiers CSV. Ici, 
 |Sydney Mattos|sydneym@contoso.com|Contoso Store 9|AddMember|Member|
 |Violet Martinez|violetm@contoso.com|Contoso Store 10|AddMember|Member|
 
-### <a name="step-2-deploy-your-teams"></a>Étape 2 : Déployer votre site isolé
+### <a name="step-2-set-up-your-environment"></a>Étape 2 : Configurer votre environnement
 
-Maintenant que vous avez créé vos fichiers CSV, vous êtes prêt à configurer votre environnement et à déployer vos équipes.
-
-Vous utilisez l’applet ```New-CsBatchTeamsDeployment``` de commande pour envoyer un lot d’équipes à créer. Un ID d’orchestration est généré pour chaque lot. Vous pouvez ensuite utiliser l’applet ```Get-CsBatchTeamsDeployment``` de commande pour suivre la progression et l’état de chaque lot.
+Suivez ces étapes pour installer et vous connecter à la dernière version du module Teams PowerShell.
 
 1. Installez PowerShell version 7 ou ultérieure. Pour obtenir des conseils pas à pas, consultez [l’installation de PowerShell sur Windows](/powershell/scripting/install/installing-powershell-on-windows).
 1. Exécutez PowerShell en mode Administrateur.
@@ -127,7 +119,7 @@ Vous utilisez l’applet ```New-CsBatchTeamsDeployment``` de commande pour envoy
     ```
 
     Si vous recevez un message d’erreur, vous êtes déjà défini. Passez à l’étape suivante.
-1. Téléchargez et installez la [dernière préversion du module Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams). Vous devez exécuter la version 4.3.1 (préversion) ou une version ultérieure.  
+1. Téléchargez et installez la [dernière version du module Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams). Vous devez exécuter la version 4.3.1 (préversion) ou une version ultérieure.  
 
 1. Exécutez ce qui suit pour vous connecter à Teams.
 
@@ -145,11 +137,19 @@ Vous utilisez l’applet ```New-CsBatchTeamsDeployment``` de commande pour envoy
 
     Vérifiez cela ```New-CsBatchTeamsDeployment``` et ```Get-CsBatchTeamsDeploymentStatus``` sont répertoriés.
 
+### <a name="step-3-deploy-your-teams"></a>Étape 3 : Déployer vos équipes
+
+Maintenant que vous avez créé vos fichiers CSV et configuré votre environnement, vous êtes prêt à déployer vos équipes.
+
+Vous utilisez l’applet ```New-CsBatchTeamsDeployment``` de commande pour envoyer un lot d’équipes à créer. Un ID d’orchestration est généré pour chaque lot. Vous pouvez ensuite utiliser l’applet ```Get-CsBatchTeamsDeploymentStatus``` de commande pour suivre la progression et l’état de chaque lot.
+
 1. Exécutez la commande suivante pour déployer un lot d’équipes. Dans cette commande, vous spécifiez le chemin d’accès à vos fichiers CSV et les adresses e-mail de cinq destinataires maximum pour les informer de ce déploiement.
 
     ```powershell
     New-CsBatchTeamsDeployment -TeamsFilePath "Your CSV file path" -UsersFilePath "Your CSV file path" -UsersToNotify "Email addresses" 
     ```
+
+    Les destinataires recevront des notifications par e-mail concernant l’état du déploiement. L’e-mail contient l’ID d’orchestration pour le lot que vous avez envoyé et toutes les erreurs qui se sont produites.
 
     Par exemple :
 
@@ -157,20 +157,13 @@ Vous utilisez l’applet ```New-CsBatchTeamsDeployment``` de commande pour envoy
     New-CsBatchTeamsDeployment -TeamsFilePath "C:\dscale\Teams.csv" -UsersFilePath "C:\dscale\Users.csv" -UsersToNotify "adminteams@contoso.com,adelev@contoso.com"
     ```
 
-    Les destinataires recevront des notifications par e-mail concernant l’état du déploiement. L’e-mail contient l’ID d’orchestration pour le lot que vous avez envoyé et toutes les erreurs qui se sont produites.
-
 1. Exécutez ce qui suit pour vérifier l’état du lot que vous avez envoyé.
 
     ```powershell
     Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
-## <a name="send-us-feedback"></a>Nous envoyer des commentaires
-
-Votre avis est important pour nous. Facilité d’utilisation, fiabilité, performances&mdash;nous accueillons tout !
-
-Email [dscale@microsoft.com](mailto:dscale@microsoft.com) et incluez votre ID d’orchestration et votre fichier d’erreur, le cas échéant.
-
 ## <a name="related-articles"></a>Articles connexes
 
 - [Aperçu de Teams PowerShell](/microsoftteams/teams-powershell-overview)
+- [Découvrez où commencer avec un déploiement en ligne](flw-deploy-overview.md)

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les emplacements de protection contre la perte de données de point de terminaison.
-ms.openlocfilehash: 0224fefeb5b33bf688dea37b4609408e6d299557
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: eef4e62f013c95788d723a250b5d8b833bf574b8
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450078"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497836"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -295,7 +295,7 @@ Voici quelques exemples :
 1. Sélectionnez **Ajouter un nouveau groupe de domaines de service sensibles**.
 1. Nommez le groupe.
 1. Sélectionnez le **type de correspondance** que vous souhaitez. Vous pouvez sélectionner **l’URL**, **l’adresse IP** et la **plage d’adresses IP**.
-1. Tapez la valeur appropriée dans l’option **Ajouter de nouveaux domaines de service à ce groupe**. Vous pouvez ajouter plusieurs sites web à un groupe et utiliser des caractères génériques pour couvrir les sous-domaines.  Par exemple, www.contoso.com uniquement pour le site web de niveau supérieur ou *.contoso.com pour corp.contoso.com, hr.contoso.com, fin.contoso.com
+1. Tapez la valeur appropriée dans l’option **Ajouter de nouveaux domaines de service à ce groupe**. Vous pouvez ajouter plusieurs sites web à un groupe et utiliser des caractères génériques pour couvrir les sous-domaines.  Par exemple, `www.contoso.com` pour le site web de niveau supérieur ou \*.contoso.com pour corp.contoso.com, hr.contoso.com, fin.contoso.com
 1. Sélectionnez **Enregistrer**.
 1. Sélectionnez **Stratégies**.
 1. Créez et définissez une politique qui s'applique uniquement aux **dispositifs**. Pour plus d’informations sur la création [d’une stratégie, consultez, créez, testez et paramétrez une stratégie DLP](create-test-tune-dlp-policy.md) .

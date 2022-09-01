@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5b6c51fd6f0e581a1299e72600930d9ef4a2a3e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: ada405980a781d32735a545f4d2bd44d19477511
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327396"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497069"
 ---
 # <a name="machine-resource-type"></a>Type de ressource de machine
 
@@ -41,10 +41,6 @@ ms.locfileid: "67327396"
 
 ## <a name="methods"></a>Méthodes
 
-<br>
-
-****
-
 |Méthode|Type renvoyé|Description|
 |---|---|---|
 |[Répertorier les ordinateurs](get-machines.md)|[collection d’ordinateurs](machine.md)|Répertorie l’ensemble d’entités de [machine](machine.md) dans l’organisation.|
@@ -60,13 +56,8 @@ ms.locfileid: "67327396"
 |[Obtenir des Ko manquants](get-missing-kbs-machine.md)|Collection de bases de connaissances|Obtenir la liste des ko manquants associés à l’ID d’ordinateur|
 |[Définir la valeur de l’appareil](set-device-value.md)|[collection d’ordinateurs](machine.md)|Définissez la [valeur d’un appareil](tvm-assign-device-value.md).|
 |[Mettre à jour l’ordinateur](update-machine-method.md)|[collection d’ordinateurs](machine.md)|Obtenez l’état de mise à jour d’un ordinateur.|
-|
 
 ## <a name="properties"></a>Propriétés
-
-<br>
-
-****
 
 |Propriété|Type|Description|
 |---|---|---|
@@ -91,4 +82,3 @@ ms.locfileid: "67327396"
 |deviceValue|Énumération nullable|[Valeur de l’appareil](tvm-assign-device-value.md). Les valeurs possibles sont : ' Normal', 'Low' et 'High'.|
 |ipAddresses|Collection IpAddress|Ensemble d’objets ***IpAddress*** . Consultez [l’API Obtenir des machines](get-machines.md).|
 |osArchitecture|Chaîne|Architecture du système d’exploitation. Les valeurs possibles sont : « 32 bits », « 64 bits ». Utilisez cette propriété au lieu d’osProcessor.|
-|

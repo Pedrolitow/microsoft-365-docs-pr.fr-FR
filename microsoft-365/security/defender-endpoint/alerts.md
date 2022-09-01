@@ -2,7 +2,7 @@
 title: API Obtenir des alertes
 description: Découvrez les méthodes et les propriétés du type de ressource Alerte dans Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, get, alertes, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 626b18829594c6cd88421fd183c2403a84bf0a4e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 301abec576f15ac83406660ca75b3f9ec3b7d389
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322384"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497914"
 ---
 # <a name="alert-resource-type"></a>Type de ressource d’alerte
 
@@ -37,10 +37,6 @@ ms.locfileid: "67322384"
 
 ## <a name="methods"></a>Méthodes
 
-<br>
-
-****
-
 |Méthode|Type renvoyé|Description|
 |---|---|---|
 |[Obtenir une alerte](get-alert-info-by-id.md)|[Alerte](alerts.md)|Obtenez un objet [d’alerte](alerts.md) unique.|
@@ -53,13 +49,8 @@ ms.locfileid: "67322384"
 |[Répertorier les adresses IP associées](get-alert-related-ip-info.md)|Collection d’adresses IP|Répertorie les adresses IP associées à l’alerte.|
 |[Obtenir les machines associées](get-alert-related-machine-info.md)|[Ordinateur](machine.md)|[Ordinateur](machine.md) associé à [l’alerte](alerts.md).|
 |[Obtenir des utilisateurs associés](get-alert-related-user-info.md)|[Utilisateur](user.md)|[Utilisateur](user.md) associé à [l’alerte](alerts.md).|
-|
 
 ## <a name="properties"></a>Propriétés
-
-<br>
-
-****
 
 |Propriété|Type|Description|
 |---|---|---|
@@ -92,7 +83,6 @@ ms.locfileid: "67322384"
 |detectorId|Chaîne|ID du détecteur qui a déclenché l’alerte.|
 |commentaires|Liste des commentaires d’alerte|L’objet Commentaire d’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.|
 |Évidence|Liste des preuves d’alerte|Preuve liée à l’alerte. Voir l’exemple ci-dessous.|
-|
 
 >[!NOTE]
 >Vers le 29 août 2022, les valeurs de détermination d’alerte précédemment prises en charge (« Apt » et « SecurityPersonnel ») seront déconseillées et ne seront plus disponibles via l’API.

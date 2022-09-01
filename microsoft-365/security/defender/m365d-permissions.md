@@ -1,7 +1,7 @@
 ---
 title: Gérer l’accès aux données Microsoft 365 Defender dans le portail Microsoft 365 Defender
 description: Découvrez comment gérer les autorisations sur les données dans Microsoft 365 Defender
-keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Sécurité des applications infonuagiques, Microsoft Defender pour point de terminaison, scope, scoping, RBAC
+keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender pour point de terminaison, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -20,12 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 76101b7dc082786fb7c3054aef8a938402bbb0a8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 41cfe8d191f553ce2a6498d9badfd46e19f4c61e
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470990"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495124"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Gérer l’accès à Microsoft 365 Defender avec des rôles globaux Azure Active Directory
 

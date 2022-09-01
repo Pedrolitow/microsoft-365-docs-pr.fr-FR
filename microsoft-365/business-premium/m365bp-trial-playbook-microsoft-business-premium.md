@@ -1,5 +1,5 @@
 ---
-title: Guide opérationnel d’évaluation de Microsoft Defender pour Entreprise Premium
+title: Microsoft 365 Business Premium playbook d’évaluation
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 750772357c5dda926840ba41f879a055e12d5230
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 8a74d5b107f8142c7d0b733e558540fecaff3346
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433441"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497014"
 ---
-# <a name="trial-playbook-microsoft-business-premium"></a>Guide opérationnel d’évaluation : Microsoft Business Premium
+# <a name="trial-playbook-microsoft-365-business-premium"></a>Playbook d’évaluation : Microsoft 365 Business Premium
 
 Bienvenue dans le guide opérationnel d’évaluation Microsoft Business Premium. Ce guide opérationnel vous aidera à tirer le meilleur parti de votre essai gratuit de 30 jours en vous apprenant comment Microsoft 365 Business Premium augmente la productivité et contribue à protéger votre organisation avec des fonctionnalités de sécurité avancées. À l’aide des recommandations de Microsoft, découvrez comment configurer vos fonctionnalités de protection contre les menaces, analyser les menaces détectées et répondre aux cyberattaques.
 

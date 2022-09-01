@@ -14,24 +14,24 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Découvrez comment supprimer les connecteurs bloqués dans Microsoft 365 Defender.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: d0797f0ec16b8f813cf7db9b2fd27468c141ea53
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f15a782d9acac240a091e4a6670e00d83bead517
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416999"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495816"
 ---
 # <a name="remove-blocked-connectors-from-the-restricted-entities-portal"></a>Supprimer les connecteurs bloqués du portail d’entités restreintes
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Si un connecteur entrant est détecté comme potentiellement compromis, il est limité à l’envoi d’e-mails de relais. Le connecteur est ensuite ajouté à la page **Entités restreintes** dans le portail Microsoft 365 Defender. Lorsque le connecteur est utilisé pour envoyer un e-mail, le message est retourné dans un rapport de non-remise (également appelé NDR ou message rebondi) avec le code d’erreur 550;5.7.711 et le texte suivant :
 
@@ -50,7 +50,7 @@ Il existe 2 types d’entités restreintes :
 
 - **Connecteur restreint** : découvrez pourquoi un connecteur peut être restreint et comment gérer les connecteurs restreints (cet article).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Ouvrez le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com>. Pour accéder directement à la page **Entités restreintes** , utilisez <https://security.microsoft.com/restrictedentities>.
 
@@ -72,7 +72,7 @@ Il existe 2 types d’entités restreintes :
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-connector-from-the-restricted-entities-list"></a>Utiliser le portail Microsoft 365 Defender pour supprimer un connecteur de la liste des entités restreintes
 
-1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à **Email & collaboration** \> **Review** \> **Restricted entities**. Pour accéder directement à la page **Entités restreintes** , utilisez <https://security.microsoft.com/restrictedentities>.
+1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à **Email & collaboration** \> **Vérifier** \> **les entités restreintes**. Pour accéder directement à la page **Entités restreintes** , utilisez <https://security.microsoft.com/restrictedentities>.
 
 2. Dans la page **Entités restreintes** , recherchez et sélectionnez le connecteur que vous souhaitez débloquer en cliquant sur le connecteur.
 

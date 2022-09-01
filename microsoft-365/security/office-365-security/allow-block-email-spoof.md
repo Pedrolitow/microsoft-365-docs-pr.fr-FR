@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer les e-mails et les entrées d’expéditeur usurpés dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 03dd5247135e3d4d297e73ab166921adc73f3573
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1537b32d56046da776024cef3acbd9eb2d8a4da3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469578"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497558"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des courriers utilisant la liste Autoriser/Bloquer des clients
 
@@ -87,18 +87,18 @@ Pour obtenir des instructions, consultez [Signaler un e-mail douteux à Microsof
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Utilisez le portail Microsoft 365 Defender pour créer des entrées de bloc pour les domaines et les adresses e-mail dans la liste d’autorisation/de blocage du locataire
 
-Vous créez des entrées de bloc pour les domaines et les adresses e-mail directement dans la liste d’autorisation/de blocage du locataire.
+Vous pouvez créer des entrées de bloc pour les domaines et les adresses e-mail directement dans la liste d’autorisation/de blocage du locataire.
+
+Email messages de ces expéditeurs sont marqués comme *courrier indésirable à haut niveau de confiance* (SCL = 9). Ce qui arrive aux messages est déterminé par la [stratégie anti-courrier indésirable](configure-your-spam-filter-policies.md) qui a détecté le message pour le destinataire. Dans la stratégie anti-courrier indésirable par défaut et les nouvelles stratégies personnalisées, les messages marqués comme courrier indésirable à haut niveau de confiance sont remis par défaut au dossier Junk Email. Dans les [stratégies de sécurité prédéfinies](preset-security-policies.md) Standard et Strict, les messages indésirables à haut niveau de confiance sont mis en quarantaine.
 
 > [!NOTE]
-> Email messages de ces expéditeurs sont marqués comme *courrier indésirable à haut niveau de confiance* (SCL = 9). Ce qui arrive aux messages est déterminé par la [stratégie anti-courrier indésirable](configure-your-spam-filter-policies.md) qui a détecté le message pour le destinataire. Dans la stratégie anti-courrier indésirable par défaut et les nouvelles stratégies personnalisées, les messages marqués comme courrier indésirable à haut niveau de confiance sont remis par défaut au dossier Junk Email. Dans les [stratégies de sécurité prédéfinies](preset-security-policies.md) Standard et Strict, les messages indésirables à haut niveau de confiance sont mis en quarantaine.
->
 > Les utilisateurs de l’organisation ne peuvent pas envoyer de courrier électronique à ces domaines et adresses bloqués. Ils recevront le rapport de non-remise suivant (également appelé NDR ou message de rebond) : `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Dans la page **Autoriser/Bloquer la liste** des locataires, vérifiez que l’onglet **Domaines & adresses** est sélectionné.
 
-3. **Onglet Domaines & adresses** , cliquez sur ![l’icône Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
+3. Sous l’onglet **Domaines & adresses** , cliquez sur ![l’icône Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
 
 4. Dans le **menu volant Bloquer les domaines & adresses** qui s’affiche, configurez les paramètres suivants :
 
@@ -546,12 +546,12 @@ L’ajout d’une paire de domaines autorise ou bloque uniquement la *combinaiso
 Par exemple, vous ajoutez une entrée d’autorisation pour la paire de domaines suivante :
 
 - **Domaine** : gmail.com
-- **Infrastructure** : tms.mx.com
+- **Envoi d’une infrastructure** : tms.mx.com
 
 Seuls les messages de cette paire d’infrastructure de domaine *et* d’envoi sont autorisés à usurper. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages des expéditeurs d’autres domaines provenant de tms.mx.com sont vérifiés par l’intelligence par usurpation d’identité.
 
 > [!NOTE]
-> Vous ne pouvez pas utiliser de caractères génériques dans l’infrastructure d’envoi.
+> Vous pouvez spécifier des caractères génériques dans l’infrastructure d’envoi ou dans l’utilisateur usurpé, mais pas dans les deux en même temps. Par exemple, `*, *` n’est pas autorisé.
 
 ## <a name="about-impersonated-domains-or-senders"></a>À propos des domaines ou expéditeurs usurpés d’identité
 

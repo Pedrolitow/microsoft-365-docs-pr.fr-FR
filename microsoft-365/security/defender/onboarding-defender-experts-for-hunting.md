@@ -4,7 +4,8 @@ ms.reviewer: ''
 description: Si vous débutez avec Microsoft 365 Defender et Defender Experts for Hunting, c’est ainsi que vous vous abonnez
 keywords: service de chasse aux menaces managée, repérage de menaces managée, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft, MTE-TAN, notification d’attaque ciblée, notifications d’experts defender, notifications d’attaque de point de terminaison, experts Microsoft Defender pour la chasse, la chasse aux menaces et l’analyse.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 5165adfd402415ddd7bd5a0fd6b5acb098fd49f1
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 298bba9601d87887b839b7b0c5f0a33c7616caa4
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328450"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497422"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Commencer à utiliser microsoft Defender Experts pour la chasse
 
@@ -126,7 +126,7 @@ L’option **Demander aux experts Defender** est disponible à plusieurs endroit
 - Nous avons récemment vu un billet de blog sur une menace qui cible notre industrie. Pouvez-vous nous aider à comprendre quelle protection Microsoft 365 Defender fournit contre cet acteur de menace ?
 - Nous avons récemment observé une campagne de hameçonnage menée contre notre organisation. Pouvez-vous nous dire s’il s’agissait spécifiquement de notre entreprise ou verticalement?
 
-### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Communications d’alerte des experts Microsoft Defender pour la chasse
+### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Microsoft Defender Experts for Hunting alert communications
 
 - Votre équipe de réponse aux incidents peut-elle nous aider à traiter la notification Defender Experts que nous avons obtenue ?
 - Nous avons reçu cette notification defender experts de Microsoft Defender Experts pour la chasse. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment pouvons-nous contenir l’incident ?

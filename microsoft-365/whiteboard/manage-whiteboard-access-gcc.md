@@ -13,12 +13,12 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment activer, désactiver et gérer des données de tableau blanc.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 75c50468adb096b652a43fdde183d7217dfb9ec4
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: d015a0a3fbfc4c44d1f844c966405e7735990b20
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441935"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497440"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-environments"></a>Gérer l’accès au Tableau blanc Microsoft pour les environnements GCC
 
@@ -42,12 +42,12 @@ Vous pouvez contrôler l’accès au Tableau blanc de la manière suivante :
 
 - Activez ou désactivez le tableau blanc pour l’ensemble de votre locataire à l’aide du [module PowerShell SharePoint Online](/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell).
 
-- Afficher ou masquer le tableau blanc pour des utilisateurs spécifiques dans des réunions à l’aide d’une stratégie de réunion Teams. Il reste visible via le web, les clients natifs et l’application onglet Teams.
+- Afficher ou masquer le tableau blanc pour des utilisateurs spécifiques dans des réunions à l’aide d’une stratégie de réunion Microsoft Teams. Il reste visible via le web, les clients natifs et l’application onglet Teams.
 
 - Exiger des stratégies d’accès conditionnel pour accéder au Tableau blanc à l’aide du Centre d’administration Azure Active Directory.
 
 >[!NOTE]
-> Le tableau blanc sur OneDrive Entreprise n’apparaît pas dans le Centre d'administration Microsoft 365. La stratégie de réunion Teams masque uniquement les points d’entrée du Tableau blanc. Elle n’empêche pas les utilisateurs d’utiliser le tableau blanc. Les stratagèmes d’accès conditionnel empêchent l’accès au Tableau blanc, mais ne masquent pas les points d’entrée.
+> La stratégie de réunion Teams masque uniquement les points d’entrée du Tableau blanc. Cela n’empêche pas les utilisateurs d’utiliser le tableau blanc. Les stratégies d’accès conditionnel empêchent l’accès au Tableau blanc, mais ne masquent pas les points d’entrée.
 
 ## <a name="enable-or-disable-whiteboard"></a>Activer ou désactiver le tableau blanc
 
@@ -63,21 +63,14 @@ Pour activer ou désactiver le tableau blanc pour votre locataire, procédez com
 
 La modification doit prendre environ 60 minutes pour s’appliquer à l’ensemble de votre location. Si vous ne voyez pas cette option, vous devez mettre à jour le module.
 
->[!NOTE]
-> Par défaut, le tableau blanc est activé. S’il a été désactivé dans les applications d’entreprise Azure Active Directory, le tableau blanc sur OneDrive Entreprise ne fonctionnera pas.
-
 ## <a name="show-or-hide-whiteboard"></a>Afficher ou masquer le tableau blanc
 
 Pour afficher ou masquer le Tableau blanc dans les réunions, consultez [les paramètres de stratégie de réunion](/microsoftteams/meeting-policies-content-sharing).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les données pour le tableau blanc - GCC High](manage-data-gcc-high.md)
+[Gérer les données pour le Tableau blanc - GCC](manage-data-gcc.md)
 
-[Gérer le partage pour le tableau blanc - GCC High](manage-sharing-gcc-high.md)
+[Gérer le partage pour le tableau blanc - GCC](manage-sharing-gcc.md)
 
-[Gérer les clients pour le Tableau blanc - GCC High](manage-clients-gcc-high.md)
-
-
-
-
+[Gérer les clients pour le Tableau blanc - GCC](manage-clients-gcc.md)

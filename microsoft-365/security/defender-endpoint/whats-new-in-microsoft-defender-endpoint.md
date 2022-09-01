@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07f9aa517ae0cc4b442d0296df82f219e242debf
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: 9d7e89a55a70cef1f8957792346ca09f05416439
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439605"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497135"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -53,7 +53,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft 365 Defender](../defender/whats-new.md)
 - [Nouveautés de Microsoft Defender pour Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [Nouveautés de Microsoft Defender pour Identity](/defender-for-identity/whats-new)
-- [Nouveautés de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [Nouveautés de Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 Pour plus d’informations sur les Microsoft Defender pour point de terminaison sur d’autres systèmes d’exploitation :
 
@@ -131,7 +131,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 - [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de réglementer l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité légale, les loisirs et les catégories non catégorisées. Bien que de nombreux sites web qui appartiennent à une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web](web-content-filtering.md).
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 - (Préversion) [Microsoft Defender pour point de terminaison plan 1 ](defender-endpoint-plan-1.md) <br/>Defender pour point de terminaison Plan 1 (préversion) est une solution de protection des points de terminaison qui inclut la protection de nouvelle génération, la réduction de la surface d’attaque, la gestion et la création de rapports centralisées, ainsi que des API. Defender pour point de terminaison Plan 1 (préversion) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, qui ont Microsoft 365 E3 et qui n’ont pas encore Microsoft 365 E5. 
 
@@ -142,7 +142,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 - (Préversion) [Rapport d’intégrité et de conformité des appareils](machine-reports.md) <br>  Le rapport d’intégrité et de conformité des appareils fournit des informations générales sur les appareils de votre organisation.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 - [Évaluation des vulnérabilités des logiciels d’exportation Delta](get-assessment-methods-properties.md#31-methods) Api <br> Ajout aux [évaluations d’exportation des vulnérabilités et](get-assessment-methods-properties.md) à la collecte d’API de configurations sécurisées. <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON) - qui est utilisée pour obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil - l’appel d’API d’exportation delta est utilisé pour extraire uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, corrigées et mises à jour. L’appel d’API d’exportation Delta peut également être utilisé pour calculer différents indicateurs de performance clés, tels que « le nombre de vulnérabilités qui ont été corrigées » ou « le nombre de nouvelles vulnérabilités ajoutées à une organisation ».
 - [Exporter des évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) Api <br> Ajoute une collection d’API qui extraient les données de gestion des vulnérabilités Defender par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.

@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 25f33208cd52520d810efbb9d48643595c955f3e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: ad81e7f7f04247be406d77cc54f8d31bd44c187f
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992159"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497624"
 ---
 # <a name="set-up-microsoft-365-for-frontline-workers"></a>Configurer Microsoft 365 pour les travailleurs de première ligne
 
@@ -64,7 +64,7 @@ Le Centre d’administration Microsoft 365 propose un ensemble de [guides d’in
 
 Pour un projet pilote, vous pouvez utiliser l’Assistant Intégration de worker de première ligne pour configurer une seule équipe, configurée pour vos employés de première ligne. Pour obtenir des conseils pas à pas, consultez [l’Assistant Intégration des employés de première ligne pour mettre votre personnel de première ligne opérationnel](flw-onboarding-wizard.md).
 
-Pour les déploiements complets, suivez les instructions fournies dans [Déployer des équipes à grande échelle pour les employés de première ligne](deploy-teams-at-scale.md).
+Pour les déploiements complets, suivez les instructions de [Deploy Teams à grande échelle pour les employés de première ligne](deploy-teams-at-scale.md).
 
 ## <a name="step-4-set-up-other-services"></a>Étape 4 : Configurer d’autres services
 

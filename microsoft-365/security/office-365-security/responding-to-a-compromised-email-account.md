@@ -19,14 +19,14 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 50819867e5912ee0ae4993cadfe0d5238229c7d3
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8a3ac455a70f4e84bf6ed4dae3893d491fa7d766
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479949"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496810"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 

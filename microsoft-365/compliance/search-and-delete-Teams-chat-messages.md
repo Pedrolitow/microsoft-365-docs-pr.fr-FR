@@ -16,24 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez eDiscovery (Premium) et l’Explorateur Microsoft Graph pour rechercher et vider les messages de conversation dans Microsoft Teams, et répondre aux incidents de débordement de données dans Teams.
-ms.openlocfilehash: 372293e11ee16498746da69c824a91abd108f2cf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 12ac9bbc0cf45a7609ddcbfcc382d579e4641cd9
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629204"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496700"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Rechercher et vider les messages de conversation dans Teams (préversion)
 
 Vous pouvez utiliser eDiscovery (Premium) et l’Explorateur Microsoft Graph pour rechercher et supprimer des messages de conversation dans Microsoft Teams. Cela peut vous aider à rechercher et supprimer des informations sensibles ou du contenu inapproprié. Ce flux de travail de recherche et de vidage vous aidera également à répondre à un incident de débordement de données, lorsque du contenu contenant des informations confidentielles ou malveillantes est publié par le biais de messages de conversation Teams.
 
-> [!NOTE]
-> Cet article s’applique aux organisations Microsoft 365 Entreprise. La prise en charge du cloud du gouvernement des États-Unis (y compris GCC, GCC High et DoD) sera bientôt disponible.
-
 ## <a name="before-you-search-and-purge-chat-messages"></a>Avant de rechercher et de vider les messages de conversation
 
 - Pour créer un cas eDiscovery (Premium) et utiliser des collections pour rechercher des messages de conversation, vous devez être membre du groupe de rôles **eDiscovery Manager** dans le portail de conformité Microsoft Purview. Pour supprimer des messages de conversation, vous devez disposer du rôle **Rechercher et vider** . Ce rôle est attribué par défaut aux groupes de rôles De l’Enquêteur de données et Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
-- La recherche et le vidage sont pris en charge pour les conversations au sein de votre locataire. La prise en charge des conversations Teams Connect Chat (accès externe ou fédération) est activée dans l’interface dans certains cas, mais ne fonctionne pas comme prévu.
+- La recherche et le vidage sont pris en charge pour les conversations au sein de votre locataire. La prise en charge des conversations Teams Connect conversation (accès externe ou fédération) est activée dans l’interface dans certains cas, mais ne fonctionne pas comme prévu.
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Étant donné que la possibilité de rechercher et de supprimer des messages de conversation est destinée à être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages de conversation sont rapidement supprimés.
 
 ## <a name="search-and-purge-workflow"></a>Flux de travail de recherche et de vidage
@@ -143,6 +140,9 @@ Pour plus d’informations sur l’utilisation de l’Explorateur Graph, consult
 
 3. Copiez l’ID correspondant (ou copiez-le et collez-le dans un fichier texte). Vous utiliserez cet ID dans la tâche suivante pour vider les messages de conversation.
 
+> [!TIP]
+> Au lieu d’utiliser la procédure précédente pour obtenir l’ID de collection, vous pouvez ouvrir la casse dans le portail de conformité Microsoft Purview. Ouvrez la casse et accédez à l’onglet Travaux. Sélectionnez la collection appropriée et, sous Informations de support, recherchez l’ID de travail (l’ID de travail affiché ici est identique à l’ID de collection).
+
 ### <a name="purge-the-chat-messages"></a>Vider les messages de conversation
 
 1. Dans l’Explorateur Graph, exécutez la requête POST suivante pour vider les éléments retournés par la collection que vous avez créée à l’étape 2. Utilisez la valeur `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` dans la barre d’adresses de la requête de requête, où caseId et collectionId sont les ID que vous avez obtenus dans les procédures précédentes. Veillez à entourer les valeurs d’ID de parenthèses et de guillemets simples.
@@ -155,11 +155,28 @@ Pour plus d’informations sur l’utilisation de l’Explorateur Graph, consult
 
   Pour plus d’informations sur purgeData, consultez [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 
+> [!NOTE]
+> Étant donné que Microsoft Graph Explorer n’est pas disponible dans le cloud us government (GCC, GCC High et DOD), vous devez utiliser PowerShell pour effectuer ces tâches.
+
+Vous pouvez également vider les messages de conversation à l’aide de PowerShell. Par exemple, pour vider les messages dans le cloud US Government, vous pouvez utiliser une commande similaire à :
+
+``
+Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
+``
+
+``Invoke-MgGraphRequest  -Method POST -Uri '/beta/security/cases/ediscoveryCases/<case ID>/searches/<collection ID>/purgeData'
+``
+
+Pour plus d’informations sur l’utilisation de PowerShell pour vider les messages de conversation, consultez [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
+
 ## <a name="step-6-verify-chat-messages-are-purged"></a>Étape 6 : Vérifier que les messages de conversation sont purgés
 
 Une fois que vous avez exécuté la demande POST pour vider les messages de conversation, ces messages sont supprimés du client Teams et remplacés par un message généré automatiquement indiquant qu’un administrateur a supprimé le message. Pour obtenir un exemple de ce message, consultez la section [Expérience de l’utilisateur final](#end-user-experience) dans cet article.
 
 Les messages de conversation vidés sont déplacés vers le dossier SubstrateHolds, qui est un dossier de boîte aux lettres masqué. Les messages de conversation vidés y sont stockés pendant au moins 1 jour, puis sont définitivement supprimés la prochaine fois que le travail du minuteur s’exécute (généralement entre 1 et 7 jours). Pour plus d’informations, consultez [En savoir plus sur la rétention de Microsoft Teams](retention-policies-teams.md).
+
+> [!NOTE]
+> Étant donné que Microsoft Graph Explorer n’est pas disponible dans le cloud us government (GCC, GCC High et DOD), vous devez utiliser PowerShell pour effectuer ces tâches.
 
 ## <a name="step-7-reapply-holds-and-retention-policies-to-data-sources"></a>Étape 7 : Réappliquer des stratégies de conservation et de rétention dans des sources de données
 

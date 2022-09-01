@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e54b3c1c696d05bb0f3815b532a4f0e7e92c6331
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 886ed68514235669d72fe260cacc9b150d9a04d3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020646"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497777"
 ---
 # <a name="web-protection"></a>Protection Web
 
@@ -33,9 +33,7 @@ ms.locfileid: "67020646"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
 
 ## <a name="about-web-protection"></a>À propos de la protection web
 
@@ -52,6 +50,17 @@ La protection contre les menaces web comprend :
 - Visibilité complète des menaces web qui affectent votre organisation.
 - Fonctionnalités d’investigation sur l’activité des menaces liées au web par le biais d’alertes et de profils complets d’URL et des appareils qui accèdent à ces URL.
 - Un ensemble complet de fonctionnalités de sécurité qui suivent les tendances générales d’accès aux sites web malveillants et indésirables.
+
+> [!NOTE]
+> Pour les processus autres que Microsoft Edge et Internet Explorer, les scénarios de protection web tirent parti de la protection réseau pour l’inspection et l’application :
+>
+> - L’adresse IP est prise en charge pour les trois protocoles (TCP, HTTP et HTTPS (TLS).
+> - Seules les adresses IP uniques sont prises en charge (pas de blocs CIDR ou de plages d’adresses IP) dans les indicateurs personnalisés.
+> - Les URL chiffrées (chemin d’accès complet) ne peuvent être bloquées que sur les navigateurs internes (Internet Explorer, Edge).
+> - Les URL chiffrées (FQDN uniquement) peuvent être bloquées dans des navigateurs tiers (c’est-à-dire autres qu’Internet Explorer, Edge).
+> - Des blocs de chemin d’URL complets peuvent être appliqués pour les URL non chiffrées.
+>
+> Il peut y avoir jusqu’à 2 heures de latence (généralement moins) entre le moment où l’action est effectuée et l’URL et l’adresse IP bloquées.
 
 Pour plus d’informations, consultez [la protection contre les menaces web](web-threat-protection.md).
 
@@ -136,7 +145,7 @@ Le tableau ci-dessous présente les réponses et leurs fonctionnalités corrél�
 
 |ResponseCategory|Fonctionnalité responsable du bloc|
 |---|---|
-|CustomPolicy|WCF|
+|CustomPolicy|Wcf|
 |CustomBlockList|Indicateurs personnalisés|
 |CasbPolicy|Defender for Cloud Apps|
 |Malveillant|Menaces web|

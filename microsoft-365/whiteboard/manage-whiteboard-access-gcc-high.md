@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment activer, désactiver et gérer des données de tableau blanc.
-ms.openlocfilehash: 2f79f53ce68dd9179b2b652f46a4245b9ed6ffdb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7034aba1ea94bcc87a21f8378595ce984a74769f
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942425"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496722"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-high-environments"></a>Gérer l’accès au Tableau blanc Microsoft pour les environnements GCC High
 
@@ -46,7 +46,7 @@ Vous pouvez contrôler l’accès au Tableau blanc de la manière suivante :
 - Exiger des stratégies d’accès conditionnel pour accéder au Tableau blanc à l’aide du Centre d’administration Azure Active Directory.
 
 >[!NOTE]
-> Le tableau blanc sur OneDrive Entreprise n’apparaît pas dans le Centre d'administration Microsoft 365. La stratégie de réunion Teams masque uniquement les points d’entrée du Tableau blanc. Elle n’empêche pas les utilisateurs d’utiliser le tableau blanc. Les stratagèmes d’accès conditionnel empêchent l’accès au Tableau blanc, mais ne masquent pas les points d’entrée.
+> Le tableau blanc sur OneDrive Entreprise n’apparaît pas dans le Centre d'administration Microsoft 365. La stratégie de réunion Teams masque uniquement les points d’entrée du Tableau blanc. Elle n’empêche pas les utilisateurs d’utiliser le tableau blanc. Les stratégies d’accès conditionnel empêchent l’accès au Tableau blanc, mais ne masquent pas les points d’entrée.
 
 ## <a name="enable-or-disable-whiteboard"></a>Activer ou désactiver le tableau blanc
 

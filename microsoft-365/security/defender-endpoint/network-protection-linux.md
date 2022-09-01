@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 5a4fcb8e467a9ec79a03b27d8e8260406a615a54
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: a05ddff1ef6c9689143c36cde3c9d0719c7dab10
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385912"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497795"
 ---
 # <a name="network-protection-for-linux"></a>Protection réseau pour Linux
 
@@ -55,7 +55,7 @@ La protection réseau étend l’étendue de Microsoft Defender [SmartScreen](/w
 
 Vous pouvez utiliser le filtrage de contenu web pour les tests avec la protection réseau pour Linux. Consultez [le filtrage de contenu Web](web-content-filtering.md).
 
-### <a name="known-issues"></a>Problèmes détectés
+### <a name="known-issues"></a>Problèmes connus
 
 - La protection réseau est implémentée en tant que tunnel de réseau privé virtuel (VPN). Des options avancées de routage de paquets à l’aide de scripts nftables/iptables personnalisés sont disponibles.
 - L’expérience utilisateur Bloquer/Avertir n’est pas disponible
@@ -64,7 +64,7 @@ Vous pouvez utiliser le filtrage de contenu web pour les tests avec la protectio
 > [!NOTE]
 > Pour évaluer l’efficacité de Linux Web Threat Protection, nous vous recommandons d’utiliser le navigateur Firefox, qui est la valeur par défaut pour toutes les distributions.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prerequisites
 
 - Licences : Microsoft Defender pour point de terminaison locataire (peut être une version d’évaluation) et des exigences spécifiques à la plateforme trouvées dans [Microsoft Defender pour point de terminaison pour les plateformes non Windows](non-windows.md#licensing-requirements)
 - Machines intégrées :
@@ -189,7 +189,7 @@ Assurez-vous également que dans **les points de terminaison des paramètres** >
    > [!NOTE]
    > Si vous supprimez une stratégie ou modifiez des groupes d’appareils en même temps, cela peut entraîner un retard dans le déploiement de la stratégie.
    > Conseil pro : vous pouvez déployer une stratégie sans sélectionner de catégorie sur un groupe d’appareils. Cette action crée une stratégie d’audit uniquement pour vous aider à comprendre le comportement de l’utilisateur avant de créer une stratégie de blocage.
-4. [Intégrez Microsoft Defender pour point de terminaison à Sécurité des applications infonuagiques](/defender-cloud-apps/mde-integration.md) et vos appareils macOS compatibles avec la protection réseau disposeront de fonctionnalités d’application de stratégie de point de terminaison.
+4. [Intégrez Microsoft Defender pour point de terminaison à Defender pour Cloud Apps](/defender-cloud-apps/mde-integration) et vos appareils macOS compatibles avec la protection réseau disposeront de fonctionnalités d’application de stratégie de point de terminaison.
    > [!NOTE]
    > La découverte et d’autres fonctionnalités ne sont actuellement pas prises en charge sur ces plateformes.
 

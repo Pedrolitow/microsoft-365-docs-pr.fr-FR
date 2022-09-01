@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment signaler des faux positifs et des faux négatifs dans Outlook à l’aide de la fonctionnalité Message de rapport.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5955f6b5c4e376f296dcdad2d54a627bbcce04c3
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 92ec6777469caaa47664130a66acfcb72e7329ba
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685676"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497354"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Signaler les faux positifs et les faux négatifs dans Outlook
 
@@ -27,12 +27,12 @@ ms.locfileid: "66685676"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 > Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser la page **Soumissions** dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des boîtes aux lettres locales à l’aide de l’authentification moderne hybride, vous pouvez envoyer à Exchange Online Protection (EOP) des faux positifs (e-mails corrects bloqués ou envoyés à un dossier indésirable) et des faux négatifs (courrier indésirable ou hameçonnage remis à la boîte de réception).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des boîtes aux lettres Exchange Online ou locales à l’aide de l’authentification moderne hybride, vous pouvez envoyer des faux positifs (bon e-mail bloqué ou envoyé au dossier indésirable) et de faux négatifs (e-mail indésirable ou hameçonnage qui a été remis à la boîte de réception) à Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -40,7 +40,7 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 - Le complément Message de rapport et le complément Report Phishing fonctionnent pour Outlook sur toutes les plateformes (Outlook sur le web, iOS, Android et Desktop).
 
-- Si vous êtes administrateur dans une organisation avec des boîtes aux lettres Exchange Online, utilisez le portail Soumissions dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser la soumission d’administrateur pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
+- Si vous êtes administrateur dans une organisation avec des boîtes aux lettres Exchange Online, utilisez le portail Soumissions dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser Administration Soumission pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
 
 - Vous pouvez configurer l’envoi de messages directement à Microsoft, une boîte aux lettres que vous spécifiez ou les deux. Pour plus d’informations, consultez [les stratégies d’envoi des utilisateurs](user-submission.md).
 
@@ -58,7 +58,7 @@ Regardez cette courte vidéo pour découvrir comment vous pouvez utiliser Micros
 
 ### <a name="report-junk-and-phishing-messages"></a>Signaler des messages indésirables et de hameçonnage
 
-Pour les messages dans la boîte de réception ou tout autre dossier de courrier, à l’exception du courrier indésirable, utilisez la méthode suivante pour signaler le courrier indésirable et les messages de hameçonnage :
+Pour les messages dans la boîte de réception ou tout autre dossier de courrier, à l’exception de Junk Email, utilisez la méthode suivante pour signaler le courrier indésirable et les messages de hameçonnage :
 
 1. Sélectionnez les points de suspension **Plus d’actions** dans le coin supérieur droit du message sélectionné, sélectionnez **Signaler le message** dans le menu déroulant, puis sélectionnez **Courrier indésirable** ou **hameçonnage**.
 
@@ -67,7 +67,7 @@ Pour les messages dans la boîte de réception ou tout autre dossier de courrier
    :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="Option Courrier indésirable et hameçonnage dans le volet Message de rapport" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. Les messages sélectionnés seront envoyés à Microsoft pour analyse et :
-   - Déplacé vers le dossier Courrier indésirable s’ils ont été signalés comme courrier indésirable.
+   - Déplacé vers le dossier Junk Email s’ils ont été signalés comme courrier indésirable.
    - Supprimé s’ils ont été signalés comme hameçonnage.
 
 ### <a name="report-messages-that-are-not-junk"></a>Signaler les messages qui ne sont pas indésirables

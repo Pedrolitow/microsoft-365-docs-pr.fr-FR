@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des fichiers dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2478328f47c278944abe523c1448704f0b8199ff
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 61d9a3f2c1ae370183d88afce0077ecaea6a422c
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469424"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497113"
 ---
 # <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des fichiers utilisant la liste Autoriser/Bloquer des clients
 
@@ -87,10 +87,9 @@ Pour obtenir des instructions, consultez [l’article Signaler les pièces joint
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées de bloc pour les fichiers dans la liste d’autorisations/de blocs du locataire
 
-Vous créez des entrées de bloc pour les fichiers directement dans la liste d’autorisations/de blocs du locataire.
+Vous pouvez créer des entrées de bloc pour les fichiers directement dans la liste d’autorisation/de blocage du locataire.
 
-> [!NOTE]
-> Email messages qui contiennent ces fichiers bloqués sont bloqués en tant que *programmes malveillants*.
+Email messages qui contiennent ces fichiers bloqués sont bloqués en tant que *programmes malveillants*.
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 

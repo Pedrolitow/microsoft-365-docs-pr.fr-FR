@@ -10,6 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/31/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: cfc3ebb1a32487bf2b32074059091c0d4d3517ec
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: d83377503587c76fced144159f2d8f3fc82f4df7
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535777"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497892"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
@@ -37,7 +38,7 @@ ms.locfileid: "65535777"
 **Plateformes**
 - Windows
 
-Vous voulez voir comment cela fonctionne ? Regardez la vidéo suivante :
+Souhaitez-vous découvrir comment cela fonctionne ? Regardez la vidéo suivante :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
@@ -85,7 +86,7 @@ Toutes les actions de correction, qu’elles soient en attente ou terminées, so
 Votre abonnement doit inclure [Defender pour point de terminaison](microsoft-defender-endpoint.md) ou [Defender Entreprise](../defender-business/mdb-overview.md).
 
 > [!NOTE]
-> L’investigation et la réponse automatisées nécessitent Antivirus Microsoft Defender pour l’exécution en mode passif ou en mode actif. Si Antivirus Microsoft Defender est désactivé ou désinstallé, l’investigation et la réponse automatisées ne fonctionnent pas correctement.
+> L’investigation et la réponse automatisées nécessitent l’antivirus Microsoft Defender pour l’exécution en mode passif ou actif. Si l’antivirus Microsoft Defender est désactivé ou désinstallé, l’investigation et la réponse automatisées ne fonctionnent pas correctement.
 
 Actuellement, AIR prend uniquement en charge les versions de système d’exploitation suivantes :
 
@@ -96,7 +97,10 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 - Windows 10, version 1709 (build du système d’exploitation 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) ou ultérieure
 - Windows 10, version 1803 (build du système d’exploitation 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) ou ultérieure
 - Windows 10, version [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ou ultérieure
-- Windows 11
+- Windows 11
+
+> [!NOTE]
+> L’examen et la réponse automatisés sur Windows Server 2012 R2 et Windows Server 2016 nécessitent l’installation de [l’agent unifié](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). 
 
 ## <a name="next-steps"></a>Prochaines étapes
 

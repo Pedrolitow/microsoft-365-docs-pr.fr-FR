@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 6184d31ec2ae47f796b7ef61da43bc163423cb86
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
-ms.translationtype: HT
+ms.openlocfilehash: 12e155d9b5953dcd88c5051d97dfe37389e2ebda
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309506"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497668"
 ---
 # <a name="get-started-with-microsoft-365-for-frontline-workers"></a>Prise en main de Microsoft 365 for frontline workers
 
@@ -99,7 +99,7 @@ Protégez votre entreprise avec les meilleures fonctionnalités de sécurité et
 |Fonctionnalité |Disponibilité de la licence |
 |-----------|---------------------|
 |[Assistant Intégration du personnel de première ligne](flw-onboarding-wizard.md) |Entreprise, F1, F3 |
-|[Déployer Teams à grande échelle](deploy-teams-at-scale.md) |Entreprise, F1, F3 |
+|[Déployer Teams à grande échelle pour les travailleurs de première ligne](deploy-teams-at-scale.md) |Entreprise, F1, F3 |
 |[Packages de stratégie Teams pour le personnel de première ligne](/microsoftteams/policy-packages-flw) |Entreprise, F1, F3 |
 
 ### <a name="secure-endpoints-and-apps-across-device-types-and-operating-systems"></a>Sécuriser les points de terminaison et les applications entre les types d’appareils et les systèmes d’exploitation

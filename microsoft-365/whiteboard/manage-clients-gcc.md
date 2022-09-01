@@ -13,12 +13,12 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ccca3a2b24c774a095b1c17ef3e8a3d72fe958bf
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: 0a4250b356e56857581a5083c515b44513d844f3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441942"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497476"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-environments"></a>Gérer les clients pour le tableau blanc Microsoft dans les environnements GCC
 
@@ -34,24 +34,20 @@ Les clients suivants sont actuellement pris en charge dans le Tableau blanc :
 - Application web tableau blanc autonome à l’adresse [https://whiteboard.office365.us](https://whiteboard.office365.us)
 - Réunions, conversations et canaux Microsoft Teams à l’aide du bureau et du web Teams
 - Application tableau blanc autonome pour mobile
+- Applications de tableau blanc autonomes pour Windows 10
 
 ## <a name="clients-planned"></a>Clients planifiés
 
 Les clients suivants sont prévus pour les prochaines versions de Tableau blanc :
 
-- Application tableau blanc autonome pour Windows 10 ou versions ultérieures
-- Application tableau blanc autonome pour Surface Hub (peut actuellement être utilisée en mode anonyme)
 - Tableau blanc dans le lanceur d’applications Office.com
-- Tableau blanc dans les réunions Teams sur surface Hub et salles de réunion Teams
-- Tableau blanc dans les appels 1:1 dans Teams
+- Tableau blanc dans la salle de réunion Teams
 
-> [!NOTE]
-> Bien que les utilisateurs puissent installer le client Windows, ils ne pourront pas se connecter tant que le client n’est pas mis à jour.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer l’accès au Tableau blanc - GCC High](manage-whiteboard-access-gcc-high.md)
+[Gérer l’accès au Tableau blanc - GCC](manage-whiteboard-access-gcc.md)
 
-[Gérer les données pour le tableau blanc - GCC High](manage-data-gcc-high.md)
+[Gérer les données pour le Tableau blanc - GCC](manage-data-gcc.md)
 
-[Gérer le partage pour le tableau blanc - GCC High](manage-sharing-gcc-high.md)
+[Gérer le partage pour le tableau blanc - GCC](manage-sharing-gcc.md)

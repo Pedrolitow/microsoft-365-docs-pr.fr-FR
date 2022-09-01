@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 MS.collection: ''
 search.appverid: MET150
 description: Correction des menaces
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6102d1e7d3b7e39787c3787b8bc0851eedbdcefb
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 9b9a51bfbfe7cd5ec754c6f3925b91612e58a2d6
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115540"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496854"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les courriers malveillants remis dans Office 365
 
@@ -35,9 +35,9 @@ La correction consiste à prendre une mesure prescrite contre une menace. Les e-
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Ce que vous devez savoir avant de commencer
 
-Les administrateurs peuvent prendre les mesures nécessaires sur les e-mails, mais pour que ces actions soient approuvées, le rôle *De recherche et de vidage* doit leur être attribué dans les autorisations **e-mail & collaboration** dans le portail Microsoft 365 Defender. Sans le rôle *Rechercher et vider ajouté* à l’un des groupes de rôles, ils ne pourront pas exécuter l’action.
+Les administrateurs peuvent prendre les mesures nécessaires sur les e-mails, mais pour que ces actions soient approuvées, le rôle *De recherche et de vidage* doit leur être attribué dans les autorisations **de collaboration Email &** dans le portail Microsoft 365 Defender. Sans le rôle *Rechercher et vider ajouté* à l’un des groupes de rôles, ils ne pourront pas exécuter l’action.
 
-Étant donné que les actions de messagerie créent des investigations automatisées dans le serveur principal, vous devez activer *l’investigation automatisée*. Accédez à **Paramètres** \> **Fonctionnalités avancées des points de** \> terminaison et activez **l’investigation automatisée**.
+Étant donné que les actions de messagerie créent des investigations automatisées dans le serveur principal, vous devez activer *l’investigation automatisée*. Accédez aux **fonctionnalités avancées**  \> **des points de terminaison de paramètres** \> et activez **l’investigation automatisée**.
 
 ## <a name="manual-and-automated-remediation"></a>Correction manuelle et automatisée
 
@@ -82,7 +82,7 @@ Le Centre d’actions unifié affiche les actions de correction des 30 derniers 
 Ouvrez tout élément de correction pour afficher des détails à son sujet, notamment son nom de correction, son ID d’approbation, son ID d’investigation, sa date de création, sa description, son état, sa source d’action, son type d’action, son état. Il ouvre également un volet latéral avec les détails de l’action, les détails du cluster d’e-mail, les alertes et les détails de l’incident.
 
 - *Ouvrez la page Investigation* pour ouvrir une enquête d’administration qui contient moins de détails et d’onglets. Il affiche des détails tels que : alerte associée, entité sélectionnée pour la correction, action effectuée, état de correction, nombre d’entités, journaux d’activité, approbateur d’action. Cette enquête effectue un suivi de l’enquête effectuée manuellement par l’administrateur et contient des détails sur les sélections effectuées par l’administrateur. Par conséquent, il s’agit de l’enquête sur les actions de l’administrateur. Pas besoin d’agir sur l’enquête et d’alerter son état déjà approuvé.
-- *Nombre d’e-mails* Affiche le nombre d’e-mails envoyés via l’Explorateur de menaces. Ces e-mails peuvent être actionnables ou non exploitables.
+- *Email nombre* Affiche le nombre d’e-mails envoyés via l’Explorateur de menaces. Ces e-mails peuvent être actionnables ou non exploitables.
 - *Journaux d’activité des actions* Affichez les détails des états de correction tels que le succès, l’échec et déjà dans la destination.
 
 :::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="Centre d’actions avec l’option Déplacer vers la boîte de réception ouverte.":::

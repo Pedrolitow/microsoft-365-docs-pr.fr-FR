@@ -3,7 +3,7 @@ title: Microsoft Defender pour point de terminaison connexion d’API à Power B
 ms.reviewer: ''
 description: Créez un rapport Power Business Intelligence (BI) en plus de Microsoft Defender pour point de terminaison API.
 keywords: api, api prises en charge, Power BI, rapports
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 086579f6923f59c12c5ef9f7494b539f24c19210
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 20ee9e55da7fe35324a8463d540d1935aecf1e1c
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328120"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497091"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Créer des rapports personnalisés à l’aide de Power BI
 
@@ -31,8 +31,7 @@ ms.locfileid: "67328120"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,21 +39,19 @@ ms.locfileid: "67328120"
 
 Dans cette section, vous allez apprendre à créer un rapport Power BI sur les API Defender pour point de terminaison.
 
-Le premier exemple montre comment connecter Power BI à l’API de repérage avancé et le deuxième exemple montre une connexion à nos API OData, telles que des actions de machine ou des alertes.
+Le premier exemple montre comment connecter Power BI à l’API de repérage avancé, et le deuxième exemple montre une connexion à nos API OData, telles que des actions de machine ou des alertes.
 
 ## <a name="connect-power-bi-to-advanced-hunting-api"></a>Connecter Power BI à l’API de repérage avancé
 
-- Ouvrez Microsoft Power BI.
+1. Ouvrez Microsoft Power BI.
 
-- Cliquez sur Obtenir une **requête vide** de **données**\>.
+2. Sélectionnez Obtenir une **requête vide** de **données**\>.
+   :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="Option Requête vide sous l’élément de menu Obtenir des données" lightbox="images/power-bi-create-blank-query.png":::
 
-  :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="Option Requête vide sous l’élément de menu Obtenir des données" lightbox="images/power-bi-create-blank-query.png":::
+3. Sélectionnez **Éditeur avancé**.
+   :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="Élément de menu Éditeur avancé" lightbox="images/power-bi-open-advanced-editor.png":::
 
-- Cliquez sur **Éditeur avancé**.
-
-  :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="Élément de menu Éditeur avancé" lightbox="images/power-bi-open-advanced-editor.png":::
-
-- Copiez ce qui suit et collez-le dans l’éditeur :
+4. Copiez ce qui suit et collez-le dans l’éditeur :
 
 ```
     let
@@ -94,32 +91,28 @@ Le premier exemple montre comment connecter Power BI à l’API de repérage ava
     in Table
 ```
 
-- Cliquez sur **Terminé**.
+5. Sélectionnez **Terminé**.
 
-- Cliquez sur **Modifier les informations d’identification**.
+6. Sélectionnez **Modifier les informations d’identification**.
+   :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="Élément de menu Modifier les informations d’identification" lightbox="images/power-bi-edit-credentials.png":::
 
-    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="Élément de menu Modifier les informations d’identification" lightbox="images/power-bi-edit-credentials.png":::
-    
+7. Sélectionnez **Connexion au** compte \> **d’organisation**.
+   :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="Option De connexion dans l’élément de menu Compte professionnel" lightbox="images/power-bi-set-credentials-organizational.png":::
 
-- Sélectionnez **Connexion au** compte \> **d’organisation**.
+8. Entrez vos informations d’identification et attendez d’être connecté.
 
-    :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="Option De connexion dans l’élément de menu Compte professionnel" lightbox="images/power-bi-set-credentials-organizational.png":::
+9. Sélectionnez **Connexion**. </br>
+   :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="Message de confirmation de connexion dans l’élément de menu Compte professionnel" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
-- Entrez vos informations d’identification et attendez d’être connecté.
+À présent, les résultats de votre requête s’affichent sous forme de tableau et vous pouvez commencer à créer des visualisations dessus !
 
-- Cliquez sur **Connecter**.
-
-    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="Message de confirmation de connexion dans l’élément de menu Compte professionnel" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
-
-- À présent, les résultats de votre requête s’affichent sous forme de tableau et vous pouvez commencer à créer des visualisations dessus !
-
-- Vous pouvez dupliquer cette table, la renommer et modifier la requête De chasse avancée à l’intérieur pour obtenir toutes les données souhaitées.
+Vous pouvez dupliquer cette table, la renommer et modifier la requête Advanced Hunting à l’intérieur pour obtenir toutes les données souhaitées.
 
 ## <a name="connect-power-bi-to-odata-apis"></a>Connecter Power BI aux API OData
 
-- La seule différence par rapport à l’exemple ci-dessus est la requête à l’intérieur de l’éditeur.
+La seule différence par rapport à l’exemple précédent est la requête à l’intérieur de l’éditeur. Suivez les étapes 1 à 3 ci-dessus. 
 
-- Copiez ce qui suit et collez-le dans l’éditeur pour extraire toutes les **actions** de machine de votre organisation :
+À l’étape 4, au lieu du code de cet exemple, copiez le code ci-dessous et collez-le dans l’éditeur pour extraire toutes les **actions** de machine de votre organisation :
 
 ```
     let
@@ -131,8 +124,8 @@ Le premier exemple montre comment connecter Power BI à l’API de repérage ava
         Source
 ```
 
-- Vous pouvez faire de même pour **les alertes et les** **machines**.
-- Vous pouvez également utiliser des requêtes OData pour les filtres de requêtes, voir [Utilisation des requêtes OData](exposed-apis-odata-samples.md).
+Vous pouvez faire de même pour **les alertes et les** **machines**.
+Vous pouvez également utiliser des requêtes OData pour les filtres de requêtes, voir [Utilisation des requêtes OData](exposed-apis-odata-samples.md).
 
 ## <a name="power-bi-dashboard-samples-in-github"></a>Exemples de tableau de bord Power BI dans GitHub
 
@@ -144,6 +137,6 @@ Affichez les Microsoft Defender pour point de terminaison exemples de rapport Po
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [API Defender pour point de terminaison](apis-intro.md)
-- [API de recherche avancée de menaces](run-advanced-query-api.md)
+- [API Defender pour point de terminaison](apis-intro.md) 
+- [API de recherche avancée de menaces](run-advanced-query-api.md) 
 - [Utilisation des requêtes OData](exposed-apis-odata-samples.md)

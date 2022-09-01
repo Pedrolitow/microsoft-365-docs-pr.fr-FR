@@ -19,12 +19,12 @@ ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: bb4b0cb1c38fc394d5dfb2ec0498ba72b23e8754
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7ab48b6dc7aad50af438e6fcebb241e32baac6ed
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388548"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495278"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -48,6 +48,17 @@ La protection réseau permet de protéger les appareils contre les événements 
 
 La protection réseau étend la protection dans la [protection Web](web-protection-overview.md) au niveau du système d’exploitation. Il fournit la fonctionnalité de protection web disponible dans Microsoft Edge à d’autres navigateurs et applications non-navigateurs pris en charge. La protection réseau offre également une visibilité et un blocage des indicateurs de compromission (IOC) lorsqu’ils sont utilisés avec la [détection et la réponse](overview-endpoint-detection-response.md) des points de terminaison. Par exemple, la protection réseau fonctionne avec vos [indicateurs personnalisés](manage-indicators.md) que vous pouvez utiliser pour bloquer des domaines ou des noms d’hôtes spécifiques.
 
+> [!NOTE]
+> Pour les processus autres que Microsoft Edge et Internet Explorer, les scénarios de protection web tirent parti de la protection réseau pour l’inspection et l’application :
+>
+> - L’adresse IP est prise en charge pour les trois protocoles (TCP, HTTP et HTTPS (TLS).
+> - Seules les adresses IP uniques sont prises en charge (pas de blocs CIDR ou de plages d’adresses IP) dans les indicateurs personnalisés.
+> - Les URL chiffrées (chemin d’accès complet) ne peuvent être bloquées que sur les navigateurs internes (Internet Explorer, Edge).
+> - Les URL chiffrées (FQDN uniquement) peuvent être bloquées dans des navigateurs tiers (c’est-à-dire autres qu’Internet Explorer, Edge).
+> - Des blocs de chemin d’URL complets peuvent être appliqués pour les URL non chiffrées.
+>
+> Il peut y avoir jusqu’à 2 heures de latence (généralement moins) entre le moment où l’action est effectuée et l’URL et l’adresse IP bloquées.
+
 Regardez cette vidéo pour découvrir comment la protection réseau permet de réduire la surface d’attaque de vos appareils en cas d’hameçonnage, d’attaques et d’autres contenus malveillants.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
@@ -64,7 +75,7 @@ La protection réseau nécessite Windows 10 ou 11 (Professionnel ou Entreprise),
 La protection réseau fait partie du groupe de solutions de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison. La protection réseau permet de superposer la couche réseau d’URL et d’adresses IP bloquantes. La protection réseau peut empêcher l’accès aux URL à l’aide de certains navigateurs et connexions réseau standard. Par défaut, la protection réseau protège vos ordinateurs contre les URL malveillantes connues à l’aide du flux SmartScreen, qui bloque les URL malveillantes d’une manière similaire à SmartScreen dans le navigateur Microsoft Edge. La fonctionnalité de protection réseau peut être étendue à :
 
 - Bloquer les adresses IP/URL de votre propre renseignement sur [les menaces (indicateurs](indicator-ip-domain.md))
-- Bloquer les services non approuvés de [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) (anciennement Microsoft Cloud App Security)
+- Bloquer les services non approuvés de [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 - Bloquer les sites en fonction de la catégorie ([filtrage de contenu web](web-content-filtering.md))
 
 La protection réseau est une partie essentielle de la pile de réponses et de protection Microsoft.
@@ -137,6 +148,8 @@ Un utilisateur visite un site web :
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>Protection réseau : détection et correction C2
 
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 Dans sa forme initiale, le ransomware est une menace de marchandise, préprogrammée et axée sur des résultats limités et spécifiques (par exemple, le chiffrement d’un ordinateur). Toutefois, les ransomwares sont devenus une menace sophistiquée qui est pilotée par l’homme, adaptative et axée sur une plus grande échelle et des résultats plus répandus; comme la conservation des ressources ou des données d’une organisation entière contre une rançon.
 
 La prise en charge des serveurs de commande et de contrôle (C2) est un élément clé de cette évolution du ransomware et permet à ces attaques de s’adapter à l’environnement qu’elles ciblent. La rupture du lien vers l’infrastructure de commande et de contrôle arrête la progression d’une attaque à l’étape suivante.
@@ -175,7 +188,7 @@ L’exemple suivant inclut les actions bloquées :
 ```kusto
 
 DeviceEvents
-|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
