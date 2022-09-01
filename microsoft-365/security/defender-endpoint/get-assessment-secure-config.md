@@ -2,7 +2,7 @@
 title: Exporter l’évaluation de la configuration sécurisée par appareil
 description: Retourne une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: dfc0ad17a142eebb021f11e78bedddf33538c61e
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 4b9d8cc479e72e79f9322feb6adca9b8b5bd5eda
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342830"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520542"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exporter l’évaluation de la configuration sécurisée par appareil
 
@@ -102,14 +102,14 @@ ConfigurationImpact|string|Impact nominal de la configuration sur la note de con
 ConfigurationName|string|Nom d’affichage de la configuration|Intégrer des appareils à Microsoft Defender pour point de terminaison
 ConfigurationSubcategory|string|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques.|Intégrer des appareils
 DeviceId|string|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
+DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
 IsApplicable|bool|Indique si la configuration ou la stratégie est applicable|true
 IsCompliant|bool|Indique si la configuration ou la stratégie est correctement configurée.|false
 IsExpectedUserImpact|bool|Indique s’il y aura un impact sur l’utilisateur si la configuration sera appliquée|true
 OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez Gestion des vulnérabilités Microsoft Defender (MDVM) pris en charge par les systèmes d’exploitation et les plateformes.|Windows 10 et Windows 11
-RbacGroupName|chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
+RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
 RecommandationReference|string|Référence à l’ID de recommandation associé à ce logiciel.|sca-_-scid-20000
-Timestamp|chaîne|Dernière fois que la configuration a été vue sur l’appareil|2020-11-03 10:13:34.8476880
+Timestamp|string|Dernière fois que la configuration a été vue sur l’appareil|2020-11-03 10:13:34.8476880
 |
 
 ### <a name="16-examples"></a>1.6 Exemples
@@ -222,7 +222,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 Cette réponse d’API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et retourne une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 
-#### <a name="212-limitations"></a>2.1.2 Limitations
+#### <a name="211-limitations"></a>2.1.1 Limitations
 
 Les limites de débit pour cette API sont de 5 appels par minute et de 20 appels par heure.
 
@@ -232,8 +232,8 @@ L’une des autorisations suivantes est requise pour appeler cette API. Pour plu
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
-Application|Vulnerability.Read.All|\'Lire les informations de vulnérabilité « Gestion des menaces et des vulnérabilités »\'
-Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|\'Lire les informations de vulnérabilité « Gestion des menaces et des vulnérabilités »\'
+Application|Vulnerability.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 
 ### <a name="23-url"></a>URL 2.3
 

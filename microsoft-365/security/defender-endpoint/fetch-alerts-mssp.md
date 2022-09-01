@@ -1,8 +1,8 @@
 ---
-title: Récupérer des alertes à partir du client MSSP
-description: Découvrez comment récupérer des alertes à partir d’un client
-keywords: fournisseur de services de sécurité géré, mssp, configurer, intégration
-ms.prod: m365-security
+title: Récupérer des alertes à partir du locataire client MSSP
+description: Découvrez comment extraire des alertes à partir d’un locataire client
+keywords: fournisseur de services de sécurité managé, mssp, configure, integration
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,84 +13,84 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e2ac36689f9f41badb2f4216198d8818e568778b
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: ce4bade277363cea284f38864f0abf0fb99ee062
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214176"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520014"
 ---
-# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP
+# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du locataire client MSSP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> Cette action est prise par le MSSP.
+> Cette action est effectuée par le MSSP.
 
 Il existe deux façons d’extraire des alertes :
 
 - Utilisation de la méthode SIEM
-- Utilisation des API
+- Utilisation d’API
 
 ## <a name="fetch-alerts-into-your-siem"></a>Récupérer des alertes dans votre SIEM
 
-Pour récupérer des alertes dans votre système SIEM, vous devez suivre les étapes suivantes :
+Pour extraire des alertes dans votre système SIEM, vous devez effectuer les étapes suivantes :
 
 - Étape 1 : Créer une application tierce
-- Étape 2 : Obtenir des jetons d’accès et d’actualisation à partir du client de votre client
+- Étape 2 : Obtenir des jetons d’accès et d’actualisation auprès du locataire de votre client
 - Étape 3 : autoriser votre application sur Microsoft 365 Defender
 
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>Étape 1 : Créer une application dans Azure Active Directory (Azure AD)
 
-Vous devez créer une application et lui accorder des autorisations pour récupérer des alertes à partir du client Microsoft 365 Defender client.
+Vous devez créer une application et lui accorder des autorisations pour extraire des alertes du locataire Microsoft 365 Defender de votre client.
 
-1. Connectez-vous au [portail Azure AD.](https://aad.portal.azure.com/)
+1. Connectez-vous au [portail Azure AD](https://aad.portal.azure.com/).
 
-2. Sélectionnez **Azure Active Directory** \> **inscriptions d’application.**
+2. Sélectionnez **Azure Active Directory** \> **inscriptions d'applications**.
 
-3. Cliquez **sur Nouvelle inscription.**
+3. Cliquez sur **Nouvelle inscription**.
 
 4. Spécifiez les valeurs suivantes :
 
-    - Nom : \<Tenant_name\> Connecteur MSSP SIEM (remplacez Tenant_name par le nom complet du client)
+    - Nom : \<Tenant_name\> Connecteur SIEM MSSP (remplacez Tenant_name par le nom d’affichage du locataire)
 
-    - Types de comptes pris en charge : compte dans cet annuaire d’organisation uniquement
-    - URI de redirection : sélectionnez Web et tapez `https://<domain_name>/SiemMsspConnector` (remplacez <domain_name> par le nom du client)
+    - Types de comptes pris en charge : compte dans cet annuaire organisationnel uniquement
+    - URI de redirection : sélectionnez Web et type `https://<domain_name>/SiemMsspConnector`(remplacez <domain_name> par le nom du locataire)
 
-5. Cliquez sur **S'inscrire**. L’application s’affiche dans la liste des applications que vous possédez.
+5. Cliquez sur **S'inscrire**. L’application s’affiche dans la liste des applications dont vous êtes propriétaire.
 
-6. Sélectionnez l’application, puis cliquez sur **Vue d’ensemble.**
+6. Sélectionnez l’application, puis cliquez sur **Vue d’ensemble**.
 
-7. Copiez la valeur du champ ID de **l’application (client)** dans un endroit sûr. Vous en aurez besoin à l’étape suivante.
+7. Copiez la valeur du champ **ID d’application (client)** dans un emplacement sûr. Vous en aurez besoin à l’étape suivante.
 
-8. Sélectionnez **Certificat & secrets dans** le nouveau panneau d’application.
+8. Sélectionnez **Certificat & secrets** dans le nouveau panneau d’application.
 
-9. Cliquez **sur Nouvelle secret client**.
+9. Cliquez sur **Nouveau secret client**.
 
     - Description : entrez une description de la clé.
-    - Expire : sélection **dans 1 an**
+    - Expire : Sélectionner **dans 1 an**
 
-10. Cliquez **sur** Ajouter , copiez la valeur de la question secrète client dans un endroit sûr. Vous en aurez besoin à l’étape suivante.
+10. Cliquez sur **Ajouter**, copiez la valeur de la clé secrète client dans un emplacement sûr. Vous en aurez besoin à l’étape suivante.
 
-### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>Étape 2 : Obtenir des jetons d’accès et d’actualisation à partir du client de votre client
+### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>Étape 2 : Obtenir des jetons d’accès et d’actualisation auprès du locataire de votre client
 
-Cette section vous guide sur l’utilisation d’un script PowerShell pour obtenir les jetons du client de votre client. Ce script utilise l’application de l’étape précédente pour obtenir les jetons d’accès et d’actualisation à l’aide du code d’autorisation OAuth Flow.
+Cette section vous guide sur l’utilisation d’un script PowerShell pour obtenir les jetons du locataire de votre client. Ce script utilise l’application de l’étape précédente pour obtenir les jetons d’accès et d’actualisation à l’aide du flux de code d’autorisation OAuth.
 
-Après avoir fourni vos informations d’identification, vous devez donner votre consentement à l’application afin que l’application soit mise en service dans le client du client.
+Après avoir fourni vos informations d’identification, vous devez accorder le consentement à l’application afin que l’application soit approvisionnée dans le locataire du client.
 
-1. Créez un dossier et nommez-le : `MsspTokensAcquisition` .
+1. Créez un dossier et nommez-le : `MsspTokensAcquisition`.
 
-2. Téléchargez [le module LoginBrowser.psm1](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1) et enregistrez-le dans le `MsspTokensAcquisition` dossier.
+2. Téléchargez le [module LoginBrowser.psm1](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1) et enregistrez-le dans le `MsspTokensAcquisition` dossier.
 
     > [!NOTE]
-    > À la ligne 30, `authorzationUrl` remplacez par `authorizationUrl` .
+    > Dans la ligne 30, remplacez par `authorzationUrl` `authorizationUrl`.
 
 3. Créez un fichier avec le contenu suivant et enregistrez-le avec le nom `MsspTokensAcquisition.ps1` dans le dossier :
 
@@ -140,15 +140,15 @@ Après avoir fourni vos informations d’identification, vous devez donner votre
     Write-Host " ----------------------------------- REFRESH TOKEN ---------------------------------- "
     Write-Host $refreshToken
     ```
-4. Ouvrez une invite de commandes PowerShell avec élévation de niveaux dans le `MsspTokensAcquisition` dossier.
+4. Ouvrez une invite de commandes PowerShell avec élévation de privilèges dans le `MsspTokensAcquisition` dossier.
 
 5. Exécutez la commande suivante : `Set-ExecutionPolicy -ExecutionPolicy Bypass`
 
 6. Entrez les commandes suivantes : `.\MsspTokensAcquisition.ps1 -clientId <client_id> -secret <app_key> -tenantId <customer_tenant_id>`
 
-    - \<client_id\>Remplacez-le **par l’ID d’application (client)** obtenu à l’étape précédente.
-    - Remplacez \<app_key\> par la secret client **que** vous avez créée à l’étape précédente.
-    - Remplacez \<customer_tenant_id\> par l’ID de **locataire de votre client.**
+    - Remplacez \<client_id\> par **l’ID d’application (client)** obtenu à l’étape précédente.
+    - Remplacez \<app_key\> par la **clé secrète client** que vous avez créée à l’étape précédente.
+    - Remplacez par \<customer_tenant_id\> **l’ID de locataire** de votre client.
 
 7. Vous serez invité à fournir vos informations d’identification et votre consentement. Ignorez la redirection de page.
 
@@ -158,26 +158,26 @@ Après avoir fourni vos informations d’identification, vous devez donner votre
 
 Vous devez autoriser l’application que vous avez créée dans Microsoft 365 Defender.
 
-Vous devez avoir l’autorisation Gérer les **paramètres système** du portail pour autoriser l’application. Dans le cas contraire, vous devrez demander à votre client d’autoriser l’application pour vous.
+Vous devez disposer de l’autorisation **Gérer les paramètres système du portail** pour autoriser l’application. Sinon, vous devrez demander à votre client d’autoriser l’application pour vous.
 
-1. Go to `https://security.microsoft.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
+1. Accédez à `https://security.microsoft.com?tid=<customer_tenant_id>` (remplacez \<customer_tenant_id\> par l’ID de locataire du client.
 
-2. Cliquez **Paramètres** \> **LES API de points de** \> **terminaison** \> **SIEM.**
+2. Cliquez sur **PARAMÈTRES** \> **POINTS DE TERMINAISON** \> **API** \> **SIEM**.
 
-3. Sélectionnez **l’onglet MSSP.**
+3. Sélectionnez l’onglet **MSSP** .
 
-4. Entrez **l’ID d’application** à partir de la première étape et votre **ID de client.**
+4. Entrez **l’ID d’application** de la première étape et votre **ID de locataire**.
 
-5. Cliquez **sur Autoriser l’application.**
+5. Cliquez sur **Autoriser l’application**.
 
-Vous pouvez maintenant télécharger le fichier de configuration approprié pour votre SIEM et vous connecter à l Microsoft 365 Defender API. Pour plus d’informations, voir [« Tirer des alertes vers vos outils SIEM](configure-siem.md)».
+Vous pouvez maintenant télécharger le fichier de configuration approprié pour votre SIEM et vous connecter à l’API Microsoft 365 Defender. Pour plus d’informations, consultez Les [alertes d’extraction vers vos outils SIEM](configure-siem.md).
 
-- Dans le fichier de configuration ArcSight /Splunk Authentication Properties, écrivez votre clé d’application manuellement en définir la valeur secrète.
+- Dans le fichier de configuration ArcSight /Fichier de propriétés d’authentification Splunk, écrivez votre clé d’application manuellement en définissant la valeur du secret.
 - Au lieu d’acquérir un jeton d’actualisation dans le portail, utilisez le script de l’étape précédente pour acquérir un jeton d’actualisation (ou l’acquérir par d’autres moyens).
 
-## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>Récupérer des alertes à partir du client MSSP client à l’aide des API
+## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>Récupérer des alertes à partir du locataire du client MSSP à l’aide d’API
 
-Pour plus d’informations sur la récupération d’alertes à l’aide de l’API REST, voir Récupérer des alertes à partir du [client MSSP client](fetch-alerts-mssp.md).
+Pour plus d’informations sur la récupération d’alertes à l’aide de l’API REST, consultez [Fetch alerts from MSSP customer tenant](fetch-alerts-mssp.md).
 
 ## <a name="see-also"></a>Voir aussi
 

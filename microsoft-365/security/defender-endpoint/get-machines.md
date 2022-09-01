@@ -2,7 +2,7 @@
 title: Répertorier l’API machines
 description: Découvrez comment utiliser l’API List machines pour récupérer une collection de machines qui ont communiqué avec Microsoft Defender pour point de terminaison cloud.
 keywords: api, api graphe, api prises en charge, get, appareils
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: b7a95843d1102d9bd004a300a754fdd6bc8ecd42
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: b2ce0be32f5172aa1f6f86b450b9444f150eadb6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326868"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520630"
 ---
 # <a name="list-machines-api"></a>Répertorier l’API machines
 

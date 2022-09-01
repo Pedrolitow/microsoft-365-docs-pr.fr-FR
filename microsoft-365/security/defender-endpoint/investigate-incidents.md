@@ -1,10 +1,10 @@
 ---
 title: Examiner les incidents dans Microsoft Defender pour point de terminaison
-description: Voir les alertes associées, gérer l’incident et consulter les métadonnées d’alerte pour vous aider à examiner un incident
+description: Consultez les alertes associées, gérez l’incident et consultez les métadonnées d’alerte pour vous aider à examiner un incident
 keywords: examiner, incident, alertes, métadonnées, risque, source de détection, appareils affectés, modèles, corrélation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d66dde2c3f346449c7ecd03a7ef577e39cf98991
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 76e944b809317b7783c30251407ba0ef310c7751
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468796"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521332"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Examiner les incidents dans Microsoft Defender pour point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "64468796"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 Examinez les incidents qui affectent votre réseau, comprenez ce qu’ils signifient et rassemblez des preuves pour les résoudre.
@@ -40,68 +40,68 @@ Examinez les incidents qui affectent votre réseau, comprenez ce qu’ils signif
 Lorsque vous examinez un incident, vous voyez :
 
 - Détails de l’incident
-- Commentaires et actions sur les incidents
-- Onglets (alertes, appareils, enquêtes, preuves, graphique)
+- Commentaires et actions d’incident
+- Onglets (alertes, appareils, investigations, preuves, graphique)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUV]
 
 ## <a name="analyze-incident-details"></a>Analyser les détails de l’incident
 
-Cliquez sur un incident pour voir le **volet Incident**. **Sélectionnez Ouvrir la page Incident** pour voir les détails de l’incident et les informations connexes (alertes, périphériques, enquêtes, preuves, graphique).
+Cliquez sur un incident pour afficher le **volet Incident**. Sélectionnez **Ouvrir la page d’incident** pour afficher les détails de l’incident et les informations associées (alertes, appareils, investigations, preuves, graphique).
 
 :::image type="content" source="images/atp-incident-details.png" alt-text="Détails d’un incident" lightbox="images/atp-incident-details.png":::
 
 ### <a name="alerts"></a>Alertes
 
-Vous pouvez examiner les alertes et voir comment elles ont été liées dans un incident. Les alertes sont regroupées en incidents pour les raisons suivantes :
+Vous pouvez examiner les alertes et voir comment elles ont été liées dans un incident. Les alertes sont regroupées en incidents en fonction des raisons suivantes :
 
-- Examen automatisé : l’examen automatisé a déclenché l’alerte liée lors de l’examen de l’alerte d’origine
-- Caractéristiques de fichier : les fichiers associés à l’alerte ont des caractéristiques similaires
+- Investigation automatisée : l’enquête automatisée a déclenché l’alerte liée lors de l’examen de l’alerte d’origine
+- Caractéristiques des fichiers : les fichiers associés à l’alerte ont des caractéristiques similaires
 - Association manuelle : un utilisateur a lié manuellement les alertes
-- Durée immédiate : les alertes ont été déclenchées sur le même appareil au cours d’une certaine période
+- Délai d’expiration : les alertes ont été déclenchées sur le même appareil dans un délai donné
 - Même fichier : les fichiers associés à l’alerte sont exactement les mêmes
-- MÊME URL : l’URL qui a déclenché l’alerte est exactement la même
+- Même URL : l’URL qui a déclenché l’alerte est exactement la même
 
-:::image type="content" source="images/atp-incidents-alerts-reason.png" alt-text="Onglet Alertes avec détails de l’incident indiquant les raisons pour lesquelles les alertes ont été liées dans cet incident" lightbox="images/atp-incidents-alerts-reason.png":::
+:::image type="content" source="images/atp-incidents-alerts-reason.png" alt-text="Onglet Alertes avec la page détails de l’incident montrant les raisons pour lesquelles les alertes ont été liées dans cet incident" lightbox="images/atp-incidents-alerts-reason.png":::
 
-Vous pouvez également gérer une alerte et voir les métadonnées d’alerte ainsi que d’autres informations. Pour plus d’informations, voir [Examiner les alertes](investigate-alerts.md).
+Vous pouvez également gérer une alerte et afficher les métadonnées d’alerte ainsi que d’autres informations. Pour plus d’informations, consultez [Examiner les alertes](investigate-alerts.md).
 
 ### <a name="devices"></a>Appareils
 
-Vous pouvez également examiner les appareils qui font partie d’un incident donné ou y sont liés. Pour plus d’informations, voir [Examiner les appareils](investigate-machines.md).
+Vous pouvez également examiner les appareils qui font partie d’un incident donné ou y sont associés. Pour plus d’informations, consultez [Examiner les appareils](investigate-machines.md).
 
-:::image type="content" source="images/atp-incident-device-tab.png" alt-text="Onglet Périphériques dans la page Détails de l’incident" lightbox="images/atp-incident-device-tab.png":::
+:::image type="content" source="images/atp-incident-device-tab.png" alt-text="Onglet Appareils dans la page détails de l’incident" lightbox="images/atp-incident-device-tab.png":::
 
 ### <a name="investigations"></a>Enquêtes
 
-**Sélectionnez Examens** pour voir toutes les enquêtes automatiques lancées par le système en réponse aux alertes d’incident.
+Sélectionnez **Investigations** pour voir toutes les investigations automatiques lancées par le système en réponse aux alertes d’incident.
 
-:::image type="content" source="images/atp-incident-investigations-tab.png" alt-text="Onglet Enquêtes dans la page détails de l’incident" lightbox="images/atp-incident-investigations-tab.png":::
+:::image type="content" source="images/atp-incident-investigations-tab.png" alt-text="Onglet Investigations dans la page détails de l’incident" lightbox="images/atp-incident-investigations-tab.png":::
 
-## <a name="going-through-the-evidence"></a>Passer en travers de la preuve
+## <a name="going-through-the-evidence"></a>Passer en revue les preuves
 
-Microsoft Defender pour le point de terminaison examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, en vous fournissant des réponse automatiques et des informations sur les fichiers, processus, services et bien plus encore importants.
+Microsoft Defender pour point de terminaison examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, ce qui vous fournit une réponse automatique et des informations sur les fichiers, processus, services, etc. importants.
 
-Chacune des entités analysées sera marquée comme infectée, corrigé ou suspect.
+Chacune des entités analysées sera marquée comme infectée, corrigée ou suspecte.
 
-:::image type="content" source="images/atp-incident-evidence-tab.png" alt-text="Onglet Preuves dans la page Détails de l’incident" lightbox="images/atp-incident-evidence-tab.png":::
+:::image type="content" source="images/atp-incident-evidence-tab.png" alt-text="Onglet Preuve dans la page détails de l’incident" lightbox="images/atp-incident-evidence-tab.png":::
 
 ## <a name="visualizing-associated-cybersecurity-threats"></a>Visualisation des menaces de cybersécurité associées
 
-Microsoft Defender pour le point de terminaison regroupe les informations sur les menaces dans un incident afin que vous pouvez voir les modèles et corrélations provenant de différents points de données. Vous pouvez afficher cette corrélation via le graphique d’incident.
+Microsoft Defender pour point de terminaison agrège les informations sur les menaces dans un incident afin que vous puissiez voir les modèles et les corrélations provenant de différents points de données. Vous pouvez afficher cette corrélation via le graphique des incidents.
 
-### <a name="incident-graph"></a>Graphique d’incident
+### <a name="incident-graph"></a>Graphique des incidents
 
-Le **Graph** l’article sur les attaques de cybersécurité. Par exemple, il vous montre quel était le point d’entrée, quel indicateur de compromission ou d’activité a été observé sur quel appareil. etc.
+Le **graphe** raconte l’histoire de l’attaque contre la cybersécurité. Par exemple, il vous montre quel était le point d’entrée, quel indicateur de compromission ou d’activité a été observé sur quel appareil. Etc.
 
-:::image type="content" source="images/atp-incident-graph-tab.png" alt-text="Graphique de l’incident" lightbox="images/atp-incident-graph-tab.png":::
+:::image type="content" source="images/atp-incident-graph-tab.png" alt-text="Graphique d’incident" lightbox="images/atp-incident-graph-tab.png":::
 
-Vous pouvez cliquer sur les cercles sur le graphique d’incident pour afficher les détails des fichiers malveillants, les détections de fichiers associées, le nombre d’instances dans le monde entier, si elle a été observée dans votre organisation, si c’est le cas, le nombre d’instances.
+Vous pouvez cliquer sur les cercles du graphe d’incidents pour afficher les détails des fichiers malveillants, les détections de fichiers associées, le nombre d’instances dans le monde entier, le nombre d’instances observées dans votre organisation, le cas échéant.
 
 :::image type="content" source="images/atp-incident-graph-details.png" alt-text="Page détails de l’incident" lightbox="images/atp-incident-graph-details.png":::
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [File d’attente des incidents](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Examiner les incidents dans Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/investigate-incidents)
-- [Gérer Microsoft Defender pour les incidents de point de terminaison](/microsoft-365/security/defender-endpoint/manage-incidents)
+- [Gérer les incidents Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/manage-incidents)

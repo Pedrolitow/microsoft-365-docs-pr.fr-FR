@@ -2,7 +2,7 @@
 title: Exporter l’évaluation de l’inventaire logiciel du code non produit par appareil
 description: Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion pour les logiciels qui n’ont pas d’énumération de plateforme commune (CPE)
 keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 223ca8ab9eac14b456c62dad3d644ad067092766
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 9468438b6d52842986521a1de311e32a7b0fed19
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344498"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520560"
 ---
 # <a name="export-non-product-code-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel du code non produit par appareil
 
@@ -69,8 +69,8 @@ L’une des autorisations suivantes est requise pour appeler cette API. Pour plu
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
-Application|Software.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
-Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Application|Software.Read.All|\'Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités\'
 
 ### <a name="13-url"></a>URL 1.3
 
@@ -96,8 +96,8 @@ GET /api/machines/SoftwareInventoryNoProductCodeByMachine
 Propriété (ID)|Type de données|Description
 :---|:---|:---
 DeviceId|string|Identificateur unique de l’appareil dans le service.
-DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
-OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
+DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.
+OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
 RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 RbacGroupId|string|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
 SoftwareLastSeenTimestamp|chaîne|La dernière fois que ce logiciel a été vu sur l’appareil.
@@ -174,8 +174,8 @@ L’une des autorisations suivantes est requise pour appeler cette API. Pour plu
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
-Application|Software.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
-Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Application|Software.Read.All|\'Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités\'
 
 ### <a name="23-url"></a>URL 2.3
 
@@ -202,7 +202,7 @@ GET /api/machines/Api/Machines/SoftwareInventoryNonCpeExport
 Propriété (ID)|Type de données|Description|Exemple de valeur retournée
 :---|:---|:---|:---
 Exporter des fichiers|chaîne de tableau\[\]|Liste des URL de téléchargement pour les fichiers contenant l’instantané actuel de l’organisation|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|chaîne|Heure à laquelle l’exportation a été générée.|2021-05-20T08:00:00Z
+GeneratedTime|string|Heure à laquelle l’exportation a été générée.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Exemples

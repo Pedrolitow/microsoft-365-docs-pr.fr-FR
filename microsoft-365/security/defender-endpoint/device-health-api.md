@@ -2,7 +2,7 @@
 title: API de détails sur l’intégrité des appareils antivirus Microsoft Defender
 description: Récupère une liste des détails d’intégrité des appareils antivirus Microsoft Defender.
 keywords: api, api graphe, api prises en charge, get, api d’intégrité de l’appareil, Microsoft Defender pour point de terminaison api de rapport api rapports microsoft defender, api de création de rapports microsoft defender pour point de terminaison, api de création de rapports Windows Defender, api de création de rapports Defender pour point de terminaison, API de rapport Windows Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 11276ce633a0259b04ee0ea7a984fc9b9c8eeb8c
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: 6907852501ac78784a3a642851c62cfeb2a065ac
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285223"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520360"
 ---
 # <a name="microsoft-defender-antivirus-device-health-details-api"></a>API de détails sur l’intégrité des appareils antivirus Microsoft Defender
 

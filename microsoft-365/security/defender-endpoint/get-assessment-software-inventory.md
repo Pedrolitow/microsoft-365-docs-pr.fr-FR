@@ -2,7 +2,7 @@
 title: Exporter l’évaluation de l’inventaire logiciel par appareil
 description: Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 365b932de39e558bbe30c84ba793e59b1db447c3
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 02d14b7aad018d8c4744c5aed012e441f65ac1d0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344526"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516025"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel par appareil
 
@@ -55,7 +55,7 @@ Les données collectées (à l’aide d’une _réponse Json_ ou _de fichiers_) 
 
 Cette réponse d’API contient toutes les données des logiciels installés qui ont une [énumération de plateforme commune (CPE)](https://nvd.nist.gov/products/cpe) par appareil. Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
-#### <a name="limitations"></a>Limites
+#### <a name="111-limitations"></a>1.1.1 Limitations
 
 - La taille maximale de la page est de 200 000.
 - Les limites de débit pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
@@ -66,8 +66,8 @@ L’une des autorisations suivantes est requise pour appeler cette API. Pour plu
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
-Application|Software.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
-Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Application|Software.Read.All|\'Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités\'
 
 ### <a name="13-url"></a>URL 1.3
 
@@ -94,20 +94,20 @@ GET /api/machines/SoftwareInventoryByMachine
 
 Propriété (ID)|Type de données|Description|Exemple de valeur retournée
 :---|:---|:---|:---
-DeviceId|chaîne|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
+DeviceId|string|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
 DiskPaths|Array[string]|Preuve de disque indiquant que le produit est installé sur l’appareil.|[ « C:\\ Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe » ]
-EndOfSupportDate|string|Date de fin de la prise en charge de ce logiciel.|2020-12-30
-EndOfSupportStatus|string|Fin de l’état du support. Peut contenir ces valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Future EOS Software.|EOS à venir
+EndOfSupportDate|chaîne|Date de fin de la prise en charge de ce logiciel.|2020-12-30
+EndOfSupportStatus|chaîne|Fin de l’état du support. Peut contenir ces valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Future EOS Software.|EOS à venir
 ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|Nombre de faiblesses sur ce logiciel sur cet appareil|3
-OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez Gestion des vulnérabilités Microsoft Defender systèmes d’exploitation et plateformes pris en charge.|Windows 10 et Windows 11
+OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez Gestion des vulnérabilités Microsoft Defender systèmes d’exploitation et plateformes pris en charge.|Windows 10 et Windows 11
 RbacGroupName|chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
 RegistryPaths|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight » ]
 SoftwareFirstSeenTimestamp|string|La première fois que ce logiciel a été vu sur l’appareil.|2019-04-07 02:06:47
 SoftwareName|string|Nom du produit logiciel.|Silverlight
 SoftwareVendor|chaîne|Nom du fournisseur de logiciels.|microsoft
-SoftwareVersion|chaîne|Numéro de version du produit logiciel.|81.0.4044.138
+SoftwareVersion|string|Numéro de version du produit logiciel.|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 Exemples
@@ -231,8 +231,8 @@ L’une des autorisations suivantes est requise pour appeler cette API. Pour plu
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
-Application|Software.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
-Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Application|Software.Read.All|\'Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités\'
 
 ### <a name="23-url"></a>URL 2.3
 

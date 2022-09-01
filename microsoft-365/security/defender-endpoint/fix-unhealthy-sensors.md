@@ -2,7 +2,7 @@
 title: Corriger les capteurs défectueux dans Microsoft Defender pour point de terminaison
 description: Corrigez les capteurs d’appareil qui signalent une configuration incorrecte ou inactive afin que le service reçoive les données de l’appareil.
 keywords: mal configuré, inactif, capteur de correction, intégrité du capteur, aucune donnée de capteur, données de capteur, communications altérées, communication
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/23/2020
-ms.technology: mde
-ms.openlocfilehash: cc88fa877c0c284555f1702a5fa3190a06e7e47e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: e53e453bb60a203dfaf32669ad7995ec6e96a839
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490861"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516409"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corriger les capteurs défectueux dans Microsoft Defender pour point de terminaison
 

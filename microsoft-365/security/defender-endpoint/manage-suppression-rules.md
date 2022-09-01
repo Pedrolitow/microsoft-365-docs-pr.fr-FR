@@ -1,8 +1,8 @@
 ---
-title: Gérer les règles de suppression de microsoft Defender pour les points de terminaison
-description: Vous devrez peut-être empêcher l’apparition d’alertes dans le portail à l’aide de règles de suppression. Découvrez comment gérer vos règles de suppression dans Microsoft Defender pour point de terminaison.
+title: Gérer les règles de suppression Microsoft Defender pour point de terminaison
+description: Vous devrez peut-être empêcher l’affichage d’alertes dans le portail à l’aide de règles de suppression. Découvrez comment gérer vos règles de suppression dans Microsoft Defender pour point de terminaison.
 keywords: gérer la suppression, les règles, le nom de la règle, l’étendue, l’action, les alertes, activer, désactiver
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: ee488256363cbb008f670bb8c88d3fb88d7c4090
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: 6851a9b406075125d8b72535ae02ea20ecafd9b1
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166793"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521134"
 ---
 # <a name="manage-suppression-rules"></a>Gérer des règles de suppression
 
@@ -27,31 +27,31 @@ ms.locfileid: "61166793"
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans le portail. Vous pouvez créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant anodins, telles que des outils ou des processus connus dans votre organisation. Pour plus d’informations sur la suppression des alertes, voir [Supprimer des alertes.](manage-alerts.md)
+Il peut y avoir des scénarios dans lesquels vous devez supprimer l’affichage des alertes dans le portail. Vous pouvez créer des règles de suppression pour des alertes spécifiques qui sont connues pour être inoffensifs, telles que des outils ou des processus connus dans votre organisation. Pour plus d’informations sur la suppression des alertes, consultez [Supprimer les alertes](manage-alerts.md).
 
 Vous pouvez afficher la liste de toutes les règles de suppression et les gérer au même endroit. Vous pouvez également activer ou désactiver une règle de suppression d’alerte.
 
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** suppression des alertes des règles des points \>  \>  \> **de terminaison.** La liste des règles de suppression créées par les utilisateurs de votre organisation s’affiche.
+1. Dans le volet de navigation, sélectionnez **Suppression des alertes** de **règles** \> de **paramètres** \> de points de terminaison.\> La liste des règles de suppression créées par les utilisateurs de votre organisation s’affiche.
 
 2. Sélectionnez une règle en cliquant sur la case à cocher en regard du nom de la règle.
 
-3. Cliquez **sur Activer,** **Modifier la règle** ou Supprimer une **règle.** Lorsque vous modifiez une règle, vous pouvez choisir de publier des alertes qu’elle a déjà supprimées, que ces alertes correspondent ou non aux nouveaux critères. 
+3. Cliquez **sur Activer la règle**, **Modifier la règle** ou Supprimer la  **règle**. Lorsque vous apportez des modifications à une règle, vous pouvez choisir de libérer les alertes qu’elle a déjà supprimées, que ces alertes correspondent ou non aux nouveaux critères. 
 
 
 ## <a name="view-details-of-a-suppression-rule"></a>Afficher les détails d’une règle de suppression
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** suppression des alertes des règles des points \>  \>  \> **de terminaison.** La liste des règles de suppression créées par les utilisateurs de votre organisation s’affiche.
+1. Dans le volet de navigation, sélectionnez **Suppression des alertes** de **règles** \> de **paramètres** \> de points de terminaison.\> La liste des règles de suppression créées par les utilisateurs de votre organisation s’affiche.
 
-2. Cliquez sur un nom de règle. Les détails de la règle s’affichent. Vous verrez les détails de la règle tels que l’état, l’étendue, l’action, le nombre d’alertes correspondantes, créés par et la date de création de la règle. Vous pouvez également afficher les alertes associées et les conditions de règle.
+2. Cliquez sur un nom de règle. Les détails de la règle s’affichent. Vous verrez les détails de la règle, tels que l’état, l’étendue, l’action, le nombre d’alertes correspondantes, créées par et la date de création de la règle. Vous pouvez également afficher les alertes associées et les conditions de règle.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gérer des alertes](manage-alerts.md)

@@ -3,7 +3,7 @@ title: Gérer des indicateurs
 ms.reviewer: ''
 description: Gérer les indicateurs pour un hachage de fichier, une adresse IP, des URL ou des domaines qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4619b24d06af4cdb80916fb9eacbc52b2fa55c21
-ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
+ms.subservice: mde
+ms.openlocfilehash: 6a78b50ce7361363ae03d13d63783ed8469a56de
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "66983958"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520992"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
@@ -65,17 +65,17 @@ Le tableau suivant présente les paramètres pris en charge.
 Paramètre|Type|Description
 :---|:---|:---
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
-indicatorValue|String|Identité de l’entité [Indicateur](ti-indicator.md) . **Obligatoire**
+indicatorValue|Chaîne|Identité de l’entité [Indicateur](ti-indicator.md) . **Obligatoire**
 action|Énum|Action qui sera effectuée si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
-title|String|Titre de l’alerte d’indicateur. **Obligatoire**
-description|String| Description de l’indicateur. **Obligatoire**
+title|Chaîne|Titre de l’alerte d’indicateur. **Obligatoire**
+description|Chaîne| Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAAA-MM-DDTHH:MM:SS.0Z. L’indicateur est supprimé si le délai d’expiration est écoulé et que tout ce qui se passe au moment de l’expiration se produit à la valeur de secondes (SS). **Optional**
 Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|String|Actions recommandées pour les alertes d’indicateur TI. **Optional**
-rbacGroups|String|Liste séparée par des virgules des groupes RBAC auxquels l’indicateur serait appliqué. **Optional**
+recommendedActions|Chaîne|Actions recommandées pour les alertes d’indicateur TI. **Optional**
+rbacGroups|Chaîne|Liste séparée par des virgules des groupes RBAC auxquels l’indicateur serait appliqué. **Optional**
 category|String|Catégorie de l’alerte. Exemples : l’exécution et l’accès aux informations d’identification. **Optional**
-mitretechniques|String|Code/id des techniques MITRE (séparés par des virgules). Pour plus d’informations, consultez [Tactiques d’entreprise](https://attack.mitre.org/tactics/enterprise/). **Optionnel** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
-GenerateAlert|String|Indique si l’alerte doit être générée. Les valeurs possibles sont : True ou False. **Optional**
+mitretechniques|Chaîne|Code/id des techniques MITRE (séparés par des virgules). Pour plus d’informations, consultez [Tactiques d’entreprise](https://attack.mitre.org/tactics/enterprise/). **Optionnel** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
+GenerateAlert|Chaîne|Indique si l’alerte doit être générée. Les valeurs possibles sont : True ou False. **Optional**
 
 > [!NOTE]
 > La notation de routage Inter-Domain sans classe (CIDR) pour les adresses IP n’est pas prise en charge.

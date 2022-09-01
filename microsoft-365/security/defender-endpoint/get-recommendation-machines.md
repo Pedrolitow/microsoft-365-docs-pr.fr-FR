@@ -2,7 +2,7 @@
 title: Répertorier les appareils par recommandation
 description: Récupère la liste des appareils associés à la recommandation de sécurité.
 keywords: api, api graphe, api prises en charge, get, recommandation de sécurité pour les appareils vulnérables, Gestion des menaces et des vulnérabilités, api Gestion des menaces et des vulnérabilités
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 82192989a1e2ad2968f38b15f1cc9ff0156466e4
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: b57dd9b91b2002a47d7195be62a3676498c10820
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345072"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520432"
 ---
 # <a name="list-devices-by-recommendation"></a>Répertorier les appareils par recommandation
 

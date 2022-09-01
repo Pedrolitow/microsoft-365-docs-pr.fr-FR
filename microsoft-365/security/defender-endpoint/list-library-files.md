@@ -1,10 +1,10 @@
 ---
 title: Répertorier les fichiers d’une bibliothèque
-description: Découvrez comment lister des fichiers de bibliothèque de réponses en direct.
-keywords: api, api de graphique, api pris en charge, obtenir, appareils
+description: Découvrez comment répertorier les fichiers de la bibliothèque de réponses en direct.
+keywords: api, api graphe, api prises en charge, get, appareils
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,20 +18,20 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 9c9bf11856cf518a1cd387b88a3b70dc4a34cc91
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: bc4e8d1df158ff4707aad966505dbf02be523548
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526907"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521288"
 ---
 #  <a name="list-library-files"></a>Répertorier les fichiers d’une bibliothèque 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -43,15 +43,15 @@ ms.locfileid: "63526907"
 
 ## <a name="api-description"></a>Description de l’API
 
-Liste des fichiers de bibliothèque de réponses en direct.
+Répertorier les fichiers de la bibliothèque de réponses actives.
 
 ## <a name="limitations"></a>Limites
 
-1.  Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1.  Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place](apis-intro.md).
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Prise en main](apis-intro.md).
 
 |Type d’autorisation                       |      Autorisation          |  Nom d’affichage de l’autorisation | 
 |-----------------|--------|---------------------------|  
@@ -74,13 +74,13 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 Vide
 
 ## <a name="response"></a>Réponse 
-Si elle réussit, cette méthode renvoie un code de réponse 200 - OK avec une collection d’entités de fichier de bibliothèque de réponses en direct.
+Si elle réussit, cette méthode renvoie le code de réponse 200 - OK avec une collection d’entités de fichier de bibliothèque de réponses actives.
 
 ## <a name="example"></a>Exemple
 
 **Demande**
 
-Voici un exemple de demande qui obtient tous les fichiers de bibliothèque de réponses en direct
+Voici un exemple de requête qui obtient tous les fichiers de bibliothèque de réponses en direct
 
 ```HTTP
 GET https://api.securitycenter.microsoft.com/api/libraryfiles

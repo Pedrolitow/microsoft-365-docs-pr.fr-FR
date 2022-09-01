@@ -2,7 +2,7 @@
 title: Obtenir une recommandation par ID
 description: Récupère une recommandation de sécurité par son ID.
 keywords: api, api graphe, api prises en charge, get, recommandation de sécurité, recommandation de sécurité par ID, Gestion des menaces et des vulnérabilités, api Gestion des menaces et des vulnérabilités
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6983ed109357bef89209c689a12a8e90ea11c797
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 6a1f128d3075da2d5de55208a5f9afd8b61bff97
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344770"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520454"
 ---
 # <a name="get-recommendation-by-id"></a>Obtenir des recommandations par ID
 

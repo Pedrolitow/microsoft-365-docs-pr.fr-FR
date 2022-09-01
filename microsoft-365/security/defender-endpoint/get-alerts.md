@@ -2,7 +2,7 @@
 title: API Répertorier les alertes
 description: Découvrez comment utiliser l’API List alerts pour récupérer une collection d’alertes dans Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, get, alertes, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 231894a707b476f3c2ab52ef8198dad5fe1713c5
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: da30d557ed595c5d7ae8995a30c9da95a20e54e8
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323110"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516387"
 ---
 # <a name="list-alerts-api"></a>API Répertorier les alertes
 

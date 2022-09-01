@@ -3,7 +3,7 @@ title: Déployer Microsoft Defender pour point de terminaison sur Linux avec Ans
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour point de terminaison sur Linux à l’aide d’Ansible.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: e35510960818472ccf82ffab0c3cb3016f49907a
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.subservice: mde
+ms.openlocfilehash: a35c50a941c7398c2c0722233627fe76f36f6afe
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175155"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522078"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 
@@ -50,7 +50,7 @@ En outre, pour le déploiement Ansible, vous devez connaître les tâches d’ad
 - Ansible doit être installé sur au moins un ordinateur (Ansible appelle cela le nœud de contrôle).
 - SSH doit être configuré pour un compte d’administrateur entre le nœud de contrôle et tous les nœuds managés (appareils sur lesquels Defender pour point de terminaison sera installé), et il est recommandé d’être configuré avec l’authentification par clé publique.
 - Les logiciels suivants doivent être installés sur tous les nœuds managés :
-  - friser
+  - Curl
   - python-apt
 
 - Tous les nœuds managés doivent être répertoriés au format suivant dans le fichier ou le `/etc/ansible/hosts` fichier approprié :
@@ -257,7 +257,7 @@ Créez un sous-masque ou des fichiers de rôle qui contribuent à un playbook ou
     ansible -m shell -a 'mdatp health' all
     ```
 
-- Désinstallation :
+- Désinstallation:
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts

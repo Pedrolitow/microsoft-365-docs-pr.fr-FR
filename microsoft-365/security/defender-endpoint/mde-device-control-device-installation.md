@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour point de terminaison installation de l’appareil Device Control
 description: Cette rubrique présente Microsoft Defender pour point de terminaison’installation de l’appareil Device Control
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 5b336a0650bc30eb1ebf23f8356b6c3c1ebb4e79
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: eb8f22d3581f185cc3eefc18929bdd11ae19384e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324164"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67514276"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender pour point de terminaison installation de l’appareil Device Control
 
@@ -272,7 +272,7 @@ DeviceEvents
 
 :::image type="content" source="../../media/block-removable-storage2.png" alt-text="Stockage de blocs" lightbox="../../media/block-removable-storage2.png":::
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="how-do-i-confirm-that-a-device-gets-a-deployed-policy"></a>Comment faire confirmer qu’un appareil obtient une stratégie déployée ?
 

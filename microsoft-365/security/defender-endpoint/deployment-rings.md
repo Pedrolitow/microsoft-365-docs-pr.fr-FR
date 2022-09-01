@@ -2,7 +2,7 @@
 title: Déployer Microsoft Defender pour point de terminaison en anneaux
 description: Découvrez comment déployer des Microsoft Defender pour point de terminaison dans des anneaux
 keywords: déployer, anneaux, évaluer, pilote, insider rapide, insider lent, configuration, intégration, phase, déploiement, déploiement, adoption, configuration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e308b1c1d8c26a4ec3d6b3044501ffe1ce92e1c7
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.subservice: mde
+ms.openlocfilehash: 6049e8d56c3d928785f46d19b7a430b8e0542613
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862871"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520342"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Déployer Microsoft Defender pour point de terminaison en anneaux
 
@@ -29,7 +30,7 @@ ms.locfileid: "64862871"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -79,7 +80,7 @@ Le tableau suivant présente les points de terminaison pris en charge et l’out
 
 |Point de terminaison|Outil de déploiement|
 |---|---|
-|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br> REMARQUE : Si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous.<br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
+|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br> REMARQUE : Si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous.<br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
 |**MacOS**|[Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md)|
 |**Serveur Linux**|[Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[Microsoft Endpoint Manager](ios-install.md)|
@@ -91,17 +92,17 @@ Le tableau suivant présente les points de terminaison pris en charge et l’out
 
 Utilisez les éléments suivants pour sélectionner l’architecture Microsoft Defender pour point de terminaison appropriée qui convient le mieux à votre organisation.
 
-|Item|Description|
+|Élément|Description|
 |---|---|
 |[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Stratégie de déploiement Microsoft Defender pour point de terminaison." lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)|Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li></ul>|
 
 ## <a name="existing-deployments"></a>Déploiements existants
 
-### <a name="windows-endpoints"></a>points de terminaison Windows
+### <a name="windows-endpoints"></a>Points de terminaison Windows
 
-Pour Windows et/ou Windows Serveurs, vous sélectionnez plusieurs machines à tester à l’avance (avant le correctif mardi) à l’aide du **programme de validation des mises à jour de sécurité (SUVP).**
+Pour les serveurs Windows et/ou Windows, vous sélectionnez plusieurs machines à tester à l’avance (avant le correctif mardi) à l’aide du **programme de validation des mises à jour de sécurité (SUVP).**
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Qu’est-ce que le programme de validation des mises à jour de sécurité ?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Programme de validation des mises à jour logicielles et établissement Centre de protection Microsoft contre les programmes malveillants - Chronologie interactive TwC, partie 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)

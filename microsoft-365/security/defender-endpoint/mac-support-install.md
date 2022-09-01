@@ -1,8 +1,8 @@
 ---
-title: Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Mac
-description: Résolution des problèmes d’installation dans Microsoft Defender pour point de terminaison sur Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install
-ms.prod: m365-security
+title: Résoudre les problèmes d’installation pour Microsoft Defender pour point de terminaison sur Mac
+description: Résoudre les problèmes d’installation dans Microsoft Defender pour point de terminaison sur Mac.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, install
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 5f56e28d472cb3fdf8dd089effcd4beac6e42374
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 9de2083062e720016facebef118a9c279cd15697
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766655"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519531"
 ---
-# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur macOS
+# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’installation de Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -38,9 +38,9 @@ ms.locfileid: "62766655"
 
 ## <a name="installation-failed"></a>Échec de l’installation
 
-Pour l’installation manuelle, la page Résumé de l’Assistant d’installation indique : « Une erreur s’est produite lors de l’installation. Le programme d’installation a rencontré une erreur qui a provoqué l’échec de l’installation. Contactez l’éditeur de logiciels pour obtenir de l’aide. » Pour les déploiements mdm, il s’affiche également sous la forme d’un échec d’installation générique.
+Pour une installation manuelle, la page Résumé de l’Assistant Installation indique : « Une erreur s’est produite pendant l’installation. Le programme d’installation a rencontré une erreur qui a provoqué l’échec de l’installation. Contactez l’éditeur de logiciels pour obtenir de l’aide. » Pour les déploiements GPM, il s’affiche également comme un échec d’installation générique.
 
-Bien que nous n’affichions pas une erreur exacte à l’utilisateur final, nous tenez un fichier journal avec la progression de l’installation dans `/Library/Logs/Microsoft/mdatp/install.log`. Chaque session d’installation s’y connecte. Vous pouvez utiliser la sortie `sed` de la dernière session d’installation uniquement :
+Bien que nous n’affichions pas d’erreur exacte pour l’utilisateur final, nous conservons un fichier journal avec la progression de l’installation.`/Library/Logs/Microsoft/mdatp/install.log` Chaque session d’installation s’ajoute à ce fichier journal. Vous pouvez utiliser `sed` cette option pour générer la dernière session d’installation uniquement :
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -53,13 +53,13 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-Dans cet exemple, la raison réelle est précédée du préfixe `[ERROR]`.
-L’installation a échoué car une mise à niveau vers une version antérieure entre ces versions n’est pas prise en charge.
+Dans cet exemple, la raison réelle est précédée de `[ERROR]`.
+L’installation a échoué, car une rétrograde entre ces versions n’est pas prise en charge.
 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Journal d’installation MDATP manquant ou non mis à jour
 
 Dans de rares cas, l’installation ne laisse aucune trace dans le fichier /Library/Logs/Microsoft/mdatp/install.log de MDATP.
-Tout d’abord, vérifiez qu’une installation s’est produite. Ensuite, analysez les erreurs possibles en interrogeant les journaux macOS. Il est utile de le faire dans les déploiements mdm, lorsqu’il n’existe pas d’interface utilisateur client. Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et filtrer selon le nom du processus de journalisation, car il y aura une quantité considérable d’informations.
+Tout d’abord, vérifiez qu’une installation s’est produite. Analysez ensuite les erreurs possibles en interrogeant les journaux macOS. Il est utile de le faire dans les déploiements GPM, lorsqu’il n’y a pas d’interface utilisateur cliente. Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et filtrer par le nom du processus de journalisation, car il y aura une grande quantité d’informations.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

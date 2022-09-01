@@ -1,8 +1,8 @@
 ---
-title: Déploiement de Microsoft Defender pour endpoint sur macOS avec Jamf Pro
-description: Déploiement de Microsoft Defender pour endpoint sur macOS avec Jamf Pro
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, désinstallation, intune, jamfpro, macos, magasin, mojave, high sierra
-ms.prod: m365-security
+title: Déploiement de Microsoft Defender pour point de terminaison sur macOS avec Jamf Pro
+description: Déploiement de Microsoft Defender pour point de terminaison sur macOS avec Jamf Pro
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 0ce77d9d63aecdd3150b9dc0f536abcdab2755e8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: df657784239477de63bd34585a2c6c1d2d8fabe6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767357"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519641"
 ---
-# <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Déploiement de Microsoft Defender pour endpoint sur macOS avec Jamf Pro
+# <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Déploiement de Microsoft Defender pour point de terminaison sur macOS avec Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,21 +30,21 @@ ms.locfileid: "62767357"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Découvrez comment déployer Microsoft Defender pour Endpoint sur macOS avec Jamf Pro.
+Découvrez comment déployer Microsoft Defender pour point de terminaison sur macOS avec Jamf Pro.
 
 > [!NOTE]
-> Si vous utilisez macOS Fonctionnalité (10.15.4) ou des versions plus récentes de macOS, voir Nouveaux profils de [configuration pour macOS Et les versions](/microsoft-365/security/defender-endpoint/mac-sysext-policies) plus récentes de macOS.
+> Si vous utilisez macOS Catalina (10.15.4) ou des versions plus récentes de macOS, consultez [Les nouveaux profils de configuration pour macOS Catalina et les versions plus récentes de macOS](/microsoft-365/security/defender-endpoint/mac-sysext-policies).
 
 Il s’agit d’un processus en plusieurs étapes. Vous devez effectuer toutes les étapes suivantes :
 
-- [Connexion au portail Jamf](mac-install-jamfpro-login.md)
-- [Configurer Microsoft Defender pour le point de terminaison sur les groupes d’appareils macOS dans Jamf Pro](mac-jamfpro-device-groups.md)
-- [Configuration de Microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro](mac-jamfpro-policies.md)
-- [Inscrire Microsoft Defender for Endpoint sur les appareils macOS dans Jamf Pro](mac-jamfpro-enroll-devices.md)
+- [Se connecter au portail Jamf](mac-install-jamfpro-login.md)
+- [Configurer le Microsoft Defender pour point de terminaison sur des groupes d’appareils macOS dans Jamf Pro](mac-jamfpro-device-groups.md)
+- [Configurer le Microsoft Defender pour point de terminaison sur les stratégies macOS dans Jamf Pro](mac-jamfpro-policies.md)
+- [Inscrire le Microsoft Defender pour point de terminaison sur les appareils macOS dans Jamf Pro](mac-jamfpro-enroll-devices.md)
 
 
 

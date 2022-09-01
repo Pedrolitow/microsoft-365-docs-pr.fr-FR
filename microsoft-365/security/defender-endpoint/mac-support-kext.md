@@ -1,8 +1,8 @@
 ---
-title: Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
-description: Résoudre les problèmes liés à l’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS.
-keywords: microsoft, defender, Microsoft Defender pour endpoint, mac, noyau, extension
-ms.prod: m365-security
+title: Résoudre les problèmes d’extension de noyau dans Microsoft Defender pour point de terminaison sur macOS
+description: Résoudre les problèmes liés aux extensions de noyau dans Microsoft Defender pour point de terminaison sur macOS.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, noyau, extension
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 72d1aab8be071b5f4ec66988b35655571625b409
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 333fa4bce74aec78f18872751f153191ac163142
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477278"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521968"
 ---
-# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
+# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension de noyau dans Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -36,15 +36,15 @@ ms.locfileid: "64477278"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Cet article fournit des informations sur la résolution des problèmes avec l’extension de noyau installée dans le cadre de Microsoft Defender for Endpoint sur macOS.
+Cet article fournit des informations sur la résolution des problèmes liés à l’extension de noyau installée dans le cadre de Microsoft Defender pour point de terminaison sur macOS.
 
-À partir de macOS High Sierra (10.13), macOS exige que toutes les extensions de noyau soient approuvées explicitement avant d’être autorisées à s’exécuter sur l’appareil.
+À compter de macOS High Sierra (10.13), macOS exige que toutes les extensions du noyau soient explicitement approuvées avant d’être autorisées à s’exécuter sur l’appareil.
 
-Si vous n’avez pas approuvé l’extension du noyau pendant le déploiement/l’installation de Microsoft Defender pour Endpoint sur macOS, l’application affiche une bannière vous invite à l’activer :
+Si vous n’avez pas approuvé l’extension de noyau pendant le déploiement/l’installation de Microsoft Defender pour point de terminaison sur macOS, l’application affiche une bannière vous invitant à l’activer :
 
 :::image type="content" source="images/mdatp-32-main-app-fix.png" alt-text="RTP désactivé" lightbox="images/mdatp-32-main-app-fix.png":::
 
-Vous pouvez également exécuter ```mdatp health```. Il indique si la protection en temps réel est activée mais non disponible. Cela indique que l’extension du noyau n’est pas approuvée pour s’exécuter sur votre appareil.
+Vous pouvez également exécuter ```mdatp health```. Il indique si la protection en temps réel est activée, mais pas disponible. Cela indique que l’extension de noyau n’est pas approuvée pour s’exécuter sur votre appareil.
 
 ```bash
 mdatp health
@@ -56,9 +56,9 @@ real_time_protection_available              : true
 ...
 ```
 
-Les sections suivantes fournissent des instructions sur la façon de résoudre ce problème, en fonction de la méthode que vous avez utilisée pour déployer Microsoft Defender pour Endpoint sur macOS.
+Les sections suivantes fournissent des conseils sur la façon de résoudre ce problème, en fonction de la méthode que vous avez utilisée pour déployer Microsoft Defender pour point de terminaison sur macOS.
 
-## <a name="managed-deployment"></a>Déploiement géré
+## <a name="managed-deployment"></a>Déploiement managé
 
 Consultez les instructions correspondant à l’outil de gestion que vous avez utilisé pour déployer le produit :
 
@@ -67,15 +67,15 @@ Consultez les instructions correspondant à l’outil de gestion que vous avez u
 
 ## <a name="manual-deployment"></a>Déploiement manuel
 
-Si moins de 30 minutes se sont écoulées depuis l’installation du produit, accédez à La  sécurité des préférences système **& Confidentialité**, où vous devez autoriser les **logiciels** \> système des développeurs « Microsoft Corporation ».
+Si moins de 30 minutes se sont écoulées depuis l’installation du produit, accédez à **System Preferences** \> **Security & Privacy**, où vous devez **autoriser** les logiciels système des développeurs « Microsoft Corporation ».
 
-Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension de noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
+Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus sont passées et que l’extension du noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
 
 :::image type="content" source="images/mdatp-33-securityprivacysettings-noprompt.png" alt-text="Fenêtre de sécurité et de confidentialité après l’expiration de l’invite" lightbox="images/mdatp-33-securityprivacysettings-noprompt.png":::
 
 Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouveau le flux d’approbation.
 
-1. Dans Terminal, essayez d’installer le pilote. L’opération suivante échoue, car l’extension du noyau n’a pas été approuvée pour s’exécuter sur l’appareil. Toutefois, il déclenche à nouveau le flux d’approbation.
+1. Dans Terminal, essayez d’installer le pilote. L’opération suivante échoue, car l’extension du noyau n’a pas été approuvée pour s’exécuter sur l’appareil. Toutefois, il déclenchera à nouveau le flux d’approbation.
 
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext
@@ -87,11 +87,11 @@ Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouv
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. **Ouvrez La sécurité des préférences** \> **système & confidentialité** dans le menu. (Fermez-le d’abord, s’il est ouvert.)
+2. Ouvrez **La sécurité des préférences** \> système **& confidentialité** dans le menu. (Fermez-le en premier, s’il est ouvert.)
 
-3. **Autoriser les** logiciels système des développeurs « Microsoft Corporation »
+3. **Autoriser** les logiciels système des développeurs « Microsoft Corporation »
 
-4. Dans Terminal, installez à nouveau le pilote. Cette fois, l’opération réussit :
+4. Dans Terminal, réinstallez le pilote. Cette fois, l’opération aboutit :
 
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext

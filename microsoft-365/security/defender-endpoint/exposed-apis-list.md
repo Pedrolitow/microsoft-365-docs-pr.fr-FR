@@ -3,7 +3,7 @@ title: API prises en charge Microsoft Defender pour point de terminaison
 ms.reviewer: ''
 description: Découvrez les entités Microsoft Defender pour point de terminaison prises en charge spécifiques auxquelles vous pouvez créer des appels d’API.
 keywords: api, api prises en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, requêtes avancées, repérage avancé
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7f732b38c108d50b2c8950cdc5e30ba1153944b3
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c7e05b51b7c56edb16a0984912970205ea77a1e8
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324383"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520036"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison
 

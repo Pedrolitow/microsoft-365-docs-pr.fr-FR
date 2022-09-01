@@ -2,7 +2,7 @@
 title: Gérer les alertes Microsoft Defender pour point de terminaison
 description: Modifiez l’état des alertes, créez des règles de suppression pour masquer les alertes, envoyez des commentaires et passez en revue l’historique des modifications pour les alertes individuelles avec le menu Gérer les alertes.
 keywords: gérer les alertes, gérer, alertes, état, nouveau, en cours, résolu, résoudre les alertes, supprimer, supprimer, supprimer, règles, contexte, historique, commentaires, modifications
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c14447301cfa6abf83c231361c020d261eeb87a9
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.subservice: mde
+ms.openlocfilehash: 72d35555d3853aad102d2e4fee1a665c9abb04cd
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623446"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521222"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes Microsoft Defender pour point de terminaison
 
@@ -105,7 +105,7 @@ Créez des règles personnalisées pour contrôler quand les alertes sont suppri
 
 #### <a name="view-the-list-of-suppression-rules"></a>Afficher la liste des règles de suppression
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Suppression d’alerte**.
+1. Dans le volet de navigation, sélectionnez **Suppression des alertes de paramètres**\>.
 
 2. La liste des règles de suppression affiche toutes les règles que les utilisateurs de votre organisation ont créées.
 

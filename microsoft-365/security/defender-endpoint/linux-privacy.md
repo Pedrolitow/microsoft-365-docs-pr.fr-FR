@@ -1,8 +1,8 @@
 ---
-title: Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
-description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour Endpoint sur Linux.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, confidentialité, diagnostic
-ms.prod: m365-security
+title: Confidentialité des Microsoft Defender pour point de terminaison sur Linux
+description: Contrôles de confidentialité, configuration des paramètres de stratégie qui ont un impact sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour point de terminaison sur Linux.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, confidentialité, diagnostic
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,72 +13,72 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: d2da0f15b392da9a461c8a2e50e7110610fcc5a2
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: 81eca3a28577786d1779f6061b5819f418c510db
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168893"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519795"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité des Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft s’engage à vous fournir les informations et les contrôles dont vous avez besoin pour faire des choix sur la façon dont vos données sont collectées et utilisées lorsque vous utilisez Defender pour Endpoint sur Linux.
+Microsoft s’engage à vous fournir les informations et les contrôles dont vous avez besoin pour faire des choix sur la façon dont vos données sont collectées et utilisées lorsque vous utilisez Defender pour point de terminaison sur Linux.
 
 Cet article décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d’informations sur les événements de données collectés.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour Point de terminaison sur Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour point de terminaison sur Linux
 
-Cette section décrit les contrôles de confidentialité pour les différents types de données collectées par Defender pour Endpoint sur Linux.
+Cette section décrit les contrôles de confidentialité pour les différents types de données collectés par Defender pour point de terminaison sur Linux.
 
 ### <a name="diagnostic-data"></a>Données de diagnostic
 
-Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits.
+Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender pour point de terminaison, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour apporter des améliorations au produit.
 
-Certaines données de diagnostic sont obligatoires, d’autres sont facultatives. Nous vous donnez la possibilité de choisir de nous envoyer les données de diagnostic requises ou facultatives à l’aide de contrôles de confidentialité, tels que les paramètres de stratégie pour les organisations.
+Certaines données de diagnostic sont obligatoires, d’autres sont facultatives. Nous vous donnons la possibilité de choisir de nous envoyer les données de diagnostic requises ou facultatives à l’aide de contrôles de confidentialité, tels que les paramètres de stratégie pour les organisations.
 
-Vous pouvez choisir parmi deux niveaux de données de diagnostic pour le logiciel client Defender pour Endpoint :
+Vous pouvez choisir parmi deux niveaux de données de diagnostic pour le logiciel client Defender pour point de terminaison :
 
-- **Obligatoire**: données minimales nécessaires pour assurer la sécurité, la mise à jour et les résultats de Defender for Endpoint sur l’appareil sur laquelle il est installé.
-- **Facultatif**: autres données qui aident Microsoft à améliorer les produits et fournissent des informations améliorées pour vous aider à détecter, diagnostiquer et résoudre les problèmes.
+- **Obligatoire** : données minimales nécessaires pour garantir la sécurité, la mise à jour et les performances de Defender pour point de terminaison sur l’appareil sur lequel il est installé.
+- **Facultatif** : Autres données qui aident Microsoft à apporter des améliorations aux produits et fournit des informations améliorées pour vous aider à détecter, diagnostiquer et corriger les problèmes.
 
 Par défaut, seules les données de diagnostic requises sont envoyées à Microsoft.
 
-### <a name="cloud-delivered-protection-data"></a>Données de protection cloud
+### <a name="cloud-delivered-protection-data"></a>Données de protection fournies par le cloud
 
-La protection fournie par le cloud est utilisée pour fournir une protection accrue et plus rapide avec l’accès aux dernières données de protection dans le cloud.
+La protection fournie par le cloud est utilisée pour fournir une protection accrue et plus rapide avec l’accès aux données de protection les plus récentes dans le cloud.
 
-L’activation du service de protection cloud est facultative, mais elle est vivement recommandée, car elle offre une protection importante contre les programmes malveillants sur vos points de terminaison et sur votre réseau.
+L’activation du service de protection fournie par le cloud est facultative, mais elle est fortement recommandée, car elle offre une protection importante contre les programmes malveillants sur vos points de terminaison et sur votre réseau.
 
 ### <a name="sample-data"></a>Exemple de données
 
-Des exemples de données sont utilisés pour améliorer les fonctionnalités de protection du produit, en envoyant des exemples suspects Microsoft afin qu’ils soient analysés. L’activation de l’envoi automatique d’échantillons est facultative.
+Les exemples de données sont utilisés pour améliorer les fonctionnalités de protection du produit, en envoyant des exemples suspects Microsoft afin qu’ils puissent être analysés. L’activation de la soumission automatique d’exemples est facultative.
 
-Il existe trois niveaux pour contrôler l’envoi d’échantillons :
+Il existe trois niveaux pour contrôler la soumission d’exemples :
 
-- **Aucun**: aucun échantillon suspect n’est envoyé à Microsoft.
-- **Coffre**: seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut.
-- **Tous**: tous les échantillons suspects sont envoyés à Microsoft.
+- **Aucun** : aucun exemple suspect n’est envoyé à Microsoft.
+- **Sécurisé** : seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut.
+- **Tous** : tous les exemples suspects sont envoyés à Microsoft.
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>Gérer les Contrôles de protection des données avec des paramètres de stratégie
 
-Si vous êtes un administrateur informatique, vous pouvez configurer ces contrôles au niveau de l’entreprise.
+Si vous êtes administrateur informatique, vous souhaiterez peut-être configurer ces contrôles au niveau de l’entreprise.
 
-Les contrôles de confidentialité pour les différents types de données décrits dans la section précédente sont décrits en détail dans Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
+Les contrôles de confidentialité pour les différents types de données décrits dans la section précédente sont décrits en détail dans [Définir les préférences pour Defender pour point de terminaison sur Linux](linux-preferences.md).
 
-Comme avec les nouveaux paramètres de stratégie, vous devez les tester avec soin dans un environnement limité et contrôlé pour vous assurer que les paramètres que vous configurez ont l’effet souhaité avant d’implémenter les paramètres de stratégie plus largement dans votre organisation.
+Comme pour tous les nouveaux paramètres de stratégie, vous devez les tester soigneusement dans un environnement limité et contrôlé pour vous assurer que les paramètres que vous configurez ont l’effet souhaité avant d’implémenter les paramètres de stratégie plus largement dans votre organisation.
 
 ## <a name="diagnostic-data-events"></a>Événements de données de diagnostic
 
-Cette section décrit ce qui est considéré comme des données de diagnostic requises et ce qui est considéré comme des données de diagnostic facultatives, ainsi qu’une description des événements et des champs collectés.
+Cette section décrit les données de diagnostic requises et les données de diagnostic facultatives, ainsi qu’une description des événements et des champs collectés.
 
 ### <a name="data-fields-that-are-common-for-all-events"></a>Champs de données communs à tous les événements
 
@@ -86,179 +86,179 @@ Voici quelques informations sur les événements qui sont communs à tous les é
 
 Les champs suivants sont considérés comme courants pour tous les événements :
 
-|Champ|Description|
+|Field|Description|
 |---|---|
-|platform|Classification large de la plateforme sur laquelle l’application est en cours d’exécution. Permet à Microsoft d’identifier sur quelles plateformes un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
-|machine_guid|Identificateur unique associé à l’appareil. Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés.|
-|sense_guid|Identificateur unique associé à l’appareil. Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés.|
-|org_id|Identificateur unique associé à l’entreprise à qui appartient l’appareil. Permet à Microsoft d’identifier si les problèmes ont un impact sur un ensemble d’entreprises sélectionné et le nombre d’entreprises qui en sont touchées.|
-|hostname|Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés.|
-|product_guid|Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes types de produit.|
-|app_version|Version du defender pour point de terminaison sur l’application Linux. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
-|sig_version|Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
-|supported_compressions|Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application.|
-|release_ring|Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
+|platform|Classification générale de la plateforme sur laquelle l’application s’exécute. Permet à Microsoft d’identifier sur quelles plateformes un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
+|machine_guid|Identificateur unique associé à l’appareil. Permet à Microsoft d’identifier si les problèmes affectent un ensemble sélectionné d’installations et le nombre d’utilisateurs concernés.|
+|sense_guid|Identificateur unique associé à l’appareil. Permet à Microsoft d’identifier si les problèmes affectent un ensemble sélectionné d’installations et le nombre d’utilisateurs concernés.|
+|org_id|Identificateur unique associé à l’entreprise à laquelle appartient l’appareil. Permet à Microsoft d’identifier si les problèmes affectent un ensemble sélectionné d’entreprises et le nombre d’entreprises concernées.|
+|Hostname|Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si les problèmes affectent un ensemble sélectionné d’installations et le nombre d’utilisateurs concernés.|
+|product_guid|Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes versions du produit.|
+|app_version|Version de l’application Defender pour point de terminaison sur Linux. Permet à Microsoft d’identifier les versions du produit présentant un problème afin qu’il puisse être correctement hiérarchisé.|
+|sig_version|Version de la base de données security intelligence. Permet à Microsoft d’identifier les versions du renseignement de sécurité présentant un problème afin qu’il puisse être correctement hiérarchisé.|
+|supported_compressions|Liste des algorithmes de compression pris en charge par l’application, par exemple `['gzip']`. Permet à Microsoft de comprendre quels types de compressions peuvent être utilisés lorsqu’il communique avec l’application.|
+|release_ring|Anneau auquel l’appareil est associé (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier sur quel anneau de mise en production un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et les résultats attendus de Defender for Endpoint sur l’appareil sur qui il est installé.
+**Les données de diagnostic requises** sont les données minimales nécessaires pour garantir la sécurité, la mise à jour et les performances de Defender pour point de terminaison sur l’appareil sur lequel il est installé.
 
-Les données de diagnostic requises permettent d’identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d’appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Defender pour point de terminaison se crashe plus fréquemment sur une version de système d’exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l’impact sur les utilisateurs ou les organisations.
+Les données de diagnostic requises permettent d’identifier les problèmes liés aux Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d’appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité Defender pour point de terminaison se bloque plus fréquemment sur une version particulière du système d’exploitation, avec des fonctionnalités nouvellement introduites, ou quand certaines fonctionnalités de Defender pour point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l’impact sur les utilisateurs ou les organisations.
 
 #### <a name="software-setup-and-inventory-data-events"></a>Événements de données liés à l’inventaire et à la configuration des logiciels
 
-**Installation/désinstallation de Microsoft Defender** for Endpoint :
+**Microsoft Defender pour point de terminaison installation/désinstallation** :
 
 Les champs collectés sont les suivants :
 
-|Champ|Description|
+|Field|Description|
 |---|---|
 |correlation_id|Identificateur unique associé à l’installation.|
 |version|Version du package.|
-|Sévérité |Gravité du message (par exemple, Informations).|
+|Sévérité |Gravité du message (par exemple Informational).|
 |code|Code qui décrit l’opération.|
 |text|Informations supplémentaires associées à l’installation du produit.|
 
-**Configuration de Microsoft Defender pour point de terminaison**:
+**configuration Microsoft Defender pour point de terminaison** :
 
 Les champs collectés sont les suivants :
 
-|Champ|Description|
+|Field|Description|
 |---|---|
-|antivirus_engine.enable_real_time_protection|Si la protection en temps réel est activée sur l’appareil ou non.|
-|antivirus_engine.passive_mode|Si le mode passif est activé sur l’appareil ou non.|
-|cloud_service.enabled|Si la protection cloud est activée sur l’appareil ou non.|
-|cloud_service.timeout|Délai d’arrêt lorsque l’application communique avec le cloud Defender for Endpoint.|
+|antivirus_engine.enable_real_time_protection|Indique si la protection en temps réel est activée ou non sur l’appareil.|
+|antivirus_engine.passive_mode|Indique si le mode passif est activé ou non sur l’appareil.|
+|cloud_service.enabled|Indique si la protection fournie par le cloud est activée ou non sur l’appareil.|
+|cloud_service.timeout|Délai d’expiration lorsque l’application communique avec le cloud Defender pour point de terminaison.|
 |cloud_service.heartbeat_interval|Intervalle entre les pulsations consécutives envoyées par le produit au cloud.|
 |cloud_service.service_uri|URI utilisé pour communiquer avec le cloud.|
 |cloud_service.diagnostic_level|Niveau de diagnostic de l’appareil (obligatoire, facultatif).|
-|cloud_service.automatic_sample_submission|Niveau d’envoi automatique d’échantillons de l’appareil (aucun, sécurisé, tout).|
-|cloud_service.automatic_definition_update_enabled|Si la mise à jour automatique des définitions est ou non allumée.|
-|edr.early_preview|Si l’appareil doit s’PEPT fonctionnalités de prévisualisation anticipée.|
+|cloud_service.automatic_sample_submission|Niveau d’envoi automatique de l’exemple de l’appareil (aucun, sécurisé, tout).|
+|cloud_service.automatic_definition_update_enabled|Indique si la mise à jour automatique des définitions est activée ou non.|
+|edr.early_preview|Indique si l’appareil doit exécuter les fonctionnalités EDR en préversion anticipée.|
 |edr.group_id|Identificateur de groupe utilisé par le composant de détection et de réponse.|
 |edr.tags|Balises définies par l’utilisateur.|
-|fonctionnalités. \[ nom de fonctionnalité facultatif\]|Liste des fonctionnalités d’aperçu, ainsi que si elles sont activées ou non.|
+|fonctionnalités.\[ nom de fonctionnalité facultatif\]|Liste des fonctionnalités en préversion, ainsi que leur activation ou non.|
 
 #### <a name="product-and-service-usage-data-events"></a>Événements de données liés à l'utilisation des produits et services
 
-**Rapport de mise à jour de l’intelligence de la sécurité**:
+**Rapport de mise à jour du renseignement de sécurité** :
 
 Les champs collectés sont les suivants :
 
-|Champ|Description|
+|Field|Description|
 |---|---|
-|from_version|Version d’origine de l’intelligence de sécurité.|
-|to_version|Nouvelle version de l’intelligence de la sécurité.|
-|statut|État de la mise à jour indiquant la réussite ou l’échec.|
-|using_proxy|Si la mise à jour a été effectuée sur un proxy.|
-|error|Code d’erreur en cas d’échec de la mise à jour.|
+|from_version|Version d’origine du renseignement de sécurité.|
+|to_version|Nouvelle version du renseignement de sécurité.|
+|status|État de la mise à jour indiquant la réussite ou l’échec.|
+|using_proxy|Indique si la mise à jour a été effectuée via un proxy.|
+|error|Code d’erreur si la mise à jour a échoué.|
 |reason (Raison)|Message d’erreur en cas d’échec de la mise à jour.|
 
-#### <a name="product-and-service-performance-data-events-for-required-diagnostic-data"></a>Événements de données de performances des produits et services pour les données de diagnostic requises
+#### <a name="product-and-service-performance-data-events-for-required-diagnostic-data"></a>Événements de données de performances de produit et de service pour les données de diagnostic requises
 
-**Statistiques d’extension du noyau**:
+**Statistiques d’extension de noyau :**
 
 Les champs collectés sont les suivants :
 
-|Champ|Description|
+|Field|Description|
 |---|---|
-|version|Version de Defender pour Endpoint sur Linux.|
-|instance_id|Identificateur unique généré au démarrage de l’extension du noyau.|
-|trace_level|Niveau de suivi de l’extension du noyau.|
-|sous-système|Sous-système sous-jacent utilisé pour la protection en temps réel.|
-|ipc.connects|Nombre de demandes de connexion reçues par l’extension du noyau.|
-|ipc.rejects|Nombre de demandes de connexion rejetées par l’extension du noyau.|
-|ipc.connected|S’il existe une connexion active à l’extension du noyau.|
+|version|Version de Defender pour point de terminaison sur Linux.|
+|instance_id|Identificateur unique généré au démarrage de l’extension de noyau.|
+|trace_level|Niveau de trace de l’extension de noyau.|
+|Sous-système|Sous-système sous-jacent utilisé pour la protection en temps réel.|
+|ipc.connects|Nombre de demandes de connexion reçues par l’extension de noyau.|
+|ipc.rejects|Nombre de demandes de connexion rejetées par l’extension de noyau.|
+|ipc.connected|Indique s’il existe une connexion active à l’extension du noyau.|
 
-#### <a name="support-data"></a>Données de prise en charge
+#### <a name="support-data"></a>Données de support
 
-**Journaux de diagnostic**:
+**Journaux de diagnostic :**
 
 Les journaux de diagnostic sont collectés uniquement avec le consentement de l’utilisateur dans le cadre de la fonctionnalité de soumission de commentaires. Les fichiers suivants sont collectés dans le cadre des journaux de support :
 
-- Tous les fichiers *sous /var/log/microsoft/mdatp*
-- Sous-ensemble de fichiers sous */etc/opt/microsoft/mdatp* créés et utilisés par Defender pour endpoint sur Linux
-- Journaux d’installation et de désinstallation du produit sous */var/log/microsoft_mdatp_ \* .log*
+- Tous les fichiers sous */var/log/microsoft/mdatp*
+- Sous-ensemble de fichiers sous */etc/opt/microsoft/mdatp* créés et utilisés par Defender pour point de terminaison sur Linux
+- Journaux d’installation et de désinstallation du produit sous */var/log/microsoft_mdatp_\*.log*
 
 ### <a name="optional-diagnostic-data"></a>Données de diagnostic facultatives
 
-**Les données de diagnostic facultatives** sont des données supplémentaires qui aident Microsoft à améliorer les produits et fournissent des informations améliorées pour vous aider à détecter, diagnostiquer et résoudre les problèmes.
+**Les données de diagnostic facultatives** sont des données supplémentaires qui aident Microsoft à apporter des améliorations aux produits et fournit des informations améliorées pour vous aider à détecter, diagnostiquer et résoudre les problèmes.
 
 Si vous choisissez d’envoyer des données de diagnostic facultatives, les données de diagnostic requises sont également incluses.
 
-Les données de diagnostic facultatives collectées par Microsoft sur la configuration du produit (par exemple, le nombre d’exclusions définies sur l’appareil) et les performances du produit (mesures agrégées sur les performances des composants du produit) sont des exemples de données de diagnostic facultatives.
+Parmi les exemples de données de diagnostic facultatives, citons les données collectées par Microsoft sur la configuration du produit (par exemple, le nombre d’exclusions définies sur l’appareil) et les performances du produit (mesures agrégées sur les performances des composants du produit).
 
-#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>Événements de données de configuration du logiciel et d’inventaire pour les données de diagnostic facultatives
+#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>Événements de données d’inventaire et d’installation de logiciels pour les données de diagnostic facultatives
 
-**Configuration de Microsoft Defender pour point de terminaison**:
-
-Les champs suivants sont collectés :
-
-|Champ|Description|
-|---|---|
-|connection_retry_timeout|Délai de nouvelle tentative de connexion lors de la communication avec le cloud.|
-|file_hash_cache_maximum|Taille du cache du produit.|
-|crash_upload_daily_limit|Limite des journaux d’incident téléchargés quotidiennement.|
-|antivirus_engine.exclusions[].is_directory|Si l’exclusion de l’analyse est un répertoire ou non.|
-|antivirus_engine.exclusions[].path|Chemin d’accès exclu de l’analyse.|
-|antivirus_engine.exclusions[].extension|Extension exclue de l’analyse.|
-|antivirus_engine.exclusions[].name|Nom du fichier exclu de l’analyse.|
-|antivirus_engine.scan_cache_maximum|Taille du cache du produit.|
-|antivirus_engine.maximum_scan_threads|Nombre maximal de threads utilisés pour l’analyse.|
-|antivirus_engine.threat_restoration_exclusion_time|Délai d’délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté.|
-|antivirus_engine.threat_type_settings|Configuration de la façon dont les différents types de menaces sont gérés par le produit.|
-|filesystem_scanner.full_scan_directory|Répertoire d’analyse complet.|
-|filesystem_scanner.quick_scan_directories|Liste des répertoires utilisés dans l’analyse rapide.|
-|edr.latency_mode|Mode latence utilisé par le composant de détection et de réponse.|
-|edr.proxy_address|Adresse proxy utilisée par le composant de détection et de réponse.|
-
-**Configuration de la mise à jour automatique Microsoft**:
+**configuration Microsoft Defender pour point de terminaison** :
 
 Les champs collectés sont les suivants :
 
-|Champ|Description|
+|Field|Description|
+|---|---|
+|connection_retry_timeout|Délai d’expiration de la nouvelle tentative de connexion lors de la communication avec le cloud.|
+|file_hash_cache_maximum|Taille du cache de produit.|
+|crash_upload_daily_limit|Limite des journaux d’activité d’incident chargés quotidiennement.|
+|antivirus_engine.exclusions[].is_directory|Indique si l’exclusion de l’analyse est un répertoire ou non.|
+|antivirus_engine.exclusions[].path|Chemin d’accès exclu de l’analyse.|
+|antivirus_engine.exclusions[].extension|Extension exclue de l’analyse.|
+|antivirus_engine.exclusions[].name|Nom du fichier exclu de l’analyse.|
+|antivirus_engine.scan_cache_maximum|Taille du cache de produit.|
+|antivirus_engine.maximum_scan_threads|Nombre maximal de threads utilisés pour l’analyse.|
+|antivirus_engine.threat_restoration_exclusion_time|Délai d’expiration avant qu’un fichier restauré à partir de la mise en quarantaine puisse être détecté à nouveau.|
+|antivirus_engine.threat_type_settings|Configuration de la façon dont les différents types de menaces sont gérés par le produit.|
+|filesystem_scanner.full_scan_directory|Répertoire d’analyse complet.|
+|filesystem_scanner.quick_scan_directories|Liste des répertoires utilisés dans l’analyse rapide.|
+|edr.latency_mode|Mode de latence utilisé par le composant de détection et de réponse.|
+|edr.proxy_address|Adresse proxy utilisée par le composant de détection et de réponse.|
+
+**Configuration de la mise à jour automatique Microsoft** :
+
+Les champs collectés sont les suivants :
+
+|Field|Description|
 |---|---|
 |how_to_check|Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles).|
-|channel_name|Canal de mise à jour associé à l’appareil.|
+|channel_name|Mettre à jour le canal associé à l’appareil.|
 |manifest_server|Serveur utilisé pour télécharger les mises à jour.|
 |update_cache|Emplacement du cache utilisé pour stocker les mises à jour.|
 
 ### <a name="product-and-service-usage"></a>Utilisation des produits et services
 
-#### <a name="diagnostic-log-upload-started-report"></a>Rapport de chargement démarré du journal de diagnostic
+#### <a name="diagnostic-log-upload-started-report"></a>Rapport de démarrage du chargement du journal de diagnostic
 
-Les champs collectés sont les suivants :
+Les champs suivants sont affichés :
 
-|Champ|Description|
+|Field|Description|
 |---|---|
 |sha256|Identificateur SHA256 du journal de support.|
-|taille|Taille du journal de prise en charge.|
+|size|Taille du journal de support.|
 |original_path|Chemin d’accès au journal de support (toujours sous */var/opt/microsoft/mdatp/wdavdiag/*).|
-|format|Format du journal de prise en charge.|
+|format|Format du journal de support.|
 
-#### <a name="diagnostic-log-upload-completed-report"></a>Rapport de chargement terminé du journal de diagnostic
+#### <a name="diagnostic-log-upload-completed-report"></a>Rapport terminé sur le chargement du journal de diagnostic
 
 Les champs collectés sont les suivants :
 
-|Champ|Description|
+|Field|Description|
 |---|---|
 |request_id|ID de corrélation pour la demande de chargement du journal de support.|
 |sha256|Identificateur SHA256 du journal de support.|
-|blob_sas_uri|URI utilisé par l’application pour télécharger le journal de support.|
+|blob_sas_uri|URI utilisé par l’application pour charger le journal de support.|
 
-#### <a name="product-and-service-performance-data-events-for-product-service-and-usage"></a>Événements de données de performances des produits et services pour le service et l’utilisation du produit
+#### <a name="product-and-service-performance-data-events-for-product-service-and-usage"></a>Événements de données de performances de produit et de service pour le service produit et l’utilisation
 
-**Sortie d’application inattendue (incident)**:
+**Sortie inattendue de l’application (plantage)** :
 
 Sorties inattendues de l’application et état de celle-ci lorsque cela se produit.
 
-**Statistiques d’extension du noyau**:
+**Statistiques d’extension de noyau :**
 
-Les champs collectés sont les suivants :
+Les champs suivants sont collectés :
 
-|Champ|Description|
+|Field|Description|
 |---|---|
-|pkt_ack_timeout|Les propriétés suivantes sont des valeurs numériques agrégées, représentant le nombre d’événements qui se sont produit depuis le démarrage de l’extension du noyau.|
+|pkt_ack_timeout|Les propriétés suivantes sont des valeurs numériques agrégées, représentant le nombre d’événements qui se sont produits depuis le démarrage de l’extension de noyau.|
 |pkt_ack_conn_timeout||
 |ipc.ack_pkts||
 |ipc.nack_pkts||

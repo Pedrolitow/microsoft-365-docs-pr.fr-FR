@@ -2,7 +2,7 @@
 title: Guide pratique pour planifier des analyses avec Microsoft Defender pour point de terminaison (Linux)
 description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender pour point de terminaison (Linux) afin de mieux protéger les ressources de votre organisation.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,17 +13,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 706284ed0adf49c4da6357b6bb8217d5a14268e1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: mde
+ms.openlocfilehash: 21fbdd1e10fc929711944c2586e262c76e7a3905
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663487"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519751"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planifier des analyses avec Microsoft Defender pour point de terminaison (Linux)
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 

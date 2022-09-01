@@ -3,7 +3,7 @@ title: Définir les préférences pour Microsoft Defender pour point de terminai
 ms.reviewer: ''
 description: Décrit comment configurer Microsoft Defender pour point de terminaison sur Linux dans les entreprises.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a6a31317ec95a4767f36cf6db21ec2e146f9eda8
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.subservice: mde
+ms.openlocfilehash: bb70e693fdd6559ed821f342d454f277fa89b890
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67320216"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522034"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux
 

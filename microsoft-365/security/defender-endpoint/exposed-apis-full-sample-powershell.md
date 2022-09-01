@@ -1,10 +1,10 @@
 ---
-title: Guide de repérage avancé avec l’API PowerShell
+title: Chasse avancée guide de l’API Repérage avancé avec PowerShell
 ms.reviewer: ''
 description: Utilisez ces exemples de code, en interrogeant plusieurs API Microsoft Defender pour point de terminaison.
 keywords: api, api prises en charge, repérage avancé, requête
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/27/2022
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c23bf15a188527b2b4c24270fbc1312537da4154
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: cad44fdbf07b784f6f18edb4d5eb59cd7cf46d80
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174883"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520058"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>MICROSOFT DEFENDER POUR POINT DE TERMINAISON API à l’aide de PowerShell
 
@@ -34,7 +34,7 @@ ms.locfileid: "65174883"
 - [Microsoft Defender pour les PME](../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour les PME aux plans Microsoft Defender pour point de terminaison 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour entreprises à Microsoft Defender pour point de terminaison plans 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -68,7 +68,7 @@ Pour plus d’informations, consultez la [documentation PowerShell](/powershell/
 Exécutez la commande ci-dessous :
 
 - $tenantId : ID du locataire au nom duquel vous souhaitez exécuter la requête (c’est-à-dire que la requête sera exécutée sur les données de ce locataire)
-- $appId : ID de votre application AAD (l’application doit disposer de l’autorisation « Exécuter des requêtes avancées » sur Defender pour point de terminaison)
+- $appId : ID de votre application AAD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Defender pour point de terminaison)
 - $appSecret : Secret de votre application Azure AD
 
 - $suspiciousUrl : URL

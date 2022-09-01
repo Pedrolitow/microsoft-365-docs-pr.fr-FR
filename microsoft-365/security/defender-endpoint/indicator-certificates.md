@@ -3,7 +3,7 @@ title: Créer des indicateurs basés sur des certificats
 ms.reviewer: ''
 description: Créez des indicateurs basés sur des certificats qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: ioc, certificate, certificates, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: be2058e16796bcf55d5dd0a7ed96aa7e325601f9
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 232eaa40e7894f03baae0e80ba538622fe5a9115
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387636"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519927"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 

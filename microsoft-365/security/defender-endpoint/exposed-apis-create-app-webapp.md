@@ -3,7 +3,7 @@ title: Créer une application pour accéder à Microsoft Defender pour point de 
 ms.reviewer: ''
 description: Découvrez comment concevoir une application web pour obtenir un accès programmatique à Microsoft Defender pour point de terminaison sans utilisateur.
 keywords: api, api graphe, api prises en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, repérage avancé, requête
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: ca448d64b544e7c7a390b243c77a878dd9afc55a
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: bd5c808ffef012f3c2cfefbb1bf664fe0e80babc
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324492"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520080"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Créer une application pour accéder à Microsoft Defender pour point de terminaison sans utilisateur
 
@@ -74,7 +74,7 @@ Cet article explique comment créer une application Azure AD, obtenir un jeton d
 
    :::image type="content" source="images/application-permissions.png" alt-text="Volet d’informations sur les autorisations d’application" lightbox="images/application-permissions.png":::
 
-     Vous devez sélectionner les autorisations appropriées. « Lire toutes les alertes » n’est qu’un exemple. Par exemple :
+     Vous devez sélectionner les autorisations appropriées. « Lire toutes les alertes » n’est qu’un exemple. Par exemple :
 
      - Pour [exécuter des requêtes avancées](run-advanced-query-api.md), sélectionnez l’autorisation « Exécuter des requêtes avancées ».
      - Pour [isoler un appareil](isolate-machine.md), sélectionnez l’autorisation « Isoler l’ordinateur ».
@@ -190,7 +190,7 @@ Voir [Obtenir un jeton à l’aide de Python](run-advanced-query-sample-python.m
 1. Ouvrez une invite de commandes et définissez CLIENT_ID sur votre ID d’application Azure.
 1. Définissez CLIENT_SECRET sur votre secret d’application Azure.
 1. Définissez TENANT_ID sur l’ID de locataire Azure du client qui souhaite utiliser votre application pour accéder à Defender pour point de terminaison.
-1. Exécutez la commande suivante :
+1. Exécutez la commande suivante :
 
     ```console
     curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

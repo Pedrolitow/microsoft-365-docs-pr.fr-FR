@@ -2,7 +2,7 @@
 title: Guide pratique pour déployer Defender pour point de terminaison sur Linux avec Chef
 description: Découvrez comment déployer Defender pour point de terminaison sur Linux avec Chef
 keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender pour point de terminaison (linux)
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,17 +13,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 8f610821b6c0bef7694d6ce8acd256f59f761f06
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mde
+ms.openlocfilehash: 7d1e1a577e6e3c4077035cff7a500f4d60fe4b45
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872925"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519839"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender pour point de terminaison Linux
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 

@@ -3,7 +3,7 @@ title: Utiliser Microsoft Defender pour point de terminaison API
 ms.reviewer: ''
 description: Découvrez comment concevoir une application Windows native pour obtenir un accès programmatique à Microsoft Defender pour point de terminaison sans utilisateur.
 keywords: api, api graphe, api prises en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, repérage avancé, requête
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c7adaa79ef98b0ccfc1c12e2f84b30c8cd5600fe
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: e3081127f86b31c61abaad8e896f5ab6213908f2
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327901"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520160"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Utiliser Microsoft Defender pour point de terminaison API
 
@@ -111,7 +111,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
    > [!IMPORTANT]
    > Sélectionnez les autorisations appropriées. Les alertes de lecture ne sont qu’un exemple.
 
-     Par exemple :
+     Par exemple :
 
      - Pour [exécuter des requêtes avancées](run-advanced-query-api.md), sélectionnez **Exécuter des requêtes avancées** .
      - Pour [isoler un appareil](isolate-machine.md), sélectionnez Isoler l’autorisation **de l’ordinateur** .

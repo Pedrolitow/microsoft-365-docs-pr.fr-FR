@@ -2,7 +2,7 @@
 title: Inventaire des appareils
 description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Des appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les investigations.
 keywords: trier, filtrer, exporter, csv, nom de l’appareil, domaine, dernière fois, adresse IP interne, état d’intégrité, alertes actives, détections de programmes malveillants actifs, catégorie de menaces, passer en revue les alertes, réseau, connexion, programme malveillant, type, vol de mot de passe, ransomware, exploit, menace, logiciel malveillant général, logiciel indésirable
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 232f27b9edb23e932d49cf33e026d22abfbe72dd
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.subservice: mde
+ms.openlocfilehash: 2d436df67c9f0ee7e37ce7c6ea6e4580f24af0ff
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617323"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67514328"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 
@@ -31,7 +31,7 @@ ms.locfileid: "66617323"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 

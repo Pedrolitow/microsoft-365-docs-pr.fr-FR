@@ -2,25 +2,26 @@
 title: Microsoft Defender Antivirus Device Health exporte les rapports d’intégrité de l’antivirus de l’appareil
 description: Présente les méthodes permettant de récupérer les détails de l’intégrité des appareils antivirus Microsoft Defender.
 keywords: api, api graphe, api prises en charge, get, api d’intégrité de l’appareil, Microsoft Defender pour point de terminaison api de rapport api rapports microsoft defender, api de création de rapports microsoft defender pour point de terminaison, api de création de rapports Windows Defender, api de création de rapports Defender pour point de terminaison, API de rapport Windows Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 ms.localizationpriority: medium
+ms.date: 09/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: d47b4d4920fe49a1270a6eecc7c4ef8a661bdc0d
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 05cc0522d76086cdcc6785d23598e2259b35abe3
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386926"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521404"
 ---
 # <a name="export-device-antivirus-health-report"></a>Exportation du rapport de santé antivirus de l'appareil
 
@@ -48,6 +49,12 @@ Cette API dispose de deux méthodes pour récupérer les détails d’intégrit�
   - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.
 
 Les données collectées à l’aide de la _« réponse JSON_ ou _par le biais de fichiers_ » sont l’instantané actuel de l’état actuel. Il ne contient pas de données historiques. Pour collecter des données historiques, les clients doivent enregistrer les données dans leurs propres stockages de données. Consultez [Les méthodes et propriétés de l’API Exporter les détails de l’intégrité des appareils](device-health-api-methods-properties.md).
+
+> [!IMPORTANT]
+>
+> Actuellement, seule la **réponse JSON d’intégrité antivirus** est généralement disponible. **L’API Antivirus Health via des fichiers** est actuellement disponible uniquement en préversion publique.
+>
+> La **requête personnalisée De chasse avancée** n’est actuellement disponible qu’en préversion publique, même si les requêtes sont toujours visibles.
 
 > [!IMPORTANT]
 >
@@ -206,6 +213,9 @@ Voici un exemple de réponse :
 ```
 
 ## <a name="2-export-health-reporting-via-files"></a>2 Exporter des rapports d’intégrité (via des fichiers)
+
+> [!IMPORTANT]
+> Les informations contenues dans cette section concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 ### <a name="21-api-method-description"></a>Description de la méthode API 2.1
 

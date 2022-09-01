@@ -24,16 +24,16 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: ea1a6138204dd75855ade67ce06822c347160e4f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6c442d0a3a3394a29ad89e81add2a1608c4d675b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467896"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516541"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 
-Le [portail Microsoft 365 Defender](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47) combine la protection, la détection, l’investigation et la réponse aux menaces de messagerie, de collaboration, d’identité, d’appareil et d’application cloud, dans un emplacement central. Le portail Microsoft 365 Defender met l’accent sur l’accès rapide aux informations, les dispositions plus simples et le regroupement d’informations connexes pour faciliter leur utilisation. Elle comprend :
+Le [portail Microsoft 365 Defender](https://sip.security.microsoft.com/homepage) combine la protection, la détection, l’investigation et la réponse aux menaces de messagerie, de collaboration, d’identité, d’appareil et d’application cloud, dans un emplacement central. Le portail Microsoft 365 Defender met l’accent sur l’accès rapide aux informations, les dispositions plus simples et le regroupement d’informations connexes pour faciliter leur utilisation. Elle comprend :
 
 - **[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender pour Office 365 aide les organisations à sécuriser leur entreprise avec un ensemble de fonctionnalités de prévention, de détection, d’investigation et de chasse pour protéger les e-mails et les ressources Office 365.
 - **[Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** offre une protection préventive, une détection post-violation, une investigation automatisée et une réponse pour les appareils de votre organisation.

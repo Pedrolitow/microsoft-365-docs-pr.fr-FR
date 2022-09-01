@@ -2,7 +2,7 @@
 title: Déployer des mises à jour pour Microsoft Defender pour point de terminaison sur Mac
 description: Contrôler les mises à jour des Microsoft Defender pour point de terminaison sur Mac dans les environnements d’entreprise.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, mises à jour, déployer
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4612c7ca68ab0b55fa2a2f28821cb5baef6ff6e9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.subservice: mde
+ms.openlocfilehash: 3686ee0e4356091a0dd3d6b295fde72d8f2611e0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669339"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519509"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Déployer des mises à jour pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -40,7 +40,7 @@ Microsoft publie régulièrement des mises à jour logicielles pour améliorer l
 
 Pour mettre à jour Microsoft Defender pour point de terminaison sur macOS, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Par défaut, MAU vérifie automatiquement les mises à jour quotidiennes, mais vous pouvez la remplacer par hebdomadaire, mensuelle ou manuelle.
 
-:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="Mau" lightbox="images/MDATP-34-MAU.png":::
 
 Si vous décidez de déployer des mises à jour à l’aide de vos outils de distribution de logiciels, vous devez configurer MAU pour rechercher manuellement les mises à jour logicielles. Vous pouvez déployer des préférences pour configurer comment et quand la mise à jour MAU recherche les mises à jour pour les Mac dans votre organisation.
 
@@ -128,9 +128,9 @@ Modifiez la façon dont MAU recherche les mises à jour.
 |**Commentaire**|Notez qu’AutomaticDownload effectue un téléchargement et une installation silencieuse si possible.|
 |||
 
-### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Modifier si le bouton « Vérifier les mises à jour » est activé
+### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Modifier si le bouton « Vérifier Mises à jour » est activé
 
-Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier les mises à jour » dans l’interface utilisateur Microsoft AutoUpdate.
+Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier la Mises à jour » dans l’interface utilisateur Microsoft AutoUpdate.
 
 <br>
 
@@ -146,7 +146,7 @@ Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier
 
 ### <a name="disable-insider-checkbox"></a>Désactiver la case à cocher Insider
 
-Définissez la valeur true pour que le programme « Participer au programme Office Insider... » case à cocher non disponible/grisée pour les utilisateurs.
+Définissez la valeur true pour que le programme « Participer au programme Office Insider... » soit défini sur true. case à cocher non disponible/grisée pour les utilisateurs.
 
 <br>
 

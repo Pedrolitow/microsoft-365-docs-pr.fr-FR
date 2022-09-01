@@ -2,7 +2,7 @@
 title: Résoudre les problèmes et trouver des réponses aux questions relatives à Microsoft Defender pour point de terminaison sur iOS
 description: Résolution des problèmes et FAQ - Microsoft Defender pour point de terminaison sur iOS
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, ios, résolution des problèmes, faq, procédure
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: ae6e65d99a82bdf4a9c0adbb740c6e5b969f4b68
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mde
+ms.openlocfilehash: d6cf7a9e2d19f694711b565f786f7c0560b962f0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016325"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522100"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Résoudre les problèmes et trouver des réponses aux questions fréquentes sur Microsoft Defender pour point de terminaison sur iOS
 
@@ -45,12 +45,12 @@ Par défaut, Defender pour point de terminaison sur iOS inclut et active la fonc
 
 Bien qu’il soit activé par défaut, il peut arriver que vous deviez désactiver le VPN. Par exemple, vous souhaitez exécuter des applications qui ne fonctionnent pas lorsqu’un VPN est configuré. Dans ce cas, vous pouvez choisir de désactiver le VPN directement à partir de l’application Defender pour point de terminaison ou en procédant comme suit :
 
-1. Sur votre appareil iOS, ouvrez l’application **Paramètres**, cliquez ou appuyez sur **Général**, puis **sur VPN**.
+1. Sur votre appareil iOS, **ouvrez** l’application Paramètres, cliquez ou appuyez sur **Général** , puis **sur VPN**.
 1. Cliquez ou appuyez sur le bouton « i » pour Microsoft Defender pour point de terminaison.
-1. Désactivez **Connecter à la demande** pour désactiver le VPN.
+1. Désactivez **La connexion à la demande** pour désactiver le VPN.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-vpn-config.png" alt-text="Option Connecter à la demande" lightbox="images/ios-vpn-config.png":::
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="Option Se connecter à la demande" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > La protection web ne sera pas disponible lorsque le VPN est désactivé. Pour réactiver la protection web, ouvrez l’application Microsoft Defender pour point de terminaison sur l’appareil et activez la protection web.
@@ -63,7 +63,7 @@ Apple iOS ne prend pas en charge plusieurs VPN à **l’échelle de l’appareil
 
 Afin de vous protéger en permanence contre les menaces web, Microsoft Defender pour point de terminaison doit s’exécuter en arrière-plan à tout moment. Cela peut entraîner une légère augmentation de la consommation globale de batterie de votre appareil. Si vous constatez un drainage important de la batterie, [envoyez-nous vos commentaires](ios-troubleshoot.md#send-in-app-feedback) et nous examinerons.
 
-En outre, dans l’application Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications qui sont visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran est uniquement pendant cette durée et est calculée par iOS en fonction d’une multitude de facteurs, notamment l’utilisation du processeur et du réseau. Microsoft Defender pour point de terminaison utilise un VPN local/en boucle en arrière-plan pour vérifier le trafic web des sites web malveillants ou des connexions. Les paquets réseau de n’importe quelle application passent par cette vérification, ce qui entraîne le calcul incorrect de l’utilisation de la batterie de Microsoft Defender pour point de terminaison. La consommation réelle de batterie de Microsoft Defender pour point de terminaison est inférieure à celle affichée sur la page Batterie Paramètres sur l’appareil.
+De plus, dans l’application Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran est uniquement pendant cette durée et est calculée par iOS en fonction d’une multitude de facteurs, notamment l’utilisation du processeur et du réseau. Microsoft Defender pour point de terminaison utilise un VPN local/en boucle en arrière-plan pour vérifier le trafic web des sites web malveillants ou des connexions. Les paquets réseau de n’importe quelle application passent par cette vérification, ce qui entraîne le calcul incorrect de l’utilisation de la batterie de Microsoft Defender pour point de terminaison. La consommation réelle de batterie de Microsoft Defender pour point de terminaison est inférieure à celle affichée sur la page Paramètres de la batterie sur l’appareil.
 
 Notez que le VPN utilisé est un VPN local et, contrairement à un VPN traditionnel, le trafic réseau n’est pas envoyé en dehors de l’appareil.
 
@@ -90,18 +90,18 @@ En outre, une notification s’affiche sur l’appareil iOS. L’appui sur la no
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>Appareil introuvable sur la console Defender pour point de terminaison après l’intégration
 
-Après l’intégration, l’affichage de l’appareil dans l’inventaire des appareils dans la console de sécurité Defender pour point de terminaison prend quelques heures. Vérifiez également que l’appareil est correctement inscrit auprès de Azure Active Directory et que l’appareil dispose d’une connectivité Internet. Pour réussir l’intégration, l’appareil doit être inscrit via Microsoft Authenticator ou Portail d'entreprise Intune et l’utilisateur doit se connecter à l’aide du même compte avec lequel l’appareil est inscrit auprès d’Azure AD.
+Après l’intégration, l’affichage de l’appareil dans l’inventaire des appareils dans la console de sécurité Defender pour point de terminaison prend quelques heures. Vérifiez également que l’appareil est correctement inscrit auprès d’Azure Active Directory et que l’appareil dispose d’une connectivité Internet. Pour réussir l’intégration, l’appareil doit être inscrit via Microsoft Authenticator ou Portail d'entreprise Intune et l’utilisateur doit se connecter à l’aide du même compte avec lequel l’appareil est inscrit auprès d’Azure AD.
 
 > [!NOTE]
-> Parfois, le nom de l’appareil n’est pas cohérent avec celui de Microsoft Endpoint Manager console (Intune). Le nom de l’appareil dans la console Defender pour point de terminaison est au format <username_iPhone/iPad modèle>. Vous pouvez également utiliser l’ID d’appareil Azure AD pour identifier l’appareil dans la console Defender pour point de terminaison.
+> Parfois, le nom de l’appareil n’est pas cohérent avec celui de la console Microsoft Endpoint Manager (Intune). Le nom de l’appareil dans la console Defender pour point de terminaison est au format <username_iPhone/iPad model>. Vous pouvez également utiliser l’ID d’appareil Azure AD pour identifier l’appareil dans la console Defender pour point de terminaison.
 
 ## <a name="data-and-privacy"></a>Données et confidentialité
 
-Pour plus d’informations sur les données collectées et la confidentialité, consultez [Informations sur la confidentialité - Microsoft Defender pour point de terminaison sur iOS](ios-privacy.md).
+Pour plus d’informations sur les données collectées et la confidentialité, consultez [Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS](ios-privacy.md).
 
 ## <a name="connectivity-issue-on-cellular-network"></a>Problème de connectivité sur le réseau cellulaire
 
-Si vous rencontrez des problèmes de connectivité Internet sur le réseau cellulaire, vérifiez si Microsoft Defender pour point de terminaison dispose de données cellulaires activées : ouvrez Paramètres application > MS Defender > vérifiez que « Données cellulaires » est activé pour MS Defender.
+Si vous rencontrez des problèmes de connectivité Internet sur le réseau cellulaire, vérifiez si Microsoft Defender pour point de terminaison dispose de données cellulaires activées : Ouvrez l’application Paramètres > MS Defender > assurez-vous que « Données cellulaires » est activé pour MS Defender.
 
 Si vous rencontrez toujours des problèmes de connectivité, vérifiez si l’activation/désactivation du mode Avion permet de résoudre le problème. Si le problème persiste, [envoyez-nous les journaux](ios-troubleshoot.md#send-in-app-feedback).
 
