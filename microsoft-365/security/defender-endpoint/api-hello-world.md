@@ -3,7 +3,7 @@ title: Hello World pour l’API Microsoft Defender pour point de terminaison
 ms.reviewer: ''
 description: Créez un appel d’API de type « Hello World » pratique à l’API Microsoft Defender pour point de terminaison.
 keywords: api, api prises en charge, repérage avancé, requête, microsoft defender atp, microsoft defender pour point de terminaison
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2805736c3d612716f3b99ba0f97fc74a0070bc68
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a240f647e1e1cead26bab384e112e14a26dea2d3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328033"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67498968"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
@@ -79,7 +79,7 @@ Pour l’étape d’inscription de l’application, vous devez avoir un rôle **
      > [!IMPORTANT]
      > Vous devez sélectionner les autorisations appropriées. « Lire toutes les alertes » n’est qu’un exemple !
 
-     Par exemple :
+     Par exemple :
 
      - Pour [exécuter des requêtes avancées](run-advanced-query-api.md), sélectionnez l’autorisation « Exécuter des requêtes avancées ».
      - Pour [isoler un ordinateur](isolate-machine.md), sélectionnez l’autorisation « Isoler l’ordinateur ».

@@ -2,7 +2,7 @@
 title: Ajouter ou supprimer une API d’étiquettes de machine
 description: Découvrez comment utiliser l’API Ajouter ou supprimer des balises de machine pour ajouter ou supprimer une balise pour un ordinateur dans Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, balises, balises d’ordinateur
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
+ms.subservice: m365d
 ms.custom: api
-ms.openlocfilehash: f5a4a232e7752ae990c1f32ca69653c45baecb8b
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 39c1024a047cefbd372e4668977f4c68132c103c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328098"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67498938"
 ---
-# <a name="add-or-remove-machine-tags-api"></a>Ajouter ou supprimer une API d’étiquettes de machine
+# <a name="add-or-remove-machine-tags-api"></a>Ajouter ou supprimer une API d’étiquettes d’ordinateur
 
 **S’applique à :**
 
@@ -49,7 +49,7 @@ Ajoute ou supprime une balise à un [ordinateur](machine.md) spécifique.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Defender pour les API de point de terminaison](apis-intro.md).
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -59,8 +59,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et éc
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Gérer le paramètre de sécurité ». Pour plus d’informations (voir [Créer et gérer des rôles](user-roles.md) )
-> - L’utilisateur doit avoir accès à l’ordinateur, en fonction des paramètres du groupe d’ordinateurs (consultez [Créer et gérer des groupes d’ordinateurs](machine-groups.md) pour plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Gérer le paramètre de sécurité ». Pour plus d’informations (voir [Créer et gérer des rôles](user-roles.md) ).
+> - L’utilisateur doit avoir accès à l’ordinateur, en fonction des paramètres du groupe d’ordinateurs (voir [Créer et gérer des groupes d’ordinateurs](machine-groups.md) pour plus d’informations).
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -88,9 +88,7 @@ Action|Énum|Ajouter ou supprimer. Les valeurs autorisées sont : « Ajouter » 
 
 Si elle réussit, cette méthode renvoie le code de réponse 200 - OK et la machine mise à jour dans le corps de la réponse.
 
-## <a name="example"></a>Exemple
-
-### <a name="request"></a>Demande
+## <a name="example-request"></a>Exemple de requête
 
 Voici un exemple de requête qui ajoute une balise d’ordinateur.
 
@@ -105,4 +103,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 }
 ```
 
-- Pour supprimer la balise d’ordinateur, définissez l’action sur « Supprimer » au lieu de « Ajouter » dans le corps de la requête.
+Pour supprimer la balise d’ordinateur, définissez l’action sur « Supprimer » au lieu de « Ajouter » dans le corps de la requête.

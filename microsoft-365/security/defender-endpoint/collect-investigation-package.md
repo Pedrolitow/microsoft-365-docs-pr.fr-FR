@@ -2,7 +2,7 @@
 title: Collecter l’API de package d’investigation
 description: Utilisez cette API pour créer des appels liés à la collecte d’un package d’investigation à partir d’un appareil.
 keywords: api, api graphe, api prises en charge, collecter le package d’investigation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 13cc4e0a1c5a72beb6c5c65ceb4a408d7d43a6ea
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 5bfc3c3703ae0f662a519948cd93e1ab1e4178fd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326164"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67498951"
 ---
 # <a name="collect-investigation-package-api"></a>Collecter l’API de package d’investigation
 

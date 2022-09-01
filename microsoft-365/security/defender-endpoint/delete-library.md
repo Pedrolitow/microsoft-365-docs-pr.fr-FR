@@ -4,7 +4,7 @@ description: Découvrez comment supprimer un fichier de la bibliothèque de rép
 keywords: api, API de graphe, api prises en charge, suppression de la bibliothèque
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,20 +18,20 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 97a2a2152a60ff542cb946c4283fe3f26c4b9c8e
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: da4da672f3ae513a60f5d4a9fb7134c7b36bc8df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874127"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67499033"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>Supprimer un fichier de la bibliothèque de réponses en direct  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -52,7 +52,7 @@ Supprimez un fichier de la bibliothèque de réponses actives.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Démarrage](apis-intro.md).
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Prise en main](apis-intro.md).
 
 | Type d’autorisation                    | Autorisation     | Nom d’affichage de l’autorisation        |
 |------------------------------------|----------------|--------------------------------|
