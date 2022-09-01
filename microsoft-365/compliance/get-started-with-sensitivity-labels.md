@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Étapes normatives pour les administrateurs, les conditions requises de licence et les scénarios courants qui utilisent des étiquettes de confidentialité pour protéger les données de votre organisation.
-ms.openlocfilehash: 2a82a788ae766050c663d3d35332470aa48d9a20
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
-ms.translationtype: HT
+ms.openlocfilehash: c796bf283873e86a569e70d30fb7944a20bd7e2e
+ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069644"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67498436"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -127,6 +127,8 @@ Vous pouvez également utiliser les ressources suivantes pour afficher des instr
 
 - [Appliquer ou recommander automatiquement des étiquettes de confidentialité pour vos fichiers et e-mails dans Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Problèmes connus liés à l’application ou à la recommandation automatique des étiquettes de confidentialité](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+
+- [Créer des fichiers PDF protégés à partir de fichiers Office](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
 
 - [Guide de l’utilisateur pour l’étiquetage unifié d’Azure Information Protection](/azure/information-protection/rms-client/clientv2-user-guide)
 
