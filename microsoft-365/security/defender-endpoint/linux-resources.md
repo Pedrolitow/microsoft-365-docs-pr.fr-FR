@@ -3,7 +3,7 @@ title: Microsoft Defender pour point de terminaison sur les ressources Linux
 ms.reviewer: ''
 description: Décrit les ressources pour Microsoft Defender pour point de terminaison sur Linux, notamment comment la désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 0971933f1099192b1cb8b7a844793f264ef2aa15
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.subservice: mde
+ms.openlocfilehash: 3fca43004ef55832a813a3a36958efb310e6a342
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949478"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519773"
 ---
 # <a name="resources"></a>Ressources
 
@@ -106,7 +106,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 
 ****
 
-|Group|Scénario|Commande|
+|Groupe|Scénario|Commande|
 |---|---|---|
 |Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |Configuration|Activer/désactiver la surveillance du comportement|`mdatp config behavior-monitoring --value [enabled\|disabled]`

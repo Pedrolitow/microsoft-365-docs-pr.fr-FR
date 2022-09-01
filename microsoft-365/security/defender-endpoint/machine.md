@@ -2,7 +2,7 @@
 title: Type de ressource de machine
 description: Découvrez les méthodes et les propriétés du type de ressource Machine dans Microsoft Defender pour point de terminaison.
 keywords: api, api prises en charge, get, machines
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: ada405980a781d32735a545f4d2bd44d19477511
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 08754eaa0040e3f7aa89c9e398db37afbbd1b474
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497069"
+ms.locfileid: "67514408"
 ---
 # <a name="machine-resource-type"></a>Type de ressource de machine
 

@@ -2,7 +2,7 @@
 title: Exporter des méthodes et des propriétés d’évaluation par appareil
 description: Fournit des informations sur les API qui extraient des données « Gestion des vulnérabilités Microsoft Defender ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: a6a542f07e77a35661cab10b64133f6cfa2a26ed
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 785be9671e4ad10fd7b6dbde85e8f2805d3621a8
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408350"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516343"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter des méthodes et des propriétés d’évaluation par appareil
 
@@ -222,14 +222,14 @@ Retourne tous les logiciels installés qui n’ont pas [d’énumération de pla
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-DeviceId|chaîne|Identificateur unique de l’appareil dans le service.
-DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.
-OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
-RbacGroupName|chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+DeviceId|string|Identificateur unique de l’appareil dans le service.
+DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
+OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
+RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 RbacGroupId|string|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
-SoftwareLastSeenTimestamp|chaîne|La dernière fois que ce logiciel a été vu sur l’appareil.
-SoftwareName|string|Nom du produit logiciel.
-SoftwareVendor|string|Nom du fournisseur de logiciels.
+SoftwareLastSeenTimestamp|string|La dernière fois que ce logiciel a été vu sur l’appareil.
+SoftwareName|chaîne|Nom du produit logiciel.
+SoftwareVendor|chaîne|Nom du fournisseur de logiciels.
 SoftwareVersion|string|Numéro de version du produit logiciel.
 
 ### <a name="43-properties-via-files"></a>4.3 Propriétés (via des fichiers)

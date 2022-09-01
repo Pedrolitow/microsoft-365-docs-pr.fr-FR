@@ -2,7 +2,7 @@
 title: API Importer des indicateurs
 description: Découvrez comment utiliser le lot d’importation de l’API Indicateur dans Microsoft Defender pour point de terminaison.
 keywords: api, api prises en charge, submit, ti, indicator, update
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: c2e53fdf2c8786c8f9e605d822024eeef4ed170e
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.subservice: mde
+ms.openlocfilehash: 00230a725c5c8c067bbe6904608ed0739b29b734
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051599"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519970"
 ---
 # <a name="import-indicators-api"></a>API Importer des indicateurs
 

@@ -2,7 +2,7 @@
 title: Examiner les entités sur les appareils à l’aide de la réponse active dans Microsoft Defender pour point de terminaison
 description: Accédez à un appareil à l’aide d’une connexion d’interpréteur de commandes distante sécurisée pour effectuer un travail d’investigation et effectuer des actions de réponse immédiates sur un appareil en temps réel.
 keywords: remote, shell, connection, live, response, real-time, command, script,mediate, hunt, export, log, drop, download, file,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1f387696797d52805495777be0850ebe135fd38a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.subservice: mde
+ms.openlocfilehash: f25537cc3ccbfc1cf7bc957a56d074755f4852e7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173102"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519663"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide d’une réponse dynamique
 
@@ -27,7 +27,7 @@ ms.locfileid: "65173102"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -42,7 +42,7 @@ Avec la réponse en direct, les analystes peuvent effectuer toutes les tâches s
 - Exécutez des commandes de base et avancées pour effectuer des travaux d’investigation sur un appareil.
 - Téléchargez des fichiers tels que les exemples de programmes malveillants et les résultats des scripts PowerShell.
 - Télécharger des fichiers en arrière-plan (nouveau!).
-- Télécharger un script PowerShell ou un exécutable dans la bibliothèque et l’exécuter sur un appareil à partir d’un niveau client.
+- Chargez un script PowerShell ou un exécutable dans la bibliothèque et exécutez-le sur un appareil à partir d’un niveau client.
 - Effectuez ou annulez des actions de correction.
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -114,7 +114,7 @@ Avant de pouvoir lancer une session sur un appareil, vérifiez que vous rempliss
   Seuls les utilisateurs qui ont été approvisionnés avec les autorisations appropriées peuvent lancer une session. Pour plus d’informations sur les attributions de rôles, consultez [Créer et gérer des rôles](user-roles.md).
 
   > [!IMPORTANT]
-  > L’option de chargement d’un fichier dans la bibliothèque est uniquement disponible pour les utilisateurs disposant de l’autorisation « Gérer la sécurité Paramètres ».
+  > L’option de chargement d’un fichier dans la bibliothèque est uniquement disponible pour les utilisateurs disposant de l’autorisation « Gérer les paramètres de sécurité ».
   > Le bouton est grisé pour les utilisateurs disposant uniquement d’autorisations déléguées.
 
   Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse dynamique de base ou avancées. Les autorisations des utilisateurs sont contrôlées par le rôle personnalisé RBAC.
@@ -123,14 +123,14 @@ Avant de pouvoir lancer une session sur un appareil, vérifiez que vous rempliss
 
 Lorsque vous lancez une session de réponse en direct sur un appareil, un tableau de bord s’ouvre. Le tableau de bord fournit des informations sur la session, telles que les suivantes :
 
-- Qui créé la session
+- Qui a créé la session
 - Au démarrage de la session
 - Durée de la session
 
 Le tableau de bord vous donne également accès à :
 
 - Inscription de l’application dans Azure Active Directory
-- Télécharger fichiers à la bibliothèque
+- Charger des fichiers dans la bibliothèque
 - Console de commande
 - Journal des commandes
 
@@ -157,7 +157,7 @@ Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de
 
 Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse dynamique **de base** . Pour plus d’informations sur les attributions de rôles, consultez [Créer et gérer des rôles](user-roles.md).
 
-| Command  | Description  | serveur Windows et Windows  | macOS  | Linux  |
+| Command  | Description  | Windows et Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | Cd  | Modifie le répertoire actif.  | v  | v  | v  |
 | Cls  | Efface l’écran de la console.  | v  | v  | v  |
@@ -184,7 +184,7 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 
 Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse dynamique **avancées** . Pour plus d’informations sur les attributions de rôles, consultez [Créer et gérer des rôles](user-roles.md).
 
-| Command  | Description  | serveur Windows et Windows  | macOS  | Linux  |
+| Command  | Description  | Windows et Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | Analyser  | Analyse l’entité avec différents moteurs d’incriminance pour parvenir à un verdict.  | v  | N  | N  |
 | Recueillir  | Collecte le package d’investigation à partir de l’ordinateur  | N  | v  | v  |
@@ -199,7 +199,7 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 
 ## <a name="use-live-response-commands"></a>Utiliser des commandes de réponse en direct
 
-Les commandes que vous pouvez utiliser dans la console suivent des principes similaires à [ceux des commandes Windows](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
+Les commandes que vous pouvez utiliser dans la console suivent des principes similaires à ceux [des commandes Windows](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Les commandes avancées offrent un ensemble d’actions plus robuste qui vous permettent d’effectuer des actions plus puissantes, telles que le téléchargement et le chargement d’un fichier, l’exécution de scripts sur l’appareil et l’exécution d’actions de correction sur une entité.
 
@@ -228,7 +228,7 @@ Voici quelques exemples :
 
 ****
 
-|Command|Ce qu'il fait|
+|Commande|Ce qu'il fait|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Commence à télécharger un fichier nommé *some_file.exe* en arrière-plan.|
 |`fg 1234`|Retourne un téléchargement avec l’ID de commande *1234* au premier plan.|
@@ -244,7 +244,7 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 #### <a name="to-upload-a-file-in-the-library"></a>Pour charger un fichier dans la bibliothèque
 
-1. Cliquez sur **Télécharger fichier dans la bibliothèque**.
+1. Cliquez sur **Charger le fichier dans la bibliothèque**.
 
 2. Cliquez sur **Parcourir** et sélectionnez le fichier.
 

@@ -5,8 +5,8 @@ metadata:
   title: Documentation Microsoft Defender pour point de terminaison
   description: Découvrez Microsoft Defender pour point de terminaison et maximisez les fonctionnalités de sécurité intégrées pour protéger les appareils, détecter les activités malveillantes et remédier aux menaces# Requis ; description de l’article qui s’affiche dans les résultats de la recherche. < 160 caractères.
   services: office-365-security-compliance
-  ms.prod: m365-security
-  ms.technology: mde
+  ms.service: microsoft-365-security
+  ms.subservice: mde
   ms.topic: landing-page
   ms.collection: m365-security-compliance
   ms.custom: intro-hub-or-landing
@@ -14,12 +14,12 @@ metadata:
   ms.author: macapara
   ms.date: 10/18/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 74b5ca4b6abed02f5015a6c6c09e15ce7fcda5cc
-  ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
-  ms.translationtype: HT
+  ms.openlocfilehash: 544e09f914ab78d64d21638ee4ec51f520fdfd30
+  ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+  ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/12/2022
-  ms.locfileid: "65368196"
+  ms.lasthandoff: 09/01/2022
+  ms.locfileid: "67519949"
 landingContent:
 - title: Microsoft Defender pour point de terminaison
   linkLists:
