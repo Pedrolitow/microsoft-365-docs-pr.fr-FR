@@ -9,7 +9,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 08/30/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c714e15cfb37116fe23f51c4e47214d69961120
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7487297cbb6a28436e7a28006ef9989d902cdcc6
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385548"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496832"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -45,9 +45,9 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft 365 Defender](../defender/whats-new.md)
 - [Nouveautés dans Microsoft Defender pour point de terminaison](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Nouveautés de Microsoft Defender pour Identity](/defender-for-identity/whats-new)
-- [Nouveautés de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [Nouveautés de Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
-## <a name="august-2022"></a>Août 2022
+## <a name="september-2022"></a>Septembre 2022
 
 **Redirection automatique du Centre de sécurité et de conformité Office 365 vers le portail Microsoft 365 Defender :** la redirection automatique commence pour les utilisateurs qui accèdent aux solutions de sécurité dans Office 365 Centre de sécurité et de conformité (protection.office.com) vers les solutions appropriées dans portail Microsoft 365 Defender (security.microsoft.com). Cela s’applique à tous les flux de travail de sécurité tels que les alertes, la gestion des menaces et les rapports. 
 - URL de redirection :
@@ -116,7 +116,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
   - D’autres nouvelles fonctionnalités à venir à l’expérience de quarantaine sont décrites dans ce billet de blog : [Simplifier l’expérience de quarantaine](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
 - La redirection du portail par défaut commence, redirigeant les utilisateurs de La sécurité & conformité vers Microsoft 365 Defender<https://security.microsoft.com>. Pour plus d’informations, consultez : [Redirection de comptes depuis Office 365 Centre de sécurité & conformité vers Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 - [Administration examiner les messages signalés](admin-review-reported-message.md) : les administrateurs peuvent désormais renvoyer des messages modèles aux utilisateurs finaux après avoir examiné les messages signalés. Les modèles peuvent être personnalisés pour votre organisation et en fonction du verdict de votre administrateur.
 - Ou peut désormais ajouter des entrées d’autorisation à la liste d’autorisation/de blocage du locataire si le message bloqué a été envoyé dans le cadre du processus de soumission de l’administrateur. Selon la nature du bloc, l’URL, le fichier et/ou l’autorisation de l’expéditeur envoyé sont ajoutés à la liste d’autorisations/de blocs du locataire. Dans la plupart des cas, les autorisations sont ajoutées pour donner au système un certain temps et l’autoriser naturellement si nécessaire. Dans certains cas, Microsoft gère l’autorisation pour vous. Pour plus d’informations, consultez l’article suivant :
@@ -139,7 +139,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Les balises utilisateur](user-tags.md) sont désormais intégrées à Microsoft Defender pour Office 365 expériences d’alerte, notamment : la file d’attente des alertes et les détails dans Office 365 Sécurité & Conformité, et l’étendue des stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées.
   - Les balises sont également disponibles dans la file d’attente des alertes unifiées dans le portail Microsoft 365 Defender (Microsoft Defender pour Office 365 Plan 2)
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 - Nouveau paramètre de conseil de sécurité du premier contact dans les stratégies anti-hameçonnage. Ce conseil de sécurité s’affiche lorsque les destinataires reçoivent pour la première fois un e-mail d’un expéditeur ou qu’ils ne reçoivent pas souvent d’e-mail d’un expéditeur. Pour plus d’informations sur ce paramètre et la façon de le configurer, consultez les articles suivants :
   - [Premier conseil de sécurité de contact](set-up-anti-phishing-policies.md#first-contact-safety-tip)

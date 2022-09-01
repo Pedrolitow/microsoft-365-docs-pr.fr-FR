@@ -19,7 +19,7 @@
           items:
             - name: Configurer Microsoft 365 et les services associés
               href: flw-setup-microsoft-365.md
-            - name: Déployer des équipes à grande échelle
+            - name: Déployer Teams à grande échelle
               href: deploy-teams-at-scale.md
             - name: Intégrer vos utilisateurs à l’Assistant Intégration
               href: flw-onboarding-wizard.md

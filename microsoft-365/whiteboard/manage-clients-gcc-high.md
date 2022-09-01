@@ -12,19 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc.
-ms.openlocfilehash: b1e4f83a0df0f03a423d9f7e3821cc53284ddb19
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 5ff362ff562eade8f80b44b3a5f5a929b242de24
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306325"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497492"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer les clients pour le Tableau blanc Microsoft dans les environnements GCC High
 
 > [!NOTE]
 > Ces conseils s’appliquent aux environnements US Government Community Cloud (GCC) High.
 
-Les clients tableau blanc sont en cours de mise à jour pour prendre en charge OneDrive Entreprise.
+Les clients tableau blanc sont en cours de mise à jour pour prendre en charge OneDrive Entreprise. 
 
 ## <a name="clients-supported"></a>Clients pris en charge
 
