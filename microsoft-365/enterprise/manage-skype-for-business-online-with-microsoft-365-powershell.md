@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Utilisez PowerShell pour Microsoft 365 pour gérer des stratégies Skype Entreprise Online, des stratégies par utilisateur et des paramètres de réunion.
-ms.openlocfilehash: 1c3a3e06d3fa607765382176a8c291fab2c69636
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
-ms.translationtype: HT
+ms.openlocfilehash: ca0067bffce7bded0a0115dd51e5b3874e19773e
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097665"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570180"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Gestion de Skype Entreprise Online avec PowerShell
 

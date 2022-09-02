@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: État d'intégrité du service Microsoft 365
-ms.openlocfilehash: 0f7c7d0d14cdecbfb122d03fdcb4c93fcddbced2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
-ms.translationtype: HT
+ms.openlocfilehash: 88969f218bd36f39757c68c409474d3ce20a50d1
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753361"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570224"
 ---
 # <a name="microsoft-365-network-health-status"></a>État d’intégrité du réseau Microsoft 365
 

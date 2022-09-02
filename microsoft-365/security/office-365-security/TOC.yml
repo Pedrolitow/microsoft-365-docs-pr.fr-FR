@@ -406,7 +406,7 @@
           items:
             - name: Comment configurer des autorisations et des stratégies de quarantaine
               href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
-            - name: Garantir que vous disposez toujours des contrôles de sécurité optimaux avec des stratégies de sécurité prédéfinies
+            - name: Configurer les étapes des stratégies de sécurité prédéfinies Standard ou Strict dans Microsoft Defender pour Office 365
               href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
             - name: Connecter Microsoft Defender pour Office 365 à Microsoft Sentinel
               href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md

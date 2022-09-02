@@ -1,11 +1,11 @@
 ---
-title: intégration Microsoft 365 à des environnements locaux
+title: Intégration de Microsoft 365 à des environnements locaux
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -22,14 +22,14 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Dans cet article, découvrez comment intégrer Microsoft 365 à vos services d’annuaire existants et à vos environnements locaux.
-ms.openlocfilehash: a3ba75fd2f2b69e71d5b14b14e17827ed96e4dd4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 69d21a5da22db7ae51ab28df548f832b58ca95f6
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093896"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570158"
 ---
-# <a name="microsoft-365-integration-with-on-premises-environments"></a>intégration Microsoft 365 à des environnements locaux
+# <a name="microsoft-365-integration-with-on-premises-environments"></a>Intégration de Microsoft 365 à des environnements locaux
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
@@ -40,7 +40,7 @@ Vous pouvez intégrer Microsoft 365 à vos services de domaine Active Directory 
 
 Vous pouvez également utiliser les conseillers Azure Active Directory (Azure AD) pour obtenir des conseils d’installation personnalisés dans le Centre d'administration Microsoft 365 (vous devez être connecté à Microsoft 365) :
 
-- [guide d’installation Azure AD](https://aka.ms/aadpguidance)
+- [Guide d’installation d’Azure AD](https://aka.ms/aadpguidance)
 - [Synchroniser les utilisateurs à partir du répertoire de votre organisation](https://aka.ms/aadconnectpwsync)
 - [conseiller de déploiement Services ADFS (AD FS)](https://aka.ms/adfsguidance)
    
@@ -48,7 +48,7 @@ Vous pouvez également utiliser les conseillers Azure Active Directory (Azure AD
 
 Avant d’intégrer Microsoft 365 et un environnement local, vous devez également effectuer une [planification réseau et un réglage des performances](network-planning-and-performance.md). Vous souhaiterez également comprendre les [modèles d’identité](deploy-identity-solution-identity-model.md) disponibles. 
 
-Consultez [gérer Microsoft 365 comptes](manage-microsoft-365-accounts.md) pour obtenir la liste des outils que vous pouvez utiliser pour gérer Microsoft 365 comptes d’utilisateur. 
+Consultez [gérer les comptes Microsoft 365](manage-microsoft-365-accounts.md) pour obtenir la liste des outils que vous pouvez utiliser pour gérer les comptes d’utilisateurs Microsoft 365. 
   
 ## <a name="integrate-microsoft-365-with-ad-ds"></a>Intégrer Microsoft 365 à AD DS
 
@@ -62,23 +62,23 @@ Si vous souhaitez que les utilisateurs puissent se connecter à Microsoft 365 av
 
 ### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication-pta"></a>Synchronisation d’annuaires avec ou sans synchronisation de hachage de mot de passe ou authentification directe (PTA)
 
-Un utilisateur se connecte à son environnement local avec son compte d’utilisateur (domaine\nom d’utilisateur). Lorsqu’ils vont à Microsoft 365, ils doivent se reconnecter avec leur compte professionnel ou scolaire (user@domain.com). Le nom d’utilisateur est le même dans les deux environnements. Lorsque vous ajoutez PHS ou PTA, l’utilisateur a le même mot de passe pour les deux environnements, mais devra fournir à nouveau ces informations d’identification lors de la connexion à Microsoft 365. La synchronisation d’annuaires avec PHS est la synchronisation d’annuaires la plus couramment utilisée.
+Un utilisateur se connecte à son environnement local avec son compte d’utilisateur (domaine\nom d’utilisateur). Lorsqu’ils se connectent à Microsoft 365, ils doivent se reconnecter avec leur compte professionnel ou scolaire (user@domain.com). Le nom d’utilisateur est le même dans les deux environnements. Lorsque vous ajoutez PHS ou PTA, l’utilisateur a le même mot de passe pour les deux environnements, mais devra fournir à nouveau ces informations d’identification lors de la connexion à Microsoft 365. La synchronisation d’annuaires avec PHS est la synchronisation d’annuaires la plus couramment utilisée.
 
-Pour configurer la synchronisation d’annuaires, utilisez Azure AD Connecter. Pour obtenir des instructions, consultez [Configurer la synchronisation d’annuaires pour Microsoft 365](set-up-directory-synchronization.md) et [Azure AD Connecter avec des paramètres express](/azure/active-directory/hybrid/how-to-connect-install-express).
+Pour configurer la synchronisation d’annuaires, utilisez Azure AD Connect. Pour obtenir des instructions, consultez [Configurer la synchronisation d’annuaires pour Microsoft 365](set-up-directory-synchronization.md) et [Azure AD Connect avec des paramètres express](/azure/active-directory/hybrid/how-to-connect-install-express).
 
-En savoir plus sur [la préparation de la synchronisation d’annuaires à Microsoft 365](prepare-for-directory-synchronization.md).
+En savoir plus sur [la préparation de la synchronisation d’annuaires avec Microsoft 365](prepare-for-directory-synchronization.md).
 
 ### <a name="directory-synchronization-with-sso"></a>Synchronisation d’annuaires avec l’authentification unique
 
-Un utilisateur se connecte à son environnement local avec son compte d’utilisateur. Lorsqu’ils passent à Microsoft 365, ils sont soit connectés automatiquement, soit connectés à l’aide des mêmes informations d’identification qu’ils utilisent pour leur environnement local (domaine\nom d’utilisateur).
+Un utilisateur se connecte à son environnement local avec son compte d’utilisateur. Lorsqu’ils accédent à Microsoft 365, ils sont connectés automatiquement ou ils se connectent à l’aide des mêmes informations d’identification qu’ils utilisent pour leur environnement local (domaine\nom d’utilisateur).
 
-Pour configurer l’authentification unique, vous utilisez également Azure AD Connecter. Pour obtenir des instructions, consultez [Installation personnalisée de Azure AD Connecter](/azure/active-directory/hybrid/how-to-connect-install-custom).
+Pour configurer l’authentification unique, vous utilisez également Azure AD Connect. Pour obtenir des instructions, consultez [Installation personnalisée d’Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
 
 Pour plus d’informations, consultez [l’authentification unique](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
 ## <a name="azure-ad-connect"></a>Azure AD Connect
 
-Azure AD Connecter remplace les versions antérieures des outils d’intégration d’identité tels que DirSync et Azure AD Sync. Si vous souhaitez effectuer une mise à jour de Azure Active Directory Synchroniser vers Azure AD Connecter, consultez [les instructions de mise à niveau](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
+Azure AD Connect remplace les versions antérieures des outils d’intégration d’identité tels que DirSync et Azure AD Sync. Si vous souhaitez effectuer une mise à jour d’Azure Active Directory Sync vers Azure AD Connect, consultez [les instructions de mise à niveau](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
 
 ## <a name="see-also"></a>Voir aussi
 

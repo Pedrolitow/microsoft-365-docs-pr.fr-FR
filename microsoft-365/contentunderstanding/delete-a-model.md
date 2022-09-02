@@ -6,19 +6,19 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment supprimer un modèle de compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: fa0d6bb038b4fa80dbd376e824d5678ee9eb7cc3
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 66360c99f1316dfdc046d3fed971b11d53b97326
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66992057"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570202"
 ---
 # <a name="delete-a-model-in-microsoft-sharepoint-syntex"></a>Supprimer un modèle dans Microsoft SharePoint Syntex
 

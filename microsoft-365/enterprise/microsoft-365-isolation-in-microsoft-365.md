@@ -5,7 +5,7 @@ author: robmazz
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,26 +16,26 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Résumé : Explication de l’isolation et du contrôle d’accès dans les différentes applications de Microsoft 365.'
-ms.openlocfilehash: dbb5ceb8b0e1e4ef6bb80ba2c3c771fc6d6cac5b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7d978a4b5d864c9130fae3a61c11c0becb5e6870
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099386"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570312"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Isolation et contrôle d’accès dans Microsoft 365
 
 Azure Active Directory (Azure AD) et Microsoft 365 utilisent un modèle de données très complexe qui inclut des dizaines de services, des centaines d’entités, des milliers de relations et des dizaines de milliers d’attributs. À un niveau élevé, Azure AD et les répertoires de service sont les conteneurs de locataires et de destinataires qui sont synchronisés à l’aide de protocoles de réplication basés sur l’état. Outre les informations d’annuaire contenues dans Azure AD, chacune des charges de travail de service dispose de sa propre infrastructure de services d’annuaire.
  
-![Microsoft 365 synchronisation des données client.](../media/office-365-isolation-tenant-data-sync.png)
+![Synchronisation des données client Microsoft 365.](../media/office-365-isolation-tenant-data-sync.png)
 
-Dans ce modèle, il n’existe aucune source unique de données d’annuaire. Des systèmes spécifiques possèdent des éléments de données individuels, mais aucun système ne contient toutes les données. Microsoft 365 services collaborent avec Azure AD dans ce modèle de données. Azure AD est le « système de vérité » pour les données partagées, qui est généralement des données petites et statiques utilisées par chaque service. Le modèle fédéré utilisé dans Microsoft 365 et Azure AD fournit la vue partagée des données.
+Dans ce modèle, il n’existe aucune source unique de données d’annuaire. Des systèmes spécifiques possèdent des éléments de données individuels, mais aucun système ne contient toutes les données. Les services Microsoft 365 collaborent avec Azure AD dans ce modèle de données. Azure AD est le « système de vérité » pour les données partagées, qui est généralement des données petites et statiques utilisées par chaque service. Le modèle fédéré utilisé dans Microsoft 365 et Azure AD fournit la vue partagée des données.
 
-Microsoft 365 utilise à la fois le stockage physique et le stockage cloud Azure. Exchange Online (y compris Exchange Online Protection) et Skype Entreprise utiliser leur propre stockage pour les données client. SharePoint Online utilise à la fois SQL Server stockage et stockage Azure, d’où la nécessité d’une isolation supplémentaire des données client au niveau du stockage.
+Microsoft 365 utilise à la fois le stockage physique et le stockage cloud Azure. Exchange Online (y compris Exchange Online Protection) et Skype Entreprise utiliser leur propre stockage pour les données client. SharePoint Online utilise à la fois le stockage SQL Server et stockage Azure, d’où la nécessité d’une isolation supplémentaire des données client au niveau du stockage.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
-Exchange Online stocke les données client dans les boîtes aux lettres. Les boîtes aux lettres sont hébergées dans des bases de données ese (Extensible Stockage Engine) appelées bases de données de boîtes aux lettres. Cela inclut les boîtes aux lettres utilisateur, les boîtes aux lettres liées, les boîtes aux lettres partagées et les boîtes aux lettres de dossiers publics. Les boîtes aux lettres utilisateur incluent du contenu Skype Entreprise enregistré, tel que les historiques de conversation.
+Exchange Online stocke les données client dans les boîtes aux lettres. Les boîtes aux lettres sont hébergées dans des bases de données estensible Storage Engine (ESE) appelées bases de données de boîtes aux lettres. Cela inclut les boîtes aux lettres utilisateur, les boîtes aux lettres liées, les boîtes aux lettres partagées et les boîtes aux lettres de dossiers publics. Les boîtes aux lettres utilisateur incluent du contenu Skype Entreprise enregistré, tel que les historiques de conversation.
 
 Le contenu de la boîte aux lettres de l’utilisateur inclut :
 
@@ -61,37 +61,37 @@ Skype Entreprise stocke les données à différents endroits :
 
 SharePoint Online dispose de plusieurs mécanismes indépendants qui assurent l’isolation des données. Il stocke les objets sous forme de code abstrait dans les bases de données d’application. Par exemple, lorsqu’un utilisateur charge un fichier sur SharePoint Online, le fichier est désassemblé, traduit en code d’application et stocké dans plusieurs tables sur plusieurs bases de données.
 
-Si un utilisateur peut accéder directement au stockage contenant les données, le contenu n’est pas interprétable pour un être humain ou tout autre système que SharePoint Online. Ces mécanismes incluent le contrôle d’accès de sécurité et les propriétés. Toutes les ressources SharePoint Online sont sécurisées par le code d’autorisation et la stratégie RBAC, y compris au sein d’une location. La liste de contrôle d’accès (ACL) qui sécurise une ressource contient une identité authentifiée au niveau du locataire. SharePoint les données en ligne d’un locataire sont limitées aux identités authentifiées par le fournisseur d’authentification pour le locataire.
+Si un utilisateur peut accéder directement au stockage contenant les données, le contenu n’est pas interprétable pour un être humain ou tout autre système que SharePoint Online. Ces mécanismes incluent le contrôle d’accès de sécurité et les propriétés. Toutes les ressources SharePoint Online sont sécurisées par le code d’autorisation et la stratégie RBAC, y compris au sein d’une location. La liste de contrôle d’accès (ACL) qui sécurise une ressource contient une identité authentifiée au niveau du locataire. Les données SharePoint Online pour un locataire sont limitées aux identités authentifiées par le fournisseur d’authentification pour le locataire.
 
-En plus des listes de contrôle d’accès, une propriété de niveau client qui spécifie le fournisseur d’authentification (qui est le Azure AD propre au locataire) est écrite une seule fois et ne peut pas être modifiée une fois définie. Une fois que la propriété de locataire du fournisseur d’authentification a été définie pour un locataire, elle ne peut pas être modifiée à l’aide d’API exposées à un locataire.
+En plus des listes de contrôle d’accès, une propriété de niveau locataire qui spécifie le fournisseur d’authentification (qui est l’Azure AD propre au locataire) est écrite une seule fois et ne peut pas être modifiée une fois définie. Une fois que la propriété de locataire du fournisseur d’authentification a été définie pour un locataire, elle ne peut pas être modifiée à l’aide d’API exposées à un locataire.
 
 Un *SubscriptionId* unique est utilisé pour chaque locataire. Tous les sites clients appartiennent à un locataire et se voient attribuer un *SubscriptionId* unique au locataire. La propriété *SubscriptionId* d’un site est écrite une seule fois et est permanente. Une fois attribué à un locataire, un site ne peut pas être déplacé vers un autre locataire. *SubscriptionId* est la clé utilisée pour créer l’étendue de sécurité pour le fournisseur d’authentification et est lié au locataire.
 
-SharePoint Online utilise SQL Server et stockage Azure pour le stockage des métadonnées de contenu. La clé de partition du magasin de contenu est *SiteId* dans SQL. Lors de l’exécution d’une requête SQL, SharePoint Online utilise un *ID de site* vérifié dans le cadre d’une vérification *SubscriptionId* au niveau du locataire.
+SharePoint Online utilise SQL Server et Stockage Azure pour le stockage de métadonnées de contenu. La clé de partition du magasin de contenu est *SiteId* dans SQL. Lors de l’exécution d’une requête SQL, SharePoint Online utilise un *ID de site* vérifié dans le cadre d’une vérification *SubscriptionId* au niveau du locataire.
 
-SharePoint Online stocke le contenu chiffré des fichiers dans Microsoft Azure objets blob. Chaque batterie de serveurs SharePoint Online a son propre compte Microsoft Azure et tous les objets blob enregistrés dans Azure sont chiffrés individuellement avec une clé stockée dans le magasin de contenu SQL. Clé de chiffrement protégée dans le code par la couche d’autorisation et non exposée directement à l’utilisateur final. SharePoint Online dispose d’une surveillance en temps réel pour détecter quand une requête HTTP lit ou écrit des données pour plusieurs locataires. *L’ID d’abonnement* de l’identité de la demande est suivi par rapport à *l’SubscriptionId* de la ressource accessible. Les demandes d’accès aux ressources de plusieurs locataires ne doivent jamais se produire par les utilisateurs finaux. Les demandes de service dans un environnement multilocataire sont la seule exception. Par exemple, l’analyseur de recherche extrait les modifications de contenu d’une base de données entière en même temps. Cela implique généralement d’interroger des sites de plusieurs locataires dans une seule demande de service, ce qui est fait pour des raisons d’efficacité.
+SharePoint Online stocke le contenu de fichier chiffré dans les objets blob Microsoft Azure. Chaque batterie de serveurs SharePoint Online a son propre compte Microsoft Azure et tous les objets blob enregistrés dans Azure sont chiffrés individuellement avec une clé stockée dans le magasin de contenu SQL. Clé de chiffrement protégée dans le code par la couche d’autorisation et non exposée directement à l’utilisateur final. SharePoint Online dispose d’une surveillance en temps réel pour détecter quand une requête HTTP lit ou écrit des données pour plusieurs locataires. *L’ID d’abonnement* de l’identité de la demande est suivi par rapport à *l’SubscriptionId* de la ressource accessible. Les demandes d’accès aux ressources de plusieurs locataires ne doivent jamais se produire par les utilisateurs finaux. Les demandes de service dans un environnement multilocataire sont la seule exception. Par exemple, l’analyseur de recherche extrait les modifications de contenu d’une base de données entière en même temps. Cela implique généralement d’interroger des sites de plusieurs locataires dans une seule demande de service, ce qui est fait pour des raisons d’efficacité.
 
 ## <a name="teams"></a>Teams
 
 Vos données Teams sont stockées différemment, en fonction du type de contenu. 
 
-Consultez la [session d’atelier Ignite sur Microsoft Teams architecture](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) pour une discussion approfondie.
+Consultez la [session d’atelier Ignite sur l’architecture De Microsoft Teams](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) pour une discussion approfondie.
 
-### <a name="core-teams-customer-data"></a>Données principales sur les clients Teams
+### <a name="core-teams-customer-data"></a>Données client Core Teams
 
 Si votre locataire est approvisionné en Australie, au Canada, dans l’Union européenne, en France, en Allemagne, en Inde, au Japon, en Afrique du Sud, en Corée du Sud, en Suisse (y compris le Liechtenstein), aux Émirats arabes unis, au Royaume-Uni ou au États-Unis, Microsoft stocke les données client suivantes au repos uniquement dans cet emplacement :
 
-- Teams conversations, conversations d’équipe et de canal, images, messages vocaux et contacts.
+- Conversations Teams, conversations d’équipe et de canal, images, messages vocaux et contacts.
 - contenu du site SharePoint Online et fichiers stockés dans ce site ;
-- Fichiers chargés dans OneDrive pour le travail ou l’école.
+- Fichiers chargés sur OneDrive pour le travail ou l’école.
 
 #### <a name="chat-channel-messages-team-structure"></a>Conversation, messages de canal, structure d’équipe
 
-Chaque équipe de Teams est soutenue par un groupe Microsoft 365, son site SharePoint et sa boîte aux lettres Exchange. Les conversations privées (y compris les conversations de groupe), les messages envoyés dans le cadre d’une conversation dans un canal et la structure des équipes et des canaux sont stockés dans un service de conversation s’exécutant dans Azure. Les données sont également stockées dans un dossier masqué dans les boîtes aux lettres d’utilisateur et de groupe pour activer Information Protection fonctionnalités.
+Chaque équipe de Teams est soutenue par un groupe Microsoft 365 et son site SharePoint et sa boîte aux lettres Exchange. Les conversations privées (y compris les conversations de groupe), les messages envoyés dans le cadre d’une conversation dans un canal et la structure des équipes et des canaux sont stockés dans un service de conversation s’exécutant dans Azure. Les données sont également stockées dans un dossier masqué dans les boîtes aux lettres d’utilisateur et de groupe pour activer Information Protection fonctionnalités.
 
 #### <a name="voicemail-and-contacts"></a>Messagerie vocale et contacts
 
-Les messages vocaux sont stockés dans Exchange. Les contacts sont stockés dans Exchange magasin de données cloud. Exchange et le magasin cloud basé sur Exchange fournissent déjà la résidence des données dans chacune des zones géographiques du centre de données dans le monde entier. Pour toutes les équipes, la messagerie vocale et les contacts sont stockés dans le pays pour l’Australie, le Canada, la France, l’Allemagne, l’Inde, le Japon, les Émirats arabes unis, le Royaume-Uni, l’Afrique du Sud, la Corée du Sud, la Suisse (y compris le Liechtenstein) et le États-Unis. Pour tous les autres pays, les fichiers sont stockés aux États-Unis, en Europe ou Asia-Pacific emplacement en fonction de l’affinité client.
+Les messages vocaux sont stockés dans Exchange. Les contacts sont stockés dans le magasin de données cloud exchange. Exchange et le magasin cloud Exchange fournissent déjà la résidence des données dans chacune des zones géographiques du centre de données dans le monde entier. Pour toutes les équipes, la messagerie vocale et les contacts sont stockés dans le pays pour l’Australie, le Canada, la France, l’Allemagne, l’Inde, le Japon, les Émirats arabes unis, le Royaume-Uni, l’Afrique du Sud, la Corée du Sud, la Suisse (y compris le Liechtenstein) et le États-Unis. Pour tous les autres pays, les fichiers sont stockés aux États-Unis, en Europe ou Asia-Pacific emplacement en fonction de l’affinité client.
 
 #### <a name="images-and-media"></a>Images et médias
 
@@ -99,4 +99,4 @@ Les médias utilisés dans les conversations (à l’exception des GIF Giphy qui
 
 #### <a name="files"></a>Fichiers
 
-Les fichiers (y compris OneNote et Wiki) que quelqu’un partage dans un canal sont stockés dans le site SharePoint de l’équipe. Les fichiers partagés dans une conversation privée ou une conversation lors d’une réunion ou d’un appel sont chargés et stockés dans le OneDrive pour le compte professionnel ou scolaire de l’utilisateur qui partage le fichier. Exchange, SharePoint et OneDrive fournissent déjà la résidence des données dans chacune des zones géographiques du centre de données dans le monde entier. Ainsi, pour les clients existants, tous les fichiers, blocs-notes OneNote, contenu wiki Teams et boîtes aux lettres qui font partie de l’expérience Teams sont déjà stockés dans l’emplacement en fonction de l’affinité de votre locataire. Les fichiers sont stockés dans le pays pour l’Australie, le Canada, la France, l’Allemagne, l’Inde, le Japon, les Émirats arabes unis, le Royaume-Uni, l’Afrique du Sud, la Corée du Sud et la Suisse (y compris le Liechtenstein). Pour tous les autres pays, les fichiers sont stockés aux États-Unis, en Europe ou en Asie-Pacifique en fonction de l’affinité de locataire.
+Les fichiers (y compris OneNote et Wiki) que quelqu’un partage dans un canal sont stockés dans le site SharePoint de l’équipe. Les fichiers partagés dans une conversation privée ou une conversation pendant une réunion ou un appel sont chargés et stockés dans le compte OneDrive professionnel ou scolaire de l’utilisateur qui partage le fichier. Exchange, SharePoint et OneDrive fournissent déjà la résidence des données dans chacune des zones géographiques du centre de données dans le monde entier. Par conséquent, pour les clients existants, tous les fichiers, blocs-notes OneNote, contenu wiki Teams et boîtes aux lettres qui font partie de l’expérience Teams sont déjà stockés dans l’emplacement en fonction de l’affinité de votre locataire. Les fichiers sont stockés dans le pays pour l’Australie, le Canada, la France, l’Allemagne, l’Inde, le Japon, les Émirats arabes unis, le Royaume-Uni, l’Afrique du Sud, la Corée du Sud et la Suisse (y compris le Liechtenstein). Pour tous les autres pays, les fichiers sont stockés aux États-Unis, en Europe ou en Asie-Pacifique en fonction de l’affinité de locataire.
