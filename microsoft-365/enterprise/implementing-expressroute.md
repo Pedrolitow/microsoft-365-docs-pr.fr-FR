@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/5/2017
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Découvrez comment implémenter ExpressRoute pour Office 365, qui fournit un autre chemin de routage à de nombreux services Office 365 accessibles sur Internet.
-ms.openlocfilehash: d577a30d97630b32fa080c9d17620b429562c5df
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e3a63aea6f0947127d05de6e8bd90e386646dc59
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090360"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560304"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implémentation d’ExpressRoute pour Office 365
 
@@ -91,7 +91,7 @@ Pour réduire le routage et d’autres complexités réseau, nous vous recommand
   
 Votre catalogue de trafic réseau doit contenir des listes de toutes les connexions réseau entrantes et sortantes que vous aurez entre votre réseau local et Microsoft.
   
-- Les flux de trafic réseau sortant sont tous les scénarios dans lesquels une connexion est initiée à partir de votre environnement local, par exemple à partir de clients ou serveurs internes, avec une destination du services Microsoft. Ces connexions peuvent être directes à Office 365 ou indirectes, par exemple lorsque la connexion passe par des serveurs proxy, des pare-feu ou d’autres périphériques réseau sur le chemin d’accès à Office 365.
+- Les flux de trafic réseau sortant sont tous les scénarios dans lesquels une connexion est initiée à partir de votre environnement local, par exemple à partir de clients ou serveurs internes, avec une destination des services Microsoft. Ces connexions peuvent être directes à Office 365 ou indirectes, par exemple lorsque la connexion passe par des serveurs proxy, des pare-feu ou d’autres périphériques réseau sur le chemin d’accès à Office 365.
 
 - Les flux de trafic réseau entrant sont tous les scénarios où une connexion est initiée à partir du cloud Microsoft vers un hôte local. Ces connexions doivent généralement passer par le pare-feu et d’autres infrastructures de sécurité requises par la stratégie de sécurité du client pour les flux provenant de l’extérieur.
 
@@ -101,9 +101,9 @@ Pour chaque service qui nécessite une connexion sortante, vous devez décrire l
   
 Pour chaque service qui nécessite une connexion entrante, vous aurez besoin d’informations supplémentaires. Les serveurs dans le cloud Microsoft établissent des connexions à votre réseau local. Pour vous assurer que les connexions sont établies correctement, vous devez décrire tous les aspects de cette connectivité, y compris ; les entrées DNS publiques pour les services qui acceptent ces connexions entrantes, les adresses IP IPv4 au format CIDR, l’équipement ISP impliqué et la façon dont nat entrant ou NAT source est géré pour ces connexions.
   
-Les connexions entrantes doivent être examinées, qu’elles se connectent via Internet ou ExpressRoute pour garantir que le routage asymétrique n’a pas été introduit. Dans certains cas, les points de terminaison locaux auxquels Office 365 services lancent des connexions entrantes peuvent également être accessibles par d’autres microsoft et non services Microsoft. Il est primordial que l’activation du routage ExpressRoute vers ces services à des fins Office 365 ne brise pas d’autres scénarios. Dans de nombreux cas, les clients peuvent avoir besoin d’implémenter des modifications spécifiques à leur réseau interne, telles que la NAT basée sur la source, pour s’assurer que les flux entrants de Microsoft restent symétriques une fois ExpressRoute activé.
+Les connexions entrantes doivent être examinées, qu’elles se connectent via Internet ou ExpressRoute pour garantir que le routage asymétrique n’a pas été introduit. Dans certains cas, les points de terminaison locaux auxquels Office 365 services lancent des connexions entrantes peuvent également être accessibles par d’autres services Microsoft et non-Microsoft. Il est primordial que l’activation du routage ExpressRoute vers ces services à des fins Office 365 ne brise pas d’autres scénarios. Dans de nombreux cas, les clients peuvent avoir besoin d’implémenter des modifications spécifiques à leur réseau interne, telles que la NAT basée sur la source, pour s’assurer que les flux entrants de Microsoft restent symétriques une fois ExpressRoute activé.
   
-Voici un exemple du niveau de détail requis. Dans ce cas, Exchange hybride routerait vers le système local via ExpressRoute. 
+Voici un exemple du niveau de détail requis. Dans ce cas, Exchange Hybrid serait acheminé vers le système local via ExpressRoute. 
 
 |Connection, propriété   |Valeur  |
 |----------|-----------|
@@ -129,7 +129,7 @@ Voici un exemple de service sortant uniquement :
 |**Point de terminaison local (source)** <br/> |Station de travail utilisateur  <br/> |
 |**Point de terminaison Office 365 public (destination)** <br/> |SharePoint Online (adresses IP)  <br/> |
 |**Entrée DNS publique (Internet)** <br/> |\*.sharepoint.com (et plus de noms de domaine complets)  <br/> |
-|**références CDN** <br/> |cdn.sharepointonline.com (et plus de noms de domaine complets) : adresses IP gérées par CDN fournisseurs)  <br/> |
+|**Références CDN** <br/> |cdn.sharepointonline.com (et plus de noms de domaine complets) : adresses IP gérées par les fournisseurs CDN)  <br/> |
 |**Publication IP et NAT en usage** <br/> |**Chemin Internet/NAT source** : 1.1.1.0/24  <br/> **Chemin ExpressRoute/NAT source** : 1.1.2.0/24 (Chicago) et 1.1.3.0/24 (Dallas)  <br/> |
 |**Méthode de connectivité** <br/> |**Internet** : via le proxy de couche 7 (fichier .pac)  <br/> **ExpressRoute** : routage direct (aucun proxy)  <br/> |
 |**Contrôles de sécurité/périmètre** <br/> |**Chemin Internet** : DeviceID_002  <br/> **Chemin ExpressRoute** : DeviceID_003  <br/> |
@@ -277,7 +277,7 @@ ExpressRoute pour Office 365 a des exigences réseau *sortantes* qui peuvent ne 
 
 4. Les points de terminaison ne doivent pas être utilisés pour la connectivité aux services Microsoft qui ne sont pas configurés sur ExpressRoute.
 
-Si votre conception réseau ne répond pas à ces exigences, il existe un risque élevé que vos utilisateurs rencontrent des échecs de connectivité à Office 365 et à d’autres services Microsoft en raison d’un holage noir de route ou d’un routage asymétrique. Cela se produit lorsque les demandes d’services Microsoft sont routées via ExpressRoute, mais que les réponses sont routées sur Internet, ou inversement, et que les réponses sont supprimées par des périphériques réseau avec état tels que des pare-feu.
+Si votre conception réseau ne répond pas à ces exigences, il existe un risque élevé que vos utilisateurs rencontrent des échecs de connectivité à Office 365 et à d’autres services Microsoft en raison d’un holage noir de routage ou d’un routage asymétrique. Cela se produit lorsque les demandes adressées aux services Microsoft sont routées via ExpressRoute, mais que les réponses sont routées sur Internet, ou inversement, et que les réponses sont supprimées par des appareils réseau avec état tels que des pare-feu.
   
 La méthode la plus courante que vous pouvez utiliser pour répondre aux exigences ci-dessus consiste à utiliser la nat source, implémentée dans le cadre de votre réseau ou fournie par votre opérateur ExpressRoute. La nat source vous permet d’extraire les détails et l’adressage IP privé de votre réseau Internet à partir d’ExpressRoute et ; associés à des annonces de routage IP appropriées, fournissent un mécanisme simple pour garantir la symétrie du chemin d’accès. Si vous utilisez des appareils réseau avec état spécifiques aux emplacements de peering ExpressRoute, vous devez implémenter des pools NAT distincts pour chaque peering ExpressRoute pour garantir la symétrie du chemin d’accès.
   
@@ -288,7 +288,7 @@ Ajoutez les modifications de la connectivité sortante au diagramme de topologie
 ### <a name="design-inbound-service-connectivity"></a>Concevoir une connectivité de service entrant
 <a name="inbound"> </a>
 
-La plupart des déploiements de Office 365 d’entreprise supposent une certaine forme de connectivité entrante entre les Office 365 et les services locaux, par exemple pour les Exchange, les SharePoint et Skype Entreprise scénarios hybrides, les migrations de boîtes aux lettres et l’authentification à l’aide de l’infrastructure ADFS. Quand ExpressRoute vous activez un chemin de routage supplémentaire entre votre réseau local et Microsoft pour la connectivité sortante, ces connexions entrantes peuvent être affectées par inadvertance par le routage asymétrique, même si vous envisagez de faire en sorte que ces flux continuent à utiliser Internet. Quelques précautions décrites ci-dessous sont recommandées pour s’assurer qu’il n’y a aucun impact sur les flux entrants basés sur Internet de Office 365 vers des systèmes locaux.
+La plupart des déploiements Office 365 d’entreprise supposent une certaine forme de connectivité entrante entre Office 365 et des services locaux, tels que pour Exchange, SharePoint et Skype Entreprise scénarios hybrides, les migrations de boîtes aux lettres et l’authentification à l’aide de l’infrastructure ADFS. Quand ExpressRoute vous activez un chemin de routage supplémentaire entre votre réseau local et Microsoft pour la connectivité sortante, ces connexions entrantes peuvent être affectées par inadvertance par le routage asymétrique, même si vous envisagez de faire en sorte que ces flux continuent à utiliser Internet. Quelques précautions décrites ci-dessous sont recommandées pour s’assurer qu’il n’y a aucun impact sur les flux entrants basés sur Internet de Office 365 vers des systèmes locaux.
   
 Pour réduire les risques de routage asymétrique pour les flux de trafic réseau entrant, toutes les connexions entrantes doivent utiliser la nat source avant d’être routées vers des segments de votre réseau, qui ont une visibilité du routage dans ExpressRoute. Si les connexions entrantes sont autorisées sur un segment réseau avec une visibilité du routage dans ExpressRoute sans nat source, les demandes provenant de Office 365 entrent à partir d’Internet, mais la réponse revient à Office 365 préférera le chemin réseau ExpressRoute vers le réseau Microsoft, ce qui entraîne un routage asymétrique.
   
@@ -310,13 +310,13 @@ Dans certains cas, vous pouvez choisir de diriger certains flux entrants sur des
 
 4. Évaluez soigneusement ces flux de trafic réseau entrant pour vous assurer que la sécurité et les contrôles réseau appropriés sont appliqués conformément aux stratégies de sécurité et de réseau de votre entreprise.
 
-5. Une fois vos points de terminaison entrants locaux publiés sur Microsoft via ExpressRoute, ExpressRoute devient le chemin d’accès de routage par défaut vers ces points de terminaison pour tous les services Microsoft, y compris les Office 365. Cela signifie que ces sous-réseaux de point de terminaison doivent être utilisés uniquement pour les communications avec Office 365 services et aucun autre service sur le réseau Microsoft. Sinon, votre conception entraîne un routage asymétrique où les connexions entrantes d’autres services Microsoft préfèrent acheminer le trafic entrant via ExpressRoute, tandis que le chemin d’accès de retour utilisera Internet.
+5. Une fois vos points de terminaison entrants locaux publiés sur Microsoft via ExpressRoute, ExpressRoute devient le chemin d’accès de routage par défaut vers ces points de terminaison pour tous les services Microsoft, y compris Office 365. Cela signifie que ces sous-réseaux de point de terminaison doivent être utilisés uniquement pour les communications avec Office 365 services et aucun autre service sur le réseau Microsoft. Sinon, votre conception entraîne un routage asymétrique où les connexions entrantes d’autres services Microsoft préfèrent acheminer le trafic entrant via ExpressRoute, tandis que le chemin d’accès de retour utilisera Internet.
 
 6. Si un circuit ExpressRoute ou un emplacement de réunion est arrêté, vous devez vous assurer que les points de terminaison entrants locaux sont toujours disponibles pour accepter les demandes sur un chemin d’accès réseau distinct. Cela peut signifier la publicité de sous-réseaux pour ces points de terminaison via plusieurs circuits ExpressRoute.
 
 7. Nous vous recommandons d’appliquer la nat source pour tous les flux de trafic réseau entrant entrants entrants entrants dans votre réseau via ExpressRoute, en particulier lorsque ces flux traversent des périphériques réseau avec état tels que des pare-feu.
 
-8. Certains services locaux, tels que le proxy ADFS ou la découverte automatique Exchange, peuvent recevoir des demandes entrantes provenant des services Office 365 et des utilisateurs à partir d’Internet. Pour ces demandes Office 365 cible le même nom de domaine complet que les demandes des utilisateurs sur Internet. Autoriser les connexions utilisateur entrantes à partir d’Internet vers ces points de terminaison locaux, tout en forçant Office 365 connexions à utiliser ExpressRoute, représente une complexité de routage importante. Pour la grande majorité des clients implémentant des scénarios aussi complexes sur ExpressRoute n’est pas recommandé en raison de considérations opérationnelles. Cette surcharge supplémentaire inclut la gestion des risques liés au routage asymétrique et vous obligera à gérer soigneusement les publicités et les stratégies de routage sur plusieurs dimensions.
+8. Certains services locaux, tels que le proxy ADFS ou la découverte automatique Exchange, peuvent recevoir des demandes entrantes des services Office 365 et des utilisateurs à partir d’Internet. Pour ces demandes Office 365 cible le même nom de domaine complet que les demandes des utilisateurs sur Internet. Autoriser les connexions utilisateur entrantes à partir d’Internet vers ces points de terminaison locaux, tout en forçant Office 365 connexions à utiliser ExpressRoute, représente une complexité de routage importante. Pour la grande majorité des clients implémentant des scénarios aussi complexes sur ExpressRoute n’est pas recommandé en raison de considérations opérationnelles. Cette surcharge supplémentaire inclut la gestion des risques liés au routage asymétrique et vous obligera à gérer soigneusement les publicités et les stratégies de routage sur plusieurs dimensions.
 
 ### <a name="update-your-network-topology-plan-to-show-how-you-would-avoid-asymmetric-routes"></a>Mettez à jour votre plan de topologie réseau pour montrer comment éviter les itinéraires asymétriques
 <a name="asymmetric"> </a>
@@ -478,9 +478,9 @@ Voici quelques exemples d’activités de test.
 
 9. Tester les fonctionnalités au niveau de l’application pour Exchange Online.
 
-  - Testez Outlook est en mesure de se connecter à Exchange Online et d’envoyer/recevoir des e-mails.
+  - Test outlook est en mesure de se connecter à Exchange Online et d’envoyer/recevoir des e-mails.
 
-  - Test Outlook est en mesure d’utiliser le mode en ligne.
+  - Test outlook est en mesure d’utiliser le mode en ligne.
 
   - Testez la connectivité des smartphones et la fonctionnalité d’envoi/réception.
 
@@ -488,7 +488,7 @@ Voici quelques exemples d’activités de test.
 
   - Testez OneDrive Entreprise client de synchronisation.
 
-  - Testez SharePoint l’accès web en ligne.
+  - Testez l’accès web SharePoint Online.
 
 11. Testez les fonctionnalités au niveau de l’application pour Skype Entreprise scénarios d’appel :
 

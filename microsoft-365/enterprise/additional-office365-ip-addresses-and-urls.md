@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/15/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service Web de point de terminaison n’inclut pas quelques points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: 0d8980840e75bc08c8414bcfa5c99baf8a5cacd0
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: 879bd66783caf6f65c8721c2c453e03ddb2980ad
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67449970"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560634"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Autres points de terminaison non inclus dans le service Web d’adresse IP et d’URL Office 365
 

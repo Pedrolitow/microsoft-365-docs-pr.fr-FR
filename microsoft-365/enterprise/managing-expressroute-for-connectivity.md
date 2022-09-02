@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 7/13/2017
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Découvrez comment gérer ExpressRoute pour Office 365, y compris les zones courantes à configurer comme le filtrage de préfixe, la sécurité et la conformité.
-ms.openlocfilehash: 493a7c0ca14d05a2b84763b9e9485f828574a930
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 50f4e345c1a0a2095f53e1ad85ffe30297140584
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753867"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560072"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestion d’ExpressRoute pour la connectivité d’Office 365
 
@@ -86,11 +86,11 @@ Il existe plusieurs scénarios facultatifs qui nécessitent que Microsoft établ
 
 - Courrier d’un locataire Exchange Online vers un hôte local.
 
-- SharePoint courrier en ligne envoyé de SharePoint Online à un hôte local.
+- Courrier SharePoint Online envoyé de SharePoint Online à un hôte local.
 
-- [SharePoint recherche hybride fédérée](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
+- [Recherche hybride fédérée SharePoint](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 
-- [SharePoint BCS hybride](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
+- [BcS hybride SharePoint](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
 - [Skype Entreprise fédération hybride](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) et/ou [Skype Entreprise](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 

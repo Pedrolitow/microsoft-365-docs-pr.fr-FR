@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c6a2f676839caefc34b9dff03f860d04a260de0c
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 3e9111edf7400ff09b366783a45ee40397bec81a
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384921"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560238"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Résoudre Microsoft Defender pour point de terminaison problèmes de réponse en direct
 
@@ -64,9 +64,8 @@ Si, lors de la tentative d’action pendant une session de réponse en direct, v
 
 La réponse dynamique tire parti de l’inscription du capteur Defender pour point de terminaison avec le service WNS dans Windows. Si vous rencontrez des problèmes de connectivité avec la réponse en direct, confirmez les détails suivants :
 
-1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, consultez [Configurer les paramètres de proxy d’appareil et de connectivité Internet](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
-2. WpnService (service système de notifications Push Windows) n’est pas désactivé.
-3. La connectivité WpnService avec le cloud WNS n’est pas désactivée via la stratégie de groupe ou le paramètre GPM. [L’option « Désactiver l’utilisation du réseau de notifications »](/windows/client-management/mdm/policy-csp-notifications) ne doit pas être définie sur « 1 ».
+1. WpnService (service système de notifications Push Windows) n’est pas désactivé.
+2. La connectivité WpnService avec le cloud WNS n’est pas désactivée via la stratégie de groupe ou le paramètre GPM. [L’option « Désactiver l’utilisation du réseau de notifications »](/windows/client-management/mdm/policy-csp-notifications) ne doit pas être définie sur « 1 ».
 
 Reportez-vous aux articles ci-dessous pour bien comprendre le comportement et les exigences du service WpnService :
 

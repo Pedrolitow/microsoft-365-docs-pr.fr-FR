@@ -1,12 +1,12 @@
 ---
-title: Attribuer des licences Microsoft 365 aux comptes d’utilisateur
+title: Attribuer des licences Microsoft 365 à des comptes d’utilisateurs
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -26,26 +26,26 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment attribuer des licences Microsoft 365 à des comptes d’utilisateur, individuellement ou en fonction de l’appartenance au groupe.
-ms.openlocfilehash: ab9769aa4dee6a9f7982f72f377b0c7e0d3f444e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7d81cbc3a261080a1e834e7d44fabea67042bb12
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091410"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560722"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Attribuer des licences Microsoft 365 aux comptes d’utilisateur
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Attribuer des licences Microsoft 365 à des comptes d’utilisateurs
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Pour le modèle d’identité cloud uniquement, vous pouvez attribuer des licences Microsoft 365 aux comptes d’utilisateur lors de leur création, selon la façon dont vous les créez.
+Pour le modèle d’identité cloud uniquement, vous pouvez attribuer des licences Microsoft 365 à des comptes d’utilisateur au fur et à mesure de leur création, selon la façon dont vous les créez.
 
-Pour le modèle d’identité hybride, lorsque les comptes d’utilisateurs services de domaine Active Directory (AD DS) sont synchronisés pour la première fois, ils ne reçoivent pas automatiquement un emplacement ou une licence Microsoft 365. **Vous devez configurer chaque compte d’utilisateur avec un emplacement utilisateur avant ou avec l’attribution d’une licence.**
+Pour le modèle d’identité hybride, lorsque les comptes d’utilisateur services de domaine Active Directory (AD DS) sont synchronisés pour la première fois, ils ne reçoivent pas automatiquement un emplacement ou une licence Microsoft 365. **Vous devez configurer chaque compte d’utilisateur avec un emplacement utilisateur avant ou avec l’attribution d’une licence.**
 
-Dans les deux cas, vous devez attribuer une licence à des comptes d’utilisateur afin que vos utilisateurs puissent accéder à Microsoft 365 services, tels que la messagerie électronique et les Microsoft Teams.
+Dans les deux cas, vous devez attribuer une licence à des comptes d’utilisateur afin que vos utilisateurs puissent accéder aux services Microsoft 365, tels que la messagerie électronique et Microsoft Teams.
 
 Vous pouvez attribuer des licences à des comptes d’utilisateur individuellement ou automatiquement par le biais de l’appartenance à un groupe.
 
-Pour affecter Microsoft 365 licences à des comptes d’utilisateur individuels, vous pouvez utiliser :
+Pour affecter des licences Microsoft 365 à des comptes d’utilisateur individuels, vous pouvez utiliser :
 
 - [Le Centre d'administration Microsoft 365](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)

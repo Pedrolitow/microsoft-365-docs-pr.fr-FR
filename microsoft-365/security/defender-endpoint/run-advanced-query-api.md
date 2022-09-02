@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8eb2fdc1301b340c0907f3dc71b852488ccb64b6
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6a686892a0a0e3753038c9296a14a4eaa36cbd3f
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331552"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560260"
 ---
 # <a name="advanced-hunting-api"></a>API de chasse avancée
 
@@ -44,7 +44,7 @@ ms.locfileid: "67331552"
 
 1. Vous ne pouvez exécuter une requête que sur les données des 30 derniers jours.
 
-2. Les résultats incluent un maximum de 100 000 lignes.
+2. Les résultats incluent un maximum de 10 000 lignes.
 
 3. Le nombre d’exécutions est limité par locataire :
    - Appels d’API : jusqu’à 45 appels par minute, jusqu’à 1 500 appels par heure.

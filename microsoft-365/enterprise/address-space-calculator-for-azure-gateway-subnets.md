@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 01/07/2021
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 description: 'Résumé : Calculer l’espace d’adressage d’un sous-réseau de passerelle Azure avec C3, Python ou PowerShell.'
-ms.openlocfilehash: a19233b6ec68c92dbf65ecb6a73fc1a0a16e6d31
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: af4c3b29de000ccead9bd71ff05168e05c7d005a
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094877"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560150"
 ---
 # <a name="address-space-calculator-for-azure-gateway-subnets"></a>Calculatrice d’espace d’adressage pour les sous-réseaux de passerelle Azure
 

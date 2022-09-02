@@ -8,19 +8,19 @@ manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Découvrir comment une organisation qui déploie la dernière version utilise des canaux pour les applications Windows 10 et Microsoft 365.
-ms.openlocfilehash: 43cd5deed9801de6ff044781bebf9d96cdac7c12
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 538759d0b7edd0711cfbc6d9862f496d36e1b5f2
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754707"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560612"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Exemple de déploiement à grande échelle des dernières versions
 

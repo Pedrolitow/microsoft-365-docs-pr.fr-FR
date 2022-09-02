@@ -1,12 +1,12 @@
 ---
-title: Supprimer Microsoft 365 comptes d’utilisateur avec PowerShell
+title: Supprimer des comptes d’utilisateur Microsoft 365 avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,15 +19,15 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Découvrez comment utiliser différents modules dans PowerShell pour supprimer Microsoft 365 comptes d’utilisateur.
-ms.openlocfilehash: b3d273e6f2274b43018848e5439f431281a54df8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment utiliser différents modules dans PowerShell pour supprimer des comptes d’utilisateurs Microsoft 365.
+ms.openlocfilehash: 3ee58698400944b27f6e19d154d7a9d0c8bfccc1
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093435"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560216"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Supprimer Microsoft 365 comptes d’utilisateur avec PowerShell
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Supprimer des comptes d’utilisateur Microsoft 365 avec PowerShell
 
 Vous pouvez utiliser PowerShell pour Microsoft 365 pour supprimer et restaurer des comptes d’utilisateur.
 
@@ -47,7 +47,7 @@ Après vous être connecté, utilisez la syntaxe suivante pour supprimer un comp
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-Cet exemple montre comment supprimer le compte d’utilisateur *fabricec\@ litwareinc.com*.
+Cet exemple supprime le compte d’utilisateur *fabricec\@litwareinc.com*.
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
@@ -105,7 +105,7 @@ Pour restaurer un compte d’utilisateur supprimé pendant la période de grâce
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-Cet exemple restaure le compte supprimé *Litwareinc.com.\@*
+Cet exemple montre comment restaurer le compte supprimé *Be réinit litwareinc.com\@.*
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com

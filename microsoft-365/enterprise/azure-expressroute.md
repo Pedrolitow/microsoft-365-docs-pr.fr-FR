@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Découvrez comment utiliser Azure ExpressRoute avec Office 365 et planifier le projet d’implémentation réseau si vous déployez avec lui.
-ms.openlocfilehash: 1350bf73fdddd2141a2df1cbcec5edebeacf7ad4
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: ecaab47f3b7f5e5dcd203f6b8d2cdfb15143e182
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754287"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560700"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute pour Office 365
 
@@ -39,7 +39,7 @@ Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment pl
 > Microsoft Defender pour point de terminaison ne fournit pas d’intégration à Azure ExpressRoute. Bien que cela n’empêche pas les clients de définir des règles ExpressRoute qui permettent la connectivité d’un réseau privé à Microsoft Defender pour point de terminaison services cloud, il incombe au client de gérer les règles à mesure que le service ou l’infrastructure cloud évolue.
 
 > [!NOTE]
-> Nous ne recommandons pas ExpressRoute pour Microsoft 365, car il ne fournit pas le meilleur modèle de connectivité pour le service dans la plupart des cas. Par conséquent, l’autorisation Microsoft est nécessaire pour utiliser ce modèle de connectivité pour Microsoft 365. Nous passons en revue chaque demande du client et autorisons ExpressRoute pour Microsoft 365 uniquement dans les rares scénarios où cela est nécessaire. Lisez le [guide ExpressRoute pour Microsoft 365](https://aka.ms/erguide) pour plus d’informations et après une révision complète du document avec vos équipes de productivité, de réseau et de sécurité, collaborez avec votre équipe de compte Microsoft pour soumettre une exception si nécessaire. Les abonnements non autorisés qui tentent de créer des filtres de routage pour Office 365 recevront un [message d’erreur](https://support.microsoft.com/kb/3181709).
+> Nous ne recommandons pas ExpressRoute pour Microsoft 365, car il ne fournit pas le meilleur modèle de connectivité pour le service dans la plupart des cas. Par conséquent, l’autorisation Microsoft est nécessaire pour utiliser ce modèle de connectivité pour Microsoft 365. Nous passons en revue chaque demande du client et n’autorisons ExpressRoute pour Microsoft 365 que dans les rares scénarios où cela est nécessaire. Lisez le [guide ExpressRoute pour Microsoft 365 pour](https://aka.ms/erguide) plus d’informations et après une révision complète du document avec vos équipes de productivité, de réseau et de sécurité, collaborez avec votre équipe de compte Microsoft pour soumettre une exception si nécessaire. Les abonnements non autorisés qui tentent de créer des filtres de routage pour Office 365 recevront un [message d’erreur](https://support.microsoft.com/kb/3181709).
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>Planification d’Azure ExpressRoute pour Office 365
 
@@ -64,10 +64,10 @@ Le tableau suivant répertorie les services Office 365 pris en charge via Expres
 
 | Applications incluses |
 |:-----|
-|Exchange Online <sup>1</sup> <br/> Exchange Online Protection <sup>1</sup> <br/> Delve <sup>1</sup> <br/> |
+|Exchange Online <sup>1</sup> <br/> Exchange Online Protection <sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype Entreprise Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive Entreprise <sup>1</sup> <br/> Project Online <sup>1</sup> <br/> |
-|Portail et partagé<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connecter <sup>1</sup> <br/> Office <sup>1</sup> <br/> |
+|Portail et partagé<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
 <sup>1</sup> Chacune de ces applications a des exigences de connectivité Internet non prises en charge via ExpressRoute. Pour plus d’informations, consultez [l’article sur les points de terminaison Office 365](./urls-and-ip-address-ranges.md).
 
@@ -127,6 +127,6 @@ Vous êtes prêt à vous inscrire à [ExpressRoute pour Office 365](https://aka.
 
 [Paramétrage des performances et du réseau Office 365](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Articles associés
+## <a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de Microsoft 365 Entreprise](microsoft-365-overview.md)

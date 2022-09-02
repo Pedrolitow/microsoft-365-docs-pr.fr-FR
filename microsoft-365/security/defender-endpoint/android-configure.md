@@ -2,7 +2,7 @@
 title: Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android
 description: Décrit comment configurer Microsoft Defender pour point de terminaison sur Android
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mde, android, configuration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 596ed2681df34ef288fadd4f28f96b1a8aebee73
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.subservice: mde
+ms.openlocfilehash: 5a644d63c2e07ea03c98cba6d9925864381161b0
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175551"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560964"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour point de terminaison pour des fonctionnalités Android
 
@@ -46,6 +46,8 @@ Defender pour point de terminaison sur Android permet aux administrateurs de con
 
 ## <a name="configure-web-protection"></a>Configurer la protection web
 Defender pour point de terminaison sur Android permet aux administrateurs informatiques de configurer la fonctionnalité de protection web. Cette fonctionnalité est disponible dans le centre microsoft Endpoint Manager Administration.
+
+La [protection web](web-protection-overview.md) permet de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Notez que l’anti-hameçonnage et les indicateurs personnalisés (URL et adresses IP) sont pris en charge dans le cadre de la protection web. Le filtrage de contenu web n’est actuellement pas pris en charge sur les plateformes mobiles.
 
 > [!NOTE]
 > Defender pour point de terminaison sur Android utiliserait un VPN pour fournir la fonctionnalité Protection Web. Il ne s’agit pas d’un VPN normal et d’un VPN local/auto-bouclage qui ne prend pas le trafic en dehors de l’appareil.

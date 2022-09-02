@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 76c53ce599b811ed868eb51e94e0cf0466987944
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 783ff81d7317792a99c6ad6ad2e584c843466001
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522673"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560678"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour point de terminaison sur iOS
 
@@ -56,7 +56,7 @@ Déployez Defender pour point de terminaison sur iOS via Portail d'entreprise In
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-deploy-1.png" alt-text="Onglet Ajouter des applications dans le Centre de Endpoint Manager Administration Microsoft" lightbox="images/ios-deploy-1.png":::
 
-1. Dans la page **Ajouter une application**, cliquez sur **Rechercher dans le App Store** et tapez **Microsoft Defender pour point de terminaison** dans la barre de recherche. Dans la section résultats de la recherche, cliquez sur *Microsoft Defender pour point de terminaison*, puis sur **Sélectionner**.
+1. Dans la page **Ajouter une application**, cliquez sur **Rechercher dans le App Store** et tapez **Microsoft Defender** dans la barre de recherche. Dans la section résultats de la recherche, cliquez sur *Microsoft Defender* , puis sur **Sélectionner**.
 
 1. Sélectionnez **iOS 11.0** comme système d’exploitation minimal. Passez en revue les autres informations sur l’application, puis cliquez sur **Suivant**.
 

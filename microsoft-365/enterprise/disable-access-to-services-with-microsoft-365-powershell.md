@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -20,25 +20,25 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Dans cet article, découvrez comment utiliser PowerShell pour désactiver l’accès aux services Microsoft 365 pour les utilisateurs.
-ms.openlocfilehash: 0acd174fce25e0332aa8f927595657e4d0a464b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c84c1c783d6c20b2dd41e51c7375f0834519ff45
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097709"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560106"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Désactiver l’accès aux services Microsoft 365 avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Lorsqu’une licence d’un plan de licence est attribuée à un compte Microsoft 365, Microsoft 365 services sont mis à la disposition de l’utilisateur à partir de cette licence. Toutefois, vous pouvez contrôler les services Microsoft 365 auxquels l’utilisateur peut accéder. Par exemple, même si la licence autorise l’accès au service SharePoint Online, vous pouvez désactiver l’accès à celui-ci. Vous pouvez utiliser PowerShell pour désactiver l’accès à un nombre quelconque de services pour un plan de licence spécifique pour :
+Lorsqu’une licence est attribuée à un compte Microsoft 365 à partir d’un plan de licence, les services Microsoft 365 sont mis à la disposition de l’utilisateur à partir de cette licence. Toutefois, vous pouvez contrôler les services Microsoft 365 auxquels l’utilisateur peut accéder. Par exemple, même si la licence autorise l’accès au service SharePoint Online, vous pouvez désactiver l’accès à celui-ci. Vous pouvez utiliser PowerShell pour désactiver l’accès à un nombre quelconque de services pour un plan de licence spécifique pour :
 
 - un compte individuel ;
 - un groupe de comptes ;
 - tous les comptes de votre organisation.
 
 >[!Note]
->Il existe Microsoft 365 dépendances de service qui peuvent vous empêcher de désactiver un service spécifié lorsque d’autres services en dépendent.
+>Il existe des dépendances de service Microsoft 365 qui peuvent vous empêcher de désactiver un service spécifié lorsque d’autres services en dépendent.
 >
 
 ## <a name="use-the-microsoft-graph-powershell-sdk"></a>Utiliser le Kit de développement logiciel (SDK) Microsoft Graph PowerShell
@@ -186,7 +186,7 @@ Pour plus d’informations, consultez [Afficher les licences et les services ave
     
 Pour afficher les résultats avant et après des procédures de cette rubrique, consultez [Afficher les détails de la licence de compte et du service avec PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md).
     
-Un script PowerShell est disponible pour automatiser les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver les services de votre organisation Microsoft 365, y compris les Sway. Pour plus d’informations, consultez [Désactiver l’accès à Sway avec PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
+Un script PowerShell est disponible pour automatiser les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver les services de votre organisation Microsoft 365, y compris Sway. Pour plus d’informations, consultez [Désactiver l’accès à Sway avec PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
     
     
 ### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Désactiver des services Microsoft 365 spécifiques pour des utilisateurs spécifiques pour un plan de licence spécifique
@@ -286,7 +286,7 @@ Si vous souhaitez désactiver l’accès aux services pour plusieurs plans de li
 - Le plan de licence a été attribué aux comptes d’utilisateur.
 - Les services à désactiver sont disponibles dans le plan de licences.
 
-Pour désactiver Microsoft 365 services pour les utilisateurs pendant que vous les affectez à un plan de licences, consultez [Désactiver l’accès aux services lors de l’attribution de licences utilisateur](disable-access-to-services-while-assigning-user-licenses.md).
+Pour désactiver les services Microsoft 365 pour les utilisateurs pendant que vous les affectez à un plan de licences, consultez [Désactiver l’accès aux services lors de l’attribution de licences utilisateur](disable-access-to-services-while-assigning-user-licenses.md).
 
 ### <a name="assign-all-services-in-a-licensing-plan-to-a-user-account"></a>Affecter tous les services d’un plan de licence à un compte d’utilisateur
 

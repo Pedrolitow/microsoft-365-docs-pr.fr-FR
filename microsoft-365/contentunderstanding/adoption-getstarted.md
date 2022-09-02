@@ -1,5 +1,5 @@
 ---
-title: Démarrage l’adoption de Microsoft SharePoint Syntex
+title: Prise en main de l’adoption de Microsoft SharePoint Syntex
 description: Découvrez comment utiliser et implémenter des SharePoint Syntex dans votre organisation pour vous aider à rationaliser vos processus métier.
 ms.author: chucked
 author: chuckedmonson
@@ -7,27 +7,27 @@ manager: pamgreen
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 9b11c5077551aad666d565b0f3c077b3e43dc78e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 55ec030a82beda2f1ddd767c938eba8769eb55b3
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937826"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556433"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Démarrage l’adoption de Microsoft SharePoint Syntex
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Prise en main de l’adoption de Microsoft SharePoint Syntex
 
 Considérez les services de contenu intelligents disponibles dans SharePoint Syntex comme ayant trois parties :
 
 - **Compréhension du contenu :** Créez des modèles iA sans code pour classifier et extraire des informations à partir du contenu afin d’appliquer automatiquement des métadonnées pour la découverte et la réutilisation des connaissances. En savoir plus sur la [compréhension du contenu](document-understanding-overview.md).
-- **Traitement du contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et rationalisez les processus centrés sur le contenu à l’aide de Power Automate. En savoir plus sur le [traitement du contenu](form-processing-overview.md).
-- **Conformité du contenu :** Contrôlez et gérez le contenu pour améliorer la sécurité et la gouvernance avec l’intégration à Microsoft Purview Information Protection.
+- **Traitement du contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et simplifiez les processus centrés sur le contenu à l’aide de Power Automate. En savoir plus sur le [traitement du contenu](form-processing-overview.md).
+- **Conformité du contenu :** Contrôlez et gérez le contenu pour améliorer la sécurité et la gouvernance avec l’intégration à Protection des données Microsoft Purview.
 
 Avec les nouveaux services et fonctionnalités d’IA, vous pouvez créer des applications de compréhension et de classification de contenu directement dans le flux de gestion de contenu à l’aide de SharePoint Syntex. Il existe deux façons différentes de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation.
 
@@ -72,7 +72,7 @@ Déterminez qui dans votre organisation créera et gérera les modèles. Les rô
 
 | Administrateur/SharePoint d’informations | Administrateur Power Platform | Responsables d’informations | Propriétaire du modèle |
 |:-------|:-------|:-------|:-------|
-| rôle AAD| rôle AAD | rôle AAD | Champions |
+| Rôle AAD| Rôle AAD | Rôle AAD | Champions  |
 | Configurer le traitement des formulaires | Configurer l’environnement Dataverse pour le traitement des formulaires | Collecter les cas d’usage | Collecter les cas d’usage métier |
 | Gérer les centres de contenu et les autorisations| Acheter et allouer des crédits AIB | Établir les meilleures pratiques et passer en revue l’analytique des modèles | Créer et appliquer des modèles |
 
@@ -104,7 +104,7 @@ Identifiez les parties prenantes de votre projet.
 |Role |Responsibilities |Service |
 |:-------|:-------|:--------|
 | Sponsor(s) exécutif(s)   | Communiquer la vision et les valeurs de haut niveau de l'entreprise.   |  Direction exécutive   |
-| Project prospects | Superviser l'ensemble de l'exécution du lancement et du processus de déploiement. | Gestion de projet |
+| Chef(s) de projet | Superviser l'ensemble de l'exécution du lancement et du processus de déploiement. | Gestion de projet |
 | Administrateurs des connaissances| Créer et gérer les centres de contenu | Informatique ou autre service|
 | Gestionnaires de contenu et propriétaires de modèles| Collecter les cas d’usage et créer et appliquer des modèles | Tout département|
 | Champions | Contribuer à l'évangélisation et à la gestion des objections | Tout département (personnel) |

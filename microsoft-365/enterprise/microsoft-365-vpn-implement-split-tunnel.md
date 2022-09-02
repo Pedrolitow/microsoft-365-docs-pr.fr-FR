@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Guide pratique pour implémenter le tunneling fractionné VPN pour Microsoft 365
-ms.openlocfilehash: 6b578b9b1801921644c6982c15c160bce5fbb4dd
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: db406c36a7395f3d8c4faad6d7d7f4b34c83ff55
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941083"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560524"
 ---
 # <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>Implémentation du tunneling fractionné VPN pour Microsoft 365
 
@@ -162,13 +162,13 @@ Le client VPN doit être configuré de sorte que le trafic vers le **Optimiser**
 
 Cette section fournit des liens vers des guides détaillés pour implémenter le tunneling fractionné pour le trafic Microsoft 365 provenant des partenaires les plus courants dans cet espace. Nous ajouterons des guides à mesure qu’ils seront disponibles.
 
-- **Client VPN Windows 10** : [optimisation du trafic Microsoft 365 pour les travailleurs distants avec le client VPN Windows 10 natif](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Windows 10 client VPN** : [optimisation du trafic Microsoft 365 pour les travailleurs distants avec le client VPN Windows 10 natif](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco AnyConnect**: [Optimiser le tunnel mixte AnyConnect pour Office 365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect** : [Optimisation du trafic Microsoft 365 via le tunnel fractionné VPN - Exclure l’itinéraire d’accès](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM** : [optimisation du trafic Microsoft 365 sur l’accès à distance via des VPN lors de l’utilisation d’APM BIG-IP](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 - **Passerelle Citrix** : [optimisation du tunnel fractionné VPN de la passerelle Citrix pour Office 365](https://docs.citrix.com/en-us/citrix-gateway/current-release/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 - **Pulse Secure** : [Tunneling VPN : Comment configurer le tunneling fractionné pour exclure les applications Microsoft 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **VPN de point de contrôle** : [comment configurer Split Tunnel pour Microsoft 365 et d’autres applications SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Check Point VPN** : [Comment configurer Split Tunnel pour Microsoft 365 et d’autres applications SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="related-articles"></a>Articles connexes
 

@@ -6,25 +6,25 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un modèle local sur un site SharePoint local avec SharePoint Syntex.
-ms.openlocfilehash: bcd3f1f086af3982cb4a3ecc5fe754cf82f09a70
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 6a3d9098ef8f61d2ffe40c2871313ef1b2e2e0f7
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535379"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560502"
 ---
 # <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-sharepoint-syntex"></a>Créer un modèle sur un site SharePoint local avec Microsoft SharePoint Syntex
 
 SharePoint Syntex offre désormais la possibilité de créer et d’entraîner des modèles localement sur votre propre site SharePoint. Ces modèles peuvent être utilisés uniquement sur le site où ils sont créés. 
 
-En activant la classification et l’extraction de documents sur votre site SharePoint, SharePoint Syntex vous permet de classifier des fichiers dans des bibliothèques de documents, d’extraire des informations de nouveaux fichiers et d’automatiser les activités en fonction des informations extraites.
+En activant la classification et l’extraction de documents sur votre site SharePoint, SharePoint Syntex vous permet de classifier des fichiers dans des bibliothèques de documents, d’extraire des informations à partir de nouveaux fichiers et d’automatiser les activités en fonction des informations extraites.
 
 Lorsque vous activez la création de modèle local, les listes et bibliothèques suivantes sont ajoutées à votre site :
 
@@ -64,7 +64,7 @@ Cette fonctionnalité est disponible uniquement pour la création de [modèles d
 
     ![Capture d’écran du panneau Ajouter à la bibliothèque montrant le site et les bibliothèques appliquées.](../media/content-understanding/local-model-add-to-library-panel.png) 
 
-8. Dans le panneau **Ajouter à la bibliothèque**, vous verrez le nom de votre site SharePoint et la bibliothèque de documents à laquelle le modèle sera appliqué. Si vous souhaitez appliquer le modèle à une autre bibliothèque, sélectionnez **Revenir aux bibliothèques**, puis choisissez la bibliothèque que vous souhaitez utiliser. Puis sélectionnez **Ajouter**.
+8. Dans le panneau **Ajouter à la bibliothèque** , vous verrez le nom de votre site SharePoint et la bibliothèque de documents à laquelle le modèle sera appliqué. Si vous souhaitez appliquer le modèle à une autre bibliothèque, sélectionnez **Revenir aux bibliothèques**, puis choisissez la bibliothèque que vous souhaitez utiliser. Puis sélectionnez **Ajouter**.
 
 9. Dans la page d’accueil du modèle, dans la section **Où le modèle est appliqué dans cette** section de site, vous pouvez voir les bibliothèques pour lesquelles le modèle est appliqué. Pour appliquer le modèle à d’autres bibliothèques sur le site, **sélectionnez Appliquer le modèle**. 
 

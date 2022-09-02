@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Comment activer et utiliser le service Rights Management avec Microsoft 365.
-ms.openlocfilehash: f670de1e8bb5e7b46acaa180e0d875628d364ae9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 69e9cce3dade28460919a2883e731559678c351e
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099057"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560656"
 ---
 # <a name="activate-rights-management-in-the-admin-center"></a>Activer la gestion des droits dans le Centre d’administration
 
-Vous devez activer le service Rights Management (RMS) avant de pouvoir utiliser les fonctionnalités de gestion des droits relatifs à l’information (IRM) de Microsoft 365 applications et services. Après avoir activé RMS, votre organisation peut commencer à protéger les documents et e-mails importants à l’aide d’Azure RMS. Cette solution de protection des informations peut protéger tous les types de fichiers et s’intègre à des applications clientes telles que Excel, Microsoft Word et d’autres, Exchange Online et SharePoint Online, ainsi qu’à des serveurs tels que Microsoft Exchange et Microsoft SharePoint.
+Vous devez activer le service Rights Management (RMS) avant de pouvoir utiliser les fonctionnalités IRM (Information Rights Management) des applications et services Microsoft 365. Après avoir activé RMS, votre organisation peut commencer à protéger les documents et e-mails importants à l’aide d’Azure RMS. Cette solution de protection des informations peut protéger tous les types de fichiers et s’intègre à des applications clientes comme Excel, Microsoft Word et d’autres, Exchange Online et SharePoint Online, ainsi qu’à des serveurs tels que Microsoft Exchange et Microsoft SharePoint.
   
 > [!TIP]
 > Si vous ne savez pas si vous avez besoin de Rights Management, vérifiez si votre organisation a un ou plusieurs de [ces problèmes ou exigences métier](/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management). 

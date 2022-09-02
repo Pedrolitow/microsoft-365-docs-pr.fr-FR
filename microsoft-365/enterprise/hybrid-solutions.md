@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,22 +18,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Fournit une liste de liens vers des informations utiles pour déployer des charges de travail Office Server dans Microsoft Azure.
-ms.openlocfilehash: 9acb67db92e47951bf8d85cdcf6ad35c718c231b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d414d7f3f7c289034dd6e653d8bef49c17c2052
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091234"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560348"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
 Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server qui ont été généralement déployées localement dans les services d’infrastructure Azure.
   
-Pour Microsoft 365 infrastructure d’identité dans Azure :
+Pour l’infrastructure d’identité Microsoft 365 dans Azure :
 
 - [Utiliser Azure AD pour l’authentification SharePoint Server](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
-- [Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Déployer la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     

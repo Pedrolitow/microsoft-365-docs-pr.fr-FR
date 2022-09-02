@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,22 +17,22 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Découvrez comment utiliser PowerShell pour conserver l’appartenance à Microsoft 365 groupes.
-ms.openlocfilehash: 48720d5f3922598feec5a64eaa2c2532e17248ad
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment utiliser PowerShell pour conserver l’appartenance aux groupes Microsoft 365.
+ms.openlocfilehash: 1657abfebeb32cd6aba85174b8a38667fe1d43d3
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095683"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560458"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>Maintenir l’appartenance au groupe de sécurité avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au Centre d'administration Microsoft 365 afin de maintenir l’appartenance aux groupes de sécurité dans Microsoft 365. 
+Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au Centre d'administration Microsoft 365 pour conserver l’appartenance aux groupes de sécurité dans Microsoft 365. 
 
 >[!Note]
->[Découvrez comment maintenir Microsoft 365 appartenance à un groupe](../admin/create-groups/add-or-remove-members-from-groups.md) avec le Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, consultez [Gérer les utilisateurs et les groupes](/admin).
+>[Découvrez comment conserver l’appartenance au groupe Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md) avec le Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, consultez [Gérer les utilisateurs et les groupes](/admin).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
@@ -74,7 +74,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Ajouter ou supprimer des groupes en tant que membres d’un groupe
 
-Les groupes de sécurité peuvent contenir d’autres groupes en tant que membres. Microsoft 365 groupes, cependant, ne peuvent pas. Cette section contient des commandes PowerShell pour ajouter ou supprimer des groupes uniquement pour un groupe de sécurité.
+Les groupes de sécurité peuvent contenir d’autres groupes en tant que membres. Toutefois, les groupes Microsoft 365 ne peuvent pas. Cette section contient des commandes PowerShell pour ajouter ou supprimer des groupes uniquement pour un groupe de sécurité.
 
 **Pour ajouter un groupe par son nom d’affichage**, renseignez le nom complet du groupe que vous allez ajouter et le nom d’affichage du groupe qui contiendra le groupe membre et exécutez ces commandes dans la fenêtre PowerShell ou PowerShell ISE.
 
@@ -133,7 +133,7 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayNa
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Ajouter ou supprimer des groupes en tant que membres d’un groupe
 
-Les groupes de sécurité peuvent contenir d’autres groupes en tant que membres. Microsoft 365 groupes, cependant, ne peuvent pas. Cette section contient des commandes PowerShell pour ajouter ou supprimer des groupes uniquement pour un groupe de sécurité.
+Les groupes de sécurité peuvent contenir d’autres groupes en tant que membres. Toutefois, les groupes Microsoft 365 ne peuvent pas. Cette section contient des commandes PowerShell pour ajouter ou supprimer des groupes uniquement pour un groupe de sécurité.
 
 **Pour ajouter un groupe par son nom d’affichage**, renseignez le nom complet du groupe que vous allez ajouter et le nom d’affichage du groupe qui contiendra le groupe membre et exécutez ces commandes dans la fenêtre PowerShell ou PowerShell ISE.
 

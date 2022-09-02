@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Utilisez PowerShell pour Microsoft 365 pour configurer les propriétés de comptes d’utilisateur individuels ou multiples dans votre locataire Microsoft 365.
-ms.openlocfilehash: 14d302bca030b8310c4956c44cccab91d357233f
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 60b022a60334339f99c7fb767d7b68115ba1a2e5
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67019942"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556389"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurer les propriétés du compte d’utilisateur Microsoft 365 avec PowerShell
 

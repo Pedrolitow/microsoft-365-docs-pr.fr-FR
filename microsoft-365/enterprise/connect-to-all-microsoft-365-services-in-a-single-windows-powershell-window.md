@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 11/23/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell.'
-ms.openlocfilehash: babb5c308310e1444a2ac20b6557f4f7a2050f79
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
-ms.translationtype: HT
+ms.openlocfilehash: 67ee0831a0d78a971982f75653ca49e760e61692
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016897"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560370"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell
 
@@ -45,7 +45,7 @@ Avant de pouvoir gérer l’ensemble de Microsoft 365 à partir d’une seule in
   - Windows 10
   - Windows 8.1 ou Windows 8
   - Windows Server 2019
-  - Windows Server 2016
+  - Windows Server 2016
   - Windows Server 2012 R2 ou Windows Server 2012
   - Windows 7 Service Pack 1 (SP1)*
   - Windows Server 2008 R2 SP1*
