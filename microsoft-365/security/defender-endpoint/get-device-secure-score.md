@@ -1,8 +1,8 @@
 ---
-title: Obtenir un score sécurisé d’appareil
+title: Obtenir le score de sécurisation de l’appareil
 description: Récupère le score de sécurisation de l’appareil organisationnel.
 keywords: api, api graphe, api prises en charge, get, alertes, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 07651ed756d8229e6f0f4712b230875c11bf8007
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 9838e799975d5880e40cb62a2bfb529bfd7c2440
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327682"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523179"
 ---
 # <a name="get-device-secure-score"></a>Obtenir un score sécurisé d’appareil
 

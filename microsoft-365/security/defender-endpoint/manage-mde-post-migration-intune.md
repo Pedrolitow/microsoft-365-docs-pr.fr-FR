@@ -2,8 +2,8 @@
 title: Gérer Microsoft Defender pour point de terminaison à l’aide de Intune
 description: Découvrez comment gérer Microsoft Defender pour point de terminaison avec Intune
 keywords: post-migration, gérer, opérations, maintenance, utilisation, intune, Microsoft Defender pour point de terminaison, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: c8a7b949118375fa10ac12a18ce82c4fadebd6f3
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 9c7471783b3a3f9d8ab77b4a9b4416df170df04c
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327154"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522827"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Gérer Microsoft Defender pour point de terminaison avec Intune
 

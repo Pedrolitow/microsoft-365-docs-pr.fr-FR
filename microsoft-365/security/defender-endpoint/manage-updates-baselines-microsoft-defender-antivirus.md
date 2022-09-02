@@ -2,7 +2,7 @@
 title: Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 description: Gérez la façon dont Antivirus Microsoft Defender reçoit les mises à jour de protection et de produit.
 keywords: mises à jour, bases de référence de sécurité, protection, planification des mises à jour, mises à jour forcées, mises à jour mobiles, wsus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,16 +15,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: c3856209c510c67bb9054e9567f78ff8ed978b2b
-ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
+ms.openlocfilehash: 9550222938f6b179f72a3a2bc46db2738c819bb6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "67427243"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521486"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 

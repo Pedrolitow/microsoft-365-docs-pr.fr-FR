@@ -3,7 +3,7 @@ title: Compatibilité de l’antivirus Microsoft Defender avec d’autres produi
 description: Découvrez l’Antivirus Microsoft Defender avec d’autres produits de sécurité et les systèmes d’exploitation.
 keywords: windows defender, defender pour point de terminaison, nouvelle génération, antivirus, compatibilité, mode passif
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 642f3294304d6cd0aadd3ead44a61f17d0e61ad3
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 186fcfe37cac460a03627d41093934ed949b9084
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478208"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521102"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Compatibilité de l’antivirus Microsoft Defender avec d’autres produits de sécurité
 

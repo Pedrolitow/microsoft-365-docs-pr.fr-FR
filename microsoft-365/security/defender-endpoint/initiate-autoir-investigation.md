@@ -2,7 +2,7 @@
 title: API Démarrer l’investigation
 description: Utilisez cette API pour démarrer une investigation sur un appareil.
 keywords: api, api graphe, api prises en charge, investigation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: ec442fdfbb785fd09248fd40acaac2d54b56e1c2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 800803b509f3692bce2d81a79608b228f117a92a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325790"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522144"
 ---
 # <a name="start-investigation-api"></a>API Démarrer l’investigation
 

@@ -2,7 +2,7 @@
 title: Obtenir toutes les vulnérabilités
 description: Récupère une liste de toutes les vulnérabilités affectant l’organisation
 keywords: api, api graphe, api prises en charge, get, informations sur les vulnérabilités, Microsoft Defender pour point de terminaison api tvm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 25f7e51555bcd4348185eb91fa004ccbb8395419
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 95a7752d4d48230f05bcb1d7aefe591347fa273a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342934"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522298"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 

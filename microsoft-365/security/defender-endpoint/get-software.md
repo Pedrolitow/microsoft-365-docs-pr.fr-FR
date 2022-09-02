@@ -2,7 +2,7 @@
 title: Répertorier les logiciels
 description: Récupère une liste d’inventaire logiciel
 keywords: api, api graphe, api prises en charge, obtenir, lister, fichier, informations, inventaire logiciel, api de gestion des menaces & vulnérabilité, api de gestion des vulnérabilités Microsoft Defender pour point de terminaison api tvm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e58abcb2f7e3f7432d3c855422d07182020596f9
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: af7f375160812257598b82ce191e04e4958a3057
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342874"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523025"
 ---
 # <a name="list-software-inventory-api"></a>Répertorier l’API d’inventaire logiciel
 

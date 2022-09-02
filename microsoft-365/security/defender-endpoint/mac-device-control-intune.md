@@ -2,7 +2,7 @@
 title: Exemples de stratégies de contrôle d’appareil pour Intune
 description: Découvrez comment utiliser des stratégies de contrôle d’appareil à l’aide d’exemples qui peuvent être utilisés avec Intune.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, appareil, contrôle, usb, amovible, média, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: e9edec2b4e0b08cf6506f6234fbfb1f2c3c03914
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: c601707dc34b4564319ec5f48455a5ab1cf54c64
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767099"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522562"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Exemples de stratégies de contrôle d’appareil pour Intune
 
@@ -35,9 +35,9 @@ ms.locfileid: "62767099"
 
 Ce document contient des exemples de stratégies de contrôle d’appareil que vous pouvez personnaliser pour votre propre organisation. Ces exemples s’appliquent si vous utilisez Intune pour gérer les appareils de votre entreprise.
 
-## <a name="restrict-access-to-all-removable-media"></a>Restreindre l’accès à tous les médias amovibles
+## <a name="restrict-access-to-all-removable-media"></a>Restreindre l’accès à tous les supports amovibles
 
-L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation `none` qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations sur les fichiers seront non autorisées.
+L’exemple suivant limite l’accès à tous les supports amovibles. Notez l’autorisation `none` appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations de fichier ne seront pas autorisées.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -101,9 +101,9 @@ L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’a
 </plist>
 ```
 
-## <a name="set-all-removable-media-to-be-read-only"></a>Définir tous les médias amovibles en lecture seule
+## <a name="set-all-removable-media-to-be-read-only"></a>Définir tous les supports amovibles en lecture seule
 
-L’exemple suivant configure tous les médias amovibles en lecture seule. Notez l’autorisation `read` qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations d’écriture et d’exécution seront non autorisées.
+L’exemple suivant configure tous les supports amovibles en lecture seule. Notez l’autorisation `read` appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations d’écriture et d’exécution ne seront pas autorisées.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -167,9 +167,9 @@ L’exemple suivant configure tous les médias amovibles en lecture seule. Notez
 </plist>
 ```
 
-## <a name="disallow-program-execution-from-removable-media"></a>Ne pas exécuter le programme à partir d’un média amovible
+## <a name="disallow-program-execution-from-removable-media"></a>Interdire l’exécution du programme à partir d’un média amovible
 
-L’exemple suivant montre comment l’exécution d’un programme à partir d’un média amovible peut être rejetée. Notez les `read` autorisations `write` qui sont appliquées au niveau supérieur de la stratégie.
+L’exemple suivant montre comment l’exécution du programme à partir d’un média amovible peut être interdite. Notez les `read` autorisations `write` appliquées au niveau supérieur de la stratégie.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -236,7 +236,7 @@ L’exemple suivant montre comment l’exécution d’un programme à partir d�
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>Restreindre tous les appareils de fournisseurs spécifiques
 
-L’exemple suivant limite tous les appareils de fournisseurs spécifiques (dans ce cas identifiés par `fff0` et `4525`). Tous les autres appareils seront illimités, car l’autorisation définie au niveau supérieur de la stratégie répertorie toutes les autorisations possibles (lecture, écriture et exécution).
+L’exemple suivant restreint tous les appareils de fournisseurs spécifiques (dans ce cas identifiés par `fff0` et `4525`). Tous les autres appareils seront illimités, car l’autorisation définie au niveau supérieur de la stratégie répertorie toutes les autorisations possibles (lecture, écriture et exécution).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -321,7 +321,7 @@ L’exemple suivant limite tous les appareils de fournisseurs spécifiques (dans
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restreindre des appareils spécifiques identifiés par l’ID du fournisseur, l’ID de produit et le numéro de série
 
-L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID `fff0`du fournisseur, l’ID `1000`de produit et les numéros de série et `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB`. À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
+L’exemple suivant restreint deux appareils spécifiques, identifiés par l’ID `fff0`du fournisseur, l’ID `1000`de produit et les numéros `04ZSSMHI2O7WBVOA` de série et `04ZSSMHI2O7WBVOB`. À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

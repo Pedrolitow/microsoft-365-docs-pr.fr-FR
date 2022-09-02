@@ -1,8 +1,8 @@
 ---
-title: Comment planifier des analyses avec Microsoft Defender pour Endpoint sur macOS
-description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender for Endpoint dans macOS afin de mieux protéger les ressources de votre organisation.
+title: Guide pratique pour planifier des analyses avec Microsoft Defender pour point de terminaison sur macOS
+description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender pour point de terminaison dans macOS afin de mieux protéger les ressources de votre organisation.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, analyses, antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 629db5fc343d100913d631f59a680fc9160713ed
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: c8e7167bbd059678c26bfe4f0c8318fc74a6e9fe
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765995"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521606"
 ---
-# <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Planifier des analyses avec Microsoft Defender pour endpoint sur macOS
+# <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Planifier des analyses avec Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,19 +33,19 @@ ms.locfileid: "62765995"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Bien que vous pouvez démarrer une analyse des menaces à tout moment avec Microsoft Defender pour le point de terminaison, votre entreprise peut bénéficier d’analyses programmées ou programmées. Par exemple, vous pouvez planifier une analyse à exécuter au début de chaque jour ou semaine de travail. 
+Bien que vous puissiez démarrer une analyse des menaces à tout moment avec Microsoft Defender pour point de terminaison, votre entreprise peut tirer parti d’analyses planifiées ou chronométrées. Par exemple, vous pouvez planifier l’exécution d’une analyse au début de chaque jour ouvré ou semaine. 
 
 ## <a name="schedule-a-scan-with-launchd"></a>Planifier une analyse avec *lancement*
 
-Vous pouvez créer une planification d’analyse à l’aide du *daemon* lancé sur un appareil macOS.
+Vous pouvez créer une planification d’analyse à l’aide du démon *lancé* sur un appareil macOS.
 
-Pour plus d’informations sur le format *de fichier .plist* utilisé [](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) ici, voir à propos des fichiers de liste de propriétés d’informations sur le site web officiel du développeur Apple.
+Pour plus d’informations sur le format de fichier *.plist* utilisé ici, consultez [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) sur le site officiel du développeur Apple.
 
 ### <a name="schedule-a-quick-scan"></a>Planifier une analyse rapide
 
 Le code suivant montre le schéma que vous devez utiliser pour planifier une analyse rapide. 
 
-1. Ouvrez un éditeur de texte et utilisez cet exemple comme guide pour votre propre fichier d’analyse programmé.
+1. Ouvrez un éditeur de texte et utilisez cet exemple comme guide pour votre propre fichier d’analyse planifiée.
 
     ```XML
     <?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +80,7 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
     </plist>
      ```
 
-2. Enregistrez le fichier *sous le nom com.microsoft.wdav.schedquickscan.plist*.
+2. Enregistrez le fichier *sous com.microsoft.wdav.schedquickscan.plist*.
 
 ### <a name="schedule-a-full-scan"></a>Planifier une analyse complète
 
@@ -123,7 +123,7 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
  
 ### <a name="load-your-file"></a>Charger votre fichier
 
-1. **Ouvrez Terminal**.
+1. Ouvrez **Terminal**.
 2. Entrez les commandes suivantes pour charger votre fichier :
 
     ```bash
@@ -131,21 +131,21 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
     launchctl start <your file name>
     ```
 
-3. Votre analyse programmée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste P. Dans les exemples précédents, l’analyse s’exécute à 2 h 50 tous les vendredis. 
+3. Votre analyse planifiée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste p. Dans les exemples précédents, l’analyse s’exécute à 2 h 50 tous les vendredis. 
 
-    - La `Weekday` valeur de utilise `StartCalendarInterval` un nombre nombre integer pour indiquer le cinquième jour de la semaine ou le vendredi. La plage est entre 0 et 7, 7 représentant Dimanche.
-    - La `Day` valeur de `StartCalendarInterval` utilise un nombre nombre integer pour indiquer le troisième jour du mois. La plage est entre 1 et 31.
-    - La `Hour` valeur de utilise `StartCalendarInterval` un nombre nombre integer pour indiquer la deuxième heure de la journée. La plage est entre 0 et 24.
-    La `Minute` valeur de utilise `StartCalendarInterval` un nombre total pour indiquer 50 minutes de l’heure. La plage est entre 0 et 59.
+    - La `Weekday` valeur d’utilise `StartCalendarInterval` un entier pour indiquer le cinquième jour de la semaine ou le vendredi. La plage est comprise entre 0 et 7, 7 représentant le dimanche.
+    - La `Day` valeur d’utilise `StartCalendarInterval` un entier pour indiquer le troisième jour du mois. La plage est comprise entre 1 et 31.
+    - La `Hour` valeur d’utilise `StartCalendarInterval` un entier pour indiquer la deuxième heure de la journée. La plage est comprise entre 0 et 24.
+    La `Minute` valeur d’utilise `StartCalendarInterval` un entier pour indiquer cinquante minutes de l’heure. La plage est comprise entre 0 et 59.
     
     
  > [!IMPORTANT]
- > Les agents exécutés *avec lancement* ne s’exécutent pas à l’heure prévue pendant que l’appareil est en veille. Ils s’exécutent à la place une fois que l’appareil reprend en mode veille.
+ > Les agents exécutés avec *lancement* ne s’exécutent pas à l’heure planifiée pendant que l’appareil est en veille. Ils s’exécutent à la place une fois que l’appareil reprend à partir du mode veille.
  >
- > Si l’appareil est désactivé, l’analyse s’exécutera à la prochaine heure d’analyse programmée.
+ > Si l’appareil est désactivé, l’analyse s’exécute à l’heure d’analyse planifiée suivante.
 
 ## <a name="schedule-a-scan-with-intune"></a>Planifier une analyse avec Intune
 
-Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible dans [scripts pour Microsoft Defender pour le](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) point de terminaison est persistant lorsque l’appareil reprend du mode veille. 
+Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script d’interpréteur de commandes runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) disponible dans [Scripts pour Microsoft Defender pour point de terminaison](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) est conservé lorsque l’appareil reprend à partir du mode veille. 
 
-Voir [Utiliser des scripts shell sur les appareils macOS dans Intune](/mem/intune/apps/macos-shell-scripts) pour obtenir des instructions plus détaillées sur l’utilisation de ce script dans votre entreprise.
+Pour obtenir des instructions plus détaillées sur l’utilisation de ce script dans votre entreprise[, consultez Utiliser des scripts d’interpréteur de commandes sur les appareils macOS dans Intune](/mem/intune/apps/macos-shell-scripts).

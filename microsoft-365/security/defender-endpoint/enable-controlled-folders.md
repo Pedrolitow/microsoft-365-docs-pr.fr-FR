@@ -2,7 +2,7 @@
 title: Activer l’accès contrôlé aux dossiers
 keywords: Accès contrôlé aux dossiers, windows 10, windows 11, windows defender, ransomware, protéger, fichiers, dossiers, activer, activer, utiliser
 description: Découvrez comment protéger vos fichiers importants en activant l’accès contrôlé aux dossiers
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,15 +13,15 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 01018ca7c5cb88b6aaef12d6e63be96085c593a8
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 6d911db34081d6e67cb5f1a562bfbed6964f29c2
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386887"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523355"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 

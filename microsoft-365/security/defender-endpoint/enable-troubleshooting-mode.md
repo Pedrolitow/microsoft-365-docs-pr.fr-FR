@@ -4,7 +4,7 @@ description: Activez le mode de résolution des problèmes Microsoft Defender po
 keywords: antivirus, résolution des problèmes, mode de résolution des problèmes, protection contre les falsifications, compatibilité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: eee3e07825b2775b4eff1b5fb45a6e1f86fc3a1b
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: efe3ea8feb30e1177ff2c156fd6ccb284708a5b4
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490590"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523311"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Prise en main du mode de résolution des problèmes dans Microsoft Defender pour point de terminaison 
 
@@ -74,7 +74,7 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
 > [!NOTE]
 > Les modifications apportées à la gestion des stratégies sont appliquées à la machine lorsqu’elle est activement en mode de résolution des problèmes. Toutefois, les modifications n’entreront pas en vigueur tant que le mode de résolution des problèmes n’aura pas expiré. En outre, les mises à jour de la plateforme antivirus Microsoft Defender ne seront pas appliquées pendant le mode de résolution des problèmes. Les mises à jour de plateforme seront appliquées une fois le mode de résolution des problèmes terminé par une mise à jour Windows.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 - Appareil exécutant Windows 10 (version 19044.1618 ou ultérieure), Windows 11, Windows Server 2019 ou Windows Server 2022.
 

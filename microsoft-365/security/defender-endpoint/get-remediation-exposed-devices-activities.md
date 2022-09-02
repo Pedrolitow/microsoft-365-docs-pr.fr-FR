@@ -2,7 +2,7 @@
 title: Répertorier les appareils exposés d’une activité de correction
 description: Retourne des informations sur les appareils exposés pour la tâche de correction spécifiée.
 keywords: api, correction, api de correction, get, tâches de correction, appareils exposés à la correction
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 34a12fbe5d97345a7a0a5a9c491d10489d6ac601
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: e4d006f49575cac26d08485c3ff47d6213ab36ad
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344782"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522210"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 

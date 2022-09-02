@@ -9,7 +9,7 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
@@ -17,13 +17,13 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.date: 08/19/2022
 ms.collection: m365-security-compliance
-ms.technology: mde
-ms.openlocfilehash: bc15acb2a78350cff367e33f26f47e283c8b07b8
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.subservice: mde
+ms.openlocfilehash: b05e5a0e79c194d93106fd71256d05361f741fea
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67392733"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523377"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
@@ -106,7 +106,7 @@ Le tableau suivant répertorie les exigences pour EDR en mode bloc :
 > [!IMPORTANT]
 > Pour obtenir la meilleure valeur de protection, assurez-vous que votre solution antivirus est configurée pour recevoir des mises à jour régulières et [des fonctionnalités essentielles, et que vos exclusions sont configurées](configure-exclusions-microsoft-defender-antivirus.md). L’EDR en mode bloc respecte les exclusions définies pour l’antivirus Microsoft Defender, mais pas [les indicateurs](manage-indicators.md) définis pour Microsoft Defender pour point de terminaison.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="can-i-specify-exclusions-for-edr-in-block-mode"></a>Puis-je spécifier des exclusions pour EDR en mode bloc ?
 

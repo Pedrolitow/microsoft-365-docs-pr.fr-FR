@@ -2,7 +2,7 @@
 title: Appliquer les mises à jour de l’Antivirus Microsoft Defender après certains événements
 description: Gérez la façon dont l’Antivirus Microsoft Defender applique les mises à jour du renseignement de sécurité après le démarrage ou la réception de rapports de détection fournis par le cloud.
 keywords: mises à jour, protection, mises à jour de force, événements, démarrage, recherche des dernières notifications
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ ms.custom: nextgen
 ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 315e3e41e78ad29042eadf60ec1a01dba1517583
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 9463013802b86017b32d8258a314c19e1e9aaef6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387592"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522474"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées en fonction des événements
 
@@ -48,7 +48,7 @@ Vous pouvez utiliser Microsoft Endpoint Configuration Manager, stratégie de gro
 
 2. Accédez à la section **Analyses planifiées** et **définissez Vérifier les dernières mises à jour du renseignement de sécurité avant d’exécuter une analyse** sur **Oui**.
 
-3. Cliquez sur **OK**.
+3. Cliquez sur **OK**.
 
 4. [Déployez la stratégie mise à jour comme d’habitude](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
@@ -64,7 +64,7 @@ Vous pouvez utiliser Microsoft Endpoint Configuration Manager, stratégie de gro
 
 5. Double-cliquez sur **Vérifier les dernières définitions de virus et de logiciels espions avant d’exécuter une analyse planifiée et définissez** l’option **sur Activé**.
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>Utiliser les applets de commande PowerShell pour rechercher les mises à jour de protection avant d’exécuter une analyse
 
@@ -100,7 +100,7 @@ Vous pouvez utiliser stratégie de groupe pour forcer l’Antivirus Microsoft De
 
 5. Double-cliquez sur **Vérifier les dernières définitions de virus et de logiciels espions au démarrage** et définissez l’option **sur Activé**.
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 Vous pouvez également utiliser stratégie de groupe, PowerShell ou WMI pour configurer l’antivirus Microsoft Defender afin de rechercher des mises à jour au démarrage, même lorsqu’il n’est pas en cours d’exécution.
 
@@ -116,7 +116,7 @@ Vous pouvez également utiliser stratégie de groupe, PowerShell ou WMI pour con
 
 5. Double-cliquez sur **Lancer la mise à jour du renseignement de sécurité au démarrage** et **définissez** l’option sur Activé.
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser des applets de commande PowerShell pour télécharger les mises à jour lorsque l’Antivirus Microsoft Defender n’est pas présent
 

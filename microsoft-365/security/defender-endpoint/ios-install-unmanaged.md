@@ -1,8 +1,8 @@
 ---
 title: Déployer Microsoft Defender pour point de terminaison sur des fonctionnalités iOS
-description: Décrit comment déployer des Microsoft Defender pour point de terminaison sur des appareils iOS non inscrits.
+description: Décrit comment déployer Microsoft Defender pour point de terminaison sur des appareils iOS non inscrits.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, ios, configure, features, ios
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 1d05f515ef1f2badcb6ba0bde69daa3fa2677434
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mde
+ms.openlocfilehash: 14535c5bcf599d292be97d0bdbf2381eed066911
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873509"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520926"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Déployer Microsoft Defender pour point de terminaison sur des appareils iOS non inscrits
 
@@ -38,13 +38,13 @@ ms.locfileid: "65873509"
 
 ## <a name="configure-microsoft-defender-for-endpoint-risk-signals-in-app-protection-policy-mam"></a>Configurer Microsoft Defender pour point de terminaison signaux de risque dans la stratégie de protection des applications (GAM)
 
-Microsoft Defender pour point de terminaison sur iOS, qui protège déjà les utilisateurs d’entreprise dans les scénarios de Gestion des appareils mobile (GPM), étend désormais la prise en charge de la gestion des applications mobiles (GAM) pour les appareils qui ne sont pas inscrits à l’aide de Intune gestion des appareils mobiles (GPM). Il étend également ce support aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en continuant à utiliser Intune pour la gestion des applications mobiles (MAM). Cette fonctionnalité vous permet de gérer et de protéger les données de votre organisation au sein d’une application.
+Microsoft Defender pour point de terminaison sur iOS, qui protège déjà les utilisateurs d’entreprise dans les scénarios de Gestion des appareils mobiles (GPM), étend désormais la prise en charge de la gestion des applications mobiles (GAM) pour les appareils qui ne sont pas inscrits à l’aide de Intune gestion des appareils mobiles (GPM). Il étend également ce support aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en continuant à utiliser Intune pour la gestion des applications mobiles (MAM). Cette fonctionnalité vous permet de gérer et de protéger les données de votre organisation au sein d’une application.
 
-Microsoft Defender pour point de terminaison sur iOS informations sur les menaces est exploitée par Intune stratégies de protection des applications pour protéger ces applications. Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une application managée a des stratégies de protection des applications qui lui sont appliquées et peuvent être gérées par Intune.  
+Microsoft Defender pour point de terminaison sur les informations sur les menaces iOS sont exploitées par Intune stratégies de protection des applications pour protéger ces applications. Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une application managée a des stratégies de protection des applications qui lui sont appliquées et peuvent être gérées par Intune.  
 
-Microsoft Defender pour point de terminaison sur iOS prend en charge les deux configurations de la gestion des applications mobiles
+Microsoft Defender pour point de terminaison sur iOS prend en charge les deux configurations de mam
 - **Intune GPM + GAM** : les administrateurs informatiques peuvent uniquement gérer les applications à l’aide de stratégies de protection des applications sur les appareils inscrits auprès de Intune gestion des appareils mobiles (GPM).
-- Gestion des applications mobiles **sans inscription d’appareil** : la gestion des applications mobiles sans inscription d’appareil, ou MAM-WE, permet aux administrateurs informatiques de gérer les applications à l’aide de stratégies [de protection](/mem/intune/apps/app-protection-policy) des applications sur les appareils qui ne sont pas inscrits auprès de Intune GPM. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits auprès de fournisseurs EMM tiers. Pour gérer les applications utilisées dans les deux configurations ci-dessus, les clients doivent utiliser Intune dans le [centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)
+- Gestion des applications mobiles **sans inscription d’appareil** : la gestion des applications mobiles sans inscription d’appareil, ou MAM-WE, permet aux administrateurs informatiques de gérer les applications à l’aide de stratégies [de protection](/mem/intune/apps/app-protection-policy) des applications sur les appareils qui ne sont pas inscrits auprès de Intune GPM. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits auprès de fournisseurs EMM tiers. Pour gérer les applications utilisées dans les deux configurations ci-dessus, les clients doivent utiliser Intune dans le [Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)
 
 Pour activer cette fonctionnalité, un administrateur doit configurer la connexion entre Microsoft Defender pour point de terminaison et Intune, créer la stratégie de protection des applications et appliquer la stratégie sur les appareils et applications ciblés. 
  
@@ -52,7 +52,7 @@ Les utilisateurs finaux doivent également prendre des mesures pour installer Mi
 
 ### <a name="pre-requisites"></a>Conditions préalables
 
-1. **Vérifiez que le connecteur est activé**. <br> Dans la [console de sécurité unifiée](https://security.microsoft.com), accédez à **Paramètres** >  **Endpoints** > **Advanced Features** et assurez-vous que **Microsoft Intune connexion** est activée.
+1. **Vérifiez que le connecteur est activé**. <br> Dans la [console de sécurité unifiée](https://security.microsoft.com), accédez aux **fonctionnalités avancées** des  >  points de terminaison des **paramètres** >  et assurez-vous que **Microsoft Intune connexion** est activée.
 
   :::image type="content" source="images/enable-intune-connection.png" alt-text="Le connecteur Defender pour point de terminaison - Intune" lightbox="images/enable-intune-connection.png":::
 
@@ -94,7 +94,7 @@ Sélectionnez **Paramètre > niveau maximal autorisé de menace d’appareil** d
   Sélectionnez **Groupes inclus**. Ajoutez ensuite les groupes appropriés. 
 
 
-Pour plus d’informations sur la gestion des applications mobiles ou la stratégie de protection des applications, consultez [iOS paramètres de stratégie de protection des applications](/mem/intune/apps/app-protection-policy-settings-ios).
+Pour plus d’informations sur la gestion des applications mobiles ou la stratégie de protection des applications, consultez [les paramètres de stratégie de protection des applications iOS](/mem/intune/apps/app-protection-policy-settings-ios).
 
 ## <a name="deploy-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Déployer Microsoft Defender pour point de terminaison pour la gestion des applications mobiles ou sur des appareils non inscrits
 

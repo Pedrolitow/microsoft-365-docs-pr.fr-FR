@@ -2,7 +2,7 @@
 title: Obtenir les vulnérabilités découvertes
 description: Récupère une collection de vulnérabilités découvertes liées à un ID d’appareil donné.
 keywords: api, api graphe, api prises en charge, get, list, file, information, vulnérabilités découvertes, api de gestion des menaces & de gestion des vulnérabilités, api Microsoft Defender pour point de terminaison tvm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 52d11c7a86d95236adbc56faebfa4076fd9c2c99
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 4e79a5f2c631c7a9480a22c9a29ebd5e70992829
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345116"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523069"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Obtenir les vulnérabilités découvertes
 

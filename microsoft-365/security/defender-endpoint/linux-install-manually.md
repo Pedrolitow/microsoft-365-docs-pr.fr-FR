@@ -3,7 +3,7 @@ title: Déployer manuellement Microsoft Defender pour point de terminaison sur L
 ms.reviewer: ''
 description: Décrit comment déployer manuellement Microsoft Defender pour point de terminaison sur Linux à partir de la ligne de commande.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a38c94ff225c0792a1e6f13d1a57a68a8c322cff
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.subservice: mde
+ms.openlocfilehash: c8c12f2ee3f5a6f6bb498db0e5fe33cba7f447c6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944062"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522915"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer manuellement Microsoft Defender pour point de terminaison sur Linux
 

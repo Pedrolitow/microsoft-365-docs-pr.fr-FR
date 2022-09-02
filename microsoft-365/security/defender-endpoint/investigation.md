@@ -2,7 +2,7 @@
 title: Type de ressource d’investigation
 description: Microsoft Defender pour point de terminaison entité Investigation.
 keywords: api, api graphe, api prises en charge, get, alertes, investigations
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: f7715c8711bfa479533afe2f0b69c9d3f7ad768f
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 0ccb35e42f89203420acf413e4bdd5b71a837434
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326494"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521310"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource d’investigation
 

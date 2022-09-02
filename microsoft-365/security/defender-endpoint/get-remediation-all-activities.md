@@ -2,7 +2,7 @@
 title: Répertorier toutes les activités de correction
 description: Retourne des informations sur toutes les activités de correction.
 keywords: api, correction, api de correction, get, tâches de correction, toutes les corrections,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: bda1edfd4e5744ab171e86bf01f6b7e30efea22c
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: a7283db5041c8d4aabee406676e3c61e1d2f4385
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342898"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523861"
 ---
 # <a name="list-all-remediation-activities"></a>Répertorier toutes les activités de correction
 

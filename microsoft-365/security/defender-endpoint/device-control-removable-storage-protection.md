@@ -2,7 +2,7 @@
 title: Microsoft Defender pour point de terminaison protection de stockage amovible du contrôle d’appareil
 description: Comprendre les fonctionnalités qui permettent d’empêcher l’utilisateur ou l’ordinateur ou les deux d’utiliser un média de stockage amovible non autorisé
 keywords: support de stockage amovible
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a0225c12521812dc3888aac6c0179019dfa0ea72
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.subservice: mde
+ms.openlocfilehash: 1add6ea29d38e784733b98646458f19c68fa6be1
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112524"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524081"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender pour point de terminaison protection de stockage amovible du contrôle d’appareil
 

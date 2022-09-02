@@ -2,7 +2,7 @@
 title: Exporter l’évaluation des vulnérabilités logicielles par appareil
 description: La réponse de l’API est par appareil et contient des logiciels vulnérables installés sur vos appareils exposés et toutes les vulnérabilités connues dans ces produits logiciels. Cette table inclut également des informations sur le système d’exploitation, les ID CVE et sur la gravité des vulnérabilités.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: aba3078a31428e837bacaf65f0d03b3d6019521a
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 5d0ef17838dc24d39c077dbf889c6272c68b0583
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67405796"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523685"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exporter l’évaluation des vulnérabilités logicielles par appareil
 
@@ -401,7 +401,7 @@ ID|Chaîne|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!
 LastSeenTimestamp|Chaîne|Dernière fois que le CVE a été vu sur l’appareil.|2020-11-03 10:13:34.8476880  
 OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez Gestion des vulnérabilités Microsoft Defender systèmes d’exploitation et plateformes pris en charge.|Windows 10 et Windows 11 
 RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs  
-RecommandationReference|chaîne|Référence à l’ID de recommandation associé à ce logiciel.|va--microsoft--silverlight  
+RecommandationReference|string|Référence à l’ID de recommandation associé à ce logiciel.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.|Mises à jour de sécurité d’avril 2020  
 RecommendedSecurityUpdateId |Chaîne|Identificateur des mises à jour de sécurité ou de l’identificateur applicables pour les instructions correspondantes ou les articles de base de connaissances (Ko)|4550961  
 RegistryPaths |Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome » ]  

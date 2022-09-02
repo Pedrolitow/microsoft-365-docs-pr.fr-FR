@@ -2,7 +2,7 @@
 title: Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 description: Résoudre les problèmes de performances dans Microsoft Defender pour point de terminaison sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, performances
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4afe94238a98cf168015c43946194205f0e20aa0
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.subservice: mde
+ms.openlocfilehash: 51546fc0a91f151e81a468b63ab6dbe893e781c3
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309370"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522607"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 

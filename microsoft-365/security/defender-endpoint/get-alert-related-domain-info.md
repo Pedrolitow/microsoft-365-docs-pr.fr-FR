@@ -2,7 +2,7 @@
 title: Obtenir les informations des domaines liés à l’alerte
 description: Récupérez tous les domaines liés à une alerte spécifique à l’aide de Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, obtention d’informations d’alerte, informations d’alerte, domaine associé
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 1371aa1ec6ce53276300883b6e049db9457cfc19
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 30c5340ab6e148c2ee3d71071981fc1be008563d
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326648"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523949"
 ---
 # <a name="get-alert-related-domain-information-api"></a>Obtenir l’API d’informations de domaine liées aux alertes
 

@@ -2,7 +2,7 @@
 title: Répertorier les vulnérabilités par action d'amélioration
 description: Récupère une liste des vulnérabilités associées à la recommandation de sécurité.
 keywords: api, api graphe, api prises en charge, get, liste des vulnérabilités, recommandation de sécurité, recommandation de sécurité pour les vulnérabilités, Gestion des menaces et des vulnérabilités, api Gestion des menaces et des vulnérabilités
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: b2c87047a0252bba643b2f6280b74f64c5de2d16
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: c1296ef3179278a321febc04ad24e71c8f4ddd1a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344896"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522232"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Répertorier les vulnérabilités par action d'amélioration
 

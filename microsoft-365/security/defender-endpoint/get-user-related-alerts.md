@@ -2,7 +2,7 @@
 title: Obtenir l’API d’alertes liées à l’utilisateur
 description: Récupérez une collection d’alertes liées à un ID d’utilisateur donné à l’aide de Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, get, user, related, alerts
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0c318d1b877eaeea1ee8e189d7e07a4577d01432
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: d99d0194ebd5649ffee45c533a37a7ab4b4e295e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325878"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522981"
 ---
 # <a name="get-user-related-alerts-api"></a>Obtenir l’API d’alertes liées à l’utilisateur
 

@@ -2,7 +2,7 @@
 title: Guide de déploiement de l’infrastructure de bureau virtuel antivirus Microsoft Defender
 description: Découvrez comment déployer l’antivirus Microsoft Defender dans un environnement de bureau virtuel pour un meilleur équilibre entre la protection et les performances.
 keywords: vdi, hyper-v, machine virtuelle, machine virtuelle, windows defender, antivirus, av, bureau virtuel, bureau à distance
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,14 +12,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: jesquive
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ba24bcac58ce814282b56244d530858a1c3bdea1
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 16f46ad95b2de0b871ef1baa5dbf8ae979eebe16
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387614"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524103"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -69,7 +69,7 @@ Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d’intel
 
 6. Entrez `\\<sharedlocation\>\wdav-update` (pour obtenir de l’aide sur cette valeur, consultez [Télécharger et décompresser](#download-and-unpackage-the-latest-updates)).
 
-7. Cliquez sur **OK**.
+7. Cliquez sur **OK**.
 
 8. Déployez l’objet de stratégie de groupe sur les machines virtuelles que vous souhaitez tester.
 
@@ -256,7 +256,7 @@ Cette stratégie force une analyse si la machine virtuelle a manqué au moins de
 
 3. Définissez la stratégie **sur Activé**.
 
-4. Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
 5. Déployez votre objet stratégie de groupe comme d’habitude.
 

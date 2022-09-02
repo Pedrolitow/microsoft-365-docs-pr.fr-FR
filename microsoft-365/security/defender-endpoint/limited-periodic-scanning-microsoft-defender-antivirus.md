@@ -2,7 +2,7 @@
 title: Activer la fonctionnalité d’analyse périodique limitée de l’antivirus Microsoft Defender
 description: L’analyse périodique limitée vous permet d’utiliser l’Antivirus Microsoft Defender en plus de vos autres fournisseurs AV installés
 keywords: lps, limité, périodique, analyse, analyse, compatibilité, tiers, autre av, désactiver
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.custom: nextgen
 ms.date: 10/18/2018
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6c38f5544356bc92493e04651fff9c140888e386
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 3d391b088208180bcf25e9fff3897e6a5a3f90d4
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385052"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522629"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender
 

@@ -2,8 +2,8 @@
 title: Gérer Microsoft Defender pour point de terminaison à l’aide d’objets stratégie de groupe
 description: Découvrez comment gérer Microsoft Defender pour point de terminaison avec des objets stratégie de groupe
 keywords: post-migration, gérer, opérations, maintenance, utilisation, PowerShell, Microsoft Defender pour point de terminaison, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 1dca2fd171641f25e41057414cbaca784aee1007
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 5683d215bbd9f70fa2ae992106d9245a0a46df75
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327220"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522849"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Gérer Microsoft Defender pour point de terminaison avec des objets stratégie de groupe
 

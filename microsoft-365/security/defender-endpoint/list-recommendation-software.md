@@ -2,7 +2,7 @@
 title: Répertorier les logiciels par recommandation
 description: Récupère une recommandation de sécurité liée à un logiciel spécifique.
 keywords: api, api graphe, api prises en charge, get, recommandation de sécurité, recommandation de sécurité pour les logiciels, Gestion des menaces et des vulnérabilités, api Gestion des menaces et des vulnérabilités
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 47006759937d8fb9130dc04c6669f064f4e4b9d7
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: efaa968aba52c3d5b456513e871b65d682121450
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342910"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521266"
 ---
 # <a name="list-software-by-recommendation"></a>Répertorier les logiciels par recommandation
 

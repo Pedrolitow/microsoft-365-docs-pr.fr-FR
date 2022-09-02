@@ -3,7 +3,7 @@ title: Déploiement basé sur une application pour Microsoft Defender pour point
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour point de terminaison sur iOS à l’aide d’une application
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, ios, application, installation, déploiement, désinstallation, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 53f21b5db99bb8d01e06f724f9fbc822ba2332e5
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.subservice: mde
+ms.openlocfilehash: 76c53ce599b811ed868eb51e94e0cf0466987944
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050957"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522673"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour point de terminaison sur iOS
 

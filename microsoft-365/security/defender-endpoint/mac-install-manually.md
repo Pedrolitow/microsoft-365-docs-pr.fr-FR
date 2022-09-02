@@ -1,8 +1,8 @@
 ---
 title: Déploiement manuel pour Microsoft Defender pour point de terminaison sur macOS
-description: Installez Microsoft Defender pour point de terminaison sur macOS manuellement, à partir de la ligne de commande.
+description: Installez Microsoft Defender pour point de terminaison manuellement sur macOS à partir de la ligne de commande.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 68f91e4b8f789087aacea14b6b2a8a8b67262fd0
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.subservice: mde
+ms.openlocfilehash: 6abef7bbfffdf7e00a9921470476acfa24ef890b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159616"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521672"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -38,18 +38,18 @@ Cette rubrique explique comment déployer manuellement Microsoft Defender pour p
 
 - [Télécharger les packages d’installation et d’intégration](#download-installation-and-onboarding-packages)
 - [Installation de l’application (macOS 10.15)](#application-installation-macos-1015)
-- [Installation de l’application (macOS versions 11 et ultérieures)](#application-installation-macos-11-and-newer-versions)
+- [Installation de l’application (macOS 11 et versions ultérieures)](#application-installation-macos-11-and-newer-versions)
 - [Configuration du client](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>Prérequis et configuration requise
 
-Avant de commencer, consultez [la Microsoft Defender pour point de terminaison principale sur macOS page](microsoft-defender-endpoint-mac.md) pour obtenir une description des prérequis et de la configuration système requise pour la version actuelle du logiciel.
+Avant de commencer, consultez [la page principale Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des prérequis et de la configuration système requise pour la version actuelle du logiciel.
 
 ## <a name="download-installation-and-onboarding-packages"></a>Télécharger les packages d’installation et d’intégration
 
 Téléchargez les packages d’installation et d’intégration à partir du portail Microsoft 365 Defender :
 
-1. Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>, accédez à **Paramètres > Points de terminaison > la gestion des appareils > l’intégration**.
+1. Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>, accédez à **Paramètres > Points de terminaison > Gestion des appareils > Intégration**.
 2. Dans la section 1 de la page, définissez le système d’exploitation sur **macOS** et la méthode de déploiement sur **le script local**.
 3. Dans la section 2 de la page, **sélectionnez Télécharger le package d’installation**. Enregistrez-le sous la forme wdav.pkg dans un répertoire local.
 4. Dans la section 2 de la page, **sélectionnez Télécharger le package d’intégration**. Enregistrez-le en tant que WindowsDefenderATPOnboardingPackage.zip dans le même répertoire.
@@ -85,9 +85,9 @@ Pour effectuer ce processus, vous devez disposer de privilèges d’administrate
    > Si vous ne sélectionnez pas **Autoriser**, l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour point de terminaison seront chargées, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour plus d’informations sur la façon de résoudre ce problème, consultez [Résolution des problèmes d’extension de noyau](mac-support-kext.md) .
 
 > [!NOTE]
-> macOS pouvez demander le redémarrage de l’appareil lors de la première installation de Microsoft Defender pour point de terminaison. La protection en temps réel ne sera pas disponible tant que l’appareil n’est pas redémarré.
+> macOS peut demander le redémarrage de l’appareil lors de la première installation de Microsoft Defender pour point de terminaison. La protection en temps réel ne sera pas disponible tant que l’appareil n’est pas redémarré.
 
-## <a name="application-installation-macos-11-and-newer-versions"></a>Installation de l’application (macOS versions 11 et ultérieures)
+## <a name="application-installation-macos-11-and-newer-versions"></a>Installation de l’application (macOS 11 et versions ultérieures)
 
 Pour effectuer ce processus, vous devez disposer de privilèges d’administrateur sur l’appareil.
 
@@ -169,9 +169,9 @@ Pour effectuer ce processus, vous devez disposer de privilèges d’administrate
         mdatp threat list
         ```
 
-3. Exécutez un test de détection PEPT pour vérifier que l’appareil est correctement intégré et qu’il signale au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
+3. Exécutez un test de détection EDR pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
-   1. Dans votre navigateur, par exemple Microsoft Edge pour Mac ou Safari.
+   1. Dans votre navigateur, tel que Microsoft Edge pour Mac ou Safari.
 
    1. Téléchargez les DIY.zip MacOS MDATP à partir de https://aka.ms/mdatpmacosdiy et extrayez-les.
 
@@ -206,18 +206,18 @@ Pour effectuer ce processus, vous devez disposer de privilèges d’administrate
 
     Le système doit afficher le message suivant :
 
-    > Microsoft Defender pour point de terminaison - macOS PEPT fichier de test DIY<br/>
+    > Microsoft Defender pour point de terminaison - fichier de test macOS EDR DIY<br/>
     > L’alerte correspondante sera disponible dans le portail MDATP.
 
 10. Cliquez sur **Ouvrir**. 
 
-    Dans quelques minutes, une alerte nommée « macOS PEPT Alerte de test » doit être déclenchée.
+    Dans quelques minutes, une alerte nommée « macOS EDR Test Alert » doit être déclenchée.
 
 11. Accédez au portail Microsoft 365 Defender (https://security.microsoft.com/).
 
 12. Accédez à la file d’attente des alertes.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Une alerte de test macOS PEPT qui affiche la gravité, la catégorie, la source de détection et un menu réduit d’actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Alerte de test EDR macOS qui affiche la gravité, la catégorie, la source de détection et un menu réduit d’actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     Examinez les détails de l’alerte et la chronologie de l’appareil, puis effectuez les étapes d’investigation régulières.
 
@@ -227,4 +227,4 @@ Consultez [les problèmes d’installation](mac-resources.md#logging-installatio
 
 ## <a name="uninstallation"></a>Désinstallation
 
-Consultez [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour point de terminaison sur macOS des appareils clients.
+Pour plus d’informations sur la suppression de Microsoft Defender pour point de terminaison sur macOS sur les appareils clients, consultez [Désinstallation](mac-resources.md#uninstalling).

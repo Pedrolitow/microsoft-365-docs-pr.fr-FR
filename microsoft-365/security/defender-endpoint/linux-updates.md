@@ -1,9 +1,9 @@
 ---
 title: Déployer des mises à jour pour Microsoft Defender pour point de terminaison sur Linux
 ms.reviewer: ''
-description: Décrit comment déployer des mises à jour pour Microsoft Defender pour Endpoint sur Linux dans les environnements d’entreprise.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, mises à jour, déployer
-ms.prod: m365-security
+description: Décrit comment déployer des mises à jour pour Microsoft Defender pour point de terminaison sur Linux dans des environnements d’entreprise.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, mises à jour, déployer
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,38 +15,38 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 71c689143feca3d8c87d219a55c4ea42b4f9d950
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 9987c5b6921d39bc5f3c0550388bddbfc5c91a92
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767600"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521658"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Déployer des mises à jour pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités.
 
 > [!WARNING]
-> Chaque version de Defender pour Endpoint sur Linux a une date d’expiration, après laquelle elle ne continuera plus à protéger votre appareil. Vous devez mettre à jour le produit avant cette date. Pour vérifier la date d’expiration, exécutez la commande suivante :
+> Chaque version de Defender pour point de terminaison sur Linux a une date d’expiration, après laquelle elle ne continuera plus à protéger votre appareil. Vous devez mettre à jour le produit avant cette date. Pour vérifier la date d’expiration, exécutez la commande suivante :
 > ```bash
 > mdatp health --field product_expiration
 > ```
 
 
-Les fonctionnalités de Microsoft Defender pour point de terminaison généralement disponibles sont équivalentes, quel que soit le canal de mise à jour utilisé pour un déploiement (Bêta (Insider), Preview (externe), Actuel (Production)).
+Les fonctionnalités Microsoft Defender pour point de terminaison généralement disponibles sont équivalentes, quel que soit le canal de mise à jour utilisé pour un déploiement (Bêta (Insider), Preview (Externe), Current (Production)).
 
 
-Pour mettre à jour Defender pour Endpoint sur Linux manuellement, exécutez l’une des commandes suivantes :
+Pour mettre à jour Defender pour point de terminaison sur Linux manuellement, exécutez l’une des commandes suivantes :
 
 ## <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL et variantes (CentOS et Oracle Linux)
 
@@ -67,4 +67,4 @@ sudo apt-get install --only-upgrade mdatp
 ```
 
 > [!IMPORTANT]
-> Lors de l’intégration de Microsoft Defender pour Endpoint et Defender pour le cloud, l’agent mdatp reçoit automatiquement les mises à jour par défaut.
+> Lors de l’intégration de Microsoft Defender pour point de terminaison et defender pour le cloud, l’agent mdatp reçoit automatiquement les mises à jour par défaut.

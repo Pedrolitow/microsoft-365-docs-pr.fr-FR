@@ -2,7 +2,7 @@
 title: List Investigations API
 description: Utiliser cette API pour créer des appels liés à la collecte d’investigations
 keywords: api, api graphe, api prises en charge, collection Investigations
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 746cf78bce54651cc24dd07a90c5fc11772903d2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 5bf85cd0fe4a3ce6e0d83ffcaa6e6d7c784992b6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325988"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523597"
 ---
 # <a name="list-investigations-api"></a>List Investigations API
 

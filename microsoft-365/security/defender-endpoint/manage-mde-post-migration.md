@@ -2,8 +2,8 @@
 title: Gérer Microsoft Defender pour point de terminaison après l’installation ou la migration initiale
 description: Maintenant que vous avez effectué le basculement vers Microsoft Defender pour point de terminaison, l’étape suivante consiste à gérer vos fonctionnalités de protection contre les menaces
 keywords: post-migration, gérer, opérations, maintenance, utilisation, Microsoft Defender pour point de terminaison, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 3158f75d98d1536f54f9c5387c1515fe64be1c25
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: f5f0532e4bbcbbbfac19b1b5d123000e447404d7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324032"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522408"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>Gérer Microsoft Defender pour point de terminaison après l’installation ou la migration initiale
 

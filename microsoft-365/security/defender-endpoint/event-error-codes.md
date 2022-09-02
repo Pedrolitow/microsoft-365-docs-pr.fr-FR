@@ -2,7 +2,7 @@
 title: Examiner les événements et les erreurs à l’aide de observateur d'événements
 description: Obtenez des descriptions et des étapes de dépannage supplémentaires (si nécessaire) pour tous les événements signalés par le service Microsoft Defender pour point de terminaison.
 keywords: résolution des problèmes, visionneuse d’événements, résumé du journal, code d’échec, échec, service Microsoft Defender pour point de terminaison, impossible de démarrer, rompu, ne peut pas démarrer
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
-ms.technology: mde
-ms.openlocfilehash: 337fa436b6788e23c81f65e132be303a439612f7
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.subservice: mde
+ms.openlocfilehash: f9eb7114bf70f339a60d57bebace61d30311b229
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441830"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524037"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Examiner les événements et les erreurs à l’aide de observateur d'événements
 

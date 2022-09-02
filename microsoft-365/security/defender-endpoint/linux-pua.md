@@ -2,7 +2,7 @@
 title: Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour point de terminaison sur Linux
 description: Détecter et bloquer les applications potentiellement indésirables (PUA) à l’aide de Microsoft Defender pour point de terminaison sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, pua, pus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 004a9d7af09e8a2abb656c29db558d797173edcd
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.subservice: mde
+ms.openlocfilehash: 6dda58683c18070d0d5b023872a7614d8618572d
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663599"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520882"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

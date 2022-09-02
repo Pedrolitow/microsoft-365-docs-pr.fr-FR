@@ -2,7 +2,7 @@
 title: Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 description: Liste des modifications majeures pour Microsoft Defender pour point de terminaison sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, whatsnew, release
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: reference
-ms.technology: mde
-ms.openlocfilehash: 577747a28c86cb1b95640a6ae6ebe557d2340a28
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.subservice: mde
+ms.openlocfilehash: 877cf9b7db508798a35cc99f8a163d0de0b91f37
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112216"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520838"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
@@ -238,7 +238,7 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
   <p><b> Build : 101.52.57 <br>
 Version de version : 30.121092.15257.0</b></p>
    
-  <p><b> Quoi de neuf </b></p>
+  <p><b> Nouveautés </b></p>
 
    - Ajout d’une fonctionnalité permettant de détecter les fichiers jar log4j vulnérables utilisés par les applications Java. La machine est régulièrement inspectée pour l’exécution de processus Java avec des fichiers jar log4j chargés. Les informations sont signalées au backend Microsoft Defender pour point de terminaison et sont exposées dans la zone Gestion des vulnérabilités du portail.
    

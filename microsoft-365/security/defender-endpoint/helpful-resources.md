@@ -2,7 +2,7 @@
 title: Ressources de Microsoft Defender pour point de terminaison utiles
 description: Accéder à des ressources utiles telles que des liens vers des blogs et d’autres ressources liées à Microsoft Defender pour point de terminaison
 keywords: Microsoft 365 Defender, brèves, brèves, fonctionnalités, licences
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 62f26f277682d927098b028b6ec2d17e2a5eda16
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.subservice: mde
+ms.openlocfilehash: a9a77ba77e1542a1d2e78ae7dc7dd07a21cd9b35
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344538"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523421"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Ressources de Microsoft Defender pour point de terminaison utiles
 

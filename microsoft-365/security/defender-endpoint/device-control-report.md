@@ -1,7 +1,7 @@
 ---
 title: Protéger les données de votre organisation avec le contrôle d’appareil
 description: Surveillez la sécurité des données de votre organisation par le biais de rapports de contrôle d’appareil.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,14 +12,14 @@ ms.reviewer: dansimp
 ms.topic: article
 manager: dansimp
 audience: ITPro
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6fe93be2ec244628f2bf2195eb453307235ea06f
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: bc763de37b0bfffa8eaa30703db3da3f9acc81c2
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129182"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522761"
 ---
 # <a name="device-control-report"></a>Rapport de contrôle d’appareil
 
@@ -41,7 +41,7 @@ Avec le rapport de contrôle d’appareil, vous pouvez afficher les événements
 Les événements d’audit incluent :
 
 - **Montage et démontage du lecteur USB :** Auditez les événements générés lorsqu’un lecteur USB est monté ou démonté.
-- **PnP :** Plug-and-Play événements d’audit sont générés lorsque le stockage amovible, une imprimante ou un support Bluetooth est connecté.
+- **PnP :** Plug-and-Play événements d’audit sont générés lorsque le stockage amovible, une imprimante ou un média Bluetooth est connecté.
 - **Contrôle d’accès au stockage amovible :** Les événements sont générés lorsqu’une stratégie de contrôle d’accès au stockage amovible est déclenchée. Il peut s’agir de l’audit, du bloc ou de l’autorisation.
 
 ## <a name="monitor-device-control-security"></a>Surveiller la sécurité du contrôle d’appareil

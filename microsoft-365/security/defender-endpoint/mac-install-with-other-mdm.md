@@ -2,7 +2,7 @@
 title: Déploiement avec un autre système mobile Gestion des appareils (GPM) pour Microsoft Defender pour point de terminaison sur Mac
 description: Installez Microsoft Defender pour point de terminaison sur Mac sur d’autres solutions de gestion.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, deploy, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 2fa64ee9822fe1f784788e2d1ead79e66eb200ef
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.subservice: mde
+ms.openlocfilehash: 016293cb17675a90fd9f8ac49824d721154fd921
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349735"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521628"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système Mobile Gestion des appareils (MDM) pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -30,13 +30,13 @@ ms.locfileid: "65349735"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Prérequis et configuration requise
 
-Avant de commencer, consultez [la Microsoft Defender pour point de terminaison principale sur macOS page](microsoft-defender-endpoint-mac.md) pour obtenir une description des prérequis et de la configuration système requise pour la version actuelle du logiciel.
+Avant de commencer, consultez [la page principale Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des prérequis et de la configuration système requise pour la version actuelle du logiciel.
 
 
 ## <a name="approach"></a>Approche
@@ -47,10 +47,10 @@ Avant de commencer, consultez [la Microsoft Defender pour point de terminaison p
 
 Si votre organisation utilise une solution Mobile Gestion des appareils (MDM) qui n’est pas officiellement prise en charge, cela ne signifie pas que vous ne pouvez pas déployer ou exécuter Microsoft Defender pour point de terminaison sur macOS.
 
-Microsoft Defender pour point de terminaison sur macOS ne dépend d’aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n’importe quelle solution GPM qui prend en charge les fonctionnalités suivantes :
+Microsoft Defender pour point de terminaison sur macOS ne dépend d’aucune fonctionnalité spécifique au fournisseur. Il peut être utilisé avec n’importe quelle solution GPM qui prend en charge les fonctionnalités suivantes :
 
-- Déployez un macOS .pkg sur des appareils gérés.
-- Déployez macOS profils de configuration système sur des appareils gérés.
+- Déployez un fichier .pkg macOS sur des appareils gérés.
+- Déployez des profils de configuration système macOS sur des appareils gérés.
 - Exécutez un script/outil arbitraire configuré par l’administrateur sur les appareils gérés.
 
 La plupart des solutions MDM modernes incluent ces fonctionnalités, mais elles peuvent les appeler différemment.
@@ -62,7 +62,7 @@ Toutefois, vous pouvez déployer Defender pour point de terminaison sans la dern
 
 ## <a name="deployment"></a>Déploiement
 
-La plupart des solutions GPM utilisent le même modèle pour gérer macOS appareils, avec une terminologie similaire. Utilisez le [déploiement basé sur JAMF](mac-install-with-jamf.md) comme modèle.
+La plupart des solutions GPM utilisent le même modèle pour la gestion des appareils macOS, avec une terminologie similaire. Utilisez le [déploiement basé sur JAMF](mac-install-with-jamf.md) comme modèle.
 
 ### <a name="package"></a>Paquet
 
@@ -74,7 +74,7 @@ Pour déployer le package dans votre entreprise, suivez les instructions associ�
 
 Configurez [un profil de configuration système](mac-install-with-jamf.md). 
 
-Votre solution GPM peut l’appeler « Profil de Paramètres personnalisé », car Microsoft Defender pour point de terminaison sur macOS ne fait pas partie de macOS.
+Votre solution GPM peut l’appeler « Profil de paramètres personnalisés », car Microsoft Defender pour point de terminaison sur macOS ne fait pas partie de macOS.
 
 Utilisez la liste des propriétés, jamf/WindowsDefenderATPOnboarding.plist, qui peut être extraite d’un package d’intégration téléchargé à partir de [Microsoft 365 Defender portail](mac-install-with-jamf.md).
 Votre système peut prise en charge d’une liste de propriétés arbitraire au format XML. Vous pouvez charger le fichier jamf/WindowsDefenderATPOnboarding.plist tel qu’il est dans ce cas.

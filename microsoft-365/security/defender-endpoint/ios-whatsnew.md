@@ -2,7 +2,7 @@
 title: Nouveautés de Microsoft Defender pour point de terminaison sur iOS
 description: Découvrez les principales modifications apportées aux versions précédentes de Microsoft Defender pour point de terminaison sur iOS.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, macos, whatsnew
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: reference
-ms.technology: mde
-ms.openlocfilehash: 7c3d61f038198ff331ece29bf17dea14aba12462
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.subservice: mde
+ms.openlocfilehash: 7f0df3cbeffc641a6f734b7580772a740c2466e9
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343796"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520904"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour point de terminaison sur iOS
 

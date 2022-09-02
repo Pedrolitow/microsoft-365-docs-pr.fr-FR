@@ -3,7 +3,7 @@ title: Obtenir des résultats de réponse en direct
 description: Découvrez comment récupérer un résultat de commande de réponse dynamique spécifique par son index.
 keywords: api, API de graphe, api prises en charge, chargement dans la bibliothèque
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: fb001d0212b6eabcbabd0a2f5c3a108e7a1a9c33
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 4ea317cc7bcc60162b67e4c01baecb7a2f5c8ced
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324427"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523575"
 ---
 # <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 

@@ -2,7 +2,7 @@
 title: Télécharger l’analyseur client Microsoft Defender pour point de terminaison
 description: Découvrez comment télécharger l’analyseur client Microsoft Defender pour point de terminaison sur Windows, macOS ou Linux.
 keywords: download, client analyzer, troubleshoot sensor, analyzer, mdeanalyzer
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: f209f3b91c0b11c72f12195c2d376116ceedef95
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: m365d
+ms.openlocfilehash: 97f09194825ab4995190842b076bab22c4bcb23f
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686438"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522695"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Télécharger l’analyseur client Microsoft Defender pour point de terminaison
 

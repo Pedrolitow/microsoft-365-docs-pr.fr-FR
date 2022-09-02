@@ -9,26 +9,26 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: da3f16837b8715fe791fbd8abf48acb657fd4963
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 9fff81a71a82ce8f8af8dfd4267a56788f132246
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416769"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523729"
 ---
 # <a name="feedback-loop-blocking"></a>Blocage de la boucle de commentaires
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Antivirus Microsoft Defender
 
@@ -41,7 +41,7 @@ Le blocage de boucle de commentaires, également appelé protection rapide, est 
 
 ## <a name="how-feedback-loop-blocking-works"></a>Fonctionnement du blocage de boucle de commentaires
 
-Lorsqu’un comportement suspect ou un fichier est détecté, par exemple par [Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), des informations sur cet artefact sont envoyées à plusieurs classifieurs. Le moteur de boucle de protection rapide inspecte et met en corrélation les informations avec d’autres signaux pour déterminer s’il faut bloquer un fichier. La vérification et la classification des artefacts se produisent rapidement. Il se traduit par un blocage rapide des programmes malveillants confirmés et entraîne la protection dans l’ensemble de l’écosystème. 
+Lorsqu’un comportement ou un fichier suspect est détecté, par exemple par [l’Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), des informations sur cet artefact sont envoyées à plusieurs classifieurs. Le moteur de boucle de protection rapide inspecte et met en corrélation les informations avec d’autres signaux pour déterminer s’il faut bloquer un fichier. La vérification et la classification des artefacts se produisent rapidement. Il se traduit par un blocage rapide des programmes malveillants confirmés et entraîne la protection dans l’ensemble de l’écosystème. 
 
 Avec une protection rapide en place, une attaque peut être arrêtée sur un appareil, d’autres appareils de l’organisation et sur des appareils d’autres organisations, à mesure qu’une attaque tente d’élargir sa présence.
 

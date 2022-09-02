@@ -2,7 +2,7 @@
 title: Exemples de commande Live response
 description: Découvrez comment exécuter des commandes de réponse dynamique de base ou avancées pour Microsoft Defender pour point de terminaison et voir des exemples sur leur utilisation.
 keywords: exemple, commande, interface CLI, distante, interpréteur de commandes, connexion, live, réponse, temps réel, commande, script, corriger, chasser, exporter, journaliser, supprimer, télécharger, fichier
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,20 +13,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 77a1bd5c9234b7a38266be55825726e683557eb4
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mde
+ms.openlocfilehash: 4451914a4ddcfe4e95a0a75581829af00afa5dbd
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872384"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522584"
 ---
 # <a name="live-response-command-examples"></a>Exemples de commande Live response
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

@@ -1,9 +1,9 @@
 ---
-title: Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
+title: Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour point de terminaison sur Linux
 ms.reviewer: ''
-description: Découvrez comment résoudre les problèmes de connectivité cloud pour Microsoft Defender pour Endpoint sur Linux
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, cloud, connectivité, communication
-ms.prod: m365-security
+description: Découvrez comment résoudre les problèmes de connectivité cloud pour Microsoft Defender pour point de terminaison sur Linux
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, cloud, connectivité, communication
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,27 +15,27 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a4c279dff6fa5a5c85a2f65144a301dde75a1615
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: 2fd3e87fb6c93e640fa9939a2a23b4724f06f567
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167219"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521738"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="run-the-connectivity-test"></a>Exécuter le test de connectivité
 
-Pour tester si Defender pour Endpoint sur Linux peut communiquer avec le cloud avec les paramètres réseau actuels, exécutez un test de connectivité à partir de la ligne de commande :
+Pour tester si Defender pour point de terminaison sur Linux peut communiquer avec le cloud avec les paramètres réseau actuels, exécutez un test de connectivité à partir de la ligne de commande :
 
 ```bash
 mdatp connectivity test
@@ -60,39 +60,39 @@ Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 ```
 
-Si le test de connectivité échoue, vérifiez si [](microsoft-defender-endpoint-linux.md#network-connections) l’appareil dispose d’un accès à Internet et si l’un des points de terminaison requis par le produit est bloqué par un proxy ou un pare-feu.
+Si le test de connectivité échoue, vérifiez si l’appareil a accès à Internet et si [l’un des points de terminaison requis par le produit](microsoft-defender-endpoint-linux.md#network-connections) est bloqué par un proxy ou un pare-feu.
 
-Les échecs avec erreur d’erreur 35 ou 60 indiquent le rejet de l’épinglage du certificat. Vérifiez si la connexion est sous inspection SSL ou HTTPS. Si c’est le cas, ajoutez Microsoft Defender pour le point de terminaison à la liste d’accès.
+Les échecs avec l’erreur curl 35 ou 60 indiquent le rejet de l’épinglage de certificat. Vérifiez si la connexion est sous inspection SSL ou HTTPS. Si c’est le cas, ajoutez Microsoft Defender pour point de terminaison à la liste verte.
 
 ## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>Étapes de résolution des problèmes pour les environnements sans proxy ou avec proxy transparent
 
-Pour vérifier qu’une connexion n’est pas bloquée dans un environnement sans proxy ou avec un proxy transparent, exécutez la commande suivante dans le terminal :
+Pour tester qu’une connexion n’est pas bloquée dans un environnement sans proxy ou avec un proxy transparent, exécutez la commande suivante dans le terminal :
 
 ```bash
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-La sortie de cette commande doit être similaire à celle-ci :
+La sortie de cette commande doit être similaire à :
 
 ```Output
 OK https://x.cp.wd.microsoft.com/api/report
 OK https://cdn.x.cp.wd.microsoft.com/ping
 ```
 
-## <a name="troubleshooting-steps-for-environments-with-static-proxy"></a>Étapes de résolution des problèmes pour les environnements avec proxy statique
+## <a name="troubleshooting-steps-for-environments-with-static-proxy"></a>Étapes de dépannage pour les environnements avec proxy statique
 
 > [!WARNING]
-> Les pacs, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
+> Les proxys PAC, WPAD et authentifiés ne sont pas pris en charge. Vérifiez que seul un proxy statique ou transparent est utilisé.
 >
-> L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy afin de transmettre directement les données de Defender pour Endpoint sur Linux aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
+> Les proxys d’inspection et d’interception SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy pour passer directement les données de Defender pour point de terminaison sur Linux aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
 
-Si un proxy statique est requis, ajoutez un paramètre proxy à la commande ci-dessus, où correspond à l’adresse `proxy_address:port` proxy et au port :
+Si un proxy statique est requis, ajoutez un paramètre de proxy à la commande ci-dessus, où `proxy_address:port` correspondent à l’adresse et au port du proxy :
 
 ```bash
 curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-Veillez à utiliser les mêmes adresse et port proxy que celui configuré dans le `/lib/system/system/mdatp.service` fichier. Vérifiez la configuration de votre proxy en cas d’erreurs provenant des commandes ci-dessus.
+Veillez à utiliser la même adresse proxy et le même port que ceux configurés dans le `/lib/system/system/mdatp.service` fichier. Vérifiez la configuration de votre proxy s’il existe des erreurs dans les commandes ci-dessus.
 
 Pour définir le proxy pour mdatp, utilisez la commande suivante :
 
@@ -101,7 +101,7 @@ mdatp config proxy set --value http://address:port
 ```
 
 
-En cas de réussite, tentez un autre test de connectivité à partir de la ligne de commande :
+En cas de réussite, essayez un autre test de connectivité à partir de la ligne de commande :
 
 ```bash
 mdatp connectivity test
@@ -111,4 +111,4 @@ Si le problème persiste, contactez le support technique.
 
 ## <a name="resources"></a>Ressources
 
-- Pour plus d’informations sur la configuration du produit afin qu’il utilise un proxy statique, voir [Configurer Microsoft Defender pour endpoint pour](linux-static-proxy-configuration.md)la découverte de proxy statique.
+- Pour plus d’informations sur la configuration du produit pour utiliser un proxy statique, consultez [Configurer Microsoft Defender pour point de terminaison pour la découverte de proxy statique](linux-static-proxy-configuration.md).

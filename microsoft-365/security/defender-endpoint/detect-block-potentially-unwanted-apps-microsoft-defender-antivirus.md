@@ -2,7 +2,7 @@
 title: Bloquer des applications potentiellement indésirables avec l’Antivirus Microsoft Defender
 description: Activer la fonctionnalité antivirus de l’application de protection contre les applications potentiellement indésirables (PUA) pour bloquer des logiciels non souhaités tels qu’un logiciel de publicité.
 keywords: applications potentiellement indésirables (pua), activer, logiciel non souhaité, applications indésirables, logiciel de publicité, barre d’outils du navigateur, détecter, bloquer, Antivirus Microsoft Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,15 +12,15 @@ ms.custom: nextgen
 audience: ITPro
 ms.reviewer: mimilone, julih
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 43cb2c4230bd48260ecd1cf4e4f6f92518a47b43
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: 92ff7fa7e5ef74eba29ad4fd9e7b571f5dd61610
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747920"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523795"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 

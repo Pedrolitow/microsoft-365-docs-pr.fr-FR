@@ -3,7 +3,7 @@ title: Créer des indicateurs
 ms.reviewer: ''
 description: Créez des indicateurs pour un hachage de fichier, une adresse IP, des URL ou des domaines qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, URL, domaine
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0c0e09bb69cd4b7ad30276a54e002be568b85c5c
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 8274c99ba61e5901b5f380783b2e242ce1387e4f
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387570"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522871"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 

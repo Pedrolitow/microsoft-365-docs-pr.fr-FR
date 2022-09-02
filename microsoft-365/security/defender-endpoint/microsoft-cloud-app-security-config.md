@@ -1,9 +1,9 @@
 ---
 title: Configurer l’intégration de Microsoft Defender for Cloud Apps
 ms.reviewer: ''
-description: Découvrez comment activer les paramètres pour activer l’intégration de Microsoft Defender for Endpoint avec Microsoft Defender pour les applications cloud.
+description: Découvrez comment activer les paramètres pour activer l’intégration Microsoft Defender pour point de terminaison à Microsoft Defender for Cloud Apps.
 keywords: cloud, application, sécurité, paramètres, intégration, découverte, rapport
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bd90c31ef961653e166672d1417003df2707e4c6
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.subservice: mde
+ms.openlocfilehash: 5397270c88b090f500f77c108c8b9b9cfdc1be00
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560197"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521782"
 ---
-# <a name="configure-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Configurer Microsoft Defender pour les applications cloud dans Microsoft Defender pour le point de terminaison
+# <a name="configure-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Configurer Microsoft Defender for Cloud Apps dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,30 +33,30 @@ ms.locfileid: "61560197"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Pour tirer parti des signaux de découverte d’applications cloud Microsoft Defender pour endpoint, activer l’intégration de Microsoft Defender pour les applications cloud.
+Pour tirer parti de Microsoft Defender pour point de terminaison signaux de découverte d’applications cloud, activez l’intégration Microsoft Defender for Cloud Apps.
 
 > [!NOTE]
-> Cette fonctionnalité sera disponible avec une [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) licence E5 pour les Enterprise Mobility + Security sur les appareils exécutant Windows 10 et Windows 11.
+> Cette fonctionnalité sera disponible avec une licence E5 pour [les Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) sur les appareils exécutant Windows 10 et Windows 11.
 
 > [!TIP]
-> Consultez [Microsoft Defender pour l’intégration de point](/cloud-app-security/mde-integration) de terminaison avec Microsoft Defender pour les applications cloud pour une intégration détaillée de Microsoft Defender for Endpoint avec Microsoft Defender pour les applications cloud.
+> Consultez [Microsoft Defender pour point de terminaison intégration avec Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration) pour une intégration détaillée de Microsoft Defender pour point de terminaison avec Microsoft Defender for Cloud Apps.
 
-## <a name="enable-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Activer Microsoft Defender pour les applications cloud dans Microsoft Defender pour le point de terminaison
+## <a name="enable-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Activer Microsoft Defender for Cloud Apps dans Microsoft Defender pour point de terminaison
 
-1. Dans le volet de navigation, sélectionnez **Préférences configurer les** \> **fonctionnalités avancées.**
-2. Sélectionnez **Microsoft Defender pour les applications cloud** et basculez sur **Le.**
-3. Cliquez **sur Enregistrer les préférences.**
+1. Dans le volet de navigation, sélectionnez **Préférences pour configurer** \> **les fonctionnalités avancées**.
+2. Sélectionnez **Microsoft Defender for Cloud Apps** et activez le bouton **bascule.**
+3. Cliquez sur **Enregistrer les préférences**.
 
-Une fois activé, Microsoft Defender pour le point de terminaison commence immédiatement à forwardr les signaux de découverte vers Defender pour les applications cloud.
+Une fois activé, Microsoft Defender pour point de terminaison commence immédiatement à transférer les signaux de découverte à Defender pour Cloud Apps.
 
 ## <a name="view-the-data-collected"></a>Afficher les données collectées
 
-Pour afficher et accéder aux données du point de terminaison Microsoft Defender dans Microsoft Cloud Apps Security, voir Examiner les appareils [dans Defender pour les applications cloud.](/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security)
+Pour afficher et accéder aux données Microsoft Defender pour point de terminaison dans Microsoft Cloud Apps Security, consultez [Examiner les appareils dans Defender pour Cloud Apps](/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security).
 
-Pour plus d’informations sur la découverte cloud, voir [Working with discovered apps](/cloud-app-security/discovered-apps).
+Pour plus d’informations sur la découverte du cloud, consultez [Utilisation des applications découvertes](/cloud-app-security/discovered-apps).
 
-Si vous souhaitez essayer Microsoft Defender pour les applications cloud, consultez La version d’essai [de Microsoft Defender pour les applications cloud.](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
+Si vous souhaitez essayer Microsoft Defender for Cloud Apps, consultez [Microsoft Defender for Cloud Apps Version d’évaluation](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
 
 ## <a name="related-topic"></a>Rubrique connexe
 
-- [Intégration de Microsoft Defender pour les applications cloud](microsoft-cloud-app-security-integration.md)
+- [intégration Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-integration.md)

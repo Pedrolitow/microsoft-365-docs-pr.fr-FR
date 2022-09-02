@@ -2,7 +2,7 @@
 title: Répertorier les vulnérabilités par logiciel
 description: Récupérez une liste des vulnérabilités dans le logiciel installé.
 keywords: api, api graphe, api prises en charge, get, liste des vulnérabilités, Microsoft Defender pour point de terminaison api tvm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 61a85b5e3a52cdf936058a08ad71f08348c4a553
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 261545c6d462bcffd6067c0249457e5690a65616
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327634"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522188"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Répertorier les vulnérabilités par logiciel
 

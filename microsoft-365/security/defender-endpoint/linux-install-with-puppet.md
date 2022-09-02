@@ -3,7 +3,7 @@ title: Déployer Microsoft Defender pour point de terminaison sur Linux avec Pup
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour point de terminaison sur Linux à l’aide de Puppet.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 9fe38f8bec7ca99d9c1828126382c8f70a22fa3a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mde
+ms.openlocfilehash: 24f752a28a20c80f0980d44d6a0dbac87ce1baea
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014590"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522056"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Déployer Microsoft Defender pour point de terminaison sur Linux avec Puppet
 
@@ -51,7 +51,7 @@ En outre, pour le déploiement de Puppet, vous devez être familiarisé avec les
 
 Téléchargez le package d’intégration à partir du portail Microsoft 365 Defender :
 
-1. Dans Microsoft 365 Defender portail, accédez à **Paramètres > points de terminaison > la gestion des appareils > l’intégration**.
+1. Dans Microsoft 365 Defender portail, accédez à **Paramètres > Points de terminaison > gestion des appareils > Intégration**.
 2. Dans le premier menu déroulant, sélectionnez **Serveur Linux** comme système d’exploitation. Dans le deuxième menu déroulant, sélectionnez **votre outil de gestion de configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration**. Enregistrez le fichier en tant que WindowsDefenderATPOnboardingPackage.zip.
 

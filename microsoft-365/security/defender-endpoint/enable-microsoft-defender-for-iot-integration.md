@@ -4,7 +4,7 @@ description: Intégration avec Microsoft Defender pour IoT afin d’obtenir une 
 keywords: activer le connecteur siem, siem, connecteur, informations de sécurité et événements
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: ab00bb47555b317bbaf7bf5b96202196ac6f658d
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.subservice: mde
+ms.openlocfilehash: 645f9cbd39c9c5a26108f564d8b91cfd3086041e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497870"
+ms.locfileid: "67523333"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>Intégration avec Microsoft Defender pour IoT
 

@@ -3,7 +3,7 @@ title: Requêtes OData avec Microsoft Defender pour point de terminaison
 ms.reviewer: ''
 description: Utilisez ces exemples de requêtes OData (Open Data Protocol) pour faciliter les protocoles d’accès aux données dans Microsoft Defender pour point de terminaison.
 keywords: api, api prises en charge, odata, requête
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: b10c54474427002e82a3639578ce2c9192bf735f
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 2cf507b5ac4115170a731cec1bb17aab2277ccd3
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327798"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523993"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour point de terminaison
 

@@ -2,7 +2,7 @@
 title: Répertorier l’API machineActions
 description: Découvrez comment utiliser l’API List MachineActions pour récupérer une collection d’actions de machine dans Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, collection Machineaction
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2cabdbc069e1d8a4efdb1bd3e931b12f0fe2f963
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 85b3758d77430ffa9e7664c9079f25140d1b454a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325387"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523531"
 ---
 # <a name="list-machineactions-api"></a>RÉPERTORIER l’API MachineActions
 

@@ -2,7 +2,7 @@
 title: Obtenir les informations d’autorisation des extensions de navigateur
 description: Récupère la liste de toutes les autorisations requises pour une extension de navigateur
 keywords: api, api graphe, api prises en charge, get, informations d’extension de navigateur, Microsoft Defender pour point de terminaison, Gestion des vulnérabilités Microsoft Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0dd9498e5ff126e8b91a8cb70cf352f6720db686
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5deeba682aa4cbd65c434132c4dec57ff7b1ebea
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67499055"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521804"
 ---
 # <a name="get-browser-extensions-permission-information"></a>Obtenir les informations d’autorisation des extensions de navigateur
 

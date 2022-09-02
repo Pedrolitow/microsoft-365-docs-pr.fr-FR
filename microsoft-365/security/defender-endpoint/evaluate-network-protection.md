@@ -2,7 +2,7 @@
 title: Évaluer la protection du réseau
 description: Découvrez le fonctionnement de la protection réseau en testant les scénarios courants auxquels elle protège.
 keywords: Protection réseau, exploits, site web malveillant, ip, domaine, domaines, évaluer, tester, démonstration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,16 +12,16 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 4c9c0618db34df38168dca881117288832abf4a5
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: e5de5ac54678d6c56dbcd190ddd6e06381a758c9
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717843"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523223"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 

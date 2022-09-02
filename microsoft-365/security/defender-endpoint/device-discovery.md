@@ -2,7 +2,7 @@
 title: Vue d’ensemble de la découverte d’appareils
 description: Découvrez comment tirer parti de la découverte de points de terminaison dans Microsoft 365 Defender pour rechercher des appareils non gérés dans votre réseau
 keywords: détection d’appareil, détection, passif, proactif, réseau, visibilité, serveur, station de travail, appareils intégrés, appareils non gérés
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +19,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: b8102e492f7c3d179bf053466d4d49d399a67f10
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.subservice: m365d
+ms.openlocfilehash: 68de47244ac8203049157811a0507b0c4b7acad0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344622"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522717"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 

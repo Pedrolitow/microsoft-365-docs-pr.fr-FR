@@ -2,7 +2,7 @@
 title: Passer en revue les actions de correction à la suite d’investigations automatisées
 description: Passez en revue et approuvez (ou rejetez) les actions de correction à la suite d’une enquête automatisée.
 keywords: autoir, automatisé, investigation, détection, correction, action, en attente, approuvé
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.technology: mde
-ms.openlocfilehash: 696787189ca14b4609681fb77308c38be206e269
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.subservice: mde
+ms.openlocfilehash: 970126ba749a746b325a629d78dcfa8f3b817c44
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912605"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521200"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Passer en revue les actions de correction à la suite d’une investigation automatisée
 

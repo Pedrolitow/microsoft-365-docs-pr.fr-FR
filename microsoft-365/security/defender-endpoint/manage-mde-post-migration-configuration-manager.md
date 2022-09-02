@@ -2,8 +2,8 @@
 title: Gérer Microsoft Defender pour point de terminaison à l’aide de Configuration Manager
 description: Découvrez comment gérer Microsoft Defender pour point de terminaison avec Configuration Manager
 keywords: post-migration, gérer, opérations, maintenance, utilisation, Configuration Manager, Microsoft Defender pour point de terminaison, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: d8db3816e050d7384070cf31e458921231f0df9b
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 458686d2de45acabae118846a962f0e887887bbb
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327308"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522452"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Gérer Microsoft Defender pour point de terminaison avec Configuration Manager
 

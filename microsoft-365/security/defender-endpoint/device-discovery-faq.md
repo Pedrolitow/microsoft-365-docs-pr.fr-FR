@@ -2,7 +2,7 @@
 title: Forum aux questions sur la découverte d’appareils
 description: Trouver des réponses aux questions fréquentes (FAQ) sur la découverte d’appareils
 keywords: détection d’appareil, détection, passif, proactif, réseau, visibilité, serveur, station de travail, appareils intégrés, appareils non gérés
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,21 +15,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 54a1b816f3d1322cab5558e5bd09d5d9b4285ae8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: m365d
+ms.openlocfilehash: d33cccb219c262fb472a99b21e9071fdf2bb27c7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665005"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522739"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Forum aux questions sur la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -51,7 +51,7 @@ Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour po
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Puis-je contrôler les appareils qui effectuent la découverte standard ?
 
-Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui prennent également en charge cette fonctionnalité (actuellement Windows 10 ou version ultérieure et Windows server 2019 ou les appareils ultérieurs uniquement) ou sélectionner un sous-ensemble ou un sous-ensemble de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte des appareils.
+Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui prennent également en charge cette fonctionnalité (actuellement Windows 10 ou version ultérieure et les appareils Windows Server 2019 ou ultérieurs uniquement) ou sélectionner un sous-ensemble ou un sous-ensemble de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte des appareils.
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>Puis-je exclure des appareils non gérés de la liste d’inventaire des appareils ?
 
@@ -116,7 +116,7 @@ Lorsque vous envisagez la découverte standard, vous vous demandez peut-être le
 
 ### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>La détection est distribuée sur tous les appareils Windows sur le réseau
 
-Contrairement aux activités malveillantes, qui analysent généralement l’ensemble du réseau à partir d’un petit nombre d’appareils compromis, la détection standard de Microsoft Defender pour point de terminaison est lancée à partir de tous les appareils intégrés Windows rendant l’activité bénigne et non anormale. La détection est gérée de manière centralisée à partir du cloud pour équilibrer la tentative de détection entre tous les appareils intégrés pris en charge dans le réseau.  
+Contrairement aux activités malveillantes, qui analysent généralement l’ensemble du réseau à partir d’un petit nombre d’appareils compromis, Microsoft Defender pour point de terminaison’analyse de découverte standard est lancée à partir de tous les appareils Windows intégrés, ce qui rend l’activité bénigne et non anormale. La détection est gérée de manière centralisée à partir du cloud pour équilibrer la tentative de détection entre tous les appareils intégrés pris en charge dans le réseau.  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>La détection active génère une quantité négligeable de trafic supplémentaire
 
@@ -126,7 +126,7 @@ En règle générale, les appareils non managés sont analysés au plus une fois
 
 Les fonctionnalités de découverte active ont toujours été incorporées dans le système d’exploitation Windows, pour rechercher des appareils, des points de terminaison et des imprimantes à proximité, pour faciliter les expériences de « plug-and-play » et le partage de fichiers entre les points de terminaison du réseau. Des fonctionnalités similaires sont implémentées dans les appareils mobiles, l’équipement réseau et les applications d’inventaire pour n’en nommer que quelques-unes.  
 
-La découverte standard utilise les mêmes méthodes de découverte pour identifier les appareils et pour avoir une visibilité unifiée pour tous les appareils de votre réseau dans l’inventaire des appareils Microsoft 365 Defender. Par exemple , la découverte standard identifie les points de terminaison à proximité dans le réseau de la même manière Windows répertorie les imprimantes disponibles dans le réseau. 
+La découverte standard utilise les mêmes méthodes de découverte pour identifier les appareils et pour avoir une visibilité unifiée pour tous les appareils de votre réseau dans l’inventaire des appareils Microsoft 365 Defender. Par exemple , la découverte standard identifie les points de terminaison à proximité dans le réseau de la même façon que Windows répertorie les imprimantes disponibles dans le réseau. 
 
 Les outils de sécurité et de surveillance du réseau sont indifférents à ces activités effectuées par les appareils sur le réseau. 
 

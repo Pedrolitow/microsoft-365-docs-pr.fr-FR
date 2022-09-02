@@ -2,7 +2,7 @@
 title: Obtenir une activité de correction par son ID
 description: Retourne des informations pour l’activité de correction spécifiée.
 keywords: api, correction, api de correction, get, tâches de correction, correction par ID,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6822d4836a5a8399053a6d3d19cea254e1cabad0
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: c6542f111ce6868a00805de41b3274546dfcc535
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342974"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523487"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par son ID
 

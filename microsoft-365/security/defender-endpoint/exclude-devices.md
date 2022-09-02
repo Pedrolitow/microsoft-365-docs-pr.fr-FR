@@ -2,7 +2,7 @@
 title: Exclure les appareils dans Microsoft Defender pour point de terminaison
 description: Exclure des appareils de la liste d’inventaire des appareils
 keywords: Exclure
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d97e8db205d066671b7c0d430e3dbf79f0dd6ebd
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.subservice: mde
+ms.openlocfilehash: bd7769fa420da8770acbacfcb6a11abeb6e0a14c
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368108"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521870"
 ---
 # <a name="exclude-devices"></a>Exclure des appareils
 
@@ -29,17 +29,17 @@ ms.locfileid: "65368108"
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## <a name="exclude-devices-from-vulnerability-management"></a>Exclure des appareils de gestion des vulnérabilités
+## <a name="exclude-devices-from-vulnerability-management"></a>Exclure des appareils de la gestion des vulnérabilités
 
-L’exclusion des appareils inactifs, dupliqués ou hors de portée vous permet de vous concentrer sur la découverte et la hiérarchisation des risques sur vos appareils actifs. Cette action peut également contribuer à refléter un score d’exposition gestion des vulnérabilités plus précis, car les appareils exclus ne seront pas visibles dans vos rapports gestion des vulnérabilités.
+L’exclusion des appareils inactifs, dupliqués ou hors de portée vous permet de vous concentrer sur la découverte et la hiérarchisation des risques sur vos appareils actifs. Cette action peut également contribuer à refléter un score d’exposition de gestion des vulnérabilités plus précis, car les appareils exclus ne seront pas visibles dans vos rapports de gestion des vulnérabilités.
 
-Une fois les appareils exclus, vous ne pourrez plus afficher les informations mises à jour ou pertinentes sur les vulnérabilités et les logiciels installés sur ces appareils. Elle affecte toutes les pages gestion des vulnérabilités, les rapports et les tables associées dans la chasse avancée.
+Une fois les appareils exclus, vous ne pourrez plus afficher les informations mises à jour ou pertinentes sur les vulnérabilités et les logiciels installés sur ces appareils. Elle affecte toutes les pages de gestion des vulnérabilités, les rapports et les tables associées dans la chasse avancée.
 
-Même si la fonctionnalité d’exclusion d’appareil supprime les données de l’appareil de gestion des vulnérabilités pages et rapports, les appareils restent connectés au réseau et peuvent toujours présenter un risque pour l’organisation. Vous pourrez annuler l’exclusion de l’appareil à tout moment.
+Même si la fonctionnalité d’exclusion d’appareil supprime les données de l’appareil des pages et rapports de gestion des vulnérabilités, les appareils restent connectés au réseau et peuvent toujours présenter un risque pour l’organisation. Vous pourrez annuler l’exclusion de l’appareil à tout moment.
 
 ## <a name="how-to-exclude-a-device"></a>Comment exclure un appareil
 
@@ -69,7 +69,7 @@ Vous pouvez également exclure un appareil de sa page d’appareil.
 > [!NOTE]
 > L’exclusion des appareils actifs n’est pas recommandée, car il est particulièrement risqué de ne pas avoir de visibilité sur leurs informations de vulnérabilité. Si un appareil est actif et que vous essayez de l’exclure, vous recevez un message d’avertissement et une fenêtre contextuelle de confirmation vous demandant si vous êtes sûr de vouloir exclure un appareil actif.
 
-L’exclusion complète d’un appareil de gestion des vulnérabilités vues et de données peut prendre jusqu’à 10 heures.
+L’exclusion complète d’un appareil des vues et des données de gestion des vulnérabilités peut prendre jusqu’à 10 heures.
 
 Les appareils exclus sont toujours visibles dans la liste d’inventaire des appareils. Vous pouvez gérer votre vue des appareils exclus en :
 
@@ -92,11 +92,11 @@ Si vous sélectionnez plusieurs appareils dans la liste des appareils avec diff�
 
 ![Image de l’exclusion en bloc](images/exclude-device-bulk.png)
 
-Une fois qu’un appareil est exclu, si vous accédez à la page de l’appareil d’un appareil exclu, vous ne pouvez pas voir les données relatives aux vulnérabilités détectées, à l’inventaire logiciel ou aux recommandations de sécurité. Les données ne s’affichent pas non plus dans gestion des vulnérabilités pages, les tables de chasse avancées associées et le rapport sur les appareils vulnérables.
+Une fois qu’un appareil est exclu, si vous accédez à la page de l’appareil d’un appareil exclu, vous ne pouvez pas voir les données relatives aux vulnérabilités détectées, à l’inventaire logiciel ou aux recommandations de sécurité. Les données ne s’affichent pas non plus dans les pages de gestion des vulnérabilités, les tables de repérage avancée associées et le rapport sur les appareils vulnérables.
 
 ## <a name="stop-excluding-a-device"></a>Arrêter d’exclure un appareil
 
-Vous pourrez arrêter d’exclure un appareil à tout moment. Une fois que les appareils ne sont plus exclus, leurs données de vulnérabilité sont visibles dans gestion des vulnérabilités pages, rapports et lors d’une chasse avancée. L’application des modifications peut prendre jusqu’à 8 heures.
+Vous pourrez arrêter d’exclure un appareil à tout moment. Une fois que les appareils ne sont plus exclus, leurs données de vulnérabilité sont visibles dans les pages de gestion des vulnérabilités, les rapports et la chasse avancée. L’application des modifications peut prendre jusqu’à 8 heures.
 
 1. Accédez à l’inventaire des appareils, sélectionnez l’appareil exclu pour ouvrir le menu volant, puis sélectionnez **Détails de l’exclusion**
 2. Sélectionner **Arrêter l’exclusion**

@@ -2,7 +2,7 @@
 title: Obtenir l’API d’alertes liées au domaine
 description: Découvrez comment utiliser l’API Obtenir des alertes liées au domaine pour récupérer des alertes liées à une adresse de domaine donnée dans Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, get, domain, related, alerts
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0d2cc5c906110b0159439fc27de0f5690460928d
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6d127010b8db8e91f4d639b2280bfe69f414af29
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325454"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524235"
 ---
 # <a name="get-domain-related-alerts-api"></a>Obtenir l’API d’alertes liées au domaine
 

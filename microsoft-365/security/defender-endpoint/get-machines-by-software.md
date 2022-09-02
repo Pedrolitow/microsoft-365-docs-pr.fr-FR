@@ -2,7 +2,7 @@
 title: Répertorier les appareils par logiciel
 description: Récupérez la liste des appareils sur lesquels ce logiciel est installé.
 keywords: api, api graphe, api prises en charge, get, list devices, devices list, list devices by software, Microsoft Defender pour point de terminaison tvm api
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: fba7fc216f126a9b6f166fe0287a75f5a3b38214
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: cc601c7479369a93ea43bdc01d3e3b16bec492d9
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345094"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523113"
 ---
 # <a name="list-devices-by-software"></a>Répertorier les appareils par logiciel
 

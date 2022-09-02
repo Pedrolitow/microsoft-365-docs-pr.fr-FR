@@ -2,7 +2,7 @@
 title: Méthodes et propriétés d’évaluation des certificats par appareil
 description: Fournit des informations sur les API de certificats qui extraient des données « Gestion des vulnérabilités Microsoft Defender ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 1b47a3b3c0088dca035fa6c85943e1737935cc51
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 681f177215c15540cb8649e74b2b319623c2db58
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344918"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524015"
 ---
 # <a name="export-certificate-inventory-per-device"></a>Exporter l’inventaire des certificats par appareil
 
@@ -53,21 +53,31 @@ Les données collectées à l’aide de la _« réponse JSON_ ou _par le biais d
 
 Retourne toutes les évaluations de certificats pour tous les appareils, par appareil. Elle retourne une table avec une entrée distincte pour chaque combinaison unique de DeviceId, Thumbprint et Path.
 
-#### <a name="12-limitations"></a>1.2 Limitations
+#### <a name="111-limitations"></a>1.1.1 Limitations
 
 - La taille maximale de la page est de 200 000.
 - Les limites de débit pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
 
-### <a name="13-parameters"></a>1.3 Paramètres
+### <a name="12-permissions"></a>1.2 Autorisations
 
-- pageSize (valeur par défaut = 50 000) : nombre de résultats en réponse.
-- $top : nombre de résultats à retourner (ne retourne pas @odata.nextLink et n’extrait donc pas toutes les données).
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API pour plus d’informations.](apis-intro.md)
 
-### <a name="14-http-request"></a>1.4 Requête HTTP
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+:---|:---|:---
+Application|Software.Read.All|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Software.Read|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+
+### <a name="13-url"></a>URL 1.3
 
 ```http
 GET /api/machines/certificateAssessmentByMachine
 ```
+
+### <a name="14-parameters"></a>1.4 Paramètres
+
+- pageSize (valeur par défaut = 50 000) : nombre de résultats en réponse.
+- $top : nombre de résultats à retourner (ne retourne pas @odata.nextLink et n’extrait donc pas toutes les données).
+
 
 ### <a name="15-properties-json-response"></a>1.5 Propriétés (réponse JSON)
 
@@ -139,19 +149,28 @@ GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAsse
 
 Retourne toutes les évaluations de certificats pour tous les appareils, par appareil. Elle retourne une table avec une entrée distincte pour chaque combinaison unique de DeviceId, Thumbprint et Path.
 
-#### <a name="22-limitations"></a>2.2 Limitations
+#### <a name="211-limitations"></a>2.1.1 Limitations
 
-- Les limites de débit pour cette API sont de 5 appels par minute et de 20 appels par heure. 
+- Les limites de débit pour cette API sont de 5 appels par minute et de 20 appels par heure.
 
-### <a name="23-parameters"></a>2.3 Paramètres
+### <a name="22-permissions"></a>2.2 Autorisations
 
-- sasValidHours : nombre d’heures pendant lesquelles les URL de téléchargement sont valides (maximum 24 heures).
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API pour plus d’informations.](apis-intro.md)
 
-### <a name="24-http-request"></a>2.4 Requête HTTP
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+:---|:---|:---
+Application|Software.Read.All|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Software.Read|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+
+### <a name="23-url"></a>URL 2.3
 
 ```http
 GET /api/machines/certificateAssessmentExport
 ```
+
+### <a name="24-parameters"></a>2.4 Paramètres
+
+- sasValidHours : nombre d’heures pendant lesquelles les URL de téléchargement sont valides (maximum 24 heures).
 
 ### <a name="25-properties-json-response"></a>2.5 Propriétés (réponse JSON)
 
