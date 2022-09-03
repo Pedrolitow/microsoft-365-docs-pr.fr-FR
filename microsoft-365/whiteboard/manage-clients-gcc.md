@@ -7,18 +7,18 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0a4250b356e56857581a5083c515b44513d844f3
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 45c09b30d09676e67da9fa1089a13f7627437905
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497476"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595744"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-environments"></a>Gérer les clients pour le tableau blanc Microsoft dans les environnements GCC
 

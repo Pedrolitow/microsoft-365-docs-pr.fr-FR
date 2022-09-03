@@ -15,23 +15,23 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft a développé différentes stratégies, procédures et adopté plusieurs meilleures pratiques pour protéger nos utilisateurs contre les e-mails abusifs, indésirables ou malveillants.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 815fea8981fdab8825a109dae69abaf8232997f9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: a2b047b7a7c528f76131f84ecf34203cb7be2352
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130360"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67594186"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft s'engage à vous fournir l'expérience utilisateur la plus fiable sur le web. Par conséquent, Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger ses utilisateurs contre les messages abusifs, indésirables ou malveillants. Les expéditeurs qui tentent d’envoyer des e-mails aux utilisateurs doivent s’assurer qu’ils comprennent bien et suivent les instructions de cet article pour vous aider dans cet effort et pour éviter les problèmes de remise potentiels.
 
@@ -39,15 +39,15 @@ Si vous ne respectez pas ces instructions et stratégies, il se peut que notre �
 
 ## <a name="general-microsoft-policies"></a>Stratégies générales Microsoft
 
-Les e-mails envoyés à Microsoft 365 utilisateurs doivent se conformer à toutes les stratégies Microsoft régissant la transmission et l’utilisation des Microsoft 365.
+Email envoyés aux utilisateurs de Microsoft 365 doivent se conformer à toutes les stratégies Microsoft régissant la transmission et l’utilisation de microsoft 365.
 
-- Conditions d’utilisation des services applicables à Microsoft 365; en particulier l’interdiction d’utiliser le service pour le courrier indésirable ou distribuer des programmes malveillants.
+- Conditions d’utilisation des services applicables à Microsoft 365 ; en particulier, l’interdiction d’utiliser le service pour le courrier indésirable ou distribuer des programmes malveillants.
 
 - [Contrat de Services Microsoft](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Réglementations gouvernementales
 
-Les e-mails envoyés à Microsoft 365 utilisateurs doivent respecter toutes les lois et réglementations applicables régissant les communications par e-mail dans la juridiction applicable.
+Email envoyées aux utilisateurs de Microsoft 365 doivent respecter toutes les lois et réglementations applicables régissant les communications par e-mail dans la juridiction applicable.
 
 - [CAN-SPAM Act: A Compliance Guide for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,7 +55,7 @@ Les e-mails envoyés à Microsoft 365 utilisateurs doivent respecter toutes les 
 
 ## <a name="technical-guidelines"></a>Instructions techniques
 
-Les e-mails envoyés à Microsoft 365 doivent respecter les recommandations applicables répertoriées dans les documents ci-dessous (certains liens sont disponibles uniquement en anglais).
+Email envoyées à Microsoft 365 doivent respecter les recommandations applicables répertoriées dans les documents ci-dessous (certains liens sont disponibles uniquement en anglais).
 
 - [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
@@ -81,9 +81,9 @@ En outre, les serveurs de messagerie qui se connectent à Microsoft 365 doivent 
 
 Les expéditeurs, les fournisseurs de services Internet et autres fournisseurs de services doivent gérer activement la réputation de vos adresses IP sortantes.
 
-## <a name="microsoft-365-limits"></a>limites de Microsoft 365
+## <a name="microsoft-365-limits"></a>Limites de Microsoft 365
 
-Les expéditeurs doivent respecter Microsoft 365 limites répertoriées dans [Exchange Online Protection Limites](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Les expéditeurs doivent respecter les limites de Microsoft 365 répertoriées dans [Exchange Online Protection Limites](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organisations et ressources de remise de courrier électronique
 

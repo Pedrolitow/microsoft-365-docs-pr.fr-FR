@@ -3,7 +3,7 @@ title: Stratégies Teams recommandées - Microsoft 365 pour les | d’entreprise
 description: Décrit les stratégies pour les recommandations Microsoft sur la façon de sécuriser la communication teams et l’accès aux fichiers.
 author: MicrosoftHeidi
 manager: serdars
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
-ms.technology: mdo
-ms.openlocfilehash: 0e26923925416db48b0547bd9d044e367b56cef7
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.subservice: mdo
+ms.openlocfilehash: b9b3129d0d7668673696fe18dcac9501fecc5c73
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750031"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590631"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers Teams
 
@@ -63,7 +63,7 @@ Ces services sont les services dépendants à inclure dans l’attribution d’a
 
 Ce tableau répertorie les stratégies qui doivent être réexaminées et fournit des liens vers chaque stratégie dans les [stratégies d’accès aux identités et aux appareils communes](identity-access-policies.md), qui ont la stratégie plus large définie pour toutes les applications Office.
 
-|Niveau de protection|Stratégies|Informations supplémentaires sur l’implémentation de Teams|
+|Niveau de protection|Politiques|Informations supplémentaires sur l’implémentation de Teams|
 |---|---|---|
 |**Point de départ**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assurez-vous que Teams et les services dépendants sont inclus dans la liste des applications. Teams a également des règles d’accès invité et d’accès externe à prendre en compte. Vous en apprendrez plus sur ces règles plus loin dans cet article.|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Incluez Teams et les services dépendants dans l’attribution d’applications cloud.|

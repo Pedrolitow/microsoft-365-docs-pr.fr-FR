@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: chboyd
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher l’intégrité du service client.
-ms.openlocfilehash: 53424b98dc47e16971322260a93e30eb707161a7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 968cea20e26a2b15bceb7cb28474e65e96a6afc0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007149"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590741"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Afficher l’intégrité du service client dans Microsoft 365 Lighthouse
 
 Vous pouvez afficher l’intégrité du service pour les locataires que vous gérez dans Microsoft 365 Lighthouse. État des services inclut des incidents et des conseils pour plusieurs services, notamment Microsoft Intune, les services d’identité Azure Active Directory (Azure AD) et les services cloud de gestion des appareils mobiles (GPM). Vous pouvez également voir combien de vos locataires gérés sont affectés par des incidents. Par exemple, si l’un de vos locataires rencontre des problèmes, vous pouvez consulter la page État des services pour déterminer s’il s’agit d’un problème connu avec une résolution en cours ou si une modification récente peut les affecter. Cela peut vous faire gagner du temps pour résoudre les problèmes et réduire les appels de support.
 
-Si vous ne pouvez pas vous connecter à Lighthouse, vous pouvez utiliser la [page d’état d’intégrité du service Microsoft 365](https://status.office365.com/) pour vérifier les problèmes connus qui vous empêchent de vous connecter à votre locataire partenaire. En outre, inscrivez-vous pour suivre [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour voir des informations sur des incidents de service spécifiques.
+Si vous ne pouvez pas vous connecter à Lighthouse, vous pouvez utiliser la [page d’état d’intégrité du service Microsoft 365](https://status.office365.com/) pour rechercher les problèmes connus qui vous empêchent de vous connecter à votre locataire partenaire. En outre, inscrivez-vous pour suivre [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour voir des informations sur des incidents de service spécifiques.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -60,8 +60,8 @@ Pour afficher l’intégrité du service, vous avez besoin d’un rôle Azure AD
 
 Sous l’onglet **Locataires affectés** , vous pouvez exporter une liste de locataires affectés vers un fichier de valeurs séparées par des virgules (.csv) afin de pouvoir la partager avec vos équipes de support technique.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Comment vérifier Microsoft 365'intégrité du service](/microsoft-365/enterprise/view-service-health) (article)\
+[Comment vérifier l’intégrité du service Microsoft 365](/microsoft-365/enterprise/view-service-health) (article)\
 [Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [Afficher vos rôles Azure Active Directory dans Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

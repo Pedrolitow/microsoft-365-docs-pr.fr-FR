@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment bloquer un compte d’utilisateur si vous pensez qu’il est compromis afin que les utilisateurs ne puissent pas se connecter.
-ms.openlocfilehash: 27cfcff4fd3d56a276e1499d8241395f48551003
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 155f4a6c407c31e1e8c9133a1e0ed8598d7791f1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477976"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596267"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>Bloquer la connexion utilisateur Microsoft 365 Lighthouse
 

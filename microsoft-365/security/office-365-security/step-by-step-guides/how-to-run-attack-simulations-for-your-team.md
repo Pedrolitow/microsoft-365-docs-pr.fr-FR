@@ -3,7 +3,7 @@ title: Comment exécuter des simulations d’attaque pour votre équipe
 description: Étapes d’envoi d’une charge utile de simulation d’attaque à vos utilisateurs cibles pour votre équipe ou organisation à des fins d’entraînement. Les attaques simulées peuvent vous aider à identifier et à rechercher des utilisateurs, des stratégies et des pratiques vulnérables avant qu’une attaque réelle n’affecte votre organisation.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: d3ce22386d0ebde6dbc3035056b683894cdd6131
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: f9955b8c72323a6a924c516ba54ec89a5acead84
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107368"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593944"
 ---
 # <a name="how-to-run-attack-simulations-for-your-team"></a>Comment exécuter des simulations d’attaque pour votre équipe
 
-La formation à la simulation d’attaque vous permet d’exécuter des scénarios de cyberattaques réalistes mais bénins dans votre organisation. Les attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs, des stratégies et des pratiques vulnérables avant qu’une attaque réelle n’affecte votre organisation, en tirant parti d’une formation intégrée ou personnalisée pour réduire les risques et mieux informer les utilisateurs finaux sur les menaces.
+Exercice de simulation d'attaque vous permet d’exécuter des scénarios de cyberattaques réalistes mais bénins dans votre organisation. Les attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs, des stratégies et des pratiques vulnérables avant qu’une attaque réelle n’affecte votre organisation, en tirant parti d’une formation intégrée ou personnalisée pour réduire les risques et mieux informer les utilisateurs finaux sur les menaces.
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
@@ -58,4 +58,4 @@ La formation à la simulation d’attaque vous permet d’exécuter des scénari
 
 ### <a name="further-reading"></a>Lire plus en détail
 
-Pour savoir comment fonctionne la simulation d’attaque, consultez [Simuler une attaque par hameçonnage avec l’entraînement de simulation d’attaque - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)
+Pour savoir comment fonctionne la simulation d’attaque, consultez [Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)

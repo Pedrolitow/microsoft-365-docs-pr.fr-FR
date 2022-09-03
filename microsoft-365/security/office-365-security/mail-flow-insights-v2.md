@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur les insights et les rapports disponibles dans le tableau de bord de flux de courrier du Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5850612fbd0de89e5eafe101f55d368b0f4b0c8f
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 49b6a6e326225f3d0715a4eaf722014b78541958
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648720"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595516"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
@@ -37,11 +37,11 @@ Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie da
 Les insights disponibles sont les suivants :
 
 - [Aperçu des messages transférés automatiquement](mfi-auto-forwarded-messages-report.md)
-- [Corriger les insights de boucle de messagerie](mfi-mail-loop-insight.md) <sup>possibles1</sup>
-- [Correction des règles de flux de courrier lent insight1](mfi-slow-mail-flow-rules-insight.md)<sup></sup>
+- [Correction de l’insight de boucle de messagerie possible](mfi-mail-loop-insight.md)<sup>1</sup>
+- [Correction des règles de flux de courrier lent insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 - [Carte du flux de messagerie](mfi-mail-flow-map-report.md)
-- [Nouveaux domaines transférés par e-mail Insight2](mfi-new-domains-being-forwarded-email.md)<sup></sup>
-- [Nouveaux utilisateurs transférant email insight2](mfi-new-users-forwarding-email.md)<sup></sup>
+- [Nouveaux domaines transférés par e-mail Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+- [Nouveaux utilisateurs transférant des informations sur les e-mails](mfi-new-users-forwarding-email.md)<sup>2</sup>
 - [Rapport de domaine non accepté](mfi-non-accepted-domain-report.md)
 - [Rapport de non-remise](mfi-non-delivery-report.md)
 - [Informations sur le flux de courrier entrant et sortant](mfi-outbound-and-inbound-mail-flow.md)
@@ -59,9 +59,9 @@ Le tableau de bord de flux de messagerie est disponible pour les membres des gro
 
 - **Gestion de l’organisation** dans le Centre de sécurité & conformité (administrateurs généraux).
 
-- **[administrateur Exchange](/azure/active-directory/roles/permissions-reference#exchange-administrator)** dans Azure Active Directory.
+- **[Administrateur Exchange](/azure/active-directory/roles/permissions-reference#exchange-administrator)** dans Azure Active Directory.
 
-- **Administrateur MailFlow** dans le Centre de sécurité & conformité. Si le compte n’est pas également membre des groupes de rôles Gestion de l’organisation ou administrateur Exchange, tenez compte des problèmes suivants :
+- **Administrateur MailFlow** dans le Centre de sécurité & conformité. Si le compte n’est pas également membre des groupes de rôles Gestion de l’organisation ou Administrateur Exchange, tenez compte des problèmes suivants :
   - L’utilisateur doit se connecter au Centre de sécurité & conformité directement à l’adresse <https://protection.office.com>.
   - L’utilisateur dispose uniquement d’une autorisation en lecture seule sur le tableau de bord de flux de courrier.
   - L’utilisateur n’a pas accès à la Centre d'administration Microsoft 365.

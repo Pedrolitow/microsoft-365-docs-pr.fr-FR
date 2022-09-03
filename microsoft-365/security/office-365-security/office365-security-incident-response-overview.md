@@ -17,14 +17,14 @@ search.appverid:
 description: Cette solution vous indique à quoi ressemblent les attaques de cybersécurité les plus courantes dans Microsoft 365 et comment y répondre
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6e69ca9f57f3a025ee669001227e64c8809d4741
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 0df592a793bb9866058d3d9a4da8571de15483f8
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648148"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596333"
 ---
 # <a name="security-incident-response"></a>Réponse aux incidents de sécurité
 
@@ -71,4 +71,4 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 
 - Tâches à accomplir dans les 90 premiers jours. Ceux-ci prennent un peu plus de temps pour planifier et implémenter, mais améliorer considérablement votre posture de sécurité
 
-- Au-delà de 90 jours. Ces améliorations s’appuient sur vos 90 premiers jours de travail.
+- Au-delà de 90 jours. Ces améliorations sont à mettre en place pendant les 90 premiers jours.

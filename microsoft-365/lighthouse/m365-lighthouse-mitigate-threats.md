@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: algreer
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment atténuer les menaces avec l’Antivirus Microsoft Defender.
-ms.openlocfilehash: 005e1c527b8989b7689740e54229768decaebbc3
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 195e3eb162346c0ae07a661fcd444dfd02b76ce9
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055941"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596179"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Atténuer les menaces dans Microsoft 365 Lighthouse avec l’antivirus Microsoft Defender
 

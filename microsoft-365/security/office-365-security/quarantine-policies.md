@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de quarantaine pour contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 01a4d5acb9edfa0906695329489439d3ce6af298
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 1943a52b69c4e0bdb76769facdc1d93e7f53bd7b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445135"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595450"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 

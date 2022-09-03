@@ -3,7 +3,7 @@ title: Guides détaillés Microsoft Defender pour Office 365 et comment les util
 description: Quels sont les guides pas à pas pour Microsoft 365 Defender pour Office 365 ? Consultez *uniquement les étapes nécessaires à l’exécution d’une tâche* et à la configuration des fonctionnalités. Informations à utiliser dans les abonnements d’essai et la production. Conseils conçus pour minimiser la surcharge d’informations et accélérer votre configuration et votre utilisation.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: overview
-ms.technology: mdo
-ms.openlocfilehash: 6c31edcbcc523ce1946bb01e723541e48699c1b5
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.openlocfilehash: adec3c67a611c48f01b6c4c5550ef5368d47662c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043440"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593822"
 ---
 # <a name="welcome-to-the-microsoft-defender-for-office-365-step-by-step-guides"></a>Bienvenue dans les Microsoft Defender pour Office 365 guides pas à pas
 
@@ -50,7 +50,7 @@ Au lieu de cela, ces guides sont simplifiés pour **l’apprentissage en effectu
 
 - Comment [configurer](how-to-run-attack-simulations-for-your-team.md) ou [automatiser](how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md) une nouvelle simulation rapidement et facilement ?
 
-- [Connecter Microsoft Defender pour Office 365 à Sentinel](connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md).
+- [Connectez Microsoft Defender pour Office 365 à Sentinel](connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md).
 
 Vous trouverez de la documentation dans ce format dans la section pas à pas de Office 365 Sécurité. Visitez la documentation à l’aide [de aka.ms/step-by-step](https://aka.ms/step-by-step).
 
