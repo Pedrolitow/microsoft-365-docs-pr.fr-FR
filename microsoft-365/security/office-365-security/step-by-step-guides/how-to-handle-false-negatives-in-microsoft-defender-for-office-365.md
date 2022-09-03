@@ -3,7 +3,7 @@ title: (Faux négatifs) Comment gérer les e-mails malveillants remis aux destin
 description: Étapes de gestion des e-mails malveillants envoyés aux utilisateurs finaux et aux boîtes de réception (sous forme de faux négatifs) avec Microsoft Defender pour Office 365 afin d’éviter toute perte d’activité.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: decbece049ea4f91deb529d2fd640816bf3f1d0c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.openlocfilehash: f81234f750946eed8efac6908aa1bc7481687622
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66991925"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596696"
 ---
 # <a name="how-to-handle-malicious-emails-that-are-delivered-to-recipients-false-negatives-using-microsoft-defender-for-office-365"></a>Comment gérer les e-mails malveillants qui sont remis aux destinataires (faux négatifs), à l’aide de Microsoft Defender pour Office 365
 

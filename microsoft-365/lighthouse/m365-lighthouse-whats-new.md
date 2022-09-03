@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez les éléments ajoutés, modifiés et corrigés dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: b1c8a3f3a965f21ab5197c6d13196c092f8ebc68
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 97692ae5d8520d0a6d228c0f80c685a6c45c7b78
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496876"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597545"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 

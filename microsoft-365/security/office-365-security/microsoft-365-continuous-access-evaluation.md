@@ -4,7 +4,7 @@ description: Décrit comment l’évaluation de l’accès conditionnel pour Mic
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -18,13 +18,13 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - highpri
-ms.technology: mdo
-ms.openlocfilehash: 7f0d15bcefa8b8dfc34ceff6d77e06facb4a917d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: a6c6816148820cb40287449fcea94cc4d2b6c633
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482932"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597324"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Évaluation continue de l’accès pour Microsoft 365
 

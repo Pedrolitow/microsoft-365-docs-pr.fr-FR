@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ce6550b442f4a863c87bfa5272e8d5b707b7f096
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
-ms.translationtype: HT
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: e35e11ba0e46ea85566bb311f8e7fcd69642b2a2
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281710"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597711"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -311,7 +311,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
    $p[0] | Set-DkimSigningConfig -Enabled $false
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```powershell
    $p = Get-DkimSigningConfig -Identity contoso.com

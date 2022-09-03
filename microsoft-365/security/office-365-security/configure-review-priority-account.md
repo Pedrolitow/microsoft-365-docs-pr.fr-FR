@@ -17,12 +17,12 @@ ms.custom: ''
 description: Découvrez comment identifier les personnes critiques d’une organisation et ajouter la balise de compte prioritaire pour leur fournir une protection supplémentaire.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ff8617f84c7e774d2dd119f3706ad08ea7591e31
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 342c23269d3cc7f1c4ee3dd90148de4f14a275d5
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482557"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596113"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes Priority dans Microsoft Defender pour Office 365
 
@@ -77,7 +77,7 @@ Pour plus d’informations, consultez [les balises utilisateur dans Microsoft De
 Les effets de la protection de compte prioritaire sont visibles dans les fonctionnalités suivantes :
 
 - [Alertes](alerts.md)
-- [Stratégies d’alerte personnalisées](../../compliance/alert-policies.md#viewing-alerts)
+- [Stratégies d’alerte personnalisées](../../compliance/alert-policies.md#view-alerts)
 - [Explorateur de menaces et détections en temps réel](threat-explorer.md)
 - [Rapport utilisateur compromis](view-email-security-reports.md#compromised-users-report)
 - [Page de l’entité d’e-mail](mdo-email-entity-page.md#other-innovations)

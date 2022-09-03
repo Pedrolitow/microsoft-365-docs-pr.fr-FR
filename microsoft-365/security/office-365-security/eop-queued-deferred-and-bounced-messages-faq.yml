@@ -13,18 +13,18 @@ metadata:
   ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
   ms.custom:
   - seo-marvel-apr2020
-  description: Trouvez des réponses aux questions les plus fréquentes sur les messages mis en file d’attente, différés ou renvoyés au cours du processus de filtrage Exchange Online Protection (EOP).
-  ms.technology: mdo
-  ms.prod: m365-security
-  ms.openlocfilehash: 52e05fd61ef439e294ec3c0cc8212d7f826d7fcd
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: Trouvez des réponses aux questions les plus courantes sur les messages qui ont été mis en file d’attente, différés ou rebondi pendant le processus de filtrage Exchange Online Protection (EOP).
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
+  ms.openlocfilehash: e23d2bb332481e3c0f5e19ac1cf0ec8621542587
+  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63683184"
+  ms.lasthandoff: 09/03/2022
+  ms.locfileid: "67596002"
 title: Questions fréquemment posées sur les messages mis en file d’attente, différés et retournés dans EOP
 summary: >
-  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 
   **S’applique à**
@@ -36,7 +36,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  Cette rubrique fournit des réponses aux questions fréquemment posées sur les messages mis en file d’attente, différés ou renvoyés pendant le processus de filtrage Exchange Online Protection (EOP).
+  Cette rubrique fournit des réponses aux questions fréquemment posées sur les messages qui ont été mis en file d’attente, différés ou rebondi pendant le processus de filtrage Exchange Online Protection (EOP).
 sections:
 - name: Ignoré
   questions:
@@ -51,7 +51,7 @@ sections:
   - question: >
       Combien de temps un message reste-t-il en attente et quel est l’intervalle des nouvelles tentatives ?
     answer: >
-      Les messages de report resteront dans nos files d’attente pendant 1 jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. Les premiers reports sont de 15 minutes ou moins, avec des tentatives suivantes (sur la demi-dizaine suivante) augmentant l’intervalle sur plusieurs tentatives jusqu’à un maximum de 60 minutes. L’expansion de la durée d’intervalle est dynamique, en tenant compte de plusieurs variables telles que la taille des files d’attente et la priorité des messages internes. En base, il faut 15 minutes (ou moins) pour commencer, puis développer à partir de là au cours des prochaines heures à 60 minutes max.
+      Les messages en report resteront dans nos files d’attente pendant 1 jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. Les premiers reports sont de 15 minutes ou moins, les nouvelles tentatives suivantes (au cours de la demi-douzaine suivante) augmentant l’intervalle sur plusieurs nouvelles tentatives à un maximum de 60 minutes. L’extension de la durée d’intervalle est dynamique, en tenant compte de plusieurs variables telles que les tailles de file d’attente et la priorité des messages internes. En gros, il faut 15 minutes (ou moins) pour démarrer, puis passer de là au cours des prochaines heures à 60 minutes maximum.
   - question: >
       Après la restauration du serveur de messagerie, comment les messages mis en file d’attente sont-ils distribués ?
     answer: Une fois que votre serveur de messagerie est restauré, tous les messages mis en file d'attente sont automatiquement traités dans l'ordre dans lequel ils ont été reçus et mis en file d'attente lorsque le serveur est devenu indisponible.

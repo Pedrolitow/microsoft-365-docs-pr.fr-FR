@@ -18,14 +18,14 @@ search.appverid:
 description: Les administrateurs peuvent en savoir plus sur les autorisations disponibles dans le Centre de sécurité & conformité dans Microsoft 365.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0b9b5fda44f3c85a20bc29e8eb4a36edbeba72ec
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: fb0d5496acddebb591d368d78f35f1be567773a9
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756790"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595980"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Autorisations dans le Centre de sécurité et de conformité
 
@@ -73,7 +73,7 @@ Pour savoir comment accorder l’accès au Centre de sécurité & conformité, c
 |**Enquêteurs de conformité des communications**|Analystes de la conformité des communications qui peuvent examiner les correspondances de stratégie, afficher le contenu des messages et prendre des mesures de correction.|Gestion des cas <br/><br/> Analyse de conformité des communications <br/><br/> Gestion des cas de conformité des communications <br/><br/> Examen de conformité des communications <br/><br/> Fournisseur de commentaires sur la classification des données <br/><br/> cas View-Only|
 |**Visionneuses de conformité des communications**|Visionneuse de la conformité des communications qui peut accéder aux rapports et widgets disponibles.|Gestion des cas de conformité des communications <br/><br/> Visionneuse de conformité des communications|
 |**Administrateur de conformité**<sup>1</sup>|Les membres peuvent gérer les paramètres de gestion des périphériques, de protection contre la perte de données, des rapports et de conservation.|Gestion des cas <br/><br/> Administrateur de conformité des communications <br/><br/> Gestion des cas de conformité des communications <br/><br/> Administrateur de conformité <br/><br/> Recherche de conformité <br/><br/> Fournisseur de commentaires sur la classification des données <br/><br/> Réviseur de commentaires sur la classification des données <br/><br/> Administration du connecteur de données <br/><br/> Gestion des enquêtes sur les données <br/><br/> Gestion des appareils <br/><br/> Gestion des destructions <br/><br/> Gestion de la conformité DLP <br/><br/> Suspension <br/><br/> Gestion de la conformité IB <br/><br/> Administrateur Information Protection <br/><br/> Analyste Information Protection <br/><br/> Enquêteur Information Protection <br/><br/> Lecteur Information Protection <br/><br/> Administration de gestion des risques internes <br/><br/> Gérer les alertes <br/><br/> Configuration de l’organisation <br/><br/> RecordManagement <br/><br/> Gestion de la rétention <br/><br/> Journaux d'audit en affichage seul <br/><br/> cas View-Only <br/><br/> View-Only Gestion des appareils <br/><br/> View-Only gestion de la conformité DLP <br/><br/> View-Only gestion de la conformité IB <br/><br/> View-Only gérer les alertes <br/><br/> Afficher uniquement les destinataires <br/><br/> gestion des enregistrements View-Only <br/><br/> gestion de la rétention View-Only|
-|**Administrateur de conformité des données**|Les membres peuvent gérer les paramètres de gestion des appareils, de protection des données, de protection contre la perte de données, de rapports et de préservation.|Administrateur de conformité <br/><br/> Recherche de conformité <br/><br/> Administration du connecteur de données <br/><br/> Gestion des appareils <br/><br/> Gestion des destructions <br/><br/> Gestion de la conformité DLP <br/><br/> Gestion de la conformité IB <br/><br/> Administrateur Information Protection <br/><br/> Analyste Information Protection <br/><br/> Enquêteur Information Protection <br/><br/> Lecteur Information Protection <br/><br/> Gérer les alertes <br/><br/> Configuration de l’organisation <br/><br/> RecordManagement <br/><br/> Gestion de la rétention <br/><br/> Administrateur d’étiquette de confidentialité <br/><br/> Journaux d'audit en affichage seul <br/><br/> View-Only Gestion des appareils <br/><br/> View-Only gestion de la conformité DLP <br/><br/> View-Only gestion de la conformité IB <br/><br/> View-Only gérer les alertes <br/><br/> Afficher uniquement les destinataires <br/><br/> gestion des enregistrements View-Only <br/><br/> gestion de la rétention View-Only|
+|**Administrateur des données de conformité**|Les membres peuvent gérer les paramètres de gestion des appareils, de protection des données, de protection contre la perte de données, de rapports et de préservation.|Administrateur de conformité <br/><br/> Recherche de conformité <br/><br/> Administration du connecteur de données <br/><br/> Gestion des appareils <br/><br/> Gestion des destructions <br/><br/> Gestion de la conformité DLP <br/><br/> Gestion de la conformité IB <br/><br/> Administrateur Information Protection <br/><br/> Analyste Information Protection <br/><br/> Enquêteur Information Protection <br/><br/> Lecteur Information Protection <br/><br/> Gérer les alertes <br/><br/> Configuration de l’organisation <br/><br/> RecordManagement <br/><br/> Gestion de la rétention <br/><br/> Administrateur d’étiquette de confidentialité <br/><br/> Journaux d'audit en affichage seul <br/><br/> View-Only Gestion des appareils <br/><br/> View-Only gestion de la conformité DLP <br/><br/> View-Only gestion de la conformité IB <br/><br/> View-Only gérer les alertes <br/><br/> Afficher uniquement les destinataires <br/><br/> gestion des enregistrements View-Only <br/><br/> gestion de la rétention View-Only|
 |**Administrateurs du Gestionnaire de conformité**|Gérer la création et la modification de modèles.|Administration du Gestionnaire de conformité <br/><br/> Évaluation du Gestionnaire de conformité <br/><br/> Contribution du Gestionnaire de conformité <br/><br/> Gestionnaire de conformité - Lecteur <br/><br/> Administration du connecteur de données|
 |**Évaluateurs du Gestionnaire de conformité**|Créez des évaluations, implémentez des actions d’amélioration et mettez à jour l’état des tests pour les actions d’amélioration.|Évaluation du Gestionnaire de conformité <br/><br/> Contribution du Gestionnaire de conformité <br/><br/> Gestionnaire de conformité - Lecteur <br/><br/> Administration du connecteur de données|
 |**Contributeurs du Gestionnaire de conformité**|Créez des évaluations et effectuez des travaux pour implémenter des actions d’amélioration.|Contribution du Gestionnaire de conformité <br/><br/> Gestionnaire de conformité - Lecteur <br/><br/> Administration du connecteur de données|
@@ -165,7 +165,7 @@ Notez que les rôles suivants ne sont pas attribués par défaut au groupe de r�
 - Administrateur de révision de surveillance
 - Gestionnaire AllowBlockList du locataire
 
-|Role|Description|Attributions de groupes de rôles par défaut|
+|Rôle|Description|Attributions de groupes de rôles par défaut|
 |---|---|---|
 |**Simulateur d’attaques Administration**|N’utilisez pas ce rôle dans le Centre de sécurité & conformité. Utilisez le rôle correspondant dans Azure AD.|Administrateurs du simulateur d’attaques|
 |**Auteur de charge utile du simulateur d’attaques**|N’utilisez pas ce rôle dans le Centre de sécurité & conformité. Utilisez le rôle correspondant dans Azure AD.|Auteurs de charge utile du simulateur d’attaque|

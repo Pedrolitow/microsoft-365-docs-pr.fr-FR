@@ -3,7 +3,7 @@ title: Comment configurer des autorisations et des stratégies de quarantaine
 description: Étapes de configuration des stratégies de quarantaine et des autorisations entre différents groupes, notamment AdminOnlyPolicy, accès limité, accès complet et fourniture aux administrateurs de sécurité et aux utilisateurs d’un moyen simple de gérer les dossiers faux positifs.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: 709656cafc15333559ac8abe50e21ccde690d09a
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 2da7583ed6c326fc0bea68e0d74d76e893a816b0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106950"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596740"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>Comment configurer des autorisations et des stratégies de quarantaine
 
@@ -69,6 +69,6 @@ Une fois qu’il a été décidé que les catégories d’éléments que les uti
 - Utilisez **la stratégie globale** disponible dans la stratégie de quarantaine pour activer le logo, le nom complet et la clause d’exclusion de responsabilité de votre organisation.
 - Définissez également la **fréquence utilisateur sur 1 jour** pour la notification de mise en quarantaine.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 En savoir plus sur les paramètres de personnalisation et de notification de l’organisation ici [Stratégies de quarantaine - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md)

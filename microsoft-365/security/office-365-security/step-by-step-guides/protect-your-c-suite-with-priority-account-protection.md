@@ -3,7 +3,7 @@ title: Protéger votre suite C avec la protection de compte Priority dans Micros
 description: Étapes de protection de votre suite C avec une protection de compte prioritaire. L’étiquetage d’un compte en tant que compte prioritaire permet d’optimiser la protection supplémentaire pour les modèles de flux de messagerie ciblant les cadres de l’entreprise, ainsi qu’une visibilité supplémentaire dans les rapports, les alertes et les enquêtes.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: de0de8b418036d6b8e73b9cf5ec8deafc24af6a9
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: d3c7d1cff44d1b8d3070a9a6ed1160ad25e2d260
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106490"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596608"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>Protégez votre suite C avec une protection de compte prioritaire
 

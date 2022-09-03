@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’information sur l’usurpation d’identité dans Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 4bd690b9adae76f6920389ab59fda2210f9fc681
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 048ec6feaeca081704fef7a4e5a14f6b375f1f6f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388438"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597887"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence d’usurpation d’identité dans EOP
 
@@ -38,7 +38,7 @@ ms.locfileid: "67388438"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’identité. EOP utilise **le renseignement sur l’usurpation** d’identité dans le cadre de la défense globale de votre organisation contre le hameçonnage. Pour plus d’informations, consultez [la protection contre l’usurpation d’identité dans EOP](anti-spoofing-protection.md).
 
-Lorsqu’un expéditeur usurpe une adresse e-mail, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie des e-mails à votre organisation. Les attaquants qui usurpent les expéditeurs pour envoyer du courrier indésirable ou de hameçonnage doivent être bloqués. Toutefois, dans certains scénarios, les expéditeurs légitimes s’usurpent. Par exemple :
+Lorsqu’un expéditeur usurpe une adresse e-mail, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie des e-mails à votre organisation. Les attaquants qui usurpent les expéditeurs pour envoyer du courrier indésirable ou de hameçonnage doivent être bloqués. Toutefois, dans certains scénarios, les expéditeurs légitimes s’usurpent. Par exemple :
 
 - Scénarios légitimes pour usurper des domaines internes :
   - Les expéditeurs tiers utilisent votre domaine pour envoyer des messages en bloc à vos propres employés pour les sondages d’entreprise.

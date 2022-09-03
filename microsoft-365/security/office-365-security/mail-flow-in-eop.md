@@ -13,15 +13,15 @@ ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: Administration pouvez en savoir plus sur les options de configuration du flux de messagerie et du routage dans Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e0267af0297dce41657c76e97964e5c02fbe5815
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 15a0bf969a1b1c8254845be3c4c06eb556366bf1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648742"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597865"
 ---
 # <a name="mail-flow-in-eop"></a>Flux de courriers dans EOP
 
@@ -32,7 +32,7 @@ ms.locfileid: "65648742"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, tous les messages envoyés à votre organisation passent par EOP avant que les utilisateurs ne les voient. Vous avez des options sur la façon de router les messages qui passent par EOP pour le traitement avant qu’ils ne soient routées vers des boîtes aux lettres utilisateur.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, tous les messages envoyés à votre organisation passent par EOP avant que les utilisateurs ne les voient. Vous avez des options sur la façon de router les messages qui passent par EOP pour le traitement avant qu’ils ne soient routées vers des boîtes aux lettres utilisateur.
 
 ## <a name="working-with-messages-and-message-access-options"></a>Utilisation des messages et des options d’accès aux messages
 
@@ -48,10 +48,10 @@ Si vous ajoutez des sous-domaines dans votre organisation, votre service EOP peu
 
 [Le filtrage amélioré pour les connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) décrit comment configurer des connecteurs si votre courrier est routée vers un service ou un appareil avant EOP.
 
-Dans les environnements hybrides où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans des Exchange locaux. Ces règles de flux de courrier traduisent le verdict de filtrage du courrier indésirable EOP afin que la règle de courrier indésirable dans la boîte aux lettres puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer Exchange Online Protection (EOP) pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). Si vous ne souhaitez pas déplacer de messages vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies anti-courrier indésirable (également appelées stratégies de filtre de contenu). Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
+Dans les environnements hybrides où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans Exchange local. Ces règles de flux de courrier traduisent le verdict de filtrage du courrier indésirable EOP afin que la règle de courrier indésirable dans la boîte aux lettres puisse déplacer le message vers le dossier Courrier indésirable Email. Pour les détails, voir [Configurer Exchange Online Protection (EOP) pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). Si vous ne souhaitez pas déplacer de messages vers le dossier Junk Email de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies anti-courrier indésirable (également appelées stratégies de filtre de contenu). Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
 
 ## <a name="verify-mail-flow"></a>Vérifier le flux de messagerie
 
 Pour vérifier que votre configuration d'EOP, y compris celle de votre connecteur, fonctionne correctement, consultez la section « Comment savoir si cette tâche a fonctionné ? » dans la rubrique [Configurer votre service EOP](/exchange/standalone-eop/set-up-your-eop-service).
 
-[Testez le flux de messagerie en validant vos connecteurs Microsoft 365](/exchange/mail-flow-best-practices/test-mail-flow) fournit des instructions pour tester que votre flux de messagerie est correctement configuré.
+[Tester le flux de messagerie en validant vos connecteurs Microsoft 365](/exchange/mail-flow-best-practices/test-mail-flow) fournit des instructions pour tester que votre flux de messagerie est correctement configuré.

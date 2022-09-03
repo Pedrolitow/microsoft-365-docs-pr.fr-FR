@@ -18,14 +18,14 @@ ms.collection:
 description: Utilisez l’Explorateur et les détections en temps réel dans le portail Microsoft 365 Defender pour examiner et répondre efficacement aux menaces.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0920439345b026879b86ad3b2ce104d3ea8174d1
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 7710b2eb156845ccc0e79550a76a9b61ac90327f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649436"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597258"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -47,7 +47,7 @@ Les détections de l’Explorateur ou en temps réel aident votre équipe charg�
 
 Avec ce rapport, vous pouvez :
 
-- [Voir les programmes malveillants détectés par les fonctionnalités de sécurité Microsoft 365](#see-malware-detected-in-email-by-technology)
+- [Voir les programmes malveillants détectés par les fonctionnalités de sécurité de Microsoft 365](#see-malware-detected-in-email-by-technology)
 - [Afficher l’URL de hameçonnage et cliquer sur les données de verdict](#view-phishing-url-and-click-verdict-data)
 - [Démarrer un processus d’investigation et de réponse automatisé à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (Defender pour Office 365 Plan 2 uniquement)
 - [Examiner les e-mails malveillants, et bien plus encore](#more-ways-to-use-explorer-and-real-time-detections)
@@ -69,23 +69,23 @@ L’ID d’alerte est disponible dans l’URL lorsque vous affichez une alerte i
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Extension de la conservation des données de l’Explorateur (et des détections en temps réel) et de la limite de recherche pour les locataires d’essai de 7 à 30 jours
 
-Dans le cadre de cette modification, vous serez en mesure de rechercher et de filtrer les données d’e-mail sur 30 jours (une augmentation par rapport aux 7 derniers jours) dans l’Explorateur de menaces/détections en temps réel pour Defender pour Office locataires d’essai P1 et P2.
+Dans le cadre de cette modification, vous pourrez rechercher et filtrer les données de courrier électronique sur 30 jours (une augmentation par rapport aux 7 derniers jours) dans l’Explorateur de menaces/détections en temps réel pour les locataires d’essai Defender pour Office P1 et P2.
 Cela n’a aucun impact sur les locataires de production pour les clients P1 et P2/E5, qui disposent déjà des fonctionnalités de rétention et de recherche des données de 30 jours.
 
 ### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>Limites mises à jour pour l’exportation d’enregistrements pour l’Explorateur de menaces
 
-Dans le cadre de cette mise à jour, le nombre de lignes pour les enregistrements de messagerie pouvant être exportés à partir de l’Explorateur de menaces est passé de 9990 à 200 000 enregistrements. L’ensemble des colonnes pouvant être exportées reste le même, mais le nombre de lignes augmente par rapport à la limite actuelle.
+Dans le cadre de cette mise à jour, le nombre de lignes pour Email enregistrements pouvant être exportés à partir de l’Explorateur de menaces est passé de 9990 à 200 000 enregistrements. L’ensemble des colonnes pouvant être exportées reste le même, mais le nombre de lignes augmente par rapport à la limite actuelle.
 
 ### <a name="tags-in-threat-explorer"></a>Balises dans l’Explorateur de menaces
 
 > [!NOTE]
-> La fonctionnalité de balises utilisateur est en *préversion*, n’est pas disponible pour tout le monde et est susceptible d’être modifiée. Pour plus d’informations sur la planification de publication, consultez la feuille de route Microsoft 365.
+> La fonctionnalité de balises utilisateur est en *préversion*, n’est pas disponible pour tout le monde et est susceptible d’être modifiée. Pour plus d’informations sur la planification des versions, consultez la feuille de route Microsoft 365.
 
 Les balises utilisateur identifient des groupes d’utilisateurs spécifiques dans Microsoft Defender pour Office 365. Pour plus d’informations sur les balises, notamment les licences et la configuration, consultez [Balises utilisateur](user-tags.md).
 
 Dans l’Explorateur de menaces, vous pouvez voir des informations sur les balises utilisateur dans les expériences suivantes.
 
-#### <a name="email-grid-view"></a>Affichage grille des e-mails
+#### <a name="email-grid-view"></a>vue grille Email
 
 La colonne **Balises** de la grille d’e-mail contient toutes les balises qui ont été appliquées aux boîtes aux lettres de l’expéditeur ou du destinataire. Par défaut, les balises système telles que les comptes de priorité sont affichées en premier.
 
@@ -101,15 +101,15 @@ Vous pouvez utiliser des balises comme filtre. Recherchez des comptes prioritair
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/tags-filter-not.png" alt-text="Balises qui ne sont pas filtrées" lightbox="../../media/tags-filter-not.png":::
 
-#### <a name="email-detail-flyout"></a>Menu volant des détails de l’e-mail
+#### <a name="email-detail-flyout"></a>menu volant de détails Email
 
 Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez l’objet pour ouvrir le menu volant des détails du message. Sous l’onglet **Résumé** , les balises d’expéditeur et de destinataire sont affichées séparément, si elles sont présentes pour un e-mail.
 Les informations sur les balises individuelles pour l’expéditeur et le destinataire s’étendent également aux données CSV exportées, où vous pouvez voir ces détails dans deux colonnes distinctes.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-flyout.png" alt-text="Balises Détails de l’e-mail" lightbox="../../media/tags-flyout.png":::
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Balises Email Details" lightbox="../../media/tags-flyout.png":::
 
-Les informations de balises sont également affichées dans le menu volant des clics d’URL. Pour l’afficher, accédez à l’affichage Phish ou All Email, puis à l’onglet **URL** ou **Clics d’URL** . Sélectionnez un menu volant d’URL individuel pour afficher des détails supplémentaires sur les clics de cette URL, y compris les balises associées à ce clic.
+Les informations de balises sont également affichées dans le menu volant des clics d’URL. Pour l’afficher, accédez à l’affichage Phish ou Tout Email, puis à l’onglet **URL** ou **Clics d’URL**. Sélectionnez un menu volant d’URL individuel pour afficher des détails supplémentaires sur les clics de cette URL, y compris les balises associées à ce clic.
 
 ### <a name="updated-timeline-view"></a>Affichage chronologie mis à jour
 
@@ -128,7 +128,7 @@ Après ces mises à jour, vous verrez une seule entrée pour chaque message, ind
 
 En plus d’afficher les menaces de programmes malveillants et de hameçonnage, vous voyez le verdict de courrier indésirable associé à un e-mail. Dans l’e-mail, consultez toutes les menaces associées à l’e-mail, ainsi que les technologies de détection correspondantes. Un e-mail peut avoir zéro, une ou plusieurs menaces. Vous verrez les **menaces** actuelles dans la section Détails du menu volant de l’e-mail. Pour plusieurs menaces (telles que les programmes malveillants et le hameçonnage), le champ **technique Détection** affiche le mappage de détection des menaces, qui est la technologie de détection qui a identifié la menace.
 
-L’ensemble des technologies de détection comprend désormais de nouvelles méthodes de détection, ainsi que des technologies de détection du courrier indésirable. Vous pouvez utiliser le même ensemble de technologies de détection pour filtrer les résultats entre les différentes vues de courrier (programme malveillant, hameçonnage, tous les e-mails).
+L’ensemble des technologies de détection comprend désormais de nouvelles méthodes de détection, ainsi que des technologies de détection du courrier indésirable. Vous pouvez utiliser le même ensemble de technologies de détection pour filtrer les résultats entre les différentes vues de messagerie (Programmes malveillants, Hameçonnage, Tous Email).
 
 > [!NOTE]
 > L’analyse du verdict peut ne pas nécessairement être liée à des entités. Par exemple, un e-mail peut être classé comme hameçonnage ou courrier indésirable, mais aucune URL n’est marquée d’un verdict de hameçonnage/courrier indésirable. Cela est dû au fait que les filtres évaluent également le contenu et d’autres détails d’un e-mail avant d’attribuer un verdict.
@@ -165,7 +165,7 @@ Actuellement, nous faisons apparaître l’emplacement de livraison dans la gril
 > [!NOTE]
 > Il existe quelques cas où **l’emplacement de remise** et l’action **de remise** peuvent s’afficher comme « inconnus » :
 >
-> - Vous pouvez voir **l’emplacement de remise** comme « remis » et l’emplacement de **remise** comme « inconnu » si le message a été remis, mais une règle de boîte de réception a déplacé le message vers un dossier par défaut (tel que Brouillon ou Archive) au lieu du dossier Boîte de réception ou Courrier indésirable.
+> - Vous pouvez voir **l’emplacement de remise** comme « remis » et l’emplacement de **remise** comme « inconnu » si le message a été remis, mais une règle de boîte de réception a déplacé le message vers un dossier par défaut (tel que Brouillon ou Archive) au lieu du dossier Boîte de réception ou Courrier indésirable Email.
 >
 > - **L’emplacement de remise le plus récent** peut être inconnu si une action administrateur/système (telle que ZAP) a été tentée, mais le message est introuvable. En règle générale, l’action se produit après que l’utilisateur a déplacé ou supprimé le message. Dans ce cas, vérifiez la colonne **Résultats/Détails** en mode Chronologie. Recherchez l’instruction « Message déplacé ou supprimé par l’utilisateur ».
 
@@ -184,13 +184,13 @@ Actuellement, nous faisons apparaître l’emplacement de livraison dans la gril
 
 ### <a name="system-overrides"></a>Remplacements système
 
-*Les remplacements système* vous permettent d’effectuer des exceptions à l’emplacement de remise prévu d’un message. Vous remplacez l’emplacement de remise fourni par le système, en fonction des menaces et autres détections identifiées par la pile de filtrage. Les remplacements système peuvent être définis par le biais d’une stratégie de locataire ou d’utilisateur pour remettre le message comme suggéré par la stratégie. Les remplacements peuvent identifier la remise involontaire de messages malveillants en raison d’écarts de configuration, tels qu’une stratégie d’expéditeur trop large Coffre définie par un utilisateur. Ces valeurs de remplacement peuvent être les suivantes :
+*Les remplacements système* vous permettent d’effectuer des exceptions à l’emplacement de remise prévu d’un message. Vous remplacez l’emplacement de remise fourni par le système, en fonction des menaces et autres détections identifiées par la pile de filtrage. Les remplacements système peuvent être définis par le biais d’une stratégie de locataire ou d’utilisateur pour remettre le message comme suggéré par la stratégie. Les remplacements peuvent identifier la remise involontaire de messages malveillants en raison d’écarts de configuration, tels qu’une stratégie d’expéditeur sûr trop large définie par un utilisateur. Ces valeurs de remplacement peuvent être les suivantes :
 
 - Autorisé par la stratégie utilisateur : un utilisateur crée des stratégies au niveau de la boîte aux lettres pour autoriser les domaines ou les expéditeurs.
 
 - Bloqué par une stratégie utilisateur : un utilisateur crée des stratégies au niveau de la boîte de messagerie pour bloquer les domaines ou les expéditeurs.
 
-- Autorisé par la stratégie d’organisation : les équipes de sécurité de l’organisation définissent des stratégies ou Exchange règles de flux de messagerie (également appelées règles de transport) pour autoriser les expéditeurs et les domaines pour les utilisateurs de leur organisation. Il peut s’agir d’un ensemble d’utilisateurs ou de l’ensemble de l’organisation.
+- Autorisé par la stratégie d’organisation : les équipes de sécurité de l’organisation définissent des stratégies ou des règles de flux de messagerie Exchange (également appelées règles de transport) pour autoriser les expéditeurs et les domaines pour les utilisateurs de leur organisation. Il peut s’agir d’un ensemble d’utilisateurs ou de l’ensemble de l’organisation.
 
 - Bloqué par une stratégie d’organisation : les équipes de sécurité de l’organisation définissent des stratégies ou des règles de flux de messagerie pour bloquer les expéditeurs, les domaines, les langues de message ou les adresses IP sources pour les utilisateurs de leur organisation. Cela peut être appliqué à un ensemble d’utilisateurs ou à l’ensemble de l’organisation.
 
@@ -207,7 +207,7 @@ Les améliorations sont les suivantes :
 
 - Affichez l’URL cliqué (y compris les paramètres de requête qui font partie de l’URL) dans la section **Clics** du menu volant de l’URL. Actuellement, le domaine et le chemin d’accès de l’URL apparaissent dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
 
-- Correctifs entre les filtres d’URL (*URL* ou *domaine d’URL* et *domaine d’URL et chemin d’accès*) : les mises à jour affectent la recherche de messages contenant une URL/cliquez sur le verdict. Nous avons activé la prise en charge des recherches sans protocole, afin que vous puissiez rechercher une URL sans utiliser `http`. Par défaut, la recherche d’URL est mappée à http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
+- Correctifs entre les filtres d’URL (*URL* ou *domaine d’URL* et *domaine d’URL et chemin d’accès*) : les mises à jour affectent la recherche de messages contenant une URL/cliquez sur le verdict. Nous avons activé la prise en charge des recherches sans protocole, afin que vous puissiez rechercher une URL sans utiliser `http`. Par défaut, la recherche d’URL est mappée à http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
   - Effectuez une recherche avec et sans le `http://` préfixe dans les champs **de filtre URL**, **Domaine d’URL** et **Domaine d’URL et Chemin d’accès** . Les recherches doivent afficher les mêmes résultats.
   - Recherchez le `https://` préfixe dans **l’URL**. Lorsqu’aucune valeur n’est spécifiée, le `http://` préfixe est supposé.
   - `/` est ignoré au début et à la fin du **chemin d’URL**, **du domaine d’URL**, du **domaine d’URL et** des champs de chemin d’accès. `/` à la fin du champ **URL** est ignoré.
@@ -241,7 +241,7 @@ Vous pouvez désormais trier et filtrer sur des balises utilisateur système ou 
 
 ### <a name="timezone-improvements"></a>Améliorations du fuseau horaire
 
-Vous verrez le fuseau horaire des enregistrements de courrier dans le portail, ainsi que pour les données exportées. Il sera visible dans les expériences telles que la grille d’e-mail, le menu volant Détails, la chronologie de l’e-mail et les e-mails similaires. Le fuseau horaire du jeu de résultats est donc clair.
+Vous verrez le fuseau horaire des enregistrements de courrier dans le portail, ainsi que pour les données exportées. Il sera visible dans les expériences telles que Email Grid, le menu volant Détails, Email Chronologie et les e-mails similaires. Le fuseau horaire du jeu de résultats est donc clair.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/TimezoneImprovements.png" alt-text="Fuseau horaire d’affichage dans l’Explorateur" lightbox="../../media/TimezoneImprovements.png":::
@@ -273,21 +273,21 @@ Des détails supplémentaires sont désormais disponibles dans le produit, tels 
 
 ### <a name="top-targeted-users"></a>Principaux utilisateurs ciblés
 
-Aujourd’hui, nous exposons la liste des utilisateurs les plus ciblés dans la vue Programmes malveillants pour les e-mails, dans la section **Familles de programmes malveillants principales** . Nous étendrons également cette vue dans les affichages Phish et All Email. Vous pourrez voir les cinq premiers utilisateurs ciblés, ainsi que le nombre de tentatives pour chaque utilisateur pour la vue correspondante. Par exemple, pour la vue Phish, vous verrez le nombre de tentatives de hameçonnage.
+Aujourd’hui, nous exposons la liste des utilisateurs les plus ciblés dans la vue Programmes malveillants pour les e-mails, dans la section **Familles de programmes malveillants principales** . Nous étendrons également cette vue dans les vues Phish et All Email. Vous pourrez voir les cinq premiers utilisateurs ciblés, ainsi que le nombre de tentatives pour chaque utilisateur pour la vue correspondante. Par exemple, pour la vue Phish, vous verrez le nombre de tentatives de hameçonnage.
 
 Vous pourrez exporter la liste des utilisateurs ciblés, jusqu’à une limite de 3 000, ainsi que le nombre de tentatives d’analyse hors connexion pour chaque affichage de messagerie. En outre, la sélection du nombre de tentatives (par exemple, 13 tentatives dans l’image ci-dessous) ouvre une vue filtrée dans l’Explorateur de menaces, afin que vous puissiez voir plus de détails sur les e-mails et les menaces pour cet utilisateur.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="Les utilisateurs les plus ciblés" lightbox="../../media/Top_Targeted_Users.png":::
 
-### <a name="exchange-transport-rules"></a>Exchange règles de transport
+### <a name="exchange-transport-rules"></a>Règles de transport Exchange
 
-Dans le cadre de l’enrichissement des données, vous pouvez voir toutes les différentes règles de transport Exchange (ETR) qui ont été appliquées à un message. Ces informations seront disponibles dans la vue Grille e-mail. Pour l’afficher, sélectionnez **Options de colonne** dans la grille, puis **ajoutez Exchange règle de transport** à partir des options de colonne. Il sera également visible dans le menu volant **Détails** dans l’e-mail.
+Dans le cadre de l’enrichissement des données, vous pouvez voir toutes les différentes règles de transport Exchange (ETR) qui ont été appliquées à un message. Ces informations seront disponibles dans l’affichage grille Email. Pour l’afficher, sélectionnez **Options de colonne** dans la grille, puis **ajoutez une règle de transport Exchange** à partir des options de colonne. Il sera également visible dans le menu volant **Détails** dans l’e-mail.
 
 Vous pourrez voir à la fois le GUID et le nom des règles de transport qui ont été appliquées au message. Vous pourrez rechercher les messages à l’aide du nom de la règle de transport. Il s’agit d’une recherche « Contains », ce qui signifie que vous pouvez également effectuer des recherches partielles.
 
 > [!IMPORTANT]
-> La disponibilité des noms et des recherches ETR dépend du rôle spécifique qui vous est attribué. Vous devez disposer de l’un des rôles/autorisations suivants pour afficher les noms ETR et la recherche. Si aucun de ces rôles ne vous est attribué, vous ne pouvez pas voir les noms des règles de transport ou rechercher des messages à l’aide de noms ETR. Toutefois, vous pouvez voir l’étiquette ETR et les informations GUID dans les détails de l’e-mail. Les autres expériences d’affichage des enregistrements dans les grilles d’e-mail, les menus volants d’e-mail, les filtres et l’exportation ne sont pas affectées.
+> La disponibilité des noms et des recherches ETR dépend du rôle spécifique qui vous est attribué. Vous devez disposer de l’un des rôles/autorisations suivants pour afficher les noms ETR et la recherche. Si aucun de ces rôles ne vous est attribué, vous ne pouvez pas voir les noms des règles de transport ou rechercher des messages à l’aide de noms ETR. Toutefois, vous pouvez voir l’étiquette ETR et les informations guid dans les Email Détails. Les autres expériences d’affichage des enregistrements dans les grilles Email, les menus volants Email, les filtres et l’exportation ne sont pas affectées.
 >
 > - EXO uniquement - Protection contre la perte de données : Tout
 > - EXO Uniquement - O365SupportViewConfig: All
@@ -299,11 +299,11 @@ Vous pourrez voir à la fois le GUID et le nom des règles de transport qui ont 
 > Dans la grille d’e-mail, le menu volant Détails et le fichier CSV exporté, les ETR sont présentés avec un nom/GUID, comme indiqué ci-dessous.
 >
 > > [!div class="mx-imgBorder"]
-> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Les règles de transport Exchange" lightbox="../../media/ETR_Details.png":::
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Règles de transport Exchange" lightbox="../../media/ETR_Details.png":::
 
 ### <a name="inbound-connectors"></a>Connecteurs entrants
 
-Les connecteurs sont une collection d’instructions qui personnalisent la façon dont vos e-mails circulent vers et depuis votre Microsoft 365 ou Office 365 organisation. Ils vous permettent d’appliquer des restrictions ou des contrôles de sécurité. Dans l’Explorateur de menaces, vous pouvez désormais afficher les connecteurs liés à un e-mail et rechercher des e-mails à l’aide de noms de connecteurs.
+Les connecteurs sont une collection d’instructions qui personnalisent la façon dont vos e-mails circulent vers et depuis votre organisation Microsoft 365 ou Office 365. Ils vous permettent d’appliquer des restrictions ou des contrôles de sécurité. Dans l’Explorateur de menaces, vous pouvez désormais afficher les connecteurs liés à un e-mail et rechercher des e-mails à l’aide de noms de connecteurs.
 
 La recherche de connecteurs est de nature « contains », ce qui signifie que les recherches de mots clés partiels doivent également fonctionner. Dans la vue Grille principale, le menu volant Détails et le fichier CSV exporté, les connecteurs sont affichés au format Nom/GUID, comme indiqué ici :
 
@@ -314,20 +314,20 @@ La recherche de connecteurs est de nature « contains », ce qui signifie que le
 
 - [Afficher les e-mails d’hameçonnage envoyés aux utilisateurs et aux domaines usurpés d’identité](#view-phishing-emails-sent-to-impersonated-users-and-domains)
 - [Afficher un aperçu de l’en-tête d’e-mail et télécharger le corps de l’e-mail](#preview-email-header-and-download-email-body)
-- [Chronologie de l’e-mail](#email-timeline)
+- [chronologie Email](#email-timeline)
 - [Exporter des données de clic d’URL](#export-url-click-data)
 
 ### <a name="view-phishing-emails-sent-to-impersonated-users-and-domains"></a>Afficher les e-mails d’hameçonnage envoyés aux utilisateurs et aux domaines usurpés d’identité
 
 Pour identifier les tentatives d’hameçonnage contre les utilisateurs et les domaines qui sont des utilisateurs usurpés d’identité, vous devez ajouter à la liste *des utilisateurs à protéger*. Pour les domaines, les administrateurs doivent activer *les domaines d’organisation* ou ajouter un nom de domaine aux *domaines à protéger*. Les domaines à protéger se trouvent dans la page de stratégie *anti-hameçonnage* de la section *Emprunt d’identité* .
 
-Pour passer en revue les messages de hameçonnage et rechercher des utilisateurs ou domaines usurpés d’identité, utilisez la [vue e-mail > Phish](threat-explorer-views.md) de l’Explorateur.
+Pour passer en revue les messages de hameçonnage et rechercher des utilisateurs ou domaines usurpés d’identité, utilisez la [vue Email > Phish](threat-explorer-views.md) de l’Explorateur.
 
 Cet exemple utilise l’Explorateur de menaces.
 
 1. Dans le [Centre de sécurité & conformité](https://protection.office.com) (https://protection.office.com)choisissez Threat Management > Explorer (ou détections en temps réel).
 
-2. Dans le menu Affichage, choisissez E-mail > Hameçonnage.
+2. Dans le menu Affichage, choisissez Email > Hameçonnage.
 
    Ici, vous pouvez choisir un **domaine** ou un **utilisateur emprunt d’identité**.
 
@@ -335,21 +335,21 @@ Cet exemple utilise l’Explorateur de menaces.
 
    Par exemple, recherchez des noms de domaine protégés tels *que contoso*, *contoso.com* ou *contoso.com.au*.
 
-4. Sélectionnez l’objet d’un message sous l’onglet E-mail > l’onglet Détails pour afficher des informations d’emprunt d’identité supplémentaires telles que Domaine emprunté/Emplacement détecté.
+4. Sélectionnez l’objet d’un message sous l’onglet Email > l’onglet Détails pour afficher des informations d’emprunt d’identité supplémentaires telles que Domaine emprunté/Emplacement détecté.
 
-    **OR**
+    **OU**
 
     Sélectionnez **l’utilisateur usurpé d’identité** et tapez l’adresse e-mail d’un utilisateur protégé dans la zone de texte.
 
     > [!TIP]
     > **Pour de meilleurs résultats**, utilisez *des adresses e-mail complètes* pour rechercher des utilisateurs protégés. Vous trouverez votre utilisateur protégé plus rapidement et avec plus de succès si vous recherchez *firstname.lastname@contoso.com*, par exemple, lors de l’examen de l’emprunt d’identité de l’utilisateur. Lors de la recherche d’un domaine protégé, la recherche prend le domaine racine (contoso.com, par exemple) et le nom de domaine (*contoso*). La recherche de *l’contoso.com* de domaine racine retourne à la fois les emprunts *d’identité de contoso.com* et le nom de domaine *contoso*.
 
-5. Sélectionnez **l’objet** d’un message sous **l’onglet Email tabDetails**  >  pour afficher des informations d’emprunt d’identité supplémentaires sur l’utilisateur ou le domaine, ainsi que *l’emplacement détecté*.
+5. Sélectionnez **l’objet** d’un message sous **Email’onglet** >  Détails pour afficher **des** informations d’emprunt d’identité supplémentaires sur l’utilisateur ou le domaine, ainsi que *l’emplacement détecté*.
 
     :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Volet Détails de l’Explorateur de menaces pour un utilisateur protégé affichant l’emplacement de détection et la menace détectée (ici, usurpation d’identité d’un utilisateur)" lightbox="../../media/threat-ex-views-impersonated-user-image.png":::
 
 > [!NOTE]
-> À l’étape 3 ou 5, si vous choisissez **Technologie de détection** et sélectionnez **Domaine d’emprunt** d’identité ou **Utilisateur d’emprunt** d’identité respectivement, les informations de **l’onglet e-mailDetails**  >  sur l’utilisateur ou le domaine, et *l’emplacement détecté* s’affichent uniquement sur les messages liés à l’utilisateur ou au domaine répertoriés dans la page de stratégie *anti-hameçonnage*.
+> À l’étape 3 ou 5, si vous choisissez **Technologie de détection** et sélectionnez **Domaine** d’emprunt d’identité ou **Utilisateur d’emprunt** d’identité respectivement, les informations de **l’onglet** >  Email **Détails** sur l’utilisateur ou le domaine, et *l’emplacement détecté* s’affiche uniquement sur les messages liés à l’utilisateur ou au domaine répertoriés dans la page de stratégie *anti-hameçonnage*.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Afficher un aperçu de l’en-tête d’e-mail et télécharger le corps de l’e-mail
 
@@ -372,7 +372,7 @@ Comment cela est-il fait ? L’état de remise est maintenant divisé en deux co
 
 |Livré|Jetés|Blocked|Remplacé|
 |---|---|---|---|
-|L’e-mail a été remis à la boîte de réception ou au dossier d’un utilisateur, et l’utilisateur peut y accéder.|L’e-mail a été envoyé au dossier Courrier indésirable ou supprimé de l’utilisateur, et l’utilisateur peut y accéder.|E-mails mis en quarantaine, qui ont échoué ou qui ont été supprimés. Ces messages sont inaccessibles à l’utilisateur.|Les pièces jointes malveillantes ont été remplacées par des fichiers .txt indiquant que la pièce jointe était malveillante.|
+|Email a été remis à la boîte de réception ou au dossier d’un utilisateur, et l’utilisateur peut y accéder.|Email a été envoyé au dossier Courrier indésirable ou Supprimé de l’utilisateur, et l’utilisateur peut y accéder.|E-mails mis en quarantaine, qui ont échoué ou qui ont été supprimés. Ces messages sont inaccessibles à l’utilisateur.|Email avait des pièces jointes malveillantes remplacées par des fichiers .txt indiquant que la pièce jointe était malveillante.|
 
 Voici ce que l’utilisateur peut et ne peut pas voir :
 
@@ -391,15 +391,15 @@ Voici ce que l’utilisateur peut et ne peut pas voir :
 - *Échec* : l’e-mail n’a pas pu atteindre la boîte aux lettres.
 - *Supprimé* : l’e-mail s’est perdu quelque part dans le flux de courrier.
 
-### <a name="email-timeline"></a>Chronologie de l’e-mail
+### <a name="email-timeline"></a>chronologie Email
 
-La **chronologie de l’e-mail** est une nouvelle fonctionnalité de l’Explorateur qui améliore l’expérience de chasse pour les administrateurs. Il réduit le temps consacré à la vérification des différents emplacements pour essayer de comprendre l’événement. Lorsque plusieurs événements se produisent au moment où un e-mail arrive ou presque, ces événements sont affichés dans un affichage chronologie. Certains événements qui se produisent dans votre courrier électronique après la remise sont capturés dans la colonne **Action spéciale** . Les administrateurs peuvent combiner les informations de la chronologie avec les mesures spéciales prises après la remise du courrier pour obtenir des informations sur le fonctionnement de leurs stratégies, l’endroit où le courrier a finalement été routée et, dans certains cas, ce qu’était l’évaluation finale.
+La **chronologie Email** est une nouvelle fonctionnalité de l’Explorateur qui améliore l’expérience de chasse pour les administrateurs. Il réduit le temps consacré à la vérification des différents emplacements pour essayer de comprendre l’événement. Lorsque plusieurs événements se produisent au moment où un e-mail arrive ou presque, ces événements sont affichés dans un affichage chronologie. Certains événements qui se produisent dans votre courrier électronique après la remise sont capturés dans la colonne **Action spéciale** . Les administrateurs peuvent combiner les informations de la chronologie avec les mesures spéciales prises après la remise du courrier pour obtenir des informations sur le fonctionnement de leurs stratégies, l’endroit où le courrier a finalement été routée et, dans certains cas, ce qu’était l’évaluation finale.
 
 Pour plus d’informations, consultez [Examiner et corriger les e-mails malveillants qui ont été remis dans Office 365](investigate-malicious-email-that-was-delivered.md).
 
 ### <a name="export-url-click-data"></a>Exporter des données de clic d’URL
 
-Vous pouvez désormais exporter des rapports pour les clics d’URL pour Microsoft Excel pour afficher leur **ID de message réseau** et **cliquer sur verdict**, ce qui vous aide à expliquer l’origine du trafic de votre clic d’URL. Voici comment cela fonctionne : Dans Gestion des menaces dans la barre de lancement rapide Office 365, suivez cette chaîne :
+Vous pouvez désormais exporter des rapports pour les clics d’URL vers Microsoft Excel pour afficher leur **ID de message réseau** et **cliquer sur verdict**, ce qui vous aide à expliquer l’origine du trafic de votre clic d’URL. Voici comment cela fonctionne : Dans Gestion des menaces dans la barre de lancement rapide Office 365, suivez cette chaîne :
 
 **Explorateur** \> **Afficher le hameçonnage** \> **Clics** \> **Les URL principales** ou les **clics** \> en haut sélectionnent n’importe quel enregistrement pour ouvrir le menu volant d’URL.
 
@@ -417,11 +417,11 @@ Suivez ce chemin pour accéder au même emplacement dans le rapport de détectio
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Voir les programmes malveillants détectés dans le courrier électronique par la technologie
 
-Supposons que vous souhaitez voir les programmes malveillants détectés dans les e-mails triés par technologie Microsoft 365. Pour ce faire, utilisez la vue [Courrier électronique > Programmes malveillants](threat-explorer-views.md#email--malware) de l’Explorateur (ou détections en temps réel).
+Supposons que vous souhaitez voir les programmes malveillants détectés dans les e-mails triés par la technologie Microsoft 365. Pour ce faire, utilisez la [vue Email > Programmes malveillants](threat-explorer-views.md#email--malware) de l’Explorateur (ou des détections en temps réel).
 
 1. Dans le Centre de sécurité & conformité (<https://protection.office.com>), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
 
-2. Dans le menu **Affichage**, choisissez **Programmes malveillants** **par e-mail**\>.
+2. Dans le menu **Affichage**, choisissez **Email** \> **Programme malveillant**.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailMalwareMenu.png" alt-text="Menu Affichage de l’Explorateur" lightbox="../../media/ExplorerViewEmailMalwareMenu.png":::
@@ -442,13 +442,13 @@ Le rapport est actualisé pour afficher les résultats détectés par les progra
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Afficher l’URL de hameçonnage et cliquer sur les données de verdict
 
-Supposons que vous souhaitiez voir des tentatives de hameçonnage via des URL par e-mail, y compris une liste d’URL qui ont été autorisées, bloquées et remplacées. Pour identifier les URL qui ont été cliqués, [Coffre liens](safe-links.md) doivent être configurés. Veillez à configurer [Coffre stratégies de liens](set-up-safe-links-policies.md) pour la protection du temps de clic et la journalisation des verdicts de clic par Coffre Liens.
+Supposons que vous souhaitiez voir des tentatives de hameçonnage via des URL par e-mail, y compris une liste d’URL qui ont été autorisées, bloquées et remplacées. Pour identifier les URL qui ont été cliqués, les [liens fiables](safe-links.md) doivent être configurés. Veillez à configurer des stratégies [de liens fiables](set-up-safe-links-policies.md) pour la protection du temps de clic et la journalisation des verdicts de clic par liens fiables.
 
-Pour passer en revue les URL de hameçonnage dans les messages et cliquer sur les URL dans les messages de hameçonnage, utilisez la vue [**EmailPhish** > ](threat-explorer-views.md#email--phish) de l’Explorateur ou des détections en temps réel.
+Pour passer en revue les URL de hameçonnage dans les messages et cliquer sur les URL dans les messages de hameçonnage, utilisez la vue [**Email** >  **Phish**](threat-explorer-views.md#email--phish) de l’Explorateur ou des détections en temps réel.
 
 1. Dans le Centre de sécurité & conformité (<https://protection.office.com>), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
 
-2. Dans le menu **Affichage**, choisissez **Phish e-mail**\>.
+2. Dans le menu **Affichage**, choisissez **Email** \> **Hameçonnage**.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="Menu Affichage de l’Explorateur dans le contexte de hameçonnage" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
@@ -464,7 +464,7 @@ Pour passer en revue les URL de hameçonnage dans les messages et cliquer sur le
 
    - **Les URL principales** sont les URL dans les messages que vous avez filtrés et le nombre d’actions de remise de courrier pour chaque URL. Dans la vue e-mail Phish, cette liste contient généralement des URL légitimes. Les attaquants incluent une combinaison d’URL bonnes et incorrectes dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants. La table des URL est triée par nombre total d’e-mails, mais cette colonne est masquée pour simplifier l’affichage.
 
-   - **Les clics supérieurs** sont les URL Coffre encapsulées liens qui ont été cliqués, triées par nombre total de clics. Cette colonne n’est pas non plus affichée pour simplifier l’affichage. Les nombres totaux par colonne indiquent la Coffre Les liens cliquent sur le nombre de verdicts pour chaque URL cliqué. Dans la vue e-mail Phish, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, la vue peut inclure des URL qui ne sont pas des menaces, mais qui sont dans des messages de hameçonnage. Les clics d’URL sur les liens non mappés ne s’affichent pas ici.
+   - **Les clics principaux** sont les URL encapsulées liens sécurisés qui ont été cliqués, triées par nombre total de clics. Cette colonne n’est pas non plus affichée pour simplifier l’affichage. Le nombre total par colonne indique que les liens fiables cliquent sur le nombre de verdicts pour chaque URL cliqué. Dans la vue e-mail Phish, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, la vue peut inclure des URL qui ne sont pas des menaces, mais qui sont dans des messages de hameçonnage. Les clics d’URL sur les liens non mappés ne s’affichent pas ici.
 
    Les deux tables d’URL affichent les URL les plus élevées dans les e-mails d’hameçonnage par action de remise et emplacement. Les tableaux affichent les clics d’URL qui ont été bloqués ou visités en dépit d’un avertissement, afin que vous puissiez voir quels liens incorrects potentiels ont été présentés aux utilisateurs et que l’utilisateur a cliqué. À partir de là, vous pouvez effectuer une analyse plus approfondie. Par exemple, sous le graphique, vous pouvez voir les URL principales dans les messages électroniques qui ont été bloqués dans l’environnement de votre organisation.
 
@@ -478,7 +478,7 @@ Pour passer en revue les URL de hameçonnage dans les messages et cliquer sur le
 
 ### <a name="interpretation-of-click-verdicts"></a>Interprétation des verdicts de clic
 
-Dans les menus volants d’e-mail ou d’URL, les clics principaux ainsi que dans nos expériences de filtrage, vous verrez différentes valeurs de verdict de clic :
+Dans les menus volants Email ou URL, les clics principaux ainsi que dans nos expériences de filtrage, vous verrez différentes valeurs de verdict de clic :
 
 - **Aucun:** Impossible de capturer le verdict pour l’URL. L’utilisateur a peut-être cliqué sur l’URL.
 - **Autorisé:** L’utilisateur a été autorisé à accéder à l’URL.
@@ -491,11 +491,11 @@ Dans les menus volants d’e-mail ou d’URL, les clics principaux ainsi que dan
 
 ## <a name="review-email-messages-reported-by-users"></a>Passer en revue les messages électroniques signalés par les utilisateurs
 
-Supposons que vous souhaitiez voir les messages électroniques signalés par les utilisateurs de votre organisation comme *courrier indésirable*, *non indésirable* ou *hameçonnage* via le [complément Message](enable-the-report-message-add-in.md) de rapport ou le [complément d’hameçonnage de rapport](enable-the-report-phish-add-in.md). Pour les voir, utilisez la vue [**EmailSubmissions** > ](threat-explorer-views.md#email--submissions) de l’Explorateur (ou des détections en temps réel).
+Supposons que vous souhaitiez voir les messages électroniques signalés par les utilisateurs de votre organisation comme *courrier indésirable*, *non indésirable* ou *hameçonnage* via le [complément Message](enable-the-report-message-add-in.md) de rapport ou le [complément d’hameçonnage de rapport](enable-the-report-phish-add-in.md). Pour les voir, utilisez la vue [**Email** >  **Submissions**](threat-explorer-views.md#email--submissions) de l’Explorateur (ou des détections en temps réel).
 
 1. Dans le Centre de sécurité & conformité (<https://protection.office.com>), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
 
-2. Dans le menu **Affichage**, choisissez **Envois par** **e-mail**\>.
+2. Dans le menu **Affichage**, choisissez **Email** \> **Soumissions**.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/explorer-view-menu-email-user-reported.png" alt-text="Menu Affichage de l’Explorateur pour les e-mails" lightbox="../../media/explorer-view-menu-email-user-reported.png":::
@@ -539,7 +539,7 @@ Pour afficher et utiliser des détections d’Explorateur ou en temps réel, vou
 - Pour le Centre de sécurité & conformité, vous devez disposer de l’un des rôles suivants :
 
   - Gestion de l’organisation
-  - Administrateur de sécurité (cela peut être attribué dans le centre d’administration Azure Active Directory (<https://aad.portal.azure.com>)
+  - Administrateur de sécurité (cela peut être attribué dans le Centre d’administration Azure Active Directory (<https://aad.portal.azure.com>)
   - Lecteur de sécurité
 
 - Pour Exchange Online, vous devez disposer de l’un des rôles suivants attribués dans le Centre d’administration Exchange (EAC) ou [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) :
@@ -563,4 +563,4 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les ressource
 
 ## <a name="other-articles"></a>Autres articles
 
-[Examiner les e-mails à l’aide de la page Entité de messagerie](mdo-email-entity-page.md)
+[Examiner les e-mails avec la page d’entité Email](mdo-email-entity-page.md)

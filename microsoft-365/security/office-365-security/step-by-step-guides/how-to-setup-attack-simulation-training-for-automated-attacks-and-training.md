@@ -3,7 +3,7 @@ title: Comment configurer les attaques automatisées et l’entraînement dans l
 description: Étapes permettant d’automatiser l’entraînement de simulation d’attaque et d’envoyer une charge utile aux utilisateurs cibles. En suivant ce guide, vous allez apprendre à créer des flux d’attaque automatisés avec des techniques et charges utiles spécifiques.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: c522c9602874ca8b385a135a64c34ef0643abe82
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 8bb4b0ef91eac55dae814150a39c4fc2dbe0875d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106840"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596630"
 ---
 # <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>Comment configurer les attaques automatisées et l’entraînement dans le cadre de l’entraînement de simulation d’attaque
 
-La formation sur la simulation d’attaque vous permet d’exécuter des simulations d’attaques bénignes sur votre organisation pour évaluer vos risques d’hameçonnage et apprendre à vos utilisateurs à mieux éviter les attaques par hameçonnage. En suivant ce guide, vous allez configurer des flux automatisés avec des techniques et charges utiles spécifiques qui s’exécutent lorsque les conditions spécifiées sont remplies, en lançant des simulations sur votre organisation.
+Exercice de simulation d'attaque vous permet d’exécuter des simulations d’attaques bénignes sur votre organisation pour évaluer vos risques d’hameçonnage et apprendre à vos utilisateurs comment mieux éviter les attaques par hameçonnage. En suivant ce guide, vous allez configurer des flux automatisés avec des techniques et charges utiles spécifiques qui s’exécutent lorsque les conditions spécifiées sont remplies, en lançant des simulations sur votre organisation.
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
@@ -36,7 +36,7 @@ La formation sur la simulation d’attaque vous permet d’exécuter des simulat
 
 ## <a name="send-a-payload-to-target-users"></a>Envoyer une charge utile aux utilisateurs cibles
 
-1. Accédez à [l’entraînement de simulation d’attaque](https://security.microsoft.com/attacksimulator).
+1. Accédez à [Exercice de simulation d'attaque](https://security.microsoft.com/attacksimulator).
 1. Choisissez **Automatisations de simulation dans** la barre de navigation supérieure.
 1. **Appuyez sur Créer une automatisation**.
 1. Nommez l’automatisation de simulation avec quelque chose de pertinent et mémorable. *Ensuite, je vous en passe*.
@@ -55,4 +55,4 @@ La formation sur la simulation d’attaque vous permet d’exécuter des simulat
 
 ## <a name="learn-more"></a>En savoir plus
 
-Vous trouverez des conseils [complets sur les automatisations de simulation pour l’entraînement de simulation d’attaque - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulation-automations.md).
+Vous trouverez des conseils [complets sur les automatisations de simulation pour Exercice de simulation d'attaque - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulation-automations.md).

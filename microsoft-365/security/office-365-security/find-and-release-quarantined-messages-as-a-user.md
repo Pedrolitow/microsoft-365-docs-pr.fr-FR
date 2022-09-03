@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
-ms.translationtype: HT
+ms.openlocfilehash: 69fa7f15aa95f85d298209d4e24e37ada6868bba
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607672"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597909"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -44,16 +44,16 @@ En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités
 |Raison de la mise en quarantaine :|Afficher|Débloquer|Supprimer|
 |---|:---:|:---:|:---:|
 |**Stratégies anti-courrier indésirable**||||
-|En nombre|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|En nombre|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Courrier indésirable|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Courrier fortement suspecté d’être indésirable|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Courrier fortement suspecté d’être indésirable|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Hameçonnage|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Hameçonnage à haute fiabilité||||
 |**Stratégies anti-hameçonnage**||||
-|Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Protection contre l’emprunt d’identité de l’utilisateur dans Defender pour Office 365|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection contre l’emprunt d’identité de l’utilisateur dans Defender pour Office 365|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |**Stratégies anti-programme malveillant**||||
 |Messages électroniques avec pièces jointes mis en quarantaine en tant que programmes malveillants.||||
 |**Pièces jointes sécurisées dans Defender pour Office 365**||||

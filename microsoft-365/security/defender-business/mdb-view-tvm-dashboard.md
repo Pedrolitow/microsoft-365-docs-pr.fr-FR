@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/02/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: dc1fea2a1bcbf05b0f32519221a68686a85e85f6
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: b0b14216737eea49c7a5875b62d2ba93c1fc422e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326340"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597953"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Utiliser votre tableau de bord de gestion des vulnérabilités dans Microsoft Defender pour entreprises
 

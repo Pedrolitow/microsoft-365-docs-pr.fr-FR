@@ -20,14 +20,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur la quarantaine dans Exchange Online Protection (EOP) qui contient des messages potentiellement dangereux ou indésirables.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c61154054669032a23c9cbdb0d11344ef78ec281
-ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: af99da8ddaddcbf8c9fd746496a66242c57abd5b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67002469"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596806"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Messages électroniques mis en quarantaine dans EOP et Defender pour Office 365
 
@@ -58,7 +58,7 @@ Les utilisateurs et les administrateurs peuvent travailler avec des messages mis
 
 - La durée pendant laquelle les messages mis en quarantaine sont maintenus en quarantaine avant leur expiration varie en fonction de la raison pour laquelle le message a été mis en quarantaine. Les fonctionnalités qui mettent en quarantaine les messages et leurs périodes de rétention correspondantes sont décrites dans le tableau suivant :
 
-  |Raison de la mise en quarantaine :|Période de rétention par défaut|Personnalisable?|Commentaires|
+  |Raison de la mise en quarantaine :|Période de rétention par défaut|Personnalisable?|Comments|
   |---|---|:---:|---|
   |Messages mis en quarantaine par des stratégies anti-courrier indésirable : courrier indésirable, courrier indésirable à haut niveau de confiance, hameçonnage, hameçonnage à haut niveau de confiance ou en bloc.|15 jours : <ul><li>Dans la stratégie anti-courrier indésirable par défaut.</li><li>Dans les stratégies anti-courrier indésirable que vous créez dans PowerShell.</li></ul> <p> 30 jours dans les stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender.|Oui|Vous pouvez configurer (inférieur) cette valeur dans les stratégies anti-courrier indésirable. Pour plus d’informations, consultez le paramètre **Conserver le courrier indésirable en quarantaine pour ce nombre de jours** (_QuarantineRetentionPeriod_) dans [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
   |Messages mis en quarantaine par des stratégies anti-hameçonnage : renseignement sur l’usurpation d’identité dans EOP ; l’emprunt d’identité de l’utilisateur, l’emprunt d’identité de domaine ou l’intelligence de boîte aux lettres dans Defender pour Office 365.|30 jours|Oui|Cette période de rétention est également contrôlée par le paramètre **Conserver le courrier indésirable en quarantaine pour ce nombre de jours** (_QuarantineRetentionPeriod_) dans les stratégies **anti-courrier indésirable** . La période de rétention utilisée est la valeur de la première stratégie **anti-courrier indésirable** correspondante dans laquelle le destinataire est défini.|

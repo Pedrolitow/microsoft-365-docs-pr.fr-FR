@@ -1,7 +1,7 @@
 ---
 title: Stratégies d’accès aux identités et aux appareils pour autoriser l’accès B2B des utilisateurs invités et externes - Microsoft 365 pour les | Microsoft Docs
 description: Décrit l’accès conditionnel recommandé et les stratégies associées pour protéger l’accès des invités et des utilisateurs externes.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 ms.author: dansimp
 author: dansimp
@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 - highpri
-ms.technology: mdo
-ms.openlocfilehash: 872d5e5fc7774a32619e637bdb6dceb6e07b324e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: d4f047272d11d8c4cd5d40a578bd508403d1b527
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466896"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596850"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Stratégies permettant d’autoriser l’accès invité et l’accès des utilisateurs externes B2B
 

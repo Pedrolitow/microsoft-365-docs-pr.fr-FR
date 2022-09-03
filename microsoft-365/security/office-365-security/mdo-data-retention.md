@@ -8,20 +8,20 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Microsoft Defender pour Office 365 des informations de rétention des donnéesThreat Explorer/ détections de Real-Time
-ms.openlocfilehash: 9cab47358890b47796a42e48b690818d65e20527
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: d57865649dbba96dc4e2d66c0618dc6d52d87205
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "66991888"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596399"
 ---
 # <a name="data-retention-information-for-microsoft-defender-for-office-365"></a>Informations de conservation des données pour Microsoft Defender pour Office 365
 

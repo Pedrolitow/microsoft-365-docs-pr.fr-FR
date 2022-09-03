@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez la conformité et comment configurer les paramètres de confidentialité dans le Tableau blanc Microsoft.
-ms.openlocfilehash: 665586ed6f0e5667252fd7c1b5884aac5a116faf
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 51a2c3dd3752e9148c4aee802cb9a1d5f1b6773c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369112"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597623"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Configurer les paramètres de confidentialité dans le Tableau blanc Microsoft
 

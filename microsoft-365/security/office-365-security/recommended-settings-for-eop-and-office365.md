@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5fb969422791f0b0e211ad49b2d321ebd3de816c
-ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 15bc518a7bc9fa939bfd33e7f272929d190378c2
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67417409"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597777"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 

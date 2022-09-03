@@ -15,14 +15,14 @@ ms.collection:
 - m365solution-ransomware
 - highpri
 description: Les administrateurs Microsoft 365 peuvent apprendre à récupérer après une attaque par ransomware.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 23cc51d34244ebdb0d37141879df25da7e8429df
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 6fc5aef45ab6fbced903dc46e2734a32d2dc0948
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481127"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597755"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupérer à la suite d’une attaque par ransomware dans Microsoft 365
 

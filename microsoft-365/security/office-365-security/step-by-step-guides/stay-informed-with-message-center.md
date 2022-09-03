@@ -3,7 +3,7 @@ title: Étapes de configuration d’un e-mail de synthèse hebdomadaire des modi
 description: Étapes de configuration d’un e-mail de synthèse hebdomadaire de l’activité du centre de messages pour rester à jour sur les modifications apportées à Microsoft Defender pour Office 365.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: a7df8a0ec777e68b273b246ac6d92adca44539b7
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: 27d6483c8a0a92f912421fe2f7feb7f62e99e5bb
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470484"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596586"
 ---
 # <a name="set-up-a-digest-notification-of-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>Configurer une notification digeste des modifications apportées à Microsoft Defender pour Office 365 à l’aide du centre de messages
 

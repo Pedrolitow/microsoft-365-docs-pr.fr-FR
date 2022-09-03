@@ -14,23 +14,23 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser l’insight de résolution des règles de flux de courrier lent dans le Centre de sécurité & conformité pour identifier et corriger les règles de flux de courrier inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 650389529f2a5d811f71b7c3f755d93e7e734d81
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: edc173463d6dd5882693f2734c8df09b487e1032
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128737"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597369"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Correction de l’insight sur les règles de flux de courrier lent dans le Centre de sécurité & conformité
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Des règles de flux de courrier inefficaces (également appelées règles de transport) peuvent entraîner des retards de flux de courrier pour votre organisation. Cet aperçu signale les règles de flux de courrier qui ont un impact sur le flux de messagerie de votre organisation. Voici quelques exemples de ces types de règles :
 
@@ -48,7 +48,7 @@ Vous pouvez utiliser cette notification pour vous aider à identifier et à affi
 
 Lorsque vous cliquez sur **Afficher les détails** du widget, un menu volant s’affiche avec plus d’informations :
 
-- **Règle** : vous pouvez pointer sur le résumé pour voir toutes les conditions, exceptions et actions de la règle. Vous pouvez cliquer sur le résumé pour modifier la règle dans le centre d’administration Exchange (EAC) à l’adresse <https://admin.exchange.microsoft.com/#/transportrules>.
+- **Règle** : vous pouvez pointer sur le résumé pour voir toutes les conditions, exceptions et actions de la règle. Vous pouvez cliquer sur le résumé pour modifier la règle dans le Centre d’administration Exchange (EAC) à l’adresse <https://admin.exchange.microsoft.com/#/transportrules>.
 - **Nombre de messages évalués** : vous pouvez cliquer sur **Afficher les exemples de messages** pour afficher les résultats de [suivi des messages](message-trace-scc.md) pour un exemple de messages qui ont été affectés par la règle.
 - **Temps moyen passé sur chaque message**
 - **Temps médian passé sur un message** : valeur intermédiaire qui sépare la moitié supérieure de la moitié inférieure des données de temps.

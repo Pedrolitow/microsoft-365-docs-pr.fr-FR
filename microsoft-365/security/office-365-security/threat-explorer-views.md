@@ -15,22 +15,22 @@ ms.collection:
 - m365initiative-defender-office365
 description: Découvrez comment utiliser l’Explorateur de menaces et le rapport de détections en temps réel pour examiner et répondre aux menaces dans le portail Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ccc26bef5209dd297df0b3008b841edb56cdd160
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: d6d666285baa2e31c8e2099eb1359c370ac660ae
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971151"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596564"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 :::image type="content" source="../../media/explorer.png" alt-text="Page Explorateur de menaces" lightbox="../../media/explorer.png":::
 
@@ -58,9 +58,9 @@ Utilisez le menu **Affichage** pour modifier les informations affichées. Les bu
 
 Une fois que vous avez sélectionné un affichage, vous pouvez appliquer des filtres et configurer des requêtes pour effectuer une analyse plus approfondie. Les sections suivantes fournissent une brève vue d’ensemble des différentes vues disponibles dans l’Explorateur (ou les détections en temps réel).
 
-## <a name="email--malware"></a>Programme malveillant > par e-mail
+## <a name="email--malware"></a>programme malveillant Email >
 
-Pour afficher ce rapport, dans l’Explorateur (ou dans les détections en temps réel), choisissez **Afficher les** \> **programmes malveillants** **par e-mail**\>. Cette vue affiche des informations sur les messages électroniques identifiés comme contenant des programmes malveillants.
+Pour afficher ce rapport, dans l’Explorateur (ou dans les détections en temps réel), choisissez **Afficher** \> **Email** \> **programmes malveillants**. Cette vue affiche des informations sur les messages électroniques identifiés comme contenant des programmes malveillants.
 
 :::image type="content" source="../../media/detection-technology.png" alt-text="Afficher les données sur les e-mails identifiés comme programmes malveillants" lightbox="../../media/detection-technology.png":::
 
@@ -74,9 +74,9 @@ Sous le graphique, affichez plus de détails sur des messages spécifiques. Lors
 
 :::image type="content" source="../../media/ThreatExplorerMalwareItemSelectedFlyout.png" alt-text="Explorateur de menaces avec menu volant ouvert" lightbox="../../media/ThreatExplorerMalwareItemSelectedFlyout.png":::
 
-## <a name="email--phish"></a>E-mail > Phish
+## <a name="email--phish"></a>Email > Phish
 
-Pour afficher ce rapport, dans l’Explorateur (ou dans les détections en temps réel), choisissez **Afficher** \> le **hameçonnage** par **e-mail**\>. Cette vue affiche les messages électroniques identifiés comme tentatives d’hameçonnage.
+Pour afficher ce rapport, dans l’Explorateur (ou dans les détections en temps réel), choisissez **Afficher** \> **Email** \> **Phish**. Cette vue affiche les messages électroniques identifiés comme tentatives d’hameçonnage.
 
 :::image type="content" source="../../media/phish.png" alt-text="Afficher les données sur les e-mails identifiés comme tentatives d’hameçonnage" lightbox="../../media/phish.png":::
 
@@ -94,11 +94,11 @@ Lorsque vous sélectionnez un élément dans la liste, tel qu’une URL détect�
 
 :::image type="content" source="../../media/ThreatExplorerEmailPhishURLDetails.png" alt-text="Détails sur une URL détectée" lightbox="../../media/ThreatExplorerEmailPhishURLDetails.png":::
 
-## <a name="email--submissions"></a>Envois par e-mail >
+## <a name="email--submissions"></a>Email > soumissions
 
-Pour afficher ce rapport, dans l’Explorateur (ou dans les détections en temps réel), choisissez **Afficher** \> **les envois de** **courrier** \> électronique. Cette vue affiche les e-mails signalés par les utilisateurs comme indésirables, et non comme courrier indésirable ou hameçonnage.
+Pour afficher ce rapport, dans l’Explorateur (ou dans les détections en temps réel), choisissez **Afficher** \> **Email** \> **Soumissions**. Cette vue affiche les e-mails signalés par les utilisateurs comme indésirables, et non comme courrier indésirable ou hameçonnage.
 
-:::image type="content" source="../../media/ThreatExplorerEmailUserReportedViewOptions.png" alt-text="Messages électroniques signalés par les utilisateurs" lightbox="../../media/ThreatExplorerEmailUserReportedViewOptions.png":::
+:::image type="content" source="../../media/ThreatExplorerEmailUserReportedViewOptions.png" alt-text="Messages Email signalés par les utilisateurs" lightbox="../../media/ThreatExplorerEmailUserReportedViewOptions.png":::
 
 Cliquez sur **Sender** pour ouvrir votre liste d’options d’affichage. Utilisez cette liste pour afficher les informations par expéditeur, destinataires, type de rapport (la détermination de l’utilisateur que l’e-mail était indésirable, pas indésirable ou hameçonnage), etc.
 
@@ -112,9 +112,9 @@ Sous le graphique, affichez plus de détails sur des messages électroniques sp�
 
 Sélectionnez un élément dans la liste pour afficher des détails supplémentaires.
 
-## <a name="email--all-email"></a>E-mail > tous les e-mails
+## <a name="email--all-email"></a>Email > tous les e-mails
 
-Pour afficher ce rapport, dans l’Explorateur, choisissez **Afficher** \> **tous les courriers électroniques**\>. Cette vue affiche une vue d’ensemble de l’activité de messagerie, y compris les e-mails identifiés comme malveillants en raison du hameçonnage ou des programmes malveillants, ainsi que tous les messages non malveillants (courrier électronique normal, courrier indésirable et courrier en bloc).
+Pour afficher ce rapport, dans l’Explorateur, choisissez **Afficher** \> **Email** \> **Tous les messages**. Cette vue affiche une vue d’ensemble de l’activité de messagerie, y compris les e-mails identifiés comme malveillants en raison du hameçonnage ou des programmes malveillants, ainsi que tous les messages non malveillants (courrier électronique normal, courrier indésirable et courrier en bloc).
 
 > [!NOTE]
 > Si vous obtenez une erreur qui lit **trop de données à afficher**, ajoutez un filtre et, si nécessaire, réduisez la plage de dates que vous affichez.
@@ -145,7 +145,7 @@ Le fait de cliquer sur la **détonation ATP** dans ce graphique génère une vue
 
 :::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="L’Explorateur filtré pour afficher uniquement Defender pour Office 365 résultats de la détonation" lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
 
-Dans cette vue, nous examinons maintenant les données des fichiers qui ont été détonés par [Coffre pièces jointes](safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques contenant des pièces jointes détectées par Coffre pièces jointes.
+Dans cette vue, nous examinons maintenant les données des fichiers qui ont été détonés par [des pièces jointes sécurisées](safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques contenant des pièces jointes détectées par des pièces jointes sécurisées.
 
 :::image type="content" source="../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png" alt-text="Détails spécifiques sur les messages électroniques avec pièces jointes détectées" lightbox="../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png":::
 

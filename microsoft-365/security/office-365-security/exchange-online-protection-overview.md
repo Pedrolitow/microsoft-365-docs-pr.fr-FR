@@ -14,14 +14,14 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Exchange Online Protection (EOP) peut aider à protéger votre organisation de messagerie locale dans des environnements autonomes et hybrides.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 90d0e4293a08b77347aace9098cc9c65851a4cab
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 0f73f4b06b7ecf670ab741aaf852c02a19615848
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388460"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595804"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 

@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment activer, désactiver et gérer des données de tableau blanc.
-ms.openlocfilehash: 7034aba1ea94bcc87a21f8378595ce984a74769f
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 31194aff6a4d51f17ffd5cc1531347627e3d6e88
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496722"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597192"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-high-environments"></a>Gérer l’accès au Tableau blanc Microsoft pour les environnements GCC High
 

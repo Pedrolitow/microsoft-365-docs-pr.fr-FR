@@ -11,31 +11,31 @@ ms.custom: ''
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget Files d’attente dans le tableau de bord flux de courrier du Centre de sécurité & conformité pour surveiller les flux de courrier non réussis vers leurs organisations locales ou partenaires sur les connecteurs sortants.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 146ce26c32f1ff80a451b85fd343990db547a131
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 2d9e35e90870ef8b9dba97f8b10fa4d09090551a
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972648"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597391"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de sécurité & conformité
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Lorsque les messages ne peuvent pas être envoyés de votre organisation à vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Microsoft 365. Voici des exemples courants qui provoquent cette condition :
 
 - Le connecteur n’est pas configuré correctement.
 - Des modifications ont été apportées à la mise en réseau ou au pare-feu dans votre environnement local.
 
-Microsoft 365 continuera de réessayer de livrer pendant 24 heures. Au bout de 24 heures, les messages expirent et sont retournés aux expéditeurs dans des rapports de non-remise (également appelés notifications de remise de données ou messages de rebond).
+Microsoft 365 continuera de retenter la livraison pendant 24 heures. Au bout de 24 heures, les messages expirent et sont retournés aux expéditeurs dans des rapports de non-remise (également appelés notifications de remise de données ou messages de rebond).
 
 Si le volume de courrier en file d’attente dépasse le seuil prédéfini (la valeur par défaut est 200 messages), les informations sont disponibles aux emplacements suivants :
 
@@ -61,12 +61,12 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfini (la v
 
    - **État** : vous pouvez activer ou désactiver l’alerte.
 
-   - **Destinataires de courrier électronique** et **limite de notification quotidienne** : cliquez sur **Modifier** pour configurer les paramètres suivants :
+   - **Email destinataires** et **limite de notification quotidienne** : cliquez sur **Modifier** pour configurer les paramètres suivants :
 
 4. Pour configurer les paramètres de notification, cliquez sur **Modifier**. Dans le menu volant **Modifier la stratégie** qui s’affiche, configurez les paramètres suivants :
 
    - **Envoyer des notifications par e-mail** : la valeur par défaut est activée.
-   - **Destinataires de l’e-mail** : la valeur par défaut est **TenantAdmins**.
+   - **Email destinataires** : la valeur par défaut est **TenantAdmins**.
    - **Limite de notification quotidienne** : la valeur par défaut est **Aucune limite**.
    - **Seuil** : la valeur par défaut est 200.
 
@@ -83,7 +83,7 @@ Même si le volume de messages en file d’attente n’a pas dépassé le seuil 
 Si vous cliquez sur le nombre de messages sur le widget, un menu volant Messages **mis en file d’attente** s’affiche avec les informations suivantes :
 
 - **Nombre de messages en file d’attente**
-- **Nom du connecteur** : sélectionnez le nom du connecteur pour gérer le connecteur dans le centre d’administration Exchange (EAC) à l’adresse <https://admin.exchange.microsoft.com/#/connectors>.
+- **Nom du connecteur** : sélectionnez le nom du connecteur pour gérer le connecteur dans le Centre d’administration Exchange (EAC) à l’adresse <https://admin.exchange.microsoft.com/#/connectors>.
 - **Heure de début de la file d’attente**
 - **Les messages les plus anciens ont expiré**
 - **Serveur de destination**

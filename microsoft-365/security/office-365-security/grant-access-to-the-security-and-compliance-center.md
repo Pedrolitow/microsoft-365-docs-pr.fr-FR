@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Les utilisateurs doivent disposer d’autorisations dans le Centre de sécurité & conformité Microsoft 365 avant de pouvoir gérer l’une de ses fonctionnalités de sécurité ou de conformité.
+description: Les utilisateurs doivent disposer d’autorisations dans le Centre de sécurité & conformité Microsoft 365 avant de pouvoir gérer ses fonctionnalités de sécurité ou de conformité.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 4e0ca3874f03d9f0c386a84c9e8b56ea58bbfe72
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 922606623ef8834f7e39d48ebc758d9c6e6c414e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018005"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596486"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -64,7 +64,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 ## <a name="use-security--compliance-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser Security & Compliance PowerShell pour permettre à un autre utilisateur d’accéder au Centre de sécurité & conformité
 
-1. [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Utilisez la syntaxe suivante :
 

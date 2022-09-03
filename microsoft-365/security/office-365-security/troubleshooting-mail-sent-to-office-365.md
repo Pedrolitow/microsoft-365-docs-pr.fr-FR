@@ -16,25 +16,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Cet article fournit des informations de dépannage pour les problèmes liés à l’envoi d’e-mails aux boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage en bloc à Microsoft 365 clients.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 37703ccb0ffb37163033bb2fdca24566a33bb275
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: Cet article fournit des informations de dépannage pour les problèmes liés à l’envoi d’e-mails aux boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage en bloc aux clients Microsoft 365.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 661cdbb58b7ce0b8d7f77cfbea4677ad3af6a42d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128431"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597733"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
-Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi d’e-mails aux boîtes de réception dans Microsoft 365 et les meilleures pratiques pour le publipostage en bloc aux clients.
+Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi de courrier électronique à des boîtes de réception dans Microsoft 365 et les meilleures pratiques pour le publipostage en bloc aux clients.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Vous gérez la réputation de l’expéditeur de votre IP et domaine ?
 
@@ -62,7 +62,7 @@ Il se peut que nous n’acceptions pas les e-mails provenant d’expéditeurs do
 
 Certains problèmes de remise sont dus au blocage de l'adresse IP de l'expéditeur par Microsoft ou à l'identification du compte d'utilisateur comme expéditeur interdit en raison des activité de courrier indésirable précédentes. Si vous pensez que vous avez reçu la notification d'échec de remise par erreur, suivez d'abord toutes les instructions indiquées dans le message de notification d'échec de remise pour résoudre le problème.
 
-Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans [les rapports de non-remise par e-mail dans Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans [Email rapports de non-remise dans Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
  Par exemple, si vous recevez la DNR suivante, cela indique que l’adresse IP d’envoi a été bloquée par Microsoft :
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur l’erreur que vous avez reçue, consultez la lis
 
 Pour demander la suppression de cette liste, vous pouvez [utiliser le portail de suppression pour vous supprimer de la liste des expéditeurs bloqués](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mon e-mail a atterri dans le dossier Courrier indésirable du destinataire
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mon e-mail est arrivé dans le dossier Courrier indésirable du destinataire Email
 
 Si un message a été incorrectement identifié comme courrier indésirable par EOP, vous pouvez collaborer avec le destinataire pour envoyer ce faux positif à l'équipe d'analyse du courrier indésirable de Microsoft. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -86,9 +86,9 @@ Vous avez reçu une notification d'échec de remise car une activité suspecte a
 
  Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, consultez [Exchange Online Protection adresses IP](../../enterprise/urls-and-ip-address-ranges.md).
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques pour l’envoi de messages électroniques en bloc à Microsoft 365 utilisateurs
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques pour l’envoi de messages électroniques en bloc aux utilisateurs de Microsoft 365
 
-Si vous effectuez souvent des campagnes de messagerie en bloc pour Microsoft 365 utilisateurs et que vous souhaitez vous assurer que vos e-mails arrivent en toute sécurité et en temps opportun, suivez les conseils de cette section.
+Si vous effectuez souvent des campagnes de messagerie en bloc pour les utilisateurs de Microsoft 365 et que vous souhaitez vous assurer que vos e-mails arrivent en toute sécurité et en temps opportun, suivez les conseils de cette section.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Assurez-vous que le nom De reflète qui envoie le message
 

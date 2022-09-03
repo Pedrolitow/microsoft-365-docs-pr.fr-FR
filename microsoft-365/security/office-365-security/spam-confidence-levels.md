@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur le niveau de confiance du courrier indésirable (SCL) appliqué aux messages dans Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8febc1d0e0c4fd98b33fb0016beee89a30802241
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 4f041fe92d6ba295a11dab7904316b238686a34f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647906"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595936"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Niveau de confiance du courrier indésirable (SCL) dans EOP
 
@@ -33,7 +33,7 @@ ms.locfileid: "65647906"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages entrants passent par le filtrage du courrier indésirable dans EOP et reçoivent un score de courrier indésirable. Ce score est mappé à un niveau de confiance du courrier indésirable (SCL) individuel qui est ajouté au message dans un en-tête X. Un SCL plus élevé indique qu'un message est plus susceptible d'être un courrier indésirable. EOP prend des mesures sur le message en fonction de la liste SCL.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages entrants passent par le filtrage du courrier indésirable dans EOP et se voient attribuer un score de courrier indésirable. Ce score est mappé à un niveau de confiance du courrier indésirable (SCL) individuel qui est ajouté au message dans un en-tête X. Un SCL plus élevé indique qu'un message est plus susceptible d'être un courrier indésirable. EOP prend des mesures sur le message en fonction de la liste SCL.
 
 Ce que signifie la liste de contrôle de contrôle d’accès et les actions par défaut effectuées sur les messages sont décrites dans le tableau suivant. Pour plus d’informations sur les actions que vous pouvez effectuer sur les messages en fonction du verdict de filtrage du courrier indésirable, consultez [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
@@ -52,4 +52,4 @@ Vous pouvez utiliser des règles de flux de messagerie (également appelées rè
 
 ****
 
-![Petit icône de LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Microsoft 365 ?** Découvrez des cours vidéo gratuits pour **les administrateurs Microsoft 365 et les professionnels de l’informatique, proposés** par LinkedIn Learning.
+![Petit icône de LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Microsoft 365 ?** Découvrez des cours vidéo gratuits pour **les administrateurs microsoft 365 et les professionnels de l’informatique, proposés** par LinkedIn Learning.

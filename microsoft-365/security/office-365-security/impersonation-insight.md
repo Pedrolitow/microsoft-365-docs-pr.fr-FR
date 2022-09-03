@@ -18,14 +18,14 @@ ms.collection:
 description: Les administrateurs peuvent découvrir le fonctionnement de l’insight d’emprunt d’identité. Ils peuvent rapidement déterminer les expéditeurs qui envoient légitimement des e-mails dans leur organisation à partir de domaines qui ne passent pas de vérifications d’authentification par e-mail (SPF, DKIM ou DMARC).
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c54bdbb4ee8c3bf068b40df8cd5ca0a58da2392f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 34cb0cfe920751c40685d2df51b7f61f5ba02dbb
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787739"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596828"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Insight sur l’emprunt d’identité dans Defender pour Office 365
 

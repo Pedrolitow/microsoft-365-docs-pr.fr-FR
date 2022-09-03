@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), découvrez comment vous inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 03ab19f55d7ab46c798daf0e0b49836739e1e9fd
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 10217bb162a45e8d98d02e045b2de87500c94b1e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056831"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595714"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
