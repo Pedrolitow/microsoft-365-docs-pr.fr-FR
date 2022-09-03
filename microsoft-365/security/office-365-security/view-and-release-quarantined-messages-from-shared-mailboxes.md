@@ -14,14 +14,14 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les utilisateurs peuvent apprendre à afficher et à agir sur les messages mis en quarantaine envoyés aux boîtes aux lettres partagées auxquelles ils disposent d’autorisations.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: a37ed03535bd3f3b48aca81c7bf7adeb3c660b46
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 65e26cfe0fbe12967fbf08b8c12ef81b0b687843
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629010"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599514"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Afficher et libérer des messages mis en quarantaine à partir de boîtes aux lettres partagées
 
@@ -30,7 +30,7 @@ ms.locfileid: "66629010"
 **S’applique à :**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les utilisateurs peuvent gérer les messages mis en quarantaine où ils sont l’un des destinataires, comme décrit dans [Rechercher et libérer des messages mis en quarantaine en tant qu’utilisateur dans EOP](find-and-release-quarantined-messages-as-a-user.md). Mais qu’en est-il **des boîtes aux lettres partagées** où l’utilisateur dispose d’autorisations d’accès complet et d’envoi en tant que ou en nom à la boîte aux lettres, comme décrit dans [les boîtes aux lettres partagées dans Exchange Online](/exchange/collaboration-exo/shared-mailboxes) ?
 
@@ -53,7 +53,7 @@ Auparavant, la possibilité pour les utilisateurs de gérer les messages mis en 
 
 - Depuis juillet 2022, les utilisateurs ayant des adresses SMTP principales différentes de leurs noms d’utilisateur principal (UPN) doivent pouvoir accéder aux messages mis en quarantaine pour la boîte aux lettres partagée.
 
-- Pour gérer les messages mis en quarantaine pour la boîte aux lettres partagée dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), l’utilisateur final doit utiliser l’applet de commande [Get-QuarantineMessage avec adresse e-mail](/powershell/module/exchange/get-quarantinemessage) de boîte aux lettres partagée pour la valeur du paramètre _RecipientAddress_ afin d’identifier les messages. Par exemple :
+- Pour gérer les messages mis en quarantaine pour la boîte aux lettres partagée dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), l’utilisateur final doit utiliser l’applet de commande [Get-QuarantineMessage avec adresse e-mail](/powershell/module/exchange/get-quarantinemessage) de boîte aux lettres partagée pour la valeur du paramètre _RecipientAddress_ afin d’identifier les messages. Par exemple :
 
   ```powershell
   Get-QuarantineMessage -RecipientAddress officeparty@contoso.com

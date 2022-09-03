@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 2c751289c9d365d72909433fe6534f3f00ba3638
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: 5146f36dd6d4f638b450a326d22405d8efc080b6
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67320413"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597975"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Afficher et gérer les incidents dans Microsoft Defender pour entreprises
 

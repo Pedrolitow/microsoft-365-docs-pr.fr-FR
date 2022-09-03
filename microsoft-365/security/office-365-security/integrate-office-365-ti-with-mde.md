@@ -18,18 +18,18 @@ ms.collection:
 description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender pour point de terminaison pour obtenir des informations plus détaillées sur les menaces contre vos appareils et le contenu de vos e-mails.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8df364538e6a799557956a8d624b0561c626e4fd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: be951f29924300bfa14c92df549c7959a995c7ef
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971107"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598382"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour point de terminaison
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender pour Office 365](defender-for-office-365.md) peut être configuré pour fonctionner avec [Microsoft Defender pour point de terminaison](/windows/security/threat-protection).
 
@@ -44,11 +44,11 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 > [!TIP]
 > Le portail Microsoft 365 Defender remplace le Centre de sécurité Microsoft Defender. Voir [Microsoft Defender pour point de terminaison dans Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 - Votre organisation doit avoir Microsoft Defender pour Office 365 (ou Office 365 E5) et Microsoft Defender pour point de terminaison.
 
-- Vous devez avoir le rôle d’administrateur général ou d’administrateur de sécurité attribué dans Microsoft 365. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
+- Vous devez disposer du rôle d’administrateur général ou d’administrateur de sécurité attribué dans Microsoft 365. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 - Vous devez avoir accès à [l’Explorateur (ou aux détections en temps réel).](threat-explorer.md)
 
@@ -56,17 +56,17 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 
 L’intégration de Microsoft Defender pour Office 365 à Microsoft Defender pour point de terminaison est configurée dans Defender pour point de terminaison et dans Defender pour Office 365.
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-2. Accédez à **Email & Collaboration** \> **Explorer**.
+2. Accédez à **Email & Explorateur de collaboration**\>.
 
-3. Dans la page **Explorateur**, dans le coin supérieur droit de l’écran, sélectionnez **MDE Paramètres**.
+3. Dans la page **Explorateur** , dans le coin supérieur droit de l’écran, sélectionnez **Paramètres MDE**.
 
-3. Dans le **menu volant de connexion Microsoft Defender pour point de terminaison** qui s’affiche, activez **Connecter pour Microsoft Defender pour point de terminaison** (![activer/désactiver),](../../media/scc-toggle-on.png) puis sélectionnez **Fermer**.
+3. Dans le **menu volant de connexion Microsoft Defender pour point de terminaison** qui s’affiche, **activez Se connecter à Microsoft Defender pour point de terminaison** (![activer/désactiver).](../../media/scc-toggle-on.png), puis sélectionnez **Fermer**.
 
    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="Page Connexion MDE" lightbox="../../media/explorer-mdeconnection-dialognew.png":::
 
-4. Dans le volet de navigation, choisissez **Paramètres**. Dans la page **Paramètres**, choisissez **Points de terminaison**
+4. Dans le volet de navigation, choisissez **Paramètres**. Dans la page **Paramètres** , choisissez **Points de terminaison**
 
 5. Dans la page **Points de terminaison** qui s’ouvre, choisissez **Fonctionnalités avancées**.
 

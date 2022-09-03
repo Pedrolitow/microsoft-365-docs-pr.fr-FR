@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez la conservation des données pour le Tableau blanc Microsoft dans Azure et OneDrive Entreprise.
-ms.openlocfilehash: 49189ff03774d91a855d3339c4a93702b1cbafcc
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: a43caaa9aaccff3b2a56a1c38537f80d2304358f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434392"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598194"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Gérer les données pour le Tableau blanc Microsoft
 

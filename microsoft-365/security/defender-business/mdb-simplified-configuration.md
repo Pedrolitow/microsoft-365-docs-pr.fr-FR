@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f73543937b1569db337703b52c5fa9efeb8292a2
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: 78a726d03eebae2613b3b881d216cbcf22946c50
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67319471"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598536"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Processus de configuration simplifié dans Microsoft Defender pour entreprises
 

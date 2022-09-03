@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Sécurité dans Office 365, d’Exchange Online Protection aux plans 1 et 2 de Defender pour Office 365, Standard vs. Configurations de sécurité strictes, et plus. Découvrez ce que vous avez et comment sécuriser vos propriétés.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: 2b141e50ab3db79dfd0a072c6738d1894e27e0ad
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
-ms.translationtype: HT
+ms.openlocfilehash: ad636b1d8b67b69722373ee778ef332da6010611
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004536"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598734"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité de Microsoft Defender pour Office 365
 
@@ -134,7 +134,7 @@ Cette référence rapide vous aide à comprendre les fonctionnalités fournies a
 
 - Microsoft Defender pour Office 365 Plan 1 et Defender pour Office 365 Plan 2 sont tous deux disponibles sous forme de modules complémentaires pour certains abonnements. Pour en savoir plus, voici un autre lien [Disponibilité des fonctionnalités pour les offres Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- La fonctionnalité [Documents sécurisés](safe-docs.md) est uniquement disponible pour les utilisateurs ayant des licences Microsoft 365 E5 ou Microsoft 365 E5 Sécurité (non inclus dans les offres Microsoft Defender pour Office 365)
+- La fonctionnalité [Documents sécurisés](safe-docs.md) est uniquement disponible pour les utilisateurs ayant des licences Microsoft 365 A5 ou Microsoft 365 E5 Sécurité (non inclus dans les offres Microsoft Defender pour Office 365)
 
 - Si votre abonnement actuel n’inclut pas Microsoft Defender pour Office 365 et que vous le souhaitez, [contactez le service commercial pour commencer une version d’évaluation](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) et découvrez comment Microsoft Defender pour Office 365 peut fonctionner dans votre organisation.
 

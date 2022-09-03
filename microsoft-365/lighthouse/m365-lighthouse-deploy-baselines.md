@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment déployer Microsoft 365 Lighthouse lignes de base.
-ms.openlocfilehash: 0f31a4ef985eb6cbaf58f2f2d65b8269b25d83b2
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 3094cc08cfdd68b316bb457d89bffde000476c13
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056809"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598844"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer Microsoft 365 Lighthouse lignes de base
 
@@ -185,7 +185,7 @@ Pour plus d’informations sur la gestion des conflits de stratégie, consultez 
 
     | Option  | Description |
     |-----------|-------------------------------------------------------------------------|
-    | Copy  | Copie un lien vers l’étape de déploiement dans votre Presse-papiers.                                     |
+    | Copier  | Copie un lien vers l’étape de déploiement dans votre Presse-papiers.                                     |
     | E-mail | Ouvre votre nouveau message électronique sur votre ordinateur local et insère un lien vers l’étape de déploiement. |
 
     Le lien permet à toute personne disposant d’autorisations dans votre organisation d’afficher le plan de déploiement du locataire.

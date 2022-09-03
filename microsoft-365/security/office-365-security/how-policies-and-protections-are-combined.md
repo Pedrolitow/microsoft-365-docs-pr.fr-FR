@@ -15,25 +15,25 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’ordre des applications des protections dans Exchange Online Protection (EOP) et comment la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8b7bf48de0939ec913982feb399b38dc2c540157
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b976c738bb77d6a6e3264e1e1cde76a7afdfe005
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417751"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598360"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection par e-mail
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les e-mails entrants peuvent être marqués par plusieurs formes de protection. Par exemple, les stratégies anti-hameçonnage intégrées dans EOP qui sont disponibles pour tous les clients Microsoft 365, et les stratégies anti-hameçonnage plus robustes qui sont disponibles pour Microsoft Defender pour Office 365 clients. Les messages passent également par plusieurs analyses de détection pour détecter les programmes malveillants, le courrier indésirable, le hameçonnage, etc. Compte tenu de toute cette activité, il peut y avoir une certaine confusion quant à la stratégie appliquée.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les e-mails entrants peuvent être marqués par plusieurs formes de protection. Par exemple, les stratégies anti-hameçonnage intégrées dans EOP qui sont disponibles pour tous les clients Microsoft 365 et les stratégies anti-hameçonnage plus robustes qui sont disponibles pour Microsoft Defender pour Office 365 clients. Les messages passent également par plusieurs analyses de détection pour détecter les programmes malveillants, le courrier indésirable, le hameçonnage, etc. Compte tenu de toute cette activité, il peut y avoir une certaine confusion quant à la stratégie appliquée.
 
 En général, une stratégie appliquée à un message est identifiée dans **l’en-tête X-Forefront-Antispam-Report** dans la propriété **CAT (Category).** Pour plus d’informations, consultez [En-têtes de message anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md).
 
@@ -41,7 +41,7 @@ Il existe deux facteurs majeurs qui déterminent quelle stratégie est appliqué
 
 - **Ordre de traitement pour le type de protection par e-mail** : cette commande n’est pas configurable et est décrite dans le tableau suivant :
 
-  |Commande|Protection par e-mail|Catégorie|Où gérer|
+  |Commande|protection Email|Catégorie|Où gérer|
   |:---:|---|---|---|
   |1|Programme malveillant|CAT:MALW|[Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md)|
   |2|Hameçonnage|CAT:PHSH|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
@@ -61,7 +61,7 @@ Il existe deux facteurs majeurs qui déterminent quelle stratégie est appliqué
 
 Par exemple, considérez les **stratégies anti-hameçonnage suivantes** dans Microsoft Defender pour Office 365 **qui s’appliquent aux mêmes utilisateurs**, et un message identifié comme étant à la **fois l’emprunt d’identité et l’usurpation d’identité** :
 
-|Nom de la stratégie|Priorité|Emprunt d’identité de l’utilisateur|Détection d’usurpation d’identité|
+|Nom de la stratégie|Priorité|Emprunt d’identité de l’utilisateur|Anti-usurpation d’identité|
 |---|:---:|:---:|:---:|
 |Stratégie A|1|Activé|Désactivé|
 |Stratégie B|2|Désactivé|Activé|

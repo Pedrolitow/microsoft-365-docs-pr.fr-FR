@@ -22,12 +22,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans leurs organisations Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 047c4aaffdad5831ec7b5bca76449cb909fe870d
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 6193ebcce086c741b84af1f3dc701e6ac0340537
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497266"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598909"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -98,7 +98,7 @@ Une fois que vous avez sécurisé et étiqueté vos utilisateurs prioritaires, v
 
 |Fonctionnalité|Description|
 |---|---|
-|Alertes|Les balises utilisateur des utilisateurs affectés sont visibles et disponibles sous forme de filtres sur la page **Alertes** du portail Microsoft 365 Defender. Pour plus d’informations, consultez [Affichage des alertes](../../compliance/alert-policies.md#viewing-alerts).|
+|Alertes|Les balises utilisateur des utilisateurs affectés sont visibles et disponibles sous forme de filtres sur la page **Alertes** du portail Microsoft 365 Defender. Pour plus d’informations, consultez [Affichage des alertes](../../compliance/alert-policies.md#view-alerts).|
 |Explorer <p> Détections en temps réel|Dans **l’Explorateur** (Defender pour Office 365 Plan 2) ou **les détections en temps réel** (Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans la grille Email et le menu volant des détails Email. Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, consultez  [Balises dans l’Explorateur](threat-explorer.md#tags-in-threat-explorer).|
 |Vues de campagne|Les balises utilisateur sont l’une des nombreuses propriétés filtrables dans les vues de campagne dans Microsoft Defender pour Office 365 Plan 2. Pour plus d’informations, consultez [Vues de campagne](campaigns.md).|
 |Rapport sur l’état de la protection contre les menaces|Dans pratiquement toutes les vues et tables de détails du **rapport d’état de la protection contre les menaces**, vous pouvez filtrer les résultats par **comptes de priorité**. Pour plus d’informations, consultez le [rapport d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report).|

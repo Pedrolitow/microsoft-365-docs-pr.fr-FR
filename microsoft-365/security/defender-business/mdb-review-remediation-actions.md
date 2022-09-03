@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a0330385d47609abe269b9aabad528ea75607d3c
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: f31f478fda2f8f2540dd524c2dbaf1113801dca8
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67319996"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597997"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Passer en revue les actions de correction dans le Centre d’actions
 

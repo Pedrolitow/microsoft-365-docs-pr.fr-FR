@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer la réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 2b530b7f0d2d8707a0876788fd22132a5cb998c5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: bcfbd9ad05a433fb9b98125fe6447d9086096a1a
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471629"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599107"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Gérer la réinitialisation de mot de passe en libre-service dans Microsoft 365 Lighthouse
 

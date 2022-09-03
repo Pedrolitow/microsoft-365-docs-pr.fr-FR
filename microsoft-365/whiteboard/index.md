@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: landing-page
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Recherchez des ressources sur la configuration et la gestion du Tableau blanc Microsoft.
-ms.openlocfilehash: 2ca2dacb4db36d8109554bb7e275e11d8de18366
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: 23fc56fd3fd69c384f787a4b4b27abc159392d12
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67320501"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598866"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Présentation du Tableau blanc Microsoft
 

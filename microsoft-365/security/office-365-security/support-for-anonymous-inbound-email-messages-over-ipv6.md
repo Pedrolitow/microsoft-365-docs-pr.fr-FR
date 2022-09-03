@@ -16,23 +16,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administration pouvez apprendre à configurer la prise en charge des e-mails entrants anonymes à partir de sources IPv6 dans Exchange Online et Exchange Online Protection.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 093ab458e8894105536e1c3dd46d2c911de440fd
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: ea64d73177c18fcfde55caa6637815361f90560d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649096"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598282"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Ajouter la prise en charge des e-mails entrants anonymes sur IPv6 dans Microsoft 365
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Ajouter la prise en charge des e-mails entrants anonymes via IPv6 dans Microsoft 365
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 les organisations avec des boîtes aux lettres Exchange Online et des organisations de Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online prennent en charge les e-mails entrants anonymes sur IPv6. Le serveur de messagerie IPv6 source doit répondre aux deux exigences suivantes :
+Les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et des organisations de Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online prennent en charge les e-mails entrants anonymes via IPv6. Le serveur de messagerie IPv6 source doit répondre aux deux exigences suivantes :
 
 - L’adresse IPv6 source doit avoir un enregistrement de recherche DNS inversé (PTR) valide qui permet à la destination de rechercher le nom de domaine à partir de l’adresse IPv6.
 

@@ -16,15 +16,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ROBOTS: ''
-ms.openlocfilehash: e46e5f3af06cc94cea4ff2e76208f3ccadc53586
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 408057fd93ca5b9fb7f946211c02416538dae150
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385614"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598238"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Essayer Microsoft Defender pour Office 365
 

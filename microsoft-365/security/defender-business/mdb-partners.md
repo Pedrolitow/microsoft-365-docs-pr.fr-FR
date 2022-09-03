@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/31/2022
 ms.reviewer: shlomiakirav
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 2cafcf65a12cb72545341c988d50885b66cab359
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 9e25a2478f9bb250dd32483cfbb3ef008ce905c0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497811"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599151"
 ---
 # <a name="microsoft-defender-for-business-and-microsoft-partner-resources"></a>ressources Microsoft Defender pour entreprises et partenaires Microsoft
 

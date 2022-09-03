@@ -10,24 +10,24 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: ''
 description: Les administrateurs peuvent apprendre à utiliser les nouveaux domaines transférés dans le tableau de bord flux de courrier du Centre de sécurité & conformité pour déterminer quand leurs utilisateurs transfèrent des messages vers des domaines externes qui n’ont jamais été transférés.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1dbcf83d234611af1d209d83191cee24f5bee579
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 5cbd60714b929b97c571ca21fdb5f50fa0b18443
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974342"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599580"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Informations sur les nouveaux domaines transférés par e-mail dans le Centre de sécurité & conformité
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Il existe des raisons commerciales valides pour transférer des messages électroniques à des destinataires externes dans des domaines spécifiques. Toutefois, il est suspect lorsque les utilisateurs de votre organisation commencent soudainement à transférer des messages vers un domaine où aucun membre de votre organisation n’a jamais transféré de messages vers (un nouveau domaine).
 
@@ -47,6 +47,6 @@ Vous pouvez également accéder à cette page de détails lorsque vous sélectio
 
 Pour empêcher le transfert automatique de messages vers des domaines externes, configurez un domaine distant pour certains ou tous les domaines externes. Pour plus d’informations, consultez [Gérer les domaines distants dans Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, consultez [les insights de flux de courrier dans le Centre de sécurité & conformité](mail-flow-insights-v2.md).

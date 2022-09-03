@@ -10,24 +10,24 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Les administrateurs peuvent en savoir plus sur le rapport des messages transférés automatiquement dans le tableau de bord de flux de courrier du Centre de sécurité & conformité.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2f102f4fbea558f0972fbd4f3e8f4a4bea257bf4
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 86c3e7f530f31d6827bb5ce4396f3b9ed6229605
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131039"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598756"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Informations sur les messages transférés automatiquement dans le Centre de sécurité & conformité
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 L’insight sur les **messages transférés automatiquement** dans le [tableau de bord](mail-flow-insights-v2.md) flux de courrier du [Centre de sécurité & conformité](https://protection.office.com) affiche des informations sur les messages qui sont automatiquement transférés de votre organisation aux destinataires dans des domaines externes.
 

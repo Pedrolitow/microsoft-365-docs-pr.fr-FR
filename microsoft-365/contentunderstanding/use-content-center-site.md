@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment approvisionner et utiliser le modèle de site Centre de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: e3d0e50d755a2fe771513389d4028c0306702520
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b82f649788f06dbd73cede83d635061894b50105
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583800"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599756"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Utiliser le modèle de site Centre de contenu pour Microsoft SharePoint Syntex
 
@@ -47,7 +47,7 @@ Le site Centre de contenu peut être approvisionné à partir du [service look b
 
 3. Entrez votre adresse e-mail (pour une notification indiquant quand votre site est prêt à être utilisé), l’URL du site que vous souhaitez utiliser et le titre que vous souhaitez utiliser pour votre site. 
 
-    ![Capture d’écran de la page d’approvisionnement du modèle de site du Centre de contenu.](../media/content-understanding/content-center-email-and-url.png)
+    ![Capture d’écran montrant la page d’approvisionnement du modèle de site centre de contenu.](../media/content-understanding/content-center-email-and-url.png)
 
 4. Sélectionnez **Fourniture** puis votre site sera rapidement prêt à être utilisé. Vous recevrez un e-mail (envoyé à l’adresse e-mail que vous avez fournie) indiquant que votre demande d’approvisionnement du modèle de site centre de contenu est terminée.
 

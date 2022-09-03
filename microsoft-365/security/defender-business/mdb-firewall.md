@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 40e910f9775c7c9361315d9d43d5b0f57c0ce2ce
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: 0f67629da9a51773d9fd06b278f5daf9475b9666
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67319580"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599195"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Pare-feu dans Microsoft Defender pour entreprises
 

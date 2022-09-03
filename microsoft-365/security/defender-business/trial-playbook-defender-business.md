@@ -6,22 +6,23 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.prod: m365-security
-ms.technology: mdb
+ms.date: 09/02/2022
+ms.service: microsoft-365-security
+ms.subservice: mdb
 search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre essai de Defender pour entreprise grâce à ce guide. Installez-vous rapidement et commencez à utiliser vos nouvelles capacités de sécurité.
 ms.custom: trial-playbook
-ms.openlocfilehash: dafd2cc871db96453d38c753b7bd10568ec7123d
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 0ebe58b5083127cfe281c4444f425d214f3c4153
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343040"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598492"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>Manuel d'essai : Microsoft Defender pour entreprise
 

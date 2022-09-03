@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher les risques de sécurité.
-ms.openlocfilehash: 52378e088b6b131008efa3bd8c2d480e8a871df7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: fdcbd0ead4719015f90490d51cc499e5d7b95444
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66992005"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599404"
 ---
 # <a name="overview-of-the-microsoft-defender-for-endpoint-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Microsoft Defender pour point de terminaison dans Microsoft 365 Lighthouse
 
 Microsoft Defender pour point de terminaison assure la sécurité des points de terminaison pour sécuriser les appareils de vos clients contre les ransomware, les programmes malveillants, le hameçonnage et d’autres menaces. Microsoft 365 Lighthouse vous permet d’afficher des informations et des informations sur la sécurité des points de terminaison pour tous vos locataires clients.
 
-Vous pouvez accéder à la page Microsoft Defender pour point de terminaison dans Microsoft 365 Lighthouse à partir de la page **d’accueil** sous la carte **Incidents de sécurité** ou à partir du volet de navigation gauche, **onglet Sécurité des appareils \>** . Vous verrez tous les incidents et alertes de sécurité dans vos locataires qui nécessitent une attention particulière, ainsi que les appareils qui ont été intégrés à Microsoft Defender pour point de terminaison.
+Vous pouvez accéder à la page Microsoft Defender pour point de terminaison dans Microsoft 365 Lighthouse à partir de la carte **Incidents de sécurité** sur la page d’accueil ou dans le volet de navigation gauche en sélectionnant La **sécurité** des **appareils** > . Vous verrez tous les incidents et alertes de sécurité dans vos locataires qui nécessitent une attention particulière, ainsi que les appareils qui ont été intégrés à Microsoft Defender pour point de terminaison.
 
 ## <a name="incidents-and-alerts-tab"></a>Onglet Incidents et alertes
 
@@ -38,7 +38,7 @@ L’onglet Incidents et alertes fournit une file d’attente d’incidents multi
 
 ## <a name="devices-tab"></a>Onglet Appareils
 
-La liste des onglets Appareils de tous les appareils de vos locataires clients qui ont été intégrés à Microsoft Defender pour point de terminaison. Cette liste inclut les appareils gérés par Microsoft Endpoint Manager et Microsoft Defender pour point de terminaison.
+L’onglet Appareils répertorie tous les appareils de vos locataires clients qui ont été intégrés à Microsoft Defender pour point de terminaison. Cette liste inclut les appareils gérés par Microsoft Endpoint Manager et Microsoft Defender pour point de terminaison.
 
 L’onglet Appareils comprend également les options suivantes :
 

@@ -7,21 +7,22 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 84029946abe064219622fdd1b9ce0dd9a6dfc048
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: ebd83026657fcc41306c46107706d20f245cef04
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773206"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599360"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>Groupes d’appareils dans Microsoft Defender pour entreprises
 

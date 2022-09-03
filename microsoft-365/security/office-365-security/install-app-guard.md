@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation basée sur le matériel. Empêchez les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 9a7e820a4aedb4338111ef0fc76a35de480ea1f8
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 49056945f7c507c6f1d7c62684035e518c7ce549
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530923"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599690"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour Office pour les administrateurs
 
@@ -29,7 +29,7 @@ ms.locfileid: "66530923"
 
 Protection d'application Microsoft Defender pour Office (Application Guard pour Office) permet d’empêcher les fichiers non approuvés d’accéder aux ressources approuvées, ce qui protège votre entreprise contre les attaques nouvelles et émergentes. Cet article guide les administrateurs dans la configuration des appareils pour une préversion d’Application Guard pour Office. Il fournit des informations sur la configuration système requise et les étapes d’installation pour activer Application Guard pour Office sur un appareil.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 ### <a name="minimum-hardware-requirements"></a>Configuration matérielle minimum requise
 
@@ -237,7 +237,7 @@ Lorsque cette heuristique est remplie, Office crée au préalable un conteneur A
 > [!NOTE]
 > Les indicateurs nécessaires à l’heuristique pour précréer le conteneur sont générés par les applications Office quand un utilisateur les utilise. Si un utilisateur installe Office sur un nouveau système où Application Guard est activé, Office ne crée pas le conteneur avant la première ouverture d’un document non approuvé sur le système. L’utilisateur remarque que ce premier fichier prend plus de temps à s’ouvrir dans Application Guard.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 * La sélection de liens web (`http` ou `https`) n’ouvre pas le navigateur.
 * Le paramètre par défaut de la stratégie de protection copier-coller consiste à activer l’accès du Presse-papiers au texte uniquement.

@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer votre liste de locataires.
-ms.openlocfilehash: f8d1c47dc5fc349cd78b7a5f364b80244900554b
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 2e7c20362a7746ec5cde78b4b405b4a0a6a22560
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056524"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599261"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Gérer votre liste de locataires dans Microsoft 365 Lighthouse
 

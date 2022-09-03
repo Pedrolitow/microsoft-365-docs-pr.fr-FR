@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au Centre de conformité, de mettre à jour les fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7a44fe74c3d0262737d5af52e226a3aa942a412f
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: c75106dcaccb5d0688d86fedeee79595ce760b40
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450166"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598646"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Nouveautés des solutions de conformité et de risque Microsoft Purview
 
@@ -40,6 +40,60 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 > - [Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Et visitez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités de Microsoft 365 qui ont été lancées, qui sont en cours de déploiement, qui sont en cours de développement, qui ont été annulées ou qui ont été publiées précédemment.
+
+## <a name="august-2022"></a>Août 2022
+
+### <a name="compliance-manager"></a>Gestionnaire de conformité
+
+- [Mettez à jour les actions d’amélioration et intégrez les données de conformité dans le Gestionnaire de conformité](compliance-manager-update-actions.md) : nouvelle fonctionnalité de mise à jour simultanée de plusieurs actions d’amélioration, qui permet également aux organisations d’effectuer le travail de conformité dans d’autres systèmes dans le Gestionnaire de conformité pour y effectuer le suivi.
+- [Utilisation des actions d’amélioration dans le Gestionnaire de conformité](compliance-manager-improvement-actions.md) : les utilisateurs peuvent désormais inclure un lien/UNE URL dans le cadre de preuves pour l’implémentation ou le test des actions d’amélioration.
+
+### <a name="compliance-offerings--service-assurance"></a>Offres de conformité & assurance du service
+
+- [Gestion des modifications Microsoft 365](/compliance/assurance/assurance-microsoft-365-change-management) : nouvelle rubrique d’assurance qui couvre les modifications de code et de non-code apportées aux services Microsoft.
+- **Japan CS Gold Mark offering topic** - retired, certification not renewed.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Gestion du cycle de vie des données et gestion des enregistrements
+
+- La configuration [Exchange (héritée)](data-lifecycle-management.md#exchange-legacy-features) passe du Centre d’administration Exchange classique (EAC) au portail de conformité Microsoft Purview, sous gestion du **cycle de vie des données**. Les fonctionnalités de gestion du cycle de vie des données existantes se trouvent sous un nouveau sous-nœud, **Microsoft 365**.
+- Pour les pièces jointes cloud (actuellement déployées en préversion), la rétention automatique et temporaire des fichiers supprimés dans la bibliothèque de conservation de la conservation permet de se protéger contre la suppression du fichier d’origine par les utilisateurs avant que la copie puisse être créée et étiquetée. Pour plus d’informations, consultez [comment la rétention fonctionne avec les attachements cloud](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+
+### <a name="data-loss-prevention"></a>Protection contre la perte de données
+
+- [Prise en main de la protection contre la perte de données](endpoint-dlp-getting-started.md) de point de terminaison - Liens mis à jour pour des noms d’articles plus accessibles
+- [En savoir plus sur la protection contre la perte de données](endpoint-dlp-learn-about.md) de point de terminaison : liens mis à jour pour des noms d’articles plus accessibles ; conseils mis à jour sur les types de fichiers pris en charge ; mise à jour des instructions de copie vers d’autres applications
+- [Partager des alertes de protection contre la perte de données](dlp-share-alerts.md) (préversion) - nouveau
+- [Configurer les paramètres DLP du point de terminaison](dlp-configure-endpoint-settings.md) - Disponibilité générale des domaines de service sensibles
+- [Informations de référence sur la stratégie de protection contre la perte de données](dlp-policy-reference.md) - Disponibilité générale des domaines de service sensibles
+- [Utilisation de la protection contre la perte de données de point de terminaison](endpoint-dlp-using.md) - Disponibilité générale des domaines de service sensibles
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Microsoft Priva playbook d’évaluation](/privacy/priva/priva-trial-playbook) : conseils actualisés et simplifiés pour s’aligner sur les mises à jour récentes de la documentation
+
+### <a name="sensitive-information-types"></a>Types d'informations sensibles
+
+- [Créer des données exactes correspondant à une expérience classique de flux de travail de type informations sensibles](sit-create-edm-sit-classic-ux-workflow.md) - nouveau
+- [Créer l’exemple de fichier SIT EDM pour la nouvelle expérience](sit-create-edm-sit-unified-ux-sample-file.md) - nouveau
+- [Créer EDM SIT à l’aide de la nouvelle expérience](sit-create-edm-sit-unified-ux-schema-rule-package.md) - new
+- [Créer une nouvelle expérience de flux de travail de type de données exactes correspondant à des informations sensibles](sit-create-edm-sit-unified-ux-workflow.md) - nouveau
+- Ajout de conseils pour l’expérience de création sit EDM nouvelle et classique dans les rubriques suivantes :
+  - [Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-based-sits-overview.md)
+  - [Créer des données exactes correspondant au type d’informations sensibles/au package de règles](sit-get-started-exact-data-match-create-rule-package.md)
+  - [Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-create-schema.md)
+  - [Exporter les données sources pour le type d’informations sensibles basé sur la correspondance exacte des données](sit-get-started-exact-data-match-export-data.md)
+  - [Hacher et charger la table de source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles](sit-get-started-exact-data-match-hash-upload.md)
+  - [Tester un type d’informations sensibles correspondant exactement aux données](sit-get-started-exact-data-match-test.md)
+  - [En savoir plus sur les types d’informations sensibles correspondant exactement aux données](sit-learn-about-exact-data-match-based-sits.md)
+- [Limites des types d’informations sensibles](sit-limits.md) - nouveau
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+- Disponible en disponibilité générale (GA) et n’avez plus besoin de participer : les appareils mobiles (iOS et Android, avec des versions minimales) prennent en charge la [co-édition des fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md).
+- Disponibilité générale avec Canal actuel 2208+ pour Word, Excel, PowerPoint sur Windows : [prise en charge du pdf](sensitivity-labels-office-apps.md#pdf-support). La prise en charge d’Outlook pour bloquer l’impression au format PDF si nécessaire est déployée sur le canal bêta.
+- Déploiement en disponibilité générale avec Current Channel 2208+ pour Windows et 16.63+ pour macOS : étiquette par défaut pour les documents existants.
+- En préversion : Classifieurs pouvant être formés pour les [stratégies d’étiquetage automatique](apply-sensitivity-label-automatically.md).
+- Conseils sur la [configuration d’Azure AD pour le contenu chiffré](encryption-azure-ad-configuration.md), qui inclut des informations sur les paramètres d’accès interlocataire des identités externes, les stratégies d’accès conditionnel et les comptes invités.
 
 ## <a name="july-2022"></a>Juillet 2022
 
@@ -330,26 +384,3 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
   - Prise en charge des modèles, précédemment répertoriés comme [non pris en charge avec les API Graph Teams et les applets de commande PowerShell]( /microsoftteams/sensitivity-labels#limitations).  
 - Pour l’audit de Word, Excel et PowerPoint sur le web, le texte de justification est maintenant entièrement déployé.
 - L’application d’une étiquette par défaut à des documents existants pour Word, Excel et PowerPoint sur le web est maintenant entièrement déployée.
-
-## <a name="february-2022"></a>Février 2022
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [Gérer les modèles de communication des consignatateurs dans eDiscovery (Premium)](advanced-ediscovery-communications-library.md) : les gestionnaires eDiscovery peuvent désormais créer des modèles de communication de consignation qui peuvent être utilisés dans n’importe quel cas eDiscovery (Premium) dans l’organisation.
-- [Gérer les agents émetteurs dans eDiscovery (Premium)](advanced-ediscovery-issuing-officers.md) : les gestionnaires eDiscovery peuvent ajouter une liste d’agents émetteurs qui peuvent être affectés aux communications des consignatateurs dans n’importe quel cas eDiscovery (Premium) dans l’organisation.
-
-### <a name="data-lifecycle-management-and-records-management"></a>Gestion du cycle de vie des données et gestion des enregistrements
-
-- [Les étendues adaptatives pour les](retention.md#adaptive-or-static-policy-scopes-for-retention) stratégies de rétention et les stratégies d’étiquette de rétention sont désormais en disponibilité générale (GA). Les instructions de [configuration d’une étendue adaptative](retention-settings.md#to-configure-an-adaptive-scope) incluent désormais plus d’informations sur les étendues de site SharePoint : Blog post reference for using custom site properties and how to use the site property SiteTemplate to include or exclude specific site types with the advanced query builder.
-- [La recherche de stratégie](retention.md#policy-lookup) dans la solution de gestion du cycle de vie des données est désormais généralement disponible (disponibilité générale).
-- PowerShell alternative au paramètre de gestion des enregistrements qui permet aux utilisateurs de supprimer des éléments étiquetés dans SharePoint et OneDrive à l’aide de AllowFilesWithKeepLabelToBeDeletedSPO et AllowFilesWithKeepLabelToBeDeletedODB à partir de [Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) et [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
-
-### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-
-- Nouvelles instructions [Pourquoi choisir l’étiquetage intégré sur le complément AIP pour les applications Office](sensitivity-labels-aip.md) si vous utilisez le client d’étiquetage unifié Azure Information Protection (AIP) pour les ordinateurs Windows. Cette page contient des informations sur la nouvelle préversion privée pour les applications Office.
-- Nouveaux paramètres pour les stratégies [d’étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) :
-  - Paramètres supplémentaires pour l’e-mail afin de prendre en charge l’application systématique d’une étiquette de confidentialité correspondante et d’appliquer le chiffrement aux e-mails reçus de l’extérieur de l’organisation.
-  - Les exclusions pour des instances spécifiques (utilisateurs, groupes, sites) sont prises en charge à l’aide de la nouvelle option **Exclus** lorsque la sélection par défaut de **Tout** est spécifiée pour **Inclus**.
-- Maintenant en préversion : les appareils mobiles (iOS et Android) prennent en charge [la co-édition](sensitivity-labels-coauthoring.md) lorsque vous avez des versions minimales et que vous optez pour cette préversion.
-- La prise en charge de la définition du type de lien de partage par défaut est étendue aux documents individuels dans SharePoint et OneDrive. Pour plus d’informations, consultez le nouvel article [Utiliser des étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive]( sensitivity-labels-default-sharing-link.md).
-- Le Centre d’administration Teams prend désormais en charge les étiquettes de conteneur (étiquettes de confidentialité avec l’étendue des groupes & sites).

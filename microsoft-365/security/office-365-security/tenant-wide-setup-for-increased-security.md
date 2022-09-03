@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Cette rubrique vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du locataire qui affectent la sécurité de votre environnement Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 2a48d3c935a5c4afb1006c31c586744fd6964b94
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: e11248e7b1c45d09e6e6cd826720c7bf2019463d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385570"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597236"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 

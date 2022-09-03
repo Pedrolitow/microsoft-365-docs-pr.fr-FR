@@ -4,9 +4,10 @@ summary: Une sécurité des terminaux simple et complète pour vous aider à pro
 metadata:
   title: Documentation Microsoft Defender pour les PME
   description: Defender for Business est une solution de cybersécurité pour les petites et moyennes entreprises. Protéger les appareils avec une sécurité de niveau entreprise à un prix abordable.
-  ms.prod: m365-security
-  ms.technology: mdb
+  ms.service: microsoft-365-security
+  ms.subservice: mdb
   ms.topic: landing-page
+  ms.date: 07/19/2022
   ms.collection:
   - SMB
   - M365-security-compliance
@@ -14,12 +15,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.openlocfilehash: 32746cbb20f9a05d5928449cd6076eb0fa3321f5
-  ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
-  ms.translationtype: HT
+  ms.openlocfilehash: c7aaed4a26d39eea32378eb423f38937a423a88c
+  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+  ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/25/2022
-  ms.locfileid: "67004494"
+  ms.lasthandoff: 09/03/2022
+  ms.locfileid: "67598107"
 landingContent:
 - title: Vue d’ensemble
   linkLists:

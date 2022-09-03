@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer leur utilisation pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f4a7dd91dde78e816ed579d2f16744ec90b67675
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 747fe0563222b34b5ff63673a6bc350db9207b83
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772125"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598712"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -223,8 +223,8 @@ Pour plus d’informations sur les paramètres recommandés pour les pièces joi
 5. Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
 
 6. (Recommandé) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez l’applet de commande **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** avec le paramètre _DisallowInfectedFileDownload_ défini `$true` sur SharePoint Online PowerShell.
-   - `$true` bloque toutes les actions (à l’exception de Supprimer) pour les fichiers détectés. Les utilisateurs ne peuvent pas ouvrir, déplacer, copier ou partager des fichiers détectés.
-   - `$false` bloque toutes les actions, à l’exception de Delete et Download. Les utilisateurs peuvent choisir d’accepter le risque et de télécharger un fichier détecté.
+   - `$true` bloque toutes les actions (à l’exception de Supprimer) pour les fichiers détectés. Personnes ne peut pas ouvrir, déplacer, copier ou partager des fichiers détectés.
+   - `$false` bloque toutes les actions, à l’exception de Delete et Download. Personnes pouvez choisir d’accepter le risque et de télécharger un fichier détecté.
 
 7. Autorisez jusqu’à 30 minutes pour que vos modifications s’étendent à tous les centres de données Microsoft 365.
 

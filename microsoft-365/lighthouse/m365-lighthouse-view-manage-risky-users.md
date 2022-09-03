@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher et gérer les utilisateurs à risque.
-ms.openlocfilehash: 0239dd4c56de9203f01df04cc4f0fce8c73fb27e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 4c141794e0f6a5592e7b0c48fd39494f702c6a02
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474861"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599063"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Afficher et gérer les utilisateurs à risque dans Microsoft 365 Lighthouse
 

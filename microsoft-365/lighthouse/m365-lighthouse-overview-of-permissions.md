@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, en savoir plus sur les exigences d’autorisation Lighthouse.
-ms.openlocfilehash: 0ccc47fd151fa681b0231b2f776de3d2c46c5784
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b808c90cf660303e8794e18a1ce4e1be90fb63c0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012983"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599085"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse
 
-L’accès délégué aux locataires clients est requis pour que les fournisseurs de services gérés (MSP) utilisent Microsoft 365 Lighthouse. Les privilèges d’administrateur délégué granulaires (GDAP) offrent aux MSP un niveau élevé de contrôle et de flexibilité en fournissant un accès client via [des rôles intégrés Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)). L’attribution des rôles les moins privilégiés par tâche via GDAP aux techniciens MSP réduit les risques de sécurité pour les MSP et les clients. Pour plus d’informations sur les rôles les moins privilégiés par tâche, consultez [Rôles à privilèges minimum - Espace partenaires](/partner-center/gdap-least-privileged-roles-by-task) et [rôles à privilèges minimum par tâche dans Azure Active Directory](/azure/active-directory/roles/delegate-by-task). Pour plus d’informations sur la configuration d’une relation GDAP avec un locataire client, consultez [Obtenir des autorisations d’administrateur granulaires pour gérer le service d’un client - Espace partenaires.](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)
+L’accès délégué aux locataires clients est requis pour que les fournisseurs de services gérés (MSP) utilisent Microsoft 365 Lighthouse. Les privilèges délégués délégués granulaires Administration (GDAP) offrent aux MSP un niveau élevé de contrôle et de flexibilité en fournissant un accès client via des [rôles intégrés Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)). L’attribution des rôles les moins privilégiés par tâche via GDAP aux techniciens MSP réduit les risques de sécurité pour les MSP et les clients. Pour plus d’informations sur les rôles les moins privilégiés par tâche, consultez [Rôles les moins privilégiés - Espace partenaires](/partner-center/gdap-least-privileged-roles-by-task) et [Rôles les moins privilégiés par tâche dans Azure Active Directory](/azure/active-directory/roles/delegate-by-task). Pour plus d’informations sur la configuration d’une relation GDAP avec un locataire client, consultez [Obtenir des autorisations d’administrateur granulaires pour gérer le service d’un client - Espace partenaires.](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)
 
 Nous vous recommandons d’attribuer des rôles à des groupes de techniciens MSP en fonction des tâches que chaque groupe doit effectuer pour le compte du client. Par exemple, les techniciens Service Desk peuvent simplement avoir besoin de lire les données client client ou de réinitialiser les mots de passe utilisateur. En revanche, les ingénieurs d’escalade devront peut-être prendre des mesures correctives supplémentaires pour mettre à jour les paramètres de sécurité du locataire client. Il est recommandé d’attribuer le rôle le moins permissif nécessaire pour effectuer une tâche afin que les données client et partenaire soient sécurisées. Nous vous recommandons d’utiliser Privileged Identity Management (PIM) pour activer l’accès limité dans le temps au rôle Administrateur général, si nécessaire. Accorder un accès global à un trop grand nombre d’utilisateurs est un risque pour la sécurité, et nous vous recommandons de le limiter autant que possible. Pour plus d’informations sur l’activation de PIM, consultez [Configurer Azure AD PIM.](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)
 
@@ -61,11 +61,11 @@ Le tableau suivant répertorie les actions que l’exemple de niveaux de service
 > [!NOTE]
 > Si vous recevez un message dans Lighthouse indiquant que vous n’avez pas l’autorisation d’afficher ou de modifier des informations, un rôle qui ne dispose pas des autorisations appropriées pour effectuer l’action vous est attribué. Vous devez contacter un administrateur de votre locataire partenaire qui peut vous attribuer le rôle approprié pour l’action que vous essayez d’effectuer.
 
-## <a name="delegated-admin-privileges-dap-in-lighthouse"></a>Privilèges d’administrateur délégués (DAP) dans Lighthouse
+## <a name="delegated-admin-privileges-dap-in-lighthouse"></a>Privilèges délégués Administration (DAP) dans Lighthouse
 
-GDAP remplacera finalement DAP comme méthode principale pour configurer l’accès délégué pour les locataires clients. Toutefois, si GDAP n’a pas été configuré, les techniciens MSP peuvent toujours accéder à Lighthouse à l’aide des rôles Agent du support technique ou Agent d’administration accordés via DAP. Pour les clients où GDAP et DAP coexistent, les rôles accordés aux techniciens MSP via GDAP sont prioritaires. Pour plus d’informations sur la dépréciation de GDAP ou DAP, consultez les [questions fréquemment posées sur GDAP](/partner-center/gdap-faq) ou [les annonces de l’Espace partenaires](/partner-center/announcements/2022-march#15) pour les dates et les chronologies.
+GDAP remplacera finalement DAP comme méthode principale pour configurer l’accès délégué pour les locataires clients. Toutefois, si GDAP n’a pas été configuré, les techniciens MSP peuvent toujours accéder à Lighthouse à l’aide des rôles d’agent de support technique ou d’agent Administration accordés via DAP. Pour les clients où GDAP et DAP coexistent, les rôles accordés aux techniciens MSP via GDAP sont prioritaires. Pour plus d’informations sur la dépréciation de GDAP ou DAP, consultez les [questions fréquemment posées sur GDAP](/partner-center/gdap-faq) ou [les annonces de l’Espace partenaires](/partner-center/announcements/2022-march#15) pour les dates et les chronologies.
 
-Pour les clients avec DAP et sans GDAP, le rôle Agent d’administration accorde des autorisations pour afficher toutes les données de locataire et prendre des mesures dans Lighthouse (voir ci-dessous pour d’autres actions qui nécessitent également un rôle dans le locataire partenaire).
+Pour les clients avec DAP et sans GDAP, le rôle agent Administration accorde des autorisations pour afficher toutes les données de locataire et prendre des mesures dans Lighthouse (voir ci-dessous pour les autres actions qui nécessitent également un rôle dans le locataire partenaire).
 
 Le rôle Agent du support technique accorde des autorisations pour afficher toutes les données client et prendre des mesures limitées dans Lighthouse, telles que la réinitialisation des mots de passe utilisateur, le blocage des connexions utilisateur et la mise à jour des informations de contact client et des sites web.
 
@@ -79,9 +79,9 @@ Pour certaines actions dans Lighthouse, des attributions de rôles dans le locat
 |--|--|
 | Administrateur général du locataire partenaire | <ul><li>Inscrivez-vous à Lighthouse dans le Centre d'administration Microsoft 365.</li><li>Acceptez les modifications apportées aux contrats partenaires lors de la première exécution.</li><li>Activez et désactivez un locataire.</li><li>Créez, mettez à jour et supprimez des balises.</li><li>Affectez et supprimez des balises d’un locataire client.</li><li>Examiner les journaux d’audit</li></ul> |
 | Membre du locataire partenaire avec au moins un rôle Azure AD attribué avec l’ensemble de propriétés suivant :<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(Pour obtenir la liste complète des rôles Azure AD, consultez [les rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).) | Créez des demandes de service Lighthouse. |
-| Membre du locataire partenaire qui répond aux *deux* exigences suivantes : <ul><li>Au moins un rôle Azure AD est attribué avec l’ensemble de propriétés suivant :<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Pour obtenir la liste complète des rôles Azure AD, consultez [les rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).)</li><li>Au moins un rôle délégué DAP est attribué (Agent d’administration ou Agent du support technique)</li></ul> | Afficher les informations d’intégrité du service. |
+| Membre du locataire partenaire qui répond aux *deux* exigences suivantes : <ul><li>Au moins un rôle Azure AD est attribué avec l’ensemble de propriétés suivant :<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Pour obtenir la liste complète des rôles Azure AD, consultez [les rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).)</li><li>Au moins un rôle délégué DAP est attribué (agent Administration ou agent du support technique)</li></ul> | Afficher les informations d’intégrité du service. |
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)  
 [FAQ sur les privilèges d’administration délégués (DAP)](/partner-center/dap-faq) (article)  

@@ -16,14 +16,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier une boîte aux lettres personnalisée (également appelée boîte aux lettres de soumissions d’utilisateurs) pour collecter les messages de courrier indésirable et de hameçonnage signalés par les utilisateurs. D’autres paramètres complètent l’expérience de création de rapports pour les utilisateurs lorsqu’ils signalent des messages.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: e09b5f7d6f34ac1daa98430f1bc868b4ca644777
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b2f3f9b07c0d2d6c856fc786bf437bda76399ca1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276303"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599558"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -125,7 +125,7 @@ Lorsque le **bouton Message de rapport Microsoft Outlook** **est** ![activé](..
   >
   > Si vous sélectionnez **la boîte aux lettres de mon organisation**, les messages signalés apparaissent dans **l’onglet Messages signalés par l’utilisateur** dans la page **Soumissions** à l’adresse <https://security.microsoft.com/reportsubmission>. Toutefois, la valeur **résultat** de ces messages sera toujours vide, car les messages n’ont pas été réexécuter.
   >
-  > Si vous utilisez une [formation de simulation d’attaque](attack-simulation-training-get-started.md) ou un produit tiers pour effectuer des simulations d’hameçonnage, vous devez configurer la boîte aux lettres des soumissions utilisateur en tant que boîte aux lettres SecOps, comme décrit précédemment dans la section [Configuration requise pour la boîte aux lettres des soumissions utilisateur](#configuration-requirements-for-the-user-submissions-mailbox) plus haut dans cet article. Si ce n’est pas le cas, un utilisateur signalant un message peut déclencher une affectation d’entraînement dans le produit de simulation d’hameçonnage.
+  > Si vous utilisez [Exercice de simulation d'attaque](attack-simulation-training-get-started.md) ou un produit tiers pour effectuer des simulations d’hameçonnage, vous devez configurer la boîte aux lettres des soumissions d’utilisateurs en tant que boîte aux lettres SecOps, comme décrit précédemment dans la section [Configuration requise pour la boîte aux lettres des soumissions d’utilisateurs](#configuration-requirements-for-the-user-submissions-mailbox) plus haut dans cet article. Si ce n’est pas le cas, un utilisateur signalant un message peut déclencher une affectation d’entraînement dans le produit de simulation d’hameçonnage.
 
   Quelle que soit votre sélection, les paramètres suivants sont également disponibles dans la section **Envoyer les messages signalés à** la section :
 

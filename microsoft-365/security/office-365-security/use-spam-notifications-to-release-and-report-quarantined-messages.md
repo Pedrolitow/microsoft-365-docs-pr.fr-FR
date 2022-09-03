@@ -19,14 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les notifications de courrier indésirable de l’utilisateur final pour les messages mis en quarantaine dans Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 44ed83a95fe8f588369f0a1bbae4809f32581f87
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 57d794e601250cac554226cdb8e1210f15ed08ef
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043471"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597645"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Utiliser des notifications de quarantaine pour publier et signaler des messages mis en quarantaine
 
@@ -50,7 +50,7 @@ Les administrateurs peuvent également utiliser les paramètres globaux dans les
 Pour les boîtes aux lettres partagées, les notifications de mise en quarantaine sont prises en charge uniquement pour les utilisateurs disposant de l’autorisation FullAccess sur la boîte aux lettres partagée. Pour plus d’informations, consultez [Utiliser le CAE pour modifier la délégation de boîte aux lettres partagée](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
 > [!NOTE]
-> Par défaut, les messages mis en quarantaine en tant qu’hameçonnage à haut niveau de confiance, les programmes malveillants, les règles de flux de messagerie (également appelées règles de transport) ou les stratégies de Coffre pièces jointes dans Defender pour Office 365 sont uniquement disponibles pour les administrateurs (par défaut, la stratégie de quarantaine AdminOnlyAccessPolicy est utilisée). Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
+> Par défaut, les messages mis en quarantaine sous forme de hameçonnage à haut niveau de confiance, de programmes malveillants, de règles de flux de messagerie (également appelées règles de transport) ou de stratégies de pièces jointes sécurisées dans Defender pour Office 365 sont uniquement disponibles pour les administrateurs (par défaut, la stratégie de quarantaine AdminOnlyAccessPolicy est utilisée). Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 >
 > Les notifications de mise en quarantaine pour les messages envoyés aux groupes de distribution ou aux groupes de sécurité à extension messagerie sont envoyées à tous les membres du groupe.
 >
@@ -73,4 +73,4 @@ Par défaut, les actions suivantes sont disponibles dans la notification de mise
 :::image type="content" source="../../media/end-user-spam-notification.png" alt-text="Exemple de notification de mise en quarantaine" lightbox="../../media/end-user-spam-notification.png":::
 
 > [!NOTE]
-> Un expéditeur bloqué peut toujours vous envoyer des messages électroniques. Tous les messages de cet expéditeur qui sont envoyés à votre boîte aux lettres sont immédiatement déplacés vers le dossier Courrier indésirable. Les messages futurs de cet expéditeur seront envoyés à votre dossier Courrier indésirable ou en quarantaine. Si vous souhaitez supprimer ces messages à l’arrivée au lieu de les mettre en quarantaine, utilisez des [règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) pour supprimer les messages à l’arrivée.
+> Un expéditeur bloqué peut toujours vous envoyer des messages électroniques. Tous les messages de cet expéditeur qui sont envoyés à votre boîte aux lettres sont immédiatement déplacés vers le dossier Junk Email. Les messages futurs de cet expéditeur seront envoyés à votre dossier Junk Email ou en quarantaine. Si vous souhaitez supprimer ces messages à l’arrivée au lieu de les mettre en quarantaine, utilisez des [règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) pour supprimer les messages à l’arrivée.

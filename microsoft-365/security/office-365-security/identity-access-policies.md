@@ -4,7 +4,7 @@ description: Décrit les configurations et stratégies d’accès aux identités
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -21,13 +21,13 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 - highpri
-ms.technology: mdo
-ms.openlocfilehash: e47dffc84870a34cb22aa8246b82ce230bcd7ebd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: 07049a7eb04cac2a22f82aa7cf57fe8b44a228e7
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67468182"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599712"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies d’accès aux identités et aux appareils Confiance nulle courantes
 

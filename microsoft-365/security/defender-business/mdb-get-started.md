@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/15/2022
 ms.reviewer: shlomiakirav
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 03804ba55903dd4d0b788333c9b3adfae3dd7186
-ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
+ms.openlocfilehash: 20d1bf0cb045e3ee2efc70a6b0c68fec8b8436ca
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67357353"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598085"
 ---
 # <a name="visit-the-microsoft-365-defender-portal"></a>Visitez le portail Microsoft 365 Defender
 

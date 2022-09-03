@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer l’authentification multifacteur.
-ms.openlocfilehash: ef658f19aba9530ab4f1cd76e1e32a1733f3594c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6cd52100056bf96db4142dca99489d5794e60a92
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471773"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599129"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Gérer l’authentification multifacteur dans Microsoft 365 Lighthouse
 

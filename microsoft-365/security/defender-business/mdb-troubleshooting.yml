@@ -8,8 +8,8 @@ metadata:
   manager: dansimp
   audience: Admin3
   ms.topic: faq
-  ms.prod: m365-security
-  ms.technology: mdb
+  ms.service: microsoft-365-security
+  ms.subservice: mdb
   ms.localizationpriority: medium
   ms.date: 08/11/2022
   ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 41dc82d71d615b09992fd100eb678f5cff0fe710
-  ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+  ms.openlocfilehash: f5dfd2fd3cd07fa08894d92a4ab15b5bd21de969
+  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/12/2022
-  ms.locfileid: "67319603"
+  ms.lasthandoff: 09/03/2022
+  ms.locfileid: "67598514"
 title: résolution des problèmes de Microsoft Defender pour entreprises
 summary: "Utilisez cet article comme guide pour résoudre les problèmes que vous pouvez rencontrer dans Defender entreprise. \n"
 sections:

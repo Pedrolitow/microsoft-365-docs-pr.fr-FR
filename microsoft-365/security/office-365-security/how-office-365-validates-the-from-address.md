@@ -17,25 +17,25 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les types d’adresses e-mail acceptées ou rejetées par Exchange Online Protection (EOP) et Outlook.com pour empêcher le hameçonnage.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c8b9fb5c9e2b67a656948684838b61b4a9c33a8d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: a4687ca9d9135a8feef66f4caabfcb7a3a2313b4
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319547"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598404"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse From pour empêcher le hameçonnage
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les attaques par hameçonnage constituent une menace constante pour toute organisation de messagerie. En plus [d’utiliser des adresses e-mail d’expéditeur usurpées (falsifiées), les attaquants](anti-spoofing-protection.md) utilisent souvent des valeurs dans l’adresse From qui violent les normes Internet. Pour éviter ce type de hameçonnage, Exchange Online Protection (EOP) et Outlook.com nécessitent désormais que les messages entrants incluent une adresse De conforme RFC, comme décrit dans cet article. Cette mise en œuvre a été activée en novembre 2017.
+Les attaques par hameçonnage constituent une menace constante pour toute organisation de messagerie. En plus [d’utiliser des adresses e-mail d’expéditeur usurpées (falsifiées), les attaquants](anti-spoofing-protection.md) utilisent souvent des valeurs dans l’adresse From qui violent les normes Internet. Pour éviter ce type de hameçonnage, Exchange Online Protection (EOP) et Outlook.com maintenant exiger que les messages entrants incluent une adresse From conforme À RFC, comme décrit dans cet article. Cette mise en œuvre a été activée en novembre 2017.
 
 **Remarques** :
 
@@ -90,7 +90,7 @@ Les adresses de messagerie De suivantes sont valides :
 
 Les adresses de courrier suivantes ne sont pas valides :
 
-- **Non à partir de l’adresse** : certains messages automatisés n’incluent pas d’adresse From. Par le passé, lorsque Microsoft 365 ou Outlook.com recevait un message sans adresse From, le service ajoutait l’adresse par défaut suivante à partir de : pour rendre le message livrable :
+- **Non à partir de l’adresse** : certains messages automatisés n’incluent pas d’adresse From. Par le passé, lorsque Microsoft 365 ou Outlook.com recevait un message sans adresse From, le service ajoutait l’adresse par défaut Suivante à partir de : pour rendre le message livrable :
 
   `From: <>`
 
@@ -118,21 +118,21 @@ Vous ne pouvez pas utiliser la valeur `From: <>` pour supprimer les réponses au
 
 - L’enregistrement MX null pour ce domaine se compose d’une seule période.
 
-Par exemple :
+Par exemple :
 
 ```text
 noreply.contoso.com IN MX .
 ```
 
-Pour plus d’informations sur la configuration des enregistrements MX, consultez [Créer des enregistrements DNS sur n’importe quel fournisseur d’hébergement DNS pour Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Pour plus d’informations sur la configuration des enregistrements MX, consultez [Créer des enregistrements DNS auprès de n’importe quel fournisseur d’hébergement DNS pour Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 Pour plus d’informations sur la publication d’un MX null, consultez [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
 ## <a name="override-from-address-enforcement"></a>Remplacement de l’application de l’adresse
 
-Pour contourner les exigences d’adresse De pour les e-mails entrants, vous pouvez utiliser la liste d’autorisations IP (filtrage de connexion) ou les règles de flux de messagerie (également appelées règles de transport), comme décrit dans [Créer des listes d’expéditeurs sécurisés dans Microsoft 365](create-safe-sender-lists-in-office-365.md).
+Pour contourner les exigences de l’adresse From pour les e-mails entrants, vous pouvez utiliser la liste d’autorisations IP (filtrage de connexion) ou les règles de flux de courrier (également appelées règles de transport), comme décrit dans [Créer des listes d’expéditeurs fiables dans Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-Vous ne pouvez pas remplacer les exigences d’adresse De pour les e-mails sortants que vous envoyez à partir de Microsoft 365. En outre, Outlook.com n’autorise pas les remplacements de quelque nature que ce soit, même par le biais de la prise en charge.
+Vous ne pouvez pas remplacer les exigences de l’adresse De pour les e-mails sortants que vous envoyez à partir de Microsoft 365. En outre, Outlook.com n’autorise pas les remplacements de quelque nature que ce soit, même par le biais de la prise en charge.
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Autres moyens de prévenir et de protéger contre les cybercriminalités dans Microsoft 365
 

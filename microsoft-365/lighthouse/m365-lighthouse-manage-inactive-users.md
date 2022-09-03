@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment gérer les utilisateurs inactifs.
-ms.openlocfilehash: 3763ed3ca8ed36ea9d944a2847a7465b73da647d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2b7fd7c653e1a7f534237de3fb78fa37e7f4fd6f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479594"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599279"
 ---
 # <a name="manage-inactive-users-in-microsoft-365-lighthouse"></a>Gérer les utilisateurs inactifs dans Microsoft 365 Lighthouse
 

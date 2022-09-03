@@ -15,14 +15,14 @@ ms.custom:
 - seo-marvel-apr2020
 - adminvideo
 description: Cet article couvre des sujets tels que le transfert de courrier externe, le transfert automatique, les messages 5.7.520 Accès refusé, la désactivation du transfert externe, les messages « Votre administrateur a désactivé le transfert externe », ainsi que la stratégie anti-courrier indésirable sortant.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: e540fc99cb06b18d8a602ffa33f290e8969a7ad5
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 5a427236386c5afe4f289b8b1eb1ef4045f7f5d6
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385228"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598448"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le transfert automatique d’e-mails externes dans Microsoft 365
 
@@ -58,7 +58,7 @@ Pour obtenir des instructions sur la configuration de ces paramètres, consultez
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Fonctionnement des paramètres de stratégie de filtrage du courrier indésirable sortant avec d’autres contrôles de transfert automatique de courrier électronique
 
-En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le transfert automatique de courrier électronique. Par exemple :
+En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le transfert automatique de courrier électronique. Par exemple :
 
 - [Domaines distants](/exchange/mail-flow-best-practices/remote-domains/remote-domains) pour autoriser ou bloquer le transfert automatique d’e-mails vers certains ou tous les domaines externes.
 - Conditions et actions dans [les règles de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) Exchange (également appelées règles de transport) pour détecter et bloquer automatiquement les messages transférés aux destinataires externes.

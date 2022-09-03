@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Découvrez comment gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 9993241a42b40fd670e83d0e28938fa9a4625086
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 1eae7f137d9457ca507efb592414127223af4f87
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441590"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598975"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire
 

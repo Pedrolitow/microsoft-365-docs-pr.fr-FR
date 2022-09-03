@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: algreer
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page gestion des menaces.
-ms.openlocfilehash: a9e87d533c3693040bf2bea59f9d45a52863af34
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 5283ac1b4155db5d78e8cd96bbc686811c8aa29a
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056655"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598822"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Gestion des menaces dans Microsoft 365 Lighthouse 
 

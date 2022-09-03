@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft dans les environnements GCC High.
-ms.openlocfilehash: ae658b49fc2e712735e8a7e7cb94e8b71f9a2fc2
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 2c87290fb7a6ebbcf9c27ac95e76c8b5ae5f0d88
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275009"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598172"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer le partage pour le tableau blanc Microsoft dans les environnements GCC High
 

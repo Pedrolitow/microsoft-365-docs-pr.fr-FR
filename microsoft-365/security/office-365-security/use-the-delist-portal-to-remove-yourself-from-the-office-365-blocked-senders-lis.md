@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous allez apprendre à utiliser le portail de suppression pour vous supprimer de la liste des expéditeurs bloqués Microsoft 365. Il s’agit de la meilleure réponse pour résoudre les erreurs d’accès refusé 5.7.511.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 83822faaf1c667524dd88fc1bba400c10fa30ac3
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 3eb58e7620a0d79a4a4e8172b72fafd154df56a0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647730"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598887"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Utilisez le portail de liste pour vous supprimer de la liste des expéditeurs bloqués et résoudre les erreurs d’accès refusé 5.7.511
 
@@ -38,11 +38,11 @@ Recevez-vous un message d’erreur lorsque vous essayez d’envoyer un e-mail à
 
 ## <a name="what-is-the-blocked-senders-list"></a>Qu’est-ce que la liste des expéditeurs bloqués ?
 
-Microsoft utilise la liste des expéditeurs bloqués pour protéger ses clients contre le courrier indésirable, l'usurpation d'identité et les attaques par hameçonnage. L’adresse IP de votre serveur de messagerie, c’est-à-dire l’adresse que votre serveur de messagerie utilise pour s’identifier sur Internet, a été marquée comme une menace potentielle pour Microsoft 365 pour l’une des diverses raisons. Lorsque Microsoft 365 ajoute l’adresse IP à la liste, elle empêche toute communication supplémentaire entre l’adresse IP et l’un de nos clients via nos centres de données.
+Microsoft utilise la liste des expéditeurs bloqués pour protéger ses clients contre le courrier indésirable, l'usurpation d'identité et les attaques par hameçonnage. L’adresse IP de votre serveur de messagerie, c’est-à-dire l’adresse que votre serveur de messagerie utilise pour s’identifier sur Internet, a été marquée comme une menace potentielle pour Microsoft 365 pour une des diverses raisons. Lorsque Microsoft 365 ajoute l’adresse IP à la liste, il empêche toute communication supplémentaire entre l’adresse IP et l’un de nos clients via nos centres de données.
 
 Vous savez que vous avez été ajouté à la liste si vous recevez une réponse à un courrier électronique incluant une erreur ressemblant à ce qui suit :
 
-> 550 5.7.606-649 Accès refusé, interdiction d’envoyer l’adresse _IP [adresse IP_] (par exemple. 5.7.511 Accès refusé) : pour demander la suppression de cette liste, visitez <https://sender.office.com/> et suivez les instructions. Pour plus d’informations, consultez [les rapports de non-remise par e-mail dans Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 Accès refusé, interdiction d’envoyer l’adresse _IP [adresse IP_] (par exemple. 5.7.511 Accès refusé) : pour demander la suppression de cette liste, visitez <https://sender.office.com/> et suivez les instructions. Pour plus d’informations, consultez [Email rapports de non-remise dans Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serveur de messagerie.
 

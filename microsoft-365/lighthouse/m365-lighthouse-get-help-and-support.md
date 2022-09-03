@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment obtenir de l’aide et du support.
-ms.openlocfilehash: cf0f9e9fd689f8e683b63af4cc8db7a09a1f6240
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 5648c17aa87f41164c89113f35615a0226d6d433
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139316"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599295"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Obtenir de l’aide et du support pour Microsoft 365 Lighthouse 
 
@@ -37,10 +37,10 @@ Plusieurs options sont disponibles si vous avez besoin d’aide. Tout d’abord,
 
     1. Accédez au Centre d'administration Microsoft 365 sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
     2. Dans le volet de navigation gauche, sélectionnez **Intégrité** >  **État des services**.
-    3. Dans la liste des services, recherchez **Microsoft 365 suite**, puis développez-la pour afficher tous les services de la suite.
+    3. Dans la liste des services, recherchez **la suite Microsoft 365**, puis développez-la pour afficher tous les services de la suite.
     4. Recherchez **Microsoft 365 Lighthouse** et vérifiez l’intégrité.
 
-- Voir si le problème est répertorié dans [les problèmes connus liés à Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-known-issues?view=o365-worldwide).
+- Voir si le problème est répertorié dans [les problèmes connus liés à Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-known-issues).
 
 Si vous rencontrez un problème qui n’est répertorié dans aucune de ces ressources, suivez les instructions de cet article pour afficher les options d’auto-assistance ou pour créer une demande de service.
 
@@ -78,7 +78,7 @@ Si vous rencontrez un problème qui n’est répertorié dans aucune de ces ress
 
 6.  Renseignez les informations contenues dans le formulaire, joignez les captures d’écran et le fichier JSON que vous avez enregistrés à l’étape&nbsp;1, le cas échéant, puis **sélectionnez Me contacter**. Le temps d’attente attendu est indiqué dans le volet.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\

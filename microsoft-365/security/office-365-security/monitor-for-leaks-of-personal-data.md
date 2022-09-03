@@ -17,14 +17,14 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6c5b765b4eb4cbf49d31ee5ddb06fb0afe69c667
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
-ms.translationtype: HT
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 2ce8dcae988e99d7697ba14f296704ffaaeafd5d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649262"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598931"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
