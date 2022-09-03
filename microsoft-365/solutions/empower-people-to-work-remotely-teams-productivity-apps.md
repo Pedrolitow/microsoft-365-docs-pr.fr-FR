@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Permettez à vos utilisateurs d’être productifs grâce à Teams, Exchange, SharePoint et les autres services Microsoft 365.
-ms.openlocfilehash: 31f3c25aa536dce42dfd3ee8677271f1523eb75a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 498157250d5d9adecf6d39a2a2cfc11167b907f5
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312906"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581310"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Étape 5 : déployer les applications et les services de productivité des travailleurs à distance
 
@@ -30,7 +30,7 @@ Pour être productifs, les employés doivent communiquer et collaborer les uns a
 
 | Fonction TI | Composants de Microsoft 365 | Description |
 |:-------|:-----|:-------|
-| Services de messagerie | Exchange Online | Messagerie Exchange et gestion des calendriers, des contacts et des tâches avec le client Outlook. |
+| Services de messagerie | Exchange Online | Messagerie Exchange et gestion des calendriers, des contacts et des tâches avec le client Outlook. |
 | Conversation d’entreprise, protocole voix sur IP (VOIP) et collaboration en équipe | Microsoft Teams | Maintenez le contact entre vos employés, alors qu’ils doivent travailler séparément grâce à un centre commun de communication pour les réunions, les conversations et le stockage de fichiers pour l’organisation et les départements, mais aussi pour les petites équipes et les particuliers. |
 | Sites intranet, collaboration sur des documents | SharePoint et OneDrive | Stocker et collaborer sur des fichiers dans un navigateur web ou au sein de Teams. |
 | Applications Office de bureau et appareil mobile | Microsoft 365 Apps | Crez de contenu ou collaborez sur du contenu existant avec les versions de Word, PowerPoint, Excel et Outlook, installées sur votre ordinateur local, et qui reçoivent des mises à jour de fonctionnalité et de sécurité régulières. |

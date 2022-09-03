@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
 description: Utilisez l’accès contrôlé aux dossiers, Microsoft Purview Information Protection, DLP, et Microsoft Defender for Cloud Apps pour protéger vos données sensibles Microsoft 365.
-ms.openlocfilehash: e32c214688adb60fa39fc3c392512f46ec94aecf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
-ms.translationtype: HT
+ms.openlocfilehash: 94d5a55178d5e13ad7ba22df1c4f7226a176c1c6
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945128"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575612"
 ---
 # <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
 

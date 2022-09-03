@@ -1,8 +1,8 @@
 ---
-title: Opportunités de partenariat avec un fournisseur de services de sécurité gérés (MSSP)
-description: Comprendre comment Microsoft Defender for Endpoint s’intègre aux fournisseurs de services de sécurité gérés (MSSP)
-keywords: mssp, intégration, géré, sécurité, service, fournisseur
-ms.prod: m365-security
+title: Opportunités de partenariat avec un fournisseur de services de sécurité managé (MSSP)
+description: Comprendre comment Microsoft Defender pour point de terminaison s’intègre aux fournisseurs de services de sécurité managés (MSSP)
+keywords: mssp, intégration, managée, sécurité, service, fournisseur
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,38 +13,38 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: f29c40e9c813ec27a1d8976f53ed958cb3a8d1d4
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.subservice: mde
+ms.openlocfilehash: 39b4eb415e609fb56f415f20f8407652b508c8c5
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941755"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578253"
 ---
-# <a name="managed-security-service-provider-partnership-opportunities"></a>Opportunités de partenariat avec un fournisseur de services de sécurité gérés
+# <a name="managed-security-service-provider-partnership-opportunities"></a>Opportunités de partenariat de fournisseur de services de sécurité managée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 
-La sécurité est reconnue comme un composant clé dans l’exécution d’une entreprise, mais certaines organisations peuvent ne pas avoir la capacité ou l’expertise d’avoir une équipe dédiée aux opérations de sécurité pour gérer la sécurité de leurs points de terminaison et de leur réseau, tandis que d’autres peuvent avoir un deuxième groupe d’yeux pour examiner les alertes dans leur réseau.
+La sécurité est reconnue comme un composant clé dans l’exécution d’une entreprise, mais certaines organisations peuvent ne pas avoir la capacité ou l’expertise d’avoir une équipe d’opérations de sécurité dédiée pour gérer la sécurité de leurs points de terminaison et de leur réseau, d’autres peuvent souhaiter avoir un deuxième ensemble d’yeux pour examiner les alertes dans leur réseau.
 
 
-Pour répondre à cette demande, les fournisseurs de services de sécurité gérée (MSSP) proposent de fournir des services de détection et de réponse gérées (MDR) en plus de Defender for Endpoint. 
+Pour répondre à cette demande, les fournisseurs de services de sécurité managée (MSSP) proposent de fournir des services de détection et de réponse managées (MDR) au-dessus de Defender pour point de terminaison. 
 
 
-Defender pour le point de terminaison ajoute des opportunités de partenariat pour ce scénario et permet aux MSSP d’agir comme suit :
+Defender pour point de terminaison ajoute des opportunités de partenariat pour ce scénario et permet aux MSSP d’effectuer les actions suivantes :
 
-- Accéder au portail de Microsoft 365 Defender du client MSSP
-- Obtenir des notifications par courrier électronique et 
-- Récupérer des alertes via les outils de gestion des événements et des informations de sécurité (SIEM)
+- Accéder au portail Microsoft 365 Defender du client MSSP
+- Recevoir des notifications par e-mail et 
+- Récupérer des alertes par le biais d’outils de gestion des événements et des informations de sécurité (SIEM)
 
 
 ## <a name="related-topic"></a>Rubrique connexe

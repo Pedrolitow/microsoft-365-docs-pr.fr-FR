@@ -7,19 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez la compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 385d981f1f8db22ec7d18c79734bde5a8fc3739d
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 7ce1a44a8101a45bf55007b98cc310c734d26895
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882481"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584957"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
 
@@ -54,7 +54,7 @@ Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour
 
 Les modèles de compréhension de document utilisent la technologie de reconnaissance optique de caractères (OCR) pour analyser les fichiers PDF, les images et les fichiers TIFF. Les fichiers sont analysés lorsque vous entraînez un modèle avec des exemples de fichiers et lorsque vous exécutez le modèle sur des fichiers dans une bibliothèque de documents.
 
-Notez les différences suivantes concernant Microsoft Office fichiers textuels et les fichiers analysés par OCR (PDF, image ou TIFF) :
+Notez les différences suivantes concernant les fichiers texte Microsoft Office et les fichiers analysés par OCR (PDF, image ou TIFF) :
 
 - Fichiers Office : nous avons tronqué à 64 000 caractères (lors de la formation et de l’exécution sur des fichiers dans une bibliothèque de documents).
 

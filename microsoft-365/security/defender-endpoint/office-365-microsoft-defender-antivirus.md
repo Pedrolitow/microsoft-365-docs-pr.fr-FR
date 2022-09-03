@@ -2,7 +2,7 @@
 title: Mieux ensemble - Antivirus Microsoft Defender et Office 365 (y compris OneDrive) - meilleure protection contre les rançongiciels et les cybermenaces
 description: Office 365, qui inclut OneDrive, s’associe à merveille avec Antivirus Microsoft Defender. Pour en savoir plus, lisez cet article.
 keywords: windows defender, antivirus, office 365, onedrive, restauration, ransomware
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,21 +16,21 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e8bdeb114e4a3e6be8981f859d69e8c069517b8a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 757e6e3065895ad844a557e763dc84136f765c69
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418781"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585639"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mieux ensemble : Antivirus Microsoft Defender et Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
@@ -41,7 +41,7 @@ ms.locfileid: "65418781"
 
 Vous savez peut-être déjà que :
 
-- **Antivirus Microsoft Defender protège votre appareil Windows contre les menaces logicielles, telles que les virus, les programmes malveillants et les logiciels espions**. Antivirus Microsoft Defender est votre protection complète et continue, intégrée à Windows 10 et Windows 11, et prête à l’être. [Antivirus Microsoft Defender est votre protection nouvelle génération](./microsoft-defender-antivirus-in-windows-10.md). 
+- **L’antivirus Microsoft Defender protège votre appareil Windows contre les menaces logicielles, telles que les virus, les logiciels malveillants et les logiciels espions**. L’Antivirus Microsoft Defender est votre protection complète et continue, intégrée à Windows 10 et Windows 11, et prête à l’utilisation. [Antivirus Microsoft Defender est votre protection nouvelle génération](./microsoft-defender-antivirus-in-windows-10.md). 
 
 - **Office 365 inclut la protection anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant**. Avec votre abonnement Office 365, vous bénéficiez de courriers et de calendriers Premium, d’applications Office, de 1 To de stockage cloud (via OneDrive) et d’une sécurité avancée sur tous vos appareils. C’est vrai pour les utilisateurs professionnels et domestiques. Et si vous êtes un utilisateur professionnel et que votre organisation utilise Office 365 E5, vous bénéficiez d’une protection encore plus accrue par le biais de Microsoft Defender pour Office 365 [Protéger contre les menaces avec Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 

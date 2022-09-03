@@ -1,8 +1,8 @@
 ---
-title: Événement Stream Microsoft Defender for Endpoint
-description: Découvrez comment configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers des hubs d’événements ou un compte de stockage Azure
-keywords: exportation de données brutes, API de diffusion en continu, API, hubs d’événements, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
-ms.prod: m365-security
+title: Événement stream Microsoft Defender pour point de terminaison
+description: Découvrez comment configurer Microsoft Defender pour point de terminaison pour diffuser en continu des événements Advanced Hunting vers Event Hubs ou un compte de stockage Azure
+keywords: exportation de données brutes, API de streaming, API, hubs d’événements, stockage Azure, compte de stockage, repérage avancé, partage de données brutes
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,27 +13,27 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 94a815a6fc734c8e8e310a17f2e73931f4ffab5c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: eab403c259264879e2207e1acd68131ee5f89957
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300405"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585595"
 ---
-# <a name="raw-data-streaming-api"></a>API de diffusion de données brutes
+# <a name="raw-data-streaming-api"></a>API de streaming de données brutes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Stream Advanced Hunting events to Event Hubs and/or Azure storage account
+## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Diffuser en continu des événements de repérage avancé vers Event Hubs et/ou un compte de stockage Azure
 
-Microsoft Defender pour point de [](../defender/advanced-hunting-overview.md) terminaison prend en charge les événements de diffusion en continu disponibles via le service de recherche avancée sur un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/storage/common/storage-account-overview)
+Microsoft Defender pour point de terminaison prend en charge les événements de diffusion en continu disponibles via [La chasse avancée](../defender/advanced-hunting-overview.md) à un [event Hubs](/azure/event-hubs/) et/ou un [compte de stockage Azure](/azure/storage/common/storage-account-overview).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r4ga]
 
@@ -41,11 +41,11 @@ Microsoft Defender pour point de [](../defender/advanced-hunting-overview.md) te
 
 Rubrique|Description
 :---|:---
-[Diffuser des événements Microsoft Defender for Endpoint vers des Hubs d’événements Azure](raw-data-export-event-hub.md)|En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Defender pour le point de terminaison pour diffuser en continu [la](advanced-hunting-overview.md) recherche avancée vers les hubs d’événements.
-[Événements Stream Defender for Endpoint sur votre compte de stockage Azure](raw-data-export-storage.md)|En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Defender pour le point de terminaison pour diffuser en continu la recherche [avancée](advanced-hunting-overview.md) sur votre compte de stockage Azure.
+[Diffuser en continu des événements Microsoft Defender pour point de terminaison vers Azure Event Hubs](raw-data-export-event-hub.md)|Découvrez comment activer l’API de streaming dans votre locataire et configurer Defender pour point de terminaison pour diffuser [en continu advanced hunting](advanced-hunting-overview.md) vers Event Hubs.
+[Diffuser en continu des événements Defender pour point de terminaison vers votre compte de stockage Azure](raw-data-export-storage.md)|Découvrez comment activer l’API de streaming dans votre locataire et configurer Defender pour point de terminaison pour diffuser en continu [Advanced Hunting](advanced-hunting-overview.md) vers votre compte de stockage Azure.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
-- [Documentation Azure Event Hubs](/azure/event-hubs/)
-- [stockage Azure de compte d’utilisateur](/azure/storage/common/storage-account-overview)
+- [Vue d’ensemble de la chasse avancée](advanced-hunting-overview.md)
+- [documentation Azure Event Hubs](/azure/event-hubs/)
+- [Documentation sur le compte de stockage Azure](/azure/storage/common/storage-account-overview)

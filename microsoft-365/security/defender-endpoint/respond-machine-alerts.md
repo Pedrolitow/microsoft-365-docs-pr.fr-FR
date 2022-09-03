@@ -2,7 +2,7 @@
 title: Effectuer des actions de réponse sur un appareil dans Microsoft Defender pour point de terminaison
 description: Effectuez des actions de réponse sur un appareil, telles que l’isolation des appareils, la collecte d’un package d’investigation, la gestion des balises, l’exécution de l’analyse av et la restriction de l’exécution de l’application.
 keywords: répondre, isoler, isoler l’appareil, collecter le package d’investigation, centre d’actions, restreindre, gérer les balises, analyser av, restreindre l’application
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 65799821ab4d6b2ad8076c68c9991074465d1435
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 6534e43b63e1413d4e6ffba5511f07c5fa385644
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387218"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576272"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 

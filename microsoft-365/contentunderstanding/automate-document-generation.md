@@ -6,19 +6,19 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide de SharePoint Syntex et de Power Automate.
-ms.openlocfilehash: ea8f380551d863a473c086112919cfb042a95594
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 7ed0756b4aaed2ef564dd4796368e25d7f78dd97
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360563"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584897"
 ---
 # <a name="automate-document-generation-with-sharepoint-syntex-and-power-automate-preview"></a>Automatiser la génération de documents avec SharePoint Syntex et Power Automate (préversion)
 

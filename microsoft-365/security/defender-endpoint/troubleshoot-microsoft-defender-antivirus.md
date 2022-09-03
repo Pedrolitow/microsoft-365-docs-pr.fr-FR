@@ -2,7 +2,7 @@
 title: ID d’événement et codes d’erreur de l’Antivirus Microsoft Defender
 description: Rechercher les causes et les solutions pour les ID d’événement et les erreurs de l’Antivirus Microsoft Defender
 keywords: événement, code d’erreur, siem, journalisation, résolution des problèmes, wef, transfert d’événements Windows
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.custom: nextgen
 ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: af697062c7ce7a0d5f3fd4879a622970962c1083
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 7d70d6e39e31619341c3f6041a06fc87d64d5509
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275851"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580528"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 

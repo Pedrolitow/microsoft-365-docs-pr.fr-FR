@@ -9,16 +9,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 description: Microsoft 365 aide les organisations énergétiques à évoluer vers une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 03c4c3c6228239fa97d9d15abe47d02b35d2aee6
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
-ms.translationtype: HT
+ms.openlocfilehash: f0e4bdf1111dfd530a5cba71484ea90449ea73c6
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285062"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580484"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Principales considérations en matière de conformité et de sécurité pour le secteur de l’énergie
 
@@ -233,7 +233,7 @@ Une menace courante pour les entreprises est l'exfiltration de données, ou l'op
 
 L’activation d’employés disposant d’outils de collaboration en ligne accessibles en tout lieu, peut avoir un risque pour l’organisation. Les employés peuvent, par inadvertance ou par malveillance, divulguer des données à des attaquants ou à des concurrents. Ils peuvent également exfiltrer des données à des fins personnelles ou utiliser celles-ci auprès d’un futur employeur. Ces scénarios présentent des risques sérieux pour les organisations du point de vue de la sécurité et de la conformité. L’identification de ces risques lorsqu’ils se produisent et leur atténuation rapide nécessite des outils intelligents pour la collecte de données et la collaboration au sein des différents services tels que les services juridiques, les ressources humaines et la sécurité des informations.
 
-La [Gestion des risques internes de Microsoft Purview](/microsoft-365/compliance/insider-risk-management) est une solution de conformité qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur des activités malveillantes et accidentelles au sein de votre organisation. Les stratégies de risque interne vous permettent de définir les types de risques à identifier et à détecter au sein de votre organisation, notamment en agissant sur les cas et en réaffectant les cas à Microsoft eDiscovery (Premium) si nécessaire. Les analystes des risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
+[La gestion des risques liés aux initiés Microsoft Purview](/microsoft-365/compliance/insider-risk-management) est une solution de conformité qui contribue à minimiser les risques internes en vous permettant de détecter, d'enquêter et d'agir sur les activités malveillantes et involontaires au sein de votre organisation. Les stratégies relatives aux risques d'initiés vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, y compris les mesures à prendre et l'escalade des cas vers Microsoft eDiscovery (Premium) si nécessaire. Les analystes des risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
 
 Par exemple, la gestion des risques internes peut mettre en corrélation les signaux des appareils d’un utilisateur (par exemple, copier des fichiers sur un lecteur USB ou envoyer un e-mail à un compte de courrier personnel) avec les activités de services en ligne (telles que la messagerie Office 365, SharePoint Online, Microsoft Teams, OneDrive Entreprise) pour identifier les modèles d’exfiltration de données. Cet outil peut également corréler ces activités avec les employés quittant une organisation, ce qui est un modèle de comportement courant associé à l’exfiltration des données. Il peut détecter plusieurs activités et comportements potentiellement risqués au fil du temps. Lorsque des modèles courants émergent, ils peuvent déclencher des alertes et aider les examinateurs à se concentrer sur les activités clés afin de vérifier une violation de stratégie avec un haut niveau de confiance. La gestion des risques internes peut également masquer les données des enquêteurs pour vous aider à respecter les réglementations en matière de confidentialité des données tout en continuant à exposer les activités clés qui les aident à effectuer efficacement des investigations. Lorsqu’il est prêt, il permet aux enquêteurs de regrouper et d’envoyer en toute sécurité les données d’activité clés aux services des ressources humaines et juridiques en suivant des flux de travail d’escalade communs pour soulever des cas d’action corrective.
 

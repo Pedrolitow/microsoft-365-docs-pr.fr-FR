@@ -4,12 +4,12 @@ ms.reviewer: ''
 description: Spécialistes des menaces Microsoft fournit une couche supplémentaire d’expertise pour Microsoft Defender pour point de terminaison.
 keywords: service de repérage des menaces managées, repérage des menaces managées, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft, notification d’attaque de point de terminaison, notification d’attaque de point de terminaison, experts Ask Defender
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,13 +17,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 907f69bc081033002c45cd37b690e174d0b530ed
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 304c53b02846db6d08e84a7e51493f6f935193e8
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323957"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581765"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -69,6 +69,8 @@ Les notifications d’attaque de point de terminaison (précédemment appelées 
 - Étendue de compromission et autant de contexte que possible rapidement pour permettre une réponse SOC rapide.
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Spécialistes des menaces Microsoft - Experts à la demande
+> [!NOTE]
+> Experts à la demande n’est pas un service de réponse aux incidents de sécurité. Il vise à mieux comprendre les menaces complexes qui affectent votre organisation. Collaborez avec votre propre équipe de réponse aux incidents de sécurité pour résoudre les problèmes urgents de réponse aux incidents de sécurité. Si vous n’avez pas votre propre équipe de réponse aux incidents de sécurité et que vous souhaitez obtenir l’aide de Microsoft, créez une demande de support dans le [Hub De services Premier](/services-hub/).
 
 Les clients peuvent faire appel à nos experts en sécurité directement à partir de Microsoft 365 Defender portail pour obtenir leur réponse. Les experts fournissent des insights nécessaires pour mieux comprendre les menaces complexes qui affectent votre organisation, qu’il s’agit de demandes d’alerte, d’appareils potentiellement compromis, de la cause racine d’une connexion réseau suspecte ou d’informations supplémentaires sur les menaces concernant les campagnes de menaces persistantes avancées en cours. Avec cette fonctionnalité, vous pouvez :
 

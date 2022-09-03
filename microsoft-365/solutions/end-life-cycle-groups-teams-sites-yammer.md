@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Options de fin de cycle de vie pour les groupes, les équipes et Yammer.
-ms.openlocfilehash: 8648670728cee92916ab3ace07913cab6b0ecb62
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: a5240f0f9e38fe6f4a044ffa782cb7f536db7ffc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020569"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584703"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Options de fin de cycle de vie pour les groupes, les équipes et Yammer
 
@@ -39,7 +39,7 @@ Le tableau suivant décrit les services associés aux groupes et aux équipes, a
 |Outlook|Courrier et calendrier|
 |Planificateur|État du projet et informations sur la tâche|
 |Power Automate|Flux de travail|
-|Power BI|Données, rapports et tableaux de bord|
+|Power BI|Données, rapports et tableaux de bord|
 |Projet sur le web|Plans de projet|
 |Feuille de route|Feuilles de route|
 |SharePoint|Fichiers, listes, données wiki du canal Teams|
@@ -186,7 +186,7 @@ Si le flux doit continuer à fonctionner, tous les propriétaires peuvent ajoute
 
 Si le flux n’a pas besoin de continuer à fonctionner, mais qu’il doit être conservé pour une utilisation future potentielle, il peut être [exporté en tant que fichier](https://flow.microsoft.com/blog/import-export-bap-packages/) et importé à nouveau ultérieurement.
 
-## <a name="power-bi"></a>Power BI
+## <a name="power-bi"></a>Power BI
 
 Les données et les espaces de travail Power BI peuvent fonctionner indépendamment des groupes et des équipes, et comme d’autres charges de travail offrent différentes façons d’être désintégrés.
 Les espaces de travail classiques dans Power BI sont associés à un groupe Microsoft 365, tandis que les espaces de travail modernes ne le sont pas et peuvent simplement partager leur contenu avec le groupe (similaire à un flux).

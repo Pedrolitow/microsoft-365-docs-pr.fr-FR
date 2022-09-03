@@ -3,7 +3,7 @@ title: Résoudre des problèmes de performance
 description: Résolvez les problèmes d’utilisation élevée du processeur liés au service de protection en temps réel dans Microsoft Defender pour point de terminaison.
 keywords: résolution des problèmes, performances, utilisation élevée de l’UC, utilisation élevée du processeur, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Antivirus Microsoft Defender
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fbcad753d88b3ead3c6a9b37330f29b1b1fbb7a9
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 3f8e259a1f1c98d545bf839e6da94a92ee7af51e
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798102"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580312"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -70,7 +70,7 @@ Dans **MPLog-xxxxxxxx-xxxxxx.log**, vous pouvez trouver les informations d’imp
 |---|---|
 |ProcessImageName|Nom de l’image de processus|
 |TotalTime|Durée cumulée en millisecondes consacrée aux analyses des fichiers consultés par ce processus|
-|Count|Nombre de fichiers analysés accessibles par ce processus|
+|Compte|Nombre de fichiers analysés accessibles par ce processus|
 |MaxTime|Durée en millisecondes de l’analyse unique la plus longue d’un fichier accessible par ce processus|
 |MaxTimeFile|Chemin d’accès au fichier par ce processus pour lequel l’analyse la plus longue de `MaxTime` la durée a été enregistrée|
 |EstimatedImpact|Pourcentage de temps passé dans les analyses pour les fichiers consultés par ce processus hors de la période pendant laquelle ce processus a connu une activité d’analyse|

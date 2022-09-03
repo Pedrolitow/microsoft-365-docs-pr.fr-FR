@@ -2,7 +2,7 @@
 title: Utiliser la protection réseau pour empêcher les connexions Linux à des sites incorrects
 description: Protéger votre réseau en empêchant les utilisateurs Linux d’accéder à des adresses réseau malveillantes et suspectes connues
 keywords: Protection réseau, exploits Linux, site web malveillant, ip, domaine, domaines, commande et contrôle, SmartScreen, notification toast
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,18 +13,18 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: a05ddff1ef6c9689143c36cde3c9d0719c7dab10
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: ee3b78a3cdb03cb652478f68f965c43d022f8633
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497795"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581117"
 ---
 # <a name="network-protection-for-linux"></a>Protection réseau pour Linux
 

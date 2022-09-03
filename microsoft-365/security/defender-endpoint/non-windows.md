@@ -3,7 +3,7 @@ title: Microsoft Defender pour point de terminaison pour les plateformes non Win
 description: En savoir plus sur les fonctionnalités de Microsoft Defender pour point de terminaison pour les plateformes non Windows
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365solution-evalutatemtp
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4e141b9764a1e677cb252d59c7ea6e5e555ccb84
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.subservice: mde
+ms.openlocfilehash: 4cc1f5b91ef5314d52e9b2945c5923a86ee281dc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099816"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580682"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 

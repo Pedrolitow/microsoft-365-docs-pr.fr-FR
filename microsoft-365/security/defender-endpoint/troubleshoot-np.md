@@ -2,7 +2,7 @@
 title: Résoudre les problèmes liés à la protection réseau
 description: Ressources et exemple de code pour résoudre les problèmes liés à la protection réseau dans Microsoft Defender pour point de terminaison.
 keywords: dépannage, erreur, correctif, windows defender, par exemple, asr, règles, hanches, résolution des problèmes, audit, exclusion, faux positif, cassé, blocage, Microsoft Defender pour point de terminaison
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fbb3a9e038dcd9f342065d538762b41c0673f7e6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6b901bf480bda34318042cefb2f8edc8b1f920fb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783158"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579906"
 ---
 # <a name="troubleshoot-network-protection"></a>Résoudre les problèmes de protection réseau
 
@@ -29,7 +29,7 @@ ms.locfileid: "64783158"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -52,8 +52,8 @@ La protection réseau fonctionne uniquement sur les appareils avec les condition
 
 > [!div class="checklist"]
 >
-> - Les points de terminaison exécutent Windows 10 Professionnel ou Enterprise édition, version 1709 ou ultérieure.
-> - Les points de terminaison utilisent Antivirus Microsoft Defender comme seule application de protection antivirus. [Découvrez ce qui se passe lorsque vous utilisez une solution antivirus non Microsoft](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Les points de terminaison exécutent Windows 10 Professionnel ou l’édition Enterprise, version 1709 ou ultérieure.
+> - Les points de terminaison utilisent l’Antivirus Microsoft Defender comme seule application de protection antivirus. [Découvrez ce qui se passe lorsque vous utilisez une solution antivirus non Microsoft](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > - [La protection en temps réel](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) est activée.
 > - [La protection fournie par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) est activée.
 > - Le mode Audit n’est pas activé. Utilisez [stratégie de groupe](enable-network-protection.md#group-policy) pour définir la règle sur **Désactivé** (valeur : **0**).
@@ -90,7 +90,7 @@ Les options d’exclusion actuelles sont les suivantes :
 
 1. Configuration d’un indicateur d’autorisation personnalisé.
 2. Utilisation d’exclusions IP : `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
-3. À l’exclusion d’un processus entier. Pour plus d’informations, consultez [Antivirus Microsoft Defender exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
+3. À l’exclusion d’un processus entier. Pour plus d’informations, consultez [les exclusions de l’Antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md). 
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Collecter des données de diagnostic pour les soumissions de fichiers
 
@@ -124,7 +124,7 @@ Set-MpPreference -ProxyServer <proxy IP address: Port>
 Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
-Vous pouvez configurer la clé de Registre à l’aide de PowerShell, Microsoft Endpoint Manager ou stratégie de groupe. Voici quelques ressources pour vous aider :
+Vous pouvez configurer la clé de Registre à l’aide de PowerShell, microsoft Endpoint Manager ou stratégie de groupe. Voici quelques ressources pour vous aider :
 
 - [Utilisation des clés de Registre](/powershell/scripting/samples/working-with-registry-keys)
 - [Configurer les paramètres client personnalisés pour Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)

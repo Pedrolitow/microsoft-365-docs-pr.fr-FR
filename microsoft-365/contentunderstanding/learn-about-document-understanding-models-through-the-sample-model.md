@@ -7,19 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.custom: intro-get-started
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les modèles de présentation des documents via le modèle d’échantillon.
-ms.openlocfilehash: 210d5865a6e3208faff16fe1ce14748ee66d63c8
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: d23009233f4eb9b5dba9fc7e38c152b6170a85b4
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916202"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580356"
 ---
 # <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Importer un exemple de modèle de compréhension de document pour Microsoft SharePoint Syntex
 

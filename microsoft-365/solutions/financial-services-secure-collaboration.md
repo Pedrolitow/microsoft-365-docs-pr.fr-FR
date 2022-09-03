@@ -7,17 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Découvrez comment les établissements financiers peuvent gérer la conformité de la sécurité financière et collaborer efficacement à l’aide de Microsoft 365 et Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: d64d5e021d7d196132198dd9ddf5ae7a9d707037
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
-ms.translationtype: HT
+ms.openlocfilehash: f78013491e25bf715bbcd08cc2221bb0bbca48fd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285283"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577362"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 

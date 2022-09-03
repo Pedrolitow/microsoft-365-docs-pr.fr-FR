@@ -1,9 +1,9 @@
 ---
-title: Surveillance de la sécurité de navigation web dans Microsoft Defender pour le point de terminaison
-description: Utiliser la protection web dans Microsoft Defender pour le point de terminaison pour surveiller la sécurité de navigation web
-keywords: protection web, protection contre les menaces web, navigation web, surveillance, rapports, cartes, liste de domaines, sécurité, hameçonnage, programme malveillant, attaque, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web
+title: Surveillance de la sécurité de navigation web dans Microsoft Defender pour point de terminaison
+description: Utiliser la protection web dans Microsoft Defender pour point de terminaison pour surveiller la sécurité de la navigation web
+keywords: protection web, protection contre les menaces web, navigation web, surveillance, rapports, cartes, liste de domaines, sécurité, hameçonnage, programmes malveillants, exploit, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: cf702dbcbec1bf9141827610c1304a0f19e13b90
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 1482ca9587c5e09c33b909029fd2697745768d3d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475870"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578463"
 ---
-# <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de navigation web
+# <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de la navigation web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,40 +33,40 @@ ms.locfileid: "64475870"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protection Web vous permet de surveiller la sécurité de navigation web de votre organisation via des rapports sous Rapports **> protection Web** dans le portail Microsoft 365 Defender web. Le rapport contient des cartes qui fournissent des statistiques sur la détection des menaces web.
+La protection web vous permet de surveiller la sécurité de la navigation web de votre organisation par le biais de rapports sous **Rapports > protection web** dans le portail Microsoft 365 Defender. Le rapport contient des cartes qui fournissent des statistiques de détection des menaces web.
 
-- Détections de protection contre les **menaces web** au fil du temps : cette carte tendance affiche le nombre de menaces web détectées par type au cours de la période sélectionnée (30 derniers jours, 3 derniers mois, 6 derniers mois)
+- **Détections de protection contre les menaces web au fil du temps** : cette carte de tendance affiche le nombre de menaces web détectées par type pendant la période sélectionnée (30 derniers jours, 3 derniers mois, 6 derniers mois)
 
-  :::image type="content" source="images/wtp-blocks-over-time.png" alt-text="Carte montrant les détections de protection contre les menaces web au fil du temps" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" source="images/wtp-blocks-over-time.png" alt-text="Carte affichant les détections de protection contre les menaces web au fil du temps" lightbox="images/wtp-blocks-over-time.png":::
 
-- **Résumé de la protection** contre les menaces web : cette carte affiche le nombre total de détections de menaces web au cours des 30 derniers jours, montrant la répartition entre les différents types de menaces web. La sélection d’une tranche ouvre la liste des domaines qui ont été trouvés avec des sites web malveillants ou indésirables.
+- **Résumé de la protection contre les menaces web** : cette carte affiche le nombre total de détections de menaces web au cours des 30 derniers jours, montrant la distribution entre les différents types de menaces web. La sélection d’une tranche ouvre la liste des domaines qui ont été trouvés avec des sites web malveillants ou indésirables.
 
-  :::image type="content" source="images/wtp-summary.png" alt-text="Carte montrant le résumé de la protection contre les menaces web"  lightbox="images/wtp-summary.png":::
+  :::image type="content" source="images/wtp-summary.png" alt-text="Carte affichant le résumé de la protection contre les menaces web"  lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
-> La réflexion d’un bloc dans les cartes ou la liste de domaines peut prendre jusqu’à 12 heures.
+> Il peut prendre jusqu’à 12 heures avant qu’un bloc ne soit reflété dans les cartes ou la liste de domaines.
 
 ## <a name="types-of-web-threats"></a>Types de menaces web
 
-La protection web classe les sites web malveillants et indésirables comme :
+La protection web classe les sites web malveillants et indésirables comme suit :
 
-- **Hameçonnage :** sites web qui contiennent des formulaires web usurpés et d’autres mécanismes de hameçonnage conçus pour leurre les utilisateurs à divulguer des informations d’identification et d’autres informations sensibles
-- **Malveillant :** sites web qui hébergent des programmes malveillants et du code d’exploitation
-- **Indicateur personnalisé** : sites web dont vous avez ajouté les URL ou les domaines à votre liste d’indicateurs personnalisés [pour le](manage-indicators.md) blocage
+- **Hameçonnage** : sites web contenant des formulaires web usurpés et d’autres mécanismes de hameçonnage conçus pour inciter les utilisateurs à divulguer des informations d’identification et d’autres informations sensibles
+- **Malveillants** : sites web hébergeant des programmes malveillants et exploitant du code
+- **Indicateur personnalisé** : sites web dont vous avez ajouté des URL ou des domaines à votre [liste d’indicateurs personnalisés](manage-indicators.md) à des fins de blocage
 
 ## <a name="view-the-domain-list"></a>Afficher la liste des domaines
 
-Sélectionnez une catégorie de menaces web spécifique dans la carte **récapitulative de la protection web** contre les **menaces** pour ouvrir la page Domaines. Cette page affiche la liste des domaines de cette catégorie de menaces. La page fournit les informations suivantes pour chaque domaine :
+Sélectionnez une catégorie de menace web spécifique dans la carte **récapitulative** de la protection contre **les menaces** web pour ouvrir la page Domaines. Cette page affiche la liste des domaines sous cette catégorie de menace. La page fournit les informations suivantes pour chaque domaine :
 
 - **Nombre d’accès** : nombre de demandes d’URL dans le domaine
-- **Blocs :** nombre de fois que les demandes ont été bloquées
-- **Tendance d’accès** : changement du nombre de tentatives d’accès
-- **Catégorie de menace** : type de menace web
-- **Appareils** : nombre d’appareils avec tentatives d’accès
+- **Blocs** : nombre de fois où les demandes ont été bloquées
+- **Tendance d’accès** : modification du nombre de tentatives d’accès
+- **Catégorie de menace** - type de menace web
+- **Appareils** : nombre d’appareils ayant des tentatives d’accès
 
-Sélectionnez un domaine pour afficher la liste des périphériques qui ont tenté d’accéder aux URL de ce domaine et la liste des URL.
+Sélectionnez un domaine pour afficher la liste des appareils qui ont tenté d’accéder aux URL de ce domaine et la liste des URL.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble de la protection web](web-protection-overview.md)
 - [Filtrage du contenu web](web-content-filtering.md)

@@ -1,35 +1,35 @@
 ---
-title: Travailler avec des explications de modèle de présentation de document dans PowerShell
+title: Utiliser des explications de modèle de compréhension de document dans PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Découvrez comment travailler avec SharePoint Syntex des explications de modèle dans PowerShell.
-ms.openlocfilehash: 12bdb4c7019b34ee7d2c1f4315673d78cbfb7ba1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Découvrez comment utiliser SharePoint Syntex explication du modèle de compréhension de document dans PowerShell.
+ms.openlocfilehash: f81281e28977e842188e1dcc02906eedaad09738
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525693"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578353"
 ---
-# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Travailler avec des explications de modèle de présentation de document dans PowerShell
+# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Utiliser des explications de modèle de compréhension de document dans PowerShell
 
 > [!IMPORTANT]
-> Les SharePoint Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les aide. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
+> Les applets de commande PowerShell SharePoint Syntex et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
 Les modèles d’explication personnalisés sont stockés dans une liste dans un centre de contenu. Étant donné que ces explications sont stockées en tant qu’éléments de liste, PowerShell peut être utilisé pour interagir avec eux.
 
-## <a name="list-saved-explanations"></a>Liste des explications enregistrées
+## <a name="list-saved-explanations"></a>Répertorier les explications enregistrées
 
-Cet exemple montre comment afficher tous les modèles d’explication personnalisés qui ont été enregistrés dans un centre de contenu spécifique.
+Cet exemple montre comment afficher tous les modèles d’explication personnalisés qui ont été enregistrés sur un centre de contenu spécifique.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -106,7 +106,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## <a name="create-a-regular-expression-explanation"></a>Créer une explication d’expression régulière
 
-Cet exemple montre comment créer un modèle d’explication d’expression régulière personnalisé.
+Cet exemple montre comment créer un modèle d’explication d’expression régulière personnalisée.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"

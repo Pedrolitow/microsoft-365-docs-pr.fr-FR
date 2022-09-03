@@ -4,7 +4,7 @@ description: Utilisez le mode de résolution des problèmes Microsoft Defender p
 keywords: antivirus, résolution des problèmes, mode de résolution des problèmes, protection contre les falsifications, compatibilité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c4824c603fda14d95487abdbc4f3b4949fdf0e97
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.subservice: mde
+ms.openlocfilehash: aa942a8751986ea7b9ed8e64c7772c9d62000375
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139383"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583063"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Scénarios de mode de dépannage dans Microsoft Defender pour point de terminaison 
 
@@ -33,19 +33,19 @@ ms.locfileid: "66139383"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Microsoft Defender pour point de terminaison mode de résolution des problèmes vous permet de résoudre les différents Antivirus Microsoft Defender fonctionnalités en les activant à partir de l’appareil et en testant différents scénarios, même s’ils sont contrôlés par la stratégie d’organisation. Le mode de résolution des problèmes est désactivé par défaut et vous oblige à l’activer pour un appareil (et/ou un groupe d’appareils) pendant une durée limitée. Notez qu’il s’agit exclusivement d’une fonctionnalité d’entreprise et nécessite un accès Microsoft 365 Defender.
+Microsoft Defender pour point de terminaison mode de résolution des problèmes vous permet de dépanner différentes fonctionnalités de l’Antivirus Microsoft Defender en les activant à partir de l’appareil et en testant différents scénarios, même s’ils sont contrôlés par la stratégie d’organisation. Le mode de résolution des problèmes est désactivé par défaut et vous oblige à l’activer pour un appareil (et/ou un groupe d’appareils) pendant une durée limitée. Notez qu’il s’agit exclusivement d’une fonctionnalité d’entreprise et nécessite un accès Microsoft 365 Defender.
 
 ## <a name="scenario-1-unable-to-install-application"></a>Scénario 1 : Impossible d’installer l’application
 
-Si vous souhaitez installer une application mais recevez un message d’erreur indiquant que Antivirus Microsoft Defender et la protection contre les falsifications sont activées, suivez les étapes ci-dessous pour résoudre le problème.
+Si vous souhaitez installer une application mais recevez un message d’erreur indiquant que l’Antivirus Microsoft Defender et la protection contre les falsifications sont activés, suivez les étapes ci-dessous pour résoudre le problème.
 
 1. Demandez à l’administrateur de sécurité d’activer le mode de résolution des problèmes. Vous recevrez une notification de Sécurité Windows une fois le mode de résolution des problèmes démarré.  
 
-2. Connecter à l’appareil (à l’aide de Terminal Services par exemple) avec des autorisations d’administrateur local.  
+2. Connectez-vous à l’appareil (à l’aide de Terminal Services par exemple) avec des autorisations d’administrateur local.  
 
 3. Démarrer le moniteur de processus (ProcMon). Consultez les étapes décrites dans [Résoudre les problèmes de performances liés à la protection en temps réel](troubleshoot-performance-issues.md).  
 
-4. Accédez à **Windows sécurité** > **Menaces & protection** >  antivirus **Gérer les paramètres****De protection** >  contre les falsifications  > **désactivée**.  
+4. Accédez à **Menace de sécurité** >  Windows **& protection** >  antivirus **Gérer les paramètres****de protection** >  contre les falsifications  > **désactivés**.  
 
 5. Lancez une invite de commandes PowerShell avec élévation de privilèges et désactivez RTP. 
 
@@ -81,7 +81,7 @@ Pour plus d’informations sur Set-MpPreference préférences de configuration d
 
 ## <a name="scenario-3-application-taking-longer-to-perform-an-action"></a>Scénario 3 : L’application prend plus de temps pour effectuer une action
 
-Lorsque Antivirus Microsoft Defender protection en temps réel est activée, l’application prend beaucoup de temps pour effectuer des tâches de base. Pour désactiver la protection en temps réel et résoudre le problème, suivez les étapes ci-dessous. 
+Lorsque la protection en temps réel de l’Antivirus Microsoft Defender est activée, l’application prend beaucoup de temps pour effectuer des tâches de base. Pour désactiver la protection en temps réel et résoudre le problème, suivez les étapes ci-dessous. 
 
 1. Demandez à l’administrateur de sécurité d’activer le mode de résolution des problèmes sur l’appareil. 
 
@@ -95,9 +95,9 @@ Lorsque Antivirus Microsoft Defender protection en temps réel est activée, l�
 
 5. Après avoir désactivé RTP, vérifiez si l’application est lente. 
 
-## <a name="scenario-4-microsoft-office-plugin-blocked-by-attack-surface-reduction"></a>Scénario 4 : Microsoft Office plug-in bloqué par la réduction de la surface d’attaque
+## <a name="scenario-4-microsoft-office-plugin-blocked-by-attack-surface-reduction"></a>Scénario 4 : Plug-in Microsoft Office bloqué par la réduction de la surface d’attaque
 
-La réduction de la surface d’attaque (ASR) n’autorise pas Microsoft Office plug-in à fonctionner correctement, car **empêcher toutes les applications Office de créer des processus enfants** est défini sur le mode bloquer. 
+La réduction de la surface d’attaque (ASR) ne permet pas au plug-in Microsoft Office de fonctionner correctement, car **empêcher toutes les applications Office de créer des processus enfants** est configuré pour bloquer le mode. 
 
 1. Activez le mode de résolution des problèmes et connectez-vous à l’appareil. 
 

@@ -2,7 +2,7 @@
 title: Mettre à jour l’API d’entité de machine
 description: Découvrez comment mettre à jour les balises de machine à l’aide de cette API. Vous pouvez mettre à jour les balises et les propriétés devicevalue.
 keywords: api, api graphe, api prises en charge, get, alert, information, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 5674f9b8038bba646d86b02fe775525ad433dcac
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a7f24d69d8be5ce996c902fa00b6fdde05c6905d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330668"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577010"
 ---
 # <a name="update-machine"></a>Mettre à jour l’ordinateur 
 

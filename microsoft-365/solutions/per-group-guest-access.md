@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,14 +16,14 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment empêcher l’ajout d’invités à un groupe spécifique
-ms.openlocfilehash: f050011427ceeeff8347c2acd5b6d3fbbcf11bec
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 366acaa609dd8ef3c5f500c87c27b2a637d62bec
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285311"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584020"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Empêcher l’ajout d’invités à un groupe Microsoft 365 spécifique ou à une équipe Microsoft Teams
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Empêcher l’ajout d’invités à un groupe Microsoft 365 spécifique ou à une équipe Microsoft Teams spécifique
 
 Si vous souhaitez autoriser l’accès invité à la plupart des groupes et des équipes, mais que vous souhaitez empêcher l’accès invité, vous pouvez bloquer l’accès invité pour des groupes et des équipes individuels. (Le blocage de l’accès invité à une équipe est effectué en bloquant l’accès invité au groupe associé.) Cela empêche l’ajout de nouveaux invités, mais ne supprime pas les invités qui sont déjà dans le groupe ou l’équipe.
 
@@ -33,7 +33,7 @@ Si vous utilisez des étiquettes de confidentialité dans votre organisation, no
 
 Vous pouvez également empêcher l’ajout de nouveaux invités à des groupes individuels à l’aide de PowerShell. (N’oubliez pas que le site SharePoint associé de l’équipe dispose de [contrôles de partage d’invités distincts](/sharepoint/change-external-sharing-site).)
 
-Vous devez utiliser la préversion de [Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2) (nom de module **AzureADPreview**) pour modifier le paramètre d’accès invité au niveau du groupe :
+Vous devez utiliser la préversion [d’Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2) (nom du module **AzureADPreview**) pour modifier le paramètre d’accès invité au niveau du groupe :
 
 - Si vous n’avez jamais installé une version du module Azure AD PowerShell, consultez [l’installation du module Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) et suivez les instructions d’installation de la préversion publique.
 
@@ -58,7 +58,7 @@ $groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
 New-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy
 ```
 
-Pour vérifier vos paramètres, exécutez la commande suivante :
+Pour vérifier vos paramètres, exécutez la commande suivante :
 
 ```PowerShell
 Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
@@ -113,6 +113,6 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Gérer l’appartenance à un groupe dans le Centre d'administration Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[Azure Active Directory révisions d’accès](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Révisions d’accès Azure Active Directory](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)

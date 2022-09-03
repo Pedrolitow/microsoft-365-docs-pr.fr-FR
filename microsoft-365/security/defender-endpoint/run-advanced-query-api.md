@@ -3,7 +3,7 @@ title: API de recherche avancée de menaces
 ms.reviewer: ''
 description: Apprenez à utiliser l’API de chasse avancée pour exécuter des requêtes avancées sur Microsoft Defender pour point de terminaison. Découvrez les limitations et consultez un exemple.
 keywords: api, api prises en charge, repérage avancé, requête
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6a686892a0a0e3753038c9296a14a4eaa36cbd3f
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: fc24f1f1d26dad083067d5b0089b7bf22c5e9567
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560260"
+ms.locfileid: "67585551"
 ---
 # <a name="advanced-hunting-api"></a>API de chasse avancée
 

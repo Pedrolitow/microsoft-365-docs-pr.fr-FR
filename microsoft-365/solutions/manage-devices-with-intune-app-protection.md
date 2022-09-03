@@ -12,7 +12,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Configurez la protection des applications mobiles avec des stratégies de protection des applications (APP) pour empêcher la copie et le collage de données d’entreprise spécifiées dans d’autres applications.
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 829d650b6d815a84203e43e7256442bfee6bac0d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: 3288f0d472a53d3281110ae29b7eea6061c10050
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749284"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584086"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>Étape 1. Implémenter des stratégies de protection des applications
 

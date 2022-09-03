@@ -2,7 +2,7 @@
 title: Client Windows d’intégration de Defender pour point de terminaison
 description: Intégrer le client Windows.
 keywords: intégration, Microsoft Defender pour point de terminaison intégration, sccm, stratégie de groupe, mdm, script local, test de détection
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 60b7e78902dff29278e3fe960e016e38c10cf296
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.subservice: mde
+ms.openlocfilehash: 32a126d8b108139707605a57e9466052e93a354d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822155"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581731"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-client"></a>Client Windows d’intégration de Defender pour point de terminaison
 
@@ -29,7 +29,7 @@ ms.locfileid: "66822155"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Protection contre la perte de données (DLP) de point de terminaison](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [Gestion des risques internes](/microsoft-365/compliance/insider-risk-management)
 

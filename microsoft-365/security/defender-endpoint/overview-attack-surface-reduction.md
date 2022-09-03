@@ -3,7 +3,7 @@ title: Comprendre et utiliser la réduction de la surface d’attaque (ASR)
 ms.reviewer: ''
 description: Découvrez les fonctionnalités de réduction de la surface d’attaque de Microsoft Defender pour point de terminaison.
 keywords: asr, réduction de la surface d’attaque, règles de réduction de la surface d’attaque, Microsoft Defender pour point de terminaison, microsoft defender, antivirus, av, windows defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,17 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: bbed1512f5d51860f8f24ea29c2b0f73cbe7d9eb
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 08143912df1a8607b616cadfb4df0942a0054343
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787185"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582425"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -73,9 +73,9 @@ Pour configurer la réduction de la surface d’attaque dans votre environnement
 
 9. Configurez votre pare-feu réseau.
 
-   1. Obtenez une vue d’ensemble des [Pare-feu Windows Defender avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
-   2. Utilisez le [guide de conception Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour décider de la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
-   3. Utilisez le [guide de déploiement Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) pour configurer le pare-feu de votre organisation avec une sécurité avancée.
+   1. Obtenez une vue d’ensemble du [pare-feu Windows Defender avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Utilisez le [guide de conception du pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour décider de la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
+   3. Utilisez le [guide de déploiement du pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) pour configurer le pare-feu de votre organisation avec une sécurité avancée.
 
 > [!TIP]
 > Dans la plupart des cas, lorsque vous configurez des fonctionnalités de réduction de la surface d’attaque, vous pouvez choisir parmi plusieurs méthodes :
@@ -249,7 +249,7 @@ Vous pouvez accéder à ces événements dans la visionneuse d’événements Wi
 |Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|3|Ne pas autoriser l’audit des processus enfants|
 |Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|4|Ne pas autoriser le blocage des processus enfants|
 |Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|5|Bloquer l’audit des images à faible intégrité|
-|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|6 |Bloquer le blocage des images à faible intégrité|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|6|Bloquer le blocage des images à faible intégrité|
 |Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|7 |Bloquer l’audit des images distantes|
 |Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|8 |Bloquer le blocage des images distantes|
 |Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|9 |Désactiver l’audit des appels système win32k|

@@ -2,7 +2,7 @@
 title: Examiner les alertes dans Microsoft Defender pour point de terminaison
 description: Passez en revue les informations d’alerte, y compris un récit d’alerte visualisé et des détails pour chaque étape de la chaîne.
 keywords: incidents, incidents, machines, appareils, utilisateurs, alertes, alertes, investigation, graphe, preuves
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.pagetype: security
 f1.keywords:
 - NOCSH
@@ -16,13 +16,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020
-ms.technology: mde
-ms.openlocfilehash: 76503c180dfdd2314254efc9315235c0802ab7f8
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.subservice: mde
+ms.openlocfilehash: 079dfd696e630246a332cdf1457ed4134c101e89
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607527"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575766"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour point de terminaison
 

@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: En savoir plus sur l’utilisation et l’enregistrement des modèles d’explication dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 87d151a3dc0863b880515abb6ee59d3691d9e4c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 27c25bf9520f64dc6c91afe1ea736af8e784e74f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172238"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578331"
 ---
 # <a name="use-explanation-templates-in-microsoft-sharepoint-syntex"></a>Utiliser des modèles d’explication dans Microsoft SharePoint Syntex
 

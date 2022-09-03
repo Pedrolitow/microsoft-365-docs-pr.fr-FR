@@ -2,7 +2,7 @@
 title: Configurer Microsoft Defender pour point de terminaison déploiement
 description: Découvrez comment configurer le déploiement pour Microsoft Defender pour point de terminaison
 keywords: déployer, configurer, validation des licences, configuration du locataire, configuration réseau
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,22 +15,23 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+- highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bae66223494d8de98737516cef1a2c407d7d1a6a
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.subservice: mde
+ms.openlocfilehash: abfa6200a1250ff9fda8cf30c6106a39eff4f25b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783529"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584835"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour point de terminaison déploiement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -48,16 +49,16 @@ Dans ce scénario de déploiement, vous serez guidé dans les étapes suivantes 
 
 - Validation des licences
 - Configuration du locataire
-- Configuration du réseau
+- Configuration réseau
 
 > [!NOTE]
 > Pour vous guider tout au long d’un déploiement classique, ce scénario couvre uniquement l’utilisation de Microsoft Endpoint Configuration Manager. Defender pour point de terminaison prend en charge l’utilisation d’autres outils d’intégration, mais ne couvre pas ces scénarios dans le guide de déploiement. Pour plus d’informations, consultez [Intégrer des appareils à Microsoft Defender pour point de terminaison](onboard-configure.md).
 
 ## <a name="check-license-state"></a>Vérifier l’état de la licence
 
-Vous pouvez vérifier l’état de la licence et si elle a été correctement approvisionnée par le biais du Centre d’administration ou du **portail Microsoft Azure**.
+Vous pouvez vérifier l’état de la licence et vérifier si elle a été correctement approvisionnée par le biais du Centre d’administration ou du **Portail Azure Microsoft**.
 
-1. Pour afficher vos licences, accédez au **portail Microsoft Azure** et accédez à la section des [licences du portail Microsoft Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. Pour afficher vos licences, accédez à **Microsoft Portail Azure** et accédez à la [section licence Microsoft Portail Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
    :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="Page Licences Azure" lightbox="images/atp-licensing-azure-portal.png":::
 
@@ -73,7 +74,7 @@ Pour accéder aux licences approvisionnées dans votre entreprise et vérifier l
 
 1. Dans le **portail partenaire**, sélectionnez **Administrer les services > Office 365**.
 
-2. Si vous cliquez sur le lien **du portail partenaire** , l’option **Admin on behalf** s’ouvre et vous donne accès au Centre d’administration du client.
+2. Si vous cliquez sur le lien **du portail partenaire**, vous ouvrez l’option **Administration pour le compte** et vous donne accès au Centre d’administration du client.
 
    :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="Portail d’administration Office 365" lightbox="images/atp-O365-admin-portal-customer.png":::
 
@@ -84,13 +85,13 @@ L’intégration à Microsoft Defender pour point de terminaison est facile. Dan
 À partir d’un navigateur web, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>.
 
 ## <a name="data-center-location"></a>Emplacement du centre de données
-Microsoft Defender pour point de terminaison stocke et traite les données au [même emplacement que celui utilisé par Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). Si Microsoft 365 Defender n’a pas encore été activé, l’intégration à Microsoft Defender pour point de terminaison active également Microsoft 365 Defender et un nouvel emplacement de centre de données est automatiquement sélectionné en fonction de l’emplacement actif Microsoft 365 services de sécurité. L’emplacement du centre de données sélectionné s’affiche à l’écran.
+Microsoft Defender pour point de terminaison stocke et traite les données au [même emplacement que celui utilisé par Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). Si Microsoft 365 Defender n’a pas encore été activé, l’intégration à Microsoft Defender pour point de terminaison active également Microsoft 365 Defender et un nouvel emplacement de centre de données est automatiquement sélectionné en fonction de l’emplacement de sécurité Microsoft 365 actif Services. L’emplacement du centre de données sélectionné s’affiche à l’écran.
 
-## <a name="network-configuration"></a>Configuration du réseau
+## <a name="network-configuration"></a>Configuration réseau
 
 Si l’organisation n’exige pas que les points de terminaison utilisent un proxy pour accéder à Internet, ignorez cette section.
 
-Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender pour point de terminaison. Le capteur incorporé Microsoft Defender pour point de terminaison s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise les services Microsoft Windows HTTP Services (WinHTTP) pour activer la communication avec le service Cloud Microsoft Defender pour point de terminaison. Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows (WinINet) et ne peut découvrir un serveur proxy qu’à l’aide des méthodes de découverte suivantes :
+Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender pour point de terminaison. Le capteur incorporé Microsoft Defender pour point de terminaison s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise les services Microsoft Windows HTTP Services (WinHTTP) pour activer la communication avec le service Cloud Microsoft Defender pour point de terminaison. Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et peut uniquement découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
 
 - **Méthodes de découverte automatique** :
   - Proxy transparent
@@ -108,18 +109,18 @@ Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windo
 
 Configurez un proxy statique basé sur le Registre pour autoriser uniquement Microsoft Defender pour point de terminaison capteur à signaler les données de diagnostic et à communiquer avec Microsoft Defender pour point de terminaison services si un ordinateur n’est pas autorisé à se connecter à Internet. Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
-- Les modèles \> d’administration Windows la collecte de données des composants \> et les builds en préversion \> configurent l’utilisation du proxy authentifié pour l’expérience utilisateur connectée et le service de télémétrie
+- Modèles d’administration \> - Collecte de données des composants \> Windows et builds \> en préversion - Configurer l’utilisation du proxy authentifié pour le service d’expérience utilisateur connectée et de télémétrie
 - Définissez-le sur **Activé** et sélectionnez **Désactiver l’utilisation du proxy authentifié**
 
 1. Ouvrez la console de gestion des stratégies de groupe.
 2. Créez une stratégie ou modifiez une stratégie existante en fonction des pratiques organisationnelles.
-3. Modifiez l’stratégie de groupe et accédez aux **modèles \> d’administration Windows la collecte de données des composants \> et les builds \> d’aperçu configurent l’utilisation du proxy authentifié pour l’expérience utilisateur connectée et le service de télémétrie**.
+3. Modifiez le stratégie de groupe et accédez à La **collecte de données des composants \> \> Windows modèles d’administration et aux builds \> d’aperçu configurez l’utilisation du proxy authentifié pour le service d’expérience utilisateur connectée et de télémétrie**.
 
    :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Options liées à la configuration de la stratégie d’utilisation" lightbox="images/atp-gpo-proxy1.png":::
 
 4. Sélectionnez **Activé**.
 5. Sélectionnez **Désactiver l’utilisation du proxy authentifié**.
-6. Accédez aux **modèles d’administration \> Windows la collecte de données des composants \> et les builds en préversion configurent les \> expériences utilisateur connectées et la télémétrie**.
+6. Accédez à **Modèles d’administration \> Collecte de données des composants \> Windows et versions préliminaires Configurez les \> expériences utilisateur connectées et la télémétrie**.
 
    :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Options liées à la configuration de l’expérience utilisateur connectée et de la télémétrie" lightbox="images/atp-gpo-proxy2.png":::
 
@@ -161,7 +162,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de bas niveau
 
-Down-Level appareils incluent Windows 7 stations de travail SP1 et Windows 8.1, ainsi que Windows Server 2008 R2 et d’autres systèmes d’exploitation serveur qui ont été intégrés précédemment à l’aide de la Microsoft Monitoring Agent. Le proxy de ces systèmes d’exploitation sera configuré dans le cadre de Microsoft Management Agent pour gérer la communication entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de Microsoft Management Agent pour plus d’informations sur la configuration d’un proxy sur ces appareils.
+Down-Level appareils incluent des stations de travail Windows 7 SP1 et Windows 8.1 ainsi que Windows Server 2008 R2 et d’autres systèmes d’exploitation serveur qui ont été intégrés précédemment à l’aide de Microsoft Monitoring Agent. Le proxy de ces systèmes d’exploitation sera configuré dans le cadre de Microsoft Management Agent pour gérer la communication entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de Microsoft Management Agent pour plus d’informations sur la configuration d’un proxy sur ces appareils.
 
 ### <a name="proxy-service-urls"></a>URL du service proxy
 
@@ -179,7 +180,7 @@ La feuille de calcul téléchargeable suivante répertorie les services et leurs
 |Feuille de calcul de la liste des domaines| Description|
 |---|---|
 |liste d’URL Microsoft Defender pour point de terminaison pour les clients commerciaux| Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation des clients commerciaux. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender pour point de terminaison liste d’URL pour Gov/Cloud de la communauté du secteur public/DoD | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/Cloud de la communauté du secteur public/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Microsoft Defender pour point de terminaison liste d’URL pour Gov/GCC/DoD | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/GCC/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 ## <a name="next-step"></a>Étape suivante
 

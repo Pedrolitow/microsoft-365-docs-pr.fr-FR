@@ -2,7 +2,7 @@
 title: Intégrer des appareils Windows dans Azure Virtual Desktop
 description: Découvrir l’intégration d’appareils Windows à Defender pour point de terminaison dans Azure Virtual Desktop
 keywords: Azure Virtual Desktop, AVD, microsoft defender, point de terminaison, intégration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c7f0896d55d5971b3f9e3848ddddb118f024ac54
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.subservice: mde
+ms.openlocfilehash: 09ad845a8773b074a29c386c636eb3999cae6b4e
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050631"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578001"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Intégrer des appareils Windows dans Azure Virtual Desktop
 

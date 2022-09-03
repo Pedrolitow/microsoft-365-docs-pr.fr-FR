@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les scénarios de collaboration de gouvernance des communications.
-ms.openlocfilehash: 83dd8384acee2e4fc0de6ac2514533bf7d53c879
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e6eeb0103c3e3a8e92efa3534b1c489713d8f1fe
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947470"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578441"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gouvernance des communications pour les scénarios de collaboration
 
@@ -46,17 +46,17 @@ Vous pouvez contrôler les fonctionnalités de conversation et de messagerie de 
 
 [Gérer les stratégies de messagerie dans Teams](/microsoftteams/messaging-policies-in-teams)
 
-Vous pouvez contrôler qui peut démarrer de nouvelles publications et répondre aux publications dans un canal Teams en configurant la modération du canal.
+Vous pouvez contrôler qui peut démarrer de nouvelles publications et répondre aux publications dans un canal Teams en configurant la modération des canaux.
 
 [Configurer et gérer la modération des canaux dans Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
 ## <a name="meetings"></a>Réunions
 
-Vous pouvez contrôler les fonctionnalités disponibles pour Teams participants à la réunion, notamment la planification, le partage de contenu, les participants et les stratégies audio et vidéo.
+Vous pouvez contrôler les fonctionnalités disponibles pour les participants à la réunion Teams, notamment la planification, le partage de contenu, les participants et les stratégies audio et vidéo.
 
 [Gérer les stratégies de réunion dans Teams](/microsoftteams/meeting-policies-in-teams)
 
-Vous pouvez contrôler la participation anonyme pour Teams réunions, ce qui permet à toute personne disposant d’un lien vers la réunion de participer.
+Vous pouvez contrôler la participation anonyme aux réunions Teams, ce qui permet à toute personne disposant d’un lien vers la réunion de participer.
 
 [Autoriser les utilisateurs anonymes à participer à des réunions](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
@@ -67,12 +67,12 @@ La conformité des communications vous permet d’examiner les communications à
 
 [En savoir plus sur la conformité des communications](../compliance/communication-compliance.md)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Recommandations en matière de planification de la gouvernance de collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[Gérer Microsoft Teams paramètres pour votre organisation](/microsoftteams/enable-features-office-365)
+[Gérer les paramètres Microsoft Teams pour votre organisation](/microsoftteams/enable-features-office-365)
 
 [Gérer la conformité des données](/yammer/manage-security-and-compliance/manage-data-compliance)

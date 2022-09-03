@@ -2,7 +2,7 @@
 title: Résoudre les problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour point de terminaison
 description: Résolvez les problèmes qui peuvent survenir lors de l’intégration d’appareils à l’aide de Security Management pour Microsoft Defender pour point de terminaison.
 keywords: résoudre les problèmes d’intégration, d’intégration, de visionneuse d’événements, de collecte et de préversion de données, de données de capteur et de diagnostics
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
-ms.technology: mde
-ms.openlocfilehash: 0ceb24b5da0947dbb2b79ca7560ffbb46b701b38
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.subservice: mde
+ms.openlocfilehash: b02c3bc005e067b4752283d49dbe7f1ca2d06c89
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696269"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582139"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Résoudre les problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour point de terminaison
 
@@ -105,7 +105,7 @@ Dans la section **Résultats détaillés** du rapport, l’analyseur client four
 
 Par exemple, dans le cadre du flux d’intégration De la gestion de la sécurité, il est nécessaire que l’ID de locataire Azure Active Directory dans votre locataire Microsoft Defender pour point de terminaison corresponde à l’ID de locataire SCP qui apparaît dans la section **Détails de la gestion** de la configuration des appareils des rapports. Le cas échéant, la sortie du rapport recommande d’effectuer cette vérification.
 
-:::image type="content" source="images/detailed-results.png" alt-text="La page affichant les résultats détaillés" lightbox="images/detailed-results.png"
+:::image type="content » source="images/detailed-results.png » alt-text="La page affichant les résultats détaillés » lightbox="images/detailed-results.png »
 
 ## <a name="general-troubleshooting"></a>Résolution des problèmes généraux
 

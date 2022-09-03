@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 09/29/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Découvrez comment utiliser le score de conformité et le Gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: bd0ae7f748a2a3cd5ff52b6363780032033ead44
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 29b11b6751e569494ff0e89f3ef577a72eaebf02
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748690"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582051"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utiliser le Gestionnaire de conformité pour gérer les actions d’amélioration
 

@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment limiter les personnes pouvant inviter des invités dans votre organisation.
-ms.openlocfilehash: d8eb9452abb76916940d10fa042dae479358568a
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: ac8417f2fb564c1dcd85b375318f3b3943555974
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "66991640"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582711"
 ---
 # <a name="limit-who-can-invite-guests"></a>Limiter les personnes autorisées à inviter des invités
 

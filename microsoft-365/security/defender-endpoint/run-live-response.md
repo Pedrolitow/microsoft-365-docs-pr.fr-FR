@@ -3,7 +3,7 @@ title: Exécuter des commandes de réponse en direct sur un appareil
 description: Découvrez comment exécuter une séquence de commandes de réponse en direct sur un appareil.
 keywords: api, API de graphe, api prises en charge, chargement dans la bibliothèque
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6ffed96a1587a656687826c8faee54dc57826a14
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: e815af864aa66173a7ce110948c4cd8e9e19be35
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331426"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577891"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 

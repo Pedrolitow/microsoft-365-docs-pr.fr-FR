@@ -6,18 +6,18 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 45dd2c1e723d865bcb80107126e4eb4a4f5d42d2
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 924c13f9351239c74b3d9a7a14fd70fc6e4caab1
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480666"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582535"
 ---
 # <a name="microsoft-365-solutions-for-the-retail-industry"></a>Solutions Microsoft 365 pour le secteur de la vente au détail
 

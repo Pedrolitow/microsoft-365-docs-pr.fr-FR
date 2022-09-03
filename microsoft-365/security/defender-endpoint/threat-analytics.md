@@ -5,7 +5,7 @@ description: Comprendre les menaces émergentes et les techniques d’attaque et
 keywords: analyse des menaces, évaluation des risques, atténuation du système d’exploitation, atténuation des microcodes, état d’atténuation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +18,13 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4a21b62e7ab8cad349dbcabebdd1e0d6eeceacd7
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.subservice: mde
+ms.openlocfilehash: c043203c18e61a0a1c85b6bc15ab1a8944bb1a5b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345148"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576448"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Suivre et répondre aux menaces émergentes par le biais de l’analytique des menaces
 

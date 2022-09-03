@@ -2,7 +2,7 @@
 title: API arrêter et mettre en quarantaine un fichier
 description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour point de terminaison. Consultez un exemple.
 keywords: api, API de graphe, api prises en charge, fichier d’arrêt et de mise en quarantaine
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 3c259316952118b990b7a0509cbe99949dc73e1b
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 91915905a47b5f136b6125d8a9cf1e054e8a2a06
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331338"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582161"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API arrêter et mettre en quarantaine un fichier
 

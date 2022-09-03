@@ -2,8 +2,8 @@
 title: Basculer vers Microsoft Defender pour point de terminaison - Intégrer
 description: Passez à Microsoft Defender pour point de terminaison. Intégrer des appareils, puis désinstaller votre solution non-Microsoft.
 keywords: migration, Microsoft Defender pour point de terminaison, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,12 +22,12 @@ ms.custom:
 ms.topic: article
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: cc07b9324c8c3e0f1c37e7bd8c4d235945fc1092
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d675fc32d0fc60e4d0752a10fd9a7de83abe6f1d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482535"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583537"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Basculer vers Microsoft Defender pour point de terminaison - Phase 3 : Intégration
 

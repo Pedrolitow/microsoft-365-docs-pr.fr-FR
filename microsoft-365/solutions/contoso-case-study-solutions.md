@@ -8,19 +8,19 @@ manager: scotv
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Comment une multinationale fictive mais représentative a déployé des solutions Microsoft 365.
-ms.openlocfilehash: 5154dfb0aead04eb5a580dfc6bb9a60d96a517fd
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
-ms.translationtype: HT
+ms.openlocfilehash: 62b7fe51e369e672e1393a50cd4987914c87d7db
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524152"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576382"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Solutions Microsoft 365 pour Contoso Corporation
 

@@ -2,7 +2,7 @@
 title: Effectuer des actions de réponse sur un fichier dans Microsoft Defender pour point de terminaison
 description: Effectuez des actions de réponse sur les alertes liées aux fichiers en arrêtant et en mettant en quarantaine un fichier ou en bloquant un fichier et en vérifiant les détails de l’activité.
 keywords: répondre, arrêter et mettre en quarantaine, bloquer un fichier, analyser en profondeur
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: a70602f9b482196ee949a8f9922f2979b04b3ff4
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.subservice: mde
+ms.openlocfilehash: 53f9516c327272d2bee517e1a4236caaaedbe736
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669295"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581643"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -69,7 +69,7 @@ Vous pouvez contenir une attaque dans votre organisation en arrêtant le process
 >
 > - L’appareil sur lequel vous effectuez l’action est en cours d’exécution Windows 10, version 1703 ou ultérieure, et Windows 11
 > - Le fichier n’appartient pas à des éditeurs tiers approuvés ou n’est pas signé par Microsoft
-> - Antivirus Microsoft Defender doit au moins être en cours d’exécution en mode passif. Pour plus d’informations, consultez [Antivirus Microsoft Defender compatibilité](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - L’Antivirus Microsoft Defender doit au moins s’exécuter en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 L’action **Arrêter et mettre en quarantaine le fichier** inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
 
@@ -151,7 +151,7 @@ Par défaut, vous devez être en mesure de télécharger les fichiers en quarant
 
 ### <a name="download-quarantined-files"></a>Télécharger des fichiers mis en quarantaine
 
-Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés de manière conforme en fonction de vos [exemples de configurations de soumission](enable-cloud-protection-microsoft-defender-antivirus.md). Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité est activée par défaut**.
+Les fichiers qui ont été mis en quarantaine par l’Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés de manière conforme en fonction de vos [exemples de configurations de soumission](enable-cloud-protection-microsoft-defender-antivirus.md). Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité est activée par défaut**.
 
 L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. Pour en savoir plus sur la protection des données de Microsoft à partir du portail d’approbation de services, consultez https://aka.ms/STP.
 
@@ -214,7 +214,7 @@ Vous pouvez également modifier les indicateurs à partir de la page **Paramètr
 
 ## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 
-Consultez un expert en menaces Microsoft pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Les experts microsoft contre les menaces sont engagés directement à partir du portail Microsoft 365 Defender pour obtenir une réponse précise et en temps opportun. Les experts fournissent des insights sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblées. Ils peuvent également fournir des informations sur les alertes ou un contexte de renseignement sur les menaces que vous voyez dans le tableau de bord de votre portail.
+Consultez un expert en menaces Microsoft pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft sont engagés directement à partir du portail Microsoft 365 Defender pour obtenir une réponse rapide et précise. Les experts fournissent des insights sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblées. Ils peuvent également fournir des informations sur les alertes ou un contexte de renseignement sur les menaces que vous voyez dans le tableau de bord de votre portail.
 
 Pour plus [d’informations, consultez un expert Microsoft sur les menaces](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) .
 
@@ -251,7 +251,7 @@ Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d
 **L’envoi pour analyse approfondie** est activé lorsque le fichier est disponible dans la collection d’exemples de back-end Defender pour point de terminaison, ou s’il a été observé sur un appareil Windows 10 qui prend en charge l’envoi à une analyse approfondie.
 
 > [!NOTE]
-> Seuls les fichiers de Windows 10 et Windows 11 peuvent être collectés automatiquement.
+> Seuls les fichiers de Windows 10 et de Windows 11 peuvent être collectés automatiquement.
 
 Vous pouvez également envoyer un exemple via le [portail Microsoft 365 Defender](https://www.microsoft.com/security/portal/submission/submit.aspx) si le fichier n’a pas été observé sur un appareil Windows 10 (ou Windows 11), et attendre que le bouton **Envoyer pour une analyse approfondie** soit disponible.
 

@@ -2,7 +2,7 @@
 title: Planifier des analyses rapides et complètes régulières avec l’Antivirus Microsoft Defender
 description: Configurer des analyses périodiques (planifiées), notamment quand elles doivent s’exécuter et si elles s’exécutent en tant qu’analyses complètes ou rapides
 keywords: analyse rapide, analyse complète, rapide ou complète, analyse planifiée, quotidienne, hebdomadaire, heure, planifiée, périodique, régulière
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 08/09/2022
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d1ba3633b2a273eefc9ca8d41a7e4ccd45a6a4cd
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 81903fdbb78fdb465ce578e07926fcce85672daf
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301117"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578639"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurer des analyses antivirus Microsoft Defender rapides ou complètes
 

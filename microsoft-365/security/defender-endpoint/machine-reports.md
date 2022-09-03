@@ -17,19 +17,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 58be3951f8937e095e68f2238119271973811210
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 57db94df3cfd8fae60ab335f2f4a3c8c02f3c9cf
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522507"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584857"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
 
 **S’applique à :**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -306,7 +309,7 @@ Les cartes à jour affichent l’état à jour pour les versions de  **mise** 
 
 Des définitions pour les cartes _à jour_, _obsolètes_ et _no_data_available_ sont fournies pour chaque carte ci-dessous.
 
-Les rapports à jour de l’antivirus Microsoft Defender (MDAV) sont déterminés en fonction des critères suivants :
+L’antivirus Microsoft Defender (MDAV) établit des rapports et des déterminations à jour en fonction des critères suivants :
 
 - **Pour les mises à jour du moteur & plateforme** : l’heure à laquelle les événements clients ont été reçus pour la dernière fois pour les rapports à jour (« Heure d’actualisation de la signature ») et l’heure de publication du renseignement de sécurité (les machines virtuelles de renseignement de sécurité sont également utilisées pour déterminer les versions du moteur & plateforme)
 - **Pour les mises à jour du renseignement de sécurité** : heure à laquelle les événements clients ont été reçus pour la dernière fois pour les rapports à jour (« Heure d’actualisation de la signature »), heure de publication du renseignement de sécurité et dernier état à jour communiqué par le client
@@ -327,7 +330,9 @@ Pour plus d’informations sur les termes susmentionnés, reportez-vous à la se
 >*Actuellement, la création de rapports à jour est disponible uniquement pour les appareils Windows. Les appareils multiplateformes tels que Mac et Linux sont répertoriés sous « aucune donnée disponible »
 >
 
-##### <a name="up-to-date-examples"></a>Exemples à jour
+##### <a name="up-to-date-definitions"></a>Définitions à jour
+
+Voici des définitions à jour pour le moteur et la plateforme :
 
 | Le moteur/la plateforme sur l’appareil est considéré comme : | Si : |
 |:---|:---|
@@ -335,7 +340,11 @@ Pour plus d’informations sur les termes susmentionnés, reportez-vous à la se
 | **obsolète** | l’appareil a communiqué avec l’événement de rapport Defender (« Heure d’actualisation de signature ») au cours des 7 derniers jours et dispose d’une heure de publication du renseignement de sécurité au cours des 7 derniers jours, mais la durée de génération de la version du moteur ou de la plateforme est antérieure à 60 jours. |
 | **inconnu (aucune donnée disponible)** | l’appareil n’a pas communiqué avec l’événement de rapport (« Heure d’actualisation de signature ») depuis plus de 7 jours, ou l’heure de publication du renseignement de sécurité est supérieure à 7 jours. |
 
-**La mise à jour du renseignement de sécurité est considérée comme à jour** Si la version du renseignement de sécurité sur l’appareil a été écrite au cours des 7 derniers jours et que l’appareil a communiqué avec l’événement de rapport au cours des 7 derniers jours
+Voici des définitions à jour pour le renseignement de sécurité :
+
+| La mise à jour du renseignement de sécurité est prise en compte | Si : |
+|:---|:---|
+|Mise à jour | la version du renseignement de sécurité sur l’appareil a été écrite au cours des 7 derniers jours et l’appareil a communiqué avec l’événement de rapport au cours des 7 derniers jours. |
 
 Pour plus d’informations sur ces informations, consultez :
 
@@ -353,7 +362,7 @@ Le tableau suivant présente les valeurs possibles pour les rapports à jour pou
 
 | Heure de la dernière actualisation de l’événement (également appelée « Heure d’actualisation de signature » dans les rapports) | Heure de publication du renseignement de sécurité | _État signalé_ : |
 |:----|:----|:----|
-| < 7 jours (nouveau) | < 7 jours (nouveau) | _À jour/ Obsolète/ Inconnu (quels que soient les rapports clients)_ |
+| < 7 jours (nouveau) | < 7 jours (nouveau) | _Jusqu’à présent <br/> obsolète <br/> Inconnu (quels que soient les rapports clients)_ |
 | > 7 jours (ancien) | > 7 jours (ancien) | _Unknown_ |
 | < 7 jours (nouveau) | > 7 jours (ancien) | _Unknown_ |
 | > 7 jours (ancien) | < 7 jours (nouveau) | _Unknown_ |
@@ -370,7 +379,7 @@ Le tableau suivant présente les valeurs de rapport à jour possibles pour **ant
 
 | Heure de la dernière actualisation de l’événement (également appelée « Heure d’actualisation de signature » dans les rapports) | Heure de publication du renseignement de sécurité | _État signalé_ : |
 |:----|:----|:----|
-| < 7 jours (nouveau) | < 7 jours (nouveau) | _À jour/ Obsolète/ Inconnu (quels que soient les rapports clients)_ |
+| < 7 jours (nouveau) | < 7 jours (nouveau) | _Jusqu’à présent <br/> obsolète <br/> Inconnu (quels que soient les rapports clients)_ |
 | > 7 jours (ancien) | > 7 jours (ancien) | _Unknown_ |
 | < 7 jours (nouveau) | > 7 jours (ancien) | _Unknown_ |
 | > 7 jours (ancien) | < 7 jours (nouveau) | _Unknown_ |
@@ -385,8 +394,8 @@ Cette carte identifie les appareils qui ont des versions de renseignement de sé
 
 Le tableau suivant présente les valeurs de rapport à jour possibles pour les mises à jour **du renseignement de sécurité** . Les valeurs signalées sont basées sur la dernière fois que l’événement de rapport a été reçu et sur l’heure de publication du renseignement de sécurité.
 
-| Heure de la dernière actualisation de l’événement (également appelée « Heure d’actualisation de signature » dans les rapports) | Heure de publication du renseignement de sécurité | _État signalé_ : |
-|:----|:----|:----|
+| Heure de la dernière actualisation de l’événement <br/> (également appelé « Heure d’actualisation des signatures » dans les rapports) | Heure de publication du renseignement de sécurité | Dernier état reçu du client | _État signalé_ : |
+|:----|:----|:----|:----|
 | >7 jours (ancien) | >7 jours (ancien) | Actuel | _Unknown_ |
 | <7 jours (nouveau) | >7 jours (ancien) | Actuel | _Unknown_ |
 | >7 jours (ancien) | <7 jours (nouveau) | Actuel |  _Unknown_ |

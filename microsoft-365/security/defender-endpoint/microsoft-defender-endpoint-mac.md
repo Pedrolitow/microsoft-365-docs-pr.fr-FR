@@ -3,7 +3,7 @@ title: Microsoft Defender pour point de terminaison sur Mac
 ms.reviewer: ''
 description: Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour point de terminaison sur Mac.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, mojave, mde pour mac
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 97f7477c1216bfa25e25f6fc3086cf62a8b4b5a3
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: b441d170b9edc716c204993253aabc2a759444c2
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384080"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578827"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -53,7 +53,7 @@ Pour obtenir les fonctionnalités les plus récentes, notamment les fonctionnali
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour point de terminaison sur Mac
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prerequisites
 
 - Un abonnement Defender pour point de terminaison et un accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH

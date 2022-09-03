@@ -3,7 +3,7 @@ title: Protéger votre organisation contre les menaces web
 description: Découvrez la protection web dans Microsoft Defender pour point de terminaison et comment elle peut protéger votre organisation.
 keywords: protection web, protection contre les menaces web, navigation web, sécurité, hameçonnage, programmes malveillants, exploit, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bd63b74990dd058f6a9158cd85f02f303d7dc4aa
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mde
+ms.openlocfilehash: f5df3cdfa8b7bb699126e9362de53a7cfa52b8fc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408394"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576228"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Protéger votre organisation contre les menaces web
 
@@ -39,7 +39,7 @@ La protection contre les menaces web fait partie de la [protection web](web-prot
 > [!NOTE]
 > La réception de nouveaux indicateurs personnalisés peut prendre jusqu’à deux heures pour les appareils.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 La protection web utilise la protection réseau pour assurer la sécurité de la navigation web sur Microsoft Edge et les navigateurs web tiers.
 

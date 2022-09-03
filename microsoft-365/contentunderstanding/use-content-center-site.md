@@ -6,78 +6,78 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment mettre en service et utiliser le modèle de site Centre de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 2650b98decc7977c4343f75b27ed46e2381abdef
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Découvrez comment approvisionner et utiliser le modèle de site Centre de contenu dans Microsoft SharePoint Syntex.
+ms.openlocfilehash: e3d0e50d755a2fe771513389d4028c0306702520
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314544"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583800"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Utiliser le modèle de site Centre de contenu pour Microsoft SharePoint Syntex
 
-Le site SharePoint Syntex content center est un modèle de site d’instructions prêt à être déployé SharePoint pour vous aider à mieux comprendre SharePoint Syntex fonctionnalités.
+Le site SharePoint Syntex Content Center est un modèle de site SharePoint d’instruction prêt à être déployé conçu pour vous aider à mieux comprendre SharePoint Syntex fonctionnalités.
 
-Vous allez vous présenter les outils et les informations dont vous aurez besoin pour créer et former vos propres modèles. Vous pourrez ensuite utiliser ce site comme référentiel de contenu central ou comme centre de contrôle pour gérer vos propres modèles SharePoint Syntex web.
+Vous découvrirez les outils et les informations dont vous aurez besoin pour créer et entraîner vos propres modèles. Vous pourrez ensuite utiliser ce site comme référentiel de contenu central ou comme centre de contrôle pour la gestion de vos propres modèles SharePoint Syntex.
 
-![Capture d’écran de la page d’accueil du modèle de site Centre de contenu.](../media/content-understanding/content-center-site-home-page.png)
+![Capture d’écran de la page d’accueil du modèle de site centre de contenu.](../media/content-understanding/content-center-site-home-page.png)
 
-Dans ce site, les modèles peuvent être formés et évalués à l’aide de votre propre contenu. Toutefois, pour appliquer les modèles aux bibliothèques, une licence SharePoint Syntex est requise.  
+Dans ce site, les modèles peuvent être formés et évalués à l’aide de votre propre contenu. Toutefois, pour appliquer les modèles aux bibliothèques, une licence pour SharePoint Syntex est requise.  
 
-## <a name="provision-the-site"></a>Mise en service du site
+## <a name="provision-the-site"></a>Approvisionner le site
 
-Le site Centre de contenu peut être mise en service à partir du [service de SharePoint de recherche](https://lookbook.microsoft.com/).
+Le site Centre de contenu peut être approvisionné à partir du [service look book SharePoint](https://lookbook.microsoft.com/).
 
-![Capture d’écran de la page de mise en service du modèle de site centre de contenu.](../media/content-understanding/content-center-site-provisioning-page.png)
+![Capture d’écran de la page d’approvisionnement du modèle de site du Centre de contenu.](../media/content-understanding/content-center-site-provisioning-page.png)
 
 > [!NOTE]
-> Vous devez être administrateur général ou administrateur SharePoint administrateur Microsoft 365 pour mettre en service le site.
+> Vous devez être administrateur général ou administrateur SharePoint dans Microsoft 365 pour configurer le site.
 
-1. Dans la page principale du SharePoint [de](https://lookbook.microsoft.com/) recherche, dans **le menu Afficher** les conceptions,  >  sélectionnez SharePoint Syntex **SharePoint Syntex centre de contenu**.
+1. Dans la page principale du [look book SharePoint](https://lookbook.microsoft.com/), dans le menu **Afficher les conceptions**, sélectionnez **SharePoint Syntex** >  **SharePoint Syntex Centre de contenu**.
 
-2. Dans la page **Centre de contenu** , **sélectionnez Ajouter à votre client**.
+2. Dans la page **Centre de contenu** , sélectionnez **Ajouter à votre locataire**.
 
-    ![Capture d’écran du bouton Ajouter à votre client sur la page de mise en service du modèle de site centre de contenu.](../media/content-understanding/content-center-site-add-to-your-tenant.png)
+    ![Capture d’écran du bouton Ajouter à votre locataire dans la page d’approvisionnement du modèle de site du Centre de contenu.](../media/content-understanding/content-center-site-add-to-your-tenant.png)
 
-3. Entrez votre adresse e-mail (pour une notification de la fin de l’utilisation de votre site), l’URL du site que vous souhaitez utiliser et le titre que vous souhaitez utiliser pour votre site. 
+3. Entrez votre adresse e-mail (pour une notification indiquant quand votre site est prêt à être utilisé), l’URL du site que vous souhaitez utiliser et le titre que vous souhaitez utiliser pour votre site. 
 
-    ![Capture d’écran du bouton Ajouter à votre client sur la page de mise en service du modèle de site centre de contenu.](../media/content-understanding/content-center-email-and-url.png)
+    ![Capture d’écran de la page d’approvisionnement du modèle de site du Centre de contenu.](../media/content-understanding/content-center-email-and-url.png)
 
-4. Sélectionnez **Fourniture** puis votre site sera rapidement prêt à être utilisé. Vous recevrez un e-mail (envoyé à l’adresse de messagerie que vous avez fournie) indiquant que votre demande de mise en service du modèle de site Centre de contenu est terminée.
+4. Sélectionnez **Fourniture** puis votre site sera rapidement prêt à être utilisé. Vous recevrez un e-mail (envoyé à l’adresse e-mail que vous avez fournie) indiquant que votre demande d’approvisionnement du modèle de site centre de contenu est terminée.
 
-5. **Sélectionnez Ouvrir le site** et votre site Centre de contenu s’ouvre. À partir de là, vous pouvez explorer le site et en savoir plus sur SharePoint Syntex. 
+5. Sélectionnez **Ouvrir le site** et votre site centre de contenu s’affiche. À partir de là, vous pouvez explorer le site et en savoir plus sur SharePoint Syntex. 
 
-Pour plus d’informations sur l’approvisionnement à partir SharePoint service de carnet d’SharePoint, voir [Provision a new learning pathways solution](/office365/customlearning/custom_provision).
+Pour plus d’informations sur l’approvisionnement à partir du service look book SharePoint, consultez [Provisionner une nouvelle solution de parcours d’apprentissage](/office365/customlearning/custom_provision).
 
 ## <a name="explore-the-site"></a>Explorer le site
 
-Le site Centre de contenu inclut des pages pré-remplies qui vous aideront à parcourir les étapes pour commencer à utiliser SharePoint Syntex dans votre organisation. 
+Le site centre de contenu inclut des pages préremplies qui vous guident tout au long des étapes pour commencer à utiliser SharePoint Syntex dans votre organisation. 
 
-### <a name="get-started-with-sharepoint-syntex"></a>Prendre en SharePoint Syntex
+### <a name="get-started-with-sharepoint-syntex"></a>Démarrage avec SharePoint Syntex
 
-Obtenez une introduction à SharePoint Syntex et découvrez comment l’utiliser pour votre organisation. Regardez une vidéo qui vous donne une vue d’SharePoint Syntex et trouvez une formation pour vous aider à commencer.
+Découvrez SharePoint Syntex et découvrez comment vous pouvez l’utiliser pour votre organisation. Regardez une vidéo qui vous donne une vue d’ensemble de SharePoint Syntex et trouvez une formation pour vous aider à commencer.
 
 ### <a name="learn-about-model-types"></a>En savoir plus sur les types de modèles
 
-Découvrez trois types de modèles et découvrez comment vous pouvez les utiliser pour résoudre les problèmes d’entreprise pour la recherche, les processus d’entreprise, la conformité et bien plus encore.
+Découvrez trois types de modèles et découvrez comment les utiliser pour résoudre les problèmes métier liés à la recherche, aux processus métier, à la conformité, etc.
 
-### <a name="take-an-interactive-tour-to-create-a-model"></a>Faire une visite guidée interactive pour créer un modèle
+### <a name="take-an-interactive-tour-to-create-a-model"></a>Effectuer une visite interactive pour créer un modèle
 
-Découvrez comment créer un modèle de compréhension de document dans la bibliothèque de modèles, puis activer un exemple de modèle pré-formé.
+Découvrez comment créer un modèle de compréhension de document dans la bibliothèque de modèles, puis activer un exemple de modèle préentraîné.
 
 ### <a name="sharepoint-syntex-in-six-simple-steps"></a>SharePoint Syntex en six étapes simples
 
-Commencez par un centre de contenu, puis découvrez étape par étape comment créer des modèles pour identifier, classifier et extraire les informations dont vous avez besoin.
+Commencez par un centre de contenu, puis découvrez pas à pas comment créer des modèles pour identifier, classifier et extraire les informations dont vous avez besoin.
 
 ### <a name="streamline-everyday-processes-and-tasks"></a>Simplifier les processus et tâches quotidiens
 
-Découvrez comment utiliser SharePoint Syntex pour transformer ce qui est manuel en quelque chose d’automatisé et rationalisé pour votre organisation.
+Découvrez comment utiliser SharePoint Syntex pour prendre ce qui est manuel et le transformer en quelque chose de automatisé et rationalisé pour votre organisation.
 
 ### <a name="manage-compliance"></a>Gérer la conformité
 
@@ -85,10 +85,10 @@ Implémentez des étapes pour réduire les risques et vous assurer que les donn�
 
 ### <a name="view-model-activity"></a>Afficher l’activité du modèle
 
-Découvrez comment le contenu est utilisé pour illustrer l’activité des modèles et pour fournir plus d’informations sur l’utilisation de vos modèles.
+Découvrez comment le contenu est utilisé pour illustrer l’activité du modèle et pour fournir plus d’informations sur la façon dont vos modèles sont utilisés.
 
 ### <a name="find-additional-resources"></a>Rechercher des ressources supplémentaires
 
-Découvrez des ressources et des scénarios supplémentaires pour en savoir plus sur SharePoint Syntex.
+Découvrez d’autres ressources et scénarios pour en savoir plus sur SharePoint Syntex.
 
 

@@ -4,7 +4,7 @@ description: Lisez cet article pour obtenir une vue d’ensemble de la migration
 keywords: migrate server, server, 2012r2, 2016, server migration, device management, configure Microsoft Defender pour point de terminaison servers, onboard Microsoft Defender pour point de terminaison servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1c9eff6831f08a243aad830d258c9d9277a89531
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.subservice: mde
+ms.openlocfilehash: 38ac919e11160406f31606703153ce0208a3c416
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306415"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584791"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution de Microsoft Defender pour point de terminaison MMA précédente
 
@@ -32,8 +32,6 @@ ms.locfileid: "67306415"
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 > [!NOTE]
 > Assurez-vous toujours que le système d’exploitation et l’Antivirus Microsoft Defender sur Windows Server 2016 sont entièrement mis à jour avant de poursuivre l’installation ou la mise à niveau. Pour recevoir régulièrement des améliorations et des correctifs du produit pour le composant capteur EDR, assurez-vous que Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliqué ou approuvé après l’installation. En outre, pour mettre à jour les composants de protection, consultez [Gérer les mises à jour de l’Antivirus Microsoft Defender et appliquez des lignes de base](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).

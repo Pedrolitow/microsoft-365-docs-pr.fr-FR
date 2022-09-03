@@ -5,19 +5,18 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
-ms.service: ''
 ms.collection: enabler-strategic
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: c7a23b8da32f5ae9132a41661a1141f34df48a6b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 4e9d091eaf92940b2bdfce95712a9d5e4947cf92
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318198"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580923"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importer un ensemble de termes avec un format SKOS
 

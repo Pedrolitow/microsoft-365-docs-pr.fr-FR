@@ -3,7 +3,7 @@ title: Antivirus Microsoft Defender dans l’application Sécurité Windows
 description: L’Antivirus Microsoft Defender étant désormais inclus dans l’application Sécurité Windows, vous pouvez passer en revue, comparer et effectuer des tâches courantes.
 keywords: wdav, antivirus, pare-feu, sécurité, windows, antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e661667802f5d170261c51bd6bc706eddfdcbf42
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: f075a612c18ea1c44d9110a212b9ba7d2f8ec379
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387416"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577582"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows
 

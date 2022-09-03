@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 15f155255518df38921288f68dcc9365703e4f2a
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
-ms.translationtype: HT
+ms.openlocfilehash: 4596f8b5612472108a68466635a975a6761bf28a
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393107"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582513"
 ---
 # <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Configurer une équipe avec l’isolation de sécurité à l’aide d’une étiquette de confidentialité unique
 

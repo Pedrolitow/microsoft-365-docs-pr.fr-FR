@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
 description: Traversez les couches d’infrastructure pour que vos travailleurs hybrides accèdent aux ressources locales et Microsoft 365 en toute sécurité.
-ms.openlocfilehash: 87d72307f3e6a2b254bdbde21d07fc146806b89d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 37ccb9ff5194654916cf420191477929b3434f36
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318576"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584725"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurez votre infrastructure pour le travail hybride avec Microsoft 365
 
@@ -94,7 +94,7 @@ Pour activer les fonctionnalités de Microsoft 365 pour vos travailleurs hybride
 |Bureau à distance |Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet.|Microsoft 365 E3 ou E5|
 |Passerelle des services Bureau à distance|Chiffrer les communications et empêcher les hôtes RDS d’être directement exposés à Internet.|Nécessite des licences Windows Server distinctes|
 |Microsoft Intune|Gérer les appareils et les applications.|Microsoft 365 E3 ou E5|
-|Configuration Manager|Gérer les installations, mises à jour et paramètres logiciels de vos appareils|Nécessite des licences de gestionnaire de configuration distinctes|
+|Configuration Manager|Gérer les installations, mises à jour et paramètres logiciels de vos appareils|Nécessite des licences de gestionnaire de configuration distinctes|
 |Analyse des points de terminaison|Déterminer la disponibilité des mises à jour de vos clients Windows.|Nécessite des licences de gestionnaire de configuration distinctes|
 |Windows Autopilot|Configurez et préconfigurez les nouveaux appareils Windows 11 ou 10 pour une utilisation productive.|Microsoft 365 E3 ou E5|
 |Microsoft Teams, Exchange Online, SharePoint Online et OneDrive, Microsoft 365 Apps, Microsoft Power Platform et Yammer|Créer, communiquer et collaborer.|Microsoft 365 E3 ou E5|

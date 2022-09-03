@@ -2,7 +2,7 @@
 title: Intégration de Defender pour point de terminaison à Windows Server
 description: Intégrer Windows Server à Microsoft Defender pour point de terminaison.
 keywords: intégration, Microsoft Defender pour point de terminaison intégration, sccm, stratégie de groupe, mdm, script local, test de détection
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,19 +15,19 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: b25d60be243dd5d375fb6ed0f795e4a901a504b2
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.subservice: mde
+ms.openlocfilehash: 6bc6bfa6848d613b23fab0bf00d137d3c62b80e3
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66532728"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585617"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-server"></a>Intégration de Defender pour point de terminaison à Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server Semi-Annual Enterprise Channel
@@ -46,14 +46,15 @@ Cette rubrique explique comment intégrer des serveurs Windows spécifiques à M
 
 Pour obtenir des conseils sur le téléchargement et l’utilisation de Sécurité Windows bases de référence pour les serveurs Windows, consultez [Sécurité Windows Lignes de base.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
+## <a name="license-requirement"></a>Condition requise pour la licence
+
+Pour pouvoir acheter Microsoft Defender pour point de terminaison référence SKU server, vous devez avoir déjà acheté un minimum combiné de l’une des licences d’abonnement suivantes : Windows E5/A5, Microsoft 365 E5/A5 ou Microsoft 365 E5 Sécurité. Pour plus d’informations sur les licences, consultez les [termes du produit](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
+
 ## <a name="windows-server-onboarding-overview"></a>Vue d’ensemble de l’intégration de Windows Server
 
 Vous devez suivre les étapes générales suivantes pour intégrer correctement les serveurs 2008 R2, 2012 R2, 2016, 2019, 2022.
 
 :::image type="content" source="images/server-onboarding.png" alt-text="Intégration de serveur" lightbox="images/server-onboarding.png":::
-
-> [!NOTE]
-> Les serveurs sont embarqués à l’aide de GPS uniquement.
 
 ### <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 et Windows Server 2016
 - Téléchargez les packages d’installation et d’intégration.
@@ -63,9 +64,6 @@ Vous devez suivre les étapes générales suivantes pour intégrer correctement 
 ### <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019"></a>Windows Server Semi-Annual Enterprise Channel et Windows Server 2019
 - Téléchargez le package d’intégration.
 - Suivez les étapes d’intégration de l’outil correspondant.
-
-> [!IMPORTANT]
-> Pour pouvoir acheter Microsoft Defender pour point de terminaison référence SKU server, vous devez avoir déjà acheté un minimum combiné des licences d’abonnement Windows E5/A5, Microsoft 365 E5/A5 ou Microsoft 365 E5 Sécurité suivantes. Pour plus d’informations sur les licences, consultez les [termes du produit](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
 
 ## <a name="offboard-windows-servers"></a>Désintégrage des serveurs Windows
 
@@ -85,7 +83,7 @@ Pour les autres versions de serveur Windows, vous avez deux options pour déconn
 > [!NOTE]
 > Ces instructions de désintégrage pour d’autres versions de serveur Windows s’appliquent également si vous exécutez les Microsoft Defender pour point de terminaison précédentes pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Les instructions pour migrer vers la nouvelle solution unifiée se trouvent [dans les scénarios de migration de serveur dans Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/server-migration).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)

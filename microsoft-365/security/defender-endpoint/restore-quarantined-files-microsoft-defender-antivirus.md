@@ -1,8 +1,8 @@
 ---
 title: Restaurer des fichiers mis en quarantaine dans l’antivirus Microsoft Defender
-description: Vous pouvez restaurer les fichiers et dossiers qui ont été mis en quarantaine par Antivirus Microsoft Defender.
+description: Vous pouvez restaurer les fichiers et dossiers qui ont été mis en quarantaine par l’antivirus Microsoft Defender.
 keywords: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 10/19/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 52e83cf75385b36f87efbe72df9c865415f15452
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 415c16677669277e75f88ec91d1ef18cefd00ee0
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417345"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585573"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Restaurer des fichiers mis en quarantaine dans l’antivirus Microsoft Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "65417345"
 **Plateformes**
 - Windows
 
-Si Antivirus Microsoft Defender est configuré pour détecter et corriger les menaces sur votre appareil, Antivirus Microsoft Defender met en quarantaine les fichiers suspects. Si vous êtes certain qu’un fichier mis en quarantaine n’est pas une menace, vous pouvez le restaurer.
+Si l’Antivirus Microsoft Defender est configuré pour détecter et corriger les menaces sur votre appareil, l’Antivirus Microsoft Defender met en quarantaine les fichiers suspects. Si vous êtes certain qu’un fichier mis en quarantaine n’est pas une menace, vous pouvez le restaurer.
 
 1. Ouvrez **Sécurité Windows**.
 2. Sélectionnez **Virus & protection contre les menaces** , puis cliquez sur **Historique de protection**.
@@ -62,4 +62,4 @@ Si Antivirus Microsoft Defender est configuré pour détecter et corriger les me
 - [Examiner les résultats de l’analyse](review-scan-results-microsoft-defender-antivirus.md)
 - [Configurer et valider des exclusions en fonction du nom de fichier, de l’extension et de l’emplacement du dossier](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurer et valider les exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configurer des exclusions Antivirus Microsoft Defender sur Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configurer les exclusions de l’Antivirus Microsoft Defender sur Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.custom: admindeeplinkSPO
 ms.collection:
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un centre de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: c630bba8bafad8bcbf9749e7a4d08ae1e86f4d68
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: b0151ad464a84e06cc613c9baf06db03a831ceae
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882217"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583217"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Créer un centre de contenu dans Microsoft SharePoint Syntex
 
@@ -47,7 +47,7 @@ Un administrateur SharePoint peut créer un site de centre de contenu comme ils 
 
 Pour créer un nouveau centre de contenu, procédez comme suit :
 
-1. Sur le Centre d'administration Microsoft 365, accédez au <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">centre d’administration SharePoint > **sites actifs**</a>.
+1. Sur le Centre d'administration Microsoft 365, accédez au <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">Centre d’administration SharePoint > **sites actifs**</a>.
 
 2. Dans la page **Sites actifs**, cliquez sur **Créer**, puis sélectionnez **Autres options**.
 
@@ -60,7 +60,7 @@ Pour créer un nouveau centre de contenu, procédez comme suit :
 
 5. Sélectionnez **Terminé**.
  
-Une fois que vous avez créé un site de centre de contenu, il apparaît sur les <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sites actifs**</a> dans le centre d’administration SharePoint. 
+Une fois que vous avez créé un site de centre de contenu, il apparaît sur les <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sites Actifs**</a> dans le Centre d’administration SharePoint. 
 
 ### <a name="give-access-to-additional-users"></a>Accorder l’accès à d’autres utilisateurs
  

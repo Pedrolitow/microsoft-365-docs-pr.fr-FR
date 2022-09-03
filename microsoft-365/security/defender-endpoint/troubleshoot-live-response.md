@@ -2,7 +2,7 @@
 title: Résoudre Microsoft Defender pour point de terminaison problèmes de réponse en direct
 description: Résoudre les problèmes qui peuvent survenir lors de l’utilisation d’une réponse active dans Microsoft Defender pour point de terminaison
 keywords: résoudre les problèmes de réponse en direct, en direct, réponse, verrouillé, fichier
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
-ms.technology: mde
-ms.openlocfilehash: 3e9111edf7400ff09b366783a45ee40397bec81a
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.subservice: mde
+ms.openlocfilehash: fa266b94dd6f3a8972fd08ddb3a3d473fed4997e
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560238"
+ms.locfileid: "67580550"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Résoudre Microsoft Defender pour point de terminaison problèmes de réponse en direct
 

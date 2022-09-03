@@ -2,7 +2,7 @@
 title: Intégrer au service Microsoft Defender pour point de terminaison
 description: Découvrez comment intégrer des points de terminaison à Microsoft Defender pour point de terminaison service
 keywords: microsoft defender pour point de terminaison, intégrer, déployer
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,15 @@ ms.collection:
 - m365solution-endpointprotect
 - m365solution-scenario
 - m365-initiative-defender-endpoint
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: da4dc661754a94dbdfa25579426edba8356a7497
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: fd1bf46c7d56cddf81b7daf99017e2fc8fb705eb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331642"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576360"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer au service Microsoft Defender pour point de terminaison
 

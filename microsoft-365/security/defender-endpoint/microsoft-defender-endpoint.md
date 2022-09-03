@@ -2,7 +2,7 @@
 title: Microsoft Defender pour point de terminaison
 description: Microsoft Defender pour point de terminaison est une plateforme de sécurité de point de terminaison d’entreprise qui permet de se défendre contre les menaces persistantes avancées.
 keywords: introduction à Microsoft Defender pour point de terminaison, présentation de Microsoft Defender pour point de terminaison, cybersécurité, menace persistante avancée, sécurité d’entreprise, capteur de comportement de l’ordinateur, sécurité cloud, analytique, renseignement sur les menaces, réduction de la surface d’attaque, protection nouvelle génération, investigation et correction automatisée, experts en menaces Microsoft, degré de sécurisation, repérage avancé, Microsoft 365 Defender, repérage de cybermenaces
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: c9fe313994e7468004e17df05b1ec4d7c3cf7a6b
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
-ms.translationtype: HT
+ms.subservice: mde
+ms.openlocfilehash: dfca6c8364b9bc4f1900c7c406594a6b581ec983
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65367965"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577230"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 

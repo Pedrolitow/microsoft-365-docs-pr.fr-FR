@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment trouver plus d’informations sur les performances de vos modèles de compréhension de document et de traitement des formulaires.
-ms.openlocfilehash: 830a56ab4dd0145f1385d628405ee4287de19595
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 7c998304472db04d94b430fd1cb98111a1fbdd0a
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754751"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582623"
 ---
 # <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Analyser la façon dont vos modèles sont utilisés dans Microsoft SharePoint Syntex
 
@@ -77,7 +77,7 @@ Chaque modèle dans la liste d’utilisation des modèles affiche les données d
 
 
 
-## <a name="see-also"></a>Articles associés
+## <a name="see-also"></a>Voir aussi
 [Créer un classifieur](create-a-classifier.md)
 
 [Créer un extracteur](create-an-extractor.md)

@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-security-compliance
@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options disponibles pour créer un environnement de partage invité sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: ce635d96cf793b0c655b02ccdb9e7077cd245bb4
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
-ms.translationtype: HT
+ms.openlocfilehash: ce5564bef1e7f1ad1215f8ff1f41f3985e554d16
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714725"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577935"
 ---
 # <a name="create-a-more-secure-guest-sharing-environment"></a>Créer un environnement de partage invité plus sécurisé
 

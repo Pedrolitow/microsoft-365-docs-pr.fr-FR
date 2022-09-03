@@ -2,7 +2,7 @@
 title: Mettre à jour l’API d’entité d’alerte
 description: Découvrez comment mettre à jour une alerte Microsoft Defender pour point de terminaison à l’aide de cette API. Vous pouvez mettre à jour l’état, la détermination, la classification et les propriétés assignedTo.
 keywords: api, api graphe, api prises en charge, get, alert, information, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: f0748ce997c461dc89162aff49eccf509b056f83
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6a521515dedcf426c237a4a559bfc18ca956549f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330656"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582117"
 ---
 # <a name="update-alert"></a>Mettre à jour une alerte
 

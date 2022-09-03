@@ -3,7 +3,7 @@ title: Supprimer l’API de restriction d’application
 description: Utilisez cette API pour créer des appels liés à la suppression d’une restriction des applications de l’exécution.
 keywords: api, API de graphe, api prises en charge, supprimer l’appareil de l’isolation
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 12cb0aa2e6ab980c02d154d72b8df6e953051a29
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: fd90a4354d73bcb1a1a54135d336e7955249a3f3
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330694"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579091"
 ---
 # <a name="remove-app-restriction-api"></a>Supprimer l’API de restriction d’application
 

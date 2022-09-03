@@ -7,23 +7,23 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Découvrez comment utiliser Microsoft Teams pour créer votre canal de gestion des contrats à l’aide d’une solution Microsoft 365.
-ms.openlocfilehash: 6020b6e57af285e96c7998454dc46e5eb19bc5f9
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 10d7598400f095dce34ed5fbb572608a7bd01306
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368042"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579201"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Étape 2. Utiliser Microsoft Teams pour créer votre canal de gestion des contrats
 
 Lorsque votre organisation configure une solution de gestion des contrats, vous avez besoin d’un emplacement central dans lequel les parties prenantes peuvent examiner et gérer les contrats. À cet effet, vous pouvez utiliser [Microsoft Teams](/microsoftteams/) pour configurer un canal Teams et utiliser les fonctionnalités de Teams pour :
 
-- **Créez un emplacement pour que les parties prenantes voient facilement tous les contrats qui nécessitent une action.** Par exemple, dans Teams vous pouvez créer un onglet Contrats dans le canal Gestion **des** contrats dans lequel les membres peuvent voir une vue en mosaïque utile de tous les contrats qui doivent être approuvés. Vous pouvez également configurer l’affichage afin que chaque « carte » répertorie les données importantes qui vous intéressent (par exemple, *client*, *entrepreneur* et *montant des frais*).
+- **Créez un emplacement pour que les parties prenantes voient facilement tous les contrats qui nécessitent une action.** Par exemple, dans Teams, vous pouvez créer un onglet Contrats dans le canal Gestion **des** contrats dans lequel les membres peuvent voir une vue en mosaïque utile de tous les contrats qui doivent être approuvés. Vous pouvez également configurer l’affichage afin que chaque « carte » répertorie les données importantes qui vous intéressent (par exemple, *client*, *entrepreneur* et *montant des frais*).
 
      ![Onglet Contrats.](../media/content-understanding/tile-view.png)
 
@@ -31,31 +31,31 @@ Lorsque votre organisation configure une solution de gestion des contrats, vous 
 
      ![Onglet Publications.](../media/content-understanding/posts.png)
 
-- **Disposez d’un emplacement pour que les membres puissent voir les contrats approuvés afin de savoir quand ils peuvent être soumis pour paiement.** Dans SharePoint, vous devez créer une liste **pour le paiement** et inclure des colonnes pour le **client**, **l’entrepreneur** et le **montant des frais**, en sélectionnant **une seule ligne de texte** comme type de colonne. Vous devez ajouter la liste **Pour le paiement** sous la forme d’un onglet Teams dans le canal Gestion des contrats, comme [pour l’onglet **Contrats**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab). L’onglet **Paiement** répertorie tous les contrats qui devront être soumis pour paiement. Vous pouvez facilement étendre cette solution pour écrire ces informations directement dans une application financière tierce (par exemple, Dynamics CRM). 
+- **Disposez d’un emplacement pour que les membres puissent voir les contrats approuvés afin de savoir quand ils peuvent être soumis pour paiement.** Dans SharePoint, vous devez créer une liste pour le **paiement** et inclure des colonnes pour le **client**, **l’entrepreneur** et le **montant des frais**, en sélectionnant **une seule ligne de texte** comme type de colonne. Vous devez ajouter la liste **Pour le paiement** sous la forme d’un onglet Teams dans le canal Gestion des contrats, comme [pour l’onglet **Contrats**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab). L’onglet **Paiement** répertorie tous les contrats qui devront être soumis pour paiement. Vous pouvez facilement étendre cette solution pour écrire ces informations directement dans une application financière tierce (par exemple, Dynamics CRM). 
 
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Attacher votre bibliothèque de documents SharePoint à l’onglet Contrats
 
-Après avoir créé un onglet **Contrats** dans votre canal Gestion des contrats, vous devez [y joindre votre bibliothèque de documents SharePoint](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La SharePoint bibliothèque de documents à joindre est celle à laquelle vous avez appliqué votre modèle de compréhension de document SharePoint Syntex dans la section précédente.
+Après avoir créé un onglet **Contrats** dans votre canal Gestion des contrats, vous devez [y joindre votre bibliothèque de documents SharePoint](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La bibliothèque de documents SharePoint à joindre est celle à laquelle vous avez appliqué votre modèle de compréhension de document SharePoint Syntex dans la section précédente.
 
 Après avoir attaché la bibliothèque de documents SharePoint, vous pouvez afficher tous les contrats classifiés par le biais d’un affichage de liste par défaut.
 
-   ![Affichage liste de SharePoint bibliothèque.](../media/content-understanding/list-view.png)
+   ![Affichage liste de la bibliothèque SharePoint.](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Personnaliser l’affichage de la vignette de l’onglet Contrats
 
 > [!NOTE]
 > Cette section fait référence à des exemples de code contenus dans le fichier [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) inclus dans le [référentiel des ressources de la solution de gestion des contrats](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management).
 
-Bien que Teams vous permet d’afficher vos contrats en mode vignette, vous pouvez les personnaliser pour afficher les données de contrat que vous souhaitez rendre visibles dans la carte de contrat. Par exemple, pour l’onglet Contrats, il est important que **les** membres voient le client, l’entrepreneur et le montant des frais sur la carte de contrat. Tous ces champs ont été extraits de chaque contrat par le biais de votre modèle SharePoint Syntex qui a été appliqué à votre bibliothèque de documents. Vous souhaitez également pouvoir modifier la barre d’en-tête de vignette en différentes couleurs pour chaque état afin que les membres puissent facilement voir où se trouve le contrat dans le processus d’approbation. Par exemple, tous les contrats approuvés ont une barre d’en-tête bleue.
+Bien que Teams vous permet d’afficher vos contrats dans une vue en mosaïque, vous pouvez les personnaliser pour afficher les données de contrat que vous souhaitez rendre visibles dans la carte de contrat. Par exemple, pour l’onglet Contrats, il est important que **les** membres voient le client, l’entrepreneur et le montant des frais sur la carte de contrat. Tous ces champs ont été extraits de chaque contrat par le biais de votre modèle SharePoint Syntex qui a été appliqué à votre bibliothèque de documents. Vous souhaitez également pouvoir modifier la barre d’en-tête de vignette en différentes couleurs pour chaque état afin que les membres puissent facilement voir où se trouve le contrat dans le processus d’approbation. Par exemple, tous les contrats approuvés ont une barre d’en-tête bleue.
 
-   ![Vue mosaïque de SharePoint bibliothèque.](../media/content-understanding/tile.png)
+   ![Vue mosaïque de la bibliothèque SharePoint.](../media/content-understanding/tile.png)
 
 La vue mosaïque personnalisée que vous utilisez vous oblige à apporter des modifications au fichier JSON utilisé pour mettre en forme l’affichage de vignette actuel. Vous pouvez référencer le fichier JSON utilisé pour créer la vue de carte en examinant le fichier [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) . Dans les sections suivantes, vous verrez des sections spécifiques du code pour les fonctionnalités figurant dans les cartes de contrat.
 
-Si vous souhaitez voir ou apporter des modifications au code JSON de votre affichage dans votre canal Teams, dans le canal Teams, sélectionnez le menu déroulant Affichage, puis sélectionnez **Mettre en forme l’affichage actuel**.
+Si vous souhaitez afficher ou apporter des modifications au code JSON de votre affichage dans votre canal Teams, dans le canal Teams, sélectionnez le menu déroulant affichage, puis sélectionnez Mettre en **forme l’affichage actuel**.
 
-   ![Capture d’écran du format json dans Teams canal.](../media/content-understanding/jason-format.png)
+   ![Capture d’écran du format json dans le canal Teams.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Taille et forme de la carte
 
@@ -208,4 +208,4 @@ Cette section définit la façon dont « Classification » s’affiche sur la ca
 
 ## <a name="next-step"></a>Étape suivante
 
-[Étape 3. Utiliser Power Automate pour créer le flux pour traiter vos contrats](solution-manage-contracts-step3.md)
+[Étape 3. Utiliser Power Automate pour créer le flux de traitement de vos contrats](solution-manage-contracts-step3.md)

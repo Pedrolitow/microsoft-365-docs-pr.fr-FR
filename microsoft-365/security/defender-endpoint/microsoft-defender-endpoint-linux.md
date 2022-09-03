@@ -3,7 +3,7 @@ title: Microsoft Defender pour point de terminaison Linux
 ms.reviewer: ''
 description: Décrit comment installer et utiliser Microsoft Defender pour point de terminaison sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 9eb434419ab74136267be5146e450676996b4afa
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 32debe4990d7f6832e0c9a58e453cbf6ace0118b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386140"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580835"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -44,7 +44,7 @@ Cette rubrique explique comment installer, configurer, mettre à jour et utilise
 Microsoft Defender pour point de terminaison pour Linux inclut des fonctionnalités anti-programme malveillant et de détection et de réponse de point de terminaison (EDR). 
 
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prerequisites
 
 - Accès au portail Microsoft 365 Defender
 - Distribution Linux à l’aide du gestionnaire système [systemd](https://systemd.io/)

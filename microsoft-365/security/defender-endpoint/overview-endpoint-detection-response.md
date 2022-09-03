@@ -3,7 +3,7 @@ title: Vue d’ensemble des fonctionnalités de détection et de réponse des po
 ms.reviewer: ''
 description: Découvrez les fonctionnalités de détection et de réponse des points de terminaison dans Microsoft Defender pour point de terminaison
 keywords: Microsoft Defender pour point de terminaison, détection et réponse des points de terminaison, réponse, détection, cybersécurité, protection
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 757064e8867cda8676fd0cf20a662ff04d130e9c
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.subservice: mde
+ms.openlocfilehash: ee59fa65c8b17bb893dd24a2f7d743026058f2cd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554508"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581077"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Vue d’ensemble de la détection et de la réponse des points de terminaison
 
@@ -50,7 +50,7 @@ Inspiré par la mentalité de « violation supposée », Defender pour point de 
 
 Les fonctionnalités de réponse vous offrent la possibilité de remédier rapidement aux menaces en agissant sur les entités affectées.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Tableau de bord des opérations de sécurité](security-operations-dashboard.md)
 - [File d’attente des incidents](view-incidents-queue.md)

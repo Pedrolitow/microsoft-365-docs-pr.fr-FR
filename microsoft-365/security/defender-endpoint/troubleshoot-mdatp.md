@@ -2,7 +2,7 @@
 title: Résoudre des problèmes de service avec Microsoft Defender pour point de terminaison
 description: Recherchez des solutions et des solutions de contournement aux problèmes connus tels que les erreurs de serveur lors de la tentative d’accès au service.
 keywords: résoudre les problèmes Microsoft Defender pour point de terminaison, erreur de serveur, accès refusé, informations d’identification non valides, aucune donnée, portail de tableau de bord, autoriser, observateur d’événements
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
-ms.technology: mde
-ms.openlocfilehash: bcd0f5ba70d154c40972c0b8035d1617a9e71966
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: mde
+ms.openlocfilehash: c4dba4a85985bdbfa2bcc03421327bd35ae35928
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665841"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585529"
 ---
 # <a name="troubleshoot-service-issues"></a>Résoudre des problèmes de service
 
@@ -28,7 +28,7 @@ ms.locfileid: "64665841"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -56,7 +56,7 @@ Consultez [Vérifier les événements et les erreurs à l’aide de observateur 
 
 Si l’intégration des appareils se termine correctement, mais que Microsoft Defender pour point de terminaison ne démarre pas après un redémarrage et affiche l’erreur 577, vérifiez que Windows Defender n’est pas désactivé par une stratégie.
 
-Pour plus d’informations, consultez [Vérifier que Antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Pour plus d’informations, consultez [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="known-issues-with-regional-formats"></a>Problèmes connus avec les formats régionaux
 
@@ -84,7 +84,7 @@ La prise en charge de l’utilisation de virgules comme séparateur dans les nom
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender pour point de terminaison locataire a été automatiquement créé en Europe
 
-Lorsque vous utilisez Microsoft Defender pour le cloud pour surveiller les serveurs, un locataire Microsoft Defender pour point de terminaison est automatiquement créé. Les données Microsoft Defender pour point de terminaison sont stockées en Europe par défaut.
+Lorsque vous utilisez Microsoft Defender pour cloud pour surveiller les serveurs, un locataire Microsoft Defender pour point de terminaison est automatiquement créé. Les données Microsoft Defender pour point de terminaison sont stockées en Europe par défaut.
 
 ## <a name="related-topics"></a>Voir aussi
 

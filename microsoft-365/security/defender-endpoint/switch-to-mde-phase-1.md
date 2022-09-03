@@ -2,8 +2,8 @@
 title: Basculer vers Microsoft Defender pour point de terminaison - Préparer
 description: Préparez-vous à passer à Microsoft Defender pour point de terminaison. Mettez à jour vos appareils et configurez vos connexions réseau.
 keywords: migration, Microsoft Defender pour point de terminaison, bonne pratique
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,12 +22,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 269e9023f18ab028a15f561841b4b46ecb8ce311
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: fe99a66fb7c84e165fa858507e33f99e5038e05f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481457"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577560"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Basculer vers Microsoft Defender pour point de terminaison - Phase 1 : Préparer
 

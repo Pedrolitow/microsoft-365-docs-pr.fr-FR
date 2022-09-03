@@ -2,7 +2,7 @@
 title: Masquer l’interface antivirus Microsoft Defender
 description: Vous pouvez masquer la vignette de protection contre les virus et les menaces dans l’application Sécurité Windows.
 keywords: Verrouillage de l’interface utilisateur, mode sans tête, masquer l’application, masquer les paramètres, masquer l’interface
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 072207248192d158169e52a8e0ca860678b4f63f
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 5b0ed6ace2aafba9270e757b7bef9ab313e92ccc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388526"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575744"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur de l’Antivirus Microsoft Defender
 
@@ -67,7 +67,7 @@ Dans les versions antérieures de Windows 10, le paramètre masque l’interface
 
 4. Développez l’arborescence sur **les composants Windows > l’interface client de l’antivirus Microsoft Defender >**.
 
-5. Double-cliquez sur le paramètre **Activer le mode d’interface utilisateur sans tête** et définissez l’option **sur Activé**. Cliquez sur **OK**.
+5. Double-cliquez sur le paramètre **Activer le mode d’interface utilisateur sans tête** et définissez l’option **sur Activé**. Cliquez sur **OK**.
 
 Consultez [Empêcher les utilisateurs de modifier localement les paramètres de](configure-local-policy-overrides-microsoft-defender-antivirus.md) stratégie pour plus d’options sur la prévention de la modification de la protection des utilisateurs sur leurs PC.
 
@@ -88,7 +88,7 @@ Vous pouvez empêcher les utilisateurs de suspendre les analyses, ce qui peut ê
 
 4. Développez l’arborescence pour accéder aux **composants** \> Windows de **l’analyse antivirus** \> Microsoft Defender.
 
-5. Double-cliquez sur le paramètre **Autoriser les utilisateurs à suspendre l’analyse** et définissez l’option **sur Désactivé**. Cliquez sur **OK**.
+5. Double-cliquez sur le paramètre **Autoriser les utilisateurs à suspendre l’analyse** et définissez l’option **sur Désactivé**. Cliquez sur **OK**.
 
 > [!TIP]
 > Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :

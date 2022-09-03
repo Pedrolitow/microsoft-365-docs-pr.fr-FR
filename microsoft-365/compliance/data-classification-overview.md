@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: dccc33715b2a3cd489d7fd65fa47773952cf8727
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
-ms.translationtype: HT
+ms.openlocfilehash: 188cb8b28f2a1468fd72236cf160a01e99c16634
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917582"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579333"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -46,9 +46,9 @@ Vous pouvez également gérer ces fonctionnalités sur la page classification de
 
 Vous trouverez la classification des données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender</a> > **Classification** > **Classification des données**.
 
-<!--Take a video tour of our data classification features.
+Suivez une visite guidée par vidéo sur nos fonctionnalités de classification de données.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]-->
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
 La classification de données analyse votre contenu sensible et le contenu étiqueté avant votre création de stratégies. Cette opération est appelée **zéro gestion des modifications**. Cela vous permet de voir l’impact de toutes les étiquettes de rétention et de confidentialité sur votre environnement, et de vous aider à évaluer vos besoins en matière de protection et de stratégie de gouvernance.
 

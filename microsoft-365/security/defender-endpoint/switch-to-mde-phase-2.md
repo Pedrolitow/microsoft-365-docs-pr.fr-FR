@@ -2,8 +2,8 @@
 title: Basculer vers Microsoft Defender pour point de terminaison - Configuration
 description: Passez à Defender pour point de terminaison. Passez en revue le processus d’installation, qui inclut l’installation de l’antivirus Microsoft Defender.
 keywords: migration, Microsoft Defender pour point de terminaison, antivirus, mode passif, processus d’installation
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 07b8c6f945cbf71a2474d7668884eeede504e2fe
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 39bc16b1e43858741a8c9f93be9cc236805c93d9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480015"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583559"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Basculer vers Microsoft Defender pour point de terminaison - Phase 2 : Configuration
 

@@ -2,7 +2,7 @@
 title: Intégration à l'aide de Microsoft Endpoint Configuration Manager
 description: Découvrez comment intégrer à Microsoft Defender pour point de terminaison à l’aide de Microsoft Endpoint Configuration Manager
 keywords: intégration, configuration, déploiement, gestionnaire de configuration de point de terminaison, Microsoft Defender pour point de terminaison, création de collection, réponse de détection de point de terminaison, protection de nouvelle génération, réduction de la surface d’attaque, gestionnaire de configuration de point de terminaison Microsoft
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e4ddd903047fd3bdb2fb8c77019c83721fbe156f
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 37dd9e55422520fbd2fe1cce88d052503a331b9b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387394"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575820"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 

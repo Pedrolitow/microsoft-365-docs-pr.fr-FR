@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Inscrivez vos appareils de point de terminaison dans Microsoft Intune dans le cadre de votre architecture de sécurité Zero Trust, en vous protégeant contre les rançongiciels tout en créant une protection pour les travailleurs à distance.
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -20,12 +20,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 40e4e87b7a0d955c41a130ae512913b3a1133688
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: a7aa25fe7d174fd9d4ca310381312764a4883464
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748030"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576008"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Vue d’ensemble de la gestion des appareils avec Intune
 
@@ -71,7 +71,7 @@ Dans cette illustration :
 |3|Configurer des stratégies de conformité|Vous souhaitez vous assurer que les appareils qui accèdent à vos applications et données répondent aux exigences minimales, par exemple les appareils sont protégés par mot de passe ou par code confidentiel et le système d’exploitation est à jour. Les stratégies de conformité sont le moyen de définir les exigences que les appareils doivent respecter. [**Étape 3. Configurer les stratégies**](manage-devices-with-intune-compliance-policies.md) de conformité vous aide à configurer ces stratégies.|E3, E5, F3, F5|
 |4|Configurer les stratégies d’entreprise d’accès aux appareils et aux identités de confiance zéro (recommandé)|Maintenant que vos appareils sont inscrits, vous pouvez travailler avec votre administrateur [**d'identité pour ajuster les stratégies d'accès conditionnel afin d'exiger des appareils sains et conformes**](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
 |5|Déployer des profils de configuration|Par opposition aux stratégies de conformité des appareils qui marquent simplement un appareil comme conforme ou non en fonction des critères que vous configurez, les profils de configuration modifient réellement la configuration des paramètres sur un appareil. Vous pouvez utiliser des stratégies de configuration pour renforcer les appareils contre les cybermenaces. Voir l’[**Étape 5. Déployer des profils de configuration.**](manage-devices-with-intune-configuration-profiles.md).|E3, E5, F3, F5|
-|6 |Surveiller les risques et la conformité des appareils avec les bases de référence de sécurité|Dans cette étape, vous connectez Intune à Microsoft Defender pour point de terminaison. Grâce à cette intégration, vous pouvez ensuite surveiller les risques des appareils comme condition d’accès. Les appareils dont l’état est à risque sont bloqués. Vous pouvez également surveiller la conformité avec les bases de référence de sécurité. Voir [**l'étape 6. Surveillez les risques liés aux appareils et la conformité aux lignes de base de sécurité**](manage-devices-with-intune-monitor-risk.md).|E5, F5|
+|6|Surveiller les risques et la conformité des appareils avec les bases de référence de sécurité|Dans cette étape, vous connectez Intune à Microsoft Defender pour point de terminaison. Grâce à cette intégration, vous pouvez ensuite surveiller les risques des appareils comme condition d’accès. Les appareils dont l’état est à risque sont bloqués. Vous pouvez également surveiller la conformité avec les bases de référence de sécurité. Voir [**l'étape 6. Surveillez les risques liés aux appareils et la conformité aux lignes de base de sécurité**](manage-devices-with-intune-monitor-risk.md).|E5, F5|
 |7 |Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations|Si votre organisation a fait le nécessaire pour identifier les données sensibles et étiqueter les documents, vous pouvez collaborer avec votre administrateur chargé de la [**protection des informations pour protéger les informations et les documents sensibles sur vos appareils**](manage-devices-with-intune-dlp-mip.md).|Module complémentaire de conformité E5, F5|
 
 ## <a name="coordinating-endpoint-management-with-zero-trust-identity-and-device-access-policies"></a>Coordination de la gestion du point de terminaison avec des stratégies d’accès aux appareils et aux identités de confiance zéro

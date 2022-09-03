@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Empêchez les violations de données personnelles avec les services d’identité, d’appareil et de protection contre les menaces de Microsoft 365.
-ms.openlocfilehash: 474980e56ac79a9a24d2271f0a58729731dbc1df
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: da779767bedfccf7067b100e7e02cdde9faf12f9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749899"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582007"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utiliser la protection des identités, des appareils et des menaces pour la réglementation de la confidentialité des données
 
