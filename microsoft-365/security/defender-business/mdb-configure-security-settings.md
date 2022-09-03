@@ -10,7 +10,6 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: 96aa4eac306efeaa80e4f050aa86544ba9e62c30
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 189cfb05ad41e967ac61c1ca73c5f8feeab1f411
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596508"
+ms.locfileid: "67600288"
 ---
 # <a name="view-and-edit-security-policies-and-settings-in-microsoft-defender-for-business"></a>Afficher et modifier les stratégies et paramètres de sécurité dans Microsoft Defender pour entreprises
 

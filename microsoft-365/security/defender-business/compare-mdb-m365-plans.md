@@ -12,17 +12,17 @@ ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/30/2022
 ms.reviewer: shlomiakirav
+f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-f1.keywords: NOCSH
-ms.openlocfilehash: 622b1ab33ea2168ee7da050d0ad6a06ff7bf5ba0
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 01e04a3f541d2003dbc3863b7e550fc4e3663200
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598150"
+ms.locfileid: "67600348"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparer les fonctionnalités de sécurité dans les plans Microsoft 365 pour les petites et moyennes entreprises
 

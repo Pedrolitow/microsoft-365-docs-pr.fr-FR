@@ -2,6 +2,7 @@
 title: Microsoft Defender pour entreprises fonctionnalités en préversion
 description: Découvrez comment accéder à Microsoft Defender pour entreprises fonctionnalités en préversion.
 keywords: aperçu, aperçu de l’expérience, Microsoft Defender pour entreprises, fonctionnalités, mises à jour
+search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -12,16 +13,16 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
-audience: Admin
+audience: admin
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 7d4e20096b0c323068407c3eca9d4745aede8552
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 901bbcaca1e214a2d08978ee57d71afe415ccd72
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596916"
+ms.locfileid: "67600157"
 ---
 # <a name="microsoft-defender-for-business-preview-features"></a>Microsoft Defender pour entreprises fonctionnalités en préversion
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: shlomiakirav
 description: Obtenez de l’aide ou contactez le support technique si vous rencontrez des problèmes avec Defender Entreprise.
-ms.openlocfilehash: 46c44816f80c5d16b6aeed8beb562b31d35bf449
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: dbb60d5c74b3662967690dd8bb89e5052f44225b
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599041"
+ms.locfileid: "67600332"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business"></a>Obtenir de l’aide et du support pour Microsoft Defender pour entreprises
 
@@ -37,9 +37,6 @@ ms.locfileid: "67599041"
 
 3. Sélectionnez un élément dans la liste des résultats. Si vous ne voyez pas la réponse à votre question, sélectionnez **Contacter le support** technique en bas du volet volant. Pour plus d’informations, consultez [Obtenir un support](../../admin/get-help-support.md)
 
-## <a name="resources-for-partners"></a>Ressources pour les partenaires
-
-Si vous êtes un partenaire Microsoft qui aide votre client avec des fonctionnalités de sécurité dans Defender entreprise, consultez [Microsoft Defender pour entreprises et les ressources des partenaires Microsoft](mdb-partners.md).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -7,7 +7,6 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.topic: landing-page
-  ms.date: 07/19/2022
   ms.collection:
   - SMB
   - M365-security-compliance
@@ -15,12 +14,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.openlocfilehash: c7aaed4a26d39eea32378eb423f38937a423a88c
-  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+  ms.openlocfilehash: f967f4cfc654fcce885c47f1bd9de87eb23629c0
+  ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
   ms.translationtype: MT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 09/03/2022
-  ms.locfileid: "67598107"
+  ms.locfileid: "67600420"
 landingContent:
 - title: Vue d’ensemble
   linkLists:
