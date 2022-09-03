@@ -2,7 +2,7 @@
 title: Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
 description: Utilisez la protection contre les falsifications pour empêcher les applications malveillantes de modifier les paramètres de sécurité macOS importants.
 keywords: macos, protection contre les falsifications, paramètres de sécurité, programmes malveillants
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 45a30d02992d3128ab1520c24927fb43c1180cf8
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: mde
+ms.openlocfilehash: 8cff76e7a0504e2e1f2edd173b5edf79f1c75794
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685529"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586311"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
 

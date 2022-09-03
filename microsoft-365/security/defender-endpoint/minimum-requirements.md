@@ -2,7 +2,7 @@
 title: Exigences minimales pour Microsoft Defender pour point de terminaison
 description: Comprendre les exigences en matière de licences pour l’intégration d’appareils au service
 keywords: exigences minimales, licences, table de comparaison
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a906a0ddebdfb96552b868587f466108d8f4dec9
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.subservice: mde
+ms.openlocfilehash: 1cccc7df480e965998dae62cca02dd130095f1b5
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300867"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586487"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Exigences minimales pour Microsoft Defender pour point de terminaison
 

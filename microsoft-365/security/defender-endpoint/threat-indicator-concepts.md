@@ -1,10 +1,8 @@
 ---
-title: Comprendre les concepts d’intelligence contre les menaces dans Microsoft Defender pour point de terminaison
-description: Créer des alertes contre les menaces personnalisées pour votre organisation et découvrir les concepts liés à l’intelligence des menaces dans Microsoft Defender for Endpoint
-keywords: intelligence contre les menaces, définitions d’alertes, indicateurs de compromis, ioc
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
-ms.prod: m365-security
+title: Comprendre les concepts de renseignement sur les menaces dans Microsoft Defender pour point de terminaison
+description: Créez des alertes de menace personnalisées pour votre organisation et découvrez les concepts liés au renseignement sur les menaces dans Microsoft Defender pour point de terminaison
+keywords: renseignement sur les menaces, définitions d’alerte, indicateurs de compromission, ioc
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,51 +13,51 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 07de6f1306da5c6eb267f6c8a7bf288403c080ff
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: 9b859e5ae75b2d00a1592c40f67838d6cdfce5fd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165725"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585133"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>Comprendre les concepts de veille des menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-threatindicator-abovefoldlink)
 
-Les attaques de cybersécurité avancées comprennent plusieurs événements malveillants, attributs et informations contextuelles complexes. L’identification et le choix des activités éligibles comme suspectes peuvent être une tâche difficile. Votre connaissance des attributs connus et des activités anormales propres à votre secteur d’activité est fondamentale pour savoir quand appeler un comportement observé comme suspect.
+Les attaques avancées contre la cybersécurité comprennent plusieurs événements malveillants complexes, des attributs et des informations contextuelles. Il peut être difficile d’identifier et de décider laquelle de ces activités peut être considérée comme suspecte. Votre connaissance des attributs connus et des activités anormales propres à votre secteur d’activité est fondamentale pour savoir quand appeler un comportement observé comme suspect.
 
-Avec Microsoft 365 Defender, vous pouvez créer des alertes contre les menaces personnalisées qui peuvent vous aider à suivre les activités d’attaques possibles dans votre organisation. Vous pouvez indicateurs d’événements suspects pour rassembler des indices et éventuellement arrêter une chaîne d’attaques. Ces alertes de menace personnalisées apparaissent uniquement dans votre organisation et indicateurs des événements que vous lui avez fixés pour suivre.
+Avec Microsoft 365 Defender, vous pouvez créer des alertes de menace personnalisées qui peuvent vous aider à suivre les activités d’attaque possibles dans votre organisation. Vous pouvez signaler les événements suspects pour rassembler des indices et éventuellement arrêter une chaîne d’attaque. Ces alertes de menace personnalisées s’affichent uniquement dans votre organisation et signalent les événements que vous définissez pour le suivi.
 
-Avant de créer des alertes contre les menaces personnalisées, il est important de connaître les concepts sous-tels que les définitions d’alerte et les indicateurs de compromission et la relation entre elles.
+Avant de créer des alertes de menace personnalisées, il est important de connaître les concepts qui sous-tendent les définitions d’alerte et les indicateurs de compromission et la relation entre elles.
 
 ## <a name="alert-definitions"></a>Définitions d’alerte
-Les définitions d’alerte sont des attributs contextuels qui peuvent être utilisés collectivement pour identifier les indices précoces sur une possible attaque de cybersécurité. Ces indicateurs sont généralement une combinaison d’activités, de caractéristiques et d’actions entreprises par un attaquant pour atteindre l’objectif d’une attaque. La surveillance de ces combinaisons d’attributs est essentielle pour obtenir un point de garde contre les attaques et éventuellement interférer avec la chaîne d’événements avant d’atteindre l’objectif d’un attaquant.
+Les définitions d’alerte sont des attributs contextuels qui peuvent être utilisés collectivement pour identifier les premiers indices d’une attaque de cybersécurité possible. Ces indicateurs sont généralement une combinaison d’activités, de caractéristiques et d’actions effectuées par un attaquant pour atteindre l’objectif d’une attaque. La surveillance de ces combinaisons d’attributs est essentielle pour obtenir un point de vue sur les attaques et éventuellement interférer avec la chaîne d’événements avant que l’objectif d’un attaquant soit atteint.
 
-## <a name="indicators-of-compromise-ioc"></a>Indicateurs de compromis (IOC)
-Les IOC sont des événements malveillants connus individuellement qui indiquent qu’un réseau ou un appareil a déjà été enfreint. Contrairement aux définitions d’alerte, ces indicateurs sont considérés comme des preuves d’une violation. Elles sont souvent vues après qu’une attaque a déjà été effectuée et que l’objectif a été atteint, par exemple l’exfiltration. Il est également important d’assurer le suivi des IOCS pendant les enquêtes d’investigation. Bien qu’il ne puisse pas intervenir avec une chaîne d’attaques, la collecte de ces indicateurs peut être utile pour créer de meilleures défenses en cas d’attaques futures possibles.
+## <a name="indicators-of-compromise-ioc"></a>Indicateurs de compromission (IOC)
+Les E/S par E/S sont des événements malveillants connus individuellement qui indiquent qu’un réseau ou un appareil a déjà été violé. Contrairement aux définitions d’alerte, ces indicateurs sont considérés comme la preuve d’une violation. Ils sont souvent observés après qu’une attaque a déjà été effectuée et que l’objectif a été atteint, comme l’exfiltration. Il est également important de suivre les IOC pendant les investigations judiciaires. Bien qu’il ne soit peut-être pas en mesure d’intervenir avec une chaîne d’attaque, la collecte de ces indicateurs peut être utile pour créer de meilleures défenses pour d’éventuelles attaques futures.
 
-## <a name="relationship-between-alert-definitions-and-iocs"></a>Relation entre les définitions d’alerte et les IOCs
-Dans le contexte de Microsoft 365 Defender et de Microsoft Defender pour le point de terminaison, les définitions d’alerte sont des conteneurs pour les IOC et définissent l’alerte, y compris les métadonnées qui sont élevées pour une correspondance IOC spécifique. Diverses métadonnées sont fournies dans le cadre des définitions d’alerte. Les métadonnées telles que le nom de définition d’alerte de l’attaque, la gravité et la description sont fournies avec d’autres options.
+## <a name="relationship-between-alert-definitions-and-iocs"></a>Relation entre les définitions d’alerte et les E/S par E/S
+Dans le contexte de Microsoft 365 Defender et Microsoft Defender pour point de terminaison, les définitions d’alerte sont des conteneurs pour les E/S et définissent l’alerte, y compris les métadonnées déclenchées pour une correspondance IOC spécifique. Différentes métadonnées sont fournies dans le cadre des définitions d’alerte. Des métadonnées telles que le nom de définition d’alerte d’attaque, la gravité et la description sont fournies avec d’autres options.
 
-Chaque IOC définit la logique de détection concrète en fonction de son type, de sa valeur et de son action, qui détermine la façon dont elle est mise en correspondance. Il est lié à une définition d’alerte spécifique qui définit la façon dont une détection est affichée en tant qu’alerte sur Microsoft 365 Defender console.
+Chaque IOC définit la logique de détection concrète en fonction de son type, de sa valeur et de son action, qui détermine comment elle est mise en correspondance. Il est lié à une définition d’alerte spécifique qui définit la façon dont une détection est affichée en tant qu’alerte sur la console Microsoft 365 Defender.
 
-Voici un exemple d’IOC :
+Voici un exemple d’ioc :
 - Type : Sha1
 - Valeur : 92cfceb39d57d914ed8b14d0e37643de0797ae56
-- Action : est égal à
+- Action : Égal à
 
-Les IOC ont une relation plusieurs-à-un avec des définitions d’alertes de telle façon qu’une définition d’alerte peut avoir de nombreux IOC qui lui correspondent.
+Les EIC ont une relation plusieurs-à-un avec les définitions d’alerte, de sorte qu’une définition d’alerte peut avoir de nombreux E/S qui lui correspondent.
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Gérer des indicateurs](manage-indicators.md)

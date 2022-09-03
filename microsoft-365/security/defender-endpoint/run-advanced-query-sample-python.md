@@ -3,7 +3,7 @@ title: Guide de repérage avancé avec l’API Python
 ms.reviewer: ''
 description: Découvrez comment interroger à l’aide de l’API Microsoft Defender pour point de terminaison, à l’aide de Python, avec des exemples.
 keywords: api, api prises en charge, repérage avancé, requête
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6751098c58e53c06cf9b62f7b93cd48aa35f5374
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c75c39f898a6e94e9f0f96402d28c477a5819efa
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331376"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585155"
 ---
 # <a name="advanced-hunting-using-python"></a>Repérage avancé à l’aide de Python
 

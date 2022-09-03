@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment activer les canaux partagés avec toutes les autres organisations Microsoft 365 et Azure Active Directory.
-ms.openlocfilehash: 41acba8e6097946d80d970a3220a61486c39def2
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: b986e49db834cc5cc840c587269c881e61edc2a5
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306501"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585837"
 ---
 # <a name="enable-shared-channels-with-all-external-organizations"></a>Activer des canaux partagés avec toutes les organisations externes
 

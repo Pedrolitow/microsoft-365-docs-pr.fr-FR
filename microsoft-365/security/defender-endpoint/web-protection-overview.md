@@ -3,7 +3,7 @@ title: Protection Web
 description: Découvrez la protection web dans Microsoft Defender pour point de terminaison et comment elle peut protéger votre organisation
 keywords: protection web, protection contre les menaces web, navigation web, sécurité, hameçonnage, programmes malveillants, exploit, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web, sites web malveillants
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 886ed68514235669d72fe260cacc9b150d9a04d3
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.subservice: mde
+ms.openlocfilehash: d2d689117c614c4fb2f786a303ea9070eac5fedc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497777"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586201"
 ---
 # <a name="web-protection"></a>Protection Web
 

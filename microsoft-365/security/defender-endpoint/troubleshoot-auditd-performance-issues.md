@@ -3,7 +3,7 @@ title: Résoudre les problèmes de performances AuditD liés à Microsoft Defend
 ms.reviewer: ''
 description: Décrit comment résoudre les problèmes de performances liés à AuditD que vous pouvez rencontrer avec Microsoft Defender pour Linux.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, dépannage, AuditD, XMDEClientAnalyzer, installation, déploiement, désinstallation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,23 +16,23 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 840961a39f2e298bfc11eecdbb1344fc9c252c3a
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.subservice: mde
+ms.openlocfilehash: 0c953eef32dc3851fa9618f6204dec6b19e23bff
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099060"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584218"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances AuditD liés à Microsoft Defender pour point de terminaison sur Linux 
 
 Cet article fournit des conseils sur la résolution des problèmes de performances liés à AuditD que vous pouvez rencontrer avec Microsoft Defender pour point de terminaison sur Linux. 
 
-**Arrière-plan:** 
+**Fond:** 
 
 - Microsoft Defender pour point de terminaison sur les distributions de système d’exploitation Linux utilise l’infrastructure AuditD pour collecter certains types d’événements de télémétrie. 
 
-- Les événements système capturés par les règles ajoutées à `/etc/audit/rules.d/` ajoutent à l’audit.log(s) et peuvent affecter l’audit de l’hôte et la collecte en amont.  
+- Les événements système capturés par les règles ajoutées à `/etc/audit/rules.d/` ajoutent à audit.log(s) et peuvent affecter l’audit de l’hôte et la collecte en amont.  
 
 - Les événements ajoutés par Microsoft Defender pour point de terminaison sur Linux sont marqués avec `mdatp` une clé. 
 
@@ -113,7 +113,7 @@ Exclusion AuditD : aide sur la syntaxe de l’outil de support :
 
 - **-d / -dir** chemin d’accès complet à un répertoire > Supprime les événements de système de fichiers ciblant ce répertoire 
 
-Exemples : 
+Exemples : 
 
 Si «`/opt/app/bin/app` » écrit dans « »,`/opt/app/cfg/logs/1234.log` vous pouvez utiliser l’outil de support pour exclure avec différentes options : 
 

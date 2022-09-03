@@ -9,7 +9,7 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - endpoint dlp
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Implémentez le point de terminaison DLP en travaillant avec votre équipe de protection et de gouvernance d’information pour créer des stratégies DLP pour votre organisation.
-ms.openlocfilehash: d8544a0ddeb0327d50baa87407a152c559afcb74
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: 5a20f7e128890d75ec051667c41d3251639fadab
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749218"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585463"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Étape 7. Implémenter la protection contre la perte de données (DLP) avec des fonctionnalités de protection des informations
 

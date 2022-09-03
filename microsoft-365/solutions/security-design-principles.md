@@ -6,7 +6,7 @@ author: brendacarter
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: e69efef38cfae0d65270d85f5434bd62ea87e279
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 1b90b08218fff22c864b1307a3312eeff9bae003
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406231"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586509"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Obstacles à la sécurité que vous pouvez franchir : point de vue d’un architecte
 

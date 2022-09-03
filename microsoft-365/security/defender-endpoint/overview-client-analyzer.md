@@ -2,7 +2,7 @@
 title: Résoudre les problèmes d’intégrité des capteurs à l’aide de l’analyseur client Microsoft Defender pour point de terminaison
 description: Résolvez les problèmes d’intégrité des capteurs sur les appareils pour identifier les problèmes potentiels de configuration, d’environnement, de connectivité ou de télémétrie affectant les données ou fonctionnalités du capteur.
 keywords: capteur, intégrité du capteur, mal configuré, inactif, aucune donnée de capteur, données de capteur, communications altérées, communication
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: cad957dff57da6598e7b7db470998979d2bd0f63
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: m365d
+ms.openlocfilehash: d689589def68ba98dd952dbd3991eecee38ec4be
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685589"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586443"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes d’intégrité des capteurs à l’aide de l’analyseur client Microsoft Defender pour point de terminaison
 
@@ -50,7 +50,7 @@ Pour plus d’informations sur l’échange de fichiers sécurisés, consultez [
 
 Pour plus d’informations sur notre déclaration de confidentialité, consultez [la déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 - Avant d’exécuter l’analyseur, nous vous recommandons de vous assurer que votre configuration de proxy ou de pare-feu autorise l’accès aux [URL de service Microsoft Defender pour point de terminaison](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 

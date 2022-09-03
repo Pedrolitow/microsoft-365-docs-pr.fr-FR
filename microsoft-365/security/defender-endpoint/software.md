@@ -2,7 +2,7 @@
 title: Méthodes et propriétés du logiciel
 description: Récupère les alertes les plus récentes.
 keywords: api, api graphe, api prises en charge, get, alertes, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 1c51ba215d3140900f17495055b53bc94ae6bc78
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 99e1eafa4134c444f8ba82abe8dc93a26dc2a01f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331354"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586003"
 ---
 # <a name="software-resource-type"></a>Type de ressource logicielle
 

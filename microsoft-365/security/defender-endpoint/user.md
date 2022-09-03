@@ -2,7 +2,7 @@
 title: Type de ressource utilisateur
 description: Récupérez les alertes de Microsoft Defender pour point de terminaison récentes liées aux utilisateurs.
 keywords: api, api graphe, api prises en charge, get, alertes, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: da2032da79666016a03323c22cbf29030b920921
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 1a43f85c849901a56871ea3aa5b4482ffc616957
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330584"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585375"
 ---
 # <a name="user-resource-type"></a>Type de ressource utilisateur
 

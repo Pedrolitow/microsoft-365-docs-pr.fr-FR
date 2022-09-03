@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Utilisez des stratégies et des étiquettes de rétention Microsoft 365 pour gérer les données personnelles dans votre environnement Microsoft 365.
-ms.openlocfilehash: 2643e183b9121e7e82a3237bde4d977315667008
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 4a9f094aa1555db87956e247f83c83f6c7eefa9f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748778"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585287"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Régir les informations soumises à la réglementation sur la confidentialité des données
 
@@ -83,7 +83,7 @@ Gardez les éléments suivants à l’esprit :
 
 - Une fois que les types d’informations personnelles de votre environnement sont mieux connus, établissez des planifications de rétention et de suppression pour ce type de contenu et ajustez votre architecture des informations pour faciliter la gouvernance de ce type d’informations. Par exemple, isolez les informations personnelles dans des sites, bibliothèques ou dossiers distincts avec un accès contrôlé.
 
-### <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention.
+### <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention
 
 Utilisez [des stratégies de rétention et des étiquettes de rétention](../compliance/retention.md) pour conserver ou supprimer du contenu dans Microsoft 365 qui contient ou doit contenir des données personnelles.
 

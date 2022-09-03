@@ -2,7 +2,7 @@
 title: Vue d’ensemble de la protection nouvelle génération dans Microsoft Defender pour point de terminaison
 description: Obtenez une vue d’ensemble de la protection nouvelle génération dans Microsoft Defender pour point de terminaison. Renforcez le périmètre de sécurité de votre réseau à l’aide d’une protection nouvelle génération conçue pour intercepter tous les types de menaces émergentes.
 keywords: Antivirus Microsoft Defender, windows defender, logiciel anti-programme malveillant, virus, programmes malveillants, menace, détection, protection, sécurité
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f1a1517e072c3a1c07f8792281092392dd1ff210
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
-ms.translationtype: HT
+ms.openlocfilehash: 9e8f1c04616bf26f337668f7556606eee0a39d70
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717093"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586465"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 

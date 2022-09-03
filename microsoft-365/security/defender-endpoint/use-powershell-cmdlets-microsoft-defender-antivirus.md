@@ -1,8 +1,8 @@
 ---
-title: Utiliser des applets de commande PowerShell pour configurer et exécuter Antivirus Microsoft Defender
-description: Dans Windows 10 et Windows 11, vous pouvez utiliser des applets de commande PowerShell pour exécuter des analyses, mettre à jour security intelligence et modifier les paramètres dans Antivirus Microsoft Defender.
+title: Utiliser des applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender
+description: Dans Windows 10 et Windows 11, vous pouvez utiliser des applets de commande PowerShell pour exécuter des analyses, mettre à jour security intelligence et modifier les paramètres dans l’Antivirus Microsoft Defender.
 keywords: scan, ligne de commande, mpcmdrun, defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,18 +13,18 @@ ms.custom: nextgen
 ms.date: 10/18/2020
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7afde73e1e1c1e5ff35ee906331aa2756ba55a21
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: bb63bb3ec898e7ba6f7b957288e95da7ec49f17c
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419481"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585881"
 ---
-# <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser des applets de commande PowerShell pour configurer et gérer Antivirus Microsoft Defender
+# <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser des applets de commande PowerShell pour configurer et gérer l’antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,10 +41,10 @@ Vous pouvez utiliser PowerShell pour effectuer différentes fonctions dans Windo
 
 Pour obtenir la liste des applets de commande et de leurs fonctions et paramètres disponibles, consultez la rubrique [sur les applets de commande Antivirus Defender](/powershell/module/defender) .
 
-Les applets de commande PowerShell sont les plus utiles dans les environnements Windows Server qui ne s’appuient pas sur une interface utilisateur graphique (GUI) pour configurer les logiciels.
+Les applets de commande PowerShell sont les plus utiles dans les environnements Windows Server qui ne reposent pas sur une interface utilisateur graphique (GUI) pour configurer les logiciels.
 
 > [!NOTE]
-> Les applets de commande PowerShell ne doivent pas être utilisées comme remplacement d’une infrastructure de gestion de stratégie réseau complète, telle que [Microsoft Endpoint Configuration Manager](/configmgr), [stratégie de groupe Console de gestion](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) ou [Antivirus Microsoft Defender stratégie de groupe modèles ADMX](https://www.microsoft.com/download/101445).
+> Les applets de commande PowerShell ne doivent pas être utilisées comme remplacement d’une infrastructure de gestion de stratégie réseau complète, telle que [microsoft endpoint Configuration Manager](/configmgr), [stratégie de groupe Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) ou les [modèles Antivirus Microsoft Defender stratégie de groupe ADMX](https://www.microsoft.com/download/101445).
 
 Les modifications apportées à PowerShell affectent les paramètres locaux sur le point de terminaison où les modifications sont déployées ou effectuées. Cela signifie que les déploiements de stratégie avec stratégie de groupe, Microsoft Endpoint Configuration Manager ou Microsoft Intune peuvent remplacer les modifications apportées avec PowerShell.
 
@@ -52,14 +52,14 @@ Vous pouvez [configurer les paramètres qui peuvent être remplacés localement 
 
 PowerShell est généralement installé sous le dossier `%SystemRoot%\system32\WindowsPowerShell`.
 
-## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>Utiliser Antivirus Microsoft Defender applets de commande PowerShell
+## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>Utiliser les applets de commande PowerShell de l’antivirus Microsoft Defender
 
 1. Dans la barre de recherche Windows, tapez **PowerShell**.
 2. Sélectionnez **Windows PowerShell** dans les résultats pour ouvrir l’interface.
 3. Entrez la commande PowerShell et tous les paramètres.
 
 > [!NOTE]
-> Vous devrez peut-être ouvrir PowerShell en mode administrateur. Cliquez avec le bouton droit sur l’élément dans le menu Démarrer, cliquez sur **Exécuter en tant qu’administrateur**, puis cliquez sur **Oui** à l’invite d’autorisations.
+> Vous devrez peut-être ouvrir PowerShell en mode administrateur. Cliquez avec le bouton droit sur l’élément dans le menu Démarrer, cliquez sur **Exécuter en tant qu’administrateur** , puis cliquez sur **Oui** à l’invite d’autorisations.
 
 Pour ouvrir l’aide en ligne pour l’une des applets de commande, tapez ce qui suit :
 
@@ -83,4 +83,4 @@ Omettre le `-online` paramètre pour obtenir de l’aide mise en cache localemen
 
 - [Rubriques de référence sur les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [applets de commande Antivirus Microsoft Defender](/powershell/module/defender)
+- [Applets de commande antivirus Microsoft Defender](/powershell/module/defender)

@@ -2,7 +2,7 @@
 title: Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle
 description: Créez des rôles et définissez les autorisations affectées au rôle dans le cadre de l’implémentation du contrôle d’accès en fonction du rôle dans le Microsoft 365 Defender
 keywords: rôles d’utilisateur, rôles, accès rbac
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 91f9f7c48d63b200db28b29530d5c1f398877283
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.subservice: mde
+ms.openlocfilehash: 8d86c55dcab74ea3901b4e1c55882664d9e7dd83
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345050"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586597"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle
 

@@ -2,7 +2,7 @@
 title: tableau de bord des opérations de sécurité Centre de sécurité Microsoft Defender
 description: Utilisez le tableau de bord pour identifier les appareils à risque, suivre l’état du service et afficher des statistiques et des informations sur les appareils et les alertes.
 keywords: tableau de bord, alertes, nouvelles, en cours, résolues, à risque, appareils à risque, infections, rapports, statistiques, graphiques, graphiques, intégrité, détections de programmes malveillants actifs, catégorie de menaces, catégories, vol de mot de passe, ransomware, exploit, menace, gravité faible, programmes malveillants actifs
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: aa55d3ab9fe082d00d957cfc404ccf2a6cf35301
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 4215c196cd92506f672a84c86f0dd0d1114f6852
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331486"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584526"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>tableau de bord des opérations de sécurité Centre de sécurité Microsoft Defender
 

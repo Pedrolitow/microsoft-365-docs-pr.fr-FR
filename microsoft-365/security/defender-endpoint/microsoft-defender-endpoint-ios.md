@@ -3,7 +3,7 @@ title: Microsoft Defender pour point de terminaison iOS
 ms.reviewer: ''
 description: Décrit comment installer et utiliser Microsoft Defender pour point de terminaison sur iOS
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, ios, vue d’ensemble, installation, déploiement, désinstallation, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: ac2c34359686da45998fab1076b7501357651318
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.subservice: mde
+ms.openlocfilehash: 3c8a63668ee427bf732f8ee2229667e232310d3e
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695863"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585981"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison iOS
 
@@ -40,7 +40,7 @@ ms.locfileid: "66695863"
 > [!CAUTION]
 > L’exécution d’autres produits de protection de point de terminaison tiers avec Defender pour point de terminaison sur iOS est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 **Pour les utilisateurs finaux**
 

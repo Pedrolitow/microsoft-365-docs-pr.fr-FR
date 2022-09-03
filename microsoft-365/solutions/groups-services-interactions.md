@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interactions des services de groupes
-ms.openlocfilehash: 884ee06ed3e345d2a9b1e88f7aa201875d599b32
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: ab1bda8b3065518736468a6603e9356e9a2d0d25
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056765"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585749"
 ---
 # <a name="groups-services-interactions"></a>Interactions des services de groupes
 
@@ -102,7 +102,7 @@ L’expérience de la restriction de création de groupe varie entre les applica
 |Projet pour le web et feuille de route|**Le menu Créer un groupe** explique que la création de groupe est restreinte et suggère d’utiliser un groupe existant.|
 |SharePoint|Toujours en mesure de créer un site d’équipe qui n’est pas connecté à un groupe.|
 |Flux|**L’option Group** n’apparaît pas sous le **menu Créer**.|
-|Équipes|L’utilisateur ne peut pas créer d’équipe avec un nouveau groupe, mais peut toujours créer une équipe qui utilise un groupe existant.<br><br>**Le bouton Créer une équipe** est remplacé par **Créer une équipe à partir d’un groupe**.|
+|Teams|L’utilisateur ne peut pas créer d’équipe avec un nouveau groupe, mais peut toujours créer une équipe qui utilise un groupe existant.<br><br>**Le bouton Créer une équipe** est remplacé par **Créer une équipe à partir d’un groupe**.|
 |Yammer|**L’option Créer un groupe** est supprimée de la navigation groupes/communautés principale.|
 
 ## <a name="services-interactions-with-groups"></a>Interactions de services avec des groupes
@@ -130,7 +130,7 @@ Le tableau suivant fournit une vue d’ensemble des interactions Groupes Microso
 |Feuille de route|Feuille de route|Oui|Oui|Non|
 |SharePoint|Site|Oui|Oui|Oui|
 |Flux|Canal, vidéo|Oui|Oui|Oui|
-|Équipes|Équipe|Non|Oui|Oui|
+|Teams|Équipe|Non|Oui|Oui|
 |Yammer|Group|Oui|Oui|Oui|
 
 Bien que le tableau ci-dessus fournisse une vue d’ensemble générale des interactions de groupe avec les services Microsoft 365, il existe plusieurs nuances et complexités que vous devez comprendre. Les sections suivantes examinent plus en détail les charges de travail spécifiques et leurs interactions avec les groupes.
@@ -171,7 +171,7 @@ Non, Azure AD est la plateforme sous-jacente où existent des groupes.
 
 La suppression du groupe dans Azure AD supprime le contenu et les services associés au groupe concernés.
 
-## <a name="teams"></a>Équipes
+## <a name="teams"></a>Teams
 
 Teams est un espace de travail centré sur la conversation qui vise à améliorer la collaboration en fournissant une interface unique pour interagir avec différents services Microsoft et tiers.
 
@@ -181,7 +181,7 @@ Par défaut, lorsqu’une équipe est créée, la boîte aux lettres et le calen
 
 - Conversations
 - Onglets & canaux
-- Meetings
+- Réunions
 
 **Teams peut-il créer un groupe ?**
 

@@ -2,7 +2,7 @@
 title: Microsoft Defender hors connexion dans Windows
 description: Vous pouvez utiliser Microsoft Defender hors connexion directement à partir de l’application Antivirus Microsoft Defender. Vous pouvez également gérer la façon dont il est déployé sur votre réseau.
 keywords: analyse, defender, hors connexion
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 350ab278281cc436bb49c6d27827ac73ae2bea43
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5af9893222b389315632bb84887fe65effe824dc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476525"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586047"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 

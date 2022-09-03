@@ -3,7 +3,7 @@ title: Afficher et organiser la file d’attente des incidents
 ms.reviewer: ''
 description: Consultez la liste des incidents et découvrez comment appliquer des filtres pour limiter la liste et obtenir une vue plus ciblée.
 keywords: afficher, organiser, incidents, agrégat, investigations, file d’attente, ttp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: a2d75b935c19a20c37ecdbdb77feff73bbed4a79
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.subservice: mde
+ms.openlocfilehash: 079b1272d88098bd64f0b34056ee085ca9409363
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714638"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585353"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Afficher et organiser la file d’attente d’incidents Microsoft Defender pour point de terminaison
 
@@ -58,7 +58,7 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des incidents e
 Gravité de l’incident | Description
 :---|:---
 Élevé </br>(Rouge) | Menaces souvent associées à des menaces persistantes avancées (APT). Ces incidents indiquent un risque élevé en raison de la gravité des dommages qu’ils peuvent infliger aux appareils.
-Moyenne </br>(Orange) | Menaces rarement observées dans l’organisation, telles que les modifications anormales du Registre, l’exécution de fichiers suspects et les comportements observés typiques des phases d’attaque.
+Moyen </br>(Orange) | Menaces rarement observées dans l’organisation, telles que les modifications anormales du Registre, l’exécution de fichiers suspects et les comportements observés typiques des phases d’attaque.
 Faible </br>(Jaune) | Menaces associées aux programmes malveillants et aux outils de piratage qui n’indiquent pas nécessairement une menace avancée ciblant l’organisation.
 Informatif </br>(Gris) | Les incidents d’information peuvent ne pas être considérés comme dangereux pour le réseau, mais peuvent être utiles pour effectuer le suivi.
 

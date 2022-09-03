@@ -19,12 +19,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: c7d8363e75df92ecfa0c85e12856678c8e32096c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5d01c803f087ec04372300eff4be6a9edcd7002c
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476591"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585507"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>vue d’ensemble de Spécialistes des menaces Microsoft dans Microsoft 365
 
@@ -54,8 +54,9 @@ Si vous avez déjà Microsoft Defender pour point de terminaison et Microsoft 36
 Une fois votre application approuvée, vous commencerez à recevoir des notifications d’attaque de point de terminaison chaque fois que les experts en menace détectent une menace pour votre environnement.
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>S’abonner à Spécialistes des menaces Microsoft - Experts à la demande
+
 > [!NOTE]
-> Experts à la demande n’est pas un service de réponse aux incidents de sécurité. Il vise à mieux comprendre les menaces complexes qui affectent votre organisation. Collaborez avec votre propre équipe de réponse aux incidents de sécurité pour résoudre les problèmes urgents de réponse aux incidents de sécurité. Si vous n’avez pas votre propre équipe de réponse aux incidents de sécurité et que vous souhaitez obtenir l’aide de Microsoft, créez une demande de support dans l’image du Hub ![[De services Premier](/services-hub/)](https://user-images.githubusercontent.com/11750124/187275203-87c65c03-d5c5-4fd0-a045-f795f6976336.png)
+> Experts à la demande n’est pas un service de réponse aux incidents de sécurité. Il vise à mieux comprendre les menaces complexes qui affectent votre organisation. Collaborez avec votre propre équipe de réponse aux incidents de sécurité pour résoudre les problèmes urgents de réponse aux incidents de sécurité. Si vous n’avez pas votre propre équipe de réponse aux incidents de sécurité et que vous souhaitez obtenir l’aide de Microsoft, créez une demande de support dans le [Hub De services Premier](/services-hub/).
 
 Contactez votre représentant Microsoft pour vous abonner à Experts à la demande.  Pour plus d’informations, consultez [Configurer les fonctionnalités de Spécialistes des menaces Microsoft](./configure-microsoft-threat-experts.md).
 

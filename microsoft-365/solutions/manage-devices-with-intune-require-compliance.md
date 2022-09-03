@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Créez une stratégie d’accès conditionnel dans Azure AD pour exiger des appareils conformes, en conservant la sécurité des données d’entreprise lorsque les utilisateurs travaillent à partir de n’importe quel appareil dans n’importe quel emplacement.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - Conditional access policy
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 ms.custom: ''
-ms.openlocfilehash: 61191da794c065a46d709d443982849ec4c4d3e3
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: 407611cbad022bdc59f6f16dbcd7b0fbe33d1435
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747942"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585683"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>Étape 4. Exiger des appareils sains et conformes avec Intune
 
@@ -48,7 +48,7 @@ Veillez à :
 - Testez vos stratégies d’accès conditionnel à l’aide des fonctionnalités What If et Audit Mode avant d’attribuer entièrement la stratégie d’accès conditionnel. Cela vous permet de comprendre les résultats de la stratégie.
 - Définissez une période de grâce en respectant la confidentialité des données et/ou de l’application accessibles. 
 - Assurez-vous que vos stratégies de conformité n’interfèrent pas avec les exigences réglementaires ou autres exigences de conformité. 
-- Comprendre les intervalles d’enregistrement des appareils pour les stratégies de conformité.
+- Comprendre les intervalles d’archivage de l’appareil pour les stratégies de conformité.
 - Évitez les conflits entre les stratégies de conformité et les profils de configuration. Comprenez les résultats si vous faites ce choix.
 
 Pour résoudre les problèmes de profils d’appareil dans Intune, y compris les conflits entre les stratégies, consultez [Questions et réponses fréquentes avec les stratégies et les profils d’appareil dans Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot).

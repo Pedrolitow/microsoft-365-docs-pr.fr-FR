@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment utiliser ai build pour créer des modèles de traitement de formulaires dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7b9ff8b8a1014dfb47aa7061caf31599e497c18a
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 8bcb5874ce62b8125e385fcf9eca8dbd2ca9f0fa
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463184"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585243"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble sur le traitement de formulaires dans Microsoft SharePoint Syntex
 
@@ -39,7 +39,7 @@ Par exemple, vous pouvez créer un modèle de traitement de formulaire qui ident
 
 Vous pouvez également utiliser des exemples de fichiers pour former votre modèle et définir les informations à extraire de votre formulaire. La mise en page de votre document est acquise en formant votre modèle. Vous n’avez besoin que de cinq documents de formulaires pour commencer. AI Builder analyse vos exemples de fichiers pour les paires clé-valeur, et vous pouvez également identifier manuellement les fichiers qui n’ont peut-être pas été détectés.  Le générateur AI vous permet de tester la précision de votre modèle dans vos exemples de fichiers.
 
-Une fois que vous avez entraîné et publié votre modèle, votre modèle crée un [flux Power Automate](/power-automate/getting-started). Le flux s’exécute lorsqu’un fichier est téléchargé dans la bibliothèque de documents SharePoint et extrait les données qui ont été identifiées dans le modèle. Les données extraites s’affichent dans les colonnes de la vue bibliothèque de documents de votre modèle.
+Après avoir entraîné et publié votre modèle, votre modèle crée un [flux Power Automate](/power-automate/getting-started). Le flux s’exécute lorsqu’un fichier est téléchargé dans la bibliothèque de documents SharePoint et extrait les données qui ont été identifiées dans le modèle. Les données extraites s’affichent dans les colonnes de la vue bibliothèque de documents de votre modèle.
 
 Un administrateur Office 365 doit [activer le traitement des formulaires](./set-up-content-understanding.md) pour la bibliothèque de documents SharePoint afin que les utilisateurs [puissent y créer un modèle de traitement de formulaire](create-a-form-processing-model.md). Vous pouvez sélectionner les sites pendant ou après la configuration dans vos paramètres de gestion.
 

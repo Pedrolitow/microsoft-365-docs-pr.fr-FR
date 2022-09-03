@@ -2,7 +2,7 @@
 title: Définir l’API de valeur d’appareil
 description: Découvrez comment spécifier la valeur d’un appareil à l’aide d’une API Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, balises, balises d’ordinateur
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 940fb1a04bbef5ccc7b05097429bb6b04869e313
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 219b552eb096e1e1bcc59938f0c360afb0663017
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331310"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584482"
 ---
 # <a name="set-device-value-api"></a>Définir l’API de valeur d’appareil
 

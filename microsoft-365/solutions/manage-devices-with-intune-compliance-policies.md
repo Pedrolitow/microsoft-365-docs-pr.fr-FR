@@ -9,7 +9,7 @@ manager: dougeby
 audience: ITPro
 description: Découvrez comment créer des stratégies de conformité d’appareil qui spécifient la configuration minimale requise pour qu’un appareil accède à votre environnement.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: ae2866d2cabf21616b7aea74220dcf5ce8e4d4eb
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: 4194ef306025729a057643b2714beb9ecde408ff
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750295"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586531"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Étape 3. Configurer des stratégies de conformité pour des appareils avec Intune
 

@@ -1,10 +1,8 @@
 ---
-title: Résoudre les problèmes d’intégration de l’outil SIEM dans Microsoft Defender for Endpoint
-description: Résoudre les problèmes qui peuvent survenir lors de l’utilisation des outils SIEM avec Microsoft Defender for Endpoint.
-keywords: résoudre les problèmes, siem, secret client, secret
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
-ms.prod: m365-security
+title: Résoudre les problèmes d’intégration de l’outil SIEM dans Microsoft Defender pour point de terminaison
+description: Résolvez les problèmes qui peuvent survenir lors de l’utilisation des outils SIEM avec Microsoft Defender pour point de terminaison.
+keywords: résoudre les problèmes, siem, clé secrète client, secret
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
-ms.technology: mde
-ms.openlocfilehash: 59db066644a549cf52252602f494dd1267e216f9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: 879f6e2f5572e5cbbbe61a542f294d97e6844ab5
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165569"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585419"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Résoudre des problèmes d’intégration de l’outil SIEM
 
@@ -29,30 +27,30 @@ ms.locfileid: "61165569"
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Vous devrez peut-être résoudre les problèmes lors de l’analyse des détections dans vos outils SIEM.
+Vous devrez peut-être résoudre les problèmes lors de l’extraction des détections dans vos outils SIEM.
 
-Cette page fournit des étapes détaillées pour résoudre les problèmes que vous pourriez rencontrer.
+Cette page fournit des étapes détaillées pour résoudre les problèmes que vous pouvez rencontrer.
 
-## <a name="learn-how-to-get-a-new-client-secret"></a>Découvrez comment obtenir une nouvelle secret client
+## <a name="learn-how-to-get-a-new-client-secret"></a>Découvrez comment obtenir une nouvelle clé secrète client
 
-Si votre secret client expire ou si vous avez mal placé la copie fournie lorsque vous activiez l’application d’outil SIEM, vous devez obtenir une nouvelle question secrète.
+Si votre clé secrète client expire ou si vous avez mal placé la copie fournie lorsque vous activiez l’application d’outil SIEM, vous devez obtenir un nouveau secret.
 
-1. Connectez-vous au [portail de gestion Azure.](https://portal.azure.com)
+1. Connectez-vous au [portail de gestion Azure](https://portal.azure.com).
 
 2. Sélectionnez **Azure Active Directory**.
 
-3. Sélectionnez votre client.
+3. Sélectionnez votre locataire.
 
-4. Cliquez **sur Inscriptions d’applications.** Ensuite, dans la liste des applications, sélectionnez l’application.
+4. Cliquez sur **inscriptions d'applications**. Ensuite, dans la liste des applications, sélectionnez l’application.
 
-5. Sélectionnez **certificats & secrets,** cliquez sur Nouvelle question secrète client, puis fournissez une description et spécifiez la durée de validité.
+5. Sélectionnez **Certificats & section Secrets** , cliquez sur Nouveau secret client, puis fournissez une description et spécifiez la durée de validité.
 
 6. Cliquez sur **Enregistrer**. La valeur de clé s’affiche.
 
@@ -60,33 +58,30 @@ Si votre secret client expire ou si vous avez mal placé la copie fournie lorsqu
 
 ## <a name="error-when-getting-a-refresh-access-token"></a>Erreur lors de l’obtention d’un jeton d’accès d’actualisation
 
-Si vous rencontrez une erreur lors de la tentative d’obtenir un jeton d’actualisation lors de l’utilisation de l’API d’intelligence des menaces ou des outils SIEM, vous devez ajouter une URL de réponse pour l’application pertinente dans Azure Active Directory.
+Si vous rencontrez une erreur lors de la tentative d’obtention d’un jeton d’actualisation lors de l’utilisation de l’API Threat Intelligence ou des outils SIEM, vous devez ajouter l’URL de réponse pour l’application appropriée dans Azure Active Directory.
 
-1. Connectez-vous au [portail de gestion Azure.](https://ms.portal.azure.com)
+1. Connectez-vous au [portail de gestion Azure](https://ms.portal.azure.com).
 
 2. Sélectionnez **Azure Active Directory**.
 
-3. Sélectionnez votre client.
+3. Sélectionnez votre locataire.
 
-4. Cliquez **sur Inscriptions d’applications.** Ensuite, dans la liste des applications, sélectionnez l’application.
+4. Cliquez sur **Inscriptions d’applications**. Ensuite, dans la liste des applications, sélectionnez l’application.
 
 5. Ajoutez l’URL suivante :
    - Pour l’Union européenne : `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
    - Pour le Royaume-Uni : `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
-   - Pour les États-Unis  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` : .
+   - Pour le États-Unis : `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
 
 6. Cliquez sur **Enregistrer**.
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>Erreur lors de l’activation de l’application de connecteur SIEM
 
-Si vous rencontrez une erreur lors de la tentative d’activer l’application de connecteur SIEM, vérifiez les paramètres du bloqueur de fenêtres int gr es de votre navigateur. Il peut bloquer l’ouverture de la nouvelle fenêtre lorsque vous activez la fonctionnalité.
+Si vous rencontrez une erreur lors de la tentative d’activation de l’application de connecteur SIEM, vérifiez les paramètres du bloqueur contextuel de votre navigateur. Il peut bloquer l’ouverture de la nouvelle fenêtre lorsque vous activez la fonctionnalité.
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshootsiem-belowfoldlink)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-- [Activer l’intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)
-- [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
-- [Tirer les détections vers vos outils SIEM](configure-siem.md)
-- [Champs Microsoft Defender pour la détection des points de terminaison](api-portal-mapping.md)
-- [Détecter Microsoft Defender pour les points de terminaison à l’aide de l’API REST](pull-alerts-using-rest-api.md)
+- [Détections d’extraction vers vos outils SIEM](configure-siem.md)
+

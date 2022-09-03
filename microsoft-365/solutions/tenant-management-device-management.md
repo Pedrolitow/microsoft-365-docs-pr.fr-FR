@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez l’option appropriée pour la gestion des appareils et des applications pour vos locataires Microsoft 365.
-ms.openlocfilehash: 3999d30aaeee9ebfc2af90b0aeeeaea1b46986fb
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 827e3aa06e81e1d10bf4f6b83c4baeb5c143c206
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419459"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586069"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour votre Microsoft 365 pour les locataires d’entreprise
 
-Microsoft 365 pour l’entreprise inclut des fonctionnalités permettant de gérer les appareils et l’utilisation d’applications sur ces appareils au sein de votre organisation avec la gestion des appareils mobiles (GPM) et la gestion des applications mobiles (MAM). Vous pouvez gérer des appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris vos données. Par exemple, vous pouvez empêcher l’envoi d’e-mails à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre travailleur.
+Microsoft 365 pour entreprise inclut des fonctionnalités permettant de gérer les appareils et l’utilisation d’applications sur ces appareils au sein de votre organisation avec la gestion des appareils mobiles (GPM) et la gestion des applications mobiles (MAM). Vous pouvez gérer des appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris vos données. Par exemple, vous pouvez empêcher l’envoi d’e-mails à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre travailleur.
 
 Voici un exemple de validation et de gestion des utilisateurs, de leurs appareils et de leur utilisation d’applications de productivité locales et cloud comme Microsoft Teams.
 
 ![Validation et gestion des utilisateurs, des appareils et des applications.](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
-Pour vous aider à sécuriser et protéger les ressources de votre organisation, Microsoft 365 pour l’entreprise inclut des fonctionnalités permettant de gérer les appareils et leur accès aux applications. Il existe deux options pour la gestion des appareils :
+Pour vous aider à sécuriser et protéger les ressources de votre organisation, Microsoft 365 pour entreprise inclut des fonctionnalités permettant de gérer les appareils et leur accès aux applications. Il existe deux options pour la gestion des appareils :
 
 - Microsoft Intune, qui est une solution complète de gestion des appareils et des applications pour les entreprises.
-- Mobilité et sécurité de base, qui est un sous-ensemble de services Intune inclus dans tous les produits Microsoft 365 pour la gestion des appareils de votre organisation. Pour plus d’informations, consultez [Fonctionnalités de mobilité et de sécurité de base](../admin/basic-mobility-security/capabilities.md).
+- Mobilité et sécurité de base, qui est un sous-ensemble de services Intune inclus avec tous les produits Microsoft 365 pour la gestion des appareils dans votre organisation. Pour plus d’informations, consultez [Fonctionnalités de mobilité et de sécurité de base](../admin/basic-mobility-security/capabilities.md).
 
 Si vous avez Microsoft 365 E3 ou E5, vous devez utiliser Intune.
 

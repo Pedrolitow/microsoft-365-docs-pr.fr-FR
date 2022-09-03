@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 description: Découvrez comment connecter Microsoft Intune à Defender pour point de terminaison et surveiller le risque de l’appareil en tant que condition d’accès.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: eab30a8a0801dcbdf95bee3c33f54a920850a6db
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: e7b0b80cc2a44b0dcbb24a793e6549385d00e51b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749240"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585705"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité
 
@@ -39,7 +39,7 @@ Le déploiement de Microsoft Defender pour point de terminaison inclut l’inté
 
 Dans cette illustration :
 - Microsoft Defender pour point de terminaison augmente considérablement la complexité de la protection contre les menaces pour les appareils. 
-- Bien que Microsoft Intune vous permette de définir des stratégies de protection des applications et de gérer les appareils (y compris les modifications de configuration), Defender pour point de terminaison surveille en permanence vos appareils contre les menaces et peut prendre des mesures automatisées pour corriger les attaques. 
+- Bien que Microsoft Intune vous permet de définir des stratégies de protection des applications et de gérer les appareils (y compris les modifications de configuration), Defender pour point de terminaison surveille en permanence vos appareils contre les menaces et peut prendre des mesures automatisées pour corriger les attaques. 
 - Vous pouvez utiliser Intune pour intégrer des appareils à Defender pour point de terminaison. Dans ce cas, vous autorisez également ces appareils à utiliser la protection contre la perte de données de point de terminaison Microsoft Purview (Endpoint DLP).
 
 Cet article comprend les étapes suivantes :
@@ -64,7 +64,7 @@ L’article, [Étape 5. Déployer des profils de configuration](manage-devices-
 
 Les appareils intégrés à Defender pour point de terminaison devraient être déployés sur les deux lignes de base : la ligne de base de sécurité Windows Intune pour sécuriser initialement Windows, puis la ligne de base de sécurité de Defender pour point de terminaison comme couche supplémentaire pour configurer de manière optimale les contrôles de sécurité Defender pour point de terminaison.
 
-Pour tirer parti des données les plus récentes sur les risques et les menaces et réduire les conflits à mesure que les lignes de base évoluent, appliquez toujours les dernières versions des lignes de base sur tous les produits dès leur publication. 
+Pour tirer parti des données les plus récentes sur les risques et les menaces et réduire les conflits à mesure que les lignes de base évoluent, appliquez toujours les dernières versions des lignes de base sur tous les produits dès qu’elles sont publiées. 
 
 L’utilisation de Defender pour point de terminaison vous permet de surveiller la conformité à ces lignes de base. 
 

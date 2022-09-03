@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Déterminez les réglementations relatives à la confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: e881ff4eb9561525fed42775d8f56b6842dc1719
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: a9eb6e975e223014006d34ecea33851c116baab9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748305"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585485"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques liés à la confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -51,7 +51,7 @@ D’autres réglementations importantes en matière de confidentialité des donn
 
 Dans le États-Unis, il s’agit de la California Consumer Protection Act ([CCPA](/compliance/regulatory/ccpa-faq)), HIPAA-HITECH (États-Unis health care privacy act) et de la Graham Leach Bliley Act (GLBA). D’autres réglementations spécifiques à l’État sont également en place ou en cours de développement.
 
-Dans le monde entier, d’autres exemples incluent la Loi d’implémentation du RGPD national (BDSG) allemande, la Loi brésilienne sur la protection des données (LGPD) et bien d’autres.
+Dans le monde entier, d’autres exemples incluent la Loi d’implémentation du RGPD national (BDSG) allemande, la Loi sur la protection des données du Brésil (LGPD) et bien d’autres.
 
 ## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Mappage de réglementation aux catégories de contrôle technique Microsoft 365
 
@@ -69,14 +69,14 @@ Pour une référence ultérieure dans les articles de cette solution globale, ce
 ||Article 48|Le responsable du traitement doit informer l'autorité nationale et la personne concernée de la survenance d'un incident de sécurité susceptible de créer des risques ou des dommages importants pour les personnes concernées.|Découvrir et répondre|
 |HIPPA-HITECH|45 CFR 164.312(e)(1)|Implémenter des mesures de sécurité techniques pour se prémunir contre l'accès non autorisé aux informations médicales électroniques protégées qui sont transmises sur un réseau de communication électronique.|Protéger les informations|
 ||45 C.F.R. 164.312(e)(2)(ii)|Implémenter un mécanisme de chiffrement des informations médicales électroniques protégées chaque fois que cela est jugé approprié.|Protéger les informations|
-||45 CFR 164.312(c)(2)|Mettre en œuvre des mécanismes électroniques pour confirmer que les informations médicales électroniques protégées n'ont pas été altérées ou détruites de manière non autorisée.|Gérer les informations|
+||45 CFR 164.312(c)(2)|Implémenter des mécanismes électroniques pour corroborer que les informations médicales protégées électroniques n’ont pas été modifiées ou détruites de manière non autorisée.|Gérer les informations|
 ||45 CFR 164.316(b)(1)(i)|Si ce sous-composant doit documenter une action, une activité ou une évaluation, conservez un enregistrement écrit (qui peut être électronique) de l’action, de l’activité ou de l’évaluation.|Gérer les informations|
 ||45 CFR 164.316(b)(1)(ii)|Conserver la documentation requise par le paragraphe (b)(1) du présent article pendant 6 ans à compter de la date de sa création ou de la dernière date à laquelle elle a été en vigueur, si celle-ci est postérieure.|Gérer les informations|
 ||45 C.F.R. 164.308(a)(1)(ii)(D)|Implémenter des procédures pour examiner régulièrement les enregistrements de l’activité du système d’information, tels que les journaux d’audit, les rapports d’accès et les rapports de suivi des incidents de sécurité|Découvrir et répondre|
 ||45 C.F.R. 164.308(a)(6)(ii)|Identifier et répondre aux incidents de sécurité connus ou suspects ; atténuer, dans la mesure du possible, les effets néfastes des incidents de sécurité qui sont connus de l'entité couverte ou de l'associé commercial ; et documenter les incidents de sécurité et leurs résultats.|Découvrir et répondre|
 ||45 C.F.R. 164.312(b)|Implémentez des mécanismes matériels, logiciels et procéduraux qui enregistrent et examinent les activités dans les systèmes d’information qui contiennent ou utilisent des informations de santé protégées électroniquement.|Découvrir et répondre|
 |ACCP|1798.105(c)|Une entreprise qui reçoit une demande vérifiable d’un consommateur de supprimer les informations personnelles du consommateur conformément à la sous-section (a) de cette section doit supprimer les informations personnelles du consommateur de ses dossiers et demander à tous les fournisseurs de services de supprimer les informations personnelles du consommateur de ses dossiers.|Découvrir et répondre|
-||1798.105(d)|(exceptions à 1798.105(c) <br> Une entreprise ou un fournisseur de services ne doit pas être tenu de se conformer à la demande d’un consommateur de supprimer les informations personnelles du consommateur s’il est nécessaire que l’entreprise ou le fournisseur de services conserve les informations personnelles du consommateur afin de : (reportez-vous au règlement actuel pour obtenir des informations supplémentaires).|Découvrir et répondre|
+||1798.105(d)|(exceptions à 1798.105(c) <br> Une entreprise ou un fournisseur de services ne doit pas être tenu de se conformer à la demande d’un consommateur de supprimer les informations personnelles du consommateur s’il est nécessaire que l’entreprise ou le fournisseur de services conserve les informations personnelles du consommateur afin de : (reportez-vous au règlement actuel pour plus d’informations).|Découvrir et répondre|
 |||||
 
 > [!IMPORTANT]
@@ -98,7 +98,7 @@ Les données se déplacent également au fil du temps à mesure qu’elles sont 
 
 Pour répondre aux réglementations en matière de confidentialité des données, vous ne pouvez pas vous appuyer sur des notions générales d’endroit où vous pensez que des données personnelles peuvent exister, maintenant ou à l’avenir. Les réglementations sur la confidentialité des données exigent que les organisations prouvent qu’elles savent où se trouvent les données personnelles en permanence. Il est donc important de prendre une capture instantanée initiale de toutes vos sources de données pour le stockage possible d’informations personnelles, y compris votre environnement Microsoft 365, et d’établir des mécanismes de surveillance et de détection en cours.
 
-Si vous n’avez pas encore évalué votre état de préparation global et les risques associés aux réglementations sur la confidentialité des données, utilisez l’infrastructure en trois étapes suivante pour commencer.
+Si vous n’avez pas encore évalué votre état de préparation global et les risques associés aux réglementations sur la confidentialité des données, utilisez l’infrastructure en 3 étapes suivante pour commencer.
 
 ![Étapes d’évaluation de votre préparation globale et des risques associés aux réglementations sur la confidentialité des données.](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
@@ -107,7 +107,7 @@ Si vous n’avez pas encore évalué votre état de préparation global et les r
 
 ## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>Étape 1 : Développer une compréhension fondamentale des scénarios de données personnelles de votre organisation
 
-Vous devez évaluer l’exposition au risque de confidentialité des données en fonction du type de données personnelles qu’elles gèrent actuellement, de l’emplacement où elles sont stockées, des contrôles de protection qui y sont placés, de la façon dont leur cycle de vie est géré et de la personne qui y a accès.
+Vous devez évaluer l’exposition au risque de confidentialité des données en fonction du type de données personnelles qu’elle gère actuellement, de l’emplacement où elles sont stockées, des contrôles de protection qui y sont placés, de la façon dont leur cycle de vie est géré et de la personne qui y a accès.
 
 À titre de point de départ, il est important d’inventorier les types de données personnelles qui existent dans votre environnement Microsoft 365. Utilisez les catégories suivantes :
 
@@ -131,7 +131,7 @@ Il est également important de réfléchir aux défis courants de conformité à
 - **Conservation des données personnelles.** Combien de temps les informations contenant des données personnelles doivent-elles être conservées pour des raisons commerciales valides et comment éviter les pratiques de conservation définitive passées, en équilibre avec les besoins de rétention pour la continuité de l’activité ?
 - **Gestion des demandes de personnes concernées par les données.** Quels mécanismes seront nécessaires pour gérer les demandes de personnes concernées et toutes les actions correctives, telles que l’anonymisation, la réinitialisation et la suppression ?
 - **Surveillance et création de rapports en continu.** Quel type de techniques quotidiennes de surveillance, d’investigation et de création de rapports sont disponibles pour les différents types et sources de données ?
-- **Limitations du traitement des données.** Existe-t-il des limitations sur l’utilisation des données pour les informations collectées ou stockées par le biais de ces méthodes que l’organisation doit refléter dans les contrôles de confidentialité ? Par exemple, les engagements que les données personnelles ne seront pas utilisées par le personnel commercial peuvent obliger votre organisation à mettre en place des mécanismes pour empêcher le transfert ou le stockage de ces informations dans les systèmes associés à l’organisation commerciale.
+- **Limitations du traitement des données.** Existe-t-il des limitations sur l’utilisation des données pour les informations collectées ou stockées par le biais de ces méthodes que l’organisation doit refléter dans les contrôles de confidentialité ? Par exemple, les engagements que les données personnelles ne seront pas utilisées par le personnel des ventes peuvent obliger votre organisation à mettre en place des mécanismes pour empêcher le transfert ou le stockage de ces informations dans les systèmes associés à l’organisation commerciale.
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>Données des employés nécessaires pour effectuer des fonctions métier quotidiennes
 
@@ -182,7 +182,7 @@ L’évaluation du RGPD se compose des sections suivantes :
 |Section|Description|
 |:-------|:-----|
 |Gouvernance|<ol><li>Votre politique de confidentialité indique-t-elle explicitement quelles informations de données sont traitées ? </li><li>Exécutez-vous régulièrement des évaluations d’impact sur la confidentialité ( PIA) ? </li><li> Utilisez-vous un outil pour gérer les informations personnelles (PI) ? </li><li> Disposez-vous d’un pouvoir juridique pour effectuer des activités à l’aide de données PI sur une personne donnée ? Effectuez-vous le suivi du consentement pour les données ? </li><li> Effectuez-vous le suivi, l’implémentation et la gestion des contrôles d’audit ? Surveillez-vous les fuites de données ? </li></ol>|
-|Suppression et notification|<ol><li>Donnez-vous des instructions explicites sur la façon dont les données des utilisateurs sont accessibles ? </li><li> Avez-vous mis en place des processus documentés pour gérer le refus de consentement ? </li><li> Disposez-vous d’un processus de suppression automatisée des données ? </li><li> Avez-vous un processus pour valider l’identité lors de l’engagement avec un client ? </li></ol>|
+|Suppression et notification|<ol><li>Donnez-vous des instructions explicites sur la façon dont les données des utilisateurs sont accessibles ? </li><li> Avez-vous mis en place des processus documentés pour gérer le consentement de refus ? </li><li> Disposez-vous d’un processus de suppression automatisée des données ? </li><li> Avez-vous un processus pour valider l’identité lors de l’engagement avec un client ? </li></ol>|
 |Atténuation des risques et sécurité des informations|<ol><li>Utilisez-vous des outils pour analyser des données non structurées ? </li><li>Tous les serveurs sont-ils à jour et tirez-vous parti des pare-feu pour les protéger ? </li><li>Exécutez-vous des sauvegardes régulières de vos serveurs ? </li><li>Surveillez-vous activement les fuites de données ? </li><li>Chiffrez-vous vos données au repos et en transmission ? </li></ol>|
 |Gestion des stratégies|<ol><li>Comment gérez-vous vos règles d’entreprise de liaison (BCR) ? </li><li>Effectuez-vous le suivi du consentement pour les données ? </li><li> Sur une échelle de 1 à 5, 5 étant entièrement couverte, vos contrats couvrent-ils les classifications de données et les exigences de gestion ? </li><li>Avez-vous et testez-vous régulièrement un plan de réponse aux incidents ? </li><li>Quelle stratégie utilisez-vous pour gérer l’accès ? </li></ol>|
 |||
@@ -213,7 +213,7 @@ Pour plus d’informations, consultez ces articles :
 - [En savoir plus sur les types d’informations confidentielles](../compliance/sensitive-information-type-learn-about.md).
 - [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](../compliance/create-a-custom-sensitive-information-type.md)
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
+- [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview)
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 

@@ -2,7 +2,7 @@
 title: Fonctionnalités de Microsoft Defender pour point de terminaison prises en charge par plateforme
 description: Découvrez les fonctionnalités Microsoft Defender pour point de terminaison prises en charge pour Windows 10 appareils, serveurs et appareils non Windows.
 keywords: intégration, Microsoft Defender pour point de terminaison intégration, sccm, stratégie de groupe, mdm, script local, test de détection
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 8370bfcae9efbac72642292d41b844cc7b20219a
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.subservice: mde
+ms.openlocfilehash: 216532eab9aead28c94122bfacfa4946d191279b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445201"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585921"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-capabilities-by-platform"></a>Fonctionnalités de Microsoft Defender pour point de terminaison prises en charge par plateforme
 

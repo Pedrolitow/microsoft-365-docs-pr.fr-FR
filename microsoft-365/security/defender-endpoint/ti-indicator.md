@@ -2,7 +2,7 @@
 title: Type de ressource d’indicateur
 description: Spécifiez les détails de l’entité et définissez l’expiration de l’indicateur à l’aide de Microsoft Defender pour point de terminaison.
 keywords: api, api prises en charge, get, TiIndicator, Indicator, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: dcdba63fe99d092f2ce6a9839a94f5e4c297ee66
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 48ca73f30b087f18adacd24008de30bab2dba5ae
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330760"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585111"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource d’indicateur
 
@@ -58,7 +58,7 @@ application|Chaîne|Application associée à l’indicateur.
 action|Énum|Action qui sera effectuée si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Warn », « Block », « Audit », « Alert », « AlertAndBlock », « BlockAndRemediate » et « Allowed ».
 |externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 Sourcetype|Énum|« Utilisateur » dans le cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il serait soumis à l’aide d’une application automatisée via l’API.
-createdBySource|string|Nom de l’utilisateur/de l’application qui a envoyé l’indicateur.
+createdBySource|chaîne|Nom de l’utilisateur/de l’application qui a envoyé l’indicateur.
 createdBy|String|Identité unique de l’utilisateur/de l’application qui a envoyé l’indicateur.
 lastUpdatedBy|Chaîne|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
 creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicateur.

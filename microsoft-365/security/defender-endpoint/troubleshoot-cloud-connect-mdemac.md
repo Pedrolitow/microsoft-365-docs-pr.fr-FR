@@ -1,8 +1,8 @@
 ---
-title: Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur macOS
-description: Cette rubrique décrit comment résoudre les problèmes de connectivité cloud pour Microsoft Defender pour Endpoint sur macOS
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
-ms.prod: m365-security
+title: Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour point de terminaison sur macOS
+description: Cette rubrique explique comment résoudre les problèmes de connectivité cloud pour Microsoft Defender pour point de terminaison sur macOS
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,29 +13,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 677737f530e35ed52a2a1f3fe7a8d6f18c26e7b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.subservice: mde
+ms.openlocfilehash: ac6cb30d14f0d2295667227dc3f94d1f86159413
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326564"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584196"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur macOS
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plateforme** macOS
 
-Cette rubrique décrit comment résoudre les problèmes de connectivité cloud pour Microsoft Defender pour Endpoint sur macOS.
+Cette rubrique explique comment résoudre les problèmes de connectivité cloud pour Microsoft Defender pour point de terminaison sur macOS.
 
 ## <a name="run-the-connectivity-test"></a>Exécuter le test de connectivité
-Pour tester si Defender pour Point de terminaison sur Mac peut communiquer avec le cloud avec les paramètres réseau actuels, exécutez un test de connectivité à partir de la ligne de commande :
+Pour tester si Defender pour point de terminaison sur Mac peut communiquer avec le cloud avec les paramètres réseau actuels, exécutez un test de connectivité à partir de la ligne de commande :
 
 ```Bash
 mdatp connectivity test
@@ -59,26 +59,26 @@ Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 ```
 
-Si le test de connectivité échoue, vérifiez si l’appareil dispose d’un [](microsoft-defender-endpoint-mac.md#network-connections) accès à Internet et si l’un des points de terminaison requis par le produit est bloqué par un proxy ou un pare-feu.
+Si le test de connectivité échoue, vérifiez si l’appareil a accès à Internet et si [l’un des points de terminaison requis par le produit](microsoft-defender-endpoint-mac.md#network-connections) est bloqué par un proxy ou un pare-feu.
 
-Les échecs avec erreur d’erreur 35 ou 60 indiquent le rejet de l’épinglage de certificat, ce qui indique un problème potentiel avec l’inspection SSL ou HTTPS. Consultez les instructions ci-dessous concernant la configuration de l’inspection SSL.
+Les échecs avec l’erreur curl 35 ou 60 indiquent le rejet de l’épinglage de certificat, ce qui indique un problème potentiel avec l’inspection SSL ou HTTPS. Consultez les instructions ci-dessous concernant la configuration de l’inspection SSL.
 
-## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-proxy-autoconfig-pac-or-with-web-proxy-autodiscovery-protocol-wpad"></a>Étapes de résolution des problèmes pour les environnements sans proxy ou avec la mise en conférence automatique du proxy (PAC) ou avec le protocole WPAD (Web Proxy Autodiscovery Protocol)
-Utilisez la procédure suivante pour vérifier qu’une connexion n’est pas bloquée dans un environnement sans proxy ou avec la mise en service automatique du proxy (PAC) ou avec le protocole WPAD (Web Proxy Autodiscovery Protocol).
+## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-proxy-autoconfig-pac-or-with-web-proxy-autodiscovery-protocol-wpad"></a>Étapes de résolution des problèmes pour les environnements sans proxy, avec la configuration automatique du proxy (PAC) ou avec le protocole WPAD (Web Proxy Autodiscovery Protocol)
+Utilisez la procédure suivante pour vérifier qu’une connexion n’est pas bloquée dans un environnement sans proxy ou avec la configuration automatique du proxy (PAC) ou avec le protocole WPAD (Web Proxy Autodiscovery Protocol).
 
-Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment.
+Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic anonyme est autorisé dans les URL précédemment répertoriées.
 
 > [!WARNING]
-> Les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seuls pac, WPAD ou un proxy statique est utilisé. L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy afin de transmettre directement les données de Microsoft Defender for Endpoint sur macOS aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
-Pour tester qu’une connexion n’est pas bloquée : dans un navigateur tel que Microsoft Edge pour Mac ou Safari, ouvrez https://x.cp.wd.microsoft.com/api/report et https://cdn.x.cp.wd.microsoft.com/ping.
+> Les proxys authentifiés ne sont pas pris en charge. Vérifiez que seuls pac, WPAD ou proxy statique sont utilisés. Les proxys d’inspection et d’interception SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy pour passer directement les données de Microsoft Defender pour point de terminaison sur macOS aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
+Pour tester qu’une connexion n’est pas bloquée : dans un navigateur tel que Microsoft Edge pour Mac ou Safari ouvert https://x.cp.wd.microsoft.com/api/report et https://cdn.x.cp.wd.microsoft.com/ping.
 
-Éventuellement, dans Terminal, exécutez la commande suivante :
+Si vous le souhaitez, dans Terminal, exécutez la commande suivante :
 
 ```Bash
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping' 
 ```
 
-La sortie de cette commande doit être similaire à celle-ci :
+La sortie de cette commande doit être similaire à :
 ```bash
 OK https://x.cp.wd.microsoft.com/api/report
 OK https://cdn.x.cp.wd.microsoft.com/ping

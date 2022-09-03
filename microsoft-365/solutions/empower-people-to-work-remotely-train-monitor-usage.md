@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Formez vos utilisateurs et veillez à ce que les problèmes soient traités rapidement.
-ms.openlocfilehash: cb9fa844a9359318d4458fc8f800f834fd9e6f02
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 04da36703cdcd94f0e32a841599ba0314829bd09
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314026"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586135"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Étape 6 : former vos employés et répondre aux commentaires sur l’utilisation
 

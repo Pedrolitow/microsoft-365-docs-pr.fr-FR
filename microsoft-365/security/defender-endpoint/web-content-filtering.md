@@ -2,7 +2,7 @@
 title: Filtrage du contenu web
 description: Utilisez le filtrage de contenu web dans Microsoft Defender pour point de terminaison pour suivre et réglementer l’accès aux sites web en fonction de leurs catégories de contenu.
 keywords: protection web, protection contre les menaces web, navigation web, surveillance, rapports, cartes, liste de domaines, sécurité, hameçonnage, programmes malveillants, exploit, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 7b195f595592b5c3b284b6dee4fd65b66d80e06a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: 294549d49c37024d0f1c9ed94a325990aacbf572
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489362"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585859"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -48,7 +48,7 @@ Le filtrage de contenu web est disponible sur les principaux navigateurs web, av
 - Si vous utilisez Defender pour point de terminaison, votre équipe de sécurité peut facilement déployer des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans [Microsoft Defender pour point de terminaison paramètres de contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac).
 - Si vous utilisez Defender entreprise, vous pouvez définir une stratégie de filtrage de contenu web qui sera appliquée à tous les utilisateurs. 
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 Avant d’essayer cette fonctionnalité, veillez à respecter les exigences décrites dans le tableau suivant :
 
@@ -76,7 +76,7 @@ Le résultat est que les catégories 1 à 4 sont toutes bloquées.  Ceci est ill
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et connectez-vous.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Portail Microsoft 365 Defender</a> et connectez-vous.
 
 2. Dans le volet de navigation, sélectionnez **Paramètres des** \> **points de terminaison Fonctionnalités avancées** \> **générales**\>. 
 
