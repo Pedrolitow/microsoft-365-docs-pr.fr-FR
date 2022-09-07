@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 'Ensemble de suggestions sur lesquelles concentrer vos efforts dans le portail Defender lorsqu’il s’agit d’opérations quotidiennes, hebdomadaires ou mensuelles. '
-ms.openlocfilehash: ab444aad5980af224b2005209dc5596fcb10f899
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 2d7464741af66ba31764a1330e323c0fab08bf6b
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894074"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612810"
 ---
 # <a name="microsoft-365-business-premium-security-operations-guide"></a>Guide des opérations de sécurité Microsoft 365 Business Premium
 

@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez la protection des liens sécurisés dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez les liens fiables Teams et consultez les graphiques des messages Liens fiables.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 63f2a129b5a02969cdc8859611822cdb3c89ec89
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 501e75e2c81d12d99b1f093991b864c7ad43519e
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497332"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612898"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -53,7 +53,7 @@ Regardez cette courte vidéo sur la façon de se protéger contre les liens malv
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 > [!NOTE]
-> Bien qu’il n’existe aucune stratégie de liens fiables par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des liens sécurisés dans les messages électroniques, Microsoft Teams et les fichiers dans les applications Office prises en charge à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de liens sécurisés personnalisées ou les stratégies de sécurité prédéfinies Standard ou Strict) titulaires d’une licence pour Defender pour Office 365. Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md). Vous pouvez également créer des stratégies de liens fiables qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques. Pour obtenir des instructions, consultez [Configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-safe-links-policies.md).
+> Bien qu’il n’existe aucune stratégie de liens fiables par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des liens sécurisés dans les messages électroniques, Microsoft Teams et les fichiers dans les applications Office prises en charge à tous les destinataires titulaires d’une licence pour Defender pour Office 365 (utilisateurs qui ne sont pas définis dans les stratégies de sécurité prédéfinies standard ou strictes ou dans les stratégies de liens sécurisés personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md). Vous pouvez également créer des stratégies de liens fiables qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques. Pour obtenir des instructions, consultez [Configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-safe-links-policies.md).
 
 La protection Liens fiables est disponible dans les emplacements suivants :
 
@@ -95,7 +95,7 @@ Le tableau suivant décrit les scénarios de liaisons sécurisées dans Microsof
 |Scénario|Résultat|
 |---|---|
 |Jean est membre du service marketing. La protection des liens sécurisés pour les applications Office est activée dans une stratégie de liens fiables qui s’applique aux membres du service marketing. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par des liens fiables. <p> Jean est inclus dans une stratégie liens sécurisés dans laquelle la protection des liens sécurisés pour les applications Office est activée. <p> Pour plus d’informations sur la configuration requise pour la protection des liens sécurisés dans les applications Office, consultez la section [Liens sécurisés pour les applications Office](#safe-links-settings-for-office-apps) plus loin dans cet article.|
-|Aucune stratégie de liens fiables n’est configurée dans l’organisation Microsoft 365 E5 de Chris. Chris reçoit un e-mail d’un expéditeur externe qui contient une URL vers un site web malveillant qu’il clique finalement.|Chris est protégé par des liens fiables. <p> La **stratégie de sécurité** prédéfinie de protection intégrée fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans des stratégies de liens fiables personnalisées ou des stratégies de sécurité prédéfinies standard ou strictes). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).|
+|Aucune stratégie de liens fiables n’est configurée dans l’organisation Microsoft 365 E5 de Chris. Chris reçoit un e-mail d’un expéditeur externe qui contient une URL vers un site web malveillant qu’il clique finalement.|Chris est protégé par des liens fiables. <p> La **stratégie de sécurité** prédéfinie de protection intégrée fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de sécurité prédéfinies Standard ou Strict ou dans des stratégies de liens sécurisés personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).|
 |Dans l’organisation de Pat, les administrateurs ont créé une stratégie liens sécurisés qui applique Pat, mais la protection des liens sécurisés pour les applications Office est désactivée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par des liens fiables. <p> Bien que Pat soit inclus dans une stratégie de liens sécurisés active, la protection des liens sécurisés pour les applications Office est désactivée dans cette stratégie, de sorte que la protection ne peut pas être appliquée.|
 |Dans l’organisation de Lee, `https://tailspintoys.com` est configuré dans la liste **Bloquer les URL suivantes** dans les paramètres globaux des liens fiables. Une stratégie liens sécurisés qui inclut Lee existe déjà. Lee reçoit un e-mail qui contient l’URL `https://tailspintoys.com/aboutus/trythispage`. Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; cela dépend de l’entrée d’URL dans la liste et du client d’e-mail Lee utilisé. Pour plus d’informations, consultez la [liste « Bloquer les URL suivantes » pour la section Liens fiables](#block-the-following-urls-list-for-safe-links) plus loin dans cet article.|
 |Jamie et Julia travaillent pour contoso.com. Il y a longtemps, les administrateurs ont configuré des stratégies safe links qui s’appliquent à la fois à Jamie et Julia. Jamie envoie un e-mail à Julia, ne sachant pas que l’e-mail contient une URL malveillante.|Julia est protégée par liens sécurisés **si** la stratégie liens sécurisés qui s’applique à elle est configurée pour s’appliquer aux messages entre destinataires internes. Pour plus d’informations, consultez la section [Liens sécurisés pour les messages électroniques](#safe-links-settings-for-email-messages) plus loin dans cet article.|
@@ -104,17 +104,17 @@ Le tableau suivant décrit les scénarios de liaisons sécurisées dans Microsof
 
 Vous devez spécifier les conditions de destinataire et les exceptions qui déterminent à qui la stratégie s’applique. Vous pouvez utiliser ces propriétés pour les conditions et les exceptions :
 
-- **Le destinataire est**
-- **Le domaine du destinataire est**
-- **Le destinataire est membre de**
+- **Utilisateurs**
+- **Groupes**
+- **Domaines**
 
 Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais la condition ou l'exception peut contenir plusieurs valeurs. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
 > [!IMPORTANT]
 > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
 >
-> - Le destinataire est : romain@contoso.com
-> - Le destinataire est membre de : Exécutifs
+> - Utilisateurs : romain@contoso.com
+> - Groupes : Cadres supérieurs
 >
 > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
 >

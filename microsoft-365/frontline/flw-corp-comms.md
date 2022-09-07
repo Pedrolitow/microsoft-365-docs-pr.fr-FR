@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: ff0abacf0961bf1df7751ca3e1fca8293902887c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5e8753511c0171dcbb864528a31c0a65209726c7
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474070"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615060"
 ---
 # <a name="corporate-communications-with-frontline-workers"></a>Communications d’entreprise avec les employés de première ligne
 
@@ -62,3 +62,7 @@ Plus d’informations sur Yammer :
 
 - Pour les administrateurs : [Gérer Yammer](/yammer)
 - Pour les utilisateurs : [Utiliser Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c)
+
+## <a name="connect-over-email-with-exchange-online-and-outlook"></a>Se connecter par e-mail avec Exchange Online et Outlook
+
+Email est un outil de communication de base pour la plupart des lieux de travail. [Configurez le courrier électronique avec Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) et créez des boîtes aux lettres pour vos employés et responsables de première ligne afin de pouvoir envoyer des communications de diffusion par e-mail. Les utilisateurs doivent disposer d’une licence F3 pour disposer d’une boîte aux lettres électronique.

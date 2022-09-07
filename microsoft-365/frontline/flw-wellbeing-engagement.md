@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 14cde97d085faf859b5f096ed708d72cdc2ae8f0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 1197cc585f5725cf3569699d23d01ebf1894e2dc
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992153"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614151"
 ---
 # <a name="engage-your-frontline-workers-and-focus-on-wellbeing"></a>Impliquez vos employés et concentrez-vous sur le bien-être
 
@@ -63,7 +63,7 @@ Viva Connections se compose de trois composants principaux qui peuvent être con
 |Composant |Description |Fonctionnalités |
 |:---------|:-----------|:------------|
 |Tableau de bord |Le tableau de bord est l’ensemble d’outils numériques de votre employé et permet un accès rapide aux tâches courantes. |Hiérarchiser les cartes qui aident les travailleurs de première ligne à accomplir des tâches courantes, telles que l’horloge entrante et sortante, ou l’affichage des tâches affectées. Les cartes peuvent être ciblées sur des rôles et des régions distincts. |
-|Flux |Le flux agrège le contenu de Yammer, d’actualités SharePoint et de Stream pour afficher un flux d’actualités personnalisé. |Le contenu du flux est automatiquement agrégé dans un emplacement central en fonction des sites SharePoint et des communautés Yammer qu’ils suivent. Le contenu peut être hiérarchisé pour s’afficher de manière plus visible dans le flux. |
+|Flux |Le flux agrège le contenu de Yammer, d’actualités SharePoint et de Stream pour afficher un flux d’actualités personnalisé. |Le contenu du flux est automatiquement agrégé dans un emplacement central en fonction des sites SharePoint et des communautés Yammer qu’ils suivent. Le contenu peut être hiérarchisé pour s’afficher de manière plus visible dans le flux. Utilisez le ciblage d’audience pour afficher du contenu à des audiences spécifiques. |
 |Ressources |La surface Ressources est liée à des portails SharePoint populaires et à d’autres contenus. |Les ressources sont héritées de la navigation globale dans SharePoint. Lien vers des portails SharePoint populaires tels que les avantages sociaux et les ressources de formation des RH. Les portails SharePoint modernes s'affichent dans Teams pour offrir la meilleure expérience d'affichage possible. |
 
 Il existe plusieurs façons d’utiliser Viva Connections pour communiquer avec votre personnel. Viva Connections propose un [flux dans lequel les actualités, le contenu de Yammer et les vidéos sont agrégés et affichés](/viva/connections/viva-connections-overview#viva-connections-feed) dans une vue personnalisée en fonction des sites et des communautés suivis par la visionneuse. Le [Tableau de bord](/viva/connections/create-dashboard) peut également être utilisé pour mettre en surbrillance certaines cartes qui sont liées à des sources d’actualités importantes.
@@ -87,7 +87,7 @@ La création de canaux permettant à vos employés de première ligne de partage
 Les travailleurs de première ligne ont besoin d’un soutien supplémentaire lorsqu’il s’agit de gérer la santé et le bien-être. Non seulement leur travail est rapide, mais ils peuvent également être physiquement et émotionnellement exigeants.
 
 - **Sur le tableau de bord** : contrôles d’intégrité quotidiens surface, rappels de bien-être et [autres solutions tierces qui permettent aux utilisateurs de se sentir connectés et productifs](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
-- **Dans le flux** : Utilisez des [billets d’actualités SharePoint](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) et [liens d’actualités vidéo](/viva/connections/video-news-links) pour mettre en évidence les ressources de bien-être et de santé.
+- **Dans le flux** : Utilisez des [billets d’actualités SharePoint](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) et [liens d’actualités vidéo](/viva/connections/video-news-links) pour mettre en évidence les ressources de bien-être et de santé. Vous pouvez utiliser le ciblage d’audience pour vous assurer que les publications atteignent les personnes les plus pertinentes.
 - **Dans Ressources** : lier les ressources de bien-être et de santé à vos travailleurs peut y accéder à tout moment.
 
 ### <a name="create-a-supportive-digital-ecosystem"></a>Créer un écosystème numérique de soutien
@@ -146,7 +146,7 @@ Si votre organisation utilise déjà Microsoft Teams, vous avez peut-être enreg
 
 Une fois qu’une réunion est enregistrée et enregistrée dans SharePoint, votre équipe de communication d’entreprise peut [ajouter une carte dans Connexions Viva](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards) pour la rendre facilement accessible à votre équipe de première ligne.
 
-### <a name="host-live-events-and-share-content-on-microsoft-stream"></a>Héberger des événements en direct et partager du contenu sur Microsoft Stream
+### <a name="host-live-events-and-share-video-content-on-microsoft-stream"></a>Héberger des événements en direct et partager du contenu vidéo sur Microsoft Stream
 
 Microsoft Stream est la propre plateforme vidéo de streaming de votre organisation. Avec Stream, tous les membres de votre organisation peuvent enregistrer et télécharger des vidéos à partager. Les moyens d’utiliser Stream pour impliquer vos employés de première ligne sont les suivants :
 

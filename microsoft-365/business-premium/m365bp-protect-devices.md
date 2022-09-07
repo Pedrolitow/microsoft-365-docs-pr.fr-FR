@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/24/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la configuration et de la sécurisation des appareils gérés contre les menaces de sécurité et les cyberattaques. Implémentez des défenses de cybersécurité et une protection des points de terminaison par le biais de l’inscription et de l’intégration de tous les appareils. Découvrez comment configurer des stratégies d’appareil et gérer des groupes d’appareils.
-ms.openlocfilehash: 32f76d20130a07031266ad001f5ac1ce7b476d14
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 7a70510655669ed8729d8155315948474893f730
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433507"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612788"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configurer et sécuriser des appareils gérés
 

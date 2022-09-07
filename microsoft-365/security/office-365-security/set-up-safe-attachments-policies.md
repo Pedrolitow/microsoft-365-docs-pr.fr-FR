@@ -18,12 +18,12 @@ description: Découvrez comment définir des stratégies de pièces jointes séc
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 3b47007eb3653c6f1d10cfc808d4052f6899e996
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: ad5b68ca377a03ff42044b85c3125339bcbc8b62
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496612"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611889"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de pièces jointes sécurisées dans Microsoft Defender pour Office 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "67496612"
 
 Les pièces jointes sécurisées sont une fonctionnalité de [Microsoft Defender pour Office 365](whats-new-in-defender-for-office-365.md) qui utilise un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques entrants une fois qu’elles ont été analysées par [la protection anti-programme malveillant dans Exchange Online Protection (EOP),](anti-malware-protection.md) mais avant leur remise aux destinataires. Pour plus d’informations, consultez [Pièces jointes sécurisées dans Microsoft Defender pour Office 365](safe-attachments.md).
 
-Bien qu’il n’existe aucune stratégie de pièces jointes sécurisées par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des pièces jointes sécurisées à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de pièces jointes sécurisées personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md). Vous pouvez également utiliser les procédures décrites dans cet article pour créer des stratégies de pièces jointes sécurisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques.
+Bien qu’il n’existe aucune stratégie de pièces jointes sécurisées par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des pièces jointes sécurisées à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de sécurité prédéfinies standard ou strictes ou les stratégies de pièces jointes sécurisées personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md). Vous pouvez également utiliser les procédures décrites dans cet article pour créer des stratégies de pièces jointes sécurisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques.
 
 Vous pouvez configurer des stratégies de pièces jointes sécurisées dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans boîte aux lettres Exchange Online , mais avec Defender pour Office 365 abonnements aux modules complémentaires).
 
@@ -111,8 +111,8 @@ La création d’une stratégie de pièces jointes sécurisées personnalisée d
    > [!IMPORTANT]
    > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
-   > - Le destinataire est : romain@contoso.com
-   > - Le destinataire est membre de : Exécutifs
+   > - Utilisateurs : romain@contoso.com
+   > - Groupes : Cadres supérieurs
    >
    > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
    >
