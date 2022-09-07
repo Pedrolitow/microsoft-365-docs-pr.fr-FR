@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ae576e721fd0f2ba392ae5203d2ab31a7fc6bb0e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9a144968d112328ace78b27f2f62b4ecc3cfd921
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482601"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611210"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -115,8 +115,8 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
    > [!IMPORTANT]
    > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
-   > - Le destinataire est : romain@contoso.com
-   > - Le destinataire est membre de : Exécutifs
+   > - Utilisateurs : romain@contoso.com
+   > - Groupes : Cadres supérieurs
    >
    > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
    >

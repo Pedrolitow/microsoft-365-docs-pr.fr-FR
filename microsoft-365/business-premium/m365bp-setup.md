@@ -7,7 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/05/2022
 ms.reviewer: shlomiakirav
@@ -15,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: b123f7e13a8a3fa3c796f3ce2ff02ea2ca125872
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: 254240fb52eae757ac252627ef1e171e5ae8ac43
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275031"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613777"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurer Microsoft 365 Business Premium
 

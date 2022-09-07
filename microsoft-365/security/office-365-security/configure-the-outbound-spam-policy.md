@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f26f2f1056b17725761181e5b606bafcd421c923
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 03b6769e91ce667cafe2318a5ea4a7a44550bc67
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481215"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613469"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -119,8 +119,8 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
    > [!IMPORTANT]
    > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
-   > - Le destinataire est : romain@contoso.com
-   > - Le destinataire est membre de : Exécutifs
+   > - Utilisateurs : romain@contoso.com
+   > - Groupes : Cadres supérieurs
    >
    > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
    >

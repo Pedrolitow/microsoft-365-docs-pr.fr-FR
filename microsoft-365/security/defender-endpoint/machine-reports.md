@@ -1,6 +1,6 @@
 ---
-title: Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
-description: Utilisez le rapport d’intégrité et de conformité des appareils pour suivre l’intégrité de l’appareil, l’état et les versions de l’antivirus, les plateformes de système d’exploitation et les versions Windows 10.
+title: Rapport d’intégrité des appareils dans Microsoft Defender pour point de terminaison
+description: Utilisez le rapport d’intégrité de l’appareil pour suivre l’intégrité de l’appareil, l’état et les versions de l’antivirus, les plateformes de système d’exploitation et les versions Windows 10.
 keywords: état d’intégrité, antivirus, plateforme de système d’exploitation, version windows 10, version, intégrité, conformité, état
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -11,18 +11,19 @@ ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 localization_priority: Normal
-ms.date: 09/01/2022
+ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 57db94df3cfd8fae60ab335f2f4a3c8c02f3c9cf
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.reviewer: mkaminska
+ms.openlocfilehash: 1acfb53905d5f122ce548b1e1a90cf7ca1b0ee75
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584857"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614569"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
 
@@ -36,7 +37,7 @@ ms.locfileid: "67584857"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Le rapport d’état des appareils fournit des informations générales sur les appareils de votre organisation. Le rapport inclut des informations de tendance indiquant l’état d’intégrité du capteur, l’état antivirus, les plateformes de système d’exploitation et les versions Windows 10.
+Le rapport Intégrité des appareils fournit des informations générales sur les appareils de votre organisation. Le rapport inclut des informations de tendance indiquant l’état d’intégrité du capteur, l’état de l’antivirus, les plateformes de système d’exploitation, les versions Windows 10 et les versions de mise à jour de l’antivirus Microsoft Defender.
 
 > [!IMPORTANT]
 > Pour que Windows&nbsp;Server&nbsp;2012&nbsp;R2 et Windows&nbsp;Server&nbsp;2016 apparaissent dans les rapports d’intégrité des appareils, ces appareils doivent être intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
@@ -49,7 +50,7 @@ Le tableau de bord Intégrité et conformité de l’appareil est structuré sou
   - [Carte des systèmes d’exploitation et des plateformes](#operating-systems-and-platforms-card)
   - [carte de versions Windows 10](#windows-10-versions-card)
 
-- [L’onglet **Intégrité de l’Antivirus Microsoft Defender**](#microsoft-defender-antivirus-health-tab) comporte huit cartes qui signalent les aspects de l’Antivirus Microsoft Defender :
+- [L’onglet **Intégrité de l’Antivirus Microsoft Defender**](#microsoft-defender-antivirus-health-tab) comporte huit cartes qui signalent les aspects de l’antivirus Microsoft Defender (MDAV) :
   - [Carte en mode Antivirus](#antivirus-mode-card)
   - [Carte de version du moteur antivirus](#antivirus-engine-version-card)
   - [Carte de version du renseignement de sécurité antivirus](#antivirus-security-intelligence-version-card)
@@ -172,7 +173,7 @@ Les rapports à jour génèrent des informations pour les appareils qui réponde
 - Protection cloud activée
 - Système d’exploitation Windows*
 
-*Actuellement, la création de rapports à jour est disponible uniquement pour les appareils Windows. Les appareils multiplateformes tels que Mac et Linux sont répertoriés sous « aucune donnée disponible »
+*Actuellement, les rapports à jour sont disponibles uniquement pour les appareils Windows. Les appareils multiplateformes tels que Mac et Linux sont répertoriés sous « Aucune donnée disponible »/Inconnu
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Affiche l’onglet Intégrité de l’antivirus Microsoft Defender." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -227,7 +228,7 @@ Pour plus d’informations sur l’exportation à l’aide de l’API, consultez
 
 > [!IMPORTANT]
 >
-> Actuellement, seule la **réponse JSON d’intégrité antivirus** est généralement disponible. **L’API Antivirus Health via des fichiers** est actuellement disponible uniquement en préversion publique.
+> Actuellement, seule la **réponse JSON d’intégrité antivirus** est généralement disponible. **L’API Antivirus Health via des fichiers** est disponible uniquement en préversion publique.
 >
 > La **requête personnalisée De chasse avancée** n’est actuellement disponible qu’en préversion publique, même si les requêtes sont toujours visibles.
 
@@ -307,12 +308,12 @@ Pour plus d’informations sur les versions actuelles et la mise à jour des dif
 
 Les cartes à jour affichent l’état à jour pour les versions de  **mise** à jour antivirus, de  **plateforme antivirus** et de mise à jour **du renseignement de sécurité** . Il existe trois états possibles :  _à jour_ (« True »), _obsolète_ (« False ») et _aucune donnée disponible_ (« Inconnu »).
 
-Des définitions pour les cartes _à jour_, _obsolètes_ et _no_data_available_ sont fournies pour chaque carte ci-dessous.
+Les définitions pour  _la mise à jour_, hors date_ et _aucune donnée disponible ne_ sont fournies pour chaque carte ci-dessous.
 
-L’antivirus Microsoft Defender (MDAV) établit des rapports et des déterminations à jour en fonction des critères suivants :
+Les rapports MDAV constituent des déterminations et des rapports à jour en fonction des critères suivants :
 
-- **Pour les mises à jour du moteur & plateforme** : l’heure à laquelle les événements clients ont été reçus pour la dernière fois pour les rapports à jour (« Heure d’actualisation de la signature ») et l’heure de publication du renseignement de sécurité (les machines virtuelles de renseignement de sécurité sont également utilisées pour déterminer les versions du moteur & plateforme)
-- **Pour les mises à jour du renseignement de sécurité** : heure à laquelle les événements clients ont été reçus pour la dernière fois pour les rapports à jour (« Heure d’actualisation de la signature »), heure de publication du renseignement de sécurité et dernier état à jour communiqué par le client
+- **Pour les mises à jour du moteur & plateforme** : « Heure d’actualisation des signatures » (heure de la dernière réception des événements clients pour les rapports à jour) et « Heure de publication du renseignement de sécurité » (les machines virtuelles de renseignement de sécurité sont utilisées pour déterminer les versions du moteur & plateforme)
+- **Pour les mises à jour du renseignement de sécurité** : « Heure d’actualisation des signatures » (heure à laquelle les événements clients ont été reçus pour la dernière fois pour les rapports à jour), heure de publication du renseignement de sécurité et dernier état à jour communiqué par le client
 
 Pour plus d’informations sur les termes susmentionnés, reportez-vous à la section : [Nouvelles définitions de filtre antivirus Microsoft Defender](#new-microsoft-defender-antivirus-filter-definitions)
 
@@ -327,7 +328,7 @@ Pour plus d’informations sur les termes susmentionnés, reportez-vous à la se
 > - Protection cloud activée
 > - Système d’exploitation Windows*
 >
->*Actuellement, la création de rapports à jour est disponible uniquement pour les appareils Windows. Les appareils multiplateformes tels que Mac et Linux sont répertoriés sous « aucune donnée disponible »
+>*Actuellement, les rapports à jour sont disponibles uniquement pour les appareils Windows. Les appareils multiplateformes tels que Mac et Linux sont répertoriés sous « aucune donnée disponible »
 >
 
 ##### <a name="up-to-date-definitions"></a>Définitions à jour
@@ -356,9 +357,9 @@ Pour plus d’informations sur ces informations, consultez :
 
 Cette carte identifie les appareils dont les versions du moteur antivirus sont à jour ou obsolètes.
 
-**La définition générale de « _À jour_ »** : la version du moteur sur l’appareil est la version la plus récente du moteur (le moteur est _généralement_ publié tous les mois, via Windows Update (WU)). Il existe une période de grâce de trois jours à partir du jour où Windows Update (WU) est libéré.
+**Définition générale de « _À jour_ »** : la version du moteur sur l’appareil est la version la plus récente du moteur. Le moteur est _généralement_ publié tous les mois, via Windows Update (WU)). Une période de grâce de trois jours est donnée à partir du jour où Windows Update (WU) est libéré.
 
-Le tableau suivant présente les valeurs possibles pour les rapports à jour pour le **moteur antivirus**. L’état signalé est basé sur la dernière fois que l’événement de rapport a été reçu et sur l’heure de publication du renseignement de sécurité.  
+Le tableau suivant présente les valeurs possibles pour les rapports à jour pour le **moteur antivirus**. L’état signalé est basé sur la dernière fois que l’événement de rapport a été reçu et l’heure de publication du renseignement de sécurité.  
 
 | Heure de la dernière actualisation de l’événement (également appelée « Heure d’actualisation de signature » dans les rapports) | Heure de publication du renseignement de sécurité | _État signalé_ : |
 |:----|:----|:----|
@@ -373,9 +374,9 @@ Pour plus d’informations sur la gestion des versions de mise à jour de l’an
 
 Cette carte identifie les appareils qui ont des versions de plateforme antivirus à jour ou obsolètes.
 
-**Définition générale de « À jour »** La version de la plateforme sur l’appareil est la version la plus récente de la plateforme (la plateforme est généralement publiée mensuellement, via Windows Update). Il existe une période de grâce de trois jours à partir du jour où WU est libéré.
+**Définition générale de « À jour »** La version de la plateforme sur l’appareil est la version la plus récente de la plateforme. La plateforme est généralement publiée mensuellement, via Windows Update). Il existe une période de grâce de trois jours à partir du jour où WU est libéré.
 
-Le tableau suivant présente les valeurs de rapport à jour possibles pour **antivirus Platform**. Les valeurs signalées sont basées sur la dernière fois que l’événement de rapport a été reçu et sur l’heure de publication du renseignement de sécurité.
+Le tableau suivant présente les valeurs de rapport à jour possibles pour **antivirus Platform**. Les valeurs signalées sont basées sur la dernière réception de l’événement de création de rapports et l’heure de publication du renseignement de sécurité.
 
 | Heure de la dernière actualisation de l’événement (également appelée « Heure d’actualisation de signature » dans les rapports) | Heure de publication du renseignement de sécurité | _État signalé_ : |
 |:----|:----|:----|
@@ -392,7 +393,7 @@ Cette carte identifie les appareils qui ont des versions de renseignement de sé
 
 **La définition générale de « À jour »** : la version du renseignement de sécurité sur l’appareil a été écrite au cours des 7 derniers jours.
 
-Le tableau suivant présente les valeurs de rapport à jour possibles pour les mises à jour **du renseignement de sécurité** . Les valeurs signalées sont basées sur la dernière fois que l’événement de rapport a été reçu et sur l’heure de publication du renseignement de sécurité.
+Le tableau suivant présente les valeurs de rapport à jour possibles pour les mises à jour **du renseignement de sécurité** . Les valeurs signalées sont basées sur la dernière réception de l’événement de création de rapports, l’heure de publication du renseignement de sécurité et le dernier état reçu du client.
 
 | Heure de la dernière actualisation de l’événement <br/> (également appelé « Heure d’actualisation des signatures » dans les rapports) | Heure de publication du renseignement de sécurité | Dernier état reçu du client | _État signalé_ : |
 |:----|:----|:----|:----|

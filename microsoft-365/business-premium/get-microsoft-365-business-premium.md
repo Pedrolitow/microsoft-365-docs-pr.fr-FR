@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/20/2022
 ms.collection:
@@ -24,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenez Microsoft 365 Business Premium pour protéger votre entreprise contre les menaces de cybersécurité sur les appareils, les e-mails, les données et les communications.
-ms.openlocfilehash: 2307f6476ee2cf9c27b4b3785c29f35991d30d91
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
-ms.translationtype: HT
+ms.openlocfilehash: cf8e99f31dd378d3f91f28fc0d0ae59d0b2f728f
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917926"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611780"
 ---
 # <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>Comment s’inscrire à Microsoft 365 Business Premium
 
@@ -55,14 +56,14 @@ Microsoft dispose d’une liste de fournisseurs de solutions autorisés à vendr
 
 1. Accédez à [Rechercher les partenaires](https://appsource.microsoft.com/marketplace/partner-dir).
 
-2. Dans le volet **Filtres** , spécifiez des critères de recherche, tels que :
+2. Dans le volet **Filtres**, spécifiez les critères de recherche, tels que :
 
-   - Votre localisation
+   - Votre emplacement
    - La taille de votre organisation
-   - Les **Domaines stratégiques**, tels que **Sécurité** et/ou **Protection contre les menaces** 
-   - Les **Services**, tels que **Licences** ou **Services gérés (MSP)**
+   - **Domaines prioritaires**, tels que la **Sécurité** et/ou la **Protection contre les Menaces** 
+   - **Services**, tels que les **licences** ou les **Services gérés (MSP)**
 
-   La liste des partenaires est mise à jour au fur et à mesure que vous sélectionnez des critères.
+   Dès que vous sélectionnez un ou plusieurs critères, la liste des partenaires se met à jour.
 
 3. Passez en revue la liste des résultats. Sélectionnez un fournisseur pour en savoir plus sur son expertise et les services qu’il fournit.
 

@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/20/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la gestion des incidents de sécurité
-ms.openlocfilehash: 1637ba7ca349916588d2f75369a1a5b849596285
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 1b2635999d4e629f2cc464448519ebf96682b952
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433426"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611912"
 ---
 # <a name="security-incident-management"></a>Gestion des incidents de sécurité
 

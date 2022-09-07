@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans le portail de conformité Microsoft Purview ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: c6bded485aaaec1098b69a5f18bd813c024b21ea
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a0d2719c18d4ff13341f10cc04387eff57e56e64
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67593668"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611342"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -234,7 +234,7 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
 - **Gravité** : afficher les alertes qui se voient attribuer une gravité spécifique.
 - **Catégorie** : afficher les alertes d’une ou plusieurs catégories d’alertes.
 - **Balises** : afficher les alertes d’une ou plusieurs balises utilisateur. Les balises sont reflétées en fonction des boîtes aux lettres balisés ou des utilisateurs qui apparaissent dans les alertes. Consultez [les balises utilisateur dans Defender pour Office 365](../security/office-365-security/user-tags.md) pour en savoir plus.
-- **Source** : utilisez ce filtre pour afficher les alertes déclenchées par les stratégies d’alerte dans le portail Microsoft Purview ou les alertes déclenchées par Microsoft Defender for Cloud Apps stratégies, ou les deux. Pour plus d’informations sur Les alertes Defender pour Sécurité des applications infonuagiques, consultez la section [Afficher les alertes Defender pour Cloud Apps](#view-defender-for-cloud-apps-alerts) dans cet article.
+- **Source** : utilisez ce filtre pour afficher les alertes déclenchées par les stratégies d’alerte dans le portail Microsoft Purview ou les alertes déclenchées par Microsoft Defender for Cloud Apps stratégies, ou les deux. Pour plus d’informations sur les alertes Defender pour Cloud Apps, consultez la section [Afficher les alertes Defender pour Cloud Apps](#view-defender-for-cloud-apps-alerts) dans cet article.
 
 > [!IMPORTANT]
 > Le filtrage et le tri par balises utilisateur sont actuellement en préversion publique et peuvent être considérablement modifiés avant leur disponibilité générale. Microsoft n’offre aucune garantie, expresse ou implicite, en ce qui concerne les informations fournies à son sujet.
@@ -336,7 +336,7 @@ Voici quelques tâches que vous pouvez effectuer pour gérer les alertes.
 
 ## <a name="view-defender-for-cloud-apps-alerts"></a>Afficher les alertes Defender pour Cloud Apps
 
-Les alertes déclenchées par les stratégies de sécurité defender pour les applications cloud sont désormais affichées sur la page **Alertes** du portail Microsoft Purview. Cela inclut les alertes déclenchées par les stratégies d’activité et les alertes déclenchées par les stratégies de détection d’anomalies dans Defender pour Cloud Apps Security. Cela signifie que vous pouvez afficher toutes les alertes dans le portail Microsoft Purview. Defender pour Sécurité des applications infonuagiques est disponible uniquement pour les organisations disposant d’un abonnement Office 365 Entreprise E5 ou Office 365 G5 du gouvernement des États-Unis. Pour plus [d’informations, consultez Vue d’ensemble de Defender pour Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
+Les alertes déclenchées par les stratégies Defender pour Cloud Apps sont désormais affichées sur la page **Alertes** du portail Microsoft Purview. Cela inclut les alertes déclenchées par les stratégies d’activité et les alertes déclenchées par les stratégies de détection d’anomalies dans Defender pour Cloud Apps. Cela signifie que vous pouvez afficher toutes les alertes dans le portail Microsoft Purview. Defender pour Cloud Apps est uniquement disponible pour les organisations disposant d’un abonnement Office 365 Entreprise E5 ou Office 365 us Government G5. Pour plus [d’informations, consultez Vue d’ensemble de Defender pour Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
 
 Les organisations qui ont Microsoft Defender for Cloud Apps dans le cadre d’un abonnement Enterprise Mobility + Security E5 ou en tant que service autonome peuvent également afficher les alertes Defender pour Cloud Apps liées aux applications et services Microsoft 365 dans le portail de conformité ou le portail Microsoft 365 Defender.
 

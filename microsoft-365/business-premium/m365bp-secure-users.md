@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/24/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 Business Premium vous aide à gérer votre entreprise de manière plus sûre grâce à la productivité et à la sécurité.
-ms.openlocfilehash: ed739d1fd65925d2d8de71ec78603f811dc7f3b3
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: d448051cbe6769b72d8178a3f712ccb0cb42c81e
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433529"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611977"
 ---
 # <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>Productivité et sécurité pour les petites et moyennes entreprises 
 

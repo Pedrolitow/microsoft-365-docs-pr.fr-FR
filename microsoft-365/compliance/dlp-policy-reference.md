@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 1ddae6821c528d14b603668d943cc70abc069cdd
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: 12c416af0a6f715ce56c193830ddb0db0ad9eba1
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450122"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615229"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -313,7 +313,9 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 ##### <a name="conditions-devices-supports"></a>Conditions prises en charge par les appareils
 
 - Le contenu contient
-- L’utilisateur a accédé à un site web sensible à partir de Edge. Pour plus d’informations, consultez le [scénario 6 Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
+- (préversion) Le document ou la pièce jointe est protégé par mot de passe/le fichier est chiffré. (.pdf, les fichiers Office sont entièrement pris en charge. Seuls les fichiers chiffrés pgp sont pris en charge)
+- (préversion) L’étiquette de confidentialité n’est pas appliquée au contenu.
+- (préversion) L’utilisateur a accédé à un site web sensible à partir de Edge. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains)  
 - L’extension de fichier est
 - Le type de fichier est
 - Consultez les activités de point de terminaison sur [laquelle vous pouvez surveiller et prendre des mesures](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: À propos des versions d’évaluation premium du Gestionnaire de conformité Microsoft Purview.
-ms.openlocfilehash: 50950cc39d9a987239a7b10c70f68aece5647085
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 1d76817f6521a7922424fd4257cb647d1b35942b
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631268"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611364"
 ---
 # <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>À propos de l’essai gratuit pour les évaluations Premium du Gestionnaire de conformité Microsoft Purview
 
@@ -50,9 +50,15 @@ Après avoir commencé votre version **d’évaluation**, consultez l’onglet �
 
 Pour plus d’informations sur l’utilisation et la gestion des modèles du Gestionnaire de conformité, voir [Utilisation des modèles d’évaluation](compliance-manager-templates.md).
 
-## <a name="permissions"></a>Autorisations
+## <a name="required-roles-for-starting-the-trial"></a>Rôles requis pour démarrer la version d’évaluation
 
-Tout utilisateur de votre organisation disposant d’autorisations d’accès au Gestionnaire de conformité peut s’inscrire à l’essai gratuit des évaluations premium. En savoir plus sur les [autorisations et les rôles requis pour le Gestionnaire de conformité](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Les utilisateurs doivent avoir l’un des rôles d’administrateur suivants pour s’inscrire ou mettre fin à une version d’évaluation :
+- Administrateur de facturation
+- Administrateur de conformité
+- Administrateur général
+- Administrateur de conformité des données
+
+Obtenez plus d’informations sur les [rôles de démarrage des versions d’évaluation de Microsoft 365](compliance-easy-trials-roles.md).
 
 ## <a name="during-your-trial"></a>Pendant votre version d’essai
 

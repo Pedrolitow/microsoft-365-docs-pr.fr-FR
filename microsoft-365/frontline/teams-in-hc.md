@@ -28,12 +28,12 @@ description: Découvrez les fonctionnalités de télémédecine dans Microsoft 3
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ce08e71a2bec105b2c9f2efe59cc7f440225b4e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: 36e47c683a61657d799750f7410a2de23e1444a1
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66992507"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612839"
 ---
 # <a name="get-started-with-microsoft-365-for-healthcare-organizations"></a>Démarrez avec Microsoft 365 pour les organismes de santé
 
@@ -79,6 +79,14 @@ Tirez parti de ces fonctionnalités qui aident Microsoft Teams à travailler pou
 | [Packages de stratégies Teams](#teams-policy-packages)| Assurez-vous que les travailleurs cliniques, les travailleurs de l'information et les appareils de la salle des patients disposent d'un accès approprié à la fonctionnalité Teams.| Les utilisateurs doivent avoir une licence appropriée*. |
 | [Messagerie sécurisée](#secure-messaging) | Attirez plus rapidement l'attention sur les messages urgents et ayez la certitude que le message a été reçu et lu. | Les utilisateurs doivent avoir une licence appropriée*.  |
 | [Modèles Teams](#teams-templates-for-healthcare-organizations) | Créez des équipes qui comprennent un modèle prédéfini de paramètres, de canaux et d'applications préinstallées pour la communication et la collaboration au sein d'un service, d'une unité ou d'un département, ou entre plusieurs services, unités et départements d'un hôpital. | Les utilisateurs doivent avoir une licence appropriée*.  |
+
+### <a name="download-a-poster-with-scenario-overviews"></a>Télécharger une affiche avec des présentations de scénarios
+
+Utilisez l’affiche suivante pour commencer à envisager ce que votre organisation peut faire avec Microsoft 365 for frontline workers.
+
+| Élément | Description |
+|:-----|:-----|
+|[![Microsoft 365 for frontline workers : scénarios de soins de santé.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne dans un cadre de soins de santé.|
 
 ## <a name="virtual-appointments-and-electronic-healthcare-record-ehr-integration"></a>Rendez-vous virtuels et intégration des dossiers médicaux électroniques
 
@@ -135,6 +143,12 @@ De plus, votre équipe peut utiliser des applications dans Teams pour :
 - Suivre et surveiller des tâches avec l’application Tâches
 - Simplifier les approbations avec l’application Approbations
 - Créer, gérer et partager des planifications avec l’application Plannings
+
+### <a name="coordinate-over-email-with-exchange-online"></a>Coordonner par e-mail avec Exchange Online
+
+Email est un outil de communication de base pour la plupart des lieux de travail. [Configurez le courrier électronique avec Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) pour aider vos responsables et travailleurs de première ligne à coordonner avec les membres de l’équipe de soins à d’autres endroits ou planifier des réunions pour discuter des plans de soins. Les utilisateurs doivent disposer d’une licence F3 pour disposer d’une boîte aux lettres électronique.
+
+Vous pouvez également configurer des boîtes aux lettres partagées pour autoriser les messages entrants des clients (par exemple, pour les demandes de service à la clientèle ou de planification) et avoir un groupe de travailleurs qui surveillent et envoient des e-mails à partir d’un alias de messagerie public comme info@contoso.com. Pour plus d’informations sur les boîtes aux lettres partagées, consultez [À propos des boîtes aux lettres partagées](../admin/email/about-shared-mailboxes.md) et [Ouvrir et utiliser une boîte aux lettres partagée dans Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
 ### <a name="share-lists-and-track-information-with-the-lists-app"></a>Partager des listes et suivre des informations avec l’application Listes
 

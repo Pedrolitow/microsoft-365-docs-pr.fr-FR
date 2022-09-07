@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tierces et messages remis aux boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 82d1f38430769b00cdb8fc5cc7c9cd02884f66d1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 8f779a3f26fe1c5570ce89cf4d42b76f997faeb1
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482989"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613030"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres SecOps
 
@@ -333,7 +333,7 @@ La configuration d’une simulation d’hameçonnage tierce dans PowerShell est 
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>Étape 1 : Utiliser PowerShell pour créer la stratégie de remplacement de simulation d’hameçonnage
 
-Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple crée la stratégie de remplacement de simulation d’hameçonnage.
+Dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), cet exemple crée la stratégie de remplacement de simulation d’hameçonnage.
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -345,7 +345,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>Étape 2 : Utiliser PowerShell pour créer la règle de remplacement de simulation d’hameçonnage
 
-Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
+Dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
@@ -387,7 +387,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
 
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Utiliser PowerShell pour afficher la stratégie de remplacement de simulation d’hameçonnage
 
-Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple retourne des informations détaillées sur la seule stratégie de remplacement de simulation d’hameçonnage.
+Dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), cet exemple retourne des informations détaillées sur la seule stratégie de remplacement de simulation d’hameçonnage.
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -397,7 +397,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>Utiliser PowerShell pour afficher les règles de remplacement de simulation d’hameçonnage
 
-Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple retourne des informations détaillées sur les règles de remplacement de simulation d’hameçonnage.
+Dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), cet exemple retourne des informations détaillées sur les règles de remplacement de simulation d’hameçonnage.
 
 ```powershell
 Get-PhishSimOverrideRule
@@ -427,7 +427,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Utiliser PowerShell pour modifier la stratégie de remplacement de simulation d’hameçonnage
 
-Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
+Dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -443,7 +443,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Utiliser PowerShell pour modifier les règles de remplacement de simulation d’hameçonnage
 
-Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
+Dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
@@ -484,7 +484,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Utiliser PowerShell pour supprimer une stratégie de remplacement de simulation d’hameçonnage
 
-Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple supprime la stratégie de remplacement de simulation d’hameçonnage et la règle correspondante.
+Dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), cet exemple supprime la stratégie de remplacement de simulation d’hameçonnage et la règle correspondante.
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -494,7 +494,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>Utiliser PowerShell pour supprimer les règles de remplacement de simulation d’hameçonnage
 
-Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
+Dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>

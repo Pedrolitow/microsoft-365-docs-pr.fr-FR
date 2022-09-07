@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 15bc518a7bc9fa939bfd33e7f272929d190378c2
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a91e8f6c517ad37c7311be09956c7f71fc2893db
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597777"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612701"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -179,7 +179,7 @@ Des avantages supplémentaires en matière de sécurité sont fournis avec un ab
 >
 > - La stratégie anti-hameçonnage par défaut dans Microsoft Defender pour Office 365 fournit une [protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) et une intelligence de boîte aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités de [protection d’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) [disponibles et les paramètres avancés](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ne sont pas configurés ou activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
 >
-> - Bien qu’il n’existe pas de stratégie de pièces jointes sécurisées ou de stratégie de liens sécurisés par défaut, la stratégie de sécurité prédéfinies de **protection intégrée** offre une protection des pièces jointes sécurisées et une protection des liens sécurisés aux destinataires qui ne sont pas déjà inclus dans les stratégies de pièces jointes sécurisées personnalisées ou les stratégies de liens sécurisés. Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
+> - Bien qu’il n’existe pas de stratégie de pièces jointes sécurisées ou de stratégie de liens sécurisés par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** offre une protection des pièces jointes sécurisées et une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de sécurité prédéfinies Standard ou Strict, ou dans des stratégies de pièces jointes sécurisées personnalisées ou des stratégies de liens sécurisés). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 >
 > - [Les pièces jointes sécurisées pour la protection SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md) et la protection [des documents sécurisés](safe-docs.md) n’ont aucune dépendance vis-à-vis des stratégies liens fiables.
 
@@ -227,7 +227,7 @@ Il s’agit des mêmes paramètres que ceux disponibles dans [les paramètres de
 
 Les pièces jointes sécurisées dans Microsoft Defender pour Office 365 incluent des paramètres globaux qui n’ont aucune relation avec les stratégies de pièces jointes sécurisées et des paramètres spécifiques à chaque stratégie liens sécurisés. Pour plus d’informations, consultez [Pièces jointes sécurisées dans Defender pour Office 365](safe-attachments.md).
 
-Bien qu’il n’existe aucune stratégie de pièces jointes sécurisées par défaut, la stratégie de sécurité prédéfinies de **protection intégrée** fournit une protection des pièces jointes sécurisées à tous les destinataires qui ne sont pas déjà inclus dans les stratégies de pièces jointes sécurisées personnalisées. Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
+Bien qu’il n’existe aucune stratégie de pièces jointes sécurisées par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des pièces jointes sécurisées à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de sécurité prédéfinies Standard ou Strict ou dans les stratégies de pièces jointes sécurisées personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 
 #### <a name="global-settings-for-safe-attachments"></a>Paramètres globaux pour les pièces jointes sécurisées
 
@@ -253,7 +253,7 @@ Pour configurer ces paramètres, consultez [Configurer des stratégies de pièce
 Dans PowerShell, vous utilisez les applets de commande [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) et [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
 > [!NOTE]
-> Comme décrit précédemment, il n’existe aucune stratégie de pièces jointes sécurisées par défaut, mais la protection des pièces jointes sécurisées est affectée à tous les destinataires par la [stratégie de sécurité prédéfinies de **protection intégrée**](preset-security-policies.md).
+> Comme décrit précédemment, il n’existe aucune stratégie de pièces jointes sécurisées par défaut, mais la protection des pièces jointes sécurisées est affectée à tous les destinataires par la [stratégie de sécurité prédéfinie de **protection intégrée**](preset-security-policies.md) (les utilisateurs qui ne sont pas définis dans les stratégies pièces jointes sécurisées).
 >
 > La valeur **par défaut dans** la colonne personnalisée fait référence aux valeurs par défaut dans les nouvelles stratégies de pièces jointes sécurisées que vous créez. Les colonnes restantes indiquent (sauf indication contraire) les valeurs configurées dans les stratégies de sécurité prédéfinies correspondantes.
 
@@ -268,7 +268,7 @@ Dans PowerShell, vous utilisez les applets de commande [New-SafeAttachmentPolicy
 
 Les liens sécurisés dans Defender pour Office 365 incluent des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans des stratégies de liens fiables actives et des paramètres spécifiques à chaque stratégie liens fiables. Pour plus d’informations, consultez [Liens fiables dans Defender pour Office 365](safe-links.md).
 
-Bien qu’il n’existe aucune stratégie de liens fiables par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de liens fiables personnalisées ou les stratégies de sécurité standard ou strictes). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
+Bien qu’il n’existe aucune stratégie de liaisons sécurisées par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de sécurité prédéfinies standard ou strictes ou dans les stratégies de liens sécurisés personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 
 #### <a name="global-settings-for-safe-links"></a>Paramètres globaux pour les liens fiables
 
@@ -292,7 +292,7 @@ Pour configurer ces paramètres, consultez Configurer des stratégies [de liens 
 Dans PowerShell, vous utilisez les applets de commande [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) et [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
 > [!NOTE]
-> Comme décrit précédemment, il n’existe aucune stratégie de liens sécurisés par défaut, mais la protection des liens sécurisés est affectée à tous les destinataires par la [stratégie de sécurité prédéfinies de **protection intégrée**](preset-security-policies.md).
+> Comme décrit précédemment, il n’existe aucune stratégie de liens sécurisés par défaut, mais la protection des liens sécurisés est affectée à tous les destinataires par la [stratégie de sécurité prédéfinies de **protection intégrée**](preset-security-policies.md) (les utilisateurs qui, autrement, ne sont pas inclus dans les stratégies liens fiables).
 >
 > La colonne **Par défaut dans la colonne personnalisée** fait référence aux valeurs par défaut dans les nouvelles stratégies liens sécurisés que vous créez. Les colonnes restantes indiquent (sauf indication contraire) les valeurs configurées dans les stratégies de sécurité prédéfinies correspondantes.
 

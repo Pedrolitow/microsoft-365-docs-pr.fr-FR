@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: medium
 ms.date: 07/19/2022
 ms.custom:
@@ -16,12 +17,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment valider les paramètres de protection des applications Microsoft 365 Business Premium sur vos appareils Android ou iOS. Il est essentiel de définir des paramètres de sécurité pour vos applications afin de protéger les fichiers de vos applications et appareils mobiles contre tout type de menaces de sécurité.
-ms.openlocfilehash: 36a67f999cb9b4476f3757daa6033e6409b49c1a
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 32a9e22751474acabe1cab24cc7dcc35b2879383
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893812"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611692"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Valider les paramètres de protection des applications sur les appareils Android ou iOS
 

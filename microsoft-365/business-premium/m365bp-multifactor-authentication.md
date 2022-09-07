@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez l’authentification multifacteur pour les téléphones dans Microsoft Business Premium. Augmentez votre sécurité en utilisant les fonctionnalités MFA de Microsoft Business Premium pour votre téléphone.
-ms.openlocfilehash: 8bf278f3dc91dfe1a9e8d5388e2868e9dddb577d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: 499173e041b482fdd4329dbbf1f9645395c44d55
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274987"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614877"
 ---
 # <a name="set-up-mfa"></a>Configurer l’authentification multifacteur (MFA)
 

@@ -360,9 +360,17 @@
           href: team-security-isolation-dev-test.md
 - name: Conseils spécifiques par secteurs
   items:
+    - name: Microsoft 365 for frontline workers
+      items:
+        - name: Vue d’ensemble
+          href: /microsoft-365/frontline/flw-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Étape 1. Choisissez vos scénarios
+          href: /microsoft-365/frontline/flw-choose-scenarios?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Étape 2. Configurer Microsoft 365 pour les travailleurs de première ligne
+          href: /microsoft-365/frontline/flw-deploy-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Services financiers
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: financial-services-overview.md
         - name: Sécurité et conformité pour les services financiers
           href: financial-services-secure-collaboration.md
@@ -375,7 +383,7 @@
         - name: Vue d’ensemble
           href: healthcare-overview.md
         - name: Teams pour la santé publique
-          href: /frontline/teams-in-hc
+          href: /microsoft-365/frontline/teams-in-hc
     - name: Éducation
       items:
         - name: Teams pour l’éducation
@@ -391,7 +399,7 @@
         - name: Vue d’ensemble
           href: retail-overview.md
         - name: Teams pour la vente au détail
-          href: /frontline/teams-for-retail-landing-page
+          href: /microsoft-365/frontline/teams-for-retail-landing-page
 - name: Principes de conception de l’architecture d’entreprise
   items:
     - name: Vue d’ensemble

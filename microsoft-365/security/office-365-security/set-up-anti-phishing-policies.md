@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c543bcfc7c69487055ccd7aa374afd4a08f90866
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 1833f5394b5604685aad63b42c6623b6efc125b5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495859"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613447"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -89,8 +89,8 @@ Les paramètres de stratégie suivants sont disponibles dans les stratégies ant
   >
   > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
   >
-  > - Le destinataire est : romain@contoso.com
-  > - Le destinataire est membre de : Exécutifs
+  > - Utilisateurs : romain@contoso.com
+  > - Groupes : Cadres supérieurs
   >
   > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >

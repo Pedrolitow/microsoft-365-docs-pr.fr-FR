@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page d’entreprise LinkedIn vers Microsoft 365.
-ms.openlocfilehash: d018237a7cd0d4171be8a9f104ee4ccd745f2228
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 204d1da0a89ea0eb5afcb6b14ca2a5247093c8f5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630629"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614547"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
@@ -58,7 +58,7 @@ Une fois les données de page LinkedIn Company stockées dans une boîte aux let
 
 6. Sélectionnez la page d’entreprise à partir de laquelle vous souhaitez archiver les éléments, puis cliquez sur **Suivant**.
 
-7. Dans la page **Choisir l’emplacement de stockage** , cliquez dans la zone, sélectionnez l’adresse e-mail d’une boîte aux lettres Microsoft 365 vers laquelle les éléments LinkedIn seront importés, puis cliquez sur **Suivant**. Les éléments sont importés dans le dossier de boîte de réception de cette boîte aux lettres.
+7. Dans la page **Choisir l’emplacement de stockage** , cliquez dans la zone, sélectionnez l’adresse e-mail d’une boîte aux lettres Microsoft 365 vers laquelle les éléments LinkedIn seront importés, puis cliquez sur **Suivant**. Les éléments sont importés dans le dossier de boîte de réception de cette boîte aux lettres. La boîte aux lettres utilisée doit avoir une licence Exchange Online Plan 1 ou Plan 2.
 
 8. Cliquez sur **Suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer la configuration du connecteur.
 
@@ -66,6 +66,6 @@ Après avoir créé le connecteur, vous pouvez revenir à la page **Connecteurs 
 
 Pour afficher plus de détails, sélectionnez le connecteur dans la liste de la page **Connecteurs de données** pour afficher la page de menu volant. Sous **État**, la plage de dates affichée indique le filtre d’âge qui a été sélectionné lors de la création du connecteur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Les éléments LinkedIn sont importés dans le sous-dossier LinkedIn dans la boîte de réception de la boîte aux lettres de stockage dans Microsoft 365. Ils apparaissent sous forme de messages électroniques.

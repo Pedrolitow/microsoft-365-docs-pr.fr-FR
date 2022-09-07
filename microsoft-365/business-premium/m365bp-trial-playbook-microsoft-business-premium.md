@@ -8,19 +8,20 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security-compliance
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/24/2022
-ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 8a74d5b107f8142c7d0b733e558540fecaff3346
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 52b38d8145c43eac2eeef34b063a3a327f2d5a3f
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497014"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611845"
 ---
 # <a name="trial-playbook-microsoft-365-business-premium"></a>Playbook d’évaluation : Microsoft 365 Business Premium
 

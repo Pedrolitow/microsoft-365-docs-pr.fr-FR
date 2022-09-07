@@ -9,7 +9,8 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4WindowsConfig
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/16/2022
 ms.custom:
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment sécuriser les appareils Windows de votre entreprise à l’aide de paramètres intégrés.
-ms.openlocfilehash: 76f7321f916c6c65c01906d1c1ad69e559b3c084
-ms.sourcegitcommit: 9a7e853bb2f9d0ea377961d854d36b644799e5f8
+ms.openlocfilehash: 32632b416b79ae6f1c58b91fbed2035b44690694
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67364521"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613799"
 ---
 # <a name="secure-windows-devices"></a>Sécuriser les appareils Windows
 

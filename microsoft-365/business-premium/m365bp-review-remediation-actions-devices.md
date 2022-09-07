@@ -7,7 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
@@ -16,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 847095a4dcfb1905cf3c95b9cbf393298b1c7c3d
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 475d25213b9b1d4de255cd8f9768a3a0b14fa170
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894490"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612744"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Examiner les actions de correction dans Microsoft 365 Business Premium
 

@@ -19,12 +19,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies liens sécurisés et des paramètres de liens sécurisés globaux dans Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a0e9a805038e3cb3ae586d84229a00e24631d7e0
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: ac2c6a2fb5ca151ba50176ae9faf06ec7b8cd0ab
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496898"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611320"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "67496898"
 
 Les liens sécurisés dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournissent l’analyse d’URL des messages électroniques entrants dans le flux de courrier, ainsi que l’heure de vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, consultez [Liens sécurisés dans Microsoft Defender pour Office 365](safe-links.md).
 
-Bien qu’il n’existe aucune stratégie de liens fiables par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans des stratégies de sécurité personnalisées ou standard ou strictes). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
+Bien qu’il n’existe aucune stratégie de liaisons sécurisées par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de sécurité prédéfinies standard ou strictes ou dans les stratégies de liens sécurisés personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 
 Vous pouvez également utiliser les procédures décrites dans cet article pour créer des stratégies de liens fiables qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques.
 
@@ -120,8 +120,8 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
    > [!IMPORTANT]
    > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
-   > - Le destinataire est : romain@contoso.com
-   > - Le destinataire est membre de : Exécutifs
+   > - Utilisateurs : romain@contoso.com
+   > - Groupes : Cadres supérieurs
    >
    > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
    >

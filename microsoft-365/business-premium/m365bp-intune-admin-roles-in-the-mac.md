@@ -7,18 +7,19 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
 ms.custom: ''
 description: Le Centre d’administration Microsoft 365 vous permet de gérer certains rôles Microsoft Intune, qui sont mappés aux fonctions métier et donnent des autorisations pour effectuer des tâches spécifiques.
-ms.openlocfilehash: ee411f188a5efc996dbd4af622e81b182b1f115b
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: d3f7ff980bb87ac70fb2400f55ff54bdbd511eab
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894918"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614943"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Rôles d'administration Intune dans le Centre d’administration Microsoft 365
 

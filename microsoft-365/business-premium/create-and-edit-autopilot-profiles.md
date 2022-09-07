@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Apprenez à créer un profil Autopilot et à l’appliquer à un appareil, à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
-ms.openlocfilehash: 6f019e494eb073f47921f4adef454c0e48541b49
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
-ms.translationtype: HT
+ms.openlocfilehash: 2a74bf007f0dcac400033248813afe9558f0b2f8
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489695"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613008"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils Autopilot
 

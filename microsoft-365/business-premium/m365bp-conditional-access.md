@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/24/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées à l’identité en fournissant des paramètres de sécurité préconfigurés pour Microsoft 365 Business Premium.
-ms.openlocfilehash: e054361e015f6dbfad8e6e4dd6e212814f43d552
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 9eb0c4c9062a8a0ff3971f2bd8d12f600b7e22c5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433485"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611648"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Authentification multifacteur et sécurité par défaut.
 

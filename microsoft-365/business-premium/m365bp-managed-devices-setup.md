@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Comment configurer des appareils gérés
-ms.openlocfilehash: a4298bcdc284f1957a1afa73cbc7ae8e3f15e7d1
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 55f814a5e0d49526b0eae2dcd22e15504b9f3d25
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66895006"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615295"
 ---
 # <a name="set-up-managed-devices"></a>Configurer les appareils gérés
 

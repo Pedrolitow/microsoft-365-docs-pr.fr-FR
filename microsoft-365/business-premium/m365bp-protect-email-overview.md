@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/05/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Savoir ce qu’il faut surveiller dans l’e-mail Formez votre équipe pour la protéger contre les programmes malveillants, le hameçonnage et d’autres cyberattaques malveillantes, à l’aide des outils de cybersécurité inclus dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 087eb5017e2bda3d2fdd1bdd224f7c019970115b
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: 62e88c37b071bf7ec038115f1bf01599685e82ce
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276789"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611386"
 ---
 # <a name="protect-all-email"></a>Protéger tous les e-mails
 

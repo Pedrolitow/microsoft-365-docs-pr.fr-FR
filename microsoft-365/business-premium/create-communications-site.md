@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez pourquoi et comment créer un site de communication SharePoint pour votre campagne ou votre entreprise avec Microsoft 365 Business Premium, et protégez l’équipe contre les cyberattaques et les intrusions contre les programmes malveillants et d’autres menaces en raison d’un partage de fichiers incorrect.
-ms.openlocfilehash: 48eaa0afabb83b66b797fc0bc47234888fc5e176
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
-ms.translationtype: HT
+ms.openlocfilehash: 63831f527aa63909ae055304cdeb7decc1ed62c5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489247"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612986"
 ---
 # <a name="create-a-communications-site"></a>Créer un site de communication
 

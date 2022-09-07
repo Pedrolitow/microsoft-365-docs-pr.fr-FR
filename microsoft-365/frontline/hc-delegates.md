@@ -24,39 +24,45 @@ appliesto:
 ms.reviewer: acolonna
 description: Découvrez comment un utilisateur avec l’état Absent ou Ne pas déranger peut définir explicitement un autre utilisateur en tant que délégué dans son message d’état.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 190b1f8bfdcf06c124163d97ecf77465f66ad67c
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e09883e65cf8d4036aff8933d8cc5d25b9d319df
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992255"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614114"
 ---
 # <a name="message-delegation"></a>Délégation de messages
 
-Un utilisateur peut déjà définir explicitement son état sur Absent ou Ne pas déranger, et fournir du texte personnalisé. La fonctionnalité de délégation de message fonctionne comme suit :
+Les utilisateurs de Microsoft Teams peuvent définir leur état sur Absent ou Ne pas déranger, et inclure un message d’état de texte personnalisé. Un utilisateur qui va être absent peut affecter une personne en tant que délégué que les personnes peuvent contacter à la place. La fonctionnalité de délégation de message fonctionne comme suit :
 
-1. Un utilisateur @username mentionne un autre utilisateur dans une partie d’un message d’état texte, ce qui suggère que, lorsqu’il s’agit de personnes non disponibles qui souhaitent les contacter à la place, contactez l’utilisateur mentionné @username.
-2. La personne qui a été assignée en tant que déléguée est informée qu’elle a été nommée déléguée.
-3. Une personne qui tente de contacter le premier utilisateur peut alors pointer sur le délégué désigné et lui envoyer facilement un message.  
+1. L’utilisateur qui sera absent @mentions un autre utilisateur (le délégué) dans son message d’état pour indiquer aux utilisateurs de contacter le délégué à la place pendant son absence. 
 
-Il s’agit d’un processus initié par l’utilisateur dans le client, et aucune participation Administration n’est requise pour activer la fonctionnalité. 
+    ![Capture d’écran d’un message d’état avec un utilisateur défini comme délégué.](media/message-delegation.png)
+    
+1. L’utilisateur qui a été @mentioned est averti qu’il a été nommé délégué.
+1. Lorsqu’une personne ouvre une conversation avec l’utilisateur absent et voit son message d’état, elle peut pointer sur le délégué et lui transmettre facilement un message à la place.
+
+Les utilisateurs peuvent lancer le processus eux-mêmes, et aucune participation de l’administrateur n’est requise pour activer la fonctionnalité.
 
 ## <a name="delegation-use-scenario-in-healthcare"></a>Scénario d’utilisation de la délégation dans Healthcare
 
-*Exemple d’utilisation sans définition de délégués :*  Le Dr Franco Piccio est sur appel au service de radiologie. Il reçoit un appel personnel urgent et doit s’éloigner pour les prochaines heures. Il demande à l’un de ses pairs du département de radiologie, le Dr Lena Ehrle, de le couvrir pendant qu’il est parti. Il remet de manière informelle sa page au Dr Ehrle, qui écoute les messages urgents et les pings sur le pagine et y répond au nom du Dr Piccio en plus de ses responsabilités actuelles. D’autres membres de l’équipe peuvent ne pas se rendre compte que la délégation informelle s’est produite, et la confusion s’ensuivit avec les soins d’un patient.
+**Exemple d’utilisation sans définition de délégués** 
 
-*Exemple d’utilisation avec la définition de délégués :* Le Dr Franco Piccio est sur appel au service de radiologie. Il reçoit un appel personnel urgent et doit s’éloigner pour les prochaines heures. Il demande à l’un de ses pairs du service de radiologie, le Dr Lena Ehrle, de le couvrir pendant qu’il est parti. Il modifie son message d’état personnalisé pour dire quelque chose de similaire à « Je ne suis pas disponible pour les prochaines heures. Veuillez contacter @DrEhrle pour toute urgence. »  D’autres membres de l’équipe se rendent compte que la délégation s’est produite alors qu’ils tentent de contacter le Dr Piccio. Peu ou pas de confusion s’ensuivit avec les soins d’un patient.
+Le Dr Franco Piccio est de garde au service de radiologie. Il reçoit un appel personnel urgent et doit s’éloigner pour les prochaines heures. Il demande à l’un de ses pairs du service de radiologie, le Dr Lena Ehrle, de le couvrir pendant qu’il est parti. Il remet de manière informelle sa page au Dr Ehrle, qui écoute les messages urgents et les pings sur le pagine et y répond au nom du Dr Piccio en plus de ses responsabilités actuelles. D’autres membres de l’équipe ne se rendent peut-être pas compte que la délégation informelle s’est produite. La confusion s’ensuivit avec les soins d’un patient.
+
+**Exemple d’utilisation avec la définition de délégués** 
+
+Le Dr Franco Piccio est de garde au service de radiologie. Il reçoit un appel personnel urgent et doit s’éloigner pour les prochaines heures. Il demande à l’un de ses pairs du service de radiologie, le Dr Lena Ehrle, de le couvrir pendant qu’il est parti. Il modifie son message d’état personnalisé pour dire « Je ne suis pas disponible pour les prochaines heures. Veuillez contacter @DrEhrle pour toute urgence. »  D’autres membres de l’équipe se rendent compte que la délégation s’est produite alors qu’ils tentent de contacter le Dr Piccio. Peu ou pas de confusion s’ensuivit avec les soins d’un patient.
 
 ## <a name="impact-of-co-existence-modes-on-user-status-in-the-teams-client"></a>Impact des modes de coexistence sur l’état de l’utilisateur dans le client Teams
 
-Les administrateurs doivent savoir que les notes d’état et les comportements de mention de délégation dépendent en partie du mode de coexistence d’un utilisateur. Cette matrice présente les possibilités suivantes :
+Les notes d’état et les comportements de mention de délégation dépendent en partie du mode de coexistence d’un utilisateur. Cette matrice présente les possibilités suivantes :
 
 |mode Co-Existence | Comportement attendu|
 |---|---|
 |TeamsOnly |Les utilisateurs peuvent définir une note uniquement à partir de Teams. <br> La note Teams de l’utilisateur est visible dans Teams & SfB. |
 |Île | Note de l’utilisateur dans Teams visible uniquement dans Teams. <br> Ensemble de notes de l’utilisateur dans SfB visible uniquement dans SfB |
 |Modes SfB* | Les utilisateurs peuvent définir une note uniquement à partir de SfB. <br> La note SfB de l’utilisateur est visible dans SfB & Teams.  |
-|||
 
 Un utilisateur ne peut définir une note dans Teams que si son mode est TeamsOnly ou Islands.  
 
@@ -64,7 +70,7 @@ Un utilisateur ne peut définir une note dans Teams que si son mode est TeamsOnl
   
 Rien n’indique visuellement qu’une note a été définie à partir de Skype Entreprise.
 
-Skype Entreprise n’applique pas de limite de caractères aux notes d’état. Microsoft Teams affiche uniquement les 280 premiers caractères d’un jeu de notes à partir de Skype Entreprise. Une ellipse (...) à la fin d’une note indique une troncation.
+Skype Entreprise n’applique pas de limite de caractères aux notes d’état. Toutefois, Microsoft Teams affiche uniquement les 280 premiers caractères d’un jeu de notes à partir de Skype Entreprise. Un point de suspension (...) à la fin d’une note indique qu’il a été tronqué.
   
 Skype Entreprise ne prend pas en charge les délais d’expiration des notes.
 
@@ -72,4 +78,4 @@ La migration des notes de Skype Entreprise vers Teams n’est pas prise en charg
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Coexistence avec Skype Entreprise](/microsoftteams/coexistence-chat-calls-presence)
+[En savoir plus sur la coexistence avec Skype Entreprise](/microsoftteams/coexistence-chat-calls-presence).

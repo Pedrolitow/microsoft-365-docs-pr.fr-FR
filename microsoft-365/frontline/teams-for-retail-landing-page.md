@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 pour la vente au détail
+title: Microsoft 365 pour les entreprises de vente au détail
 description: En savoir plus sur les ressources d’administration à votre disposition pour gérer et tirer le meilleur partie de Teams pour vos points de vente et vos employés.
 ms.topic: conceptual
 author: samanro
@@ -23,14 +23,14 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: db40235a7ef2b278cd532fec06745e58054580ee
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: df4094a3ae3654fd282351f5527f941cd86a1741
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471983"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614089"
 ---
-# <a name="get-started-with-microsoft-365-for-retail"></a>Démarrage avec Microsoft 365 pour la vente au détail
+# <a name="get-started-with-microsoft-365-for-retail-organizations"></a>Prise en main de Microsoft 365 pour les entreprises de vente au détail
 
 Les environnements de vente au détail, avec leurs plannings de rotation et leurs effectifs en cours, ont des besoins très différents de ceux des autres organisations. Pour tirer le meilleur parti de votre organisation de vente au détail, choisissez d’abord quels scénarios Microsoft 365 et Microsoft Teams peuvent vous aider dans vos opérations commerciales quotidiennes, puis veillez à préparer votre environnement Teams avec les notions de base, les équipes et les applications appropriées pour prendre en charge ces scénarios.
 
@@ -49,10 +49,19 @@ Microsoft 365 et Microsoft Teams offrir plusieurs fonctionnalités qui peuvent a
 > [!NOTE]
 > Ces scénarios font également partie du cloud Microsoft pour le commerce de détail. Ces scénarios vous offrent davantage de possibilités si vous utilisez également d’autres fonctionnalités de Microsoft Cloud pour la distribution, telles que Microsoft Dynamics 365. En savoir plus sur l’utilisation de cette solution qui regroupe les fonctionnalités Azure, Dynamics 365 et Microsoft 365 dans [Microsoft Cloud for Retail](/industry/retail)
 
+### <a name="download-a-poster-with-scenario-overviews"></a>Télécharger une affiche avec des présentations de scénarios
+
+Utilisez l’affiche suivante pour commencer à envisager ce que votre organisation peut faire avec Microsoft 365 for frontline workers.
+
+| Élément | Description |
+|:-----|:-----|
+|[![Microsoft 365 for frontline workers : scénarios de vente au détail.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne dans un environnement de vente au détail.|
+
+### <a name="video-overviews"></a>Présentations vidéo
+
 Regardez la vidéo suivante pour voir comment vous pouvez aider vos associés de magasin à se connecter et à collaborer :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
-
 
 Regardez la vidéo suivante pour voir comment simplifier les processus métier dans les environnements de vente au détail :
 
@@ -65,7 +74,7 @@ Rassemblez les associés et la direction dans le Store pour collaborer et simpli
 
 **Applications clés :** Shifts, talkie-walkie, Tâches, Approbations, Conversation, Compliment, Listes, Fichiers, Mises à jour
 
-**Services supplémentaires :** Viva Connections, SharePoint, Power Platform et Power Apps
+**Services supplémentaires :** Outlook, Viva Connections, SharePoint, Power Platform et Power Apps
 
 Plus d’informations : [Collaboration d’équipe en première ligne](flw-team-collaboration.md)
 
@@ -75,7 +84,7 @@ Les membres du personnel enseignant peuvent communiquer et collaborer entre plus
 
 **Applications clés :** Shifts, talkie-walkie, Tâches, Approbations, Conversation, Compliment, Listes, Fichiers, Mises à jour
 
-**Services supplémentaires :** Viva Connections, Yammer, SharePoint, Power Platform et Power Apps
+**Services supplémentaires :** Outlook, Viva Connections, Yammer, SharePoint, Power Platform et Power Apps
 
 Plus d’informations : [Collaboration d’équipe en première ligne](flw-team-collaboration.md)
 

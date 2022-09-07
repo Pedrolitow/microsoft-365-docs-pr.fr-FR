@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: a2c354b575436d93713bb2487c35f2dca6807f19
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 84b855e34d2612aa10b1e8eaed33d584590cd424
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432372"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614173"
 ---
 # <a name="frontline-team-collaboration"></a>Collaboration de l’équipe de première ligne
 
@@ -202,22 +202,21 @@ Affinez ce qui est présent dans votre équipe grâce aux applications. Vous pou
 
 Vos utilisateurs peuvent ajouter dans leur équipe les applications que vous avez autorisées. Partagez cette formation avec vos utilisateurs pour leur montrer comment : [Rechercher et utiliser des applications](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
 
+## <a name="communicate-over-email-with-exchange-online-and-outlook"></a>Communiquer par e-mail avec Exchange Online et Outlook
 
-### <a name="use-viva-connections-to-create-a-personalized-experience"></a>Utiliser Viva Connections pour créer une expérience personnalisée
+Email est un outil de communication de base pour la plupart des lieux de travail. [Configurez le courrier électronique avec Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) pour permettre à vos responsables et employés de première ligne de communiquer entre ils, avec les employés d’autres emplacements ou avec le siège social. Les utilisateurs doivent disposer d’une licence F3 pour disposer d’une boîte aux lettres électronique.
+
+Vous pouvez également configurer des boîtes aux lettres partagées pour autoriser les messages entrants des clients (par exemple, pour les demandes de service à la clientèle ou de planification) et avoir un groupe de travailleurs qui surveillent et envoient des e-mails à partir d’un alias de messagerie public comme info@contoso.com. Pour plus d’informations sur les boîtes aux lettres partagées, consultez [À propos des boîtes aux lettres partagées](../admin/email/about-shared-mailboxes.md) et [Ouvrir et utiliser une boîte aux lettres partagée dans Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
+
+## <a name="use-viva-connections-to-create-a-personalized-experience"></a>Utiliser Viva Connections pour créer une expérience personnalisée
 
 Viva Connections fait partie de la [suite Microsoft Viva](/viva/microsoft-viva-overview) et vous permet de créer une expérience d’atterrissage personnalisée dans Teams. 
 
 ![Capture d’écran du tableau de bord Viva Connections sur un appareil mobile.](media/flw-shifts-praise-tasks-approvals.png)
 
-
-Utilisez le tableau de bord Viva Connections et ajoutez les cartes Shifts, Tasks et Approvals. Les cartes sont connectées aux applications Shifts, Tasks et Approvals dans Teams. Le contenu des cartes est dynamique et personnalisé pour l’utilisateur. 
+Utilisez le tableau de bord Viva Connections et ajoutez les cartes Shifts, Tasks et Approvals. Les cartes sont connectées aux applications Shifts, Tasks et Approvals dans Teams. Le contenu des cartes est dynamique et personnalisé pour l’utilisateur.
 
 Découvrez [comment obtenir Viva Connections](/viva/connections/viva-connections-overview) et [comment créer un tableau de bord Viva Connections](/viva/connections/create-dashboard). 
-
-
-
-
-
 
 ## <a name="learn-more-about-teams-capabilities-for-specific-industries"></a>En savoir plus sur les fonctionnalités de Teams pour des secteurs spécifiques
 

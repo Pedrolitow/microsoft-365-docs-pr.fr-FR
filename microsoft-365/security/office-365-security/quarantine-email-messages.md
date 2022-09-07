@@ -22,12 +22,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur la quarantaine dans Exchange Online Protection (EOP) qui contient des messages potentiellement dangereux ou indésirables.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: af99da8ddaddcbf8c9fd746496a66242c57abd5b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: fde70d38090b3069c404d904b10a16bf056f67a0
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596806"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612715"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Messages électroniques mis en quarantaine dans EOP et Defender pour Office 365
 
@@ -65,7 +65,7 @@ Les utilisateurs et les administrateurs peuvent travailler avec des messages mis
   |Messages mis en quarantaine par des stratégies anti-programme malveillant (messages malveillants).|30 jours|Non||
   |Messages mis en quarantaine par des stratégies de pièces jointes sécurisées dans Defender pour Office 365 (messages de programmes malveillants).|30 jours|Non||
   |Messages mis en quarantaine par des règles de flux de courrier : l’action consiste **à remettre le message à la mise en quarantaine hébergée** (_quarantaine_).|30 jours|Non||
-  |Fichiers mis en quarantaine par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams (fichiers de programmes malveillants).|30 jours|Non||
+  |Fichiers mis en quarantaine par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams (fichiers de programmes malveillants).|30 jours|Non|Les fichiers mis en quarantaine dans SharePoint ou OneDrive sont supprimés après 30 jours, mais les fichiers bloqués restent dans SharePoint ou OneDrive dans l’état bloqué.|
 
   Quand un message expire de la quarantaine, vous ne pouvez pas le récupérer.
 

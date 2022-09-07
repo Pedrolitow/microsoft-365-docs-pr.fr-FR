@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et strict aux fonctionnalités de protection de Exchange Online Protection (EOP) et Microsoft Defender pour Office 365
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 82c1a314aebae90ca6c0f2252180d9704a5ed27c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 95880c0af06525610b3ad039c5bd7925d87e24b8
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595472"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614437"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -64,7 +64,7 @@ Un profil détermine le niveau de protection. Les profils suivants sont disponib
 
     > [!NOTE]
     >  Les groupes de distribution dynamiques ne sont pas pris en charge.
-    
+
   - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
@@ -72,17 +72,14 @@ Un profil détermine le niveau de protection. Les profils suivants sont disponib
   > [!IMPORTANT]
   > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie de sécurité prédéfinies est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
   >
-  > - Le destinataire est : romain@contoso.com
-  > - Le destinataire est membre de : Exécutifs
+  > - Utilisateurs : romain@contoso.com
+  > - Groupes : Cadres supérieurs
   >
   > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >
   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n'est pas appliquée à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
 - **Protection intégrée** (Defender pour Office 365 uniquement) : profil qui active uniquement les liens sécurisés et la protection des pièces jointes sécurisées. Ce profil fournit efficacement des stratégies par défaut pour les liens sécurisés et les pièces jointes sécurisées, qui n’ont jamais eu de stratégies par défaut.
-
-  > [!NOTE]
-  > La stratégie de sécurité prédéfinies de protection intégrée est en cours de déploiement et n’est peut-être pas disponible dans votre organisation.
 
   Pour **la protection intégrée**, la stratégie de sécurité prédéfinies est activée par défaut pour tous les clients Defender pour Office 365. Bien que nous ne le recommandons pas, vous pouvez également configurer des exceptions en fonction des **utilisateurs**, **des groupes** et **des domaines** afin que la protection ne soit pas appliquée à des utilisateurs spécifiques.
 
@@ -518,8 +515,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 > [!IMPORTANT]
   > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie de sécurité prédéfinies est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
   >
-  > - Le destinataire est : romain@contoso.com
-  > - Le destinataire est membre de : Exécutifs
+  > - Utilisateurs : romain@contoso.com
+  > - Groupes : Cadres supérieurs
   >
   > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >

@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment charger des appareils à l’aide d’Autopilot dans Microsoft 365 Business Premium. Attribuer un profil à un appareil ou à un groupe d'appareils
-ms.openlocfilehash: 9e02b985e5742331426210d6d3824dfa120a21d3
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 977b28949f598d827d03ef569429c599c5632dc7
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894984"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613228"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Créer et modifier des appareils Autopilot
 

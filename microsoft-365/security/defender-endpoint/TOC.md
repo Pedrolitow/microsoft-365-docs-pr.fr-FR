@@ -258,6 +258,7 @@
 ###### [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)
+##### [Rapport sur les règles de réduction de la surface d’attaque](attack-surface-reduction-rules-report.md)
 ##### [Résoudre les problèmes liés aux règles de réduction de la surface d’attaque (ASR)](troubleshoot-asr-rules.md)
 ##### [Activer les méthodes de configuration alternatives des règles ASR](enable-attack-surface-reduction.md)
 #### [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)

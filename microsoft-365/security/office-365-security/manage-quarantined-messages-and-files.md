@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c9603827fbd58472dde025cb2bae294e29128f74
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 8c28e4dc142136075e220ac6f011be4acf76e813
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596464"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611452"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -284,6 +284,9 @@ Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (
 > Les procédures pour les fichiers mis en quarantaine dans cette section sont disponibles uniquement pour les abonnés plan 1 ou Plan 2 Microsoft Defender pour Office 365.
 
 Dans les organisations avec Defender pour Office 365, les administrateurs peuvent gérer les fichiers qui ont été mis en quarantaine par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams. Pour activer la protection de ces fichiers, consultez [Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+
+> [!NOTE]
+> Les fichiers mis en quarantaine dans SharePoint ou OneDrive sont supprimés après 30 jours, mais les fichiers bloqués restent dans SharePoint ou OneDrive dans l’état bloqué.
 
 ### <a name="view-quarantined-files"></a>Afficher les fichiers mis en quarantaine
 

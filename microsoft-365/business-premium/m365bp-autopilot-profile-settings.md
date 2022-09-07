@@ -9,7 +9,8 @@ f1.keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les profils AutoPilot vous aident à contrôler la façon dont Windows est installé sur les appareils utilisateur. Les profils contiennent des paramètres par défaut et facultatifs, comme ignorer l’installation de Cortana.
-ms.openlocfilehash: 9fcec0d34a23a56943a1a17d7e7f74435910055e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 52f69c5de63c5c35bb07df27269aa567b5eba442
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894720"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612920"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot
 

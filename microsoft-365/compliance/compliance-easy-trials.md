@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez plus d’informations sur la version d’évaluation des solutions Microsoft Purview et sur la façon de vous inscrire.
-ms.openlocfilehash: dd223402153048b0d7f452b202804e6bf1853b97
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 42a29a40df1b452b32ae74110c0d9d166361d5fe
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640113"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614657"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>À propos de la version d’évaluation des solutions Microsoft Purview
 
@@ -47,7 +47,7 @@ Les utilisateurs doivent avoir l’un des rôles d’administrateur suivants pou
 - Administrateur général
 - Administrateur de conformité des données
 
-Pour plus d’informations sur les rôles, [consultez à propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Obtenez plus d’informations sur les [rôles de démarrage des versions d’évaluation de Microsoft 365](compliance-easy-trials-roles.md).
 
 ## <a name="how-to-sign-up-for-the-trial"></a>Comment s’inscrire à la version d’évaluation ?
 
