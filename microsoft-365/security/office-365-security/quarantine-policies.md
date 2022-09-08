@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de quarantaine pour contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1943a52b69c4e0bdb76769facdc1d93e7f53bd7b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: be6661d4a40632a66a6a183d16e3bbfa0a85552f
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595450"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623755"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -50,10 +50,10 @@ Les autorisations de stratégie de quarantaine individuelles contenues dans les 
 
 |Autorisation|Pas d’accès|Accès limité|Accès complet|
 |---|:---:|:---:|:---:|
-|**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|**Préversion** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|**Autoriser les destinataires à libérer un message de la quarantaine** (_PermissionToRelease_)<sup>\*</sup>|||![Coche.](../../media/checkmark.png)|
+|**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|**Préversion** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|**Autoriser les destinataires à libérer un message de la quarantaine** (_PermissionToRelease_)<sup>\*</sup>|||![Marque de vérification.](../../media/checkmark.png)|
 |**Autoriser les destinataires à demander la mise en quarantaine d’un message** (_PermissionToRequestRelease_)||![Coche](../../media/checkmark.png)||
 
 <sup>\*</sup>**L’autorisation autoriser les destinataires à publier un message à partir de l’autorisation de mise en quarantaine** n’est pas respectée dans les stratégies anti-programme malveillant ou pour le verdict de hameçonnage à haut niveau de confiance dans les stratégies anti-courrier indésirable. Les utilisateurs ne peuvent pas libérer leurs propres programmes malveillants ou messages de hameçonnage à haut niveau de confiance à partir de la quarantaine. Au mieux, vous pouvez utiliser l’option **Autoriser les destinataires pour demander la libération d’un message à partir de l’autorisation de mise en quarantaine** .
@@ -630,11 +630,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ## <a name="system-alerts-for-quarantine-release-requests"></a>Alertes système pour les demandes de mise en quarantaine
 
-Par défaut, la stratégie d’alerte par défaut nommée **Utilisateur demandé pour libérer un message mis en quarantaine** génère automatiquement une alerte d’information et envoie des messages de notification aux membres des groupes de rôles suivants chaque fois qu’un utilisateur demande la publication d’un message mis en quarantaine :
-
-- Administrateur de quarantaine
-- Administrateur de sécurité
-- Gestion de l’organisation (administrateur général)
+Par défaut, la stratégie d’alerte par défaut nommée **Utilisateur demandé pour libérer un message mis en quarantaine** génère automatiquement une alerte d’information et envoie une notification à La Gestion de l’organisation (administrateur général) chaque fois qu’un utilisateur demande la publication d’un message mis en quarantaine :
 
 Les administrateurs peuvent personnaliser les destinataires des notifications par e-mail ou créer une stratégie d’alerte personnalisée pour plus d’options.
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2935b54d6be6f68833f018c1e0710db3e71a1d51
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 9f804fbc9d8a9e3bace06ae0ca1f10b7f5f98a32
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611145"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623778"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -38,9 +38,9 @@ Utilisez les affiches suivantes pour commencer à envisager ce que votre organis
 
 | Élément | Description |
 |:-----|:-----|
-|[![Microsoft 365 pour les scénarios de travail de première ligne.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez mettre en œuvre pour votre personnel de première ligne afin d’accroître les communications, d’améliorer le bien-être et l’engagement, de former et d’intégrer vos travailleurs, et de gérer votre main-d’œuvre et vos opérations.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-overview)|
-|[![Microsoft 365 for frontline workers : scénarios de soins de santé.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne dans un cadre de soins de santé.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Démarrez avec Microsoft 365 pour les organismes de santé](/microsoft-365/frontline/teams-in-hc)|
-|[![Microsoft 365 for frontline workers : scénarios de vente au détail.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne dans un environnement de vente au détail.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Prise en main de Microsoft 365 pour les entreprises de vente au détail](/microsoft-365/frontline/teams-for-retail-landing-page)|
+|[![Microsoft 365 pour les scénarios de travail de première ligne.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Mise à jour de septembre 2022   |**Scénarios de travail de première ligne**<br><br>Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez mettre en œuvre pour votre personnel de première ligne afin d’accroître les communications, d’améliorer le bien-être et l’engagement, de former et d’intégrer vos travailleurs, et de gérer votre main-d’œuvre et vos opérations.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-overview)|
+|[![Microsoft 365 for frontline workers : scénarios de soins de santé.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Mise à jour de septembre 2022   |**Scénarios de soins de santé**<br><br>Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne dans un cadre de soins de santé.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Démarrez avec Microsoft 365 pour les organismes de santé](/microsoft-365/frontline/teams-in-hc)|
+|[![Microsoft 365 for frontline workers : scénarios de vente au détail.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Mise à jour de septembre 2022   |**Scénarios de vente au détail**<br><br>Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne dans un environnement de vente au détail.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Prise en main de Microsoft 365 pour les entreprises de vente au détail](/microsoft-365/frontline/teams-for-retail-landing-page)|
 
 ## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>Communications d’entreprise avec Microsoft 365 — une étude de cas Contoso
 L’engagement des employés contribue de façon significative à la satisfaction, à la rétention et à la productivité au travail de toute organisation. Dans Microsoft 365, il existe plusieurs façons de communiquer et d’impliquer votre public. 

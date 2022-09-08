@@ -33,11 +33,9 @@
           href: metrics-and-activity-tracking.md
         - name: Définition de la langue et du fuseau horaire
           href: set-language-time-zones.md
-    - name: Obtenir l’application bookings
-      href: get-bookings-app.md
     - name: Gérer l’application Bookings dans Microsoft Teams
       href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
-    - name: Visites virtuelles dans Microsoft Teams et l’application Bookings
+    - name: Visites virtuelles avec Microsoft Teams
       href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
     - name: Graphique de comparaison-application Web et application teams
       href: comparison-chart.md

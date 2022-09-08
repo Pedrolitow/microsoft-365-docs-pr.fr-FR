@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 1acfb53905d5f122ce548b1e1a90cf7ca1b0ee75
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: a3ae7658ecfab9b0c92be3f75a3aa24ed2dfb7a8
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614569"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623742"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
 
@@ -48,7 +48,7 @@ Le tableau de bord Intégrité et conformité de l’appareil est structuré sou
 - [L’onglet **Intégrité du capteur & système d’exploitation**](#sensor-health--os-tab) fournit des informations générales sur le système d’exploitation, divisées en trois cartes qui affichent les attributs d’appareil suivants :
   - [Carte d’intégrité du capteur](#sensor-health-card)
   - [Carte des systèmes d’exploitation et des plateformes](#operating-systems-and-platforms-card)
-  - [carte de versions Windows 10](#windows-10-versions-card)
+  - [Carte des versions de Windows](#windows-versions-card)
 
 - [L’onglet **Intégrité de l’Antivirus Microsoft Defender**](#microsoft-defender-antivirus-health-tab) comporte huit cartes qui signalent les aspects de l’antivirus Microsoft Defender (MDAV) :
   - [Carte en mode Antivirus](#antivirus-mode-card)
@@ -135,7 +135,7 @@ Par exemple, le démarrage sécurisé (introduit dans Windows 8) a pratiquement 
 
 Dans l’idéal, le graphique « État actuel » montre que le nombre de systèmes d’exploitation est pondéré en faveur d’un système d’exploitation plus actuel que les versions antérieures. Dans le cas contraire, le graphique des tendances indique que de nouveaux systèmes sont adoptés et/ou des systèmes plus anciens sont mis à jour ou remplacés.
 
-### <a name="windows-10-versions-card"></a>carte de versions Windows 10
+### <a name="windows-versions-card"></a>Carte des versions de Windows
 
 La carte des versions Windows 10 affiche la distribution des appareils Windows et de leurs versions dans votre organisation.
 De la même façon qu’une mise à niveau de Windows 8 vers Windows 10 améliore la sécurité dans votre organisation, passer des versions antérieures de Windows à des versions plus récentes améliore votre posture face aux menaces possibles.
@@ -310,7 +310,7 @@ Les cartes à jour affichent l’état à jour pour les versions de  **mise** 
 
 Les définitions pour  _la mise à jour_, hors date_ et _aucune donnée disponible ne_ sont fournies pour chaque carte ci-dessous.
 
-Les rapports MDAV constituent des déterminations et des rapports à jour en fonction des critères suivants :
+L’Antivirus Microsoft Defender crée des rapports et des déterminations à jour en fonction des critères suivants :
 
 - **Pour les mises à jour du moteur & plateforme** : « Heure d’actualisation des signatures » (heure de la dernière réception des événements clients pour les rapports à jour) et « Heure de publication du renseignement de sécurité » (les machines virtuelles de renseignement de sécurité sont utilisées pour déterminer les versions du moteur & plateforme)
 - **Pour les mises à jour du renseignement de sécurité** : « Heure d’actualisation des signatures » (heure à laquelle les événements clients ont été reçus pour la dernière fois pour les rapports à jour), heure de publication du renseignement de sécurité et dernier état à jour communiqué par le client

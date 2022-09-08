@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 ms.custom: VSBFY23
 description: Vue d’ensemble de l’application Microsoft Bookings, qui inclut un calendrier de réservation web et s’intègre à Outlook pour optimiser le calendrier de votre personnel et donner à vos clients la possibilité de réserver des rendez-vous.
-ms.openlocfilehash: bc17165255b547f89e1725ffabccbcd03610e4ed
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: adcf5423f153a75f607251dd08c08243ca90fc2c
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085024"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623580"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
@@ -26,13 +26,11 @@ Microsoft Bookings facilite la planification et la gestion des rendez-vous. Book
 
 Utilisez Bookings pour rendre les réunions de votre organisation virtuelles avec des réunions en ligne via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) et Skype Entreprise. Chaque rendez-vous réservé en tant que réunion en ligne crée un lien de réunion unique qui est envoyé aux participants afin qu’ils puissent participer via un navigateur web, un appel téléphonique ou l’application Skype ou Teams. Bookings est également disponible en tant qu’application dans Teams, ce qui vous permet de créer des calendriers Bookings, d’affecter du personnel et de planifier de nouveaux rendez-vous et de gérer les rendez-vous existants sans jamais quitter Teams.
 
-Bookings présente trois composants principaux :
+Bookings est constitué de ces composants :
 
 - Page de réservation où vos clients et clients peuvent planifier des rendez-vous avec le membre du personnel qui doit fournir le service ou exécuter le rendez-vous. Vous pouvez partager cette page de planification web via un lien direct, votre page Facebook et même via l’incorporation de liens dans votre site web.
 
 - Application web qui contient un ensemble de pages web orientées entreprise où les propriétaires et administrateurs de calendrier Bookings au sein d’une organisation peuvent définir des types et des détails de rendez-vous, gérer les planifications et la disponibilité du personnel, définir des heures d’ouverture et personnaliser la façon dont les rendez-vous sont planifiés. Ces pages permettent la polyvalence et la possibilité de personnaliser un calendrier Bookings pour répondre aux différents besoins de la personne ou de l’organisation.
-
-- Une application mobile professionnelle où les propriétaires d’entreprise peuvent consulter toutes les réservations, accéder aux listes de clients ainsi qu’à leurs informations de contact, et effectuer des réservations manuelles
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

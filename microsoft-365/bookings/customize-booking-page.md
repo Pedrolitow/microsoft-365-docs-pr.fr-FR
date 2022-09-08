@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
-description: Modifiez le thème de couleur de votre page de réservation dans l’application Microsoft Bookings.
-ms.openlocfilehash: df91e0855615612cfca1fc24a3ddf4cdcb992b0e
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+description: Modifiez le thème de couleur de votre page de réservation.
+ms.openlocfilehash: dacf7782ea8577badc309b8094c80521b566e10d
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185102"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623668"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personnaliser et publier votre page de réservation
 
 La page De réservation est l’endroit où vous configurez à quoi ressemblera votre page de réservation externe. Une fois que vous avez personnalisé et publié votre page de réservation, les utilisateurs l’utiliseront pour réserver des rendez-vous avec vous.
 
-Pour personnaliser votre page de réservation, connectez-vous à [Office.com](https://office.com), puis accédez à la page **Bookings** \> **Booking**. Vous pouvez personnaliser la page de réservation avec les options suivantes. Une fois que vous avez configuré votre page de réservation, vous pouvez la publier afin que les utilisateurs puissent commencer à réserver des rendez-vous avec vous.
+Pour personnaliser votre page de réservation, connectez-vous à [Office.com](https://office.com), puis accédez à la **page Bookings**\>. Vous pouvez personnaliser la page de réservation avec les options suivantes. Une fois que vous avez configuré votre page de réservation, vous pouvez la publier afin que les utilisateurs puissent commencer à réserver des rendez-vous avec vous.
 
 ## <a name="watch-customize-and-publish-your-booking-page"></a>Regarder : Personnaliser et publier votre page de réservation
 
@@ -42,13 +42,13 @@ La section ci-dessous vous donne des informations sur la configuration de votre 
 
     :::image type="content" source="media/bookings-internal-page-1.png" alt-text="Page Réservations.":::
 
-- **Contrôle d’accès aux pages de réservation : Exiger un compte Microsoft 365 de mon organisation pour réserver** La sélection de cette option permet uniquement aux membres de votre organisation d’afficher votre page ou de réserver des services. L’accès à la page est autorisé via des vérifications d’informations d’identification pour s’assurer que le visiteur appartient à un compte au sein du locataire.
+- **Contrôle d’accès aux pages de réservation : Exiger un compte Microsoft 365 de mon organisation pour réserver**  La sélection de cette option permet uniquement aux membres de votre organisation d’afficher votre page ou de réserver des services. L’accès à la page est autorisé via des vérifications d’informations d’identification pour s’assurer que le visiteur appartient à un compte au sein du locataire.
 
 - **Contrôle d’accès à la page de réservation : désactiver l’indexation directe du moteur de recherche de la page de réservation** Ce paramètre empêche votre page d’apparaître dans les résultats de recherche pour Google, Bing ou d’autres moteurs de recherche. Si vous sélectionnez cette zone, l’accès à la page est limité au lien de page généré.
 
 - **Consentement à l’utilisation des données client** Lorsqu’il est sélectionné, le texte demandant à l’utilisateur ou au client le consentement de votre organisation pour utiliser ses données s’affiche sur la page Self-Service. La case devra être cochée par l’utilisateur pour terminer la réservation.
 
-- **Stratégie de planification**, **notifications par e-mail** et **personnel** . Tous ces paramètres sont similaires à ceux disponibles pour chaque service sous l’onglet Services.
+- **Stratégie de planification**, **notifications Email** et **personnel**. Tous ces paramètres sont similaires à ceux disponibles pour chaque service sous l’onglet Services.
 
 - **Disponibilité** Il s’agit d’une option permettant de définir des plages d’heures et de dates spécifiques de disponibilité pour un service. Dans le cas contraire, Bookings sera défini par défaut sur vos heures d’ouverture. Vous pouvez utiliser l’option **Disponibilité** ici pour des scénarios tels que des jours fériés ou des heures prolongées.
 

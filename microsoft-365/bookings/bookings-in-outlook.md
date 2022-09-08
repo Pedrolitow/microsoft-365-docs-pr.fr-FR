@@ -1,5 +1,5 @@
 ---
-title: Réservations avec moi
+title: Bookings avec moi
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings avec moi pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: 076dc353107aa2499ec170ead5299d94404e351a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5de348a45ca7e38d6ee20cdcce4137247c63bfd7
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487337"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623556"
 ---
-# <a name="bookings-with-me"></a>Réservations avec moi
+# <a name="bookings-with-me"></a>Bookings avec moi
 
 **Bookings with me** in Outlook est une page de planification personnelle basée sur le web qui s’intègre aux informations de disponibilité de votre calendrier Outlook. Les réservations avec moi permettent aux gens de planifier une réunion ou un rendez-vous avec vous. Vous pouvez créer des types de réunion personnalisés à partager avec d’autres personnes afin qu’elles puissent facilement planifier du temps avec vous en fonction de votre disponibilité et de vos préférences. Vous recevez une confirmation par e-mail et les participants peuvent mettre à jour ou annuler des réunions planifiées avec vous à partir de votre page Bookings avec moi.
 
@@ -62,7 +62,7 @@ Pour plus d’informations, consultez [l’élément de feuille de route Microso
 
 1. Bookings avec moi et Bookings partagent le même modèle de licence. Toutefois, Bookings n’a pas besoin d’être activé pour l’organisation à l’aide des paramètres de locataire pour que les utilisateurs puissent accéder à Bookings avec moi. L’application Bookings doit être activée pour que les utilisateurs aient accès à Bookings avec moi.
 
-   Pour activer Bookings avec moi sans accès à Bookings, bloquez l’accès à Microsoft Bookings à l’aide de la [commande PowerShell de stratégie de boîte aux lettres OWA](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps) ou suivez les instructions ici : [Activez ou désactivez Microsoft Bookings](turn-bookings-on-or-off.md).
+   Pour activer Bookings avec moi sans accès à Bookings, bloquez l’accès à Microsoft Bookings à l’aide de la [commande PowerShell de stratégie de boîte aux lettres OWA](/powershell/module/exchange/set-owamailboxpolicy) ou suivez les instructions ici : [Activez ou désactivez Microsoft Bookings](turn-bookings-on-or-off.md).
 
 2. Le partage anonyme FreeBusy du calendrier doit être activé pour utiliser Bookings avec moi. Cela permet à la page Bookings d’avoir accès aux informations de disponibilité dans votre calendrier Outlook. Utilisez PowerShell pour vérifier l’état.
 
@@ -70,13 +70,15 @@ Pour plus d’informations, consultez [l’élément de feuille de route Microso
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
-    « Anonymous:CalendarSharingFreeBusyReviewer » doit être l’un des domaines de la réponse.
+    Anonymous:SharingPolicyAction doit être l’un des domaines de la réponse. La valeur SharingPolicyAction peut être CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail ou CalendarSharingFreeBusyReviewer (valeur par défaut).
 
    Pour activer le partage anonyme, utilisez la commande suivante.
 
    ```PowerShell
-     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer"}
+     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
+  
+  Pour plus d’informations, consultez [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
 
 ## <a name="turn-bookings-with-me-on-or-off"></a>Activer ou désactiver Bookings avec moi
 
@@ -99,7 +101,8 @@ Utilisez les commandes **Get-OrganizationConfig** et **Set-OrganizationConfig** 
 
     Si la commande retourne « EwsEnabled : **$true** », passez à l’étape 2.
 
-    Si la commande retourne « EwsEnabled: » (vide est la valeur par défaut), activez et passez à l’étape 2.
+    Si la commande retourne « EwsEnabled: » (vide est la valeur par défaut), activez, mais uniquement si nécessaire pour bloquer « Bookings with », puis passez à l’étape 2.
+    Sinon, les valeurs par défaut d’EwsEnabled sont suffisantes pour laisser « Bookings with me » activé, aucune autre modification n’est nécessaire.
 
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
@@ -204,7 +207,7 @@ Utilisez les commandes **Get-CASMailbox** et **Set-CASMailbox** pour vérifier l
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="what-is-the-difference-between-bookings-and-bookings-with-me"></a>Quelle est la différence entre Bookings et Bookings avec moi ?
 

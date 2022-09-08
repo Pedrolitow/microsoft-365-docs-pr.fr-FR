@@ -6,19 +6,19 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: high
 description: En savoir plus sur les licences pour SharePoint Syntex
-ms.openlocfilehash: 86776af3184e44cb88f17e0164859f0ba0e2f334
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 22fcff4801e912e152256c49610adc46180546a6
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822266"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623634"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Gestion des licences pour SharePoint Syntex
 
@@ -35,7 +35,10 @@ Les tâches suivantes nécessitent une [licence SharePoint Syntex](https://www.m
 - Création d’un modèle de traitement de formulaire via le point d’entrée dans une bibliothèque
 - Chargement de contenu dans une bibliothèque où un modèle de compréhension des documents ou de traitement des formulaires a été appliqué.
 - Exécution d'un modèle de compréhension des documents à la demande
-- Utilisez les services de taxonomie Premium. (Les services de taxonomie Premium comprennent l’importation d’ensembles de termes basés sur SKOS, l’envoi de types de contenu d’entreprise aux sites associés au hub et les rapports de magasin de termes.)
+- Création d’un modèle moderne avec un assembly de contenu
+- Génération d’un document à partir d’un modèle moderne
+- Utilisation de la recherche avancée de métadonnées
+- Utilisation des services de taxonomie Premium. (Premium services de taxonomie comprennent l’importation d’ensembles de termes basés sur SKOS, qui poussent les types de contenu d’entreprise vers les sites associés au hub et les rapports du magasin de termes.)
 
 Les utilisateurs sans licence peuvent avoir accès à un centre de contenu et créer des modèles de compréhension de document, mais ne peuvent pas les appliquer à une bibliothèque de documents.
  

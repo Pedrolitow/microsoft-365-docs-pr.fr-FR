@@ -12,12 +12,12 @@ metadata:
   manager: scotv
   audience: Admin
   ms.date: 09/04/2020
-  ms.openlocfilehash: f8d05950fbe00dedff8f924893d202ffb9013b33
-  ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-  ms.translationtype: HT
+  ms.openlocfilehash: ff08842952d3acd589b1a0e8e0c9503ee544ef56
+  ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+  ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/30/2022
-  ms.locfileid: "67085485"
+  ms.lasthandoff: 09/08/2022
+  ms.locfileid: "67623621"
 additionalContent:
   sections:
   - items:
@@ -27,8 +27,8 @@ additionalContent:
     - title: Protégez vos informations
       summary: Entrez votre page Créer votre page À propos de nous, y compris le nom de l’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.
       url: enter-business-information.md
-    - title: Obtenir l’application bookings
-      summary: Modifiez le thème de couleur et définissez l’apparence de la page de réservation de votre client externe.
+    - title: Personnaliser et publier votre page de réservation
+      summary: Configurez à quoi ressemblera la page de réservation de votre client externe.
       url: customize-booking-page.md
     - title: Ajouter du personnel aux réservations
       summary: Créez votre liste de membres du personnel et gérez les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail.
