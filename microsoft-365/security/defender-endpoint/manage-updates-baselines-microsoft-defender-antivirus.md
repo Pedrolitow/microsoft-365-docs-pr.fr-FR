@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/06/2022
+ms.date: 09/08/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,17 +19,14 @@ ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ef00b200b1743de9ced826585330936dcfc41702
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: ad736e8cb196fabbfd1c08112ef0aa9dc0794593
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614459"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631469"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
-
-> [!IMPORTANT]
-> Les clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version antérieure. Il est recommandé aux clients de mettre à jour au moins cette nouvelle version de moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour. Consultez les [Versions mensuelles de la plateforme et du moteur](#monthly-platform-and-engine-versions) (dans cet article).
 
 **S’applique à :**
 - [Plans 1 et 2 de Microsoft Defender pour points de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -90,6 +87,30 @@ Toutes nos mises à jour contiennent
 - Améliorations de la facilité de service
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
+<details> 
+<summary> Août-2022 (Plateforme : 4.18.2207.7| Moteur : 1.1.19600.3)</summary> 
+ &ensp;Version de la mise à jour du renseignement de sécurité : **1.373.1647.0** <br/>
+&ensp;Publication : **6 septembre 2022**<br/>
+&ensp;Plateforme : **4.18.2207.7**<br/>
+&ensp;Moteur : **1.1.19600.3**<br/>
+&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+  Version du moteur : 1.1.19600.3<br/>
+Version de la mise à jour du renseignement de sécurité : 1.373.1647.0<br/>
+  
+### <a name="whats-new"></a>Nouveautés 
+
+- Résolution des problèmes de programme d’installation de l’agent unifié sur le serveur WS2012R2 et Windows Server 2016 <br/>
+- Correction d’un problème de correction pour la détection personnalisée <br/>
+- Correction d’une condition de concurrence liée à la surveillance du comportement <br/>
+- Résolution de plusieurs scénarios d’interblocage dans les DLL Defender <br/>
+- Amélioration de la fréquence de notification des toasts Windows pour les règles ASR  
+  
+### <a name="known-issues"></a>Problèmes connus 
+
+Aucun problème connu   
+
+<br/> 
+</details> 
 <details>
 <summary>Juillet-2022 (Plateforme : 4.18.2207.5 | Moteur : 1.1.19500.2)</summary>
 
@@ -155,7 +176,14 @@ Version de mise à jour du renseignement de sécurité : 1.369.88.0<br/>
 Aucun problème connu
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédentes : prise en charge de la mise à niveau technique uniquement
+
+Une fois qu’une nouvelle version de package est publiée, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
+
+<details>
 <summary>Mars 2022 *MISE À JOUR* (Plateforme : 4.18.2203.5 | Moteur : 1.1.19200.5)</summary>
 
 Les *clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft Corporation a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version précédente. Il est recommandé aux clients de mettre à jour vers au moins cette nouvelle version de moteur du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour.*
@@ -164,7 +192,7 @@ Les *clients qui ont appliqué la mise à jour du moteur Microsoft Defender de 
 &ensp;Publiée : **22 avril 2022**<br/>
 &ensp;Plateforme : **4.18.2203.5**<br/>
 &ensp;Moteur : **1.1.19200.5**<br/>
-&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+&ensp;Phase de support : **support technique de mise à niveau (uniquement)**<br/>
 
 Version du moteur : 1.1.19200.5 <br/>
 Version de mise à jour de la veille de sécurité : 1.363.817.0<br/>
@@ -185,7 +213,7 @@ Aucun problème connu
 &ensp;Publiée : **7 avril 2022**<br/>
 &ensp;Plateforme : **4.18.2203.5**<br/>
 &ensp;Moteur : **1.1.19100.5**<br/>
-&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+&ensp;Phase de support : **support technique de mise à niveau (uniquement)**<br/>
 
 Version du moteur : 1.1.19100.5 <br/>
 Version de mise à jour de la veille de sécurité : 1.361.1449.0<br/>
@@ -203,14 +231,7 @@ Version de mise à jour de la veille de sécurité : 1.361.1449.0<br/>
 - Potentiel d’utilisation élevée des ressources (UC et/ou mémoire). Consultez la mise à jour de la plateforme 4.18.2203.5 et du moteur 1.1.19200.5 pour mars 2022.
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédentes : prise en charge de la mise à niveau technique uniquement
-
-Une fois qu’une nouvelle version de package est publiée, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
-
-<details>
+</details><details>
 <summary>Février 2022 (Plateforme : 4.18.2202.4 | Moteur : 1.1.19000.8)</summary>
 
 &ensp;Version de mise à jour de la veille de sécurité : **1.361.14.0**<br/>

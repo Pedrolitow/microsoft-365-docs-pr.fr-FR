@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des URL dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f29e410a6457a4810bf98436f912a57866978241
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: be94c967a156ac61b3fdddedf533980bb5391c43
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495102"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631513"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des URL utilisant la liste Autoriser/Bloquer des clients
 
@@ -370,7 +370,6 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 **Entrée** : `*.contoso.com`
 
 - **Correspondance de bloc** :
-  - contoso.com
   - xyz.abc.contoso.com
 
 - **Bloc non mis en correspondance** :

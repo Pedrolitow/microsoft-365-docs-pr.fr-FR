@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Découvrez les boîtes aux lettres d’archivage pour fournir un stockage de boîte aux lettres supplémentaire.
-ms.openlocfilehash: 53967fbb829cdedddbadc0de9158d18330e71969
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 38635b5f640ae14a2b9294cf11d22a41bce71b1f
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359140"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631316"
 ---
 # <a name="learn-about-archive-mailboxes"></a>En savoir plus sur les boîtes aux lettres d’archivage
 
@@ -49,4 +49,4 @@ Une fois la boîte aux lettres d’archivage d’un utilisateur activée, jusqu�
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Voir [Activer l’archivage des boîtes aux lettres dans le Portail de conformité Microsoft Purview](enable-archive-mailboxes.md).
+Consultez [Activer les boîtes aux lettres d’archivage dans Microsoft 365](enable-archive-mailboxes.md).

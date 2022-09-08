@@ -4,7 +4,7 @@ description: Configurez les paramètres proxy et Internet Microsoft Defender pou
 keywords: configurer, proxy, Internet, connectivité Internet, paramètres, paramètres proxy, netsh, winhttp, serveur proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c579c72ab4918bf7ce0ebb5df80c05d9a4a45518
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: c0c26b391f46f7186aa9d9c54e8ef63f98ad6093
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388724"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631491"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -94,6 +94,14 @@ Le proxy statique est configurable via une stratégie de groupe (GP), les deux p
 |:---|:---|:---|:---|
 | Configurer l’utilisation du proxy authentifié pour l’expérience utilisateur connectée et le service de télémétrie | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
 | Configurer les expériences et la télémétrie des utilisateurs connectés | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Par exemple : ```10.0.0.6:8080``` (REG_SZ) |
+
+> [!NOTE]
+> Si vous utilisez le paramètre « TelemetryProxyServer » sur des appareils qui sont autrement **entièrement hors connexion**, il est recommandé d’ajouter le paramètre `PreferStaticProxyForHttpRequest` de Registre supplémentaire avec la valeur .`1`<br>
+> L’emplacement du chemin d’accès au Registre parent pour « PreferStaticProxyForHttpRequest » est « HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection »<br>
+> La commande suivante peut être utilisée pour insérer la valeur de Registre à l’emplacement approprié :<br>
+> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```
+
+
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configurer un proxy statique pour l’antivirus Microsoft Defender
 
@@ -252,7 +260,7 @@ Vérifiez que la configuration du proxy est terminée avec succès. WinHTTP peut
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    Remplacez *HardDrivePath* par le chemin d’accès, où l’outil MDEClientAnalyzer a été téléchargé. Par exemple :
+    Remplacez *HardDrivePath* par le chemin d’accès, où l’outil MDEClientAnalyzer a été téléchargé. Par exemple :
 
     ```command prompt
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
@@ -262,7 +270,7 @@ Vérifiez que la configuration du proxy est terminée avec succès. WinHTTP peut
 
 6. Ouvrez *MDEClientAnalyzerResult.txt* et vérifiez que vous avez effectué les étapes de configuration du proxy pour activer la découverte du serveur et l’accès aux URL de service.
 
-   L’outil vérifie la connectivité des URL du service Defender pour point de terminaison. Vérifiez que le client Defender pour point de terminaison est configuré pour interagir. L’outil imprime les résultats dans le fichier *MDEClientAnalyzerResult.txt* pour chaque URL qui peut potentiellement être utilisée pour communiquer avec les services Defender pour point de terminaison. Par exemple :
+   L’outil vérifie la connectivité des URL du service Defender pour point de terminaison. Vérifiez que le client Defender pour point de terminaison est configuré pour interagir. L’outil imprime les résultats dans le fichier *MDEClientAnalyzerResult.txt* pour chaque URL qui peut potentiellement être utilisée pour communiquer avec les services Defender pour point de terminaison. Par exemple :
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx

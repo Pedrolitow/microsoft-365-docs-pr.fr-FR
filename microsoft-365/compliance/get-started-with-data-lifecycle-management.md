@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Étapes normatives pour les administrateurs, les conditions requises de licence et les scénarios courants qui gèrent le cycle de vie des données de votre organisation.
-ms.openlocfilehash: 9a304a9bbde5bd77a146c3e18246cf5115634f8f
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
-ms.translationtype: HT
+ms.openlocfilehash: 0ed0abe1edee323bfae69836f9db49ca9d7e88e5
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67105986"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631272"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Prise en main de la gestion du cycle de vie des données
 
@@ -41,7 +41,7 @@ ms.locfileid: "67105986"
     
     Si nécessaire, [créez et appliquez des étiquettes de rétention pour vos exceptions](create-retention-labels-information-governance.md).
 
-3. **Activer l’archivage des boîtes aux lettres** afin de fournir aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire : [Activer l’archivage des boîtes aux lettres dans le centre de conformité](enable-archive-mailboxes.md)
+3. **Activer l’archivage des boîtes aux lettres** pour fournir aux utilisateurs un espace de stockage de boîte aux [lettres supplémentaire : activer les boîtes aux lettres d’archivage dans Microsoft 365](enable-archive-mailboxes.md)
     
     Si nécessaire pour prendre en charge les boîtes aux lettres d’archivage :
     
@@ -82,7 +82,7 @@ Utilisez le tableau suivant pour vous aider à mettre en correspondance vos beso
 |Je veux...|Documentation|
 |----------------|---------------|
 |Conservez ou supprimez efficacement les données pour les services Microsoft 365 : <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Groupes Microsoft 365 <br />- Teams <br />- Yammer <br />- Skype Entreprise |[Créer et configurer des stratégies de rétention](create-retention-policies.md)|
-|Fournir aux utilisateurs un espace de stockage supplémentaire pour leurs boîtes aux lettres |[Activer l’archivage des boîtes aux lettres dans le portail de conformité Microsoft Purview](enable-archive-mailboxes.md)|
+|Fournir aux utilisateurs un espace de stockage supplémentaire pour leurs boîtes aux lettres |[Activer les boîtes aux lettres d’archivage dans Microsoft 365](enable-archive-mailboxes.md)|
 |Conserver les données des boîtes aux lettres après que les employés ont quitté l'organisation |[Créer et gérer les boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md)|
 |Télécharger les données de la boîte aux lettres à partir des fichiers PST |[Utiliser le chargement réseau pour importer des fichiers PST](use-network-upload-to-import-pst-files.md)|
 

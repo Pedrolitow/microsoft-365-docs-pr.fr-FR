@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Ln savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
-ms.openlocfilehash: 55803a2c354890264f99753af2aa6337cf49182a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: c35e2e9855875eb86c5da813bfc85dd0d285138c
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632396"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631359"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données
 
@@ -75,7 +75,7 @@ Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ce
 
 - L’utilisation d’étiquettes de confidentialité comme condition est prise en charge dans toutes les charges de travail, comme indiqué dans la matrice de support ci-dessus.
 
-- Les conseils de stratégie DLP continueront d’être affichés dans les charges de travail (à l’exception d’Outlook Win32) pour les stratégies DLP qui contiennent une étiquette de confidentialité en tant que condition.
+- Les conseils de stratégie DLP continueront d’être affichés dans les charges de travail (à l’exception d’Outlook pour Windows) pour les stratégies DLP qui contiennent une étiquette de confidentialité en tant que condition.
 
 - Les étiquettes de confidentialité s’affichent également dans le message de rapport d’incident si une stratégie DLP avec une étiquette de confidentialité comme condition est associée.
 
@@ -88,7 +88,7 @@ Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ce
 |Charge de travail  |Prise en charge/non prise en charge des conseils de stratégie  |
 |---------|---------|
 |OWA |    Pris en charge     |
-|Outlook Win 32    |  non pris en charge       |
+|Outlook pour Windows   |  non pris en charge       |
 |SharePoint   |   Pris en charge      |
 |OneDrive Entreprise    |    Pris en charge     |
 |appareils de point de terminaison   |  non pris en charge       |

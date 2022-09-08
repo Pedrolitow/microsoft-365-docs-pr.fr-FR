@@ -19,16 +19,19 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9b00590c0a1904f0f2a9b786414e9ee303c3572
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: c98d1ab6e430d22f5e4c2aad2d881061fcf32c90
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637480"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631447"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Solutions d’audit dans Microsoft Purview
 
 Les solutions d’audit Microsoft Purview fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes médico-légales, aux enquêtes internes et aux obligations de conformité. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les enregistrements d'audit de ces événements peuvent être utilisables dans une recherchepar les responsables de la sécurité, les administrateurs informatiques, les équipes chargées de la lutte contre le risque interne et les enquêteurs chargés de la conformité et de la législation au sein de votre organisation. Cette fonctionnalité permet de gagner en visibilité sur les activités effectuées au sein de votre organisation Microsoft 365.
+
+> [!NOTE]
+> L’audit Microsoft Purview est le nouveau nom du journal d’audit unifié.
 
 ## <a name="microsoft-purview-auditing-solutions"></a>Solutions d’audit Microsoft Purview
 

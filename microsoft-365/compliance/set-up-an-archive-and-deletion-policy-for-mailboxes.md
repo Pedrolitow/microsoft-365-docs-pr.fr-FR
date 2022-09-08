@@ -23,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Comment créer une stratégie de gestion des enregistrements de messagerie personnalisée (MRM) pour déplacer automatiquement des éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: d9a4af2b5518480e45ab98ca1a76b11aea36efd8
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 08037607aa183462c560fb95641e3b0bc50da2e7
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360410"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631301"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personnaliser une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
@@ -69,7 +69,7 @@ Vous pouvez suivre une partie ou l’ensemble des étapes décrites dans cet art
 
 La première étape consiste à vérifier que chaque utilisateur de votre organisation dispose d’une boîte aux lettres d’archivage. La boîte aux lettres d’archivage d’un utilisateur doit être activée afin qu’une balise de rétention avec une action de rétention « Déplacer vers l’archive » puisse déplacer l’élément après l’expiration de l’âge de rétention.
 
-Pour obtenir des instructions sur l’activation des boîtes aux lettres [d’archivage, consultez Activer les boîtes aux lettres d’archivage dans le portail de conformité Microsoft Purview](enable-archive-mailboxes.md).
+Pour obtenir des instructions sur l’activation des boîtes aux lettres d’archivage, consultez [Activer les boîtes aux lettres d’archivage dans Microsoft 365](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > Vous pouvez activer les boîtes aux lettres d’archivage à tout moment pendant ce processus, à condition qu’elles soient activées à un moment donné avant de terminer le processus. Si une boîte aux lettres d’archivage n’est pas activée, aucune action n’est effectuée sur les éléments auxquels une stratégie d’archivage ou de suppression lui est affectée.
@@ -268,7 +268,7 @@ Pour ce faire, utilisez Exchange Online PowerShell pour mettre à jour le plan d
 
 4. Vous pouvez réexécuter la commande à l’étape 2 pour vérifier que la stratégie de rétention MRM affectée au plan de boîte aux lettres par défaut a été modifiée.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - L’âge de rétention des éléments de boîte aux lettres est calculé à partir de la date de remise. Ou à partir de la date de création des éléments tels que les brouillons de messages qui ne sont pas envoyés mais qui sont créés par l’utilisateur. Quand l'Assistant Dossier géré traite les éléments d'une boîte aux lettres, il appose une date de début et une date d'expiration pour tous les éléments présentant des balises de rétention avec l'action de rétention Supprimer et autoriser la récupération ou Supprimer définitivement. Les éléments qui ont une balise d’archive sont marqués avec une date de déplacement.
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérez les commentaires que vos utilisateurs peuvent envoyer à Microsoft sur les produits Microsoft.
-ms.openlocfilehash: 24b421598815c163599932d761908b0765acea1b
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: b6c54780277cf57a66aa3064f4222a360c270486
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406209"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631425"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Gérer les commentaires de Microsoft pour votre organisation
 
@@ -44,13 +44,13 @@ Le tableau ci-dessous représente les applications et services actuellement conn
 |**Portail d'entreprise Intune (Android)**|Oui|Oui|Oui|Oui|
 |**Microsoft Stream (Android, iOS)**|Oui|Oui|Oui|Oui|
 |**Microsoft Whiteboard**|Oui|Oui|Oui|Oui|
-|**Office.com**|Bientôt disponible|Bientôt disponible|Bientôt disponible|Bientôt disponible|
+|**Office.com**|Oui|Oui|Oui|Oui|
 |**OneNote**|Oui|Oui|Oui|Oui|
 |**OneDrive**|[Certains paramètres actuellement gérés par d’autres contrôles.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook (Web, iOS)**|Bientôt disponible|Bientôt disponible|Bientôt disponible|Bientôt disponible|
-|**Outlook (Bureau, Android, Mac)**|Bientôt disponible|Bientôt disponible|Bientôt disponible|Bientôt disponible|
+|**Outlook (Bureau, Android, Mac)**|Oui|Oui|Oui|Oui|
 |**PowerPoint**|Oui|Oui|Oui|Oui|
-|**Project**|Bientôt disponible|Bientôt disponible|Bientôt disponible|Bientôt disponible|
+|**Project**|Oui|Oui|Oui|Oui|
 |**Éditeur**|Oui|Oui|Oui|Oui|
 |**SharePoint**|[Certains paramètres actuellement gérés par d’autres contrôles.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Certains paramètres actuellement gérés par d’autres contrôles.](/microsoftteams/manage-feedback-policies-in-teams)||||
@@ -58,6 +58,7 @@ Le tableau ci-dessous représente les applications et services actuellement conn
 |**Word**|Oui|Oui|Oui|Oui|
 |**Visio**|Oui|Oui|Oui|Oui|
 |**Viva Goals**|Oui|Oui|Oui|Oui|
+|**Viva Insights**|Oui|Oui|Oui|Oui|
 |**Tableau blanc collaboratif**|Oui|Oui|Oui|Oui|
 |**Yammer**|Oui|Oui|Oui|Oui|
 
