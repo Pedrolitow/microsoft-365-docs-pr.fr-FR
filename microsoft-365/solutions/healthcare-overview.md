@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 11217af0186f6f935435865df7234f02ad214350
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 6475d42cb9a4d0aa5c57cf3cf6f28f7889b59864
+ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585309"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67634753"
 ---
 # <a name="microsoft-365-solutions-for-the-healthcare-industry"></a>Solutions Microsoft 365 pour le secteur de la santé
 
@@ -39,7 +39,8 @@ Découvrez comment utiliser Microsoft 365, Dynamics 365 et Azure pour numériser
 |[Visites virtuelles dans Microsoft Teams et l’application Bookings](/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits)  |      L’application Bookings dans Microsoft Teams offre aux organisations un moyen simple de planifier et de gérer des rendez-vous virtuels pour le personnel et les participants. Utilisez-le pour planifier des rendez-vous virtuels tels que des visites médicales, des consultations financières, des entretiens, le support client, des expériences d’achat virtuel, des heures de bureau de formation, etc.   |
 |[Microsoft 365 pour la santé](/microsoft-365/frontline/teams-in-hc)    |  Microsoft Teams offre un certain nombre de fonctionnalités de télémédecine utiles pour les hôpitaux et d’autres organisations de soins de santé. <br>- Visites virtuelles et intégration d’electronic healthcare record (EHR)<br>- Packages de stratégie Teams<br>- Messagerie sécurisée<br>- Modèles Teams<br>- Coordination et collaboration des soins      |
 |[Le Cloud Microsoft pour le secteur de la santé](/industry/healthcare/overview)  | Découvrez Microsoft Cloud for Healthcare et comment il réunit des fonctionnalités approuvées pour les clients et les partenaires qui améliorent l’engagement des patients, permettent la collaboration des équipes de santé et améliorent les insights de données cliniques et opérationnelles pour améliorer la prise de décision et l’efficacité opérationnelle.     |
-| [Architecture et solutions Azure pour les soins de santé](/azure/architecture/industries/healthcare)| Découvrez comment utiliser les services Microsoft Azure pour numériser, moderniser et améliorer votre solution de santé dans Azure pour les soins de santé|
+|[architectures de référence Microsoft Cloud for Healthcare](/industry/healthcare/architecture/overview) | Recherchez des architectures de référence pour aider les responsables de projet d’organisations médicales, les architectes d’entreprise et les responsables informatiques à collaborer et à communiquer efficacement sur l’implémentation de Microsoft Cloud for Healthcare. |
+|[Architecture et solutions Azure pour les soins de santé](/azure/architecture/industries/healthcare)| Découvrez comment utiliser les services Microsoft Azure pour numériser, moderniser et améliorer votre solution de santé dans Azure pour les soins de santé|
 
 ## <a name="videos-you-can-share-with-your-team"></a>Vidéos que vous pouvez partager avec votre équipe
 

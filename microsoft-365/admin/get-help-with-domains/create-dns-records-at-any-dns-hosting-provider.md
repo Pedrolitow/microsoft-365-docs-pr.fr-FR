@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: d4175cc9cdf0e0a2b7e58d0b9bc0cf295cc3683c
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: 4e0b89b390133ac6fa0f6a88f092f60ed2ce926d
+ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083946"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67634775"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -38,6 +38,8 @@ Si vous avez acheté un domaine auprès d’un fournisseur d’hébergement tier
 À la fin de ces étapes, votre domaine reste enregistré auprès de l’hôte à qui vous avez acheté le domaine, mais Microsoft 365 peut l’utiliser pour vos adresses de messagerie (telles que utilisateur@votredomaine.com) et d’autres services.
 
 Si vous n’ajoutez pas de domaine, les membres de votre organisation utiliseront le domaine onmicrosoft.com pour leur adresse de messagerie jusqu’à ce que vous le fassiez. Il est important d’ajouter votre domaine avant d’ajouter des utilisateurs, de sorte que vous n’ayez pas à les reconfigurer.
+
+Si vous avez déjà créé des utilisateurs et souhaitez modifier leur domaine, suivez les étapes décrites dans [Modifier votre adresse e-mail pour utiliser votre domaine personnalisé à l’aide de la Centre d'administration Microsoft 365](/microsoft-365/admin/email/change-email-address#change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center).
 
 [Consultez la FAQ dédiée aux domaines](../setup/domains-faq.yml) si vous ne trouvez pas ci-dessous ce que vous recherchez .
 

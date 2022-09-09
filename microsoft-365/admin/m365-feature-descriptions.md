@@ -1,8 +1,8 @@
 ---
 title: Description des fonctionnalités Microsoft 365
 ms.author: office365servicedesc
-author: pamelaar
-manager: gailw
+author: pebaum
+manager: scotv
 audience: ITPro
 ms.topic: reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.custom:
 - Adm_ServiceDesc_top
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: Découvrez les informations disponibles pour les descriptions des fonctionnalités de Microsoft 365.
-ms.openlocfilehash: 40f0b9379b0a4105f1292d283de2785dc652591d
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: b0e9c5b1f0be3c5dc4d798efaf7c974ff55924be
+ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281265"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67634687"
 ---
 # <a name="microsoft-365-feature-descriptions"></a>Description des fonctionnalités Microsoft 365
 

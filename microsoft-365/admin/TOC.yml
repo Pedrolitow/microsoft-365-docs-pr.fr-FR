@@ -352,7 +352,7 @@
               href: manage/servicenow-testing-the-configuration.md
             - name: Résolution des problèmes
               href: manage/servicenow-troubleshooting.md
-            - name: Activer l’intégration de la prise en charge de Microsoft 365 pour ServiceNow
+            - name: Activer l’agent virtuel
               href: manage/servicenow-support-integration.md
     - name: Gérer les abonnements et la facturation
       href: ../commerce/index.yml
