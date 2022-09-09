@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les conversations et canaux Microsoft Teams prennent en charge les stratégies de protection contre la perte de données (DLP).
-ms.openlocfilehash: 5d2ee7cefc23a85aec1a75fbe9fe121feacbb51f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ae9f7b273dc84d16c499a13f4c491d517d804cd2
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638364"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639611"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prévention des pertes de données et Microsoft Teams
 
@@ -31,7 +31,12 @@ Si votre organisation a Protection contre la perte de données Microsoft Purview
     > [!NOTE]
     > La protection contre la perte de données pour Microsoft Teams bloque le contenu sensible lorsqu’il est partagé avec les utilisateurs de Microsoft Teams qui disposent des éléments suivants :<br/>- [accès invité](/MicrosoftTeams/guest-access) dans les équipes et les canaux ; Ou<br/>- [accès externe](/MicrosoftTeams/manage-external-access) dans les réunions et les sessions de conversation. <p>La protection contre la perte de données pour les sessions de conversation externes fonctionne uniquement si l’expéditeur et le récepteur sont en mode Teams uniquement et utilisent la [fédération native Microsoft Teams](/microsoftteams/manage-external-access). DLP pour Teams ne bloque pas les messages dans [l’interopérabilité](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) avec des sessions de conversation fédérées Skype Entreprise ou non natives.
 
-- **Exemple 2 : Protection des informations sensibles dans les documents**. Supposons qu’une personne tente de partager un document avec des invités dans un canal ou une conversation Microsoft Teams, et que le document contient des informations sensibles. Si vous avez défini une stratégie DLP pour éviter cela, le document ne s’ouvre pas pour ces utilisateurs. Votre stratégie DLP doit inclure SharePoint et OneDrive pour que la protection soit en place. Il s’agit d’un exemple de DLP pour SharePoint qui s’affiche dans Microsoft Teams et nécessite donc que les utilisateurs disposent d’une licence pour Office 365 DLP (inclus dans Office 365 E3), mais ne nécessite pas que les utilisateurs disposent d’une licence pour Conformité avancée Office 365.)
+- **Exemple 2 : Protection des informations sensibles dans les documents**. Supposons qu’une personne tente de partager un document avec des invités dans un canal ou une conversation Microsoft Teams, et que le document contient des informations sensibles. Si vous avez défini une stratégie DLP pour éviter cela, le document ne s’ouvre pas pour ces utilisateurs. Votre stratégie DLP doit inclure SharePoint et OneDrive pour que la protection soit en place. Il s’agit d’un exemple de DLP pour SharePoint qui s’affiche dans Microsoft Teams et nécessite donc que les utilisateurs disposent d’une licence pour Office 365 DLP (inclus dans Office 365 E3), mais ne nécessite pas que les utilisateurs soient sous licence pour Conformité avancée Office 365. 
+   
+Vous pouvez étendre la stratégie DLP Teams pour couvrir SharePoint Online et OneDrive Entreprise en sélectionnant **la protection automatique des fichiers** dans la bannière des stratégies **DLP** > **.** Cela active la protection DLP pour tous les fichiers partagés dans les conversations et canaux Teams avec les mêmes règles que celles qui s’appliquent aux messages Teams. Une fois activée, l’extension s’applique à toutes les stratégies DLP Teams existantes et futures. Vous n’êtes donc pas obligé de créer des stratégies distinctes pour SharePoint et OneDrive pour la protection des fichiers. 
+
+> [!NOTE]
+> Seules les stratégies Teams qui ont des règles avec des conditions ou des exceptions de **contenu contenant** ou **du contenu sont partagées à partir de Microsoft 365** peuvent être étendues pour la protection automatique des fichiers. Si la configuration de condition ou d’exception a **l’expéditeur est**, **le domaine de l’expéditeur est**, **le destinataire est**, et le **domaine de destinataire est** présent, l’action d’extension échoue, car ces conditions ne s’appliquent pas à SharePoint et OneDrive.
 
 - **Exemple 3 : Protection des communications dans les canaux partagés Teams**. Pour les canaux partagés, la stratégie DLP de l’équipe Teams hôte est appliquée. Par exemple, supposons qu’il existe un canal partagé appartenant à TeamA de Contoso. TeamA a une stratégie DLP P1. Il existe 3 façons de partager un canal :
     - **Partager avec un membre** : vous invitez user1 de Contoso à rejoindre le canal partagé sans le faire membre de TeamA. Tous les utilisateurs de ce canal partagé, y compris user1, seront couverts par P1.
@@ -131,7 +136,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
     
 6. Sélectionnez **Suivant**.
 
-7. Cliquez sur **Save (Enregistrer)**.
+7. Cliquez sur **Enregistrer**.
 
 Autorisez environ une heure pour que vos modifications fonctionnent dans votre centre de données et se synchronisent avec les comptes d’utilisateur.
 <!-- again, why user accounts? -->

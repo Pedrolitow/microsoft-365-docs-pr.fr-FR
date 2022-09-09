@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez la compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7ce1a44a8101a45bf55007b98cc310c734d26895
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 7ee016f228a050cf36d048ccd37c3ad8615823ed
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584957"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639567"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
 
@@ -79,13 +79,6 @@ Le traitement OCR fonctionne mieux sur des documents respectant les conditions r
 - S’ils sont numérisés à partir de documents sur papier, les numérisations devraient être des images de qualité supérieure.
 
 - Doit utiliser l’alphabet latin (caractères anglais).
-
-> [!NOTE]
-> Le générateur d’intelligence artificielle ne prend actuellement pas en charge les types suivants de formulaires traitant des données entrantes :
->
-> - Cases à cocher ou cases d’option
-> - Signatures
-> - FICHIERS PDF fillables
 
 ### <a name="supported-file-types"></a>Types de fichiers pris en charge
 

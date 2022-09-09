@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b395aaf4d506fcb933b34135d3871e9669a5efaa
-ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.openlocfilehash: c757b9b2b6f9dc649832f2c32a2a0137f4804779
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67498480"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639531"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -191,20 +191,27 @@ Pour une expérience d’étiquette plus cohérente avec des rapports significat
 > [!NOTE]
 > Si les utilisateurs suppriment manuellement le chiffrement d’un document étiqueté stocké dans SharePoint ou OneDrive et que vous avez [activé les étiquettes de niveau de confidentialité des fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), le chiffrement d’étiquettes est restauré automatiquement au prochain accès ou téléchargement du document. 
 
+## <a name="encryption-based-label-matching-for-documents"></a>Correspondance d’étiquette basée sur le chiffrement pour les documents
 
-## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Appliquer des étiquettes de niveau de confidentialité aux fichiers, courriers électroniques et pièces jointes
+Lorsqu’un document a été chiffré avec des autorisations définies par l’administrateur, les informations de chiffrement incluent des informations sur une étiquette de confidentialité correspondante. Par conséquent, lorsqu’un utilisateur ouvre ce document dans une application Office, l’étiquette correspondante s’affiche dans l’application Office et persiste si le document est enregistré.
 
-Les utilisateurs ne peuvent appliquer qu’une étiquette à la fois pour chaque document ou e-mail.
+Dans ce scénario, l’étiquette de confidentialité correspondante peut étiqueter un document sans étiquette et remplacer une étiquette existante qui n’applique pas le chiffrement. Par exemple, l’étiquette **Général** est remplacée par **Confidentiel/Tous les employés**. Les marquages de contenu de l’étiquette correspondante ne sont pas appliqués automatiquement, sauf si le document n’a pas été précédemment étiqueté et que vous utilisez le complément AIP.
 
-Lorsque vous étiquetez un courrier électronique qui contient des pièces jointes, celles-ci héritent de l’étiquette uniquement si l’étiquette que vous appliquez au courrier électronique applique le chiffrement et que la pièce jointe qui est un document Office n’est pas déjà chiffré. Étant donné que l’étiquette héritée applique le chiffrement, la pièce jointe devient de nouveau chiffrée.
+Ce scénario permet de déplacer des solutions de chiffrement plus anciennes des modèles de protection aux étiquettes de confidentialité qui appliquent le chiffrement.
 
-Une pièce jointe n’hérite pas des étiquettes du courrier électronique lorsque l’étiquette appliquée au courrier électronique n’applique pas le chiffrement ou si la pièce jointe est déjà chiffrée.
+Toutefois, vous verrez également ce comportement avec un scénario d’étiquetage pour les pièces jointes de courrier lorsqu’elles sont ouvertes par le destinataire. Par exemple :
 
-Exemples d’héritage des étiquettes, où l’étiquette **Confidentiel** applique le chiffrement et l’étiquette **Général** n’applique pas le chiffrement :
+1. Un utilisateur crée un e-mail et attache un document Office non chiffré, puis applique une étiquette à l’e-mail.
+    
+    L’étiquette applique le chiffrement avec les autorisations définies par l’administrateur, plutôt que les options Ne pas transférer ou Encrypt-Only. Par exemple, pour la configuration de l’étiquette, l’administrateur sélectionne **Attribuer des autorisations maintenant** et spécifie que tous les employés disposent d’un accès en lecture.
 
-- Un utilisateur crée un courrier électronique et applique l’étiquette **Confidentiel** à ce message. Ils ajoutent ensuite un document Word qui n’est pas étiqueté ou chiffré. À la suite de l'héritage, le document est nouvellement étiqueté **Confidentiel** et le chiffrement est désormais appliqué à partir de cette étiquette.
+2. Lorsque l’e-mail est envoyé, la [pièce jointe hérite automatiquement du chiffrement, mais pas de l’étiquette](encryption-sensitivity-labels.md#email-attachments-for-encrypted-email-messages).
 
-- Un utilisateur crée un courrier électronique et applique l’étiquette **Confidentiel** à ce message. Ils ajoutent ensuite un document Word étiqueté **Général** ce fichier n’est pas chiffré. À la suite de l'héritage, le document est étiqueté de nouveau **Confidentiel** et le chiffrement est désormais appliqué à partir de cette étiquette.
+3. Lorsqu’un destinataire du même locataire ouvre le document chiffré, une étiquette correspondante pour les autorisations définies par l’administrateur s’affiche automatiquement pour le document et persiste si le document est enregistré.
+    
+    En tant qu’événement d’audit affiché dans l’Explorateur d’activités, cet utilisateur a appliqué l’étiquette, et non l’expéditeur de l’e-mail.
+
+La correspondance d’étiquette basée sur le chiffrement fonctionne uniquement dans le locataire, pour les autorisations définies par l’administrateur, et l’étiquette de confidentialité correspondante doit être publiée pour l’utilisateur qui ouvre le document.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilité des étiquettes de confidentialité
 

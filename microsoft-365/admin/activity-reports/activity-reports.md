@@ -2,8 +2,8 @@
 title: Rapports d’activité du Centre d’administration Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 05bee2950cb50b0b5a21ef67e9f73cec5e78b07a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
-ms.translationtype: HT
+ms.openlocfilehash: 79c4c4bcdb7036fcf32e8d8ee98f29ce49e4c3dd
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601605"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639589"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -38,9 +38,9 @@ Vous pouvez facilement voir comment les personnes de votre entreprise utilisent 
   
 Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
 
-## <a name="watch-act-on-a-usage-report-in-office-365"></a>Regarder : Agir sur un rapport d’utilisation dans Office 365
+## <a name="watch-act-on-a-usage-report-in-microsoft-365"></a>Regarder : Agir sur un rapport d’utilisation dans Microsoft 365
   
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198103).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 
@@ -92,7 +92,7 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 
 |Rapport|Public|GCC|GCC-High|DoD|Office 365 géré par 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
+|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|No<sup>1</sup>|No<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|
 |[Activité de messagerie](email-activity-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation des applications de messagerie](email-apps-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation des boîtes aux lettres](mailbox-usage.md)|Oui|Oui|Oui|Oui|Oui|

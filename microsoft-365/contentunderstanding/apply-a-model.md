@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment appliquer un modèle publié à une bibliothèque de documents SharePoint dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: a3c1ca971853234bb4b203d8b1b3e40aec7c1d7d
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: c11e4ba11cdf7da57a344dae774dab7518a72369
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882393"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639633"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Appliquer un modèle de présentation de document dans Microsoft SharePoint Syntex
 
@@ -61,9 +61,9 @@ Pour appliquer votre modèle à une bibliothèque de documents SharePoint :
 
 5. Sélectionnez **Ajouter** pour appliquer le modèle à la bibliothèque.
 
-6. Dans la page d’accueil du modèle, dans la section **Où le modèle est appliqué**, vous devez voir le nom du site SharePoint répertorié.
+6. Dans la page d’accueil du modèle, dans la section **Où le modèle est appliqué** , vous devez voir le nom du site SharePoint répertorié.
 
-7. Accédez à votre bibliothèque de documents et vérifiez que vous êtes dans la vue bibliothèque de documents du modèle. Sélectionnez Les **modèles de compréhension de document** **AutomateView** > .
+7. Accédez à votre bibliothèque de documents et vérifiez que vous êtes dans la vue bibliothèque de documents du modèle. Sélectionnez **Automatiser** > **l’affichage des modèles de compréhension de document**.
 
 8. Dans la page **Vérifier les modèles et en appliquer de nouveaux** , sélectionnez l’onglet **Appliqué** pour afficher les modèles appliqués à la bibliothèque de documents.
 
@@ -109,7 +109,7 @@ Bien qu’un modèle appliqué traite tous les fichiers et le contenu des dossie
 3. Les fichiers et dossiers que vous avez sélectionnés seront ajoutés à la file d’attente à traiter.
 
     > [!NOTE]
-    > Vous recevrez un message indiquant la durée de la classification. Si vous avez sélectionné uniquement des fichiers, la classification peut prendre jusqu’à 30 minutes. Si vous avez sélectionné un ou plusieurs dossiers, la classification peut prendre jusqu’à 24 heures.
+    > Si vous avez sélectionné un ou plusieurs dossiers ou que vous migrez un grand ensemble de fichiers, la classification peut prendre jusqu’à 24 heures.
 
 ### <a name="classification-date-field"></a>Champ Date de classification
 
@@ -119,15 +119,15 @@ Lorsqu’un modèle de compréhension de document SharePoint Syntex (ou un modè
 
 Le champ **Date de classification** est utilisé par le déclencheur [**When a file is classified by a content understanding model**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) trigger to run a Power Automate flow after a model has finished processing the contents of a file or folder and has updated the **Classification Date** field.
 
-   ![Flow déclencheur.](../media/content-understanding/trigger.png)
+   ![Déclencheur de flux.](../media/content-understanding/trigger.png)
 
 **Quand un fichier est classé par un déclencheur de modèle de compréhension du contenu** peut ensuite être utilisé pour démarrer un flux à l’aide d’informations extraites du fichier ou du dossier.
 
-Par exemple, lorsqu’un modèle est marqué avec la **date de classification**, vous pouvez utiliser **l’option Envoyer un e-mail après SharePoint Syntex traite un** flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traité et classifié par un modèle dans la bibliothèque de documents SharePoint.
+Par exemple, lorsqu’un modèle est marqué avec la **date de classification**, vous pouvez utiliser l’option **Envoyer un e-mail après SharePoint Syntex traite un** flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traité et classifié par un modèle dans la bibliothèque de documents SharePoint.
 
 Pour exécuter le flux :
 
-1. Sélectionnez un fichier, puis **sélectionnez Intégrer** >  **Power Automate** >  **Créer un flux**.
+1. Sélectionnez un fichier, puis **sélectionnez Intégrer** > **Power Automate** > **Créer un flux**.
 
 2. Dans le panneau **Créer un flux**, sélectionnez **Envoyer un e-mail après SharePoint Syntex traite un fichier**.
 
