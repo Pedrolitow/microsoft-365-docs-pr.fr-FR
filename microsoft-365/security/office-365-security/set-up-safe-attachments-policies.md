@@ -18,12 +18,12 @@ description: Découvrez comment définir des stratégies de pièces jointes séc
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ad5b68ca377a03ff42044b85c3125339bcbc8b62
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 11d6a276d40441092b3d4f060933cfb2968e0a8e
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611889"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644200"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de pièces jointes sécurisées dans Microsoft Defender pour Office 365
 
@@ -126,7 +126,7 @@ La création d’une stratégie de pièces jointes sécurisées personnalisée d
      - **Désactivé** : En règle générale, nous ne recommandons pas cette valeur.
      - **Moniteur**
      - **Bloc** : il s’agit de la valeur par défaut et de la valeur recommandée dans les [stratégies de sécurité prédéfinies](preset-security-policies.md) Standard et Strict.
-     - **Replace**
+     - **Remplacement** : cette action sera déconseillée. Pour plus d’informations, consultez [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901).
      - **Livraison dynamique (fonctionnalité d’aperçu)**
 
      Ces valeurs sont expliquées dans les [paramètres de stratégie Pièces jointes sécurisées](safe-attachments.md#safe-attachments-policy-settings).
@@ -137,7 +137,8 @@ La création d’une stratégie de pièces jointes sécurisées personnalisée d
 
    - **Rediriger des messages avec des pièces jointes détectées** : si vous sélectionnez **Activer la redirection**, vous pouvez spécifier une adresse e-mail dans les **messages d’envoi qui contiennent des pièces jointes bloquées, surveillées ou remplacées dans la zone d’adresse e-mail spécifiée** pour envoyer des messages contenant des pièces jointes de programmes malveillants à des fins d’analyse et d’investigation.
 
-     La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, consultez [les paramètres des pièces jointes sécurisées](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+     > [!NOTE]
+     > La redirection sera bientôt disponible uniquement pour l’action **Monitor** . Pour plus d’informations, consultez [MC424899](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter/:/messages/MC424899).
 
    - **Appliquez la réponse de détection des pièces jointes sécurisées si l’analyse ne peut pas se terminer (délai d’expiration ou erreurs)** : l’action spécifiée par la **réponse de programmes malveillants inconnus pièces jointes fiables** est effectuée sur les messages, même lorsque l’analyse des pièces jointes sécurisées ne peut pas se terminer. Si vous avez sélectionné cette option, sélectionnez toujours **Activer la redirection** et spécifiez une adresse e-mail pour envoyer des messages contenant des pièces jointes de programmes malveillants. Sinon, les messages peuvent être perdus.
 

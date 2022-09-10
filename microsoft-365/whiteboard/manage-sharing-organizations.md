@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft.
-ms.openlocfilehash: 53409c352a3be95a720d6ebfc0759270140c7400
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: 2aba307ceae06639e67c8af35e2452edd648f451
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639501"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644266"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Gérer le partage pour le Tableau blanc Microsoft
 
@@ -65,7 +65,7 @@ Ces modifications doivent prendre environ 60 minutes pour s’appliquer à l’e
 |Démarrer le tableau blanc à partir d’un Surface Hub ou d’un Salles Microsoft Teams|Stockage : Azure (les fichiers tableau blanc seront déplacés vers OneDrive Entreprise à l’avenir)<br><br>Propriétaire : participant à la réunion|Non applicable|Utilisateurs in-tenants : peuvent lancer, afficher et collaborer<br><br>Utilisateurs externes : peut afficher et collaborer pendant la réunion uniquement<br><br> Comptes d’appareil partagés : peut afficher et collaborer pendant la réunion uniquement|
 
 > [!NOTE]
->Si un tableau blanc est stocké dans OneDrive et déjà attaché à une réunion, il ne peut pas être lancé sur un Surface Hub ou un appareil Salles Microsoft Teams. Un utilisateur authentifié sur un autre appareil doit le faire. Nous travaillons sur un correctif pour ce problème.
+>Si un tableau blanc est stocké dans OneDrive et déjà attaché à une réunion, il ne peut pas être lancé sur un Surface Hub ou un appareil Salles Microsoft Teams. Un utilisateur authentifié sur un autre appareil doit le faire. Nous prévoyons d’activer cette fonctionnalité dans une prochaine version.
 
 
 

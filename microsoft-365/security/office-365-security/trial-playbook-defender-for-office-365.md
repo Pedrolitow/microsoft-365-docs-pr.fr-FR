@@ -17,12 +17,12 @@ search.appverid:
 description: Manuel de solutions de Microsoft Defender pour Office 365
 ms.subservice: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: 0fcd44b3bf82e4eca1322bf1c8ceaff1613a04cd
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: cc54c427649fc98b9807522017830017f038264f
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598260"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643848"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Livre d’essai : Microsoft Defender pour Office 365
 
@@ -56,7 +56,7 @@ Mettons-nous au travail.
 
 #### <a name="start-your-microsoft-defender-for-office-365-trial"></a>Démarrer votre version d’Office 365 Microsoft Defender
 
-Une fois que vous avez lancé la version d’évaluation et terminé le [processus d’installation](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-blocking-mode), l’application des modifications peut prendre jusqu’à 2 heures.
+Une fois que vous avez lancé la version d’évaluation et terminé le [processus d’installation](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-blocking-mode), l’application des modifications peut prendre jusqu’à 2 heures.
 
 Nous avons configuré automatiquement des [Stratégies de sécurité prédéfinies](preset-security-policies.md) dans votre environnement. Ces stratégies représentent un profil de protection de référence adapté à la plupart des utilisateurs. La protection standard inclut :
 
@@ -168,7 +168,7 @@ Former vos utilisateurs avec les connaissances adéquates pour identifier les me
 
 #### <a name="start-your-defender-for-office-365-evaluation"></a>Démarrez votre version d’évaluation Defender pour Office 365
 
-Une fois le [processus d’installation](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-audit-mode) terminé, l’application des modifications peut prendre jusqu’à 2 heures. Nous avons configuré automatiquement des stratégies d’évaluation prédéfinies dans votre environnement.
+Une fois le [processus d’installation](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-audit-mode) terminé, l’application des modifications peut prendre jusqu’à 2 heures. Nous avons configuré automatiquement des stratégies d’évaluation prédéfinies dans votre environnement.
 
 Les stratégies d’évaluation garantissent qu’aucune action n’est effectuée sur des courriers détectés par Defender pour Office 365.
 
@@ -186,7 +186,7 @@ Regardez cette vidéo pour en savoir plus : Découvrez comment utiliser le porta
 
 Utilisez les fonctionnalités de rapport dans Defender pour Office 365 pour obtenir plus de détails sur votre environnement.
 
-- Le [Tableau de bord d’évaluation](try-microsoft-defender-for-office-365.md#reporting-in-audit-mode) fournit une vue facile des menaces détectées par Defender pour Office 365 lors de l’évaluation.
+- Le [Tableau de bord d’évaluation](try-microsoft-defender-for-office-365.md#reports-for-audit-mode-only) fournit une vue facile des menaces détectées par Defender pour Office 365 lors de l’évaluation.
 - Comprendre les menaces reçues dans les outils de collaboration et de messagerie à l’aide du rapport d’état [de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
 
 ### <a name="step-2-intermediate-steps-in-auditing-mode"></a>Étape 2 : étapes intermédiaires en mode audit

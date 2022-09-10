@@ -7,6 +7,8 @@
       href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
     - name: Prise en main
       items:
+        - name: "Qu’est-ce que Microsoft\_365 Entreprises\_?"
+          href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
         - name: S’inscrire
           href: admin-overview/sign-up-for-office-365.md
         - name: Essayer ou acheter Microsoft 365
@@ -21,13 +23,11 @@
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: Configurer Microsoft 365 Business Standard
               href: ../admin/setup/setup-business-standard.md
-            - name: Inviter des utilisateurs à Microsoft 365 Business Standard
+            - name: Inviter des utilisateurs à un abonnement Microsoft 365 pour les entreprises
               href: ../admin/simplified-signup/admin-invite-business-standard.md
-            - name: "Qu’est-ce que Microsoft\_365 Entreprises\_?"
-              href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
-            - name: Accepter l’invitation par e-mail à Microsoft 365 Business Standard
+            - name: Accepter l’invitation par e-mail à l’abonnement Microsoft 365 entreprise
               href: ../admin/simplified-signup/user-invite-business-standard.md
-            - name: 'Accepter une invitation par e-mail à une organisation d’abonnement Microsoft 365 Business Standard à l’aide d’un compte Outlook, Yahoo, Gmail ou autre'
+            - name: 'Accepter une invitation par e-mail à un abonnement Microsoft 365 pour les entreprises à l’aide d’un compte Outlook, Yahoo, Gmail ou autre'
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrer des données vers mon abonnement Microsoft 365 Business Standard
               href: ../admin/simplified-signup/migrate-data-business-standard.md
@@ -37,9 +37,11 @@
               href: setup/signup--apps-business.md
             - name: Configurer Microsoft 365 Apps for business
               href: setup/setup-apps-for-business.md
-        - name: Configurer Microsoft 365 Business Basic
+        - name: S’inscrire à Microsoft 365 Business Basic
           items:
-            - name: Microsoft 365 Business Basic
+            - name: S’inscrire à Microsoft 365 Business Basic
+              href: setup/signup-business-basic.md
+            - name: Configurer Microsoft 365 Business Basic
               href: setup/setup-business-basic.md
         - name: Découvrir la page et l’Assistant Installation
           href: setup/o365-setup-wizard-and-setup-page.md

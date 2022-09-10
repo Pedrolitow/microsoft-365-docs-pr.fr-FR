@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des fichiers dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 61d9a3f2c1ae370183d88afce0077ecaea6a422c
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 0b2af1b8cad13c2c0a74424263e5452d45b12183
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497113"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644354"
 ---
 # <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des fichiers utilisant la liste Autoriser/Bloquer des clients
 
@@ -81,7 +81,7 @@ Vous disposez des options suivantes pour créer des entrées de bloc pour les fi
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-submissions-portal"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées de bloc pour les fichiers dans le portail Soumissions
 
-Lorsque vous utilisez le portail Soumissions pour <https://security.microsoft.com/reportsubmission> signaler les fichiers comme ayant **dû être bloqués (Faux négatif),** vous pouvez sélectionner **Bloquer ce fichier** pour ajouter une entrée de bloc pour le fichier dans la liste d’autorisation/de blocage du locataire.
+Lorsque vous utilisez le portail Soumissions pour <https://security.microsoft.com/reportsubmission> signaler les fichiers comme ayant **dû être bloqués (faux négatif),** vous pouvez sélectionner **Bloquer ce fichier** pour ajouter une entrée de bloc sous l’onglet **Fichiers** dans la liste d’autorisation/de blocage du locataire.
 
 Pour obtenir des instructions, consultez [l’article Signaler les pièces jointes contestables à Microsoft](admin-submission.md#report-questionable-email-attachments-to-microsoft).
 
@@ -120,7 +120,7 @@ Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-onlin
 New-TenantAllowBlockListItems -ListType <FileHash> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
 
-Cet exemple ajoute une entrée de fichier de bloc pour les fichiers spécifiés qui n’expirent jamais.
+Cet exemple montre comment ajouter une entrée de bloc pour les fichiers spécifiés qui n’expirent jamais.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
@@ -130,45 +130,12 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les fichiers dans le portail Soumissions
 
-Vous ne pouvez pas créer d’entrées d’autorisation pour les fichiers directement dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, vous utilisez le portail Soumissions pour <https://security.microsoft.com/reportsubmission> signaler le message sous la forme d’un faux positif. Pour plus d’informations sur les soumissions d’administrateurs, consultez [Utiliser le portail soumissions pour envoyer des courriers indésirables suspects, des hameçonnages, des URL, des messages électroniques légitimes bloqués et des pièces jointes à Microsoft](admin-submission.md).
+Vous ne pouvez pas créer d’entrées d’autorisation pour les fichiers directement dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, vous utilisez le portail Soumissions pour <https://security.microsoft.com/reportsubmission> signaler la pièce jointe du message sous la forme d’un faux positif, ce qui ajoute également une entrée d’autorisation sous l’onglet **Fichiers** dans la liste d’autorisation/de blocage du locataire.
 
-Le fait de signaler le fichier sous la forme d’un faux positif sur la page Soumissions ajoute une entrée d’autorisation pour le fichier dans la liste d’autorisations/de **blocs** du locataire.
+Pour obtenir des instructions, consultez [Signaler les pièces jointes de bon e-mail à Microsoft](admin-submission.md#report-good-email-attachments-to-microsoft).
 
 > [!IMPORTANT]
 > Étant donné que Microsoft gère les entrées d’autorisation pour vous, les entrées d’autorisation inutiles pour les fichiers sont supprimées. Ce comportement protège votre organisation et permet d’éviter les entrées d’autorisation mal configurées. Si vous n’êtes pas d’accord avec le verdict, vous devrez peut-être ouvrir une demande de support pour déterminer pourquoi un fichier est toujours considéré comme incorrect.
-
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
-
-2. Dans la page **Soumissions**, sélectionnez l’onglet **Email pièces jointes**.
-
-3. Sous l’onglet **Email pièces jointes**, cliquez sur ![l’icône Envoyer à Microsoft pour l’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
-
-4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
-
-   - **Sélectionnez le type d’envoi** : vérifiez la valeur **Email pièce jointe** est sélectionnée.
-
-   - **Fichier** : cliquez sur **Parcourir les fichiers** pour rechercher et sélectionner le fichier à envoyer.
-
-   - **Sélectionnez une raison pour l’envoi à Microsoft** : La sélection **ne doit pas avoir été bloquée (Faux positif),** puis configurez les paramètres suivants :
-
-     - **Autoriser ce fichier** : activez ce paramètre ![activé](../../media/scc-toggle-on.png).
-
-         - **Supprimer l’entrée d’autorisation après** : la valeur par défaut est **30 jours**, mais vous pouvez sélectionner parmi les valeurs suivantes :
-           - **1 jour**
-           - **7 jours**
-           - **30 jours**
-           - **Date spécifique** : la valeur maximale est de 30 jours à compter d’aujourd’hui.
-
-         - **Note d’entrée d’autorisation** : entrez des informations facultatives sur la raison pour laquelle vous autorisez ce fichier.
-
-   Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
-
-   :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Envoyez une pièce jointe de faux positif (bon) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-file-allow.png":::
-
-5. Après quelques instants, l’entrée d’autorisation s’affiche sous l’onglet **Fichiers** de la page **Autoriser/Bloquer** la liste des locataires.
-
-> [!NOTE]
-> Lorsque le fichier est à nouveau rencontré, il n’est pas envoyé pour la détonation des [pièces jointes sécurisées ou les vérifications](safe-attachments.md) de la réputation des fichiers, et tous les autres filtres basés sur des fichiers sont ignorés. Pendant le flux de courrier, si les messages contenant le fichier passent d’autres vérifications non liées aux fichiers dans la pile de filtrage, les messages sont remis.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-files-in-the-tenant-allowblock-list"></a>Utilisez le portail Microsoft 365 Defender pour afficher les entrées d’autorisation ou de blocage des fichiers dans la liste d’autorisations/de blocs du locataire
 
@@ -228,7 +195,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-allow-or-block-entries-for-files-in-the-tenant-allowblock-list"></a>Utilisez le portail Microsoft 365 Defender pour modifier les entrées d’autorisation ou de blocage des fichiers dans la liste d’autorisation/de blocage du locataire
 
-Lorsque vous modifiez une entrée de fichier d’autorisation ou de blocage dans la liste d’autorisations/de blocs de locataire, vous pouvez uniquement modifier la date d’expiration et les notes.
+Lorsque vous modifiez des entrées d’autorisation ou de blocage pour les fichiers de la liste d’autorisations/de blocs de locataire, vous pouvez uniquement modifier la date d’expiration et les notes.
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 

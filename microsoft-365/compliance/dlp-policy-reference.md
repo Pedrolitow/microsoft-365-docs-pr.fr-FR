@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 12c416af0a6f715ce56c193830ddb0db0ad9eba1
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: f9d5b5065925805c346f865706b34bb05c268571
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615229"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643892"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -313,8 +313,8 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 ##### <a name="conditions-devices-supports"></a>Conditions prises en charge par les appareils
 
 - Le contenu contient
-- (préversion) Le document ou la pièce jointe est protégé par mot de passe/le fichier est chiffré. (.pdf, les fichiers Office sont entièrement pris en charge. Seuls les fichiers chiffrés pgp sont pris en charge)
-- (préversion) L’étiquette de confidentialité n’est pas appliquée au contenu.
+- (préversion) Le document ou la pièce jointe est protégé par mot de passe (.pdf, les fichiers Office et les fichiers chiffrés PGP Symantec sont entièrement pris en charge). Ce prédicat ne détecte pas les fichiers chiffrés DRM (Digital Rights Managed) ni les fichiers protégés par des autorisations. 
+- (préversion) Le contenu n’est pas étiqueté (.pdf, les fichiers Office sont entièrement pris en charge). Ce prédicat détecte le contenu qui n’a pas d’étiquette de confidentialité appliquée. Pour vous assurer que seuls les types de fichiers pris en charge sont détectés, vous devez utiliser cette condition avec **l’extension de fichier ou** le **type de fichier est** des conditions.
 - (préversion) L’utilisateur a accédé à un site web sensible à partir de Edge. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains)  
 - L’extension de fichier est
 - Le type de fichier est

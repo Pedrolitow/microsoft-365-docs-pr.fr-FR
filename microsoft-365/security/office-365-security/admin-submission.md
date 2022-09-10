@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails légitimes bloqués, des e-mails suspects, des e-mails suspects de hameçonnage, du courrier indésirable, d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 56d61a09b3180a22cb525be1e97872b6f1616056
-ms.sourcegitcommit: 71643c8c73d1e6a4d909177656f8d2bd440b1022
+ms.openlocfilehash: 9a2620df6f7cb6eba490fba289c019240e172679
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/10/2022
-ms.locfileid: "67642711"
+ms.locfileid: "67643958"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL, des e-mails légitimes bloqués et des pièces jointes à Microsoft
 
@@ -109,7 +109,7 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
    Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
 
-> :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Envoyez un e-mail faux négatif (incorrect) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-email-block.png":::
+:::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Envoyez un e-mail faux négatif (incorrect) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-email-block.png":::
 
 > [!NOTE]
 > Pour les messages qui ont été bloqués de manière incorrecte par [l’intelligence d’usurpation](learn-about-spoof-intelligence.md) d’identité, une entrée de bloc pour la paire de domaines n’est pas créée dans la liste d’autorisations/de blocs du locataire.
@@ -153,7 +153,7 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
    Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
 
-> :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Envoyez une fausse pièce jointe négative (incorrecte) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-file-block.png":::
+:::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Envoyez une fausse pièce jointe négative (incorrecte) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-file-block.png":::
 
 ## <a name="report-questionable-urls-to-microsoft"></a>Signaler des URL douteuses à Microsoft
 
@@ -192,19 +192,129 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
    Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
 
-> :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Envoyez une URL false négative (incorrecte) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-url-block.png":::
+:::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Envoyez une URL false négative (incorrecte) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-url-block.png":::
 
 ## <a name="report-good-email-to-microsoft"></a>Signaler un bon e-mail à Microsoft
 
-Pour signaler les messages électroniques bloqués qui auraient dû être autorisés (faux négatifs), voir [Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les domaines et les adresses e-mail dans le portail Soumissions](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
+
+2. Dans la page **Soumissions** , vérifiez que l’onglet **e-mails** est sélectionné.
+
+3. Sous l’onglet **e-mails** , cliquez sur ![l’icône Envoyer à Microsoft pour l’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+
+4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
+
+   - **Sélectionnez le type de soumission** : vérifiez que la valeur **Email** est sélectionnée.
+
+   - **Ajoutez l’ID de message réseau ou chargez le fichier e-mail** : sélectionnez l’une des options suivantes :
+
+     - **Ajoutez l’ID de message réseau de messagerie** : il s’agit d’une valeur GUID disponible dans l’en-tête **X-MS-Exchange-Organization-Network-Message-Id** dans le message ou dans l’en-tête **X-MS-Office365-Filtering-Correlation-Id** dans les messages mis en quarantaine.
+
+     - **Charger le fichier e-mail (.msg ou .eml)** : cliquez sur **Parcourir les fichiers**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
+
+   - **Choisissez un destinataire qui a rencontré un problème** : spécifiez le destinataire sur lequel vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si l’e-mail a été bloqué en raison de stratégies d’utilisateur ou d’organisation.
+
+   - **Sélectionnez une raison pour l’envoi à Microsoft** : La sélection **ne doit pas avoir été bloquée (Faux positif),** puis configurez les paramètres suivants :
+
+     - **Autoriser les e-mails avec des attributs similaires (URL, expéditeur, etc.)** : activez ce paramètre![.](../../media/scc-toggle-on.png)
+
+         - **Supprimer l’entrée d’autorisation après** : la valeur par défaut est **30 jours**, mais vous pouvez sélectionner parmi les valeurs suivantes :
+           - **1 jour**
+           - **7 jours**
+           - **30 jours**
+           - **Date spécifique** : la valeur maximale est de 30 jours à compter d’aujourd’hui.
+
+           Pour les expéditeurs usurpés, cette valeur n’a aucun sens, car les entrées des expéditeurs usurpés n’expirent jamais.
+
+         - **Autoriser la note d’entrée** : entrez des informations facultatives sur la raison pour laquelle vous autorisez cet e-mail.
+
+           Pour les expéditeurs usurpés, toute valeur que vous entrez ici n’est pas affichée dans l’entrée d’autorisation sous l’onglet **Expéditeurs usurpés** de **l’option Tenant Allow/Block List**.
+
+   Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
+
+   :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Envoyez un e-mail faux positif (bon) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-email-allow.png":::
+
+Après quelques instants, l’entrée d’autorisation s’affiche dans l’onglet **Domaines & adresses** ou **expéditeurs usurpés** sur la page **Autoriser/Bloquer la liste** des locataires.
+
+> [!NOTE]
+>
+> - Lorsque vous remplacez le verdict dans l’insight d’intelligence de l’usurpation d’identité, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisation/de blocage du locataire.
+> - Si l’expéditeur n’a pas encore été bloqué, l’envoi de l’e-mail à Microsoft ne crée pas d’entrée d’autorisation dans la liste d’autorisation/de blocage du locataire.
+> - Les autorisations sont ajoutées pendant le flux de messagerie, en fonction des filtres qui ont déterminé que le message était malveillant. Par exemple, si l’expéditeur et une URL du message ont été déterminés comme étant incorrects, une entrée d’autorisation est créée pour l’expéditeur et une entrée d’autorisation est créée pour l’URL.
+> - Lorsque cette entité (adresse de domaine ou e-mail, URL, fichier) est à nouveau rencontrée, tous les filtres associés à cette entité sont ignorés.
+> - Pendant le flux de courrier, si les messages du domaine ou de l’adresse e-mail passent d’autres vérifications dans la pile de filtrage, les messages sont remis. Par exemple, si [l’authentification par e-mail](email-validation-and-authentication.md) réussit, un message d’un expéditeur dans l’entrée d’autorisation est remis.
 
 ## <a name="report-good-email-attachments-to-microsoft"></a>Signaler de bonnes pièces jointes à Microsoft
 
-Pour signaler les pièces jointes bloquées qui auraient dû être autorisées (faux négatifs), consultez [utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les fichiers dans le portail Soumissions](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
+
+2. Dans la page **Soumissions**, sélectionnez l’onglet **Email pièces jointes**.
+
+3. Sous l’onglet **Email pièces jointes**, cliquez sur ![l’icône Envoyer à Microsoft pour l’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+
+4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
+
+   - **Sélectionnez le type d’envoi** : vérifiez la valeur **Email pièce jointe** est sélectionnée.
+
+   - **Fichier** : cliquez sur **Parcourir les fichiers** pour rechercher et sélectionner le fichier à envoyer.
+
+   - **Sélectionnez une raison pour l’envoi à Microsoft** : La sélection **ne doit pas avoir été bloquée (Faux positif),** puis configurez les paramètres suivants :
+
+     - **Autoriser ce fichier** : activez ce paramètre ![activé](../../media/scc-toggle-on.png).
+
+         - **Supprimer l’entrée d’autorisation après** : la valeur par défaut est **30 jours**, mais vous pouvez sélectionner parmi les valeurs suivantes :
+           - **1 jour**
+           - **7 jours**
+           - **30 jours**
+           - **Date spécifique** : la valeur maximale est de 30 jours à compter d’aujourd’hui.
+
+         - **Note d’entrée d’autorisation** : entrez des informations facultatives sur la raison pour laquelle vous autorisez ce fichier.
+
+   Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
+
+   :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Envoyez une pièce jointe de faux positif (bon) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-file-allow.png":::
+
+Après quelques instants, une entrée d’autorisation s’affiche sous l’onglet **Fichiers** de la page **Autoriser/Bloquer** la liste des locataires.
+
+> [!NOTE]
+> Lorsque le fichier est à nouveau rencontré, il n’est pas envoyé pour la détonation des [pièces jointes sécurisées ou les vérifications](safe-attachments.md) de la réputation des fichiers, et tous les autres filtres basés sur des fichiers sont ignorés. Pendant le flux de courrier, si les messages contenant le fichier passent d’autres vérifications non liées aux fichiers dans la pile de filtrage, les messages sont remis.
 
 ## <a name="report-good-urls-to-microsoft"></a>Signaler de bonnes URL à Microsoft
 
-Pour signaler les URL bloquées qui auraient dû être autorisées (faux négatifs), consultez [Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les URL dans le portail Soumissions](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
+
+2. Dans la page **Soumissions**, sélectionnez l’onglet **URL**
+
+3. Sous l’onglet **URL** , cliquez sur ![l’icône Envoyer à Microsoft pour analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+
+4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
+
+   - **Sélectionnez le type de soumission** : vérifiez que **l’URL** de la valeur est sélectionnée.
+
+   - **URL** : entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html`), puis sélectionnez-la dans la zone qui s’affiche.
+
+   - **Sélectionnez une raison pour l’envoi à Microsoft** : La sélection **ne doit pas avoir été bloquée (Faux positif),** puis configurez les paramètres suivants :
+
+     - **Autoriser cette URL** : activez ce paramètre ![activé](../../media/scc-toggle-on.png).
+
+         - **Supprimer l’entrée d’autorisation après** : la valeur par défaut est **30 jours**, mais vous pouvez sélectionner parmi les valeurs suivantes :
+           - **1 jour**
+           - **7 jours**
+           - **30 jours**
+           - **Date spécifique** : la valeur maximale est de 30 jours à compter d’aujourd’hui.
+
+         - **Note d’entrée d’autorisation** : entrez des informations facultatives sur la raison pour laquelle vous autorisez cette URL.
+
+   Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
+
+   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Envoyez une URL false positive (bonne) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-url-allow.png":::
+
+Après quelques instants, une entrée d’autorisation s’affiche sous l’onglet **URL** de la page **Autoriser/Bloquer** la liste des locataires. Pour plus d’informations sur la liste d’autorisations/blocages du locataire, consultez [Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire](manage-tenant-allow-block-list.md).
+
+> [!NOTE]
+>
+> - Lorsque l’URL est à nouveau détectée, elle n’est pas envoyée pour les vérifications de détonation des [liens fiables](safe-links.md) ou de réputation d’URL, et tous les autres filtres basés sur l’URL sont ignorés.
+> - Pendant le flux de courrier, si les messages contenant l’URL passent d’autres vérifications non URL dans la pile de filtrage, les messages sont remis.
 
 ## <a name="view-email-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur de messagerie à Microsoft
 

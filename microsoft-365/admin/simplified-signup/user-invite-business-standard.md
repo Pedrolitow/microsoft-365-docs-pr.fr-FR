@@ -1,5 +1,5 @@
 ---
-title: Accepter une invitation par e-mail à Microsoft 365 Business Standard (utilisateur)
+title: Accepter une invitation par e-mail à un abonnement Microsoft 365 entreprise (utilisateur)
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,15 +14,18 @@ ms.collection:
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
-description: Accepter l’invitation à rejoindre une organisation Microsoft 365 Business Standard
-ms.openlocfilehash: a956057d25dfe9c724441007ca30a4ecc88ad2c8
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+description: Accepter l’invitation à rejoindre une organisation Microsoft 365 pour entreprises
+ms.openlocfilehash: a1727e6c2d03a7617a986acf08c4182cbcef05dd
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086866"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644222"
 ---
-# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Accepter une invitation par e-mail à un abonnement Microsoft 365 Business Standard (utilisateur)
+# <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-user"></a>Accepter une invitation par e-mail à un abonnement Microsoft 365 entreprise (utilisateur)
+
+> [!IMPORTANT]
+> Ces étapes s’appliquent aux Microsoft 365 Business Standard, Microsoft 365 Business Basic et Applications Microsoft 365 pour les PME.
 
 Lorsque vous utilisez déjà Microsoft 365 Business avec une adresse e-mail Gmail, Outlook, Yahoo (ou similaire), une personne (par exemple, votre administrateur ou propriétaire d’entreprise) peut vous inviter à mettre à niveau Microsoft 365 pour commencer à utiliser la messagerie professionnelle.  Dans ce scénario, vous allez changer d’adresse e-mail et apprendre à mettre à niveau.
 
@@ -31,9 +34,9 @@ Lorsque vous utilisez déjà Microsoft 365 Business avec une adresse e-mail Gmai
 Si vous êtes administrateur d’une organisation où les utilisateurs utilisent toujours Gmail, Outlook, Yahoo ou des adresses e-mail similaires, et que vous cherchez à configurer la messagerie de marque, consultez plutôt les étapes suivantes : [Ajouter un domaine à Microsoft 365](../setup/add-domain.md) et [configurer votre organisation avec la messagerie et le stockage cloud](../setup/setup-business-standard.md#finish-setting-up).
 
 > [!IMPORTANT]
-> Si vous êtes administrateur et que vous recherchez des étapes sur la façon d’envoyer à un utilisateur une invitation à votre abonnement Microsoft 365 Business Standard, consultez [Inviter des utilisateurs à Microsoft 365 Business Standard (Administration).](admin-invite-business-standard.md)
+> Si vous êtes administrateur et que vous recherchez des étapes sur la façon d’envoyer à un utilisateur une invitation à votre abonnement Microsoft 365 pour les entreprises, consultez [Inviter des utilisateurs à Microsoft 365 Business Standard (Administration).](admin-invite-business-standard.md)
 
-## <a name="join-a-business-microsoft-365-business-standard-organization"></a>Rejoindre une organisation de Microsoft 365 Business Standard d’entreprise
+## <a name="join-a-microsoft-365-for-business-organization"></a>Rejoindre une organisation Microsoft 365 pour entreprises
 
 Assurez-vous que vous disposez des détails de connexion à votre compte actuel avant de commencer ces étapes.
 
@@ -53,15 +56,15 @@ Assurez-vous que vous disposez des détails de connexion à votre compte actuel 
 
 8. Dans la page **Ajouter un nouveau compte à Microsoft Teams** , suivez les étapes de configuration de Teams. Sélectionnez **J’ai terminé** lorsque vous avez terminé.
 
-### <a name="next-steps---migrate-your-data-to-microsoft-365-business-standard"></a>Étapes suivantes : Migrer vos données vers Microsoft 365 Business Standard
+### <a name="next-steps---migrate-your-data-to-microsoft-365-for-business"></a>Étapes suivantes : Migrer vos données vers Microsoft 365 pour les entreprises
 
-Suivez les étapes de la migration des [données vers mon abonnement Microsoft 365 Business Standard](migrate-data-business-standard.md) pour déplacer vos données OneDrive, Outlook et Teams.
+Suivez les étapes de la migration des [données vers mon abonnement Microsoft 365 pour les entreprises pour](migrate-data-business-standard.md) déplacer vos données OneDrive, Outlook et Teams.
 
 ### <a name="no-data-to-migrate"></a>Aucune donnée à migrer ?
 
 Téléchargez et commencez à utiliser les [applications Office pour les entreprises](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>Je n’ai pas reçu d’e-mail de mise à niveau ?
 
@@ -73,7 +76,7 @@ Contactez nos experts du support technique pour les petites entreprises qui peuv
 
 ### <a name="what-happens-to-my-data-and-account-when-i-upgrade"></a>Qu’advient-il de mes données et de mon compte lors de la mise à niveau ?
 
-Vos données resteront dans votre ancien compte, rien ne sera supprimé.  Vous pourrez toujours vous connecter à votre ancien compte de messagerie Gmail, Outlook, Yahoo ou autre, comme vous l’avez fait précédemment. Vous devez maintenant déplacer vos fichiers professionnels vers votre nouveau compte professionnel. Découvrez comment procéder ici : [migrez des données vers mon abonnement Microsoft 365 Business Standard](migrate-data-business-standard.md).
+Vos données resteront dans votre ancien compte, rien ne sera supprimé.  Vous pourrez toujours vous connecter à votre ancien compte de messagerie Gmail, Outlook, Yahoo ou autre, comme vous l’avez fait précédemment. Vous devez maintenant déplacer vos fichiers professionnels vers votre nouveau compte professionnel. Découvrez comment procéder ici : [migrez des données vers mon abonnement Microsoft 365 pour les entreprises](migrate-data-business-standard.md).
 
 ### <a name="how-can-i-copy-data-to-my-business-account"></a>Comment puis-je copier des données vers mon compte professionnel ?
 
@@ -82,7 +85,7 @@ Vos données resteront dans votre ancien compte, rien ne sera supprimé.  Vous p
 
 ### <a name="why-does-it-say-my-admin-now-handles-my-data"></a>Pourquoi mon administrateur gère-t-il maintenant mes données ?
 
-Lorsque vous utilisez un compte Microsoft 365 Business mis à niveau, vos documents, courriers électroniques et données que vous créez dans Microsoft Office (et dans d’autres applications dans Microsoft 365 Business Standard) appartiennent à l’administrateur technique de votre organisation. Par exemple, la personne qui vous a envoyé l’e-mail d’invitation ou le propriétaire de votre entreprise.
+Lorsque vous utilisez un compte Microsoft 365 Business mis à niveau, vos documents, courriers électroniques et données que vous créez dans Microsoft Office (et dans d’autres applications dans Les abonnements Microsoft 365 pour les entreprises) appartiennent à l’administrateur technique de votre organisation. Par exemple, la personne qui vous a envoyé l’e-mail d’invitation ou le propriétaire de votre entreprise.
 
 ### <a name="how-do-i-get-started-with-my-new-account"></a>Comment faire bien démarrer avec mon nouveau compte ?
 

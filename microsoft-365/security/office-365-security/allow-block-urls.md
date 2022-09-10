@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des URL dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: be94c967a156ac61b3fdddedf533980bb5391c43
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: ccfbd345edf69a1ebc0aef3bdfe5ab070659d819
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631513"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644310"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des URL utilisant la liste Autoriser/Bloquer des clients
 
@@ -75,7 +75,7 @@ Vous disposez des options suivantes pour créer des entrées de bloc pour les UR
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-submissions-portal"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées de bloc pour les URL dans le portail Soumissions
 
-Lorsque vous utilisez le portail Soumissions pour <https://security.microsoft.com/reportsubmission> signaler les URL comme ayant **dû être bloquées (faux négatif),** vous pouvez sélectionner **Bloquer ce fichier** pour ajouter une entrée de bloc pour l’URL dans la liste d’autorisation/de blocage du locataire.
+Lorsque vous utilisez le portail Soumissions pour <https://security.microsoft.com/reportsubmission> signaler les URL comme ayant **dû être bloquées (Faux négatif),** vous pouvez sélectionner **Bloquer cette URL** pour ajouter une entrée de bloc sous l’onglet **URL** dans la liste d’autorisation/de blocage du locataire.
 
 Pour obtenir des instructions, consultez [Signaler des URL douteuses à Microsoft](admin-submission.md#report-questionable-urls-to-microsoft).
 
@@ -114,7 +114,7 @@ Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-onlin
 New-TenantAllowBlockListItems -ListType Url -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate <Date> | -NoExpiration> [-Notes <String>]
 ```
 
-Cet exemple montre comment ajouter une entrée d’URL de bloc pour contoso.com et tous les sous-domaines (par exemple, contoso.com et xyz.abc.contoso.com). Étant donné que nous n’avons pas utilisé les paramètres ExpirationDate ou NoExpiration, l’entrée expire après 30 jours.
+Cet exemple montre comment ajouter une entrée de bloc pour le contoso.com d’URL et tous les sous-domaines (par exemple, contoso.com et xyz.abc.contoso.com). Étant donné que nous n’avons pas utilisé les paramètres ExpirationDate ou NoExpiration, l’entrée expire après 30 jours.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
@@ -124,47 +124,12 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les URL dans le portail Soumissions
 
-Vous ne pouvez pas créer d’entrées d’autorisation d’URL directement dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, vous utilisez le portail Soumissions pour <https://security.microsoft.com/reportsubmission> signaler le message sous la forme d’un faux positif. Pour plus d’informations sur les soumissions d’administrateurs, consultez [Utiliser le portail soumissions pour envoyer des courriers indésirables suspects, des hameçonnages, des URL, des messages électroniques légitimes bloqués et des pièces jointes à Microsoft](admin-submission.md).
+Vous ne pouvez pas créer d’entrées d’autorisation d’URL directement dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, vous utilisez le portail Soumissions pour <https://security.microsoft.com/reportsubmission> signaler l’URL sous la forme d’un faux positif, ce qui ajoute également une entrée d’autorisation sous l’onglet **URL** dans la liste d’autorisation/de blocage du locataire.
 
-Signaler l’URL sous la forme d’un faux positif sur la page Soumissions ajoute une entrée d’autorisation pour l’URL dans la liste d’autorisations/de **blocs** du locataire.
+Pour obtenir des instructions, consultez [Signaler les BONNES URL à Microsoft](admin-submission.md#report-good-urls-to-microsoft).
 
 > [!IMPORTANT]
 > Étant donné que Microsoft gère les entrées d’autorisation pour vous, les entrées autorisées d’URL inutiles seront supprimées. Ce comportement protège votre organisation et permet d’éviter les entrées d’autorisation mal configurées. Si vous n’êtes pas d’accord avec le verdict, vous devrez peut-être ouvrir un dossier de support pour déterminer pourquoi une URL est toujours considérée comme incorrecte.
-
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
-
-2. Dans la page **Soumissions**, sélectionnez l’onglet **URL**
-
-3. Sous l’onglet **URL** , cliquez sur ![l’icône Envoyer à Microsoft pour analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
-
-4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
-
-   - **Sélectionnez le type de soumission** : vérifiez que **l’URL** de la valeur est sélectionnée.
-
-   - **URL** : entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html`), puis sélectionnez-la dans la zone qui s’affiche.
-
-   - **Sélectionnez une raison pour l’envoi à Microsoft** : La sélection **ne doit pas avoir été bloquée (Faux positif),** puis configurez les paramètres suivants :
-
-     - **Autoriser cette URL** : activez ce paramètre ![activé](../../media/scc-toggle-on.png).
-
-         - **Supprimer l’entrée d’autorisation après** : la valeur par défaut est **30 jours**, mais vous pouvez sélectionner parmi les valeurs suivantes :
-           - **1 jour**
-           - **7 jours**
-           - **30 jours**
-           - **Date spécifique** : la valeur maximale est de 30 jours à compter d’aujourd’hui.
-
-         - **Note d’entrée d’autorisation** : entrez des informations facultatives sur la raison pour laquelle vous autorisez cette URL.
-
-   Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
-
-   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Envoyez une URL false positive (bonne) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-url-allow.png":::
-
-5. Après quelques instants, l’entrée d’autorisation d’URL s’affiche sous l’onglet **URL** de la page **Autoriser/Bloquer** la liste des locataires.
-
-> [!NOTE]
->
-> - Lorsque l’URL est à nouveau détectée, elle n’est pas envoyée pour les vérifications de détonation des [liens fiables](safe-links.md) ou de réputation d’URL, et tous les autres filtres basés sur l’URL sont ignorés.
-> - Pendant le flux de courrier, si les messages contenant l’URL passent d’autres vérifications non URL dans la pile de filtrage, les messages sont remis.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Utilisez le portail Microsoft 365 Defender pour afficher les entrées d’autorisation ou de blocage pour les URL dans la liste d’autorisations/de blocs du locataire
 
@@ -218,7 +183,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-allow-or-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Utilisez le portail Microsoft 365 Defender pour modifier les entrées d’autorisation ou de blocage des URL dans la liste d’autorisations/de blocs du locataire
 
-Lorsque vous modifiez une entrée d’URL d’autorisation ou de blocage dans la liste Autoriser/Bloquer du locataire, vous pouvez uniquement modifier la date d’expiration et les notes.
+Lorsque vous modifiez des entrées d’autorisation ou de blocage pour les URL dans la liste d’autorisations/de blocs de locataire, vous pouvez uniquement modifier la date d’expiration et les notes.
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -247,7 +212,7 @@ Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-onlin
 Set-TenantAllowBlockListItems -ListType Url <-Ids <Identity value> | -Entries <Value value>> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
 ```
 
-Cet exemple montre comment modifier la date d’expiration de l’entrée d’URL de bloc spécifiée.
+Cet exemple montre comment modifier la date d’expiration de l’entrée de bloc pour l’URL spécifiée.
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Entries "~contoso.com" -ExpirationDate "9/1/2022"
@@ -279,7 +244,7 @@ Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-onlin
 Remove-TenantAllowBlockListItems -ListType Url <-Ids <Identity value> | -Entries <Value value>>
 ```
 
-Cet exemple montre comment supprimer l’entrée d’URL de bloc spécifiée de la liste d’autorisations/de blocs du locataire.
+Cet exemple montre comment supprimer l’entrée de bloc de l’URL spécifiée de la liste d’autorisations/de blocs du locataire.
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Entries "~cohovineyard.com

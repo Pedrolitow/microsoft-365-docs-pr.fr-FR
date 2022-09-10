@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 8a8b4acc4626e82186aede35d553b665d0f98e74
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: e79986eb4b74e675770825fa621cdfdfd59ac047
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67370074"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643870"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
@@ -305,7 +305,7 @@ Pour tirer pleinement parti des fonctionnalités d’Insider Risk Management, no
 
 **Identifier les violations de stratégie de conformité réglementaire**
 
-Conformité des communications Microsoft Purview aide les organisations à détecter les violations explicites de la conformité réglementaire, telles que les obligations SEC ou FINRA, y compris le partage inapproprié d’informations sensibles ou confidentielles. Avec les flux de travail intégrés, la solution peut vous aider à examiner et à corriger les violations de conformité réglementaire possibles. Créée avec la confidentialité par conception, cette solution a des noms d’utilisateurs pseudonymés par défaut, des contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs doivent être explicitement ajoutés par un administrateur à une stratégie et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+Conformité des communications Microsoft Purview fournit les outils nécessaires pour aider les organisations à détecter les violations de conformité réglementaire (par exemple, SEC ou FINRA), telles que les informations sensibles ou confidentielles, le harcèlement ou la menace de langue, et le partage de contenu pour adultes. Créés avec la confidentialité par conception, les noms d’utilisateur sont pseudonymés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont choisis par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>Étape 1 : Activer les autorisations pour la conformité des communications
 
