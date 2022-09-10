@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails légitimes bloqués, des e-mails suspects, des e-mails suspects de hameçonnage, du courrier indésirable, d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b5b54a0d6d8e760d392578997461be44a19cf92a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 56d61a09b3180a22cb525be1e97872b6f1616056
+ms.sourcegitcommit: 71643c8c73d1e6a4d909177656f8d2bd440b1022
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480534"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67642711"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL, des e-mails légitimes bloqués et des pièces jointes à Microsoft
 
@@ -115,8 +115,6 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 > Pour les messages qui ont été bloqués de manière incorrecte par [l’intelligence d’usurpation](learn-about-spoof-intelligence.md) d’identité, une entrée de bloc pour la paire de domaines n’est pas créée dans la liste d’autorisations/de blocs du locataire.
 >
 > Pour les messages qui ont été bloqués de manière incorrecte par la protection d’emprunt d’identité de [domaine ou d’utilisateur](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), une entrée de bloc pour le domaine ou l’expéditeur n’est pas créée dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, le domaine ou l’expéditeur est ajouté à la **section Expéditeurs approuvés et domaines** dans la [stratégie anti-hameçonnage](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) qui a détecté le message.
->
-> Pour signaler qu’un fichier **n’aurait pas dû être bloqué (faux positif),** consultez [Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les domaines et les adresses e-mail dans le portail Soumissions](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 ## <a name="report-questionable-email-attachments-to-microsoft"></a>Signaler des pièces jointes contestables à Microsoft
 
@@ -157,9 +155,6 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 > :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Envoyez une fausse pièce jointe négative (incorrecte) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-file-block.png":::
 
- > [!NOTE]
- > Pour signaler qu’un fichier **n’aurait pas dû être bloqué (faux positif),** consultez [utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les fichiers dans le portail Soumissions](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
-
 ## <a name="report-questionable-urls-to-microsoft"></a>Signaler des URL douteuses à Microsoft
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
@@ -199,8 +194,17 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 > :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Envoyez une URL false négative (incorrecte) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-url-block.png":::
 
- > [!NOTE]
- > Pour signaler une URL comme **n’aurait pas dû être bloquée (Faux positif)** , consultez [Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les URL dans le portail Soumissions](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
+## <a name="report-good-email-to-microsoft"></a>Signaler un bon e-mail à Microsoft
+
+Pour signaler les messages électroniques bloqués qui auraient dû être autorisés (faux négatifs), voir [Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les domaines et les adresses e-mail dans le portail Soumissions](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+
+## <a name="report-good-email-attachments-to-microsoft"></a>Signaler de bonnes pièces jointes à Microsoft
+
+Pour signaler les pièces jointes bloquées qui auraient dû être autorisées (faux négatifs), consultez [utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les fichiers dans le portail Soumissions](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
+
+## <a name="report-good-urls-to-microsoft"></a>Signaler de bonnes URL à Microsoft
+
+Pour signaler les URL bloquées qui auraient dû être autorisées (faux négatifs), consultez [Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les URL dans le portail Soumissions](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
 
 ## <a name="view-email-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur de messagerie à Microsoft
 
