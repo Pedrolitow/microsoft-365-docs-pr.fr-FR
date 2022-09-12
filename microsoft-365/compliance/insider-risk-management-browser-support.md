@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d70c5a568e1b694229f3c2f1ba11fe9a2be807f6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 20501814ccf87cfbbda6080b60515be374516cd2
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634178"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648612"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Découvrez et configurez la détection des signaux du navigateur de gestion des risques internes
 
@@ -30,6 +30,7 @@ Les navigateurs web sont souvent utilisés par les utilisateurs pour accéder au
 - Fichiers imprimés sur des appareils locaux ou réseau
 - Fichiers transférés ou copiés vers un partage réseau
 - Fichiers copiés sur des périphériques USB
+- Navigation sur des sites web à risque
 
 Les signaux de ces événements sont détectés dans Microsoft Edge à l’aide des fonctionnalités de navigateur intégrées et du module complémentaire *d’extension de conformité Microsoft* . Dans Google Chrome, les clients utilisent *l’extension de conformité Microsoft* pour la détection de signal.
 
@@ -41,6 +42,7 @@ Le tableau suivant récapitule les activités détectées et la prise en charge 
 | Fichiers imprimés sur des appareils locaux ou réseau      | Natif             | Extension         |
 | Fichiers transférés ou copiés vers un partage réseau | Extension          | Extension         |
 | Fichiers copiés sur des périphériques USB                    | Extension          | Extension         |
+| Navigation sur des sites web à risque                        | Extension          | Extension         |
 
 ## <a name="common-requirements"></a>Conditions courantes
 
@@ -52,18 +54,22 @@ Avant d’installer le module complémentaire Microsoft Edge ou l’extension Go
 
 Pour connaître les exigences spécifiques de configuration du navigateur, consultez les sections Microsoft Edge et Google Chrome plus loin dans cet article.
 
+## <a name="additional-requirements"></a>Autres conditions requises 
+
+Si vous utilisez des stratégies basées sur le modèle *d’utilisation du navigateur à risque*, au moins un *indicateur de navigation* doit être sélectionné dans **les indicateurs de stratégie des paramètres** de gestion  >  des  > **risques internes**.
+
 ## <a name="configure-browser-signal-detection-for-microsoft-edge"></a>Configurer la détection des signaux du navigateur pour Microsoft Edge
 
 ### <a name="microsoft-edge-browser-requirements"></a>Configuration requise pour le navigateur Microsoft Edge
 
 - Répondre aux exigences courantes
-- Microsoft Edge x64, version 91.0.864.41 ou ultérieure
-- *Extension de conformité Microsoft* version 1.0.0.44 ou ultérieure
+- Dernière version de Microsoft Edge x64 (91.0.864.41 ou ultérieure)
+- Dernier module complémentaire *d’extension de conformité Microsoft* (1.0.0.44 ou version ultérieure)
 - Edge.exe n’est pas configuré en tant que navigateur non autorisé
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-edge"></a>Option 1 : Configuration de base (recommandée pour les tests avec Edge)
 
-Utilisez cette option pour configurer l’auto-installation d’une seule machine pour chaque appareil de votre organisation lors du test de la détection des signaux du navigateur.
+Utilisez cette option pour configurer un seul selfhost d’ordinateur pour chaque appareil de votre organisation lors du test de la détection des signaux du navigateur.
 
 Pour l’option d’installation de base, effectuez les étapes suivantes :
 
@@ -120,7 +126,7 @@ La prise en charge de la détection des signaux du navigateur de gestion des ris
 
 - Répondre aux exigences courantes
 - Dernière version de Google Chrome x64
-- *Extension de conformité Microsoft* version 2.0.0.183 ou ultérieure
+- Dernière version de *l’extension de conformité Microsoft* (2.0.0.183 ou version ultérieure)
 - Chrome.exe n’est pas configuré en tant que navigateur non autorisé
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-chrome"></a>Option 1 : Configuration de base (recommandée pour les tests avec Chrome)

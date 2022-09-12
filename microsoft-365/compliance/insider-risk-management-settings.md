@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 50eab9a7cf521258119597f10a1e2d27d49192d0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 30804601a463a47f2c11b0d8054a2435acdca486
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472455"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648744"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques internes
 
@@ -200,7 +200,7 @@ Les activités utilisateur détectées par les stratégies de risque interne se 
 - **Volume par défaut** : vous verrez toutes les alertes de gravité élevée et une quantité équilibrée d’alertes de gravité moyenne et faible.
 - **Autres alertes** : vous verrez toutes les alertes de gravité moyenne et élevée et les alertes de gravité la plus faible. Ce niveau de paramètre peut entraîner davantage de faux positifs.
 
-### <a name="microsoft-defender-for-endpoint-preview"></a>Microsoft Defender pour point de terminaison (préversion)
+### <a name="microsoft-defender-for-endpoint-alert-statuses-preview"></a>Microsoft Defender pour point de terminaison état de l’alerte (préversion)
 
 [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) est une plateforme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour avoir une meilleure visibilité des violations de sécurité dans votre organisation, vous pouvez importer et filtrer les alertes Defender pour point de terminaison pour les activités utilisées dans les stratégies créées à partir de modèles de stratégie de violation de sécurité de gestion des risques internes.
 
@@ -236,6 +236,72 @@ Pour chacun des paramètres de domaine suivants, vous pouvez entrer jusqu’à 5
     En spécifiant les domaines autorisés dans les paramètres, cette activité avec ces domaines est traitée de la même façon que l’activité interne de l’organisation. Par exemple, les domaines ajoutés ici correspondent à des activités qui peuvent impliquer le partage de contenu avec une personne externe à votre organisation (par exemple, l’envoi d’e-mails à une personne disposant d’une adresse gmail.com).
 
 - **Domaines tiers :** Si votre organisation utilise des domaines tiers à des fins professionnelles (par exemple, le stockage cloud), incluez-les ici afin que vous puissiez recevoir des alertes relatives à l’activité liée à l’indicateur d’appareil *. Utilisez un navigateur pour télécharger du contenu à partir d’un site tiers*.
+
+### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
+
+En définissant des chemins d’accès de fichier à exclure, les activités utilisateur qui correspondent à des indicateurs spécifiques et qui se produisent dans ces emplacements de chemin d’accès de fichier ne génèrent pas d’alertes de stratégie. Certains exemples sont la copie ou le déplacement de fichiers vers un dossier système ou un chemin de partage réseau. Vous pouvez entrer jusqu’à 500 chemins d’accès de fichier à des fins d’exclusion.
+
+Pour ajouter des chemins d’accès de fichier à exclure, procédez comme suit :
+
+1. Dans le portail de conformité, accédez aux **détections intelligentes des paramètres** de **gestion** >  des  >  risques Insider. 
+2. Dans la section **d’exclusion du chemin d’accès** au fichier, sélectionnez **Ajouter des chemins d’accès de fichier à exclure**.
+3. Dans le volet **Ajouter un chemin d’accès de fichier** , entrez un partage réseau ou un chemin d’accès d’appareil exact à exclure du scoring des risques. Vous pouvez également utiliser * et *([0-9]) pour indiquer des dossiers et sous-dossiers spécifiques à exclure.
+4. Sélectionnez **Ajouter des chemins d’accès de fichier** à exclure pour configurer les exclusions de chemin d’accès de fichier ou **Fermer** pour ignorer les modifications. 
+
+Pour supprimer une exclusion de chemin d’accès de fichier, sélectionnez l’exclusion de chemin d’accès au fichier, puis **sélectionnez Supprimer**.
+
+### <a name="default-file-path-exclusions"></a>Exclusions de chemin d’accès de fichier par défaut
+
+Par défaut, plusieurs chemins d’accès de fichiers sont automatiquement exclus de la génération d’alertes de stratégie. Les activités de ces chemins d’accès aux fichiers sont généralement sans gravité et peuvent potentiellement augmenter le volume d’alertes non actionnables. Si nécessaire, vous pouvez annuler la sélection de ces exclusions de chemin d’accès de fichier par défaut afin d’activer le scoring des risques pour les activités dans ces emplacements.
+
+Les exclusions de chemin d’accès de fichier par défaut sont les suivantes :
+
+- \Users\\\*\AppData
+- \Users\\\*\AppData\Local
+- \Users\\\*\AppData\Local\Roaming
+- \Users\\\*\AppData\Local\Local\Temp
+
+Les caractères génériques de ces chemins indiquent que tous les niveaux de dossier entre \Users et \AppData sont inclus dans l’exclusion. Par exemple, les activités dans *C:\Users\Test1\AppData\Local* et *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (et ainsi de suite) sont toutes incluses et ne sont pas notées pour risque dans le cadre de la sélection *d’exclusion \Users\\\*\AppData\Local* .
+
+### <a name="site-url-exclusions"></a>Exclusions d’URL de site
+
+Configurez les exclusions d’URL de site pour empêcher les activités à risque potentielles qui se produisent dans SharePoint (et les sites SharePoint associés aux sites de canal d’équipe) de générer des alertes de stratégie. Vous pouvez envisager d’exclure les sites et les canaux qui contiennent des fichiers et des données non sensibles qui peuvent être partagés avec les parties prenantes ou le public. Vous pouvez entrer jusqu’à 500 chemins d’URL de site à exclure.
+
+Pour ajouter des chemins d’URL de site à exclure, procédez comme suit :
+
+1. Dans le portail de conformité, accédez aux **détections intelligentes des paramètres** de **gestion** >  des  >  risques Insider.
+2. Dans la section **d’exclusion d’URL de site** , sélectionnez **Ajouter ou modifier des sites SharePoint**.
+3. Dans le volet **Ajouter ou modifier des sites SharePoint** , entrez ou recherchez le site SharePoint à exclure du scoring des risques. Vous verrez uniquement les sites SharePoint auxquels vous avez l’autorisation d’accéder.
+4. Sélectionnez **Ajouter** pour configurer les exclusions d’URL de site ou **Annuler** pour ignorer les modifications.
+
+Pour modifier les chemins d’URL de site à exclure, procédez comme suit :
+
+1. Dans le portail de conformité, accédez aux **détections intelligentes des paramètres** de **gestion** >  des  >  risques Insider.
+2. Dans la section **d’exclusion d’URL de site** , sélectionnez **Ajouter ou modifier des sites SharePoint**.
+3. Dans le volet **Ajouter ou modifier des sites SharePoint** , entrez ou recherchez le site SharePoint à exclure du scoring des risques. Vous verrez uniquement les sites SharePoint auxquels vous avez l’autorisation d’accéder.
+4. Sélectionnez **Modifier** pour configurer les exclusions d’URL de site ou **Annuler** pour ignorer les modifications.
+
+Pour supprimer une exclusion d’URL de site, sélectionnez l’exclusion d’URL de site, puis **Supprimez**.
+
+### <a name="keyword-exclusions"></a>Exclusions de mots clés
+
+Configurez des exclusions pour les mots clés qui apparaissent dans les noms de fichiers, les chemins d’accès aux fichiers ou les lignes d’objet de message électronique. Cela permet aux organisations qui ont besoin de réduire le bruit d’alerte potentiel en raison de l’indicateur des termes bénins spécifiés pour votre organisation. Ces activités liées aux fichiers ou aux sujets de messagerie contenant le mot clé seront ignorées par vos stratégies de gestion des risques internes et ne génèreront pas d’alertes. Vous pouvez entrer jusqu’à 500 mots clés à exclure. 
+
+Utilisez l’option **Exclure uniquement si elle ne contient pas** de champ pour définir des regroupements spécifiques de termes à ignorer pour exclusion. Par exemple, si vous souhaitez exclure le mot clé « formation », mais pas « formation à la conformité », vous entrez « conformité » (ou « formation de conformité ») dans l’option **Exclure uniquement si elle ne contient pas** de champ et « formation » dans le champ **Mais contient** .
+
+Si vous souhaitez simplement exclure des termes autonomes spécifiques, entrez les termes dans le **champ But** uniquement.
+
+Pour ajouter des mots clés autonomes à exclure, procédez comme suit :
+
+1. Dans le portail de conformité, accédez aux **détections intelligentes des paramètres** de **gestion** >  des  >  risques Insider.
+2. Dans la section **Exclusion du mot clé**, entrez les mots clés autonomes dans le champ **But.**
+3. Sélectionnez **Enregistrer** pour configurer les exclusions de mots clés.
+
+Pour supprimer un mot clé autonome à exclure, procédez comme suit :
+
+1. Dans le portail de conformité, accédez aux **détections intelligentes des paramètres** de **gestion** >  des  >  risques Insider. 
+2. Dans la section Exclusion de mot **clé**, sélectionnez le *X* pour le mot clé autonome spécifique dans le champ **But.** Répétez cette opération si nécessaire pour supprimer plusieurs mots clés.
+3. Sélectionnez **Enregistrer** pour supprimer les exclusions de mots clés.
 
 ## <a name="export-alerts"></a>Exporter des alertes
 

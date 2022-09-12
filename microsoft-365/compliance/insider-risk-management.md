@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: db99267bc7d55e6e069e984dc4b419ed379fd088
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 5b82aa83a790a96f8196f89f75f2aaf905fc0a14
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787207"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648700"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
-Gestion des risques internes Microsoft Purview est une solution de conformité qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur des activités malveillantes et accidentelles dans votre organisation. Les stratégies de risque interne vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, y compris agir sur les cas et faire remonter les cas à Microsoft eDiscovery (Premium) si nécessaire. Les analystes des risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
+La gestion des risques liés aux initiés Microsoft Purview est une solution de conformité qui contribue à minimiser les risques internes en vous permettant de détecter, d'enquêter et d'agir sur les activités malveillantes et involontaires au sein de votre organisation. Les stratégies relatives aux risques d'initiés vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, y compris les mesures à prendre et l'escalade des cas vers Microsoft eDiscovery (Premium) si nécessaire. Les analystes de risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s'assurer que les utilisateurs respectent les normes de conformité de votre organisation.
 
 Pour plus d’informations et une vue d’ensemble du processus de planification pour traiter les activités à risque au sein de votre organisation, consultez [Démarrage d’un programme de gestion des risques internes](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
@@ -87,7 +87,7 @@ L’identification et la résolution des activités à risque internes et des pr
 
 ![Flux de travail de gestion des risques internes.](../media/insider-risk-workflow.png)
 
-### <a name="policies"></a>Stratégies
+### <a name="policies"></a>Politiques
 
 [Les stratégies de gestion des risques internes](insider-risk-management-policies.md) sont créées à l’aide de modèles et de conditions de stratégie prédéfinis qui définissent les événements déclencheurs et les indicateurs de risque examinés dans votre organisation. Ces conditions incluent la façon dont les indicateurs de risque sont utilisés pour les alertes, les utilisateurs inclus dans la stratégie, les services prioritaires et la période de détection.
 
@@ -169,7 +169,7 @@ Dans la plupart des cas, les utilisateurs font de leur mieux pour gérer correct
 - [Fuites de données par des utilisateurs prioritaires (aperçu)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Fuites de données par des utilisateurs mécontents (préversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
-## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Violations intentionnelles ou involontaires de la stratégie de sécurité (préversion)
+### <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Violations intentionnelles ou involontaires de la stratégie de sécurité (préversion)
 
 Les utilisateurs ont généralement un grand degré de contrôle lors de la gestion de leurs appareils dans l’espace de travail moderne. Ce contrôle peut inclure des autorisations d’installation ou de désinstallation des applications nécessaires à l’exécution de leurs tâches ou la possibilité de désactiver temporairement les fonctionnalités de sécurité des appareils. Que cette activité soit accidentelle, accidentelle ou malveillante, cette conduite peut présenter un risque pour votre organisation et il est important d’identifier et d’agir pour réduire le risque. Pour vous aider à identifier ces activités de sécurité à risque, les modèles de violation de stratégie de sécurité de gestion des risques internes suivants évaluent les indicateurs de risque de sécurité et utilisent Microsoft Defender pour point de terminaison alertes pour fournir des insights sur les activités liées à la sécurité :
 
@@ -178,25 +178,31 @@ Les utilisateurs ont généralement un grand degré de contrôle lors de la gest
 - [Violations de la stratégie de sécurité par des utilisateurs prioritaires (préversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Violations de stratégie de sécurité par un utilisateur mécontent (préversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-## <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Stratégies pour les utilisateurs en fonction de la position, du niveau d’accès ou de l’historique des risques (préversion)
+### <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Stratégies pour les utilisateurs en fonction de la position, du niveau d’accès ou de l’historique des risques (préversion)
 
 Les utilisateurs de votre organisation peuvent présenter différents niveaux de risque en fonction de leur position, du niveau d’accès aux informations sensibles ou de l’historique des risques. Cette structure peut inclure des membres de l’équipe de direction de votre organisation, des administrateurs informatiques disposant de privilèges d’accès réseau et de données étendus, ou des utilisateurs ayant des antécédents d’activités à risque. Dans ces circonstances, une inspection plus étroite et un scoring plus agressif des risques sont importants pour permettre d’afficher des alertes en vue d’une investigation et d’une action rapide. Pour identifier les activités à risque pour ces types d’utilisateurs, vous pouvez créer des groupes d’utilisateurs prioritaires et créer des stratégies à partir des modèles de stratégie suivants :
 
 - [Violations de la stratégie de sécurité par des utilisateurs prioritaires (préversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Fuites de données par des utilisateurs prioritaires (aperçu)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
-## <a name="healthcare-preview"></a>Santé (préversion)
+### <a name="healthcare-preview"></a>Santé (préversion)
 
 Pour les organisations du secteur de la santé, des études récentes ont révélé un taux très élevé de violations de données internes. La détection de l’utilisation abusive des données des patients et des informations sur les dossiers médicaux est un élément essentiel de la protection de la vie privée des patients et de la conformité aux réglementations de conformité telles que la Loi HIPAA (Health Insurance Portability and Accountability Act) et la Loi HITECH (Health Information Technology for Economic and Clinical Health). L’utilisation abusive des données des patients peut aller de l’accès aux dossiers de patients privilégiés à l’accès aux dossiers des patients de la famille ou des voisins ayant une intention malveillante. Pour vous aider à identifier ces types d’activités à risque, les modèles de stratégie de gestion des risques internes suivants utilisent le connecteur Microsoft 365 HR et un connecteur de données spécifique aux soins de santé pour commencer à noter les indicateurs de risque liés aux comportements qui peuvent se produire dans vos systèmes d’enregistrement de santé électronique (DSE) :
 
 - [Utilisation incorrecte générale des données des patients (préversion)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
-## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Actions et comportements des utilisateurs mécontents (préversion)
+### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Actions et comportements des utilisateurs mécontents (préversion)
 
 Les événements stressants liés à l’emploi peuvent avoir un impact sur le comportement des utilisateurs de plusieurs manières liées aux risques internes. Ces facteurs de stress peuvent être une révision des performances médiocre, une rétrogradation de position ou le placement de l’utilisateur sur un plan d’évaluation des performances. Bien que la plupart des utilisateurs ne répondent pas de manière malveillante à ces événements, le stress de ces actions peut entraîner le comportement de certains utilisateurs d’une manière qu’ils peuvent normalement ne pas prendre en compte dans des circonstances normales. Pour vous aider à identifier ces types d’activités à risque, les modèles de stratégie de gestion des risques internes suivants utilisent le connecteur Microsoft 365 HR et commencent à noter les indicateurs de risque liés aux comportements qui peuvent se produire à proximité des événements du stresseur d’emploi :
 
 - [Fuites de données par des utilisateurs mécontents (préversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Violations de stratégie de sécurité par un utilisateur mécontent (préversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+
+### <a name="risky-browser-usage-that-could-result-in-a-security-incident-preview"></a>Utilisation risquée du navigateur qui peut entraîner un incident de sécurité (préversion)
+
+La plupart des organisations fournissent aux utilisateurs des règles et des instructions qui précisent la façon dont les appareils et l’accès à Internet d’une organisation doivent être utilisés. Ces stratégies aident à protéger l’organisation et les utilisateurs contre les risques de sécurité et de réglementation. Pour vous aider à identifier ces types d’actions à risque, le modèle de stratégie de gestion des risques internes suivant peut vous aider à détecter et à activer le scoring des risques pour les comportements de navigation web susceptibles d’entraîner un incident de sécurité des données, tels que la visite de sites qui fournissent des programmes malveillants ou des outils de piratage.
+
+- [Utilisation générale des navigateurs à risque (préversion)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 

@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 53b56c8e96beb3e68c56fd968ac87e58994bc2ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7f2a2f40d79db0fd344ca2a78f09840fd39939c8
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622962"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648722"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -141,6 +141,7 @@ Cet onglet ouvre le résumé des facteurs de risque pour l’activité d’alert
 - **Contenu de priorité** : affiche les activités associées au contenu prioritaire.
 - **Domaines non autorisés** : affiche les activités pour les événements associés à des domaines non autorisés.
 - **Accès aux enregistrements** d’intégrité : affiche les activités pour les événements associés à l’accès aux enregistrements d’intégrité.
+- **Utilisation risquée du navigateur** : affiche les activités pour les événements associés à la navigation vers des sites web potentiellement inappropriés.
 
 Avec ces filtres, vous verrez uniquement les alertes avec ces facteurs de risque, mais l’activité qui a généré une alerte peut ne pas faire partie de ces catégories. Par exemple, une alerte contenant des activités de séquence peut avoir été générée simplement parce que l’utilisateur a copié un fichier sur un périphérique USB.
 
@@ -161,7 +162,7 @@ Le graphique **d’activité utilisateur** est l’un des outils les plus puissa
 1. **Filtres de temps** : par défaut, les trois derniers mois d’activités affichés dans le graphique d’activité utilisateur. Vous pouvez facilement filtrer l’affichage du graphique en sélectionnant les onglets *6 Mois*, *3 Mois* ou *1 Mois* dans le graphique en bulles.
 2. **Activité et détails des alertes de risque** : les activités à risque sont affichées visuellement sous forme de bulles colorées dans le graphique d’activité utilisateur. Les bulles sont créées pour différentes catégories de risques et. Sélectionnez une bulle pour afficher les détails de chaque activité à risque. Les détails sont les suivants :
     - **Date** de l’activité de risque.
-    - Catégorie **d’activité de risque**. Par exemple, *les e-mails avec des pièces jointes envoyées en dehors de l’organisation* ou des *fichiers téléchargés à partir de SharePoint Online*.
+    - Catégorie **d’activité de risque**. Par exemple, *Email(s) avec des pièces jointes envoyées en dehors de l’organisation* ou des *fichiers téléchargés à partir de SharePoint Online*.
     - **Score de risque** pour l’alerte. Ce score correspond au score numérique du niveau de gravité des risques d’alerte.
     - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou e-mail associé à l’activité à risque sont également disponibles.
 3. **Filtres et tri (préversion)** :
@@ -202,6 +203,7 @@ Utilisez l’étendue d’activité et les filtres d’insights sur les risques 
   - Activités de séquence
   - Activités d’exfiltration cumulatives
   - Activités d’accès aux enregistrements d’intégrité
+  - Utilisation risquée du navigateur
 
 ![Vue d’ensemble de l’Explorateur d’activités de gestion des risques internes.](../media/insider-risk-activity-explorer.png)
 
@@ -239,7 +241,7 @@ Une fois le cas créé, les enquêteurs et les analystes peuvent gérer et agir 
 
 Pour réduire le nombre d’éléments plus anciens qui fournissent une valeur actuelle limitée, la conservation et les limites suivantes s’appliquent aux alertes de gestion des risques internes, aux cas et aux rapports d’activité des utilisateurs :
 
-|Item|Rétention/limite|
+|Élément|Rétention/limite|
 |---|---|
 |Alertes avec l’état de révision des besoins|120 jours après la création de l’alerte, puis supprimé automatiquement|
 |Cas actifs (et artefacts associés)|Rétention indéfinie, jamais expirer|
@@ -274,4 +276,4 @@ Les utilisateurs du milieu de travail moderne ont souvent une grande variété d
 
 - **Concentrez d’abord les efforts des analystes et des enquêteurs sur les alertes à risque le plus élevé**. Selon vos stratégies, vous pouvez capturer des activités et générer des alertes avec différents degrés d’impact potentiel sur vos efforts d’atténuation des risques. [Filtrez les alertes](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) par gravité et *hiérarchisez* les alertes de gravité élevée.
 - **Affecter des utilisateurs en tant qu’analystes et enquêteurs**. Le fait d’affecter le bon utilisateur aux rôles appropriés est une partie importante du processus de révision des alertes de risque interne. Vérifiez que vous avez affecté les utilisateurs appropriés aux *groupes de rôles Analystes de gestion des risques internes* et *Enquêteurs de gestion des risques internes* .  
-- **Utilisez des fonctionnalités de risque interne automatisé pour vous aider à découvrir les activités à risque le plus élevé**. Les fonctionnalités de [détection de séquence](insider-risk-management-policies.md#sequence-detection) de gestion des risques internes et de [détection d’exfiltration cumulative](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) peuvent vous aider à découvrir rapidement les risques plus difficiles à détecter dans votre organisation. Envisagez d’affiner vos [boosters de score de risque](insider-risk-management-settings.md#indicators), [les exclusions de type de fichier](insider-risk-management-settings.md#file-type-exclusions), [les domaines](insider-risk-management-settings.md#domains) et les [paramètres de seuil d’indicateur](insider-risk-management-settings.md#indicator-level-settings-preview) minimum pour vos stratégies.
+- **Utilisez des fonctionnalités de risque interne automatisé pour vous aider à découvrir les activités à risque le plus élevé**. Les fonctionnalités de [détection de séquence](insider-risk-management-policies.md#sequence-detection-preview) de gestion des risques internes et de [détection d’exfiltration cumulative](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) peuvent vous aider à découvrir rapidement les risques plus difficiles à détecter dans votre organisation. Envisagez d’affiner vos [boosters de score de risque](insider-risk-management-settings.md#indicators), [les exclusions de type de fichier](insider-risk-management-settings.md#file-type-exclusions), [les domaines](insider-risk-management-settings.md#domains) et les [paramètres de seuil d’indicateur](insider-risk-management-settings.md#indicator-level-settings-preview) minimum pour vos stratégies.

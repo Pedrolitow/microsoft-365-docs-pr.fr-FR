@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings avec moi pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: 5de348a45ca7e38d6ee20cdcce4137247c63bfd7
-ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+ms.openlocfilehash: 44993db5aee7a322bb6cdfdc6afd5e08084a365c
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67623556"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648656"
 ---
 # <a name="bookings-with-me"></a>Bookings avec moi
 
@@ -25,9 +25,9 @@ ms.locfileid: "67623556"
 
 Bookings avec moi a deux vues différentes :
 
-- **Mode Organisateur** Page de réservation personnelle dans laquelle vous pouvez créer des types de réunion que d’autres personnes peuvent réserver avec vous. Les types de réunion personnalisés vous permettent de personnaliser le moment où vous souhaitez vous rencontrer et la façon dont ce type de réunion est partagé avec d’autres personnes. Vous contrôlez si chaque type de réunion est public pour votre page de planification ou est privé et n’est accessible qu’à un groupe de personnes sélectionné. Vous pouvez également choisir d’ajouter une réunion Teams à toutes les réunions réservées via votre page Bookings with me. Vous pouvez accéder à votre page Bookings avec moi via Outlook sur le web. Une fois votre page configurée et publiée, vous pouvez la partager avec d’autres personnes. Par exemple, vous pouvez l’ajouter à votre signature Outlook.
+- [Réservations avec moi : configuration et partage](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2) Page de réservation personnelle dans laquelle vous pouvez créer des types de réunion que d’autres personnes peuvent réserver avec vous. Les types de réunion personnalisés vous permettent de personnaliser le moment où vous souhaitez vous rencontrer et la façon dont ce type de réunion est partagé avec d’autres personnes. Vous contrôlez si chaque type de réunion est public pour votre page de planification ou est privé et n’est accessible qu’à un groupe de personnes sélectionné. Vous pouvez également choisir d’ajouter une réunion Teams à toutes les réunions réservées via votre page Bookings with me. Vous pouvez accéder à votre page Bookings avec moi via Outlook sur le web. Une fois votre page configurée et publiée, vous pouvez la partager avec d’autres personnes. Par exemple, vous pouvez l’ajouter à votre signature Outlook.
 
-- **Vue des participants** Lorsque vous partagez votre page Bookings avec moi avec d’autres personnes, l’affichage des participants s’affiche. Si l’organisateur a partagé son lien de page Bookings avec moi avec vous, vous pourrez voir tous ses types de réunions publiques. Si l’organisateur a partagé un lien de réunion, vous ne pourrez afficher cette réunion que.
+- [Vue des participants](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a) Lorsque vous partagez votre page Bookings avec moi avec d’autres personnes, l’affichage des participants s’affiche. Si l’organisateur a partagé son lien de page Bookings avec moi avec vous, vous pourrez voir tous ses types de réunions publiques. Si l’organisateur a partagé un lien de réunion, vous ne pourrez afficher cette réunion que.
   - Les réunions publiques peuvent être consultées et planifiées par toute personne disposant de votre lien de page Bookings with me. Vous contrôlez avec qui vous partagez ce lien. Tous les types de réunions publiques seront visibles par toute personne disposant de votre lien de page Bookings avec moi.
   - Les réunions privées peuvent uniquement être consultées par les personnes qui ont le lien pour ce type de réunion. La différence entre les réunions publiques et les réunions privées est que les réunions privées peuvent avoir des liens différents et que les liens expirent après 90 jours. Vous pouvez également définir des liaisons privées pour qu’ils expirent après une réservation unique. Lorsque vous accédez à la vue de planification d’une réunion privée, seul ce type de réunion est visible.
 
@@ -221,13 +221,13 @@ Bookings avec moi est en préversion pour tous les utilisateurs d’entreprise d
 
 ### <a name="who-can-access-my-public-bookings-page"></a>Qui peut accéder à ma page Bookings publique ?
 
-Les types de réunions publiques sont accessibles par toute personne disposant de votre page Bookings avec moi. Vous décidez avec qui vous partagez votre page Bookings avec moi.
+Les types de réunions publiques sont accessibles par toute personne disposant de votre page Bookings avec moi. Vous décidez avec qui vous partagez votre page Bookings avec moi. Pour plus d’informations, consultez [Sélectionner une heure de réunion dans Bookings avec moi](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
 
 ### <a name="what-is-the-difference-between-public-and-private-meeting-types"></a>Quelle est la différence entre les types de réunions publiques et privées ?
 
 Les types de réunions peuvent être publics ou privés. Les types de réunions publiques sont accessibles à toute personne avec laquelle vous partagez le lien de votre page Bookings. Les types de réunions privées sont uniquement disponibles pour les personnes avec lesquelles vous partagez le type de réunion privé individuel.  
 
-Les types de réunions privées peuvent également générer des liens à usage unique. Les liens à usage unique expirent après leur première réservation.
+Les types de réunions privées peuvent également générer des liens à usage unique. Les liens à usage unique expirent après leur première réservation. Pour plus d’informations, consultez [la configuration de Bookings avec moi types de réunion](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
 
 ### <a name="do-people-need-to-have-a-microsoft-account-or-bookings-license-to-schedule-time-with-me"></a>Les utilisateurs doivent-ils disposer d’un compte Microsoft ou d’une licence Bookings pour planifier de l’heure avec moi ?
 
