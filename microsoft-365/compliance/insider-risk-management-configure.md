@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: c85d126d92e27080d1e38f9b25deed1108eb0ea9
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: f000ece5715667b07222d31a9e131fed3eab552f
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306655"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648678"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -247,7 +247,7 @@ Avant de configurer une stratégie, définissez les paramètres de risque intern
     - [Exclusions de type de fichier](insider-risk-management-settings.md#file-type-exclusions)
     - [Nombre minimal d’événements quotidiens pour améliorer le score pour une activité inhabituelle](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Niveau de volume d’alerte](insider-risk-management-settings.md#alert-volume)
-    - [état de l’alerte Microsoft Defender pour point de terminaison](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [état de l’alerte Microsoft Defender pour point de terminaison](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
     - [Paramètres de domaine](insider-risk-management-settings.md#domains)
 6. Dans la page **Exporter les alertes**, activez l’exportation des informations d’alerte de risque interne à l’aide des API de gestion Office 365 si nécessaire.
 7. Dans la page **Groupes d’utilisateurs Priorité** , créez un groupe d’utilisateurs prioritaire et ajoutez des utilisateurs s’ils ne sont pas créés à **l’étape 3**.
@@ -312,6 +312,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 
     Si vous avez sélectionné au moins un indicateur *Office* ou *Appareil*, choisissez les **Boosters de score de risque** selon le cas. Les boosters de score de risque sont uniquement applicables pour les indicateurs sélectionnés.
     Si vous avez sélectionné un modèle de stratégie *Vol de données* ou *Fuites de données*, choisissez au moins une des méthodes **Détection de séquence** et une méthode **Détection d’exfiltration cumulée** à appliquer à la stratégie.
+    Si vous avez sélectionné le modèle de stratégie *d’utilisation du navigateur à risque* , sélectionnez un ou plusieurs **des indicateurs de navigation**.
 
 20. Sélectionnez **Suivant** pour continuer.
 21. Dans la page **Décider d’utiliser des seuils d’indicateurs par défaut ou personnalisés** , choisissez des seuils personnalisés ou par défaut pour les indicateurs de stratégie que vous avez sélectionnés. Choisissez les **seuils d’utilisation par défaut pour tous les indicateurs** ou **spécifiez des seuils personnalisés** pour les indicateurs de stratégie sélectionnés. Si vous avez sélectionné Spécifier des seuils personnalisés, choisissez le niveau approprié pour générer le niveau d’alertes d’activité souhaité pour chaque indicateur de stratégie.
