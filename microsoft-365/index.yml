@@ -13,12 +13,12 @@ metadata:
   ms.author: samanro
   ms.date: 06/08/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: f9285d4777d65d9bf46bdfcdc5505524143d01d9
-  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+  ms.openlocfilehash: 5e63d62606766a49440d0258bfb2fd1f42eae024
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/03/2022
-  ms.locfileid: "67599317"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67664577"
 highlightedContent:
   items:
   - title: Configurer votre infrastructure pour un travail hybride
@@ -37,7 +37,7 @@ productDirectory:
   title: Scénarios et solutions Microsoft 365
   items:
   - title: Solutions Microsoft 365
-    imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+    imageSrc: /office/media/icons/secure-document-blue.svg
     links:
     - url: solutions/empower-people-to-work-remotely.md
       text: Configurer votre infrastructure pour un travail hybride
@@ -50,7 +50,7 @@ productDirectory:
     - url: business-premium/index.md
       text: Microsoft 365 pour les petites entreprises et les campagnes
   - title: Rencontrer et communiquer
-    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    imageSrc: /office/media/icons/call-phone-blue.svg
     links:
     - url: /sharepoint/corporate-communications-overview
       text: Communications organisationnelles
@@ -63,7 +63,7 @@ productDirectory:
     - url: /MicrosoftTeams/cloud-voice-landing-page
       text: Solutions de téléphonie Microsoft
   - title: Collaborer avec votre équipe
-    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+    imageSrc: /office/media/icons/users-people.svg
     links:
     - url: solutions/collaborate-with-people-outside-your-organization.md
       text: Configurer le partage externe
@@ -76,7 +76,7 @@ productDirectory:
     - url: solutions/collaboration-governance-overview.md
       text: Gouvernance de la collaboration
   - title: Ressources sur l’architecture
-    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+    imageSrc: /office/media/icons/cloud-architecture2.svg
     links:
     - url: solutions/productivity-illustrations.md
       text: Illustrations de productivité Microsoft 365
@@ -89,7 +89,7 @@ productDirectory:
     - url: solutions/architecture-icons-templates.md
       text: Modèles et icônes Architecture
   - title: Sécuriser votre organisation
-    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    imageSrc: /office/media/icons/security-blue.svg
     links:
     - url: security/top-security-tasks-for-remote-work.md
       text: Principales tâches pour les équipes de sécurité qui prennent en charge le télétravail
@@ -104,7 +104,7 @@ productDirectory:
     - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: Configurer la protection de l’identité et de l’accès aux appareils
   - title: Protéger vos informations et respecter les réglementations
-    imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
+    imageSrc: /office/media/icons/certificate-blue.svg
     links:
     - url: /microsoft-365/compliance/purview-compliance
       text: Solutions en matière de conformité et de risques Microsoft Purview
@@ -119,7 +119,7 @@ productDirectory:
     - url: /microsoft-365/compliance/auditing-solutions-overview
       text: Solutions d’audit
   - title: Déployer et gérer vos ordinateurs de bureau et appareils
-    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    imageSrc: /office/media/icons/deploy-blue.svg
     links:
     - url: /DeployOffice/plan-microsoft-365-apps
       text: Déployer Microsoft 365 Apps
@@ -130,7 +130,7 @@ productDirectory:
     - url: /mem/intune/fundamentals/what-is-intune
       text: Gestion des appareils avec Microsoft Intune
   - title: Migrer vers Microsoft 365
-    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    imageSrc: /office/media/icons/migration-blue.svg
     links:
     - url: /MicrosoftTeams/journey-skypeforbusiness-teams
       text: Migrer vers Microsoft Teams
@@ -139,7 +139,7 @@ productDirectory:
     - url: /Exchange/mailbox-migration/mailbox-migration
       text: Migrer plusieurs comptes de messagerie vers Microsoft 365
   - title: Solutions et scénarios spécifiques à des secteurs
-    imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
+    imageSrc: /office/media/icons/on-premises-blue.svg
     links:
     - url: frontline/index.yml
       text: Microsoft 365 pour les organisations de première ligne

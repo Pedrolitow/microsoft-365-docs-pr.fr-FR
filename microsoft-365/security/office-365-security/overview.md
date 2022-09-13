@@ -17,12 +17,12 @@ description: Sécurité dans Office 365, d’Exchange Online Protection aux plan
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: ad636b1d8b67b69722373ee778ef332da6010611
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 6a2c9841a894ad46614cca4b1ee768eac1fd2a35
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598734"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661824"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité de Microsoft Defender pour Office 365
 
@@ -141,7 +141,7 @@ Cette référence rapide vous aide à comprendre les fonctionnalités fournies a
 - Les clients Microsoft Defender pour Office 365 P2 ont accès à **l’intégration Microsoft 365 Defender** pour détecter, examiner et répondre efficacement aux incidents et alertes.
 
 > [!TIP]
-> ***Conseil Insider** _. Vous pouvez utiliser la table des matières de docs.microsoft.com pour en savoir plus sur EOP et Microsoft Defender pour Office 365. Revenez à cette page, [Vue d’ensemble de la sécurité Office 365](index.yml), vous remarquerez que l’organisation de la table des matières est dans la barre latérale. Elle commence par le déploiement (y compris la migration), puis se poursuit par la prévention, la détection, l'enquête et la réponse. <p> Cette structure est divisée de telle sorte que les rubriques _ *Administration de la sécurité** sont suivies de rubriques **Opérations de sécurité**. Si vous êtes un nouveau membre de l’une des fonctions, utilisez le lien dans ce conseil et vos connaissances de la table des matières pour découvrir l’espace. N'oubliez pas d'utiliser les *liens de commentaires* et d'*évaluer les articles* au fur et à mesure. Vos commentaires nous aident à améliorer ce que nous vous proposons.
+> ***Conseil Insider** _. Vous pouvez utiliser la table des matières Microsoft Docs pour en savoir plus sur EOP et Microsoft Defender pour Office 365. Revenez à cette page, [Vue d’ensemble de la sécurité Office 365](index.yml), vous remarquerez que l’organisation de la table des matières est dans la barre latérale. Elle commence par le déploiement (y compris la migration), puis se poursuit par la prévention, la détection, l'enquête et la réponse. <p> Cette structure est divisée de telle sorte que les rubriques _ *Administration de la sécurité** sont suivies de rubriques **Opérations de sécurité**. Si vous êtes un nouveau membre de l’une des fonctions, utilisez le lien dans ce conseil et vos connaissances de la table des matières pour découvrir l’espace. N'oubliez pas d'utiliser les *liens de commentaires* et d'*évaluer les articles* au fur et à mesure. Vos commentaires nous aident à améliorer ce que nous vous proposons.
 
 ## <a name="where-to-go-next"></a>Quelle est la prochaine étape ?
 

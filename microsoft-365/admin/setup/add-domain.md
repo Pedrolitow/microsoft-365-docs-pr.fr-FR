@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365_Setup
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d’administration Microsoft 365 en ajoutant un enregistrement DNS sur votre hôte DNS.
-ms.openlocfilehash: ef19ad68e36313dbc221ef84fe4c9a16ef1a18f3
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a5c7b1738d0cffcac5a7b674ffae657da775f9c7
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576800"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662870"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 

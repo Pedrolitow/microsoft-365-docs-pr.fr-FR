@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: bc1dd84e83e5c5f1828e65203585d38acc28de5e
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 1d1b2a102b22725aeb6538d83befdc964e3d57f5
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617257"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663144"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité afin de prendre en charge le travail à domicile
 
@@ -50,7 +50,7 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 |3|[Configurer Microsoft Defender pour Office 365](#3-configure-microsoft-defender-for-office-365)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Configurer Microsoft Defender pour Identity](#4-configure-microsoft-defender-for-identity)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5|[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6 |[Configurer Intune protection des applications mobiles pour les téléphones et tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6|[Configurer Intune protection des applications mobiles pour les téléphones et tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Configurer l’authentification multifacteur et l’accès conditionnel pour les invités, y compris Intune protection des applications](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Optimiser votre réseau pour la connectivité cloud](#9-optimize-your-network-for-cloud-connectivity)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -250,4 +250,4 @@ Microsoft 365 inclut plusieurs façons de surveiller l’état et de prendre les
 
 Félicitations ! Vous avez rapidement implémenté certaines des protections de sécurité les plus importantes et votre organisation est beaucoup plus sécurisée. Vous êtes maintenant prêt à aller encore plus loin avec les fonctionnalités de protection contre les menaces (y compris les Microsoft Defender pour point de terminaison), les fonctionnalités de classification et de protection des données et la sécurisation des comptes d’administration. Pour obtenir un ensemble plus approfondi et méthodique de recommandations de sécurité pour Microsoft 365, consultez [Les décideurs en matière de sécurité pour les entreprises (BDM) de Microsoft 365](Microsoft-365-security-for-bdm.md).
 
-Visitez également le nouveau Defender pour cloud de Microsoft sur [docs.microsoft.com/security](/security).
+Visitez également la nouvelle documentation de Microsoft sur Defender pour le cloud en [matière de sécurité](/security).

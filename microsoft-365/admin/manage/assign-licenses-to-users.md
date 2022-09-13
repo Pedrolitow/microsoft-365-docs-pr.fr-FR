@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -27,12 +28,12 @@ ms.custom:
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
 ms.date: 07/12/2022
-ms.openlocfilehash: c004364050c434666f1d0b2d872bddc9040dc1a7
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.openlocfilehash: ab210982783c9c6e5de6d5a7569960a47c05ef84
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112370"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660616"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>Attribuer des licences Microsoft 365 aux utilisateurs
 

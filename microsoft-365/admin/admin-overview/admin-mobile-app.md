@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez l’application Administration Microsoft 365, votre compagnon du Centre d'administration Microsoft 365 web, pour gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: 8766098509a0c7cea22e177907b77199d6e6c690
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b0934c773df4d9fb2efcb1065d4c279501212c91
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469116"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662044"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’application mobile Administration Microsoft 365
 

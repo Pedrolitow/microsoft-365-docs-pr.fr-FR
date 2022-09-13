@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/29/2022
+ms.date: 09/13/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: f986d6a50e638c4d75b6f95e87cdf7f3d0e541a3
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: b16207902e8dfe198d8ab99370ab63e4ea64031c
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595626"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664634"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour entreprises
 
@@ -51,7 +51,11 @@ Choisissez l'une des options suivantes pour intégrer des appareils clients Wind
 
 ### <a name="local-script-for-windows-10-and-11"></a>Script local pour Windows 10 et 11
 
-Vous pouvez utiliser un script local pour intégrer des appareils clients Windows. Lorsque vous exécutez le script d’intégration sur un appareil, il crée une approbation avec Azure Active Directory, si cette approbation n’existe pas déjà ; inscrit l’appareil dans Microsoft Intune, s’il n’est pas déjà inscrit, puis l’intègre à Defender entreprise. La méthode de script local fonctionne même si vous n’avez pas de Intune, et il s’agit de la méthode recommandée pour les clients Defender entreprise.
+Vous pouvez utiliser un script local pour intégrer des appareils clients Windows. Lorsque vous exécutez le script d’intégration sur un appareil : 
+
+- Il crée une approbation avec Azure Active Directory, si cette approbation n’existe pas déjà.
+- Il inscrit l’appareil dans Microsoft Intune, s’il n’est pas déjà inscrit, puis l’intègre à Defender entreprise. 
+- La méthode de script local fonctionne même si vous n’avez pas de Intune, et il s’agit de la méthode recommandée pour les clients Defender entreprise.
 
 > [!TIP]
 > Nous vous recommandons d’intégrer jusqu’à 10 appareils à un moment où vous utilisez la méthode de script local.
@@ -159,7 +163,11 @@ Choisissez l'une des options suivantes pour le Mac embarqué :
 
 ### <a name="local-script-for-mac"></a>Script local pour Mac
 
-Lorsque vous exécutez le script local sur un Mac, il crée une approbation avec Azure Active Directory, si cette approbation n’existe pas déjà ; inscrit le Mac dans Microsoft Intune, s’il n’est pas déjà inscrit, puis intègre le Mac à Defender pour Entreprises. Nous vous recommandons d’intégrer jusqu’à 10 appareils à la fois à l’aide de cette méthode.
+Lorsque vous exécutez le script local sur un Mac : 
+
+- Il crée une approbation avec Azure Active Directory, si cette approbation n’existe pas déjà.
+- Il inscrit le Mac dans Microsoft Intune, s’il n’est pas déjà inscrit, puis l’intègre à Defender pour Entreprises. 
+- Nous vous recommandons d’intégrer jusqu’à 10 appareils à la fois à l’aide de cette méthode.
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
@@ -336,12 +344,15 @@ Pour afficher la liste des appareils intégrés à Defender entreprise, accédez
 
 ## <a name="mobile-devices"></a>Appareils mobiles
 
-Vous pouvez utiliser Microsoft Intune pour intégrer des appareils mobiles, tels que des appareils Android et iOS/iPadOS. Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :
+Utilisez Microsoft Intune pour intégrer des appareils mobiles, tels que des appareils Android et iOS/iPadOS. Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :
 
 - [Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)
 - [Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)
 
 Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+
+> [!NOTE]
+> Defender for Business autonome n’inclut pas la licence Intune requise pour intégrer des appareils iOS et Android. Vous pouvez ajouter Intune à votre abonnement Defender entreprise pour intégrer des appareils mobiles.
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 

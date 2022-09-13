@@ -417,7 +417,7 @@
 ##### [Examiner des fichiers](investigate-files.md)
 ##### [Examiner des appareils](investigate-machines.md)
 ##### [Examiner une adresse IP](investigate-ip.md)
-##### [Examiner un domaine](investigate-domain.md)
+##### [Examiner les domaines et les URL associés à une alerte de Microsoft Defender pour point de terminaison](investigate-domain.md)
 ###### [Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys](investigate-behind-proxy.md)
 ##### [Examiner un compte d’utilisateur](investigate-user.md)
 

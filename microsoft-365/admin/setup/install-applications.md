@@ -10,6 +10,7 @@ ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,16 +26,16 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Maintenant que vous avez configuré Microsoft 365, découvrez comment installer des applications Office individuelles sur votre Mac, PC ou appareils mobiles.
-ms.openlocfilehash: ad99f8f0ba6ab4c5bcc7d157d46f9c071a15df96
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b7580925962ff0f632c4597becfc33aeb4e94373
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086888"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661100"
 ---
 # <a name="install-office-applications"></a>Installer les applications Office
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Maintenant que vous avez configuré Microsoft 365, vous pouvez installer des applications Office individuelles sur votre Mac, PC ou appareils mobiles.
   

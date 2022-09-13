@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,20 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer des fichiers d’entreprise vers SharePoint.
-ms.openlocfilehash: 2f12283d952ee3b59bf636c836b2310b171eefa7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: eece04f28d6544c509fa8757dee2491c38a518ee
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083924"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661122"
 ---
 # <a name="move-files-to-sharepoint"></a>Déplacer des fichiers vers SharePoint
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 ## <a name="watch-move-company-files-to-sharepoint"></a>Regarder : Déplacer des fichiers d’entreprise vers SharePoint
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198210).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198210).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/65ec460e-296c-458f-b004-906756dfb3d0?autoplay=false]
 

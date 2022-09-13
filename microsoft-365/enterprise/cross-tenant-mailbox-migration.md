@@ -4,7 +4,7 @@ description: Comment déplacer des boîtes aux lettres entre les locataires Micr
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,16 +16,16 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a0146159ebbb5e960bb375228e87fbfe43c0276e
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 44a80d3d1a7845461e7c97ed2a4466a6557a52bd
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497157"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664228"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
-En règle générale, pendant les fusions ou les désengagements, vous avez besoin de la possibilité de déplacer la boîte aux lettres Exchange Online de votre utilisateur dans un nouveau locataire. La migration de boîtes aux lettres entre locataires permet aux administrateurs de locataires d’utiliser des interfaces connues comme Exchange Online PowerShell et MRS pour faire passer les utilisateurs vers leur nouvelle organisation.
+Généralement, pendant les fusions ou les désengagements, vous avez besoin de la possibilité de déplacer les boîtes aux lettres Exchange Online de vos utilisateurs vers un nouveau locataire. La migration de boîtes aux lettres entre locataires permet aux administrateurs de locataires d’utiliser des interfaces connues comme Exchange Online PowerShell et MRS pour faire passer les utilisateurs vers leur nouvelle organisation.
 
 Les administrateurs peuvent utiliser l’applet de commande **New-MigrationBatch** , disponible via le rôle de gestion _Déplacer les boîtes aux lettres_ , pour exécuter des déplacements entre locataires.
 
@@ -429,9 +429,9 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-### <a name="how-do-we-access-outlook-on-day-1-after-the-use-mailbox-is-moved"></a>Comment accéder à Outlook le jour 1 après le déplacement de la boîte aux lettres d’utilisation ?
+### <a name="how-do-we-access-outlook-on-day-1-after-the-user-mailbox-is-moved"></a>Comment accéder à Outlook le jour 1 après le déplacement de la boîte aux lettres de l’utilisateur ?
 
-Étant donné qu’un seul locataire peut posséder un domaine, l’ancienne smTPAddress principale ne sera pas associée à l’utilisateur dans le locataire cible une fois le déplacement de la boîte aux lettres terminé ; uniquement les domaines associés au nouveau locataire. Outlook utilise le nouvel UPN des utilisateurs pour s’authentifier auprès du service et le profil Outlook s’attend à trouver l’adresse SMTPAddress principale héritée correspondant à la boîte aux lettres dans le système cible. Étant donné que l’adresse héritée n’est pas dans le système cible, le profil Outlook ne se connecte pas pour rechercher la boîte aux lettres nouvellement déplacée.
+Étant donné qu’un seul locataire peut posséder un domaine, l’ancienne smTPAddress principale ne sera pas associée à l’utilisateur dans le locataire cible une fois le déplacement de la boîte aux lettres terminé ; uniquement les domaines associés au nouveau locataire. Outlook utilise le nouvel UPN de l’utilisateur pour s’authentifier auprès du service et le profil Outlook s’attend à trouver la SMTPAddress principale héritée pour correspondre à la boîte aux lettres dans le système cible. Étant donné que l’adresse héritée n’est pas dans le système cible, le profil Outlook ne se connecte pas pour rechercher la boîte aux lettres nouvellement déplacée.
 
 Pour ce déploiement initial, les utilisateurs devront reconstruire leur profil avec leur nouvelle UPN, leur adresse SMTP principale et leur contenu OST de resynchronisation.
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Découvrez comment ajouter un utilisateur ou un contact Microsoft 365 tel qu’un employé, un partenaire ou un fournisseur à un groupe de distribution de courrier.
-ms.openlocfilehash: 765380e1c8b6bd4aed94df9335d6b1dafe5bd12a
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: f7a41cbbb1b9bdf2f72fa74166826f65cabd59d9
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084078"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661956"
 ---
 # <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Ajouter un utilisateur ou un contact à un groupe de distribution Microsoft 365
 

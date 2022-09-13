@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -29,16 +30,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment définir une stratégie dans le Centre d'administration Microsoft 365 pour permettre aux utilisateurs de réinitialiser leurs propres mots de passe à l’aide de l’outil de réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 2d00158b55b429c5bd59b213834dc7219e75ed87
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 7ee0d3aa8053c4156eba999a77a5ea5d1643cd98
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084716"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662330"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 En tant qu’administrateur Microsoft 365, vous pouvez autoriser les utilisateurs à utiliser [l’outil de réinitialisation de mot de passe en libre-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) afin de ne pas avoir à réinitialiser les mots de passe pour eux. Moins de travail pour vous !
 
@@ -47,7 +48,7 @@ En tant qu’administrateur Microsoft 365, vous pouvez autoriser les utilisateur
  
 ## <a name="watch-let-users-reset-their-own-passwords"></a>Regarder : Permettre aux utilisateurs de réinitialiser leurs propres mots de passe
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198214).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198214).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,16 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou la vue de tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: 285769f9d7d91169dbf505ee125cab1a15d5adcd
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 993440c3d3fbd634b50f90305075ad626b6b4c4a
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084672"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662286"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 - [Le Centre d'administration en mode affichage simplifié](#watch-the-admin-center-in-simplified-view)
 - [Le centre d’administration en mode tableau de bord](#watch-the-admin-center-in-dashboard-view)
@@ -42,7 +43,7 @@ Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">C
 
 ## <a name="watch-the-admin-center-in-simplified-view"></a>Regarder : le Centre d'administration en mode affichage simplifié
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197911).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197911).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 

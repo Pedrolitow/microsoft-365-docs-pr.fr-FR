@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -23,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre Microsoft 365 pour les factures professionnelles.
 ms.date: 05/24/2022
-ms.openlocfilehash: 041e0636cf5e1797d0716ddceb550e2544085e46
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 41dfca0b8b10d1c481ccb704c3fff5508eede6ef
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384833"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664722"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 

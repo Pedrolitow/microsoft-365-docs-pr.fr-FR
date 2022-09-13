@@ -12,16 +12,16 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Forum aux questions sur les contrats de licence Centre d'administration Microsoft 365.
-  ms.openlocfilehash: bcc97969b283d51194dd8f1eb213340bd8f0334e
-  ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+  ms.openlocfilehash: b9085d38f3411ad32b383621f1ca19df8dd12991
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64953680"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67663561"
 title: Questions fréquentes sur les contrats
 summary: ''
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: >
       Pourquoi puis-je voir la liste des contrats ?
@@ -38,7 +38,7 @@ sections:
       Un ID de licence identifie le niveau de programme auquel les commandes peuvent être passées par une organisation. Il peut représenter l’un des éléments suivants :
 
 
-      - Inscription (Enterprise ou Sélectionner des programmes)
+      - Inscription (Programmes d’entreprise ou de sélection)
 
       - Accord (open value program)
 
@@ -63,7 +63,7 @@ sections:
       - Vous êtes administrateur et avez accès aux contrats.
 
 
-      Pour plus d’informations sur les rôles d’autorisation VL et leurs actions autorisées, consultez la [FAQ sur les autorisations](https://docs.microsoft.com/licensing/permissions-faq).
+      Pour plus d’informations sur les rôles d’autorisation VL et leurs actions autorisées, consultez la [FAQ sur les autorisations](/licensing/permissions-faq).
   - question: >
       Combien de temps faut-il pour que les nouvelles commandes de licence apparaissent dans la liste des contrats ?
     answer: >
@@ -89,10 +89,33 @@ sections:
 
       |Date de fin|Date de fin de la licence|
 
-      |Statut|État de la licence|
+      |État|État de la licence|
   - question: >
       Qu’est-ce que le résumé des licences ?
-    answer: "Le résumé des licences affiche les droits de licence en volume en temps réel par famille de produits Microsoft et version pour tous les ID de licence actifs et inactifs dans votre jeu d’autorisations.\n\nLe résumé des licences affiche les informations d’achat relatives aux programmes de licence en volume Microsoft traditionnels à partir de 1994. Ces programmes incluent, sans s’y limiter, Open, Open Value, Select, Select Plus et Enterprise.\n\nLes licences achetées dans le cadre du programme MPSA ne sont pas incluses dans le résumé des relations VLSC et peuvent être affichées séparément dans le [Centre d’affaires Microsoft](https://businessaccount.microsoft.com/customer).\n\nAccéder au récapitulatif de la licence et le créer\n\n1. Connectez-vous au Centre d’administration Microsoft 365.\n2. Accédez à **BillingYour** >  **productsVolume** >  **licensingContracts.** > \n\nFiltrer les ID de licence à afficher dans le résumé des licences\n\n1. Utilisez les cases à cocher pour sélectionner les ID de licence à inclure dans ce résumé.\n2. Sélectionnez **Créer un résumé de la licence**. Le résumé des licences est généré uniquement pour les ID de licence sélectionnés.\n"
+    answer: >
+      Le résumé des licences affiche les droits de licence en volume en temps réel par famille de produits Microsoft et version pour tous les ID de licence actifs et inactifs dans votre jeu d’autorisations.
+
+
+      Le résumé des licences affiche les informations d’achat relatives aux programmes de licence en volume Microsoft traditionnels à partir de 1994. Ces programmes incluent, sans s’y limiter, Open, Open Value, Select, Select Plus et Enterprise.
+
+
+      Les licences achetées dans le cadre du programme MPSA ne sont pas incluses dans le résumé des relations VLSC et peuvent être affichées séparément dans le [Centre d’affaires Microsoft](https://businessaccount.microsoft.com/customer).
+
+
+      Accéder au récapitulatif de la licence et le créer
+
+
+      1. Connectez-vous au Centre d’administration Microsoft 365.
+
+      2. Accédez à **Facturation** >  des contrats **de licence en** >  volume **de vos produits** > **.**
+
+
+      Filtrer les ID de licence à afficher dans le résumé des licences
+
+
+      1. Utilisez les cases à cocher pour sélectionner les ID de licence à inclure dans ce résumé.
+
+      2. Sélectionnez **Créer un résumé de la licence**. Le résumé des licences est généré uniquement pour les ID de licence sélectionnés.
 - name: Présentation du résumé des licences
   questions:
   - question: >
@@ -142,11 +165,11 @@ sections:
       Un pool de licences regroupe les licences par type de produit. La gestion des licences en volume Microsoft organise les produits en trois pools :
 
 
-      - Applications (par exemple, éditions de Office)
+      - Applications (par exemple, éditions d’Office)
 
       - Systèmes (par exemple, versions du système d’exploitation Windows)
 
-      - Serveurs (par exemple, Exchange Server, SQL Server et serveur Windows)
+      - Serveurs (par exemple, Exchange Server, SQL Server et Windows Server)
   - question: >
       Qu’est-ce qu’une octroi de licence ?
     answer: >
@@ -170,4 +193,4 @@ sections:
       Les octrois de licences sont reflétés dans la liste des contrats et dans les téléchargements & clés. Dans la liste des produits, les produits reçus des licences sont affichés avec un astérisque (*) pour indiquer qu’ils ne faisaient pas partie de l’achat d’origine.
   - question: >
       Contacter le support technique
-    answer: Les clients peuvent également [nous contacter](https://docs.microsoft.com/licensing/contact-us) par téléphone ou par formulaire web. Microsoft répond aux soumissions de formulaire web dans les 24 heures.
+    answer: Les clients peuvent également [nous contacter](/licensing/contact-us) par téléphone ou par formulaire web. Microsoft répond aux soumissions de formulaire web dans les 24 heures.

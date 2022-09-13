@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: f122a52b8df76d0f0beb5c315911750727b440e3
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 088abe1c605b83723bfe800c1fd45ca413a8675b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581687"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662638"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 
@@ -89,7 +89,7 @@ Logo|Nom du partenaire|Description
 :---|:---|:---
 ![Image du logo Aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|Vérifier que Defender pour point de terminaison est installé et mis à jour sur chaque point de terminaison avant d’autoriser l’accès au réseau
 ![Image du logo Blue Hexagon for Network.](images/bluehexagon-logo.png)|[Hexagone bleu pour le réseau](/learn/modules/explore-malware-threat-protection/)|Blue Hexagon a créé la première plateforme d’apprentissage profond en temps réel de l’industrie pour la protection contre les menaces réseau
-![Image du logo Corelight.](images/logo-corelight.png)| [Corelight]( https://corelight.com/integrations/iot-security)| À l’aide de données envoyées à partir d’appliances réseau Corelight, Microsoft 365 Defender bénéficie d’une visibilité accrue sur les activités réseau des appareils non gérés, y compris la communication avec d’autres appareils non gérés ou des réseaux externes.
+![Image du logo Corelight.](images/logo-corelight.png)| [Corelight](https://corelight.com/integrations/iot-security)| À l’aide de données envoyées à partir d’appliances réseau Corelight, Microsoft 365 Defender bénéficie d’une visibilité accrue sur les activités réseau des appareils non gérés, y compris la communication avec d’autres appareils non gérés ou des réseaux externes.
 ![Image du logo CyberMDX.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX intègre une visibilité complète des ressources médicales, la prévention des menaces et le repos dans votre environnement Defender pour point de terminaison
 ![Image du logo HYAS Protect.](images/hyas-logo.png)|[Protection HYAS](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilise des connaissances faisant autorité sur l’infrastructure des attaquants pour protéger de manière proactive Microsoft Defender pour point de terminaison points de terminaison contre les cyberattaques
 ![Image du logo Vectra Network Detection and Response (NDR).](images/vectra-logo.png)|[Détection et réponse réseau Vectra (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applique l’IA & la recherche de sécurité pour détecter et répondre aux cyberattaques en temps réel

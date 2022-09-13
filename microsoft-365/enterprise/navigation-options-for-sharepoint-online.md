@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les sites d’options de navigation avec la publication SharePoint activée dans SharePoint Online.
-ms.openlocfilehash: c95666a0fdb78fa584d9ca32ce19f10e4db89753
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: da06987e0136b3ae92f7bcdc9b561e6478439a01
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940929"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662242"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -99,9 +99,9 @@ De nombreux sites ne nécessitent pas de filtrage de sécurité, car la structur
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Comment implémenter la navigation managée et les résultats
 
-Il existe plusieurs articles sur docs.microsoft.com sur les détails de la navigation managée. Par exemple, consultez [Vue d’ensemble de la navigation managée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
+Il existe plusieurs articles sur Microsoft Docs sur les détails de la navigation managée. Par exemple, consultez [Vue d’ensemble de la navigation managée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
-Pour implémenter la navigation managée, vous configurez des termes avec des URL correspondant à la structure de navigation du site. La navigation managée peut même être organisée manuellement pour remplacer la navigation structurelle dans de nombreux cas. Par exemple :
+Pour implémenter la navigation managée, vous configurez des termes avec des URL correspondant à la structure de navigation du site. La navigation managée peut même être organisée manuellement pour remplacer la navigation structurelle dans de nombreux cas. Par exemple :
 
 ![Structure du site SharePoint Online.](../media/SPONavOptionsListOfSites.png))
 
@@ -543,7 +543,7 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 
 ```
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Vue d’ensemble de la navigation gérée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -32,16 +33,16 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Apprenez à importer des contacts, des calendriers et des e-mails à partir de Gmail ou d’un autre fournisseur de messagerie et à les migrer vers Microsoft 365.
-ms.openlocfilehash: 769ac7b2ee1a84767fe71d45ee9214927044213b
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 2b0ecdcd7867353ebf7bd9c45bf8cb435efffa99
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086910"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662748"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrer le courrier électronique et les contacts vers Microsoft 365
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Importez ou migrez des e-mails à partir de Gmail ou d’un autre fournisseur de messagerie vers Microsoft 365.
   
@@ -54,7 +55,7 @@ Pour cette tâche, vous devez utiliser une version d'Outlook installée sur votr
   
 ## <a name="watch-import-and-redirect-email"></a>Observation : Importer et rediriger un e-mail
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197916).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197916).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 

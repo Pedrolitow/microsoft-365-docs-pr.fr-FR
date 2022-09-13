@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: GEA150
 description: Inscrivez-vous à un essai gratuit de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 ms.date: 08/07/2020
-ms.openlocfilehash: 473e93660d854f953973cbb4590aceabe0e67e36
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 25f50d5cc5b0c795aec14d68f40634017fd1f624
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281814"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664162"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 pour les entreprises
 

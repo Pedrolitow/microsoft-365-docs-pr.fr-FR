@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - VSBFY23
 description: Achetez Microsoft 365 Business Standard et configurez votre organisation.
-ms.openlocfilehash: 83841af8a538b861b43003c39bfb92a24a4e47aa
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: f97d2d28b4ca85cacbbfa9cb02d27b1620c85269
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085068"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661078"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -119,7 +120,7 @@ Les conditions d’utilisation simplifiées de l’inscription ont été récemm
 
 Si vous choisissez de ne pas accepter les conditions mises à jour pour l’inscription simplifiée ou d’ajouter un domaine professionnel, votre abonnement ne se renouvelle pas automatiquement et, à la fin de votre contrat d’abonnement actuel, vous perdez l’accès aux applications Office. Vos données OneDrive seront conservées pendant 90 jours pour vous permettre de les copier, puis elles seront supprimées.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Qu’est-ce qu’un e-mail professionnel et quels sont les avantages de la configuration ?
 

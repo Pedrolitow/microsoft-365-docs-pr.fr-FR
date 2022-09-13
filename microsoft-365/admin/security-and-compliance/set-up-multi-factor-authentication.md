@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -29,12 +30,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 32e429f2d24c8754603c3ab32b060a9b7656df4e
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: a7c7734488247dc4d329c384c62817410761e824
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085506"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661276"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Configurer l'authentification multifactorielle pour Microsoft 365
 

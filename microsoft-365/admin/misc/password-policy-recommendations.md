@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - Adm_O365
 - Adm_NonTOC
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: 782d2066fba52a5135c32987d8d32824b8a97be0
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: 83b122df96302d9a06bb950528d1063cb8c38c8d
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087086"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661758"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recommandations en matière de stratégie de mot de passe pour Microsoft 365
 

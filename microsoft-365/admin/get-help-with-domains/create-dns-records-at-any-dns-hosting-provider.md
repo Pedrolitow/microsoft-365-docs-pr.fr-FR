@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 4e0b89b390133ac6fa0f6a88f092f60ed2ce926d
-ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
+ms.openlocfilehash: 8382324c537c5cdc6b34c71354636535f0f20de6
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67634775"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664019"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 

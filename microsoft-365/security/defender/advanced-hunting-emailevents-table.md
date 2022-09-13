@@ -18,12 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5ac64dfbfd42d76e350d27a5d7a1594e6c055cba
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9f6624122a2b1b6989e83757b246a82b01e33bbb
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482051"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664664"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -81,6 +81,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `UserLevelPolicy` | `string` | Stratégie de boîte aux lettres de l’utilisateur final qui a déclenché l’action effectuée sur l’e-mail |
 | `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
 | `AuthenticationDetails` | `string` | Liste des verdicts de réussite ou d’échec par protocoles d’authentification par e-mail tels que DMARC, DKIM, SPF ou une combinaison de plusieurs types d’authentification (CompAuth) |
+| `BulkComplaintLevel` | `int` | Seuil attribué au courrier électronique des expéditeurs en bloc, un niveau élevé de plaintes en bloc (BCL) signifie que l’e-mail est plus susceptible de générer des plaintes, et donc plus susceptible d’être du courrier indésirable |
 
 ## <a name="related-topics"></a>Voir aussi
 

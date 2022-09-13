@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.date: 08/24/2022
 ms.collection:
+- highpri
 - Adm_O365
 - Adm_TOC
 ms.custom:
@@ -29,12 +30,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les 10 principales façons de protéger votre entreprise, notamment les ransomwares, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 1672b0c5233f1dce6f95847a986ea43ed03e15dc
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: fc3ce4ec991cea5096ac7806eda534a3b33dea5f
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450188"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663408"
 ---
 # <a name="top-10-ways-to-secure-your-data---best-practices-for-small-and-medium-sized-businesses"></a>10 principales façons de sécuriser vos données - Meilleures pratiques pour les petites et moyennes entreprises
 

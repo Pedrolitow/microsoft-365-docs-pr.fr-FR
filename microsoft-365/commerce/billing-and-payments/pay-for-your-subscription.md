@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -24,12 +25,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 08/04/2022
-ms.openlocfilehash: 74b76a8719d57cfd2caabc02ace1e80583db0821
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: 6e56a5386cbc78b1fbe241c2afef0fdb1f7d2847
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276588"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660220"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 

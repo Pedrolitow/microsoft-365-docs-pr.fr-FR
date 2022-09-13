@@ -12,6 +12,7 @@ ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -26,12 +27,12 @@ ms.custom:
 - adminvideo
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 01/25/2022
-ms.openlocfilehash: 5fc5269fac7b7b359e7cb50ace11f855680adc6f
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.openlocfilehash: 123d70825f0d894d72d48fbe890652d37fe7d4b2
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112392"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664578"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Afficher la facture ou la facture de votre abonnement Microsoft 365 pour les entreprises
 

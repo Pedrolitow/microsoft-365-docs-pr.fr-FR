@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -28,22 +29,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Gérez les signatures par e-mail, y compris les clauses d’exclusion de responsabilité légales ou les déclarations de divulgation pour tous les messages électroniques qui entrent ou quittent votre organisation.
-ms.openlocfilehash: 22cc27b48482bb6deb658a215d40eff2541be0a2
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 7eebd09d675ec4186a1aeac526176c627367efd4
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087284"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663342"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des exclusions de responsabilité à l’échelle de l’organisation
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
  Vous pouvez gérer les signatures par e-mail en ajoutant une signature par e-mail, une clause d’exclusion de responsabilité légale ou une déclaration de divulgation aux messages électroniques qui entrent ou quittent votre organisation. Vous pouvez configurer celle-ci pour qu'elle s'applique à tous les messages entrants et sortants, comme illustré ci-dessous. Ou vous pouvez l'appliquer à certains messages, comme ceux contenant des mots ou des modèles de texte spécifiques.
 
 ## <a name="watch-create-a-company-wide-email-signature"></a>Regarder : Créer une signature électronique à l’échelle de l’entreprise
   
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198031).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198031).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 

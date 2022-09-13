@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment renouveler la plupart des abonnements Microsoft 365 Entreprises en activant ou en désactivant la facturation récurrente.
 ms.date: 08/18/2022
-ms.openlocfilehash: 0f7722eda2f7b7fc4f9e24d30be4442c106ff640
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: c89ed2ca68eebe061aebef9d7ca937611477f195
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384555"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664612"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 

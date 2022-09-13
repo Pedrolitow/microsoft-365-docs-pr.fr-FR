@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configurez mobilité et sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs en effectuant des actions telles que la réinitialisation à distance d’un appareil.
-ms.openlocfilehash: 0658db2546a72cc35da79e396af42ae54e23e6a7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 0146378e199c9ac805d8eeaafba59598dbc70f6c
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084430"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660770"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 

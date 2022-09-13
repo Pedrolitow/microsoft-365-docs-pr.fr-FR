@@ -7,20 +7,20 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 4b2a5369e6c22dcff0fa1e22642ac6fcb4c30ea2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 9a728cef7c23d65f2a6f39c1211854cb8c91c53f
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108142"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661056"
 ---
 # <a name="data-sets"></a>Jeux de données
 
-Microsoft centralise de nombreux jeux de données en une seule plateforme, Microsoft Defender Threat Intelligence (Defender TI), ce qui facilite l’analyse de l’infrastructure pour la communauté et les clients de Microsoft. L’objectif principal de Microsoft est de fournir autant de données que possible sur l’infrastructure Internet afin de prendre en charge divers cas d’utilisation de la sécurité.
+Microsoft centralise de nombreux jeux de données en une seule plateforme, Microsoft Defender Threat Intelligence (Defender TI), ce qui facilite l’analyse de l’infrastructure pour la communauté et les clients de Microsoft. L’objectif principal de Microsoft est de fournir autant de données que possible sur l’infrastructure Internet pour prendre en charge divers cas d’utilisation de la sécurité.
 
-Microsoft collecte, analyse et indexe les données Internet pour aider les utilisateurs à détecter et à répondre aux menaces, à hiérarchiser les incidents et à identifier de manière proactive l’infrastructure des adversaires associée aux groupes d’acteurs ciblant leur organisation. Microsoft collecte des données Internet via son réseau de capteurS PDNS, un réseau proxy global d’utilisateurs virtuels, des analyses de port et tire parti de sources tierces pour les programmes malveillants et des données DNS (Domain Name System) ajoutées.
+Microsoft collecte, analyse et indexe les données Internet pour aider les utilisateurs à détecter et à répondre aux menaces, à hiérarchiser les incidents et à identifier de manière proactive l’infrastructure des adversaires’ associée aux groupes d’acteurs ciblant leur organisation. Microsoft collecte des données Internet via son réseau de capteurs PDNS, un réseau proxy global d’utilisateurs virtuels, des analyses de port et tire parti de sources tierces pour les programmes malveillants et des données DNS (Domain Name System) ajoutées.
 
-Ces données Internet sont classées en deux groupes distincts : traditionnel et avancé. Les jeux de données traditionnels incluent resolutions, whois, certificats SSL, sous-domaines, hachages, DNS, DNS inversé et services. Les jeux de données avancés incluent trackers, composants, paires d’hôtes et cookies. Les jeux de données Trackers, Components, Host Pairs et Cookies sont collectés à partir de l’observation du modèle DOM (Document Object Model) des pages web analysés. En outre, les composants et les suivis sont également observés à partir de règles de détection déclenchées en fonction des réponses de bannière des analyses de port ou des détails du certificat SSL.
+Ces données Internet sont classées en deux groupes distincts : traditionnel et avancé. Les jeux de données traditionnels incluent resolutions, whois, certificats SSL, sous-domaines, hachages, DNS, DNS inversé et services. Les jeux de données avancés incluent les dispositifs de suivi, les composants, les paires d’hôtes et les cookies. Les dispositifs de suivi, les composants, les paires d’hôtes et les jeux de données cookies sont collectés à partir de l’observation des Document Object Model (DOM) des pages web analysés. En outre, les composants et les dispositifs de suivi sont également observés à partir de règles de détection déclenchées en fonction des réponses de bannière des analyses de port ou des détails du certificat SSL.
 
 ![Capture d’écran de Data Sets Edge](media/dataSetsEdgeScreenshot.png)
 
@@ -181,7 +181,7 @@ Nos données de certificat incluent les éléments suivants :
 ![Liste des certificats de l’onglet Données](media/dataTabCertificatesList.png)
 
 Lorsqu’un utilisateur développe un hachage SHA1, il peut voir des détails sur les éléments suivants, notamment :**
-- **Matricule:** Numéro de série associé à un certificat SSL.
+- **Numéro de série :** Numéro de série associé à un certificat SSL.
 - **Délivré:** Date à laquelle un certificat a été émis.
 - **Expire:** Date d’expiration d’un certificat.
 - **Nom commun de l’objet :** Nom commun de l’objet pour tous les certificats SSL associés.
@@ -229,7 +229,7 @@ Lorsqu’un utilisateur développe un hachage SHA1, il peut voir des détails su
 
 ## <a name="subdomains"></a>Sous-domaines
 
-Un sous-domaine est un domaine Internet qui fait partie d’un domaine principal. Les sous-domaines sont également appelés « hôtes ». Par exemple, « docs.microsoft.com » est un sous-domaine de « microsoft.com ». Pour chaque sous-domaine, il peut y avoir un nouvel ensemble d’adresses IP auxquelles le domaine se résout. Il peut s’agir d’une excellente source de données pour la recherche d’une infrastructure associée.
+Un sous-domaine est un domaine Internet qui fait partie d’un domaine principal. Les sous-domaines sont également appelés « hôtes ». Par exemple,`docs.microsoft.com` est un sous-domaine de `microsoft.com`. Pour chaque sous-domaine, il peut y avoir un nouvel ensemble d’adresses IP auxquelles le domaine se résout. Il peut s’agir d’une excellente source de données pour la recherche d’une infrastructure associée.
 
 Nos données de sous-domaine incluent les éléments suivants :
 
@@ -462,7 +462,7 @@ Nos données de services incluent les éléments suivants :
 - Connexion de protocole
 - État du port
   - Ouvrir
-  - Filtré
+  - Filtrée
   - Fermé
 - Réponse de bannière
 
@@ -540,7 +540,7 @@ Nos données DNS inversées incluent les éléments suivants :
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
-- [Recherche et sélection dynamique](searching-and-pivoting.md)
+- [Recherche et pivotage](searching-and-pivoting.md)
 - [Tri, filtrage et téléchargement de données](sorting-filtering-and-downloading-data.md)
 - [Chaînage d’infrastructure](infrastructure-chaining.md)
 - [Tutoriel : Collecte des informations sur les menaces et du chaînage d’infrastructure](gathering-threat-intelligence-and-infrastructure-chaining.md)

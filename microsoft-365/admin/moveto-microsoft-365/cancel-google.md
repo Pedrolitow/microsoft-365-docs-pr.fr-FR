@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment annuler l’abonnement Google Workspace, mais conserver votre domaine.
-ms.openlocfilehash: 6454a8ce138c46f1c15f89ee5beb3060a0938ee1
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 4269cb42f6b9702d47f4cf53e2e21be22524ebc9
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086976"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660572"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Annuler l’abonnement Google Workspace
 

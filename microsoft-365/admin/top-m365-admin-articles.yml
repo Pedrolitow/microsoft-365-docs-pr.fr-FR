@@ -14,13 +14,15 @@ metadata:
   ms.custom:
   - VSBFY23
   - AdminSurgePortfolio
-  ms.collection: Adm_TOC
-  ms.openlocfilehash: dfa4003cbf35d91a09d7e6cf89dcb87764bda47a
-  ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+  ms.collection:
+  - highpri
+  - Adm_TOC
+  ms.openlocfilehash: 41f1e3d7e4e9785a8b8dbff70a30b2d383b006ae
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/09/2022
-  ms.locfileid: "67639533"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67660933"
 landingContent:
 - title: Gérer les données et les services
   linkLists:

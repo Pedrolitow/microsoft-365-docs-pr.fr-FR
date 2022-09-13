@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -23,20 +24,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: aeb369ce41863fe4556544e314f10b347eaa6b05
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b0e2350c91b19e8a4097723efcfb6a34e674448b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087372"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661350"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrer la messagerie professionnelle et le calendrier à partir de Google Workspace
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 ## <a name="watch-migrate-business-email-and-calendar-from-google-workspace"></a>Regarder : Migrer la messagerie et le calendrier professionnels à partir de Google Workspace
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198034).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198034).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
@@ -69,7 +70,7 @@ Le processus de migration prend plusieurs étapes et peut prendre plusieurs heur
 1. Accédez à la [page API](https://console.developers.google.com/apis/library). 
 1. Dans la barre de recherche, **entrez l’API Gmail**.
 1. Sélectionnez-la, puis **choisissez Activer**.
-1. Répétez ce processus pour l’API Calendrier Google, l’API Contacts et l’API Contacts. 
+1. Répétez ce processus pour l’API Google Calendar, l’API Personnes et l’API Contacts. 
 
 ### <a name="grant-access-to-the-service-account"></a>Accorder l’accès au compte de service
 

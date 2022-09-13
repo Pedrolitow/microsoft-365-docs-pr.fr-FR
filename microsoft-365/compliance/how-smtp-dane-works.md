@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment l’authentification DNS SMTP des entités nommées (DANE) fonctionne pour sécuriser les communications par e-mail entre les serveurs de messagerie.
-ms.openlocfilehash: 2202cccc3c1feb9f50cc35dbb3e38d6b443675fd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5c0cc4a7a194cea1b18f528f4c72323a16fab73e
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625146"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663210"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Fonctionnement de l’authentification DNS SMTP des entités nommées (DANE)
 
@@ -108,9 +108,9 @@ Il n’existe que deux scénarios où un échec SMTP DANE entraîne le blocage d
 |Technologie|Informations complémentaires|
 |---|---|
 |**Mail Transfer Agent - Strict Transport Security (MTA-STS)** permet de contrer les attaques de rétrogradation et d’intercepteur en fournissant un mécanisme pour définir des stratégies de domaine qui spécifient si le serveur de messagerie de destination prend en charge TLS et ce qu’il faut faire quand TLS ne peut pas être négocié, par exemple arrêter la transmission.|Plus d’informations sur la prise en charge à venir de Exchange Online pour MTA-STS entrant et sortant sera publiée plus tard cette année. <br/><br/> [Exchange Online Transport News de Microsoft Ignite 2020 - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699) <br/><br/> [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)|
-|**Le SPF (Sender Policy Framework)** utilise des informations IP pour garantir que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.|[Comment Le SPF (Sender Policy Framework) empêche l’usurpation d’identité - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
-|**DomainKeys Identified Mail (DKIM)** utilise les informations de certificat X.509 pour s’assurer que les systèmes de messagerie de destination approuvent les messages envoyés sortants de votre domaine personnalisé.|[Comment utiliser DKIM pour l’e-mail dans votre domaine personnalisé - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
-|**DMARC (Domain-Based Message Authentication, Reporting, and Conformance)** fonctionne avec Sender Policy Framework et DomainKeys Identified Mail pour authentifier les expéditeurs de courrier et s’assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine.|[Utiliser DMARC pour valider l’e-mail, les étapes de configuration - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
+|**Le SPF (Sender Policy Framework)** utilise des informations IP pour garantir que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.|[Comment le SPF (Sender Policy Framework) empêche l’usurpation d’identité](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
+|**DomainKeys Identified Mail (DKIM)** utilise les informations de certificat X.509 pour s’assurer que les systèmes de messagerie de destination approuvent les messages envoyés sortants de votre domaine personnalisé.|[Utiliser DKIM pour le courrier électronique dans votre domaine personnalisé](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
+|**DMARC (Domain-Based Message Authentication, Reporting, and Conformance)** fonctionne avec Sender Policy Framework et DomainKeys Identified Mail pour authentifier les expéditeurs de courrier et s’assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine.|[Utiliser DMARC pour valider les e-mails et les étapes de configuration](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
 
 ## <a name="troubleshooting-sending-emails-with-smtp-dane"></a>Résolution des problèmes d’envoi de courriers électroniques avec SMTP DANE
 

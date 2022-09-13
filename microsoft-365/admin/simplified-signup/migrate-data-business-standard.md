@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: Migrer vos données Outlook, OneDrive et Teams vers Microsoft 365 Business Standard
-ms.openlocfilehash: c7050890b6e93f32ff632a7b2536121a790378a9
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: e54cad5dff19504011876a97218eb301811e1cb1
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644288"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663669"
 ---
 # <a name="migrate-data-to-my-microsoft-365-for-business-subscription"></a>Migrer des données vers mon abonnement Microsoft 365 entreprise
 

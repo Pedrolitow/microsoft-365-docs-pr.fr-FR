@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0656ec0d5194ea14deec293a505c5563a74ec939
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e619457ce420665ba1867480740a327aacdb618c
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481083"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664665"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Former votre personnel de sécurité pour Microsoft 365 Defender
 
@@ -45,9 +45,9 @@ Avec l’urgence de protéger votre organisation et ses données contre les atta
 
 Le contenu est structuré en trois niveaux de connaissances différents, avec plusieurs modules : Notions de base, Intermédiaire et Expert. Chaque niveau comprend une vérification des connaissances pour tester votre compréhension du matériel.
 
-## <a name="microsoft-learn-learning-paths"></a>Parcours d’apprentissage Microsoft Learn
+## <a name="learning-paths"></a>Parcours d’apprentissage
 
-Utilisez ces parcours d’apprentissage Microsoft Learn et leurs modules pour comprendre Microsoft 365 Defender et Microsoft Defender pour point de terminaison, un module et une unité à la fois.
+Utilisez ces parcours d’apprentissage et leurs modules pour comprendre Microsoft 365 Defender et Microsoft Defender pour point de terminaison, un module et une unité à la fois.
 
  - [Détecter les cyberattaques et y répondre avec Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
 
@@ -72,4 +72,3 @@ L’une des meilleures façons d’apprendre consiste à configurer et tester Mi
 ## <a name="simulating-an-attack"></a>Simulation d’une attaque
 
 Pour tester votre personnel de sécurité sur sa capacité à détecter et à répondre à une cyberattaque, utilisez une attaque simulée. Pour plus d’informations, consultez [Simuler des attaques avec le portail Microsoft 365 Defender](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal). 
-

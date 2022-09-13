@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Découvrez comment implémenter ExpressRoute pour Office 365, qui fournit un autre chemin de routage à de nombreux services Office 365 accessibles sur Internet.
-ms.openlocfilehash: e3a63aea6f0947127d05de6e8bd90e386646dc59
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 07f79298749784bda9362410e8790f27407bb55a
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560304"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663254"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implémentation d’ExpressRoute pour Office 365
 
@@ -47,7 +47,7 @@ Nous nous attendons à ce que les prérequis suivants soient remplis avant le d�
 
 2. Vous avez sélectionné un fournisseur de services réseau ExpressRoute. Recherchez des détails sur les [partenaires ExpressRoute et les emplacements de peering](/azure/expressroute/expressroute-locations).
 
-3. Vous avez déjà lu et compris la [documentation ExpressRoute](https://azure.microsoft.com/documentation/services/expressroute/) et votre réseau interne est en mesure de répondre aux prérequis d’ExpressRoute de bout en bout.
+3. Vous avez déjà lu et compris la [documentation ExpressRoute](/azure/expressroute/) et votre réseau interne est en mesure de répondre aux prérequis d’ExpressRoute de bout en bout.
 
 4. Votre équipe a lu tous les conseils publics et la documentation sur [https://aka.ms/expressrouteoffice365](./azure-expressroute.md)[https://aka.ms/ert](https://aka.ms/ert), et a regardé la série [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer) sur Channel 9 afin d’acquérir une compréhension des détails techniques critiques, notamment :
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir les informations de contact d’un partenaire avec lequel vous avez travaillé dans le passé.
-ms.openlocfilehash: 5b6c9abcd614f0b4be96f597c72a813064b78b14
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8935603ebff624c83a237d37d4ec0510b05bed48
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086822"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660638"
 ---
 # <a name="find-your-microsoft-365-subscriptions-partner-or-reseller"></a>Rechercher votre partenaire ou revendeur d’abonnements Microsoft 365
 

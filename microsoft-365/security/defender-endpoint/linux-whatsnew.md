@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.subservice: mde
-ms.openlocfilehash: 877cf9b7db508798a35cc99f8a163d0de0b91f37
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 8cddb2ab6a1f56fddb9be30d33a0934e3189845b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520838"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661012"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
@@ -34,6 +34,24 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
 
 - [Nouveautés de Defender pour point de terminaison sur macOS](mac-whatsnew.md)
 - [Nouveautés de Defender pour point de terminaison sur iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Sep-2022 (build : 101.80.97 | Version de version : 30.122072.18097.0)</summary>
+
+&ensp;Publication : **14 septembre 2022**<br/>
+&ensp;Date de publication : **14 septembre 2022**<br/>
+&ensp;Build : **101.80.97**<br/>
+&ensp;Version de version : **30.122072.18097.0**<br/>
+&ensp;Version du moteur : **1.1.19300.3**<br/>
+&ensp;Version de signature : **1.369.395.0**<br/>
+
+**Nouveautés**
+
+- Corrige un blocage du noyau observé sur certaines charges de travail client exécutant mdatp version 101.75.43. Après l’analyse de la cause première, cela a été attribué à une condition de concurrence lors de la libération de la propriété d’un descripteur de fichier de capteur. La condition de concurrence a été exposée en raison d’un changement récent du produit dans le chemin d’arrêt. Les clients sur les versions de noyau plus récentes (5.1+) ne sont pas affectés par ce problème.
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Août 2022 (Build : 101.75.43 | Version de version : 30.122071.17543.0)</summary>

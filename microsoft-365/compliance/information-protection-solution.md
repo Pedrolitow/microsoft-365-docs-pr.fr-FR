@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - zerotrust-solution
 description: Des conseils pratiques pour déployer Microsoft Purview Information Protection dans votre organisation.
-ms.openlocfilehash: 4954680126bc4390f88c28819950032aab36348b
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
-ms.translationtype: HT
+ms.openlocfilehash: f1d358454e54a41c2cb20ec4dc31ec47db5d92a8
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069452"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663276"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Déployer une solution de protection des informations avec Microsoft Purview
 
@@ -108,4 +108,4 @@ Modules d’apprentissage pour les consultants et les administrateurs :
 
 Pour indiquer à vos utilisateurs comment appliquer et utiliser les étiquettes de confidentialité que vous configurez pour eux, consultez [Documentation de l’utilisateur final pour les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 
-Lorsque vous déployez des stratégies de protection contre la perte de données pour Teams, vous trouverez peut-être utiles les conseils suivants de l’utilisateur final en guise d’introduction à cette technologie avec certains messages potentiels qu’ils peuvent voir : [Messages Teams sur la protection sur la perte de données (DLP) et les stratégies de conformité des communications](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).
+Lorsque vous déployez des stratégies de protection contre la perte de données pour Teams, vous pouvez trouver utiles les conseils suivants pour les utilisateurs finaux en guise d’introduction à cette technologie avec certains messages potentiels qu’ils peuvent voir : [messages Teams sur la protection contre la perte de données (DLP) et les stratégies de conformité des communications](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).

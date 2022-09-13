@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_O365
 - Adm_NonTOC
 ms.custom:
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: 20816b8b-8b21-458f-81c1-320b8116597e
 ROBOTS: NOINDEX
 description: 'Découvrez comment vous inscrire à Office 365 avec votre adresse e-mail personnelle, si vous ne préférez pas ajouter un domaine personnalisé. '
-ms.openlocfilehash: 36815c3288b3e857d6de3e4a66816c0c06c456d4
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: dbb6d6e550b52781188708adf224ec2c8bf8118f
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086362"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660506"
 ---
 # <a name="signing-up-for-office-365-with-a-personal-email-address"></a>Inscription à Office 365 avec une adresse e-mail personnelle
 

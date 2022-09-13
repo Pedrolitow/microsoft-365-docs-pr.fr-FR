@@ -15,29 +15,29 @@ metadata:
   author: denisebmsft
   ms.author: deniseb
   ms.date: 08/26/2022
-  ms.openlocfilehash: 6f2216c4607f69f296bf4fc3f417f55b37197560
-  ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+  ms.openlocfilehash: 02dc3d9e500860e7542215501d562e05b12a03a2
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/27/2022
-  ms.locfileid: "67449978"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67664119"
 productDirectory:
   title: Productivité et sécurité avec Microsoft 365 Business Premium
   items:
   - title: Regarder
-    imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+    imageSrc: /office/media/icons/video-play.svg
     summary: Les cinq principaux avantages de Microsoft 365 Business Premium.
     url: https://aka.ms/M365BPvideo
   - title: Quelles sont les nouveautés ?
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    imageSrc: /office/media/icons/get-started-blue.svg
     summary: Découvrez les nouvelles fonctionnalités de Defender for Business dans Business Premium et Microsoft 365 Lighthouse.
     url: https://aka.ms/SMBsecurityFebBlog
   - title: Téléchargez gratuitement le kit de partenaires
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    imageSrc: /office/media/icons/education-tutorial-blue.svg
     summary: Recommandations pratiques et ressources de commercialisation des partenaires pour sécuriser le travail hybride.
     url: https://aka.ms/SMBSecurityKit
   - title: Participer à la série de webinaires partenaires
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    imageSrc: /office/media/icons/education-tutorial-blue.svg
     summary: Découvrez comment augmenter la vente et développer votre activité avec Microsoft 365 Business Premium, Microsoft Defender pour les PME et Microsoft 365 Lighthouse.
     url: https://aka.ms/M365MDBseries
 conceptualContent:
@@ -113,7 +113,7 @@ conceptualContent:
     - url: https://partner.microsoft.com
       itemType: overview
       text: Microsoft Partner Network
-    - url: https://docs.microsoft.com/partner-center/overview
+    - url: /partner-center/overview
       itemType: overview
       text: Démarrage avec Espace partenaires
   - title: Protéger les appareils

@@ -7,18 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.service: microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
-description: Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 45c09b30d09676e67da9fa1089a13f7627437905
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+description: Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc dans les environnements GCC.
+ms.openlocfilehash: 2f473e7334d664d5d369e25164095ca0d3e0149b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595744"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664488"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-environments"></a>Gérer les clients pour le tableau blanc Microsoft dans les environnements GCC
 
@@ -31,7 +30,7 @@ Les clients tableau blanc sont en cours de mise à jour pour prendre en charge O
 
 Les clients suivants sont actuellement pris en charge dans le Tableau blanc :
 
-- Application web tableau blanc autonome à l’adresse [https://whiteboard.office365.us](https://whiteboard.office365.us)
+- Application web tableau blanc autonome à l’adresse [https://whiteboard.office.com](https://whiteboard.office.com)
 - Réunions, conversations et canaux Microsoft Teams à l’aide du bureau et du web Teams
 - Application tableau blanc autonome pour mobile
 - Applications de tableau blanc autonomes pour Windows 10

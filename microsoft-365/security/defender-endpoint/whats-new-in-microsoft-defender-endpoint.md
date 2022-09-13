@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 1aa80af7ff13f1ec5eccf207042458adae5c9208
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+ms.openlocfilehash: 131fb7dfc4894b62428ed67fa41e48bedaa0c603
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652389"
+ms.locfileid: "67661890"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -141,7 +141,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 ## <a name="august-2021"></a>Août 2021
 
-- (Préversion) [Microsoft Defender pour point de terminaison plan 1 ](defender-endpoint-plan-1.md) <br/>Defender pour point de terminaison Plan 1 (préversion) est une solution de protection des points de terminaison qui inclut la protection de nouvelle génération, la réduction de la surface d’attaque, la gestion et la création de rapports centralisées, ainsi que des API. Defender pour point de terminaison Plan 1 (préversion) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, qui ont Microsoft 365 E3 et qui n’ont pas encore Microsoft 365 E5. 
+- (Préversion) [plan Microsoft Defender pour point de terminaison 1](defender-endpoint-plan-1.md) <br/>Defender pour point de terminaison Plan 1 (préversion) est une solution de protection des points de terminaison qui inclut la protection de nouvelle génération, la réduction de la surface d’attaque, la gestion et la création de rapports centralisées, ainsi que des API. Defender pour point de terminaison Plan 1 (préversion) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, qui ont Microsoft 365 E3 et qui n’ont pas encore Microsoft 365 E5. 
 
    Pour en savoir plus, consultez [Microsoft Defender pour point de terminaison Plan 1 (préversion).](defender-endpoint-plan-1.md) Les fonctionnalités [existantes de Defender pour point de terminaison](microsoft-defender-endpoint.md) seront appelées Defender pour point de terminaison Plan 2. 
 - (Préversion) [Filtrage de contenu web](web-content-filtering.md)<br>  Le filtrage de contenu web fait partie des fonctionnalités de protection web dans Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de réglementer l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Gérez et sécurisez les appareils mobiles connectés à votre organisation Microsoft 365 en configurant et en utilisant mobilité et sécurité de base.
-ms.openlocfilehash: c205ce6cc8b14017eae65f3cf1b74d78c89fd253
-ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.openlocfilehash: 0d36a12220e6e2c7aac1109309fb11b52ce5dd89
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/13/2022
-ms.locfileid: "67651444"
+ms.locfileid: "67663386"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 

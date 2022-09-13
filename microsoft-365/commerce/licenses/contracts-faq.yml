@@ -12,16 +12,16 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Forum aux questions sur les contrats de licence Microsoft 365.
-  ms.openlocfilehash: eb952324472e11bc541f972f324252a27d383655
-  ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+  ms.openlocfilehash: 2bfe08ca51aad01a6bb21bd2a7d3f34ae1a073d2
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/26/2022
-  ms.locfileid: "66991881"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67663626"
 title: Questions fréquentes sur les contrats
 summary: ''
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: >
       Pourquoi puis-je voir la liste des contrats ?
@@ -51,10 +51,10 @@ sections:
   - question: >
       Où sont mes contrats MPSA ?
     answer: >
-      les informations de licence Contrat de Fourniture de Produits et de Services Microsoft (MPSA) sont gérées dans microsoft [Business Center](https://businessaccount.microsoft.com/Customer) ou [Microsoft Store pour Entreprises](https://businessstore.microsoft.com/store). Aucune information MPSA n’est affichée dans cette liste de contrats. Pour en savoir plus sur MPSA, consultez [Licence en volume](https://www.microsoft.com/Licensing/MPSA/default.aspx).
+      Les informations de licence du Contrat de produits et services Microsoft (MPSA) sont gérées dans le [Centre d’affaires Microsoft](https://businessaccount.microsoft.com/Customer) ou [dans Microsoft Store pour Entreprises](https://businessstore.microsoft.com/store). Aucune information MPSA n’est affichée dans cette liste de contrats. Pour en savoir plus sur MPSA, consultez [Licence en volume](https://www.microsoft.com/Licensing/MPSA/default.aspx).
   - question: >
       Pourquoi certains ID de licence de mon organisation ne sont-ils pas affichés dans la liste ?
-    answer: "Un ID de licence s’affiche uniquement si l’utilisateur connecté a l’autorisation d’afficher les détails de l’ID de licence. L’autorisation d’afficher un ID de licence spécifique pour le compte de votre organisation est accordée si vous répondez à l’un des critères suivants :\n\n- Vous êtes répertorié en tant que contact pour les contrats dans un formulaire de programme de licence en volume légal. Les types de contacts incluent contact principal, Correspondant d’avis, Contact d’accès en ligne, Gestionnaire de logiciels Assurance, Gestionnaire de services en ligne ou Gestionnaire d’abonnements.\n- Vous êtes administrateur et avez accès aux contrats.\n\nPour plus d’informations sur les rôles d’autorisation de licence en volume et leurs actions autorisées, consultez la [FAQ sur les autorisations](https://docs.microsoft.com/licensing/permissions-faq). \n"
+    answer: "Un ID de licence s’affiche uniquement si l’utilisateur connecté a l’autorisation d’afficher les détails de l’ID de licence. L’autorisation d’afficher un ID de licence spécifique pour le compte de votre organisation est accordée si vous répondez à l’un des critères suivants :\n\n- Vous êtes répertorié en tant que contact pour les contrats dans un formulaire de programme de licence en volume légal. Les types de contacts incluent contact principal, Correspondant d’avis, Contact d’accès en ligne, Gestionnaire de logiciels Assurance, Gestionnaire de services en ligne ou Gestionnaire d’abonnements.\n- Vous êtes administrateur et avez accès aux contrats.\n\nPour plus d’informations sur les rôles d’autorisation de licence en volume et leurs actions autorisées, consultez la [FAQ sur les autorisations](/licensing/permissions-faq). \n"
   - question: >
       Combien de temps faut-il pour que les nouvelles commandes de licence apparaissent dans la liste des contrats ?
     answer: >
@@ -148,4 +148,4 @@ sections:
       Les octrois de licences sont reflétés dans la liste des contrats et dans les téléchargements & clés. Dans la liste des produits, les produits reçus des licences sont affichés avec un astérisque (*) pour indiquer qu’ils ne faisaient pas partie de l’achat d’origine.
   - question: >
       Comment puis-je contacter Support Microsoft ?
-    answer: Pour contacter le support technique par téléphone ou par formulaire web, consultez [Contactez-nous](https://docs.microsoft.com/licensing/contact-us). Microsoft répond aux soumissions de formulaire web dans les 24 heures.
+    answer: Pour contacter le support technique par téléphone ou par formulaire web, consultez [Contactez-nous](/licensing/contact-us). Microsoft répond aux soumissions de formulaire web dans les 24 heures.

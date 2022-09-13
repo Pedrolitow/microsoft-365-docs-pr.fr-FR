@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365_Setup
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 description: Découvrez comment attribuer un compte d’utilisateur à chaque membre de l’équipe afin qu’il puisse disposer de licences Microsoft 365, d’informations d’identification de connexion et de boîtes aux lettres Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: cc928cff4f27585a978eadea2c173a0cd148be33
-ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.openlocfilehash: 4f96fb483ab38cc2ea20d80ba5e64592bf5c4c20
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/13/2022
-ms.locfileid: "67651466"
+ms.locfileid: "67662066"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
