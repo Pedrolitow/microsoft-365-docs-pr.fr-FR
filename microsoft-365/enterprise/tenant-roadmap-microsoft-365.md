@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Feuille de route pour configurer vos locataires pour Microsoft 365.
-ms.openlocfilehash: 5eed55d45e4b34962b08d236f8659cfd2cf209c1
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: d24d134c5ca74d1ddb47bcccead996fe0a914b0d
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940401"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652360"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route du locataire pour Microsoft 365
 
@@ -43,14 +43,14 @@ Pour planifier l’implémentation de votre locataire :
 - [Planifier la prise en charge des applications clientes](microsoft-365-client-support-certificate-based-authentication.md)
 - [Déterminer comment utiliser l’authentification moderne hybride](hybrid-modern-auth-overview.md)
 - [Planifier les mises à niveau d’Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)
-- [Comprendre l’isolation des locataires](/microsoft-365-isolation-in-microsoft-365?view=o365-worldwide&preserve-view=true)
+- [Comprendre l’isolation des locataires](/compliance/assurance/assurance-microsoft-365-isolation-controls#tenant-isolation)
 
 ### <a name="deploy"></a>Déployer
 
 Pour déployer votre locataire : 
 
 - Ajoutez les [domaines DNS](../admin/setup/add-domain.md) pour votre organisation.
-- Utilisez les [guides d’installation dans le Centre d’administration Microsoft 365](setup-guides-for-microsoft-365.md).
+- Utilisez les [repères d’installation dans le Centre d'administration Microsoft 365](setup-guides-for-microsoft-365.md).
 - Créez votre [infrastructure d’identité](deploy-identity-solution-overview.md).
 
 ### <a name="move-a-tenants-geographic-locations"></a>Déplacer les emplacements géographiques d’un locataire
@@ -68,7 +68,7 @@ Pour en savoir plus, consultez [Microsoft 365 Multigéographie](microsoft-365-mu
 
 ## <a name="manage-multiple-microsoft-365-tenants"></a>Gérer plusieurs locataires Microsoft 365 
 
-Bien qu’il soit idéal d’avoir un seul locataire pour votre oganisation, vous pouvez être l’une des nombreuses organisations qui ont plusieurs locataires. Il peut s’agir de fusions et d’acquisitions, d’une isolation administrative ou d’une informatique décentralisée.
+Bien qu’il soit idéal d’avoir un seul locataire pour votre organisation, vous pouvez être l’une des nombreuses organisations qui ont plusieurs locataires. Il peut s’agir de fusions et d’acquisitions, d’une isolation administrative ou d’une informatique décentralisée.
 
 Si vous avez plusieurs locataires Microsoft 365, consultez ces articles pour plus d’informations sur les éléments suivants :
 

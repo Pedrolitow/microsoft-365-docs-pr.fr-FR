@@ -11,19 +11,19 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/06/2022
+ms.date: 09/12/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: ae828a6437849de86ea23b52397d0541e9d821d2
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 1aa80af7ff13f1ec5eccf207042458adae5c9208
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613491"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652389"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -64,6 +64,10 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 ## <a name="september-2022"></a>Septembre 2022
 
 - [Les rapports d’intégrité des appareils sont désormais en disponibilité générale](machine-reports.md). <br/>Le rapport d’intégrité des appareils fournit des informations générales sur l’intégrité et la sécurité de vos points de terminaison. Le rapport inclut des informations de tendance indiquant l’état d’intégrité du capteur, l’état de l’antivirus, les plateformes de système d’exploitation, les versions Windows 10 et les versions de mise à jour de l’antivirus Microsoft Defender.
+- [Le mode de résolution des problèmes](enable-troubleshooting-mode.md) est désormais disponible pour Windows Server 2012 machines R2 et 2016 exécutant la solution unifiée moderne. Pendant le mode de dépannage, utilisez-le `Set-MPPreference -DisableTamperProtection $true` pour désactiver temporairement la protection contre les falsifications sur votre appareil et apporter les modifications de configuration nécessaires. Avant d’utiliser le mode de résolution des problèmes, vérifiez que tous les composants suivants sont à jour :
+   - Sense version 10.8049.22439.1084 (KB5005292) ou ultérieure
+   - Antivirus Microsoft Defender - Plateforme : 4.18.2207.7 (KB4052623) ou version ultérieure 
+   - Antivirus Microsoft Defender - Moteur : 1.1.19500.2 (KB2267602) ou version ultérieure
 
 ## <a name="august-2022"></a>Août 2022
 

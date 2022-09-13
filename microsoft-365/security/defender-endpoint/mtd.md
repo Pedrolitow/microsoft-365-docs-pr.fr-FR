@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 0f94cab9a414a2d5dc8343ff01cd4dcb10636ef2
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 28f5ea1f30567622e176ad20058f6f1674edba5c
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578077"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652448"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender pour point de terminaison - Mobile Threat Defense
 
@@ -41,8 +41,6 @@ Microsoft Defender pour point de terminaison sur Android et iOS est notre **solu
 
 Microsoft Defender pour point de terminaison sur Android et iOS fournit les fonctionnalités clés ci-dessous. Pour plus d’informations sur les dernières fonctionnalités et avantages, consultez nos [annonces](https://aka.ms/mdeblog).
 
-<br>
-
 |Fonctionnalité|Description|
 |---|---|
 |Web Protection|Anti-hameçonnage, blocage des connexions réseau non sécurisées et prise en charge des indicateurs personnalisés.|
@@ -50,13 +48,12 @@ Microsoft Defender pour point de terminaison sur Android et iOS fournit les fonc
 |Détection jailbreak (iOS uniquement)|Détection d’appareils jailbreakés.|
 |Gestion des vulnérabilités Microsoft Defender (MDVM) |Évaluation des vulnérabilités des appareils mobiles intégrés. Visitez cette [page](next-gen-threat-and-vuln-mgt.md) pour en savoir plus sur Gestion des vulnérabilités Microsoft Defender dans Microsoft Defender pour point de terminaison. *Notez que sur iOS, seules les vulnérabilités de système d’exploitation sont prises en charge dans cette préversion.*|
 |Protection réseau *(préversion publique)*| Protection contre les menaces Wi-Fi non autorisées et les certificats non autorisés; possibilité d’autoriser la liste des certificats d’autorité de certification racine racine et privés dans Intune ; établir une confiance avec les points de terminaison.|
-|Alertes unifiées|Alertes de toutes les plateformes dans la console de sécurité M365 unifiée|
-|Accès conditionnel, lancement conditionnel|Empêcher les appareils à risque d’accéder aux ressources d’entreprise. Les signaux de risque Defender pour point de terminaison peuvent également être ajoutés aux stratégies de protection des applications (MAM)|
-|Contrôles de confidentialité. En préversion (voir la note ci-dessous)|Configurez la confidentialité dans les rapports sur les menaces en contrôlant les données envoyées par Microsoft Defender pour point de terminaison. *Notez que les contrôles de confidentialité sont actuellement disponibles uniquement pour les appareils inscrits. Les contrôles pour les appareils non inscrits seront ajoutés ultérieurement*|
+|Alertes unifiées|Alertes de toutes les plateformes dans la console de sécurité M365 unifiée.|
+|Accès conditionnel, lancement conditionnel|Empêcher les appareils à risque d’accéder aux ressources d’entreprise. Les signaux de risque Defender pour point de terminaison peuvent également être ajoutés aux stratégies de protection des applications (MAM).|
+|Contrôles de confidentialité|Configurez la confidentialité dans les rapports sur les menaces en contrôlant les données envoyées par Microsoft Defender pour point de terminaison. Des contrôles de confidentialité sont disponibles pour l’administrateur et les utilisateurs finaux. Il est également présent pour les appareils inscrits et non inscrits.|
 |Intégration à Microsoft Tunnel|Peut s’intégrer à Microsoft Tunnel, une solution de passerelle VPN pour activer la sécurité et la connectivité dans une seule application. Disponible sur Android et désormais en disponibilité générale sur iOS également.|
 
 Toutes ces fonctionnalités sont disponibles pour Microsoft Defender pour point de terminaison titulaires de licence. Pour plus d’informations, consultez [Les exigences en matière de licences](minimum-requirements.md#licensing-requirements).
-
 
 ## <a name="overview-and-deploy"></a>Vue d’ensemble et déploiement
 
@@ -78,7 +75,7 @@ Le tableau suivant récapitule comment déployer Microsoft Defender pour point d
 |--------------------|-------------|
 |Android Enterprise avec Intune Endpoint Manager unifiée (Microsoft Endpoint Manager)|[Déployer sur des appareils Android Entreprise inscrits](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
 |Administrateur d’appareil avec Intune Endpoint Manager unifiée (Microsoft Endpoint Manager)|[Déployer sur des appareils inscrits par l’administrateur d’appareil](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
-|Appareils BYOD OR non managés gérés par d’autres Gestionnaires de points de terminaison unifiés / Stratégie de protection des applications d’installation (MAM)|[Configurer les signaux de risque Defender dans la stratégie de protection des applications (MAM)](android-configure-mam.md)|
+|Appareils BYOD OR non managés gérés par d’autres Gestionnaires de points de terminaison unifiés / Configurer une stratégie de protection des applications (MAM)|[Configurer les signaux de risque Defender dans la stratégie de protection des applications (MAM)](android-configure-mam.md)|
 
 **iOS**
 
@@ -86,7 +83,7 @@ Le tableau suivant récapitule comment déployer Microsoft Defender pour point d
 |--------------------|-------------|
 |Appareils supervisés avec Intune Endpoint Manager unifiée (Microsoft Endpoint Manager)|1. [Déployer en tant qu’application du Store iOS](ios-install.md)<br/>2. [Configurer la protection web sans VPN pour les appareils iOS supervisés](ios-install.md#complete-deployment-for-supervised-devices)|
 |Appareils non supervisés (BYOD) inscrits auprès de Intune UEM (Microsoft Endpoint Manager)|[Déployer en tant qu’application du Store iOS](ios-install.md)|
-|Appareils BYOD OR non managés gérés par d’autres uems / Stratégie de protection des applications de configuration (MAM)|[Configurer les signaux de risque Defender dans la stratégie de protection des applications (MAM)](ios-install-unmanaged.md)|
+|Appareils BYOD OR non managés gérés par d’autres uems / Configurer la stratégie de protection des applications (MAM)|[Configurer les signaux de risque Defender dans la stratégie de protection des applications (MAM)](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Intégration des utilisateurs finaux
 

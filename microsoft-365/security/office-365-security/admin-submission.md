@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails légitimes bloqués, des e-mails suspects, des e-mails suspects de hameçonnage, du courrier indésirable, d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9a2620df6f7cb6eba490fba289c019240e172679
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 9013f8c336ec7179c3934d6e352afc1b8a862461
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643958"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652426"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL, des e-mails légitimes bloqués et des pièces jointes à Microsoft
 
@@ -291,7 +291,8 @@ Après quelques instants, une entrée d’autorisation s’affiche sous l’ongl
 
    - **Sélectionnez le type de soumission** : vérifiez que **l’URL** de la valeur est sélectionnée.
 
-   - **URL** : entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html`), puis sélectionnez-la dans la zone qui s’affiche.
+   - **URL** : entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html`), puis sélectionnez-la dans la zone qui s’affiche. Vous pouvez également fournir un domaine de niveau supérieur (par exemple), `https://www.fabrikam.com/*`puis le sélectionner dans la zone qui s’affiche. 
+
 
    - **Sélectionnez une raison pour l’envoi à Microsoft** : La sélection **ne doit pas avoir été bloquée (Faux positif),** puis configurez les paramètres suivants :
 

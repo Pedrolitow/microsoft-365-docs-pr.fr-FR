@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: a40f5074b2e9caf85eeda01e8061c9b5fcaca6d2
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: da6124fcce55bc8fe0f40158f9849a0fd02b40e1
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522122"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652485"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS
 
@@ -194,7 +194,7 @@ Les clients peuvent désormais activer le contrôle de confidentialité pour le 
 
 1. **Contrôles de confidentialité des utilisateurs finaux** Ces contrôles aident l’utilisateur final à configurer les informations partagées avec son organisation.
     - Pour les appareils supervisés, les contrôles de l’utilisateur final ne sont pas visibles. Administration décide et contrôle les paramètres.
-    - Toutefois, pour les appareils non supervisés, le contrôle s’affiche sous **Paramètres-> Confidentialité**
+    - Toutefois, pour les appareils non supervisés, le contrôle s’affiche sous **paramètres > confidentialité**
         - Les utilisateurs verront un bouton bascule pour les **informations de site non sécurisées**.
         - Ce bouton bascule est visible uniquement si Administration a défini **DefenderExcludeURLInReport = true**
         - S’il est activé par Administration, les utilisateurs peuvent décider s’ils souhaitent envoyer ou non les informations de site non sécurisées à leur organisation.
@@ -205,7 +205,7 @@ L’activation ou la désactivation des contrôles de confidentialité ci-dessus
 
 ## <a name="optional-permissions"></a>Autorisations facultatives
 
-Microsoft Defender pour point de terminaison sur iOS active les **autorisations facultatives** dans le flux d’intégration. Actuellement, les autorisations requises par MDE sont obligatoires dans le flux d’intégration. Avec cette fonctionnalité, l’administrateur peut déployer MDE sur des appareils BYOD sans appliquer **l’autorisation VPN** obligatoire lors de l’intégration. Les utilisateurs finaux peuvent intégrer l’application sans les autorisations obligatoires et passer en revue ultérieurement ces autorisations. Cette fonctionnalité est actuellement présente uniquement pour les appareils inscrits (GPM).
+Microsoft Defender pour point de terminaison sur iOS active les **autorisations facultatives** dans le flux d’intégration. Actuellement, les autorisations requises par Defender pour point de terminaison sont obligatoires dans le flux d’intégration. Avec cette fonctionnalité, les administrateurs peuvent déployer Defender pour point de terminaison sur des appareils BYOD sans appliquer **l’autorisation VPN** obligatoire lors de l’intégration. Les utilisateurs finaux peuvent intégrer l’application sans les autorisations obligatoires et passer en revue ultérieurement ces autorisations. Cette fonctionnalité est actuellement présente uniquement pour les appareils inscrits (GPM).
 
 ### <a name="configure-optional-permission"></a>Configurer l’autorisation facultative
 
@@ -230,7 +230,7 @@ Microsoft Defender pour point de terminaison sur iOS active les **autorisations 
     - Plus tard, l’utilisateur peut activer l’application `Web Protection` à partir de l’application. Cela permet d’installer la configuration VPN sur l’appareil.
 
 > [!NOTE]
->**L’autorisation facultative** est différente de **Désactiver la protection web**. L’autorisation VPN facultative permet uniquement d’ignorer l’autorisation pendant l’intégration, mais elle est disponible pour que l’utilisateur final puisse l’examiner et l’activer ultérieurement. La **désactivation de la protection web** permet aux utilisateurs d’intégrer l’application MDE sans la protection web. Il ne peut pas être activé ultérieurement.
+>**L’autorisation facultative** est différente de **Désactiver la protection web**. L’autorisation VPN facultative permet uniquement d’ignorer l’autorisation pendant l’intégration, mais elle est disponible pour que l’utilisateur final puisse l’examiner et l’activer ultérieurement. La **désactivation de la protection web** permet aux utilisateurs d’intégrer l’application Defender pour point de terminaison sans protection web. Il ne peut pas être activé ultérieurement.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Configurer la stratégie de conformité sur les appareils jailbreakés
 
@@ -241,7 +241,7 @@ Pour empêcher l’accès aux données d’entreprise sur les appareils iOS jail
 
 Suivez les étapes ci-dessous pour créer une stratégie de conformité sur les appareils jailbreakés.
 
-1. Dans [le Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez à Stratégies de **conformité** ->  **des appareils** -> **Créer une stratégie**. Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer**.
+1. Dans [le Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez à Stratégies de **conformité** >  **des appareils** > **Créer une stratégie**. Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer**.
 
    :::image type="content" source="images/ios-jb-policy.png" alt-text="Onglet Créer une stratégie" lightbox="images/ios-jb-policy.png":::
 
@@ -266,6 +266,50 @@ Defender pour point de terminaison sur iOS permet également aux administrateurs
 > [!NOTE]
 > Defender pour point de terminaison sur iOS prend en charge la création d’indicateurs personnalisés uniquement pour les adresses IP et les URL/domaines.
 
+## <a name="configure-vulnerability-assessment-of-apps"></a>Configurer l’évaluation des vulnérabilités des applications
+
+>[!Note]
+>L’évaluation des vulnérabilités des applications sur Microsoft Defender pour point de terminaison pour iOS est désormais en préversion publique. Les informations suivantes concernent la préversion du produit qui peut être sensiblement modifiée avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici. Si vous souhaitez participer à la préversion, partagez votre nom de locataire et votre ID avec nous sur **mdatpmobile@microsoft.com**.
+
+Defender pour point de terminaison sur iOS prend en charge les évaluations des vulnérabilités des applications uniquement pour les appareils inscrits (GPM).
+
+Les administrateurs peuvent utiliser les étapes suivantes pour configurer l’évaluation des vulnérabilités des applications.
+
+### <a name="on-a-supervised-device"></a>Sur un appareil supervisé
+
+1. Vérifiez que l’appareil est configuré en [mode supervisé](ios-install.md#complete-deployment-for-supervised-devices).
+1. Pour activer la fonctionnalité dans le Centre d’administration [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez à **Endpoint Security** >  **Microsoft Defender pour point de terminaison** >  **Enable App Sync pour les appareils iOS/iPadOS**.
+
+     :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="Basculement de synchronisation d’application" lightbox="images/tvm-app-sync-toggle.png":::
+
+### <a name="on-an-unsupervised-device"></a>Sur un appareil non supervisé
+
+1. Pour activer la fonctionnalité dans le Centre d’administration [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez à **Endpoint Security** >  **Microsoft Defender pour point de terminaison** >  **Enable App Sync pour les appareils iOS/iPadOS**.
+
+   :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="Bascule de synchronisation d’application" lightbox="images/tvm-app-sync-toggle.png":::
+
+1. Pour obtenir la liste de toutes les applications, y compris les applications non gérées, activez le bouton bascule **Envoyer des données d’inventaire d’applications complètes sur les appareils de système d’exploitation iOS/iPad personnels**.
+
+    :::image type="content" source="images/tvm-full-app-data.png" alt-text="Données d’application complètes" lightbox="images/tvm-full-app-data.png":::
+
+1. Utilisez les étapes suivantes pour configurer le paramètre de confidentialité.
+    - Accédez aux stratégies  > **de configuration d’application** **d’applications** > **Pour ajouter** > **des appareils gérés**.
+    - Donnez un nom à la stratégie, **Platform** > **iOS/iPadOS**.
+    - Sélectionnez **Microsoft Defender pour point de terminaison** comme application cible.
+    - Dans la page Paramètres, sélectionnez Utiliser le concepteur de configuration et ajoutez **DefenderTVMPrivacyMode** comme clé et type valeur en tant que **chaîne**
+        - Pour désactiver la confidentialité et collecter la liste des applications installées, entrez la valeur `False` et attribuez cette stratégie aux utilisateurs. 
+        - Par défaut, cette valeur est définie pour `True` les appareils non supervisés.
+        - Pour les utilisateurs avec la clé définie comme `False`, Defender pour point de terminaison envoie la liste des applications installées sur l’appareil pour l’évaluation des vulnérabilités.
+    - Cliquez sur **Suivant** et affectez ce profil aux appareils/utilisateurs ciblés.
+    - L’activation ou la désactivation des contrôles de confidentialité ci-dessus n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel.
+1. Une fois la configuration appliquée, l’utilisateur final doit ouvrir l’application pour **approuver** le paramètre de confidentialité.
+    - L’écran d’approbation de la confidentialité s’affiche uniquement pour les appareils non supervisés.
+    - Uniquement si l’utilisateur final approuve la confidentialité, les informations de l’application sont envoyées à la console Defender pour point de terminaison.
+
+        :::image type="content" source="images/tvm-user-privacy.png" alt-text="Confidentialité TVM" lightbox="images/tvm-user-privacy.png":::
+
+Une fois que les versions clientes sont déployées sur des appareils iOS cibles, le traitement démarre. Les vulnérabilités détectées sur ces appareils commencent à s’afficher dans le tableau de bord Gestion des vulnérabilités Defender. Le traitement peut prendre quelques heures (au maximum 24 heures). En particulier pour la liste complète des applications à afficher dans l’inventaire logiciel.
+
 ## <a name="configure-option-to-send-in-app-feedback"></a>Configurer l’option pour envoyer des commentaires dans l’application
 
 Les clients ont désormais la possibilité de configurer la possibilité d’envoyer des données de commentaires à Microsoft dans l’application Defender pour point de terminaison. Les données de commentaires aident Microsoft à améliorer les produits et à résoudre les problèmes.
@@ -282,9 +326,9 @@ Utilisez les étapes suivantes pour configurer l’option permettant d’envoyer
 1. Sélectionnez **Microsoft Defender pour point de terminaison** comme application cible.
 
 1. Dans la page Paramètres, sélectionnez **Utiliser le concepteur de configuration** et ajoutez **DefenderSendFeedback** comme clé et type valeur **booléen**.
-   
+
    - Pour supprimer la possibilité pour les utilisateurs finaux de fournir des commentaires, définissez la valeur et `false` attribuez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur `true`. Pour les clients du gouvernement des États-Unis, la valeur par défaut est définie sur « false ».
-   
+
    - Pour les utilisateurs avec la clé définie comme `true`, il y aura une option pour envoyer des données de commentaires à Microsoft dans l’application (Menu > Aide & commentaires > Envoyer des commentaires à Microsoft)
 
 1. Cliquez sur **Suivant** et affectez ce profil aux appareils/utilisateurs ciblés.
