@@ -18,17 +18,17 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: Avant de pouvoir utiliser Microsoft 365 services avec votre appareil, vous devrez peut-être d’abord l’inscrire à Basic Mobility and Security pour Microsoft 365.
-ms.openlocfilehash: 714102cf252e4dc483794f4e4280420256bfb0c3
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Avant de pouvoir utiliser les services Microsoft 365 avec votre appareil, vous devrez peut-être d’abord l’inscrire dans Mobilité et sécurité de base pour Microsoft 365.
+ms.openlocfilehash: c507f307325cd8ac7245df80c0fa7afcef8e519d
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781136"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651379"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Inscrire votre appareil mobile à l’aide de la mobilité et de la sécurité de base
 
-L’utilisation de votre téléphone, tablette et autres appareils mobiles pour le travail est un excellent moyen de rester informé et de travailler sur des projets d’entreprise pendant que vous êtes absent du bureau. Avant de pouvoir utiliser Microsoft 365 services avec votre appareil, vous devrez peut-être d’abord l’inscrire à Basic Mobility and Security pour Microsoft 365 à l’aide de Microsoft Intune Portail d'entreprise.
+L’utilisation de votre téléphone, tablette et autres appareils mobiles pour le travail est un excellent moyen de rester informé et de travailler sur des projets d’entreprise pendant que vous êtes absent du bureau. Avant de pouvoir utiliser les services Microsoft 365 avec votre appareil, vous devrez peut-être d’abord l’inscrire à Basic Mobility and Security pour Microsoft 365 à l’aide de Microsoft Intune Portail d'entreprise.
 
 Les organisations choisissent Mobilité et sécurité de base afin que les employés puissent utiliser leurs appareils mobiles pour accéder en toute sécurité à la messagerie professionnelle, aux calendriers et aux documents, tandis que l’entreprise sécurise les données importantes et répond à leurs exigences de conformité. Pour en savoir plus, consultez [Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365](overview.md). Pour plus d’informations, consultez [quelles informations mon organisation peut-elle voir quand j’inscris mon appareil ?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)
 
@@ -37,18 +37,18 @@ Les organisations choisissent Mobilité et sécurité de base afin que les emplo
 
 ## <a name="supported-devices"></a>Appareils pris en charge
 
-La mobilité et la sécurité de base pour les Microsoft 365 hébergées par le service Intune fonctionnent avec la plupart des appareils mobiles, mais pas tous. Les éléments suivants sont pris en charge avec mobilité et sécurité de base :
+Mobilité et sécurité de base pour Microsoft 365 hébergé par le service Intune fonctionne avec la plupart des appareils mobiles, mais pas tous. Les éléments suivants sont pris en charge avec mobilité et sécurité de base :
 
 - iOS
 
 - Android
 
-- Windows 8.1 et Windows 10 (Téléphone et PC)
+- Windows 8.1 et Windows 10 (téléphone et PC)
 
 Si votre appareil n’est pas répertorié ci-dessus et que vous devez l’utiliser avec mobilité et sécurité de base, contactez votre administrateur professionnel ou scolaire.
 
 > [!TIP]
-> Si vous rencontrez des problèmes d’inscription de votre appareil, consultez [Résolution des problèmes de mobilité et de sécurité de base](troubleshoot.md).
+> Si vous rencontrez des problèmes d’inscription de votre appareil, consultez [Résolution des problèmes de mobilité et de sécurité de base](frequently-asked-questions.yml).
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Configurer votre appareil mobile avec Intune et mobilité et sécurité de base
 
@@ -70,14 +70,14 @@ Pour vous connecter et configurer votre téléphone ou tablette iOS avec le port
 
 Accédez au Google Play Store, puis téléchargez et installez Portail d'entreprise Intune.
 
-Pour vous connecter et configurer votre téléphone ou tablette Android avec le portail d’entreprise pour Microsoft 365, consultez [Inscrire votre appareil avec Portail d'entreprise](/mem/intune/user-help/enroll-device-android-company-portal).
+Pour vous connecter à Microsoft 365 et configurer votre téléphone ou tablette Android avec le portail d’entreprise, consultez [Inscrire votre appareil avec Portail d'entreprise](/mem/intune/user-help/enroll-device-android-company-portal).
 
 ### <a name="windows-81-and-windows-10"></a>Windows 8.1 et Windows 10
 
-Accédez à la Microsoft Store et téléchargez et installez Portail d'entreprise Intune
+Accédez au Microsoft Store et téléchargez et installez Portail d'entreprise Intune
 
-Pour vous connecter et configurer votre téléphone ou PC Windows avec le portail d’entreprise pour Microsoft 365, consultez [Windows’inscription d’appareil dans Portail d'entreprise Intune](/intune-user-help/windows-enrollment-company-portal).
+Pour vous connecter à Microsoft 365 et configurer votre téléphone Ou PC Windows avec le portail d’entreprise, consultez [l’inscription des appareils Windows dans Portail d'entreprise Intune](/intune-user-help/windows-enrollment-company-portal).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Une fois votre appareil inscrit à Basic Mobility and Security, vous pouvez commencer à utiliser Office applications sur votre appareil pour utiliser la messagerie, le calendrier, les contacts et les documents.
+Une fois votre appareil inscrit à Basic Mobility and Security, vous pouvez commencer à utiliser les applications Office sur votre appareil pour utiliser la messagerie, le calendrier, les contacts et les documents.

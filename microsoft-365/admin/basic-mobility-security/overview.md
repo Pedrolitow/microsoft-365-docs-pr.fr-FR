@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Gérez et sécurisez les appareils mobiles connectés à votre organisation Microsoft 365 en configurant et en utilisant mobilité et sécurité de base.
-ms.openlocfilehash: b49b02b37df615aafb87b2fc520737d4ad16d515
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c205ce6cc8b14017eae65f3cf1b74d78c89fd253
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084496"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651444"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
@@ -66,4 +66,3 @@ Si vous avez simplement besoin de gestion des applications mobiles (MAM), peut-�
 [Configurer la mobilité et la sécurité de base](set-up.md) (article)\
 [Inscrire votre appareil mobile à l’aide de la mobilité et de la sécurité de base](enroll-your-mobile-device.md) (article)\
 [Gérer les appareils inscrits dans Mobile Gestion des appareils pour Microsoft 365](manage-enrolled-devices.md) (article)\
-[Obtenir des détails sur les appareils gérés par mobilité et sécurité de base](get-details-about-managed-devices.md) (article)

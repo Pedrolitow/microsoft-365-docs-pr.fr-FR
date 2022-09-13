@@ -396,8 +396,6 @@
               href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
             - name: Gérer les paramètres d’accès aux appareils
               href: basic-mobility-security/manage-device-access-settings.md
-            - name: Obtenir des détails sur les appareils gérés
-              href: basic-mobility-security/get-details-about-managed-devices.md
             - name: Gérer les appareils inscrits
               href: basic-mobility-security/manage-enrolled-devices.md
             - name: Inscrire votre appareil mobile
@@ -410,8 +408,6 @@
               href: basic-mobility-security/wipe-mobile-device.md
             - name: Désactiver l’option Mobility et Security de base
               href: basic-mobility-security/turn-off.md
-            - name: Résoudre des problèmes
-              href: basic-mobility-security/troubleshoot.md
     - name: Basculer de Google Workspace vers Microsoft 365
       items:
         - name: Présentation

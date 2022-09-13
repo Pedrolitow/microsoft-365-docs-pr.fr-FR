@@ -31,16 +31,16 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte d’administrateur Microsoft 365 pour réinitialiser les mots de passe des utilisateurs lorsque vous disposez d’un abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 39dc2dfdc4a50e8e55ef919a438895c4cefd0ed7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8ae60825c411345afb756072f16b599dbdf042d3
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084650"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651313"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Réinitialiser les mots de passe dans Microsoft 365 pour les entreprises
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Cet article explique comment réinitialiser les mots de passe pour vous-même et pour vos utilisateurs lorsque vous disposez d’un abonnement Microsoft 365 pour les entreprises.
 
@@ -58,7 +58,7 @@ Vous devez être [administrateur général ou administrateur de mot de passe](ab
 
 ## <a name="watch-reset-a-business-password-for-a-user"></a>Regarder : Réinitialiser un mot de passe professionnel pour un utilisateur
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
@@ -82,6 +82,16 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 ## <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
 Nous vous recommandons vivement de configurer la réinitialisation du mot de passe libre-service. Ainsi, vous n'êtes pas tenu de réinitialiser manuellement les mots de passe de vos utilisateurs. Moins de travail pour vous ! Pour savoir comment procéder, voir [Autoriser les utilisateurs à réinitialiser leur mot de passe dans Office 365](let-users-reset-passwords.md).
+
+## <a name="resend-user-password"></a>Renvoyer le mot de passe utilisateur
+  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+
+2. Dans la page **Utilisateurs actifs** , sélectionnez l’utilisateur, puis **sélectionnez Réinitialiser le mot de passe**.
+
+3. Suivez les instructions de la page **Réinitialiser le mot de passe** pour générer automatiquement un nouveau mot de passe pour l’utilisateur ou en créer un pour lui, puis sélectionnez **Réinitialiser**.  
+
+4. Entrez une adresse e-mail à laquelle l’utilisateur peut accéder, afin qu’il reçoive le nouveau mot de passe et effectue un suivi avec lui pour s’assurer qu’il l’a obtenu.
 
 ## <a name="reset-my-admin-password"></a>Réinitialiser mon mot de passe d’administrateur
 
@@ -130,6 +140,24 @@ Pour obtenir des informations de vue d’ensemble, consultez [Gérer Microsoft 3
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forcer la modification du mot de passe de tous les utilisateurs au sein de votre entreprise
 
 Lisez ce billet de blog intéressant rédigé par Vasil Michev, MVP Microsoft : [Forcer la modification du mot de passe pour tous les utilisateurs dans Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
+
+## <a name="set-strong-passwords"></a>Définir des mots de passe forts
+
+1. [Connexion à Microsoft 365 à l’aide de PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+
+2. À l’aide de PowerShell, vous pouvez désactiver les exigences de mot de passe fortes pour tous les utilisateurs à l’aide de la commande suivante :
+
+    ```powershell
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+
+3. You can turn **OFF** strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    ```
+
+> [!NOTE]
+> UserPrincipalName doit être au format de connexion de style Internet, où le nom d’utilisateur est suivi du signe au début (@) et d’un nom de domaine. Par exemple : user@contoso.com.
   
 ## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Je n’ai pas d’abonnement Microsoft 365 pour les entreprises
 
