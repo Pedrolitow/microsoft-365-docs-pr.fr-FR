@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 10/2/2019
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,20 +19,20 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contient des liens vers d’autres articles qui vous indiquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online.
-ms.openlocfilehash: 196dbb502c813ec0f877069008d4c90494170665
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5cd50fb409a1da255dc1b6ce9e794ddbc09f910d
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099122"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671916"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimisation des performances SharePoint Online
 
 Cet article contient des liens vers d’autres articles qui vous indiquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online. Cet article fait partie de la [planification réseau et de l’optimisation des performances pour Office 365](./network-planning-and-performance.md) projet.
 
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articles sur le réglage fin SharePoint les performances en ligne
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articles sur l’optimisation fine des performances de SharePoint Online
 
-Utilisez ces articles pour affiner SharePoint performances en ligne.
+Utilisez ces articles pour affiner les performances de SharePoint Online.
   
 - [Introduction à l’optimisation des performances pour SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 
@@ -60,12 +60,12 @@ Utilisez ces articles pour affiner SharePoint performances en ligne.
 
 - [Procédure : éviter les limitations ou les blocages dans SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
-- [Optimiser les iFrames dans SharePoint pages du portail moderne En ligne](modern-iframe-optimization.md)
+- [Optimiser les iFrames dans les pages du portail moderne SharePoint Online](modern-iframe-optimization.md)
 
-- [Optimiser les performances des composants WebPart dans SharePoint pages du portail moderne en ligne](modern-web-part-optimization.md)
+- [Optimiser les performances des composants WebPart dans les pages du portail moderne SharePoint Online](modern-web-part-optimization.md)
 
-- [Optimiser les appels de page dans SharePoint pages du portail moderne en ligne](modern-page-call-optimization.md)
+- [Optimiser les appels de page dans les pages du portail moderne SharePoint Online](modern-page-call-optimization.md)
 
-- [Optimiser le poids des pages dans SharePoint pages du portail moderne en ligne](modern-page-weight-optimization.md)
+- [Optimiser le poids des pages dans les pages du portail moderne SharePoint Online](modern-page-weight-optimization.md)
 
-- [Optimiser les images dans SharePoint pages du portail moderne en ligne](modern-image-optimization.md)
+- [Optimiser les images dans les pages du portail moderne SharePoint Online](modern-image-optimization.md)
