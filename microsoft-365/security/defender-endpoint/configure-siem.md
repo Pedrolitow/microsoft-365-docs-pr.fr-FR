@@ -3,7 +3,7 @@ title: Intégrer vos outils SIEM à Microsoft Defender pour point de terminaison
 description: Découvrez comment ingérer des incidents et des alertes et intégrer des outils SIEM.
 keywords: configurer des siems, des informations de sécurité et des outils de gestion des événements, splunk, arcsight, indicateurs personnalisés, api rest, définitions d’alertes, indicateurs de compromission
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3bdb35b4251725dc4b2e69fc077d0edf29693cef
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.subservice: mde
+ms.openlocfilehash: b00a9f02f4cd370985dfa5c094c6be36aa34ab1e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020558"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679512"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Intégrer vos outils SIEM à Microsoft Defender pour point de terminaison
 
@@ -40,7 +40,7 @@ ms.locfileid: "67020558"
 
 Microsoft Defender pour point de terminaison prend en charge les outils SIEM (Security Information and Event Management) qui ingèrent des informations à partir de votre locataire d’entreprise dans Azure Active Directory (AAD) à l’aide du protocole d’authentification OAuth 2.0 pour une application AAD inscrite représentant la solution ou le connecteur SIEM spécifique installé dans votre environnement.
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Microsoft Defender pour point de terminaison licence et conditions d’utilisation des API](api-terms-of-use.md) 
 - [Accéder aux API Microsoft Defender pour point de terminaison](apis-intro.md)

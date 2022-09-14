@@ -4,7 +4,8 @@ description: Découvrez comment configurer Microsoft 365 Defender pour diffuser 
 keywords: exportation de données brutes, API de streaming, API, Event Hubs, stockage Azure, compte de stockage, repérage avancé, partage de données brutes
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0f5195e5a74395073267fd4df87f077c6a1d5f20
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 2fe59f16887075c590de555be796842f58b50247
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530573"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678710"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft 365 Defender pour diffuser en continu des événements advanced hunting vers votre compte de stockage
 
@@ -112,7 +112,7 @@ Pour obtenir les types de données pour nos propriétés d’événements, proc�
 
 Vous pouvez surveiller les ressources créées par l’API de streaming à l’aide **d’Azure Monitor**. Pour plus d’informations, consultez [Destinations monitor - Azure Monitor | Microsoft Docs](/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble de la chasse avancée](../defender/advanced-hunting-overview.md)
 - [API de diffusion en continu Microsoft 365 Defender](streaming-api.md)

@@ -1,9 +1,9 @@
 ---
-title: Exécutez et personnalisez des analyses programmées et à la demande.
-description: Personnaliser et lancer Antivirus Microsoft Defender analyses sur les points de terminaison sur votre réseau
-keywords: analyser, planifier, personnaliser, exclusions, exclure des fichiers, correction, résultats de l’analyse, mise en quarantaine, supprimer une menace, analyse rapide, analyse complète, Antivirus Microsoft Defender
+title: Exécutez et personnalisez les analyses planifiées et à la demande.
+description: Personnaliser et lancer des analyses antivirus Microsoft Defender sur des points de terminaison sur votre réseau
+keywords: analyse, planification, personnalisation, exclusions, exclure des fichiers, correction, résultats de l’analyse, quarantaine, suppression des menaces, analyse rapide, analyse complète, Antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,17 +14,17 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9acac2868b0bd2449338f4a61f663d8cfe8a8ee4
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: a250e39b04b621be90fce001a8154f54cc6d9ddb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218249"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680282"
 ---
-# <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Personnaliser, lancer et passer en revue les résultats des analyses et Antivirus Microsoft Defender correction
+# <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Personnaliser, lancer et passer en revue les résultats des analyses et des corrections de l’Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,15 +34,15 @@ ms.locfileid: "61218249"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Vous pouvez utiliser la stratégie de groupe, PowerShell et Windows Management Instrumentation (WMI) pour configurer Antivirus Microsoft Defender analyses. 
+Vous pouvez utiliser stratégie de groupe, PowerShell et Windows Management Instrumentation (WMI) pour configurer les analyses antivirus Microsoft Defender. 
 
 ## <a name="in-this-section"></a>Dans cette section
 
 Rubrique | Description
 ---|---
-[Configurer et valider des exclusions de fichiers, de dossiers et de fichiers ouverts par processus dans Antivirus Microsoft Defender analyses](configure-exclusions-microsoft-defender-antivirus.md) | Vous pouvez exclure les fichiers (y compris les fichiers modifiés par des processus spécifiés) et les dossiers des analyses à la demande, des analyses programmées et de l’analyse et de l’analyse de la protection en temps réel toujours en temps réel
-[Configurer les options d’analyse de l’antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md) | Vous pouvez configurer Antivirus Microsoft Defender pour inclure certains types de fichiers de stockage de courrier électronique, des points de stockage ou d’analyse, ainsi que des fichiers archivés (tels que des fichiers .zip) dans les analyses. Vous pouvez également activer l’analyse des fichiers réseau
-[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md) | Configurer ce que Antivirus Microsoft Defender doit faire lorsqu’il détecte une menace et combien de temps les fichiers mis en quarantaine doivent être conservés dans le dossier de mise en quarantaine
-[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) | Configurer des analyses périodiques (programmées), notamment quand elles doivent s’exécuter et s’ils s’exécutent en tant qu’analyses complètes ou rapides
-[Configurer et exécuter des analyses](run-scan-microsoft-defender-antivirus.md) | Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows appl.
-[Passer en revue les résultats de l’analyse](review-scan-results-microsoft-defender-antivirus.md) | Passer en revue les résultats des analyses à l’aide Microsoft Endpoint Configuration Manager, Microsoft Intune ou l’application Sécurité Windows de données
+[Configurer et valider les exclusions de fichiers, de dossiers et de fichiers ouverts par le processus dans les analyses antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md) | Vous pouvez exclure les fichiers (y compris les fichiers modifiés par des processus spécifiés) et les dossiers des analyses à la demande, des analyses planifiées et de la surveillance et de l’analyse de la protection en temps réel always-on
+[Configurer les options d’analyse de l’antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md) | Vous pouvez configurer l’Antivirus Microsoft Defender pour inclure certains types de fichiers de stockage de messagerie, de points de sauvegarde ou d’analyse, ainsi que des fichiers archivés (tels que des fichiers .zip) dans les analyses. Vous pouvez également activer l’analyse des fichiers réseau
+[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md) | Configurer ce que l’Antivirus Microsoft Defender doit faire lorsqu’il détecte une menace et la durée pendant laquelle les fichiers mis en quarantaine doivent être conservés dans le dossier de quarantaine
+[Configurer les analyses planifiées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) | Configurer des analyses périodiques (planifiées), notamment quand elles doivent s’exécuter et si elles s’exécutent en tant qu’analyses complètes ou rapides
+[Configurer et exécuter des analyses](run-scan-microsoft-defender-antivirus.md) | Exécuter et configurer des analyses à la demande à l’aide de PowerShell, de Windows Management Instrumentation ou individuellement sur des points de terminaison avec l’application Sécurité Windows
+[Examiner les résultats de l’analyse](review-scan-results-microsoft-defender-antivirus.md) | Passez en revue les résultats des analyses à l’aide de Microsoft Endpoint Configuration Manager, Microsoft Intune ou l’application Sécurité Windows

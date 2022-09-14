@@ -2,7 +2,7 @@
 title: Intégrer des appareils à Microsoft Defender pour point de terminaison
 description: Suivez l’intégration des appareils gérés par Intune pour Microsoft Defender pour point de terminaison et augmenter le taux d’intégration.
 keywords: intégration, gestion Intune, Microsoft Defender pour point de terminaison, Microsoft Defender, Windows Defender, gestion de la configuration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1e77f404b70ee770bd4d5c441362739cc7b2f13c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.subservice: mde
+ms.openlocfilehash: 8a4a97e082e0f3b6d129e8c1bf86c6918de29b89
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622951"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678600"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Intégrer des appareils à Microsoft Defender pour point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "65622951"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Chaque appareil intégré ajoute un capteur de protection évolutive des points de terminaison (PEPT) supplémentaire et augmente la visibilité sur l’activité de violation dans votre réseau. L’intégration garantit également qu’un appareil peut être vérifié pour les composants vulnérables ainsi que les problèmes de configuration de sécurité et peut recevoir des actions de correction critiques pendant les attaques.
+Chaque appareil intégré ajoute un capteur de détection et de réponse de point de terminaison supplémentaire (EDR) et augmente la visibilité sur l’activité de violation dans votre réseau. L’intégration garantit également qu’un appareil peut être vérifié pour les composants vulnérables ainsi que les problèmes de configuration de sécurité et peut recevoir des actions de correction critiques pendant les attaques.
 
 Avant de pouvoir suivre et gérer l’intégration des appareils :
 
@@ -44,7 +44,7 @@ Regardez cette vidéo pour découvrir comment intégrer facilement des clients �
 
 ## <a name="discover-and-track-unprotected-devices"></a>Découvrir et suivre les appareils non protégés
 
-La carte **d’intégration** fournit une vue d’ensemble générale de votre taux d’intégration en comparant le nombre d’appareils Windows qui ont réellement intégrés à Defender pour point de terminaison par rapport au nombre total d’appareils Windows gérés par Intune.
+La carte **d’intégration** fournit une vue d’ensemble générale de votre taux d’intégration en comparant le nombre d’appareils Windows qui ont réellement été intégrés à Defender pour point de terminaison par rapport au nombre total d’appareils Windows gérés par Intune.
 
 :::image type="content" source="images/secconmgmt_onboarding_card.png" alt-text="Carte d’intégration de la gestion de la configuration des appareils" lightbox="images/secconmgmt_onboarding_card.png":::
 
@@ -55,7 +55,7 @@ La carte **d’intégration** fournit une vue d’ensemble générale de votre t
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Intégrer davantage d’appareils avec des profils Intune
 
-Defender pour point de terminaison offre plusieurs options pratiques pour [l’intégration Windows appareils](onboard-configure.md). Toutefois, pour les appareils gérés par Intune, vous pouvez tirer parti de Intune profils pour déployer facilement le capteur Defender pour point de terminaison pour sélectionner des appareils, ce qui permet d’intégrer efficacement ces appareils au service.
+Defender pour point de terminaison offre plusieurs options pratiques pour [l’intégration d’appareils Windows](onboard-configure.md). Toutefois, pour les appareils gérés par Intune, vous pouvez tirer parti de Intune profils pour déployer facilement le capteur Defender pour point de terminaison pour sélectionner des appareils, ce qui permet d’intégrer efficacement ces appareils au service.
 
 Dans la carte **d’intégration**, sélectionnez **Intégrer d’autres appareils** pour créer et affecter un profil sur Intune. Le lien vous dirige vers la page de conformité de l’appareil sur Intune, qui fournit une vue d’ensemble similaire de votre état d’intégration.
 
@@ -64,7 +64,7 @@ Dans la carte **d’intégration**, sélectionnez **Intégrer d’autres apparei
 *Microsoft Defender pour point de terminaison page de conformité des appareils sur la gestion des appareils Intune*
 
 > [!TIP]
-> Vous pouvez également accéder à la page de conformité d’intégration Defender pour point de terminaison dans le [portail Microsoft Azure](https://portal.azure.com/) à partir de **Tous les services > Intune > conformité des appareils > Microsoft Defender ATP**.
+> Vous pouvez également accéder à la page de conformité d’intégration Defender pour point de terminaison dans microsoft [Portail Azure](https://portal.azure.com/) à partir de **Tous les services > Intune > conformité des appareils > Microsoft Defender ATP**.
 
 > [!NOTE]
 > Si vous souhaitez afficher les données d’appareil les plus récentes, cliquez sur **Liste des appareils sans capteur ATP**.

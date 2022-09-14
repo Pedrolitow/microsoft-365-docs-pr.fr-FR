@@ -2,7 +2,7 @@
 title: Intégrer des appareils Windows à Defender pour point de terminaison à l’aide de Intune
 description: Utilisez Microsoft Intune pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service Defender pour point de terminaison.
 keywords: intégrer des appareils à l’aide de mdm, gestion des appareils, intégrer des appareils Microsoft Defender pour point de terminaison, mdm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 90c6ec688b19f328f89e2bcabe70b7955086e8da
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.subservice: mde
+ms.openlocfilehash: b2114591ae4314f48836a296092a169e27a422b6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531040"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680356"
 ---
 # <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Intégrer des appareils Windows à Defender pour point de terminaison à l’aide de Intune 
 
@@ -95,7 +95,7 @@ Pour plus d’informations sur Microsoft Intune paramètres de stratégie, consu
 > [!IMPORTANT]
 > La désintégération entraîne l’arrêt de l’envoi de données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois maximum.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)

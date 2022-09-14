@@ -1,8 +1,8 @@
 ---
 title: Accéder au Centre de la communauté Microsoft Defender pour point de terminaison
-description: Accédez au Centre d’Community Microsoft Defender pour endpoint pour partager des expériences, impliquer et en savoir plus sur le produit.
+description: Accédez au centre communautaire Microsoft Defender pour point de terminaison pour partager des expériences, vous impliquer et en apprendre davantage sur le produit.
 keywords: communauté, centre communautaire, communauté technique, conversation, annonces
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,28 +14,28 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
-ms.technology: mde
-ms.openlocfilehash: 64cd1417bf143d93a2f2fc4a4bbfceb0ee7f9095
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.subservice: mde
+ms.openlocfilehash: 22d8e5e394ef1deca06c5cec75c356ed31847d13
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171640"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679380"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Accéder au Centre de la communauté Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender for Endpoint Community Center est un endroit où les membres de la communauté peuvent découvrir, collaborer et partager des expériences sur le produit.
+Le Centre communautaire Defender pour point de terminaison est un endroit où les membres de la communauté peuvent apprendre, collaborer et partager des expériences sur le produit.
 
 Vous pouvez explorer plusieurs espaces pour en savoir plus sur des informations spécifiques :
 
@@ -43,11 +43,11 @@ Vous pouvez explorer plusieurs espaces pour en savoir plus sur des informations 
 - Nouveautés
 - Threat Intelligence
 
-Vous pouvez accéder au Centre d’Community de plusieurs façons :
+Il existe plusieurs façons d’accéder au Centre communautaire :
 
-- Dans le Microsoft 365 Defender de navigation du portail, sélectionnez **Community centre.** Un nouvel onglet de navigateur s’ouvre et vous permet d’ouvrir la page d’Community de Defender for Endpoint.
-- Accéder à la communauté via la page De [l’Community Microsoft Defender pour endpoint](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
+- Dans le volet de navigation du portail Microsoft 365 Defender, sélectionnez **Centre communautaire**. Un nouvel onglet de navigateur s’ouvre et vous dirige vers la page Defender pour endpoint Tech Community.
+- Accéder à la communauté par le biais de la page [Microsoft Defender pour point de terminaison Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
 
-Vous pouvez instantanément afficher et lire les conversations qui ont été publiées dans la communauté.
+Vous pouvez afficher et lire instantanément les conversations qui ont été publiées dans la communauté.
 
-Pour obtenir l’expérience complète au sein de la communauté, telle que la possibilité de commenter des billets, vous devez rejoindre la communauté. Pour plus d’informations sur la mise en place de microsoft tech Community, voir [Microsoft Tech Community: Getting Started](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15).
+Pour bénéficier de l’expérience complète au sein de la communauté, comme la possibilité de commenter des publications, vous devez vous joindre à la communauté. Pour plus d’informations sur la prise en main du Microsoft Tech Community, consultez [Microsoft Tech Community : Prise en main](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15).

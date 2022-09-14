@@ -1,8 +1,8 @@
 ---
-title: Accéder au portail Microsoft 365 Defender client MSSP
-description: Accéder au portail Microsoft 365 Defender client MSSP
-keywords: fournisseur de services de sécurité géré, mssp, configurer, intégration
-ms.prod: m365-security
+title: Accéder au portail client Microsoft 365 Defender MSSP
+description: Accéder au portail client Microsoft 365 Defender MSSP
+keywords: fournisseur de services de sécurité managé, mssp, configure, integration
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,19 +13,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: b1c133048e6600d553f0530e135ebfc2c441dd84
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.subservice: mde
+ms.openlocfilehash: d404e89e3891b7a6325323e2fcc953e4968657d5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323666"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679451"
 ---
-# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Accéder au portail Microsoft 365 Defender client MSSP
+# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Accéder au portail client Microsoft 365 Defender MSSP
 
-**S’applique à :**
-- [ Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [ Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [plan Microsoft Defender pour point de terminaison 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -36,19 +36,19 @@ ms.locfileid: "63323666"
 > [!NOTE]
 > Ces étapes sont dirigées vers le MSSP.
 
-Par défaut, les clients MSSP accèdent à Microsoft 365 Defender client via l’URL suivante : `https://security.microsoft.com/`.
+Par défaut, les clients MSSP accèdent à leur locataire Microsoft 365 Defender via l’URL suivante : `https://security.microsoft.com/`.
 
-Toutefois, les MSSP doivent utiliser une URL propre au client au format  `https://security.microsoft.com?tid=customer_tenant_id` suivant : pour accéder au portail client MSSP.
+Toutefois, les MSSP devront utiliser une URL spécifique au locataire au format suivant :  `https://security.microsoft.com?tid=customer_tenant_id` pour accéder au portail client MSSP.
 
-En règle générale, les MSSP doivent être ajoutés à chaque compte du client MSSP Azure AD qu’il a l’intention de gérer.
+En général, les MSSP doivent être ajoutés à chacun des services Azure AD du client MSSP qu’ils envisagent de gérer.
 
-Utilisez les étapes suivantes pour obtenir l’ID de client MSSP, puis utilisez l’ID pour accéder à l’URL propre au client :
+Utilisez les étapes suivantes pour obtenir l’ID de locataire client MSSP, puis utilisez l’ID pour accéder à l’URL propre au locataire :
 
-1. En tant que MSSP, connectez-vous Azure AD vos informations d’identification.
+1. En tant que MSSP, connectez-vous à Azure AD avec vos informations d’identification.
 
-2. Basculez l’annuaire vers le client du MSSP.
+2. Basculez le répertoire vers le locataire du client MSSP.
 
-3. **Sélectionnez Azure Active Directory > propriétés.** Vous trouverez l’ID de client dans le champ ID d’annuaire.
+3. Sélectionnez **Les propriétés > Azure Active Directory**. Vous trouverez l’ID de locataire dans le champ ID d’annuaire.
 
 4. Accédez au portail client MSSP en remplaçant la `customer_tenant_id` valeur dans l’URL suivante : `https://security.microsoft.com/?tid=customer_tenant_id`.
 

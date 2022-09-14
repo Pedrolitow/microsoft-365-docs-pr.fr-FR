@@ -2,7 +2,7 @@
 title: Microsoft Defender pour point de terminaison le stockage et la confidentialité des données
 description: Découvrez comment Microsoft Defender pour point de terminaison gère la confidentialité et les données qu’il collecte.
 keywords: Microsoft Defender pour point de terminaison, stockage et confidentialité des données, stockage, confidentialité, licences, géolocalisation, conservation des données, données
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: d1d8ad0a16129e909476891291c0b2c0f0d54956
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.subservice: mde
+ms.openlocfilehash: 8725063629ffe2f162307a6fce6ddb198640c732
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554137"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679226"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender pour point de terminaison le stockage et la confidentialité des données
 

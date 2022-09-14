@@ -4,7 +4,7 @@ description: Intégrer des serveurs Windows afin qu’ils puissent envoyer des d
 keywords: serveur d’intégration, serveur, 2012r2, 2016, 2019, intégration de serveur, gestion des appareils, configuration de serveurs Microsoft Defender pour point de terminaison, intégration de serveurs Microsoft Defender pour point de terminaison, intégration serveurs Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +18,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4a9cb2e20c2c2b5bfc47ae738d52f248fb464a3e
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 39d6c455790d5f87adcd2b0791c5603e449de6d1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387680"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680192"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
@@ -37,7 +37,7 @@ ms.locfileid: "67387680"
 - Windows Server Semi-Annual Enterprise Channel
 - Windows Server 2019 et versions ultérieures
 - Windows Server 2019 Core Edition
-- Windows Server 2022
+- Windows Server 2022
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
@@ -159,7 +159,7 @@ Pour plus d’informations, consultez [Intégration à Microsoft Defender pour l
 
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 et Windows Server 2016
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prerequisites
 
 #### <a name="prerequisites-for-windows-server-2012-r2"></a>Prérequis pour Windows Server 2012 R2
 
@@ -314,7 +314,7 @@ Ce script peut être utilisé dans différents scénarios, y compris ceux décri
 
 9. Sélectionnez **OK** et fermez toutes les fenêtres GPMC ouvertes.
 
-10. Pour lier l’objet de stratégie de groupe à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un objet de stratégie de groupe existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet stratégie de groupe que vous souhaitez lier. Cliquez sur **OK**.
+10. Pour lier l’objet de stratégie de groupe à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un objet de stratégie de groupe existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet stratégie de groupe que vous souhaitez lier. Cliquez sur **OK**.
 
 Pour plus de paramètres de configuration, consultez [Configurer les exemples de paramètres de collecte](configure-endpoints-gp.md#configure-sample-collection-settings) et [autres paramètres de configuration recommandés](configure-endpoints-gp.md#other-recommended-configuration-settings).
 

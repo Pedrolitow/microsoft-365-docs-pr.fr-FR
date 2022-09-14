@@ -4,7 +4,8 @@ description: Découvrez comment configurer vos hubs d’événements
 keywords: event hub, configure, insights
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +19,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-MS.technology: m365d
-ms.openlocfilehash: 7121dcd1bc904188ce3c0356325a611bc0919877
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 1af62c9618b3212d15d7d81af2c8297505851721
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67329110"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679688"
 ---
 # <a name="configure-your-event-hubs"></a>Configurer vos hubs d’événements
 
@@ -109,7 +109,7 @@ Dans cette option, Microsoft 365 Defender crée Event Hubs pour vous.
 > [!NOTE]
 > Si vous utilisez un espace de noms Event Hub qui **ne fait pas** partie d’un cluster Event Hub, vous pouvez uniquement choisir jusqu’à 10 types d’événements (tables) à exporter dans chaque paramètre d’exportation que vous définissez, en raison d’une limitation Azure de 10 Event Hub par espace de noms Event Hub.
 
-Par exemple :
+Par exemple :
 
 :::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="Section Event Hubs dans Microsoft Portail Azure" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
 

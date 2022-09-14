@@ -2,7 +2,7 @@
 title: Intégrer des appareils Windows à l’aide de Configuration Manager
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service Defender pour point de terminaison.
 keywords: intégrer des appareils à l’aide de sccm, gestion des appareils, configurer Microsoft Defender pour point de terminaison appareils
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
-ms.technology: mde
-ms.openlocfilehash: 6a311d0fb1edeff8e8eb72148ffc08dfb945cbbe
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.subservice: mde
+ms.openlocfilehash: 9bf643fc72b5237c260bcd22434ea5d7e01841d0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280826"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679597"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Intégrer des appareils Windows à l’aide de Configuration Manager
 

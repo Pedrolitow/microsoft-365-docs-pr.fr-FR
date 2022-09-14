@@ -2,7 +2,7 @@
 title: Résoudre les problèmes sur Microsoft Defender pour point de terminaison sur Android
 description: Résoudre les problèmes de Microsoft Defender pour point de terminaison sur Android
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mde, android, cloud, connectivité, communication
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 53c04c70291f20ccb23ed54d1de552efb8a7619e
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.subservice: mde
+ms.openlocfilehash: 84dfb371d3e4e0ec59374a126b95c8231f02499d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437765"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679062"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 

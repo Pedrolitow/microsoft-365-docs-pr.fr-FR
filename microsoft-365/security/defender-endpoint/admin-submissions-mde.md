@@ -5,8 +5,8 @@ keywords: antivirus, courrier indésirable, hameçonnage, fichier, alerte, Micro
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.date: 06/15/2021
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: FPFN
-ms.openlocfilehash: 0d445050ea667d54b8a73eb2f040c8114e1dfcfb
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: da714f4c6b2eb495e66d862558efaf15a2b9c1f2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601502"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678688"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envoyer des fichiers dans Microsoft Defender pour point de terminaison
 

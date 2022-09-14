@@ -2,7 +2,7 @@
 title: Configurer des notifications d’alerte dans Microsoft Defender pour point de terminaison
 description: Vous pouvez utiliser Microsoft Defender pour point de terminaison pour configurer les paramètres de notification par e-mail pour les alertes de sécurité, en fonction de la gravité et d’autres critères.
 keywords: notifications par e-mail, configurer des notifications d’alerte, Microsoft Defender pour point de terminaison, Microsoft Defender pour point de terminaison notifications, Microsoft Defender pour point de terminaison alertes, Windows Entreprise, Windows Éducation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: fde5ce238a44b6722770338378ae33c54a38a450
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.subservice: mde
+ms.openlocfilehash: 9325fa56232428b1c923817631826202155bc6f1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587487"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679776"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurer des notifications d’alerte dans Microsoft Defender pour point de terminaison
 
@@ -49,7 +49,7 @@ La notification par e-mail inclut des informations de base sur l’alerte et un 
 ## <a name="create-rules-for-alert-notifications"></a>Créer des règles pour les notifications d’alerte
 Vous pouvez créer des règles qui déterminent les appareils et les gravités d’alerte pour envoyer des notifications par e-mail et les destinataires des notifications.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> Notifications **par e-mail** **générales** \> **des** \> points de terminaison.
+1. Dans le volet de navigation, sélectionnez **Paramètres des** \> **points de terminaison** \> **Général** \> **Email notifications**.
 
 2. Cliquez sur **Ajouter un élément**.
 
@@ -95,7 +95,7 @@ Cette section répertorie les différents problèmes que vous pouvez rencontrer 
 
 **Solution:** Assurez-vous que les notifications ne sont pas bloquées par les filtres d’e-mail :
 
-1. Vérifiez que les notifications par e-mail Defender pour point de terminaison ne sont pas envoyées au dossier Courrier indésirable. Marquez-les comme non indésirables.
+1. Vérifiez que les notifications par e-mail Defender pour point de terminaison ne sont pas envoyées au dossier Junk Email. Marquez-les comme non indésirables.
 2. Vérifiez que votre produit de sécurité par e-mail ne bloque pas les notifications par e-mail de Defender pour point de terminaison.
 3. Vérifiez les règles de votre application de messagerie qui peuvent intercepter et déplacer vos notifications par e-mail Defender pour point de terminaison.
 

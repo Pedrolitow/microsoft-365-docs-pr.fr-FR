@@ -4,7 +4,7 @@ description: Activer l’intégration corelight pour obtenir une visibilité ax�
 keywords: activer le connecteur siem, siem, connecteur, informations de sécurité et événements
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1a9e899c1f3292dd0a665c7cbf7ccfd5e561c2aa
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.subservice: mde
+ms.openlocfilehash: 5e558b5488c0311d398b626321e2d1fa32d3f130
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943278"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678578"
 ---
 # <a name="enable-corelight-data-integration"></a>Permettre l'intégration des données Corelight
 
@@ -40,7 +40,7 @@ Microsoft s’est associé à [Corelight](https://corelight.com/integrations/iot
 
 Une fois cette source de données activée, tous les événements des appliances réseau Corelight sont envoyés à Microsoft 365 Defender. Vous pouvez afficher ces activités dans la chronologie des appareils non managés, disponible dans l’inventaire des appareils Microsoft Defender pour point de terminaison. Pour plus d’informations, consultez [Découverte d’appareils](device-discovery.md).
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 1. Pour configurer l’intégration des données Corelight, l’utilisateur doit avoir les rôles suivants :
    - Administrateur général du locataire dans Azure Active Directory

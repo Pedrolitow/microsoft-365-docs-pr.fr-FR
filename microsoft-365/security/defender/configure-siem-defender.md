@@ -4,7 +4,8 @@ description: Découvrez comment utiliser l’API REST et configurer les outils d
 keywords: configurer des siems, des informations de sécurité et des outils de gestion des événements, splunk, arcsight, indicateurs personnalisés, api rest, définitions d’alertes, indicateurs de compromission
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3e2772fd458c60e48f78c0d4b816cdac8ca25940
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 042474bb8c9e456dd97f14cf3e924a7958c172a9
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530309"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680062"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-365-defender"></a>Intégrer les outils SIEM avec Microsoft 365 Defender pour point de terminaison
 
@@ -40,7 +40,7 @@ ms.locfileid: "66530309"
 
 Microsoft 365 Defender prend en charge les outils SIEM (Security Information and Event Management) qui ingèrent des informations à partir de votre locataire d’entreprise dans Azure Active Directory (AAD) à l’aide du protocole d’authentification OAuth 2.0 pour une application AAD inscrite représentant la solution ou le connecteur SIEM spécifique installé dans votre environnement. 
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Microsoft 365 Defender licence et conditions d’utilisation des API](api-terms.md)
 - [Accéder aux API Microsoft 365 Defender](api-access.md)

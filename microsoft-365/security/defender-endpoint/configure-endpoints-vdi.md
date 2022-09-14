@@ -4,7 +4,7 @@ description: Déployez le package de configuration sur l’appareil VDI (Virtual
 keywords: configurer un appareil d’infrastructure de bureau virtuel (VDI), vdi, gestion des appareils, configurer Microsoft Defender pour point de terminaison, points de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
-ms.technology: mde
-ms.openlocfilehash: 8bf3dda061b582adb7b21029022e61bc890aeec7
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.subservice: mde
+ms.openlocfilehash: 571254220daf6b7ebf80aa837df692b2c57c015a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441637"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678996"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Intégrer des appareils d’infrastructure de bureau virtuel (VDI) non persistants dans Microsoft 365 Defender
 

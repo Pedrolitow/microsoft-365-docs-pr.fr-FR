@@ -2,7 +2,7 @@
 title: Configurer des fonctionnalités avancées dans Microsoft Defender pour point de terminaison
 description: Activez les fonctionnalités avancées telles que le fichier de blocs dans Microsoft Defender pour point de terminaison.
 keywords: fonctionnalités avancées, paramètres, fichier de blocage, investigation automatisée, résolution automatique, skype, Microsoft Defender pour l’identité, Office 365, azure information protection, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d9824a738468f14ebfc7cd7bdc3c612c21a0e43c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: 5d1aea5fe5d8d1baaae3f616137f23dd93714f95
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493106"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679644"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour point de terminaison
 
@@ -246,7 +246,7 @@ Vous aurez accès aux fonctionnalités à venir, sur lesquelles vous pouvez four
 
 Sauvegardez les fichiers mis en quarantaine dans un emplacement sécurisé et conforme afin qu’ils puissent être téléchargés directement à partir de la quarantaine. Le bouton **Télécharger le fichier** est toujours disponible dans la page du fichier. Ce paramètre est activé par défaut. [En savoir plus sur les exigences](respond-file-alerts.md#download-quarantined-files)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Mettre à jour les paramètres de rétention des données](data-retention-settings.md)
 - [Configurer des notifications d’alerte](configure-email-notifications.md)

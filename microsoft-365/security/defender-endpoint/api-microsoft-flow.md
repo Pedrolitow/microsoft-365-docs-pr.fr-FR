@@ -3,7 +3,7 @@ title: Comment utiliser le connecteur Power Automate pour configurer un flux pou
 ms.reviewer: ''
 description: Utilisez Microsoft Defender pour point de terminaison connecteur Flow pour créer un flux qui sera déclenché chaque fois qu’un nouvel événement se produit sur votre locataire.
 keywords: flux, api prises en charge, api, flux Microsoft, requête, automatisation, automatisation de l’alimentation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2c800b5e36f7c3f19a3ed11e7a33e9040ffffad2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 4cacdf602f732478133d8a6c98ea3be3efa1a69f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328011"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679282"
 ---
 # <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Comment utiliser le connecteur Power Automate pour configurer un flux pour les événements
 

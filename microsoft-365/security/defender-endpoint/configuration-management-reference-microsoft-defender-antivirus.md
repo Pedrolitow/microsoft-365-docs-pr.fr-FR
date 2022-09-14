@@ -2,7 +2,7 @@
 title: Gérer l’antivirus Microsoft Defender dans votre entreprise
 description: Découvrez comment utiliser stratégie de groupe, Configuration Manager, PowerShell, WMI, Intune et la ligne de commande pour gérer l’antivirus Microsoft Defender
 keywords: stratégie de groupe, gpo, gestionnaire de configuration, sccm, scep, powershell, wmi, intune, defender, antivirus, logiciel anti-programme malveillant, sécurité, protection
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c26f3e045efa5ea1c538796b9165bef5fa763c98
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: c3b446989a6146245ceb9bbadb34cad1b3c5835e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388812"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679018"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Gérer l’antivirus Microsoft Defender dans votre entreprise
 

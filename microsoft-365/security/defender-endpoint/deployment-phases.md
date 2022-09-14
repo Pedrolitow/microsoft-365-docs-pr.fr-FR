@@ -2,7 +2,7 @@
 title: Vue d’ensemble du déploiement Microsoft Defender pour point de terminaison
 description: Découvrez comment déployer Microsoft Defender pour point de terminaison en préparant, en configurant et en intégrant des points de terminaison à ce service
 keywords: déployer, préparer, configurer, intégrer, phase, déploiement, déploiement, adoption, configuration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-overview
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3520d249e7241eb1b890c3939fe6e6165d5c6011
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.subservice: mde
+ms.openlocfilehash: b5e664fb40d549d669d1b3bba6d55feb96ccc843
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607606"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679150"
 ---
 # <a name="microsoft-defender-for-endpoint-deployment-overview"></a>Vue d’ensemble du déploiement Microsoft Defender pour point de terminaison
 

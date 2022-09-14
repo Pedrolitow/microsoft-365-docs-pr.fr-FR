@@ -2,7 +2,7 @@
 title: Erreurs courantes de l’API Microsoft Defender pour point de terminaison
 description: Liste des erreurs courantes de l’API Microsoft Defender pour point de terminaison avec des descriptions.
 keywords: API, API Microsoft Defender pour point de terminaison, erreurs, résolution des problèmes
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: dbbfd44f573e216015bfe586d5c309cc3ba12f5e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 75ecf39967f6308806ceb4f19f3f94fe3d603f80
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326142"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679534"
 ---
 # <a name="common-rest-api-error-codes"></a>Codes d’erreur courants de l’API REST
 

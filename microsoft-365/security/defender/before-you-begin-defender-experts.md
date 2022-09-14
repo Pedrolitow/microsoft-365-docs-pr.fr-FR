@@ -4,7 +4,8 @@ ms.reviewer: ''
 description: Cette section décrit les principales exigences d’infrastructure que vous devez respecter et les informations importantes sur l’accès aux données et la conformité
 keywords: service de chasse aux menaces managée, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft, MTE-TAN, notification d’experts defender, notification d’attaque ciblée, Microsoft Defender Experts pour la chasse, la chasse aux menaces et l’analyse.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 51e882c879f9365fbdc5b4a70d2ade106d061d51
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 5c91ef8dc31faa733d50417c2a9279e50f8bd202
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276217"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679820"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Avant de commencer à utiliser Defender Experts pour la chasse
 
@@ -57,7 +57,7 @@ Les sections suivantes énumèrent des informations supplémentaires sur l’uti
 
 ### <a name="data-collection-usage-and-retention"></a>Collecte, utilisation et rétention des données
 
-Toutes les données utilisées pour la chasse des services Defender existants continueront de résider dans l’emplacement de stockage de service Microsoft 365 Defender d’origine du client. [En savoir plus](../../enterprise/o365-data-locations.md)
+Toutes les données utilisées pour la chasse des services Defender existants continueront de résider dans l’emplacement de stockage de service Microsoft 365 Defender d’origine du client. [Si vous souhaitez en savoir plus](../../enterprise/o365-data-locations.md)
 
 Les données opérationnelles Defender Experts for Hunting, telles que les tickets de cas et les notes d’analyste, sont générées et stockées dans un centre de données Microsoft dans la région des États-Unis pour la longueur du service, quel que soit l’emplacement de stockage du service Microsoft 365 Defender. Les données générées pour le tableau de bord de création de rapports sont stockées dans l’emplacement de stockage de service Microsoft 365 Defender du client. Les données de création de rapports et les données opérationnelles sont conservées pendant une période de grâce d’au moins 90 jours après qu’un client a quitté le service.
 

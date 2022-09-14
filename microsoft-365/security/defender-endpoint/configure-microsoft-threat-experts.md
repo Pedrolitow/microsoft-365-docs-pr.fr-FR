@@ -4,7 +4,7 @@ ms.reviewer: ''
 description: Inscrivez-vous auprès de Microsoft Threats Experts pour le configurer, le gérer et l’utiliser dans vos tâches quotidiennes d’administration de la sécurité et d’opérations de sécurité.
 keywords: Spécialistes des menaces Microsoft, service de chasse aux menaces managée, MTE, service de chasse géré par Microsoft
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 712b8160f07ac51646dda37513c44c5ef128592e
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.subservice: mde
+ms.openlocfilehash: 89a554cc1f016425e74e0fb6ad6f3aca9f81b292
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294546"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680357"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 
@@ -100,6 +100,8 @@ Vous pouvez filtrer vos incidents et alertes si vous souhaitez uniquement voir l
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>S’abonner à Spécialistes des menaces Microsoft - Experts à la demande
 
 Il est disponible en tant que service d’abonnement. Si vous êtes déjà client Defender pour point de terminaison, vous pouvez contacter votre représentant Microsoft pour vous abonner à Spécialistes des menaces Microsoft - Experts à la demande.
+> [!NOTE]
+> Experts à la demande n’est pas un service de réponse aux incidents de sécurité. Il vise à mieux comprendre les menaces complexes qui affectent votre organisation. Collaborez avec votre propre équipe de réponse aux incidents de sécurité pour résoudre les problèmes urgents de réponse aux incidents de sécurité. Si vous n’avez pas votre propre équipe de réponse aux incidents de sécurité et que vous souhaitez obtenir l’aide de Microsoft, créez une demande de support dans le [Hub De services Premier](/services-hub/).
 
 ## <a name="ask-defender-experts-about-suspicious-cybersecurity-activities-in-your-organization"></a>Demandez aux experts Defender les activités suspectes de cybersécurité au sein de votre organisation
 

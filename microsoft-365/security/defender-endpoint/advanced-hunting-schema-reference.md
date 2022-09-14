@@ -2,7 +2,7 @@
 title: Informations de référence sur les schémas de chasse avancés
 description: Découvrez les tables du schéma de chasse avancé pour comprendre les données sur laquelle vous pouvez exécuter des requêtes de repérage de menaces.
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, mdatp, microsoft defender atp, microsoft defender pour point de terminaison, recherche wdatp, requête, télémétrie, référence de schéma, kusto, table, données
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
-ms.technology: mde
-ms.openlocfilehash: 76c9f55e99ba13417403a6f9ac2d03913f792326
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: d53f0cb437a79e4a6841293833dd0f76c014154d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326318"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679732"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprendre le schéma de chasse avancé dans Microsoft Defender pour point de terminaison
 

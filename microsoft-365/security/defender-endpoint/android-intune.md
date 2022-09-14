@@ -2,7 +2,7 @@
 title: Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune
 description: Décrit comment déployer Microsoft Defender pour point de terminaison sur Android avec Microsoft Intune
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mde, android, installation, deploy, uninstallation,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 9c00ea16bddb7aa9094b41b30692493b530acbb3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.subservice: mde
+ms.openlocfilehash: eda60083ff28188022ab0713ac4ec9d9fedcae44
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823161"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679084"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune
 
@@ -57,7 +57,7 @@ Découvrez comment déployer Defender pour point de terminaison sur Android sur 
    - **Name**
    - **Description**
    - **Publisher** en tant que Microsoft.
-   - **URL de l’App Store** en tant qu’URL https://play.google.com/store/apps/details?id=com.microsoft.scmx de l’application Defender pour point de terminaison Google Play Store)
+   - **URL de l’App Store** en tant qu’URL https://play.google.com/store/apps/details?id=com.microsoft.scmx (URL Google Play Store de l’application Defender pour point de terminaison)
 
    Les autres champs sont facultatifs. Sélectionnez **Suivant**.
 
