@@ -17,12 +17,13 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 4cc1f5b91ef5314d52e9b2945c5923a86ee281dc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: b290a875f7f1abcc65679f584f7380537e893268
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580682"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692022"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 

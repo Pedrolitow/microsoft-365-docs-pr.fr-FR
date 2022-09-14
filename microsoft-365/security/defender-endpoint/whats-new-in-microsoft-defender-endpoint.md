@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 131fb7dfc4894b62428ed67fa41e48bedaa0c603
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 8930006a4748d090de15ef76c84fd39b8f7527ec
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661890"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690805"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -64,10 +64,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 ## <a name="september-2022"></a>Septembre 2022
 
 - [Les rapports d’intégrité des appareils sont désormais en disponibilité générale](machine-reports.md). <br/>Le rapport d’intégrité des appareils fournit des informations générales sur l’intégrité et la sécurité de vos points de terminaison. Le rapport inclut des informations de tendance indiquant l’état d’intégrité du capteur, l’état de l’antivirus, les plateformes de système d’exploitation, les versions Windows 10 et les versions de mise à jour de l’antivirus Microsoft Defender.
-- [Le mode de résolution des problèmes](enable-troubleshooting-mode.md) est désormais disponible pour Windows Server 2012 machines R2 et 2016 exécutant la solution unifiée moderne. Pendant le mode de dépannage, utilisez-le `Set-MPPreference -DisableTamperProtection $true` pour désactiver temporairement la protection contre les falsifications sur votre appareil et apporter les modifications de configuration nécessaires. Avant d’utiliser le mode de résolution des problèmes, vérifiez que tous les composants suivants sont à jour :
-   - Sense version 10.8049.22439.1084 (KB5005292) ou ultérieure
-   - Antivirus Microsoft Defender - Plateforme : 4.18.2207.7 (KB4052623) ou version ultérieure 
-   - Antivirus Microsoft Defender - Moteur : 1.1.19500.2 (KB2267602) ou version ultérieure
+- [Le mode de résolution des problèmes](enable-troubleshooting-mode.md) est désormais disponible pour d’autres systèmes d’exploitation Windows, notamment Windows Server 2012 R2 et versions ultérieures. Reportez-vous à l’article pour plus d’informations sur les mises à jour requises.
 
 ## <a name="august-2022"></a>Août 2022
 

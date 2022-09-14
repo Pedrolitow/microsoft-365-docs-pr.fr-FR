@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 8/1/2017
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -24,13 +24,13 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment Microsoft 365 fonctionnalités d’authentification modernes fonctionnent différemment pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 9c4cdc384ceded4ce3bb78ae4e67e0f4c5a503de
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment les fonctionnalités d’authentification moderne de Microsoft 365 fonctionnent différemment pour les applications clientes Office 2013 et 2016.
+ms.openlocfilehash: 36bd7252394cb23b2e1f8d4999e4c09095734716
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093369"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690485"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013, Office 2016 et Office 2019
 
@@ -39,7 +39,7 @@ ms.locfileid: "65093369"
 Lisez cet article pour découvrir comment les applications clientes Office 2013, Office 2016 et Office 2019 utilisent des fonctionnalités d’authentification modernes basées sur la configuration de l’authentification sur le locataire Microsoft 365 pour Exchange Online, SharePoint Online et Skype Entreprise Online.
 
 > [!NOTE]
-> Les applications clientes héritées, telles que Office 2010 et Office pour Mac 2011, ne prennent pas en charge l’authentification moderne et ne peuvent être utilisées qu’avec l’authentification de base.
+> Les applications clientes héritées, telles qu’Office 2010 et Office pour Mac 2011, ne prennent pas en charge l’authentification moderne et ne peuvent être utilisées qu’avec l’authentification de base.
 
 ## <a name="availability-of-modern-authentication-for-microsoft-365-services"></a>Disponibilité de l’authentification moderne pour les services Microsoft 365
 
@@ -47,16 +47,16 @@ Pour les services Microsoft 365, l’état par défaut de l’authentification m
 
 - **Activé par** défaut pour Exchange Online. Consultez [Activer ou désactiver l’authentification moderne dans Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) pour la désactiver ou l’activer.
 
-- **Activé** par défaut pour SharePoint Online.
+- **Activé par** défaut pour SharePoint Online.
 
-- **Activé** par défaut pour Skype Entreprise Online. Consultez [Activer Skype Entreprise Online pour l’authentification moderne afin](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) de l’activer ou de la désactiver.
+- **Activé** par défaut pour Skype Entreprise Online. Voir [Activer Skype Entreprise Online pour que l’authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)l’éteigne ou l’active.
 
 > [!NOTE]
 > Pour les locataires créés **avant** le 1er août 2017, l’authentification moderne est **désactivée** par défaut pour Exchange Online et Skype Entreprise Online.
 
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Comportement de connexion des applications clientes Office
 
-Office applications clientes 2013 prennent en charge l’authentification héritée par défaut. Hérité signifie qu’ils prennent en charge l’assistant de connexion Microsoft Online ou l’authentification de base. Pour que ces clients utilisent des fonctionnalités d’authentification modernes, le client Windows doit avoir des clés de Registre définies. Pour obtenir des instructions, consultez [Activer l’authentification moderne pour Office 2013 sur les appareils Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+Les applications clientes Office 2013 prennent en charge l’authentification héritée par défaut. Hérité signifie qu’ils prennent en charge l’assistant de connexion Microsoft Online ou l’authentification de base. Pour que ces clients utilisent des fonctionnalités d’authentification modernes, les clés de Registre doivent être définies pour le client Windows. Pour obtenir des instructions, consultez [Activer l’authentification moderne pour Office 2013 sur les appareils Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
 Pour activer l'authentification moderne pour les appareils exécutant Windows (par exemple les ordinateurs portables et tablettes) et sur lesquels Microsoft Office 2013 est installé, vous devez définir les clés de Registre suivantes. Les clés doivent être définies sur chaque appareil pour lequel vous voulez activer l'authentification moderne :
 
@@ -67,7 +67,7 @@ Pour activer l'authentification moderne pour les appareils exécutant Windows (p
 
 Découvrez [comment utiliser l’authentification moderne (ADAL) avec Skype Entreprise](./hybrid-modern-auth-overview.md) pour en savoir plus sur son fonctionnement avec Skype Entreprise.
 
-Office clients 2016 et Office 2019 prennent en charge l’authentification moderne par défaut, et aucune action n’est nécessaire pour que le client utilise ces nouveaux flux. Toutefois, une action explicite est nécessaire pour utiliser l’authentification héritée.
+Les clients Office 2016 et Office 2019 prennent en charge l’authentification moderne par défaut, et aucune action n’est nécessaire pour que le client utilise ces nouveaux flux. Toutefois, une action explicite est nécessaire pour utiliser l’authentification héritée.
 
 Cliquez sur les liens ci-dessous pour voir comment l’authentification client Office 2013, Office 2016 et Office 2019 fonctionne avec les services Microsoft 365, selon que l’authentification moderne est activée ou non.
 
@@ -78,13 +78,13 @@ Cliquez sur les liens ci-dessous pour voir comment l’authentification client O
 - [Skype Entreprise Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
 
 <a name="BK_EchangeOnline"> </a>
-### <a name="exchange-online"></a>Exchange Online
+### <a name="exchange-online"></a>Exchange Online
 
-Le tableau suivant décrit le comportement d’authentification des applications clientes Office 2013, Office 2016 et Office 2019 lorsqu’elles se connectent à Exchange Online avec ou sans authentification moderne.
+Le tableau suivant décrit le comportement d’authentification pour les applications clientes Office 2013, Office 2016 et Office 2019 lorsqu’elles se connectent à Exchange Online avec ou sans authentification moderne.
 
-|Office version de l’application cliente****|Clé de Registre présente ?****|Authentification moderne activée ?****|Comportement d’authentification avec l’authentification moderne activée pour le locataire (par défaut)****|Comportement d’authentification avec l’authentification moderne désactivée pour le locataire****|
+|Version de l’application cliente Office****|Clé de Registre présente ?****|Authentification moderne activée ?****|Comportement d’authentification avec l’authentification moderne activée pour le locataire (par défaut)****|Comportement d’authentification avec l’authentification moderne désactivée pour le locataire****|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2019  <br/> |Non <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Oui  <br/> |Force l’authentification moderne le Outlook 2013, 2016 ou 2019. <br/> [Plus d’informations](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Force l’authentification moderne au sein du client Outlook.<br/> |
+|Office 2019  <br/> |Non <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Oui  <br/> |Force l’authentification moderne sur Outlook 2013, 2016 ou 2019. <br/> [Plus d’informations](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Force l’authentification moderne au sein du client Outlook.<br/> |
 |Office 2019  <br/> |Non, ou EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est utilisée. Le serveur refuse l’authentification moderne lorsque le locataire n’est pas activé.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est utilisée. Le serveur refuse l’authentification moderne lorsque le locataire n’est pas activé.  <br/> |
 |Office 2019  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est utilisée. Le serveur refuse l’authentification moderne lorsque le locataire n’est pas activé.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est utilisée. Le serveur refuse l’authentification moderne lorsque le locataire n’est pas activé.  <br/> |
 |Office 2019  <br/> |Oui, EnableADAL=0  <br/> |Non  <br/> |Authentification de base  <br/> |Authentification de base  <br/> |
@@ -98,9 +98,9 @@ Le tableau suivant décrit le comportement d’authentification des applications
 <a name="BK_SharePointOnline"> </a>
 ### <a name="sharepoint-online"></a>SharePoint Online
 
-Le tableau suivant décrit le comportement d’authentification des applications clientes Office 2013, Office 2016 et Office 2019 lorsqu’elles se connectent à SharePoint Online avec ou sans authentification moderne.
+Le tableau suivant décrit le comportement d’authentification pour les applications clientes Office 2013, Office 2016 et Office 2019 lorsqu’elles se connectent à SharePoint Online avec ou sans authentification moderne.
 
-|Office version de l’application cliente****|Clé de Registre présente ?****|Authentification moderne activée ?****|Comportement d’authentification avec l’authentification moderne activée pour le locataire (par défaut)****|Comportement d’authentification avec l’authentification moderne désactivée pour le locataire****|
+|Version de l’application cliente Office****|Clé de Registre présente ?****|Authentification moderne activée ?****|Comportement d’authentification avec l’authentification moderne activée pour le locataire (par défaut)****|Comportement d’authentification avec l’authentification moderne désactivée pour le locataire****|
 |:-----|:-----|:-----|:-----|:-----|
 |Office 2019  <br/> |Non, ou EnableADAL = 1  <br/> |Oui  <br/> |Authentification moderne uniquement.  <br/> |Échec de connexion.  <br/> |
 |Office 2019  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |Authentification moderne uniquement.  <br/> |Échec de connexion.  <br/> |
@@ -116,7 +116,7 @@ Le tableau suivant décrit le comportement d’authentification des applications
 
 Le tableau suivant décrit le comportement d’authentification des applications clientes Office 2013, Office 2016 et Office 2019 lorsqu’elles se connectent à Skype Entreprise Online avec ou sans authentification moderne.
 
-|Office version de l’application cliente****|Clé de Registre présente ?****|Authentification moderne activée ?****|Comportement d’authentification avec l’authentification moderne activée pour le locataire****|Comportement d’authentification avec l’authentification moderne désactivée pour le locataire (par défaut)****|
+|Version de l’application cliente Office****|Clé de Registre présente ?****|Authentification moderne activée ?****|Comportement d’authentification avec l’authentification moderne activée pour le locataire****|Comportement d’authentification avec l’authentification moderne désactivée pour le locataire (par défaut)****|
 |:-----|:-----|:-----|:-----|:-----|
 |Office 2019  <br/> |Non, ou EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque Skype Entreprise locataires en ligne ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque Skype Entreprise locataires en ligne ne sont pas activés.  <br/> |
 |Office 2019  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque Skype Entreprise locataires en ligne ne sont pas activés.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’Assistant connexion Microsoft Online est utilisé. Le serveur refuse l’authentification moderne lorsque Skype Entreprise locataires en ligne ne sont pas activés.  <br/> |

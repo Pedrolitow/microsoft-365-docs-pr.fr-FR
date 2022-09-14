@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.subservice: mde
-ms.openlocfilehash: b07c3ec5749aa7e7c7f23415f1f50521b9b507b3
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ab6d8af542254994a39728dc2cac7b198f8d6eb6
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521464"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691044"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>vue d’ensemble de Microsoft Defender for Cloud Apps dans Defender pour point de terminaison
 

@@ -18,12 +18,13 @@ ms.topic: article
 ms.date: 04/27/2022
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: cad44fdbf07b784f6f18edb4d5eb59cd7cf46d80
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 3d05807b0f6bd16b8f1a035411d8144840ef3832
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520058"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690353"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>MICROSOFT DEFENDER POUR POINT DE TERMINAISON API à l’aide de PowerShell
 

@@ -22,12 +22,13 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
-ms.openlocfilehash: f8045ae49d919b67ffe517c5f7bd2e13a97078e1
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: 28eb75746722ac0b47e2b8bb9d6b80085c356ec5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497536"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691208"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 

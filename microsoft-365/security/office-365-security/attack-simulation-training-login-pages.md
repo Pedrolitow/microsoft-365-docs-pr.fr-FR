@@ -12,12 +12,13 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer et à gérer des pages de connexion pour les attaques par hameçonnage simulées dans Microsoft Defender pour Office 365 Plan 2.
 ms.subservice: mdo
-ms.openlocfilehash: d0a129bfdd43009a854bffea27a18717bf95df7b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 34c662665fcd70bf6314fcd6832643693358b26a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480148"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690890"
 ---
 # <a name="login-pages-in-attack-simulation-training"></a>Pages de connexion dans l’entraînement de simulation d’attaque
 

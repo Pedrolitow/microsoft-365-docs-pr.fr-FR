@@ -16,12 +16,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f075a612c18ea1c44d9110a212b9ba7d2f8ec379
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 3ac0ecd33cc414f90e1f4eb1e3099ad088511ad4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577582"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691935"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows
 

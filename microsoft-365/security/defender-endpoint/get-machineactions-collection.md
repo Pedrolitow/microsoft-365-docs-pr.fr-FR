@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 85b3758d77430ffa9e7664c9079f25140d1b454a
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 12c3b04c4e9201c98f17cc7b381099f53cd85d20
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523531"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690392"
 ---
 # <a name="list-machineactions-api"></a>RÉPERTORIER l’API MachineActions
 

@@ -18,12 +18,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.subservice: m365d
-ms.openlocfilehash: f70b42f685afbbebff64cd6bc5e6aab203f51e8a
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 678b72b3b162f07b189fa42448952a16aaa7e676
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586421"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691582"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 

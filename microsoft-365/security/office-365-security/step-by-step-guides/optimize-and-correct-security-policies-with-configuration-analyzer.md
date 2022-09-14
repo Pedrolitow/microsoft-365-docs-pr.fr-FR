@@ -2,8 +2,7 @@
 title: Optimiser et corriger les stratégies de sécurité avec l’analyseur de configuration
 description: Étapes permettant d’optimiser et de corriger les stratégies de sécurité avec l’analyseur de configuration. L’analyseur de configuration est un emplacement central et un seul volet de verre permettant d’administrer et d’afficher les stratégies de sécurité des e-mails que vous avez configurées dans votre locataire.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: 39d7c0bca758f4991b073716159ad340d87619f4
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+ms.openlocfilehash: 7dcce2bb3f71ebf6400ece3296da71a7f686db10
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67593900"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691186"
 ---
 # <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>Optimiser et corriger les stratégies de sécurité avec l’analyseur de configuration
 

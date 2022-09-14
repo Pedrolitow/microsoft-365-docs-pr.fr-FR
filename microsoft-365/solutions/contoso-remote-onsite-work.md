@@ -1,5 +1,5 @@
 ---
-title: Réponse et prise en charge de COVID-19 de Contoso pour le travail hybride
+title: Réponse contoso-19 et prise en charge du travail hybride
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,67 +7,67 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendre comment Contoso Corporation a répondu à la épidémie COVID-19 et conçu son infrastructure d’installation et de mise à jour logicielle pour le travail hybride.
-ms.openlocfilehash: 8b3829b7d3361c3a29ee495dd5a335a28a08c0b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Découvrez comment Contoso Corporation a répondu à la pandémie du COVID-19 et a conçu son infrastructure d’installation et de mise à jour logicielle pour le travail hybride.
+ms.openlocfilehash: f856113b3e71220bedf06f9b1dd5ea44e422d81d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325724"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691252"
 ---
-# <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Réponse et prise en charge de COVID-19 de Contoso pour le travail hybride
+# <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Réponse contoso-19 et prise en charge du travail hybride
 
-Contoso avait toujours pris en charge ses travailleurs à distance, qui accédaient aux ressources sur site via un serveur VPN central au siège social parisien. Contoso avait émis un ordinateur portable géré pour tous les travailleurs à distance. Les employés locaux avaient un mélange d’ordinateurs de bureau et d’ordinateurs portables.
+Contoso avait toujours pris en charge ses travailleurs à distance, qui accédaient aux ressources locales via un serveur VPN central au siège de Paris. Contoso avait émis à tous les travailleurs distants un ordinateur portable géré. Les travailleurs locaux avaient un mélange d’ordinateurs de bureau et d’ordinateurs portables.
 
 ## <a name="contosos-response-to-covid-19"></a>Réponse de Contoso à COVID-19
 
-Avec l’apparition de la épidémie COVID-19, soudainement, tous les travailleurs essentiels, sauf ceux essentiels, étaient des travailleurs à distance. Contoso a répondu en déplaçant ses employés pour qu’ils travaillent de chez eux et qu’ils effectuent leurs activités principales par le biais de l’accès à distance aux ressources locales et en ligne à l’aide Microsoft 365 services cloud.
+Avec le début de la pandémie du COVID-19, soudainement tous les travailleurs, sauf les travailleurs essentiels, étaient des travailleurs à distance. Contoso a répondu en déplaçant sa main-d’œuvre à travailler de chez elle et en effectuant ses principales activités par le biais d’un accès à distance aux ressources locales et en ligne à l’aide des services cloud Microsoft 365.
 
-Contoso avait des serveurs VPN d’accès à distance dans le siège social parisien pour prendre en charge 25 % de ses employés déjà distants, mais a rapidement été déplacé pour faire monter en charge sa capacité d’accès à distance pour prendre en charge 90 % de ses employés. Contoso a déployé des serveurs VPN d’accès à distance dans chaque bureau satellite afin que les travailleurs à distance utilisent un point d’entrée de fermeture régionale pour accéder à l’intranet Contoso.
+Contoso disposait de serveurs VPN d’accès à distance au siège de Paris pour prendre en charge les 25 % de sa main-d’œuvre déjà à distance, mais a rapidement décidé de mettre à l’échelle sa capacité d’accès à distance pour prendre en charge 90 % de son effectif. Contoso a déployé des serveurs VPN d’accès à distance dans chaque bureau satellite afin que les travailleurs distants utilisent un point d’entrée régional pour accéder à l’intranet Contoso.
 
-Contoso a également mis à jour la configuration des clients VPN installés sur des ordinateurs portables, des tablettes et des smartphones pour la tunnellation fractionnée afin que le trafic pour l’ensemble optimiser des points de terminaison Office 365 contourne la connexion VPN et a été envoyé directement sur Internet. Pour plus d’informations, voir Optimiser la Office 365 pour les utilisateurs distants à l’aide de [la tunneling fractionnement VPN](../enterprise/microsoft-365-vpn-split-tunnel.md).
+Contoso a également mis à jour la configuration des clients VPN installés sur des ordinateurs portables, des tablettes et des téléphones intelligents pour le tunneling fractionné afin que le trafic pour l’ensemble Optimize de Office 365 points de terminaison contourne la connexion VPN et soit envoyé directement sur Internet. Pour plus d’informations, consultez [Optimiser la connectivité Office 365 pour les utilisateurs distants à l’aide du tunneling fractionné VPN](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-Voici la configuration qui en résulte avec les périphériques VPN installés au siège social parisien et dans chacun des succursales. 
+Voici la configuration obtenue avec des périphériques VPN installés au siège de Paris et dans chacun des bureaux satellites. 
 
 ![Infrastructure VPN de Contoso.](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
-Un travailleur à distance avec le client VPN installé utilise DNS pour rechercher le bureau le plus proche de la région et se connecte au périphérique VPN installé à cet emplacement. Avec la tunnellisation fractionnée, le trafic vers Microsoft 365 optimiser les points de terminaison est envoyé directement à l’emplacement Microsoft 365 réseau le plus proche. Tout autre trafic est envoyé sur la connexion VPN au périphérique VPN.
+Un worker distant avec le client VPN installé utilise DNS pour rechercher le bureau le plus proche au plan régional et se connecte à l’appareil VPN qui y est installé. Avec le tunneling fractionné, le trafic vers les points de terminaison Microsoft 365 Optimize est envoyé directement à l’emplacement réseau Microsoft 365 le plus proche au niveau régional. Tout autre trafic est envoyé via la connexion VPN à l’appareil VPN.
 
 ## <a name="contosos-support-for-hybrid-work"></a>Prise en charge de Contoso pour le travail hybride
 
-Une fois que les modifications initiales ont été apportées pour prendre en charge la plupart des travailleurs à distance pendant les verrouillages régionaux, Contoso a apporté des modifications d’infrastructure pour prendre en charge le travail hybride dans lequel un travailleur peut être :
+Une fois que les modifications initiales ont été apportées pour prendre en charge la plupart des travailleurs à distance pendant les verrouillages régionaux, Contoso a apporté des modifications d’infrastructure pour prendre en charge le travail hybride dans lequel un worker peut être :
 
 - Toujours distant.
-- Toujours sur site.
-- Combinaison de sites sur site et distants.
+- Toujours sur place.
+- Combinaison d’éléments sur site et distants.
 
-Microsoft 365 fonctionnalités d’identité, de sécurité et de conformité sont conçues pour la confiance zéro et fonctionnent quel que soit l’emplacement de l’utilisateur et de son appareil. Pour plus d’informations, voir [Confiance zéro](https://www.microsoft.com/security/business/zero-trust).
+Les fonctionnalités d’identité, de sécurité et de conformité de Microsoft 365 sont conçues pour Confiance nulle et fonctionner indépendamment de l’emplacement de l’utilisateur et de son appareil. Pour plus d’informations, consultez [Confiance nulle](https://www.microsoft.com/security/business/zero-trust).
 
-Toutefois, la gestion des nouvelles installations et des mises à jour logicielles dépend de l’emplacement de l’appareil, car le logiciel à installer peut être issu d’une source sur site ou Internet. Les architectes informatiques de Contoso ont conçu leur nouvelle infrastructure d’installation et de mise à jour en fonction de l’emplacement de l’appareil, plutôt que du travail.
+Toutefois, la gestion des nouvelles installations et mises à jour des logiciels dépend de l’emplacement de l’appareil, car le logiciel à installer peut provenir d’une source locale ou Internet. Les architectes informatiques de Contoso ont conçu leurs nouvelles installations et mises à jour de l’infrastructure en fonction de l’emplacement de l’appareil, plutôt que du worker.
 
 Ils ont désigné deux types d’appareils : dédiés en local et itinérants.
 
-### <a name="dedicated-on-premises"></a>Dédié en local
+### <a name="dedicated-on-premises"></a>Dédié localement
 
-Un appareil local dédié est un ordinateur de bureau ou un serveur qui ne quitte jamais l’intranet contoso et n’a pas de client VPN installé. Ces appareils locaux continuent d’utiliser Microsoft Endpoint Configuration Manager et ses points de distribution pour les installations et les mises à jour de Windows 10, Applications Microsoft 365 pour les grandes entreprises et le navigateur Edge.
+Un appareil local dédié est un ordinateur de bureau ou de serveur qui ne quitte jamais l’intranet Contoso et n’a pas de client VPN installé. Ces appareils locaux continuent à utiliser Microsoft Endpoint Configuration Manager et ses points de distribution pour les installations et mises à jour de Windows 10, Applications Microsoft 365 pour les grandes entreprises et le navigateur Edge.
 
 ### <a name="roaming"></a>Itinérance
 
-Un appareil itinérant peut quitter l’intranet contoso et inclut des ordinateurs portables émis par de nombreux employés du bureau et tous les travailleurs à distance et d’autres appareils dont l’organisation est propriétaire, tels que les smartphones et les tablettes, avec le client VPN Contoso installé. 
+Un appareil itinérant peut quitter l’intranet contoso et inclut des ordinateurs portables émis pour de nombreux employés de bureau et tous les travailleurs à distance et d’autres appareils appartenant à l’organisation, tels que les téléphones intelligents et les tablettes, avec le client VPN Contoso installé. 
 
-Étant donné que ces appareils peuvent être connectés à Internet à tout moment, ils utilisent Intune ou d’autres services informatiques pour installer et mettre à jour Windows 10, Applications Microsoft 365 pour les grandes entreprises et Edge. Ils n’utilisent pas les points de distribution Configuration Manager locaux existants.
+Étant donné que ces appareils peuvent être connectés à Internet à tout moment, ils utilisent Intune ou d’autres services cloud pour installer et mettre à jour Windows 10, Applications Microsoft 365 pour les grandes entreprises et Edge. Ils n’utilisent pas les points de distribution locaux Configuration Manager existants.
 
-Cela signifie que certaines des installations et mises à jour de l’appareil itinérant seront réalisées sur Internet pendant qu’ils sont locaux et connectés à l’intranet. Toutefois, les architectes de Contoso ont décidé que la simplicité de configuration était plus importante que l’optimisation de la bande passante intranet vers Internet, en particulier lorsque la plupart des travailleurs à distance sont rarement connectés à l’intranet.
+Cela signifie que certaines des installations et mises à jour de l’appareil itinérant seront effectuées sur Internet alors qu’elles sont locales et connectées à l’intranet. Mais les architectes informatiques de Contoso ont décidé que la simplicité de la configuration était plus importante que l’optimisation de la bande passante intranet vers Internet, en particulier lorsque la plupart des travailleurs distants sont rarement connectés à l’intranet.
 
 Voici l’infrastructure qui en résulte.
 
-![Infrastructure d’installation et de mise à jour de Contoso.](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
+![L’infrastructure d’installation et de mise à jour de Contoso.](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
 
 Le comportement d’installation et de mise à jour est déterminé en faisant des comptes d’ordinateur des appareils un membre de l’un de ces groupes :
 
@@ -81,10 +81,10 @@ Le comportement d’installation et de mise à jour est déterminé en faisant d
 
 ## <a name="new-onboarding-process"></a>Nouveau processus d’intégration
 
-Pour un nouvel appareil local dédié émis à un nouvel employé ou pour un nouveau serveur dans un centre de données, lorsque le travailleur se connecté, le client Configuration Manager basé sur l’appartenance de l’appareil au groupe OnPremDevices télécharge et installe les dernières mises à jour pour Windows 10, Applications Microsoft 365 pour les grandes entreprises et Edge à partir de points de distribution Configuration Manager locaux. Une fois terminé, l’appareil local dédié est prêt à être utilisé et utilise ces points de distribution pour les mises à jour en cours.
+Pour un nouvel appareil local dédié émis à un nouveau worker ou pour un nouveau serveur dans un centre de données, lorsque le worker se connecte, le client Configuration Manager basé sur l’appartenance de l’appareil au groupe OnPremDevices télécharge et installe les dernières mises à jour pour Windows 10, Applications Microsoft 365 pour les grandes entreprises et Edge à partir de points de distribution Configuration Manager locaux. Une fois terminé, l’appareil local dédié est prêt à être utilisé et utilise ces points de distribution pour les mises à jour en cours.
 
-Pour un nouvel appareil distant émis à un nouveau travailleur, lorsque le travailleur se connecté, l’appareil, en fonction de son appartenance au groupe RoamingDevices, contacte le service cloud Intune et d’autres services, télécharge et installe les dernières mises à jour pour Windows 10, Applications Microsoft 365 pour les grandes entreprises et Edge. Une fois terminé, l’appareil distant est prêt à être utilisé et utilise le client VPN installé pour accéder aux ressources sur site et au réseau Microsoft 365 pour les mises à jour en cours.
+Pour un nouvel appareil distant émis à un nouveau worker, lorsque le worker se connecte, l’appareil, en fonction de son appartenance au groupe RoamingDevices, contacte le service cloud Intune et d’autres services et télécharge et installe les dernières mises à jour pour Windows 10, Applications Microsoft 365 pour les grandes entreprises et Edge. Une fois terminé, l’appareil distant est prêt à être utilisé et utilise le client VPN installé pour l’accès aux ressources locales et le réseau Microsoft 365 pour les mises à jour en cours.
 
 ## <a name="next-step"></a>Étape suivante
 
-[Configurer votre infrastructure pour le travail hybride](empower-people-to-work-remotely.md) dans votre organisation.
+[Configurez votre infrastructure pour le travail hybride](empower-people-to-work-remotely.md) dans votre organisation.

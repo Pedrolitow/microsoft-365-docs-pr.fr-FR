@@ -15,12 +15,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e8f1c04616bf26f337668f7556606eee0a39d70
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 28df68cefb8f559e270a6e3d5c0c43d34f9f4135
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586465"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691890"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 

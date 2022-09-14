@@ -17,12 +17,13 @@ ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 650dae61e71b17e4f63598f60177ab7c193c50b7
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+search.appverid: met150
+ms.openlocfilehash: 6214a8bdfd3f2d5e3fcd05ac06bc99699bf4b7a8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652338"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691516"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser des applets de commande PowerShell pour configurer et gérer l’antivirus Microsoft Defender
 

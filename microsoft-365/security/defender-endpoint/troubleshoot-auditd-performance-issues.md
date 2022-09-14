@@ -17,12 +17,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 0c953eef32dc3851fa9618f6204dec6b19e23bff
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 03548e71f73259f241b77656e94958d22266538a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584218"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691538"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances AuditD liés à Microsoft Defender pour point de terminaison sur Linux 
 

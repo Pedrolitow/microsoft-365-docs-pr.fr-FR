@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: a9a77ba77e1542a1d2e78ae7dc7dd07a21cd9b35
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 86d0ebd7978e80b101a9cf46665102cf642166e4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523421"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692440"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Ressources de Microsoft Defender pour point de terminaison utiles
 

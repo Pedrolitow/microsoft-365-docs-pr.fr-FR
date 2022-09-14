@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 2d436df67c9f0ee7e37ce7c6ea6e4580f24af0ff
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 6e83ffcac675f8a2ed0df789c9017d194b8de2aa
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67514328"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692264"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 

@@ -2,8 +2,7 @@
 title: Guide pratique pour déployer et configurer le complément de message de rapport
 description: Étapes de déploiement et de configuration des compléments de création de rapports de hameçonnage de Microsoft destinés aux administrateurs de sécurité.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: 99d41e962cf1b3949167e1b1275807d8b7de01ef
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: fd494b27654ba137409b3e29e21d81229ff5fddb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596762"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690660"
 ---
 # <a name="deploy-and-configure-the-report-message-add-in-to-users"></a>Déployez et configurez le complément de message de rapport pour les utilisateurs.
 

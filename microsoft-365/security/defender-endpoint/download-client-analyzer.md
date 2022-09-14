@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.subservice: m365d
-ms.openlocfilehash: 97f09194825ab4995190842b076bab22c4bcb23f
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 88a14fa438d49440929bf95a9de43f20ede5d69c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522695"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690419"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Télécharger l’analyseur client Microsoft Defender pour point de terminaison
 

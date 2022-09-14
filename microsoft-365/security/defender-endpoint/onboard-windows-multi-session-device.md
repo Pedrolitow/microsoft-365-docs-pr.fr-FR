@@ -16,12 +16,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.subservice: mde
-ms.openlocfilehash: 09ad845a8773b074a29c386c636eb3999cae6b4e
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 3c32a0bcde769084055b550431e14f80cff3d477
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578001"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691912"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Intégrer des appareils Windows dans Azure Virtual Desktop
 

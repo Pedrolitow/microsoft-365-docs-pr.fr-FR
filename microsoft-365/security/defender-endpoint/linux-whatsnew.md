@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.subservice: mde
-ms.openlocfilehash: 8cddb2ab6a1f56fddb9be30d33a0934e3189845b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+search.appverid: met150
+ms.openlocfilehash: 6c85535f5b79bef0bdc2782daf9111a307b648b0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661012"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67691120"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 

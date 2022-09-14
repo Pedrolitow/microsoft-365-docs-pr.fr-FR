@@ -16,12 +16,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 582edcff46b6576b1e11ddff0e10cd1e1b43facb
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 20ba75d7d3cf7b9b2921b14ee902ed6ff1f272b2
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584548"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690978"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender
 
