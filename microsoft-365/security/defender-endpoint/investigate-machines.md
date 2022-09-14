@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c1ff7eff6627ed231754dbdf9c31f740e053f154
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ad6cf3d61efec199d9a30ba67e06829b6f1feccb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519883"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688118"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils dans la liste des appareils Microsoft Defender pour point de terminaison
 
@@ -202,18 +203,25 @@ La carte **d’évaluation de la sécurité** affiche le niveau d’exposition g
 
 ### <a name="device-health-status"></a>État d’intégrité de l’appareil
 
-La carte **d’état d’intégrité** de l’appareil affiche un rapport d’intégrité résumé pour l’appareil spécifique. L’un des états suivants s’affiche en haut de la carte pour indiquer l’état global de l’appareil :
+La carte **d’état d’intégrité** de l’appareil affiche un rapport d’intégrité résumé pour l’appareil spécifique. L’un des messages suivants s’affiche en haut de la carte pour indiquer l’état global de l’appareil (répertorié dans l’ordre de priorité la plus élevée à la plus basse) :
 
-- L’appareil est à jour
-- La plateforme n’est pas à jour
-- Échec de l’analyse complète
-- Échec de l’analyse rapide
-- Le moteur n’est pas à jour
-- Le renseignement de sécurité n’est pas à jour
 - Antivirus Defender non actif
+- Le renseignement de sécurité n’est pas à jour
+- Le moteur n’est pas à jour
+- Échec de l’analyse rapide
+- Échec de l’analyse complète
+- La plateforme n’est pas à jour
+- L’état de la mise à jour du renseignement de sécurité est inconnu
+- L’état de mise à jour du moteur est inconnu
+- L’état de l’analyse rapide est inconnu
+- L’état complet de l’analyse est inconnu
+- L’état de mise à jour de la plateforme est inconnu
+- L’appareil est à jour
 - État non disponible pour macOS & Linux
 
 Les autres informations de la carte sont les suivantes : la dernière analyse complète, la dernière analyse rapide, la version de mise à jour du renseignement de sécurité, la version de mise à jour du moteur, la version de mise à jour de plateforme et le mode Antivirus Defender. 
+
+Notez qu’un cercle gris indique que les données sont inconnues. 
 
 >[!NOTE]
 >Le message d’état global pour les appareils macOS et Linux s’affiche actuellement comme « État non disponible pour macOS & Linux ». Actuellement, le résumé de l’état est disponible uniquement pour les appareils Windows. Toutes les autres informations du tableau sont à jour pour afficher les états individuels de chaque signal d’intégrité d’appareil pour toutes les plateformes prises en charge. 

@@ -16,12 +16,13 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 5683d215bbd9f70fa2ae992106d9245a0a46df75
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 15b38fc6e667996a88a793ae25fcc4efdb14f890
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522849"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688460"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Gérer Microsoft Defender pour point de terminaison avec des objets stratégie de groupe
 

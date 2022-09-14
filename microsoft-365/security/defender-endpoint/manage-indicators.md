@@ -15,12 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 8274c99ba61e5901b5f380783b2e242ce1387e4f
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 2cc23efadf5f8df7642ae0a64aebabda916ee6a2
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522871"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689916"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 

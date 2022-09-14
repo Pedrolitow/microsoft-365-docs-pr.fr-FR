@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 212a21accc314cc9ff235138eeb2784521a32502
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 447440dfb93d8e0c3814ae531c8feb7fc318d27f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516497"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689788"
 ---
 # <a name="overview-of-management-and-apis"></a>Vue d’ensemble de la gestion et des API
 

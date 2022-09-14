@@ -16,12 +16,13 @@ ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3ee7fa60e50d2b6ad606044b03eac4074443bd8a
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: f455ecdbb8ff337ef7521f5c814a9bb7613741ba
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575708"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689106"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser stratégie de groupe paramètres pour configurer et gérer l’antivirus Microsoft Defender
 

@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.subservice: mde
-ms.openlocfilehash: 7f0df3cbeffc641a6f734b7580772a740c2466e9
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 9892b5eafdbcbabf2038a287a7ae4e58081f72bc
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520904"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688812"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour point de terminaison sur iOS
 

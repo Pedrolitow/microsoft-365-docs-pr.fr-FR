@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 9b859e5ae75b2d00a1592c40f67838d6cdfce5fd
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: d22f71e732f98bc84816eee4863209905928c7a8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585133"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689314"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>Comprendre les concepts de veille des menaces
 

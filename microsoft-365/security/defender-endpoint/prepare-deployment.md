@@ -18,12 +18,13 @@ ms.collection:
 - highpri
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 7f730cdb342ef66ae0047d63637e6a88d644cd9b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 467cffc0f4283e33722ace3dd6ff36e2b3770f2c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583691"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689776"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer le déploiement de Microsoft Defender pour point de terminaison
 

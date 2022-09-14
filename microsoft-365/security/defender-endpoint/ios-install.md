@@ -16,12 +16,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: d2e70d724937c90d7a09a456350efa84abeaa0e0
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+search.appverid: met150
+ms.openlocfilehash: 16b02f80d7475200229ddffb0ab8b4ac50a770f5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652404"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688140"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour point de terminaison sur iOS
 

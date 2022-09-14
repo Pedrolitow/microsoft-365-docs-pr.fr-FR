@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 99e1eafa4134c444f8ba82abe8dc93a26dc2a01f
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 0d990ccec6e165ab061abe27b8c5ad26a37fa3d8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586003"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687722"
 ---
 # <a name="software-resource-type"></a>Type de ressource logicielle
 

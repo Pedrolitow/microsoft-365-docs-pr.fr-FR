@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 9a728cef7c23d65f2a6f39c1211854cb8c91c53f
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 03d058101296968f0b2f3e02e249f6b4c00be157
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661056"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687744"
 ---
 # <a name="data-sets"></a>Jeux de données
 
@@ -20,7 +20,7 @@ Microsoft centralise de nombreux jeux de données en une seule plateforme, Micro
 
 Microsoft collecte, analyse et indexe les données Internet pour aider les utilisateurs à détecter et à répondre aux menaces, à hiérarchiser les incidents et à identifier de manière proactive l’infrastructure des adversaires’ associée aux groupes d’acteurs ciblant leur organisation. Microsoft collecte des données Internet via son réseau de capteurs PDNS, un réseau proxy global d’utilisateurs virtuels, des analyses de port et tire parti de sources tierces pour les programmes malveillants et des données DNS (Domain Name System) ajoutées.
 
-Ces données Internet sont classées en deux groupes distincts : traditionnel et avancé. Les jeux de données traditionnels incluent resolutions, whois, certificats SSL, sous-domaines, hachages, DNS, DNS inversé et services. Les jeux de données avancés incluent les dispositifs de suivi, les composants, les paires d’hôtes et les cookies. Les dispositifs de suivi, les composants, les paires d’hôtes et les jeux de données cookies sont collectés à partir de l’observation des Document Object Model (DOM) des pages web analysés. En outre, les composants et les dispositifs de suivi sont également observés à partir de règles de détection déclenchées en fonction des réponses de bannière des analyses de port ou des détails du certificat SSL.
+Ces données Internet sont classées en deux groupes distincts : traditionnel et avancé. Les jeux de données traditionnels incluent résolutions, whois, certificats SSL, sous-domaines, DNS, DNS inversé et services. Les jeux de données avancés incluent les dispositifs de suivi, les composants, les paires d’hôtes et les cookies. Les dispositifs de suivi, les composants, les paires d’hôtes et les jeux de données cookies sont collectés à partir de l’observation des Document Object Model (DOM) des pages web analysés. En outre, les composants et les dispositifs de suivi sont également observés à partir de règles de détection déclenchées en fonction des réponses de bannière des analyses de port ou des détails du certificat SSL.
 
 ![Capture d’écran de Data Sets Edge](media/dataSetsEdgeScreenshot.png)
 
@@ -380,37 +380,6 @@ Nos données de paire d’hôtes incluent les éléments suivants :
 - Où les utilisateurs sont-ils redirigés depuis/vers ?
 
 - Quel type de redirection a lieu ?
-
-## <a name="hashes"></a>Hashes
-
-Microsoft collabore avec Proofpoint pour exposer les hachages de [programmes malveillants](/microsoft-365/security/intelligence/malware-naming) MD5 associés au domaine, à l’hôte ou à l’adresse IP d’une recherche utilisateur. Les utilisateurs sont encouragés à acheter une licence Emerging Threats par Proofpoint s’ils souhaitent analyser les détails du hachage MD5. Ces données aident les utilisateurs à comprendre les capacités d’acteur, l’intention et les motivations d’un attaquant, tout en aidant à connecter l’infrastructure. Chaque résultat contient un hachage unique.
-
-Nos données de hachage incluent les éléments suivants :
-
-- **Source :** source utilisée pour détecter le hachage.
-- **Exemple :** code d’identification unique pour le hachage détecté.
-- **Date de collecte :** jour où l’échantillon de hachage a été collecté par la source désignée.
-
-![Hachages de l’onglet Données](media/dataTabHashes.png)
-
-**Questions auxquelles ce jeu de données peut vous aider à répondre :**
-
-- Le domaine se connecte-t-il aux programmes malveillants ?
-
-    ![Hachages de jeux de données](media/dataSetsHashes.png)
-
-- Cette adresse IP est-elle associée à un programme malveillant ?
-    ![Hachages IP des jeux de données](media/dataSetsIPHashes.png)
-
-- Les hachages collectés sont-ils associés à des programmes malveillants ?
-
-- Depuis combien de temps cette activité suspecte a-t-elle été observée ?
-
-- Quels fournisseurs/sources ont observé des fichiers binaires malveillants ?
-
-- L’adresse IP ou le domaine interrogé a-t-il servi de serveur de commandes et de contrôles pour les programmes malveillants ?
-
-- L’évaluation du fichier associé au hachage pour une requête donnée peut-elle me conduire à d’autres indicateurs à des fins de repérage des menaces ?
 
 ## <a name="cookies"></a>Cookies
 

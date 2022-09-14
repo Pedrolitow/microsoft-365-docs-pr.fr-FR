@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.subservice: mde
-ms.openlocfilehash: fc870058e371e9bea23def223379055fb8ad7570
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 7b2253e356b4ed4fb905ec4637d3f976e6e38d21
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586377"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686964"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d’intégration Microsoft Defender pour point de terminaison
 

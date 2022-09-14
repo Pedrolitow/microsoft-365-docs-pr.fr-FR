@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - Strat_SP_gtc
@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: Découvrez l’expérience utilisateur de SharePoint, de OneDrive et d’Exchange dans un environnement multigéographique pour Microsoft 365.
-ms.openlocfilehash: 638aa7d65f9243bfd110eebac6473d641e1d0b61
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: a543653410d2b9330c0ea2c5e3e717918506ae2b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806935"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687194"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Expérience utilisateur dans un environnement multigéographique
 
@@ -32,7 +32,7 @@ La boîte aux lettres Exchange d’un utilisateur est approvisionnée dans l’e
 
 ## <a name="hub-sites"></a>Sites hub
 
-SharePoint sites hub améliorent la découverte et l’engagement avec le contenu pour les employés, tout en créant une représentation complète et cohérente des projets, départements ou régions. Dans un environnement multigéographique, des sites d’emplacements satellites peuvent facilement être associés à un site hub, indépendamment de l’emplacement géographique de celui-ci. Les utilisateurs peuvent rechercher et obtenir des résultats sur le hub via une simple expérience de recherche, indépendamment de l’emplacement géographique des sites.
+Les sites SharePoint Hub améliorent la découverte et l’engagement avec le contenu pour les employés, tout en créant une représentation complète et cohérente des projets, des départements ou des régions. Dans un environnement multigéographique, des sites d’emplacements satellites peuvent facilement être associés à un site hub, indépendamment de l’emplacement géographique de celui-ci. Les utilisateurs peuvent rechercher et obtenir des résultats sur le hub via une simple expérience de recherche, indépendamment de l’emplacement géographique des sites.
 
 ## <a name="microsoft-365-app-launcher"></a>Lanceur d’applications Microsoft 365
 
@@ -40,21 +40,21 @@ Le lanceur d’applications prend en compte la configuration multigéographique 
 
 ## <a name="office-applications"></a>Applications Office
 
-Office applications telles que Word, Excel et PowerPoint détectent automatiquement l’emplacement géographique OneDrive pour chaque utilisateur lorsqu’il se connecte. Les utilisateurs ne doivent pas entrer l’URL géographique spécifique de leurs sites OneDrive ou SharePoint.
+Les applications Office telles que Word, Excel et PowerPoint détectent automatiquement le géolocalisation OneDrive approprié pour chaque utilisateur lorsqu’il se connecte. Les utilisateurs ne doivent pas entrer l’URL géographique spécifique de leurs sites OneDrive ou SharePoint.
 
-## <a name="onedrive-sync-app"></a>Synchronisation OneDrive application
+## <a name="onedrive-sync-app"></a>application Synchronisation OneDrive
 
-L’application Synchronisation OneDrive (version 17.3.6943.0625 et versions ultérieures) détecte automatiquement l’emplacement OneDrive l’utilisateur. La prise en charge de l’application de synchronisation inclut la possibilité de synchroniser des sites basés sur des groupes, quel que soit leur emplacement géographique. Le Groove client de synchronisation n’est pas pris en charge pour multigéogé. 
+L’application Synchronisation OneDrive (version 17.3.6943.0625 et ultérieure) détecte automatiquement l’emplacement géographique OneDrive approprié pour l’utilisateur. La prise en charge de l’application de synchronisation inclut la possibilité de synchroniser des sites basés sur des groupes, quel que soit leur emplacement géographique. Le client de synchronisation Groove n’est pas pris en charge pour le multigéographique. 
 
-## <a name="onedrive-location"></a>OneDrive’emplacement
+## <a name="onedrive-location"></a>Emplacement OneDrive
 
-Les utilisateurs auront leurs OneDrive à leur emplacement de données préféré. Si un utilisateur navigue vers une URL OneDrive qui contient un emplacement géographique incorrect (tel qu’un signet d’un emplacement géographique précédent), il est automatiquement redirigé vers le OneDrive dans l’emplacement géographique approprié.
+Les utilisateurs ont leur OneDrive approvisionné dans leur emplacement de données préféré. Si un utilisateur accède à une URL OneDrive qui contient un emplacement géographique incorrect (par exemple, un signet d’un emplacement géographique précédent), il est automatiquement redirigé vers OneDrive à l’emplacement géographique approprié.
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS et Android 
 
-Le OneDrive applications mobiles iOS et Android affiche vos fichiers OneDrive et les fichiers partagés avec vous, quel que soit leur emplacement géographique. La recherche à partir OneDrive applications mobiles affiche les résultats pertinents de tous les emplacements géographiques. Téléchargez la dernière version de ces applications.
+Les applications mobiles OneDrive iOS et Android vous montreront vos fichiers et fichiers OneDrive partagés avec vous, quel que soit leur emplacement géographique. La recherche à partir des applications mobiles OneDrive affiche les résultats pertinents de tous les emplacements géographiques. Téléchargez la dernière version de ces applications.
 
-Pour plus d’informations, [voir Utiliser OneDrive sur iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) et [Utiliser OneDrive pour Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) pour plus d’informations.
+Pour plus d’informations, consultez Utiliser [OneDrive sur iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) et [Utiliser OneDrive pour Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) .
 
 ## <a name="onedrive-mobile-client"></a>Client mobile OneDrive 
 
@@ -62,7 +62,7 @@ Le client mobile OneDrive prend en compte la configuration multigéographique et
 
 ## <a name="search"></a>Search
 
-Chaque emplacement géographique possède son propre index de recherche et centre de recherche. Lorsqu’un utilisateur recherche, la requête est envoyée à tous les emplacements géographiques, et les résultats renvoyés sont fusionnés, puis classés afin que l’utilisateur obtient des résultats unifiés. Les utilisateurs obtiennent des résultats de tous les emplacements géographiques indépendamment de leur propre emplacement géographique. Pour [plus d’OneDrive Multi-Géo](configure-search-for-multi-geo.md), voir Configurer la recherche.
+Chaque emplacement géographique possède son propre index de recherche et son propre centre de recherche. Lorsqu’un utilisateur effectue une recherche, la requête est envoyée à tous les emplacements géographiques, et les résultats retournés sont fusionnés, puis classés afin que l’utilisateur obtienne des résultats unifiés. Les utilisateurs obtiennent des résultats à partir de tous les emplacements géographiques, quel que soit leur propre emplacement géographique. Pour plus d’informations, consultez [Configurer la recherche d’OneDrive Multi-Géo](configure-search-for-multi-geo.md).
 
 Les clients de recherche suivants sont pris en charge :
 
@@ -78,7 +78,7 @@ Les clients de recherche suivants sont pris en charge :
 
 ## <a name="sharepoint-home"></a>Page d’accueil SharePoint 
 
-Dans SharePoint Multi-Géo, votre SharePoint est hébergé à l’emplacement où réside l’utilisateur, comme déterminé par OneDrive emplacement. Par exemple : si l’utilisateur a son OneDrive hébergé dans un emplacement satellite européen, son SharePoint Accueil sera restituer à partir de l’Europe. La page d’accueil SharePoint inclut tout contenu pertinent pour l’utilisateur indépendamment de son emplacement géographique. 
+Dans SharePoint Multi-Géo, votre domicile SharePoint est hébergé à l’emplacement où réside l’utilisateur, comme déterminé par son emplacement OneDrive. Par exemple : si l’utilisateur a son OneDrive hébergé dans un emplacement satellite européen, sa page d’accueil SharePoint sera affichée à partir de l’Europe. La page d’accueil SharePoint inclut tout contenu pertinent pour l’utilisateur indépendamment de son emplacement géographique. 
 
 **Sites suivis, Actualités de sites, Sites récents, Sites fréquents et Sites suggérés**
 
@@ -94,11 +94,11 @@ Le client mobile SharePoint prend en compte la configuration multigéographique 
 
 ## <a name="sharing"></a>Partage
 
-L’interface du Sélecteur de personnes affiche tous les utilisateurs indépendamment de leur emplacement géographique. Cela permet à un utilisateur de partager avec un autre utilisateur dans le même emplacement géographique, ou dans tout autre emplacement géographique de votre locataire. Le contenu de différents emplacements géographiques s’affiche dans la vue Partagé avec moi dans les OneDrive, Word, Excel, PowerPoint et Office.com de l’utilisateur et est accessible avec l’expérience d'Sign-On unique, quel que soit l’emplacement géographique dans lequel il est hébergé.
+L’interface du Sélecteur de personnes affiche tous les utilisateurs indépendamment de leur emplacement géographique. Cela permet à un utilisateur de partager avec un autre utilisateur dans le même emplacement géographique, ou dans tout autre emplacement géographique de votre locataire. Le contenu provenant de différents emplacements géographiques s’affiche dans l’affichage **Partagé avec moi** dans OneDrive, Word, Excel, PowerPoint et Office.com de l’utilisateur et est accessible avec l’expérience de Sign-On unique, quel que soit l’emplacement géographique dans lequel il est hébergé.
 
 ## <a name="teams-experience"></a>Expérience Teams
 
-Teams est un service multigéogé. Les fichiers OneDrive et les fichiers récemment consultés s’affichent indépendamment de l’emplacement géographique de l’utilisateur. Les mentions @ fonctionnent avec des utilisateurs de tous les emplacements géographiques.
+Teams est un service multigéographique. Les fichiers OneDrive et les fichiers récemment consultés s’affichent indépendamment de l’emplacement géographique de l’utilisateur. Les mentions @ fonctionnent avec des utilisateurs de tous les emplacements géographiques.
 
 ## <a name="user-profiles"></a>Profils utilisateur
 

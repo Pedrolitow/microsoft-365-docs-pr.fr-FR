@@ -2,7 +2,6 @@
 title: Prise en main de la configuration approfondie de la défense pour la sécurité des e-mails
 description: Conseils de configuration pas à pas sur la façon d’obtenir la valeur de sécurité à partir de Microsoft Defender pour Office 365 lorsque vous disposez d’un filtrage de courrier tiers.
 search.product: ''
-search.appverid: ''
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,13 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: cdeaaecbf0f0473b9f066db5d0b87e34d722a6a2
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+search.appverid: met150
+ms.openlocfilehash: cb9d63c020a7857c31a77f41ce0c027c82ba81e7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67568336"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688312"
 ---
 # <a name="getting-the-best-security-value-from-microsoft-defender-for-office-365-when-you-have-third-party-email-filtering"></a>Obtention de la meilleure valeur de sécurité à partir de Microsoft Defender pour Office 365 lorsque vous disposez d’un filtrage de courrier tiers
 
@@ -121,7 +121,7 @@ Les informations ci-dessous détailleront comment tirer le meilleur parti de vot
 
 **Lisez-le ici :** [Migrer d’un service de protection tiers vers Microsoft Defender pour Office 365 - Office 365 | Microsoft Docs](../migrate-to-defender-for-office-365.md)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 [Migrer d’un service de protection tiers vers Microsoft Defender pour Office 365](../migrate-to-defender-for-office-365.md)
 

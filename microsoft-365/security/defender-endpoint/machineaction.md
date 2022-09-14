@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: fc651603a93ad4fe9d05265eed53b5a66d5f4e71
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 036e3f00c20a100fe3a64c108cfee649c375f6c4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516519"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688592"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 

@@ -2,8 +2,7 @@
 title: Comment exécuter des simulations d’attaque pour votre équipe
 description: Étapes d’envoi d’une charge utile de simulation d’attaque à vos utilisateurs cibles pour votre équipe ou organisation à des fins d’entraînement. Les attaques simulées peuvent vous aider à identifier et à rechercher des utilisateurs, des stratégies et des pratiques vulnérables avant qu’une attaque réelle n’affecte votre organisation.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: f9955b8c72323a6a924c516ba54ec89a5acead84
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: 527cf8f04d7ffee1dc649f6075451d7e9b1e4eeb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67593944"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688250"
 ---
 # <a name="how-to-run-attack-simulations-for-your-team"></a>Comment exécuter des simulations d’attaque pour votre équipe
 

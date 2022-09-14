@@ -17,12 +17,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 28f5ea1f30567622e176ad20058f6f1674edba5c
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+search.appverid: met150
+ms.openlocfilehash: e81e0a01b489c4741a83471c9401ae77482088bf
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652448"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686920"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender pour point de terminaison - Mobile Threat Defense
 

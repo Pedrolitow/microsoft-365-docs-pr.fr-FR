@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: d91f3f09ccc1ffd562d87f5018953a6cd4fc8574
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: a9a488da353fdf85c1e28ed86e61821d98a08e45
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388394"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689008"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 

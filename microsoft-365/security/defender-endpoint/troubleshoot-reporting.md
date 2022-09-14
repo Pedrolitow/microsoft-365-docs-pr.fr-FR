@@ -15,12 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 99bc4d5db7e05b17450fb898298605b9a1378a67
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: e7b4155443e3fb64e3cabc3ab04cbecf7126092c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586223"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689138"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour
 

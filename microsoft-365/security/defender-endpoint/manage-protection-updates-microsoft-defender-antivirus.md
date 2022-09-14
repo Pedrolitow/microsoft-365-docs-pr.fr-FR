@@ -15,12 +15,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 80c4a4d4e64679edc0cedca1283080203ad63f1a
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: be2bfc7e0e8cc9129519d27630edc33f3674f053
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520706"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689828"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 

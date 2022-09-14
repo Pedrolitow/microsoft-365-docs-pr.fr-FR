@@ -17,12 +17,13 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 9c7471783b3a3f9d8ab77b4a9b4416df170df04c
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 4fd262b5590d0ce292f05e32d9681cac9d9e4bac
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522827"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687008"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Gérer Microsoft Defender pour point de terminaison avec Intune
 

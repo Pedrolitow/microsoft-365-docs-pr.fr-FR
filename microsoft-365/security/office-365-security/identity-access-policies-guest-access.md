@@ -21,12 +21,13 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
-ms.openlocfilehash: d4f047272d11d8c4cd5d40a578bd508403d1b527
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 5ef7d48943ab33e9b148d51a651884f9b62943e5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596850"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687392"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Stratégies permettant d’autoriser l’accès invité et l’accès des utilisateurs externes B2B
 
@@ -53,7 +54,7 @@ Pour inclure ou exclure des invités et des utilisateurs externes dans les strat
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="Contrôles d’exclusion des invités et des utilisateurs externes" lightbox="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Invités et accès utilisateur externe avec Microsoft Teams
 

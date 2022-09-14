@@ -22,12 +22,13 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
-ms.openlocfilehash: d244fb96db686b34a201122f604f9b5aa1c2bd17
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 103f21e76d5e5712cc1dc7c2e264b1cefca1e0a4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581555"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689490"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passez de la protection des points de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
 

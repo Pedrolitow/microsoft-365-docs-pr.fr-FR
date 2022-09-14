@@ -2,8 +2,7 @@
 title: Évaluer l’impact des modifications de configuration de sécurité avec l’Explorateur
 description: Exemples et procédure pas à pas de l’utilisation de l’Explorateur pour déterminer l’impact d’un changement de contrôle de sécurité (configuration) dans Microsoft Defender pour Office 365
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: bd932ec15a6737d58951a56370e46d2d9c36fd9a
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: 83dae83889862b20bde0a4d00f6a9bb3821bdeea
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595914"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687316"
 ---
 # <a name="assess-the-impact-of-security-configuration-changes-with-explorer"></a>Évaluer l’impact des modifications de configuration de sécurité avec l’Explorateur
 

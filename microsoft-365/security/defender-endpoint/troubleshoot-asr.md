@@ -17,12 +17,13 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ced2de009678bc58ac103a05c53557b6198e52f8
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: ae7cd1e07ff4f8814b54c00a28d23d674b3dbd26
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584240"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689160"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Résoudre les problèmes liés aux règles de réduction de la surface d’attaque
 
@@ -94,7 +95,7 @@ Pour ajouter une exclusion, consultez [Personnaliser la réduction de la surface
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Signaler un faux positif ou un faux négatif
 
-Utilisez le [formulaire de soumission web Windows Defender Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) pour signaler un faux positif négatif ou faux pour la protection réseau. Avec un abonnement Windows E5, vous pouvez également [fournir un lien vers n’importe quelle alerte associée](alerts-queue.md).
+Utilisez le [formulaire de soumission web Windows Defender Security Intelligence](https://www.microsoft.com/wdsi/support/report-exploit-guard) pour signaler un faux positif négatif ou faux pour la protection réseau. Avec un abonnement Windows E5, vous pouvez également [fournir un lien vers n’importe quelle alerte associée](alerts-queue.md).
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Collecter des données de diagnostic pour les soumissions de fichiers
 

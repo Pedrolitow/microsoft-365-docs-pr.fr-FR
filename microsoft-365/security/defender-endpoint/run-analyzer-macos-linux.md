@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.subservice: m365d
-ms.openlocfilehash: 5cdc15e67a4fb9b6ae1a2cf743366f2eb72d20f2
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: d23180b8e50f8e9456a7cebf3c2cd0ef2ec56a1d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579960"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689578"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 

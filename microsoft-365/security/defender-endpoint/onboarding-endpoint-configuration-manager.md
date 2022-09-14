@@ -18,12 +18,13 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 37dd9e55422520fbd2fe1cce88d052503a331b9b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: bc950e1f850dab3a5d3474566145979be34b6ab9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575820"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688658"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
@@ -75,7 +76,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     :::image type="content" source="images/configmgr-device-collections.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft1" lightbox="images/configmgr-device-collections.png":::
 
-2. Cliquez avec le bouton droit sur **Regroupement d’appareils** , puis **sélectionnez Créer une collection d’appareils**.
+2. Sélectionnez La **collection d’appareils** , puis **créez une collection d’appareils**.
 
     :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft 2" lightbox="images/configmgr-create-device-collection.png":::
 
@@ -87,7 +88,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     :::image type="content" source="images/configmgr-query-rule.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft 4" lightbox="images/configmgr-query-rule.png":::
 
-5. Cliquez sur **Suivant** dans **l’Assistant Appartenance directe** , puis cliquez sur **Modifier l’instruction de requête**.
+5. Sélectionnez **Suivant** dans **l’Assistant Appartenance directe** , puis **sélectionnez Modifier l’instruction de requête**.
 
     :::image type="content" source="images/configmgr-direct-membership.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft5" lightbox="images/configmgr-direct-membership.png":::
 
@@ -95,7 +96,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     :::image type="content" source="images/configmgr-criteria.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft 6" lightbox="images/configmgr-criteria.png":::
 
-7. Conservez le type de critère comme **valeur simple**, choisissez où en tant que **système d’exploitation : numéro de build**, opérateur tel **qu’il est supérieur ou égal à** et valeur **14393** , puis cliquez sur **OK**.
+7. Conservez le type de critère comme **valeur simple**, choisissez où en tant que **système d’exploitation : numéro de build**, opérateur tel **qu’il est supérieur ou égal à** et valeur **14393** , puis sélectionnez **OK**.
 
     :::image type="content" source="images/configmgr-simple-value.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft 7" lightbox="images/configmgr-simple-value.png":::
 
@@ -144,36 +145,36 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
     :::image type="content" source="images/configmgr-policy-name.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft13" lightbox="images/configmgr-policy-name.png":::
 
-8. Cliquez sur **Parcourir**.
+8. Sélectionnez **Parcourir**.
 
 9. Accédez à l’emplacement du fichier téléchargé à l’étape 4 ci-dessus.
 
-10. Cliquez sur **Suivant**.
+10. Sélectionnez **Suivant**.
 11. Configurez l’Agent avec les exemples appropriés (**aucun** ou **tous les types de fichiers**).
 
     :::image type="content" source="images/configmgr-config-settings.png" alt-text="Paramètres de configuration1" lightbox="images/configmgr-config-settings.png":::
 
-12. Sélectionnez les données de télémétrie appropriées (**Normale** ou **Accélérée**), puis cliquez sur **Suivant**.
+12. Sélectionnez les données de télémétrie appropriées (**Normale** ou **Accélérée**), puis **sélectionnez Suivant**.
 
     :::image type="content" source="images/configmgr-telemetry.png" alt-text="Paramètres de configuration2" lightbox="images/configmgr-telemetry.png":::
 
-13. Vérifiez la configuration, puis cliquez sur **Suivant**.
+13. Vérifiez la configuration, puis sélectionnez **Suivant**.
 
     :::image type="content" source="images/configmgr-verify-configuration.png" alt-text="Paramètres de configuration3" lightbox="images/configmgr-verify-configuration.png":::
 
-14. Cliquez sur **Fermer** une fois l’Assistant terminé.
+14. Sélectionnez **Fermer** une fois l’Assistant terminé.
 
 15. Dans la console Microsoft Endpoint Configuration Manager, cliquez avec le bouton droit sur la stratégie Defender pour point de terminaison que vous venez de créer, puis sélectionnez **Déployer**.
 
     :::image type="content" source="images/configmgr-deploy.png" alt-text="Paramètres de configuration4" lightbox="images/configmgr-deploy.png":::
 
-16. Dans le volet droit, sélectionnez la collection créée précédemment, puis cliquez sur **OK**.
+16. Dans le volet droit, sélectionnez la collection créée précédemment, puis **sélectionnez OK**.
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Paramètres de configuration5" lightbox="images/configmgr-select-collection.png":::
 
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Versions précédentes du client Windows (Windows 7 et Windows 8.1)
 
-Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defender pour point de terminaison et la clé d’espace de travail, qui seront nécessaires pour l’intégration des versions précédentes de Windows.
+Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defender pour point de terminaison et la clé d’espace de travail qui seront nécessaires pour l’intégration des versions précédentes de Windows.
 
 1. Dans un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, sélectionnez **Paramètres** \> **Endpoints** \> **Onboarding** (sous **Gestion des appareils**).
 
@@ -209,7 +210,7 @@ Une fois l’opération terminée, vous devez voir les points de terminaison int
 
 ### <a name="next-generation-protection"></a>Protection de nouvelle génération
 
-L’antivirus Microsoft Defender est une solution de protection contre les programmes malveillants intégrée qui offre une protection nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs.
+L’Antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs.
 
 1. Dans la console Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** et choisissez **Créer une stratégie anti-programme malveillant**.
 
@@ -245,7 +246,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     :::image type="content" source="images/f5508317cd8c7870627cb4726acd5f3d.png" alt-text="Volet de protection de nouvelle génération10" lightbox="images/f5508317cd8c7870627cb4726acd5f3d.png":::
 
-4. Ciblez la nouvelle stratégie anti-programme malveillant dans votre collection Windows, puis cliquez sur **OK**.
+4. Ciblez la nouvelle stratégie anti-programme malveillant dans votre collection Windows, puis sélectionnez **OK**.
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Volet de protection de nouvelle génération11" lightbox="images/configmgr-select-collection.png":::
 
@@ -255,9 +256,9 @@ Une fois cette tâche terminée, vous avez correctement configuré l’antivirus
 
 Le pilier de réduction de la surface d’attaque de Defender pour point de terminaison inclut l’ensemble de fonctionnalités disponible sous Exploit Guard. Règles de réduction de la surface d’attaque (ASR), Accès contrôlé aux dossiers, Protection réseau et Exploit Protection.
 
-Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a aucun impact sur l’utilisateur final. Tout ce qu’il fait est de collecter des données de télémétrie supplémentaires et de les rendre disponibles dans le portail Microsoft 365 Defender. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode bloc.
+Toutes ces fonctionnalités fournissent un mode test et un mode bloc. En mode test, il n’y a aucun impact sur l’utilisateur final. Tout ce qu’il fait est de collecter des données de télémétrie supplémentaires et de les rendre disponibles dans le portail Microsoft 365 Defender. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode bloc.
 
-Pour définir des règles ASR en mode Audit :
+Pour définir des règles ASR en mode test :
 
 1. Dans la console Configuration Manager du point de terminaison Microsoft, accédez à La **vue d’ensemble \> des ressources et de la conformité \> Endpoint Protection \> Windows Defender Exploit Guard** et choisissez **Créer une stratégie Exploit Guard**.
 
@@ -265,15 +266,15 @@ Pour définir des règles ASR en mode Audit :
 
 2. Sélectionnez **Réduction de la surface d’attaque**.
 
-3. Définissez les règles sur **Auditer** , puis cliquez sur **Suivant**.
+3. Définissez les règles sur **Audit et** sélectionnez **Suivant**.
 
    :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="Console microsoft endpoint Configuration Manager 1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
-4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant**.
+4. Confirmez la nouvelle stratégie Exploit Guard en sélectionnant **Suivant**.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Microsoft Endpoint Configuration Manager console2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Une fois la stratégie créée, cliquez sur **Fermer**.
+5. Une fois la stratégie créée, sélectionnez **Fermer**.
 
    :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="Le point de terminaison Microsoft Configuration Manager console3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
@@ -281,11 +282,11 @@ Pour définir des règles ASR en mode Audit :
 
    :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Console Configuration Manager du point de terminaison Microsoft 4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-7. Ciblez la stratégie sur la collection Windows nouvellement créée, puis cliquez sur **OK**.
+7. Ciblez la stratégie sur la collection Windows nouvellement créée, puis sélectionnez **OK**.
 
    :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Console microsoft endpoint Configuration Manager 5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Une fois cette tâche terminée, vous avez correctement configuré les règles ASR en mode audit.
+Une fois cette tâche terminée, vous avez correctement configuré les règles ASR en mode test.
 
 Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les règles ASR sont correctement appliquées aux points de terminaison. (Cela peut prendre quelques minutes)
 
@@ -293,21 +294,21 @@ Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les rè
 
 2. Sélectionnez **Gestion de la configuration** dans le menu de gauche.
 
-3. Cliquez sur **Go pour accéder à la gestion de la surface d’attaque** dans le panneau gestion de la surface d’attaque.
+3. Sélectionnez **Accéder à la gestion de la surface d’attaque** dans le panneau de gestion de la surface d’attaque.
 
    :::image type="content" source="images/security-center-attack-surface-mgnt-tile.png" alt-text="Gestion de la surface d’attaque" lightbox="images/security-center-attack-surface-mgnt-tile.png":::
 
-4. Cliquez sur **l’onglet Configuration** dans les rapports de règles de réduction de la surface d’attaque. Il présente la vue d’ensemble de la configuration des règles ASR et l’état des règles ASR sur chaque appareil.
+4. Sélectionnez **l’onglet Configuration** dans les rapports de règles de réduction de la surface d’attaque. Il présente la vue d’ensemble de la configuration des règles ASR et l’état des règles ASR sur chaque appareil.
 
    :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="Les règles de réduction de la surface d’attaque indiquent1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
 
-5. Cliquez sur chaque appareil pour afficher les détails de configuration des règles ASR.
+5. Sélectionnez chaque appareil pour afficher les détails de configuration des règles ASR.
 
    :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="Les règles de réduction de la surface d’attaque indiquent2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
 
 Pour plus d’informations, consultez [Optimiser le déploiement de règles ASR et les détections](/microsoft-365/security/defender-endpoint/configure-machines-asr) .
 
-#### <a name="set-network-protection-rules-in-audit-mode"></a>Définir des règles de protection réseau en mode Audit
+#### <a name="set-network-protection-rules-in-test-mode"></a>Définir des règles de protection réseau en mode test
 
 1. Dans la console Configuration Manager du point de terminaison Microsoft, accédez à La **vue d’ensemble \> des ressources et de la conformité \> Endpoint Protection \> Windows Defender Exploit Guard** et choisissez **Créer une stratégie Exploit Guard**.
 
@@ -315,15 +316,15 @@ Pour plus d’informations, consultez [Optimiser le déploiement de règles ASR 
 
 2. Sélectionnez **Protection réseau**.
 
-3. Définissez le paramètre **sur Audit,** puis cliquez sur **Suivant**.
+3. Définissez le paramètre **sur Audit et** sélectionnez **Suivant**.
 
    :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
 
-4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant**.
+4. Confirmez la nouvelle stratégie Exploit Guard en sélectionnant **Suivant**.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="La stratégie Exploit Guard1" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Une fois la stratégie créée, cliquez sur **Fermer**.
+5. Une fois la stratégie créée, sélectionnez **Fermer**.
 
    :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="La stratégie Exploit Guard2" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
@@ -335,9 +336,9 @@ Pour plus d’informations, consultez [Optimiser le déploiement de règles ASR 
 
    :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Le point de terminaison Microsoft Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Une fois cette tâche terminée, vous avez correctement configuré la protection réseau en mode audit.
+Une fois cette tâche terminée, vous avez correctement configuré la protection réseau en mode test.
 
-#### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>Pour définir des règles d’accès contrôlé aux dossiers en mode Audit
+#### <a name="to-set-controlled-folder-access-rules-in-test-mode"></a>Pour définir des règles d’accès contrôlé aux dossiers en mode test
 
 1. Dans la console Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance** > **Overview** > **Endpoint Protection** >  **Windows Defender Exploit Guard**, puis choisissez **Créer une stratégie Exploit Guard**.
 
@@ -345,15 +346,15 @@ Une fois cette tâche terminée, vous avez correctement configuré la protection
 
 2. Sélectionnez **Accès contrôlé aux dossiers**.
 
-3. Définissez la configuration sur **Audit,** puis cliquez sur **Suivant**.
+3. Définissez la configuration sur **Audit et** sélectionnez **Suivant**.
 
    :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="Le point de terminaison Microsoft Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
 
-4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant**.
+4. Confirmez la nouvelle stratégie Exploit Guard en sélectionnant **Suivant**.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Le point de terminaison Microsoft Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Une fois la stratégie créée, cliquez sur **Fermer**.
+5. Une fois la stratégie créée, sélectionnez **Fermer**.
 
    :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="Le point de terminaison Microsoft Configuration Manager-6" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
@@ -361,13 +362,11 @@ Une fois cette tâche terminée, vous avez correctement configuré la protection
 
    :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Le point de terminaison Microsoft Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-
-7. Ciblez la stratégie sur la collection Windows nouvellement créée, puis cliquez sur **OK**.
-
+7. Ciblez la stratégie sur la collection Windows nouvellement créée, puis sélectionnez **OK**.
 
 :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Le point de terminaison Microsoft Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Vous avez maintenant correctement configuré l’accès contrôlé aux dossiers en mode audit.
+Vous avez maintenant correctement configuré l’accès contrôlé aux dossiers en mode test.
 
 ## <a name="related-topic"></a>Rubrique connexe
 

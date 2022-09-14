@@ -15,12 +15,13 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 155a335dc0d3a744b226e59551bfd0da732366ca
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 6fbb5d6a3ef37b3dde4f453c4e1823e3030617ed
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577847"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687656"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour l’antivirus Microsoft Defender
 

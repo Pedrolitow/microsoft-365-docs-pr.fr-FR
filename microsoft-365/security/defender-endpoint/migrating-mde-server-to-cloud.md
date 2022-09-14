@@ -14,12 +14,13 @@ ms.collection:
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.subservice: mde
-ms.openlocfilehash: 2290a736ccb5460fac26db0263b475aadbcbd832
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 1d4130d2e96964f3ed70ed742e7a9f7cd8a2f230
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577538"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688482"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Migration de serveurs de Microsoft Defender pour point de terminaison vers Microsoft Defender pour cloud
 

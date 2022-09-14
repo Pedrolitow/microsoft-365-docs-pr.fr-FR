@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 371a59c4fb0a081ee80fc7c3a6c298730ee49c4b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ffd814f3cbb90a072ce8dbe21aa3f3793cfa9c01
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522540"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687106"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 

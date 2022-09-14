@@ -15,12 +15,13 @@ manager: dansimp
 ms.custom: asr
 ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d0980c241d9946e1a8340162192bdb93c5bcc002
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: aa00aa4652edb3fa253573c451292c199617410e
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576778"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688438"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles ASR
 

@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: b41a5f69d2f7890c0215571d91f126b426e63d53
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: b426e9457fd3393e5fe506f32c8045eabe0783a5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67514348"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688766"
 ---
 # <a name="log-in-to-jamf-pro"></a>Se connecter à Jamf Pro
 

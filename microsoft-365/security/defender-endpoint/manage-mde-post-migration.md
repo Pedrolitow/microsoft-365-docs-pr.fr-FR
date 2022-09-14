@@ -17,12 +17,13 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: f5f0532e4bbcbbbfac19b1b5d123000e447404d7
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 498ac097bfa829b13ef90c2db9433ac85b70ece4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522408"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689850"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>Gérer Microsoft Defender pour point de terminaison après l’installation ou la migration initiale
 
