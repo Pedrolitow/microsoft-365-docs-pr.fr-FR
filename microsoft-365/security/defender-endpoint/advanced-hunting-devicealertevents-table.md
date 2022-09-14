@@ -2,7 +2,7 @@
 title: Table DeviceAlertEvents dans le schéma de chasse avancé
 description: En savoir plus sur les événements de génération d’alerte dans la table DeviceAlertEvents du schéma de chasse avancé
 keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, mdatp, microsoft defender atp, microsoft defender pour point de terminaison, recherche wdatp, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, DeviceAlertEvents, alerte, gravité, catégorie
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
-ms.technology: mde
-ms.openlocfilehash: 1742c674cb982282d8edbe73e43e6ea59fedf8f6
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.subservice: mde
+ms.openlocfilehash: fa6d6ef9954da4e11e4d6af5ecc1e8fa4658cdcb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281836"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678644"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 

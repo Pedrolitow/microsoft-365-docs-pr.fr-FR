@@ -4,7 +4,7 @@ description: Décrit comment configurer Microsoft Defender pour point de termina
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mde, android, configuration, MAM, stratégies de protection des applications, application managée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: d6d9561f381771fb322a281f33f840c27ce61f90
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.subservice: mde
+ms.openlocfilehash: f8417501dbf1583cf2eb3e062e39822e6b0c2108
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437795"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67679666"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configurer Microsoft Defender pour point de terminaison signaux de risque à l’aide de stratégies de protection des applications (MAM)
 

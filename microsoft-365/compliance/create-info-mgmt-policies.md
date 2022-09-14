@@ -23,11 +23,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer une stratégie de gestion des informations pour contrôler la durée de conservation des informations et suivre qui les utilise.
 ms.openlocfilehash: d62eea4c43e6c171bf8c640e341933e81a23e0d0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758968"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67678908"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 
@@ -46,13 +46,13 @@ Pour plus d’informations, consultez [Présentation des stratégies de gestion 
 
 Pour vous assurer qu’une stratégie d’information est appliquée à tous les documents d’un certain type au sein d’une collection de sites, envisagez de créer la stratégie au niveau de la collection de sites, puis appliquez la stratégie aux types de contenu. Ces stratégies sont appelées stratégies de collection de sites.
 
-1. Sur la page \> d’accueil de la collection de sites **Paramètres**![ SharePoint bouton Paramètres 2016 dans la barre de titre.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
+1. Dans la page d’accueil de la collection \> de sites, bouton **Paramètres**![SharePoint 2016 dans la barre de titre.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
 
-    Dans un SharePoint site connecté à un groupe, cliquez sur **Paramètres**, cliquez sur **Contenu du site**, puis sur **Site Paramètres**.
+    Dans un site connecté à un groupe SharePoint, cliquez sur **Paramètres**, sur **Contenu du site**, puis sur **Paramètres du site**.
 
-2. Dans la page Paramètres site, sous Modèles de stratégie **de type de contenu** **Administration** \> de collection de sites.
+2. Dans la page Paramètres du site, sous Modèles de stratégie **de type de contenu** **Administration** \> de collection de sites.
 
-   ![Lien Du modèle de stratégie de type de contenu sur la page Paramètres site.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Lien du modèle de stratégie de type de contenu sur la page Paramètres du site.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. Dans la page \> **Stratégies, créez**.
 
@@ -69,17 +69,17 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
  Vous pouvez également ajouter une stratégie de gestion des informations à un type de contenu spécifique aux listes. Cela a pour effet d’appliquer la stratégie uniquement aux éléments de cette liste qui utilisent le type de contenu.
 
-1. Sur la page \> d’accueil de la collection de sites **Paramètres**![ SharePoint bouton Paramètres 2016 dans la barre de titre.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
+1. Dans la page d’accueil de la collection \> de sites, bouton **Paramètres**![SharePoint 2016 dans la barre de titre.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
 
-    Dans un SharePoint site connecté à un groupe, cliquez sur **Paramètres**, cliquez sur **Contenu du site**, puis sur **Site Paramètres**.
+    Dans un site connecté à un groupe SharePoint, cliquez sur **Paramètres**, sur **Contenu du site**, puis sur **Paramètres du site**.
 
-2. Dans la page Paramètres site, sous Les **types de contenu du site** **Web Designer Galleries**\>.
+2. Dans la page Paramètres du site, sous Les **types de contenu du site** **Web Designer Galleries**\>.
 
-   ![Lien types de contenu de site sur la page Paramètres site.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+   ![Lien types de contenu de site sur la page Paramètres du site.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
 
-3. Dans la page Paramètres type de contenu du site, sélectionnez le type de contenu auquel vous souhaitez ajouter une stratégie.
+3. Dans la page Paramètres du type de contenu du site, sélectionnez le type de contenu auquel vous souhaitez ajouter une stratégie.
 
-4. Dans la page Type de contenu du site, sous **Paramètres** \> **paramètres de stratégie de gestion des informations**.
+4. Dans la page Type de contenu du site, sous **Paramètres des paramètres** \> **de stratégie de gestion des informations**.
 
 5. Dans la page Modifier la stratégie, entrez un nom et une description pour la stratégie, puis écrivez une brève description qui explique aux utilisateurs à quoi sert la stratégie.
 
@@ -121,7 +121,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
    La fonctionnalité Stratégie d’audit permet aux organisations de créer et d’analyser des pistes d’audit pour les documents et de répertorier des éléments tels que des listes de tâches, des listes de problèmes, des groupes de discussion et des calendriers. Cette fonctionnalité de stratégie fournit un journal d’audit qui enregistre les événements, par exemple lorsque le contenu est affiché, modifié ou supprimé.
 
-   Lorsque l’audit est activé dans le cadre d’une stratégie de gestion des informations, les administrateurs peuvent afficher les données d’audit dans les rapports d’utilisation de stratégie qui sont basés sur Microsoft Excel et qui résument l’utilisation actuelle. Les administrateurs peuvent se servir de ces rapports pour déterminer comment l'information est utilisée dans l'organisation. Ces rapports peuvent également aider les organisations à vérifier et documenter leur conformité réglementaire ou à examiner les préoccupations potentielles.
+   Lorsque l’audit est activé dans le cadre d’une stratégie de gestion des informations, les administrateurs peuvent afficher les données d’audit dans les rapports d’utilisation de stratégie basés sur Microsoft Excel et qui résument l’utilisation actuelle. Les administrateurs peuvent se servir de ces rapports pour déterminer comment l'information est utilisée dans l'organisation. Ces rapports peuvent également aider les organisations à vérifier et documenter leur conformité réglementaire ou à examiner les préoccupations potentielles.
 
    Le journal d’audit enregistre les informations suivantes : nom de l’événement, date et heure de l’événement et nom système de l’utilisateur qui a effectué l’action.
 
@@ -148,7 +148,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
     2. Pour verrouiller une étiquette afin qu’elle ne puisse pas être modifiée une fois qu’elle a été insérée, choisissez **Empêcher les modifications apportées aux étiquettes une fois qu’elles ont été ajoutées**.
 
-       Ce paramètre empêche la mise à jour du texte de l’étiquette une fois l’étiquette insérée dans un élément d’une application cliente telle que Word, Excel ou PowerPoint. Si vous souhaitez que l’étiquette soit mise à jour lorsque les propriétés de ce document ou élément sont mises à jour, ne cochez pas cette case.
+       Ce paramètre empêche la mise à jour du texte de l’étiquette une fois que l’étiquette a été insérée dans un élément au sein d’une application cliente telle que Word, Excel ou PowerPoint. Si vous souhaitez que l’étiquette soit mise à jour lorsque les propriétés de ce document ou élément sont mises à jour, ne cochez pas cette case.
 
     3. Dans la zone De format d’étiquette, entrez le texte de l’étiquette comme vous le souhaitez. Les étiquettes peuvent contenir jusqu’à 10 références de colonne, chacune pouvant contenir jusqu’à 255 caractères. Pour créer le format de votre étiquette, procédez comme suit :
        - Tapez les noms des colonnes que vous souhaitez inclure dans l’étiquette dans l’ordre dans lequel vous souhaitez qu’elles apparaissent. Placez les noms de colonnes entre crochets ({}), comme illustré dans l’exemple de la page Modifier la stratégie.
@@ -185,15 +185,15 @@ Vous avez au moins besoin de l’autorisation Gérer les listes pour modifier le
 
 1. Accédez à la liste ou à la bibliothèque pour laquelle vous souhaitez spécifier une stratégie de gestion des informations.
 
-2. Dans le ruban, choisissez l’onglet \> **Bibliothèque** ou **Liste** **Paramètres** bibliothèque ou **liste Paramètres**.
+2. Dans le ruban, choisissez l’onglet \> **Bibliothèque** ou **Liste** **Paramètres de la bibliothèque** ou **Paramètres de liste**.
 
-   Dans SharePoint Online, cliquez sur **Paramètres**, puis sur **Paramètres de liste ou Paramètres** **de bibliothèque**.
+   Dans SharePoint Online, cliquez sur **Paramètres** , puis sur **Paramètres de liste** ou **paramètres de bibliothèque**.
 
 3. Sous **Autorisations et**\> **paramètres de stratégie de gestion des informations de gestion**.
 
    ![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
-4. Dans la page Paramètres stratégie de gestion des informations, assurez-vous que la source de rétention de la liste ou de la bibliothèque est définie sur Bibliothèque et dossiers.
+4. Dans la page Paramètres de stratégie de gestion des informations, assurez-vous que la source de rétention de la liste ou de la bibliothèque est définie sur Bibliothèque et Dossiers.
 
    Si **le type de contenu** apparaît comme source, cliquez sur **Modifier la source**, puis sur **Bibliothèque et dossiers**. Vous êtes averti que les stratégies de rétention de type de contenu seront ignorées. Sélectionnez **OK**.
 
@@ -232,9 +232,9 @@ Si des stratégies de gestion des informations ont déjà été créées pour vo
 
 1. Accédez à la liste ou à la bibliothèque qui contient le type de contenu auquel vous souhaitez appliquer une stratégie.
 
-2. Dans le ruban, choisissez l’onglet \> **Bibliothèque** ou **Liste** **Paramètres** bibliothèque ou **liste Paramètres**.
+2. Dans le ruban, choisissez l’onglet \> **Bibliothèque** ou **Liste** **Paramètres de la bibliothèque** ou **Paramètres de liste**.
 
-   Dans SharePoint Online, cliquez sur **Paramètres**, puis sur **Paramètres de liste ou Paramètres** **de bibliothèque**.
+   Dans SharePoint Online, cliquez sur **Paramètres** , puis sur **Paramètres de liste** ou **paramètres de bibliothèque**.
 
 3. Sous **Autorisations et** \> **paramètres de stratégie de gestion des informations de gestion**.
 
@@ -267,13 +267,13 @@ Vous pouvez définir une stratégie de gestion des informations, puis créer un 
 ### <a name="export-a-policy"></a>Exporter une stratégie
 <a name="__toc260646790"> </a>
 
-1. Dans la page d’accueil de la collection de sites, choisissez **Paramètres**![ Small Paramètres matériel qui a pris la place de Site Paramètres.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Paramètres**.
+1. Dans la page d’accueil de la collection de sites, choisissez **l’engrenage Paramètres**![petits paramètres qui a pris la place des paramètres du site.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Paramètres du site**.
 
-   Dans un SharePoint site connecté à un groupe, cliquez sur **Paramètres**, cliquez sur **Contenu du site**, puis sur **Site Paramètres**.
+   Dans un site connecté à un groupe SharePoint, cliquez sur **Paramètres**, sur **Contenu du site**, puis sur **Paramètres du site**.
 
-2. Dans la page Paramètres site, sous Modèles de stratégie **de type de contenu** **Administration** \> de collection de sites.
+2. Dans la page Paramètres du site, sous Modèles de stratégie **de type de contenu** **Administration** \> de collection de sites.
 
-   ![Lien Du modèle de stratégie de type de contenu sur la page Paramètres site.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Lien du modèle de stratégie de type de contenu sur la page Paramètres du site.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. Choisissez la stratégie que vous souhaitez exporter en faisant défiler **l’exportation**\> vers le bas.\>
 
@@ -286,11 +286,11 @@ Vous pouvez définir une stratégie de gestion des informations, puis créer un 
 
 L’importation d’une stratégie de gestion des informations vous permet de l’appliquer à plusieurs types de contenu au niveau du site ou de la liste au sein d’une collection de sites donnée. Les avantages de cette opération sont doubles : vous n’avez pas à la re-définir et à appliquer la stratégie sur chaque type de contenu, et vous pouvez gérer plus facilement les modifications de stratégie en apportant des modifications à la stratégie à un seul endroit.
 
-1. Sur la page d’accueil de la collection de sites à laquelle vous souhaitez appliquer la stratégie, choisissez **Paramètres**![ Small Paramètres matériel qui a pris la place de Site Paramètres.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Paramètres**.
+1. Sur la page d’accueil de la collection de sites à laquelle vous souhaitez appliquer la stratégie, choisissez **l’engrenage Paramètres**![petits paramètres qui a pris la place des paramètres de site.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Paramètres du site**.
 
-   Dans un SharePoint site connecté à un groupe, cliquez sur **Paramètres**, cliquez sur **Contenu du site**, puis sur **Site Paramètres**.
+   Dans un site connecté à un groupe SharePoint, cliquez sur **Paramètres**, sur **Contenu du site**, puis sur **Paramètres du site**.
 
-2. Dans la page Paramètres site, sous Modèles de stratégie **de type de contenu** **Administration** \> de collection de sites.
+2. Dans la page Paramètres du site, sous Modèles de stratégie **de type de contenu** **Administration** \> de collection de sites.
 
 3. Dans la page \> **Stratégies, importez** \> **parcourir** pour rechercher le fichier XML de la stratégie.
 

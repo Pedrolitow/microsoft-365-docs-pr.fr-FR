@@ -1,8 +1,8 @@
 ---
 title: Configurer les notifications d’alerte envoyées aux MSSP
 description: Configurer les notifications d’alerte envoyées aux MSSP
-keywords: fournisseur de services de sécurité géré, mssp, configurer, intégration
-ms.prod: m365-security
+keywords: fournisseur de services de sécurité managé, mssp, configure, integration
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cead78048fcf8ef25637e969aae816b7a8d8e76
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.subservice: mde
+ms.openlocfilehash: b086014e718c504d990271536c69a7aba16311ce
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217481"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67678842"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>Configurer les notifications d’alerte envoyées aux MSSP
 
@@ -28,23 +28,23 @@ ms.locfileid: "61217481"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 > [!NOTE]
-> Cette étape peut être effectuée par le client MSSP ou MSSP. Les MSSP doivent avoir les autorisations appropriées pour configurer cette configuration au nom du client MSSP.
+> Cette étape peut être effectuée par le client MSSP ou MSSP. Les MSSP doivent disposer des autorisations appropriées pour configurer cela pour le compte du client MSSP.
 
-Une fois l’accès au portail accordé, des règles de notification d’alerte peuvent être créées afin que les messages électroniques soient envoyés aux MSSP lorsque des alertes associées au client sont créées et que des conditions définies sont remplies.
+Une fois l’accès au portail accordé, des règles de notification d’alerte peuvent être créées afin que les e-mails soient envoyés aux MSSP lorsque des alertes associées au locataire sont créées et que les conditions définies sont remplies.
 
-Pour plus d’informations, voir [Créer des règles pour les notifications d’alerte.](configure-email-notifications.md#create-rules-for-alert-notifications)
+Pour plus d’informations, consultez [Créer des règles pour les notifications d’alerte](configure-email-notifications.md#create-rules-for-alert-notifications).
 
 Ces cases à cocher doivent être cochées :
 
-- **Inclure le nom de l’organisation** : le nom du client sera ajouté aux notifications par courrier électronique
-- **Inclure un lien portail** propre au client : l’URL du lien d’alerte aura un paramètre spécifique au client (tid=target_tenant_id) qui permet un accès direct au portail client cible
+- **Inclure le nom de l’organisation** : le nom du client sera ajouté aux notifications par e-mail
+- **Inclure un lien de portail spécifique au locataire** - L’URL du lien d’alerte aura un paramètre spécifique au locataire (tid=target_tenant_id) qui permet un accès direct au portail du locataire cible
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Accorder l’accès MSSP au portail](grant-mssp-access.md)
 - [Accéder au portail client MSSP](access-mssp-portal.md)

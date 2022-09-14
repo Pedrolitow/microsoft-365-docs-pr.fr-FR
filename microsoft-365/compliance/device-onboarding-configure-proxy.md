@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection
 ms.openlocfilehash: 2d0bc6484636cffb479ccb96b3458fddf0697cd7
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: HT
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327412"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67679842"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-information-protection"></a>Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection
 

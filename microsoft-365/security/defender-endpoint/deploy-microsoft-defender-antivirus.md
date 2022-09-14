@@ -1,8 +1,8 @@
 ---
 title: Déployer et activer l’antivirus Microsoft Defender
-description: Déployez Antivirus Microsoft Defender pour la protection de vos points de terminaison avec des Microsoft Intune, des Microsoft Endpoint Configuration Manager, des stratégie de groupe, des applets de commande PowerShell ou WMI.
-keywords: déployer, activer Antivirus Microsoft Defender
-ms.prod: m365-security
+description: Déployez l’Antivirus Microsoft Defender pour la protection de vos points de terminaison avec Microsoft Intune, microsoft endpoint Configuration Manager, stratégie de groupe, applets de commande PowerShell ou WMI.
+keywords: déployer, activer, Antivirus Microsoft Defender
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f3ab5a838945121a9c46a5448dbaec7bfa06b4c5
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8c8bef490889bd21cd526e9dd46c40ae53b7d289
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419063"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680018"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Déployer et activer l’antivirus Microsoft Defender
 
@@ -36,18 +36,18 @@ ms.locfileid: "65419063"
 **Plateformes**
 - Windows
 
-Selon l’outil de gestion que vous utilisez, vous devrez peut-être activer ou configurer spécifiquement Antivirus Microsoft Defender protection. 
+Selon l’outil de gestion que vous utilisez, vous devrez peut-être activer ou configurer spécifiquement la protection antivirus Microsoft Defender. 
 
-Pour obtenir des instructions sur l’activation de la protection avec Microsoft Intune[, Microsoft Endpoint Configuration Manager et stratégie de groupe,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) consultez le tableau dans Déployer, gérer et signaler Antivirus Microsoft Defender. , Active Directory, Microsoft Azure, applets de commande PowerShell et Windows Management Instruction (WMI).
+Pour obtenir des instructions sur l’activation de la protection avec Microsoft Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe, Active Directory, Microsoft Azure, les applets de commande PowerShell et WMI (Windows Management Instruction), consultez le tableau dans [Déployer, gérer et signaler l’antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md#ref2).
 
-Certains scénarios nécessitent des conseils supplémentaires sur la façon de déployer ou de configurer la protection Antivirus Microsoft Defender, comme les environnements VDI (Virtual Desktop Infrastructure).
+Certains scénarios nécessitent des conseils supplémentaires sur la façon de déployer ou de configurer correctement la protection antivirus Microsoft Defender, comme les environnements vDI (Virtual Desktop Infrastructure).
 
-L’article restant de cette section fournit des conseils de bout en bout et des bonnes pratiques pour [la configuration de Antivirus Microsoft Defender sur des machines virtuelles dans un environnement VDI ou Services Bureau à distance (RDS](deployment-vdi-microsoft-defender-antivirus.md)).
+L’article restant de cette section fournit des conseils de bout en bout et des [meilleures pratiques pour la configuration de l’antivirus Microsoft Defender sur des machines virtuelles dans un environnement VDI ou Services Bureau à distance (RDS](deployment-vdi-microsoft-defender-antivirus.md)).
 
 ## <a name="related-articles"></a>Articles connexes
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Déployer, gérer les mises à jour et créer des rapports sur Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Déployer, gérer les mises à jour et créer des rapports sur l’Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)](deployment-vdi-microsoft-defender-antivirus.md)
 
 > [!TIP]

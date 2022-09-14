@@ -5,7 +5,8 @@ description: Le service Defender Experts for Hunting publie des rapports mensuel
 keywords: rapport d’analyste, rapport d’experts defender, détections, notifications d’experts defender, chasse, notifications, catégories de menaces, rapports de chasse
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +21,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 179b13d31091e2c5ec60ba467bb06f2d072f6cdd
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: f54bc1b1f3569be0267e49971eae2ed4a84e213b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107241"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67680238"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Comprendre le rapport Defender Experts for Hunting dans Microsoft 365 Defender
 

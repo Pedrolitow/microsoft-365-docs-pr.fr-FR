@@ -4,7 +4,8 @@ description: Découvrez comment configurer Microsoft 365 Defender pour diffuser 
 keywords: exportation de données brutes, API de streaming, API, hubs d’événements, stockage Azure, compte de stockage, repérage avancé, partage de données brutes
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d9f980656df636632c5903853c2784de81131d81
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 726e7e614b6e0cee53af2764af9c5c1f0a6bcb29
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621425"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679864"
 ---
 # <a name="streaming-api"></a>API de diffusion en continu
 
@@ -52,4 +52,4 @@ Regardez cette courte vidéo pour découvrir comment configurer l’API de diffu
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble de la chasse avancée](../defender/advanced-hunting-overview.md)
 - [documentation Azure Event Hubs](/azure/event-hubs/)
-- [documentation du compte stockage Azure](/azure/storage/common/storage-account-overview)
+- [Documentation sur le compte de stockage Azure](/azure/storage/common/storage-account-overview)
