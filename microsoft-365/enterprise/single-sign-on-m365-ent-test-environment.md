@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
@@ -18,29 +18,29 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 2d6af0600044dea59cbcdd9ee51f76c061e3dcd7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3c9445fb9f4c9f77f8b3a6b048bfc3948ac8a6ee
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093325"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669912"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé pour les Microsoft 365 pour les environnements de test d’entreprise et Office 365 Entreprise.*
+*Ce guide de laboratoire de test peut être utilisé pour Microsoft 365 pour les environnements de test d’entreprise et Office 365 Entreprise.*
 
-Azure AD l’authentification unique transparente (Seamless Single Sign-On) connecte automatiquement les utilisateurs lorsqu’ils se trouvent sur leurs PC ou appareils connectés à leur réseau d’organisation. Azure AD’authentification unique transparente permet aux utilisateurs d’accéder facilement aux applications cloud sans avoir besoin de composants locaux supplémentaires.
+Azure AD Seamless Single Sign-On (Seamless SSO) connecte automatiquement les utilisateurs lorsqu’ils se trouvent sur leurs PC ou appareils connectés à leur réseau d’organisation. L’authentification unique transparente Azure AD offre aux utilisateurs un accès facile aux applications cloud sans avoir besoin de composants locaux supplémentaires.
 
-Cet article explique comment configurer votre environnement de test Microsoft 365 pour Azure AD’authentification unique transparente.
+Cet article explique comment configurer votre environnement de test Microsoft 365 pour l’authentification unique transparente Azure AD.
 
-La configuration Azure AD’authentification unique transparente implique deux phases :
+La configuration de l’authentification unique transparente Azure AD implique deux phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2 : Configuration de l’authentification unique transparente Azure AD pour Azure AD Connect sur APP1](#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso)
    
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles du Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise, accédez à [Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile des guides de laboratoire de test Microsoft 365 pour entreprise, accédez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -54,23 +54,23 @@ Cette configuration se compose des éléments suivants :
   
 - Un abonnement d’évaluation ou payant Microsoft 365 E5.
 - Intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.
-- Azure AD Connecter s’exécute sur APP1 pour synchroniser régulièrement le domaine services de domaine Active Directory TESTLAB (AD DS) avec le locataire Azure AD de votre abonnement Microsoft 365.
+- Azure AD Connect s’exécute sur APP1 pour synchroniser régulièrement le domaine TESTLAB services de domaine Active Directory (AD DS) avec le locataire Azure AD de votre abonnement Microsoft 365.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Phase 2 : Configuration de l’authentification unique transparente Azure AD pour Azure AD Connect sur APP1
 
-Dans cette phase, configurez Azure AD Connecter sur APP1 pour Azure AD’authentification unique transparente, puis vérifiez qu’elle fonctionne.
+Dans cette phase, configurez Azure AD Connect sur APP1 pour l’authentification unique transparente Azure AD, puis vérifiez qu’elle fonctionne.
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>Configuration d’Azure AD Connect sur APP1
 
 1. Dans le [Portail Azure](https://portal.azure.com), connectez-vous avec votre compte d’administrateur général, puis connectez-vous à APP1 avec le compte TESTLAB\Utilisateur1.
 
-2. À partir du bureau APP1, exécutez Azure AD Connecter.
+2. À partir du bureau APP1, exécutez Azure AD Connect.
 
 3. Dans la **page d’accueil**, **sélectionnez Configurer**.
 
 4. Dans la page **Tâches supplémentaires** , **sélectionnez Modifier la connexion de l’utilisateur**, puis **sélectionnez Suivant**.
 
-5. Dans la **Connecter à Azure AD** page, entrez les informations d’identification de votre compte d’administrateur général, puis sélectionnez **Suivant**.
+5. Dans la page **Se connecter à Azure AD** , entrez les informations d’identification de votre compte d’administrateur général, puis sélectionnez **Suivant**.
 
 6. Dans la page **de connexion de l’utilisateur** , **sélectionnez Activer l’authentification unique**, puis **sélectionnez Suivant**.
 
@@ -82,7 +82,7 @@ Dans cette phase, configurez Azure AD Connecter sur APP1 pour Azure AD’authent
 
 10. Dans la page **Configuration terminée** , sélectionnez **Quitter**.
 
-11. Dans le Portail Azure, dans le volet gauche, sélectionnez **Azure Active Directory** >  **Azure AD Connecter**. Vérifiez que la fonctionnalité **d’authentification unique transparente** s’affiche comme **activée**.
+11. Dans le Portail Azure, dans le volet gauche, sélectionnez **Azure Active Directory** > **Azure AD Connect**. Vérifiez que la fonctionnalité **d’authentification unique transparente** s’affiche comme **activée**.
 
 Ensuite, testez la possibilité de vous connecter à votre abonnement avec le <strong>user1@testlab.</strong>\<*your public domain*> nom d’utilisateur du compte utilisateur1.
 
@@ -94,7 +94,7 @@ Ensuite, testez la possibilité de vous connecter à votre abonnement avec le <s
 
 4. Dans **l’intranet local**, sélectionnez **Avancé**.
 
-5. Dans **Ajouter ce site web à la zone**, entrez **https <span>://</span>autologon.microsoftazuread-sso.com**, sélectionnez **AddCloseOKOK** >  >  > .
+5. Dans **Ajouter ce site web à la zone**, entrez **https <span>://</span>autologon.microsoftazuread-sso.com**, sélectionnez **Ajouter** > **fermer** > **OK** > **.**
 
 6. Déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
@@ -111,7 +111,7 @@ Cette configuration se compose des éléments suivants :
 - Un Microsoft 365 E5 des abonnements d’évaluation ou payants avec le testlab de domaine DNS.\<*your domain name*> Inscrit(e).
 - Intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.
 - Azure AD Connect s’exécute sur APP1 pour synchroniser la liste des comptes et des groupes du client Azure AD de votre abonnement Microsoft 365 au domaine TESTLAB AD DS.
-- Azure AD’authentification unique transparente est activée afin que les ordinateurs de l’intranet simulé puissent se connecter à Microsoft 365 ressources cloud sans spécifier de mot de passe de compte d’utilisateur.
+- L’authentification unique transparente Azure AD est activée afin que les ordinateurs sur l’intranet simulé puissent se connecter aux ressources cloud Microsoft 365 sans spécifier de mot de passe de compte d’utilisateur.
 
 ## <a name="next-step"></a>Étape suivante
 

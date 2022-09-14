@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: efe3ea8feb30e1177ff2c156fd6ccb284708a5b4
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 2ffe38f5c2bbd248968df709644972d2468b4826
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523311"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672334"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Prise en main du mode de résolution des problèmes dans Microsoft Defender pour point de terminaison 
 
@@ -85,6 +85,14 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
   Windows Server 2022|>=20348.617|[KB5011558 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
   Windows Server 2019 (RS5)|>=17763.2746|[KB5011551 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011551)
 
+- Le mode de résolution des problèmes est également disponible pour les machines exécutant la solution unifiée moderne pour Windows Server 2012 R2 et Windows Server 2016. Pendant le mode de dépannage, utilisez-le `Set-MPPreference -DisableTamperProtection $true` pour désactiver temporairement la protection contre les falsifications sur votre appareil et apporter les modifications de configuration nécessaires. Avant d’utiliser le mode de résolution des problèmes, vérifiez que tous les composants suivants sont à jour :
+
+  - Sense version 10.8049.22439.1084 ou ultérieure ([KB5005292 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292))
+
+  - Antivirus Defender - Plateforme : 4.18.2207.7 ou version ultérieure ([KB4052623 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
+
+  - Antivirus Defender - Moteur : 1.1.19500.2 ou version ultérieure ([KB2267602 : Catalogue Microsoft Update](https://www.microsoft.com/en-us/wdsi/defenderupdates))
+
 - Pour que le mode de dépannage soit appliqué, Microsoft Defender pour point de terminaison doit être inscrit par le locataire et actif sur l’appareil.
 
 - L’appareil doit exécuter activement l’Antivirus Microsoft Defender, version 4.18.2203 ou ultérieure.
@@ -110,7 +118,9 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
 Voici quelques requêtes de chasse avancées prédéfinies pour vous donner une visibilité sur les événements de dépannage qui se produisent dans votre environnement. Vous pouvez également utiliser ces requêtes pour [créer des règles de détection](/defender/custom-detection-rules.md#create-a-custom-detection-rule) qui vous alertent lorsque les appareils sont en mode de dépannage.
 
 ### <a name="get-troubleshooting-events-for-a-particular-device"></a>Obtenir des événements de dépannage pour un appareil particulier
-Effectuez une recherche par deviceId ou deviceName en commentant les lignes respectives.  
+
+Effectuez une recherche par deviceId ou deviceName en commentant les lignes respectives. 
+ 
 ```kusto
 //let deviceName = "<deviceName>";   // update with device name
 let deviceId = "<deviceID>";   // update with device id

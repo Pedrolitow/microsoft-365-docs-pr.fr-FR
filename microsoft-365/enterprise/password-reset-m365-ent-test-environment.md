@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez la réinitialisation de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 4e68372aee44887641d626c3e3667adbdedd5a1e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 52563467820073bbf407ea074cbfd43287055424
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095617"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670044"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
@@ -41,7 +41,7 @@ La configuration de SSPR implique trois phases :
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles du Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise, accédez à [Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile des guides de laboratoire de test Microsoft 365 pour entreprise, accédez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -70,13 +70,13 @@ Dans cette phase, configurez la réinitialisation de mot de passe dans le locata
 Tout d’abord, activez la réinitialisation de mot de passe pour les comptes d’un groupe Azure AD spécifique.
 
 1. Dans une instance privée de votre navigateur, ouvrez [https://portal.azure.com](https://portal.azure.com), puis connectez-vous avec les informations d’identification de votre compte Administrateur général.
-2. Dans le Portail Azure, sélectionnez **Azure Active Directory** >  **GroupsNew** > **.**
+2. Dans le Portail Azure, sélectionnez **Nouveau groupe** **Groupes** >  **Azure Active Directory** > .
 3. Définissez le **Type de groupe** sur **Sécurité**, le **Nom du groupe** sur **PWReset** et le **Type d’appartenance** sur **Affecté**.
 4. Sélectionnez **Membres**, recherchez et sélectionnez **Utilisateur 3**, **sélectionnez Sélectionner**, puis **sélectionnez Créer**.
 5. Fermez le volet **Groupes**.
-6. Dans le volet Azure Active Directory, sélectionnez **Réinitialiser le mot de passe** dans le volet de navigation gauche.
+6. Dans le volet Azure Active Directory, sélectionnez **Réinitialiser le mot de passe** dans le volet de navigation de gauche.
 7. Sur la page **Propriétés–Réinitialiser le mot de passe**, sous l’option **Réinitialisation du mot de passe en libre-service activée**, choisissez **Sélectionné**.
-8. **Sélectionnez Sélectionner un groupe**, sélectionnez le groupe **PWReset**, puis **sélectionnez SelectSave** > .
+8. **Sélectionnez Sélectionner un groupe**, sélectionnez le groupe **PWReset**, puis **sélectionnez Sélectionner** > **Enregistrer**.
 9. Fermez l’instance privée du navigateur.
 
 Ensuite, testez la réinitialisation de mot de passe pour le compte Utilisateur 3.
@@ -88,7 +88,7 @@ Ensuite, testez la réinitialisation de mot de passe pour le compte Utilisateur 
 1. Une fois les deux vérifications terminées, sélectionnez **Apparence**, puis fermez l’instance privée du navigateur.
 1. Dans une nouvelle instance de navigateur privé, accédez à [https://aka.ms/sspr](https://aka.ms/sspr).
 1. Entrez le nom du compte Utilisateur 3, entrez les caractères du CAPTCHA, puis sélectionnez **Suivant**.
-1. Pour **l’étape de vérification 1**, sélectionnez **Envoyer un e-mail à mon autre adresse e-mail**, puis sélectionnez **E-mail**. Lorsque vous recevez l’e-mail, entrez le code de vérification, puis sélectionnez **Suivant**.
+1. Pour **l’étape de vérification 1**, sélectionnez **Email mon autre adresse e-mail**, puis sélectionnez **Email**. Lorsque vous recevez l’e-mail, entrez le code de vérification, puis sélectionnez **Suivant**.
 1. Dans **Revenir à votre compte**, entrez un nouveau mot de passe pour le compte Utilisateur 3, puis sélectionnez **Terminer**. Notez le mot de passe modifié du compte d’utilisateur 3 et stockez-le dans un endroit sûr.
 1. Dans un onglet distinct du même navigateur, accédez à [https://admin.microsoft.com](https://admin.microsoft.com), puis connectez-vous avec le nom de compte Utilisateur 3 et son nouveau mot de passe. Vous devez voir la **page d’accueil Microsoft Office**.
 

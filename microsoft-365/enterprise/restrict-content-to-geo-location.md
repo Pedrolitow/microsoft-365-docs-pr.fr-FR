@@ -6,25 +6,25 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
-description: Dans cet article, découvrez comment limiter SharePoint sites à un emplacement géographique spécifié dans un environnement multigéogé.
-ms.openlocfilehash: 06401658afe9f6a26b1280f5931ba6b3ba761742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dans cet article, découvrez comment limiter les sites SharePoint à un emplacement géographique spécifié dans un environnement multigéographique.
+ms.openlocfilehash: 03e1738b88d10717892152655a9e4f3de7a2d847
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154973"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67673038"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Circonscrire le contenu des sites 
 
-Dans certaines circonstances, vous pouvez imposer qu’un site et les fichiers qu’il contient restent dans l’emplacement géographique où le site a été créé, soit en empêchant le déplacement du site, soit en empêchant la mise en cache des fichiers qu’il contient dans un autre emplacement géographique.
+Dans certaines circonstances, vous pouvez choisir d’appliquer un site et son contenu de fichier pour qu’il reste à l’emplacement géographique où le site a été créé, soit en empêchant le déplacement du site, soit en empêchant la mise en cache du contenu du fichier du site dans un autre emplacement géographique.
 
-Pour ce faire, vous pouvez utiliser la cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) avec le paramètre **RestrictedToGeo**. La valeur par défaut de ce paramètre est NULL, mais vous pouvez la remplacer par l’une des valeurs suivantes :
+Vous pouvez effectuer cette tâche à l’aide de l’applet de commande [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) avec le paramètre **RestrictedToGeo** . Ce paramètre a la valeur null par défaut, mais vous pouvez la remplacer par l’une des restrictions suivantes :
 
 |Restriction|Description|
 |:----------|:----------|

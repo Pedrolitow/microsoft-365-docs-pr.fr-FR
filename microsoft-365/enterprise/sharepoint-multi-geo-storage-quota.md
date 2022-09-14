@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: En savoir plus SharePoint quotas de stockage dans les environnements multigé géographiques et comment les quotas peuvent être gérés par l’administrateur SharePoint Online.
-ms.openlocfilehash: d1e47c206f1353093ba8bebf9db03ab7142d6da9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez les quotas de stockage SharePoint dans les environnements multigéographiques et la façon dont les quotas peuvent être gérés par l’administrateur SharePoint Online.
+ms.openlocfilehash: 78f57a13cc04e5f98189624a0c02f8f1b85cdea1
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178730"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670220"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Quotas de stockage SharePoint dans des environnements multigéographiques
 
@@ -46,7 +46,7 @@ Pour afficher le quota de stockage de l’emplacement géographique actuel, exé
 Get-SPOGeoStorageQuota
 ```
 
-![Capture d’écran de la fenêtre PowerShell Get-SPOGeoStorageQuota cmdlet.](../media/multi-geo-storage-quota.png)
+![Capture d’écran de la fenêtre PowerShell montrant Get-SPOGeoStorageQuota cmdlet.](../media/multi-geo-storage-quota.png)
 
 Pour afficher le quota de stockage de tous les emplacements géographiques, exécutez la cmdlet suivante :
 

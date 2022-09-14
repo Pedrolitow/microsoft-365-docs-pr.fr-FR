@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilisez l’outil Diagnostics de page pour SharePoint pour analyser le portail moderne SharePoint Online et les pages de publication classiques par rapport à un ensemble prédéfini de critères de performances.
-ms.openlocfilehash: b89534fe45daf34082b7ee3b735a7ba67851f9f4
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 0d89d16ead05a5a683fbfbf7b1dde35cde4dcde9
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941105"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670198"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utiliser l’outil Diagnostics de page pour SharePoint
 
@@ -90,7 +90,7 @@ Sélectionnez **Démarrer** pour commencer à collecter des données à des fins
     > [!div class="mx-imgBorder"]
     > ![Détails des diagnostics de page.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **CorrelationID** est un élément important lors de l’utilisation du Support Microsoft, car il leur permet de collecter plus de données de diagnostic pour la page spécifique.
+   - **CorrelationID** est un élément important lors de l’utilisation de Support Microsoft, car il leur permet de collecter plus de données de diagnostic pour la page spécifique.
    - **SPRequestDuration** est le temps nécessaire pour que SharePoint traite la page. La navigation structurelle, les images volumineuses, un grand nombre d’appels d’API peuvent tous contribuer à des durées plus longues.
    - **SPIISLatency** est l’heure en millisecondes nécessaire pour que SharePoint Online commence à charger la page. Cette valeur n’inclut pas le temps nécessaire à l’application web pour répondre.
    - **Le temps de chargement** de la page est la durée totale enregistrée par la page entre l’heure de la demande et l’heure à laquelle la réponse a été reçue et affichée dans le navigateur. Cette valeur est affectée par différents facteurs, notamment la latence du réseau, les performances de l’ordinateur et le temps nécessaire au navigateur pour charger la page.
@@ -154,7 +154,7 @@ Cette option doit être activée avant de cliquer sur Démarrer, ce qui active l
 > [!IMPORTANT]
 > Ces résultats contiennent des URL qui peuvent être classées comme piI (informations d’identification personnelle). Veillez à suivre les instructions de votre organisation avant de distribuer ces informations.
 
-## <a name="engaging-with-microsoft-support"></a>Faire appel au support Microsoft
+## <a name="engaging-with-microsoft-support"></a>Utilisation de Support Microsoft
 
 Nous avons inclus une **fonctionnalité de niveau Support Microsoft** qui ne doit être utilisée que lorsque vous travaillez directement sur un cas de support. L’utilisation de cette fonctionnalité ne vous apportera aucun avantage lorsqu’elle est utilisée sans engagement de l’équipe de support et peut ralentir considérablement les performances de la page. Il n’existe aucune information supplémentaire lors de l’utilisation de cette fonctionnalité dans l’outil, car les informations supplémentaires sont ajoutées à la journalisation dans le service.
 

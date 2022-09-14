@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Découvrez comment utiliser le réseau de distribution de contenu (CDN) Office 365 pour accélérer la livraison de vos ressources SharePoint Online.
-ms.openlocfilehash: ca3d6c1158c93c9f897540e4b73565fd5a518e2a
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: 99e53cfb645b2e84e614321d269f4fe6d7b519b6
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336197"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670110"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -398,7 +398,7 @@ Une fois que vous avez exécuté la commande, le système synchronise la configu
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exemple : Configurer une origine privée pour une collection de sites pour SharePoint Online
 
-Utilisez l’applet de commande **Add-SPOTenantCdnOrigin** pour définir une collection de sites comme une origine privée. Par exemple :
+Utilisez l’applet de commande **Add-SPOTenantCdnOrigin** pour définir une collection de sites comme une origine privée. Par exemple :
 
 ```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -681,7 +681,7 @@ Une fois que vous avez exécuté la commande, le système synchronise la configu
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exemple : Configurer une origine privée pour une collection de sites pour SharePoint Online
 
-Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir une collection de sites comme une origine privée. Par exemple :
+Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir une collection de sites comme une origine privée. Par exemple :
 
 ```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -961,7 +961,7 @@ Le diagramme suivant illustre le flux de travail lorsque SharePoint reçoit une 
 
 L’accès aux ressources d’origine privée dans la Office 365 CDN est accordé par les jetons générés par SharePoint Online. Les utilisateurs qui ont déjà l’autorisation d’accéder au dossier ou à la bibliothèque désigné par l’origine reçoivent automatiquement des jetons qui permettent à l’utilisateur d’accéder au fichier en fonction de son niveau d’autorisation. Ces jetons d’accès sont valides pendant 30 à 90 minutes après leur génération pour empêcher les attaques par relecture de jetons.
 
-Une fois le jeton d’accès généré, SharePoint Online retourne un URI personnalisé au client contenant deux paramètres d’autorisation _eat_ (jeton d’autorisation edge) et _oat_ (jeton d’autorisation d’origine). La structure de chaque jeton est _<'heure d’expiration au format époque'>__<'>de signature sécurisée_. Par exemple :
+Une fois le jeton d’accès généré, SharePoint Online retourne un URI personnalisé au client contenant deux paramètres d’autorisation _eat_ (jeton d’autorisation edge) et _oat_ (jeton d’autorisation d’origine). La structure de chaque jeton est _<'heure d’expiration au format époque'>__<'>de signature sécurisée_. Par exemple :
 
 ```http
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312

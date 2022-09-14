@@ -1,12 +1,12 @@
 ---
-title: Afficher Microsoft 365 licence de compte et les détails du service avec PowerShell
+title: Afficher les détails du service et de la licence de compte Microsoft 365 avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,18 +19,18 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explique comment utiliser PowerShell pour déterminer les services Microsoft 365 qui ont été affectés aux utilisateurs.
-ms.openlocfilehash: 01f8865faeb187bef23c5757a0373fbc8be2d139
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a148a2ed1e12507a3a004555e90060c48a7a54c6
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095573"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669722"
 ---
-# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Afficher Microsoft 365 licence de compte et les détails du service avec PowerShell
+# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Afficher les détails du service et de la licence de compte Microsoft 365 avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Dans Microsoft 365, les licences des plans de licence (également appelées références SKU ou plans Microsoft 365) permettent aux utilisateurs d’accéder aux services Microsoft 365 définis pour ces plans. Toutefois, un utilisateur ne dispose peut-être pas d’un accès à tous les services disponibles dans une licence qui lui est affectée. Vous pouvez utiliser PowerShell pour Microsoft 365 afin d’afficher l’état des services sur les comptes d’utilisateur.
+Dans Microsoft 365, les licences des plans de licence (également appelées références SKU ou plans Microsoft 365) permettent aux utilisateurs d’accéder aux services Microsoft 365 définis pour ces plans. Toutefois, un utilisateur ne dispose peut-être pas d’un accès à tous les services disponibles dans une licence qui lui est affectée. Vous pouvez utiliser PowerShell pour Microsoft 365 pour afficher l’état des services sur les comptes d’utilisateur.
 
 Pour plus d’informations sur les plans de licence, les licences et les services, consultez [Afficher les licences et les services avec PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 

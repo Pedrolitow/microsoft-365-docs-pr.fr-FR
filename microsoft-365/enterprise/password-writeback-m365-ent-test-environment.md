@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 0477e2200db7252dcce4351b2f96298e075f3b29
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 29db50002be7a01d09391609ab3d43a7e18082d8
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091102"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669934"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les utilisateurs peuvent utiliser la réécriture de mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliquée vers votre services de domaine Active Directory local (AD DS). Avec la réécriture du mot de passe, les utilisateurs n’ont pas à mettre à jour leurs mots de passe via le service AD DS local où sont stockés leurs comptes d’utilisateur d’origine. Cela permet aux utilisateurs itinérants ou distants qui n’ont pas de connexion d’accès à distance à leur réseau local.
+Les utilisateurs peuvent utiliser la réécriture de mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué vers votre services de domaine Active Directory local (AD DS). Avec la réécriture du mot de passe, les utilisateurs n’ont pas à mettre à jour leurs mots de passe via le service AD DS local où sont stockés leurs comptes d’utilisateur d’origine. Cela permet aux utilisateurs itinérants ou distants qui n’ont pas de connexion d’accès à distance à leur réseau local.
 
 Cet article explique comment configurer votre environnement de test Microsoft 365 pour l’écriture différée du mot de passe.
 
@@ -40,7 +40,7 @@ La configuration de votre environnement de test pour l’écriture différée du
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles du Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise, accédez à [Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile des guides de laboratoire de test Microsoft 365 pour entreprise, accédez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -109,9 +109,9 @@ Ensuite, configurez de la Connexion Azure AD Connect sur APP1 pour écriture d
 
 4. Dans la page **Tâches supplémentaires** , sélectionnez **Personnaliser les options de synchronisation**, puis sélectionnez **Suivant**.
 
-5. Dans la **Connecter à Azure AD** page, entrez les informations d’identification de votre compte d’administrateur général, puis sélectionnez **Suivant**.
+5. Dans la page **Se connecter à Azure AD** , entrez les informations d’identification de votre compte d’administrateur général, puis sélectionnez **Suivant**.
 
-6. Dans les **Connecter répertoires et les** pages **de filtrage domaine/unité d’organisation**, sélectionnez **Suivant**.
+6. Dans les pages de filtrage de domaine **/unité d’organisation** et **de répertoires Connect**, sélectionnez **Suivant**.
 
 7. Dans la page **Fonctionnalités facultatives** , sélectionnez **Réécriture du mot de passe**, puis **Suivant**.
 

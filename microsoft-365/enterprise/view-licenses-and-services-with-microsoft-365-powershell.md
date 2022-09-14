@@ -1,12 +1,12 @@
 ---
-title: Afficher Microsoft 365 licences et services avec PowerShell
+title: Afficher les licences et services Microsoft 365 avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -20,26 +20,26 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explique comment utiliser PowerShell pour afficher des informations sur les plans de licence, les services et les licences disponibles dans votre organisation Microsoft 365.
-ms.openlocfilehash: 1d0d514cc0d821e8958a35c3598b41554260716d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 739c79fe66871125a5ea9d35226d9acd6f99abf4
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091938"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669780"
 ---
-# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Afficher Microsoft 365 licences et services avec PowerShell
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Afficher les licences et services Microsoft 365 avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Chaque abonnement Microsoft 365 se compose des éléments suivants :
 
-- **Plans de licence** Il s’agit également de plans de licence ou de plans de Microsoft 365. Les plans de licence définissent les services Microsoft 365 disponibles pour les utilisateurs. Votre abonnement Microsoft 365 peut contenir plusieurs plans de licence. Un exemple de plan de licence serait Microsoft 365 E3.
+- **Plans de licence** Il s’agit également de plans de licence ou de plans Microsoft 365. Les plans de licence définissent les services Microsoft 365 disponibles pour les utilisateurs. Votre abonnement Microsoft 365 peut contenir plusieurs plans de licence. Un exemple de plan de licence serait Microsoft 365 E3.
     
 - **Services** Il s’agit également de plans de service. Les services sont les produits, fonctionnalités et fonctionnalités Microsoft 365 disponibles dans chaque plan de licence, par exemple, Exchange Online et Applications Microsoft 365 pour les grandes entreprises (précédemment nommés Office 365 ProPlus). Des licences issues de différents plans de licence peuvent être attribuées à un même utilisateur, lui accordant l’accès à des services différents.
     
-- **Licences** Chaque plan de licence contient le nombre de licences que vous avez achetées. Vous attribuez des licences aux utilisateurs afin qu’ils puissent utiliser les services Microsoft 365 définis par le plan de licences. Chaque compte d’utilisateur nécessite au moins une licence d’un plan de licence pour pouvoir se connecter à Microsoft 365 et utiliser les services.
+- **Licences** Chaque plan de licence contient le nombre de licences que vous avez achetées. Vous attribuez des licences aux utilisateurs afin qu’ils puissent utiliser les services Microsoft 365 définis par le plan de licences. Chaque compte d’utilisateur nécessite au moins une licence à partir d’un plan de licence pour pouvoir se connecter à Microsoft 365 et utiliser les services.
     
-Vous pouvez utiliser PowerShell pour Microsoft 365 afin d’afficher des détails sur les plans de licence, les licences et les services disponibles dans votre organisation Microsoft 365. Pour plus d’informations sur les produits, fonctionnalités et services disponibles dans différents abonnements Office 365, consultez [Office 365 Options de plan](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
+Vous pouvez utiliser PowerShell pour Microsoft 365 pour afficher des détails sur les plans de licence, les licences et les services disponibles dans votre organisation Microsoft 365. Pour plus d’informations sur les produits, fonctionnalités et services disponibles dans différents abonnements Office 365, consultez [Office 365 Options de plan](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 
 ## <a name="use-the-microsoft-graph-powershell-sdk"></a>Utiliser le Kit de développement logiciel (SDK) Microsoft Graph PowerShell
@@ -171,7 +171,7 @@ Pour obtenir la liste complète des plans de licence (également appelés noms d
 Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 >[!Note]
->Un script PowerShell est disponible pour automatiser les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver les services de votre organisation Microsoft 365, y compris les Sway. Pour plus d’informations, consultez [Désactiver l’accès à Sway avec PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
+>Un script PowerShell est disponible pour automatiser les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver les services de votre organisation Microsoft 365, y compris Sway. Pour plus d’informations, consultez [Désactiver l’accès à Sway avec PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
 >
     
 Pour afficher des informations récapitulatives sur vos plans de licence actuels et les licences disponibles pour chaque plan, exécutez la commande suivante :
@@ -210,7 +210,7 @@ Le tableau suivant présente les plans de service Microsoft 365 et leurs noms co
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Applications Microsoft 365 pour les grandes entreprises *(précédemment nommé Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Bureau  <br/> |
+| `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    

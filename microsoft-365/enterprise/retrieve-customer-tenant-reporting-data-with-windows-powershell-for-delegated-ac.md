@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Résumé : Utilisez Remote Windows PowerShell pour Microsoft Exchange Online pour récupérer des rapports à partir de locataires de clients individuels.'
-ms.openlocfilehash: 8529e95e8aefbd45cf381ff21bec49e669fd7c6a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 52c1de8eded72ed3f566e0136880f88233e375a9
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096697"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670970"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Récupération des données des rapports du locataire d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
@@ -28,23 +28,23 @@ ms.locfileid: "65096697"
 
 Utilisez des Windows PowerShell distantes pour Microsoft Exchange Online afin de récupérer des rapports auprès de locataires clients individuels.
 
-Les partenaires de syndication et de fournisseur de solutions Cloud (CSP) peuvent accéder aux données qui composent les rapports client directement via des Windows PowerShell distants pour Exchange Online PowerShell. Cela permet aux partenaires de recueillir et d'enregistrer les données des rapports et de s'en servir pour effectuer d'autres opérations. Après avoir ouvert une connexion à distance, la récupération des données de création de rapports sur une location client est identique à l'exécution de n'importe quelle cmdlet sur la location d'un client.
+Les partenaires de syndication et de fournisseur de solutions cloud (CSP) peuvent accéder aux données qui composent les rapports client directement via des Windows PowerShell distants pour Exchange Online PowerShell. Cette méthode permet aux partenaires de collecter et d’enregistrer les données de création de rapports, puis d’effectuer d’autres opérations dessus. Après avoir ouvert une connexion à distance, la récupération des données de création de rapports sur une location client est identique à l'exécution de n'importe quelle cmdlet sur la location d'un client.
 
-Dans cet article, vous utilisez des Windows PowerShell distantes pour Exchange Online pour vous connecter à une location client unique et récupérer un rapport. Par défaut, Windows PowerShell ne prend pas en charge le regroupement des données des rapports à partir de plusieurs locations de clients. Les rapports que vous récupérez avec cette procédure ne sont destinés qu'aux organisations déléguées ( _DelegatedOrg_) auxquelles vous vous connectez.
+Cet article explique comment utiliser des Windows PowerShell distantes pour Exchange Online pour vous connecter à une location client unique et récupérer un rapport. Par défaut, Windows PowerShell ne prend pas en charge le regroupement des données des rapports à partir de plusieurs locations de clients. Les rapports que vous récupérez avec cette procédure ne sont destinés qu'aux organisations déléguées ( _DelegatedOrg_) auxquelles vous vous connectez.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez vous connecter à votre locataire Exchange Online à l'aide de Remote Windows PowerShell Pour plus d'informations, voir [Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d'accès délégué](/powershell/exchange/connect-to-exchange-online-powershell)
+- Connectez-vous à votre locataire Exchange Online à l’aide de Windows PowerShell distantes. Pour obtenir des instructions, consultez [Se connecter à des locataires Exchange Online avec des Windows PowerShell distants pour les partenaires d’autorisations d’accès délégué (DAP)](/powershell/exchange/connect-to-exchange-online-powershell)
 
 ## <a name="run-the-get-stalemailboxreport-sample"></a>Exécution de l’exemple Get-StaleMailboxReport
 
-Une fois que vous avez ouvert une session Exchange Online à distance, exécutez la commande **Get-StaleMailboxReport** pour récupérer le rapport pour la plage de dates du 25/03/2015 au 31/03/2015.
+Une fois que vous avez ouvert une session à distance pour Exchange Online, exécutez la commande suivante pour récupérer **get-StaleMailboxReport** pour la plage de dates du 25/03/2015 au 31/03/2015.
 
 ```powershell
 Get-StaleMailboxReport -StartDate 03/25/2015 -EndDate 03/31/2015
 ```
 
-Il existe plusieurs autres cmdlets que vous pouvez utiliser pour la création de rapports pour Exchange Online, Lync Online et SharePoint Online, ainsi que d'autres cmdlets pour le suivi des messages. Pour en savoir plus sur les cmdlets de création de rapports disponibles et le service web de création de rapports Office 365, voir les rubriques dans la section suivante.
+De nombreuses autres applets de commande de création de rapports sont disponibles pour Exchange Online, Lync Online, SharePoint Online et d’autres services pour le suivi des messages que vous pouvez utiliser. Pour en savoir plus sur les applets de commande de création de rapports disponibles, consultez les articles répertoriés dans la section suivante.
 
 ## <a name="see-also"></a>Voir aussi
 

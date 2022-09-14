@@ -1,12 +1,12 @@
 ---
-title: Afficher les utilisateurs sous licence et sans licence Microsoft 365 avec PowerShell
+title: Afficher les utilisateurs Microsoft 365 sous licence et sans licence avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/21/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,19 +19,19 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: Cet article explique comment utiliser PowerShell pour afficher les comptes d’utilisateurs sous licence et sans licence Microsoft 365.
-ms.openlocfilehash: 65dcc8e397f9ad56679b880f50caa99a51e4a4c5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Cet article explique comment utiliser PowerShell pour afficher les comptes d’utilisateurs Microsoft 365 sous licence et sans licence.
+ms.openlocfilehash: a1dc6b77f249d9c7af7c7b4c067e4ce4b6a3e66e
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095529"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669956"
 ---
-# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Afficher les utilisateurs sous licence et sans licence Microsoft 365 avec PowerShell
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Afficher les utilisateurs Microsoft 365 sous licence et sans licence avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les comptes d’utilisateur de votre Microsoft 365 organisation peuvent avoir une partie, la totalité ou l’aucune des licences disponibles qui leur sont attribuées à partir des plans de licences disponibles dans votre organisation. Vous pouvez utiliser PowerShell pour Microsoft 365 pour rechercher rapidement les utilisateurs sous licence et sans licence dans votre organisation.
+Les comptes d’utilisateur de votre organisation Microsoft 365 peuvent avoir une partie, la totalité ou l’aucune des licences disponibles qui leur sont attribuées à partir des plans de licence disponibles dans votre organisation. Vous pouvez utiliser PowerShell pour Microsoft 365 pour rechercher rapidement les utilisateurs sous licence et sans licence dans votre organisation.
 
 ## <a name="use-the-microsoft-graph-powershell-sdk"></a>Utiliser le Kit de développement logiciel (SDK) Microsoft Graph PowerShell
 

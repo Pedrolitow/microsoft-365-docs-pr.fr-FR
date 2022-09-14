@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/14/2017
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances de Exchange Online.
-ms.openlocfilehash: 3b048db5e3ea5090ce5ed2391269f8167c459538
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6848719ce29f88c212e92254f1d0458843212a3f
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092026"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669054"
 ---
 # <a name="tune-exchange-online-performance"></a>Optimisation des performances Exchange Online
 
@@ -33,9 +33,9 @@ Pour améliorer la vitesse de migration et réduire les contraintes de bande pas
   
 - **Réduisez les tailles de boîte aux lettres.** Une taille de boîte aux lettres plus petite améliore la vitesse de migration. 
     
-- **Utilisez les fonctionnalités de déplacement de boîte aux lettres avec un déploiement hybride Exchange.** Avec un déploiement hybride Exchange, courrier hors connexion (sous la forme de . Les fichiers OST) ne nécessitent pas de nouveau téléchargement lors de la migration vers Exchange Online. Cela réduit considérablement vos besoins en bande passante de téléchargement. 
+- **Utilisez les fonctionnalités de déplacement de boîte aux lettres avec un déploiement hybride Exchange.** Avec un déploiement exchange hybride, courrier hors connexion (sous la forme de . Les fichiers OST) ne nécessitent pas de nouveau téléchargement lors de la migration vers Exchange Online. Cela réduit considérablement vos besoins en bande passante de téléchargement. 
     
-- **Planifiez les déplacements de boîte aux lettres pendant les périodes de faible trafic Internet et de faible utilisation locale Exchange.** Lors de la planification des déplacements, les demandes de migration sont envoyées au proxy de réplication de boîte aux lettres et peuvent ne pas avoir lieu immédiatement. 
+- **Planifiez les déplacements de boîte aux lettres pendant les périodes de faible trafic Internet et de faible utilisation locale d’Exchange.** Lors de la planification des déplacements, les demandes de migration sont envoyées au proxy de réplication de boîte aux lettres et peuvent ne pas avoir lieu immédiatement. 
     
 - **Utilisez des fenêtres contextuelles maigres pour Outlook sur le web.** Les fenêtres contextuelles maigres fournissent des versions plus petites et moins gourmandes en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer en affichant certains composants sur le serveur. Pour plus d’informations, consultez [Utiliser des fenêtres contextuelles maigres pour réduire la mémoire utilisée lors de la lecture des messages électroniques](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf).
 
@@ -46,7 +46,7 @@ Pour améliorer la vitesse de migration et réduire les contraintes de bande pas
 
 - Recherchez la mise en cache de boîte aux lettres et choisissez les options appropriées (re. période de mise en cache, mise en cache de boîtes aux lettres partagées, etc.).
 
-- Empêchez vos données Outlook de transmettre des connexions VPN (à un bureau central) avant qu’elles ne passent sur Internet.
+- Empêchez vos données Outlook de transmettre des connexions VPN (à un bureau central) avant qu’elles ne passent par Internet.
 
 - Assurez-vous que vos données de boîte aux lettres respectent les limitations relatives aux montants des dossiers et des éléments.
     

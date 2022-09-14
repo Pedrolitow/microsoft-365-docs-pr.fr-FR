@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Découvrez Microsoft 365 Multi-Geo, comment opèrent les fonctionnalités multigéographiques et les emplacements géographiques disponibles pour le stockage de données.
-ms.openlocfilehash: bda48f14b14840eed03d456ef66e7d86df890619
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 6237408442a33a3a54ba5267986a9e33219c4239
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822791"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670364"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan pour Microsoft 365 Multi-Geo
 
@@ -61,9 +61,9 @@ Lorsque vous configurez Multi-Géo, envisagez de consolider votre infrastructure
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
-Nous vous recommandons de créer un utilisateur de test dans Microsoft 365 pour effectuer certains tests initiaux. Nous allons parcourir quelques étapes de test et de vérification avec cet utilisateur avant de procéder à l’intégration des utilisateurs de production dans Microsoft 365 multigéographique.
+Nous vous recommandons de créer un utilisateur de test dans Microsoft 365 pour effectuer certains tests initiaux. Nous allons parcourir quelques étapes de test et de vérification avec cet utilisateur avant de procéder à l’intégration d’utilisateurs de production dans Microsoft 365 Multi-Geo.
 
-Une fois que vous avez terminé les tests avec l’utilisateur de test, sélectionnez un groupe pilote , peut-être de votre service informatique, pour être le premier à utiliser OneDrive et Exchange dans un nouvel emplacement géographique. Pour ce premier groupe, sélectionnez des utilisateurs qui n’ont pas encore de OneDrive. Nous vous recommandons de limiter ce groupe initial à cinq personnes et de l’étoffer progressivement en suivant une approche de déploiement par lots.
+Une fois que vous avez terminé les tests avec l’utilisateur de test, sélectionnez un groupe pilote , peut-être à partir de votre service informatique, pour être le premier à utiliser OneDrive et Exchange dans un nouvel emplacement géographique. Pour ce premier groupe, sélectionnez des utilisateurs qui n’ont pas encore de OneDrive. Nous vous recommandons de limiter ce groupe initial à cinq personnes et de l’étoffer progressivement en suivant une approche de déploiement par lots.
 
 Chaque utilisateur doit disposer d’un *emplacement par défaut des données* défini afin que Microsoft 365 puisse déterminer l’emplacement géographique dans lequel approvisionner leur OneDrive. L’emplacement par défaut des données de l’utilisateur doit correspondre à l’un de vos emplacements satellites choisis ou à votre emplacement central. Si le champ d’emplacement par défaut des données n’est pas obligatoire, nous vous recommandons de définir un emplacement par défaut des données pour tous les utilisateurs. Les charges de travail d’un utilisateur dépourvu d’emplacement par défaut des données sont approvisionnées dans l’emplacement central.
 

@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: 83b122df96302d9a06bb950528d1063cb8c38c8d
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: ab997d544a2789a4e2c6e28caa6a601a51a32bc7
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661758"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670750"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recommandations en matière de stratégie de mot de passe pour Microsoft 365
 
 En tant qu’administrateur d’une organisation, vous êtes chargé de la configuration d'une stratégie de mot de passe pour les utilisateurs au sein de votre organisation. La configuration d'une stratégie de mot de passe peut être complexe et déconcertante. Cet article vous fournit des recommandations pour renforcer la sécurité de votre organisation contre les attaques par mot de passe.
 
-Les comptes Microsoft cloud uniquement ont une stratégie de mot de passe prédéfinie qui ne peut pas être modifiée. Les seuls éléments que vous pouvez modifier sont le nombre de jours avant l’expiration d’un mot de passe et l’expiration ou non des mots de passe. 
+Les comptes Microsoft cloud uniquement ont une stratégie de mot de passe prédéfinie qui ne peut pas être modifiée. Les seuls éléments que vous pouvez modifier sont le nombre de jours avant l’expiration d’un mot de passe et l’expiration ou non des mots de passe.
   
 Pour déterminer la fréquence d’expiration des mots de passe Microsoft 365 dans votre organisation, consultez la page [Définir une stratégie d’expiration de mot de passe pour Microsoft 365](../manage/set-password-expiration-policy.md).
 
@@ -62,7 +62,6 @@ Les pratiques pour mot de passe recommandées sont classées en plusieurs catég
 ## <a name="password-guidelines-for-administrators"></a>Conseils relatifs aux mots de passe pour les administrateurs
 
 La diversité des mots de passe représente l’objectif principal d’un système de mot de passe sécurisé. Votre stratégie de mot de doit contenir de nombreux mots de passe différents qui sont de plus difficiles à deviner. Voici quelques recommandations pour garantir la sécurité de votre organisation.
-  
 
 - Appliquer une exigence de longueur minimale de huit caractères
 
@@ -96,9 +95,11 @@ Voici quelques-unes des pratiques les plus couramment utilisées en matière de 
 
 Les exigences d’expiration de mot de passe font plus de mal que de bien, car ces exigences font en sorte que les utilisateurs sélectionnent des mots de passe prévisibles, composés de mots séquentiels et de nombres étroitement liés les uns aux autres. Dans ce cas, le mot de passe suivant peut être déterminé en se basant sur le mot de passe précédent. Les exigences d’expiration de mot de passe n’offrent aucun avantage en matière de contenu, car les cybercriminels utilisent presque toujours les informations d’identification dès qu’ils les compromettent. Pour plus d’informations, consultez [Il est temps de reconsidérer les changements de mots de passe obligatoires](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
-### <a name="requiring-long-passwords"></a>Exigence de mots de passe longs
+### <a name="minimum-password-length-requirements"></a>Exigences minimales en matière de longueur de mot de passe
 
-Les exigences de longueur de mot de passe (plus de 10 caractères environ) peuvent entraîner un comportement utilisateur prévisible et non souhaitable. Par exemple, il est possible que les utilisateurs devant utiliser un mot de passe de 16 caractères choisissent de répéter des modèles tels que **quatrequatrequatre** ou **motdepassemotdepasse** qui respectent les exigences de longueur de caractères, mais qui sont faciles à deviner. En outre, les exigences de longueur augmentent les chances que les utilisateurs adoptent d’autres pratiques non sécurisées, telles que l’écriture de leurs mots de passe, leur réutilisation ou leur stockage non chiffré dans leurs documents. Pour inciter les utilisateurs à considérer un mot de passe unique, nous vous recommandons de conserver une exigence raisonnable d'une longueur minimale de 8 caractères.
+<!--Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing down their passwords, reusing them, or storing them unencrypted in their documents.-->
+
+Pour encourager les utilisateurs à réfléchir à un mot de passe unique, nous vous recommandons de conserver une longueur minimale raisonnable de 14 caractères.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Nécessité d’utiliser plusieurs jeux de caractères
 

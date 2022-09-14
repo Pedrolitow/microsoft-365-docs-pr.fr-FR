@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 10/22/2019
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -14,11 +14,11 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 mesures pour les recommandations en matière de performances réseau
-ms.openlocfilehash: a11790257a2b2979ab9c18a610a406dd8b072847
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 70ece78add656a5482885a2cb020d2108f7f9811
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098293"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670408"
 ---
 # <a name="office-365-measurements-for-network-performance-recommendations"></a>Office 365 mesures pour les recommandations en matière de performances réseau

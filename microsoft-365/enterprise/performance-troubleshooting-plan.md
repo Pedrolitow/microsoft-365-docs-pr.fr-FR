@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 5/10/2019
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -22,12 +22,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Cet article peut vous aider à résoudre Office 365 problèmes de performances et même à résoudre certains des problèmes les plus courants.
-ms.openlocfilehash: bb6033461d7b902ce0fad6e2c3b7b3e8f593951c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: f60f9964753e7974121d1a7b3951352fedd2bf5f
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623036"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672818"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de résolution des problèmes de performances pour Office 365
 
@@ -35,7 +35,7 @@ Devez-vous connaître les étapes à suivre pour identifier et corriger les reta
 
 Cet article est en fait un exemple de plan d’action que vous pouvez utiliser pour capturer des données précieuses sur votre problème de performances au fur et à mesure qu’il se produit. Certains des principaux problèmes sont également inclus dans cet article.
 
-Si vous débutez avec les performances du réseau et que vous souhaitez établir un plan à long terme pour surveiller les performances entre vos machines clientes et Office 365, jetez un coup d’œil à [Office 365 réglage des performances et à la résolution des problèmes - Administrateur et Pro informatique](performance-tuning-using-baselines-and-history.md).
+Si vous débutez avec les performances du réseau et que vous souhaitez établir un plan à long terme pour surveiller les performances entre vos machines clientes et Office 365, jetez un coup d’œil à [Office 365 réglage des performances et à la résolution des problèmes - Administration et les professionnels de l’informatique](performance-tuning-using-baselines-and-history.md).
 
 ## <a name="sample-performance-troubleshooting-action-plan"></a>Exemple de plan d’action de résolution des problèmes de performances
 
@@ -77,7 +77,7 @@ Pourquoi ? En vidant le cache DNS, vous démarrez vos tests avec une nouvelle ar
 
 #### <a name="flush-your-dns-resolver-cache"></a>Vider le cache de votre programme de résolution DNS
 
-1. Ouvrez l’invite de commandes (**commande** **Démarrer** \> **l’exécution** \> ou Windows **cmd** **de clé**\>).
+1. Ouvrez l’invite de commandes (**commande** **Démarrer** \> **l’exécution** \> ou **cmd** **de clé** \> Windows).
 2. Tapez la commande suivante, puis appuyez sur Entrée :
 
     ``` cmd
@@ -111,7 +111,7 @@ La page **De démarrage** comprend trois **volets : Captures récentes**, **Sél
 [HTTPWatch](https://www.httpwatch.com/download/) est disponible en version payante et une édition gratuite. L’édition Basic gratuite couvre tout ce dont vous avez besoin pour ce test. HTTPWatch surveille le trafic réseau et le temps de chargement des pages directement à partir de la fenêtre de votre navigateur. HTTPWatch est un plug-in d’Internet Explorer qui décrit graphiquement les performances. L’analyse peut être enregistrée et affichée dans HTTPWatch Studio.
 
 > [!NOTE]
-> Si vous utilisez un autre navigateur, tel que Firefox, Google Chrome, ou si vous ne pouvez pas installer HTTPWatch dans Internet Explorer, ouvrez une nouvelle fenêtre de navigateur et appuyez sur F12 sur votre clavier. La fenêtre contextuelle Outil développeur doit s’afficher en bas de votre navigateur. Si vous utilisez Opera, appuyez sur Ctrl+Maj+I pour l’inspecteur web, puis cliquez sur l’onglet **Réseau** et effectuez les tests décrits ci-dessous. Les informations seront légèrement différentes, mais les temps de chargement restent affichés en millisecondes. > HTTPWatch est également très utile pour les problèmes liés à SharePoint temps de chargement de page en ligne.
+> Si vous utilisez un autre navigateur, tel que Firefox, Google Chrome, ou si vous ne pouvez pas installer HTTPWatch dans Internet Explorer, ouvrez une nouvelle fenêtre de navigateur et appuyez sur F12 sur votre clavier. La fenêtre contextuelle Outil développeur doit s’afficher en bas de votre navigateur. Si vous utilisez Opera, appuyez sur Ctrl+Maj+I pour l’inspecteur web, puis cliquez sur l’onglet **Réseau** et effectuez les tests décrits ci-dessous. Les informations seront légèrement différentes, mais les temps de chargement restent affichés en millisecondes. > HTTPWatch est également très utile pour les problèmes liés aux temps de chargement des pages SharePoint Online.
 
 ### <a name="run-httpwatch-and-reproduce-the-issue"></a>Exécuter HTTPWatch et reproduire le problème
 
@@ -125,11 +125,11 @@ Par le passé, HTTPWatch a été associé aux barres Commandes et Explorateur. P
 
 2. Reproduisez les étapes exactes impliquées dans le problème de performances. Cliquez sur le bouton **Arrêter** dans HTTPWatch.
 
-3. **Enregistrez** le httpwatch ou **l’envoi par e-mail**. N’oubliez pas de nommer le fichier afin qu’il inclue des informations de date et d’heure et une indication indiquant si votre Montre contient une démonstration de performances correctes ou incorrectes.
+3. **Enregistrez** httpWatch ou **Envoyer par Email**. N’oubliez pas de nommer le fichier afin qu’il inclue des informations de date et d’heure et une indication indiquant si votre Montre contient une démonstration de performances correctes ou incorrectes.
 
 ![HTTPWatch affichant l’onglet Réseau pour le chargement de la page d’accueil Office 365.](../media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)
 
-Cette capture d’écran est tirée de la version Professional de HTTPWatch. Vous pouvez ouvrir les traces prises dans la version de base sur un ordinateur avec une version Professional et la lire. Des informations supplémentaires peuvent être disponibles à partir de la trace par le biais de cette méthode.
+Cette capture d’écran provient de la version professionnelle de HTTPWatch. Vous pouvez ouvrir les traces prises dans la version de base sur un ordinateur avec une version professionnelle et la lire là-bas. Des informations supplémentaires peuvent être disponibles à partir de la trace par le biais de cette méthode.
 
 ## <a name="problem-steps-recorder"></a>Enregistreur des étapes de problème
 
@@ -137,7 +137,7 @@ L’enregistreur d’étapes, ou PSR.exe, vous permet d’enregistrer les probl�
 
 ### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>Exécuter l’enregistreur des étapes de problème (PSR.exe) pour enregistrer votre travail
 
-1. Utilisez le type **Démarrer** \> **l’exécution** \> **PSR.exe** \> **OK**, ou cliquez sur le **type de clé** \> **WindowsPSR.exe** \>, puis appuyez sur Entrée.
+1. Utilisez le type **Démarrer** \> **l’exécution** \> **PSR.exe** \> **OK**, ou cliquez sur le type de **clé** \> Windows **PSR.exe** \> , puis appuyez sur Entrée.
 
 2. Lorsque la petite fenêtre PSR.exe s’affiche, cliquez sur **Démarrer l’enregistrement** et reproduisez les étapes qui reproduisent le problème de performances. Vous pouvez ajouter des commentaires en fonction des besoins, en cliquant sur **Ajouter des commentaires**.
 
@@ -163,7 +163,7 @@ Les traces Netmon peuvent contenir beaucoup de trafic. Si vous n’avez pas l’
 
 Le trafic entre votre client et Office 365 transite par TLS, ce qui signifie que le corps du trafic sera chiffré et non lisible dans une trace Netmon générique. Votre analyse des performances n’a pas besoin de connaître les spécificités des informations contenues dans le paquet. Toutefois, il est très intéressé par les en-têtes de paquets et les informations qu’ils contiennent.
 
-### <a name="tips-to-get-a-good-trace"></a>Astuces pour obtenir une bonne trace
+### <a name="tips-to-get-a-good-trace"></a>Conseils pour obtenir une bonne trace
 
 - Connaître la valeur de l’adresse IPv4 ou IPv6 de votre ordinateur client. Vous pouvez l’obtenir à partir de l’invite de commandes en tapant **IPConfig** , puis en appuyant sur Entrée. Le fait de connaître cette adresse vous permet de savoir en un coup d’œil si le trafic dans la trace implique directement votre ordinateur client. S’il existe un proxy connu, effectuez un test ping et obtenez également son adresse IP.
 
@@ -188,7 +188,7 @@ En prenant Office 365 Outlook Online comme exemple, le trafic commence comme sui
 
 - Requête HTTP GET dont le rapport d’état a été déplacé définitivement (301)
 
-- Trafic RWS, y compris les demandes de Connecter RWS et les réponses Connecter. (Il s’agit de Winsock distant qui fait une connexion pour vous.)
+- Trafic RWS, y compris les demandes RWS Connect et les réponses Connect. (Il s’agit de Winsock distant qui fait une connexion pour vous.)
 
 - Conversation TCP SYN et TCP SYN/ACK. De nombreux paramètres de cette conversation ont un impact sur vos performances.
 
@@ -205,7 +205,7 @@ Si vous ne les avez pas encore installés, la matrice ci-dessous utilise plusieu
 
 Certains problèmes courants que vous pouvez rencontrer et comment les trouver dans votre trace réseau.
 
-### <a name="tcp-windows-scaling"></a>Mise à l’échelle Windows TCP
+### <a name="tcp-windows-scaling"></a>Mise à l’échelle windows TCP
 
 Trouvé dans SYN - SYN/ACK. Le matériel hérité ou vieillissant peut ne pas tirer parti de la mise à l’échelle des fenêtres TCP.  Sans les paramètres de mise à l’échelle des fenêtres TCP appropriés, la mémoire tampon 16 bits par défaut dans les en-têtes TCP se remplit en millisecondes.  Le trafic ne peut pas continuer à envoyer tant que le client n’a pas reçu un accusé de réception des données d’origine, ce qui entraîne des retards.
 
@@ -226,11 +226,11 @@ Pour afficher la valeur de mise à l’échelle Windows utilisée par votre conn
 
 ![Graphique qui montre comment faire correspondre SrcPort à DstPort dans une trace, pour obtenir le delta du temps.](../media/6a4ca573-0253-4fbd-93e8-92821ee1c351.png)
 
-### <a name="tcp-idle-time-settings"></a>Durée d’inactivité TCP Paramètres
+### <a name="tcp-idle-time-settings"></a>Paramètres de temps d’inactivité TCP
 
 Historiquement, la plupart des réseaux de périmètre sont configurés pour les connexions temporaires, ce qui signifie que les connexions inactives sont généralement arrêtées. Les sessions TCP inactives peuvent être arrêtées par des proxys et des pare-feu supérieurs à 100 à 300 secondes. Cela est problématique pour Outlook Online, car il crée et utilise des connexions à long terme, qu’elles soient inactives ou non.
 
-Lorsque les connexions sont arrêtées par des périphériques proxy ou pare-feu, le client n’est pas informé et une tentative d’utilisation de Outlook Online signifie qu’un ordinateur client essaiera, à plusieurs reprises, de réactiver la connexion avant d’en créer un nouveau. Vous pouvez voir des blocages dans le produit, des invites ou des performances lentes lors du chargement de la page.
+Lorsque les connexions sont arrêtées par des périphériques proxy ou pare-feu, le client n’est pas informé et une tentative d’utilisation d’Outlook Online signifie qu’un ordinateur client essaiera, à plusieurs reprises, de réactiver la connexion avant d’en créer un nouveau. Vous pouvez voir des blocages dans le produit, des invites ou des performances lentes lors du chargement de la page.
 
 #### <a name="tools"></a>Outils
 
@@ -244,9 +244,9 @@ Dans Netmon, examinez le champ Décalage de temps pour un aller-retour. Un aller
 Par exemple, le filtre dans Netmon peut ressembler  `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12`à , ou, dans Wireshark,  `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12`.
 
 > [!TIP]
-> Vous ne savez pas si l’adresse IP de votre trace appartient à votre serveur DNS ? Essayez de le regarder vers le haut à la ligne de commande. Cliquez sur **Démarrer** \> **l’exécution** \> et tapez **cmd**, ou **appuyez sur Windows Touche** \> et tapez **cmd**. À l’invite, tapez  `nslookup <the IP address from the network trace>`. Pour tester, utilisez nslookup par rapport à l’adresse IP de votre propre ordinateur. > Pour afficher la liste des plages d’adresses IP de Microsoft, consultez [Office 365 URL et plages d’adresses IP](./urls-and-ip-address-ranges.md).
+> Vous ne savez pas si l’adresse IP de votre trace appartient à votre serveur DNS ? Essayez de le regarder vers le haut à la ligne de commande. Cliquez sur **Démarrer** \> **l’exécution** \> et tapez **cmd**, ou **appuyez sur Clé** \> Windows et tapez **cmd**. À l’invite, tapez  `nslookup <the IP address from the network trace>`. Pour tester, utilisez nslookup par rapport à l’adresse IP de votre propre ordinateur. > Pour afficher la liste des plages d’adresses IP de Microsoft, consultez [Office 365 URL et plages d’adresses IP](./urls-and-ip-address-ranges.md).
 
-En cas de problème, attendez-vous à ce que les décalages de temps longs apparaissent, dans ce cas (Outlook Online), en particulier dans les paquets TLS:TLS qui affichent le passage des données d’application (par exemple, dans Netmon, vous pouvez trouver des paquets de données d’application via `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`). Vous devriez voir une progression fluide dans le temps au cours de la session. Si vous constatez de longs retards lors de l’actualisation de votre Outlook Online, cela peut être dû à un degré élevé de réinitialisations envoyées.
+En cas de problème, attendez-vous à ce que les décalages de temps longs apparaissent, dans ce cas (Outlook Online), en particulier dans les paquets TLS:TLS qui montrent le passage des données d’application (par exemple, dans Netmon, vous pouvez trouver des paquets de données d’application via  `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`). Vous devriez voir une progression fluide dans le temps au cours de la session. Si vous constatez de longs retards lors de l’actualisation d’Outlook Online, cela peut être dû à un degré élevé de réinitialisations envoyées.
 
 ### <a name="latencyround-trip-time"></a>Latence/durée des allers-retours
 
@@ -283,7 +283,7 @@ Voici les étapes à suivre pour filtrer votre Netmon afin d’obtenir l’adres
 3. Ouvrez la trace dans Netmon et filtrez pour DNS (ce filtre fonctionne également dans Wireshark, mais il est sensible à la casse `-- dns`). Étant donné que vous connaissez le nom du serveur DNS à partir de votre test ping, vous pouvez également filtrer plus rapidement dans Netmon comme suit : `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")`, ce qui ressemble à ceci dans les dns Wireshark et le frame contient « namnorthwest ».<br/>Ouvrez le paquet de réponse et, dans la fenêtre **Détails du cadre** Netmon, cliquez sur **DNS** pour développer pour plus d’informations. Dans les informations DNS, vous trouverez l’adresse IP du serveur DNS vers lequel la requête a été envoyée dans Office 365. Vous aurez besoin de cette adresse IP pour l’étape suivante (l’outil PsPing). Supprimez le filtre, cliquez avec le bouton droit sur la réponse DNS dans Netmon (**Résumé** \> du cadre **trouver les conversations** \> **DNS**) pour afficher la requête et la réponse DNS côte à côte.
 4. Dans Netmon, notez également la colonne Décalage de temps entre la requête DNS et la réponse. À l’étape suivante, l’outil [PsPing](/sysinternals/downloads/psping) facile à installer et à utiliser est très pratique, à la fois parce qu’ICMP est souvent bloqué sur les pare-feu et parce que PsPing suit élégamment la latence en millisecondes. PsPing termine une connexion TCP à une adresse et un port (dans notre cas, ouvrez le port 443).
 5. Installez PsPing.
-6. Ouvrez une invite de commandes (cmd de type Démarrer \> l’exécution \> ou Windows cmd de type clé\>) et remplacez le répertoire par le répertoire dans lequel vous avez installé PsPing pour exécuter la commande PsPing. Dans mes exemples, vous pouvez voir que j’ai créé un dossier « Perf » à la racine de C. Vous pouvez faire de même pour l’accès rapide.
+6. Ouvrez une invite de commandes (cmd de type Démarrer \> l’exécution \> ou cmd de type clé \> Windows) et remplacez le répertoire par le répertoire dans lequel vous avez installé PsPing pour exécuter la commande PsPing. Dans mes exemples, vous pouvez voir que j’ai créé un dossier « Perf » à la racine de C. Vous pouvez faire de même pour l’accès rapide.
 7. Tapez la commande pour effectuer votre PsPing sur l’adresse IP du serveur DNS Office 365 à partir de votre trace Netmon antérieure, y compris le numéro de port, par exemple `psping -n 20 132.245.24.82:445`. Cela vous donne un échantillonnage de 20 pings et une moyenne de la latence lorsque PsPing s’arrête.
 
 Si vous allez Office 365 via un serveur proxy, les étapes sont un peu différentes. Vous devez d’abord envoyer PsPing à votre serveur proxy pour obtenir une valeur de latence moyenne en millisecondes vers le proxy/sortie et vers l’arrière, puis exécuter PsPing sur le proxy, ou sur un ordinateur avec une connexion Internet directe pour obtenir la valeur manquante (celle à Office 365 et de retour).
@@ -307,9 +307,9 @@ N’oubliez pas de développer tous les nœuds (il y a un bouton en haut pour ce
 
 Cela ne s’applique qu’à vous si vous utilisez un serveur proxy. Si ce n’est pas le cas, vous pouvez ignorer ces étapes. Lorsque vous travaillez correctement, l’authentification proxy doit avoir lieu en millisecondes, de manière cohérente. Vous ne devriez pas voir de performances médiocres intermittentes pendant les périodes de pointe d’utilisation (par exemple).
 
-Si l’authentification par proxy est activée, chaque fois que vous créez une nouvelle connexion TCP à Office 365 pour obtenir des informations, vous devez passer par un processus d’authentification en arrière-plan. Par exemple, lorsque vous passez du calendrier au courrier dans Outlook Online, vous vous authentifierez. Et dans SharePoint Online, si une page affiche un média ou des données provenant de plusieurs sites ou emplacements, vous vous authentifierez pour chaque connexion TCP différente nécessaire pour afficher les données.
+Si l’authentification par proxy est activée, chaque fois que vous créez une nouvelle connexion TCP à Office 365 pour obtenir des informations, vous devez passer par un processus d’authentification en arrière-plan. Par exemple, lors du passage du calendrier à la messagerie dans Outlook Online, vous vous authentifierez. Et dans SharePoint Online, si une page affiche des médias ou des données provenant de plusieurs sites ou emplacements, vous vous authentifierez pour chaque connexion TCP différente nécessaire pour afficher les données.
 
-Dans Outlook Online, vous pouvez rencontrer des temps de chargement lents chaque fois que vous basculez entre calendrier et votre boîte aux lettres, ou des chargements de pages lents dans SharePoint Online. Toutefois, d’autres symptômes ne sont pas répertoriés ici.
+Dans Outlook Online, vous pouvez rencontrer des temps de chargement lents chaque fois que vous basculez entre Calendrier et votre boîte aux lettres, ou des chargements de pages lents dans SharePoint Online. Toutefois, d’autres symptômes ne sont pas répertoriés ici.
 
 L’authentification par proxy est un paramètre sur votre serveur proxy de sortie. S’il est à l’origine d’un problème de performances avec Office 365, vous devez consulter votre équipe réseau.
 
@@ -359,7 +359,7 @@ L’analyse des performances DNS est généralement un autre travail pour une tr
 
 Le trafic DNS est basé sur les requêtes TCP et UDP et les réponses sont clairement marquées avec un ID qui permet de faire correspondre une demande spécifique à sa réponse spécifique. Vous verrez le trafic DNS quand, par exemple, SharePoint Online utilise un nom de réseau ou une URL sur une page web. En règle générale, la plupart de ce trafic, sauf lors du transfert de zones, s’exécute sur UDP.
 
-Dans Netmon et Wireshark, le filtre le plus simple qui vous permettra d’examiner le trafic DNS est simplement `dns`. Veillez à utiliser des minuscules lors de la spécification du filtre. N’oubliez pas de vider votre cache de résolveur DNS avant de commencer à reproduire le problème sur votre ordinateur client. Par exemple, si vous avez un chargement lent SharePoint page en ligne pour la page d’accueil, vous devez fermer tous les navigateurs, ouvrir un nouveau navigateur, démarrer le suivi, vider le cache de votre programme de résolution DNS et accéder à votre site SharePoint Online. Une fois la page entière résolue, vous devez arrêter et enregistrer la trace.
+Dans Netmon et Wireshark, le filtre le plus simple qui vous permettra d’examiner le trafic DNS est simplement `dns`. Veillez à utiliser des minuscules lors de la spécification du filtre. N’oubliez pas de vider votre cache de résolveur DNS avant de commencer à reproduire le problème sur votre ordinateur client. Par exemple, si vous avez un chargement de page SharePoint Online lent pour la page d’accueil, vous devez fermer tous les navigateurs, ouvrir un nouveau navigateur, démarrer le suivi, vider le cache de votre programme de résolution DNS et accéder à votre site SharePoint Online. Une fois la page entière résolue, vous devez arrêter et enregistrer la trace.
 
 ![Un filtre de base pour DNS dans Netmon est DNS.](../media/1bebc118-ca13-45f3-803f-ab73e7af401d.png)
 
@@ -373,7 +373,7 @@ Vous voulez examiner le décalage horaire ici. Et il peut être utile d’ajoute
 
 Si vous trouvez une requête intéressante, envisagez de l’isoler en cliquant avec le bouton droit sur cette requête dans le panneau de détails du cadre, en choisissant Rechercher le **DNS** **conversations**\>. Notez que le panneau Conversations réseau passe directement à la conversation spécifique dans son journal du trafic UDP.
 
-![Trace Netmon de Outlook charge en ligne filtrée par DNS et utilisant Rechercher des conversations, puis DNS pour affiner les résultats.](../media/763cf20e-7b48-4a37-9449-c9978cfe118b.PNG)
+![Une trace Netmon de la charge Outlook Online filtrée par DNS et utilisant Rechercher des conversations, puis DNS pour affiner les résultats.](../media/763cf20e-7b48-4a37-9449-c9978cfe118b.PNG)
 
 Dans Wireshark, vous pouvez créer une colonne pour le temps DNS. Prenez votre trace (ou ouvrez une trace) dans Wireshark et filtrez par `dns`, ou, plus utilement,  `dns.time`. Cliquez sur n’importe quelle requête DNS et, dans le panneau affichant les détails, développez les  `Domain Name System (response)` détails. Vous verrez un champ pour le temps (par exemple, `[Time: 0.001111100 seconds]`. Cliquez avec le bouton droit cette fois et **sélectionnez Appliquer en tant que colonne**. Vous disposerez ainsi d’une colonne **Time** pour un tri plus rapide de votre trace. Cliquez sur la nouvelle colonne à trier en fonction des valeurs décroissantes pour voir quel appel DNS a pris le plus de temps à résoudre.
 
@@ -385,7 +385,7 @@ Si le problème semble spécifique à DNS, il peut être nécessaire de contacte
 
 ### <a name="proxy-scalability"></a>Extensibilité du proxy
 
-Des services comme Outlook Online dans Office 365 accordent aux clients plusieurs connexions à long terme. Par conséquent, chaque utilisateur peut utiliser davantage de connexions qui nécessitent une durée de vie plus longue.
+Les services comme Outlook Online dans Office 365 accordent aux clients plusieurs connexions à long terme. Par conséquent, chaque utilisateur peut utiliser davantage de connexions qui nécessitent une durée de vie plus longue.
 
 #### <a name="tools"></a>Outils
 
@@ -462,7 +462,7 @@ Où dans le monde Office 365 tente de résoudre votre appel DNS affecte votre vi
 
 Dans Outlook Online, une fois la première recherche DNS terminée, l’emplacement de ce DNS sera utilisé pour se connecter à votre centre de données le plus proche. Vous serez connecté à un serveur d’administration centrale Outlook Online, qui utilisera le réseau principal pour vous connecter au centre de données (dC) où vos données sont stockées. C’est plus rapide.
 
-Lors de l’accès à SharePoint Online, un utilisateur voyageant à l’étranger est dirigé vers son centre de données actif , c’est-à-dire le centre de données dont l’emplacement est basé sur la base d’accueil de son locataire SPO (donc, une base de données aux États-Unis si l’utilisateur est basé sur les États-Unis).
+Lors de l’accès à SharePoint Online, un utilisateur voyageant à l’étranger est dirigé vers son centre de données actif , c’est-à-dire le centre de données dont l’emplacement est basé sur la base d’accueil de son locataire SPO (donc, un DC aux États-Unis si l’utilisateur est basé sur les États-Unis).
 
 Lync Online a des nœuds actifs dans plusieurs DC à la fois. Lorsque des demandes sont envoyées pour des instances en ligne Lync, le DNS de Microsoft détermine d’où provient la requête dans le monde et retourne les adresses IP de la base de données régionale la plus proche où Lync Online est actif.
 
@@ -476,13 +476,13 @@ Lync Online a des nœuds actifs dans plusieurs DC à la fois. Lorsque des demand
 
 #### <a name="what-to-look-for"></a>Ce qu’il faut rechercher
 
-Les demandes de résolution de noms des serveurs DNS du client vers les serveurs DNS de Microsoft doivent dans la plupart des cas entraîner le renvoi par Microsoft DNS de l’adresse IP d’un centre de données régional (dC). Qu’est-ce que cela signifie pour vous ? Si votre siège social se trouve à Bengalre, en Inde, mais que vous voyagez dans le États-Unis, lorsque votre navigateur effectue une demande de Outlook Online, les serveurs DNS de Microsoft doivent vous remettre des adresses IP aux centres de données du États-Unis , un centre de données régional. Si la messagerie est nécessaire à partir de Outlook, ces données transitent par le réseau principal rapide de Microsoft entre les centres de données.
+Les demandes de résolution de noms des serveurs DNS du client vers les serveurs DNS de Microsoft doivent dans la plupart des cas entraîner le renvoi par Microsoft DNS de l’adresse IP d’un centre de données régional (dC). Qu’est-ce que cela signifie pour vous ? Si votre siège social se trouve à Bengalre, en Inde, mais que vous voyagez dans le États-Unis, lorsque votre navigateur effectue une demande pour Outlook Online, les serveurs DNS de Microsoft doivent vous remettre des adresses IP aux centres de données du États-Unis , un centre de données régional. Si la messagerie est nécessaire à partir d’Outlook, ces données transitent par le réseau principal rapide de Microsoft entre les centres de données.
 
 DNS fonctionne le plus rapidement lorsque la résolution de noms est effectuée le plus près possible de l’emplacement de l’utilisateur. Si vous êtes en Europe, vous souhaitez accéder à un DNS Microsoft en Europe et (idéalement) faire affaire avec un centre de données en Europe. Les performances d’un client en Europe allant à DNS et d’un centre de données en Amérique seront plus lentes.
 
 Exécutez l’outil Ping sur outlook.office365.com pour déterminer où dans le monde votre requête DNS est routée. Si vous êtes en Europe, vous devriez voir une réponse de quelque chose comme outlook-emeawest.office365.com. Dans les Amériques, attendez-vous à quelque chose comme outlook-namnorthwest.office365.com.
 
-Ouvrez l’invite de commandes sur l’ordinateur client (via la cmd Démarrer \> l’exécution \> ou Windows cmd de type de clé\>). Tapez ping outlook.office365.com et appuyez sur Entrée. N’oubliez pas de spécifier -4 si vous souhaitez spécifier pour effectuer un test ping via IPv4. Vous ne pouvez pas obtenir de réponse à partir des paquets ICMP, mais vous devez voir le nom du DNS vers lequel la requête a été routée. Si vous souhaitez voir les numéros de latence de cette connexion, essayez PsPing à l’adresse IP du serveur retourné par ping.
+Ouvrez l’invite de commandes sur l’ordinateur client (via l’applet de commande Démarrer \> l’exécution \> ou le type de clé \> Windows). Tapez ping outlook.office365.com et appuyez sur Entrée. N’oubliez pas de spécifier -4 si vous souhaitez spécifier pour effectuer un test ping via IPv4. Vous ne pouvez pas obtenir de réponse à partir des paquets ICMP, mais vous devez voir le nom du DNS vers lequel la requête a été routée. Si vous souhaitez voir les numéros de latence de cette connexion, essayez PsPing à l’adresse IP du serveur retourné par ping.
 
 ![Commande ping d’outlook.office365.com affichant la résolution dans outlook-namnorthwest.](../media/06c944d5-6159-43ec-aa31-757770695e8b.PNG)
 

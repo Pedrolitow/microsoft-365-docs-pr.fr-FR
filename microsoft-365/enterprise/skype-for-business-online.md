@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: En tant qu’administrateur, trouvez de l’aide pour configurer des parties de Skype Entreprise Online, notamment votre réseau, vos réunions et votre messagerie instantanée, ainsi que l’accès externe pour les utilisateurs.
-ms.openlocfilehash: d9c290cbf756cb0ec7a8a6f042409498d7a379b4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 05fbf45bd54f0a8a1c1d19fdaf376885a1e306d9
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092070"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669723"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Entreprise Online dans Office 365 - Aide de l'administrateur
 
 ## <a name="were-here-to-help"></a>Nous sommes là pour vous aider !
 
-En tant qu'administrateur pour Office 365 pour les entreprises, vous pouvez contacter gratuitement nos agents de support qualifiés. Si vous ne trouvez pas les informations dont vous avez besoin sur ce site web, **[contactez le support technique pour les produits professionnels - Aide de l’administrateur](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+En tant qu'administrateur pour Office 365 pour les entreprises, vous pouvez contacter gratuitement nos agents de support qualifiés. Si vous ne trouvez pas les informations dont vous avez besoin sur ce site web, **[contactez le support technique pour les produits professionnels - Administration aide](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Permettre à vos utilisateurs de contacter des utilisateurs de Skype ou Skype Entreprise externes
 

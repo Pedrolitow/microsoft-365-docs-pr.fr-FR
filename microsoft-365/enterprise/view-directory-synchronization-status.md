@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Dans cet article, découvrez comment vérifier l’état de votre synchronisation d’annuaires dans Office 365.
-ms.openlocfilehash: 28376a63ab035490bdfeafb294eed9d993db54d9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 050c4f4abfb8e4d925af3d65117d6c9ae8cb26e7
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669647"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670474"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Afficher l’état de synchronisation d’annuaires dans Microsoft 365
 
@@ -45,14 +45,14 @@ En cas de problème avec votre synchronisation d’annuaires, les erreurs sont �
   
 |Élément|Objet|
 |:-----|:-----|
-|**Domaines vérifiés** | Nombre de domaines dans votre locataire Microsoft 365 que vous avez vérifiés. |
+|**Domaines vérifiés** | Nombre de domaines dans votre locataire Microsoft 365 que vous avez vérifiés vous possédez. |
 |**Domaines non vérifiés** | Domaines que vous avez ajoutés, mais non vérifiés. |
 |**Synchronisation d’annuaires activée** |True ou False. Spécifie si vous avez activé la synchronisation d’annuaires. |
 |**Synchronisation d’annuaires la plus récente** | Dernière exécution de la synchronisation d’annuaires. Affiche un avertissement et un lien vers un outil de résolution des problèmes si la dernière synchronisation remonte à plus de trois jours. |
-|**Synchronisation de mot de passe activée** | True ou False. Spécifie si vous avez une synchronisation de hachage de mot de passe entre notre local et votre locataire Microsoft 365. |
+|**Synchronisation de mot de passe activée** | True ou False. Spécifie si vous avez une synchronisation de hachage de mot de passe entre notre environnement local et votre locataire Microsoft 365. |
 |**Dernière synchronisation de mot de passe** | Dernière exécution de la synchronisation de hachage de mot de passe. Affiche un avertissement et un lien vers un outil de résolution des problèmes si la dernière synchronisation remonte à plus de trois jours. |
-|**Version du client de synchronisation d’annuaires** | Contient un lien de téléchargement si une nouvelle version d’Azure AD Connecter a été publiée. |
-|**Compte de service de synchronisation d’annuaires** | Affiche le nom de votre compte de service de synchronisation d’annuaire Microsoft 365. |
+|**Version du client de synchronisation d’annuaires** | Contient un lien de téléchargement si une nouvelle version d’Azure AD Connect a été publiée. |
+|**Compte de service de synchronisation d’annuaires** | Affiche le nom de votre compte de service de synchronisation d’annuaires Microsoft 365. |
 |||
 
 ## <a name="monitor-synchronization-health"></a>Surveiller l’état de la synchronisation

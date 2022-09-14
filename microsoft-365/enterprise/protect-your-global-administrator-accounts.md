@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
@@ -25,12 +25,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès privilégié à votre locataire Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6aebdd79f2870ca25ab866bccb66c1d1f680f701
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 3639ca3ea132c900db38d5dd16278ce756a2cc24
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749328"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671168"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Étape 2. Protéger vos comptes privilégiés Microsoft 365
 
@@ -120,7 +120,7 @@ L’utilisation de PIM et de ce processus réduit considérablement la durée pe
 
 PIM est disponible avec Azure Active Directory Premium P2, qui est inclus avec Microsoft 365 E5. Vous pouvez également acheter des licences Azure Active Directory Premium P2 individuelles pour vos comptes d’administrateur.
   
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
 - [Sécuriser l’accès privilégié pour les déploiements hybrides et cloud dans Azure AD](/azure/active-directory/roles/security-planning)

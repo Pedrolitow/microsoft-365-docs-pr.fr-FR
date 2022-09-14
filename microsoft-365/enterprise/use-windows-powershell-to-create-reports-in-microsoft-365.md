@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Résumé : Utilisez PowerShell pour Microsoft 365 pour créer des rapports que vous ne pouvez pas produire dans le Centre d'administration Microsoft 365."
-ms.openlocfilehash: cc64e5108a5aeff517f825ca4973b2511fe124b3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7f2180865831885392abbe91ba48957d457d0756
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078441"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669098"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Utilisation de PowerShell pour créer des rapports pour Microsoft 365
 
@@ -31,20 +31,20 @@ De nombreux rapports différents sont disponibles dans le Centre d'administratio
   
 Ces articles expliquent comment utiliser PowerShell pour Microsoft 365 afin d’obtenir des informations auprès de votre locataire Microsoft 365 :
   
-- Démarrage avec création de rapports à l’aide de PowerShell pour Microsoft 365 :
+- Prise en main de la création de rapports à l’aide de PowerShell pour Microsoft 365 :
     
   - [Pourquoi utiliser PowerShell pour Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - Rapports pour les comptes d’utilisateurs et les licences :
     
-  - [Afficher Microsoft 365 licences et services avec PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+  - [Afficher les licences et services Microsoft 365 avec PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [Afficher Microsoft 365 utilisateurs sous licence et sans licence avec PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+  - [Afficher les utilisateurs sous licence et sans licence Microsoft 365 avec PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
     
-  - [Afficher Microsoft 365 licence de compte et les détails du service avec PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+  - [Afficher les détails du service et de la licence de compte Microsoft 365 avec PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-  - [Afficher Microsoft 365 comptes d’utilisateur avec PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
+  - [Afficher les comptes d’utilisateur Microsoft 365 avec PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
     
 - Rapports pour SharePoint Online :
     
