@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent découvrir les différences entre le courrier indésirable (courrier indésirable) et le courrier en bloc (courrier gris) dans Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: d8fc8bdc3740c5103c33a1e3fdd1d98dc67f8704
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8e5aeabff9ae99b6dcd206bc48b2a6a744a2dffc
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482403"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672708"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre le courrier indésirable et le courrier électronique en bloc dans EOP ?
 

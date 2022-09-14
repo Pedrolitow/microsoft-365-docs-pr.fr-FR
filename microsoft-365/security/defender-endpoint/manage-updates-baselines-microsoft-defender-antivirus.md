@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/08/2022
+ms.date: 09/13/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ad736e8cb196fabbfd1c08112ef0aa9dc0794593
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 24b5d6be3e4b0a226617623b68c49d2043475045
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631469"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672224"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
@@ -87,31 +87,32 @@ Toutes nos mises à jour contiennent
 - Améliorations de la facilité de service
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
-<details> 
-<summary> Août-2022 (Plateforme : 4.18.2207.7| Moteur : 1.1.19600.3)</summary> 
- &ensp;Version de la mise à jour du renseignement de sécurité : **1.373.1647.0** <br/>
-&ensp;Publication : **6 septembre 2022**<br/>
+<details>
+<summary>Août-2022 (Plateforme : 4.18.2207.7 | Moteur : 1.1.19600.3)</summary>
+
+&ensp;Version de la mise à jour du renseignement de sécurité : **1.373.1647.0**<br/>
+&ensp;Date de publication : **6 septembre 2022**<br/>
 &ensp;Plateforme : **4.18.2207.7**<br/>
 &ensp;Moteur : **1.1.19600.3**<br/>
 &ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
-  Version du moteur : 1.1.19600.3<br/>
-Version de la mise à jour du renseignement de sécurité : 1.373.1647.0<br/>
-  
-### <a name="whats-new"></a>Nouveautés 
 
-- Résolution des problèmes de programme d’installation de l’agent unifié sur le serveur WS2012R2 et Windows Server 2016 <br/>
-- Correction d’un problème de correction pour la détection personnalisée <br/>
-- Correction d’une condition de concurrence liée à la surveillance du comportement <br/>
-- Résolution de plusieurs scénarios d’interblocage dans les DLL Defender <br/>
-- Amélioration de la fréquence de notification des toasts Windows pour les règles ASR  
-  
-### <a name="known-issues"></a>Problèmes connus 
+Version du moteur : 1.1.19600.3<br/>
+Version de la mise à jour du renseignement de sécurité : 1.373.1647.0 <br/>
 
-Aucun problème connu   
+### <a name="whats-new"></a>Nouveautés
 
-<br/> 
-</details> 
-<details>
+- Résolution des problèmes de programme d’installation de l’agent unifié sur le serveur WS2012R2 et Windows Server 2016
+- Correction d’un problème de correction pour la détection personnalisée
+- Correction d’une condition de concurrence liée à la surveillance du comportement
+- Résolution de plusieurs scénarios d’interblocage dans les DLL Defender
+- Amélioration de la fréquence de notification des toasts Windows pour les règles ASR
+
+### <a name="known-issues"></a>Problèmes connus
+
+- Aucun
+
+<br/><br/>
+</details><details>
 <summary>Juillet-2022 (Plateforme : 4.18.2207.5 | Moteur : 1.1.19500.2)</summary>
 
 &ensp;Version de la mise à jour du renseignement de sécurité : **1.373.219.0**<br/>

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Dans cet article, découvrez les exigences de routage, les circuits et les domaines de routage Azure ExpressRoute à utiliser avec Office 365.
-ms.openlocfilehash: 4596f3fb05b39b8044c645db3bfcb1bd5fbe8c18
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: aed020d1d7e6f54b3d6856720b8c5adea3409491
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660814"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671542"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routage avec ExpressRoute pour Office 365
 

@@ -7,19 +7,19 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Feuille de route pour configurer vos locataires pour Microsoft 365.
-ms.openlocfilehash: d24d134c5ca74d1ddb47bcccead996fe0a914b0d
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+ms.openlocfilehash: 679d88d00bd0b806ec5b1be098ddad7bee2d82d0
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652360"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672004"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route du locataire pour Microsoft 365
 

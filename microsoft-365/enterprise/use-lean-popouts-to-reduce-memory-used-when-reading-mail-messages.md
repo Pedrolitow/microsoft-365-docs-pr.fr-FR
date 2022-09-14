@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,21 +15,21 @@ f1.keywords:
 - NOCSH
 description: Cet article contient des informations sur l’utilisation de fenêtres contextuelles allégées pour améliorer les performances de téléchargement des messages dans Outlook sur le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9636fd3beafd169358c4b50cafdc4ac0f9494994
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 85045c1227509c42eea432a1fb72d639693aa299
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012679"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671828"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Utiliser des fenêtres contextuelles maigres pour réduire la mémoire utilisée lors de la lecture des messages électroniques
 
 Cet article contient des informations pour améliorer les performances de téléchargement des messages dans Outlook sur le web. Cet article fait partie de la [planification réseau et de l’optimisation des performances pour Office 365](./network-planning-and-performance.md) projet.
   
-En tant **qu’administrateur d’application** Office 365, **administrateur général** ou **administrateur d’utilisateur**, vous pouvez configurer Outlook sur le web pour fournir _des fenêtres contextuelles maigres_, une version plus petite et moins gourmande en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer. Lorsque des fenêtres contextuelles maigres sont configurées pour Outlook sur le web, les composants rendus côté serveur sont chargés pour optimiser les performances.
+En tant que Office 365 **application Administration**, **administrateur général** ou **Administration utilisateur**, vous pouvez configurer Outlook sur le web pour fournir _des fenêtres contextuelles maigres_, une version plus petite et moins gourmande en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer. Lorsque des fenêtres contextuelles maigres sont configurées pour Outlook sur le web, les composants rendus côté serveur sont chargés pour optimiser les performances.
   
 > [!NOTE]
-> À compter de mars 2018, les fenêtres contextuelles maigres ne sont pas disponibles pour les messages qui spécifient des restrictions de droits d’utilisation, telles que l’information Rights Management (IRM).
+> Depuis mars 2018, les fenêtres contextuelles allégées ne sont pas disponibles pour les messages qui spécifient des restrictions de droits d’utilisation, telles que la Gestion des droits relatifs à l’information (IRM).
   
 Ces fonctionnalités continueront de fonctionner dans la fenêtre principale, mais ne sont pas disponibles dans les fenêtres contextuelles maigres :
   

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 9/29/2016
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: Cet article fournit des liens pour les administrateurs système qui planifient les besoins en bande passante réseau ou améliorent les performances de Skype Entreprise Online.
-ms.openlocfilehash: 2316f919d564216cd015b398641278e2f3a11567
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f1cdd649a80e41fe67dae52abcdd9aff1c7eccf4
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077372"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671872"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimiser les performances de Skype Entreprise Online
 
@@ -40,7 +40,7 @@ Cet article fournit des liens pour les administrateurs système qui souhaitent p
     
 ## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Autres moyens d’améliorer Skype Entreprise performances en ligne
 
-- [ExpressRoute et QoS dans Skype Entreprise Online](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online) : Connecter pour Office 365 via une connexion réseau dédiée à l’aide d’Azure ExpressRoute pour Office 365 et Skype Entreprise Online. 
+- [ExpressRoute et QoS dans Skype Entreprise Online](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online) : connectez-vous à Office 365 via une connexion réseau dédiée à l’aide d’Azure ExpressRoute pour Office 365 et Skype Entreprise Online. 
     
 - [L’activation et l’utilisation du tableau de bord qualité des appels dans Skype Entreprise Online](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard) : Le tableau de bord de qualité des appels (CQD) vous permet de surveiller et d’obtenir des insights sur la qualité des appels effectués à l’aide de services Skype Entreprise. 
     
@@ -52,7 +52,7 @@ Cet article fournit des liens pour les administrateurs système qui souhaitent p
     
 - [Configurer des forfaits d’appels (Skype Entreprise)](/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
-- [Voici ce que vous obtenez avec Système téléphonique dans Office 365](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
+- [Voici ce que vous obtenez avec le système téléphonique dans Office 365](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
 ## <a name="see-also"></a>Voir aussi
 

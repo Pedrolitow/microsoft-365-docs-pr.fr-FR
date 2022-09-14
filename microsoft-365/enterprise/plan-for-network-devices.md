@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : Décrit les considérations relatives à la capacité réseau, aux accélérateurs WAN et aux appareils d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: 3b79e73f292ecf1db38a90364db3d2e475723158
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: eddb7cd45e872b41fa25dbf0cd1786ccb40de1e2
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622833"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672070"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
@@ -33,7 +33,7 @@ Certains matériels réseau peuvent avoir des limitations sur le nombre de sessi
 
 Cet article fait partie de la [planification du réseau et de l’optimisation des performances pour Office 365](./network-planning-and-performance.md).
 
-Les paramètres de proxy Internet sortants locaux affectent également la connectivité aux services Office 365 pour vos applications clientes. Vous devez également configurer vos périphériques proxy réseau pour autoriser les connexions pour les URL et applications des services cloud Microsoft. Chaque organisation est différente. Pour avoir une idée de la façon dont Microsoft gère ce processus et la quantité de bande passante que nous approvisionnons, [lisez l’étude de cas](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+Les paramètres de proxy Internet sortants locaux affectent également la connectivité aux services Office 365 pour vos applications clientes. Vous devez également configurer vos périphériques proxy réseau pour autoriser les connexions pour les URL et applications des services cloud Microsoft. Chaque organisation est spécifique. Pour avoir une idée de la façon dont Microsoft gère ce processus et la quantité de bande passante que nous approvisionnons, [lisez l’étude de cas](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
   
 Les articles d’aide Skype Entreprise suivants fournissent plus d’informations sur Skype Entreprise paramètres :
   

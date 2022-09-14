@@ -1,48 +1,48 @@
 ---
-title: Microsoft 365 routage réseau informé
+title: Routage réseau informé microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 routage réseau informé
-ms.openlocfilehash: fc946b3a1de057605b89bcadeb4e5b7269aebcb0
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Routage réseau informé microsoft 365
+ms.openlocfilehash: d20406b75b76fcab5748560f6e0f23c2cd3ad011
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622492"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670452"
 ---
-# <a name="microsoft-365-informed-network-routing"></a>Microsoft 365 routage réseau informé
+# <a name="microsoft-365-informed-network-routing"></a>Routage réseau informé microsoft 365
 
 Le routage réseau informé est une fonctionnalité qui intègre différentes applications Microsoft 365 à des solutions SD-WAN (Software Defined Network) tierces afin d’optimiser et d’améliorer votre connectivité réseau aux points de terminaison de service Microsoft. Une connectivité SD-WAN optimisée peut améliorer les expériences utilisateur et les performances.
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le routage réseau informé fournit un canal de partage de données bidirectionnel entre Microsoft et votre solution SD-WAN. Pour chaque emplacement de bureau et circuit Internet que vous configurez, Microsoft partage régulièrement des commentaires avec la solution SD-WAN sur la qualité des expériences d’application Microsoft 365 sélectionnées pour le trafic réseau associé à chaque circuit Internet spécifique. À l’aide de ces commentaires, la solution SD-WAN peut ensuite effectuer des actions de récupération intelligente en routant Microsoft 365 trafic d’application via d’autres liens disponibles. 
+Le routage réseau informé fournit un canal de partage de données bidirectionnel entre Microsoft et votre solution SD-WAN. Pour chaque emplacement de bureau et circuit Internet que vous configurez, Microsoft partage régulièrement des commentaires avec la solution SD-WAN sur la qualité des expériences d’application Microsoft 365 sélectionnées pour le trafic réseau associé à chaque circuit Internet spécifique. À l’aide de ces commentaires, la solution SD-WAN peut ensuite effectuer des actions de récupération intelligente en routant le trafic d’application Microsoft 365 via d’autres liens disponibles. 
 
-Les dégradations de la qualité de service dans le chemin d’accès d’un circuit Internet particulier, telles qu’une latence accrue ou une perte élevée de paquets, sont difficiles à détecter en continu. Ces dégradations peuvent nuire aux expériences utilisateur pour des applications telles que Exchange Online, SharePoint, OneDrive et Microsoft Teams. Les symptômes courants incluent une recherche lente de contenu Exchange, des temps de transfert élevés lors de l’interaction avec des bibliothèques de documents SharePoint ou OneDrive, ou une qualité d’appel ou de réunion médiocre dans Microsoft Teams.
+Les dégradations de la qualité de service dans le chemin d’accès d’un circuit Internet particulier, telles qu’une latence accrue ou une perte élevée de paquets, sont difficiles à détecter en continu. Ces dégradations peuvent nuire aux expériences utilisateur pour des applications telles que Exchange Online, SharePoint, OneDrive et Microsoft Teams. Les symptômes courants incluent une recherche lente du contenu Exchange, des temps de transfert élevés lors de l’interaction avec des bibliothèques de documents SharePoint ou OneDrive, ou une mauvaise qualité des appels ou des réunions dans Microsoft Teams.
 
 Le mécanisme de rétroaction et de récupération dans le routage réseau informé cherche à détecter dynamiquement ces problèmes en quasi-temps réel et informe la solution SD-WAN déployée d’effectuer des actions de récupération automatique.
 
-Le canal de partage de données est également utilisé pour recevoir régulièrement des données optiques au niveau du réseau de la solution SD-WAN, y compris les informations de configuration et les statistiques d’utilisation associées à l’appareil et aux circuits attachés. Aucune information personnelle n’est collectée ou stockée. Toutes les informations collectées sont agrégées dans les bureaux et les circuits Internet connectés. Ces informations peuvent aider Microsoft à résoudre plus efficacement les problèmes signalés liés à l’utilisation de Microsoft 365 services et applications.
+Le canal de partage de données est également utilisé pour recevoir régulièrement des données optiques au niveau du réseau de la solution SD-WAN, y compris les informations de configuration et les statistiques d’utilisation associées à l’appareil et aux circuits attachés. Aucune information personnelle n’est collectée ou stockée. Toutes les informations collectées sont agrégées dans les bureaux et les circuits Internet connectés. Ces informations peuvent aider Microsoft à résoudre plus efficacement les problèmes signalés liés à votre utilisation des services et applications Microsoft 365.
 
 >[!NOTE]
->Microsoft 365 le routage réseau informé prend en charge les locataires dans le cloud commercial WW, mais pas les clouds Cloud de la communauté du secteur public Modéré, Cloud de la communauté du secteur public Élevé, DoD, Allemagne ou Chine.
+>Le routage réseau informé microsoft 365 prend en charge les locataires dans le cloud commercial WW, mais pas les clouds GCC Moderate, GCC High, DoD, Germany ou China.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 ### <a name="integrated-sd-wan-solutions"></a>Solutions SD-WAN intégrées
 
-Microsoft travaille avec différents partenaires pour permettre l’intégration à Microsoft 365 routage réseau informé. Les solutions actuellement activées sont les suivantes :
+Microsoft travaille avec différents partenaires pour permettre l’intégration au routage réseau informé microsoft 365. Les solutions actuellement activées sont les suivantes :
 
 | Fabricant d’appareils | Nom de solution | Version minimale |
 | --- | --- | --- |
@@ -56,13 +56,13 @@ Dans le cas où il n’existe pas au moins un circuit réseau fournissant un acc
 
 ### <a name="application-usage"></a>Utilisation de l’application
 
-Les données d’expérience d’application (reflétées par les métriques de qualité réseau) sont collectées par le biais de l’utilisation d’applications clientes Microsoft spécifiques. Exchange métriques reflètent l’utilisation du client Outlook et certaines Outlook l’utilisation de l’application web. SharePoint et les métriques OneDrive reflètent l’utilisation des points de terminaison SharePoint spécifiques au locataire, quelle que soit l’application cliente. Teams métriques reflètent l’utilisation du client de bureau Teams. Le trafic d’autres applications n’est pas pris en compte lors de l’évaluation de l’intégrité d’un circuit réseau.
+Les données d’expérience d’application (reflétées par les métriques de qualité réseau) sont collectées par le biais de l’utilisation d’applications clientes Microsoft spécifiques. Les métriques Exchange reflètent l’utilisation du client Outlook et de certaines utilisations d’Outlook Web App. Les métriques SharePoint et OneDrive reflètent l’utilisation des points de terminaison SharePoint spécifiques au locataire, quelle que soit l’application cliente. Les métriques Teams reflètent l’utilisation du client de bureau Teams. Le trafic d’autres applications n’est pas pris en compte lors de l’évaluation de l’intégrité d’un circuit réseau.
 
 ## <a name="enabling-informed-network-routing"></a>Activation du routage réseau informé
 
 L’activation du routage réseau éclairé nécessite plusieurs étapes, dont certaines doivent être effectuées dans l’interface de configuration de votre solution SD-WAN. Consultez le fournisseur de votre solution SD-WAN pour obtenir des conseils sur la façon de lancer le processus d’activation du routage réseau informé au sein de la solution SD-WAN avant de poursuivre la configuration dans le Centre d'administration Microsoft 365.
 
-Une fois que vous êtes prêt à activer le routage réseau informé dans le Centre d'administration Microsoft 365, vérifiez que vous disposez des autorisations **d’administrateur utilisateur** ou **d’administrateur général** nécessaires.
+Une fois que vous êtes prêt à activer le routage réseau informé dans le Centre d'administration Microsoft 365, vérifiez que vous disposez des autorisations **d’Administration utilisateur** ou **d’administrateur général** nécessaires.
 
 >[!IMPORTANT]
 >Pour fournir le consentement des autorisations d’applications au niveau du locataire nécessaires pour que la solution SD-WAN sélectionnée accède au canal de partage de données de routage réseau informé, vous devez effectuer les étapes suivantes en tant qu’administrateur général.
@@ -74,7 +74,7 @@ Dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/), s
 
 Cette section du Centre d’administration fournit des métriques de connectivité réseau agrégées pour votre organisation et des conseils sur la façon d’améliorer votre connectivité. Pour plus d’informations sur ces fonctionnalités disponibles dans le Centre d’administration, consultez la [connectivité réseau dans le centre de Administration Microsoft 365](office-365-network-mac-perf-overview.md).
 
-Sélectionnez **Paramètres > solution SD-WAN** pour ouvrir le volet de configuration du routage réseau informé. Les autres options qui apparaissent sous **Paramètres** s’appliquent aux instructions générales de connectivité réseau dans le Centre d’administration et ne sont pas requises pour activer le routage réseau informé.
+Sélectionnez **Paramètres > solution SD-WAN** pour ouvrir le volet de configuration du routage réseau informé. Les autres options qui apparaissent sous Paramètres s’appliquent aux instructions **générales** de connectivité réseau dans le Centre d’administration et ne sont pas requises pour activer le routage réseau informé.
 
 Dans le volet de configuration, sélectionnez **Ajouter votre solution SD-WAN**.
 
@@ -92,7 +92,7 @@ Sélectionnez **Suivant**.
 
 ### <a name="step-4-grant-permissions-to-the-sd-wan-solution"></a>Étape 4 : Accorder des autorisations à la solution SD-WAN
 
-Cette étape lance une demande d’octroi d’autorisations avec Azure Active Directory (Azure AD). Vous serez invité à accorder des autorisations au niveau du locataire qui permettent à votre solution SD-WAN sélectionnée d’accéder au stockage de données de routage réseau informé et aux informations d’intégrité du service associées à votre locataire. Cette action nécessite des autorisations **d’administrateur de contrôleur de domaine Azure AD** ou **d’administrateur général** .
+Cette étape lance une demande d’octroi d’autorisations auprès d’Azure Active Directory (Azure AD). Vous serez invité à accorder des autorisations au niveau du locataire qui permettent à votre solution SD-WAN sélectionnée d’accéder au stockage de données de routage réseau informé et aux informations d’intégrité du service associées à votre locataire. Cette action nécessite des autorisations **d’administrateur de contrôleur de domaine Azure AD** ou **d’administrateur général** .
 
 Sélectionnez le lien **Accorder l’autorisation à ce lien d’application** et suivez les demandes Azure AD.
 
@@ -112,7 +112,7 @@ Vous allez effectuer une grande partie de la configuration du routage réseau in
 
 Chaque emplacement de bureau doit être configuré dans le Centre d'administration Microsoft 365 afin que le routage réseau informé puisse identifier correctement le trafic associé aux circuits réseau fournissant une connectivité à ces emplacements.
 
-Office emplacements peuvent être détectés automatiquement dans le cadre de la collecte continue de données de télémétrie réseau de Microsoft. Par conséquent, certains emplacements peuvent être préremplis dans le centre d’administration de votre locataire. 
+Les emplacements Office peuvent être détectés automatiquement dans le cadre de la collecte continue de données de télémétrie réseau de Microsoft. Par conséquent, certains emplacements peuvent être préremplis dans le centre d’administration de votre locataire. 
 
 Si ces emplacements sont précis, vous devez simplement activer la fonctionnalité de routage réseau informé pour chaque emplacement souhaité et configurer les circuits Internet et leurs adresses IP publiques. 
 
@@ -131,15 +131,15 @@ Vérifiez que chaque emplacement de bureau où vous souhaitez activer le routage
 
 1. Dans la liste **Emplacements** , sélectionnez **Modifier** dans le menu Actions rapides pour ouvrir le volet de configuration de l’emplacement.
 
-2. Sélectionnez **Utiliser Microsoft 365 routage réseau informé à cet emplacement**.
+2. Sélectionnez **Utiliser le routage réseau informé microsoft 365 à cet emplacement**.
 
-3. Ajoutez tous les circuits réseau fournissant une connectivité Internet à cet emplacement de bureau dans les **plages d’adresses IP Egress dans cette section d’emplacement de bureau**. Assurez-vous que chaque circuit est associé aux sous-réseaux d’adresses IP publiques uniques représentant votre trafic réseau.
+3. Ajoutez tous les circuits réseau fournissant une connectivité Internet à cet emplacement de bureau dans les **plages d’adresses IP de sortie dans cette section d’emplacement de bureau** . Assurez-vous que chaque circuit est associé aux sous-réseaux d’adresses IP publiques uniques représentant votre trafic réseau.
 
 4. Sélectionnez **Enregistrer** pour enregistrer vos modifications.
 
 ## <a name="disabling-informed-network-routing"></a>Désactivation du routage réseau informé
 
-La fonctionnalité de routage réseau informé peut être désactivée pour l’ensemble du locataire en réinitialisant vos paramètres de solution SD-WAN. Bien que cela arrête tout traitement des données dans Microsoft 365, vous devez également désactiver le routage réseau informé au sein du centre d’administration.
+La fonctionnalité de routage réseau informé peut être désactivée pour l’ensemble du locataire en réinitialisant vos paramètres de solution SD-WAN. Bien que cela arrête tout le traitement des données dans Microsoft 365, vous devez également désactiver le routage réseau informé au sein du centre d’administration.
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Étape 1 : Ouvrir les options de configuration de la solution SD-WAN
 
@@ -157,7 +157,7 @@ Vos paramètres ont été réinitialisés et le routage réseau informé a été
 
 ## <a name="data-storage"></a>Stockage des données
 
-Les données échangées entre Microsoft et le fournisseur de solutions SD-WAN sont stockées dans l’emplacement de stockage de données sélectionné lors de l’activation initiale du routage réseau informé. Les options d’emplacement de stockage des données représentent des zones géographiques contenant Microsoft Azure régions où les données sont stockées.
+Les données échangées entre Microsoft et le fournisseur de solutions SD-WAN sont stockées dans l’emplacement de stockage de données sélectionné lors de l’activation initiale du routage réseau informé. Les options d’emplacement de stockage de données représentent des zones géographiques contenant des régions Microsoft Azure où les données sont stockées.
 
 Les données sont conservées à cet emplacement pendant 30 jours maximum. Quand elle est désactivée, toutes les données restantes sont supprimées dans cette fenêtre de rétention de 30 jours.
 
@@ -167,4 +167,4 @@ Les données de cet emplacement sont échangées avec la solution SD-WAN sélect
 
 [Connectivité réseau dans le Centre d'administration Microsoft 365](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 services d’emplacement de connectivité réseau](office-365-network-mac-location-services.md)
+[Services d’emplacement de connectivité réseau Microsoft 365](office-365-network-mac-location-services.md)

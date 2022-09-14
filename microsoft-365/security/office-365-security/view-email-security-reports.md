@@ -18,14 +18,14 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à rechercher et à utiliser les rapports de sécurité par e-mail disponibles dans le portail Microsoft 365 Defender.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 4129a5ff76409e531376adb069c99218686fbec6
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 28f5a19abd0a2a1ddc0d2bab3863176d2470c980
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409199"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672422"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender
 
@@ -53,12 +53,12 @@ Les rapports Exchange Online Protection (EOP) et Microsoft Defender pour Office 
 
 |Rapport et applets de commande dépréciés|Nouveau rapport et applets de commande|ID du Centre de messages|Date|
 |---|---|:---:|:---:|
-|**traçage d’URL** <br/><br/> Get-URLTrace|[Rapport sur la protection des URL](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Juin 2021|
-|**Rapport d’e-mail envoyé et reçu** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[Rapport sur l’état de la protection contre les menaces](#threat-protection-status-report) <br> [Rapport d’état du flux de courrier](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|Juin 2021|
-|**Rapport de transfert** <br/><br/> pas d’applets de commande|[Rapport de messages transférés automatiquement dans le CAE](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> pas d’applets de commande|MC250533|Juin 2021|
-|**Rapport sur les types de fichiers pièces jointes fiables** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par Email \> malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|Juin 2021|
-|**Rapport de destruction des messages pièces jointes fiables** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par Email \> malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|Juin 2021|
-|**Logiciels malveillants détectés dans le rapport d’e-mail** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par Email \> malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Juin 2021|
+|**traçage d’URL** <br/><br/> Get-URLTrace|[Rapport sur la protection des URL](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Juin 2021|
+|**Rapport d’e-mail envoyé et reçu** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[Rapport sur l’état de la protection contre les menaces](#threat-protection-status-report) <br> [Rapport d’état du flux de courrier](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|Juin 2021|
+|**Rapport de transfert** <br/><br/> pas d’applets de commande|[Rapport de messages transférés automatiquement dans le CAE](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> pas d’applets de commande|MC250533|Juin 2021|
+|**Rapport sur les types de fichiers pièces jointes fiables** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par Email \> malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|Juin 2021|
+|**Rapport de destruction des messages pièces jointes fiables** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par Email \> malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|Juin 2021|
+|**Logiciels malveillants détectés dans le rapport d’e-mail** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Rapport d’état de la protection contre les menaces : afficher les données par Email \> malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Juin 2021|
 |**Rapport de détection du courrier indésirable** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Rapport d’état de la protection contre les menaces : afficher les données par Email \> courrier indésirable](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Octobre 2021|
 |Get-AdvancedThreatProtectionDocumentReport <br/><br/> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br/><br/> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|Mai 2022|
 |**Rapport de règle de transport Exchange** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Rapport de règle de transport Exchange dans le CENTRE](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Avril 2022|

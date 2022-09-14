@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités dans les licences de votre locataire. Recherchez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: f1d16517d92e059fc6ca2646fc64ae7ba63ce3a8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0f81170270b509cd0da66aafba585a8da8b7a2eb
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491654"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671564"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -55,9 +55,9 @@ Les guides d’installation sont accessibles à partir de la page [d’aide à l
 
 Le guide [Préparer votre environnement](https://aka.ms/prepareyourenvironment) vous aide à préparer l’environnement de votre organisation pour les services Microsoft 365 et Office 365. Quels que soient vos objectifs, vous devez effectuer des tâches pour garantir un déploiement réussi. Pour éviter toute erreur lors de la préparation de votre environnement, vous disposez d’instructions pas à pas pour connecter votre domaine, ajouter des utilisateurs, attribuer des licences, configurer l’e-mail avec Exchange Online et installer ou déployer des applications Office.
 
-### <a name="email-setup-guide"></a>Guide d’installation de l’e-mail
+### <a name="email-setup-guide"></a>guide d’installation Email
 
-Le [guide d’installation](https://aka.ms/office365setup) de l’e-mail vous fournit les instructions pas à pas nécessaires pour configurer Exchange Online pour votre organisation. Ces conseils incluent la configuration de nouveaux comptes de messagerie, la migration des e-mails et la configuration de la protection par e-mail. Pour une configuration réussie de l’e-mail, utilisez ce conseiller et vous recevrez la méthode de migration recommandée en fonction du système de messagerie actuel de votre organisation, du nombre de boîtes aux lettres en cours de migration et de la façon dont vous souhaitez gérer les utilisateurs et leur accès.
+Le [guide d’installation Email](https://aka.ms/office365setup) vous fournit les instructions pas à pas nécessaires pour configurer Exchange Online pour votre organisation. Ces conseils incluent la configuration de nouveaux comptes de messagerie, la migration des e-mails et la configuration de la protection par e-mail. Pour une configuration réussie de l’e-mail, utilisez ce conseiller et vous recevrez la méthode de migration recommandée en fonction du système de messagerie actuel de votre organisation, du nombre de boîtes aux lettres en cours de migration et de la façon dont vous souhaitez gérer les utilisateurs et leur accès.
 
 ### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrer des contacts et des éléments de calendrier Gmail
 

@@ -1,12 +1,12 @@
 ---
-title: Supprimer Microsoft 365 licences des comptes d’utilisateur avec PowerShell
+title: Supprimer des licences Microsoft 365 des comptes d’utilisateur avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,15 +19,15 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Explique comment utiliser PowerShell pour supprimer Microsoft 365 licences précédemment attribuées aux utilisateurs.
-ms.openlocfilehash: b036f58686ac179fc93c1a0605ed2b585ea89c30
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Explique comment utiliser PowerShell pour supprimer les licences Microsoft 365 précédemment affectées aux utilisateurs.
+ms.openlocfilehash: e726136fb2661d4855b3dcc828537b7be6e35c6c
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096323"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670716"
 ---
-# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Supprimer Microsoft 365 licences des comptes d’utilisateur avec PowerShell
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Supprimer des licences Microsoft 365 des comptes d’utilisateur avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 

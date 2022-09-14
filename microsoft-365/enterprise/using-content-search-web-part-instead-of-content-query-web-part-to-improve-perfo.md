@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 4/20/2015
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Découvrez comment améliorer les performances en remplaçant le composant WebPart Requête de contenu par le composant WebPart Recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
-ms.openlocfilehash: 4c8a97d24320d5380eccc089737947df9b1a0d0b
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: b286688e3a3ed958eec5c31e3e106f79ecfa7b3c
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139494"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671784"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilisation du composant WebPart Recherche de contenu au lieu du composant WebPart Requête de contenu pour améliorer les performances dans SharePoint Online
 
@@ -64,11 +64,11 @@ Dans Internet Explorer, utilisez l’onglet **Réseau** des outils de développe
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Ajout d’un composant WebPart Recherche de contenu dans SharePoint Online
 
-L’ajout d’un composant WebPart Recherche de contenu est similaire à un composant WebPart Requête de contenu standard. Consultez la section *« Ajouter un composant WebPart Recherche de contenu »* dans [Configurer un composant WebPart Recherche de contenu dans SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+L’ajout d’un composant WebPart Recherche de contenu est similaire à un composant WebPart Requête de contenu standard. Consultez la section  *« Ajouter un composant WebPart Recherche de contenu »*  dans [Configurer un composant WebPart Recherche de contenu dans SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
 ## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Création de la requête de recherche appropriée pour votre composant WebPart Recherche de contenu
 
-Une fois que vous avez ajouté un composant WebPart Recherche de contenu, vous pouvez affiner la recherche et retourner les éléments souhaités. Pour obtenir des instructions détaillées sur la procédure à suivre, consultez la section *« Afficher le contenu en configurant une requête avancée dans un composant WebPart Recherche* de contenu » dans [Configurer un composant WebPart Recherche de contenu dans SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+Une fois que vous avez ajouté un composant WebPart Recherche de contenu, vous pouvez affiner la recherche et retourner les éléments souhaités. Pour obtenir des instructions détaillées sur la procédure à suivre, consultez la section  *« Afficher le contenu en configurant une requête avancée dans un composant WebPart Recherche*  de contenu » dans [Configurer un composant WebPart Recherche de contenu dans SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
 ## <a name="query-building-and-testing-tool"></a>Outil de création et de test de requêtes
 

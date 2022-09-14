@@ -7,25 +7,25 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès identité et appareil avec les conditions préalables pour l’authentification directe.
-ms.openlocfilehash: 3a93f0562e8ff2f2c561b4709810bb2cb1049e71
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fd53c8742ee9af30e3da26611bc67460ca974a0b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098249"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67673082"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès identité et appareil pour l’authentification directe dans votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-[Les configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services dans Microsoft 365 pour les entreprises qui sont intégrés à Azure Active Directory (Azure AD).
+[Les configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services dans Microsoft 365 pour les entreprises intégrés à Azure Active Directory (Azure AD).
 
 Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte la configuration requise de la [configuration préalable de l’authentification directe](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès identité et appareil.
 
@@ -38,7 +38,7 @@ Il existe dix phases pour configurer cet environnement de test :
 5. Configurer la réinitialisation du mot de passe libre-service
 6. Configurer l’authentification multifacteur
 7. Activer l’inscription automatique des appareils des ordinateurs Windows joints à un domaine
-8. Configurer Azure AD protection par mot de passe 
+8. Configurer la protection par mot de passe Azure AD 
 9. Activer Azure AD Identity Protection
 10. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
@@ -88,11 +88,11 @@ Suivez les instructions de [Phase 2 de Guide de laboratoire de Test authentifica
 
 Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique des appareils windows joints à un domaine 
 
-Suivez [ces instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) pour activer l’inscription automatique des appareils joints à un domaine Windows ordinateurs.
+Suivez [ces instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) pour activer l’inscription automatique des appareils Windows joints à un domaine.
 
-## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer Azure AD protection par mot de passe 
+## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer la protection par mot de passe Azure AD 
 
 Suivez [ces instructions](/azure/active-directory/authentication/concept-password-ban-bad) pour bloquer les mots de passe faibles connus et leurs variantes.
 

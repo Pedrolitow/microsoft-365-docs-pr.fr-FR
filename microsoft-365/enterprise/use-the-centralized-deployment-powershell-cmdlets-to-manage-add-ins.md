@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,17 +19,17 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez les applets de commande PowerShell de déploiement centralisé pour vous aider à déployer et gérer Office compléments pour votre organisation Microsoft 365.
-ms.openlocfilehash: 07e0f69cd95bc1553adea96242bf44eb9f1217f1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Utilisez les applets de commande PowerShell de déploiement centralisé pour vous aider à déployer et gérer des compléments Office pour votre organisation Microsoft 365.
+ms.openlocfilehash: e76e6bd4c096d74b3712ef9b79b649f8d716eac6
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078461"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671742"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les applets de commande PowerShell de déploiement centralisé pour gérer les compléments
 
-En tant qu’administrateur général Microsoft 365, vous pouvez déployer des compléments Office aux utilisateurs via la fonctionnalité déploiement centralisé (voir [Déployer Office compléments dans le Centre d’administration](../admin/manage/manage-deployment-of-add-ins.md). En plus de déployer des compléments Office via le Centre d'administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement Add-In centralisé O365 pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
+En tant qu’administrateur général microsoft 365, vous pouvez déployer des compléments Office sur des utilisateurs via la fonctionnalité déploiement centralisé (voir [Déployer des compléments Office dans le Centre d’administration](../admin/manage/manage-deployment-of-add-ins.md). En plus de déployer des compléments Office via le Centre d'administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement Add-In centralisé O365 pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
 
 Après avoir téléchargé le module, ouvrez une fenêtre de Windows PowerShell normale et exécutez l’applet de commande suivante :
 
@@ -37,19 +37,19 @@ Après avoir téléchargé le module, ouvrez une fenêtre de Windows PowerShell 
  Import-Module -Name O365CentralizedAddInDeployment
 ```
 
-## <a name="connect-using-your-admin-credentials"></a>Connecter à l’aide de vos informations d’identification d’administrateur
+## <a name="connect-using-your-admin-credentials"></a>Se connecter à l’aide de vos informations d’identification d’administrateur
 
 Avant de pouvoir utiliser les applets de commande de déploiement centralisé, vous devez vous connecter.
 
 1. Démarrez PowerShell.
 
-2. Connecter à PowerShell à l’aide des informations d’identification d’administrateur de votre entreprise. Exécutez l’applet de commande suivante.
+2. Connectez-vous à PowerShell à l’aide des informations d’identification d’administrateur de votre entreprise. Exécutez l’applet de commande suivante.
 
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. Dans la page **Entrer les informations d’identification**, entrez vos informations d’identification d’administrateur **utilisateur** Microsoft 365 ou **d’administrateur général**. Vous pouvez également entrer vos informations d’identification directement dans l’applet de commande.
+3. Dans la page **Entrer les informations d’identification**, entrez votre **Administration utilisateur** Microsoft 365 ou vos informations d’identification **d’administrateur général**. Vous pouvez également entrer vos informations d’identification directement dans l’applet de commande.
 
     Exécutez l’applet de commande suivante en spécifiant les informations d’identification de votre administrateur d’entreprise en tant qu’objet PSCredential.
 
@@ -60,9 +60,9 @@ Avant de pouvoir utiliser les applets de commande de déploiement centralisé, v
   ```
 
 > [!NOTE]
-> Pour plus d’informations sur l’utilisation de PowerShell, consultez [Connecter pour Microsoft 365 avec PowerShell](./connect-to-microsoft-365-powershell.md).
+> Pour plus d’informations sur l’utilisation de PowerShell, consultez [Se connecter à Microsoft 365 avec PowerShell](./connect-to-microsoft-365-powershell.md).
 
-## <a name="upload-an-add-in-manifest"></a>Télécharger un manifeste de complément
+## <a name="upload-an-add-in-manifest"></a>Charger un manifeste de complément
 
 Exécutez l’applet de commande **New-OrganizationAdd-In** pour charger un manifeste de complément à partir d’un chemin d’accès, qui peut être un emplacement de fichier ou une URL. L’exemple suivant montre un emplacement de fichier pour la valeur du paramètre  _ManifestPath_ .
 
@@ -76,9 +76,9 @@ Vous pouvez également exécuter l’applet de commande **New-OrganizationAdd-In
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Télécharger un complément à partir du Office Store
+## <a name="upload-an-add-in-from-the-office-store"></a>Charger un complément à partir de l’Office Store
 
-Exécutez l’applet de commande **New-OrganizationAddIn** pour charger un manifeste à partir du Office Store.
+Exécutez l’applet de commande **New-OrganizationAddIn** pour charger un manifeste à partir de l’Office Store.
 
 Dans l’exemple suivant, l’applet de commande **New-OrganizationAddIn** spécifie assetId pour un complément pour un emplacement et un marché de contenu États-Unis.
 
@@ -86,12 +86,12 @@ Dans l’exemple suivant, l’applet de commande **New-OrganizationAddIn** spéc
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Pour déterminer la valeur du paramètre _AssetId_, vous pouvez la copier à partir de l’URL de la page web Office Store pour le complément. Les AssetId commencent toujours par « WA » suivi d’un nombre. Par exemple, dans l’exemple précédent, la source de la valeur AssetId de WA104099688 est l’URL de page web Office Store pour le complément : [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688)
+Pour déterminer la valeur du paramètre  _AssetId_ , vous pouvez la copier à partir de l’URL de la page web de l’Office Store pour le complément. Les AssetId commencent toujours par « WA » suivi d’un nombre. Par exemple, dans l’exemple précédent, la source de la valeur AssetId de WA104099688 est l’URL de la page web de l’Office Store pour le complément : [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
 
 Les valeurs du paramètre  _Locale_ et du paramètre  _ContentMarket_ sont identiques et indiquent le pays/la région à partir de laquelle vous essayez d’installer le complément. Le format est en-US, fr-FR. et ainsi de suite.
 
 > [!NOTE]
-> Les compléments chargés à partir du Office Store seront automatiquement mis à jour dans les quelques jours suivant la dernière mise à jour disponible sur le Office Store.
+> Les compléments chargés à partir de l’Office Store seront automatiquement mis à jour dans les quelques jours suivant la dernière mise à jour disponible sur l’Office Store.
 
 ## <a name="get-details-of-an-add-in"></a>Obtenir les détails d’un complément
 
@@ -162,7 +162,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> Les compléments chargés à partir du Office Store seront automatiquement mis à jour dans les quelques jours suivant la dernière mise à jour disponible sur le Office Store.
+> Les compléments chargés à partir de l’Office Store seront automatiquement mis à jour dans les quelques jours suivant la dernière mise à jour disponible sur l’Office Store.
 
 ## <a name="delete-an-add-in"></a>Suppression d’un complément
 

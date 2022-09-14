@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,19 +17,19 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 pour l’entreprise.
-ms.openlocfilehash: 9c52bf657e91ceca9ef6e43f20a523a57a7b5042
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 7f90046c75c2b95c288cdf2134734d1cc9898125
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078710"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672972"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
-*Ce guide de laboratoire de test peut être utilisé pour les Microsoft 365 pour les environnements de test d’entreprise et Office 365 Entreprise.*
+*Ce guide de laboratoire de test peut être utilisé pour Microsoft 365 pour les environnements de test d’entreprise et Office 365 Entreprise.*
 
-Cet article explique comment créer un environnement simplifié pour Microsoft 365 pour l’entreprise, notamment :
+Cet article explique comment créer un environnement simplifié pour Microsoft 365 pour les entreprises, notamment :
 
 - Un abonnement d’évaluation ou payant Microsoft 365 E5.
 - Intranet d’organisation simplifié connecté à Internet, constitué de trois machines virtuelles sur un réseau virtuel Azure (DC1, APP1 et CLIENT1).
@@ -40,18 +40,18 @@ La création d’un environnement de test simplifié implique deux phases :
 - [Phase 1: Créer un intranet simulé](#phase-1-create-a-simulated-intranet)
 - [Phase 2 : Création de votre abonnement Microsoft 365 E5](#phase-2-create-your-microsoft-365-e5-subscription)
 
-Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalités de [Microsoft 365 pour l’entreprise](https://www.microsoft.com/microsoft-365/enterprise) avec des [guides de laboratoire de test](m365-enterprise-test-lab-guides.md) supplémentaires ou vous-même.
+Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalités de [Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/enterprise) avec des [guides lab de test](m365-enterprise-test-lab-guides.md) supplémentaires ou vous-même.
 
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles du Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise, accédez à [Microsoft 365 pour la pile des guides de laboratoire de test d’entreprise](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile des guides de laboratoire de test Microsoft 365 pour entreprise, accédez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Phase 1: Créer un intranet simulé
 
 Au cours de cette phase, créez un intranet simulé dans les services d’infrastructure Azure qui inclut un contrôleur de domaine services de domaine Active Directory (AD DS), un serveur d’applications et un ordinateur client.
 
-Vous utiliserez ces ordinateurs dans [des Microsoft 365 supplémentaires pour les guides lab de test d’entreprise](m365-enterprise-test-lab-guides.md) afin de configurer et de démontrer l’identité hybride et d’autres fonctionnalités.
+Vous utiliserez ces ordinateurs dans [d’autres guides microsoft 365 for enterprise Test Lab pour](m365-enterprise-test-lab-guides.md) configurer et démontrer l’identité hybride et d’autres fonctionnalités.
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Méthode 1: Créer votre intranet simulé avec un Modèle de Gestion de Ressources Azure 
 
@@ -160,19 +160,19 @@ Vous serez invité à indiquer un nom d’utilisateur et un mot de passe pour le
   
 Ensuite, connectez-vous à la machine virtuelle DC1 :
   
-1. Dans le [Portail Azure](https://portal.azure.com), sélectionnez **Groupes** de ressources > <**_le nom de votre nouveau groupe de ressources_*_> > _* DC1** >  **Connecter**.
+1. Dans le [Portail Azure](https://portal.azure.com), sélectionnez **Groupes** de ressources > <**_le nom de votre nouveau groupe de ressources_*_> > _* DC1** > **Connect**.
     
-2. Dans le volet ouvert, **sélectionnez Télécharger le fichier RDP**. Ouvrez le fichier DC1.rdp téléchargé, puis sélectionnez **Connecter**.
+2. Dans le volet ouvert, **sélectionnez Télécharger le fichier RDP**. Ouvrez le fichier DC1.rdp téléchargé, puis sélectionnez **Se connecter**.
     
 3. Spécifiez le nom du compte Administrateur local DC1 :
     
    - Pour Windows 7 :
     
-     Dans la **boîte de dialogue Sécurité Windows**, **sélectionnez Utiliser un autre compte**. Dans **Nom d’utilisateur**, entrez le *nom du compte d’administrateur* **DC1local\\**<>.
+     Dans la **boîte de dialogue Sécurité Windows**, **sélectionnez Utiliser un autre compte**. Dans **Nom d’utilisateur**, entrez le *nom du compte d’administrateur local* **DC1\\**<>.
     
    - Pour Windows 8 ou Windows 10 :
     
-     Dans la **boîte de dialogue Sécurité Windows**, sélectionnez **Autres choix**, puis **Utilisez un autre compte**. Dans **Nom d’utilisateur**, entrez le *nom du compte d’administrateur* **DC1local\\**<>.
+     Dans la **boîte de dialogue Sécurité Windows**, sélectionnez **Autres choix**, puis **Utilisez un autre compte**. Dans **Nom d’utilisateur**, entrez le *nom du compte d’administrateur local* **DC1\\**<>.
     
 4. Dans **Mot de passe**, entrez le mot de passe du compte d’administrateur local, puis sélectionnez **OK**.
     
@@ -197,11 +197,11 @@ Notez que l’exécution de ces commandes peut prendre quelques minutes.
   
 Après le redémarrage de DC1, reconnectez-vous à la machine virtuelle DC1.
   
-1. Dans le [Portail Azure](https://portal.azure.com), sélectionnez **Groupes** de ressources > <*le nom de votre groupe de ressources*> > **DC1** >  **Connecter**.
+1. Dans le [Portail Azure](https://portal.azure.com), sélectionnez **Groupes** de ressources > <*le nom de votre groupe de ressources*> > **DC1** > **Connect**.
     
-2. Exécutez le fichier DC1.rdp téléchargé, puis sélectionnez **Connecter**.
+2. Exécutez le fichier DC1.rdp téléchargé, puis sélectionnez **Se connecter**.
     
-3. Dans **Sécurité Windows**, sélectionnez **Utiliser un autre compte**. Dans **Nom d’utilisateur**, entrez le *nom du compte d’administrateur* **TESTLABlocal\\**<>.
+3. Dans **Sécurité Windows**, sélectionnez **Utiliser un autre compte**. Dans **Nom d’utilisateur**, entrez le *nom du compte d’administrateur local* **TESTLAB\\**<>.
     
 4. Dans la zone **Mot de passe** , entrez le mot de passe du compte d’administrateur local, puis sélectionnez **OK**.
     
@@ -271,7 +271,7 @@ Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
-Notez qu’après avoir exécuté la commande **Add-Computer** , vous devez fournir les informations d’identification du compte de domaine TESTLABUser1\\.
+Notez qu’après avoir exécuté la commande **Add-Computer** , vous devez fournir les informations d’identification du compte de domaine TESTLAB\\User1.
   
 Après le redémarrage d’APP1, connectez-vous en utilisant le compte TESTLAB\\Utilisateur1 et ouvrez une invite de commandes Windows PowerShell de niveau administrateur.
   
@@ -347,7 +347,7 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
     
 6. Dans la barre des tâches du bureau, sélectionnez l’icône Explorateur de fichiers.
     
-7. Dans la barre d’adresses, entrez **\\\\app1Files\\**, puis **appuyez sur Entrée**. Une fenêtre de dossiers avec le contenu du dossier partagé Fichiers apparaît.
+7. Dans la barre d’adresses, entrez **\\\\les fichiers app1\\**, puis **appuyez sur Entrée**. Une fenêtre de dossiers avec le contenu du dossier partagé Fichiers apparaît.
     
 8. Dans la fenêtre du dossier partagé **Fichiers**, double-cliquez sur le fichier **Exemple.txt**. Le contenu du fichier Exemple.txt s’affiche.
     
@@ -381,7 +381,7 @@ Pour configurer un abonnement d’évaluation Office 365 E5, suivez les instru
 
 Si vous n’avez besoin que d’un environnement de test Office 365, vous n’avez pas besoin de lire le reste de cet article.
 
-Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent aux Microsoft 365 et aux Office 365, consultez [Microsoft 365 pour les guides de laboratoire de test d’entreprise](m365-enterprise-test-lab-guides.md).
+Pour obtenir d’autres guides de laboratoire de test qui s’appliquent à Microsoft 365 et à Office 365, consultez [les guides microsoft 365 pour les laboratoires de test d’entreprise](m365-enterprise-test-lab-guides.md).
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Ajouter un abonnement d’évaluation de Microsoft 365 E5.
 

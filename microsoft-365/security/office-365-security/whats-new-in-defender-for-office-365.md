@@ -18,14 +18,14 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 7487297cbb6a28436e7a28006ef9989d902cdcc6
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 7a8efc09e296914307bfd8b8003c09eb8f25bada
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496832"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671762"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
