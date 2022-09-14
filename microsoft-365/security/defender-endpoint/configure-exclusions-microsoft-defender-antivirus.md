@@ -15,12 +15,13 @@ ms.subservice: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 354cb5e08845d275cf6517ec8badf4fb2c3635f8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: fd5f2aa49458953221c9cc16e543714d4c26d21b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481523"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697164"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurer et valider les exclusions pour les analyses antivirus Microsoft Defender
 

@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 39b4eb415e609fb56f415f20f8407652b508c8c5
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 07853624cdece71f4a21372304b0de5e7bde963e
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578253"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694058"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Opportunités de partenariat de fournisseur de services de sécurité managée
 

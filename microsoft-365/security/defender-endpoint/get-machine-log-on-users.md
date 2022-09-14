@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7c397496c635f2a4501506fa555d9a4f03b78766
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 5863b18403974570399c487ad1eec19c501bd60c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67524213"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696812"
 ---
 # <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs d’ouverture de session de la machine
 

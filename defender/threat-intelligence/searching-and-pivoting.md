@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: e5c621eaf22b00a8d0c29aa17063882e2873be2b
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: dbd62f4455b29bd2c23061096e126454d5c0d089
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387196"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693574"
 ---
 # <a name="searching-and-pivoting"></a>Recherche et pivotage
 
@@ -20,7 +20,7 @@ Microsoft Defender Threat Intelligence (Defender TI) offre un moteur de recherch
 
 ![Capture d’écran de La recherche dans HomePage Chrome](media/searchHomePageChromeScreenshot.png)
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).
@@ -172,7 +172,7 @@ Cette section affiche également toutes les balises appliquées à l’artefact 
 
 ## <a name="summary-tab"></a>Onglet Résumé
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Vue d’ensemble
 
 Les résultats d’une recherche Threat Intelligence sont regroupés en deux onglets : « Résumé » et « Données ». L’onglet Résumé fournit des insights clés sur un artefact que la plateforme a dérivé de nos jeux de données étendus. Cette section est conçue pour exposer les principales conclusions qui peuvent aider à lancer une enquête.
 
@@ -228,11 +228,6 @@ Pour plus d’informations, consultez [Utilisation de projets](using-projects.md
 
 ![Projets de l’onglet Résumé](media/summaryTabProjects.png)
 
-### <a name="hashes"></a>Hashes
-
-Microsoft collabore avec plusieurs référentiels commerciaux et open source de données de programmes malveillants pour les associer à l’infrastructure interrogée pour remplir le jeu de données de hachage. Les dépôts de programmes malveillants incluent aujourd’hui les menaces émergentes de Proofpoint, l’analyse hybride et VirusTotal. Ces données aident les utilisateurs à comprendre les capacités d’acteur, l’intention et les motivations d’un attaquant, tout en aidant à connecter l’infrastructure. Chaque résultat contient un hachage unique. Nos données de hachage incluent la source de détection, l’exemple et la date de collecte.
-
-![Hachages de l’onglet Résumé](media/summaryTabHashes.png)
 
 ## <a name="data-tab"></a>Onglet Données
 
@@ -253,7 +248,6 @@ Les jeux de données suivants sont disponibles dans Defender TI :
 - Sous-domaines
 - Composants
 - Paires d’hôtes
-- Hashes
 - Cookies
 - Services
 - DNS
@@ -412,17 +406,6 @@ Nos données de paire d’hôtes incluent les éléments suivants :
 
 ![Paires d’hôtes de l’onglet Données](media/dataTabHostPairs.png)
 
-### <a name="hashes"></a>Hashes
-
-Microsoft collabore avec plusieurs référentiels commerciaux et open source de données de programmes malveillants pour les associer à l’infrastructure interrogée pour remplir le jeu de données de hachage. Les dépôts de programmes malveillants incluent aujourd’hui les menaces émergentes de Proofpoint, l’analyse hybride et VirusTotal. Ces données aident les utilisateurs à comprendre les capacités d’acteur, l’intention et les motivations d’un attaquant, tout en aidant à connecter l’infrastructure. Chaque résultat contient un hachage unique.
-
-Nos données de hachage incluent les éléments suivants :
-
-1. **Source :** source utilisée pour détecter le hachage.
-2. **Exemple :** code d’identification unique pour le hachage détecté.
-3. **Date de collecte :** jour où l’échantillon de hachage a été collecté par la source désignée.
-
-![Hachages de l’onglet Données](media/dataTabHashes.png)
 
 ### <a name="cookies"></a>Cookies
 

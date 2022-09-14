@@ -15,12 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 09d9860119a7c4aeb8949357b277fb395e09a9c2
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 428ceefa6b8921782864eac8f42105a44cc06c72
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481897"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695734"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurer des fonctionnalités d’investigation et de correction automatisées dans Microsoft Defender pour point de terminaison
 

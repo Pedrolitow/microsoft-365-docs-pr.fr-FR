@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: d9a047f6e1cc24dfb205e791f3d88fdc07afd86d
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: d1e88b8ba553d3e8ad88becf283caa94b8d00ef6
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521826"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696988"
 ---
 # <a name="list-all-recommendations"></a>Répertorier toutes les actions d’amélioration
 

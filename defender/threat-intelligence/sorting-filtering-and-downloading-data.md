@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 36648d50033cb00893e9f973641f421274e6e3d8
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 9b826bab435f293f48486bb533a77535b2f74037
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280374"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697416"
 ---
 # <a name="sorting-filtering-and-downloading-data"></a>Tri, filtrage et téléchargement de données
 
@@ -29,7 +29,6 @@ Dans cet article pratique, vous allez apprendre à trier et filtrer des données
 - Trackers
 - Composants
 - Paires d’hôtes
-- Hashes
 - Cookies
 - Services
 - DNS
@@ -43,7 +42,7 @@ Dans cet article pratique, vous allez également apprendre à télécharger des 
 - Articles
 - Jeux de données
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).
@@ -155,7 +154,7 @@ Dans Defender TI, il existe différentes sections qu’un utilisateur peut tél�
 Les données peuvent être téléchargées dans les sections suivantes :
 
 - La plupart des panneaux de jeu de données
-- Project
+- Projet
 - Article sur le renseignement sur les menaces
 
 Les en-têtes suivants sont exportés à la suite du téléchargement de résolutions, de DNS et de données DNS inversées :
@@ -212,13 +211,6 @@ Les en-têtes suivants sont exportés à la suite du téléchargement des donné
 | **attributeCause**         | Cause de la relation entre le nom d’hôte parent et le nom d’hôte enfant |
 | **Tags**                   | Balises personnalisées ou système associées à l’artefact |
 
-Les en-têtes suivants sont exportés à la suite du téléchargement des données hashes :
-
-| &nbsp;             | &nbsp;                     |
-|--------------------|----------------------------|
-| **source**         | Source qui a observé l’exemple de hachage MD5 |
-| **Échantillon**                  | Hachage MD5 |
-| **date de collecte**         | Date de collecte capturée par la source |
 
 Les en-têtes suivants sont exportés suite au téléchargement des données cookies :
 
@@ -258,7 +250,7 @@ Les en-têtes suivants sont exportés à la suite du téléchargement d’indica
 
 | &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
-| **type**                | Type d’indicateur (par exemple, ip, certificat, domaine, hash_sha256) |
+| **type**                | Type d’indicateur (par exemple, ip, certificat, domaine, _sha256) |
 | **value**               | Valeur de l’indicateur (par exemple, adresse IP, domaine, nom d’hôte) |
 | **source**              | Source de l’indicateur (RiskIQ ou OSINT) |
 

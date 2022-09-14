@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les performances des extensions personnalisées dans les pages de sites modernes SharePoint Online.
-ms.openlocfilehash: a31b6e68227d433359537b9655d68c63b5893cce
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b2d67e0cc75ea8645ac2dd018bf01fd4bb284364
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093852"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693408"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des extensions personnalisées dans les pages de sites modernes SharePoint Online
 
@@ -37,7 +37,7 @@ L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pou
 >[!NOTE]
 >L’Outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
-Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostics de page pour SharePoint, vous pouvez voir des informations sur les extensions personnalisées qui dépassent la métrique de référence dans **les extensions qui ont un impact sur le temps de chargement** et/ou le nombre **trop important d’extensions utilisées** dans le volet _Tests de diagnostic_ 
+Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostics de page pour SharePoint, vous pouvez voir des informations sur les extensions personnalisées qui dépassent la métrique de référence dans **les extensions impactent le temps de chargement** et/ou le trop **grand nombre d’extensions utilisées** dans le volet _Tests de diagnostic_ . 
 
 Les résultats possibles sont les suivants :
 
@@ -47,7 +47,7 @@ Les résultats possibles sont les suivants :
 
 Si une extension affecte le temps de chargement de la page ou s’il y a trop d’extensions sur la page, le résultat apparaît dans la section **Attention requise** des résultats. Cliquez sur le résultat pour afficher des détails sur l’extension qui se charge lentement ou si un trop grand nombre d’extensions a été mis en surbrillance. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
 
-![Résultats du temps de chargement de la page.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
+![Capture d’écran montrant les résultats du temps de chargement de la page.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Les informations disponibles dans les résultats incluent les éléments suivants :
 
@@ -105,7 +105,7 @@ Les auteurs de pages peuvent également utiliser le résultat d’audit pour dé
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
-![Résultats du temps de chargement de la page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Exemple de résultats de temps de chargement de page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Le temps de chargement des pages peut varier en fonction de nombreux facteurs tels que la charge réseau, l’heure de la journée et d’autres conditions transitoires. Vous devez tester le temps de chargement des pages plusieurs fois avant et après avoir apporté des modifications pour vous aider à faire la moyenne des résultats.

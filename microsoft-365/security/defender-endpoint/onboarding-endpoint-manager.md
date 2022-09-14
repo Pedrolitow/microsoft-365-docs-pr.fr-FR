@@ -18,12 +18,13 @@ ms.collection:
 - highpri
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b32a378ccd7950c6b401dffdc3652cdfc9cb3bfc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: ea9ae9a463763607145ef67b2e70aa5cd66c495b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580004"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694290"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 

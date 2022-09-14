@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 52f5cfd1c15e3e4143fa543b8df055c1711ce023
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 544300b7a127612b362e7ee5781290bf474b1807
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521848"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695316"
 ---
 # <a name="get-alert-related-machine-information-api"></a>Obtenir l’API d’informations sur la machine liée aux alertes
 

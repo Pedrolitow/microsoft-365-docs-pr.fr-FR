@@ -16,12 +16,13 @@ ms.custom:
 - edr
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9fff81a71a82ce8f8af8dfd4267a56788f132246
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 63d9ca3d3dcfed45aa62f88430f0d07ff86e7982
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523729"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697032"
 ---
 # <a name="feedback-loop-blocking"></a>Blocage de la boucle de commentaires
 

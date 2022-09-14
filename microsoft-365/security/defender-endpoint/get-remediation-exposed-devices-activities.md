@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e4d006f49575cac26d08485c3ff47d6213ab36ad
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ccfe699dc164cc73cba40a90240c88b220a05b09
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522210"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696086"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 
@@ -72,14 +73,14 @@ rbacGroupName|Chaîne|Nom du groupe d’appareils auquel cet appareil est associ
 ### <a name="request-example"></a>Exemple de requête
 
 ```http
-GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
+GET https://api.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
 ### <a name="response-example"></a>Exemple de réponse
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#MachineReferences",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineReferences",
     "value": [
         {
             "id": "3cb5df6bb3640a2d37ad09fcd357b182d684fafc",

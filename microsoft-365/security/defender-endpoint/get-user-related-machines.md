@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: fddef873ffa7cbf505d6fb6d6ceccf04a9ec50ae
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: b9f452d719dee0f7116a9ce46f04884ba3367e37
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67524125"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697566"
 ---
 # <a name="get-user-related-machines-api"></a>Obtenir l’API des machines associées à l’utilisateur
 

@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 75ecf39967f6308806ceb4f19f3f94fe3d603f80
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 05feb4b20f1f2ae5e6ade0e3155ab21978ec762d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679534"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696526"
 ---
 # <a name="common-rest-api-error-codes"></a>Codes d’erreur courants de l’API REST
 

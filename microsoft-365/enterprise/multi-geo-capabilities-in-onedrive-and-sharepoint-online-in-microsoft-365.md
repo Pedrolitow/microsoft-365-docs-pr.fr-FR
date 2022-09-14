@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: admindeeplinkSPO
@@ -18,12 +18,12 @@ ms.collection:
 ms.localizationpriority: medium
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Étendez votre présence Microsoft 365 à plusieurs régions géographiques grâce aux fonctionnalités multi-géographiques dans OneDrive Online.
-ms.openlocfilehash: e49df6054e30e9e288e893da8d914ebb567eb8e5
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: b25d74c76673c8fcaf2de0e8bbbd1c73ba371856
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622219"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694356"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Fonctionnalités multi-géographiques OneDrive et SharePoint Online
 
@@ -39,17 +39,17 @@ Le OneDrive de chaque utilisateur peut être configuré dans ou [déplacé par u
 
 ## <a name="sharepoint-sites-and-groups"></a>Sites et groupes SharePoint
 
-La gestion de la fonctionnalité multigéographique est disponible via le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a>. Vous trouverez des informations détaillées dans le [ billet de blog correspondant](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
+La gestion de la fonctionnalité multigéographique est disponible via le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>. Vous trouverez des informations détaillées dans le [ billet de blog correspondant](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
 
-Lorsqu’un utilisateur crée un SharePoint site connecté à un groupe dans un environnement multigéographique, son PDL est utilisé pour déterminer l’emplacement géographique où le site et sa boîte aux lettres de groupe associées sont créés. (Si une valeur PDL de l’utilisateur n’a pas été définie ou a été définie sur l’emplacement géo qui n’a pas été configuré comme un emplacement satellite, puis le site et la boîte aux lettres sont créés dans l’emplacement central.)
+Lorsqu’un utilisateur crée un site connecté à un groupe SharePoint dans un environnement multigéographique, son PDL est utilisé pour déterminer l’emplacement géographique où le site et sa boîte aux lettres de groupe associées sont créés. (Si une valeur PDL de l’utilisateur n’a pas été définie ou a été définie sur l’emplacement géo qui n’a pas été configuré comme un emplacement satellite, puis le site et la boîte aux lettres sont créés dans l’emplacement central.)
 
-Microsoft 365 services autres que Exchange, OneDrive, SharePoint et Teams ne sont pas multigéographiques. Toutefois, Groupes Microsoft 365 créés par ces services seront configurés avec le fichier PDL du créateur et leur boîte aux lettres de groupe Exchange, SharePoint site sont approvisionnés dans la zone géographique correspondante. 
+Les services Microsoft 365 autres qu’Exchange, OneDrive, SharePoint et Teams ne sont pas multigéographiques. Toutefois, Groupes Microsoft 365 qui sont créés par ces services seront configurés avec le fichier PDL du créateur et leur boîte aux lettres de groupe Exchange, le site SharePoint est approvisionné dans la zone géographique correspondante. 
 
 ## <a name="managing-the-multi-geo-environment"></a>Gestion de l’environnement multi-Géo
 
-La configuration et la gestion de votre environnement multigéographique s’effectuent via le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a>. 
+La configuration et la gestion de votre environnement multigéographique s’effectuent via le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>. 
 
-![Capture d’écran de la page Emplacements géographiques dans le centre d’administration SharePoint.](../media/sharepoint-multi-geo-admin-center.png)
+![Capture d’écran de la page Emplacements géographiques dans le Centre d’administration SharePoint.](../media/sharepoint-multi-geo-admin-center.png)
 
 (Certaines actions, telles que le déplacement d’un site SharePoint ou un site OneDrive nécessitent Microsoft PowerShell).
 

@@ -17,12 +17,13 @@ ms.collection:
 - highpri
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c149237cabf5a12e1ed3e53b954aa9ebf94a5c84
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 2920bd6c5d8c9426bf33a17e574fe2c08b82f468
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521376"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692990"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>laboratoire d’évaluation Microsoft Defender pour point de terminaison
 

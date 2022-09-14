@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c627d21c4416cecf5be98c6730e508d332dcad9b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7bb760eb29f54554f58efedaa54ab9ca1cadf312
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663539"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696658"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -193,7 +193,7 @@ Pour une expérience d’étiquette plus cohérente avec des rapports significat
 
 ## <a name="encryption-based-label-matching-for-documents"></a>Correspondance d’étiquette basée sur le chiffrement pour les documents
 
-Lorsqu’un document a été chiffré avec des autorisations définies par l’administrateur, les informations de chiffrement incluent des informations sur une étiquette de confidentialité correspondante. Par conséquent, lorsqu’un utilisateur ouvre ce document dans une application Office, l’étiquette correspondante s’affiche dans l’application Office et persiste si le document est enregistré.
+Lorsqu’un document a été chiffré avec des autorisations définies par l’administrateur, la stratégie de chiffrement est incorporée dans le document. Cela se produit indépendamment de l’étiquetage. Par exemple, lorsqu’une pièce jointe Office hérite du chiffrement d’un message électronique ou qu’un utilisateur a appliqué un modèle de protection à l’aide de la gestion des droits relatifs à l’information (IRM) dans son application Office. Si une étiquette de confidentialité dans le locataire correspond à cette même stratégie de chiffrement, les applications Office attribuent automatiquement cette étiquette correspondante au document.
 
 Dans ce scénario, l’étiquette de confidentialité correspondante peut étiqueter un document sans étiquette et remplacer une étiquette existante qui n’applique pas le chiffrement. Par exemple, l’étiquette **Général** est remplacée par **Confidentiel/Tous les employés**. Les marquages de contenu de l’étiquette correspondante ne sont pas appliqués automatiquement, sauf si le document n’a pas été précédemment étiqueté et que vous utilisez le complément AIP.
 
@@ -211,7 +211,7 @@ Toutefois, vous verrez également ce comportement avec un scénario d’étiquet
     
     En tant qu’événement d’audit affiché dans l’Explorateur d’activités, cet utilisateur a appliqué l’étiquette, et non l’expéditeur de l’e-mail.
 
-La correspondance d’étiquette basée sur le chiffrement fonctionne uniquement dans le locataire, pour les autorisations définies par l’administrateur, et l’étiquette de confidentialité correspondante doit être publiée pour l’utilisateur qui ouvre le document.
+La correspondance d’étiquette basée sur le chiffrement fonctionne uniquement dans le locataire, pour les autorisations définies par l’administrateur, et l’étiquette de confidentialité correspondante doit être publiée pour l’utilisateur qui ouvre le document. L’étiquette correspondante persiste si le document est enregistré.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilité des étiquettes de confidentialité
 

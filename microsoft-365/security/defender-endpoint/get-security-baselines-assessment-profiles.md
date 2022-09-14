@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 13f88b8994fc8bde379b93cc2e0507957a4361e5
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 5aa9ba2cc42784c39f183346f41b72f24424f6a9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520608"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694588"
 ---
 # <a name="list-all-security-baselines-assessment-profiles"></a>Répertorier tous les profils d’évaluation des bases de référence de sécurité
 

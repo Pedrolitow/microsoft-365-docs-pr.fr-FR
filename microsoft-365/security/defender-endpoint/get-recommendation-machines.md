@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: b57dd9b91b2002a47d7195be62a3676498c10820
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 1f670c4722cd6df542e5e8e91703970647ec9e19
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520432"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692770"
 ---
 # <a name="list-devices-by-recommendation"></a>Répertorier les appareils par recommandation
 

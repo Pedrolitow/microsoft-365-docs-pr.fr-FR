@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.subservice: mde
-ms.openlocfilehash: 3ebaab5770cfc8a4c474b66b8c1cbd6717c8f36a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: bf5e73b8e382d392673a8f82616089c8990ea2a8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679578"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695778"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Android
 

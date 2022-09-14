@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: a1c1d9435484940b56ea3f535e09800e0eabc939
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 16b2c38722285f157849fbc9d6a25e0e4346121e
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523927"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696306"
 ---
 # <a name="get-alert-related-ips-information-api"></a>Obtenir l’API d’informations sur les adresses IP liées aux alertes
 

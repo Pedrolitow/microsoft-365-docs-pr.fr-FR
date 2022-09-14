@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 8ae4ff58ae71ef51d09716761d2660d239f51083
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 0ff6d8074131e1595ee651c40e59a0b9b03eb063
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523817"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692594"
 ---
 # <a name="investigate-agent-health-issues"></a>Rechercher les problèmes d’état d’intégrité de l’agent
 
@@ -62,6 +63,6 @@ Le tableau suivant fournit des informations sur les valeurs retournées lorsque 
 |product_expiration|Date et heure auxquelles la version actuelle du produit atteint la fin du support.|
 |real_time_protection_available|True si le composant de protection en temps réel est sain, sinon false.|
 |real_time_protection_enabled|True si la protection antivirus en temps réel est activée, false dans le cas contraire.|
-|real_time_protection_subsystem|Sous-système utilisé pour la protection en temps réel. Si la protection en temps réel ne fonctionne pas comme prévu, cette impression n’est pas disponible.|
+|real_time_protection_subsystem|Sous-système utilisé pour la protection en temps réel. Si la protection en temps réel ne fonctionne pas comme prévu, elle n’est pas disponible.|
 |release_ring|Anneau de libération. Pour plus d’informations, consultez [Anneaux de déploiement](deployment-rings.md).|
 |

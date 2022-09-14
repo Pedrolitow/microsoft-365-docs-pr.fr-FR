@@ -15,12 +15,13 @@ ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e19923d0e41d5c573a0d911550cc0544f4920363
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 812112b5b932943e00d9b616c06cb39b0605ef80
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67468402"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697230"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Protection cloud et Antivirus Microsoft Defender
 

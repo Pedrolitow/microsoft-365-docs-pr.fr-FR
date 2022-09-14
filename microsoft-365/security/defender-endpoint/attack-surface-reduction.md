@@ -20,12 +20,13 @@ ms.topic: article
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: 001bbea4a2bfcf04227e10a509fc4297aaf4b7ce
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+search.appverid: met150
+ms.openlocfilehash: 7f76c92ab6f8b488ea8d43402527ac6d74cf2b21
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326274"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693210"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 

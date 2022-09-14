@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c9ae9c80fed41254f8bc375a36ac1fcc3fc1ff52
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 6560a6477f8c754e311a51411f1ca378b1b818e9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520652"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697514"
 ---
 # <a name="get-investigation-api"></a>Get Investigation API
 

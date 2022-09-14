@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 21fdebfac2ba62144e665e7e72580cbff1ee8c00
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 51de6f79f3293d488e10ec7a90c5d0f5e949b127
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520410"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694742"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>Liste des configurations d’évaluation des lignes de base de sécurité
 

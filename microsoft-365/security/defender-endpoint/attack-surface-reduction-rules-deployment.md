@@ -21,12 +21,13 @@ ms.collection:
 - m365solution-asr-rules
 - highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: d544d109f0b150efc23447ed1aaaaedc03ed6719
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: c430ebfead2cfe5d5b3779929d8971433b197de4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480037"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695756"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)
 

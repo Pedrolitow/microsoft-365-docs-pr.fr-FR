@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 462a3df8ca9bdff5e769e2d15d58bab4d36b5e7c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 4140822e058987cd845b41711e9e325f442ccabb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680216"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697142"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Augmenter la conformité à la base de référence de sécurité Microsoft Defender pour point de terminaison
 

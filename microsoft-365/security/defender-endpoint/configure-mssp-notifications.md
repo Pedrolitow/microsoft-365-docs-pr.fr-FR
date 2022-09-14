@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b086014e718c504d990271536c69a7aba16311ce
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+search.appverid: met150
+ms.openlocfilehash: ac9a4acbd04e3df7d240e99527dc95747c79fda0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/14/2022
-ms.locfileid: "67678842"
+ms.locfileid: "67695668"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>Configurer les notifications d’alerte envoyées aux MSSP
 

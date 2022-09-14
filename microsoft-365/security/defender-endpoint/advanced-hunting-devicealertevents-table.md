@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.subservice: mde
-ms.openlocfilehash: fa6d6ef9954da4e11e4d6af5ecc1e8fa4658cdcb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 00e794bd5fd2dec783fdbfcf05e84f919369a5a0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678644"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695832"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 

@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 8dcc5a89cd50f560bc60226f1b940c44fbee8728
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ef889adde88882960a4ae5d48fb745ed07a45dc2
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523883"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692748"
 ---
 # <a name="get-package-sas-uri-api"></a>Obtenir l’API d’URI SAS de package
 

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/18/2022
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -20,17 +20,17 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: Découvrez comment utiliser des techniques de minification et de regroupement avec Web Essentials pour réduire les requêtes HTTP et le temps nécessaire pour charger des pages dans SharePoint Online.
-ms.openlocfilehash: b02cf095b1d7f05a82df1cf98a590ff762453f8a
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: Découvrez comment utiliser des techniques de minification et de regroupement avec Web Essentials pour réduire les requêtes HTTP et le temps nécessaire au chargement des pages dans SharePoint Online.
+ms.openlocfilehash: 38149275f2f3987fe5c989b355fc1f5aa5368f69
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637624"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694500"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimisation et regroupement dans SharePoint Online
 
-Cet article explique comment utiliser des techniques de minification et de regroupement avec Web Essentials pour réduire le nombre de requêtes HTTP et réduire le temps nécessaire pour charger des pages dans SharePoint Online.
+Cet article explique comment utiliser des techniques de minification et de regroupement avec Web Essentials pour réduire le nombre de requêtes HTTP et réduire le temps nécessaire au chargement des pages dans SharePoint Online.
   
 Lorsque vous personnalisez votre site web, vous pouvez ajouter un grand nombre de fichiers supplémentaires au serveur pour prendre en charge la personnalisation. L’ajout d’images javaScript, CSS et supplémentaires augmente le nombre de requêtes HTTP adressées au serveur, ce qui augmente le temps nécessaire à l’affichage d’une page web. Si vous avez plusieurs fichiers du même type, vous pouvez regrouper ces fichiers pour accélérer le téléchargement de ces fichiers.
   
@@ -41,7 +41,7 @@ Pour les fichiers JavaScript et CSS, vous pouvez également utiliser une approch
 Vous pouvez utiliser des logiciels tiers tels que Web Essentials pour regrouper des fichiers CSS et JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials est un projet tiers, open source et communautaire. Le logiciel est une extension pour Visual Studio 2012 et Visual Studio 2013 et n’est pas pris en charge par Microsoft. Pour télécharger Web Essentials, visitez le site Web [Essentials 2012](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012).
+> Web Essentials est un projet tiers, open source et communautaire. Le logiciel est une extension de Visual Studio 2012 et Visual Studio 2013 et n’est pas pris en charge par Microsoft. Pour télécharger Web Essentials, visitez le site Web [Essentials 2012](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012).
   
 Web Essentials offre deux formes de regroupement :
  
@@ -55,7 +55,7 @@ Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité exi
 ### <a name="to-create-a-te000127218-and-css-bundle-in-web-essentials"></a>Pour créer un bundle TE000127218 et CSS dans Web Essentials
   
 1. Dans Visual Studio, dans Explorateur de solutions, sélectionnez les fichiers que vous souhaitez inclure dans le bundle.
-2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> **Créer un fichier groupé JavaScript** dans le menu contextuel. Par exemple :
+2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> **Créer un fichier groupé JavaScript** dans le menu contextuel. Par exemple :
 
     ![Capture d’écran montrant les options de menu Web Essentials.](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -90,7 +90,7 @@ De la même façon que vous regroupez des fichiers JavaScript et CSS, vous pouve
 ### <a name="to-create-an-image-sprite-in-web-essentials"></a>Pour créer un sprite d’image dans Web Essentials**
   
 1. Dans Visual Studio, dans Explorateur de solutions, sélectionnez les fichiers que vous souhaitez inclure dans le bundle.
-2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> **Créer un sprite d’image** dans le menu contextuel. Par exemple :
+2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> **Créer un sprite d’image** dans le menu contextuel. Par exemple :
 
     ![Capture d’écran montrant comment créer un sprite d’image.](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

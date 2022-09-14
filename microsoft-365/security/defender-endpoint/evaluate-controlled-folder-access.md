@@ -15,12 +15,13 @@ manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: f1309a52f21075574bcf1386a684889798a42405
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 489c6df191e9c132c43c47e9e42b76b54f7a990b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523289"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697098"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 

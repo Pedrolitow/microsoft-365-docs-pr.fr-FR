@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.subservice: mde
-ms.openlocfilehash: d53f0cb437a79e4a6841293833dd0f76c014154d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 15aee7b413ade0d0011209e2c7f0d91408a97da5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679732"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695829"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprendre le schéma de chasse avancé dans Microsoft Defender pour point de terminaison
 

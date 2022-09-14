@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2d1313b4632e5b41b07d1f1f8cd09a0320a9ecbc
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: b4830362aa975274651a27568fa1221d1ef0bc41
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523707"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696856"
 ---
 # <a name="export-browser-extensions-assessment-per-device"></a>Exporter l’évaluation des extensions de navigateur par appareil
 

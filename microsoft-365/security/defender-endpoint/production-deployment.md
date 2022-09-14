@@ -19,12 +19,13 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: abfa6200a1250ff9fda8cf30c6106a39eff4f25b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 42d369e1f1dc399600c76e4361147687f4365d89
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584835"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694014"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour point de terminaison déploiement
 

@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 30c5340ab6e148c2ee3d71071981fc1be008563d
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 3e173e3eae3cb772528ef6bf731bde9cf1d90c2c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523949"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694896"
 ---
 # <a name="get-alert-related-domain-information-api"></a>Obtenir l’API d’informations de domaine liées aux alertes
 

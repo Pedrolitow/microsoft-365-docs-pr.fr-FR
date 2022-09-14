@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 2a0a73eb30438ab7bf648fd425619393352e6e81
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 3eab14df6abf321a1587d3684e18c158ca771980
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523443"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692704"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Accorder l’accès au fournisseur de services de sécurité managé (MSSP) (préversion)
 

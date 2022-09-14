@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: dfc2ec8f9aa866338e0a615fb5d9adac1288f3ce
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 0eea53273f5178a8aab55bfffc9d4c2047359ceb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520498"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695338"
 ---
 # <a name="get-installed-software"></a>Obtenir les logiciels installés
 

@@ -16,12 +16,13 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.date: 08/08/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: d6370dca95797b7ce83e95a4a4123aa2f5470205
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 72247a2362bba81336d76662413c11cda3cdd903
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522430"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696504"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Access Control de stockage amovible du contrôle d’appareil
 

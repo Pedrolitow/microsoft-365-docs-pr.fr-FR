@@ -18,12 +18,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 89a554cc1f016425e74e0fb6ad6f3aca9f81b292
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: d7d8a93093febc2492c45c8b69e401e7d30fa9ec
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680357"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693276"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 

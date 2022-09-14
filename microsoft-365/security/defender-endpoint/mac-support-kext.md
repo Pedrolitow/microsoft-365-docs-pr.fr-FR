@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 333fa4bce74aec78f18872751f153191ac163142
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 1d5867b8ecf641d849f3a186c11ab1ef51d3ccef
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521968"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694190"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension de noyau dans Microsoft Defender pour point de terminaison sur macOS
 
