@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c3eb27a4eb4ae2f2b99f70f1534da2121c8fdc91
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 0da317f8714e0057191d93067a6d3a0ae0aac953
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582183"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681492"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Spécifier le niveau de protection cloud
 

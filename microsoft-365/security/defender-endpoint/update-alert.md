@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6a521515dedcf426c237a4a559bfc18ca956549f
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: d397d17214f4a8ee4c58ef66ed7b8c0c37c287eb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582117"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686656"
 ---
 # <a name="update-alert"></a>Mettre à jour une alerte
 

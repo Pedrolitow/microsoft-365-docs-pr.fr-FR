@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 08754eaa0040e3f7aa89c9e398db37afbbd1b474
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 246b97d6cef51d932e68b63b2d0dfae09d5862b2
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67514408"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67683052"
 ---
 # <a name="machine-resource-type"></a>Type de ressource de machine
 

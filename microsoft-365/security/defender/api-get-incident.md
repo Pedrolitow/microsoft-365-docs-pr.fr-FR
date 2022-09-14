@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: adfe4423304d7827cef9fc4a0c49a1499d5302a1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 5473be1b45b87d677a7d18ba0bd8174364aa53b5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67499077"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67682192"
 ---
 # <a name="get-incident-information-api"></a>Obtenir l’API d’informations sur les incidents
 
@@ -87,7 +88,7 @@ Si l’incident avec l’ID spécifié est introuvable - 404 Introuvable.
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://api.security.microsoft.com/api/incidents/{id}

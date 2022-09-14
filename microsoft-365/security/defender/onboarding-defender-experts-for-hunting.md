@@ -18,12 +18,13 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.openlocfilehash: 298bba9601d87887b839b7b0c5f0a33c7616caa4
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: e8aa0cab5f3b7c756b2b4baf5cab046cf35287e0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497422"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67684042"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Commencer à utiliser microsoft Defender Experts pour la chasse
 

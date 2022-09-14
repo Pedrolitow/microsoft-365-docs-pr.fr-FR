@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 25e9df7e74dc1e0f214f4588fa32c51364df8778
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 214e8e4d8246782df0478a12ee37097b496cc7d1
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581665"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681558"
 ---
 # <a name="recommendation-resource-type"></a>Type de ressource de recommandation
 

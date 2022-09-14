@@ -2,8 +2,7 @@
 title: Guides détaillés Microsoft Defender pour Office 365 et comment les utiliser
 description: Quels sont les guides pas à pas pour Microsoft 365 Defender pour Office 365 ? Consultez *uniquement les étapes nécessaires à l’exécution d’une tâche* et à la configuration des fonctionnalités. Informations à utiliser dans les abonnements d’essai et la production. Conseils conçus pour minimiser la surcharge d’informations et accélérer votre configuration et votre utilisation.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: overview
-ms.subservice: mdo
-ms.openlocfilehash: adec3c67a611c48f01b6c4c5550ef5368d47662c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: e557d166faf05c530d01fd8f25f28bb0a7ec186b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67593822"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67683888"
 ---
 # <a name="welcome-to-the-microsoft-defender-for-office-365-step-by-step-guides"></a>Bienvenue dans les Microsoft Defender pour Office 365 guides pas à pas
 

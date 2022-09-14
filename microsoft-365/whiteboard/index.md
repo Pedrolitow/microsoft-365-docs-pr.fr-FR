@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Recherchez des ressources sur la configuration et la gestion du Tableau blanc Microsoft.
-ms.openlocfilehash: 23fc56fd3fd69c384f787a4b4b27abc159392d12
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5ea00fc7871a39b9342e13b9db7152a68f1bacd0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598866"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681864"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Présentation du Tableau blanc Microsoft
 
@@ -54,6 +54,10 @@ Les ressources de cette section aident l’administrateur de votre organisation 
 
 | Si vous recherchez ces informations | Accédez à cette ressource |
 |:-----|:-----|
+|Découvrez comment configurer et gérer l’accès au Tableau blanc pour les environnements DU GCC du gouvernement des États-Unis|[Gérer l’accès au Tableau blanc - GCC](manage-whiteboard-access-gcc.md)|
+|Rechercher l’emplacement de stockage du contenu et des données de votre tableau blanc dans Azure et OneDrive Entreprise dans les environnements US Government GCC  |[Gérer les données pour le Tableau blanc - GCC](manage-data-gcc.md)  |
+|Découvrez l’expérience de partage dans Teams et comment partager des liens vers des utilisateurs spécifiques dans des environnements DU GCC du gouvernement des États-Unis  |[Gérer le partage pour le tableau blanc - GCC](manage-sharing-gcc.md)  |
+|Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc dans les environnements US Government GCC  |[Gérer les clients pour le Tableau blanc - GCC](manage-clients-gcc.md)       |
 |Découvrez comment configurer et gérer l’accès au tableau blanc pour les environnements US Government GCC High|[Gérer l’accès au Tableau blanc - GCC High](manage-whiteboard-access-gcc-high.md)|
 |Rechercher l’emplacement de stockage du contenu et des données de votre tableau blanc dans Azure et OneDrive Entreprise dans les environnements US Government GCC High  |[Gérer les données pour le tableau blanc - GCC High](manage-data-gcc-high.md)  |
 |Découvrez l’expérience de partage dans Teams et comment partager des liens vers des utilisateurs spécifiques dans des environnements US Government GCC High  |[Gérer le partage pour le tableau blanc - GCC High](manage-sharing-gcc-high.md)  |
@@ -64,6 +68,3 @@ Les ressources de cette section aident l’administrateur de votre organisation 
 | Si vous recherchez ces informations | Accédez à cette ressource |
 |:-----|:-----|
 |Rechercher des références d’aide sur les applets de commande PowerShell pour gérer le Tableau blanc Microsoft|[PowerShell pour tableau blanc](/powershell/module/whiteboard/)|
-
-
-

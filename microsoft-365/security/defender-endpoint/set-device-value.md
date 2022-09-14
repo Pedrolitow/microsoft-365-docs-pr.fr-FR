@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 219b552eb096e1e1bcc59938f0c360afb0663017
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: e9a0f80207aa8c6d24c349c103b4fc4502a28758
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584482"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67682666"
 ---
 # <a name="set-device-value-api"></a>Définir l’API de valeur d’appareil
 

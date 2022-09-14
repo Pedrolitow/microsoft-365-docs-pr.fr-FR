@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6b8e8077a06ba811d9e969766ea09c3547595b56
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: b5c9fa30dacc0527e91c6288f5b6104e44e60ef0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67498952"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67683611"
 ---
 # <a name="create-alert-api"></a>Créer une API d’alerte
 

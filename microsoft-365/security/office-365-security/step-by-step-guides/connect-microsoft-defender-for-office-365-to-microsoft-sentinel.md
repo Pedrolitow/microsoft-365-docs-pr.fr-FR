@@ -2,8 +2,7 @@
 title: Connecter Microsoft Defender pour Office 365 à Microsoft Sentinel
 description: Étapes de connexion Microsoft Defender pour Office 365 à Sentinel. Ajoutez vos données Microsoft Defender pour Office 365 (*et* les données du reste de la suite Microsoft 365 Defender), y compris les incidents, à Microsoft Sentinel pour un seul volet de sécurité.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: 8ad089644542effa9fc7df24fe6b16f49a54d8c2
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: 4907ca3a3341440251d01a9fc0523d91a8893acd
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595892"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686546"
 ---
 # <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>Connecter Microsoft Defender pour Office 365 à Microsoft Sentinel
 

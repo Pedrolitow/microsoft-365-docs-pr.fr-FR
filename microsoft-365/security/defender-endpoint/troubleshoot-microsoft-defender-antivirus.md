@@ -15,12 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7d70d6e39e31619341c3f6041a06fc87d64d5509
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 14eef61a330c1317dd5eb9e98694fec18ad2ce41
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580528"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686678"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 

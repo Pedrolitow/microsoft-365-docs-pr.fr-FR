@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: cbdb10dcaee9cd1a1b0922b6ffe79c72717af0d5
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 8b4851528274e887b117571c892820d17b39e6fd
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583085"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67682798"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’envoi ou de mise à jour de l’indicateur
 

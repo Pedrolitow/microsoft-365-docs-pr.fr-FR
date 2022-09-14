@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 1a43f85c849901a56871ea3aa5b4482ffc616957
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 9b0c452ff63196498b41764f8b870cfafc441dff
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585375"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67684208"
 ---
 # <a name="user-resource-type"></a>Type de ressource utilisateur
 

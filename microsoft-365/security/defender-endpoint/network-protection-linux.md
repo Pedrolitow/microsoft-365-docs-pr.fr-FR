@@ -19,12 +19,13 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: ee3b78a3cdb03cb652478f68f965c43d022f8633
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 0b113ec142314043c77c20d840f899e85603fbc8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581117"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67682838"
 ---
 # <a name="network-protection-for-linux"></a>Protection réseau pour Linux
 

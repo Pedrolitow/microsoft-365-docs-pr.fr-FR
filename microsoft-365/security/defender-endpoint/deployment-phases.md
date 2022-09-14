@@ -18,12 +18,13 @@ ms.collection:
 - highpri
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b5e664fb40d549d669d1b3bba6d55feb96ccc843
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 47373c0abfcc6e9ba1e055c40b3fff827ed951b7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679150"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67683492"
 ---
 # <a name="microsoft-defender-for-endpoint-deployment-overview"></a>Vue d’ensemble du déploiement Microsoft Defender pour point de terminaison
 

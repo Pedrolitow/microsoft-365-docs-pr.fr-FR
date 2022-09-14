@@ -15,12 +15,13 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 07/01/2022
 ms.subservice: mde
-ms.openlocfilehash: 6d9f60886c02cd4b6af929b2b403316b1bfea0a2
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 46ac26b8351c4b0d85f6d34c196f49b230cd3726
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577296"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67682986"
 ---
 # <a name="move-to-microsoft-defender-for-endpoint"></a>Passer à Microsoft Defender pour point de terminaison
 

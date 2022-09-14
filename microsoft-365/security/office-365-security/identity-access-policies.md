@@ -22,12 +22,13 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
-ms.openlocfilehash: 07049a7eb04cac2a22f82aa7cf57fe8b44a228e7
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: dd0182bda8e23537a1c7914270037ea61c16feaa
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599712"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686634"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies d’accès aux identités et aux appareils Confiance nulle courantes
 
@@ -215,7 +216,7 @@ Pour afficher les recommandations spécifiques pour chaque niveau de configurati
 
 À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de point de départ et de protection d’entreprise correspondent étroitement aux paramètres de protection des données améliorés de niveau 2 entreprise. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de protection des données élevées d’entreprise de niveau 3.
 
-|Niveau de protection|Stratégie de protection des applications|Informations supplémentaires|
+|Niveau de protection|Stratégie de protection des applications|Plus d’informations|
 |---|---|---|
 |Point de départ|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Entreprise|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.|
@@ -300,7 +301,7 @@ Pour les appareils supervisés :
 
 À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de point de départ et de protection d’entreprise correspondent étroitement aux paramètres de sécurité améliorés de niveau 2. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de sécurité de niveau 3.
 
-|Niveau de protection  |Stratégie d’appareil |Informations supplémentaires  |
+|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
 |Point de départ     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.         |
@@ -332,7 +333,7 @@ Pour les appareils Android Entreprise entièrement gérés :
 
 Pour les appareils de profil professionnel Android Entreprise :
 
-|Niveau de protection  |Stratégie d’appareil |Informations supplémentaires  |
+|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
 |Point de départ     |Profil professionnel : Sécurité de base (niveau 1)      |S/O         |
 |Entreprise     |Profil professionnel : Sécurité de base (niveau 1)         |S/O         |
