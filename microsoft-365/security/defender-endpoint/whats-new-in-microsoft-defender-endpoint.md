@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 8930006a4748d090de15ef76c84fd39b8f7527ec
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fd587baa44a40b7c3543839116bc169a07873efc
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690805"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730218"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -63,8 +63,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 ## <a name="september-2022"></a>Septembre 2022
 
-- [Les rapports d’intégrité des appareils sont désormais en disponibilité générale](machine-reports.md). <br/>Le rapport d’intégrité des appareils fournit des informations générales sur l’intégrité et la sécurité de vos points de terminaison. Le rapport inclut des informations de tendance indiquant l’état d’intégrité du capteur, l’état de l’antivirus, les plateformes de système d’exploitation, les versions Windows 10 et les versions de mise à jour de l’antivirus Microsoft Defender.
-- [Le mode de résolution des problèmes](enable-troubleshooting-mode.md) est désormais disponible pour d’autres systèmes d’exploitation Windows, notamment Windows Server 2012 R2 et versions ultérieures. Reportez-vous à l’article pour plus d’informations sur les mises à jour requises.
+- [Les rapports d’intégrité des appareils sont désormais en disponibilité générale](device-health-reports.md). <br/>Le rapport d’intégrité des appareils fournit des informations sur l’intégrité et la sécurité de vos points de terminaison. Le rapport inclut des informations de tendance indiquant l’état d’intégrité du capteur, l’état de l’antivirus, les plateformes de système d’exploitation, les versions Windows 10 et les versions de mise à jour de l’antivirus Microsoft Defender.
 
 ## <a name="august-2022"></a>Août 2022
 
@@ -134,7 +133,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 ## <a name="september-2021"></a>Septembre 2021
 
-- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de réglementer l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité légale, les loisirs et les catégories non catégorisées. Bien que de nombreux sites web qui appartiennent à une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web](web-content-filtering.md).
+- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de réglementer l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité légale, les loisirs et les catégories non catégorisées. Bien que de nombreux sites web qui appartiennent à une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes. [Mer informasjon sur le filtrage de contenu web](web-content-filtering.md).
 
 ## <a name="august-2021"></a>Août 2021
 
@@ -145,7 +144,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 ## <a name="july-2021"></a>Juillet 2021
 
-- (Préversion) [Rapport d’intégrité et de conformité des appareils](machine-reports.md) <br>  Le rapport d’intégrité et de conformité des appareils fournit des informations générales sur les appareils de votre organisation.
+- (Préversion) [Rapport d’intégrité et de conformité des appareils](device-health-reports.md) <br>  Le rapport d’intégrité et de conformité des appareils fournit des informations générales sur les appareils de votre organisation.
 
 ## <a name="june-2021"></a>Juin 2021
 
@@ -159,7 +158,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 - [Les définitions de groupe d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) peuvent désormais inclure plusieurs valeurs pour chaque condition. Vous pouvez définir plusieurs balises, noms d’appareils et domaines sur la définition d’un seul groupe d’appareils.
 - [Prise en charge de la gestion des applications mobiles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Cette amélioration permet Microsoft Defender pour point de terminaison protéger les données d’une organisation au sein d’une application managée lorsque Intune est utilisé pour gérer des applications mobiles. Pour plus d’informations sur la gestion des applications mobiles, consultez [cette documentation](/mem/intune/apps/mam-faq).
-- [Intégration du VPN Microsoft Tunnel](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Les fonctionnalités VPN de Microsoft Tunnel sont désormais intégrées à Microsoft Defender pour point de terminaison application pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur final simplifiée avec une application de sécurité, offrant à la fois la défense contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que les équipes de sécurité et informatiques sont en mesure de maintenir les mêmes expériences d’administration qu’elles connaissent.
+- [Intégration du VPN Microsoft Tunnel](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Les fonctionnalités VPN de Microsoft Tunnel sont désormais intégrées à Microsoft Defender pour point de terminaison application pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur final simplifiée avec une application de sécurité, offrant à la fois la défense contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que la sécurité et les équipes informatiques sont en mesure de maintenir les mêmes expériences d’administration qu’elles connaissent.
 - [Détection jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour point de terminaison sur iOS est désormais en disponibilité générale. Cela ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, consultez [la stratégie d’accès conditionnel d’installation basée sur les signaux de risque de l’appareil](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 

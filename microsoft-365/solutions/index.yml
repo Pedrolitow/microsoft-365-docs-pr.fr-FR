@@ -7,6 +7,7 @@ metadata:
   ms.service: microsoft-365-enterprise
   ms.topic: landing-page
   ms.collection:
+  - highpri
   - m365-security-compliance
   author: samanro
   ms.author: samanro
@@ -14,12 +15,12 @@ metadata:
   audience: ITPro
   ms.date: 03/23/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 101075e063cfc96d32f73f17cac9b0b565526608
-  ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+  ms.openlocfilehash: 385e5ad11c25ab7b5686babacb3efd9afe27f9bd
+  ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/14/2022
-  ms.locfileid: "67690529"
+  ms.lasthandoff: 09/15/2022
+  ms.locfileid: "67730856"
 landingContent:
 - title: Guides des solutions de base
   linkLists:

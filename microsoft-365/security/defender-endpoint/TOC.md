@@ -299,7 +299,6 @@
 ###### [Répondre aux menaces web](web-protection-response.md)
 ##### [Filtrage du contenu web](web-content-filtering.md)
 
-
 ### Protection de nouvelle génération
 #### [Vue d’ensemble de la protection nouvelle génération](next-generation-protection.md)
 ##### [Vue d’ensemble de l’antivirus Microsoft Defender](microsoft-defender-antivirus-windows.md)
@@ -379,7 +378,9 @@
 ##### [Scénarios de mode de dépannage](troubleshooting-mode-scenarios.md)
 
 #### Diagnostics et performances pour Antivirus Microsoft Defender
-##### [Intégrité de l’appareil et rapports sur la conformité](machine-reports.md)
+##### [Rapports d’intégrité de l’appareil](device-health-reports.md)
+###### [Rapport d’intégrité de l’Antivirus Microsoft Defender](device-health-microsoft-defender-antivirus-health.md)
+###### [Rapport sur l’intégrité et le système d’exploitation des capteurs](device-health-sensor-health-os.md)
 ##### [Résoudre les problèmes de performances liés à la protection en temps réel](troubleshoot-performance-issues.md) 
 ##### [Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour](troubleshoot-reporting.md)
 ##### [Collecter les données de diagnostic de Antivirus Microsoft Defender](collect-diagnostic-data.md)

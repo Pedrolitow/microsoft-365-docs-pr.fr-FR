@@ -17,12 +17,12 @@ ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 68ee26e5db50528c713f4116f620c411400e5854
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 56568bc702ffba5e762df877d2ed3f7f80a6b0f4
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698997"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731203"
 ---
 # <a name="export-device-antivirus-health-report"></a>Exportation du rapport de santé antivirus de l'appareil
 
@@ -296,4 +296,4 @@ Voici un exemple de réponse :
 
 [Méthodes et propriétés de l'état de santé de l'appareil d'exportation](device-health-api-methods-properties.md)
 
-[Rapports sur l’intégrité et la conformité des appareils](machine-reports.md)
+[Rapports sur l’intégrité et la conformité des appareils](device-health-reports.md)

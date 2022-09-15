@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,16 +19,16 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Déployez les fonctionnalités de sécurité et de conformité de Microsoft 365 et protégez vos informations personnelles.
-ms.openlocfilehash: c6c3a824eba7f7a15df258157d45c4d46a6024dd
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a75533e3417a2afa38d9904e62b93bb0f54f5c39
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575730"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731593"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
-Un certain nombre de contrôles de protection des informations peuvent être utilisés dans votre abonnement pour vous aider à répondre aux besoins et aux réglementations de conformité à la confidentialité des données. Il s’agit notamment du Règlement général sur la protection des données (RGPD), de HIPAA-HITECH (loi États-Unis sur la confidentialité des soins de santé), de la Loi de Californie sur la protection des consommateurs (CCPA) et de la Loi brésilienne sur la protection des données (LGPD).
+Un certain nombre de contrôles de protection des informations peuvent être utilisés dans votre abonnement pour vous aider à répondre aux besoins et aux réglementations de conformité à la confidentialité des données. Il s’agit notamment du Règlement général sur la protection des données (RGPD), de HIPAA-HITECH (loi Estados Unidos sur la confidentialité des soins de santé), du CCPA (California Consumer Protection Act) et de la Loi brésilienne sur la protection des données (LGPD).
 
 Ces contrôles se trouvent dans les domaines de solution suivants :
 

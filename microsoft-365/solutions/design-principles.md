@@ -9,16 +9,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: a8f347d5f09733945206af9293e762b8af5ab570
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a53aabccf08bf6c855a03afba702a8d4a5043c96
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585771"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730438"
 ---
 # <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 Entreprise principes de conception de l’architecture
 

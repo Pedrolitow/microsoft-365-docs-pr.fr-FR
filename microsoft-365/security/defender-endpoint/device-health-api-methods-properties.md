@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 06339d5313b0921a5560ef7db53d2b1dad1b771f
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: eb9802a8036b8c5b49dc10b3f422dad2b22e683e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520372"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728047"
 ---
 # <a name="export-device-antivirus-health-details-api-methods-and-properties"></a>Exporter les méthodes et propriétés de l’API des détails d’intégrité de l’antivirus de l’appareil
 
@@ -62,7 +62,7 @@ Les données collectées à l’aide de la _« réponse JSON_ ou _par le biais d
 
 > [!NOTE]
 >
-> Pour plus d’informations sur l’utilisation de l’outil de création de rapports sur **l’intégrité de l’appareil et la conformité antivirus** dans le tableau de bord Sécurité de Microsoft 365, consultez : Rapport sur l’intégrité [des appareils et la conformité antivirus dans Microsoft Defender pour point de terminaison](machine-reports.md).
+> Pour plus d’informations sur l’utilisation de l’outil de création de rapports sur **l’intégrité des appareils et la conformité antivirus** dans le tableau de bord Sécurité de Microsoft 365, consultez : [Rapport sur l’intégrité des appareils et les antivirus dans Microsoft Defender pour point de terminaison](device-health-reports.md).
 >
 
 ### <a name="11-export-device-antivirus-health-details-api-methods"></a>1.1 Exporter les méthodes d’API des détails d’intégrité de l’antivirus de l’appareil
@@ -77,14 +77,14 @@ Méthode|Type de données|Description
 > [!NOTE]
 >
 > - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété. Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement retournée dans le même ordre que celui répertorié dans ce tableau.
-> - Certaines colonnes supplémentaires peuvent être retournées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
+> - Certaines colonnes supplémentaires peuvent être retournées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées ; utilisez uniquement les colonnes documentées.
 
 | Propriété (ID) | Type de données | Description | Exemple de valeur retournée |
 |:----|:----|:----|:----|
 | avEngineUpdateTime | DateTimeOffset | Date et heure de la dernière mise à jour du moteur AV sur l’appareil | « 2022-08-04T12:44:02Z » |
 | avEngineVersion | Chaîne | Version du moteur antivirus | "1.1.19400.3" |
 | avIsEngineUpToDate | Chaîne | État à jour du moteur AV | « True », « False », « Unknown » |
-| avIsPlatformUpToDate | Chaîne | Stauts à jour de la plateforme AV | « True », « False », « Unknown » |
+| avIsPlatformUpToDate | Chaîne | État à jour de la plateforme AV | « True », « False », « Unknown » |
 | avIsSignatureUpToDate | Chaîne | État à jour de la signature AV | « True », « False », « Unknown » |
 | avMode | Chaîne | Mode antivirus. | Chaque mode est une valeur entière typée par chaîne comprise entre 0 et 5. Reportez-vous au mappage ci-dessous pour voir la signification de sa valeur : <ul><li>'' = Autre</li><li> '0' = Actif</li><li> '1' = Passif</li><li> '2' = Désactivé</li><li> '3' = Autre</li><li> '4' = EDRBlocked</li><li>'5' = PassiveAudit</li></ul> |
 | avPlatformUpdateTime | DateTimeOffset | Date et heure de la dernière mise à jour de la plateforme AV sur l’appareil | « 2022-08-04T12:44:02Z » |
@@ -134,4 +134,4 @@ Méthode|Type de données|Description
 
 [Exportation du rapport de santé antivirus de l'appareil](device-health-export-antivirus-health-report-api.md)
 
-[Rapports sur l’intégrité et la conformité des appareils](machine-reports.md)
+[Rapports sur l’intégrité et la conformité des appareils](device-health-reports.md)

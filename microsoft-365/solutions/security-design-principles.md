@@ -9,17 +9,18 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 1b90b08218fff22c864b1307a3312eeff9bae003
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 5e47cc11a72ba11f10c844f900dcf513afadaa2b
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586509"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730174"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Obstacles à la sécurité que vous pouvez franchir : point de vue d’un architecte
 
@@ -47,7 +48,7 @@ Les clients qui naviguent sur ces obstacles ont de bons partenariats entre les �
 
 ## <a name="build-a-modern-identity-based-security-perimeter"></a>Créer un périmètre de sécurité moderne (basé sur l’identité)
 
-Ensuite, adoptez une approche d’architecture Confiance nulle. Cela commence par la création d’un périmètre de sécurité moderne basé sur l’identité. Concevez l’architecture de sécurité dans laquelle chaque tentative d’accès, locale ou cloud, est traitée comme non approuvée jusqu’à ce qu’elle soit vérifiée : « ne jamais faire confiance, toujours vérifier ». Cette approche de conception augmente non seulement la sécurité et la productivité, mais permet également aux utilisateurs de travailler n’importe où avec n’importe quel type d’appareil. Les contrôles cloud sophistiqués inclus avec Microsoft 365 vous aident à protéger les identités des utilisateurs tout en contrôlant l’accès aux ressources précieuses en fonction du niveau de risque utilisateur.
+Ensuite, adoptez une approche d’architecture Confiança zero. Cela commence par la création d’un périmètre de sécurité moderne basé sur l’identité. Concevez l’architecture de sécurité dans laquelle chaque tentative d’accès, locale ou cloud, est traitée comme non approuvée jusqu’à ce qu’elle soit vérifiée : « ne jamais faire confiance, toujours vérifier ». Cette approche de conception augmente non seulement la sécurité et la productivité, mais permet également aux utilisateurs de travailler n’importe où avec n’importe quel type d’appareil. Les contrôles cloud sophistiqués inclus avec Microsoft 365 vous aident à protéger les identités des utilisateurs tout en contrôlant l’accès aux ressources précieuses en fonction du niveau de risque utilisateur.
 
 Pour obtenir une configuration recommandée, consultez [Les configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md).
 
@@ -78,8 +79,8 @@ Pour vous aider à surmonter ces obstacles, Microsoft a organisé plusieurs ress
 |Ressource   |Plus d’informations  |
 |---------|---------|
 |[Principales tâches pour les équipes de sécurité qui prennent en charge le télétravail](../security/top-security-tasks-for-remote-work.md)      | Si vous vous retrouvez soudainement à soutenir une main-d’œuvre essentiellement professionnelle à la maison, cet article vous aide à augmenter rapidement la sécurité. Il inclut les principales tâches recommandées en fonction de votre plan de licences.    |
-|[Plan de déploiement zéro trust Microsoft 365](../security/microsoft-365-zero-trust.md)    | Cet article fournit un plan de déploiement pour créer Confiance nulle sécurité avec Microsoft 365. Il inclut une affiche téléchargeable que vous pouvez utiliser pour suivre votre progression. |
-|[Centre d’aide sur la confiance zéro](/security/zero-trust/)  | Découvrez le modèle de sécurité Confiance nulle, ses principes et comment implémenter une architecture Confiance nulle à l’aide des plans de déploiement. |
+|[Plan de déploiement zéro trust Microsoft 365](../security/microsoft-365-zero-trust.md)    | Cet article fournit un plan de déploiement pour créer Confiança zero sécurité avec Microsoft 365. Il inclut une affiche téléchargeable que vous pouvez utiliser pour suivre votre progression. |
+|[Centre d’aide sur la confiance zéro](/security/zero-trust/)  | Découvrez le modèle de sécurité Confiança zero, ses principes et comment implémenter une architecture Confiança zero à l’aide des plans de déploiement. |
 |[docs.security.com/security](/security/)    | Conseils techniques de Microsoft pour la stratégie et l’architecture de sécurité.        |
 | | |
 

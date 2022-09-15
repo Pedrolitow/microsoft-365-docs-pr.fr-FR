@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: 77dca20a3168033df520a7735bcc9037d315790e
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 9e046c877eab1c422d660ba24b7ec2da45c2006a
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516563"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731075"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Bien démarrer avec Microsoft Defender pour point de terminaison Plan 1
 
@@ -75,9 +75,9 @@ La barre de navigation sur le côté gauche de l’écran vous permet de vous d�
 |  **Terminaison** >  **Lignes de base de & de configuration** | S’étend pour afficher **les bases de référence de sécurité** et **la gestion de la configuration**. |
 |  **Terminaison** >  Lignes  >  **de base de & de configuration** **Bases de référence de sécurité** | Les bases de référence de sécurité sont des stratégies préconfigurées et des groupes de paramètres qui peuvent vous aider à appliquer les paramètres de sécurité recommandés de manière efficace et efficace. Les lignes de base incluent des paramètres basés sur les meilleures pratiques de l’industrie. Vous pouvez conserver les paramètres par défaut ou personnaliser vos bases de référence en fonction des besoins de votre organisation. <br/><br/> Pour plus d’informations, consultez [Utiliser les bases de référence de sécurité pour configurer Windows 10 appareils dans Intune](/mem/intune/protect/security-baselines). |
 |  **Terminaison** >  Lignes  >  **de base de & de configuration** **Gestion de la configuration** | Accède à la page **gestion de la configuration** des appareils, où vous pouvez afficher des informations sur les appareils intégrés et prendre des mesures pour intégrer davantage d’appareils. |
-| **Rapports** | Accède à vos rapports, tels que votre [rapport de protection contre les menaces](threat-protection-reports.md), le [rapport d’intégrité et de conformité](machine-reports.md) des appareils et votre [rapport de protection web](web-protection-overview.md). |
-| **État d'intégrité** | Inclut des liens vers le **État des services** et le **centre de messages**.  |
-| **Santé** >  **État des services** | Accède à la page État des services dans le Centre d'administration Microsoft 365. Cette page vous permet d’afficher l’état d’intégrité de tous les services disponibles avec les abonnements de votre organisation.   |
+| **Rapports** | Accède à vos rapports, tels que votre [rapport de protection contre les menaces](threat-protection-reports.md), le [rapport d’intégrité et de conformité des appareils et](device-health-reports.md) votre [rapport de protection web](web-protection-overview.md). |
+| **État d'intégrité** | Inclut des liens vers le **Estado de funcionamento dos serviços** et le **centre de messages**.  |
+| **Santé** >  **Estado de funcionamento dos serviços** | Accède à la page Estado de funcionamento dos serviços dans le Centre d'administration Microsoft 365. Cette page vous permet d’afficher l’état d’intégrité de tous les services disponibles avec les abonnements de votre organisation.   |
 | **Santé** >  **Centre de messages** | Accède au centre de messages dans le Centre d'administration Microsoft 365. Le centre de messages fournit des informations sur les modifications planifiées. Chaque message décrit ce qui s’en vient, comment il peut affecter les utilisateurs et comment gérer les modifications. |  
 | **Autorisations & rôles** | Vous permet d’accorder des autorisations pour utiliser le portail Microsoft 365 Defender. Les autorisations sont accordées via des rôles dans Azure Active Directory (Azure AD). Sélectionnez un rôle et un volet volant s’affiche. Le menu volant contient un lien vers Azure AD dans lequel vous pouvez ajouter ou supprimer des membres dans un groupe de rôles. <br/><br/> Pour plus d’informations, consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).  |
 | **Paramètres** | Accède aux paramètres généraux de votre portail Microsoft 365 Defender (listé en tant que **Centre de sécurité**) et Defender pour point de terminaison (répertoriés en tant que points de **terminaison**). <br/><br/> Pour plus d’informations, consultez [Paramètres](../defender/microsoft-365-defender-portal.md). |
@@ -158,7 +158,7 @@ Pour accéder à votre rapport d’intégrité de l’appareil, dans le portail 
 Faites défiler vers le bas pour afficher toutes les vues de chaque liste. Par défaut, les vues de la colonne **Tendances de l’appareil** affichent les données des 30 derniers jours, mais vous pouvez modifier une vue pour afficher les données des trois derniers mois, des six derniers mois ou une plage de temps personnalisée (jusqu’à 180 jours). Les vues **récapitulatives de l’appareil** sont des instantanés du jour ouvré précédent.
 
 > [!TIP]
-> Pour en savoir plus, consultez [Intégrité de l’appareil](machine-reports.md).
+> Pour en savoir plus, consultez [Intégrité de l’appareil](device-health-reports.md).
 
 ### <a name="web-protection-report"></a>Rapport de protection web
 

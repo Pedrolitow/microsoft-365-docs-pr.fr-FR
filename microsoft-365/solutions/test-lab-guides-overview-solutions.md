@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- highpri
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
 description: Utilisez les guides de laboratoire de test pour créer des solutions et des scénarios Microsoft 365 dans un environnement de développement/test.
-ms.openlocfilehash: 72dc8a6a7db562100d4a4bbb17c699bd32686810
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 5d3caf0bc24652921c9d78de24fb3e4dba111bd0
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579399"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730306"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guides pour les laboratoires de tests pour les solutions et scénarios
 

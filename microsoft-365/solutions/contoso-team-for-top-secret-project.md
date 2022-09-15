@@ -13,15 +13,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- highpri
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe avec isolation de sécurité pour un projet top secret afin de développer une nouvelle suite de produits et de services.'
-ms.openlocfilehash: 83f09050858651634f5c4dc7d2cfbdd374239ba9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2afc993245e2ad1a67242855dd658a38de5e628a
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585089"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730658"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet top secret de Contoso Corporation
 

@@ -9,16 +9,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: cda43236f04c7a84342d85e56798cc2ecb56c61c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2cbba71b19105b0587609ec835d72be889100ee0
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576096"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731637"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Illustrations du cloud Microsoft pour les architectes informatiques
 
@@ -30,11 +31,11 @@ Les décideurs informatiques et les architectes peuvent utiliser ces ressources 
 ### <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
 
-Cette illustration fournit un plan de déploiement pour la création de Confiance nulle la sécurité avec Microsoft 365. Confiance nulle est un nouveau modèle de sécurité qui suppose une violation et vérifie chaque demande comme s’il provenait d’un réseau non contrôlé. Quel que soit l’endroit d’origine de la requête ou la ressource à laquelle elle accède, le modèle Confiance nulle nous apprend à « ne jamais faire confiance, toujours vérifier ».
+Cette illustration fournit un plan de déploiement pour créer Confiança zero sécurité avec Microsoft 365. Confiança zero est un nouveau modèle de sécurité qui suppose une violation et vérifie chaque demande comme si elle provenait d’un réseau non contrôlé. Quel que soit l’endroit d’origine de la requête ou la ressource à laquelle elle accède, le modèle Confiança zero nous apprend à « ne jamais faire confiance, toujours vérifier ».
 
 | Élément | Description |
 |:-----|:-----|
-|[![Illustration du plan de déploiement microsoft 365 Confiance nulle.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Mise à jour de mars 2022 | Utilisez cette illustration avec cet article : [Plan de déploiement Microsoft 365 Confiance nulle](../security/Microsoft-365-zero-trust.md) <br/><br/>**Guides de solution associés** <br/> <ul><li>[Déployer votre infrastructure d’identité pour Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Configurations d’identité et d’accès aux appareils recommandées](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Gérer des appareils avec Intune](manage-devices-with-intune-overview.md)</li><li>[Évaluer et piloter Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Déployer une solution de protection des informations avec Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365](information-protection-deploy.md)</li></ul>|
+|[![Illustration du plan de déploiement microsoft 365 Confiança zero.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Mise à jour de mars 2022 | Utilisez cette illustration avec cet article : [Plan de déploiement Microsoft 365 Confiança zero](../security/Microsoft-365-zero-trust.md) <br/><br/>**Guides de solution associés** <br/> <ul><li>[Déployer votre infrastructure d’identité pour Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Configurations d’identité et d’accès aux appareils recommandées](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Gérer des appareils avec Intune](manage-devices-with-intune-overview.md)</li><li>[Évaluer et piloter Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Déployer une solution de protection des informations avec Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365](information-protection-deploy.md)</li></ul>|
 
 <a name="intune-enrollment"></a>
 ### <a name="intune-enrollment-options"></a>options d’inscription Intune
@@ -66,7 +67,7 @@ Découvrez tout ce que les architectes informatiques doivent savoir sur la conce
   
 | Élément | Description |
 |:-----|:-----|
-|[![Image miniature du modèle d’identité cloud Microsoft.](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf ) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf )  <br/> Mise à jour de novembre 2021 | Ce modèle contient :  <ul> <li> Introduction aux identités avec le cloud de Microsoft </li><li> Fonctions IDaaS d’Azure AD </li><li>Stratégies d’accès aux appareils et aux identités de Confiance zéro</li><li> Intégration de comptes Active Directory local Domain Services (AD DS) à Azure AD </li><li> Placer des composants d’annuaire dans Azure IaaS </li><li> Options AD DS pour les charges de travail dans Azure IaaS </li></ul><br/>  <br/>|
+|[![Image miniature du modèle d’identité cloud Microsoft.](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf ) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf )  <br/> Mise à jour de novembre 2021 | Ce modèle contient :  <ul> <li> Introduction aux identités avec le cloud de Microsoft </li><li> Fonctions IDaaS d’Azure AD </li><li>Stratégies d’accès aux appareils et aux identités de Confiance zéro</li><li> Intégration de comptes жергілікті Active Directory Domain Services (AD DS) à Azure AD </li><li> Placer des composants d’annuaire dans Azure IaaS </li><li> Options AD DS pour les charges de travail dans Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-it-architects"></a>Sécurité cloud Microsoft pour les architectes informatiques

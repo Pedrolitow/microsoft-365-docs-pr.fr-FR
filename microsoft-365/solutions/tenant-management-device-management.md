@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez l’option appropriée pour la gestion des appareils et des applications pour vos locataires Microsoft 365.
-ms.openlocfilehash: 827e3aa06e81e1d10bf4f6b83c4baeb5c143c206
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 5650c4e11258c621a420927a73aaba380802b07e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586069"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730240"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour votre Microsoft 365 pour les locataires d’entreprise
 

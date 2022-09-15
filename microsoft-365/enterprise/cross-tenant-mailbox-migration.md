@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 560178688950de7c66a2dcb6093912520a7aed38
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 3867be6d179ee8b014563c898562c3eaeb20546e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710453"
+ms.locfileid: "67731351"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
@@ -375,7 +375,7 @@ La soumission par lot de migration est également prise en charge à partir du n
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs du courrier local, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="do-we-need-to-update-remotemailboxes-in-source-on-premises-after-the-move"></a>Devons-nous mettre à jour remoteMailboxes dans la source localement après le déplacement ?
 
@@ -387,7 +387,7 @@ Les réunions se déplacent, mais l’URL de la réunion Teams ne se met pas à 
 
 ### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>Le contenu du dossier de conversation Teams migre-t-il entre locataires ?
 
-Non, le contenu du dossier de conversation Teams ne migre pas entre locataires. Lorsqu’une boîte aux lettres est migré entre locataires avec cette fonctionnalité, tous les e-mails, y compris les e-mails détenus pour litige, sont migrés. Une fois la migration réussie, la boîte aux lettres source est supprimée. Cela signifie qu’après la migration, en aucun cas (y compris les boîtes aux lettres en attente de litige ou de rétention), la boîte aux lettres source est disponible, détectable ou accessible dans le locataire source.
+Non, le contenu du dossier de conversation Teams ne migre pas entre locataires. Lorsqu’une boîte aux lettres est migré entre locataires avec cette fonctionnalité, tous les e-mails, y compris les e-mails détenus pour litige, sont migrés. Une fois la migration réussie, la boîte aux lettres source est supprimée. Cela signifie qu’après la migration, en aucun cas (y compris les boîtes aux lettres en attente de litige ou de rétention), la boîte aux lettres source est disponible, détectable ou accessible dans le locataire source. Actuellement, nous étudions un problème dans lequel, dans certains scénarios, les données de conversation Teams sont également conservées dans la boîte aux lettres, mais les données de conversation Teams ne sont pas migrées. Si les données de conversation Teams doivent être conservées, n’utilisez pas cette fonctionnalité pour migrer la boîte aux lettres.
 
 ### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>Comment puis-je voir simplement les déplacements qui sont des déplacements interlocataires, pas mes déplacements d’intégration et de désintégrage ?
 

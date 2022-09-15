@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher les risques de sécurité.
-ms.openlocfilehash: cc50842f303d300f4e5e60f2c661d0edb8cf2ef4
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 81a5b09f28d00bcde0915534e604429954774319
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709148"
+ms.locfileid: "67731097"
 ---
 # <a name="overview-of-the-device-security-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Sécurité des appareils dans Microsoft 365 Lighthouse
 
@@ -32,7 +32,7 @@ Vous pouvez accéder à la page Sécurité de l’appareil dans Microsoft 365 Li
 
 ## <a name="incidents-and-alerts-tab"></a>Onglet Incidents et alertes
 
-L’onglet Incidents et alertes fournit une vue multilocataire des incidents et des alertes signalés à partir d’appareils du réseau de vos clients. Par défaut, l’onglet affiche tous les incidents actifs observés au cours des 30 derniers jours. Vous pouvez sélectionner n’importe quel incident ou alerte pour ouvrir le volet d’informations afin d’afficher plus d’informations. Dans le volet d’informations, vous pouvez également résoudre l’incident ou l’alerte ou vous l’attribuer vous-même.
+L’onglet Incidents et alertes fournit une vue multilocataire des incidents et des alertes signalés à partir d’appareils du réseau de vos clients. Par défaut, l’onglet affiche tous les incidents actifs observés au cours des 30 derniers jours. Vous pouvez sélectionner n’importe quel incident ou alerte pour ouvrir le volet d’informations afin d’afficher plus d’informations. Dans le volet d’informations, vous pouvez également résoudre l’incident ou l’alerte, ou vous l’attribuer vous-même.
 
 :::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-incidents-and-alerts-tab.png" alt-text="Onglet Incidents et alertes de la page Sécurité de l’appareil.":::
 

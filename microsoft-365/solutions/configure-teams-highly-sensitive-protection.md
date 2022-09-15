@@ -11,6 +11,7 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- highpri
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
@@ -20,12 +21,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: b104828f5437b9389e83379984a40edf33340f33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
-ms.translationtype: HT
+ms.openlocfilehash: 50ff8cc6ed7705f0d2b3afb0709085ce0abe87b6
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947558"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731307"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 

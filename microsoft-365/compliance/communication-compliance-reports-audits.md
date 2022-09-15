@@ -1,6 +1,6 @@
 ---
 title: Utiliser les rapports et audits de conformité des communications
-description: En savoir plus sur l’utilisation des rapports et audits de conformité des communications.
+description: Mer informasjon sur l’utilisation de rapports et d’audits de conformité des communications.
 keywords: Microsoft 365, Microsoft Purview, conformité, conformité des communications
 f1.keywords:
 - NOCSH
@@ -19,18 +19,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4810f76d2d0fc7446c15c3c52fd6577e763918fe
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 13b5d83a5b5993e90938a774dff3063bc1da5f86
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686394"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731119"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Utiliser les rapports et audits de conformité des communications
 
 ## <a name="reports"></a>Rapports
 
-Le nouveau tableau **de bord Rapports** est l’emplacement central pour afficher tous les rapports de conformité des communications. Les widgets de rapport fournissent une vue rapide des insights les plus couramment nécessaires pour une évaluation globale de l’état des activités de conformité des communications. Les informations contenues dans les widgets de rapport ne sont pas exportables. Les rapports détaillés fournissent des informations détaillées sur des domaines spécifiques de conformité des communications et offrent la possibilité de filtrer, de regrouper, de trier et d’exporter des informations lors de l’examen. 
+Le tableau **de bord Rapports** est l’emplacement central pour afficher tous les rapports de conformité des communications. Pour afficher et gérer des rapports, les utilisateurs doivent être affectés au groupe de *rôles Visionneuses de conformité des communications* .
+
+Les widgets de rapport fournissent une vue rapide des insights les plus couramment nécessaires pour une évaluation globale de l’état des activités de conformité des communications. Les informations contenues dans les widgets de rapport ne sont pas exportables. Les rapports détaillés fournissent des informations détaillées sur des domaines spécifiques de conformité des communications et offrent la possibilité de filtrer, de regrouper, de trier et d’exporter des informations lors de l’examen.
 
 Pour le filtre de plage de dates, la date et l’heure des événements sont répertoriées en temps universel coordonné (UTC). Lors du filtrage des messages pour les rapports, la date/heure locale de l’utilisateur demandeur détermine les résultats en fonction de la conversion de la date/heure locale de l’utilisateur en UTC. Par exemple, si un utilisateur de l’heure d’été du Pacifique (PDT) filtre un rapport du 30/08/2021 au 31/08/2021 à 00:00, le rapport inclut des messages du 30/08/2021 de 07:00 UTC au 31/08/2021 07:00 UTC. Si le même utilisateur se trouvait à l’heure d’été de l’Est des États-Unis (EDT) lors du filtrage à 00:00, le rapport inclut les messages du 30/08/2021 04:00 UTC au 31/08/2021 04:00 UTC.
 
@@ -89,7 +91,7 @@ Utilisez l’option *Exporter* pour créer un fichier .csv contenant les détail
 
 - **Type d’informations sensibles par emplacement** (préversion) : passez en revue et exportez des informations sur la détection des types d’informations sensibles et les sources associées dans les stratégies de conformité des communications. Inclut le total global et la répartition spécifique des instances de type d’informations sensibles dans les sources configurées dans votre organisation. Les valeurs de chaque source tierce sont affichées dans des colonnes distinctes dans le fichier .csv. En voici quelques exemples :
 
-    - **E-mail** : types d’informations sensibles détectés dans les e-mails Exchange.
+    - **Email** : Types d’informations sensibles détectés dans les e-mails Exchange.
     - **Teams** : types d’informations sensibles détectés dans les canaux et les messages de conversation Microsoft Teams.
     - **Yammer** : types d’informations sensibles détectés dans les boîtes de réception, les publications, les conversations et les réponses Yammer.
     - **Sources tierces** : types d’informations sensibles détectés pour les activités associées à des connecteurs tiers configurés dans votre organisation. Pour afficher la répartition des sources tierces pour un type d’informations sensibles spécifique dans le rapport, placez la souris sur la valeur du type d’informations sensibles dans la colonne source tierce.
@@ -103,7 +105,7 @@ Créez des rapports personnalisés et examinez les détails des messages contenu
 
 Pour créer un rapport de détails de message, effectuez les étapes suivantes :
 
-1. Connectez-vous au portail de conformité Microsoft Purview avec un compte membre du groupe de *rôles Enquêteurs de conformité des communications* .
+1. Connectez-vous au portail de conformité Microsoft Purview avec un compte membre du groupe de *rôles Enquêteurs de conformité des communications*.
 2. Accédez à l’onglet **Stratégies** , sélectionnez une stratégie, puis **sélectionnez Créer un rapport de détails de message**.
 3. Dans le volet **Créer un rapport de détails du message** , entrez un nom pour le rapport dans le champ **Nom** du rapport.
 4. Dans **Choisir une plage de dates**, sélectionnez une *date de début* et une *date de fin* pour le rapport.
@@ -143,7 +145,7 @@ Dans certains cas, vous devez fournir des informations aux auditeurs de régleme
 > [!IMPORTANT]
 > L’audit doit être activé pour votre organisation avant l’enregistrement des événements de conformité des communications. Pour activer l’audit, consultez [Activer le journal d’audit](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). Lorsque les activités déclenchent des événements capturés dans le journal d’audit Microsoft 365, l’affichage de ces événements dans les stratégies de conformité des communications peut prendre jusqu’à 48 heures.
 
-Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Vous devez disposer des rôles *d’administrateur général* ou *d’administrateur de conformité* des communications pour exporter les activités de mise à jour. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
+Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Pour exporter les activités de mise à jour, vous devez disposer des rôles *de Administration Administration globale* ou de *conformité* des communications. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
 |**Champ**|**Détails**|
 |:-----|:-----|
@@ -152,7 +154,7 @@ Pour afficher les activités de mise à jour de la stratégie de conformité des
 | **Operations** | Opérations de mise à jour effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la principale source de données pour toutes les activités de mise à jour de stratégie. Toutes les activités de mise à jour sont enregistrées et séparées par des séparateurs de virgules. |
 
-Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Les rôles *Administrateur général* ou *Administrateur de conformité des communications* doivent vous être attribués pour exporter les activités de révision. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
+Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Pour exporter les activités de révision, vous devez disposer des rôles *Administration globale* ou Conformité des communications *Administration*. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
 |**Champ**|**Détails**|
 |:-----|:-----|

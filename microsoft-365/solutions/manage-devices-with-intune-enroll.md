@@ -13,18 +13,19 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 8ff6b86890f1c0b197f681c7029cc85bc90101d4
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 54e98ff38791b914467fe2dc97bf6f59f491190a
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579575"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727235"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>Étape 2. Inscrire des appareils dans Intune
 

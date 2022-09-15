@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-securecollab
@@ -16,12 +17,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment spécifier les organisations dans lesquelles vos utilisateurs peuvent avoir des comptes invités.
-ms.openlocfilehash: 8fa2134c59f42924224fc2161c16e26f92532aa1
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 65a3729b7a64c82b5d5261e92840272248f4cc42
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580092"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731483"
 ---
 # <a name="limit-organizations-where-users-can-have-guest-accounts"></a>Limiter les organisations où les utilisateurs peuvent avoir des comptes invités
 

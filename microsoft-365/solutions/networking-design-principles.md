@@ -9,16 +9,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-identity-device-management
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: fccc7c7eb84b55ab974e687cb90672d0775f1209
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b9e6069165d39e5e27d47c69e1cfba08b1a94f4c
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581287"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730372"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>Mise en réseau (vers le cloud) : point de vue d’un architecte
 

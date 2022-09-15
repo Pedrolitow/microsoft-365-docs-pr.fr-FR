@@ -9,16 +9,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 6475d42cb9a4d0aa5c57cf3cf6f28f7889b59864
-ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
+ms.openlocfilehash: 5e45bf72e7136eade959d940ce4db220f76fffe6
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67634753"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731185"
 ---
 # <a name="microsoft-365-solutions-for-the-healthcare-industry"></a>Solutions Microsoft 365 pour le secteur de la santé
 

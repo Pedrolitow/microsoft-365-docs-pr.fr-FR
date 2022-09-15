@@ -1,6 +1,6 @@
 ---
 title: Effectuer des actions de réponse sur un appareil dans Microsoft Defender pour point de terminaison
-description: Effectuez des actions de réponse sur un appareil, telles que l’isolation des appareils, la collecte d’un package d’investigation, la gestion des balises, l’exécution de l’analyse av et la restriction de l’exécution de l’application.
+description: Effectuez des actions de réponse sur un appareil, telles que l’isolation des appareils, la collecte d’un package d’investigation, la gestion des balises, l’exécution d’une analyse av et la restriction de l’exécution de l’application.
 keywords: répondre, isoler, isoler l’appareil, collecter le package d’investigation, centre d’actions, restreindre, gérer les balises, analyser av, restreindre l’application
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1fef5cebe54ce739604ce0084723b67a7504877b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2f5ef49d9b8fd1d558fb0b646295615d9352b915
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694036"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728645"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -126,7 +126,7 @@ Le package contient les dossiers suivants :
 |Tâches planifiées|Contient un fichier .CSV répertoriant les tâches planifiées, qui peut être utilisé pour identifier les routines exécutées automatiquement sur un appareil choisi afin de rechercher le code suspect qui a été configuré pour s’exécuter automatiquement.|
 |Journal des événements de sécurité|Contient le journal des événements de sécurité, qui contient des enregistrements d’activité de connexion ou de déconnexion, ou d’autres événements liés à la sécurité spécifiés par la stratégie d’audit du système. <p><div class="alert"><b>NOTE:</b> Ouvrez le fichier journal des événements à l’aide de l’Observateur d’événements.</div>|
 |Services|Contient un fichier .CSV qui répertorie les services et leurs états.|
-|Sessions SMB (Windows Server Message Block)|Répertorie l’accès partagé aux fichiers, imprimantes et ports série et communications diverses entre les nœuds d’un réseau. Cela peut aider à identifier l’exfiltration de données ou le mouvement latéral. <p> Contient des fichiers pour SMBInboundSessions et SMBOutboundSession. <p> <div class="alert"><b>NOTE:</b> S’il n’y a aucune session (entrante ou sortante), vous obtenez un fichier texte qui vous indique qu’aucune session SMB n’a été trouvée.</div>|
+|Sessions SMB (Windows Server Message Block)|Répertorie l’accès partagé aux fichiers, imprimantes et ports série et communications diverses entre les nœuds d’un réseau. Cela peut aider à identifier l’exfiltration de données ou le mouvement latéral. <p> Contient des fichiers pour SMBInboundSessions et SMBOutboundSession. <p> <div class="alert"><b>NOTE:</b> S’il n’existe aucune session (entrante ou sortante), vous obtenez un fichier texte qui vous indique qu’aucune session SMB n’a été trouvée.</div>|
 |Informations système|Contient un fichier SystemInformation.txt qui répertorie les informations système telles que la version du système d’exploitation et les cartes réseau.|
 |Répertoires temporaires|Contient un ensemble de fichiers texte qui répertorie les fichiers situés dans %Temp% pour chaque utilisateur du système. <p> Cela peut aider à suivre les fichiers suspects qu’un attaquant peut avoir déposés sur le système. <p> <div class="alert"><b>NOTE:</b> Si le fichier contient le message suivant : « Le système ne trouve pas le chemin spécifié », cela signifie qu’il n’y a pas de répertoire temporaire pour cet utilisateur, et peut-être parce que l’utilisateur ne s’est pas connecté au système.</div>|
 |Utilisateurs et groupes|Fournit une liste de fichiers qui représentent chacun un groupe et ses membres.|
@@ -185,7 +185,7 @@ Lorsqu’une application est restreinte, la notification suivante s’affiche po
 Selon la gravité de l’attaque et la sensibilité de l’appareil, vous pouvez isoler l’appareil du réseau. Cette action peut aider à empêcher l’attaquant de contrôler l’appareil compromis et d’effectuer d’autres activités telles que l’exfiltration de données et le mouvement latéral.
 
 > [!IMPORTANT]
-> - L’isolation des appareils du réseau n’est actuellement pas prise en charge pour les appareils exécutant macOS ou Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md).
+> - L’isolation des appareils du réseau n’est actuellement pas prise en charge pour les appareils exécutant macOS ou Linux. Pour macOS, utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md).
 > - L’isolation complète est disponible pour les appareils exécutant Windows 11, Windows 10, version 1703 ou ultérieure, Windows Server 2022, Windows Server 2019 et Windows Server 2016.
 > - L’isolation sélective est disponible pour les appareils exécutant Windows 10, version 1709 ou ultérieure et Windows 11.
 > - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouvent derrière un tunnel VPN complet ne pourront pas atteindre le service cloud Microsoft Defender pour point de terminaison une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionné pour Microsoft Defender pour point de terminaison et le trafic lié à la protection cloud de l’Antivirus Microsoft Defender.

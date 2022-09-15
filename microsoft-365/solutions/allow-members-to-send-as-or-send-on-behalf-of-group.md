@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
@@ -19,12 +20,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Découvrez comment autoriser les membres du groupe à envoyer des e-mails en tant que groupe Microsoft 365 ou à envoyer des e-mails au nom d’un groupe Microsoft 365.
-ms.openlocfilehash: 73d5e8ea27294b78b6e4c626ac2adba15f000967
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d6e334a2fffcc1be760ccef045a50d1e9b154bc4
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681208"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728421"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou pour le compte d’un groupe
 
@@ -83,7 +84,7 @@ Cette section explique comment autoriser les utilisateurs à envoyer des e-mails
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Mer informasjon sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 

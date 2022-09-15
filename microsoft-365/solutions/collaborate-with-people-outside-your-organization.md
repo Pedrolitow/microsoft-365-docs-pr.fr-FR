@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-securecollab
@@ -19,12 +20,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment configurer des applications Microsoft 365 comme Teams, OneDrive et SharePoint pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 4bfe20d2c0520d9b8be402066a1a9a88a20a8acb
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 3151f6c00795a9cab6de253869e2c9a82a2fb611
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586179"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730965"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborer avec des personnes extérieures à votre organisation
 

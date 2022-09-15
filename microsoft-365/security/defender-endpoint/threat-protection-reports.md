@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2e9fae2aa286204c51fdb485b8dd1dccac765110
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 11520c0ef4e565065e41d91bdfb300069618b83c
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689226"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727958"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison
 
@@ -91,4 +91,4 @@ Par exemple, pour afficher des données sur les alertes de gravité élevée uni
 
 ## <a name="related-topic"></a>Rubrique connexe
 
-- [Rapport d’intégrité et de conformité des appareils](machine-reports.md)
+- [Rapport d’intégrité et de conformité des appareils](device-health-reports.md)

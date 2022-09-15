@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso Corporation a répondu à la pandémie du COVID-19 et a conçu son infrastructure d’installation et de mise à jour logicielle pour le travail hybride.
-ms.openlocfilehash: f856113b3e71220bedf06f9b1dd5ea44e422d81d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 557d9b7bbfab2ea6db65fb1e033b190436590346
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691252"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730482"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Réponse contoso-19 et prise en charge du travail hybride
 
@@ -47,7 +48,7 @@ Une fois que les modifications initiales ont été apportées pour prendre en ch
 - Toujours sur place.
 - Combinaison d’éléments sur site et distants.
 
-Les fonctionnalités d’identité, de sécurité et de conformité de Microsoft 365 sont conçues pour Confiance nulle et fonctionner indépendamment de l’emplacement de l’utilisateur et de son appareil. Pour plus d’informations, consultez [Confiance nulle](https://www.microsoft.com/security/business/zero-trust).
+Les fonctionnalités d’identité, de sécurité et de conformité de Microsoft 365 sont conçues pour Confiança zero et fonctionner indépendamment de l’emplacement de l’utilisateur et de son appareil. Pour plus d’informations, consultez [Confiança zero](https://www.microsoft.com/security/business/zero-trust).
 
 Toutefois, la gestion des nouvelles installations et mises à jour des logiciels dépend de l’emplacement de l’appareil, car le logiciel à installer peut provenir d’une source locale ou Internet. Les architectes informatiques de Contoso ont conçu leurs nouvelles installations et mises à jour de l’infrastructure en fonction de l’emplacement de l’appareil, plutôt que du worker.
 

@@ -10,14 +10,15 @@ ms.service: microsoft-365-enterprise
 ms.date: 02/11/2022
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 1c0b45a8e6d1c00ad86ddf7da303c8254577326d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 30a778f554ae694a0741f9b0f7dcc26fc8d9f3b4
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582073"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730834"
 ---
 # <a name="microsoft-365-and-microsoft-teams-infographics-for-your-users"></a>Infographies Microsoft 365 et Microsoft Teams pour vos utilisateurs
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bd81c53bd392e161325fa3bc085f97ae15a493d0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6eea1b25da4a81f17ee1f22322f69dcd5088548d
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704587"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730526"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité des Microsoft Defender pour point de terminaison sur Linux
 
@@ -179,7 +179,7 @@ Les journaux de diagnostic sont collectés uniquement avec le consentement de l�
 
 - Tous les fichiers sous */var/log/microsoft/mdatp*
 - Sous-ensemble de fichiers sous */etc/opt/microsoft/mdatp* créés et utilisés par Defender pour point de terminaison sur Linux
-- Journaux d’installation et de désinstallation du produit sous */var/log/microsoft_mdatp_\*.log*
+- Journaux d’installation et de désinstallation du produit sous /var/log/microsoft/mdatp/*.log
 
 ### <a name="optional-diagnostic-data"></a>Données de diagnostic facultatives
 

@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-overview
 - m365solution-collabgovernance
@@ -17,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les meilleures pratiques de gouvernance pour les outils de collaboration Microsoft 365, notamment Groupes Microsoft 365, Teams, SharePoint et Yammer.
-ms.openlocfilehash: 476463c91765979524bea5ec096c29cffce19f56
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: d67774bbf76665f7d278339e6dd24d0e9f195c6c
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579686"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730548"
 ---
 # <a name="what-is-collaboration-governance"></a>Qu'est-ce que la gouvernance de collaboration ?
 

@@ -13,18 +13,19 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 1ba63a147821da6e5d62629cff9083d688a6166a
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: ff626c2e8ef5d4a47bf8e3a206064aca3268b86e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584681"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730394"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Étape 5. Déployer des profils d’appareil dans Microsoft Intune
 
@@ -72,7 +73,7 @@ Le tableau suivant décrit l’illustration.
 Lors de la personnalisation des profils de configuration pour votre organisation, utilisez les instructions suivantes :
 - Simplifiez votre stratégie de gouvernance de la sécurité en faisant en sorte que le nombre global de stratégies soit réduit.
 - Regroupez les paramètres dans les catégories répertoriées ci-dessus ou dans des catégories utiles pour votre organisation.
-- Lorsque vous déplacez des contrôles de sécurité d’objets stratégie de groupe (GPO) vers des profils de configuration Intune, déterminez si les paramètres configurés par chaque objet de stratégie de groupe sont toujours pertinents et nécessaires pour contribuer à votre stratégie de sécurité cloud globale. L’accès conditionnel et les nombreuses stratégies qui peuvent être configurées dans les services cloud, y compris Intune, fournissent une protection plus sophistiquée que celle qui peut être configurée dans un environnement local où les objets de stratégies de groupe (GPO) personnalisés ont été conçus à l’origine.
+- Lorsque vous déplacez des contrôles de sécurité de نهج المجموعة Objects (GPO) vers Intune profils de configuration, déterminez si les paramètres configurés par chaque objet de stratégie de groupe sont toujours pertinents et nécessaires pour contribuer à votre stratégie de sécurité cloud globale. L’accès conditionnel et les nombreuses stratégies qui peuvent être configurées dans les services cloud, y compris Intune, fournissent une protection plus sophistiquée que celle qui peut être configurée dans un environnement local où les objets de stratégies de groupe (GPO) personnalisés ont été conçus à l’origine.
 - Utilisez l’analyse des stratégies de groupe pour comparer et mapper vos paramètres des objets de stratégie de groupe actuels sur les fonctionnalités au sein de Microsoft Endpoint Manager. Voir [Analyser vos objets de stratégie de groupe (GPO) locaux à l’aide de l’analyse de stratégie de groupe](/mem/intune/configuration/group-policy-analytics) dans Microsoft Endpoint Manager.
 - Lorsque vous utilisez des profils de configuration personnalisés, veillez à utiliser les instructions ci-après : [Créer un profil avec des paramètres personnalisés dans Intune](/mem/intune/configuration/custom-settings-configure).
 

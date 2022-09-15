@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -17,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Formez vos utilisateurs et veillez à ce que les problèmes soient traités rapidement.
-ms.openlocfilehash: 04da36703cdcd94f0e32a841599ba0314829bd09
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: dafa404395f9b494121ea8086cc1f68576350cdf
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586135"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728491"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Étape 6 : former vos employés et répondre aux commentaires sur l’utilisation
 

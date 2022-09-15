@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom:
@@ -16,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment créer votre plan de gouvernance de collaboration
-ms.openlocfilehash: 2844239556a4ef9e07bbcd00dedc7a11132a4a5f
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 82b1d58fe11e96a305b5658024ed61a372841636
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583041"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727741"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Créer votre plan de gouvernance de collaboration
 
@@ -81,7 +82,7 @@ De nombreuses décisions de gouvernance peuvent être implémentées en activant
 
 Traditionnellement, les équipes de gouvernance ont créé de longs documents décrivant chaque décision de gouvernance. Malheureusement, ces longs documents ont rarement été lus, ce qui signifie que les exigences de gouvernance qui s’appuient sur les personnes pour appliquer rarement travaillé. Essayez d’éviter de créer des documents longs destinés à plusieurs audiences lorsque vous réfléchissez à la façon de communiquer vos décisions de gouvernance clés. Au lieu de cela, pensez à ces alternatives :
 
-- **Incorporez les décisions de gouvernance directement dans les solutions que vous créez**. Si vous souhaitez vous assurer que les informations sensibles sont protégées dans Microsoft 365, implémentez des étiquettes de confidentialité pour vous assurer que vos utilisateurs n’exposent pas accidentellement des informations qu’ils ne devraient pas exposer accidentellement. Bloquez les applications où vous ne pouvez pas fournir la protection appropriée. [En savoir plus sur les étiquettes de confidentialité](../compliance/sensitivity-labels.md).
+- **Incorporez les décisions de gouvernance directement dans les solutions que vous créez**. Si vous souhaitez vous assurer que les informations sensibles sont protégées dans Microsoft 365, implémentez des étiquettes de confidentialité pour vous assurer que vos utilisateurs n’exposent pas accidentellement des informations qu’ils ne devraient pas exposer accidentellement. Bloquez les applications où vous ne pouvez pas fournir la protection appropriée. [Mer informasjon sur les étiquettes de confidentialité](../compliance/sensitivity-labels.md).
 
 - **Renforcer avec l’entraînement**. Adaptez des solutions telles que les [parcours d’apprentissage Microsoft 365](/office365/customlearning) pour vous assurer que les attentes spécifiques à votre organisation sont renforcées par une formation fournie par Microsoft.
 
@@ -117,7 +118,7 @@ Les objectifs de résultats opérationnels doivent être le principal moteur de 
 
 ### <a name="define-roles-and-responsibilities"></a>Définir les rôles et les responsabilités
 
-En plus de votre équipe de gouvernance, il existe plusieurs autres rôles ou équipes clés que vous voudrez envisager de positionner pour réussir avec Microsoft 365. Certains rôles peuvent être combinés ou remplis par la même personne et d’autres peuvent ne pas convenir à toutes les organisations. La plupart des organisations ont un sponsor exécutif pour Microsoft 365 dans son ensemble et certaines ont également un comité directeur ou une équipe pour Microsoft 365 dans son ensemble ou simplement pour l’intranet. [En savoir plus sur les rôles d’administrateur complets et les autorisations disponibles dans Microsoft 365](../admin/add-users/admin-roles-page.md).
+En plus de votre équipe de gouvernance, il existe plusieurs autres rôles ou équipes clés que vous voudrez envisager de positionner pour réussir avec Microsoft 365. Certains rôles peuvent être combinés ou remplis par la même personne et d’autres peuvent ne pas convenir à toutes les organisations. La plupart des organisations ont un sponsor exécutif pour Microsoft 365 dans son ensemble et certaines ont également un comité directeur ou une équipe pour Microsoft 365 dans son ensemble ou simplement pour l’intranet. [Mer informasjon sur les rôles d’administrateur complets et les autorisations disponibles dans Microsoft 365](../admin/add-users/admin-roles-page.md).
 
 ### <a name="revisit-as-business-and-technology-changes"></a>Revisiter à mesure que l’entreprise et la technologie évoluent
 
@@ -137,7 +138,7 @@ En fin de compte, le succès de vos efforts de planification de la gouvernance d
 
 [Recommandations en matière de planification de la gouvernance de collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
-[Gouvernance dans microsoft Cloud Adoption Framework pour Azure](/azure/cloud-adoption-framework/govern)
+[Gouvernance dans microsoft クラウド導入フレームワーク pour Azure](/azure/cloud-adoption-framework/govern)
 
 [Vue d’ensemble de la gouvernance SharePoint](/sharepoint/governance-overview)
 

@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 09/13/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -16,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 49be12c14f04cc441165aff500479760cdc24c02
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 37d02195cc3acf9dfbdcae55ceb9534b6d68d722
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586399"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727955"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré
 
@@ -49,8 +50,7 @@ La vérification ou la vérification de l’ajout d’un appareil au service est
 
 Exécutez le script PowerShell suivant sur un appareil nouvellement intégré pour vérifier qu’il signale correctement au service Defender pour point de terminaison.
 
-1. Créez un dossier : « C:\test-MDATP-test ».
-2. Ouvrez une invite de ligne de commande avec élévation de privilèges sur l’appareil et exécutez le script :
+1. Ouvrez une invite de ligne de commande avec élévation de privilèges sur l’appareil et exécutez le script :
 
    1. Accéder à **Démarrer** et taper **cmd**.
 
@@ -58,7 +58,7 @@ Exécutez le script PowerShell suivant sur un appareil nouvellement intégré po
 
       :::image type="content" source="images/run-as-admin.png" alt-text="Menu Démarrer pointant vers Exécuter en tant qu’administrateur" lightbox="images/run-as-admin.png":::
     
-3. À l’invite, copiez et exécutez la commande suivante :
+2. À l’invite, copiez et exécutez la commande suivante :
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez la protection des informations dans Microsoft 365 pour les réglementations de confidentialité des données telles que le RGPD et le CCPA (California Consumer Privacy Act), notamment Microsoft Teams, SharePoint et le courrier électronique.
-ms.openlocfilehash: aea343d3985c407cd0c9bb9b8f518ac3ce23506c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: dd066d3240be5fb3472491b0caa45ea29301af0f
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576966"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731571"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 
@@ -90,7 +91,7 @@ Cet article décrit brièvement ce que les réglementations sur la confidentiali
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
-Les réglementations sur la confidentialité des données imposent un certain nombre de contrôles de protection des informations personnelles qui peuvent être utilisés dans votre environnement, y compris plus de 40 contrôles de protection des informations sur les quatre réglementations sur la confidentialité des données dans notre exemple de RGPD, la Loi sur la protection des consommateurs de Californie (CCPA), HIPAA-HITECH (États-Unis loi sur la confidentialité des soins de santé) et la Loi brésilienne sur la protection des données (LGPD).
+Les réglementations sur la confidentialité des données imposent un certain nombre de contrôles de protection des informations personnelles qui peuvent être utilisés dans votre environnement, y compris plus de 40 contrôles pour la protection des informations sur les quatre réglementations sur la confidentialité des données dans notre exemple de RGPD, la Loi sur la protection des consommateurs de Californie (CCPA), HIPAA-HITECH (Estados Unidos loi sur la confidentialité des soins de santé) et la Loi brésilienne sur la protection des données (LGPD).
 
 Pour plus d’informations, consultez [Protéger les informations soumises à la réglementation sur la confidentialité des données dans votre organisation](information-protection-deploy-protect-information.md).
 
