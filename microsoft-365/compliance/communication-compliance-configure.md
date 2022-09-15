@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c641a8699f59454bcc756cb0910f18a125d953e6
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: a63f93062a5941dbbb30202f6bb224de4ee10ee6
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787669"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710563"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -54,15 +54,37 @@ Si vous n’avez pas de plan Office 365 Entreprise E5 et que vous souhaitez essa
 > [!NOTE]
 > Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contiennent les mêmes fonctionnalités de conformité ou d’autres.
 
-## <a name="recommended-actions"></a>Actions recommandées
+## <a name="recommended-actions-preview"></a>Actions recommandées (préversion)
 
-Les actions recommandées peuvent aider votre organisation à prendre en main les fonctionnalités de conformité des communications et à tirer le meilleur parti de vos stratégies existantes. Incluses dans la page **Stratégies** , les actions recommandées fournissent des insights et résument les types d’informations sensibles et les activités de contenu inappropriées dans les communications de votre organisation. Les insights sont pris en charge par la [classification des données](/microsoft-365/compliance/data-classification-overview) et l’application d’étiquettes de confidentialité, d’étiquettes de rétention et de classification des types d’informations sensibles. Ces informations n’incluent pas d’informations d’identification personnelle (PII) pour les utilisateurs de votre organisation.
+Les actions recommandées peuvent aider votre organisation à prendre rapidement en main la conformité des communications. Incluses dans la page **Vue d’ensemble** , les actions recommandées vous aideront à suivre les étapes de configuration et de déploiement des stratégies.
+
+Les recommandations suivantes sont disponibles pour vous aider à prendre en main ou à optimiser votre configuration de conformité des communications :
+
+- **Découvrez la conformité des communications** : avant de configurer des éléments, consultez notre documentation officielle pour en savoir plus sur la conformité des communications au sein de votre organisation, planifier et déployer cette conformité.
+- **Attribuez des autorisations pour vous assurer que votre équipe peut effectuer son travail** : assurez-vous que seules les parties prenantes appropriées peuvent accéder à la solution, en affectant aux membres de l’équipe la responsabilité de gérer les fonctionnalités de conformité des communications et d’examiner et d’examiner les alertes.
+- **Créez des groupes de distribution pour les utilisateurs dont vous souhaitez détecter les communications** : nous vous recommandons de créer des groupes de distribution contenant les utilisateurs qui seront inclus dans les stratégies de conformité des communications.
+- **Créez votre première stratégie pour commencer à détecter les communications** : pour examiner les violations de conformité réglementaire potentielles, vous devez d’abord configurer une stratégie qui détecte les violations potentielles dans les communications internes et/ou externes de votre organisation.
+- **Passez en revue les alertes pour examiner les messages détectés et prendre des mesures** : les messages qui correspondent aux conditions d’une stratégie déclenchent des alertes qui fournissent un contexte autour d’une violation de stratégie afin que vous puissiez examiner et prendre des mesures si nécessaire.
+- **Passez en revue les rapports pour obtenir des insights rapides sur les performances des stratégies** : obtenez des insights rapides sur les performances de vos stratégies, affichez des rapports détaillés pour aller plus loin et exportez les résultats pour une analyse plus approfondie.
+
+Chaque action recommandée incluse dans cette expérience a trois attributs :
+
+- **Action** : nom et description de l’action recommandée.
+- **Recommandé, obligatoire ou facultatif** : indique si l’action recommandée est fortement recommandée, obligatoire ou facultative pour que les fonctionnalités de conformité des communications fonctionnent comme prévu.
+- **Durée estimée :** durée estimée pour effectuer l’action recommandée en minutes.
+
+Sélectionnez une recommandation dans la liste pour commencer à configurer la conformité des communications. Chaque action recommandée vous guide à travers les activités requises pour la recommandation, y compris les exigences, à quoi s'attendre et l'impact de la configuration de la fonctionnalité dans votre organisation. Certaines actions recommandées sont automatiquement marquées comme terminées une fois configurées. Si ce n’est pas le cas, vous devez sélectionner manuellement l’action comme terminée une fois configurée.
+
+Également inclus dans la page Stratégies, les insights sur les actions recommandées permettent de résumer les types d’informations sensibles actuels et les violations potentielles de la conformité réglementaire dans les communications de votre organisation. Les insights sont pris en charge par la [classification des données](/microsoft-365/compliance/data-classification-overview) et l’application d’étiquettes de confidentialité, d’étiquettes de rétention et de classification des types d’informations sensibles. Ces informations sont agrégées et n’incluent aucune information d’identification personnelle (PII) pour les utilisateurs de votre organisation.
 
 ![Actions recommandées pour la conformité des communications.](../media/communication-compliance-recommended-actions.png)
 
-L’activité dans les messages contenant du contenu inapproprié est agrégée par [type de classifieur](/microsoft-365/compliance/communication-compliance-policies#classifiers) à partir de stratégies existantes qui utilisent le modèle de contenu inapproprié ou des stratégies personnalisées qui utilisent des classifieurs pour du contenu inapproprié. Examinez les alertes de ces messages dans le tableau de bord Des alertes pour vos stratégies.
+L’activité dans les messages est agrégée par [type de classifieur](/microsoft-365/compliance/communication-compliance-policies#classifiers) à partir de stratégies existantes qui utilisent le modèle *de stratégie de texte inapproprié* ou les stratégies personnalisées qui utilisent des classifieurs. Examinez les alertes de ces messages dans le **tableau de bord Des alertes** pour vos stratégies.
 
-L’activité impliquant des [types d’informations sensibles](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) est détectée dans les messages couverts par les stratégies existantes et pour les messages qui ne sont pas couverts par les stratégies existantes. Les insights sont agrégés pour tous les types d’informations sensibles, y compris ceux que votre organisation n’a pas définis précédemment dans une stratégie de conformité des communications existante. Utilisez ces informations pour créer une stratégie de conformité des communications ou mettre à jour des stratégies existantes.
+L’activité impliquant des [types d’informations sensibles](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) est détectée dans les messages couverts par les stratégies existantes et pour les messages qui ne sont pas couverts par les stratégies existantes. Les messages d’insight qui ne sont pas couverts par les stratégies existantes ne peuvent pas être examinés et corrigés. Une nouvelle stratégie doit être créée pour détecter et corriger une activité similaire dans les messages futurs. Les insights sont agrégés pour tous les types d’informations sensibles, y compris ceux que votre organisation n’a pas définis précédemment dans une stratégie de conformité des communications existante. Utilisez ces informations pour créer une stratégie de conformité des communications ou mettre à jour des stratégies existantes. Après avoir créé une stratégie, les alertes de messages pour cette stratégie peuvent correspondre ou non à un nombre égal de messages identifiés dans un insight similaire. Votre stratégie peut avoir des conditions différentes, un nombre différent d’utilisateurs dans l’étendue et détecte uniquement l’activité de message qui se produit une fois la stratégie active.
+
+>[!TIP]
+>Vous ne souhaitez pas voir les insights d’action recommandés ? Ouvrez une demande avec pomoc techniczna firmy Microsoft pour désactiver l’affichage de ces widgets d’insights pour votre organisation.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Étape 1 (obligatoire) : activer les autorisations pour la conformité des communications
 

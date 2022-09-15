@@ -11,18 +11,18 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
-search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
 description: Microsoft Defender pour Office 365 clients E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque e-mail avec la page d’entité de messagerie.
-ms.openlocfilehash: a6417173e25342fdef483bc38da64d6c1c48b96e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: eed9d53a290d4c8b22de533d6d66edd011806861
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598778"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711574"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -122,7 +122,7 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
 
 - *Remplacement principal : Source* : le remplacement principal et la source font référence au paramètre client ou utilisateur qui a eu un impact sur la remise de l’e-mail, en remplaçant l’emplacement de remise donné par le système (conformément à la technologie de menace et de détection). Par exemple, il peut s’agir d’un e-mail bloqué en raison d’une règle de transport configurée par le locataire ou d’un e-mail autorisé en raison d’un paramètre d’utilisateur final pour les expéditeurs approuvés. 
 
-- *Toutes les substitutions* : toutes les substitutions font référence à la liste des remplacements (paramètres client ou utilisateur) appliqués à l’e-mail, ce qui peut avoir ou non eu un impact sur la remise d’un e-mail. Par exemple, si une règle de transport configurée par le locataire, ainsi qu’un paramètre de stratégie configuré par le locataire (par exemple, à partir de la liste d’autorisations de locataire), est appliquée à un e-mail, les deux sont répertoriées dans ce champ. Vous pouvez vérifier le champ de remplacement principal pour déterminer le paramètre qui a impacté la remise de l’e-mail. 
+- *Toutes les substitutions* : toutes les substitutions font référence à la liste des remplacements (paramètres client ou utilisateur) appliqués à l’e-mail, ce qui peut avoir ou non eu un impact sur la remise d’un e-mail. Par exemple, si une règle de transport configurée par le locataire, ainsi qu’un paramètre de stratégie configuré par le locataire (par exemple, à partir des listes de blocs d’autorisation du locataire), est appliquée à un e-mail, les deux sont répertoriées dans ce champ. Vous pouvez vérifier le champ de remplacement principal pour déterminer le paramètre qui a impacté la remise de l’e-mail. 
 
 - *Niveau de plainte en bloc (BCL)* : niveau de réclamation en bloc (BCL) du message. Une bcl plus élevée indique qu’un message électronique en bloc est plus susceptible de générer des plaintes (résultat naturel si l’e-mail est susceptible d’être du courrier indésirable).
 
@@ -130,11 +130,11 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
 
 - *Type de client* : indique le type de client à partir duquel l’e-mail a été envoyé comme REST.
 
-- *Transfert* : pour les scénarios avec autoforwaridng, il indique l’utilisateur de transfert ainsi que le type de transfert comme le transfert ETR ou SMTP. 
+- *Transfert* : pour les scénarios avec transfert automatique, il indique l’utilisateur de transfert ainsi que le type de transfert comme le transfert ETR ou SMTP.
 
 - *Liste de distribution* : affiche la liste de distribution, si le destinataire a reçu l’e-mail en tant que membre de la liste. Il affiche la liste de distribution de niveau supérieur si des listes de distribution imbriquées sont impliquées.  
 
-- *À, Cc* : indique les adresses répertoriées dans les champs À, Cc d’un e-mail. Les informations contenues dans ces champs sont limitées à 5 000 caractères. 
+- *À, Cc* : indique les adresses répertoriées dans les champs À, Cc d’un e-mail. Les informations contenues dans ces champs sont limitées à 5 000 caractères.
 
 - *Nom de domaine* : nom de domaine de l’expéditeur.
 
@@ -158,7 +158,7 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
 - DomainKeys Identified Mail (**DKIM)** :
   - Passe : indique la vérification DKIM du message passé.
   - Échec (raison) : indique la vérification DKIM du message ayant échoué et pourquoi. Par exemple, parce que le message n’a pas été signé ou que la signature n’a pas été vérifiée.
-  - Aucun : indique que le message n’a pas été signé. Cela n’indique pas forcément que le domaine a un enregistrement DKIM ou que l’évaluation de l’enregistrement DKIM ne donne pas de résultat, mais simplement que ce message n’a pas été signé.
+  - Aucun : indique que le message n’a pas été signé. Cela peut indiquer ou non que le domaine a un enregistrement DKIM ou que l’enregistrement DKIM n’est pas évalué à un résultat, mais seulement que ce message n’a pas été signé.
 
 - Authentification, création de rapports et conformité des messages basée sur le domaine (**DMARC**) :
   - Passe : indique la vérification DMARC pour le message passé.
@@ -169,9 +169,9 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
 *Authentification composite* : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification par e-mail comme SPF, DKIM et DMARC, pour déterminer si le message est authentique. Il utilise le domaine *From :* du courrier comme base d’évaluation.
 ## <a name="actions-into-email-entity-page"></a>Actions dans Email page d’entité
 
-Les équipes de sécurité peuvent désormais effectuer des actions de courrier électronique telles que la suppression réversible et la suppression définitive, passer au courrier indésirable, passer à la boîte de réception, déclencher une enquête, envoyer à Microsoft pour révision en ligne, et ainsi de suite. **Les** actions de bloc au niveau du locataire, telles que le fichier et l’URL ou l’expéditeur, peuvent également être triées à partir de Email page d’entité.  
+Les équipes de sécurité peuvent désormais effectuer des actions de courrier électronique telles que la suppression réversible et la suppression définitive, passer au courrier indésirable, passer à la boîte de réception, déclencher une enquête, envoyer à Microsoft pour révision en ligne, et ainsi de suite. **Les** actions de bloc au niveau du locataire, telles que le fichier et l’URL ou l’expéditeur, peuvent également être déclenchées à partir de la page d’entité Email.  
 
-Vous pourrez cliquer sur **Effectuer des actions** dans le coin supérieur droit de la page d’entité, ce qui ouvre l’Assistant Action pour vous permettre de sélectionner l’action spécifique dont vous avez besoin. 
+Vous serez en mesure de sélectionner **Effectuer des actions** dans le coin supérieur droit de la page d’entité, ce qui ouvre l’Assistant Action pour vous permettre de sélectionner l’action spécifique dont vous avez besoin. 
 ![Effectuez une action à partir de la page d’entité.](../../media/Take-ActionWizard-Email-entity.png)
 
 Dans l’Assistant Action, vous pouvez effectuer des actions par e-mail, des soumissions de courrier électronique, bloquer le domaine de l’expéditeur et de l’expéditeur, des actions d’investigation et une approbation en deux étapes (ajouter à la correction) dans le même volet latéral. Ceci suit un flux cohérent pour faciliter l’utilisation. L’Assistant Action utilise le même système que celui utilisé par les actions de l’Explorateur (pour les actions de suppression, d’envoi et d’investigation), par exemple. Vous pourrez voir et suivre ces actions dans le [centre d’action unifié](https://security.microsoft.com/action-center/history) (pour les e-mails supprimés), dans le [portail d’envoi](https://security.microsoft.com/reportsubmission) (pour les soumissions) et dans la page [Autoriser/Bloquer les listes](https://security.microsoft.com/tenantAllowBlockList) de locataires pour (blocs TABL). 
@@ -184,7 +184,7 @@ Consultez [les autorisations](permissions-microsoft-365-security-center.md) requ
  
 ### <a name="email-summary-panel"></a>Email panneau récapitulatif
 
-Le panneau récapitulatif de l’e-mail est une vue récapitulative de la page d’entité de messagerie complète. Il contient des détails standardisés sur l’e-mail (par exemple, les détections), ainsi que des informations spécifiques au contexte (par exemple, pour les métadonnées de mise en quarantaine ou d’envoi). Le panneau récapitulatif de l’e-mail remplace les menus volants traditionnels Détections en temps réel, Explorateur de menaces, Soumissions et Rapports.
+Le panneau récapitulatif de l’e-mail est une vue récapitulative de la page d’entité de messagerie complète. Il contient des détails standardisés sur l’e-mail (par exemple, les détections), ainsi que des informations spécifiques au contexte (par exemple, pour les métadonnées de mise en quarantaine ou de soumission). Le panneau récapitulatif de l’e-mail remplace les menus volants traditionnels Détections en temps réel, Explorateur de menaces, Soumissions et Rapports.
 
 > [!div class="mx-imgBorder"]
 > ![Ouvrez le lien d’entité d’e-mail.](../../media/open-email-entity-mdo.png)
@@ -198,17 +198,17 @@ Le panneau récapitulatif de l’e-mail est divisé en sections suivantes :
 
 - Email détails : contient des informations sur *les propriétés* d’e-mail telles que le nom de l’expéditeur, l’adresse de l’expéditeur, l’heure de réception, les détails de l’authentification et d’autres détails.
 
-- *URL* : par défaut, vous verrez 3 URL et leurs menaces correspondantes. Vous pouvez toujours cliquer sur **Afficher toutes les URL** pour développer et afficher toutes les URL et les exporter.  
+- *URL* : par défaut, vous verrez 3 URL et leurs menaces correspondantes. Vous pouvez toujours sélectionner **Afficher toutes les URL** pour développer et afficher toutes les URL et les exporter.  
 
-- *Pièces jointes* : par défaut, vous verrez 3 pièces jointes. Vous pouvez toujours cliquer sur **Afficher toutes les pièces jointes** pour développer et afficher toutes les pièces jointes. 
+- *Pièces jointes* : par défaut, vous verrez 3 pièces jointes. Vous pouvez toujours sélectionner **Afficher toutes les pièces jointes** pour les développer et afficher toutes les pièces jointes. 
 
-En plus des sections ci-dessus, vous verrez également des sections spécifiques à quelques expériences qui sont intégrées au panneau récapitulatif : 
+En plus des sections ci-dessus, vous verrez également des sections spécifiques à peu d’expériences intégrées au panneau récapitulatif : 
 
 - Soumissions: 
 
     - *Détails de la soumission* : contient des informations sur les soumissions spécifiques, telles que :
         - Date d’envoi
-        - Subject
+        - Sujet
         - Type d’envoi
         - Motif de l’envoi
         - ID de soumission

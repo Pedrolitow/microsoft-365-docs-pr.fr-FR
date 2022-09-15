@@ -10,26 +10,27 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 6ae58083c2bd0e239cda7dfe007ffbdca2711424
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7956c330b2df483ae2459f2d4fc23a54e8387c4e
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613601"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710914"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Afficher et modifier les stratégies de protection des appareils
 
-Dans Microsoft 365 Business Premium, les paramètres de sécurité des appareils gérés sont configurés par le biais de stratégies de protection des appareils dans le centre de sécurité de Microsoft Defender ou le Centre d’administration. Pour simplifier l’installation et la configuration, il existe des stratégies préconfigurées qui protègent les appareils de votre organisation dès leur intégration. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies existantes ou créer vos propres stratégies.
+Dans Microsoft 365 Business Premium, les paramètres de sécurité des appareils gérés sont configurés via des stratégies de protection des appareils dans le portail Microsoft 365 Defender ou dans le Centre d’administration Microsoft Endpoint Manager. Pour simplifier l’installation et la configuration, il existe des stratégies préconfigurées qui protègent les appareils de votre organisation dès leur intégration. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies existantes ou créer vos propres stratégies.
 
 **Ce guide décrit comment** :
 
 - Obtenir une vue d’ensemble de vos stratégies par défaut
-- Utilisez des stratégies d’appareil dans le Centre de sécurité Defender, le Centre d’administration et Intune.
+- Utilisez des stratégies d’appareil dans le portail Microsoft 365 Defender ou le Centre d’administration Microsoft Endpoint Manager (Intune).
 
 ## <a name="about-the-default-device-protection-policies"></a>À propos des stratégies de protection des appareils par défaut
 
@@ -39,15 +40,15 @@ Microsoft 365 Business Premium comprend deux principaux types de stratégies pou
 
 - Les **Stratégies de pare-feu**, qui déterminent le trafic réseau autorisé à effectuer par les appareils de votre organisation.
 
-Ces stratégies font partie de Microsoft Defender entreprise, inclus dans votre abonnement Microsoft 365 Business Premium. Des informations sont fournies pour l’utilisation des stratégies dans le Centre de sécurité Microsoft Defender, ainsi que sur l’utilisation des stratégies dans le Centre d’administration et Intune.
+Ces stratégies font partie de Microsoft Defender entreprise, inclus dans votre abonnement Microsoft 365 Business Premium. Des informations sont fournies pour l’utilisation des stratégies dans le portail Microsoft 365 Defender ou dans le Centre d’administration Microsoft Endpoint Manager.
 
-## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>Utilisation des stratégies d’appareil dans le Centre de sécurité Microsoft Defender
+## <a name="working-with-device-polices-in-the-microsoft-365-defender-portal"></a>Utilisation des stratégies d’appareil dans le portail Microsoft 365 Defender
 
 Les détails suivants s’appliquent à l’utilisation de vos stratégies dans le centre de sécurité.
 
 ### <a name="view-existing-device-protection-policies"></a>Afficher les stratégies de protection des appareils existantes
 
-Pour afficher vos stratégies de protection des appareils existants dans le centre de sécurité :
+Pour afficher vos stratégies de protection des appareils existantes dans le portail Microsoft 365 Defender :
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
@@ -130,33 +131,7 @@ Pour créer une stratégie de protection des appareils :
    - Apportez les modifications nécessaires en sélectionnant **Modifier**.
    - Lorsque vous êtes prêt à continuer, choisissez **Créer une stratégie**.
 
-## <a name="using-device-policies-in-the-admin-center"></a>Utilisation de stratégies d’appareil dans le Centre d’administration
-
-Les informations suivantes décrivent l’affichage et la gestion des stratégies dans le Centre d’administration Microsoft Business Premium.
-
-### <a name="working-with-device-policies"></a>Utilisation des stratégies d’appareil
-
-Pour utiliser des stratégies dans le Centre d’administration :
-
-1.  Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-
-1. Dans le menu de gauche, choisissez **Stratégies** \> **des appareils.**.
-
-    Sur cette page, vous pouvez créer, modifier, changer de groupe cible ou supprimer une stratégie.
-
-    ![Capture d'écran de la page des stratégies.](../media/devicepolicies.png)
-  
-### <a name="view-and-manage-devices"></a>Afficher et gérer des appareils
-
-Pour afficher et gérer les stratégies :
-
-1. Dans le menu de gauche, choisissez **Gestion** \> **des appareils.**.
-
-    Sur cette page, vous pouvez sélectionner un ou plusieurs appareils et supprimer des données d’entreprise. Pour les appareils Windows 10 pour lesquels vous avez défini des paramètres de protection de l'appareil, vous pouvez également choisir de réinitialiser l'appareil aux paramètres d'usine.
-  
-   ![Page Gérer les appareils.](../media/devicesmanage.png)
-
-## <a name="working-with-device-policies-in-intune"></a>Utilisation des stratégies d’appareil dans Intune
+## <a name="working-with-device-policies-in-the-microsoft-endpoint-manager-admin-center"></a>Utilisation des stratégies d’appareil dans le Centre d’administration Microsoft Endpoint Manager
 
 Utilisez les informations suivantes pour créer et gérer des stratégies d’appareil dans Intune, via la sécurité des points de terminaison dans le Centre d’administration Microsoft Endpoint Manager.
 

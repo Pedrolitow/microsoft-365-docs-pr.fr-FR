@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, examiner et exporter du contenu à partir de Microsoft Teams dans eDiscovery (Premium).
-ms.openlocfilehash: ec3a1029c1a1b8de44a675d1856812aee0a77689
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2ac249426fad360d5f1dbb2ba2df14022c762e83
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629098"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710519"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams
 
@@ -41,7 +41,11 @@ Il existe six catégories de contenu Teams que vous pouvez collecter et traiter 
 
 ## <a name="where-teams-content-is-stored"></a>Emplacement de stockage du contenu Teams
 
-Une condition préalable à la gestion du contenu Teams dans eDiscovery (Premium) consiste à comprendre le type de contenu Teams que vous pouvez collecter, traiter et examiner dans eDiscovery (Premium) et où ce contenu est stocké dans Microsoft 365. Le tableau suivant répertorie le type de contenu Teams et l’emplacement où chacun est stocké.
+Une condition préalable à la gestion du contenu Teams dans eDiscovery (Premium) consiste à comprendre le type de contenu Teams que vous pouvez collecter, traiter et examiner dans eDiscovery (Premium) et où ce contenu est stocké dans Microsoft 365.
+
+Les données Teams sont stockées dans Azure Cosmos DB. Les enregistrements de conformité Teams capturés par le substrat sont en Exchange Online et sont disponibles pour la découverte électronique. 
+
+Le tableau suivant répertorie le type de contenu Teams et l’emplacement où chacun est stocké à des fins de plainte. Les données stockées dans Exchange Online sont masquées par les clients. eDiscovery ne fonctionne jamais sur les données de message Teams réelles, qui restent dans Azure Cosmos DB.
 
 |&nbsp;|Emplacement des messages et des billets de conversation|Emplacement des fichiers et pièces jointes|
 |---|---|---|
@@ -277,7 +281,7 @@ Le tableau suivant décrit les propriétés de métadonnées pour le contenu Tea
 |FamilyId|GUID qui identifie le fichier de transcription pour une conversation de conversation. Les pièces jointes ont la même valeur pour cette propriété que le fichier de transcription qui contient le message auquel le fichier a été attaché.|
 |FileClass|Indique ce type de contenu. Les éléments des conversations Teams ont la valeur `Conversation`. En revanche, les messages électroniques Exchange ont la valeur `Email`.|
 |MessageKind|Propriété de type message. Le contenu Teams a la valeur `microsoftteams , im`.|
-|Recipients|Liste de tous les utilisateurs qui ont reçu un message dans la conversation de transcription.|
+|Destinataires|Liste de tous les utilisateurs qui ont reçu un message dans la conversation de transcription.|
 |TeamsChannelName|Nom du canal Teams de la transcription.|
 
 Pour obtenir des descriptions d’autres propriétés de métadonnées eDiscovery (Premium), consultez [Les champs de métadonnées de document dans eDiscovery (Premium).](document-metadata-fields-in-Advanced-eDiscovery.md)

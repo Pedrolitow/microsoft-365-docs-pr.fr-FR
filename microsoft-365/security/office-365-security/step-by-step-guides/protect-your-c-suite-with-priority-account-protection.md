@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: ad7ebb6b8ab42f5f2b733360f468b56462ea38bc
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+search.appverid: met150
+ms.openlocfilehash: f29f4d0a82c5c6111dccb6128af87851d503f022
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681928"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711496"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>Protégez votre suite C avec une protection de compte prioritaire
 
@@ -42,7 +43,7 @@ La protection prioritaire des comptes permet aux équipes informatiques et de s�
 1. Passez en revue les membres que vous avez sélectionnés, puis appuyez sur Suivant
 1. Appuyez sur Envoyer pour confirmer les modifications
 
-Pour savoir quelles sont les balises de compte de priorité, consultez [Gérer et surveiller les comptes de priorité - Administrateur Microsoft 365 | Microsoft Docs](../../../admin/setup/priority-accounts.md).
+Pour savoir quelles sont les balises de compte de priorité, consultez [Gérer et surveiller les comptes de priorité - Administrateur Microsoft 365 | Microsoftova dokumentacija](../../../admin/setup/priority-accounts.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Passez en revue la protection différenciée pour les utilisateurs marqués comme comptes prioritaires](../../office-365-security/configure-review-priority-account.md).

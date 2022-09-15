@@ -21,12 +21,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.openlocfilehash: 5bc9135419dfcc85fa1a942c1d06fc52029fbc84
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- MET150
+ms.openlocfilehash: 09cc82d196110aa1dcf1e6e62e93e5945c9136b1
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480775"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709088"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 

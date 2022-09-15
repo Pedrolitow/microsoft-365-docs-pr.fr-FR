@@ -21,12 +21,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.openlocfilehash: 18010826e9db2d325205d255395a4eb4df6d417e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- met150
+ms.openlocfilehash: 08028611b6be37843a9653b8837a3f55400115b9
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474597"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710804"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -37,7 +38,7 @@ ms.locfileid: "67474597"
 - Microsoft 365 Defender
 
 >[!Note]
->Cet article décrit les alertes de sécurité dans Microsoft 365 Defender. Toutefois, vous pouvez utiliser des alertes d’activité pour envoyer des notifications par e-mail à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Pour plus d’informations, consultez [Créer des alertes d’activité - Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
+>Cet article décrit les alertes de sécurité dans Microsoft 365 Defender. Toutefois, vous pouvez utiliser des alertes d’activité pour envoyer des notifications par e-mail à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Pour plus d’informations, consultez [Créer des alertes d’activité - Microsoft Purview | Microsoftova dokumentacija](../../compliance/create-activity-alerts.md).
 
 Les alertes sont la base de tous les incidents et indiquent l’occurrence d’événements malveillants ou suspects dans votre environnement. Les alertes font généralement partie d’une attaque plus large et fournissent des indices sur un incident.
 

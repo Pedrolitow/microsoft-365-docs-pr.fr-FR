@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Configurez une étiquette de confidentialité par défaut pour une bibliothèque de documents SharePoint pour les documents nouveaux et non étiquetés.
-ms.openlocfilehash: 4ffb0dacac36c79593a8cdfbeed0f4360e246f35
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 6f3146f8ce59f88eafc311cd9bf382f06103eb94
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276434"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710760"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>Configurer une étiquette de confidentialité par défaut pour une bibliothèque de documents SharePoint
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Cette fonctionnalité est progressivement déployée en préversion et peut être modifiée. Il s’agit également d’une fonctionnalité Premium avec des détails de licence à fournir lorsque la fonctionnalité devient en disponibilité générale (GA).
+> Cette fonctionnalité est en phase aperçu et est sujette à modifications. Il s’agit également d’une fonctionnalité Premium avec des détails de licence à fournir lorsque la fonctionnalité devient en disponibilité générale (GA).
 > 
 > Pour lire l’annonce en préversion, consultez le [billet de blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
@@ -89,8 +89,7 @@ Pour une bibliothèque de documents existante :
 
 Si vous créez une bibliothèque de documents, vous pouvez configurer le même paramètre **d’étiquettes de confidentialité par défaut** à partir du volet de menu volant **Créer une bibliothèque de documents** .
 
-> [!NOTE]
-> Ces nouveaux paramètres sont progressivement propagés aux locataires. Si vous ne les voyez pas, réessayez dans quelques jours.
+Les autorisations requises pour définir et modifier une étiquette de confidentialité par défaut pour une bibliothèque SharePoint sont héritées. Comme pour la possibilité de modifier le nom et la description de la bibliothèque, tout membre du site SharePoint dispose de cette autorisation.
 
 ## <a name="monitoring-application-of-library-default-sensitivity-labels"></a>Surveillance de l’application des étiquettes de confidentialité par défaut de la bibliothèque
 

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment les profils de facturation prennent en charge les factures.
 ms.date: 04/02/2021
-ms.openlocfilehash: 18e1eb23d0fcbdfd6eb374032f780a4f89a48cee
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 34e56474106974e543640eb25b2cea4db0a2efc8
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685874"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711387"
 ---
 # <a name="understand-billing-profiles"></a>Comprendre les profils de facturation
 
@@ -33,13 +33,13 @@ Un profil de facturation contient un mode de paiement, des informations de factu
 
 > [!NOTE]
 >
-> Tous les comptes n’ont pas de profil de facturation. Si vous n’êtes pas sûr d’en avoir un, vous pouvez [afficher la liste de vos profils de facturation] (manage-billing-profiles.md#view-my-billing-profiles).
+> Tous les comptes n’ont pas de profil de facturation. Si vous ne savez pas si vous en avez un, vous pouvez [afficher la liste de vos profils de facturation](manage-billing-profiles.md#view-my-billing-profiles).
 
 ## <a name="what-are-billing-profile-roles"></a>Que sont les rôles de profil de facturation ?
 
 Les rôles sur les profils de facturation disposent des autorisations nécessaires pour contrôler les achats et afficher et gérer les factures. Attribuez ces rôles aux utilisateurs qui assurent le suivi, l’organisation et le paiement des factures. Par exemple, les membres de l’équipe d’approvisionnement de votre organisation.
 
-| Role                         | Description                                                                      |
+| Rôle                         | Description                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | Propriétaire du profil de facturation        | Tout gérer pour un profil de facturation                                          |
 | Contributeur de profil de facturation  | Gérer tout sauf les autorisations dans un profil de facturation                        |
@@ -70,7 +70,7 @@ Chaque profil de facturation inclut les informations suivantes :
 
 ## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
 
-Si vous avez des questions ou si vous avez besoin d’aide sur vos frais Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créez une demande de support avec support Azure</a>.
+Si vous avez des questions ou si vous avez besoin d’aide sur vos frais Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créez une demande de support avec pomoc techniczna platformy Azure</a>.
 
 Si vous avez des questions ou si vous avez besoin d’aide sur votre profil de facturation dans Centre d'administration Microsoft 365, [contactez le support technique](../../admin/get-help-support.md).
 

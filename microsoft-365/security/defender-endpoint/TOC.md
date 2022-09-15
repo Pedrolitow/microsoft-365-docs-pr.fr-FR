@@ -269,7 +269,11 @@
 ##### [Personnaliser l’accès contrôlé aux dossiers](customize-controlled-folders.md)
 #### [Contrôle des appareils]()
 ##### [Protection de stockage amovible](device-control-removable-storage-protection.md)
-##### [Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)
+##### [Contrôle d’accès au stockage amovible]()
+###### [Vue d’ensemble](device-control-removable-storage-access-control.md)
+###### [Déployer et gérer à l’aide de Intune](deploy-manage-removable-storage-intune.md)
+###### [Déployer et gérer à l’aide d’une stratégie de groupe](deploy-manage-removable-storage-group-policy.md)
+###### [Foire aux questions](device-control-removable-storage-access-control-faq.md)
 ##### [Installation d’appareil](mde-device-control-device-installation.md)
 ##### [Protection de l’Imprimante de Contrôle d’Appareil](printer-protection.md)
 ##### [Rapports sur le contrôle des périphériques](device-control-report.md)
@@ -525,8 +529,8 @@
 ####### [Exporter une évaluation de vulnérabilités de logiciel](get-assessment-software-vulnerabilities.md)
 
 ###### [Extensions de navigateur]()
-####### [Exporter l’évaluation des extenstions de broswer](get-assessment-browser-extensions.md)
-####### [Obtenir des informations permisson sur les extenstions de navigateur](get-browser-extensions-permission-info.md)
+####### [Exporter l’évaluation des extensions de navigateur](get-assessment-browser-extensions.md)
+####### [Obtenir les informations d’autorisation des extensions de navigateur](get-browser-extensions-permission-info.md)
 
 ###### [Investigation automatisée]()
 ####### [Méthodes et propriétés de l’examen](investigation.md)

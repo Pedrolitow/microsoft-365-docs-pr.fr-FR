@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/13/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: b16207902e8dfe198d8ab99370ab63e4ea64031c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 49ce0164004582ccc61f8c509fd34e3eb4123489
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664634"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711343"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour entreprises
 
@@ -46,15 +46,15 @@ Avec Defender pour entreprise, vous avez le choix entre plusieurs options pour l
 Choisissez l'une des options suivantes pour intégrer des appareils clients Windows à Defender pour entreprises :
 
 - [Script local](#local-script-for-windows-10-and-11) (pour l’intégration manuelle d’appareils dans le portail Microsoft 365 Defender)
-- [stratégie de groupe](#group-policy-for-windows-10-and-11) (si vous utilisez déjà stratégie de groupe dans votre organisation)
-- [Microsoft Intune](#intune-for-windows-10-and-11)
+- [نهج المجموعة](#group-policy-for-windows-10-and-11) (si vous utilisez déjà نهج المجموعة dans votre organisation)
+- [Microsoft Intune](#intune-for-windows-10-and-11) (si vous utilisez déjà Intune)
 
 ### <a name="local-script-for-windows-10-and-11"></a>Script local pour Windows 10 et 11
 
 Vous pouvez utiliser un script local pour intégrer des appareils clients Windows. Lorsque vous exécutez le script d’intégration sur un appareil : 
 
 - Il crée une approbation avec Azure Active Directory, si cette approbation n’existe pas déjà.
-- Il inscrit l’appareil dans Microsoft Intune, s’il n’est pas déjà inscrit, puis l’intègre à Defender entreprise. 
+- Il inscrit l’appareil dans Microsoft Intune s’il n’est pas déjà inscrit, puis l’intègre à Defender entreprise. 
 - La méthode de script local fonctionne même si vous n’avez pas de Intune, et il s’agit de la méthode recommandée pour les clients Defender entreprise.
 
 > [!TIP]
@@ -76,9 +76,9 @@ Vous pouvez utiliser un script local pour intégrer des appareils clients Window
 
 8. Une fois le script exécuté, [exécutez un test de détection](#run-a-detection-test-on-a-windows-10-or-11-device).
 
-### <a name="group-policy-for-windows-10-and-11"></a>stratégie de groupe pour Windows 10 et 11
+### <a name="group-policy-for-windows-10-and-11"></a>نهج المجموعة pour Windows 10 et 11
 
-Si vous préférez utiliser stratégie de groupe pour intégrer des clients Windows, suivez les instructions fournies dans [Intégrer des appareils Windows à l’aide de stratégie de groupe](../defender-endpoint/configure-endpoints-gp.md). Cet article décrit les étapes d’intégration à Microsoft Defender pour point de terminaison. Les étapes d’intégration à Defender entreprise sont similaires.
+Si vous préférez utiliser نهج المجموعة pour intégrer des clients Windows, suivez les instructions fournies dans [Intégrer des appareils Windows à l’aide de نهج المجموعة](../defender-endpoint/configure-endpoints-gp.md). Cet article décrit les étapes d’intégration à Microsoft Defender pour point de terminaison. Les étapes d’intégration à Defender entreprise sont similaires.
 
 ### <a name="intune-for-windows-10-and-11"></a>Intune pour Windows 10 et 11
 
@@ -91,7 +91,7 @@ Vous pouvez intégrer des clients Windows et d’autres appareils dans Intune à
 
 Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent leur compte professionnel à l’appareil. En arrière-plan, l’appareil inscrit et rejoint Azure Active Directory (Azure AD) et est inscrit dans Intune.
 
-1. Accédez à la Portail Azure ([https://portal.azure.com/](https://portal.azure.com/)) et connectez-vous.
+1. Accédez à la Azure-Portal ([https://portal.azure.com/](https://portal.azure.com/)) et connectez-vous.
 
 2. Sélectionnez **Azure Active Directory** > **Mobility (MDM et MAM)** >  **Microsoft Intune**.
 
@@ -108,7 +108,7 @@ Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent l
 
 4. Sélectionnez **Enregistrer**.
 
-5. Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils dans Defender pour Entreprises. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+5. Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils dans Defender pour Entreprises. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 > [!TIP]
 > Pour plus d’informations, consultez [Activer l’inscription automatique Windows](/mem/intune/enrollment/windows-enroll).
@@ -121,7 +121,7 @@ Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent l
 
 2. Partagez cet article avec les utilisateurs de votre organisation : [Inscrire des appareils Windows 10/11 dans Intune](/mem/intune/user-help/enroll-windows-10-device).
 
-3. Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils dans Defender pour Entreprises. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+3. Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils dans Defender pour Entreprises. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 ### <a name="run-a-detection-test-on-a-windows-10-or-11-device"></a>Exécuter un test de détection sur un appareil Windows 10 ou 11
 
@@ -129,7 +129,7 @@ Une fois que vous avez intégré des appareils Windows à Defender entreprise, v
 
 1. Sur l’appareil Windows, créez un dossier : `C:\test-MDATP-test`.
 
-2. Ouvrez une invite de commandes en tant qu’administrateur.
+2. Ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.
 
 3. Dans la fenêtre d’invite de commandes, exécutez la commande PowerShell suivante :
 
@@ -141,7 +141,7 @@ Une fois la commande exécutée, la fenêtre d’invite de commandes se ferme au
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
-Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
+Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, accédez à **Périphériques multimédias** > .
 
 ## <a name="next-steps"></a>Prochaines étapes
 
@@ -159,14 +159,14 @@ Pour afficher la liste des appareils intégrés à Defender entreprise, accédez
 Choisissez l'une des options suivantes pour le Mac embarqué :
 
 - [Script local pour Mac](#local-script-for-mac) (*recommandé*)
-- [Intune pour Mac](#intune-for-mac)
+- [Intune pour Mac](#intune-for-mac) (si vous utilisez déjà Intune)
 
 ### <a name="local-script-for-mac"></a>Script local pour Mac
 
-Lorsque vous exécutez le script local sur un Mac : 
+Lorsque vous exécutez le script local sur Mac : 
 
-- Il crée une approbation avec Azure Active Directory, si cette approbation n’existe pas déjà.
-- Il inscrit le Mac dans Microsoft Intune, s’il n’est pas déjà inscrit, puis l’intègre à Defender pour Entreprises. 
+- Il crée une approbation avec Azure Active Directory si cette approbation n’existe pas déjà.
+- Il inscrit le Mac dans Microsoft Intune s’il n’est pas déjà inscrit, puis l’intègre à Defender pour Entreprises. 
 - Nous vous recommandons d’intégrer jusqu’à 10 appareils à la fois à l’aide de cette méthode.
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
@@ -177,7 +177,7 @@ Lorsque vous exécutez le script local sur un Mac :
 
 4. Sélectionnez **Télécharger le package d’intégration** et enregistrez-le sur un lecteur amovible. Sélectionnez également **Télécharger le package d’installation** et enregistrez-le sur votre appareil amovible.
 
-5. Sur un Mac, enregistrez le package d’installation dans `wdav.pkg` un répertoire local.
+5. Sur Mac, enregistrez le package d’installation dans `wdav.pkg` un répertoire local.
 
 6. Enregistrez le package d’intégration dans `WindowsDefenderATPOnboardingPackage.zip` le répertoire que vous avez utilisé pour le package d’installation.
 
@@ -189,11 +189,11 @@ Lorsque vous exécutez le script local sur un Mac :
 
 10. Utilisez la commande Python suivante dans Bash pour exécuter le package d’intégration : `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
-Une fois qu’un Mac est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+Une fois Mac inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 ### <a name="intune-for-mac"></a>Intune pour Mac
 
-Vous pouvez inscrire des ordinateurs Mac dans Intune à l’aide du Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Plusieurs méthodes sont disponibles pour inscrire Mac dans Intune. Nous vous recommandons l’une des méthodes suivantes :
+Si vous avez déjà Intune, vous pouvez inscrire des ordinateurs Mac à l’aide du Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Plusieurs méthodes sont disponibles pour inscrire Mac dans Intune. Nous vous recommandons l’une des méthodes suivantes :
 
 - [Choisir une option pour Mac appartenant à l’entreprise](#options-for-company-owned-mac)
 - [Demandez aux utilisateurs d’inscrire leur propre Mac dans Intune](#ask-users-to-enroll-their-own-mac-in-intune)
@@ -230,11 +230,11 @@ Si votre entreprise préfère que des personnes inscrivent leurs propres apparei
 
    `mdatp health --field real_time_protection_enabled`
 
-Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
-Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
+Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, accédez à **Périphériques multimédias** > .
 
 ## <a name="next-steps"></a>Prochaines étapes
 
@@ -300,7 +300,7 @@ Après avoir intégré votre point de terminaison Windows Server à Defender ent
 
 1. Sur l’appareil Windows Server, créez un dossier : `C:\test-MDATP-test`.
 
-2. Ouvrez une invite de commandes en tant qu’administrateur.
+2. Ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.
 
 3. Dans la fenêtre d’invite de commandes, exécutez la commande PowerShell suivante :
 
@@ -332,7 +332,7 @@ Vous pouvez utiliser les méthodes suivantes pour intégrer une instance de Linu
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
-Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
+Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, accédez à **Périphériques multimédias** > .
 
 ## <a name="next-steps"></a>Prochaines étapes
 
@@ -349,14 +349,14 @@ Utilisez Microsoft Intune pour intégrer des appareils mobiles, tels que des app
 - [Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)
 - [Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)
 
-Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 > [!NOTE]
-> Defender for Business autonome n’inclut pas la licence Intune requise pour intégrer des appareils iOS et Android. Vous pouvez ajouter Intune à votre abonnement Defender entreprise pour intégrer des appareils mobiles.
+> La version autonome de Defender entreprise n’inclut pas la licence Intune requise pour intégrer des appareils iOS et Android. Vous pouvez ajouter Intune à votre abonnement Defender entreprise pour intégrer des appareils mobiles. Intune est inclus dans Microsoft 365 Business Premium.
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
-Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
+Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, accédez à **Périphériques multimédias** > .
 
 ## <a name="next-steps"></a>Prochaines étapes
 

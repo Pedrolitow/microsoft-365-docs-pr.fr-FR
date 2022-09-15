@@ -21,12 +21,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.openlocfilehash: 088cb74f16fae1155b86b1bfa6b5c72aae287720
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- met150
+ms.openlocfilehash: 4afcc1d2b1ed8da1dca14575776dd720a56cda11
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482095"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711024"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Classement des alertes pour l’activité de transfert de courrier suspect
 
@@ -107,7 +108,7 @@ Vous pouvez également analyser ces activités supplémentaires pour la boîte a
   - Observez le nombre d’e-mails récents envoyés par l’expéditeur qui sont détectés comme des hameçonnages, du courrier indésirable ou des programmes malveillants.
   - Observez le nombre d’e-mails envoyés contenant des informations sensibles.
 
-- Évaluez le comportement de connexion à risque dans microsoft Portail Azure.
+- Évaluez le comportement de connexion à risque dans microsoft Azure-Portal.
 - Recherchez les activités malveillantes sur l’appareil de l’utilisateur.
 
 ### <a name="are-the-activities-malicious"></a>Les activités sont-elles malveillantes ?

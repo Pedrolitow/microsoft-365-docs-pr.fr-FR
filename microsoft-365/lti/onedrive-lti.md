@@ -1,7 +1,7 @@
 ---
 title: Intégrer Microsoft OneDrive LTI à Canvas
-ms.author: heidip
-author: MicrosoftHeidi
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman
 audience: admin
@@ -11,22 +11,21 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Créez et classez des affectations, créez et organisez du contenu de cours, et collaborez sur des fichiers en temps réel avec la nouvelle application d’interopérabilité Microsoft OneDrive Learning Tools pour Canvas.
-ms.openlocfilehash: 62df03d18081cf9c48e5b153ed7a3cfe6ee27901
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+description: Créez et classez des devoirs, générez et organisez du contenu de cours, et collaborez sur des fichiers en temps réel avec Microsoft OneDrive LTI pour Canvas.
+ms.openlocfilehash: 659493f624b2c269c2e5eb51e1d902ab249e0cc7
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663401"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709528"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Intégrer Microsoft OneDrive LTI à Canvas
 
-Cet article s’adresse aux administrateurs informatiques de l’éducation qui doivent configurer l’Microsoft OneDrive LTI pour Canvas.
+Cet article s’adresse aux administrateurs informatiques de l’éducation qui doivent configurer Microsoft OneDrive LTI pour Canvas.
 
-Pour obtenir des instructions pour les enseignants sur l’utilisation de l’OneDrive LTI dans Canvas, consultez [Utiliser Microsoft OneDrive avec votre LMS](https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd).
+Pour obtenir des instructions pour les enseignants sur l’utilisation de l’interface LTI OneDrive dans Canvas, consultez [Utiliser Microsoft OneDrive avec votre LMS](https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd).
 
-L’intégration de Microsoft OneDrive LTI à Canvas est un processus en deux étapes. La première étape active Microsoft OneDrive dans Canvas, et la deuxième étape rend le Microsoft OneDrive LTI disponible dans les cours Canvas.
+L’intégration de Microsoft OneDrive LTI à Canvas est un processus en deux étapes. La première étape active Microsoft OneDrive dans Canvas, et la deuxième étape rend microsoft OneDrive LTI disponible dans les cours Canvas.
 
 ## <a name="recommended-browser-settings"></a>Paramètres de navigateur recommandés
 
@@ -36,20 +35,20 @@ L’intégration de Microsoft OneDrive LTI à Canvas est un processus en deux é
 > [!NOTE]
 >
 > - Les cookies ne sont pas activés par défaut dans le mode incognito du navigateur Chrome et doivent être activés.
-> - Microsoft OneDrive LTI fonctionne en mode privé dans Microsoft Edge navigateur. Vérifiez que vous n’avez pas bloqué les cookies (qui sont activés par défaut).
+> - Microsoft OneDrive LTI fonctionne en mode privé dans le navigateur Microsoft Edge. Vérifiez que vous n’avez pas bloqué les cookies (qui sont activés par défaut).
 
 ## <a name="enable-microsoft-onedrive-lti-in-canvas"></a>Activer Microsoft OneDrive LTI dans Canvas
 
 > [!IMPORTANT]
 > La personne qui effectue cette intégration doit être un administrateur de Canvas et un administrateur du locataire Microsoft 365.
 
-1. Se connecter au <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portail d’inscription Microsoft OneDrive LTI</a>
+1. Se connecter au <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portail d’inscription LTI Microsoft OneDrive</a>
 2. Sélectionnez le bouton **Administration Consentement** et acceptez les autorisations.
 
    > [!CAUTION]
    > Si cette étape n’est pas effectuée, l’étape suivante vous donnera une erreur, et vous ne pourrez pas effectuer cette étape pendant une heure une fois que vous aurez obtenu l’erreur.
 
-3. Sélectionnez le bouton **Créer un locataire LTI** . Dans la page Inscription LTI, sélectionnez **Canvas** dans la liste déroulante et entrez l’URL de base de votre instance canvas.
+3. Sélectionnez le bouton **Créer un locataire LTI** . Dans la page Inscription LTI, sélectionnez **Canvas** dans la liste déroulante et entrez l’URL de base de votre instance Canvas.
 
    > [!NOTE]
    > Si votre instance canvas est, par exemple, , `https://contoso.test.instructure.com`l’URL complète doit être entrée.
@@ -69,7 +68,7 @@ L’intégration de Microsoft OneDrive LTI à Canvas est un processus en deux é
     > [!TIP]
     > **Étape facultative :** Si les enseignants de votre établissement scolaire souhaitent contrôler eux-mêmes les liens qui apparaissent dans la navigation de leurs cours, vous pouvez modifier le ``default`` paramètre dans le JSON copié. Le ``default`` paramètre est défini ``enabled`` automatiquement ; toutefois, la modification du ``default`` paramètre permet aux ``disabled`` enseignants de choisir la navigation de leurs propres cours.
     >
-    > Pour plus d’informations sur la façon dont les enseignants peuvent modifier leurs liens de navigation de cours, consultez [Comment faire gérer les liens de navigation des cours ?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
+    > Pour plus d’informations sur la façon dont les enseignants peuvent modifier leurs liens de navigation de cours, consultez [如何实现 gérer les liens de navigation des cours ?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
 
 7. Ensuite, développez la liste déroulante **Paramètres supplémentaires** et **définissez le niveau de confidentialité** sur **Public**. 
   
@@ -79,7 +78,7 @@ L’intégration de Microsoft OneDrive LTI à Canvas est un processus en deux é
 
    :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Page Canevas avec la clé définie dans un état désactivé. Elle doit être activée et la clé doit être copiée à partir de la colonne détails de cette page.":::
 
-9. Revenez au portail d’inscription Microsoft OneDrive LTI et collez la clé dans le champ **ID client canvas**. Sélectionnez **Suivant** lorsque vous êtes prêt.
+9. Revenez au portail d’inscription Microsoft OneDrive LTI et collez la clé dans le champ **ID client canvas** . Sélectionnez **Suivant** lorsque vous êtes prêt.
 
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Page d’inscription du locataire LTI, qui affiche le texte JSON et la zone de texte dans laquelle la clé doit être copiée.":::
 
@@ -93,7 +92,7 @@ Les versions ultérieures peuvent nécessiter un consentement administrateur sup
 
 Un administrateur de canevas peut activer Microsoft OneDrive LTI pour tous les cours. Si Microsoft OneDrive LTI est nécessaire dans un cours spécifique (et pas tous les cours), l’enseignant du cours doit suivre les mêmes étapes dans les paramètres du cours.
 
-1. Connectez-vous en tant qu’administrateur et accédez à la section **Paramètres**.
+1. Connectez-vous en tant qu’administrateur et accédez à la section **Paramètres** .
 2. Accédez à la section **Applications** et sélectionnez le bouton **Afficher les configurations d’application** .
 3. Sélectionnez le bouton **Ajouter une application** .
 4. Dans la liste déroulante **Type de configuration** , choisissez l’option **Par ID client** .
@@ -101,17 +100,17 @@ Un administrateur de canevas peut activer Microsoft OneDrive LTI pour tous les c
 
 :::image type="content" source="media/OneDrive-LTI-31.png" alt-text="Page Ajouter une application, montrant l’option Par ID client sous le menu déroulant Type de configuration.":::
 
-## <a name="collaboration-settings-for-microsoft-onedrive-lti-in-canvas-courses"></a>Paramètres de collaboration pour Microsoft OneDrive LTI dans les cours canvas
+## <a name="collaboration-settings-for-microsoft-onedrive-lti-in-canvas-courses"></a>Paramètres de collaboration pour Microsoft OneDrive LTI dans les cours canevas
 
-> [!NOTE]
-> Pour que la collaboration fonctionne pour les enseignants et les étudiants, vous ne devez pas activer le paramètre de collaboration. Pour vous assurer que le paramètre n’est pas activé, suivez les étapes ci-dessous.
+Pour que OneDrive Collaborations fonctionne pour les enseignants et les étudiants, assurez-vous que le paramètre **Outils de collaboration externe** est désactivé. Pour désactiver le paramètre **Outil Collaborations externes** , suivez les étapes ci-dessous.
 
-1. Connectez-vous en tant qu’administrateur et accédez à la section **Paramètres**.
+1. Connectez-vous à Canvas en tant qu’administrateur et accédez à la section **Paramètres** .
 1. Accédez à la section **Options** de fonctionnalités, puis à la section **Cours** .
-1. Définissez la fonctionnalité Outil **collaborations externes** pour qu’elle ne soit pas activée.
+1. Définissez le bouton bascule **Collaborations externes** sur la position désactivée.
 
-> [!NOTE]
-> La collaboration peut être attribuée à des étudiants individuels et à des groupes d’étudiants. L’affectation à des étudiants individuels fonctionne par défaut. Pour pouvoir affecter la collaboration à un groupe d’étudiants, procédez comme suit :
+Les collaborations peuvent être attribuées à des étudiants individuels et à des groupes d’étudiants dans un cours. Les collaborations dans les groupes de canevas ne sont actuellement pas prises en charge.
 
-1. Connectez-vous en tant qu’administrateur et accédez à la section **Clés du développeur** .
-1. Recherchez la clé avec la valeur 170000000000710 et définissez-la **sur Activé**.
+L’affectation à des étudiants individuels fonctionne par défaut. Pour affecter la collaboration à des groupes d’étudiants, procédez comme suit :
+
+1. Connectez-vous à Canvas en tant qu’administrateur et accédez à la section **Clés du développeur** .
+1. Recherchez la clé avec une valeur `170000000000710` et définissez-la **sur Activé**.

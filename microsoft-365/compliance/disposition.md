@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: d72cc68bb093c3b49c7f79847916c5cbc5fe5a2d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 645c48ab13a54a6b95b5d0b0732213efcab59fd7
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630100"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710475"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -187,7 +187,7 @@ Comme vous pouvez le voir dans l’exemple affiché, les actions prises en charg
   
 - **Approuver la destruction** :
     - Lorsque cette action est sélectionnée pour une étape intermédiaire de la révision avant destruction (vous avez configuré plusieurs étapes) : l’élément se déplace vers la prochaine étape de la destruction.
-    - Lorsque cette action est sélectionnée pour l’étape finale de la révision avant destruction ou qu’il n’existe qu’une seule étape de destruction : l’élément est marqué comme éligible pour une suppression définitive, qu’un travail de minuteur actionne ensuite dans les 7 jours. Le minutage exact de la suppression définitive de l’élément dépend de la charge de travail. Pour plus d’informations, voir [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) et [Fonctionnement de la rétention pour Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+    - Lorsque cette action est sélectionnée pour la dernière étape de la révision de destruction, ou qu’il n’y a qu’une seule étape de destruction : l’élément est marqué comme éligible à la suppression permanente, ce qui se produit dans un délai de 15 jours.
 
 - **Attribuer un nouveau libellé** :
     - Lorsque cette action est sélectionnée, l’élément quitte le procession de révision avant destruction pour l’étiquette d’origine. L’élément est ensuite soumis aux paramètres de rétention de la nouvelle étiquette de rétention sélectionnée.

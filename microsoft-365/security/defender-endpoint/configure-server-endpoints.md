@@ -19,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 39d6c455790d5f87adcd2b0791c5603e449de6d1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6e0b53da9117577ec0d0cee98431e30d265f96dc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680192"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711540"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
@@ -65,7 +65,7 @@ Pour plus d’informations, consultez [Intégration à Microsoft Defender pour l
 > - Lorsque vous utilisez Microsoft Defender pour cloud pour surveiller les serveurs, un locataire Defender pour point de terminaison est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et au Royaume-Uni pour les utilisateurs du Royaume-Uni).
 Les données collectées par Defender pour point de terminaison sont stockées dans l’emplacement géographique du locataire, comme identifié lors de l’approvisionnement.
 > - Si vous utilisez Defender pour point de terminaison avant d’utiliser Microsoft Defender pour cloud, vos données sont stockées à l’emplacement que vous avez spécifié lors de la création de votre locataire, même si vous intégrez Microsoft Defender pour Cloud ultérieurement.
-> - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter Support Microsoft pour réinitialiser le locataire.
+> - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter pomoc techniczna firmy Microsoft pour réinitialiser le locataire.
 > - L’intégration entre Microsoft Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge Windows Server 2022, [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 > - La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 clients GCC.
 
@@ -115,6 +115,7 @@ Si vous avez déjà intégré vos serveurs à l’aide de MMA, suivez les instru
 
 Les spécificités suivantes s’appliquent au nouveau package de solution unifiée pour Windows Server 2012 R2 et 2016 :
 
+- Une mise à jour du système d’exploitation peut introduire un problème d’installation sur des machines avec des disques plus lents en raison d’un délai d’expiration avec l’installation du service. L’installation échoue avec le message « Impossible de trouver c:\program files\windows defender\mpasdesc.dll, - 310 WinDefend ». Utilisez le dernier package d’installation, ainsi que le dernier script [install.ps1](https://github.com/microsoft/mdefordownlevelserver) pour faciliter l’effacement de l’installation ayant échoué si nécessaire.
 - Vérifiez que les exigences de connectivité spécifiées dans [Activer l’accès aux URL de service Microsoft Defender pour point de terminaison dans le serveur proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) sont remplies. Ils sont équivalents à ces exigences pour Windows Server 2019.
 - Nous avons identifié un problème de connectivité Windows Server 2012 R2 au cloud lorsque TelemetryProxyServer statique est utilisé **et** que les URL de liste de révocation de certificats (CRL) ne sont pas accessibles à partir du contexte du compte SYSTEM. L’atténuation immédiate consiste à utiliser une autre option de proxy (« à l’échelle du système ») qui fournit une telle connectivité, ou à configurer le même proxy via le paramètre WinInet sur le contexte du compte SYSTÈME.
 Vous pouvez également utiliser les instructions fournies dans La [solution de contournement pour un problème connu avec TelemetryProxyServer sur les machines déconnectées](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) pour installer un certificat comme solution de contournement.
@@ -220,7 +221,7 @@ Le **package d’intégration** contient les fichiers suivants :
 
 Pour télécharger les packages, procédez comme suit :
 
-1. Dans Microsoft 365 Defender, accédez à **Paramètres > Gestion des appareils > Intégration**.
+1. Dans Microsoft 365 Defender, accédez à **Paramètres > 裝置管理 > Intégration**.
 
 2. Sélectionnez **Windows Server 2012 R2 et 2016**.
 
@@ -245,7 +246,7 @@ Vous pouvez utiliser l’une des options suivantes pour installer l’agent :
 
 - [Installer à l’aide de la ligne de commande](#install-microsoft-defender-for-endpoint-using-the-command-line)
 - [Installer à l’aide d’un script](#install-microsoft-defender-for-endpoint-using-a-script)
-- [Appliquer les packages d’installation et d’intégration à l’aide de stratégie de groupe](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
+- [Appliquer les packages d’installation et d’intégration à l’aide de نهج المجموعة](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-the-command-line"></a>Installer Microsoft Defender pour point de terminaison à l’aide de la ligne de commande
 
@@ -257,7 +258,7 @@ Exécutez la commande suivante pour installer Microsoft Defender pour point de t
 Msiexec /i md4ws.msi /quiet
 ```
 
-Pour désinstaller, vérifiez que la machine est d’abord désinstégée à l’aide du script de désintégrage approprié. Utilisez ensuite Panneau de configuration \> programmes \> et fonctionnalités pour effectuer la désinstallation.
+Pour désinstaller, vérifiez que la machine est d’abord désinstégée à l’aide du script de désintégrage approprié. Utilisez ensuite لوحة التحكم \> programmes \> et fonctionnalités pour effectuer la désinstallation.
 
 Vous pouvez également exécuter la commande de désinstallation suivante pour désinstaller Microsoft Defender pour point de terminaison :
 
@@ -280,15 +281,15 @@ Vous pouvez utiliser le [script du programme d’installation](server-migration.
 > [!NOTE]
 > Le script d’installation est signé. Toute modification apportée au script invalide la signature. Lorsque vous téléchargez le script à partir de GitHub, l’approche recommandée pour éviter toute modification accidentelle consiste à télécharger les fichiers sources sous forme d’archive zip, puis à l’extraire pour obtenir le fichier install.ps1 (sur la page code principale, cliquez sur le menu déroulant Code et sélectionnez « Télécharger zip »).
 
-Ce script peut être utilisé dans différents scénarios, y compris ceux décrits dans [les scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente](/microsoft-365/security/defender-endpoint/server-migration) et pour le déploiement à l’aide de stratégie de groupe comme décrit ci-dessous.
+Ce script peut être utilisé dans différents scénarios, y compris ceux décrits dans [les scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente](/microsoft-365/security/defender-endpoint/server-migration) et pour le déploiement à l’aide de نهج المجموعة comme décrit ci-dessous.
 
 ##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>Appliquer les packages d’installation et d’intégration Microsoft Defender pour point de terminaison à l’aide de la stratégie de groupe
 
-1. Créez une stratégie de groupe : <br> Ouvrez la [console de gestion stratégie de groupe](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), cliquez avec le bouton droit **sur stratégie de groupe Objets** que vous souhaitez configurer, puis cliquez sur **Nouveau**. Entrez le nom du nouvel objet de stratégie de groupe dans la boîte de dialogue qui s’affiche, puis cliquez sur **OK**.
+1. Créez une stratégie de groupe : <br> Ouvrez la [console de gestion نهج المجموعة](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), cliquez avec le bouton droit sur **نهج المجموعة Objets** que vous souhaitez configurer, puis cliquez sur **Nouveau**. Entrez le nom du nouvel objet de stratégie de groupe dans la boîte de dialogue qui s’affiche, puis cliquez sur **OK**.
 
-2. Ouvrez la [console de gestion stratégie de groupe](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), cliquez avec le bouton droit sur l’objet stratégie de groupe (GPO) que vous souhaitez configurer, puis cliquez sur **Modifier**.
+2. Ouvrez la [console de gestion نهج المجموعة](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), cliquez avec le bouton droit sur l’objet نهج المجموعة (GPO) que vous souhaitez configurer, puis cliquez sur **Modifier**.
 
-3. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **Configuration de l’ordinateur**, puis **Préférences**, puis **aux paramètres du Panneau de configuration**.
+3. Dans **l’éditeur de gestion نهج المجموعة**, accédez à **Configuration de l’ordinateur**, puis **Préférences**, puis **aux paramètres du Panneau de configuration**.
 
 4. Cliquez avec le bouton droit sur **Tâches planifiées**, **pointez sur Nouveau**, puis cliquez sur **Tâche immédiate (Au moins Windows 7).**
 
@@ -314,7 +315,7 @@ Ce script peut être utilisé dans différents scénarios, y compris ceux décri
 
 9. Sélectionnez **OK** et fermez toutes les fenêtres GPMC ouvertes.
 
-10. Pour lier l’objet de stratégie de groupe à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un objet de stratégie de groupe existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet stratégie de groupe que vous souhaitez lier. Cliquez sur **OK**.
+10. Pour lier l’objet de stratégie de groupe à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un objet de stratégie de groupe existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet نهج المجموعة que vous souhaitez lier. Cliquez sur **OK**.
 
 Pour plus de paramètres de configuration, consultez [Configurer les exemples de paramètres de collecte](configure-endpoints-gp.md#configure-sample-collection-settings) et [autres paramètres de configuration recommandés](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
@@ -333,13 +334,13 @@ Les étapes suivantes s’appliquent uniquement si vous utilisez une solution an
 > [!IMPORTANT]
 >
 > - Le package d’intégration pour Windows Server 2012 R2, 2016, 2019 et 2022 via Microsoft Endpoint Manager est actuellement fourni en tant que script. Pour plus d’informations sur le déploiement de programmes et de scripts dans Configuration Manager, consultez [Packages et programmes dans Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
-> - Un script local convient à une preuve de concept, mais ne doit pas être utilisé pour le déploiement en production. Pour un déploiement de production, nous vous recommandons d’utiliser stratégie de groupe ou microsoft endpoint Configuration Manager.
+> - Un script local convient à une preuve de concept, mais ne doit pas être utilisé pour le déploiement en production. Pour un déploiement de production, nous vous recommandons d’utiliser نهج المجموعة ou Configuration Manager de point de terminaison Microsoft.
 
 ## <a name="windows-server-semi-annual-enterprise-channel-sac-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel (SAC), Windows Server 2019 et Windows Server 2022
 
 ### <a name="download-package"></a>Télécharger le package
 
-1. Dans Microsoft 365 Defender, accédez à **Paramètres > Gestion des appareils > Intégration**.
+1. Dans Microsoft 365 Defender, accédez à **Paramètres > 裝置管理 > Intégration**.
 
 2. Sélectionnez **Windows Server 1803 et 2019**.
 
@@ -369,7 +370,7 @@ Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un te
 
     Si le résultat est « Le service spécifié n’existe pas en tant que service installé », vous devez installer l’antivirus Microsoft Defender.
 
-    Pour plus d’informations sur l’utilisation de stratégie de groupe pour configurer et gérer l’antivirus Microsoft Defender sur vos serveurs Windows, consultez [Utiliser stratégie de groupe paramètres pour configurer et gérer l’antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
+    Pour plus d’informations sur l’utilisation de نهج المجموعة pour configurer et gérer l’antivirus Microsoft Defender sur vos serveurs Windows, consultez [Utiliser نهج المجموعة paramètres pour configurer et gérer l’antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 
 2. Exécutez la commande suivante pour vérifier que Microsoft Defender pour point de terminaison est en cours d’exécution :
 
@@ -391,9 +392,9 @@ Une fois les appareils intégrés au service, vous devez configurer les composan
 
 Vous pouvez déconnecter Windows Server 2012 édition R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019 et Windows Server 2019 Core dans la même méthode disponible pour Windows 10 appareils clients.
 
-- [Désintégrage des appareils à l’aide de stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Désins border des appareils à l’aide de نهج المجموعة](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Désins border des appareils à l’aide de Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [Désintégrage des appareils à l’aide des outils de Gestion des appareils mobile](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
+- [Désintégrage des appareils à l’aide des outils de 裝置管理 mobile](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
 - [Désintégrage des appareils à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
 Après la désintégration, vous pouvez procéder à la désinstallation du package de solution unifié sur Windows Server 2012 R2 et Windows Server 2016.

@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 857539a1d5fe3fdca55db738c41a4dea561c4a84
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+search.appverid: met150
+ms.openlocfilehash: e43cfdd10de9ea0b6f698007079ad90e70c11ff3
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665467"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710826"
 ---
 # <a name="virus-information-alliance"></a>Virus Information Alliance
 

@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 769fc6c2f67d1e024577f43ce5903a1c7741fb2d
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+search.appverid: met150
+ms.openlocfilehash: fad3e5e95cfb8b0a07c1766b912aeff6e4ef4ca4
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328208"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711518"
 ---
 # <a name="industry-collaboration-programs"></a>Programmes de collaboration du secteur d’activité
 

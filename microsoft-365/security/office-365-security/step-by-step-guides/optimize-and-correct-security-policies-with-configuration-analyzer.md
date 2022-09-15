@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 7dcce2bb3f71ebf6400ece3296da71a7f686db10
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+search.appverid: met150
+ms.openlocfilehash: 56580ea904747549057ef86ba4d3c75bb99ad16f
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691186"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711046"
 ---
 # <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>Optimiser et corriger les stratégies de sécurité avec l’analyseur de configuration
 
@@ -46,4 +47,4 @@ Dans **l’analyseur de configuration** , vous pouvez sélectionner **l’analys
 
 La page qui se charge affiche les modifications apportées à vos stratégies de sécurité dans la plage de temps sélectionnée par les filtres, ainsi que les données relatives à la modification et si elle a augmenté ou diminué votre posture globale.
 
-Pour en savoir plus sur Configuration Analyzer, consultez [l’analyseur de configuration pour les stratégies de sécurité - Office 365 | Microsoft Docs](../../office-365-security/configuration-analyzer-for-security-policies.md).
+Pour en savoir plus sur Configuration Analyzer, consultez [l’analyseur de configuration pour les stratégies de sécurité - Office 365 | Microsoftova dokumentacija](../../office-365-security/configuration-analyzer-for-security-policies.md).

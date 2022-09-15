@@ -15,12 +15,13 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
-ms.openlocfilehash: 61cdee1f64e81b7874c1ad564e7d9eb01d04557d
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ff507a45e27ecd67f1d56aaf46ed095d200d925f
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520948"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711409"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour point de terminaison
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: c0b9666a280b159df4e1b985b733c73565477241
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f0b24d0476ad3efb579f3d86aabba9d0a94a372e
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597523"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710694"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Utiliser l’Assistant Installation dans Microsoft Defender pour entreprises
 
@@ -38,7 +38,7 @@ Defender pour entreprise a été conçu pour faire gagner du temps et de l'éner
 
 L’Assistant Installation est conçu pour s’exécuter la première fois qu’une personne de votre entreprise se connecte au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-Si votre entreprise utilise Microsoft 365 Business Premium, l’Assistant Configuration de Defender Entreprise s’exécute la première fois qu’une personne accède à l’inventaire **des appareils points de terminaison** > . 
+Si votre entreprise a utilisé Microsoft 365 Business Premium, l’Assistant Configuration de Defender Entreprise s’exécute la première fois qu’une personne accède à **Assets** > **Devices**. 
 
 L’écran de démarrage de l’Assistant Installation ressemble à l’image suivante :
 
@@ -61,9 +61,9 @@ L’Assistant Installation est conçu pour vous aider à configurer Defender ent
 
    [En savoir plus sur les rôles et les autorisations](mdb-roles-permissions.md). 
 
-2. **Configurez les notifications par e-mail**. Dans cette étape, vous pouvez configurer des notifications par e-mail pour votre équipe de sécurité. Ensuite, lorsqu’une alerte est générée ou qu’une nouvelle vulnérabilité est détectée, votre équipe de sécurité ne la manque pas, même si elle est loin de son bureau. [En savoir plus sur les notifications par e-mail](mdb-email-notifications.md). 
+2. **Configurez les notifications par e-mail**. Dans cette étape, vous pouvez configurer des notifications par e-mail pour votre équipe de sécurité. Ensuite, lorsqu’une alerte est générée ou qu’une nouvelle vulnérabilité est détectée, votre équipe de sécurité ne la manque pas, même si elle est loin de son bureau. [Mer informasjon sur les notifications par e-mail](mdb-email-notifications.md). 
 
-3. **Embarquer et configurer les appareils Windows**. Dans cette étape, vous pouvez intégrer rapidement les appareils Windows de votre entreprise à Defender entreprise. L’intégration immédiate des appareils permet de protéger ces appareils dès le premier jour. [En savoir plus sur l’intégration d’appareils à Defender entreprise](mdb-onboard-devices.md).
+3. **Embarquer et configurer les appareils Windows**. Dans cette étape, vous pouvez intégrer rapidement les appareils Windows de votre entreprise à Defender entreprise. L’intégration immédiate des appareils permet de protéger ces appareils dès le premier jour. [Mer informasjon sur l’intégration d’appareils à Defender entreprise](mdb-onboard-devices.md).
 
    - **Si vous n’utilisez pas Intune**, vous pouvez intégrer des appareils dans le portail Microsoft 365 Defender. 
    - **Si vous utilisez déjà Microsoft Intune** et que votre entreprise dispose d’appareils inscrits dans Intune, vous pouvez continuer à utiliser Intune. Consultez [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security).

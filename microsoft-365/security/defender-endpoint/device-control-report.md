@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bc763de37b0bfffa8eaa30703db3da3f9acc81c2
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ebe0902d917ccc99dca7c8de97eb452b777f2e8c
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522761"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711277"
 ---
 # <a name="device-control-report"></a>Rapport de contrôle d’appareil
 
@@ -41,7 +42,7 @@ Avec le rapport de contrôle d’appareil, vous pouvez afficher les événements
 Les événements d’audit incluent :
 
 - **Montage et démontage du lecteur USB :** Auditez les événements générés lorsqu’un lecteur USB est monté ou démonté.
-- **PnP :** Plug-and-Play événements d’audit sont générés lorsque le stockage amovible, une imprimante ou un média Bluetooth est connecté.
+- **PnP :** technologie Plug and Play événements d’audit sont générés lorsque le stockage amovible, une imprimante ou un média Bluetooth est connecté.
 - **Contrôle d’accès au stockage amovible :** Les événements sont générés lorsqu’une stratégie de contrôle d’accès au stockage amovible est déclenchée. Il peut s’agir de l’audit, du bloc ou de l’autorisation.
 
 ## <a name="monitor-device-control-security"></a>Surveiller la sécurité du contrôle d’appareil

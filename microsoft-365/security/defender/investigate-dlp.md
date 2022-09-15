@@ -16,12 +16,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.openlocfilehash: 275a05db866de90eada1d948fff9fe559502d45f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- met150
+ms.openlocfilehash: c4ce493800506d619a5dbcbee955dfd1f40e4615
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474531"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710431"
 ---
 # <a name="investigate-data-loss-incidents-with-microsoft-365-defender"></a>Examiner les incidents de perte de données avec Microsoft 365 Defender
 

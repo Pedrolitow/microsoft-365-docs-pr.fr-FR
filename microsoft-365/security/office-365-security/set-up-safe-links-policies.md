@@ -19,12 +19,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies liens sécurisés et des paramètres de liens sécurisés globaux dans Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ac2c6a2fb5ca151ba50176ae9faf06ec7b8cd0ab
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7b251b20542762130aaeb25b49089a4a3e67cf58
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611320"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709220"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
@@ -141,7 +141,7 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
        - **Ne réécrivez pas les URL suivantes dans la section e-mail** : Cliquez sur **Gérer (nn) URL** pour autoriser l’accès à des URL spécifiques qui seraient autrement bloquées par des liens fiables.
 
          > [!NOTE]
-         > Les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez les [entrées d’autorisation d’URL dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) afin que les URL ne soient pas analysées ou encapsulées par des liens sécurisés pendant le flux de messagerie _et_ au moment du clic.
+         > Les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez [les entrées d’autorisation d’URL dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) pour remplacer le verdict de l’URL Liens fiables.
 
      1. Dans gérer **les URL pour ne pas réécrire** le menu volant qui s’affiche, cliquez sur ![l’icône Ajouter des URL.](../../media/m365-cc-sc-create-icon.png) **Ajoutez des URL**.
      2. Dans le menu volant **Ajouter des URL** qui s’affiche, tapez l’URL ou la valeur souhaitée, sélectionnez l’entrée qui apparaît sous la zone, puis cliquez sur **Enregistrer**. Répétez cette étape autant de fois que nécessaire.

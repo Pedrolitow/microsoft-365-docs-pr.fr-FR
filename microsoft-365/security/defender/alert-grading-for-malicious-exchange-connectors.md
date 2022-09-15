@@ -21,12 +21,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.openlocfilehash: 16f168fc772e4b4c9e7f48221dbd14039690ba83
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- MET150
+ms.openlocfilehash: d753b33a8e106316c0e51e8ecbcc19cdc10bed4f
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480232"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711558"
 ---
 # <a name="alert-grading-for-malicious-exchange-connectors"></a>Classement des alertes pour les connecteurs d’échange malveillants
 

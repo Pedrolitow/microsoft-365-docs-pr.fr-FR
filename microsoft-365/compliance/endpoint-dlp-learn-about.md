@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des points de terminaison étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: adcfd8576d942581f2f4f0afae2e73e7dea2cf7e
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 862353d3b0f63cdaf6867ddbe1b9ff7e304096cc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615207"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709198"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>En savoir plus sur les points de terminaison de protection contre la perte de données
 
@@ -77,7 +77,7 @@ Endpoint DLP prend en charge la surveillance de ces types de fichiers par le bia
 - fichiers .txt
 - Fichiers RTF
 - fichiers c
-- fichiers de classe
+- Fichiers .class (Windows uniquement)
 - fichiers CPP
 - fichiers cs
 - fichiers h
@@ -151,7 +151,7 @@ L’intégration et déclassement sont gérés à l’aide de scripts téléchar
 
  Utilisez les procédures décrites dans [Prise en main des points de terminaison Microsoft 365 DLP](endpoint-dlp-getting-started.md) vers les appareils intégrés.
 
-Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](../security/defender-endpoint/configure-machines-onboarding.md), ces derniers apparaissent automatiquement dans la liste des appareils. Cela est dû au fait que l’intégration à Defender intègre également des appareils à DLP. Vous devez uniquement **Activer la surveillance des appareils** pour utiliser la protection contre la perte de données du point de terminaison. .
+Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](../security/defender-endpoint/configure-machines-onboarding.md), ces derniers apparaissent automatiquement dans la liste des appareils. Cela est dû au fait que l’intégration à Defender intègre également des appareils à DLP. Vous devez uniquement **Activer la surveillance des appareils** pour utiliser la protection contre la perte de données du point de terminaison.
 
 > [!div class="mx-imgBorder"]
 > ![liste des appareils gérés.](../media/endpoint-dlp-learn-about-2-device-list.png)

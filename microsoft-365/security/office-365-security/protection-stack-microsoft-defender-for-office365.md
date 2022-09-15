@@ -14,12 +14,13 @@ description: Suivez le chemin d’un message entrant via la pile de filtrage des
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 14dfa4b369c8f555f2368a7065648e518ca741e2
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 6fdd05c5a6afdb9736594c19ca447d8212269a7c
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590675"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709066"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protection contre les menaces étape par étape dans Microsoft Defender pour Office 365
 
@@ -142,7 +143,7 @@ Le diagramme final (comme avec toutes les parties du diagramme qui le compose) *
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Toutes les phases de filtrage dans Defender pour Office 365 dans l’ordre, de 1 à 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Avez-vous besoin de configurer Microsoft Defender pour Office 365 ***right now** _? Utilisez cette pile, _now*, avec [cette étape pour](protect-against-threats.md) commencer à protéger votre organisation.
 

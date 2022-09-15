@@ -21,19 +21,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 42e7b179fe958b93e7ba3064cce55cb0add715ef
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 04047f078f887687db4cf9f10d49c620125fc4d6
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787163"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710497"
 ---
 # <a name="learn-about-communication-compliance"></a>En savoir plus sur la conformité des communications
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](/microsoft-365/compliance/compliance-easy-trials).
 
-Conformité des communications Microsoft Purview est une solution à risque interne qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les e-mails analysés, Microsoft Teams, Yammer ou les communications tierces de votre organisation et prendre les mesures appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
+Conformité des communications Microsoft Purview est une solution à risque interne qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les e-mails scannés, les communications Microsoft Teams, Yammer ou de tiers dans votre organisation et prendre les mesures appropriées pour s'assurer qu'ils sont conformes aux normes de messages de votre organisation.
 
 Les stratégies de conformité des communications dans Microsoft 365 vous aident à surmonter de nombreux défis modernes liés à la conformité et aux communications internes et externes, notamment :
 
@@ -50,7 +50,7 @@ Pour obtenir les dernières présentations Ignite pour la conformité des commun
 - [Favoriser une culture de sécurité et d’inclusion avec la conformité des communications](https://www.youtube.com/watch?v=oLVzxcaef3w)
 - [Découvrez comment réduire les risques de communication au sein de votre organisation](https://www.youtube.com/watch?v=vzARb1YaxGo)
 - [Respecter les exigences de conformité réglementaire avec la conformité aux communications](https://www.youtube.com/watch?v=gagOhtCBfgU)
-- [Mieux avec Microsoft Teams - En savoir plus sur les dernières fonctionnalités intégrées natives de Teams dans la conformité des communications](https://www.youtube.com/watch?v=m4jukD5Fh-o)
+- [Mieux avec Microsoft Teams - Mer informasjon sur les dernières fonctionnalités intégrées natives de Teams dans la conformité des communications](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Pour obtenir une vue d’ensemble rapide de la conformité des communications, consultez la vidéo [Détecter le harcèlement au travail et répondre avec la conformité des communications](https://youtu.be/z33ji7a7Zho) sur le [canal Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
@@ -131,11 +131,15 @@ Les stratégies de conformité des communications analysent et capturent les mes
 
 Pour en savoir plus sur la prise en charge des canaux de messagerie dans les stratégies de conformité des communications, consultez [Détecter les signaux de canal avec la conformité des communications](/microsoft-365/compliance/communication-compliance-channels).
 
+## <a name="get-started-with-recommended-actions-preview"></a>Prise en main des actions recommandées (préversion)
+
+Que vous configuriez la conformité des communications pour la première fois ou que vous commenciez à créer de nouvelles stratégies, la nouvelle expérience [d’actions recommandées](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) peut vous aider à tirer le meilleur parti des fonctionnalités de conformité des communications. Les actions recommandées incluent la configuration d’autorisations, la création de groupes de distribution, la création d’une stratégie, etc.
+
 ## <a name="workflow"></a>Flux de travail
 
 La conformité aux communications vous aide à résoudre les problèmes courants associés à la conformité aux stratégies internes et aux exigences de conformité réglementaire. Avec des modèles de stratégie axés et un flux de travail flexible, vous pouvez utiliser des insights actionnables pour résoudre rapidement les problèmes de conformité détectés.
 
-L’identification et la résolution des problèmes de conformité avec la conformité des communications utilisent le flux de travail suivant :
+L'identification et la résolution des problèmes de conformité de la communication utilisent le flux de travail suivant :
 
 ![Flux de travail de conformité des communications.](../media/communication-compliance-workflow.png)
 
@@ -152,8 +156,8 @@ Vous pouvez choisir parmi les modèles de stratégie suivants dans le portail de
 - **Surveiller les images inappropriées** : utilisez ce modèle pour créer rapidement une stratégie qui utilise des classifieurs intégrés pour détecter automatiquement le contenu qui contient des images adultes et osées qui peuvent être considérées comme inappropriées dans votre organisation.
 - **Surveiller les informations sensibles** : utilisez ce modèle pour créer rapidement une stratégie pour analyser les communications contenant des types d’informations sensibles définis ou des mots clés afin de vous assurer que les données importantes ne sont pas partagées avec des personnes qui ne doivent pas avoir accès.
 - **Surveiller la conformité aux réglementations financières** : utilisez ce modèle pour créer rapidement une stratégie afin d’analyser les communications à la recherche de références aux termes financiers standard associés aux normes réglementaires.
-- **Surveiller les conflits d’intérêts** : utilisez ce modèle pour créer rapidement une stratégie afin de détecter les communications entre deux groupes ou deux utilisateurs afin d’éviter les conflits d’intérêts.
-- **Stratégie personnalisée** : utilisez ce modèle pour configurer des canaux de communication spécifiques, des conditions de détection individuelles et la quantité de contenu à détecter et à examiner dans votre organisation.
+- **Surveillance des conflits d'intérêts** : Utilisez ce modèle pour créer rapidement une stratégie visant à détecter les communications entre deux groupes ou deux utilisateurs afin d'éviter les conflits d'intérêts.
+- **Stratégie personnalisée** : Utilisez ce modèle pour configurer des canaux de communication spécifiques, des conditions de détection individuelles et la quantité de contenu à détecter et à examiner dans votre organisation.
 - **Stratégie de messages signalés par** l’utilisateur : cette stratégie système prend en charge les messages signalés par l’utilisateur à partir de messages de canal, de groupe et de conversation privée. Activé par défaut dans le Centre d’administration Teams.
 
 >[!TIP]
@@ -163,7 +167,7 @@ Vous pouvez choisir parmi les modèles de stratégie suivants dans le portail de
 
 Dans cette étape, vous étudiez plus en détail les problèmes détectés comme correspondant à vos stratégies de conformité des communications. Cette étape inclut les actions suivantes disponibles dans le portail de conformité Microsoft Purview :
 
-- **Alertes** : lorsqu’un message correspond à une stratégie, une alerte est générée automatiquement. Pour chaque alerte, vous pouvez voir l’état, la gravité, l’heure détectée et si un cas eDiscovery (Premium) est affecté et son état. Les nouvelles alertes sont affichées sur la page d’accueil de conformité des communications et la page **Alertes** et sont répertoriées par ordre de gravité.
+- **Alertes** : lorsqu’un message correspond à une stratégie, une alerte est générée automatiquement. Pour chaque alerte, vous pouvez voir le statut, la gravité, l'heure à laquelle elle a été détectée, et si un cas d'eDiscovery (Premium) est attribué et son statut. Les nouvelles alertes sont affichées sur la page d’accueil de conformité des communications et la page **Alertes** et sont répertoriées par ordre de gravité.
 - **Gestion des problèmes** : pour chaque alerte, vous pouvez prendre des mesures d’examen afin de résoudre le problème détecté dans le message.
 - **Révision d’un document :** pendant l’examen d’un problème, vous pouvez utiliser plusieurs types d’affichages pour vous aider à évaluer correctement le problème détecté. Les vues incluent un résumé de conversation, du texte uniquement et des vues détaillées de la conversation de communication.
 - **Examen de l’historique des activités des utilisateurs**: affichez l’historique des activités des messages utilisateur et des actions de correction pour les correspondances de stratégie telles que les notifications et réaffectations passées.

@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ad6cf3d61efec199d9a30ba67e06829b6f1feccb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6b8529338522df41c25dafb30d25b879a5790861
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688118"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709393"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils dans la liste des appareils Microsoft Defender pour point de terminaison
 
@@ -200,7 +200,6 @@ La carte **d’évaluation de la sécurité** affiche le niveau d’exposition g
 
 :::image type="content" source="images/security-assessments.png" alt-text="Carte d’évaluation de la sécurité" lightbox="images/security-assessments.png":::
 
-
 ### <a name="device-health-status"></a>État d’intégrité de l’appareil
 
 La carte **d’état d’intégrité** de l’appareil affiche un rapport d’intégrité résumé pour l’appareil spécifique. L’un des messages suivants s’affiche en haut de la carte pour indiquer l’état global de l’appareil (répertorié dans l’ordre de priorité la plus élevée à la plus basse) :
@@ -223,14 +222,12 @@ Les autres informations de la carte sont les suivantes : la dernière analyse co
 
 Notez qu’un cercle gris indique que les données sont inconnues. 
 
->[!NOTE]
->Le message d’état global pour les appareils macOS et Linux s’affiche actuellement comme « État non disponible pour macOS & Linux ». Actuellement, le résumé de l’état est disponible uniquement pour les appareils Windows. Toutes les autres informations du tableau sont à jour pour afficher les états individuels de chaque signal d’intégrité d’appareil pour toutes les plateformes prises en charge. 
+> [!NOTE]
+> Le message d’état global pour les appareils macOS et Linux s’affiche actuellement comme « État non disponible pour macOS & Linux ». Actuellement, le résumé de l’état est disponible uniquement pour les appareils Windows. Toutes les autres informations du tableau sont à jour pour afficher les états individuels de chaque signal d’intégrité d’appareil pour toutes les plateformes prises en charge. 
 
 Pour obtenir une vue détaillée du rapport d’intégrité de l’appareil, vous pouvez accéder à **Rapports > Intégrité des appareils**. Pour plus d’informations, consultez le [rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/machine-reports). 
 
 :::image type="content" source="images/device-health-status.png"  alt-text="Carte d’état d’intégrité de l’appareil" lightbox="images/device-health-status.png":::
-
-
 
 ## <a name="related-topics"></a>Voir aussi
 

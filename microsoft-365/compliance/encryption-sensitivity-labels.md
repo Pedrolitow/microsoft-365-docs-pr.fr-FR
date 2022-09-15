@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 091b78e2b11633eddec41809748e54ba333c09be
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fcd1dd49aa1bf985794d9bb2dd0c270de01e8bc2
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701069"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710541"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -67,6 +67,10 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
 - Vérifier la configuration réseau requise
     
     Vous devrez peut-être apporter quelques modifications sur vos appareils réseau tels que les pare-feux. Pour obtenir des détails, voir [Pare-feu et infrastructure réseau](/azure/information-protection/requirements#firewalls-and-network-infrastructure) dans la documentation Azure Information Protection.
+
+- Vérifier votre configuration Azure AD
+    
+    Certaines configurations Azure Active Directory (Azure AD) peuvent empêcher l’accès autorisé au contenu chiffré. Par exemple, les paramètres d’accès entre locataires et les stratégies d’accès conditionnel. Pour plus d’informations, consultez [la configuration d’Azure AD pour le contenu chiffré](encryption-azure-ad-configuration.md).
 
 - Configurer Exchange pour Azure Information Protection
     

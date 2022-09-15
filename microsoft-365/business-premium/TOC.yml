@@ -1,6 +1,6 @@
 - name: Microsoft 365 Business Premium
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       href: index.md
     - name: Productivité et sécurité
       href: m365bp-secure-users.md
@@ -16,7 +16,7 @@
   items:
     - name: Se connecter et configurer
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
@@ -68,30 +68,22 @@
   items:
     - name: Configurer et sécuriser des appareils gérés
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: m365bp-protect-devices.md
-        - name: Configurer les appareils gérés
-          href: m365bp-managed-devices-setup.md
+        - name: Effectuer une mise à niveau vers Windows 10 Professionnel (si nécessaire)
+          href: m365bp-upgrade-windows-10-pro.md
         - name: Intégrer des appareils inscrits et appliquer des stratégies
           href: m365bp-onboard-devices-mdb.md
-        - name: Protéger les appareils Windows
-          items:
-            - name: Sécuriser les appareils Windows
-              href: m365bp-secure-windows-devices.md
-            - name: Effectuer une mise à niveau vers Windows 10 Professionnel (si nécessaire)
-              href: m365bp-upgrade-windows-10-pro.md
-            - name: Gérer les appareils Windows
-              href: m365bp-manage-windows-devices.md
-            - name: Préparation au déploiement client Office
-              href: m365bp-prepare-for-office-client-deployment.md
-            - name: Créer des paramètres de protection des applications pour les appareils Windows
-              href: m365bp-protection-settings-for-windows-10-devices.md
-            - name: Valider les paramètres d’application sur les appareils Windows
-              href: m365bp-validate-settings-on-windows-10-pcs.md
-    - name: Examiner et modifier les stratégies d’appareil
-      href: m365bp-view-edit-create-mdb-policies.md
-    - name: Gérer les groupes d’appareils
-      href: m365bp-device-groups-mdb.md
+        - name: Utiliser Windows Autopilot pour configurer ou réinitialiser des appareils
+          href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+        - name: Installer Microsoft 365 Apps sur les appareils
+          href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Surveiller les appareils intégrés
+      items:
+        - name: Examiner et modifier les stratégies d’appareil
+          href: m365bp-view-edit-create-mdb-policies.md
+        - name: Gérer les groupes d’appareils
+          href: m365bp-device-groups-mdb.md
 - name: Gestion des incidents de sécurité
   items:
     - name: Vue d’ensemble
@@ -122,6 +114,8 @@
       href: m365bp-reset-devices-to-factory-settings.md
 - name: Référence
   items:
+    - name: 10 principales façons de sécuriser une entreprise
+      href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Glossaire des termes
       href: m365bp-glossary.yml
     - name: Forum aux questions sur Microsoft 365 Business Premium
@@ -142,15 +136,5 @@
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Gestionnaire de conformité
       href: m365bp-set-up-compliance.md
-    - name: Windows Autopilot
-      items:
-        - name: Ajout d’un profil et d’appareils AutoPilot
-          href: m365bp-add-Autopilot-devices-and-profile.md
-        - name: Paramètres du profil de pilote automatique
-          href: m365bp-Autopilot-profile-settings.md
-        - name: Créer et modifier des profils Autopilot
-          href: m365bp-create-and-edit-Autopilot-devices.md
-    - name: Paramètres de protection des applications pour Android et iOS
-      href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Valider les paramètres d’application sur Android et iOS
-      href: m365bp-validate-settings-on-android-or-ios.md
+    - name: Scénarios et fonctionnalités de Windows Autopilot
+      href: /mem/autopilot/windows-autopilot-scenarios

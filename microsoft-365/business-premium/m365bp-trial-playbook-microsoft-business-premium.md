@@ -11,38 +11,38 @@ ms.collection: m365-security-compliance
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
-ms.date: 08/24/2022
+ms.date: 09/14/2022
 search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 52b38d8145c43eac2eeef34b063a3a327f2d5a3f
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7b8d3c2b0a0b090ee763c80acdcb2f5dc71fa495
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611845"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710628"
 ---
 # <a name="trial-playbook-microsoft-365-business-premium"></a>Playbook d’évaluation : Microsoft 365 Business Premium
 
-Bienvenue dans le guide opérationnel d’évaluation Microsoft Business Premium. Ce guide opérationnel vous aidera à tirer le meilleur parti de votre essai gratuit de 30 jours en vous apprenant comment Microsoft 365 Business Premium augmente la productivité et contribue à protéger votre organisation avec des fonctionnalités de sécurité avancées. À l’aide des recommandations de Microsoft, découvrez comment configurer vos fonctionnalités de protection contre les menaces, analyser les menaces détectées et répondre aux cyberattaques.
+Bienvenue dans le playbook d’évaluation De Microsoft Business Premium ! Ce playbook vous aidera à tirer le meilleur parti de votre essai gratuit de 30 jours. Vous pouvez voir de première main comment Microsoft 365 Business Premium augmente la productivité et contribue à protéger votre organisation avec des fonctionnalités de sécurité avancées. Utilisez ce playbook pour configurer vos fonctionnalités de protection contre les menaces, analyser les menaces détectées et répondre aux cyberattaques.
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Configurer la version d’évaluation Microsoft 365 Business Premium
 
 Lorsque vous [commencer une version d’évaluation ou acheter Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), la première étape consiste à tout configurer.
 
 > [!TIP]
-> Enregistrez ce guide opérationnel dans les favoris de votre navigateur. Lorsque des liens dans le guide opérationnel vous éloignent de cet emplacement, revenez simplement à ce guide opérationnel pour continuer.
+> Enregistrez ce guide opérationnel dans les favoris de votre navigateur. Lorsque des liens dans le playbook vous éloignent de cet emplacement, il sera plus facile de revenir à ce playbook pour continuer.
 
-Tout d’abord, [configurez votre version d’évaluation](../business-premium/m365bp-setup.md) !
+1. [Configurez votre version d’évaluation](../business-premium/m365bp-setup.md) !
 
-Une fois que vous avez lancé la version d’évaluation et terminé le processus d’installation, la prise en compte des modifications peut prendre jusqu’à deux heures.
+   Une fois que vous avez lancé la version d’évaluation et terminé le processus d’installation, la prise en compte des modifications peut prendre jusqu’à deux heures.
 
-Microsoft 365 Business Premium inclut des [stratégies de sécurité prédéfinies](/security/office-365-security/preset-security-policies.md) que vous pouvez utiliser dans votre environnement. Ces stratégies représentent un profil de protection de référence adapté à la plupart des utilisateurs. La protection standard inclut :
+2. Utilisez vos [stratégies de sécurité prédéfinies](/security/office-365-security/preset-security-policies.md). Ces stratégies représentent un profil de protection de référence adapté à la plupart des utilisateurs. La protection standard inclut :
 
-- [Liens fiables](../security/office-365-security/safe-links.md), [pièces jointes fiables](../security/office-365-security/safe-attachments.md)et stratégies [anti-hameçonnage](../security/office-365-security/anti-phishing-protection.md) qui s’appliquent à l’ensemble du locataire ou au sous-ensemble d’utilisateurs que vous avez peut-être choisis pendant le processus de configuration de l’évaluation. (Votre abonnement d’évaluation est destiné à un maximum de 25 utilisateurs.)
+   - [Liens fiables](../security/office-365-security/safe-links.md), [pièces jointes fiables](../security/office-365-security/safe-attachments.md)et stratégies [anti-hameçonnage](../security/office-365-security/anti-phishing-protection.md) qui s’appliquent à l’ensemble du locataire ou au sous-ensemble d’utilisateurs que vous avez peut-être choisis pendant le processus de configuration de l’évaluation. (Votre abonnement d’évaluation est destiné à un maximum de 25 utilisateurs.)
 
-- Protection des applications de productivité, telles que [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Approsoft Office](/deployoffice/about-microsoft-365-apps) et [Microsoft Teams](/microsoftteams/teams-overview).
+   - Protection des applications de productivité, telles que [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Approsoft Office](/deployoffice/about-microsoft-365-apps) et [Microsoft Teams](/microsoftteams/teams-overview).
 
 ## <a name="add-a-domain"></a>Ajouter un domaine
 
@@ -70,7 +70,7 @@ Microsoft 365 Business Premium inclut Defender entreprise, une nouvelle solution
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-2. Exécutez l’[Assistant Installation](../security/defender-business/mdb-use-wizard.md).
+2. Accédez à **Assets** > **Devices**. Si Defender Entreprise n’est pas déjà configuré, vous êtes invité à exécuter [l’Assistant Installation](../security/defender-business/mdb-use-wizard.md).
 
 3. [Intégration des appareils](../security/defender-business/mdb-onboard-devices.md).
 
@@ -80,7 +80,7 @@ Microsoft 365 Business Premium inclut Defender entreprise, une nouvelle solution
 
 1. Tout d’abord, vous devez [installer Microsoft 365 Apps](m365bp-install-office-apps.md).
 
-2. Accédez à [https://office.com](https://office.com) et connectez-vous. (Voir [Prise en main à Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
+2. Accédez à [https://office.com](https://office.com) et connectez-vous. (Voir [Začínáme à Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 
 3. Créez un document Office, tel qu’un [document Word](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 

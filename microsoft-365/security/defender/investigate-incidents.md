@@ -19,12 +19,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.openlocfilehash: f4349df98ea54bd960506c8812fe180bdd9aad18
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- MET150
+ms.openlocfilehash: 53d458fdd15a403984fd6636a3b0c3cb54d0398d
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482910"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711145"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 

@@ -15,12 +15,12 @@ metadata:
   author: denisebmsft
   ms.author: deniseb
   ms.date: 08/26/2022
-  ms.openlocfilehash: 02dc3d9e500860e7542215501d562e05b12a03a2
-  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+  ms.openlocfilehash: 78e89b56dea754fe5b2dc223df527860b93622ca
+  ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/13/2022
-  ms.locfileid: "67664119"
+  ms.lasthandoff: 09/15/2022
+  ms.locfileid: "67711431"
 productDirectory:
   title: Productivité et sécurité avec Microsoft 365 Business Premium
   items:
@@ -175,6 +175,9 @@ conceptualContent:
       text: Communauté technique pour les petites et moyennes entreprises
   - title: Procédures
     links:
+    - url: ../admin/security-and-compliance/secure-your-business-data.md
+      itemType: how-to-guide
+      text: Voir les 10 meilleures façons de sécuriser mon entreprise
     - url: ../admin/manage/find-your-partner-or-reseller.md
       itemType: how-to-guide
       text: Trouver un partenaire Microsoft pour aider mon entreprise

@@ -12,17 +12,17 @@ ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/30/2022
 ms.reviewer: shlomiakirav
-f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 01e04a3f541d2003dbc3863b7e550fc4e3663200
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+f1.keywords: NOCSH
+ms.openlocfilehash: fb43a239584ea2439b6f5c1042675cf81e4b8adc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600348"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710958"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparer les fonctionnalités de sécurité dans les plans Microsoft 365 pour les petites et moyennes entreprises
 
@@ -48,7 +48,7 @@ Microsoft offre un large éventail de solutions et de services cloud, notamment 
 | **[Microsoft 365 Business Premium](../../business-premium/index.md)** | **Fonctionnalités de Defender entreprise, ainsi que des fonctionnalités de productivité et de sécurité supplémentaires**<ul><li>[Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (applications et services Office et Microsoft Teams)</li><li>[Activation d’ordinateur partagé](/deployoffice/overview-shared-computer-activation) (pour le déploiement de Microsoft 365 Apps)</li><li>[Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (mise à niveau à partir des versions précédentes de Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (pour la configuration et la configuration des appareils Windows)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (anti-hameçonnage, antispam, logiciel anti-programme malveillant et usurpation d’identité pour le courrier électronique)</li><li>[Microsoft Defender pour Office 365 Plan 1](../office-365-security/overview.md) (anti-hameçonnage avancé, détections en temps réel, pièces jointes sécurisées, liens fiables)</li><li>[Extension automatique de l’archivage](../../compliance/autoexpanding-archiving.md) (pour l’e-mail)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (gestion des identités)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (intégration et gestion des appareils)</li><li>[Azure Information Protection Premium Plan 1](/azure/information-protection/what-is-information-protection) (protection des informations sensibles)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (machines virtuelles gérées de manière centralisée et sécurisées dans le cloud)</li></ul> |
 
   
-<a id="fna">a)</a> Microsoft Intune est nécessaire pour modifier ou personnaliser les règles de réduction de la surface d’attaque. Intune est inclus dans Microsoft 365 Business Premium.
+<a id="fna">a)</a> Microsoft Intune est nécessaire pour modifier ou personnaliser les règles de réduction de la surface d’attaque. Intune peut être ajouté à la version autonome de Defender entreprise. Intune est inclus dans Microsoft 365 Business Premium.
 
 <a id="fnb">b</a>) Microsoft Intune est nécessaire pour intégrer des appareils iOS et Android. Consultez [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md).
 
@@ -61,36 +61,39 @@ Defender entreprise apporte les fonctionnalités de niveau entreprise de Defende
 |[Gestion centralisée](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup> | :::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
 |[Configuration du client simplifiée](mdb-simplified-configuration.md)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::| | |
 |[Gestion des vulnérabilités Microsoft Defender](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::| |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
-|[Fonctionnalités de réduction de la surface d’attaque](../defender-endpoint/overview-attack-surface-reduction.md)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
+|[Fonctionnalités de réduction de la surface d’attaque](../defender-endpoint/overview-attack-surface-reduction.md) <sup>[[2](#fn2)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
 |[Protection de nouvelle génération](../defender-endpoint/next-generation-protection.md)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
-|[Détection et réponse](../defender-endpoint/overview-endpoint-detection-response.md) des points de terminaison <sup>[[2](#fn2)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
-|[Investigation et réponse automatisées](../defender-endpoint/automated-investigations.md) <sup>[[3](#fn3)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: ||:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
-|[Repérage des menaces](../defender-endpoint/advanced-hunting-overview.md) et six mois de conservation des données <sup>[[4](#fn4)]</sup> | | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
-|[Analyse des menaces](../defender-endpoint/threat-analytics.md) <sup>[[5](#fn5)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
-|[Prise en charge multiplateforme](../defender-endpoint/minimum-requirements.md) <br/>(Système d’exploitation Windows, Mac, iOS et Android) <sup>[[6](#fn6)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
+|[Détection et réponse](../defender-endpoint/overview-endpoint-detection-response.md) des points de terminaison <sup>[[3](#fn3)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
+|[Investigation et réponse automatisées](../defender-endpoint/automated-investigations.md) <sup>[[4](#fn4)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: ||:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
+|[Repérage des menaces](../defender-endpoint/advanced-hunting-overview.md) et six mois de conservation des données <sup>[[5](#fn5)]</sup> | | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
+|[Analyse des menaces](../defender-endpoint/threat-analytics.md) <sup>[[6](#fn6)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
+|[Prise en charge multiplateforme](../defender-endpoint/minimum-requirements.md) <br/>(Système d’exploitation Windows, Mac, iOS et Android) <sup>[[7](#fn7)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
 |[Spécialistes des menaces Microsoft](../defender-endpoint/microsoft-threat-experts.md)| | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
 |API partenaires|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
-|[intégration Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Pour afficher les incidents de sécurité entre les locataires des clients) <sup>[[7](#fn7)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
+|[intégration Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Pour afficher les incidents de sécurité entre les locataires des clients) <sup>[[8](#fn8)]</sup>|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 
 (<a id="fn1">1</a>) Intégrer et gérer des appareils dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ou à l’aide de Microsoft Intune, géré dans le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
-(<a id="fn2">2</a>) Les fonctionnalités de détection et de réponse des points de terminaison (EDR) dans Defender for Business incluent la détection basée sur le comportement et les actions de réponse manuelles suivantes : 
+(<a id="fn2">2</a>) Intune est nécessaire pour configurer et gérer des [règles ASR](../defender-endpoint/attack-surface-reduction.md).
+
+(<a id="fn3">3</a>) Les fonctionnalités de détection et de réponse de point de terminaison (EDR) dans Defender for Business incluent la détection basée sur le comportement et les actions de réponse manuelles suivantes : 
 - Exécuter une analyse antivirus
 - Isoler l’appareil
 - Arrêter et mettre en quarantaine un fichier
 - Ajouter un indicateur pour bloquer ou autoriser un fichier
 
-(<a id="fn3">3</a>) Dans Defender pour Entreprises, l’investigation et la réponse automatisées sont activées par défaut, à l’échelle du client. La désactivation de l’investigation et de la réponse automatisées affecte la protection en temps réel. Consultez [Les paramètres de révision pour les fonctionnalités avancées](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
+(<a id="fn4">4</a>) Dans Defender pour Entreprises, l’investigation et la réponse automatisées sont activées par défaut, à l’échelle du client. La désactivation de l’investigation et de la réponse automatisées affecte la protection en temps réel. Consultez [Les paramètres de révision pour les fonctionnalités avancées](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
 
-(<a id="fn4">4</a>) Il n’existe aucune vue de chronologie dans Defender entreprise.
+(<a id="fn5">5</a>) Il n’existe aucune vue de chronologie dans Defender entreprise.
 
-(<a id="fn5">5</a>) Dans Defender entreprise, l’analytique des menaces est optimisée pour les petites et moyennes entreprises.
+(<a id="fn6">6</a>) Dans Defender entreprise, l’analytique des menaces est optimisée pour les petites et moyennes entreprises.
 
-(<a id="fn6">6</a>) Consultez [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
+(<a id="fn7">7</a>) Consultez [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
 
-(<a id="fn7">7</a>) La possibilité d’afficher les incidents entre locataires à l’aide de Defender pour point de terminaison est une nouveauté !
+(<a id="fn8">8</a>) La possibilité d’afficher les incidents entre locataires à l’aide de Defender pour point de terminaison est une nouveauté !
 
-Consultez également [Comparer les plans de sécurité des points de terminaison Microsoft](../defender-endpoint/defender-endpoint-plan-1-2.md).
+> [!TIP]
+> Consultez également [Comparer les plans de sécurité des points de terminaison Microsoft](../defender-endpoint/defender-endpoint-plan-1-2.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
