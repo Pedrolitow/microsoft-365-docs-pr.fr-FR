@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: a565fc87c538fa6f9f590a4037ff9c346118c3cf
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+search.appverid: met150
+ms.openlocfilehash: 5cf63f594d8e1d4b165ea435547d95786a12a0f4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/14/2022
-ms.locfileid: "67680172"
+ms.locfileid: "67702993"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurer l’accès conditionnel dans Microsoft Defender pour point de terminaison
 

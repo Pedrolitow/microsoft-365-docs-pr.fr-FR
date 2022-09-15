@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.collection: Strat_SP_gtc
@@ -15,12 +15,12 @@ description: Découvrez comment créer un groupe Microsoft 365 avec un emplaceme
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-ms.openlocfilehash: ff9b6ae6949ab1e6af1ee102abfcf2cb132fed9f
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: ee2bc775f7274722ad2a59a253d8da8ce6795ce6
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940709"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705181"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Créer un groupe Microsoft 365 avec un emplacement de données préféré spécifique
 
@@ -58,8 +58,8 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-[Créer des groupes avec un emplacement de données préféré spécifique à l’aide de l’API Graph](/graph/api/group-post-groups)
+[Créer des groupes avec un emplacement de données préféré spécifique à l’aide de API Graph](/graph/api/group-post-groups)

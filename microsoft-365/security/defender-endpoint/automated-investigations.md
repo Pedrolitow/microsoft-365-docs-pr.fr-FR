@@ -19,12 +19,13 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d83377503587c76fced144159f2d8f3fc82f4df7
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: a455bae862b01bcf38778fde3ba4af960f6d0e48
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497892"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703267"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 

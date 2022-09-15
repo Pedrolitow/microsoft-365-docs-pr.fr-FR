@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 5a644d63c2e07ea03c98cba6d9925864381161b0
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+search.appverid: met150
+ms.openlocfilehash: 8f2d1200d3d703e89959dbe8446838f266d1731a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560964"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703365"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour point de terminaison pour des fonctionnalités Android
 

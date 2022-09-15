@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Découvrez comment utiliser l’outil Diagnostics de page pour optimiser le poids des pages dans SharePoint pages de site modernes en ligne.
-ms.openlocfilehash: 01a1976972983cccf3e93006e395f789d5882eff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment utiliser l’outil Diagnostics de page pour optimiser le poids des pages dans les pages de site modernes SharePoint Online.
+ms.openlocfilehash: edf88461ed12bf938ca5a6bc21d82341e32e5be2
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101202"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703519"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimiser le poids des pages de sites modernes SharePoint Online
 
@@ -53,7 +53,7 @@ Les résultats possibles sont les suivants :
 
 Si le résultat **Poids de page inférieur à 500 Ko** apparaît dans la section **Attention requise**, vous pouvez cliquer sur le résultat pour afficher les détails.
 
-![Demandes de SharePoint résultats.](../media/modern-portal-optimization/pagediag-page-weight.png)
+![Demandes de résultats SharePoint.](../media/modern-portal-optimization/pagediag-page-weight.png)
 
 ## <a name="remediate-page-weight-issues"></a>Résoudre les problèmes de poids de pages
 

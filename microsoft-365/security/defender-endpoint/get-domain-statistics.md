@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e4dc4137525f9f3019f98979ef33a219868ed15b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ff51eb0a45b5272f49596929ab6a44886d8b1205
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523663"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704785"
 ---
 # <a name="get-domain-statistics-api"></a>Obtenir l’API de statistiques de domaine
 

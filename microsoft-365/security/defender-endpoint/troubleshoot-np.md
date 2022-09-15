@@ -15,12 +15,13 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6b901bf480bda34318042cefb2f8edc8b1f920fb
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: fe09d845a4362e00603f947dbee076aca8e6d902
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579906"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703971"
 ---
 # <a name="troubleshoot-network-protection"></a>Résoudre les problèmes de protection réseau
 

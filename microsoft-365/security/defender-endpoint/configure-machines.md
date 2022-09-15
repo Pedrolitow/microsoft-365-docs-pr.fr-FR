@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 74fe25476a336f04b5d419f93a4554becbb6b6f7
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: ad0cc865362578597620fa4658c83c79dc7ebf02
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679406"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702971"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Vérifier que vos appareils sont correctement configurés
 

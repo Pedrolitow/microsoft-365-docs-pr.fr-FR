@@ -15,12 +15,13 @@ ms.date: 07/11/2022
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b1238e6dfbccaf0aa498f8b6f7feff4c6414cbf8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 63fe41d327d39c15f383c8a70c0b46d5f5d03afd
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477712"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703135"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 

@@ -20,12 +20,13 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: m365d
-ms.openlocfilehash: 68de47244ac8203049157811a0507b0c4b7acad0
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 87c52b5772f3216742786a71bf108d30ef42d305
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522717"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702849"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 

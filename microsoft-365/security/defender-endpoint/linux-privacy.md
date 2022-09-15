@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 81eca3a28577786d1779f6061b5819f418c510db
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: bd81c53bd392e161325fa3bc085f97ae15a493d0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519795"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704587"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité des Microsoft Defender pour point de terminaison sur Linux
 
@@ -86,7 +87,7 @@ Voici quelques informations sur les événements qui sont communs à tous les é
 
 Les champs suivants sont considérés comme courants pour tous les événements :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |platform|Classification générale de la plateforme sur laquelle l’application s’exécute. Permet à Microsoft d’identifier sur quelles plateformes un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
 |machine_guid|Identificateur unique associé à l’appareil. Permet à Microsoft d’identifier si les problèmes affectent un ensemble sélectionné d’installations et le nombre d’utilisateurs concernés.|
@@ -111,7 +112,7 @@ Les données de diagnostic requises permettent d’identifier les problèmes li�
 
 Les champs collectés sont les suivants :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |correlation_id|Identificateur unique associé à l’installation.|
 |version|Version du package.|
@@ -123,7 +124,7 @@ Les champs collectés sont les suivants :
 
 Les champs collectés sont les suivants :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |antivirus_engine.enable_real_time_protection|Indique si la protection en temps réel est activée ou non sur l’appareil.|
 |antivirus_engine.passive_mode|Indique si le mode passif est activé ou non sur l’appareil.|
@@ -145,7 +146,7 @@ Les champs collectés sont les suivants :
 
 Les champs collectés sont les suivants :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |from_version|Version d’origine du renseignement de sécurité.|
 |to_version|Nouvelle version du renseignement de sécurité.|
@@ -160,7 +161,7 @@ Les champs collectés sont les suivants :
 
 Les champs collectés sont les suivants :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |version|Version de Defender pour point de terminaison sur Linux.|
 |instance_id|Identificateur unique généré au démarrage de l’extension de noyau.|
@@ -194,7 +195,7 @@ Parmi les exemples de données de diagnostic facultatives, citons les données c
 
 Les champs collectés sont les suivants :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |connection_retry_timeout|Délai d’expiration de la nouvelle tentative de connexion lors de la communication avec le cloud.|
 |file_hash_cache_maximum|Taille du cache de produit.|
@@ -216,7 +217,7 @@ Les champs collectés sont les suivants :
 
 Les champs collectés sont les suivants :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |how_to_check|Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles).|
 |channel_name|Mettre à jour le canal associé à l’appareil.|
@@ -229,7 +230,7 @@ Les champs collectés sont les suivants :
 
 Les champs suivants sont affichés :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |sha256|Identificateur SHA256 du journal de support.|
 |size|Taille du journal de support.|
@@ -240,7 +241,7 @@ Les champs suivants sont affichés :
 
 Les champs collectés sont les suivants :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |request_id|ID de corrélation pour la demande de chargement du journal de support.|
 |sha256|Identificateur SHA256 du journal de support.|
@@ -256,7 +257,7 @@ Sorties inattendues de l’application et état de celle-ci lorsque cela se prod
 
 Les champs suivants sont collectés :
 
-|Field|Description|
+|Champ|Description|
 |---|---|
 |pkt_ack_timeout|Les propriétés suivantes sont des valeurs numériques agrégées, représentant le nombre d’événements qui se sont produits depuis le démarrage de l’extension de noyau.|
 |pkt_ack_conn_timeout||

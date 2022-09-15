@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c0c26b391f46f7186aa9d9c54e8ef63f98ad6093
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 4ec9f997cca5b118745a82ea11e7557383303ba5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631491"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702927"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -99,7 +99,8 @@ Le proxy statique est configurable via une stratégie de groupe (GP), les deux p
 > Si vous utilisez le paramètre « TelemetryProxyServer » sur des appareils qui sont autrement **entièrement hors connexion**, il est recommandé d’ajouter le paramètre `PreferStaticProxyForHttpRequest` de Registre supplémentaire avec la valeur .`1`<br>
 > L’emplacement du chemin d’accès au Registre parent pour « PreferStaticProxyForHttpRequest » est « HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection »<br>
 > La commande suivante peut être utilisée pour insérer la valeur de Registre à l’emplacement approprié :<br>
-> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```
+> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
+> La valeur de Registre ci-dessus s’applique uniquement à partir de MsSense.exe version 10.8210.* et ultérieure, ou version 10.8049.* et ultérieure (sur Windows Server 2012R2/2016 avec l’agent unifié)
 
 
 

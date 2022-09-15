@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 2/14/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Dans cet article, vous allez découvrir Azure ExpressRoute pour Office 365 et comment l’utiliser pour la planification du réseau.
-ms.openlocfilehash: 59fa69a58bedf6babf2cf277a627d42293487ab1
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: aa5890a6a735f3418a90ae7234173eb504ce16d7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042911"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703409"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 
@@ -39,8 +39,8 @@ Le tableau suivant met en évidence quelques différences entre les connexions I
 
 |**Différences dans la planification réseau**|**Connexion réseau Internet**|**Connexion réseau ExpressRoute**|
 |:-----|:-----|:-----|
-| Accès aux services Internet requis, y compris ;  <br/>  Résolution de noms DNS  <br/>  Vérification de la révocation de certificat  <br/>  Réseaux de distribution de contenu (CDN)  <br/> |Oui  <br/> |Les demandes adressées à l’infrastructure DNS et/ou CDN détenue par Microsoft peuvent utiliser le réseau ExpressRoute.  <br/> |
-| Accès aux services Office 365, y compris ;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office dans un navigateur  <br/>  portail Office 365 et authentification  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](./urls-and-ip-address-ranges.md) <br/> |
+| Accès aux services Internet requis, y compris ;  <br/>  Résolution de noms DNS  <br/>  Vérification de la révocation de certificat  <br/>  Réseaux de distribution de contenu (CDN)  <br/> |Oui  <br/> |Les demandes adressées à l’infrastructure DNS et/ou CDN appartenant à Microsoft peuvent utiliser le réseau ExpressRoute.  <br/> |
+| Accès aux services Office 365, y compris ;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office dans un navigateur  <br/>  portail Office 365 et authentification  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](./urls-and-ip-address-ranges.md) <br/> |
 |Sécurité locale au périmètre.  <br/> |Oui  <br/> |Oui  <br/> |
 |Planification de la haute disponibilité.  <br/> |Basculer vers une autre connexion réseau Internet  <br/> |Basculer vers une autre connexion ExpressRoute  <br/> |
 |Connexion directe avec un profil réseau prévisible.  <br/> |Non  <br/> |Oui  <br/> |

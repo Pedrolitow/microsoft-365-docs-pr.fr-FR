@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment accéder et utiliser des statistiques et des rapports pour les projets de regroupements et de regroupements qui ont été validés dans un ensemble de révisions dans Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 1f9047a047e5c2c4abd01f0cac39ab6cb97e27da
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6e8374fb339c98aae9a34da9f5fc22488c37506a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626840"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703475"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Statistiques et rapports de collecte dans Microsoft Purview eDiscovery (Premium)
 
@@ -139,5 +139,7 @@ Voici d’autres raisons pour lesquelles les résultats estimés d’un brouillo
 - **Modifications qui se produisent entre le moment où l’estimation et la validation des collections provisoires** sont effectuées. Lorsque vous validez un brouillon de collection dans un ensemble de révisions, la recherche est réexécutée pour collecter les éléments les plus récents dans l’index de recherche qui répondent aux critères de recherche. Il est possible que des éléments supplémentaires aient été créés, envoyés ou supprimés qui répondent aux critères de recherche entre la dernière exécution de la collection brouillon et le moment où la collection brouillon est validée dans un ensemble de révisions. Il est également possible que les éléments qui se trouvaient dans l’index de recherche lorsque les résultats de la collection brouillon ont été estimés ne soient plus présents, car ils ont été vidés d’une source de données avant de valider la collection. Une façon d’atténuer ce problème consiste à spécifier une plage de dates pour une collection. Une autre méthode consiste à placer une conservation sur les emplacements de contenu afin que les éléments soient conservés et ne puissent pas être vidés.
 
 - **Éléments non indexés**. Si le brouillon de la collection incluait la recherche dans toutes les boîtes aux lettres Exchange ou tous les sites SharePoint, seuls les éléments non indexés des emplacements de contenu qui contiennent des éléments qui correspondent aux critères de collection seront ajoutés au jeu de révision. En d’autres termes, si aucun résultat n’est trouvé dans une boîte aux lettres ou un site, les éléments non indexés de cette boîte aux lettres ou de ce site ne seront pas ajoutés au jeu de révision. Toutefois, les éléments non indexés de tous les emplacements de contenu (même ceux qui ne contiennent pas d’éléments correspondant à la requête de collection) seront inclus dans les résultats estimés de la collection.
+
+- **Éléments partiellement indexés** : la sélection de cette option ajoute des éléments partiellement indexés provenant de sources de données supplémentaires au jeu de révision. Si la collection a recherché des sources de données supplémentaires (comme spécifié dans la page **Emplacements supplémentaires** dans l’Assistant Collections), il peut y avoir des éléments partiellement indexés à partir de ces emplacements que vous souhaitez ajouter au jeu de révision. Les sources de données custodiales et non-custodiales n’ont généralement pas d’éléments partiellement indexés. Cela est dû au fait que le processus d’indexation avancé réindexe les éléments lorsque des sources de données custodiales et non liées à la garde sont ajoutées à un cas. En outre, l’ajout d’éléments partiellement indexés augmente le nombre d’éléments ajoutés au jeu de révision. <p> Une fois les éléments partiellement indexés ajoutés au jeu de révision, vous pouvez appliquer un filtre pour afficher spécifiquement ces éléments. Pour plus d’informations, consultez [Filtrer les éléments partiellement indexés](review-set-search.md#filter-partially-indexed-items)
 
     Sinon, si le brouillon de la collection incluait des emplacements de contenu spécifiques (ce qui signifie que des boîtes aux lettres ou des sites spécifiques spécifiés sur la page **Emplacements supplémentaires** dans l’Assistant De collection brouillon), les éléments non indexés (qui ne sont pas exclus par les critères de collection) des emplacements de contenu spécifiés dans la recherche seront exportés. Dans ce cas, le nombre estimé d’éléments non indexés et le nombre d’éléments non indexés ajoutés au jeu de révision doivent être identiques.

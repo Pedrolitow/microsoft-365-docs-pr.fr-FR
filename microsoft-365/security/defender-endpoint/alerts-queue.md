@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.subservice: mde
-ms.openlocfilehash: 39941cec6ae58dc7ebea3ce8a68905493e3c680b
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+search.appverid: met150
+ms.openlocfilehash: 45b40cd4f893ca9fab4f07f2bd1e36f7c8690b81
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67632890"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703333"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 

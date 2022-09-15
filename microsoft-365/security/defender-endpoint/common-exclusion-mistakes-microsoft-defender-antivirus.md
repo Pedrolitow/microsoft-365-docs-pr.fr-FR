@@ -16,12 +16,13 @@ ms.subservice: mde
 ms.topic: article
 ms.date: 06/16/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3c1139ee63bb6b53297d1c13c46b72bf4a41db19
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 348015a6ffd9b3263aa8358023a30ceb2b906cfe
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481017"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703069"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Erreurs courantes à éviter lors de la définition d’exclusions
 

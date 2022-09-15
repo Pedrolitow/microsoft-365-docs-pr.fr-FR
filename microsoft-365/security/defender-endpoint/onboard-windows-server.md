@@ -16,12 +16,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: ff3f2b4e34322d53c687c2ead3fcb6c7c427e34b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 0cf8152af40bb356940cb7ccaf1c8a1831252589
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598470"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704257"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-server"></a>Intégration de Defender pour point de terminaison à Windows Server
 
@@ -34,7 +35,7 @@ ms.locfileid: "67598470"
 - Windows Server Semi-Annual Enterprise Channel
 - Windows Server 2019 et versions ultérieures
 - Windows Server 2019 Core Edition
-- Windows Server 2022
+- Windows Server 2022
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https:%2F%2Faka.ms%2FMDEp2OpenTrial)

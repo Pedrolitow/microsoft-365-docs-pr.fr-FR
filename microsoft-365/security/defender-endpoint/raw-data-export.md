@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: eab403c259264879e2207e1acd68131ee5f89957
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 8a985a6f5f4a0dee96cc37e2a16c9947abf8a2e6
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585595"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704125"
 ---
 # <a name="raw-data-streaming-api"></a>API de streaming de données brutes
 

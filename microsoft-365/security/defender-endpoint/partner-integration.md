@@ -15,12 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 55cf82e64af6ac9397206e66754adfd125deb661
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 6011064f3bb94a5668bc56ebd6531c25149ef26a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586157"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704213"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Microsoft Defender pour point de terminaison des opportunités et des scénarios de partenaires
 

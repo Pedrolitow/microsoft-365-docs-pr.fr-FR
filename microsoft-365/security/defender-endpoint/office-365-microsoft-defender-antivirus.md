@@ -18,12 +18,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 757e6e3065895ad844a557e763dc84136f765c69
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 6d059ffd745d0013e6e9e61ca22f12250a309bd8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585639"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704301"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mieux ensemble : Antivirus Microsoft Defender et Office 365
 

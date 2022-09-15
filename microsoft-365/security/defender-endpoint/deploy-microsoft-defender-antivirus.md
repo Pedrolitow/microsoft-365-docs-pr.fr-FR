@@ -15,12 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8c8bef490889bd21cd526e9dd46c40ae53b7d289
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: beaa865f47bb01565d1063d54e34c12d4f395e01
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680018"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705093"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Déployer et activer l’antivirus Microsoft Defender
 

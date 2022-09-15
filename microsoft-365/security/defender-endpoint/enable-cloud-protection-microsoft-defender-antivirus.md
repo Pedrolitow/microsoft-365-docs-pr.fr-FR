@@ -15,12 +15,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3b982b09a384a69ffca8d50d7dad9e9e4c476c30
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 54a37cf54d40962b7ff1b7e98a450895568e2392
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520298"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705005"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans l’antivirus Microsoft Defender
 

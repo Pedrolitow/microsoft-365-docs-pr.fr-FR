@@ -16,12 +16,13 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 6abef7bbfffdf7e00a9921470476acfa24ef890b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 58e259b0388aa33e5b457599c085dd0c6c74ee1f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521672"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704631"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel pour Microsoft Defender pour point de terminaison sur macOS
 

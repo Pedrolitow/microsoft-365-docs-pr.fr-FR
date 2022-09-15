@@ -17,12 +17,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: e6071204f7f78fbc10c5e09ad2448d583fd63135
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 47db4de656d0ac727aa2425e5797cf6228333424
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520320"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705049"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Planifier le déploiement de Microsoft Defender pour point de terminaison
 

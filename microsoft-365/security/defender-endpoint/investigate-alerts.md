@@ -17,12 +17,13 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
-ms.openlocfilehash: a2bc1b44cc49e2ded0a3079360436df2880b2f58
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: df05a6a1713553d1aa43ef2f7a8d36144d7a7bf4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522959"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704719"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour point de terminaison
 

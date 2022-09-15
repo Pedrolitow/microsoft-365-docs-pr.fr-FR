@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 91915905a47b5f136b6125d8a9cf1e054e8a2a06
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 4e301b2b73b2a30b40ca281e2e383cadedbe19ff
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582161"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704015"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API arrêter et mettre en quarantaine un fichier
 
