@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: bd7769fa420da8770acbacfcb6a11abeb6e0a14c
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: c23b510de6c3fd68fc1489aa3db5952d06e936a9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521870"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698847"
 ---
 # <a name="exclude-devices"></a>Exclure des appareils
 

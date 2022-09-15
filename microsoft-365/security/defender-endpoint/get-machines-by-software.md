@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: cc601c7479369a93ea43bdc01d3e3b16bec492d9
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 734a19ad634c7ee6a9e2c45a720b320490b36fc0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523113"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67700661"
 ---
 # <a name="list-devices-by-software"></a>Répertorier les appareils par logiciel
 

@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 40cca1fbda7ebb2d161e51a679a7e1e4afbf95af
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+search.appverid: met150
+ms.openlocfilehash: 2ffb34994d37cff3d729b54bfa3e65911f98e21f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/14/2022
-ms.locfileid: "67679204"
+ms.locfileid: "67701431"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimiser le déploiement et les détections des règles ASR
 

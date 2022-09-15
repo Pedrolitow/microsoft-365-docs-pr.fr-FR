@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 8d86c55dcab74ea3901b4e1c55882664d9e7dd83
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 868c3e17ed818c2599cefd8124f1f081cfd7ae9e
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586597"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699661"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle
 

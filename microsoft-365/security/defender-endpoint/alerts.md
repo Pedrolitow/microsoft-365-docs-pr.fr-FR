@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 301abec576f15ac83406660ca75b3f9ec3b7d389
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: 9b30c6180bbdffa2538bb78f2a4d0a75bdc8266b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497914"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701651"
 ---
 # <a name="alert-resource-type"></a>Type de ressource d’alerte
 

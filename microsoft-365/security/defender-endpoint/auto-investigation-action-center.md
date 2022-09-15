@@ -18,12 +18,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.technology: mde
-ms.openlocfilehash: 6a2cc5d4315c5dd64a852c74176272061789b1ba
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+search.appverid: met150
+ms.openlocfilehash: 851dbb40ed32e371597820539ce6a1ed8ccf8fed
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535401"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698262"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitez le Centre d’actions pour voir les actions de correction
 
@@ -48,7 +49,7 @@ Le tableau suivant compare le nouveau centre d’action unifié au centre d’ac
 |---------|---------|
 |Répertorie les actions en attente et terminées pour les appareils et les e-mails dans un seul emplacement <br/>([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) plus [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Répertorie les actions en attente et terminées pour les appareils <br/> ([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) uniquement)   |
 |Se trouve à :<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Se trouve à :<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, choisissez **Centre d’action**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Volet de navigation vers le Centre d’actions dans le portail Microsoft 365 Defender" lightbox="images/action-center-nav-new.png"::: | Dans le portail Microsoft 365 Defender, choisissez **Centre d’investigations automatisées** > . <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Version antérieure du volet de navigation vers le Centre d’actions dans le portail Microsoft 365 Defender" lightbox="images/action-center-nav-old.png":::  |
+| Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, choisissez **Centre d’action**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Volet de navigation vers le Centre d’actions dans le portail Microsoft 365 Defender" lightbox="images/action-center-nav-new.png"::: | Dans le portail Microsoft 365 Defender, choisissez **Centre d’action** des  > **enquêtes automatisées**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Version antérieure du volet de navigation vers le Centre d’actions dans le portail Microsoft 365 Defender" lightbox="images/action-center-nav-old.png":::  |
 
 Le centre d’action unifié regroupe les actions de correction dans Defender pour point de terminaison et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’investigation unifiée.
 
@@ -63,7 +64,7 @@ Vous pouvez utiliser le Centre d’actions unifié si vous disposez des autorisa
 
 Pour accéder au centre d’action unifié dans le portail Microsoft 365 Defender amélioré :
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et connectez-vous.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Portail Microsoft 365 Defender</a> et connectez-vous.
 
 2. Dans le volet de navigation, sélectionnez **Centre d’actions**.
 
@@ -71,8 +72,8 @@ Pour accéder au centre d’action unifié dans le portail Microsoft 365 Defende
 
    |Tab|Description|
    |---|---|
-   |**Attente**|Affiche une liste des actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, **fichier de mise en quarantaine**). <p> **CONSEIL** : Veillez à [examiner et approuver (ou rejeter) les actions en attente](manage-auto-investigation.md) dès que possible afin que vos enquêtes automatisées puissent se terminer en temps voulu.|
-   |**Historique**|Sert de journal d’audit pour les actions qui ont été effectuées, par exemple : <ul><li>Mesures correctives prises à la suite d’enquêtes automatisées</li><li>Actions de correction approuvées par votre équipe des opérations de sécurité</li><li>Commandes exécutées et actions de correction appliquées pendant les sessions de réponse en direct</li><li>Actions de correction effectuées par les fonctionnalités de protection contre les menaces dans Antivirus Microsoft Defender</li></ul> <p> Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées](manage-auto-investigation.md#undo-completed-actions)).|
+   |**Pending**|Affiche une liste des actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, **fichier de mise en quarantaine**). <p> **CONSEIL** : Veillez à [examiner et approuver (ou rejeter) les actions en attente](manage-auto-investigation.md) dès que possible afin que vos enquêtes automatisées puissent se terminer en temps voulu.|
+   |**Historique**|Sert de journal d’audit pour les actions qui ont été effectuées, par exemple : <ul><li>Mesures correctives prises à la suite d’enquêtes automatisées</li><li>Actions de correction approuvées par votre équipe des opérations de sécurité</li><li>Commandes exécutées et actions de correction appliquées pendant les sessions de réponse en direct</li><li>Actions de correction effectuées par les fonctionnalités de protection contre les menaces dans l’Antivirus Microsoft Defender</li></ul> <p> Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées](manage-auto-investigation.md#undo-completed-actions)).|
 
 4. Pour personnaliser, trier, filtrer et exporter des données dans le Centre d’actions, effectuez une ou plusieurs des étapes suivantes :
 
@@ -93,4 +94,4 @@ Pour accéder au centre d’action unifié dans le portail Microsoft 365 Defende
 ## <a name="see-also"></a>Voir aussi
 
 - [Résoudre des faux négatifs/positifs dans Microsoft Defender pour point de terminaison](defender-endpoint-false-positives-negatives.md)
-- [Comparer les fonctionnalités de sécurité dans Microsoft 365 plans pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md)
+- [Comparer les fonctionnalités de sécurité dans les plans Microsoft 365 pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md)

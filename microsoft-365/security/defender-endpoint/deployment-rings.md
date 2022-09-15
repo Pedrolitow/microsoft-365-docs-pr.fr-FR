@@ -17,12 +17,13 @@ ms.collection:
 - highpri
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 6049e8d56c3d928785f46d19b7a430b8e0542613
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: f87554eccfbd4123d36c3cb5800997ddc7613f50
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520342"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697992"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Déployer Microsoft Defender pour point de terminaison en anneaux
 

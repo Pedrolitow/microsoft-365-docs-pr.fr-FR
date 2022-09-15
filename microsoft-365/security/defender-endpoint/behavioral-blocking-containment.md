@@ -1,7 +1,7 @@
 ---
 title: Blocage et confinement comportementaux
 description: En savoir plus sur les fonctionnalités de blocage comportemental et d’endiguement à Microsoft Defender pour point de terminaison
-keywords: Microsoft Defender pour point de terminaison, PEPT en mode bloc, blocage en mode passif
+keywords: Microsoft Defender pour point de terminaison, EDR en mode bloc, blocage en mode passif
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -17,18 +17,19 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: f6544a14891a98523d202c19634d0e70a3e839e2
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+search.appverid: met150
+ms.openlocfilehash: 203eaf79058908ff9814cdc0628d1fbe8214b9b0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416791"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698240"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -38,19 +39,19 @@ ms.locfileid: "65416791"
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le paysage des menaces d’aujourd’hui est envahi par les [programmes malveillants sans fichier](/windows/security/threat-protection/intelligence/fileless-threats) et qui vit hors de la terre, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre, et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur les appareils compromis. Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter de telles attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage comportemental et l’endiguement, incluses dans [Defender pour point de terminaison](/windows/security).
+Le paysage des menaces d’aujourd’hui est envahi par les [programmes malveillants sans fichier](/windows/security/threat-protection/intelligence/fileless-threats) et qui vit hors de la terre, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre, et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur les appareils compromis. Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter de telles attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage comportemental et l’endiguement, inclus dans [Defender pour point de terminaison](/windows/security).
 
-Les fonctionnalités de blocage comportemental et d’endiguement peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et de leurs arborescences de traitement, même lorsque la menace a démarré l’exécution. Les composants et fonctionnalités de protection de nouvelle génération, PEPT et Defender pour point de terminaison fonctionnent ensemble dans les fonctionnalités de blocage comportemental et d’endiguement.
+Les fonctionnalités de blocage comportemental et d’endiguement peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et de leurs arborescences de traitement, même lorsque la menace a démarré l’exécution. Les composants et fonctionnalités de protection de nouvelle génération, EDR et Defender pour point de terminaison fonctionnent ensemble dans les fonctionnalités de blocage comportemental et d’endiguement.
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Blocage et confinement comportementaux dans le portail Microsoft Defender ATP" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
 
 Les fonctionnalités de blocage et d’endiguement comportementaux fonctionnent avec plusieurs composants et fonctionnalités de Defender pour point de terminaison pour arrêter immédiatement les attaques et empêcher la progression des attaques.
 
-- [La protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md) (qui inclut Antivirus Microsoft Defender) peut détecter les menaces en analysant les comportements et arrêter les menaces qui ont commencé à s’exécuter.
+- [La protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md) (qui inclut l’antivirus Microsoft Defender) peut détecter les menaces en analysant les comportements et arrêter les menaces qui ont commencé à s’exécuter.
 
-- [La détection et la réponse](overview-endpoint-detection-response.md) des points de terminaison (PEPT) reçoivent des signaux de sécurité sur votre réseau, vos appareils et le comportement du noyau. Lorsque des menaces sont détectées, des alertes sont créées. Plusieurs alertes du même type sont agrégées en incidents, ce qui facilite l’examen et la réponse de votre équipe des opérations de sécurité.
+- [La détection et la réponse](overview-endpoint-detection-response.md) des points de terminaison (EDR) reçoivent des signaux de sécurité sur votre réseau, vos appareils et le comportement du noyau. Lorsque des menaces sont détectées, des alertes sont créées. Plusieurs alertes du même type sont agrégées en incidents, ce qui facilite l’examen et la réponse de votre équipe des opérations de sécurité.
 
-- [Defender pour point de terminaison](overview-endpoint-detection-response.md) dispose d’un large éventail d’optiques entre les identités, les e-mails, les données et les applications, en plus du réseau, du point de terminaison et des signaux de comportement du noyau reçus via PEPT. Composant de [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender pour point de terminaison traite et met en corrélation ces signaux, déclenche des alertes de détection et connecte les alertes associées dans les incidents.
+- [Defender pour point de terminaison](overview-endpoint-detection-response.md) dispose d’un large éventail d’optiques entre les identités, les e-mails, les données et les applications, en plus du réseau, du point de terminaison et des signaux de comportement du noyau reçus via EDR. Composant de [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender pour point de terminaison traite et met en corrélation ces signaux, déclenche des alertes de détection et connecte les alertes associées dans les incidents.
 
 Avec ces fonctionnalités, d’autres menaces peuvent être évitées ou bloquées, même si elles commencent à s’exécuter. Chaque fois que des comportements suspects sont détectés, la menace est contenue, des alertes sont créées et les menaces sont arrêtées dans leurs traces.
 
@@ -66,7 +67,7 @@ L’image suivante montre un exemple d’alerte déclenchée par des fonctionnal
 
 - **[Le blocage des boucles de commentaires](feedback-loop-blocking.md)** (également appelé protection rapide) les détections de menaces sont observées par le biais de l’intelligence comportementale. Les menaces sont arrêtées et empêchées de s’exécuter sur d’autres points de terminaison. (Le blocage de boucle de commentaires est activé par défaut.)
 
-- **[La détection et la réponse des points de terminaison (PEPT) en mode bloc](edr-in-block-mode.md)** Les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. PEPT en mode bloc fonctionne même si Antivirus Microsoft Defender n’est pas la solution antivirus principale. (PEPT en mode bloc n’est pas activé par défaut ; vous l’activez à Microsoft 365 Defender.)
+- **[Détection et réponse des points de terminaison (EDR) en mode bloc](edr-in-block-mode.md)** Les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. L’EDR en mode bloc fonctionne même si l’antivirus Microsoft Defender n’est pas la solution antivirus principale. (EDR en mode bloc n’est pas activé par défaut ; vous l’activez à Microsoft 365 Defender.)
 
 Attendez-vous à plus d’informations dans le domaine du blocage comportemental et de l’endiguement, car Microsoft continue d’améliorer les fonctionnalités et fonctionnalités de protection contre les menaces. Pour voir ce qui est planifié et en cours de déploiement, consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -135,7 +136,7 @@ Cet exemple montre qu’avec les fonctionnalités de blocage comportemental et d
 
 - [Configurer vos règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 
-- [Activer PEPT en mode bloc](edr-in-block-mode.md)
+- [Activer EDR en mode bloc](edr-in-block-mode.md)
 
 - [Voir l’activité récente sur les menaces globales](https://www.microsoft.com/wdsi/threats)
 

@@ -16,12 +16,13 @@ ms.date: 08/02/2022
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 93a949c274928c467e5d3fa65ef8be47ce960d2b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 8e6ad128b16ba548672b805bef1db06a9891e9db
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480929"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701849"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie antivirus Microsoft Defender
 

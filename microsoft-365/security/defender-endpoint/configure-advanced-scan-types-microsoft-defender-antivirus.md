@@ -16,12 +16,13 @@ ms.subservice: mde
 ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 6668bfc3cd9b8b2494458a1434f3d296f56c8b09
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 8e169a8b63d0e19ccc4e199500ff93a562f7a792
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479310"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697932"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 

@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0183be9f388bb6c589e679f8bcea0a28d93bc770
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 7e38ef8f7034ff86220fc9452c5d0ea94443783d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679556"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699387"
 ---
 # <a name="api-explorer"></a>Explorateur d’API
 

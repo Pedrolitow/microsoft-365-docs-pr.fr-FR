@@ -2,8 +2,7 @@
 title: Rechercher des e-mails et corriger les menaces à l’aide de l’Explorateur de menaces dans Microsoft 365 Defender
 description: Étapes de correction manuelle dans l’Explorateur de menaces dans Microsoft 365 Defender, notamment comment obtenir les meilleures performances et les scénarios qui appellent la correction.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: 8361b8148e8b6634da7bf8d0ea418729eb7e1737
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: bbce88b36c978785ea8abd28bff13a6c6d0c6da7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67593856"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699541"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Étapes d’utilisation de la correction manuelle des e-mails dans l’Explorateur de menaces
 
@@ -72,6 +72,6 @@ Deux scénarios de correction manuelle des e-mails :
 1. Accédez à l’onglet **Historique** , puis cliquez sur n’importe quelle liste d’approbation en attente. Il ouvre un volet latéral.  
 1. Suivez l’état de l’action dans le centre d’action unifié.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 [En savoir plus sur la correction des e-mails](../../office-365-security/air-review-approve-pending-completed-actions.md)

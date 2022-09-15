@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72cf2196add9e6c1ee58475c492136ca9be7ce37
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: 091b78e2b11633eddec41809748e54ba333c09be
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434370"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701069"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -91,9 +91,9 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
 
 4.  Sur la page **Chiffrement**, sélectionnez l’une des options suivantes :
     
-    - **Supprimez le chiffrement si le fichier ou l’e-mail est chiffré** : cette option est prise en charge par azure Information Protection client d’étiquetage unifié uniquement. Lorsque vous sélectionnez cette option et que vous utilisez l'étiquetage intégré, il se peut que l'étiquette ne s'affiche pas dans les applications, ou qu'elle s'affiche et n'effectue aucune modification de chiffrement.
+    - **Supprimer le chiffrement si le fichier ou l’e-mail est chiffré** : lorsque vous sélectionnez cette option, l’application de l’étiquette supprime le chiffrement existant, même s’il a été appliqué indépendamment d’une étiquette de confidentialité.
         
-        Pour plus d’informations sur ce scénario, voir la section [Qu’advient-il du chiffrement lorsqu’une nouvelle étiquette est appliquée ?](#what-happens-to-existing-encryption-when-a-labels-applied). Il est important de comprendre que ce paramètre peut engendrer une étiquette de confidentialité que les utilisateurs ne pourront peut-être pas appliquer s’ils ne disposent pas des autorisations suffisantes.
+        Il est important de comprendre que ce paramètre peut entraîner une étiquette de confidentialité que les utilisateurs peuvent ne pas être en mesure d’appliquer lorsqu’ils ne disposent pas des autorisations suffisantes pour supprimer le chiffrement existant. Pour plus d’informations sur ce scénario, voir la section [Qu’advient-il du chiffrement lorsqu’une nouvelle étiquette est appliquée ?](#what-happens-to-existing-encryption-when-a-labels-applied).
     
     - **Configurer les paramètres de chiffrement** : active le chiffrement et rend les paramètres de chiffrement visibles :
         
@@ -102,9 +102,6 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
         Vous trouverez des instructions pour ces paramètres dans la section [Configurer les paramètres de chiffrement](#configure-encryption-settings).
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qu’advient-il du chiffrement existant lorsqu’une nouvelle étiquette est appliquée ?
-
-> [!NOTE]
-> L’option **Supprimer le chiffrement si le fichier ou l’e-mail est chiffré est** prise en charge uniquement par le client d’étiquetage unifié Azure Information Protection. Vous pouvez obtenir le même effet pour les e-mails [en configurant une règle de flux de courrier](define-mail-flow-rules-to-encrypt-email.md#use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-microsoft-purview-message-encryption).
 
 Si une étiquette de confidentialité est appliquée à du contenu non chiffré, le résultat des options de chiffrement que vous pouvez sélectionner est explicite. Par exemple, si vous n’avez pas sélectionné **Chiffrer les fichiers et les e-mails**, le contenu reste non chiffré.
 
@@ -116,15 +113,11 @@ Toutefois, il est possible que le contenu soit déjà chiffré. Par exemple, un 
 
 Le tableau ci-après précise ce qu’il advient du chiffrement existant lorsqu’une étiquette de niveau de confidentialité est appliquée à ce contenu :
 
-| | Chiffrement : non sélectionné | Chiffrement : configuré | Chiffrement : Supprimer<sup>\*</sup> |
+| | Chiffrement : non sélectionné | Chiffrement : configuré | Chiffrement : Supprimer |
 |:-----|:-----|:-----|:-----|
 |**Autorisations spécifiées par l'utilisateur**|Le chiffrement d’origine est conservé|Le nouveau chiffrement d'étiquettes est appliqué|Le chiffrement d’origine est supprimé|
 |**Modèle de protection**|Le chiffrement d’origine est conservé|Le nouveau chiffrement d'étiquettes est appliqué|Le chiffrement d’origine est supprimé|
 |**Étiquette incluant les autorisations définies par l’administrateur**|Le chiffrement d’origine est supprimé|Le nouveau chiffrement d'étiquettes est appliqué|Le chiffrement d’origine est supprimé|
-
-**Note de bas de page :**
-
-<sup>\*</sup> Prise en charge par le client de l’étiquetage unifié d’Azure Information Protection.
 
 Dans le cas où le nouveau chiffrement d’étiquettes est appliqué ou si le chiffrement d’origine est supprimé, cela se produit uniquement si l’utilisateur qui applique l’étiquette dispose d'un droit ou d'un rôle qui prend en charge cette action :
 

@@ -17,12 +17,13 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
-ms.openlocfilehash: 41afd4f726ecef8b63003a1e639f8430a759e5e7
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+search.appverid: met150
+ms.openlocfilehash: b529ab35e35cf251c132cb4277289dd1ef1b6f7e
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325306"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701937"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -172,7 +173,7 @@ _Le mode d’avertissement_ est un type de mode bloc qui alerte les utilisateurs
 
 Lorsque vous cliquez sur le bouton Autoriser, le bloc est supprimé pendant 24 heures. Après 24 heures, l’utilisateur final doit autoriser à nouveau le bloc. Le mode d’avertissement pour les règles ASR est uniquement pris en charge pour les appareils RS5+ (1809+). Si le contournement est affecté aux règles ASR sur les appareils avec des versions antérieures, la règle est en mode bloqué.
 
-Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant le AttackSurfaceReductionRules_Actions « Avertir ». Par exemple :
+Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant le AttackSurfaceReductionRules_Actions « Avertir ». Par exemple :
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 

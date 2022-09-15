@@ -15,12 +15,13 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1e8a50ee0aace7b2d668bf7b083eacb74d9d6319
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 29fc3af1509d471db9fef89e972940d095986022
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469687"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701629"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer les exclusions de l’Antivirus Microsoft Defender sur Windows Server
 

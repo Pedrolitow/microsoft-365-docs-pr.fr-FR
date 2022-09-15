@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7d528e9c4ddd09037e0dc6d9dc839cfd031a1457
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: d393523f5fedaa5c059e465039b1410086ed9273
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523641"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67700749"
 ---
 # <a name="get-exposure-score"></a>Obtenir un score d'exposition
 

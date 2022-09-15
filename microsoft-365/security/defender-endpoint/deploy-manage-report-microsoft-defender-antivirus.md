@@ -17,12 +17,13 @@ manager: dansimp
 ms.subservice: mde
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 40622b7e39dac92ac22e435d2f27dda36d846b02
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: c3ecff1463232ceb4ecc3dccb98843a1230144cf
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596135"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701299"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Déployer, gérer et signaler l’antivirus Microsoft Defender
 

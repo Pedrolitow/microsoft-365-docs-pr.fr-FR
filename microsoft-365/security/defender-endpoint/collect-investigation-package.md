@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 5bfc3c3703ae0f662a519948cd93e1ab1e4178fd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 31b8f1a7e4a4def4641d5330ad16d05318192828
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67498951"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701893"
 ---
 # <a name="collect-investigation-package-api"></a>Collecter l’API de package d’investigation
 

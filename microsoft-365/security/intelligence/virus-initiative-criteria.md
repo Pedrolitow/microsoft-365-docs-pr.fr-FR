@@ -1,7 +1,7 @@
 ---
 title: Microsoft Virus Initiative
 ms.reviewer: ''
-description: Microsoft Virus Initiative (MVI) aide les organisations qui font en sorte que les produits antivirus ou anti-programme malveillant s’intègrent à Windows et partagent des données de télémétrie avec Microsoft.
+description: Microsoft Virus Initiative (MVI) aide les organisations qui intègrent des produits antivirus ou anti-programme malveillant à Windows et partagent des données de télémétrie avec Microsoft.
 keywords: sécurité, programmes malveillants, MVI, Centre de protection Microsoft contre les programmes malveillants, MMPC, alliances, WDSI
 ms.prod: m365-security
 ms.mktglfcycl: secure
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b7586a75c95202e2737bab857ab1ffebd04d6c4
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+search.appverid: met150
+ms.openlocfilehash: 546ed32abfbcf211190aed77a99458aa478c31c0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187731"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699629"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virus Initiative
 
@@ -31,7 +32,7 @@ Vous pouvez demander l’adhésion si vous êtes un représentant d’une organi
 
 Pour être éligible au programme MVI, votre organisation doit répondre à toutes les exigences suivantes :
 
-1. Votre solution de sécurité remplace ou complimente Antivirus Microsoft Defender.
+1. Votre solution de sécurité remplace ou complimente l’antivirus Microsoft Defender.
 
 2. Votre organisation est responsable du développement et de la distribution des mises à jour d’application aux clients finaux qui traitent de la compatibilité avec Windows.
 
@@ -53,7 +54,7 @@ Pour être éligible au programme MVI, votre organisation doit répondre à tout
 |SKD Labs|Certification Requirements Product: Anti-virus or Antimalware </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SkD Labs Star Check Certification Requirements Pass >= 98,5% with On Demand, On Access and Total Detection tests|
 |VB 100|VB100 Certification Test V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|VB100 Certification|
 |Laboratoires de la côte Ouest|Coche certifiée </br> <http://www.checkmarkcertified.com/sme/>|Évaluation « A » des performances de sécurité du produit|
-|SE Labs|Test de protection de la protection des petites entreprises ou des Enterprise EP  </br> <https://selabs.uk/en/reports/consumers/>|Évaluation de protection A ou EP Petite Entreprise A ou Enterprise évaluation protection A du PE |
+|SE Labs|Test de protection de la protection des petites entreprises ou des ep d’entreprise  </br> <https://selabs.uk/en/reports/consumers/>|Évaluation protection A ou Évaluation de l’EP A pour les petites entreprises ou protection de l’entreprise A |
 
 ## <a name="apply-now"></a>Appliquer maintenant
 

@@ -21,12 +21,13 @@ ms.collection:
 - m365solution-asr-rules
 - highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: 2b092edc2c4fabc0a48a7f4865d237e8974c8c65
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: e9505b82c5252c044e25eafc063d902ae3f18016
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469753"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699343"
 ---
 # <a name="test-attack-surface-reduction-asr-rules"></a>Tester des règles de réduction de la surface d’attaque (ASR)
 

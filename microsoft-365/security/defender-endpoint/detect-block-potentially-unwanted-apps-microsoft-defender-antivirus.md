@@ -15,12 +15,13 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 92ff7fa7e5ef74eba29ad4fd9e7b571f5dd61610
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: fa5fdf8b7da64de21c8c984431a9caafdef56240
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523795"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701189"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 

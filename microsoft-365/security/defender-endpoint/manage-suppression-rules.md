@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 6851a9b406075125d8b72535ae02ea20ecafd9b1
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 89c7be7c5fcdad33932e9e537d3c05b35656fc44
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521134"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67700199"
 ---
 # <a name="manage-suppression-rules"></a>Gérer des règles de suppression
 

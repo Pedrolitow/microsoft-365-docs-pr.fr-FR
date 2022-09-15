@@ -16,12 +16,13 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c3b446989a6146245ceb9bbadb34cad1b3c5835e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: ef157342616ff2fd4e98f31fc6c772567b710b70
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679018"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701871"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Gérer l’antivirus Microsoft Defender dans votre entreprise
 

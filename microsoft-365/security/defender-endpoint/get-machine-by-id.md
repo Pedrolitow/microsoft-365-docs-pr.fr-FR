@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0398a1263ca396284398bb4ef48b0ebda50c84ff
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 3393096d7911012918108f3ad04de5c2fd19048f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523905"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701035"
 ---
 # <a name="get-machine-by-id-api"></a>Obtenir une machine par API d’ID
 
@@ -87,7 +88,7 @@ Si l’ordinateur avec l’ID spécifié est introuvable - 404 Introuvable.
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07

@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e3b8826f2e64d339f617fb23d555d4a4f804c3ff
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: bedf3170ede7c7fa566d46ce53c37a7fd73d7a96
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522276"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701057"
 ---
 # <a name="get-ip-statistics-api"></a>Obtenir l’API de statistiques IP
 

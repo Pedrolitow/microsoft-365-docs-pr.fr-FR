@@ -2,8 +2,7 @@
 title: Comment hiérarchiser, gérer, examiner et répondre aux incidents dans Microsoft 365 Defender
 description: Étapes de gestion des alertes déclenchées dans Microsoft 365 Defender. Recherche automatisée d’investigation et de réponse (AIR) dans l’abonnement et détermine l’impact et l’étendue d’une menace, et combine les informations en un seul incident.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: 578c2e93cf18b7c80390cc7719a6af1a6ace241c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: a419268a0c2f0adf44844b5ee2db6d2eac85f11b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596652"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699585"
 ---
 # <a name="prioritize-manage-investigate--respond-to-incidents-in-microsoft-365-defender"></a>Hiérarchiser, gérer, examiner & répondre aux incidents dans Microsoft 365 Defender
 

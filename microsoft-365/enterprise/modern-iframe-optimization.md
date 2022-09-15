@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les performances des IFrames dans les pages de sites de publication modernes et classiques SharePoint Online.
-ms.openlocfilehash: 0e8710b76d20388ba3514b32fe598e982a7a9561
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b61785658e414262435dabe12eb6642d47002497
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100696"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698394"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimiser les IFrames dans les pages de sites de publication modernes et classiques SharePoint Online
 

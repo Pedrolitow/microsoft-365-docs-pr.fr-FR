@@ -21,12 +21,13 @@ ms.collection:
 - m365solution-asr-rules
 - highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: 3a7b59513681881ad37aa816f55920438925c13e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 22435d693d024c95bfc7bb917a08b652b5f3e01a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478462"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701497"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>Activer des règles de réduction de la surface d’attaque (ASR)
 

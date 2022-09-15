@@ -17,12 +17,13 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 02225524e2b0c38e652fa2567564b086e412a2e8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: c57cabf3e4de59b572dd880aeffa2f1b723fe155
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679458"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699255"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Collecter les données de diagnostic de l’Antivirus Microsoft Defender
 

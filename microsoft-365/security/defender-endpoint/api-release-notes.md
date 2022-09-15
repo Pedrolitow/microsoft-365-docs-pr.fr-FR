@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e59cfc0058a2ad767238f5da0c5ab0cd60aae804
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+search.appverid: met150
+ms.openlocfilehash: 50eee5a10311e08a706c8cc412c4a01e95ffad57
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322781"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698460"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>notes de publication de l’API Microsoft Defender pour point de terminaison
 

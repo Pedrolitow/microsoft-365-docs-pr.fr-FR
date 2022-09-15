@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: ff17fef0189dd04b6f72356bb8b95e0739f1021c
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 173685d3ac28491fecf370ce432a770e9645cac7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523157"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67700705"
 ---
 # <a name="get-file-information-api"></a>Obtenir l’API d’informations sur les fichiers
 

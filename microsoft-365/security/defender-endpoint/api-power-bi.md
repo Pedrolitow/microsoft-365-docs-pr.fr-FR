@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 20ee9e55da7fe35324a8463d540d1935aecf1e1c
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: ca156b12909b3bce27375f35a5fbfab16e6ca579
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497091"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701541"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Créer des rapports personnalisés à l’aide de Power BI
 

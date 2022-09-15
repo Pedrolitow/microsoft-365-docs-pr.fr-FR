@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: d404e89e3891b7a6325323e2fcc953e4968657d5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: e9ce4b06816e6b7e90b7878803fb985ef16e984a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679451"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698670"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Accéder au portail client Microsoft 365 Defender MSSP
 

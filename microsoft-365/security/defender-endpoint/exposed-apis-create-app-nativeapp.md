@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e3081127f86b31c61abaad8e896f5ab6213908f2
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 956cb6966d00595c23888248e6fbe1649c8c8690
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520160"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697888"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Utiliser Microsoft Defender pour point de terminaison API
 

@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: ea7283127708d5576e6436fae5f7f077d53182f6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: d3d533a3d4e1058eec5395c9f389926994b74e94
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521058"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67700331"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 

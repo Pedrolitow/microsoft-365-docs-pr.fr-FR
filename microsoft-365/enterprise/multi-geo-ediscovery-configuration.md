@@ -6,19 +6,19 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
-description: Découvrez comment utiliser le paramètre Region pour configurer eDiscovery pour une utilisation dans des emplacements satellites dans Microsoft 365 multigéographique.
-ms.openlocfilehash: 99024a93d3eb68103b4f2c5b99e54bfc80201123
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Découvrez comment utiliser le paramètre Region pour configurer eDiscovery pour une utilisation dans des emplacements satellites dans Microsoft 365 Multi-Geo.
+ms.openlocfilehash: 640f5d4e6e8937e4dbcda1aaf2cfe48bf3d5ab22
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008554"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698306"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuration eDiscovery dans Microsoft 365 Multi-Geo
 
@@ -26,7 +26,7 @@ Les [fonctionnalités eDiscovery (Premium)](../compliance/overview-ediscovery-20
 
 Sans fonctionnalités eDiscovery (Premium), un responsable eDiscovery ou un administrateur d’un locataire multigéographique ne pourra effectuer eDiscovery qu’à l’emplacement central de ce locataire. Pour prendre en charge la possibilité d’effectuer la découverte électronique pour les emplacements satellites, un nouveau paramètre de filtre de sécurité de conformité nommé « Region » est disponible via PowerShell. Ce paramètre peut être utilisé par les locataires dont l’emplacement central se trouve en Amérique du Nord, en Europe ou en Asie-Pacifique. eDiscovery (Premium) est recommandé pour les locataires dont l’emplacement central n’est pas dans Amérique du Nord, Europe ou Asie-Pacifique et qui doivent effectuer eDiscovery sur des emplacements géographiques satellites.
 
-L’administrateur général Microsoft 365 doit attribuer des autorisations eDiscovery Manager pour permettre à d’autres utilisateurs d’effectuer eDiscovery et d’affecter un paramètre « Region » dans leur filtre de sécurité de conformité applicable pour spécifier la région pour la réalisation d’eDiscovery en tant qu’emplacement satellite. Sinon, aucune découverte électronique n’est effectuée pour l’emplacement satellite. Un seul filtre de sécurité « Région » par utilisateur est pris en charge.
+L’administrateur général microsoft 365 doit attribuer des autorisations eDiscovery Manager pour permettre à d’autres utilisateurs d’effectuer la découverte électronique et d’affecter un paramètre « Region » dans leur filtre de sécurité de conformité applicable pour spécifier la région pour la réalisation d’eDiscovery en tant qu’emplacement satellite. Sinon, aucune découverte électronique n’est effectuée pour l’emplacement satellite. Un seul filtre de sécurité « Région » par utilisateur est pris en charge.
 
 Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplacement satellite particulier, ce gestionnaire ou cet administrateur eDiscovery peut uniquement effectuer des actions de recherche eDiscovery dans les sites SharePoint et OneDrive situés dans cet emplacement satellite. Si un gestionnaire ou un administrateur eDiscovery tente de rechercher des sites SharePoint ou OneDrive en dehors de l’emplacement satellite spécifié, aucun résultat n’est renvoyé. Par ailleurs, lorsque le gestionnaire ou l’administrateur eDiscovery d’un emplacement satellite déclenche une exportation, les données sont exportées vers l’instance Azure de cette région. Ainsi, les entreprises respectent les règles de conformité en interdisant l’exportation de contenu au-delà de frontières contrôlées.
 
@@ -37,7 +37,7 @@ Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplac
 
 Pour définir le filtre de sécurité de conformité pour une région :
 
-1. [Connecter pour Microsoft 365 La sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Se connecter à Microsoft 365 Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Utilisez la syntaxe suivante :
 

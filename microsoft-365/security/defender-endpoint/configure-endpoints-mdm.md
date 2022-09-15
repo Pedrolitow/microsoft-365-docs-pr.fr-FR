@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b2114591ae4314f48836a296092a169e27a422b6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 8406e14f3573b449905b2ccb71a1685c8bd4fb10
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680356"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701453"
 ---
 # <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Intégrer des appareils Windows à Defender pour point de terminaison à l’aide de Intune 
 

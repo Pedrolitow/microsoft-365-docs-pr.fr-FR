@@ -15,12 +15,13 @@ ms.date: 05/24/2021
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 311f015495dad909451e89e69e93112390710cd5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: c8855237c4864e58d53591e4ae88e84a67495c9d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479927"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702355"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer l’antivirus Microsoft Defender avec l’outil en ligne de commande mpcmdrun.exe
 

@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: da30d557ed595c5d7ae8995a30c9da95a20e54e8
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 36e526a75dd754c7e7ce58ecab3e2d99e613246f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516387"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698825"
 ---
 # <a name="list-alerts-api"></a>API Répertorier les alertes
 

@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7bda1310178759def39b6ba9baedb25de875fb11
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+search.appverid: met150
+ms.openlocfilehash: 8c7579eef9c3e688e16c66bcb1a6031715b6a6a9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099137"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698284"
 ---
 # <a name="batch-update-alerts"></a>Alertes de mise à jour par lot
 
@@ -90,10 +91,10 @@ Pour de meilleures performances, n’incluez pas de valeurs existantes qui n’o
 Propriété | Type | Description
 :---|:---|:---
 alertIds | Chaîne de liste&lt;&gt;| Liste des ID des alertes à mettre à jour. **Obligatoire**
-status | String | Spécifie l’état mis à jour des alertes spécifiées. Les valeurs de propriété sont : « New », « InProgress » et « Resolved ».
-assignedTo | String | Propriétaire des alertes spécifiées
+status | Chaîne | Spécifie l’état mis à jour des alertes spécifiées. Les valeurs de propriété sont : « New », « InProgress » et « Resolved ».
+assignedTo | Chaîne | Propriétaire des alertes spécifiées
 classification | String | Spécifie la spécification des alertes spécifiées. Les valeurs de propriété sont : « True positive », « Informational, expected activity » et « False positive ».
-détermination | String | Spécifie la détermination des alertes spécifiées. Les valeurs de propriété sont : « NotAvailable », « Apt », « Malware », « SecurityPersonnel », « SecurityTesting », « UnwantedSoftware », « Other »
+Détermination | Chaîne | Spécifie la détermination des alertes spécifiées. Les valeurs de propriété sont : « NotAvailable », « Apt », « Malware », « SecurityPersonnel », « SecurityTesting », « UnwantedSoftware », « Other »
 comment | String | Commentaire à ajouter aux alertes spécifiées.
 
 >[!NOTE]

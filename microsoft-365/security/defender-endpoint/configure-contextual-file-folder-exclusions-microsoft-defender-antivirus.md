@@ -15,12 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 0868250b04120a4eed0cf254e4a9d3692eb661fa
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 903cfb9e6a4bc618a6839b612cb3b15a840ebb8d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477954"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699167"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Exclusions de fichiers et de dossiers contextuels
 
