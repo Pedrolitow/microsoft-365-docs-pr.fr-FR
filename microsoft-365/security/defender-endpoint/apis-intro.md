@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01c05b34ffdf2533ffffcde7cef366914fcbf887
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+search.appverid: met150
+ms.openlocfilehash: 992c36d87450ec197cc9ac8d9933f6d10bd2e528
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325680"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702575"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Accéder aux API Microsoft Defender pour point de terminaison
 
