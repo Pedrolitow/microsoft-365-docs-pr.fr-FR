@@ -1,8 +1,8 @@
 ---
 title: (Faux positifs) Comment gérer les e-mails légitimes bloqués à l’aide de Microsoft Defender pour Office 365
-description: Étapes permettant de gérer les messages électroniques légitimes bloqués (Faux positifs) par Microsoft Defender pour Office 365 afin d’éviter toute perte d’activité.
+description: Étapes permettant de gérer les e-mails légitimes bloqués (Faux positifs) par Microsoft Defender pour Office 365 afin d’éviter toute perte d’activité.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,22 +15,22 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: c5d43f962255ca5c2e8ad134fa3a7725dc5dd82d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a946611571d9698baac7df28e7e5f64508d05a02
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683866"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742220"
 ---
-# <a name="how-to-handle-legitimate-emails-getting-blocked-false-positive-using-microsoft-defender-for-office-365"></a>Comment gérer les e-mails légitimes bloqués (Faux positif), à l’aide de Microsoft Defender pour Office 365
+# <a name="how-to-handle-legitimate-emails-getting-blocked-false-positive-using-microsoft-defender-for-office-365"></a>Comment gérer les e-mails légitimes bloqués (faux positifs) à l’aide de Microsoft Defender pour Office 365
 
-Microsoft Defender pour Office 365 aide à gérer les e-mails professionnels légitimes importants qui sont bloqués par erreur en tant que menaces (faux positifs). Defender pour Office 365 pouvez aider les administrateurs à comprendre *pourquoi* les e-mails légitimes sont bloqués, comment résoudre la situation rapidement et empêcher des situations similaires de se produire à l’avenir.
+Microsoft Defender pour Office 365 aide à gérer les e-mails professionnels légitimes importants qui sont bloqués par erreur en tant que menaces (faux positifs). Defender pour Office 365 peut aider les administrateurs à comprendre *pourquoi* les e-mails légitimes sont bloqués, comment résoudre la situation rapidement et empêcher des situations similaires de se produire à l’avenir.
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
-- Microsoft Defender pour Office 365 plan 1 ou 2 (inclus dans le cadre de l’E5). Exchange Online clients peuvent également tirer parti de cette fonctionnalité.
+- Microsoft Defender pour Office 365 plan 1 ou 2 (inclus dans E5). Exchange Online clients peuvent également tirer parti de cette fonctionnalité.
 - Autorisations suffisantes (rôle Administrateur de la sécurité).
 - 5 à 10 minutes pour effectuer les étapes ci-dessous.
 

@@ -1,29 +1,29 @@
 ### YamlMime:FAQ
 metadata:
   title: Questions fréquentes (FAQ) sur la réduction de la surface d’attaque
-  description: Trouvez des réponses aux questions fréquemment posées sur les règles de réduction de la surface d’attaque de Microsoft Defender pour point de terminaison.
+  description: Trouvez des réponses aux questions fréquemment posées sur les règles de réduction de la surface d’attaque de Pertahanan Microsoft untuk Titik Akhir.
   keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
   ms.pagetype: security
-  ms.prod: m365-security
+  ms.service: microsoft-365-security
+  ms.subservice: mde
   ms.mktglfcycl: manage
   ms.sitesec: library
   ms.localizationpriority: medium
   audience: ITPro
-  author: martyav
+  author: dansimp
   ms.author: dansimp
   ms.reviewer: oogunrinde, sugamar
   manager: dansimp
   ms.custom: asr
   ms.topic: faq
-  ms.technology: mde
   ms.collection: m365-security-compliance
   ms.date: 09/13/2022
-  ms.openlocfilehash: 46fe5d2e3cdfd2bf8b893461f250060ef76e3803
-  ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+  ms.openlocfilehash: be90f7724ad4e2a5d91532aecacef4d0a22ebdef
+  ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/14/2022
-  ms.locfileid: "67683668"
+  ms.lasthandoff: 09/16/2022
+  ms.locfileid: "67741958"
 title: Questions fréquentes (FAQ) sur la réduction de la surface d’attaque
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -89,11 +89,11 @@ sections:
 
       - Si vous souhaitez exclure un fichier qui contient des caractères aléatoires (génération de fichier automatisé), vous pouvez utiliser le symbole « ? » (par exemple, ```C:\Folder\fileversion?.docx```)
 
-      - Les exclusions ASR dans stratégie de groupe ne prennent pas en charge les guillemets (le moteur gère en mode natif le chemin long, les espaces, etc., il n’est donc pas nécessaire d’utiliser des guillemets).
+      - Les exclusions ASR dans نهج المجموعة ne prennent pas en charge les guillemets (le moteur gère en mode natif le chemin long, les espaces, etc., il n’est donc pas nécessaire d’utiliser des guillemets).
 
       - Les règles ASR s’exécutent sous le compte NT AUTHORITY\SYSTEM, de sorte que les variables d’environnement sont limitées aux variables d’ordinateur.
   - question: >
-      Comment faire sais ce que je dois exclure ?
+      如何实现 sais ce que je dois exclure ?
     answer: >
       Différentes règles ASR ont des flux de protection différents. Pensez toujours à ce que la règle ASR que vous configurez protège et à la façon dont le flux d’exécution réel s’affiche.
 
@@ -163,7 +163,7 @@ sections:
       Testez l’impact des règles ASR sur votre organisation avant de les activer en exécutant des règles ASR en mode audit pendant une courte période. Pendant que vous exécutez les règles en mode audit, vous pouvez identifier toutes les applications métier susceptibles d’être bloquées par erreur et les exclure de l’ASR.
 
 
-      Les grandes organisations doivent envisager de déployer des règles ASR dans des « anneaux », en auditant et en activant les règles dans des sous-ensembles d’appareils de plus en plus larges. Vous pouvez organiser les appareils de votre organisation en anneaux à l’aide d’Intune ou d’un outil de gestion stratégie de groupe.
+      Les grandes organisations doivent envisager de déployer des règles ASR dans des « anneaux », en auditant et en activant les règles dans des sous-ensembles d’appareils de plus en plus larges. Vous pouvez organiser les appareils de votre organisation en anneaux à l’aide d’Intune ou d’un outil de gestion نهج المجموعة.
   - question: >
       Combien de temps dois-je tester une règle ASR en mode audit avant de l’activer ?
     answer: >

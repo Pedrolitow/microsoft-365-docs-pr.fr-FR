@@ -3,16 +3,17 @@ title: Recherche &amp; de tableau croisé dynamique avec Microsoft Defender Thre
 description: Découvrez comment effectuer des recherches et effectuer un pivot dans des jeux de données Internet, des articles sur les menaces, des articles sur les vulnérabilités et des projets à l’aide de Microsoft Defender Threat Intelligence (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: dbd62f4455b29bd2c23061096e126454d5c0d089
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6bb98e3427b902c6559f9f3fa88559f90152b540
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693574"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741673"
 ---
 # <a name="searching-and-pivoting"></a>Recherche et pivotage
 
@@ -155,7 +156,7 @@ La recherche Threat Intelligence de Defender TI est à la fois simple et puissan
 
 En haut de la page, la plateforme fournit des informations de base sur l’artefact. Ces informations peuvent inclure les éléments suivants, en fonction du type d’artefact :  
 
-- **Pays :** l’indicateur en regard de l’adresse IP indique le pays d’origine de l’artefact, ce qui peut aider à déterminer sa capacité de débit ou sa posture de sécurité. Cette adresse IP est hébergée sur l’infrastructure dans le États-Unis.
+- **Pays :** l’indicateur en regard de l’adresse IP indique le pays d’origine de l’artefact, ce qui peut aider à déterminer sa capacité de débit ou sa posture de sécurité. Cette adresse IP est hébergée sur l’infrastructure dans le Estados Unidos.
 - **Réputation :** dans cet exemple, l’adresse IP est marquée avec « Malveillant », ce qui indique que la plateforme a détecté des connexions entre cet artefact et l’infrastructure de conseil connue. Les artefacts peuvent également être étiquetés « Suspect », « Neutre » ou « Inconnu ».
 - **Première vue :** cet horodatage indique quand l’artefact a été observé pour la première fois par le système de détection de la plateforme. Comprendre la durée de vie d’un artefact peut aider à déterminer sa capacité de débit.
 - **Dernière vue :** cet horodatage indique quand l’artefact a été observé pour la dernière fois par le système de détection de la plateforme. Cela permet de déterminer si l’artefact est toujours utilisé activement.

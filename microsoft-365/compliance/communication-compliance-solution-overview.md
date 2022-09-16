@@ -3,7 +3,7 @@ title: Conformité des communications
 description: Découvrez comment configurer la conformité des communications dans Microsoft Purview.
 keywords: Microsoft 365, risque interne, conformité
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,16 +16,16 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: cf6a2ec63de23eab72d33f9e9cbff13854f6cc3d
-ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
+ms.openlocfilehash: 9746255d67fe0a03ec9a537025c19d4a2cb06302
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687101"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741321"
 ---
 # <a name="communication-compliance"></a>Conformité des communications
 
-La protection des informations sensibles et la détection et l’action en cas d’incidents de harcèlement au travail sont un élément important du respect des politiques et des normes internes. Microsoft Purview Communication Compliance permet de réduire ces risques en vous aidant à détecter, capturer et prendre rapidement des mesures de correction pour les communications par e-mail et Microsoft Teams. Il s’agit notamment de communications inappropriées contenant des blasphèmes, des menaces, du harcèlement et des communications qui partagent des informations sensibles à l’intérieur et à l’extérieur de votre organisation.
+La protection des informations sensibles et la détection et l’action en cas d’incidents de harcèlement au travail sont un élément important du respect des politiques et des normes internes. Conformité des communications Microsoft Purview permet de réduire ces risques en vous aidant à détecter, capturer et prendre rapidement des mesures de correction pour les communications par e-mail et Microsoft Teams. Il s’agit notamment de communications inappropriées contenant des blasphèmes, des menaces, du harcèlement et des communications qui partagent des informations sensibles à l’intérieur et à l’extérieur de votre organisation.
 
 ## <a name="configure-communication-compliance"></a>Configurer la conformité des communications
 

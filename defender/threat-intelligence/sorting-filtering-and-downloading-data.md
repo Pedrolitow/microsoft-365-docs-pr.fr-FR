@@ -3,16 +3,17 @@ title: Tri, filtrage et téléchargement de données à l’aide de Microsoft De
 description: Découvrez comment trier, filtrer et télécharger des données à l’aide de Microsoft Defender Threat Intelligence (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 9b826bab435f293f48486bb533a77535b2f74037
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: dfdd69bc5a3a8024f404d8dd508863d5bae31075
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697416"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741409"
 ---
 # <a name="sorting-filtering-and-downloading-data"></a>Tri, filtrage et téléchargement de données
 

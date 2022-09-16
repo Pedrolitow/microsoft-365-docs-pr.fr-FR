@@ -2,7 +2,7 @@
 title: Étapes de configuration d’un e-mail de synthèse hebdomadaire des modifications apportées au centre de messages pour Microsoft Defender pour Office 365
 description: Étapes de configuration d’un e-mail de synthèse hebdomadaire de l’activité du centre de messages pour rester à jour sur les modifications apportées à Microsoft Defender pour Office 365.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,26 +15,26 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 8e1ab822eb4e0bb4a9ca8ded4f2de28354b881e9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1a15aa2549b13edf8bbdddb389d1c358154394e5
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683844"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740223"
 ---
 # <a name="set-up-a-digest-notification-of-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>Configurer une notification digeste des modifications apportées à Microsoft Defender pour Office 365 à l’aide du centre de messages
 
-Serait-il pratique si, chaque semaine, un e-mail de synthèse de Microsoft Defender pour Office 365 modifications du centre de messages Microsoft atterrissait dans votre boîte de réception ?
+Serait-il pratique si, chaque semaine, un e-mail de synthèse de Microsoft Defender pour Office 365 modifications du centre de messages Microsoft arrivent dans votre boîte de réception ?
 
-Le centre de messages est l’endroit où les administrateurs découvrent *les annonces de service officielles et les changements de fonctionnalités*, en visitant le site (application de bureau ou mobile), en consultant Planificateur Microsoft ou *par e-mail*.
+Le centre de messages est l’endroit où les administrateurs découvrent *les annonces de service officielles et les changements de fonctionnalités*, en visitant le site (application de bureau ou mobile), en consultant Microsoft Planner ou *par e-mail*.
 
 Suivez les étapes ci-dessous pour que cet e-mail de synthèse utile se produise.
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
-- Microsoft Defender pour Office 365 plan 1 ou 2
+- Microsoft Defender pour Office 365 Plan 1 ou 2
 - Autorisations suffisantes (lecteur du Centre de messages au minimum)
 - 5 minutes pour effectuer les étapes ci-dessous.
 

@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la configuration de tous les appareils BYOD avec protection contre les cyberattaques et autres menaces et vulnérabilités malveillantes.
-ms.openlocfilehash: 3ef4509dadf5b03e1dc6b66fe7c004a1689c934c
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 28a4271c1ec129e0d205c9bdd7afa69762dc20ac
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615339"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741343"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Configurer des appareils non gérés (BYOD)
 

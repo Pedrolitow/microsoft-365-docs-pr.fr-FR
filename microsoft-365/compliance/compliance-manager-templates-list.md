@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft Purview fournit des modèles pour la création d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et sectorielles.
-ms.openlocfilehash: 2870378d25a66661cdc720c8073e5bbab283790b
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: e5f2b7665c7992daba367814d124595c255dfe3b
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66895094"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741036"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
 
@@ -35,7 +35,7 @@ ms.locfileid: "66895094"
 
 [Le Gestionnaire de conformité Microsoft Purview](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
 
-Les modèles sont ajoutés au Gestionnaire de conformité à mesure que de nouvelles lois et réglementations sont adoptées. Le Gestionnaire de conformité met également à jour ses modèles lorsque les lois ou réglementations sous-jacentes changent. Apprenez-en davantage sur la [révision et l’acceptation des mises à jour](compliance-manager-assessments.md#accept-updates-to-assessments).
+Les modèles sont ajoutés au Gestionnaire de conformité à mesure que de nouvelles lois et réglementations sont adoptées. Le Gestionnaire de conformité met également à jour ses modèles lorsque les lois ou réglementations sous-jacentes changent. Mer informasjon sur la façon [d’examiner et d’accepter les mises à jour](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 ## <a name="list-of-templates-and-where-to-find-them"></a>Liste des modèles et où les trouver
 
@@ -58,7 +58,7 @@ Accédez à une section ci-dessous pour afficher les modèles par secteur ou sec
 
 ### <a name="where-to-find-your-templates-in-compliance-manager"></a>Où trouver vos modèles dans le Gestionnaire de conformité
 
-Pour passer en revue les modèles disponibles pour votre organisation, accédez à votre page **Modèles d’évaluation** . En savoir plus sur [la façon d’afficher et de gérer vos modèles](compliance-manager-templates.md#view-and-manage-templates).
+Pour passer en revue les modèles disponibles pour votre organisation, accédez à votre page **Modèles d’évaluation** . Mer informasjon sur [la façon d’afficher et de gérer vos modèles](compliance-manager-templates.md#view-and-manage-templates).
 
 ## <a name="included-templates"></a>Modèles inclus
 
@@ -112,7 +112,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - [ISO/IEC 27018:2019](/compliance/regulatory/offering-iso-27018)  
 - ISO/CEI 27033-1:2015  
 - [ISO/IEC 27701:2019](/compliance/regulatory/offering-iso-27701)  
-- NIST 800-207 - Architecture Confiance nulle  
+- NIST 800-207 - Architecture Confiança zero  
 - SIG 2022  
 - [Contrôles système et d’organisation (SOC) 1](/compliance/regulatory/offering-soc)
 - [Contrôles système et d’organisation (SOC) 2](/compliance/regulatory/offering-soc)
@@ -138,7 +138,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - Privacy of Consumer Financial and Health Information Regulation, NAIC MDL-672, T2 2017  
 - Révisions des principes de gestion saine des risques opérationnels (Bâle III Ops Risks)  
 - Questionnaire sur la collecte normalisée d’informations (SIG)  
-- [Exchange d’évaluation de la sécurité des informations approuvées](/compliance/regulatory/offering-tisax-germany)
+- [Trusted Information Security Assessment Exchange (TISAX) 5.1](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>Gouvernement américain
 
@@ -183,10 +183,10 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - NIST SP 1800-5 Gestion des ressources informatiques  
 - Publication spéciale NIST 1800-1 Sécurisation des dossiers de santé électroniques sur les appareils mobiles  
 - Publication spéciale NIST 800-128  
-- Publication spéciale NIST 800-210 : Guide général Access Control pour les systèmes cloud  
+- Publication spéciale NIST 800-210 : Guide général 存取控制 pour les systèmes cloud  
 - [Loi Sarbanes-Oxley](/compliance/regulatory/offering-sox)
 - [SEC 17-4(a)](/compliance/regulatory/offering-sec-17a-4)  
-- États-Unis of America Privacy Act  
+- Estados Unidos of America Privacy Act  
 - États-Unis - Clarification de l’utilisation légale des données à l’étranger (CLOUD) Act  
 - États-Unis - Déclaration et conseils de la Commission sur les divulgations de la cybersécurité des sociétés publiques  
 - États-Unis - Aide du Département de l’énergie (DOE) aux activités de l’énergie atomique étrangère  
@@ -214,7 +214,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - Statuts généraux du Connecticut - Dispositions générales pour les entrepreneurs d’État qui reçoivent des informations confidentielles  
 - Programme de sécurité des informations du Connecticut pour protéger les informations personnelles  
 - Loi de l’État du Connecticut - Violation de la sécurité des données re computerisées contenant des informations personnelles  
-- D.C. Loi 16-237 - Consumer Personal Information Security Breach Notification Act  
+- D.c. Loi 16-237 - Consumer Personal Information Security Breach Notification Act  
 - Delaware - Student Data Privacy Protection Act  
 - Violations de la sécurité informatique du Delaware - Commerce et commerce sous-titre II - 12B-100 à 12B-104
 - Titre de la Floride XXXII, chapitre 501, section 501.171, Sécurité des informations personnelles confidentielles  
@@ -251,7 +251,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - New York - 23 NYCRR Partie 500  
 - Code d’administration de la ville de New York - Notification de violation de la sécurité  
 - New York General Business Law - Notification de violation de la sécurité des données et protections de la sécurité des données  
-- New York Privacy Act - DRAFT  
+- Loi sur la confidentialité de New York  
 - Caroline du Nord - Identity Theft Protection Act  
 - North Dakota Chapter 51-30 Notice of Security Breach for Personal Information  
 - Ohio - Notification de violation de la sécurité  
@@ -286,16 +286,18 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - Australie - ASD Essential 8 Maturity Level 3
 - Australie - National Archives Act
 - Australie - Public Records Office Victoria Recordkeeping Standards  
-- Australie - Spam Act 2003  
+- Australie - Spam Act 2003
 - Code de confidentialité de l’Australie (rapport de crédit)  
-- Australia Privacy Act  
+- Australia Privacy Act
+- Australie Public Record Act
 - Australian Energy Sector Cyber Security Framework (AESCSF)  
-- [Australian Information Security Registered Assessor Program (IRAP) Version 3](/compliance/regulatory/offering-ccsl-irap-australia)  
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official](/compliance/regulatory/offering-ccsl-irap-australia)
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Protected](/compliance/regulatory/offering-ccsl-irap-australia)
 - [Australian Prudentielle Regulation Authority CPS](/compliance/regulatory/offering-apra-australia)  
 - Victoria Protective Data Security Standards V2.0 (VPDSS 2.0)  
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - Chine - Spécification de sécurité des informations personnelles  
-- Loi sur la cybersécurité de la République populaire de Chine
+- Loi sur la cybersécurité de la République de Chine du Personnes
 - Hong Kong - Code of Banking Practice and Payment Card
 - Hong Kong - Ordonnance sur les données personnelles (confidentialité)  
 - India Information Technology (pratiques et procédures de sécurité raisonnables et données ou informations personnelles sensibles)
@@ -375,7 +377,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - EudraLex - Règles régissant les médicaments dans l’Union européenne  
 - European Network and Information Security Agency (ENISA) - Cloud Computing Information Assurance Framework  
 - Finlande - Loi sur la protection des données  
-- Critères finnois pour l’évaluation de la sécurité des informations de Services cloud
+- Critères finnois pour l’évaluation de la sécurité des informations de Serviços de Nuvem
 - France - Loi sur la protection des données  
 - Loi géorgienne sur la protection des données personnelles  
 - Allemagne - Texte annoté de la configuration minimale requise pour la gestion des risques  

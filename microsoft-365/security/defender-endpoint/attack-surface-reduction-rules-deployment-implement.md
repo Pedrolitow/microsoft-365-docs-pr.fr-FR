@@ -1,9 +1,10 @@
 ---
 title: Activer des règles de réduction de la surface d’attaque (ASR)
 description: Fournit des conseils pour implémenter votre déploiement de règles de réduction de la surface d’attaque.
-keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
+keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles de lutte contre l’exploitation, règles d’exploitation, règles de prévention des infections, Pertahanan Microsoft untuk Titik Akhir, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +15,6 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
 ms.collection:
 - M365-security-compliance
@@ -22,12 +22,12 @@ ms.collection:
 - highpri
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: 22435d693d024c95bfc7bb917a08b652b5f3e01a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 44152d037ffdd71e85368d9cf20f5640a7dd4dfd
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701497"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740640"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>Activer des règles de réduction de la surface d’attaque (ASR)
 
@@ -40,7 +40,7 @@ L’implémentation de règles de réduction de la surface d’attaque (ASR) dé
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Étape 1 : Passer des règles ASR de l’audit au bloc
 
 1. Une fois toutes les exclusions déterminées en mode audit, commencez à définir certaines règles ASR sur le mode « bloquer », en commençant par la règle qui a le moins d’événements déclenchés. Voir « [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md).
-2. Consultez la page de création de rapports dans le portail Microsoft 365 Defender ; consultez le [rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison](threat-protection-reports.md). Passez également en revue les commentaires de vos champions ASR.
+2. Consultez la page de création de rapports dans le portail Microsoft 365 Defender ; consultez le [rapport sur la protection contre les menaces dans Pertahanan Microsoft untuk Titik Akhir](threat-protection-reports.md). Passez également en revue les commentaires de vos champions ASR.
 3. Affinez les exclusions ou créez de nouvelles exclusions si nécessaire.
 4. Rebasculez les règles problématiques vers Audit.
 
@@ -48,7 +48,7 @@ L’implémentation de règles de réduction de la surface d’attaque (ASR) dé
   >Pour les règles problématiques (règles créant trop de bruit), il est préférable de créer des exclusions plutôt que de désactiver les règles ou de revenir à Audit. Vous devrez déterminer ce qui convient le mieux à votre environnement.
 
   >[!Tip]
-  >Lorsqu’il est disponible, tirez parti du paramètre de mode d’avertissement dans les règles pour limiter les interruptions. L’activation des règles ASR en mode Avertir vous permet de capturer les événements déclenchés et d’afficher leurs interruptions potentielles, sans bloquer réellement l’accès de l’utilisateur final. En savoir plus : [Mode d’avertissement pour les utilisateurs](attack-surface-reduction.md#warn-mode-for-users).
+  >Lorsqu’il est disponible, tirez parti du paramètre de mode d’avertissement dans les règles pour limiter les interruptions. L’activation des règles ASR en mode Avertir vous permet de capturer les événements déclenchés et d’afficher leurs interruptions potentielles, sans bloquer réellement l’accès de l’utilisateur final. Mer informasjon : [Mode d’avertissement pour les utilisateurs](attack-surface-reduction.md#warn-mode-for-users).
 
 ### <a name="how-does-warn-mode-work"></a>Comment fonctionne le mode Avertir ?
 
@@ -95,11 +95,11 @@ Si vous rencontrez des problèmes avec des règles qui détectent des fichiers q
 
 Pour plus d’informations sur chaque règle, consultez la rubrique de référence sur les [règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md) .
 
-##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser stratégie de groupe pour exclure des fichiers et des dossiers
+##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser نهج المجموعة pour exclure des fichiers et des dossiers
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](https://technet.microsoft.com/library/cc731212.aspx), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
-2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **Configuration de l’ordinateur**, puis cliquez sur **Modèles d’administration**.
+2. Dans **l’éditeur de gestion نهج المجموعة**, accédez à Configuration de l’ordinateur, puis cliquez sur **Modèles d’administration**.
 
 3. Développez l’arborescence sur **les composants** \> Windows de **l’antivirus** \> **Microsoft Defender Microsoft Defender Exploit Guard** \> **Pour réduire la surface d’attaque**.
 
@@ -129,7 +129,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ##### <a name="customize-the-notification"></a>Personnaliser la notification
 
-Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez l’article [Sécurité Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center).
+Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez l’article [Windows-sekuriteit](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center).
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiement
 

@@ -2,7 +2,7 @@
 title: Protéger votre suite C avec la protection de compte Priority dans Microsoft Defender pour Office 365 Plan 2
 description: Étapes de protection de votre suite C avec une protection de compte prioritaire. L’étiquetage d’un compte en tant que compte prioritaire permet d’optimiser la protection supplémentaire pour les modèles de flux de messagerie ciblant les cadres de l’entreprise, ainsi qu’une visibilité supplémentaire dans les rapports, les alertes et les enquêtes.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,21 +15,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: f29f4d0a82c5c6111dccb6128af87851d503f022
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: dbab9bd017bbd09f59d1a03efa49bf35a09361df
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711496"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740882"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>Protégez votre suite C avec une protection de compte prioritaire
 
 La protection prioritaire des comptes permet aux équipes informatiques et de sécurité de garantir une haute qualité de service et de protection pour les personnes critiques au sein de votre organisation. L’étiquetage d’un compte en tant que compte prioritaire permet d’optimiser la protection supplémentaire pour les modèles de flux de messagerie ciblant les cadres de l’entreprise, ainsi qu’une visibilité supplémentaire dans les rapports, les alertes et les enquêtes.
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
-- Microsoft Defender pour Office 365 plan 2 (inclus dans les plans E5)
+- Microsoft Defender pour Office 365 Plan 2 (inclus dans les plans E5)
 - Autorisations suffisantes (rôle Administrateur de sécurité)
 - 5 minutes pour effectuer les étapes ci-dessous.
 

@@ -1,6 +1,6 @@
 ---
 title: Exécuter l’analyseur client sur macOS ou Linux
-description: Découvrez comment exécuter l’analyseur client Microsoft Defender pour point de terminaison sur macOS ou Linux
+description: Découvrez comment exécuter l’analyseur client Pertahanan Microsoft untuk Titik Akhir sur macOS ou Linux
 keywords: analyseur client, capteur de dépannage, analyseur, mdeanalyzer, macos, linux, mdeanalyzer
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d23180b8e50f8e9456a7cebf3c2cd0ef2ec56a1d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4e8d05844f812ee91f135deaf339f62dd90493d6
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689578"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741804"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
@@ -116,7 +116,7 @@ Aide sur la syntaxe supplémentaire :
 
 - Processes_information.txt
 
-  Description : contient les détails des processus Microsoft Defender pour point de terminaison en cours d’exécution sur le système.
+  Description : contient les détails des processus Pertahanan Microsoft untuk Titik Akhir en cours d’exécution sur le système.
 
 - Log.txt
 

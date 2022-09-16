@@ -1,9 +1,10 @@
 ---
 title: Migration de serveurs de Microsoft Monitoring Agent vers la solution unifiée
 description: Découvrez comment migrer des serveurs de bas niveau de Microsoft Monitoring Agent vers la nouvelle solution unifiée pas à pas à partir de cet article.
-keywords: migrate server, server, 2012r2, 2016, server migration onboard Microsoft Defender pour point de terminaison servers, MECM, Microsoft Monitoring Agent, MMA, downlevel server, unified solution, UA
+keywords: migrate server, server, 2012r2, 2016, server migration onboard Pertahanan Microsoft untuk Titik Akhir servers, MECM, Microsoft Monitoring Agent, MMA, downlevel server, unified solution, UA
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 67d1f15ef79f932ad8515d8c8f6b5339845eb4f4
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.openlocfilehash: f2a3e28c52fa1182808fd17b78ab4a278bd69ab4
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67444895"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742177"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Migration de serveurs de Microsoft Monitoring Agent vers la solution unifiée
 
@@ -31,11 +31,11 @@ ms.locfileid: "67444895"
 
 Cet article vous guide dans la migration de serveurs de bas niveau de Microsoft Monitoring Agent (MMA) vers la solution unifiée.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 - Microsoft Endpoint Configuration Manager (MECM) antérieur à 2207.
 - Appareils de système d’exploitation de bas niveau dans votre environnement intégrés à Microsoft Monitoring Agent. Pour confirmer, vérifiez qu’il `MsSenseS.exe` est en cours d’exécution dans le Gestionnaire des tâches.
-- Présence de l’agent MMA. Vous pouvez le vérifier en vérifiant si l’ID d’espace de travail approprié est présent dans le Panneau de configuration> Microsoft Monitoring Agent.
+- Présence de l’agent MMA. Vous pouvez le vérifier en vérifiant si l’ID d’espace de travail approprié est présent dans le لوحة التحكم> Microsoft Monitoring Agent.
 - Portail Microsoft 365 Defender actif avec les appareils intégrés.
 - Une **collection d’appareils** contenant des serveurs de bas niveau tels que Windows Server 2012 R2 ou Windows Server 2016 à l’aide de l’agent MMA est configurée dans votre instance MECM.
 
@@ -48,8 +48,8 @@ Copiez le package de solution unifié, le script d’intégration et le script d
 1. Téléchargez le script d’intégration et la solution unifiée à partir de [Microsoft 365 Defender page des paramètres](https://sip.security.microsoft.com/preferences2/onboarding).
    :::image type="content" source="images/onboarding-script.png" alt-text="Capture d’écran du script d’intégration et du téléchargement d’une solution unifiée" lightbox="images/onboarding-script.png":::
    > [!Note]
-   > Vous devez sélectionner le stratégie de groupe dans la liste déroulante Méthode de déploiement pour obtenir le fichier .cmd.
-2. Téléchargez le script de migration à partir du document : [Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente](server-migration.md). Ce script se trouve également sur GitHub : [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
+   > Vous devez sélectionner l’نهج المجموعة dans la liste déroulante Méthode de déploiement pour obtenir le fichier .cmd.
+2. Téléchargez le script de migration à partir du document : [Scénarios de migration de serveur de la solution Pertahanan Microsoft untuk Titik Akhir MMA précédente](server-migration.md). Ce script se trouve également sur GitHub : [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
 3. Enregistrez les trois fichiers dans un dossier partagé utilisé par MECM comme source logicielle.
 
    :::image type="content" source="images/ua-migration.png" alt-text="Capture d’écran de l’enregistrement du dossier partagé par MECM.":::
@@ -116,6 +116,6 @@ Copiez le package de solution unifié, le script d’intégration et le script d
 
 - [Configuration de l'agent Microsoft Monitoring Agent](/services-hub/health/mma-setup)
 - [Déployer des applications - Configuration Manager](/mem/configmgr/apps/deploy-use/deploy-applications)
-- [Microsoft Defender pour point de terminaison - Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
-- [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](configure-server-endpoints.md)
-- [Microsoft Defender pour point de terminaison : Défense Windows Server 2012 R2 et 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292)
+- [Pertahanan Microsoft untuk Titik Akhir - Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
+- [Intégrer des serveurs Windows au service Pertahanan Microsoft untuk Titik Akhir](configure-server-endpoints.md)
+- [Pertahanan Microsoft untuk Titik Akhir : Défense Windows Server 2012 R2 et 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292)

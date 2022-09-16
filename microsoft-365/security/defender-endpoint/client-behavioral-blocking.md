@@ -1,8 +1,9 @@
 ---
 title: Blocage comportemental du client
-description: Le blocage comportemental du client fait partie des fonctionnalités de blocage comportemental et d’endiguement à Microsoft Defender pour point de terminaison
-keywords: blocage comportemental, protection rapide, comportement du client, Microsoft Defender pour point de terminaison
+description: Le blocage comportemental du client fait partie des fonctionnalités de blocage comportemental et d’endiguement à Pertahanan Microsoft untuk Titik Akhir
+keywords: blocage comportemental, protection rapide, comportement du client, Pertahanan Microsoft untuk Titik Akhir
 ms.pagetype: security
+ms.subservice: mde
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
@@ -15,14 +16,13 @@ ms.custom:
 - next-gen
 - edr
 ms.collection: m365-security-compliance
-ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f48b5b4817ce61caa4e8e58ecb9c37adc4808850
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4eef4374a9ec528204ea3ba9431e2cbe105a5104
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701915"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740179"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 

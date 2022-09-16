@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ba7230a5325a2f0b0d2194b44b0c6e38e2452c2e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 13361b7324afdc22324e0f114986a9baaea7da57
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692242"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739781"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender
 
@@ -68,7 +68,7 @@ Si vos machines reçoivent des mises à jour Defender de Windows Update, le proc
 > [!NOTE]
 > Lors de la planification de votre propre version progressive, veillez à toujours avoir une sélection d’appareils abonnés à la préversion et aux canaux intermédiaires. Cela permet à votre organisation ainsi qu’à Microsoft d’empêcher ou de rechercher et de résoudre des problèmes spécifiques à votre environnement.
 
-Pour les machines recevant des mises à jour via, par exemple, Windows Server Update Services (WSUS) ou Microsoft Endpoint Configuration Manager (MECM), d’autres options sont disponibles pour toutes les mises à jour Windows, y compris les options pour Microsoft Defender pour point de terminaison.
+Pour les machines recevant des mises à jour via, par exemple, Windows Server Update Services (WSUS) ou Microsoft Endpoint Configuration Manager (MECM), d’autres options sont disponibles pour toutes les mises à jour Windows, y compris les options pour Pertahanan Microsoft untuk Titik Akhir.
 
 - En savoir plus sur l’utilisation d’une solution comme WSUS, MECM pour gérer la distribution et l’application des mises à jour dans [Gérer les mises à jour de l’Antivirus Microsoft Defender et appliquer des bases de référence - Sécurité Windows](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 

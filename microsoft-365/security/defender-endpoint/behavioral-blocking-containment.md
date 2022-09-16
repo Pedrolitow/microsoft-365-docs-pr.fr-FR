@@ -1,7 +1,7 @@
 ---
 title: Blocage et confinement comportementaux
-description: En savoir plus sur les fonctionnalités de blocage comportemental et d’endiguement à Microsoft Defender pour point de terminaison
-keywords: Microsoft Defender pour point de terminaison, EDR en mode bloc, blocage en mode passif
+description: En savoir plus sur les fonctionnalités de blocage comportemental et d’endiguement à Pertahanan Microsoft untuk Titik Akhir
+keywords: Pertahanan Microsoft untuk Titik Akhir, EDR en mode bloc, blocage en mode passif
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -9,21 +9,21 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
-ms.technology: mde
 search.appverid: met150
-ms.openlocfilehash: 203eaf79058908ff9814cdc0628d1fbe8214b9b0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ba259111f758bfb2ce34210e436f9838c0ccf060
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698240"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740486"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
@@ -132,7 +132,7 @@ Cet exemple montre qu’avec les fonctionnalités de blocage comportemental et d
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [En savoir plus sur Defender pour point de terminaison](overview-endpoint-detection-response.md)
+- [Mer informasjon sur Defender pour point de terminaison](overview-endpoint-detection-response.md)
 
 - [Configurer vos règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 

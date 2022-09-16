@@ -1,10 +1,11 @@
 ---
 title: Intégration de à Microsoft Defender pour le cloud
-description: En savoir plus sur l’intégration de Microsoft Defender for Endpoint à Microsoft Defender pour cloud
-keywords: intégration, serveur, azure, 2012r2, 2016, 2019, intégration de serveur, gestion des appareils, configuration de Microsoft Defender pour les serveurs endpoint, intégration de Microsoft Defender pour les serveurs Endpoint, intégration de Microsoft Defender pour les serveurs Endpoint
+description: En savoir plus sur l’intégration de Pertahanan Microsoft untuk Titik Akhir à Microsoft Defender pour cloud
+keywords: intégration, serveur, azure, 2012r2, 2016, 2019, intégration de serveur, gestion des appareils, configuration de serveurs Pertahanan Microsoft untuk Titik Akhir, intégration de serveurs Pertahanan Microsoft untuk Titik Akhir, intégration serveurs Pertahanan Microsoft untuk Titik Akhir
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,43 +16,42 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 2ed9d25336cd7e8162849aa5d1d1a3e3382063fc
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 115664732fee33890d8fd5270e5a6bca8c558d6c
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526675"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740157"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration de à Microsoft Defender pour le cloud
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender pour le cloud
 
-Microsoft Defender pour le point de terminaison peut s’intégrer à Microsoft Defender pour le Cloud pour fournir une solution de protection Windows complète. Avec cette intégration, Microsoft Defender pour le Cloud peut utiliser la puissance de Defender for Endpoint pour fournir une détection améliorée des menaces pour Windows serveurs.
+Pertahanan Microsoft untuk Titik Akhir pouvez intégrer Microsoft Defender pour cloud pour fournir une solution complète de protection de serveur Windows. Avec cette intégration, Microsoft Defender pour cloud peut utiliser la puissance de Defender pour point de terminaison pour améliorer la détection des menaces pour les serveurs Windows.
 
 Les fonctionnalités suivantes sont incluses dans cette intégration :
 
-- Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés à Microsoft Defender pour le Cloud. Pour plus d’informations sur l’intégration de Microsoft Defender pour le cloud, voir [Utiliser la licence Microsoft Defender pour point de terminaison intégrée](/azure/security-center/security-center-wdatp).
+- Intégration automatisée : le capteur Defender pour point de terminaison est automatiquement activé sur les serveurs Windows intégrés à Microsoft Defender pour cloud. Pour plus d’informations sur l’intégration de Microsoft Defender pour le cloud, consultez [Utiliser la licence Pertahanan Microsoft untuk Titik Akhir intégrée](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
-    > L’intégration entre Microsoft Defender pour les serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+    > L’intégration entre Microsoft Defender pour serveurs et Pertahanan Microsoft untuk Titik Akhir a été développée pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Windows serveurs surveillés par Microsoft Defender pour le cloud seront également disponibles dans Defender pour le point de terminaison : Microsoft Defender pour le Cloud se connecte en toute transparence au client Defender pour Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes defender pour point de terminaison seront disponibles dans la console Microsoft Defender pour le cloud.
-- Examen du serveur : les clients Microsoft Defender pour le Cloud peuvent accéder au portail Microsoft 365 Defender pour effectuer une enquête détaillée afin de découvrir l’étendue d’une violation potentielle.
+- Les serveurs Windows surveillés par Microsoft Defender pour cloud seront également disponibles dans Defender pour point de terminaison : Microsoft Defender pour Cloud se connecte en toute transparence au locataire Defender pour point de terminaison, en fournissant une vue unique entre les clients et les serveurs.  En outre, les alertes Defender pour point de terminaison seront disponibles dans la console Microsoft Defender pour le cloud.
+- Investigation sur le serveur : les clients Microsoft Defender pour cloud peuvent accéder au portail Microsoft 365 Defender pour effectuer une investigation détaillée afin de découvrir l’étendue d’une violation potentielle.
 
 > [!IMPORTANT]
-> - Lorsque vous utilisez Microsoft Defender pour le Cloud pour surveiller les serveurs, un client Defender pour endpoint est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et anglais).<br>
-Les données collectées par Defender pour le point de terminaison sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
-> - Si vous utilisez Defender pour endpoint avant d’utiliser Microsoft Defender pour le cloud, vos données seront stockées à l’emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez Microsoft Defender pour le Cloud ultérieurement.
-> - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client. <br>
-La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 Cloud de la communauté du secteur public clients.
+> - Lorsque vous utilisez Microsoft Defender pour cloud pour surveiller les serveurs, un locataire Defender pour point de terminaison est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et britanniques).<br>
+Les données collectées par Defender pour point de terminaison sont stockées dans l’emplacement géographique du locataire, comme identifié lors de l’approvisionnement.
+> - Si vous utilisez Defender pour point de terminaison avant d’utiliser Microsoft Defender pour cloud, vos données sont stockées à l’emplacement que vous avez spécifié lors de la création de votre locataire, même si vous intégrez Microsoft Defender pour Cloud ultérieurement.
+> - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter pomoc techniczna firmy Microsoft pour réinitialiser le locataire. <br>
+La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 clients GCC.
 
 
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
-- [Intégration Windows Server 2012 R2, 2016, SAC version 1803 et 2019](configure-server-endpoints.md)
+- [Intégrer Windows Server 2012 R2, 2016, SAC version 1803 et 2019](configure-server-endpoints.md)

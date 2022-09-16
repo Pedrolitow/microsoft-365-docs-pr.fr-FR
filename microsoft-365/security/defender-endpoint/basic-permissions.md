@@ -1,8 +1,9 @@
 ---
 title: Utiliser des autorisations de base pour accéder à Centre de sécurité Microsoft Defender
-description: Découvrez comment utiliser les autorisations de base pour accéder au portail Microsoft Defender pour point de terminaison.
+description: Découvrez comment utiliser les autorisations de base pour accéder au portail Pertahanan Microsoft untuk Titik Akhir.
 keywords: attribuer des rôles d’utilisateur, attribuer un accès en lecture et en écriture, attribuer un accès en lecture seule, utilisateur, rôles d’utilisateur, rôles
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
 search.appverid: met150
-ms.openlocfilehash: 2b5590dd2e66a0b86c067e11b1fce5f9b85893b6
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3b2d8aa7fcb2142e114985037fcbfdc34f375168
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702443"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741826"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Utiliser des autorisations de base pour accéder au portail
 
@@ -82,7 +82,7 @@ Procédez comme suit pour attribuer des rôles de sécurité :
 
 Pour plus d’informations, consultez [Ajouter ou supprimer des membres de groupe à l’aide d’Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
-## <a name="assign-user-access-using-the-azure-portal"></a>Attribuer l’accès utilisateur à l’aide de la Portail Azure
+## <a name="assign-user-access-using-the-azure-portal"></a>Attribuer l’accès utilisateur à l’aide de la Azure-Portal
 
 Pour plus d’informations, consultez [Attribuer des rôles d’administrateur et de non-administrateur aux utilisateurs avec Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 

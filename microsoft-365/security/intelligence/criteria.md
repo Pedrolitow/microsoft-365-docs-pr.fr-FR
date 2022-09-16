@@ -3,7 +3,7 @@ title: Comment Microsoft identifie les programmes malveillants et les applicatio
 ms.reviewer: ''
 description: Découvrez comment Microsoft examine les logiciels pour les violations de la confidentialité et d’autres comportements négatifs, afin de déterminer s’il s’agit de programmes malveillants ou d’une application potentiellement indésirable.
 keywords: sécurité, programmes malveillants, menaces de recherche sur les virus, programmes malveillants de recherche, protection des appareils, infection par ordinateur, infection du virus, descriptions, correction, menaces les plus récentes, MMdevice, Centre de protection Microsoft contre les programmes malveillants, PUA, applications potentiellement indésirables
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,19 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/13/2021
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 1f210ee98c8fc51cfa6900b19bb3cb5d5465dbb3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4938a221cd23f3d99a9bdd32b981a28828c0eff3
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663531"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739959"
 ---
 # <a name="how-microsoft-identifies-malware-and-potentially-unwanted-applications"></a>Comment Microsoft identifie les programmes malveillants et les applications potentiellement indésirables
 
-Microsoft vise à offrir une expérience de Windows agréable et productive en veillant à ce que vous soyez en sécurité et en contrôle de vos appareils. Microsoft vous aide à vous protéger contre les menaces potentielles en identifiant et en analysant les logiciels et le contenu en ligne. Lorsque vous téléchargez, installez et exécutez des logiciels, nous vérifions la réputation des programmes téléchargés et nous vérifions que vous êtes protégé contre les menaces connues. Vous êtes également averti des logiciels qui nous sont inconnus.  
+Microsoft vise à offrir une expérience Windows agréable et productive en travaillant pour vous assurer que vous êtes en sécurité et dans le contrôle de vos appareils. Microsoft vous aide à vous protéger contre les menaces potentielles en identifiant et en analysant les logiciels et le contenu en ligne. Lorsque vous téléchargez, installez et exécutez des logiciels, nous vérifions la réputation des programmes téléchargés et nous vérifions que vous êtes protégé contre les menaces connues. Vous êtes également averti des logiciels qui nous sont inconnus.  
 
-Vous pouvez aider Microsoft [en soumettant des logiciels inconnus ou suspects à des fins d’analyse](https://www.microsoft.com/wdsi/filesubmission/). Cela permet de s’assurer que les logiciels inconnus ou suspects sont analysés par notre système pour commencer à établir la réputation. [En savoir plus sur l’envoi de fichiers à des fins d’analyse](submission-guide.md)
+Vous pouvez aider Microsoft [en soumettant des logiciels inconnus ou suspects à des fins d’analyse](https://www.microsoft.com/wdsi/filesubmission/). Cela permet de s’assurer que les logiciels inconnus ou suspects sont analysés par notre système pour commencer à établir la réputation. [Mer informasjon sur l’envoi de fichiers à des fins d’analyse](submission-guide.md)
 
 Les sections suivantes fournissent une vue d’ensemble des classifications que nous utilisons pour les applications et des types de comportements qui mènent à cette classification.
 
@@ -82,7 +81,7 @@ Microsoft classe la plupart des logiciels malveillants dans l’une des catégor
 
 ### <a name="unwanted-software"></a>Logiciels indésirables
 
-Microsoft estime que vous devez avoir le contrôle de votre expérience Windows. Les logiciels exécutés sur Windows doivent vous garder le contrôle de votre appareil par le biais de choix éclairés et de contrôles accessibles. Microsoft identifie les comportements logiciels qui vous permettent de garder le contrôle. Nous classifieons les logiciels qui ne présentent pas entièrement ces comportements comme des « logiciels indésirables ».
+Microsoft estime que vous devez avoir le contrôle de votre expérience Windows. Les logiciels qui s’exécutent sur Windows doivent vous garder le contrôle de votre appareil par le biais de choix éclairés et de contrôles accessibles. Microsoft identifie les comportements logiciels qui vous permettent de garder le contrôle. Nous classifieons les logiciels qui ne présentent pas entièrement ces comportements comme des « logiciels indésirables ».
 
 #### <a name="lack-of-choice"></a>Manque de choix
 
@@ -168,11 +167,11 @@ Les publicités qui vous sont présentées doivent :
 
 #### <a name="consumer-opinion"></a>Opinion des consommateurs
 
-Microsoft gère un réseau mondial d’analystes et de systèmes d’intelligence où vous pouvez [soumettre des logiciels à des fins d’analyse](https://www.microsoft.com/wdsi/filesubmission). Votre participation permet à Microsoft d’identifier rapidement les nouveaux programmes malveillants. Après analyse, Microsoft crée des informations de sécurité pour les logiciels qui répondent aux critères décrits. Cette intelligence de sécurité identifie le logiciel comme logiciel malveillant et est disponible pour tous les utilisateurs via Antivirus Microsoft Defender et d’autres solutions anti-programme malveillant Microsoft.
+Microsoft gère un réseau mondial d’analystes et de systèmes d’intelligence où vous pouvez [soumettre des logiciels à des fins d’analyse](https://www.microsoft.com/wdsi/filesubmission). Votre participation permet à Microsoft d’identifier rapidement les nouveaux programmes malveillants. Après analyse, Microsoft crée des informations de sécurité pour les logiciels qui répondent aux critères décrits. Cette intelligence de sécurité identifie le logiciel comme logiciel malveillant et est disponible pour tous les utilisateurs via l’antivirus Microsoft Defender et d’autres solutions anti-programme malveillant Microsoft.
 
 ## <a name="potentially-unwanted-application-pua"></a>Application potentiellement indésirable (PUA)
 
-Notre protection PUA vise à protéger la productivité des utilisateurs et à garantir des expériences Windows agréables. Cette protection permet d’offrir des expériences plus productives, performantes et agréables Windows. Pour obtenir des instructions sur l’activation de la protection PUA dans Chromium Microsoft Edge et Antivirus Microsoft Defender, consultez [Détecter et bloquer les applications potentiellement indésirables](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+Notre protection PUA vise à protéger la productivité des utilisateurs et à garantir des expériences Windows agréables. Cette protection permet d’offrir des expériences Windows plus productives, performantes et agréables. Pour obtenir des instructions sur l’activation de la protection PUA dans Chromium Microsoft Edge et l’Antivirus Microsoft Defender, consultez [Détecter et bloquer les applications potentiellement indésirables](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 *Les applications potentiellement malveillantes ne sont pas considérées comme des programmes malveillants.*
 
@@ -180,9 +179,9 @@ Microsoft utilise des catégories spécifiques et les définitions de catégorie
 
 * **Logiciels publicitaires :** Logiciel qui affiche des publicités ou des promotions, ou vous invite à effectuer des enquêtes pour d’autres produits ou services dans des logiciels autres que lui-même. Cela inclut les logiciels qui insèrent des publicités dans des pages web.
 
-* **Logiciel Torrent (Enterprise uniquement) :** logiciel utilisé pour créer ou télécharger des torrents ou d’autres fichiers spécifiquement utilisés avec les technologies de partage de fichiers d’égal à égal.
+* **Logiciel Torrent (Entreprise uniquement) :** Logiciel utilisé pour créer ou télécharger des torrents ou d’autres fichiers spécifiquement utilisés avec les technologies de partage de fichiers d’égal à égal.
 
-* **Logiciel de chiffrement (Enterprise uniquement) :** logiciel qui utilise les ressources de votre appareil pour extraire des cryptocurrences.
+* **Logiciel de chiffrement (Entreprise uniquement) :** Logiciel qui utilise les ressources de votre appareil pour extraire des crypto-monnaies.
 
 * **Logiciels de regroupement :** Logiciel qui propose d’installer d’autres logiciels qui ne sont pas développés par la même entité ou qui ne sont pas requis pour l’exécution du logiciel. En outre, les logiciels qui proposent d’installer d’autres logiciels qui sont éligibles en tant que PUA en fonction des critères décrits dans ce document.
 

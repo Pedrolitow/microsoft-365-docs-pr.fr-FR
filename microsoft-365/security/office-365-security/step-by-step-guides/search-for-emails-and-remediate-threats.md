@@ -2,7 +2,7 @@
 title: Rechercher des e-mails et corriger les menaces à l’aide de l’Explorateur de menaces dans Microsoft 365 Defender
 description: Étapes de correction manuelle dans l’Explorateur de menaces dans Microsoft 365 Defender, notamment comment obtenir les meilleures performances et les scénarios qui appellent la correction.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: bbce88b36c978785ea8abd28bff13a6c6d0c6da7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6dd6b38699e1a414f0db2c0ca872ff267b0747f6
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699541"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741124"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Étapes d’utilisation de la correction manuelle des e-mails dans l’Explorateur de menaces
 
@@ -56,7 +56,7 @@ Voici les scénarios de correction des e-mails :
 Deux scénarios de correction manuelle des e-mails :
 
 1. Le scénario principal :
-    1. Les actions manuelles effectuées sur les e-mails (par exemple, à l’aide de l’Explorateur de menaces ou de la chasse avancée) sont visibles uniquement dans le centre d’action Defender pour Office 365 hérité (Email et collaboration > Examiner > Centre d’actions dans le Centre d’actions - Sécurité Microsoft 365).  
+    1. Les actions manuelles effectuées sur les e-mails (par exemple, à l’aide de l’Explorateur de menaces ou de la chasse avancée) sont visibles uniquement dans le Centre d’action Defender pour Office 365 hérité (Email et collaboration > examiner > Centre d’actions dans le Centre d’action - Sécurité Microsoft 365).  
 1. Scénario d’approbation en deux étapes :
     1. Actions manuelles en attente d’approbation à l’aide du processus d’approbation en deux étapes (1. L’e-mail a été ajouté à la correction par un analyste, 2. L’e-mail a été examiné et approuvé par un autre analyste).
 
@@ -74,4 +74,4 @@ Deux scénarios de correction manuelle des e-mails :
 
 ## <a name="more-information"></a>Plus d’informations
 
-[En savoir plus sur la correction des e-mails](../../office-365-security/air-review-approve-pending-completed-actions.md)
+[Mer informasjon sur la correction des e-mails](../../office-365-security/air-review-approve-pending-completed-actions.md)

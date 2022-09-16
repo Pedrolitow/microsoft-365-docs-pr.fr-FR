@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b930181681d5849af4e99bf41d2b8643329175a5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: de77f14d998c0be2f174c74e4d95cc265ee94bfb
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482227"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740508"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Étape 1. Trier et analyser votre premier incident
 
@@ -45,10 +45,10 @@ Une fois qu’un incident de sécurité est détecté, Microsoft 365 Defender pr
 
 Microsoft 365 Defender reçoit des alertes et des événements de plusieurs plateformes de sécurité Microsoft en tant que sources de détection pour créer une image holistique et un contexte d’activité malveillante. Les sources de détection possibles sont les suivantes :
 
-- [Microsoft Defender pour point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md) est une solution de détection et de réponse de point de terminaison (EDR) qui utilise l’antivirus Microsoft Defender et la protection avancée contre les menaces compatible avec le cloud à l’aide de Microsoft Security Graph. Defender pour point de terminaison est une plateforme unifiée pour la protection préventive, la détection post-violation, l’investigation automatisée et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
-- [Microsoft Defender pour Identity](/defender-for-identity/what-is) est une solution de sécurité basée sur le cloud qui utilise vos signaux AD DS (Domain Services) Active Directory local pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation.
+- [Pertahanan Microsoft untuk Titik Akhir](../defender-endpoint/microsoft-defender-endpoint.md) est une solution de détection et de réponse de point de terminaison (EDR) qui utilise l’antivirus Microsoft Defender et la protection avancée contre les menaces compatible avec le cloud à l’aide de Microsoft Security Graph. Defender pour point de terminaison est une plateforme unifiée pour la protection préventive, la détection post-violation, l’investigation automatisée et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
+- [Microsoft Defender pour Identity](/defender-for-identity/what-is) est une solution de sécurité basée sur le cloud qui utilise vos signaux AD DS (Domain Services) жергілікті Active Directory pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) agit en tant que gardien pour répartit l’accès en temps réel entre vos utilisateurs d’entreprise et les ressources cloud qu’ils utilisent, où que vos utilisateurs se trouvent et quel que soit l’appareil qu’ils utilisent.
-- [Microsoft Defender pour Office 365](../office-365-security/overview.md) protège votre organisation contre les menaces malveillantes dans les e-mails, les liens (URL) et les outils de collaboration.
+- [Microsoft Defender pour Office 365](/microsoft-365/office-365-security/overview) protège votre organisation contre les menaces malveillantes dans les e-mails, les liens (URL) et les outils de collaboration.
 - [Azure Security Center](/azure/security-center/security-center-introduction) est un système unifié de gestion de la sécurité de l’infrastructure qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud et localement.
 
 
@@ -83,7 +83,7 @@ Une approche de triage est décrite ci-dessous :
 
    Par exemple, en examinant les tactiques [MITRE ATT&CK](https://attack.mitre.org/) utilisées par l’attaquant en fonction des catégories de l’incident, vous pouvez hiérarchiser cet incident, car l’attaquant a utilisé des informations d’identification volées, établi la commande et le contrôle, effectué un mouvement latéral et exfiltré certaines données. Ces actions suggèrent que l’attaquant a déjà approfondi le réseau et peut-être volé des informations confidentielles.
 
-   En outre, si votre organisation a implémenté l’infrastructure Confiance nulle, vous considéreriez l’accès aux informations d’identification comme une violation importante de la sécurité qui mérite d’être prioritaire.
+   En outre, si votre organisation a implémenté l’infrastructure Confiança zero, vous considéreriez l’accès aux informations d’identification comme une violation importante de la sécurité qui mérite d’être prioritaire.
 
    En faisant défiler le volet latéral, vous verrez les entités concernées spécifiques, telles que les utilisateurs, les appareils et les boîtes aux lettres. Vous pouvez vérifier le niveau d’exposition de chaque appareil et des propriétaires des boîtes aux lettres concernées.
 

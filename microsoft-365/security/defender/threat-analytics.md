@@ -2,7 +2,7 @@
 title: Analyse des menaces dans Microsoft 365 Defender
 ms.reviewer: ''
 description: Découvrez les menaces émergentes et les techniques d’attaque et comment les arrêter. Évaluez leur impact sur votre organisation et évaluez la résilience de votre organisation.
-keywords: analyse des menaces, évaluation des risques, Microsoft 365 Defender, M365D, état d’atténuation, configuration sécurisée, Microsoft Defender pour Office 365, Microsoft Defender pour Office 365  analyse des menaces, analyse des menaces MDO, données MDE et MDO d’analyse des menaces intégrées, intégration des données d’analyse des menaces, analyse intégrée Microsoft 365 Defender des menaces
+keywords: analyse des menaces, évaluation des risques, Microsoft 365 Defender, M365D, état d’atténuation, configuration sécurisée, Microsoft Defender pour Office 365, Microsoft Defender pour l’analyse des menaces Office 365, analytique des menaces MDO, données MDE et MDO d’analyse des menaces intégrées, intégration des données d’analyse des menaces, intégration intégrée Microsoft 365 Defender analyse des menaces
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -20,12 +20,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b0fc2035ff1b47c41d928f885c105aef59e9cb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 951fd10307b1ceff61285f2a006845339d9d90d4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467116"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67740019"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Analyse des menaces dans Microsoft 365 Defender
 
@@ -151,7 +152,7 @@ L’équipe Microsoft Threat Intelligence a ajouté des balises de menace à cha
 
 Dans la section **Rapport de l’analyste** , lisez l’écriture détaillée d’experts. La plupart des rapports fournissent des descriptions détaillées des chaînes d’attaque, notamment des tactiques et des techniques mappées à l’infrastructure MITRE ATT&CK, des listes exhaustives de recommandations et de puissants conseils sur [la chasse aux menaces](advanced-hunting-overview.md) .
 
-[En savoir plus sur le rapport d’analyste](threat-analytics-analyst-reports.md)
+[Mer informasjon sur le rapport d’analyste](threat-analytics-analyst-reports.md)
 
 ### <a name="related-incidents-view-and-manage-related-incidents"></a>Incidents connexes : afficher et gérer les incidents associés
 
@@ -165,7 +166,7 @@ _Section Incidents connexes d’un rapport d’analyse des menaces_
 
 Une ressource est considérée comme affectée si elle est affectée par une alerte active non résolue. **L’onglet Ressources affectées répertorie** les types de ressources impactés suivants :
 
-- **Appareils affectés** : points de terminaison qui ont des alertes Microsoft Defender pour point de terminaison non résolues. Ces alertes se déclenchent généralement sur les observations d’indicateurs et d’activités de menace connus.
+- **Appareils affectés** : points de terminaison qui ont des alertes Pertahanan Microsoft untuk Titik Akhir non résolues. Ces alertes se déclenchent généralement sur les observations d’indicateurs et d’activités de menace connus.
 - **Boîtes aux lettres impactées** : boîtes aux lettres qui ont reçu des messages électroniques qui ont déclenché Microsoft Defender pour Office 365 alertes. Bien que la plupart des messages qui déclenchent des alertes soient généralement bloqués, les stratégies au niveau de l’utilisateur ou de l’organisation peuvent remplacer les filtres.
 
 :::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="Section Ressources affectées d’un rapport d’analyse des menaces" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
@@ -244,15 +245,15 @@ Pour configurer des notifications par e-mail pour les rapports d’analyse des m
 ## <a name="additional-report-details-and-limitations"></a>Détails et limitations supplémentaires du rapport
 
 > [!NOTE]
-> Dans le cadre de l’expérience de sécurité unifiée, l’analytique des menaces est désormais disponible non seulement pour Microsoft Defender pour point de terminaison, mais également pour les titulaires de licence Microsoft Defender pour Office E5.
+> Dans le cadre de l’expérience de sécurité unifiée, l’analytique des menaces est désormais disponible non seulement pour Pertahanan Microsoft untuk Titik Akhir, mais également pour les titulaires de licences Microsoft Defender pour Office E5.
 >
-> Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans les données Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender ( Microsoft Defender pour point de terminaison).
+> Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans les données Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender ( Pertahanan Microsoft untuk Titik Akhir).
 
 Pour accéder aux rapports d’analyse des menaces, vous avez besoin de certains rôles et autorisations. Pour plus d’informations, consultez [rôles personnalisés dans le contrôle d’accès en fonction du rôle pour Microsoft 365 Defender](custom-roles.md).
 
-- Pour afficher les alertes, les incidents ou les données de ressources affectées, vous devez disposer d’autorisations sur Microsoft Defender pour Office ou Microsoft Defender pour point de terminaison données d’alertes, ou les deux.
+- Pour afficher les alertes, les incidents ou les données de ressources impactées, vous devez disposer d’autorisations sur Microsoft Defender pour Office ou Pertahanan Microsoft untuk Titik Akhir données d’alertes, ou les deux.
 - Pour afficher les tentatives d’e-mail empêchées, vous devez disposer d’autorisations sur les données de repérage Microsoft Defender pour Office.
-- Pour afficher les atténuations, vous devez disposer d’autorisations sur les données de gestion des vulnérabilités Defender dans Microsoft Defender pour point de terminaison.
+- Pour afficher les atténuations, vous devez disposer d’autorisations sur les données de gestion des vulnérabilités Defender dans Pertahanan Microsoft untuk Titik Akhir.
 
 Lorsque vous examinez les données d’analyse des menaces, n’oubliez pas les facteurs suivants :
 

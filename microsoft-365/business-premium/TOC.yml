@@ -125,12 +125,12 @@
     - name: Microsoft Defender pour les PME
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender pour Office 365
-      href: ../security/office-365-security/overview.md
+      href: /microsoft-365/security/office-365-security/overview
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Protection contre les menaces par l’antivirus Microsoft Defender
       href: m365bp-threats-detected-defender-av.md
-    - name: Intune rôles d’administrateur
+    - name: Rôles d’administrateur Intune
       href: m365bp-intune-admin-roles-in-the-mac.md
     - name: Mappage des fonctionnalités de protection avec les paramètres Intune
       href: m365bp-map-protection-features-to-intune-settings.md

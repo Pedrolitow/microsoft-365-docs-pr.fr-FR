@@ -1,8 +1,9 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 description: Les règles de réduction de la surface d’attaque peuvent aider à empêcher les exploits d’utiliser des applications et des scripts pour infecter les appareils avec des programmes malveillants.
-keywords: Règles de réduction de la surface d’attaque, asr, hanches, système de prévention des intrusions de l’hôte, règles de protection, anti-exploitation, antiexploitation, exploit, prévention des infections, Microsoft Defender pour point de terminaison
-ms.prod: m365-security
+keywords: Règles de réduction de la surface d’attaque, asr, hanches, système de prévention des intrusions de l’hôte, règles de protection, anti-exploitation, antiexploitation, exploit, prévention des infections, Pertahanan Microsoft untuk Titik Akhir
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,18 +16,17 @@ manager: dansimp
 ms.custom:
 - asr
 - admindeeplinkDEFENDER
-ms.technology: mde
 ms.topic: article
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 search.appverid: met150
-ms.openlocfilehash: 7f76c92ab6f8b488ea8d43402527ac6d74cf2b21
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c41def8113a701b1da47ad58861b87dd96c72fdc
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693210"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741914"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 
@@ -41,7 +41,7 @@ ms.locfileid: "67693210"
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Pourquoi les règles de réduction de la surface d’attaque sont importantes
 
-La surface d’attaque de votre organisation inclut tous les emplacements où un attaquant peut compromettre les appareils ou les réseaux de votre organisation. Réduire votre surface d’attaque signifie protéger les appareils et le réseau de votre organisation, ce qui laisse aux attaquants moins de moyens d’effectuer des attaques. La configuration des règles de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison peut vous aider !
+La surface d’attaque de votre organisation inclut tous les emplacements où un attaquant peut compromettre les appareils ou les réseaux de votre organisation. Réduire votre surface d’attaque signifie protéger les appareils et le réseau de votre organisation, ce qui laisse aux attaquants moins de moyens d’effectuer des attaques. La configuration des règles de réduction de la surface d’attaque dans Pertahanan Microsoft untuk Titik Akhir peut vous aider !
 
 Les règles de réduction de la surface d’attaque ciblent certains comportements logiciels, tels que :
 
@@ -92,7 +92,7 @@ Pour plus d’informations et pour obtenir vos mises à jour, consultez [Update 
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Cas où le mode d’avertissement n’est pas pris en charge
 
-Le mode d’avertissement n’est pas pris en charge pour trois règles de réduction de la surface d’attaque lorsque vous les configurez dans Microsoft Endpoint Manager. (Si vous utilisez stratégie de groupe pour configurer vos règles de réduction de la surface d’attaque, le mode d’avertissement est pris en charge.) Les trois règles qui ne prennent pas en charge le mode d’avertissement lorsque vous les configurez dans Microsoft Endpoint Manager sont les suivantes :
+Le mode d’avertissement n’est pas pris en charge pour trois règles de réduction de la surface d’attaque lorsque vous les configurez dans Microsoft Endpoint Manager. (Si vous utilisez نهج المجموعة pour configurer vos règles de réduction de la surface d’attaque, le mode d’avertissement est pris en charge.) Les trois règles qui ne prennent pas en charge le mode d’avertissement lorsque vous les configurez dans Microsoft Endpoint Manager sont les suivantes :
 
 - [Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
 - [Bloquer la persistance via l’abonnement aux événements WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
@@ -137,7 +137,7 @@ Bien que les règles de réduction de la surface d’attaque ne nécessitent pas
 - Surveillance, analytique et flux de travail disponibles dans [Defender pour point de terminaison](microsoft-defender-endpoint.md)
 - Fonctionnalités de création de rapports et de configuration dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3. Toutefois, si vous disposez de ces licences, vous pouvez utiliser observateur d'événements et les journaux de l’Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
+Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3. Toutefois, si vous disposez de ces licences, vous pouvez utiliser عارض الأحداث et les journaux de l’Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Examiner les événements de réduction de la surface d’attaque dans le portail Microsoft 365 Defender
 
@@ -152,13 +152,13 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Passer en revue les événements de réduction de la surface d’attaque dans Windows observateur d'événements
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Passer en revue les événements de réduction de la surface d’attaque dans Windows عارض الأحداث
 
 Vous pouvez consulter le journal des événements Windows pour afficher les événements générés par les règles de réduction de la surface d’attaque :
 
 1. Téléchargez le [package d’évaluation](https://aka.ms/mp7z2w) et extrayez le fichier *cfa-events.xml* à un emplacement facilement accessible sur l’appareil.
 
-2. Entrez les mots *, observateur d'événements*, dans le menu Démarrer pour ouvrir le observateur d'événements Windows.
+2. Entrez les mots *, عارض الأحداث*, dans le menu Démarrer pour ouvrir le عارض الأحداث Windows.
 
 3. Sous **Actions**, sélectionnez **Importer un affichage personnalisé...**.
 

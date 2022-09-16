@@ -1,7 +1,7 @@
 ---
 title: L’antivirus Microsoft Defender exporte les propriétés et les méthodes de l’API des détails de l’antivirus de l’appareil
 description: Découvrez comment exporter une liste des détails d’intégrité des appareils antivirus Microsoft Defender.
-keywords: api, api graphe, api prises en charge, get, api d’intégrité de l’appareil, Microsoft Defender pour point de terminaison api de rapport api rapports microsoft defender, api de création de rapports microsoft defender pour point de terminaison, api de création de rapports Windows Defender, api de création de rapports Defender pour point de terminaison, API de rapport Windows Defender
+keywords: api, api graphe, api prises en charge, get, api d’intégrité de l’appareil, Pertahanan Microsoft untuk Titik Akhir api de rapports microsoft defender de rapport, api de création de rapports microsoft defender pour point de terminaison, api de création de rapports Windows Defender, api de création de rapports defender pour point de terminaison, API de rapport Windows Defender
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: eb9802a8036b8c5b49dc10b3f422dad2b22e683e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+search.appverid: met150
+ms.openlocfilehash: 7e86424e2b0e1d97878818a6ef836c20ddf8fd50
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728047"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739799"
 ---
 # <a name="export-device-antivirus-health-details-api-methods-and-properties"></a>Exporter les méthodes et propriétés de l’API des détails d’intégrité de l’antivirus de l’appareil
 
@@ -62,7 +63,7 @@ Les données collectées à l’aide de la _« réponse JSON_ ou _par le biais d
 
 > [!NOTE]
 >
-> Pour plus d’informations sur l’utilisation de l’outil de création de rapports sur **l’intégrité des appareils et la conformité antivirus** dans le tableau de bord Sécurité de Microsoft 365, consultez : [Rapport sur l’intégrité des appareils et les antivirus dans Microsoft Defender pour point de terminaison](device-health-reports.md).
+> Pour plus d’informations sur l’utilisation de l’outil de création de rapports sur **l’intégrité des appareils et la conformité antivirus** dans le tableau de bord Sécurité microsoft 365, consultez : Rapport sur l’intégrité [des appareils et les antivirus dans Pertahanan Microsoft untuk Titik Akhir](device-health-reports.md).
 >
 
 ### <a name="11-export-device-antivirus-health-details-api-methods"></a>1.1 Exporter les méthodes d’API des détails d’intégrité de l’antivirus de l’appareil

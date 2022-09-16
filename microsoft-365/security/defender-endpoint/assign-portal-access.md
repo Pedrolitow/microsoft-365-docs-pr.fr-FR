@@ -1,10 +1,11 @@
 ---
-title: Attribuer à l’utilisateur l’accès Centre de sécurité Microsoft Defender
-description: Attribuez un accès en lecture et en écriture ou en lecture seule au portail Microsoft Defender for Endpoint.
+title: Attribuer l’accès utilisateur au centre de sécurité Microsoft Defender.
+description: Attribuez un accès en lecture et en écriture ou en lecture seule au portail Pertahanan Microsoft untuk Titik Akhir.
 keywords: attribuer des rôles d’utilisateur, attribuer un accès en lecture et en écriture, attribuer un accès en lecture seule, utilisateur, rôles d’utilisateur, rôles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,15 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
-ms.technology: mde
-ms.openlocfilehash: fa0157a37cf25efcdcf1b578473b4dc2f6deb10d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d49190bf38b05432c8df548442135346e8e099d4
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166961"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740728"
 ---
-# <a name="assign-user-access-to-microsoft-defender-security-center"></a>Attribuer à l’utilisateur l’accès Centre de sécurité Microsoft Defender
+# <a name="assign-user-access-to-microsoft-defender-security-center"></a>Attribuer l’accès utilisateur au centre de sécurité Microsoft Defender.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,25 +32,25 @@ ms.locfileid: "61166961"
 **S’applique à :**
 - Azure Active Directory
 - Office 365
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender pour le point de terminaison prend en charge deux façons de gérer les autorisations :
+Defender pour point de terminaison prend en charge deux façons de gérer les autorisations :
 
-- **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule.
-- Contrôle d’accès basé sur les rôles **:** définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations sur le contrôle d’accès basé sur un rôle, voir Gérer l’accès au portail à l’aide du contrôle [d’accès basé sur un rôle.](rbac.md)
+- **Gestion des autorisations de base** : définissez les autorisations sur un accès complet ou en lecture seule.
+- **Contrôle d’accès en fonction du rôle (RBAC)** : définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations sur RBAC, consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).
 
 > [!NOTE]
-> Si vous avez déjà attribué des autorisations de base, vous pouvez basculer vers RBAC à tout moment. Prenons les considérations suivantes avant d’effectuer le basculement :
+> Si vous avez déjà affecté des autorisations de base, vous pouvez basculer vers RBAC à tout moment. Prenez en compte les points suivants avant d’effectuer le commutateur :
 >
-> - Les utilisateurs ayant un accès total (utilisateurs affectés au rôle d’administrateur général ou d’administrateur de sécurité dans Azure AD) se voit automatiquement attribuer le rôle d’administrateur Defender pour point de terminaison par défaut, qui dispose également d’un accès total. Des Azure AD utilisateurs supplémentaires peuvent être affectés au rôle d’administrateur Defender for Endpoint après le passage au RBAC. Seuls les utilisateurs affectés au rôle d’administrateur Defender pour le point de terminaison peuvent gérer les autorisations à l’aide du contrôle d’accès en fonction du rôle. 
-> - Les utilisateurs qui ont un accès en lecture seule (lecteurs de sécurité) perdent l’accès au portail tant qu’un rôle ne leur est pas attribué. Notez que seuls Azure AD groupes d’utilisateurs peuvent se voir attribuer un rôle sous RBAC.
-> - Après avoir basé vers RBAC, vous ne pourrez pas revenir à l’utilisation de la gestion des autorisations de base.
+> - Les utilisateurs disposant d’un accès complet (utilisateurs auxquels le rôle d’administrateur général ou d’administrateur de sécurité est attribué dans Azure AD) se voient automatiquement attribuer le rôle d’administrateur Defender pour point de terminaison par défaut, qui dispose également d’un accès complet. Des groupes d’utilisateurs Azure AD supplémentaires peuvent être affectés au rôle d’administrateur Defender pour point de terminaison après le basculement vers RBAC. Seuls les utilisateurs affectés au rôle d’administrateur Defender pour point de terminaison peuvent gérer les autorisations à l’aide de RBAC. 
+> - Les utilisateurs disposant d’un accès en lecture seule (lecteurs de sécurité) perdront l’accès au portail jusqu’à ce qu’un rôle leur soit attribué. Notez que seuls les groupes d’utilisateurs Azure AD peuvent se faire attribuer un rôle sous RBAC.
+> - Après avoir basculé vers RBAC, vous ne pourrez plus revenir à l’utilisation de la gestion des autorisations de base.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Utiliser des autorisations de base pour accéder au portail](basic-permissions.md)
 - [Gérer l’accès au portail à l’aide de RBAC](rbac.md)
