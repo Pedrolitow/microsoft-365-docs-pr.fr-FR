@@ -2,7 +2,7 @@
 title: Guide pratique pour déployer et configurer le complément de message de rapport
 description: Étapes de déploiement et de configuration des compléments de création de rapports de hameçonnage de Microsoft destinés aux administrateurs de sécurité.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,20 +15,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: fd494b27654ba137409b3e29e21d81229ff5fddb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3909f2c0d2aeb3ef2a8e71588be3e988b54d9203
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690660"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738792"
 ---
 # <a name="deploy-and-configure-the-report-message-add-in-to-users"></a>Déployez et configurez le complément de message de rapport pour les utilisateurs.
 
 Le complément d’hameçonnage de message de rapport et de rapport pour Outlook facilite le signalement du hameçonnage à Microsoft et à ses affiliés à des fins d’analyse, ainsi qu’un triage facile pour les administrateurs dans le [portail des soumissions](https://security.microsoft.com/reportsubmission?viewid=user). 
 
-Selon que vous disposez d’une licence pour Defender pour Office 365, vous bénéficiez également de fonctionnalités supplémentaires, telles que les alertes & l’investigation et la réponse automatisées (AIR), ce qui supprimera la charge de travail de votre personnel des opérations de sécurité. Ce guide vous guide tout au long de la configuration du déploiement du complément, comme recommandé par l’équipe Microsoft Defender pour Office 365.
+Selon que vous disposez d’une licence Defender pour Office 365, vous bénéficiez également de fonctionnalités supplémentaires, telles que les alertes & l’investigation et la réponse automatisées (AIR), ce qui supprimera la charge de votre personnel des opérations de sécurité. Ce guide vous guide tout au long de la configuration du déploiement du complément, comme recommandé par l’équipe Microsoft Defender pour Office 365.
 
 ## <a name="choose-between-which-add-in-to-deploy"></a>Choisir entre le complément à déployer
 
@@ -44,7 +44,7 @@ Selon que vous disposez d’une licence pour Defender pour Office 365, vous bén
 
 ## <a name="deploy-the-add-in-for-users"></a>Déployer le complément pour les utilisateurs
 
-1.  **Connectez-vous** au Centre d'administration Microsoft 365.  https://admin.microsoft.com.
+1.  **Connectez-vous** au Microsoft 365 系統管理中心.  https://admin.microsoft.com.
 1.  Dans le volet de navigation gauche, **appuyez sur Afficher tout** , **développez Paramètres** et sélectionnez **Applications intégrées**.
 1.  Sur la page qui se charge, **appuyez sur Obtenir des applications**.
 1.  Dans la page qui s’affiche, dans la zone de recherche en haut à droite, entrez **message** de rapport ou **hameçonnage de rapport**, puis sélectionnez **Rechercher**.
@@ -72,6 +72,6 @@ Selon que vous disposez d’une licence pour Defender pour Office 365, vous bén
 
 
 ### <a name="further-reading"></a>Lire plus en détail
-En savoir plus sur les paramètres de message signalés par l’utilisateur [- Office 365 | Microsoft Docs](../user-submission.md)
+Mer informasjon sur les paramètres de message signalés par l’utilisateur [Les paramètres de message signalés par l’utilisateur - Office 365 | Microsoftova dokumentacija](../user-submission.md)
 
-Activer le message de rapport ou le complément de hameçonnage [de rapport Activer le message de rapport ou les compléments d’hameçonnage de rapport - Office 365 | Microsoft Docs](../enable-the-report-message-add-in.md)
+Activer le message de rapport ou le complément de hameçonnage [de rapport Activer le message de rapport ou les compléments d’hameçonnage de rapport - Office 365 | Microsoftova dokumentacija](../enable-the-report-message-add-in.md)

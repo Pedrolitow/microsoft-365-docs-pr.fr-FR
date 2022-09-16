@@ -1,7 +1,7 @@
 ---
 title: Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
-description: Découvrez comment gérer les faux positifs ou les faux négatifs dans Microsoft Defender pour point de terminaison.
-keywords: antivirus, exception, exclusion, Microsoft Defender pour point de terminaison, faux positif, faux négatif, fichier bloqué, URL bloquée
+description: Découvrez comment gérer les faux positifs ou les faux négatifs dans Pertahanan Microsoft untuk Titik Akhir.
+keywords: antivirus, exception, exclusion, Pertahanan Microsoft untuk Titik Akhir, faux positif, faux négatif, fichier bloqué, URL bloquée
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: deploy
@@ -19,18 +19,17 @@ ms.collection:
 - m365solution-fpfn
 - highpri
 ms.topic: how-to
-ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: e168e7a6717348eb67a8ac173d68cbe0f5ab944a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4f6f015768873f698742b9b318965dc7a4466c7d
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702846"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736859"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -44,9 +43,9 @@ ms.locfileid: "67702846"
 **Plateformes**
 - Windows
 
-Dans les solutions endpoint protection, un faux positif est une entité, telle qu’un fichier ou un processus, qui a été détectée et identifiée comme malveillante, même si l’entité n’est pas réellement une menace. Un faux négatif est une entité qui n’a pas été détectée comme une menace, même si elle est réellement malveillante. Les faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection contre les menaces, y compris [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md).
+Dans les solutions endpoint protection, un faux positif est une entité, telle qu’un fichier ou un processus, qui a été détectée et identifiée comme malveillante, même si l’entité n’est pas réellement une menace. Un faux négatif est une entité qui n’a pas été détectée comme une menace, même si elle est réellement malveillante. Les faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection contre les menaces, y compris [Pertahanan Microsoft untuk Titik Akhir](microsoft-defender-endpoint.md).
 
-:::image type="content" source="images/false-positives-overview.png" alt-text="Définition des faux positifs et négatifs dans le portail Microsoft Defender pour point de terminaison" lightbox="images/false-positives-overview.png":::
+:::image type="content" source="images/false-positives-overview.png" alt-text="Définition des faux positifs et négatifs dans le portail Pertahanan Microsoft untuk Titik Akhir" lightbox="images/false-positives-overview.png":::
 
 Heureusement, des mesures peuvent être prises pour résoudre et réduire ce genre de problèmes. Si vous voyez des faux positifs/négatifs dans [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender), vos opérations de sécurité peuvent prendre des mesures pour y remédier à l’aide du processus suivant :
 
@@ -61,7 +60,7 @@ Vous pouvez obtenir de l’aide si vous rencontrez toujours des problèmes avec 
 :::image type="content" source="images/false-positives-step-diagram.png" alt-text="Étapes pour résoudre les faux positifs et les négatifs" lightbox="images/false-positives-step-diagram.png":::
 
 > [!NOTE]
-> Cet article est destiné aux opérateurs de sécurité et aux administrateurs de sécurité qui utilisent [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md).
+> Cet article est destiné aux opérateurs de sécurité et aux administrateurs de sécurité qui utilisent [Pertahanan Microsoft untuk Titik Akhir](microsoft-defender-endpoint.md).
 
 ## <a name="part-1-review-and-classify-alerts"></a>Partie 1 : Examiner et classer les alertes
 
@@ -77,19 +76,19 @@ Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exact
 
 2. Dans le volet de navigation, choisissez **La file d’attente des alertes**.
 
-3. Sélectionnez une alerte pour plus d’informations sur l’alerte. (Voir [Vérifier les alertes dans Microsoft Defender pour point de terminaison](review-alerts.md).)
+3. Sélectionnez une alerte pour plus d’informations sur l’alerte. (Voir [Vérifier les alertes dans Pertahanan Microsoft untuk Titik Akhir](review-alerts.md).)
 
 4. Selon l’état de l’alerte, effectuez les étapes décrites dans le tableau suivant :
 
    |État de l’alerte|Procédure|
    |---|---|
    |L’alerte est précise|Affectez l’alerte, puis [examinez-la](investigate-alerts.md) plus en détail.|
-   |L’alerte est un faux positif|1. [Classer l’alerte](#classify-an-alert) comme un faux positif.<br/><br/>2. [Supprimez l’alerte](#suppress-an-alert).<br/><br/>3. [Créez un indicateur](#indicators-for-microsoft-defender-for-endpoint) pour Microsoft Defender pour point de terminaison.<br/><br/>4. [Envoyez un fichier à Microsoft pour analyse](#part-4-submit-a-file-for-analysis).|
+   |L’alerte est un faux positif|1. [Classer l’alerte](#classify-an-alert) comme un faux positif.<br/><br/>2. [Supprimez l’alerte](#suppress-an-alert).<br/><br/>3. [Créez un indicateur](#indicators-for-microsoft-defender-for-endpoint) pour Pertahanan Microsoft untuk Titik Akhir.<br/><br/>4. [Envoyez un fichier à Microsoft pour analyse](#part-4-submit-a-file-for-analysis).|
    |L’alerte est précise, mais sans gravité (sans importance)|[Classifiez l’alerte](#classify-an-alert) comme un vrai positif, puis [supprimez l’alerte](#suppress-an-alert).|
 
 ### <a name="classify-an-alert"></a>Classifier une alerte
 
-Les alertes peuvent être classées sous forme de faux positifs ou de vrais positifs dans Microsoft 365 Defender. La classification des alertes permet d’entraîner Microsoft Defender pour point de terminaison de sorte qu’au fil du temps, vous verrez plus d’alertes vraies et moins de fausses alertes.
+Les alertes peuvent être classées sous forme de faux positifs ou de vrais positifs dans Microsoft 365 Defender. La classification des alertes permet d’entraîner Pertahanan Microsoft untuk Titik Akhir de sorte qu’au fil du temps, vous verrez plus d’alertes vraies et moins de fausses alertes.
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
@@ -100,7 +99,7 @@ Les alertes peuvent être classées sous forme de faux positifs ou de vrais posi
 4. Dans la section **Gérer l’alerte** , sélectionnez **Alerte true** ou **Alerte False**. (Utilisez **l’alerte False** pour classer un faux positif.)
 
 > [!TIP]
-> Pour plus d’informations sur la suppression des alertes, consultez [Gérer les alertes Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/manage-alerts). Et, si votre organisation utilise un serveur SIEM (Security Information and Event Management), veillez également à définir une règle de suppression.
+> Pour plus d’informations sur la suppression des alertes, consultez [Gérer les alertes Pertahanan Microsoft untuk Titik Akhir](/microsoft-365/security/defender-endpoint/manage-alerts). Et, si votre organisation utilise un serveur SIEM (Security Information and Event Management), veillez également à définir une règle de suppression.
 
 ### <a name="suppress-an-alert"></a>Supprimer une alerte
 
@@ -200,21 +199,21 @@ Vous pouvez restaurer et supprimer un fichier de la quarantaine si vous avez dé
 
 ## <a name="part-3-review-or-define-exclusions"></a>Partie 3 : Examiner ou définir des exclusions
 
-Une exclusion est une entité, telle qu’un fichier ou une URL, que vous spécifiez comme exception aux actions de correction. L’entité exclue peut toujours être détectée, mais aucune action de correction n’est effectuée sur cette entité. Autrement dit, le fichier ou le processus détecté ne sera pas arrêté, envoyé en quarantaine, supprimé ou modifié par Microsoft Defender pour point de terminaison.
+Une exclusion est une entité, telle qu’un fichier ou une URL, que vous spécifiez comme exception aux actions de correction. L’entité exclue peut toujours être détectée, mais aucune action de correction n’est effectuée sur cette entité. Autrement dit, le fichier ou le processus détecté ne sera pas arrêté, envoyé en quarantaine, supprimé ou modifié par Pertahanan Microsoft untuk Titik Akhir.
 
-Pour définir des exclusions entre Microsoft Defender pour point de terminaison, effectuez les tâches suivantes :
+Pour définir des exclusions entre Pertahanan Microsoft untuk Titik Akhir, effectuez les tâches suivantes :
 
 - [Définir des exclusions pour l’antivirus Microsoft Defender](#exclusions-for-microsoft-defender-antivirus)
-- [Créer des indicateurs « autoriser » pour Microsoft Defender pour point de terminaison](#indicators-for-microsoft-defender-for-endpoint)
+- [Créer des indicateurs « autoriser » pour Pertahanan Microsoft untuk Titik Akhir](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Les exclusions de l’antivirus Microsoft Defender s’appliquent uniquement à la protection antivirus, et non à d’autres fonctionnalités Microsoft Defender pour point de terminaison. Pour exclure les fichiers à grande échelle, utilisez des exclusions pour l’antivirus Microsoft Defender et [des indicateurs personnalisés](/microsoft-365/security/defender-endpoint/manage-indicators) pour Microsoft Defender pour point de terminaison.
+> Les exclusions de l’antivirus Microsoft Defender s’appliquent uniquement à la protection antivirus, et non à d’autres fonctionnalités Pertahanan Microsoft untuk Titik Akhir. Pour exclure les fichiers à grande échelle, utilisez des exclusions pour l’antivirus Microsoft Defender et [des indicateurs personnalisés](/microsoft-365/security/defender-endpoint/manage-indicators) pour Pertahanan Microsoft untuk Titik Akhir.
 
 Les procédures de cette section décrivent comment définir des exclusions et des indicateurs.
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Exclusions pour l’antivirus Microsoft Defender
 
-En général, vous ne devez pas avoir besoin de définir des exclusions pour l’antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à inclure uniquement les fichiers, dossiers, processus et fichiers ouverts par le processus qui génèrent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md).
+En général, vous ne devez pas avoir besoin de définir des exclusions pour l’antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à inclure uniquement les fichiers, dossiers, processus et fichiers ouverts par le processus qui génèrent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Pertahanan Microsoft untuk Titik Akhir](manage-mde-post-migration.md).
 
 > [!TIP]
 > Vous avez besoin d’aide pour les exclusions antivirus ? Consultez [Configurer et valider les exclusions pour les analyses antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
@@ -251,11 +250,11 @@ En général, vous ne devez pas avoir besoin de définir des exclusions pour l�
 
 9. Sous l’onglet **Vérifier + créer** , passez en revue les paramètres, puis choisissez **Créer**.
 
-### <a name="indicators-for-microsoft-defender-for-endpoint"></a>Indicateurs pour Microsoft Defender pour point de terminaison
+### <a name="indicators-for-microsoft-defender-for-endpoint"></a>Indicateurs pour Pertahanan Microsoft untuk Titik Akhir
 
-[Les indicateurs](/microsoft-365/security/defender-endpoint/manage-indicators) (en particulier, les indicateurs de compromission ou les IOC) permettent à votre équipe des opérations de sécurité de définir la détection, la prévention et l’exclusion des entités. Par exemple, vous pouvez spécifier certains fichiers à omettre des analyses et des actions de correction dans Microsoft Defender pour point de terminaison. Vous pouvez également utiliser des indicateurs pour générer des alertes pour certains fichiers, adresses IP ou URL.
+[Les indicateurs](/microsoft-365/security/defender-endpoint/manage-indicators) (en particulier, les indicateurs de compromission ou les IOC) permettent à votre équipe des opérations de sécurité de définir la détection, la prévention et l’exclusion des entités. Par exemple, vous pouvez spécifier certains fichiers à omettre des analyses et des actions de correction dans Pertahanan Microsoft untuk Titik Akhir. Vous pouvez également utiliser des indicateurs pour générer des alertes pour certains fichiers, adresses IP ou URL.
 
-Pour spécifier des entités en tant qu’exclusions pour Microsoft Defender pour point de terminaison, créez des indicateurs « autoriser » pour ces entités. Ces indicateurs « autorisés » dans Microsoft Defender pour point de terminaison s’appliquent à la [protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md), à la détection et à la réponse des points de [terminaison](overview-endpoint-detection-response.md), ainsi qu’à l’examen [automatisé & correction](/microsoft-365/security/defender-endpoint/automated-investigations).
+Pour spécifier des entités en tant qu’exclusions pour Pertahanan Microsoft untuk Titik Akhir, créez des indicateurs « autoriser » pour ces entités. Ces indicateurs « autoriser » dans Pertahanan Microsoft untuk Titik Akhir s’appliquent à la [protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md), à la détection et à la réponse des points de [terminaison](overview-endpoint-detection-response.md), ainsi qu’à l’examen [automatisé & correction](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 Des indicateurs « Autoriser » peuvent être créés pour :
 
@@ -304,7 +303,7 @@ Avant de créer des indicateurs pour les certificats d’application, assurez-vo
 
 ## <a name="part-4-submit-a-file-for-analysis"></a>Partie 4 : Soumettre un fichier à des fins d’analyse
 
-Vous pouvez envoyer des entités, telles que des fichiers et des détections sans fichier, à Microsoft à des fins d’analyse. Les chercheurs en sécurité Microsoft analysent toutes les soumissions et leurs résultats aident à informer Microsoft Defender pour point de terminaison fonctionnalités de protection contre les menaces. Lorsque vous vous connectez au site de soumission, vous pouvez suivre vos soumissions.
+Vous pouvez envoyer des entités, telles que des fichiers et des détections sans fichier, à Microsoft à des fins d’analyse. Les chercheurs en sécurité Microsoft analysent toutes les soumissions et leurs résultats aident à informer Pertahanan Microsoft untuk Titik Akhir fonctionnalités de protection contre les menaces. Lorsque vous vous connectez au site de soumission, vous pouvez suivre vos soumissions.
 
 ### <a name="submit-a-file-for-analysis"></a>Envoyer un fichier à des fins d’analyse
 
@@ -345,7 +344,7 @@ Pour rechercher les mises à jour concernant votre soumission, connectez-vous au
 
 ## <a name="part-5-review-and-adjust-your-threat-protection-settings"></a>Partie 5 : Examiner et ajuster vos paramètres de protection contre les menaces
 
-Microsoft Defender pour point de terminaison offre une grande variété d’options, notamment la possibilité d’affiner les paramètres pour différentes fonctionnalités. Si vous recevez de nombreux faux positifs, veillez à passer en revue les paramètres de protection contre les menaces de votre organisation. Vous devrez peut-être effectuer quelques ajustements pour :
+Pertahanan Microsoft untuk Titik Akhir offre une grande variété d’options, notamment la possibilité d’affiner les paramètres pour différentes fonctionnalités. Si vous recevez de nombreux faux positifs, veillez à passer en revue les paramètres de protection contre les menaces de votre organisation. Vous devrez peut-être effectuer quelques ajustements pour :
 
 - [Protection fournie par le cloud](#cloud-delivered-protection)
 - [Correction des applications potentiellement indésirables](#remediation-for-potentially-unwanted-applications)
@@ -358,7 +357,7 @@ Vérifiez le niveau de protection fourni par le cloud pour l’antivirus Microso
 > [!TIP]
 > Pour en savoir plus sur la configuration de votre protection fournie par le cloud, consultez [Spécifier le niveau de protection fourni par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection fournis dans le cloud. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md).
+Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection fournis par le cloud. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Pertahanan Microsoft untuk Titik Akhir](manage-mde-post-migration.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Utiliser Microsoft Endpoint Manager pour examiner et modifier les paramètres de protection fournis par le cloud (pour les stratégies existantes)
 
@@ -402,7 +401,7 @@ Les applications potentiellement indésirables (PUA) sont une catégorie de logi
 
 Selon les applications que votre organisation utilise, vous pouvez obtenir des faux positifs en raison de vos paramètres de protection PUA. Si nécessaire, envisagez d’exécuter la protection PUA en mode audit pendant un certain temps, ou appliquez la protection PUA à un sous-ensemble d’appareils de votre organisation. La protection PUA peut être configurée pour le navigateur Microsoft Edge et l’antivirus Microsoft Defender.
 
-Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir des paramètres de protection PUA. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md).
+Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir des paramètres de protection PUA. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Pertahanan Microsoft untuk Titik Akhir](manage-mde-post-migration.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Utiliser Microsoft Endpoint Manager pour modifier la protection PUA (pour les profils de configuration existants)
 
@@ -444,7 +443,7 @@ Les fonctionnalités [d’investigation et de correction automatisées](automate
 
 Selon le [niveau d’automatisation](/microsoft-365/security/defender-endpoint/automation-levels) défini pour votre organisation et d’autres paramètres de sécurité, des actions de correction sont effectuées sur les artefacts considérés comme *malveillants* ou *suspects*. Dans certains cas, les actions de correction se produisent automatiquement ; dans d’autres cas, les actions de correction sont effectuées manuellement ou uniquement après approbation par votre équipe des opérations de sécurité.
 
-- [En savoir plus sur les niveaux d’automatisation](/microsoft-365/security/defender-endpoint/automation-levels) ; Et puis
+- [Mer informasjon sur les niveaux d’automatisation](/microsoft-365/security/defender-endpoint/automation-levels), puis
 - [Configurez les fonctionnalités AIR dans Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation).
 
 > [!IMPORTANT]
@@ -472,6 +471,6 @@ Si vous avez suivi toutes les étapes décrites dans cet article et que vous ave
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md)
+[Gérer Pertahanan Microsoft untuk Titik Akhir](manage-mde-post-migration.md)
 
 [Vue d’ensemble du portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)

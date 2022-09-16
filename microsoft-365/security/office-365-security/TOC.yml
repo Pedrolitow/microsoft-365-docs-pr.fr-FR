@@ -5,7 +5,7 @@
     - name: Vue d’ensemble
       items:
         - name: Vue d’ensemble de la sécurité dans Office 365
-          href: overview.md
+          href: microsoft-defender-for-office-365-product-overview.md
         - name: Defender pour Office 365
           href: defender-for-office-365.md
         - name: Protection contre les menaces étape par étape dans Defender pour Office 365
@@ -420,7 +420,7 @@
               href: step-by-step-guides/utilize-microsoft-defender-for-office-365-in-sharepoint-online.md
         - name: Utilisation
           items:
-            - name: Suivre les menaces de sécurité émergentes et y répondre avec l’affichage des campagnes dans Microsoft Defender pour Office 365
+            - name: Suivez et répondez aux menaces de sécurité émergentes avec l’affichage des campagnes dans Microsoft Defender pour Office 365
               href: step-by-step-guides/track-and-respond-to-emerging-threats-with-campaigns.md
             - name: Configurer une notification digeste des modifications apportées à Microsoft Defender pour Office 365 à partir du centre de messages
               href: step-by-step-guides/stay-informed-with-message-center.md

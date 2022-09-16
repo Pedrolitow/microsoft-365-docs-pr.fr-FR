@@ -7,18 +7,18 @@ ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: medium
 description: Découvrez les applications Microsoft d’interopérabilité des outils d’apprentissage (LTI) et comment elles aideront les enseignants lors de l’intégration d’applications Microsoft dans leur système de gestion de l’apprentissage (LMS).
-ms.openlocfilehash: 0dbaa7d02af0556015e8c531eeb09131cacf0ab5
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: b1bd3d1ad5ae5995c9c7f48a7928b83d52461a72
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385031"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737498"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Intégration de produits Microsoft à votre système de gestion de l’apprentissage (LMS)
 
@@ -36,7 +36,7 @@ Pour obtenir des informations générales sur la gestion des applications Micros
 
 ## <a name="onedrive-lti-apps"></a>Applications OneDrive LTI
 
-En savoir plus sur l’utilisation de Microsoft OneDrive avec votre système de gestion de l’apprentissage (LMS).
+Mer informasjon sur l’utilisation de Microsoft OneDrive avec votre système de gestion de l’apprentissage (LMS).
 
 - **Apporte Microsoft 365 directement dans vos flux de travail**
 

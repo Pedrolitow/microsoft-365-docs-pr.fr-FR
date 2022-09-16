@@ -3,16 +3,17 @@ title: 'Tutoriel : Collecte d’informations sur les menaces et le chaînage d�
 description: Dans ce didacticiel, découvrez comment collecter les informations sur les menaces et la chaîne d’infrastructure ensemble des indicateurs de compromission dans Microsoft Defender Threat Intelligence (Defender TI). Cet article couvre une enquête historique sur la violation de MyPillow Magecart.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: tutorial
 ms.date: 08/02/2022
 ms.custom: template-tutorial
-ms.openlocfilehash: 7cdb70d72253164b24cb55d57b20cc3edb7c5a7c
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d225345ee32e016c3e050d4dc26a94f7f47c7146
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108182"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736087"
 ---
 # <a name="tutorial-gathering-threat-intelligence-and-infrastructure-chaining"></a>Tutoriel : Collecte des informations sur les menaces et du chaînage d’infrastructure
 
@@ -21,7 +22,7 @@ Dans ce didacticiel, vous allez apprendre à :
 
   ![ti OverviewHome Page Chrome Capture d’écran](media/tiOverviewHomePageChromeScreenshot.png)
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).
@@ -142,7 +143,7 @@ Toutefois, étant donné que nos utilisateurs virtuels capturent le DOM et trouv
     a. Remarquez-vous une relation de script similaire entre mypillow.com et secure.livechatinc[.] organisation qui reflète la même relation mypillow.com eue avec mypiltow[.] Com?
       - Remarquez comment www.mypillow.com a été observé pour la première fois en atteignant secure.livechatinc[.] org le 26/10/2018, car une requête GET de script a été observée de www.mypillow.com à secure.livechatinc[.] Org. Cette relation a duré jusqu’au 19/11/2018.
 
-           ![Tutoriel Infra Chain My Pillowcom Host Pairs Live Chat ScriptSrc](media/tutorialInfraChainMyPillowcomHostPairsLiveChatScriptSrc.gif) ii. En outre, secure.livechatinc[.] l’organisation a contacté www.mypillow.com pour accéder au serveur de www.mypillow.com (xmlhttprequest).
+           ![Tutoriel Infra Chain My Pillowcom Host Pairs Live Chat ScriptSrc](media/tutorialInfraChainMyPillowcomHostPairsLiveChatScriptSrc.gif) ii. En outre, secure.livechatinc[.] l’organisation a contacté www.mypillow.com pour accéder au serveur www.mypillow.com (xmlhttprequest).
 17. Passez en revue les relations de paire d’hôtes de mypillow.com.
     a. N mypillow.com a-t-il des relations de paire d’hôtes avec un nom de domaine similaire à secure.livechatinc[.] Org?
       - Oui. Il existe plusieurs types de relations observées mypillow.com hôtes avec les domaines suivants :
@@ -155,7 +156,7 @@ Toutefois, étant donné que nos utilisateurs virtuels capturent le DOM et trouv
         5. img.src
         6. xmlhttprequest
       - Livechat est un service de conversation de support en direct que les détaillants en ligne peuvent ajouter à leurs sites web. Il s’agit donc d’une ressource tierce et elle est utilisée par de nombreuses plateformes de commerce électronique, y compris MyPillow. Ce faux domaine est un peu plus intéressant parce que leur site officiel est en fait livechatinc.com. Par conséquent, dans ce cas, ils ont utilisé un typosquat de domaine de niveau supérieur pour masquer le fait qu’ils ont placé un deuxième écumeur sur le site Web MyPillow.
-18. Retour et rechercher une relation de paire d’hôtes avec « secure.livechatinc[.] org' et pivotez sur ce nom d’hôte.
+18. Go back et trouver une relation de paire d’hôtes avec « secure.livechatinc[.] org' et pivotez sur ce nom d’hôte.
     a. À quelle adresse IP cet hôte s’est-il résolu en octobre 2018 ?
       - 212.109.222[.] 230
 
@@ -181,7 +182,7 @@ Toutefois, étant donné que nos utilisateurs virtuels capturent le DOM et trouv
 20. Sélectionnez le panneau Données des paires d’hôtes.
     a. Quelles relations de paires d’hôtes voyez-vous à partir d’octobre et de novembre 2018 ?
       - secure.livechatinc[.] l’organisation a redirigé les utilisateurs vers secure.livechatinc.com le 19/11/2022. Il s’agit plus que probablement d’une technique d’obfuscation pour échapper à la détection.
-      - www.mypillow.com extrayait un script hébergé sur secure.livechatinc[.] org (le faux site LiveChat) du 26/10/2018 au 11/19/2022. Au cours de cette période, les achats des utilisateurs de www.mypillow.com ont été potentiellement compromis.
+      - www.mypillow.com extrayait un script hébergé sur secure.livechatinc[.] org (le faux site LiveChat) du 26/10/2018 au 11/19/2022. Au cours de cette période, les achats d’utilisateurs de www.mypillow.com ont été potentiellement compromis.
       - secure.livechatinc[.] l’organisation demandait des données au serveur, www.mypillow.com, hébergeant le site web MyPillow réel (xmlhttprequest) entre le 27/10/2018 et le 29/10/2018.
 
           ![Paires](media/tutorialInfraChainSecureLiveChatIncOrgHostPairs.png) d’hôtes d’organisation Infra Chain Secure Live Chat Inc b. Que signifient ces relations ?

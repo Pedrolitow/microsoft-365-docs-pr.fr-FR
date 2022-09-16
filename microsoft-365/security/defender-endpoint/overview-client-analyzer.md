@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes d’intégrité des capteurs à l’aide de l’analyseur client Microsoft Defender pour point de terminaison
+title: Résoudre les problèmes d’intégrité des capteurs à l’aide de l’analyseur client Pertahanan Microsoft untuk Titik Akhir
 description: Résolvez les problèmes d’intégrité des capteurs sur les appareils pour identifier les problèmes potentiels de configuration, d’environnement, de connectivité ou de télémétrie affectant les données ou fonctionnalités du capteur.
 keywords: capteur, intégrité du capteur, mal configuré, inactif, aucune donnée de capteur, données de capteur, communications altérées, communication
 ms.service: microsoft-365-security
@@ -15,22 +15,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 272fd53c36a748bb80f0c609ea00f932f9dd535c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b730620c3a31fdc5451cb153a97520b9c98a4011
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693926"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736705"
 ---
-# <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes d’intégrité des capteurs à l’aide de l’analyseur client Microsoft Defender pour point de terminaison
+# <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes d’intégrité des capteurs à l’aide de l’analyseur client Pertahanan Microsoft untuk Titik Akhir
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-L’analyseur client Microsoft Defender pour point de terminaison (MDECA) peut être utile lors du diagnostic des problèmes d’intégrité ou de fiabilité des capteurs sur [les appareils intégrés](/microsoft-365/security/defender-endpoint/onboard-configure) exécutant Windows, Linux ou macOS. Par exemple, vous pouvez exécuter l’analyseur sur un ordinateur qui semble défectueux en fonction de [l’état d’intégrité du capteur](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) affiché (Inactif, Aucune donnée de capteur ou Communications altérées) dans le portail de sécurité.
+L’analyseur client Pertahanan Microsoft untuk Titik Akhir (MDECA) peut être utile lors du diagnostic des problèmes d’intégrité ou de fiabilité des capteurs sur [les appareils intégrés](/microsoft-365/security/defender-endpoint/onboard-configure) exécutant Windows, Linux ou macOS. Par exemple, vous pouvez exécuter l’analyseur sur un ordinateur qui semble défectueux en fonction de [l’état d’intégrité du capteur](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) affiché (Inactif, Aucune donnée de capteur ou Communications altérées) dans le portail de sécurité.
 
 Outre les problèmes évidents d’intégrité des capteurs, MDECA peut collecter d’autres traces, journaux et informations de diagnostic pour résoudre les problèmes de scénarios complexes tels que :
 
@@ -39,7 +39,7 @@ Outre les problèmes évidents d’intégrité des capteurs, MDECA peut collecte
 
 ## <a name="privacy-notice"></a>Avis de confidentialité
 
-- L’outil Microsoft Defender pour point de terminaison Client Analyzer est régulièrement utilisé par microsoft Customer Support Services (CSS) pour collecter des informations qui vous aideront à résoudre les problèmes que vous rencontrez peut-être avec Microsoft Defender pour point de terminaison.
+- L’outil Pertahanan Microsoft untuk Titik Akhir Client Analyzer est régulièrement utilisé par microsoft Customer Support Services (CSS) pour collecter des informations qui vous aideront à résoudre les problèmes que vous rencontrez peut-être avec Pertahanan Microsoft untuk Titik Akhir.
 
 - Les données collectées peuvent contenir des informations d’identification personnelle (PII) et/ou des données sensibles, telles que des adresses IP, des noms de PC et des noms d’utilisateur (sans s’y limiter).
 
@@ -47,15 +47,15 @@ Outre les problèmes évidents d’intégrité des capteurs, MDECA peut collecte
 
 - Aucune donnée n’est automatiquement envoyée à Microsoft. Si vous utilisez l’outil pendant la collaboration sur un problème de support, vous pouvez être invité à envoyer les données compressées à Microsoft CSS à l’aide de Secure File Exchange pour faciliter l’examen du problème.
 
-Pour plus d’informations sur l’échange de fichiers sécurisés, consultez [Comment utiliser Secure File Exchange pour échanger des fichiers avec Support Microsoft](/troubleshoot/azure/general/secure-file-exchange-transfer-files)
+Pour plus d’informations sur l’échange de fichiers sécurisés, consultez [Comment utiliser Secure File Exchange pour échanger des fichiers avec pomoc techniczna firmy Microsoft](/troubleshoot/azure/general/secure-file-exchange-transfer-files)
 
 Pour plus d’informations sur notre déclaration de confidentialité, consultez [la déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="requirements"></a>Conditions requises
 
-- Avant d’exécuter l’analyseur, nous vous recommandons de vous assurer que votre configuration de proxy ou de pare-feu autorise l’accès aux [URL de service Microsoft Defender pour point de terminaison](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+- Avant d’exécuter l’analyseur, nous vous recommandons de vous assurer que votre configuration de proxy ou de pare-feu autorise l’accès aux [URL de service Pertahanan Microsoft untuk Titik Akhir](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
-- L’analyseur peut s’exécuter sur les éditions prises en charge de [Windows](minimum-requirements.md#supported-windows-versions), [Linux](microsoft-defender-endpoint-linux.md#system-requirements) ou [macOS](microsoft-defender-endpoint-mac.md#system-requirements) avant l’intégration à Microsoft Defender pour point de terminaison.
+- L’analyseur peut s’exécuter sur les éditions prises en charge de [Windows](minimum-requirements.md#supported-windows-versions), [Linux](microsoft-defender-endpoint-linux.md#system-requirements) ou [macOS](microsoft-defender-endpoint-mac.md#system-requirements) avant l’intégration à Pertahanan Microsoft untuk Titik Akhir.
 
 - Pour les appareils Windows, si vous exécutez l’analyseur directement sur des machines spécifiques et non à distance via [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log), SysInternals [PsExec.exe](/sysinternals/downloads/psexec) doit être autorisé (au moins temporairement) à s’exécuter. L’analyseur appelle PsExec.exe outil pour exécuter des vérifications de connectivité cloud en tant que système local et émuler le comportement du service SENSE.
 

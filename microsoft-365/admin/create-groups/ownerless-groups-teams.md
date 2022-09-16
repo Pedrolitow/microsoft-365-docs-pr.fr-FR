@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment inviter automatiquement des membres à devenir propriétaires d’un groupe Microsoft 365 sans propriétaire ou d’une équipe dans Microsoft Teams.
-ms.openlocfilehash: 0c64aa01784e837be1f57e0ae2ad5b0db6317e9a
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 3d140c7080feca76382e54049918d5e7866e29d5
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280870"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743085"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Gérer les équipes et les groupes Microsoft 365 sans propriétaire
 
 Une équipe de Microsoft Teams ou un groupe Microsoft 365 et ses services associés peuvent devenir sans propriétaire si le compte d’un propriétaire est supprimé ou désactivé dans Microsoft 365. Les groupes et les équipes nécessitent qu’un propriétaire ajoute ou supprime des membres et modifie les paramètres de groupe.
 
-Un Administrateur général peut créer une stratégie qui demande automatiquement aux membres les plus actifs d’un groupe ou d’une équipe sans propriétaire s’ils acceptent la propriété. Lorsqu’un membre accepte l’invitation à devenir propriétaire, l’action est consignée dans le journal d’audit du portail de conformité. Les clients ne sont jamais invités à être propriétaires.
+Un administrateur général, un administrateur Exchange ou un administrateur de groupes peut créer une stratégie qui demande automatiquement aux membres les plus actifs d’un groupe ou d’une équipe sans propriétaire s’ils acceptent la propriété. Lorsqu’un membre accepte l’invitation à devenir propriétaire, l’action est consignée dans le journal d’audit du portail de conformité. Les clients ne sont jamais invités à être propriétaires.
 
 Lors de la création de la stratégie, vous pouvez spécifier :
 - Si vous souhaitez limiter qui peut être invité à être propriétaire en spécifiant un groupe de sécurité
@@ -45,7 +45,7 @@ Lors de la création de la stratégie, vous pouvez spécifier :
 
 Pour définir une stratégie de groupe ou d’équipe sans propriétaire
 
-1. Dans le centre d’administration, accédez à **Afficher tous les** \> **paramètres** \> de **l’organisation des paramètres** et, sous l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>, sélectionnez **Groupes Microsoft 365**.
+1. Dans le centre d’administration, accédez à **Afficher tous les** \> **paramètres** \> de **l’organisation des paramètres** et, sous l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>, sélectionnez **Microsoft 365 组**.
 
 1. Activez la case à cocher **Quand il n’y a pas de propriétaire, envoyez un e-mail et demandez aux membres du groupe actif de devenir propriétaires** .
 

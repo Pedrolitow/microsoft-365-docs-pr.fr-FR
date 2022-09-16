@@ -3,16 +3,17 @@ title: 'Démarrage rapide : Accès au portail Microsoft Defender Threat Intellig
 description: Dans ce guide de démarrage rapide, découvrez comment configurer votre profil et vos préférences et accéder aux ressources d’aide de Defender TI à l’aide de Microsoft Defender Threat Intelligence (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: quickstart
 ms.date: 08/02/2022
 ms.custom: template-quickstart
-ms.openlocfilehash: 6ef41802afd47a2e265a2617ed0eb498c7a1708a
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 7ec540da8a0042bef95543ce2197c4655e8ce641
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174672"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737123"
 ---
 # <a name="quickstart-learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal"></a>Démarrage rapide : Découvrez comment accéder à Microsoft Defender Threat Intelligence et effectuer des personnalisations dans votre portail
 
@@ -20,7 +21,7 @@ Comprendre comment ajuster votre thème dans le portail de Microsoft Defender Th
 
 ![Capture d’écran de La page d’accueil De Ti Chrome](media/tiOverviewHomePageChromeScreenshot.png)
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).
@@ -51,13 +52,13 @@ Comprendre comment ajuster votre thème dans le portail de Microsoft Defender Th
 
     ![Accès au thème clair du portail TI](media/accessingTiPortalLightTheme.png)
 
-## <a name="access-defender-tis-help-icon-to-learn-about-your-defender-ti-microsoft-support-resources"></a>Icône « Aide » d’Access Defender TI pour en savoir plus sur vos ressources Defender TI Support Microsoft
+## <a name="access-defender-tis-help-icon-to-learn-about-your-defender-ti-microsoft-support-resources"></a>Icône « Aide » d’Access Defender TI pour en savoir plus sur vos ressources Defender TI pomoc techniczna firmy Microsoft
 
 1. Cliquez sur l’icône « Aide » dans le coin supérieur droit à gauche de l’icône « Profil et préférences ».
 
     ![Accès à l’aide du portail TI](media/accessingTiPortalHelp.png)
 
-2. Passez en revue vos ressources Defender TI Support Microsoft.
+2. Passez en revue vos ressources pomoc techniczna firmy Microsoft Defender TI.
 
       - Vous trouverez ici l’adresse e-mail du support technique de Defender TI ainsi qu’un lien vers notre déclaration de confidentialité.
 

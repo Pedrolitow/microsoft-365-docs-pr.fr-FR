@@ -2,7 +2,7 @@
 title: Comment exécuter des simulations d’attaque pour votre équipe
 description: Étapes d’envoi d’une charge utile de simulation d’attaque à vos utilisateurs cibles pour votre équipe ou organisation à des fins d’entraînement. Les attaques simulées peuvent vous aider à identifier et à rechercher des utilisateurs, des stratégies et des pratiques vulnérables avant qu’une attaque réelle n’affecte votre organisation.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 527cf8f04d7ffee1dc649f6075451d7e9b1e4eeb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1b483c75137d3731afbc507e67960201da2ce328
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688250"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737981"
 ---
 # <a name="how-to-run-attack-simulations-for-your-team"></a>Comment exécuter des simulations d’attaque pour votre équipe
 
@@ -30,7 +30,7 @@ Exercice de simulation d'attaque vous permet d’exécuter des scénarios de cyb
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
-- Microsoft Defender pour Office 365 plan 2 (inclus dans le cadre de l’E5)
+- Microsoft Defender pour Office 365 Plan 2 (inclus dans E5)
 - Autorisations suffisantes (rôle Administrateur de sécurité)
 - 5 à 10 minutes pour effectuer les étapes ci-dessous.
 
@@ -58,4 +58,4 @@ Exercice de simulation d'attaque vous permet d’exécuter des scénarios de cyb
 
 ### <a name="further-reading"></a>Lire plus en détail
 
-Pour savoir comment fonctionne la simulation d’attaque, consultez [Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)
+Pour savoir comment fonctionne la simulation d’attaque, consultez [Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque - Office 365 | Microsoftova dokumentacija](../../office-365-security/attack-simulation-training.md)

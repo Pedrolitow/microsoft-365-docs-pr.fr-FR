@@ -12,21 +12,21 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: mjcaparas
   ms.author: macapara
-  ms.date: 04/13/2021
+  ms.date: 09/15/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 53523ea35ea013fb39e1cb191add166759c24b03
-  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+  ms.openlocfilehash: 70375a80d84884e4ad32dfdc5b77f09921699564
+  ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/03/2022
-  ms.locfileid: "67596443"
+  ms.lasthandoff: 09/16/2022
+  ms.locfileid: "67738968"
 landingContent:
 - title: Defender pour Office 365 & Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
     - text: Vue d’ensemble de la sécurité Office 365
-      url: overview.md
+      url: defender-for-office-365.md
     - text: Configurer avec des stratégies de sécurité prédéfini dans EOP et Defender pour Office 365
       url: preset-security-policies.md
 - title: Prise en main de Defender pour Office 365

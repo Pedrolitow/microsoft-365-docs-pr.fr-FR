@@ -3,25 +3,26 @@ title: Utilisation de balises dans Microsoft Defender Threat Intelligence (Defen
 Description: Dans cet article pratique, découvrez les types de balises et comment ajouter, modifier, supprimer et rechercher des balises personnalisées dans Microsoft Defender Threat Intelligence (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: d9e77b52e7f36bb0458a0638c0b0d2ee24e8bbff
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e587702dcd3fef2dda0bb3a618c4db9cc90473d8
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175507"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738704"
 ---
 # <a name="using-tags"></a>Utilisation de balises
-Microsoft Defender Threat Intelligence balises (Defender TI) sont utilisées pour fournir un aperçu rapide d’un artefact, qu’il soit dérivé par le système ou généré par d’autres utilisateurs. Les balises aident les analystes à connecter les points entre les incidents et les investigations actuels et leur contexte historique pour une analyse améliorée.
+Microsoft Defender Threat Intelligence balises (Defender TI) sont utilisées pour fournir un aperçu rapide d’un artefact, qu’il soit dérivé par le système ou généré par d’autres utilisateurs. Les balises aident les analystes à connecter les points entre les incidents et investigations actuels et leur contexte historique pour une analyse améliorée.
 
 La plateforme Defender TI offre deux types de balises : les balises système et personnalisées.
 
 ![Utilisation des balises Chrome HomePage](media/UsingTagsChromeHomePage.png)
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).

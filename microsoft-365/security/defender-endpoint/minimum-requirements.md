@@ -1,5 +1,5 @@
 ---
-title: Exigences minimales pour Microsoft Defender pour point de terminaison
+title: Exigences minimales pour Pertahanan Microsoft untuk Titik Akhir
 description: Comprendre les exigences en matière de licences pour l’intégration d’appareils au service
 keywords: exigences minimales, licences, table de comparaison
 ms.service: microsoft-365-security
@@ -17,14 +17,14 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: dd7ea89a3acb603398a261f0695e3e48f0193a15
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4239ffe6d9560514eb3e5d5123340c97dbc7d296
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700001"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738617"
 ---
-# <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Exigences minimales pour Microsoft Defender pour point de terminaison
+# <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Exigences minimales pour Pertahanan Microsoft untuk Titik Akhir
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ Il existe des exigences minimales pour l’intégration d’appareils au service
 
 > [!TIP]
 >
-> - Cet article décrit la configuration minimale requise pour Microsoft Defender pour point de terminaison plan 2. Si vous recherchez des informations sur Defender pour point de terminaison Plan 1, consultez [La configuration requise pour Defender pour point de terminaison Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
+> - Cet article décrit la configuration minimale requise pour Pertahanan Microsoft untuk Titik Akhir plan 2. Si vous recherchez des informations sur Defender pour point de terminaison Plan 1, consultez [La configuration requise pour Defender pour point de terminaison Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
 > - Découvrez les dernières améliorations de Defender pour point de terminaison : [Defender pour point de terminaison Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender pour point de terminaison a démontré des fonctionnalités d’optique et de détection de pointe dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Les versions autonomes de [Defender pour point de terminaison Plan 1 et Plan 2](defender-endpoint-plan-1-2.md) n’incluent pas de licences serveur. Pour intégrer des serveurs à ces plans, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus, consultez la vue d’ensemble de [Microsoft Defender pour serveurs](/azure/defender-for-cloud/defender-for-servers-introduction).
+Les versions autonomes de [Defender pour point de terminaison Plan 1 et Plan 2](defender-endpoint-plan-1-2.md), même lorsqu’elles sont incluses dans le cadre d’autres plans Microsft 365, n’incluent pas de licences serveur. Pour intégrer des serveurs à ces plans, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus, consultez la vue d’ensemble de [Microsoft Defender pour serveurs](/azure/defender-for-cloud/defender-for-servers-introduction).
 
-Pour plus d’informations sur les exigences en matière de licences pour Microsoft Defender pour point de terminaison, consultez [Microsoft Defender pour point de terminaison informations sur les licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
+Pour plus d’informations sur les exigences de licence pour Pertahanan Microsoft untuk Titik Akhir, consultez [Pertahanan Microsoft untuk Titik Akhir informations sur les licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 Pour obtenir des informations détaillées sur les licences, consultez le [site Termes du produit](https://www.microsoft.com/licensing/terms/) et collaborez avec votre équipe de compte pour en savoir plus sur les conditions générales.
 
@@ -74,7 +74,7 @@ L’accès à Defender pour point de terminaison s’effectue via un navigateur,
 - Windows 10 Entreprise loT
 
     >[!NOTE]
-    >Bien que Windows 10 IoT Entreprise soit un système d’exploitation pris en charge dans Microsoft Defender pour point de terminaison et permet aux OEM/ODM de le distribuer dans le cadre de leur produit ou solution, les clients doivent suivre les instructions de l’OEM/ODM concernant les logiciels installés basés sur l’hôte et la prise en charge.
+    >Bien que Windows 10 IoT Entreprise soit un système d’exploitation pris en charge dans Pertahanan Microsoft untuk Titik Akhir et permet aux OEM/ODM de le distribuer dans le cadre de leur produit ou solution, les clients doivent suivre les instructions de l’OEM/ODM concernant les logiciels installés basés sur l’hôte et la prise en charge.
 
 - Windows 10 Éducation
 - Windows 10 Professionnel
@@ -104,13 +104,13 @@ Pour plus d’informations sur les versions prises en charge de Windows 10, cons
 > [!NOTE]
 > - Les points de terminaison exécutant des versions mobiles de Windows (par exemple, Windows CE et Windows 10 Mobile) ne sont pas pris en charge.
 >
-> - Machines Virtuelles Windows 10 Entreprise 2016 LTSB en cours d’exécution peuvent rencontrer des problèmes de performances s’ils sont exécutés sur des plateformes de virtualisation autres que Microsoft.
+> - 虛擬機器 Windows 10 Entreprise 2016 LTSB en cours d’exécution peuvent rencontrer des problèmes de performances s’ils sont exécutés sur des plateformes de virtualisation autres que Microsoft.
 >
 > - Pour les environnements virtuels, nous vous recommandons d’utiliser Windows 10 Entreprise LTSC 2019 ou version ultérieure.
 >
 > - Les versions autonomes de [Defender pour point de terminaison Plan 1 et Plan 2](defender-endpoint-plan-1-2.md) n’incluent pas de licences serveur. Pour intégrer des serveurs à ces plans, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus. Consultez [vue d’ensemble de Microsoft Defender pour serveurs](/azure/defender-for-cloud/defender-for-servers-introduction).
 
-Lorsque les composants sont à jour sur les systèmes d’exploitation Microsoft Windows, Microsoft Defender pour point de terminaison prise en charge suit le cycle de vie du système d’exploitation respectif. Pour plus d’informations, consultez la [FAQ sur le cycle de vie](/lifecycle/faq/general-lifecycle). Les nouvelles fonctionnalités sont généralement fournies uniquement sur les systèmes d’exploitation qui n’ont pas encore atteint la fin de leur cycle de vie. Les mises à jour du renseignement de sécurité (mises à jour de définition et de moteur) et la logique de détection continueront d’être fournies jusqu’au moins :
+Lorsque les composants sont à jour sur les systèmes d’exploitation Microsoft Windows, Pertahanan Microsoft untuk Titik Akhir prise en charge suit le cycle de vie du système d’exploitation respectif. Pour plus d’informations, consultez la [FAQ sur le cycle de vie](/lifecycle/faq/general-lifecycle). Les nouvelles fonctionnalités sont généralement fournies uniquement sur les systèmes d’exploitation qui n’ont pas encore atteint la fin de leur cycle de vie. Les mises à jour du renseignement de sécurité (mises à jour de définition et de moteur) et la logique de détection continueront d’être fournies jusqu’au moins :
 
 - Date [de fin du support](/lifecycle/products/) (pour les systèmes d’exploitation qui n’ont pas de programme esu (Extended Security Mises à jour).
 - Fin [de la date ESU](/lifecycle/faq/extended-security-updates) (pour les systèmes d’exploitation qui ont un programme ESU).
@@ -127,17 +127,17 @@ Lorsque les composants sont à jour sur les systèmes d’exploitation Microsoft
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Configuration requise pour le stockage réseau et les données
 
-Lorsque vous exécutez l’Assistant Intégration pour la première fois, vous devez choisir l’emplacement où vos informations relatives à Microsoft Defender pour point de terminaison sont stockées : dans l’Union européenne, au Royaume-Uni ou dans le centre de données États-Unis.
+Lorsque vous exécutez l’Assistant Intégration pour la première fois, vous devez choisir l’emplacement où sont stockées vos informations relatives à Pertahanan Microsoft untuk Titik Akhir : dans l’Union européenne, au Royaume-Uni ou dans le centre de données Estados Unidos.
 
 > [!NOTE]
 >
 > - Vous ne pouvez pas modifier votre emplacement de stockage de données après la première configuration.
-> - Passez en revue les [Microsoft Defender pour point de terminaison le stockage des données et la confidentialité](data-storage-privacy.md) pour plus d’informations sur l’emplacement et la façon dont Microsoft stocke vos données.
+> - Passez en revue les [Pertahanan Microsoft untuk Titik Akhir le stockage des données et la confidentialité](data-storage-privacy.md) pour plus d’informations sur l’emplacement et la façon dont Microsoft stocke vos données.
 
 ### <a name="diagnostic-data-settings"></a>Paramètres des données de diagnostic
 
 > [!NOTE]
-> Microsoft Defender pour point de terminaison ne nécessite pas de niveau de diagnostic spécifique tant qu’il est activé.
+> Pertahanan Microsoft untuk Titik Akhir ne nécessite pas de niveau de diagnostic spécifique tant qu’il est activé.
 
 Assurez-vous que le service de données de diagnostic est activé sur tous les appareils de votre organisation.
 Par défaut, ce service est activé. Il est recommandé de vérifier que vous obtiendrez des données de capteur à partir d’eux.
@@ -207,9 +207,9 @@ Si vous insérez des serveurs et que l’antivirus Microsoft Defender n’est pa
 
 Si vous exécutez l’antivirus Microsoft Defender en tant que produit anti-programme malveillant principal sur vos appareils, l’agent Defender pour point de terminaison sera intégré avec succès.
 
-Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions Mobile Gestion des appareils ou Microsoft Endpoint Manager (current branch), vous devez vous assurer que le pilote ELAM antivirus Microsoft Defender est activé. Pour plus d’informations, consultez [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions Mobile 裝置管理 ou Microsoft Endpoint Manager (current branch), vous devez vous assurer que le pilote ELAM antivirus Microsoft Defender est activé. Pour plus d’informations, consultez [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Configurer Microsoft Defender pour point de terminaison déploiement](production-deployment.md)
+- [Configurer Pertahanan Microsoft untuk Titik Akhir déploiement](production-deployment.md)
 - [Intégrer des appareils](onboard-configure.md)

@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection: ''
 ms.custom:
 - MiniMaven
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les différents états de l’appareil dans la liste des actions de l’appareil dans la page d’accueil de l’administrateur dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: ed11ec8d9f043a04960e6d2ffc2bc9adf10bc6d3
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 663865f2b67999b487e0173d13e2d7b0f42ef841
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611582"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742978"
 ---
 # <a name="device-states-in-microsoft-365-for-business"></a>États des appareils dans Microsoft 365 pour les entreprises
 

@@ -17,16 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les nouveautés du Gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
-ms.openlocfilehash: be6527822798a518753897b5d104899077264ee3
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 5da92b644397ef04212468d9d918bdab270c2760
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894336"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738201"
 ---
 # <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Nouveautés du Gestionnaire de conformité Microsoft Purview
 
 **Dans cet article :** Découvrez les mises à jour récentes dans le Gestionnaire de conformité.
+
+## <a name="august-2022"></a>Août 2022
+
+Le Gestionnaire de conformité a publié le nouveau modèle d’évaluation suivant :
+
+- Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official
+
+Consultez notre [liste complète des modèles d’évaluation](compliance-manager-templates-list.md).
 
 ## <a name="july-2022"></a>Juillet 2022
 
@@ -57,7 +65,7 @@ Le Gestionnaire de conformité a publié les nouveaux modèles d’évaluation s
 
 **Global**
 - ISO 37301
-- NIST 800-207 - Architecture Confiance nulle
+- NIST 800-207 - Architecture Confiança zero
 - SIG 2022
 
 **Gouvernement américain**
@@ -71,13 +79,13 @@ Consultez notre [liste complète des modèles d’évaluation](compliance-manage
 
 ### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Évaluation continue de la conformité des actions d’amélioration
 
-Nous ajoutons des tests automatisés et la génération de preuves pour plus de 35 actions d’amélioration dans le Gestionnaire de conformité qui n’étaient pas précédemment couvertes par le degré de sécurisation. Avec l’évaluation continue de la conformité, vous pouvez recevoir des mises à jour sur les actions d’amélioration que vous avez effectuées si elles sont pertinentes pour vos évaluations de conformité et que vous êtes autorisé à accéder aux solutions pertinentes. L’évaluation continue de la conformité offre également aux utilisateurs une visibilité sur la logique de scoring de vos actions d’amélioration et fournit des insights et des preuves sur la raison pour laquelle vous avez reçu un certain score. Cette fonctionnalité fonctionne en même temps que les intégrations existantes avec Microsoft 365 Secure Score, et toutes les actions automatisées que vous avez précédemment configurées continueront à fonctionner en l’état. En savoir plus sur [les paramètres de test automatisé](compliance-manager-setup.md#set-up-automated-testing).
+Nous ajoutons des tests automatisés et la génération de preuves pour plus de 35 actions d’amélioration dans le Gestionnaire de conformité qui n’étaient pas précédemment couvertes par le degré de sécurisation. Avec l’évaluation continue de la conformité, vous pouvez recevoir des mises à jour sur les actions d’amélioration que vous avez effectuées si elles sont pertinentes pour vos évaluations de conformité et que vous êtes autorisé à accéder aux solutions pertinentes. L’évaluation continue de la conformité offre également aux utilisateurs une visibilité sur la logique de scoring de vos actions d’amélioration et fournit des insights et des preuves sur la raison pour laquelle vous avez reçu un certain score. Cette fonctionnalité fonctionne en même temps que les intégrations existantes avec Microsoft 365 Secure Score, et toutes les actions automatisées que vous avez précédemment configurées continueront à fonctionner en l’état. Mer informasjon sur [les paramètres de test automatisé](compliance-manager-setup.md#set-up-automated-testing).
 
 ## <a name="february-2022"></a>Février 2022
 
 ### <a name="alerts-and-alert-policies"></a>Alertes et stratégies d’alerte
 
-Les utilisateurs peuvent désormais définir des alertes pour les modifications apportées au Gestionnaire de conformité qu’une organisation souhaite suivre. À l’aide d’un Assistant d’installation simple, vous pouvez créer des stratégies d’alerte pour créer des notifications lorsque les types d’événements suivants se produisent : un changement de score d’action d’amélioration, une modification de l’affectation d’action d’amélioration, un changement d’état de test ou d’implémentation dans une action d’amélioration, et un chargement ou suppression de fichier dans l’onglet Documents d’une action d’amélioration. Pour en savoir plus, consultez [les alertes et les stratégies d’alerte du Gestionnaire de conformité](compliance-manager-alert-policies.md).
+Les utilisateurs peuvent désormais définir des alertes pour les modifications apportées au Gestionnaire de conformité qu’une organisation souhaite suivre. À l’aide d’un Assistant d’installation simple, vous pouvez créer des stratégies d’alerte pour créer des notifications lorsque les types d’événements suivants se produisent : un changement de score d’action d’amélioration, une modification de l’affectation d’action d’amélioration, un changement d’état de test ou d’implémentation dans une action d’amélioration, et un chargement ou suppression de fichier dans l’onglet Documents d’une action d’amélioration. Mer informasjon en consultant [les alertes et les stratégies d’alerte du Gestionnaire de conformité](compliance-manager-alert-policies.md).
 
 ### <a name="try-recommended-assessment-templates-for-your-organization"></a>Essayer les modèles d’évaluation recommandés pour votre organisation
 
@@ -85,18 +93,18 @@ Votre organisation peut désormais obtenir des recommandations du Gestionnaire d
 
 ## <a name="november-2021"></a>Novembre 2021
 
-### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>intégration Confiance nulle pour le modèle de base de référence de protection des données
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>intégration Confiança zero pour le modèle de base de référence de protection des données
 
-La confiance zéro est une approche proactive et intégrée de la sécurité dans toutes les couches du patrimoine numérique qui vérifie explicitement et en permanence chaque transaction, affirme le principe du moindre privilège et s'appuie sur l'intelligence, la détection avancée et la réponse en temps réel aux menaces. Le modèle base de référence de protection des données du Gestionnaire de conformité, inclus pour tous les utilisateurs, intègre désormais 57 nouveaux contrôles et 36 nouvelles actions pour Confiance nulle alignées sur les familles de contrôles suivantes :
+La confiance zéro est une approche proactive et intégrée de la sécurité dans toutes les couches du patrimoine numérique qui vérifie explicitement et en permanence chaque transaction, affirme le principe du moindre privilège et s'appuie sur l'intelligence, la détection avancée et la réponse en temps réel aux menaces. Le modèle base de référence de protection des données du Gestionnaire de conformité, inclus pour tous les utilisateurs, intègre désormais 57 nouveaux contrôles et 36 nouvelles actions pour Confiança zero alignées sur les familles de contrôles suivantes :
 
-- application Confiance nulle
-- conseils de développement d’applications Confiance nulle
-- point de terminaison Confiance nulle
-- données Confiance nulle
-- identité Confiance nulle
-- infrastructure Confiance nulle
-- réseau Confiance nulle
-- Confiance nulle visibilité, automatisation et orchestration
+- application Confiança zero
+- guide de développement d’applications Confiança zero
+- point de terminaison Confiança zero
+- données Confiança zero
+- identité Confiança zero
+- infrastructure Confiança zero
+- réseau Confiança zero
+- Confiança zero visibilité, automatisation et orchestration
 
 ### <a name="new-preview-templates"></a>Nouveaux modèles d’aperçu
 

@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: 057aff207ec19161ba9ecd1e078dd2fee6bbd533
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: d65675f88d84a7ff982a2e2ab1e76c0452a406f5
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613426"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743064"
 ---
 # <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium : productivité et cybersécurité pour les petites entreprises
 
@@ -50,7 +50,7 @@ Effectuer les six missions est le moyen le plus efficace de déjouer les pirates
 
 ## <a name="cybersecurity-playbook"></a>Playbook sur la cybersécurité
 
-Les conseils de ces missions sont basés sur le [modèle de sécurité Confiance nulle](../security/office-365-security/microsoft-365-policies-configurations.md) et sont résumés dans un [playbook de cybersécurité](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) téléchargeable).
+Les conseils de ces missions sont basés sur le [modèle de sécurité Confiança zero](../security/office-365-security/microsoft-365-policies-configurations.md) et sont résumés dans un [playbook de cybersécurité](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) téléchargeable).
 
 [:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Playbook sur la cybersécurité. Téléchargez ce guide.":::](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)
 

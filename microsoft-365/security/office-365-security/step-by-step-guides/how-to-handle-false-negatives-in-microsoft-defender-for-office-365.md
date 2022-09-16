@@ -2,7 +2,7 @@
 title: (Faux négatifs) Comment gérer les e-mails malveillants remis aux destinataires à l’aide de Microsoft Defender pour Office 365
 description: Étapes de gestion des e-mails malveillants envoyés aux utilisateurs finaux et aux boîtes de réception (sous forme de faux négatifs) avec Microsoft Defender pour Office 365 afin d’éviter toute perte d’activité.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,19 +15,19 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: f93d210482fe66bddfbaee7ef059ec85afe0186b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5552fd65657117a5879407ddbe5bf175923747c9
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688228"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735943"
 ---
-# <a name="how-to-handle-malicious-emails-that-are-delivered-to-recipients-false-negatives-using-microsoft-defender-for-office-365"></a>Comment gérer les e-mails malveillants qui sont remis aux destinataires (faux négatifs), à l’aide de Microsoft Defender pour Office 365
+# <a name="how-to-handle-malicious-emails-that-are-delivered-to-recipients-false-negatives-using-microsoft-defender-for-office-365"></a>Comment gérer les e-mails malveillants remis aux destinataires (faux négatifs), à l’aide de Microsoft Defender pour Office 365
 
 Microsoft Defender pour Office 365 aide à gérer les e-mails malveillants (faux négatifs) qui sont remis aux destinataires et qui mettent en danger la productivité de votre organisation.
-Defender pour Office 365 pouvez vous aider à comprendre pourquoi les e-mails sont remis, comment résoudre la situation rapidement et comment empêcher des situations similaires de se produire à l’avenir.
+Defender pour Office 365 peut vous aider à comprendre pourquoi les e-mails sont remis, comment résoudre la situation rapidement et comment empêcher des situations similaires de se produire à l’avenir.
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 

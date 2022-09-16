@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ROBOTS: NO INDEX, NO FOLLOW
 description: Découvrez comment installer automatiquement les applications Office 32 bits sur les ordinateurs Windows et les maintenir à jour dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 70296cd620a30e1f9062d5c1d7267061bcf153e2
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: d717bafef83ac5702ef2aadd9a2266ec11a1f90a
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615273"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738267"
 ---
 # <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Préparer l'installation automatique d'applications Office sur des ordinateurs clients
 

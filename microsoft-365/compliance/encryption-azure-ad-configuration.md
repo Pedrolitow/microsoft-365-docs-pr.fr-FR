@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
 description: Comment configurer les paramètres d’accès interlocataire Azure AD et les stratégies d’accès conditionnel pour le contenu chiffré par Protection des données Microsoft Purview.
-ms.openlocfilehash: 0a99dc12c8ff779008add2f37cdbe4ed7e1f263a
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 70594e80518a83a8f7aabf05ab2e53da6c8b85f5
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384579"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735783"
 ---
 # <a name="azure-ad-configuration-for-encrypted-content"></a>Configuration d’Azure AD pour le contenu chiffré
 
@@ -25,7 +25,7 @@ Si vous protégez des éléments sensibles tels que des e-mails et des documents
 
 De même, si vos utilisateurs reçoivent des e-mails chiffrés d’une autre organisation ou collaborent avec d’autres organisations qui chiffrent des documents à l’aide du service Azure Rights Management, il se peut que vos utilisateurs ne puissent pas ouvrir cet e-mail ou ce document en raison de la façon dont Azure AD est configuré.
 
-Par exemple :
+Par exemple :
 
 - Un utilisateur ne peut pas ouvrir les e-mails chiffrés envoyés à partir d’une autre organisation. Ou un utilisateur signale que les destinataires d’une autre organisation ne peuvent pas ouvrir un e-mail chiffré qu’il leur a envoyé.
 
@@ -52,7 +52,7 @@ Exemple de message pour l’utilisateur connecté à partir de l’organisation 
 
 Vos utilisateurs verront un message similaire lorsqu’il s’agit de votre configuration Azure AD qui bloque l’accès.
 
-Du point de vue de l’utilisateur connecté, s’il s’agit d’une autre organisation Azure AD responsable du blocage de l’accès, les modifications apportées à **Access sont bloquées par l’organisation** et affichent le nom de domaine de cette autre organisation dans le corps du message. Par exemple :
+Du point de vue de l’utilisateur connecté, s’il s’agit d’une autre organisation Azure AD responsable du blocage de l’accès, les modifications apportées à **Access sont bloquées par l’organisation** et affichent le nom de domaine de cette autre organisation dans le corps du message. Par exemple :
 
 ![Exemple de message lorsqu’un autre locataire Azure AD bloque l’accès au contenu chiffré.](../media/blocked-by-external-org.png)
 
@@ -116,8 +116,12 @@ Toutefois, le compte invité automatique n’est pas créé immédiatement dans 
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Si vous utilisez [des étiquettes de confidentialité](sensitivity-labels.md) pour chiffrer des documents et des e-mails, vous pouvez être intéressé par la [prise en charge des utilisateurs externes et du contenu étiqueté](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) pour comprendre quels paramètres d’étiquette s’appliquent entre les locataires. 
+Pour connaître les configurations que vous devrez peut-être effectuer pour les services d’infrastructure réseau, consultez [Pare-feu et infrastructure réseau](/azure/information-protection/requirements#firewalls-and-network-infrastructure).
 
-Si vous souhaitez savoir comment et quand le service de chiffrement est accessible, consultez [la procédure pas à pas sur le fonctionnement d’Azure RMS : première utilisation, protection du contenu, consommation de contenu](/azure/information-protection/how-does-it-work#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption).
+Si vous utilisez [des étiquettes de confidentialité](sensitivity-labels.md) pour chiffrer des documents et des e-mails, vous pouvez être intéressé par la [prise en charge des utilisateurs externes et du contenu étiqueté](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) pour comprendre quels paramètres d’étiquette s’appliquent entre les locataires. Pour obtenir des instructions de configuration pour les paramètres de chiffrement d’étiquette, consultez [Restreindre l’accès au contenu à l’aide d’étiquettes de confidentialité pour appliquer le chiffrement](encryption-sensitivity-labels.md).
+
+Vous souhaitez savoir comment et quand le service de chiffrement est accessible ? Consultez [la procédure pas à pas du fonctionnement d’Azure RMS : première utilisation, protection du contenu, consommation de contenu](/azure/information-protection/how-does-it-work#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption).
+
+
 
 

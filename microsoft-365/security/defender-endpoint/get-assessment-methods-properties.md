@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 785be9671e4ad10fd7b6dbde85e8f2805d3621a8
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: a4a5022be83c2880b2ae3fc917c6b6617c82e582
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516343"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738025"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter des méthodes et des propriétés d’évaluation par appareil
 
@@ -166,7 +167,7 @@ RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC)
 rbacGroupId|Chaîne|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
 RecommandationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate|Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId|Chaîne|Identificateur des mises à jour de sécurité ou identificateurs applicables pour les articles d’aide ou de base de connaissances (Ko) correspondants.
+RecommendedSecurityUpdateId|Chaîne|Identificateur des mises à jour de sécurité ou de l’identificateur applicables pour les articles d’aide ou de 知識庫 (Ko) correspondants.
 Chemins d’accès au Registre|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.
 SecurityUpdateAvailable|Boolean|Indique si une mise à jour de sécurité est disponible pour le logiciel.
 SoftwareName|Chaîne|Nom du produit logiciel.
@@ -199,7 +200,7 @@ OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécuti
 RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 RecommandationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate |Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId |Chaîne|Identificateur des mises à jour de sécurité ou de l’identificateur applicables pour les instructions correspondantes ou les articles de base de connaissances (Ko)
+RecommendedSecurityUpdateId |Chaîne|Identificateur des mises à jour ou identificateurs de sécurité applicables pour les articles de conseils ou de 知識庫 (Ko) correspondants
 RegistryPaths |Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.
 SoftwareName|Chaîne|Nom du produit logiciel.
 SoftwareVendor|Chaîne|Nom du fournisseur de logiciels.
@@ -222,14 +223,14 @@ Retourne tous les logiciels installés qui n’ont pas [d’énumération de pla
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-DeviceId|string|Identificateur unique de l’appareil dans le service.
-DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
-OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
-RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+DeviceId|chaîne|Identificateur unique de l’appareil dans le service.
+DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.
+OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
+RbacGroupName|chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 RbacGroupId|string|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
-SoftwareLastSeenTimestamp|string|La dernière fois que ce logiciel a été vu sur l’appareil.
-SoftwareName|chaîne|Nom du produit logiciel.
-SoftwareVendor|chaîne|Nom du fournisseur de logiciels.
+SoftwareLastSeenTimestamp|chaîne|La dernière fois que ce logiciel a été vu sur l’appareil.
+SoftwareName|string|Nom du produit logiciel.
+SoftwareVendor|string|Nom du fournisseur de logiciels.
 SoftwareVersion|string|Numéro de version du produit logiciel.
 
 ### <a name="43-properties-via-files"></a>4.3 Propriétés (via des fichiers)

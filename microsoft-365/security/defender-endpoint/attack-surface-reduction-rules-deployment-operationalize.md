@@ -1,9 +1,10 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque (ASR)
 description: Fournit des conseils pour l’opérationnalisation du déploiement de vos règles de réduction de la surface d’attaque.
-keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
+keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles de lutte contre l’exploitation, règles d’exploitation, règles de prévention des infections, Pertahanan Microsoft untuk Titik Akhir, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +15,6 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
 ms.collection:
 - M365-security-compliance
@@ -22,12 +22,12 @@ ms.collection:
 - highpri
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: f81d453a6bd1b8d63031c903fc264010fc070209
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ad94e2433d332d9a31c73af6ce2bced6d491fcb3
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698416"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742912"
 ---
 # <a name="operationalize-attack-surface-reduction-asr-rules"></a>Utiliser des règles de réduction de la surface d’attaque (ASR)
 
@@ -35,7 +35,7 @@ Une fois que vous avez entièrement déployé des règles de réduction de la su
 
 ## <a name="managing-false-positives"></a>Gestion des faux positifs
 
-Des faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection contre les menaces. Les faux positifs sont des cas où une entité (par exemple, un fichier ou un processus) est détectée et identifiée comme malveillante, bien que l’entité ne soit pas réellement une menace. En revanche, un faux négatif est une entité qui n’a pas été détectée comme une menace, mais qui est malveillante. Pour plus d’informations sur les faux positifs et les faux négatifs, consultez : [Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison](defender-endpoint-false-positives-negatives.md)
+Des faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection contre les menaces. Les faux positifs sont des cas où une entité (par exemple, un fichier ou un processus) est détectée et identifiée comme malveillante, bien que l’entité ne soit pas réellement une menace. En revanche, un faux négatif est une entité qui n’a pas été détectée comme une menace, mais qui est malveillante. Pour plus d’informations sur les faux positifs et les faux négatifs, consultez : [Résoudre les faux positifs/négatifs dans Pertahanan Microsoft untuk Titik Akhir](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="keeping-up-with-reports"></a>Suivre les rapports
 

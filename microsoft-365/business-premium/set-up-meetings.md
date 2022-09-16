@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez des réunions en ligne avec Microsoft Teams dans Microsoft Business Premium.
-ms.openlocfilehash: d0429e803ace449f63c5af7004e9af9af9049586
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 643edb18a7918b01962d8fcd7eadf017bd2d73d8
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612766"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736825"
 ---
 # <a name="set-up-meetings-with-microsoft-teams"></a>Configurer des réunions avec Microsoft Teams
 

@@ -7,8 +7,9 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenez Microsoft 365 pour les campagnes afin de protéger votre campagne contre les menaces de cybersécurité pour la messagerie électronique, les données et les communications.
-ms.openlocfilehash: 0c82ad7327c426cfbe5f2b1ea068deeb4dd18f14
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: e6921b6f54dc02ddac04606581d3bd181bd22a0f
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615361"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738113"
 ---
 # <a name="how-to-get-microsoft-365-for-campaigns"></a>Comment obtenir Microsoft 365 pour les campagnes
 

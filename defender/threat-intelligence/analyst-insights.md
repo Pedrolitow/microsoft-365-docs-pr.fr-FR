@@ -3,16 +3,17 @@ title: Microsoft Defender Threat Intelligence (Defender TI) Analyst Insights
 description: Dans cet article de vue d’ensemble, découvrez la fonctionnalité d’analyse des analystes de Microsoft Defender Threat Intelligence (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 9efcb78a50f8b91ab2a6d094718edbd205fcdbc4
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: c9c4ca37ba75694d905c8f737a6fceb93e30a757
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108120"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735577"
 ---
 # <a name="analyst-insights"></a>Insights des analystes
 
@@ -47,5 +48,5 @@ Dans Microsoft Defender Threat Intelligence (Defender TI), la section Insights d
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
-- [Scoring de réputation](reputation-scoring.md)
+- [Score de réputation](reputation-scoring.md)
 - [Utilisation de balises](using-tags.md)

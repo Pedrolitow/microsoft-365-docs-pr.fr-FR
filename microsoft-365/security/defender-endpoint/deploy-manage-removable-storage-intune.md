@@ -1,7 +1,8 @@
 ---
-title: Déployer et gérer des 存取控制 de stockage amovibles à l’aide de Intune
-description: Utilisez Intune OMA-URI et Intune interface utilisateur pour déployer et gérer le contrôle d’accès au stockage amovible.
-ms.prod: m365-security
+title: Déployer et gérer des 存取控制 de stockage amovibles à l’aide d’Intune
+description: Utilisez Intune OMA-URI et l’interface utilisateur Intune pour déployer et gérer le contrôle d’accès au stockage amovible.
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,24 +14,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
 ms.date: 09/09/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 880be65c0d221d92af41d2835804f8252feb4e75
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: d06d36f8b9fb3451f70b646c3969fa2bb7487f9f
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711776"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736843"
 ---
-# <a name="deploy-and-manage-removable-storage-access-control-using-intune"></a>Déployer et gérer des 存取控制 de stockage amovibles à l’aide de Intune
+# <a name="deploy-and-manage-removable-storage-access-control-using-intune"></a>Déployer et gérer des 存取控制 de stockage amovibles à l’aide d’Intune
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> La gestion نهج المجموعة et Intune gestion OMA-URI/Custom Policy de ce produit sont désormais en disponibilité générale (4.18.2106) : consultez le [blog Tech Community : Protéger votre stockage amovible et votre imprimante avec Microsoft Defender pour point de terminaison](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
+> La gestion نهج المجموعة et la gestion intune OMA-URI/Custom Policy de ce produit sont désormais en disponibilité générale (4.18.2106) : consultez le [blog Tech Community : Protéger votre stockage amovible et votre imprimante avec Pertahanan Microsoft untuk Titik Akhir](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
 La fonctionnalité de 存取控制 de stockage amovible vous permet d’appliquer une stratégie à l’aide d’OMA-URI à l’utilisateur ou à l’appareil, ou aux deux.
 
@@ -46,7 +46,7 @@ Pour le déploiement de stratégie dans Intune, le compte doit disposer des auto
 - Rôle personnalisé avec les autorisations Créer/Modifier/Mettre à jour/Lire/Supprimer/Afficher les rapports activées pour les profils de configuration d’appareil
 - Administrateur général
 
-## <a name="deploy-removable-storage-access-control-by-using-intune-oma-uri"></a>Déployer des 存取控制 de stockage amovibles à l’aide de Intune OMA-URI
+## <a name="deploy-removable-storage-access-control-by-using-intune-oma-uri"></a>Déployer des 存取控制 de stockage amovibles à l’aide d’Intune OMA-URI
 
 Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>) > **Les appareils** > **créent une** plateforme de profil  > **: Windows 10 et versions ultérieures, Type de profil : Modèles** > Personnalisé**.
 
@@ -132,7 +132,7 @@ Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpo
 
 ## <a name="scenarios"></a>Scénarios
 
-Voici quelques scénarios courants pour vous aider à vous familiariser avec Microsoft Defender pour point de terminaison 存取控制 de stockage amovible.
+Voici quelques scénarios courants pour vous aider à vous familiariser avec Pertahanan Microsoft untuk Titik Akhir 存取控制 de stockage amovible.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>Scénario 1 : Empêcher l’accès en écriture et en exécution à tous, mais autoriser des bases de données approuvées spécifiques
 
@@ -215,7 +215,7 @@ Pour ce scénario, vous devez créer deux groupes : un groupe pour tout stockage
     
     Voici [l’exemple de fichier](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%202%20Audit%20Write%20and%20Execute%20access%20to%20others.xml). Consultez l’étape 4 de la section [Déployer le stockage amovible 存取控制](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) pour déployer la configuration.
 
-## <a name="use-intune-user-interface"></a>Utiliser Intune interface utilisateur
+## <a name="use-intune-user-interface"></a>Utiliser l’interface utilisateur Intune
 
 Cette fonctionnalité est disponible dans le Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). 
 

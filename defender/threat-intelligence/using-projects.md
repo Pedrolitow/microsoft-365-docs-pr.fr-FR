@@ -3,16 +3,17 @@ title: Utilisation de projets avec Microsoft Defender Threat Intelligence (MDTI)
 description: Découvrez comment gérer des projets à l’aide de Microsoft Defender Threat Intelligence (MDTI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: d99b760c0f2b72d628d71dd21e295f77a8f5fbd4
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 02a279f97db0d72ddb978601fb2b693c9995ac4a
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108066"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739221"
 ---
 # <a name="using-projects"></a>Utilisation de projets
 
@@ -38,7 +39,7 @@ Les utilisateurs peuvent également télécharger des artefacts dans un projet e
 
     ![Project Detailed Project Chrome Capture d’écran](media/projectsDetailedProjectChromeScreenshot.png)
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).

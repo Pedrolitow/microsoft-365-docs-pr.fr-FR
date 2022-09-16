@@ -2,7 +2,7 @@
 title: Comment hiérarchiser, gérer, examiner et répondre aux incidents dans Microsoft 365 Defender
 description: Étapes de gestion des alertes déclenchées dans Microsoft 365 Defender. Recherche automatisée d’investigation et de réponse (AIR) dans l’abonnement et détermine l’impact et l’étendue d’une menace, et combine les informations en un seul incident.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: a419268a0c2f0adf44844b5ee2db6d2eac85f11b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 942a0d6462e59d843bd3473936b1620b6af7b797
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699585"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737211"
 ---
 # <a name="prioritize-manage-investigate--respond-to-incidents-in-microsoft-365-defender"></a>Hiérarchiser, gérer, examiner & répondre aux incidents dans Microsoft 365 Defender
 
@@ -63,7 +63,7 @@ Vous pouvez commencer à utiliser *le Centre d’actions* pour agir sur les él�
 
 ## <a name="more-information"></a>Informations supplémentaires
 
-[Gérer les incidents dans Microsoft 365 Defender | Microsoft Docs](../../defender/manage-incidents.md)
+[Gérer les incidents dans Microsoft 365 Defender | Microsoftova dokumentacija](../../defender/manage-incidents.md)
 
 [Fonctionnement de l’investigation et de la réponse automatisées dans Microsoft Defender pour Office 365](../automated-investigation-response-office.md)
 

@@ -2,8 +2,8 @@
 title: Escroqueries de support technique
 ms.reviewer: ''
 description: Les logiciels de sécurité Microsoft peuvent vous protéger contre les escroqueries de support technique qui prétend rechercher des programmes malveillants ou des virus, puis vous montre de fausses détections et avertissements.
-keywords: sécurité, programmes malveillants, support technique, arnaque, protection, astuce, usurpation, faux, messages d’erreur, rapport, logiciel de sécurité non autorisés, faux, antivirus, logiciel faux, non autorisés, menaces, frais de suppression, frais de suppression, mise à niveau, payer pour la suppression, installer la version complète, essai, beaucoup de menaces, scanneur, analyse, propre, ordinateur, sécurité, programme, xp sécurité à la maison, faux Microsoft, activer, activer l’analyse, activer antivirus, avertissements, fenêtres contextuelles, avertissements de sécurité, sécurité pop-ups techniques de support escroqueries,  fausse notification d’erreur Microsoft, fausse alerte de virus, expiration de produit faux, activation de faux Windows, pages web d’escroquerie, numéros de téléphone d’escroquerie, numéros de téléphone, MMPC, WDSI, Centre de protection Microsoft contre les programmes malveillants, numéros d’escroquerie de support technique
-ms.prod: m365-security
+keywords: sécurité, programmes malveillants, support technique, arnaque, protection, astuce, usurpation, faux, messages d’erreur, rapport, logiciel de sécurité non autorisés, faux, antivirus, logiciel faux, non autorisés, menaces, frais de suppression, frais de suppression, mise à niveau, payer pour la suppression, installer la version complète, essai, beaucoup de menaces, scanneur, analyse, propre, ordinateur, sécurité, programme, xp sécurité à la maison, faux Microsoft, activer, activer l’analyse, activer antivirus, avertissements, fenêtres contextuelles, avertissements de sécurité, sécurité pop-ups techniques de support escroqueries,  fausse notification d’erreur Microsoft, alerte de virus faux, expiration de produit faux, activation de Faux Windows, pages web escroquerie, numéros de téléphone arnaque, numéros de téléphone, MMPC, WDSI, Centre de protection Microsoft contre les programmes malveillants, tech support scam numbers
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 28347f3e6ac0d51c9c46bbf9de33a4e46b9da705
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 9af3446010f213beba72a894af8b7c6cad862ec0
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663091"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737233"
 ---
 # <a name="tech-support-scams"></a>Fraudes au support technique
 
@@ -48,17 +47,17 @@ Il est également important de garder à l’esprit les points suivants :
 
 * N’appelez pas le numéro dans les fenêtres contextuelles. Les messages d’erreur et d’avertissement de Microsoft n’incluent jamais de numéro de téléphone.
 
-* Téléchargez les logiciels uniquement à partir des sites web officiels des fournisseurs ou des Microsoft Store. Méfiez-vous du téléchargement de logiciels à partir de sites tiers, car certains d’entre eux ont peut-être été modifiés sans la connaissance de l’auteur pour regrouper les logiciels malveillants de prise en charge de l’escroquerie et d’autres menaces.
+* Téléchargez les logiciels uniquement à partir des sites web officiels des fournisseurs ou du Microsoft Store. Méfiez-vous du téléchargement de logiciels à partir de sites tiers, car certains d’entre eux ont peut-être été modifiés sans la connaissance de l’auteur pour regrouper les logiciels malveillants de prise en charge de l’escroquerie et d’autres menaces.
 
-* Utilisez [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) lors de la navigation sur Internet. Il bloque les sites d’escroquerie de prise en charge connus à l’aide de Windows Defender SmartScreen (qui est également utilisé par Internet Explorer). En outre, Microsoft Edge pouvez arrêter les boucles de dialogue contextuelles utilisées par ces sites.
+* Utilisez [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) lors de la navigation sur Internet. Il bloque les sites d’escroquerie de prise en charge connus à l’aide de Windows Defender SmartScreen (qui est également utilisé par Internet Explorer). En outre, Microsoft Edge peut arrêter les boucles de dialogue contextuelles utilisées par ces sites.
 
-* Activez [Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) dans Windows 10. Il détecte et supprime les programmes malveillants connus d’escroquerie de support.
+* Activez [l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) dans Windows 10. Il détecte et supprime les programmes malveillants connus d’escroquerie de support.
 
 ## <a name="what-to-do-if-information-has-been-given-to-a-tech-support-person"></a>Que faire si des informations ont été fournies à une personne du support technique
 
 * Désinstallez les applications que les escrocs ont demandé à installer. Si l’accès a été accordé, envisagez de réinitialiser l’appareil
 
-* Exécutez une analyse complète avec Antivirus Microsoft Defender pour supprimer tout programme malveillant. Appliquez toutes les mises à jour de sécurité dès qu’elles sont disponibles.
+* Exécutez une analyse complète avec l’Antivirus Microsoft Defender pour supprimer tout programme malveillant. Appliquez toutes les mises à jour de sécurité dès qu’elles sont disponibles.
 
 * Modifiez les mots de passe.
 

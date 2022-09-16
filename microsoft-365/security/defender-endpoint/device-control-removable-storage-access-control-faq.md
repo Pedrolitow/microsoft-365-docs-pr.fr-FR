@@ -1,7 +1,8 @@
 ---
-title: Microsoft Defender pour point de terminaison questions fréquentes sur le stockage amovible de contrôle d’appareil
+title: Pertahanan Microsoft untuk Titik Akhir questions fréquentes sur le stockage amovible de contrôle d’appareil
 description: Répond aux questions fréquemment posées sur le stockage amovible du contrôle d’appareil MDE.
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,18 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
 ms.date: 08/25/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 58eacc14e69a4d6c18b7f62be6d5209773a51f08
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 89b4b0f3712132b40050205a38fb761b0ba1db1d
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711771"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736049"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-frequently-asked-questions"></a>Microsoft Defender pour point de terminaison questions fréquentes sur le stockage amovible de contrôle d’appareil
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-frequently-asked-questions"></a>Pertahanan Microsoft untuk Titik Akhir questions fréquentes sur le stockage amovible de contrôle d’appareil
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -47,7 +47,7 @@ Par exemple, si vous avez besoin de deux blocs d’entrées par SID utilisateur 
 
 2. Une autre raison peut être que le fichier XML n’est pas correctement mis en forme. Par exemple, si vous n’utilisez pas la mise en forme markdown correcte pour le caractère « & » dans le fichier XML ou que l’éditeur de texte peut ajouter une marque d’ordre d’octet (BOM) 0xEF 0xBB 0xBF au début des fichiers, ce qui entraîne l’échec de l’analyse XML. Une solution simple consiste à télécharger [l’exemple de fichier](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (sélectionnez **Raw** , puis **Enregistrer sous**), puis mettez à jour.
 
-3. Si vous déployez et gérez la stratégie à l’aide de نهج المجموعة, veillez à combiner tous les PolicyRule dans un fichier XML au sein d’un nœud parent appelé PolicyRules. Combinez également tous les groupes dans un fichier XML au sein d’un nœud parent appelé Groupes. Si vous gérez via Intune, conservez un PolicyRule un fichier XML et un fichier XML groupé.
+3. Si vous déployez et gérez la stratégie à l’aide de نهج المجموعة, veillez à combiner tous les PolicyRule dans un fichier XML au sein d’un nœud parent appelé PolicyRules. Combinez également tous les groupes dans un fichier XML au sein d’un nœud parent appelé Groupes. Si vous gérez via Intune, conservez un PolicyRule un fichier XML et un fichier XML de groupe.
 
 Si cela ne fonctionne toujours pas, contactez le support technique et partagez votre cabine de support. Pour obtenir ce fichier, utilisez l’invite de commandes en tant qu’administrateur : 
 

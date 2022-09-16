@@ -4,12 +4,13 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: medium
-ms.date: 09/14/2022
 ms.collection:
 - highpri
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Meilleures pratiques pour protéger votre entreprise contre les ransomware, le hameçonnage et les URL ou pièces jointes malveillantes.
-ms.openlocfilehash: da1fba7bddabba0ccd95429dc36f06bfb302db48
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: f9f28ec270a17761e7fd6fe1f7a06dfcc42f6946
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711474"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742780"
 ---
 # <a name="top-10-ways-to-secure-your-business---best-practices-to-follow"></a>10 principales façons de sécuriser votre entreprise - Meilleures pratiques à suivre
 
@@ -84,11 +85,11 @@ Le tableau suivant compare les fonctionnalités de Microsoft 365 pour les plans 
 
 (<a id="fn1">1</a>) Microsoft Publisher et Microsoft Access s’exécutent uniquement sur les ordinateurs portables et les ordinateurs de bureau Windows.
 
-(<a id="fn2">2</a>) Microsoft Intune est inclus dans certains plans Microsoft 365, tels que Microsoft 365 Business Premium. Les fonctionnalités de base de mobilité et de sécurité sont incluses dans Microsoft 365 Business Basic et Standard. [Choisissez entre mobilité de base et sécurité ou Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+(<a id="fn2">2</a>) Microsoft Intune est inclus dans certains plans Microsoft 365, tels que Microsoft 365 Business Premium. Les fonctionnalités de base de mobilité et de sécurité sont incluses dans Microsoft 365 Business Basic et Standard. [Choisissez entre Mobilité et sécurité de base ou Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
 
 (<a id="fn3">3</a>) Defender entreprise est inclus dans Microsoft 365 Business Premium. Defender entreprise peut également être ajouté à Microsoft 365 Business Basic ou Standard. Voir [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
-(<a id="fn4">4</a>) Defender pour Office 365 plan 1 est inclus dans Microsoft 365 Business Premium. Defender pour Office 365 plan 1 peut également être ajouté à Microsoft 365 Business Basic ou Standard. Consultez [Defender pour Office 365 Plan 1 et Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+(<a id="fn4">4</a>) Defender pour Office 365 Plan 1 est inclus dans Microsoft 365 Business Premium. Defender pour Office 365 Plan 1 peut également être ajouté à Microsoft 365 Business Basic ou Standard. Consultez [Defender pour Office 365 Plan 1 et Plan 2](/microsoft-365/security/security/office-365-security/overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
 > [!TIP]
 > Pour plus d’informations sur ce que chaque plan inclut, consultez [Réinitialisez la productivité avec Microsoft 365 et Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).

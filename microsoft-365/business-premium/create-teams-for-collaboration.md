@@ -7,9 +7,10 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
 ms.localizationpriority: high
+ms.date: 09/15/2022
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez pourquoi et comment créer une équipe dans Microsoft Teams afin que votre petite entreprise ou votre campagne puisse collaborer.
-ms.openlocfilehash: 1ad91df2578327d86b7c8dad144ae284014723cd
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: d9a38f1f4e51778f8168571f159bd4ef4158222a
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612964"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736407"
 ---
 # <a name="use-microsoft-teams-for-collaboration"></a>Utiliser Microsoft Teams pour la collaboration
 

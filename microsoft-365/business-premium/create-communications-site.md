@@ -1,5 +1,5 @@
 ---
-title: Créer un site de communication SharePoint dans Teams pour Microsoft 365 Business Premium
+title: Créer un site de communication SharePoint dans Teams avec Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,8 +7,9 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -24,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez pourquoi et comment créer un site de communication SharePoint pour votre campagne ou votre entreprise avec Microsoft 365 Business Premium, et protégez l’équipe contre les cyberattaques et les intrusions contre les programmes malveillants et d’autres menaces en raison d’un partage de fichiers incorrect.
-ms.openlocfilehash: 63831f527aa63909ae055304cdeb7decc1ed62c5
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+description: Créez un site de communication SharePoint pour votre campagne ou votre entreprise et protégez votre équipe contre les cyberattaques et les incursions contre les programmes malveillants et d’autres menaces en raison d’un partage de fichiers incorrect.
+ms.openlocfilehash: b70d2726a983d02ce5157815623936472077ad2b
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612986"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738091"
 ---
 # <a name="create-a-communications-site"></a>Créer un site de communication
 
@@ -62,7 +63,7 @@ Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprim
 
 ## <a name="set-it-up"></a>Configuration
 
-1. Connectez-vous à https://Office.com.
+1. Connectez-vous à [https://Office.com](https://Office.com).
 
 2. Dans le coin supérieur gauche de la page, sélectionnez l'icône du lanceur d'applications Icône du lanceur d'applications Office 365, puis la vignette **SharePoint**. Si la vignette **SharePoint** n'apparaît pas, cliquez sur la vignette **Sites** ou sur **Tout** si SharePoint n'est pas visible.
 

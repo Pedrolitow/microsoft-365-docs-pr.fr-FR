@@ -3,29 +3,30 @@ title: Scoring de réputation Microsoft Defender Threat Intelligence (Defender T
 description: Dans cet article de vue d’ensemble, découvrez la fonctionnalité de scoring de réputation du Microsoft Defender Threat Intelligence (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: af40ad00568cae2d69780ce06a8367bd21da6250
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 5563358e108c6461f44f777b5f2473b4f0bca0c7
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108389"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737915"
 ---
-# <a name="reputation-scoring"></a>Scoring de réputation
+# <a name="reputation-scoring"></a>Score de réputation
 
 Microsoft Defender Threat Intelligence (Defender TI) fournit des scores de réputation propriétaires pour n’importe quel hôte, domaine ou adresse IP. Qu’il s’agisse de valider la réputation d’une entité connue ou inconnue, ce score permet aux utilisateurs de comprendre rapidement les liens détectés avec une infrastructure malveillante ou suspecte. La plateforme fournit des informations rapides sur l’activité de ces entités (par exemple, les horodatages First et Last Seen, ASN, country, associated infrastructure) et une liste de règles qui ont un impact sur le score de réputation le cas échéant.
 
-Les données de réputation sont importantes pour comprendre la fiabilité de votre propre surface d’attaque et sont également utiles lors de l’évaluation d’hôtes, de domaines ou d’adresses IP inconnus qui apparaissent dans les investigations. Ces scores révèlent toute activité malveillante ou suspecte antérieure ayant un impact sur l’entité, ou d’autres indicateurs connus de compromission qui doivent être pris en compte.
+Les données de réputation sont importantes pour comprendre la fiabilité de votre propre surface d’attaque et sont également utiles lors de l’évaluation d’hôtes, de domaines ou d’adresses IP inconnus qui apparaissent dans les investigations. Ces scores découvriront toute activité malveillante ou suspecte antérieure qui a affecté l’entité, ou d’autres indicateurs connus de compromission qui doivent être pris en compte.
 
 ![Capture d’écran de Reputation Edge](media/reputationEdgeScreenshot.png)
 ## <a name="understanding-reputation-scores"></a>Présentation des scores de réputation
 
 Les scores de réputation sont déterminés par une série d’algorithmes conçus pour quantifier rapidement le risque associé à une entité. Nous développons des scores de réputation basés sur nos données propriétaires en tirant parti de notre infrastructure d’analyse, ainsi que des informations d’adresse IP collectées à partir de sources externes.
 
-![Carte récapitulative de la réputation](media/reputationSummaryCard.png)
+![Carte récapitulative de réputation](media/reputationSummaryCard.png)
 
 ## <a name="detection-methods"></a>Méthodes de détection
 Les scores de réputation sont déterminés par une série de facteurs, notamment les associations connues d’entités bloquées et une série de règles de Machine Learning utilisées pour évaluer les risques.
@@ -74,5 +75,5 @@ Le score de réputation, la classification, les règles et la description des r�
 
 Tous les articles associés peuvent être partagés avec l’équipe de renseignement sur les cybermenaces de l’analyste, afin qu’ils comprennent plus clairement qui peut cibler leur organisation.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 Pour plus d’informations, consultez [Insights de l’analyste](analyst-insights.md).

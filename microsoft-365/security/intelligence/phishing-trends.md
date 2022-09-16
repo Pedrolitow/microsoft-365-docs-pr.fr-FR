@@ -1,9 +1,9 @@
 ---
-title: Tendances et techniques d’hameçonnage
+title: Tendances et techniques d'hameçonnage
 ms.reviewer: ''
 description: En savoir plus sur la détection des techniques de hameçonnage
 keywords: sécurité, programmes malveillants, hameçonnage, informations, escroquerie, ingénierie sociale, appât, leurre, protection, tendances, attaque ciblée, harponnage, chasse à la baleine
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,15 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 7bfad3fdad392c2ea0795d24e21d6f8c2848f70b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5b821d79c4f4359c3548c2904ea2febb94308188
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016073"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743303"
 ---
-# <a name="phishing-trends-and-techniques"></a>Tendances et techniques d’hameçonnage
+# <a name="phishing-trends-and-techniques"></a>Tendances et techniques d'hameçonnage
 
 Les attaques par hameçonnage sont des escroqueries qui utilisent souvent des appâts d’ingénierie sociale ou du contenu de leurre. La communication légitime, généralement par e-mail, qui établit des liens vers un site de hameçonnage est l’une des méthodes les plus courantes utilisées dans les attaques par hameçonnage. Le site de hameçonnage imite généralement les pages de connexion qui nécessitent que les utilisateurs entrent des informations d’identification et des informations de compte. Le site de hameçonnage capture ensuite les informations sensibles dès que l’utilisateur les fournit, ce qui donne aux attaquants l’accès aux informations.
 

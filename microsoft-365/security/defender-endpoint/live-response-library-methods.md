@@ -18,19 +18,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-ms.subservice: m365d
-ms.openlocfilehash: 8338805bebc21e538242ebb902a5d581d5af42f5
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.subservice: mde
+ms.openlocfilehash: b130a3166db16d36c43e15545cf0f6c14d432e08
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520816"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736803"
 ---
 #  <a name="live-response-library-methods-and-properties"></a>Les méthodes et les propriétés de la bibliothèque de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** [Pertahanan Microsoft untuk Titik Akhir](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

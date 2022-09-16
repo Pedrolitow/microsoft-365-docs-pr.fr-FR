@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le fonctionnement de la rétention Microsoft 365 pour SharePoint et OneDrive, à l’aide de stratégies de rétention et d’étiquettes de rétention pour gérer la rétention automatique ou la suppression des données pour votre organisation.
-ms.openlocfilehash: 3e21d720b2d4afa70a83011b1e2486151f6c3cd2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 98bef6ba43fd57b2533badcf4578668cd12860dd
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326428"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735821"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -72,7 +72,7 @@ Un travail du minuteur s’exécute régulièrement dans la bibliothèque de con
 
 Ce comportement de copie de fichiers dans la bibliothèque de conservation et de préservation des documents s'applique au contenu qui existe lorsque les paramètres de conservation ont été appliqués. De plus, pour les stratégies de rétention, tout nouveau contenu créé ou ajouté au site après son inclusion dans la stratégie sera conservé dans la bibliothèque de conservation. Cependant, le nouveau contenu n'est pas copié dans la bibliothèque de conservation et de préservation des documents la première fois qu'il est modifié, uniquement lorsqu'il est supprimé. Pour conserver toutes les versions d'un fichier, le [contrôle de version](#how-retention-works-with-document-versions) doit être activé pour le site d’origine.
   
-Les utilisateurs voient un message d'erreur s'ils essaient de supprimer une bibliothèque, une liste, un dossier ou un site qui est soumis à la conservation. Ils peuvent supprimer un dossier s'ils déplacent ou suppriment d'abord tous les fichiers du dossier qui sont soumis à la conservation.
+Les utilisateurs voient un message d'erreur s'ils essaient de supprimer une bibliothèque, une liste, un dossier ou un site qui est soumis à la conservation. Ils peuvent supprimer un dossier sans étiquette s’ils déplacent ou suppriment d’abord les fichiers du dossier soumis à rétention.
 
 Les utilisateurs voient également un message d’erreur s’ils tentent de supprimer un élément étiqueté dans l’une des situations suivantes. L’élément n’est pas copié dans la bibliothèque de conservation et de préservation des documents, mais reste à l’emplacement d’origine :
 

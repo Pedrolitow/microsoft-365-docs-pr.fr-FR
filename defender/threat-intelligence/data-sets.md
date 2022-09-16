@@ -3,16 +3,17 @@ title: jeux de données Microsoft Defender Threat Intelligence (Defender TI)
 description: Dans cet article de vue d’ensemble, découvrez la fonctionnalité de jeux de données de Microsoft Defender Threat Intelligence (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 03d058101296968f0b2f3e02e249f6b4c00be157
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d9b7b7b14ceb6ffea0c844848e185f397e2c6da6
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687744"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735721"
 ---
 # <a name="data-sets"></a>Jeux de données
 

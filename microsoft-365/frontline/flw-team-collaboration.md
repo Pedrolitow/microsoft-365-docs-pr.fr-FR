@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 84b855e34d2612aa10b1e8eaed33d584590cd424
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 021426853286f663d78a65aebee3925c8de3e8fc
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614173"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739155"
 ---
 # <a name="frontline-team-collaboration"></a>Collaboration de l’équipe de première ligne
 
@@ -210,13 +210,16 @@ Vous pouvez également configurer des boîtes aux lettres partagées pour autori
 
 ## <a name="use-viva-connections-to-create-a-personalized-experience"></a>Utiliser Viva Connections pour créer une expérience personnalisée
 
-Viva Connections fait partie de la [suite Microsoft Viva](/viva/microsoft-viva-overview) et vous permet de créer une expérience d’atterrissage personnalisée dans Teams. 
+> [!NOTE]
+> Actuellement, Viva Connections n’est pas disponible pour les tablettes.
 
-![Capture d’écran du tableau de bord Viva Connections sur un appareil mobile.](media/flw-shifts-praise-tasks-approvals.png)
+Viva Connections fait partie de la [suite Microsoft Viva](/viva/microsoft-viva-overview) et vous permet de créer une expérience d’atterrissage personnalisée dans Teams.
 
-Utilisez le tableau de bord Viva Connections et ajoutez les cartes Shifts, Tasks et Approvals. Les cartes sont connectées aux applications Shifts, Tasks et Approvals dans Teams. Le contenu des cartes est dynamique et personnalisé pour l’utilisateur.
+![Capture d’écran du tableau de bord Connexions Viva sur un appareil mobile.](media/flw-shifts-praise-tasks-approvals.png)
 
-Découvrez [comment obtenir Viva Connections](/viva/connections/viva-connections-overview) et [comment créer un tableau de bord Viva Connections](/viva/connections/create-dashboard). 
+Utilisez le tableau de bord Connexions Viva et ajoutez les cartes Shifts, Tasks et Approvals. Les cartes sont connectées aux applications Shifts, Tasks et Approvals dans Teams. Le contenu des cartes est dynamique et personnalisé pour l’utilisateur.
+
+Mer informasjon sur [l’obtention de connexions Viva](/viva/connections/viva-connections-overview) et la [création d’un tableau de bord Connexions Viva](/viva/connections/create-dashboard).
 
 ## <a name="learn-more-about-teams-capabilities-for-specific-industries"></a>En savoir plus sur les fonctionnalités de Teams pour des secteurs spécifiques
 

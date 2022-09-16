@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 153294a78c5b9f9af8faca393a65ac7797209662
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 62a00f3ebfd981d2263c5adc2028983c68499125
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696324"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736341"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Forum aux questions sur la découverte d’appareils
 
@@ -38,7 +38,7 @@ Trouvez des réponses aux questions fréquentes (FAQ) sur la découverte d’app
 
 ## <a name="what-is-basic-discovery-mode"></a>Qu’est-ce que le mode de découverte de base ?
 
-Ce mode permet à chaque Microsoft Defender pour point de terminaison appareil intégré de collecter des données réseau et de découvrir les appareils voisins. Les points de terminaison intégrés collectent passivement les événements dans le réseau et en extraient les informations de l’appareil. Aucun trafic réseau n’est lancé. Les points de terminaison intégrés extraient simplement les données de chaque trafic réseau qui est vu par un appareil intégré. Ces données sont utilisées pour répertorier les appareils non gérés dans votre réseau.
+Ce mode permet à chaque Pertahanan Microsoft untuk Titik Akhir appareil intégré de collecter des données réseau et de découvrir les appareils voisins. Les points de terminaison intégrés collectent passivement les événements dans le réseau et en extraient les informations de l’appareil. Aucun trafic réseau n’est lancé. Les points de terminaison intégrés extraient simplement les données de chaque trafic réseau qui est vu par un appareil intégré. Ces données sont utilisées pour répertorier les appareils non gérés dans votre réseau.
 
 ## <a name="can-i-disable-basic-discovery"></a>Puis-je désactiver la découverte de base ?
 
@@ -46,7 +46,7 @@ Vous avez la possibilité de désactiver la découverte d’appareils via la pag
 
 ## <a name="what-is-standard-discovery-mode"></a>Qu’est-ce que le mode de découverte Standard ?
 
-Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour point de terminaison peuvent activement sonder les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Seuls les appareils qui ont été observés par le mode de découverte de base seront activement sondés en mode standard. Ce mode est fortement recommandé pour la création d’un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous ne bénéficiez probablement que d’une visibilité limitée des points de terminaison non managés dans votre réseau.
+Dans ce mode, les points de terminaison intégrés à Pertahanan Microsoft untuk Titik Akhir peuvent activement sonder les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Seuls les appareils qui ont été observés par le mode de découverte de base seront activement sondés en mode standard. Ce mode est fortement recommandé pour la création d’un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous ne bénéficiez probablement que d’une visibilité limitée des points de terminaison non managés dans votre réseau.
 
  Le mode Standard tire également parti des protocoles de découverte courants qui utilisent des requêtes de multidiffusion dans le réseau pour rechercher encore plus d’appareils, en plus de celles observées à l’aide de la méthode passive.
 
@@ -99,7 +99,7 @@ La détection active peut générer jusqu’à 50 Ko de trafic entre l’apparei
 
 ## <a name="why-is-there-a-discrepancy-between-can-be-onboarded-devices-in-the-device-inventory-and-the-number-of-devices-to-onboard-in-the-dashboard-tile"></a>Pourquoi existe-t-il une différence entre les appareils « peuvent être intégrés » dans l’inventaire des appareils et le nombre d'« appareils à intégrer » dans la vignette du tableau de bord ?
 
-Vous remarquerez peut-être des différences entre le nombre d’appareils répertoriés sous « peut être intégré » dans l’inventaire des appareils, la recommandation de sécurité « intégrer à Microsoft Defender pour point de terminaison » et le widget de tableau de bord « Appareils à intégrer ».
+Vous remarquerez peut-être des différences entre le nombre d’appareils répertoriés sous « peut être intégré » dans l’inventaire des appareils, la recommandation de sécurité « intégrer à Pertahanan Microsoft untuk Titik Akhir » et le widget de tableau de bord « Appareils à intégrer ».
 
  La recommandation de sécurité et le widget de tableau de bord s’adressent aux appareils qui sont stables dans le réseau ; à l’exclusion des appareils éphémères, des appareils invités et autres. L’idée est de recommander sur les appareils persistants, ce qui implique également le score de sécurité global de l’organisation.
 
@@ -117,7 +117,7 @@ Lorsque vous envisagez la découverte standard, vous vous demandez peut-être le
 
 ### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>La détection est distribuée sur tous les appareils Windows sur le réseau
 
-Contrairement aux activités malveillantes, qui analysent généralement l’ensemble du réseau à partir d’un petit nombre d’appareils compromis, Microsoft Defender pour point de terminaison’analyse de découverte standard est lancée à partir de tous les appareils Windows intégrés, ce qui rend l’activité bénigne et non anormale. La détection est gérée de manière centralisée à partir du cloud pour équilibrer la tentative de détection entre tous les appareils intégrés pris en charge dans le réseau.  
+Contrairement aux activités malveillantes, qui analysent généralement l’ensemble du réseau à partir d’un petit nombre d’appareils compromis, la détection standard de Pertahanan Microsoft untuk Titik Akhir est lancée à partir de tous les appareils Windows intégrés, ce qui rend l’activité bénigne et non anormale. La détection est gérée de manière centralisée à partir du cloud pour équilibrer la tentative de détection entre tous les appareils intégrés pris en charge dans le réseau.  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>La détection active génère une quantité négligeable de trafic supplémentaire
 
@@ -133,7 +133,7 @@ Les outils de sécurité et de surveillance du réseau sont indifférents à ces
 
 ### <a name="only-unmanaged-devices-are-being-probed"></a>Seuls les appareils non managés sont analysés
 
-Les fonctionnalités de découverte des appareils ont été créées pour détecter et identifier uniquement les appareils non gérés sur votre réseau. Cela signifie que les appareils précédemment découverts qui sont déjà intégrés à Microsoft Defender pour point de terminaison ne seront pas sondés.
+Les fonctionnalités de découverte des appareils ont été créées pour détecter et identifier uniquement les appareils non gérés sur votre réseau. Cela signifie que les appareils précédemment découverts qui sont déjà intégrés à Pertahanan Microsoft untuk Titik Akhir ne seront pas sondés.
 
 ### <a name="you-can-exclude-network-lures-from-active-probing"></a>Vous pouvez exclure les leurres réseau de la détection active
 

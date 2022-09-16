@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment envoyer des messages électroniques chiffrés à l’aide d’Outlook.
-ms.openlocfilehash: 0754509ca7c7a5a07ab3416b5e190c695af3e1d9
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: bb33bed554786a8879e861ff88a4f5f5de60179e
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613733"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738660"
 ---
 # <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Chiffrer ou étiqueter votre e-mail sensible dans Microsoft 365
 

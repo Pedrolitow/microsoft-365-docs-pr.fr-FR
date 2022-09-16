@@ -1,9 +1,10 @@
 ---
 title: Tester des règles de réduction de la surface d’attaque (ASR)
 description: Fournit des conseils pour tester le déploiement de vos règles de réduction de la surface d’attaque (ASR).
-keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
+keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles de lutte contre l’exploitation, règles d’exploitation, règles de prévention des infections, Pertahanan Microsoft untuk Titik Akhir, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +15,6 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
 ms.collection:
 - M365-security-compliance
@@ -22,12 +22,12 @@ ms.collection:
 - highpri
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: e9505b82c5252c044e25eafc063d902ae3f18016
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9927c863422c5d0bc1df9151e83f10ee92713d6d
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699343"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736903"
 ---
 # <a name="test-attack-surface-reduction-asr-rules"></a>Tester des règles de réduction de la surface d’attaque (ASR)
 
@@ -64,8 +64,8 @@ Vous pouvez utiliser Microsoft Endpoint Manager (MEM) Endpoint Security pour con
     >[!Note]
     >Il existe des variantes dans certaines listes de mode de règles ASR ; _Les fonctionnalités bloquées_ et _activées_ fournissent les mêmes fonctionnalités.
 
-8. [Facultatif] Dans le volet **Balises d’étendue** , vous pouvez ajouter des informations de balise à des appareils spécifiques. Vous pouvez également utiliser le contrôle d’accès en fonction du rôle et les balises d’étendue pour vous assurer que les administrateurs appropriés disposent de l’accès et de la visibilité appropriés aux objets Intune appropriés. En savoir plus : [Utilisez le contrôle d’accès en fonction du rôle (RBAC) et les balises d’étendue pour le service informatique distribué dans Intune](/mem/intune/fundamentals/scope-tags).
-9. Dans le volet **Affectations** , vous pouvez déployer ou « affecter » le profil à vos groupes d’utilisateurs ou d’appareils. En savoir plus : [Affecter des profils d’appareil dans Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
+8. [Facultatif] Dans le volet **Balises d’étendue** , vous pouvez ajouter des informations de balise à des appareils spécifiques. Vous pouvez également utiliser le contrôle d’accès en fonction du rôle et les balises d’étendue pour vous assurer que les administrateurs appropriés disposent de l’accès et de la visibilité appropriés aux objets Intune appropriés. Mer informasjon : [Utilisez le contrôle d’accès en fonction du rôle (RBAC) et les balises d’étendue pour le service informatique distribué dans Intune](/mem/intune/fundamentals/scope-tags).
+9. Dans le volet **Affectations** , vous pouvez déployer ou « affecter » le profil à vos groupes d’utilisateurs ou d’appareils. Mer informasjon : [Affecter des profils d’appareil dans Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 10. Passez en revue vos paramètres dans le volet **Vérifier + créer** . Cliquez sur **Créer** pour appliquer les règles.
 
    > [!div class="mx-imgBorder"]
@@ -192,11 +192,11 @@ Pour activer toutes les règles de réduction de la surface d’attaque ajoutée
 > [!TIP]
 > Si vous souhaitez auditer entièrement le fonctionnement des règles de réduction de la surface d’attaque dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
 
-Vous pouvez également utiliser stratégie de groupe, Intune ou des fournisseurs de services de configuration de gestion des appareils mobiles (MDM) pour configurer et déployer le paramètre. Pour en savoir plus, consultez l’article principal [sur les règles de réduction de la surface d’attaque](attack-surface-reduction.md) .
+Vous pouvez également utiliser نهج المجموعة, Intune ou des fournisseurs de services de configuration de gestion des appareils mobiles (MDM) pour configurer et déployer le paramètre. Mer informasjon dans l’article principal sur les [règles de réduction de la surface d’attaque](attack-surface-reduction.md).
 
-## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Utilisez Windows observateur d'événements Review comme alternative à la page de création de rapports sur les règles de réduction de la surface d’attaque dans le portail Microsoft 365 Defender
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Utiliser Windows عارض الأحداث Review comme alternative à la page de création de rapports sur les règles de réduction de la surface d’attaque dans le portail Microsoft 365 Defender
 
-Pour examiner les applications qui auraient été bloquées, ouvrez observateur d'événements et filtrez l’ID d’événement 1121 dans le journal Microsoft-Windows-Windows Defender/Operational. Le tableau suivant répertorie tous les événements de protection réseau.
+Pour passer en revue les applications qui auraient été bloquées, ouvrez عارض الأحداث et filtrez l’ID d’événement 1121 dans le journal Microsoft-Windows-Windows Defender/Operational. Le tableau suivant répertorie tous les événements de protection réseau.
 
 ID d’événement | Description
 -|-

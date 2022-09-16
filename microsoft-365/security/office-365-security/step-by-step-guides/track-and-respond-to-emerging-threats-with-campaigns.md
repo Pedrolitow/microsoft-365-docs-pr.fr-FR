@@ -1,8 +1,8 @@
 ---
-title: Suivre les menaces de sécurité émergentes et y répondre avec l’affichage des campagnes dans Microsoft Defender pour Office 365
+title: Suivez et répondez aux menaces de sécurité émergentes avec l’affichage des campagnes dans Microsoft Defender pour Office 365
 description: Procédure pas à pas des campagnes de menaces dans Microsoft Defender pour Office 365 pour montrer comment elles peuvent être utilisées pour enquêter sur une attaque par e-mail coordonnée contre votre organisation.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 79ff9f29b37dca665635a9728567c78d0b945435
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a3ed51bc721b526065035000e88a7478becc539c
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686276"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737482"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-campaigns-in-microsoft-defender-for-office-365"></a>Suivre et répondre aux menaces émergentes avec des campagnes dans Microsoft Defender pour Office 365
 
@@ -47,7 +47,7 @@ Microsoft tire parti de grandes quantités de données anti-hameçonnage, anti-c
 Une campagne peut être de courte durée ou peut s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée auprès de votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein *de plusieurs* entreprises.
 
 > [!TIP]
-> Pour en savoir plus sur les données disponibles dans une campagne, lisez [Vues de campagne dans Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/campaigns).
+> Pour en savoir plus sur les données disponibles dans une campagne, lisez [Les vues de campagne dans Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/campaigns).
 
 ## <a name="watch-the-exploring-campaign-views-video"></a>Regarder la vidéo *Exploring campaign views*
 

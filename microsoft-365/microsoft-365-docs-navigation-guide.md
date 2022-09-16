@@ -2,8 +2,7 @@
 title: Conseils de navigation dans la documentation Microsoft 365
 description: 'Conseils et astuces pour naviguer dans la documentation technique de Microsoft 365 : expliquent des éléments tels que la page hub, la table des matières, l’en-tête, ainsi que comment utiliser la barre de navigation et comment utiliser le filtre de version.'
 ms.date: 08/12/2020
-ms.prod: sql
-ms.technology: release-landing
+ms.service: microsoft-365-enterprise
 ms.reviewer: serdars
 ms.custom: ''
 ms.topic: conceptual
@@ -11,12 +10,12 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: c6a481497a682cbbad896a2d7ec9e88b84c64d10
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 95b14f45925e1b26e876474fc1a41343882ec817
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660242"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737651"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Guide de navigation de la documentation Microsoft 365
 
@@ -31,7 +30,7 @@ Vous pouvez toujours revenir à cette page en sélectionnant **Microsoft 365** d
 ![Microsoft 365 dans l’en-tête.](media/m365-header-cursor.png)
 
 ## <a name="toc-search"></a>Recherche toc 
-Sur Microsoft Docs, vous pouvez rechercher le contenu dans la table des matières à l’aide de la zone de recherche de filtre en haut :
+Sur Microsoftova dokumentacija, vous pouvez rechercher le contenu dans la table des matières à l’aide de la zone de recherche de filtre en haut :
 
 ![Utilisez la zone de filtre.](media/m365-filter-by-title.png)
 
@@ -62,9 +61,9 @@ Si vous trouvez un problème dans un article, vous pouvez envoyer des commentair
 
 ## <a name="contribute-to-microsoft-365-documentation"></a>Contribuer à la documentation microsoft 365
 
-Saviez-vous que vous pouviez modifier le contenu sur Microsoft Docs vous-même ? Si vous le faites, non seulement notre documentation s’améliorera, mais vous serez également crédité en tant que contributeur à la page. Pour commencer, consultez :
+Saviez-vous que vous pouviez modifier le contenu sur Microsoftova dokumentacija vous-même ? Si vous le faites, non seulement notre documentation s’améliorera, mais vous serez également crédité en tant que contributeur à la page. Pour commencer, consultez :
 
-- [Guide du contributeur Microsoft Docs](/contribute/)
+- [Guide du contributeur Microsoftova dokumentacija](/contribute/)
 
 ## <a name="next-steps"></a>Prochaines étapes
 

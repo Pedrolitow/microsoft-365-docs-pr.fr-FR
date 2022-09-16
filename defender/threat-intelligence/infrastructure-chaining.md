@@ -3,16 +3,17 @@ title: 'Microsoft Defender Threat Intelligence (Defender TI) : Chaînage d’inf
 description: Dans cet article de concept, découvrez le chaînage d’infrastructure et comment appliquer ce processus pour effectuer une analyse de l’infrastructure des menaces à l’aide de Microsoft Defender Threat Intelligence (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 13433c34e6aafe8d08d377876ba53e05324da258
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 2f2187b2b49e41bf9751be46fab771f66b601995
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174650"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737145"
 ---
 # <a name="infrastructure-chaining"></a>Chaînage d’infrastructure
 
@@ -20,7 +21,7 @@ Le chaînage d’infrastructure tire parti des relations entre les jeux de donn�
 
 ![Chaînage d’infrastructure](media/infrastructureChaining.png)
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 1. Consultez [l’article de vue d’ensemble des jeux de données de Microsoft Defender Threat Intelligence (Defender TI)](data-sets.md)
 2. Consultez [l’article de procédure de recherche et de pivotage de Microsoft Defender Threat Intelligence (Defender TI)](searching-and-pivoting.md)
@@ -37,5 +38,5 @@ L’approche et l’interaction avec les propriétés web et mobiles en tant qu�
 
 À mesure que plus de données sur les menaces sont disponibles, davantage d’outils, d’éducation et d’efforts sont nécessaires pour que les analystes comprennent les jeux de données et leurs menaces correspondantes. Microsoft Defender Threat Intelligence (Defender TI) unifie ces efforts en fournissant une vue unique dans plusieurs sources de données.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 Pour plus d’informations, consultez [tutoriel : Collecte de renseignements sur les menaces et chaînage d’infrastructure](gathering-threat-intelligence-and-infrastructure-chaining.md).
