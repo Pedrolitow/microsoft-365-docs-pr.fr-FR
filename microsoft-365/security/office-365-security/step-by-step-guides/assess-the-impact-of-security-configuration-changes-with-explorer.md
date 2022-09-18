@@ -3,6 +3,7 @@ title: Évaluer l’impact des modifications de configuration de sécurité avec
 description: Exemples et procédure pas à pas de l’utilisation de l’Explorateur pour déterminer l’impact d’un changement de contrôle de sécurité (configuration) dans Microsoft Defender pour Office 365
 search.product: ''
 ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: acafd578f2b1a193ab006e7a799bdb01f7651feb
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: ea00bf5375d94a3ea7722fcde32c2ada543b187f
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743217"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799327"
 ---
 # <a name="assess-the-impact-of-security-configuration-changes-with-explorer"></a>Évaluer l’impact des modifications de configuration de sécurité avec l’Explorateur
 
@@ -32,7 +32,7 @@ Ce guide pas à pas vous guide tout au long de l’évaluation d’un changement
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
-- Microsoft Defender pour Office 365 Plan 2 (inclus dans E5).
+- Microsoft Defender pour Office 365 plan 2 (inclus dans le cadre de l’E5).
 - Autorisations suffisantes (lecteur de sécurité minimum requis pour l’évaluation via l’Explorateur de menaces).
 - 5 à 10 minutes pour effectuer les étapes ci-dessous.
 
@@ -64,4 +64,4 @@ Envisagez d’utiliser des présélections sécurisées [pour vous assurer que v
 
 Vous pouvez également gérer les problèmes d’authentification par e-mail avec [spoof intelligence Spoof intelligence insight](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence)
 
-Mer informasjon sur l’authentification par e-mail [Email l’authentification dans Exchange Online Protection](/microsoft-365/security/office-365-security/email-validation-and-authentication)
+En savoir plus sur l’authentification par e-mail [Email l’authentification dans Exchange Online Protection](/microsoft-365/security/office-365-security/email-validation-and-authentication)

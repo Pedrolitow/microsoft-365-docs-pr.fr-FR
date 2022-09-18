@@ -1,13 +1,12 @@
 ---
-title: Expérience Pertahanan Microsoft untuk Titik Akhir par le biais d’attaques simulées
-description: Exécutez les simulations de scénario d’attaque fournies pour découvrir comment Pertahanan Microsoft untuk Titik Akhir pouvez détecter, examiner et répondre aux violations.
-keywords: test, scénario, attaque, simulation, simulé, diy, Pertahanan Microsoft untuk Titik Akhir
+title: Expérience Microsoft Defender pour point de terminaison par le biais d’attaques simulées
+description: Exécutez les simulations de scénario d’attaque fournies pour découvrir comment Microsoft Defender pour point de terminaison pouvez détecter, examiner et répondre aux violations.
+keywords: test, scénario, attaque, simulation, simulé, diy, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.author: maccruz
 author: dansimp
@@ -17,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
-ms.openlocfilehash: 20ad6f155a0b9e5dbfc6ff00154f2d4012b80079
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: ce1d6444fa96438be3ddc870089a4c5db834ca12
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743369"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798129"
 ---
-# <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Expérience Pertahanan Microsoft untuk Titik Akhir par le biais d’attaques simulées 
+# <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Expérience Microsoft Defender pour point de terminaison par le biais d’attaques simulées 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +37,7 @@ ms.locfileid: "67743369"
 
 > [!TIP]
 >
-> - Découvrez les dernières améliorations apportées à Pertahanan Microsoft untuk Titik Akhir : [Nouveautés de Defender pour point de terminaison.](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
+> - Découvrez les dernières améliorations apportées à Microsoft Defender pour point de terminaison : [Nouveautés de Defender pour point de terminaison.](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
 > - Defender pour point de terminaison a démontré des fonctionnalités d’optique et de détection de pointe dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 Vous souhaiterez peut-être découvrir Defender pour point de terminaison avant d’intégrer plusieurs appareils au service. Pour ce faire, vous pouvez exécuter des simulations d’attaque contrôlées sur quelques appareils de test. Après avoir exécuté les attaques simulées, vous pouvez examiner comment Defender pour point de terminaison expose une activité malveillante et découvrir comment il permet une réponse efficace.

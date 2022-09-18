@@ -1,13 +1,12 @@
 ---
 title: Attribuer l’accès utilisateur au centre de sécurité Microsoft Defender.
-description: Attribuez un accès en lecture et en écriture ou en lecture seule au portail Pertahanan Microsoft untuk Titik Akhir.
+description: Attribuez un accès en lecture et en écriture ou en lecture seule au portail Microsoft Defender pour point de terminaison.
 keywords: attribuer des rôles d’utilisateur, attribuer un accès en lecture et en écriture, attribuer un accès en lecture seule, utilisateur, rôles d’utilisateur, rôles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
@@ -17,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
-ms.openlocfilehash: d49190bf38b05432c8df548442135346e8e099d4
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: a691a352ec8f2f001188a535aee1a70033eb9bea
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740728"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796915"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>Attribuer l’accès utilisateur au centre de sécurité Microsoft Defender.
 

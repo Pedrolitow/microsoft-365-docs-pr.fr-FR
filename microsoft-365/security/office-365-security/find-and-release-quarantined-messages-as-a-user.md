@@ -21,12 +21,12 @@ description: Les utilisateurs peuvent découvrir comment afficher et gérer les 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: 69fa7f15aa95f85d298209d4e24e37ada6868bba
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: eb53982c581dc44a4a8f0b4144803a43dfdc9aa0
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597909"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796937"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -191,7 +191,11 @@ Les actions suivantes sont disponibles après avoir cliqué sur l'icône. ![Autr
 
 - ![Icône Supprimer de la quarantaine.](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la quarantaine** : Après avoir cliqué sur **Oui** dans l'avertissement qui apparaît, le message est immédiatement supprimé sans être envoyé aux destinataires d'origine.
 
-- ![Icône de téléchargement de l'e-mail.](../../media/m365-cc-sc-download-icon.png) **Télécharger l'e-mail** : Dans le menu flottant qui apparaît, sélectionnez **je comprends les risques liés au téléchargement de ce message**, puis cliquez sur **Télécharger** pour enregistrer une copie locale du message au format .eml.
+- ![Icône Télécharger l’e-mail.](../../media/m365-cc-sc-download-icon.png) **Télécharger l’e-mail** : dans le menu volant qui s’affiche, configurez les paramètres suivants :
+  - **Motif du téléchargement du fichier** : entrez du texte descriptif.
+  - **Créer un mot de passe** et **confirmer le mot de passe** : entrez un mot de passe requis pour ouvrir le fichier de message téléchargé.
+
+  Lorsque vous avez terminé, cliquez sur **Télécharger**, puis **Terminé** pour enregistrer une copie locale du message. Le fichier de message .eml est enregistré dans un fichier compressé nommé Mise en quarantaine Messages.zip dans votre dossier **Téléchargements** . Si le fichier .zip existe déjà, un nombre est ajouté au nom de fichier (par exemple, Messages mis en quarantaine(1).zip).
 
 - ![Icône de blocage de l’expéditeur.](../../media/m365-cc-sc-block-sender-icon.png) **Bloquer l'expéditeur** : Ajouter l'expéditeur à la liste des expéditeurs bloqués dans **votre** boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 

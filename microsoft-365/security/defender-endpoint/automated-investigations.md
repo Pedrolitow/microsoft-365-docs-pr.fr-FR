@@ -1,12 +1,11 @@
 ---
 title: Utiliser des investigations automatisées pour examiner et corriger les menaces
-description: Comprendre le flux d’investigation automatisé dans Pertahanan Microsoft untuk Titik Akhir.
-keywords: automatisé, investigation, détection, Pertahanan Microsoft untuk Titik Akhir
-ms.service: microsoft-365-security
-ms.subservice: mde
+description: Comprendre le flux d’investigation automatisé dans Microsoft Defender pour point de terminaison.
+keywords: automatisé, investigation, détection, Microsoft Defender pour point de terminaison
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -20,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: ded37b41a4b4c4ec2245edc2a677cf1c0a891fbd
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 0458dac150813c31def96db79167ddeafedc34fd
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736781"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796848"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
@@ -105,12 +104,12 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Mer informasjon sur les niveaux d’automatisation](automation-levels.md)
-- [Consultez le guide interactif : Examiner et corriger les menaces avec Pertahanan Microsoft untuk Titik Akhir](https://aka.ms/MDATP-IR-Interactive-Guide)
-- [Configurer des fonctionnalités d’investigation et de correction automatisées dans Pertahanan Microsoft untuk Titik Akhir](configure-automated-investigations-remediation.md)
+- [En savoir plus sur les niveaux d’automatisation](automation-levels.md)
+- [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender pour point de terminaison](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Configurer des fonctionnalités d’investigation et de correction automatisées dans Microsoft Defender pour point de terminaison](configure-automated-investigations-remediation.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Protection PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Investigation et réponse automatisées dans Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-air)
+- [Examen et réponse automatisés dans Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-air)
 - [Enquête et réponse automatisées dans Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

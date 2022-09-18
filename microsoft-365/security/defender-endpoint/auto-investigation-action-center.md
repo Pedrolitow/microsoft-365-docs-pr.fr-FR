@@ -2,11 +2,10 @@
 title: Visitez le Centre d’actions pour voir les actions de correction
 description: Utiliser le centre d’action pour afficher les détails et les résultats à la suite d’une investigation automatisée
 keywords: action, centre, autoir, automatisé, investigation, réponse, correction
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -19,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.openlocfilehash: 0a681c896ea01f98e1fa9cb176bc3e0580b9bf89
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: cc947828d66ffd0e7220ddfddc2a366348b3c289
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740135"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796739"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitez le Centre d’actions pour voir les actions de correction
 
@@ -47,7 +46,7 @@ Le tableau suivant compare le nouveau centre d’action unifié au centre d’ac
 
 |Le nouveau centre d’action unifié  |Centre d’actions précédent  |
 |---------|---------|
-|Répertorie les actions en attente et terminées pour les appareils et les e-mails dans un seul emplacement <br/>([Pertahanan Microsoft untuk Titik Akhir](microsoft-defender-endpoint.md) plus [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Répertorie les actions en attente et terminées pour les appareils <br/> ([Pertahanan Microsoft untuk Titik Akhir](microsoft-defender-endpoint.md) uniquement)   |
+|Répertorie les actions en attente et terminées pour les appareils et les e-mails dans un seul emplacement <br/>([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) plus [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Répertorie les actions en attente et terminées pour les appareils <br/> ([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) uniquement)   |
 |Se trouve à :<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Se trouve à :<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, choisissez **Centre d’action**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Volet de navigation vers le Centre d’actions dans le portail Microsoft 365 Defender" lightbox="images/action-center-nav-new.png"::: | Dans le portail Microsoft 365 Defender, choisissez **Centre d’action** des  > **enquêtes automatisées**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Version antérieure du volet de navigation vers le Centre d’actions dans le portail Microsoft 365 Defender" lightbox="images/action-center-nav-old.png":::  |
 
@@ -89,7 +88,7 @@ Pour accéder au centre d’action unifié dans le portail Microsoft 365 Defende
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher et approuver des actions de correction](manage-auto-investigation.md)
-- [Consultez le guide interactif : Examiner et corriger les menaces avec Pertahanan Microsoft untuk Titik Akhir](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender pour point de terminaison](https://aka.ms/MDATP-IR-Interactive-Guide)
 
 ## <a name="see-also"></a>Voir aussi
 

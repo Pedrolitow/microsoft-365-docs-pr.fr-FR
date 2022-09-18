@@ -1,12 +1,11 @@
 ---
 title: Accéder aux API Microsoft Defender pour point de terminaison
 ms.reviewer: ''
-description: Découvrez comment utiliser des API pour automatiser les flux de travail et innover en fonction des fonctionnalités Pertahanan Microsoft untuk Titik Akhir
+description: Découvrez comment utiliser les API pour automatiser les flux de travail et innover en fonction des fonctionnalités Microsoft Defender pour point de terminaison
 keywords: api, api, wdatp, api ouverte, api microsoft defender pour point de terminaison, microsoft defender atp, api publique, api prises en charge, alertes, appareil, utilisateur, domaine, ip, fichier, repérage avancé, requête
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d4e009f321e5990223f6c8cf49c260ee12908bd3
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6c046c45eb9a25a13ab3d92335490e1abb60d907
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740706"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797291"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Accéder aux API Microsoft Defender pour point de terminaison
 
@@ -35,7 +34,7 @@ ms.locfileid: "67740706"
 - [Microsoft Defender pour les PME](../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour entreprises à Pertahanan Microsoft untuk Titik Akhir plans 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour entreprises à Microsoft Defender pour point de terminaison plans 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -63,7 +62,7 @@ Vous pouvez accéder à l’API Defender pour point de terminaison avec **le con
   2. Affectez l’autorisation souhaitée à l’application, par exemple, « Lire les alertes », « Isoler les machines ».
   3. Créez une clé pour cette application.
   4. Obtenez un jeton à l’aide de l’application avec sa clé.
-  5. Utiliser le jeton pour accéder à l’API Pertahanan Microsoft untuk Titik Akhir
+  5. Utiliser le jeton pour accéder à l’API Microsoft Defender pour point de terminaison
 
      Pour plus d’informations, consultez [Obtenir un accès avec le contexte d’application](exposed-apis-create-app-webapp.md).
 
@@ -76,12 +75,12 @@ Vous pouvez accéder à l’API Defender pour point de terminaison avec **le con
   1. Créez une application native AAD.
   2. Affectez l’autorisation souhaitée à l’application, par exemple « Lire les alertes », « Isoler les machines », etc.
   3. Obtenez un jeton à l’aide de l’application avec les informations d’identification de l’utilisateur.
-  4. Utiliser le jeton pour accéder à l’API Pertahanan Microsoft untuk Titik Akhir
+  4. Utiliser le jeton pour accéder à l’API Microsoft Defender pour point de terminaison
 
      Pour plus d’informations, consultez [Obtenir un accès avec le contexte utilisateur](exposed-apis-create-app-nativeapp.md).
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [API Pertahanan Microsoft untuk Titik Akhir](exposed-apis-list.md)
-- [Accéder Pertahanan Microsoft untuk Titik Akhir avec le contexte d’application](exposed-apis-create-app-webapp.md)
-- [Accéder Pertahanan Microsoft untuk Titik Akhir avec le contexte utilisateur](exposed-apis-create-app-nativeapp.md)
+- [API Microsoft Defender pour point de terminaison](exposed-apis-list.md)
+- [Accéder Microsoft Defender pour point de terminaison avec le contexte d’application](exposed-apis-create-app-webapp.md)
+- [Accéder Microsoft Defender pour point de terminaison avec le contexte utilisateur](exposed-apis-create-app-nativeapp.md)

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 15b38fc6e667996a88a793ae25fcc4efdb14f890
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: aad517708cb786e4b0c385c86f28d120fd822414
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688460"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799371"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Gérer Microsoft Defender pour point de terminaison avec des objets stratégie de groupe
 
@@ -67,5 +67,4 @@ Si vous ne l’avez pas encore fait, configurez votre portail Microsoft 365 Defe
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Obtenir une vue d’ensemble de La gestion des vulnérabilités defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visitez le tableau de bord des opérations de sécurité du portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Gérer Microsoft Defender pour point de terminaison avec Intune](manage-mde-post-migration-intune.md)

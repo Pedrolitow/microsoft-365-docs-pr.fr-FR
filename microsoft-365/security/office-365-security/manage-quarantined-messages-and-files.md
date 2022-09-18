@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8c28e4dc142136075e220ac6f011be4acf76e813
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: fd1d9d60140ebce0f718a2f23e192ada37b2f3bd
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611452"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797975"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -214,7 +214,11 @@ Les actions suivantes sont disponibles après avoir cliqué sur ![l’icône Aut
 
 - ![Supprimer de l’icône de mise en quarantaine.](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la mise en quarantaine** : après avoir cliqué sur **Oui** dans l’avertissement qui s’affiche, le message est immédiatement supprimé sans être envoyé aux destinataires d’origine.
 
-- ![Icône de téléchargement de l'e-mail.](../../media/m365-cc-sc-download-icon.png) **Télécharger l'e-mail** : Dans le menu flottant qui apparaît, sélectionnez **je comprends les risques liés au téléchargement de ce message**, puis cliquez sur **Télécharger** pour enregistrer une copie locale du message au format .eml.
+- ![Icône Télécharger l’e-mail.](../../media/m365-cc-sc-download-icon.png) **Télécharger l’e-mail** : dans le menu volant qui s’affiche, configurez les paramètres suivants :
+  - **Motif du téléchargement du fichier** : entrez du texte descriptif.
+  - **Créer un mot de passe** et **confirmer le mot de passe** : entrez un mot de passe requis pour ouvrir le fichier de message téléchargé.
+
+  Lorsque vous avez terminé, cliquez sur **Télécharger**, puis **Terminé** pour enregistrer une copie locale du message. Le fichier de message .eml est enregistré dans un fichier compressé nommé Mise en quarantaine Messages.zip dans votre dossier **Téléchargements** . Si le fichier .zip existe déjà, un nombre est ajouté au nom de fichier (par exemple, Messages mis en quarantaine(1).zip).
 
 - ![Icône de blocage de l’expéditeur.](../../media/m365-cc-sc-block-sender-icon.png) **Bloquer l'expéditeur** : Ajouter l'expéditeur à la liste des expéditeurs bloqués dans **votre** boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 

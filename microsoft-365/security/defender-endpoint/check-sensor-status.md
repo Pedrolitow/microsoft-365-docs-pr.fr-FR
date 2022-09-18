@@ -1,5 +1,5 @@
 ---
-title: Vérifier l’état d’intégrité du capteur à Pertahanan Microsoft untuk Titik Akhir
+title: Vérifier l’état d’intégrité du capteur à Microsoft Defender pour point de terminaison
 description: Vérifiez l’intégrité du capteur sur les appareils pour identifier celles qui sont mal configurées, inactives ou qui ne signalent pas les données de capteur.
 keywords: capteur, intégrité du capteur, mal configuré, inactif, aucune donnée de capteur, données de capteur, communications altérées, communication
 ms.service: microsoft-365-security
@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 search.appverid: met150
-ms.openlocfilehash: 685e36809809baf3fd45cabf8a160abb22f7d9b0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 353dad94d14ccfd807a946161d3879815526899d
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740552"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799085"
 ---
-# <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Vérifier l’état d’intégrité du capteur à Pertahanan Microsoft untuk Titik Akhir
+# <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Vérifier l’état d’intégrité du capteur à Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "67740552"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
 
-La vignette **Appareils présentant des problèmes de capteur** se trouve dans le tableau de bord Opérations de sécurité. Cette vignette fournit des informations sur la capacité de l’appareil individuel à fournir des données de détection à communiquer avec le service Defender pour point de terminaison. Elle indique le nombre d’appareils qui nécessitent une attention particulière et vous aide à identifier les appareils problématiques et à prendre des mesures pour les corriger.
+La vignette **Appareils présentant des problèmes de capteur** fournit des informations sur la capacité de chaque appareil à fournir des données de capteur et à communiquer avec le service Defender pour point de terminaison. Elle indique le nombre d’appareils qui nécessitent une attention particulière et vous aide à identifier les appareils problématiques et à prendre des mesures pour les corriger.
 
 La vignette comporte deux indicateurs d’état qui fournissent des informations sur le nombre d’appareils qui ne sont pas correctement signalés au service :
 

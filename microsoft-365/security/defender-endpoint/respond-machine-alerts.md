@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2f5ef49d9b8fd1d558fb0b646295615d9352b915
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 1714469bcfaa35db17f7ad771aa2701d5e66d2d7
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728645"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799107"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -59,7 +59,6 @@ Les actions de réponse s’exécutent en haut d’une page d’appareil spécif
 
  Vous pouvez trouver des pages d’appareil à partir de l’une des vues suivantes :
 
-- **Tableau de bord des opérations de sécurité** : sélectionnez un nom d’appareil dans la carte Appareils à risque.
 - **File d’attente des alertes** : sélectionnez le nom de l’appareil en regard de l’icône de l’appareil dans la file d’attente des alertes.
 - **Liste des appareils** : sélectionnez l’en-tête du nom de l’appareil dans la liste des appareils.
 - **Zone de recherche** : sélectionnez Appareil dans le menu déroulant et entrez le nom de l’appareil.

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 87b90d2aabb3dd23e7f891a740bcaf98a5cb996a
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 34ae4d9150ec29fdac4184c30f053b18ca58df74
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359928"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799349"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
 
@@ -70,7 +70,7 @@ Vous pouvez utiliser cet Assistant pour simplifier le processus de création de 
     1. **Entrez les délimiteurs personnalisés et la ponctuation pour ce champ**
 
    > [!IMPORTANT]
-   > Au moins un champ, mais pas plus de cinq, doivent être désignés comme pouvant faire l’objet d’une recherche.
+   > Au moins un, mais pas plus de dix de vos champs de schéma doivent être désignés comme pouvant faire l’objet d’une recherche.
 
 7. Cliquez sur **Enregistrer**. Votre schéma est désormais répertorié et disponible pour une utilisation.
 

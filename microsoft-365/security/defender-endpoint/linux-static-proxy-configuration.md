@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 859abb10c9e3db1b608190e79f540dc90771ab99
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 37fa8cf1acf8c557401a698710495d39882bf318
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690048"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796828"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurer Microsoft Defender pour point de terminaison sur Linux pour la découverte de proxy statique
 
@@ -86,3 +86,5 @@ Après la `mdatp.service`modification, enregistrez le fichier et redémarrez le 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
+> [!NOTE]
+> Pour supprimer les ajouts que vous avez pu effectuer avant la désinstallation`mdatp`, supprimez le fichier personnalisé.`/etc/systemd/system`

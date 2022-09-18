@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Créer une nouvelle expérience de package de règle SIT EDM
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a948b00127098faf25419e75a1920ee70c01536
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 4c0139fd6a14a24195679b77aa71321ec201a635
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360576"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799436"
 ---
 # <a name="create-edm-sit-using-the-new-experience"></a>Créer EDM SIT à l’aide de la nouvelle expérience
 
@@ -82,7 +82,7 @@ Si vous n’êtes pas familiarisé avec les services SES basés sur EDM ou leur 
 
 > [!TIP]
 > - Sélectionnez les éléments principaux dont les valeurs rendent cette ligne unique dans la table. Par exemple, ne sélectionnez pas de champs tels que *FirstName* ou *DateOfBirth* , car il y aura probablement de nombreuses duplications de prénoms ou de dates de naissance dans votre fichier de données sensibles réel. Au lieu de cela, choisissez des éléments tels que *Social Security Number* et *BankAccountNumber* dont la valeur sera unique dans votre table et, par conséquent, rendre la ligne unique dans la table.
-> - Vous devez choisir un élément principal, mais pas plus de cinq éléments principaux. Si vous disposez d’un champ de données corroborant à plusieurs jetons, vous devez également le mapper à un sit de base. Plus vous pouvez choisir des valeurs uniques dans votre table de données sensibles réelle, plus la précision de votre sit EDM sera élevée. Il améliorera également les performances et évitera les délais d’expiration causés par la surcharge de processus. 
+> - Vous devez choisir un élément principal, mais pas plus de dix éléments principaux. Si vous disposez d’un champ de données corroborant à plusieurs jetons, vous devez également le mapper à un sit de base. Plus vous pouvez choisir des valeurs uniques dans votre table de données sensibles réelle, plus la précision de votre sit EDM sera élevée. Il améliorera également les performances et évitera les délais d’expiration causés par la surcharge de processus. 
 > - Sélectionnez un type d’informations sensibles qui correspond étroitement au format du contenu que vous souhaitez trouver. La sélection d’un SIT qui correspond à du contenu inutile, comme celui qui correspond à toutes les chaînes de texte, ou tous les nombres peut entraîner une charge excessive dans le système, ce qui peut entraîner l’absence d’informations sensibles.
 
 9. Dans les **paramètres Configurer pour les champs de données** , vous pouvez indiquer comment EDM traite la casse et quels délimiteurs ignorer. Vous pouvez définir cette valeur pour les valeurs de tous les éléments ou spécifier les paramètres de chaque élément individuellement. Cliquez sur **Suivant**.

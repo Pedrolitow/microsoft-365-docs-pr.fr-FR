@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: 3c5e4191c34db9d31ce54494f2677e75f3cae3bf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: b2317012415929201c0a1cb8b20ef751bf85ed95
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632616"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798822"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 
@@ -64,13 +64,13 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
 
 5. Dans la page **emplacements**, sélectionnez les emplacements de contenu à rechercher. Vous pouvez rechercher des boîtes aux lettres, les sites et des dossiers publics.
 
-    ![Choisissez les emplacements de contenu à mettre sous conservation.](../media/ContentSearchLocations.png)
+    ![Choisissez les emplacements de contenu à rechercher.](../media/ContentSearchLocations.png)
   
-   1. **Boîtes aux lettres Exchange** : définissez le bouton bascule sur **Activé**, puis cliquez sur **Sélectionner des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes mail d’utilisateur et des groupes de distribution. Vous pouvez également effectuer une recherche dans la boîte aux lettres associée à une équipe Microsoft (pour les messages de canal), le groupe Office 365 et le groupe Yammer. Pour plus d’informations sur les données d’application stockées dans les boîtes aux lettres, consultez [Contenu stocké dans les boîtes aux lettres pour eDiscovery](what-is-stored-in-exo-mailbox.md).
+   1. **Boîtes aux lettres Exchange** : définissez le bouton bascule **sur Activé** , puis cliquez sur **Choisir des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à rechercher. Utilisez la zone de recherche pour rechercher des boîtes mail d’utilisateur et des groupes de distribution. Vous pouvez également effectuer une recherche dans la boîte aux lettres associée à une équipe Microsoft (pour les messages de canal), le groupe Office 365 et le groupe Yammer. Pour plus d’informations sur les données d’application stockées dans les boîtes aux lettres, consultez [Contenu stocké dans les boîtes aux lettres pour eDiscovery](what-is-stored-in-exo-mailbox.md).
 
-   2. **Sites SharePoint** : définissez le bouton bascule sur **Activé** puis cliquez sur **Sélectionner des sites** pour spécifier les sites SharePoint et les comptes OneDrive à conserver. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint d’une équipe Microsoft, d’un groupe Office 365 ou d’un groupe Yammer.
+   2. **Sites SharePoint** : définissez le bouton bascule **sur Activé** , puis cliquez sur **Choisir des sites** pour spécifier les sites SharePoint et les comptes OneDrive à rechercher. Tapez l’URL de chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint d’une équipe Microsoft, d’un groupe Office 365 ou d’un groupe Yammer.
   
-   3. **Dossiers publics Exchange** : définissez la bascule sur **Activé** pour mettre tous les dossiers publics en attente dans votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule désactivé si vous ne voulez pas maintenir les dossiers publics en attente.
+   3. **Dossiers publics Exchange** : définissez le bouton bascule **sur Activé** pour rechercher des dossiers publics dans votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à rechercher. Laissez le bouton bascule désactivé si vous ne souhaitez pas rechercher dans les dossiers publics.
   
    4. Conservez cette case à cocher sélectionnée pour rechercher du contenu Teams pour des utilisateurs locaux. Par exemple, si vous recherchez toutes les boîtes aux lettres Exchange au niveau de l’organisation et que cette case à cocher est sélectionnée, le stockage cloud utilisé pour stocker les données de conversation Teams des utilisateurs locaux sera inclus dans l’étendue de la recherche. Pour plus d'informations, voir [Recherche de données de conversation des équipes pour les utilisateurs sur site](search-cloud-based-mailboxes-for-on-premises-users.md).
 

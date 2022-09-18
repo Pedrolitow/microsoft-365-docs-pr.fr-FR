@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: cd5fcbf5142926da0d3bef2753b08a560414ab44
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1e1317826b208411536dcf79d71a29b3ae514aea
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683133"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796849"
 ---
 # <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareils
 
@@ -48,7 +48,6 @@ Pour ajouter des balises d’appareil à l’aide de l’API, consultez [Ajouter
 
 1. Sélectionnez l’appareil sur lequel vous souhaitez gérer les balises. Vous pouvez sélectionner ou rechercher un appareil à partir de l’une des vues suivantes :
 
-   - **Tableau de bord opérations de sécurité** : sélectionnez le nom de l’appareil dans la section Principaux appareils avec alertes actives.
    - **File d’attente des alertes** : sélectionnez le nom de l’appareil en regard de l’icône de l’appareil dans la file d’attente des alertes.
    - **Inventaire des appareils** : sélectionnez le nom de l’appareil dans la liste des appareils.
    - **Zone de recherche** : sélectionnez Appareil dans le menu déroulant et entrez le nom de l’appareil.

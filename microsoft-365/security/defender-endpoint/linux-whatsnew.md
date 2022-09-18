@@ -16,12 +16,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6c85535f5b79bef0bdc2782daf9111a307b648b0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f1a77d7889411d5455140db68a5af4016747ee49
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691120"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797809"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
@@ -49,6 +49,13 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
 **Nouveautés**
 
 - Corrige un blocage du noyau observé sur certaines charges de travail client exécutant mdatp version 101.75.43. Après l’analyse de la cause première, cela a été attribué à une condition de concurrence lors de la libération de la propriété d’un descripteur de fichier de capteur. La condition de concurrence a été exposée en raison d’un changement récent du produit dans le chemin d’arrêt. Les clients sur les versions de noyau plus récentes (5.1+) ne sont pas affectés par ce problème.
+
+- Lors de la mise à niveau à partir de mdatp version 101.75.43, exécutez les commandes suivantes avant de tenter la mise à niveau vers la version 101.80.97
+
+```
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
 </br>
 
 <br/><br/>

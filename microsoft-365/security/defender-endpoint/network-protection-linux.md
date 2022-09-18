@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 0b113ec142314043c77c20d840f899e85603fbc8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a472fae685503d742a4d8b6cf95dce2f0bb6619c
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682838"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797915"
 ---
 # <a name="network-protection-for-linux"></a>Protection réseau pour Linux
 
@@ -98,7 +98,7 @@ sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 
 ### <a name="manually-enable-network-protection"></a>Activer manuellement la protection réseau
 
-1. Activez la fonctionnalité « networkProtection », modifiez « /etc/opt/microsoft/mdatp/wdacfg » et **définissez networkProtection** sur **activé**.  
+1. Activez la fonctionnalité « networkProtection », modifiez « /etc/opt/microsoft/mdatp/wdavcfg » et **définissez networkProtection** sur **activé**.  
 2. Redémarrez le service mdatp en exécutant la commande suivante :
 
 ```bash

@@ -1,13 +1,12 @@
 ---
 title: Planifier le déploiement des règles de réduction de surface d’attaque (ASR)
 description: Fournit des conseils pour planifier le déploiement de vos règles de réduction de la surface d’attaque (ASR).
-keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles de lutte contre l’exploitation, règles d’exploitation, règles de prévention des infections, Pertahanan Microsoft untuk Titik Akhir, configurer des règles ASR
+keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -22,12 +21,12 @@ ms.collection:
 - highpri
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: 455cc0b654af316685c50f253e4ef2a2d523286a
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 66d87cb15c8f9ed5eb81f91f7102e5ffbaeb3d23
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740618"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797313"
 ---
 # <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Planifier le déploiement des règles de réduction de surface d’attaque (ASR)
 

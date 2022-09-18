@@ -406,7 +406,6 @@
 ## [Examiner et répondre aux menaces]()
 ### [Détection et réponse du point de terminaison]()
 #### [Vue d’ensemble de la détection et réponse du point de terminaison](overview-endpoint-detection-response.md)
-#### [Tableau de bord des opérations de sécurité](security-operations-dashboard.md)
 #### [envoyer des fichiers](admin-submissions-mde.md)
 #### [File d’attente des incidents]()
 ##### [Afficher et organiser la file d’attente des incidents](view-incidents-queue.md)

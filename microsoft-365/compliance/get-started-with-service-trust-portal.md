@@ -2,8 +2,8 @@
 title: Prise en main du portail d’approbation de services Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -17,20 +17,20 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Découvrez comment accéder au portail Microsoft Service Trust et l’utiliser pour faciliter les pratiques de sécurité, de confidentialité et de conformité.
-ms.openlocfilehash: 486f8fd26ee0b30c3155615e5fcb9b40fa714f75
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 9cd4f2281a1bdd6d5673ebe140ccbaf9e4b73be5
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573810"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798910"
 ---
 # <a name="get-started-with-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de services Microsoft
 
-Le portail d’approbation de services Microsoft fournit un large éventail de contenu, d’outils et d’autres ressources sur les pratiques de sécurité, de confidentialité et de conformité de Microsoft.
+Le portail d’approbation de services Microsoft fournit un large éventail de contenu, d’outils et d’autres ressources sur la façon dont les services cloud Microsoft protègent vos données et sur la façon dont vous pouvez gérer la sécurité et la conformité des données cloud pour votre organisation.
 
 ## <a name="accessing-the-service-trust-portal"></a>Accès au portail d’approbation de services
 
-Le Portail d’approbation de services contient des informations sur l’implémentation par Microsoft de contrôles et processus qui protègent nos services cloud et les données client qu’il contient. Pour accéder à certaines des ressources sur le portail d’approbation de services, vous devez vous connecter en tant qu’utilisateur authentifié avec votre compte de services cloud Microsoft (compte d’organisation Azure Active Directory) et examiner et accepter le Contrat de non-divulgation Microsoft pour les documents de conformité.
+Le portail d’approbation de services est le site public de Microsoft pour la publication de rapports d’audit et d’autres informations liées à la conformité associées aux services cloud de Microsoft. Les utilisateurs STP peuvent télécharger les rapports d’audit produits par des auditeurs externes et obtenir des insights à partir de livres blancs créés par Microsoft qui fournissent des détails sur la façon dont les services cloud Microsoft protègent vos données et sur la façon dont vous pouvez gérer la sécurité et la conformité des données cloud pour votre organisation. Pour accéder à certaines des ressources sur le portail d’approbation de services, vous devez vous connecter en tant qu’utilisateur authentifié avec votre compte de services cloud Microsoft (compte d’organisation Azure Active Directory) et examiner et accepter le Contrat de non-divulgation Microsoft pour les documents de conformité.
 
 ### <a name="existing-customers"></a>Clients existants
 
@@ -59,7 +59,7 @@ Lorsque vous vous inscrivez pour une version d’évaluation gratuite ou un abon
 
 Les fonctionnalités et le contenu du Portail d’approbation de services sont accessibles dans le menu principal.
 
-![Menu Portail d’approbation de service.](../media/STPMenus1.png)
+![Portail d’approbation de service - Menu principal du portail d’approbation de services.](../media/86b754e1-c63c-4514-89ac-d014bf334140-2.png)
 
 Les sections suivantes décrivent chaque élément du menu principal.
 
@@ -67,72 +67,84 @@ Les sections suivantes décrivent chaque élément du menu principal.
 
 Le lien **Portail d’approbation de** services affiche la page d’accueil. Il fournit un moyen rapide de revenir à la page d’accueil.
 
-### <a name="compliance-manager"></a>Gestionnaire de conformité
+### <a name="certifications-regulations-and-standards"></a>Certifications, réglementations et normes
 
-> [!IMPORTANT]
-> Le Gestionnaire de conformité est passé du portail d’approbation de services au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>. Toutes les données client ont été déplacées vers le nouvel emplacement. Vous pouvez donc continuer à utiliser le Gestionnaire de conformité sans interruption. Reportez-vous à la [documentation du Gestionnaire de conformité](compliance-manager.md) pour obtenir des informations sur l’installation et en savoir plus sur les nouvelles fonctionnalités.
+Fournit une multitude d’informations de conception et d’implémentation de la sécurité dans le but de vous aider à atteindre plus facilement les objectifs de conformité réglementaire en comprenant comment les services cloud Microsoft sécurisent vos données. Pour passer en revue le contenu, sélectionnez l’une des vignettes suivantes.
 
-### <a name="trust-documents"></a>Documents approuvés
+- **ISO/IEC** - Organisation internationale pour la normalisation (ISO) / Commission électrotechnique internationale (CEI)
+- **SOC** - Rapports SOC (System and Organization Controls) 1, 2 et 3
+- **RGPD** - Règlement général sur la protection des données
+- **FedRAMP** - Programme fédéral de gestion des risques et des autorisations
+- **PCI** - Normes de sécurité des données (DSS) de l’industrie des cartes de paiement (PCI)
+- **CSA Star** - Cloud Security Alliance (CSA) Security, Trust and Assurance Registry (STAR)
+- **Australie IRAP** - Australie Information Security Registered Assesors Program (IRAP)
+- **Singapore MTCS** - Multi-Tier Cloud Security (MTCS) Singapore Standard
+- **Espagne ENS** - Espagne Esquema Nacional de Seguridad (ENS)
 
-Fournit une multitude d’informations de conception et d’implémentation de la sécurité dans le but de vous aider à atteindre plus facilement les objectifs de conformité réglementaire en comprenant comment les services cloud Microsoft sécurisent vos données. Pour consulter le contenu, sélectionnez l'une des options suivantes dans le menu déroulant **Documents de référence**.
+### <a name="reports-whitepapers-and-artifacts"></a>Rapports, livres blancs et artefacts
 
-- **Rapports d’audit :** Une liste de rapports d’audit et d’évaluation indépendants sur les services cloud de Microsoft s’affiche. Ces rapports fournissent des informations sur la conformité des services cloud Microsoft avec les normes de protection des données et les exigences réglementaires, telles que :
-  - Organisation internationale pour la normalisation (ISO)
-  - Service Organization Controls (SOC)
-  - Normes du National Institute of Standards and Technology (NIST)
-  - Programme FedRAMP (Federal Risk and Authorization Management Program)
-  - Règlement général sur la protection des données (RGPD)
-- **Protection des données :** Contient une multitude de ressources telles que des contrôles audités, des livres blancs, des FAQ, des tests d’intrusion, des outils d’évaluation des risques et des guides de conformité.
-- **Blueprints de sécurité et de conformité Azure :** Ressources qui vous aident à créer des applications cloud sécurisées et conformes. Ce domaine contient des orientations pour le secteur public, les finances, les soins de santé et les secteurs verticaux de la vente au détail.
+Documents généraux relatifs aux catégories suivantes :
 
-### <a name="industries--regions"></a>Secteurs et régions
+- **BCP et reprise d’activité** - Continuité d’activité et reprise d’activité
+- **Tests de stylet et évaluations de sécurité** - Attestation des tests de pénétration et des évaluations de sécurité effectuées par des tiers
+- **Confidentialité et protection des données** - Ressources de confidentialité et de protection des données
+- **FAQ et livres blancs** - Livres blancs et réponses aux questions fréquemment posées
 
-Fournit des informations de conformité spécifiques à l’industrie et à la région sur les services cloud Microsoft.
+### <a name="industry-and-regional-resources"></a>Ressources sectorielles et régionales
 
-- **Industries:** À l’heure actuelle, cette page fournit une page d’accueil spécifique au secteur pour l’industrie des services financiers. Il contient des informations telles que des offres de conformité, des FAQ et des témoignages de réussite. Les ressources d’un plus grand nombre d’industries seront publiées à l’avenir, mais vous trouverez des ressources pour d’autres secteurs en accédant à la page Documents de confiance **> Protection des données** dans le STP.
-- **Régions:** Fournit des avis juridiques sur la conformité des services cloud Microsoft avec différentes lois de différents pays. L’Australie, le Canada, le Danemark, l’Allemagne, la Pologne, la Roumanie, l’Espagne et le Royaume-Uni sont des pays spécifiques.
+Documente l’application aux secteurs et régions suivants :
 
-### <a name="trust-center"></a>Centre de gestion de la confidentialité
+- **Services financiers** - Ressources elaborating regulatory compliance guidance for FSI (by country)
+- **Soins de santé et sciences de la vie** - Fonctionnalités offertes par Microsoft pour le secteur de la santé
+- **Médias et divertissement** - Ressources de l’industrie des médias et du divertissement
+- **États-Unis Government** - Ressources exclusivement destinées aux clients du gouvernement des États-Unis
+- **Ressources régionales** - Documents décrivant la conformité des services en ligne microsoft avec différentes stratégies et réglementations régionales
 
-Liens vers le Centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/trust-center), qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans le cloud Microsoft. Cela inclut des informations sur les fonctionnalités des services cloud Microsoft que vous pouvez utiliser pour répondre aux exigences spécifiques du RGPD, de la documentation utile à votre responsabilité en matière de RGPD et de votre compréhension des mesures techniques et organisationnelles prises par Microsoft pour prendre en charge le RGPD.
+### <a name="resources-for-your-organization"></a>Ressources pour votre organisation
 
-### <a name="my-library"></a>Ma bibliothèque
+Documents s’appliquant à votre organisation (limités par le locataire).
 
-Cette fonctionnalité vous permet d’enregistrer (ou *d’épingler*) des documents afin de pouvoir y accéder rapidement sur votre page My Library. Vous pouvez également configurer des notifications de telle sorte que Microsoft vous envoie un courrier électronique lorsque les documents de votre bibliothèque sont mis à jour. Pour plus d’informations, consultez la section [Ma bibliothèque](#my-library-1) de cet article.
+- **Ressources de votre organisation** - Documents basés sur l’abonnement et les autorisations de votre organisation
 
-### <a name="more"></a>Plus
+Les ressources avec la coche de série indiquent que le document a plusieurs versions, qui peuvent être affichées une fois que vous cliquez sur le document et cliquez sur « Afficher toutes les versions » dans la page de téléchargement.  
 
-Accédez à **Plus > Administration** pour accéder aux fonctions d’administration disponibles uniquement pour le compte d’administrateur général. Cette option est visible uniquement lorsque vous êtes connecté en tant qu’administrateur général. Le menu déroulant **Administration** comporte deux options :
+:::image type="content" source="../media/stp-series.png" alt-text="Les séries de documents sont marquées et peuvent être affichées sur la page de téléchargement.":::
 
-- **Paramètres:** Cette page vous permet d’attribuer des rôles d’utilisateur pour le Gestionnaire de conformité (classique).
-- **Paramètres de confidentialité des utilisateurs :** Cette page vous permet d’exporter un rapport qui contient des affectations d’éléments d’action dans le Gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer tout élément d’action affecté de l’utilisateur spécifié.
+Filtrer par date et par service cloud : lorsque vous affichez les documents disponibles, vous pouvez filtrer les résultats par plage de dates en sélectionnant **Dates** , puis en sélectionnant la plage que vous souhaitez utiliser.
 
-### <a name="search"></a>Recherche
+:::image type="content" source="../media/stp-documents-filter-date.png" alt-text="Filtrez les documents disponibles par plage de dates.":::
 
-Par défaut, la recherche retourne les résultats du document. Vous pouvez filtrer les résultats à l’aide des listes déroulantes pour affiner la liste des documents affichés. Vous pouvez utiliser plusieurs filtres pour affiner la liste des documents. Les filtres incluent les services cloud spécifiques, les catégories de pratiques de conformité ou de sécurité, les régions et les secteurs d’activité. Cliquez sur le lien du nom du document pour télécharger le document.
+Vue de téléchargement de documents : lorsque vous affichez les documents disponibles, vous pouvez filtrer les résultats par le **service cloud** applicable.
+
+:::image type="content" source="../media/stp-documents-filter-service.png" alt-text="Filtrez les documents disponibles par service cloud.":::
+
+> [!NOTE]
+> La plupart des fichiers sur le STP nécessitent l’acceptation d’un contrat de licence. Certains lecteurs PDF basés sur un navigateur n’autorisent pas l’exécution de Javascript, ce qui empêche l’affichage du contrat de licence et l’ouverture du fichier.
+
+### <a name="all-documents"></a>Tous les documents
+
+Cette section affiche tous les documents disponibles. Sélectionnez les documents à enregistrer dans votre section Ma bibliothèque. Les documents sont triés dans les mêmes catégories que les certifications, les normes, les réglementations et les ressources de l’industrie. Pour afficher toutes les ressources d’un service cloud particulier, utilisez le filtre **de service cloud** .
+
+### <a name="search"></a>Rechercher
+
+Cliquez sur la loupe dans le coin supérieur droit de la page Portail d’approbation de services pour développer la zone, entrez vos termes de recherche, puis **appuyez sur Entrée**. La page **Recherche** s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de recherche répertoriés ci-dessous.
+
+:::image type="content" source="../media/stp-search.png" alt-text="Recherchez des documents et filtrez les résultats.":::
+
+Par défaut, la recherche retourne les résultats du document. Vous pouvez filtrer les résultats à l’aide des listes déroulantes pour affiner la liste des documents affichés. Vous pouvez utiliser plusieurs filtres pour affiner la liste des documents. Les filtres incluent les services cloud et les régions spécifiques. Cliquez sur le lien du nom du document pour télécharger le document.
 
 > [!NOTE]
 > Les rapports et documents du portail d’approbation de services peuvent être téléchargés pendant au moins 12 mois après la publication ou jusqu’à ce qu’une nouvelle version du document soit disponible.
 
 ## <a name="my-library"></a>Ma bibliothèque
 
-Utilisez la fonctionnalité Ma bibliothèque pour ajouter des documents et des ressources sur le portail d’approbation de services à votre page My Library. Cela vous permet d’accéder aux documents qui vous intéressent en un seul endroit.  Pour ajouter un document à votre bibliothèque, cliquez sur le menu **...** à droite d’un document, puis **sélectionnez Enregistrer dans la bibliothèque**. Vous pouvez ajouter plusieurs documents à votre bibliothèque en cochant la case en regard d’un ou plusieurs documents, puis en cliquant sur **Enregistrer dans la bibliothèque** en haut de la page.
+Utilisez la fonctionnalité Ma bibliothèque pour ajouter des documents et des ressources sur le portail d’approbation de services à votre page My Library. Cela vous permet d’accéder aux documents qui vous intéressent en un seul endroit.  Pour ajouter un document à votre bibliothèque, cliquez sur le menu elipsis (**...**) à droite d’un document, puis **sélectionnez Enregistrer dans la bibliothèque**. Vous pouvez ajouter plusieurs documents à votre bibliothèque en cochant la case en regard d’un ou plusieurs documents, puis en cliquant sur **Enregistrer dans la bibliothèque** en haut de la page.
 
-En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque My library afin qu’un e-mail vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque My. Pour configurer les notifications, accédez à votre bibliothèque, puis cliquez sur **Paramètres de notification**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse e-mail dans votre organisation à laquelle envoyer des notifications. Les notifications par e-mail incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
+En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque My library afin qu’un e-mail vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque My. Pour configurer les notifications, accédez à votre bibliothèque, puis cliquez sur **Paramètres de notification**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse e-mail dans votre organisation à laquelle envoyer des notifications. Email notifications incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
 
-Notez également que nous identifions tous les documents de votre bibliothèque Qui ont été mis à jour au cours des 30 derniers jours, que vous activiez ou non les notifications. Une brève description de la mise à jour s’affiche également dans un info-bulle.
+Si un document fait partie d’une série, vous êtes abonné à la série et recevez des notifications lorsqu’il y a une mise à jour de cette série. Vous pouvez afficher les documents individuels et les documents de série auxquels vous vous êtes abonné, en 2 sections, comme indiqué ci-dessous :
 
-## <a name="starter-packs"></a>Packs de démarrage
-
-Les packs de démarrage sont un ensemble de documentation organisé par Microsoft sur les services cloud Microsoft pour des secteurs spécifiques. Actuellement, le portail d’approbation de services propose les trois packs de démarrage suivants pour les organisations de services financiers. Ces packs de démarrage aident les organisations à évaluer la sécurité, la conformité et la confidentialité dans le cloud Microsoft et fournissent des conseils pour aider à implémenter les services Microsoft Cloud dans le secteur des services financiers hautement réglementés.
-
-- **Pack de démarrage d’évaluation :** À utiliser pour une évaluation anticipée du cloud Microsoft pour les organisations de services financiers.
-
-- **Pack de démarrage d’évaluation :** Après l’évaluation, utilisez les listes de vérification et d’autres conseils de ce pack de démarrage pour aider votre organisation à évaluer les risques liés à la sécurité, à la conformité et à la confidentialité.
-
-- **Pack de démarrage Audit :** Utilisez ce pack de démarrage pour obtenir des conseils sur l’utilisation des contrôles d’audit et d’autres outils pour vous aider à guider votre implémentation des services Microsoft Cloud de manière à réduire l’exposition de votre organisation aux risques.
-
-Pour accéder à ces packs de démarrage, accédez au **portail d’approbation de services > Industries & Régions > Solutions de l’industrie > Services financiers**. Vous pouvez ouvrir ou télécharger des documents à partir d’un pack de démarrage ou les enregistrer dans votre bibliothèque My Library.
+:::image type="content" source="../media/stp-my-library.png" alt-text="Ma bibliothèque affiche les documents auxquels vous vous êtes abonné dans deux sections.":::
 
 ## <a name="localization-support"></a>Prise en charge de localisation
 

@@ -1,8 +1,9 @@
 ---
 title: Prise en main de la configuration approfondie de la défense pour la sécurité des e-mails
-description: Conseils de configuration pas à pas sur la façon d’obtenir la valeur de sécurité de Microsoft Defender pour Office 365 lorsque vous disposez d’un filtrage de courrier tiers.
+description: Conseils de configuration pas à pas sur la façon d’obtenir la valeur de sécurité à partir de Microsoft Defender pour Office 365 lorsque vous disposez d’un filtrage de courrier tiers.
 search.product: ''
 ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,20 +16,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: abd313dd2e6718d018be42ac0bcdd36f1c149c88
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 069dcd681fef38f5ea2a84646f56f1b23b2258a1
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740844"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797187"
 ---
-# <a name="getting-the-best-security-value-from-microsoft-defender-for-office-365-when-you-have-third-party-email-filtering"></a>Obtention de la meilleure valeur de sécurité de Microsoft Defender pour Office 365 lorsque vous disposez d’un filtrage de courrier tiers
+# <a name="getting-the-best-security-value-from-microsoft-defender-for-office-365-when-you-have-third-party-email-filtering"></a>Obtention de la meilleure valeur de sécurité à partir de Microsoft Defender pour Office 365 lorsque vous disposez d’un filtrage de courrier tiers
 
 Ce guide vous convient si :
 
-- Vous disposez d’une licence Microsoft Defender pour Office 365 et hébergez vos boîtes aux lettres dans Office 365
+- Vous disposez d’une licence pour Microsoft Defender pour Office 365 et hébergez vos boîtes aux lettres dans Office 365
 - Vous utilisez également un tiers pour la sécurité de vos e-mails
 
 Les informations ci-dessous détailleront comment tirer le meilleur parti de votre investissement, divisé en étapes faciles à suivre.
@@ -37,8 +37,8 @@ Les informations ci-dessous détailleront comment tirer le meilleur parti de vot
 -   Boîtes aux lettres hébergées dans Office 365
 - Une ou plusieurs des opérations suivantes :
   - Microsoft Defender pour Office 365 Plan 1 pour les fonctionnalités de protection
-  - Microsoft Defender pour Office 365 Plan 2 pour la plupart des autres fonctionnalités (inclus dans les plans E5)
-  - Version d’évaluation de Microsoft Defender pour Office 365 (disponible pour tous les clients au aka.ms/tryMDO)
+  - Microsoft Defender pour Office 365 plan 2 pour la plupart des autres fonctionnalités (inclus dans les plans E5)
+  - Microsoft Defender pour Office 365 Trial (disponible pour tous les clients au aka.ms/tryMDO)
 -   Autorisations suffisantes pour configurer les fonctionnalités décrites ci-dessous
 
 ## <a name="step-1--understand-the-value-you-already-have"></a>Étape 1 : comprendre la valeur que vous avez déjà
@@ -53,7 +53,7 @@ Les informations ci-dessous détailleront comment tirer le meilleur parti de vot
 
 ### <a name="detection-investigation-response-and-hunting-features"></a>Fonctionnalités de détection, d’investigation, de réponse et de chasse
 
--   Lorsque des alertes sont déclenchées dans Microsoft Defender pour Office 365, elles sont automatiquement corrélées et combinées en incidents pour aider à réduire la fatigue des alertes sur le personnel de sécurité. Air (Automated Investigation and Response) déclenchera des enquêtes pour aider à corriger et à contenir les menaces.
+-   Lorsque des alertes se déclenchent dans Microsoft Defender pour Office 365, elles sont automatiquement corrélées et combinées en incidents pour aider à réduire la fatigue des alertes sur le personnel de sécurité. Air (Automated Investigation and Response) déclenchera des enquêtes pour aider à corriger et à contenir les menaces.
 
 **En savoir plus, regardez une vidéo de vue d’ensemble et commencez ici :** [Réponse aux incidents avec Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview)
 
@@ -61,7 +61,7 @@ Les informations ci-dessous détailleront comment tirer le meilleur parti de vot
 
 **En savoir plus, regardez une vidéo de vue d’ensemble et commencez ici :** [Analyse des menaces dans Microsoft 365 Defender](../../defender/threat-analytics.md)
 
--   L’Explorateur peut être utilisé pour chasser les menaces, visualiser les modèles de flux de messagerie, repérer les tendances et identifier l’impact des modifications que vous apportez lors du réglage de Defender pour Office 365. Vous pouvez également supprimer rapidement des messages de votre organisation en quelques clics simples.
+-   L’Explorateur peut être utilisé pour chasser les menaces, visualiser les modèles de flux de messagerie, repérer les tendances et identifier l’impact des modifications que vous apportez lors du paramétrage Defender pour Office 365. Vous pouvez également supprimer rapidement des messages de votre organisation en quelques clics simples.
 
 **En savoir plus et commencer ici :** [Explorateur de menaces et détections en temps réel](../threat-explorer.md)
 
@@ -119,7 +119,7 @@ Les informations ci-dessous détailleront comment tirer le meilleur parti de vot
 
 - Le guide de migration contient de nombreuses instructions utiles sur la préparation et le réglage de votre environnement pour le préparer pour une migration. Toutefois, la plupart des étapes s’appliquent *également* à un scénario à double utilisation. Ignorez simplement les instructions du commutateur MX dans les étapes finales. 
 
-**Lisez-la ici :** [Migrer d’un service de protection tiers vers Microsoft Defender pour Office 365 - Office 365 | Microsoftova dokumentacija](../migrate-to-defender-for-office-365.md)
+**Lisez-le ici :** [Migrer d’un service de protection tiers vers Microsoft Defender pour Office 365 - Office 365 | Microsoft Docs](../migrate-to-defender-for-office-365.md)
 
 ## <a name="more-information"></a>Plus d’informations
 

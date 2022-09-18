@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MOE150
@@ -23,18 +22,20 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Comment créer une stratégie de gestion des enregistrements de messagerie personnalisée (MRM) pour déplacer automatiquement des éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: 267cbf99cf303f574f2b50ec166c85a831330439
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 2ac1b70efcda7d6fb48e5c5da9bddb2bcec684c2
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662704"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798800"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personnaliser une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
-Les administrateurs Microsoft Purview peuvent créer une stratégie d’archivage et de suppression qui déplace automatiquement les éléments vers la [boîte aux lettres d’archivage](archive-mailboxes.md) d’un utilisateur et supprime automatiquement les éléments de la boîte aux lettres.
+Pour conserver et supprimer des e-mails, nous vous recommandons d’utiliser des [stratégies de rétention et des étiquettes de rétention Microsoft 365](retention.md) plutôt que l’ancienne gestion des enregistrements de messagerie (MRM) de Exchange Online. Toutefois, une raison valide d’utiliser cette fonctionnalité plus ancienne consiste à déplacer automatiquement les e-mails de la boîte aux lettres principale d’un utilisateur vers leur [boîte aux lettres d’archivage](archive-mailboxes.md). Vous devrez peut-être également utiliser MRM pour appliquer des paramètres de rétention et de suppression à des dossiers spécifiques de la boîte aux lettres, plutôt qu’à la boîte aux lettres entière.
 
-Pour ce faire, vous créez une stratégie de rétention de gestion des enregistrements de messagerie (MRM) que vous affectez ensuite aux boîtes aux lettres. Cette stratégie déplace les éléments vers la boîte aux lettres d’archivage d’un utilisateur après une période spécifiée et supprime également les éléments de la boîte aux lettres une fois qu’ils ont atteint une certaine limite d’âge.
+Utilisez cet article comme exemple de déploiement pour ces deux raisons valides d’utiliser des stratégies de rétention MRM et des balises de rétention. Pour tous les autres scénarios de rétention et de suppression, utilisez des stratégies de rétention et des étiquettes de rétention Microsoft 365.
+
+La configuration vous oblige à créer une stratégie de rétention MRM que vous affectez ensuite aux boîtes aux lettres. Cette stratégie déplace les éléments vers la boîte aux lettres d’archivage d’un utilisateur après une période spécifiée et supprime également les éléments du dossier Éléments supprimés une fois qu’ils ont atteint une limite d’âge spécifique.
 
 Les règles réelles qui déterminent les éléments qui sont déplacés ou supprimés et quand cela se produit sont appelées balises de rétention. Les balises de rétention sont liées à une stratégie de rétention MRM, qui à son tour est affectée à la boîte aux lettres d’un utilisateur. Une balise de rétention applique des paramètres de rétention à des messages et dossiers individuels dans la boîte aux lettres d’un utilisateur. Il définit la durée pendant laquelle un message reste dans la boîte aux lettres et l’action effectuée lorsque le message atteint l’âge de rétention spécifié. Lorsqu’un message atteint son âge de rétention, il est déplacé vers la boîte aux lettres d’archivage de l’utilisateur ou supprimé.
   
@@ -42,15 +43,13 @@ Les étapes décrites dans cet article définissent une stratégie d’archivage
   
 - Activez une boîte aux lettres d’archivage pour chaque utilisateur de l’organisation. Cette procédure offre aux utilisateurs davantage de stockage de boîtes aux lettres et est nécessaire pour qu’une stratégie de rétention puisse déplacer automatiquement les éléments vers la boîte aux lettres d’archivage. Un utilisateur peut également déplacer manuellement des éléments vers leur boîte aux lettres d’archivage pour le stockage d’archivage.
 
-- Créez trois balises de rétention personnalisées pour effectuer les actions suivantes :
+- Créez deux balises de rétention personnalisées pour effectuer les actions suivantes :
+    
+    - Déplacez automatiquement les éléments âgés de 3 ans vers la boîte aux lettres d’archivage de l’utilisateur. Le déplacement d’éléments vers la boîte aux lettres d’archivage libère de l’espace dans la boîte aux lettres principale d’un utilisateur.
+    
+    - Supprimez automatiquement les éléments âgés de 5 ans du dossier Éléments supprimés. Cela libère également de l’espace dans la boîte aux lettres principale de l’utilisateur. Les utilisateurs auront la possibilité de récupérer ces éléments si nécessaire. Pour plus d’informations, consultez la note de bas de page de la section [Plus d’informations](#more-information) . 
 
-  - Déplacez automatiquement les éléments âgés de 3 ans vers la boîte aux lettres d’archivage de l’utilisateur. Le déplacement d’éléments vers la boîte aux lettres d’archivage libère de l’espace dans la boîte aux lettres principale d’un utilisateur.
-
-  - Supprimez automatiquement les éléments âgés de 5 ans du dossier Éléments supprimés. Cela libère également de l’espace dans la boîte aux lettres principale de l’utilisateur. Les utilisateurs auront la possibilité de récupérer ces éléments si nécessaire. Pour plus d’informations, consultez la note de bas de page de la section [Plus d’informations](#more-information) . 
-
-  - Supprimez automatiquement (et définitivement) les éléments âgés de 7 ans à la fois de la boîte aux lettres primaire et de la boîte aux lettres d’archivage. En raison des réglementations de conformité, certaines organisations sont tenues de conserver le courrier électronique pendant une période spécifique. Lorsque cette période expire, une organisation peut vouloir supprimer définitivement ces éléments des boîtes aux lettres utilisateur.
-
-- Créez une stratégie de rétention et ajoutez-y les nouvelles balises de rétention personnalisées. En outre, vous allez également ajouter des balises de rétention intégrées à la nouvelle stratégie de rétention. Cela inclut les balises personnelles que les utilisateurs peuvent affecter aux éléments de leur boîte aux lettres. Vous allez également ajouter une balise de rétention qui déplace les éléments du dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur vers le dossier Éléments récupérables dans leur boîte aux lettres d’archivage. Cette action permet de libérer de l’espace dans le dossier Éléments récupérables d’un utilisateur lorsque sa boîte aux lettres est mise en attente.
+- Créez une stratégie de rétention et ajoutez-y les nouvelles balises de rétention personnalisées. En outre, vous allez ajouter une balise de rétention intégrée qui ne peut pas être obtenue avec une étiquette de rétention Microsoft 365 recommandée, car elle déplace également les éléments vers la boîte aux lettres d’archivage. Il s’agit d’une balise personnelle pour l’archivage après 1 an que les utilisateurs peuvent affecter aux éléments de leur boîte aux lettres lorsqu’ils souhaitent une période d’archivage plus courte que leur valeur par défaut de 3 ans.
 
 Vous pouvez suivre une partie ou l’ensemble des étapes décrites dans cet article pour configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre propre organisation. Nous vous recommandons de tester ce processus sur quelques boîtes aux lettres avant de l’implémenter sur toutes les boîtes aux lettres de votre organisation.
 
@@ -76,11 +75,9 @@ Pour obtenir des instructions sur l’activation des boîtes aux lettres d’arc
 
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Étape 2 : Créer de nouvelles balises de rétention pour les stratégies d’archivage et de suppression
 
-Dans cette étape, vous allez créer les trois balises de rétention personnalisées qui ont été décrites précédemment.
+Dans cette étape, vous allez créer les deux balises de rétention personnalisées qui ont été décrites précédemment.
   
 - Alpine House 3 Year Move to Archive (stratégie d’archive personnalisée)
-
-- Alpine House 7 Year Permanently Delete (stratégie de suppression personnalisée)
 
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (étiquette personnalisée pour le dossier Éléments supprimés)
 
@@ -112,29 +109,9 @@ Tout d’abord, vous allez créer une balise de stratégie par défaut (DPT) d�
 
 Le nouveau DPT d’archive s’affiche dans la liste des balises de rétention.
 
-### <a name="create-a-custom-deletion-default-policy-tag"></a>Créer une balise de stratégie par défaut de suppression personnalisée
-  
-Ensuite, vous allez créer un autre DPT personnalisé, mais celui-ci sera une stratégie de suppression qui supprime définitivement les éléments après 7 ans.
-  
-1. De retour sur la page **Balises de rétention MRM** , sélectionnez **+ Nouvelle balise** et, dans la page **Nom de votre balise** , tapez un nom pour la nouvelle balise de rétention et une description facultative qui explique l’objectif de la balise de rétention personnalisée. 
-    
-    Pour notre exemple de scénario, nous allons nommer cette balise « Alpine House 7 Year Permanently Delete ».
-
-2. ensuite, dans la page **Définir la façon dont la balise sera appliquée**, sélectionnez **Automatiquement à nouveau la boîte aux lettres entière (par défaut).**
-
-3. Dans la page **Définir les paramètres de rétention, renseignez les champs suivants** : 
-  
-   1. **Lorsque les éléments atteignent l’âge suivant (en jours)** Entrez la durée de la période de rétention. Pour ce scénario, les éléments seront purgés après 2555 jours (7 ans). 
-
-   2. Pour **l’action de rétention** , sélectionnez **Supprimer définitivement** pour vider les éléments de la boîte aux lettres à l’expiration de la période de rétention.
-
-4. Sélectionnez **Suivant**, puis passez en revue et soumettez pour créer le DPT de suppression personnalisé.
-
-Le nouveau DPT de suppression s’affiche dans la liste des balises de rétention.
-
 ### <a name="create-a-custom-retention-policy-tag-for-the-deleted-items-folder"></a>Créer une balise de stratégie de rétention personnalisée pour le dossier Éléments supprimés
   
-La dernière balise de rétention à créer est une balise de stratégie de rétention personnalisée (RPT) pour le dossier Éléments supprimés. Cette balise supprime les éléments du dossier Éléments supprimés après 5 ans et fournit une période de récupération pendant laquelle les utilisateurs peuvent utiliser l’outil Récupérer les éléments supprimés pour récupérer un élément.
+La deuxième balise de rétention à créer est une balise de stratégie de rétention personnalisée (RPT) pour le dossier Éléments supprimés. Cette balise supprime les éléments du dossier Éléments supprimés après 5 ans et fournit une période de récupération pendant laquelle les utilisateurs peuvent utiliser l’outil Récupérer les éléments supprimés pour récupérer un élément.
 
 1. De retour sur la page **Balises de rétention MRM** , sélectionnez **+ Nouvelle balise** et, dans la page **Nom de votre balise** , tapez un nom pour la nouvelle balise de rétention et une description facultative qui explique l’objectif de la balise de rétention personnalisée.
     
@@ -154,7 +131,7 @@ Le nouveau RPT s’affiche dans la liste des balises de rétention.
 
 ## <a name="step-3-create-a-new-retention-policy"></a>Étape 3 : Créer une stratégie de rétention
 
-Après avoir créé les balises de rétention personnalisées, l’étape suivante consiste à créer une stratégie de rétention et à ajouter les balises de rétention. Vous allez ajouter les trois balises de rétention personnalisées que vous avez créées à l’étape 2 et les balises intégrées mentionnées dans la première section. À l’étape 4, vous allez affecter cette nouvelle stratégie de rétention aux boîtes aux lettres utilisateur.
+Après avoir créé les balises de rétention personnalisées, l’étape suivante consiste à créer une stratégie de rétention et à ajouter les balises de rétention. Vous allez ajouter les deux balises de rétention personnalisées que vous avez créées à l’étape 2 et les balises intégrées mentionnées dans la première section. À l’étape 4, vous allez affecter cette nouvelle stratégie de rétention aux boîtes aux lettres utilisateur.
   
 1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez aux stratégies de **rétention** **MRM Exchange (héritée)** >  de gestion\> du cycle de vie des données.
 
@@ -166,17 +143,11 @@ Après avoir créé les balises de rétention personnalisées, l’étape suivan
     
     Une liste des balises de rétention de votre organisation s’affiche, qui inclut les balises personnalisées que vous avez créées à l’étape 2.
 
-5. Ajoutez les 9 balises de rétention décrites plus en détail dans la section [Plus d’informations](#more-information) :
+5. Ajoutez les 3 balises de rétention décrites plus en détail dans la section [Plus d’informations](#more-information) :
     
     - **Alpine House 3 Year Move to Archive** : balise de stratégie d’archivage personnalisée créée à l’étape 2 de ces instructions
-    - **Alpine House 7 Year Permanently Delete** - la balise de suppression personnalisée créée à l’étape 2 de ces instructions
     - **Alpine House Deleted Items 5 Years Delete and Allow Recovery** : balise personnalisée pour le dossier Éléments supprimés créé à l’étape 2 de ces instructions
-    - **Éléments récupérables 14 jours Passer à l’archive**
-    - **Email de courrier indésirable**
-    - **Suppression après 1 mois**
-    - **Suppression après 1 an**
-    - **Ne jamais supprimer**
-    - **Déplacement vers l’archive après 1 ans - Personnel**
+    - **Déplacement personnel d’une année vers l’archive** : balise intégrée préconfigurée
     
     Pour ajouter ces balises de rétention, sélectionnez-les, puis sélectionnez **Ajouter**.
 
@@ -277,16 +248,9 @@ Pour ce faire, utilisez Exchange Online PowerShell pour mettre à jour le plan d
     | Balise de rétention | Ce que fait cette balise | Intégré ou personnalisé ? | Type |
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Year Move to Archive  <br/> |Déplace les éléments âgés de 1 095 jours (3 ans) vers la boîte aux lettres d’archivage.  <br/> |Personnalisé (Voir [l’étape 2 : Créer de nouvelles balises de rétention pour les stratégies d’archivage et de suppression](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Balise de stratégie par défaut (archive) ; cette balise est automatiquement appliquée à l’ensemble de la boîte aux lettres.  <br/> |
-    |Alpine House 7 Year Permanently Delete  <br/> |Supprime définitivement les éléments de la boîte aux lettres primaire ou de la boîte aux lettres d’archivage lorsqu’ils ont 7 ans.  <br/> |Personnalisé (Voir [l’étape 2 : Créer de nouvelles balises de rétention pour les stratégies d’archivage et de suppression](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Balise de stratégie par défaut (suppression) ; cette balise est automatiquement appliquée à l’ensemble de la boîte aux lettres.  <br/> |
-    |Alpine House Deleted Items 5 Years Delete and Allow Recovery  <br/> |Supprime des éléments du dossier Éléments supprimés âgés de 5 ans. Les utilisateurs peuvent récupérer ces éléments pendant 14 jours après leur suppression.<sup>\*</sup> <br/> |Personnalisé (Voir [l’étape 2 : Créer de nouvelles balises de rétention pour les stratégies d’archivage et de suppression](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Balise de stratégie de rétention (éléments supprimés) ; cette balise est automatiquement appliquée aux éléments du dossier Éléments supprimés.  <br/> |
-    |Éléments récupérables 14 jours Passer à l’archive  <br/> |Déplace les éléments qui se sont retrouvés dans le dossier Éléments récupérables pendant 14 jours vers le dossier Éléments récupérables dans la boîte aux lettres d’archivage.  <br/> |Intégré  <br/> |Balise de stratégie de rétention (éléments récupérables) ; cette balise est automatiquement appliquée aux éléments du dossier Éléments récupérables.  <br/> |
-    |Email de courrier indésirable  <br/> |Supprime définitivement les éléments qui ont été dans le dossier Junk Email pendant 30 jours. Les utilisateurs peuvent récupérer ces éléments pendant 14 jours après leur suppression.<sup>\*</sup> <br/> |Intégré  <br/> |Balise de stratégie de rétention (Email indésirable) ; cette balise est automatiquement appliquée aux éléments du dossier Junk Email.  <br/> |
-    |Suppression après 1 mois  <br/> |Supprime définitivement les éléments qui datent de 30 jours. Les utilisateurs peuvent récupérer ces éléments pendant 14 jours après leur suppression.<sup>\*</sup> <br/> |Intégré  <br/> |Personnel; cette balise peut être appliquée par les utilisateurs.  <br/> |
-    |Suppression après 1 an  <br/> |Supprime définitivement les éléments qui datent de 365 jours. Les utilisateurs peuvent récupérer ces éléments pendant 14 jours après leur suppression.<sup>\*</sup> <br/> |Intégré  <br/> |Personnel; cette balise peut être appliquée par les utilisateurs.  <br/> |
-    |Ne jamais supprimer  <br/> |Cette balise empêche la suppression d’éléments par une stratégie de rétention.  <br/> |Intégré  <br/> |Personnel; cette balise peut être appliquée par les utilisateurs.   |
+    |Alpine House Deleted Items 5 Years Delete and Allow Recovery  <br/> |Supprime des éléments du dossier Éléments supprimés âgés de 5 ans. Les utilisateurs peuvent récupérer ces éléments pendant 14 jours après leur suppression. Pour plus d’informations, consultez l’entrée de liste suivante. <br/> |Personnalisé (Voir [l’étape 2 : Créer de nouvelles balises de rétention pour les stratégies d’archivage et de suppression](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Balise de stratégie de rétention (éléments supprimés) ; cette balise est automatiquement appliquée aux éléments du dossier Éléments supprimés.  <br/> |
     |Déplacement vers l’archive après 1 ans - Personnel  <br/> |Déplace les éléments vers la boîte aux lettres d’archivage après 1 an.  <br/> |Intégré  <br/> |Personnel; cette balise peut être appliquée par les utilisateurs.   |
-
-
-><sup>*</sup>Les utilisateurs peuvent utiliser l’outil Récupérer les éléments supprimés dans Outlook et Outlook sur le web (anciennement Outlook Web App) pour récupérer un élément supprimé au cours de la période de rétention des éléments supprimés, qui est par défaut de 14 jours dans Exchange Online. Un administrateur peut utiliser Exchange Online PowerShell pour augmenter la période de rétention des éléments supprimés à un maximum de 30 jours. Pour plus d’informations, consultez : [Récupérer les éléments supprimés dans Outlook pour Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) et [modifier la période de rétention des éléments supprimés pour une boîte aux lettres dans Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
+    
+    
+- Les utilisateurs peuvent utiliser l’outil Récupérer les éléments supprimés dans Outlook et Outlook sur le web (anciennement Outlook Web App) pour récupérer un élément supprimé au cours de la période de rétention des éléments supprimés, qui est par défaut de 14 jours dans Exchange Online. Un administrateur peut utiliser Exchange Online PowerShell pour augmenter la période de rétention des éléments supprimés à un maximum de 30 jours. Pour plus d’informations, consultez : [Récupérer les éléments supprimés dans Outlook pour Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) et [modifier la période de rétention des éléments supprimés pour une boîte aux lettres dans Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
-- L’utilisation de la balise de rétention **Déplacer vers archive des éléments récupérables 14 jours** permet de libérer de l’espace de stockage dans le dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur. Cela est utile lorsque la boîte aux lettres d’un utilisateur est mise en attente ou qu’une stratégie de rétention appliquée conserve les éléments. Les deux configurations empêchent la suppression définitive des e-mails de la boîte aux lettres de l’utilisateur. Sans déplacer des éléments vers la boîte aux lettres d’archivage, il est possible que le quota de stockage pour le dossier Éléments récupérables dans la boîte aux lettres primaire soit atteint. Pour plus d’informations sur ce scénario, consultez [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).

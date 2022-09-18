@@ -1,12 +1,11 @@
 ---
 title: Référence des règles de réduction de la surface d’attaque
 description: Répertorie des détails sur les règles de réduction de la surface d’attaque par règle.
-keywords: Règles de réduction de la surface d’attaque, ASR, règles asr, hanches, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploit, antiexploitation, règles d’exploitation, règles de prévention des infections, Pertahanan Microsoft untuk Titik Akhir, configurer des règles ASR, description des règles ASR
-ms.service: microsoft-365-security
-ms.subservice: mde
+keywords: Règles de réduction de la surface d’attaque, ASR, règles asr, hanches, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, antiexploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR, description des règles ASR
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -18,12 +17,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
 search.appverid: met150
-ms.openlocfilehash: ac22b5ef9cfe8efa3729059643872342990ff1b8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9ccc7d5d2a14d35f1aef9dc3b8b242bfd9a49c6a
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741936"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798734"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -86,7 +85,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 Les liens vers des informations sur les versions du système de gestion de la configuration référencées dans ce tableau sont répertoriés sous ce tableau.
 
-|Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |<sup>نهج المجموعة[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
+|Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |<sup>stratégie de groupe[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Bloquer l’abus de pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v  |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v |   |  | v  | v  |
@@ -118,7 +117,7 @@ Les notifications toast sont générées pour toutes les règles en mode bloc. L
 
 Pour les règles avec l'« état de règle » spécifié :
 
-- Les règles ASR avec \<ASR Rule, Rule State\> des combinaisons sont utilisées pour afficher des alertes (notifications toast) sur Pertahanan Microsoft untuk Titik Akhir uniquement pour les appareils au niveau du bloc cloud élevé. Les appareils qui n’ont pas un niveau de bloc cloud élevé ne génèrent pas d’alertes pour les combinaisons <règle ASR, état de règle>
+- Les règles ASR avec \<ASR Rule, Rule State\> des combinaisons sont utilisées pour afficher des alertes (notifications toast) sur Microsoft Defender pour point de terminaison uniquement pour les appareils au niveau du bloc cloud élevé. Les appareils qui n’ont pas un niveau de bloc cloud élevé ne génèrent pas d’alertes pour les combinaisons <règle ASR, état de règle>
 - Les alertes EDR sont générées pour les règles ASR dans les états spécifiés, mais uniquement pour les appareils au niveau de bloc cloud élevé.
 
 | Nom de la règle : | État de la règle : | Génère des alertes dans EDR ? <br> (Oui&nbsp;\|&nbsp;Non) | Génère des notifications toast ? <br> (Oui&nbsp;\|&nbsp;Non) |
@@ -198,7 +197,7 @@ La règle **bloquer l’abus de pilotes signés vulnérables exploités** n’em
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-Nom Intune : `Block abuse of exploited vulnerable signed drivers`
+nom Intune :`Block abuse of exploited vulnerable signed drivers`
 
 nom Configuration Manager : non encore disponible
   
@@ -219,7 +218,7 @@ Cette règle empêche les attaques en empêchant Adobe Reader de créer des proc
 
 Les programmes malveillants peuvent télécharger et lancer des charges utiles et sortir d’Adobe Reader par le biais de l’ingénierie sociale ou des exploits. En empêchant les processus enfants d’être générés par Adobe Reader, les programmes malveillants qui tentent d’utiliser Adobe Reader comme vecteur d’attaque ne peuvent pas se propager.
 
-Nom Intune : `Process creation from Adobe Reader (beta)`
+nom Intune :`Process creation from Adobe Reader (beta)`
 
 nom Configuration Manager : non encore disponible
 
@@ -238,7 +237,7 @@ Cette règle empêche les applications Office de créer des processus enfants. L
 
 La création de processus enfants malveillants est une stratégie de programmes malveillants courante. Les programmes malveillants qui abusent d’Office en tant que vecteur exécutent souvent des macros VBA et exploitent le code pour télécharger et tenter d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins bénignes; par exemple générer une invite de commandes ou utiliser PowerShell pour configurer les paramètres du Registre.
 
-Nom Intune : `Office apps launching child processes`
+nom Intune :`Office apps launching child processes`
 
 nom Configuration Manager :`Block Office application from creating child processes`
 
@@ -263,7 +262,7 @@ LSASS authentifie les utilisateurs qui se connectent sur un ordinateur Windows. 
 > [!IMPORTANT]
 > L’état par défaut de la règle de réduction de la surface d’attaque (ASR) « Bloquer le vol d’informations d’identification dans le sous-système d’autorité de sécurité locale Windows (lsass.exe) » passe de **Non configuré** à **Configuré** et le mode par défaut défini sur **Bloquer**. Toutes les autres règles ASR resteront dans leur état par défaut : **Non configuré.** Une logique de filtrage supplémentaire a déjà été incorporée dans la règle pour réduire les notifications de l’utilisateur final. Les clients peuvent configurer la règle pour **les modes Audit**, **Avertir** ou **Désactivé** , ce qui remplacera le mode par défaut. Les fonctionnalités de cette règle sont les mêmes, que la règle soit configurée en mode on-by-default ou si vous activez manuellement le mode Bloc.
 
-Nom Intune : `Flag credential stealing from the Windows local security authority subsystem`
+nom Intune :`Flag credential stealing from the Windows local security authority subsystem`
 
 nom Configuration Manager :`Block credential stealing from the Windows local security authority subsystem`
 
@@ -283,7 +282,7 @@ Cette règle empêche le lancement des types de fichiers suivants à partir de l
 - Fichiers exécutables (tels que .exe, .dll ou .scr)
 - Fichiers de script (tels qu’un fichier .ps1 PowerShell, Visual Basic .vbs ou JavaScript .js)
 
-Nom Intune : `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
+nom Intune :`Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
 Nom de Microsoft Endpoint Manager :`Block executable content from email client and webmail`
 
@@ -299,9 +298,9 @@ Dépendances : Antivirus Microsoft Defender
 > [!NOTE]
 > La règle **Bloquer le contenu exécutable du client de messagerie et de la messagerie web** contient les descriptions alternatives suivantes, en fonction de l’application que vous utilisez :
 >
-> - Intune (Profils de configuration) : exécution de contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de l’e-mail (webmail/client de messagerie) (aucune exception).
+> - Intune (profils de configuration) : exécution de contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de l’e-mail (webmail/client de messagerie) (aucune exception).
 > - Endpoint Manager : bloquer le téléchargement de contenu exécutable à partir de clients de messagerie et de messagerie web.
-> - نهج المجموعة : bloquer le contenu exécutable du client de messagerie et de la messagerie web.
+> - stratégie de groupe : bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée
 
@@ -314,7 +313,7 @@ Cette règle empêche le lancement de fichiers exécutables, tels que .exe, .dll
 >
 > Vous pouvez spécifier des fichiers ou des dossiers individuels (à l’aide de chemins d’accès aux dossiers ou de noms de ressources complets), mais vous ne pouvez pas spécifier à quelles règles ou exclusions s’appliquent.
 
-Nom Intune : `Executables that don't meet a prevalence, age, or trusted list criteria`
+nom Intune :`Executables that don't meet a prevalence, age, or trusted list criteria`
 
 nom Configuration Manager :`Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
@@ -339,7 +338,7 @@ L’obfuscation de script est une technique courante que les auteurs de programm
 > [!IMPORTANT]
 > En raison du nombre élevé de faux positifs, cette règle ne détecte pas actuellement les scripts PowerShell ; il s’agit d’une solution temporaire. La règle sera bientôt mise à jour et commence à redétection des scripts PowerShell.
 
-Nom Intune : `Obfuscated js/vbs/ps/macro code`
+nom Intune :`Obfuscated js/vbs/ps/macro code`
 
 nom Configuration Manager :`Block execution of potentially obfuscated scripts`
 
@@ -358,7 +357,7 @@ Cette règle empêche les scripts de lancer du contenu téléchargé potentielle
 
 Bien qu’elles ne soient pas courantes, les applications métier utilisent parfois des scripts pour télécharger et lancer des programmes d’installation.
 
-Nom Intune : `js/vbs executing payload downloaded from Internet (no exceptions)`
+nom Intune :`js/vbs executing payload downloaded from Internet (no exceptions)`
 
 nom Configuration Manager :`Block JavaScript or VBScript from launching downloaded executable content`
 
@@ -377,7 +376,7 @@ Cette règle empêche les applications Office, notamment Word, Excel et PowerPoi
 
 Les programmes malveillants qui abusent d’Office en tant que vecteur peuvent tenter de sortir d’Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et seraient conservés sur le système. Par conséquent, cette règle se défend contre une technique de persistance commune.
 
-Nom Intune : `Office apps/macros creating executable content`
+nom Intune :`Office apps/macros creating executable content`
 
 Nom SCCM : `Block Office applications from creating executable content`
 
@@ -400,7 +399,7 @@ Il n’existe aucun objectif commercial légitime connu pour l’utilisation de 
 
 Cette règle s’applique à Word, Excel et PowerPoint.
 
-Nom Intune : `Office apps injecting code into other processes (no exceptions)`
+nom Intune :`Office apps injecting code into other processes (no exceptions)`
 
 nom Configuration Manager :`Block Office applications from injecting code into other processes`
 
@@ -422,7 +421,7 @@ Cette règle protège contre les attaques d’ingénierie sociale et empêche l�
 > [!NOTE]
 > Cette règle bloque les conseils de stratégie DLP et les info-bulles dans Outlook. Cette règle s’applique uniquement à Outlook et Outlook.com.
 
-Nom Intune : `Process creation from Office communication products (beta)`
+nom Intune :`Process creation from Office communication products (beta)`
 
 nom Configuration Manager : Non disponible
 
@@ -444,7 +443,7 @@ Cette règle empêche les programmes malveillants d’utiliser WMI à mauvais es
 
 Les menaces sans fichier emploient diverses tactiques pour rester cachées, éviter d’être vues dans le système de fichiers et obtenir un contrôle d’exécution périodique. Certaines menaces peuvent utiliser à mauvais escient le dépôt WMI et le modèle d’événement pour rester cachées.
 
-Nom Intune : Non disponible
+nom Intune : Non disponible
 
 nom Configuration Manager : Non disponible
 
@@ -464,7 +463,7 @@ Cette règle empêche l’exécution des processus [créés via PsExec](/sysinte
 > [!WARNING]
 > Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution GPM. Cette règle est incompatible avec la gestion par le biais de [Microsoft Endpoint Configuration Manager](/configmgr), car cette règle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
-Nom Intune : `Process creation from PSExec and WMI commands`
+nom Intune :`Process creation from PSExec and WMI commands`
 
 nom Configuration Manager : non applicable
 
@@ -484,7 +483,7 @@ Avec cette règle, les administrateurs peuvent empêcher l’exécution de fichi
 > [!IMPORTANT]
 > Les fichiers copiés à partir de l’USB vers le lecteur de disque sont bloqués par cette règle si et quand il est sur le point d’être exécuté sur le lecteur de disque.
 
-Nom Intune : `Untrusted and unsigned processes that run from USB`
+nom Intune :`Untrusted and unsigned processes that run from USB`
 
 nom Configuration Manager :`Block untrusted and unsigned processes that run from USB`
 
@@ -510,7 +509,7 @@ Systèmes d’exploitation pris en charge :
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
-Nom Intune : `Win32 imports from Office macro code`
+nom Intune :`Win32 imports from Office macro code`
 
 nom Configuration Manager :`Block Win32 API calls from Office macros`
 
@@ -536,7 +535,7 @@ La règle tend à errer du côté de la prudence pour empêcher les ransomware.
 > [!NOTE]
 > Vous devez [activer la protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) pour utiliser cette règle.
 
-Nom Intune : `Advanced ransomware protection`
+nom Intune :`Advanced ransomware protection`
 
 nom Configuration Manager :`Use advanced protection against ransomware`
 

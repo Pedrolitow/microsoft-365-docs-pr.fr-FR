@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ff038a72cccf5b79432ef15aa8bd8b396e5fb991
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 55bb0d81199755dc92899a477ce165388704ffce
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688614"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799227"
 ---
 # <a name="create-and-manage-device-groups"></a>Créer et gérer des groupes d’appareils
 
@@ -79,7 +79,7 @@ Dans le cadre du processus de création d’un groupe d’appareils, vous allez 
 
 ## <a name="manage-device-groups"></a>Gérer les groupes d’appareils
 
-Vous pouvez promouvoir ou rétrograder le rang d’un groupe d’appareils afin qu’il reçoit une priorité supérieure ou inférieure lors de la correspondance. Lorsqu’un appareil est mis en correspondance avec plusieurs groupes, il est ajouté uniquement au groupe le mieux classé. Vous pouvez également modifier et supprimer des groupes.
+Vous pouvez promouvoir ou rétrograder le rang d’un groupe d’appareils afin qu’il reçoit une priorité supérieure ou inférieure lors de la correspondance. Un groupe d’appareils avec le rang 1 est le groupe le plus élevé. Lorsqu’un appareil est mis en correspondance avec plusieurs groupes, il est ajouté uniquement au groupe le mieux classé. Vous pouvez également modifier et supprimer des groupes.
 
 > [!WARNING]
 > La suppression d’un groupe d’appareils peut affecter les règles de notification par e-mail. Si un groupe d’appareils est configuré sous une règle de notification par e-mail, il est supprimé de cette règle. Si le groupe d’appareils est le seul groupe configuré pour une notification par e-mail, cette règle de notification par e-mail est supprimée avec le groupe d’appareils.

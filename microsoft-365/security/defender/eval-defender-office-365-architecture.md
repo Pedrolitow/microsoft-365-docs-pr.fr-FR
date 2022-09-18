@@ -23,12 +23,12 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.topic: conceptual
-ms.openlocfilehash: e23324a7d779e2dd59beda8270099f3514d57746
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 59486fdc30fa512f10126313076fc0be7ff257f5
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67567266"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796783"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Passer en revue les exigences d’architecture Microsoft Defender pour Office 365 et les concepts clés
 
@@ -61,14 +61,14 @@ L’intégration locale est courante, mais facultative. Si votre environnement e
 
 ## <a name="understand-key-concepts"></a>Comprendre les concepts clés
 
-Le tableau suivant a identifié des concepts clés qui sont importants à comprendre lors de l’évaluation, de la configuration et du déploiement de MDO.
+Le tableau suivant a identifié des concepts clés qui sont importants à comprendre lors de l’évaluation, de la configuration et du déploiement de Defender pour Office 365.
 
 |Concept|Description|Plus d’informations|
 |---|---|---|
-|Exchange Online Protection|Exchange Online Protection (EOP) est le service de filtrage basé sur le cloud qui permet de protéger votre organisation contre les courriers indésirables et les programmes malveillants. EOP est inclus dans toutes les licences Microsoft 365 qui incluent Exchange Online.|[Vue d’ensemble d’Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)|
-|Protection anti-programme malveillant|Les organisations avec des boîtes aux lettres dans EXO sont automatiquement protégées contre les programmes malveillants.|[Protection contre les programmes malveillants dans EOP](../office-365-security/anti-malware-protection.md)|
-|Protection anti-courrier indésirable|Les organisations avec des boîtes aux lettres dans EXO sont automatiquement protégées contre les stratégies de courrier indésirable et de courrier indésirable.|[Protection anti-courrier indésirable dans EOP](../office-365-security/anti-spam-protection.md)|
-|Protection anti-hameçonnage|MDO offre une protection anti-hameçonnage plus avancée liée au harponnage, à la chasse à la baleine, aux ransomwares et à d’autres activités malveillantes.|[Protection anti-hameçonnage supplémentaire dans Microsoft Defender pour Office 365](../office-365-security/anti-phishing-protection.md)|
+|Exchange Online Protection|Exchange Online Protection (EOP) est le service de filtrage basé sur le cloud qui permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants dans le courrier électronique. EOP est inclus dans toutes les licences Microsoft 365 qui incluent Exchange Online.|[Vue d’ensemble d’Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)|
+|Protection anti-programme malveillant|Les organisations avec des boîtes aux lettres dans Exchange Online sont automatiquement protégées contre les programmes malveillants.|[Protection contre les programmes malveillants dans EOP](../office-365-security/anti-malware-protection.md)|
+|Protection anti-courrier indésirable|Les organisations avec des boîtes aux lettres dans Exchange Online sont automatiquement protégées contre le courrier indésirable et le courrier indésirable.|[Protection anti-courrier indésirable dans EOP](../office-365-security/anti-spam-protection.md)|
+|Protection anti-hameçonnage|Defender pour Office 365 offre une protection anti-hameçonnage plus avancée liée au harponnage, à la chasse à la baleine, aux ransomwares et à d’autres activités malveillantes.|[Protection anti-hameçonnage supplémentaire dans Microsoft Defender pour Office 365](../office-365-security/anti-phishing-protection.md)|
 |Protection contre l’usurpation d’identité|EOP inclut des fonctionnalités pour protéger votre organisation contre les expéditeurs usurpés (falsifiés).|[Protection contre l’usurpation d’identité dans EOP](../office-365-security/anti-spoofing-protection.md)|
 |Pièces jointes fiables|Les pièces jointes sécurisées fournissent une couche supplémentaire de protection en utilisant un environnement virtuel pour vérifier et « détoner » les pièces jointes dans les messages électroniques avant qu’elles ne soient remises.|[Pièces jointes sécurisées dans Microsoft Defender pour Office 365](../office-365-security/safe-attachments.md)|
 |Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams|En outre, les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams offrent une couche supplémentaire de protection pour les fichiers qui ont été chargés dans des référentiels de stockage cloud.|[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)|
@@ -78,7 +78,7 @@ Pour plus d’informations sur les fonctionnalités incluses dans Microsoft Defe
 
 ## <a name="review-architecture-requirements"></a>Passer en revue les exigences en matière d’architecture
 
-Un pilote d’évaluation ou de production MDO réussi suppose les prérequis suivants :
+Un pilote d’évaluation ou de production Defender pour Office 365 réussi suppose les prérequis suivants :
 
 - Toutes vos boîtes aux lettres de destinataire sont actuellement en Exchange Online.
 - Votre enregistrement MX public est résolu directement en EOP ou en passerelle SMTP tierce qui relaie ensuite directement les e-mails externes entrants à EOP.

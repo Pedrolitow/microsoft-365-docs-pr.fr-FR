@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 39f563bb32e1c388501208cfc1eb329372a29b5c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0a859003a0f66f3a7259ab4e9cacf7692ce07670
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686986"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796761"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Gérer Microsoft Defender pour point de terminaison avec PowerShell, WMI et MPCmdRun.exe
 
@@ -86,5 +86,4 @@ Vous pouvez également configurer si et quelles fonctionnalités les utilisateur
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Obtenir une vue d’ensemble de La gestion des vulnérabilités defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visitez le tableau de bord des opérations de sécurité Centre de sécurité Microsoft Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Gérer Microsoft Defender pour point de terminaison avec Intune](manage-mde-post-migration-intune.md)

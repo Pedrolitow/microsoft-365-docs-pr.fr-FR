@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6b8529338522df41c25dafb30d25b879a5790861
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 1efbbd350a229fddbcdd70c99efc39f7a8cf9d31
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709393"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797931"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils dans la liste des appareils Microsoft Defender pour point de terminaison
 
@@ -42,7 +42,6 @@ Vous pouvez cliquer sur les appareils affectés chaque fois que vous les voyez d
 
 - [Liste des appareils](investigate-machines.md)
 - [File d’attente des alertes](alerts-queue.md)
-- [Tableau de bord des opérations de sécurité](security-operations-dashboard.md)
 - Toute alerte individuelle
 - Affichage des détails des fichiers individuels
 - Toute vue d’adresse IP ou de détails de domaine

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 68cdc07ea2396910acdf3d86201db4b72f17f380
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: acd80978831668890f1767b172cbbfb4d7e91403
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688519"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797953"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes Microsoft Defender pour point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "67688519"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Defender pour point de terminaison vous avertit des événements malveillants, des attributs et des informations contextuelles possibles par le biais d’alertes. Un résumé des nouvelles alertes s’affiche dans le **tableau de bord Des opérations de sécurité** et vous pouvez accéder à toutes les alertes de la **file d’attente d’alertes**.
+Defender pour point de terminaison vous avertit des événements malveillants, des attributs et des informations contextuelles possibles par le biais d’alertes. Un récapitulatif des nouvelles alertes s’affiche et vous pouvez accéder à toutes les alertes dans la **file d’attente d’alertes**.
 
 Vous pouvez gérer les alertes en sélectionnant une alerte dans la **file d’attente Alertes** ou l’onglet **Alertes** de la page Appareil pour un appareil individuel.
 
