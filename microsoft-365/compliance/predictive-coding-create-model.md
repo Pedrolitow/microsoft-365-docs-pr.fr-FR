@@ -2,8 +2,8 @@
 title: Créer un modèle de codage prédictif dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment créer un modèle de codage prédictif dans eDiscovery (Premium). Il s’agit de la première étape de l’utilisation des fonctionnalités de Machine Learning dans eDiscovery (Premium) pour vous aider à identifier le contenu pertinent et non pertinent dans un ensemble de révisions.
-ms.openlocfilehash: 1105ff05d323ded2297a92d7b12b44a78c35b11f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 12f03dc2b305592cd2082dd36bfe8260a8a30982
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635740"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820126"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Créer un modèle de codage prédictif (préversion)
 

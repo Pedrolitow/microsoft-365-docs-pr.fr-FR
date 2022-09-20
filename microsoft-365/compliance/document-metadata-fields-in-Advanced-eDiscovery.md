@@ -2,8 +2,8 @@
 title: Les champs de métadonnées des documents dans la découverte électronique
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées des documents dans un ensemble de révisions dans un cas dans Microsoft Purview eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: a6fc8479d3ecd2b89c0331220fb7f88f46bda1e4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6d882a7612046ad843b0c942e40ec7b9f8684120
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629748"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821778"
 ---
 # <a name="document-metadata-fields-in-ediscovery-premium"></a>Les champs de métadonnées des documents dans la découverte électronique
 
@@ -51,7 +51,7 @@ Le tableau suivant répertorie les champs de métadonnées des documents dans un
 |Cc|Cc|Email_cc|Champ Cc pour les types de messages. Format **DisplayName \<SMTPAddress\>**.|
 |Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](retention.md) appliquées au contenu dans Office 365.|
 |Chemin d’accès composé|CompoundPath|Compound_path|Chemin lisible par l’homme qui décrit la source de l’élément.|
-|Contenu*|Content||Texte extrait de l’élément.|
+|Contenu*|Contenu||Texte extrait de l’élément.|
 |Corps de la conversation|ConversationBody||Corps de conversation de l’élément.|
 |Conversation ID|ConversationId|Conversation_ID|ID de conversation du message. Pour les conversations teams 1:1 et de groupe, tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même ID de conversation. Pour plus d’informations, consultez le [flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |ID de la famille de conversations|ConversationFamilyID|ConversationFamilyID|ID qui identifie les éléments individuels d’une conversation ainsi que les éléments connexes de la conversation.|
@@ -66,7 +66,7 @@ Le tableau suivant répertorie les champs de métadonnées des documents dans un
 |Titre de l’annonce Teams|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Titre d’une [annonce teams](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Chemin d’accès du fichier d’exportation converti. Pour l’utilisation interne de Microsoft uniquement.|
 |Consignataire|Consignataire|Consignataire|Nom du consignateur à lequel l’élément a été associé.|
-|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>**E-mail** : date d’envoi<br>**Pièces jointes par e-mail** : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>**Documents incorporés** : date de dernière modification du document ; s’il n’est pas disponible, date de la dernière modification du parent<br>**Documents SPO (y compris les pièces jointes modernes)** : date de la dernière modification du document ; s’il n’est pas disponible, date de dernière modification de SharePoint<br>**Documents non Office 365** : date de dernière modification<br>**Réunions** : date de début de la réunion<br>**Messagerie vocale** : date d’envoi<br>**MESSAGE INSTANTANÉ** : Date d’envoi<br>**Teams** : date d’envoi|
+|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>**Email** : date d’envoi<br>**Email pièces jointes** : Date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>**Documents incorporés** : date de dernière modification du document ; s’il n’est pas disponible, date de la dernière modification du parent<br>**Documents SPO (y compris les pièces jointes modernes)** : date de la dernière modification du document ; s’il n’est pas disponible, date de dernière modification de SharePoint<br>**Documents non Office 365** : date de dernière modification<br>**Réunions** : date de début de la réunion<br>**Messagerie vocale** : date d’envoi<br>**MESSAGE INSTANTANÉ** : Date d’envoi<br>**Teams** : date d’envoi|
 |Commentaires sur le document|DocComments|Doc_comments|Commentaires des métadonnées du document.|
 |Entreprise de documents||Doc_company|Société à partir des métadonnées du document.|
 |Date de création du document|CreatedTime|Doc_date_created|Créez la date à partir des métadonnées du document.|
@@ -80,16 +80,16 @@ Le tableau suivant répertorie les champs de métadonnées des documents dans un
 |Thème dominant|DominantTheme|Dominant_theme|Thème dominant tel qu’il est calculé pour l’analytique.|
 |Sous-ensemble dupliqué||Duplicate_subset|ID de groupe pour les doublons exacts.|
 |EmailAction*||Email_action|Les valeurs sont **None**, **Reply** ou **Forward** ; en fonction de la ligne d’objet d’un message.|
-|Reçu de remise par e-mail demandé||Email_delivery_receipt|Adresse e-mail fournie dans les en-têtes Internet pour le reçu de remise.|
+|Email reçu de remise demandé||Email_delivery_receipt|Email adresse fournie dans les en-têtes Internet pour le reçu de remise.|
 |Importance|EmailImportance|Email_importance|Importance du message : **0** - Faible ; **1** - Normal; **2** - Élevé|
 |Erreurs de traitement ignorées|ErrorIgnored|Error_Ignored|L’erreur a été ignorée et non corrigée.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Ensemble complet d’en-têtes d’e-mail à partir de l’e-mail|
 |EmailLevel*||Email_level|Indique le niveau d’un message dans le thread de messagerie auquel il appartient ; les pièces jointes héritent de la valeur de son message parent.|
-|ID de message électronique||Email_message_ID|ID de message Internet du message.|
-|EmailReadReceiptRequested||Email_read_receipt|Adresse e-mail fournie dans les en-têtes Internet pour confirmation de lecture.|
-|Sécurité des e-mails|EmailSecurity|Email_security|Paramètre de sécurité du message : **0** - Aucun ; **1** - Signé; **2** - Chiffré ; **3** - Chiffré et signé.|
-|Confidentialité de l’e-mail|EmailSensitivity|email_sensitivity|Paramètre de confidentialité du message : **0** - Aucun ; **1** Personnel; **2** - Privé; **3** - CompanyConfidential.|
-|Ensemble de courriers électroniques|EmailSet|Email_set|ID de groupe pour tous les messages du même ensemble de courriers électroniques.|
+|ID de message Email||Email_message_ID|ID de message Internet du message.|
+|EmailReadReceiptRequested||Email_read_receipt|Email adresse fournie dans les en-têtes Internet pour la confirmation de lecture.|
+|sécurité Email|EmailSecurity|Email_security|Paramètre de sécurité du message : **0** - Aucun ; **1** - Signé; **2** - Chiffré ; **3** - Chiffré et signé.|
+|sensibilité Email|EmailSensitivity|email_sensitivity|Paramètre de confidentialité du message : **0** - Aucun ; **1** Personnel; **2** - Privé; **3** - CompanyConfidential.|
+|ensemble de Email|EmailSet|Email_set|ID de groupe pour tous les messages du même ensemble de courriers électroniques.|
 |EmailThread*||Email_thread|Position du message dans l’ensemble d’e-mails ; se compose d’ID de nœud de la racine au message actuel et sont séparés par des points (.).|
 |||Export_native_path|Chemin d’accès du fichier exporté.|
 |Type de contenu extrait||Native_type|Type de contenu extrait, sous forme de type mime ; par exemple, **image/jpeg**|
@@ -98,7 +98,7 @@ Le tableau suivant répertorie les champs de métadonnées des documents dans un
 |FamilyDuplicateSet*||Family_duplicate_set|Identificateur numérique pour les familles qui sont des doublons exacts les uns des autres (même contenu et toutes les mêmes pièces jointes).|
 |ID de famille|FamilyId|Family_ID|Regroupe les pièces jointes et les éléments extraits de l’e-mail et des conversations avec son élément parent. Cela inclut la conversation ou l’e-mail, ainsi que toutes les pièces jointes et éléments extraits.|
 |Taille de la famille||Family_size|Nombre de documents dans la famille.|
-|Classe de fichier|FileClass|File_class|Pour le contenu de SharePoint et OneDrive : **Document**. <br>Pour le contenu d’Exchange : **e-mail** ou **pièce jointe**. <br>Pour le contenu de Teams ou Yammer : **Conversations**.|
+|Classe de fichier|FileClass|File_class|Pour le contenu de SharePoint et OneDrive : **Document**. <br>Pour le contenu d’Exchange : **Email** ou **pièce jointe**. <br>Pour le contenu de Teams ou Yammer : **Conversations**.|
 |ID de fichier|FileId|File_ID|Identificateur de document unique dans le cas.|
 |Date de création du système de fichiers||File_system_date_created|Date de création à partir du système de fichiers (s’applique uniquement aux données non Office 365).|
 |Date de modification du système de fichiers||File_system_date_modified|Date de modification du système de fichiers (s’applique uniquement aux données non Office 365).|

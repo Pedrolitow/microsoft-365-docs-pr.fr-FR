@@ -2,8 +2,8 @@
 title: Créer une conservation pour litige
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/20/2022
 audience: Admin
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 4a1c7992952e10939aaa1029888455bb05fc4986
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 3210d85bfde39ac2d67d5f20a5170da950d25e91
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918043"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826157"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une conservation pour litige
 

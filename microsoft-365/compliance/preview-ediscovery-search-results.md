@@ -2,8 +2,8 @@
 title: Afficher un aperçu des résultats d’une recherche de découverte électronique
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Afficher l’aperçu d’un exemple de résultats renvoyés par une recherche de contenu ou une recherche eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: f369148c6f898c4150d0c86f898640f71ab367a0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: ebb0a03f9158f868d2dce0f29c246f78126e1721
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628592"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822526"
 ---
 # <a name="preview-ediscovery-search-results"></a>Afficher un aperçu des résultats de la recherche de découverte électronique
 

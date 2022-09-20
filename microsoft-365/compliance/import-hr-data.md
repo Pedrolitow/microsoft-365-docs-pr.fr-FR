@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour importer des données RH
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’employés à partir du système de ressources humaines de leur organisation vers Microsoft 365. Cela vous permet d’utiliser les données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de poser une menace interne à votre organisation.
-ms.openlocfilehash: 6dd788b1e10648a1102294eb641188416e455c20
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8ba4b7df9125a9eb85806ebe7052d3556c6203d8
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629616"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820302"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -240,7 +240,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ### <a name="adding-the-hrscenario-column-to-a-csv-file-that-contains-a-single-data-type"></a>Ajout de la colonne HRScenario à un fichier CSV qui contient un seul type de données
 
-En fonction des systèmes RH de votre organisation et de la façon dont vous exporterez des données RH vers un fichier CSV, vous devrez peut-être créer plusieurs fichiers CSV qui contiennent un seul type de données RH. Dans ce cas, vous pouvez toujours créer un seul connecteur RH pour importer des données à partir de différents fichiers CSV. Pour ce faire, vous devez simplement ajouter une colonne HRScenario au fichier CSV et spécifier le type de données RH. Vous pouvez ensuite exécuter le script pour chaque fichier CSV, mais utiliser le même ID de travail pour le connecteur. Voir [l’étape 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
+En fonction des systèmes RH de votre organisation et de la façon dont vous exporterez des données RH vers un fichier CSV, vous devrez peut-être créer plusieurs fichiers CSV qui contiennent un seul type de données RH. Dans ce cas, vous pouvez toujours créer un seul connecteur RH pour importer des données à partir de différents fichiers CSV. Pour ce faire, vous devez simplement ajouter une colonne HRScenario au fichier CSV et spécifier le type de données RH. Vous pouvez ensuite exécuter le script pour chaque fichier CSV, mais utiliser le même ID de travail pour le connecteur. Voir [l'étape 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2 : Créer une application dans Azure Active Directory
 

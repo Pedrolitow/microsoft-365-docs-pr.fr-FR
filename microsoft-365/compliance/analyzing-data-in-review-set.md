@@ -2,8 +2,8 @@
 title: Analyser les données d’un ensemble de révisions dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez les outils disponibles pour organiser les ensembles de documents lors de l’analyse d’un cas Microsoft Purview eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 822c21c05b865bdf1208f7679eaff9ea35b10a9e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f5d88420c208caeec42ca44426b8b94f1dddcab0
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634828"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826355"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>Analyser les données d’un ensemble de révisions dans eDiscovery (Premium)
 
@@ -64,15 +64,15 @@ Voici la syntaxe de la requête de filtre **For Review** :
 
 La liste suivante décrit le résultat de la requête de filtre en termes de contenu affiché après l’avoir appliqué au jeu de révision.
 
-- **E-mail**. Affiche les éléments marqués comme **Inclusive** ou **InclusiveMinus**. Un élément inclusif est le dernier message d’un thread de messagerie. Il contient tout le contenu précédent dans le thread d’e-mail. Inclus moins qu’il contient une ou plusieurs pièces jointes associées au message spécifique dans le thread d’e-mail. Un réviseur peut utiliser la valeur inclusive moins pour déterminer quels messages spécifiques du thread de messagerie ont des pièces jointes associées.
+- **Email**. Affiche les éléments marqués comme **Inclusive** ou **InclusiveMinus**. Un élément inclusif est le dernier message d’un thread de messagerie. Il contient tout le contenu précédent dans le thread d’e-mail. Inclus moins qu’il contient une ou plusieurs pièces jointes associées au message spécifique dans le thread d’e-mail. Un réviseur peut utiliser la valeur inclusive moins pour déterminer quels messages spécifiques du thread de messagerie ont des pièces jointes associées.
 
-- **Pièces jointes**. Filtre les pièces jointes en double dans le même jeu de courriers électroniques. Seules les pièces jointes uniques dans un thread de messagerie sont affichées.
+- **Pièces jointes**. Filtre les pièces jointes en double dans le même ensemble de Email. Seules les pièces jointes uniques dans un thread de messagerie sont affichées.
 
 - **Documents et autres**. Filtre les documents en double. Seuls les documents qui sont uniques dans l’ensemble de révisions sont affichés.
 
 - **Conversations Teams**. Toutes les conversations Teams (et Yammer) dans le jeu de révision sont affichées.
 
-Pour plus d’informations sur les types inclusifs et l’unicité des documents, consultez [threading e-mail dans eDiscovery (Premium).](email-threading-in-advanced-ediscovery.md)
+Pour plus d’informations sur les types inclusifs et l’unicité des documents, consultez [Email threading dans eDiscovery (Premium).](email-threading-in-advanced-ediscovery.md)
 
 > [!NOTE]
 > Pendant la préversion publique [du nouveau format de cas](advanced-ediscovery-new-case-format.md) dans eDiscovery (Premium), la requête de filtre **For Review** n’a pas renvoyé les conversations Teams ou Yammer pour les jeux de révision (dans les cas qui utilisent le format de cas volumineux) créés avant le 4 novembre 2021. Ce problème a été résolu. Cela signifie que si vous réappliquez la requête **For Review** à un ensemble de révisions dans un cas qui utilise le format de cas volumineux, d’autres éléments correspondant à la requête de filtre peuvent être affichés, car toutes les conversations Teams ou Yammer sont incluses.

@@ -2,8 +2,8 @@
 title: Utiliser l’envoi de lecteurs pour importer des fichiers PST
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Administration pouvez apprendre à importer en bloc des fichiers PST dans des boîtes aux lettres Microsoft 365 en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: a81755b4c36664f215387cfa11b149af03e307b3
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: e7b740e7eed2d50e426de75f94c624e6af3d0bcd
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67335779"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826421"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’envoi de lecteurs pour importer des fichiers PST
 

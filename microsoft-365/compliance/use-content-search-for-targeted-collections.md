@@ -2,8 +2,8 @@
 title: Utiliser la recherche de contenu pour les collections ciblées
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Utilisez la recherche de contenu dans le portail de conformité Microsoft Purview pour effectuer une collection ciblée, qui recherche des éléments dans une boîte aux lettres ou un dossier de site spécifique.
-ms.openlocfilehash: ab4fda56e3ccbd04ac8b7b820c4305e9c6e45093
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0960eb35182370bbf6ae51728a37822342cfb63d
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623670"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826618"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Utiliser la recherche de contenu pour les collections ciblées
 
@@ -57,7 +57,7 @@ L’outil de recherche de contenu dans le portail de conformité Microsoft Purvi
 
 Le script que vous exécutez dans cette première étape retourne une liste de dossiers de boîte aux lettres ou de dossiers SharePoint et OneDrive Entreprise, ainsi que l’ID de dossier ou le chemin correspondant pour chaque dossier. Lorsque vous exécutez ce script, il vous invite à fournir les informations suivantes.
 
-- **Adresse e-mail ou URL du site** : tapez une adresse e-mail du consignateur pour renvoyer une liste de dossiers et d’ID de dossier de boîte aux lettres Exchange. Ou tapez l’URL d’un site SharePoint ou d’un site OneDrive Entreprise pour retourner une liste de chemins d’accès pour le site spécifié. Voici quelques exemples :
+- **Email adresse ou URL de site** : tapez une adresse e-mail du consignateur pour renvoyer une liste de dossiers de boîte aux lettres Exchange et d’ID de dossier. Ou tapez l’URL d’un site SharePoint ou d’un site OneDrive Entreprise pour retourner une liste de chemins d’accès pour le site spécifié. Voici quelques exemples :
 
   - **Exchange** : `stacig@contoso.onmicrosoft.com`
 

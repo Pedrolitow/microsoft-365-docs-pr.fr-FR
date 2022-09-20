@@ -2,8 +2,8 @@
 title: Limites dans le cas eDiscovery (Standard)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article décrit les limites du cas eDiscovery (Standard) dans Microsoft 365.
-ms.openlocfilehash: fe564bfb26bf586ba6ff6567dae057ecb1065296
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3bab813811277c516357066e3878283024e8dfa9
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634134"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825651"
 ---
 # <a name="limits-in-ediscovery-standard"></a>Limites dans eDiscovery (Standard)
 

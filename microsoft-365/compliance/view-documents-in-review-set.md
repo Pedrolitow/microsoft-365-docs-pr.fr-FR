@@ -2,8 +2,8 @@
 title: Afficher les documents dans un ensemble de révisions dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Choisissez la façon dont vous affichez du contenu dans eDiscovery (Premium), par exemple du texte, de l’annotation, de la conversion ou de l’affichage natif.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c5373734b0442d872f5c98ce40876c7be8d95990
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 025c5a89432cec4bf12c8b651f6c355417334157
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627016"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826596"
 ---
 # <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>Afficher les documents dans un ensemble de révisions dans eDiscovery (Premium)
 

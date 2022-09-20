@@ -2,8 +2,8 @@
 title: Recherche et suppression de messages électroniques dans votre organisation
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de vidage dans le portail de conformité Microsoft Purview pour rechercher et supprimer un message électronique de toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: d6ff40dd5c74330bdcaeeb304c42665469003174
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 415b35b0ce2109f177fe09bba82c107f49e0cf8f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628526"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819994"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 

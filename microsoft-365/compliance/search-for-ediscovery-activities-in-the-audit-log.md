@@ -2,8 +2,8 @@
 title: Rechercher des activités eDiscovery dans le journal d’audit
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/10/2022
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Découvrez les événements consignés lorsque les utilisateurs auxquels des autorisations eDiscovery sont attribuées effectuent des tâches de recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium) dans le portail de conformité Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 416cc91a0eb1c97f43c5d279cd47b68c115c3b71
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2dd95b92e7cca5b2abd8c31971eff4c1af7343cf
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639355"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825321"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Rechercher des activités eDiscovery dans le journal d’audit
 
@@ -85,9 +85,9 @@ Le tableau suivant décrit les activités de recherche de contenu et eDiscovery 
 |Modification de l’appartenance au cas eDiscovery  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |La liste d’appartenances d’un cas eDiscovery a été modifiée. Cette activité est journalisée lorsque tous les membres sont remplacés par un groupe de nouveaux utilisateurs. Si un seul membre est ajouté ou supprimé, l’opération CaseMemberAdded ou CaseMemberRemoved est journalisée.  <br/> |
 |Filtre d’autorisations de recherche modifié  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |Un filtre d’autorisations de recherche a été modifié.  <br/> |
 |Requête de recherche modifiée pour la conservation de cas eDiscovery  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |Une conservation basée sur une requête associée à un cas eDiscovery a été modifiée. Les modifications possibles incluent la modification de la plage de requêtes ou de dates pour une conservation basée sur une requête.  <br/> |
-|Élément d’aperçu de la recherche de contenu téléchargé  <br/> |PreviewItemDownloaded  <br/> |N/A  <br/> |Un utilisateur a téléchargé un élément sur son ordinateur local (en cliquant sur le lien **Télécharger l’élément d’origine** ) lors de l’aperçu des résultats de la recherche.  <br/> |
-|Élément d’aperçu de la recherche de contenu répertorié  <br/> |PreviewItemListed  <br/> |N/A  <br/> |Un utilisateur a cliqué sur Aperçu des **résultats de la recherche** pour afficher la page des résultats de la recherche en préversion, qui répertorie jusqu’à 1 000 éléments des résultats d’une recherche.  <br/> |
-|Élément d’aperçu de la recherche de contenu affiché  <br/> |PreviewItemRendered  <br/> |N/A  <br/> |Un gestionnaire eDiscovery a affiché un élément en cliquant dessus lors de l’aperçu des résultats de la recherche.  <br/> |
+|Élément d’aperçu de la recherche de contenu téléchargé  <br/> |PreviewItemDownloaded  <br/> |S/O  <br/> |Un utilisateur a téléchargé un élément sur son ordinateur local (en cliquant sur le lien **Télécharger l’élément d’origine** ) lors de l’aperçu des résultats de la recherche.  <br/> |
+|Élément d’aperçu de la recherche de contenu répertorié  <br/> |PreviewItemListed  <br/> |S/O  <br/> |Un utilisateur a cliqué sur Aperçu des **résultats de la recherche** pour afficher la page des résultats de la recherche en préversion, qui répertorie jusqu’à 1 000 éléments des résultats d’une recherche.  <br/> |
+|Élément d’aperçu de la recherche de contenu affiché  <br/> |PreviewItemRendered  <br/> |S/O  <br/> |Un gestionnaire eDiscovery a affiché un élément en cliquant dessus lors de l’aperçu des résultats de la recherche.  <br/> |
 |Recherche de contenu créée  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Une recherche de contenu a été créée.  <br/> |
 |Administrateur eDiscovery créé  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |Un utilisateur a été ajouté en tant qu’administrateur eDiscovery dans l’organisation.  <br/> |
 |Cas eDiscovery créé  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |Un cas eDiscovery a été créé. Lorsqu’un cas est créé, vous n’avez qu’à lui donner un nom. D’autres tâches liées à la casse, telles que l’ajout de membres, la création de conservations et la création de recherches de contenu associées au cas, entraînent la journalisation d’événements supplémentaires.  <br/> |
@@ -98,8 +98,8 @@ Le tableau suivant décrit les activités de recherche de contenu et eDiscovery 
 |Cas eDiscovery supprimé  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Un cas eDiscovery a été supprimé. Toute conservation associée au cas doit être supprimée avant que le cas puisse être supprimé.  <br/> |
 |Filtre d’autorisations de recherche supprimé  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Un filtre d’autorisations de recherche a été supprimé.  <br/> |
 |Requête de recherche supprimée pour la conservation de cas eDiscovery  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Une conservation basée sur une requête associée à un cas eDiscovery a été supprimée. La suppression de la requête de la conservation est souvent le résultat de la suppression d’une conservation. Lorsqu’une conservation ou une requête de conservation est supprimée, les emplacements de contenu qui étaient en attente sont libérés.  <br/> |
-|Exportation téléchargée de la recherche de contenu  <br/> |SearchExportDownloaded  <br/> |N/A  <br/> |Un utilisateur a téléchargé les résultats d’une recherche de contenu sur son ordinateur local. Une **exportation démarrée de l’activité de recherche de contenu** doit être lancée avant que les résultats de la recherche puissent être téléchargés.  <br/> |
-|Résultats préliminaires de la recherche de contenu  <br/> |SearchPreviewed  <br/> |N/A  <br/> |Un utilisateur a aperçu les résultats d’une recherche de contenu.  <br/> |
+|Exportation téléchargée de la recherche de contenu  <br/> |SearchExportDownloaded  <br/> |S/O  <br/> |Un utilisateur a téléchargé les résultats d’une recherche de contenu sur son ordinateur local. Une **exportation démarrée de l’activité de recherche de contenu** doit être lancée avant que les résultats de la recherche puissent être téléchargés.  <br/> |
+|Résultats préliminaires de la recherche de contenu  <br/> |SearchPreviewed  <br/> |S/O  <br/> |Un utilisateur a aperçu les résultats d’une recherche de contenu.  <br/> |
 |Résultats purgés de la recherche de contenu  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur a purgé les résultats d’une recherche de contenu en exécutant la commande **New-ComplianceSearchAction -Purge** .  <br/> |
 |Suppression de l’analyse de la recherche de contenu  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Une action de préparation de la recherche de contenu (pour préparer les résultats de la recherche pour eDiscovery (Premium)) a été supprimée. Si l’action de préparation date de moins de deux semaines, les résultats de recherche préparés pour eDiscovery (Premium) ont été supprimés de la zone de stockage Microsoft Azure. Si l’action de préparation était antérieure à 2 semaines, cet événement indique que seule l’action de préparation correspondante a été supprimée.  <br/> |
 |Suppression de l’exportation de la recherche de contenu  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Une action d’exportation de recherche de contenu a été supprimée. Si l’action d’exportation date de moins de deux semaines, les résultats de recherche qui ont été chargés dans la zone de stockage Microsoft Azure ont été supprimés. Si l’action d’exportation était antérieure à 2 semaines, cet événement indique que seule l’action d’exportation correspondante a été supprimée.  <br/> |
@@ -209,7 +209,7 @@ Le tableau suivant décrit les propriétés incluses dans la page de menu volant
 |ExchangeLocations  <br/> |La Exchange Online boîtes aux lettres incluses dans une recherche de contenu ou mises en attente dans un cas eDiscovery.  <br/> |
 |Exclusions  <br/> |Boîtes aux lettres ou emplacements de site exclus d’une recherche de contenu ou d’une conservation dans un cas eDiscovery.  <br/> |
 |ExtendedProperties  <br/> |Propriétés supplémentaires d’une recherche de contenu, d’une action de recherche de contenu ou d’une conservation dans un cas eDiscovery, tels que le GUID de l’objet et les paramètres d’applet de commande et d’applet de commande correspondants qui ont été utilisés lors de l’activité.  <br/> |
-|Id  <br/> |ID de l’entrée de rapport. L’ID identifie de façon unique l’entrée du journal d’audit.  <br/> |
+|ID  <br/> |ID de l’entrée de rapport. L’ID identifie de façon unique l’entrée du journal d’audit.  <br/> |
 |NonPIIParameters  <br/> |Liste des paramètres (sans aucune valeur) qui ont été utilisés avec l’applet de commande identifiée dans la propriété Operation. Les paramètres répertoriés dans cette propriété sont les mêmes que ceux répertoriés dans la propriété Parameters.  <br/> |
 |ObjectId  <br/> |GUID ou nom de l’objet (par exemple, une recherche de contenu ou un cas eDiscovery (Standard) qui a été créé, accédé, modifié ou supprimé par l’activité répertoriée dans la propriété Operation. Cet objet est également identifié dans la colonne Item dans les résultats de recherche du journal d’audit.  <br/> |
 |ObjectType  <br/> |Type d’objet eDiscovery que l’utilisateur a créé, supprimé ou modifié ; par exemple, une action de recherche de contenu (préversion, exportation ou vidage), un cas eDiscovery ou une recherche de contenu.  <br/> |

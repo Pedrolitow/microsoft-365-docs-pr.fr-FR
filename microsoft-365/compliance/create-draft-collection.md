@@ -2,8 +2,8 @@
 title: Créer une collection au brouillon
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un brouillon de collection est une recherche eDiscovery de sources de données custodiales et non-custodiales dans un cas eDiscovery (Premium) qui retourne une estimation de recherche qui correspond à la requête de recherche de la collection. Vous pouvez passer en revue les statistiques de recherche, afficher un aperçu d’un échantillon d’éléments, et réviser et réexécuter la collection avant de valider les résultats dans un ensemble de révisions.
-ms.openlocfilehash: 979573503e448a731c487018b525d6ddb1d7d08f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7946f494e1051d8a3827d75c9469db790e555ea3
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630166"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826487"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>Créer un brouillon de collection dans eDiscovery (Premium)
 

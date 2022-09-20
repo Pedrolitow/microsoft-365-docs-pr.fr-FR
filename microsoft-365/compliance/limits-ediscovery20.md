@@ -2,8 +2,8 @@
 title: Limites eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: ed00c6e508ce293a0327441c978928310157d996
-ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
+ms.openlocfilehash: e751e7c2bd688132147d8f0a69b969c4c9ed9465
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67357541"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825607"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limites dans eDiscovery (Premium)
 

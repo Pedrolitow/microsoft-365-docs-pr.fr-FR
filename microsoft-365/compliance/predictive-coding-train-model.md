@@ -2,8 +2,8 @@
 title: Entraîner un modèle de codage prédictif dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment effectuer la première série d’entraînement pour le codage prédictif.
-ms.openlocfilehash: 509e47372655691130be9a4621c973b5e6575f80
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a08113a953e4e9a9df47cca7724122cb27007e2b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642347"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825365"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entraîner un modèle de codage prédictif (préversion)
 

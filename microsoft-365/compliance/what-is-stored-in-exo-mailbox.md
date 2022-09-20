@@ -2,8 +2,8 @@
 title: Contenu stocké dans des boîtes aux lettres Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Le contenu produit par les applications cloud dans Microsoft 365 est stocké ou associé à la boîte aux lettres Exchange Online d’un utilisateur. Ce contenu peut être recherché à l’aide des outils Microsoft eDiscovery.
-ms.openlocfilehash: a5006721166a2f56d8abae9b79442f4ad93276a4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 10caceac9bd5d3fdc499ea7132acecc4b72ff16f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641051"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825761"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenu stocké dans Exchange Online boîtes aux lettres pour eDiscovery
 
@@ -36,9 +36,9 @@ Le tableau suivant répertorie les applications qui stockent ou associent des do
 |Application Microsoft 365|Description|
 |---|---|
 |Formes<sup>*</sup>|Les formulaires et les réponses à un formulaire sont stockés dans des fichiers joints à des messages électroniques et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le formulaire. Les formulaires créés avant avril 2020 sont stockés sous forme de fichier PDF. Les formulaires créés après 2020 sont stockés sous forme de fichier JSON. Les réponses à un formulaire sont stockées dans un fichier CSV. Lorsque vous exportez du contenu à partir de Forms dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID (globally unique identified) suivant : **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
-|Groupes Microsoft 365|Les messages électroniques, les éléments de calendrier, les contacts (contacts), les notes et les tâches sont stockés dans la boîte aux lettres associée à un groupe Microsoft 365.|
-|Outlook/Exchange Online|Les messages électroniques, les éléments de calendrier, les contacts (contacts), les notes et les tâches sont stockés dans la boîte aux lettres d’un utilisateur.|
-|Personnes|Les contacts dans l’application Contacts (qui sont les mêmes contacts que ceux accessibles dans Outlook) sont stockés dans la boîte aux lettres d’un utilisateur.|
+|Groupes Microsoft 365|Email messages, éléments de calendrier, contacts (Personnes), notes et tâches sont stockés dans la boîte aux lettres associée à un groupe Microsoft 365.|
+|Outlook/Exchange Online|Email messages, éléments de calendrier, contacts (Personnes), notes et tâches sont stockés dans la boîte aux lettres d’un utilisateur.|
+|Personnes|Les contacts de l’application Personnes (qui sont les mêmes contacts que ceux accessibles dans Outlook) sont stockés dans la boîte aux lettres d’un utilisateur.|
 |Planification des classes|Les plans créés dans la planification de classes sont stockés dans la boîte aux lettres du groupe Microsoft 365 correspondant qui est provisionné lors de la création d’un nouveau plan. L’alias de la boîte aux lettres de groupe est le nom du plan.|
 |Skype Entreprise|Les conversations dans Skype Entreprise sont stockées dans le dossier Historique des conversations dans la boîte aux lettres d’un utilisateur. Si la boîte aux lettres d’un participant à une réunion Skype est placée en attente de litige ou affectée à une stratégie de rétention, les fichiers joints à une réunion sont conservés dans la boîte aux lettres des participants.|
 |Sway<sup>*</sup>|Les Sways sont stockés sous la forme d’un fichier HTML joint à un e-mail et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le sway. Lorsque vous exportez du contenu à partir de Sway dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID suivant : **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|

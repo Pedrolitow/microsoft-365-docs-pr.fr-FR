@@ -2,8 +2,8 @@
 title: Solutions eDiscovery Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 08/25/2022
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements, tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les Groupes Microsoft 365, Microsoft Teams et les conversations Skype Entreprise. eDiscovery (Standard) et eDiscovery (Premium) fournissent de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos investigations.
-ms.openlocfilehash: a0c30c95d92a6bd0cf1e3fd81c866fde8947ba31
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 678500c2b44fbd3153e6fecb67073814cc2143a1
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812005"
+ms.locfileid: "67821712"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Solutions eDiscovery Microsoft Purview
 

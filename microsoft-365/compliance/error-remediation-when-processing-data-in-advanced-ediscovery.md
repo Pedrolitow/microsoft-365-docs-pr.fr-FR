@@ -2,8 +2,8 @@
 title: Correction d’erreur lors du traitement des données
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans eDiscovery (Premium) susceptibles d’empêcher un traitement correct du contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2052e60e1c27e2b3e138124e5d268477f6a9cd18
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 907790f28dedf1d3e1e7d41291ec150f2280a63f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634354"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820434"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 

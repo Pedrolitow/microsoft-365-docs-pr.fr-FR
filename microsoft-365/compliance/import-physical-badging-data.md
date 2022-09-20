@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour importer des données de badging physiques
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données du système de badging physique de leur organisation vers Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
-ms.openlocfilehash: 9b4eeba7c89b5753b44e76d65dc3838182476766
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: a04ae3c929948a7a30b3f7fb5b224ab14a193323
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071391"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826091"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de badging physiques (préversion)
 
@@ -77,7 +77,7 @@ Le fichier JSON doit être conforme à la définition de schéma requise par le 
 |AssetId|ID de référence de la ressource physique ou du point d’accès physique.|Chaîne alphanumérique|
 |AssetName|Nom convivial de la ressource physique ou du point d’accès physique.|Chaîne alphanumérique|
 |EventTime|Horodatage de l’accès.|Date et heure, au format UTC|
-|AccessStatus|Valeur de `Success` ou `Failed`|String|
+|AccessStatus|Valeur de `Success` ou `Failed`|Chaîne|
 |||
 
 Voici un exemple de fichier JSON conforme au schéma requis :

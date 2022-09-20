@@ -2,8 +2,8 @@
 title: Ajouter des données d’un ensemble de révisions à un autre
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin
@@ -19,12 +19,12 @@ description: Découvrez comment sélectionner des documents dans un ensemble de 
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 4fc1548903ebea3a42d1612c8e9c74be32bbe0ba
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a3858517d9c6413482441fb0b32fb65ff02ebc48
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640961"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820876"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Ajouter des données à partir d’un groupe de révision à un autre groupe de révision.
 

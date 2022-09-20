@@ -2,8 +2,8 @@
 title: Suppression des outils eDiscovery hérités
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery et In-Place Hold (et les applets de commande PowerShell correspondantes) dans Exchange Online seront mises hors service au cours du premier semestre 2020. L’applet de commande Search-Mailbox et Microsoft Purview eDiscovery (Premium) v1.0 sont également mises hors service au cours de la même période.
-ms.openlocfilehash: 630d72c75f318e6d4f9e68b01c61d5069958a0a1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 29b2309223d2402a5e40756bbf02df3d085681a8
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636070"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826047"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -30,7 +30,7 @@ Au fil des ans, Microsoft a fourni des outils eDiscovery qui vous permettent de 
 
 À la suite de cette fonctionnalité eDiscovery nouvelle et améliorée dans le portail de conformité, nous retirons les fonctionnalités et fonctionnalités liées à eDiscovery suivantes liées à la recherche de contenu de messagerie dans Exchange Online et Microsoft 365 :
 
-- [eDiscovery inaltérable](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) et [les conservations sur place](/exchange/security-and-compliance/create-or-remove-in-place-holds) dans le centre d’administration Exchange.
+- [Conservations eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) et [In-Place sur place](/exchange/security-and-compliance/create-or-remove-in-place-holds) dans le centre d’administration Exchange.
 
 - Les Exchange Online applets de commande PowerShell qui prennent en charge In-Place eDiscovery et In-Place Holds (ces applets de commande sont collectivement identifiées en tant que cmdlets **-MailboxSearch*). Cela inclut les applets de commande suivantes :
 
@@ -95,7 +95,7 @@ Le tableau suivant décrit d’autres outils que vous pouvez utiliser pour rempl
 <tr class="header">
 <th>Les fonctionnalités</th>
 <th>Autre outil</th>
-<th>Commentaires</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -198,7 +198,7 @@ Le tableau suivant décrit d’autres outils que vous pouvez utiliser pour rempl
 <tr class="header">
 <th>Les fonctionnalités</th>
 <th>Autres outils</th>
-<th>Commentaires</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -277,7 +277,7 @@ Le tableau suivant décrit d’autres outils que vous pouvez utiliser pour rempl
 <tr class="header">
 <th>Les fonctionnalités</th>
 <th>Autres outils</th>
-<th>Commentaires</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>

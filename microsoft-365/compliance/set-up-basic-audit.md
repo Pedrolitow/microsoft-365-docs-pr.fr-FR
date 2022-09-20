@@ -2,8 +2,8 @@
 title: Configurer l’audit (Standard) dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer l’audit (Standard) afin que vous puissiez commencer à rechercher les activités d’audit effectuées par les utilisateurs et les administrateurs de votre organisation.
-ms.openlocfilehash: 17f9e24f4c3159186011d3faefbd8796f51cc5ce
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c383865251657de135e8897cdae0dd599cec4d54
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632198"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819950"
 ---
 # <a name="set-up-microsoft-purview-audit-standard"></a>Configurer Microsoft Purview Audit (Standard)
 

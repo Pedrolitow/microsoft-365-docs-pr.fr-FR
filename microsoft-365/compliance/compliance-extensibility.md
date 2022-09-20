@@ -2,8 +2,8 @@
 title: Extensibilité Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment étendre les solutions Microsoft Purview à l’aide de connecteurs de données tiers et d’API Microsoft Graph.
-ms.openlocfilehash: 7fc3bf0fb177e07011d0e6388109deec7df14c05
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 48cae8240e91e553ceb8194a283730b1f4adde50
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106424"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826794"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Extensibilité de Microsoft Purview et Microsoft Priva
 
@@ -129,4 +129,4 @@ La solution de gestion des enregistrements est utilisée par les organisations d
 
 Pour plus d’informations sur les API Graph pour la gestion des enregistrements, consultez [Utiliser l’API Gestion des enregistrements Microsoft Graph](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
-Pour connaître les exigences en matière de licences pour utiliser ces API, consultez les informations de gestion des enregistrements fournies dans les conseils microsoft 365 sur la sécurité & la conformité, [Gestion du cycle de vie des données Microsoft Purview & Gestion des enregistrements Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section.
+Pour connaître les exigences en matière de licences pour utiliser ces API, consultez les informations de gestion des enregistrements fournies dans les conseils microsoft 365 sur la sécurité & la conformité, [Gestion du cycle de vie des données Microsoft Purview & Gestion des enregistrements Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) Section.

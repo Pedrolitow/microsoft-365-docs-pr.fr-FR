@@ -2,8 +2,8 @@
 title: Utiliser l’éditeur KQL pour générer des requêtes de recherche
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez utiliser l’éditeur KQL pour configurer des requêtes de recherche eDiscovery dans la recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium).
-ms.openlocfilehash: 966ab29cd71aff76483a982e55e15d4432857a60
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 60dd9506beaebbb45d795c58f4f04b39d5c4b665
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638386"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826750"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>Utiliser l’éditeur KQL pour générer des requêtes de recherche
 

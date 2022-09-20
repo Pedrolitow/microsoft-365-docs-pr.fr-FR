@@ -2,8 +2,8 @@
 title: Télécharger les documents d'un jeu à réviser
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment sélectionner et télécharger du contenu à partir d’un ensemble de révisions dans eDiscovery (Premium) pour les présentations ou les révisions externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 06fd66474238251302e56af756cab5ad9c5d576d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 58e57b9b39420967229f348386b367664dec128b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627368"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826113"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>Télécharger les documents sélectionnés à partir d’un ensemble de révisions
 

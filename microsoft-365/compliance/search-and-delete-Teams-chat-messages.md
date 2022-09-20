@@ -2,8 +2,8 @@
 title: Rechercher et supprimer des messages de conversation dans Teams
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez eDiscovery (Premium) et l’Explorateur Microsoft Graph pour rechercher et vider les messages de conversation dans Microsoft Teams, et répondre aux incidents de débordement de données dans Teams.
-ms.openlocfilehash: 12ac9bbc0cf45a7609ddcbfcc382d579e4641cd9
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 0c7d87743f254018db3d9a9a96e3261b529428f4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496700"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822482"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Rechercher et vider les messages de conversation dans Teams (préversion)
 

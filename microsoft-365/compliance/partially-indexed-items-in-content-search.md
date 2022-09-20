@@ -2,8 +2,8 @@
 title: Éléments partiellement indexés dans la recherche de contenu
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/13/2022
 audience: Admin
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche eDiscovery que vous exécutez dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: e4bca9995dd173ef972522f273765db03dff3524
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4e8b22a21f9ab0b9bd38fb12c3d0a79a958c9440
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622478"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825541"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
 
@@ -162,9 +162,9 @@ Pour obtenir la liste des limites d’indexation pour les documents SharePoint, 
 
 - Les fichiers chiffrés avec les [technologies de chiffrement Microsoft](encryption.md) et attachés à un message électronique qui correspond aux critères d’une recherche peuvent être affichés en préversion et déchiffrés lors de l’exportation. À ce stade, les fichiers chiffrés avec les technologies de chiffrement Microsoft (et stockés dans SharePoint ou OneDrive Entreprise) sont partiellement indexés. 
 
-- Les messages électroniques chiffrés avec S/MIME sont partiellement indexés. Il s'agit des messages chiffrés avec ou sans pièces jointes.
+- Email messages chiffrés avec S/MIME sont partiellement indexés. Il s'agit des messages chiffrés avec ou sans pièces jointes.
 
-- Les messages électroniques protégés à l’aide de Azure Rights Management sont indexés et seront inclus dans les résultats de la recherche s’ils correspondent à la requête de recherche. Les messages électroniques protégés par des droits sont déchiffrés et peuvent être prévisualisables et exportés. Cette fonctionnalité nécessite que vous soyez affecté au rôle de déchiffrement RMS, qui est attribué par défaut au groupe de rôles eDiscover Manager.
+- Email messages protégés à l’aide de Azure Rights Management sont indexés et seront inclus dans les résultats de recherche s’ils correspondent à la requête de recherche. Les messages électroniques protégés par des droits sont déchiffrés et peuvent être prévisualisables et exportés. Cette fonctionnalité nécessite que vous soyez affecté au rôle de déchiffrement RMS, qui est attribué par défaut au groupe de rôles eDiscover Manager.
 
 - Si vous créez une conservation basée sur une requête associée à un cas eDiscovery, tous les éléments partiellement indexés sont mis en attente. Cela inclut les éléments partiellement indexés qui ne correspondent pas aux critères de requête de recherche pour la conservation. Pour plus d’informations sur la création de conservations eDiscovery basées sur des requêtes, consultez [Créer une conservation eDiscovery](create-ediscovery-holds.md).
 

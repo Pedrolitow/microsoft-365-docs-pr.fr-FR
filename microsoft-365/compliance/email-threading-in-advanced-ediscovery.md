@@ -1,9 +1,9 @@
 ---
-title: Thread d’e-mail dans eDiscovery (Premium)
+title: Email threading dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 description: Lors d’une analyse eDiscovery (Premium), le thread de messagerie analyse une conversation par e-mail et sépare chaque message en différentes catégories.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a17f746cb0c88fb68e4654d0dd7de528135d62ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 86a3fbcccb569713b8517a8813689fd1bd678577
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629704"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821646"
 ---
-# <a name="email-threading-in-ediscovery-premium"></a>Thread d’e-mail dans eDiscovery (Premium)
+# <a name="email-threading-in-ediscovery-premium"></a>Email threading dans eDiscovery (Premium)
 
-Envisagez une conversation par e-mail qui se passe depuis un certain temps. Dans la plupart des cas, le dernier message du thread d’e-mail inclut le contenu de tous les messages précédents. Par conséquent, l’examen du dernier message donne un contexte complet de la conversation qui s’est produite dans le thread. Le threading d’e-mail identifie ces messages afin que les réviseurs puissent passer en revue une fraction des documents collectés sans perdre de contexte.
+Envisagez une conversation par e-mail qui se passe depuis un certain temps. Dans la plupart des cas, le dernier message du thread d’e-mail inclut le contenu de tous les messages précédents. Par conséquent, l’examen du dernier message donne un contexte complet de la conversation qui s’est produite dans le thread. Email threading identifie ces messages afin que les réviseurs puissent passer en revue une fraction des documents collectés sans perdre de contexte.
 
 ## <a name="what-does-email-threading-do"></a>Que fait le thread d’e-mail ?
 
-Le thread d’e-mail analyse chaque thread de messagerie et le décompose en messages individuels. Chaque thread de messagerie est une chaîne de messages individuels. Microsoft Purview eDiscovery (Premium) analyse tous les messages électroniques de l’ensemble de révision pour déterminer si un message électronique a un contenu unique ou si la chaîne (messages parents) est entièrement contenue dans le message final dans le thread de messagerie. Les messages électroniques sont divisés en quatre valeurs inclusives :
+Email threading analyse chaque thread d’e-mail et le déconstruit en messages individuels. Chaque thread de messagerie est une chaîne de messages individuels. Microsoft Purview eDiscovery (Premium) analyse tous les messages électroniques de l’ensemble de révision pour déterminer si un message électronique a un contenu unique ou si la chaîne (messages parents) est entièrement contenue dans le message final dans le thread de messagerie. Email messages sont divisés en quatre valeurs inclusives :
 
 - **Inclusif** : un e-mail *inclusif* est le dernier message électronique d’un thread de messagerie et contient tout le contenu précédent de ce thread de messagerie.
 

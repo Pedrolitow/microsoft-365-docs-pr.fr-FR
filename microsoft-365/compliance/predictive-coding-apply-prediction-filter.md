@@ -2,8 +2,8 @@
 title: Appliquer le filtre de score de prédiction à un ensemble de révisions
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Utilisez un filtre de score de prédiction pour afficher les éléments qu’un modèle de codage prédictif prédit comme pertinents ou non pertinents.
-ms.openlocfilehash: 7a05b85fa81396da2c9d66eddb68b542b7eb8eba
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1cea7a160583ef787343f82fb7ff5e6fc210015e
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642401"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820148"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Appliquer un filtre de score de prédiction à un jeu de révision (préversion)
 

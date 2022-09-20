@@ -2,8 +2,8 @@
 title: Comprendre l’évaluation dans la pertinence dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -18,12 +18,12 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenez une vue d’ensemble de l’étape d’évaluation et de son rôle dans la détermination de la richesse des problèmes lors de la formation pertinence dans Microsoft Purview eDiscovery (Premium).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19d518e116fbd86dc0f781443ba16c21890c4346
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8c1e4481e9d19a801dbf5ddc965dfbd69cc48a7c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625552"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826970"
 ---
 # <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>Évaluation dans le module Pertinence dans eDiscovery (Premium)
   

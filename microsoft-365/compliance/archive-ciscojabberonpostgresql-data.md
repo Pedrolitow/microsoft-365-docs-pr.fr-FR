@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver Cisco Jabber sur les données PostgreSQL dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment configurer et utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données de Cisco Jabber sur PostgreSQL vers Microsoft 365.
-ms.openlocfilehash: 9dd35756931c8d60538601332555dbc5cbf108b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53792f1bba9862a493c7dfd15709aec0dfeff2af
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636642"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67827081"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>Configurer un connecteur pour archiver Cisco Jabber sur les données PostgreSQL
 
@@ -40,7 +40,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Le connecteur Cisco Jabber sur PostgreSQL que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère le contenu Jabber vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email du mappage* automatique des utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier dans le dossier Boîte de réception nommé **Cisco Jabber sur PostgreSQL** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la propriété *Email* . Chaque élément Jabber contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
+4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique d’utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier dans le dossier Boîte de réception nommé **Cisco Jabber sur PostgreSQL** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la propriété *Email*. Chaque élément Jabber contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -88,6 +88,6 @@ Après avoir créé le connecteur Cisco Jabber sur PostgreSQL, vous pouvez affic
 
 3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - Pour l’instant, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments supérieurs à 10 Mo. La prise en charge des éléments plus volumineux sera disponible ultérieurement.

@@ -2,8 +2,8 @@
 title: Exporter des données de cas dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment exporter ou télécharger du contenu à partir d’un ensemble de révisions pour des présentations ou des révisions externes dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2650e38509baa11cbd93e014f13d15e734ee02c3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 083fe6cd67bd3d15a7343f18545d75ebca9054a4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624132"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820324"
 ---
 # <a name="export-case-data-in-ediscovery-premium"></a>Exporter des données de cas dans eDiscovery (Premium)
 

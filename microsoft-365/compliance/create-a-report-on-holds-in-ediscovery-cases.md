@@ -2,8 +2,8 @@
 title: Utiliser un script pour créer un rapport de conservation eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/10/2022
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les conservations associées aux cas eDiscovery.
-ms.openlocfilehash: 260dc24d0cdc2ef6cb21c1a3e6dada56e37722d2
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 5258ba82b33236bac1b66a9ce1ad00900806cd19
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051093"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826135"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Utiliser un script pour créer un rapport sur les conservations dans les cas eDiscovery
 
@@ -195,7 +195,7 @@ Une fois que vous êtes connecté à Security & Compliance PowerShell, l’étap
 
    ![Sortie après l’exécution du script CaseHoldsReport.ps1.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 Le cas contient le rapport créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque conservation. Comme expliqué précédemment, vous devez être administrateur eDiscovery pour retourner des informations sur toutes les conservations de votre organisation. Pour plus d’informations sur les conservations de cas, consultez [les cas eDiscovery](./get-started-core-ediscovery.md).
 

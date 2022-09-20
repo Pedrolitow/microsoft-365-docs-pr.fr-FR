@@ -2,8 +2,8 @@
 title: Créer un avis de conservation légale
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Communications dans un cas eDiscovery (Premium) pour envoyer, collecter et suivre les notifications de conservation légale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e97630c75c05412e22afa17daaa1897f8627adf1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f316798d135d08a7aaa363140d294c62ac6cfa9b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634674"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825673"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer un avis de conservation légale
 
@@ -89,7 +89,7 @@ Pour créer une notification d’émission :
 
 4. Spécifiez le contenu ou des instructions supplémentaires que vous souhaitez fournir au consignateur (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’émission.
 
-5. Cliquez sur **Save (Enregistrer)**.
+5. Cliquez sur **Enregistrer**.
 
 ### <a name="re-issuance-notification"></a>notification Re-Issuance
 
@@ -105,7 +105,7 @@ Pour créer une notification de rééditance :
 
 4. Spécifiez le contenu ou des instructions supplémentaires que vous souhaitez fournir au consignateur (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de rééditation.
 
-5. Cliquez sur **Save (Enregistrer)**.
+5. Cliquez sur **Enregistrer**.
 
 > [!NOTE]
 > Si le contenu du portail est modifié (dans la page Définir le contenu du **portail** dans l’Assistant **Modification de la communication** ), la notification de réélation est automatiquement envoyée à tous les consignatateurs affectés à l’avis. Une fois la notification envoyée, les consignatateurs sont invités à confirmer à nouveau leur avis de suspension. Si vous avez configuré des flux de travail de rappel ou d’escalade, ceux-ci redémarrent également. Pour plus d’informations sur les autres événements de gestion de cas qui déclenchent des communications, consultez [Événements qui déclenchent des notifications](#events-that-trigger-notifications).

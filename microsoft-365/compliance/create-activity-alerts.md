@@ -2,8 +2,8 @@
 title: Créer des alertes d’activité
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 11/7/2017
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le portail de conformité Microsoft Purview afin que Microsoft 365 vous envoie des notifications par e-mail lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: a2f93ed9c0c73dfb6886e0860e63ec38e49294a5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 22e4b204d687299d70c5e514b39660c4ef12261f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642259"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821272"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 

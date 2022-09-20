@@ -2,8 +2,8 @@
 title: Configurer les paramètres de recherche et d’analytique - eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurez Microsoft Purview eDiscovery paramètres (Premium) qui s’appliquent à tous les ensembles de révisions dans un cas. Cela inclut des paramètres pour l’analytique et la reconnaissance optique des caractères.
-ms.openlocfilehash: 315448606e99a768bacd8d7d4ac7f858c79c7bed
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 28af9b3f8f91ea1237301cc0a7b5fc789844a158
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624562"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826509"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Configurer les paramètres de recherche et d’analytique dans eDiscovery (Premium)
 
@@ -50,7 +50,7 @@ Pour configurer les paramètres de recherche et d’analyse d’un cas :
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et thread de courrier
 
-Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le threading d’e-mail. Pour plus d’informations, consultez [La détection des doublons proches](near-duplicate-detection-in-advanced-ediscovery.md) et [le threading d’e-mail](email-threading-in-advanced-ediscovery.md).
+Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le threading d’e-mail. Pour plus d’informations, consultez [Détection du quasi-doublon](near-duplicate-detection-in-advanced-ediscovery.md) et [Email threading](email-threading-in-advanced-ediscovery.md).
 
 - **Quasi-doublons/thread de messagerie :** Quand cette option est activée, la détection des doublons, la détection des doublons et le threading de courrier électronique sont inclus dans le flux de travail lorsque vous exécutez des analyses sur les données d’un jeu de révision.
 

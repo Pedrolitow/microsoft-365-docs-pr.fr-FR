@@ -2,8 +2,8 @@
 title: Déchiffrement dans eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment les outils microsoft 365 eDiscovery gèrent les documents chiffrés attachés aux e-mails et stockés dans SharePoint Online et OneDrive Entreprise.
-ms.openlocfilehash: bec0b4c600f3bb7b08d10f2b32b00edb627a1165
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: d09b37fe87a32eca79a8b0573410d2fb1ddfa1b5
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798080"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821756"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Déchiffrement dans les outils microsoft 365 eDiscovery
 
@@ -89,7 +89,7 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
 
 - Si vous devez empêcher quelqu’un de déchiffrer les messages de protection RMS et les pièces jointes de fichiers chiffrés, vous devez créer un groupe de rôles personnalisé (en copiant le groupe de rôles eDiscovery Manager intégré), puis supprimer le rôle de gestion de déchiffrement RMS du groupe de rôles personnalisé. Ajoutez ensuite la personne dont vous ne souhaitez pas déchiffrer les messages en tant que membre du groupe de rôles personnalisé.
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>Remarques
 
 <sup>1 Les</sup> fichiers chiffrés situés sur un ordinateur local et copiés dans un e-mail ne sont pas déchiffrés et indexés pour eDiscovery. Pour eDiscovery (Premium), les e-mails chiffrés et les pièces jointes dans la boîte aux lettres des destinataires doivent être indexés de manière avancée pour être déchiffrés. Pour plus d’informations sur l’indexation avancée, consultez [Indexation avancée des données de consignation](indexing-custodian-data.md).
 

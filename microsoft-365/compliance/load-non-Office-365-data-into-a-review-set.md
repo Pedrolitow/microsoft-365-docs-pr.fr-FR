@@ -2,8 +2,8 @@
 title: Charger des données non-Microsoft 365 dans un groupe de révision
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment importer des données non-Microsoft 365 dans un ensemble de révisions à des fins d’analyse dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1efdcb98c0d9ae5b0f47215997782a3b88c8683
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 003e1dc5e9100fa37eb240349d8f46355e836a0b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636004"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825585"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un groupe de révision
 

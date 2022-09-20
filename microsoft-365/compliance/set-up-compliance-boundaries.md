@@ -2,8 +2,8 @@
 title: Configurer les limites de conformité pour les investigations eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f65a1c85a4cadac646fdffee8403fb398e8c0081
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: aff5b3de0f392a87650247300912355726ed864b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275975"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819928"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurer les limites de conformité pour les investigations eDiscovery
 
@@ -298,7 +298,7 @@ Gardez à l’esprit les limitations suivantes lors de la gestion des cas eDisco
 
 - Nous vous déconseillons d’utiliser des filtres d’exclusion (par `-not()` exemple, dans un filtre d’autorisations de recherche) pour une limite de conformité basée sur le contenu. L’utilisation d’un filtre d’exclusion peut avoir des résultats inattendus si le contenu avec des attributs récemment mis à jour n’a pas été indexé.
 
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Qui peut créer et gérer des filtres d’autorisations de recherche (à l’aide d'New-ComplianceSecurityFilter et d’applets de commande Set-ComplianceSecurityFilter) ?**
   

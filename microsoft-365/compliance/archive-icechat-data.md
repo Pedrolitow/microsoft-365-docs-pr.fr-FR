@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver les données de conversation ICE
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de l’outil ICE Chat dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 7e9fdf0e5c9d294948eeb03e78477487697cb537
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53ccc3420d46439a9f5bb90ac7d87cc8d6e8f76c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625894"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67827059"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurer un connecteur pour archiver les données de conversation ICE
 

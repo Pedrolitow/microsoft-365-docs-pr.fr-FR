@@ -2,8 +2,8 @@
 title: Rechercher dans le journal d’audit pour résoudre les problèmes courants
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment utiliser l’outil de recherche de journaux d’audit Microsoft 365 pour résoudre les problèmes courants de support pour les comptes de messagerie.
-ms.openlocfilehash: d97e8e074c2d0e14bb75fd46a512cacb6827047a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3dcb1dde0c2cf345e7d753b8253e860acebc4d3a
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633848"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820567"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit pour examiner les problèmes de support courants
 

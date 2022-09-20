@@ -2,8 +2,8 @@
 title: Collaborer avec un partenaire pour archiver des données tierces
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment configurer un connecteur personnalisé pour importer des données tierces à partir de sources de données telles que Salesforce Chatter, Yahoo Messenger ou Yammer.
-ms.openlocfilehash: 7b66c16da344a0254ecbc704311c6de5fe92c232
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5f2f58e3b67e10d76a3c0a1066037f54f787eefb
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637814"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826574"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire pour archiver des données tierces
 
@@ -243,7 +243,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
 
 [Smarsh prend en](https://www.smarsh.com) charge les sources de données tierces suivantes :
 
-- BUT
+- But
 
 - American Idol
 
@@ -331,7 +331,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
 
 - Instant Bloomberg
 
-- IRC
+- Irc
 
 - Jive
 
@@ -359,7 +359,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
 
 - Mobile Guard
 
-- MSN
+- Msn
 
 - My Space
 
@@ -387,7 +387,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
 
 - Tor
 
-- TTT
+- Ttt
 
 - Twitter
 

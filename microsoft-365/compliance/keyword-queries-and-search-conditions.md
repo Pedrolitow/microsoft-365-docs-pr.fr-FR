@@ -2,8 +2,8 @@
 title: Requêtes de mots clés et conditions de recherche pour eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de l’e-mail et du document que vous pouvez rechercher à l’aide des outils de recherche eDiscovery dans Microsoft 365.
-ms.openlocfilehash: ca824d0f812690711f8ec78cd21955e14b8cb47f
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: 98ff5faabbd91f2c4aa67a789b4d2c61aa7dc0b1
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439637"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826662"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Requêtes de mots clés et conditions de recherche pour eDiscovery
 
@@ -67,7 +67,7 @@ Le tableau suivant répertorie les propriétés des messages électroniques qui 
 |Kind|Type de message électronique à rechercher. Valeurs possibles : <p>  contacts <p>  docs <p>  email <p>  Externaldata <p>  faxes <p>  im <p>  journals <p>  meetings <p>  microsoftteams (renvoie des éléments à partir de conversations, de réunions et d’appels dans Microsoft Teams) <p>  notes <p>  posts <p>  rssfeeds <p>  tasks <p>  voicemail|`kind:email` <p> `kind:email OR kind:im OR kind:voicemail` <p> `kind:externaldata`|Le premier exemple retourne des messages électroniques qui répondent aux critères de recherche. Le deuxième exemple retourne des messages électroniques, des conversations de messagerie instantanée (y compris Skype Entreprise conversations et conversations dans Microsoft Teams) et des messages vocaux qui répondent aux critères de recherche. Le troisième exemple retourne des éléments qui ont été importés dans des boîtes aux lettres dans Microsoft 365 à partir de sources de données tierces, telles que Twitter, Facebook et Cisco Jabber, qui répondent aux critères de recherche. Pour plus d’informations, consultez [Archivage des données tierces dans Office 365](https://www.microsoft.com/?ref=go).|
 |Participants|Tous les champs de personnes dans un e-mail. Ces champs sont From, To, Cc et Bcc.1<sup></sup>|`participants:garthf@contoso.com` <p> `participants:contoso.com`|Messages envoyés par ou envoyés à garthf@contoso.com. Le deuxième exemple renvoie tous les messages envoyés par ou envoyés à un utilisateur dans le domaine contoso.com.<br>([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire.|`received:2021-04-15` <p> `received>=2021-01-01 AND received<=2021-03-31`|Messages reçus le 15 avril 2021. Le deuxième exemple retourne tous les messages reçus entre le 1er janvier 2021 et le 31 mars 2021.|
-|Recipients|Tous les champs du destinataire dans un e-mail. Ces champs sont To, Cc et <sup>Cci.1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires du domaine contoso.com.<br>([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
+|Destinataires|Tous les champs du destinataire dans un e-mail. Ces champs sont To, Cc et <sup>Cci.1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires du domaine contoso.com.<br>([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Sent|Date à laquelle un message électronique a été envoyé par l'expéditeur.|`sent:2021-07-01` <p> `sent>=2021-06-01 AND sent<=2021-07-01`|Messages envoyés à la date indiquée ou entre les dates spécifiées.|
 |Size|Taille d'un élément, en octets.|`size>26214400` <p> `size:1..1048567`|Messages de plus de 25 Mo. Le deuxième exemple renvoie les messages dont la taille est comprise entre 1 et 1 048 567 octets (1 Mo).|
 |Subject|Texte de la ligne d'objet d'un message électronique. <p> **Note:** Lorsque vous utilisez la propriété Subject dans une requête, la recherche retourne tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne retourne pas uniquement les messages qui ont une correspondance exacte. Par exemple, si vous recherchez  `subject:"Quarterly Financials"`, vos résultats incluent des messages portant l’objet « Financière trimestrielle 2018 ».|`subject:"Quarterly Financials"` <p> `subject:northwind`|Messages qui contiennent l’expression « Financials trimestriels » n’importe où dans le texte de la ligne d’objet. Le deuxième exemple renvoie tous les messages contenant le mot « northwind » dans la ligne d'objet.|
@@ -97,7 +97,7 @@ Pour obtenir la liste complète des propriétés SharePoint qui peuvent être re
 |---|---|---|---|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et qu’il l’envoie par e-mail à quelqu’un d’autre qui le charge ensuite dans SharePoint, le document conserve l’auteur d’origine. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`author:"Garth Fort"`|Tous les documents créés par Garth Fort.|
 |ContentType|Type de contenu SharePoint d’un élément, tel qu’Élément, Document ou Vidéo.|`contenttype:document`|Tous les documents sont renvoyés.|
-|Created|Date de création d’un élément.|`created>=2021-06-01`|Tous les éléments créés le 1er juin 2021 ou après.|
+|Créé|Date de création d’un élément.|`created>=2021-06-01`|Tous les éléments créés le 1er juin 2021 ou après.|
 |CreatedBy|Personne qui a créé ou chargé un élément. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`createdby:"Garth Fort"`|Tous les éléments créés ou chargés par Garth Fort.|
 |DetectedLanguage|Langue d’un élément.|`detectedlanguage:english`|Tous les éléments en anglais.|
 |DocumentLink|Chemin d’accès (URL) d’un dossier spécifique sur un site SharePoint ou OneDrive Entreprise. Si vous utilisez cette propriété, veillez à effectuer une recherche sur le site dans lequel se trouve le dossier spécifié. <p> Pour renvoyer des éléments situés dans les sous-dossiers du dossier que vous spécifiez pour la propriété documentlink, vous devez ajouter /\* à l’URL du dossier spécifié ; par exemple, `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"` <p> <br/>Pour plus d’informations sur la recherche de la propriété documentlink et l’utilisation d’un script pour obtenir les URL de lien de document pour les dossiers sur un site spécifique, consultez [Utiliser la recherche de contenu pour les collections ciblées](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"` <p> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Le premier exemple retourne tous les éléments du dossier OneDrive Entreprise spécifié. Le deuxième exemple retourne des documents dans le dossier de site spécifié (et tous les sous-dossiers) qui contiennent le mot « confidentiel » dans le nom de fichier.|
@@ -225,7 +225,7 @@ Créez une condition à l’aide de propriétés de messagerie lors de la recher
 |Participants|Tous les champs de personnes dans un e-mail. Ces champs sont From, To, Cc et Cci. ([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Type|Propriété de classe de message pour un élément de messagerie. Il s’agit de la même propriété que la propriété e-mail ItemClass. Il s’agit également d’une condition à valeurs multiples. Par conséquent, pour sélectionner plusieurs classes de message, maintenez la touche **CTRL** enfoncée, puis cliquez sur deux classes de message ou plus dans la liste déroulante que vous souhaitez ajouter à la condition. Chaque classe de message que vous sélectionnez dans la liste est logiquement connectée par l’opérateur **OR** dans la requête de recherche correspondante. <p> Pour obtenir la liste des classes de message (et leur ID de classe de message correspondant) utilisées par Exchange et que vous pouvez sélectionner dans la liste **des classes message** , consultez [Types d’éléments et Classes de message](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received.|
-|Destinataires|Tous les champs du destinataire dans un e-mail. Ces champs sont To, Cc et Cci. ([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
+|Recipients|Tous les champs du destinataire dans un e-mail. Ces champs sont To, Cc et Cci. ([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Expéditeur|Expéditeur d’un message électronique.|
 |Sent|Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent.|
 |Subject|Texte de la ligne d'objet d'un message électronique. <p> **Remarque** : n’incluez pas de guillemets doubles aux valeurs de cette condition, car les guillemets sont automatiquement ajoutés lors de l’utilisation de cette condition de recherche. Si vous ajoutez des guillemets à la valeur, deux paires de guillemets doubles sont ajoutées à la valeur de condition et la requête de recherche retourne une erreur.|
@@ -239,7 +239,7 @@ Créez une condition à l’aide de propriétés de document lors de la recherch
 |---|---|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et qu’il l’envoie par e-mail à quelqu’un d’autre qui le charge ensuite dans SharePoint, le document conserve l’auteur d’origine.|
 |Titre|Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document.|
-|Created|Date de création d’un document.|
+|Créé|Date de création d’un document.|
 |Dernière modification|Date de la dernière modification apportée à un document.|
 |Type de fichier|Extension d’un fichier ; par exemple, docx, un, pptx ou xlsx. Il s’agit de la même propriété que la propriété de site FileExtension. <p> **Note:** Si vous incluez une condition de type de fichier à l’aide de l’opérateur **Equals** ou **Equals** dans une requête de recherche, vous ne pouvez pas utiliser une recherche de préfixe (en incluant le caractère générique ( \* ) à la fin du type de fichier) pour retourner toutes les versions d’un type de fichier. Si c’est le cas, le caractère générique est ignoré. Par exemple, si vous incluez la condition `Equals any of doc*`, seuls les fichiers avec une extension de `.doc` seront retournés. Les fichiers avec une extension de `.docx` ne seront pas retournés. Pour retourner toutes les versions d’un type de fichier, vous avez utilisé la paire *property:value* dans une requête de mot clé ; par exemple, `filetype:doc*`.|
 

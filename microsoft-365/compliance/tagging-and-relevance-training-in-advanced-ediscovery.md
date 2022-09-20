@@ -2,8 +2,8 @@
 title: Formation sur l’étiquetage et la pertinence dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez les étapes à suivre pour baliser, puis utiliser un exemple d’entraînement de 40 fichiers pendant l’étape d’apprentissage pertinence d’eDiscovery (Premium).
-ms.openlocfilehash: 8f3d92564d908344155b55b5f84dc6357324a388
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b190b1e78622f93b82e5ec9db224b3f618c862d2
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627258"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821030"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>Formation sur l’étiquetage et la pertinence dans eDiscovery (Premium)
   
@@ -47,7 +47,7 @@ Une fois l’évaluation terminée dans eDiscovery (Premium) et que vous entrez 
    |**Option d’étiquetage**|**Description**|**Raccourci clavier**|**Raccourci clavier de balisage en bloc (pour plusieurs problèmes)**|
    |-----|-----|-----|-----|
    |R  <br/> |Pertinent  <br/> |Z  <br/> |`Shift + Z`  <br/> |
-   |NR  <br/> |Non pertinent  <br/> |X  <br/> |`Shift + X`  <br/> |
+   |Nr  <br/> |Non pertinent  <br/> |X  <br/> |`Shift + X`  <br/> |
    |Ignorer  <br/> |Ignorer  <br/> |C  <br/> |`Shift + A`  <br/> |
    |||||
 

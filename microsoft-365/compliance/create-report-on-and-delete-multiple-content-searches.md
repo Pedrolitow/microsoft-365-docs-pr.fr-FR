@@ -2,8 +2,8 @@
 title: Créer, signaler et supprimer des recherches de contenu
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports à l’aide de Security & Compliance PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be456c737188f02cfad245d4a1dc4661f2c611a5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5a0a520f0b5e862c8a1673c424ee3f67b01a3e61
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638585"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821844"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 

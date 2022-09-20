@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver les données de message Bloomberg
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer et archiver des données à partir de l’outil de courrier bloomberg dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 43dd41c8a0d1aa438ed978e86fc0a45da01d7835
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a3eebb417275142c0ee27555e1f851b9e684699f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630794"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67827125"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Configurer un connecteur pour archiver les données de message Bloomberg
 
@@ -244,6 +244,6 @@ Une fois votre site Bloomberg SFTP configuré, l’étape suivante consiste à c
 
 11. Accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur. Cliquez sur le connecteur pour afficher la page de menu volant, qui contient des informations sur le connecteur.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - Le thread d’e-mail de message Bloomberg importé dans Microsoft 365 n’est pas pris en charge. Les messages individuels envoyés à une personne sont importés, mais ils ne sont pas présentés dans une conversation thread. Microsoft s’efforce de prendre en charge le threading dans les versions ultérieures du connecteur de données Bloomberg Message.

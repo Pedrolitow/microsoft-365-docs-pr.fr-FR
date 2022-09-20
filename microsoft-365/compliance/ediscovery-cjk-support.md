@@ -2,8 +2,8 @@
 title: Prise en charge de CJK/Double Octet pour eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Microsoft Purview eDiscovery (Premium) dans Microsoft 365 prend en charge les langues chinoise, japonaise et coréenne (CJC), qui utilisent un jeu de caractères sur deux octets.
-ms.openlocfilehash: a16f1f63deee7cbc77b105c9c49431a8eeda0e71
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6877e089f1faae21593a0f63336663540d04f470
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636202"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820523"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Prise en charge du langage CJC pour eDiscovery (Premium)
 
@@ -71,11 +71,11 @@ Non, aucune de vos recherches et jeux de révision existants ne change. Vous n�
 
 Pour plus d’informations sur la modification de la langue d’affichage et du fuseau horaire, consultez [Comment définir les paramètres de langue et de région pour Office 365](/office365/troubleshoot/access-management/set-language-and-region).
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - OCR ne prend pas en charge les caractères CJC des fichiers image
 
-- Les fichiers e-mail (tels que *.eml et *.msg) en [mode Annotate](view-documents-in-review-set.md#annotate-view) ne sont pas pris en charge pour les langages CJK.
+- Email fichiers (tels que *.eml et *.msg) en [mode Annotation](view-documents-in-review-set.md#annotate-view) ne sont pas pris en charge pour les langages CJK.
 
 - La mise en surbrillance des correspondances de recherche en [mode Texte](view-documents-in-review-set.md#text-view) n’est pas prise en charge pour les langues CJC.
 

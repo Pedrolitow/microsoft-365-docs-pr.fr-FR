@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: 0c2f4989407d4498df3d4e3401b935f5200b2412
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 8d20190dd99c1d979f10a3f31d5616dabb652065
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497646"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825941"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré plutôt que le module complémentaire AIP pour les applications Office
 
@@ -74,16 +74,21 @@ Certaines fonctionnalités sont uniquement prises en charge par l’étiquetage 
     - Accès aux services de classification intelligents qui incluent [les classifieurs entraînables](classifier-learn-about.md), [la correspondance exacte des données (EDM)](sit-learn-about-exact-data-match-based-sits.md) et [les entités nommées](named-entities-learn.md)
     - Détection d'informations sensibles au moment de la saisie des utilisateurs
     - Dans Word, les utilisateurs peuvent examiner et supprimer le contenu sensible identifié.
+- [La barre de confidentialité](sensitivity-labels-office-apps.md#sensitivity-bar) est intégrée aux workflows utilisateur existants
 - [Prise en charge du format PDF](sensitivity-labels-office-apps.md#pdf-support)
 - Pour les étiquettes qui permettent aux utilisateurs d'attribuer des permissions, différentes permissions (lecture ou modification) peuvent être accordées aux utilisateurs ou aux groupes.
 - Cryptage uniquement pour les e-mails
-- Visibilité des étiquettes sur la barre d'état
+- Visibilité des étiquettes sur la barre d’état (sera remplacée par la barre de confidentialité sur le titre de la fenêtre.)
 - Support pour le changement de compte
 - Les utilisateurs ne peuvent pas désactiver l'étiquetage
 
 Exemple montrant comment les utilisateurs peuvent examiner et éventuellement supprimer le contenu sensible identifié dans Word :
 
 ![Les numéros de carte de crédit sont identifiés aux utilisateurs comme un contenu sensible avec une option de suppression.](../media/detect-sensitive-content.png)
+
+Exemple montrant comment les étiquettes de confidentialité sont intégrées aux workflows utilisateur :
+
+![Exemple montrant le nom et la description de l’étiquette de confidentialité dans la boîte de dialogue Enregistrer ce fichier.](../media/sensitivity-label-in-save-dialog.png)
 
 Pour être informé de la disponibilité de nouvelles fonctionnalités d'étiquetage intégré, voir les sections [Nouveautés de Microsoft Purview](whats-new.md) et **Étiquettes de sensibilité**.
 
@@ -135,8 +140,8 @@ Utilisez les informations suivantes pour vous aider à identifier si vous utilis
 |**Catégorie : Expérience utilisateur** ||
 |Bouton d'étiquetage sur le ruban|![Pris en charge.](../media/yes-icon.png)|
 |Prise en charge multilingue des noms d'étiquettes et des infobulles| ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
-|Couleurs des étiquettes| En cours de planification ou de développement |
-|Visibilité des étiquettes sur la barre d'outils| En cours de planification ou de développement |
+|Visibilité des étiquettes sur une barre d’outils| ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](sensitivity-labels-office-apps.md#sensitivity-bar) |
+|Couleurs des étiquettes| ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](sensitivity-labels-office-apps.md#label-colors) |
 |**Catégorie : actions d’étiquetage** ||
 |Étiquetage manuel |  ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) |
 |Étiquetage par défaut | ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](sensitivity-labels.md#what-label-policies-can-do)|

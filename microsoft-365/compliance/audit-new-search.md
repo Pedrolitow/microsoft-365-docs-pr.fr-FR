@@ -2,8 +2,8 @@
 title: Auditer la nouvelle recherche
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: La nouvelle recherche d’audit valide les améliorations des performances, l’exhaustivité et la cohérence des résultats.
-ms.openlocfilehash: e24831eea8c176e8fdfa7608492a5393e786e2d3
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
-ms.translationtype: HT
+ms.openlocfilehash: f200aaea76a6369ab8ce7ded0a678b6b892b200e
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66991973"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826245"
 ---
 # <a name="audit-new-search-preview"></a>Auditer la nouvelle recherche (préversion)
 

@@ -2,8 +2,8 @@
 title: Utiliser la recherche de contenu pour rechercher des données importées tierces
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilisez l’outil Recherche de contenu eDiscovery pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce en créant des requêtes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d4475987cddb04e0ad49394eda14d638774c22e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ffbaf85769c5391bd1c8b1ae7b7dd2c546efb0c4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624838"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820920"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées par un connecteur partenaire personnalisé
 
@@ -63,7 +63,7 @@ Le tableau suivant répertorie les types de données tiers que vous pouvez reche
   
 |**Type de données tiers**|**Valeur de la  `itemclass:` propriété**|
 |:-----|:-----|
-|BUT  <br/> | `ipm.externaldata.AIM*` <br/> |
+|But  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
 |AOL avec client Pivot   <br/> | `ipm.externaldata.Pivot.IM` <br/> |
 |Apple Juice  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
@@ -107,7 +107,7 @@ Le tableau suivant répertorie les types de données tiers que vous pouvez reche
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
 |InvestEdge  <br/> | `ipm.externaldata.InvestEdge*` <br/> |
-|IRC  <br/> | `ipm.externaldata.IRC*` <br/> |
+|Irc  <br/> | `ipm.externaldata.IRC*` <br/> |
 |Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
@@ -116,7 +116,7 @@ Le tableau suivant répertorie les types de données tiers que vous pouvez reche
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |Alignement de l’esprit  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
-|MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
+|Msn  <br/> | `ipm.externaldata.MSN*` <br/> |
 |Myspace  <br/> | `ipm.externaldata.MySpace*` <br/> |
 |NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
@@ -133,7 +133,7 @@ Le tableau suivant répertorie les types de données tiers que vous pouvez reche
 |Thomson Reuters  <br/> | `ipm.externaldata.Reuters*` <br/> |
 | Thomson Reuters Eikon Messenger  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
 |Tor  <br/> | `ipm.externaldata.Tor*` <br/> |
-|TTT  <br/> | `ipm.externaldata.TTT*` <br/> |
+|Ttt  <br/> | `ipm.externaldata.TTT*` <br/> |
 |Twitter  <br/> | `ipm.externaldata.Twitter*` <br/> |
 |UBS Chat  <br/> | `ipm.externaldata.UBS*` <br/> |
 |Vimeo  <br/> | `ipm.externaldata.Vimeo*` <br/> |
