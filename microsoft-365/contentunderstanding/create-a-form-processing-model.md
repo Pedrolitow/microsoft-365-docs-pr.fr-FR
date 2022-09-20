@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Découvrez comment créer un modèle de traitement de formulaire dans SharePoint Syntex.
-ms.openlocfilehash: 614947422e6683666fa45a32a5589338e84edc39
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b045de5b0f67d56f0ddfe726fbe0c1dd25391866
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585265"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812279"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
@@ -175,4 +175,4 @@ Pour exécuter le flux :
   
 [Documentation Power Automate](/power-automate/)
 
-[Formation : Améliorer les performances de votre entreprise avec AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Formation : Améliorer les performances de votre entreprise avec AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

@@ -8,12 +8,12 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Obtenez un rapport périodique sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour plus d’informations.
-ms.openlocfilehash: daedfcee251619df1adb1d228b13036150dea35d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e95fee4f393d9c73228b0e2f4c23fb7abedaf3a3
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475441"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811179"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Tableau de bord Microsoft 365 Experience Insights
 
@@ -48,11 +48,11 @@ Les informations du graphique vous donnent un aperçu des applications et des se
 
 **L’utilisation** des produits est le pourcentage de personnes qui utilisent activement les produits qui sont activés pour leur utilisation. Utilisez ces données pour prendre des décisions sur l’emplacement d’optimisation des affectations de produits.
 
-**Commentaires dans le produit** Nombre total de réponses de commentaires provenant de l’application ou du service qui ont été lancées et envoyées par vos utilisateurs. Utilisez ces données pour évaluer la réussite et la satisfaction des utilisateurs avec les applications. [En savoir plus](feedback-user-control.md)
+**Commentaires dans le produit** Nombre total de réponses de commentaires provenant de l’application ou du service qui ont été lancées et envoyées par vos utilisateurs. Utilisez ces données pour évaluer la réussite et la satisfaction des utilisateurs avec les applications. [Si vous souhaitez en savoir plus](feedback-user-control.md)
 
 Le **volume de réponses aux enquêtes NPS** correspond au nombre total de réponses à l’enquête NPS (Net Promoter Score). Par défaut, Microsoft envoie l’enquête à 5 % de vos utilisateurs et demande « Recommanderiez-vous ce produit ? » Utilisez ces données pour évaluer la satisfaction des utilisateurs et voir ce que les utilisateurs disent de l’application. [Si vous souhaitez en savoir plus](../manage/manage-feedback-product-insights.md)
 
-**Les vues d’article d’aide** sont le nombre total de vues d’articles d’aide microsoft et de vidéos de formation sur l’application. Utilisez ces données pour rechercher des sujets d’intérêt et partager la formation suggérée avec vos utilisateurs. [En savoir plus](experience-insights-help-articles.md)
+**Les vues d’article d’aide** sont le nombre total de vues d’articles d’aide microsoft et de vidéos de formation sur l’application. Utilisez ces données pour rechercher des sujets d’intérêt et partager la formation suggérée avec vos utilisateurs. [Si vous souhaitez en savoir plus](experience-insights-help-articles.md)
 
 > [!NOTE]
 > Vous pouvez filtrer les données du graphique pour les tendances des 30 derniers jours, 90 jours ou 180 jours.
@@ -95,7 +95,7 @@ Adoption Score prend en charge le parcours de transformation numérique avec des
 
 ### <a name="take-training-for-adoption-specialists"></a>Suivre une formation pour les spécialistes de l’adoption
 
-Dans ce cours d’introduction, vous découvrirez les six éléments indispensables à l’adoption de vos services de cloud computing Microsoft pour offrir une valeur ajoutée à votre entreprise. Ce cours s’applique à toute entreprise de taille et utilise Office 365 et Microsoft Teams comme exemple de service pour créer des scénarios réels. Pour plus d’informations sur la formation des spécialistes de l’adoption, consultez [Utiliser l’infrastructure d’adoption des services Microsoft pour favoriser l’adoption dans votre entreprise](/learn/paths/m365-service-adoption).
+Dans ce cours d’introduction, vous découvrirez les six éléments indispensables à l’adoption de vos services de cloud computing Microsoft pour offrir une valeur ajoutée à votre entreprise. Ce cours s’applique à toute entreprise de taille et utilise Office 365 et Microsoft Teams comme exemple de service pour créer des scénarios réels. Pour plus d’informations sur la formation des spécialistes de l’adoption, consultez [Utiliser l’infrastructure d’adoption des services Microsoft pour favoriser l’adoption dans votre entreprise](/training/paths/m365-service-adoption).
 
 ### <a name="join-the-adoption-community"></a>Rejoindre la communauté d’adoption
 

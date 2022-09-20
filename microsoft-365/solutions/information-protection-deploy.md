@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez la protection des informations dans Microsoft 365 pour les réglementations de confidentialité des données telles que le RGPD et le CCPA (California Consumer Privacy Act), notamment Microsoft Teams, SharePoint et le courrier électronique.
-ms.openlocfilehash: dd066d3240be5fb3472491b0caa45ea29301af0f
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 2152d3dd78eba3803d06f7d9fa8f2a863de6196e
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731571"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812159"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 
@@ -91,7 +91,7 @@ Cet article décrit brièvement ce que les réglementations sur la confidentiali
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
-Les réglementations sur la confidentialité des données imposent un certain nombre de contrôles de protection des informations personnelles qui peuvent être utilisés dans votre environnement, y compris plus de 40 contrôles pour la protection des informations sur les quatre réglementations sur la confidentialité des données dans notre exemple de RGPD, la Loi sur la protection des consommateurs de Californie (CCPA), HIPAA-HITECH (Estados Unidos loi sur la confidentialité des soins de santé) et la Loi brésilienne sur la protection des données (LGPD).
+Les réglementations sur la confidentialité des données imposent un certain nombre de contrôles de protection des informations personnelles qui peuvent être utilisés dans votre environnement, y compris plus de 40 contrôles de protection des informations sur les quatre réglementations sur la confidentialité des données dans notre exemple de RGPD, la Loi sur la protection des consommateurs de Californie (CCPA), HIPAA-HITECH (États-Unis loi sur la confidentialité des soins de santé) et la Loi brésilienne sur la protection des données (LGPD).
 
 Pour plus d’informations, consultez [Protéger les informations soumises à la réglementation sur la confidentialité des données dans votre organisation](information-protection-deploy-protect-information.md).
 
@@ -125,7 +125,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir com
 |![Icône d’entraînement de la protection des informations Teams.](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à préparer les certifications Microsoft 365 Certified: Security Administrator Associate et Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 heure - Parcours d’apprentissage - 5 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)
+> [Démarrer >](/training/modules/m365-security-info-overview/introduction/)
 
 #### <a name="identity-and-access"></a>Identité et accès
 
@@ -134,4 +134,4 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir com
 |![Icône d’entraînement d’identité et d’accès.](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>2 h 52 min - Parcours d’apprentissage - 6 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/m365-identity-overview/introduction/)
+> [Démarrer >](/training/modules/m365-identity-overview/introduction/)

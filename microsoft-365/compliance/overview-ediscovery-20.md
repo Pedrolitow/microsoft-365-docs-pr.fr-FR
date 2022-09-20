@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez la solution eDiscovery (Premium) dans Microsoft Purview. Cet article fournit une vue d’ensemble d’eDiscovery (Premium) dans Microsoft Purview, un outil qui vous aide à gérer les investigations internes et externes. Il décrit également les raisons commerciales de l’utilisation d’eDiscovery (Premium) pour gérer vos enquêtes juridiques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d534012466300675a7143cdada0b43468027104
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 7f6841412402761d5eeb34162269bd659582e5e8
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855084"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809614"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Vue d’ensemble de Microsoft Purview eDiscovery (Premium)
 
@@ -123,4 +123,4 @@ Voici un diagramme d’architecture eDiscovery (Premium) qui montre le flux de t
 
 ## <a name="training"></a>Formation
 
-La formation de vos administrateurs informatiques, responsables eDiscovery et équipes d’investigation de conformité aux principes de base d’eDiscovery (Premium) peut aider votre organisation à démarrer plus rapidement à l’aide des outils eDiscovery de Microsoft 365. Microsoft 365 fournit la ressource suivante pour aider ces utilisateurs de votre organisation à bien démarrer avec eDiscovery : [Décrivez les fonctionnalités eDiscovery et d’audit de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+La formation de vos administrateurs informatiques, responsables eDiscovery et équipes d’investigation de conformité aux principes de base d’eDiscovery (Premium) peut aider votre organisation à démarrer plus rapidement à l’aide des outils eDiscovery de Microsoft 365. Microsoft 365 fournit la ressource suivante pour aider ces utilisateurs de votre organisation à bien démarrer avec eDiscovery : [Décrivez les fonctionnalités eDiscovery et d’audit de Microsoft 365](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

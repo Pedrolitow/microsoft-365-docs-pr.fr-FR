@@ -5,7 +5,8 @@ keywords: Règles de réduction de la surface d’attaque, ASR, règles asr, han
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -17,12 +18,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
 search.appverid: met150
-ms.openlocfilehash: 9ccc7d5d2a14d35f1aef9dc3b8b242bfd9a49c6a
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 778e21e2eefb4f0fd457e4c5c179d431225ce6c4
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798734"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811567"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 

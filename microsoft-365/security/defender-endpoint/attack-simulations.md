@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.author: maccruz
 author: dansimp
@@ -15,13 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/20/2018
-ms.openlocfilehash: ce1d6444fa96438be3ddc870089a4c5db834ca12
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 8e934c166aca10ff7913e4c6bc7bc7ad42f2af11
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798129"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812433"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Expérience Microsoft Defender pour point de terminaison par le biais d’attaques simulées 
 

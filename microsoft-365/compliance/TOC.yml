@@ -32,7 +32,7 @@
   items:
     - name: Intégrer des appareils Windows 10
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: device-onboarding-overview.md
         - name: Intune
           href: device-onboarding-mdm.md
@@ -46,7 +46,7 @@
           href: device-onboarding-vdi.md
     - name: Intégrer des appareils macOS
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: device-onboarding-macos-overview.md
         - name: Intune
           href: device-onboarding-offboarding-macos-intune.md
@@ -1026,6 +1026,8 @@
           href: data-classification-activity-explorer.md
         - name: Actions d'étiquetage signalées dans l'Explorateur d'activités
           href: data-classification-activity-explorer-available-events.md
+        - name: Augmenter la précision du classifieur
+          href: data-classification-increase-accuracy.md
     - name: Étiquettes de confidentialité
       items:
         - name: En savoir plus sur les étiquettes de niveau de confidentialité

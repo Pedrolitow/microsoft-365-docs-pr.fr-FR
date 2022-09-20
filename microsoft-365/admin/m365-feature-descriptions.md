@@ -14,12 +14,12 @@ ms.custom:
 - Adm_ServiceDesc_top
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: Découvrez les informations disponibles pour les descriptions des fonctionnalités de Microsoft 365.
-ms.openlocfilehash: b0e9c5b1f0be3c5dc4d798efaf7c974ff55924be
-ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
+ms.openlocfilehash: b2594cdf869073730c5483f995b3ee13259c579b
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67634687"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812027"
 ---
 # <a name="microsoft-365-feature-descriptions"></a>Description des fonctionnalités Microsoft 365
 
@@ -111,7 +111,7 @@ Pour d’autres problèmes, visitez le [centre de support Microsoft](https://sup
 
 # <a name="support-help-and-training"></a>[**Support, aide et formation**](#tab/Support)
 
-## <a name="support"></a>Support
+## <a name="support"></a>Prise en charge
 
 Avec chaque abonnement Microsoft 365 et Office 365 pour les entreprises, les entreprises, les entreprises, les entreprises, l’éducation et le secteur public, Support Microsoft fournit un support technique global, de prévente, de facturation et d’abonnement. Le support est disponible en ligne par le biais de la Centre d'administration Microsoft 365 et par téléphone pour les abonnements payants et d’essai. Pour plus d’informations, consultez [Support Microsoft Options](/Office365/Admin/contact-support-for-business-products). Pour contacter le support technique, consultez : [**Contactez le support microsoft 365 pour les entreprises**](/Office365/Admin/contact-support-for-business-products). Le support technique n’inclut pas la résolution des problèmes liés aux services ou compléments tiers. Découvrez comment trouver des réponses d’autres clients dans la [**communauté Microsoft**](https://answers.microsoft.com/).
 
@@ -197,7 +197,7 @@ Microsoft Office 365 fournit l’aide et les ressources de formation suivantes. 
 
 **Aide en ligne :** Les articles et vidéos d’aide sont disponibles à partir de n’importe quel lien d’aide inline dans le service, y compris l’icône d’aide dans la barre de navigation supérieure du portail Office 365 et Centre d'administration Microsoft 365. Vous pouvez également rechercher dans l'ensemble des rubriques d'aide Office 365 sur le site [https://office.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=272056).
 
-**Formation:** La formation est disponible via des vidéos, des événements en direct enregistrés et des classes menant à la certification. Pour plus d’informations, consultez la [formation vidéo de base de Microsoft 365](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [la formation Microsoft 365](https://support.microsoft.com/training)[, pour les administrateurs et les professionnels de l’informatique](/learn/m365/), [pour les petites entreprises](/microsoft-365/admin/admin-video-library), [parcourir le catalogue d’apprentissage complet](/learn/browse/), [devenir certifié Microsoft](/learn/certifications/), [parcourir toutes les options d’apprentissage](/learn/browse/) et [regarder les événements en direct et enregistrés](/learn/tv/).
+**Formation:** La formation est disponible via des vidéos, des événements en direct enregistrés et des classes menant à la certification. Pour plus d’informations, consultez la [formation vidéo de base de Microsoft 365](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [la formation Microsoft 365](https://support.microsoft.com/training)[, pour les administrateurs et les professionnels de l’informatique](/training/m365/), [pour les petites entreprises](/microsoft-365/admin/admin-video-library), [parcourir le catalogue d’apprentissage complet](/training/browse/), [devenir certifié Microsoft](/certifications/), [parcourir toutes les options d’apprentissage](/training/browse/) et [regarder les événements en direct et enregistrés](/training/tv/).
 
 **Communauté:** La communauté Office 365 est une destination unique pour les informations de support autonome. Vous y trouverez les dernières informations pour aider les clients à trouver des réponses à un vaste éventail de questions techniques, de facturation et de service à travers différents forums de support, wikis et blogs. Les forums de support sont gérés et animés par des agents du Support Microsoft. À partir de la page d’accueil Office 365 Communauté, les clients peuvent accéder aux ressources suivantes : Forums, Wikis, Blogs. Pour plus d'informations, visitez la [Communauté Office 365](https://techcommunity.microsoft.com/).
 

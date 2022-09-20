@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans l’Union européenne
-ms.openlocfilehash: 03f67a91f25f8333a92334ef633687e2b41e80a6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
-ms.translationtype: HT
+ms.openlocfilehash: 33e898bdea6d32446630c9da97d7241a040b6916
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753647"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811939"
 ---
 # <a name="data-locations-for-the-european-union"></a>Emplacements de données pour l’Union européenne
 
@@ -118,5 +118,5 @@ Si vous souhaitez en savoir plus, voir le [Forum aux questions](https://blogs.mi
 - [La protection des données fiables](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) fournit une vue d’ensemble sur la manière dont Microsoft protège vos données lorsque vous utilisez les Services en ligne de Microsoft et les Services professionnels. Nous vous recommandons également de consulter les [Conditions d'utilisation de Microsoft Online Services (OST) et la Loi sur la protection des données (DPA)](https://www.microsoft.com/licensing/product-licensing/products) qui régissent l’utilisation de ces services.
 - [Les demandes des personnes concernées Office 365 pour le Règlement général sur la protection des données (RGPD)](/compliance/regulatory/gdpr-dsr-Office365) vous permettent de rechercher et d’agir sur des données ou des informations personnelles pour répondre aux Demandes des personnes concernées à l’aide des outils administratifs, services et produits Microsoft 365.
 - [Analyses d’impact relatives à la protection des données : conseils aux contrôleurs de données utilisant Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) vous permet de déterminer si votre organisation doit rédiger une Analyse d’impact relative à la protection des données (DPIA), fournit des conseils sur la procédure, inclut un document de modèle de DPIA personnalisable et fournit une matrice des éléments du service DPIA pour de nombreux services Microsoft 365.
-- [Découvrez comment les modules](/learn/paths/audit-safeguard-customer-data/) sont conçus pour les personnes ayant des rôles d’audit, de conformité, de risques et judiciaire qui recherchent une compréhension générale et fournissent un examen approfondi sur la façon dont les pratiques fondamentales de sécurité et de confidentialité de Microsoft 365 protègent les données client.
+- [Découvrez comment les modules](/training/paths/audit-safeguard-customer-data/) sont conçus pour les personnes ayant des rôles d’audit, de conformité, de risques et judiciaire qui recherchent une compréhension générale et fournissent un examen approfondi sur la façon dont les pratiques fondamentales de sécurité et de confidentialité de Microsoft 365 protègent les données client.
 - [Les Offres de conformité Microsoft](/compliance/regulatory/offering-home) présentent la façon dont les services Microsoft 365 aident votre organisation à respecter les normes réglementaires en matière de conformité.

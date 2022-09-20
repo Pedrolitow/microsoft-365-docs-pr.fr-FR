@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Conseils normatifs pour déployer Microsoft Purview pour votre organisation afin de régir vos données en fonction des exigences réglementaires ou de conformité.
-ms.openlocfilehash: 90832541bf202f062b44c1ec375fb20d3db654c3
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
-ms.translationtype: HT
+ms.openlocfilehash: fb849668216c75839e3ffa86c7eac5e454e2b393
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106008"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812137"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Déployer une solution de gouvernance des données avec Microsoft Purview
 
@@ -77,8 +77,8 @@ Pour en savoir plus sur les fonctionnalités de cette solution, consultez [En sa
 
 Modules d’apprentissage pour les consultants et les administrateurs :
 
-- [Introduction à la protection de l'information et à la gestion du cycle de vie des données dans Microsoft Purview](/learn/modules/m365-compliance-information-governance)
-- [Gérer le cycle de vie des données dans Microsoft Purview](/learn/modules/m365-compliance-information-govern-information/)
-- [Gérer les enregistrements dans Microsoft Purview](/learn/modules/m365-compliance-information-manage-records/)
+- [Introduction à la protection de l'information et à la gestion du cycle de vie des données dans Microsoft Purview](/training/modules/m365-compliance-information-governance)
+- [Gérer le cycle de vie des données dans Microsoft Purview](/training/modules/m365-compliance-information-govern-information/)
+- [Gérer les enregistrements dans Microsoft Purview](/training/modules/m365-compliance-information-manage-records/)
 
 Pour obtenir de la documentation sur la prise en charge des utilisateurs lors du déploiement de ces solutions, consultez les sections de documentation de l’utilisateur final pour la [gestion du cycle de vie des données](get-started-with-information-governance.md#end-user-documentation) et la [gestion des enregistrements](get-started-with-records-management.md#end-user-documentation).

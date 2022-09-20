@@ -8,19 +8,19 @@ manager: scotv
 ms.date: 08/08/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: M365-subscription-management
 ms.custom:
 - it-pro
 - intro-overview
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: b4ebce35c1f642a6cfa8ee72489c1d8f531e3f67
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: a900a50738cb4e44b8be2e62cb8cfd7bc1d51ede
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67335757"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812071"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -154,7 +154,7 @@ Si vous souhaitez en savoir plus et bénéficier d’exemples de configuration p
 
 ![Formation des principes de base de Microsoft 365.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-Pour en savoir plus sur Microsoft 365 et travailler à l'obtention d'une certification Microsoft 365, vous pouvez commencer avec[Microsoft 365 Certified : Principes fondamentaux ](/learn/paths/m365-fundamentals/).
+Pour en savoir plus sur Microsoft 365 et travailler à l'obtention d'une certification Microsoft 365, vous pouvez commencer avec[Microsoft 365 Certified : Principes fondamentaux ](/training/paths/m365-fundamentals/).
 
 ## <a name="see-also"></a>Voir aussi
 

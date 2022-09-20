@@ -6,7 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 08/22/2022
@@ -19,12 +20,12 @@ ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: c01f9516e6c2a82c65fc2eb96773ff2bc4840f78
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 1113bfe2707a92601317d6d5d7508226d953f264
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798778"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812565"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveaux d’automatisation dans les fonctionnalités d’investigation et de correction automatisées
 

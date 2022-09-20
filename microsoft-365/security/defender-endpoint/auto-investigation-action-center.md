@@ -5,7 +5,8 @@ keywords: action, centre, autoir, automatisé, investigation, réponse, correcti
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -18,12 +19,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.openlocfilehash: cc947828d66ffd0e7220ddfddc2a366348b3c289
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 022c1311cd7ad95534de996baa14db2307bad64c
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796739"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811305"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitez le Centre d’actions pour voir les actions de correction
 

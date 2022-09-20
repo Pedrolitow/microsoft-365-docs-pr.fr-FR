@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e619457ce420665ba1867480740a327aacdb618c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 3dcf5904bb4d1f620c9b4bbd44299408b6fc21eb
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664665"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811917"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Former votre personnel de sécurité pour Microsoft 365 Defender
 
@@ -49,9 +49,9 @@ Le contenu est structuré en trois niveaux de connaissances différents, avec pl
 
 Utilisez ces parcours d’apprentissage et leurs modules pour comprendre Microsoft 365 Defender et Microsoft Defender pour point de terminaison, un module et une unité à la fois.
 
- - [Détecter les cyberattaques et y répondre avec Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
+ - [Détecter les cyberattaques et y répondre avec Microsoft 365 Defender](/training/paths/defender-detect-respond/)
 
- - [Sécuriser votre organisation avec Microsoft Defender pour point de terminaison](/learn/paths/defender-endpoint-fundamentals/)  
+ - [Sécuriser votre organisation avec Microsoft Defender pour point de terminaison](/training/paths/defender-endpoint-fundamentals/)  
 
 
 ## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Parcours d’apprentissage dans le hub d’apprentissage du portail Microsoft 365 Defender

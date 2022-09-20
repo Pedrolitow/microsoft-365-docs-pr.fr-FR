@@ -15,12 +15,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Découvrez comment gérer les contrats à l’aide d’une solution Microsoft 365 de SharePoint Syntex, de listes SharePoint, de Microsoft Teams et de Power Automate.
-ms.openlocfilehash: d5c19b93f90996269788bd4571bbf350f7e5887d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 6d925999c70e49ec17dcb04925256a2b229007bf
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583129"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812257"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer des contrats en utilisant la solution Microsoft 365
 
@@ -92,7 +92,7 @@ Cette solution s’appuie sur les fonctionnalités suivantes, toutes disponibles
 
 Vous débutez avec SharePoint Syntex ? Découvrez comment utiliser SharePoint Syntex pour gérer du contenu à l’aide de l’IA.
 
-La prise [en main de SharePoint Syntex](/learn/paths/syntex-get-started) parcours d’apprentissage vous apprend à utiliser des modèles de compréhension de document et de traitement de formulaires pour classifier des documents, extraire du texte et étiqueter vos documents pour une gestion rapide et facile des connaissances.
+La prise [en main de SharePoint Syntex](/training/paths/syntex-get-started) parcours d’apprentissage vous apprend à utiliser des modèles de compréhension de document et de traitement de formulaires pour classifier des documents, extraire du texte et étiqueter vos documents pour une gestion rapide et facile des connaissances.
 
 ## <a name="create-the-solution"></a>Créer la solution
 

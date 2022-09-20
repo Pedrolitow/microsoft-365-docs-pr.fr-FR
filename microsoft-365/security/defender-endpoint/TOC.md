@@ -247,6 +247,8 @@
 
 ### [Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison](host-firewall-reporting.md)
 
+### [Protection intégrée](built-in-protection.md)
+
 ### [Réduction de la surface d’attaque]()
 #### [Présentation de la réduction de la surface d'attaque](overview-attack-surface-reduction.md)
 #### [Règles de réduction de la surface d’attaque (ASR)]()

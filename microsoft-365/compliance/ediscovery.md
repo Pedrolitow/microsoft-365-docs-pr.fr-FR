@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements, tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les Groupes Microsoft 365, Microsoft Teams et les conversations Skype Entreprise. eDiscovery (Standard) et eDiscovery (Premium) fournissent de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos investigations.
-ms.openlocfilehash: c35b0c92ce38fecf0aac31b72037d9cbe3e05073
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.openlocfilehash: a0c30c95d92a6bd0cf1e3fd81c866fde8947ba31
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445157"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812005"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Solutions eDiscovery Microsoft Purview
 
@@ -197,4 +197,4 @@ Pour connaître les fonctionnalités eDiscovery qui ont été lancées, déploy�
 
 ## <a name="training"></a>Formation
 
-La formation de vos administrateurs informatiques, responsables eDiscovery et équipes d’investigation de conformité aux principes de base de la recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium) peut aider votre organisation à démarrer plus rapidement à l’aide des outils microsoft 365 eDiscovery. Microsoft 365 fournit la ressource suivante pour aider ces utilisateurs de votre organisation à bien démarrer avec eDiscovery : [Décrivez les fonctionnalités eDiscovery et d’audit de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+La formation de vos administrateurs informatiques, responsables eDiscovery et équipes d’investigation de conformité aux principes de base de la recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium) peut aider votre organisation à démarrer plus rapidement à l’aide des outils microsoft 365 eDiscovery. Microsoft 365 fournit la ressource suivante pour aider ces utilisateurs de votre organisation à bien démarrer avec eDiscovery : [Décrivez les fonctionnalités eDiscovery et d’audit de Microsoft 365](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

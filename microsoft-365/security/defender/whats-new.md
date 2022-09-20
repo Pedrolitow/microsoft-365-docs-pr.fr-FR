@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1d1eb2f292d5697eb3aabfbceaa89157e48473c3
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 09c07fe5947d370c6641fac7b589dc96974d7b7d
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495080"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811700"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ Répertorie les nouvelles fonctionnalités dans Microsoft 365 Defender.
 Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux :
 
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
+https://learn.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 Pour plus d’informations sur les nouveautés des autres produits de sécurité Microsoft Defender, consultez :
@@ -155,4 +155,3 @@ L’équipe des opérations de sécurité peut afficher toutes les actions en at
 - [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md)
 
   Recherchez des informations sur les événements dans différentes applications et services cloud couverts par Microsoft Defender for Cloud Apps. Ce tableau inclut également des informations précédemment disponibles dans la `AppFileEvents` table.
-

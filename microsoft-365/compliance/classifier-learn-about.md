@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les classifieurs pouvant être formés peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 1699ab81ba0f8225312126f17430ab27764ae176
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 09b02f948cc765901b098b1d2ec66ade7d4bfc5f
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663604"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811161"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -161,6 +161,11 @@ Vous pouvez aider à améliorer la précision de tous les classifieurs entraîn�
 > Les classifieurs préentraînés ne peuvent pas être réentraînés.
 
 ![workflow de réentraînement du classifieur.](../media/classifier-retraining-workflow.png)
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-trainable-classifiers"></a>Fournir un retour de précision de correspondance/non dans les classifieurs pouvant être formés
+
+Vous pouvez afficher le nombre de correspondances d’un classifieur pouvant être formé dans **l’Explorateur de contenu** et **les lassifieurs Pouvant être formés**. Vous pouvez également fournir des commentaires sur la question de savoir si un élément est réellement une correspondance ou non à l’aide du mécanisme **de commentaires Match**, **Pas une** correspondance et utiliser ces commentaires pour ajuster vos classifieurs. Pour plus d’informations, voir [Augmenter la précision du classifieur (préversion](data-classification-increase-accuracy.md) ). 
+
 
 ## <a name="see-also"></a>Voir aussi
 

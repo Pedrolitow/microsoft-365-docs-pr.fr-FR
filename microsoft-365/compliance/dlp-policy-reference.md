@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: f9d5b5065925805c346f865706b34bb05c268571
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 6368a534f40606d906efa2b8a9f6ca920fcd6ce1
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643892"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812115"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -521,8 +521,8 @@ L’effet ou non d’une action dépend de la façon dont vous configurez le mod
 
 <!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
 
-- https://docs.microsoft.com/en-us/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
-- https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
+- https://learn.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
+- https://learn.microsoft.com/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
 
 for where they are used/expected behavior-->
 
@@ -672,7 +672,7 @@ L’objectif des **remplacements d’utilisateurs** est de donner aux utilisateu
 
 En règle générale, les remplacements d’utilisateurs sont utiles lorsque votre organisation déploie une stratégie pour la première fois. Les commentaires que vous obtenez à partir de toute justification de remplacement et l’identification de faux positifs vous aident à paramétrer la stratégie. 
 
-<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
+<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
 - Si les conseils de stratégie de la règle la plus restrictive autorisent les utilisateurs à remplacer la règle, toute autre règle également mise en correspondance avec le contenu est aussi remplacée.
  
@@ -687,8 +687,8 @@ Pour en savoir plus sur les remplacements d’utilisateurs, consultez :
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
 
-https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
-https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
+https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
+https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
 Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Le rapport contient des informations sur l’élément qui a été mis en correspondance, le contenu réel correspondant à la règle et le nom de la personne qui a modifié le contenu pour la dernière fois. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
 

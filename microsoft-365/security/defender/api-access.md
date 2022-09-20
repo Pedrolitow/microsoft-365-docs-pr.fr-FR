@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: 0562ff901aa8021973fb1ed36e8caf464f22d672
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6b85fdb411ed33b21c3524a2bdad4d339b4e019a
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481567"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812345"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Accéder aux API Microsoft 365 Defender
 
@@ -91,5 +91,5 @@ Pour plus d’informations, consultez **[Créer une application avec accès part
 
 - [Vue d’ensemble des API Microsoft 365 Defender](api-overview.md)
 - [Autorisation OAuth 2.0 pour la connexion utilisateur et l’accès à l’API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-- [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Créer une application « Hello World » qui accède aux API Microsoft 365](api-hello-world.md)

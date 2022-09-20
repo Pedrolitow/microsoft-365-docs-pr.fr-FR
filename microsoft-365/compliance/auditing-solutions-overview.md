@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c98d1ab6e430d22f5e4c2aad2d881061fcf32c90
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: e0821744ca74d95226c16959663534c3c7e01777
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631447"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812301"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Solutions d’audit dans Microsoft Purview
 
@@ -183,4 +183,4 @@ To implement Customer Key for auditing, you have to create a multi-workload Data
 
 ## <a name="training"></a>Formation
 
-Former votre équipe d’opérations de sécurité, vos administrateurs informatiques et votre équipe d’enquêteurs de conformité aux fondamentaux de l’audit (standard) et de l’audit (premium) peut aider votre organisation à démarrer plus rapidement en utilisant l’audit pour vous aider dans vos enquêtes. Microsoft Purview fournit la ressource suivante pour aider ces utilisateurs de votre organisation à démarrer l’audit : [Décrire les fonctionnalités eDiscovery et d’audit de Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Former votre équipe d’opérations de sécurité, vos administrateurs informatiques et votre équipe d’enquêteurs de conformité aux fondamentaux de l’audit (standard) et de l’audit (premium) peut aider votre organisation à démarrer plus rapidement en utilisant l’audit pour vous aider dans vos enquêtes. Microsoft Purview fournit la ressource suivante pour aider ces utilisateurs de votre organisation à démarrer l’audit : [Décrire les fonctionnalités eDiscovery et d’audit de Microsoft Purview](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

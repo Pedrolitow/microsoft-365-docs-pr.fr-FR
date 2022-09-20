@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: ca56847bf484714aaa7155ce756417b5263a746b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 0b282686554edb1668cf25318d349a1ed9704a21
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482447"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812323"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World pour Microsoft 365 Defender API REST
 
@@ -84,7 +84,7 @@ La réalisation de ce projet doit prendre de 5 à 10 minutes. Cette estimation d
 Pour plus d’informations sur les jetons Azure Active Directory, consultez le [didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Bien que l’exemple de cette application de démonstration vous encourage à coller votre valeur secrète à des fins de test, vous **ne devez jamais coder en dur les secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, consultez [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Bien que l’exemple de cette application de démonstration vous encourage à coller votre valeur secrète à des fins de test, vous **ne devez jamais coder en dur les secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, consultez [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 1. Copiez le script ci-dessous et collez-le dans votre éditeur de texte favori. Enregistrer en **tant queGet-Token.ps1**. Vous pouvez également exécuter le code tel quel dans PowerShell ISE, mais vous devez l’enregistrer, car nous devons le réexécuter lorsque nous utiliserons le script d’extraction d’incidents dans la section suivante.
 
@@ -179,5 +179,5 @@ Vous avez terminé ! Vous avez réussi :
 - [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md)
 - [Créer une application pour accéder aux API Microsoft 365 Defender pour le compte d’un utilisateur](api-create-app-user-context.md)
 - [Créer une application avec un accès partenaire multilocataire aux API Microsoft 365 Defender](api-partner-access.md)
-- [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Autorisation OAuth 2.0 pour la connexion utilisateur et l’accès à l’API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

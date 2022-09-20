@@ -8,12 +8,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: d9b7b7b14ceb6ffea0c844848e185f397e2c6da6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 908d50e2fbf39bb953abbbcf7d004e78e836dd30
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735721"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811195"
 ---
 # <a name="data-sets"></a>Jeux de données
 
@@ -230,7 +230,7 @@ Lorsqu’un utilisateur développe un hachage SHA1, il peut voir des détails su
 
 ## <a name="subdomains"></a>Sous-domaines
 
-Un sous-domaine est un domaine Internet qui fait partie d’un domaine principal. Les sous-domaines sont également appelés « hôtes ». Par exemple,`docs.microsoft.com` est un sous-domaine de `microsoft.com`. Pour chaque sous-domaine, il peut y avoir un nouvel ensemble d’adresses IP auxquelles le domaine se résout. Il peut s’agir d’une excellente source de données pour la recherche d’une infrastructure associée.
+Un sous-domaine est un domaine Internet qui fait partie d’un domaine principal. Les sous-domaines sont également appelés « hôtes ». Par exemple,`learn.microsoft.com` est un sous-domaine de `microsoft.com`. Pour chaque sous-domaine, il peut y avoir un nouvel ensemble d’adresses IP auxquelles le domaine se résout. Il peut s’agir d’une excellente source de données pour la recherche d’une infrastructure associée.
 
 Nos données de sous-domaine incluent les éléments suivants :
 

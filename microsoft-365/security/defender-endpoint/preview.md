@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 63dc2daa95af151571515fcc855aaa91477be14e
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 25eb7c0c556218d205d1a9994a31ba657dc34bec
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579179"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811349"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender pour point de terminaison fonctionnalités en préversion
 
@@ -40,7 +40,7 @@ Le service Defender pour point de terminaison est constamment mis à jour pour i
 Découvrez les nouvelles fonctionnalités de la préversion de Defender pour point de terminaison et soyez parmi les premiers à essayer les fonctionnalités à venir en activant l’expérience en préversion.
 
 > [!TIP]
-> Recevez une notification lorsque cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> Recevez une notification lorsque cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux : `https://learn.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, consultez [Les nouveautés de Defender pour point de terminaison](whats-new-in-microsoft-defender-endpoint.md).
 

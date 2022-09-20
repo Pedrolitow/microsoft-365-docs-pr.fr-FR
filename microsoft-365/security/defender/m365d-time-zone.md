@@ -20,12 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7f69ef59a91c368d51291080daa68517272bce74
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1032aef793295df2bb65d8a8ac4b3186544f5abe
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476163"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811479"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>Définir le fuseau horaire pour Microsoft 365 Defender
 
@@ -40,8 +40,9 @@ ms.locfileid: "67476163"
 Microsoft 365 Defender pouvez afficher des informations de date et d’heure à l’aide de votre fuseau horaire local ou UTC. Le fuseau horaire sélectionné s’applique à toutes les informations de date et d’heure indiquées dans les fonctionnalités suivantes dans le portail Microsoft 365 Defender :
 - Incidents
 - Enquête et correction automatiques, y compris le centre de notifications
+- Résultats de repérage avancés
 
 Pour définir le fuseau horaire de ces fonctionnalités, accédez à **Paramètres** >  **Microsoft 365 Defender** >  **Time**.
 
 > [!NOTE]
-> La chasse avancée conserve les informations de date et d’heure des résultats de la requête en UTC, quel que soit le paramètre de fuseau horaire. 
+> Le filtre d’intervalle de temps personnalisé dans la chasse avancée reste en UTC, quel que soit le paramètre de fuseau horaire. 

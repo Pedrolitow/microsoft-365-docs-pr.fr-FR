@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -21,12 +21,12 @@ ms.collection:
 - highpri
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: 66d87cb15c8f9ed5eb81f91f7102e5ffbaeb3d23
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: b1f05f728a73a167fe6d3200bf002ff3ac68a367
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797313"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812411"
 ---
 # <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Planifier le déploiement des règles de réduction de surface d’attaque (ASR)
 

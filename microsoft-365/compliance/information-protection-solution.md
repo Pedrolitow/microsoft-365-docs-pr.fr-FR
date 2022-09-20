@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - zerotrust-solution
 description: Des conseils pratiques pour déployer Microsoft Purview Information Protection dans votre organisation.
-ms.openlocfilehash: f1d358454e54a41c2cb20ec4dc31ec47db5d92a8
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 36c2d9815ee973aaab32527448fd652164eec83e
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663276"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811983"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Déployer une solution de protection des informations avec Microsoft Purview
 
@@ -101,10 +101,10 @@ Déployez des stratégies de prévention des pertes de données (DLP) Microsoft 
 
 Modules d’apprentissage pour les consultants et les administrateurs :
 
-- [Introduction à la protection de l'information et à la gestion du cycle de vie des données dans Microsoft Purview](/learn/modules/m365-compliance-information-governance)
-- [Classifier des données à des fins de protection et de gouvernance](/learn/modules/m365-compliance-information-classify-data)
-- [Protéger les informations dans Microsoft Purview](/learn/modules/m365-compliance-information-protect-information)
-- [Prévenir la perte de données dans Microsoft Purview](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Introduction à la protection de l'information et à la gestion du cycle de vie des données dans Microsoft Purview](/training/modules/m365-compliance-information-governance)
+- [Classifier des données à des fins de protection et de gouvernance](/training/modules/m365-compliance-information-classify-data)
+- [Protéger les informations dans Microsoft Purview](/training/modules/m365-compliance-information-protect-information)
+- [Prévenir la perte de données dans Microsoft Purview](/training/modules/m365-compliance-information-prevent-data-loss)
 
 Pour indiquer à vos utilisateurs comment appliquer et utiliser les étiquettes de confidentialité que vous configurez pour eux, consultez [Documentation de l’utilisateur final pour les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 

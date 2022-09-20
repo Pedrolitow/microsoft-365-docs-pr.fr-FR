@@ -22,12 +22,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans leurs organisations Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6193ebcce086c741b84af1f3dc701e6ac0340537
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 61a8dd68635c3ef71ca8573ce4d08451a581ba95
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598909"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811327"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -115,7 +115,7 @@ Microsoft 365 fournit les ressources suivantes pour aider à informer les utilis
 |Concept|Ressources|Description|
 |---|---|---|
 |Microsoft 365|[Parcours d’apprentissage personnalisables](/office365/customlearning/)|Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs de votre organisation.|
-|Sécurité Microsoft 365|[Module d’apprentissage : Sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365)|Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
+|Sécurité Microsoft 365|[Module d’apprentissage : Sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/training/modules/security-with-microsoft-365)|Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
 |Authentification multifacteur|[Vérification en deux étapes : quelle est la page de vérification supplémentaire ?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Cet article aide les utilisateurs finaux à comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée auprès de votre organisation.|
 |Formation à la simulation d'attaque|[Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)|Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 Plan 2 permet à l’administrateur de configurer, lancer et suivre des attaques par hameçonnage simulées contre des groupes d’utilisateurs spécifiques.|
 

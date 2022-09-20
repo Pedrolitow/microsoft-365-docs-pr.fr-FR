@@ -7,7 +7,7 @@ author: brendacarter
 manager: dansimp
 audience: Admin
 ms.topic: tutorial
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 8169020e08cd7fd2531089807a29d1f6ac809b22
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 0dd496fd0bb864fa8e9abde554cb23fd5a695ab8
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798844"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811678"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité afin de prendre en charge le travail à domicile
 
@@ -211,7 +211,7 @@ Microsoft 365 fournit les ressources suivantes pour aider à informer les utilis
 |Concept|Ressources|
 |---|---|
 |Microsoft 365|[Parcours d’apprentissage personnalisables](/office365/customlearning/) <p>Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs finaux de votre organisation.|
-|Sécurité Microsoft 365|[Module d’apprentissage : Sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
+|Sécurité Microsoft 365|[Module d’apprentissage : Sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/training/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
 |Authentification multifacteur|[Vérification en deux étapes : quelle est la page de vérification supplémentaire ?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Cet article aide les utilisateurs finaux à comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée auprès de votre organisation.|
 
 En plus de ces conseils, Microsoft recommande à vos utilisateurs d’effectuer les actions décrites dans cet article : [Protéger votre compte et vos appareils contre les pirates et les programmes malveillants](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Ces actions incluent :

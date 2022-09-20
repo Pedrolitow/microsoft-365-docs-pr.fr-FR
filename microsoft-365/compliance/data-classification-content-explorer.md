@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: d00d8febe5c30b438d77e3c9b82b6a8bb6011812
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 0fa17cd3f76290e130c768438733cd1db6515438
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360454"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811139"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -145,6 +145,10 @@ Vous pouvez effectuer une recherche sur les éléments suivants :
 |texte au début du nom de fichier| `RES`|
 |texte après un caractère de soulignement (_) dans le nom de fichier|`Resume` ou `1234`| 
 |extension du fichier|`txt`|
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-content-explorer"></a>Fournir un retour de précision de correspondance/non dans l’Explorateur de contenu
+
+Vous pouvez afficher le nombre de correspondances d’un classifieur SIT ou pouvant être formé dans **l’Explorateur de contenu**. Vous pouvez également fournir des commentaires sur la question de savoir si un élément est réellement une correspondance ou non à l’aide du mécanisme **de commentaires Match**, **Pas une** correspondance et utiliser ces commentaires pour ajuster vos classifieurs. Pour plus d’informations, voir [Augmenter la précision du classifieur (préversion](data-classification-increase-accuracy.md) ). 
 
 
 ## <a name="see-also"></a>Voir aussi

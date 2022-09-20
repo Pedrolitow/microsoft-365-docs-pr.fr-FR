@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les meilleures pratiques de gouvernance pour les outils de collaboration Microsoft 365, notamment Groupes Microsoft 365, Teams, SharePoint et Yammer.
-ms.openlocfilehash: d67774bbf76665f7d278339e6dd24d0e9f195c6c
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 326611359b7146405664c85623122de48204e9c7
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730548"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811283"
 ---
 # <a name="what-is-collaboration-governance"></a>Qu'est-ce que la gouvernance de collaboration ?
 
@@ -177,7 +177,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 |![Icône d’entraînement de la protection des informations.](../media/information-protection-governance.svg)|La quantité de données générées aujourd’hui croît plus rapidement que jamais, les employés souhaitent travailler partout et le paysage réglementaire évolue en permanence. Les solutions de Microsoft pour la protection et la gouvernance des informations aident les organisations à obtenir le bon équilibre entre la protection de leurs données et la productivité de leurs employés. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>5 h 13 min - Parcours d’apprentissage - 7 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/m365-compliance-information-governance/introduction/)
+> [Démarrer >](/training/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -186,16 +186,16 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 |![Icône d’entraînement Teams.](../media/protect-enterprise-information-microsoft-365.svg)|La protection et la sécurisation des informations de votre organisation sont plus exigeantes que jamais. Le chemin d'accès de l’apprentissage Protéger une entreprise à l’aide de Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité, et comment surveiller et analyser vos informations sensibles pour prévenir leurs perte.<br><br>1 heure - Parcours d’apprentissage - 5 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)
+> [Démarrer >](/training/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Sécurité et conformité
 
 |Formation :|Faire preuve de connaissances fondamentales des fonctionnalités de sécurité et de conformité Microsoft 365|
 |:---|:---|
-|![Icône d’apprentissage de la sécurité et de la conformité.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Découvrez les domaines des solutions de sécurité et de conformité Microsoft 365 et les fonctionnalités disponibles pour aider les entreprises à sécuriser leur entreprise et à respecter les obligations réglementaires. Si vous n’êtes pas familiarisé avec les concepts de base du cloud computing, nous vous recommandons de suivre [les concepts cloud - Principes du cloud computing](/learn/modules/principles-cloud-computing/index).<br><br>3 h 11 min - Parcours d’apprentissage - 8 modules|
+|![Icône d’apprentissage de la sécurité et de la conformité.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Découvrez les domaines des solutions de sécurité et de conformité Microsoft 365 et les fonctionnalités disponibles pour aider les entreprises à sécuriser leur entreprise et à respecter les obligations réglementaires. Si vous n’êtes pas familiarisé avec les concepts de base du cloud computing, nous vous recommandons de suivre [les concepts cloud - Principes du cloud computing](/training/modules/principles-cloud-computing/index).<br><br>3 h 11 min - Parcours d’apprentissage - 8 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/what-is-m365/1-introduction/)
+> [Démarrer >](/training/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Illustrations
 

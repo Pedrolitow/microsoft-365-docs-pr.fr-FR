@@ -13,12 +13,12 @@ metadata:
   ms.author: samanro
   ms.date: 06/08/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 5e63d62606766a49440d0258bfb2fd1f42eae024
-  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+  ms.openlocfilehash: b69acb8c0a427438ee4f894d62ccc368033f8fe1
+  ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/13/2022
-  ms.locfileid: "67664577"
+  ms.lasthandoff: 09/20/2022
+  ms.locfileid: "67811832"
 highlightedContent:
   items:
   - title: Configurer votre infrastructure pour un travail hybride
@@ -27,9 +27,9 @@ highlightedContent:
   - title: Apprentissage à distance avec Microsoft Teams
     itemType: get-started
     url: /MicrosoftTeams/remote-learning-edu
-  - title: Développer vos compétences avec Microsoft Learn
+  - title: Développer vos compétences avec la formation Microsoft Learn
     itemType: learn
-    url: /learn/m365/
+    url: /training/m365/
   - title: Démarrer votre petite entreprise avec Microsoft 365
     itemType: quickstart
     url: business-video/index.yml

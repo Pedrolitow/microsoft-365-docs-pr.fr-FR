@@ -24,12 +24,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: 6c442d0a3a3394a29ad89e81add2a1608c4d675b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 70a262cd53bed114bd8d4a8e737c796b13bd831a
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516541"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809418"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 
@@ -146,7 +146,7 @@ Suivez et répondez aux menaces émergentes avec l’analyse des menaces Microso
 > Outre le filtre Produit, les rubriques actuelles, les types de ressources (des vidéos aux webinaires), les niveaux de connaissance ou d’expérience des zones de sécurité, les rôles de sécurité et les fonctionnalités de produit sont répertoriés.
 
 > [!TIP]
-> Il existe de nombreuses autres opportunités d’apprentissage dans [Microsoft Learn](/learn/). Vous trouverez une formation de certification telle que [le cours MS-500T02-A : Implémentation de la protection microsoft 365 contre les menaces](/learn/certifications/courses/ms-500t02).
+> Il existe de nombreuses autres opportunités d’apprentissage dans [Microsoft Learn](/training/). Vous trouverez une formation de certification telle que [le cours MS-500T02-A : Implémentation de la protection microsoft 365 contre les menaces](/training/certifications/courses/ms-500t02).
 
 ## <a name="send-us-your-feedback"></a>Envoyez-nous vos commentaires
 
@@ -173,7 +173,7 @@ Avec ce parcours d’apprentissage de Microsoft Learn, vous pouvez comprendre Mi
 |![Microsoft 365 Defender de formation.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifie les signaux de menace sur les points de terminaison, les identités, le courrier électronique et les applications afin de fournir une protection intégrée contre les cyberattaques sophistiquées. Microsoft 365 Defender est l’expérience centrale pour examiner et répondre aux incidents et rechercher de manière proactive les activités de cybersécurité malveillantes en cours.<p> 1 h 38 min - Parcours d’apprentissage - 5 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/paths/defender-detect-respond/)
+> [Démarrer >](/training/paths/defender-detect-respond/)
 
 
 ## <a name="see-also"></a>Voir aussi

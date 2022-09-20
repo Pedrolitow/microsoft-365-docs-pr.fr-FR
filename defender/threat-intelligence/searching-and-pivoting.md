@@ -8,12 +8,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 6bb98e3427b902c6559f9f3fa88559f90152b540
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 2e42f7689e850b7b65b3e048f8f7c187a76e7c28
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741673"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809890"
 ---
 # <a name="searching-and-pivoting"></a>Recherche et pivotage
 
@@ -21,7 +21,7 @@ Microsoft Defender Threat Intelligence (Defender TI) offre un moteur de recherch
 
 ![Capture d’écran de La recherche dans HomePage Chrome](media/searchHomePageChromeScreenshot.png)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).
@@ -156,7 +156,7 @@ La recherche Threat Intelligence de Defender TI est à la fois simple et puissan
 
 En haut de la page, la plateforme fournit des informations de base sur l’artefact. Ces informations peuvent inclure les éléments suivants, en fonction du type d’artefact :  
 
-- **Pays :** l’indicateur en regard de l’adresse IP indique le pays d’origine de l’artefact, ce qui peut aider à déterminer sa capacité de débit ou sa posture de sécurité. Cette adresse IP est hébergée sur l’infrastructure dans le Estados Unidos.
+- **Pays :** l’indicateur en regard de l’adresse IP indique le pays d’origine de l’artefact, ce qui peut aider à déterminer sa capacité de débit ou sa posture de sécurité. Cette adresse IP est hébergée sur l’infrastructure dans le États-Unis.
 - **Réputation :** dans cet exemple, l’adresse IP est marquée avec « Malveillant », ce qui indique que la plateforme a détecté des connexions entre cet artefact et l’infrastructure de conseil connue. Les artefacts peuvent également être étiquetés « Suspect », « Neutre » ou « Inconnu ».
 - **Première vue :** cet horodatage indique quand l’artefact a été observé pour la première fois par le système de détection de la plateforme. Comprendre la durée de vie d’un artefact peut aider à déterminer sa capacité de débit.
 - **Dernière vue :** cet horodatage indique quand l’artefact a été observé pour la dernière fois par le système de détection de la plateforme. Cela permet de déterminer si l’artefact est toujours utilisé activement.
@@ -349,7 +349,7 @@ Lorsqu’un utilisateur clique sur un hachage Sha1, il peut voir des détails su
 
 ### <a name="subdomains"></a>Sous-domaines
 
-Un sous-domaine est un domaine Internet qui fait partie d’un domaine principal. Les sous-domaines sont également appelés « hôtes ». Par exemple, `docs.microsoft.com` est un sous-domaine de `microsoft.com`. Pour chaque sous-domaine, il peut y avoir un nouvel ensemble d’adresses IP auxquelles le domaine se résout. Il peut s’agir d’une excellente source de données pour la recherche d’une infrastructure associée.
+Un sous-domaine est un domaine Internet qui fait partie d’un domaine principal. Les sous-domaines sont également appelés « hôtes ». Par exemple, `learn.microsoft.com` est un sous-domaine de `microsoft.com`. Pour chaque sous-domaine, il peut y avoir un nouvel ensemble d’adresses IP auxquelles le domaine se résout. Il peut s’agir d’une excellente source de données pour la recherche d’une infrastructure associée.
 
 Nos données de sous-domaine incluent les éléments suivants :
 

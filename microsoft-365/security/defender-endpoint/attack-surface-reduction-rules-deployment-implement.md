@@ -5,7 +5,8 @@ keywords: Déploiement de règles de réduction de la surface d’attaque, dépl
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -19,14 +20,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
 - highpri
-ms.date: 1/18/2022
+ms.date: 09/19/2022
 search.appverid: met150
-ms.openlocfilehash: bde1cd13ce04ee4ea9cbf2d0c3b8b2d9cafbb258
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: dbfdf76791309f637e3380d748ff4c6533d1daa8
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799020"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811810"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>Activer des règles de réduction de la surface d’attaque (ASR)
 

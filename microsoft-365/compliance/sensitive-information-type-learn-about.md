@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, les numéros de carte de crédit ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 9cc42512109f0e939ac946b39a3cd6c060283347
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: 8e921a61004a52c0ee33d7005993a51374ee8dde
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309788"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811501"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -87,9 +87,9 @@ Chaque entité de type d’informations sensibles est définie par les champs su
 
 ![Diagramme des preuves corroborantes et de la fenêtre de proximité.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-<!--Learn more about confidence levels in this short video.
+Découvrez-en plus sur les niveaux de confiance dans cette courte vidéo.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
 
 ### <a name="example-sensitive-information-type"></a>Exemple de type d’informations sensibles
 
@@ -199,6 +199,11 @@ Vous pouvez choisir parmi plusieurs options pour créer des types d’informatio
 > `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-sensitive-info-types"></a>Fournir un retour de précision de correspondance/non dans les types d’informations sensibles
+
+Vous pouvez afficher le nombre de correspondances d’un SIT dans les **types d’informations sensibles** et **l’Explorateur de contenu**. Vous pouvez également fournir des commentaires sur la question de savoir si un élément est réellement une correspondance ou non à l’aide du mécanisme **De** correspondance, **pas d’un retour de** correspondance et utiliser ces commentaires pour régler vos SIT. Pour plus d’informations, voir [Augmenter la précision du classifieur (préversion](data-classification-increase-accuracy.md) ). 
+
 
 ## <a name="for-further-information"></a>Pour plus d’informations
 

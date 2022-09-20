@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -19,14 +20,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
 - highpri
-ms.date: 1/18/2022
+ms.date: 09/18/2022
 search.appverid: met150
-ms.openlocfilehash: dd2eefeb19670b349a0ee8dba7a7fa1982843897
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 76148e9b727d3894ee2696c2d59b84832b59c4d4
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799452"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811611"
 ---
 # <a name="test-attack-surface-reduction-asr-rules"></a>Tester des règles de réduction de la surface d’attaque (ASR)
 

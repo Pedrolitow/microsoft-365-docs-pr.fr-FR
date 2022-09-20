@@ -18,12 +18,12 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0d8d20777abbc211311502aa8c977a7adcc17e0b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f55b7941eb180f9e3a2af7448cb92349af7e3a9c
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700111"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809736"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -173,4 +173,4 @@ Avec ce parcours d'apprentissage de Microsoft Learn, vous pouvez comprendre Defe
 |![Microsoft 365 Defender de formation.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender pour point de terminaison est une solution de sécurité de point de terminaison qui offre la gestion des vulnérabilités, la protection des points de terminaison, la détection et la réponse des points de terminaison, la défense contre les menaces mobiles et les services managés dans une plateforme unifiée unique.<p> 2 h 25 min - Learning chemin d’accès - 9 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/paths/defender-endpoint-fundamentals/)
+> [Démarrer >](/training/paths/defender-endpoint-fundamentals/)

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les principales différences entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: 18235caa31876aa4d9a7b1733885d924804f7e46
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b17ab57cd7252c9a1cee7abb5a81359a965ca477
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581809"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812093"
 ---
 # <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Différences entre les modèles personnalisés dans Microsoft SharePoint Syntex 
 
@@ -89,7 +89,7 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 
 ## <a name="see-also"></a>Voir aussi
 
-[Formation : Améliorer les performances de votre entreprise avec AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Formation : Améliorer les performances de votre entreprise avec AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
 
 [Vue d’ensemble de la compréhension de document](document-understanding-overview.md)
 

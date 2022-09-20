@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
@@ -15,13 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/28/2018
-ms.openlocfilehash: a691a352ec8f2f001188a535aee1a70033eb9bea
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 1a02bcd596043ee27fc250f60ab68e627246bf62
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796915"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811633"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>Attribuer l’accès utilisateur au centre de sécurité Microsoft Defender.
 

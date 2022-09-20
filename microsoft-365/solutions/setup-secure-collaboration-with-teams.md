@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les meilleures pratiques pour configurer la collaboration et le partage de fichiers sécurisés dans Teams afin de protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: f222b52356b3dbcba83811b4e4bfbe862e773baa
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 40346ded5af67c7aac11e0491bfc7bd296e13c3d
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728557"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811217"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Configurer le partage de fichiers sécurisé et la collaboration avec Microsoft Teams
 
@@ -141,7 +141,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 |![Icône d’entraînement de collaboration Teams.](../media/manage-team-collaboration-with-microsoft-teams.svg)|Gérer la collaboration en équipe avec Microsoft Teams vous présente les fonctionnalités et possibilités de Microsoft Teams, le Hub central pour la collaboration en équipe dans Microsoft 365. Vous découvrirez comment utiliser Teams pour simplifier le travail en équipe et la communication au sein de votre organisation, à la fois en local et hors site, sur un large éventail d’appareils (des bureaux aux tablettes et téléphones), tout en tirant parti des fonctionnalités enrichies des applications Office 365. Vous pourrez ainsi comprendre comment Teams fournit un environnement complet et flexible pour la collaboration entre les applications et les appareils. Cette rubrique d’apprentissage peut vous aider à vous préparer à la certification Certification Microsoft 365 : Administrateur Teams associé.<p>2 h 17 min - Parcours d’apprentissage - 5 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [Démarrer >](/training/modules/m365-teams-collab-prepare-deployment/introduction/)
 
 ### <a name="sharepoint"></a>SharePoint
 
@@ -150,7 +150,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 |![Icône d’entraînement SharePoint.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Gérer le contenu partagé avec Microsoft SharePoint vous présente les fonctionnalités de SharePoint, ainsi que son fonctionnement avec Microsoft 365. Vous découvrirez les différents types de sites SharePoint, notamment les sites hub, ainsi que la protection des informations, la création de rapports et la surveillance. En outre, vous apprendrez à utiliser le partage de fichiers et de dossiers SharePoint pour optimiser la collaboration, à partager des fichiers en externe et à gérer des sites SharePoint dans le Centre d’administration SharePoint. Cette rubrique d’apprentissage peut vous aider à vous préparer à la certification Certification Microsoft 365 : Administrateur de travail d’équipe associé.<p>1 h 14 min - Parcours d’apprentissage - 4 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [Démarrer >](/training/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 ### <a name="information-protection"></a>Protection des informations
 
@@ -159,7 +159,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 |![Icône d’entraînement de la protection des informations Teams.](../media/protect-enterprise-information-microsoft-365.svg)|La protection et la sécurisation des informations de votre organisation sont plus exigeantes que jamais. Le chemin d'accès de l’apprentissage Protéger une entreprise à l’aide de Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité, et comment surveiller et analyser vos informations sensibles pour prévenir leurs perte.<p>1 heure - Parcours d’apprentissage - 5 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)
+> [Démarrer >](/training/modules/m365-security-info-overview/introduction/)
 
 ### <a name="identity-and-access"></a>Identité et accès
 
@@ -168,7 +168,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 |![Icône d’entraînement d’identité et d’accès.](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<p>2 h 52 min - Parcours d’apprentissage - 6 modules|
 
 > [!div class="nextstepaction"]
-> [Démarrer >](/learn/modules/m365-identity-overview/introduction/)
+> [Démarrer >](/training/modules/m365-identity-overview/introduction/)
 
 ## <a name="training-for-end-users"></a>Formation pour les utilisateurs finaux
 

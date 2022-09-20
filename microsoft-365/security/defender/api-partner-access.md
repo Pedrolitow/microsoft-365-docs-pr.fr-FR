@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: 03c87d32cf850d75fb83eefdc989927fcdc6ae90
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6925fa1fc1703ebcbf49557b0afd4fb3bccfb406
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479551"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812203"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Créer une application avec un accès partenaire aux API Microsoft 365 Defender
 
@@ -148,7 +148,7 @@ Les étapes suivantes vous guident dans la création d’une application Azure A
 Pour plus d’informations sur les jetons Azure AD, consultez le [didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous **ne devez jamais coder en dur les secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, consultez [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous **ne devez jamais coder en dur les secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, consultez [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 > [!TIP]
 > Dans les exemples suivants, utilisez l’ID de locataire d’un utilisateur pour tester que le script fonctionne.
@@ -299,5 +299,5 @@ L’exemple suivant montre comment envoyer une demande pour obtenir une liste d�
 - [Créer une application pour accéder aux API Microsoft 365 Defender pour le compte d’un utilisateur](api-create-app-user-context.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)
-- [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Autorisation OAuth 2.0 pour la connexion utilisateur et l’accès à l’API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

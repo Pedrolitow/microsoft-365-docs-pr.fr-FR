@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -21,12 +21,12 @@ ms.collection:
 - highpri
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: 7d2d9bacb6c1086e8e83d0640376a84ee88589a6
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 325d233f9af34744b4249b68625a8c577a078ada
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799415"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811788"
 ---
 # <a name="operationalize-attack-surface-reduction-asr-rules"></a>Utiliser des règles de réduction de la surface d’attaque (ASR)
 

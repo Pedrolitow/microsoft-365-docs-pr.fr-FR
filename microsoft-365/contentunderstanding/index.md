@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment rechercher des ressources pour Microsoft SharePoint Syntex.
-ms.openlocfilehash: 55714bdf4f362978ee77e152dea7a4dfccbd9f00
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 9855ec1b392ea1f2b775e5ba2c2a85b817c8b464
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583713"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67810800"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Présentation de Microsoft SharePoint Syntex
 
@@ -54,7 +54,7 @@ Les ressources de cette section vous aident à en savoir plus sur les méthodes 
 |Voir les ressources dans le centre de ressources Microsoft Tech Community|[Services de contenu Syntex SharePoint dans Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Forum aux questions sur SharePoint Syntex dans le centre de ressources Microsoft Tech Community |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |Comment obtenir SharePoint Syntex |[Page de produit SharePoint Syntex](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
-|Apprendre à utiliser SharePoint Syntex |[SharePoint Syntex parcours d’apprentissage](/learn/paths/syntex-get-started)|
+|Apprendre à utiliser SharePoint Syntex |[SharePoint Syntex parcours d’apprentissage](/training/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>Adoption
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment utiliser ai build pour créer des modèles de traitement de formulaires dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 8bcb5874ce62b8125e385fcf9eca8dbd2ca9f0fa
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 327a8b91842f032a1176ab32e84b3f568079e8d2
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585243"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812499"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble sur le traitement de formulaires dans Microsoft SharePoint Syntex
 
@@ -68,4 +68,4 @@ Si vous utilisez un environnement personnalisé (plutôt que l’environnement p
 
 [Présentation de la présentation des documents](document-understanding-overview.md)
 
-[Formation : Améliorer les performances de votre entreprise avec AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Formation : Améliorer les performances de votre entreprise avec AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
