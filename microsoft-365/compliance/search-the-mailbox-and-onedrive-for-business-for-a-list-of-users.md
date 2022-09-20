@@ -2,8 +2,8 @@
 title: Utiliser la recherche de contenu pour une liste d’utilisateurs sur la boîte aux lettres & OneDrive Entreprise site
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilisez la recherche de contenu et le script de cet article pour rechercher un groupe d’utilisateurs dans les boîtes aux lettres et les sites OneDrive Entreprise.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02ee9790d35eca411a9e27607a7e99ca962ddf05
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e819ca7838e5db29ee72b90bf96e70ebcb36be9b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629164"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825255"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
 
