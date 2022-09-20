@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.collection: ''
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: a25311b2bd5583c17d48cc38bcab043fed3b759f
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: ebca659bf4f9f8b426ee88779532af1baa66afb0
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811444"
+ms.locfileid: "67851351"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>La protection intégrée permet de se prémunir contre les ransomwares
 
@@ -35,7 +35,7 @@ ms.locfileid: "67811444"
 
 ## <a name="what-is-built-in-protection-and-how-does-it-work"></a>Qu’est-ce que la protection intégrée et comment fonctionne-t-elle ?
 
-La protection intégrée est un ensemble de paramètres par défaut qui sont déployées pour vous assurer que vos appareils sont protégés. Ces paramètres par défaut sont conçus pour protéger les appareils contre les ransomwares et autres menaces. Initialement, la protection intégrée inclut l’activation de [la protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) pour votre locataire, avec d’autres paramètres par défaut bientôt disponibles. 
+La protection intégrée est un ensemble de paramètres par défaut qui sont déployées pour vous assurer que vos appareils sont protégés. Ces paramètres par défaut sont conçus pour protéger les appareils contre les ransomwares et autres menaces. Initialement, la protection intégrée inclut l’activation de [la protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) pour votre locataire, avec d’autres paramètres par défaut bientôt disponibles. Pour plus d’informations, consultez le billet de blog Tech Community, [La protection contre les falsifications sera activée pour tous les clients d’entreprise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478).
 
 | Phase | Action exécutée |
 |:---|:---|
@@ -88,6 +88,7 @@ La protection intégrée est un ensemble de paramètres par défaut. Vous n’ê
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Blog tech community : La protection contre les falsifications sera activée pour tous les clients d’entreprise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478)
 - [Protéger les paramètres de sécurité avec la protection contre la falsifiation](prevent-changes-to-security-settings-with-tamper-protection.md)
 - [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security)
 - [Configuration de Microsoft Defender pour point de terminaison dans Intune](/mem/intune/protect/advanced-threat-protection-configure)

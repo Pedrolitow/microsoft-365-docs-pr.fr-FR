@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier une boîte aux lettres personnalisée (également appelée boîte aux lettres de soumissions d’utilisateurs) pour collecter les messages de courrier indésirable et de hameçonnage signalés par les utilisateurs. D’autres paramètres complètent l’expérience de création de rapports pour les utilisateurs lorsqu’ils signalent des messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b2f3f9b07c0d2d6c856fc786bf437bda76399ca1
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: e11b30d14a7aff37c6c33dd5e8ce36b0e922097b
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599558"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851059"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -154,7 +154,7 @@ Lorsque le **bouton Message de rapport Microsoft Outlook** **est** ![activé](..
 
   - **Spécifiez Office 365 adresse e-mail à utiliser comme expéditeur** : sélectionnez ce paramètre et entrez l’adresse e-mail dans la zone qui s’affiche.
   
-  - **Personnaliser les notifications** : cliquez sur ce lien pour personnaliser la notification par e-mail envoyée après un avis d’administrateur et marque un message signalé.
+  - **Personnaliser les notifications** : cliquez sur ce lien pour personnaliser la notification par e-mail envoyée après un avis d’administration et marque un message signalé.
 
     Dans le menu volant **Personnaliser le message de confirmation** qui s’affiche, configurez les paramètres suivants :
 
@@ -199,6 +199,17 @@ Pour identifier correctement les messages joints d’origine, les messages envoy
 Pour spécifier la raison pour laquelle les messages joints d’origine ont été signalés, les messages envoyés à la boîte aux lettres d’envoi de l’utilisateur doivent répondre aux critères suivants :
 
 - La pièce jointe du message d’origine n’est pas modifiée.
+- Le message signalé doit contenir les en-têtes requis suivants :
+  - 1. X-Microsoft-Antispam-Message-Info
+  - 2. Identificateur du message
+  - 3. X-Ms-Exchange-Organization-Network-Message-Id
+  - 4. X-Ms-Exchange-Crosstenant-Id
+
+> [!NOTE]
+> TenantId in `X-Ms-Exchange-Crosstenant-Id` doit être le même que le locataire.
+>
+> `X-Microsoft-Antispam-Message-Info` doit être un xmi valide.
+
 - La ligne Objet (titre de l’enveloppe) des messages envoyés à la boîte aux lettres des soumissions utilisateur doit commencer par l’une des valeurs de préfixe suivantes :
   - `1|` ou `Junk:`.
   - `2|` ou `Not junk:`.

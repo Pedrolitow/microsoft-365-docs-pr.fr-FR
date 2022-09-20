@@ -16,12 +16,12 @@ ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 246b97d6cef51d932e68b63b2d0dfae09d5862b2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ffa155a0b1d9598d19af5842553f68372f30b076
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683052"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851719"
 ---
 # <a name="machine-resource-type"></a>Type de ressource de machine
 
@@ -67,7 +67,7 @@ ms.locfileid: "67683052"
 |firstSeen|DateTimeOffset|Première date et heure auxquelles [l’ordinateur](machine.md) a été observé par Microsoft Defender pour point de terminaison.|
 |lastSeen|DateTimeOffset|Heure et date du dernier rapport d’appareil complet reçu. Un appareil envoie généralement un rapport complet toutes les 24 heures.|
 |osPlatform|Chaîne|Plateforme du système d’exploitation.|
-|onboardingstatus|Chaîne|État de l’intégration de l’ordinateur. Les valeurs possibles sont : « intégré » et « hors-carte ».|
+|onboardingstatus|Chaîne|État de l’intégration de l’ordinateur. Les valeurs possibles sont : « onboarded », « CanBeOnboarded », « Unsupported » et « InsufficientInfo ».|
 |osProcessor|Chaîne|Processeur de système d’exploitation. Utilisez plutôt la propriété osArchitecture.|
 |version|String|Version du système d’exploitation.|
 |osBuild|Valeur nullable longue|Numéro de build du système d’exploitation.|

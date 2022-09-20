@@ -1,6 +1,6 @@
 ---
-title: Confiança zero configurations d’identité et d’accès aux appareils - Microsoft 365 pour les entreprises
-description: Décrit les recommandations microsoft et les concepts de base pour le déploiement de stratégies et de configurations d’e-mail, de documents et d’applications sécurisées pour Confiança zero.
+title: Confiance nulle configurations d’identité et d’accès aux appareils - Microsoft 365 pour les entreprises
+description: Décrit les recommandations microsoft et les concepts de base pour le déploiement de stratégies et de configurations de messagerie sécurisées, de documents et d’applications pour Confiance nulle.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -23,22 +23,22 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 8030547629167f0d2ac8840ab150f988380aa196
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 811938ba4c4b4e174e594bd3855112524771ec5e
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710848"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851675"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configurations des identités Zéro confiance et de l’accès aux appareils
 
 Les architectures de sécurité qui s’appuient sur des pare-feu réseau et des réseaux privés virtuels (VPN) pour isoler et restreindre l’accès aux ressources et services technologiques d’une organisation ne sont plus suffisantes pour une main-d’œuvre qui requiert régulièrement l’accès à des applications et des ressources qui existent au-delà des limites traditionnelles du réseau d’entreprise.
 
-Pour résoudre ce nouveau monde de l’informatique, Microsoft recommande vivement le modèle de sécurité Confiança zero, qui est basé sur ces principes directeurs :
+Pour résoudre ce nouveau monde de l’informatique, Microsoft recommande vivement le modèle de sécurité Confiance nulle, qui est basé sur ces principes directeurs :
 
 - Vérifiez explicitement.
 
-  Toujours s’authentifier et autoriser en fonction de tous les points de données disponibles. C’est là que Confiança zero stratégies d’identité et d’accès aux appareils sont essentielles pour la connexion et la validation continue.
+  Toujours s’authentifier et autoriser en fonction de tous les points de données disponibles. C’est là que Confiance nulle stratégies d’identité et d’accès aux appareils sont cruciales pour la connexion et la validation continue.
 
 - Utilisez des autorisations selon le principe des privilèges minimum.
 
@@ -48,11 +48,11 @@ Pour résoudre ce nouveau monde de l’informatique, Microsoft recommande viveme
 
   Réduisez le rayon d’explosion et l’accès au segment. Vérifiez le chiffrement de bout en bout et utilisez l’analyse pour obtenir la visibilité, détecter les menaces et améliorer les défenses.
 
-Voici l’architecture globale de Confiança zero.
+Voici l’architecture globale de Confiance nulle.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png" alt-text="Architecture microsoft Confiança zero" lightbox="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png" alt-text="Architecture microsoft Confiance nulle" lightbox="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png":::
 
-Confiança zero stratégies d’identité et d’accès aux appareils répondent au principe de vérification de **guidage explicite** pour :
+Confiance nulle stratégies d’identité et d’accès aux appareils répondent au principe de vérification de **guidage explicite** pour :
 
 - Identités
 
@@ -66,9 +66,9 @@ Confiança zero stratégies d’identité et d’accès aux appareils répondent
 
   Appliquez des contrôles et des technologies pour découvrir l’informatique fantôme, garantir les autorisations appropriées dans l’application, contrôler l’accès en fonction de l’analytique en temps réel, surveiller le comportement anormal, contrôler les actions des utilisateurs et valider les options de configuration sécurisées.
 
-Cette série d’articles décrit un ensemble de configurations requises pour l’identité et l’accès aux appareils, ainsi qu’un ensemble d’accès conditionnel Azure Active Directory (Azure AD), de Microsoft Intune et d’autres stratégies pour Confiança zero accès à Microsoft 365 pour les applications et services cloud d’entreprise, d’autres services SaaS et des applications locales publiées avec Azure AD serwer proxy aplikacji.
+Cette série d’articles décrit un ensemble de configurations requises pour l’accès aux identités et aux appareils, ainsi qu’un ensemble d’accès conditionnel Azure Active Directory (Azure AD), de Microsoft Intune et d’autres stratégies pour Confiance nulle accès à Microsoft 365 pour les applications et services cloud d’entreprise, d’autres services SaaS et des applications locales publiées avec Azure AD Proxy d'application.
 
-Confiança zero paramètres et stratégies d’accès aux identités et aux appareils sont recommandés dans trois niveaux : point de départ, entreprise et sécurité spécialisée pour les environnements avec des données hautement réglementées ou classifiées. Ces niveaux et leurs configurations correspondantes fournissent des niveaux cohérents de protection Confiança zero sur vos données, identités et appareils.
+Confiance nulle paramètres et stratégies d’accès aux identités et aux appareils sont recommandés dans trois niveaux : point de départ, entreprise et sécurité spécialisée pour les environnements avec des données hautement réglementées ou classifiées. Ces niveaux et leurs configurations correspondantes fournissent des niveaux cohérents de protection Confiance nulle sur vos données, identités et appareils.
 
 Ces fonctionnalités et leurs recommandations :
 
@@ -93,7 +93,7 @@ Ces recommandations sont destinées aux architectes d’entreprise et aux profes
 
 ### <a name="customer-environment"></a>Environnement client
 
-Les stratégies recommandées s’appliquent aux organisations d’entreprise fonctionnant entièrement dans le cloud Microsoft et pour les clients disposant d’une infrastructure d’identité hybride, qui est une forêt жергілікті Active Directory Domain Services (AD DS) synchronisée avec un locataire Azure AD.
+Les stratégies recommandées s’appliquent aux organisations d’entreprise fonctionnant entièrement dans le cloud Microsoft et pour les clients disposant d’une infrastructure d’identité hybride, qui est une forêt Active Directory local Domain Services (AD DS) synchronisée avec un locataire Azure AD.
 
 La plupart des recommandations fournies reposent sur des services disponibles uniquement avec Microsoft 365 E5, Microsoft 365 E3 avec le module complémentaire sécurité E5, EMS E5 ou des licences Azure AD Premium P2.
 
@@ -117,7 +117,7 @@ Chaque secteur d’activité possède aussi sa propre réglementation spécialis
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png" alt-text="Cône Sécurité" lightbox="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png":::
 
-Ces conseils vous montrent comment implémenter Confiança zero protection pour les identités et les appareils pour chacun de ces niveaux de protection. Utilisez ces conseils comme un minimum pour votre organisation et ajustez les stratégies pour répondre aux exigences spécifiques de votre organisation.
+Ces conseils vous montrent comment implémenter Confiance nulle protection pour les identités et les appareils pour chacun de ces niveaux de protection. Utilisez ces conseils comme un minimum pour votre organisation et ajustez les stratégies pour répondre aux exigences spécifiques de votre organisation.
 
 Il est important d’utiliser des niveaux de protection cohérents sur vos identités, appareils et données. Par exemple, la protection pour les utilisateurs disposant de comptes&mdash;prioritaires tels que les cadres, les dirigeants, les responsables et d’autres&mdash;personnes doit inclure le même niveau de protection pour leurs identités, leurs appareils et les données auxquels ils accèdent. 
 <!--
@@ -141,11 +141,11 @@ Les recommandations fournies sont basées sur les principes suivants :
 - Connaissez vos utilisateurs et soyez flexibles à leurs exigences de sécurité et fonctionnelles.
 - Appliquez une stratégie de sécurité juste-à-temps et assurez-vous qu’elle est significative.
 
-## <a name="services-and-concepts-for-zero-trust-identity-and-device-access-protection"></a>Services et concepts pour Confiança zero protection de l’identité et de l’accès aux appareils
+## <a name="services-and-concepts-for-zero-trust-identity-and-device-access-protection"></a>Services et concepts pour Confiance nulle protection de l’identité et de l’accès aux appareils
 
 Microsoft 365 pour entreprise est conçu pour permettre aux grandes organisations d’être créatifs et de collaborer en toute sécurité.
 
-Cette section fournit une vue d’ensemble des services et fonctionnalités Microsoft 365 qui sont importants pour Confiança zero l’identité et l’accès aux appareils.
+Cette section fournit une vue d’ensemble des services et fonctionnalités Microsoft 365 qui sont importants pour Confiance nulle l’identité et l’accès aux appareils.
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -161,9 +161,9 @@ Azure AD fournit une suite complète de fonctionnalités de gestion des identit�
 |[Réinitialisation de mot de passe en libre-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Permettre à vos utilisateurs de réinitialiser leurs mots de passe en toute sécurité et sans intervention du support technique, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler.|Microsoft 365 E3 ou E5|
 |[Protection par mot de passe Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)|Détectez et bloquez les mots de passe faibles connus et leurs variantes, ainsi que les termes faibles supplémentaires spécifiques à votre organisation. Les listes générales par défaut de mots de passe interdits sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir d’autres entrées dans une liste personnalisée de mots de passe interdits. Lorsque les utilisateurs modifient ou réinitialisent leurs mots de passe, ces listes sont vérifiées de façon à garantir l’utilisation de mots de passe forts.|Microsoft 365 E3 ou E5|
 
-Voici les composants de Confiança zero’identité et de l’accès aux appareils, notamment les objets Intune et Azure AD, les paramètres et les sous-services.
+Voici les composants de Confiance nulle’identité et de l’accès aux appareils, y compris les objets Intune et Azure AD, les paramètres et les sous-services.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Composants de l’identité Confiança zero et de l’accès aux appareils" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Composants de l’identité Confiance nulle et de l’accès aux appareils" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -180,12 +180,6 @@ Ces conseils vous montrent comment créer des stratégies recommandées pour app
 Ces conseils vous montrent comment implémenter un ensemble de stratégies pour protéger l’accès aux services cloud Microsoft 365, notamment Microsoft Teams, Exchange, SharePoint et OneDrive. En plus d’implémenter ces stratégies, nous vous recommandons d’augmenter le niveau de protection de votre locataire à l’aide des ressources suivantes :
 
 - [Configurer votre client pour une sécurité accrue](tenant-wide-setup-for-increased-security.md)
-
-  Recommandations qui s’appliquent à la sécurité des points de départ pour votre locataire.
-
-- [Feuille de route de sécurité : Principales priorités pour les 30 premiers jours, 90 jours et au-delà](security-roadmap.md)
-
-  Recommandations qui incluent la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
 
 ### <a name="windows-11-or-windows-10-with-microsoft-365-apps-for-enterprise"></a>Windows 11 ou Windows 10 avec Applications Microsoft 365 pour les grandes entreprises
 
@@ -210,7 +204,7 @@ Nous recommandons que les appareils appartenant à l’organisation soient gér�
 
 ## <a name="deployment-and-your-apps"></a>Déploiement et vos applications
 
-Avant de configurer et de déployer Confiança zero configuration de l’identité et de l’accès aux appareils pour vos applications intégrées à Azure AD, vous devez :
+Avant de configurer et de déployer Confiance nulle configuration de l’identité et de l’accès aux appareils pour vos applications intégrées à Azure AD, vous devez :
 
 - Déterminez les applications utilisées dans votre organisation que vous souhaitez protéger.
 - Analysez cette liste d’applications pour déterminer les ensembles de stratégies qui fournissent des niveaux de protection appropriés.
@@ -225,19 +219,19 @@ Par exemple, configurez les stratégies qui seront utilisées pour toutes vos ap
 
 De même, pour vos applications sensibles, créez l’ensemble de stratégies et ajoutez une application à la fois et parcourez tous les problèmes jusqu’à ce qu’ils soient tous inclus dans l’ensemble de stratégies d’application sensible.
 
-Microsoft recommande de ne pas créer d’ensembles de stratégies qui s’appliquent à toutes les applications, car cela peut entraîner des configurations inattendues. Par exemple, les stratégies qui bloquent toutes les applications peuvent verrouiller vos administrateurs hors du Azure-Portal et les exclusions ne peuvent pas être configurées pour des points de terminaison importants tels que Microsoft Graph.
+Microsoft recommande de ne pas créer d’ensembles de stratégies qui s’appliquent à toutes les applications, car cela peut entraîner des configurations inattendues. Par exemple, les stratégies qui bloquent toutes les applications peuvent verrouiller vos administrateurs hors du Portail Azure et les exclusions ne peuvent pas être configurées pour des points de terminaison importants tels que Microsoft Graph.
 
-## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>Étapes de configuration de l’identité Confiança zero et de l’accès aux appareils
+## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>Étapes de configuration de l’identité Confiance nulle et de l’accès aux appareils
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="Étapes de configuration de l’identité Confiança zero et de l’accès aux appareils" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="Étapes de configuration de l’identité Confiance nulle et de l’accès aux appareils" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
 
 1. Configurez les fonctionnalités d’identité requise et leurs paramètres.
 2. Configurez les stratégies courantes d’identité et d’accès conditionnel.
 3. Configurez des stratégies d’accès conditionnel pour les utilisateurs invités et externes.
 4. Configurez des stratégies d’accès conditionnel pour les applications&mdash;cloud Microsoft 365 telles que Microsoft Teams, Exchange et SharePoint&mdash;et les stratégies de Microsoft Defender for Cloud Apps.
 
-Une fois que vous avez configuré Confiança zero’identité et l’accès aux appareils, consultez le [guide de déploiement des fonctionnalités Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) pour obtenir une liste de vérification par phases des fonctionnalités supplémentaires à prendre en compte et [azure AD Identity Governance](/azure/active-directory/governance/) pour protéger, surveiller et auditer l’accès.
+Une fois que vous avez configuré Confiance nulle’identité et l’accès aux appareils, consultez le [guide de déploiement des fonctionnalités Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) pour obtenir une liste de vérification par phases des fonctionnalités supplémentaires à prendre en compte et [la gouvernance des identités Azure AD](/azure/active-directory/governance/) pour protéger, surveiller et auditer l’accès.
 
 ## <a name="next-step"></a>Étape suivante
 
-[Travail requis pour implémenter des stratégies d’identité et d’accès aux appareils Confiança zero](identity-access-prerequisites.md)
+[Travail requis pour implémenter Confiance nulle stratégies d’identité et d’accès aux appareils](identity-access-prerequisites.md)

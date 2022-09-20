@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: f312b426a94d1232f13157614e4a33a660d80a0b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ec8a5c030e56e9faae5d94dc636bea4c9c2351a7
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702905"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850397"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -281,6 +281,9 @@ Exemple :
 5. Passez en revue les paramètres et sélectionnez **Suivant** pour créer la stratégie.
 
 6. Une fois la stratégie créée, sélectionnez **Fermer**.
+
+> [!WARNING]
+> Il existe un problème connu avec l’applicabilité de la réduction de la surface d’attaque sur les versions du système d’exploitation du serveur qui est marquée comme conforme sans aucune application réelle. Actuellement, il n’existe pas d’ETA pour le moment où cela sera résolu.
 
 ### <a name="group-policy"></a>Stratégie de groupe
 

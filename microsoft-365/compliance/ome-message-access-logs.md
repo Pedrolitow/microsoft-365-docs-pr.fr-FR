@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les journaux d’accès sont disponibles pour les messages chiffrés récupérés via le portail des messages chiffrés.
-ms.openlocfilehash: 5d2733a39aff86a3ca6b0dd93809920a073c03b5
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 6a98e5e9ff537f5650900d53e009a3ed3400865d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67824022"
+ms.locfileid: "67851565"
 ---
 # <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Journal d’activité du portail de messages chiffré par Microsoft Purview Advanced Message Encryption
 
@@ -29,7 +29,7 @@ Les journaux d’accès sont disponibles pour les messages chiffrés via le port
 
 ## <a name="enabling-message-access-audit-logs-in-powershell"></a>Activation des journaux d’audit d’accès aux messages dans PowerShell
 
-Le journal d’accès peut être activé à l’aide [Exchange Online module PowerShell V2](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps). Le paramètre *-EnablePortalTrackingLogs* de Set-IrmConfiguration spécifie s’il faut activer les journaux d’audit pour accéder au portail de messages chiffrés. Les valeurs valides sont les suivantes :
+Le journal d’accès peut être activé à l’aide [de Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Le paramètre *EnablePortalTrackingLogs* de l’applet de commande **[Set-IrmConfiguration](/powershell/module/exchange/set-irmconfiguration)** spécifie s’il faut activer les journaux d’audit pour accéder au portail de messages chiffré. Les valeurs valides sont les suivantes :
 
 - $true : activez la fonctionnalité d’audit.
 - $false : désactiver la fonctionnalité d’audit

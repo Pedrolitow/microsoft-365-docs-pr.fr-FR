@@ -21,12 +21,12 @@ ms.custom:
 description: Cette rubrique vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du locataire qui affectent la sécurité de votre environnement Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e11248e7b1c45d09e6e6cd826720c7bf2019463d
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: d855d5307ded135fdb583f5fb498d0114f8da5ab
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597236"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851521"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 
@@ -39,9 +39,6 @@ ms.locfileid: "67597236"
 
 Cette rubrique vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du locataire qui affectent la sécurité de votre environnement Microsoft 365. Vos besoins en matière de sécurité peuvent nécessiter une sécurité plus ou moins importante. Utilisez ces recommandations comme point de départ.
 
-## <a name="check-office-365-secure-score"></a>Vérifier Office 365 degré de sécurisation
-
-Office 365 degré de sécurisation analyse la sécurité de votre organisation en fonction de vos activités régulières et de vos paramètres de sécurité et attribue un score. Commencez par prendre note de votre score actuel. L’ajustement de certains paramètres à l’échelle du locataire augmente votre score. L’objectif n’est pas d’atteindre le score maximal, mais d’être conscient des opportunités de protéger votre environnement qui n’affectent pas négativement la productivité de vos utilisateurs. Voir [Microsoft Secure Score](../defender/microsoft-secure-score.md).
 
 ## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>Paramétrer les stratégies de gestion des menaces dans le portail Microsoft 365 Defender
 

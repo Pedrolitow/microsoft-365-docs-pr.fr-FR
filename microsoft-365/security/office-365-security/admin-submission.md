@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails légitimes bloqués, des e-mails suspects, des e-mails suspects de hameçonnage, du courrier indésirable, d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9013f8c336ec7179c3934d6e352afc1b8a862461
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+ms.openlocfilehash: 834f77a5c3631d7c61f287affb0347e293935d2d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652426"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851741"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL, des e-mails légitimes bloqués et des pièces jointes à Microsoft
 
@@ -130,9 +130,6 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
    - **Fichier** : cliquez sur **Parcourir les fichiers** pour rechercher et sélectionner le fichier à envoyer.
 
-     > [!NOTE]
-     > Les soumissions de fichiers ne sont pas disponibles dans les clouds qui ne permettent pas aux données de quitter l’environnement. **Parcourir les fichiers** est grisé.
-
    - **Sélectionnez une raison pour l’envoi à Microsoft** : La vérification **doit avoir été bloquée (Faux négatif)** est sélectionnée.
 
      - **L’e-mail doit avoir été classé comme suit** : Sélectionner **hameçonnage** ou **programme malveillant**. Si vous n’êtes pas sûr, utilisez votre meilleur jugement.
@@ -168,9 +165,6 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
    - **Sélectionnez le type de soumission** : vérifiez que **l’URL** de la valeur est sélectionnée.
 
    - **URL** : entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html`), puis sélectionnez-la dans la zone qui s’affiche.
-
-     > [!NOTE]
-     > Les soumissions d’URL ne sont pas disponibles dans les clouds qui ne permettent pas aux données de quitter l’environnement. **L’URL** est grisée.
 
    - **Sélectionnez une raison pour l’envoi à Microsoft** : La vérification **doit avoir été bloquée (Faux négatif)** est sélectionnée.
 

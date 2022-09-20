@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b8090ff49a8371b4ad264030f9ebb845bf23e690
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 2062f1d03d23c3a2de029c862a332a089f2dabcc
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817832"
+ms.locfileid: "67851609"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -64,7 +64,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Prise en charge multilingue](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | En cours de révision |
 |[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do) aux nouveaux documents                                         | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do) à des documents existants | Déploiement vers le canal actuel : 2208+ <br /><br> Canal Entreprise mensuel : en cours d’examen  <br /><br> Semi-Annual Enterprise canal : en cours de révision | Déploiement vers la version 16.63+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do) à des documents existants | Canal actuel : 2208+ <br /><br> Canal Entreprise mensuel : 2207+  <br /><br> Semi-Annual Enterprise canal : en cours de révision | 16.63+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Demander une justification pour la modification d'étiquette.](sensitivity-labels.md#what-label-policies-can-do)                     | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+  <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Fournir un lien d’aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -78,7 +78,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Prise en charge de la co-édition et de l'enregistrement automatique](sensitivity-labels-coauthoring.md) pour les documents étiquetés et chiffrés | Canal actuel : 2107+ <br /><br> Canal mensuel des entreprises : 2107+ <br /><br> Canal d’entreprise semi-annuel : 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Prise en charge du format PDF](#pdf-support)| Canal actuel : 2208+ <br /><br> Canal Entreprise mensuel : 2208+ <br /><br> Semi-Annual Enterprise canal : en cours de révision|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
-|[Barre de sensibilité](#sensitivity-bar) et [couleur d’étiquette d’affichage](#label-colors) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider) |  Préversion : déploiement sur le [Canal bêta](https://office.com/insider) | En cours de révision | En cours de révision | En cours de révision |
+|[Barre de sensibilité](#sensitivity-bar) et [couleur d’étiquette d’affichage](#label-colors) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider) | En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Fonctionnalités d’étiquettes de confidentialité dans Outlook
 
@@ -453,11 +453,11 @@ Pour obtenir la documentation de l’utilisateur final, consultez [Créer des fi
 
 Nouvellement pris en charge en préversion pour les étiquettes intégrées dans Word, Excel et PowerPoint, mais pas encore pour Outlook ou Office sur le Web, consultez les tableaux de la section [des fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour identifier les versions minimales.
 
-Pour les applications prises en charge, les étiquettes de confidentialité sont désormais affichées dans une barre de confidentialité, en regard du nom du fichier dans la barre de fenêtre supérieure.  Par exemple :
+Pour les applications prises en charge, les étiquettes de confidentialité sont désormais affichées dans une barre de confidentialité, en regard du nom de fichier dans la barre de fenêtre supérieure. Par exemple :
 
 ![Étiquettes de confidentialité dans la barre de titre de la fenêtre.](../media/sensitivity-bar-example.png)
 
-Les informations sur les étiquettes et la possibilité de sélectionner ou de modifier une étiquette sont également intégrées aux flux de travail utilisateur qui incluent enregistrer et renommer, exporter, partager, imprimer et [convertir au format PDF](#pdf-support).
+Les informations sur les étiquettes et la possibilité de sélectionner ou de modifier une étiquette sont également intégrées aux flux de travail utilisateur qui incluent enregistrer et renommer, exporter, partager, imprimer et [convertir au format PDF](#pdf-support). Pour plus d’informations et des exemples de captures d’écran, consultez l’annonce du billet de blog, [Nouvelle barre de confidentialité dans Office pour Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 
 Dans le cadre de cette visibilité élevée, ces étiquettes prennent également en charge les couleurs. Pour plus d’informations, consultez la section suivante.
 
@@ -518,7 +518,3 @@ Vous pouvez également créer des rapports personnalisés avec le logiciel SIEM 
     - [Problèmes connus liés à l’application ou à la recommandation automatique des étiquettes de confidentialité](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
 - [Créer des fichiers PDF protégés à partir de fichiers Office](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
-
-
-
-

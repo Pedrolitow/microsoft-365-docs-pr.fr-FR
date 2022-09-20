@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les rapports de flux
 ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5dd1c851487efcc25c6a29975a3b3faa724329ac
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 26a6211e86266dad2705eb7024ad8a4b86e63e25
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671366"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851037"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de courrier dans le tableau de bord Rapports du Centre de sécurité & conformité
 
@@ -113,12 +113,3 @@ Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de
 > [!NOTE]
 > L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-## <a name="related-topics"></a>Voir aussi
-
-[Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
-
-[Informations sur le flux de messagerie dans le centre de sécurité et conformité](mail-flow-insights-v2.md)
-
-[Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
-
-[Afficher les rapports pour Microsoft Defender pour Office 365](view-reports-for-mdo.md)

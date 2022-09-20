@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment utiliser Configuration Analyzer pour Microsoft Purview pour être opérationnel rapidement avec le Gestionnaire de conformité Microsoft Purview.
-ms.openlocfilehash: 96d44dd310361e8a9ca2c4239448ced863abaddc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 437e8cc730cf3df9b3034f85d2dc9a615cb5ca5d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621158"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851167"
 ---
 # <a name="configuration-analyzer-for-microsoft-purview-camp"></a>Analyseur de configuration pour Microsoft Purview (CAMP)
 
@@ -47,9 +47,9 @@ Certains rôles d’utilisateur sont nécessaires pour accéder à CAMP et l’u
 
 Vous pouvez installer l’outil CAMP à l’aide de Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez CAMP, il vous demande de vous connecter et génère un nouveau rapport mis à jour.
 
-### <a name="step-1-install-the-exchange-online-powershell-v2-module"></a>Étape 1 : Installer le module Exchange Online PowerShell V2
+### <a name="step-1-install-the-exchange-online-powershell-module"></a>Étape 1 : Installer le module PowerShell Exchange Online
 
-Pour commencer, vous aurez besoin du module PowerShell Exchange Online (v2.0.3 ou version ultérieure) disponible dans la galerie PowerShell. Pour obtenir des instructions d’installation, consultez [Installer et gérer le module EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+Pour commencer, vous aurez besoin du module PowerShell Exchange Online (v2.0.3 ou version ultérieure) disponible dans la galerie PowerShell. Pour obtenir des instructions d’installation, consultez [Installer et gérer le module PowerShell Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 ### <a name="step-2-install-camp"></a>Étape 2 : Installer CAMP
 
@@ -114,7 +114,7 @@ Suivez ces instructions pour exécuter un rapport en fonction d’un emplacement
   | 3 | Canada |
   | 4 | Europe (hors France) / Moyen-Orient / Afrique |
   | 5 | France |
-  | 6  | Inde |
+  | 6 | Inde |
   | 7  | Japon |
   | 8  | Corée |
   | 9  | Amérique du Nord (à l’exception du Canada) |

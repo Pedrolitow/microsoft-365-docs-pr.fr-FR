@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 061760b71d46cd7ea90b90aa34d01e8b77ee5411
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 183fc5f26e50c1ca452540f683fd25c6af8e40bd
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596091"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850134"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 
@@ -160,14 +160,6 @@ Une fois que vous avez identifié une application avec des autorisations illicit
 - Vous pouvez également désactiver complètement la connexion pour le compte affecté, ce qui désactivera à son tour l’accès des applications aux données de ce compte. Ce n’est pas idéal pour la productivité de l’utilisateur final, bien sûr, mais si vous travaillez à limiter rapidement l’impact, il peut s’agir d’une correction viable à court terme.
 
 - Vous pouvez désactiver les applications intégrées pour votre location. Il s’agit d’une étape radicale qui désactive la possibilité pour les utilisateurs finaux d’accorder leur consentement à l’échelle du locataire. Cela empêche vos utilisateurs d’accorder par inadvertance l’accès à une application malveillante. Cela n’est pas fortement recommandé, car cela nuit gravement à la capacité de vos utilisateurs à être productifs avec des applications tierces. Pour ce faire, suivez les étapes de [l’activation ou de la désactivation des applications intégrées](../../admin/misc/user-consent.md).
-
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
-
-Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
-
-- Tâches à effectuer lors des 30 premiers jours. Ils ont un effet immédiat et sont peu impactants pour vos utilisateurs.
-- Tâches à accomplir en 90 jours. Celles-ci prennent un peu plus de temps à planifier et à implémenter, mais améliorent considérablement votre posture de sécurité.
-- Au-delà de 90 jours. Ces améliorations s’appuient sur vos 90 premiers jours de travail.
 
 ## <a name="see-also"></a>Voir aussi
 

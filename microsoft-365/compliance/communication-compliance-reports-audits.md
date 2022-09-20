@@ -1,6 +1,6 @@
 ---
 title: Utiliser les rapports et audits de conformité des communications
-description: Mer informasjon sur l’utilisation de rapports et d’audits de conformité des communications.
+description: En savoir plus sur l’utilisation des rapports et audits de conformité des communications.
 keywords: Microsoft 365, Microsoft Purview, conformité, conformité des communications
 f1.keywords:
 - NOCSH
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 13b5d83a5b5993e90938a774dff3063bc1da5f86
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: a3348ccc2458252aca84762d89d58dbeb9ebe92a
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731119"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851587"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Utiliser les rapports et audits de conformité des communications
 
@@ -55,47 +55,47 @@ Utilisez l’option *Exporter* pour créer un fichier .csv contenant les détail
 - **Paramètres et état** de la stratégie : fournit un examen détaillé de la configuration et des paramètres de stratégie, ainsi que l’état général de chacune des stratégies (correspondances et actions) sur les messages. Inclut les informations de stratégie et la façon dont les stratégies sont associées aux utilisateurs et aux groupes, aux emplacements, aux pourcentages de révision, aux réviseurs, à l’état et au moment de la dernière modification de la stratégie. Utilisez l’option *Exporter* pour créer un fichier .csv contenant les détails du rapport.
 - **Éléments et actions par stratégie** : examinez et exportez les éléments correspondants et les actions de correction par stratégie. Inclut des informations de stratégie et la façon dont les stratégies sont associées :
 
-    - Éléments mis en correspondance
-    - Éléments escaladés
-    - Éléments résolus
-    - Marqué comme conforme
-    - Marqué comme non conforme
-    - Marqué comme étant contestable
-    - Éléments en attente de révision
-    - Notification de l’utilisateur
-    - Cas créé
+  - Éléments mis en correspondance
+  - Éléments escaladés
+  - Éléments résolus
+  - Marqué comme conforme
+  - Marqué comme non conforme
+  - Marqué comme étant contestable
+  - Éléments en attente de révision
+  - Notification de l’utilisateur
+  - Cas créé
 
 - **Élément et actions par emplacement** : passez en revue et exportez les éléments correspondants et les actions de correction par emplacement Microsoft 365. Inclut des informations sur la façon dont les plateformes de charge de travail sont associées :
 
-    - Éléments mis en correspondance
-    - Éléments escaladés
-    - Éléments résolus
-    - Marqué comme conforme
-    - Marqué comme non conforme
-    - Marqué comme étant contestable
-    - Éléments en attente de révision
-    - Notification de l’utilisateur
-    - Cas créé
+  - Éléments mis en correspondance
+  - Éléments escaladés
+  - Éléments résolus
+  - Marqué comme conforme
+  - Marqué comme non conforme
+  - Marqué comme étant contestable
+  - Éléments en attente de révision
+  - Notification de l’utilisateur
+  - Cas créé
 
 - **Activité par utilisateur** : examinez et exportez les éléments correspondants et les actions de correction par utilisateur. Inclut des informations sur la façon dont les utilisateurs sont associés :
 
-    - Éléments mis en correspondance
-    - Éléments escaladés
-    - Éléments résolus
-    - Marqué comme conforme
-    - Marqué comme non conforme
-    - Marqué comme étant contestable
-    - Éléments en attente de révision
-    - Notification de l’utilisateur
-    - Cas créé
+  - Éléments mis en correspondance
+  - Éléments escaladés
+  - Éléments résolus
+  - Marqué comme conforme
+  - Marqué comme non conforme
+  - Marqué comme étant contestable
+  - Éléments en attente de révision
+  - Notification de l’utilisateur
+  - Cas créé
 
 - **Type d’informations sensibles par emplacement** (préversion) : passez en revue et exportez des informations sur la détection des types d’informations sensibles et les sources associées dans les stratégies de conformité des communications. Inclut le total global et la répartition spécifique des instances de type d’informations sensibles dans les sources configurées dans votre organisation. Les valeurs de chaque source tierce sont affichées dans des colonnes distinctes dans le fichier .csv. En voici quelques exemples :
 
-    - **Email** : Types d’informations sensibles détectés dans les e-mails Exchange.
-    - **Teams** : types d’informations sensibles détectés dans les canaux et les messages de conversation Microsoft Teams.
-    - **Yammer** : types d’informations sensibles détectés dans les boîtes de réception, les publications, les conversations et les réponses Yammer.
-    - **Sources tierces** : types d’informations sensibles détectés pour les activités associées à des connecteurs tiers configurés dans votre organisation. Pour afficher la répartition des sources tierces pour un type d’informations sensibles spécifique dans le rapport, placez la souris sur la valeur du type d’informations sensibles dans la colonne source tierce.
-    - **Autre** : types d’informations sensibles utilisés pour le traitement interne du système. La sélection ou la désélection de cette source pour le rapport n’affecte aucune valeur.
+  - **Email** : Types d’informations sensibles détectés dans les e-mails Exchange.
+  - **Teams** : types d’informations sensibles détectés dans les canaux et les messages de conversation Microsoft Teams.
+  - **Yammer** : types d’informations sensibles détectés dans les boîtes de réception, les publications, les conversations et les réponses Yammer.
+  - **Sources tierces** : types d’informations sensibles détectés pour les activités associées à des connecteurs tiers configurés dans votre organisation. Pour afficher la répartition des sources tierces pour un type d’informations sensibles spécifique dans le rapport, placez la souris sur la valeur du type d’informations sensibles dans la colonne source tierce.
+  - **Autre** : types d’informations sensibles utilisés pour le traitement interne du système. La sélection ou la désélection de cette source pour le rapport n’affecte aucune valeur.
 
 ### <a name="message-details-report"></a>Rapport des détails du message
 
@@ -147,8 +147,8 @@ Dans certains cas, vous devez fournir des informations aux auditeurs de régleme
 
 Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Pour exporter les activités de mise à jour, vous devez disposer des rôles *de Administration Administration globale* ou de *conformité* des communications. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
-|**Champ**|**Détails**|
-|:-----|:-----|
+|Champ|Détails|
+|---|---|
 | **CreationDate** | Date à laquelle l’activité de mise à jour a été effectuée dans une stratégie. |
 | **ID utilisateur** | Utilisateur qui a effectué l’activité de mise à jour dans une stratégie. |
 | **Operations** | Opérations de mise à jour effectuées sur la stratégie. |
@@ -156,8 +156,8 @@ Pour afficher les activités de mise à jour de la stratégie de conformité des
 
 Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Pour exporter les activités de révision, vous devez disposer des rôles *Administration globale* ou Conformité des communications *Administration*. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
-|**Champ**|**Détails**|
-|:-----|:-----|
+|Champ|Détails|
+|---|---|
 | **CreationDate** | Date à laquelle l’activité de révision a été effectuée dans une stratégie. |
 | **ID utilisateur** | Utilisateur qui a effectué l’activité de révision dans une stratégie. |
 | **Operations** | Opérations de révision effectuées sur la stratégie. |
@@ -187,8 +187,8 @@ Les correspondances de stratégie de conformité des communications sont stocké
 
 Pour vérifier la taille d’une boîte aux lettres de supervision pour une stratégie, procédez comme suit :
 
-1. Utilisez l’applet [de commande Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) dans le module Exchange Online PowerShell V2 pour vous connecter à Exchange Online PowerShell à l’aide de l’authentification moderne.
-2. Exécutez la commande suivante dans PowerShell :
+1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+2. Exécutez la commande suivante :
 
     ```PowerShell
     ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name)

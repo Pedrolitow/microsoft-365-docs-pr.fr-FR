@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender pour Office 365 - CSH
+title: Microsoft Defender pour Office 365
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 73df1e43bb4046a5569d8416fde2237f27e66c78
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a67dd69c4b533fc63536a43f40921dfe0babde12
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480315"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851697"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 

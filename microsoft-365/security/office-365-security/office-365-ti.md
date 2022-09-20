@@ -1,5 +1,5 @@
 ---
-title: Fonctionnalités de réponse & d’enquête sur les menaces - plan Microsoft Defender pour Office 365 2
+title: Fonctionnalités de réponse & d’enquête sur les menaces dans Microsoft Defender pour Office 365
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -21,12 +21,12 @@ ms.custom:
 description: Découvrez les fonctionnalités d’investigation et de réponse aux menaces dans Microsoft Defender pour Office 365 Plan.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8cd390c394b90e6b6abce77d5f351aa5daa48e63
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0227662a5a4531a609f1011ca8a85fbcfd01ba04
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590785"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851653"
 ---
 # <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
@@ -80,7 +80,6 @@ Utilisez la liste des incidents (également appelée Investigations) pour affich
 
 Pour afficher la liste des incidents actuels pour votre organisation dans le portail <https://security.microsoft.com>Microsoft 365 Defender, accédez à **Incidents & alertes** \> **Incidents**. Ou, pour accéder directement à la page **Incidents** , utilisez <https://security.microsoft.com/incidents>.
 
-:::image type="content" source="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png" alt-text="Page Révision dans le Centre de sécurité & conformité" lightbox="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png":::
 
 ### <a name="attack-simulation-training"></a>Formation à la simulation d'attaque
 
@@ -114,7 +113,7 @@ Microsoft Defender pour Office 365 utilise le contrôle d’accès en fonction d
 
 |Activité|Rôles et autorisations|
 |---|---|
-|Utiliser le tableau de bord Gestion des vulnérabilités Microsoft Defender (ou le nouveau [tableau de bord Sécurité)](security-dashboard.md) <p> Afficher des informations sur les menaces récentes ou actuelles|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory (<https://portal.azure.com>) ou dans le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>).|
+|Utiliser le tableau de bord Gestion des vulnérabilités Microsoft Defender <p> Afficher des informations sur les menaces récentes ou actuelles|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory (<https://portal.azure.com>) ou dans le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>).|
 |Utiliser [l’Explorateur (et les détections en temps réel)](threat-explorer.md) pour analyser les menaces|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory (<https://portal.azure.com>) ou dans le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>).|
 |Afficher les incidents (également appelés enquêtes) <p> Ajouter des messages électroniques à un incident|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory (<https://portal.azure.com>) ou dans le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>).|
 |Déclencher des actions de messagerie dans un incident <p> Rechercher et supprimer des messages électroniques suspects|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de sécurité** plus le rôle **De recherche et de vidage**</li></ul> <p> Les rôles **Administrateur général** et **Administrateur de sécurité** peuvent être attribués dans Azure Active Directory (<https://portal.azure.com>) ou dans le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>). <p> Le rôle **De recherche et de vidage** doit être attribué dans les **rôles de collaboration Email &** dans le portail Microsoft 36 Defender (<https://security.microsoft.com>).|

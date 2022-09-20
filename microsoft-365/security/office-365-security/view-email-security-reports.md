@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 28f5a19abd0a2a1ddc0d2bab3863176d2470c980
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 6b34ab2617fdae4c57d3b40ab919668dd6b6ac2e
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672422"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851124"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender
 
@@ -1143,8 +1143,6 @@ Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données cont
 [Protection anti-courrier indésirable dans EOP](anti-spam-protection.md)
 
 [Protection contre les programmes malveillants dans EOP](anti-malware-protection.md)
-
-[Rapports intelligents et insights dans le portail Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 
 [Afficher les rapports de flux de courrier dans le portail Microsoft 365 Defender](view-mail-flow-reports.md)
 

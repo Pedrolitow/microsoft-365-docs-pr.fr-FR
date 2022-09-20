@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e318f44488492f3d0e3bd2a0457570387cfecc7b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8f0a7b8a13ebe47a7b95fa52ed06147f166d6d15
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670948"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851015"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports Defender pour Office 365 dans le portail Microsoft 365 Defender
 
@@ -249,8 +249,3 @@ Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 3
 
 Si vous ne voyez pas de données dans vos rapports Defender pour Office 365, vérifiez que vos stratégies sont correctement configurées. Pour que Defender pour Office 365 protection soit en place, votre organisation doit disposer de stratégies de liens [sécurisés](set-up-safe-links-policies.md) et de stratégies de [pièces jointes](set-up-safe-attachments-policies.md) sécurisées. Consultez également [la protection anti-courrier indésirable](anti-spam-protection.md) et [anti-programme malveillant](anti-malware-protection.md).
 
-## <a name="related-topics"></a>Voir aussi
-
-[Rapports intelligents et insights dans le portail Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
-
-[Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)

@@ -21,12 +21,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e5bea982a1cbc776a9529532bbbac4da4199fb4a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 15d8001e27ca2ddd365370deba1c92af389701ba
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482579"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850257"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure Score
 
@@ -37,6 +37,27 @@ Pour que Microsoft Secure Score soit un meilleur représentant de votre posture 
 Plus vous effectuez d’actions d’amélioration, plus votre degré de sécurisation sera élevé. Pour plus d’informations, consultez [Microsoft Secure Score](microsoft-secure-score.md).
 
 Le score de sécurité Microsoft se trouve dans <https://security.microsoft.com/securescore> le [portail Microsoft 365 Defender](microsoft-365-defender-portal.md).
+
+## <a name="september-2022"></a>Septembre 2022
+
+De nouvelles recommandations Microsoft Defender pour Office 365 pour les stratégies anti-hameçonnage sont désormais disponibles sous forme d’actions d’amélioration du degré de sécurisation :
+
+- Définir le seuil de niveau d’e-mail d’hameçonnage sur 2 ou plus
+- Activer la protection des utilisateurs usurpés d’identité
+- Activer la protection du domaine usurpé d’identité
+- Vérifier que l’intelligence de boîte aux lettres est activée
+- Vérifier que l’intelligence pour la protection de l’emprunt d’identité est activée
+- Messages de quarantaine détectés à partir d’utilisateurs usurpés d’identité
+- Messages de quarantaine détectés à partir de domaines empruntés
+- Déplacer des messages détectés comme des utilisateurs usurpés d’identité par l’intelligence de boîte aux lettres
+- Activer l’option « Afficher le premier conseil de sécurité du contact »
+- Activer l’info-bulle de sécurité d’emprunt d’identité de l’utilisateur
+- Activer l’info-bulle de sécurité d’emprunt d’identité de domaine
+- Activer le conseil de sécurité des caractères inhabituels d’emprunt d’identité de l’utilisateur
+
+Une nouvelle recommandation SharePoint Online est désormais disponible en tant qu’action d’amélioration du degré de sécurisation :
+
+- Déconnecter les utilisateurs inactifs dans SharePoint Online
 
 ## <a name="august-2022"></a>Août 2022
 

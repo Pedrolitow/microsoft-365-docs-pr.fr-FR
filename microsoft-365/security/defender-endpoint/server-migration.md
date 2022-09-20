@@ -11,18 +11,18 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 09/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 38ac919e11160406f31606703153ce0208a3c416
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 602b80f93d4c2c9b0f204eaa347a5f5e75941147
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584791"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850383"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution de Microsoft Defender pour point de terminaison MMA précédente
 
@@ -59,9 +59,11 @@ Pour faciliter les mises à niveau lorsque Microsoft Endpoint Configuration Mana
 4. Installez Microsoft Defender pour point de terminaison.
 5. Appliquez le script d’intégration **à utiliser avec stratégie de groupe** téléchargé à partir de [Microsoft 365 Defender](https://security.microsoft.com).
 
-Pour utiliser le script, téléchargez-le dans un répertoire d’installation où vous avez également placé les packages d’installation et d’intégration (voir [Configurer les points de terminaison de serveur](configure-server-endpoints.md).
+Pour utiliser le script, téléchargez-le dans un répertoire d’installation où vous avez également placé les packages d’installation et d’intégration (voir [Configurer les points de terminaison de serveur](configure-server-endpoints.md)).
 
 EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\WindowsDefenderATPOnboardingScript.cmd »
+
+Pour plus d’informations sur l’utilisation du script, utilisez la commande PowerShell « get-help .\install.ps1 ».
 
 ## <a name="microsoft-endpoint-configuration-manager-migration-scenarios"></a>Scénarios de migration de Configuration Manager de point de terminaison Microsoft 
 

@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les règles Outlook et 
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 108a03544b4ad7dcb889f2b1c3381dcae48ae6e7
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 55ecde2b4ded073e53b27abb72ebe22e25006c1b
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596068"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850148"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et corriger les règles Outlook et les attaques par injection de formulaires personnalisés
 
@@ -236,16 +236,6 @@ Vous pouvez voir si « Démarrer l’application » a été réactivé par le bi
 Recherchez la clé EnableUnsafeClientMailRules. S’il est là et est défini sur 1, le correctif de sécurité Outlook a été remplacé et l’ordinateur est vulnérable à l’attaque par formulaire/règles. Si la valeur est 0, l’action « Démarrer l’application » est désactivée. Si la version mise à jour et mise à jour corrective d’Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
 
 Les clients disposant d’installations Exchange locales doivent envisager de bloquer les versions antérieures d’Outlook qui n’ont pas de correctifs disponibles. Pour plus d’informations sur ce processus, consultez l’article [Configurer le blocage du client Outlook](/exchange/configure-outlook-client-blocking-exchange-2013-help).
-
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
-
-Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
-
-- Tâches à effectuer lors des 30 premiers jours. Ils ont un effet immédiat et sont peu impactants pour vos utilisateurs.
-
-- Tâches à accomplir en 90 jours. Celles-ci prennent un peu plus de temps à planifier et à implémenter, mais améliorent considérablement votre posture de sécurité.
-
-- Au-delà de 90 jours. Ces améliorations s’appuient sur vos 90 premiers jours de travail.
 
 ## <a name="see-also"></a>Voir aussi :
 

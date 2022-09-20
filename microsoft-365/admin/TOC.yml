@@ -181,6 +181,8 @@
               href: add-users/let-users-reset-passwords.md
             - name: Définir les mots de passe pour qu’ils n’expirent jamais
               href: add-users/set-password-to-never-expire.md
+            - name: Recommandations en matière de stratégie de mot de passe
+              href: misc/password-policy-recommendations.md
             - name: Renvoyer leur mot de passe aux utilisateurs
               href: add-users/resend-user-password.md
             - name: Désactiver les mots de passe forts

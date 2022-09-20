@@ -20,12 +20,12 @@ description: Découvrez comment SharePoint Online détecte les virus dans les fi
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e24219c6ef4298410e02efb010cd49c6f2c1206f
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 948f5b58f7c5113f006c0fd6ccb4d84f0ce52c9d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672796"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850993"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protection antivirus intégrée dans SharePoint Online, OneDrive et Microsoft Teams
 
@@ -38,7 +38,7 @@ ms.locfileid: "67672796"
 Microsoft 365 utilise un moteur de détection de virus commun pour analyser les fichiers que les utilisateurs chargent sur SharePoint Online, OneDrive et Microsoft Teams. Cette protection est incluse avec tous les abonnements qui incluent SharePoint Online, OneDrive et Microsoft Teams.
 
 > [!IMPORTANT]
-> Les fonctionnalités antivirus intégrées sont un moyen d’aider à contenir des virus. Ils ne sont pas conçus comme un seul point de défense contre les programmes malveillants pour votre environnement. Nous encourageons tous les clients à examiner et à implémenter la protection contre les programmes malveillants à différentes couches et à appliquer les meilleures pratiques pour sécuriser leur infrastructure d’entreprise. Pour plus d’informations sur les stratégies et les meilleures pratiques, consultez la [feuille de route de sécurité](security-roadmap.md).
+> Les fonctionnalités antivirus intégrées sont un moyen d’aider à contenir des virus. Ils ne sont pas conçus comme un seul point de défense contre les programmes malveillants pour votre environnement. Nous encourageons tous les clients à examiner et à implémenter la protection contre les programmes malveillants à différentes couches et à appliquer les meilleures pratiques pour sécuriser leur infrastructure d’entreprise. 
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>Que se passe-t-il si un fichier infecté est chargé sur SharePoint Online ?
 

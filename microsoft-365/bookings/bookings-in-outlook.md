@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings avec moi pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: 44993db5aee7a322bb6cdfdc6afd5e08084a365c
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: 6b35380769e00323dd91b2e7d816eeb98fcee241
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648656"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851081"
 ---
 # <a name="bookings-with-me"></a>Bookings avec moi
 
@@ -77,8 +77,23 @@ Pour plus d’informations, consultez [l’élément de feuille de route Microso
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
-  
-  Pour plus d’informations, consultez [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
+3.  Pour les boîtes aux lettres qui se voient attribuer une sharingpolicy personnalisée, la stratégie doit avoir Anonymous:SharingPolicyActio comme un des domaines.
+
+   ```Powershell:
+      get-mailbox adam@contoso.com | Format-List SharingPolicy
+   ```
+
+   Si la commande retourne :
+
+   `SharingPolicy        : "contoso.onmicrosoft.com\Default Sharing (CONTOSO)"`
+
+   Vous devez mettre à jour la stratégie avec l’un des domaines requis :
+
+   ```Powershell
+   Set-SharingPolicy "Default Sharing (CONTOSO)" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
+   ```
+
+Pour plus d’informations, consultez [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
 
 ## <a name="turn-bookings-with-me-on-or-off"></a>Activer ou désactiver Bookings avec moi
 
@@ -207,7 +222,7 @@ Utilisez les commandes **Get-CASMailbox** et **Set-CASMailbox** pour vérifier l
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="what-is-the-difference-between-bookings-and-bookings-with-me"></a>Quelle est la différence entre Bookings et Bookings avec moi ?
 
