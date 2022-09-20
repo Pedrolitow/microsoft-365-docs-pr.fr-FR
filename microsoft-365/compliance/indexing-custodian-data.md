@@ -2,8 +2,8 @@
 title: Indexation avancée des données des consignataires
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lorsqu’un consignateur est ajouté à un cas eDiscovery (Premium), tout contenu considéré comme partiellement indexé est retraité pour le rendre entièrement consultable.
-ms.openlocfilehash: 0d0474306415a59615960cc15580af0f67dc49aa
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a52f9c226746148a39e7a2e699b98a231eacb4c4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629550"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818256"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 

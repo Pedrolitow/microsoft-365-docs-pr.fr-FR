@@ -2,8 +2,8 @@
 title: Configurer des balises actives dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les balises intelligentes vous permettent d’appliquer les fonctionnalités de Machine Learning lors de l’examen du contenu dans un cas eDiscovery (Premium). Utilisez des groupes de balises actives pour afficher les résultats des modèles de détection de Machine Learning, tels que le modèle de privilège avocat-client.
-ms.openlocfilehash: 30d2d6f30f09fe8fb6772a4fb46c6895b174991f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9b6cf8fc596a87ccdfd1bcab8f534e3c6923df29
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629076"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822988"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>Configurer des balises actives dans eDiscovery (Premium)
 

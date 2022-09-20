@@ -2,8 +2,8 @@
 title: Collaborer avec les consignatateurs dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,14 +18,14 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil de gestion des consignats dans eDiscovery (Premium) pour gérer les données d’un cas juridique.
-ms.openlocfilehash: e52dc21b084916f2cec2f3a638dfba0def8ca589
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fedd968cdb8a1926e3cf3c1ea747a021c018c32f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622456"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824088"
 ---
-# <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>Collaborer avec des consignatateurs et des sources de données non liées à la garde dans eDiscovery (Premium)
+# <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>Travailler avec des sources de données de consignataires et de non consignataires dans eDiscovery (Premium)
 
 Lorsqu’une organisation répond à une enquête juridique, le flux de travail autour de l’identification, de la conservation et de la collecte de contenu potentiellement pertinent est basé sur les personnes de l’organisation qui sont les gardiens des données pertinentes. Dans eDiscovery, ces personnes sont appelées *« dépositaires de données* » (ou simplement *« dépositaires* ») et sont définies comme « personnes ayant le contrôle administratif d’un document ou d’un fichier électronique ». Par exemple, le consignataire d’un courrier électronique peut être le propriétaire de la boîte aux lettres contenant le message concerné.
 

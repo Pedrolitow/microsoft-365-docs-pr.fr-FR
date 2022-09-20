@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bb760eb29f54554f58efedaa54ab9ca1cadf312
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b8090ff49a8371b4ad264030f9ebb845bf23e690
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696658"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817832"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -78,6 +78,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Prise en charge de la co-édition et de l'enregistrement automatique](sensitivity-labels-coauthoring.md) pour les documents étiquetés et chiffrés | Canal actuel : 2107+ <br /><br> Canal mensuel des entreprises : 2107+ <br /><br> Canal d’entreprise semi-annuel : 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Prise en charge du format PDF](#pdf-support)| Canal actuel : 2208+ <br /><br> Canal Entreprise mensuel : 2208+ <br /><br> Semi-Annual Enterprise canal : en cours de révision|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
+|[Barre de sensibilité](#sensitivity-bar) et [couleur d’étiquette d’affichage](#label-colors) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider) |  Préversion : déploiement sur le [Canal bêta](https://office.com/insider) | En cours de révision | En cours de révision | En cours de révision |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Fonctionnalités d’étiquettes de confidentialité dans Outlook
 
@@ -105,6 +106,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |
 |[Prise en charge du format PDF](#pdf-support) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider)|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 |[Appliquer la protection S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider) | Déploiement : plus de 16,61 <sup>\*</sup>                   | Déploiement : 4.2226+ | Déploiement : 4.2203+ | En cours de révision |
+|[Barre de sensibilité](#sensitivity-bar) et [couleur d’étiquette d’affichage](#label-colors) | En cours de révision |  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 
 **Notes de bas de page :**
 
@@ -390,7 +392,7 @@ Lorsque l’application Outlook ne prend pas en charge la désactivation de l’
 > 
 > Si vous configurez une étiquette pour appliquer la protection S/MIME mais que l’application Outlook ne la prend pas encore en charge, l’étiquette est toujours affichée dans Outlook et peut être appliquée, mais les paramètres S/MIME sont ignorés. Vous ne pourrez pas sélectionner cette étiquette pour les stratégies d’étiquetage automatique Exchange.
 
-Cette configuration n’est pas disponible dans le Centre de conformité Microsoft Purview. Vous devez utiliser les paramètres avancés PowerShell avec la cmd [Set-Label](/powershell/module/exchange/set-label) ou [New-Label](/powershell/module/exchange/new-label) après vous être [connecté à Office 365 Centre de sécurité et de conformité PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Cette configuration n’est pas disponible dans le portail de conformité Microsoft Purview. Vous devez utiliser les paramètres avancés PowerShell avec la cmd [Set-Label](/powershell/module/exchange/set-label) ou [New-Label](/powershell/module/exchange/new-label) après vous être [connecté à Office 365 Centre de sécurité et de conformité PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 Utilisez ces paramètres uniquement lorsque vous disposez d’un [déploiement S/MIME](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) opérationnel et que vous souhaitez qu’une étiquette applique automatiquement cette méthode de protection pour les e-mails plutôt [que la protection par défaut qui utilise Rights Management chiffrement à partir de Azure Information Protection](encryption-sensitivity-labels.md). La protection obtenue est la même que lorsqu’un utilisateur sélectionne manuellement les options S/MIME dans Outlook.
 
@@ -447,6 +449,53 @@ Pour plus d’informations sur cette fonctionnalité, consultez l’annonce [App
 
 Pour obtenir la documentation de l’utilisateur final, consultez [Créer des fichiers PDF protégés à partir de fichiers Office](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
 
+## <a name="sensitivity-bar"></a>Barre de confidentialité
+
+Nouvellement pris en charge en préversion pour les étiquettes intégrées dans Word, Excel et PowerPoint, mais pas encore pour Outlook ou Office sur le Web, consultez les tableaux de la section [des fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour identifier les versions minimales.
+
+Pour les applications prises en charge, les étiquettes de confidentialité sont désormais affichées dans une barre de confidentialité, en regard du nom du fichier dans la barre de fenêtre supérieure.  Par exemple :
+
+![Étiquettes de confidentialité dans la barre de titre de la fenêtre.](../media/sensitivity-bar-example.png)
+
+Les informations sur les étiquettes et la possibilité de sélectionner ou de modifier une étiquette sont également intégrées aux flux de travail utilisateur qui incluent enregistrer et renommer, exporter, partager, imprimer et [convertir au format PDF](#pdf-support).
+
+Dans le cadre de cette visibilité élevée, ces étiquettes prennent également en charge les couleurs. Pour plus d’informations, consultez la section suivante.
+
+### <a name="label-colors"></a>Couleurs des étiquettes
+
+> [!IMPORTANT]
+> Si vos applications d’étiquetage ne prennent pas en charge cette fonctionnalité, elles n’affichent pas les couleurs d’étiquette configurées.
+> 
+> Le client d’étiquetage unifié Azure Information Protection prend en charge les couleurs d’étiquette. Pour l’étiquetage intégré à Office, les couleurs d’étiquette sont actuellement prises en charge en préversion pour Word, Excel et PowerPoint sur Windows et macOS, mais pas Outlook ou Office sur le Web. Pour plus d’informations, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page.
+
+Les étiquettes nouvellement créées n’ont pas de couleur par défaut. Si vos étiquettes ont été [migrées à partir d’Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) ou si vous avez configuré des couleurs d’étiquette pour le client d’étiquetage unifié Azure Information Protection, ces couleurs d’étiquette sont désormais affichées dans les applications qui les prennent en charge.
+
+Utilisez la portail de conformité Microsoft Purview pour sélectionner l’une des 10 couleurs standard pour les étiquettes de confidentialité. Cette configuration se trouve sur la première page de la configuration de l’étiquette après le nom et la description de l’étiquette.
+
+Vous ne pouvez pas sélectionner de couleurs pour les sous-étiquettes, car elles héritent automatiquement de la couleur d’étiquette de leur étiquette parente.
+
+Si l’étiquette est configurée pour une couleur différente de l’une des 10 couleurs, une option de **couleur personnalisée** est sélectionnée et les options de couleur standard ne sont pas disponibles :
+
+![Configuration des couleurs d’étiquette de sensibilité lorsque l’étiquette a une couleur personnalisée.](../media/label-custom-color-configuration.png)
+
+Vous pouvez remplacer la couleur personnalisée par l’une des couleurs standard en supprimant d’abord la sélection de couleurs personnalisées, puis en sélectionnant l’une des couleurs standard. Toutefois, vous ne pouvez pas utiliser le portail de conformité pour configurer une couleur personnalisée différente. Utilisez plutôt PowerShell, comme décrit dans la section suivante.
+
+#### <a name="configuring-custom-colors-by-using-powershell"></a>Configuration de couleurs personnalisées à l’aide de PowerShell 
+
+Vous pouvez utiliser la **couleur** de paramètre avancé [du Centre de sécurité & conformité PowerShell](/powershell/exchange/scc-powershell) pour définir une couleur pour une étiquette de confidentialité. Cette configuration prend en charge les couleurs que vous ne pouvez pas configurer dans le portail de conformité Microsoft Purview.
+
+Pour spécifier votre choix de couleur, utilisez un code de triplet hexadécimal pour les composants rouge, vert et bleu (RVB) de la couleur. Par exemple, #40e0d0 est la valeur hexadécimale RVB pour la couleur turquoise.
+
+Pour plus d’informations sur ces codes, consultez la [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) page de la documentation web MSDN, et vous pouvez également trouver [RapidTables](https://www.rapidtables.com/web/color/RGB_Color.html) utile. Vous pouvez identifier ces codes dans de nombreuses applications qui vous permettent de modifier des images. Par exemple, Microsoft Paint vous permet de choisir une couleur personnalisée dans une palette et les valeurs RVB s’affichent automatiquement. Vous pouvez ensuite les copier.
+
+Exemple de commande PowerShell, où le GUID de l’étiquette de confidentialité est **8faca7b8-8d20-48a3-8ea2-0f96310a848e**
+
+```PowerShell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{color="#40e0d0"}
+```
+
+Pour plus d’informations pour vous aider à spécifier des paramètres avancés PowerShell pour les étiquettes de confidentialité, consultez [les conseils PowerShell pour spécifier les paramètres avancés](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 ## <a name="auditing-labeling-activities"></a>Audit des activités d’étiquetage
 
 Pour plus d’informations sur les événements d’audit générés par les activités des étiquettes de sensibilité, consultez la section d’[activités des étiquettes de confidentialité](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) dans le [journal d’audit du Centre de conformité](search-the-audit-log-in-security-and-compliance.md).
@@ -458,7 +507,7 @@ Vous pouvez également créer des rapports personnalisés avec le logiciel SIEM 
 > [!TIP]
 > Pour créer des rapports personnalisés, consultez les billets de blog suivants :
 > - [Journaux d’audit de conformité Microsoft 365 via l’API de gestion O365 : Partie 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
-> - [Journaux d’audit de conformité Microsoft 365 via l’API de gestion O365 : Partie 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
+> - [Journaux d’audit de conformité Microsoft 365 via l’API de gestion O365 : Partie 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297) 
 
 ## <a name="end-user-documentation"></a>Documentation de l’utilisateur final
 

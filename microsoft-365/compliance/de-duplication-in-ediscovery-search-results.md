@@ -2,8 +2,8 @@
 title: Déduplication dans les résultats de recherche eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment éliminer les résultats de recherche eDiscovery en double afin qu’une seule copie d’un e-mail soit exportée.
-ms.openlocfilehash: 6a0d4e2b52c6f32b3142414a761a2447805cd58a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b8b595e1bf9296262f3ed4feff977daa3aef5c13
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640651"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818498"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
 

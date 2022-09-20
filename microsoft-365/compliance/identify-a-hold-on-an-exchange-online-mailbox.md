@@ -2,8 +2,8 @@
 title: Comment identifier la conservation d’une boîte aux lettres Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment identifier les différents types de conservation qui peuvent être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: d7a174d267897f37fa113a51e138ec68def65b8a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9c18d2bc99fae93ae3b288475661872e5e6d49d9
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638298"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822702"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 

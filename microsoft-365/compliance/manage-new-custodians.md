@@ -2,8 +2,8 @@
 title: Gérer les consignats dans un cas eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des consignatateurs dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: baffcb9d601d95d4be78cf47fcbc3037daff86c8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 51677f7bf61eb5c7180a774de852f99d9479c0bb
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634025"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817375"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Gérer les consignats dans un cas eDiscovery (Premium)
 

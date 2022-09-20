@@ -2,8 +2,8 @@
 title: Étiqueter les documents d’un jeu à réviser
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: L’étiquetage des documents dans un ensemble de révisions permet de supprimer le contenu inutile et d’identifier le contenu pertinent dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2cd1243f520be21cf27c810a5f2dc2e4a033a33f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3b250dad79b7e22b2cea71d18fab6eb053e4ce8
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623736"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819180"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Baliser des documents dans un ensemble de révisions dans eDiscovery (Premium)
 

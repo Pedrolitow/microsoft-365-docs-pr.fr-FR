@@ -2,8 +2,8 @@
 title: Journal d’activités du portail des messages chiffrés
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les journaux d’accès sont disponibles pour les messages chiffrés récupérés via le portail des messages chiffrés.
-ms.openlocfilehash: fe45757eb6ca89f55a1b796d3752b1e3bcb1b89b
-ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
+ms.openlocfilehash: 5d2733a39aff86a3ca6b0dd93809920a073c03b5
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420829"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824022"
 ---
 # <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Journal d’activité du portail de messages chiffré par Microsoft Purview Advanced Message Encryption
 

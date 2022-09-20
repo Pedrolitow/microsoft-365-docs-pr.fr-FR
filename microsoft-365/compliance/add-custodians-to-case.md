@@ -2,8 +2,8 @@
 title: Ajouter des consignats à un cas eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’outil de gestion des consignats intégré dans Microsoft Purview eDiscovery (Premium) pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e7734e886651cb0169d5823a23790761791eb4e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3a408642d6ca4cef7d63960a18eb67f427986507
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640983"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823934"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>Ajouter des consignats à un cas eDiscovery (Premium)
 

@@ -2,8 +2,8 @@
 title: Nouveau format de cas dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: ninachen
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le nouveau format de cas dans eDiscovery (Premium) afin de pouvoir ajouter d’autres éléments pour passer en revue les ensembles et tirer parti d’autres limites accrues et de nouvelles fonctionnalités.
-ms.openlocfilehash: bbbd736dd91125313bbdae8733408ce69163eeb1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 766a9e7b739c911bd001dd1a7de8f0ef1377dc8c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634850"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824771"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>Utiliser le nouveau format de casse dans eDiscovery (Premium)
 

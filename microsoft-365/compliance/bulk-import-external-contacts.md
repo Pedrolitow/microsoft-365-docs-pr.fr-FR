@@ -2,8 +2,8 @@
 title: Importer en bloc des contacts externes dans Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/29/2018
 audience: End User
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 description: Découvrez comment les administrateurs peuvent utiliser Exchange Online PowerShell et un fichier CSV pour importer en bloc des contacts externes dans la liste d’adresses globale.
-ms.openlocfilehash: 249dc6f2f102c4026ab201f8e9d8da6f76e6a253
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: a776eb1e89bccde1a70b2ce899b7ff9277a7141a
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111513"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823142"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importer en bloc des contacts externes dans Exchange Online
 

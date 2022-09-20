@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver les données de MS SQL Database
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de MS SQL Database. Ce connecteur vous permet d’archiver des données à partir de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: 19730f4c1ae6f6f89917b4b64546757a57f78814
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b284e6c8637742960cdd20588b0f8e1625585872
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626906"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824330"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Configurer un connecteur pour archiver les données de MS SQL Database
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Le connecteur MS SQL Database Importer que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère les messages vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments MS SQL Database convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique d’utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier dans le dossier boîte de réception nommé **MS SQL Database Importer** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres vers laquelle importer des éléments à l’aide de la valeur de la propriété *Email* . Chaque élément du SQL Database MS contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
+4. Le connecteur importe les éléments MS SQL Database convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique d’utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier dans le dossier boîte de réception nommé **MS SQL Database Importer** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres vers laquelle importer des éléments à l’aide de la valeur de la propriété *Email*. Chaque élément du SQL Database MS contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -85,6 +85,6 @@ Après avoir créé le connecteur MS SQL Database Importer, vous pouvez afficher
 
 3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - Pour l’instant, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments supérieurs à 10 Mo. La prise en charge des éléments plus volumineux sera disponible ultérieurement.

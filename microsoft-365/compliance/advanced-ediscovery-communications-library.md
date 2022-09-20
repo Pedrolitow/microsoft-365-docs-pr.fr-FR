@@ -2,8 +2,8 @@
 title: Gérer les modèles de communication des consignatateurs dans la bibliothèque communications dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez ajouter des modèles de communication de consignation (tels qu’un modèle de notification de conservation) dans eDiscovery (Premium) afin qu’ils puissent être utilisés dans tous les cas de votre organisation.
-ms.openlocfilehash: 0ae8496178cd27a395de66e18355ccd675006486
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ecc5dcf7d50ad8136e61fa9da86290cf343f4593
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630816"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824925"
 ---
 # <a name="manage-custodian-communications-templates-in-ediscovery-premium"></a>Gérer les modèles de communication des consignatateurs dans eDiscovery (Premium)
 

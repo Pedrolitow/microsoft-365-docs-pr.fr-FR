@@ -2,8 +2,8 @@
 title: Configurer le filtrage des autorisations pour eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilisez le filtrage des autorisations de recherche pour permettre aux gestionnaires eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ebd42882c7b914fe661df589382482d9f0595bc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0017e523f3e7a0011d5a83b199520eb0bd918c87
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625014"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817882"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configurer le filtrage des autorisations pour eDiscovery
 

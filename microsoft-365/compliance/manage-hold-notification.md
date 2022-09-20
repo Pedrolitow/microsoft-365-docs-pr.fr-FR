@@ -2,8 +2,8 @@
 title: Gérer les notifications de conservation
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le flux de travail de communication dans eDiscovery (Premium) pour suivre l’état de vos notifications d’attente légale et, si nécessaire, les mettre à jour et les renvoyer.
-ms.openlocfilehash: 161628061d27c17e9e606cb7f88fbbe52d22be8f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1d424b903eeadb76f78649bbbbe3364a8ba25716
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632242"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818124"
 ---
 # <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
 
@@ -72,7 +72,7 @@ Pour mettre à jour le contenu de l’avis de mise en attente initiale :
 
 3. Dans l’Assistant **Modifier la communication** , cliquez sur **Définir le contenu du portail** dans le volet gauche de l’Assistant, puis mettez à jour le contenu de l’avis.
 
-4. Cliquez sur **Save (Enregistrer)**.
+4. Cliquez sur **Enregistrer**.
 
 L’avis de réexélation sera envoyé à tous les consignats affectés à la notification de conservation légale. En outre, si l’avis de rappel ou d’escalade est activé, les flux de travail de ces types d’avis redémarrent.
 

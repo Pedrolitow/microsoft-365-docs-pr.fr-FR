@@ -2,8 +2,8 @@
 title: Correction d’erreur sur élément unique
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez corriger une erreur de traitement dans un document dans un ensemble de révisions dans eDiscovery (Premium) sans avoir à suivre le processus de correction des erreurs en bloc.
-ms.openlocfilehash: cb1b7248ff02a4aafce529b764efdf7408a05386
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c4eba98581bb91fdb9c6cc414e9966380847571c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622170"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823956"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>Correction des erreurs d’élément unique dans eDiscovery (Premium)
 

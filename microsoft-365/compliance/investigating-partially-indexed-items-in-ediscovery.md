@@ -2,8 +2,8 @@
 title: Examen des éléments partiellement indexés dans eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 06/14/2022
 audience: Admin
@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir d’Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: 1e048cece931ecefe395a5a26bbfb840c8b831f6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9e62f635c599f529369f6a037b2ee7946fc58f81
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625102"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818278"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Examen des éléments partiellement indexés dans eDiscovery
 
 Une recherche eDiscovery que vous exécutez à partir de la portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont correctement indexés, car ils sont dans les [limites d’indexation des messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
   
-- Les messages électroniques ont un fichier joint qui ne peut pas être ouvert ; il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
+- Email messages ont un fichier joint qui ne peut pas être ouvert ; il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
 
 - Le nombre de fichiers joints à un message électronique est trop important.
 

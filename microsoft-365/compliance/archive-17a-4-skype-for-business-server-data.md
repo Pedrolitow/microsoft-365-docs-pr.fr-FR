@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver Skype Entreprise Server données dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 Skype Entreprise Server pour importer et archiver des données Skype Entreprise Server dans Microsoft 365.
-ms.openlocfilehash: 9b503ea1305e7997d6a66ace0a402a9557d0cc31
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 72392b6dc3999ad2d76ec341b311cb5ec8ba5d1c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639311"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824573"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Configurer un connecteur pour archiver des données Skype Entreprise Server
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Le Skype Entreprise Server connecteur DataParser que vous créez dans le portail de conformité Microsoft Purview se connecte à DataParser et transfère les messages à un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Un sous-dossier du dossier Boîte de réception nommé **Skype Entreprise Server DataParser** est créé dans les boîtes aux lettres utilisateur et les éléments Skype Entreprise Server sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres vers laquelle importer des éléments à l’aide de la valeur de la propriété *Email* . Chaque élément Skype Entreprise Server contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
+4. Un sous-dossier du dossier Boîte de réception nommé **Skype Entreprise Server DataParser** est créé dans les boîtes aux lettres utilisateur et les éléments Skype Entreprise Server sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres vers laquelle importer des éléments à l’aide de la valeur de la propriété *Email*. Chaque élément Skype Entreprise Server contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
@@ -79,6 +79,6 @@ Après avoir créé un Skype Entreprise Server connecteur DataParser, vous pouve
 
 3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 Pour l’instant, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments supérieurs à 10 Mo. La prise en charge des éléments plus volumineux sera disponible ultérieurement.

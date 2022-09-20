@@ -2,8 +2,8 @@
 title: Scénario de débordement de données de la série de solutions eDiscovery - Recherche et vidage
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: how-to
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: b65d6057921d310c3e22e5494218271c7693c162
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 91fc68016e8d62b0b7172dd78f6ed9512545c527
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630188"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824220"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Série de solutions eDiscovery : scénario de débordement de données - Recherche et vidage
 
@@ -91,7 +91,7 @@ Si vous avez plus de 1 000 boîtes aux lettres ou plus de 100 messages électron
 
 Lorsque vous trouvez un e-mail contenant des données renversées, vérifiez les destinataires du message pour déterminer s’il a été partagé en externe. Pour poursuivre le suivi d’un message, vous pouvez collecter les informations de l’expéditeur et les plages de dates afin de pouvoir utiliser les journaux de suivi des messages. Ce processus est décrit à [l’étape 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Après avoir vérifié les résultats de la recherche, vous souhaiterez peut-être partager vos résultats avec d’autres personnes pour une révision secondaire. Les personnes que vous avez affectées au cas à l’étape 1 peuvent examiner le contenu du cas dans eDiscovery et Microsoft Purview eDiscovery (Premium) et approuver les conclusions de cas. Vous pouvez également générer un rapport sans exporter le contenu réel. Vous pouvez également utiliser ce même rapport comme preuve de suppression, ce qui est décrit à [l’étape 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
+Après avoir vérifié les résultats de la recherche, vous souhaiterez peut-être partager vos résultats avec d’autres personnes pour une révision secondaire. Personnes les personnes que vous avez affectées au cas à l’étape 1 peuvent examiner le contenu du cas dans eDiscovery et Microsoft Purview eDiscovery (Premium) et approuver les conclusions de cas. Vous pouvez également générer un rapport sans exporter le contenu réel. Vous pouvez également utiliser ce même rapport comme preuve de suppression, ce qui est décrit à [l’étape 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
  **Pour générer un rapport statistique :**
   

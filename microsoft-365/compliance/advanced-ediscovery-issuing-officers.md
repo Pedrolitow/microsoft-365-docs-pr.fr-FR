@@ -2,8 +2,8 @@
 title: Gérer les agents émetteurs dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez ajouter des agents d’émission à l’échelle de l’organisation dans eDiscovery (Premium) afin qu’ils puissent être ajoutés à n’importe quelle communication de garde dans tous les cas de votre organisation.
-ms.openlocfilehash: 0a3383f9f725a7d5afacd1cab504eefc97b91fd3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 63c1eb86037d6b94eee1fc0628e0d6fe3ad0a094
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627688"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824793"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>Gérer les agents émetteurs dans eDiscovery (Premium)
 

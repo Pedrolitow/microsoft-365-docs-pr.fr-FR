@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour importer des données DSE Epic
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements médicaux électroniques (EHR) du système Epic de votre organisation vers Microsoft 365. Cela vous permet d’utiliser les données DSE Epic dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: 6ff5719e61e754ba907daef36bb927cb2ad71d50
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: daba1466704c14d91568f58dd63657ad4d327159
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071588"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822680"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit d’ehR Epic (préversion)
 
@@ -73,7 +73,7 @@ Le tableau suivant répertorie les champs qui sont nécessaires pour activer les
 | ACCESS_LOG. *<br/>ACCESS_TIME ACCESS_LOG_METRIC. METRIC_NAME*<br/>ACCESS_LOG. WORKSTATION_ID<br/>GROUP.NAME DE MÉTRIQUE\_ZC\_<br/>ACTION.NAME D’ACCÈS\_ZC\_ |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système Epic EHR.|
 | PATIENT. PAT_MRN_ID<br/>PATIENT. PAT_FIRST_NAME* <br/>PATIENT. PAT_MIDDLE_NAME <br/>PATIENT. PAT_LAST_NAME* <br/>PATIENT. ADD_LINE_1* <br/>PATIENT. ADD_LINE_2  <br/>PATIENT. VILLE* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP. DEPARTMENT_NAME              | Ces champs sont utilisés pour identifier les informations de profil des patients.|
 | ZC_BTG_REASON.NAME*<br/> PAT_BTG_AUDIT. BTG_EXPLANATION | Ces champs sont utilisés pour identifier l’accès aux enregistrements restreints.|
-| EMP. SYSTEM_LOGIN*<br/>CLARITY_EMP. USER_ID <br/> employee_last_name<sup>1</sup> <br/> employee_first_name<sup>1</sup>                | Ces champs sont utilisés pour identifier les informations de profil d’employé pour la correspondance d’adresse et de nom requises pour déterminer l’accès aux enregistrements famille/voisin/employé. |
+| Emp. SYSTEM_LOGIN*<br/>CLARITY_EMP. USER_ID <br/> employee_last_name<sup>1</sup> <br/> employee_first_name<sup>1</sup>                | Ces champs sont utilisés pour identifier les informations de profil d’employé pour la correspondance d’adresse et de nom requises pour déterminer l’accès aux enregistrements famille/voisin/employé. |
 |||
 
 > [!NOTE]

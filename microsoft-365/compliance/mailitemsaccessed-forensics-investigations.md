@@ -2,8 +2,8 @@
 title: Utiliser l’audit (Premium) pour analyser des comptes compromis
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: a2c6d8030ba90f213f665036157b3efe0c267e80
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 74fbf889b8258805eda7f58ff9b8536059fa368f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629462"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818146"
 ---
 # <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Utiliser l’audit Microsoft Purview (Premium) pour analyser des comptes compromis
 

@@ -2,8 +2,8 @@
 title: Gérer les tâches dans la découverte électronique (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les travaux eDiscovery (Premium) vous aident à suivre l’état des processus de longue durée liés à l’exécution de différentes tâches eDiscovery (Premium).
-ms.openlocfilehash: 9be48325e3103e8f4e349c32cc559db36e42a05e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc3899c8f94f4cd9f62ea7dfc0cf020d57e97991
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639729"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817948"
 ---
 # <a name="manage-jobs-in-ediscovery-premium"></a>Gérer les tâches dans la découverte électronique (Premium)
 

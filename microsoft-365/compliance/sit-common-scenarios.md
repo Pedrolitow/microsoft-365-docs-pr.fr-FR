@@ -3,7 +3,7 @@ title: Scénarios d’usage courants pour les types d’informations sensibles
 f1.keywords:
 - NOCSH
 ms.author: chrfox
-author: v-tophillips
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Comment implémenter des scénarios de cas d’usage courants de types d’informations sensibles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54945a3ac6f13ed541cef212305f713d8b5d2b73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8afef4cdb027c8e2ccbb029a70df885dc685cb2d
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633364"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819202"
 ---
 # <a name="common-usage-scenarios-for-sensitive-information-types"></a>Scénarios d’usage courants pour les types d’informations sensibles
 

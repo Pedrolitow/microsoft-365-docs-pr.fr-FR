@@ -2,8 +2,8 @@
 title: Configurer un connecteur pour archiver les données de tableau croisé dynamique dans Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de tableau croisé dynamique à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 6b2515e9ac9fe38204ad44f37f2d99eced527da9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 818c7cfa215f7324d5495279ca2ef2d9887c8206
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625916"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824264"
 ---
 # <a name="set-up-a-connector-to-archive-pivot-data"></a>Configurer un connecteur pour archiver les données de tableau croisé dynamique
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Le connecteur de tableau croisé dynamique que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère les éléments de tableau croisé dynamique vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments de tableau croisé dynamique dans les boîtes aux lettres de certains utilisateurs à l’aide de la valeur de la propriété *Email du mappage* automatique d’utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier du dossier Boîte de réception nommé **Pivot** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la propriété *Email* . Chaque élément de tableau croisé dynamique contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
+4. Le connecteur importe les éléments de tableau croisé dynamique dans les boîtes aux lettres de certains utilisateurs en utilisant la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier du dossier Boîte de réception nommé **Pivot** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la propriété *Email*. Chaque élément de tableau croisé dynamique contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -71,7 +71,7 @@ Une fois que vous avez cliqué sur **Enregistrer & Terminer**, la page De **mapp
 
 Pour mapper les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 356, procédez comme suit :
 
-1. Dans la page **Mapper les utilisateurs du tableau croisé dynamique vers les utilisateurs Microsoft 365** , activez le mappage automatique des utilisateurs. Les éléments de tableau croisé dynamique incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page **Mapper les utilisateurs du tableau croisé dynamique vers les utilisateurs Microsoft 365** , activez le mappage automatique des utilisateurs. Les éléments pivot incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez sur **Suivant**, passez en revue vos paramètres et accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 
@@ -85,6 +85,6 @@ Après avoir créé le connecteur pivot, vous pouvez afficher l’état du conne
 
 3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - Pour l’instant, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments supérieurs à 10 Mo. La prise en charge des éléments plus volumineux sera disponible ultérieurement.
