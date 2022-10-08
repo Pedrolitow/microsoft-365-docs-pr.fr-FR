@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Vous avez une question sur le fonctionnement de Chiffrement de messages Microsoft Purview ? Recherchez une réponse ici.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 8e869b9602e91706630fae622afe54e390a88a74
-  ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+  ms.openlocfilehash: f2eab62af7b88f7ac6b1c4c7aa8956bea940d3f1
+  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/25/2022
-  ms.locfileid: "67432350"
+  ms.lasthandoff: 09/29/2022
+  ms.locfileid: "68189008"
 title: FAQ sur le chiffrement des messages
 summary: "\nVous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici. Jetez également un coup d’œil aux [questions fréquemment posées sur la protection des données dans Azure Information Protection](/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans Azure Information Protection.\n"
 sections:
@@ -115,7 +115,9 @@ sections:
   - question: >
       Puis-je supprimer automatiquement le chiffrement sur les messages entrants et sortants ?
     answer: >
-      Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement du courrier sortant. Vous pouvez uniquement configurer une règle pour supprimer le chiffrement des messages entrants provenant de votre organisation.
+      Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement du courrier sortant. Vous pouvez uniquement configurer une règle pour supprimer le chiffrement des messages entrants provenant de votre organisation Exchange Online.
+  - question: "\nPuis-je supprimer automatiquement le chiffrement sur la messagerie du journal ?\n"
+    answer: "Pour une boîte aux lettres Exchange Online, les administrateurs doivent activer le déchiffrement de journal et configurer une règle de journalisation Exchange Online pour générer une copie déchiffrée du courrier dans la boîte aux lettres de journalisation. La règle de journalisation prend tout courrier ou pièce jointe qui a un chiffrement et envoie l’original plus une copie déchiffrée dans la boîte aux lettres de journalisation. Vous pouvez uniquement configurer une règle de journalisation qui peut déchiffrer le courrier ou les pièces jointes lorsque l’élément chiffré provient de votre organisation.  \nPour activer Exchange Online journalisation :\n\n```powershell\nSet-IRMConfiguration -JournalReportDecryptionEnabled $true\n```\n"
   - question: >
       Puis-je chiffrer automatiquement les messages en configurant des stratégies dans la protection contre la perte de données (DLP) via le portail de conformité Microsoft Purview ?
     answer: >
@@ -133,10 +135,6 @@ sections:
       Puis-je utiliser le chiffrement des messages avec des fonctionnalités de conformité telles que eDiscovery ?
     answer: >
       Oui, la plupart des messages protégés par Chiffrement de messages Microsoft Purview sont détectables. Chiffrement de messages Microsoft Purview courrier protégé que vous recevez d’une autre organisation Microsoft 365 avec une personnalisation appliquée par le biais d’une règle de flux de messagerie est indétectable par votre service eDiscovery. En d’autres termes, si le courrier n’est pas accessible par le biais de la boîte aux lettres de l’utilisateur, mais qu’il apparaît uniquement via un lien vers le portail de messages chiffrés, le courrier n’est pas consultable. Pour plus [d’informations, consultez les activités eDiscovery qui prennent en charge les éléments chiffrés](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) .
-  - question: >
-      Puis-je supprimer le chiffrement de l’e-mail ?
-    answer: >
-      Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement. Vous ne pouvez pas supprimer le chiffrement à l’aide d’une règle de flux de messagerie appliquée par une autre organisation.
   - question: >
       Puis-je envoyer en tant que boîte aux lettres partagée et chiffrer des e-mails ?
     answer: >

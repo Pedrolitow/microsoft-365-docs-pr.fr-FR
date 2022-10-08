@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.openlocfilehash: 90ddf53090f79c3d372aa2119330e71919849bc0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3f7d7bab51a8dfb29b25701ccc87e49b437529ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479971"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072610"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirection de comptes de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender
 
@@ -35,7 +36,7 @@ ms.locfileid: "67479971"
 - Microsoft 365 Defender
 - Defender pour point de terminaison
 
-Conformément à l’approche inter-domaines de Microsoft en matière de protection contre les menaces avec SIEM et la détection et la réponse étendues (XDR), nous avons renommé Microsoft Defender Advanced Threat Protection comme Microsoft Defender pour point de terminaison et l’avons unifiée dans un portail intégré unique : Microsoft 365 Defender.
+Conformément à l’approche inter-domaines de Microsoft en matière de protection contre les menaces avec SIEM et la détection et la réponse étendues (XDR), nous avons renommé Microsoft Defender Protection avancée contre les menaces comme Microsoft Defender pour point de terminaison et l’avons unifiée dans un portail intégré unique : Microsoft 365 Defender.
 
 Ce guide explique comment router des comptes vers Microsoft 365 Defender en activant la redirection automatique à partir de l’ancien portail Microsoft Defender pour point de terminaison (securitycenter.windows.com ou securitycenter.microsoft.com) vers <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"> Microsoft 365 Defender</a>.
 

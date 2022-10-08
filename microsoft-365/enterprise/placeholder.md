@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: Tbd.
-ms.openlocfilehash: a8bfa7b7f4cd2bbdf00d5f33434f3479c775dea2
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: ea0e9ce4aad222bc1b1bbf50ff56fb0d5e2c5ee5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672554"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188986"
 ---
 # <a name="placeholder-article"></a>Article sur l’espace réservé
 

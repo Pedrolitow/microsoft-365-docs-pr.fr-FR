@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Mettez à jour votre numéro de téléphone administrateur et votre adresse e-mail dans le Centre d’administration si vous souhaitez réinitialiser votre propre mot de passe d’administrateur.
-ms.openlocfilehash: 8e20aa49bc5d48ebf4e3434f2d5c294bfba5a08f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 0bc1f019b3eea8e7e89d84303447725b9801278f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468435"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188590"
 ---
 # <a name="update-your-microsoft-365-admin-phone-number-and-email-address"></a>Mettre à jour votre numéro de téléphone et votre adresse e-mail d’administrateur Microsoft 365
 
@@ -46,7 +47,7 @@ Utilisez la page **Informations de sécurité** pour modifier votre numéro de t
 
 2. Dans l’en-tête, sélectionnez l’icône \> de profil Mes **informations de sécurité** **de compte**\>.
 
-3. Sous l’onglet **Informations de sécurité**, sélectionnez **Ajouter une méthode** \> **Téléphone** \> **autre Téléphone** ou **e-mail** pour ajouter des détails. Pour mettre à jour les détails de votre téléphone mobile, de votre téléphone et de votre autre adresse e-mail, sélectionnez **Modifier**. Veillez à utiliser autre chose que votre adresse de messagerie Microsoft pour votre autre adresse e-mail.
+3. Sous l’onglet **Informations de sécurité**, sélectionnez Ajouter un **autre téléphone** de **méthode** \>  \> ou **Email** pour ajouter des détails. Pour mettre à jour les détails de votre téléphone mobile, de votre téléphone et de votre autre adresse e-mail, sélectionnez **Modifier**. Veillez à utiliser autre chose que votre adresse de messagerie Microsoft pour votre autre adresse e-mail.
 
     > [!IMPORTANT]
     > L’adresse e-mail de remplacement et le numéro de téléphone mobile sont nécessaires pour réinitialiser votre mot de passe d’administrateur (et non votre mot de passe d’administrateur de l’ordinateur).
@@ -55,11 +56,11 @@ Utilisez la page **Informations de sécurité** pour modifier votre numéro de t
   
 Pour trouver des réponses aux questions ayant trait à la facturation, voir :
   
-- [Modifier vos adresses de facturation pour Microsoft 365 pour les entreprises](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Modifier vos adresses de facturation pour Microsoft 365 entreprise](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [Gérer les modes de paiement](../../commerce/billing-and-payments/manage-payment-methods.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Modifier un nom d’utilisateur et une adresse e-mail](../add-users/change-a-user-name-and-email-address.md) (vidéo)\
 [Ajouter un nouvel employé](../add-users/add-new-employee.md) (vidéo)\

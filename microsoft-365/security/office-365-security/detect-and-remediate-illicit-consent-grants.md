@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- M365-security-compliance
+- m365-security
 ms.date: 07/28/2022
 ms.localizationpriority: medium
 search.appverid:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 183fc5f26e50c1ca452540f683fd25c6af8e40bd
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 4ddd978a4ac75680f10413a3064586ce38967f29
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850134"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072478"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 

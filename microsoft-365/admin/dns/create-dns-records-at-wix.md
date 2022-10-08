@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Apprenez à vérifier votre domaine et à configurer des enregistrements DNS pour le courrier électronique, Skype Entreprise Online et d’autres services chez Wix pour Microsoft.
-ms.openlocfilehash: 9ae245481173b99a9cb1221ed0650dc0b91feecd
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 108704dea7676bf760a09a95e00583411ed1cafa
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563184"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188678"
 ---
 # <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Connecter vos enregistrements DNS à Wix à Microsoft 365
 
@@ -37,7 +38,7 @@ Si Wix est votre fournisseur d’hébergement DNS, suivez les étapes décrites 
 Une fois ces enregistrements ajoutés à Wix, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 
@@ -61,9 +62,9 @@ Avant d’utiliser votre domaine avec Microsoft, nous devons nous assurer que vo
 
 4. In the boxes for the new record, type or copy and paste the values from the following table.
 
-   |Nom d’hôte|TXT Value|TTL (Durée de vie)|
+   |Nom d’hôte|TXT Value|Durée de vie|
    |---|---|---|
-   |Renseigné automatiquement (laissez vide)|MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure|
+   |Renseigné automatiquement (laissez vide)|MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 Hour|
 
 5. Sélectionnez **Enregistrer**.
 
@@ -87,7 +88,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
 
@@ -107,9 +108,9 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
 
-   |Nom d’hôte|Points to |Priority (Priorité)|TTL (Durée de vie)|
+   |Nom d’hôte|Points to |Priorité|Durée de vie|
    |---|---|---|---|
-   |Renseigné automatiquement|*\<domain-key\>*.mail.protection.outlook.com <br/> **Note:** Obtenez votre *\<domain-key\>* fichier à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|0 <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|1 heure|
+   |Renseigné automatiquement|*\<domain-key\>*.mail.protection.outlook.com <br/> **Note:** Obtenez votre *\<domain-key\>* fichier à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|0 <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|1 Hour|
 
 1. S’il existe d’autres enregistrements MX répertoriés, supprimez chacun d’eux.
 
@@ -133,7 +134,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
    |Nom d’hôte|Valeur|Durée de vie|
    |---|---|---|
-   |autodiscover|autodiscover.outlook.com|1 heure|
+   |autodiscover|autodiscover.outlook.com|1 Hour|
 
 5. Sélectionnez **Enregistrer**.
 
@@ -188,7 +189,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
 1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau :
 
-   |Service|Protocole|Nom d’hôte|Pondération|Port|Target|Priority (Priorité)|TTL (Durée de vie)|
+   |Service|Protocole|Nom d’hôte|Pondération|Port|Target|Priorité|Durée de vie|
    |---|---|---|---|---|---|---|---|
    |sip|tls|Renseigné automatiquement|1|443|sipdir.online.lync.com|100|1 Hour|
    |sipfed|tcp|Renseigné automatiquement|1|5061|sipfed.online.lync.com|100|1 Hour|
@@ -208,7 +209,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
    |Type|Hôte|Valeur|Durée de vie|
    |---|---|---|---|
-   |CNAME|sip|sipdir.online.lync.com. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 heure|
+   |CNAME|sip|sipdir.online.lync.com. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 Hour|
    |CNAME|lyncdiscover|webdir.online.lync.com. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 Hour|
 
 1. Sélectionnez **Enregistrer**.
@@ -218,7 +219,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 1. Ajoutez l’autre enregistrement CNAME en copiant les valeurs de la deuxième ligne de la table.
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et mobile Gestion des appareils pour Microsoft 365
 
@@ -240,7 +241,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
     |Type|Hôte|Valeur|Durée de vie|
     |---|---|---|---|
-    |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 heure|
+    |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 Hour|
     |CNAME|enterpriseenrollment|enterpriseenrollment.manage.microsoft.com. <br/> **Cette valeur DOIT se terminer par un point (.)**|1 Hour|
 
 1. Sélectionnez **Enregistrer**.
@@ -250,4 +251,4 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 1. Ajoutez l’autre enregistrement CNAME en copiant les valeurs de la deuxième ligne de la table.
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

@@ -7,19 +7,20 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables pour l’authentification uniquement dans le cloud.
-ms.openlocfilehash: 88138600e516412b74c38234647147197742f2de
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e97dfcb269fbaa9d7b3f0c68e14df9fa392303fd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097511"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171540"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et aux appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
 
@@ -36,7 +37,7 @@ La configuration de cet environnement de test comprend huit étapes :
 3. Configurer la réinitialisation du mot de passe libre-service
 4. Configurer l’authentification multifacteur
 5. Activer l’inscription automatique des appareils des ordinateurs Windows joints à un domaine
-6. Configurer Azure AD protection par mot de passe 
+6. Configurer la protection par mot de passe Azure AD 
 7. Activer Azure AD Identity Protection
 8. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
@@ -45,7 +46,7 @@ La configuration de cet environnement de test comprend huit étapes :
 Suivez les instructions de [Configuration base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
 Voici la configuration obtenue.
 
-![Environnement de test Léger Microsoft 3656 Enterprise.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Environnement de test Léger Microsoft 3656 Entreprise.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
 ## <a name="phase-2-configure-named-locations"></a>Étape 2 : Configurer des emplacements nommés
 
@@ -77,11 +78,11 @@ Suivez les instructions de [Étape 2 de Guide de laboratoire de Test Authentific
 
 Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 5 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 5 : Activer l’inscription automatique des appareils windows joints à un domaine 
 
-Suivez [ces instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) pour activer l’inscription automatique des appareils joints à un domaine Windows ordinateurs.
+Suivez [ces instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) pour activer l’inscription automatique des appareils Windows joints à un domaine.
 
-## <a name="phase-6-configure-azure-ad-password-protection"></a>Phase 6 : Configurer Azure AD protection par mot de passe 
+## <a name="phase-6-configure-azure-ad-password-protection"></a>Phase 6 : Configurer la protection par mot de passe Azure AD 
 
 Suivez [ces instructions](/azure/active-directory/authentication/concept-password-ban-bad) pour bloquer les mots de passe faibles connus et leurs variantes.
 

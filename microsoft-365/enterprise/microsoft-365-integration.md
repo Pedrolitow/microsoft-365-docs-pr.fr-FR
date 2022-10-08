@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 search.appverid:
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Dans cet article, découvrez comment intégrer Microsoft 365 à vos services d’annuaire existants et à vos environnements locaux.
-ms.openlocfilehash: 69d21a5da22db7ae51ab28df548f832b58ca95f6
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: a2245cb842cc2015984e97571a9f86252f68d000
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570158"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180360"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Intégration de Microsoft 365 à des environnements locaux
 

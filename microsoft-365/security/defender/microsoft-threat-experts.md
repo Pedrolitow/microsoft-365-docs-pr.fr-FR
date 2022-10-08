@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.openlocfilehash: 5d01c803f087ec04372300eff4be6a9edcd7002c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+- m365-security
+- tier1
+ms.openlocfilehash: 4ed40bbde797bd258af547dd7c5a48faad523b64
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585507"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68090990"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>vue d’ensemble de Spécialistes des menaces Microsoft dans Microsoft 365
 

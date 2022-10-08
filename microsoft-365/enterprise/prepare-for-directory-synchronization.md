@@ -17,6 +17,7 @@ ms.custom:
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -26,12 +27,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer l’approvisionnement d’utilisateurs dans Microsoft 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: ce4b700f520828c1de722a764e6b73d28cba358d
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: cda02933f0f7da95c27af01497ebbb3ab3b121a7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672356"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188964"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 

@@ -6,24 +6,26 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour héberger l’authentification fédérée à haute disponibilité pour Microsoft 365.'
-ms.openlocfilehash: f83aa494fcdead8f29810dea06193934b8ef26b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 'Résumé : Configurer l’infrastructure Microsoft Azure pour héberger l’authentification fédérée à haute disponibilité pour Microsoft 365.'
+ms.openlocfilehash: ee8e3d22f97bf26479d8aa4013e98b2d62d15cd7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098381"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171122"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
-Dans cette phase, vous allez créer les groupes de ressources, le réseau virtuel (VNet) et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles aux phases 2, 3 et 4. Vous devez terminer cette phase avant de passer à [la phase 2 : Configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consultez [Déployer l’authentification fédérée à haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
+Dans cette phase, vous allez créer les groupes de ressources, le réseau virtuel (VNet) et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles aux phases 2, 3 et 4. Vous devez terminer cette phase avant de passer à [la phase 2 : Configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consultez [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
   
 Azure doit être approvisionné avec les composants de base suivants :
   
@@ -43,13 +45,13 @@ Avant de commencer à configurer les composants Azure, renseignez les tableaux s
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Nom du réseau virtuel  <br/> |Nom à affecter au réseau virtuel (exemple FedAuthNet).  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure régional qui contiendra le réseau virtuel.  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer cette valeur de clé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Clé partagée IPsec  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau V : configuration de réseau virtuel entre différents locaux**
   
-Remplissez ensuite le Tableau S pour les sous-réseaux de cette solution. Tous les espaces d'adressage doivent être au format de routage CIDR (Classless Interdomain Routing), également appelé format de préfixe de réseau. Par exemple, 10.24.64.0/20.
+Next, fill in Table S for the subnets of this solution. All address spaces should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.
   
 Pour les trois premiers sous-réseaux, spécifiez un nom et un espace d’adressage IP unique en fonction de l’espace d’adressage du réseau virtuel. Pour le sous-réseau de passerelle, déterminez l’espace d’adressage 27 bits (avec une longueur de préfixe /27) pour le sous-réseau de passerelle Azure avec les éléments suivants :
   
@@ -96,7 +98,7 @@ Pour deux serveurs DNS (Domain Name System) de votre réseau local que vous souh
   
 Pour acheminer les paquets du réseau intersite vers votre réseau d’organisation via la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui a une liste des espaces d’adressage (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
   
-Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d'en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d'espaces d'adressage.
+For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list of address spaces.
   
 |**Élément**|**Espace d'adressage du réseau local**|
 |:-----|:-----|
@@ -109,7 +111,7 @@ Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau 
 Commençons maintenant à créer l’infrastructure Azure pour héberger votre authentification fédérée pour Microsoft 365.
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Consultez [Démarrage avec Azure PowerShell](/powershell/azure/get-started-azureps). 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [Prise en main de Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Tout d'abord, démarrez une invite PowerShell Azure et connectez-vous à votre compte.
   
@@ -132,7 +134,7 @@ Pour les versions antérieures de Azure PowerShell, utilisez plutôt cette comma
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Définissez votre abonnement Azure. Remplacez tout le texte entre guillemets, y compris les caractères \< and >, avec le nom correct.
+Définissez votre abonnement Azure. Remplacez tout ce qui se trouve dans les guillemets, y compris les \< and > caractères, par le nom correct.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -261,7 +263,7 @@ Ensuite, enregistrez l'adresse IPv4 publique de la passerelle VPN Azure pour vot
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Ensuite, configurez votre périphérique VPN local de sorte qu'il se connecte à la passerelle VPN Azure. Pour plus d'informations, reportez-vous à la rubrique [À propos des périphériques VPN pour les connexions de la passerelle VPN de site à site](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Pour configurer votre périphérique VPN local, vous avez besoin des éléments suivants :
   
@@ -269,7 +271,7 @@ Pour configurer votre périphérique VPN local, vous avez besoin des éléments 
     
 - La clé prépartagée IPsec pour la connexion VPN de site à site (Tableau V - Élément 5 - colonne Valeur).
     
-Ensuite, vérifiez que l'espace d'adressage du réseau virtuel est accessible à partir de votre réseau local. Pour cela, il convient généralement d'ajouter un chemin de routage correspondant à l'espace d'adressage du réseau virtuel à votre périphérique VPN puis d'annoncer ce chemin de routage au reste de l'infrastructure de routage du réseau de votre organisation. Renseignez-vous auprès de votre service informatique pour savoir comment procéder.
+Next, ensure that the address space of the virtual network is reachable from your on-premises network. This is usually done by adding a route corresponding to the virtual network address space to your VPN device and then advertising that route to the rest of the routing infrastructure of your organization network. Work with your IT department to determine how to do this.
   
 Ensuite, définissez les noms de trois groupes à haute disponibilité. Remplissez le Tableau A. 
   
@@ -302,7 +304,7 @@ Voici la configuration obtenue à la fin de cette phase.
   
 **Phase 1 : Infrastructure Azure pour l’authentification fédérée à haute disponibilité pour Microsoft 365**
 
-![Phase 1 de la haute disponibilité Microsoft 365 l’authentification fédérée dans Azure avec l’infrastructure Azure.](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 de l’authentification fédérée Microsoft 365 à haute disponibilité dans Azure avec l’infrastructure Azure.](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Étape suivante
 

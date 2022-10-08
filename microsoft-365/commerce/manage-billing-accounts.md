@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,22 +22,22 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez les comptes de facturation et comment ils sont utilisés pour gérer les paramètres de compte, les factures, les modes de paiement et les achats.
 ms.date: 05/24/2022
-ms.openlocfilehash: 4630ee028a298d3c901a0e66cde41df58bebece2
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 081c80f343abfc19f3f25e349f8128e407e86d6e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493616"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189206"
 ---
 # <a name="understand-your-microsoft-billing-accounts"></a>Comprendre vos comptes de facturation Microsoft
 
 Un compte de facturation est créé lorsque vous vous inscrivez pour essayer ou acheter des produits Microsoft. Vous utilisez votre compte de facturation pour gérer les paramètres, les factures, les modes de paiement et les achats de votre compte. Vous pouvez avoir accès à plusieurs comptes de facturation. Par exemple, vous vous êtes inscrit directement à Microsoft 365, ou vous avez accès au Accord Entreprise, au Contrat de services & produit Microsoft ou au Contrat client Microsoft de votre organisation. Pour chacun de ces scénarios, vous disposez d’un compte de facturation distinct.
 
-Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> prend actuellement en charge le type de comptes de facturation suivant :
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> prend actuellement en charge le type de comptes de facturation suivant :
 
 - Programme Microsoft Online Services : ce compte de facturation est créé lorsque vous vous inscrivez directement à un abonnement Microsoft 365.
 - Programme MPSA (Microsoft Products & Services Agreement) : ce compte de facturation est créé lorsque votre organisation signe un contrat de licence en volume MPSA pour acheter des logiciels et des services en ligne.
-- Contrat client Microsoft : ce compte de facturation est créé lorsque votre organisation travaille avec un représentant Microsoft, un partenaire autorisé ou effectue des achats indépendamment.
+- Contrat client Microsoft : ce compte de facturation est créé lorsque votre organisation travaille avec un représentant Microsoft, un partenaire autorisé ou effectue des achats indépendamment.
 
 La page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Comptes de facturation</a> fournit une vue de vos comptes commerciaux avec Microsoft. Par défaut, votre organisation dispose d’au moins un compte de facturation associé à un contrat accepté soit au moment d’un achat direct, soit par le biais d’un contrat de licence en volume.
 
@@ -79,7 +80,7 @@ Vous pouvez fournir à d’autres personnes l’accès au compte de facturation 
 > - Les rôles de compte de facturation s’appliquent uniquement aux comptes de facturation et ne s’appliquent pas aux autres scénarios Centre d'administration Microsoft 365.
 > - Pour les comptes de facturation créés à l’intérieur de l’inscription Microsoft 365, les nouveaux administrateurs généraux, de facturation et de lecteur général bénéficient automatiquement de niveaux d’accès distincts. Vous pouvez gérer cet accès à partir **de la** >  page **Comptes de facturation** en supprimant explicitement ces utilisateurs de la section attribution de rôle en bas de la page.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Informations fiscales](billing-and-payments/tax-information.md) (article) \
 [Comprendre les profils de facturation](billing-and-payments/manage-billing-profiles.md) (article)

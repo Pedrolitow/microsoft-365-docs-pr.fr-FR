@@ -5,23 +5,24 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Si vous souhaitez en savoir plus sur les incidents d’e-mail ou les conseils dans Microsoft 365, utilisez la surveillance d’Exchange Online.
-ms.openlocfilehash: 07d43a6f61ffe3e38f927d47e09d0a9685925f73
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
-ms.translationtype: HT
+ms.openlocfilehash: 97500a7ad2eb801d4bbcad622cce8ca222ae363e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520694"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180558"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Déployer Exchange Online pour Microsoft 365 Éducation
 
@@ -40,7 +41,7 @@ L’analyse Exchange Online prend en charge les scénarios suivants au niveau de
    >[!Note]
    > Le programme détermine le nombre d’utilisateurs actifs selon une activité unique. Par exemple, lorsqu’un utilisateur lit un e-mail. Il rend compte seulement des 30 dernières minutes d’activité.
 
-- **Connectivité d’application** : la connectivité estimée est basée sur le pourcentage de connexions synthétiques réussies entre les appareils de votre organisation et Exchange Online, et peut inclure des problèmes en dehors du contrôle de Microsoft. Pour plus d’informations, consultez [Optique de connectivité Microsoft 365](microsoft-365-connectivity-optics.md).
+- **App connectivity**: Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. To learn more, see [Microsoft 365 Connectivity Optics](microsoft-365-connectivity-optics.md).
 
 - **Authentification de base et authentification moderne** : nombre d’utilisateurs correctement validés dans le service Exchange Online.
 
@@ -90,11 +91,11 @@ Pour ces scénarios, vous pouvez voir des avertissements et des incidents actifs
 
 Dans le volet de compte affecté, la colonne **État** a les valeurs suivantes :
 
-- Résolu : le problème à l’origine de l’avertissement ou de l’incident a été résolu pour le compte prioritaire. Il n’y a plus de problème. 
+- Fixed: The issue causing the advisory or incident has been addressed for the priority account. There's no longer an issue. 
 
-- Actif : le problème à l’origine de l’avertissement ou de l’incident est en cours pour le compte prioritaire. Le problème demeure. 
+- Active: The issue causing the advisory or incident is ongoing for the priority account. The issue remains. 
 
-- Différé : le problème à l’origine de l’avertissement ou de l’incident n’a pas été résolu pour le compte prioritaire depuis 96 heures, il est donc suspendu. Le problème persiste. 
+- Delayed: The issue causing the advisory or incident hasn't been addressed for the priority account in 96 hours, so it's suspended. The issue remains. 
 
 Voici un exemple.
 
@@ -110,4 +111,4 @@ Le nombre d’utilisateurs actifs indiqué dans la surveillance est basé sur un
 
 ### <a name="2-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>2. Où les données sont-elles instrumentées pour les scénarios qui montrent les tendances d’activité ?
 
-Les données sont instrumentées dans le service Exchange Online. Si un échec se produit avant que la demande n’atteigne Exchange Online ou qu’il y ait un échec dans Exchange Online, vous verrez une baisse du signal d’activité.
+The data is instrumented in the Exchange Online service. If there's a failure that happens before the request reaches Exchange Online or there's a failure in Exchange Online, you'll see a drop in the activity signal.

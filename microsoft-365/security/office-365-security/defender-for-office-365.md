@@ -12,7 +12,7 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a67dd69c4b533fc63536a43f40921dfe0babde12
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: a7dd841c3d74f123d6fdadf152b36afe4be3a825
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851697"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072500"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -33,12 +33,12 @@ ms.locfileid: "67851697"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients professionnels dotés de [Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> This article is intended for business customers who have [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safe Links or Safe Attachments in Outlook, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Microsoft Defender pour Office 365 protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Microsoft Defender pour Office 365 inclut :
+Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
 - **[Stratégies de protection contre les menaces](#configure-microsoft-defender-for-office-365-policies)** : définissez des stratégies de protection contre les menaces pour définir le niveau de protection approprié pour votre organisation.
 
@@ -56,7 +56,7 @@ Dans ce guide interactif, vous découvrirez comment protéger votre organisation
 
 ## <a name="getting-started"></a>Prise en main
 
-Si vous débutez avec Microsoft Defender pour Office 365 ou que vous apprenez le mieux par la *pratique*, il peut être utile de diviser la configuration initiale de Defender pour Office 365 en plusieurs blocs, d'effectuer des recherches et de consulter des rapports en utilisant cet article comme référence. Voici des blocs logiques de configuration initiale :
+If you're new to Microsoft Defender for Office 365 or learn best by *doing*, you may benefit from breaking initial Defender for Office 365 configuration into chunks, investigating, and viewing reports using this article as a reference. Here are logical early configuration chunks:
 
 - Configurez tous les éléments à l’aide de la fonctionnalité «*anti*» dans le nom.
   - anti-programme malveillant
@@ -134,7 +134,7 @@ Microsoft Defender pour Office 365 Plan 2 inclut les meilleurs [outils d’exame
 
 - **[Les suivis de menace](threat-trackers.md)** fournissent la dernière intelligence sur les problèmes de sécurité sur Internet. Par exemple, vous pouvez afficher des informations sur les derniers programmes malveillants et prendre des contre-mesures avant qu’ils ne deviennent réellement une menace pour votre organisation. Les suivis disponibles incluent des [suivis important](threat-trackers.md#noteworthy-trackers), des [suivis de tendances](threat-trackers.md#trending-trackers),des [requêtes suivies](threat-trackers.md#tracked-queries) et des [requêtes enregistrées](threat-trackers.md#saved-queries).
 
-- **[Explorateur de menaces (ou détections en temps réel)](threat-explorer.md)** (également appelé Explorateur) est un rapport en temps réel qui vous permet d’identifier et d’analyser les menaces récentes. Vous pouvez configurer Explorateur pour afficher des données pour des périodes personnalisées.
+- **[Threat Explorer (or real-time detections)](threat-explorer.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
 - **[La formation à la simulation d'attaque](attack-simulation-training.md)** vous permet d'exécuter des scénarios d'attaque réalistes dans votre organisation afin d'identifier les vulnérabilités. Des simulations des types d'attaques actuels sont disponibles, notamment des attaques de récupération des informations d'identification et de connexion par hameçonnage et des attaques par pulvérisation de mots de passe et par mot de passe par force brute.
 
@@ -144,7 +144,7 @@ Microsoft Defender pour Office 365 Plan 2 inclut les meilleurs [outils d’exame
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Autorisations requises pour utiliser les fonctionnalités de Microsoft Defender pour Office 365
 
-Pour accéder aux fonctionnalités de Microsoft Defender pour Office 365, vous devez disposer d’un rôle approprié. Le tableau suivant inclut quelques exemples :
+To access Microsoft Defender for Office 365 features, you must be assigned an appropriate role. The following table includes some examples:
 
 |Rôle ou groupe de rôles|Ressources pour en savoir plus|
 |---|---|

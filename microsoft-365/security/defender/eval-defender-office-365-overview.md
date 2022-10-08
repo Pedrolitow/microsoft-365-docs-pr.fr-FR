@@ -16,18 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 2d8fbd7c36fd789855dca13917177ee3fd985ebf
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: c448d5b469573c96ebb8d2b2aec2fee01de931c0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67566209"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072830"
 ---
 # <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>Étape 3. Activer et piloter Microsoft Defender pour Office 365
 

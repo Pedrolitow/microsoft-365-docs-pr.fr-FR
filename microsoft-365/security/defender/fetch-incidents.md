@@ -14,15 +14,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m65-security-compliance
+- tier3
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 707041bb9c1a7692086f696e3ae7f648ed484de6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: bdd3065b7d0699ae90d7e1ec9799fd176af508b3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679754"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072698"
 ---
 # <a name="fetch-microsoft-365-defender-incidents"></a>Récupérer les incidents Microsoft 365 Defender 
 

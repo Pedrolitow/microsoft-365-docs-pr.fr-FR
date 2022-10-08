@@ -6,8 +6,10 @@ manager: scotv
 ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
-ms.collection: SPO_Content
+ms.service: microsoft-365-enterprise
+ms.collection:
+- scotvorg
+- SPO_Content
 search.appverid:
 - MET150
 ms.localizationpriority: medium
@@ -16,19 +18,19 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations back-end qui se produisent lorsque Microsoft déplace les services et les données associées de votre locataire vers une nouvelle zone géographique de centre de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c8b22665fec704ae9cb74bb2fe218e0b2e4a00f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9df2cbbf802dcba692bbd3e4033e15128ee2a1a9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478594"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171320"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
-Les déplacements de données sont une opération back-end avec un impact minimal sur les utilisateurs finaux. Aucune action de votre part n’est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
+Les déplacements de données sont une opération back-end avec un impact minimal sur les utilisateurs finaux. Aucune action de votre part n’est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l’avance, et n’ont qu’une incidence minimale sur les utilisateurs.
   
 > [!NOTE]
-> Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment.
+> Moves occur at different times for each service. As a result, you'll see the described reduced functionality for each service at a different time.
   
 Regardez le Centre de messages Microsoft 365 pour obtenir une confirmation lorsque les déplacements de chacun des Exchange Online, SharePoint Online et du service de conversation Teams sont terminés. Comme indiqué dans le tableau ci-dessous, il peut s’écouler jusqu’à 24 mois après la fin de la période d’inscription pour que les données client de base au repos passent à la nouvelle zone géographique du centre de données.
 
@@ -56,7 +58,7 @@ Comme le déplacement de chaque utilisateur vers la nouvelle zone géographique 
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>Ouvrez « Dossier partagé » dans Outlook Web Access 
 
-Certains utilisateurs ouvrent un dossier de messagerie partagé à partir d'une autre boîte aux lettres (sur laquelle l'utilisateur a des autorisations en lecture ou en écriture) dans Outlook Web Access à l'aide de la fonctionnalité « Dossier partagé ». Le tableau suivant indique comment fonctionne l'accès aux dossiers partagés au cours d'un déplacement de boîte aux lettres. Notez que les utilisateurs disposant d'autorisations complètes sur une boîte aux lettres partagée peuvent ouvrir la boîte aux lettres à l'aide d'Outlook Web Access lors du déplacement.
+Some users open a shared mail folder from another mailbox (that the user has read or write permissions to) in Outlook Web Access using the "Shared Folder" feature. The following table describes how access to shared folders works during a mailbox move. Please note that users with full permissions to a shared mailbox can open the mailbox by using Outlook Web Access during the move.
   
 | Configuration | Description |
 |:-----|:-----|
@@ -95,9 +97,9 @@ Les fonctionnalités de recherche suivantes sont concernées :
   
 - Résultats de la recherche et composants WebPart de recherche : Les résultats n’incluent pas les modifications qui se sont produites après la migration jusqu’à ce que l’analyse les ait récupérées. 
 
-- Delve : Delve n'inclut pas les modifications qui se sont produites après la migration jusqu'à ce que l'analyse les ait récupérées.
+- Delve : Delve n’inclut pas les modifications qui se sont produites après la migration jusqu’à ce que l’analyse les ait récupérées.
 
-- Rapports de popularité et de recherche pour le site : le nombre de rapports Excel situés dans le nouvel emplacement prend uniquement en compte le nombre de rapports migrés et de rapports d'utilisation exécutés après le déplacement de vos données SharePoint Online. Le nombre de rapports existant pendant la période de transition est perdu et ne peut pas être récupéré. Cette période correspond généralement à quelques jours. Certains clients peuvent constater des pertes plus courtes ou plus longues.
+- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
 
 - Portail vidéo : les nombres et les statistiques de vue dépendent des statistiques des rapports Excel. Par conséquent, ils sont perdus pendant le même nombre de jours que les rapports Excel.
 

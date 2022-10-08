@@ -1,13 +1,14 @@
 ---
-title: Microsoft 365 optique de connectivité
+title: Microsoft 365 Connectivity Optics
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -19,19 +20,19 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: Cet article contient des informations sur Microsoft 365 l’optique de connectivité.
-ms.openlocfilehash: cda5fa074aa04be5fbbaff9b98360a3a2f927fc2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Cet article contient des informations sur l’optique de connectivité Microsoft 365.
+ms.openlocfilehash: f6a9b9c8473bf46e93143fa9863646a147d1a56c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090316"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180492"
 ---
-# <a name="microsoft-365-connectivity-optics"></a>Microsoft 365 optique de connectivité
+# <a name="microsoft-365-connectivity-optics"></a>Microsoft 365 Connectivity Optics
 
 Ce document décrit certaines des optiques de connectivité que Microsoft collecte généralement à partir des appareils clients, et décrit certaines des façons dont Microsoft utilise ces données pour analyser et optimiser la prestation de services, et pour évaluer et garantir la meilleure expérience possible pour l’utilisateur final.
 
-Les optiques de connectivité sont généralement collectées à partir d’applications Microsoft, qui peuvent être installées sur des appareils de l’utilisateur final ou accessibles à partir de navigateurs. Contrairement à la collecte de données facultative dans Microsoft 365 services, la plupart des optiques de connectivité décrites ici font partie intégrante de la garantie que Microsoft respecte notre engagement en matière de disponibilité et de performances envers les clients. Ces optiques permettent à Microsoft de détecter et de répondre rapidement aux problèmes dans le chemin de connectivité entre les utilisateurs finaux et les points de terminaison de service Microsoft. Certaines de ces optiques sont également utilisées pour activer des fonctionnalités telles que [la connectivité réseau dans le centre Administration Microsoft 365](office-365-network-mac-perf-overview.md).
+Les optiques de connectivité sont généralement collectées à partir d’applications Microsoft, qui peuvent être installées sur des appareils de l’utilisateur final ou accessibles à partir de navigateurs. Contrairement à la collecte de données facultative dans les services Microsoft 365, la plupart des optiques de connectivité décrites ici font partie intégrante de la garantie que Microsoft respecte notre engagement en matière de disponibilité et de performances envers les clients. Ces optiques permettent à Microsoft de détecter et de répondre rapidement aux problèmes dans le chemin de connectivité entre les utilisateurs finaux et les points de terminaison de service Microsoft. Certaines de ces optiques sont également utilisées pour activer des fonctionnalités telles que [la connectivité réseau dans le centre Administration Microsoft 365](office-365-network-mac-perf-overview.md).
 
 ## <a name="optics-collected-from-microsoft-365-applications"></a>Optiques collectées à partir d’applications Microsoft 365
 
@@ -53,11 +54,11 @@ Chaque mesure est généralement associée à des informations supplémentaires,
 | ID du moniteur | Identificateur de l’application générant la requête (par exemple, Outlook, OneDrive, etc.), fournie par l’application cliente qui effectue la mesure. |
 | ID de la demande | Identificateur de la demande de mesure, spécifié dans la configuration de mesure fournie par Microsoft. |
 | Adresse IP distante | Adresse IP source masquée associée à la demande du point de terminaison client au point de terminaison de service, fournie par le serveur qui a reçu la demande de mesure et calculée en fonction de l’adresse IP source du client visible par Microsoft. Les adresses IP sont masquées dans un sous-réseau /24 pour les adresses IPv4 ou un sous-réseau /48 pour les adresses IPv6 afin de garantir que Microsoft ne peut pas identifier des appareils ou des utilisateurs individuels. |
-| Serveur frontal | Microsoft 365 identificateur frontal de service, fourni par le serveur qui a reçu la demande de mesure. |
-| Point de terminaison | Microsoft 365 emplacement du point de terminaison de service, fourni par le serveur qui a reçu la demande de mesure. |
+| Serveur frontal | Identificateur frontal du service Microsoft 365, fourni par le serveur qui a reçu la demande de mesure. |
+| Point de terminaison | Emplacement du point de terminaison de service Microsoft 365, fourni par le serveur qui a reçu la demande de mesure. |
 | Certificat émis par | Propriété « certificat émis par » du certificat SSL présenté lors de la connexion au point de terminaison de service, qui indique l’autorité de certification qui a émis le certificat au point de terminaison de service. |
 | Empreinte numérique du certificat | Propriété « empreinte numérique de certificat » du certificat SSL présenté lors de la connexion au point de terminaison de service, qui est un identificateur unique accessible publiquement du certificat. |
-| Latitude/longitude | Latitude et longitude abstraites de l’appareil de l’utilisateur final. Cette opération est uniquement collectée pour les locataires qui ont activé Windows Service d’emplacement sur les appareils des utilisateurs finaux et qui ont également [activé la collecte de ces informations dans le portail d’administration Microsoft 365](office-365-network-mac-perf-overview.md#1-enable-windows-location-services). |
+| Latitude/longitude | Latitude et longitude abstraites de l’appareil de l’utilisateur final. Elle est uniquement collectée pour les locataires qui ont activé le service d’emplacement Windows sur les appareils des utilisateurs finaux et qui ont également [activé la collecte de ces informations dans le portail d’administration Microsoft 365](office-365-network-mac-perf-overview.md#1-enable-windows-location-services). |
 
 ## <a name="measurement-process"></a>Processus de mesure
 

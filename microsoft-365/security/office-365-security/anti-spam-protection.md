@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres anti-courrier indésirable et les filtres qui vous aideront à empêcher le courrier indésirable dans Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e5c2ed6ddc31c75baa87b62bbd642ca4fd9cc30f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b42122187f32396a5ca0643eb535b7d9d3cc4229
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480490"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68090836"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protection anti-courrier indésirable dans EOP
 

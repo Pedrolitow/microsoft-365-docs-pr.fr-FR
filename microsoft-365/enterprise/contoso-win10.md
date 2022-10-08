@@ -7,23 +7,24 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
-ms.openlocfilehash: 082c60de614c5a125a1fd2af6ba9d187f21ca39e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d71bb45aff9a61e80470ee834dbfe645298a218
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095353"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171408"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
-Avant le déploiement à grande échelle de Microsoft 365 pour les entreprises, Contoso avait Windows pc et appareils compatibles exécutant un mélange de Windows 7 (10 %), Windows 8.1 (65 %) et Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC pour Windows 10 Entreprise tirer parti de la sécurité avancée et réduire la surcharge informatique liée aux déploiements automatisés de mises à jour. 
+Avant le déploiement à grande échelle de Microsoft 365 pour les entreprises, Contoso disposait de PC et d’appareils compatibles Windows exécutant un mélange de Windows 7 (10 %), de Windows 8.1 (65 %) et de Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC pour Windows 10 Entreprise tirer parti de la sécurité avancée et réduire la surcharge informatique liée aux déploiements automatisés de mises à jour. 
 
 Après évaluation de ses besoins d’infrastructure et de ses besoins métier, Contoso a identifié les exigences principales suivantes en matière de déploiement :
 
@@ -50,7 +51,7 @@ Avant et pendant les mises à niveau sur place de Windows 10 Entreprise, Contos
 
   Identifie les appareils qui se bloquent fréquemment et qui, par conséquent, doivent être recréés ou remplacés et les pilotes de périphériques qui provoquent des blocages sur les appareils, avec des suggestions d’autres versions de ces pilotes susceptibles de réduire le nombre d’incidents. Fournit une notification de configurations incorrectes de la Protection des informations Windows qui envoient des invites à des utilisateurs finaux.
  
-Contoso dispose d’une infrastructure Configuration Manager (branche actuelle) existante. Le gestionnaire de configuration s’adapte à des environnements volumineux et offre un contrôle extensif sur l’installation, les mises à jour et les paramètres. Il dispose également de fonctionnalités intégrées pour simplifier et accroître l’efficacité du déploiement et de la gestion de Windows 10 Entreprise.
+Contoso has an existing Configuration Manager (Current Branch) infrastructure. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Windows 10 Enterprise.
 
 ## <a name="planning-process"></a>Processus de planification
 
@@ -65,7 +66,7 @@ Pour effectuer le déploiement de mises à niveau sur place de Windows 10 Entre
 3. Utilisé Configuration Manager pour déployer les packages Windows sur des points de distribution sur leur réseau et des builds déployées sur les trois groupes intermédiaires de validation et de déploiement.
 4. Exécution de l’évaluation de réussite pour les PC et les périphériques dans les trois anneaux de gestion intermédiaire de la validation et du déploiement utilisant des solutions de conformité de mise à jour et d’intégrité des périphériques de Windows Analytics.
 5. En fonction des informations Windows Analytics, Contoso a déterminé la version de Windows 10 Entreprise à déployer sur le groupe de déploiement étendu.
-6. Exécution des séquences de tâches de déploiement Configuration Manager pour déployer le package Windows sélectionné sur le groupe de déploiement étendu.
+6. A exécuté les séquences de tâches de déploiement Configuration Manager pour déployer le package Windows sélectionné sur le groupe de déploiement étendu.
 7. Pc et appareils surveillés dans le groupe de déploiement étendu à l’aide des solutions Device Health et Update Compliance pour résoudre les problèmes.
 
 Voici la mise à niveau sur place et l’architecture de déploiement de mises à jour en cours de Contoso.
@@ -78,7 +79,7 @@ Cette infrastructure se compose des éléments suivants :
   - obtient des images pour les packages Windows 10 Entreprise à partir du centre de gestion des licences en volume Microsoft dans The Microsoft Network ;
   - est le point d’administration central pour les packages de déploiement.
 - Les points de distribution régionaux généralement situés dans les centres régionaux de Contoso.
-- Windows pc et appareils dans différents emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en cours en fonction de l’appartenance au groupe.
+- Pc et appareils Windows dans différents emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en cours en fonction de l’appartenance au groupe.
 
 ## <a name="next-step"></a>Étape suivante
 

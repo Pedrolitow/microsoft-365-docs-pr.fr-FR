@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Découvrez comment les pools de remise sont utilisés pour protéger la réputation des serveurs de messagerie dans les centres de données Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0d56f1cb69134da2d0ebe2594a8507ef7e0f5c37
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 7e36798475041f454e7ba41c49e94a87cff38cc6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598426"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68090616"
 ---
 # <a name="outbound-delivery-pools"></a>Pools de livraison sortante
 

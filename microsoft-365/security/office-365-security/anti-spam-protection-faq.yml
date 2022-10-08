@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Forum Aux Questions sur la protection anti-courrier indésirable
+  title: FAQ sur la protection anti-courrier indésirable
   f1.keywords:
   - NOCSH
   ms.author: chrisda
@@ -13,19 +13,19 @@ metadata:
   - MET150
   ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
   ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
   ms.custom:
   - seo-marvel-apr2020
   description: Les administrateurs peuvent consulter les questions et réponses fréquemment posées sur la protection anti-courrier indésirable dans Exchange Online Protection (EOP).
   ms.subservice: mdo
   ms.service: microsoft-365-security
-  ms.openlocfilehash: e83f0baa9ee41201c41643a6143e50d5424b6edb
-  ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+  ms.openlocfilehash: 449a58b9be0f62638cf18099d680b8033cf26aa3
+  ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/31/2022
-  ms.locfileid: "67483209"
+  ms.lasthandoff: 09/27/2022
+  ms.locfileid: "68090880"
 title: FAQ sur la protection anti-courrier indésirable
 summary: >
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
@@ -125,10 +125,10 @@ sections:
   - question: >
       Le service limite-t-il (limite de débit) ma messagerie si mes utilisateurs envoient du courrier indésirable sortant ?
     answer: >
-      Si plus de la moitié du courrier envoyé par un utilisateur par le biais du service dans un délai donné (par exemple, par heure) est déterminé comme courrier indésirable par EOP, l’utilisateur ne peut pas envoyer de messages. Dans la plupart des cas, si un message sortant est déterminé comme étant du courrier indésirable, il est routé via le pool de remises à haut risque, ce qui réduit la probabilité d'ajout du pool d'IP sortantes normales à une liste rouge.
+      Si plus de la moitié du courrier envoyé par un utilisateur par le biais du service dans un délai donné (par exemple, par heure) est déterminé comme courrier indésirable par EOP, l’utilisateur ne peut pas envoyer de messages. Dans la plupart des cas, si un message sortant est déterminé comme étant du courrier indésirable, il est routé via le pool de remises à haut risque, ce qui réduit la probabilité d’ajout du pool d’IP sortantes normales à une liste rouge.
 
 
-      Vous pouvez envoyer une notification à une adresse de messagerie spécifique quand un utilisateur est bloqué en relation avec l'envoi de courrier indésirable sortant. Pour plus d'informations sur ce paramètre, consultez la rubrique [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md).
+      You can send a notification to a specified email address when a sender is blocked sending outbound spam. For more information about this setting, see [Configure the outbound spam policy](configure-the-outbound-spam-policy.md).
   - question: >
       Puis-je utiliser un fournisseur tiers de blocage de courrier indésirable et de programme malveillant en association avec Exchange Online ?
     answer: >
@@ -169,7 +169,7 @@ sections:
 
       - **Veillez à ce que les enregistrements SPF appropriés soient configurés dans DNS.**
 
-        Les enregistrements SPF constituent un mécanisme permettant de valider le fait que du courrier électronique envoyé par un domaine provient réellement de ce dernier et n'est pas falsifié. Pour plus d'informations sur les enregistrements SPF, consultez les liens suivants :
+        SPF records are a mechanism for validating that mail sent from a domain really is coming from that domain and is not spoofed. For more information about SPF records, see the following links:
 
         [Configurer SPF pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
@@ -177,17 +177,17 @@ sections:
 
       - **Signature de courrier électronique avec DKIM, canonisation assouplie.**
 
-        Si un expéditeur souhaite signer ses messages à l'aide de la technologie DKIM (Domain Keys Identified Mail) et envoyer du courrier sortant via le service, il doit utiliser l'algorithme de canonisation d'en-tête assouplie. Signer avec une canonisation d'en-tête stricte peut entraîner une invalidation de la signature par le service.
+        If a sender wants to sign their messages using Domain Keys Identified Mail (DKIM) and they want to send outbound mail through the service, they should sign using the relaxed header canonicalization algorithm. Signing with strict header canonicalization may invalidate the signature when it passes through the service.
 
       - **Les propriétaires de domaine doivent disposer d'informations exactes dans la base de données WHOIS.**
 
         Ces informations identifient les propriétaires de domaine et indiquent comment les contacter en entrant la société mère stable, le point de contact et les serveurs de noms.
 
-      - **For bulk mailers, the From: name should reflect who is sending the message, while the subject line of the message should be a brief summary on what the message is about.**
+      - Pour les expéditeurs de publipostages, le nom figurant dans le champ De : doit indiquer qui envoie le message, tandis que la ligne d’objet du message doit résumer brièvement son contenu.
 
-        Le corps du message doit contenir une indication claire concernant l'offre, le service ou le produit. Par exemple, si un expéditeur envoie un publipostage pour le compte de la société Contoso, voici à quoi doit ressembler le contenu des champs De et Objet du message électronique :
+        The message body should have a clear indication of the offering, service, or product. For example, if a sender is sending out a bulk mailing for the Contoso company, the following is what the email From and Subject should resemble:
 
-        > De : marketing@contoso.com <br> Objet : Nouveau catalogue à jour pour la période de Noël
+        > De : marketing@contoso.com <br> Objet : Nouveau catalogue à jour pour la période de Noël
 
         Voici un exemple de ce qu'il ne faut pas faire parce que ce n'est pas assez descriptif :
 
@@ -225,11 +225,11 @@ sections:
 
       - **Supprimez les adresses de messagerie de notification de non-remise pour les utilisateurs inexistants.**
 
-        Si vous recevez une notification d'échec de remise (NDR) indiquant qu'une adresse de messagerie n'est plus utilisée, supprimez l'alias correspondant de votre liste. Les adresses électroniques changent au fil du temps et certaines personnes les abandonnent.
+        If you receive an NDR indicating that an email address is no longer in use, remove the non-existent email alias from your list. Email addresses change over time, and people sometimes discard them.
 
       - **Utilisez le programme Smart Network Data Services (SNDS) de Hotmail.**
 
-        Hotmail utilise un programme nommé Smart Network Data Services qui permet aux expéditeurs de consulter des plaintes d'utilisateurs finaux. Le programme SNDS est le portail principal pour le dépannage des problèmes de remise liés à Hotmail.
+        Hotmail uses a program called Smart Network Data Services that allows senders to check complaints submitted by end users. The SNDS is the primary portal for troubleshooting delivery problems to Hotmail.
   - question: >
       Comment faire désactiver le filtrage du courrier indésirable ?
     answer: >-
