@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5b821d79c4f4359c3548c2904ea2febb94308188
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 8931d7fa891b2d746ed91fc3093b7832dcef0021
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743303"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224951"
 ---
 # <a name="phishing-trends-and-techniques"></a>Tendances et techniques d'hameçonnage
 

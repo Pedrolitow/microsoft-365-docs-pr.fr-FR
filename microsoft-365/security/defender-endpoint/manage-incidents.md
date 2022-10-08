@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 289f784bc36dcb1b17ec77fff39714ceceadd704
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 1a84ba0441892239ade7373829bba28e28045d27
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521518"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233043"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Gérer les incidents Microsoft Defender pour point de terminaison
 

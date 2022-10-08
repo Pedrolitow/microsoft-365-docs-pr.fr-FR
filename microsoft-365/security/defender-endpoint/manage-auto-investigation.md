@@ -13,18 +13,18 @@ ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4bad45f7ed9e6c5e82f1bbc52603deeb6c104af1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d996afc778196deebbd9250de811be525f993c3a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689894"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233153"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Passer en revue les actions de correction à la suite d’une investigation automatisée
 
@@ -43,6 +43,9 @@ Selon
 - comment les [groupes d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) de votre organisation sont configurés,
 
 les actions de correction peuvent se produire automatiquement ou uniquement après approbation par l’équipe des opérations de sécurité de votre organisation.
+
+> [!NOTE]
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 Voici quelques exemples :
 

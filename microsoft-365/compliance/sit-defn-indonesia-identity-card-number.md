@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro de carte d’identité (KTP) de l’Indonésie.
-ms.openlocfilehash: d70e6ca902c6246e6faa67a91c5b52ae65e4fd47
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 0569be435baf2763c6de63db77926189bfb4a78c
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995470"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380600"
 ---
 # <a name="indonesia-identity-card-ktp-number"></a>Numéro de carte d’identité (KTP) en Indonésie
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -69,6 +72,6 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 
 ### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
-- KTP
+- Ktp
 - Kartu Tanda Penduduk
 - Nomor Induk Kependudukan

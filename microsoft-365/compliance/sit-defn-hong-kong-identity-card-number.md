@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro HKID (Hong Kong Identity Card).
-ms.openlocfilehash: 6d382d50334036aaa0a7ff8fce698246b1e5ccb0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a3a006024ea63734bec5f1dc2a8e8b2dd60944ed
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997659"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380621"
 ---
 # <a name="hong-kong-identity-card-hkid-number"></a>Numéro de la carte d'identité de Hong Kong (HKID)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

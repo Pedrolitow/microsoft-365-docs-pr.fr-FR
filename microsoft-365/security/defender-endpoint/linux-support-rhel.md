@@ -13,15 +13,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 0ffd8a986f3156fd0e406f0a87c3ae1d81c71dc3
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 739e4464a7c7a85d3a3ea75130e4e0a0bade000d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521694"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224841"
 ---
 # <a name="troubleshoot-issues-for-microsoft-defender-for-endpoint-on-linux-rhel6"></a>Résoudre les problèmes de Microsoft Defender pour point de terminaison sur Linux RHEL6
 

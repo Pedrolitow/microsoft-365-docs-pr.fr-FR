@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 868c3e17ed818c2599cefd8124f1f081cfd7ae9e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e2229e0f0c4e34b71c054f352e4e94fc029daa51
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699661"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232845"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle
 
@@ -58,6 +60,9 @@ Les étapes suivantes vous guident dans la création de rôles dans Microsoft 36
 
 > [!IMPORTANT]
 > Après avoir créé des rôles, vous devez créer un groupe d’appareils et fournir l’accès au groupe d’appareils en l’affectant à un rôle que vous venez de créer.
+
+> [!NOTE]
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ### <a name="permission-options"></a>Options d’autorisation
 

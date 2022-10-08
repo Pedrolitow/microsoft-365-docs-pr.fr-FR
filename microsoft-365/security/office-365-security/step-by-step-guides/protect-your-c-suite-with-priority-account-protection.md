@@ -13,23 +13,26 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: dbab9bd017bbd09f59d1a03efa49bf35a09361df
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6f0bcce48b88d00e5ba8d6b28b9bbc9bfe2c1720
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740882"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232537"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>Protégez votre suite C avec une protection de compte prioritaire
 
 La protection prioritaire des comptes permet aux équipes informatiques et de sécurité de garantir une haute qualité de service et de protection pour les personnes critiques au sein de votre organisation. L’étiquetage d’un compte en tant que compte prioritaire permet d’optimiser la protection supplémentaire pour les modèles de flux de messagerie ciblant les cadres de l’entreprise, ainsi qu’une visibilité supplémentaire dans les rapports, les alertes et les enquêtes.
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
-- Microsoft Defender pour Office 365 Plan 2 (inclus dans les plans E5)
+- Microsoft Defender pour Office 365 plan 2 (inclus dans les plans E5)
 - Autorisations suffisantes (rôle Administrateur de sécurité)
 - 5 minutes pour effectuer les étapes ci-dessous.
 
@@ -43,7 +46,7 @@ La protection prioritaire des comptes permet aux équipes informatiques et de s�
 1. Passez en revue les membres que vous avez sélectionnés, puis appuyez sur Suivant
 1. Appuyez sur Envoyer pour confirmer les modifications
 
-Pour savoir quelles sont les balises de compte de priorité, consultez [Gérer et surveiller les comptes de priorité - Administrateur Microsoft 365 | Microsoftova dokumentacija](../../../admin/setup/priority-accounts.md).
+Pour savoir quelles sont les balises de compte de priorité, consultez [Gérer et surveiller les comptes de priorité - Administrateur Microsoft 365 | Microsoft Docs](../../../admin/setup/priority-accounts.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Passez en revue la protection différenciée pour les utilisateurs marqués comme comptes prioritaires](../../office-365-security/configure-review-priority-account.md).

@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2cc23efadf5f8df7642ae0a64aebabda916ee6a2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 248992f636434644ff79afba30b98d7198bdc119
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689916"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232999"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
@@ -41,7 +43,7 @@ L’indicateur de compromission est une fonctionnalité essentielle dans chaque 
 
 Créez des indicateurs qui définissent la détection, la prévention et l’exclusion des entités. Vous pouvez définir l’action à entreprendre, ainsi que la durée d’application de l’action, ainsi que l’étendue du groupe d’appareils auquel l’appliquer.
 
-Les sources actuellement prises en charge sont le moteur de détection cloud de Defender pour point de terminaison, le moteur d’investigation et de correction automatisé et le moteur de prévention des points de terminaison (Antivirus Microsoft Defender).
+Les sources actuellement prises en charge sont le moteur de détection cloud de Defender pour point de terminaison, le moteur d’investigation et de correction automatisé et le moteur de prévention des points de terminaison (Microsoft Defender Antivirus).
 
 ## <a name="cloud-detection-engine"></a>Moteur de détection cloud
 
@@ -49,7 +51,7 @@ Le moteur de détection cloud de Defender pour point de terminaison analyse rég
 
 ## <a name="endpoint-prevention-engine"></a>Moteur de prévention des points de terminaison
 
-La même liste d’indicateurs est honorée par l’agent de prévention. Autrement dit, si l’Antivirus Microsoft Defender est l’antivirus principal configuré, les indicateurs correspondants sont traités en fonction des paramètres. Par exemple, si l’action est « Alerte et blocage », l’Antivirus Microsoft Defender empêche les exécutions de fichiers (bloquer et corriger) et une alerte correspondante est déclenchée. En revanche, si l’action est définie sur « Autoriser », l’Antivirus Microsoft Defender ne détecte pas ni ne bloque l’exécution du fichier.
+La même liste d’indicateurs est honorée par l’agent de prévention. Autrement dit, si Microsoft Defender Antivirus est l’antivirus principal configuré, les indicateurs correspondants sont traités en fonction des paramètres. Par exemple, si l’action est « Alerte et bloc », Microsoft Defender Antivirus empêche les exécutions de fichiers (bloquer et corriger) et une alerte correspondante est déclenchée. En revanche, si l’action est définie sur « Autoriser », Microsoft Defender Antivirus ne détecte pas ni ne bloque l’exécution du fichier.
 
 ## <a name="automated-investigation-and-remediation-engine"></a>Moteur d’investigation et de correction automatisé
 
@@ -91,7 +93,7 @@ Les fonctionnalités des IOC préexistantes ne changeront pas. Toutefois, les in
 Le schéma de l’API IoC et les ID de menace à l’avance ont été mis à jour pour s’aligner sur le changement de nom des actions de réponse IoC. Les modifications apportées au schéma d’API s’appliquent à tous les types IoC.
 
 > [!Note]
-> Il existe une limite de 15 000 indicateurs par locataire. Les indicateurs de fichier et de certificat ne bloquent pas [les exclusions définies pour l’antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Les indicateurs ne sont pas pris en charge dans l’Antivirus Microsoft Defender lorsqu’il est en mode passif.
+> Il existe une limite de 15 000 indicateurs par locataire. Les indicateurs de fichier et de certificat ne bloquent pas [les exclusions définies pour Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Les indicateurs ne sont pas pris en charge dans Microsoft Defender Antivirus lorsqu’il est en mode passif.
 >
 > Le format d’importation de nouveaux indicateurs a changé en fonction des nouvelles actions mises à jour et des paramètres d’alerte. Nous vous recommandons de télécharger le nouveau format CSV qui se trouve en bas du panneau d’importation.
 

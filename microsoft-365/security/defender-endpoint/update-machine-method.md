@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: feb35c91239540d8f1cf1e5e0c298bfc48463128
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 24a346074c32810b4c00a3c9386a4273ba5176c4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684230"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225479"
 ---
 # <a name="update-machine"></a>Mettre à jour l’ordinateur 
 
@@ -63,6 +65,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et éc
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Investigation des alertes ». Pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md).
 > - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils. Pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md).
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ## <a name="http-request"></a>Requête HTTP
 

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.custom: api
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 871b1de60578caef1183a22339b3c573931206cb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 905dfbb9aa8a5aee3af9a8d54fff9f4e0e9e5712
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688184"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232515"
 ---
 # <a name="import-indicators-api"></a>API Importer des indicateurs
 

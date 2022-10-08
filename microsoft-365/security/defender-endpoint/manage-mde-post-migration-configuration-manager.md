@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: bfa4e66337df11cf76e53829ee4aceffdc7db827
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 43fb93dc01517372bdeeaba05c012aa5d4bb6a29
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799063"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232933"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Gérer Microsoft Defender pour point de terminaison avec Configuration Manager
 

@@ -12,18 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d2f4895a707520f79b4412e295221eb168ab1e90
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e6add9d91bf91be0d0a7588a2fcef3e632937ba1
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682732"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232647"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour point de terminaison
 

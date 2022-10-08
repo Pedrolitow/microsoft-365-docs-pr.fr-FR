@@ -1,7 +1,7 @@
 ---
-title: Spécifier le niveau de protection cloud pour l’antivirus Microsoft Defender
-description: Définissez votre niveau de protection cloud pour l’antivirus Microsoft Defender.
-keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, cloud, agressivité, niveau de protection
+title: Spécifier le niveau de protection cloud pour Microsoft Defender Antivirus
+description: Définissez votre niveau de protection cloud pour Microsoft Defender Antivirus.
+keywords: Microsoft Defender Antivirus, logiciel anti-programme malveillant, sécurité, défenseur, cloud, agressivité, niveau de protection
 ms.pagetype: security
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -15,14 +15,16 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0da317f8714e0057191d93067a6d3a0ae0aac953
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3da72ec820ca7693d6f62daff9d36fd945f81c7a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681492"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224973"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Spécifier le niveau de protection cloud
 
@@ -35,7 +37,7 @@ ms.locfileid: "67681492"
 **Plateformes**
 - Windows
 
-La protection cloud fonctionne avec l’antivirus Microsoft Defender pour fournir une protection à vos points de terminaison beaucoup plus rapidement que par le biais des mises à jour de renseignement de sécurité traditionnelles. Vous pouvez configurer votre niveau de protection cloud à l’aide de Microsoft Endpoint Manager (recommandé) ou stratégie de groupe.
+La protection cloud fonctionne avec Microsoft Defender Antivirus pour fournir une protection à vos points de terminaison beaucoup plus rapidement que par le biais des mises à jour de renseignement de sécurité traditionnelles. Vous pouvez configurer votre niveau de protection cloud à l’aide de Microsoft Endpoint Manager (recommandé) ou stratégie de groupe.
 
 > [!NOTE]
 > La sélection d’une tolérance **élevée**, **élevée +** ou **zéro** peut entraîner la détection de certains fichiers légitimes. Si cela se produit, vous pouvez débloquer le fichier détecté ou contester cette détection dans le portail Microsoft 365 Defender.
@@ -73,7 +75,7 @@ La protection cloud fonctionne avec l’antivirus Microsoft Defender pour fourni
 
 3. Dans **l’éditeur de gestion stratégie de groupe**, accédez aux **modèles d’administration** **de configuration** \> par ordinateur.
 
-4. Développez l’arborescence pour **windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
+4. Développez l’arborescence sur **composants** \> Windows Microsoft Defender **MpEngine** **antivirus**\>.
 
 5. Double-cliquez sur le paramètre **Sélectionner le niveau de protection cloud et définissez-le** sur **Activé**. Sélectionnez le niveau de protection :
 
@@ -103,4 +105,4 @@ La protection cloud fonctionne avec l’antivirus Microsoft Defender pour fourni
   
 ## <a name="see-also"></a>Voir aussi
 
-[Pourquoi la protection cloud doit être activée pour l’antivirus Microsoft Defender](why-cloud-protection-should-be-on-mdav.md)
+[Pourquoi la protection cloud doit être activée pour Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md)

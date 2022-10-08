@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9ec84e0a3804d35689ff02d467649a6011f84fe7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ee800ab745a83219da8052a8681aa1f405356cf3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688328"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232691"
 ---
 # <a name="configure-general-defender-for-endpoint-settings"></a>Configurer les paramètres généraux de Defender pour point de terminaison
 

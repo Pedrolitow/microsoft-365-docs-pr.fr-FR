@@ -11,21 +11,23 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 778fd439c7c886be558eaf058ae941267bf0d52c
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9032fccf08d64374ffc3c38d47b74db224becf45
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736009"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232559"
 ---
 # <a name="submit-files-for-analysis"></a>Envoyer des fichiers à analyser
 
 Si vous avez un fichier que vous soupçonnez être un programme malveillant ou est mal détecté, vous pouvez nous le soumettre à des fins d’analyse. Cette page contient des réponses à certaines questions courantes sur l’envoi d’un fichier à des fins d’analyse.
 
-## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>如何实现 envoyer un fichier à Microsoft pour analyse ?
+## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>Comment faire envoyer un fichier à Microsoft à des fins d’analyse ?
 
 ### <a name="send-a-malware-file"></a>Envoyer un fichier de programmes malveillants
 
@@ -37,7 +39,7 @@ Une fois connecté, vous pourrez suivre vos soumissions.
 
 > [!NOTE]
 >
-> Vous pouvez utiliser la fonctionnalité de soumission WDSI même si vous n’avez pas Pertahanan Microsoft untuk Titik Akhir Plan 2 ou Microsoft Defender pour Office Plan 2.
+> Vous pouvez utiliser la fonctionnalité de soumission WDSI même si vous n’avez pas Microsoft Defender pour point de terminaison plan 2 ou Microsoft Defender pour Office Plan 2.
 
 ### <a name="submit-a-suspected-email-attachment"></a>Envoyer une pièce jointe suspecte
 
@@ -45,7 +47,7 @@ Utilisez le [portail Microsoft 365 Defender](https://security.microsoft.com/) po
 
 ### <a name="submit-a-file-or-file-hash"></a>Envoyer un fichier ou un hachage de fichier
 
-Utilisez la fonctionnalité des soumissions unifiées dans Pertahanan Microsoft untuk Titik Akhir pour envoyer des fichiers et des hachages de fichiers à Microsoft à des fins de révision. Pour plus d’informations, consultez [Envoyer des fichiers dans Pertahanan Microsoft untuk Titik Akhir](../defender-endpoint/admin-submissions-mde.md).
+Utilisez la fonctionnalité des soumissions unifiées dans Microsoft Defender pour point de terminaison pour envoyer des fichiers et des hachages de fichiers à Microsoft à des fins de révision. Pour plus d’informations, consultez [Envoyer des fichiers dans Microsoft Defender pour point de terminaison](../defender-endpoint/admin-submissions-mde.md).
 
 ## <a name="can-i-send-a-sample-by-email"></a>Puis-je envoyer un exemple par e-mail ?
 
@@ -53,13 +55,13 @@ Non, nous acceptons uniquement les soumissions par le biais de notre [exemple de
 
 ## <a name="can-i-submit-a-sample-without-signing-in"></a>Puis-je envoyer un exemple sans me connecter ?
 
-Non. Si vous êtes un client d’entreprise, vous devez vous connecter afin que nous puissions hiérarchiser votre soumission de manière appropriée. Si vous rencontrez actuellement une épidémie de virus ou un incident lié à la sécurité, contactez votre professionnel du support Microsoft désigné ou accédez à [pomoc techniczna firmy Microsoft](https://support.microsoft.com/) pour obtenir de l’aide immédiate.
+Non. Si vous êtes un client d’entreprise, vous devez vous connecter afin que nous puissions hiérarchiser votre soumission de manière appropriée. Si vous rencontrez actuellement une épidémie de virus ou un incident lié à la sécurité, contactez votre professionnel du support Microsoft désigné ou accédez à [Support Microsoft](https://support.microsoft.com/) pour obtenir de l’aide immédiate.
 
 ## <a name="what-is-the-software-assurance-id-said"></a>Qu’est-ce que l’ID Software Assurance (SAID) ?
 
 [L’ID Software Assurance (SAID)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx) permet aux clients d’entreprise de suivre les droits de support. Le portail de soumission accepte et conserve les informations SAID et permet aux clients disposant d’un SAID valide d’effectuer des soumissions de priorité plus élevée.
 
-### <a name="how-do-i-dispute-the-detection-of-my-program"></a>如何实现 contester la détection de mon programme ?
+### <a name="how-do-i-dispute-the-detection-of-my-program"></a>Comment faire contester la détection de mon programme ?
 
 [Envoyez le fichier](https://www.microsoft.com/wdsi/filesubmission) en question en tant que développeur de logiciels. Attendez que votre soumission soit définitivement déterminée.
 
@@ -67,7 +69,7 @@ Si vous n’êtes pas satisfait de notre détermination de la soumission, utilis
 
 Nous encourageons tous les éditeurs et développeurs de logiciels à découvrir [comment Microsoft identifie les programmes malveillants et les logiciels indésirables](criteria.md).
 
-## <a name="how-do-i-track-or-view-past-sample-submissions"></a>如何实现 suivre ou afficher les exemples de soumissions passés ?
+## <a name="how-do-i-track-or-view-past-sample-submissions"></a>Comment faire suivre ou afficher les exemples de soumissions passés ?
 
 Vous pouvez suivre vos soumissions via la [page historique des soumissions](https://www.microsoft.com/wdsi/submissionhistory).
 

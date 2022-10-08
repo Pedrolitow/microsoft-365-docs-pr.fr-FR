@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4e20220d23d5b36b27895662d2be1f4cbcdd0fe0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d74b572d305718fe27cc1f74889cd4022d3705c7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683008"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232735"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -54,7 +54,7 @@ Pour obtenir les fonctionnalités les plus récentes, notamment les fonctionnali
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour point de terminaison sur Mac
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Configuration requise
 
 - Un abonnement Defender pour point de terminaison et un accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
@@ -106,7 +106,7 @@ Microsoft Defender pour point de terminaison sur Mac nécessite l’une des offr
 
 ### <a name="configuring-exclusions"></a>Configuration des exclusions
 
-Lorsque vous ajoutez des exclusions, tenez compte des [erreurs d’exclusion courantes pour l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+Lorsque vous ajoutez des exclusions, tenez compte des [erreurs d’exclusion courantes pour Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 ### <a name="network-connections"></a>Connexions réseau
 

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7e3466e5a7ba8a5a8c0a5e2041d2022ffd9ce3ce
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 396ebb62e426a1e1ab9207fcc493ebf3d5d0c760
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686766"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232911"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurer Microsoft Defender pour point de terminaison pour diffuser en continu des événements de repérage avancé vers votre Azure Event Hubs
 
@@ -82,6 +84,8 @@ ms.locfileid: "67686766"
 - Pour plus d’informations sur le schéma des événements Microsoft Defender pour point de terminaison, consultez [la vue d’ensemble de la chasse avancée](advanced-hunting-overview.md).
 
 - Dans La chasse avancée, la table **DeviceInfo** a une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement sera également décoré avec cette colonne. Pour plus d’informations [, consultez Groupes](machine-groups.md) d’appareils.
+    > [!NOTE]
+    > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 ## <a name="data-types-mapping"></a>Mappage des types de données
 

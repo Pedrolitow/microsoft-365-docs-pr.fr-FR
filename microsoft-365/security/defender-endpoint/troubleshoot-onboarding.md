@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7b2253e356b4ed4fb905ec4637d3f976e6e38d21
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e1de2e186eea9fbe3b62e2e650f3419de43c6874
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686964"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232339"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d’intégration Microsoft Defender pour point de terminaison
 
@@ -91,7 +93,7 @@ Si le script échoue et que l’événement est une erreur, vous pouvez vérifie
 |`5`|Des données de désintégrage ont été trouvées, mais n’ont pas pu être supprimées|Vérifier les autorisations sur le Registre, en particulier <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
 |`10`|Impossible d’écrire des données d’intégration dans le Registre|Vérifier les autorisations sur le Registre, en particulier <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> Vérifiez que le script a été exécuté en tant qu’administrateur.|
 |`15`|Échec du démarrage du service SENSE|Vérifiez l’intégrité du service (`sc query sense` commande). Assurez-vous qu’il n’est pas dans un état intermédiaire (*« Pending_Stopped »,* *« Pending_Running* ») et réessayez d’exécuter le script (avec des droits d’administrateur). <p> Si l’appareil exécute Windows 10, version 1607 et que l’exécution de la commande `sc query sense` retourne, `START_PENDING`redémarrez l’appareil. Si le redémarrage de l’appareil ne répond pas au problème, effectuez une mise à niveau vers KB4015217 et réessayez d’intégrer.|
-|`15`|Échec du démarrage du service SENSE|Si le message d’erreur est le suivant : erreur système 577 ou erreur 1058, vous devez activer le pilote ELAM de l’antivirus Microsoft Defender. Pour obtenir des instructions, voir [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par une stratégie](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) .|
+|`15`|Échec du démarrage du service SENSE|Si le message d’erreur est le suivant : Erreur système 577 ou erreur 1058, vous devez activer le pilote ELAM antivirus Microsoft Defender. Pour obtenir des instructions, voir [Vérifier que Microsoft Defender Antivirus n’est pas désactivé par une stratégie](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).|
 |`30`|Le script n’a pas pu attendre le démarrage de l’exécution du service|Le service a peut-être pris plus de temps pour démarrer ou a rencontré des erreurs lors de la tentative de démarrage. Pour plus d’informations sur les événements et les erreurs liés à SENSE, consultez [Vérifier les événements et les erreurs à l’aide de la visionneuse d’événements](event-error-codes.md).|
 |`35`|Le script n’a pas trouvé la valeur de Registre d’état d’intégration nécessaire|Lorsque le service SENSE démarre pour la première fois, il écrit l’état d’intégration à l’emplacement du Registre <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> Le script n’a pas pu le trouver après plusieurs secondes. Vous pouvez le tester manuellement et vérifier s’il est présent. Pour plus d’informations sur les événements et les erreurs liés à SENSE, consultez [Vérifier les événements et les erreurs à l’aide de la visionneuse d’événements](event-error-codes.md).|
 |`40`|L’état d’intégration du service SENSE n’est pas défini sur **1**|Le service SENSE n’a pas pu s’intégrer correctement. Pour plus d’informations sur les événements et les erreurs liés à SENSE, consultez [Vérifier les événements et les erreurs à l’aide de la visionneuse d’événements](event-error-codes.md).|
@@ -167,7 +169,7 @@ Si les outils de déploiement utilisés n’indiquent pas d’erreur dans le pro
 - [Vérifier que le service de données de diagnostic est activé](#ensure-the-diagnostics-service-is-enabled)
 - [Vérifier que le service est configuré pour démarrer](#ensure-the-service-is-set-to-start)
 - [Vérifier que l’appareil dispose d’une connexion Internet](#ensure-the-device-has-an-internet-connection)
-- [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par une stratégie](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+- [Vérifier que Microsoft Defender Antivirus n’est pas désactivé par une stratégie](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 ### <a name="view-agent-onboarding-errors-in-the-device-event-log"></a>Afficher les erreurs d’intégration de l’agent dans le journal des événements de l’appareil
 
@@ -192,7 +194,7 @@ Si les outils de déploiement utilisés n’indiquent pas d’erreur dans le pro
 
    ****
 
-   |ID de l'événement|Message|Étapes de résolution|
+   |ID d’événement|Message|Étapes de résolution|
    |:---:|---|---|
    |`5`|Microsoft Defender pour point de terminaison service n’a pas pu se connecter au serveur à l’adresse _variable_|[Vérifiez que l’appareil dispose d’un accès à Internet](#ensure-the-device-has-an-internet-connection).|
    |`6`|Microsoft Defender pour point de terminaison service n’est pas intégré et aucun paramètre d’intégration n’a été trouvé. Code d’échec : _variable_|[Réexécriez le script d’intégration](configure-endpoints-script.md).|
@@ -281,12 +283,12 @@ Pour vous assurer que le capteur dispose d’une connectivité de service, suive
 
 Si la vérification échoue et que votre environnement utilise un proxy pour se connecter à Internet, suivez les [étapes décrites dans la rubrique Configurer le proxy et les paramètres de connectivité Internet](configure-proxy-internet.md) .
 
-### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par une stratégie
+### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Vérifier que Microsoft Defender Antivirus n’est pas désactivé par une stratégie
 
 > [!IMPORTANT]
-> Ce qui suit s’applique uniquement aux appareils qui **n’ont pas** encore reçu la mise à jour d’août 2020 (version 4.18.2007.8) de l’antivirus Microsoft Defender.
+> Ce qui suit s’applique uniquement aux appareils qui **n’ont pas** encore reçu la mise à jour d’août 2020 (version 4.18.2007.8) vers Microsoft Defender Antivirus.
 >
-> La mise à jour garantit que l’Antivirus Microsoft Defender ne peut pas être désactivé sur les appareils clients via la stratégie système.
+> La mise à jour garantit que Microsoft Defender Antivirus ne peut pas être désactivé sur les appareils clients via la stratégie système.
 
 **Problème** : le service Microsoft Defender pour point de terminaison ne démarre pas après l’intégration.
 
@@ -305,13 +307,13 @@ Si la vérification échoue et que votre environnement utilise un proxy pour se 
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> Le `disableAntiSpyware` paramètre est abandonné et sera ignoré sur tous les appareils Windows 10, à compter de la mise à jour d’août 2020 (version 4.18.2007.8) vers l’antivirus Microsoft Defender.
+> Le `disableAntiSpyware` paramètre est abandonné et sera ignoré sur tous les appareils Windows 10, à compter de la mise à jour d’août 2020 (version 4.18.2007.8) vers Microsoft Defender Antivirus.
 
 - Après avoir effacé la stratégie, exécutez à nouveau les étapes d’intégration.
 
 - Vous pouvez également vérifier les valeurs de clé de Registre précédentes pour vérifier que la stratégie est désactivée, en ouvrant la clé `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`de Registre.
 
-  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="Clé de Registre pour l’antivirus Microsoft Defender" lightbox="images/atp-disableantispyware-regkey.png":::
+  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="Clé de Registre pour Microsoft Defender Antivirus" lightbox="images/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > Tous les services Windows Defender (wdboot, wdfilter, wdnisdrv, wdnissvc et windefend) doivent être dans leur état par défaut. La modification du démarrage de ces services n’est pas prise en charge et peut vous forcer à réinitialiser votre système.

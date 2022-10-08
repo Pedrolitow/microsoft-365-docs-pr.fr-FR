@@ -1,6 +1,6 @@
 ---
-title: Appliquer les mises à jour de l’Antivirus Microsoft Defender après certains événements
-description: Gérez la façon dont l’Antivirus Microsoft Defender applique les mises à jour du renseignement de sécurité après le démarrage ou la réception de rapports de détection fournis par le cloud.
+title: Appliquer Microsoft Defender mises à jour antivirus après certains événements
+description: Gérez la façon dont Microsoft Defender Antivirus applique les mises à jour du renseignement de sécurité après le démarrage ou la réception de rapports de détection fournis par le cloud.
 keywords: mises à jour, protection, mises à jour de force, événements, démarrage, recherche des dernières notifications
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -15,14 +15,16 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: d2baaae95a7692143694d252823300232e5d23c1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0311f509f5c912cdfc72798f582e3f7b9c6a243d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687832"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233087"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées en fonction des événements
 
@@ -37,11 +39,11 @@ ms.locfileid: "67687832"
 **Plateformes**
 - Windows
 
-L’Antivirus Microsoft Defender vous permet de déterminer si les mises à jour doivent (ou ne doivent pas) se produire après certains événements, tels qu’au démarrage ou après avoir reçu des rapports spécifiques du service de protection fourni par le cloud.
+Microsoft Defender Antivirus vous permet de déterminer si les mises à jour doivent (ou ne doivent pas) se produire après certains événements, tels qu’au démarrage ou après avoir reçu des rapports spécifiques du service de protection fourni par le cloud.
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>Rechercher les mises à jour de protection avant d’exécuter une analyse
 
-Vous pouvez utiliser Microsoft Endpoint Configuration Manager, stratégie de groupe, les applets de commande PowerShell et WMI pour forcer l’Antivirus Microsoft Defender à vérifier et télécharger les mises à jour de protection avant d’exécuter une analyse planifiée.
+Vous pouvez utiliser Microsoft Endpoint Configuration Manager, stratégie de groupe, les applets de commande PowerShell et WMI pour forcer Microsoft Defender Antivirus à vérifier et télécharger les mises à jour de protection avant d’exécuter une analyse planifiée.
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Utiliser Configuration Manager pour rechercher les mises à jour de protection avant d’exécuter une analyse
 
@@ -61,7 +63,7 @@ Vous pouvez utiliser Microsoft Endpoint Configuration Manager, stratégie de gro
 
 3. Cliquez sur **Stratégies** , puis **sur Modèles d’administration**.
 
-4. Développez l’arborescence pour accéder aux **composants** \> Windows de **l’analyse antivirus** \> Microsoft Defender.
+4. Développez l’arborescence sur **les composants** \> Windows Microsoft Defender **l’analyse** **antivirus**\>.
 
 5. Double-cliquez sur **Vérifier les dernières définitions de virus et de logiciels espions avant d’exécuter une analyse planifiée et définissez** l’option **sur Activé**.
 
@@ -89,7 +91,7 @@ Pour plus d’informations, consultez [Windows Defender API WMIv2](/previous-ver
 
 ## <a name="check-for-protection-updates-on-startup"></a>Rechercher les mises à jour de protection au démarrage
 
-Vous pouvez utiliser stratégie de groupe pour forcer l’Antivirus Microsoft Defender à vérifier et télécharger les mises à jour de protection au démarrage de l’ordinateur.
+Vous pouvez utiliser stratégie de groupe pour forcer Microsoft Defender Antivirus à vérifier et télécharger les mises à jour de protection au démarrage de l’ordinateur.
 
 1. Sur votre ordinateur de gestion stratégie de groupe, ouvrez la [console de gestion stratégie de groupe](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Modifier**.
 
@@ -97,15 +99,15 @@ Vous pouvez utiliser stratégie de groupe pour forcer l’Antivirus Microsoft De
 
 3. Cliquez sur **Stratégies** , puis **sur Modèles d’administration**.
 
-4. Développez l’arborescence sur **les composants Windows de** \> **l’antivirus** \> Microsoft Defender **Mises à jour**.
+4. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender** \> **Mises à jour Antivirus Security Intelligence**.
 
 5. Double-cliquez sur **Vérifier les dernières définitions de virus et de logiciels espions au démarrage** et définissez l’option **sur Activé**.
 
 6. Cliquez sur **OK**.
 
-Vous pouvez également utiliser stratégie de groupe, PowerShell ou WMI pour configurer l’antivirus Microsoft Defender afin de rechercher des mises à jour au démarrage, même lorsqu’il n’est pas en cours d’exécution.
+Vous pouvez également utiliser stratégie de groupe, PowerShell ou WMI pour configurer Microsoft Defender Antivirus afin de rechercher des mises à jour au démarrage, même s’il n’est pas en cours d’exécution.
 
-### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser stratégie de groupe pour télécharger les mises à jour lorsque l’Antivirus Microsoft Defender n’est pas présent
+### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utilisez stratégie de groupe pour télécharger les mises à jour lorsque Microsoft Defender Antivirus n’est pas présent
 
 1. Sur votre machine de gestion stratégie de groupe, ouvrez la [console de gestion stratégie de groupe](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Modifier**.
 
@@ -113,13 +115,13 @@ Vous pouvez également utiliser stratégie de groupe, PowerShell ou WMI pour con
 
 3. Cliquez sur **Stratégies** , puis **sur Modèles d’administration**.
 
-4. Développez l’arborescence sur **les composants Windows de** \> **l’antivirus** \> Microsoft Defender **Mises à jour**.
+4. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender** \> **Mises à jour Antivirus Security Intelligence**.
 
 5. Double-cliquez sur **Lancer la mise à jour du renseignement de sécurité au démarrage** et **définissez** l’option sur Activé.
 
 6. Cliquez sur **OK**.
 
-### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser des applets de commande PowerShell pour télécharger les mises à jour lorsque l’Antivirus Microsoft Defender n’est pas présent
+### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser les applets de commande PowerShell pour télécharger les mises à jour lorsque Microsoft Defender Antivirus n’est pas présent
 
 Utilisez les applets de commande suivantes :
 
@@ -127,9 +129,9 @@ Utilisez les applets de commande suivantes :
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour gérer les](use-powershell-cmdlets-microsoft-defender-antivirus.md) [applets](/powershell/module/defender/index) de commande antivirus Microsoft Defender et Defender pour plus d’informations sur l’utilisation de PowerShell avec l’antivirus Microsoft Defender.
+Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour gérer Microsoft Defender applets](use-powershell-cmdlets-microsoft-defender-antivirus.md) de commande [Antivirus et Defender Antivirus](/powershell/module/defender/index) pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus.
 
-### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser l’instruction de gestion Windows (WMI) pour télécharger les mises à jour lorsque l’Antivirus Microsoft Defender n’est pas présent
+### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser l’instruction de gestion Windows (WMI) pour télécharger les mises à jour lorsque Microsoft Defender Antivirus n’est pas présent
 
 Utilisez la [méthode **Set** de la classe **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) pour les propriétés suivantes :
 
@@ -143,9 +145,9 @@ Pour plus d’informations, consultez [Windows Defender API WMIv2](/previous-ver
 
 ## <a name="allow-ad-hoc-changes-to-protection-based-on-cloud-delivered-protection"></a>Autoriser les modifications ad hoc de la protection en fonction de la protection fournie par le cloud
 
-L’Antivirus Microsoft Defender peut apporter des modifications à sa protection en fonction de la protection fournie par le cloud. Ces modifications peuvent se produire en dehors des mises à jour de protection normales ou planifiées.
+Microsoft Defender Antivirus peut apporter des modifications à sa protection en fonction de la protection fournie par le cloud. Ces modifications peuvent se produire en dehors des mises à jour de protection normales ou planifiées.
 
-Si vous avez activé la protection fournie par le cloud, l’Antivirus Microsoft Defender envoie des fichiers suspects sur le cloud Windows Defender. Si le service cloud signale que le fichier est malveillant et que le fichier est détecté dans une mise à jour de protection récente, vous pouvez utiliser stratégie de groupe pour configurer l’antivirus Microsoft Defender afin qu’il reçoive automatiquement cette mise à jour de protection. D’autres mises à jour de protection importantes peuvent également être appliquées.
+Si vous avez activé la protection fournie par le cloud, Microsoft Defender Antivirus envoie des fichiers suspects sur le cloud Windows Defender. Si le service cloud signale que le fichier est malveillant et que le fichier est détecté dans une mise à jour de protection récente, vous pouvez utiliser stratégie de groupe pour configurer Microsoft Defender Antivirus afin de recevoir automatiquement cette mise à jour de protection. D’autres mises à jour de protection importantes peuvent également être appliquées.
 
 ### <a name="use-group-policy-to-automatically-download-recent-updates-based-on-cloud-delivered-protection"></a>Utiliser stratégie de groupe pour télécharger automatiquement les mises à jour récentes en fonction de la protection fournie par le cloud
 
@@ -155,7 +157,7 @@ Si vous avez activé la protection fournie par le cloud, l’Antivirus Microsoft
 
 3. Cliquez sur **Stratégies** , puis **sur Modèles d’administration**.
 
-4. Développez l’arborescence sur **les composants Windows de** \> **l’antivirus** \> Microsoft Defender **Mises à jour**.
+4. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender** \> **Mises à jour Antivirus Security Intelligence**.
 
 5. Double-cliquez sur **Autoriser les mises à jour du renseignement de sécurité en temps réel en fonction des rapports à Microsoft MAPS** et définissez l’option **sur Activé**. Cliquez ensuite sur **OK**.
 
@@ -176,7 +178,7 @@ Si vous avez activé la protection fournie par le cloud, l’Antivirus Microsoft
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Déployer l’antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Déployer Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les points de terminaison obsolètes](manage-outdated-endpoints-microsoft-defender-antivirus.md)

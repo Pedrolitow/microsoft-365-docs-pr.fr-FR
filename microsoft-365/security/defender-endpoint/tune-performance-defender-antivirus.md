@@ -1,6 +1,6 @@
 ---
-title: Analyseur de performances pour l’antivirus Microsoft Defender
-description: Décrit la procédure permettant d’optimiser les performances de l’antivirus Microsoft Defender.
+title: Analyseur de performances pour Microsoft Defender Antivirus
+description: Décrit la procédure permettant d’optimiser les performances de Microsoft Defender Antivirus.
 keywords: tune, performances, microsoft defender pour point de terminaison, antivirus defender
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -12,18 +12,20 @@ author: jweston-1
 ms.author: v-jweston
 ms.date: 08/13/2022
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6fbb5d6a3ef37b3dde4f453c4e1823e3030617ed
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4d7dbcd7199d7318243a5c1733303d24b494c5c8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687656"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232581"
 ---
-# <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour l’antivirus Microsoft Defender
+# <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour Microsoft Defender Antivirus
 
 **S’applique à**
 
@@ -35,9 +37,9 @@ ms.locfileid: "67687656"
 
 - Windows
 
-## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>Qu’est-ce que l’analyseur de performances de l’Antivirus Microsoft Defender ?
+## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>Qu’est-ce que Microsoft Defender analyseur de performances antivirus ?
 
-Dans certains cas, vous devrez peut-être optimiser les performances de l’Antivirus Microsoft Defender lors de l’analyse de fichiers et de dossiers spécifiques. L’analyseur de performances est un outil en ligne de commande PowerShell qui permet de déterminer quels fichiers, extensions de fichiers et processus peuvent entraîner des problèmes de performances sur des points de terminaison individuels. Ces informations peuvent être utilisées pour mieux évaluer les problèmes de performances et appliquer des actions de correction.
+Dans certains cas, vous devrez peut-être optimiser les performances de Microsoft Defender Antivirus lorsqu’il analyse des fichiers et dossiers spécifiques. L’analyseur de performances est un outil en ligne de commande PowerShell qui permet de déterminer quels fichiers, extensions de fichiers et processus peuvent entraîner des problèmes de performances sur des points de terminaison individuels. Ces informations peuvent être utilisées pour mieux évaluer les problèmes de performances et appliquer des actions de correction.
 
 Voici quelques options à analyser :
 
@@ -71,7 +73,7 @@ Pour démarrer l’enregistrement des événements système, ouvrez PowerShell e
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
 
-    où `-RecordTo` le paramètre spécifie l’emplacement de chemin d’accès complet dans lequel le fichier de trace est enregistré. Pour plus d’informations sur les applets de commande, consultez les [applets de commande antivirus Microsoft Defender](/powershell/module/defender).
+    où `-RecordTo` le paramètre spécifie l’emplacement de chemin d’accès complet dans lequel le fichier de trace est enregistré. Pour plus d’informations sur les applets de commande, consultez [Microsoft Defender applets de commande Antivirus](/powershell/module/defender).
 
 2. Si des processus ou des services sont considérés comme affectant les performances, reproduisez la situation en effectuant les tâches pertinentes.
 
@@ -115,7 +117,7 @@ Pour garantir une sortie lisible par l’ordinateur pour l’exportation avec d�
 
 ## <a name="requirements"></a>Conditions requises
 
-L’analyseur de performances de l’Antivirus Microsoft Defender présente les prérequis suivants :
+Microsoft Defender l’analyseur de performances antivirus présente les prérequis suivants :
 
 - Versions windows prises en charge : Windows 10, Windows 11 et Windows Server 2016 et versions ultérieures
 - Version de la plateforme : 4.18.2108.7+
@@ -123,14 +125,14 @@ L’analyseur de performances de l’Antivirus Microsoft Defender présente les 
 
 ## <a name="powershell-reference"></a>Informations de référence sur PowerShell
 
-Deux nouvelles applets de commande PowerShell sont utilisées pour optimiser les performances de l’antivirus Microsoft Defender :
+Deux nouvelles applets de commande PowerShell sont utilisées pour optimiser les performances de Microsoft Defender Antivirus :
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
 
 ### <a name="new-mpperformancerecording"></a>New-MpPerformanceRecording
 
-La section suivante décrit la référence de la nouvelle applet de commande PowerShell New-MpPerformanceRecording. Cette applet de commande collecte un enregistrement des performances des analyses de l’Antivirus Microsoft Defender.
+La section suivante décrit la référence de la nouvelle applet de commande PowerShell New-MpPerformanceRecording. Cette applet de commande collecte un enregistrement des performances des analyses antivirus Microsoft Defender.
 
 #### <a name="syntax-new-mpperformancerecording"></a>Syntaxe : New-MpPerformanceRecording
 
@@ -140,9 +142,9 @@ New-MpPerformanceRecording -RecordTo <String >
 
 #### <a name="description-new-mpperformancerecording"></a>Description : New-MpPerformanceRecording
 
-L’applet `New-MpPerformanceRecording` de commande collecte un enregistrement des performances des analyses de l’Antivirus Microsoft Defender. Ces enregistrements de performances contiennent des événements de processus du noyau Microsoft-Antimalware-Engine et NT et peuvent être analysés après la collecte à l’aide de l’applet de commande [Get-MpPerformanceReport](#get-mpperformancereport) .
+L’applet `New-MpPerformanceRecording` de commande collecte un enregistrement des performances des analyses antivirus Microsoft Defender. Ces enregistrements de performances contiennent des événements de processus du noyau Microsoft-Antimalware-Engine et NT et peuvent être analysés après la collecte à l’aide de l’applet de commande [Get-MpPerformanceReport](#get-mpperformancereport) .
 
-Cette `New-MpPerformanceRecording` applet de commande fournit un aperçu des fichiers problématiques susceptibles de provoquer une dégradation des performances de l’antivirus Microsoft Defender. Cet outil est fourni « AS IS » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas échéant, doivent être définies avec précaution.
+Cette `New-MpPerformanceRecording` applet de commande fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances de Microsoft Defender Antivirus. Cet outil est fourni « AS IS » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas échéant, doivent être définies avec précaution.
 
 Pour plus d’informations sur l’analyseur de performances, consultez [Analyseur de performances](/windows-hardware/test/wpt/windows-performance-analyzer) documentation.
 
@@ -187,7 +189,7 @@ La commande ci-dessus collecte un enregistrement des performances pour la durée
 
 ##### <a name="-recordto"></a>-RecordTo
 
-Spécifie l’emplacement dans lequel enregistrer l’enregistrement des performances de Microsoft Defender Antimalware.
+Spécifie l’emplacement dans lequel enregistrer l’enregistrement des performances Microsoft Defender Antimalware.
 
 ```yaml
 Type: String
@@ -199,7 +201,7 @@ Accept wildcard characters: False
 
 ##### <a name="-session"></a>-Session
 
-Spécifie l’objet PSSession dans lequel créer et enregistrer l’enregistrement des performances de l’Antivirus Microsoft Defender. Lorsque vous utilisez ce paramètre, le paramètre RecordTo fait référence au chemin d’accès local sur l’ordinateur distant. Disponible avec la plateforme Defender version 4.18.2201.10.
+Spécifie l’objet PSSession dans lequel créer et enregistrer l’enregistrement des performances Microsoft Defender Antivirus. Lorsque vous utilisez ce paramètre, le paramètre RecordTo fait référence au chemin d’accès local sur l’ordinateur distant. Disponible avec la plateforme Defender version 4.18.2201.10.
 
 ```yaml
 Type: PSSession[]
@@ -223,7 +225,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-La section suivante décrit la Get-MpPerformanceReport cmdlet PowerShell. Analyse et signale l’enregistrement des performances de l’Antivirus Microsoft Defender.
+La section suivante décrit la Get-MpPerformanceReport cmdlet PowerShell. Analyse et génère des rapports sur Microsoft Defender’enregistrement des performances de l’antivirus.
 
 #### <a name="syntax-get-mpperformancereport"></a>Syntaxe : Get-MpPerformanceReport
 
@@ -279,9 +281,9 @@ Get-MpPerformanceReport    [-Path] <String>
 
 #### <a name="description-get-mpperformancereport"></a>Description : Get-MpPerformanceReport
 
-L’applet `Get-MpPerformanceReport` de commande analyse un enregistrement des performances de l’Antivirus Microsoft Defender précédemment collecté ([New-MpPerformanceRecording](#new-mpperformancerecording)) et signale les chemins d’accès aux fichiers, les extensions de fichier et les processus qui ont le plus d’impact sur les analyses antivirus Microsoft Defender.
+L’applet `Get-MpPerformanceReport` de commande analyse un enregistrement des performances de l’antivirus Microsoft Defender précédemment collecté ([New-MpPerformanceRecording](#new-mpperformancerecording)) et signale les chemins d’accès aux fichiers, les extensions de fichier et les processus qui ont le plus d’impact sur les analyses antivirus Microsoft Defender.
 
-L’analyseur de performances fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances de l’antivirus Microsoft Defender. Cet outil est fourni « AS IS » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas échéant, doivent être définies avec précaution.
+L’analyseur de performances fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances de Microsoft Defender Antivirus. Cet outil est fourni « AS IS » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas échéant, doivent être définies avec précaution.
 
 Pour plus d’informations sur l’analyseur de performances, consultez [Analyseur de performances](/windows-hardware/test/wpt/windows-performance-analyzer) documentation.
 
@@ -376,7 +378,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### <a name="-path"></a>-Chemin d’accès
+##### <a name="-path"></a>-Chemin
 
 Spécifie le ou les chemins d’accès à un ou plusieurs emplacements.
 
@@ -388,7 +390,7 @@ Accept pipeline input: True
 Accept wildcard characters: False
 ```
 
-##### <a name="-raw"></a>-Brut
+##### <a name="-raw"></a>-Cru
 
 Spécifie que la sortie de l’enregistrement des performances doit être lisible par l’ordinateur et facilement convertible en formats de sérialisation tels que JSON (par exemple, via la commande Convert-to-JSON). Ceci est recommandé pour les utilisateurs intéressés par le traitement par lots avec d’autres systèmes de traitement des données.
 

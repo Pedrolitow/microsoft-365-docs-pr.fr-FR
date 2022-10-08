@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9d7d3bd2636ff877c36656cc5769cb655e48f53b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 04c8b9b2ac274d4d3f563241f13afd39a914d78e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688942"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232405"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte de Microsoft Defender pour point de terminaison
 
@@ -69,7 +71,7 @@ Pour plus d’informations sur ces actions, consultez [Prendre une action de ré
 
 Les détails du fichier, l’incident, la détection des programmes malveillants et les cartes de prévalence de fichier affichent différents attributs sur le fichier.
 
-Vous verrez des détails tels que le MD5 du fichier, le taux de détection du nombre total de virus et la détection de l’antivirus Microsoft Defender s’il est disponible, ainsi que la prévalence du fichier.
+Vous verrez des détails tels que le MD5 du fichier, le taux de détection du nombre total de virus et Microsoft Defender détection antivirus si disponible, ainsi que la prévalence du fichier.
 
 La carte de prévalence du fichier indique où le fichier a été vu dans les appareils de l’organisation et dans le monde entier. Vous pouvez facilement pivoter vers les premiers et derniers appareils sur lesquels le fichier a été vu, et poursuivre l’investigation dans la chronologie de l’appareil. 
 

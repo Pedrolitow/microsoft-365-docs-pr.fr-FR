@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7d89204e04d7ec8a2534118259a8a45a1782d05c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ca15e36c0de968a2afddb14a5c8c74cffe969953
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688964"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232493"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 
@@ -43,7 +45,7 @@ Vous pouvez créer des indicateurs pour les certificats. Voici quelques cas d’
 
 Il est important de comprendre les exigences suivantes avant de créer des indicateurs pour les certificats :
 
-- Cette fonctionnalité est disponible si votre organisation utilise l’antivirus Microsoft Defender et que la protection basée sur le cloud est activée. Pour plus d’informations, consultez [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Cette fonctionnalité est disponible si votre organisation utilise Microsoft Defender protection antivirus et cloud est activée. Pour plus d’informations, consultez [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - La version du client Antimalware doit être 4.18.1901.x ou ultérieure.
 - Pris en charge sur les machines sur Windows 10, version 1703 ou ultérieure, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 et Windows Server 2022.
     

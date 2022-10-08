@@ -1,5 +1,5 @@
 ---
-title: Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender
+title: Gérer le processus de déploiement progressif pour les mises à jour Microsoft Defender
 description: En savoir plus sur le processus de mise à jour progressive et les contrôles
 keywords: mise à jour, processus de mise à jour, contrôles, mise en production
 ms.service: microsoft-365-security
@@ -14,19 +14,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 13361b7324afdc22324e0f114986a9baaea7da57
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 5557d4ad166b05cb38b83ec5f2bc6b84d81ee7d9
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739781"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233065"
 ---
-# <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender
+# <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,7 +49,7 @@ Les fonctionnalités sont fournies par le biais de plusieurs composants :
 Mises à jour sont publiées mensuellement à l’aide d’un processus de mise en production progressive. Ce processus permet d’activer la détection précoce des défaillances pour intercepter l’impact au fur et à mesure qu’il se produit et y remédier rapidement avant un déploiement plus important.
 
 > [!NOTE]
-> Pour plus d’informations sur la façon de contrôler les mises à jour quotidiennes du renseignement de sécurité, consultez [Planifier les mises à jour de protection antivirus Microsoft Defender](manage-protection-update-schedule-microsoft-defender-antivirus.md). Mises à jour veiller à ce que la protection de nouvelle génération puisse se défendre contre les nouvelles menaces, même si la protection fournie par le cloud n’est pas disponible pour le point de terminaison.
+> Pour plus d’informations sur la façon de contrôler les mises à jour quotidiennes du renseignement de sécurité, consultez [Planifier Microsoft Defender mises à jour de la protection antivirus](manage-protection-update-schedule-microsoft-defender-antivirus.md). Mises à jour veiller à ce que la protection de nouvelle génération puisse se défendre contre les nouvelles menaces, même si la protection fournie par le cloud n’est pas disponible pour le point de terminaison.
 
 ## <a name="microsoft-gradual-rollout-model"></a>Modèle de déploiement progressif Microsoft
 
@@ -68,15 +68,15 @@ Si vos machines reçoivent des mises à jour Defender de Windows Update, le proc
 > [!NOTE]
 > Lors de la planification de votre propre version progressive, veillez à toujours avoir une sélection d’appareils abonnés à la préversion et aux canaux intermédiaires. Cela permet à votre organisation ainsi qu’à Microsoft d’empêcher ou de rechercher et de résoudre des problèmes spécifiques à votre environnement.
 
-Pour les machines recevant des mises à jour via, par exemple, Windows Server Update Services (WSUS) ou Microsoft Endpoint Configuration Manager (MECM), d’autres options sont disponibles pour toutes les mises à jour Windows, y compris les options pour Pertahanan Microsoft untuk Titik Akhir.
+Pour les machines recevant des mises à jour via, par exemple, Windows Server Update Services (WSUS) ou Microsoft Endpoint Configuration Manager (MECM), d’autres options sont disponibles pour toutes les mises à jour Windows, y compris les options pour Microsoft Defender pour point de terminaison.
 
-- En savoir plus sur l’utilisation d’une solution comme WSUS, MECM pour gérer la distribution et l’application des mises à jour dans [Gérer les mises à jour de l’Antivirus Microsoft Defender et appliquer des bases de référence - Sécurité Windows](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- En savoir plus sur l’utilisation d’une solution telle que WSUS, MECM pour gérer la distribution et l’application des mises à jour dans [Manage Microsoft Defender Antivirus updates and apply baselines - Windows security](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Mettre à jour les canaux pour les mises à jour mensuelles
 
 Vous pouvez affecter un ordinateur à un canal de mise à jour pour définir la cadence dans laquelle un ordinateur reçoit les mises à jour mensuelles du moteur et de la plateforme.
 
-Pour plus d’informations sur la configuration des mises à jour, consultez [Créer un processus de déploiement progressif personnalisé pour les mises à jour de Microsoft Defender](configure-updates.md).
+Pour plus d’informations sur la configuration des mises à jour, consultez [Créer un processus de déploiement progressif personnalisé pour Microsoft Defender mises à jour](configure-updates.md).
 
 Les canaux de mise à jour suivants sont disponibles :
 
@@ -138,7 +138,7 @@ Pour créer votre propre processus de déploiement progressif personnalisé pour
 - Microsoft Endpoint Manager
 - PowerShell
 
-Pour plus d’informations sur l’utilisation de ces outils, consultez [Créer un processus de déploiement progressif personnalisé pour les mises à jour de Microsoft Defender](configure-updates.md).
+Pour plus d’informations sur l’utilisation de ces outils, consultez [Créer un processus de déploiement progressif personnalisé pour Microsoft Defender mises à jour](configure-updates.md).
 
 > [!TIP]
 > Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :

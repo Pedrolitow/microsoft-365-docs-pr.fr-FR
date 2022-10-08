@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 036e3f00c20a100fe3a64c108cfee649c375f6c4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e85038909d9cd68a96d2eb91ebea8fb9dbf6801e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688592"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233197"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
@@ -66,7 +68,7 @@ ms.locfileid: "67688592"
 |---|---|---|
 |ID|Guid|Identité de l’entité [Action de la machine](machineaction.md) .|
 |type|Énum|Type de l’action. Les valeurs possibles sont : « RunAntiVirusScan », « Offboard », « Live Response », « CollectInvestigationPackage », « Isolate », « Unisolate », « StopAndQuarantineFile », « RestrictCodeExecution » et « UnrestrictCodeExecution ».|
-|étendue|string|Étendue de l’action. « Full » ou « Selective » pour l’isolation, « Quick » ou « Full » pour l’analyse antivirus.|
+|étendue|chaîne|Étendue de l’action. « Full » ou « Selective » pour l’isolation, « Quick » ou « Full » pour l’analyse antivirus.|
 |Demandeur|Chaîne|Identité de la personne qui a exécuté l’action.|
 |externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 |requestSource|chaîne|Nom de l’utilisateur/de l’application qui a envoyé l’action.|

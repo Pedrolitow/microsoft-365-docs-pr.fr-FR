@@ -16,16 +16,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: reference
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: f834add078e36d2439440d1decb4c7f534b5dec7
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2d38ab7c434e99a08b162045a7c69210401755ae
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579840"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225281"
 ---
 #  <a name="upload-files-to-the-live-response-library"></a>Charger des fichiers dans la bibliothèque de réponses en direct  
 

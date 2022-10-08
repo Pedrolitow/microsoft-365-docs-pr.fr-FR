@@ -11,17 +11,19 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b4c446b5a547b5823bfb7103b42e0e814f2a196f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 12eee64f6a465096217c243ea2e1c9096468301a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696108"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209599"
 ---
 # <a name="list-all-remediation-activities"></a>Répertorier toutes les activités de correction
 
@@ -104,14 +106,14 @@ vendorId|Chaîne|Nom du fournisseur associé|Microsoft
 ### <a name="request-example"></a>Exemple de requête
 
 ```http
-GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
+GET https://api.securitycenter.windows.com/api/remediationtasks/
 ```
 
 ### <a name="response-example"></a>Exemple de réponse
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#RemediationTasks",
     "value": [
         {
             "id": "03942ef5-aewb-4w6e-b555-d6a97013844w",

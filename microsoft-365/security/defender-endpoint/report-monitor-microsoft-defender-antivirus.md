@@ -1,7 +1,7 @@
 ---
 title: Surveiller et signaler la protection antivirus Microsoft Defender
-description: Utilisez Configuration Manager ou des outils SIEM (Security Information and Event Management) pour consommer des rapports et surveiller l’antivirus Microsoft Defender avec PowerShell et WMI.
-keywords: siem, monitor, report, Microsoft Defender AV, Antivirus Microsoft Defender
+description: Utilisez Configuration Manager ou des outils SIEM (Security Information and Event Management) pour consommer des rapports et surveiller Microsoft Defender Antivirus avec PowerShell et WMI.
+keywords: siem, monitor, report, Microsoft Defender AV, Microsoft Defender Antivirus
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,14 +14,16 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 13dee2aeda61acfae82a116a625112ce97727d88
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e07c89d2f6f2fa59d79f5bad1274ebcdeaef2c9a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691758"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232625"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Signaler sur l’antivirus Microsoft Defender
 
@@ -33,9 +35,9 @@ ms.locfileid: "67691758"
 **Plateformes**
 - Windows
 
-L’antivirus Microsoft Defender est intégré à Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 et Windows Server 2016. L’Antivirus Microsoft Defender est votre protection de nouvelle génération dans Microsoft Defender pour point de terminaison. La protection de nouvelle génération permet de protéger vos appareils contre les menaces logicielles telles que les virus, les programmes malveillants et les logiciels espions dans les e-mails, les applications, le cloud et le web.
+Microsoft Defender Antivirus est intégré à Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 et Windows Server 2016. Microsoft Defender Antivirus est votre protection de nouvelle génération dans Microsoft Defender pour point de terminaison. La protection de nouvelle génération permet de protéger vos appareils contre les menaces logicielles telles que les virus, les programmes malveillants et les logiciels espions dans les e-mails, les applications, le cloud et le web.
 
-Avec l’Antivirus Microsoft Defender, vous disposez de plusieurs options pour passer en revue l’état de la protection et les alertes. Vous pouvez utiliser Microsoft Endpoint Manager pour [surveiller l’antivirus Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) ou [créer des alertes par e-mail](/configmgr/protect/deploy-use/endpoint-configure-alerts). Vous pouvez également surveiller la protection à l’aide [de Microsoft Intune](/intune/introduction-intune).
+Avec Microsoft Defender Antivirus, vous disposez de plusieurs options pour passer en revue l’état de la protection et les alertes. Vous pouvez utiliser Microsoft Endpoint Manager pour [surveiller Microsoft Defender Antivirus](/configmgr/protect/deploy-use/monitor-endpoint-protection) ou [créer des alertes par e-mail](/configmgr/protect/deploy-use/endpoint-configure-alerts). Vous pouvez également surveiller la protection à l’aide [de Microsoft Intune](/intune/introduction-intune).
 
 Si vous disposez d’un serveur SIEM (Security Information and Event Management) tiers, vous pouvez également utiliser [Windows Defender événements clients](/windows/win32/events/windows-events).
 
@@ -60,4 +62,4 @@ Pour la surveillance ou la détermination de l’état avec PowerShell, WMI ou M
 ## <a name="see-also"></a>Voir aussi
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Déployer l’antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Déployer Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)

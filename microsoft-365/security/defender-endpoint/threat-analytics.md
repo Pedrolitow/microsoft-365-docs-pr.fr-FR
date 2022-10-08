@@ -15,16 +15,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+- tier1
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c043203c18e61a0a1c85b6bc15ab1a8944bb1a5b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: f5bf80e4bc58b089ebfadfadef5bceb64c557ddf
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576448"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225501"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Suivre et répondre aux menaces émergentes par le biais de l’analytique des menaces
 
@@ -111,7 +112,7 @@ Accédez à la section **Rapport de l’analyste** pour lire l’écriture déta
 Dans la section **Atténuations** , passez en revue la liste des recommandations actionnables spécifiques qui peuvent vous aider à accroître la résilience de votre organisation face à la menace. La liste des atténuations suivies comprend :
 
 - **Mises à jour de sécurité** : déploiement de mises à jour de sécurité ou de correctifs pour les vulnérabilités
-- **Paramètres de l’Antivirus Microsoft Defender**
+- **paramètres antivirus Microsoft Defender**
   - Version du renseignement de sécurité
   - Protection fournie par le cloud
   - Protection des applications potentiellement indésirables (PUA)
@@ -132,7 +133,7 @@ Lorsque vous utilisez les rapports, gardez à l’esprit les éléments suivants
 - Les graphiques reflètent uniquement les atténuations suivies. Consultez la vue d’ensemble du rapport pour obtenir des atténuations supplémentaires qui ne sont pas affichées dans les graphiques.
 - Les atténuations ne garantissent pas une résilience complète. Les atténuations fournies reflètent les meilleures actions possibles nécessaires pour améliorer la résilience.
 - Les appareils sont considérés comme « indisponibles » s’ils n’ont pas transmis de données au service.
-- Les statistiques relatives aux antivirus sont basées sur les paramètres de l’Antivirus Microsoft Defender. Les appareils avec des solutions antivirus tierces peuvent apparaître comme étant « exposés ».
+- Les statistiques relatives aux antivirus sont basées sur Microsoft Defender paramètres antivirus. Les appareils avec des solutions antivirus tierces peuvent apparaître comme étant « exposés ».
 
 ## <a name="related-topics"></a>Voir aussi
 
