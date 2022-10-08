@@ -7,9 +7,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment attribuer à vous-même ou à d’autres les rôles de compte de facturation nécessaires pour acheter et modifier des produits dans le Centre d'administration Microsoft 365.
 ms.date: 05/24/2022
-ms.openlocfilehash: da3d69a1b4886b499b9c8f85ad15da53d83a83ca
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 00d7de8927ed2f2b5574d4282ed762d6e5812170
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679666"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189998"
 ---
 # <a name="no-billing-account-found-for-buying-products"></a>Aucun compte de facturation trouvé pour l’achat de produits
 
@@ -51,7 +52,7 @@ Si vous n’êtes pas le premier administrateur général sur le compte, procéd
     - Si la personne à laquelle vous attribuez un rôle est lecteur général, sélectionnez le rôle **lecteur du compte de facturation** .
 6. Sélectionnez **Affecter**.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Comprendre les comptes de facturation](manage-billing-accounts.md) (article)\
 [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md) (article)\

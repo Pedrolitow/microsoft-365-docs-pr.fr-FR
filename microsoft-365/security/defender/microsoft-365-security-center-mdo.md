@@ -13,16 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.openlocfilehash: 0a1bf4dd4d46490ed85cbb8631d2581da0a2f7af
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 09bcc9ec01e983d12295260e8ac179c664877274
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482777"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075401"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 

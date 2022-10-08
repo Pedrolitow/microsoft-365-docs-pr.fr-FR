@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à rechercher et à utiliser les rapports Defender pour Office 365 qui sont disponibles dans le portail Microsoft 365 Defender.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8f0a7b8a13ebe47a7b95fa52ed06147f166d6d15
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 28b0f31b59d7707e37d47982ee67a85e80adfe5a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851015"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075139"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports Defender pour Office 365 dans le portail Microsoft 365 Defender
 

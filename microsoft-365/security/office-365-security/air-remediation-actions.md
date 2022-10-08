@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Découvrez les actions de correction à la suite d’une investigation automatisée dans Microsoft Defender pour Office 365.
 ms.date: 04/30/2021
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 434b6617080ab16de0104451d653e4052e7ef3d7
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5679af9f5f8e1bf1fd7d45b3905bfb42da37bcb8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481941"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092566"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Actions de correction dans Microsoft Defender pour Office 365
 

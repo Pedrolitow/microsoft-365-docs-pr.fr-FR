@@ -11,16 +11,17 @@ ms.localizationpriority: medium
 ms.service: microsoft-365-security
 ms.collection:
 - M365-security-compliance
+- tier3
 search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Les administrateurs peuvent apprendre à créer des stratégies pour bloquer le contenu actif dans les documents Office
-ms.openlocfilehash: 000e306fd2120fa2980d384ecdeda039f8d717f8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b9eba7b71c34b38ba40cd63d824026d1ae28a182
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736385"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063417"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Gérer le contenu actif dans les documents Office
 
@@ -64,7 +65,7 @@ La logique mise à jour du Centre de gestion de la confidentialité est décrite
 
 ## <a name="what-is-a-trusted-document"></a>Qu’est-ce qu’un document approuvé ?
 
-Les documents approuvés sont des documents Office qui s’ouvrent sans aucune invite de sécurité pour les macros, les contrôles ActiveX et d’autres types de contenu actif dans le document. La vue protégée ou Application Guard n’est pas utilisée pour ouvrir le document. Lorsque les utilisateurs ouvrent un document approuvé et que tout le contenu actif est activé. Même si le document contient du nouveau contenu actif ou des mises à jour du contenu actif existant, les utilisateurs ne recevront pas d’invites de sécurité lors de la prochaine ouverture du document.
+Les documents approuvés sont des documents Office qui s’ouvrent sans aucune invite de sécurité pour les macros, les contrôles ActiveX et d’autres types de contenu actif dans le document. L’affichage protégé ou Protection d'application n’est pas utilisé pour ouvrir le document. Lorsque les utilisateurs ouvrent un document approuvé et que tout le contenu actif est activé. Même si le document contient du nouveau contenu actif ou des mises à jour du contenu actif existant, les utilisateurs ne recevront pas d’invites de sécurité lors de la prochaine ouverture du document.
 
 En raison de ce comportement, les utilisateurs doivent clairement approuver les documents uniquement s’ils approuvent la source du document.
 
@@ -116,8 +117,8 @@ Les tableaux des sections suivantes décrivent les paramètres qui contrôlent l
 |Activex|Office|Vérifier les objets ActiveX|Pas un paramètre de base de référence de sécurité.|Non|
 |Activex|Office|Désactiver tous les contrôles ActiveX|Pas un paramètre de base de référence de sécurité.|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
 |Activex|Office|Contrôles de charge dans Forms3|**1**|**Oui** pour les valeurs suivantes : <ul><li>**2**</li><li>**3**</li></ul>|
-|Compléments & extensibilité|Excel <p> PowerPoint <p> Project <p> Éditeur <p> Visio <p> Word|Désactiver la notification de barre d’approbation pour les compléments d’application non signés et les bloquer|**Enabled**|**Oui** pour la valeur **Disabled**.|
-|Compléments & extensibilité|Excel <p> PowerPoint <p> Project <p> Éditeur <p> Visio <p> Word|Exiger la signature des compléments d’applications par un éditeur approuvé|**Enabled**|Non|
+|Compléments & extensibilité|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Désactiver la notification de barre d’approbation pour les compléments d’application non signés et les bloquer|**Enabled**|**Oui** pour la valeur **Disabled**.|
+|Compléments & extensibilité|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Exiger la signature des compléments d’applications par un éditeur approuvé|**Enabled**|Non|
 |Compléments & extensibilité|Excel|Ne pas afficher l’alerte d’avertissement de publication automatique|**Disabled**|Non|
 |Compléments & extensibilité|Excel|Paramètres de notification de fonction WEBSERVICE|**Désactiver tout avec notification**|**Oui** pour les valeurs suivantes : <ul><li>**Désactiver tout avec notification**</li><li>**Disabled**</li><li>**Non configuré**</li></ul>|
 |Compléments & extensibilité|Office|Désactiver l’interrogation du client Office sur SharePoint Server pour les liens publiés|**Disabled**|Non|
@@ -138,15 +139,15 @@ Les tableaux des sections suivantes décrivent les paramètres qui contrôlent l
 |Jscript & VBScript|Outlook|Ne pas autoriser l’exécution de scripts de modèle objet Outlook pour les dossiers publics|**Enabled**|Non|
 |Jscript & VBScript|Outlook|Ne pas autoriser l’exécution de scripts de modèle objet Outlook pour les dossiers partagés|**Enabled**|Non|
 |Macros|Excel|Macro Notifications|**Désactiver toutes les macros à l’exception des macros signées numériquement**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
-|Macros|Access <p> PowerPoint <p> Project <p> Éditeur <p> Visio <p> Word|Paramètres de notification de macro VBA|**Désactiver toutes les macros à l’exception des macros signées numériquement** <p> et <p> **Exiger que les macros soient signées par un éditeur approuvé**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
-|Macros|Accès <p> Excel <p> PowerPoint <p> Visio <p> Word|Empêcher l’exécution de macros dans des fichiers Office à partir d’Internet|**Enabled**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
+|Macros|Access <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Paramètres de notification de macro VBA|**Désactiver toutes les macros à l’exception des macros signées numériquement** <p> et <p> **Exiger que les macros soient signées par un éditeur approuvé**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
+|Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Empêcher l’exécution de macros dans des fichiers Office à partir d’Internet|**Enabled**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
 |Macros|Excel|Analyser des macros chiffrées dans des classeurs Excel Open XML|**Analyser les macros chiffrées (valeur par défaut)**|Non|
 |Macros|Office|Autoriser VBA à charger des références typelib par chemin d’accès à partir d’emplacements intranet non approuvés|**Disabled**|Non|
 |Macros|Office|Automatisation de la sécurité|**Utiliser le niveau de sécurité des macros de l'application**|Non|
 |Macros|Office|Désactiver d’autres vérifications de sécurité sur les références de bibliothèque VBA qui peuvent faire référence à des emplacements non sécurisés sur l’ordinateur local|**Disabled**|Non|
 |Macros|Office|Étendue de l’analyse du runtime de macro|**Activer pour tous les documents**|Non|
 |Macros|Office|Approuver uniquement les macros VBA qui utilisent des signatures V3|Pas un paramètre de base de référence de sécurité.|Non|
-|Macros|Outlook|Mode de sécurité Outlook|**Utiliser نهج المجموعة de sécurité Outlook**|Requis pour activer tous les paramètres d’objet de stratégie de groupe Outlook. <p> Mentionné comme dépendance (cette stratégie ne bloque pas le contenu actif lui-même).|
+|Macros|Outlook|Mode de sécurité Outlook|**Utiliser les stratégie de groupe de sécurité Outlook**|Requis pour activer tous les paramètres d’objet de stratégie de groupe Outlook. <p> Mentionné comme dépendance (cette stratégie ne bloque pas le contenu actif lui-même).|
 |Macros|Outlook|Paramètre de sécurité pour les macros|**Avertir pour signé, désactiver non signé**|**Oui** pour les valeurs suivantes : <ul><li>**Toujours avertir**</li><li>**Avertir pour signé, désactiver non signé**</li><li>**Disabled**</li><li>**Non configuré**</li></ul>|
 |Macros|PowerPoint|Analyser des macros chiffrées dans des présentations PowerPoint Open XML|**Analyser les macros chiffrées (valeur par défaut)**|Non|
 |Macros|Éditeur|Niveau de sécurité d’Automation des éditeurs|**Par interface utilisateur (confirmation)**|Non|

@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: ecb3191888359675fb2fafa373858c388bc8bf08
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b93bcd80021055820f093b3ba52941b8a944781d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477690"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68073006"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 

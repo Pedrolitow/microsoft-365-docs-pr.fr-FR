@@ -1,5 +1,5 @@
 ---
-title: Définir Bookings stratégies de planification
+title: Définir les stratégies de planification bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: Découvrez comment définir des stratégies de planification pour votre entreprise. Les stratégies de planification incluent la durée des rendez-vous, ainsi que les délais d’annulation et de prospect acceptables.
-ms.openlocfilehash: 39d6ab31d7bfda8f2686ed232402c1b98e6a56db
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ebc3441b73efabb7122f48282118fb466a71ede5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637536"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198732"
 ---
 # <a name="set-your-microsoft-bookings-scheduling-policies"></a>Définir vos stratégies de planification Microsoft Bookings
 

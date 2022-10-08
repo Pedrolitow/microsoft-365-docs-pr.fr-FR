@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Dans cet article, vous allez découvrir Azure ExpressRoute pour Office 365 et comment l’utiliser pour la planification du réseau.
-ms.openlocfilehash: aa5890a6a735f3418a90ae7234173eb504ce16d7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9ec6626bb84645557373fbf15c183fac708e8237
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703409"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189778"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 

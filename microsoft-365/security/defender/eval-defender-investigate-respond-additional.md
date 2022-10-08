@@ -18,19 +18,20 @@ ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.openlocfilehash: 5dbda4df04d47d4069a60fd7925dde2390708aba
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5250120aeca42aeed0670a1c4e5dcd1696a1459f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473632"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68061107"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Essayer Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 
@@ -158,7 +159,7 @@ Une seule boîte aux lettres interne et un seul appareil sont requis pour cette 
 
     b. Joignez l’appareil de test au domaine de test.
 
-    c. [Activez l’antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si vous rencontrez des problèmes d’activation de l’antivirus Microsoft Defender, consultez [cette rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Activez Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si vous rencontrez des problèmes pour activer Microsoft Defender Antivirus, consultez [cette rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Intégration à Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 

@@ -18,14 +18,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: a8ec7ceaa052b1f0043004a0109b1e3aba74493f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: dff0aca75740441d60f148d35eb27873e5ccaea0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480170"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075467"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft Defender pour Identity dans Microsoft 365 Defender
 

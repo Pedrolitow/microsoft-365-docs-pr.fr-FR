@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 ms.custom:
 - MSStore_Link
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envoyez un e-mail en tant que liste de distribution dans Microsoft 365 afin que lorsqu’un membre réponde à un message, il semble qu’il provienne de la liste de distribution.
-ms.openlocfilehash: d2a2edd1b0db8bad29108b9e06555924918048e4
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5226fb7d4b5ea2007bbf28cbbea4ffaafd936e4c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087548"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190372"
 ---
 # <a name="send-microsoft-365-email-as-a-distribution-list"></a>Envoyer un e-mail Microsoft 365 en tant que liste de distribution
 

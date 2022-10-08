@@ -12,17 +12,17 @@ ms.date: 08/11/2022
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Découvrez comment gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1eae7f137d9457ca507efb592414127223af4f87
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5d26a013199156b5aeff9ca21dcbebea5c64ebbf
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598975"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092421"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire
 
@@ -53,7 +53,7 @@ Utilisez le portail Soumissions (également appelé *soumission d’administrate
 
 - **Domaines et adresses e-mail** :
   - Email messages de ces expéditeurs sont marqués comme *courrier indésirable à haut niveau de confiance* (SCL = 9). Ce qui arrive aux messages est déterminé par la [stratégie anti-courrier indésirable](configure-your-spam-filter-policies.md) qui a détecté le message pour le destinataire. Dans la stratégie anti-courrier indésirable par défaut et les nouvelles stratégies personnalisées, les messages marqués comme courrier indésirable à haut niveau de confiance sont remis par défaut au dossier Junk Email. Dans les [stratégies de sécurité prédéfinies](preset-security-policies.md) Standard et Strict, les messages indésirables à haut niveau de confiance sont mis en quarantaine.
-  - Les utilisateurs de l’organisation ne peuvent pas envoyer de courrier électronique à ces domaines et adresses bloqués. Ils recevront le rapport de non-remise suivant (également appelé NDR ou message de rebond) : `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
+  - Les utilisateurs de l’organisation ne peuvent pas envoyer de courrier électronique à ces domaines et adresses bloqués. Ils recevront le rapport de non-remise suivant (également appelé NDR ou message `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.` de rebond) : l’intégralité du message est bloquée pour tous les destinataires si l’e-mail est envoyé à l’une des entrées de la liste.
 
 - **Fichiers** : Email messages contenant ces fichiers bloqués sont bloqués en tant que *programmes malveillants*.
 
@@ -85,11 +85,11 @@ La liste suivante décrit ce qui se passe dans la liste d’autorisations/blocag
 
   - Si le message a été bloqué par [l’intelligence de l’usurpation](learn-about-spoof-intelligence.md) d’identité, une entrée d’autorisation pour l’expéditeur est créée et s’affiche sous l’onglet **Expéditeurs usurpés** dans la liste verte des locataires.
 
-  - Si le message a été bloqué par la [protection de domaine ou d’emprunt](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) d’identité de l’utilisateur dans Defender pour Office 365, une entrée d’autorisation n’est pas créée dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, le domaine ou l’expéditeur est ajouté à la **section Expéditeurs approuvés et domaines** dans la [stratégie anti-hameçonnage](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) qui a détecté le message.
+  - Si le message a été bloqué par une protection d’emprunt d’identité de [domaine ou d’utilisateur](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans Defender pour Office 365, une entrée d’autorisation n’est pas créée dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, le domaine ou l’expéditeur est ajouté à la **section Expéditeurs approuvés et domaines** dans la [stratégie anti-hameçonnage](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) qui a détecté le message.
 
   - Si le message a été bloqué pour d’autres raisons, une entrée d’autorisation pour l’expéditeur est créée et s’affiche sous l’onglet **Domaines & adresses** dans la liste verte des locataires.
 
-  - Si le message n’a pas été bloqué et que l’entrée d’autorisation pour l’expéditeur n’est pas créée, il ne se trouve pas sous l’onglet **Expéditeurs usurpés** ou l’onglet **Domaines & adresses** .
+  - Si le message n’a pas été bloqué et que l’entrée d’autorisation de l’expéditeur n’est pas créée, il ne se trouve pas sous l’onglet **Expéditeurs usurpés** ou l’onglet **Domaines & adresses** .
 
 Par défaut, autorisez les **entrées pour les domaines et les adresses e-mail**, **les fichiers** et **les URL** qui expirent après 30 jours, ce qui est également le maximum. Les entrées autorisées pour **les expéditeurs usurpés** n’expirent jamais.
 
@@ -104,6 +104,6 @@ Par défaut, autorisez les **entrées pour les domaines et les adresses e-mail**
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>À quoi vous attendre après l’ajout d’une entrée d’autorisation ou de blocage
 
-Une fois que vous avez ajouté une entrée d’autorisation via le portail Soumissions ou une entrée de bloc dans la liste d’autorisation/de blocage du locataire, l’entrée doit commencer à fonctionner immédiatement.
+Après avoir ajouté une entrée d’autorisation via le portail Soumissions ou une entrée de bloc dans la liste d’autorisation/de blocage du locataire, l’entrée doit commencer à fonctionner immédiatement 99,999 % du temps. Pour le reste, cela peut prendre jusqu’à 24 heures.
 
 Nous vous recommandons de laisser les entrées expirer automatiquement après 30 jours pour voir si le système a découvert l’autorisation ou le bloc. Si ce n’est pas le cas, vous devez faire une autre entrée pour donner au système encore 30 jours pour apprendre.

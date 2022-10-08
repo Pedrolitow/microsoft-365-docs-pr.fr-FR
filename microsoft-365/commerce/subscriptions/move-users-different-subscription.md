@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 05/12/2022
-ms.openlocfilehash: c3450cecf4219f825740d5777cebeb05782b3dc4
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: b0a69cb06f180facfc002fe5e33b6042966708e7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322626"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189976"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
@@ -33,7 +34,7 @@ Si vous avez plusieurs produits, si vous avez des utilisateurs disposant d’une
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global, de licence ou d'utilisateur pour attribuer des licences. Pour plus d'informations, consultez [À propos des rôles d'administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 

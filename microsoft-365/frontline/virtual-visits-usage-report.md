@@ -14,17 +14,18 @@ search.appverid: MET150
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 description: Découvrez comment utiliser le rapport d’utilisation des visites virtuelles dans le Centre d’administration Microsoft Teams pour obtenir une vue d’ensemble de l’activité des rendez-vous virtuels dans votre organisation.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5f609ebb1d48e1e7c9b55d2998c793403dec8fa0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 477562bc3b4bea61291e8bcce86dd028913ca3bc
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992484"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063483"
 ---
 # <a name="microsoft-teams-virtual-visits-usage-report"></a>Rapport d’utilisation des visites virtuelles Microsoft Teams
 

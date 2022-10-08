@@ -16,17 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3ddf2e863b764cbf2109acda7a6318a98882f901
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: da57ca47c4c95246f7ed3278cc475ef313daec45
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480753"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075510"
 ---
 # <a name="microsoft-365-defender-integration-with-microsoft-sentinel"></a>intégration de Microsoft 365 Defender à Microsoft Sentinel
 

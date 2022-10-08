@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
-ms.openlocfilehash: da7d8966744d13b05504cecaba7824887c057028
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: edd8f5a2a2f815907913a32cfe3039a69de27585
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483077"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092200"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 

@@ -10,18 +10,19 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans l’Union européenne
-ms.openlocfilehash: 33e898bdea6d32446630c9da97d7241a040b6916
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 2ceda849e5801bd986afd9731406a1d601d5dbe0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811939"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198578"
 ---
 # <a name="data-locations-for-the-european-union"></a>Emplacements de données pour l’Union européenne
 

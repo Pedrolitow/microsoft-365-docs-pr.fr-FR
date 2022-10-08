@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 81cf70aca87838bed7060dd75bb6e7cacee66bc1
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 92f198ebfd354fddf54f67d8054bc8725dd30fca
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084364"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190416"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Ajouter ou supprimer des membres de groupes Microsoft 365 à l’aide du Centre d’administration
 
@@ -75,7 +76,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 ## <a name="manage-group-owner-status"></a>Gérer l’état du propriétaire du groupe
 
-Par défaut, la personne qui a créé le groupe en est le propriétaire. Un groupe possède souvent plusieurs propriétaires pour le support ou d'autres raisons. Les membres peuvent être promus au statut de propriétaire et les propriétaires peuvent être rétrogradés au statut de membre.
+By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Promouvoir un membre au statut de propriétaire dans le Centre d’administration
 

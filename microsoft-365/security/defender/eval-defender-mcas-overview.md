@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 159c676179ceb3ee71c90f700f9af2573ba92f9b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: f8556ba71024dc5959ec1bf1024758a6ae1ce54f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473202"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075752"
 ---
 # <a name="step-5-evaluate-microsoft-defender-for-cloud-apps"></a>Étape 5. Évaluer Microsoft Defender for Cloud Apps
 

@@ -11,19 +11,19 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: La chaîne de réception authentifiée (ARC) est une authentification par e-mail qui tente de préserver les résultats de l’authentification sur les appareils et les flux de courriers indirects qui se présentent entre l’expéditeur et le destinataire. Voici comment créer des exceptions pour vos expéditeurs ARC approuvés.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 83d5a0d3d7ca66634c63bf019e980c9aced060b1
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f4cf3bc84505665321e02743a786146f5a5e930c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598668"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68061943"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Créer une liste d’expéditeurs ARC approuvés pour approuver des flux de courriers indirects *légitimes*
 

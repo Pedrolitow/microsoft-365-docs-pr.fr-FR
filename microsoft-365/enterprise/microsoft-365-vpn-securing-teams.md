@@ -11,18 +11,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
 f1.keywords:
 - NOCSH
 description: Sécurisation du trafic multimédia Teams pour le tunneling fractionné VPN
-ms.openlocfilehash: eb06696b35df6ddb923c6b1e9ae97abf01dccabe
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fc37f945b95aedfc837063ceb028f48a05a1d48b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701145"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170242"
 ---
 # <a name="securing-teams-media-traffic-for-vpn-split-tunneling"></a>Sécurisation du trafic multimédia Teams pour le tunneling fractionné VPN
 

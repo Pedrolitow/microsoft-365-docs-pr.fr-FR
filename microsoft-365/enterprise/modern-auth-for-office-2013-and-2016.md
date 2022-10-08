@@ -23,14 +23,15 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’authentification moderne de Microsoft 365 fonctionnent différemment pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 36bd7252394cb23b2e1f8d4999e4c09095734716
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 365a08db64e01274ff815ee908176878b64f68cc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690485"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170220"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013, Office 2016 et Office 2019
 
@@ -58,7 +59,7 @@ Pour les services Microsoft 365, l’état par défaut de l’authentification m
 
 Les applications clientes Office 2013 prennent en charge l’authentification héritée par défaut. Hérité signifie qu’ils prennent en charge l’assistant de connexion Microsoft Online ou l’authentification de base. Pour que ces clients utilisent des fonctionnalités d’authentification modernes, les clés de Registre doivent être définies pour le client Windows. Pour obtenir des instructions, consultez [Activer l’authentification moderne pour Office 2013 sur les appareils Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-Pour activer l'authentification moderne pour les appareils exécutant Windows (par exemple les ordinateurs portables et tablettes) et sur lesquels Microsoft Office 2013 est installé, vous devez définir les clés de Registre suivantes. Les clés doivent être définies sur chaque appareil pour lequel vous voulez activer l'authentification moderne :
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
 
 |**Clé de Registre**|**Type**|**Valeur** |
 |:-------|:------:|--------:|

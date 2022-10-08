@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 59486fdc30fa512f10126313076fc0be7ff257f5
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 4a3b105213aaca6d91e25df9b292b728de3b0cd8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796783"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072874"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Passer en revue les exigences d’architecture Microsoft Defender pour Office 365 et les concepts clés
 
@@ -41,7 +42,7 @@ Avant d’activer Defender pour Office 365, veillez à bien comprendre l’archi
 
 ## <a name="understand-the-architecture"></a>Comprendre l’architecture
 
-Le diagramme suivant illustre l’architecture de base de Microsoft Defender pour Office, qui peut inclure une passerelle SMTP tierce ou une intégration locale. Les scénarios de coexistence hybride (autrement dit, les boîtes aux lettres de production sont à la fois locales et en ligne) nécessitent des configurations plus complexes et ne sont pas abordés dans cet article ou les conseils d’évaluation.
+Le diagramme suivant illustre l’architecture de base pour Microsoft Defender pour Office, qui peut inclure une passerelle SMTP tierce ou une intégration locale. Les scénarios de coexistence hybride (autrement dit, les boîtes aux lettres de production sont à la fois locales et en ligne) nécessitent des configurations plus complexes et ne sont pas abordés dans cet article ou les conseils d’évaluation.
 
 :::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="Architecture du Microsoft Defender pour Office 365." lightbox="../../media/defender/m365-defender-office-architecture.png":::
 

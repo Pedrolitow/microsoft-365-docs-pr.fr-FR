@@ -2,14 +2,15 @@
 title: Centre d'administration Microsoft 365 rapports d’activité SharePoint
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport d’utilisation de l’activité SharePoint pour en savoir plus sur les interactions de fichiers utilisateur sous licence SharePoint, le nombre de fichiers partagés et l’utilisation du stockage.
-ms.openlocfilehash: 4c330c45d3d6a0c906c3ad7e1b4d2391e3be4697
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 709a22a3e1b7105ccf10b9b735dc2a499d0fda19
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662615"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170132"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité SharePoint
 
 En tant qu’administrateur Microsoft 365, le tableau de bord Rapports vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Consultez les [rapports d’activité dans le Centre d'administration Microsoft 365](activity-reports.md).
   
-Par exemple, vous pouvez comprendre l'activité de chaque utilisateur titulaire d'une licence d'utilisation de SharePoint en examinant son interaction avec les fichiers. Cela vous aide également à comprendre le niveau de la collaboration en examinant le nombre de fichiers partagés.
+For example, you can understand the activity of every user licensed to use SharePoint by looking at their interaction with files. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
   
 ## <a name="how-do-i-get-to-the-sharepoint-activity-report"></a>Comment faire accéder au rapport d’activité SharePoint ?
 
@@ -50,7 +51,7 @@ Vous pouvez également exporter les données du rapport dans un fichier Excel .c
 
 Le rapport **d’activité SharePoint** peut être consulté pour connaître les tendances des 7 derniers jours, 30 jours, 90 ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur qui a effectué l’activité sur le site SharePoint.  <br/> |

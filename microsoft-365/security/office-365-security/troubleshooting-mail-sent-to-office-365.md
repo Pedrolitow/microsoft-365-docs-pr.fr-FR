@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article fournit des informations de dépannage pour les problèmes liés à l’envoi d’e-mails aux boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage en bloc aux clients Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 661cdbb58b7ce0b8d7f77cfbea4677ad3af6a42d
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 7e9410da7ddf8fc8d125d97601a7bc57db50583a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597733"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075051"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
@@ -42,9 +42,9 @@ Les technologies de filtrage EOP sont conçues pour fournir une protection anti-
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>Vous envoyez des e-mails depuis de nouvelles adresses IP ?
 
-Les adresses IP qui n’ont pas été utilisées précédemment pour envoyer des e-mails n’ont généralement pas de réputation créée dans nos systèmes. Par conséquent, les e-mails provenant de nouvelles adresses IP ont plus tendance à rencontrer des problèmes de remise. Une fois que l’adresse IP a créé une réputation de non envoi de courrier indésirable, EOP permet généralement une meilleure expérience de remise des courriers électroniques.
+IP addresses not previously used to send email typically don't have any reputation built up in our systems. As a result, emails from new IPs are more likely to experience delivery issues. Once the IP has built a reputation for not sending spam, EOP will typically allow for a better email delivery experience.
 
-Les nouvelles adresses IP qui sont ajoutées pour des domaines authentifiés sous des enregistrements SPF existants bénéficient généralement de l’avantage d’hériter de la réputation d’envoi du domaine. Si votre domaine a une bonne réputation d’envoi, les nouvelles adresses IP peuvent expérimenter un temps de montée en puissance plus rapide. Une nouvelle adresse IP pourra être entièrement augmentée au bout de quelques semaines ou plus tôt selon le volume, la précision de la liste et les taux de plaintes de courrier indésirable.
+New IPs that are added for domains that are authenticated under existing SPF records typically experience the added benefit of inheriting some of the domain's sending reputation. If your domain has a good sending reputation new IPs may experience a faster ramp up time. A new IP can expect to be fully ramped within a couple of weeks or sooner depending on volume, list accuracy, and junk email complaint rates.
 
 ## <a name="confirm-that-your-dns-is-set-up-correctly"></a>Confirmer que votre DNS est configuré correctement
 
@@ -52,15 +52,15 @@ Pour savoir comment créer et gérer des enregistrements DNS, y compris l’enre
 
 ## <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Vérifier que vous ne vous annoncez pas sous la forme d’une adresse IP non routable
 
-Il se peut que nous n’acceptions pas les e-mails provenant d’expéditeurs dont la recherche DNS inversée a échoué. Dans certains cas, des expéditeurs légitimes s’annoncent de façon incorrecte sous la forme d’une adresse IP routable non Internet lorsqu’ils tentent d’ouvrir une connexion à EOP. Les adresses IP réservées pour le réseau privé (non routable) incluent :
+We may not accept email from senders who fail a reverse-DNS lookup. In some cases, legitimate senders advertise themselves incorrectly as a non-internet routable IP when attempting to open a connection to EOP. IP addresses that are reserved for private (non-routable) networking include:
 
 - 192.168.0.0/16 (ou 192.168.0.0 - 192.168.255.255)
 - 10.0.0.0/8 (ou 10.0.0.0 - 10.255.255.255)
 - 172.16.0.0/11 (ou 172.16.0.0 - 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Vous avez reçu un rapport de non-remise (NDR) lors de l’envoi d’un e-mail à un utilisateur dans Office 365
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Vous avez reçu une notification d'échec de remise lors de l'envoi de messages électroniques à un utilisateur dans Office 365
 
-Certains problèmes de remise sont dus au blocage de l'adresse IP de l'expéditeur par Microsoft ou à l'identification du compte d'utilisateur comme expéditeur interdit en raison des activité de courrier indésirable précédentes. Si vous pensez que vous avez reçu la notification d'échec de remise par erreur, suivez d'abord toutes les instructions indiquées dans le message de notification d'échec de remise pour résoudre le problème.
+Some delivery issues are the result of the sender's IP address being blocked by Microsoft or because the user account is identified as banned sender due to previous spam activity. If you believe that you have received the NDR in error, first follow any instructions in the NDR message to resolve the issue.
 
 Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans [Email rapports de non-remise dans Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
@@ -76,11 +76,11 @@ Si un message a été incorrectement identifié comme courrier indésirable par 
 
 ## <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>Le trafic provenant de mon adresse IP est limité par EOP
 
-Si vous recevez une notification d'échec de remise d'EOP, cela indique que votre adresse IP est limitée par EOP, par exemple :
+Si vous recevez une notification d’échec de remise d’EOP, cela indique que votre adresse IP est limitée par EOP, par exemple :
 
  `host xxxx.outlook.com [x.x.x.x]: 451 4.7.550 Access denied, please try again later`
 
-Vous avez reçu une notification d'échec de remise car une activité suspecte a été détectée sur l'adresse IP et a été restreinte temporairement le temps d'effectuer des évaluations supplémentaires. Si la suspicion est désactivée au cours de l'évaluation, cette restriction est bientôt levée.
+You received the NDR because suspicious activity has been detected from the IP address and it has been temporarily restricted while it is being further evaluated. If the suspicion is cleared through evaluation, this restriction will be lifted shortly.
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Je ne peux pas recevoir d’e-mail d’expéditeurs dans Microsoft 365
 
@@ -92,7 +92,7 @@ Si vous effectuez souvent des campagnes de messagerie en bloc pour les utilisate
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Assurez-vous que le nom De reflète qui envoie le message
 
-L'Objet doit être un bref résumé du contenu du message, et le corps du message doit clairement et brièvement indiquer l'objet de l'offre, du service ou du produit. Par exemple :
+The Subject should be a brief summary of what the message is about, and the message body should clearly and succinctly indicate what the offering, service, or product is about. For example:
 
 Correct :
 
@@ -106,17 +106,17 @@ Plus vous vous présentez et décrivez ce que vous faites de façon claire, moin
 
 ### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>Toujours inclure une option de désinscription dans les e-mails de campagne
 
-Les e-mails de marketing, notamment les bulletins d'informations, doivent toujours inclure une option permettant de se désinscrire pour ne plus recevoir de futurs e-mails. Par exemple :
+Les e-mails de marketing, notamment les bulletins d’informations, doivent toujours inclure une option permettant de se désinscrire pour ne plus recevoir de futurs e-mails. Par exemple :
 
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
 
  `Update Profile/Email Address | Instant removal with SafeUnsubscribe&trade; | Privacy Policy`
 
-Certains expéditeurs incluent cette option en demandant aux destinataires d'envoyer un e-mail à un certain alias avec « Se désabonner » dans l'objet. Cela n'est pas préférable à l'exemple en un seul clic ci-dessus. Si vous choisissez de demander aux destinataires d'envoyer un message, assurez-vous que lorsqu'ils cliquent sur le lien, tous les champs requis sont renseignés au préalable.
+Some senders include this option by requiring recipients to send an email to a certain alias with "Unsubscribe" in the subject. This is not preferable to the one-click example above. If you do choose to require recipients to send a mail, ensure that when they click the link, all the required fields are pre-populated.
 
 ### <a name="use-the-double-opt-in-option-for-marketing-email-or-newsletter-registration"></a>Utiliser l’option de contrôle de consentement double pour l’enregistrement à des e-mails de marketing ou à des bulletins d’informations
 
-Cette pratique est recommandée par le secteur si votre entreprise requiert que les utilisateurs enregistrent leurs informations de contact ou les y encourage pour accéder à vos produits ou services. Certaines sociétés ont pris l'habitude d'inscrire automatiquement leurs utilisateurs pour les e-mails de marketing ou les bulletins d'informations électroniques lors du processus d'enregistrement. Néanmoins, cela est considéré comme une pratique marketing discutables dans le monde du filtrage des messages électroniques.
+This industry best practice is recommended if your company requires or encourages users to register their contact information in order to access your product or services. Some companies make it a practice to automatically sign up their users for marketing emails or e-newsletters during the registration process, but this is considered a questionable marketing practice in the world of email filtering.
 
 Au cours du processus d'enregistrement, si la case à cocher « Oui, merci de m'envoyer votre bulletin d'informations » ou « Oui, merci de m'envoyer les offres spéciales » est sélectionnée par défaut, les utilisateurs qui ne font pas assez attention risquent de s'inscrire par inadvertance aux e-mails de marketing ou aux bulletins d'informations qu'ils ne souhaitent pas recevoir.
 
@@ -126,11 +126,11 @@ Au cours du processus d'enregistrement, si la case à cocher « Oui, merci de m'
 
 ### <a name="ensure-that-email-message-content-is-transparent-and-traceable"></a>Vérifier que le contenu des messages électroniques est transparent et qu’il est possible de le suivre
 
-La façon dont les e-mails sont envoyés est aussi importante que leur contenu. Lorsque vous créez le contenu d’un e-mail, utilisez les meilleures pratiques suivantes pour vous assurer que vos e-mails ne seront pas signalés par des services de filtrage des messages électroniques :
+Just as important as the way the emails are sent is the content they contain. When creating email content, use the following best practices to ensure that your emails will not be flagged by email filtering services:
 
 - Lorsque le message de l'e-mail demande aux destinataires d'ajouter l'expéditeur au carnet d'adresses, il doit clairement indiquer qu'une telle action ne constitue pas une garantie de remise.
 
-- Les redirections incluses dans le corps du message doivent être similaires et cohérentes et non multiples et variées. Une redirection dans ce contexte est tout élément qui pointe en dehors du message, comme des liens et des documents. Si vous avez de très nombreux liens Se désabonner ou Mettre à jour le profil, ils doivent tous pointer vers le même domaine. Par exemple :
+- Redirects included in the body of the message should be similar and consistent, and not multiple and varied. A redirect in this context is anything that points away from the message, such as links and documents. If you have a lot of advertising or Unsubscribe links or Update the Profile links, they should all point to the same domain. For example:
 
   Correct (tous les domaines sont identiques) :
 
@@ -154,4 +154,4 @@ La façon dont les e-mails sont envoyés est aussi importante que leur contenu. 
 
 ### <a name="remove-incorrect-email-aliases-from-your-databases"></a>Supprimer les alias de messagerie incorrects de vos bases de données
 
-Les alias de messagerie de votre base de données qui créent un renvoi sont inutiles et exposent vos messages électroniques sortants à des risques d’examen approfondi par les services de filtrage de courrier électronique. Assurez-vous que votre base de données de messagerie est à jour.
+Any email alias in your database that creates a bounce-back is unnecessary and puts your outbound emails at risk for further scrutiny by email filtering services. Ensure that your email database is up-to-date.

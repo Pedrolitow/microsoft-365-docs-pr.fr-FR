@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Gérez et sécurisez les appareils mobiles connectés à votre organisation Microsoft 365 en configurant et en utilisant mobilité et sécurité de base.
-ms.openlocfilehash: 0d36a12220e6e2c7aac1109309fb11b52ce5dd89
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7cac3397cddbfed970c8bdf8ef5128458c8fcd5c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663386"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190482"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 

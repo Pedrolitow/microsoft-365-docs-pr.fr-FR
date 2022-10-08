@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -17,12 +18,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article décrit comment planifier le lancement de votre portail dans SharePoint Online et les étapes à suivre pour un lancement réussi
-ms.openlocfilehash: bcf5db7a1a91a04229bdb366380a7146c8243f96
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 572300720aafc720befd954cf2d250d41b94dc9b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672290"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198556"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planification du plan de lancement de votre portail dans SharePoint Online
 

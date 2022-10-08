@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-getstarted
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9ba05de628da9b98fcea1ad4e363123807f33d51
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 21428bf8427341332efe2898f11e5fe4711c7b70
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496678"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075818"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 

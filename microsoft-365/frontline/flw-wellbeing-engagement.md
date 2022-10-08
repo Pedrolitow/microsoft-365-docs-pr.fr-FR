@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 - m365solution-frontline
 - m365solution-scenario
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -22,12 +24,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 1197cc585f5725cf3569699d23d01ebf1894e2dc
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 600e7d00764f97c29a14e05ac7675e5f82243205
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614151"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68074942"
 ---
 # <a name="engage-your-frontline-workers-and-focus-on-wellbeing"></a>Impliquez vos employés et concentrez-vous sur le bien-être
 

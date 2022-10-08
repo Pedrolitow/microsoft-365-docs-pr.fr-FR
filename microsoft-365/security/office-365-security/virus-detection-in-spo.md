@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Découvrez comment SharePoint Online détecte les virus dans les fichiers que les utilisateurs chargent et empêche les utilisateurs de télécharger ou de synchroniser les fichiers.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 948f5b58f7c5113f006c0fd6ccb4d84f0ce52c9d
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 373c8d1b26fc31aae034b47fbe17b78024ad2147
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850993"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68074986"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protection antivirus intégrée dans SharePoint Online, OneDrive et Microsoft Teams
 

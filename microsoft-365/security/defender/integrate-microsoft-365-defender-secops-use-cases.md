@@ -16,18 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-m365dsecops
+- tier2
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c4caee1bd0904cecd941789e891b93a378080eed
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 13861486db36c824289e83e8d16c3971901d18a0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483297"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68062185"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Étape 5. Développer et tester des cas d’utilisation
 

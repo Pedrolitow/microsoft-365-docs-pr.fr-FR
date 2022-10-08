@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Comment utiliser PowerShell pour créer des comptes d’utilisateurs individuels ou plusieurs comptes d’utilisateurs Microsoft 365.
-ms.openlocfilehash: 9f96c5a96e014055622deb34c37cb8523f0041f8
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 7cdeaa3f88736d4444e2dd1d45cf73055c4b569f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930238"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168768"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Créer des comptes d’utilisateur Microsoft 365 avec PowerShell
 
@@ -42,10 +44,10 @@ Lorsque vous créez des comptes d’utilisateur dans PowerShell, certaines propr
 |**NomFamille** <br/> |Non  <br/> ||
 |**LicenseAssignment** <br/> |Non  <br/> |Il s’agit du plan de licence (également appelé [plan de licence ou référence SKU](/azure/active-directory/enterprise-users/licensing-service-plan-reference)) à partir duquel une licence disponible est attribuée au compte d’utilisateur. La licence définit les services Microsoft 365 disponibles pour le compte. Vous n’êtes pas obligé d’attribuer une licence à un utilisateur lorsque vous créez le compte, mais le compte doit disposer d’une licence pour accéder aux services Microsoft 365. Vous disposez de 30 jours pour attribuer une licence à un compte d'utilisateur après sa création. |
 |**Password** <br/> |Non  <br/> | Si vous n'indiquez pas de mot de passe, un mot de passe aléatoire est affecté au compte d'utilisateur et le mot de passe est visible dans les résultats de la commande. Si vous spécifiez un mot de passe, il doit s’agir de 8 à 16 caractères de texte ASCII des types suivants : lettres minuscules, lettres majuscules, nombres et symboles.<br/> |
-|**UsageLocation** <br/> |Non  <br/> |Il s’agit d’un code de pays ISO 3166-1 alpha-2 valide. Par exemple, *ÉTATS-UNIS* pour les États-Unis et *FR* pour la France. Il est important de fournir cette valeur, car certains services Microsoft 365 ne sont pas disponibles dans certains pays. Vous ne pouvez pas attribuer de licence à un compte d’utilisateur, sauf si cette valeur est configurée pour le compte. Pour plus d’informations, consultez [À propos des restrictions de licence](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**UsageLocation** <br/> |Non  <br/> |Il s’agit d’un code de pays ISO 3166-1 alpha-2 valide. Par exemple, *ÉTATS-UNIS* pour le États-Unis et *FR* pour la France. Il est important de fournir cette valeur, car certains services Microsoft 365 ne sont pas disponibles dans certains pays. Vous ne pouvez pas attribuer de licence à un compte d’utilisateur, sauf si cette valeur est configurée pour le compte. Pour plus d’informations, consultez [À propos des restrictions de licence](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
 
 >[!Note]
->[Découvrez comment créer des comptes d’utilisateur à](../admin/add-users/add-users.md) l’aide du Centre d’administration Microsoft 365.
+>[Découvrez comment créer des comptes d’utilisateur à](../admin/add-users/add-users.md) l’aide de la Centre d'administration Microsoft 365.
 > 
 > Pour obtenir la liste des ressources supplémentaires, consultez [Gérer les utilisateurs et les groupes](/admin).
 >   
@@ -83,7 +85,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour le module Windows PowerShell et les applets de commande dont le nom contient *Msol* . Exécutez ces cmdlets à partir de Windows PowerShell.
+>PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell module et les applets de commande qui ont *Msol* dans leur nom. Exécutez ces cmdlets à partir de Windows PowerShell.
 >
 
 Pour répertorier les [noms de plan de licence](/azure/active-directory/enterprise-users/licensing-service-plan-reference) disponibles, utilisez cette commande :
@@ -100,7 +102,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 
 ### <a name="create-multiple-user-accounts"></a>Créez plusieurs comptes d’utilisateurs
 
-1. Créez un fichier CSV (valeurs séparées par des virgules) qui contient les informations de compte d’utilisateur requises. Par exemple :
+1. Créez un fichier CSV (valeurs séparées par des virgules) qui contient les informations de compte d'utilisateur requises. Par exemple :
 
      ```powershell
      UserPrincipalName,FirstName,LastName,DisplayName,UsageLocation,AccountSkuId

@@ -16,18 +16,19 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 6eb9e7e1f8177bd32cdb76fe817bee0edb4f2af4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 45c09403d674bbad9f75a45b1c9c69433256c174
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699563"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075095"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers Teams
 

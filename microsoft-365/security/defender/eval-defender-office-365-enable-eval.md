@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: how-to
-ms.openlocfilehash: a88c98e345e6ac1caa2a31a724c4f62fcf47151c
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 2bf372cb9836b5565a5e311a17806d6f52d3945a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67566450"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072962"
 ---
 # <a name="enable-the-evaluation-environment"></a>Activer l’environnement d’évaluation
 

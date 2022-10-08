@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- scotvorg
+- Strat_O365_Enterprise
 f1.keywords:
 - CSH
 search.appverid:
@@ -18,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Adm_O365
 description: Cet article vous aidera à planifier vos besoins en bande passante réseau pour Microsoft 365 et à affiner et résoudre les problèmes de performances.
-ms.openlocfilehash: 090bfb41675089e5c9014e35ddf58e1e51bad311
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fa335ebd3e4193357a8c4694e996cc04e1e7bd24
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694478"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189888"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Planification réseau et optimisation des performances pour Microsoft 365
 Avant de déployer pour la première fois ou de migrer vers Microsoft 365, vous pouvez utiliser les informations contenues dans ces rubriques pour estimer la bande passante dont vous avez besoin, puis pour tester et vérifier que vous disposez de suffisamment de bande passante pour déployer ou migrer vers Microsoft 365. Pour une vue d’ensemble, consultez : [Planification du réseau et de la migration pour Microsoft 365](network-and-migration-planning.md).

@@ -13,13 +13,14 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 8b1b96df91081f2fd8bff3f4d80f8c4c8e016b46
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+search.appverid: met150
+ms.openlocfilehash: f7bf32eec4a29a242c8783f248955ec7546fa75d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595782"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075073"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -52,7 +53,7 @@ Vous pouvez obtenir de l’aide de Microsoft en démarrant une nouvelle demande 
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Assistance pour les abonnés au support Microsoft Premier
 
-Si vous êtes client EOP et que vous disposez d'un contrat de support Microsoft Premier, vous pouvez obtenir une assistance via les canaux normaux du support Microsoft Premier. Vous pouvez ainsi bénéficier de l'accès à tous les processus et à toutes les ressources disponibles pour les clients du support Premier, comme un responsable technique de compte et la soumission de requête. Le support Premier pour Microsoft Online Services dépasse le cadre du support Premier des produits sur site et l'étend aux services en ligne, en vous offrant un support unifié pour tous les produits et services. Il permet de s'assurer que les clients peuvent résoudre rapidement leurs problèmes et simplifie la gestion du support pour les différents composants d'une infrastructure informatique.
+If you are an EOP customer and also have a Microsoft Premier Support contract, you can get support through the normal Microsoft Premier Support channels. This allows you to receive access to all processes and resources available to Premier Support customers, such as a Premier Technical Account Manager (TAM) and case submission. Premier Support for Microsoft Online Services extends the Premier Support framework beyond on-premises products to online services, providing you with a unified support experience across all products and services. This service helps ensure that customers can resolve issues quickly and simplifies the task of managing support for different components of an IT infrastructure.
 
 Pour plus d’informations sur la façon dont le support Premier peut aider votre organisation à optimiser la valeur de vos investissements informatiques, consultez [Support Premier pour les partenaires](https://partner.microsoft.com/support/microsoft-services-premier-support).
 

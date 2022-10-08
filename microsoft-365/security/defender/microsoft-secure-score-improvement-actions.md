@@ -8,13 +8,13 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: article
 search.appverid:
 - MOE150
@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: dac1fa506dbb5de8a74817d20722738640ee2719
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: f57144f6b27a25200423dc9d7da7fff15ff97b52
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480424"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68062053"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec Microsoft Secure Score
 

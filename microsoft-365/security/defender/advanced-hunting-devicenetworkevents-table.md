@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: cfd6fbd52aad3837ec6b330706215a4f9af745eb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 00622a2365700e6c5edbf2a3b78994726f5c77f0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472785"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060887"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -83,7 +85,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessIntegrityLevel` | `string` | Niveau d’intégrité du processus qui a initié l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
 | `InitiatingProcessTokenElevation` | `string` | Type de jeton indiquant la présence ou l’absence d’élévation de privilèges Access Control utilisateur (UAC) appliquée au processus qui a initié l’événement |
 | `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
-| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
+| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Protection d'application pour isoler l’activité du navigateur |
 | `AdditionalFields` | `string` | Informations supplémentaires sur l’événement au format tableau JSON |
 
 ## <a name="related-topics"></a>Voir aussi

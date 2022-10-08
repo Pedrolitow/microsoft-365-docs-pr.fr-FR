@@ -10,18 +10,20 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances de Exchange Online.
-ms.openlocfilehash: 6848719ce29f88c212e92254f1d0458843212a3f
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: dccd592c15f19229d968fd3585f1760e35ae617f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669054"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170198"
 ---
 # <a name="tune-exchange-online-performance"></a>Optimisation des performances Exchange Online
 

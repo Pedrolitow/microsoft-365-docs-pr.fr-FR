@@ -16,18 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-m365dsecops
+- tier2
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b066b248444dbd897e7c560ec58622787c5fed9a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b3d3df2fe96b0af79cafcaf5a7979d0c491bc816
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482425"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092556"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>Étape 6. Identifier les tâches de maintenance SOC
 

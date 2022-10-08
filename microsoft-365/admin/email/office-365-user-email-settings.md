@@ -7,8 +7,9 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -17,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Cet article vous offre des informations sur la gestion des paramètres pour vos utilisateurs.
-ms.openlocfilehash: ec83579e5a3c4a264f5030db1cdbf1ac6aa915fe
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 7084210b34c29e2b1b83b6a00fda1e226f732a2a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470250"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190350"
 ---
 # <a name="user-email-settings-in-microsoft-365"></a>Paramètres de la messagerie utilisateur dans Microsoft 365
 

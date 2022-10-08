@@ -8,12 +8,13 @@ f1.keywords:
 - NOCSH
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 search.appverid:
 - MOE150
@@ -21,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 15d8001e27ca2ddd365370deba1c92af389701ba
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 309fe3f423a449dbe9399245ab1fcfe4eb397a8e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850257"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68062009"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure Score
 
