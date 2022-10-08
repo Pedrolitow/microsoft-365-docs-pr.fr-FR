@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 447440dfb93d8e0c3814ae531c8feb7fc318d27f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3ef7c8890eb6027cdd45cf8b817b860e073710f3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689788"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224489"
 ---
 # <a name="overview-of-management-and-apis"></a>Vue d’ensemble de la gestion et des API
 
@@ -42,7 +44,7 @@ Reconnaissant que les environnements et les structures des clients peuvent varie
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Intégration des points de terminaison et accès au portail
 
-L’intégration des appareils est entièrement intégrée à Microsoft Endpoint Manager et Microsoft Intune pour les appareils clients et Microsoft Defender pour les appareils serveur, offrant une expérience complète de bout en bout de la configuration, du déploiement et de la surveillance. En outre, Microsoft Defender pour point de terminaison prend en charge stratégie de groupe et d’autres outils tiers utilisés pour la gestion des appareils.
+L’intégration des appareils est entièrement intégrée à Microsoft Endpoint Manager et Microsoft Intune pour les appareils clients et Microsoft Defender pour les appareils serveur, ce qui offre une expérience complète de la configuration, du déploiement et de la surveillance. En outre, Microsoft Defender pour point de terminaison prend en charge stratégie de groupe et d’autres outils tiers utilisés pour la gestion des appareils.
 
 Defender pour point de terminaison offre un contrôle précis sur ce que les utilisateurs ayant accès au portail peuvent voir et faire grâce à la flexibilité du contrôle d’accès en fonction du rôle (RBAC). Le modèle RBAC prend en charge toutes les versions de la structure des équipes de sécurité :
 

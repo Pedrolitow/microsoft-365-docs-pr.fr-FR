@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Connectez-vous à votre compte d’administrateur Microsoft 365 pour définir certains mots de passe utilisateur individuels pour qu’ils n’expirent jamais à l’aide d’Azure AD PowerShell.
-ms.openlocfilehash: aad32365ee8b8344cab1fe6eedd63a404bb27187
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 27a5e5955267eb1a012c6dcb7618582b5256dc11
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662308"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191582"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Configurer les mots de passe utilisateur pour qu'ils n'expirent jamais
 

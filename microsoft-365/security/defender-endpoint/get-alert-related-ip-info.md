@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 16b2c38722285f157849fbc9d6a25e0e4346121e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e128f48574619f4e73df21ed855f4f5d3bd55322
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696306"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207311"
 ---
 # <a name="get-alert-related-ips-information-api"></a>Obtenir l’API d’informations sur les adresses IP liées aux alertes
 
@@ -62,6 +64,8 @@ Déléguée (compte professionnel ou scolaire)|Ip.Read.All|« Lire les profils d
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md)
 > - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ## <a name="http-request"></a>Requête HTTP
 

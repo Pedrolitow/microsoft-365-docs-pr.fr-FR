@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender Antivirus Device Health exporte les rapports d’intégrité de l’antivirus de l’appareil
-description: Présente les méthodes permettant de récupérer les détails de l’intégrité des appareils antivirus Microsoft Defender.
+title: Microsoft Defender rapports d’intégrité antivirus sur l’appareil d’exportation Antivirus Device Health
+description: Présente les méthodes permettant de récupérer Microsoft Defender détails d’intégrité de l’appareil Antivirus.
 keywords: api, api graphe, api prises en charge, get, api d’intégrité de l’appareil, Microsoft Defender pour point de terminaison api de rapport api rapports microsoft defender, api de création de rapports microsoft defender pour point de terminaison, api de création de rapports Windows Defender, api de création de rapports Defender pour point de terminaison, API de rapport Windows Defender
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -12,17 +12,19 @@ ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 56568bc702ffba5e762df877d2ed3f7f80a6b0f4
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 53562757025102c4f62e7d22b246892e5f54da56
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731203"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207443"
 ---
 # <a name="export-device-antivirus-health-report"></a>Exportation du rapport de santé antivirus de l'appareil
 
@@ -41,7 +43,7 @@ ms.locfileid: "67731203"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Cette API dispose de deux méthodes pour récupérer les détails d’intégrité de l’antivirus antivirus Microsoft Defender :
+Cette API dispose de deux méthodes pour récupérer Microsoft Defender détails d’intégrité de l’antivirus antivirus :
 
 - **Méthode 1 :** [1 Exporter la **réponse**\) JSON de rapport \( d’intégrité](#1-export-health-reporting-json-response) La méthode extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour _les petites organisations avec moins de 100 K d’appareils_. La réponse étant paginée, vous pouvez utiliser le \@champ odata.nextLink de la réponse pour extraire les résultats suivants.
 
@@ -70,7 +72,7 @@ Les données collectées à l’aide de la _« réponse JSON_ ou _par le biais d
 
 ### <a name="11-api-method-description"></a>Description de la méthode d’API 1.1
 
-Cette API récupère une liste des détails d’intégrité de l’antivirus antivirus Microsoft Defender. Retourne une table avec une entrée pour chaque combinaison unique de :
+Cette API récupère une liste de Microsoft Defender détails d’intégrité de l’antivirus antivirus. Retourne une table avec une entrée pour chaque combinaison unique de :
 
 - DeviceId
 - Nom du périphérique

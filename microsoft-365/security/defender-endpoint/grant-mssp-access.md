@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3eab14df6abf321a1587d3684e18c158ca771980
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 280bac711494cd06d5fe54784e0f7d27b32e5945
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692704"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224533"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Accorder l’accès au fournisseur de services de sécurité managé (MSSP) (préversion)
 

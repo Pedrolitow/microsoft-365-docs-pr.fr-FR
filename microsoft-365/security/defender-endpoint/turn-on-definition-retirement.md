@@ -1,7 +1,7 @@
 ---
-title: Activer la mise hors service des définitions pour l’antivirus Microsoft Defender
-description: Activez la mise hors service des définitions pour l’antivirus Microsoft Defender.
-keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, mise hors service des définitions
+title: Activer la mise hors service des définitions pour Microsoft Defender Antivirus
+description: Activez la mise hors service des définitions pour Microsoft Defender Antivirus.
+keywords: Microsoft Defender antivirus, logiciel anti-programme malveillant, sécurité, défenseur, mise hors service des définitions
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.service: microsoft-365-security
@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 1401c9b58ee91d51fbf4a37463fb1f75c542d154
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0507707d946ea14be53a12c7e45fc8f9b317e749
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684274"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222713"
 ---
 # <a name="turn-on-definition-retirement"></a>Activer la mise hors service des définitions
 
@@ -39,7 +41,7 @@ Vous pouvez configurer la mise hors service des définitions à l’aide de stra
 
 1. Sur votre point de terminaison de gestion stratégie de groupe, ouvrez la [console de gestion stratégie de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Accédez à Computer **Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Network Inspection System**.
+2. Accédez aux modèles **d’administration** de **configuration** \> de l’ordinateur **composants** \> \> Windows Microsoft Defender **système d’inspection réseau** **antivirus**\>.
 
 3. Sélectionnez **Activer la mise hors service des définitions**. Par défaut, cette stratégie est activée. Si la définition **n’est pas configurée**, la mise hors service des définitions est activée.
 

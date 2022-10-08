@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 62df7a7c7bbf61c176d69b115f88bddae09fa04f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 4d8c60e9323b7260ab73635753bea5a4ad5079ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479397"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68087231"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 

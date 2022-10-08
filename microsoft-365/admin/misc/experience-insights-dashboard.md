@@ -5,15 +5,17 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Obtenez un rapport périodique sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour plus d’informations.
-ms.openlocfilehash: e95fee4f393d9c73228b0e2f4c23fb7abedaf3a3
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 54c0525c4cff5d02c18aa3a2a4defaf4a9e71ba6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811179"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191054"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Tableau de bord Microsoft 365 Experience Insights
 
@@ -44,15 +46,15 @@ Les informations du graphique vous donnent un aperçu des applications et des se
 
 :::image type="content" source="../../media/apps-services-latest.png" alt-text="Capture d’écran : image montrant les données du graphique applications et services":::
 
-**Les utilisateurs actifs** vous indiquent le nombre total d’utilisateurs uniques qui ont effectué au moins une action intentionnelle, comme l’ouverture d’un fichier, dans l’application sur la période sélectionnée. Utilisez ces données pour vous assurer que vous atteignez vos objectifs d’adoption. [Si vous souhaitez en savoir plus](../activity-reports/active-users-ww.md)
+**Les utilisateurs actifs** vous indiquent le nombre total d’utilisateurs uniques qui ont effectué au moins une action intentionnelle, comme l’ouverture d’un fichier, dans l’application sur la période sélectionnée. Utilisez ces données pour vous assurer que vous atteignez vos objectifs d’adoption. [En savoir plus](../activity-reports/active-users-ww.md)
 
 **L’utilisation** des produits est le pourcentage de personnes qui utilisent activement les produits qui sont activés pour leur utilisation. Utilisez ces données pour prendre des décisions sur l’emplacement d’optimisation des affectations de produits.
 
-**Commentaires dans le produit** Nombre total de réponses de commentaires provenant de l’application ou du service qui ont été lancées et envoyées par vos utilisateurs. Utilisez ces données pour évaluer la réussite et la satisfaction des utilisateurs avec les applications. [Si vous souhaitez en savoir plus](feedback-user-control.md)
+**Commentaires dans le produit** Nombre total de réponses de commentaires provenant de l’application ou du service qui ont été lancées et envoyées par vos utilisateurs. Utilisez ces données pour évaluer la réussite et la satisfaction des utilisateurs avec les applications. [En savoir plus](feedback-user-control.md)
 
-Le **volume de réponses aux enquêtes NPS** correspond au nombre total de réponses à l’enquête NPS (Net Promoter Score). Par défaut, Microsoft envoie l’enquête à 5 % de vos utilisateurs et demande « Recommanderiez-vous ce produit ? » Utilisez ces données pour évaluer la satisfaction des utilisateurs et voir ce que les utilisateurs disent de l’application. [Si vous souhaitez en savoir plus](../manage/manage-feedback-product-insights.md)
+Le **volume de réponses aux enquêtes NPS** correspond au nombre total de réponses à l’enquête NPS (Net Promoter Score). Par défaut, Microsoft envoie l’enquête à 5 % de vos utilisateurs et demande « Recommanderiez-vous ce produit ? » Utilisez ces données pour évaluer la satisfaction des utilisateurs et voir ce que les utilisateurs disent de l’application. [En savoir plus](../manage/manage-feedback-product-insights.md)
 
-**Les vues d’article d’aide** sont le nombre total de vues d’articles d’aide microsoft et de vidéos de formation sur l’application. Utilisez ces données pour rechercher des sujets d’intérêt et partager la formation suggérée avec vos utilisateurs. [Si vous souhaitez en savoir plus](experience-insights-help-articles.md)
+**Les vues d’article d’aide** sont le nombre total de vues d’articles d’aide microsoft et de vidéos de formation sur l’application. Utilisez ces données pour rechercher des sujets d’intérêt et partager la formation suggérée avec vos utilisateurs. [En savoir plus](experience-insights-help-articles.md)
 
 > [!NOTE]
 > Vous pouvez filtrer les données du graphique pour les tendances des 30 derniers jours, 90 jours ou 180 jours.
@@ -81,7 +83,7 @@ Les détails NPS vous permettent de voir les promoteurs, les passifs et les oppo
 
 ### <a name="teams-help-article-example"></a>Exemple d’article d’aide Teams
 
-Pour la première fois, vous pouvez maintenant voir les articles que vos utilisateurs consomment sur Support.Microsoft.com com ou via les expériences d’aide microsoft 365 dans l’application. Vous pouvez voir les articles les plus consultés pour l’application ou le service spécifique de votre organisation, le nombre de personnes qui consultent l’application et afficher un aperçu de l’article en ligne. Il peut s’agir d’un excellent moyen d’identifier ce que vos utilisateurs essaient de faire et où ils peuvent avoir des difficultés. Étant donné que tous les utilisateurs ne recherchent pas d’aide, il s’agit d’une bonne indication du contenu qui peut être bénéfique pour un ensemble plus large d’utilisateurs de l’organisation. [Si vous souhaitez en savoir plus](experience-insights-help-articles.md)
+Pour la première fois, vous pouvez maintenant voir les articles que vos utilisateurs consomment sur Support.Microsoft.com com ou via les expériences d’aide microsoft 365 dans l’application. Vous pouvez voir les articles les plus consultés pour l’application ou le service spécifique de votre organisation, le nombre de personnes qui consultent l’application et afficher un aperçu de l’article en ligne. Il peut s’agir d’un excellent moyen d’identifier ce que vos utilisateurs essaient de faire et où ils peuvent avoir des difficultés. Étant donné que tous les utilisateurs ne recherchent pas d’aide, il s’agit d’une bonne indication du contenu qui peut être bénéfique pour un ensemble plus large d’utilisateurs de l’organisation. [En savoir plus](experience-insights-help-articles.md)
 
 :::image type="content" source="../../media/experience-insights-teams-help-article2.png" alt-text="Capture d’écran : image montrant le nombre d’articles d’aide lus et le produit Microsoft 365 correspondant":::
 

@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: bdc3d7c2f78b1f94c0f65950a8b36519a2e520a6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+- m365-security
+- tier2
+ms.openlocfilehash: 7fa78f808bf8a49c32ddcc7b54b2174beeaaeac0
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521914"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223109"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer et configurer Microsoft Defender pour point de terminaison Plan 1
 
@@ -54,8 +54,8 @@ Le tableau suivant répertorie les exigences de base pour Defender pour point de
 |:---|:---|
 | Conditions d'octroi de licence | Defender pour point de terminaison Plan 1 (autonome ou dans le cadre de Microsoft 365 E3 ou A3) |
 | Configuration requise pour le navigateur | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
-| Systèmes d’exploitation | Windows 11 ou Windows 10, version 1709 ou ultérieure <br/>macOS (les trois versions les plus récentes sont prises en charge) <br/>iOS <br/>Système d’exploitation Android <br/><br/>Notez que la version autonome de Defender pour point de terminaison Plan 1 n’inclut pas de licences serveur. Pour intégrer des serveurs, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus. Consultez [vue d’ensemble de Microsoft Defender pour serveurs](/azure/defender-for-cloud/defender-for-servers-introduction). |
-| Datacenter | L’un des emplacements de centre de données suivants : <br/>- Union européenne <br/>- Royaume-Uni <br/>- États-Unis |
+| Systèmes d’exploitation | Windows 11 ou Windows 10, version 1709 ou ultérieure <br/>macOS (les trois versions les plus récentes sont prises en charge) <br/>iOS <br/>Système d’exploitation Android <br/><br/>Notez que la version autonome de Defender pour point de terminaison Plan 1 n’inclut pas de licences serveur. Pour intégrer des serveurs, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus. Consultez [vue d’ensemble de Microsoft Defender pour les serveurs](/azure/defender-for-cloud/defender-for-servers-introduction). |
+| Datacenter | L’un des emplacements de centre de données suivants : <br/>- Union européenne <br/>-Royaume-Uni <br/>- États-Unis |
 
 
 ## <a name="plan-your-deployment"></a>Planifier votre déploiement
@@ -139,7 +139,7 @@ Pour configurer votre protection de nouvelle génération dans Microsoft Endpoin
 
 3. Définissez ou modifiez les paramètres de configuration de votre antivirus. Besoin d’aide ? Reportez-vous aux ressources suivantes : <br/>
 
-   - [Paramètres de Windows 10 stratégie antivirus Microsoft Defender dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
+   - [Paramètres de la stratégie antivirus Windows 10 Microsoft Defender dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configurer Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 4. Lorsque vous avez terminé de spécifier vos paramètres, **choisissez Vérifier + enregistrer**.
@@ -275,7 +275,7 @@ Grâce à la protection réseau, vous pouvez protéger votre organisation contre
 
 4. Sous l’onglet **De base** , nommez la stratégie et ajoutez une description. Sélectionnez **Suivant**. 
 
-5. Sous l’onglet **Paramètres de configuration** , développez **Microsoft Defender Exploit Guard**, puis développez **le filtrage réseau**.
+5. Sous l’onglet **Paramètres de configuration**, développez **Microsoft Defender Exploit Guard**, puis développez **le filtrage réseau**.
 
    Définissez **la protection réseau** sur **Activer**. (Vous pouvez également choisir **Audit** pour voir comment la protection réseau fonctionnera dans votre environnement dans un premier temps.)
 
@@ -359,17 +359,17 @@ Pour configurer les paramètres de pare-feu de base, procédez comme suit :
 
 2. Choisissez **Pare-feu** **de sécurité** >  de point de terminaison, puis **choisissez + Créer une stratégie**.
 
-3. Sélectionnez une plateforme, telle que **Windows 10 et versions ultérieures**, sélectionnez le profil **pare-feu Microsoft Defender**, puis choisissez **Créer**. 
+3. Sélectionnez une plateforme, par exemple **Windows 10 et versions ultérieures**, sélectionnez le profil **de pare-feu Microsoft Defender**, puis choisissez **Créer**. 
 
 4. Sous l’onglet **Informations de base** , spécifiez un nom et une description, puis choisissez **Suivant**.
 
-5. Développez le **Pare-feu Microsoft Defender**, puis faites défiler vers le bas de la liste.
+5. Développez **Microsoft Defender Pare-feu**, puis faites défiler vers le bas de la liste.
 
 6. Définissez chacun des paramètres suivants sur **Oui** :
 
-   - **Activer le Pare-feu Microsoft Defender pour les réseaux de domaine** 
-   - **Activer le Pare-feu Microsoft Defender pour les réseaux privés**
-   - **Activer le Pare-feu Microsoft Defender pour les réseaux publics**
+   - **Activer le pare-feu Microsoft Defender pour les réseaux de domaine** 
+   - **Activer le pare-feu Microsoft Defender pour les réseaux privés**
+   - **Activer le pare-feu Microsoft Defender pour les réseaux publics**
    
    Passez en revue la liste des paramètres sous chacun des réseaux de domaine, des réseaux privés et des réseaux publics. Vous pouvez les laisser définis sur **Non configurés** ou les modifier en fonction des besoins de votre organisation.
 

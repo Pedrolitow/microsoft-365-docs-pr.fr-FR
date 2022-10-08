@@ -14,15 +14,17 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3c32a0bcde769084055b550431e14f80cff3d477
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a4af85a358d51b039d9a8596bd911eaf12f3d54f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691912"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231613"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Intégrer des appareils Windows dans Azure Virtual Desktop
 
@@ -58,7 +60,7 @@ Il existe plusieurs façons d’intégrer un ordinateur hôte AVD :
 
 - Exécutez le script dans l’image d’or (ou à partir d’un emplacement partagé) au démarrage.
 - Utilisez un outil de gestion pour exécuter le script.
-- Par [le biais de l’intégration à Microsoft Defender pour le cloud](azure-server-integration.md)
+- Via [l’intégration à Microsoft Defender pour le cloud](azure-server-integration.md)
 
 #### <a name="scenario-1-using-local-group-policy"></a>*Scénario 1 : Utilisation d’une stratégie de groupe locale*
 
@@ -157,7 +159,7 @@ En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommando
 
 #### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Remarque sur les licences : lorsque vous utilisez Windows Enterprise multisession, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence par le biais de Microsoft Defender pour point de terminaison (par utilisateur), Windows Enterprise E5, Microsoft 365 Security ou Microsoft 365 E5, ou de disposer d’une licence de machine virtuelle par le biais de Microsoft Defender pour le cloud.
+Remarque sur les licences : lorsque vous utilisez Windows Enterprise multisession, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence par le biais de Microsoft Defender pour point de terminaison (par utilisateur), Windows Enterprise E5, Microsoft 365 Security ou Microsoft 365 E5, ou de faire passer la machine virtuelle sous licence par le biais d’une licence Microsoft Defender pour le cloud.
 Les exigences de licence pour Microsoft Defender pour point de terminaison sont disponibles à l’adresse suivante : [Conditions de licence](minimum-requirements.md#licensing-requirements).
 
 ### <a name="known-issues-and-limitations"></a>Problèmes connus et conseils

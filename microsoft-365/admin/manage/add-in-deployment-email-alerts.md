@@ -7,7 +7,7 @@ manager: aljerabe
 ms.reviewer: akshah
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MET150
 description: Envoyez des e-mails pour alerter les utilisateurs sur les compléments Office que vous avez déployés sur eux à partir de la page Applications intégrées.
 ROBOTS: NOINDEX
-ms.openlocfilehash: c815011e5137dcf2725d13784126d0ad8f1fe8bb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 7bd654ef5840a45d29eba9864380e545a071a853
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66991992"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191142"
 ---
 # <a name="add-in-deployment-email-alerts"></a>Alertes par e-mail de déploiement de complément
 

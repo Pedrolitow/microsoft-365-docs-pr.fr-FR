@@ -1,6 +1,6 @@
 ---
 title: Activer la protection du réseau
-description: Activez la protection réseau avec نهج المجموعة, PowerShell ou Mobile 裝置管理 et Configuration Manager.
+description: Activez la protection réseau avec stratégie de groupe, PowerShell ou Mobile Gestion des appareils et Configuration Manager.
 keywords: Protection réseau, exploits, site web malveillant, ip, domaine, domaines, activer, activer
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -13,14 +13,16 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0523ba3cd0e9d32cd58675ead39fdabc1718b5c0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 99bf1ffbb7f356434eaaa469cf9e4b7201c7b6e0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742956"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200316"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -44,7 +46,7 @@ ms.locfileid: "67742956"
 
 [La protection réseau](network-protection.md) permet d’empêcher les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux susceptibles d’héberger des escroqueries, des exploits et d’autres contenus malveillants sur Internet. Vous pouvez [auditer la protection réseau](evaluate-network-protection.md) dans un environnement de test pour voir quelles applications seraient bloquées avant d’activer la protection réseau.
 
-[Mer informasjon sur les options de configuration du filtrage réseau.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[En savoir plus sur les options de configuration du filtrage réseau.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>Vérifier si la protection réseau est activée
 
@@ -98,14 +100,14 @@ Activez la protection réseau à l’aide de l’une des méthodes suivantes :
 
 Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) pour activer ou désactiver la protection réseau ou activer le mode d’audit.
 
-[Mettez à jour la plateforme anti-programme malveillant Microsoft Defender vers la dernière version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) avant d’activer ou de désactiver la protection réseau ou d’activer le mode d’audit.
+[Mettez à jour Microsoft Defender plateforme anti-programme malveillant vers la dernière version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) avant d’activer ou de désactiver la protection réseau ou d’activer le mode d’audit.
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
-#### <a name="microsoft-defender-for-endpoint-baseline-method"></a>méthode de base de référence Pertahanan Microsoft untuk Titik Akhir
+#### <a name="microsoft-defender-for-endpoint-baseline-method"></a>méthode de base de référence Microsoft Defender pour point de terminaison
 
 1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager (https://endpoint.microsoft.com).
-2. Accédez aux **bases de référence de sécurité** >  des  >  points de terminaison **Pertahanan Microsoft untuk Titik Akhir Base de référence**.
+2. Accédez aux **bases de référence de sécurité** >  des  >  points de terminaison **Microsoft Defender pour point de terminaison Base de référence**.
 3. Sélectionnez **Créer un profil**, fournissez un nom pour votre profil, puis sélectionnez **Suivant**.
 4. Dans la section **Paramètres de configuration** , accédez aux **règles de réduction de la surface d’attaque** > définir **Bloquer**, **Activer** ou **Auditer** pour **activer la protection réseau**. Sélectionnez **Suivant**.
 5. Sélectionnez les **balises d’étendue** et **les affectations** appropriées selon les besoins de votre organisation.
@@ -116,7 +118,7 @@ Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy
 2. Accéder à **l’antivirus de sécurité de point de terminaison** > 
 3. Sélectionner **Créer une stratégie**
 4. Dans le menu volant **Créer une stratégie**, choisissez **Windows 10, Windows 11 et Windows Server** dans la liste **des plateformes**.
-5. Choisissez **l’antivirus Microsoft Defender** dans la liste **des profils** , puis choisissez **Créer**
+5. Choisissez **Microsoft Defender Antivirus** dans la liste **des profils**, puis choisissez **Créer**
 6. Indiquez un nom pour votre profil, puis sélectionnez **Suivant**.
 7. Dans la section **Paramètres de configuration** , sélectionnez **Désactivé**, **Activé (mode bloc)** ou **Activé (mode audit)** pour **Activer la protection réseau**, puis **Suivant**.
 8. Sélectionnez les **affectations** et **balises d’étendue** appropriées, selon les besoins de votre organisation.
@@ -134,7 +136,7 @@ Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy
 
 4. Accédez à **Endpoint Protection** > **Basics**, indiquez un nom pour votre profil, puis sélectionnez **Suivant**.
 
-5. Dans la section **Paramètres de configuration** , accédez à **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit**. Sélectionnez **Suivant**.
+5. Dans la section **Paramètres de configuration**, accédez à **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit**. Sélectionnez **Suivant**.
 
 6. Sélectionnez les **balises d’étendue**, **les affectations** et **les règles d’applicabilité** appropriées, selon les besoins de votre organisation. Les administrateurs peuvent définir d’autres exigences.
 
@@ -148,14 +150,14 @@ Utilisez la procédure suivante pour activer la protection réseau sur les ordin
 
     *-Ou-*
 
-    Sur un ordinateur de gestion نهج المجموعة joint à un domaine, ouvrez la [console de gestion نهج المجموعة](https://technet.microsoft.com/library/cc731212.aspx), cliquez avec le bouton droit sur l’objet نهج المجموعة que vous souhaitez configurer, puis sélectionnez **Modifier**.
+    Sur un ordinateur de gestion stratégie de groupe joint à un domaine, ouvrez la [console de gestion stratégie de groupe](https://technet.microsoft.com/library/cc731212.aspx), cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier**.
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence sur **les composants** \> Windows **antivirus** \> Microsoft Defender **Windows Defender protection du réseau Exploit Guard**\>.
+3. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
    > [!NOTE]
-   > Sur les versions antérieures de Windows, le chemin de stratégie de groupe peut indiquer « Antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
+   > Sur les versions antérieures de Windows, le chemin d’accès à la stratégie de groupe peut indiquer « antivirus Windows Defender » au lieu de « antivirus Microsoft Defender ».
 
 4. Double-cliquez sur le paramètre **Empêcher les utilisateurs et les applications d’accéder aux sites web dangereux** et définissez l’option **sur Activé**. Dans la section Options, vous devez spécifier l’une des options suivantes :
     - **Bloquer** : les utilisateurs ne peuvent pas accéder à des adresses IP et des domaines malveillants.
@@ -163,10 +165,10 @@ Utilisez la procédure suivante pour activer la protection réseau sur les ordin
     - **Mode Audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal des événements Windows. Toutefois, l’utilisateur ne sera pas bloqué pour accéder à l’adresse.
 
    > [!IMPORTANT]
-   > Pour activer entièrement la protection réseau, vous devez définir l’option نهج المجموعة **sur Activé** et également sélectionner **Bloquer** dans le menu déroulant des options.
+   > Pour activer entièrement la protection réseau, vous devez définir l’option stratégie de groupe **sur Activé** et également sélectionner **Bloquer** dans le menu déroulant options.
 
    > [!NOTE]
-   > Facultatif : suivez les étapes décrites dans [Vérifier si la protection réseau est activée](#check-if-network-protection-is-enabled) pour vérifier que vos paramètres de نهج المجموعة sont corrects.
+   > Facultatif : suivez les étapes décrites dans [Vérifier si la protection réseau est activée](#check-if-network-protection-is-enabled) pour vérifier que vos paramètres de stratégie de groupe sont corrects.
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 

@@ -6,21 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9a06824d606cc84e5e552f99a2d2d0b9c0652e04
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ac09bb1478ea3b8a0dea18ad38388d5960a18240
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692044"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231767"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
@@ -47,10 +49,10 @@ Pour intégrer des points de terminaison clients Windows de bas niveau à Defend
 - [Configurer et mettre à jour System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients)
 - [Installer et configurer Microsoft Monitoring Agent (MMA) pour signaler des données de capteur](#install-and-configure-microsoft-monitoring-agent-mma)
 
-Pour Windows Server 2008 R2 SP1, vous avez la possibilité [d’intégrer via Microsoft Defender pour cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
+Pour Windows Server 2008 R2 SP1, vous avez la possibilité [d’intégrer via Microsoft Defender pour le cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Une licence serveur autonome Defender pour point de terminaison est requise, par nœud, pour intégrer un serveur Windows via Microsoft Monitoring Agent (option 1). Une licence Microsoft Defender pour serveurs est également nécessaire, par nœud, pour intégrer un serveur Windows via Microsoft Defender pour le cloud (option 2), consultez [les fonctionnalités prises en charge disponibles dans Microsoft Defender pour cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
+> Une licence serveur autonome Defender pour point de terminaison est requise, par nœud, pour intégrer un serveur Windows via Microsoft Monitoring Agent (option 1). Une Microsoft Defender de licence pour les serveurs est également requise, par nœud, pour intégrer un serveur Windows via Microsoft Defender for Cloud (option 2), consultez [les fonctionnalités prises en charge disponibles dans Microsoft Defender for Cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’il est correctement intégré au service. Pour plus d’informations, consultez [Exécuter un test de détection sur un point de terminaison Defender pour point de terminaison nouvellement intégré](run-detection-test.md).
@@ -66,7 +68,7 @@ Les étapes suivantes sont requises pour activer cette intégration :
 
 - Installer la [mise à jour de la plateforme anti-programme malveillant de janvier 2017 pour les clients Endpoint Protection](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 - Configurer l’appartenance du service de protection cloud du client SCEP au paramètre **Avancé**
-- Configurez votre réseau pour autoriser les connexions au cloud antivirus Microsoft Defender. Pour plus d’informations, consultez [Configurer et valider les connexions réseau de l’Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+- Configurez votre réseau pour autoriser les connexions au cloud antivirus Microsoft Defender. Pour plus d’informations, consultez [Configurer et valider Microsoft Defender connexions réseau antivirus](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Installer et configurer Microsoft Monitoring Agent (MMA)
 
@@ -137,9 +139,9 @@ Une fois l’opération terminée, vous devez voir les serveurs Windows intégr�
 
 2. Sélectionnez **Windows Server 2008 R2 SP1** comme système d’exploitation.
 
-3. Cliquez **sur Serveurs intégrés dans Microsoft Defender pour cloud**.
+3. Cliquez sur **Serveurs intégrés dans Microsoft Defender pour le cloud**.
 
-4. Suivez les instructions d’intégration dans [Microsoft Defender pour point de terminaison avec Microsoft Defender pour cloud](/azure/security-center/security-center-wdatp) et si vous utilisez Azure ARC, suivez les instructions d’intégration dans [l’activation de l’intégration Microsoft Defender pour point de terminaison](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. Suivez les instructions d’intégration dans [Microsoft Defender pour point de terminaison avec Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) et si vous utilisez Azure ARC, suivez les instructions d’intégration dans [l’activation de intégration Microsoft Defender pour point de terminaison](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 Une fois les étapes d’intégration terminées, vous devez [configurer et mettre à jour System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
@@ -153,18 +155,18 @@ Une fois les étapes d’intégration terminées, vous devez [configurer et mett
 
 ## <a name="verify-onboarding"></a>Vérifier l’intégration
 
-Vérifiez que l’Antivirus Microsoft Defender et les Microsoft Defender pour point de terminaison sont en cours d’exécution. 
+Vérifiez que Microsoft Defender Antivirus et Microsoft Defender pour point de terminaison sont en cours d’exécution. 
 
 > [!NOTE]
-> L’exécution de l’Antivirus Microsoft Defender n’est pas obligatoire, mais elle est recommandée. Si un autre produit du fournisseur d’antivirus est la solution principale de protection des points de terminaison, vous pouvez exécuter l’antivirus Defender en mode passif. Vous pouvez uniquement confirmer que le mode passif est activé après avoir vérifié que Microsoft Defender pour point de terminaison capteur (SENSE) est en cours d’exécution. 
+> L’exécution Microsoft Defender Antivirus n’est pas obligatoire, mais elle est recommandée. Si un autre produit du fournisseur d’antivirus est la solution principale de protection des points de terminaison, vous pouvez exécuter l’antivirus Defender en mode passif. Vous pouvez uniquement confirmer que le mode passif est activé après avoir vérifié que Microsoft Defender pour point de terminaison capteur (SENSE) est en cours d’exécution. 
 
-1. Exécutez la commande suivante pour vérifier que l’Antivirus Microsoft Defender est installé :
+1. Exécutez la commande suivante pour vérifier que Microsoft Defender Antivirus est installé :
 
    ```sc.exe query Windefend```
 
-    Si le résultat est « Le service spécifié n’existe pas en tant que service installé », vous devez installer l’antivirus Microsoft Defender. Pour plus d’informations, consultez [l’Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-windows.md).
+    Si le résultat est « Le service spécifié n’existe pas en tant que service installé », vous devez installer Microsoft Defender Antivirus. Pour plus d’informations, consultez [Microsoft Defender Antivirus dans Windows 10](microsoft-defender-antivirus-windows.md).
 
-    Pour plus d’informations sur l’utilisation de stratégie de groupe pour configurer et gérer l’antivirus Microsoft Defender sur vos serveurs Windows, consultez [Utiliser stratégie de groupe paramètres pour configurer et gérer l’antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
+    Pour plus d’informations sur l’utilisation de stratégie de groupe pour configurer et gérer Microsoft Defender Antivirus sur vos serveurs Windows, consultez [Utiliser stratégie de groupe paramètres pour configurer et gérer Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
 
 2. Exécutez la commande suivante pour vérifier que Microsoft Defender pour point de terminaison est en cours d’exécution :

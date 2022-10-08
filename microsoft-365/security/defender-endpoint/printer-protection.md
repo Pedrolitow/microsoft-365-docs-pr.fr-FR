@@ -13,15 +13,17 @@ manager: dansimp
 audience: ITPro
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: f6496804e8ea8c427d2dbce7ab677f206a5bcf38
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c93cb1d3280976337a6174f15c2a668b9d84091b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681580"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231745"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 

@@ -13,18 +13,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.date: 04/27/2022
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 3d05807b0f6bd16b8f1a035411d8144840ef3832
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: efe0701a8108e1fe25991bbad4f7fb82af98b6ad
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690353"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207289"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>MICROSOFT DEFENDER POUR POINT DE TERMINAISON API à l’aide de PowerShell
 

@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c163244cae52455718049195cd198ee403abd522
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 749e0a4646a467a0d8c13b6252a902a51bc4f3bc
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688746"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224423"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide d’une réponse dynamique
 
@@ -95,6 +97,8 @@ Avant de pouvoir lancer une session sur un appareil, vérifiez que vous rempliss
 - **Vérifiez que le niveau de correction Automation est affecté à l’appareil**.
 
   Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne serez pas en mesure d’établir une session Live Response à un membre de ce groupe.
+  > [!NOTE]
+  > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2. 
 
   Vous recevrez l’erreur suivante :
 

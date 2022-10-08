@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez les abonnements Microsoft 365 dont votre organisation dispose en accédant à la page Vos produits.
 ms.date: 01/21/2021
-ms.openlocfilehash: 9940062d3d36ae24ab98dcb13483910ff39f57bc
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 0912e512aaf89f8ef0deb385c376848cfa96ad09
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662198"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191494"
 ---
 # <a name="which-microsoft-365-subscription-do-i-have"></a>Quel abonnement Microsoft 365 ai-je ?
 

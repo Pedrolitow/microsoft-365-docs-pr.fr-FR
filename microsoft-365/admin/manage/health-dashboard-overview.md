@@ -5,19 +5,20 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection: scotvorg
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
 description: Obtenez une vue d’ensemble du tableau de bord Microsoft 365 Health et de son rôle pour vous tenir informé de l’intégrité de votre organisation Microsoft 365.
-ms.openlocfilehash: 8ee088f2611cf57576897dc4553ac3f21076f922
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 4ab0fde685d21cde426e6f9985d5ce7b3697d098
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66992088"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199986"
 ---
 # <a name="microsoft-365-health-dashboard"></a>Tableau de bord Microsoft 365 Health
 

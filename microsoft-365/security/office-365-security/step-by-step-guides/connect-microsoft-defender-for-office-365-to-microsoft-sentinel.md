@@ -14,15 +14,18 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 search.appverid: met150
-ms.openlocfilehash: 019dd5ff70dae2041955882ed0c63b13f20015cd
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: dcc7d486b41d6a60a0fbda1c8398e81e8516d093
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799305"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222867"
 ---
 # <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>Connecter Microsoft Defender pour Office 365 à Microsoft Sentinel
 

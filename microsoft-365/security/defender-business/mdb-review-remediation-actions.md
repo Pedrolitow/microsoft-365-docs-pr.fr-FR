@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: f31f478fda2f8f2540dd524c2dbaf1113801dca8
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 064ad2551899047cd87d65b4b1d4e9587bb1c952
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597997"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097333"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Passer en revue les actions de correction dans le Centre d’actions
 

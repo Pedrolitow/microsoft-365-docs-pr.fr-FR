@@ -11,18 +11,20 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 09/09/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 45f2ca6ee7060403d6ccfa98e90b5e01256bfed4
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 05cf5bd278f5ca88c5802891dd6f4d584b7e4d27
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799245"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207597"
 ---
 # <a name="deploy-and-manage-removable-storage-access-control-using-intune"></a>Déployer et gérer des Access Control de stockage amovibles à l’aide de Intune
 

@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 66abe1f492ee5b79b1ee1ec8bff0942eacb5d4c2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c1d909699cdcbf993351a5232f2b12cbf84b5ca1
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687216"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222911"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS
 
@@ -102,12 +103,12 @@ Cette configuration est disponible à la fois pour les appareils inscrits (GPM) 
 >[!NOTE]
 >La protection réseau sur Microsoft Defender pour point de terminaison est désormais en préversion publique. Les informations suivantes concernent la préversion du produit qui peut être sensiblement modifiée avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-La protection réseau dans Microsoft Defender pour point de terminaison est activée par défaut. Les administrateurs peuvent utiliser les étapes suivantes pour configurer la prise en charge mam pour la protection réseau sur les appareils iOS.
+La protection réseau dans Microsoft Defender pour le point de terminaison est activée par défaut. Les administrateurs peuvent utiliser les étapes suivantes pour configurer la prise en charge mam pour la protection réseau sur les appareils iOS.
 
 1. Dans Microsoft Endpoint Manager Administration, accédez aux stratégies de configuration d’applications > App. Créez une stratégie de configuration d’application.
    :::image type="content" source="images/addiosconfig.png" alt-text="Ajouter une stratégie de configuration." lightbox="images/addiosconfig.png":::
 
-2. Fournissez un nom et une description pour identifier de manière unique la stratégie. Cliquez ensuite sur « Sélectionner des applications publiques », puis choisissez « Microsoft Defender » pour la plateforme iOS/IPadOS :::image type="content" source="images/nameiosconfig.png" alt-text="Nommez la configuration." lightbox="images/nameiosconfig.png":::
+2. Fournissez un nom et une description pour identifier de manière unique la stratégie. Cliquez ensuite sur « Sélectionner des applications publiques », puis choisissez « Microsoft Defender » pour la configuration de la plateforme iOS/IPadOS:::image type="content" source="images/nameiosconfig.png" alt-text="." lightbox="images/nameiosconfig.png":::
 
 3. Dans la page Paramètres, ajoutez « DefenderNetworkProtectionEnable » comme clé et valeur « false » pour désactiver la protection réseau. (La protection réseau est activée par défaut) :::image type="content" source="images/addiosconfigvalue.png" alt-text="Ajouter une valeur de configuration." lightbox="images/addiosconfigvalue.png":::
 

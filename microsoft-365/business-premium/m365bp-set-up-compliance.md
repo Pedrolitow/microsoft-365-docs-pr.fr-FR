@@ -1,5 +1,5 @@
 ---
-title: Configurer les fonctionnalités de conformité
+title: Configurer des fonctionnalités de conformité dans Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -11,20 +11,23 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
+ms.collection:
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Configurez des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
-ms.openlocfilehash: 447ceea0ca04a0cd273a825cebb6551fe82d69a4
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: d19f82c350a7c6c9514b46e1cb7dcf9c7e6bb296
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738836"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096520"
 ---
-# <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
+# <a name="set-up-compliance-features-in-microsoft-365-business-premium"></a>Configurer des fonctionnalités de conformité dans Microsoft 365 Business Premium
 
 
 Consultez l’[aide de Microsoft 365 Petite Entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.

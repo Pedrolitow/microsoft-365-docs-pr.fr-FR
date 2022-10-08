@@ -11,16 +11,18 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 38b4b70e3ad2c1de098f1b608d0470faa51e1604
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+- m365-security
+- tier1
+ms.openlocfilehash: cc2b2f0a70cc5351292204b7e8d54104c7a9f86e
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600244"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096476"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Gérer vos règles personnalisées pour les stratégies de pare-feu dans Microsoft Defender pour entreprises
 

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -32,12 +33,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte d’administrateur Microsoft 365 pour réinitialiser les mots de passe des utilisateurs lorsque vous disposez d’un abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: a220ad7942baf0545625053b41d05a2c2fb8b878
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 91615f29d1f41a885881a4a81e573beb4ade0425
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662264"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191604"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Réinitialiser les mots de passe dans Microsoft 365 pour les entreprises
 

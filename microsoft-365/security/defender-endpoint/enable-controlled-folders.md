@@ -14,15 +14,17 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: c78b1af1166af73bfec05928cd9ee9982dd4f9f1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: cab2e6b6031f91dfa21de44253f06ab7e1d58ddc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694918"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207421"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -54,10 +56,10 @@ Le [mode Audit](evaluate-controlled-folder-access.md) vous permet de tester le f
 
 stratégie de groupe paramètres qui désactivent la fusion de listes d’administrateurs locaux remplacent les paramètres d’accès contrôlé aux dossiers. Ils remplacent également les dossiers protégés et les applications autorisées définies par l’administrateur local via un accès contrôlé aux dossiers. Ces stratégies sont les suivantes :
 
-- Microsoft Defender Antivirus **Configure local administrator merge behavior for lists**
+- Microsoft Defender Antivirus **Configurez le comportement de fusion de l’administrateur local pour les listes**
 - System Center Endpoint Protection **Autoriser les utilisateurs à ajouter des exclusions et des remplacements**
 
-Pour plus d’informations sur la désactivation de la fusion de listes locales, consultez [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie de l’Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
+Pour plus d’informations sur la désactivation de la fusion de listes locales, consultez [Empêcher ou autoriser les utilisateurs à modifier localement Microsoft Defender paramètres de stratégie antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
 ## <a name="windows-security-app"></a>Ouvrez l’application Sécurité Windows.
 
@@ -126,7 +128,7 @@ Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence sur **les composants Windows > l’antivirus Microsoft Defender > Windows Defender Exploit Guard > l’accès contrôlé aux dossiers**.
+3. Développez l’arborescence sur **les composants Windows > Microsoft Defender Antivirus > Windows Defender Exploit Guard > l’accès contrôlé aux dossiers**.
 
 4. Double-cliquez sur le paramètre **Configurer l’accès contrôlé aux dossiers** et définissez l’option **sur Activé**. Dans la section Options, vous devez spécifier l’une des options suivantes :
    - **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers dans les dossiers protégés. Une notification est fournie dans le journal des événements Windows.

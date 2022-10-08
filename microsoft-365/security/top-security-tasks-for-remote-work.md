@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - remotework
+- tier2
 ms.custom: admindeeplinkDEFENDER
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 0dd496fd0bb864fa8e9abde554cb23fd5a695ab8
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 01a4cdddf2baa05b695a4ea660ffb5b0f8e7d3fe
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811678"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086550"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité afin de prendre en charge le travail à domicile
 

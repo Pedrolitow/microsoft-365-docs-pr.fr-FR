@@ -9,16 +9,17 @@ audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Découvrez comment signaler des faux positifs et des faux négatifs dans Outlook à l’aide de la fonctionnalité Message de rapport.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 92ec6777469caaa47664130a66acfcb72e7329ba
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: 2c5575cb74a8b2353a0cec613bb4ce4b0d5b83b7
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497354"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086572"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Signaler les faux positifs et les faux négatifs dans Outlook
 

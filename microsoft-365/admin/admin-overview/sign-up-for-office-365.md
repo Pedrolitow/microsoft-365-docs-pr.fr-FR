@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -31,12 +32,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Découvrez ce que vous devez savoir sur les dernières versions des programmes Office avant de passer par le processus d’inscription pour Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: f3749dd8f97e2304173f5b47ed377fcfbb9c2d7a
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 455cb56535b3375547a0e408f6d338f4b0b49767
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662935"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191560"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - aide Administration
 
@@ -97,7 +98,7 @@ Vous n’avez pas besoin d’annuler votre essai. Si vous n’achetez pas l’ab
 
   - **Pays** où les services seront utilisés. Vous **ne pourrez pas** changer le pays plus tard, même pendant le processus d’inscription; vous devrez redémarrer l’Assistant Inscription.
 
-  - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > L’adresse e-mail que vous entrez ici est différente de votre adresse de messagerie Microsoft 365 (votre nom d’ouverture de session, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.

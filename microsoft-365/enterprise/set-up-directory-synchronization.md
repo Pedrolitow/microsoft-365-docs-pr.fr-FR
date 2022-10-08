@@ -12,6 +12,7 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Découvrez comment configurer la synchronisation d’annuaires entre Microsoft 365 et votre Active Directory local.
-ms.openlocfilehash: 0bca97e4510f0be57c733ecf35a80ec5fb953945
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 18657dca2b41b0fa003b1c3cd5c24656c856af43
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671285"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207575"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurer la synchronisation d’annuaires pour Microsoft 365
 

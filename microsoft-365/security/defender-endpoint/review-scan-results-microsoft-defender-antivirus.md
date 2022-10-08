@@ -1,5 +1,5 @@
 ---
-title: Passer en revue les résultats des analyses de l’Antivirus Microsoft Defender
+title: Passer en revue les résultats des analyses antivirus Microsoft Defender
 description: Passez en revue les résultats des analyses à l’aide de Microsoft Endpoint Configuration Manager, Microsoft Intune ou l’application Sécurité Windows
 keywords: résultats de l’analyse, correction, analyse complète, analyse rapide
 ms.service: microsoft-365-security
@@ -15,16 +15,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 4e7ca073690074efcb84c594ea533f068f904af2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fb507f6249a5a421675908ede074267d389313ba
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689710"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231701"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>Consulter les résultats de l’analyse de l’Antivirus Microsoft Defender
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>Passer en revue Microsoft Defender résultats de l’analyse antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +39,7 @@ ms.locfileid: "67689710"
 **Plateformes**
 - Windows
 
-Une fois l’analyse de l’antivirus Microsoft Defender terminée, qu’il s’agisse d’une analyse [à la demande](run-scan-microsoft-defender-antivirus.md) ou [planifiée](scheduled-catch-up-scans-microsoft-defender-antivirus.md), les résultats sont enregistrés et vous pouvez afficher les résultats. 
+Une fois l’analyse antivirus Microsoft Defender terminée, qu’il s’agisse d’une analyse [à la demande](run-scan-microsoft-defender-antivirus.md) ou [planifiée](scheduled-catch-up-scans-microsoft-defender-antivirus.md), les résultats sont enregistrés et vous pouvez afficher les résultats. 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>Utiliser Configuration Manager pour examiner les résultats de l’analyse
@@ -64,7 +66,7 @@ Get-MpThreat
 
 :::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Code PowerShell" lightbox="../../media/wdav-get-mpthreat.png":::
 
-Pour plus d’informations sur l’utilisation de [PowerShell avec l’antivirus Microsoft Defender, voir Utiliser les applets de commande PowerShell pour configurer et exécuter l’Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [defender](/powershell/module/defender/) .
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez Utiliser les applets de commande [PowerShell pour configurer et exécuter Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) antivirus et [Defender Antivirus](/powershell/module/defender/).
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Utiliser l’instruction de gestion Windows (WMI) pour passer en revue les résultats de l’analyse
 
@@ -83,5 +85,5 @@ Utilisez la [méthode **Get** des classes **MSFT_MpThreat** et **MSFT_MpThreatDe
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Personnaliser, lancer et passer en revue les résultats des analyses et des corrections de l’Antivirus Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personnaliser, lancer et examiner les résultats des analyses et des corrections de Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

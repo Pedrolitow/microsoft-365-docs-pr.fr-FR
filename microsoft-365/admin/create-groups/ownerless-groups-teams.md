@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment inviter automatiquement des membres à devenir propriétaires d’un groupe Microsoft 365 sans propriétaire ou d’une équipe dans Microsoft Teams.
-ms.openlocfilehash: 3d140c7080feca76382e54049918d5e7866e29d5
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b417634638142c749fad12b5e008f2f8d6ff5638
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743085"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191340"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Gérer les équipes et les groupes Microsoft 365 sans propriétaire
 
@@ -45,7 +45,7 @@ Lors de la création de la stratégie, vous pouvez spécifier :
 
 Pour définir une stratégie de groupe ou d’équipe sans propriétaire
 
-1. Dans le centre d’administration, accédez à **Afficher tous les** \> **paramètres** \> de **l’organisation des paramètres** et, sous l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>, sélectionnez **Microsoft 365 组**.
+1. Dans le centre d’administration, accédez à **Afficher tous les** \> **paramètres** \> de **l’organisation des paramètres** et, sous l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>, sélectionnez **Groupes Microsoft 365**.
 
 1. Activez la case à cocher **Quand il n’y a pas de propriétaire, envoyez un e-mail et demandez aux membres du groupe actif de devenir propriétaires** .
 
@@ -69,4 +69,6 @@ Les notifications sont envoyées chaque semaine à partir de 24 heures après la
 
 Jusqu’à deux membres de groupe par groupe peuvent accepter l’invitation pour devenir propriétaire. Si aucun membre du groupe n’accepte, un administrateur doit [affecter un propriétaire de groupe](/admin/create-groups/add-or-remove-members-from-groups).
 
+## <a name="related-topics"></a>Voir aussi
 
+[FAQ sur les groupes sans propriétaire](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)

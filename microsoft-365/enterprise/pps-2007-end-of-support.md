@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 search.appverid:
 - PSV120
 - PDD140
@@ -16,12 +18,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007, ProClarity et SharePoint Server 2007 ont atteint la fin du support. Lisez cet article pour planifier la mise à niveau de votre solution BI.
-ms.openlocfilehash: b36d050222ceecf3b52f790a41d26cee4b05ff1c
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 59b1833c4c740b7be92bd01befbd4f85dd38a670
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671982"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207685"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007
 

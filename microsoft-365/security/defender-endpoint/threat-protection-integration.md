@@ -1,6 +1,6 @@
 ---
 title: Intégrer Microsoft Defender pour point de terminaison à d’autres solutions Microsoft
-description: Découvrez comment Microsoft Defender pour point de terminaison s’intègre à d’autres solutions Microsoft, notamment Microsoft Defender pour Identity et Microsoft Defender pour cloud.
+description: Découvrez comment Microsoft Defender pour point de terminaison s’intègre à d’autres solutions Microsoft, notamment Microsoft Defender pour Identity et Microsoft Defender pour le cloud.
 author: mjcaparas
 ms.author: macapara
 ms.service: microsoft-365-security
@@ -11,16 +11,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0aa33086c1db708d861351a2f4469f9bf3161a1d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: ae0ab05a353100ef5572ab4079bbf3eb6678041e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727963"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231657"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender pour point de terminaison et d’autres solutions Microsoft
 
@@ -39,7 +41,7 @@ Microsoft Defender pour point de terminaison s’intègre directement à différ
 
 ### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender pour le cloud
 
-Microsoft Defender pour cloud fournit une solution de protection de serveur complète, notamment des fonctionnalités de détection et de réponse des points de terminaison (EDR) sur les serveurs Windows.
+Microsoft Defender pour le cloud fournit une solution de protection de serveur complète, notamment des fonctionnalités de détection et de réponse des points de terminaison (EDR) sur les serveurs Windows.
 
 ### <a name="microsoft-sentinel"></a>Microsoft Sentinel
 
@@ -76,7 +78,7 @@ L’intégration Skype Entreprise permet aux analystes de communiquer avec un ut
 
 Avec Microsoft 365 Defender, Microsoft Defender pour point de terminaison et diverses solutions de sécurité Microsoft forment une suite de défense d’entreprise unifiée avant et après violation qui s’intègre en mode natif entre les points de terminaison, les identités, les e-mails et les applications pour détecter, empêcher, examiner et répondre automatiquement aux problèmes sophistiqués Attaques.
 
-[Mer informasjon sur Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+[En savoir plus sur Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 ## <a name="related-topics"></a>Voir aussi
 

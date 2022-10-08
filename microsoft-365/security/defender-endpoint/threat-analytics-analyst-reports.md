@@ -12,16 +12,18 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1d47b966ccce5a22a2d61f18353cefa77c7a58c3
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 221703cfa0161d0f0dfc18d7ee3da9dea67d0826
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689292"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224687"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>Rapport d’analyste dans l’analyse des menaces
 
@@ -75,11 +77,11 @@ Bien que vous puissiez utiliser l’onglet **Atténuations** pour évaluer votre
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprendre comment chaque menace peut être détectée
 
-Le rapport d’analyste fournit également les détections de l’Antivirus Microsoft Defender et des fonctionnalités de _détection et de réponse_ des points de terminaison (EDR).
+Le rapport d’analyste fournit également les détections des fonctionnalités de détection et de réponse de Microsoft Defender antivirus et de point de _terminaison_ (EDR).
 
 ### <a name="antivirus-detections"></a>Détections antivirus
 
-Ces détections sont disponibles sur les appareils sur lesquels [l’Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) est activé. Lorsque ces détections se produisent sur les appareils qui ont été intégrés à Microsoft Defender pour point de terminaison, elles déclenchent également des alertes qui éclairent les graphiques du rapport.
+Ces détections sont disponibles sur les appareils sur lesquels [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) est activé. Lorsque ces détections se produisent sur les appareils qui ont été intégrés à Microsoft Defender pour point de terminaison, elles déclenchent également des alertes qui éclairent les graphiques du rapport.
 
 > [!NOTE]
 > Le rapport d’analyste répertorie également **les détections génériques** qui peuvent identifier un large éventail de menaces, en plus des composants ou des comportements spécifiques à la menace suivie. Ces détections génériques ne se reflètent pas dans les graphiques.

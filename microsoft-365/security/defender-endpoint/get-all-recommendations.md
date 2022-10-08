@@ -11,17 +11,19 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d1e88b8ba553d3e8ad88becf283caa94b8d00ef6
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c9f998558aaccd63f025e5a0b9c451a8ecc51930
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696988"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190944"
 ---
 # <a name="list-all-recommendations"></a>Répertorier toutes les actions d’amélioration
 

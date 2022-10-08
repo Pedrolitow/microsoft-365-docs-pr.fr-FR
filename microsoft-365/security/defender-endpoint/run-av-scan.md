@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+mms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: c1351c4a6e758666a9ff3f00f9e5a573b2bdf79d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 54f2c0941edeb7db8e0d2dd36f02145895673230
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704169"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223065"
 ---
 # <a name="run-antivirus-scan-api"></a>Exécuter l’API d’analyse antivirus
 
@@ -39,7 +41,7 @@ ms.locfileid: "67704169"
 
 ## <a name="api-description"></a>Description de l’API
 
-Lancer l’analyse antivirus Microsoft Defender sur un appareil.
+Lancez Microsoft Defender’analyse antivirus sur un appareil.
 
 ## <a name="limitations"></a>Limites
 
@@ -50,7 +52,7 @@ Lancer l’analyse antivirus Microsoft Defender sur un appareil.
 > [!IMPORTANT]
 >
 > - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, et sur Windows 11.
-> - Une analyse antivirus Microsoft Defender peut s’exécuter en même temps que d’autres solutions antivirus, que l’antivirus Microsoft Defender soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Une analyse antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender Antivirus soit la solution antivirus active ou non. Microsoft Defender Antivirus peut être en mode passif. Pour plus d’informations, consultez [Microsoft Defender compatibilité](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility) antivirus.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -66,6 +68,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.Scan|'Scan machine'
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Actions de correction actives » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+> 
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 ## <a name="http-request"></a>Requête HTTP
 

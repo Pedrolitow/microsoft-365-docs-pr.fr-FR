@@ -14,14 +14,16 @@ ms.author: dansimp
 manager: dansimp
 ms.custom: asr
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: aa00aa4652edb3fa253573c451292c199617410e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: edbf7121a23bd5effda50256fdc07a6d58e09493
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688438"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231635"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles ASR
 
@@ -39,7 +41,7 @@ Cet article vous aide à mapper des règles communes à Microsoft Defender pour 
 - **Opération** - Création de fichier
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services** - *.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab
 - **Règles de réduction de la surface d’attaque** : les règles ASR bloquent les techniques d’attaque et non les indicateurs de compromission (IOC). Le blocage d’une extension de fichier spécifique n’est pas toujours utile, car il n’empêche pas un appareil de compromettre. Il déjoue partiellement une attaque uniquement jusqu’à ce que les attaquants créent un nouveau type d’extension pour la charge utile.
-- **Autres fonctionnalités recommandées** : l’activation de l’antivirus Microsoft Defender, ainsi que la protection cloud et l’analyse du comportement, est vivement recommandée. Nous vous recommandons d’utiliser d’autres préventions, telles que la règle ASR « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, la plupart de ces clés de Registre sont surveillées par Microsoft Defender pour point de terminaison, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. Les clés de Registre utilisées nécessitent un minimum de privilèges de Administration local ou de programme d’installation approuvé peuvent être modifiés. Il est recommandé d’utiliser un environnement verrouillé, avec des comptes ou droits d’administration minimaux. D’autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
+- **Autres fonctionnalités recommandées** : il est vivement recommandé d’activer Microsoft Defender Antivirus, ainsi que la protection cloud et l’analyse du comportement. Nous vous recommandons d’utiliser d’autres préventions, telles que la règle ASR « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, la plupart de ces clés de Registre sont surveillées par Microsoft Defender pour point de terminaison, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. Les clés de Registre utilisées nécessitent un minimum de privilèges de Administration local ou de programme d’installation approuvé peuvent être modifiés. Il est recommandé d’utiliser un environnement verrouillé, avec des comptes ou droits d’administration minimaux. D’autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
 
 ### <a name="block-creation-of-specific-registry-keys"></a>Bloquer la création de clés de Registre spécifiques
 
@@ -48,7 +50,7 @@ Cet article vous aide à mapper des règles communes à Microsoft Defender pour 
 - **Opération** - Modifications du Registre
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services**-  *\Software,HKCU*\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcesss
 - **Règles de réduction de la surface d’attaque** : les règles ASR bloquent les techniques d’attaque et non les indicateurs de compromission (IOC). Le blocage d’une extension de fichier spécifique n’est pas toujours utile, car il n’empêche pas un appareil de compromettre. Il déjoue partiellement une attaque uniquement jusqu’à ce que les attaquants créent un nouveau type d’extension pour la charge utile.
-- **Autres fonctionnalités recommandées** : l’activation de l’antivirus Microsoft Defender, ainsi que la protection cloud et l’analyse du comportement, est vivement recommandée. Nous vous recommandons d’utiliser une prévention supplémentaire, telle que la règle ASR « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, plusieurs de ces clés de Registre sont surveillées par Microsoft Defender pour point de terminaison, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. En outre, les clés de Registre utilisées nécessitent un minimum de privilèges de Administration local ou de programme d’installation approuvé peuvent être modifiés. Il est recommandé d’utiliser un environnement verrouillé, avec des comptes ou droits d’administration minimaux. D’autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
+- **Autres fonctionnalités recommandées** : il est vivement recommandé d’activer Microsoft Defender Antivirus, ainsi que la protection cloud et l’analyse du comportement. Nous vous recommandons d’utiliser une prévention supplémentaire, telle que la règle ASR « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, plusieurs de ces clés de Registre sont surveillées par Microsoft Defender pour point de terminaison, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. En outre, les clés de Registre utilisées nécessitent un minimum de privilèges de Administration local ou de programme d’installation approuvé peuvent être modifiés. Il est recommandé d’utiliser un environnement verrouillé, avec des comptes ou droits d’administration minimaux. D’autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
 
 ### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Empêcher les programmes non approuvés de s’exécuter à partir de lecteurs amovibles
 
@@ -118,8 +120,8 @@ Cet article vous aide à mapper des règles communes à Microsoft Defender pour 
 - **Processus** - certutil.exe
 - **Opération** - Création de fichier
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services** - *.exe
-- **Règles de réduction de la surface d’attaque** : les règles ASR ne prennent pas en charge ces scénarios, car elles font partie de la protection antivirus Microsoft Defender.
-- **Autres fonctionnalités recommandées** : l’antivirus Microsoft Defender empêche CertUtil de créer ou de télécharger du contenu exécutable.
+- **Règles de réduction de la surface** d’attaque : les règles ASR ne prennent pas en charge ces scénarios, car elles font partie de Microsoft Defender protection antivirus.
+- **Autres fonctionnalités recommandées** : Microsoft Defender Antivirus empêche CertUtil de créer ou de télécharger du contenu exécutable.
 
 ### <a name="block-processes-from-stopping-critical-system-components"></a>Empêcher les processus d’arrêter les composants système critiques
 
@@ -139,7 +141,7 @@ Cet article vous aide à mapper des règles communes à Microsoft Defender pour 
 - **Règles de réduction de la surface d’attaque** : dans l’ensemble, les règles ASR ne sont pas conçues pour fonctionner en tant que gestionnaire d’applications.
 - **Autres fonctionnalités recommandées** : pour empêcher les utilisateurs de lancer des processus ou des programmes spécifiques, il est recommandé d’utiliser Windows Defender Contrôle d’application. Microsoft Defender pour point de terminaison indicateurs de fichier et de certificat, peuvent être utilisés dans un scénario de réponse aux incidents (ne doivent pas être considérés comme un mécanisme de contrôle d’application).
 
-### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloquer les modifications non autorisées apportées aux configurations de l’Antivirus Microsoft Defender
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloquer les modifications non autorisées apportées aux configurations antivirus Microsoft Defender
 
 - **S’applique à** - Tous les processus
 - **Processus**- *

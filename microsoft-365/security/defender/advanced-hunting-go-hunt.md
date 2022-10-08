@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ms.topic: article
-ms.openlocfilehash: 7c1e4153afb7f279b5d31cce29a86f42bdc93832
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 74106e263b093fbbe6e3ba188b6058530a30f4d4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483385"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68087070"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Rechercher rapidement des informations d’entité ou d’événement avec go hunt
 

@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Comment installer Office sur tous les appareils dans Microsoft 365 Business Premium.
-ms.openlocfilehash: a5e2dbd00066c30d70df6ee74575b2b3f72fed13
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: cb879c21b0b7c60536ed977305f727888b0bf560
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735599"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096586"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Installer Office sur tous vos appareils
 
@@ -48,9 +50,9 @@ Faites-les effectuer les opérations suivantes :
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 Business Premium
 
-Suivez les instructions des onglets pour installer Office sur un iPhone ou un téléphone Android. Une fois que vous aurez effectué cette procédure, les fichiers de travail enregistrés dans vos applications Office seront protégés par Microsoft 365 pour les PME.
+Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
-L'exemple s'applique à Outlook, mais également à toute autre application Office que vous souhaiteriez installer.
+L’exemple concerne Outlook, mais s’applique à toutes les autres applications Office que vous souhaitez installer.
 
 ## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
@@ -76,11 +78,11 @@ Entrez votre adresse e-mail professionnelle à l'écran **Ajouter un compte e-ma
   
 :::image type="content" source="media/sign-in-m365account.png" alt-text="Connectez-vous à votre compte professionnel.":::
   
-Si votre organisation protège les fichiers dans les applications, une boîte de dialogue s’affiche indiquant que votre organisation protège désormais les données dans l'application et que vous devez redémarrer l'application pour continuer à l'utiliser. Appuyez sur **OK**, puis fermez Outlook. 
+If your organization is protecting files in apps, you'll see a dialog stating that your organization is now protecting the data in the app and you need to restart the app to continue to use it. Tap **OK** and close Outlook. 
   
 :::image type="content" source="media/outlook-protected.png" alt-text="Capture d’écran indiquant que votre organisation protège désormais votre application Outlook.":::
   
-Localisez l'application Outlook sur l'iPhone, puis redémarrez-la. Lorsque vous y êtes invité, entrez un code confidentiel et confirmez-le. Outlook sur votre iPhone est maintenant prêt à être utilisé.
+Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and verify it. Outlook on your iPhone is now ready to be used.
   
 :::image type="content" source="media/set-pin.png" alt-text="Définissez un code secret pour accéder aux données de votre organisation.":::
 
@@ -106,7 +108,7 @@ Pour commencer l’installation sur votre téléphone Android, accédez au Play 
   
 :::image type="content" source="media/aos-play-store.png" alt-text="Sur l’écran d’accueil Android, appuyez sur Play Store.":::
   
-Entrez Microsoft Outlook dans la zone de recherche de Google Play, puis appuyez sur **Installer**. Une fois l'installation d'Outlook terminée, appuyez sur **Ouvrir**.
+Enter Microsoft Outlook in the Google Play search box and tap **Install**. Once Outlook is done installing, tap **Open**.
   
 :::image type="content" source="media/aos-install-outlook.png" alt-text="Appuyez sur Ouvrir pour ouvrir l’application Outlook.":::
   
@@ -122,7 +124,7 @@ Dans le Play Store, installez l'application Portail d'entreprise Intune.
   
 :::image type="content" source="media/intune-app-google-play-store.png" alt-text="Bouton Installer pour le Portail d'entreprise Intune dans Google Play Store.":::
   
-Ouvrez Outlook à nouveau, et entrez et confirmez un code confidentiel. Vous pouvez maintenant utiliser l'application Outlook.
+Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready for use.
   
 :::image type="content" source="media/aos-outlook-pin.png" alt-text="Définissez votre code confidentiel pour Outlook sur Android.":::
 

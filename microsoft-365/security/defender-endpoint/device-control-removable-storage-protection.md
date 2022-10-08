@@ -12,16 +12,18 @@ ms.localizationpriority: medium
 ms.date: 08/01/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9c863e39704d0695940e6d32df7b599e6a8ea310
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 711f5eecf6863b20c767a0615efdc3ff23d98cfa
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697866"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207399"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender pour point de terminaison protection de stockage amovible du contrôle d’appareil
 

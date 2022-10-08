@@ -7,19 +7,20 @@ audience: ITPro
 ms.topic: reference
 f1_keywords:
 - microsoft-365-and-office-365-general-information
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
+ms.collection: scotvorg
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: Découvrez les informations disponibles pour les descriptions des fonctionnalités de Microsoft 365.
-ms.openlocfilehash: b2594cdf869073730c5483f995b3ee13259c579b
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 95951203139fea31859b38faca6829acc70523f0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812027"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191120"
 ---
 # <a name="microsoft-365-feature-descriptions"></a>Description des fonctionnalités Microsoft 365
 
@@ -135,15 +136,15 @@ Avec chaque abonnement Microsoft 365 et Office 365 pour les entreprises, les ent
 
 | Catégorie d’assistance | Exemples |
 |:-----|:-----|
-|Installation et configuration  <br/> | Exchange Online:  <br/>  Migration des boîtes aux lettres  <br/>  Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)  <br/>  Configuration de la découverte automatique  <br/>  SharePoint Online:  <br/>  Groupes d'utilisateurs et autorisations  <br/>  Configuration des invités  <br/>  Skype Entreprise Online:  <br/>  Installation et création de contacts  <br/>  Applications Microsoft 365 pour les grandes entreprises : Assistance à l’installation et à la configuration  <br/> |
+|Installation et configuration  <br/> | Exchange Online:  <br/>  Migration des boîtes aux lettres  <br/>  Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)  <br/>  Configuration de la découverte automatique  <br/>  SharePoint Online:  <br/>  Groupes d’utilisateurs et autorisations  <br/>  Configuration des invités  <br/>  Skype Entreprise Online:  <br/>  Installation et création de contacts  <br/>  Applications Microsoft 365 pour les grandes entreprises : Assistance à l’installation et à la configuration  <br/> |
 |Configuration  <br/> | Problèmes d'échec de configuration de service  <br/>  Problèmes de mise en service  <br/>  Configuration et redélégation de domaine  <br/>  Problèmes de configuration de service  <br/>  Authentification unique (SSO)  <br/>  Synchronisation Active Directory  <br/> |
 
 **Gestion des cas de support technique :** Microsoft affecte un niveau de gravité à un cas lorsqu’il est ouvert, en fonction d’une évaluation du type de problème et de l’impact sur le client. Le tableau suivant contient des exemples de types de problèmes et de niveaux de gravité.
 
 | Niveau de gravité | Description d’opérations et d’assistance | Exemples |
 |:-----|:-----|:-----|
-|Niveau de gravité A (Critique)  <br/> |Un ou plusieurs services ne sont pas accessibles ou sont inutilisables. Les délais de production, d'opérations ou de déploiement sont gravement affectés, ou bien la production ou la rentabilité risque d'être gravement affectée. Plusieurs utilisateurs ou services sont affectés.  <br/> | Problèmes les plus répandus d’envoi ou de réception de messages.  <br/>  Site SharePoint en panne.  <br/>  Tous les utilisateurs ne peuvent pas envoyer de messages instantanés, rejoindre ou planifier des réunions Skype Entreprise, ou passer des appels Skype Entreprise.  <br/> |
-|Niveau de gravité B (Haute)  <br/> |Le service est utilisable mais pas de manière optimale. La situation a un impact modéré sur l’activité et peut être traitée aux heures ouvrables. Un seul utilisateur, client ou service est partiellement affecté.  <br/> | Le bouton Envoyer dans Outlook est tronqué.  <br/>  Le paramétrage est impossible dans le CAE (centre d'administration Exchange), mais il est possible dans PowerShell.  <br/> |
+|Niveau de gravité A (Critique)  <br/> |One or more services aren't accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected.  <br/> | Problèmes les plus répandus d’envoi ou de réception de messages.  <br/>  Site SharePoint en panne.  <br/>  Tous les utilisateurs ne peuvent pas envoyer de messages instantanés, rejoindre ou planifier des réunions Skype Entreprise, ou passer des appels Skype Entreprise.  <br/> |
+|Niveau de gravité B (Haute)  <br/> |The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected.  <br/> | Le bouton Envoyer dans Outlook est tronqué.  <br/>  Le paramétrage est impossible dans le CAE (centre d'administration Exchange), mais il est possible dans PowerShell.  <br/> |
 |Niveau de gravité C (Non critique)  <br/> |La situation a un impact minime sur l'activité. Le problème est important, mais n’a pas d’impact significatif sur le service actuel ou la productivité du client. Un seul utilisateur connaît une interruption partielle mais il existe une solution acceptable.  <br/> | Comment définir un mot de passe d’utilisateur qui n’expire jamais.  <br/>  L'utilisateur ne peut pas supprimer les informations de contact dans Exchange Online.  <br/> |
 
 **Temps de réponse initiaux du support technique :** Le temps de réponse initial est basé sur les niveaux de gravité décrits ci-dessus et le type d’abonnement. Les objectifs des délais de réponse sont décrits dans le tableau suivant.
@@ -213,9 +214,9 @@ Microsoft Office 365 fournit l’aide et les ressources de formation suivantes. 
 
 **Outil de dépannage pour Office 365** Une fois que vous avez répondu à quelques brèves questions concernant votre problème, l'outil de dépannage pour Office 365 vous recommande des outils et des informations utiles en fonction de vos réponses. Pour utiliser cet outil, accédez à la page Résolution [des problèmes Office pour les administrateurs et les professionnels de l’informatique](/office365/troubleshoot/) de la communauté Office 365.
 
-**Vidéos de support technique** Vidéos pédagogiques de dépannage élaborées pour répondre aux questions les plus fréquemment posées par les clients. Il existe plus de 35 vidéos et la liste augmente chaque semaine. Les sujets abordés sont très variés, de la présentation du Centre d'administration BlackBerry® à l'activation et à la migration d'une synchronisation d'annuaire. Pour visionner ces vidéos, accédez au site de la communauté Office 365 et recherchez des vidéos. Les clients sont invités à soumettre une demande de vidéo via le portail de la communauté. Ils peuvent également accéder à la page [YouTube Office 365](https://go.microsoft.com/fwlink/?LinkId=272059) et aux chaînes [Démo](/office365/servicedescriptions/office-365-service-descriptions-technet-library).
+**Technical support videos** English language-only instructional troubleshooting videos have been developed based on the most commonly asked questions from customers. There are more than 35 individual videos and more coming every week. Topics range from an overview of the BlackBerry® Administration Center to activating and migrating directory synchronization. To view these videos, go to the Office 365 Community site and search for videos. Customers are encouraged to submit a request for a video through the community portal. Customers can also navigate to the [Office 365 YouTube](https://go.microsoft.com/fwlink/?LinkId=272059) and [Showcase](/office365/servicedescriptions/office-365-service-descriptions-technet-library) channels.
 
-**Réseaux sociaux** En suivant Office 365 sur [Facebook](https://go.microsoft.com/fwlink/?LinkId=272061), sur [Twitter](https://go.microsoft.com/fwlink/?LinkId=272062) et sur [LinkedIn](https://www.linkedin.com/groups/Microsoft-Office-365-3724282?itemaction=mclk&anetid=3724282&impid=&pgkey=anet_search_results&actpref=anetsrch_name&trk=anetsrch_name&goback=%2Egdr_1307137875158_1), clients et partenaires peuvent approfondir leurs connaissances concernant Office 365. Ce moyen rapide et facile de découvrir Office 365 permet aux clients de découvrir les avis d'autres utilisateurs et d'ajouter leurs propres commentaires et tweets. Les professionnels du support Microsoft surveillent les activités liées aux comptes Facebook et Twitter de Microsoft afin de répondre à toutes les demandes relatives au support. Pour consulter les derniers flux Facebook et les derniers tweets publiés, reportez-vous à la partie inférieure de la page d'accueil de la communauté Office 365 afin de prendre connaissance des dernières discussions entre clients et partenaires.
+**Social media** Following Office 365 on [Facebook](https://go.microsoft.com/fwlink/?LinkId=272061), [Twitter](https://go.microsoft.com/fwlink/?LinkId=272062), and [LinkedIn](https://www.linkedin.com/groups/Microsoft-Office-365-3724282?itemaction=mclk&anetid=3724282&impid=&pgkey=anet_search_results&actpref=anetsrch_name&trk=anetsrch_name&goback=%2Egdr_1307137875158_1) provides a way for customers and partners to become more educated about Office 365. This fast and easy way of learning about Office 365 allows customers to listen to what others are saying and be able to add their own comments and tweets. Microsoft support professionals monitor the Microsoft-related Facebook and Twitter activity to assist with any support-related inquiries. To find the most current Facebook feeds along with the most recent tweets, go to the bottom of the Office 365 Community homepage to hear the daily discussions among customers and partners.
 
 **Traduction:** Les articles d’aide en ligne, les wikis et les blogs, les forums, les centres techniques et la résolution des problèmes sont disponibles dans différentes langues.
 
@@ -251,7 +252,7 @@ Lorsque vous créez un utilisateur, le nom de connexion et l’adresse e-mail de
 
 **Partage d’un domaine :** Vous pouvez piloter certaines adresses e-mail pour un domaine sur Microsoft, et d’autres sur votre fournisseur de messagerie précédent. Cela est recommandé uniquement pour une utilisation pendant un pilote, car il nécessite des étapes de configuration supplémentaires et présente certaines limitations pour les services Microsoft. Pour plus d’informations, consultez : [Pilote Microsoft 365 pour une petite entreprise](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7) et [éligibilité - FastTrack – Microsoft 365](/fasttrack/eligibility).
 
-## <a name="networking"></a>Réseau
+## <a name="networking"></a>Mise en réseau
 
 Microsoft prend en charge les fonctionnalités réseau suivantes.
 
@@ -261,7 +262,7 @@ Microsoft prend en charge les fonctionnalités réseau suivantes.
 
 > [!IMPORTANT]
 >
-> Nous vous recommandons fortement d’activer le routage vers les noms de domaines racine répertoriés dans l’article mentionné ci-dessus (comme *.Outlook.com, *.MicrosoftOnline.com et *.SharePoint.com), au lieu de procéder au routage vers des sous-réseaux d’adresses IP spécifiques. Le fait d’utiliser des sous-réseaux d’adresses IP risque d’entraîner des temps d’indisponibilité pour vos utilisateurs lors de l’apport de modifications.
+> We strongly recommend that you enable routing to the root domain names listed in the articles above (such as *.Outlook.com, *.MicrosoftOnline.com and *.SharePoint.com) instead of routing to specific IP address subnets. Relying on IP address subnets runs the risk of outages for your users as changes are made.
 
 **Exigences en bande passante :** Pour plus d’informations sur les besoins en bande [passante, consultez la planification de la bande passante Internet](/office365/enterprise/network-planning-and-performance).
 

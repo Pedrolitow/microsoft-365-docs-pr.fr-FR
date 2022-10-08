@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Les publications du centre de messages sont en anglais uniquement, mais peuvent être affichées automatiquement dans la langue que vous spécifiez pour Microsoft 365.
-ms.openlocfilehash: 23f94654e01697c3ebbc74df4f2409411ca14b9a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 26f62d7579e2600b6fef3f6f53ffaff9cc22c74d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437588"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191164"
 ---
-# <a name="language-translation-for-microsoft-365-message-center-posts"></a>Traduction de langue pour les publications du Centre de messages Microsoft 365
+# <a name="language-translation-for-microsoft-365-message-center-posts"></a>Traduction linguistique pour les publications du Centre de messages Microsoft 365
 
 Nous rédigeons les publications du Centre de messages uniquement en anglais en raison de l'opportunité des informations que nous publions. Cependant, ces publications peuvent s'afficher automatiquement dans la langue spécifiée dans vos paramètres linguistiques personnels pour Microsoft 365. Si vous définissez votre langue préférée sur une langue autre que l'anglais, le Centre de messages comprendra une option vous permettant de traduire automatiquement les publications. Les messages sont traduits par ordinateur dans la langue de votre choix, ce qui signifie qu’un ordinateur a effectué la traduction. Cette option détermine l'affichage par défaut, mais vous pouvez également utiliser le menu déroulant pour traduire et afficher les publications dans n'importe quelle langue que nous prenons en charge pour la traduction. Si vous sélectionnez l'anglais, nous rétablirons la version anglaise d'origine du message.
 
@@ -48,9 +49,9 @@ Nous rédigeons les publications du Centre de messages uniquement en anglais en 
 
 Lorsque votre langue par défaut n'est pas l'anglais, les options de traduction sont disponible dans le Centre de messages.
   
-Pour configurer la traduction automatique des publications du Centre de messages et leur affichage dans la langue de votre choix, accédez à **État d'intégrité** \> **Centre de messages**. Un commutateur apparaîtra en haut de l'affichage de liste des messages pour activer ou désactiver la traduction automatique. Lorsque ce paramètre est désactivé, les publications sont affichées en anglais. Lorsque ce paramètre est activé, les messages s'affichent dans la langue de votre choix. Le paramètre choisi sera conservé pour chaque visite dans le Centre de messages. 
+To set Message center posts to automatically machine-translate and display in your preferred language, go to **Health** \> **Message center**. You'll see a switch at the top of the message list view to toggle automatic translation on or off. When this setting is off, posts are shown in English. When this setting is on, messages display in your preferred language. The setting you choose will persist for each visit to Message center. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’ensemble de la Centre d'administration Microsoft 365](Vue d’ensemble de la Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md) (vidéo)\
 [Quel abonnement ai-je ?](../admin-overview/what-subscription-do-i-have.md) (article)\

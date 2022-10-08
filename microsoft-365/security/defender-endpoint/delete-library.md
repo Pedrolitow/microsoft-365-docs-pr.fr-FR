@@ -16,16 +16,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: reference
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: da4da672f3ae513a60f5d4a9fb7134c7b36bc8df
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 39cacff58686f668ec3a4c1eed1f55d669db211b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67499033"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207619"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>Supprimer un fichier de la bibliothèque de réponses en direct  
 

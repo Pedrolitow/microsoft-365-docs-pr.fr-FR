@@ -14,18 +14,21 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Gérez vos systèmes, comptes d’utilisateurs et stratégies pour vous protéger contre les cyberattaques.
-ms.openlocfilehash: 955f4b845b135c9d7f1ecad6732f9d7389770b54
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 30ebd142bec294b87309aa5a093bfb45ae154373
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741739"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68093735"
 ---
 # <a name="maintain-your-environment"></a>Gérer votre environnement
 

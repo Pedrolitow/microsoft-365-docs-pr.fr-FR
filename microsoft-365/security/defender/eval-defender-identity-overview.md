@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: f9d95a3c8a37a68d96e6784eda631fb459b198e1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 64de4cf69d7435a9af9ef1a2c1689f59ac85ccf3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475323"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092663"
 ---
 # <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Étape 2. Évaluer Microsoft Defender pour Identity vue d’ensemble
 

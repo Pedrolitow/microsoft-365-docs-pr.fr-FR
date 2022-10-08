@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Dans les 30 jours suivant la suppression d’un compte d’utilisateur, vous pouvez restaurer le compte et toutes les données, et l’utilisateur peut se connecter avec le même compte.
-ms.openlocfilehash: 2f9a28e5000c1ba826b5458916f30c3e8a438253
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 126cb9ca4a9b74445aad2cc3f7cec4f6feab8eb7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436204"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200096"
 ---
 # <a name="restore-a-user-in-the-microsoft-365-admin-center"></a>Restaurer un utilisateur dans le Centre d'administration Microsoft 365
    
-Lorsque vous restaurez un compte d'utilisateur dans les 30 jours après sa suppression, celui-ci et toutes les données associées sont restaurés. L'utilisateur peut se connecter avec le même compte professionnel ou scolaire. Sa boîte aux lettres est entièrement restaurée. Pour déterminer le temps restant avant qu'un compte d'utilisateur spécifique ne puisse plus être restauré, [contactez-nous](../../business-video/get-help-support.md).
+When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../../business-video/get-help-support.md).
   
 Voici quelques conseils :
   
@@ -43,7 +44,7 @@ Voici quelques conseils :
     
 ## <a name="restore-one-or-more-user-accounts"></a>Restaurer un ou plusieurs comptes d'utilisateur
 
-Vous devez être Microsoft 365 administrateur général ou administrateur de gestion des utilisateurs pour effectuer ces étapes. 
+Pour effectuer ces étapes, vous devez être administrateur général microsoft 365 ou administrateur de gestion des utilisateurs. 
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés</a> .
 
@@ -59,14 +60,14 @@ Une fois que vous avez restauré un utilisateur, assurez-vous de l’informer qu
 
 Un conflit de noms d'utilisateur survient lorsque vous supprimez un compte d'utilisateur, créez un nouveau avec le même nom (pour le même utilisateur ou un autre portant le même nom), puis tentez de restaurer le compte supprimé.
   
-Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur actif par celui que vous restaurez, soit attribuer un autre nom au compte restauré, afin que les deux comptes ne se servent plus du même nom d'utilisateur. Voici comment procéder.
+To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés</a> .
   
 2. Dans la page **Utilisateurs supprimés** , sélectionnez les noms des utilisateurs que vous souhaitez restaurer, puis sélectionnez **Restaurer**.
     
     > [!NOTE]
-    > Lorsque la restauration de deux ou plusieurs utilisateurs échoue, un message d'erreur vous en avertit. Dans ce cas, consultez le journal pour identifier les utilisateurs qui n'ont pas été restaurés, puis procédez de nouveau à la restauration des comptes, un par un. 
+    > If two or more users fail to be restored, an error message advises you that the restore operation failed for some users. View the log to see which users were not restored, and then restore the failed accounts one at a time. 
   
 3. Suivez les invites pour définir le mot de passe, puis sélectionnez **Restaurer**.
     
@@ -80,7 +81,7 @@ Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur 
     
 ## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a>Restaurer un utilisateur présentant un conflit d’adresses de proxy
 
-Un conflit d'adresses proxy survient lorsque vous supprimez un compte d'utilisateur contenant une adresse proxy, attribuez cette adresse à un autre compte, puis tentez de restaurer le compte supprimé. Suivez les étapes ci-dessous pour résoudre ce problème.
+A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.
   
 Pour ce faire, vous devez disposer [d’autorisations d’administrateur](about-admin-roles.md) dans Microsoft 365. 
 
@@ -92,7 +93,7 @@ Pour ce faire, vous devez disposer [d’autorisations d’administrateur](about-
     
 4. Examinez les résultats, puis sélectionnez **Fermer**.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Supprimer un utilisateur](delete-a-user.md) (article)\
 [Attribuer des rôles d’administrateur](assign-admin-roles.md) (vidéo)\

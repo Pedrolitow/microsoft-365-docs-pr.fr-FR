@@ -9,7 +9,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Utilisez PowerShell pour Microsoft 365 pour configurer les propriétés de comptes d’utilisateur individuels ou multiples dans votre locataire Microsoft 365.
-ms.openlocfilehash: 60b022a60334339f99c7fb767d7b68115ba1a2e5
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 7ded6fad753e5ee19c79f8ab4d715e5ce3b50765
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556389"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209203"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurer les propriétés du compte d’utilisateur Microsoft 365 avec PowerShell
 
@@ -154,7 +156,7 @@ Pour configurer les propriétés des comptes d’utilisateur avec le module Micr
 Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
 > [!NOTE]
-> PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande avec *Msol* dans leur nom. Exécutez ces applets de commande à partir de Windows PowerShell.
+> PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
 
 ### <a name="change-properties-for-a-specific-user-account"></a>Modification des propriétés d’un compte d’utilisateur spécifique
 
