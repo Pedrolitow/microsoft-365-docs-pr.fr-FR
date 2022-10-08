@@ -11,19 +11,20 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
+ms.collection:
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment les fonctionnalités de protection de Microsoft 365 Business Premium mappent aux paramètres Intune. L’abonnement vous fournit une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: b4a6740262705cad0934b999eaff89b7ed95bfc6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 185eda9e5b5e214716608d4232a0ea81c00d6b4b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741695"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096366"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Comment les fonctionnalités de protection dans Microsoft 365 Business Premium sont mappées aux paramètres Intune
 
@@ -35,7 +36,7 @@ Pour trouver le paramètre Intune, connectez-vous avec vos informations d’iden
   
  > [!IMPORTANT]
  > 
- > Un abonnement Microsoft 365 Business Premium vous donne une licence pour modifier tous les paramètres Intune. Consultez [Introduction à la prise en main d’Intune.](/intune/introduction-intune)
+ > A Microsoft 365 Business Premium subscription gives you a license to modify all the Intune settings. See [Introduction to Intune to get started.](/intune/introduction-intune)
   
 Sélectionnez le nom de la stratégie que vous souhaitez &mdash; par exemple, Stratégie d’application pour Android &mdash; , puis choisissez **Paramètres de stratégie**.
   
@@ -64,7 +65,7 @@ Sous **Gérer la façon dont les utilisateurs accèdent aux fichiers Office sur 
 
 Le tableau suivant décrit en détail comment les paramètres de stratégie d'application Windows 10 sont mis en correspondance avec les paramètres Intune.
   
-Pour trouver le paramètre Intune, connectez-vous avec vos informations d’identification d’administrateur Microsoft 365 Business Premium, puis accédez à [Portail Azure](https://portal.azure.com). Sélectionnez **Autres services** et tapez Intune dans le **Filtre**. Sélectionnez **Intune App Protection**\>**Stratégie d’application**.
+To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to [Azure portal](https://portal.azure.com). Select **More services**, and type Intune into the **Filter**. Select **Intune App Protection** \> **App Policy**.
   
  > [!IMPORTANT]
  > Un abonnement Microsoft 365 Business Premium vous donne une licence pour modifier uniquement les paramètres Intune qui correspondent aux paramètres disponibles dans Microsoft 365 Business Premium. 
@@ -74,7 +75,7 @@ Pour explorer les paramètres disponibles, sélectionnez le nom de stratégie so
 |**Paramètre de stratégie des applications Windows 10**|**Paramètre(s) Intune**|
 |:-----|:-----|
 |Chiffrer les fichiers professionnels  |**Paramètres avancés** \> **Protection des données**: **Révoquer les clés de chiffrement lors de la désinscription** et **Révoquer l'accès aux données protégées quand l'appareil s'inscrit à MDM** sont tous deux **activés**.  |
-|Empêcher les utilisateurs de copier des données d’entreprise dans des fichiers personnels.  |**Paramètres obligatoires**\>**Mode Protection des informations Windows**. **Activé** dans Microsoft 365 Business Premium correspond à : **Masquer les remplacements**, **Désactivé** dans Microsoft 365 Business Premium correspond à : **Désactivé**.  |
+|Empêcher les utilisateurs de copier des données d’entreprise dans des fichiers personnels.  |**Required settings** \> **Windows Information Protection mode**. **On** in Microsoft 365 Business Premium maps to: **Hide Overrides**, **Off** in Microsoft 365 Business Premium maps to: **Off**.  |
 |Contrôle de l'accès aux documents Office  | S’il est défini sur **Activé** dans Microsoft 365 Business Premium, alors  <br/> **Paramètres avancés** \> **Accès**, **Utiliser Windows Hello Entreprise comme mode de connexion à Windows** est **Activé**, avec les paramètres supplémentaires suivants :  <br/> **Définir le nombre minimal de caractères obligatoires dans le code confidentiel** est défini sur **4**.  <br/> **Configurer l'utilisation des lettres majuscules dans le code confidentiel Windows Hello Entreprise** est défini sur **Ne pas autoriser l'utilisation des majuscules pour le code confidentiel**.  <br/> **Configurer l'utilisation des lettres minuscules dans le code confidentiel Windows Hello Entreprise** est défini sur **Ne pas autoriser l'utilisation des minuscules pour le code confidentiel**.  <br/> **Configurer l'utilisation des caractères spéciaux dans le code confidentiel Windows Hello Entreprise** est défini sur **Ne pas autoriser l'utilisation de caractères spéciaux dans le code confidentiel**.  <br/> **Spécifiez la période (en jours) pendant laquelle un code PIN peut être utilisé avant que le système exige que l’utilisateur modifie** est défini sur **0**.  <br/> **Spécifier le nombre d'anciens codes confidentiels associés à un compte d'utilisateur qui peuvent être réutilisés** est défini sur **0**.  <br/> **Nombre d'échecs d'authentification autorisés avant la réinitialisation de l'appareil** est défini comme dans Microsoft 365 Entreprise (5 par défaut).  <br/> **Durée maximale (en minutes) autorisée pendant laquelle l'appareil peut rester inactif avant d'être verrouillé par un mot de passe ou un code confidentiel** est défini comme dans Microsoft 365 Entreprise.  |
 |Activer la récupération des données protégées  |**Paramètres avancés** \> **Protection des données**: **Afficher l'icône de protection des données d'entreprise** et **Utiliser Azure RMS pour WIP** sont définis sur **Activé**.  |
 |Protéger les autres emplacements cloud de l'entreprise  |**Paramètres avancés** \> **Domaines protégés** et **Ressources cloud** affichent les domaines et les sites SharePoint.  |
@@ -84,7 +85,7 @@ Pour explorer les paramètres disponibles, sélectionnez le nom de stratégie so
 
 Le tableau suivant décrit en détail comment les paramètres de configuration des appareils Windows 10 sont mis en correspondance avec les paramètres Intune.
   
-Pour trouver le paramètre Intune, connectez-vous avec vos informations d’identification d’administrateur Microsoft 365 Business Premium, puis accédez à [Portail Azure](https://portal.azure.com), sélectionnez **Autres services**, puis tapez Intune dans le **Filtre**, sélectionnez **Configuration de l’appareil**\>**Intune**\>**Profils**. Sélectionnez ensuite **Stratégie d’appareil pour Windows 10**\>**Propriétés**\>**Paramètres**.
+To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to [Azure portal](https://portal.azure.com), then select **More services**, and type in Intune into the **Filter**, select **Intune** \> **Device configuration** \> **Profiles**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Paramètre de stratégie d'appareil Windows 10**|**Paramètre(s) Intune**|
 |:-----|:-----|

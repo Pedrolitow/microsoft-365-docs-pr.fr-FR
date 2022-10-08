@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer les informations des appareils inscrits.
-ms.openlocfilehash: 5ecdfc691d85b86d882cf05dd5328d41dcdfa767
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 314c9dcd4b68a3c809b1f59e60e061b9498e9834
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863051"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187380"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Réinitialiser un appareil mobile dans Mobilité et sécurité de base
 
@@ -32,7 +33,7 @@ Vous pouvez utiliser la mobilité et la sécurité de base intégrées pour Micr
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Les appareils mobiles peuvent stocker des informations d’organisation sensibles et fournir l’accès aux ressources Microsoft 365 de votre organisation. Pour protéger les informations de votre organisation, vous pouvez réinitialiser ou supprimer des données d’entreprise :
+Les appareils mobiles peuvent stocker des informations d’organisation sensibles et fournir un accès aux ressources Microsoft 365 de votre organisation. Pour protéger les informations de votre organisation, vous pouvez réinitialiser ou supprimer des données d’entreprise :
 
 - **Réinitialisation** d’usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois la réinitialisation terminée, l’appareil est restauré dans ses paramètres d’usine.
 
@@ -57,7 +58,7 @@ Les appareils mobiles peuvent stocker des informations d’organisation sensible
 1. Sélectionnez le type de réinitialisation à distance que vous voulez effectuer.
 
     - Pour effectuer une réinitialisation complète et restaurer l’appareil dans ses paramètres d’usine, sélectionnez **Réinitialisation d’usine**.
-    - Pour effectuer une réinitialisation sélective et supprimer uniquement Microsoft 365 informations de l’organisation, **sélectionnez Supprimer les données d’entreprise**.
+    - Pour effectuer une réinitialisation sélective et supprimer uniquement les informations de l’organisation Microsoft 365, **sélectionnez Supprimer les données d’entreprise**.
     - Pour supprimer l’appareil de votre organisation, **sélectionnez Supprimer l’appareil**.
 
 1. Cliquez sur **Oui** pour confirmer.
@@ -80,9 +81,9 @@ La réinitialisation est envoyée immédiatement à l’appareil mobile et l’a
 
 |Impact sur le contenu|iOS|Android|
 |---|---|---|
-|Microsoft 365 données d’application sont réinitialisées si l’appareil est protégé par Intune stratégies App Protection. Les applications ne sont pas supprimées. Pour les appareils qui ne sont pas protégés par des stratégies de gestion des applications mobiles ,Outlook et OneDrive ne suppriment pas les données mises en cache.<br/>**Note** Pour appliquer Intune Protection d'applications stratégies, vous devez disposer d’une licence Intune.|Oui|Oui|
+|Les données d’application Microsoft 365 sont réinitialisées si l’appareil est protégé par Intune stratégies App Protection. Les applications ne sont pas supprimées. Pour les appareils non protégés par les stratégies de gestion des applications mobiles (MAM), Outlook et OneDrive ne suppriment pas les données mises en cache.<br/>**Note** Pour appliquer Intune Protection d'applications stratégies, vous devez disposer d’une licence Intune.|Oui|Oui|
 |Les paramètres de stratégie appliqués par mobilité et sécurité de base aux appareils ne sont plus appliqués ; les utilisateurs peuvent modifier les paramètres.|Oui|Oui|
-|Les profils de messagerie créés par Mobilité et sécurité de base sont supprimés et les e-mails mis en cache sur l’appareil sont supprimés.|Oui|N/A|
+|Email profils créés par Mobilité et sécurité de base sont supprimés et les e-mails mis en cache sur l’appareil sont supprimés.|Oui|N/A|
 
 > [!NOTE]
-> Portail d'entreprise application est disponible au App Store pour iOS et Play Store pour les appareils Android.
+> Portail d'entreprise application est disponible sur le App Store pour iOS et le Play Store pour appareils Android.

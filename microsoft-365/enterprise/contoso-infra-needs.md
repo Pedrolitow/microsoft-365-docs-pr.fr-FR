@@ -7,19 +7,20 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins métier de l’entreprise sont satisfaits par Microsoft 365 pour l’entreprise.
-ms.openlocfilehash: 793c867d47d76a03efad707d8447e04538c8ebb8
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont Microsoft 365 pour les entreprises répond aux besoins de l’entreprise.
+ms.openlocfilehash: 6dff78cd3cbc7a4c1e27a647f98b0573a4ea3947
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637492"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186744"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique et besoins métier de Contoso
 
@@ -107,9 +108,9 @@ Les besoins métier de Contoso se répartissent en cinq catégories principales 
 
 - Réduction de la surcharge informatique pour la gestion des logiciels exécutés sur les PC et appareils clients
 
-  Automatiser l’installation des mises à jour du système d’exploitation Windows et des Applications Microsoft 365 pour les grandes entreprises au sein de l’organisation.
+  Automatiser l’installation des mises à jour du système d’exploitation Windows et Applications Microsoft 365 pour les grandes entreprises au sein de l’organisation.
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Le mappage de l’entreprise Contoso doit Microsoft 365 pour l’entreprise
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Mappage des besoins de l’entreprise Contoso à Microsoft 365 pour les entreprises
 
 Le service informatique de Contoso a déterminé le mappage suivant des besoins métier pour Microsoft 365 E5 fonctionnalités avant le déploiement :
 
@@ -122,7 +123,7 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 |  | Accroître la créativité et l’innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sécurité |  |  |
 |  | Gestion des identités et des accès | Comptes d’administrateur général dédiés avec Azure AD Multi-Factor Authentication (MFA) et Azure AD Privileged Identity Management (PIM) <br> Authentification multifacteur pour tous les comptes d’utilisateur <br> Accès conditionnel <br> Lecteur de sécurité <br> Windows Hello <br> Windows Credential Guard |
-|  | Protection contre les menaces | Advanced Threat Analytics <br> Windows Defender <br> Defender pour Office 365 <br> Microsoft Defender pour Office 365 <br> Microsoft 365 investigation et réponse aux menaces <br> |
+|  | Protection contre les menaces | Advanced Threat Analytics <br> Windows Defender <br> Defender pour Office 365 <br> Microsoft Defender pour Office 365 <br> Investigation et réponse aux menaces Microsoft 365 <br> |
 |  | Protection des informations | Azure Information Protection <br> Protection contre la perte de données (DLP) <br> Protection des informations Windows (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
 |  | Gestion de la sécurité | Microsoft Defender pour le cloud  <br> Centre de sécurité Windows Defender |
 | Accès mobile et à distance, et partenaires professionnels |  |  |
@@ -137,7 +138,7 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez le [réseau local](contoso-networking.md) de Contoso Corporation et comment il a été optimisé pour l’accès et la latence pour Microsoft 365 ressources cloud.
+Découvrez le [réseau local](contoso-networking.md) de Contoso Corporation et comment il a été optimisé pour l’accès et la latence aux ressources cloud Microsoft 365.
 
 ## <a name="see-also"></a>Voir aussi
 

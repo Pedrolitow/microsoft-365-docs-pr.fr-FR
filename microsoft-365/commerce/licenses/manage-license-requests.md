@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment examiner et approuver ou refuser les demandes de licence des utilisateurs pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/22/2022
-ms.openlocfilehash: b4259c4c04284e47193d827a6a10214669a5c991
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9852243aa55c57e85d22c491fc5bf84fd714b09e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491004"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180844"
 ---
 # <a name="manage-self-service-license-requests"></a>Gérer les demandes de licence en libre-service
 
@@ -41,7 +42,7 @@ Pour afficher et gérer les demandes de licence, l’administrateur utilise l’
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur général pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur général pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-your-own-request-process"></a>Utiliser votre propre processus de demande
 

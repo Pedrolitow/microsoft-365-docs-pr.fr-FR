@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre locataire et vos utilisateurs répondent aux exigences, afin que vous puissiez utiliser le déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: f6dd5972dedebfa21d5770a789ae9477c8263801
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: c818a8824bb2c0ee49d6cc9cd27aba0b1f235475
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037586"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187248"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé de compléments fonctionne pour votre organisation
 
@@ -79,7 +80,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
 Microsoft Exchange stocke les manifestes de complément dans le locataire de votre organisation. L’administrateur qui déploie des compléments et les utilisateurs qui reçoivent ces compléments doivent se trouver sur une version de Exchange Online qui prend en charge l’authentification OAuth.
 
-Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. Vous pouvez vérifier la connectivité OAuth de chaque utilisateur à l'aide de l'applet de commande PowerShell [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity).
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
 
 ### <a name="admin-requirements"></a>Configuration requise pour l’administrateur
 
@@ -138,7 +139,7 @@ La fonctionnalité Déploiement centralisé prend actuellement en charge la majo
 
 Le déploiement centralisé prend en charge les affectations à des utilisateurs individuels, à des groupes et à tous les membres du locataire. La fonctionnalité Déploiement centralisé prend en charge les utilisateurs au sein de groupes de niveau supérieur ou de groupes sans groupes parents, mais pas les utilisateurs au sein de groupes imbriqués ou qui ont des groupes parents.
 
-Examinons l'exemple suivant où un complément est affecté à Nicoletta, à Ariane et au groupe Service commercial. Le Service des ventes Région ouest étant un groupe imbriqué, aucun complément n'est affecté à Noël et Jérôme.
+Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
 
 ![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -148,7 +149,7 @@ La manière la plus simple de détecter si un groupe contient des groupes imbriq
 
 ![Onglet Membres de la carte de visite Outlook.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l'exemple ci-dessous, vous pouvez voir sous l'onglet **Appartenance** de la carte de visite Outlook que le Sous-groupe 1 est membre du groupe Test.
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group.
 
 ![Onglet Appartenance de la carte de visite Outlook.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 

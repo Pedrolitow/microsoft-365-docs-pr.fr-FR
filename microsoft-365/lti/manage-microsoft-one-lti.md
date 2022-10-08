@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Découvrez comment effectuer des tâches clés de gestion de passerelle Microsoft LMS, notamment l’affichage, la suppression, la modification et la résolution des problèmes.
-ms.openlocfilehash: 77f89927a7beb7cd045c2325bd805efdf45996a0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ccf05bb497546bae153f2132e27440713661845b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944106"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187556"
 ---
 # <a name="manage-microsoft-lms-gateway-for-any-lms"></a>Gérer la passerelle Microsoft LMS pour n’importe quel LMS
 
@@ -114,7 +114,7 @@ Voici quelques problèmes courants de connexion et comment les résoudre.
     - Si le problème persiste, signalez le problème en sélectionnant le lien **Signaler un problème** en haut à droite.
 
 - **Autres erreurs**
-  - Pour toutes les autres erreurs, vous verrez le message d’erreur « Un problème s’est produit. Réessayez plus tard. »
+  - Pour toutes les autres erreurs, vous verrez le message d’erreur « Un problème s’est produit. Veuillez réessayer plus tard. »
     - Il peut s’agir d’une erreur de traitement interne.
     - Essayez de vous reconnecter après quelques heures.
       - Sélectionnez le bouton **Accéder à la page d’accueil** . Cette opération permet de revenir à la page d’accueil.

@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 0b1400dab104bdc76ddba50d324e526efaea9e42
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 06bdb86961a797b4ca30392e292101cc9e706f99
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702707"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203616"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>Exporter l’évaluation des bases de référence de sécurité par appareil
 
@@ -92,12 +94,12 @@ Propriété (ID)|Type de données|Description
 :---|:---|:---
 |configurationId|Chaîne|Identificateur unique pour une configuration spécifique dans le benchmark de référence.
 |profileId|Chaîne|Identificateur unique pour le profil évalué.
-|deviceId|String|Identificateur unique de l’appareil dans le service.
-|deviceName|String|Nom de domaine complet (FQDN) de l’appareil.
+|deviceId|Chaîne|Identificateur unique de l’appareil dans le service.
+|deviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.
 |isApplicable|Boolean|Indique si la configuration s’applique à cet appareil.
-|isCompliant|Booléen|Indique si l’appareil est conforme à la configuration.
+|isCompliant|Boolean|Indique si l’appareil est conforme à la configuration.
 |id|Chaîne|Identificateur unique de l’enregistrement, qui est une combinaison de DeviceId, ProfileId et ConfigurationId.
-|osVersion|String|Version spécifique du système d’exploitation en cours d’exécution sur l’appareil.
+|osVersion|Chaîne|Version spécifique du système d’exploitation en cours d’exécution sur l’appareil.
 |osPlatform|Chaîne|Plateforme de système d’exploitation s’exécutant sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les [systèmes d’exploitation et plateformes pris en charge par MDVM](tvm-supported-os.md) .
 |rbacGroupId|Int|ID de groupe de contrôle d’accès en fonction du rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 |rbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».

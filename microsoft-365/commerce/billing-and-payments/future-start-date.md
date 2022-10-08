@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -20,12 +21,12 @@ ms.custom:
 - commerce_billing
 - empty
 ms.date: 04/08/2022
-ms.openlocfilehash: a1f11990eb0642dd7d0a9f312a4075f01e7d46e8
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 8a7054388433f1cf5b93e703969ab05bb249d145
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111952"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180976"
 ---
 # <a name="understand-invoicing-for-future-start-dates"></a>Comprendre la facturation pour les dates de début futures
 

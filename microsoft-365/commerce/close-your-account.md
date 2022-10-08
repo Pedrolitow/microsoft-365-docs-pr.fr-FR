@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Lorsque vous fermez votre compte avec Microsoft, toutes les informations relatives à votre compte sont supprimées, y compris les licences, les utilisateurs et les données utilisateur.
 ms.date: 04/02/2021
-ms.openlocfilehash: a14dd1153d8030dd953c58404902a891aeefdaf9
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6a3bc064b3b1658fd1bd9124a23e0ec8c5a4ac02
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491756"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195806"
 ---
 # <a name="close-your-microsoft-account"></a>Fermer votre compte Microsoft
 
@@ -36,7 +37,7 @@ Lorsque vous fermez votre compte auprès de Microsoft, toutes les informations r
 
 Avant de commencer ce processus, veillez à sauvegarder les données que vous voulez conserver.
 
-Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="step-1-delete-users"></a>Étape 1 : Supprimer des utilisateurs
 
@@ -54,7 +55,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Microsoft
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous l’onglet **Produits** , recherchez un abonnement actif. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
-3. Dans le volet **Annuler l'abonnement**, choisissez la raison pour laquelle vous annulez. Si vous le souhaitez, vous pouvez fournir des commentaires.
+3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
 4. Sélectionnez **Enregistrer**.
 5. Répétez les étapes 1 à 4 pour annuler tous les abonnements actifs.
 
@@ -83,14 +84,14 @@ Vous pouvez également [utiliser PowerShell pour désactiver l’authentificatio
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Étape 5 : Supprimer le répertoire dans Azure Active Directory
 
 1. Connectez-vous au <a href="https://aad.portal.azure.com/" target="_blank">Centre d’administration Azure AD</a> avec un compte Administrateur général.
-2. Sélectionner **Azure Active Directory**.
+2. Sélectionnez **Azure Active Directory**.
 3. Basculez vers l’organisation que vous souhaitez supprimer.
 4. Sélectionnez **Supprimer le locataire**.
 5. Si votre organisation échoue à une ou plusieurs vérifications, vous voyez un lien vers plus d’informations sur la façon de passer les vérifications. Une fois que vous avez réussi toutes les vérifications, **sélectionnez Supprimer** pour terminer le processus.
 
 Une fois cette dernière étape terminée, votre compte microsoft est fermé et supprimé.
 
-## <a name="related-content"></a>Contenu connexe 
+## <a name="related-content"></a>Contenu associé 
 
 [Comprendre votre facture pour Microsoft 365 entreprise](./billing-and-payments/understand-your-invoice2.md) (article)\
 [Annuler votre abonnement](./subscriptions/cancel-your-subscription.md) (article)

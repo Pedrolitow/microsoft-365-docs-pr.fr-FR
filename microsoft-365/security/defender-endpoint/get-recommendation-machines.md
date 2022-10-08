@@ -11,17 +11,19 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1f670c4722cd6df542e5e8e91703970647ec9e19
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 45dda4b9f75ab11ceb0f621d2af35a0c3ecb5a9b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692770"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68173388"
 ---
 # <a name="list-devices-by-recommendation"></a>Répertorier les appareils par recommandation
 

@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous allez apprendre à utiliser le portail de suppression pour vous supprimer de la liste des expéditeurs bloqués Microsoft 365. Il s’agit de la meilleure réponse pour résoudre les erreurs d’accès refusé 5.7.511.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 3eb58e7620a0d79a4a4e8172b72fafd154df56a0
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a87c02b3ca8b48623c66f7d9606d03f7bb2bb9b3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598887"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066363"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Utilisez le portail de liste pour vous supprimer de la liste des expéditeurs bloqués et résoudre les erreurs d’accès refusé 5.7.511
 
@@ -57,7 +57,7 @@ Il existe de bonnes raisons pour que les expéditeurs se retrouvent dans la list
 
 1. Dans un navigateur web, accédez à <https://sender.office.com>.
 
-2. Suivez les instructions de la page. Assurez-vous que vous utilisez l'adresse de messagerie à laquelle le message d'erreur a été envoyé et l'adresse IP qui est spécifiée dans le message d'erreur. Vous ne pouvez entrer qu'une adresse de messagerie et une adresse IP par visite.
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. Cliquez sur **Envoyer**.
 
@@ -86,6 +86,6 @@ En cas de problème de remise d’un message électronique que vous avez envoyé
 
 Dans l’e-mail pour demander la suppression de cette liste, fournissez le code NDR complet et l’adresse IP. Microsoft vous contactera dans les 48 heures suivant les étapes suivantes.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Formulaire de suppression pour **Outlook.com, le service consommateur** est disponible [ici](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). Veillez à lire d’abord le [FAQ](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) pour obtenir _la direction de la soumission_ .

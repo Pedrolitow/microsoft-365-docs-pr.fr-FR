@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 description: Suivez le chemin d’un message entrant via la pile de filtrage des menaces dans Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
-ms.openlocfilehash: 6fdd05c5a6afdb9736594c19ca447d8212269a7c
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 38fb204ed2155eebd8af95615268197e3ea10abb
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709066"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066385"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protection contre les menaces étape par étape dans Microsoft Defender pour Office 365
 

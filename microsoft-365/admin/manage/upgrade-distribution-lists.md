@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution pour Groupes Microsoft 365 dans Exchange Online et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: e1ea8b16f36eee9cfde8eb968be0f1ed388913ab
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: ba0555011cba2dcc3bd8285d577c61ef3c7ddded
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085222"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203220"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Mettre à niveau les listes de distribution vers Groupes Microsoft 365 dans Exchange Online
 
@@ -175,7 +176,7 @@ Get-EligibleDistributionGroupForMigration
 
 ### <a name="who-can-run-the-upgrade-scripts"></a>Qui peut exécuter les scripts de mise à niveau ?
 
-Personnes disposant de droits d’administrateur général ou d’administrateur Exchange.
+Personnes avec des droits d’administrateur général ou d’administrateur Exchange.
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Pourquoi la carte de visite affiche-t-elle toujours une liste de distribution ? Que dois-je faire pour empêcher l’affichage d’une liste de distribution mise à niveau dans ma liste de suggestion automatique ?
 
@@ -194,7 +195,7 @@ Non. Le paramètre permettant d’activer les messages d’accueil est défini s
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Que se passe-t-il si une ou une partie des DLL ne sont pas mises à niveau ?
 
-Dans certains cas, les listes de distribution éligibles ne peuvent pas être mises à niveau. Par exemple :
+Dans certains cas, les listes de distribution éligibles ne peuvent pas être mises à niveau. Par exemple :
 
 - Un administrateur a appliqué une **stratégie d’adresse Email de groupe**, et la liste de distribution ne répond pas aux exigences de la stratégie.
 

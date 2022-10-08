@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.topic: how-to
 ms.custom:
 - autoir
 ms.subservice: mdo
-ms.openlocfilehash: 0b48a5d954bb77a8982fa09d03d3acc103973430
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6a7779ced613f5e6c175c2cd6a7181c2c4a00fa0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478660"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082858"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler des faux positifs/négatifs dans les fonctionnalités d’investigation et de réponse automatisées
 

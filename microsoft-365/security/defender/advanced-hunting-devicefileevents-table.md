@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 64962d5a6bfb3a051e64cb2658a073d9100c2b6b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 828068caa9838b45a5e1f9ae329205440dc77de0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466918"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68083052"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -95,7 +97,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SensitivitySubLabel` | `string` | Sous-étiquette appliquée à un e-mail, un fichier ou tout autre contenu pour la classer pour la protection des informations ; les sous-étiquettes de sensibilité sont regroupées sous des étiquettes de confidentialité, mais sont traitées indépendamment |
 | `IsAzureInfoProtectionApplied` | `boolean` | Indique si le fichier est chiffré par Azure Information Protection |
 | `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
-| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
+| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Protection d'application pour isoler l’activité du navigateur |
 | `AdditionalFields` | `string` | Informations supplémentaires sur l’entité ou l’événement |
 >[!NOTE]
 > Les informations de hachage de fichier sont toujours affichées lorsqu’elles sont disponibles. Toutefois, il existe plusieurs raisons possibles pour lesquelles un SHA1, SHA256 ou MD5 ne peut pas être calculé. Par exemple, le fichier peut se trouver dans un stockage distant, verrouillé par un autre processus, compressé ou marqué comme virtuel. Dans ces scénarios, les informations de hachage de fichier apparaissent vides.

@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs avec des balises utilisateur dans Microsoft Defender pour Office 365 Plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans Microsoft Defender pour Office 365 pour identifier rapidement les utilisateurs marqués.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 3e3fd5ad26e97e3d0bc04164d9595fb88be60427
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 28e1df8bd94cb9829bc8c68e6f13e376cf54126c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600398"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066341"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -152,6 +152,6 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 3. Lisez l’avertissement dans la boîte de dialogue de confirmation qui s’affiche, puis cliquez sur **Oui, supprimer**.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 [Configurer et passer en revue les comptes prioritaires dans Microsoft Defender pour Office 365](configure-review-priority-account.md)

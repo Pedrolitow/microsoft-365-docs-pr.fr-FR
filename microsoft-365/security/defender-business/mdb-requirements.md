@@ -15,15 +15,16 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: 881f12a69d4a7d3ba6743fc4e143cd06c681e53c
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+- tier1
+ms.openlocfilehash: 549f1c2151d6fe38f81a5d34d873df7d800f48c8
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710892"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096388"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>exigences de Microsoft Defender pour entreprises
 

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre Microsoft 365 pour les factures professionnelles.
 ms.date: 05/24/2022
-ms.openlocfilehash: 41dfca0b8b10d1c481ccb704c3fff5508eede6ef
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: b85f04d112562ed3d2e25d2b55130b61e4d55260
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664722"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195916"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -40,7 +41,7 @@ Votre facture fournit un récapitulatif des frais pour votre abonnement et inclu
 
 ## <a name="watch-understand-your-bill-or-invoice"></a>Regarder : Comprendre votre facture ou facture
 
-Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197915).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2209539).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
 
@@ -59,7 +60,7 @@ Le montant facturé pour votre abonnement reflète le prix de licence multiplié
 Si le montant facturé est différent de celui prévu, cela peut se produire pour quelques raisons :
 
 - Vous avez ajouté ou supprimé des licences de votre abonnement. Les licences modifiées à mi-terme sont répercutées sur la facture suivante. Vous pourrez voir un crédit et une refacturation pour la période de service précédente pour prendre en compte cette modification. Pour plus d’informations sur ce à quoi cela ressemble dans votre facture, consultez la [Page deux](#page-two) ci-dessous.
-- L’abonnement a été annulé. Vous recevez une facture après l’annulation avec tout solde impayé moins les crédits.
+- L’abonnement a été annulé. Vous recevez une facture après l’annulation avec tout solde en attente moins les crédits.
 - Votre abonnement est renouvelé pour un nouveau terme et le prix de la licence a changé.
 
 ## <a name="overview-of-the-invoice-pdf"></a>Vue d’ensemble de la facture. PDF
@@ -108,7 +109,7 @@ La **Période de facturation** correspond à la période qui s’est écoulée d
 
 Les **Conditions de paiement** indique le nombre de jours à compter de la date de facturation à laquelle le paiement est dû. La durée de paiement standard est de 30 jours.
 
-La **Date d’échéance** est la date d’échéance du paiement de la facture. Si votre abonnement est payé avec une carte bancaire ou un compte bancaire, nous faisons un prélèvement dans votre carte ou votre compte le jour suivant la date de facturation.
+**Due Date** is the date when the invoice payment is due. If your subscription is paid with a credit card or bank account, we charge your card or account the day after the Invoice Date.
 
 ### <a name="billing-summary"></a>Résumé de facturation
 
@@ -161,7 +162,7 @@ La section **Frais pendant cette période de facturation** affiche les modificat
 Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de commande correspondant à votre abonnement.
 
 > [!NOTE]
-> Vous ne pouvez pas ajouter un numéro de bon de commande pour une facture existante. Le numéro de bon de commande sera mentionné sur toutes les futures factures.
+> You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sur l’onglet **Produits**, sélectionnez l’abonnement que vous souhaitez modifier.

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.date: 05/21/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b7d69821615fed5923dd5e69bc4da823fabceae4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 13285e39548f86dada8b13cc78d9f972ae80a8f1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702751"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203594"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Examiner les événements et les erreurs à l’aide de observateur d'événements
 
@@ -57,7 +59,7 @@ Par exemple, si les appareils n’apparaissent pas dans la **liste Des appareils
 
    ****
 
-   |ID de l'événement|Message|Description|Action|
+   |ID d’événement|Message|Description|Action|
    |---|---|---|---|
    |1|Microsoft Defender pour point de terminaison service démarré (version`variable`).|Se produit pendant le démarrage, l’arrêt et l’intégration du système.|Notification d’exploitation normale ; aucune action n’est requise.|
    |2|Microsoft Defender pour point de terminaison arrêt du service.|Se produit lorsque l’appareil est arrêté ou hors-bord.|Notification d’exploitation normale ; aucune action n’est requise.|
@@ -79,10 +81,10 @@ Par exemple, si les appareils n’apparaissent pas dans la **liste Des appareils
    |20|Impossible d’attendre la fin d’OOBE (Windows Welcome). Code d’échec : `variable`.|Erreur interne.|Si cette erreur persiste après un redémarrage du système, vérifiez que toutes les mises à jour Windows sont entièrement installées.|
    |25|Microsoft Defender pour point de terminaison service n’a pas pu réinitialiser l’état d’intégrité dans le Registre. Code d’échec : `variable`.|L’appareil n’a pas été intégré correctement. Il signale au portail, mais le service peut ne pas apparaître comme inscrit dans SCCM ou dans le Registre.|Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Consultez [Les appareils clients Windows intégrés](configure-endpoints.md).|
    |26|Microsoft Defender pour point de terminaison service n’a pas pu définir l’état d’intégration dans le Registre. Code d’échec : `variable`.|L’appareil n’a pas été intégré correctement. <p> Il signale au portail, mais le service peut ne pas apparaître comme inscrit dans SCCM ou dans le Registre.|Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Consultez [Les appareils clients Windows intégrés](configure-endpoints.md).|
-   |27|Microsoft Defender pour point de terminaison service n’a pas pu activer le mode sense dans l’Antivirus Microsoft Defender. Échec du processus d’intégration. Code d’échec : `variable`.|Normalement, l’Antivirus Microsoft Defender passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s’exécute correctement sur l’appareil et que l’appareil est signalé à Defender pour point de terminaison.|Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Consultez [Les appareils clients Windows intégrés](configure-endpoints.md). <p> Vérifiez que la protection anti-programme malveillant en temps réel s’exécute correctement.|
+   |27|Microsoft Defender pour point de terminaison service n’a pas pu activer le mode sense dans Microsoft Defender Antivirus. Échec du processus d’intégration. Code d’échec : `variable`.|Normalement, Microsoft Defender Antivirus passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s’exécute correctement sur l’appareil et que l’appareil signale à Defender pour point de terminaison.|Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Consultez [Les appareils clients Windows intégrés](configure-endpoints.md). <p> Vérifiez que la protection anti-programme malveillant en temps réel s’exécute correctement.|
    |28|Microsoft Defender pour point de terminaison l’inscription du service Expériences utilisateur connectées et Télémétrie a échoué. Code d’échec : `variable`.|Une erreur s’est produite avec le service de télémétrie Windows.|[Vérifiez que le service de données de diagnostic est activé](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy). <p> Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Consultez [Les appareils clients Windows intégrés](configure-endpoints.md).|
    |29|Impossible de lire les paramètres de désintégrage. Type d’erreur : %1, Code d’erreur : %2, Description : %3|Cet événement se produit lorsque le système ne peut pas lire les paramètres de désintégrage.|Vérifiez que l’appareil dispose d’un accès à Internet, puis réexélez le processus de désintégrage. Vérifiez que le package de désintégrage n’a pas expiré.|
-   |30|Microsoft Defender pour point de terminaison service n’a pas pu désactiver le mode sense aware dans l’Antivirus Microsoft Defender. Code d’échec : `variable`.|Normalement, l’Antivirus Microsoft Defender passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s’exécute correctement sur l’appareil et que l’appareil est signalé à Defender pour point de terminaison.|Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Consultez [Les appareils clients Windows intégrés](configure-endpoints.md). <p> Vérifiez que la protection anti-programme malveillant en temps réel s’exécute correctement.|
+   |30|Microsoft Defender pour point de terminaison service n’a pas pu désactiver le mode sense aware dans Microsoft Defender Antivirus. Code d’échec : `variable`.|Normalement, Microsoft Defender Antivirus passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s’exécute correctement sur l’appareil et que l’appareil signale à Defender pour point de terminaison.|Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Consultez [Les appareils clients Windows intégrés](configure-endpoints.md). <p> Vérifiez que la protection anti-programme malveillant en temps réel s’exécute correctement.|
    |31|Microsoft Defender pour point de terminaison l’annulation de l’inscription du service Expériences utilisateur connectées et Télémétrie a échoué. Code d’échec : `variable`.|Une erreur s’est produite avec le service de télémétrie Windows pendant l’intégration. Le processus de désintégrage se poursuit.|[Recherchez les erreurs avec le service de télémétrie Windows](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled).|
    |32|Microsoft Defender pour point de terminaison service n’a pas pu demander de s’arrêter après le processus de désintégrage. Code d’échec : %1|Une erreur s’est produite lors de la désintégrage.|Redémarrez l’appareil.|
    |33|Microsoft Defender pour point de terminaison service n’a pas pu conserver le GUID SENSE. Code d’échec : `variable`.|Un identificateur unique est utilisé pour représenter chaque appareil qui rend compte au portail. <p> Si l’identificateur ne persiste pas, le même appareil peut apparaître deux fois dans le portail.|Vérifiez les autorisations de Registre sur l’appareil pour vous assurer que le service peut mettre à jour le Registre.|
@@ -127,14 +129,14 @@ Par exemple, si les appareils n’apparaissent pas dans la **liste Des appareils
    |74|La balise d’appareil dans le Registre dépasse la limite de longueur. Nom de la balise : %2. Limite de longueur : %1.|La balise d’appareil dépasse la limite de longueur.|Utilisez une balise d’appareil plus courte.|
    |81|Impossible de créer Microsoft Defender pour point de terminaison journal automatique ETW. Code d’échec : %1|Échec de la création de la session ETW.|Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.|
    |82|Impossible de supprimer Microsoft Defender pour point de terminaison journal automatique ETW. Code d’échec : %1|Échec de la suppression de la session ETW.|Contactez le support technique.|
-   |84|Définissez le mode d’exécution de l’Antivirus Microsoft Defender. Forcer le mode passif : %1, code de résultat : %2.|Définissez le mode d’exécution defender (actif ou passif).|Notification d’exploitation normale ; aucune action n’est requise.|
+   |84|Définissez Microsoft Defender mode d’exécution de l’antivirus. Forcer le mode passif : %1, code de résultat : %2.|Définissez le mode d’exécution defender (actif ou passif).|Notification d’exploitation normale ; aucune action n’est requise.|
    |85|Échec du déclenchement Microsoft Defender pour point de terminaison exécutable. Code d’échec : %1|Échec de l’exécutable SenseIR.|Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.|
    |86|Redémarrant a arrêté le service externe qui doit être en place. Nom : %1, code de sortie : %2|Redémarrant le service externe.|Notification d’exploitation normale ; aucune action n’est requise.|
    |87|Impossible de démarrer le service externe. Nom : %1|Échec du démarrage du service externe.|Contactez le support technique.|
    |88|Mise à jour du type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3, code de sortie : %4|Mise à jour du type de démarrage du service externe.|Notification d’exploitation normale ; aucune action n’est requise.|
    |89|Impossible de mettre à jour le type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3|Impossible de mettre à jour le type de démarrage du service externe.|Contactez le support technique.|
-   |90|Échec de la configuration de System Guard Runtime Monitor pour se connecter au service cloud dans la région géographique %1. Code d’échec : %2|System Guard Runtime Monitor n’envoie pas de données d’attestation au service cloud.|Vérifiez les autorisations sur le chemin d’accès du registre : « HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm ». Si aucun problème n’est détecté, contactez le support technique.|
-   |91|Échec de la suppression des informations de géorégion de System Guard Runtime Monitor. Code d’échec : %1|System Guard Runtime Monitor n’envoie pas de données d’attestation au service cloud.|Vérifiez les autorisations sur le chemin d’accès du registre : « HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm ». Si aucun problème n’est détecté, contactez le support technique.|
+   |90|Échec de la configuration de System Guard Moniteur d’exécution pour se connecter au service cloud dans la région géographique %1. Code d’échec : %2|System Guard Runtime Monitor n’envoie pas de données d’attestation au service cloud.|Vérifiez les autorisations sur le chemin d’accès du registre : « HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm ». Si aucun problème n’est détecté, contactez le support technique.|
+   |91|Échec de la suppression des informations de géorégion System Guard Runtime Monitor. Code d’échec : %1|System Guard Runtime Monitor n’envoie pas de données d’attestation au service cloud.|Vérifiez les autorisations sur le chemin d’accès du registre : « HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm ». Si aucun problème n’est détecté, contactez le support technique.|
    |92|Arrêt de l’envoi du quota de cyberdonnées du capteur, car le quota de données est dépassé. Reprendra l’envoi une fois la période de quota dépassée. Masque d’état : %1|Dépasser la limite de limitation.|Notification d’exploitation normale ; aucune action n’est requise.|
    |93|Reprise de l’envoi de données cyberdéfense de capteur. Masque d’état : %1|Reprendre la soumission de données cyber.|Notification d’exploitation normale ; aucune action n’est requise.|
    |94|Microsoft Defender pour point de terminaison exécutable a démarré|L’exécutable SenseCE a démarré.|Notification d’exploitation normale ; aucune action n’est requise.|
