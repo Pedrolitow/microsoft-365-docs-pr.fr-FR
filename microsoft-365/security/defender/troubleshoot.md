@@ -15,17 +15,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security-compliance
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1bc37191d83ebe4e2a6d483d4f490d96d195082b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1909756f77f48d96dc997726019f4d2eb518d22e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474949"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069510"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Résoudre les problèmes liés au service Microsoft 365 Defender
 

@@ -8,14 +8,14 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
 - Adm_TOC
+- tier2
 ms.topic: article
 search.appverid:
 - MOE150
@@ -23,12 +23,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2e4618644860cf1f5370749e65d2d8bcb5aca8a0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b37def0b71311e28ff8df9cd580749347540cf82
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480271"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091034"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 

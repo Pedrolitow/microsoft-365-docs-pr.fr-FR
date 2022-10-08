@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez et gérez un ou plusieurs locataires Microsoft 365, avec des options pour les emplacements multigéographiques et mobiles.
-ms.openlocfilehash: a1fdf6cf86fd7e889712e020f5aaeb33284c96ae
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 66c6202d8b2726686018007765c1a25bb5ddef11
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730570"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986375"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Étape 1. Votre Microsoft 365 pour les locataires d’entreprise
 
@@ -90,7 +90,7 @@ Avec Microsoft 365 Multi-Geo, vous pouvez provisionner et stocker des données a
 
 Dans un environnement multigéographique, votre locataire Microsoft 365 se compose d’un emplacement par défaut ou central où votre abonnement Microsoft 365 a été créé à l’origine et d’un ou plusieurs emplacements satellites. Dans un locataire multigéographique, les informations sur les emplacements géographiques, les groupes et les informations utilisateur sont maîtrisées dans un locataire Azure AD global. Étant donné que les informations de votre locataire sont maîtrisées de manière centralisée et synchronisées dans chaque emplacement géographique, les expériences de collaboration impliquant toute personne de votre entreprise sont partagées entre les emplacements.
 
-Voici un exemple d’organisation qui a son emplacement par défaut en Europe et un emplacement satellite dans 北米. Les deux emplacements partagent le même locataire Azure AD global pour le seul locataire Microsoft 365.
+Voici un exemple d’organisation qui a son emplacement par défaut en Europe et un emplacement satellite dans Amérique du Nord. Les deux emplacements partagent le même locataire Azure AD global pour le seul locataire Microsoft 365.
 
 ![Exemple de locataire Microsoft 365 multigéographique.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 

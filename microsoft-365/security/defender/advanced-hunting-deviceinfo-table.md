@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier3
+- m365-security
 ms.topic: article
-ms.openlocfilehash: 1808e0fa69f1ea683986b534a88b93e9e4a53af0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d17eb655467acff37e7bcc22c01c10d12daa975e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482645"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68067221"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 

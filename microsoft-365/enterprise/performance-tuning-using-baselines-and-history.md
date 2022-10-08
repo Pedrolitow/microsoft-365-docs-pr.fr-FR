@@ -19,16 +19,17 @@ search.appverid:
 - BCS160
 ms.assetid: 1492cb94-bd62-43e6-b8d0-2a61ed88ebae
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Ent_O365
 - SPO_Content
 description: Découvrez comment vérifier l’historique des connexions de votre ordinateur client pour vous aider à détecter rapidement les problèmes émergents.
-ms.openlocfilehash: 2a4d904fe0b5a09851da5dc83ca238eb70638f9a
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 47c1b8151fc54112a3d9eabf14f177f05278ff6d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670496"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172310"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Optimisation des performances d’Office 365 à l’aide de lignes de référence et de l’historique des performances
 

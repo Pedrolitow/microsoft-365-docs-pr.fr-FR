@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 - m365solution-frontline
 - m365solution-scenario
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -21,12 +23,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 5e8753511c0171dcbb864528a31c0a65209726c7
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7dd25adf5e4a77a4112582b25a694fede5cc36e5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615060"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68068682"
 ---
 # <a name="corporate-communications-with-frontline-workers"></a>Communications d’entreprise avec les employés de première ligne
 

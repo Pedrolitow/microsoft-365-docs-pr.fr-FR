@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: Découvrez comment valider vos informations de contact pour se conformer aux réglementations de l’ICANN.
-ms.openlocfilehash: f3c35bd258800ef7edc0cd1f7fda0b2f319ded4c
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 9c7b59d964567d51bbf01cabd7961cc338396cea
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467907"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186962"
 ---
 # <a name="icann-verification-of-contact-information"></a>Vérification par l’ICANN des informations de contact
 
@@ -37,6 +38,6 @@ Pour validation, un e-mail est envoyé à l’adresse de l’inscrit.
 
 L’e-mail se présente comme suit :
 
-![Exemple d’e-mail.](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
+![Email exemple.](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
 
 

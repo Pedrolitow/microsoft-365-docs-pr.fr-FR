@@ -13,15 +13,16 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 0e8ed4d923375d8d839533b6c69a114c4c53aa28
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: bcbf2a52e14b2a382581612c026589df4612e374
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822497"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68068784"
 ---
 # <a name="manage-shift-based-access-for-frontline-workers-in-teams"></a>Gérer l'accès par shift dans Teams pour les travailleurs de première ligne
 

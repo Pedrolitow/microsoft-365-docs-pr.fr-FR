@@ -1,5 +1,5 @@
 ---
-title: Flux de messagerie dans EOP
+title: Flux de courriers dans EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,13 +15,14 @@ ms.custom:
 description: Administration pouvez en savoir plus sur les options de configuration du flux de messagerie et du routage dans Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 15a0bf969a1b1c8254845be3c4c06eb556366bf1
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+search.appverid: met150
+ms.openlocfilehash: e95a0afe2cafdcf26c1adf51fb96922eba7250ff
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597865"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091936"
 ---
 # <a name="mail-flow-in-eop"></a>Flux de courriers dans EOP
 
@@ -52,6 +53,6 @@ Dans les environnements hybrides où EOP protège les boîtes aux lettres Exchan
 
 ## <a name="verify-mail-flow"></a>Vérifier le flux de messagerie
 
-Pour vérifier que votre configuration d'EOP, y compris celle de votre connecteur, fonctionne correctement, consultez la section « Comment savoir si cette tâche a fonctionné ? » dans la rubrique [Configurer votre service EOP](/exchange/standalone-eop/set-up-your-eop-service).
+To verify that your EOP setup, including your connector configuration, is working correctly, see the "How do you know this task worked?" section in [Set up your EOP service](/exchange/standalone-eop/set-up-your-eop-service).
 
 [Tester le flux de messagerie en validant vos connecteurs Microsoft 365](/exchange/mail-flow-best-practices/test-mail-flow) fournit des instructions pour tester que votre flux de messagerie est correctement configuré.

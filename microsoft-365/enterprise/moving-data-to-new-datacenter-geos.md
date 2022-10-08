@@ -3,7 +3,7 @@ title: Déplacement de données de base vers de nouvelles zones géographiques d
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 09/23/2022
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,12 +15,13 @@ f1.keywords:
 - NOCSH
 description: Découvrez les nouvelles zones géographiques de centre de données Office 365 et comment utiliser l’option de résidence des données pour demander un déplacement de vos données principales vers une nouvelle zone géographique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d17c0906d26b8b5ff0d1758255cb9f74ab94c82
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.collection: scotvorg
+ms.openlocfilehash: 084753e838f02eccd228603cbb6540c1b01d85bc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702245"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172420"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Déplacement de données de base vers de nouvelles zones géographiques de centre de données Microsoft 365
 
@@ -63,11 +64,13 @@ Nous fournissons une option de résidence des données aux clients Microsoft 365
 
 Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données.
 
-La complexité, la précision et l'échelle en fonction desquelles nous devons effectuer les déplacements de données dans un environnement automatisé et commandé de façon globale ne nous permettent pas d'indiquer la date de fin du déplacement pour votre client ou tout autre client unique. Les clients recevront une confirmation dans le centre de messages pour chaque service concerné une fois que le déplacement des données sera terminé.
+The complexity, precision and scale at which we need to perform data moves within a globally operated and automated environment prohibit us from sharing when a data move is expected to complete for your tenant or any other single tenant. Customers will receive one confirmation in Message Center per participating service when its data move has completed.
 
-Les déplacements de données sont des opérations de service principales qui ont une incidence minime sur les utilisateurs finals. Les fonctionnalités pouvant être concernées sont répertoriées à la page [Pendant et après le déplacement de vos données](during-and-after-your-data-move.md). Nous respectons le [contrat de niveau de service Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) concernant la disponibilité. Ainsi, les clients n'ont rien à préparer ou à surveiller pendant le déplacement. Si besoin, le client est averti de toute maintenance de service.
+Data moves are a back-end service operation with minimal impact to end-users. Features that can be impacted are listed on the [During and after your data move](during-and-after-your-data-move.md) page. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
 
 Les déplacements de données vers la nouvelle zone géographique du centre de données sont effectués sans coût supplémentaire pour le client.
+
+Pendant le processus de migration, Microsoft copie temporairement vos données de carnet d’adresses dans des ressources globales Microsoft où elles sont chiffrées et utilisées uniquement pour prendre en charge les opérations de continuité d’activité et de récupération d’urgence (BCDR). Une fois que Microsoft a terminé le déplacement des données de boîte aux lettres, Microsoft supprime ces données temporaires des ressources globales. Microsoft continue d’investir régulièrement dans des ressources mondiales et régionales. Au cours de l’année civile 2023, Microsoft prévoit d’utiliser des ressources régionales à des fins bcdr pendant le processus de migration.
 
 ## <a name="related-topics"></a>Voir aussi
 

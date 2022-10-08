@@ -1,6 +1,6 @@
 ---
-title: Configurer des remplacements locaux pour les paramètres de l’Antivirus Microsoft Defender
-description: Activez ou désactivez les utilisateurs des paramètres modifiés localement dans l’Antivirus Microsoft Defender.
+title: Configurer des remplacements locaux pour Microsoft Defender paramètres antivirus
+description: Activez ou désactivez les utilisateurs des paramètres modifiés localement dans Microsoft Defender Antivirus.
 keywords: remplacement local, stratégie locale, stratégie de groupe, gpo, verrouillage, fusion, listes
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -15,16 +15,18 @@ ms.custom: nextgen
 ms.date: 08/02/2022
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 8e6ad128b16ba548672b805bef1db06a9891e9db
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5d1857105c8043a38b486f435506a4dca017fee4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701849"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172222"
 ---
-# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie antivirus Microsoft Defender
+# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement Microsoft Defender paramètres de stratégie antivirus
 
 
 **S’applique à :**
@@ -36,9 +38,9 @@ ms.locfileid: "67701849"
 **Plateformes**
 - Windows
 
-Par défaut, les paramètres de l’Antivirus Microsoft Defender déployés via un objet stratégie de groupe sur les points de terminaison de votre réseau empêchent les utilisateurs de modifier localement les paramètres. Vous pouvez modifier cette configuration dans certains cas. Par exemple, il peut être nécessaire de permettre à certains groupes d’utilisateurs, tels que les chercheurs en sécurité et les enquêteurs sur les menaces, d’avoir un contrôle supplémentaire sur les paramètres individuels sur les points de terminaison qu’ils utilisent.
+Par défaut, Microsoft Defender paramètres antivirus déployés via un objet stratégie de groupe aux points de terminaison de votre réseau empêche les utilisateurs de modifier localement les paramètres. Vous pouvez modifier cette configuration dans certains cas. Par exemple, il peut être nécessaire de permettre à certains groupes d’utilisateurs, tels que les chercheurs en sécurité et les enquêteurs sur les menaces, d’avoir un contrôle supplémentaire sur les paramètres individuels sur les points de terminaison qu’ils utilisent.
 
-## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Configurer des remplacements locaux pour les paramètres de l’Antivirus Microsoft Defender
+## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Configurer des remplacements locaux pour Microsoft Defender paramètres antivirus
 
 Le paramètre par défaut de ces stratégies de remplacement local est **Désactivé**.
 
@@ -52,7 +54,7 @@ Pour configurer ces paramètres :
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe** accédez à **Configuration de l’ordinateur** et sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence sur **les composants** >  Windows de **l’Antivirus Microsoft Defender**, puis l’emplacement spécifié dans la [section Table des paramètres](#table-of-settings) (dans cet article).
+3. Développez l’arborescence sur **les composants** >  Windows **Microsoft Defender Antivirus**, puis **l’emplacement** spécifié dans la [section Table des paramètres](#table-of-settings) (dans cet article).
 
 4. Double-cliquez sur le **paramètre** de stratégie comme spécifié dans le tableau ci-dessous, puis définissez l’option sur la configuration souhaitée. Sélectionnez **OK**, puis répétez pour tous les autres paramètres.
 
@@ -64,11 +66,11 @@ Pour configurer ces paramètres :
 |---|---|---|---|
 | CARTES |Configurer le remplacement des paramètres locaux pour la création de rapports à Microsoft MAPS|[Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | Quarantaine|Configurer le remplacement des paramètres locaux pour la suppression d’éléments du dossier Quarantaine|[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md) |
-| Protection en temps réel|Configurer le remplacement des paramètres locaux pour surveiller l’activité de fichier et de programme sur votre ordinateur|[Activer et configurer la protection et la surveillance always on de l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protection en temps réel|Configurer le remplacement des paramètres locaux pour la surveillance de l’activité de fichier entrante et sortante | [Activer et configurer la protection et la surveillance always on de l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protection en temps réel|Configurer le remplacement des paramètres locaux pour l’analyse de tous les fichiers téléchargés et pièces jointes|[Activer et configurer la protection et la surveillance always on de l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protection en temps réel|Configurer le remplacement des paramètres locaux pour activer la surveillance du comportement|[Activer et configurer la protection et la surveillance always on de l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protection en temps réel|Configurer le remplacement de paramètre local pour activer la protection en temps réel|[Activer et configurer la protection et la surveillance always on de l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protection en temps réel|Configurer le remplacement des paramètres locaux pour surveiller l’activité de fichier et de programme sur votre ordinateur|[Activer et configurer Microsoft Defender protection et surveillance always on antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protection en temps réel|Configurer le remplacement des paramètres locaux pour la surveillance de l’activité de fichier entrante et sortante | [Activer et configurer Microsoft Defender protection et surveillance always on antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protection en temps réel|Configurer le remplacement des paramètres locaux pour l’analyse de tous les fichiers téléchargés et pièces jointes|[Activer et configurer Microsoft Defender protection et surveillance always on antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protection en temps réel|Configurer le remplacement des paramètres locaux pour activer la surveillance du comportement|[Activer et configurer Microsoft Defender protection et surveillance always on antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protection en temps réel|Configurer le remplacement de paramètre local pour activer la protection en temps réel|[Activer et configurer Microsoft Defender protection et surveillance always on antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Assainissement|Configurer le remplacement des paramètres locaux pour l’heure de la journée afin d’exécuter une analyse complète planifiée pour terminer la correction|[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md) |
 | Analyser|Configurer le remplacement des paramètres locaux pour le pourcentage maximal d’utilisation du processeur|[Configurer et exécuter des analyses](run-scan-microsoft-defender-antivirus.md) |
 | Analyser|Configurer le remplacement des paramètres locaux pour le jour de l’analyse de planification|[Configurer les analyses planifiées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
@@ -90,7 +92,7 @@ Par défaut, les listes qui ont été configurées dans la stratégie de groupe 
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe** accédez à **Configuration de l’ordinateur** et sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence sur **les composants Windows de** > **l’Antivirus Microsoft Defender**.
+3. Développez l’arborescence sur **les composants** >  Windows **Microsoft Defender Antivirus**.
 
 4. Double-cliquez sur **Configurer le comportement de fusion de l’administrateur local pour les listes** et définissez l’option **sur Désactivé**. Puis sélectionnez **OK**.
 
@@ -119,4 +121,4 @@ Par défaut, les listes qui ont été configurées dans la stratégie de groupe 
 
 - [Microsoft Endpoint Manager](/mem/endpoint-manager-overview)
 - [Antivirus Microsoft Defender dans Windows](microsoft-defender-antivirus-in-windows-10.md)
-- [Configurer l’interaction de l’utilisateur final avec l’antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Configurer l’interaction de l’utilisateur final avec Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)

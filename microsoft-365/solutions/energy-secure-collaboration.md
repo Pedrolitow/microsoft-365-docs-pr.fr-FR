@@ -10,16 +10,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 description: Microsoft 365 aide les organisations énergétiques à évoluer vers une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 295a9f0b1345c2aa146090eea8dca616dfd6a084
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: a2a987bd7dc1176359f5c6781b0c053438ec8bf6
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727323"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986881"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Principales considérations en matière de conformité et de sécurité pour le secteur de l’énergie
 
@@ -96,12 +96,12 @@ Microsoft 365 fournit des fonctionnalités de stratégie commune pour Microsoft 
 
 Les **stratégies de noms de groupes Office 365** permettent de s’assurer que les groupes Office 365 et, par conséquent, Microsoft Teams, sont nommés conformément selon la stratégie d’entreprise.  Le nom d’une équipe peut présenter des défis s’il n’est pas nommé correctement. Par exemple, les employés peuvent ne pas savoir dans quelles équipes travailler ou partager des informations s’ils ne sont pas nommés correctement. Les stratégies de dénomination de groupe peuvent aider à appliquer une bonne hygiène et peuvent également empêcher l’utilisation de mots spécifiques, tels que des mots réservés ou une terminologie inappropriée. 
 
-**Stratégies d’expiration de groupe Office 365** permet de s’assurer que les groupes Office 365 et, par conséquent, Microsoft Teams, ne sont pas conservés pendant des périodes plus longues que celles requises par l’organisation. Cette fonctionnalité permet d’éviter deux problèmes de gestion des informations clés :
+**Office 365 Group Expiration Policies** help to ensure that Office 365 Groups, and therefore Microsoft Teams, are not retained for longer periods of time than required by the organization. This capability helps to prevent two key information management issues:
 
 - la prolifération des équipes Microsoft qui ne sont pas nécessaires ou utilisées
 - la conservation excessive de données qui n’est plus requise par l’organisation
 
-Les administrateurs peuvent spécifier une période d’expiration en jours pour les groupes Office 365 (par exemple, 90, 180 ou 365 jours). Si un service soutenu par un groupe Office 365 est inactif pendant la période d’expiration, les propriétaires du groupe sont avertis. Si aucune action n’est effectuée, le groupe Office 365 et tous ses services associés, y compris Microsoft Teams, sont supprimés. 
+Administrators can specify an expiration period in days for Office 365 Groups (such as 90, 180 or 365 days). If a service backed by an Office 365 group is inactive for the expiration period, group owners are notified. If no action is taken, then the Office 365 Group and all its related services including Microsoft Teams are deleted. 
 
 La rétention excessive de données dans une équipe Microsoft peut présenter des risques de litige pour les organisations. L’utilisation de stratégies d’expiration est une méthode recommandée pour protéger l’organisation. Combiné avec des étiquettes et des stratégies de conservation intégrées, Microsoft 365 permet de garantir que les organisations conservent uniquement les données nécessaires pour respecter les obligations de conformité réglementaire.
 
@@ -181,7 +181,7 @@ Le déploiement des stratégies de la protection des données et la protection c
 
 Les réglementations nécessitent de nombreuses organisations pour gérer la conservation des documents clés pour l’organisation en fonction de la planification de conservation de l’entreprise gérée. Les organisations sont confrontées à des risques de non conformité réglementaire si les données sont supprimées trop tôt ou à des risques juridiques si les données sont conservées trop longtemps. Des stratégies efficaces de gestion des documents aident à garantir que les documents de l’organisation sont conservés selon des périodes de conservation prédéterminées conçues pour minimiser les risques pour l’organisation. Les périodes de conservation sont prescrites dans un calendrier de conservation des dossiers organisationnels géré de manière centralisée. Les périodes de conservation sont basées sur la nature de chaque type de document, les exigences de conformité réglementaire pour la conservation de types de données spécifiques et les stratégies définies de l’organisation. 
 
-L’attribution précise de périodes de rétention d’enregistrements dans les documents organisationnels peut nécessiter un processus granulaire qui affecte des périodes de rétention de manière unique à des documents individuels. L’application de stratégies de rétention des enregistrements à grande échelle peut être difficile pour de nombreuses raisons. Ces raisons incluent le grand nombre de documents au sein des organisations du secteur de l’énergie, ainsi que le fait que, dans de nombreux cas, les périodes de rétention peuvent être déclenchées par des événements organisationnels (tels que des contrats arrivant à expiration ou un employé quittant l’organisation).
+Assigning record retention periods accurately across organizational documents may require a granular process which assigns retention periods uniquely to individual documents. Applying record retention policies at scale can be challenging for many reasons. These reasons include the vast number of documents within energy industry organizations together with the fact that, in many cases, retention periods can be triggered by organizational events (such as contracts expiring or an employee leaving the organization).
 
 Microsoft 365 offre des fonctionnalités pour définir des étiquettes et des stratégies de conservation afin de mettre en œuvre facilement les exigences de gestion des enregistrements. Un gestionnaire d’enregistrements définit une étiquette de conservation, qui représente un « type d’enregistrement » dans un planning de conservation classique. L’étiquette de conservation contient les paramètres qui définissent les informations suivantes :
 

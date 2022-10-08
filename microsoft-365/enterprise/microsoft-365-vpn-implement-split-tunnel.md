@@ -11,18 +11,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
 f1.keywords:
 - NOCSH
 description: Guide pratique pour implémenter le tunneling fractionné VPN pour Microsoft 365
-ms.openlocfilehash: db406c36a7395f3d8c4faad6d7d7f4b34c83ff55
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 54a3ab1aa884d8a1645a04392c2a795e03c269ed
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560524"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172442"
 ---
 # <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>Implémentation du tunneling fractionné VPN pour Microsoft 365
 

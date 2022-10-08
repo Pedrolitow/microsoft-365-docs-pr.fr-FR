@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger les stratégies de sécurité qui se trouvent sous les paramètres de protection standard et de protection stricte dans les stratégies de sécurité prédéfinies.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b5f33bb7b30f63ad5d6705b7a9cbffb38f280a2c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1d53ee6b0eb163be2552eee42ed4851520b62f98
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479156"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069092"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analyseur de configuration pour les stratégies de protection dans EOP et Microsoft Defender pour Office 365
 

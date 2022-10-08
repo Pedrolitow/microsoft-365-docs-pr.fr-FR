@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: En savoir plus sur les interactions de paramètres entre Groupes Microsoft 365 et SharePoint
-ms.openlocfilehash: 2e29132b59b0b63917a87915185cacaacc01bbad
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: bbf15581e91f2c4399ccc03d49cd4d886ef5b4f2
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727631"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986749"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Interactions de paramètres entre Groupes Microsoft 365 et SharePoint
 

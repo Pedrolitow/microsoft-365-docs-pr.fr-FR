@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -19,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Pour les adresses IP de destination et les URL pour le trafic Microsoft 365, utilisez cette liste d’articles pour les points de terminaison Internet des différents clouds Microsoft 365.
-ms.openlocfilehash: 978dd6f2901c2b965a43a273d647830e2e9e0bc9
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 94728e43d219f9f36fd0a7d535b225c8b49f2024
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570070"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196136"
 ---
 # <a name="microsoft-365-endpoints"></a>Points de terminaison Microsoft 365
 

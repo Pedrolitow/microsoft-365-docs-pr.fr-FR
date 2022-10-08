@@ -12,16 +12,17 @@ ms.reviewer: pandrew1
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre de Administration Microsoft 365
-ms.openlocfilehash: 07f4de193d9e7545895b030cfb77d8244c3cee05
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 5d9ed3634523de53dee73cfee53c621d62afdf89
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672180"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172508"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre de Administration Microsoft 365
 
@@ -238,7 +239,7 @@ Si vous avez chargé des données de génération dans votre tableau de bord qua
 
 7. Cliquez sur **le bouton Charger** en bas du panneau pour charger les emplacements du bureau.
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Qu’est-ce qu’une porte d’entrée du service Microsoft 365 ?
 

@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir backscatter et Microsoft Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5cc6bacfa7d66f9fa4f520f7826d8712861e98e2
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c6d9cffba7bc6dbfb5b0163051650371beccae1d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483253"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069048"
 ---
 # <a name="backscatter-in-eop"></a>Rétrodiffusion dans EOP
 

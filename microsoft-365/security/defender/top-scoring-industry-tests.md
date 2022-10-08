@@ -12,15 +12,15 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: -m365-security-compliance - tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 02d996e9e2da6083b228a55bb4a173601a378dcb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5e126c1e912e2e0575d23d486908cb2b1da7cd29
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474685"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069532"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Test le plus élevé parmi les tests du secteur d’activité
 
@@ -30,7 +30,7 @@ Les technologies [Microsoft 365 Defender](https://www.microsoft.com/security/bus
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) est une suite de défense d’entreprise pré-et post-violation unifiée qui coordonne en natif la détection, la prévention, les examens et la réponse sur les points de terminaison, les identités, les messages électroniques et les applications pour fournir une protection intégrée contre les attaques sophistiquées.
+[Microsoft 365 Defender](microsoft-365-defender.md) is a unified pre- and post-breach enterprise defense suite. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
 Microsoft 365 Defender combine en une seule solution les fonctionnalités de [Microsoft Defender pour point de terminaison](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender pour Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender pour Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) et [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
@@ -54,7 +54,7 @@ L’évaluation produit AV-TEST et les tests du Rapport de certification sur tro
 
 - Test utilisateur d’entreprise AV-TEST de novembre et décembre 2021 : [Score de protection 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2021/microsoft-defender-antivirus-4.18-212622/)<sup>**Le plus récent**</sup>
 
-    L’antivirus Microsoft Defender a obtenu un score de protection parfait de 6.0/6.0, avec 100% en novembre et décembre. 18 870 échantillons de logiciels malveillants ont été utilisés.
+    Microsoft Defender Antivirus achieved a perfect Protection score of 6.0/6.0, with 100% in November and December. 18,870 malware samples were used.
 
 - Test utilisateur d’entreprise AV-TEST d’octobre 2021 : [Score de protection 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2021/microsoft-defender-antivirus-4.18-212518/)
 

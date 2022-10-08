@@ -1,5 +1,6 @@
 ---
 title: Propriétés détaillées dans le journal d’audit
+description: Cet article fournit des descriptions des propriétés supplémentaires incluses lorsque vous exportez des résultats pour un enregistrement de journal d’audit Office 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,21 +11,20 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: Cet article fournit des descriptions des propriétés supplémentaires incluses lorsque vous exportez des résultats pour un enregistrement de journal d’audit Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba8f8df40edf484389a5a7e9cec789ab8a3fc7fe
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 59e5e3b5317cd2497563a1b0842361eb387e43a1
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817331"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68129758"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propriétés détaillées dans le journal d’audit
 
@@ -68,7 +68,7 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service dan
 |Opération|Nom de l’activité de l’utilisateur ou de l’administrateur. La valeur de cette propriété correspond à la valeur qui a été sélectionnée dans la liste **déroulante Activités** . Si **les résultats d’affichage de toutes les activités ont été sélectionnés** , le rapport inclut des entrées pour toutes les activités utilisateur et administrateur pour tous les services. Pour obtenir une description des opérations/activités qui sont enregistrées dans le journal d’audit, consultez l’onglet **Activités auditées** dans [rechercher le journal d’audit dans le Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> Pour une activité d’administration Exchange, cette propriété identifie le nom de la cmdlet qui a été exécutée.|Tous|
 |OrganizationId|GUID de votre organisation.|Tous|
 |Path|Nom de dossier de la boîte aux lettres dans laquelle se trouve le message consulté. Cette propriété identifie également le dossier dans lequel un message est créé ou copié/déplacé.|Exchange (activité de boîte aux lettres)|
-|Paramètres|Pour l’activité d’administrateur Exchange, nom et valeur de tous les paramètres utilisés avec l’applet de commande identifiée dans la propriété Operation.|Exchange (activité d’administration)|
+|Parameters|Pour l’activité d’administrateur Exchange, nom et valeur de tous les paramètres utilisés avec l’applet de commande identifiée dans la propriété Operation.|Exchange (activité d’administration)|
 |RecordType|Type d’opération indiqué par l’enregistrement. Cette propriété indique le service ou la fonctionnalité dans lequel l’opération a été déclenchée. Pour obtenir la liste des types d’enregistrements et leur valeur ENUM correspondante (qui est la valeur affichée dans la propriété **RecordType** dans un enregistrement d’audit), consultez [le type d’enregistrement du journal d’audit](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).| 
 |ResultStatus|Indique si l’action (spécifiée dans la propriété **Operation** ) a réussi ou non.  <br/> Pour l’activité d’administrateur Exchange, la valeur est **True** (réussite) ou **False** (échec).|Tous  <br/>|
 |SecurityComplianceCenterEventType|Indique que l’activité était un événement du portail de conformité. Toutes les activités du centre de conformité ont la valeur **0** pour cette propriété.|Centre de sécurité et conformité|
@@ -85,7 +85,7 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service dan
 |TeamName|Nom d’une équipe dans Microsoft Teams.|Microsoft Teams|
 |UserAgent|Informations sur le navigateur de l’utilisateur. Ces informations sont fournies par le navigateur.|SharePoint|
 |UserDomain|Informations d’identité sur l’organisation du locataire de l’utilisateur (acteur) qui a effectué l’action.|Azure Active Directory|
-|UserId|Utilisateur qui a effectué l’action (spécifiée dans la propriété **Operation** ) qui a entraîné la journalisation de l’enregistrement. Les enregistrements d’audit pour l’activité effectuée par les comptes système (tels que SHAREPOINT\system ou NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit. Une autre valeur courante pour la propriété UserId est app@sharepoint. Ceci indique que l'«utilisateur » qui a effectué l'activité était une application ayant obtenu les autorisations nécessaires dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. <br/><br/>Pour plus d’informations, consultez l’article suivant :<br/> [Utilisateur sharepoint d’application\@dans les enregistrements d’audit](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> ou <br/>[Comptes système dans les enregistrements d’audit de boîte aux lettres Exchange](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Tous|
+|UserId|Utilisateur qui a effectué l’action (spécifiée dans la propriété **Operation** ) qui a entraîné la journalisation de l’enregistrement. Les enregistrements d’audit pour l’activité effectuée par les comptes système (tels que SHAREPOINT\system ou NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit. Une autre valeur courante pour la propriété UserId est app@sharepoint. Ceci indique que l'«utilisateur » qui a effectué l'activité était une application ayant obtenu les autorisations nécessaires dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. <br/><br/>Pour plus d’informations, consultez l’article suivant :<br/> [Utilisateur sharepoint d’application\@dans les enregistrements d’audit](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> or <br/>[Comptes système dans les enregistrements d’audit de boîte aux lettres Exchange](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Tous|
 |UserKey|ID de remplacement pour l’utilisateur identifié dans la propriété **UserID** . Par exemple, cette propriété est remplie avec l’ID unique passport (PUID) pour les événements effectués par les utilisateurs dans SharePoint. Cette propriété peut également spécifier la même valeur que la propriété **UserID** pour les événements qui se produisent dans d’autres services et événements effectués par des comptes système.|Tous|
 |UserType|Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur. <br/> <br/> **0** - Un utilisateur régulier. <br/>**2** - Un administrateur dans votre organisation Microsoft 365. <sup>1</sup> <br/>**3** - Un compte système d’administrateur ou de centre de données Microsoft. <br/>**4** - Un compte système. <br/>**5** - Une application. <br/>**6** - Principal de service.<br/>**7** - Une stratégie personnalisée.<br/>**8** - Une stratégie système.|Tous|
 |Version|Indique le numéro de version de l’activité (identifiée par la propriété **Operation** ) journalisée.|Tous|

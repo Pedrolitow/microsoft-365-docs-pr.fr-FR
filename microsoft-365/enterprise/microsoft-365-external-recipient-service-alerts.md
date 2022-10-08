@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -20,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: Utilisez des alertes de service de destinataires externes pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîtes aux lettres.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 2eac85b5a4b6f0f1c7c8737041edc9de50b5a074
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 417dc0d7a545b1b345e20806a571760480f426d3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840450"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172486"
 ---
 # <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Alertes de service pour les messages en attente de remise aux destinataires externes dans Exchange Online surveillance
 

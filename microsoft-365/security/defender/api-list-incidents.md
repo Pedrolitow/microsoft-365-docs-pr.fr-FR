@@ -15,18 +15,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: d86c26af54c4cd69e65cd5af952556a2553b728e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3ee24adb21dfbfb8882cc553aec477130a999cd7
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483055"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091276"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Répertorier les API d’incidents dans Microsoft 365 Defender
 

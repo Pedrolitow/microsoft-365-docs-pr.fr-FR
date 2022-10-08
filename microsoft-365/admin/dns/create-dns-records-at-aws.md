@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services sur Amazon Web Services (AWS) pour Microsoft.
-ms.openlocfilehash: 2f14bb3234ca48f61cf3fabc0942d35f44b61b60
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 7450eabe057eb5abea67d7902d494b0e40bebf6e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563250"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172068"
 ---
 # <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Amazon Web Services (AWS) à Microsoft 365
 
@@ -41,10 +42,10 @@ Une fois ces enregistrements ajoutés à AWS, votre domaine est configuré pour 
 
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 
-Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons vérifier qu’il vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que le domaine vous appartient.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
-> Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Pour commencer, accédez à la page de vos domaines sur le site AWS en utilisant [ce lien](https://console.aws.amazon.com/route53/home). Avant toute chose, vous serez invité à vous connecter.
 
@@ -135,7 +136,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     |Nom de l’enregistrement|Type d’enregistrement|Valeur|TTL (Seconds)|Stratégie de routage|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)|MX - Spécifie les serveurs de messagerie|0 *\<domain-key\>*.mail.protection.outlook.com. <br/> La valeur 0 est la valeur de priorité Max. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par une espace.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Note:** Obtenez le vôtre \<*domain-key*\> à partir de votre compte Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|300|Routage simple|
+    |(Leave this field empty.)|MX - Spécifie les serveurs de messagerie|0 *\<domain-key\>*.mail.protection.outlook.com. <br/> The 0 is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space. <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Note:** Obtenez le vôtre \<*domain-key*\> à partir de votre compte Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|300|Routage simple|
 
 1. Sélectionnez **Créer des enregistrements**.
 
@@ -212,7 +213,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     |Type d’enregistrement|Valeur|
     |:-----|:-----|
-    |TXT - Utilisé pour vérifier les expéditeurs de courriers électroniques et pour les valeurs spécifiques à l’application|v=spf1 include:spf.protection.outlook.com -all <br/> (Les guillemets requis pour les instructions à l'écran sont insérés automatiquement. Vous n'avez pas besoin de les entrer manuellement.)  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.|
+    |TXT - Utilisé pour vérifier les expéditeurs de courriers électroniques et pour les valeurs spécifiques à l’application|v=spf1 include:spf.protection.outlook.com -all <br/> (Les guillemets requis pour les instructions à l'écran sont insérés automatiquement. Vous n'avez pas besoin de les entrer manuellement.) <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.|
 
 1. Sélectionnez **Créer des enregistrements**.
 
@@ -302,7 +303,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
    :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Sélectionnez Créer des enregistrements.":::
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et mobile Gestion des appareils pour Microsoft 365
 
@@ -348,4 +349,4 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
    :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Sélectionnez Créer des enregistrements.":::
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier1
 ms.topic: article
-ms.openlocfilehash: 3e4682e7c1fb2cc0496bbf4c737b106e7c17fed1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9664fbcd1b4fe7796f3d2e30a7a44563635105d4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483187"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091342"
 ---
 # <a name="link-query-results-to-an-incident"></a>Lier les résultats d'une requête à un incident
 

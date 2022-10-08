@@ -11,18 +11,20 @@ ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
 - m365-frontline
+- highpri
 - m365solution-overview
 - m365solution-frontline
+- highpri
 ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 3dc183a73548d0fa8209438268373fa44de72659
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 1ffcc6f8cd82614f86b0c2f4b7217b6ca4e38146
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812477"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68068652"
 ---
 # <a name="get-started-with-microsoft-365-for-frontline-workers"></a>Prise en main de Microsoft 365 for frontline workers
 

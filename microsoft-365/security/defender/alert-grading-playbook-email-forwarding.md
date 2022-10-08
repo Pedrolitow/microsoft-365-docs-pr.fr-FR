@@ -15,19 +15,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - met150
-ms.openlocfilehash: 4afcc1d2b1ed8da1dca14575776dd720a56cda11
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 4077976243f52c1ace16a0e37361b5f40b9f5a62
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711024"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091320"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Classement des alertes pour l’activité de transfert de courrier suspect
 
@@ -108,7 +108,7 @@ Vous pouvez également analyser ces activités supplémentaires pour la boîte a
   - Observez le nombre d’e-mails récents envoyés par l’expéditeur qui sont détectés comme des hameçonnages, du courrier indésirable ou des programmes malveillants.
   - Observez le nombre d’e-mails envoyés contenant des informations sensibles.
 
-- Évaluez le comportement de connexion à risque dans microsoft Azure-Portal.
+- Évaluez le comportement de connexion à risque dans microsoft Portail Azure.
 - Recherchez les activités malveillantes sur l’appareil de l’utilisateur.
 
 ### <a name="are-the-activities-malicious"></a>Les activités sont-elles malveillantes ?

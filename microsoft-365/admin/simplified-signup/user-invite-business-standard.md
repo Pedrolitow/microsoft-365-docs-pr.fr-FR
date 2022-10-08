@@ -7,21 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: Accepter l’invitation à rejoindre une organisation Microsoft 365 pour entreprises
-ms.openlocfilehash: ba17c55e62d24717fd7a3cd978e85be32de99065
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: df8288afe3b7fd94e4044ece9cc0dc2a9e8b93cf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660968"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172816"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-user"></a>Accepter une invitation par e-mail à un abonnement Microsoft 365 entreprise (utilisateur)
 
@@ -65,7 +66,7 @@ Suivez les étapes de la migration des [données vers mon abonnement Microsoft 3
 
 Téléchargez et commencez à utiliser les [applications Office pour les entreprises](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>Je n’ai pas reçu d’e-mail de mise à niveau ?
 

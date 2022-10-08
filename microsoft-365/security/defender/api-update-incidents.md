@@ -15,18 +15,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: d15f7a580964736ebc81bd0dbeed534c4965426b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 37460a3d0f0f67ee907b8e7b214f859dc60e8dfe
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480973"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066847"
 ---
 # <a name="update-incidents-api"></a>API Mettre à jour les incidents
 
@@ -81,11 +83,11 @@ Dans le corps de la demande, fournissez les valeurs des champs qui doivent être
 
 Propriété|Type|Description
 ---|---|---
-statut|Énum|Spécifie l’état actuel de l’incident. Les valeurs possibles sont : `Active`, `Resolved`et `Redirected`.
+status|Énum|Spécifie l’état actuel de l’incident. Les valeurs possibles sont : `Active`, `Resolved`et `Redirected`.
 assignedTo|string|Propriétaire de l’incident.
-classification|Énum|Spécification de l’incident. Les valeurs possibles sont `Unknown`, `FalsePositive` et `TruePositive`.
-Détermination|Énum|Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware` et `Other`.
-étiquettes|string List|Liste des balises d’incident.
+classification|Énum|Spécification de l’incident. Les valeurs possibles sont : `TruePositive`, `Informational, expected activity`et `FalsePositive`.
+Détermination|Énum|Spécifie la détermination de l’incident. <p>Les valeurs de détermination possibles pour chaque classification sont les suivantes : <br><li> <b>Vrai positif</b> : `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware) et `Other` (Other). <li> <b>Activité informationnelle et attendue :</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence et `Other` (Autre). <li>  <b>Faux positif :</b> `Not malicious` (Clean) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence , `Not enough data to validate` (InsufficientData) et `Other` (Autre).
+étiquettes|liste de chaînes|Liste des balises d’incident.
 comment|string|Commentaire à ajouter à l’incident.
 
 >[!NOTE]

@@ -15,13 +15,13 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés informations de flux de messagerie).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: b83b2011af516359d219061ee88f06c7ac170369
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+ms.openlocfilehash: 2083054dba1792570d155647c3a3b38d7a76e4a6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598997"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066627"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
@@ -54,7 +54,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a essayé de se co
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Code d’erreur : 450 4.4.315 Délai de connexion dépassé
 
-En règle générale, cela signifie que Microsoft 365 ne peut pas se connecter au serveur de messagerie de destination. Les détails de l'erreur expliquent le problème. Par exemple :
+En règle générale, cela signifie que Microsoft 365 ne peut pas se connecter au serveur de messagerie de destination. Les détails de l'erreur expliquent le problème. Par exemple :
 
 - Votre serveur de messagerie local est en panne.
 
@@ -92,7 +92,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Code d’erreur : 450 4.4.317 La connexion au serveur distant a échoué
 
-En règle générale, cette erreur signifie que Microsoft 365 est connecté au serveur de messagerie de destination, mais le serveur a répondu avec une erreur immédiate ou ne répond pas aux exigences de connexion. Les détails de l'erreur expliquent le problème. Par exemple :
+En règle générale, cette erreur signifie que Microsoft 365 est connecté au serveur de messagerie de destination, mais le serveur a répondu avec une erreur immédiate ou ne répond pas aux exigences de connexion. Les détails de l'erreur expliquent le problème. Par exemple :
 
 - Le serveur de messagerie de destination a répondu par une erreur « Service non disponible », qui indique que le serveur ne peut pas maintenir la communication avec Microsoft 365.
 - Le connecteur est configuré pour exiger TLS, mais le serveur de messagerie de destination ne prend pas en charge TLS.

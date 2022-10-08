@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Découvrez comment identifier les personnes critiques d’une organisation et ajouter la balise de compte prioritaire pour leur fournir une protection supplémentaire.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 342c23269d3cc7f1c4ee3dd90148de4f14a275d5
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0133a684780ab59514d576bf619ebe2c4aa45099
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596113"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066583"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes Priority dans Microsoft Defender pour Office 365
 
@@ -126,7 +126,7 @@ La page d’entité d’e-mail est disponible dans **l’Explorateur de menaces*
 
 Les onglets situés en haut de la page d’entité vous permettent d’examiner efficacement les e-mails. Cliquez sur l’onglet **Analyse** . La protection des comptes prioritaires est désormais répertoriée sous **Les détails de la détection des menaces**.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - [Balises utilisateur dans Microsoft Defender pour Office 365](user-tags.md)
 - [Gérer et surveiller les comptes prioritaires](../../admin/setup/priority-accounts.md)

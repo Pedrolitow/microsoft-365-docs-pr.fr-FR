@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 225466eb1e022ebbea7602ed073ee4e201e65714
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 444f28eac9243aa5aca42b8584d910fbeed94971
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742527"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168372"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
 
@@ -37,11 +39,11 @@ Exécutez « **MDEClientAnalyzer.cmd /?** » pour afficher la liste des paramèt
 :::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="Paramètres de MDEClientAnalyzer.cmd" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
-> Quand un paramètre de dépannage avancé est utilisé, l’analyseur appelle également [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) pour collecter les journaux de support relatifs à l’Antivirus Microsoft Defender.
+> Quand un paramètre de dépannage avancé est utilisé, l’analyseur appelle également [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) pour collecter Microsoft Defender journaux de support antivirus.
 
 **-h** : appelle [l’enregistreur de performances Windows](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter une trace générale détaillée des performances en plus du jeu de journaux standard.
 
-**-l** - Appels dans [les Monitor de Desempenho Windows](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) intégrés pour collecter une trace de perfmon légère. Cela peut être utile lors du diagnostic de problèmes de dégradation des performances lents qui se produisent au fil du temps, mais difficiles à reproduire à la demande.
+**-l** : appelle des [Analyseur de performances Windows](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) intégrés pour collecter une trace de perfmon légère. Cela peut être utile lors du diagnostic de problèmes de dégradation des performances lents qui se produisent au fil du temps, mais difficiles à reproduire à la demande.
 
 **-c** - Appels dans [le moniteur de processus](/sysinternals/downloads/procmon) pour une surveillance avancée du système de fichiers, du registre et de l’activité de processus/threads en temps réel. Cela est particulièrement utile lors de la résolution des différents scénarios de compatibilité des applications.
 
@@ -82,4 +84,4 @@ L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lanc�
 >
 >   - **-r** : indique que l’outil est exécuté à partir d’un contexte distant (ou non interactif)
 >   - **-i** - Indicateur de scénario pour la collecte de la trace réseau avec d’autres journaux associés
->   - **-m** \# - Nombre de minutes à exécuter (5 minutes dans l’exemple ci-dessus)
+>   - **-M** \# - Nombre de minutes à exécuter (5 minutes dans l’exemple ci-dessus)

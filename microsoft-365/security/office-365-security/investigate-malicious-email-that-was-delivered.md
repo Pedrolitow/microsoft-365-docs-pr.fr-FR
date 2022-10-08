@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Découvrez comment utiliser les fonctionnalités d’investigation et de réponse aux menaces pour rechercher et examiner les e-mails malveillants.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fcd3d47c54c1f0d0dadc176e9272d85aae133e09
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5affd100b73478d1ee983b83dfdaea394a9d3acd
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599646"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092024"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Examiner les e-mails malveillants qui ont été remis dans Microsoft 365
 
