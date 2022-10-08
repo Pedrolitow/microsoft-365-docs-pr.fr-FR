@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 - m365solution-frontline
 - m365solution-scenario
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -21,12 +23,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: ea44b6f9bddea605cf20254124c634d9a4b8fe3b
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 342d07eb450a496362bdeb170e2962e9f8e6b767
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384295"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057302"
 ---
 # <a name="provide-initial-and-ongoing-training-to-help-onboard-your-frontline-workers"></a>Fournir une formation initiale et continue pour vous aider à intégrer vos employés de première ligne
 

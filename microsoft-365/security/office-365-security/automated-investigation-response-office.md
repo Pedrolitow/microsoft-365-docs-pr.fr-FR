@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 keywords: réponse automatisée aux incidents, investigation, correction, protection contre les menaces
 ms.date: 01/29/2021
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 91af37a052eac5bb2b43568fefd5c8e45f93d5bb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d2ad16d558ea9843670d51dfc7f64b7652e1c881
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480688"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055323"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’investigation et de la réponse automatisées dans Microsoft Defender pour Office 365
 

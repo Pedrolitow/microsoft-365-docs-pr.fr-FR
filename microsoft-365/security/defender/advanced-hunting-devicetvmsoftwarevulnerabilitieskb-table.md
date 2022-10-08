@@ -1,5 +1,5 @@
 ---
-title: Table DeviceTvmSoftwareVulnerabilitiesKB dans le schéma de repérage avancé
+title: Table DeviceTvmSoftwareVulnerabilitiesKB dans le schéma de chasse avancé
 description: Découvrez les vulnérabilités logicielles suivies par Gestion des vulnérabilités Microsoft Defender dans la table DeviceTvmSoftwareVulnerabilitiesKB du schéma de chasse avancé.
 keywords: repérage avancé, chasse aux menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, schéma, référence, kusto, table, colonne, type de données, description, gestion des vulnérabilités & menaces, TVM, gestion des appareils, logiciels, inventaire, vulnérabilités, ID CVE, CVSS, DeviceTvmSoftwareVulnerabilitiesKB
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 09f8f82b66f32814d578b0c5c2806b36e8cd5bdd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b2ddcad3dcc72dce0c7f6b24d441befcd52b45ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481809"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049449"
 ---
 # <a name="devicetvmsoftwarevulnerabilitieskb"></a>DeviceTvmSoftwareVulnerabilitiesKB
 

@@ -13,8 +13,10 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-retail
 - m365-frontline
+- highpri
 - m365solution-retail
 - m365solution-overview
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,12 +25,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: df4094a3ae3654fd282351f5527f941cd86a1741
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 33b48efaf813438732c6e7d72a37d49fbeeafd04
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614089"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054311"
 ---
 # <a name="get-started-with-microsoft-365-for-retail-organizations"></a>Prise en main de Microsoft 365 pour les entreprises de vente au détail
 

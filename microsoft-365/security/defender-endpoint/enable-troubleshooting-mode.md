@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 2ffe38f5c2bbd248968df709644972d2468b4826
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: d1aca56b87d037a90498baba9a6151ec3878d0f2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672334"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68175015"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Prise en main du mode de résolution des problèmes dans Microsoft Defender pour point de terminaison 
 
@@ -33,20 +34,20 @@ ms.locfileid: "67672334"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Microsoft Defender pour point de terminaison mode de résolution des problèmes vous permet de résoudre les problèmes liés aux différentes fonctionnalités de l’antivirus Microsoft Defender en les activant à partir de l’appareil et en testant différents scénarios, même s’ils sont contrôlés par la stratégie d’organisation. Le mode de résolution des problèmes est désactivé par défaut et vous oblige à l’activer pour un appareil (et/ou un groupe d’appareils) pendant une durée limitée. Notez qu’il s’agit exclusivement d’une fonctionnalité d’entreprise et nécessite un accès Microsoft 365 Defender.
+Microsoft Defender pour point de terminaison mode de résolution des problèmes vous permet de résoudre les différents Microsoft Defender fonctionnalités antivirus en les activant à partir de l’appareil et en testant différents scénarios, même s’ils sont contrôlés par la stratégie d’organisation. Le mode de résolution des problèmes est désactivé par défaut et vous oblige à l’activer pour un appareil (et/ou un groupe d’appareils) pendant une durée limitée. Notez qu’il s’agit exclusivement d’une fonctionnalité d’entreprise et nécessite un accès Microsoft 365 Defender.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Utilisez le mode de dépannage pour désactiver/modifier le paramètre de protection contre les falsifications à effectuer :
 
-  - Résolution des problèmes fonctionnels de l’Antivirus Microsoft Defender /compatibilité des applications (blocs d’application faux positifs).
-  - Résolution des problèmes de performances de l’Antivirus Microsoft Defender en utilisant le mode de dépannage et en manipulant la protection contre les falsifications et d’autres paramètres antivirus.
+  - Microsoft Defender résolution des problèmes fonctionnels de l’antivirus /compatibilité des applications (blocs d’application faux positifs).
+  - Microsoft Defender résolution des problèmes de performances de l’antivirus en utilisant le mode de résolution des problèmes et en manipulant la protection contre les falsifications et d’autres paramètres antivirus.
 
 - Si un événement de falsification se produit (par exemple, l’instantané est modifié ou supprimé), le `MpPreference` mode de résolution des problèmes se termine et la protection contre les falsifications est activée sur l’appareil.
 
-- Les administrateurs locaux, avec les autorisations appropriées, peuvent modifier les configurations sur des points de terminaison individuels qui sont généralement verrouillés par la stratégie. Le fait d’avoir un appareil en mode de dépannage peut être utile lors du diagnostic des scénarios de performances et de compatibilité de l’Antivirus Microsoft Defender.
+- Les administrateurs locaux, avec les autorisations appropriées, peuvent modifier les configurations sur des points de terminaison individuels qui sont généralement verrouillés par la stratégie. Le fait d’avoir un appareil en mode de dépannage peut être utile lors du diagnostic de Microsoft Defender scénarios de performances et de compatibilité de l’antivirus.
 
-  - Les administrateurs locaux ne pourront pas désactiver l’antivirus Microsoft Defender ni le désinstaller.
+  - Les administrateurs locaux ne pourront pas désactiver Microsoft Defender Antivirus ou le désinstaller.
   - Les administrateurs locaux pourront configurer tous les autres paramètres de sécurité dans la suite antivirus Microsoft Defender (par exemple, protection cloud, protection contre les falsifications).
 
 - Les administrateurs disposant des autorisations « Gérer les paramètres de sécurité » ont accès au mode de résolution des problèmes.
@@ -72,9 +73,9 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
 - Vous pouvez interroger tous les événements de mode de dépannage dans la chasse avancée.
 
 > [!NOTE]
-> Les modifications apportées à la gestion des stratégies sont appliquées à la machine lorsqu’elle est activement en mode de résolution des problèmes. Toutefois, les modifications n’entreront pas en vigueur tant que le mode de résolution des problèmes n’aura pas expiré. En outre, les mises à jour de la plateforme antivirus Microsoft Defender ne seront pas appliquées pendant le mode de résolution des problèmes. Les mises à jour de plateforme seront appliquées une fois le mode de résolution des problèmes terminé par une mise à jour Windows.
+> Les modifications apportées à la gestion des stratégies sont appliquées à la machine lorsqu’elle est activement en mode de résolution des problèmes. Toutefois, les modifications n’entreront pas en vigueur tant que le mode de résolution des problèmes n’aura pas expiré. En outre, Microsoft Defender mises à jour de la plateforme antivirus ne seront pas appliquées pendant le mode de résolution des problèmes. Les mises à jour de plateforme seront appliquées une fois le mode de résolution des problèmes terminé par une mise à jour Windows.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 - Appareil exécutant Windows 10 (version 19044.1618 ou ultérieure), Windows 11, Windows Server 2019 ou Windows Server 2022.
 
@@ -95,7 +96,7 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
 
 - Pour que le mode de dépannage soit appliqué, Microsoft Defender pour point de terminaison doit être inscrit par le locataire et actif sur l’appareil.
 
-- L’appareil doit exécuter activement l’Antivirus Microsoft Defender, version 4.18.2203 ou ultérieure.
+- L’appareil doit exécuter activement Microsoft Defender Antivirus, version 4.18.2203 ou ultérieure.
 
 ## <a name="enable-the-troubleshooting-mode"></a>Activer le mode de résolution des problèmes
 

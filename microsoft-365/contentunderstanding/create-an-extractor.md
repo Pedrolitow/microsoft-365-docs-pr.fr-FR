@@ -1,5 +1,5 @@
 ---
-title: Créer un extracteur Microsoft SharePoint Syntex
+title: Créer un extracteur dans Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 590ea0154a057051202e19b0bf6ff67c3b540d08
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: e80100c7a1f5614c3057188a630ae81182e87f7c
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583734"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026532"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
@@ -57,7 +57,7 @@ Vous devez créer un extracteur pour chaque entité dans le document à extraire
 
 L’étape suivante consiste à étiqueter l’entité à extraire dans vos exemples de fichiers d’entraînement.
 
-La création de l’extracteur ouvre la page de l’extracteur. Cette page affiche la liste des fichiers échantillons, le premier fichier de la liste étant affiché dans la visionneuse.
+Creating the extractor opens the extractor page. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
 
 1. Dans la visionneuse, sélectionnez les données à extraire des fichiers. Par exemple, si vous souhaitez extraire la *date de démarrage du service*, mettez en évidence la valeur de date du premier fichier (*lundi 14 octobre 2019*). puis **sélectionnez Enregistrer**. Normalement, la valeur sera affichée dans la liste d’exemples étiquetés du fichier, sous la colonne **Étiquette**.
 2. Sélectionnez **Fichier suivant** pour l’enregistrement automatique et ouvrez le fichier suivant dans la liste de la visionneuse. Vous pouvez également sélectionner **Enregistrer**, puis sélectionner un autre fichier dans la liste **Exemples étiquetés**.

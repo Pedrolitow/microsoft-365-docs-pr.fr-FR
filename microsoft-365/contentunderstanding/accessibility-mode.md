@@ -1,22 +1,26 @@
 ---
-title: Mode d’accessibilité dans SharePoint Syntex
+title: Mode d’accessibilité dans Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment utiliser le mode fonctionnalités d’accessibilité lors de l’apprentissage et de l’utilisation des modèles dans SharePoint Syntex.
-ms.openlocfilehash: 567abb862af27457c1eb9395e32bf68d98446887
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 1355e48b42ab74c9d03f5b2944f3a7d146b4dd18
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882327"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026444"
 ---
-# <a name="accessibility-mode-in-sharepoint-syntex"></a>Mode d’accessibilité dans SharePoint Syntex
+# <a name="accessibility-mode-in-microsoft-sharepoint-syntex"></a>Mode d’accessibilité dans Microsoft SharePoint Syntex
 
 Dans [SharePoint Syntex](index.md), les utilisateurs peuvent activer le mode d’accessibilité à toutes les étapes de l’entraînement du modèle (étiquette, apprentissage, test) lors de l’utilisation d’exemples de documents. L’utilisation du mode d’accessibilité peut aider les utilisateurs malvoyants à faciliter l’accessibilité au clavier à mesure qu’ils naviguent et étiquettent des éléments dans la visionneuse de documents.
 

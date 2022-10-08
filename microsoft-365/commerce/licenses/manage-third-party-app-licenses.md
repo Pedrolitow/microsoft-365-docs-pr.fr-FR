@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les licences pour les applications éditeurs de logiciels indépendants (ISV) dans le Centre d'administration Microsoft 365.
 ms.date: 06/08/2022
-ms.openlocfilehash: 0e83335c7130e3ae42c648ee680cf8137a7b1244
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7c27c4b1188990426868f86be052d8304eaf7da7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011735"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179634"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Gérer les licences d’application ISV dans le Centre d'administration Microsoft 365
 
@@ -56,7 +57,7 @@ Si vous avez acheté votre application via Microsoft, https://appsource.microsof
 
 Si vous avez acheté une application ISV par le biais d’un fournisseur d’application, contactez le fournisseur pour ajouter ou supprimer des licences de votre compte.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Selon l’application ISV que vous avez achetée, l’étape suivante consiste peut-être à installer l’application dans l’environnement de votre organisation. L’installation de l’application la rend disponible pour vos utilisateurs. Utilisez les étapes suivantes pour installer une application ISV dans votre environnement.
 
@@ -64,7 +65,7 @@ Selon l’application ISV que vous avez achetée, l’étape suivante consiste p
 2. Sélectionnez l’application que vous souhaitez installer dans votre compte.
 3. Dans la page des détails de la licence, sélectionnez **Installer ce produit**. Vous êtes redirigé vers un autre site de plateforme où vous installez l’application dans votre environnement.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article) \
 [Annuler l’affectation des licences des utilisateurs](../../admin/manage/remove-licenses-from-users.md) (article)

@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -23,18 +23,18 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: bea49c19489a14e86af169454d7c84283eef41d4
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 46c078a0ccb44b1c13877065886862dcfa9a67bf
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730416"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987189"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
 Les articles de cette série fournissent des recommandations pour la configuration de Microsoft Teams et de leur sites associés SharePoint pour la protection des fichiers qui équilibre la sécurité et la simplicité de la collaboration.
 
-Cet article définit quatre configurations différentes, en commençant par une équipe publique avec les stratégies de partage les plus ouvertes. Chaque configuration supplémentaire représente une élévation significative de la protection, la possibilité d’accéder et de collaborer sur des ressources étant dès lors réduite à l’ensemble approprié des utilisateurs. 
+This article defines four different configurations, starting with a public team with the most open sharing policies. Each additional configuration represents a meaningful step up in protection, while the ability to access and collaborate on files stored within teams is reduced to the relevant set of team members. 
 
 Les configurations décrites dans cet article respectent les recommandations de Microsoft quant aux trois niveaux de protection des données, des identités et des appareils :
 
@@ -89,7 +89,7 @@ Les autorisations obtenues permettent :
 
 Par défaut, les propriétaires et les membres de l'équipe peuvent partager le site lui-même avec les personnes extérieures à l’équipe, sans les ajouter réellement à l’équipe. Nous vous recommandons de le faire, car cela complique la gestion des utilisateurs et peut entraîner des personnes qui ne sont pas des membres de l’équipe ayant accès à des fichiers d’équipe qui ne sont pas en mesure de les regrouper. Pour éviter cela, à partir du niveau de la ligne de base de la protection, nous recommandons aux seuls propriétaires de partager le site directement.
 
-Les équipes n’ont pas d’option d’autorisation en lecture seule, le site SharePoint. Si vous avez des participants à des groupes de partenaires qui doivent pouvoir afficher les fichiers d’équipe, mais pas les modifier, songez à les ajouter directement au site SharePoint avec des autorisations de lecture.
+While teams do not have a read-only permission option, the SharePoint site does. If you have stakeholders of partner groups who need to be able to view team files but not edit them, consider adding them directly to the SharePoint site with Read permissions.
 
 ## <a name="sharing-files-and-folders"></a>Partager des fichiers et des dossiers
 
@@ -124,7 +124,7 @@ Reportez-vous aux références suivantes pour créer un environnement de partage
 
 Pour les niveaux sensibles et hautement sensibles, nous limitons l’accès au contenu SharePoint avec des étiquettes de confidentialité. L’accès conditionnel Azure AD offre de nombreuses options permettant de déterminer la manière dont les utilisateurs accèdent à Microsoft 365, y compris les limitations en fonction de l’emplacement, du risque, de la conformité des appareils et d’autres facteurs. Nous vous recommandons de lire l’article [Qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview) et d’envisager les stratégies supplémentaires qui peuvent être appropriées pour votre organisation.
 
-Notez que les invités n’ont souvent pas d’appareils gérés par votre organisation. Si vous autorisez des invités de l’un des niveaux, pensez aux types d’appareils qu’ils utiliseront pour accéder aux équipes et aux sites, et définissez en conséquence vos stratégies d’appareil non gérés.
+Note that guests often don't have devices that are managed by your organization. If you allow guests in any of the tiers, consider what kinds of devices they'll be using to access teams and sites and set your unmanaged device policies accordingly.
 
 ### <a name="control-device-access-across-microsoft-365"></a>Contrôle de l’accès à un appareil sur Microsoft 365
 
@@ -132,7 +132,7 @@ Le paramètre des appareils non gérés dans les étiquettes de confidentialité
 
 ![Capture d’écran de l’application cloud Office 365 dans une stratégie d’accès conditionnel Azure Active Directory](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
-L'utilisation d'une stratégie qui affecte tous les services Microsoft 365 peut conduire à une meilleure sécurité et à une meilleure expérience pour vos utilisateurs. Par exemple, lorsque vous bloquez l'accès aux appareils non gérés dans SharePoint uniquement, les utilisateurs peuvent accéder à la conversation dans une équipe avec un appareil non géré, mais perdront l'accès lorsqu'ils essaieront d'accéder à l'onglet **Fichiers**. L'utilisation de l'application en nuage Office 365 permet d'éviter les problèmes liés aux [dépendances de services](/azure/active-directory/conditional-access/service-dependencies).
+Using a policy that affects all Microsoft 365 services can lead to better security and a better experience for your users. For example, when you block access to unmanaged devices in SharePoint only, users can access the chat in a team with an unmanaged device, but will lose access when they try to access the **Files** tab. Using the Office 365 cloud app helps avoid issues with [service dependencies](/azure/active-directory/conditional-access/service-dependencies).
 
 ## <a name="next-step"></a>Étape suivante
 

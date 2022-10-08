@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Les utilisateurs peuvent apprendre à afficher et à agir sur les messages mis en quarantaine envoyés aux boîtes aux lettres partagées auxquelles ils disposent d’autorisations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 65e26cfe0fbe12967fbf08b8c12ef81b0b687843
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 933a61c75177d5df114aea0241a05a2614fa47f4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599514"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057653"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Afficher et libérer des messages mis en quarantaine à partir de boîtes aux lettres partagées
 
@@ -38,7 +38,13 @@ Auparavant, la possibilité pour les utilisateurs de gérer les messages mis en 
 
 À présent, le mappage automatique n’est plus nécessaire pour que les utilisateurs gèrent les messages mis en quarantaine qui ont été envoyés aux boîtes aux lettres partagées. Ça marche. Il existe deux méthodes différentes pour accéder aux messages mis en quarantaine qui ont été envoyés à une boîte aux lettres partagée :
 
-- Si l’administrateur a configuré des [stratégies de quarantaine](quarantine-policies.md) pour autoriser les notifications de quarantaine (anciennement les notifications de courrier indésirable de l’utilisateur final), tout utilisateur ayant accès aux notifications de mise en quarantaine dans la boîte aux lettres partagée peut cliquer sur le bouton **Révision** dans la notification pour accéder à la mise en quarantaine dans le portail Microsoft 365 Defender. Notez que cette méthode permet uniquement aux utilisateurs de gérer les messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée. Les utilisateurs ne peuvent pas gérer leurs propres messages de quarantaine dans ce contexte.
+- Si les instructions suivantes sont toutes vraies :
+  - Un administrateur a configuré [des stratégies de quarantaine](quarantine-policies.md) pour autoriser les notifications de mise en quarantaine (anciennement connues sous le nom de notifications de courrier indésirable de l’utilisateur final).
+  - L’utilisateur a accès aux notifications de mise en quarantaine de la boîte aux lettres partagée.
+  - L’utilisateur dispose d’autorisations d’accès total à la boîte aux lettres partagée (directement ou via un groupe de sécurité).
+
+  L’utilisateur peut cliquer sur le bouton **Révision** dans la notification pour passer en quarantaine dans le portail Microsoft 365 Defender. Cette méthode autorise uniquement l’accès aux messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée. Les utilisateurs ne peuvent pas gérer leurs propres messages de quarantaine dans ce contexte.
+
 - L’utilisateur peut [accéder à la mise en quarantaine dans le portail Microsoft 365 Defender](find-and-release-quarantined-messages-as-a-user.md) et cliquer sur **Filtrer** pour filtrer les résultats par **adresse de destinataire** (adresse e-mail de la boîte aux lettres partagée). Dans la page **de mise en quarantaine** principale, vous pouvez cliquer sur la colonne **Destinataire** pour trier par messages envoyés à la boîte aux lettres partagée.
 
 ## <a name="things-to-keep-in-mind"></a>Éléments à garder à l’esprit

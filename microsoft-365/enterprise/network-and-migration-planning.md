@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Cet article contient des liens vers des informations sur la planification, les tests et la migration du réseau vers Office 365.
-ms.openlocfilehash: 544bd636642bceea761ba9c60b28e7a3309cfd76
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8e5945691b9391ac33524f2e9b897a3421807ec0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701981"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185312"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 

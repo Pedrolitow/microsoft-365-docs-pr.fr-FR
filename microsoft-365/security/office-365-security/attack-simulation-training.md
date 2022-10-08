@@ -8,17 +8,18 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.subservice: mdo
-ms.openlocfilehash: 7983e1767565870cec1fb3457fc3466e99b0d8db
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: cfd17d6aeb21b05aef13c95489780ddcd209fbf0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474202"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048921"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque dans Defender pour Office 365
 
@@ -84,7 +85,7 @@ Les détails suivants s’affichent pour chaque charge utile :
 - **Nom de la charge utile**
 - **Langue** : langue du contenu de la charge utile. Le catalogue de charges utiles de Microsoft (global) fournit des charges utiles dans plus de 10 langues qui peuvent également être filtrées.
 - **Taux de clic** : nombre de personnes ayant cliqué sur cette charge utile.
-- **Taux de compromission prédit** : données historiques de la charge utile dans Microsoft 365 qui prédit le pourcentage de personnes qui seront compromises par cette charge utile.
+- **Taux de compromission prédit** : données historiques dans Microsoft 365 qui prédisent le pourcentage de personnes qui seront compromises par cette charge utile (utilisateurs compromis/ nombre total d’utilisateurs qui reçoivent la charge utile).
 - **Les simulations lancées** comptent le nombre de fois où cette charge utile a été utilisée dans d’autres simulations.
 
 Dans l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Dans** la zone de recherche, vous pouvez taper une partie du nom de la charge utile et appuyer sur Entrée pour filtrer les résultats.

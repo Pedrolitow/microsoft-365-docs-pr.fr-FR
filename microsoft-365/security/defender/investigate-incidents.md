@@ -15,17 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 53d458fdd15a403984fd6636a3b0c3cb54d0398d
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 2dbc3bc965a1c975b354a5698b3fa0c67e2cd39c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711145"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055433"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -123,7 +124,7 @@ Vous pouvez sélectionner la coche d’un appareil pour afficher les détails de
 À partir de la page de l’appareil, vous pouvez collecter des informations supplémentaires sur l’appareil, telles que toutes ses alertes, une chronologie et des recommandations de sécurité. Par exemple, à partir de l’onglet **Chronologie** , vous pouvez faire défiler la chronologie de l’ordinateur et afficher tous les événements et comportements observés sur l’ordinateur dans l’ordre chronologique, entrecoupés des alertes déclenchées.
 
 > [!TIP]
-> Vous pouvez effectuer des analyses à la demande sur une page d’appareil. Dans le portail Microsoft 365 Defender, choisissez Points de **terminaison > Inventaire des appareils**. Sélectionnez un appareil qui contient des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivies et sont visibles sur la page **d’inventaire des appareils** . Pour plus d’informations, consultez [Exécuter l’analyse antivirus Microsoft Defender sur les appareils](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> Vous pouvez effectuer des analyses à la demande sur une page d’appareil. Dans le portail Microsoft 365 Defender, choisissez Points de **terminaison > Inventaire des appareils**. Sélectionnez un appareil qui contient des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivies et sont visibles sur la page **d’inventaire des appareils** . Pour en savoir plus, consultez [Exécuter Microsoft Defender Analyse antivirus sur les appareils](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Utilisateurs
 

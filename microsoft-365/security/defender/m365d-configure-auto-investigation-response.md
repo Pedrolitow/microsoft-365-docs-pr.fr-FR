@@ -11,19 +11,19 @@ ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 4f0d9fe5057fb1aadf5631bff96bf81401268dd9
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: ed6437e990ca62934e1647bbfa113f3b163d8aef
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67468270"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051319"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités d’enquête et de réponse automatisées dans Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Ensuite, une fois que vous avez tous été configurés, vous pouvez [afficher et
 |---|---|
 |Conditions d’abonnement|L’un de ces abonnements : <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 avec le module complémentaire Microsoft 365 E5 Sécurité</li><li>Microsoft 365 A3 avec le module complémentaire sécurité Microsoft 365 A5</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> Consultez [Microsoft 365 Defender exigences en matière de licences](./prerequisites.md#licensing-requirements).|
 |Configuration requise pour le réseau|<ul><li>[Microsoft Defender pour Identity](/azure-advanced-threat-protection/what-is-atp) activé</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) configuré</li><li>[intégration Microsoft Defender pour Identity](/cloud-app-security/mdi-integration)</li></ul>|
-|Configuration requise pour les appareils Windows|<ul><li>Windows 11</li><li>Windows 10, version 1709 ou ultérieure installée (voir [les informations de publication windows](/windows/release-information/))</li><li>Les services de protection contre les menaces suivants ont été configurés :<ul><li>[Microsoft Defender pour point de terminaison](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
+|Configuration requise pour les appareils Windows|<ul><li>Windows 11</li><li>Windows 10, version 1709 ou ultérieure installée (voir [les informations de publication windows](/windows/release-information/))</li><li>Les services de protection contre les menaces suivants ont été configurés :<ul><li>[Microsoft Defender pour point de terminaison](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protection du contenu des e-mails et des fichiers Office|[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configuré|
 |Autorisations|Pour configurer les fonctionnalités d’investigation et de réponse automatisées, le rôle Administrateur général ou Administrateur de sécurité doit être attribué dans Azure Active Directory (<https://portal.azure.com>) ou dans le Centre d'administration Microsoft 365 (<https://admin.microsoft.com>). <p> Pour obtenir les autorisations nécessaires pour utiliser des fonctionnalités d’investigation et de réponse automatisées, telles que l’examen, l’approbation ou le rejet d’actions en attente, consultez [Autorisations requises pour les tâches du Centre d’actions](m365d-action-center.md#required-permissions-for-action-center-tasks).|
 |

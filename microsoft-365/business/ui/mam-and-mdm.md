@@ -10,9 +10,11 @@ ms.topic: conceptual
 f1_keywords:
 - O365E_understand_devices
 - BCS365_understand_devices
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les différences entre la gestion des appareils mobiles et la gestion des applications mobiles, ou GPM et GAM.
-ms.openlocfilehash: 6b4164d230803e7eac99c238f017707c7af8a1fe
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 5e47b7d69e65605b9615543ffdc0a6b787cdec35
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621757"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169648"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Différence entre la gestion des appareils mobiles et la gestion des applications mobiles
 

@@ -17,19 +17,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-pilotmtpproject
 - zerotrust-solution
 - highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.openlocfilehash: 59a227cc03a751e73470aff99e3fa04f490f7b7b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 15645d8058ef9508f1ed6bf08617ca3c9c5b3e9e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473895"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059413"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans un environnement pilote Microsoft 365 Defender
 
@@ -120,7 +121,7 @@ Tout d’abord, vous devez ajouter un contrôleur de domaine AD DS isolé et un 
 
    - Exécute Windows 10 version 1903 ou ultérieure.
    - Est joint au domaine du contrôleur de domaine AD DS.
-   - [L’antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) est activé. Si vous rencontrez des problèmes d’activation de l’antivirus Microsoft Defender, consultez cette [rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+   - [L’antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) est activé. Si vous rencontrez des problèmes pour activer Microsoft Defender Antivirus, consultez cette [rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
    - Est [intégré à Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Si vous utilisez des groupes de locataires et d’appareils, créez un groupe d’appareils dédié pour l’appareil de test et envoyez-le au niveau supérieur.

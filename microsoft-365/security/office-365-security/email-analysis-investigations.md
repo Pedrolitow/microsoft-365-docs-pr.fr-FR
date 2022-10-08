@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 keywords: réponse automatisée aux incidents, investigation, correction, protection contre les menaces
 description: Découvrez le fonctionnement de l’analyse des e-mails dans les enquêtes dans Microsoft Defender pour Office 365.
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b0c2f00369a90c87c2e5be168720c273a402c32e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 1d7c4f0f01f1aff00e36e5930fa9566e1f6a7993
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596046"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048635"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>analyse Email dans les enquêtes sur les Microsoft Defender pour Office 365
 

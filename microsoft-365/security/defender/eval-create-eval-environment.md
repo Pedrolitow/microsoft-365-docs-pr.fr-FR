@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: how-to
-ms.openlocfilehash: 31254fac4b56da65469fac56320440bfd0e487c3
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 117e4adf4461d708ad7375e2ef0e505c814da3d3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470550"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051605"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>Étape 1. Créer l’environnement d’évaluation Microsoft 365 Defender pour une plus grande sécurité informatique
 

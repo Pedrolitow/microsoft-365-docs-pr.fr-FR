@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a7c7734488247dc4d329c384c62817410761e824
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7ca863f6cd4cce21d00edad4025d60d4e71cb5c9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661276"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179920"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Configurer l'authentification multifactorielle pour Microsoft 365
 
@@ -62,7 +63,7 @@ Regardez cette vidéo ainsi que d’autres sur notre [Chaîne YouTube](https://g
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour gérer le MFA, vous devez être administrateur général. Pour plus d’informations, voir [À propos des rôles d’administrateur](../add-users/about-admin-roles.md).
+- You must be a Global admin to manage MFA. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 - Si l’authentification multifacteur par utilisateur héritée est activée, [Désactivez l'authentification multifacteur par utilisateur héritée](#turn-off-legacy-per-user-mfa).
 - Si vous avez des clients Office 2013 sur des appareils Windows, [activer l’authentification moderne pour les clients Office 2013](./enable-modern-authentication.md).
 - Avancé : si vous avez des services d’annuaire tiers avec les services de fédération Active Directory (AD FS), configurez le serveur Microsoft Azure Multi-Factor Authentication. Consultez [scénarios avancés avec Azure Active Directory Multifactor Authentication et les solutions VPN tierces](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) pour plus d’informations.
@@ -104,9 +105,9 @@ Si votre organisation a des besoins de sécurité de connexion plus granulaires,
 > [!IMPORTANT]
 > Désactivez les paramètres par défaut d'authentification multifacteur et de Sécurité par personne avant d'activer les stratégies d'Accès Conditionnel.
 
-L’accès conditionnel est disponible pour les clients qui ont acheté Azure AD Premium P1 ou les licences qui incluent cette offre, telles que Microsoft 365 Business Premium et Microsoft 365 E3. Pour plus d’informations, voir [créer une stratégie d’accès conditionnel](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
+Conditional Access is available for customers who have purchased Azure AD Premium P1, or licenses that include this, such as Microsoft 365 Business Premium, and Microsoft 365 E3. For more information, see [create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-L’accès conditionnel basé sur les risques est disponible via une licence Azure AD Premium P2, ou les licences qui l’incluent, telles que Microsoft 365 E5. Pour plus d'informations, consultez [Accès conditionnel basé sur le risque](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+Risk-based conditional access is available through Azure AD Premium P2 license, or licenses that include this, such as Microsoft 365 E5. For more information, see [risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 Pour plus d’informations sur Azure AD P1 et P2, voir [Tarification Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -115,7 +116,7 @@ Pour plus d’informations sur Azure AD P1 et P2, voir [Tarification Azure Activ
 Pour la plupart des abonnements, l’authentification moderne est automatiquement activée, mais si vous avez acheté votre abonnement avant août 2017, il est probable que vous devrez activer l’authentification moderne pour que les fonctionnalités comme l’authentification multi-facteurs fonctionnent dans les clients Windows comme Outlook.
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, dans le menu de gauche, sélectionnez **Paramètres** \> **Paramètres d’organisation**.
-2. Sous l’onglet **Services**, sélectionnez **Authentification moderne**, puis dans le volet **Authentification moderne**, vérifiez que l’option **Activer l’authentification moderne** est sélectionnée. Choisissez **Enregistrer les modifications**.
+2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

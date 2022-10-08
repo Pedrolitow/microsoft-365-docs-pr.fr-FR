@@ -15,25 +15,25 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 522836485d9c7759fd1044f47b11ac577c03f2f8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 02b5bfc9c4a1384996b4fbf305f6a212a6ac3e6c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686568"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054971"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Travail requis pour implémenter Confiance nulle stratégies d’identité et d’accès aux appareils
 
 Cet article décrit les prérequis que les administrateurs doivent remplir pour utiliser les stratégies d’identité et d’accès aux appareils Confiance nulle recommandées et pour utiliser l’accès conditionnel. Il décrit également les valeurs par défaut recommandées pour la configuration des plateformes clientes pour la meilleure expérience d’authentification unique (SSO).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 Avant d’utiliser les stratégies d’identité et d’accès aux appareils Confiance nulle recommandées, votre organisation doit respecter les prérequis. Les exigences sont différentes pour les différents modèles d’identité et d’authentification répertoriés :
 
@@ -82,26 +82,26 @@ Nous recommandons également que les appareils appartenant à l’organisation s
 
 Les clients de messagerie suivants prennent en charge l’authentification moderne et l’accès conditionnel.
 
-|Plate-forme|Client|Version/Notes|
+|Plateforme|Client|Version/Notes|
 |---|---|---|
-|**Windows**|Outlook|2019, 2016, 2013 <p> [Activer l’authentification moderne](../../admin/security-and-compliance/enable-modern-authentication.md) <p> [Mises à jour requises](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Fenêtres**|Outlook|2019, 2016, 2013 <p> [Activer l’authentification moderne](../../admin/security-and-compliance/enable-modern-authentication.md) <p> [Mises à jour requises](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook pour iOS|[La plus récente](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook pour Android|[La plus récente](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**MacOS**|Outlook|2019 et 2016|
-|**Linux**|Non prise en charge||
+|**Linux**|Non pris en charge||
 
 ### <a name="recommended-client-platforms-when-securing-documents"></a>Plateformes clientes recommandées pour sécuriser des documents
 
 Les clients suivants sont recommandés lorsqu’une stratégie de documents sécurisés a été appliquée.
 
-|Plate-forme|Word/Excel/PowerPoint|OneNote|Application OneDrive|Application SharePoint|[Client de synchronisation OneDrive](/onedrive/enable-conditional-access)|
+|Plateforme|Word/Excel/PowerPoint|OneNote|Application OneDrive|Application SharePoint|[Client de synchronisation OneDrive](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 11 ou Windows 10|Pris en charge|Pris en charge|S/O|S/O|Pris en charge|
-|Windows 8.1|Pris en charge|Pris en charge|S/O|S/O|Pris en charge|
+|Windows 11 ou Windows 10|Pris en charge|Pris en charge|N/A|S/O|Pris en charge|
+|Windows 8.1|Pris en charge|Pris en charge|N/A|S/O|Pris en charge|
 |Android|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
 |iOS|Pris en charge|Pris en charge|Pris en charge|Pris en charge|N/A|
-|macOS|Pris en charge|Pris en charge|S/O|S/O|Non prise en charge|
-|Linux|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
+|macOS|Pris en charge|Pris en charge|N/A|N/A|Non prise en charge|
+|Linux|Non prise en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
 
 ### <a name="microsoft-365-client-support"></a>Prise en charge du client Microsoft 365
 

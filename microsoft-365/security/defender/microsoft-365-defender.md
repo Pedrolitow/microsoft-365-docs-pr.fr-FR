@@ -17,19 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ms.custom:
 - admindeeplinkDEFENDER
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: 6e255fda40e12855359754920ef07ff2d78f9b5e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 770a5d5ac44f5b60485287979395732f7303c755
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483275"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055389"
 ---
 # <a name="what-is-microsoft-365-defender"></a>Qu’est-ce que Microsoft 365 Defender ?
 

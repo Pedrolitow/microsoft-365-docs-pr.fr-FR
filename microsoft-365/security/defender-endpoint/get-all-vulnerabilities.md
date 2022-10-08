@@ -11,17 +11,19 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 0217c2286a9260dbd938936989bb8b356046c2b5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 95b8a23eb24a9b7f467ce7877e9d5eab19eb8dd7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696944"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68173652"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 

@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Fournit une liste de liens vers des informations utiles pour déployer des charges de travail Office Server dans Microsoft Azure.
-ms.openlocfilehash: 2d414d7f3f7c289034dd6e653d8bef49c17c2052
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: c77a902edd84a5060e6f583b3526a910c33a5529
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560348"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163379"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 

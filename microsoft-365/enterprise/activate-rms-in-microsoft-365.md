@@ -11,18 +11,19 @@ ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: ''
+ms.collection: scotvorg
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Comment activer et utiliser le service Rights Management avec Microsoft 365.
-ms.openlocfilehash: 69e9cce3dade28460919a2883e731559678c351e
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: ad61b8cb0353eb5a97ca9e6adeed57877b52205f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560656"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163401"
 ---
 # <a name="activate-rights-management-in-the-admin-center"></a>Activer la gestion des droits dans le Centre d’administration
 

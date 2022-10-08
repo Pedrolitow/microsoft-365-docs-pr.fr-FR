@@ -17,17 +17,17 @@ ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 102c67c4da898f0d6b80072e416f1bc5b141f9d5
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 355d59ebcc61eb2837d2dd32cd841a9cd4284a2b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812181"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051363"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Enquête et réponse automatisées dans Microsoft 365 Defender
 

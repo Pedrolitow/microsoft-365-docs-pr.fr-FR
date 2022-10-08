@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 800410fe4faecde9a104242d5d4a1821ad8de86a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e549c9c080e420f0b9aaf9fb18ac6552d7385a7f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482249"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059281"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Activer l’environnement d’évaluation pour Microsoft Defender pour Identity
 
@@ -75,7 +76,7 @@ Sur les machines sur lesquelles vous avez installé le capteur, configurez la co
 |1     | Configurer la collecte des journaux des événements Windows         | [Configurer la collection d’événements Windows](/defender-for-identity/configure-windows-event-collection)        |
 |2     | Configurer les paramètres de proxy Internet        | [Configurer les paramètres de proxy de point de terminaison et de connectivité Internet pour votre capteur d’identité Microsoft Defender](/defender-for-identity/configure-proxy)        |
 
-## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>Étape 4. Autoriser Defender pour Identity à identifier les administrateurs locaux sur d’autres ordinateurs
+## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>Étape 4. Autoriser Defender pour Identity à identifier les administrateurs locaux sur d’autres ordinateurs
 
 La détection du chemin de déplacement latéral de Microsoft Defender pour l’identité s’appuie sur des requêtes qui identifient les administrateurs locaux sur des ordinateurs spécifiques. Ces requêtes sont effectuées avec le protocole SAM-R, à l’aide du compte Defender for Identity Service. 
 

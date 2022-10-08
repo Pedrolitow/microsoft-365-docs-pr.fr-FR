@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment déployer Microsoft 365 Lighthouse lignes de base.
-ms.openlocfilehash: 3094cc08cfdd68b316bb457d89bffde000476c13
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 7530826efe1ca36420c26078d7f0c651c78d9c4c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598844"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163094"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer Microsoft 365 Lighthouse lignes de base
 

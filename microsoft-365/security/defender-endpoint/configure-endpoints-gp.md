@@ -6,23 +6,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0afaf3d635e04a4592f2cadb24ab582da3a94727
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3aa8872609f07e9382c9b7e2040a417a99221c63
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683690"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180514"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des appareils Windows à l’aide d’une stratégie de groupe 
 
@@ -132,7 +134,7 @@ Activer\Désactiver la collection d’exemples|Activé : « Activer l’exemple 
 
 <br>
 
-**Emplacement de la stratégie :**  \Composants Windows\Antivirus Microsoft Defender
+**Emplacement de la stratégie :** \Windows Components\Microsoft Defender Antivirus
 
 Stratégie|Setting
 ---|---
@@ -140,7 +142,7 @@ Configurer la détection pour les applications potentiellement indésirables|Act
 
 <br>
 
-**Emplacement de la stratégie :** \Composants Windows\Antivirus Microsoft Defender\MAPS
+**Emplacement de la stratégie :** \Windows Components\Microsoft Defender Antivirus\MAPS
 
 Stratégie|Setting
 ---|---
@@ -149,7 +151,7 @@ Envoyer des exemples de fichiers quand une analyse plus approfondie est requise 
 
 <br>
 
-**Emplacement de la stratégie :** \Composants Windows\Antivirus Microsoft Defender\Protection en temps réel
+**Emplacement de la stratégie :** \Composants Windows\Microsoft Defender Antivirus\Protection en temps réel
 
 Stratégie|Setting
 ---|---
@@ -160,7 +162,7 @@ Surveiller l’activité des fichiers et des programmes sur votre ordinateur|Act
 
 <br>
 
-**Emplacement de la stratégie :**  \Composants Windows\Antivirus Microsoft Defender\Scan
+**Emplacement de la stratégie :** \Windows Components\Microsoft Defender Antivirus\Scan
 
 Ces paramètres configurent des analyses périodiques du point de terminaison. Nous vous recommandons d’effectuer une analyse rapide hebdomadaire, en autorisant les performances.
 
@@ -170,7 +172,7 @@ Recherchez les dernières informations de sécurité sur les virus et les logici
 
 <br>
 
-**Emplacement de la stratégie :** \Composants Windows\Antivirus Microsoft Defender\Microsoft Defender Exploit Guard\Réduction de la surface d’attaque
+**Emplacement de la stratégie :** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
 Obtenez la liste actuelle des guid de réduction de la surface d’attaque à partir de [l’étape 3 de déploiement des règles de réduction de la surface d’attaque : Implémenter des règles ASR](attack-surface-reduction-rules-deployment-implement.md). Pour plus d’informations sur les règles, consultez la [référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md)
 
@@ -188,7 +190,7 @@ Obtenez la liste actuelle des guid de réduction de la surface d’attaque à pa
 
 Stratégie|Emplacement|Setting
 ---|---|---
-Configurer l’accès contrôlé aux dossiers| \Composants Windows\Antivirus Microsoft Defender\Microsoft Defender Exploit Guard\Accès contrôlé aux dossiers| Activé, mode Audit
+Configurer l’accès contrôlé aux dossiers| \Composants Windows\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Accès contrôlé aux dossiers| Activé, mode Audit
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
 
@@ -247,11 +249,11 @@ Avec stratégie de groupe il n’existe pas d’option permettant de surveiller 
 
 ## <a name="setup-defender-av-policies"></a>Configurer les stratégies av Defender
 
-Créez un stratégie de groupe ou regroupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation.
+Créez un stratégie de groupe ou regroupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement du client et de la façon dont il souhaite déployer le service en ciblant différentes unités d’organisation.
 
 1. Après avoir choisi la stratégie de groupe ou en créer une nouvelle, modifiez-la.
 
-2. Accédez aux **modèles d’administration des** stratégies deconfiguration  >  > **de l’ordinateur****composants** >  >  Windows Protection en **temps réel** de **l’antivirus** >  Microsoft Defender.
+2. Accédez aux modèles **d’administration des** stratégies de **configuration** >  >  de l’ordinateur **composants** >  >  Windows **Microsoft Defender protection antivirus** > **en temps réel**.
 
     :::image type="content" source="images/realtime-protect.png" alt-text="Protection en temps réel" lightbox="images/realtime-protect.png":::
 
@@ -267,7 +269,7 @@ Créez un stratégie de groupe ou regroupez ces paramètres avec les autres stra
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>Surveiller tous les fichiers dans la protection en temps réel
 
-Accédez aux **modèles d’administration des** stratégies de  configuration \> \> **de l’ordinateur** **composants** \> \> Windows Protection en **temps réel** de **l’antivirus** \> Microsoft Defender.
+Accédez aux **modèles d’administration des**  stratégies de **configuration** \> \> de l’ordinateur, **composants** \> \> Windows **Microsoft Defender protection antivirus** \> **en temps réel**.
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="Configurer la surveillance de l’activité de fichier sortant entrant" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
 
@@ -283,7 +285,7 @@ Accédez aux **modèles d’administration des** stratégies de  configuration \
 
 ### <a name="configure-potentially-unwanted-applications"></a>Configurer des applications potentiellement indésirables
 
-Accédez  aux **modèles d’administration des** stratégies de **configuration** \> \> de l’ordinateur, **composants** \> \> Windows Antivirus **Microsoft Defender**.
+Accédez aux modèles **d’administration des** stratégies de  **configuration** \> \> de l’ordinateur, **composants** \> \> Windows **Microsoft Defender Antivirus**.
 
 :::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="Configurer une application indésirable potentielle" lightbox="images/config-potential-unwanted-apps.png":::
 
@@ -291,7 +293,7 @@ Accédez  aux **modèles d’administration des** stratégies de **configuration
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Configurer Cloud Deliver Protection et envoyer automatiquement des exemples
 
-Accédez aux  **modèles d’administration des** stratégies de **configuration** \> \> de l’ordinateur: **composants** \> \> Windows **Microsoft Defender Antivirus** \> **MAPS**.
+ Accédez aux modèles **d’administration des** stratégies de **configuration** \> \> de l’ordinateur, **composants** \> \> Windows **Microsoft Defender Antivirus** \> **MAPS**.
 
 :::image type="content" source="images/gpo-maps1.png" alt-text="Cartes" lightbox="images/gpo-maps1.png":::
 
@@ -305,11 +307,11 @@ Accédez aux  **modèles d’administration des** stratégies de **configuration
 > L’option **Envoyer tous les exemples** fournit l’analyse la plus approfondie des fichiers binaires/scripts/documents, ce qui augmente la posture de sécurité.
 L’option **Envoyer des exemples sécurisés** limite le type de fichiers binaires/scripts/documents en cours d’analyse et réduit la posture de sécurité. 
 
-Pour plus d’informations, consultez [Activer la protection cloud dans l’antivirus Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md), la [protection cloud et l’exemple de soumission dans l’Antivirus Microsoft Defender.](cloud-protection-microsoft-antivirus-sample-submission.md)
+Pour plus d’informations, consultez [Activer la protection cloud dans Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md), la [protection cloud et l’exemple de soumission dans Microsoft Defender Antivirus.](cloud-protection-microsoft-antivirus-sample-submission.md)
 
 ### <a name="check-for-signature-update"></a>Rechercher la mise à jour de signature
 
-Accédez aux **modèles d’administration des** stratégies de **configuration** \>  \> ordinateur des **composants** \> Windows Composants \> **Microsoft Defender Antivirus** \> **Security Intelligence Mises à jour**.
+Accédez aux **modèles d’administration des**  stratégies de **configuration** \> \> de l’ordinateur, **composants** \> \> Windows **Microsoft Defender** \> **Mises à jour Antivirus Security Intelligence**.
 
 :::image type="content" source="images/signature-update-1.png" alt-text="Mise à jour de signature" lightbox="images/signature-update-1.png":::
 
@@ -317,8 +319,8 @@ Accédez aux **modèles d’administration des** stratégies de **configuration*
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurer le délai d’expiration et le niveau de protection des livraisons cloud
 
-Accédez aux **modèles d’administration des** stratégies de  configuration \> \> **de l’ordinateur**- **Composants** \> \> Windows **MpEngine** **de l’antivirus** \> Microsoft Defender.
-Lorsque vous configurez la stratégie de niveau de protection cloud sur la **stratégie de blocage par défaut de l’Antivirus Microsoft Defender** , cette stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur la valeur par défaut de Windows.
+ Accédez aux **modèles d’administration des** stratégies de **configuration** \> \> de l’ordinateur, **composants** \> \> Windows Microsoft Defender **MpEngine** **antivirus**\>.
+Lorsque vous configurez la stratégie de niveau de protection cloud sur la stratégie de **blocage par défaut Microsoft Defender Antivirus**, la stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur la valeur par défaut de Windows.
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="configuration d’une vérification cloud étendue" lightbox="images/config-extended-cloud-check.png":::
 

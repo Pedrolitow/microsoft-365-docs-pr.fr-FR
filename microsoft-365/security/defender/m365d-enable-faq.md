@@ -15,18 +15,20 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55a5dbaf78ff19b9ef70d77493f7ac8568a0039d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 782751ad3a554250095bdfe020a2ccf01b4ccba0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483407"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051385"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Forum aux questions lors de l’activation de Microsoft 365 Defender
 

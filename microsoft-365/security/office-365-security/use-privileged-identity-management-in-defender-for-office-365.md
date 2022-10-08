@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Apprenez à intégrer PIM afin d’accorder un accès limité dans le temps et juste-à-temps aux utilisateurs pour effectuer des tâches de privilège élevé dans Microsoft Defender pour Office 365, réduisant ainsi les risques pour vos données.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6a198c25fd329c0bce79e85af8831a673b30cd1a
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: ed82f1bcf609605acf72cb33387b4439dc16e5c3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597667"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054663"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) et pourquoi l’utiliser avec Microsoft Defender pour Office 365
@@ -37,14 +37,14 @@ La gestion des identités privilégiées (PIM) est une fonctionnalité d'Azure q
 
 ## <a name="steps-to-use-pim-to-grant-just-in-time-access-to-defender-for-office-365-related-tasks"></a>Étapes d’utilisation de PIM pour accorder un accès juste-à-temps à Defender pour Office 365 tâches associées
 
-En configurant le PIM pour qu'il fonctionne avec Microsoft Defender pour Office 365, les administrateurs créent un processus permettant à un utilisateur de demander un accès pour prendre les mesures dont il a besoin. L'utilisateur doit *justifier* la nécessité de l'élévation de ses privilèges.
+By setting up PIM to work with Defender for Office 365, admins create a process for a user to request access to take the actions they need. The user must *justify* the need for the elevation of their privileges.
 
 Dans cet exemple, nous allons configurer « Alex », un membre de notre équipe de sécurité qui n’aura aucun accès permanent au à Office 365, mais qui peut accéder à la fois à un rôle requis pour les opérations quotidiennes normales, telles que la [recherche de menaces](threat-hunting-in-threat-explorer.md), puis à un niveau de privilège supérieur lorsque des opérations moins fréquentes mais sensibles, telles que la [correction des messages électroniques malveillants remis](remediate-malicious-email-delivered-office-365.md), sont requises.
 
 > [!NOTE]
 > Nous allons vous expliquer les étapes nécessaires pour configurer le MIP pour un analyste de la sécurité qui a besoin de la capacité de purger les e-mails à l'aide de Threat Explorer dans Microsoft Defender pour Office 365, mais les mêmes étapes peuvent être utilisées pour d'autres rôles RBAC dans le portail de sécurité et de conformité. Par exemple, ce processus pourrait être utilisé pour un travailleur de l'information qui a besoin d'un accès quotidien à l'eDiscovery pour effectuer des recherches et travailler sur des dossiers, mais qui n'a besoin qu'occasionnellement du droit élevé d'exporter des données du locataire.
 
-***Étape 1***. Dans la console Azure PIM de votre abonnement, ajoutez l’utilisateur (Alex) au rôle lecteur sécurité Azure et configurez les paramètres de sécurité liés à l’activation.
+***Step 1***. In the Azure PIM console for your subscription, add the user (Alex) to the Azure Security Reader role and configure the security settings related to activation.
 
 1. Connectez-vous [au Centre d’administration Azure AD](https://aad.portal.azure.com/) et **sélectionnez Azure Active Directory**  >  **rôles et administrateurs.**
 2. Sélectionnez **lecteur sécurité dans** la liste des rôles, puis **Paramètres**  >  **Modifier**
@@ -60,7 +60,7 @@ Le nom de votre utilisateur (ici 'Alex') apparaîtra sous Affectations admissibl
 
 :::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Les détails du paramètre de rôle : Page Lecteur sécurité" lightbox="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png":::
 
-***Étape 2***. Créez le deuxième groupe d’autorisations requis (élevé) pour les tâches supplémentaires et attribuez l’éligibilité.
+***Step 2***. Create the required second (elevated) permission group for additional tasks and assign eligibility.
 
 À l’aide de [groupes d’accès privilégié](/azure/active-directory/privileged-identity-management/groups-features), nous pouvons maintenant créer nos propres groupes personnalisés et combiner des autorisations ou augmenter la granularité si nécessaire pour répondre aux besoins et pratiques de votre organisation.
 

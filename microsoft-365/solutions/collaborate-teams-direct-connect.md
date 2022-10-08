@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment activer les canaux partagés dans Microsoft Teams pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 6f188f82e6f1c17cfc963449872e1c88a1c205ac
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: eb35cdc235edfe9e5f0a6ae54c0978e0cfdb49d9
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730680"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987321"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Collaborer avec des participants externes dans un canal partagé
 
@@ -91,7 +91,7 @@ Pour ajouter une organisation
 1. Sélectionnez **Ajouter une organisation**.
 1. Dans le volet **Ajouter une organisation**, tapez le nom de domaine complet (ou l’ID de locataire) de l’organisation, puis appuyez sur Entrée.
 1. Sélectionnez **Ajouter**.
-1. À ce stade, tous les paramètres d’accès de cette organisation sont hérités de vos paramètres par défaut.
+1. The organization appears in the organizations list. At this point, all access settings for this organization are inherited from your default settings.
 
 ### <a name="configure-inbound-settings"></a>Configurer les paramètres entrants
 

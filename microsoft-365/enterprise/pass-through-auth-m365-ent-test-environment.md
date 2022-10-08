@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer l’authentification directe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: b5d6ef8fc4da02eb7e00551402d9fc76c09528df
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: c23f5cc99ca11ec19cb555541d798b8b4c74bd71
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670000"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177655"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
 
@@ -45,7 +46,7 @@ Les deux phases de configuration de cet environnement de test sont les suivantes
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
-Suivez les instructions fournies dans l’article [Synchronisation de hachage de mot de passe pour Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Voici la configuration que vous obtenez.
+Suivez les instructions de [synchronisation de hachage de mot de passe pour Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Voici la configuration finale.
   
 ![Entreprise simulée avec environnement de test de synchronisation de hachage de mot de passe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
@@ -76,9 +77,9 @@ Durant cette phase, vous allez configurer Azure AD Connect sur APP1 pour qu’
 
 8.    Sur la page **Configuration terminée**, cliquez sur **Quitter**.
 
-9.    Sur le Portail Azure, dans le volet gauche, cliquez sur **Azure Active Directory > Azure AD Connect**. Vérifiez que la fonctionnalité **Authentification directe** affiche l’état **Activé**.
+9.    From the Azure portal, in the left pane, click **Azure Active Directory > Azure AD Connect**. Verify that the **Pass-through authentication** feature appears as **Enabled**.
 
-10.    Cliquez sur **Authentification directe**. Le volet **Authentification directe** répertorie les serveurs où vos agents d’authentification sont installés. APP1 devrait figurer dans la liste. Fermez le volet **Authentification directe**.
+10.    Click **Pass-through authentication**. The **Pass-through authentication** pane lists the servers where your Authentication Agents are installed. You should see APP1 in the list. Close the **Pass-through authentication** pane.
 
 Ensuite, testez la possibilité de vous connecter à votre abonnement avec le <strong>user1@testlab.</strong>\<your public domain> nom d’utilisateur du compte utilisateur1.
 
@@ -95,7 +96,7 @@ Voici la configuration obtenue :
 Cette configuration se compose des éléments suivants : 
 
 - Un Microsoft 365 E5 des abonnements d’évaluation ou payants avec le testlab de domaine DNS.\<your domain name> Inscrit(e).
-- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Un agent d’authentification s’exécute sur APP1 pour traiter les demandes d’authentification directe provenant du client Azure AD de votre abonnement Microsoft 365.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. An Authentication Agent runs on APP1 to handle pass-through authentication requests from the Azure AD tenant of your Microsoft 365 subscription.
 
 ## <a name="next-step"></a>Étape suivante
 

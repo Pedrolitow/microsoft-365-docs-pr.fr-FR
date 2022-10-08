@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Découvrez les documents sécurisés dans Microsoft 365 A5 ou la sécurité E5.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e89a9194956334877e6c85d73afca44dd5d25759
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 05f337652b0cd08ac930b1439b3f2415bb697e1e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496766"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060425"
 ---
 # <a name="safe-documents-in-microsoft-365-a5-or-e5-security"></a>Documents sécurisés dans Microsoft 365 A5 ou sécurité E5
 
@@ -30,7 +30,7 @@ ms.locfileid: "67496766"
 **S’applique à**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Documents sécurisés est une fonctionnalité premium qui utilise le backend cloud de [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) pour analyser les documents Office ouverts en [mode protégé](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) ou [Application Guard pour Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
+Documents sécurisés est une fonctionnalité premium qui utilise le backend cloud de [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) pour analyser les documents Office ouverts en [mode protégé](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) ou [Protection d'application pour Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
 
 Les utilisateurs n’ont pas besoin que Defender pour point de terminaison soit installé sur leurs appareils locaux pour bénéficier de la protection des documents sécurisés. Les utilisateurs bénéficient d’une protection des documents sécurisés si toutes les exigences suivantes sont remplies :
 
@@ -60,7 +60,7 @@ Les utilisateurs n’ont pas besoin que Defender pour point de terminaison soit 
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 

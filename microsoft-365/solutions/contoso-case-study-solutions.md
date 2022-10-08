@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -16,16 +16,16 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une multinationale fictive mais représentative a déployé des solutions Microsoft 365.
-ms.openlocfilehash: 56170c8af66c39d34c3e863b69af74991f41b156
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 66e09b53a8997ac4aa3769a4b39d46ca0feeeb19
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730636"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987167"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Solutions Microsoft 365 pour Contoso Corporation
 
-Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif ayant son siège à Paris, en France. Contoso a déployé Microsoft 365 Entreprise et adressé des décisions de conception majeures et les détails d’implémentation pour la mise en réseau, l’identité, Windows 10 Entreprise, Applications Microsoft 365 pour les entreprises, la gestion des appareils mobiles, la protection des informations et la sécurité. 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
 L’objectif global de Contoso pour Microsoft 365 Entreprise est d’accélérer leur transformation numérique à l’aide de services cloud pour réunir ses employés, partenaires, données, crée une valeur client et maintenir son avantage concurrentiel dans un monde avant tout digital.
 

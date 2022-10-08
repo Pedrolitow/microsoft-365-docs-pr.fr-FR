@@ -8,14 +8,14 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
-ms.openlocfilehash: dc72b4cbe86d986d0fc080934bf7b30cbdaafc1c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 70f35603d653f0f6e3f6493a90fd51d357207c60
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682622"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059391"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Balises d’entité Defender pour Identity dans Microsoft 365 Defender
 

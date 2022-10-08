@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4b04a6bc32434c619e99abcba57d99fb978925b9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 432c96b147f7e1783020f98a0019a649eb77c019
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372239"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177809"
 ---
 # <a name="contact-support-for-malaysia"></a>Contacter le support technique pour la Malaisie
 
@@ -29,12 +31,12 @@ ms.locfileid: "61372239"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Mon-Fri 9h00 à 18h00
+Anglais : Mon-Fri 9h-18h
 
 ### <a name="technical-support"></a>Support technique :
 
 Anglais : 24h/24, 7j/7
 
-Autre Téléphone numéro : 03 6207 4606
+Autre numéro de téléphone : 03 6207 4606
 
 Frais d’appel local applicables

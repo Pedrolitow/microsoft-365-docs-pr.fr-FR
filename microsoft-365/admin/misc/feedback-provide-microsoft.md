@@ -7,15 +7,17 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Découvrez les différentes façons de fournir des commentaires à Microsoft sur les produits et services Microsoft.
-ms.openlocfilehash: 5544ebcf5ae484a262056cae7ff44364a93cdaf5
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 8322d4a7797a6b09faecb0b2a8fa3a4fa07b3d92
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637359"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164742"
 ---
 # <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>En savoir plus sur la façon de fournir des commentaires à Microsoft
 
@@ -43,7 +45,7 @@ Selon la plateforme et l’application, vous pouvez envoyer des journaux et des 
 
 ### <a name="sending-feedback-from-feedback-our-community-feedback-web-portal"></a>Envoi de commentaires à partir de Feedback, notre portail web de commentaires de la communauté
 
-Si vous utilisez [feedback](https://feedbackportal.microsoft.com/), vous pouvez fournir des commentaires directement dans le portail web.  Community commentaires vous permet de parcourir ou de voter sur les commentaires de la communauté. Les réactions de la communauté sont affichées publiquement dans différents forums. Votre nom d’utilisateur s’affiche par commentaires que vous envoyez publiquement ou par commentaires que vous fournissez.
+Si vous utilisez [feedback](https://feedbackportal.microsoft.com/), vous pouvez fournir des commentaires directement dans le portail web.  Les commentaires de la communauté vous permettent de parcourir ou de voter sur les commentaires de la communauté. Les réactions de la communauté sont affichées publiquement dans différents forums. Votre nom d’utilisateur s’affiche par commentaires que vous envoyez publiquement ou par commentaires que vous fournissez.
 
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Capture d’écran : Sélection des produits Microsoft sur lesquels vous pouvez envoyer des commentaires":::
 

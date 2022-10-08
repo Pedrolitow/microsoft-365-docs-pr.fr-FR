@@ -12,15 +12,16 @@ description: Découvrez comment commencer par un déploiement de Microsoft 365 p
 ms.localizationpriority: high
 ms.collection:
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 7a963edecddc6cdece08598532212873555df31f
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 709ed072ea7539c2c4f91aff6bc584d28e1c11bd
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613667"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057346"
 ---
 # <a name="learn-where-to-start-with-a-frontline-deployment"></a>Découvrez où commencer avec un déploiement en ligne
 

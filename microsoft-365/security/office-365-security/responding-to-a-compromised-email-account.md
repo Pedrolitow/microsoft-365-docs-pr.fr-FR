@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.collection:
 - o365_security_incident_response
-- M365-security-compliance
+- m365-security
 - m365solution-smb
 - highpri
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a4b491a8a1fa3b8db000874357c5d5dbfbe91d38
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: c2bc977d80cb2226f3348cf4d53715c5e079756e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850213"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054927"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -47,7 +47,7 @@ En utilisant les informations d’identification volées, le pirate peut accéde
 
 ## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>Symptômes d’un compte de messagerie Microsoft Corporation compromis
 
-Les utilisateurs peuvent remarquer et signaler une activité inhabituelle dans leurs boîtes aux lettres Microsoft 365. Voici quelques symptômes courants :
+Users might notice and report unusual activity in their Microsoft 365 mailboxes. Here are some common symptoms:
 
 - Des « activités douteuses », comme des courriers électroniques manquants ou supprimées.
 - D’autres utilisateurs peuvent recevoir des messages électroniques du compte compromis sans que ces courriers correspondant n’apparaissent dans le dossier **Éléments envoyés** de l’expéditeur.
@@ -88,7 +88,7 @@ Suivez les procédures décrites dans [Réinitialiser un mot de passe d’entrep
 >
 > - Assurez-vous que le mot de passe est robuste et qu’il contient des lettres majuscules et minuscules, au moins un chiffre et au moins un caractère spécial.
 >
-> - Ne réutilisez aucun de vos cinq derniers mots de passe. Même si l’exigence d’historique des mots de passe vous permet de réutiliser un mot de passe plus récent, vous devez sélectionner un élément que l’attaquant ne peut pas deviner.
+> - Don't reuse any of your last five passwords. Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.
 >
 > - Si votre identité locale est fédérée avec Microsoft 365, vous devez modifier votre mot de passe local, puis vous devez informer votre administrateur de l’attaque.
 >
@@ -158,7 +158,7 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
 
 2. dans le portail Microsoft 365 Defender à <https://security.microsoft.com>, procédez comme suit :
    1. Accédez à **Autorisations et rôles** \> **E-mail et rôles de collaboration** \> **Rôles**. Pour aller directement à la page **Autorisations,** utilisez <https://security.microsoft.com/emailandcollabpermissions> .
-   2. Dans la page **Autorisations** , sélectionnez chaque groupe de rôles dans la liste et recherchez le compte d’utilisateur dans la section **Membres** du menu volant des détails qui s’affiche. Si le groupe de rôles contient le compte d’utilisateur, procédez comme suit :
+   2. On the **Permissions** page, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
       1. Dans la section **Membres**, cliquez sur **Modifier**.
       2. Dans le menu volant **Modification des membres choisis** qui apparaît, cliquez sur **Modifier**.
       3. Dans le menu volant **Choisissez des membres** qui s’affiche, cliquez sur **Supprimer**.

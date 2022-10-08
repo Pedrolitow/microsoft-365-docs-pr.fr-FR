@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -20,12 +20,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez apprendre à collaborer avec des invités sur un document dans SharePoint et OneDrive.
-ms.openlocfilehash: 6b0a69e194dbd5be31efa73d89d2835217a601ce
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 75c057c3ed182e92950619cde4cebd99d9280718
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731527"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987365"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborer avec des invités sur un document
 

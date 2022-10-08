@@ -1,5 +1,5 @@
 ---
-title: 'Étape 2 : fournir l’accès à distance aux applications et services locaux'
+title: Step 2. Provide remote access to on-premises apps and services
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,16 +18,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Assurez-vous que vos employés à distance peuvent accéder aux ressources locales tout en optimisant l’accès aux services cloud de Microsoft 365.
-ms.openlocfilehash: 8482de846405f6ff4b0f786d2863bc208f0ed5cf
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: f0614a6f74d3857bfbcbeb802b588ad5477524e3
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730702"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987057"
 ---
-# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Étape 2 : fournir l’accès à distance aux applications et services locaux
+# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Step 2. Provide remote access to on-premises apps and services
 
-Si votre organisation utilise une solution VPN d’accès à distance, généralement avec les serveurs VPN sur la périphérie de votre réseau et les clients VPN installés sur les appareils de vos utilisateurs, vos utilisateurs peuvent utiliser les connexions VPN d’accès à distance pour accéder aux applications et serveurs locaux. Mais vous pouvez avoir besoin d’optimiser le trafic vers les services Microsoft 365 dans le cloud.
+If your organization uses a remote access VPN solution, typically with VPN servers on the edge of your network and VPN clients installed on your users' devices, your users can use remote access VPN connections to access on-premises apps and servers. But you may need to optimize traffic to Microsoft 365 cloud-based services.
 
 Si vos utilisateurs n’utilisent pas de solution VPN, vous pouvez utiliser le proxy d’application Azure Active Directory (Azure AD) et le VPN Azure Point-to-Site (P2S) pour fournir un accès, si toutes vos applications sont basées sur le web.
 
@@ -52,7 +52,7 @@ Sans cette segmentation, l’ensemble de votre trafic de travail à distance est
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png" alt-text="Trafic réseau provenant de clients VPN sans tunneling." lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png":::
 
-Le trafic Microsoft 365 doit emprunter une route indirecte au sein de votre organisation, qui peut être transférée vers un point d’entrée réseau Microsoft éloigné loin de l’emplacement physique du client VPN. Ce chemin d'accès indirect ajoute une latence au trafic du réseau et diminue les performances générales.
+Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance.
 
 La segmentation de tunnel vous permet de configurer votre client VPN pour empêcher l’envoi de certains types de trafic sur la connexion VPN vers le réseau de l’organisation.
 
@@ -68,7 +68,7 @@ Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Déployer l’accès à distance lorsque toutes vos applications sont des applications web et que vous avez une identité hybride
 
-Si vos travailleurs à distance n’utilisent pas de client VPN traditionnel et que vos comptes et groupes d’utilisateurs locaux sont synchronisés avec Azure AD, vous pouvez utiliser Azure AD Proxy d'application pour fournir un accès à distance sécurisé pour les applications web hébergées sur des serveurs locaux. Les applications web incluent des sites SharePoint Server, des serveurs Outlook Accès web ou toute autre application métier web.
+If your remote workers are not using a traditional VPN client and your on-premises user accounts and groups are synchronized with Azure AD, you can use Azure AD Application Proxy to provide secure remote access for web-based applications hosted on on-premises servers. Web-based applications include SharePoint Server sites, Outlook Web Access servers, or any other web-based line of business applications.
 
 Voici les composants du proxy d’application Azure AD.
 
@@ -94,7 +94,7 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de P2S VPN](/
 
 ## <a name="deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Déployer Windows 365 pour fournir un accès à distance aux travailleurs à distance à l’aide d’appareils personnels
 
-Pour prendre en charge les travailleurs à distance qui peuvent uniquement utiliser leurs appareils personnels et non gérés, utilisez Windows 365 pour créer et allouer des bureaux virtuels que vos utilisateurs peuvent utiliser à domicile. Avec une connexion réseau locale (OPNC), les PC cloud Windows 365 peuvent agir de la même façon que les PC connectés au réseau de votre organisation.
+To support remote workers who can only use their personal and unmanaged devices, use Windows 365 to create and allocate virtual desktops for your users to use from home. With an on-premises network connection (OPNC), Windows 365 Cloud PCs can act just like PCs connected to your organization's network.
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-365.png" alt-text="Composants de Windows 365." lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-365.png":::
 

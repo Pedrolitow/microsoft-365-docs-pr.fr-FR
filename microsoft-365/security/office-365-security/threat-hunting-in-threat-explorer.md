@@ -10,19 +10,20 @@ ms.topic: article
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Utilisez l’Explorateur de menaces ou les détections en temps réel dans le portail Microsoft 365 Defender pour examiner et répondre efficacement aux menaces.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c1fa07fd22d0bb03cf9713dd210e24de8fa66e2b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 4e581dadd7b17552aee277fa978b788f914607f3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598690"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054751"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Repérage des menaces dans l’Explorateur de menaces pour Microsoft Defender pour Office 365
 
@@ -258,7 +259,7 @@ Pour afficher et utiliser des détections d’Explorateur ou en temps réel, vou
   - Lecteur de sécurité
 - Dans Exchange Online :
   - Gestion de l’organisation
-  - Afficher uniquement la gestion de l’organisation
+  - Gestion de l'organisation en affichage seul
   - Afficher uniquement les destinataires
   - Gestion de la conformité
 
@@ -268,7 +269,7 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les ressource
 - [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 - [Afficher les fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)

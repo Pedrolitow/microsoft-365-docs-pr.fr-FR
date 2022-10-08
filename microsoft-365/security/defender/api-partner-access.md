@@ -15,18 +15,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: 6925fa1fc1703ebcbf49557b0afd4fb3bccfb406
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 1ef373d3f3c406453d92b0a463a26ba9513bb6e3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812203"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049009"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Créer une application avec un accès partenaire aux API Microsoft 365 Defender
 

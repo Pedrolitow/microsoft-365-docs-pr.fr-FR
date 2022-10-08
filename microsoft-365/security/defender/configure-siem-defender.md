@@ -14,14 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
-ms.openlocfilehash: 042474bb8c9e456dd97f14cf3e924a7958c172a9
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5a9e62ab2d66a16cceea3607c124edf7e7531ea7
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680062"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049097"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-365-defender"></a>Intégrer les outils SIEM avec Microsoft 365 Defender pour point de terminaison
 

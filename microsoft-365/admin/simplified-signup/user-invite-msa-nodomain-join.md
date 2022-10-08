@@ -7,19 +7,20 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Acceptez une invitation par e-mail pour rejoindre une organisation Microsoft 365 Business Standard à l’aide d’un compte Outlook, Yahoo, Gmail ou autre.
-ms.openlocfilehash: b7cc7e2cc9ff07444b562f7ed70f55a6d33201fd
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 64567fef4456fee9fdeef71ca8a818ccc4a9b275
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644332"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164434"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Accepter une invitation par e-mail à une organisation d’abonnement Microsoft 365 pour les entreprises à l’aide d’un compte Outlook, Yahoo, Gmail ou autre (utilisateur)
 
@@ -53,7 +54,7 @@ Votre e-mail ressemble à ceci pour configurer votre compte d’utilisateur. Lor
 
 Téléchargez et commencez à utiliser les [applications Office pour les entreprises](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="the-webpage-is-asking-me-to-agree-that-my-business-has-access-to-my-name-sign-in-and-other-information--what-does-that-mean"></a>La page web me demande d’accepter que mon entreprise ait accès à mon nom, à ma connexion et à d’autres informations , qu’est-ce que cela signifie ?
 

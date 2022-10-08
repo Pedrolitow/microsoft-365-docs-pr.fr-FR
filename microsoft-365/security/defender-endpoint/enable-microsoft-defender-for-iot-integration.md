@@ -1,6 +1,6 @@
 ---
 title: Intégrer Microsoft Defender pour IoT avec Microsoft Defender pour point de terminaison
-description: Intégration avec Microsoft Defender pour IoT afin d’obtenir une visibilité et des évaluations de sécurité axées sur les appareils IoT.
+description: Intégrer avec Microsoft Defender pour IoT afin d’obtenir une visibilité et des évaluations de sécurité axées sur les appareils IoT.
 keywords: activer le connecteur siem, siem, connecteur, informations de sécurité et événements
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,17 +13,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 645f9cbd39c9c5a26108f564d8b91cfd3086041e
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 2beb52d4d307bf9fab3e8f9e9857f82bb281e586
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523333"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68174905"
 ---
-# <a name="onboard-with-microsoft-defender-for-iot"></a>Intégration avec Microsoft Defender pour IoT
+# <a name="onboard-with-microsoft-defender-for-iot"></a>Intégrer avec Microsoft Defender pour IoT
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,12 +44,12 @@ Cela permet aux organisations de tirer parti d’une solution intégrée unique 
 
 L’intégration de Defender pour IoT vous offre une vue unifiée de votre inventaire OT/IoT complet avec le reste de vos appareils informatiques (stations de travail, serveurs et appareils mobiles). Les clients qui ont intégré Defender pour IoT recevront également des informations sur les alertes, les vulnérabilités et les recommandations de sécurité pour leurs appareils IoT.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 Pour modifier les paramètres de votre intégration Defender pour point de terminaison, l’utilisateur doit avoir les rôles suivants :
 
 - Administrateur général du locataire dans Azure Active Directory
-- Administrateur de sécurité pour l’abonnement Azure qui sera utilisé pour l’intégration de Microsoft Defender pour IoT
+- Administrateur de sécurité pour l’abonnement Azure qui sera utilisé pour la Microsoft Defender pour l’intégration IoT
 
 ## <a name="onboard-a-defender-for-iot-plan"></a>Intégrer un plan Defender pour IoT
 
@@ -59,7 +61,7 @@ Pour modifier les paramètres de votre intégration Defender pour point de termi
 
    - Sélectionnez un plan tarifaire, un engagement mensuel ou annuel, ou une version d’évaluation. Microsoft Defender pour IoT fournit un essai gratuit de 30 jours pour les 1 000 premiers appareils validés à des fins d’évaluation.
 
-      Pour plus d’informations, consultez la [page de tarification de Microsoft Defender pour IoT](https://azure.microsoft.com/pricing/details/iot-defender/).
+      Pour plus d’informations, consultez la [page de tarification Microsoft Defender pour IoT](https://azure.microsoft.com/pricing/details/iot-defender/).
 
    - Sélectionnez le nombre d’appareils validés que vous souhaitez surveiller. Si vous avez sélectionné une version d’évaluation, cette section n’apparaît pas, car vous avez une valeur par défaut de 1 000 appareils.
 
@@ -88,7 +90,7 @@ Les clients Defender pour point de terminaison peuvent également configurer le 
 Pour ajouter un capteur réseau, dans le volet de navigation du [https://security.microsoft.com](https://security.microsoft.com/) portail :
 
 1. Sélectionner **Paramètres** \> **Device Discovery** \> **Enterprise IoT**
-2. Sous **Configurer les capteurs réseau**, choisissez le lien **Microsoft Defender pour IoT**
+2. Sous **Configurer les capteurs réseau**, choisissez le **lien Microsoft Defender pour IoT**
 
 Cela vous amène au processus d’installation du capteur dans le Portail Azure. Pour plus d’informations, consultez [Prise en main d’Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 

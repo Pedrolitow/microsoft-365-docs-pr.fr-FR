@@ -16,18 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-m365dsecops
+- tier2
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7f67deb65b6add98a4a3a5b6953a4bf9f4a7ca63
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c4c01f98f38097e45b53cec763419dbdd1209ec8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481259"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051583"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>Étape 2. Effectuer une évaluation de la préparation de l’intégration SOC à l’aide de Confiance nulle Framework
 

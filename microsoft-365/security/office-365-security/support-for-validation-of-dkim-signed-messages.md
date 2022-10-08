@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: En savoir plus sur la validation des messages signés DKIM dans Exchange Online Protection et Exchange Online
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8921dbf6c27de98c2d7af4de3edc10a539d75e75
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f615304f18cbc4ed09e6915a0507baaca7360c9b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595870"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048525"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Prise en charge de la validation des messages signés DKIM
 

@@ -17,19 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ms.custom:
 - admindeeplinkDEFENDER
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: 70a262cd53bed114bd8d4a8e737c796b13bd831a
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: bc690e91ceb83d49814e869f40411da900faa719
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67809418"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051253"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 

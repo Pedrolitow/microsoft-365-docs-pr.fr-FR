@@ -20,17 +20,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.reviewer: ''
 description: Découvrez comment utiliser le rapport Rendez-vous virtuels du connecteur DSE Teams dans le Centre d’administration Microsoft Teams pour obtenir une vue d’ensemble de l’utilisation des rendez-vous virtuels intégrés à la récupération d’urgence dans votre organisation.
-ms.openlocfilehash: 6ec3423df4b6cd094bd2cab07e44c06923ec58bf
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 6890c664897e4bb9e0998f4c441dc623bac1baa1
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822503"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68039234"
 ---
 # <a name="microsoft-teams-ehr-connector-virtual-appointments-report"></a>Rapport des rendez-vous virtuels du connecteur EHR Teams
 

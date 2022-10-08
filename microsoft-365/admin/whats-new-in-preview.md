@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Le Centre d'administration Microsoft 365 - découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
-ms.openlocfilehash: 588e5d405bb0a343d95014892d23b62f2e1f28f4
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 4f1c26dbcedc1057157e782b7e7489b5b6ed478e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388878"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164016"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -50,6 +51,37 @@ Et si vous souhaitez savoir ce qui est nouveau avec d’autres services cloud Mi
 - [Nouveautés du Centre d’administration SharePoint](/sharepoint/what-s-new-in-admin-center)
 - [Mises à jour Office](/OfficeUpdates/)
 - [Comment vérifier l’intégrité des versions de Windows](/windows/deployment/update/check-release-health)
+
+## <a name="august-2022"></a>Août 2022
+
+### <a name="date-filter-in-the-net-promoter-score-nps-survey-insights-dashboard"></a>Filtre de dates dans le tableau de bord d’insights d’enquête NPS (Net Promoter Score)
+
+En fonction de vos commentaires, nous introduisons une nouvelle fonction dans le tableau de bord des insights d’enquête NPS qui permet aux administrateurs comme vous de filtrer les données et les insights NPS (Net Promoter Score) par date, afin que vous puissiez accéder aux détails en fonction de vos préférences de plage de dates.
+
+Avec cette modification, vous serez en mesure d’examiner les insights de l’enquête NPS en fonction des plages de dates suivantes :
+
+- 30 derniers jours
+- 90 derniers jours
+- 180 derniers jours
+
+Pour y accéder, accédez **à** l’onglet  > **Insights de l’enquête NPS** **de commentaires** >  sur le produit d’intégrité.
+
+:::image type="content" source="../media/nps-date-filter.png" alt-text="Capture d’écran : Filtre de dates dans le tableau de bord des insights d’enquête NPS" lightbox="../media/nps-date-filter.png":::
+
+En savoir plus sur [les insights d’enquête NPS](/microsoft-365/admin/manage/manage-feedback-product-insights).
+
+Pour des questions ou des commentaires liés aux insights d’enquête NPS, contactez-nous à Prosight@microsoft.com.
+
+
+## <a name="july-2022"></a>Juillet 2022
+
+### <a name="multi-tenant-billing-relationships"></a>Relations de facturation multilocataire
+
+Vous pouvez maintenant créer des relations de facturation multilocataire avec d’autres locataires. Une relation de facturation multilocataire vous permet de partager en toute sécurité le compte de facturation de votre organisation avec d’autres locataires, tout en conservant le contrôle de vos données de facturation.
+
+Cette fonctionnalité est disponible pour les clients de compte d’organisation disposant d’un Contrat client Microsoft.
+
+Pour plus d’informations, consultez [Gérer la facturation entre plusieurs locataires dans le Centre d'administration Microsoft 365](../commerce/billing-and-payments/manage-multi-tenant-billing.md).
 
 ## <a name="may-2022"></a>Mai 2022
 
@@ -211,7 +243,7 @@ Nous avons également ajouté 2 nouveaux champs, **Gravité** et **Date de ferme
 
 Pour consulter ces mises à jour dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d'administration Microsoft 365</a>, accédez à **Support** > **View Service requests** in left navigation pane.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="microsoft-365-admin-center-search"></a>recherche Centre d'administration Microsoft 365
 

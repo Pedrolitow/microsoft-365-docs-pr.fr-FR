@@ -18,14 +18,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: c806122171b54bf5bb8693d900bb7c520093d792
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a918a77f4aee962f126a3fdc47ee783c291e5765
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482623"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055345"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps dans Microsoft 365 Defender (préversion)
 

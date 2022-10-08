@@ -7,21 +7,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: d71500a2af9554848ad94db9887a3186c734efa1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 43ed97b37acde59a44dc17c1ee051ea00c151fec
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678622"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180294"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>Intégrer les appareils Windows utilisant un script local
 

@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 6/26/2018
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Découvrez comment utiliser des communautés BGP dans Azure ExpressRoute pour gérer le nombre de préfixes IP et la bande passante requise pour Office 365 scénarios.
-ms.openlocfilehash: 3e7ec6373299741cc1d34c18cc6be5b9366f3de6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 44ec80f67d1ce3e006e5359c0b6480543a09b791
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095771"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163489"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilisation de communautés BGP dans ExpressRoute pour Office 365 scénarios
 
@@ -42,11 +43,11 @@ Pour aider les clients à atteindre ces objectifs, Office 365 préfixes IP publi
 > [!NOTE]
 > Vous devez vous attendre à ce qu’un trafic réseau associé à d’autres applications soit inclus dans la valeur de la communauté. Ce comportement est attendu pour une offre globale software as a service avec des services partagés et des centres de données. Cela a été réduit si possible avec les deux objectifs ci-dessus, en gérant le nombre de préfixes et/ou la bande passante à l’esprit.
 
-|**Service**|**Valeur Community BGP**|**Notes**|
+|**Service**|**Valeur de la communauté BGP**|**Remarques**|
 |:-----|:-----|:-----|
-|Exchange Online\*  <br/> |12076:5010  <br/> |Inclut les services Exchange et EOP\*  <br/> |
+|Exchange Online\*  <br/> |12076:5010  <br/> |Inclut les services Exchange et EOP\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|Skype Entreprise\*  <br/> |12076:5030  <br/> |services de & Microsoft Teams en ligne Skype Entreprise  <br/> |
+|Skype Entreprise\*  <br/> |12076:5030  <br/> |services Skype Entreprise Online & Microsoft Teams  <br/> |
 |Autres services Office 365\*  <br/> |12076:5100  <br/> |Inclut Azure Active Directory (scénarios d’authentification et de synchronisation d’annuaires) ainsi que les services portail Office 365  <br/> |
 |\*L’étendue des scénarios de service inclus dans ExpressRoute est documentée dans l’article [Office 365 points de terminaison](./urls-and-ip-address-ranges.md).  <br/> \*\*Des services supplémentaires et des valeurs de communauté BGP peuvent être ajoutés à l’avenir. [Consultez la liste actuelle des communautés BGP](/azure/expressroute/expressroute-routing).  <br/> |
 
@@ -56,11 +57,11 @@ Les clients peuvent utiliser des communautés BGP pour réglementer les groupes 
   
 ### <a name="scenario-1-minimizing-the-number-of-office-365-ip-prefixes"></a>Scénario 1 : Réduction du nombre de préfixes IP Office 365
 
-Contoso Corporation est une société de 50 000 personnes qui utilise actuellement Office 365 pour Exchange Online et SharePoint Online. En examinant les exigences d’ExpressRoute, Contoso détermine que ses appareils réseau dans de nombreux emplacements régionaux ne peuvent pas gérer les tailles de table de routage supérieures à 100 entrées de routage supplémentaires. Contoso a examiné le nombre total de préfixes IP qu’ExpressRoute publierait pour l’ensemble complet des services Office 365 et a conclu qu’il dépasse 100. Pour rester sous les 100 entrées de route supplémentaires, Contoso limite l’utilisation d’ExpressRoute pour Office 365 à la valeur de la communauté BGP SharePoint Online, 12076:5020, reçue via le peering Microsoft ExpressRoute.
+Contoso Corporation est une entreprise de 50 000 personnes qui utilise actuellement Office 365 pour Exchange Online et SharePoint Online. En examinant les exigences d’ExpressRoute, Contoso détermine que ses appareils réseau dans de nombreux emplacements régionaux ne peuvent pas gérer les tailles de table de routage supérieures à 100 entrées de routage supplémentaires. Contoso a examiné le nombre total de préfixes IP qu’ExpressRoute publierait pour l’ensemble complet des services Office 365 et a conclu qu’il dépasse 100. Pour rester sous les 100 entrées de route supplémentaires, Contoso limite l’utilisation d’ExpressRoute pour Office 365 à la valeur de la communauté BGP SharePoint Online, 12076:5020, reçue via le peering Microsoft ExpressRoute.
 
 |**Balise de communauté BGP utilisée**|**Routable de fonctionnalités sur Azure ExpressRoute**|**Itinéraires Internet requis**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> (12076:5020)  <br/> |SharePoint online &amp; OneDrive Entreprise  <br/> | Demandes DNS, &amp; CRL CDN  <br/>  Tous les autres services Office 365 non pris en charge spécifiquement sur Azure ExpressRoute  <br/>  Tous les autres services cloud Microsoft  <br/>  portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/>  Exchange Online, Exchange Online Protection et Skype Entreprise Online  <br/> |
+|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive Entreprise  <br/> | Demandes DNS, CRL, &amp; CDN  <br/>  Tous les autres services Office 365 non pris en charge spécifiquement sur Azure ExpressRoute  <br/>  Tous les autres services cloud Microsoft  <br/>  portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/>  Exchange Online, Exchange Online Protection et Skype Entreprise Online  <br/> |
 
 > [!NOTE]
 > Pour obtenir des nombres de préfixes inférieurs pour chaque service, un chevauchement minimal entre les services est conservé. Ce comportement est normal.
@@ -69,11 +70,11 @@ Contoso Corporation est une société de 50 000 personnes qui utilise actuelleme
 
 Fabrikam Inc, une grande entreprise multinationale avec un réseau hétérogène distribué, est abonnée à de nombreux services Office 365 dont ; Exchange Online, SharePoint Online et Skype Entreprise Online. L’infrastructure de routage interne de Fabrikam peut gérer des milliers de préfixes IP dans ses tables de routage ; Toutefois, Fabrikam souhaite uniquement approvisionner ExpressRoute et la bande passante interne pour Office 365 applications qui sont les plus sensibles aux performances du réseau et utiliser leur bande passante Internet existante pour toutes les autres applications Office 365.
   
-Pour cette raison, Fabrikam limite sa bande passante Azure ExpressRoute à Skype Entreprise valeur de Community BGP en ligne, 12076:5030, reçue via le peering Microsoft ExpressRoute. Le trafic réseau restant associé à Office 365 continue d’utiliser les points de sortie Internet.
+Pour cette raison, Fabrikam limite sa bande passante Azure ExpressRoute à Skype Entreprise valeur communauté BGP en ligne, 12076:5030, reçue via le peering Microsoft ExpressRoute. Le trafic réseau restant associé à Office 365 continue d’utiliser les points de sortie Internet.
 
 |**Balise de communauté BGP utilisée**|**Routable de fonctionnalités sur Azure ExpressRoute**|**Itinéraires Internet requis**|
 |:-----|:-----|:-----|
-|Skype Entreprise  <br/> (12076:5030)  <br/> |Skype la signalisation SIP, les téléchargements, la voix, la vidéo et le partage de bureau  <br/> | Demandes DNS, &amp; CRL CDN  <br/>  Tous les autres services Office 365 non pris en charge spécifiquement sur Azure ExpressRoute  <br/>  Tous les autres services cloud Microsoft  <br/>  portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/>  Skype Entreprise les données de télémétrie, les conseils rapides Skype client, la connectivité par messagerie instantanée publique  <br/>  Exchange Online, Exchange Online Protection et SharePoint Online  <br/> |
+|Skype Entreprise  <br/> (12076:5030)  <br/> |Signalisation, téléchargements, voix, vidéo et partage de bureau SIP Skype  <br/> | Demandes DNS, CRL, &amp; CDN  <br/>  Tous les autres services Office 365 non pris en charge spécifiquement sur Azure ExpressRoute  <br/>  Tous les autres services cloud Microsoft  <br/>  portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/>  Skype Entreprise la télémétrie, les conseils rapides du client Skype, la connectivité par messagerie instantanée publique  <br/>  Exchange Online, Exchange Online Protection et SharePoint Online  <br/> |
 
 ### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>Scénario 3 : Étendue d’Azure ExpressRoute pour les services Office 365 uniquement
 
@@ -83,7 +84,7 @@ Pour garantir le trafic réseau associé aux services cloud Microsoft autres que
 
 |**Balise de communauté BGP utilisée**|**Routable de fonctionnalités sur Azure ExpressRoute**|**Itinéraires Internet requis**|
 |:-----|:-----|:-----|
-|Exchange, Skype Entreprise & Microsoft Teams, SharePoint, &amp; autres services  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |&amp; Exchange Online Exchange Online Protection  <br/> SharePoint online &amp; OneDrive Entreprise  <br/> Skype la signalisation SIP, les téléchargements, la voix, la vidéo et le partage de bureau  <br/> portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/> | Demandes DNS, &amp; CRL CDN  <br/>  Tous les autres services Office 365 non pris en charge spécifiquement sur Azure ExpressRoute  <br/>  Tous les autres services cloud Microsoft  <br/> |
+|Exchange, Skype Entreprise & Microsoft Teams, SharePoint, &amp; d’autres services  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |&amp; Exchange Online Exchange Online Protection  <br/> SharePoint Online &amp; OneDrive Entreprise  <br/> Signalisation, téléchargements, voix, vidéo et partage de bureau SIP Skype  <br/> portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/> | Demandes DNS, CRL, &amp; CDN  <br/>  Tous les autres services Office 365 non pris en charge spécifiquement sur Azure ExpressRoute  <br/>  Tous les autres services cloud Microsoft  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>Principales considérations relatives à la planification de l’utilisation des communautés BGP
 

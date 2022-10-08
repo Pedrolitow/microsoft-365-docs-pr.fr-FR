@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 84498d0096aa244329020768d3e5f4b53804ea93
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1f5d1d35a673f3ba93f82961353e0fc9c83297d5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472115"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051759"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 

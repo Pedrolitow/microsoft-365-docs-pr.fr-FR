@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -17,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: Liens vers des cours de formation, des blogs, des articles et d’autres ressources qui vous expliquent comment améliorer les performances de Microsoft 365.
-ms.openlocfilehash: 798d542a4ea2fe0ba5b6eb9b13e00f6826f2051b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 6c58ad2c698477dec47900c11a50fc4b1c0e589c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670540"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178534"
 ---
 # <a name="tune-microsoft-365-performance"></a>Optimiser les performances de Microsoft 365
 

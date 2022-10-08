@@ -7,9 +7,10 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: AdminSurgePortfolio
@@ -18,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les commentaires que vos utilisateurs peuvent envoyer à Microsoft sur les produits Microsoft.
-ms.openlocfilehash: 7f15234f7512487f83b25f1d4ff765fbb03734ce
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: c1931c5c17d574cbe883733c8cb2bc1dcc835f97
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408018"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164764"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>En savoir plus sur les commentaires de Microsoft pour votre organisation
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité du type d’entité AMKA (Greece Social Security Number).
-ms.openlocfilehash: f7f313987f647efcb066ac95d64e8aeaec2fa44e
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: aba0cb0df655483911be4c4ab9638908b4379193
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369782"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380313"
 ---
 # <a name="greece-social-security-number-amka"></a>Numéro de sécurité sociale (AMKA) grec
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

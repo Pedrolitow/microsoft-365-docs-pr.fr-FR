@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : Utilisez PowerShell pour créer des sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
-ms.openlocfilehash: 9d99f98825d88e2d2e63f106a7b5704c773c8be1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f640b7abcba9f05460e77fb11b8578c15b0a76fc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101334"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167536"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Création de sites SharePoint Online et ajout d’utilisateurs avec PowerShell
 
@@ -34,11 +36,11 @@ Lorsque vous utilisez PowerShell pour Microsoft 365 pour créer des sites ShareP
 
 ## <a name="connect-to-sharepoint-online"></a>Se connecter à SharePoint Online
 
-Les procédures décrites dans cette rubrique vous obligent à vous connecter à SharePoint Online. Pour obtenir des instructions, consultez [Connecter pour SharePoint PowerShell en ligne](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Les procédures décrites dans cette rubrique vous obligent à vous connecter à SharePoint Online. Pour obtenir des instructions, consultez [Se connecter à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>Étape 1 : Créer des collections de sites à l’aide de PowerShell
 
-Créez plusieurs sites à l’aide de PowerShell et d’un fichier .csv que vous créez à l’aide de l’exemple de code fourni et Bloc-notes. Pendant cette procédure, vous allez remplacer les informations de l’espace réservé indiquées entre parenthèses par vos informations propres au site et au client. Ce processus vous permet de créer un seul fichier et d’exécuter une seule commande PowerShell qui utilise ce fichier. Cela rend les actions entreprises à la fois reproductibles et portables et élimine beaucoup, sinon la totalité, des erreurs qui peuvent provenir de la saisie de longues commandes dans SharePoint Online Management Shell. Cette procédure est en deux parties. Tout d’abord, vous allez créer un fichier .csv, puis vous référencerez ce fichier .csv à l’aide de PowerShell, qui utilisera son contenu pour créer les sites.
+Créez plusieurs sites à l’aide de PowerShell et d’un fichier .csv que vous créez à l’aide de l’exemple de code fourni et du Bloc-notes. Pendant cette procédure, vous allez remplacer les informations de l’espace réservé indiquées entre parenthèses par vos informations propres au site et au client. Ce processus vous permet de créer un seul fichier et d’exécuter une seule commande PowerShell qui utilise ce fichier. Cela rend les actions entreprises à la fois reproductibles et portables et élimine beaucoup, sinon la totalité, des erreurs qui peuvent provenir de la saisie de longues commandes dans SharePoint Online Management Shell. Cette procédure est en deux parties. Tout d’abord, vous allez créer un fichier .csv, puis vous référencerez ce fichier .csv à l’aide de PowerShell, qui utilisera son contenu pour créer les sites.
 
 L’applet de commande PowerShell importe le fichier .csv et le dirige vers une boucle à l’intérieur des crochets qui lit la première ligne du fichier en tant qu’en-têtes de colonne. L’applet de commande PowerShell itère ensuite les enregistrements restants, crée une collection de sites pour chaque enregistrement et affecte les propriétés de la collection de sites en fonction des en-têtes de colonne.
 
@@ -59,7 +61,7 @@ L’applet de commande PowerShell importe le fichier .csv et le dirige vers une 
 
    Où *le locataire* est le nom de votre locataire et le *propriétaire* est le nom d’utilisateur de l’utilisateur sur votre locataire auquel vous souhaitez accorder le rôle d’administrateur de collection de sites principal.
 
-   (Vous pouvez appuyer sur Ctrl+H lorsque vous utilisez Bloc-notes pour remplacer en bloc plus rapidement.)
+   (Vous pouvez appuyer sur Ctrl+H lorsque vous utilisez le Bloc-notes pour remplacer en bloc plus rapidement.)
 
 2. Enregistrez le fichier sur votre bureau en tant que **SiteCollections.csv**.
 
@@ -90,7 +92,7 @@ C’est fait. Vous avez créé plusieurs collections de sites à l’aide du fic
 
 ## <a name="step-2-add-users-and-groups"></a>Étape 2 : Ajout d’utilisateurs et de groupes
 
-Vous allez maintenant créer des utilisateurs et les ajouter à un groupe de collections de sites. Vous utiliserez ensuite un fichier .csv pour télécharger en bloc de nouveaux groupes et utilisateurs.
+Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
 
 Les procédures suivantes continuent à utiliser les exemples de sites TeamSite01, Blog01, Project01 et Community01.
 
@@ -165,7 +167,7 @@ Vous êtes maintenant prêt à exécuter le script UsersAndGroup.ps1 pour ajoute
 
    Où *MyAlias* est égal à votre nom d’utilisateur.
 
-5. Attendez le renvoi de l’invite pour continuer. Les groupes s’afficheront d’abord tels qu’ils ont été créés. Ensuite, vous verrez la liste de groupes se répéter au fur et à mesure de l’ajout des utilisateurs.
+5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
 
 ## <a name="see-also"></a>Voir aussi
 

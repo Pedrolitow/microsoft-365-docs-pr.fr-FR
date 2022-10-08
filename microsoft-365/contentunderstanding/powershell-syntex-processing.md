@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Découvrez comment utiliser PowerShell pour demander le traitement par un modèle de compréhension de document SharePoint Syntex.
-ms.openlocfilehash: f0b2292b68ce8f1c22c892ef3a807d3d54f91b85
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a0806910e268585f27f320e541bb8f30c2bec7db
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580901"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68025994"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Utiliser PowerShell pour demander le traitement par un modèle de compréhension de document
 

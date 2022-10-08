@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 description: Découvrez comment créer et gérer des stratégies de revendication automatique qui attribuent automatiquement des licences aux utilisateurs pour certaines applications.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 76f2742dc97f880c8044def269e3e9517ea4605c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 13618b44262199d71bd719576df01fd298813c8e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493783"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163576"
 ---
 # <a name="manage-microsoft-teams-auto-claim-policies"></a>Gérer les stratégies de revendication automatique Microsoft Teams
 
@@ -147,11 +148,11 @@ Si des produits de sauvegarde sont affectés à la stratégie, vous pouvez modif
 2. Sélectionnez **Afficher le rapport**. La page **du rapport de stratégie de revendication automatique répertorie** toutes les licences attribuées à partir de chaque stratégie au cours des 90 derniers jours. Par défaut, la page affiche les 90 derniers jours.
 3. Pour modifier la période indiquée, sélectionnez la liste déroulante **des 30 derniers jours** . Vous pouvez afficher les rapports des 1, 7, 30 et 90 derniers jours.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Vous pouvez revenir régulièrement à l’onglet **Stratégie de revendication automatique** pour afficher la liste des utilisateurs qui ont revendiqué des licences sous les stratégies que vous avez créées.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Acheter ou supprimer des licences d’abonnement](buy-licenses.md) (article)\

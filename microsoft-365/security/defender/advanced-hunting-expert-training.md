@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: ac9e28a51e79eea85a56fea652931d9db38f1907
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 49fbc7c5f7a4c8556640b1f69b0e28160eb30917
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477646"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059215"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtenir une formation d’expert sur la chasse avancée
 

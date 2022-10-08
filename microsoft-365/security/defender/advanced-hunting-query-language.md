@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier1
 ms.topic: article
-ms.openlocfilehash: ee267084501fad28a0bff592f5c06d130f73a424
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 103c31c343eec32705a7e8fd4eccfc6e00d49791
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480797"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049251"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 

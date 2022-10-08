@@ -18,17 +18,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 ms.reviewer: ''
 description: Ressources pour aider à former votre équipe de première ligne à l’aide de Shifts pour accéder à leurs planifications et les gérer.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 4a6df6f701902d0275870b39e7f7717137ba9ab0
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 1ac458f7adbf3870f5b649166f55db63c22c4495
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432439"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68038772"
 ---
 # <a name="help-your-frontline-workers-track-time-and-attendance"></a>Aider vos employés de première ligne à suivre le temps et la présence
 

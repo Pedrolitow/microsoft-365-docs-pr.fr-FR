@@ -12,6 +12,7 @@ search.appverid:
 - MET150
 - SPO160
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -19,12 +20,12 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contient des liens vers d’autres articles qui vous indiquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online.
-ms.openlocfilehash: 5cd50fb409a1da255dc1b6ce9e794ddbc09f910d
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 339b8b2bb06aafaf758423ae53b9a59f82555756
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671916"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178512"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimisation des performances SharePoint Online
 

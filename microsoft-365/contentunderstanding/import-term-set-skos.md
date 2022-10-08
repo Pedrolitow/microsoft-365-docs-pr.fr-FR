@@ -1,22 +1,24 @@
 ---
 title: Importer un ensemble de termes avec un format SKOS
-description: Découvrez comment importer un ensemble de termes avec un format SKOS
+description: Découvrez comment importer un ensemble de termes à l’aide d’un format SKOS.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.service: microsoft-365-enterprise
 ms.topic: article
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: 4e9d091eaf92940b2bdfce95712a9d5e4947cf92
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 411c4e3303d6bb20370d540de998f9e6ea95105d
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580923"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026027"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importer un ensemble de termes avec un format SKOS
 
@@ -38,7 +40,7 @@ Nous vous recommandons d’inclure moins de 20 000 termes dans vos fichiers d�
 
 7. Cliquez sur **Parcourir**, puis ajoutez votre fichier d’importation.
 
-8. Cliquez sur **Importer**. Ne fermez le panneau qu’une fois l’importation terminée.
+8. Click **Import**. Do not close the panel until the import completes.
 
 Une fois le fichier correctement importé, un message de réussite s’affiche, puis le magasin de termes est actualisé. Vous pouvez alors accéder aux nouveaux ensembles de termes récemment créés.
 

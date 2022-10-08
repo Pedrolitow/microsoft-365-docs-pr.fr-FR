@@ -11,17 +11,18 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9a144968d112328ace78b27f2f62b4ecc3cfd921
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+search.appverid: met150
+ms.openlocfilehash: 3c0bdc066d1f47c02afe8fae1938813241bceff5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611210"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055213"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -55,7 +56,7 @@ Dans Exchange Online PowerShell, vous gérez la stratégie et la règle séparé
 Chaque Defender pour Office 365 organisation dispose d’une stratégie anti-hameçonnage intégrée nommée Office 365 Par défaut anti-hameçonnage qui a les propriétés suivantes :
 
 - La stratégie est appliquée à tous les destinataires de l’organisation, même s’il n’existe aucune règle anti-hameçonnage (filtres de destinataires) associée à la stratégie.
-- La stratégie a la valeur de priorité personnalisée la **plus petite**, que vous ne pouvez pas modifier (la stratégie est toujours appliquée en dernier). Les stratégies personnalisées que vous créez disposent d’une priorité plus élevée.
+- The policy has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom policies that you create always have a higher priority.
 - La stratégie est la stratégie par défaut (la propriété **IsDefault** possède la valeur`True`) et vous ne pouvez pas supprimer la stratégie par défaut.
 
 Pour augmenter l’efficacité de la protection anti-hameçonnage dans Defender pour Office 365, vous pouvez créer des stratégies anti-hameçonnage personnalisées avec des paramètres plus stricts qui sont appliqués à des utilisateurs ou des groupes d’utilisateurs spécifiques.
@@ -74,7 +75,7 @@ Pour augmenter l’efficacité de la protection anti-hameçonnage dans Defender 
 
   **Remarques** :
 
-  - L'ajout d'utilisateurs au rôle Azure Active Directory Domain Services correspondant dans le centre d'administration Microsoft 365 donne aux utilisateurs les autorisations _et_ autorisations requises pour d'autres fonctionnalités dans Microsoft 365. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour connaître les paramètres recommandés pour les stratégies anti-hameçonnage dans Defender pour Office 365, consultez [la stratégie anti-hameçonnage dans Defender pour Office 365 paramètres](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
@@ -106,11 +107,11 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
-   Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identifiants (nom, nom d'affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom d'affichage correspondant est affiché dans les résultats. Pour les utilisateurs, entrez un astérisque (\*) seul pour voir toutes les valeurs disponibles.
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
    Plusieurs valeurs dans la même condition utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-   - **Exclure ces utilisateurs, groupes et domaines** : Pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s'applique (exceptions des destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    > [!IMPORTANT]
    > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
@@ -178,7 +179,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
        Après avoir sélectionné au moins une entrée, l’icône ![Supprimer les domaines.](../../media/m365-cc-sc-delete-icon.png) **L’icône Supprimer** s’affiche, que vous pouvez utiliser pour supprimer les entrées sélectionnées.
 
-   - **Ajouter des expéditeurs et des domaines approuvés** : spécifiez les exceptions de protection d’emprunt d’identité pour la stratégie en cliquant sur **Gérer (nn) les expéditeurs approuvés et les domaines**. Dans le menu volant **Gérer les domaines personnalisés pour la protection de l’emprunt d’identité** qui s’affiche, configurez les paramètres suivants :
+   - **Ajouter des expéditeurs et domaines approuvés** : spécifiez des exceptions de protection d’emprunt d’identité pour la stratégie en cliquant sur **Gérer (nn) les expéditeurs approuvés et les domaines**. Dans le menu volant **Gérer les domaines personnalisés pour la protection de l’emprunt d’identité** qui s’affiche, configurez les paramètres suivants :
       - **Expéditeurs** : vérifiez que l’onglet **Expéditeur** est sélectionné, puis cliquez sur ![l’icône Ajouter des expéditeurs.](../../media/m365-cc-sc-create-icon.png) Dans le menu volant **Ajouter des expéditeurs approuvés** qui s’affiche, entrez une adresse e-mail dans la zone, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire. Pour supprimer une entrée existante, cliquez sur ![l’icône](../../media/m365-cc-sc-close-icon.png) Supprimer pour l’entrée.
 
         Lorsque vous avez terminé, cliquez sur **Ajouter**.
@@ -190,11 +191,13 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
         Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
      > [!NOTE]
-     > Si les messages système Microsoft 365 des expéditeurs suivants sont identifiés comme des tentatives d’emprunt d’identité, vous pouvez ajouter les expéditeurs à la liste des expéditeurs approuvés :
      >
-     > - `⁠noreply@email.teams.microsoft.com`
-     > - `noreply@emeaemail.teams.microsoft.com`
-     > - `no-reply@sharepointonline.com`
+     > - Si les messages système Microsoft 365 des expéditeurs suivants sont identifiés comme des tentatives d’emprunt d’identité, vous pouvez ajouter les expéditeurs à la liste des expéditeurs approuvés :
+     >   - `⁠noreply@email.teams.microsoft.com`
+     >   - `noreply@emeaemail.teams.microsoft.com`
+     >   - `no-reply@sharepointonline.com`
+     >
+     > - Les entrées de domaine approuvé n’incluent pas de sous-domaines du domaine spécifié. Vous devez ajouter une entrée pour chaque sous-domaine.
 
      De retour dans le menu volant **Gérer les domaines personnalisés pour l’emprunt d’identité** , vous pouvez supprimer des entrées des onglets **Expéditeur** et **Domaine** en sélectionnant une ou plusieurs entrées dans la liste. Vous pouvez rechercher des entrées à l’aide de l’icône ![Rechercher.](../../media/m365-cc-sc-create-icon.png) **Zone de recherche** .
 
@@ -314,8 +317,8 @@ Vous ne pouvez pas désactiver la stratégie anti-hameçonnage par défaut.
 2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
 
 3. En haut du menu volant des détails de stratégie qui s’affiche, vous verrez l’une des valeurs suivantes :
-   - **Stratégie désactivée** : Pour activer la stratégie, cliquez sur l’![icône Activer.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activer**.
-   - **Stratégie sur**: Pour désactiver la stratégie,cliquez sur ![l’icône Désactiver.](../../media/m365-cc-sc-turn-on-off-icon.png) **Désactiver**.
+   - **Policy off**: To turn on the policy, click ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
+   - **Policy on**: To turn off the policy, click ![Turn off icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
 
 4. Dans la boîte de dialogue de confirmation qui s’affiche, cliquez sur **Activer** ou **Désactiver**.
 
@@ -327,9 +330,9 @@ De retour sur la page principale de la stratégie, la valeur **État** de la str
 
 Par défaut, les stratégies anti-hameçonnage reçoivent une priorité basée sur l’ordre dans lequel elles ont été créées (les stratégies plus récentes sont moins prioritaires que les stratégies plus anciennes). Un numéro de priorité inférieur indique une priorité plus élevée pour la stratégie (la valeur 0 est la plus élevée) et les stratégies sont traitées dans l’ordre de priorité (les stratégies de priorité supérieure sont traitées avant les stratégies de priorité inférieure). Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
 
-Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro de **priorité** dans le portail Microsoft 365 Defender). Changer la priorité d'une stratégie n'a de sens que si vous avez plusieurs stratégies.
+To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Microsoft 365 Defender portal). Changing the priority of a policy only makes sense if you have multiple policies.
 
- **Remarques** :
+ **Remarques** :
 
 - Dans le portail Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie anti-hameçonnage qu’après la avoir créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lorsque vous créez la règle anti-hameçonnage (qui peut affecter la priorité des règles existantes).
 - Les stratégies anti-hameçonnage sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie a la valeur **Priority** 0). La stratégie anti-hameçonnage par défaut a la valeur de priorité **la plus basse**, et vous ne pouvez pas la modifier.
@@ -343,7 +346,7 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
    - La stratégie avec la valeur **de priorité** la plus basse (par exemple, **3**) a uniquement l’option **Augmenter la priorité** disponible.
    - Si vous avez au moins trois stratégies, les stratégies entre les valeurs de priorité la plus élevée et la plus basse ont les options **Augmenter la priorité** et Diminuer la **priorité** disponibles.
 
-   Cliquez sur l’![Icône Augmenter la priorité](../../media/m365-cc-sc-increase-icon.png) **Augmenter la priorité** ou ![Icône Diminuer la priorité](../../media/m365-cc-sc-decrease-icon.png) **Diminuer la priorité** pour modifier la valeur **Priorité**.
+   Cliquez sur l’icône ![Augmenter la priorité.](../../media/m365-cc-sc-increase-icon.png) **Icône Augmenter la priorité** ou ![Diminuer la priorité](../../media/m365-cc-sc-decrease-icon.png) **Diminuer la priorité** pour modifier la valeur **de priorité** .
 
 4. Lorsque vous avez terminé, cliquez sur **Fermer** dans le menu volant des détails de la stratégie.
 
@@ -546,7 +549,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>Utiliser PowerShell pour définir la priorité des règles anti-hameçonnage
 
-La valeur 0 est la priorité la plus élevée que vous pouvez définir sur une règle. La valeur la plus basse que vous pouvez définir dépend du nombre de règles. Par exemple, si vous avez cinq règles, vous pouvez utiliser les valeurs de priorité 0 à 4. Tout changement de priorité d'une règle existante peut avoir un effet en cascade sur les autres règles. Par exemple, si vous avez cinq règles personnalisées (priorités de 0 à 4) et que vous modifiez la priorité d'une règle sur 2, la règle existante de priorité 2 passe en priorité 3, et la règle de priorité 3 passe en priorité 4.
+The highest priority value you can set on a rule is 0. The lowest value you can set depends on the number of rules. For example, if you have five rules, you can use the priority values 0 through 4. Changing the priority of an existing rule can have a cascading effect on other rules. For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.
 
 Pour définir la priorité d’une règle anti-hameçonnage dans PowerShell, utilisez la syntaxe suivante :
 
@@ -554,7 +557,7 @@ Pour définir la priorité d’une règle anti-hameçonnage dans PowerShell, uti
 Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-Cet exemple définit la priorité de la règle nommée Marketing Department sur 2. Toutes les règles existantes dont la priorité est inférieure ou égale à 2 sont diminuées d’une unité (leurs numéros de priorité sont augmentés de 1).
+This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
 ```PowerShell
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2

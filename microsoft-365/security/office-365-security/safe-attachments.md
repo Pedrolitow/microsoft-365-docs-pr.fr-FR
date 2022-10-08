@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité Pièces jointes sécurisées dans Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 4ee9bfea06d1bc3e4b5b49bc4759b9d59166cd1f
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 3816b047fce131a161a6154a013def9a6c92cd2b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671388"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054795"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Pièces jointes sécurisées dans Microsoft Defender pour Office 365
 

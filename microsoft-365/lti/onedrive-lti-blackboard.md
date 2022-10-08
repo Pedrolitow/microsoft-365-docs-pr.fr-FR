@@ -6,16 +6,16 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection: m365initiative-edu
 ms.localizationpriority: medium
 description: Créez et classez des affectations, créez et organisez du contenu de cours, et collaborez sur des fichiers en temps réel avec la nouvelle interopérabilité des outils d’apprentissage Microsoft OneDrive pour Blackboard.
-ms.openlocfilehash: 2fd03732a9426bb13176dbfc16a7c996767f5430
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: d5a1b4f08b3507af176c7dd145520767ecdb752f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388350"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177633"
 ---
 # <a name="use-microsoft-onedrive-lti-with-blackboard"></a>Utiliser Microsoft OneDrive LTI avec Blackboard
 

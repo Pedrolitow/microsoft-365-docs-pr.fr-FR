@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 50ff8cc6ed7705f0d2b3afb0709085ce0abe87b6
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 9c05bed41650d971e381dfe7222b61d26ef0b04d
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731307"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987233"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -36,7 +36,7 @@ Pour ce niveau de protection, nous créons une étiquette de confidentialité qu
 
 Le niveau hautement sensible offre les protections supplémentaires suivantes sur le niveau de référence :
 
-- Une étiquette de sensibilité pour l'équipe qui vous permet d'activer ou de désactiver le partage avec les invités et de bloquer l'accès au contenu SharePoint pour les appareils non gérés. Ce label peut également être utilisé pour classer et crypter les fichiers.
+- A sensitivity label for the team that allows you to turn guest sharing on or off and blocks access to SharePoint content for unmanaged devices. This label can also be used to classify and encrypt files.
 - Type de lien de partage par défaut plus restrictif
 - Seuls les propriétaires d’équipe peuvent créer des canaux privés.
 - Les demandes d’accès au site SharePoint associé sont désactivées.
@@ -73,7 +73,7 @@ Pour créer une étiquette de confidentialité
 1. Ouvrez le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
-4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **Hautement sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
+4. Give the label a name. We suggest **Highly sensitive**, but you can choose a different name if that one is already in use.
 5. Tapez un nom et une description, puis cliquez sur **Suivant**.
 6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
 7. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, sélectionnez **Chiffrer les fichiers et les e-mails**, puis cliquez sur **Suivant**.
@@ -89,7 +89,7 @@ Pour créer une étiquette de confidentialité
 17. Cliquez sur **Suivant**.
 18. Dans la page **Définir les paramètres de partage externe et d’accès aux appareils**, sélectionnez **Contrôler le partage externe dans les sites étiquetés SharePoint**.
 19. Sous **Le contenu peut être partagé avec**, sélectionnez **Invités nouveaux et existants** si vous autorisez l’accès invité ou **Uniquement les membres de votre organisation** si ce n’est pas le cas.
-20. Sous **Accès à partir d’appareils non gérés**, choisissez **Bloquer l’accès**. (Si vous autorisez les invités et qu’ils n’ont pas d’appareils gérés, vous pouvez choisir **Autoriser l’accès limité, sites web uniquement**.)
+20. Under **Access from unmanaged devices**, choose **Block access**. (If you're allowing guests and they don't have managed devices, you may want to choose **Allow limited, web-only access**.)
 21. Cliquez sur **Suivant**.
 22. Dans la page **Étiquetage automatique pour les colonnes de base de données** , cliquez sur **Suivant**.
 23. Cliquez sur **Créer une étiquette**, puis sur **Terminé**.
@@ -122,7 +122,7 @@ Vous pouvez également utiliser les [stratégies d’équipes](/MicrosoftTeams/t
 
 ## <a name="shared-channel-settings"></a>Paramètres de canal partagé
 
-Les [Canaux partagés](/MicrosoftTeams/shared-channels) n’ont pas de paramètres au niveau de l’équipe. Les paramètres de canal partagé que vous configurez dans le Centre d’administration Teams et Azure AD s’appliquent à toutes les équipes, quel que soit le niveau de confidentialité.
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD will be available for all teams regardless of sensitivity.
 
 ## <a name="sharepoint-settings"></a>Paramètres de SharePoint
 

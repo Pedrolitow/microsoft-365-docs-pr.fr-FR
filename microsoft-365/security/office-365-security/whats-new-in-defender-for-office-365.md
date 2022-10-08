@@ -9,23 +9,23 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 08/30/2022
+ms.date: 09/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7a8efc09e296914307bfd8b8003c09eb8f25bada
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 7ad14ea93944cf7f754006c4e934049061d1b29d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671762"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057565"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -63,10 +63,11 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - Les éléments du Centre de sécurité et de conformité Office 365 qui ne sont pas liés à la sécurité ne sont pas redirigés vers Microsoft 365 Defender. Pour plus d’informations sur la redirection des solutions de conformité vers le Centre de conformité Microsoft 365, consultez la publication 244886 du Centre de messages. 
 - Il s’agit d’une continuation de [Microsoft 365 Defender offre une expérience XDR unifiée aux clients GCC, GCC High et DoD - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), annoncé en mars 2022.
 - Cette modification permet aux utilisateurs d’afficher et de gérer des solutions de sécurité Microsoft 365 Defender supplémentaires dans un portail.
-- Ce changement affecte tous les clients qui utilisent le Centre de sécurité et de conformité Office 365 (protection.office.com), y compris Microsoft Defender pour Office (Plan 1 ou Plan 2), Microsoft 365 E3 /E5, Office 365 E3/E5 et Exchange Online Protection. Pour obtenir la liste complète, consultez [Security & Compliance Center - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
-- Cette modification a un impact sur tous les utilisateurs qui se connectent au portail de sécurité et de conformité Office 365 (protection.office.com), y compris les équipes de sécurité et les utilisateurs finaux qui accèdent à l’expérience de mise en quarantaine Email, dans la **mise en quarantaine** de révision du **portail** >  >  Microsoft Defender.
+- Ce changement affecte tous les clients qui utilisent le Centre de sécurité et de conformité Office 365 (protection.office.com), y compris les Microsoft Defender pour Office (Plan 1 ou Plan 2), Microsoft 365 E3 /E5, Office 365 E3/E5 et Exchange Online Protection. Pour obtenir la liste complète, consultez [Security & Compliance Center - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+- Cette modification a un impact sur tous les utilisateurs qui se connectent au portail de sécurité et de conformité Office 365 (protection.office.com), y compris les équipes de sécurité et les utilisateurs finaux qui accèdent à l’expérience de mise en quarantaine Email, dans le **portail Microsoft Defender** > **Vérifier** >  la **quarantaine**.
 - La redirection est activée par défaut et a un impact sur tous les utilisateurs du locataire.
 - Les administrateurs généraux et les administrateurs de sécurité peuvent activer ou désactiver la redirection dans le portail Microsoft 365 Defender en accédant à **Paramètres** >  Email &**la redirection du portail** de **collaboration** >  et en basculant la redirection.
+- **Protection intégrée** : profil qui permet un niveau de base de protection des liens sécurisés et des pièces jointes sécurisées activé par défaut pour tous les clients Defender pour Office 365. Pour en savoir plus sur cette nouvelle stratégie et l’ordre de priorité, consultez [stratégies de sécurité prédéfinies](preset-security-policies.md) et pour en savoir plus sur l’ensemble de contrôles liens sécurisés et pièces jointes sécurisés, consultez [les paramètres Pièces jointes sécurisées](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) et [liens sécurisés](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
 ## <a name="july-2022"></a>Juillet 2022
 
@@ -87,6 +88,8 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
   - Configurez les paramètres de protection de l’emprunt d’identité pour les utilisateurs personnalisés et les domaines personnalisés dans les stratégies Strict/Standard prédéfinies et protégez automatiquement vos utilisateurs ciblés et le domaine ciblé contre les attaques d’emprunt d’identité.
 
 - [Simplification de l’expérience de quarantaine (deuxième partie) dans Microsoft 365 Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687) : met en évidence des fonctionnalités supplémentaires pour rendre l’expérience de quarantaine encore plus facile à utiliser.
+
+- [Introduction de la protection différenciée pour les comptes prioritaires dans Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838) : introduction de la disponibilité GCC, GCC-H et DoD de la protection différenciée pour les comptes prioritaires.
 
 ## <a name="april-2022"></a>Avril 2022
 

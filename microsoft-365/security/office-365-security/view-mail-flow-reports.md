@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Les administrateurs peuvent en savoir plus sur les rapports de flux de courrier disponibles dans le tableau de bord Rapports du Centre de sécurité & conformité.
 ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 26a6211e86266dad2705eb7024ad8a4b86e63e25
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 81555650f71692864dc00abad9c65df883cf9955
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851037"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048503"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de courrier dans le tableau de bord Rapports du Centre de sécurité & conformité
 

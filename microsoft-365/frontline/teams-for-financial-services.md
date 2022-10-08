@@ -13,8 +13,10 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-financial-services
 - m365-frontline
+- highpri
 - m365solution-financialservices
 - m365solution-overview
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,19 +25,19 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 67be94b826011160715917a8b37a964e88d4a48a
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: 35774f5c8b220225f0f51badfdbff1d2d3362e04
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66992501"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054377"
 ---
 # <a name="get-started-with-microsoft-365-for-financial-services"></a>Démarrage avec Microsoft 365 pour les services financiers
 
 Les employés de première ligne du secteur des services financiers ont des besoins uniques en matière de communication et de collaboration en fonction des services qu’ils proposent. Pour tirer le meilleur parti de votre personnel de première ligne, vous devez d'abord choisir les scénarios dans lesquels Microsoft 365 peut vous aider dans vos opérations commerciales quotidiennes, puis vous assurer que vous préparez votre environnement avec les bases, les équipes et les applications appropriées pour prendre en charge ces scénarios.
 
 1. [Choisissez vos scénarios](#choose-your-scenarios) à implémenter pour votre entreprise.
-2. [Configurer Microsoft 365](flw-setup-microsoft-365.md) - Configurer les éléments principaux de Microsoft 365, Microsoft Teams et tous les autres services dont vous avez besoin.
+2. [Configurer Microsoft 365](flw-setup-microsoft-365.md) – Configurer les éléments principaux de Microsoft 365, Microsoft Teams et tous les autres services dont vous avez besoin.
 3. [Configurer des services et des applications](#configure-services-and-apps) : utilisez des modèles d’équipe pour configurer rapidement les équipes dont vous avez besoin, y compris les canaux et les applications dont vous avez besoin pour votre entreprise. Ajoutez d’autres applications de Microsoft Corporation si nécessaire pour prendre en charge vos scénarios.
 
 ## <a name="choose-your-scenarios"></a>Choisissez vos scénarios
@@ -134,4 +136,4 @@ Pour les environnements de services financiers, les applications et services sui
 | Viva Learning | Fournissez une formation initiale et continue pour vous assurer que vos employés sont à jour avec leurs compétences et leurs base de connaissances. | [Gérer Viva Learning](/microsoft-365/learning/) | [Utilisez Viva Learning pour organiser des expériences d’apprentissage.](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
 | Yammer | Connectez l’ensemble de votre organisation et activez la communication entre les services et les régions. | [Gestion de Yammer](/yammer) | [Utiliser Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
 
-Pour plus d’informations sur l’implémentation et l’adoption Teams, voir [Adopter Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page)
+Pour plus d’informations sur l’implémentation et l’adoption Teams, voir [Adopter Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page).

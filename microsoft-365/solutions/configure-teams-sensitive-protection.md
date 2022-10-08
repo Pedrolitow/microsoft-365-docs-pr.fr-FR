@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -21,18 +21,18 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données sensibles.
-ms.openlocfilehash: 9d340079dd60337c8071d31cec137524cf173f66
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 23c9d4761ce20cc003c91b2fea329ca74b2bc835
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731395"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987211"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurer les équipes avec la protection des données sensibles
 
 Dans cet article, nous étudions la configuration d’une équipe pour un niveau de protection sensible. Assurez-vous d’avoir effectué les étapes décrites dans [Déployer des équipes avec une protection de base de référence](configure-teams-baseline-protection.md) avant de suivre les étapes décrites dans cet article. Le niveau sensible offre les protections supplémentaires suivantes sur le niveau de référence :
 
-- Une étiquette de sensibilité pour l'équipe qui vous permet d'activer ou de désactiver le partage des invités et de limiter l'accès au contenu SharePoint au web uniquement pour les appareils non gérés. Cette étiquette peut également être utilisée pour classer les fichiers.
+- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label can also be used to classify files.
 - Type de lien de partage par défaut plus restrictif
 - Seuls les propriétaires d’équipe peuvent créer des canaux privés.
 
@@ -68,7 +68,7 @@ Pour créer une étiquette de confidentialité
 1. Ouvrez le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
-4. Donnez un nom à l’étiquette. Nous vous suggérons **Sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
+4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
 5. Tapez un nom et une description, puis cliquez sur **Suivant**.
 6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
 7. Dans la page **Sélectionner les paramètres de protection pour les fichiers et les messages électroniques**, cliquez sur **Suivant**.
@@ -112,7 +112,7 @@ Vous pouvez également utiliser les [stratégies d’équipes](/MicrosoftTeams/t
 
 ## <a name="shared-channel-settings"></a>Paramètres de canal partagé
 
-Les [Canaux partagés](/MicrosoftTeams/shared-channels) n’ont pas de paramètres au niveau de l’équipe. Les paramètres de canal partagé que vous configurez dans le Centre d’administration Teams et Azure AD s’appliquent à toutes les équipes, quel que soit le niveau de confidentialité.
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD apply to all teams regardless of sensitivity.
 
 ## <a name="sharepoint-settings"></a>Paramètres de SharePoint
 

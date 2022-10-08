@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 9f6624122a2b1b6989e83757b246a82b01e33bbb
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: b0a0784aece4eb58d4832b9f5b6fdcb44fd67f36
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664664"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051847"
 ---
 # <a name="emailevents"></a>EmailEvents
 

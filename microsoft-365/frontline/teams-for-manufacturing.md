@@ -13,8 +13,10 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-manufacturing
 - m365-frontline
+- highpri
 - m365solution-manufacturing
 - m365solution-overview
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,12 +25,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 20dc1e5305e41e97501ce9d654c74f1afd0ee5b2
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: 74f4f51c53964b75f046a9afa9666a41530ae97f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66992508"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054267"
 ---
 # <a name="get-started-with-microsoft-365-for-manufacturing"></a>Prise en main de Microsoft 365 pour le secteur de la fabrication
 

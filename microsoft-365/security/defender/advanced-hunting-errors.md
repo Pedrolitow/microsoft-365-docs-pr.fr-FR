@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 0839bd8c82defd79193c040c54c4b83afc7d24ce
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3886e1b8e70ba16e02e039171b60c4a209a83ec4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480081"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049405"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gérer les erreurs de repérage avancées
 
@@ -45,7 +47,7 @@ La chasse avancée affiche les erreurs à signaler pour les erreurs de syntaxe e
 | Limitation du processeur | Les requêtes dans le même locataire ont dépassé les [ressources UC](advanced-hunting-limits.md) qui ont été allouées en fonction de la taille du locataire. | Le service vérifie l’utilisation quotidienne des ressources du processeur toutes les 15 minutes et affiche des avertissements lorsque l’utilisation dépasse 10 % du quota alloué. Si vous atteignez une utilisation de 100 %, le service bloque les requêtes jusqu’au prochain cycle routinier ou de 15 minutes. [Optimiser vos requêtes pour éviter d’atteindre les quotas d’UC](advanced-hunting-best-practices.md) | - `This query used X% of your organization's allocated resources for the current 15 minutes.`<br>- `You have exceeded processing resources allocated to this tenant. You can run queries again in <duration>.` |
 | Limite de taille de résultat dépassée  | La taille agrégée du jeu de résultats pour la requête a dépassé la taille maximale. Cette erreur peut se produire si le jeu de résultats est si grand que la limite de troncation à 10 000 enregistrements ne peut pas être réduit à une taille acceptable. Les résultats qui ont plusieurs colonnes avec un contenu important sont plus susceptibles d’être touchés par cette erreur. | [Optimiser la requête](advanced-hunting-best-practices.md) | `Result size limit exceeded. Use "summarize" to aggregate results, "project" to drop uninteresting columns, or "take" to truncate results.` |
 | Consommation excessive de ressources | La requête a consommé des quantités excessives de ressources et a été arrêtée. Dans certains cas, le repérage avancé identifie l’opérateur spécifique qui n’a pas été optimisé. | [Optimiser la requête](advanced-hunting-best-practices.md) | -`Query stopped due to excessive resource consumption.`<br>-`Query stopped. Adjust use of the <operator name> operator to avoid excessive resource consumption.` |
-| Erreurs inconnues | La requête a échoué pour une raison inconnue. | Réessayez d’exécuter la requête. Contactez Microsoft via le portail si les requêtes continuent de retourner des erreurs inconnues. | `An unexpected error occurred during query execution. Please try again in a few minutes.`
+| Erreurs inconnues | La requête a échoué pour une raison inconnue. | Réessayez d’exécuter la requête. Contactez Microsoft via le portail si les requêtes continuent de renvoyer des erreurs inconnues. | `An unexpected error occurred during query execution. Please try again in a few minutes.`
 
 
 

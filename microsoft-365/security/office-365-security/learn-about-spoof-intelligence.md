@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’information sur l’usurpation d’identité dans Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 048ec6feaeca081704fef7a4e5a14f6b375f1f6f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 3846db81cf6378e7e1bb5570927f452068ee2431
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597887"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048613"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence d’usurpation d’identité dans EOP
 
@@ -84,7 +84,7 @@ Le reste de cet article explique comment utiliser les informations d’usurpatio
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Vous activez et désactivez l’usurpation d’identité dans les stratégies anti-hameçonnage dans EOP et Microsoft Defender pour Office 365. L’intelligence par usurpation d’identité est activée par défaut. Pour plus d’informations, consultez [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md) ou [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).

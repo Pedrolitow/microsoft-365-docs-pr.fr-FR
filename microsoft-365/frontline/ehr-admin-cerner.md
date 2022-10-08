@@ -20,17 +20,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Découvrez comment intégrer le connecteur DMI Teams pour permettre aux prestataires de santé de votre organisation d’effectuer des rendez-vous virtuels avec des patients ou d’autres fournisseurs dans Teams directement à partir du système DMI Cerner.
-ms.openlocfilehash: 856447ac9036be5a707788e333892aba106800c7
-ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.openlocfilehash: c04d2840c808fbaa98717a64288df372aeab19cc
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67333717"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68043744"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-cerner-ehr"></a>Rendez-vous virtuels avec Teams – Intégration à Cerner EHR
 

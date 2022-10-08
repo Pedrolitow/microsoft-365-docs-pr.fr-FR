@@ -1,16 +1,18 @@
 ---
-title: Bloquer Microsoft 365 comptes d’utilisateur avec PowerShell
+title: Bloquer les comptes d’utilisateurs Microsoft 365 avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,14 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Comment utiliser PowerShell pour bloquer et débloquer l’accès aux comptes Microsoft 365.
-ms.openlocfilehash: ffeac03f9f48e6531443a8f90a3d5fd3506172fe
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ab212909aa0fa664bee42ac7d5ca74b4b29f7994
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091608"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163445"
 ---
-# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquer Microsoft 365 comptes d’utilisateur avec PowerShell
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquer les comptes d’utilisateurs Microsoft 365 avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
@@ -127,7 +129,7 @@ Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential
 >[!Note]
 >PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell module et les applets de commande qui ont *Msol* dans leur nom. Vous devez exécuter ces applets de commande à partir de Windows PowerShell.
 
-Cet exemple bloque l’accès au compte *d’utilisateur fabricec\@ litwareinc.com*.
+Cet exemple bloque l’accès au compte d’utilisateur *fabricec\@litwareinc.com*.
 
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true

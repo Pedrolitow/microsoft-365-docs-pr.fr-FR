@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Administration pouvez apprendre à configurer la prise en charge des e-mails entrants anonymes à partir de sources IPv6 dans Exchange Online et Exchange Online Protection.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ea64d73177c18fcfde55caa6637815361f90560d
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 633d77cd79e2ecbe437d0da405c9df3fca923a2d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598282"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060315"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Ajouter la prise en charge des e-mails entrants anonymes via IPv6 dans Microsoft 365
 

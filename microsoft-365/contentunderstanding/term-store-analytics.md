@@ -1,6 +1,6 @@
 ---
 title: Rapports de banque de termes
-description: Découvrez comment créer des rapports sur l’activité de banque de termes
+description: Découvrez comment signaler l’activité du magasin de termes.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -10,15 +10,15 @@ ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-viva-topics
+- m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: a1b32883d1928dae9af564be46d17f93711cd2ee
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 558f322c8e22ae6146f90baa4d9ce19f00a6cea5
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584879"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68025346"
 ---
 # <a name="term-store-reports"></a>Rapports de banque de termes
 
