@@ -11,19 +11,20 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: a6b8e346547d246322593c67a07a0eaeb9f13c18
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: e8efe7834f20b651d875a17cf59413edb63bd6b1
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336307"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484256"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -37,6 +38,8 @@ Pour en savoir plus sur les stratégies de rétention et le fonctionnement de la
 
 > [!NOTE]
 > Les informations sur cette page sont pour les administrateurs de conformité. Si vous n'êtes pas administrateur et que vous souhaitez comprendre comment les stratégies de rétention ont été configurées pour les applications que vous utilisez, contactez votre service d'assistance, votre service informatique ou votre administrateur. Si vous voyez des messages concernant les stratégies de rétention dans les conversations Teams et dans les messages des canaux, vous trouverez peut-être utile d'examiner [Messages Teams concernant les stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -69,7 +72,7 @@ Lorsque vous sélectionnez l’emplacement Teams ou Yammer lors de la création 
 > [!NOTE]
 > Lorsque vous utilisez des stratégies adaptatives au lieu de stratégies statiques, vous pouvez configurer une stratégie de rétention unique pour inclure les emplacements Teams et Yammer de rétention. Ce n’est pas le cas pour les stratégies statiques dans Teams et Yammer de rétention nécessitent leur propre stratégie de rétention.
 
-Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez également des étiquettes de rétention, voir [Principes de rétention et priorité](retention.md#the-principles-of-retention-or-what-takes-precedence) pour comprendre le résultat lorsque plusieurs paramètres de rétention s’appliquent au même contenu.
+Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez également des étiquettes de rétention, consultez [les principes de rétention ou ce qui est prioritaire pour](retention.md#the-principles-of-retention-or-what-takes-precedence) comprendre le résultat lorsque plusieurs paramètres de rétention s’appliquent au même contenu.
 
 ### <a name="retention-policy-for-teams-locations"></a>Stratégie de rétention pour les emplacements Teams
 
@@ -84,18 +87,18 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 
 4. En fonction de l’étendue sélectionnée :
     
-    - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement **ajouté un type d’étendue** d’utilisateur, vous pourrez sélectionner Teams **conversations,** mais pas Teams **messages de canal.** 
+    - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement ajouté un type d’étendue **d’utilisateur**, vous pouvez sélectionner **des conversations Teams** , mais pas des **messages de canal Teams**. 
     
     - Si vous avez choisi **Statique :** dans la **page** Choisir les emplacements à appliquer à la stratégie, sélectionnez un ou plusieurs emplacements pour Teams :
         - **Message de canal d'équipe** : messages provenant de chats de canal standard et partagé, et de réunions de canal standard et partagé, mais pas de [canaux privés](/microsoftteams/private-channels) qui ont leur propre emplacement de politique.
-        - **Conversations Teams** : messages provenant de conversations privées individuelles, de conversations de groupe et de conversations de réunion.
+        - **Conversations Teams** : messages provenant de conversations privées 1:1, de conversations de groupe, de conversations de réunion et de conversation avec vous-même.
         - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé. Si vous sélectionnez cette option, vous ne pouvez pas sélectionner les autres emplacements Teams dans la même stratégie de conservation.
         
        Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](retention-settings.md#a-policy-that-applies-to-entire-locations). Vous pouvez toutefois affiner cette sélection grâce aux [options **Choisir** et **Exclure**](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
 5. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu.
 
-   Vous pouvez créer une politique de conservation qui se contente de conserver le contenu sans le supprimer, de le conserver puis de le supprimer après une période donnée ou de le supprimer après une période donnée. Pour plus d'informations, voir [Paramètres de conservation et de suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content).
+   You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 6. Terminez l’assistant pour enregistrer vos paramètres.
 
@@ -103,7 +106,7 @@ Pour obtenir des conseils permettant de déterminer quand utiliser les stratégi
 
 Pour obtenir des détails techniques sur le fonctionnement de la rétention pour Teams, y compris les éléments de messages pris en charge pour la rétention et le minutage des informations avec des exemples pas à pas, consultez [En savoir plus sur la rétention de Microsoft Teams](retention-policies-teams.md).
 
-#### <a name="known-configuration-issues"></a>Problèmes de configuration connus
+#### <a name="known-configuration-issues-for-teams-retention-policies"></a>Problèmes de configuration connus pour les stratégies de rétention Teams
 
 - Bien que vous puissiez sélectionner l’option pour démarrer la période de rétention lorsque les éléments ont été modifiés pour la dernière fois, la valeur **Lorsque les éléments ont été créés** est toujours utilisée. Pour les messages qui sont modifiés, une copie du message d’origine est enregistrée avec son timestamp d’origine pour identifier les cas où ce message avant modification a été créé, et le message après modification dispose d’un timestamp plus nouveau.
 
@@ -140,7 +143,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 
 4. En fonction de l’étendue sélectionnée :
     
-    - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement ajouté un **type d’étendue d’utilisateur**, vous pourrez sélectionner Yammer **messages** utilisateur, mais pas Yammer messages de **la communauté.** 
+    - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement ajouté un type d’étendue **d’utilisateur**, vous pouvez sélectionner les **messages utilisateur Yammer** , mais pas les **messages de la communauté Yammer**. 
     
     - Si vous avez choisi **Statique** : Sur la page **Choisir les emplacements** pour appliquer la politique, basculez sur l'un ou les deux emplacements pour Yammer : **Message de la communauté Yammer** et **Messages de l'utilisateur Yammer**.
         
@@ -152,15 +155,21 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 
 5. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu. 
     
-    Vous pouvez créer une politique de conservation qui se contente de conserver le contenu sans le supprimer, de le conserver puis de le supprimer après une période donnée ou de le supprimer après une période donnée. Pour plus d'informations, voir [Paramètres de conservation et de suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content).
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 6. Terminez l’assistant pour enregistrer vos paramètres.
 
-Pour en savoir plus sur le fonctionnement des stratégies de rétention pour Yammer, consultez la page [Découvrir les stratégies de rétention pour Yammer](retention-policies-yammer.md).
+Pour plus d’informations techniques sur le fonctionnement de la rétention pour Yammer, y compris les éléments des messages pris en charge pour la rétention et les informations de minutage avec des exemples de procédures pas à pas, consultez [En savoir plus sur la rétention pour Yammer](retention-policies-yammer.md).
+
+#### <a name="known-configuration-issues-for-yammer-retention-policies"></a>Problèmes de configuration connus pour les stratégies de rétention Yammer
+
+- Bien que vous puissiez sélectionner l’option pour démarrer la période de rétention lorsque les éléments ont été modifiés pour la dernière fois, la valeur **Lorsque les éléments ont été créés** est toujours utilisée. Pour les messages qui sont modifiés, une copie du message d’origine est enregistrée avec son timestamp d’origine pour identifier les cas où ce message avant modification a été créé, et le message après modification dispose d’un timestamp plus nouveau.
+
+- Lorsque vous sélectionnez **Modifier** pour l’emplacement desmessages des utilisateurs Yammer, vous devriez voir les invités et les non-utilisateurs de boîte aux lettres. Les stratégies de rétention ne sont pas conçues pour ces utilisateurs. Ne les sélectionnez pas.
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Stratégies de rétention supplémentaires requises pour la prise en charge de Yammer
 
-Yammer est bien plus que des messages de la communauté et des messages privés. Pour conserver et supprimer des courriers électroniques pour votre réseau Yammer, configurez une stratégie de rétention supplémentaire qui inclut les groupes Microsoft 365 utilisés pour Yammer, à l’aide de l'emplacement **Groupes Microsoft 365**.
+Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Groups** location.
 
 Cet emplacement inclut également les fichiers qui sont chargés dans Yammer communautés. Ces fichiers sont stockés dans le site SharePoint connecté à un groupe pour la Yammer communauté.
 
@@ -184,7 +193,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 
 4. En fonction de l’étendue sélectionnée :
     
-    - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement **ajouté un type d’étendue** d’utilisateur, vous pourrez sélectionner Exchange **courrier** électronique, mais pas SharePoint **sites.** 
+    - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez ajouté uniquement un type d’étendue **d’utilisateur**, vous pouvez sélectionner **l’e-mail Exchange** , mais pas les **sites SharePoint**. 
     
     - Si vous avez choisi **Statique** : Sur la page **Choose locations**, activez ou désactivez n'importe quel emplacement, à l'exception des emplacements pour Teams et Yammer. Vous pouvez laisser pour chaque emplacement la valeur par défaut [Appliquer la stratégie à l’intégralité de l’emplacement](retention-settings.md#a-policy-that-applies-to-entire-locations) ou [Spécifier des inclusions et des exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
     
@@ -196,7 +205,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 
 5. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu.
     
-    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, consultez [Paramètres pour la conservation et la suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content) sur cette page.
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
 6. Terminez l’assistant pour enregistrer vos paramètres.
 

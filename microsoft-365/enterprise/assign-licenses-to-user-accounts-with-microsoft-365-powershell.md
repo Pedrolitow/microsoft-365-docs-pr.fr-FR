@@ -3,12 +3,14 @@ title: Attribuer des licences Microsoft 365 à des comptes d’utilisateur avec 
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 09/19/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +23,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Dans cet article, découvrez comment utiliser PowerShell pour attribuer une licence Microsoft 365 à des utilisateurs sans licence.
-ms.openlocfilehash: 72814810d6ad1c762505d2a2caeac371812f63e1
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 17e2afda1eca7b91f8f43e4466c64298313d8259
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560744"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484322"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Attribuer des licences Microsoft 365 à des comptes d’utilisateur avec PowerShell
 
@@ -172,7 +174,7 @@ Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $add
 Cet exemple montre comment attribuer **à jamesp\@litwareinc.com** le même plan de licences que celui appliqué à **be litwareinc.com\@** :
 
 ```powershell
-$mgUser = Get-MgUser -UserId "belindan@litwareinc.com"
+$mgUser = Get-MgUser -UserId "belindan@litwareinc.com" -Property AssignedLicenses
 Set-MgUserLicense -UserId "jamesp@litwareinc.com" -AddLicenses $mgUser.AssignedLicenses -RemoveLicenses @()
 ```
 

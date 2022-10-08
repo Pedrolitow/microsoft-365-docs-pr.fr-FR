@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Découvrez comment activer le message de rapport ou les compléments d’hameçonnage de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 287f2880c8ed2252111164f6141fd2cede730a89
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 4166439f4a15be88326221c5a46f88c145a8f082
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596894"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484627"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer les compléments Signaler le message ou Signaler l’hameçonnage
 

@@ -11,17 +11,18 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Découvrez comment supprimer les connecteurs bloqués dans Microsoft 365 Defender.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f15a782d9acac240a091e4a6670e00d83bead517
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: e376676045a68d4127fbdd7eb05e0000c6e0788d
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495816"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484300"
 ---
 # <a name="remove-blocked-connectors-from-the-restricted-entities-portal"></a>Supprimer les connecteurs bloqués du portail d’entités restreintes
 
@@ -64,7 +65,7 @@ Il existe 2 types d’entités restreintes :
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
@@ -127,7 +128,7 @@ Pour supprimer un connecteur de la liste des entités restreintes, remplacez \<c
 Remove-BlockedConnector -ConnectorId <connectorId>
 ```
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - [Répondre à un connecteur compromis](respond-compromised-connector.md)
 - [Supprimer les utilisateurs bloqués](removing-user-from-restricted-users-portal-after-spam.md)

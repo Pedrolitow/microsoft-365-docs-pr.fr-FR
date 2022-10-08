@@ -15,13 +15,14 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 ms.collection:
+- scotvorg
 - M365-subscription-management
-ms.openlocfilehash: 3867be6d179ee8b014563c898562c3eaeb20546e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 7809e71165216f4b18ffae5e0151cdd941681832
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731351"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484605"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
@@ -42,7 +43,7 @@ Cet article décrit le processus de déplacement de boîtes aux lettres entre lo
 > Actuellement, nous étudions un problème dans lequel, dans certains scénarios, les données de conversation Teams sont également conservées dans la boîte aux lettres, mais les données de conversation Teams ne sont pas migrées. Si les données de conversation Teams doivent être conservées, n’utilisez pas cette fonctionnalité pour migrer la boîte aux lettres.
 
 > [!NOTE]
-> Si vous souhaitez afficher un aperçu de notre nouvelle fonctionnalité De partage de domaine pour le courrier électronique en même temps que vos migrations de boîtes aux lettres inter-locataires, veuillez remplir le formulaire à [aka.ms/domainshringpreview](https://aka.ms/domainshringpreview). Le partage de domaine pour la messagerie permet aux utilisateurs dans des locataires Microsoft 365 distincts d’envoyer et de recevoir des e-mails à l’aide d’adresses provenant du même domaine personnalisé. La fonctionnalité est destinée à résoudre les scénarios où les utilisateurs dans des locataires distincts doivent représenter une marque d’entreprise commune dans leurs adresses e-mail. La préversion actuelle prend en charge le partage indéfini des domaines et des domaines partagés pendant la coexistence de la migration de boîte aux lettres entre locataires.
+> Si vous souhaitez afficher un aperçu de notre nouvelle fonctionnalité De partage de domaine pour le courrier électronique en même temps que vos migrations de boîtes aux lettres inter-locataires, veuillez remplir le formulaire à [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). Le partage de domaine pour la messagerie permet aux utilisateurs dans des locataires Microsoft 365 distincts d’envoyer et de recevoir des e-mails à l’aide d’adresses provenant du même domaine personnalisé. La fonctionnalité est destinée à résoudre les scénarios où les utilisateurs dans des locataires distincts doivent représenter une marque d’entreprise commune dans leurs adresses e-mail. La préversion actuelle prend en charge le partage indéfini des domaines et des domaines partagés pendant la coexistence de la migration de boîte aux lettres entre locataires.
 
 ## <a name="preparing-source-and-target-tenants"></a>Préparation des locataires source et cible
 
@@ -71,7 +72,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
    ![Bouton Azure Active Directory](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
-3. Dans la barre de navigation de gauche, sélectionnez App-registraties.
+3. Dans la barre de navigation de gauche, sélectionnez inscriptions d'applications.
 
 4. Sélectionner Une nouvelle inscription
 
@@ -83,7 +84,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
 6. Dans le coin supérieur droit de la page, vous verrez une fenêtre contextuelle de notification indiquant que l’application a été créée avec succès.
 
-7. Go back à La maison, Azure Active Directory et cliquez sur App-registraties.
+7. Retour à La maison, Azure Active Directory, puis cliquez sur inscriptions d'applications.
 
 8. Sous Applications détenues, recherchez l’application que vous avez créée et cliquez dessus.
 
@@ -116,7 +117,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 18. Dans la fenêtre Ajouter une clé secrète client, entrez une description et configurez les paramètres d’expiration souhaités.
 
     > [!NOTE]
-    > Il s’agit du mot de passe qui sera utilisé lors de la création de votre point de terminaison de migration. Il est extrêmement important de copier ce mot de passe dans le Presse-papiers et de copier ce mot de passe dans un emplacement sécurisé/secret. C’est la seule fois où vous serez en mesure de voir ce mot de passe! Si vous perdez ou avez besoin de la réinitialiser, vous pouvez vous reconnecter à notre Azure-Portal, accéder à App-registraties, trouver votre application de migration, sélectionner secrets & certificats et créer un secret pour votre application.
+    > Il s’agit du mot de passe qui sera utilisé lors de la création de votre point de terminaison de migration. Il est extrêmement important de copier ce mot de passe dans le Presse-papiers et de copier ce mot de passe dans un emplacement sécurisé/secret. C’est la seule fois où vous serez en mesure de voir ce mot de passe! Si vous perdez ou avez besoin de la réinitialiser, vous pouvez vous reconnecter à notre Portail Azure, accéder à inscriptions d'applications, trouver votre application de migration, sélectionner secrets & certificats et créer un secret pour votre application.
 
 19. Maintenant que vous avez créé l’application de migration et le secret, vous devez donner votre consentement à l’application. Pour accepter l’application, revenez à la page d’accueil d’Azure Active Directory, cliquez sur Applications d’entreprise dans le volet de navigation gauche, recherchez votre application de migration que vous avez créée, sélectionnez-la, puis sélectionnez Autorisations dans la navigation de gauche.
 
@@ -189,7 +190,8 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
 2. Acceptez l’application lorsque la fenêtre contextuelle s’affiche. Vous pouvez également vous connecter à votre portail Azure Active Directory et trouver l’application sous Applications d’entreprise.
 
-3. Créez une relation d’organisation ou modifiez votre objet de relation d’organisation existant sur votre locataire cible (destination) dans Exchange Online PowerShell :
+3. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) sur le locataire Exchange Online source.
+4. Créez une relation d’organisation ou modifiez votre objet de relation d’organisation existant sur votre locataire cible (destination) dans Exchange Online PowerShell :
 
    ```powershell
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
@@ -215,7 +217,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 Vous pouvez vérifier la configuration de la migration de boîtes aux lettres entre clients en exécutant l’applet de commande [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) sur le point de terminaison de migration entre clients que vous avez créé sur votre client cible.
 
 ```powershell
-Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" - TestMailbox "Primary SMTP of MailUser object in target tenant"
+Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" -TestMailbox "Primary SMTP of MailUser object in target tenant"
 ```
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Déplacer les boîtes aux lettres vers la source d’origine
@@ -279,16 +281,16 @@ Vérifiez que les objets et attributs suivants sont définis dans l’organisati
      |                      | SMTP:Lara.Newton@contoso.com                                            |
 
    - Des attributs supplémentaires peuvent déjà être inclus dans la réécriture hybride Exchange. Si ce n’est pas le cas, elles doivent être incluses.
-   - msExchBlockedSendersHash : réécrit les données d’expéditeur en ligne sécurisées et bloquées des clients vers жергілікті Active Directory.
-   - msExchSafeRecipientsHash : réécrit les données d’expéditeur en ligne sécurisées et bloquées des clients vers жергілікті Active Directory.
-   - msExchSafeSendersHash : réécrit les données d’expéditeur en ligne sécurisées et bloquées des clients vers жергілікті Active Directory.
+   - msExchBlockedSendersHash : réécrit les données d’expéditeur en ligne sécurisées et bloquées des clients dans Active Directory local.
+   - msExchSafeRecipientsHash : réécrit les données d’expéditeur en ligne sécurisées et bloquées des clients vers Active Directory local.
+   - msExchSafeSendersHash : réécrit les données d’expéditeur en ligne sécurisées et bloquées des clients vers Active Directory local.
 
 2. Si la boîte aux lettres source est sur LitigationHold et que la taille des éléments récupérables de la boîte aux lettres source est supérieure à la taille par défaut de notre base de données (30 Go), les déplacements ne se poursuivent pas, car le quota cible est inférieur à la taille de la boîte aux lettres source. Vous pouvez mettre à jour l’objet MailUser cible pour faire passer les indicateurs de boîte aux lettres ELC de l’environnement source à la cible, ce qui déclenche le système cible pour étendre le quota de MailUser à 100 Go, ce qui permet le déplacement vers la cible. Ces instructions fonctionnent uniquement pour l’identité hybride exécutant Azure AD Connect, car les commandes d’horodatage des indicateurs ELC ne sont pas exposées aux administrateurs locataires.
 
    > [!NOTE]
    > EXEMPLE : EN L’ÉTAT, AUCUNE GARANTIE
    >
-   > Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et à la жергілікті Active Directory cible (pour tamponner l’objet ADUser). Si la récupération d’un litige ou d’un seul élément est activée sur la source, définissez-la sur le compte de destination. Cela augmente la taille du dumpster du compte de destination à 100 Go.
+   > Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et à la Active Directory local cible (pour tamponner l’objet ADUser). Si la récupération d’un litige ou d’un seul élément est activée sur la source, définissez-la sur le compte de destination. Cela augmente la taille du dumpster du compte de destination à 100 Go.
 
    ```powershell
    $ELCValue = 0
@@ -363,11 +365,20 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 ```
 
 > [!NOTE]
-> L’adresse e-mail dans le fichier CSV doit être celle spécifiée dans le locataire cible, et non le locataire source.
+> L’adresse e-mail dans le fichier CSV doit être celle spécifiée dans le locataire cible (par exemple, userA@targettenant.onmicrosoft.com), et non celle du locataire source.
 >
 > [Pour plus d’informations sur l’applet de commande, cliquez ici](/powershell/module/exchange/new-migrationbatch)
 >
-> [Pour obtenir un exemple de fichier CSV, cliquez ici](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+> [Pour obtenir des exemples d’informations sur le fichier CSV, cliquez ici](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+
+Voici un exemple minimal de fichier CSV :
+
+```csv
+EmailAddress
+userA@targettenant.onmicrosoft.com
+userB@targettenant.onmicrosoft.com
+userC@targettenant.onmicrosoft.com
+```
 
 La soumission par lot de migration est également prise en charge à partir du nouveau [centre d’administration Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) lors de la sélection de l’option interlocataire.
 
@@ -375,7 +386,7 @@ La soumission par lot de migration est également prise en charge à partir du n
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs du courrier local, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="do-we-need-to-update-remotemailboxes-in-source-on-premises-after-the-move"></a>Devons-nous mettre à jour remoteMailboxes dans la source localement après le déplacement ?
 
@@ -400,7 +411,7 @@ Get-MoveRequest -Flags "CrossTenant"
 ### <a name="can-you-provide-example-scripts-for-copying-attributes-used-in-testing"></a>Pouvez-vous fournir des exemples de scripts pour copier les attributs utilisés dans le test ?
 
 > [!NOTE]
-> SAMPLE – AS IS, NO WARRANTY Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et à la cible жергілікті Active Directory Domain Services (pour marquer l’objet ADUser). Si la récupération d’un litige ou d’un seul élément est activée sur la source, définissez-la sur le compte de destination. Cela augmente la taille du dumpster du compte de destination à 100 Go.
+> SAMPLE – AS IS, NO WARRANTY Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et à la cible Active Directory local Domain Services (pour tamponner l’objet ADUser). Si la récupération d’un litige ou d’un seul élément est activée sur la source, définissez-la sur le compte de destination. Cela augmente la taille du dumpster du compte de destination à 100 Go.
 
 ```powershell
 # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
@@ -513,9 +524,9 @@ Non, les noms de domaine du locataire source et du locataire cible doivent être
 
 Oui, toutefois, nous conservons uniquement les autorisations de magasin comme décrit dans les articles suivants :
 
-- [Microsoftova dokumentacija | Gérer les autorisations pour les destinataires dans Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Gérer les autorisations pour les destinataires dans Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
-- [pomoc techniczna firmy Microsoft | Comment accorder des autorisations de boîte aux lettres Exchange et Outlook dans Office 365 dédié](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+- [Comment accorder des autorisations de boîte aux lettres Exchange et Outlook dans Office 365 dédié](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
 ### <a name="do-you-have-any-recommendations-for-batches"></a>Avez-vous des recommandations pour les lots ?
 
@@ -554,6 +565,15 @@ Ces conversions se produisent automatiquement pendant le processus de migration.
 ### <a name="at-which-step-should-i-assign-the-exchange-online-license-to-destination-mailusers"></a>À quelle étape dois-je attribuer la licence Exchange Online aux expéditeurs de courrier de destination ?
 
 Cette opération peut être effectuée avant la fin de la migration, mais vous ne devez pas attribuer de licence avant l’horodatage de l’attribut _ExchangeGuid_ , sinon la conversion de l’objet MailUser en boîte aux lettres échouera et une nouvelle boîte aux lettres sera créée à la place. Pour atténuer ce risque, il est préférable d’attendre la fin de la migration et d’attribuer des licences pendant la période de grâce de 30 jours.
+
+### <a name="can-i-use-azure-ad-connect-to-sync-users-to-the-new-tenant-if-i-am-keeping-the-on-prem-active-directory"></a>Puis-je utiliser Azure AD Connect pour synchroniser les utilisateurs avec le nouveau locataire si je conserve l’Active Directory local ?
+
+Oui. Il est possible de synchroniser deux instances d’Azure AD Connect avec des locataires différents.
+Toutefois, il y a certaines choses que vous devez connaître.
+
+- Le préprovisionnement des comptes de l’utilisateur avec le script fourni dans cet article ne doit pas être effectué. Au lieu de cela, une synchronisation d’unité d’organisation sélective des utilisateurs dans l’étendue de la migration peut être effectuée pour remplir le locataire cible ; vous recevrez un avertissement indiquant que l’UPN ne correspond pas lors de la configuration d’Azure AD Connect.
+- Selon votre état actuel d’Exchange hybride, vous devez vérifier que les objets d’annuaire local ont les attributs requis (tels que msExchMailboxGUID et proxyAddresses) renseignés correctement avant de tenter de se synchroniser avec un autre locataire, ou vous rencontrerez des problèmes avec des boîtes aux lettres doubles et des échecs de migration.
+- Vous devez effectuer des étapes supplémentaires pour gérer la transition UPN, en la modifiant sur site une fois la migration terminée pour un utilisateur, sauf si vous déplacez également le domaine personnalisé pendant une migration de basculement.
 
 ## <a name="known-issues"></a>Problèmes connus
 

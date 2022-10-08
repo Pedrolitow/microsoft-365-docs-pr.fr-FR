@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 942a0d6462e59d843bd3473936b1620b6af7b797
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 171f4f5d727d98ee1f00af697e75992ff6dbe911
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737211"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484212"
 ---
 # <a name="prioritize-manage-investigate--respond-to-incidents-in-microsoft-365-defender"></a>Hiérarchiser, gérer, examiner & répondre aux incidents dans Microsoft 365 Defender
 
@@ -41,7 +44,7 @@ Lorsque la page Incident se charge, vous pouvez filtrer et hiérarchiser en cliq
 
 Vous disposez maintenant d’une liste hiérarchisée d’incidents, à partir de laquelle vous pouvez choisir de renommer, d’affecter, de classer, de baliser, de modifier l’état ou d’ajouter des commentaires via le bouton Gérer les incidents.
 
-Utilisez les filtres pour vous assurer que les éléments Microsoft Defender pour Office sont inclus.
+Utilisez les filtres pour vous assurer que Microsoft Defender pour les éléments Office sont inclus.
 
 Si vous recherchez des alertes spécifiques, utilisez la fonctionnalité de recherche d’incident (*rechercher un nom ou un ID*) ou envisagez d’utiliser le filtrage de file d’attente d’alertes sur une alerte spécifique.
 
@@ -63,7 +66,7 @@ Vous pouvez commencer à utiliser *le Centre d’actions* pour agir sur les él�
 
 ## <a name="more-information"></a>Informations supplémentaires
 
-[Gérer les incidents dans Microsoft 365 Defender | Microsoftova dokumentacija](../../defender/manage-incidents.md)
+[Gérer les incidents dans Microsoft 365 Defender | Microsoft Docs](../../defender/manage-incidents.md)
 
 [Fonctionnement de l’investigation et de la réponse automatisées dans Microsoft Defender pour Office 365](../automated-investigation-response-office.md)
 

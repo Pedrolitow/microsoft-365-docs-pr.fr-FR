@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de clé secrète client Amazon S3.
-ms.openlocfilehash: c3026beae856097e221063732f65b805a3fd05c2
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6a3df751075a58b257532f9cff8d41143f325c51
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995840"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484561"
 ---
 # <a name="amazon-s3-client-secret-access-key-preview"></a>Clé d’accès secrète client Amazon S3 (préversion)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -44,7 +47,7 @@ Combinaison de 40 caractères composée des éléments suivants :
 
 par exemple : 
 
-`abcdefghijklmnopqrst0123456789/+ABCDEFGH`
+`AWS Secret: abcdefghijklmnopqrst0123456789/+ABCDEFGH;`
 
 ## <a name="checksum"></a>Somme de contrôle
 

@@ -9,23 +9,26 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/05/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business Premium
-ms.openlocfilehash: acb132d401a4f2ad2754db9e448140ccad692a31
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: e6220e0cf8ff8208efe1a0f036300fa631fdd201
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737937"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484388"
 ---
 # <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Protégez-vous contre les programmes malveillants et autres cybermenaces avec Microsoft 365 Business Premium
 
@@ -49,7 +52,7 @@ Votre abonnement inclut des [stratégies de sécurité prédéfinies](../securit
 
 ### <a name="what-are-preset-security-policies"></a>Que sont les stratégies de sécurité prédéfinies ?
 
-Les stratégies de sécurité prédéfinies fournissent une protection pour votre contenu de messagerie et de collaboration. Ces stratégies se composent des éléments suivants :
+Preset security policies provide protection for your email and collaboration content. These policies consist of:
 
 - *Profils*, qui déterminent le niveau de protection
 - *Stratégies* (par exemple, anti-courrier indésirable, anti-programme malveillant, anti-hameçonnage, paramètres d’usurpation d’identité, pièces jointes fiables et liens fiables)
@@ -68,7 +71,7 @@ Le tableau suivant récapitule les niveaux de protection et les types de straté
 
 ### <a name="policy-order-of-priority"></a>Ordre de priorité de la stratégie
 
-Si plusieurs stratégies sont affectées aux utilisateurs, un ordre de priorité est utilisé pour appliquer les stratégies. L’ordre de priorité fonctionne comme suit :
+If users are assigned multiple policies, an order of priority is used to apply the policies. The order of priority works as follows:
 
 1. **La protection stricte** reçoit la priorité la plus élevée et remplace toutes les autres stratégies.
 
@@ -99,7 +102,7 @@ Pour affecter des stratégies de sécurité prédéfinies, procédez comme suit 
 
 2. Accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies de sécurité prédéfinies** dans la section **Stratégies prédéfinies**. (Pour accéder directement à la page **Stratégies de sécurité prédéfinies**, utilisez <https://security.microsoft.com/presetSecurityPolicies>.)
 
-3. Dans la page **Stratégies de sécurité prédéfinies** , dans la section **Protection standard** ou **Protection stricte**, remplacez le bouton bascule **Désactivé** par **Activé**, puis sélectionnez **Gérer**.
+3. Dans la page **Stratégies de sécurité prédéfinies** , dans la section **Protection standard** ou **Protection stricte** , sélectionnez **Gérer les paramètres de protection**.
 
 4. L’Assistant **Appliquer une protection standard** ou **Appliquer une protection stricte** démarre dans un menu volant. Dans les **protections EOP s’appliquent à** la page, identifiez les destinataires internes auxquels les stratégies s’appliquent (conditions de destinataire) :
    - **Utilisateurs**
@@ -108,7 +111,7 @@ Pour affecter des stratégies de sécurité prédéfinies, procédez comme suit 
 
    Cliquez dans la zone appropriée, commencez à taper une valeur, puis sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, sélectionnez l’icône **Supprimer** en regard de la valeur.
 
-   Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identificateurs (nom, nom d’affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom complet correspondant apparaît dans les résultats. Pour les utilisateurs, tapez un astérisque (\*) seul pour afficher toutes les valeurs disponibles.
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, type an asterisk (\*) by itself to see all available values.
 
    Pour spécifier une exclusion, cochez la case **Exclure ces utilisateurs, groupes et domaines**, puis spécifiez les utilisateurs, groupes ou domaines à exclure.
 
@@ -180,7 +183,7 @@ Vous pouvez afficher vos alertes dans le portail Microsoft 365 Defender ou dans 
 
 | Type d’alerte  | Procédure  |
 |---------|---------|
-| Alerte de sécurité, par exemple lorsqu’un utilisateur clique sur un lien malveillant, qu’un e-mail est signalé comme programme malveillant ou hameçonnage, ou qu’un appareil est détecté comme contenant des programmes malveillants     | Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et sous **Email et collaboration**, sélectionnez **Stratégies et règles** > **stratégie d’alerte**. Vous pouvez également accéder directement à <https://security.microsoft.com/alertpolicies>. |
+| Alerte de sécurité, par exemple lorsqu’un utilisateur clique sur un lien malveillant, qu’un e-mail est signalé comme programme malveillant ou hameçonnage, ou qu’un appareil est détecté comme contenant des programmes malveillants     | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>. |
 | Alerte de conformité, par exemple lorsqu’un utilisateur partage des informations sensibles ou confidentielles (alerte de protection contre la perte de données) ou qu’il existe un volume inhabituel de partage de fichiers externes (alerte de gouvernance des informations)    | Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portail de conformité Microsoft Purview</a>, puis sélectionnez **Stratégies** > **Alerte** > **Stratégies d’alerte**.  |
 
 Pour plus d’informations, consultez [Afficher les alertes](../compliance/alert-policies.md#view-alerts).
