@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 11/23/2020
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d9df75e54807435351ff043da7f94c791e41d1a9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 60be2727624dbe78a96d626d47c01401c5460b42
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704851"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209973"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corriger les capteurs défectueux dans Microsoft Defender pour point de terminaison
 
@@ -93,8 +95,8 @@ Suivez ces actions pour corriger les problèmes connus liés à un appareil mal 
 - [Vérifier que le service de données de diagnostic est activé](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 Si les appareils ne signalent pas correctement, vous devez vérifier que le service de données de diagnostic Windows est configuré pour démarrer automatiquement. Vérifiez également que le service de données de diagnostic Windows s’exécute sur le point de terminaison.
 
-- [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-Si vos appareils exécutent un client anti-programme malveillant tiers, l’agent Defender pour point de terminaison requiert que le pilote ELAM (Early Launch Antimalware) antivirus Microsoft Defender soit activé.
+- [Vérifier que Microsoft Defender Antivirus n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+Si vos appareils exécutent un client anti-programme malveillant tiers, l’agent Defender pour point de terminaison requiert que le pilote ELAM (Antivirus Early Launch Antimalware) Microsoft Defender soit activé.
 
 Si vous avez pris des mesures correctives et que l’état de l’appareil est toujours mal configuré, [ouvrez un ticket de support](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 

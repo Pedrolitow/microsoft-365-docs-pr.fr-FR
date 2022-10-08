@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
@@ -18,12 +19,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Vue d’ensemble du tunneling fractionné VPN avec Microsoft 365 pour optimiser la connectivité pour les utilisateurs distants.
-ms.openlocfilehash: bec540182e72c40d5229afe8b35f092da4c5797e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ab719109756da721ac46a1ecba069a02ce85fb68
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696636"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200976"
 ---
 # <a name="overview-vpn-split-tunneling-for-microsoft-365"></a>Vue d’ensemble : tunneling fractionné VPN pour Microsoft 365
 
@@ -119,7 +120,7 @@ Du point de vue de la sécurité, Microsoft dispose d'une gamme de fonctionnalit
 
 Dans de nombreux cas, cette implémentation peut être réalisée en quelques heures, ce qui permet de résoudre rapidement l'un des problèmes les plus urgents auxquels sont confrontées les organisations, qui passent rapidement au travail à distance de façon exclusive. Pour obtenir des conseils d’implémentation de tunnel fractionné [VPN, consultez Implémentation du tunneling fractionné VPN pour Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 L’équipe de sécurité Microsoft a publié [d’autres méthodes pour les professionnels de la sécurité et l’informatique afin d’obtenir des contrôles de sécurité modernes dans les scénarios de travail à distance uniques d’aujourd’hui](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/), un billet de blog qui décrit les principales façons pour les professionnels de la sécurité et l’informatique d’obtenir des contrôles de sécurité modernes dans les scénarios de travail à distance uniques d’aujourd’hui. De plus, vous trouverez ci-dessous quelques-unes des questions et réponses les plus fréquemment posées à ce sujet.
 

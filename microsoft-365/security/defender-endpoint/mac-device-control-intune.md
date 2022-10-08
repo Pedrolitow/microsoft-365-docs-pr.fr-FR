@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 355d066548e1267c6ddef2681bbf01dca5eb8a6d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 965e12d4c9b56ddaf1a6338bc5eb100504a7ad8a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681602"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227259"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Exemples de stratégies de contrôle d’appareil pour Intune
 

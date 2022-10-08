@@ -11,16 +11,18 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c23b510de6c3fd68fc1489aa3db5952d06e936a9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fc31918e3ccb7a6df0fd3f18bc1ff41427b16019
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698847"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210105"
 ---
 # <a name="exclude-devices"></a>Exclure des appareils
 

@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 35235e529e0c377c7799e22d6243ceffba532bfd
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 41444a5fbc49aee61fe95359a876de83b72ba67c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742396"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227303"
 ---
 # <a name="fileless-threats"></a>Menaces sans fichier
 
@@ -103,7 +105,7 @@ En plus d’être vulnérables au niveau du microprogramme, les processeurs peuv
 
 ## <a name="defeating-fileless-malware"></a>Échec des programmes malveillants sans fichier
 
-Chez Microsoft, nous surveillons activement le paysage de la sécurité pour identifier les nouvelles tendances en matière de menaces et développer des solutions pour atténuer les classes de menaces. Nous instrumentons des protections durables qui sont efficaces contre un large éventail de menaces. Grâce à l’interface d’analyse anti-programme malveillant (AMSI), à la surveillance du comportement, à l’analyse de la mémoire et à la protection du secteur de démarrage, [Pertahanan Microsoft untuk Titik Akhir](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) pouvez inspecter les menaces sans fichier, même avec une obfuscation importante. Les technologies de Machine Learning dans le cloud nous permettent de mettre à l’échelle ces protections contre les menaces nouvelles et émergentes.
+Chez Microsoft, nous surveillons activement le paysage de la sécurité pour identifier les nouvelles tendances en matière de menaces et développer des solutions pour atténuer les classes de menaces. Nous instrumentons des protections durables qui sont efficaces contre un large éventail de menaces. Grâce à l’interface d’analyse anti-programme malveillant (AMSI), à la surveillance du comportement, à l’analyse de la mémoire et à la protection du secteur de démarrage, [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) pouvez inspecter les menaces sans fichier, même avec une obfuscation importante. Les technologies de Machine Learning dans le cloud nous permettent de mettre à l’échelle ces protections contre les menaces nouvelles et émergentes.
 
 Pour en savoir plus, consultez : [Hors de vue, mais pas invisible : vaincre les programmes malveillants sans fichier avec la surveillance du comportement, AMSI et av de la prochaine génération](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/27/out-of-sight-but-not-invisible-defeating-fileless-malware-with-behavior-monitoring-amsi-and-next-gen-av/)
 

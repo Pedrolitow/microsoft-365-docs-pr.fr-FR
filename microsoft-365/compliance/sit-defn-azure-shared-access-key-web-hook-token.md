@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité de signature de jeton d’accès partagé Azure /Web Hook (préversion)
+title: Définition d’entité de signature de jeton Azure Shared Access key/Web Hook
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type clé d’accès partagé Azure / Jeton Web Hook.
-ms.openlocfilehash: a97bc484551cfd5a5ceb379b1e07aca2b9e53255
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: a85b67c572ddc1633137d870e98235a06faf95dd
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476020"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503025"
 ---
-# <a name="azure-shared-access-key--web-hook-token-preview"></a>Clé d’accès partagé Azure / jeton Web Hook (préversion) 
+# <a name="azure-shared-access-key--web-hook-token"></a>Clé d’accès partagé Azure / jeton WebHook 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Format
+Ce SIT est également inclus dans le sit [groupé Toutes les informations d’identification](sit-defn-all-creds.md) .
+
+ ## <a name="format"></a>Format
 
 Combinaison de 44 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
@@ -66,9 +68,15 @@ par exemple :
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
+## <a name="credential-example"></a>Exemple d’informations d’identification 
+
+`PrimaryKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=;`
+
 ## <a name="checksum"></a>Somme de contrôle
 
 Non
+
+Les SIT qui ont des sommes de contrôle utilisent un calcul unique pour vérifier si les informations sont valides. Cela signifie que lorsque la valeur **de somme de contrôle** est **Oui**, le service peut effectuer une détection positive basée sur les données sensibles uniquement. Lorsque la valeur de somme de **contrôle** est Aucun élément (secondaire) supplémentaire **ne** doit également être détecté pour que le service effectue une détection positive.
 
 ## <a name="definition"></a>Définition
 

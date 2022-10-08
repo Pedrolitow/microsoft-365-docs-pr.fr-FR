@@ -1,5 +1,5 @@
 ---
-title: Guide opérationnel d’essai gratuit d’évaluations premium du Gestionnaire de conformité Microsoft Purview
+title: Guide de l’utilisateur d’évaluation du Gestionnaire de conformité Microsoft Purview Premium
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -8,28 +8,32 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection:
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Guide opérationnel d’essai gratuit d’évaluations premium du Gestionnaire de conformité Microsoft Purview
+description: Guide de l’utilisateur d’évaluation du Gestionnaire de conformité Microsoft Purview Premium.
 ms.custom: trial-playbook
-ms.openlocfilehash: 6f788bf3e69aa088e87b0d1e6dfc3e0356b7984e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 1ac89c8a139c0decde42aa2a87733e02f9def957
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626378"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68500029"
 ---
-# <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>Guide opérationnel d'essai : évaluations premium du Gestionnaire de conformité Microsoft Purview
+# <a name="trial-user-guide-microsoft-purview-compliance-manager-premium-assessments"></a>Guide de l’utilisateur d’évaluation : Évaluations Premium du Gestionnaire de conformité Microsoft Purview
 
-Bienvenue au guide opérationnel d’essai gratuit d’évaluations premium du Gestionnaire de conformité Microsoft Purview
+Bienvenue dans le guide de l’utilisateur d’évaluation premium du Gestionnaire de conformité Microsoft Purview.
 
 Ce manuel vous aidera à utiliser au mieux votre version d’évaluation gratuite de 90 jours en vous enseignant comment utiliser l’ensemble complet de modèles d’évaluation premium (modules).
 
 À l’aide des recommandations de Microsoft, vous verrez rapidement comment les modèles d’évaluation Premium peuvent aider votre organisation à évaluer les risques et à répondre efficacement aux exigences réglementaires mondiales, régionales et industrielles.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="step-1-get-to-know-compliance-manager"></a>Étape 1 : Connaître le Gestionnaire de conformité
 
@@ -71,7 +75,7 @@ Il existe deux façons d’activer la version d Premium d’évaluation du modul
 
 ### <a name="enable-trial-via-the-compliance-trial"></a>Activer la version d’évaluation via la version d’essai de conformité
 
-1. Dans le Centre de conformité, sélectionnez **Essais** dans le volet de navigation de gauche. Les essais disponibles s'affichent.
+1. In the Compliance Center, select **Trials** in the left navigation pane. The available trials will display.
 1. Sélectionnez **Essayer maintenant** pour les évaluations premium du Gestionnaire de conformité.
 1. Une page d’informations s’offre à vous et vous permet d’en savoir plus avant de définir la version d’essai.
 1. Lorsque vous choisissez **Configurer**, l’application des modifications peut prendre jusqu’à deux heures. Vous devrez vous connectez à nouveau pour voir les modèles disponibles.
@@ -88,7 +92,7 @@ Après avoir démarré la version d’évaluation Premium, vous resterez inform�
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-**Microsoft Docs**: Obtenez des informations détaillées sur le fonctionnement des évaluations premium de Compliance Manager et sur la meilleure façon de les mettre en œuvre pour votre organisation. Visitez [Docs](compliance-manager-templates.md).
+**Microsoft Learn** : Obtenez des informations détaillées sur le fonctionnement des évaluations Premium du Gestionnaire de conformité et sur la meilleure façon de les implémenter pour votre organisation. Visitez [la documentation.](compliance-manager-templates.md)
 
 **Vidéos d’apprentissage** : pour en savoir plus, consultez les vidéos suivantes :
 

@@ -8,19 +8,20 @@ manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Comment des exemples d’organisation procèdent au déploiement et à la mise à jour des versions à l’aide de canaux.
-ms.openlocfilehash: 0080a1d31f56709ec8dafef17122f5a67aaa7145
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 36e596603007cfebf4abdea6f279a21c1da979a3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094811"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185576"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Exemples de configuration des canaux de déploiement et de mise à jour
 

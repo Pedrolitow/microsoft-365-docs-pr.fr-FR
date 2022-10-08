@@ -13,13 +13,15 @@ ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 41b76968dbaf868d200ab9841893300a36e80fc6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.collection:
+- m365-security
+- tier1
+ms.openlocfilehash: 90217023d016e08844898fdd3b43955e4d86be35
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67514254"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228095"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Gérer Microsoft Defender pour point de terminaison plan 1
 
@@ -34,12 +36,12 @@ Lorsque vous utilisez Defender pour point de terminaison Plan 1 dans votre organ
 
 ## <a name="manage-security-intelligence-and-product-updates"></a>Gérer les mises à jour des informations de sécurité et des produits
 
-La mise à jour de l’Antivirus Microsoft Defender est essentielle à la protection contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Microsoft publie des mises à jour régulières pour la protection contre les logiciels malveillants, antivirus et de sécurité. Mises à jour sont organisées en deux catégories : 
+Maintenir Microsoft Defender Antivirus à jour est essentiel pour la protection contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Microsoft publie des mises à jour régulières pour la protection contre les logiciels malveillants, antivirus et de sécurité. Mises à jour sont organisées en deux catégories : 
 
 - Mises à jour de la veille de sécurité
 - Mises à jour de produit 
 
-Pour gérer vos mises à jour de sécurité et de produit, consultez [Gérer les mises à jour de l’Antivirus Microsoft Defender et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md).
+Pour gérer vos mises à jour de sécurité et de produit, consultez [Gérer les mises à jour antivirus Microsoft Defender et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>Ajuster et ajuster Defender pour point de terminaison
 

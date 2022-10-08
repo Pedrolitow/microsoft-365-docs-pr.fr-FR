@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: La méthode que vous utilisez pour désattribuer des licences de produit dépend de la désaffectation des licences d’utilisateurs spécifiques ou d’un produit spécifique.
 ms.date: 07/12/2022
-ms.openlocfilehash: b6459030c376bb891ea32b9cb096d26449dfa0d1
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 667cc1167bbb3f479b7aab6ab6066f8b7448d948
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748382"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199898"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Annuler l’affectation de licences Microsoft 365 aux utilisateurs
 

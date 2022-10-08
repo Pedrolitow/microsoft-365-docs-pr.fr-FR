@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7ae846f536042b8b1e58635c7f68bab3d7b04352
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 33cbe799c9263fa6d5d403eafb08447f264358ea
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694102"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228007"
 ---
 # <a name="offboard-machine-api"></a>API de l’ordinateur hors carte
 
@@ -67,6 +69,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.Offboard|'Machine hors-bo
 >
 > - L’utilisateur a besoin du rôle AD « Global Administration »
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 ## <a name="http-request"></a>Requête HTTP
 

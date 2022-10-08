@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment gérer les abonnements d’inscription libre-service gratuits pour votre organisation.
 ms.date: 03/17/2021
-ms.openlocfilehash: 58c58c849b72c170e0ccf10de54389bd1245bced
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: ba7bfabd55f1b5d92cd4906c3be9f915255aa697
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102347"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185598"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gérer les abonnements d’inscription en libre-service
 
@@ -39,11 +40,11 @@ Un nombre limité d’abonnements en libre-service gratuits sont disponibles pou
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>En quoi ces abonnements diffèrent-ils des abonnements d’achat en libre-service ?
 
-Les abonnements d’inscription en libre-service sont gratuits et sont disponibles pour une liste de produits plus grande que les abonnements d’achat en libre-service. Lorsqu’un utilisateur s’inscrit à un abonnement d’achat en libre-service, il est responsable du paiement. Les abonnements à l’achat en libre-service sont disponibles uniquement pour les produits Power Platform (Power BI, Power Apps et Power Automate), les Project et les Visio. Pour plus d’informations, consultez la [FAQ sur l’achat en libre-service](self-service-purchase-faq.yml).
+Les abonnements d’inscription en libre-service sont gratuits et sont disponibles pour une liste de produits plus grande que les abonnements d’achat en libre-service. Lorsqu’un utilisateur s’inscrit à un abonnement d’achat en libre-service, il est responsable du paiement. Les abonnements à l’achat en libre-service sont disponibles uniquement pour les produits Power Platform (Power BI, Power Apps et Power Automate), Project et Visio. Pour plus d’informations, consultez la [FAQ sur l’achat en libre-service](self-service-purchase-faq.yml).
 
 ## <a name="block-users-from-signing-up"></a>Empêcher les utilisateurs de s’inscrire
 
-Vous utilisez l’applet de commande [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msolcompanysettings?preserve-view=true&view=azureadps-1.0) avec le paramètre **AllowAdHocSubscriptions** pour contrôler si les utilisateurs peuvent s’inscrire à des abonnements d’inscription en libre-service. Pour plus d’informations, consultez [如何实现 contrôler les paramètres en libre-service ?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+Vous utilisez l’applet de commande [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msolcompanysettings?preserve-view=true&view=azureadps-1.0) avec le paramètre **AllowAdHocSubscriptions** pour contrôler si les utilisateurs peuvent s’inscrire à des abonnements d’inscription en libre-service. Pour plus d’informations, consultez [Comment faire contrôler les paramètres en libre-service ?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## <a name="delete-a-self-service-sign-up-subscription"></a>Supprimer un abonnement en libre-service
 

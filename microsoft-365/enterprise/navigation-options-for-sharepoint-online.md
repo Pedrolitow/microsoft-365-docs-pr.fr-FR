@@ -9,6 +9,7 @@ ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les sites d’options de navigation avec la publication SharePoint activée dans SharePoint Online.
-ms.openlocfilehash: d9790be9aa07c2fe8a13404aa0c52662c717ed93
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7269aab053b234f46387eebdeeeb8096ba49dcad
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705159"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210413"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -99,7 +100,7 @@ De nombreux sites ne nécessitent pas de filtrage de sécurité, car la structur
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Comment implémenter la navigation managée et les résultats
 
-Il existe plusieurs articles sur Microsoft Docs sur les détails de la navigation managée. Par exemple, consultez [Vue d’ensemble de la navigation managée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
+Il existe plusieurs articles sur Microsoft Learn sur les détails de la navigation managée. Par exemple, consultez [Vue d’ensemble de la navigation managée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
 Pour implémenter la navigation managée, vous configurez des termes avec des URL correspondant à la structure de navigation du site. La navigation managée peut même être organisée manuellement pour remplacer la navigation structurelle dans de nombreux cas. Par exemple :
 
@@ -474,7 +475,7 @@ Dans [l’exemple d’implémentation](#example-replace-the-out-of-the-box-navig
 
 Le [code ci-dessus](#about-the-javascript-file) a les dépendances suivantes :
 
-- jQuery - https://jquery.com/
+- Jquery- https://jquery.com/
 - KnockoutJS - https://knockoutjs.com/
 - Linq.js - `https://linqjs.codeplex.com/`ou github.com/neuecc/linq.js
 

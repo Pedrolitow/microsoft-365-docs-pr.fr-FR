@@ -9,11 +9,13 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_IP
 - m365initiative-coredeploy
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 search.appverid:
 - MET150
 - MOE150
@@ -25,12 +27,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès privilégié à votre locataire Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3639ca3ea132c900db38d5dd16278ce756a2cc24
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8d8141ddda92f23a03cfe77c390b3a7c7b36a464
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671168"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210303"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Étape 2. Protéger vos comptes privilégiés Microsoft 365
 
@@ -128,7 +130,7 @@ Pour plus d’informations, consultez l’article suivant :
 
 ### <a name="privileged-access-management"></a>Gestion des accès privilégiés
 
-Vous activez la gestion des accès privilégiés en configurant des stratégies qui indiquent l’accès juste-à-temps pour les activités basées sur des tâches dans votre client. Elle peut vous aider à protéger votre organisation contre les violations qui pourraient survenir par le biais de comptes d’administrateur privilégiés existants qui donnent un accès permanent à des données sensibles ou à des paramètres de configuration critiques. Par exemple, vous pouvez configurer une stratégie de gestion des accès privilégiés qui requiert une approbation explicite pour pouvoir accéder aux paramètres de boîte aux lettres de votre organisation dans votre client et les modifier.
+Privileged access management is enabled by configuring policies that specify just-in-time access for task-based activities in your tenant. It can help protect your organization from breaches that may use existing privileged administrator accounts with standing access to sensitive data or access to critical configuration settings. For example, you could configure a privileged access management policy that requires explicit approval to access and change organization mailbox settings in your tenant.
 
 Dans cette étape, vous allez activer la gestion des accès privilégiés dans votre locataire et configurer des stratégies d’accès privilégié qui fournissent une sécurité supplémentaire pour l’accès basé sur les tâches aux données et aux paramètres de configuration de votre organisation. Il existe trois étapes de base pour commencer à utiliser l’accès privilégié dans votre organisation :
 

@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: e53a2fcaf7420e8581ea310a5d73dada8be3d7c0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+- m365-security
+- tier1
+ms.openlocfilehash: e32e315808a6ef240d9d1d3ab3b80fd19896fe07
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737541"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097531"
 ---
 # <a name="device-groups-and-categories-in-microsoft-365-business-premium"></a>Groupes et catégories d’appareils dans Microsoft 365 Business Premium
 

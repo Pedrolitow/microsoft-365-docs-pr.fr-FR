@@ -13,16 +13,18 @@ ms.localizationpriority: medium
 ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d3d533a3d4e1058eec5395c9f389926994b74e94
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b32a565455a632aa411c2aca053755238862b2c3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700331"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228578"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -50,7 +52,7 @@ Il existe trois façons de créer des indicateurs pour les fichiers :
 
 Il est important de comprendre les prérequis suivants avant de créer des indicateurs pour les fichiers :
 
-- Cette fonctionnalité est disponible si votre organisation utilise **l’antivirus Microsoft Defender (en mode actif)** et que **la protection basée sur le cloud est activée**. Pour plus d’informations, consultez [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Cette fonctionnalité est disponible si votre organisation utilise **Microsoft Defender Antivirus (en mode actif)** et que **la protection basée sur le cloud est activée**. Pour plus d’informations, consultez [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - La version du client Antimalware doit être 4.18.1901.x ou ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -78,6 +80,8 @@ Cette fonctionnalité est conçue pour empêcher le téléchargement de logiciel
     - Indicateur : spécifiez les détails de l’entité et définissez l’expiration de l’indicateur.
     - Action : spécifiez l’action à entreprendre et fournissez une description.
     - Étendue : définissez l’étendue du groupe d’appareils (l’étendue n’est pas disponible dans [Defender entreprise](../defender-business/mdb-overview.md)).
+        > [!NOTE]
+        > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2
 
 5. Passez en revue les détails sous l’onglet Résumé, puis **sélectionnez Enregistrer**.
 
@@ -152,14 +156,14 @@ L’activité d’action de réponse peut également être visible dans la chron
 Le conflit de gestion des stratégies Cert et File IoC suit l’ordre ci-dessous :
 
 - Si le fichier n’est pas autorisé par Windows Defender Contrôle d’application et AppLocker appliquent une stratégie/stratégies de mode, **bloquez**
-- Sinon, si le fichier est autorisé par l’exclusion de l’Antivirus Microsoft Defender, **autorisez**
+- Sinon, si le fichier est autorisé par l’exclusion de l’antivirus Microsoft Defender, **autorisez**
 - Sinon, si le fichier est bloqué ou averti par un bloc ou avertit l’IoC du fichier, **bloquez/avertissez**
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier d’autorisation, **autorisez**
 - Sinon, si le fichier est bloqué par des règles ASR, CFA, AV, SmartScreen, puis **Bloquer**
 - Sinon **, autoriser** (passe Windows Defender Application Control & stratégie AppLocker, aucune règle IoC ne s’applique à celle-ci)
 
 >[!NOTE]
-> Dans les situations où l’antivirus Microsoft Defender est défini sur **Bloquer**, mais que Defender pour point de terminaison est défini sur **Autoriser**, la stratégie est définie par défaut sur **Autoriser**.
+> Dans les situations où Microsoft Defender Antivirus est défini sur **Bloquer**, mais que Defender pour point de terminaison est défini sur **Autoriser**, la stratégie est définie par défaut sur **Autoriser**.
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie du hachage plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 gagnera une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 
@@ -180,7 +184,7 @@ les fonctionnalités d’application vulnérables de bloc de Gestion des vulnér
 |Règle de réduction de la surface d’attaque|Bloquer|Autoriser|Autoriser|
 |Windows Defender Application Control|Autoriser|Bloquer|Autoriser|
 |Windows Defender Application Control|Bloquer|Autoriser|Bloquer|
-|Exclusion de l’antivirus Microsoft Defender|Autoriser|Bloquer|Autoriser|
+|exclusion de l’antivirus Microsoft Defender|Autoriser|Bloquer|Autoriser|
 |
 
 ## <a name="see-also"></a>Voir aussi

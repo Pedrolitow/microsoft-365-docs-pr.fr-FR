@@ -16,16 +16,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: bc4e8d1df158ff4707aad966505dbf02be523548
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 5699f13fba91d02a8a5e00656487b12d882d07d8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521288"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226864"
 ---
 #  <a name="list-library-files"></a>Répertorier les fichiers d’une bibliothèque 
 
@@ -68,7 +69,7 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 
 | Nom         |      Type                     | Description
 |-----------------|--------|---------------------------|
-| Autorisation   | Chaîne | Porteur {token}. Obligatoire. |
+| Autorisation   | Chaîne | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corps de la demande
 Vide

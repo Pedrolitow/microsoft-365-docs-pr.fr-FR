@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez les appareils non gérés ou BYOD contre les cyberattaques avec Microsoft 365 Business Premium. Comment configurer la cybersécurité pour les PC et Mac Windows.
-ms.openlocfilehash: 453978e05de59327472247419cbeb0d87fe8ce61
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 7d2bcacf0ff2bb68309eb5482a87594de494feda
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737629"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097421"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protéger les PC et Mac Windows non gérés dans Microsoft 365 Business Premium
 
@@ -61,7 +63,7 @@ Vous devez toujours exécuter le Pare-feu Windows Defender même si un autre pa
 
 ## <a name="next-mission"></a>Prochaine mission
 
-OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
+Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 

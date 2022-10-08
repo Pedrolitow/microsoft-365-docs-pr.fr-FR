@@ -1,14 +1,15 @@
 ---
 title: "activité Centre d'administration Microsoft 365 Project "
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d’activité project et obtenir des insights sur l’activité Project dans votre organisation.
-ms.openlocfilehash: 202f9e0655f2d96e6897f2803a43264741343381
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4493b67cb11c784a6d84dc1cf0fdb260684400dc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486235"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186148"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---project-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité project
 
@@ -41,9 +42,9 @@ Dans le **rapport d’activité Project**, vous pouvez comprendre l’activité 
 
 Vous pouvez utiliser ce rapport pour voir l’activité et l’utilisation de Project dans votre environnement. Quatre graphiques récapitulatifs s’affichent dans ce rapport :  <br/>![Rapports Microsoft 365 - Activité de projet.](../../media/project-activity.png)
 
-- **Utilisateurs actifs** : affiche les utilisateurs actifs quotidiens chaque jour au fil du temps. Actuellement, cela inclut uniquement Project pour le web et Project Online client de bureau.
-- **Utilisateurs actifs (par client)** : affiche les utilisateurs actifs quotidiens au fil du temps, répartis par client (Project pour le Web et Project Online client de bureau).
-- **Activité de projet** : affiche le nombre de sessions quotidiennes de Project au fil du temps, pour chaque client (Project pour le web et Project Online client de bureau).
+- **Utilisateurs actifs** : affiche les utilisateurs actifs quotidiens chaque jour au fil du temps. Actuellement, cela inclut uniquement Project pour le web et client de bureau Project Online.
+- **Utilisateurs actifs (par client)** : affiche les utilisateurs actifs quotidiens au fil du temps, répartis par client (Project pour le Web et client de bureau Project Online).
+- **Activité de projet** : affiche le nombre de sessions quotidiennes de Project au fil du temps, pour chaque client (Project pour le Web et client de bureau Project Online).
 - **Activité des tâches** : affiche le nombre quotidien de tâches créées ou modifiées au fil du temps dans Project pour le web
 
 Le rapport comporte également un tableau qui affiche l’activité de chaque utilisateur de projet dans votre environnement.
@@ -64,7 +65,7 @@ Si les utilisateurs ou les administrateurs définissent leurs paramètres de con
 
 Voici des définitions pour chaque métrique de la table d’activité utilisateur.
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d'utilisateur|Nom principal de l’utilisateur.|
@@ -74,4 +75,4 @@ Voici des définitions pour chaque métrique de la table d’activité utilisate
 |Projets visités (Web)| Nombre de tâches créées par l’utilisateur dans Project pour le Web pendant l’intervalle de temps sélectionné en haut à droite de la page.|
 |Tâches créées (Web)|Nombre de tâches créées par l’utilisateur dans Project pour le Web pendant l’intervalle de temps sélectionné en haut à droite de la page.|
 |Tâches modifiées (Web)|Nombre de tâches modifiées par l’utilisateur dans Project pour le Web pendant l’intervalle de temps sélectionné en haut à droite de la page.|
-|Autre|Cette valeur est true si l’utilisateur a effectué une activité dans Project Online client de bureau ou dans Project pour le web (qui n’est pas couvert par les autres colonnes) dans l’intervalle de temps sélectionné en haut à droite de la page. Si ce n’est pas le cas, cette valeur est false.|
+|Autre|Cette valeur est true si l’utilisateur a effectué une activité dans client de bureau Project Online ou dans Project pour le web (qui n’est pas couvert par les autres colonnes) dans l’intervalle de temps sélectionné en haut à droite de la page. Si ce n’est pas le cas, cette valeur est false.|

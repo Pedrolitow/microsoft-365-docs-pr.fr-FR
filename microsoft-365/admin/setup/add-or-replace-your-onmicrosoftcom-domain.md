@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365_Setup
@@ -30,12 +31,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Découvrez comment créer un domaine onmicrosoft.com et en faire votre nouveau domaine de secours.
-ms.openlocfilehash: 01e22eab6cddf4f19b63dce36056ac4a6127e500
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: b67e8b9f8495e29a218d2781c340e09459013f56
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661934"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186170"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Ajouter et remplacer votre domaine de secours onmicrosoft.com dans Microsoft 365
 
@@ -114,7 +115,7 @@ Une fois que vous avez créé votre nouveau domaine onmicrosoft.com, procédez c
 ## <a name="related-content"></a>Contenu associé
 
 [FAQ sur les domaines](domains-faq.yml) (article)</br>
-[Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md) (article)</br>
+[What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)</br>
 [Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)</br>
 [Ajouter des enregistrements DNS pour connecter votre domaine](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)</br>
 [Modifier les serveurs de noms de manière à configurer Microsoft 365 avec n'importe quel bureau d'enregistrement de domaines](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)

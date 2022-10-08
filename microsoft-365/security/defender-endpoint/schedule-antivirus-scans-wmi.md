@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 19612e81aad9b7437b677e6d48a0a2a05d48f83e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0d5e1e94e0e9b3535164dbfaa1b6399255718c1c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686612"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227831"
 ---
 # <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Planifier des analyses antivirus à l’aide de Windows Management Instrumentation (WMI)
 
@@ -34,7 +36,7 @@ ms.locfileid: "67686612"
 **Plateformes**
 - Windows
 
-Cet article explique comment configurer des analyses planifiées à l’aide de WMI. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, consultez [Configurer les analyses antivirus Microsoft Defender rapides ou complètes planifiées](schedule-antivirus-scans.md). 
+Cet article explique comment configurer des analyses planifiées à l’aide de WMI. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, consultez [Configurer des analyses antivirus rapides ou complètes planifiées Microsoft Defender](schedule-antivirus-scans.md). 
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Utiliser Windows Management Instruction (WMI) pour planifier des analyses
 

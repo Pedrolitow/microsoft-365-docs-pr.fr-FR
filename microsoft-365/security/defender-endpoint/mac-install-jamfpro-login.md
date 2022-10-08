@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b426e9457fd3393e5fe506f32c8045eabe0783a5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 522af18268c6cc8ec369af78946d59c703fa3d65
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688766"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228468"
 ---
 # <a name="log-in-to-jamf-pro"></a>Se connecter à Jamf Pro
 

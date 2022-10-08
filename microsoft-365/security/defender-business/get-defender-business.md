@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- m365-security-compliance
-ms.openlocfilehash: f12d264e97f966f450ea4bc74ed7b0a2967d5d4c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- m365-security
+- tier1
+ms.openlocfilehash: c03c92a213b5cf4fe14bbd98094ff3816ab1beab
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598624"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501443"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour entreprises
 
@@ -45,7 +46,7 @@ Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu vo
 3. Passez à [Ajouter des utilisateurs et attribuez des licences](mdb-add-users.md).
 
 > [!TIP]
-> Consultez le [playbook d’évaluation pour Defender entreprise](trial-playbook-defender-business.md).
+> Consultez le [guide de l’utilisateur d’évaluation pour Defender entreprise](trial-playbook-defender-business.md).
 
 ## <a name="get-microsoft-365-business-premium"></a>Obtenir Microsoft 365 Business Premium
 
@@ -106,7 +107,7 @@ Lorsque vous êtes prêt à commencer, vous travaillerez avec deux portails prin
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Consultez le playbook d’évaluation : Microsoft Defender pour entreprises](trial-playbook-defender-business.md).
+- [Consultez le guide de l’utilisateur d’évaluation : Microsoft Defender pour entreprises](trial-playbook-defender-business.md).
 - [Utilisez l’Assistant Installation dans Microsoft Defender pour entreprises](mdb-use-wizard.md).
 - [Consultez le processus d’installation et de configuration pour Defender Entreprise](mdb-setup-configuration.md).
 - [Découvrez comment obtenir de l’aide et du support pour Defender Entreprise](mdb-get-help.md) (au cas où vous ayiez besoin d’aide).

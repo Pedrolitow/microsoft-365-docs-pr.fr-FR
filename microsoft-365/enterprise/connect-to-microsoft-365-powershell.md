@@ -5,9 +5,11 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connectez-vous à votre client Microsoft 365 à l’aide de PowerShell pour Microsoft 365 afin d’effectuer des tâches de Centre d’administration à partir de la ligne de commande.
-ms.openlocfilehash: 24596a2781a8b2176908d6e5d3a6c5bd74b0260a
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
-ms.translationtype: HT
+ms.openlocfilehash: 0192ed18c1c99cd08008570ce4b97a558621761f
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637426"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484344"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Connexion à Microsoft 365 à l’aide de PowerShell
 
@@ -48,7 +50,7 @@ Il existe deux versions du module PowerShell que vous utilisez pour vous connect
 
 **Système d’exploitation**
 
-Vous devez utiliser une version 64 bits de Windows. La prise en charge de la version 32 bits du Module Microsoft Azure Active Directory pour Windows PowerShell a expiré en 2014.
+You must use a 64-bit version of Windows. Support for the 32-bit version of the Microsoft Azure Active Directory Module for Windows PowerShell ended in 2014.
 
 Vous pouvez utiliser les versions de Windows suivantes :
     
@@ -63,10 +65,10 @@ Vous pouvez utiliser les versions de Windows suivantes :
 
 - Pour le module Azure Active Directory PowerShell pour Graph, vous devez utiliser PowerShell version 5.1.
 
-- Vous devez utiliser PowerShell version 5.1 ou ultérieure jusqu’à PowerShell version 6 pour le Module Microsoft Azure Active Directory pour Windows PowerShell. Vous ne pouvez pas utiliser PowerShell version 7.
+- For the Microsoft Azure Active Directory Module for Windows PowerShell module, you must use PowerShell version 5.1 or later, up to PowerShell version 6. You can't use PowerShell version 7.
        
 >[!Note]
->Ces procédures sont destinées aux utilisateurs membres d'un rôle d'administrateur Microsoft 365. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../admin/add-users/about-admin-roles.md).
+>These procedures are intended for users who are members of a Microsoft 365 admin role. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Se connecter avec le module PowerShell Azure Active Directory pour Graph
@@ -82,7 +84,7 @@ Si vous devez utiliser les nouvelles cmdlets dans le module Microsoft Azure Acti
 
 Ces étapes ne sont requises qu’une fois sur votre ordinateur. Mais vous devrez peut-être mettre à jour le logiciel régulièrement.
   
-1. Ouvrez une fenêtre élevée de l’invite de commandes Windows PowerShell en exécutant Windows PowerShell en tant qu’administrateur.
+1. Ouvrez une fenêtre d’invite de commandes Windows PowerShell.
     
 2. Ensuite, exécutez la commande suivante :
     
@@ -111,7 +113,7 @@ Répondez **Oui** ou **Oui à Tout** pour continuer l'installation.
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Étape 2 : connectez-vous à Azure AD avec votre abonnement Microsoft 365
 
-Pour vous connecter à Azure AD avec une authentification multifacteur ou les identifiants d’un compte de votre abonnement Microsoft 365, exécutez l’une des commandes suivantes à partir d’une invite de commandes Windows PowerShell. (elle ne nécessite pas d’élévation de privilèges).
+To connect to Azure Active Directory (Azure AD) for your Microsoft 365 subscription with an account name and password or with multi-factor authentication, run one of these commands from a Windows PowerShell command prompt. (It doesn't have to be elevated.)
 
 | Office 365 dans le cloud | Commande |
 |:-------|:-----|
@@ -134,7 +136,7 @@ Une fois connecté, vous pouvez utiliser les cmdlets du [module Azure Active Dir
 
 PowerShell version 7 et ultérieures ne prennent pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les cmdlets incluant *Msol* dans leur nom. Pour PowerShell version 7 et ultérieures, vous devez utiliser le SDK Microsoft Graph PowerShell.
 
-PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande avec *Msol* dans leur nom. Exécutez ces applets de commande à partir de Windows PowerShell.
+PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
     
 ### <a name="step-1-install-the-required-software"></a>Étape 1 : installez le logiciel requis
 
@@ -151,7 +153,7 @@ Ces étapes ne sont requises qu’une fois sur votre ordinateur. Mais vous devre
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Étape 2 : connectez-vous à Azure AD avec votre abonnement Microsoft 365
 
-Pour vous connecter à Azure AD avec une authentification multifacteur ou les identifiants d’un compte de votre abonnement Microsoft 365, exécutez l’une des commandes suivantes à partir d’une invite de commandes Windows PowerShell. (Elle ne nécessite pas d’élévation de privilèges).
+To connect to Azure AD for your Microsoft 365 subscription with an account name and password or with multi-factor authentication, run one of these commands from a Windows PowerShell command prompt. (It doesn't have to be elevated.)
 
 | Office 365 dans le cloud | Commande |
 |:-------|:-----|
@@ -171,9 +173,9 @@ Si vous ne recevez pas de message d’erreur, alors vous vous êtes connecté. P
   
 Si vous recevez un message d’erreur, vérifiez les problèmes suivants:
   
-- **Un problème courant est un mot de passe incorrect**. Exécutez à nouveau [l'étape 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) et portez une attention particulière au nom d'utilisateur et au mot de passe que vous saisissez.
+- **A common problem is an incorrect password**. Run [Step 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) again, and pay close attention to the user name and password that you enter.
     
-- **Le Module Microsoft Azure Active Directory pour Windows PowerShell nécessite que Microsoft .NET Framework 3.5.* x* est activé sur votre ordinateur**. Il est probable qu'une version plus récente est installée sur votre ordinateur (par exemple, 4 ou 4.5.* x*). Mais la compatibilité descendante avec les anciennes versions du .NET Framework peut être activée ou désactivée. Pour plus d'informations, consultez les articles suivants :
+- **The Microsoft Azure Active Directory Module for Windows PowerShell requires that Microsoft .NET Framework 3.5.* x* is enabled on your computer**. It's likely that your computer has a newer version installed (for example, 4 or 4.5.* x*). But backward compatibility with older versions of the .NET Framework can be enabled or disabled. For more information, see the following articles:
     
   - Pour Windows Server 2012 ou Windows Server 2012 R2, consultez [Activer .NET Framework 3.5 en utilisant l’Assistant Ajout de Roles et de Fonctionnalités](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10)).
     
@@ -201,7 +203,7 @@ Si vous recevez un message d’erreur, vérifiez les problèmes suivants:
 
 ## <a name="connect-with-the-azure-cloud-shell"></a>Se connecter à Azure Cloud Shell
 
-Pour vous connecter et utiliser Azure Cloud Shell à partir du centre d'administration Microsoft 365, sélectionnez l'icône de la fenêtre PowerShell dans le coin supérieur droit de la barre des tâches. Dans le **volet Bienvenue dans Azure Cloud Shell** , sélectionnez **PowerShell**.
+To connect with and use the Azure Cloud Shell from the Microsoft 365 admin center, select the PowerShell window icon from the upper-right corner of the task bar. In the **Welcome to Azure Cloud Shell** pane, select **PowerShell**.
 
 Vous aurez besoin d’un abonnement Azure actif pour votre organisation lié à votre abonnement Microsoft 365. Si vous n’en avez pas encore, vous pouvez en créer un. Une fois que vous disposez d’un abonnement Azure, une fenêtre PowerShell s’ouvre à partir de laquelle vous pouvez exécuter des commandes et des scripts PowerShell.
 

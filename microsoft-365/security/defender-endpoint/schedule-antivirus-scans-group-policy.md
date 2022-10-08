@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 3e98b12ab84729d6263ecf680ff244c93c208e72
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 505acc20e784a5110325f87eb96be656f5ea4e14
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704081"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227941"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Planifier des analyses antivirus à l’aide de stratégie de groupe
 
@@ -35,11 +37,11 @@ ms.locfileid: "67704081"
 **Plateformes**
 - Windows
 
-Cet article explique comment configurer des analyses planifiées à l’aide de stratégie de groupe. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, consultez [Configurer les analyses antivirus Microsoft Defender rapides ou complètes planifiées](schedule-antivirus-scans.md). 
+Cet article explique comment configurer des analyses planifiées à l’aide de stratégie de groupe. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, consultez [Configurer des analyses antivirus rapides ou complètes planifiées Microsoft Defender](schedule-antivirus-scans.md). 
 
 ## <a name="configure-antivirus-scans-using-group-policy"></a>Configurer des analyses antivirus à l’aide de stratégie de groupe
 
-1. Sur votre machine de gestion stratégie de groupe, dans l’éditeur stratégie de groupe, accédez à **l’analyse** **antivirus** \> Microsoft Defender des **composants** \> \> Windows des modèles **d’administration** de configuration \> de l’ordinateur.
+1. Sur votre ordinateur de gestion stratégie de groupe, dans l’éditeur de stratégie de groupe, accédez à Modèles **d’administration de configuration** \> de l’ordinateur **composants** \> \> **Windows** Microsoft Defender **analyse** **antivirus**\>.
 
 2. Cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier**.
 
@@ -63,7 +65,7 @@ Pour plus d’informations, consultez [Gérer le moment où les mises à jour de
 | Analyser | Spécifier le type d’analyse à utiliser pour une analyse planifiée | Analyse rapide |
 | Analyser | Spécifier le jour de la semaine pour exécuter une analyse planifiée | Spécifiez le jour (ou jamais) pour exécuter une analyse. | Jamais |
 | Analyser | Spécifier l’heure de la journée d’exécution d’une analyse planifiée | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 heure du matin). | 2 h du matin |
-| Racine | Durées aléatoires des tâches planifiées |Dans l’Antivirus Microsoft Defender, aléatoirez l’heure de début de l’analyse sur un intervalle de 0 à 23 heures. <p>Dans [SCEP](/mem/intune/protect/certificates-scep-configure), les analyses aléatoires à n’importe quel intervalle plus ou moins 30 minutes. Cela peut être utile dans les machines virtuelles ou les déploiements VDI. | Activé |
+| Racine | Durées aléatoires des tâches planifiées |Dans Microsoft Defender Antivirus, randomiser l’heure de début de l’analyse sur un intervalle de 0 à 23 heures. <p>Dans [SCEP](/mem/intune/protect/certificates-scep-configure), les analyses aléatoires à n’importe quel intervalle plus ou moins 30 minutes. Cela peut être utile dans les machines virtuelles ou les déploiements VDI. | Activé |
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>stratégie de groupe paramètres de planification des analyses lorsqu’un point de terminaison n’est pas utilisé
 

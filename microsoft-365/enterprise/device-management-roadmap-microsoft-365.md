@@ -1,6 +1,6 @@
 ---
 title: Gestion des appareils mobiles pour Microsoft 365
-keywords: Microsoft 365, Microsoft 365 pour les entreprises, documentation Microsoft 365, gestion des appareils mobiles, Intune
+keywords: Microsoft 365, Microsoft 365 pour entreprise, documentation Microsoft 365, gestion des appareils mobiles, Intune
 author: kelleyvice-msft
 ms.author: kvice
 manager: scotv
@@ -8,23 +8,22 @@ ms.date: 08/10/2020
 ms.topic: conceptual
 f1.keywords:
 - NOCSH
-ms.prod: microsoft-365-enterprise
-ms.service: ''
-ms.technology: ''
+ms.service: microsoft-365-enterprise
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
+ms.collection: scotvorg
 description: Feuille de route pour configurer la gestion des appareils pour Microsoft 365.
-ms.openlocfilehash: eeed1a69fc1724f3feb75f4bc096cad3a3c25cf0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2b4c67df00c3dc9675da9d24d55628abf3883173
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095309"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185620"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Gestion des appareils mobiles pour Microsoft 365
 
-Microsoft 365 pour l’entreprise inclut des fonctionnalités permettant de gérer les appareils et leurs applications au sein de votre organisation. La gestion des appareils mobiles vous permet de sécuriser et de protéger les ressources de votre organisation.
+Microsoft 365 pour entreprise inclut des fonctionnalités permettant de gérer les appareils et leurs applications au sein de votre organisation. La gestion des appareils mobiles vous permet de sécuriser et de protéger les ressources de votre organisation.
 
 Il existe deux options pour la gestion des appareils :
 
@@ -59,6 +58,6 @@ Microsoft fournit un ensemble de recommandations sur l’[accès aux appareils e
 - [Conditions préalables](../security/office-365-security/identity-access-prerequisites.md)
 - [Stratégies communes pour les identités et l’accès aux appareils](../security/office-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Comment Contoso a-t-il effectué la gestion des appareils pour Microsoft 365
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Comment Contoso a-t-il effectué la gestion des appareils pour Microsoft 365 ?
 
-Pour plus d’informations sur la façon dont une entreprise multinationale fictive mais représentative a déployé son infrastructure de gestion des appareils mobiles avec Microsoft 365 services cloud, consultez [La gestion des appareils mobiles pour Contoso](contoso-mdm.md).
+Pour plus d’informations sur la façon dont une entreprise multinationale fictive mais représentative a déployé son infrastructure de gestion des appareils mobiles avec les services cloud Microsoft 365, consultez [Gestion des appareils mobiles pour Contoso](contoso-mdm.md).

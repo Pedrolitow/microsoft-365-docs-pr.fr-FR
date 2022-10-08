@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: cf892956a517591b8f55eb3b704056421c482a7c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bafbce373ffdbdd8d5d7e4908f626d45282159c8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684108"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228622"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer le Microsoft Defender pour point de terminaison sur les stratégies macOS dans Jamf Pro
 
@@ -734,14 +735,14 @@ Ces étapes s’appliquent à macOS 10.15 (Catalina) ou version ultérieure.
 2. Cliquez sur **Nouveau**, puis entrez les détails suivants pour **Options** :
 
     - **Onglet Général** :
-        - **Nom** : Extension réseau Microsoft Defender
+        - **Nom** : extension réseau Microsoft Defender
         - **Description** : macOS 10.15 (Catalina) ou version ultérieure
         - **Catégorie** : Aucun *(valeur par défaut)*
         - **Méthode de distribution** : Installer automatiquement *(par défaut)*
         - **Niveau** : Niveau de l’ordinateur *(par défaut)*
 
     - **Filtre de contenu** de tabulation :
-        - **Nom du filtre** : Filtre de contenu Microsoft Defender
+        - **Nom du filtre** : filtre de contenu Microsoft Defender
         - **Identificateur** : `com.microsoft.wdav`
         - Laisser **l’adresse du service**, **l’organisation**, **le nom d’utilisateur**, le **mot de passe**, le **certificat** vide (**Inclure** *n’est pas* sélectionné)
         - **Ordre de filtre** : Inspecteur
@@ -813,7 +814,7 @@ Suivez les instructions sur [les analyses de planification avec Microsoft Defend
 
     :::image type="content" source="images/1aa5aaa0a387f4e16ce55b66facc77d1.png" alt-text="Écran de l’ordinateur affichant la description d’un package généré automatiquement" lightbox="images/1aa5aaa0a387f4e16ce55b66facc77d1.png":::
 
-7. Sélectionnez **Ouvrir**. Définissez le **nom complet** sur **Microsoft Defender Advanced Threat Protection et l’Antivirus Microsoft Defender**.
+7. Sélectionnez **Ouvrir**. Définissez le **nom complet** **sur Microsoft Defender Protection avancée contre les menaces et Microsoft Defender Antivirus**.
 
     **Le fichier manifeste** n’est pas obligatoire. Microsoft Defender pour point de terminaison fonctionne sans fichier manifeste.
 
@@ -856,7 +857,7 @@ Suivez les instructions sur [les analyses de planification avec Microsoft Defend
 
     :::image type="content" source="images/8fb4cc03721e1efb4a15867d5241ebfb.png" alt-text="Option de configuration des packages" lightbox="images/8fb4cc03721e1efb4a15867d5241ebfb.png":::
 
-15. Sélectionnez le bouton **Ajouter** en regard de **Microsoft Defender Advanced Threat Protection et de l’Antivirus Microsoft Defender**.
+15. Sélectionnez le bouton **Ajouter** en regard de **Microsoft Defender Protection avancée contre les menaces et Microsoft Defender Antivirus**.
 
     :::image type="content" source="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png" alt-text="Option permettant d’ajouter d’autres paramètres à MDATP MDA" lightbox="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png":::
 

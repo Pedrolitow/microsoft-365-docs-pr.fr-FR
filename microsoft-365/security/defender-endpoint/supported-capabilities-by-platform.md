@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: cbd72c97dd8749fd778506f8c5e5062922801f25
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: dcff54381dbdaf1362f9d4dd7cdc364e29c53426
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684402"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227743"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-capabilities-by-platform"></a>Fonctionnalités de Microsoft Defender pour point de terminaison prises en charge par plateforme
 

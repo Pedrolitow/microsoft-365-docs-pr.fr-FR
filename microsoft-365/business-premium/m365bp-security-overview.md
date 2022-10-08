@@ -1,5 +1,5 @@
 ---
-title: Renforcer la sécurité dans Microsoft 365 Business Premium
+title: Augmentez votre sécurité avec Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,18 +14,21 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la sécurité pour Microsoft 365 Business Premium qui fournit des outils de cybersécurité tels que l’authentification multifacteur que vous pouvez utiliser pour empêcher les cyberattaques.
-ms.openlocfilehash: 70432332e9f5446765c5b39e59970dec38a4a3d0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 0dbbe1742b4f011a3807072432d87b8e972e3ea2
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736881"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097596"
 ---
 # <a name="bump-up-security"></a>Augmenter la sécurité
 

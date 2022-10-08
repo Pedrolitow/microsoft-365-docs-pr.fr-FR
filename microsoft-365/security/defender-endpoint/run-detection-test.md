@@ -13,16 +13,16 @@ ms.date: 09/13/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 37d02195cc3acf9dfbdcae55ceb9534b6d68d722
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 4e88c900e4e696fbf4ed5e8010514d017b024150
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727955"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227062"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré
 
@@ -30,7 +30,7 @@ ms.locfileid: "67727955"
 
 
 **S’applique à :**
-- Windows 11
+- Windows 11
 - Versions Windows 10 prises en charge
 - Windows Server 2012 R2
 - Windows Server 2016

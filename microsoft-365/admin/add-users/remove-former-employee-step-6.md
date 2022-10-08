@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez supprimer la licence Microsoft 365 d’un ancien employé, puis la supprimer de votre abonnement ou attribuer la licence à un autre utilisateur.
-ms.openlocfilehash: 95f95403a316e176f91c7f120ce5a26487a7a59f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 8d1c903a9f829605b15887b2b67e7ea61962cbfe
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436226"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186104"
 ---
 # <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Étape 6 : Supprimer et supprimer la licence Microsoft 365 d’un ancien employé
 
@@ -54,13 +55,13 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 Lorsque vous [ajoutez une autre personne](add-users.md) à votre entreprise, vous êtes invité à acheter une licence en même temps, en une seule étape !
 
-Pour plus d’informations sur la gestion des licences utilisateur pour Microsoft 365 pour les entreprises, consultez [Affecter des licences aux utilisateurs dans Microsoft 365 pour les entreprises](../manage/assign-licenses-to-users.md) et [annuler l’attribution de licences aux utilisateurs dans Microsoft 365 pour les entreprises](../manage/remove-licenses-from-users.md).
+Pour plus d’informations sur la gestion des licences utilisateur pour Microsoft 365 pour les entreprises, consultez [Affecter des licences aux utilisateurs de Microsoft 365 pour les entreprises](../manage/assign-licenses-to-users.md) et [annuler l’attribution de licences à des utilisateurs dans Microsoft 365 pour les entreprises](../manage/remove-licenses-from-users.md).
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Comment le compte supprimé d'un employé affecte Skype Entreprise
 
-Lorsque vous supprimez une licence d'utilisateur d'Office 365, le numéro d'appel PSTN associé à l'utilisateur est libéré. Vous pouvez l'assigner à un autre utilisateur.
+When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
-Si l'utilisateur appartient à un groupe de files d'attente, il ne sera plus une cible viable des agents de la file d'attente d'appels. Nous recommandons donc de supprimer également l'utilisateur des groupes associés à la file d'attente d'appels.
+If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue.
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configurer le transfert d’appel aux personnes de votre organisation
 

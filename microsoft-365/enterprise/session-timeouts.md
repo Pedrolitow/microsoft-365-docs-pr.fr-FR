@@ -21,14 +21,15 @@ search.appverid:
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Découvrez comment les délais d’expiration de session sont utilisés pour équilibrer la sécurité et la facilité d’accès dans les applications clientes Microsoft 365.
-ms.openlocfilehash: 910c0eaed754c7d41329741ecb24f15b9ac7364c
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: f14d28e1cba153afcf3afda6f9c7a646079c3002
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669076"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200712"
 ---
 # <a name="session-timeouts-for-microsoft-365"></a>Délais d’expiration de session pour Microsoft 365
 

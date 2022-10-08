@@ -1,5 +1,5 @@
 ---
-title: Planifier les mises à jour de la protection antivirus Microsoft Defender
+title: Planifier Microsoft Defender mises à jour de la protection antivirus
 description: Planifier le jour, l’heure et l’intervalle de téléchargement des mises à jour de protection
 keywords: mises à jour, bases de référence de sécurité, planification des mises à jour
 ms.service: microsoft-365-security
@@ -15,13 +15,15 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 6222ea1102fd57a9cba3cfca5d4f2f8bc90bd20b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.collection:
+- m365-security
+- tier2
+ms.openlocfilehash: 433ecbe6bef2b6af770a2572c7878e4ee2aabc42
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521156"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228139"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Gérer le calendrier de téléchargement et d’application des mises à jour de protection
 
@@ -36,7 +38,7 @@ ms.locfileid: "67521156"
 **Plateformes**
 - Windows
 
-L’Antivirus Microsoft Defender vous permet de déterminer quand il doit rechercher et télécharger des mises à jour.
+Microsoft Defender Antivirus vous permet de déterminer quand il doit rechercher et télécharger des mises à jour.
 
 Vous pouvez planifier des mises à jour pour vos points de terminaison en :
 
@@ -63,7 +65,7 @@ Vous pouvez également aléatoirement les moments où chaque point de terminaiso
 ## <a name="use-group-policy-to-schedule-protection-updates"></a>Utiliser stratégie de groupe pour planifier les mises à jour de la protection
 
 > [!IMPORTANT]
-> Par défaut, « SignatureScheduleDay » est défini sur « 8 » et « SignatureUpdateInterval » est défini sur « 0 » afin que l’Antivirus Microsoft Defender ne planifie pas les mises à jour de protection.
+> Par défaut, « SignatureScheduleDay » est défini sur « 8 » et « SignatureUpdateInterval » est défini sur « 0 » afin Microsoft Defender Antivirus ne planifie pas les mises à jour de protection.
 L’activation de ces paramètres remplace cette valeur par défaut.
 
 1. Sur votre machine de gestion stratégie de groupe, ouvrez la [console de gestion stratégie de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Modifier**.
@@ -72,7 +74,7 @@ L’activation de ces paramètres remplace cette valeur par défaut.
 
 3. Cliquez sur **Stratégies** , puis **sur Modèles d’administration**.
 
-4. Développez l’arborescence sur **les composants** \> Windows microsoft **Defender Antivirus** \> **Signature Mises à jour** et configurez les paramètres suivants :
+4. Développez l’arborescence sur **les composants** \> Windows Microsoft Defender **Mises à jour de signature** **antivirus** \> et configurez les paramètres suivants :
 
     1. Double-cliquez sur **Spécifier le jour de la semaine pour rechercher le paramètre des mises à jour du renseignement de sécurité** et définissez l’option **sur Activé**. Entrez le jour de la semaine pour rechercher les mises à jour. Cliquez sur **OK**.
 
@@ -90,7 +92,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-Pour plus d’informations sur l’utilisation de [PowerShell avec l’antivirus Microsoft Defender, voir Utiliser les applets de commande PowerShell pour configurer et exécuter l’Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)  et [defender](/powershell/module/defender/) .
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez Utiliser les applets de commande [PowerShell pour configurer et exécuter Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) antivirus et [Defender Antivirus](/powershell/module/defender/).
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>Utiliser l’instruction de gestion Windows (WMI) pour planifier les mises à jour de la protection
 
@@ -118,9 +120,9 @@ Pour plus d’informations et les paramètres autorisés, consultez les rubrique
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Déployer l’antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Déployer Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les points de terminaison obsolètes](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10 et 11](microsoft-defender-antivirus-in-windows-10.md)
+- [antivirus Microsoft Defender dans Windows 10 et 11](microsoft-defender-antivirus-in-windows-10.md)

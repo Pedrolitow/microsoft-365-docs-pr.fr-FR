@@ -9,18 +9,20 @@ audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: ''
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 recommendations: false
-description: en savoir plus sur les conditions de stratégie dlp et les exceptions
-ms.openlocfilehash: 9e1c27e8b4aa79da94fd035bbeb15912b1618be8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Découvrez les conditions de stratégie dlp et les exceptions qui identifient les éléments sensibles auxquels la stratégie est appliquée.
+ms.openlocfilehash: e66b92e9ecabbda0b3cc8e1dc902ad092c82abe0
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629924"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383940"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Conditions de stratégie DLP, exceptions et actions
 
@@ -34,6 +36,8 @@ La plupart des conditions et exceptions ont une propriété qui prend en charge 
 
 Les actions nécessitent généralement des propriétés supplémentaires. Par exemple, lorsque la règle de stratégie DLP redirige un message, vous devez spécifier où le message est redirigé.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="conditions-and-exceptions-for-dlp-policies"></a>Conditions et exceptions pour les stratégies DLP
 
@@ -78,14 +82,14 @@ Pour configurer l’emplacement de l’adresse de l’expéditeur au niveau d’
 |Les propriétés spécifiées de l'expéditeur contiennent l'un de ces mots|condition : *SenderADAttributeContainsWords* <br/><br/> exception : *ExceptIfSenderADAttributeContainsWords*|Première propriété : `ADAttribute` <br/><br/> Deuxième propriété : `Words`|Messages dans lesquels l'attribut Active Directory spécifié de l'expéditeur contient l'un des mots spécifiés.|
 |Les propriétés spécifiées de l'expéditeur correspondent à ces modèles de texte|condition : *SenderADAttributeMatchesPatterns* <br/><br/> exception : *ExceptIfSenderADAttributeMatchesPatterns*|Première propriété : `ADAttribute` <br/><br/> Deuxième propriété : `Patterns`|Messages dans lesquels l'attribut Active Directory spécifié de l'expéditeur contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
 
-### <a name="recipients"></a>Recipients
+### <a name="recipients"></a>Destinataires
 
 |condition ou exception dans DLP|paramètres de condition/d’exception dans PowerShell sécurité & conformité|type de propriété|description|
 |---|---|---|---|
 |Le destinataire est|condition : *SentTo* <br/><br/> exception : *ExceptIfSentTo*|Adresses|Messages où l’un des destinataires est la boîte aux lettres, l’utilisateur de messagerie ou le contact de messagerie spécifié dans l’organisation. Les destinataires peuvent se trouver dans les champs **À**, **Cc** ou **Cci** du message.|
 |Le domaine du destinataire est|condition : *RecipientDomainIs* <br/><br/> exception : *ExceptIfRecipientDomainIs*|DomainName|Messages où le domaine de l’adresse e-mail du destinataire correspond à la valeur spécifiée.|
-|L'adresse du destinataire contient les mots|condition : *AnyOfRecipientAddressContainsWords* <br/><br/> exception : *ExceptIfAnyOfRecipientAddressContainsWords*|Mots|Messages contenant les mots spécifiés dans l'adresse du destinataire. <br/><br/>**Remarque** : cette condition ne tient pas compte des messages qui sont envoyés aux adresses proxy du destinataire. Elle correspond uniquement aux messages qui sont envoyés à l’adresse de messagerie principale du destinataire.|
-|L’adresse du destinataire correspond aux modèles|condition : *AnyOfRecipientAddressMatchesPatterns* <br/><br/> exception : *ExceptIfAnyOfRecipientAddressMatchesPatterns*|Modèles|Messages dans lesquels l'adresse de messagerie du destinataire contient des modèles de texte qui correspondent aux expressions régulières spécifiées. <br/><br/> **Remarque** : cette condition ne tient pas compte des messages qui sont envoyés aux adresses proxy du destinataire. Elle correspond uniquement aux messages qui sont envoyés à l’adresse de messagerie principale du destinataire.|
+|L'adresse du destinataire contient les mots|condition : *AnyOfRecipientAddressContainsWords* <br/><br/> exception : *ExceptIfAnyOfRecipientAddressContainsWords*|Mots|Messages contenant les mots spécifiés dans l'adresse du destinataire. <br/><br/>**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
+|L’adresse du destinataire correspond aux modèles|condition : *AnyOfRecipientAddressMatchesPatterns* <br/><br/> exception : *ExceptIfAnyOfRecipientAddressMatchesPatterns*|Modèles|Messages dans lesquels l'adresse de messagerie du destinataire contient des modèles de texte qui correspondent aux expressions régulières spécifiées. <br/><br/> **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
 |Envoyé au membre de|condition : *SentToMemberOf* <br/><br/> exception : *ExceptIfSentToMemberOf*|Adresses|Messages contenant des destinataires membres du groupe de distribution spécifié, du groupe de sécurité à extension messagerie ou du groupe Microsoft 365. Le groupe peut se trouver dans les champs **To**, **Cc** ou **Bcc** du message.|
 |Les propriétés spécifiées de l'expéditeur contiennent l'un de ces mots |*RecipientADAttributeContainsWords* <br/><br/> *ExceptIfRecipientADAttributeContainsWords*|Première propriété : `ADAttribute` <br/><br/> Deuxième propriété : `Words`|Messages dans lesquels l'attribut Active Directory spécifié d'un destinataire contient certains mots spécifiés. <br/><br/> Notez que l'attribut **Country** requiert la valeur de code pays à deux lettres (par exemple, DE pour l'Allemagne).|
 |Les propriétés spécifiées du destinataire correspondent à ces modèles de texte |*RecipientADAttributeMatchesPatterns* <br/><br/> *ExceptIfRecipientADAttributeMatchesPatterns*|Première propriété : `ADAttribute` <br/><br/> Deuxième propriété : `Patterns`|Messages dans lesquels l'attribut Active Directory spécifié d'un destinataire contient des modèles de texte qui correspondent à l'expression régulière spécifiée.|
@@ -108,7 +112,7 @@ Pour configurer l’emplacement de l’adresse de l’expéditeur au niveau d’
 |La pièce jointe est protégée par mot de passe|condition : *DocumentIsPasswordProtected* <br/><br/> exception : *ExceptIfDocumentIsPasswordProtected*|none|Messages dans lesquels une pièce jointe est protégée par mot de passe (et ne peut donc pas être analysée). La détection de mot de passe fonctionne uniquement pour les documents Office, les fichiers .zip et les fichiers .7z.|
 |L’extension du fichier de pièce jointe est|condition : *ContentExtensionMatchesWords* <br/><br/> exception : *ExceptIfContentExtensionMatchesWords*|Mots|Messages dans lesquels l'extension de fichier de la pièce jointe correspond à l'un des mots spécifiés.|
 |Le contenu de la pièce jointe n’a pas pu être analysé|condition : *DocumentIsUnsupported* <br/><br/>exception : *ExceptIf DocumentIsUnsupported*|s/o|Messages où une pièce jointe n’est pas reconnue en mode natif par Exchange Online.|
-|L’analyse du contenu de la pièce jointe n’a pas été terminée|condition : *ProcessingLimitExceeded* <br/><br/> exception : *ExceptIfProcessingLimitExceeded*|s/o|Messages pour lesquels le moteur de règles n'a pas pu terminer l'analyse des pièces jointes. Vous pouvez utiliser cette condition pour créer des règles qui fonctionnent conjointement pour identifier et traiter les messages dont le contenu n'a pas pu être entièrement analysé.|
+|L’analyse du contenu de la pièce jointe n’a pas été terminée|condition : *ProcessingLimitExceeded* <br/><br/> exception : *ExceptIfProcessingLimitExceeded*|s/o|Messages where the rules engine couldn't complete the scanning of the attachments. You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.|
 |Le nom du document contient des mots|condition : *DocumentNameMatchesWords* <br/><br/> exception : *ExceptIfDocumentNameMatchesWords*|Mots|Messages où le nom de fichier d’une pièce jointe correspond à l’un des mots spécifiés.|
 |Le nom du document correspond aux modèles|condition : *DocumentNameMatchesPatterns* <br/><br/> exception : *ExceptIfDocumentNameMatchesPatterns*|Modèles|Messages dans lesquels le nom de fichier d'une pièce jointe contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
 |La propriété du document est|condition : *ContentPropertyContainsWords* <br/><br/> exception : *ExceptIfContentPropertyContainsWords*|Mots|Messages avec des documents où la propriété personnalisée d’une pièce jointe correspond à la valeur donnée.|
@@ -141,13 +145,13 @@ Ce tableau décrit les actions disponibles dans DLP.
 |---|---|---|---|
 |Définir l’en-tête|SetHeader|Première propriété : *Nom de l’en-tête* <br/><br/> Deuxième propriété : *Valeur d’en-tête*|Le paramètre SetHeader spécifie une action pour la règle DLP qui ajoute ou modifie un champ d’en-tête et une valeur dans l’en-tête de message. Ce paramètre utilise la syntaxe « HeaderName:HeaderValue ». Vous pouvez spécifier plusieurs paires nom-valeur d’en-tête séparées par des virgules|
 |Supprimer l’en-tête|RemoveHeader|Première propriété : *MessageHeaderField*<br/><br/> Deuxième propriété : *String*|Le paramètre RemoveHeader spécifie une action pour la règle DLP qui supprime un champ d’en-tête de l’en-tête de message. Ce paramètre utilise la syntaxe « HeaderName » ou « HeaderName:HeaderValue ». Vous pouvez spécifier plusieurs noms d’en-tête ou paires nom-valeur d’en-tête séparées par des virgules|
-|Rediriger le message vers des utilisateurs spécifiques|*RedirectMessageTo*|Adresses|Redirige le message vers les destinataires spécifiés. Le message n'est pas remis aux destinataires d'origine et aucune notification n'est envoyée à l'expéditeur ou aux destinataires d'origine.|
+|Rediriger le message vers des utilisateurs spécifiques|*RedirectMessageTo*|Adresses|Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.|
 |Transférer le message pour approbation au responsable de l’expéditeur|Modéré|Première propriété : *ModerateMessageByManager*<br/><br/> Deuxième propriété : *Boolean*|Le paramètre Moderate spécifie une action pour la règle DLP qui envoie le message électronique à un modérateur. Ce paramètre utilise la syntaxe : @{ModerateMessageByManager = <$true \|$false>;|
 |Transférer le message pour approbation à des approbateurs spécifiques|Modéré|Première propriété : *ModerateMessageByUser*<br/><br/>Deuxième propriété : *Addresses*|Le paramètre Moderate spécifie une action pour la règle DLP qui envoie le message électronique à un modérateur. Ce paramètre utilise la syntaxe : @{ ModerateMessageByUser = @(« emailaddress1 »,"emailaddress2 »,..."emailaddressN »)}|
 |Ajouter un destinataire|AddRecipients|Première propriété : *Field*<br/><br/>Deuxième propriété : *Addresses*|Ajoute un ou plusieurs destinataires au champ To/Cc/Cci du message. Ce paramètre utilise la syntaxe : @{<AddToRecipients \<CopyTo \| BlindCopyTo\> = « emailaddress"}|
 |Ajouter le gestionnaire de l’expéditeur en tant que destinataire|AddRecipients|Première propriété : *AddedManagerAction*<br/><br/>Deuxième propriété : *Field*|Ajoute le responsable de l’expéditeur au message en tant que type de destinataire spécifié (To, Cc, Bcc) ou redirige vers le responsable de l’expéditeur sans notification à l’expéditeur ou au destinataire. Cette action fonctionne uniquement si l'attribut Manager de l'expéditeur est défini dans Active Directory. Ce paramètre utilise la syntaxe : @{AddManagerAsRecipientType = « \<To \| Cc \| Bcc\>"}|
-Sujet de pré-ajout|PrependSubject|String|Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.  <br/><br/>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.|
+Sujet de pré-ajout|PrependSubject|Chaîne|Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.<br/><br/>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.|
 |Appliquer la clause d’exclusion de responsabilité HTML|ApplyHtmlDisclaimer|Première propriété : *Text*<br/><br/>Deuxième propriété : *Location*<br/><br/>Troisième propriété : *action de secours*|Applique la clause d’exclusion de responsabilité HTML spécifiée à l’emplacement requis du message.<br/><br/>Ce paramètre utilise la syntaxe : @{ Text = " " ; Emplacement = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
 |Supprimer le chiffrement des messages et la protection des droits|RemoveRMSTemplate|s/o|Supprime le chiffrement des messages appliqué à un e-mail|
-|Remettre le message à la quarantaine hébergée |*Quarantine*|s/o| Cette action est actuellement en **préversion publique**. Au cours de cette phase, les e-mails mis en quarantaine par les stratégies DLP affichent le type de stratégie ExchangeTransportRule.<br/><br/> Remet le message à la quarantaine dans EOP. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
+|Remettre le message à la quarantaine hébergée |*Mise en quarantaine*|s/o| Cette action est actuellement en **préversion publique**. Au cours de cette phase, les e-mails mis en quarantaine par les stratégies DLP affichent le type de stratégie ExchangeTransportRule.<br/><br/> Remet le message à la quarantaine dans EOP. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 |Modifier l’objet|ModifySubject|PswsHashTable | Supprimez du texte de la ligne d’objet qui correspond à un modèle spécifique et remplacez-le par un texte différent. Voir l'exemple ci-dessous. Vous pouvez : <br/><br/>- **Remplacer** toutes les correspondances de l’objet par le texte de remplacement <br/><br/>- **Ajoutez** pour supprimer toutes les correspondances dans le sujet et insère le texte de remplacement à la fin de l’objet. <br/><br/>- **Ajouter** pour supprimer toutes les correspondances et insérer le texte de remplacement au début de l’objet. Voir le paramètre ModifySubject in, /powershell/module/exchange/new-dlpcompliancerule|

@@ -1,6 +1,6 @@
 ---
 title: En savoir plus sur les obstacles aux informations
-description: Découvrez les obstacles à l’information dans Microsoft Purview.
+description: Découvrez les obstacles à l’information dans Microsoft Purview. Les obstacles à l’information peuvent aider à éviter les conflits d’intérêts et à protéger les informations internes entre les utilisateurs et les domaines organisationnels.
 keywords: Microsoft 365, Microsoft Purview, conformité, obstacles à l’information
 ms.author: robmazz
 author: robmazz
@@ -10,19 +10,22 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- highpri
+- tier2
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b2a45a667aa654a8ff3111313b542433e692f1f
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 2c9bee62d8484c5fe8f096fb432955d2d04c00ed
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823382"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383847"
 ---
 # <a name="learn-about-information-barriers"></a>En savoir plus sur les obstacles aux informations
 
@@ -40,6 +43,8 @@ Les stratégies IB peuvent autoriser ou empêcher la communication et la collabo
 
 > [!IMPORTANT]
 > Les obstacles à **l’information prennent uniquement en charge** les restrictions de communication et de collaboration bidirectionnelle. Par exemple, un scénario où le marketing peut communiquer et collaborer avec Day Traders, mais où Day Traders ne peut pas communiquer et collaborer avec marketing **n’est pas pris en charge**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="information-barriers-and-microsoft-teams"></a>Obstacles à l’information et Microsoft Teams
 

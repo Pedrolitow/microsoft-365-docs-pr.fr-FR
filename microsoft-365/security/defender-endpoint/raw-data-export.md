@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 8a985a6f5f4a0dee96cc37e2a16c9947abf8a2e6
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bee57e8abb60715fff5f3aca3f64e3c1e5f76b94
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704125"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228029"
 ---
 # <a name="raw-data-streaming-api"></a>API de streaming de données brutes
 

@@ -16,16 +16,16 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: a472fae685503d742a4d8b6cf95dce2f0bb6619c
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 4f087588f122748220947f9d115f07f9e87b0577
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797915"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227149"
 ---
 # <a name="network-protection-for-linux"></a>Protection réseau pour Linux
 
@@ -65,7 +65,7 @@ Vous pouvez utiliser le filtrage de contenu web pour les tests avec la protectio
 > [!NOTE]
 > Pour évaluer l’efficacité de Linux Web Threat Protection, nous vous recommandons d’utiliser le navigateur Firefox, qui est la valeur par défaut pour toutes les distributions.
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Configuration requise
 
 - Licences : Microsoft Defender pour point de terminaison locataire (peut être une version d’évaluation) et des exigences spécifiques à la plateforme trouvées dans [Microsoft Defender pour point de terminaison pour les plateformes non Windows](non-windows.md#licensing-requirements)
 - Machines intégrées :
@@ -172,9 +172,9 @@ Le fichier de configuration permet également à l’utilisateur de personnalise
 
 Les valeurs par défaut ont été testées pour toutes les distributions, comme décrit dans [Microsoft Defender pour point de terminaison sur Linux](microsoft-defender-endpoint-linux.md)
 
-### <a name="microsoft-defender-portal"></a>Portail Microsoft Defender
+### <a name="microsoft-defender-portal"></a>portail Microsoft Defender
 
-Assurez-vous également que dans **les points de terminaison des paramètres** >  **Microsoft Defender** > ,**les fonctionnalités avancées** >  activées par le bouton bascule **« Indicateurs réseau personnalisés »** sont _activées_.
+En outre, assurez-vous que dans **Microsoft Defender** >  **Settings****, les fonctionnalités** > **avancées** activées  >  par le bouton bascule **« Indicateurs réseau personnalisés »** sont _activées_.
 
 > [!IMPORTANT]
 > Le bouton bascule **« Indicateurs réseau personnalisés » ci-dessus** contrôle l’activation **des indicateurs personnalisés** **pour TOUTES les plateformes prenant en charge la protection réseau, y compris Windows. Rappel : pour que les indicateurs soient appliqués sur Windows, vous devez également activer explicitement la protection réseau.
@@ -190,6 +190,9 @@ Assurez-vous également que dans **les points de terminaison des paramètres** >
    > [!NOTE]
    > Si vous supprimez une stratégie ou modifiez des groupes d’appareils en même temps, cela peut entraîner un retard dans le déploiement de la stratégie.
    > Conseil pro : vous pouvez déployer une stratégie sans sélectionner de catégorie sur un groupe d’appareils. Cette action crée une stratégie d’audit uniquement pour vous aider à comprendre le comportement de l’utilisateur avant de créer une stratégie de blocage.
+   >
+   > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
+ 
 4. [Intégrez Microsoft Defender pour point de terminaison à Defender pour Cloud Apps](/defender-cloud-apps/mde-integration) et vos appareils macOS compatibles avec la protection réseau disposeront de fonctionnalités d’application de stratégie de point de terminaison.
    > [!NOTE]
    > La découverte et d’autres fonctionnalités ne sont actuellement pas prises en charge sur ces plateformes.
@@ -218,7 +221,7 @@ L’indicateur de compromission est une fonctionnalité essentielle dans chaque 
 
 Créez des indicateurs qui définissent la détection, la prévention et l’exclusion des entités. Vous pouvez définir l’action à entreprendre, ainsi que la durée d’application de l’action et l’étendue du groupe d’appareils auquel l’appliquer.
 
-Les sources actuellement prises en charge sont le moteur de détection cloud de Defender pour point de terminaison, le moteur d’investigation et de correction automatisé et le moteur de prévention des points de terminaison (Antivirus Microsoft Defender).
+Les sources actuellement prises en charge sont le moteur de détection cloud de Defender pour point de terminaison, le moteur d’investigation et de correction automatisé et le moteur de prévention des points de terminaison (Microsoft Defender Antivirus).
 
 >:::image type="content" source ="images/network-protection-add-url-domain-indicator.png" alt-text="Affiche l’indicateur d’ajout d’URL ou de domaine par la protection réseau." lightbox="images/network-protection-add-url-domain-indicator.png":::
 
@@ -236,9 +239,9 @@ Le filtrage de contenu web est disponible sur les principaux navigateurs web, av
 
 Pour plus d’informations sur la création de rapports, consultez [le filtrage de contenu Web](web-content-filtering.md).
 
-### <a name="microsoft-defender-for-cloud-applications"></a>Microsoft Defender pour applications cloud
+### <a name="microsoft-defender-for-cloud-applications"></a>Microsoft Defender pour les applications cloud
 
-Microsoft Defender pour applications cloud /Cloud App Catalog identifie les applications que vous souhaitez avertir les utilisateurs finaux lors de l’accès avec Microsoft 365 Defender pour point de terminaison, et les marque comme _surveillées_. Les domaines répertoriés sous les applications surveillées seront synchronisés ultérieurement pour Microsoft 365 Defender pour le point de terminaison :
+Le Microsoft Defender pour les applications cloud /cloud app catalog identifie les applications que vous souhaitez avertir les utilisateurs finaux lors de l’accès avec Microsoft 365 Defender pour point de terminaison, et les marque comme _surveillées_. Les domaines répertoriés sous les applications surveillées seront synchronisés ultérieurement pour Microsoft 365 Defender pour le point de terminaison :
 
 > :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Affiche les applications supervisées par mcas de protection réseau." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
 

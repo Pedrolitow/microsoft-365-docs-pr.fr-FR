@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier votre adresse e-mail et votre propriété de domaine pour prendre en charge un compte non managé créé par une inscription d’utilisateur libre-service dans Microsoft 365.
-ms.openlocfilehash: b930e9d4774dc9271d4bcbd93ffb9e5ced577dab
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: d83e1f0ef8cc7317281d1da060deaa602d314b9a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922128"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199876"
 ---
 # <a name="internal-admin-takeover"></a>Prise de contrôle de l’administrateur interne
 
@@ -75,9 +76,9 @@ Lorsqu’un utilisateur s’inscrit aux services Microsoft 365 à l’aide d’u
 
     Si vous souhaitez supprimer votre domaine de ce compte afin de pouvoir l’ajouter à un autre compte, consultez [Supprimer un domaine d’un autre compte](remove-a-domain-from-another-account.md).
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-YouTube : [Trois étapes pour effectuer une prise de contrôle d’administrateur informatique pour Power BI et Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (vidéo)\
-[Prise de contrôle de l’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)\
+YouTube : [Trois étapes pour effectuer une prise de contrôle informatique Administration pour Power BI et Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (vidéo)\
+[Administration prise de contrôle dans Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)\
 [Utilisation de l’inscription en libre-service dans votre organisation](self-service-sign-up.md) (article)\
-[Présentation du rôle d’administrateur de service Power BI](/power-bi/service-admin-role) (article)
+[Présentation du rôle d’administrateur service Power BI](/power-bi/service-admin-role) (article)

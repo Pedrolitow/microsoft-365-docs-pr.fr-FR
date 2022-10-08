@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Découvrez les stratégies de rétention Microsoft 365 qui s’appliquent à Yammer afin de pouvoir gérer la rétention automatique ou la suppression des messages Yammer pour votre organisation.
-ms.openlocfilehash: c449dd7a562d770eea38e955897cb7bf977cd91e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 631e8172d29826b3bad6c95c006a8ea8c18bce59
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944018"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484366"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -36,18 +37,22 @@ Pour les autres charges de travail, consultez:
 - [En savoir plus sur la rétention dans Microsoft Teams](retention-policies-teams.md)
 - [Découvrir la rétention pour Exchange](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
 Les messages utilisateur et les messages de la communauté Yammer peuvent être supprimés à l’aide de stratégies de rétention pour Yammer. En plus du texte de ces messages, les éléments suivants peuvent être conservés pour des raisons de conformité : liens hypertexte et liens vers d’autres messages Yammer.
 
 > [!NOTE]
 > Comme expliqué dans la section suivante, les messages utilisateur incluent des messages privés pour un utilisateur individuel et tous les messages de la communauté associés à cet utilisateur.
+> 
+> Les messages utilisateur incluent également des [billets de scénario](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69), qui sont pris en charge par les stratégies de rétention.
 
 Les messages de l'utilisateur comprennent tous les noms des personnes présentes dans la conversation, et les messages de la communauté comprennent le nom de la communauté et le titre du message (s'il est fourni).
 
 Les réactions des autres sous forme d'émoticônes ne sont pas conservées lorsque vous utilisez les politiques de conservation pour Yammer.
 
-Les fichiers que vous utilisez avec Yammer ne sont pas inclus dans les règles de conservation pour Yammer. Ces éléments ont leurs propres règles de conservation.
+Files that you use with Yammer aren't included in retention policies for Yammer. These items have their own retention policies.
 
 ## <a name="how-retention-works-with-yammer"></a>Fonctionnement de la rétention pour Yammer
 
@@ -97,7 +102,7 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de conservation uniquement
 
-1. **Si un message Yammer est modifié ou supprimé** : une copie du message d'origine est immédiatement créée dans le dossier SubstrateHolds et y est conservée jusqu'à l'expiration de la période de rétention. Ensuite, le message est immédiatement supprimé définitivement du dossier SubstrateHolds.
+1. **If a Yammer message is edited or deleted**: A copy of the original message is immediately created in the SubstrateHolds folder and retained there until the retention period expires. Then the message is immediately permanently deleted from the SubstrateHolds folder.
 
 2. **Si le message Yammer n'est pas modifié ou supprimé** et pour les messages courants après édition pendant la période de rétention : Rien ne se passe avant et après la période de rétention ; le message reste dans son emplacement d'origine.
 

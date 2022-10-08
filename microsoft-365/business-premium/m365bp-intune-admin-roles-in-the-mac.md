@@ -1,5 +1,5 @@
 ---
-title: À propos des rôles d'administration Intune dans le Centre d’administration Microsoft 365
+title: Administration rôles pour Intune dans le Centre d'administration Microsoft 365
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -11,17 +11,17 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
-ms.custom: ''
+ms.collection:
+- tier1
 description: Le Centre d’administration Microsoft 365 vous permet de gérer certains rôles Microsoft Intune, qui sont mappés aux fonctions métier et donnent des autorisations pour effectuer des tâches spécifiques.
-ms.openlocfilehash: 6d3390a6c17de417e22a851ad3f227ebccc952d4
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b00547a4f89d5e1b64dfbfab4a5cb5aa6c9a0c0a
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737783"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097465"
 ---
-# <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Rôles d'administration Intune dans le Centre d’administration Microsoft 365
+# <a name="admin-roles-for-intune-in-the-microsoft-365-admin-center"></a>Administration rôles pour Intune dans le Centre d'administration Microsoft 365
 
 Votre abonnement à Microsoft 365 ou Office 365 s'accompagne d'un ensemble de rôles d'administrateur que vous pouvez attribuer à tous les utilisateurs de votre organisation à l'aide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d'administration Microsoft 365 </a>. Chaque rôle d’administrateur correspond à des fonctions d’entreprise courantes et donne aux personnes concernées dans votre organisation des autorisations pour effectuer des tâches spécifiques dans les centres d’administration. Par conséquent, ces rôles ne sont qu'un sous-ensemble de tous les rôles disponibles dans le centre d'administration d' Intune, qui comprend des rôles supplémentaires spécifiques à Intune lui-même.
 
@@ -121,7 +121,7 @@ Vous pouvez attribuer un rôle intégré ou personnalisé à un utilisateur d’
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administration déléguée pour les partenaires Microsoft
 
-Si vous travaillez avec un partenaire Microsoft, vous pouvez lui attribuer des rôles d'administrateur. Ils peuvent à leur tour attribuer des rôles d'administrateur aux utilisateurs de votre entreprise ou de la leur. Vous pouvez leur demander de le faire, par exemple, s'ils mettent en place et gèrent votre organisation en ligne pour vous.
+If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company - or their company - admin roles. You might want them to do this, for example, if they're setting up and managing your online organization for you.
   
 Un partenaire peut attribuer ces rôles : 
   
@@ -129,7 +129,7 @@ Un partenaire peut attribuer ces rôles :
 
 - Administration limitée, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
 
-Pour que le partenaire puisse attribuer ces rôles aux utilisateurs, vous devez l'ajouter en tant qu'administrateur délégué à votre compte. Ce processus est initié par un partenaire agréé. Le partenaire vous envoie un e-mail pour vous demander l'autorisation d'agir en tant qu'administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenariat](../admin/misc/add-partner.md).
+Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../admin/misc/add-partner.md).
   
 ## <a name="related-content"></a>Contenu associé
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium playbook d’évaluation
+title: 'Guide de l’utilisateur d’évaluation : Microsoft 365 Business Premium'
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,32 +7,34 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/03/2022
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 183787716026a08fa725b8cea2d91398be50b3a5
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9937fc7e841a823fd8ab6334dd434f5508564ab7
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743195"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501248"
 ---
-# <a name="trial-playbook-microsoft-365-business-premium"></a>Playbook d’évaluation : Microsoft 365 Business Premium
+# <a name="trial-user-guide-microsoft-365-business-premium"></a>Guide de l’utilisateur d’évaluation : Microsoft 365 Business Premium
 
-Bienvenue dans le playbook d’évaluation De Microsoft Business Premium ! Ce playbook vous aidera à tirer le meilleur parti de votre essai gratuit de 30 jours. Vous pouvez voir de première main comment Microsoft 365 Business Premium augmente la productivité et contribue à protéger votre organisation avec des fonctionnalités de sécurité avancées. Utilisez ce playbook pour configurer vos fonctionnalités de protection contre les menaces, analyser les menaces détectées et répondre aux cyberattaques.
+Bienvenue dans le guide de l’utilisateur d’évaluation De Microsoft Business Premium ! Ce guide vous aidera à tirer le meilleur parti de votre essai gratuit. Vous pouvez voir de première main comment Microsoft 365 Business Premium augmente la productivité et contribue à protéger votre organisation avec des fonctionnalités de sécurité avancées. Utilisez ce guide pour configurer vos fonctionnalités de protection contre les menaces, analyser les menaces détectées et répondre aux cyberattaques.
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Configurer la version d’évaluation Microsoft 365 Business Premium
 
 Lorsque vous [commencer une version d’évaluation ou acheter Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), la première étape consiste à tout configurer.
 
 > [!TIP]
-> Enregistrez ce guide opérationnel dans les favoris de votre navigateur. Lorsque des liens dans le playbook vous éloignent de cet emplacement, il sera plus facile de revenir à ce playbook pour continuer.
+> Enregistrez ce guide utilisateur d’évaluation dans les favoris de votre navigateur. Lorsque des liens dans le guide utilisateur d’évaluation vous éloignent de cet emplacement, il sera plus facile de revenir à ce guide pour continuer.
 
 1. [Configurez votre version d’évaluation](../business-premium/m365bp-setup.md) !
 
@@ -80,7 +82,7 @@ Microsoft 365 Business Premium inclut Defender entreprise, une nouvelle solution
 
 1. Tout d’abord, vous devez [installer Microsoft 365 Apps](m365bp-install-office-apps.md).
 
-2. Accédez à [https://office.com](https://office.com) et connectez-vous. (Voir [Začínáme à Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
+2. Accédez à [https://office.com](https://office.com) et connectez-vous. (Voir [Prise en main à Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 
 3. Créez un document Office, tel qu’un [document Word](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 

@@ -14,16 +14,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 4ea317cc7bcc60162b67e4c01baecb7a2f5c8ced
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: ec5703664a1949ab763ef7d676655934b13041b9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523575"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209731"
 ---
 # <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 
@@ -92,7 +94,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
+|Autorisation|Chaîne|Bearer {token}. Required.|
 
 ## <a name="request-body"></a>Corps de la demande
 

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -21,19 +22,19 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Découvrez comment gérer Microsoft 365 groupes.
-ms.openlocfilehash: 0e7cef7d1b55f695af9a33f22393172f6eee6485
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment gérer les groupes Microsoft 365.
+ms.openlocfilehash: 28af0d9581753e1852c0274feb92123ec70b23fd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100498"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185466"
 ---
 # <a name="manage-microsoft-365-groups"></a>Gestion des groupes Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer Microsoft 365 groupes de différentes manières, en fonction de votre configuration. Vous pouvez gérer des comptes d’utilisateur dans le [Centre d'administration Microsoft 365](/admin), PowerShell, dans services de domaine Active Directory (AD DS) ou dans le [centre d’administration Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) . 
+Vous pouvez gérer les groupes Microsoft 365 de plusieurs façons, en fonction de votre configuration. Vous pouvez gérer des comptes d’utilisateur dans le [Centre d'administration Microsoft 365](/admin), PowerShell, dans services de domaine Active Directory (AD DS) ou dans le [Centre d’administration Azure Active Directory (Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)). 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planifier l’emplacement et la façon dont vous allez gérer vos groupes
 
@@ -45,23 +46,23 @@ Vous créez et gérez des groupes avec :
 
 - [Le Centre d'administration Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
-- [Centre d’administration d’Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+- [Centre d’administration Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
 ### <a name="hybrid"></a>Hybride
 
-Les groupes AD DS sont synchronisés avec Microsoft 365 à partir d’AD DS. Vous devez donc utiliser les outils AD DS locaux pour gérer ces groupes.
+Les groupes AD DS étant synchronisés avec Microsoft 365 à partir d’AD DS, vous devez utiliser les outils AD DS locaux pour gérer ces groupes.
 
-Vous pouvez également créer et gérer Azure AD groupes qui sont distincts des groupes AD DS, mais qui peuvent contenir des utilisateurs et des groupes d’AD DS. Dans ce cas, vous pouvez utiliser :
+Vous pouvez également créer et gérer des groupes Azure AD distincts des groupes AD DS, mais qui peuvent contenir des utilisateurs et des groupes d’AD DS. Dans ce cas, vous pouvez utiliser :
 
 - [Le Centre d'administration Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
-- [Centre d’administration d’Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+- [Centre d’administration Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>Autoriser les utilisateurs à créer et gérer leurs propres groupes
 
 Azure AD autorise les groupes qui peuvent être gérés par des propriétaires de groupes au lieu d’administrateurs informatiques. Appelée *gestion de groupes en libre-service*, cette fonctionnalité permet aux propriétaires de groupes qui ne disposent d’aucun rôle administratif de créer et de gérer des groupes de sécurité. 
 
-Les utilisateurs peuvent demander à appartenir à un groupe de sécurité. Cette demande est envoyée au propriétaire du groupe, et non à l’administrateur informatique. Ainsi, le contrôle quotidien de l’appartenance au groupe peut être délégué aux propriétaires d’équipes, de projets ou d’entreprises qui comprennent l’usage du groupe pour l’entreprise et peuvent gérer ses membres.
+Users can request membership in a security group and that request goes to the group owner, rather than an IT administrator. This allows the day-to-day control of group membership to be delegated to team, project, or business owners who understand the business use for the group and can manage its membership.
 
 >[!Note]
 >La gestion des groupes en libre-service est réservée aux groupes Microsoft 365 et aux groupes de sécurité Azure AD. Il n’est pas disponible pour les groupes, les listes de distribution ou les groupes compatibles avec la messagerie ou tout groupe qui a été synchronisé à partir d’AD DS.
@@ -80,7 +81,7 @@ Voici comment les règles sont appliquées :
 - Si un compte d’utilisateur ne correspond pas à toutes les règles pour le groupe, il n’est pas ajouté au groupe.
 - Si un compte d’utilisateur est membre du groupe, mais que ses attributs changent pour qu’il ne corresponde plus à toutes les règles pour le groupe, il est supprimé comme membre du groupe.
 
-Pour utiliser l’appartenance dynamique, vous devez commencer par déterminer les ensembles de groupes qui ont un ensemble commun d’attributs de compte d’utilisateur. Par exemple, tous les membres du service Ventes doivent être dans le groupe Ventes Azure AD, en fonction de l’attribut de compte d’utilisateur Service défini sur « Ventes ».
+To use dynamic membership, you must first determine the sets of groups that have a common set of user account attributes. For example, all members of the Sales department should be in the Sales Azure AD group, based on the user account attribute Department set to "Sales".
 
 Reportez-vous aux [instructions pour créer et configurer les règles pour un groupe Azure AD dynamique](/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 

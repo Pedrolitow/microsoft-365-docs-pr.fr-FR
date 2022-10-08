@@ -11,30 +11,28 @@ ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+- m365-security
+- tier1
 search.appverid: MET150
-description: Découvrez comment examiner et gérer les menaces détectées par l’Antivirus Microsoft Defender sur vos appareils Windows.
-ms.openlocfilehash: 446a51c0d6bb1c595ae40674cffb1108f9f89a4b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+description: Découvrez comment examiner et gérer les menaces détectées par Microsoft Defender Antivirus sur vos appareils Windows.
+ms.openlocfilehash: c9dab2a71d7ce8ce352ae1315be9ff0453215108
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739915"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097662"
 ---
 # <a name="review-detected-threats"></a>Examiner les menaces détectées
 
 Dès qu’un fichier ou un logiciel malveillant est détecté, Microsoft Defender le bloque et l’empêche de s’exécuter. Une fois la protection fournie par le cloud activée, les menaces nouvellement détectées sont ajoutées au moteur antivirus et anti-programme malveillant afin que vos autres appareils et utilisateurs soient également protégés.
 
-L’Antivirus Microsoft Defender détecte et protège contre les types de menaces suivants :
+Microsoft Defender Antivirus détecte et protège contre les types de menaces suivants :
 
 - Virus, programmes malveillants et menaces web sur les appareils
 - Tentatives d’hameçonnage
 - Tentatives de vol de données
 
-En tant que professionnel de l’informatique/administrateur, vous pouvez afficher des informations sur les détections de menaces sur les [appareils Windows inscrits dans Intune](/mem/intune/enrollment/device-enrollment) dans le Microsoft 365 系統管理中心. Vous verrez des informations récapitulatives, telles que :
+En tant que professionnel de l’informatique/administrateur, vous pouvez afficher des informations sur les détections de menaces sur les [appareils Windows inscrits dans Intune](/mem/intune/enrollment/device-enrollment) dans le Centre d'administration Microsoft 365. Vous verrez des informations récapitulatives, telles que :
 
 - Combien d’appareils ont besoin d’une protection antivirus
 - Nombre d’appareils non conformes aux stratégies de sécurité
@@ -65,7 +63,7 @@ Lorsque vous affichez des détails sur des menaces ou des appareils spécifiques
 
 ## <a name="manage-threat-detections-in-microsoft-intune"></a>Gérer les détections de menaces dans Microsoft InTune
 
-Vous pouvez également utiliser Microsoft Endpoint Manager pour gérer les détections de menaces. Tout d’abord, tous les appareils, qu’ils soient Windows, iOS ou Android, doivent être [inscrits dans Intune](/mem/intune/enrollment/windows-enrollment-methods) (qui fait partie de Microsoft Endpoint Manager).
+Vous pouvez également utiliser Microsoft Endpoint Manager pour gérer les détections de menaces. Tout d’abord, tous les appareils, qu’ils soient Windows, iOS ou Android, doivent être [inscrits dans Intune](/mem/intune/enrollment/windows-enrollment-methods) (partie de Microsoft Endpoint Manager).
 
 1. Accédez au Centre d’administration Microsoft Endpoint Manager et <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> connectez-vous.
 
@@ -84,7 +82,7 @@ Le tableau suivant décrit les actions que vous pouvez voir dans Microsoft Endpo
 | Redémarrer | Force un appareil Windows à redémarrer dans un délai de cinq minutes.<br><br>**IMPORTANT:** Le propriétaire ou l’utilisateur de l’appareil n’est pas automatiquement averti du redémarrage et peut perdre le travail non enregistré. |
 | Analyse rapide | Démarre une analyse antivirus rapide sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être inscrits, tels que les clés de Registre et les dossiers de démarrage Windows connus. Les résultats sont envoyés à [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Analyse complète | Démarre une analyse antivirus complète sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être inscrits, ainsi que sur chaque fichier et dossier de l’appareil. Les résultats sont envoyés à [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Synchronisation | Nécessite qu’un appareil s’archive auprès d’Intune (qui fait partie de Microsoft Endpoint Manager). Lorsque l’appareil s’enregistre, l’appareil reçoit toutes les actions ou stratégies en attente affectées à l’appareil. |
+| Synchronisation | Nécessite qu’un appareil s’archive auprès de Intune (partie de Microsoft Endpoint Manager). Lorsque l’appareil s’enregistre, l’appareil reçoit toutes les actions ou stratégies en attente affectées à l’appareil. |
 | Mettre à jour les signatures | Requiert que l’appareil obtienne des [mises à jour du renseignement de sécurité](https://go.microsoft.com/fwlink/?linkid=2149926) pour la protection antivirus et anti-programme malveillant. |
 
 > [!TIP]

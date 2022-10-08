@@ -1,7 +1,7 @@
 ---
 title: Résoudre des problèmes de performance
 description: Résolvez les problèmes d’utilisation élevée du processeur liés au service de protection en temps réel dans Microsoft Defender pour point de terminaison.
-keywords: résolution des problèmes, performances, utilisation élevée de l’UC, utilisation élevée du processeur, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Antivirus Microsoft Defender
+keywords: résolution des problèmes, performances, utilisation élevée du processeur, utilisation élevée du processeur, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Microsoft Defender Antivirus
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -15,13 +15,15 @@ ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.subservice: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 3f8e259a1f1c98d545bf839e6da94a92ee7af51e
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.collection:
+- m365-security
+- tier3
+ms.openlocfilehash: 349111793185dc1508437e048c24cd00823f97e3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580312"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228227"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -36,7 +38,7 @@ ms.locfileid: "67580312"
 **Plateformes**
 - Windows
 
-Si votre système rencontre des problèmes d’utilisation élevée du processeur ou de performances liés au service de protection en temps réel dans Microsoft Defender pour point de terminaison, vous pouvez envoyer un ticket au support Microsoft. Suivez les étapes décrites dans [Collecter les données de diagnostic de l’Antivirus Microsoft Defender](collect-diagnostic-data.md).
+Si votre système rencontre des problèmes d’utilisation élevée du processeur ou de performances liés au service de protection en temps réel dans Microsoft Defender pour point de terminaison, vous pouvez envoyer un ticket au support Microsoft. Suivez les étapes décrites dans [Collecter Microsoft Defender données de diagnostic antivirus](collect-diagnostic-data.md).
 
 En tant qu’administrateur, vous pouvez également résoudre ces problèmes vous-même.
 
@@ -76,7 +78,7 @@ Dans **MPLog-xxxxxxxx-xxxxxx.log**, vous pouvez trouver les informations d’imp
 |EstimatedImpact|Pourcentage de temps passé dans les analyses pour les fichiers consultés par ce processus hors de la période pendant laquelle ce processus a connu une activité d’analyse|
 |
 
-Si l’impact sur les performances est élevé, essayez d’ajouter le processus aux exclusions path/process en suivant les étapes de [configuration et de validation des exclusions pour les analyses antivirus Microsoft Defender](collect-diagnostic-data.md).
+Si l’impact sur les performances est élevé, essayez d’ajouter le processus aux exclusions path/process en suivant les étapes [décrites dans Configurer et valider les exclusions pour les analyses antivirus Microsoft Defender](collect-diagnostic-data.md).
 
 Si l’étape précédente ne résout pas le problème, vous pouvez collecter plus d’informations via le [Moniteur de processus](#capture-process-logs-using-process-monitor) ou [l’enregistreur de performances Windows](#capture-performance-logs-using-windows-performance-recorder) dans les sections suivantes.
 
@@ -297,5 +299,5 @@ L’outil en ligne de commande *wpr.exe* fait partie du système d’exploitatio
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Collecter les données de diagnostic de l’Antivirus Microsoft Defender](collect-diagnostic-data.md)
+- [Collecter Microsoft Defender données de diagnostic antivirus](collect-diagnostic-data.md)
 - [Configurer et valider les exclusions pour les analyses antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)

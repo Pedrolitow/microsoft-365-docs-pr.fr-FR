@@ -12,10 +12,12 @@ ms.service: microsoft-365-frontline
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 - microsoftcloud-healthcare
 - microsoftcloud-retail
 - m365solution-frontline
 - m365solution-scenario
+- highpri
 search.appverid: MET150
 ms.localizationpriority: high
 searchScope:
@@ -26,12 +28,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: ce2c8da70b2fa6908518fc2f7d9489a2fdf578cd
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 8d79469cafd26cc979523ec632d6ca21cce3bf3d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67405725"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226732"
 ---
 # <a name="shifts-for-frontline-workers"></a>Shifts pour les travailleurs de première ligne
 
@@ -47,9 +49,9 @@ Utilisez les ressources suivantes pour vous aider à configurer et gérer Shifts
 
 |&nbsp;  |&nbsp; |
 |---------|---------|
-|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Gérer les décalages](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Obtenez une vue d’ensemble de la gestion des shifts pour votre organisation. Découvrez comment contrôler l’accès à Shifts, épingler les majs à la barre d’applications Teams pour faciliter l’accès, activer les balises basées sur les décalages, etc. |
-|<img src="/office/media/icons/users-people.png" alt="Users/people symbol.">   |**[Gérer les propriétaires de planning pour la gestion des équipes](schedule-owner-for-shift-management.md)** Cette fonctionnalité vous permet de faire passer les autorisations d'un membre de l'équipe à un propriétaire de planning sans faire de l'employé un propriétaire d'équipe.         |
-|<img src="/office/media/icons/help.png" alt="Help symbol.">     | **[Faq sur les données Shifts](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Découvrez où sont stockées les données Shifts et d’autres rubriques relatives aux données Shifts, notamment la rétention, la récupération et le chiffrement.        |
+|:::image type="icon" source="/office/media/icons/administrator.png":::|**[Gérer les décalages](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Obtenez une vue d’ensemble de la gestion des shifts pour votre organisation. Découvrez comment contrôler l’accès à Shifts, épingler les majs à la barre d’applications Teams pour faciliter l’accès, activer les balises basées sur les décalages, etc. |
+|:::image type="icon" source="/office/media/icons/users-people.png":::|**[Gérer les propriétaires de planning pour la gestion des équipes](schedule-owner-for-shift-management.md)** Cette fonctionnalité vous permet de faire passer les autorisations d'un membre de l'équipe à un propriétaire de planning sans faire de l'employé un propriétaire d'équipe.|
+|:::image type="icon" source="/office/media/icons/help.png":::| **[Faq sur les données Shifts](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Découvrez où sont stockées les données Shifts et d’autres rubriques relatives aux données Shifts, notamment la rétention, la récupération et le chiffrement.|
 
 ## <a name="shifts-connectors"></a>Connecteurs de Plannings
 
@@ -57,21 +59,20 @@ Si vous utilisez un système tiers de gestion de la main-d’œuvre (WFM) pour l
 
 |&nbsp;  |&nbsp;  |
 |---------|---------|
-|<img src="/office/media/icons/connector-teams.png" alt="Connector symbol.">     | **[Vue d’ensemble des connecteurs Shifts](shifts-connectors.md)** Obtenez une vue d’ensemble des connecteurs Shifts et de leur fonctionnement. Découvrez les connecteurs gérés disponibles et les systèmes WFM pris en charge.   |
-|<img src="/office/media/icons/connector-teams.png" alt="Connector symbol.">     | **[Connecteurs Shifts gérés](shifts-connectors.md#managed-shifts-connectors)** Les connecteurs Shifts gérés, développés en collaboration avec nos partenaires, sont hébergés et gérés par nous ou nos partenaires. Pour plus d’informations, consultez [le connecteur Microsoft Teams Shifts pour le connecteur Blue Y reconnect et](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) [Connecteurs Shifts pour Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams).    |
-|   | **[Utiliser l’Assistant Connecteur Shifts pour connecter Shifts à Blue Yificateur Workforce Management](shifts-connector-wizard.md)** L’Assistant Connecteur Shifts dans le Centre d’administration Microsoft 365 vous aide à configurer rapidement une connexion à votre système WFM. Actuellement, l’Assistant prend en charge le connecteur Teams Shifts pour Blue Yobo afin d’intégrer Shifts à Blue Yificateur Workforce Management.
-|  | **[Utiliser PowerShell pour connecter Shifts à Blue Yll Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)** Découvrez comment utiliser PowerShell pour configurer une connexion à Blue Yll Workforce Management via le connecteur Teams Shifts pour Blue Y reconnect.         |
-|   | **[Utiliser PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)** Obtenez des conseils sur l’utilisation de PowerShell pour gérer votre connexion Shifts à Blue Yll Workforce Management après l’avoir configurée via l’Assistant Connecteur Shifts ou PowerShell.
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Aperçu](shifts-connectors.md)** Obtenez une vue d’ensemble des connecteurs Shifts et de leur fonctionnement. Découvrez les connecteurs gérés disponibles et les systèmes WFM pris en charge.   |
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Connecteur Teams Shifts pour Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)** <ul><li>Découvrez comment configurer une connexion à Blue Yonder Workforce Management à l’aide de [l’Assistant Connecteur Shifts](shifts-connector-wizard.md) ou [de PowerShell](shifts-connector-blue-yonder-powershell-setup.md).</li><li>Découvrez comment gérer votre connexion à Blue Yonder Workforce Management à l’aide du [Centre d'administration Microsoft 365](shifts-connector-blue-yonder-admin-center-manage.md) ou [de PowerShell](shifts-connector-powershell-manage.md).</li></ul> |
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Connecteur Teams Shifts pour les dimensions UKG](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions)** (préversion) <ul><li>Découvrez comment configurer une connexion à UKG Dimensions à l’aide de [l’Assistant Connecteur Shifts](shifts-connector-wizard-ukg.md) ou [de PowerShell](shifts-connector-ukg-powershell-setup.md).</li><li>Découvrez comment gérer votre connexion aux dimensions UKG à l’aide de la [Centre d'administration Microsoft 365](shifts-connector-ukg-admin-center-manage.md) ou [de PowerShell](shifts-connector-ukg-powershell-manage.md).</li></ul>|
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Connecteur Reflexis Shifts pour Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams)** Découvrez comment intégrer Shifts au système reflexis WFM via le connecteur.|
 
 ## <a name="shifts-extensions"></a>Décale les extensions
 
 |&nbsp;|&nbsp;|
 | ------------- | ------------- |
-| <img src="/office/media/icons/api.png" alt="Three gears - API."> | **[API Shift Graph](/graph/api/resources/shift)** Les API Shifts Graph vous permettent d’intégrer des données Shifts à des systèmes WFM externes. Vous aurez la possibilité de créer des expériences Shifts personnalisées dans le back end, tout en offrant aux utilisateurs une expérience frontale riche dans Teams.             |
-|<img src="/office/media/icons/process-flow-teams.png" alt="Process/flow chart symbol."> | **[Shifts + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Shifts + Power Automate vous permet de tirer des informations de Shifts et de créer des workflows personnalisés avec d’autres applications et d’effectuer des opérations à grande échelle. Automatiser les processus clés avec peu ou pas de code. Les déclencheurs et les modèles prennent en charge différents scénarios, tels que l’activation d’approbations automatiques pour les demandes de l’équipe lorsque l’approbation d’un responsable n’est pas nécessaire. |
+|:::image type="icon" source="/office/media/icons/api.png":::| **[API Shift Graph](/graph/api/resources/shift)** Les API Shifts Graph vous permettent d’intégrer des données Shifts à des systèmes WFM externes. Vous aurez la possibilité de créer des expériences Shifts personnalisées dans le back end, tout en offrant aux utilisateurs une expérience frontale riche dans Teams.             |
+|:::image type="icon" source="/office/media/icons/process-flow-teams.png":::| **[Shifts + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Shifts + Power Automate vous permet de tirer des informations de Shifts et de créer des workflows personnalisés avec d’autres applications et d’effectuer des opérations à grande échelle. Automatiser les processus clés avec peu ou pas de code. Les déclencheurs et les modèles prennent en charge différents scénarios, tels que l’activation d’approbations automatiques pour les demandes de l’équipe lorsque l’approbation d’un responsable n’est pas nécessaire. |
 
 ## <a name="featured-training"></a>Formation proposée
 
 |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| <img src="/office/media/icons/get-started-teams.png" alt="Get started symbol.">  |  [Vidéo : Qu’est-ce que Shifts ?](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |<img src="/office/media/icons/clock-teams.png" alt="Clock symbol."> |  [Vidéo : Créer une planification Shifts](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) |<img src="/office/media/icons/blocks-teams.png" alt="Blocks symbol.">|  [Vidéo : Gérer une planification dans Shifts](https://support.microsoft.com/office/manage-and-view-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7) |
+|:::image type="icon" source="/office/media/icons/get-started-teams.png":::  |  [Vidéo : Qu’est-ce que Shifts ?](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |:::image type="icon" source="/office/media/icons/calendar.png"::: |  [Vidéo : Créer une planification Shifts](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) |:::image type="icon" source="/office/media/icons/blocks-teams.png":::|  [Vidéo : Gérer une planification dans Shifts](https://support.microsoft.com/office/manage-and-view-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7) |

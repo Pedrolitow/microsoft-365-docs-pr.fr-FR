@@ -11,17 +11,19 @@ ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: f8f10211681fb1ba3ab76af9833c9db10121217f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 130155711355c0e19109672bdcb241775f3db1e9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692902"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209775"
 ---
 # <a name="get-device-secure-score"></a>Obtenir un score sécurisé d’appareil
 

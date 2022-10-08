@@ -14,17 +14,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité du type d’informations sensibles du numéro d’identifiant fiscal français.
-ms.openlocfilehash: dc1a87137c6c6bc1bdcee896c029da22c0912725
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 1519fea318e4d4f207dff16af3e69ae892f60709
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996389"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68378707"
 ---
 # <a name="eu-tax-identification-number"></a>Numéro d’identification fiscale de l’UE
 

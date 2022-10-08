@@ -16,6 +16,8 @@ ms.collection:
 - M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -25,12 +27,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenez Microsoft 365 Business Premium pour protéger votre entreprise contre les menaces de cybersécurité sur les appareils, les e-mails, les données et les communications.
-ms.openlocfilehash: 35afcc46d10f83b030db5999012a9052dd204435
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: c0d0f3c0b87392426238aefc4e55e8f92786b119
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738047"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097553"
 ---
 # <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>Comment s’inscrire à Microsoft 365 Business Premium
 
@@ -65,7 +67,7 @@ Microsoft dispose d’une liste de fournisseurs de solutions autorisés à vendr
 
    Dès que vous sélectionnez un ou plusieurs critères, la liste des partenaires se met à jour.
 
-3. Passez en revue la liste des résultats. Sélectionnez un fournisseur pour en savoir plus sur son expertise et les services qu’il fournit.
+3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,22 +8,22 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 95ed620bf8b5af456174c232d90e05e6fbd547fd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 36e00732202950df890316260d888353cb48bf6e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680392"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210171"
 ---
 # <a name="onboard-non-windows-devices"></a>Intégrer des appareils non Windows
 

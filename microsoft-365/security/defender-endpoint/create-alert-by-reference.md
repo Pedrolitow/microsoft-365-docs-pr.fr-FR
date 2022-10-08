@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b5c9fa30dacc0527e91c6288f5b6104e44e60ef0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1a8eaf8afc7b9d583618d48d5f0b556c23e16348
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683611"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210193"
 ---
 # <a name="create-alert-api"></a>Créer une API d’alerte
 
@@ -67,6 +69,8 @@ Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et é
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Investigation des alertes » (pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md) )
 > - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2
 
 ## <a name="http-request"></a>Requête HTTP
 
