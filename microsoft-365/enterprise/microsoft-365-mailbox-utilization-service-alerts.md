@@ -6,11 +6,12 @@ manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: Utilisez les conseils du service d’utilisation des boîtes aux lettres pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîtes aux lettres.
-ms.openlocfilehash: 58cbd5880b32b5297f0faae26a5a3369a2e6b66c
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 35bff697727a77abc27555898e48106bc7070142
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67019964"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185400"
 ---
 # <a name="service-advisories-for-mailbox-utilization-in-exchange-online-monitoring"></a>Conseils de service pour l’utilisation des boîtes aux lettres dans Exchange Online surveillance
 
@@ -87,9 +88,9 @@ Les avis de service pour l’utilisation des boîtes aux lettres peuvent égalem
 
 | RetentionPolicyGuid | MailboxType | HasMoveDumpsterToArchiveTag | HasMovePrimaryToArchiveTag | HasPersonalArchiveTag |  Boîtes aux lettres |
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
-| 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | Vrai | Faux | True | 398 |
-| 6c041498-1611-5011-a058-1156ce60890c | Primaire | Vrai | Faux | True | 10 |
-| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | Vrai | Faux | 7  |
+| 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | Vrai | Faux | Vrai | 398 |
+| 6c041498-1611-5011-a058-1156ce60890c | Primaire | Vrai | Faux | Vrai | 10 |
+| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | Faux | Vrai | Faux | 7  |
 | 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
 | 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | Vrai  | Faux | 1 |
 |||||||
@@ -120,7 +121,7 @@ La liste suivante décrit chaque colonne du tableau précédent.
 
 Si vous ne prenez pas d’action pour résoudre les problèmes de quota, vous pouvez vous attendre à voir ce type d’avis de service tous les sept jours. Les avis de service suivants peuvent contenir des nombres de boîtes aux lettres plus élevés pour les autres boîtes aux lettres qui approchent de leur quota. Si vous prenez des mesures pour résoudre les problèmes de quota, cet avis de service se produit uniquement lorsqu’une autre boîte aux lettres avec des problèmes de quota est identifiée.
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - Pour plus d’informations sur la résolution et la résolution des problèmes de boîte aux lettres d’archivage, consultez [la résolution des problèmes de Microsoft Purview](/office365/troubleshoot/microsoft-365-compliance-welcome).
 

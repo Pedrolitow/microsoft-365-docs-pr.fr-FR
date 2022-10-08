@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 7f90046c75c2b95c288cdf2134734d1cc9898125
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: e59d037185009125f64bc457d7fc17be497b432d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672972"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185158"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
@@ -60,7 +61,7 @@ Dans cette méthode, vous utilisez un modèle Azure Resource Manager pour géné
 Avant de déployer le modèle, lisez la [page README du modèle](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) et préparez les informations suivantes :
 
 - Nom de domaine DNS public de votre environnement de test (testlab.\<*your public domain*>). Vous entrez ce nom dans le champ **Nom de domaine** de la page **déploiement personnalisé** .
-- Un préfixe d’étiquette DNS pour les URL d’adresses IP publiques de vos machines virtuelles. Vous devez entrer cette étiquette dans le **préfixe d’étiquette Dns** champ de la page **déploiement Personnalisé**.
+- A DNS label prefix for the URLs of the public IP addresses of your virtual machines. You'll need to enter this label in the **Dns Label Prefix** field of the **Custom deployment** page.
 
 Après avoir lu les instructions, sélectionnez **Déployer sur Azure** dans la [page README du modèle](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) pour commencer.
 
@@ -75,7 +76,7 @@ Une fois le modèle terminé, votre configuration ressemble à ceci :
 
 En utilisant cette méthode, vous utilisez Windows PowerShell et le module Azure PowerShell afin de créer l’infrastructure de réseau, les machines virtuelles et leur configuration.
 
-Utilisez cette méthode si vous souhaitez acquérir de l’expérience en créant des éléments d’infrastructure Azure, une étape après l’autre, avec PowerShell. Vous pouvez alors personnaliser les blocs de commande PowerShell pour votre propre déploiement d’autres machines virtuelles dans Azure.
+Use this method if you want to get experience creating elements of Azure infrastructure one step at a time with PowerShell. You can then customize the PowerShell command blocks for your own deployment of other virtual machines in Azure.
 
 #### <a name="step-1-create-dc1"></a>Phase 1: création de DC1
 
@@ -84,7 +85,7 @@ Dans cette étape, vous allez créer un réseau virtuel Azure et ajouter DC1, un
 Tout d’abord, démarrez une invite de commandes Windows PowerShell sur votre ordinateur local.
   
 > [!NOTE]
-> Les ensembles de commandes suivants utilisent la dernière version d’Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](/powershell/azureps-cmdlets-docs/). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). 
   
 Connectez-vous à votre compte Azure avec la commande suivante.
   
@@ -105,7 +106,7 @@ $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
-Ensuite, créez un nouveau groupe de ressources pour le laboratoire de test de votre entreprise simulée. Pour choisir un nom de groupe de ressources unique, utilisez cette commande pour répertorier les groupes de ressources existants.
+Next, create a new resource group for your simulated enterprise test lab. To determine a unique resource group name, use this command to list your existing resource groups.
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
@@ -156,7 +157,7 @@ $vm=Add-AzVMDataDisk -VM $vm -Name "DC1-DataDisk1" -CreateOption Attach -Managed
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Vous serez invité à indiquer un nom d’utilisateur et un mot de passe pour le compte d’administrateur local sur DC1. Utilisez un mot de passe et enregistrez le nom et le mot de passe dans un endroit sûr.
+You will be prompted for a user name and password for the local administrator account on DC1. Use a strong password and record both the name and password in a secure location.
   
 Ensuite, connectez-vous à la machine virtuelle DC1 :
   
@@ -215,7 +216,7 @@ New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password"
 
 Notez que cette commande vous invite à indiquer le mot de passe du compte Utilisateur 1. Ce compte sera utilisé pour les connexions bureau à distance pour tous les ordinateurs membres du domaine TESTLAB. Choisissez donc un mot de passe fort. Enregistrez le mot de passe du compte Utilisateur 1 et stockez-le dans un endroit sûr.
   
-Maintenant, configurez le nouveau compte Utilisateur1 comme un administrateur de schéma, d’entreprise et de domaine. Exécutez cette commande à l’invite de commandes Windows PowerShell de niveau administrateur.
+Ensuite, configurez le nouveau compte User1 en tant qu’administrateur de domaine, d’entreprise et de schéma. Exécutez cette commande à l’invite de commande Windows PowerShell de niveau administrateur.
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -298,7 +299,7 @@ Votre configuration actuelle ressemble à ceci :
 Durant cette phase, vous allez créer et configurer CLIENT1, qui se comporte comme un ordinateur portable, une tablette ou un ordinateur de bureau classique sur l’intranet.
 
 > [!NOTE]  
-> Le jeu de commandes suivant crée CLIENT1 en exécutant Windows Server 2016 Datacenter, pour tous les types d’abonnements Azure. Si vous avez un abonnement Azure basé sur Visual Studio, vous pouvez créer CLIENT1 en exécutant Windows 10, avec le [portail Azure](https://portal.azure.com).
+> The following command set creates CLIENT1 running Windows Server 2016 Datacenter, which can be done for all types of Azure subscriptions. If you have a Visual Studio-based Azure subscription, you can create CLIENT1 running Windows 10 with the [Azure portal](https://portal.azure.com).
   
 Pour créer une machine virtuelle Azure pour CLIENT1, renseignez le nom de votre groupe de ressources et exécutez ces commandes à l’invite de commandes sur votre ordinateur local.
   
@@ -359,11 +360,11 @@ Votre configuration actuelle ressemble à ceci :
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>Phase 2 : Création de votre abonnement Microsoft 365 E5
 
-Durant cette phase, vous allez créer un nouvel abonnement Microsoft 365 E5 qui utilise un nouveau client Azure AD commun, différent de votre abonnement de production. Vous pouvez procéder de deux façons :
+In this phase, you create a new Microsoft 365 E5 subscription that uses a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
 
 - Utiliser un abonnement d’évaluation de Microsoft 365 E5.
 
-  L’abonnement à la version d’évaluation Microsoft 365 E5 est valable 30 jours et peut être porté facilement à 60 jours. Quand l’abonnement à la version d’évaluation expire, soit vous le convertissez en abonnement payant, soit vous créez un nouvel abonnement à la version d’évaluation. Si vous choisissez cette dernière option, vous ne pourrez pas conserver votre configuration et les scénarios complexes qu’elle peut contenir.  
+  The Microsoft 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. When the trial subscription expires, you must either convert it to a paid subscription or create a new trial subscription. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
 
 - Utiliser un abonnement de production de Microsoft 365 E5 distinct avec un nombre réduit de licences.
 

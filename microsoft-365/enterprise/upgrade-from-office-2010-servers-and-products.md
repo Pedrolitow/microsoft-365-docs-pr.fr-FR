@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - LCC120
@@ -23,12 +25,12 @@ f1.keywords:
 - NOCSH
 description: Commencez à planifier votre mise à niveau à partir de serveurs et d’applications clientes Office 2010, car le support se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f3c03270bc8e1a86a451f1bc30b77cb4279d274
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: b11c1a93d3e070f2e450a2073f7c6162f012809f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671476"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198160"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 

@@ -1,5 +1,5 @@
 ---
-title: Procédure de demande d'un déplacement de données
+title: Procédure de demande d’un déplacement de données
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,12 +15,13 @@ f1.keywords:
 - NOCSH
 description: Les clients Office 365 existants doivent soumettre une demande avant l’échéance pour que leurs données de services Microsoft 365 soient déplacées vers leur nouvelle région géographique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4a3c2fb77fe3efb26f77ce7e905bba3c43724a0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.collection: scotvorg
+ms.openlocfilehash: bffd6c99f4df0cc89ae064d49fcc9c97d9e4dd3c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671102"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208697"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 

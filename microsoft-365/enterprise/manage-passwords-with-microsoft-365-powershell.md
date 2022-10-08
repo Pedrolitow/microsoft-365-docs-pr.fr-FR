@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Découvrez comment utiliser PowerShell pour gérer les mots de passe.
-ms.openlocfilehash: e980e9c4c2511ea1f84df870c790a61a047c3a90
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ce8a8520d43f4ea3254fb5fb2d0c5128fced54d0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091564"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185378"
 ---
 # <a name="manage-passwords-with-powershell"></a>Gérer les mots de passe avec PowerShell
 
@@ -32,7 +34,7 @@ Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au Centre d
 
 Lorsqu’un bloc de commandes de cet article requiert que vous spécifiez des valeurs de variable, procédez comme suit.
 
-1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou l’environnement de script intégré PowerShell (ISE).
+1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans le Bloc-notes ou l’environnement ISE (Integrated Script Environment) PowerShell.
 2. Renseignez les valeurs de variable et supprimez les caractères « < » et « > ».
 3. Exécutez les commandes dans la fenêtre PowerShell ou l’ise PowerShell.
 

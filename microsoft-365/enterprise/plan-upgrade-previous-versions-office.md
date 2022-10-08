@@ -9,19 +9,21 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources destinées aux utilisateurs qui utilisent Office 2007 ou Office 2010 pour les aider à planifier leur mise à niveau.
-ms.openlocfilehash: c8c574f2001b0897f2656113e8c46fcd9e60e473
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 86a11a8cf9b7912cc3a5b4ce4d8f6c5ab794f78c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67673060"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185202"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
@@ -65,7 +67,7 @@ Les organisations doivent envisager plusieurs options de mise à niveau :
   |Produits et services Office 2007|Produits et services Office 2010|
   |---|---|
   |[Office 2007](/DeployOffice/office-2007-end-support-roadmap) (Bureau)|[Office 2010](/DeployOffice/office-2010-end-support-roadmap) (Bureau)|
-  |[Exchange 2007](exchange-2007-end-of-support.md)|[Exchange 2010](exchange-2010-end-of-support.md)|
+  |[Exchange 2007](exchange-2007-end-of-support.md)|[Exchange 2010](exchange-2010-end-of-support.md)|
   |[SharePoint 2007](sharepoint-2007-end-of-support.md)|[SharePoint 2010](upgrade-from-sharepoint-2010.md)|
   |[Office Communications Server](/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](/skypeforbusiness/plan-your-deployment/upgrade)|
   |[Project Server 2007](project-server-2007-end-of-support.md)|[Project Server 2010](project-server-2010-end-of-support.md)|

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,19 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: 'Découvrez comment vous pouvez avoir plusieurs adresses e-mail, appelées alias de messagerie, associées à votre Microsoft 365 pour compte d’entreprise. '
-ms.openlocfilehash: 2951b5eef21748ace22bee50afb24f86123fa46a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: 'Découvrez comment vous pouvez avoir plusieurs adresses e-mail, appelées alias de messagerie, associées à votre compte Microsoft 365 pour entreprises. '
+ms.openlocfilehash: 01c2871c2918dc9be9f1eb29f44bbede19ea0afb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437456"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197984"
 ---
-# <a name="add-another-email-alias-for-a-microsoft-365-business-subscription-user"></a>Ajouter un autre alias de messagerie pour un utilisateur d’abonnement Microsoft 365 entreprise
+# <a name="add-another-email-alias-for-a-microsoft-365-business-subscription-user"></a>Ajouter un autre alias de messagerie pour un utilisateur d’abonnement Professionnel Microsoft 365
   
-Cet article s’applique aux administrateurs Microsoft 365 qui ont des abonnements professionnels. Il ne s'adresse pas aux particuliers.
+Cet article s’applique aux administrateurs Microsoft 365 qui disposent d’abonnements professionnels. Il ne s'adresse pas aux particuliers.
   
-Une adresse e-mail principale dans Microsoft 365 est généralement l’adresse e-mail attribuée à un utilisateur lors de la création de son compte. Lorsque l'utilisateur envoie du courrier à une autre personne, son adresse de courrier principale est celle qui apparaît généralement dans le champ  *De*  dans les applications de courrier. Ils peuvent également avoir plusieurs adresses e-mail associées à leur Microsoft 365 pour compte d’entreprise. Les adresses supplémentaires sont appelées alias. 
+Une adresse e-mail principale dans Microsoft 365 est généralement l’adresse e-mail attribuée à un utilisateur lors de la création de son compte. Lorsque l'utilisateur envoie du courrier à une autre personne, son adresse de courrier principale est celle qui apparaît généralement dans le champ  *De*  dans les applications de courrier. Ils peuvent également avoir plusieurs adresses e-mail associées à leur compte Microsoft 365 pour entreprises. Les adresses supplémentaires sont appelées alias. 
   
 Par exemple, supposons que Elle a l’adresse e-mail jenna@contosoco.com, mais qu’elle souhaite également recevoir des e-mails à jen@contosoco.com parce que certaines personnes lui font référence par ce nom. Vous pouvez créer des alias pour elle afin que les deux adresses e-mail accèdent à la boîte de réception de Emails.
   
@@ -49,7 +50,7 @@ Vous pouvez créer jusqu'à 400 alias par utilisateur. Vous ne devez pas acquér
   
 ## <a name="add-email-aliases-to-a-user"></a>Ajouter des alias de courrier à un utilisateur
 
-Vous devez disposer des droits d’administrateur général pour ajouter des alias de messagerie à un utilisateur.
+Vous devez disposer de droits d’Administration globaux pour ajouter des alias de messagerie à un utilisateur.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
@@ -79,7 +80,7 @@ Vous devez disposer des droits d’administrateur général pour ajouter des ali
     L’utilisateur dispose désormais d’une adresse principale et d’un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Hoffman, Eliza@NodPublishers.com, et son alias, Sales@NodPublishers.com, seront envoyés à la boîte de réception d’Eliza.
     
   
-7. **Lorsque l’utilisateur répond, l’adresse *From* dépend de son client Outlook. Outlook sur le web utiliserons l’alias auquel l’e-mail a été reçu (nous appellerons cela le principe du ping-pong). Outlook bureau utilisera son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au message à l’aide de Outlook bureau, son adresse e-mail principale apparaît comme Eliza@NodPublishers.com, et non Sales@NodPublishers.com.
+7. **Lorsque l’utilisateur répond, l’adresse *From* dépend de son client Outlook. Outlook sur le web utiliserons l’alias auquel l’e-mail a été reçu (nous appellerons cela le principe du ping-pong). Outlook Desktop utilisera son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Quand Eliza répond au message à l’aide du bureau Outlook, son adresse e-mail principale apparaît en tant que Eliza@NodPublishers.com, et non Sales@NodPublishers.com.
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>Avez-vous obtenu « Un paramètre qui correspond au nom du paramètre EmailAddresses » est introuvable ?
 
@@ -92,9 +93,9 @@ Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vo
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Envoi facile d’e-mails à partir de l’adresse proxy
 
-Une nouvelle fonctionnalité est déployée en juillet 2021, qui permet aux utilisateurs d’envoyer facilement à partir de leurs alias lors de l’utilisation de Outlook sur le web. Lorsque la fonctionnalité est étendue à une location où l’administrateur client utilise l’applet `Set-OrganizationConfig -SendFromAliasEnabled $true` de commande, les utilisateurs de la location ont accès à une liste de cases à cocher où chaque entrée correspond à un alias dans leurs paramètres de Outlook. La sélection d’un alias le fera apparaître dans la liste déroulante From du formulaire Compose.
+Une nouvelle fonctionnalité est déployée en juillet 2021, qui permet aux utilisateurs d’envoyer facilement à partir de leurs alias lors de l’utilisation de Outlook sur le web. Lorsque la fonctionnalité se déploie dans une location où l’administrateur client utilise l’applet `Set-OrganizationConfig -SendFromAliasEnabled $true` de commande, les utilisateurs de la location ont accès à une liste de cases à cocher où chaque entrée correspond à un alias dans leurs paramètres Outlook. La sélection d’un alias le fera apparaître dans la liste déroulante From du formulaire Compose.
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Envoyer un e-mail à partir d’une autre adresse](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)
 

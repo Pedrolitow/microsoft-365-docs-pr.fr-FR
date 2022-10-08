@@ -13,15 +13,17 @@ ms.localizationpriority: medium
 ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: d2d689117c614c4fb2f786a303ea9070eac5fedc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: e2353ce3ae89d4377584d1e9c7f37ed320a7833d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586201"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224027"
 ---
 # <a name="web-protection"></a>Protection Web
 
@@ -84,6 +86,8 @@ Le filtrage de contenu web inclut :
 
 - Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent localement ou en déplacement.
 - Vous pouvez déployer facilement des stratégies variées sur différents ensembles d’utilisateurs à l’aide des groupes d’appareils définis dans les [Microsoft Defender pour point de terminaison paramètres de contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac).
+    > [!NOTE]
+    > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 - Vous pouvez accéder aux rapports web au même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
 Pour plus d’informations, consultez [le filtrage de contenu Web](web-content-filtering.md).

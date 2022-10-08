@@ -1,7 +1,7 @@
 ---
-title: Activer la protection cloud dans l’antivirus Microsoft Defender
+title: Activer la protection cloud dans Microsoft Defender Antivirus
 description: Activez la protection cloud pour bénéficier des fonctionnalités de protection rapides et avancées.
-keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, cloud, bloquer à première vue
+keywords: Microsoft Defender antivirus, logiciel anti-programme malveillant, sécurité, cloud, bloquer à première vue
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,16 +14,18 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 54a37cf54d40962b7ff1b7e98a450895568e2392
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b46457a8215fc1eb5480558b6aa68fcf34029de6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705005"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68174861"
 ---
-# <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans l’antivirus Microsoft Defender
+# <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans Microsoft Defender Antivirus
 
 **S’applique à :**
 
@@ -33,11 +35,11 @@ ms.locfileid: "67705005"
 **Plateformes**
 - Windows
 
-[La protection cloud dans l’Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) offre une protection précise, en temps réel et intelligente. La protection cloud doit être activée par défaut ; toutefois, vous pouvez configurer la protection cloud en fonction des besoins de votre organisation.
+[La protection cloud dans Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) offre une protection précise, en temps réel et intelligente. La protection cloud doit être activée par défaut ; toutefois, vous pouvez configurer la protection cloud en fonction des besoins de votre organisation.
 
 ## <a name="methods-to-configure-cloud-protection"></a>Méthodes de configuration de la protection cloud
 
-Vous pouvez activer ou désactiver la protection cloud de l’Antivirus Microsoft Defender à l’aide de l’une des méthodes suivantes :
+Vous pouvez activer ou désactiver Microsoft Defender protection cloud antivirus à l’aide de l’une des méthodes suivantes :
 
 - Microsoft Endpoint Manager, qui inclut Microsoft Intune et Configuration Manager
 - Stratégie de groupe
@@ -58,7 +60,7 @@ Pour plus d’informations sur les exigences spécifiques de connectivité rése
 
 3. Sélectionnez le type de profil **Restrictions d’appareil** que vous souhaitez configurer. Si vous devez créer un type de profil de **restrictions** d’appareil, consultez [Configurer les paramètres de restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure).
 
-4. Sélectionner **les paramètres de configuration des propriétés**  \> : Modifier l’antivirus \> **Microsoft Defender**.
+4. Sélectionner **les paramètres de configuration des propriétés**  \> : Modifier \> **Microsoft Defender Antivirus**.
 
 5. Dans le commutateur **de protection fournie par le cloud** , **sélectionnez Activer**.
 
@@ -93,7 +95,7 @@ Pour plus d’informations sur la configuration de Microsoft Endpoint Configurat
 
 3. Sélectionnez **Modèles d’administration**.
 
-4. Développer l’arborescence vers **les composants** >  Windows **Antivirus Microsoft Defender > MAPS**
+4. Développez l’arborescence sur **les composants** >  Windows **Microsoft Defender Antivirus > MAPS**
 
     > [!NOTE]
     > Les paramètres MAPS sont égaux à la protection fournie par le cloud.
@@ -126,7 +128,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec l’antivirus Microsoft Defender, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [applets de commande antivirus Microsoft Defender](/powershell/module/defender/). [Fournisseur CSP de stratégie - Defender](/windows/client-management/mdm/policy-csp-defender) contient également plus d’informations spécifiquement sur [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter Microsoft Defender antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Microsoft Defender applets](/powershell/module/defender/) de commande Antivirus. [Fournisseur CSP de stratégie - Defender](/windows/client-management/mdm/policy-csp-defender) contient également plus d’informations spécifiquement sur [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
 > [!IMPORTANT]
 > Vous pouvez définir **-SubmitSamplesConsent** `SendSafeSamples` sur (paramètre par défaut, recommandé) `NeverSend`ou `AlwaysPrompt`. Le `SendSafeSamples` paramètre signifie que la plupart des exemples seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles se traduisent par une invite de continuer et nécessiteront une confirmation.
@@ -171,7 +173,7 @@ Pour plus d’informations sur les paramètres autorisés, consultez [Windows De
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser la protection cloud Microsoft dans l’antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+- [Utiliser la protection cloud Microsoft dans Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 
 - [Comment créer et déployer des stratégies anti-programme malveillant : service de protection cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 

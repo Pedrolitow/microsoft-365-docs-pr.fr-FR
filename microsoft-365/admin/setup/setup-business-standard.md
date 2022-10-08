@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -29,12 +30,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
-ms.openlocfilehash: 93d97a75aea1bf1a59284ea3c6e4e52997ab1e90
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 1d489e9b39baa2bfddf9f6084a6c047c8d04c957
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663757"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203132"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurer Microsoft 365 Business Standard avec un domaine nouveau ou existant
 
@@ -69,7 +70,7 @@ Pour ajouter, modifier ou supprimer des domaines, vous devez être administrateu
 3. Dans l’étape **ajouter un domaine**, entrez le nom de domaine que vous voulez utiliser (par exemple, contoso.com).
 
     > [!IMPORTANT]
-    > Si vous avez acheté un domaine pendant l'inscription, vous ne verrez pas l'étape **Ajouter un domaine** ici. Allez à [Ajouter](#add-users-and-assign-licenses) des utilisateurs à la place.
+    > Si vous avez acheté un domaine pendant l’inscription, vous ne verrez pas l’étape **Ajouter un domaine** ici. Accédez à [Ajouter des utilisateurs](#add-users-and-assign-licenses) à la place.
 
 4. Suivez les étapes pour créer des enregistrements DNS chez un fournisseur d’hébergement [DNS Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes propriétaire du domaine. Si vous connaissez votre hôte de domaine, voir aussi [Ajouter un domaine à Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
@@ -83,9 +84,9 @@ Vous pouvez ajouter des utilisateurs maintenant, mais vous pouvez également ajo
 
 Les utilisateurs que vous ajoutez à l’Assistant reçoivent automatiquement une licence Microsoft 365 Business Standard.
 
-1. Si votre abonnement Microsoft 365 Business Standard est associé à des utilisateurs existants, vous avez la possibilité de leur attribuer des licences à ce stade. Poursuivez et ajoutez leur des licences aussi.
+1. If your Microsoft 365 Business Standard subscription has existing users you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 
-2. Après avoir ajouté des utilisateurs, vous avez également la possibilité de partager des informations d'identification avec les nouveaux utilisateurs que vous avez ajouté. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou les télécharger.
+2. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
 ## <a name="connect-your-domain"></a>Sélectionner votre domaine
   
@@ -94,7 +95,7 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
 1. L’Assistant Configuration détecte généralement votre bureau d’enregistrement et vous fournit un lien vers des instructions détaillées vous permettant de mettre à jour vos enregistrements NS sur le site web du bureau d’enregistrement. Si ce n’est pas le cas,[Modifier les serveurs de noms de manière à configurer Office 365 avec n'importe quel bureau d'enregistrement de domaines](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
     - Si vous avez des enregistrements DNS existants (par exemple, un site web existant), mais que votre hôte DNS est activé pour [connexion de domaine](/office365/admin/get-help-with-domains/domain-connect), sélectionnez **Ajouter des enregistrements pour moi**. Sur la page **sélectionnez votre services en ligne**, acceptez toutes les valeurs par défaut, puis sélectionnez **Suivant**, puis sélectionnez **Autoriser** sur la page de votre hôte DNS.
-    - Si vous avez des enregistrements DNS existants avec d'autres hôtes DNS (non activés pour la connexion de domaine), vous devrez gérer vos propres enregistrements DNS pour vous assurer que les services existants restent connectés. [Voir les bases du domaine pour plus d'informations](/office365/admin/get-help-with-domains/dns-basics).
+    - If you have existing DNS records with other DNS hosts (not enabled for domain connect), you'll want to manage your own DNS records to make sure the existing services stay connected. See [domain basics](/office365/admin/get-help-with-domains/dns-basics) for more info.
 
 2. Suivez les étapes de l’Assistant, et la messagerie électronique et d’autres services sont configurés pour vous.
 
@@ -160,7 +161,7 @@ Vous pouvez également utiliser le <a href="https://go.microsoft.com/fwlink/p/?l
 
 ## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>Configurer Microsoft Teams et OneDrive pour les entreprises
 
-Sélectionnez l'icône du cloud OneDrive dans votre barre des tâches et suivez les étapes pour déplacer vos fichiers vers votre nouveau dossier OneDrive Entreprise. Sélectionnez **Suivant** pour configurer Microsoft Teams.
+Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
 
 1. Ouvrez Microsoft Teams, sélectionnez votre icône de profil, puis **ajoutez un compte scolaire ou scolaire.** Suivez les étapes pour ajouter votre nouveau compte à Teams.
 

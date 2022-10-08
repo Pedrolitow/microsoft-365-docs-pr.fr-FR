@@ -8,19 +8,20 @@ manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 46611f5321c893466448b39a9990501d9b3fafc2
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 9bd6dce1b0f8aa7f6c2920ef5199232605f0688c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385460"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194772"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé de Microsoft 365 pour la sécurité d’entreprise pour Contoso Corporation
 
@@ -73,7 +74,7 @@ Pour suivre les bonnes pratiques de sécurité et les exigences de déploiement 
 
 - Accès plus sûr aux périphériques et aux applications grâce à des stratégies d’accès conditionnel
 
-  Contoso utilise les [stratégies d’accès conditionnel](../security/office-365-security/microsoft-365-policies-configurations.md) pour l’identité, les périphériques, Exchange Online et SharePoint. Les stratégies d’accès conditionnel pour l’identité obligent les utilisateurs à haut risque à modifier leurs mots de passe et empêchent les clients d’utiliser des applications qui ne prennent pas en charge l’authentification moderne. Les stratégies pour les périphériques incluent la définition des applications approuvées et nécessitent des PC et des appareils mobiles compatibles. Les stratégies d’accès conditionnel pour Exchange Online permettent de bloquer les clients ActiveSync et de configurer le chiffrement de messages Office 365. Les stratégies d’accès conditionnel pour SharePoint incluent une protection supplémentaire pour les sites sensibles et hautement réglementés.
+  Contoso is using [Conditional Access policies](../security/office-365-security/microsoft-365-policies-configurations.md) for identity, devices, Exchange Online, and SharePoint. Identity Conditional Access policies include requiring password changes for high-risk users and blocking clients from using apps that don't support modern authentication. Device policies include the definition of approved apps and requiring compliant PCs and mobile devices. Exchange Online Conditional Access policies include blocking ActiveSync clients and setting up Office 365 message encryption. SharePoint Conditional Access policies include additional protection for sensitive and highly regulated sites.
 
 - Windows Hello Entreprise
 
@@ -85,9 +86,9 @@ Pour suivre les bonnes pratiques de sécurité et les exigences de déploiement 
 
 ## <a name="threat-protection"></a>Protection contre les menaces
 
-- Protection contre les programmes malveillants avec l’antivirus Microsoft Defender
+- Protection contre les programmes malveillants avec Microsoft Defender Antivirus
 
-  Contoso utilise [l’Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) pour la protection contre les programmes malveillants et la gestion anti-programme malveillant pour les PC et les appareils exécutant Windows 10 Entreprise.
+  Contoso utilise [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) pour la protection contre les programmes malveillants et la gestion anti-programme malveillant pour les PC et les appareils exécutant Windows 10 Entreprise.
 
 - Sécuriser le flux de courrier et la journalisation de l’audit de boîte aux lettres avec Microsoft Defender pour Office 365 
 
@@ -101,7 +102,7 @@ Pour suivre les bonnes pratiques de sécurité et les exigences de déploiement 
 
 - Protection contre les attaques sophistiquées avec Advanced Threat Analytics
 
-  Contoso utilise [Advanced Threat Analytics (ATA)](/advanced-threat-analytics/what-is-ata) pour se protéger contre des attaques ciblées avancées. ATA analyse, apprend et identifie automatiquement le comportement normal et inhabituel des entités (utilisateur, périphériques et ressources).
+  Contoso is using [Advanced Threat Analytics (ATA)](/advanced-threat-analytics/what-is-ata) to protect itself from advanced targeted attacks.  ATA automatically analyzes, learns, and identifies normal and abnormal entity (user, devices, and resources) behavior.
 
 ## <a name="information-protection"></a>Protection des informations
 
@@ -121,15 +122,15 @@ Pour suivre les bonnes pratiques de sécurité et les exigences de déploiement 
 
   Contoso utilise [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) pour mapper son environnement cloud, surveiller son utilisation et détecter les événements et incidents de sécurité. *Microsoft Defender for Cloud Apps n’est disponible qu’avec Microsoft 365 E5.*
 
-- Gestion des périphériques avec Microsoft Intune
+- Gestion des appareils avec Microsoft Intune
 
-  Contoso utilise [Microsoft Intune](/intune/introduction-intune) pour inscrire, gérer et configurer l’accès aux appareils mobiles et aux applications qui s’exécutent sur ces derniers. Les stratégies d’accès conditionnel basé sur l’appareil nécessitent également des applications approuvées et des PC et des appareils mobiles compatibles.
+  Contoso uses [Microsoft Intune](/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
 
 ## <a name="security-management"></a>Gestion de la sécurité
 
 - Tableau de bord de sécurité central pour l’informatique avec Microsoft Defender pour le cloud
 
-  Contoso utilise [Microsoft Defender pour cloud pour](https://azure.microsoft.com/services/security-center/) présenter une vue unifiée de la sécurité et de la protection contre les menaces, pour gérer les stratégies de sécurité dans ses charges de travail et pour répondre aux cyberattaques.
+  Contoso utilise la [Microsoft Defender pour le cloud pour](https://azure.microsoft.com/services/security-center/) présenter une vue unifiée de la sécurité et de la protection contre les menaces, pour gérer les stratégies de sécurité dans ses charges de travail et pour répondre aux cyberattaques.
 
 - Tableau de bord central de sécurité pour les utilisateurs utilisant le Centre de sécurité Windows Defender
 

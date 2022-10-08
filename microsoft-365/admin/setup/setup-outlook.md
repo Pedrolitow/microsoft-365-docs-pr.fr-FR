@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer Outlook pour votre messagerie Microsoft 365.
-ms.openlocfilehash: 1b2b92df49ef7077f95a0a3fdce15cd479073c5c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 290e0d31560cf28a75cc34bcbedc2eca14d4bdc2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661641"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203110"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Configurer Outlook pour Microsoft 365 pour les e-mails professionnels 
 

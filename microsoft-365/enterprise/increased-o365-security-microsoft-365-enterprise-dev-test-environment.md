@@ -1,5 +1,5 @@
 ---
-title: Sécurité Microsoft 365 accrue pour votre Microsoft 365 pour l’environnement de test d’entreprise
+title: Sécurité accrue de Microsoft 365 pour votre environnement de test Microsoft 365 pour entreprise
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,46 +8,48 @@ manager: scotv
 ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- scotvorg
+- M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
 - admindeeplinkSPO
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilisez ce guide de laboratoire de test pour activer d’autres paramètres de sécurité Microsoft 365 votre Microsoft 365 pour l’environnement de test d’entreprise.
-ms.openlocfilehash: 4c69fadd3fb3e6744fad850e76282ea2339f48ee
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Utilisez ce guide de laboratoire de test pour activer des paramètres de sécurité Microsoft 365 supplémentaires pour votre environnement de test Microsoft 365 pour entreprise.
+ms.openlocfilehash: 83bef240651f86c1a5e357fa2883a730e7da0969
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100718"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208873"
 ---
-# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Sécurité Microsoft 365 accrue pour votre Microsoft 365 pour l’environnement de test d’entreprise
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Sécurité accrue de Microsoft 365 pour votre environnement de test Microsoft 365 pour entreprise
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Avec les instructions de cet article, vous configurez des paramètres de Microsoft 365 supplémentaires pour renforcer la sécurité dans votre Microsoft 365 pour l’environnement de test d’entreprise.
+Avec les instructions de cet article, vous configurez des paramètres Microsoft 365 supplémentaires pour renforcer la sécurité dans votre environnement de test Microsoft 365 pour entreprise.
 
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Cliquez [ici](../downloads/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan visuel de tous les articles de l’ensemble des guides de laboratoire de test de Microsoft 365 pour entreprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre Microsoft 365 pour l’environnement de test d’entreprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre environnement de test Microsoft 365 pour entreprise
 
-Si vous souhaitez simplement configurer une sécurité accrue Microsoft 365 de manière légère avec les exigences minimales, suivez les instructions de [la configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
+Si vous souhaitez simplement configurer une sécurité Accrue de Microsoft 365 de manière légère avec les exigences minimales, suivez les instructions de [la configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si vous souhaitez configurer une sécurité accrue Microsoft 365 dans une entreprise simulée, suivez les instructions de [l’authentification directe](pass-through-auth-m365-ent-test-environment.md).
+Si vous souhaitez configurer une sécurité Microsoft 365 accrue dans une entreprise simulée, suivez les instructions de [l’authentification directe](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Les tests accrus Microsoft 365 sécurité ne nécessitent pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt services de domaine Active Directory (AD DS). Il est fourni ici en tant qu’option afin que vous puissiez tester la licence automatisée et l’appartenance à un groupe et l’expérimenter dans un environnement qui représente une organisation classique. 
+> Le test d’une sécurité Microsoft 365 accrue ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt services de domaine Active Directory (AD DS). Il est fourni ici en tant qu’option afin que vous puissiez tester la licence automatisée et l’appartenance à un groupe et l’expérimenter dans un environnement qui représente une organisation classique. 
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>Phase 2 : Configurer une sécurité Microsoft 365 accrue
 
-Dans cette phase, vous activez une sécurité Microsoft 365 accrue pour votre Microsoft 365 pour l’environnement de test d’entreprise. Pour plus d’informations et de paramètres, consultez [Configurer votre locataire pour renforcer la sécurité](/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+Au cours de cette phase, vous activez une sécurité Microsoft 365 accrue pour votre environnement de test Microsoft 365 pour entreprise. Pour plus d’informations et de paramètres, consultez [Configurer votre locataire pour renforcer la sécurité](/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurer SharePoint Online pour bloquer les applications qui ne prennent pas en charge l’authentification moderne
 
@@ -55,12 +57,12 @@ Les applications qui ne prennent pas en charge l’authentification moderne ne p
 
 1. Accédez à la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> et connectez-vous à votre abonnement de laboratoire de test Microsoft 365 avec votre compte d’administrateur général.
     
-  - Si vous utilisez l’environnement de test léger Microsoft 365, connectez-vous à partir de votre ordinateur local.
+  - Si vous utilisez l’environnement de test Léger Microsoft 365, connectez-vous à partir de votre ordinateur local.
     
-  - Si vous utilisez l’environnement de test Microsoft 365 entreprise simulé, utilisez le [Portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de CLIENT1.
+  - Si vous utilisez l’environnement de test Microsoft 365 d’entreprise simulé, utilisez le [Portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de CLIENT1.
  
-2. Sous le nouvel onglet **Centre d'administration Microsoft 365**, sous **Centres d’administration** dans le volet de navigation gauche, cliquez sur **SharePoint**.
-3. Sous le nouvel onglet **SharePoint centre d’administration**, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**le contrôle PoliciesAccess**</a> > .
+2. Sous le nouvel onglet **Centre d'administration Microsoft 365**, sous **Administration centres** dans le volet de navigation gauche, cliquez sur **SharePoint**.
+3. Sous le nouvel onglet **centre d’administration SharePoint**, sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Contrôle d’accès aux**</a> >  stratégies.
 4. Sélectionnez **Applications qui ne prennent pas en charge l’authentification moderne**, **sélectionnez Bloquer l’accès**, puis **Enregistrez**.
 
 
@@ -70,9 +72,9 @@ Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams protège v
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre de sécurité & conformité</a> et connectez-vous avec votre compte d’administrateur général.
 
-2. Dans le volet de navigation gauche, sous **Gestion des menaces**, cliquez sur **Stratégie**, puis sur **Coffre Pièces jointes**. 
+2. Dans le volet de navigation gauche, sous **Gestion des menaces**, cliquez sur **Stratégie**, puis sur **Pièces jointes sécurisées**. 
 
-3. Sous **Protéger les fichiers dans SharePoint, OneDrive et Microsoft Teams**. Sélectionnez **Activer ATP pour SharePoint, OneDrive et Microsoft Teams**.
+3. Sous **Protéger les fichiers dans SharePoint, OneDrive et Microsoft Teams**. sélectionnez **Activer ATP pour SharePoint, OneDrive et Microsoft Teams**.
 
 4. Cliquez sur **Enregistrer**.
 
@@ -88,7 +90,7 @@ Pour vous assurer que le traitement anti-programme malveillant est effectué sur
 1. Cliquez sur le bouton Précédent de votre navigateur pour revenir à la page **Stratégie** .
 2. Cliquez sur **Anti-programme malveillant**.
 3. Double-cliquez sur la stratégie nommée **Par défaut**.
-4. Dans la fenêtre **de stratégie anti-programme malveillant**, cliquez sur **Paramètres**.
+4. Dans la fenêtre **stratégie anti-programme malveillant** , cliquez sur **Paramètres**.
 4. Sous **filtre Types de pièces jointes courants**, sélectionnez **Activé**, puis cliquez sur **Enregistrer**.
 
 
@@ -117,7 +119,7 @@ Microsoft Secure Score affiche votre posture de sécurité sous la forme d’un 
 
 Pour plus d’informations, consultez [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Explorez d’autres fonctionnalités et fonctionnalités de [protection des informations](m365-enterprise-test-lab-guides.md#information-protection) dans votre environnement de test.
 

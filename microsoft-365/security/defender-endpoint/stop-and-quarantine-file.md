@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 4e301b2b73b2a30b40ca281e2e383cadedbe19ff
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f1d24fd86502fdf363a1efe30ec17accce1922ff
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704015"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224137"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API arrêter et mettre en quarantaine un fichier
 
@@ -52,7 +54,7 @@ Arrêtez l’exécution d’un fichier sur un appareil et supprimez-le.
 >
 > - L’appareil sur lequel vous effectuez l’action est en cours d’exécution Windows 10, version 1703 ou ultérieure, ou Windows 11
 > - Le fichier n’appartient pas à des éditeurs tiers approuvés ou n’est pas signé par Microsoft
-> - L’Antivirus Microsoft Defender doit au moins s’exécuter en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Antivirus doit au moins s’exécuter en mode passif. Pour plus d’informations, consultez [Microsoft Defender compatibilité](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility) antivirus.
 
 
 ## <a name="permissions"></a>Autorisations
@@ -71,6 +73,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.StopAndQuarantine|'Arrêt
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Actions de correction actives » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 ## <a name="http-request"></a>Requête HTTP
 

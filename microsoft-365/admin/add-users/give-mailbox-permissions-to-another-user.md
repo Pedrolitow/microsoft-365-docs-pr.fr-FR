@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,28 +18,33 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: Donner à un utilisateur le droit d'accéder à la boîte aux lettres d'un autre utilisateur, ce qui permet à l'utilisateur de lire et d'envoyer des courriels à partir de la boîte aux lettres de l'autre utilisateur.
-ms.openlocfilehash: fe40e8d79f2ff677989f0dc3f8aacbebea1a41fa
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
-ms.translationtype: HT
+description: Accorder à un utilisateur de Microsoft 365 le droit d'accéder à la boîte aux lettres d'un autre utilisateur, ce qui permet à l'utilisateur de lire et d'envoyer des e-mails à partir de la boîte aux lettres de l'autre utilisateur.
+ms.openlocfilehash: 6370e147ad63b7400627ea222f98f94bdd2638c8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165521"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203418"
 ---
-# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
+# <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur Microsoft 365 – Aide de l’administrateur
 
-En tant qu'administrateur, certaines exigences de votre entreprise vous poussent à autoriser certains utilisateurs à accéder la boîte aux lettres d'un autre utilisateur. Par exemple, vous souhaitez peut-être autoriser un assistant à envoyer ou à lire du courrier dans la boîte aux lettres de son responsable ou donner la possibilité à un de vos utilisateurs d'envoyer du courrier de la part d'un autre utilisateur. Cette rubrique vous explique comment procéder pour y parvenir.
+As the admin, you may have company requirements to allow some users access to another user's mailbox. For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user. This topic shows you how to accomplish this.
   
 Si vous cherchez des informations concernant la création et la gestion de boîtes aux lettres partagées, consultez l’article [Créer une boîte aux lettres partagée](../email/create-a-shared-mailbox.md).
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>Vous cherchez à configurer des autorisations de boîte aux lettres ?
 
-Les autorisations de boîte aux lettres vous permettent d’accorder un accès en lecture/écriture à une boîte aux lettres à un utilisateur autre que son propriétaire. L’article qui suit vous fournira les informations dont vous avez besoin pour configurer et utiliser cette fonctionnalité :
+Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:
   
  **Configuration des autorisations :**
   
@@ -79,20 +85,6 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
  
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
-
-2. Sélectionnez l’utilisateur souhaité, développez les **Paramètres de courrier**, puis sélectionnez **Modifier** à côté des **Autorisations de boîte aux lettres**.
-
-3. À côté de **Envoyer en tant que**, sélectionnez **Modifier**. 
-
-4. Sélectionnez **Ajouter des autorisations**, puis choisissez le nom de la personne à laquelle vous voulez que cet utilisateur puisse Envoyer en tant que. 
-    
-5. Sélectionnez **Ajouter**.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
@@ -125,21 +117,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 
 > [!NOTE]
-> Les autorisations **Lecture** et **Gestion** sont appelées autorisations **Accès complet** lorsqu’elles sont accordées dans le centre d’administration Exchange. L’autorisation Accès complet n’octroie pas les autorisations **Envoyer en tant que** ou **Envoyer de la part de**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
-  
-2. Sélectionnez l’utilisateur souhaité, développez les **Paramètres de courrier**, puis sélectionnez **Modifier** à côté des **Autorisations de boîte aux lettres**.
-    
-3. À côté de **Lire et gérer**, sélectionnez **Modifier**. 
-    
-4. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à lire du courrier à partir de cette boîte aux lettres.
-
-5. Sélectionnez **Ajouter**.
+> Les autorisations **Lecture** et **Gestion** sont appelées autorisations **Accès complet** lorsqu’elles sont accordées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Cette autorisation permet à la boîte aux lettres de l’utilisateur affecté de lire et de gérer les e-mails dans la boîte aux lettres utilisateur bénéficiant de l’autorisation. L’autorisation Accès total n’accorde pas les autorisations **Envoyer en tant que** ou **Envoyer de la part de**.
 
 ::: moniker-end
 
@@ -176,20 +154,6 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
-
-2. Sélectionnez l’utilisateur souhaité, développez les **Paramètres de courrier**, puis sélectionnez **Modifier** à côté des **Autorisations de boîte aux lettres**.
-
-3. À côté de **Envoyer de la part de**, sélectionnez **Modifier**.
-    
-4. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à envoyer du courrier pour le compte de cette boîte aux lettres.
-
-5. Sélectionnez **Ajouter**.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
@@ -204,6 +168,8 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 ::: moniker-end
 
+> [!NOTE]
+> Les autorisations **Envoyer en tant que** et **Envoyer de la part de** ne fonctionnent pas dans le client de bureau Outlook avec le paramètre *HiddenFromAddressListsEnabled* sur la boîte aux lettres définie sur **True**, car elles nécessitent que la boîte aux lettres soit visible dans Outlook via la liste d’adresses globale.
 
 ## <a name="related-content"></a>Contenu associé
   

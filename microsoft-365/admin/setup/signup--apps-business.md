@@ -7,21 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: Inscrivez-vous à Applications Microsoft 365 pour les PME.
-ms.openlocfilehash: b9b0e3c0725137218c8fb82e94acfdbccb9b32ab
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 5e5f98970e82d40f8eeb81adf12e16eb68108cc7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660264"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202934"
 ---
 # <a name="sign-up-for-a-microsoft-365-apps-for-business-subscription"></a>S’inscrire à un abonnement Applications Microsoft 365 pour les PME
 
@@ -116,7 +117,7 @@ Les conditions d’utilisation simplifiées Sign-Up ont été récemment mises �
 
 Si vous choisissez de ne pas accepter les conditions générales, votre abonnement ne se renouvelle pas automatiquement et, à la fin de votre contrat d’abonnement actuel, vous perdez l’accès aux applications Office. Vos données OneDrive seront conservées pendant 90 jours pour vous permettre de les copier, puis elles seront supprimées.
 
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>Y a-t-il un avantage à payer mensuellement ou annuellement ?
 

@@ -15,16 +15,17 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: ec8a5c030e56e9faae5d94dc636bea4c9c2351a7
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: b1eaf92219ba5641cd676e69558189a9cb377f51
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850397"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68174993"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -60,7 +61,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 
 Pour utiliser l’ensemble des fonctionnalités de règles de réduction de la surface d’attaque, vous devez :
 
-- Antivirus Microsoft Defender en tant qu’av principal (protection en temps réel activée)
+- Microsoft Defender Antivirus en tant qu’antivirus principal (protection en temps réel activée)
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) activé (certaines règles le requièrent)
 - licence Windows 10 Entreprise E5 ou E3
 
@@ -108,9 +109,9 @@ Les règles ASR prennent en charge les variables d’environnement et les caract
 
 2. Les règles de réduction de la surface d’attaque pour les appareils gérés par MEM prennent désormais en charge le comportement de fusion des paramètres de différentes stratégies, afin de créer un sur-ensemble de stratégies pour chaque appareil. Seuls les paramètres qui ne sont pas en conflit sont fusionnés, tandis que ceux qui sont en conflit ne sont pas ajoutés au sur-ensemble de règles. Auparavant, si deux stratégies incluaient des conflits pour un seul paramètre, les deux stratégies étaient signalées comme étant en conflit et aucun paramètre de l’un ou l’autre profil n’était déployé. Le comportement de fusion des règles de réduction de la surface d’attaque est le suivant :
    - Les règles de réduction de la surface d’attaque des profils suivants sont évaluées pour chaque appareil auquel les règles s’appliquent :
-     - Les appareils > stratégie de configuration > profil Endpoint Protection >[la réduction de la surface d’attaque](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) **de Microsoft Defender Exploit Guard** > .
+     - Les appareils > stratégie de configuration > profil Endpoint Protection > Microsoft Defender [la réduction de la surface d’attaque](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) **Exploit Guard** > .
      - Sécurité des points de terminaison > stratégie **de réduction de** >  la surface d’attaque [Règles de réduction de la surface d’attaque](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
-     - La sécurité des points de terminaison > les bases de référence de sécurité >[les règles de réduction de la surface d’attaque](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **de base** >  microsoft Defender ATP.
+     - Les bases de référence de sécurité > de sécurité des points de terminaison > Microsoft Defender [règles de réduction de la surface d’attaque](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **de base** >  ATP.
    - Les paramètres qui n’ont pas de conflits sont ajoutés à un sur-ensemble de stratégies pour l’appareil.
    - Lorsque deux stratégies ou plus ont des paramètres en conflit, les paramètres en conflit ne sont pas ajoutés à la stratégie combinée, tandis que les paramètres qui ne sont pas en conflit sont ajoutés à la stratégie de sur-ensemble qui s’applique à un appareil.
    - Seules les configurations pour les paramètres en conflit sont conservées.
@@ -294,7 +295,7 @@ Exemple :
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence sur **les composants** \> Windows de **l’antivirus** \> **Microsoft Defender Microsoft Defender Exploit Guard** \> **Pour réduire la surface d’attaque**.
+3. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender antivirus** \> Microsoft Defender **la réduction de la surface d’attaque** **Exploit Guard**\>.
 
 4. Sélectionnez **Configurer les règles de réduction de la surface d’attaque** , puis **Sélectionnez Activé**. Vous pouvez ensuite définir l’état individuel de chaque règle dans la section Options. Sélectionnez **Afficher...** et entrez l’ID de règle dans la colonne Nom de la **valeur** et l’état choisi dans la colonne **Valeur** comme suit :
 

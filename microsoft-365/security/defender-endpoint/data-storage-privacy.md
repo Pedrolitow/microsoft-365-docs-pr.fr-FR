@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d736a87b1596beff1c252c05d0b90526289ce230
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 07b3ebb00001570bdfbde705c6eca5a84a660172
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699057"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195366"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender pour point de terminaison le stockage et la confidentialité des données
 
@@ -36,7 +38,7 @@ ms.locfileid: "67699057"
 Cette section aborde certaines des questions les plus fréquemment posées sur la confidentialité et la gestion des données pour Defender pour point de terminaison.
 
 > [!NOTE]
-> Ce document explique les détails sur le stockage des données et la confidentialité liés à Defender pour point de terminaison. Pour plus d’informations sur Defender pour point de terminaison et d’autres produits et services tels que l’antivirus Microsoft Defender et Windows, consultez la [déclaration de confidentialité de Microsoft](https://go.microsoft.com/fwlink/?linkid=827576). Pour plus d’informations, consultez également [la FAQ sur la confidentialité de Windows](https://go.microsoft.com/fwlink/?linkid=827577) .
+> Ce document explique les détails sur le stockage des données et la confidentialité liés à Defender pour point de terminaison. Pour plus d’informations sur Defender pour point de terminaison et d’autres produits et services tels que Microsoft Defender Antivirus et Windows, consultez [la Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?linkid=827576). Pour plus d’informations, consultez également [la FAQ sur la confidentialité de Windows](https://go.microsoft.com/fwlink/?linkid=827577) .
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Quelles sont les données collectées par Microsoft Defender pour point de terminaison ?
 

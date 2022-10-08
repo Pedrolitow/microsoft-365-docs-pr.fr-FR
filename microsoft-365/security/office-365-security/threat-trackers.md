@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Découvrez les suivis des menaces, y compris les nouveaux suivis dignes de mention, pour aider votre organisation à se tenir au courant des problèmes de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f57482d4e58194be1549005bf52c929821c4c64e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 300a0f0df7614714040b4274f945fdb0f00330de
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597214"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68085912"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivis des menaces - Nouveaux et remarquables
 

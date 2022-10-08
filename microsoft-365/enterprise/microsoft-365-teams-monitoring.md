@@ -5,23 +5,24 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: mediumn
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Utilisez la supervision Teams pour obtenir des informations sur les incidents ou les avis liés à Microsoft 365 Teams.
-ms.openlocfilehash: 646ecccea4f45fb51efe93073d452045448d1d5b
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: b77f84f21398b0186518c8749680c7b7e3932a98
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "66991649"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208741"
 ---
 # <a name="microsoft-365-teams-monitoring"></a>Surveillance Microsoft 365 Teams
 

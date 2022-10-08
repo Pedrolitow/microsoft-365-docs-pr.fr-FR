@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,23 +27,23 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 444be08a2083bf184d61ee206dfaa8ab53657b0b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
-ms.translationtype: HT
+ms.openlocfilehash: 80ff53bc6c98760fe59001574f3e334f7d6dd738
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864559"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198072"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
 > [!NOTE]
-> Si votre organisation utilise un environnement hybride Exchange, vous devez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a> local pour créer et gérer des boîtes aux lettres partagées. Voir [Création de boîtes aux lettres partagées dans le Centre d’administration Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+> If your organization uses a hybrid Exchange environment, you should use the on-premises <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
 > Si vous n'êtes pas sûr de devoir créer une boîte aux lettres partagée ou un groupe Microsoft 365 pour Outlook, voir [Comparer les groupes](../create-groups/compare-groups.md) pour plus de conseils. Sachez qu’il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Si vous le souhaitez, dites-le nous en [votant ici](https://go.microsoft.com/fwlink/?linkid=871518).
 
-Vous pouvez facilement créer des boîtes aux lettres partagées de sorte qu’un groupe de personnes puisse surveiller et envoyer facilement du courrier électronique à partir d’une adresse de courrier commune, comme info@contoso.com. Quand une personne du groupe répond à un courrier envoyé à la boîte aux lettres partagée, la réponse semble provenir de la boîte aux lettres partagée et non de la personne.
+It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
 
-Les boîtes aux lettres partagées incluent un calendrier partagé. Beaucoup de petites entreprises utilisent le calendrier partagé pour permettre à leurs employés d'y entrer leurs rendez-vous. Par exemple, si vous avez trois commerciaux qui effectuent des visites chez les clients, ces trois personnes peuvent utiliser le calendrier partagé pour saisir leurs rendez-vous. Tout le monde sait ainsi où elles se trouvent.
+Shared mailboxes include a shared calendar. A lot of small businesses like to use the shared calendar as a place for everyone to enter their appointments. For example, if you have 3 people who do customer visits, all can use the shared calendar to enter the appointments. This is an easy way to keep everyone informed where people are.
 
 Avant de créer une boîte aux lettres partagée, assurez-vous de lire la section [À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) pour plus d'informations.
 
@@ -51,7 +52,7 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Créer une boîte aux lettres partagée et ajouter des membres
   
-1. Connectez-vous avec un compte d’administrateur général ou un compte d’administrateur Exchange. Si vous recevez le message « **Vous n’êtes pas autorisé à accéder à cette page ou effectuer cette action** », vous n’êtes donc pas un administrateur. 
+1. Sign in with a global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin. 
 
 ::: moniker range="o365-worldwide"
 
@@ -69,13 +70,13 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
     
     ![Donnez un nom à votre boîte aux lettres partagée.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Sélectionnez **Enregistrer les modifications**. Quelques minutes peuvent être nécessaires avant que vous ne puissiez ajouter des membres.
+4. Select **Save changes**. It may take a few minutes before you can add members.
 
-5. Sous **Étapes suivantes**, sélectionnez **Ajouter des membres à cette boîte aux lettres**. Les membres représentent les personnes qui sont en mesure de consulter les courriers entrants dans cette boîte aux lettres partagée, ainsi que les réponses sortantes.
+5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
    ![Sélectionnez Ajouter des membres.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Sélectionnez le bouton **+Ajouter des membres**. Cochez la case à côté des personnes que vous souhaitez autoriser à utiliser cette boîte aux lettres partagée, puis sélectionnez **Enregistrer**.
+6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and then select **Save**.
 
    ![Associer des membres à la boîte aux lettres partagée](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
@@ -87,11 +88,11 @@ Vous bénéficiez à présent d’une boîte aux lettres partagée dotée d’un
 
 Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres partagée :
 
-- **Accès total** : L’autorisation Accès total permet à un utilisateur d’ouvrir la boîte aux lettres partagée et d’agir comme le propriétaire de cette boîte aux lettres. Une fois qu’il a accédé à la boîte aux lettres partagée, l’utilisateur peut créer des éléments de calendrier, lire, afficher, supprimer et modifier des courriers électroniques et de créer des tâches et contacts de calendrier. Toutefois, un utilisateur doté d’une autorisation Accès total ne peut pas envoyer de messages à partir de la boîte aux lettres partagée à moins de disposer de l’autorisation Envoyer en tant que ou Envoyer de la part de.
+- **Full Access**: The Full Access permission lets a user open the shared mailbox and act as the owner of that mailbox. After accessing the shared mailbox, a user can create calendar items, read, view, delete, and change email messages, and create tasks and calendar contacts. However, a user with Full Access permission can't send email from the shared mailbox unless they also have Send As or Send on Behalf permission.
 
-- **Envoyer en tant que** : l’autorisation Envoyer en tant que permet à un utilisateur d’emprunter l’identité du propriétaire de la boîte aux lettres partagée pour envoyer des messages. Par exemple, si Katerina se connecte à la boîte aux lettres partagée du service Marketing et envoie un message, le service Marketing semblera en être l’expéditeur.
+- **Send As**: The Send As permission lets a user impersonate the shared mailbox when sending mail. For example, if Katerina logs into the shared mailbox Marketing Department and sends an email, it will look like the Marketing Department sent the email.
 
-- **Envoyer de la part de** : l'autorisation Envoyer de la part de permet à l'utilisateur d'envoyer des messages de la part de la boîte aux lettres partagée. Par exemple, si Jacques se connecte à la boîte aux lettres partagée Réception Immeuble 32 et envoie un message, ce dernier semblera avoir été envoyé par « Jacques de la part de Réception Immeuble 32 ». Vous ne pouvez pas utiliser le Centre d’administration Exchange pour accorder des autorisations Envoyer de la part de ; vous devez utiliser la cmdlet **Set-Mailbox** avec le paramètre _GrantSendonBehalf_.
+- **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it will look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use the **Set-Mailbox** cmdlet with the _GrantSendonBehalf_ parameter.
 
 > [!NOTE]
 > Les autorisations **Envoyer en tant que** et **Envoyer de la part de** ne fonctionnent pas dans le client de bureau Outlook avec le paramètre *HiddenFromAddressListsEnabled* sur la boîte aux lettres définie sur **True**, car elles nécessitent que la boîte aux lettres soit visible dans Outlook via la liste d’adresses globale.
@@ -102,10 +103,10 @@ Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres par
 
 2. Sous **Autorisations de boîte aux lettres**, sélectionnez **Gérer la délégation de boîte aux lettres**.
 
-3. Pour accorder ou supprimer les autorisations Accès total et Envoyer en tant que, sélectionnez **Ajouter** ![Ajouter une icône](../../media/ITPro-EAC-AddIcon.png) ou sur **Supprimer** ![Supprimer une icône](../../media/ITPro-EAC-RemoveIcon.gif), puis sélectionnez les utilisateurs auxquels vous souhaitez accorder ou retirer les autorisations.
+3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
 
    > [!NOTE]
-   > L'autorisation Accès total permet aux utilisateurs d'ouvrir la boîte aux lettres, d'y créer des éléments et de les modifier. L'autorisation Envoyer en tant que permet à toute personne autre que le propriétaire de la boîte aux lettres d'envoyer des courriers électroniques à partir de cette boîte aux lettres partagée. Les deux autorisations sont requises pour que la boîte aux lettres partagée fonctionne.
+   > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
 
 4. Sélectionnez **Enregistrer** pour enregistrer vos modifications.
 
@@ -172,7 +173,7 @@ Vous pouvez accéder à une boîte aux lettres partagée sur un appareil mobile 
 
 ## <a name="use-the-shared-calendar"></a>Utiliser le calendrier partagé
 
-La création de votre boîte aux lettres partagée entraîne automatiquement la création d’un calendrier partagé. Nous vous recommandons d’utiliser ce calendrier plutôt qu’un calendrier SharePoint pour effectuer le suivi de vos rendez-vous et de la localisation de vos contacts. Un calendrier partagé est intégré avec Outlook et est beaucoup plus facile à utiliser que celui de SharePoint.
+When you created the shared mailbox, you automatically created a shared calendar. We like the shared mailbox calendar rather than a SharePoint calendar for keeping track of appointments and where people are. A shared calendar is integrated with Outlook and it's much easier to use than a SharePoint calendar.
 
 1. Dans l'application Outlook, accédez à l'affichage Calendrier, puis sélectionnez la boîte aux lettres partagée.
 

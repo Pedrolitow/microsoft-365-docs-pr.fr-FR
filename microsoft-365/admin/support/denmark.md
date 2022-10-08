@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4bf33c9bcd07f6f85ab0a38bb8e9229a06cfbf8d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f82270e0f2c018301dd0e34e23bcc74858029e4d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371387"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195840"
 ---
 # <a name="contact-support-for-denmark"></a>Contacter le support technique pour le Danemark
 
@@ -31,10 +33,10 @@ ms.locfileid: "61371387"
 
 Anglais : Lun.-ven. 9H-17h
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Anglais : 24h/24, 7j/7
 
-Autre Téléphone numéro : 38 48 70 67
+Autre numéro de téléphone : 38 48 70 67
 
 Frais d’appel local applicables

@@ -6,20 +6,22 @@ manager: scotv
 ms.date: 05/31/2022
 audience: ITPro
 ms.topic: faq
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Trouvez des réponses aux questions fréquentes (FAQ) sur le déplacement de données de base vers une nouvelle zone géographique de centre de données Office 365.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3164612238010e72eb02510e1264cca528b80f38
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.collection:
+- scotvorg
+description: Trouvez des réponses aux questions fréquentes (FAQ) sur le déplacement de données de base vers une nouvelle zone géographique de centre de données Office 365.
+ms.openlocfilehash: af07ee89ffb8948ac2961db179112e70f3d0cfb4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "66991912"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209005"
 ---
 # <a name="data-move-general-faq"></a>FAQ général relatif au déplacement de données
 
