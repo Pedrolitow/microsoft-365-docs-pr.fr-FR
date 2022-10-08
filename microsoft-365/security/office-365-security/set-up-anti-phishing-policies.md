@@ -11,18 +11,19 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1833f5394b5604685aad63b42c6623b6efc125b5
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+search.appverid: met150
+ms.openlocfilehash: 1c49e13e6942de8947b69e2bcb236cbe5ba6b493
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613447"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072346"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -239,11 +240,13 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 - **Ajouter des expéditeurs et des domaines approuvés** : exceptions aux paramètres de protection de l’emprunt d’identité. Les messages des domaines d’expéditeur et d’expéditeur spécifiés ne sont jamais classés en tant qu’attaques basées sur l’emprunt d’identité par la stratégie. En d’autres termes, l’action pour les expéditeurs protégés, les domaines protégés ou la protection d’intelligence de boîte aux lettres ne sont pas appliquées à ces domaines d’expéditeur approuvés ou d’expéditeur. La limite maximale pour ces listes est de 1 024 entrées.
 
   > [!NOTE]
-  > Si les messages système Microsoft 365 des expéditeurs suivants sont identifiés comme des tentatives d’emprunt d’identité, vous pouvez ajouter les expéditeurs à la liste des expéditeurs approuvés :
   >
-  > - `⁠noreply@email.teams.microsoft.com`
-  > - `noreply@emeaemail.teams.microsoft.com`
-  > - `no-reply@sharepointonline.com`
+  > - Si les messages système Microsoft 365 des expéditeurs suivants sont identifiés comme des tentatives d’emprunt d’identité, vous pouvez ajouter les expéditeurs à la liste des expéditeurs approuvés :
+  >   - `⁠noreply@email.teams.microsoft.com`
+  >   - `noreply@emeaemail.teams.microsoft.com`
+  >   - `no-reply@sharepointonline.com`
+  >
+  > - Les entrées de domaine approuvé n’incluent pas de sous-domaines du domaine spécifié. Vous devez ajouter une entrée pour chaque sous-domaine.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Seuils de hameçonnage avancés dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 

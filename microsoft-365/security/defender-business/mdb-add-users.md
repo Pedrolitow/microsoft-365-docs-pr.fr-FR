@@ -6,20 +6,22 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/24/2022
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: bb1a0924972712df9e9b40cf2daf7a017c869566
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 96078d0ebbc8512d9fe63106bc8e441c55110dd4
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597104"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110884"
 ---
 # <a name="add-users-and-assign-licenses-in-microsoft-defender-for-business"></a>Ajouter des utilisateurs et attribuer des licences dans Microsoft Defender pour entreprises
 

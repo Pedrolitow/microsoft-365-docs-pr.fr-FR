@@ -7,19 +7,20 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: ec9df867252fe672f73dc7387c996f23ba476726
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dbaac2a60e47843d74ec13effe95a87049b8c9ea
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093457"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178886"
 ---
 # <a name="overview-of-contoso-corporation"></a>Vue d’ensemble de Contoso Corporation
 
@@ -55,9 +56,9 @@ Contoso a trois niveaux de bureaux :
 
 Environ 25 % de la main-d’œuvre de Contoso est mobile uniquement. Les centres régionaux et les bureaux satellites ont un pourcentage plus élevé de ces travailleurs. Fournir un meilleur soutien aux travailleurs mobiles est un objectif commercial important pour Contoso.
 
-## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considérations relatives à la conception des Microsoft 365 pour les entreprises
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considérations relatives à la conception pour Microsoft 365 pour les entreprises
 
-Les architectes informatiques de Contoso ont identifié les facteurs d’exigence de conception suivants pour le déploiement de Microsoft 365 pour l’entreprise :
+Les architectes informatiques de Contoso ont identifié les facteurs de conception requis suivants pour le déploiement de Microsoft 365 pour les entreprises :
 
 - Plusieurs implantations géographiques avec des réglementations et des exigences de conformité locales
 - Un centre de données intranet central dans le bureau du siège social et des serveurs d’applications régionaux qui hébergent des applications métier internes
@@ -71,7 +72,7 @@ Les architectes informatiques de Contoso ont identifié les facteurs d’exigenc
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez [l’infrastructure informatique locale](contoso-infra-needs.md) de Contoso Corporation et comment les besoins de l’entreprise sont satisfaits avec Microsoft 365 pour l’entreprise.
+Découvrez [l’infrastructure informatique locale](contoso-infra-needs.md) de Contoso Corporation et comment les besoins de l’entreprise sont satisfaits avec Microsoft 365 pour les entreprises.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -18,24 +19,24 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: Découvrez comment activer, renouveler ou ajouter des licences à un abonnement Microsoft 365 entreprise.
+description: Découvrez comment activer, renouveler ou ajouter des licences à un abonnement Microsoft 365 pour les entreprises.
 ms.date: 10/21/2020
-ms.openlocfilehash: 32f4fcc5c6febece9f9680120a41a4a49674f816
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: bd311973048304facf74f816efb9d211ae590e46
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102435"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169560"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Entrez votre clé de produit achetée auprès de Microsoft Open
 
-Si vous avez acheté Microsoft 365 pour les entreprises auprès d’un [programme de licences Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), cet article est destiné à vous. Les clients qui ont acheté une clé de produit peuvent suivre cette rubrique pour activer, renouveler ou ajouter des licences à un abonnement.
+Si vous avez acheté Microsoft 365 pour les entreprises à partir d’un [programme de licences Microsoft Open,](https://go.microsoft.com/fwlink/p/?LinkID=613298) cet article est destiné à vous. Les clients qui ont acheté une clé de produit peuvent suivre cette rubrique pour activer, renouveler ou ajouter des licences à un abonnement.
   
  **Vous avez besoin d’aide immédiatement ?** [Appelez le Support Microsoft](../admin/get-help-support.md).
   
  **Vous avez besoin d’autres informations ?**
 
- **Pour obtenir de l’aide sur Microsoft 365 Accueil ou Personnel**, consultez [Utilisation de clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
+ **Pour obtenir de l’aide sur Microsoft 365 Famille ou Personnel**, consultez [Utilisation de clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
   
  **Pour obtenir de l’aide sur Microsoft 365 Business Standard achetées auprès d’un magasin de détail**, consultez [Entrée de votre clé de produit achetée auprès d’un magasin de détail](enter-your-product-key.md).
   
@@ -48,7 +49,7 @@ Si vous avez acheté Microsoft 365 à partir d’un programme de licences Micros
     > [!TIP]
     >  Le message est envoyé à la personne mentionnée comme administrateur en ligne dans le contrat de licence en volume. Si vous ne savez pas qui est désigné comme administrateur en ligne, demandez à votre partenaire Microsoft 365. 
   
-2. Suivez le lien dans l’e-mail pour vous connecter avec votre compte professionnel ou scolaire, accepter le contrat de licence open et renouveler l’abonnement. Pour une procédure pas à pas, téléchargez le guide PDF[, Activer les services en ligne : Microsoft 365 Abonnement](https://go.microsoft.com/fwlink/p/?LinkId=618100), qui explique comment activer un nouvel abonnement, renouveler un abonnement existant ou ajouter des licences à un abonnement existant.
+2. Suivez le lien dans l’e-mail pour vous connecter avec votre compte professionnel ou scolaire, accepter le contrat de licence open et renouveler l’abonnement. Pour une procédure pas à pas, téléchargez le guide PDF [, Activer les services en ligne : Abonnement Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=618100), qui explique comment activer un nouvel abonnement, renouveler un abonnement existant ou ajouter des licences à un abonnement existant.
 
 > [!NOTE]
 > Les clients de licences en volume peuvent également choisir d’activer des abonnements dans le [Centre de gestion des licences en volume](https://go.microsoft.com/fwlink/p/?LinkID=282016). Pour en savoir plus, téléchargez le guide au format PDF [Activation des services en ligne dans le Centre des services de licences en volume](https://go.microsoft.com/fwlink/p/?LinkId=618096).
@@ -65,4 +66,4 @@ Les partenaires peuvent consulter la rubrique [Partenaires : utiliser une clé d
   
 Les clients ayant acquis des licences en volume peuvent en apprendre davantage en visitant le site [Ressources et formation sur le Centre de gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-Ou, si vous voulez parler à une personne, [appelez pomoc techniczna firmy Microsoft](../admin/get-help-support.md).
+Ou, si vous voulez parler à une personne, [appelez Support Microsoft](../admin/get-help-support.md).
