@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro de passeport en Irlande.
-ms.openlocfilehash: 5924b689096896e6d09cecca0c022c05972dedef
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ec80d59b65679b3cdefae7c93c6e1982cf5d44ab
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996919"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380071"
 ---
 # <a name="ireland-passport-number"></a>Numéro de passeport irlandais
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -84,15 +87,15 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- Passeport #
-- Passeport #
-- passportid
-- Passeports
-- passportno
-- passport no
+- #passeport
+- # passeport
+- passportID
+- passeports
+- n° de passeport
+- n° de passeport
 - numéropasseport
 - numéro de passeport
-- passportnumbers
+- numérospasseport
 - numéros de passeport
 
 ### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number

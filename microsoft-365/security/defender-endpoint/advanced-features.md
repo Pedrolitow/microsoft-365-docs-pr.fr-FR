@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8aafef819574d14871da0ee3199adfc5da6da2d0
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 89955b01c80ddc5734508b0dd71f09508e991e21
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798173"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504059"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour point de terminaison
 
@@ -39,7 +41,7 @@ Selon les produits de sécurité Microsoft que vous utilisez, certaines fonction
 
 1. Dans le volet de navigation, sélectionnez **Paramètres points** \> **de terminaison Fonctionnalités avancées**\>.
 2. Sélectionnez la fonctionnalité avancée que vous souhaitez configurer et basculez le paramètre entre **Activé** et **Désactivé**.
-3. Cliquez sur **Enregistrer les préférences**.
+3. Sélectionnez **Enregistrer les préférences**.
 
 Utilisez les fonctionnalités avancées suivantes pour mieux vous protéger contre les fichiers potentiellement malveillants et obtenir de meilleures informations lors des investigations de sécurité.
 
@@ -77,11 +79,13 @@ Activez cette fonctionnalité afin que les applications potentiellement indésir
 Cette configuration peut être utilisée pour les scénarios où les opérations SOC locales souhaitent limiter les corrélations d’alerte uniquement aux groupes d’appareils auxquels elles peuvent accéder. En activant ce paramètre, un incident composé d’alertes indiquant que les groupes inter-appareils ne seront plus considérés comme un incident unique. Le soc local peut alors prendre des mesures sur l’incident, car il a accès à l’un des groupes d’appareils impliqués. Toutefois, soc global verra plusieurs incidents différents par groupe d’appareils au lieu d’un incident. Nous vous déconseillons d’activer ce paramètre, sauf si cela l’emporte sur les avantages de la corrélation des incidents dans toute l’organisation.
 
 > [!NOTE]
-> La modification de ce paramètre affecte uniquement les corrélations d’alerte futures.
+> - La modification de ce paramètre affecte uniquement les corrélations d’alerte futures.
+>
+> - La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ## <a name="enable-edr-in-block-mode"></a>Activer EDR en mode bloc
 
-La détection et la réponse des points de terminaison (EDR) en mode bloc offrent une protection contre les artefacts malveillants, même lorsque l’antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’il est activé, l’EDR en mode bloc bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode bloc fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après la violation.
+La détection et la réponse des points de terminaison (EDR) en mode bloc offrent une protection contre les artefacts malveillants, même quand Microsoft Defender Antivirus s’exécute en mode passif. Lorsqu’il est activé, l’EDR en mode bloc bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode bloc fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après la violation.
 
 ## <a name="autoresolve-remediated-alerts"></a>Alertes corrigées autoresolve
 
@@ -99,7 +103,7 @@ Pour les locataires créés sur ou après Windows 10, version 1809, la fonctionn
 
 Le blocage n’est disponible que si votre organisation répond aux exigences suivantes :
 
-- Utilise l’antivirus Microsoft Defender comme solution de logiciel anti-programme malveillant actif et,
+- Utilise Microsoft Defender Antivirus comme solution de logiciel anti-programme malveillant actif et,
 - La fonctionnalité de protection basée sur le cloud est activée
 
 Cette fonctionnalité vous permet de bloquer les fichiers potentiellement malveillants dans votre réseau. Le blocage d’un fichier empêche sa lecture, son écriture ou son exécution sur les appareils de votre organisation.
@@ -130,9 +134,9 @@ Pour plus d’informations, consultez [Gérer les indicateurs](manage-indicators
 ## <a name="tamper-protection"></a>Protection contre les falsifications
 Pendant certains types de cyberattaques, les mauvais acteurs essaient de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos machines. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils.
 
-La protection contre les falsifications verrouille essentiellement l’Antivirus Microsoft Defender et empêche la modification de vos paramètres de sécurité par le biais d’applications et de méthodes.
+La protection contre les falsifications verrouille essentiellement Microsoft Defender Antivirus et empêche la modification de vos paramètres de sécurité par le biais d’applications et de méthodes.
 
-Cette fonctionnalité est disponible si votre organisation utilise l’antivirus Microsoft Defender et que la protection basée sur le cloud est activée. Pour plus d’informations, consultez [Utiliser des technologies de nouvelle génération dans l’antivirus Microsoft Defender via une protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md).
+Cette fonctionnalité est disponible si votre organisation utilise Microsoft Defender protection antivirus et cloud est activée. Pour plus d’informations, consultez [Utiliser des technologies de nouvelle génération dans Microsoft Defender Antivirus via la protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md).
 
 Maintenez la protection contre les falsifications activée pour empêcher les modifications indésirables apportées à votre solution de sécurité et à ses fonctionnalités essentielles.
 
@@ -170,12 +174,11 @@ Lorsque vous activez cette fonctionnalité, vous pouvez incorporer des données 
 
 Pour recevoir l’intégration contextuelle des appareils dans Office 365 Threat Intelligence, vous devez activer les paramètres Defender pour point de terminaison dans le tableau de bord Sécurité & Conformité. Pour plus d’informations, consultez [Enquête sur les menaces et réponse](/microsoft-365/security/office-365-security/office-365-ti).
 
-## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Spécialistes des menaces Microsoft - Notifications d’attaque ciblée
+## <a name="endpoint-attack-notifications"></a>Notifications d’attaque de point de terminaison
 
-Parmi les deux composants Microsoft Threat Expert, la notification d’attaque ciblée est en disponibilité générale. La fonctionnalité Experts à la demande est toujours disponible en préversion. Vous ne pouvez utiliser la fonctionnalité d’experts à la demande que si vous avez demandé la préversion et que votre application a été approuvée. Vous pouvez recevoir des notifications d’attaque ciblées de Spécialistes des menaces Microsoft via le tableau de bord des alertes de votre portail Defender pour point de terminaison et par e-mail si vous le configurez.
+Les notifications d’attaque de point de terminaison permettent à Microsoft de rechercher activement les menaces critiques à hiérarchiser en fonction de l’urgence et de l’impact sur vos données de point de terminaison. 
 
-> [!NOTE]
-> La fonctionnalité Spécialistes des menaces Microsoft dans Defender pour point de terminaison est disponible avec une licence E5 pour [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
+Pour une chasse proactive dans l’ensemble de Microsoft 365 Defender, notamment les menaces qui couvrent la messagerie, la collaboration, l’identité, les applications cloud et les points de terminaison, [en savoir plus](https://aka.ms/DefenderExpertsForHuntingGetStarted) sur Microsoft Defender Experts.
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
@@ -190,9 +193,9 @@ Pour recevoir l’intégration contextuelle des appareils dans Microsoft Defende
 
 1. Connectez-vous au [portail Microsoft Defender pour Identity](https://portal.atp.azure.com/) avec un rôle Administrateur général ou Administrateur de sécurité.
 
-2. Cliquez sur **Créer votre instance**.
+2. Sélectionnez **Créer votre instance**.
 
-3. Activez le paramètre d’intégration **, puis** cliquez sur **Enregistrer**.
+3. Activez le paramètre d’intégration **et** **sélectionnez Enregistrer**.
 
 Une fois les étapes d’intégration effectuées sur les deux portails, vous pouvez voir les alertes pertinentes dans les détails de l’appareil ou la page de détails de l’utilisateur.
 

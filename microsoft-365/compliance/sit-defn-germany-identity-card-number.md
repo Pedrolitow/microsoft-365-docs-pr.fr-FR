@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro de carte d’identité en Allemagne.
-ms.openlocfilehash: 961dec17e4f68a1650cd0c4360ccf5244bef0062
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e37f941d959e633f1d51f8bed6b8164bb071e648
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996250"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379961"
 ---
 # <a name="germany-identity-card-number"></a>Numéro de carte d’identité Allemagne
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -93,7 +96,7 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 
 - ausweis
 - gpid
-- Identification
+- identification
 - identifikation
 - identifizierungsnummer
 - Carte d’identité

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité du numéro de permis de conduire letton.
-ms.openlocfilehash: 70fd95a27cf2f3efc14242b07f2b47065fea43aa
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 0bbb28f8462dbb88cc468cc2660d6c7ab8fd7b40
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995460"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382774"
 ---
 # <a name="latvia-drivers-license-number"></a>Numéro de permis de conduire letton
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -67,124 +70,124 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
-- driverlic
-- driverlics
-- driverlicense
-- driverlicenses
-- driverlicence
-- driverlicences
-- driver lic
-- driver lics
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permis de conduire
+- permis de conduire
 - Permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- driverslic
-- driverslics
-- driverslicence
-- driverslicences
-- driverslicense
-- driverslicenses
-- drivers lic
-- drivers lics
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- driver’lic
-- driver’lics
-- driver’license
+- permisconduire
+- permisconduire
+- permisconduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- driver' lic
-- driver' lics
+- permis conduire
+- permis conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- driver’slic
-- driver’slics
-- driver’slicense
-- driver’slicenses
-- driver’slicence
-- driver’slicences
-- driver’s lic
-- driver’s lics
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permis de conduire
+- permis de conduire
 - permis de conduire
 - Permis de conduire
 - permis de conduire
 - permis de conduire
-- Dl #
-- Dls #
-- driverlic #
-- driverlics #
-- driverlicense #
-- driverlicenses #
-- driverlicence #
-- driverlicences #
-- driver lic #
-- driver lics #
-- permis de conduire #
-- licences de pilote #
-- permis de conduire #
-- driverslic #
-- driverslics #
-- driverslicense #
-- driverslicenses #
-- driverslicence #
-- driverslicences #
-- drivers lic #
-- drivers lics #
-- permis de conduire #
-- licences de pilotes #
-- permis de conduire #
-- permis de conduire #
-- driver’lic #
-- driver’lics #
-- driver’license #
-- permis de conduire #
-- permis de conduire #
-- permis de conduire #
-- driver' lic #
-- driver' lics #
+- pc#
+- pc#
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire #
-- driver’slic #
-- driver’slics #
-- driver’slicense #
-- driver’slicenses #
-- driver’slicence #
-- driver’slicences #
-- driver’s lic #
-- driver’s lics #
-- permis de conduire #
-- permis de conduire #
-- permis de conduire #
-- permis de conduire #
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
 - permis de conduire
 - permis de conduire
-- dlno #
-- driv lic
-- driv licen
-- licence driv
-- licences driv
-- licence driv
-- licences driv
-- licen du pilote
-- drivers licen
-- licen du conducteur
-- conduite lic
-- conduite licen
+- pc #
+- permis conduire
+- permis conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
-- dl no
-- dlno
-- numéro dl
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis conduire
+- permis conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduite
+- pc no
+- pcno
+- pc numéro
 
 ### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver’s_license_number
 

@@ -1,6 +1,6 @@
 ---
-title: Configurer l’antivirus Microsoft Defender avec WMI
-description: Découvrez comment configurer et gérer l’Antivirus Microsoft Defender à l’aide de scripts WMI pour récupérer, modifier et mettre à jour les paramètres dans Microsoft Defender pour point de terminaison.
+title: Configurer Microsoft Defender Antivirus avec WMI
+description: Découvrez comment configurer et gérer Microsoft Defender Antivirus à l’aide de scripts WMI pour récupérer, modifier et mettre à jour les paramètres dans Microsoft Defender pour point de terminaison.
 keywords: wmi, scripts, instrumentation de gestion windows, configuration
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -16,16 +16,18 @@ manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 9930e9bce4c5b5de3a4508ace82dd04562026d2c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b12c7fa681d62b531aad4655a3daa7cd652696d3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699771"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228753"
 ---
-# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser Windows Management Instrumentation (WMI) pour configurer et gérer l’antivirus Microsoft Defender
+# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser Windows Management Instrumentation (WMI) pour configurer et gérer Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,9 +44,9 @@ Windows Management Instrumentation (WMI) est une interface de script qui vous pe
 
 Pour en savoir plus sur WMI, consultez la [bibliothèque Microsoft Developer Network System Administration](/windows/win32/wmisdk/wmi-start-page).
 
-L’Antivirus Microsoft Defender dispose d’un certain nombre de classes WMI spécifiques qui peuvent être utilisées pour effectuer la plupart des mêmes fonctions que stratégie de groupe et d’autres outils de gestion. La plupart des classes sont analogues aux [applets de commande Defender pour Cloud PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+Microsoft Defender Antivirus a un certain nombre de classes WMI spécifiques qui peuvent être utilisées pour effectuer la plupart des mêmes fonctions que stratégie de groupe et d’autres outils de gestion. La plupart des classes sont analogues aux [applets de commande Defender pour Cloud PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 
-La [bibliothèque de référence du fournisseur MSDN Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) répertorie les classes WMI disponibles pour l’antivirus Microsoft Defender et inclut des exemples de scripts.
+La [bibliothèque de référence du fournisseur MSDN Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) répertorie les classes WMI disponibles pour Microsoft Defender Antivirus et inclut des exemples de scripts.
 
 Les modifications apportées à WMI affectent les paramètres locaux sur le point de terminaison où les modifications sont déployées ou effectuées. Cela signifie que les déploiements de stratégie avec stratégie de groupe, Microsoft Endpoint Configuration Manager ou Microsoft Intune peuvent remplacer les modifications apportées avec WMI. 
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’information sensible de numéro d’assurance maladie européen en Finlande.
-ms.openlocfilehash: 799f664f03f91fa35c01cc87701046faddab5dde
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: d2a1a509bc2a466d504eb9cd9766ed1c998498db
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367376"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379873"
 ---
 # <a name="finland-european-health-insurance-number"></a>Numéro d’assurance maladie européen en Finlande
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

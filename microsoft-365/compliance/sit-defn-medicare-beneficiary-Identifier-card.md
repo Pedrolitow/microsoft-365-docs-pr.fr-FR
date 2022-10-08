@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité d’identificateur de bénéficiaire d’assurance-maladie (MBI).
-ms.openlocfilehash: 601c34adcb0f9b19ab2c23a3df7d1c574cdd5031
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7ee3545a7a0eb177f7cf8cbb6581aa43546c8f88
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950830"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382449"
 ---
-# <a name="medicare-beneficiary-identifier-mbi-card"></a>Carte d’identificateur du bénéficiaire de l’assurance-maladie (MBI)
+# <a name="medicare-beneficiary-identifier-mbi-card"></a>Carte d’identificateur du bénéficiaire (MBI)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -52,14 +55,14 @@ Non
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- L’expression `Regex_mbi_card` régulière recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keyword_mbi_card` trouvé.
+- L’expression régulière `Regex_mbi_card` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keyword_mbi_card` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- L’expression `Regex_mbi_card` régulière recherche le contenu qui correspond au modèle.
+- L’expression régulière `Regex_mbi_card` trouve un contenu qui correspond au modèle.
 
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->

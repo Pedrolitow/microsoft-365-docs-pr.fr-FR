@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité de jeton d’accès personnel GitHub (préversion)
+title: Définition d’entité de jeton d’accès personnel GitHub
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type jeton d’accès personnel GitHub.
-ms.openlocfilehash: 65106dfc50be2335106a2b8e53f9fc9e5518b8bf
-ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.openlocfilehash: 9a887ec28d5e90ffc61a16a2a1975aa2d6f8e366
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68378531"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504037"
 ---
-# <a name="github-personal-access-token-preview"></a>Jeton d’accès personnel GitHub (préversion)
+# <a name="github-personal-access-token"></a>Jeton d’accès personnel GitHub
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Format
+Ce SIT est également inclus dans le sit [groupé Toutes les informations d’identification](sit-defn-all-creds.md) .
+
+ ## <a name="format"></a>Format
 
 Combinaison de 40 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
@@ -72,9 +74,15 @@ par exemple :
 
 `abcdef0123456789abcdef0123456789abcdef01`
 
+## <a name="credential-example"></a>Exemple d’informations d’identification 
+
+`pat=ghp_abcdefghijklmnopqrstuvwxyzABCD012345`
+
 ## <a name="checksum"></a>Somme de contrôle
 
 Oui
+
+Les SIT qui ont des sommes de contrôle utilisent un calcul unique pour vérifier si les informations sont valides. Cela signifie que lorsque la valeur **de somme de contrôle** est **Oui**, le service peut effectuer une détection positive basée sur les données sensibles uniquement. Lorsque la valeur de somme de **contrôle** est Aucun élément (secondaire) supplémentaire **ne** doit également être détecté pour que le service effectue une détection positive.
 
 ## <a name="definition"></a>Définition
 

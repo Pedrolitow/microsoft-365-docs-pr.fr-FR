@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’informations sensibles des adresses physiques en France.
-ms.openlocfilehash: 1c1831265c74ab980f9b3252e7ab8c8dcb84fca8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 79e89fe537bacdd7aacf90be181d9956cb853d60
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995980"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380555"
 ---
 # <a name="france-physical-addresses"></a>Adresses physiques françaises
 
 Cette entité nommée non groupée détecte les modèles liés à une adresse physique en France. Elle est également incluse dans l’entité nommée [Toutes les adresses physiques](sit-defn-all-physical-addresses.md) (SIT).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Niveau de confiance
 

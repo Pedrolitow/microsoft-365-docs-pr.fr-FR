@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1efbbd350a229fddbcdd70c99efc39f7a8cf9d31
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 5aacf3473af5c9951a0374b2835e611def254e32
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797931"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228666"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils dans la liste des appareils Microsoft Defender pour point de terminaison
 
@@ -133,7 +135,7 @@ Voici quelques-unes des fonctionnalités suivantes :
 
 Pour plus d’informations sur certains événements, consultez la section **Informations supplémentaires** . Ces détails varient en fonction du type d’événement, par exemple :
 
-- Contenu d’Application Guard : l’événement de navigateur web a été limité par un conteneur isolé
+- Contenu par Protection d'application : l’événement de navigateur web a été restreint par un conteneur isolé
 - Menace active détectée : la détection des menaces s’est produite pendant l’exécution de la menace
 - Échec de la correction : une tentative de correction de la menace détectée a été appelée, mais a échoué
 - Correction réussie : la menace détectée a été arrêtée et nettoyée

@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définitions d’entité de type d’informations sensibles du numéro de passeport français.
-ms.openlocfilehash: f358edd8955b17e89354af536381327957eb38bc
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 2b41095c897113bfd093b02fb1e787fae8cb7686
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997530"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380379"
 ---
 # <a name="france-passport-number"></a>Numéro de passeport français
 
 Cette entité est disponible dans le type d’informations sensibles du numéro de passeport de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
