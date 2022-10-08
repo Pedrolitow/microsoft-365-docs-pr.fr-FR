@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365_Setup
@@ -31,12 +32,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d’administration Microsoft 365 en ajoutant un enregistrement DNS sur votre hôte DNS.
-ms.openlocfilehash: a5c7b1738d0cffcac5a7b674ffae657da775f9c7
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 6e60aba3c9ac4525ae6c5e92cf69a1044d7db587
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662870"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166524"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -91,13 +92,13 @@ Suivez ces étapes pour ajouter, configurer ou poursuivre la configuration d’u
 5. Choisissez comment vous voulez vérifier que vous êtes propriétaire du domaine.
     
     1. Si votre bureau d’enregistrement de domaines utilise [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), Microsoft [configure automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md) en vous demandant de vous connecter à votre bureau d’enregistrement et de confirmer la connexion à Microsoft 365. Vous serez renvoyé au Centre d’administration et Microsoft vérifiera ensuite automatiquement votre domaine.
-    2. Vous pouvez utiliser un enregistrement TXT pour vérifier votre domaine. Sélectionnez cette option et sélectionnez **Suivant** pour voir les instructions permettant d’ajouter cet enregistrement DNS au site web de votre bureau d’enregistrement. La vérification peut prendre jusqu’à 30 minutes après l’ajout de l’enregistrement. 
+    2. You can use a TXT record to verify your domain. Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website. This can take up to 30 minutes to verify after you've added the record. 
     3. Vous pouvez ajouter un fichier texte au site web de votre domaine. Sélectionnez et téléchargez le fichier .txt à partir de l’Assistant Installation, puis chargez le fichier dans le dossier de niveau supérieur de votre site web. Le chemin d’accès au fichier doit ressembler à : `http://mydomain.com/ms39978200.txt`. Nous confirmerons que vous êtes le propriétaire du domaine en recherchant le fichier sur votre site web.
     
 6. Choisissez la façon dont vous souhaitez apporter les modifications DNS requises pour que Microsoft utilise votre domaine.
     
     1. Choisissez **Ajouter les enregistrements DNS pour moi** si votre bureau d’enregistrement prend en charge [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365) et que Microsoft [configurera automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md) en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365.
-    2. Choisissez **J’ajouterai moi-même les enregistrements DNS** si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette option pour le moment et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
+    2. Choose **I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **Choose this option if you know exactly what you're doing.**
 
 7. Si vous avez choisi *d’ajouter vous-même des enregistrements DNS*, sélectionnez **Suivant** et vous verrez une page contenant tous les enregistrements que vous devez ajouter à votre site web de bureaux d’enregistrement pour configurer votre domaine. 
 
@@ -150,9 +151,9 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes le propriét
 
 ### <a name="what-happens-to-my-email-and-website"></a>Qu’advient-il de mon courrier et de mon site web ?
 
-Une fois l’installation terminée, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à arriver à Microsoft 365. Assurez-vous que vous avez ajouté des utilisateurs et configuré des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui obtiennent des e-mails sur votre domaine !
+After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365. Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!
   
-Si vous disposez d’un site web que vous utilisez avec votre entreprise, il continuera à fonctionner où il se trouve. Les étapes d’installation de Domain Connect n’affectent pas votre site web.
+If you have a website that you use with your business, it will keep working where it is. The Domain Connect setup steps don't affect your website.
 
 ### <a name="add-an-onmicrosoftcom-domain"></a>Ajouter un domaine onmicrosoft.com
 
@@ -195,7 +196,7 @@ Pour plus d’informations sur l’ajout d’un domaine onmicrosoft.com, consult
 ## <a name="related-content"></a>Contenu associé
 
 [FAQ sur les domaines](domains-faq.yml) (article)</br>
-[Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md) (article)</br>
+[What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)</br>
 [Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)</br>
 [Ajouter des enregistrements DNS pour connecter votre domaine](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)</br>
 [Modifier les serveurs de noms de manière à configurer Microsoft 365 avec n'importe quel bureau d'enregistrement de domaines](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)

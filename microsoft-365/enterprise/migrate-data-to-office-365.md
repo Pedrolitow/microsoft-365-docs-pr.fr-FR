@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous trouverez les ressources qui vous aideront à migrer les données de votre organisation vers Microsoft 365.
-ms.openlocfilehash: ac7f3251c7a3a077e071de4e7441b988eb2db87b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 83483fac13e219279815dd09aee33057324d2bcf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702311"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165296"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migrer les données de votre organisation vers Microsoft 365 Entreprise
 
@@ -42,8 +44,8 @@ Si vous souhaitez obtenir de l’aide sur la configuration de Microsoft 365, [Fa
 - [Feuilles de route de configuration hybride SharePoint Server](/SharePoint/hybrid/configuration-roadmaps). (Administrateur)
 
 ## <a name="migrate-skype-for-business-users"></a>Migrer les utilisateurs de Skype Entreprise
-- [Migrer vers Skype entreprise Online](/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). (Administrateur)
-- Télécharger le [l’outil de mise à jour Skype entreprise](https://www.microsoft.com/download/details.aspx?id=51659) et [l’exécuter sur chaque station de travail](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrateur et/ou utilisateur final)
+- [Migrate to Skype for Business Online](/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). (Administrator)
+- Download the [Skype for Business meeting update tool](https://www.microsoft.com/download/details.aspx?id=51659) and [run it on each workstation](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrator and/or end user)
   
 ## <a name="need-to-talk-to-support"></a>Vous souhaitez parler au support technique ?
 [Contacter le support technique](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) pour produits d’entreprises.

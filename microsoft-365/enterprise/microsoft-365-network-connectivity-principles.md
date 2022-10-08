@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 6/23/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 search.appverid: MET150
@@ -17,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 76bbad1b392966f9140db36cf4adbbfff7b62b2b
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
-ms.translationtype: HT
+ms.openlocfilehash: afb67e94c42385dea6d02e923e1025cc8d703c3e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940951"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165446"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principes de connectivité réseau Microsoft 365
 
@@ -58,7 +59,7 @@ Pour la plupart des clients, les utilisateurs de Microsoft 365 sont répartis da
 
 Microsoft recommande les principes suivants pour obtenir une connectivité et des performances Microsoft 365 optimales. Utilisez ces principes de connectivité de Microsoft 365 pour gérer votre trafic et obtenir les meilleures performances lors de la connexion à Microsoft 365.
   
-L'objectif principal de la conception du réseau doit être de minimiser la latence en réduisant le temps d'aller-retour (RTT) de votre réseau vers le Microsoft Global Network, l'épine dorsale du réseau public de Microsoft qui interconnecte tous les centres de données de Microsoft avec une faible latence et des points d'entrée d'application cloud répartis autour du monde. Vous pouvez en savoir plus sur le réseau mondial Microsoft sur [Comment Microsoft construit son réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+The primary goal in the network design should be to minimize latency by reducing the round-trip time (RTT) from your network into the Microsoft Global Network, Microsoft's public network backbone that interconnects all of Microsoft's datacenters with low latency and cloud application entry points spread around the world. You can learn more about the Microsoft Global Network at [How Microsoft builds its fast and reliable global network](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
   
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-microsoft-365-traffic"></a>Identifier et différencier le trafic de Microsoft 365
@@ -84,7 +85,7 @@ Avant l’avènement des services cloud comme Microsoft 365, la connectivité In
   
 Dans une architecture de réseau traditionnelle, toutes les connexions Internet sortantes traversent le réseau de l’entreprise et sortent d’un emplacement central. Avec l’évolution des offres cloud de Microsoft, une architecture réseau distribuée orientée Internet est devenue essentielle pour prendre en charge les services cloud sensibles à la latence. Le réseau mondial Microsoft a été conçu pour répondre aux exigences de latence avec l’infrastructure de point d’entrée du service distribué, une structure dynamique de points d’entrée mondiaux qui achemine les connexions de service cloud entrantes vers le point d’entrée le plus proche. Cela vise à réduire la longueur du « dernier kilomètre » pour les clients du cloud Microsoft en raccourcissant efficacement la route entre le client et le cloud.
   
-Les WAN d’entreprise sont souvent conçus pour acheminer le trafic réseau vers un siège social central de l’entreprise pour inspection avant la sortie vers Internet, généralement via un ou plusieurs serveurs proxy. Le schéma ci-dessous illustre une telle topologie de réseau.
+Enterprise WANs are often designed to backhaul network traffic to a central company head office for inspection before egress to the Internet, usually through one or more proxy servers. The diagram below illustrates such a network topology.
   
 ![Modèle de réseau d’entreprise traditionnel.](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
   
@@ -96,7 +97,7 @@ La réduction du chemin d’accès du réseau vers les points d’entrée Micros
   
 De plus, les requêtes DNS peuvent introduire une latence si le serveur DNS répondant est distant ou occupé. Vous pouvez réduire la latence de résolution de noms en provisionnant des serveurs DNS locaux dans les succursales et en vous assurant qu’ils sont configurés pour mettre en cache les enregistrements DNS de manière appropriée.
   
-Bien que la sortie régionale puisse fonctionner correctement pour Microsoft 365, le modèle de connectivité optimal consisterait à toujours fournir une sortie réseau à l’emplacement de l’utilisateur, que ce soit sur le réseau de l’entreprise ou sur des sites distants comme les domiciles, les hôtels, les cafés et les aéroports. Ce modèle d'évacuation directe locale est représenté dans le diagramme ci-dessous.
+While regional egress can work well for Microsoft 365, the optimum connectivity model would be to always provide network egress at the user's location, regardless of whether this is on the corporate network or remote locations such as homes, hotels, coffee shops, and airports. This local direct egress model is represented in the diagram below.
   
 ![Architecture du réseau de sortie local.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
@@ -155,7 +156,7 @@ Les points de terminaison Office 365 représentent un ensemble varié d’adress
 > [!NOTE]
 > Les emplacements des points de terminaison Office 365 au sein du réseau ne sont pas directement liés à l’emplacement des données du client Microsoft 365. Pour cette raison, les clients doivent considérer Microsoft 365 comme un service distribué et mondial et ne doivent pas tenter de bloquer les connexions réseau aux points de terminaison Office 365 en fonction des critères géographiques.
   
-Dans nos précédents conseils sur la gestion du trafic Microsoft 365, les points de terminaison étaient organisés en deux catégories, **Obligatoire** et **Facultatif**. Les points de terminaison de chaque catégorie nécessitaient différentes optimisations en fonction de la criticité du service, et de nombreux clients ont rencontré des difficultés pour justifier l'application des mêmes optimisations de réseau à la liste complète des URL et adresses IP Office 365.
+In our previous guidance for managing Microsoft 365 traffic, endpoints were organized into two categories, **Required** and **Optional**. Endpoints within each category required different optimizations depending on the criticality of the service, and many customers faced challenges in justifying the application of the same network optimizations to the full list of Office 365 URLs and IP addresses.
   
 Dans le nouveau modèle, les points de terminaison sont séparés en trois catégories : **Optimiser**, **Autoriser** et **Par défaut**, ce qui permet de concentrer les efforts d’optimisation du réseau pour réaliser les meilleures améliorations de performances et le meilleur retour sur investissement. Les points de terminaison sont consolidés dans les catégories ci-dessus en fonction de la sensibilité de l’expérience utilisateur effective à la qualité du réseau, au volume et à l’enveloppe de performances des scénarios et à la facilité de mise en œuvre. Les optimisations recommandées peuvent être appliquées de la même manière à tous les points de terminaison d’une catégorie donnée.
   
@@ -202,11 +203,11 @@ L’objectif de la sécurité réseau traditionnelle est de renforcer le périm�
 - Les utilisateurs distants se connectent aux ressources de l’entreprise à la fois dans les centres de données locaux et dans le cloud à partir d’emplacements non contrôlés comme les domiciles, les hôtels et les cafés.
 - Des fonctionnalités de sécurité spécialement conçues sont de plus en plus intégrées aux services cloud et peuvent potentiellement compléter ou remplacer les systèmes de sécurité existants.
 
-Microsoft propose une large gamme de fonctionnalités de sécurité Microsoft 365 et fournit des directives concernant l’utilisation des meilleures pratiques de sécurité qui peuvent vous aider à garantir la sécurité des données et du réseau pour Microsoft 365. Les meilleures pratiques recommandées sont les suivantes :
+Microsoft offers a wide range of Microsoft 365 security features and provides prescriptive guidance for employing security best practices that can help you to ensure data and network security for Microsoft 365. Recommended best practices include the following:
   
 - **Utiliser l’authentification multifacteur (MFA)** ajoute une couche de protection supplémentaire à une stratégie de mot de passe fort en obligeant les utilisateurs à accuser réception d’un appel téléphonique, d’un SMS ou d’une notification d’application sur leur smartphone après avoir entré correctement leur mot de passe.
 
-- **Utiliser Microsoft Defender for Cloud Apps** Configurez des stratégies pour suivre les activités anomalous et agir dessus. Configurez des alertes avec Microsoft Defender for Cloud Apps afin que les administrateurs puissent examiner les activités inhabituelles ou risquées des utilisateurs, telles que le téléchargement de grandes quantités de données, plusieurs tentatives de connexion ayant échoué ou les connexions à partir d’adresses IP inconnues ou dangereuses.
+- **Use Microsoft Defender for Cloud Apps** Configure policies to track anomalous activity and act on it. Set up alerts with Microsoft Defender for Cloud Apps so that admins can review unusual or risky user activity, such as downloading large amounts of data, multiple failed sign-in attempts, or connections from a unknown or dangerous IP addresses.
 
 - **Configurer la prévention de la perte de données (DLP)** DLP vous permet d’identifier les données sensibles et de créer des stratégies qui permettent d’empêcher vos utilisateurs de partager accidentellement ou intentionnellement les données. DLP fonctionne dans Microsoft 365, y compris dans Exchange Online, SharePoint Online et OneDrive afin que vos utilisateurs puissent rester conformes sans interrompre leur flux de travail.
 
@@ -226,7 +227,7 @@ Une approche holistique de la sécurité renforcée doit prendre en compte les �
   - Réduire les exigences de sécurité réseau du périmètre WAN de l’entreprise
   - Certains appareils de sécurité du périmètre du réseau, tels que les pare-feu, sont toujours nécessaires, mais la charge est réduite
   - Assurer la sortie locale du trafic Microsoft 365
-- Les améliorations peuvent être traitées de manière incrémentielle, comme décrit dans la section [Optimisation incrémentielle](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). Certaines techniques d'optimisation peuvent offrir de meilleurs rapports coût/bénéfice en fonction de votre architecture réseau, et vous devez choisir les optimisations les plus judicieuses pour votre organisation.
+- Improvements can be addressed incrementally as described in the [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) section. Some optimization techniques may offer better cost/benefit ratios depending on your network architecture, and you should choose optimizations that make the most sense for your organization.
 
 Pour plus d’informations sur la sécurité et la conformité Microsoft 365, consultez les articles [Sécurité Microsoft 365](../security/index.yml) et [Microsoft Purview](../compliance/index.yml).
   

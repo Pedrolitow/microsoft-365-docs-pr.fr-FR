@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options de conformité pour les groupes Microsoft 365, Teams et SharePoint Collaboration.
-ms.openlocfilehash: b7a350a8f41d0a4f19ed345bc62dab0014ad7b10
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 428413ce876a1718f1237d3bce0d543aa5d47c62
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731241"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026268"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Options de conformité pour les groupes Microsoft 365, Teams et SharePoint Collaboration
 
@@ -64,7 +64,7 @@ Les conversations utilisateur sont conservées indéfiniment même si un compte 
 
 - [Stratégies de rétention dans Microsoft Teams](/microsoftteams/retention-policies)
 
-Une stratégie de rétention unique peut être définie pour s’appliquer aux messages de conversation teams et de canal Teams. 
+Une stratégie de rétention unique peut être définie pour s’appliquer aux messages de conversation teams et de canal Teams (y compris les messages de canal partagé). Les messages de canal privé Teams doivent être contenus dans leur propre stratégie de rétention.
 
 Ressources supplémentaires :
 
@@ -126,6 +126,8 @@ Avec Microsoft 365 Multi-Geo, vous pouvez approvisionner et stocker des données
 - [Plan pour Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>Voir aussi
+
+[Guide de sécurité et conformité pour Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 [Recommandations en matière de planification de la gouvernance de collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

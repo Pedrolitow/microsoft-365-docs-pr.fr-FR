@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-migratetomdatp
 - highpri
+- tier1
 ms.topic: article
 ms.custom:
 - migrationguides
@@ -23,12 +24,12 @@ ms.custom:
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 4ad0f36147682c1a6453941e148876b0246d8e1f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 34bd2b66705114ad2bba8739cfae98ac8556e85e
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689446"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363274"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Basculer vers Microsoft Defender pour point de terminaison - Phase 1 : Préparer
 
@@ -52,7 +53,7 @@ Cette phase de migration comprend les étapes suivantes :
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Obtenir et déployer des mises à jour sur les appareils de votre organisation
 
-Il est recommandé de tenir à jour les appareils et les points de terminaison de votre organisation. Assurez-vous que votre solution antivirus et de protection de point de terminaison existante est à jour, et que les systèmes d’exploitation et les applications de votre organisation disposent également des dernières mises à jour. Cette opération peut désormais vous aider à éviter les problèmes plus tard lors de la migration vers Defender pour point de terminaison et l’antivirus Microsoft Defender.
+Il est recommandé de tenir à jour les appareils et les points de terminaison de votre organisation. Assurez-vous que votre solution antivirus et de protection de point de terminaison existante est à jour, et que les systèmes d’exploitation et les applications de votre organisation disposent également des dernières mises à jour. Cette opération permet désormais d’éviter les problèmes ultérieurement lors de la migration vers Defender pour point de terminaison et Microsoft Defender Antivirus.
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>Vérifiez que votre solution existante est à jour
 
@@ -116,10 +117,10 @@ Pour activer la communication entre vos appareils et Defender pour point de term
 |Fonctionnalités|Système d’exploitation|Ressources|
 |---|---|---|
 |[Détection et réponse](overview-endpoint-detection-response.md) des points de terminaison (EDR)|[Windows 10](/windows/release-health/release-information) ou version ultérieure<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 ou version ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configurer les paramètres de proxy de machine et de connectivité Internet](configure-proxy-internet.md)|
-|EDR[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configurer les paramètres de connectivité proxy et Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS (voir [Configuration requise](microsoft-defender-endpoint-mac.md)|[Defender pour point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
+|EDR |[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configurer les paramètres de connectivité proxy et Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|EDR|macOS (voir [Configuration requise](microsoft-defender-endpoint-mac.md))|[Defender pour point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 ou version ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)|
-|Antivirus|macOS (voir [Configuration requise](microsoft-defender-endpoint-mac.md)|[Defender pour point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
+|Antivirus|macOS (voir [Configuration requise](microsoft-defender-endpoint-mac.md))|[Defender pour point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux (voir [Configuration système requise](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender pour point de terminaison sur Linux : connexions réseau](microsoft-defender-endpoint-linux.md#network-connections)|
 
 *Nécessite l’installation de la solution unifiée moderne pour Windows Server 2012 R2 et 2016. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/configure-server-endpoints).

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type clé privée de certificat X.509.
-ms.openlocfilehash: bdf6666060e62312ecfaa260ea2521161e2db7a6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 144eff9826dcbb3bcfc03930442a4d4e3a36e22c
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950543"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476130"
 ---
 # <a name="x509-certificate-private-key-preview"></a>Clé privée de certificat X.509 (préversion)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -51,9 +54,9 @@ par exemple :
 
 `MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
 
-ou
+or
 
-5 tirets (-)
+cinq tirets (-)
 
 Et une combinaison de 30 caractères maximum :
 
@@ -88,7 +91,7 @@ Les modèles sont conçus pour correspondre aux informations d’identification 
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral :
 
-- MII
+- Mii
 
 ### <a name="keyword_certificateprivatekeyheader"></a>Keyword_CertificatePrivateKeyHeader :
 

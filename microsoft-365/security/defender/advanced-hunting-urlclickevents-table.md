@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 068e083321b465410df9e734660344c03e6b55ce
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e3e0f5e25535a685f62c6b0e7471b5731cdf8287
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476041"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048987"
 ---
 # <a name="urlclickevents"></a>UrlClickEvents
 

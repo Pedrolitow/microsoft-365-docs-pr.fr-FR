@@ -6,23 +6,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 873a9e471324b0c987bfb34e4798dc4b3b679fd2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2cfbb87d3ce2edad9156f73898fd7765f2aad3f3
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699211"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363318"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Intégrer des appareils Windows à l’aide de Configuration Manager
 
@@ -38,6 +40,11 @@ ms.locfileid: "67699211"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
+## <a name="prerequisites"></a>Configuration requise
+- [Rôle de système de site de point Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
+
+> [!IMPORTANT]
+> Le rôle de système de site de point Endpoint Protection est requis pour que les stratégies de réduction de la surface d’attaque et antivirus soient correctement déployées sur les points de terminaison ciblés.  Sans ce rôle, les points de terminaison de la collection d’appareils ne recevront pas les stratégies de réduction de la surface d’attaque et antivirus configurées.
 
 Vous pouvez utiliser Configuration Manager pour intégrer des points de terminaison au service Microsoft Defender pour point de terminaison. 
 
@@ -68,7 +75,7 @@ Pour chaque appareil, vous pouvez définir une valeur de configuration pour indi
 
 Vous pouvez définir une règle de conformité pour l’élément de configuration dans Configuration Manager pour modifier le paramètre d’exemple de partage sur un appareil.
 
-Cette règle doit être un élément de configuration de règle de conformité de *correction* qui définit la valeur d’une clé de Registre sur les appareils ciblés pour s’assurer qu’elles sont plaintes.
+Cette règle doit *être un élément* de configuration de règle de conformité qui définit la valeur d’une clé de Registre sur les appareils ciblés pour s’assurer qu’elles sont conformes.
 
 La configuration est définie par le biais de l’entrée de clé de Registre suivante :
 
@@ -119,7 +126,7 @@ Configurez toutes les règles disponibles pour auditer.
 > [!NOTE]
 > Le blocage de ces activités peut interrompre des processus métier légitimes. La meilleure approche consiste à tout définir pour l’audit, à identifier ceux qui peuvent être activés sans risque, puis à activer ces paramètres sur les points de terminaison qui n’ont pas de détections de faux positifs.
 
-Pour déployer des stratégies AV et ASR via Microsoft System Center Configuration Manager (SCCM), procédez comme suit :
+Pour déployer des stratégies d’antivirus (AV) et de réduction de la surface d’attaque (ASR) via Microsoft Endpoint Configuration Manager (SCCM), procédez comme suit :
 
 - Activez Endpoint Protection et configurez les paramètres client personnalisés.
 - Installez le client Endpoint Protection à partir d’une invite de commandes.

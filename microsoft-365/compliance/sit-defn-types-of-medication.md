@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Types de définition d’entité de type d’information sensible de médicament.
-ms.openlocfilehash: 2a1a3c05fb233745da4f7c491b58739dc66aa91d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 24388bba9207d74b3edb393248fe301b512256c4
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995719"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471947"
 ---
 # <a name="types-of-medication"></a>Types de médicaments
 
 Cette entité nommée non regroupée détecte les noms des médicaments, tels que *l’insuline*.  Il prend uniquement en charge les termes anglais. Il est également inclus dans les [conditions générales médicales](sit-defn-all-medical-terms-conditions.md) regroupées sous le nom d’entité SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Niveau de confiance
 

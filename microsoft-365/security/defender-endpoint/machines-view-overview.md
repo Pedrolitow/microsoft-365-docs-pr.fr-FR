@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6e83ffcac675f8a2ed0df789c9017d194b8de2aa
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8f75da0a4eac19ce74ac26c5cdd38fc8e3644a19
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692264"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363186"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 
@@ -130,7 +132,7 @@ Filtre | Description
 **État de l’intégration** </br> | L’état d’intégration indique si l’appareil est actuellement intégré à Microsoft Defender pour point de terminaison ou non. Vous pouvez filtrer selon les états suivants : </br> - **Intégré** : le point de terminaison est intégré à Microsoft Defender pour point de terminaison.  </br> - **Peut être intégré** : le point de terminaison a été découvert dans le réseau en tant qu’appareil pris en charge, mais il n’est pas actuellement intégré. Microsoft recommande vivement l’intégration de ces appareils. </br> - **Non pris en charge** : le point de terminaison a été découvert dans le réseau, mais n’est pas pris en charge par Microsoft Defender pour point de terminaison. </br> - **Informations insuffisantes** : le système n’a pas pu déterminer la prise en charge de l’appareil.</br></br> (_Ordinateurs et appareils mobiles uniquement_)
 **État de l’antivirus** </br> | Filtrez la vue en fonction de l’état de l’antivirus désactivé, non mis à jour ou inconnu.</br></br> (_Ordinateurs et appareils mobiles uniquement_)
 **Group** </br> | Filtrez la liste en fonction du groupe qui vous intéresse. </br></br> (_Ordinateurs et appareils mobiles uniquement_)
-**Géré par** </br> | Géré par indique comment l’appareil est géré. Vous pouvez filtrer par :</br> - Microsoft Defender pour point de terminaison</br> - Microsoft Endpoint Manager (MEM), y compris la cogestion avec Microsoft Configuration Manager via l’attachement de locataire</br>- Microsoft Configuration Manager (ConfigMgr)</br> - Inconnu : cela peut être dû à l’exécution d’une version obsolète de Windows, de la gestion des objets de stratégie de groupe ou d’un autre GPM tiers.</br></br> (_Ordinateurs et appareils mobiles uniquement_) 
+**Géré par** </br> | Géré par indique comment l’appareil est géré. Vous pouvez filtrer par :</br> - Microsoft Defender pour point de terminaison</br> - Microsoft Endpoint Manager (MEM), y compris la cogestion avec Microsoft Configuration Manager via l’attachement de locataire</br>- Microsoft Configuration Manager (ConfigMgr)</br> - Inconnu : cela peut être dû à l’exécution d’une version obsolète de Windows, de la gestion des objets de stratégie de groupe ou d’un autre GPM tiers.</br></br> (_Ordinateurs et appareils mobiles uniquement_)
 **Type d’appareil** </br> | Filtrez par type d’appareil que vous souhaitez examiner.</br></br> (_Appareils IoT uniquement_)
 
 ## <a name="use-columns-to-customize-the-device-inventory-views"></a>Utiliser des colonnes pour personnaliser les vues d’inventaire des appareils

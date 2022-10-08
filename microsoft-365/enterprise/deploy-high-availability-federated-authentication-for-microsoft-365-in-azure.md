@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -18,13 +19,13 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 'Résumé : Configurez l’authentification fédérée à haute disponibilité pour votre abonnement Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 64fc02e6ecaa400da6d6130cb9ae630279102fcc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 'Résumé : Configurer l’authentification fédérée à haute disponibilité pour votre abonnement Microsoft 365 dans Microsoft Azure.'
+ms.openlocfilehash: 48352219ce6029c980cb09157feec652c446508d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093413"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165820"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Déployer une authentification fédérée haute disponibilité pour Microsoft 365 dans Azure
 
@@ -40,19 +41,19 @@ Cet article contient des liens vers les instructions pas à pas pour déployer l
     
 Voici la configuration, avec les noms d’espace réservé pour chaque serveur.
   
-**Une authentification fédérée à haute disponibilité pour Microsoft 365 infrastructure dans Azure**
+**Une authentification fédérée à haute disponibilité pour l’infrastructure Microsoft 365 dans Azure**
 
-![Configuration finale de la haute disponibilité Microsoft 365 infrastructure d’authentification fédérée dans Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Configuration finale de l’infrastructure d’authentification fédérée Microsoft 365 à haute disponibilité dans Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Toutes les machines virtuelles sont dans un réseau virtuel intersites unique Azure. 
   
 > [!NOTE]
-> L'authentification fédérée d'utilisateurs individuels n'utilise aucune ressource locale. Toutefois, si la connexion entre différents locaux devient indisponible, les contrôleurs de domaine du réseau virtuel ne reçoivent plus les mises à jour des comptes d'utilisateurs et des groupes apportées dans l'instance Active Directory Domain Services locale. Pour l’éviter, vous pouvez configurer une haute disponibilité pour votre connexion entre différents locaux. Pour plus d'informations, consultez [Configuration haute disponibilité pour la connectivité entre les réseaux locaux et la connectivité entre deux réseaux virtuels](/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> Federated authentication of individual users does not rely on any on-premises resources. However, if the cross-premises connection becomes unavailable, the domain controllers in the VNet will not receive updates to user accounts and groups made in the on-premises Active Directory Domain Services (AD DS). To ensure this does not happen, you can configure high availability for your cross-premises connection. For more information, see [Highly Available Cross-Premises and VNet-to-VNet Connectivity](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Chaque paire de machines virtuelles utilisée pour un rôle spécifique est dans son propre sous-réseau et son propre groupe à haute disponibilité.
   
 > [!NOTE]
-> Étant donné que ce réseau virtuel est connecté au réseau local, cette configuration n'inclut pas de machines virtuelles jumpbox ou de machines virtuelles de surveillance sur un sous-réseau de gestion. Pour plus d'informations, voir l'article relatif à l'[exécution de machines virtuelles Windows pour une architecture n-tiers](/azure/guidance/guidance-compute-n-tier-vm). 
+> Because this VNet is connected to the on-premises network, this configuration does not include jumpbox or monitoring virtual machines on a management subnet. For more information, see [Running Windows VMs for an N-tier architecture](/azure/guidance/guidance-compute-n-tier-vm). 
   
 Le résultat de cette configuration est que vous disposerez d’une authentification fédérée pour tous vos utilisateurs Microsoft 365, dans lesquelles ils peuvent utiliser leurs informations d’identification AD DS pour se connecter plutôt que leur compte Microsoft 365. L’infrastructure d’authentification fédérés utilise un ensemble redondant de serveurs qui sont plus faciles à déployer dans les services d’infrastructure Azure que dans votre réseau de périmètre en local.
   
@@ -88,17 +89,17 @@ Pour calculer les coûts estimés pour cette configuration, utilisez la [calcula
 
 Vous déployez cette charge de travail au cours des phases suivantes :
   
-- [Phase 1 : Configuration Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Créez des groupes de ressources, des comptes de stockage, des groupes à haute disponibilité et un réseau virtuel intersites.
+- [Phase 1 : Configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Créez des groupes de ressources, des comptes de stockage, des groupes à haute disponibilité et un réseau virtuel intersites.
     
 - [Étape 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Créer et configurer les contrôleurs de domaine réplica Azure AD et le serveur de synchronisation d’annuaires.
     
-- [Phase 3 : Configuration des serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Créez et configurez les deux serveurs AD FS.
+- [Phase 3 : Configurer des serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Créez et configurez les deux serveurs AD FS.
     
-- [Phase 4 : Configuration des proxys d’application web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Créez et configurez les deux serveurs proxy d’application web.
+- [Phase 4 : Configurer des proxys d’application web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Créez et configurez les deux serveur proxy d’application web.
     
 - [Phase 5 : Configurer l’authentification fédérée pour Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configurez l’authentification fédérée pour votre abonnement Microsoft 365.
     
-Ces articles fournissent un guide normatif, étape par phase, pour une architecture prédéfinie afin de créer une authentification fédérée fonctionnelle à haute disponibilité pour Microsoft 365 dans les services d’infrastructure Azure. Gardez les éléments suivants à l’esprit :
+Ces articles fournissent un guide normatif, étape par phase, pour une architecture prédéfinie afin de créer une authentification fédérée fonctionnelle à haute disponibilité pour Microsoft 365 dans les services d’infrastructure Azure. Gardez les éléments suivants à l’esprit :
   
 - Si vous êtes un implémenteur d’AD FS expérimenté, n’hésitez pas à adapter les instructions des étapes 3 à 4 et à créer l’ensemble de serveurs qui correspond le mieux à vos besoins. 
     

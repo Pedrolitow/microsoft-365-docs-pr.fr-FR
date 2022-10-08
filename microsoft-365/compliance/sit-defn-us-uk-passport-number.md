@@ -1,5 +1,5 @@
 ---
-title: États-Unis/Royaume-Uni définition d’entité de numéro de passeport
+title: ÉTATS-UNIS/ROYAUME-UNI définition d’entité de numéro de passeport
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: États-Unis/Royaume-Uni définition d’entité de type d’information sensible de numéro de passeport.
-ms.openlocfilehash: 88caf63983d6f459f5ff201ae695f909489569cb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+description: ÉTATS-UNIS/ROYAUME-UNI définition d’entité de type d’information sensible de numéro de passeport.
+ms.openlocfilehash: 96e3f270cfa49cc63a263b54960afb19c27aa3df
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950633"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471879"
 ---
-# <a name="usuk-passport-number"></a>États-Unis/Royaume-Uni numéro de passeport
+# <a name="usuk-passport-number"></a>ÉTATS-UNIS/ROYAUME-UNI numéro de passeport
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -43,16 +46,16 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_usa_uk_passport` recherche le contenu qui correspond au modèle.
-- Un mot clé à partir ou `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` est trouvé.
+- La fonction `Func_usa_uk_passport` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_eu_passport_number`ou `Keywords_uk_eu_passport_number` est trouvé.
 - Un mot clé à partir de `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_usa_uk_passport` recherche le contenu qui correspond au modèle.
-- Un mot clé à partir ou `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` est trouvé.
+- La fonction `Func_usa_uk_passport` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_eu_passport_number`ou `Keywords_uk_eu_passport_number` est trouvé.
 
 ```xml
     <!-- U.S. / U.K. Passport Number -->
@@ -79,15 +82,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Passeport #
-- Passeport #
-- passportid
-- Passeports
-- passportno
-- passport no
-- passportnumber
+- #passeport
+- # passeport
+- passportID
+- passeports
+- n° de passeport
+- n° de passeport
+- numéropasseport
 - numéro de passeport
-- passportnumbers
+- numérospasseport
 - numéros de passeport
 
 ### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number

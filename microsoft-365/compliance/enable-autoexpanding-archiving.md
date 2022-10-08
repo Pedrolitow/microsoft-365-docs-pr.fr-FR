@@ -11,26 +11,28 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier2
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Pour les administrateurs : découvrez comment activer l’archivage à extension automatique, qui fournit à vos utilisateurs un stockage supplémentaire pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l’archivage à extension automatique pour l’ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7edb246d2a2b9f765bcce6db8f8afa0485c423b3
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 1714954d04f821bacd7ae28a9e10b81a30438b03
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359577"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68475998"
 ---
 # <a name="enable-auto-expanding-archiving"></a>Activer l'archivage à expansion automatique
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Vous pouvez utiliser la Exchange Online fonctionnalité d’archivage à extension automatique pour activer un espace de stockage supplémentaire pour les boîtes aux lettres d’archivage. Lorsque l’archivage de développement automatique est activé, un espace de stockage supplémentaire est automatiquement ajouté à la boîte aux lettres d’archivage d’un utilisateur jusqu’à ce qu’il atteigne la limite de stockage de 1,5 To. Vous pouvez activer l’archivage de développement automatique pour tous les membres de votre organisation ou uniquement pour des utilisateurs spécifiques. Pour plus d’informations sur le développement automatique de l’archivage, consultez [En savoir plus sur l’archivage à extension automatique](autoexpanding-archiving.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>Avant d’activer l’archivage à développement automatique
 
@@ -137,3 +139,7 @@ Gardez à l’esprit les éléments suivants après avoir activé l’archivage 
 
 > [!IMPORTANT]
 > L’archivage à extension automatique est pris en charge uniquement pour les boîtes aux lettres utilisées par des utilisateurs individuels ou pour les boîtes aux lettres partagées avec un taux de croissance qui ne dépasse pas 1 Go par jour. L’utilisation de règles de journalisation, de transport ou de transfert automatique pour copier des messages dans une boîte aux lettres d’archivage n’est pas autorisée. La boîte aux lettres d'archivage d'un utilisateur est destinée uniquement à cet utilisateur. Microsoft se réserve le droit de refuser l’archivage supplémentaire dans les cas où la boîte aux lettres d’archivage d’un utilisateur est utilisée pour stocker des données d’archivage pour d’autres utilisateurs ou dans d’autres cas d’utilisation inappropriée.
+
+## <a name="next-steps"></a>Prochaines étapes
+
+Veillez à préparer les utilisateurs finaux aux modifications attendues après avoir activé leur boîte aux lettres pour développer automatiquement les archives.

@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -29,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Gérez les signatures par e-mail, y compris les clauses d’exclusion de responsabilité légales ou les déclarations de divulgation pour tous les messages électroniques qui entrent ou quittent votre organisation.
-ms.openlocfilehash: 7eebd09d675ec4186a1aeac526176c627367efd4
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e1c9d9d449e3e6f49ac405bdbd34ab67a2c01daf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663342"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166502"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des exclusions de responsabilité à l’échelle de l’organisation
 

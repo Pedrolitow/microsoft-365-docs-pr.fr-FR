@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: aa6176e74b74d2b3fa8a259b9c8d129bb2a9715f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e5736296499cdf9ce63ead7b57505c9751c8c436
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483451"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051781"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,7 +35,7 @@ ms.locfileid: "67483451"
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
-La table ou `DeviceEvents` les événements divers de l’appareil dans le schéma [de chasse avancé](advanced-hunting-overview.md) contient des informations sur différents types d’événements, notamment les événements déclenchés par les contrôles de sécurité, tels que l’Antivirus Microsoft Defender et la protection contre les attaques. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+La table ou `DeviceEvents` les événements divers de l’appareil dans le schéma [de chasse avancé](advanced-hunting-overview.md) contient des informations sur différents types d’événements, y compris les événements déclenchés par les contrôles de sécurité, tels que Microsoft Defender Antivirus et exploit protection. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
 > Pour plus d’informations sur les types d’événements (`ActionType` valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible dans Defender pour cloud.
@@ -97,7 +99,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessParentCreationTime` | `datetime` | Date et heure de démarrage du parent du processus responsable de l’événement |
 | `InitiatingProcessLogonId` | `string` | Identificateur d’une session d’ouverture de session du processus à l’origine de l’événement. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
 | `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
-| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
+| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Protection d'application pour isoler l’activité du navigateur |
 | `AdditionalFields` | `string` | Informations supplémentaires sur l’événement au format tableau JSON |
 
 ## <a name="related-topics"></a>Voir aussi

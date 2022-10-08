@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’information sensible du numéro de carte de débit de l’UE.
-ms.openlocfilehash: dc5d633255b534fc0da217f42766c2d34d9d6180
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6ed7607d59a9cfe53687b023fb2adbbafee42041
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322798"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363384"
 ---
 # <a name="eu-debit-card-number"></a>Numéro de carte de crédit de l'UE
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -45,7 +48,7 @@ Oui
 Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction `Func_eu_debit_card` trouve un contenu qui correspond au modèle.
-- Au moins une des affirmations suivantes est vraie :
+- Au moins l’un des cas suivants est vrai :
     - Un mot clé figurant dans la liste `Keyword_eu_debit_card` est trouvé.
     - Un mot clé figurant dans la liste `Keyword_card_terms_dict` est trouvé.
     - Un mot clé figurant dans la liste `Keyword_card_security_terms_dict` est trouvé.

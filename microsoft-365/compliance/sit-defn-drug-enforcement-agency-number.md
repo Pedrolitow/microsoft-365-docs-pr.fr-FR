@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro de la Drug Enforcement Agency (DEA).
-ms.openlocfilehash: 7b1ade056621f619d8be0293708dd51cfc2e85dd
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 080ee31c85fc9079668e9a94d139b0833ffa561c
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995820"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363428"
 ---
 # <a name="drug-enforcement-agency-dea-number"></a>Numéro de l’Agence de contrôle de la drogue (DEA)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

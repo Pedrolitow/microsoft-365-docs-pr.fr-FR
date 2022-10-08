@@ -8,10 +8,11 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ ms.custom:
 - adminvideo
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 01/25/2022
-ms.openlocfilehash: 123d70825f0d894d72d48fbe890652d37fe7d4b2
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e04cf46ceba2886fc0e939ead05a49147e4aa759
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664578"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165710"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Afficher la facture ou la facture de votre abonnement Microsoft 365 pour les entreprises
 
@@ -50,12 +51,12 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
   
 ## <a name="watch-view-download-or-print-your-bill"></a>Regardez : Afficher, télécharger ou imprimer votre facture
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197915).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2209539).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 
 1. Dans le Centre d'administration Microsoft 365, sélectionnez **Facturation** dans le volet de navigation de gauche, puis sélectionnez l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">**Factures**</a>.
-1. Sélectionnez une facture pour la consulter. Si vous ne voyez pas de facture, sélectionnez **Filtrer par : 6 derniers mois** dans la liste déroulante.
+1. Select an invoice to view it. If you don't see an invoice, select **Filter by: Last 6 months** from the drop-down list.
 1. Pour afficher les détails de la facture, sélectionnez **Télécharger au format PDF** dans le coin supérieur droit de la facture.
 
 ## <a name="view-a-bill-or-invoice"></a>Consulter une facture

@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - admindeeplinkMAC
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -21,12 +22,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes fréquentes des problèmes de synchronisation d’annuaires dans Office 365 et fournit plusieurs méthodes de résolution.
-ms.openlocfilehash: 175230057460785669d2667f74e8e9bc76aeafe6
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 79484dc0c948a842c25cf0026b9e13849edb80f1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560590"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165600"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Résoudre les problèmes de synchronisation d’annuaires pour Microsoft 365
 
@@ -36,7 +37,7 @@ Avec la synchronisation d’annuaires, vous pouvez continuer à gérer les utili
 
 La première indication qu’un problème est incorrect se produit lorsque la vignette de l’état de la synchronisation d’annuaire dans le centre d’administration Microsoft 365 indique un problème.
   
-Vous recevrez également un e-mail (à l'adresse e-mail secondaire et à votre e-mail d'administrateur) de Microsoft 365 indiquant que votre locataire a rencontré des erreurs de synchronisation d'annuaire. Pour plus de détails, voir [Identifier les erreurs de synchronisation d'annuaire dans Microsoft 365](identify-directory-synchronization-errors.md).
+You will also receive a mail (to the alternate email and to your admin email) from Microsoft 365 that indicates your tenant has encountered directory synchronization errors. For details see [Identify directory synchronization errors in Microsoft 365](identify-directory-synchronization-errors.md).
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Comment obtenir l’outil Azure Active Directory Connect ?
 
@@ -64,7 +65,7 @@ Pour effectuer la mise à jour à partir d’Azure AD Sync vers Azure AD Connect
 - [Mise en œuvre de la synchronisation du hachage de mot de passe avec la synchronisation Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>Une alerte indiquant un dépassement du quota d’objets apparaît
-- Nous avons un quota d'objets intégré pour aider à protéger le service. Si vous avez trop d'objets dans votre annuaire qui doivent être synchronisés avec Microsoft 365, vous devrez contacter [le support technique pour les produits professionnels](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) pour augmenter votre quota.
+- We have a built-in object quota to help protect the service. If you have too many objects in your directory that need to sync to Microsoft 365, you'll have to [Contact support for business products](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) to increase your quota.
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>J’ai besoin de savoir quels attributs sont synchronisés.
 - La liste des attributs synchronisés entre l’environnement local et le cloud est [disponible ici](https://go.microsoft.com/fwlink/p/?LinkId=396719).

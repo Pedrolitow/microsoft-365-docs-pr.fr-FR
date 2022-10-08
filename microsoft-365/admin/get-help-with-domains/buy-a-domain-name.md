@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
-ms.openlocfilehash: 78e43b13731839d791d00b93000567b12bd07a80
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e43b71e0a88abd2755de6d0ca5871c39e694dbcf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661912"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164852"
 ---
 # <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
@@ -50,23 +51,23 @@ ms.locfileid: "67661912"
     
 Vous pouvez choisir parmi les domaines de niveau supérieur suivants pour votre domaine.
   
-- .biz
+- .Biz
     
-- .com
+- .Com
     
-- .info
+- .Info
     
-- .me
+- .Moi
     
-- .mobi
+- .Mobi
     
-- .net
+- .Net
     
-- .org
+- .Org
     
-- .tv
+- .Tv
     
-- .co.uk
+- .Co.uk
     
 - org.uk
     
@@ -86,7 +87,7 @@ Si vous souhaitez acheter un domaine auprès d’un bureau d’enregistrement de
    
 ## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Transférer votre domaine vers un autre bureau d'enregistrement de noms de domaine
 
-Si votre domaine est géré par un fournisseur qui ne prend pas en charge tous les enregistrements DNS nécessaires, vous pouvez le transférer vers un autre bureau d'enregistrement. Lorsque vous transférez le domaine, vous modifiez le bénéficiaire des paiements en vue du renouvellement et de la conservation de votre nom de domaine.
+If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
   
 Demandez le transfert auprès du bureau d'enregistrement vers lequel vous voulez déplacer votre domaine. Recherchez une option telle que **Transfert DNS** sur son site web. Une fois les modifications apportées, la mise à jour sur Internet peut prendre quelques jours.
 
@@ -94,7 +95,7 @@ Demandez le transfert auprès du bureau d'enregistrement vers lequel vous voulez
 
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>Acheter un nom de domaine pour Office 365 géré par 21Vianet
 
-Si vous ne possédez pas encore votre propre domaine, vous pouvez facilement en acquérir un en ligne, auprès d'un bureau d'enregistrement de noms de domaine, d'un revendeur de domaines ou même de votre fournisseur Internet actuel. Vous obtenez un nom de domaine lorsque vous vous inscrivez à Office 365 géré par 21Vianet (par exemple, contoso.partner.onmschina.cn). Mais vous souhaiterez peut-être utiliser un nom de domaine personnalisé, comme fourthcoffee.com.
+If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
   
 Pour configurer un domaine dans Microsoft 365, vous devez posséder un domaine et modifier certains enregistrements DNS pour votre domaine.
   

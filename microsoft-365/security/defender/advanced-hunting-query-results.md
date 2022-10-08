@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ms.topic: article
-ms.openlocfilehash: 451e45b60bbb8bc9ea552b616ccd230b5cf7caf6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c68be62f9b781f66a06c42f68f05ae13ecf77f44
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481699"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049141"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utiliser des résultats de requête de chasse avancés
 

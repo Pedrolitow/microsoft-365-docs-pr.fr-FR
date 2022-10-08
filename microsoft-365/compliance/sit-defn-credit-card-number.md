@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro de carte de crédit.
-ms.openlocfilehash: 0d75c0af6c67c1d617db9f7f28fbc63c27e4d05a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d86612e539055bb33806c7ec8bdf893755ce4877
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996050"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476042"
 ---
 # <a name="credit-card-number"></a>Numéro de carte de crédit
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -34,7 +37,7 @@ ms.locfileid: "66996050"
 
 ## <a name="pattern"></a>Modèle
 
-Détecte les cartes de toutes les grandes marques du monde entier, y compris Visa, MasterCard, Discover Card, JCB, American Express, cartes cadeaux, cartes de dîner, Rupay et China UnionPay.
+Détecte les cartes de toutes les grandes marques, y compris Visa, MasterCard, Discover Card, JCB, American Express, cartes cadeaux, cartes de restaurant, Rupay et China UnionPay.
 
 ## <a name="checksum"></a>Somme de contrôle
 
@@ -48,7 +51,7 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - L’une des conditions suivantes est vraie :
   - Un mot clé figurant dans la liste `Keyword_cc_verification` est trouvé.
   - Un mot clé figurant dans la liste `Keyword_cc_name` est trouvé.
-  - La fonction `Func_expiration_date` trouve une date au format de date approprié.
+  - La fonction `Func_expiration_date` trouve une date au format correct.
 - La somme de contrôle est correcte.
 
 Une stratégie DLP a une confiance faible ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
@@ -79,10 +82,10 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 
 - vérification de la carte
 - numéro d’identification de la carte
-- cvn
+- nvc
 - nic
-- Cvc2
-- Cvv2
+- cvc2
+- cvv2
 - pin block
 - code de sécurité
 - numéro de sécurité
@@ -101,21 +104,21 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- Cod. Sicurezza
+- cod. sicurezza
 - cod sicurezza
 - n autorizzazione
-- Código
-- Codigo
-- Cod. Seg
+- código
+- codigo
+- cod. seg
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. Segurança
-- Cod. seguranca
-- Cod. Segurança
-- cód. seguranca
+- cód segurança
+- cod. seguranca
+- cod. segurança
+- cód seguranca
 - cód segurança
 - cod seguranca
 - cod segurança
@@ -139,7 +142,7 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 - data de expiracao
 - data em que expira
 - validade
-- Valor
+- valor
 - vencimento
 - Transaction
 - numéro de transaction
@@ -152,30 +155,30 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 
 ### <a name="keyword_cc_name"></a>Keyword_cc_name
 
-- Amex
+- amex
 - american express
 - americanexpress
 - americano espresso
 - Visa
-- Mastercard
+- mastercard
 - master card
-- Mc
-- Mastercard
+- mc
+- mastercards
 - master cards
 - diner’s Club
 - diners club
-- Dinersclub
-- Découvrir
+- dinersclub
+- discover
 - discover card
 - discovercard
 - discover cards
-- JCB
+- Jcb
 - BrandSmart
 - japanese card bureau
 - carte blanche
 - carteblanche
 - carte de crédit
-- Cc #
+- # CC
 - cc#:
 
 - date d’expiration
@@ -188,29 +191,29 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 - Bankcard
 - numéro de carte
 - num de carte
-- cardnumber
+- numéro de carte
 - cardnumbers
 - numéros de carte
-- Creditcard
+- creditcard
 - cartes de crédit
 - cartes de crédit
 - ccn
 - titulaire de la carte
-- Détenteur
+- cardholder
 - titulaires de la carte
-- Titulaires
+- titulaires de la carte
 - carte de vérification
-- coche
+- checkcard
 - cartes de vérification
-- cartes de contrôle
+- cartes de vérification
 - carte de débit
 - debitcard
 - cartes de débit
-- cartes de débit
+- debitcards
 - carte de retrait
 - atmcard
 - cartes de retrait
-- cartes d’atmcard
+- cartes de retrait
 - Enroute
 - en route
 - type de carte
@@ -234,7 +237,7 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 - nº de la carte
 - nº de carte
 - kreditkarte
-- Karte
+- karte
 - karteninhaber
 - karteninhabers
 - kreditkarteninhaber
@@ -247,9 +250,9 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 - kreditkarten-nummer
 - Carta di credito
 - Carta credito
-- Â¡n. Carta
+- Â¡n. carta
 - n carta
-- Nr. Carta
+- nr. carta
 - nr carta
 - numero carta
 - numero della carta

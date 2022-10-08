@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité du type d’informations sensibles internationales passeport en Ukraine.
-ms.openlocfilehash: a383fea21990437199287f3e212debe8530d1521
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 91e15a1d39c95ceb00186b6521d79cd4172b72cb
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67370186"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470416"
 ---
 # <a name="ukraine-passport-international"></a>Passeport Ukrainien International
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

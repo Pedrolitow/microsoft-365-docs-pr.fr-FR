@@ -10,8 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans le portail de conformité Microsoft Purview ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: 638675b77e09391ff0f5a4af0ab8d477e94693e9
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 6b2383e95d814f676698e4a30bde5b0c5b38e6bf
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67818872"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470165"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -38,6 +38,8 @@ Les politiques d'alerte vous permettent de catégoriser les alertes déclenchée
 
 > [!NOTE]
 > Les stratégies d’alerte sont disponibles pour les organisations disposant d’un abonnement Microsoft 365 Entreprise, Office 365 Entreprise ou Office 365 us Government E1/F1/G1, E3/F3/G3 ou E5/G5. Les fonctionnalités avancées sont disponibles uniquement pour les organisations disposant d’un abonnement E5/G5, ou pour les organisations disposant d’un abonnement E1/F1/G1 ou E3/F3/G3 et d’un Microsoft Defender pour Office 365 P2 ou d’un Microsoft 365 E5 Conformité ou d’un abonnement E5 eDiscovery et Audit. La fonctionnalité qui nécessite un abonnement E5/G5 ou un module complémentaire est mise en surbrillance dans cette rubrique. Notez également que les stratégies d’alerte sont disponibles dans Office 365 environnements gcc, GCC High et DoD us government.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-alert-policies-work"></a>Fonctionnement des stratégies d’alerte
 
@@ -185,7 +187,6 @@ Les tableaux indiquent également les Office 365 Entreprise et Office 365 plan d
 |**Email limite d’envoi dépassée**|Génère une alerte lorsqu’une personne de votre organisation a envoyé plus de courriers que ce qui est autorisé par la stratégie de courrier indésirable sortant. Cela indique généralement que l’utilisateur envoie trop d’e-mails ou que le compte peut être compromis. Si vous recevez une alerte générée par cette stratégie d’alerte, il est judicieux de [vérifier si le compte d’utilisateur est compromis](../security/office-365-security/responding-to-a-compromised-email-account.md).|Moyen|Non|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Formulaire bloqué en raison d’une tentative d’hameçonnage potentielle**|Génère une alerte lorsqu’une personne de votre organisation a été empêchée de partager des formulaires et de collecter des réponses à l’aide de Microsoft Forms en raison d’un comportement de tentative d’hameçonnage répété détecté.|Élevé|Non|E1, E3/F3 ou E5|
 |**Formulaire marqué d'un indicateur et confirmé comme hameçonnage**|Génère une alerte lorsqu’un formulaire créé dans Microsoft Forms à partir de votre organisation a été identifié comme hameçonnage potentiel par le biais d’abus de rapports et confirmé comme hameçonnage par Microsoft.|Élevé|Non|E1, E3/F3 ou E5|
-|**HVE Un clic d’URL potentiellement malveillant a été détecté**|Génère une alerte lorsqu’une personne marquée comme [un compte Priority](../admin/setup/priority-accounts.md) clique sur un lien malveillant. Cet événement est déclenché lorsque l’utilisateur clique sur une URL identifiée comme malveillante ou en attente de validation, et remplace la page d’avertissement Liens fiables pour continuer à l’URL ou au contenu d’origine (en fonction des paramètres de stratégie Liens fiables de votre organisation). Cet événement déclenche une identification de changement de verdict d’URL par Microsoft Defender pour Office 365. <br/><br/> Pour Defender pour Office 365 clients P2, E5 et G5, cette alerte déclenche automatiquement une [investigation et une réponse automatisées](/microsoft-365/security/office-365-security/office-365-air). Pour plus d’informations, consultez [les balises utilisateur dans Microsoft Defender pour Office 365](../security/office-365-security/user-tags.md) et [configurez des stratégies liens sécurisés](/microsoft-365/security/office-365-security/set-up-safe-links-policies).|Élevé|Non|E1/F1, E3/F3 ou E5|
 |**Une campagne de programmes malveillants a été détectée après la remise**|Génère une alerte lorsqu’un nombre anormalement élevé de messages contenant des programmes malveillants est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés des boîtes aux lettres Exchange Online.|Élevé|Non|Abonnement aux modules complémentaires E5/G5 ou Microsoft Defender pour Office 365 P2|
 |**Une campagne de programmes malveillants a été détectée et bloquée**|Génère une alerte lorsqu’une personne tente d’envoyer un nombre anormalement élevé de messages électroniques contenant un certain type de programmes malveillants aux utilisateurs de votre organisation. Si cet événement se produit, les messages infectés sont bloqués par Microsoft et ne sont pas remis aux boîtes aux lettres.|Faible|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**Campagne de programmes malveillants détectée dans SharePoint et OneDrive**|Génère une alerte lorsqu’un volume anormalement élevé de programmes malveillants ou de virus est détecté dans des fichiers situés dans des sites SharePoint ou des comptes OneDrive de votre organisation.|Élevé|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
@@ -282,7 +283,7 @@ Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est af
 |Rôle|Informations<br>Gouvernance|Perte de données<br>Prévention|Courrier<br>Flux|Autorisations|Menaces<br>gestion|Autres|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |Administrateur de conformité|✔|✔||✔||✔|
-|<!---X--->Gestion de la conformité DLP||✔|||||
+|Gestion de la conformité DLP||✔|||||
 |Administrateur Information Protection||✔|||||
 |Analyste Information Protection||✔|||||
 |Enquêteur Information Protection||✔|||||
@@ -290,24 +291,25 @@ Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est af
 |Configuration de l’organisation||||||✔|
 |Gestion de la confidentialité|||||||
 |Quarantaine|||||||
-|<!---X--->Gestion des enregistrements|✔||||||
+|Gestion des enregistrements|✔||||||
 |Gestion de la rétention|✔||||||
 |Gestion des rôles||||✔|||
 |Administrateur de sécurité||✔||✔|✔|✔|
 |Lecteur de sécurité||✔||✔|✔|✔|
 |Hygiène de transport|||||||
-|<!---X--->View-Only gestion de la conformité DLP||✔|||||
+|View-Only gestion de la conformité DLP||✔|||||
 |Afficher uniquement la configuration|||||||
 |View-Only gérer les alertes||||||✔|
 |Afficher uniquement les destinataires|||✔||||
-|<!---X--->gestion des enregistrements View-Only|✔||||||
-|<!---X--->gestion de la rétention View-Only|✔||||||
+|gestion des enregistrements View-Only|✔||||||
+|gestion de la rétention View-Only|✔||||||
 
 > [!TIP]
 > Pour afficher les rôles attribués à chacun des groupes de rôles par défaut, exécutez les commandes suivantes dans Security & Compliance PowerShell :
 >
 > ```powershell
 > $RoleGroups = Get-RoleGroup
+>
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,("-"*25); Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
 >

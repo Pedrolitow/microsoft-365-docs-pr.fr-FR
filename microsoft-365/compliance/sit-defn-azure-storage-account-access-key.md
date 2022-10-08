@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type clé sensible d’accès au compte de stockage Azure.
-ms.openlocfilehash: a671e350f7834d0454762d2f6c9fad9d333cddda
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 726eb03906aaa946e3fa89138c5d0c66351efec1
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996650"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476654"
 ---
 # <a name="azure-storage-account-access-key-preview"></a>Clé d’accès au compte de stockage Azure (préversion)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -71,7 +74,7 @@ Ce SIT est conçu pour correspondre aux informations de sécurité utilisées po
 Il utilise plusieurs ressources principales :
 
 - Modèles du littéral de chaîne encodé en Base64.
-- Modèles de clé symétrique codée en Base64 de 512 bits.
+- Modèles de clé symétrique 512 bits encodée en Base64.
 - Modèles d’CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
 - Modèles de valeurs de maquette, de réactions et d’espaces réservés.
 - Dictionnaire de vocabulaire.
@@ -83,7 +86,7 @@ Les modèles sont conçus pour correspondre aux informations d’identification 
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral :
 
-- MII
+- Mii
 
 ### <a name="keyword_symmetrickey512"></a>Keyword_SymmetricKey512 :
 

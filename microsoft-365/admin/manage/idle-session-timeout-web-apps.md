@@ -7,16 +7,18 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: Adm_TOC
+ms.collection:
+- scotvorg
+- Adm_TOC
 description: Définissez la durée de la session de l’utilisateur dans Microsoft 365 avant son expiration.
-ms.openlocfilehash: 7dbc3f7cfeaa0997661849e6f2a36439c9f6973a
-ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
+ms.openlocfilehash: cc275293187888c4f04878dc10071e0c82e97ea5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420087"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166700"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Délai d’expiration de session inactif pour Microsoft 365
 
@@ -100,7 +102,7 @@ Pour que le délai d’inactivité de la session soit déclenché uniquement sur
 
 6. Activez la stratégie, puis **sélectionnez Créer**.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="are-there-any-browsers-or-browser-scenarios-in-which-idle-session-timeout-feature-doesnt-work"></a>Existe-t-il des navigateurs ou des scénarios de navigateur dans lesquels la fonctionnalité de délai d’expiration de session inactive ne fonctionne pas ?  
 

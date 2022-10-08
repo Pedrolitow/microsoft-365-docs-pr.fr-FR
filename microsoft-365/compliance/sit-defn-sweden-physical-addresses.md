@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: La Suède physique traite la définition d’entité de type d’informations sensibles.
-ms.openlocfilehash: 8c389b3aaf6eec5794190ac6e5e52c6f31870112
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a51423e17399a64a5c6eeb444be6565987025bfe
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996049"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470099"
 ---
 # <a name="sweden-physical-addresses"></a>Adresses physiques suédoises
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Suède. Il est également inclus dans l’entité SIT toutes [les adresses physiques](sit-defn-all-physical-addresses.md) regroupées.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Suède. Elle est également incluse dans l’entité nommée [Toutes les adresses physiques](sit-defn-all-physical-addresses.md) (SIT).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Niveau de confiance
 

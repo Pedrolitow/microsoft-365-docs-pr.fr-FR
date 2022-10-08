@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Les administrateurs peuvent apprendre à rechercher et à utiliser les rapports de sécurité par e-mail disponibles dans le portail Microsoft 365 Defender.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6b34ab2617fdae4c57d3b40ab919668dd6b6ac2e
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 11d416108842bc15fc825af3068358b46eae36d3
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851124"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68337483"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender
 
@@ -204,7 +204,7 @@ Dans la page **rapport d’état du flux** de courrier, l’onglet **Type** est 
 Le tableau des détails sous le graphique affiche les informations suivantes :
 
 - **Direction**
-- **Type (Type)**
+- **Type**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -344,7 +344,7 @@ Le **rapport de latence** du courrier dans Defender pour Office 365 contient des
 
 Le rapport **des détections** d’usurpation d’identité affiche des informations sur les messages qui ont été bloqués ou autorisés en raison de l’usurpation d’identité. Pour plus d’informations sur l’usurpation d’identité, consultez [la protection contre l’usurpation d’identité dans EOP](anti-spoofing-protection.md).
 
-La vue d’agrégation du rapport autorise 90 jours de filtrage, tandis que l’affichage détaillé n’autorise que dix jours de filtrage.
+Les vues agrégées et détaillées du rapport autorisent 90 jours de filtrage.
 
 Pour afficher le rapport dans le portail Microsoft 365 Defender, accédez à **Rapports** \> **Email & collaboration** \> **Email & rapports de collaboration**. Dans la page **Email & rapports de collaboration**, recherchez **les détections d’usurpation d’identité**, puis cliquez sur **Afficher les détails**. Pour accéder directement au rapport, ouvrez <https://security.microsoft.com/reports/SpoofMailReport>.
 
@@ -518,7 +518,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 
 - **Date**
 - **Sujet**
-- **Expéditeur**
+- **Sender**
 - **Destinataires**
 - **Technologie de détection** : valeurs de technologie de détection identiques du graphique.
 - **État de remise**
@@ -569,7 +569,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 
 - **Date**
 - **Sujet**
-- **Expéditeur**
+- **Sender**
 - **Destinataires**
 - **Technologie de détection** : valeurs de technologie de détection identiques du graphique.
 - **État de remise**
@@ -625,7 +625,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 
 - **Date**
 - **Sujet**
-- **Expéditeur**
+- **Sender**
 - **Destinataires**
 - **Technologie de détection** : valeurs de technologie de détection identiques du graphique.
 - **État de la remise**
@@ -675,7 +675,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 
 - **Date**
 - **Sujet**
-- **Expéditeur**
+- **Sender**
 - **Destinataires**
 - **Technologie de détection** : valeurs de technologie de détection identiques du graphique.
 - **État de remise**
@@ -730,7 +730,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 
 - **Date**
 - **Sujet**
-- **Expéditeur**
+- **Sender**
 - **Destinataires**
 - **Technologie de détection** : valeurs de technologie de détection identiques du graphique.
 - **État de remise**
@@ -815,7 +815,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 
 - **Date**
 - **Sujet**
-- **Expéditeur**
+- **Sender**
 - **Destinataires**
 - **Remplacement du système**
 - **IP de l’expéditeur**
@@ -853,7 +853,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 
 - **Date**
 - **Sujet**
-- **Expéditeur**
+- **Sender**
 - **Destinataires**
 - **Remplacement du système**
 - **IP de l’expéditeur**

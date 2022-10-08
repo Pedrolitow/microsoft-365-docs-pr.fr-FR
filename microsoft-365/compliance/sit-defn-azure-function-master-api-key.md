@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de clé API/maître de fonction Azure.
-ms.openlocfilehash: 3a2fd12125d220bb0de3d0f4217ca6e11f58ea56
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 78a4af95c6390cc16f6a60bd3874be660e3cfa5c
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950761"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476376"
 ---
 # <a name="azure-function-master--api-key-preview"></a>Maître de fonction Azure / clé API (préversion)  
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -50,7 +53,7 @@ par exemple :
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEFGHIJKLMNOP==`
 
-ou
+or
 
 Combinaison de 54 à 84 caractères composée de :
 
@@ -74,13 +77,13 @@ Ce SIT est conçu pour correspondre aux informations de sécurité utilisées po
 
 Il utilise plusieurs ressources principales :
 
-- Modèles de clé symétrique de 320 bits encodée en Base64.
+- Modèles de clé symétrique 320 bits encodée en Base64.
 - Modèles de clé symétrique 320 bits encodée par URL.
 - Modèles de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 - Modèles de valeurs de maquette, de réactions et d’espaces réservés.
 - Dictionnaire de vocabulaire.
 
-Les modèles sont conçus pour correspondre aux informations d’identification réelles avec une confiance raisonnable. Les modèles ne correspondent pas aux informations d’identification mises en forme en tant qu’exemples. Les valeurs de maquette, les valeurs expurgées et les espaces réservés, tels que le type d’informations d’identification ou les descriptions d’utilisation, dans la position où une valeur secrète réelle doit être présente ne seront pas mises en correspondance.
+Les modèles sont conçus pour correspondre aux informations d’identification réelles avec une confiance raisonnable. Les modèles ne correspondent pas aux informations d’identification mises en forme en tant qu’exemples. Les valeurs de maquette, les valeurs redépliquées et les espaces réservés, tels que le type d’informations d’identification ou les descriptions d’utilisation, dans la position où une valeur secrète réelle doit être présente ne seront pas mises en correspondance.
 
 
 ## <a name="keywords"></a>Mots-clés

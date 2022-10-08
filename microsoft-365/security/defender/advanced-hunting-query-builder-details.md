@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier2
 ms.topic: conceptual
-ms.openlocfilehash: d3b8373743fc742a0d9c4cd83f99101618a3ef6c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5ad8b108ddd6de6734c9fdccfa79aeac0e7d13ef
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475585"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051869"
 ---
 # <a name="refine-your-query-in-guided-mode"></a>Affiner votre requête en mode guidé 
 

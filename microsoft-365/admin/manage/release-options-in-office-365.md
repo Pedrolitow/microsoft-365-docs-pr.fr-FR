@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,17 +25,17 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de mise en production pour les mises à jour de nouveaux produits et fonctionnalités dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 176558448f31fadea0b0cf865bca5d1156e3eefe
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: b407269d12307014befd8e07f2401f59f84cdeb4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129417"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164830"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de mise en production standard ou ciblée
 
 > [!IMPORTANT]
-> Les mises à jour Microsoft 365 décrites dans cet article s’appliquent aux Microsoft 365, SharePoint Online et Exchange Online. Ces options de mise en production sont ciblées, les meilleures façons de publier les modifications apportées à Microsoft 365, mais ne peuvent pas être garanties à tout moment ou pour toutes les mises à jour. Elles ne s’appliquent pas aux services Microsoft 365 Apps, Skype Entreprise, Microsoft Teams et connexes. Pour plus d’informations sur les options de mise en production pour Microsoft 365 Apps, consultez [Vue d’ensemble des canaux de mise à jour pour Microsoft 365 Apps](/deployoffice/overview-update-channels).
+> Les mises à jour de Microsoft 365 décrites dans cet article s’appliquent à Microsoft 365, SharePoint Online et Exchange Online. Ces options de mise en production sont ciblées et offrent les meilleurs moyens de publier les modifications apportées à Microsoft 365, mais ne peuvent pas être garanties à tout moment ou pour toutes les mises à jour. Elles ne s’appliquent pas aux services Microsoft 365 Apps, Skype Entreprise, Microsoft Teams et associés. Pour plus d’informations sur les options de mise en production pour Microsoft 365 Apps, consultez [Vue d’ensemble des canaux de mise à jour pour Microsoft 365 Apps](/deployoffice/overview-update-channels).
 
 Avec Microsoft 365, vous recevez de nouvelles mises à jour et fonctionnalités de produit à mesure qu’elles deviennent disponibles au lieu d’effectuer des mises à jour coûteuses tous les quelques années. Vous n'avez donc plus besoin de procéder à des mises à jour onéreuses chaque année. De plus, vous pouvez gérer la manière dont votre organisation reçoit ces mises à jour. Par exemple, vous pouvez vous inscrire à une publication anticipée et faire profiter l'ensemble de votre organisation des mises à jour en avance, ou sélectionner un panel restreint d'utilisateurs qui les testeront. Vous pouvez également décider de rester sur le programme de publication standard et recevoir les mises à jour plus tard. Cet article explique les différentes options de mise en production et la façon dont vous pouvez les utiliser pour votre organisation.
 
@@ -47,7 +48,7 @@ Toute nouvelle version est d’abord testée et validée par l’équipe de fonc
 Pour les mises à jour importantes, les clients sont initialement avertis par la [feuille de route Microsoft 365](https://products.office.com/business/office-365-roadmap). À mesure qu’une mise à jour se rapproche du déploiement, elle est communiquée par le biais de votre [centre de messages Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> Vous avez besoin d’un compte Microsoft 365 ou Azure AD pour accéder à votre centre de messages via le [Centre d’administration](/office365/admin/admin-overview/admin-center-overview). Microsoft 365 les utilisateurs du plan d’accueil n’ont pas de centre d’administration.
+> Vous avez besoin d’un compte Microsoft 365 ou Azure AD pour accéder à votre centre de messages via le [centre d’administration](/office365/admin/admin-overview/admin-center-overview). Les utilisateurs du plan d’accueil Microsoft 365 n’ont pas de centre d’administration.
 
 ## <a name="standard-release"></a>Publication standard
 
@@ -60,11 +61,11 @@ Une bonne pratique consiste à laisser la majorité des utilisateurs dans la **v
   
 ## <a name="targeted-release"></a>Version ciblée
 
-Cette option vous permet, ainsi qu'à vos utilisateurs, d'être les premiers à profiter des dernières mises à jour, ainsi que de contribuer au développement du produit en envoyant des commentaires avant la mise à disposition générale. Vous pouvez choisir de diffuser les mises à jour de façon anticipée à des personnes spécifiques ou à l'ensemble de l'organisation.
+With this option, you and your users can be the first to see the latest updates and help shape the product by providing early feedback. You can choose to have individuals or the entire organization receive updates early.
   
 > [!IMPORTANT]
-> - Les mises à jour d'envergure ou complexes peuvent demander plus de temps avant d'être diffusées, de sorte qu'aucun utilisateur ne soit affecté. Aucune garantie ne peut être apportée quant au calendrier exact des publications.
-> - La version ciblée n’est actuellement pas disponible pour les clients disposant du plan Office 365 Cloud de la communauté du secteur public ou du plan Office 365 Cloud de la communauté du secteur public High et DoD.
+> - Large or complex updates may take longer than others so that no users are adversely affected. There is no guarantee on the exact timeline of a release.
+> - La version ciblée n’est actuellement pas disponible pour les clients disposant du plan Office 365 GCC ou du plan Office 365 GCC High et DoD.
   
 ### <a name="targeted-release-for-entire-organization"></a>Publication ciblée pour l'organisation entière
 
@@ -79,7 +80,7 @@ Si vous [configurez l’option de mise en production dans le Centre d’administ
   
 ## <a name="benefits-of-targeted-release"></a>Avantages de la publication ciblée
 
-La version ciblée permet aux administrateurs, aux gestionnaires de modifications ou à toute autre personne responsable de Microsoft 365 mises à jour de se préparer aux modifications à venir en les laissant :
+La version ciblée permet aux administrateurs, aux responsables des modifications ou à toute autre personne responsable des mises à jour de Microsoft 365 de se préparer aux modifications à venir en les laissant :
   
 - tester et valider les nouvelles mises à jour avant qu'elles soient publiées pour tous les utilisateurs au sein de l'organisation ;
     
@@ -93,12 +94,12 @@ La version ciblée permet aux administrateurs, aux gestionnaires de modification
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurer l’option de mise en production dans le Centre d’administration
 
-Vous pouvez modifier la façon dont votre organisation reçoit Microsoft 365 mises à jour en procédant comme suit. Vous devez être administrateur général dans Microsoft 365 pour accepter.
+Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour de Microsoft 365 en procédant comme suit. Vous devez être administrateur général dans Microsoft 365 pour accepter.
   
 > [!IMPORTANT]
 > L’application des modifications ci-dessous dans Microsoft 365 peut prendre jusqu’à 24 heures. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 
   
-1. Dans le Centre d’administration, accédez au **paramètre Paramètres** >  **Org** et, sous <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">l’onglet **Profil de l’organisation**</a>, choisissez **Préférences de publication**.
+1. Dans le centre d’administration, accédez au **Paramètres** > **de l’organisation** et, sous <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">l’onglet **Profil de l’organisation**</a>, choisissez **Préférences de publication**.
 
 5. Pour désactiver la version ciblée, sélectionnez **Version standard**, puis **Enregistrer les modifications**. 
     
@@ -106,14 +107,14 @@ Vous pouvez modifier la façon dont votre organisation reçoit Microsoft 365 mis
     
 7. Pour activer la mise en production ciblée pour certaines personnes de votre organisation, sélectionnez **Publication ciblée pour les utilisateurs sélectionnés**, puis **sélectionnez Enregistrer les modifications**. 
     
-8. **Choisissez Sélectionner des utilisateurs** pour ajouter des utilisateurs un par un, ou **Télécharger utilisateurs** de les ajouter en bloc.
+8. **Choisissez Sélectionner des utilisateurs** pour ajouter des utilisateurs un par un, ou **Charger des utilisateurs** pour les ajouter en bloc.
     
 9. Lorsque vous avez terminé d’ajouter des utilisateurs, **sélectionnez Enregistrer les modifications**.
   
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-Découvrez comment [gérer les messages](/office365/admin/manage/message-center) dans votre [centre de messages Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) pour recevoir des notifications sur les mises à jour et versions Microsoft 365 à venir.
+Découvrez comment [gérer les messages](/office365/admin/manage/message-center) dans votre centre de messages [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) pour recevoir des notifications sur les mises à jour et versions à venir de Microsoft 365.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Participer au programme Office Insider](https://insider.office.com/join/windows) (article)

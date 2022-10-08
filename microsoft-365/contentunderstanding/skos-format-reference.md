@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: high
 description: Référence de format SKOS pour la taxonomie SharePoint
-ms.openlocfilehash: b3e0e60345e46fde8f82af536101f4f8b09daf24
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 0c40109f11d904db399effc874c24d3efd776a39
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575842"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026049"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>Référence de format SKOS pour la taxonomie SharePoint
 
@@ -49,7 +51,7 @@ Le tableau suivant affiche les entités du vocabulaire de taxonomie SharePoint d
 
 ## <a name="sharepoint-taxonomy-vocabulary"></a>Vocabulaire de taxonomie SharePoint
 
-Une taxonomie est un système de classification formel. Une taxonomie regroupe les mots, les étiquettes et les termes qui décrivent quelque chose, puis classe ces groupes dans une hiérarchie.
+A taxonomy is a formal classification system. A taxonomy groups the words, labels, and terms that describe something, and then arranges the groups into a hierarchy.
 
 **sharepoint-taxonomy:Term**
 
@@ -138,7 +140,7 @@ Un Terme peut avoir une ou plusieurs étiquettes dans la langue par défaut et z
 
 **sharepoint-taxonomy:defaultLabel**
 
-Utilisez cette étiquette lexicale par défaut pour un [Terme](/dotnet/api/microsoft.sharepoint.taxonomy.term) qui est un paramètre obligatoire pour un [Terme](/dotnet/api/microsoft.sharepoint.taxonomy.term). Utilisez pour représenter visuellement le [Terme](/dotnet/api/microsoft.sharepoint.taxonomy.term).
+Use this default lexical label for a [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) that is a required parameter for a [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term). Use to visually representing the [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
 La syntaxe pour définir un defaultLabel est :
 
@@ -194,7 +196,7 @@ Les taxonomies ont une relation hiérarchique et parfois une simple relation ass
 
 **sharepoint-taxonomy:parent**
 
-Ceci relie hiérarchiquement un [Terme](/dotnet/api/microsoft.sharepoint.taxonomy.term) à un autre [Terme](/dotnet/api/microsoft.sharepoint.taxonomy.term). Un [Terme](/dotnet/api/microsoft.sharepoint.taxonomy.term) peut être un [Terme](/dotnet/api/microsoft.sharepoint.taxonomy.term) supérieur d’un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), mais si ce n’est pas le cas, il doit avoir un [Terme](/dotnet/api/microsoft.sharepoint.taxonomy.term) parent.
+This hierarchically relates a [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) to another [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term). A [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) could be a top level [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) of a [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), but in case it doesn’t it must have a parent [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
 La syntaxe pour définir un parent est :
 

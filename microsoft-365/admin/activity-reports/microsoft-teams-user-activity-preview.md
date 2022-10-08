@@ -1,14 +1,15 @@
 ---
 title: rapports d’activité des utilisateurs Centre d'administration Microsoft 365 Teams
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d’activité des utilisateurs Microsoft Teams et obtenir des insights sur l’activité Teams dans votre organisation.
-ms.openlocfilehash: a799ef42fb0ecfd3b1c6aae6d4daa8a8da8415ab
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: c913c3969c5784f34cd8a1ca4644834eaf96f0a6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662743"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165358"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité des utilisateurs Microsoft Teams
 
@@ -50,11 +51,12 @@ Le rapport **Activité de l'utilisateur sur Microsoft Teams** permet d'observer 
 
 Pour garantir la qualité des données, nous effectuons des vérifications quotidiennes de validation des données au cours des trois derniers jours et nous comblerons les lacunes détectées. Vous remarquerez peut-être des différences dans les données historiques pendant le processus.
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d'utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme.   <br/> |
 |Nom du locataire  <br/> |Nom d’un locataire interne ou externe auquel appartient un utilisateur.   <br/> <br/> Si un utilisateur appartient à un locataire externe, les métriques de données correspondantes (par exemple, les messages postaux, les messages de réponse, etc.) sont calculées en fonction de leurs interactions dans les canaux partagés du locataire de l’administrateur. Les interactions effectuées par l’utilisateur dans son propre locataire (en dehors des canaux partagés du locataire donné) ne sont pas prises en compte pour le rapport d’utilisation administrateur d’un locataire donné.  |
+|Est externe   <br/> |Indique si l’utilisateur est un utilisateur externe ou non.   <br/> |
 |Noms des locataires de canal partagé   <br/> |Noms des locataires internes ou externes des canaux partagés auxquels l’utilisateur a participé.   <br/> |
 |Messages de canal   <br/> |Nombre de messages uniques que l’utilisateur a publiés dans une conversation d’équipe pendant la période spécifiée. Cela inclut les publications d’origine et les réponses.   <br/> |
 |Posts   <br/> |Nombre de messages postaux dans tous les canaux pendant la période spécifiée. Un billet est le message d’origine dans une conversation Teams.<br/> |

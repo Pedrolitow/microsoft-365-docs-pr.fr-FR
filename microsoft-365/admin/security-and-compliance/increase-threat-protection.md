@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - M365-identity-device-management
@@ -26,12 +27,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez Microsoft Defender pour Office 365 et protégez les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: 41eed29cdc87e4334270efdb4d0039147254988c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 4c848d7d027b65efcb46c488e162860b4c1a6e9e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661349"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166590"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Augmenter la protection contre les menaces pour Microsoft 365 pour les PME
 

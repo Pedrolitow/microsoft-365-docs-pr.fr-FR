@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro d’identification personnelle (OIB) en Croatie.
-ms.openlocfilehash: b8f2dda49c515c4c6f73b60762d7848f1a76be20
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 683ee32f3e12255583958766e1d94efd6eeedfb7
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950774"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362967"
 ---
-# <a name="croatia-personal-identification-oib-number"></a>Numéro d’identification personnelle croate (OIB)
+# <a name="croatia-personal-identification-oib-number"></a>Numéro d’identification personnelle (OIB) en Croatie
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -45,15 +48,15 @@ Oui
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_croatia_oib_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keywords_croatia_eu_tax_file_number` trouvé.
+- La fonction `Func_croatia_oib_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_croatia_eu_tax_file_number` est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_croatia_oib_number` recherche le contenu qui correspond au modèle.
+- La fonction `Func_croatia_oib_number` trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -86,18 +89,18 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - porezni broj
 - porezni identifikacijski broj
 - id fiscal
-- identification fiscale non
+- numéro d’identification fiscal
+- numéro d’identification fiscal
+- taxe nº#
+- nº fiscal
+- numéro de contribuable
 - numéro d’identification fiscale
-- tax no #
-- tax no
-- numéro d’impôt
-- numéro d’enregistrement fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
 - taxnumber
-- iD d’tin
-- tin no
-- Étain #
+- id de tin
+- nº de tin
+- tin#

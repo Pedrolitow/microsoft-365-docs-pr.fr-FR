@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de clé d’accès Azure EventGrid.
-ms.openlocfilehash: 623d1cbe6ecad053981e09f7c71e9ae99d855530
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 55d637a4ad578948bf7bf46ac745a33d689610ee
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996480"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476878"
 ---
 # <a name="azure-eventgrid-access-key-preview"></a>Clé d’accès Azure EventGrid (préversion)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -55,12 +58,12 @@ Ce SIT est conçu pour correspondre aux informations de sécurité utilisées po
 
 Il utilise plusieurs ressources principales :
 
-- Modèles de clé symétrique de 256 bits encodée en Base64.
-- Modèles de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Modèles de clé symétrique 256 bits encodée en Base64.
+- Modèles de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Modèles de valeurs de maquette, de réactions et d’espaces réservés.
 - Dictionnaire de vocabulaire.
 
-Les modèles sont conçus pour correspondre aux informations d’identification réelles avec une confiance raisonnable. Les modèles ne correspondent pas aux informations d’identification mises en forme en tant qu’exemples. Les valeurs de maquette, les valeurs expurgées et les espaces réservés, tels que le type d’informations d’identification ou les descriptions d’utilisation, dans la position où une valeur secrète réelle doit être présente ne seront pas mises en correspondance.
+Les modèles sont conçus pour correspondre aux informations d’identification réelles avec une confiance raisonnable. Les modèles ne correspondent pas aux informations d’identification mises en forme en tant qu’exemples. Les valeurs de maquette, les valeurs redépliquées et les espaces réservés, tels que le type d’informations d’identification ou les descriptions d’utilisation, dans la position où une valeur secrète réelle doit être présente ne seront pas mises en correspondance.
 
 ## <a name="keywords"></a>Mots-clés
 

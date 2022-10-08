@@ -7,21 +7,23 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 54e30aafc88ea7f8cbbff9a27b2050270221775e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fb76b9fc40564f8ba1809b5345496ea54e70cc37
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194992"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165798"
 ---
-# <a name="contact-support-for-morocco"></a>Contacter le support technique pour le Maroc
+# <a name="contact-support-for-morocco"></a>Contacter le support pour le Maroc
 
-[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
+[Rechercher un autre pays ou une autre région](../get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 0801 000 809
@@ -33,17 +35,17 @@ Entrer le code 7700
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Arabe : Sun-Thu 8 h à 16 h
+Arabe : Sun-Thu 8 H-16 H
 
-Français : Mon-Fri 8 h à 16 h
+Français : Mon-Fri de 8 h à 16 h
 
-Anglais : Mon-Fri 8 h à 16 h
+Anglais : Mon-Fri 8h-16h
 
 ### <a name="technical-support"></a>Support technique :
 
-Arabe : Sun-Thu 8 h à 16 h
+Arabe : Sun-Thu 8 H-16 H
 
-Français : Mon-Fri 7 H 00 à 20 h 00
+Français : Mon-Fri 7h-20h
 
 Anglais : 24h/24, 7j/7
 

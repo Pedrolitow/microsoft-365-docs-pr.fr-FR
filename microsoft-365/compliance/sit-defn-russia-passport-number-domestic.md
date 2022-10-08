@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Russie numéro de passeport national informations sensibles type définition d’entité.
-ms.openlocfilehash: 186f5fc3e231a311ef8d9de4a87dd18c7b47972b
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: b28283b4bc01c74f7887fe67bc621631d8cdadcf
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67368848"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470297"
 ---
 # <a name="russia-passport-number-domestic"></a>Numéro de passeport national russe 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

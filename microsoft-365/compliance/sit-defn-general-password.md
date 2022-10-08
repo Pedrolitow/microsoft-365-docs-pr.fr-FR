@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition générale d’entité de type d’informations sensibles de mot de passe.
-ms.openlocfilehash: ea800d6798a2068eb90ff02e1550e48606e7b1ea
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 39a789fed5d0cf1467da4be0e05324dea3d5a12d
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995490"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476686"
 ---
 # <a name="general-password-preview"></a>Mot de passe général (préversion)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -40,7 +43,7 @@ ou
 
 Mot de passe en texte brut utilisé dans les extraits de code
 
-ou
+or
 
 Mot de passe en texte brut utilisé dans le script
 
@@ -48,15 +51,15 @@ ou
 
 Mot de passe en texte brut utilisé dans la configuration XML
 
-ou
+or
 
 Combinaison de 24 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
-ou
+or
 
 Combinaison de 32 caractères composés de lettres et de chiffres.
 
-ou
+or
 
 Combinaison de 32 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
@@ -64,7 +67,7 @@ ou
 
 Combinaison de 44 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
-ou
+or
 
 Combinaison de 88 caractères de lettres, de chiffres et de caractères spéciaux.
 
@@ -81,9 +84,9 @@ par exemple :
 
 `MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
 
-ou
+or
 
-Différents formats d’informations d’identification de connexion de ligne de commande, par exemple : 
+Différents formats d’informations d’identification de connexion en ligne de commande, par exemple : 
 
 `-u username:********`
 
@@ -111,7 +114,7 @@ par exemple :
 
 `zDbg.DataPuller.exe -secrets:eyJ`
 
-ou
+or
 
 Différents formats de mot de passe dans des extraits de code, par exemple :
 
@@ -137,7 +140,7 @@ par exemple :
 
 `password = "ZYXWVU_1";`
 
-ou
+or
 
 Différents formats de mot de passe dans le script, par exemple :
 
@@ -147,7 +150,7 @@ par exemple :
 
 `password=ZYXWVU_1`
 
-ou
+or
 
 Différents formats de mot de passe en XML, par exemple :
 
@@ -229,7 +232,7 @@ Oui
 
 ## <a name="description"></a>Description
 
-Ce SIT est conçu pour correspondre aux informations de sécurité, telles que les noms d’utilisateur et les mots de passe utilisés dans le [processus de connexion](/azure/key-vault/quick-create-portal) utilisateur de processus de connexion général. Il utilise plusieurs ressources principales :
+Ce SIT est conçu pour correspondre aux informations de sécurité telles que les noms d’utilisateur et les mots de passe utilisés dans le [processus de connexion](/azure/key-vault/quick-create-portal) utilisateur de processus de connexion général. Il utilise plusieurs ressources principales :
 
 - Modèles du littéral de chaîne encodé en Base64.
 - Modèles de contexte de mot de passe dans la ligne de commande.
@@ -252,7 +255,7 @@ Les modèles sont conçus pour correspondre aux informations d’identification 
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral
 
-- MII
+- Mii
 
 ### <a name="keyword_passwordcontextincmdline"></a>Keyword_PasswordContextInCmdLine
 
@@ -263,12 +266,12 @@ Les modèles sont conçus pour correspondre aux informations d’identification 
 - Curl
 - PowerShell
 - ps1
-- -u
+- -U
 - Smc
 - AutoLogon
 - Ldifde
 - Rclone
-- --env
+- --Env
 - SignTool
 - winexe
 - Net
@@ -319,7 +322,7 @@ Les modèles sont conçus pour correspondre aux informations d’identification 
 ### <a name="keyword_symmetrickey192"></a>Keyword_SymmetricKey192
 
 - mot de passe
-- -p
+- -P
 - azurecr
 
 ### <a name="keyword_symmetrickey256"></a>Keyword_SymmetricKey256

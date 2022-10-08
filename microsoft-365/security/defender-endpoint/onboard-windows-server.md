@@ -6,23 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0cf8152af40bb356940cb7ccaf1c8a1831252589
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8f691e01cb1ddafd3f968d931e03c49832e67419
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704257"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362030"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-server"></a>Intégration de Defender pour point de terminaison à Windows Server
 
@@ -51,6 +51,9 @@ Pour obtenir des conseils sur le téléchargement et l’utilisation de Sécurit
 ## <a name="license-requirement"></a>Condition requise pour la licence
 
 Pour pouvoir acheter Microsoft Defender pour point de terminaison référence SKU server, vous devez avoir déjà acheté un minimum combiné de l’une des licences d’abonnement suivantes : Windows E5/A5, Microsoft 365 E5/A5 ou Microsoft 365 E5 Sécurité. Pour plus d’informations sur les licences, consultez les [termes du produit](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
+
+> [!NOTE]
+> Depuis septembre 2022, Microsoft Defender pour point de terminaison Server n’est plus généralement disponible pour les nouveaux clients.
 
 ## <a name="windows-server-onboarding-overview"></a>Vue d’ensemble de l’intégration de Windows Server
 

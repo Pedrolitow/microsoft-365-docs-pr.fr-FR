@@ -15,19 +15,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - met150
-ms.openlocfilehash: ac9e4b9618350d22461b1bd8452d8ca2dc6cf6a3
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: bac6d70f5cbef7e19c03faf7079fc06c547acd45
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711086"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68361962"
 ---
 # <a name="suspicious-password-spray-related-ip-activity"></a>Activité d’adresse IP suspecte liée à la pulvérisation de mots de passe
 
@@ -54,50 +54,57 @@ Cette section contient des instructions pas à pas pour répondre à l’alerte 
 
 Voici un exemple d’alerte de pulvérisation de mot de passe dans la file d’attente d’alertes :
 
-:::image type="content" source="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png" alt-text="Capture d’écran de l’alerte Microsoft Defender 365." lightbox="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png":::
+:::image type="content" source="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png" alt-text="Capture d’écran de Microsoft Defender alerte 365." lightbox="../../media/alert-grading-playbook-password-spray/fig1-password-spray-alert.png":::
 
 Cela signifie qu’il existe une activité utilisateur suspecte provenant d’une adresse IP qui peut être associée à une tentative de pulvérisation de force brute ou de mot de passe selon des sources de renseignement sur les menaces.
 
 ### <a name="2-investigate-the-ip-address"></a>2. Examiner l’adresse IP
--   Examinez les [activités](microsoft-365-security-center-defender-cloud-apps.md) qui proviennent de l’adresse IP :
 
-    - **S’agit-il principalement d’échecs de connexion ?**
+- Examinez les [activités](microsoft-365-security-center-defender-cloud-apps.md) qui proviennent de l’adresse IP :
 
-    - **L’intervalle entre les tentatives de connexion est-il suspect ?** Les attaques par pulvérisation de mots de passe automatisées ont tendance à avoir un intervalle de temps régulier entre les tentatives.
+  - **S’agit-il principalement d’échecs de connexion ?**
 
-    - **Existe-t-il des tentatives réussies de connexion d’un utilisateur/de plusieurs utilisateurs avec des invites [MFA](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365) ?** L’existence de ces tentatives peut indiquer que l’adresse IP n’est pas malveillante.
+  - **L’intervalle entre les tentatives de connexion est-il suspect ?** Les attaques par pulvérisation de mots de passe automatisées ont tendance à avoir un intervalle de temps régulier entre les tentatives.
 
-    - **Les protocoles hérités sont-ils utilisés ?** L’utilisation de protocoles tels que POP3, IMAP et SMTP peut indiquer une tentative d’attaque par pulvérisation de mot de passe. La recherche `Unknown(BAV2ROPC)` dans l’agent utilisateur (type d’appareil) dans le [journal d’activité](/defender-cloud-apps/activity-filters#ip-address-insights) indique l’utilisation de protocoles hérités. Vous pouvez vous reporter à l’exemple ci-dessous lorsque vous examinez le journal d’activité. Cette activité doit être corrélée à d’autres activités.
+  - **Existe-t-il des tentatives réussies de connexion d’un utilisateur/de plusieurs utilisateurs avec des invites [MFA](/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365) ?** L’existence de ces tentatives peut indiquer que l’adresse IP n’est pas malveillante.
 
-        :::image type="content" source="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png" alt-text="Capture d’écran de l’interface Microsoft Defender 365 montrant le type d’appareil." lightbox="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png":::
+  - **Les protocoles hérités sont-ils utilisés ?** L’utilisation de protocoles tels que POP3, IMAP et SMTP peut indiquer une tentative d’attaque par pulvérisation de mot de passe. La recherche `Unknown(BAV2ROPC)` dans l’agent utilisateur (type d’appareil) dans le [journal d’activité](/defender-cloud-apps/activity-filters#ip-address-insights) indique l’utilisation de protocoles hérités. Vous pouvez vous reporter à l’exemple ci-dessous lorsque vous examinez le journal d’activité. Cette activité doit être corrélée à d’autres activités.
 
-        _Figure 1. Le champ Type d’appareil affiche `Unknown(BAV2ROPC)` l’agent utilisateur dans Microsoft 365 Defender._ 
-    - **Vérifiez l’utilisation de proxys anonymes ou du réseau Tor.** Les acteurs de menace utilisent souvent ces proxys alternatifs pour masquer leurs informations, ce qui les rend difficiles à tracer. Toutefois, l’utilisation de ces proxys n’est pas toutes corrélées avec des activités malveillantes. Vous devez examiner d’autres activités suspectes susceptibles de fournir de meilleurs indicateurs d’attaque.
-    - L’adresse IP provient-elle d’un réseau privé virtuel (VPN) ? Le VPN est-il digne de confiance ? **Vérifiez si l’adresse IP provient d’un VPN et examinez l’organisation derrière elle à l’aide d’outils** tels [que RiskIQ](https://community.riskiq.com/learn-more/enterprise). 
-    - **Vérifiez les autres adresses IP avec le même sous-réseau/fournisseur d’identité.** Parfois, les attaques par pulvérisation de mot de passe proviennent de nombreuses adresses IP différentes au sein du même sous-réseau/fournisseur d’identité.
--   **L’adresse IP est-elle commune pour le locataire ?** Vérifiez le journal d’activité pour voir si le locataire a vu l’adresse IP au cours des 30 derniers jours.
--   **Recherchez d’autres activités suspectes ou alertes provenant de l’adresse IP dans le locataire.** Les exemples d’activités à rechercher peuvent inclure la suppression d’e-mail, la création de règles de transfert ou les téléchargements de fichiers après une tentative de connexion réussie.
--   **Vérifiez le score de risque de l’adresse IP** à l’aide d’outils tels que RiskIQ.
-    
+    :::image type="content" source="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png" alt-text="Capture d’écran de Microsoft Defender interface 365 montrant le type d’appareil." lightbox="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png":::
+
+    _Figure 1. Le champ Type d’appareil affiche `Unknown(BAV2ROPC)` l’agent utilisateur dans Microsoft 365 Defender._
+
+  - **Vérifiez l’utilisation de proxys anonymes ou du réseau Tor.** Les acteurs de menace utilisent souvent ces proxys alternatifs pour masquer leurs informations, ce qui les rend difficiles à tracer. Toutefois, l’utilisation de ces proxys n’est pas toutes corrélées avec des activités malveillantes. Vous devez examiner d’autres activités suspectes susceptibles de fournir de meilleurs indicateurs d’attaque.
+  - L’adresse IP provient-elle d’un réseau privé virtuel (VPN) ? Le VPN est-il digne de confiance ? **Vérifiez si l’adresse IP provient d’un VPN et examinez l’organisation derrière elle à l’aide d’outils** tels [que RiskIQ](https://community.riskiq.com/learn-more/enterprise). 
+  - **Vérifiez les autres adresses IP avec le même sous-réseau/fournisseur d’identité.** Parfois, les attaques par pulvérisation de mot de passe proviennent de nombreuses adresses IP différentes au sein du même sous-réseau/fournisseur d’identité.
+- **L’adresse IP est-elle commune pour le locataire ?** Vérifiez le journal d’activité pour voir si le locataire a vu l’adresse IP au cours des 30 derniers jours.
+- **Recherchez d’autres activités suspectes ou alertes provenant de l’adresse IP dans le locataire.** Les exemples d’activités à rechercher peuvent inclure la suppression d’e-mail, la création de règles de transfert ou les téléchargements de fichiers après une tentative de connexion réussie.
+- **Vérifiez le score de risque de l’adresse IP** à l’aide d’outils tels que RiskIQ.
+
 ### <a name="3-investigate-suspicious-user-activity-after-signing-in"></a>3. Examiner l’activité suspecte des utilisateurs après la connexion
+
 Une fois qu’une adresse IP suspecte est reconnue, vous pouvez examiner les comptes qui se sont connectés. Il est possible qu’un groupe de comptes ait été compromis et utilisé avec succès pour se connecter à partir de l’adresse IP ou d’autres adresses IP similaires.
 
-Filtrez toutes les tentatives de connexion réussies à partir de l’adresse IP autour et peu après l’heure des alertes. Recherchez ensuite les activités malveillantes ou inhabituelles dans ces comptes après la connexion. 
--   Activités de compte d’utilisateur
+Filtrez toutes les tentatives de connexion réussies à partir de l’adresse IP autour et peu après l’heure des alertes. Recherchez ensuite les activités malveillantes ou inhabituelles dans ces comptes après la connexion.
 
-    **Vérifiez que l’activité dans le compte précédant l’activité de pulvérisation de mot de passe n’est pas suspecte.** Par exemple, vérifiez s’il existe une activité anormale en fonction de l’emplacement commun ou du fournisseur de services Internet, si le compte utilise un agent utilisateur qu’il n’a pas utilisé auparavant, si d’autres comptes invités ont été créés, si d’autres informations d’identification ont été créées après la connexion du compte à partir d’une adresse IP malveillante, entre autres.
--   Alertes
-    
-    **Vérifiez si l’utilisateur a reçu d’autres alertes précédant l’activité de pulvérisation de mot de passe.** Ces alertes indiquent que le compte d’utilisateur peut être compromis. Il peut s’agir, entre autres, d’une alerte de voyage impossible, d’une activité provenant d’un pays peu fréquent et d’une activité suspecte de suppression de courrier électronique.
--   Incident
+- Activités de compte d’utilisateur
 
-    **Vérifiez si l’alerte est associée à d’autres alertes qui indiquent un incident.** Si c’est le cas, vérifiez si l’incident contient d’autres alertes positives vraies.
+   **Vérifiez que l’activité dans le compte précédant l’activité de pulvérisation de mot de passe n’est pas suspecte.** Par exemple, vérifiez s’il existe une activité anormale en fonction de l’emplacement commun ou du fournisseur de services Internet, si le compte utilise un agent utilisateur qu’il n’a pas utilisé auparavant, si d’autres comptes invités ont été créés, si d’autres informations d’identification ont été créées après la connexion du compte à partir d’une adresse IP malveillante, entre autres.
+
+- Alertes
+
+  **Vérifiez si l’utilisateur a reçu d’autres alertes précédant l’activité de pulvérisation de mot de passe.** Ces alertes indiquent que le compte d’utilisateur peut être compromis. Il peut s’agir, entre autres, d’une alerte de voyage impossible, d’une activité provenant d’un pays peu fréquent et d’une activité suspecte de suppression de courrier électronique.
+
+- Incident
+
+  **Vérifiez si l’alerte est associée à d’autres alertes qui indiquent un incident.** Si c’est le cas, vérifiez si l’incident contient d’autres alertes positives vraies.
 
 ## <a name="advanced-hunting-queries"></a>Requêtes de repérage avancées
 
 [La chasse avancée](/microsoft-365/security/defender/advanced-hunting-overview) est un outil de chasse aux menaces basé sur une requête qui vous permet d’inspecter les événements de votre réseau et de localiser les indicateurs de menace.
 
 Utilisez cette requête pour rechercher les comptes qui tentent de se connecter avec les scores de risque les plus élevés provenant de l’adresse IP malveillante. Cette requête filtre également toutes les tentatives de connexion réussies avec les scores de risque correspondants.
+
 ```kusto
 let start_date = now(-7d);
 let end_date = now();
@@ -111,7 +118,9 @@ AADSignInEventsBeta
 | sort by AccountObjectId, RiskLevelDuringSignIn
 | partition by AccountObjectId ( top 1 by RiskLevelDuringSignIn ) // remove line to view all successful logins risk scores
 ```
+
 Utilisez cette requête pour vérifier si l’adresse IP suspecte a utilisé des protocoles hérités pour tenter de se connecter.
+
 ```kusto
 let start_date = now(-8h);
 let end_date = now();
@@ -121,7 +130,9 @@ AADSignInEventsBeta
 | where IPAddress == ip_address
 | summarize count() by UserAgent
 ```
+
 Utilisez cette requête pour passer en revue toutes les alertes des sept derniers jours associées à l’adresse IP suspecte.
+
 ```kusto
 let start_date = now(-7d);
 let end_date = now();
@@ -135,7 +146,9 @@ AlertInfo
 | where Timestamp between (start_date .. end_date)
 | where AlertId in (ip_alert_ids)
 ```
+
 Utilisez cette requête pour examiner l’activité du compte pour les comptes suspectés compromis.
+
 ```kusto
 let start_date = now(-8h);
 let end_date = now();
@@ -153,7 +166,9 @@ CloudAppEvents
     | extend ActivityPack = pack(ActivityType, ActivityCount)
     | summarize AccountActivities = make_bag(ActivityPack) by AccountObjectId
 ```
+
 Utilisez cette requête pour examiner toutes les alertes pour les comptes suspectés compromis.
+
 ```kusto
 let start_date = now(-8h); // change time range
 let end_date = now();
@@ -175,14 +190,16 @@ AlertInfo
 | project Timestamp, AccountObjectId, AlertId, Title, Category, Severity, ServiceSource, DetectionSource, AttackTechniques
 | sort by AccountObjectId, Timestamp
 ```
+
 ## <a name="recommended-actions"></a>Actions recommandées
 
 1. [Bloquez l’adresse IP de l’attaquant.](/azure/active-directory/conditional-access/block-legacy-authentication)
-2. Réinitialiser les informations d’identification des comptes d’utilisateur. 
+2. Réinitialiser les informations d’identification des comptes d’utilisateur.
 3. Révoquez les jetons d’accès des comptes compromis.
-4. [Bloquer l’authentification héritée.](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) 
-5. [Exiger l’authentification multifacteur pour les utilisateurs](/microsoft-365/business-premium/m365bp-conditional-access) , si possible, afin [d’améliorer la sécurité du compte](/azure/active-directory/authentication/tutorial-enable-azure-mfa) et de rendre difficile la compromission du compte par une attaque par pulvérisation de mots de passe pour l’attaquant. 
+4. [Bloquer l’authentification héritée.](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+5. [Exiger l’authentification multifacteur pour les utilisateurs](/microsoft-365/business-premium/m365bp-conditional-access) , si possible, afin [d’améliorer la sécurité du compte](/azure/active-directory/authentication/tutorial-enable-azure-mfa) et de rendre difficile la compromission du compte par une attaque par pulvérisation de mots de passe pour l’attaquant.
 6. Empêchez le compte d’utilisateur compromis de se connecter si nécessaire.
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble du classement des alertes](alert-grading-playbooks.md)

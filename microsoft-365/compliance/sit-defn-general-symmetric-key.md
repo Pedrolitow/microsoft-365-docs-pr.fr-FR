@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de clé symétrique générale.
-ms.openlocfilehash: 539fe92e769442de430252d7d14b5fc1e5febfb8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: eba81a451f8b39d08cd0419c970dc0fe894f2e45
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995489"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476678"
 ---
 # <a name="general-symmetric-key-preview"></a>Clé symétrique générale (préversion)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -49,7 +52,7 @@ par exemple :
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
 
-ou
+or
 
 Combinaison de 86 caractères :
  
@@ -72,8 +75,8 @@ Ce SIT est conçu pour correspondre aux informations de sécurité utilisées da
 
 Il utilise plusieurs ressources principales :
 
-- Modèles de clé symétrique de 256 bits encodée en Base64.
-- Modèles de clé symétrique codée en Base64 de 512 bits.
+- Modèles de clé symétrique 256 bits encodée en Base64.
+- Modèles de clé symétrique 512 bits encodée en Base64.
 - Modèles d’CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
 - Modèles de valeurs de maquette, de réactions et d’espaces réservés.
 - Dictionnaire de vocabulaire.

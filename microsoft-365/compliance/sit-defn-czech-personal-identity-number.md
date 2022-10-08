@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro d’identité personnelle tchèque.
-ms.openlocfilehash: a5c6156a2f84ff96025c3f73cf20dcbd201e90d3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: df2a7902f136c45e7f406061216e30e3fcec6372
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997670"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362923"
 ---
 # <a name="czech-personal-identity-number"></a>Numéro d’identité personnelle tchèque
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -95,10 +98,10 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - identityno
 - numéro d’assurance
 - numéro d’identification nationale
-- nationalnumber #
+- #numéronational
 - numéro national
 - osobní číslo
-- personalidnumber #
+- #numéroidpersonnel
 - numéro d’ID personnel
 - numéro d’identification personnelle
 - numéro personnel

@@ -12,18 +12,18 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier une boîte aux lettres personnalisée (également appelée boîte aux lettres de soumissions d’utilisateurs) pour collecter les messages de courrier indésirable et de hameçonnage signalés par les utilisateurs. D’autres paramètres complètent l’expérience de création de rapports pour les utilisateurs lorsqu’ils signalent des messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e11b30d14a7aff37c6c33dd5e8ce36b0e922097b
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 9f983a18f893f8d7a79b6ae93c5930a7be3abb02
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851059"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476944"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -57,7 +57,7 @@ Avant de commencer, vous devez configurer Exchange Online Protection et Defender
 
   - Désactivez le vidage automatique de zéro heure (ZAP) pour **les programmes malveillants** (section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionné ou `-ZapEnabled $false` dans PowerShell).
 
-  - Désactivez le filtrage des pièces jointes courantes (section \>**Paramètres de protection** **Activer que le filtre de pièces jointes communs** n’est pas sélectionné ou `EnableFileFilter $false` dans PowerShell).
+  - Désactivez le filtrage des pièces jointes courantes (section \>**Paramètres de protection** **Activer que le filtre de pièces jointes communs** n’est pas sélectionné ou `-EnableFileFilter $false` dans PowerShell).
   
   Pour obtenir des instructions, consultez [Créer une stratégie anti-programme malveillant](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
@@ -70,6 +70,8 @@ Avant de commencer, vous devez configurer Exchange Online Protection et Defender
   - Créez une stratégie de pièces jointes sécurisées pour la boîte aux lettres des soumissions d’utilisateurs dans laquelle l’analyse des pièces jointes sécurisées, y compris la livraison dynamique, est désactivée (section \> Paramètres de la réponse aux programmes **malveillants inconnus paramètres** \> **pièces jointes non fiables** **désactivée** ou `-Enable $false` dans PowerShell). Pour obtenir des instructions, consultez [Configurer des stratégies de pièces jointes sécurisées dans Microsoft Defender pour Office 365](set-up-safe-attachments-policies.md).
 
   - Créez une stratégie de liens fiables pour la boîte aux lettres de soumissions d’utilisateurs où l’analyse des liens sécurisés dans le courrier électronique est désactivée (**URL & paramètres de protection activés** **: liens fiables vérifie une liste de liens connus et malveillants lorsque les utilisateurs cliquent sur des liens dans le courrier électronique** n’est pas sélectionné ou `EnableSafeLinksForEmail $false` dans PowerShell).\> Pour obtenir des instructions, consultez [Configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-safe-links-policies.md).
+
+- Si vous disposez d’une protection contre la perte de données (DLP), excluez la boîte aux lettres personnalisée de celle-ci. Pour obtenir des instructions, consultez [Création d’exceptions dans DLP](/microsoft-365/compliance/dlp-conditions-and-exceptions).
 
 Une fois que vous avez vérifié que la boîte aux lettres répond à ces exigences, suivez les instructions de cet article pour identifier la boîte aux lettres des soumissions utilisateur et les autres paramètres de message signalés par l’utilisateur.
 
@@ -205,10 +207,10 @@ Pour spécifier la raison pour laquelle les messages joints d’origine ont ét�
   - 3. X-Ms-Exchange-Organization-Network-Message-Id
   - 4. X-Ms-Exchange-Crosstenant-Id
 
-> [!NOTE]
-> TenantId in `X-Ms-Exchange-Crosstenant-Id` doit être le même que le locataire.
->
-> `X-Microsoft-Antispam-Message-Info` doit être un xmi valide.
+   > [!NOTE]
+   > TenantId in `X-Ms-Exchange-Crosstenant-Id` doit être le même que le locataire.
+   >
+   > `X-Microsoft-Antispam-Message-Info` doit être un xmi valide.
 
 - La ligne Objet (titre de l’enveloppe) des messages envoyés à la boîte aux lettres des soumissions utilisateur doit commencer par l’une des valeurs de préfixe suivantes :
   - `1|` ou `Junk:`.

@@ -14,23 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible du numéro d’identification en Afrique du Sud.
-ms.openlocfilehash: 95fbf2baa8842f1654881d0435a0328b5593242a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ca385d9255ce5906769307ad1b29b5c377cec4bf
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996629"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472033"
 ---
 # <a name="south-africa-identification-number"></a>Numéro d'identification Afrique du Sud
 
 ### <a name="format"></a>Format
 
 13 chiffres pouvant contenir des espaces
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="pattern"></a>Modèle
 

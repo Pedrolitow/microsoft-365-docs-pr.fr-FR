@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible du numéro d’identification du contribuable (ITIN) des États-Unis.
-ms.openlocfilehash: c99635c29bb5b720ecc2d70577fe66d508ce9d9c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 56f57421d3a35e32c1b86d93feb670a57484275e
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997329"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68469967"
 ---
 # <a name="us-individual-taxpayer-identification-number-itin"></a>Numéro d’identification des particuliers américains (ITIN)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

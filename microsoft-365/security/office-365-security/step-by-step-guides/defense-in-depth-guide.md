@@ -14,15 +14,18 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 search.appverid: met150
-ms.openlocfilehash: 069dcd681fef38f5ea2a84646f56f1b23b2258a1
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 99d767aca4d5e619372569f621c07cbca96d403b
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797187"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363077"
 ---
 # <a name="getting-the-best-security-value-from-microsoft-defender-for-office-365-when-you-have-third-party-email-filtering"></a>Obtention de la meilleure valeur de sécurité à partir de Microsoft Defender pour Office 365 lorsque vous disposez d’un filtrage de courrier tiers
 
@@ -34,18 +37,18 @@ Ce guide vous convient si :
 Les informations ci-dessous détailleront comment tirer le meilleur parti de votre investissement, divisé en étapes faciles à suivre.
 
 ## <a name="what-you-will-need"></a>Ce dont vous aurez besoin
--   Boîtes aux lettres hébergées dans Office 365
+- Boîtes aux lettres hébergées dans Office 365
 - Une ou plusieurs des opérations suivantes :
   - Microsoft Defender pour Office 365 Plan 1 pour les fonctionnalités de protection
   - Microsoft Defender pour Office 365 plan 2 pour la plupart des autres fonctionnalités (inclus dans les plans E5)
   - Microsoft Defender pour Office 365 Trial (disponible pour tous les clients au aka.ms/tryMDO)
--   Autorisations suffisantes pour configurer les fonctionnalités décrites ci-dessous
+- Autorisations suffisantes pour configurer les fonctionnalités décrites ci-dessous
 
 ## <a name="step-1--understand-the-value-you-already-have"></a>Étape 1 : comprendre la valeur que vous avez déjà
 
 ### <a name="protection-features"></a>Fonctionnalités de protection
 
--   La protection intégrée offre un niveau de base de protection discrète et inclut les programmes malveillants, zero day (pièces jointes sécurisées) et la protection d’URL (liens sécurisés) dans les e-mails (y compris les e-mails internes), SharePoint Online, OneDrive et Teams. Notez que la protection d’URL fournie dans cet état se fait uniquement via un appel d’API. Il n’inclut pas d’URL ni de réécriture, mais nécessite un client Outlook pris en charge. Vous pouvez créer vos propres stratégies personnalisées pour développer votre protection.
+- La protection intégrée offre un niveau de base de protection discrète et inclut les programmes malveillants, zero day (pièces jointes sécurisées) et la protection d’URL (liens sécurisés) dans les e-mails (y compris les e-mails internes), SharePoint Online, OneDrive et Teams. Notez que la protection d’URL fournie dans cet état se fait uniquement via un appel d’API. Il n’inclut pas d’URL ni de réécriture, mais nécessite un client Outlook pris en charge. Vous pouvez créer vos propres stratégies personnalisées pour développer votre protection.
 
 **En savoir plus & regardez une vidéo de vue d’ensemble des liens sécurisés ici :** [Vue d’ensemble des liens sécurisés complets](../safe-links.md)
 
@@ -53,15 +56,15 @@ Les informations ci-dessous détailleront comment tirer le meilleur parti de vot
 
 ### <a name="detection-investigation-response-and-hunting-features"></a>Fonctionnalités de détection, d’investigation, de réponse et de chasse
 
--   Lorsque des alertes se déclenchent dans Microsoft Defender pour Office 365, elles sont automatiquement corrélées et combinées en incidents pour aider à réduire la fatigue des alertes sur le personnel de sécurité. Air (Automated Investigation and Response) déclenchera des enquêtes pour aider à corriger et à contenir les menaces.
+- Lorsque des alertes se déclenchent dans Microsoft Defender pour Office 365, elles sont automatiquement corrélées et combinées en incidents pour aider à réduire la fatigue des alertes sur le personnel de sécurité. Air (Automated Investigation and Response) déclenchera des enquêtes pour aider à corriger et à contenir les menaces.
 
 **En savoir plus, regardez une vidéo de vue d’ensemble et commencez ici :** [Réponse aux incidents avec Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview)
 
--   Analyse des menaces est notre solution de renseignement sur les menaces détaillée dans le produit par des chercheurs en sécurité Microsoft experts, des rapports détaillés conçus pour vous aider à mettre à jour les derniers groupes de menaces, les techniques d’attaque, la façon de protéger votre organisation avec des indicateurs de compromission (IOC) et bien plus encore.
+- Analyse des menaces est notre solution de renseignement sur les menaces détaillée dans le produit par des chercheurs en sécurité Microsoft experts, des rapports détaillés conçus pour vous aider à mettre à jour les derniers groupes de menaces, les techniques d’attaque, la façon de protéger votre organisation avec des indicateurs de compromission (IOC) et bien plus encore.
 
 **En savoir plus, regardez une vidéo de vue d’ensemble et commencez ici :** [Analyse des menaces dans Microsoft 365 Defender](../../defender/threat-analytics.md)
 
--   L’Explorateur peut être utilisé pour chasser les menaces, visualiser les modèles de flux de messagerie, repérer les tendances et identifier l’impact des modifications que vous apportez lors du paramétrage Defender pour Office 365. Vous pouvez également supprimer rapidement des messages de votre organisation en quelques clics simples.
+- L’Explorateur peut être utilisé pour chasser les menaces, visualiser les modèles de flux de messagerie, repérer les tendances et identifier l’impact des modifications que vous apportez lors du paramétrage Defender pour Office 365. Vous pouvez également supprimer rapidement des messages de votre organisation en quelques clics simples.
 
 **En savoir plus et commencer ici :** [Explorateur de menaces et détections en temps réel](../threat-explorer.md)
 
@@ -69,33 +72,33 @@ Les informations ci-dessous détailleront comment tirer le meilleur parti de vot
 
 ### <a name="protection-features"></a>Fonctionnalités de protection
 
--   Envisagez d’activer des stratégies au-delà de la protection intégrée. Activation de la protection du temps de clic ou de l’emprunt d’identité, par exemple, pour ajouter des couches supplémentaires ou combler les lacunes manquantes dans votre protection tierce. Sachez que si vous disposez d’une règle de transport ou d’un filtre de connexion qui remplace les verdicts (cela peut également être appelé SCL-1), vous devez résoudre ce problème avant d’activer d’autres fonctionnalités de protection.
+- Envisagez d’activer des stratégies au-delà de la protection intégrée. Activation de la protection du temps de clic ou de l’emprunt d’identité, par exemple, pour ajouter des couches supplémentaires ou combler les lacunes manquantes dans votre protection tierce. Sachez que si vous disposez d’une règle de transport ou d’un filtre de connexion qui remplace les verdicts (cela peut également être appelé SCL-1), vous devez résoudre ce problème avant d’activer d’autres fonctionnalités de protection.
 
 **En savoir plus ici :** [Stratégies anti-hameçonnage](../set-up-anti-phishing-policies.md)
 
--   Si votre fournisseur de sécurité actuel est configuré pour modifier les messages de *quelque manière* que ce soit, il est important de noter que les signaux d’authentification peuvent avoir un impact sur la capacité de Defender pour Office à vous protéger contre des attaques telles que l’usurpation d’identité. Si votre tiers prend en charge la chaîne de réception authentifiée (ARC), l’activation de cette étape est fortement recommandée dans votre parcours vers le filtrage double avancé. Le déplacement d’une configuration de modification de message vers Defender pour Office 365 est également une alternative.
+- Si votre fournisseur de sécurité actuel est configuré pour modifier les messages de *quelque manière* que ce soit, il est important de noter que les signaux d’authentification peuvent avoir un impact sur la capacité de Defender pour Office à vous protéger contre des attaques telles que l’usurpation d’identité. Si votre tiers prend en charge la chaîne de réception authentifiée (ARC), l’activation de cette étape est fortement recommandée dans votre parcours vers le filtrage double avancé. Le déplacement d’une configuration de modification de message vers Defender pour Office 365 est également une alternative.
 
 **En savoir plus ici :** [Utiliser des expéditeurs ARC approuvés pour les appareils et services légitimes entre l’expéditeur et le récepteur](../use-arc-exceptions-to-mark-trusted-arc-senders.md)
 
--   Le filtrage amélioré pour les connecteurs permet de conserver les informations d’adresse IP et d’expéditeur via le tiers. Cela améliore la précision de la pile de filtrage (protection), les fonctionnalités de post-violation & les améliorations de l’authentification.
+- Le filtrage amélioré pour les connecteurs permet de conserver les informations d’adresse IP et d’expéditeur via le tiers. Cela améliore la précision de la pile de filtrage (protection), les fonctionnalités de post-violation & les améliorations de l’authentification.
 
 **En savoir plus ici :** [Filtrage amélioré pour les connecteurs dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
--   La protection de compte prioritaire offre une meilleure visibilité pour les comptes dans les outils, ainsi qu’une protection supplémentaire lorsqu’ils sont dans un état de configuration de défense avancée en profondeur.
+- La protection de compte prioritaire offre une meilleure visibilité pour les comptes dans les outils, ainsi qu’une protection supplémentaire lorsqu’ils sont dans un état de configuration de défense avancée en profondeur.
 
 **En savoir plus ici :** [Protection prioritaire des comptes](protect-your-c-suite-with-priority-account-protection.md)
 
--   Advanced Delivery doit être configuré pour fournir des simulations de hameçonnage tierces correctement, et si vous disposez d’une boîte aux lettres Opérations de sécurité, envisagez de la définir comme une boîte aux lettres SecOps pour vous assurer que les e-mails *ne sont pas* supprimés de la boîte aux lettres en raison de menaces.
+- Advanced Delivery doit être configuré pour fournir des simulations de hameçonnage tierces correctement, et si vous disposez d’une boîte aux lettres Opérations de sécurité, envisagez de la définir comme une boîte aux lettres SecOps pour vous assurer que les e-mails *ne sont pas* supprimés de la boîte aux lettres en raison de menaces.
 
 **En savoir plus ici :** [Livraison avancée](../configure-advanced-delivery.md)
 
--   Les paramètres de messagerie signalés par l’utilisateur peuvent être configurés pour permettre aux utilisateurs de signaler des messages, directement à Microsoft, ou à votre boîte aux lettres personnalisée (pour s’intégrer aux flux de travail de sécurité actuels) ou les deux, le portail des soumissions est également accessible pour trier les faux positifs et les faux négatifs.
+- Les paramètres de messagerie signalés par l’utilisateur peuvent être configurés pour permettre aux utilisateurs de signaler des messages, directement à Microsoft, ou à votre boîte aux lettres personnalisée (pour s’intégrer aux flux de travail de sécurité actuels) ou les deux, le portail des soumissions est également accessible pour trier les faux positifs et les faux négatifs.
 
 **En savoir plus ici :** [Déployer et configurer le complément de message de rapport pour les utilisateurs](deploy-and-configure-the-report-message-add-in.md)
 
 ### <a name="detection-investigation-response-and-hunting-features"></a>Fonctionnalités de détection, d’investigation, de réponse et de chasse
 
--   La chasse avancée peut être utilisée pour rechercher de manière proactive les menaces dans votre organisation, à l’aide de requêtes partagées de la communauté pour vous aider à commencer. Vous pouvez également utiliser des détections personnalisées pour configurer des alertes lorsque des critères personnalisés sont remplis.
+- La chasse avancée peut être utilisée pour rechercher de manière proactive les menaces dans votre organisation, à l’aide de requêtes partagées de la communauté pour vous aider à commencer. Vous pouvez également utiliser des détections personnalisées pour configurer des alertes lorsque des critères personnalisés sont remplis.
 
 **En savoir plus, regardez une vidéo de vue d’ensemble et commencez ici :** [Vue d’ensemble - Repérage avancé](../../defender/advanced-hunting-overview.md)
 

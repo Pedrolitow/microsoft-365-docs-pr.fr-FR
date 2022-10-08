@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection:
 - M365-modern-desktop
 - m365initiative-edu
 ms.localizationpriority: medium
 description: Créez et gérez des réunions Teams avec Microsoft Learning Tools Interoperability (LTI) pour Schoology LMS.
-ms.openlocfilehash: 41f389e7a936f91928ea084dddb9688f8703c7bf
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9a2aaf2780bfa79324b7292e0383e595cec2e0f1
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694440"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471857"
 ---
 # <a name="integrate-microsoft-teams-meetings-with-schoology-lms"></a>Intégrer des réunions Microsoft Teams à Schoology LMS
 
@@ -28,7 +28,7 @@ Pour obtenir une vue d’ensemble de Microsoft LTI, consultez [Intégration des 
 > [!NOTE]
 > La personne qui effectue cette intégration doit être un administrateur de schoology. Toutefois, les utilisateurs de Schoology ayant accès au **Centre** d’applications Schoology peuvent également installer l’application LTI réunions Microsoft Teams.
 
-## <a name="register-the-teams-meetings-lti-app-for-schoology"></a>Inscrire l’application Teams Meetings LTI pour schoology
+## <a name="deploy-the-teams-meetings-lti-app-in-schoology"></a>Déployer l’application Teams Meetings LTI dans Schoology
 
 1. Connectez-vous à votre instance Schoology en tant qu’administrateur avec accès pour installer et configurer des applications.
 1. Accédez à l’application **Réunions Microsoft Teams** dans [**l’App Center**](https://app.schoology.com/apps) en ouvrant ce lien direct [réunions Microsoft Teams sur la schoology](https://app.schoology.com/apps/profile/6017478062).
@@ -50,17 +50,3 @@ Pour obtenir une vue d’ensemble de Microsoft LTI, consultez [Intégration des 
 >
 > 1. Accédez à la [liste Des applications](https://app.schoology.com/apps/school_apps) d’organisation, **sélectionnez le bouton Installer/Supprimer** et choisissez les cours dans lesquels installer l’application.
 > 1. Ils peuvent également sélectionner le lien **Installer votre ou vos applications** en bas du menu de navigation sur rail gauche du cours, puis sélectionner l’application **Réunions Microsoft Teams** à installer.
-
-## <a name="configure-the-teams-meetings-lti-app-to-work-with-schoology"></a>Configurer l’application Teams Meetings LTI pour qu’elle fonctionne avec Schoology
-
-1. Visitez [la passerelle Microsoft LMS](https://lti.microsoft.com/) et **sélectionnez le bouton Accéder au portail d’inscription** .
-1. Connectez-vous avec un compte d’administrateur Microsoft 365.
-1. Sélectionnez le bouton **Administration Consentement** et acceptez les autorisations.
-    1. Si cette étape n’est pas effectuée, l’étape suivante vous donnera une erreur, et vous ne pourrez pas effectuer cette étape pendant une heure une fois que vous avez reçu l’erreur.
-1. Sélectionnez le bouton **Créer un locataire LTI** .
-1. Dans la page Inscription LTI, choisissez **Schoology** dans la liste déroulante LTI Consumer Platform, puis sélectionnez le bouton **Suivant** .
-1. Collez **l’ID de déploiement** que vous avez copié lors de l’inscription de l’outil dans Schoology, puis sélectionnez **Suivant**.
-1. Passez en revue et enregistrez vos modifications. Un message s’affiche lors de l’inscription réussie.
-1. Vous pouvez également consulter les détails de votre inscription en sélectionnant le bouton **Afficher les locataires LTI** sur la page d’accueil.
-
-Une fois ces étapes effectuées, vos enseignants pourront utiliser l’application LTI Réunions Teams.

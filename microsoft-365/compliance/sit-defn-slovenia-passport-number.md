@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’information sensible de numéro de passeport de slovénie.
-ms.openlocfilehash: 76594c43b38c45b614698f0ceb3117263b5ca10a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d01581a14f50c41252f134b12a5ffe00d5971f77
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950181"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470583"
 ---
-# <a name="slovenia-passport-number"></a>Numéro de passeport en Slovénie
+# <a name="slovenia-passport-number"></a>Numéro de passeport slovène
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -46,16 +49,16 @@ Non
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- L’expression `Regex_slovenia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
-- Un mot clé à partir ou `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` est trouvé.
+- L’expression régulière `Regex_slovenia_eu_passport_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_eu_passport_number`ou `Keywords_slovenia_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date1` régulière recherche la date au format DD.MM.AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- L’expression `Regex_slovenia_eu_passport_number` régulière recherche le contenu qui correspond au modèle.
-- Un mot clé à partir ou `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` est trouvé.
+- L’expression régulière `Regex_slovenia_eu_passport_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_eu_passport_number`ou `Keywords_slovenia_eu_passport_number` est trouvé.
 
 ```xml
       <!-- Slovenia Passport Number -->
@@ -85,15 +88,15 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Passeport #
-- Passeport #
-- passportid
-- Passeports
-- passportno
-- passport no
-- passportnumber
+- #passeport
+- # passeport
+- passportID
+- passeports
+- n° de passeport
+- n° de passeport
+- numéropasseport
 - numéro de passeport
-- passportnumbers
+- numérospasseport
 - numéros de passeport
 
 ### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number

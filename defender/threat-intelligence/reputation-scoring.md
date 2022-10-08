@@ -8,16 +8,16 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 5563358e108c6461f44f777b5f2473b4f0bca0c7
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: bdb1acd3ca60042978710b8e59f28865530213ae
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737915"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68339705"
 ---
 # <a name="reputation-scoring"></a>Score de réputation
 
-Microsoft Defender Threat Intelligence (Defender TI) fournit des scores de réputation propriétaires pour n’importe quel hôte, domaine ou adresse IP. Qu’il s’agisse de valider la réputation d’une entité connue ou inconnue, ce score permet aux utilisateurs de comprendre rapidement les liens détectés avec une infrastructure malveillante ou suspecte. La plateforme fournit des informations rapides sur l’activité de ces entités (par exemple, les horodatages First et Last Seen, ASN, country, associated infrastructure) et une liste de règles qui ont un impact sur le score de réputation le cas échéant.
+Microsoft Defender Threat Intelligence (Defender TI) fournit des scores de réputation propriétaires pour n’importe quel hôte, domaine ou adresse IP. Qu’il s’agisse de valider la réputation d’une entité connue ou inconnue, ce score permet aux utilisateurs de comprendre rapidement les liens détectés avec une infrastructure malveillante ou suspecte. La plateforme fournit des informations rapides sur l’activité de ces entités (par exemple, les horodatages First et Last Seen, ASN, infrastructure associée) et une liste de règles qui ont un impact sur le score de réputation le cas échéant.
 
 Les données de réputation sont importantes pour comprendre la fiabilité de votre propre surface d’attaque et sont également utiles lors de l’évaluation d’hôtes, de domaines ou d’adresses IP inconnus qui apparaissent dans les investigations. Ces scores découvriront toute activité malveillante ou suspecte antérieure qui a affecté l’entité, ou d’autres indicateurs connus de compromission qui doivent être pris en compte.
 
@@ -54,7 +54,6 @@ Consultez l’exemple de règles de scoring de réputation ci-dessous :
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
 |     SSL-Certificate Self-Signed    |     Les certificats auto-signés peuvent indiquer un comportement malveillant                                         |
 |     Marqué comme malveillant            |     Marqué comme malveillant par un membre au sein de votre organisation                                         |
-|     Pays                        |     L’infrastructure hébergée dans ce pays est plus susceptible d’être malveillante                             |
 |     Composants web observés        |     Le nombre de composants web observés peut indiquer un caractère malveillant                                 |
 |     Serveur de noms                    |     Le domaine utilise un serveur de noms qui est plus susceptible d’être utilisé par une infrastructure malveillante         |
 |     Registraire                      |     Les domaines inscrits auprès de ce bureau d’enregistrement sont plus susceptibles d’être malveillants                           |

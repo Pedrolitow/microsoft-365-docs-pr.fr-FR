@@ -10,19 +10,19 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l'archivage en auto-expansion, qui fournit un stockage d’archivage supplémentaire pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: 1eb2aaf2593e9b5d2c1e254f7fa8e207cbc848d4
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: de8e581a814f33cf73740fc597bd0a6001e4494f
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359972"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476064"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>En savoir plus sur l’archivage à extension automatique
 
@@ -37,6 +37,8 @@ Pour obtenir des instructions détaillées sur l’activation de l’archivage �
 > [!NOTE]
 > L’archivage à extension automatique prend aussi en charge les boîtes aux lettres partagées.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="how-auto-expanding-archiving-works"></a>Fonctionnement de l’archivage en auto-expansion
 
 Comme expliqué dans l’introduction, un espace de stockage de boîte aux lettres supplémentaire est créé lorsque la boîte aux lettres d’archivage d’un utilisateur est activée. Lorsque l’archivage de développement automatique est activé, Microsoft Purview vérifie régulièrement la taille de la boîte aux lettres d’archivage. Lorsqu’une boîte aux lettres d’archivage est proche de sa limite de stockage, un espace de stockage supplémentaire est automatiquement créé pour l’archive. Si l’utilisateur manque de cet espace de stockage supplémentaire, un espace de stockage supplémentaire est automatiquement ajouté à l’archive de l’utilisateur. Ce processus se poursuit jusqu’à ce que l’archive de l’utilisateur atteigne une taille de 1,5 To. Ce processus se produit automatiquement, ce qui signifie que les administrateurs n’ont pas besoin de demander un stockage d’archivage supplémentaire ou de gérer l’archivage en auto-expansion.
@@ -45,7 +47,7 @@ Voici une vue d’ensemble rapide du processus.
 
 ![Vue d’ensemble du processus d’archivage en auto-expansion.](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
-1. L’archivage est activé pour une boîte aux lettres utilisateur ou une boîte aux lettres partagée. Une boîte aux lettres d’archivage avec 100 Go d’espace de stockage est créée et le quota d’avertissement pour la boîte aux lettres d’archivage est défini sur 90 Go.
+1. Archiving is enabled for a user mailbox or a shared mailbox. An archive mailbox with 100 GB of storage space is created, and the warning quota for the archive mailbox is set to 90 GB.
 
 2. Un administrateur active l’archivage en auto-expansion pour la boîte aux lettres. Si une stratégie de conservation ou de rétention est appliquée à la boîte aux lettres, le quota de stockage de la boîte aux lettres d’archivage est augmenté à 110 Go et le quota d’avertissement d’archivage est augmenté à 100 Go.
     
@@ -58,7 +60,9 @@ Voici une vue d’ensemble rapide du processus.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Qu’est-ce qui est déplacé vers l’espace de stockage d’archivage supplémentaire ?
 
-Pour utiliser efficacement le stockage d’archivage en auto-expansion, les dossiers peuvent être déplacés. Microsoft Purview détermine les dossiers déplacés quand un stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués dans ces dossiers pour faciliter le processus de déplacement. Lorsque vous affichez la partie archive de la liste des dossiers dans Outlook, ces sous-dossiers sont affichés sous le dossier d’origine. La convention d’affectation de noms utilisée par Microsoft 365 pour nommer ces sous-dossiers est **\<folder name\>_aaaa (créée sur mmm jj, aaaa h_mm)**, où :
+Pour utiliser efficacement le stockage d’archivage en auto-expansion, les dossiers peuvent être déplacés. Microsoft Purview détermine les dossiers déplacés quand un stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués dans ces dossiers pour faciliter le processus de déplacement. Vous devrez peut-être communiquer ce comportement aux utilisateurs finaux après avoir activé leur boîte aux lettres pour développer automatiquement les archives afin de définir les attentes.
+
+Lorsque vous affichez la partie archive de la liste des dossiers dans Outlook, ces sous-dossiers sont affichés sous le dossier d’origine. La convention d’affectation de noms utilisée par Microsoft 365 pour nommer ces sous-dossiers est **\<folder name\>_aaaa (créée sur mmm jj, aaaa h_mm)**, où :
 
 - **aaaa est l’année** de réception des messages dans le dossier.
 
@@ -91,17 +95,19 @@ Pour accéder aux messages stockés dans une archive en auto-expansion, les util
 
 - Outlook 2016 ou Outlook 2019 pour Mac
 
-Voici quelques éléments à prendre en compte lorsque vous utilisez Outlook ou Outlook sur le web pour accéder aux messages stockés dans une archive en auto-expansion.
+Voici quelques éléments à prendre en compte avant d’activer une boîte aux lettres pour développer automatiquement les archives :
 
-- Vous pouvez accéder à n’importe quel dossier de votre boîte aux lettres d’archivage, y compris ceux qui ont été déplacés vers la zone de stockage en auto-expansion.
+- Les utilisateurs peuvent accéder à n’importe quel dossier de leur boîte aux lettres d’archivage, y compris ceux qui ont été déplacés vers la zone de stockage développée automatiquement.
 
-- Si une boîte aux lettres d’archivage possède au moins une zone de stockage en auto-expansion, vous ne pouvez pas supprimer un dossier de la boîte aux lettres d’archivage ou de l’archive auxiliaire. En d’autres termes, une fois qu’une zone de stockage en auto-expansion a été mise en service, vous ne pouvez supprimer aucun dossier dans l’archive.
+- Si une boîte aux lettres d’archivage a au moins une zone de stockage développée automatiquement, les utilisateurs ne peuvent pas supprimer un dossier de la boîte aux lettres d’archivage ou de l’archive auxiliaire. En d’autres termes, une fois qu’une zone de stockage développée automatiquement a été provisionnée, elle ne peut supprimer aucun dossier dans l’archive.
 
-- Vous pouvez supprimer des éléments dans une zone de stockage développée automatiquement. Toutefois, vous ne pouvez pas utiliser la fonctionnalité Récupérer les éléments supprimés pour récupérer un élément après l’activation de l’archivage à extension automatique pour une boîte aux lettres.
+- Les utilisateurs peuvent supprimer des éléments dans une zone de stockage développée automatiquement. Toutefois, ils ne peuvent pas utiliser la [fonctionnalité Récupérer les éléments supprimés](https://support.microsoft.com/office/recover-deleted-items-in-outlook-for-windows-49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) pour récupérer un élément une fois que l’archivage de développement automatique est activé pour sa boîte aux lettres.
 
-- La recherche d’archivage en auto-expansion est disponible dans Outlook pour le web (OWA). Comme pour les archives en ligne, vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire. Lorsque l’archive est sélectionnée en tant qu’étendue de recherche dans OWA, toutes les archives (y compris les archivage en auto-expansion) et leurs sous-documents correspondants sont recherchés.
+- La recherche d’archivage en auto-expansion est disponible dans Outlook pour le web (OWA). À l’instar de l’archive en ligne, les utilisateurs peuvent rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire. Lorsque l’archive est sélectionnée en tant qu’étendue de recherche dans OWA, toutes les archives (y compris les archivage en auto-expansion) et leurs sous-documents correspondants sont recherchés.
 
-- La recherche d’archives développée automatiquement est disponible dans Outlook pour Windows dans le canal d’entreprise mensuel. Avec cette mise à jour, l’étendue de la boîte aux lettres actuelle est disponible, ce qui vous permet de rechercher dans l’archive développée automatiquement. Notez que la recherche n’est pas prise en charge pour la fonctionnalité d’archivage à extension automatique dans une situation d’archivage cloud uniquement (boîte aux lettres principale toujours locale). Pour plus d’informations à ce sujet et d’autres fonctionnalités de support Microsoft Search, consultez [Comment Outlook pour Windows connecté à Exchange Online utilise Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
+- La recherche d’archives développée automatiquement est disponible lorsque vous utilisez Outlook pour Windows à partir du canal Entreprise mensuel, build 16.0.13519+. Avec cette mise à jour, l’étendue boîte aux lettres actuelle est disponible, afin que les utilisateurs puissent rechercher dans l’archive développée automatiquement. Toutefois, la recherche n’est pas récursive pour les sous-dossiers imbriqués dans chaque dossier d’archive.
+
+- La recherche n’est pas prise en charge pour la fonctionnalité d’archivage développée automatiquement dans une situation d’archivage cloud uniquement (boîte aux lettres principale toujours locale). Pour plus d’informations à ce sujet et d’autres fonctionnalités de support Microsoft Search, consultez [Comment Outlook pour Windows connecté à Exchange Online utilise Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Le nombre d’éléments Outlook et le nombre de lecture/non lus (en Outlook et Outlook sur le web) dans une archive en auto-expansion peuvent ne pas être exacts.
 

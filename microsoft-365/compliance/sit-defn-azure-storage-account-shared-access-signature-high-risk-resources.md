@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Signature d’accès partagé du compte stockage Azure pour la définition d’entité de type d’informations sensibles des ressources à haut risque.
-ms.openlocfilehash: 007016f38f0aa6409cd81c317653cb0acc71a881
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a3413afd4bb397750f75646a7f1d4ba61e8888cc
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996289"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476900"
 ---
 # <a name="azure-storage-account-shared-access-signature-for-high-risk-resources-preview"></a>Signature d’accès partagé du compte stockage Azure pour les ressources à haut risque (préversion)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -50,7 +53,7 @@ par exemple :
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
 
-ou
+or
 
 Toute combinaison de 43 à 73 caractères composée de :
 
@@ -73,7 +76,7 @@ Ce SIT est conçu pour correspondre aux informations de sécurité utilisées po
 
 Il utilise plusieurs ressources principales :
 
-- Modèles de clé symétrique de 256 bits encodée en Base64.
+- Modèles de clé symétrique 256 bits encodée en Base64.
 - Modèles de clé symétrique 256 bits encodée par URL.
 - Modèles de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
 - Modèles de valeurs de maquette, de réactions et d’espaces réservés.

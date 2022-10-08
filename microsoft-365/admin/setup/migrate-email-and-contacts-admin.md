@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -33,12 +34,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Apprenez à importer des contacts, des calendriers et des e-mails à partir de Gmail ou d’un autre fournisseur de messagerie et à les migrer vers Microsoft 365.
-ms.openlocfilehash: 2b0ecdcd7867353ebf7bd9c45bf8cb435efffa99
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 9de7c38efe57900dd8040fd364ded9fd1147a10b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662748"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166326"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrer le courrier électronique et les contacts vers Microsoft 365
 
@@ -103,7 +104,7 @@ Ajoutez un compte (par exemple, votre compte Gmail privé) à Outlook.
   
 - Ouvrez Outlook, puis accédez à **Fichier** \> **Ajouter un compte**.
     
-Vous avez besoin d'une procédure plus détaillée ? Voir [Ajouter un compte](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
+Need more detailed steps? See [Add an account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
 [![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   

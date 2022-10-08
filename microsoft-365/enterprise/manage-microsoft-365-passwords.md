@@ -1,11 +1,11 @@
 ---
-title: Gérer Microsoft 365 mots de passe de compte d’utilisateur
+title: Gérer les mots de passe de compte d’utilisateur Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -21,19 +22,19 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Découvrez comment gérer Microsoft 365 mots de passe de compte d’utilisateur.
-ms.openlocfilehash: 689f88c2380f0655af70cea08404ed7163fa1239
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment gérer les mots de passe de compte d’utilisateur Microsoft 365.
+ms.openlocfilehash: 3c6683fb916ac066d9fff3b168299c50391cbe63
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094391"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163138"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Gérer Microsoft 365 mots de passe de compte d’utilisateur
+# <a name="manage-microsoft-365-user-account-passwords"></a>Gérer les mots de passe de compte d’utilisateur Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer Microsoft 365 mots de passe de compte d’utilisateur de plusieurs façons, en fonction de votre configuration d’identité. Vous pouvez gérer des comptes d’utilisateur dans le [Centre d'administration Microsoft 365](/admin), dans services de domaine Active Directory (AD DS) ou dans le centre d’administration Azure Active Directory (Azure AD).
+Vous pouvez gérer les mots de passe de compte d’utilisateur Microsoft 365 de différentes manières, en fonction de votre configuration d’identité. Vous pouvez gérer des comptes d’utilisateur dans le [Centre d'administration Microsoft 365](/admin), dans services de domaine Active Directory (AD DS) ou dans le centre d’administration Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planifier l’emplacement et la façon dont vous allez gérer les mots de passe de votre compte d’utilisateur
 
@@ -68,21 +69,21 @@ Vous pouvez interdire les mots de passe incorrects [dans le cloud](/azure/active
 
 ## <a name="simplify-user-sign-in"></a>Simplifiez la connexion utilisateur
 
-Azure AD Sign-On unique transparente (Azure AD l’authentification unique transparente) fonctionne avec PHS et Pass-Through Authentication (PTA), pour permettre à vos utilisateurs de se connecter à des services qui utilisent Azure AD comptes d’utilisateur sans avoir à entrer leurs mots de passe et, dans de nombreux cas, leurs noms d’utilisateur. Cela donne à vos utilisateurs un accès facile aux applications basées sur le cloud, telles qu’Office 365, sans nécessiter des composants supplémentaires en local, tels que des serveurs de fédération d’identité.
+Azure AD Seamless Single Sign-On (Azure AD Seamless SSO) fonctionne avec PHS et Pass-Through Authentication (PTA), pour permettre à vos utilisateurs de se connecter à des services qui utilisent des comptes d’utilisateur Azure AD sans avoir à taper leurs mots de passe et, dans de nombreux cas, leurs noms d’utilisateur. Cela donne à vos utilisateurs un accès facile aux applications basées sur le cloud, telles qu’Office 365, sans nécessiter des composants supplémentaires en local, tels que des serveurs de fédération d’identité.
 
 Vous configurez l’authentification unique transparente Azure AD avec l’outil Azure AD Connect. Reportez-vous aux [instructions pour configurer l’authentification unique transparente d’Azure AD](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 <a name="pw_writeback"></a>
 ## <a name="simplify-password-updates-to-ad-ds"></a>Simplifier les mises à jour de mot de passe pour AD DS
 
-Avec la réécriture du mot de passe, vous pouvez autoriser les utilisateurs à réinitialiser leurs mots de passe via Azure AD, qui est ensuite répliqué dans AD DS. Les utilisateurs n’ont pas besoin d’accéder à leur service AD DS local pour mettre à jour leurs mots de passe. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
+Avec la réécriture du mot de passe, vous pouvez autoriser les utilisateurs à réinitialiser leurs mots de passe via Azure AD, qui est ensuite répliqué vers AD DS. Les utilisateurs n’ont pas besoin d’accéder à leur service AD DS local pour mettre à jour leurs mots de passe. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
 
 L’écriture différée de mot de passe est requise pour exploiter pleinement les fonctionnalités Azure AD Identity Protection, comme obliger les utilisateurs à modifier leur mot de passe en local lorsqu’un risque élevé de compromission de compte a été détecté.
 
 Pour obtenir plus d’informations et les instructions de configuration, consultez l’article [Azure AD SSPR avec l’écriture différée de mot de passe](/azure/active-directory/active-directory-passwords-writeback).
 
 >[!Note]
->Procédez à la mise à niveau vers la dernière version d’Azure AD Connect pour vous assurer la meilleure expérience possible et les nouvelles fonctionnalités dès leur diffusion. Pour obtenir plus d’informations, consultez l’article [Installation personnalisée d’Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 ## <a name="simplify-password-resets"></a>Simplifiez les réinitialisations du mot de passe

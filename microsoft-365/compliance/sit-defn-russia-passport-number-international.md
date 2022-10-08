@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Russie numéro de passeport international de type d’information sensible définition d’entité.
-ms.openlocfilehash: 4f8c581dccac25d3c7f402e2d273037918c05868
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 1cc507d7c36a316dea8b8779a2993a907a33c375
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367420"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472055"
 ---
 # <a name="russia-passport-number-international"></a>Numéro de passeport russe international
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

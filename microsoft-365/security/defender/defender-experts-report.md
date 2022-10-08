@@ -18,15 +18,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f54bc1b1f3569be0267e49971eae2ed4a84e213b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 9a47884f4918359278b192c3314e5b2374d64f3f
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67680238"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362835"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Comprendre le rapport Defender Experts for Hunting dans Microsoft 365 Defender
 
@@ -36,7 +37,7 @@ ms.locfileid: "67680238"
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender Experts for Hunting dispose d’une intelligence humaine et d’une technologie formée par des experts pour aider Microsoft 365 Defender clients à comprendre les menaces importantes auxquelles ils sont confrontés. Il montre comment les compétences de Defender Expert en matière de chasse aux menaces, une compréhension approfondie du paysage des menaces et la connaissance des menaces émergentes peuvent vous aider à identifier, hiérarchiser et résoudre ces menaces dans votre environnement. 
+Microsoft Defender experts pour la chasse couches intelligence humaine et une technologie formée par des experts pour aider Microsoft 365 Defender clients à comprendre les menaces importantes qu’ils font face. Il montre comment les compétences de Defender Expert en matière de chasse aux menaces, une compréhension approfondie du paysage des menaces et la connaissance des menaces émergentes peuvent vous aider à identifier, hiérarchiser et résoudre ces menaces dans votre environnement. 
 
 Le service Defender Experts for Hunting publie des rapports mensuels pour vous aider à comprendre toutes les menaces que le service de chasse a exposées dans votre environnement, ainsi que les alertes générées par vos produits Microsoft 365 Defender.
 
@@ -56,7 +57,7 @@ Chaque section du rapport est conçue pour fournir des insights supplémentaires
 
 Reportez-vous à la capture d’écran suivante d’un exemple de rapport :
 
-![Capture d’écran d’un rapport Microsoft Defender Experts for Hunting dans Microsoft 365 Defender portail.](../../media/mte/defenderexperts/defender-experts-report.png)
+![Capture d’écran d’un rapport Microsoft Defender Experts pour la chasse dans Microsoft 365 Defender portail.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Afficher les notifications des experts Defender
 
@@ -73,20 +74,20 @@ Ce lien vous redirige vers la page Microsoft 365 Defender incidents. Les alertes
 
 Les tactiques MITRE ATT&CK représentent des objectifs adversaires, ce qu’ils essaient d’atteindre à chaque phase d’attaque. La section **MITRE ATT&tactiques CK observées** dans le rapport suit la progression des attaques contre la phase qu’elles ont atteinte :
 
-1.  Reconnaissance
-2.  Développement de ressources
-3.  Accès initial
-4.  Exécution
-3.  Persistance
-4.  Élévation des privilèges
-5.  Évasion de défense
-6.  Accès aux informations d’identification
-7.  Découverte
-8.  Déplacement latéral
-9.  Collection
-10. Commande et contrôle
-11. Exfiltration
-12. Impact
+1. Reconnaissance
+2. Développement de ressources
+3. Accès initial
+4. Exécution
+5. Persistance
+6. Élévation des privilèges
+7. Évasion de défense
+8. Accès aux informations d’identification
+9. Découverte
+10. Déplacement latéral
+11. Collection
+12. Commande et contrôle
+13. Exfiltration
+14. Impact
 
 Les signaux de Microsoft 365 Defender et les investigations effectuées par les experts Defender pour la chasse permettent d’identifier ces tactiques, représentées dans le graphique à barres. Ce graphique vous aide à visualiser où se trouve la poussée et vous fournit les informations dont vous avez besoin pour planifier les actions de confinement et de correction correspondantes.
 
@@ -103,4 +104,3 @@ Parmi les différentes catégories de menaces disponibles, les catégories suiva
 - Remise
 
 Vous pouvez hiérarchiser la correction en fonction de la catégorie la plus affectée, comme illustré dans le graphique à barres.
-

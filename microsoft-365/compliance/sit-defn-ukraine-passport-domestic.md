@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible nationale de passeport de l’Ukraine.
-ms.openlocfilehash: 7a941d28dc92f54ceb1c2f00d910b0ba1722bfa0
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 9880c595b0814d71cc84d6fffd1c691cf40e68df
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367310"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471901"
 ---
 # <a name="ukraine-passport-domestic"></a>Passeport interne ukrainien
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
