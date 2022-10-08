@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité de certificat de gestion des abonnements Azure (préversion)
+title: Définition d’entité de certificat de gestion des abonnements Azure
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de certificat de gestion d’abonnement Azure.
-ms.openlocfilehash: 7ce7b09fdeae6f9622a3aac4f92beb446715f8df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d75a012c92d31dc5a103e6379241b9ecb2812277
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995679"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68502981"
 ---
-# <a name="azure-subscription-management-certificate-preview"></a>Certificat de gestion des abonnements Azure (préversion)
+# <a name="azure-subscription-management-certificate"></a>Certificat de gestion des abonnements Azure
 
-## <a name="format"></a>Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Ce SIT est également inclus dans le sit [groupé Toutes les informations d’identification](sit-defn-all-creds.md) .
+
+ ## <a name="format"></a>Format
 
 Combinaison d’un maximum de 20 000 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
@@ -45,9 +50,18 @@ par exemple :
 
 `MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
 
+## <a name="credential-example"></a>Exemple d’informations d’identification 
+
+`<Subscription id="f70163aa-03a8-4f4a-8a30-d38e3f38fde4" ManagementCertificate="MIIPuQIBAzCCD38GCSqGS...`
+
+> [!IMPORTANT]
+> Cet exemple a été tronqué. Il ne s’agit pas d’un exemple détectable de ce SIT.
+
 ## <a name="checksum"></a>Somme de contrôle
 
 Oui
+
+Les SIT qui ont des sommes de contrôle utilisent un calcul unique pour vérifier si les informations sont valides. Cela signifie que lorsque la valeur **de somme de contrôle** est **Oui**, le service peut effectuer une détection positive basée sur les données sensibles uniquement. Lorsque la valeur de somme de **contrôle** est Aucun élément (secondaire) supplémentaire **ne** doit également être détecté pour que le service effectue une détection positive.
 
 ## <a name="definition"></a>Définition
 
@@ -64,4 +78,4 @@ Les modèles sont conçus pour correspondre aux informations d’identification 
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral :
 
-- MII
+- Mii

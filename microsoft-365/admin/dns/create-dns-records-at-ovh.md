@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et les autres services sur OVH pour Microsoft.
-ms.openlocfilehash: 2f30199f2868aa4b0097186009ac5f9bcb75abce
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 3caf1207f70d592a43e45b8210c5d18ff09662cc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563294"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207024"
 ---
 # <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Connecter vos enregistrements DNS à OVH à Microsoft 365
 
@@ -37,14 +38,14 @@ Si OVH est votre fournisseur d'hébergement DNS, procédez de la manière décri
 Une fois ces enregistrements ajoutés sur OVH, votre domaine est configuré pour utiliser les services Microsoft.
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 
-Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons vérifier qu’il vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que le domaine vous appartient.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
-> Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Pour commencer, accédez à la page de vos domaines sur le site d’OVH en utilisant [ce lien](https://www.ovh.com/manager/). Vous serez invité à vous connecter.
 
@@ -66,7 +67,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 
 1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. Pour affecter une valeur TTL, choisissez **Personnalisé** dans la liste déroulante, puis tapez la valeur dans la zone de texte.
 
-   |Type d’enregistrement|Sous-domaine|Durée de vie|Value (Valeur)|
+   |Type d’enregistrement|Sous-domaine|Durée de vie|Valeur|
    |---|---|---|---|
    |TXT|(laissez vide)|3600 secondes|MS=msXXXXXXXX  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|
 
@@ -93,7 +94,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
 
 > [!NOTE]
->  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
 
@@ -120,7 +121,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
     > [!NOTE]
     > Par défaut, OVH utilise une notation relative pour localiser la cible. Celle-ci s’ajoute au nom de domaine à la fin de l’enregistrement cible. Pour utiliser une notation absolue, ajoutez un point à l’enregistrement cible, ainsi que montré dans le tableau ci-dessous.
 
-   |Sous-domaine|Durée de vie|Priority|Target|
+   |Sous-domaine|Durée de vie|Priorité|Target|
    |---|---|---|---|
    |(laissez vide)|3600 secondes|0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|\<domain-key\>.mail.protection.outlook.com  <br/> **Note:** Obtenez votre *\<domain-key\>* fichier à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|
 
@@ -281,7 +282,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 1. Ajoutez l’autre enregistrement CNAME.
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et mobile Gestion des appareils pour Microsoft 365
 
@@ -323,4 +324,4 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 1. Ajoutez l’autre enregistrement CNAME.
 
 > [!NOTE]
-> L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

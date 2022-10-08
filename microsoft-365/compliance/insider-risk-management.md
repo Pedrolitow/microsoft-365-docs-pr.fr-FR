@@ -12,20 +12,23 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 5b82aa83a790a96f8196f89f75f2aaf905fc0a14
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+- highpri
+ms.openlocfilehash: 26aa7bd217092ad28932ff91113f130122cdfeb2
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648700"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506035"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
-> [!TIP]
-> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 La gestion des risques liés aux initiés Microsoft Purview est une solution de conformité qui contribue à minimiser les risques internes en vous permettant de détecter, d'enquêter et d'agir sur les activités malveillantes et involontaires au sein de votre organisation. Les stratégies relatives aux risques d'initiés vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, y compris les mesures à prendre et l'escalade des cas vers Microsoft eDiscovery (Premium) si nécessaire. Les analystes de risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s'assurer que les utilisateurs respectent les normes de conformité de votre organisation.
 
@@ -46,6 +49,8 @@ Regardez la [vidéo Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8O
 
 > [!IMPORTANT]
 > La gestion des risques internes est actuellement disponible dans les locataires hébergés dans des régions géographiques et des pays pris en charge par les dépendances du service Azure. Pour vérifier que la gestion des risques internes est prise en charge pour votre organisation, consultez [la disponibilité des dépendances Azure par pays/région](/troubleshoot/azure/general/dependency-availability-by-country).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="modern-risk-pain-points"></a>Points de douleur à risque modernes
 

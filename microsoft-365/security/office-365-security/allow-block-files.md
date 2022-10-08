@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des fichiers dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0b2af1b8cad13c2c0a74424263e5452d45b12183
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: d9413f4cdcb909af87cef1532eb74350b50aa910
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644354"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68090968"
 ---
 # <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des fichiers utilisant la liste Autoriser/Bloquer des clients
 
@@ -69,7 +69,7 @@ Vous gérez les entrées d’autorisation et de blocage des fichiers dans le por
 
   **Remarques** :
 
-  - L'ajout d'utilisateurs au rôle Azure Active Directory Domain Services correspondant dans le centre d'administration Microsoft 365 donne aux utilisateurs les autorisations *et* autorisations requises pour d'autres fonctionnalités dans Microsoft 365. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 ## <a name="create-block-entries-for-files"></a>Créer des entrées de bloc pour les fichiers

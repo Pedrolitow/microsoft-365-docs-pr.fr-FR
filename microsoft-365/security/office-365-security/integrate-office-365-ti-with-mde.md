@@ -2,7 +2,7 @@
 title: Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour point de terminaison
 f1.keywords:
 - NOCSH
-keywords: intégrer, Microsoft Defender, Microsoft Defender pour point de terminaison
+keywords: intégrer, Microsoft Defender Microsoft Defender pour point de terminaison
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender pour point de terminaison pour obtenir des informations plus détaillées sur les menaces contre vos appareils et le contenu de vos e-mails.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: be951f29924300bfa14c92df549c7959a995c7ef
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 3005f5165b967ca13fc2688971c82a5fab36b2ed
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598382"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066495"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour point de terminaison
 

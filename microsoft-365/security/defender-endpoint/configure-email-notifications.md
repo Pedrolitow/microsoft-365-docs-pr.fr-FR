@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9455ee4d7c4ff01cf003b89dece0b9f05efe873e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 547f31d5383af5b0766e53bc36c412d610145966
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699189"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195432"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurer des notifications d’alerte dans Microsoft Defender pour point de terminaison
 
@@ -39,7 +41,8 @@ Vous pouvez configurer Defender pour point de terminaison pour envoyer des notif
 Si vous utilisez [Defender entreprise](../defender-business/mdb-overview.md), vous pouvez configurer des notifications par e-mail pour des utilisateurs spécifiques (pas des rôles ou des groupes).
 
 > [!NOTE]
-> Seuls les utilisateurs disposant des autorisations « Gérer les paramètres de sécurité » peuvent configurer des notifications par e-mail. Si vous avez choisi d’utiliser la gestion des autorisations de base, les utilisateurs dotés de rôles Administrateur de sécurité ou Administrateur général peuvent configurer des notifications par e-mail.
+> - Seuls les utilisateurs disposant des autorisations « Gérer les paramètres de sécurité » peuvent configurer des notifications par e-mail. Si vous avez choisi d’utiliser la gestion des autorisations de base, les utilisateurs dotés de rôles Administrateur de sécurité ou Administrateur général peuvent configurer des notifications par e-mail.
+> - La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 Vous pouvez définir les niveaux de gravité d’alerte qui déclenchent des notifications. Vous pouvez également ajouter ou supprimer des destinataires de la notification par e-mail. Les nouveaux destinataires sont avertis des alertes déclenchées après leur ajout. Pour plus d’informations sur les alertes, consultez [Afficher et organiser la file d’attente d’alertes](alerts-queue.md).
 

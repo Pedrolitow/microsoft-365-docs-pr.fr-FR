@@ -14,16 +14,17 @@ ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 561f5e5b4025d058b10b9e55b95edaad15e9cad8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 38d8710b121a445c24abfb9a67a9e0f60cf520ec
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692363"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379983"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -83,7 +84,7 @@ Spécifie la préférence d’application du moteur antivirus. Il existe trois v
 
 #### <a name="enabledisable-behavior-monitoring"></a>Activer/désactiver la surveillance du comportement 
 
-Détermine si la fonctionnalité de surveillance et de blocage du comportement est activée ou non sur l’appareil. Pour améliorer l’efficacité de la protection de la sécurité, nous vous recommandons de maintenir cette fonctionnalité activée.
+Détermine si la fonctionnalité de surveillance et de blocage du comportement est activée ou non sur l’appareil. 
 
 <br>
 
@@ -388,7 +389,6 @@ Le profil de configuration suivant :
 - Activer les mises à jour automatiques du renseignement de sécurité
 - Protection fournie par le cloud
 - Activer la soumission automatique d’exemples au `safe` niveau
-- Activer la surveillance du comportement
 
 ### <a name="sample-profile"></a>Exemple de profil
 

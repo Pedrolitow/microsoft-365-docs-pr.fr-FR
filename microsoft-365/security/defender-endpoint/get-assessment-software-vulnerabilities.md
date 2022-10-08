@@ -11,17 +11,19 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 2bf3937dd3e9f500289284d18cfe0784ac3f08e9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2fff9423cf42a23aefe6b900ed009ea09b7f82b4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696768"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68173586"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exporter l’évaluation des vulnérabilités logicielles par appareil
 

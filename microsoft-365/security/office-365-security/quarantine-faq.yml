@@ -14,18 +14,18 @@ metadata:
   - MET150
   ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
   ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
   description: Les administrateurs peuvent consulter les questions et réponses fréquemment posées sur les messages mis en quarantaine dans Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
   ms.subservice: mdo
   ms.service: microsoft-365-security
-  ms.openlocfilehash: fd52ed8fc9ac6962e67fffcf8a110f119f05f702
-  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+  ms.openlocfilehash: 0da9c432fbc4a9ae0388d431e0b3485e1f7625e8
+  ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/03/2022
-  ms.locfileid: "67596311"
+  ms.lasthandoff: 09/27/2022
+  ms.locfileid: "68091716"
 title: FAQ sur les messages mis en quarantaine
 summary: >
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]

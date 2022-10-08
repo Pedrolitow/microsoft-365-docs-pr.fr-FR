@@ -13,14 +13,16 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 67b939195a044d912620fe433dadada6513d238b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 4a6d0d1be1e26023b93164861a6d3533fda94220
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743347"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68173828"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
@@ -55,11 +57,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Si vous souhaitez auditer entièrement le fonctionnement de l’accès contrôlé aux dossiers dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
-Vous pouvez également utiliser نهج المجموعة, Intune, la gestion des appareils mobiles (GPM) ou Microsoft Endpoint Manager pour configurer et déployer le paramètre, comme décrit dans la [rubrique principale d’accès contrôlé aux dossiers](controlled-folders.md).
+Vous pouvez également utiliser stratégie de groupe, Intune, la gestion des appareils mobiles (GPM) ou Microsoft Endpoint Manager pour configurer et déployer le paramètre, comme décrit dans la [rubrique principale d’accès contrôlé aux dossiers](controlled-folders.md).
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Windows عارض الأحداث
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Windows observateur d'événements
 
-Les événements d’accès contrôlé aux dossiers suivants s’affichent dans Windows عارض الأحداث sous le dossier Microsoft/Windows/Windows Defender/Operational.
+Les événements d’accès contrôlé aux dossiers suivants apparaissent dans windows observateur d'événements sous le dossier Microsoft/Windows/Windows Defender/Operational.
 
 ID d’événement | Description
 -|-
@@ -74,7 +76,7 @@ ID d’événement | Description
 
 Pendant votre évaluation, vous pouvez ajouter à la liste des dossiers protégés ou autoriser certaines applications à modifier des fichiers.
 
-Consultez [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md) pour configurer la fonctionnalité avec des outils de gestion, notamment نهج المجموعة, PowerShell et les fournisseurs de services de configuration GPM.
+Consultez [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md) pour configurer la fonctionnalité avec des outils de gestion, notamment stratégie de groupe, PowerShell et les fournisseurs de services de configuration GPM.
 
 ## <a name="see-also"></a>Voir aussi
 

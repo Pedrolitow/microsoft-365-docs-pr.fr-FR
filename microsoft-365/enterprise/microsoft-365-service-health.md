@@ -11,18 +11,19 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: État d'intégrité du service Microsoft 365
-ms.openlocfilehash: 88969f218bd36f39757c68c409474d3ce20a50d1
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: ac29e65f56a190114a7e6440d0ddd335951d5598
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570224"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170330"
 ---
 # <a name="microsoft-365-network-health-status"></a>État d’intégrité du réseau Microsoft 365
 

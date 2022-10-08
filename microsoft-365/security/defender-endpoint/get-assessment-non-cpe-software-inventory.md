@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 8d79cbcd8f2d83fefbecd1a85b996e395c9026be
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d284fecce74d56770c59ee6cc21ea8b06aa281bd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695278"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207179"
 ---
 # <a name="export-non-product-code-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel du code non produit par appareil
 
@@ -184,7 +186,7 @@ Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informat
 GET /api/machines/Api/Machines/SoftwareInventoryNonCpeExport
 ```
 
-### <a name="parameters"></a>Paramètres
+### <a name="parameters"></a>Parameters
 
 - sasValidHours : nombre d’heures pendant lesquelles les URL de téléchargement sont valides (maximum 24 heures)
 

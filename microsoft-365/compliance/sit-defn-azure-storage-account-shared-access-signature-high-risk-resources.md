@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Signature d’accès partagé du compte stockage Azure pour la définition d’entité de type d’informations sensibles des ressources à haut risque.
-ms.openlocfilehash: a3413afd4bb397750f75646a7f1d4ba61e8888cc
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 6730032323e86b138e4b124ca73c3413af91c9db
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476900"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504380"
 ---
 # <a name="azure-storage-account-shared-access-signature-for-high-risk-resources-preview"></a>Signature d’accès partagé du compte stockage Azure pour les ressources à haut risque (préversion)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Format
+Ce SIT est également inclus dans le sit [groupé Toutes les informations d’identification](sit-defn-all-creds.md) .
+
+ ## <a name="format"></a>Format
 
 Combinaison de 44 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
@@ -66,9 +68,15 @@ par exemple :
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
+## <a name="credential-example"></a>Exemple d’informations d’identification 
+
+`https://account.blob.core.windows.net/file.cspkg?...&sig=abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
+
 ## <a name="checksum"></a>Somme de contrôle
 
 Non
+
+Les SIT qui ont des sommes de contrôle utilisent un calcul unique pour vérifier si les informations sont valides. Cela signifie que lorsque la valeur **de somme de contrôle** est **Oui**, le service peut effectuer une détection positive basée sur les données sensibles uniquement. Lorsque la valeur de somme de **contrôle** est Aucun élément (secondaire) supplémentaire **ne** doit également être détecté pour que le service effectue une détection positive.
 
 ## <a name="definition"></a>Définition
 

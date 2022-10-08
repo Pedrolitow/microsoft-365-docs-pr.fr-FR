@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7915c2dac12980283e45f0d389c2e13cd9753f66
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5d9f1c8c04042dff1475ebe4c5b115a6f918aa6e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471100"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072676"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 

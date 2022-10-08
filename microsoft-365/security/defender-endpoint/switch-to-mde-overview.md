@@ -1,6 +1,6 @@
 ---
 title: Passez de la protection des points de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
-description: Passez à Microsoft Defender pour point de terminaison, qui inclut l’antivirus Microsoft Defender pour votre solution endpoint protection.
+description: Passez à Microsoft Defender pour point de terminaison, qui inclut Microsoft Defender Antivirus pour votre solution endpoint protection.
 keywords: migration, Windows Defender, protection avancée des points de terminaison, antivirus, logiciel anti-programme malveillant, mode passif, mode actif
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -12,23 +12,24 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-migratetomdatp
 - m365solution-overview
 - m365initiative-defender-endpoint
 - highpri
+- tier1
 ms.topic: overview
 ms.custom: migrationguides
-ms.date: 11/29/2021
+ms.date: 09/29/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 103f21e76d5e5712cc1dc7c2e264b1cefca1e0a4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c81e458d57b4e8ccc67d409a1f11e66b201d8938
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689490"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222933"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passez de la protection des points de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
 
@@ -42,7 +43,7 @@ Si vous envisagez de passer d’une solution de protection de point de terminais
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Processus de migration pour basculer votre solution endpoint protection vers Defender pour point de terminaison" lightbox="images/nonms-mde-migration.png":::
 
-Lorsque vous basculez vers Defender pour point de terminaison, vous commencez par votre protection antivirus/anti-programme malveillant non Microsoft en mode actif. Ensuite, vous configurez l’Antivirus Microsoft Defender en mode passif et vous intégrerez vos appareils à Defender pour point de terminaison. Ensuite, vous configurez vos fonctionnalités de protection des points de terminaison, définissez l’antivirus Microsoft Defender en mode actif et vérifiez que tout fonctionne correctement. Enfin, vous supprimez la solution non-Microsoft.
+Lorsque vous basculez vers Defender pour point de terminaison, vous commencez par votre protection antivirus/anti-programme malveillant non Microsoft en mode actif. Ensuite, vous allez configurer Microsoft Defender Antivirus en mode passif et intégrer vos appareils à Defender pour point de terminaison. Ensuite, vous configurez vos fonctionnalités endpoint protection, définissez Microsoft Defender Antivirus en mode actif et vérifiez que tout fonctionne correctement. Enfin, vous supprimez la solution non-Microsoft.
 
 ## <a name="the-migration-process"></a>Processus de migration
 
@@ -56,8 +57,8 @@ Le processus de migration vers Defender pour point de terminaison peut être div
 |Phase|Description|
 |--|--|
 |[Préparer votre migration](switch-to-mde-phase-1.md)|Pendant [la phase **de préparation**](switch-to-mde-phase-1.md) : <br/>1. Mettez à jour les appareils de votre organisation.<br/>2. Obtenir Defender pour point de terminaison.<br/>3. Planifiez les rôles et les autorisations, et accordez l’accès au portail Microsoft 365 Defender.<br/>4. Configurez votre proxy d’appareil et les paramètres Internet pour permettre la communication entre les appareils de votre organisation et Defender pour point de terminaison. |
-|[Configurer Defender pour point de terminaison](switch-to-mde-phase-2.md)|Pendant [la phase **d’installation**](switch-to-mde-phase-2.md) : <br/>1. Activez/réinstallez l’antivirus Microsoft Defender et définissez-le en mode passif.<br/>2. Configurez Defender pour point de terminaison.<br/>3. Ajoutez Defender pour point de terminaison à la liste d’exclusions de votre solution existante.<br/>4. Ajoutez votre solution existante à la liste d’exclusions pour l’antivirus Microsoft Defender.<br/>5. Configurez vos groupes d’appareils, regroupements et unités d’organisation.<br/>6. Configurez vos stratégies anti-programme malveillant et les paramètres de protection en temps réel.|
-|[Intégrer à Defender pour point de terminaison](switch-to-mde-phase-3.md)|Pendant [la phase **d’intégration**](switch-to-mde-phase-3.md) : <br/>1. Intégrer vos appareils à Defender pour point de terminaison.<br/>2. Exécutez un test de détection.<br/>3. Vérifiez que l’antivirus Microsoft Defender s’exécute en mode passif.<br/>4. Obtenir des mises à jour pour l’antivirus Microsoft Defender.<br/>5. Désinstallez votre solution de protection de point de terminaison existante.<br/>6. Assurez-vous que Defender pour point de terminaison fonctionne correctement.|
+|[Configurer Defender pour point de terminaison](switch-to-mde-phase-2.md)|Pendant [la phase **d’installation**](switch-to-mde-phase-2.md) : <br/>1. Activez/réinstallez Microsoft Defender Antivirus et définissez-le en mode passif.<br/>2. Configurez Defender pour point de terminaison.<br/>3. Ajoutez Defender pour point de terminaison à la liste d’exclusions de votre solution existante.<br/>4. Ajoutez votre solution existante à la liste d’exclusions pour Microsoft Defender Antivirus.<br/>5. Configurez vos groupes d’appareils, regroupements et unités d’organisation.|
+|[Intégrer à Defender pour point de terminaison](switch-to-mde-phase-3.md)|Pendant [la phase **d’intégration**](switch-to-mde-phase-3.md) : <br/>1. Intégrer vos appareils à Defender pour point de terminaison.<br/>2. Exécutez un test de détection.<br/>3. Vérifiez que Microsoft Defender Antivirus s’exécute en mode passif.<br/>4. Obtenir des mises à jour pour Microsoft Defender Antivirus.<br/>5. Désinstallez votre solution de protection de point de terminaison existante.<br/>6. Assurez-vous que Defender pour point de terminaison fonctionne correctement.|
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Qu’est-ce qui est inclus dans Microsoft Defender pour point de terminaison ?
 
@@ -69,7 +70,7 @@ Dans ce guide de migration, nous nous concentrons sur les fonctionnalités de pr
 |---|---|
 |[Gestion des vulnérabilités Microsoft Defender](next-gen-threat-and-vuln-mgt.md)|Les fonctionnalités de gestion des vulnérabilités Defender permettent d’identifier, d’évaluer et de corriger les faiblesses de vos points de terminaison (tels que les appareils).|
 |[Réduction de la surface d’attaque](overview-attack-surface-reduction.md)|Les règles de réduction de la surface d’attaque aident à protéger les appareils et applications de votre organisation contre les cybermenaces et les attaques.|
-|[Protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md)|La protection de nouvelle génération inclut l’antivirus Microsoft Defender pour aider à bloquer les menaces et les programmes malveillants.|
+|[Protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md)|La protection de nouvelle génération inclut Microsoft Defender Antivirus pour aider à bloquer les menaces et les programmes malveillants.|
 |[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)|Les fonctionnalités de détection et de réponse des points de terminaison détectent, examinent et répondent aux tentatives d’intrusion et aux violations actives.|
 |[Repérage avancé](advanced-hunting-overview.md)|Les fonctionnalités de repérage avancées permettent à votre équipe chargée des opérations de sécurité de localiser les indicateurs et entités de menaces connues ou potentielles.|
 |[Blocage et confinement comportementaux](behavioral-blocking-containment.md)|Les fonctionnalités de blocage et d’endiguement comportementaux permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et de leurs arborescences de traitement, même lorsque la menace a démarré l’exécution.|

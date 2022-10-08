@@ -11,20 +11,27 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7af1152d1393aaaf9eeb242c78b280cf0e9d80e6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 04117f0880266f934955c1285250e509667a8482
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639795"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68505200"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Modèles de notifications sur la gestion des risques internes
+
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Les modèles d’avis de gestion des risques internes vous permettent d’envoyer automatiquement des messages électroniques aux utilisateurs lorsqu’un cas est créé pour les activités qui ont généré une correspondance de stratégie et une alerte confirmée. Pour la plupart des alertes qui génèrent des cas, les actions de l’utilisateur sont le résultat d’erreurs ou d’activités accidentelles sans intention malveillante. Les avis servent de rappels simples aux utilisateurs pour qu’ils soient plus prudents, fournissent des liens vers des informations pour la formation d’actualisation ou des ressources de stratégie d’entreprise. Les avis peuvent être une partie importante de votre programme de formation à la conformité interne et peuvent vous aider à créer une piste d’audit documentée pour les utilisateurs présentant des activités à risque périodiques.
 
 Créez des modèles d’avis si vous souhaitez envoyer aux utilisateurs un avis de rappel par e-mail pour les correspondances de stratégie dans le cadre du processus de résolution de cas. Les avis ne peuvent être envoyés qu’à l’adresse e-mail de l’utilisateur associée au cas spécifique en cours de révision. Lorsque vous sélectionnez un modèle d’avis à appliquer à une correspondance de stratégie, vous pouvez choisir d’accepter les valeurs de champ définies dans le modèle ou de remplacer les champs en fonction des besoins.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="notice-templates-dashboard"></a>Notez le tableau de bord des modèles
 

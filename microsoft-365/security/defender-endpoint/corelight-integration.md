@@ -13,15 +13,17 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 5e558b5488c0311d398b626321e2d1fa32d3f130
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 01b584710aafb6f1f9d88a9870294fcc26d61a24
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678578"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200536"
 ---
 # <a name="enable-corelight-data-integration"></a>Permettre l'intégration des données Corelight
 
@@ -40,12 +42,12 @@ Microsoft s’est associé à [Corelight](https://corelight.com/integrations/iot
 
 Une fois cette source de données activée, tous les événements des appliances réseau Corelight sont envoyés à Microsoft 365 Defender. Vous pouvez afficher ces activités dans la chronologie des appareils non managés, disponible dans l’inventaire des appareils Microsoft Defender pour point de terminaison. Pour plus d’informations, consultez [Découverte d’appareils](device-discovery.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 1. Pour configurer l’intégration des données Corelight, l’utilisateur doit avoir les rôles suivants :
    - Administrateur général du locataire dans Azure Active Directory
-   - Administrateur de sécurité pour l’abonnement Azure qui sera utilisé pour l’intégration de Microsoft Defender pour IoT
-2. Un plan Defender pour IoT intégré. Pour plus d’informations, consultez [Intégrer Microsoft Defender pour IoT avec Microsoft Defender pour point de terminaison](enable-microsoft-defender-for-iot-integration.md).
+   - Administrateur de sécurité pour l’abonnement Azure qui sera utilisé pour la Microsoft Defender pour l’intégration IoT
+2. Un plan Defender pour IoT intégré. Pour plus d’informations, consultez [Intégration Microsoft Defender pour IoT avec Microsoft Defender pour point de terminaison](enable-microsoft-defender-for-iot-integration.md).
 
 ## <a name="enabling-the-corelight-integration"></a>Activation de l’intégration corelight
 
@@ -84,7 +86,7 @@ Pour activer l’intégration de Corelight, vous devez effectuer les étapes sui
 
    :::image type="content" source="images/exporttodefender.png" alt-text="Exportation kafka" lightbox="images/exporttodefender.png":::
 
-2. Activez **l’exportation vers Microsoft Defender**.
+2. Activer **l’exportation pour Microsoft Defender**.
 3. Entrez votre ID de locataire Microsoft 356 Defender.
 4. Si vous le souhaitez, vous pouvez :
     - définissez les **journaux Zeek sur Exclure**. L’ensemble minimal de journaux que vous devez inclure est : dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp et notice.
@@ -93,7 +95,7 @@ Pour activer l’intégration de Corelight, vous devez effectuer les étapes sui
 
 #### <a name="enable-the-integration-in-the-corelight-client"></a>Activer l’intégration dans corelight-client
 
-1. Activez **l’exportation vers Microsoft Defender à** l’aide de la commande suivante dans corelight-client :
+1. Activez **Exporter pour Microsoft Defender** à l’aide de la commande suivante dans corelight-client :
 
     ``` command
     corelight-client configuration update \

@@ -1,5 +1,5 @@
 ---
-title: Étape 7. Implémenter la protection contre la perte de données (DLP) avec des fonctionnalités de protection des informations
+title: Step 7. Implement data loss prevention (DLP) with information protection capabilities
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -9,7 +9,7 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -23,14 +23,14 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Implémentez le point de terminaison DLP en travaillant avec votre équipe de protection et de gouvernance d’information pour créer des stratégies DLP pour votre organisation.
-ms.openlocfilehash: dcfb37cd1039495da811cb7b123522bdc28305a8
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 0208f236e477affaebbea7c32c2cadf769128014
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731461"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986617"
 ---
-# <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Étape 7. Implémenter la protection contre la perte de données (DLP) avec des fonctionnalités de protection des informations
+# <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Step 7. Implement data loss prevention (DLP) with information protection capabilities
 
 
 Si votre organisation a déjà mis le temps nécessaire à la compréhension de vos données, au développement d’un schéma de confidentialité des données et à l’application du schéma, vous pouvez être prêt à étendre les éléments de ce schéma aux points de terminaison à l’aide de stratégies de protection contre la perte de données (DLP) Microsoft Purview. 
@@ -39,7 +39,7 @@ La protection contre la perte de données des points de terminaison Microsoft (E
 - Windows 10, Windows 11
 - macOS
 
-Les stratégies DLP sont créées par votre équipe de gouvernance et de protection des données. Chaque stratégie DLP définit les éléments à rechercher dans un ensemble de données, tels que les types ou étiquettes d’informations sensibles, et comment protéger ces données. 
+DLP policies are created by your information protection and governance team. Each DLP policy defines what elements within a data set to look for, like sensitive information types or labels, and how to protect this data. 
 
 Par exemple, une stratégie DLP peut rechercher des données personnelles comme un numéro de passeport. La stratégie DLP inclut une condition qui déclenche l’action de la stratégie, par exemple lorsqu’un numéro de passeport est partagé avec des personnes extérieures à votre organisation. L’action de la stratégie peut également être configurée. Il peut s’agir de signaler simplement l’action aux administrateurs, d’avertir les utilisateurs ou même d’empêcher le partage des données.
 

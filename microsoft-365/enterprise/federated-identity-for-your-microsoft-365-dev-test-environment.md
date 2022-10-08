@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -20,18 +21,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 23a7cb84dc4b1f67a4fd5ebd017282542e15114a
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 54fa9774ace656c5049f26ef4b7fd64186c0053d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570246"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171144"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identité fédérée pour votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test peut être utilisé pour Microsoft 365 pour les environnements de test d’entreprise et Office 365 Entreprise.*
 
-Microsoft 365 prend en charge l’identité fédérée. Cela signifie qu’au lieu d’effectuer la validation des informations d’identification, Microsoft 365 renvoie l’utilisateur qui se connecte à un serveur d’authentification fédérée approuvé par Microsoft 365. Si les informations d’identification de l’utilisateur sont correctes, le serveur d’authentification fédérée émet un jeton de sécurité que le client envoie ensuite à Microsoft 365 comme preuve d’authentification. L’identité fédérée autorise le déchargement et la montée en charge de l’authentification pour un abonnement Microsoft 365, ainsi que l’authentification avancée et les scénarios de sécurité.
+Microsoft 365 supports federated identity. This means that instead of performing the validation of credentials itself, Microsoft 365 refers the connecting user to a federated authentication server that Microsoft 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Microsoft 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for a Microsoft 365 subscription and advanced authentication and security scenarios.
   
 Cet article explique comment configurer l’authentification fédérée pour votre environnement de test Microsoft 365, ce qui donne les éléments suivants :
 
@@ -161,7 +162,7 @@ Affichez l’adresse IP publique de PROXY1 avec ces commandes Azure PowerShell s
 Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-Ensuite, utilisez votre fournisseur DNS public et créez un enregistrement A DNS public pour **fs.testlab.**\<*your DNS domain name*> qui renvoie l’adresse IP affichée par la commande **Write-Host**. **fs.testlab.**\<*your DNS domain name*> est désigné ci-après en tant que *nom de domaine complet du service FS (Federation Service)*.
+Next, work with your public DNS provider and create a new public DNS A record for **fs.testlab.**\<*your DNS domain name*> that resolves to the IP address displayed by the **Write-Host** command. The **fs.testlab.**\<*your DNS domain name*> is hereafter referred to as the  *federation service FQDN*.
   
 Ensuite, utilisez le [portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle DC1 à l’aide des informations d’identification de CORP\\User1, puis exécutez les commandes suivantes à une invite de commande Windows PowerShell de niveau administrateur :
   
@@ -188,7 +189,7 @@ New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user pa
 ```
 Notez que cette commande vous invite à indiquer le mot de passe du compte. Choisissez un mot de passe fort et enregistrez-le dans un emplacement sécurisé. Vous en aurez besoin pour cette phase et pour la phase 5.
   
-Utilisez le [portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle ADFS1 à l’aide des informations d’identification de CORP\\User1. Ouvrez une invite de commande Windows PowerShell de niveau administrateur sur ADFS1, indiquez votre nom de domaine complet du service FS (Federation Service), puis exécutez ces commandes pour créer un certificat auto-signé :
+Use the [Azure portal](https://portal.azure.com) to connect to the ADFS1 virtual machine using the CORP\\User1 credentials. Open an administrator-level Windows PowerShell command prompt on ADFS1, fill in your federation service FQDN, and then run these commands to create a self-signed certificate:
   
 ```powershell
 $fedServiceFQDN="<federation service FQDN>"
@@ -397,7 +398,7 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
     
     Vous devez voir la **page d’accueil Microsoft Office**.
     
-Cette procédure montre que votre abonnement d’évaluation est fédéré avec le domaine corp.contoso.com AD DS hébergé sur DC1. Voici les principes de base du processus d’authentification :
+This procedure demonstrates that your trial subscription is federated with the AD DS corp.contoso.com domain hosted on DC1. Here are the basics of the authentication process:
   
 1. Lorsque vous utilisez le domaine fédéré que vous avez créé à la phase 1 dans le nom de compte de connexion, Microsoft 365 redirige votre navigateur vers le nom de domaine complet de votre service FS (Federation Service) et PROXY1.
     
@@ -411,7 +412,7 @@ Cette procédure montre que votre abonnement d’évaluation est fédéré avec 
     
 6. Microsoft 365 confirme que le jeton de sécurité a été créé par ADFS1 et autorise l’accès.
     
-Votre abonnement d’évaluation est désormais configuré avec l’authentification fédérée. Vous pouvez utiliser cet environnement de développement/test pour les scénarios d’authentification avancés.
+Your trial subscription is now configured with federated authentication. You can use this dev/test environment for advanced authentication scenarios.
   
 ## <a name="next-step"></a>Étape suivante
 

@@ -16,14 +16,14 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m - m365-security - tier2
 ms.topic: article
-ms.openlocfilehash: 5d369bbea463b758a4ce29cb16f66e52488039e1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a257a38dc9a46d983c4b7a6446ecf0117aac1bb3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474641"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059259"
 ---
 # <a name="custom-detections-overview"></a>Vue d’ensemble des détections personnalisées
 

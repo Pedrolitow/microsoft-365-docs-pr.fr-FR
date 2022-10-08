@@ -6,23 +6,24 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.collection: scotvorg
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Si vous avez besoin de poser des questions aux clients lorsqu’ils prennent rendez-vous avec vous en ligne, vous pouvez ajouter des questions personnalisées et des questions requises à la page de réservation.
-ms.openlocfilehash: d42f883f3d58882ec5a2e8e8e2bbe7baf7ed3232
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 537bbb73336674cdaec716bf56d2f92e7822ebca
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637690"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197390"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Ajouter des questions personnalisées et requises à la page réservation
 
-Bookings vous permet de créer des questions pour poser des questions à vos clients lorsqu’ils réservent des rendez-vous. Il vous permet également de choisir les questions requises.
+Bookings vous permet de créer des questions pour poser des questions à vos clients lorsqu’ils prennent rendez-vous. Il vous permet également de choisir les questions requises.
 
 Vous associez les questions à un service, afin que chaque service puisse avoir un ensemble de questions différent. Par exemple, un coiffeur peut demander aux clients qui réservent un rendez-vous de coloration des cheveux s’ils ont des allergies connues aux blanchissements ou teintes. Cela vous permet, ainsi qu’à vos clients, de gagner du temps lorsqu’ils arrivent pour leur rendez-vous.
 
-Les clients voient les questions personnalisées lorsqu’ils créent leur rendez-vous sur la page de réservation. Le personnel verra les questions personnalisées lorsqu’il créera une réservation à partir du calendrier Bookings ou lors de l’affichage d’un rendez-vous existant. Bookings enregistre toutes vos questions dans une liste maître afin de ne pas avoir à recréer les mêmes questions pour chaque service. Vous pouvez également choisir si des questions sont requises ou facultatives.
+Les clients voient les questions personnalisées lorsqu’ils créent leur rendez-vous sur la page de réservation. Le personnel verra les questions personnalisées lorsqu’il créera une réservation à partir du calendrier Bookings ou lors de l’affichage d’un rendez-vous existant. Bookings enregistre toutes vos questions dans une liste maître afin que vous n’ayez pas à recréer les mêmes questions pour chaque service. Vous pouvez également choisir si des questions sont requises ou facultatives.
 
 > [!NOTE]
 > Les réponses du client aux questions sont visibles lorsque vous examinez son rendez-vous dans le calendrier de réservation.
@@ -53,7 +54,7 @@ Pour plus d’informations sur la personnalisation et la personnalisation de vot
 
 1. Cliquez sur **OK** en haut de la page, puis **enregistrez le service**.
 
-Bookings enregistrez toutes vos questions personnalisées dans une liste maître afin que vous puissiez facilement ajouter des questions à chaque service sans avoir à taper à plusieurs reprises les mêmes questions. Par exemple, si vous ouvrez un autre service, la question que vous avez créée pour le premier service s’affiche dans la section Champs personnalisés, mais elle sera désactivée. Cliquez sur la question pour qu’un rectangle mis en surbrillance s’affiche et que la question soit activée.
+Bookings enregistre toutes vos questions personnalisées dans une liste maître afin que vous puissiez facilement ajouter des questions à chaque service sans avoir à taper à plusieurs reprises les mêmes questions. Par exemple, si vous ouvrez un autre service, la question que vous avez créée pour le premier service s’affiche dans la section Champs personnalisés, mais elle sera désactivée. Cliquez sur la question pour qu’un rectangle mis en surbrillance s’affiche et que la question soit activée.
 
 Dans cet exemple, vous pouvez voir que les questions qui ont été ajoutées pour le premier service sont disponibles pour ce service. Toutes les questions que vous créez pour ce service seront disponibles pour tous les services.
 
@@ -72,6 +73,6 @@ Lorsque vos clients réservent un rendez-vous avec vous, les questions de base s
 
 ## <a name="staff-experience"></a>Expérience du personnel
 
-Lorsque vos clients réservent un rendez-vous avec vous, votre personnel voit les questions et les réponses du client dans le calendrier de réservation. Pour le voir, accédez à **Bookings** \> **Calendrier**, puis ouvrez un rendez-vous.
+Lorsque vos clients réservent un rendez-vous avec vous, votre personnel voit les questions et les réponses du client dans le calendrier de réservation. Pour le voir, accédez au **Calendrier** **des réservations**\>, puis ouvrez un rendez-vous.
 
 ![Image de ce que le personnel voit quand les questions sont activées.](../media/bookings-questions-staff.png)

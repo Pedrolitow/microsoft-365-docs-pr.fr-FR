@@ -16,18 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-m365dsecops
+- tier2
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 11deb4cd56c77202e002162542b8a9e30db56916
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 8271d957b304d05dfd5f9e763408c611b628207e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478032"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68089065"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>Étape 4. Définir Microsoft 365 Defender rôles, responsabilités et supervision
 

@@ -8,17 +8,19 @@ manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: Comment accéder aux ressources équivalentes au Centre de déploiement de bureau déconseillé.
-ms.openlocfilehash: e6ba3f86d4c1e02b29206d57ccab220f74ab7e3e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 05bf1fa00576b2ed470cef428f51e0e57450ab9d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095331"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185554"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centre de déploiement du bureau (déconseillé)
 
@@ -33,10 +35,10 @@ Utilisez ces ressources pour déployer des bureaux modernes :
 
 Vous pouvez également afficher les [vidéos de la série Déploiement de bureau à partir de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
 
-Vous pouvez également trouver de l’aide pour le déploiement de votre bureau auprès de partenaires Microsoft et [de FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
+Vous trouverez également de l’aide pour le déploiement de votre bureau auprès des partenaires Microsoft et [de FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
-Ce kit vous aide à planifier, tester et valider votre déploiement et la gestion des bureaux exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les labos couvrent l’utilisation de Microsoft Endpoint Configuration Manager, Analytique de bureau, Office Outil de personnalisation, OneDrive, Windows Autopilot, etc.
+Ce kit vous aide à planifier, tester et valider votre déploiement et la gestion des bureaux exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les labos couvrent l’utilisation de Microsoft Endpoint Configuration Manager, Analytique de bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et bien plus encore.
 
-Pour plus d’informations, consultez [Windows et Office Deployment Lab Kit](modern-desktop-deployment-and-management-lab.md).
+Pour plus d’informations, consultez le Kit lab de [déploiement Windows et Office](modern-desktop-deployment-and-management-lab.md) .

@@ -11,22 +11,23 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Actualisez votre fichier de table source d’informations sensibles.
+description: Découvrez comment actualiser votre fichier de table source d’informations sensibles une seule fois ou configurer des cycles d’actualisation périodiques automatisés.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 310663caae55bb9b5e0d07cb38ba9fa4b45e8a73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ee802477f7d065bffd77439a4e814d3a8a7e815b
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621664"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383848"
 ---
-# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualiser votre fichier de table source d’informations sensibles correspondant exactement aux données 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualiser votre fichier de table source d’informations sensibles correspondant exactement aux données
 
-Vous pouvez actualiser votre base de données d’informations sensibles jusqu’à 5 fois toutes les 24 heures. Vous devrez resserrez et chargez votre table source d’informations sensibles.
+Vous pouvez actualiser votre base de données d’informations sensibles jusqu’à 5 fois toutes les 24 heures. Vous devrez resserrez et chargez votre table source d’informations sensibles. L’actualisation remplace la table source d’informations sensibles existante par la nouvelle.
 
 1. Réexportez les données sensibles vers une application, telle que Microsoft Excel, et enregistrez le fichier au format délimité .csv, .tsv ou pipe (|). Conservez le même nom de fichier et le même emplacement que ceux que vous avez utilisés lors du hachage et du chargement précédents du fichier. Pour plus d’informations sur l’exportation de vos données sensibles et leur mise au format correct, consultez [Exporter les données sources pour obtenir des informations exactes sur la correspondance des données en fonction du type d’informations sensibles](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) .
 
@@ -42,6 +43,8 @@ Vous pouvez actualiser votre base de données d’informations sensibles jusqu�
    |PowerShell|Consultez la documentation[ScheduledTasks](/powershell/module/scheduledtasks/) et l’[exemple de script PowerShell](#example-powershell-script-for-task-scheduler) dans cet article|
    |API planificateur de tâches|Consultez la documentation relative au [planificateur de tâches](/windows/desktop/TaskSchd/using-the-task-scheduler)|
    |Interface utilisateur Windows|Dans Windows, cliquez sur **Démarrer**, puis tapez Planificateur de tâches. Dans la liste des résultats, cliquez avec le bouton droit sur **planificateur de tâches**, puis sélectionnez **exécuter en tant qu’administrateur**.|
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="example-powershell-script-for-task-scheduler"></a>Exemple de script PowerShell pour le planificateur de tâches
 

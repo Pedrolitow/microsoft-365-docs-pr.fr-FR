@@ -6,21 +6,23 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 80ec798842c29f42a70837b0a0e33042884c2e02
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+- m365-security
+- tier1
+ms.openlocfilehash: 684c099a6439ee46d3c3b7acc03021df06534e7b
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600135"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110717"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Didacticiels et simulations dans Microsoft Defender pour entreprises
 

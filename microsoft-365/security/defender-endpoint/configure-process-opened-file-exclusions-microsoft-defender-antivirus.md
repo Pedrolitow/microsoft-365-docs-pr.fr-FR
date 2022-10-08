@@ -1,7 +1,7 @@
 ---
 title: Configurer des exclusions pour les fichiers ouverts par des processus spécifiques
 description: Vous pouvez exclure des fichiers des analyses s’ils ont été ouverts par un processus spécifique.
-keywords: Antivirus Microsoft Defender, processus, exclusion, fichiers, analyses
+keywords: Microsoft Defender Antivirus, processus, exclusion, fichiers, analyses
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: manage
@@ -14,14 +14,16 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 2f29c96631fad18ac5eaaf8b2ead9888da4149ad
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 316a32c8540c5b6bf348cd5584ee0f4becf62b9a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695646"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205616"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -47,7 +49,7 @@ Cet article explique comment configurer des listes d’exclusions.
 |Tout fichier sur l’ordinateur ouvert par n’importe quel processus sous un dossier spécifique|La spécification exclut les `c:\test\sample\*` fichiers ouverts par : <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |Tout fichier sur l’ordinateur ouvert par un processus spécifique dans un dossier spécifique|Spécifier `c:\test\process.exe` exclurait les fichiers ouverts uniquement par `c:\test\process.exe`|
 
-Lorsque vous ajoutez un processus à la liste d’exclusion de processus, l’Antivirus Microsoft Defender n’analyse pas les fichiers ouverts par ce processus, quel que soit l’emplacement des fichiers. Toutefois, le processus lui-même est analysé, sauf s’il a également été ajouté à la [liste d’exclusions de fichiers](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+Lorsque vous ajoutez un processus à la liste d’exclusion de processus, Microsoft Defender Antivirus n’analyse pas les fichiers ouverts par ce processus, quel que soit l’emplacement des fichiers. Toutefois, le processus lui-même est analysé, sauf s’il a également été ajouté à la [liste d’exclusions de fichiers](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 Les exclusions s’appliquent uniquement à [la protection et à la surveillance en temps réel always-on](configure-real-time-protection-microsoft-defender-antivirus.md). Elles ne s’appliquent pas aux analyses planifiées ou à la demande.
 
@@ -77,7 +79,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme malveilla
 
 2. Dans **l’éditeur de gestion stratégie de groupe**, **accédez à Configuration de l’ordinateur**, puis cliquez sur **Modèles d’administration**.
 
-3. Développez l’arborescence vers **les composants Windows exclusions \> de l’antivirus \> Microsoft Defender**.
+3. Développez l’arborescence sur **les composants \> Windows Microsoft Defender exclusions antivirus\>**.
 
 4. Double-cliquez sur **Exclusions de processus** et ajoutez les exclusions :
     1. Définissez l’option **sur Activé**.
@@ -107,13 +109,13 @@ Les éléments suivants sont autorisés en tant que :\<cmdlet\>
 > [!IMPORTANT]
 > Si vous avez créé une liste, avec `Set-MpPreference` ou `Add-MpPreference`, l’utilisation de l’applet `Set-MpPreference` de commande remplacera à nouveau la liste existante.
 
-Par exemple, l’extrait de code suivant entraîne l’exclusion des analyses antivirus Microsoft Defender de tout fichier ouvert par le processus spécifié :
+Par exemple, l’extrait de code suivant entraîne l’exclusion Microsoft Defender analyses antivirus de tout fichier ouvert par le processus spécifié :
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec l’antivirus Microsoft Defender, consultez Gérer l’antivirus avec les applets de commande PowerShell et [les applets de commande antivirus Microsoft Defender](/powershell/module/defender).
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez Gérer l’antivirus avec les applets de commande PowerShell et [Microsoft Defender applets de commande Antivirus](/powershell/module/defender).
 
 ### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser l’instruction de gestion Windows (WMI) pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 
@@ -150,7 +152,7 @@ Vous pouvez récupérer les éléments de la liste d’exclusion avec MpCmdRun, 
 
 Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières :
 
-- Récupérez l’état de toutes les préférences de l’Antivirus Microsoft Defender. Chacune des listes s’affiche sur des lignes distinctes, mais les éléments de chaque liste sont combinés dans la même ligne.
+- Récupérez l’état de toutes les préférences antivirus Microsoft Defender. Chacune des listes s’affiche sur des lignes distinctes, mais les éléments de chaque liste sont combinés dans la même ligne.
 - Écrivez l’état de toutes les préférences dans une variable et utilisez cette variable pour appeler uniquement la liste spécifique qui vous intéresse. Chaque utilisation est `Add-MpPreference` écrite dans une nouvelle ligne.
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Valider la liste d’exclusion à l’aide de MpCmdRun
@@ -162,7 +164,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La vérification des exclusions avec MpCmdRun nécessite Microsoft Defender Antivirus CAMP version 4.18.1812.3 (publiée en décembre 2018) ou version ultérieure.
+> La vérification des exclusions avec MpCmdRun nécessite Microsoft Defender antivirus CAMP version 4.18.1812.3 (publiée en décembre 2018) ou version ultérieure.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passez en revue la liste des exclusions avec toutes les autres préférences antivirus Microsoft Defender à l’aide de PowerShell
 
@@ -172,7 +174,7 @@ Utilisez l’applet de commande suivante :
 Get-MpPreference
 ```
 
-Pour plus d’informations sur l’utilisation de [PowerShell avec l’antivirus Microsoft Defender, consultez Utiliser les applets de commande PowerShell pour configurer et exécuter l’Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [l’Antivirus Microsoft Defender](/powershell/module/defender) .
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez Utiliser les applets de commande [PowerShell pour configurer et exécuter Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Microsoft Defender Antivirus](/powershell/module/defender).
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Récupérer une liste d’exclusions spécifique à l’aide de PowerShell
 
@@ -183,7 +185,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-Pour plus d’informations sur l’utilisation de [PowerShell avec l’antivirus Microsoft Defender, consultez Utiliser les applets de commande PowerShell pour configurer et exécuter l’Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [l’Antivirus Microsoft Defender](/powershell/module/defender) .
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez Utiliser les applets de commande [PowerShell pour configurer et exécuter Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Microsoft Defender Antivirus](/powershell/module/defender).
 
 > [!TIP]
 > Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
@@ -197,9 +199,9 @@ Pour plus d’informations sur l’utilisation de [PowerShell avec l’antivirus
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Configurer et valider les exclusions dans les analyses de l’Antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configurer et valider les exclusions dans les analyses antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurer et valider des exclusions en fonction du nom de fichier, de l’extension et de l’emplacement du dossier](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Configurer les exclusions de l’Antivirus Microsoft Defender sur Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configurer Microsoft Defender exclusions antivirus sur Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Erreurs courantes à éviter lors de la définition d’exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Personnaliser, lancer et passer en revue les résultats des analyses et des corrections de l’Antivirus Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personnaliser, lancer et examiner les résultats des analyses et des corrections de Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

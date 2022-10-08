@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -20,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour découvrir comment Office 365 utilise des réseaux de distribution de contenu (CDN) pour améliorer les performances.
-ms.openlocfilehash: a210182c150dbfc8b14a3034fbc89e9948ba482a
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: c72f6be613549f58246f709efd1ffe65c5b241d1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664700"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198402"
 ---
 # <a name="content-delivery-networks-cdns"></a>Réseaux de distribution de contenu (CDN)
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 09/21/2022
+ms.date: 10/07/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: 3a69a91b647bc5b94e11dd086314c05c67e5fd7f
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 662e53d4d0a590260936227776f9a17b733ee194
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68151648"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504916"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>La protection intégrée permet de se prémunir contre les ransomwares
 
@@ -32,7 +32,7 @@ ms.locfileid: "68151648"
 > **Vous n’avez pas besoin d’attendre la protection intégrée pour venir à vous**! Vous pouvez protéger les appareils de votre organisation en configurant ces fonctionnalités :
 > - [Activer la protection cloud](why-cloud-protection-should-be-on-mdav.md)
 > - [Activer la protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md)
-> - [Définir des règles de réduction de la surface d’attaque de base en mode bloc](attack-surface-reduction-rules-deployment.md)
+> - [Définir les règles standard de réduction de la surface d’attaque en mode bloc](attack-surface-reduction-rules-deployment.md)
 > - [Activer la protection réseau en mode bloc](enable-network-protection.md)
 
 ## <a name="what-is-built-in-protection-and-how-does-it-work"></a>Qu’est-ce que la protection intégrée et comment fonctionne-t-elle ?

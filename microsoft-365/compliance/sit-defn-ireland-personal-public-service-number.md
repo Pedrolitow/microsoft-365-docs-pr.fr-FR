@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro de service public personnel (PPS) en Irlande.
-ms.openlocfilehash: 9473886085fe3ae5630becdeeb69efb82f428edd
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: da0451a437ad3ab7dd8437352c2f7b539b9d9a9c
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996879"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68378311"
 ---
 # <a name="ireland-personal-public-service-pps-number"></a>Numéro personnel pour le service public irlandais (PPS)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible CURP (Code du Registre de la population unique du Mexique).
-ms.openlocfilehash: 806f7e9b0d2dd797b17ad848d160c6f74c04e1e2
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 20afce26f7769e1a322c21109a8b934dbf14ca3d
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950825"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384072"
 ---
-# <a name="mexico-unique-population-registry-code-curp"></a>Code du Registre de la population unique du Mexique (CURP)
+# <a name="mexico-unique-population-registry-code-curp"></a>Code de registre de population unique du Mexique (CURP)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -48,14 +51,14 @@ Non
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_mexico_population_registry_code` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keyword_mexico_population_registry_code` trouvé.
+- La fonction `Func_mexico_population_registry_code` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keyword_mexico_population_registry_code` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_mexico_population_registry_code` recherche le contenu qui correspond au modèle.
+- La fonction `Func_mexico_population_registry_code` trouve un contenu qui correspond au modèle.
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
