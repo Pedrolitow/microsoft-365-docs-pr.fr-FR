@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 5f181c20c4ed355279362811fdfff7d7d1a60c3e
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 484dfedf9563fc8100abc1abc477c6fc322ae25f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735965"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231943"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>Comment configurer des autorisations et des stratégies de quarantaine
 
@@ -44,7 +47,7 @@ Nos stratégies personnalisées permettent aux administrateurs de décider quels
 1. Il est **fortement recommandé** d’affecter des programmes malveillants et des éléments de hameçonnage à haute confiance à **AdminOnlyPolicy, d’accorder** aux éléments de hameçonnage de confiance régulière un *accès limité avec la mise en production des demandes*, tandis que le courrier indésirable et le courrier indésirable peuvent être laissés en tant qu’accès complet pour les utilisateurs.
 
 > [!IMPORTANT]
-> Pour plus d’informations sur la façon dont des stratégies personnalisées granulaires peuvent être créées, consultez [Stratégies de quarantaine - Office 365 | Microsoftova dokumentacija](../../office-365-security/quarantine-policies.md).
+> Pour plus d’informations sur la façon dont des stratégies personnalisées granulaires peuvent être créées, consultez [Stratégies de quarantaine - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md).
 
 ## <a name="assigning-quarantine-policies-and-enabling-notification-with-organization-branding"></a>Affectation de stratégies de quarantaine et activation de la notification avec la personnalisation de l’organisation
 
@@ -62,7 +65,7 @@ Une fois qu’il a été décidé que les catégories d’éléments que les uti
 1. Répétez les mêmes étapes pour les autres stratégies : **stratégie anti-hameçonnage**, stratégie **anti-programme malveillant** et **stratégie de pièce jointe sécurisée**.
 
 > [!TIP]
-> Pour plus d’informations sur ce que vous avez appris jusqu’à présent, consultez [Configurer les stratégies de filtrage du courrier indésirable - Office 365 | ](../../office-365-security/configure-your-spam-filter-policies.md)|  Microsoftova dokumentacija [Configurer des stratégies anti-hameçonnage dans EOP - Office 365 | ](../../office-365-security/configure-anti-phishing-policies-eop.md) |  Microsoftova dokumentacija [Configurer les stratégies anti-programme malveillant - Office 365 | ](../../office-365-security/configure-anti-malware-policies.md)|  Microsoftova dokumentacija [Set up Safe Attachments policies in Microsoft Defender for Office 365 - Office 365 | Microsoftova dokumentacija](../../office-365-security/set-up-safe-attachments-policies.md)
+> Pour plus d’informations sur ce que vous avez appris jusqu’à présent, consultez [Configurer les stratégies de filtrage du courrier indésirable - Office 365 | ](../../office-365-security/configure-your-spam-filter-policies.md)|  Microsoft Docs [Configurer des stratégies anti-hameçonnage dans EOP - Office 365 | ](../../office-365-security/configure-anti-phishing-policies-eop.md) |  Microsoft Docs [Configurer les stratégies anti-programme malveillant - Office 365 | ](../../office-365-security/configure-anti-malware-policies.md)|  Microsoft Docs [Set up Safe Attachments policies in Microsoft Defender pour Office 365 - Office 365 | Microsoft Docs](../../office-365-security/set-up-safe-attachments-policies.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -71,4 +74,4 @@ Une fois qu’il a été décidé que les catégories d’éléments que les uti
 
 ## <a name="more-information"></a>Plus d’informations
 
-Mer informasjon sur les paramètres de personnalisation et de notification de l’organisation ici [Stratégies de quarantaine - Office 365 | Microsoftova dokumentacija](../../office-365-security/quarantine-policies.md)
+En savoir plus sur les paramètres de personnalisation et de notification de l’organisation ici [Stratégies de quarantaine - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md)

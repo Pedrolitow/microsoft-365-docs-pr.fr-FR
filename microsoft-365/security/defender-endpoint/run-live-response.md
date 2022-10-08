@@ -14,16 +14,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e815af864aa66173a7ce110948c4cd8e9e19be35
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 205cce10d0f443724b6d99c83d4b2075e8031d4f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577891"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227985"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 
@@ -58,6 +60,8 @@ Exécute une séquence de commandes de réponse en direct sur un appareil
 5. Les commandes de réponse dynamique ne peuvent pas être mises en file d’attente et ne peuvent être exécutées qu’une par une.
 
 6. Si l’ordinateur que vous essayez d’exécuter cet appel d’API se trouve dans un groupe d’appareils RBAC auquel aucun niveau de correction automatisé n’est affecté, vous devez au moins activer le niveau de correction minimal pour un groupe d’appareils donné.
+    > [!NOTE]
+    > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 7. Plusieurs commandes de réponse dynamique peuvent être exécutées sur un seul appel d’API. Toutefois, lorsqu’une commande de réponse dynamique échoue, toutes les actions suivantes ne sont pas exécutées.
 
@@ -104,7 +108,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 |Nom|Type|Description|
 |---|---|---|
 |Autorisation|Chaîne|Porteur\<token>\. Obligatoire.|
-|Content-Type|string|application/json. Obligatoire.|
+|Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>Corps de la demande
 

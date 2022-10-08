@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 08feade03a9710966ef07f2f7c3de5b0a41156ce
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 16af8b874a8cc670369003c599b9f3835a442bdb
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691560"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226490"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Résoudre Microsoft Defender pour point de terminaison problèmes de réponse en direct
 
