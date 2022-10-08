@@ -6,9 +6,11 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -16,22 +18,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: Découvrez comment créer et configurer les serveurs AD FS pour votre authentification fédérée à haute disponibilité pour Microsoft 365 dans Microsoft Azure.
-ms.openlocfilehash: ed0974c8286a5bbad083152d2e2f9aeb01f659df
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 898ff75b76f63b8cf254f3615f1a487a18b79246
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101246"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170506"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Authentification fédérée haute disponibilité, phase 3 : Configurer les serveurs AD FS
 
-Dans cette phase de déploiement de la haute disponibilité pour Microsoft 365 l’authentification fédérée dans les services d’infrastructure Azure, vous créez un équilibreur de charge interne et deux serveurs AD FS.
+Dans cette phase de déploiement de la haute disponibilité pour l’authentification fédérée Microsoft 365 dans les services d’infrastructure Azure, vous créez un équilibreur de charge interne et deux serveurs AD FS.
   
-Vous devez terminer cette phase avant de passer à [la phase 4 : Configurer des proxys d’application web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Consultez [Déployer l’authentification fédérée à haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
+Vous devez terminer cette phase avant de passer à [la phase 4 : Configurer des proxys d’application web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Consultez [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Créer les machines virtuelles du serveur AD FS dans Azure
 
-Utilisez le bloc de commandes PowerShell suivant pour créer les machines virtuelles pour les deux serveurs AD FS. Cet ensemble de commandes PowerShell utilise des valeurs provenant des tableaux suivants :
+Use the following block of PowerShell commands to create the virtual machines for the two AD FS servers. This PowerShell command set uses values from the following tables:
   
 - Tableau M, pour vos machines virtuelles
     
@@ -48,7 +50,7 @@ Utilisez le bloc de commandes PowerShell suivant pour créer les machines virtue
 Rappelez-vous que vous avez défini la table M dans [la phase 2 : Configurer les contrôleurs de domaine et les](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) tables R, V, S, I et A dans [la phase 1 : Configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Consultez [Démarrage avec Azure PowerShell](/powershell/azure/get-started-azureps). 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [Prise en main de Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Tout d’abord, vous créez un équilibreur de charge interne Azure pour les deux serveurs AD FS. Spécifiez les valeurs des variables, en supprimant les \< and > caractères. Lorsque vous avez fourni toutes les valeurs correctes, exécutez le bloc obtenu à l’invite de commandes Azure PowerShell ou dans le PowerShell ISE.
   
@@ -131,9 +133,9 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Étant donné que ces machines virtuelles sont destinées à une application intranet, aucune adresse IP publique ni étiquette de nom de domaine DNS ne leur est affectée et elles ne sont pas connectées à Internet. Toutefois, cela signifie également que vous ne pouvez pas vous y connecter à partir du portail Azure. L’option de **connexion** n’est pas disponible lorsque vous affichez les propriétés de la machine virtuelle. Utilisez l’accessoire de connexion Bureau à distance ou un autre outil de Bureau à distance pour vous connecter à la machine virtuelle à l’aide de son adresse IP privée ou de son nom DNS intranet.
+> Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.
   
-Pour chaque machine virtuelle, utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
+For each virtual machine, use the remote desktop client of your choice and create a remote desktop connection. Use its intranet DNS or computer name and the credentials of the local administrator account.
   
 Pour chaque machine virtuelle, joignez-les au domaine services de domaine Active Directory approprié (AD DS) avec ces commandes à l’invite de Windows PowerShell.
   
@@ -148,7 +150,7 @@ Lorsque cette phase est terminée, voici la configuration résultante, avec les 
   
 **Phase 3 : Les serveurs AD FS et l’équilibreur de charge interne pour votre infrastructure d’authentification fédérée haute disponibilité dans Azure.**
 
-![Phase 3 de la haute disponibilité Microsoft 365 infrastructure d’authentification fédérée dans Azure avec les serveurs AD FS.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Phase 3 de l’infrastructure d’authentification fédérée Microsoft 365 à haute disponibilité dans Azure avec les serveurs AD FS.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Étape suivante
 

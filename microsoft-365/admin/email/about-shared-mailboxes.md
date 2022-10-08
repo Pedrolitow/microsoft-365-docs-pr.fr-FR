@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées servent lorsque plusieurs personnes doivent accéder à la même boîte aux lettres. Découvrez les éléments à connaître avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: 3db111179b0a85a0836ae429785233089d78bec1
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: d7d4bf06fa9e91bca7a3847a9db99aee0a6ca97f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67407996"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204956"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 
@@ -42,15 +43,15 @@ Avant de [créer une boîte aux lettres partagée](create-a-shared-mailbox.md), 
 
 - **Licences :** Votre boîte aux lettres partagée peut stocker jusqu’à 50 Go de données sans que vous n’ayez besoin de lui attribuer une licence. Après cela, vous devez attribuer une licence à la boîte aux lettres pour stocker davantage de données. Si vous souhaitez en savoir plus sur les licences de boîte aux lettres partagées, veuillez consulter la rubrique [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits). Lorsqu'une boîte aux lettres partagée atteint sa limite de stockage, vous serez en mesure de recevoir des courriers électroniques pendant un certain temps, mais vous ne pourrez pas envoyer de nouveaux messages électroniques. Puis, après cela, vous ne pourrez plus recevoir de message. Les expéditeurs des courriers vers votre boîte aux lettres recevront un accusé de réception négatif.
 
-- **Autorisations utilisateur :** Vous devez accorder aux utilisateurs des autorisations (appartenance) pour utiliser la boîte aux lettres partagée. Seules les personnes au sein de votre organisation peuvent utiliser une boîte aux lettres partagée.
+- **User permissions:** You need to give users permissions (membership) to use the shared mailbox. Only people inside your organization can use a shared mailbox.
 
-- **Utilisateurs externes :** Vous ne pouvez pas autoriser les personnes extérieures à votre entreprise (par exemple, les personnes disposant d’un compte Gmail) à accéder à votre boîte aux lettres partagée. Si vous le souhaitez, envisagez plutôt de créer un groupe pour Outlook. Pour plus d’informations, consultez [Créer un groupe de Microsoft 365 dans le centre d’administration](../create-groups/create-groups.md).
+- **External users:** You can't give people outside your business (such as people with a Gmail account) access to your shared mailbox. If you want to do this, consider creating a group for Outlook instead. To learn more, see [Create a Microsoft 365 group in the admin center](../create-groups/create-groups.md).
 
 - **Utilisation avec Outlook :** outre l’utilisation d’Outlook sur le web depuis votre navigateur pour accéder aux boîtes aux lettres partagées, vous pouvez également utiliser l’application Outlook pour iOS ou Outlook pour Android. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Ajouter une boîte aux lettres partagée dans Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Vous pouvez également créer un groupe pour votre boîte aux lettres partagée. Pour plus d'informations, voir [Comparer les groupes](../create-groups/compare-groups.md).
 
 - **Chiffrement :** vous ne pouvez pas chiffrer l’e-mail envoyé depuis une boîte aux lettres partagée. Cela s’explique par le fait qu’une boîte aux lettres partagée ne dispose pas de sa propre stratégie de sécurité (nom d’utilisateur/mot de passe) et que celle-ci ne peut donc pas se voir attribuer de clé. Si plusieurs personnes sont membres et envoient/reçoivent des messages électroniques chiffrés à l’aide de leur propre clé, certains membres pourront lire le message électronique et d’autres pas, selon la clé publique ayant servi à chiffrer le message.
 
-- **Conversion de boîte aux lettres :** vous pouvez convertir des boîtes aux lettres utilisateur en boîtes aux lettres partagées. Consultez [Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md).
+- **Conversion de boîte aux lettres :** Vous pouvez convertir des boîtes aux lettres utilisateur en boîtes aux lettres partagées. Voir [Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md).
 
 - **Rôles d'administrateur :** les utilisateurs dotés du rôle d’administrateur général ou Administrateur Exchange peuvent créer des boîtes aux lettres partagées.
 

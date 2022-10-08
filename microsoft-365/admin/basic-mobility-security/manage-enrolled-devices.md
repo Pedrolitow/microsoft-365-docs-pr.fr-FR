@@ -1,5 +1,5 @@
 ---
-title: Gérer les appareils inscrits dans mobile Gestion des appareils dans Microsoft 365
+title: Gérer les appareils inscrits dans Mobile Gestion des appareils dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,16 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Connectez-vous à Microsoft 365 et configurez Mobilité et sécurité de base pour utiliser la gestion intégrée des appareils mobiles pour sécuriser et gérer les appareils mobiles de vos utilisateurs.
-ms.openlocfilehash: b84c97302743177f0a69978ebf358c0fbd1045a8
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: d9021534e6d4290fcfdfe6d387fc932898027124
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863563"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204978"
 ---
-# <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gérer les appareils inscrits dans mobile Gestion des appareils dans Microsoft 365
+# <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gérer les appareils inscrits dans Mobile Gestion des appareils dans Microsoft 365
 
-La gestion intégrée des appareils mobiles pour Microsoft 365 vous permet de sécuriser et de gérer les appareils mobiles de vos utilisateurs, tels que les iPhone, les iPad, les Android et les téléphones Windows. La première étape consiste à se connecter à Microsoft 365 et à configurer la mobilité et la sécurité de base. Pour plus d’informations, consultez [Configurer la mobilité et la sécurité de base](set-up.md).
+La gestion intégrée des appareils mobiles pour Microsoft 365 vous permet de sécuriser et de gérer les appareils mobiles de vos utilisateurs, comme les iPhone, les iPad, les Android et les téléphones Windows. La première étape consiste à se connecter à Microsoft 365 et à configurer la mobilité et la sécurité de base. Pour plus d’informations, consultez [Configurer la mobilité et la sécurité de base](set-up.md).
 
 Une fois que vous l’avez configuré, les membres de votre organisation doivent inscrire leurs appareils dans le service. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de mobilité et de sécurité de base](enroll-your-mobile-device.md). Vous pouvez ensuite utiliser Mobilité et sécurité de base pour gérer les appareils de votre organisation. Par exemple, vous pouvez utiliser des stratégies de sécurité des appareils pour limiter l’accès aux e-mails ou d’autres services, afficher les rapports des appareils et réinitialiser à distance un appareil. Vous accédez généralement au Centre de sécurité & conformité pour effectuer ces tâches. Pour plus d’informations, consultez [portail de conformité Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
 

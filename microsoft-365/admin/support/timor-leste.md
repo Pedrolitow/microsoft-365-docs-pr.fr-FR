@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 55a3f05ad502cdf813680b34d00020580ce1f827
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 2442c1b6efe956cd901272113f97ec7a46c361fe
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372779"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204120"
 ---
-# <a name="contact-support-for-timor-leste"></a>Contactez le support technique Timor-Leste
+# <a name="contact-support-for-timor-leste"></a>Contacter le support technique pour Timor-Leste
 
 [Rechercher un autre pays ou une autre région](../get-help-support.md).
 
@@ -29,9 +31,9 @@ ms.locfileid: "61372779"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Portugais : Mon-Fri 21:00-17:00
+Portugais : Mon-Fri 21h-5h
 
-Anglais : Mon-Fri 21h00 à 17h00
+Anglais : Mon-Fri 21h-5h
 
 ### <a name="technical-support"></a>Support technique :
 
@@ -39,4 +41,4 @@ Portugais : 24 heures sur 24, entre lun midi et sam midi
 
 Anglais : 24h/24, 7j/7
 
-Les frais d’appels internationaux s’appliquent
+Des frais d’appel internationaux s’appliquent

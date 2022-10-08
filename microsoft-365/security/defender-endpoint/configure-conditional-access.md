@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5cf63f594d8e1d4b165ea435547d95786a12a0f4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f22af8b0835ff0b93297484f695f51925e07ff55
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702993"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205682"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurer l’accès conditionnel dans Microsoft Defender pour point de terminaison
 
@@ -75,7 +77,7 @@ Effectuez les étapes suivantes pour activer l’accès conditionnel :
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Étape 2 : Activer l’intégration de Defender pour point de terminaison dans Intune
 
 1. Connectez-vous au [Portail Azure](https://portal.azure.com).
-2. Sélectionnez Conformité \> **de l’appareil** **Microsoft Defender ATP**.
+2. Sélectionnez **Conformité** \> **de l’appareil Microsoft Defender ATP**.
 3. Définissez **Connect Windows 10.0.15063+ sur Microsoft Defender Advanced Threat Protection** **sur Activé**.
 4. Cliquez sur **Enregistrer**.
 

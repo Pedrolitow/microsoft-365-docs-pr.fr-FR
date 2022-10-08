@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 12d39ec59ee4f8773bb040d1721e63422d274344
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+- m365-security
+- tier1
+ms.openlocfilehash: ad7b0728cbba3a59d58b0bbd8706aca3431ff253
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739859"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096982"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Afficher et modifier les stratégies de protection des appareils
 
@@ -30,7 +31,7 @@ Dans Microsoft 365 Business Premium, les paramètres de sécurité des appareils
 **Ce guide décrit comment** :
 
 - Obtenir une vue d’ensemble de vos stratégies par défaut
-- Utilisez des stratégies d’appareil dans le portail Microsoft 365 Defender ou dans le Centre d’administration Microsoft Endpoint Manager (Intune).
+- Utilisez des stratégies d’appareil dans le portail Microsoft 365 Defender ou le Centre d’administration Microsoft Endpoint Manager (Intune).
 
 ## <a name="about-the-default-device-protection-policies"></a>À propos des stratégies de protection des appareils par défaut
 
@@ -52,7 +53,7 @@ Pour afficher vos stratégies de protection des appareils existantes dans le por
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-1. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**).
+1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
     :::image type="content" source="../media/mdb-deviceconfiguration.png" lightbox="../media/mdb-deviceconfiguration.png" alt-text="Page Configuration de l’appareil.":::
 
@@ -68,7 +69,7 @@ Pour modifier une stratégie d’appareil :
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-1. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**).
+1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
 1. Sélectionnez un onglet de système d’exploitation (par exemple, **Clients Windows**), puis passez en revue la liste des stratégies sous les catégories **Protection nouvelle génération** et **Pare-feu**.
 
@@ -103,7 +104,7 @@ Pour créer une stratégie de protection des appareils :
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-1. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**).
+1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
 1. Sélectionnez un onglet de système d’exploitation (par exemple, **Clients Windows**), puis passez en revue la liste des stratégies **Protection nouvelle génération**.
 
@@ -117,7 +118,7 @@ Pour créer une stratégie de protection des appareils :
 
 1. Sur l’onglet **Groupes d’appareils**, créez un groupe d’appareils ou utilisez un groupe existant. Les stratégies sont affectées aux appareils par le biais de groupes d’appareils. Voici quelques éléments à garder à l’esprit :
 
-   - Au départ, vous ne disposez peut-être que de votre groupe d’appareils par défaut, qui inclut les appareils que les membres de votre organisation utilisent pour accéder aux données et à la messagerie de l’organisation. Vous pouvez conserver et utiliser votre groupe d’appareils par défaut.
+   - Initially, you might only have your default device group, which includes the devices people in your organization are using to access organization data and email. You can keep and use your default device group.
    - Créez un groupe d’appareils pour appliquer une stratégie avec des paramètres spécifiques différents de la stratégie par défaut.
    - Lorsque vous configurez votre groupe d’appareils, vous spécifiez certains critères, tels que la version du système d’exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez.
    - Tous les groupes d’appareils, y compris les groupes d’appareils par défaut et personnalisés que vous définissez, sont stockés dans Azure Active Directory (Azure AD).
@@ -179,7 +180,7 @@ Pour dupliquer une stratégie dans Intune :
 
 1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager.
 
-1. Sélectionnez la stratégie que vous souhaitez copier. Ensuite, sélectionnez **Dupliquer**, ou sélectionnez les points de suspension **(…)** à la droite de la stratégie et sélectionnez **Dupliquer**.
+1. Select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
 1. Indiquez un nouveau nom pour la stratégie, puis sélectionnez **Enregistrer**.
 
 Pour modifier une stratégie :

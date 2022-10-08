@@ -11,17 +11,19 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7db063e886fc32fcd758d6be2f893116eb75bb3c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a696b7ba96f244a68d9059b2894ea64d12c6e68a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696688"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170990"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par son ID
 

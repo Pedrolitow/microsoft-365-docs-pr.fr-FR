@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - M365-identity-device-management
@@ -29,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un iPhone ou un téléphone Android, et vos fichiers professionnels dans les applications Office seront protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 4121c417eb65bf4994d07b173f5cc4a5b976f81b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 4bcb19af85c348541153e7079d5b3f273f5b1923
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663822"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189602"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 pour les PME
 
@@ -68,11 +69,11 @@ Entrez votre adresse e-mail professionnelle à l'écran **Ajouter un compte e-ma
   
 ![Connectez-vous à votre compte professionnel.](../../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-Si votre organisation protège les fichiers dans les applications, une boîte de dialogue s’affiche indiquant que votre organisation protège désormais les données dans l'application et que vous devez redémarrer l'application pour continuer à l'utiliser. Appuyez sur **OK**, puis fermez Outlook. 
+If your organization is protecting files in apps, you'll see a dialog stating that your organization is now protecting the data in the app and you need to restart the app to continue to use it. Tap **OK** and close Outlook. 
   
 ![Capture d’écran indiquant que votre organisation protège désormais votre application Outlook.](../../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
-Localisez l'application Outlook sur l'iPhone, puis redémarrez-la. Lorsque vous y êtes invité, entrez un code confidentiel et confirmez-le. Outlook sur votre iPhone est maintenant prêt à être utilisé.
+Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and verify it. Outlook on your iPhone is now ready to be used.
   
 ![Définissez un code secret pour accéder aux données de votre organisation.](../../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   

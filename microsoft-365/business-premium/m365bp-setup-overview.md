@@ -14,18 +14,21 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Démarrez le processus de configuration de Microsoft 365 Business Premium ou Microsoft 365 for  .
-ms.openlocfilehash: 05e4d9cbd1a5781a8c25a49c85f3b085ba1e7042
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 73368bd5048e65318abd7ffbad8ef1eac4c13460
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738726"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097026"
 ---
 # <a name="fortify-your-environment-with-microsoft-365-business-premium"></a>Fortifiez votre environnement avec Microsoft 365 Business Premium.
 

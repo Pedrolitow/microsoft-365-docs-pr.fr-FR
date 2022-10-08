@@ -16,18 +16,19 @@ metadata:
   f1.keywords: NOCSH
   ms.collection:
   - SMB
-  - M365-security-compliance
-  ms.openlocfilehash: 0027881110a059e6868bbb7ce5a6c7709313ad0c
-  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+  - m365-security
+  - tier1
+  ms.openlocfilehash: 197cc97f5a5f8d7f51a2315dfc8029da03a59f90
+  ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/03/2022
-  ms.locfileid: "67595648"
+  ms.lasthandoff: 09/28/2022
+  ms.locfileid: "68096960"
 title: Microsoft Defender pour entreprises - Forum aux questions et réponses
 summary: >
   Utilisez cet article pour obtenir des réponses aux questions que vous pourriez avoir sur Defender entreprise.
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: Puis-je étendre mon version préliminaire de Defender entreprise ?
     answer: "Étant donné que Defender entreprise est désormais en disponibilité générale, le programme en préversion est terminé et ne peut pas être étendu. \n\nVoir [Get Defender for Business](get-defender-business.md).\n"
@@ -54,8 +55,8 @@ sections:
     answer: "Oui. Defender entreprise prend en charge la protection pour les appareils Mac, Android et iOS/iPadOS. Voir [Appareils intégrés](mdb-onboard-devices.md).\n\n- Vous pouvez intégrer des appareils Mac à l’aide d’un script local dans le portail Microsoft 365 Defender. \n- Pour intégrer des appareils Android et iOS/iPadOS, vous pouvez utiliser [Microsoft Intune](/mem/intune/).\n\nUne simplification accrue pour les appareils Mac, iOS/iPadOS et Android figure dans la feuille de route. \n"
   - question: Defender pour Entreprise prend-il en charge les serveurs ?
     answer: "La prise en charge du serveur est maintenant en préversion ! Consultez [Comment obtenir des serveurs Microsoft Defender entreprise (préversion).](get-defender-business-servers.md)  \n\nLorsque la licence de serveurs Microsoft Defender pour entreprises devient en disponibilité générale (GA), elle est proposée en tant que module complémentaire à Microsoft 365 Business Premium et à la version autonome de Defender for Business. En disponibilité générale, Microsoft Defender pour entreprises serveurs sont facturés à 3 $ par instance de serveur. À ce stade, vous pouvez acheter une licence pour chaque serveur intégré, ou choisir de déconnecter les serveurs de Defender entreprise.\n"
-  - question: Quelle est la différence entre les serveurs Microsoft Defender pour entreprises et Microsoft Defender pour serveurs Plan 1 et Plan 2 ?
-    answer: "Les serveurs Defender entreprise sont un module complémentaire de Defender entreprise et Microsoft 365 Business Premium uniquement. Il offre une expérience de sécurité de point de terminaison unique pour les clients et les serveurs dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) pour les entreprises comptant jusqu’à 300 employés. Avec un processus de configuration simplifié et des options d’intégration des appareils, Defender entreprise permet aux clients qui n’ont pas nécessairement d’arrière-plan de sécurité de configurer, configurer et utiliser Defender pour serveurs ou Defender pour le cloud pour protéger les appareils de l’entreprise. \n\nDefender pour serveurs Plan 1/Plan 2 est une offre axée sur l’entreprise qui peut être achetée avec n’importe quel autre plan cloud Microsoft. Les plans 1 et 2 de Defender pour serveurs font partie de [Microsoft Defender pour le cloud](/azure/defender-for-cloud/defender-for-cloud-introduction). La chasse avancée aux menaces avec six mois de conservation des données et le service Spécialistes des menaces Microsoft sont disponibles avec Defender pour serveurs Plan 1 ou Plan 2.\n\nDefender pour cloud est une plateforme CSPM (Cloud Security Posture Management) et cloud de protection des charges de travail (CWPP) pour toutes vos ressources Azure, locales et multiclouds (Amazon AWS et Google GCP). L’expérience d’administrateur de Defender pour cloud réside dans le Portail Azure ([https://portal.azure.com](https://portal.azure.com)).\n"
+  - question: Quelle est la différence entre les serveurs Microsoft Defender pour entreprises et les Microsoft Defender pour les serveurs Plan 1 et Plan 2 ?
+    answer: "Les serveurs Defender entreprise sont un module complémentaire de Defender entreprise et Microsoft 365 Business Premium uniquement. Il offre une expérience de sécurité de point de terminaison unique pour les clients et les serveurs dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) pour les entreprises comptant jusqu’à 300 employés. Avec un processus de configuration simplifié et des options d’intégration des appareils, Defender entreprise permet aux clients qui n’ont pas nécessairement d’arrière-plan de sécurité de configurer, configurer et utiliser Defender pour serveurs ou Defender pour le cloud pour protéger les appareils de l’entreprise. \n\nDefender pour serveurs Plan 1/Plan 2 est une offre axée sur l’entreprise qui peut être achetée avec n’importe quel autre plan cloud Microsoft. Defender pour serveurs Plan 1 et Plan 2 font partie de [Microsoft Defender pour le cloud](/azure/defender-for-cloud/defender-for-cloud-introduction). La chasse avancée aux menaces avec six mois de conservation des données et le service Spécialistes des menaces Microsoft sont disponibles avec Defender pour serveurs Plan 1 ou Plan 2.\n\nDefender pour cloud est une plateforme CSPM (Cloud Security Posture Management) et cloud de protection des charges de travail (CWPP) pour toutes vos ressources Azure, locales et multiclouds (Amazon AWS et Google GCP). L’expérience d’administrateur de Defender pour cloud réside dans le Portail Azure ([https://portal.azure.com](https://portal.azure.com)).\n"
   - question: Puis-je configurer plusieurs stratégies de filtrage de contenu web dans Defender entreprise ?
     answer: "Actuellement, Defender entreprise ne prend en charge qu’une seule stratégie de filtrage web uniforme par locataire Defender entreprise. \n\nConsultez [Configurer le filtrage de contenu web](mdb-configure-security-settings.md#set-up-web-content-filtering).\n"
   - question: Puis-je utiliser des logiciels antivirus/anti-programme malveillant non Microsoft avec Defender entreprise ?

@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: bb774fdc3b6fb2eac29c3fc09ec48cfc4841df7a
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+- tier1
+ms.openlocfilehash: 36f3b704c4e28e1237c9b518b1dede6962d2b3dc
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710650"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096894"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Gérer les appareils dans Microsoft Defender pour entreprises
 

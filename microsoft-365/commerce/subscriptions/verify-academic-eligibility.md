@@ -9,9 +9,10 @@ manager: scotv
 ms.reviewer: pablom, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,29 +22,29 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment vérifier l’éligibilité de votre établissement scolaire à Microsoft 365 Éducation tarification universitaire.
 ms.date: 07/21/2020
-ms.openlocfilehash: 9cbcd9790d521f1d94c2324b2e73d5ecedbaa12e
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 56bd38bb0a9dc37ee2a98264a9e5e2d8218e1531
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713798"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206100"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Vérifier l’éligibilité scolaire pour les abonnements Microsoft 365 Éducation
 
-Si vous faites partie d’un établissement universitaire, vous pouvez vous inscrire à un essai gratuit de Microsoft 365 Éducation. Une fois que Microsoft a vérifié l’éligibilité scolaire de votre établissement scolaire, vous pouvez acheter Microsoft 365 produits à des prix universitaires. Cela inclut les produits qui sont disponibles gratuitement, comme Office 365 A1 pour les enseignants et Office 365 A1 pour les étudiants. Vous avez jusqu’à la fin de l’essai gratuit pour le convertir en abonnement payant à des prix universitaires.
+Si vous faites partie d’un établissement universitaire, vous pouvez vous inscrire à un essai gratuit de Microsoft 365 Éducation. Une fois que Microsoft a vérifié l’éligibilité scolaire de votre établissement scolaire, vous pouvez acheter des produits Microsoft 365 à des prix universitaires. Cela inclut les produits qui sont disponibles gratuitement, comme Office 365 A1 pour les enseignants et Office 365 A1 pour les étudiants. Vous avez jusqu’à la fin de l’essai gratuit pour le convertir en abonnement payant à des prix universitaires.
 
 Cet article explique comment vérifier l’éligibilité scolaire de votre établissement scolaire, vérifier l’état d’éligibilité et acheter des abonnements à des prix scolaires une fois votre établissement scolaire approuvé.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez déjà disposer d’un abonnement d’essai Microsoft 365 Éducation. Si vous n’avez pas d’abonnement d’évaluation, [visitez cette page web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) et sélectionnez **Démarrage gratuitement**.
+Vous devez déjà disposer d’un abonnement d’essai Microsoft 365 Éducation. Si vous n’avez pas d’abonnement d’évaluation, [visitez cette page web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) et **sélectionnez Prise en main gratuitement**.
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>Vérifier que vous disposez d’un abonnement d’évaluation
 
 Si vous ne savez pas si vous disposez d’un abonnement d’essai Microsoft 365 Éducation, procédez comme suit pour vérifier que c’est le cas.
 
 1. Dans le Centre d’administration Microsoft 365, accédez à la page **Facturation**\><a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Recherchez **Office 365 A1 pour la version d’évaluation des enseignants** et **Office 365 A1 pour les étudiants**. Si vous ne trouvez pas ces abonnements, [visitez cette page web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) et sélectionnez **Démarrage gratuitement**.
+2. Recherchez **Office 365 A1 pour la version d’évaluation des enseignants** et **Office 365 A1 pour les étudiants**. Si vous ne trouvez pas ces abonnements, [visitez cette page web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) et **sélectionnez Prise en main gratuitement**.
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Vérifier l’éligibilité scolaire de votre établissement scolaire
 
@@ -65,7 +66,7 @@ Une fois que vous avez un essai Microsoft 365 Éducation, vous pouvez vérifier 
     La carte **de facturation** indique l’état du processus de vérification. La carte affiche l’un des états suivants : approuvé, en attente, refusé ou ajouter votre domaine.
 
     > [!NOTE]
-    > Si vous ne voyez pas l’un de ces états, cela signifie que vous n’avez pas d’abonnement d’essai Microsoft 365 Éducation. Pour démarrer un essai gratuit, [visitez cette page web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) et sélectionnez **Démarrage gratuitement**.
+    > Si vous ne voyez pas l’un de ces états, cela signifie que vous n’avez pas d’abonnement d’essai Microsoft 365 Éducation. Pour démarrer un essai gratuit, [visitez cette page web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) et **sélectionnez Prise en main gratuitement**.
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>Acheter des abonnements à des prix universitaires
 

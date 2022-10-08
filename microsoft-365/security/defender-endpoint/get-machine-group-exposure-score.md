@@ -11,17 +11,19 @@ ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1314ae912eea85add651c0f13990b2500fcd909a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 335067ac03e02f842975ef32110b4836e88422e1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695260"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205264"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Répertorier le score d’exposition par groupe d’appareils
 

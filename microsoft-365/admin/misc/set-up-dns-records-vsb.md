@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ description: Apprenez à vérifier votre domaine et à créer des enregistrement
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
-ms.openlocfilehash: c2d2787e8d7f035cbefefe16b4defcdc310e65c7
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: fa6c25e8ac2bca0646455d81f7a4390be3b173b5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661868"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204824"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Connecter votre domaine à Microsoft 365
 

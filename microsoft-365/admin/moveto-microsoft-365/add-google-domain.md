@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer votre domaine de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 8c544979434dbe5231a62a116d42b384ca82b1ed
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 35e699de5e1060ecfd58cad7ecd3a16724d686c4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661692"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204604"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Ajouter le domaine Google Workspace à Microsoft 365
 

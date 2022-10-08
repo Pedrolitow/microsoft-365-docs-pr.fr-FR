@@ -8,17 +8,20 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: 07/07/2022
+ms.collection:
+- m365-security
+- tier2
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 280541647409916f45208b8ddfbb98c03f91383c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2432a7aea0f9c2d2431d1fc189fcd9393d689b27
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476855"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205440"
 ---
 # <a name="trial-playbook-microsoft-defender-for-endpoint"></a>Playbook d’évaluation : Microsoft Defender pour point de terminaison
 
@@ -84,6 +87,9 @@ Defender pour point de terminaison prend en charge deux façons de gérer les au
 
 - Gestion des autorisations de base : définissez les autorisations sur un accès complet ou en lecture seule. Les utilisateurs disposant de rôles Administrateur général ou Administrateur de sécurité dans Azure Active Directory ont un accès complet. Le rôle lecteur Sécurité dispose d’un accès en lecture seule et n’accorde pas l’accès pour afficher l’inventaire des machines/appareils.
 - Contrôle d’accès en fonction du rôle (RBAC) : définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations, consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).
+
+    > [!NOTE]
+    > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ## <a name="step-3-visit-the-microsoft-365-defender-portal"></a>Étape 3 : Visitez le portail Microsoft 365 Defender
 

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez l’inscription en libre-service Microsoft 365 et les programmes libre-service disponibles tels que Microsoft Power Apps, Microsoft Power Automate et Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: aa2c926e380f07dd43e3c3da14cfb389b92a0765
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: e12e3b75be80a78640fb57cceb7aeca1cbd85a45
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323527"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204868"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’inscription en libre-service dans votre organisation
 

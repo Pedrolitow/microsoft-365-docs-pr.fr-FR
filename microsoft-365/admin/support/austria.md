@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0879de9216f32a739353f0f08d266b363202cfd4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 342496da1decfed5d631a983e945c1d49768bdc6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374231"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189426"
 ---
-# <a name="contact-support-for-austria"></a>Contacter le support pour l’Autriche
+# <a name="contact-support-for-austria"></a>Contacter le support technique pour l’Autriche
 
 [Rechercher un autre pays ou une autre région](../get-help-support.md).
 
@@ -29,16 +31,16 @@ ms.locfileid: "61374231"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Allemand : Mon-Fri 9 h à 17 h
+Allemand : Mon-Fri 9h-17h
 
 Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Allemand : Mon-Fri 8h00 à 21h00
+Allemand : Mon-Fri de 8h00 à 21h00
 
 Anglais : 24h/24, 7j/7
 
-Autre Téléphone numéro : 01 206 09 15 78
+Autre numéro de téléphone : 01 206 09 15 78
 
 Frais d’appel local applicables

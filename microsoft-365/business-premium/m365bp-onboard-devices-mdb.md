@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 72d710e2db7ff160039e96e34f1f4b05d83ff681
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+- m365-security
+- tier1
+ms.openlocfilehash: d358c456bea558bae4b5c17f7d0ea52e8a5803a9
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736979"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097092"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour point de terminaison
 
@@ -91,7 +92,7 @@ Une fois que vous avez intégré les appareils Windows à Defender pour les PME,
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-Une fois la commande exécutée, la fenêtre d’invite de commandes se ferme automatiquement. En cas de réussite, le test de détection est marqué comme terminé et une nouvelle alerte s’affiche dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) pour l’appareil nouvellement intégré en dix minutes environ.
+After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly-onboarded device in about ten minutes.
 
 ## <a name="onboard-devices-gradually"></a>Intégrer progressivement des appareils
 
@@ -103,7 +104,7 @@ Si vous préférez intégrer des appareils par phases, ce que nous appelons *l�
 
 3. Dans le volet de navigation, choisissez **Paramètres** >  **Endpoints**, puis, sous **Gestion des appareils**, choisissez **Intégration**.
 
-4. Sélectionnez un système d’exploitation (par exemple **Windows 10 et 11)** puis choisissez une méthode d’intégration (par exemple, **Script local**). Suivez les instructions fournies pour la méthode que vous avez sélectionnée.
+4. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Local script**). Follow the guidance provided for the method you selected.
 
 5. Répétez ce processus pour chaque ensemble d’appareils que vous souhaitez intégrer. 
 
@@ -122,7 +123,7 @@ Si vous souhaitez déconnecter un appareil, utilisez l’une des procédures sui
 
 4. Dans l’écran de confirmation, passez en revue les informations, puis choisissez **Télécharger** pour continuer.
 
-5. Sélectionnez **Télécharger le package de retrait** Nous vous recommandons d’enregistrer le package de retrait sur un lecteur amovible.
+5. Sélectionnez **Télécharger le package de retrait**. Nous vous recommandons d’enregistrer le package de retrait sur un lecteur amovible.
 
 6. Exécutez le script sur chaque appareil que vous souhaitez déclasser. Vous avez besoin d’aide pour cette tâche ? Consultez les ressources suivantes :   
 

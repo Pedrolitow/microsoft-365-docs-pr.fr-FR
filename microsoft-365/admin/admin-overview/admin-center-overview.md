@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou la vue de tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: 993440c3d3fbd634b50f90305075ad626b6b4c4a
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 162f57a15a57db284eaec6729fe7d95721ea145f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662286"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205176"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -93,7 +94,7 @@ Pour plus d’informations sur la gestion de la facturation, des mots de passe, 
 
 ## <a name="who-is-an-admin"></a>Qui est un administrateur ?
 
-Par défaut, la personne inscrite qui achète un abonnement Microsoft 365 pour les entreprises obtient les autorisations d'administrateur. Cette personne peut attribuer des autorisations d'administrateur à d'autres personnes pour les aider à gérer Microsoft 365 pour leur organisation.
+By default, the person who signs up for and buys an Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
 
 Si vous recevez le message « **Vous ne disposez pas des autorisations requises pour accéder à cette page ou effectuer cette action** », cela signifie que vous n’êtes pas un administrateur.
 
@@ -101,11 +102,11 @@ Si vous recevez le message « **Vous ne disposez pas des autorisations requises 
 
 Lorsque vous avez besoin de votre administrateur pour réinitialiser votre mot de passe, supprimer un compte ou effectuer d'autres tâches, vous devez contacter les personnes suivantes :
 
-- **Universités et établissements scolaires** : contactez votre équipe de support technique. Un lien est généralement disponible sur le site de votre université. Au sein des établissements plus petits, il peut s'agir de quelques techniciens détenteurs d'autorisations d'administrateur.
+- **Universities and schools**: Contact your technical support team. Usually you can find a link on your university site. At smaller schools, there may be just a few individuals who have admin permissions.
 
 - **Grandes entreprises**: contactez votre support technique interne.
 
-- **Petites entreprises**: contactez le propriétaire/copropriétaire de l'entreprise. Celui-ci octroie souvent les autorisations d'administrateur au consultant informatique qui effectue les tâches de maintenance informatique pour l'entreprise.
+- **Small businesses**: Contact the business owner / co-owner. Often they give admin permissions to their IT consultant who does all the computer maintenance work for their business.
 
 Si vous ne savez pas qui contacter au sein de votre entreprise ou établissement scolaire pour obtenir de l’aide, posez une question à la personne qui vous a communiqué votre compte d’utilisateur et votre mot de passe.  
 
@@ -114,21 +115,21 @@ Si vous ne savez pas qui contacter au sein de votre entreprise ou établissement
 
 ## <a name="admin-center-features-and-settings"></a>Fonctionnalités et paramètres du centre d’administration
 
-Voici les fonctionnalités et les paramètres que vous trouverez dans la navigation de gauche du centre d’administration. En savoir plus sur les tâches d’administration dans [aide de l’administrateur](/microsoft-365/admin/).
+Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](/microsoft-365/admin/).
 
 |Menu|Objet|
 |-----|-----|
-|**Accueil**|Il s'agit de la page d'accueil du Centre d'administration. Vous allez découvrir comment gérer les utilisateurs, la facturation, l'état d'intégrité des services et les rapports.|
-|**Utilisateurs**|Créer et gérer des utilisateurs dans votre organisation, tels que des employés ou des étudiants. Vous pouvez également définir leur niveau d’autorisation ou réinitialiser leur mot de passe.|
-|**Groupes**|Créez et gérez des groupes dans votre organisation, tels qu’un groupe Microsoft 365, un groupe de distribution, un groupe de sécurité ou une boîte aux lettres partagée. Découvrez comment [créer](../create-groups/create-groups.md) et [gérer](../create-groups/manage-groups.md) des groupes .  |
-|**Resources**|Créer et gérer des ressources (par exemple, collection de sites SharePoint). Découvrez comment [créer des collections de sites](/sharepoint/create-site-collection).  |
-|**Facturation**|Affichez, achetez ou annulez des abonnements pour votre organisation. Affichez les relevés de facturation passés ou le nombre de licences attribuées à des utilisateurs individuels. Découvrez comment [gérer la facturation](../../commerce/index.yml).  |
+|**Accueil**|This is the landing page in the admin center. You'll see where to manage users, billing, service health, and reports.|
+|**Utilisateurs**|Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.|
+|**Groupes**|Create and manage groups in your organization, such as a Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.|
+|**Resources**|Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](/sharepoint/create-site-collection).|
+|**Facturation**|View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/index.yml).|
 |**Support**|Afficher les demandes de service existantes ou créez-en de nouvelles. Apprenez-en davantage dans [Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur](../../business-video/get-help-support.md).|
-|**Settings**|Gérer les paramètres globaux des applications telles que le courrier, les sites et la suite Office. Modifier la stratégie de mot de passe et la date d'expiration. Ajouter et mettre à jour des noms de domaine (par exemple, contoso.com). Modifier le profil de votre organisation et vos préférences de publication. Choisir si les partenaires peuvent accéder à votre Centre d'administration.|
+|**Settings**|Manage global settings for apps like email, sites, and the Office suite. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.|
 |**Configuration**|Gérer les domaines existants, activer et gérer l’authentification multifacteur, gérer l’accès administrateur, migrer les boîtes aux lettres d’utilisateurs vers Office 365, gérer les mises à jour de fonctionnalités et aider les utilisateurs à installer leurs applications Office.|
-|**Rapports**|Découvrez en un coup d’œil comment votre organisation utilise Microsoft 365 avec des rapports détaillés sur l’utilisation de la messagerie électronique, les activations d’Office, etc. Découvrez comment utiliser les nouveaux [rapports d’activité](../activity-reports/activity-reports.md).  |
+|**Rapports**|See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).|
 |**État d'intégrité**|Affichez l’intégrité en un clin d’œil. Vous pouvez également consulter d’autres informations et l’historique d’intégrité. Pour plus d’informations, consultez [Comment vérifier l’intégrité du service](../../enterprise/view-service-health.md) et [Comment vérifier l’intégrité des versions de Windows](/windows/deployment/update/check-release-health). <p>Utilisez le Centre de messages pour suivre les modifications à venir des fonctionnalités et services. Nous y publions des annonces contenant des informations qui vous aideront à planifier les changements et à comprendre comment ceux-ci peuvent affecter les utilisateurs. Pour plus d’informations, consultez [Centre de messages](../manage/message-center.md).|
-|**Centres d’administration**|Ouvrez des centres d'administration distincts pour Exchange, Skype Entreprise, Yammer, SharePoint et Azure AD. Chaque centre d'administration inclut tous les paramètres disponibles pour le service concerné.  <p> Par exemple, dans le Centre d’administration Exchange, configurez et gérez le courrier électronique, les calendriers, les groupes de distribution, etc. Dans le Centre d’administration SharePoint, créez et gérez les collections de sites, les paramètres de site et OneDrive Entreprise. Dans le Centre d’administration Skype Entreprise, configurez les notifications de messagerie instantanée, la conférence rendez-vous et la présence en ligne.  <p> En savoir plus sur le [Centre d'administration Exchange](/exchange/exchange-admin-center) et le [Centre d'administration SharePoint](/sharepoint/sharepoint-online). <p> **Remarque :** les centres d'administration disponibles dépendent de votre plan et de votre région.|
+|**Centres d’administration**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Yammer, and Azure AD. Each admin center includes all available settings for that service.  <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence.  <p> En savoir plus sur le [Centre d'administration Exchange](/exchange/exchange-admin-center) et le [Centre d'administration SharePoint](/sharepoint/sharepoint-online). <p> **Remarque :** les centres d'administration disponibles dépendent de votre plan et de votre région.|
 |
 
 ## <a name="common-tasks-in-the-admin-center"></a>Tâches courantes dans le Centre d’administration

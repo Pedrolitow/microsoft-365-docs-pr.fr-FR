@@ -7,13 +7,15 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Utilisez les connecteurs Power Automate Bookings pour créer des flux de travail personnalisés avec des déclencheurs de rendez-vous.
-ms.openlocfilehash: ca37f33d77d83fd13f7719edb345c7150d8226c0
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 4396b70d768e1baf104bbf22029ef739a0d71978
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360730"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204054"
 ---
 # <a name="use-power-automate-connectors-to-build-bookings-workflows"></a>Utiliser des connecteurs Power Automate pour créer des flux de travail Bookings
 

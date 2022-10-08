@@ -7,13 +7,15 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Suivez ces instructions pour créer votre page À propos de nous, notamment le nom d’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.
-ms.openlocfilehash: ce37b8d641f347380a32c5113fb1b1c7c1314cae
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 886a3f421f49524723920c2b9913f315377d53ed
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "66991693"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170726"
 ---
 # <a name="manage-group-attendees-in-bookings"></a>Gérer les participants du groupe dans Bookings
 

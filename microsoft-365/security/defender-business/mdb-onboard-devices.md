@@ -15,15 +15,16 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: 49ce0164004582ccc61f8c509fd34e3eb4123489
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+- tier1
+ms.openlocfilehash: f72c0115b896fe9cfc80c7e04b21112f4ba7bbef
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711343"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096872"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour entreprises
 
@@ -46,7 +47,7 @@ Avec Defender pour entreprise, vous avez le choix entre plusieurs options pour l
 Choisissez l'une des options suivantes pour intégrer des appareils clients Windows à Defender pour entreprises :
 
 - [Script local](#local-script-for-windows-10-and-11) (pour l’intégration manuelle d’appareils dans le portail Microsoft 365 Defender)
-- [نهج المجموعة](#group-policy-for-windows-10-and-11) (si vous utilisez déjà نهج المجموعة dans votre organisation)
+- [stratégie de groupe](#group-policy-for-windows-10-and-11) (si vous utilisez déjà stratégie de groupe dans votre organisation)
 - [Microsoft Intune](#intune-for-windows-10-and-11) (si vous utilisez déjà Intune)
 
 ### <a name="local-script-for-windows-10-and-11"></a>Script local pour Windows 10 et 11
@@ -76,9 +77,9 @@ Vous pouvez utiliser un script local pour intégrer des appareils clients Window
 
 8. Une fois le script exécuté, [exécutez un test de détection](#run-a-detection-test-on-a-windows-10-or-11-device).
 
-### <a name="group-policy-for-windows-10-and-11"></a>نهج المجموعة pour Windows 10 et 11
+### <a name="group-policy-for-windows-10-and-11"></a>stratégie de groupe pour Windows 10 et 11
 
-Si vous préférez utiliser نهج المجموعة pour intégrer des clients Windows, suivez les instructions fournies dans [Intégrer des appareils Windows à l’aide de نهج المجموعة](../defender-endpoint/configure-endpoints-gp.md). Cet article décrit les étapes d’intégration à Microsoft Defender pour point de terminaison. Les étapes d’intégration à Defender entreprise sont similaires.
+Si vous préférez utiliser stratégie de groupe pour intégrer des clients Windows, suivez les instructions fournies dans [Intégrer des appareils Windows à l’aide de stratégie de groupe](../defender-endpoint/configure-endpoints-gp.md). Cet article décrit les étapes d’intégration à Microsoft Defender pour point de terminaison. Les étapes d’intégration à Defender entreprise sont similaires.
 
 ### <a name="intune-for-windows-10-and-11"></a>Intune pour Windows 10 et 11
 
@@ -91,7 +92,7 @@ Vous pouvez intégrer des clients Windows et d’autres appareils dans Intune à
 
 Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent leur compte professionnel à l’appareil. En arrière-plan, l’appareil inscrit et rejoint Azure Active Directory (Azure AD) et est inscrit dans Intune.
 
-1. Accédez à la Azure-Portal ([https://portal.azure.com/](https://portal.azure.com/)) et connectez-vous.
+1. Accédez à la Portail Azure ([https://portal.azure.com/](https://portal.azure.com/)) et connectez-vous.
 
 2. Sélectionnez **Azure Active Directory** > **Mobility (MDM et MAM)** >  **Microsoft Intune**.
 
@@ -108,7 +109,7 @@ Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent l
 
 4. Sélectionnez **Enregistrer**.
 
-5. Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils dans Defender pour Entreprises. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+5. Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils dans Defender pour Entreprises. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 > [!TIP]
 > Pour plus d’informations, consultez [Activer l’inscription automatique Windows](/mem/intune/enrollment/windows-enroll).
@@ -121,7 +122,7 @@ Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent l
 
 2. Partagez cet article avec les utilisateurs de votre organisation : [Inscrire des appareils Windows 10/11 dans Intune](/mem/intune/user-help/enroll-windows-10-device).
 
-3. Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils dans Defender pour Entreprises. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+3. Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils dans Defender pour Entreprises. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 ### <a name="run-a-detection-test-on-a-windows-10-or-11-device"></a>Exécuter un test de détection sur un appareil Windows 10 ou 11
 
@@ -189,7 +190,7 @@ Lorsque vous exécutez le script local sur Mac :
 
 10. Utilisez la commande Python suivante dans Bash pour exécuter le package d’intégration : `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
-Une fois Mac inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+Une fois Mac inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 ### <a name="intune-for-mac"></a>Intune pour Mac
 
@@ -230,7 +231,7 @@ Si votre entreprise préfère que des personnes inscrivent leurs propres apparei
 
    `mdatp health --field real_time_protection_enabled`
 
-Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
@@ -349,7 +350,7 @@ Utilisez Microsoft Intune pour intégrer des appareils mobiles, tels que des app
 - [Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)
 - [Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)
 
-Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [Mer informasjon sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
 
 > [!NOTE]
 > La version autonome de Defender entreprise n’inclut pas la licence Intune requise pour intégrer des appareils iOS et Android. Vous pouvez ajouter Intune à votre abonnement Defender entreprise pour intégrer des appareils mobiles. Intune est inclus dans Microsoft 365 Business Premium.
