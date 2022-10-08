@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.openlocfilehash: 022c1311cd7ad95534de996baa14db2307bad64c
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 84a25963943102ea33049e22fda334292a0aa3e4
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811305"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142166"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitez le Centre d’actions pour voir les actions de correction
 
@@ -73,7 +73,7 @@ Pour accéder au centre d’action unifié dans le portail Microsoft 365 Defende
    |Tab|Description|
    |---|---|
    |**Pending**|Affiche une liste des actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, **fichier de mise en quarantaine**). <p> **CONSEIL** : Veillez à [examiner et approuver (ou rejeter) les actions en attente](manage-auto-investigation.md) dès que possible afin que vos enquêtes automatisées puissent se terminer en temps voulu.|
-   |**Historique**|Sert de journal d’audit pour les actions qui ont été effectuées, par exemple : <ul><li>Mesures correctives prises à la suite d’enquêtes automatisées</li><li>Actions de correction approuvées par votre équipe des opérations de sécurité</li><li>Commandes exécutées et actions de correction appliquées pendant les sessions de réponse en direct</li><li>Actions de correction effectuées par les fonctionnalités de protection contre les menaces dans l’Antivirus Microsoft Defender</li></ul> <p> Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées](manage-auto-investigation.md#undo-completed-actions)).|
+   |**Historique**|Sert de journal d’audit pour les actions qui ont été effectuées, par exemple : <ul><li>Mesures correctives prises à la suite d’enquêtes automatisées</li><li>Actions de correction approuvées par votre équipe des opérations de sécurité</li><li>Commandes exécutées et actions de correction appliquées pendant les sessions de réponse en direct</li><li>Actions de correction effectuées par les fonctionnalités de protection contre les menaces dans Microsoft Defender Antivirus</li></ul> <p> Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées](manage-auto-investigation.md#undo-completed-actions)).|
 
 4. Pour personnaliser, trier, filtrer et exporter des données dans le Centre d’actions, effectuez une ou plusieurs des étapes suivantes :
 

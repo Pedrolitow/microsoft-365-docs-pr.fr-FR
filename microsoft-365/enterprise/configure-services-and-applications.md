@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -19,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Configurez Microsoft 365 Entreprise services et applications, tels que SharePoint, Exchange et Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 225270166b4c88be945adc35474f39a71de52f4a
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 9328cab334ad7fb3f4d02a224d9e993cea6241a8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556257"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197126"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>Configurer Microsoft 365 Entreprise services et applications
 
@@ -32,7 +33,7 @@ Nos [instructions de configuration de base](../admin/setup/setup.md) vous aident
   
 Si vous souhaitez obtenir de l’aide pour configurer Microsoft 365, utilisez **[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)** ou les [guides d’installation pour les services Microsoft 365 et Office 365](setup-guides-for-microsoft-365.md).
   
-|**Services et applications**|**Ressources**|
+|**Services et applications**|**Resources**|
 |:-----|:-----|
 |**Microsoft 365 Suite** |- [Ajouter la personnalisation de votre entreprise à la page de connexion à Microsoft 365](https://support.office.com/article/Add-your-company-branding-to-Office-365-Sign-In-Page-a1229cdb-ce19-4da5-90c7-2b9b146aef0a) <br> - [Ajouter des informations de support technique personnalisées au volet d’aide Microsoft 365](https://support.office.com/article/Add-customized-help-desk-info-to-the-Office-365-help-pane-9dd9b104-68f7-4d49-9a30-82561c7d79a3) <br> - [Ajouter une intégration à Azure AD et à d’autres applications](https://support.office.com/article/Integrated-Apps-and-Azure-AD-for-Office-365-administrators-cb2250e3-451e-416f-bf4e-363549652c2a).  <br> - [Activer et utiliser la gestion des appareils mobiles dans Microsoft 365](https://support.office.microsoft.com/article/Manage-mobile-devices-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd) <br> - [Surveiller la connectivité Microsoft 365](monitor-connectivity.md) |
 |**Courrier électronique** <br> (Exchange Online) | - Utiliser le [conseiller de migration Exchange](https://aka.ms/office365setup) pour obtenir des conseils d’installation personnalisés  <br> - [Configurer Exchange Online Protection](/exchange/standalone-eop/set-up-your-eop-service) |

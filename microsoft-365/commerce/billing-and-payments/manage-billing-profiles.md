@@ -8,9 +8,10 @@ audience: Admin
 ms.topic: article
 f1.keywords:
 - MACBillingBillsPaymentsBillingProfiles
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment les profils de facturation prennent en charge les factures.
 ms.date: 04/02/2021
-ms.openlocfilehash: 34e56474106974e543640eb25b2cea4db0a2efc8
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: bd154503b4f9add9e8368663b4637ea28f239ce6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711387"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197258"
 ---
 # <a name="understand-billing-profiles"></a>Comprendre les profils de facturation
 
@@ -70,7 +71,7 @@ Chaque profil de facturation inclut les informations suivantes :
 
 ## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
 
-Si vous avez des questions ou si vous avez besoin d’aide sur vos frais Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créez une demande de support avec pomoc techniczna platformy Azure</a>.
+Si vous avez des questions ou si vous avez besoin d’aide sur vos frais Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créez une demande de support avec support Azure</a>.
 
 Si vous avez des questions ou si vous avez besoin d’aide sur votre profil de facturation dans Centre d'administration Microsoft 365, [contactez le support technique](../../admin/get-help-support.md).
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment utiliser des bases de référence pour déployer des configurations de locataire standard.
-ms.openlocfilehash: 85a2e035ce2aae2b7e343d03f19a266cc3a08df5
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 301ceb0176075f4d79a6f3f1f539704f2db17e0d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599448"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187732"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation de bases de référence Microsoft 365 Lighthouse pour déployer des configurations de locataire standard 
 
@@ -46,8 +47,8 @@ Les configurations de référence lighthouse sont conçues pour garantir que tou
 | Configurer l’inscription des appareils | Inscription d’appareils pour permettre à vos appareils locataires de s’inscrire dans Microsoft Endpoint Manager. Pour ce faire, configurez l’inscription automatique entre Azure Active Directory et Microsoft Endpoint Manager. Pour plus d’informations sur cette base de référence, consultez [Configurer l’inscription pour les appareils Windows](/mem/intune/enrollment/windows-enroll). |
 | Configurer Microsoft Defender pour entreprises | Provisionne le locataire pour Microsoft Defender pour entreprises et intègre les appareils déjà inscrits dans Microsoft Endpoint Manager à Microsoft Defender pour entreprises. Pour plus [d’informations, voir Qu’est-ce que Microsoft Defender pour entreprises ?](../security/defender-business/mdb-overview.md) |
 | Configurer Exchange Online Protection et Microsoft Defender pour Office 365 | Stratégie permettant d’appliquer les stratégies recommandées anti-courrier indésirable, anti-programmes malveillants, anti-hameçonnage, liens sécurisés et stratégies de pièces jointes sécurisées à vos locataires Exchange Online boîtes aux lettres. |
-| Configurer l’antivirus Microsoft Defender pour Windows 10 et versions ultérieures | Profil de configuration d’appareil pour les appareils Windows avec des paramètres antivirus Microsoft Defender préconfigurés. Pour plus d’informations sur cette base de référence, consultez [Configurer Microsoft Defender pour point de terminaison dans Intune](/mem/intune/protect/advanced-threat-protection-configure).|
-| Configurer le Pare-feu Microsoft Defender pour Windows 10 et versions ultérieures | Stratégie de pare-feu pour sécuriser les appareils en empêchant le trafic réseau indésirable et non autorisé. Pour plus d’informations sur cette base de référence, consultez [les meilleures pratiques de configuration de Windows Defender Pare-feu](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
+| Configurer Microsoft Defender Antivirus pour Windows 10 et versions ultérieures | Profil de configuration d’appareil pour les appareils Windows avec des paramètres antivirus Microsoft Defender préconfigurés. Pour plus d’informations sur cette base de référence, consultez [Configurer Microsoft Defender pour point de terminaison dans Intune](/mem/intune/protect/advanced-threat-protection-configure).|
+| Configurer Microsoft Defender Firewall pour Windows 10 et versions ultérieures | Stratégie de pare-feu pour sécuriser les appareils en empêchant le trafic réseau indésirable et non autorisé. Pour plus d’informations sur cette base de référence, consultez [les meilleures pratiques de configuration de Windows Defender Pare-feu](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Configurer une stratégie de conformité des appareils pour Windows 10 et versions ultérieures | Une stratégie d’appareil Windows avec des paramètres préconfigurés pour répondre aux exigences de conformité de base. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger un appareil joint à Azure AD conforme ou hybride](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 | Configurer Microsoft Edge  | Stratégie de navigateur Microsoft Edge pour Windows 10 ou version ultérieure avec des paramètres préconfigurés afin de rester protégé contre les escroqueries par hameçonnage et les logiciels malveillants. Cette stratégie permet également à Microsoft Edge d’enregistrer et de surveiller en toute sécurité les mots de passe et de suggérer des mots de passe forts si nécessaire. |
 

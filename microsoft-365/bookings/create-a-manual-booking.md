@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Suivez ces instructions pour créer un rendez-vous et affecter un employé.
-ms.openlocfilehash: 50df4ef9d8c5fffd29af9d05cc33a91613ff0607
-ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+ms.openlocfilehash: 6c63b1cbd2841bb23328803866cb5b092cace18d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67623720"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197368"
 ---
 # <a name="create-a-manual-booking"></a>Créer une réservation manuelle
 

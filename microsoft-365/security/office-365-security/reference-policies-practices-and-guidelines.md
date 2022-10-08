@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Microsoft a développé différentes stratégies, procédures et adopté plusieurs meilleures pratiques pour protéger nos utilisateurs contre les e-mails abusifs, indésirables ou malveillants.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a2b047b7a7c528f76131f84ecf34203cb7be2352
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 8cea8a26c318c7832f28f9ffaa0a740837d5894c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67594186"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091694"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 
@@ -87,7 +87,7 @@ Les expéditeurs doivent respecter les limites de Microsoft 365 répertoriées d
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organisations et ressources de remise de courrier électronique
 
-Microsoft collabore activement avec des organismes et fournisseurs de services du secteur afin d'améliorer l'écosystème de la messagerie et d'Internet. Ces organisations ont publié des documents relatifs aux meilleures pratiques que nous soutenons et que nous recommandons aux expéditeurs d'utiliser. Cela améliore votre capacité à remettre des courriers électroniques parmi plusieurs fournisseurs de services de messagerie dans le monde entier.
+Microsoft actively works with industry bodies and service providers in order to improve the internet and email ecosystem. These organizations have published best practice documents that we support and recommend senders adhere to. This improves your ability to deliver email among several email service providers around the world.
 
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez les éléments ajoutés, modifiés et corrigés dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: 97692ae5d8520d0a6d228c0f80c685a6c45c7b78
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 65fba4d7cdef2b1afc8935f6833e10e04dee616f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597545"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197038"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 
@@ -30,6 +31,20 @@ Nous ajoutons continuellement de nouvelles fonctionnalités à [Microsoft 365 Li
 
 > [!NOTE]
 > Certaines fonctionnalités sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, vous devriez la voir bientôt.
+
+## <a name="september-2022"></a>Septembre 2022
+
+### <a name="fully-automated-setup-of-microsoft-defender-for-business"></a>Configuration entièrement automatisée de Microsoft Defender pour entreprises
+
+Nous avons ajouté une étape entièrement automatisée à la base de référence par défaut qui vous permet de configurer vos locataires clients avec Microsoft Defender pour entreprises. Cette étape provisionne automatiquement votre locataire pour Microsoft Defender pour entreprises et intègre automatiquement Intune appareils inscrits à Microsoft Defender pour entreprises.
+
+### <a name="capability-to-filter-the-multifactor-authentication-mfa-list-to-show-relevant-user-accounts"></a>Possibilité de filtrer la liste d’authentification multifacteur (MFA) pour afficher les comptes d’utilisateur pertinents
+
+La page Authentification multifacteur prend désormais en charge le filtrage de la liste des comptes d’utilisateur par type de compte (par exemple, par Administration, membre ou invité). Vous pouvez également exclure d’autres comptes de la liste, tels que les comptes de service ou les comptes d’accès d’urgence. Pour accéder à cette fonctionnalité, accédez à **l’authentification multifacteur** **Utilisateurs** > , sélectionnez un locataire dans la liste pour ouvrir le volet détails du locataire, puis sélectionnez l’onglet **Utilisateurs non inscrits pour l’authentification multifacteur**. Ces fonctionnalités de filtrage et d’exclusion vous aident à vous concentrer sur les comptes d’utilisateur pertinents. 
+
+### <a name="capability-to-act-on-security-incidents-and-alerts"></a>Possibilité d’agir sur les incidents de sécurité et les alertes
+
+Vous pouvez désormais agir sur les incidents et les alertes affichés sur la page **Incidents et alertes** de **sécurité** >  de l’appareil. Les actions actuellement prises en charge incluent l’attribution de l’incident ou de l’alerte à vous-même ou la résolution de l’incident ou de l’alerte. 
 
 ## <a name="august-2022"></a>Août 2022
 
@@ -135,15 +150,15 @@ Microsoft 365 Lighthouse pouvez désormais tester les configurations de locatair
 
 Cette nouvelle fonctionnalité détecte les stratégies existantes au sein des locataires clients que vous gérez et les compare à votre plan de déploiement. Microsoft 365 Lighthouse fournit ensuite des désignations d’état pour les étapes de déploiement et les processus d’étape de déploiement pour vous aider à comprendre quels processus de déploiement ont déjà été terminés, ceux qui doivent être traités et où les paramètres prescrits par le plan de déploiement sont égaux, manquants ou en conflit avec les paramètres inclus dans les stratégies existantes. La connaissance de ces informations facilite l’identification, la hiérarchisation et la résolution des conflits de stratégie plus rapidement, plus facilement et plus efficace.
 
-### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Étape de déploiement pour configurer le Pare-feu Microsoft Defender
+### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Étape de déploiement pour configurer le pare-feu Microsoft Defender
 
-Microsoft 365 Lighthouse a ajouté l’étape de déploiement du Pare-feu Microsoft Defender à sa ligne de base par défaut. Cette étape permet aux MSP de sécuriser les appareils clients par le biais de la configuration par défaut du pare-feu pour les appareils Windows 10 (et ultérieurs). Le Pare-feu Microsoft Defender bloque le trafic réseau non autorisé entrant ou sortant des appareils clients et réduit le risque de menaces de sécurité réseau. Une fonctionnalité règles de pare-feu Microsoft Defender est en cours de développement.
+Microsoft 365 Lighthouse a ajouté l’étape de déploiement configurer Microsoft Defender pare-feu à sa ligne de base par défaut. Cette étape permet aux MSP de sécuriser les appareils clients par le biais de la configuration par défaut du pare-feu pour les appareils Windows 10 (et ultérieurs). Microsoft Defender Pare-feu bloque le trafic réseau non autorisé entrant ou sortant des appareils clients et réduit le risque de menaces de sécurité réseau. Une fonctionnalité de règles de pare-feu Microsoft Defender est en cours de développement.
 
-Le Pare-feu Microsoft Defender est activé par défaut sur les appareils Windows 10 (et versions ultérieures). Si ce n’est pas configuré pour votre locataire client, procédez comme suit :
+Microsoft Defender Pare-feu est activé par défaut sur les appareils Windows 10 (et versions ultérieures). Si ce n’est pas configuré pour votre locataire client, procédez comme suit :
 
 1. Dans la page **Locataires** de Microsoft 365 Lighthouse, sélectionnez le locataire client pour ouvrir la page **Vue d’ensemble** du locataire.
 2. Sélectionnez l’onglet **Plan de déploiement** .
-3. Dans la liste des étapes de déploiement, sélectionnez **Configurer le pare-feu Microsoft Defender**.
+3. Dans la liste des étapes de déploiement, sélectionnez **Configurer Microsoft Defender Pare-feu**.
 4. Sélectionnez **Vérifier et déployer** pour déployer cette configuration sur le locataire du client. 
 
 ### <a name="increase-in-maximum-license-limit"></a>Augmentation de la limite maximale de licence

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Le moyen le plus simple de mettre à niveau les plans consiste à utiliser l’onglet Mise à niveau dans le centre d’administration. Toutefois, l’onglet Mise à niveau n’est pas toujours pris en charge.
 ms.date: 04/21/2021
-ms.openlocfilehash: 18e5da20b67068b2834793a0b7013bb27e6c5adf
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a1599675a7601323a579ecfffbe3948685f3aab7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324558"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188018"
 ---
 # <a name="upgrade-to-a-different-microsoft-plan"></a>Effectuer une mise à niveau vers un autre plan Microsoft
 

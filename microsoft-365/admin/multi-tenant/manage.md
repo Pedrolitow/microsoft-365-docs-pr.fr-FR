@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,16 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser le sélecteur de locataires et les vues multilocataires qui vous permettent de gérer les locataires à partir d’un emplacement unique.
-ms.openlocfilehash: 4a1168b1c2676bf25f0bb4ad7f3353a5e65f8caa
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3702cc5cc4e9d2ab6babf666c91b86675d01cb8c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468083"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188414"
 ---
 # <a name="multi-tenant-management-for-microsoft-365-partner-admins"></a>Gestion multilocataire pour les administrateurs partenaires Microsoft 365
 
-La gestion multilocataire offre une forme unifiée de gestion qui permet Microsoft 365 administrateurs partenaires d’administrer tous les locataires qu’ils gèrent à partir d’un emplacement unique. Si vous êtes un partenaire qui a un rôle d’administrateur délégué et gère plusieurs locataires, vous pouvez :
+La gestion mutualisée offre une forme unifiée de gestion qui permet aux administrateurs partenaires Microsoft 365 d’administrer tous les locataires qu’ils gèrent à partir d’un emplacement unique. Si vous êtes un partenaire qui a un rôle d’administrateur délégué et gère plusieurs locataires, vous pouvez :
 
 - Déplacez-vous rapidement entre les locataires que vous gérez.
 - Évaluer l’intégrité du service, les produits et la facturation sur plusieurs locataires.

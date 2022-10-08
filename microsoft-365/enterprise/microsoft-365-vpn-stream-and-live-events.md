@@ -11,18 +11,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
 f1.keywords:
 - NOCSH
 description: Considérations spéciales sur les événements stream et en direct dans les environnements VPN
-ms.openlocfilehash: e0a31ee619ecc072ce62b7e893526d48b37078fd
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7325c228c3b9bd7ffb808a56da09415709d3fdfb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681897"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187886"
 ---
 # <a name="special-considerations-for-stream-and-live-events-in-vpn-environments"></a>Considérations spéciales sur les événements stream et en direct dans les environnements VPN
 
@@ -512,7 +513,7 @@ La dernière étape consiste à ajouter un itinéraire direct pour les adresses 
 
 Notez que seules les adresses IP (et non les noms de domaine complets) de [la collecte des listes actuelles de points de terminaison CDN doivent être utilisées](#gathering-the-current-lists-of-cdn-endpoints) pour la configuration VPN.
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 ### <a name="will-this-send-all-my-traffic-to-the-service-direct"></a>Est-ce que cela enverra tout mon trafic vers le service directement ?
 

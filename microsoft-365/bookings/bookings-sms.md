@@ -7,13 +7,15 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Découvrez comment configurer des notifications sms pour les clients, les clients et les partenaires dans Microsoft Bookings.
-ms.openlocfilehash: 6a3c777f786ae62ec4a40f2609bf80d73c5629f1
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: aec0b59618d1c271972fed067c7ced386c140b8b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737585"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188084"
 ---
 # <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Configurer des notifications sms et des rappels dans Microsoft Bookings
 
@@ -26,7 +28,7 @@ Les notifications SMS incluent le lien de réunion Teams pour les rendez-vous de
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Les participants, les clients ou les partenaires ont besoin d’un numéro de téléphone valide Estados Unidos, au Canada ou au Royaume-Uni avant de pouvoir recevoir des notifications par SMS.
+Les participants, les clients ou les partenaires ont besoin d’un numéro de téléphone valide États-Unis, au Canada ou au Royaume-Uni avant de pouvoir recevoir des notifications par SMS.
 
 ## <a name="configure-sms-notification-in-microsoft-bookings"></a>Configurer la notification SMS dans Microsoft Bookings
 

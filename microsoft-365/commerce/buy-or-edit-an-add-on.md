@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -21,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: Découvrez comment acheter et gérer des modules complémentaires pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4fbb4cc9277c4f4a6ddc3c780388d0ebd8d492ad
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d5c1803bf4c28f1f020d0008f7d5ba870be8f683
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492079"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187996"
 ---
 # <a name="buy-or-manage-add-ons-for-microsoft-365-business-plans"></a>Acheter ou gérer des modules complémentaires pour les plans d’entreprise Microsoft 365
 
@@ -39,7 +40,7 @@ Il existe deux types de modules complémentaires :
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global ou de facturation pour effectuer les étapes décrites dans cet article. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../admin/add-users/about-admin-roles.md).
+Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="buy-an-add-on"></a>Acheter un module complémentaire
 
@@ -72,7 +73,7 @@ Pour supprimer un abonnement de module complémentaire autonome, vous [annulez l
 
 Vous ne pouvez pas supprimer un module complémentaire traditionnel. Si vous souhaitez supprimer un module complémentaire traditionnel, contactez le support technique pour obtenir de l’aide ([obtenez un support](../admin/get-help-support.md).
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md) (article)\
 [Acheter ou supprimer des licences d’abonnement](licenses/buy-licenses.md) (article)\

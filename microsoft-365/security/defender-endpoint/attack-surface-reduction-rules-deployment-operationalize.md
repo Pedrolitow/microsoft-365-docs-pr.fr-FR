@@ -1,12 +1,13 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque (ASR)
 description: Fournit des conseils pour l’opérationnalisation du déploiement de vos règles de réduction de la surface d’attaque.
-keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
+keywords: Déploiement de règles de réduction de la surface d’attaque (ASR), Microsoft ASR, gérer les règles ASR defender, surveiller les règles asr, chasse avancée des règles asr, rapport de règles ASR, règles asr faux positifs, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -16,38 +17,38 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-asr-rules
 - highpri
+- tier1
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: 325d233f9af34744b4249b68625a8c577a078ada
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 2ff38c373548adf50a0ae8db91b46872c4d3e572
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811788"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146588"
 ---
 # <a name="operationalize-attack-surface-reduction-asr-rules"></a>Utiliser des règles de réduction de la surface d’attaque (ASR)
 
-Une fois que vous avez entièrement déployé des règles de réduction de la surface d’attaque (ASR), il est essentiel que vous ayez des processus en place pour surveiller et répondre aux activités liées à l’ASR.
+Une fois que vous avez entièrement déployé des règles de réduction de la surface d’attaque (ASR), il est essentiel que vous ayez des processus en place pour surveiller et répondre aux activités liées à l’ASR. Les activités sont les suivantes : 
 
-## <a name="managing-false-positives"></a>Gestion des faux positifs
+## <a name="managing-asr-rules-false-positives"></a>Gestion des faux positifs des règles ASR
 
 Des faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection contre les menaces. Les faux positifs sont des cas où une entité (par exemple, un fichier ou un processus) est détectée et identifiée comme malveillante, bien que l’entité ne soit pas réellement une menace. En revanche, un faux négatif est une entité qui n’a pas été détectée comme une menace, mais qui est malveillante. Pour plus d’informations sur les faux positifs et les faux négatifs, consultez : [Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison](defender-endpoint-false-positives-negatives.md)
 
-## <a name="keeping-up-with-reports"></a>Suivre les rapports
+## <a name="keeping-up-with-asr-rules-reports"></a>Suivre les rapports de règles ASR
 
 L’examen régulier et cohérent des rapports est un aspect essentiel de la maintenance de votre déploiement de règles ASR et de la mise à jour des menaces nouvellement émergentes. Votre organisation doit avoir planifié des révisions des événements de règles ASR à une cadence qui reste à jour avec les événements signalés par les règles ASR. Selon la taille de votre organisation, les révisions peuvent être quotidiennes, horaires ou continues.
 
-## <a name="hunting"></a>Repérage
+## <a name="asr-rules-advanced-hunting"></a>Règles ASR - Repérage avancé
 
 L’une des fonctionnalités les plus puissantes de [Microsoft 365 Defender](https://security.microsoft.com) est la chasse avancée. Si vous n’êtes pas familiarisé avec la chasse avancée, consultez : [Chasse proactive contre les menaces avec la chasse avancée](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="Page Repérage avancé dans le portail Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting2.png":::
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="Page Repérage avancé dans le portail Microsoft 365 Defender. Microsoft Defender pour point de terminaison (MDE) règles ASR, règles ASR de chasse avancée, rapports de règles asr, règles asr faux positifs," lightbox="images/asr-defender365-advanced-hunting2.png":::
 
-La chasse avancée est un outil de chasse aux menaces basé sur une requête (Langage de requête Kusto) qui vous permet d’explorer jusqu’à 30 jours de données capturées (brutes) que Microsoft Defender ATP Endpoint Detection and Response (EDR) collecte à partir de toutes vos machines. Grâce à la chasse avancée, vous pouvez inspecter de manière proactive les événements afin de localiser des indicateurs et des entités intéressants. L’accès flexible aux données facilite le repérage sans contrainte pour les menaces connues et potentielles.
+La chasse avancée est un outil de chasse aux menaces basé sur une requête (Langage de requête Kusto) qui vous permet d’explorer jusqu’à 30 jours de données capturées (brutes) que Microsoft Defender détection et réponse des points de terminaison ATP (EDR) collectent à partir de toutes vos machines. Grâce à la chasse avancée, vous pouvez inspecter de manière proactive les événements afin de localiser des indicateurs et des entités intéressants. L’accès flexible aux données facilite le repérage sans contrainte pour les menaces connues et potentielles.
 
 Grâce à la chasse avancée, il est possible d’extraire des informations sur les règles ASR, de créer des rapports et d’obtenir des informations détaillées sur le contexte d’un audit de règle ASR donné ou d’un événement de bloc.
 

@@ -1,5 +1,5 @@
 ---
-title: Étape 2. Déployer la détection et la réponse des attaques
+title: Step 2. Deploy attack detection and response
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par l’homme, rançongiciel géré par l’homme, HumOR, attaque d'extorsion, attaque de rançongiciel, chiffrement, cryptovirologie, confiance zéro
 description: Utilisez Microsoft 365 Defender et ses sources de signal de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: e539bd15b3388c3fe9eae043a84441e514269c03
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 882e138717e7bad8e71db3914d034edf5bc0b6c2
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728119"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986463"
 ---
-# <a name="step-2-deploy-attack-detection-and-response"></a>Étape 2. Déployer la détection et la réponse des attaques
+# <a name="step-2-deploy-attack-detection-and-response"></a>Step 2. Deploy attack detection and response
 
 Comme étape initiale fortement recommandée pour la détection et la réponse aux attaques par rançongiciel dans votre client Microsoft 365, [définissez un environnement d’évaluation](/microsoft-365/security/defender/eval-overview) pour évaluer les fonctionnalités et les capacités de Microsoft 365 Defender.
 

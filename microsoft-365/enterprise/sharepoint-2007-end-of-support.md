@@ -19,6 +19,7 @@ ms.custom:
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:
@@ -37,12 +38,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: La prise en charge de SharePoint Server 2007 a pris fin en octobre 2017. Dans cet article, découvrez vos options de mise à niveau, de migration et de support.
-ms.openlocfilehash: 889f166c7f1b6aac9110a34f2cc5ae0e069d6b7f
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 7e6daa6992719fc85ce116e446106ca5ea80c8f6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670672"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197082"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour SharePoint Server 2007
 
@@ -75,7 +76,7 @@ Votre premier arrêt doit être le [site product lifecycle](/lifecycle/products/
   
 |**Good**|**Mieux**|**Idéale**|
 |:-----|:-----|:-----|
-|SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
+|SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
 ||Environnement hybride Microsoft Office SharePoint Online  <br/> |SharePoint Server 2016  <br/> |
 | | |Environnement hybride Microsoft Office SharePoint Online  <br/> |
    

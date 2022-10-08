@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -17,12 +18,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Configurez la fonctionnalité expérimentale d’intégration de support pour tester et fournir des commentaires à l’équipe d’intégration du support technique Microsoft 365.
-ms.openlocfilehash: fd448cb72b28c29a7758ba9cc8336ef6c45c7568
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 48a49b1e4a19039c40db278adf398f9a0ccd3831
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631542"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172948"
 ---
 # <a name="enable-microsoft-365-support-integration-for-servicenow-virtual-agent"></a>Activer l’intégration de la prise en charge de Microsoft 365 pour ServiceNow Virtual Agent
 

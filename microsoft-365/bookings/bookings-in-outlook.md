@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings avec moi pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: 6b35380769e00323dd91b2e7d816eeb98fcee241
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: afda2699bb5d4d5c588ab96e2153de7c27661ca7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851081"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188127"
 ---
 # <a name="bookings-with-me"></a>Bookings avec moi
 
@@ -222,7 +224,7 @@ Utilisez les commandes **Get-CASMailbox** et **Set-CASMailbox** pour vérifier l
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-is-the-difference-between-bookings-and-bookings-with-me"></a>Quelle est la différence entre Bookings et Bookings avec moi ?
 

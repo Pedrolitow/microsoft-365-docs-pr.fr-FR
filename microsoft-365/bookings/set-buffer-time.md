@@ -1,5 +1,5 @@
 ---
-title: Définir Bookings durée de la mémoire tampon
+title: Définir l’heure de la mémoire tampon Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Définissez la durée de la mémoire tampon avant ou après un rendez-vous dans Microsoft Bookings pour laisser le temps de nettoyer ou de réinitialiser l’équipement.
-ms.openlocfilehash: 49e58d53cec466c824a40281e3199f1544e74744
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 963add3016240e5c774eaf58c7f1418663b7f659
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637580"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197280"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Définir la durée de la mémoire tampon dans Microsoft Bookings
 
@@ -24,7 +26,7 @@ Vous pouvez définir la durée de la mémoire tampon avant le début des rendez-
 
 ## <a name="set-buffer-time-defaults"></a>Définir les valeurs par défaut du temps de mémoire tampon
 
-Les valeurs par défaut du temps de mémoire tampon sont définies sur la page **détails du service** dans Bookings. Comme toutes les valeurs par défaut de service définies sur cette page, ces valeurs par défaut peuvent être modifiées par vous pour une réservation spécifique afin de répondre aux besoins spécifiques des clients.
+Les valeurs par défaut de la durée de la mémoire tampon sont définies sur la page **détails du service** dans Bookings. Comme toutes les valeurs par défaut de service définies sur cette page, ces valeurs par défaut peuvent être modifiées par vous pour une réservation spécifique afin de répondre aux besoins spécifiques des clients.
 
 Le paramètre de durée de la mémoire tampon se trouve dans la page **des détails du service** . Pour qu’il puisse être défini pour un service donné, vous devez activer le paramètre d’heure de la mémoire tampon en sélectionnant le basculement de l’heure de la mémoire tampon. Cela entraîne l’affichage des listes déroulantes **Avant** et **Après** , qui sont utilisées pour choisir la durée par défaut à conserver avant et après chaque réservation, comme indiqué ici :
 

@@ -10,7 +10,10 @@ metadata:
   ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
-  ms.collection: M365-security-compliance
+  ms.collection:
+  - tier1
+  - purview-compliance
+  - import
   search.appverid:
   - MOE150
   - MED150
@@ -18,18 +21,18 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: Cet article contient des réponses à certaines questions fréquemment posées aux administrateurs sur l’importation de fichiers PST dans Microsoft 365 à l’aide du service d’importation Office 365.
-  ms.openlocfilehash: 664cf078d891bf1e40dc79ddb1dc009527ba0dd6
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.openlocfilehash: dddd1fcfc5bce7a6169f46f33d85a6fd0cb920ff
+  ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65098017"
+  ms.lasthandoff: 09/29/2022
+  ms.locfileid: "68150592"
 title: FAQ sur l’importation de fichiers PST
 summary: >
   **Cet article s’applique aux administrateurs. Voulez-vous importer des fichiers PST dans votre propre boîte aux lettres ? Voir [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
 
 
-  Voici quelques questions fréquemment posées sur l’utilisation du service d’importation Office 365 pour importer en bloc des fichiers PST dans Microsoft 365 boîtes aux lettres. Pour plus d’informations sur l’importation de fichiers PST, consultez [En savoir plus sur l’importation de fichiers PST dans Office 365](./importing-pst-files-to-office-365.md).
+  Voici quelques questions fréquemment posées sur l’utilisation du service d’importation Office 365 pour importer en bloc des fichiers PST dans des boîtes aux lettres Microsoft 365. Pour plus d’informations sur l’importation de fichiers PST, consultez [En savoir plus sur l’importation de fichiers PST dans Office 365](./importing-pst-files-to-office-365.md).
 
 
   ## <a name="using-network-upload-to-import-pst-files"></a>Utilisation du chargement réseau pour importer des fichiers PST
@@ -50,11 +53,11 @@ sections:
 
       > [!TIP]
 
-      > Envisagez de créer un nouveau groupe de rôles dans Exchange Online spécialement conçu pour importer les fichiers PST vers Office 365. Pour obtenir le niveau minimum de privilèges requis pour importer des fichiers PST, affectez les rôles d’importation/exportation de boîte aux lettres et de destinataire de courrier au nouveau groupe de rôles et ajoutez ensuite les membres.
+      > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members.
   - question: >
       Où le chargement réseau est-il disponible ?
     answer: >
-      Le téléchargement en réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l'Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis (EAU). Le téléchargement par réseau sera disponible à l’avenir dans d'autres régions.
+      Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Switzerland, Norway, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions in the future.
   - question: >
       What is the pricing for importing PST files by using network upload?
     answer: >
@@ -95,13 +98,13 @@ sections:
     answer: >
       Oui. Si un fichier PST contient un élément de boîte aux lettres dont la taille est supérieure à 150 Mo, l’élément sera ignoré lors du processus d’importation. Les éléments de plus de 150 Mo ne sont pas importés, car 150 Mo est la limite de taille des messages dans Exchange Online. Pour plus d'informations, consultez [Limites de messages dans Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   - question: >
-      Les propriétés des messages, comme la date d’envoi ou de réception, la liste de destinataires, etc., sont-elles conservées après l’importation de fichiers PST dans une boîte aux lettres Microsoft 365 ?
+      Les propriétés des messages, comme la date d’envoi ou de réception, la liste de destinataires, etc., sont-elles conservées après l’importation de fichiers PST dans une boîte aux lettres Microsoft 365 ?
     answer: >
       Oui. Les métadonnées du message d’origine sont inchangées pendant l’importation.
   - question: >
       Is there a limit to the number of levels in a folder hierarchy for a PST file that I want to import to a mailbox?
     answer: >
-      Oui. Vous ne pouvez pas importer un fichier PST comportant 300 niveaux de dossiers imbriqués ou plus.
+      Oui. You can't import a PST file that has 300 or more levels of nested folders.
   - question: >
       Can I use network upload to import PST files to an inactive mailbox in Office 365?
     answer: >
@@ -133,11 +136,11 @@ sections:
 
       > [!TIP]
 
-      > Envisagez de créer un nouveau groupe de rôles dans Exchange Online spécialement conçu pour importer les fichiers PST vers Office 365. Pour obtenir le niveau minimum de privilèges requis pour importer des fichiers PST, affectez les rôles d’importation/exportation de boîte aux lettres et de destinataire de courrier au nouveau groupe de rôles et ajoutez ensuite les membres.
+      > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members.
   - question: >
       Où l’expédition de disque est-elle disponible ?
     answer: >
-      L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. Ce service sera à l’avenir disponible dans d’autres régions.
+      Drive shipping is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Drive shipping will be available in more regions in the future.
 
 
       > [!NOTE]
@@ -146,11 +149,11 @@ sections:
   - question: >
       Quels sont les contrats de licences commerciaux qui prennent en charge l’expédition de disque ?
     answer: >
-      L’expédition de disque en vue de l’importation de fichiers PST dans Microsoft 365 est disponible via le programme Accord Entreprise Microsoft (EA). L’expédition de disque n’est pas accessible à un Contrat de Fourniture de Produits et de Services Microsoft (MPSA).
+      Drive shipping to import PST files to Microsoft 365 is available through a Microsoft Enterprise Agreement (EA). Drive shipping isn't available through a Microsoft Products and Services Agreement (MPSA).
   - question: >
       À combien revient l’expédition de disque en vue de l’importation de fichiers PST dans Microsoft 365 ?
     answer: >
-      Le coût d'utilisation de l'expédition du lecteur pour importer des fichiers PST dans les boîtes aux lettres Microsoft 365 est de 2 USD par Go de données. Par exemple, si vous expédiez un disque dur contenant 1 000 Go (1 To) de fichiers PST, le coût est de 2 000 USD. Vous pouvez travailler avec un partenaire pour payer les frais d'importation. Pour plus d'informations sur la recherche d'un partenaire, voir [Rechercher votre partenaire ou revendeur Microsoft](../admin/manage/find-your-partner-or-reseller.md).
+      The cost to use drive shipping to import PST files to Microsoft 365 mailboxes is $2 USD per GB of data. For example, if you ship a hard drive that contains 1,000 GB (1 TB) of PST files, the cost is $2,000 USD. You can work with a partner to pay the import fee. For information about finding a partner, see [Find your Microsoft partner or reseller](../admin/manage/find-your-partner-or-reseller.md).
   - question: >
       Quels types de disque dur est-il possible d’expédier ?
     answer: >
@@ -167,7 +170,7 @@ sections:
   - question: >
       After I ship my hard drive, how long does it take to get to the Microsoft data center?
     answer: >
-      Cela dépend de plusieurs facteurs, comme votre proximité par rapport au centre de données Microsoft et le type d’expédition choisi pour l’envoi de votre disque dur (livraison le jour suivant, livraison à deux jours ou envoi économique). La plupart des expéditeurs vous communiquent un numéro de suivi pour suivre le statut de votre livraison.
+      That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
   - question: >
       Une fois mon disque dur arrivé au centre de données de Microsoft, combien de temps faut-il pour charger mon fichiers PST dans Azure ?
     answer: >
@@ -175,7 +178,7 @@ sections:
   - question: >
       How long does it take to import a PST file to a mailbox?
     answer: >
-      Une fois les fichiers PST chargés dans l’espace de stockage Azure, Microsoft 365 analyse les données des fichiers PST (de manière sécurisée) afin d’identifier l’âge des éléments et les différents types de messages contenus dans les fichiers PST. Une fois cette analyse terminée, vous pourrez importer toutes les données des fichiers PST ou définir des filtres qui contrôlent les données importées. Après avoir démarré le travail d’importation, un fichier PST est importé dans une boîte aux lettres Microsoft 365 à une vitesse d’environ 24 Go par jour.<sup>\*</sup> Si ce taux ne répond pas à vos besoins, vous pouvez envisager d’autres méthodes pour importer des données de messagerie dans Office 365. Pour obtenir plus d'informations, consultez l'article [Façons de migrer plusieurs comptes de messagerie vers Office 365](/Exchange/mailbox-migration/mailbox-migration).
+      Une fois les fichiers PST chargés dans l’espace de stockage Azure, Microsoft 365 analyse les données des fichiers PST (de manière sécurisée) afin d’identifier l’âge des éléments et les différents types de messages contenus dans les fichiers PST. Une fois cette analyse terminée, vous pourrez importer toutes les données des fichiers PST ou définir des filtres qui contrôlent les données importées. Après avoir démarré le travail d’importation, un fichier PST est importé dans une boîte aux lettres Microsoft 365 à un débit d’environ 24 Go par jour.<sup>\*</sup> Si ce taux ne répond pas à vos besoins, vous pouvez envisager d’autres méthodes pour importer des données de messagerie dans Office 365. Pour obtenir plus d'informations, consultez l'article [Façons de migrer plusieurs comptes de messagerie vers Office 365](/Exchange/mailbox-migration/mailbox-migration).
 
 
       <sup>\*</sup> Ce taux n’est pas garanti. La charge de travail du serveur et les problèmes temporaires de performances peuvent réduire ce taux.
@@ -205,13 +208,13 @@ sections:
     answer: >
       Par défaut, le processus d’importation PST vérifie s’il existe des éléments dupliqués et ne copie pas les données d’un fichier PST dans la boîte aux lettres ou l’archive si un élément correspondant existe au sein du dossier cible dans la boîte aux lettres cible ou l’archive cible. Si vous réimportez le même fichier PST et spécifiez un autre dossier cible (à l’aide de la propriété TargetRootFolder dans le fichier de mappage d’importation PST) que celui spécifié dans une tâche d’importation précédente, tous les éléments du fichier PST sont réimportés.
   - question: >
-      Les propriétés des messages, comme la date d’envoi ou de réception, la liste de destinataires, etc., sont-elles conservées après l’importation de fichiers PST dans une boîte aux lettres Microsoft 365 ?
+      Les propriétés des messages, comme la date d’envoi ou de réception, la liste de destinataires, etc., sont-elles conservées après l’importation de fichiers PST dans une boîte aux lettres Microsoft 365 ?
     answer: >
       Oui. Les métadonnées du message d’origine sont inchangées pendant l’importation
   - question: >
       Is there a limit to the number of levels in a folder hierarchy for a PST file that I want to import to a mailbox?
     answer: >
-      Oui. Vous ne pouvez pas importer un fichier PST comportant 300 niveaux de dossiers imbriqués ou plus.
+      Oui. You can't import a PST file that has 300 or more levels of nested folders.
   - question: >
       Est-il possible d’expédier un disque en vue de l’importation de fichiers PST dans une boîte aux lettres inactive Microsoft 365 ?
     answer: >
@@ -247,7 +250,7 @@ sections:
   - question: >
       If I have to ship my hard drive to another country, is there anything I need to do?
     answer: >
-      Le disque dur que vous expédiez à Microsoft va peut-être devoir franchir des frontières internationales. Si c’est le cas, il vous appartient de vérifier que le disque dur et les données qu’il contient sont importés et/ou exportés conformément à la législation en vigueur. Avant d’expédier un disque dur, vérifiez auprès de vos conseillers si, du point de vue légal, le disque et les données peuvent être expédiés au centre de données Microsoft spécifié. Vous aurez ainsi la garantie qu’il parviendra à Microsoft dans un délai raisonnable.
+      The hard drive that you ship to Microsoft might have to cross international borders. If so, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
   - question: >
       Existe-t-il des exigences de résolution d’écran lorsque je crée un travail d’importation pour l’expédition de lecteurs ?
     answer: Si la résolution d’écran sur votre ordinateur local est définie sur 1366 x 768, vous pouvez rencontrer des problèmes lors de la création d’un travail d’importation. Si c’est le cas, nous vous recommandons de remplacer la résolution d’écran par un autre paramètre, puis de créer un travail d’importation. Nous nous efforçons de résoudre ce problème.
