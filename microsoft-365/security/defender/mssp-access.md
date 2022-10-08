@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.collection:
-- M365-security-compliance
-ms.openlocfilehash: 58f5076cd29383b4eb37231df5704a92176ca6f8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- m365-security
+- tier2
+ms.openlocfilehash: a52c85a51e3dd0268ac2c596ca648a288322e1c8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480863"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064319"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité managé (MSSP) 
 

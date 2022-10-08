@@ -13,15 +13,16 @@ ms.localizationpriority: high
 ms.collection:
 - Teams_ITAdmin_FLW
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 0bc2940bc45a4090a4e1a5399ff1c4493326d050
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
-ms.translationtype: HT
+ms.openlocfilehash: 904c45ac80db210d1701c61e008f3b7993de43d6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100116"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68065989"
 ---
 # <a name="managers---get-your-team-started-with-microsoft-365-for-frontline-workers"></a>Responsables – Démarrer avec votre équipe dans Microsoft 365 for frontline workers
 

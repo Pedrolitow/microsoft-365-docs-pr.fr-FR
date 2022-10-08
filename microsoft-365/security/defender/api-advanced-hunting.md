@@ -15,18 +15,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: 4e0114e2a53a9fd532f49ef5c928e15751a9aa2e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e8de6474e0a0cb625ce79db8f025628d925079fe
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482007"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064605"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>MICROSOFT 365 DEFENDER API de chasse avancée
 

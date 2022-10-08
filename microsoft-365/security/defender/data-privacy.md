@@ -15,17 +15,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 056d2d355571826b356edb95b8020828f76bf3dc
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 96081629a9d902c67806e9121c3506f1b6698f03
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483429"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064517"
 ---
 # <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Defender la sécurité et la confidentialité des données
 

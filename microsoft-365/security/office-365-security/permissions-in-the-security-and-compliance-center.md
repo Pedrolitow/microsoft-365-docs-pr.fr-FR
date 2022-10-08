@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fb0d5496acddebb591d368d78f35f1be567773a9
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 491f3cdff9667a77dcdb45bab470a9f7ee15d91b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595980"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063813"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Autorisations dans le Centre de sécurité et de conformité
 
@@ -88,12 +88,11 @@ Pour savoir comment accorder l’accès au Centre de sécurité & conformité, c
 |**Analystes Information Protection**|Accédez et gérez les alertes DLP et l’Explorateur d’activités. Accès en mode affichage uniquement aux stratégies DLP, aux étiquettes de confidentialité et à leurs stratégies, ainsi qu’à tous les types de classifieur.|Visionneuse de liste de classification des données <br/><br/> Analyste Information Protection|
 |**Enquêteurs Information Protection**|Accédez et gérez les alertes DLP, l’Explorateur d’activités et l’Explorateur de contenu. Accès en mode affichage uniquement aux stratégies DLP, aux étiquettes de confidentialité et à leurs stratégies, ainsi qu’à tous les types de classifieur.|Visionneuse de contenu de classification des données <br/><br/> Analyste Information Protection <br/><br/> Enquêteur Information Protection|
 |**Lecteurs Information Protection**|Accès en mode affichage uniquement aux rapports pour les stratégies DLP et les étiquettes de confidentialité et leurs stratégies.|Lecteur Information Protection|
-|**Gestion des risques internes**|Ce groupe de rôles permet de gérer la gestion des risques internes pour votre organisation au sein d’un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et enquêteurs désignés, vous pouvez définir des autorisations de gestion des risques internes dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques internes. Il s’agit de la manière la plus simple de prendre en main la gestion des risques internes par les organisations qui n’ont pas besoin d’autorisations distinctes définies pour différents groupes d’utilisateurs.|Gestion des cas <br/><br/> Administration du connecteur de données <br/><br/> Administration de gestion des risques internes <br/><br/> Analyse de la gestion des risques internes <br/><br/> Audit de la gestion des risques internes <br/><br/> Enquête sur la gestion des risques internes <br/><br/> Sessions de gestion des risques internes <br/><br/> cas View-Only|
+|**Gestion des risques internes**|Ce groupe de rôles permet de gérer la gestion des risques internes pour votre organisation au sein d’un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et enquêteurs désignés, vous pouvez définir des autorisations de gestion des risques internes dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques internes. Il s’agit de la manière la plus simple de prendre en main la gestion des risques internes par les organisations qui n’ont pas besoin d’autorisations distinctes définies pour différents groupes d’utilisateurs.|Gestion des cas <br/><br/> Administration du connecteur de données <br/><br/> Administration de gestion des risques internes <br/><br/> Analyse de la gestion des risques internes <br/><br/> Audit de la gestion des risques internes <br/><br/> Enquête sur la gestion des risques internes <br/><br/> cas View-Only|
 |**Administrateurs de gestion des risques internes**|Utilisez ce groupe de rôles pour configurer initialement la gestion des risques internes et, par la suite, séparer les administrateurs des risques internes dans un groupe défini. Les utilisateurs de ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de gestion des risques internes, des paramètres globaux et des affectations de groupe de rôles.|Gestion des cas <br/><br/> Administration du connecteur de données <br/><br/> Administration de gestion des risques internes <br/><br/> cas View-Only|
 |**Analystes de la gestion des risques internes.**|Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des analystes de cas de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à tous les modèles d’alertes, de cas et de notifications de gestion des risques internes. Ils ne peuvent pas accéder à l’Explorateur de contenu de risques internes.|Gestion des cas <br/><br/> Analyse de la gestion des risques internes <br/><br/> cas View-Only|
 |**Auditeurs de gestion des risques internes**|Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui auditeront les activités de gestion des risques internes. Les utilisateurs de ce groupe de rôles peuvent accéder au journal d’audit des risques internes.|Audit de la gestion des risques internes|
 |**Enquêteurs sur la gestion des risques internes.**|Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des enquêteurs de données de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à tous les modèles d’alertes, de cas, de notifications de gestion des risques internes et d’Explorateur de contenu dans tous les cas.|Gestion des cas <br/><br/> Enquête sur la gestion des risques internes <br/><br/> cas View-Only|
-|**Approbateurs de session de gestion des risques internes**|Gérer les demandes de modification de groupe pour l’enregistrement de session.|Sessions de gestion des risques internes|
 |**Contributeurs IRM**|Ce groupe de rôles est visible, mais il est utilisé uniquement par les services en arrière-plan.|Contribution permanente à la gestion des risques internes <br/><br/> Contribution temporaire à la gestion des risques internes|
 |**Administrateurs de connaissances**|Configurez les connaissances, l’apprentissage, attribuez des formations et d’autres fonctionnalités intelligentes.|Administration de connaissances|
 |**Administrateur MailFlow**|Les membres peuvent surveiller et afficher des informations et des rapports sur les flux de courrier dans le Centre de sécurité & conformité. Les administrateurs généraux peuvent ajouter des utilisateurs ordinaires à ce groupe, mais, si l’utilisateur n’est pas membre du groupe Exchange Administration, il n’aura pas accès aux tâches liées à l’administrateur Exchange.|Afficher uniquement les destinataires|
@@ -149,7 +148,6 @@ Notez que les rôles suivants ne sont pas attribués par défaut au groupe de r�
 - Audit de la gestion des risques internes
 - Enquête sur la gestion des risques internes
 - Contribution permanente à la gestion des risques internes
-- Sessions de gestion des risques internes
 - Contribution temporaire à la gestion des risques internes
 - Administration de connaissances
 - Aperçu
@@ -205,7 +203,6 @@ Notez que les rôles suivants ne sont pas attribués par défaut au groupe de r�
 |**Audit de la gestion des risques internes**|Autoriser l’affichage des pistes d’audit des risques internes.|Gestion des risques internes <br/><br/> Auditeurs de gestion des risques internes|
 |**Enquête sur la gestion des risques internes**|Accédez à toutes les alertes de gestion des risques internes, aux cas, aux modèles d’avis et à l’Explorateur de contenu pour tous les cas.|Gestion des risques internes <br/><br/> Enquêteurs de la gestion des risque internes.|
 |**Contribution permanente à la gestion des risques internes**|Ce groupe de rôles est visible, mais il est utilisé uniquement par les services en arrière-plan.|Contributeurs IRM|
-|**Sessions de gestion des risques internes**|Autoriser la gestion des demandes de modification de groupe pour l’enregistrement de session.|Gestion des risques internes <br/><br/> Approbateurs de session de gestion des risques internes|
 |**Contribution temporaire à la gestion des risques internes**|Ce groupe de rôles est visible, mais il est utilisé uniquement par les services en arrière-plan.|Contributeurs IRM|
 |**Administration de connaissances**|Configurez les connaissances, l’apprentissage, attribuez des formations et d’autres fonctionnalités intelligentes.|Administrateurs de connaissances|
 |**Gérer les alertes**|Affichez et modifiez les paramètres et les rapports pour les alertes.|Administrateur de conformité <p><p> Administrateur de conformité des données <p> Gestion de l’organisation <p> Administrateur de sécurité <p> Opérateur de sécurité|

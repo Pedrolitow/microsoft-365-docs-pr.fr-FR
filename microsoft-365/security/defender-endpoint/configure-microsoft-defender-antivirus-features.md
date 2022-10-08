@@ -1,7 +1,7 @@
 ---
 title: Configurer les fonctionnalités antivirus Microsoft Defender
-description: Vous pouvez configurer les fonctionnalités de l’Antivirus Microsoft Defender avec Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe et PowerShell.
-keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, configurer, configuration, Gestionnaire de configuration, point de terminaison Microsoft Configuration Manager, SCCM, Intune, GPM, gestion des appareils mobiles, stratégie de groupe, PowerShell
+description: Vous pouvez configurer Microsoft Defender fonctionnalités antivirus avec Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe et PowerShell.
+keywords: Microsoft Defender Antivirus, logiciel anti-programme malveillant, sécurité, defender, configurer, configuration, Gestionnaire de configuration, Configuration Manager de point de terminaison Microsoft, SCCM, Intune, GPM, gestion des appareils mobiles, stratégie de groupe, PowerShell
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: manage
@@ -14,14 +14,16 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 43a72f376f23a1a20178ad8a2179cff18b1cd7fb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7fd4f302d0e24ea72fc2b63eea652f479e72201b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694962"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201834"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurer les fonctionnalités antivirus Microsoft Defender
 
@@ -36,7 +38,7 @@ ms.locfileid: "67694962"
 **Plateformes**
 - Windows
 
-Vous pouvez configurer l’antivirus Microsoft Defender avec un certain nombre d’outils, tels que :
+Vous pouvez configurer Microsoft Defender Antivirus avec un certain nombre d’outils, tels que :
 
 - Microsoft Endpoint Manager (qui inclut Microsoft Intune et Configuration Manager de point de terminaison Microsoft)
 - Stratégie de groupe
@@ -46,13 +48,13 @@ Vous pouvez configurer l’antivirus Microsoft Defender avec un certain nombre d
 
 Les grandes catégories de fonctionnalités suivantes peuvent être configurées :
 
-- Protection fournie par le cloud. Consultez [la protection fournie par le cloud et l’antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+- Protection fournie par le cloud. Voir [protection fournie par le cloud et antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
 - Protection en temps réel en permanence, y compris la protection comportementale, heuristique et basée sur l’apprentissage automatique. Consultez [Configurer la protection comportementale, heuristique et en temps réel](configure-protection-features-microsoft-defender-antivirus.md).
 
 - Comment les utilisateurs finaux interagissent avec le client sur des points de terminaison individuels. Consultez les ressources suivantes :
-  - [Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur de l’Antivirus Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)
-  - [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie antivirus Microsoft Defender](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+  - [Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur Microsoft Defender Antivirus](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [Empêcher ou autoriser les utilisateurs à modifier localement Microsoft Defender paramètres de stratégie antivirus](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > Consultez [les rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md).

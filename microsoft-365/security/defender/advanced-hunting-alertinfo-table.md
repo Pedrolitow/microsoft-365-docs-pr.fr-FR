@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 6dbb60d6cd5b7ca208e4e79164b23dfe576b225b
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: b6dbab2c8537c2fd96a0081210ee28b4db3a12ba
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495787"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064693"
 ---
 # <a name="alertinfo"></a>AlertInfo
 

@@ -11,16 +11,18 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4140822e058987cd845b41711e9e325f442ccabb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 01833461638859ff1d4025851f0c8b0201e4eedb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697142"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201878"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Augmenter la conformité à la base de référence de sécurité Microsoft Defender pour point de terminaison
 
@@ -44,7 +46,7 @@ Avant de pouvoir déployer et suivre la conformité aux bases de référence de 
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Comparer les bases de référence de sécurité Microsoft Defender pour point de terminaison et Windows Intune
 
-La base de référence de sécurité Windows Intune fournit un ensemble complet de paramètres recommandés nécessaires pour configurer en toute sécurité les appareils exécutant Windows, notamment les paramètres du navigateur, les paramètres PowerShell et les paramètres de certaines fonctionnalités de sécurité telles que l’antivirus Microsoft Defender. En revanche, la ligne de base defender pour point de terminaison fournit des paramètres qui optimisent tous les contrôles de sécurité dans la pile Defender pour point de terminaison, y compris les paramètres de détection et de réponse des points de terminaison (EDR), ainsi que les paramètres également disponibles dans la base de référence de sécurité windows Intune. Pour plus d’informations sur chaque ligne de base, consultez :
+La base de référence de sécurité Windows Intune fournit un ensemble complet de paramètres recommandés nécessaires pour configurer en toute sécurité les appareils exécutant Windows, notamment les paramètres du navigateur, les paramètres PowerShell et les paramètres de certaines fonctionnalités de sécurité telles que Microsoft Defender Antivirus. En revanche, la ligne de base defender pour point de terminaison fournit des paramètres qui optimisent tous les contrôles de sécurité dans la pile Defender pour point de terminaison, y compris les paramètres de détection et de réponse des points de terminaison (EDR), ainsi que les paramètres également disponibles dans la base de référence de sécurité windows Intune. Pour plus d’informations sur chaque ligne de base, consultez :
 
 - [Paramètres de base de référence de sécurité Windows pour Intune](/intune/security-baseline-settings-windows)
 - [Microsoft Defender pour point de terminaison paramètres de base de référence pour Intune](/intune/security-baseline-settings-defender-atp)
@@ -81,7 +83,7 @@ La gestion de la configuration des appareils surveille uniquement la conformité
 1. Sélectionnez **Configurer la base de référence de sécurité** sur la carte **base de référence de sécurité** pour accéder à Intune gestion des appareils. Une vue d’ensemble similaire de la conformité de la base de référence s’affiche.
 
    > [!TIP]
-   > Vous pouvez également accéder à la ligne de base de sécurité Defender pour point de terminaison dans microsoft Portail Azure à partir de **tous les services > Intune > bases de référence de sécurité > de sécurité > base de référence Microsoft Defender ATP**.
+   > Vous pouvez également accéder à la base de référence de sécurité Defender pour point de terminaison dans microsoft Portail Azure à partir de **toutes les bases de référence de sécurité de l’appareil > Intune > de tous les services > de sécurité > Microsoft Defender base de référence ATP**.
 
 2. Créez un profil.
 

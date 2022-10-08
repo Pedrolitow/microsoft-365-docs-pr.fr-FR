@@ -5,23 +5,24 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: mediumn
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Utilisez la supervision Microsoft 365 pour obtenir des informations sur les incidents ou les avis dans Microsoft 365.
-ms.openlocfilehash: 47f54859d7dd0973814a0ad9229a902bddcb8587
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 021f1f9d366e3b469b0732cd55048b023f09c15e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "66991677"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170374"
 ---
 # <a name="learn-about-microsoft-365-monitoring"></a>En savoir plus sur la surveillance de Microsoft 365
 
@@ -105,7 +106,7 @@ Le plan de Microsoft consiste à collecter vos commentaires sur l’expérience 
 
 ### <a name="4-is-this-a-free-included-or-paid-extra-feature"></a>4. S’agit-il d’une fonctionnalité gratuite (incluse) ou payante (supplémentaire) ?
 
-Cette fonctionnalité est en préversion publique et uniquement disponible pour les clients répondant aux critères de la question 1. Il n’existe aucune option payante pour la réception de ce contenu.
+This is a free feature that is in preview and only available for customers that meet the requirements in question 1. There isn't a paid option to receive this content.
 
 ### <a name="5-how-do-i-provide-feedback"></a>5. Comment faire fournir des commentaires ?
 

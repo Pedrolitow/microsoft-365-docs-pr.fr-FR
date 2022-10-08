@@ -7,9 +7,10 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lorsque vous ajoutez plusieurs utilisateurs dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 0f0d737bcf600acb4084c5e2b85e5595c6387fee
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2bd20c6d68d71156d2ea307c7b39abc504907c13
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436988"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201394"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
@@ -33,7 +34,7 @@ Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les
 
 ## <a name="create-a-template"></a>Créer un modèle
 
-Les modèles sont faciles à créer&mdash;. Vous pouvez sélectionner **les modèles** **UsersActive** >  **usersUser** > , puis sélectionner **Ajouter un modèle** dans la liste déroulante, ou vous pouvez ajouter un nouvel utilisateur et, lorsque vous avez terminé, vous avez la possibilité d’enregistrer l’entrée en tant que modèle.
+Les modèles sont faciles à créer&mdash;. Vous **pouvez sélectionner** >  utilisateurs **actifs** > **utilisateurs** modèles, puis **sélectionner Ajouter un modèle** dans la liste déroulante, ou vous pouvez ajouter un nouvel utilisateur et lorsque vous avez terminé, vous aurez la possibilité d’enregistrer l’entrée en tant que modèle.
 
 Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs que vous choisissez pour les paramètres suivants sont enregistrées dans le modèle :
 
@@ -43,8 +44,8 @@ Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs 
 - Emplacement de la licence
 - Choix de licences
 - Choix de l’application
-- Role
-- La plupart des informations de profil, telles que profil **d’emploi**, **Département**, **Office**, **téléphone Office** et **adresse de rue** 
+- Rôle
+- La plupart des informations de profil, telles que profil **de travail**, **Service**, **Bureau**, **Téléphone Office** et **Adresse postale** 
 
 Les informations suivantes sont spécifiques à l’utilisateur et ne sont pas enregistrées dans le modèle :
 
@@ -62,12 +63,12 @@ Lorsque vous créez un modèle en sélectionnant l’option **Ajouter un modèle
 
 Pour utiliser un modèle existant pour ajouter un utilisateur :
 
-1. Dans le Centre d’administration, sélectionnez **utilisateurs UsersActive** > .
+1. Dans le Centre d’administration, sélectionnez **Utilisateurs** > **actifs**.
 
 2. Sélectionnez **Modèles utilisateur**, puis sélectionnez un modèle dans la liste déroulante. (La liste contient uniquement les modèles que vous avez créés, et non ceux créés par d’autres administrateurs.)
 
    > [!NOTE]
-   > Vous pouvez également utiliser un modèle pour ajouter un utilisateur en sélectionnant **Modèles** >  d’utilisateursManage, en sélectionnant un modèle, puis en sélectionnant **Utiliser un modèle**.
+   > Vous pouvez également utiliser un modèle pour ajouter un utilisateur en sélectionnant Modèles **d’utilisateur** > **Gérer les modèles**, en sélectionnant un modèle, puis en sélectionnant **Utiliser un modèle**.
 
 3. Suivez les étapes pour créer un utilisateur à partir du modèle que vous avez sélectionné.
 
@@ -78,7 +79,7 @@ Pour utiliser un modèle existant pour ajouter un utilisateur :
 
 Vous pouvez uniquement supprimer les modèles dont vous n’avez plus besoin et en ajouter de nouveaux. Pour supprimer un modèle :
 
-1. Dans le Centre d’administration, sélectionnez **utilisateurs UsersActive** > .
+1. Dans le Centre d’administration, sélectionnez **Utilisateurs** > **actifs**.
 
 2. Sélectionnez **Modèles**, puis **sélectionnez Gérer les modèles** dans la liste déroulante.
 

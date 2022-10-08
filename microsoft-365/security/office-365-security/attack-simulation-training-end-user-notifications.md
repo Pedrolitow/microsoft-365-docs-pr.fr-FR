@@ -8,16 +8,17 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des e-mails de notification de l’utilisateur final pour Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.subservice: mdo
-ms.openlocfilehash: 6297fafeb572c807a49161b1bd3e11a0820b7686
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: f4105f1a68c57982fc6762b8179b8eed8008e4d5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481061"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064121"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Automatisations de charge utile pour la formation à la simulation d’attaque
 

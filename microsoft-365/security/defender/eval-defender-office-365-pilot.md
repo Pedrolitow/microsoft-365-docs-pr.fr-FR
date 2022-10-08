@@ -17,19 +17,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
-ms.openlocfilehash: 72197d6543a297bf5b17c48e5d26fb29059e9d64
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: cb1f96b5882f1f0554200053c6032c2649c60e35
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798976"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064341"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365 pilote
 
@@ -125,7 +126,7 @@ Le tableau ci-dessous fournit des références et des conseils supplémentaires 
 
 ## <a name="step-3-try-out-capabilities-and-get-familiar-with-simulation-monitoring-and-metrics"></a>Étape 3 : Tester les fonctionnalités et se familiariser avec la simulation, la supervision et les métriques
 
-Maintenant que votre pilote est configuré et configuré, il est utile de se familiariser avec les outils de création de rapports, de surveillance et de simulation d’attaques propres à Microsoft Defender pour Microsoft 365.
+Maintenant que votre pilote est configuré et configuré, il est utile de se familiariser avec les outils de création de rapports, de surveillance et de simulation d’attaque qui sont propres à Microsoft Defender pour Microsoft 365.
 
 |Fonctionnalité|Description|Plus d’informations|
 |---|---|---|

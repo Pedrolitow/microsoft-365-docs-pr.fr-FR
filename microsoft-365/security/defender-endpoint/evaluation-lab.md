@@ -12,18 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-evalutatemtp
 - highpri
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2920bd6c5d8c9426bf33a17e574fe2c08b82f468
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e939fc616c2ffc0120fcfa5fcba5366b46f4e7ac
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692990"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201680"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>laboratoire d’évaluation Microsoft Defender pour point de terminaison
 
@@ -127,7 +128,7 @@ Les composants de sécurité suivants sont préconfigurés sur les appareils de 
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> L’Antivirus Microsoft Defender est activé (pas en mode audit). Si l’Antivirus Microsoft Defender vous empêche d’exécuter votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, consultez [Configurer la protection always on](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Microsoft Defender Antivirus est activé (pas en mode audit). Si Microsoft Defender Antivirus vous empêche d’exécuter votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, consultez [Configurer la protection always on](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 Les paramètres d’investigation automatisée dépendent des paramètres du locataire. Elle sera configurée pour être semi-automatisée par défaut. Pour plus [d’informations, consultez Vue d’ensemble des enquêtes automatisées](automated-investigations.md).
 
