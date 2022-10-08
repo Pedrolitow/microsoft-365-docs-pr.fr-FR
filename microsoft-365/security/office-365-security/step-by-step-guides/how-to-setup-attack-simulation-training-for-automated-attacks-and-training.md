@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 19804b1bf83dd2ef6f763e14a80f8784d07a942a
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f0c7e1b9556407135fd2467c50c06b5e1513c152
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740826"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221673"
 ---
 # <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>Comment configurer les attaques automatisées et l’entraînement dans le cadre de l’entraînement de simulation d’attaque
 
@@ -30,7 +33,7 @@ Exercice de simulation d'attaque vous permet d’exécuter des simulations d’a
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
-- Microsoft Defender pour Office 365 Plan 2 (inclus dans E5).
+- Microsoft Defender pour Office 365 plan 2 (inclus dans le cadre de l’E5).
 - Autorisations suffisantes (rôle Administrateur de la sécurité).
 - 5 à 10 minutes pour effectuer les étapes ci-dessous.
 
@@ -55,4 +58,4 @@ Exercice de simulation d'attaque vous permet d’exécuter des simulations d’a
 
 ## <a name="learn-more"></a>En savoir plus
 
-Vous trouverez des conseils [complets sur les automatisations de simulation pour Exercice de simulation d'attaque - Office 365 | Microsoftova dokumentacija](../../office-365-security/attack-simulation-training-simulation-automations.md).
+Vous trouverez des conseils [complets sur les automatisations de simulation pour Exercice de simulation d'attaque - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulation-automations.md).

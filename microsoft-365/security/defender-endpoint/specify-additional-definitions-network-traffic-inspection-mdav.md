@@ -1,7 +1,7 @@
 ---
-title: Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau pour l’Antivirus Microsoft Defender
-description: Spécifiez des ensembles de définitions supplémentaires pour l’inspection du trafic réseau pour l’antivirus Microsoft Defender.
-keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, inspection du trafic réseau
+title: Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau pour Microsoft Defender Antivirus
+description: Spécifiez des ensembles de définitions supplémentaires pour l’inspection du trafic réseau pour Microsoft Defender Antivirus.
+keywords: Microsoft Defender Antivirus, logiciel anti-programme malveillant, sécurité, defender, inspection du trafic réseau
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.service: microsoft-365-security
@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 6d997c609666ef306bc5595583d608f1190604b7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 53bf1b15e2d9b76e755c3c8484c0b1f1b7ad5043
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689556"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221739"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau
 
@@ -39,7 +41,7 @@ Vous pouvez spécifier des ensembles de définitions supplémentaires pour l’i
 
 1. Sur votre point de terminaison de gestion stratégie de groupe, ouvrez la [console de gestion stratégie de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Accédez au **système d’inspection du réseau** **antivirus** \> Microsoft Defender des **composants** \> Windows.
+2. Accédez aux **composants** \> Windows Microsoft Defender **système d’inspection du réseau** **antivirus**\>.
 
 3. Sélectionnez **Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau**. Par défaut, cette stratégie est définie sur **Non configuré.**
 

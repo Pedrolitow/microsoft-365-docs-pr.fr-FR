@@ -14,18 +14,20 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom: ''
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Partagez des fichiers et des vidéos dans votre campagne avec Microsoft Teams et SharePoint. Microsoft 365 Business Premium inclut Teams qui est un excellent moyen de partager des fichiers et des vidéos en toute sécurité.
-ms.openlocfilehash: c6c85746ca762aba26e4e4db063878b8c888c0a8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 1b35717e0c24991d4ddf01eb05ecc515bda6ed0f
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735799"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097794"
 ---
 # <a name="share-files-and-videos-in-a-safe-environment"></a>Partager des fichiers et des vidéos dans un environnement sécurisé
 

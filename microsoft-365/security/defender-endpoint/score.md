@@ -6,22 +6,24 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: cbb0951b9fb7576e815ffcfc0a44ca2ad6e44fa1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d292acd836936d0112d617d4881845b69816858b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693904"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233813"
 ---
 # <a name="score-resource-type"></a>Noter le type de ressource
 
@@ -48,6 +50,9 @@ Méthode|Type renvoyé|Description
 [Obtenir un score d'exposition](get-exposure-score.md)|[Score](score.md)|Obtenez le score d’exposition de l’organisation.
 [Obtenir un score sécurisé d’appareil](get-device-secure-score.md)|[Score](score.md)|Obtenez le score de sécurisation de l’appareil organisationnel.
 [Répertorier le score d’exposition par groupe d’appareils](get-machine-group-exposure-score.md)|[Score](score.md)|Répertorie les scores par groupe d’appareils.
+
+> [!NOTE]
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 ## <a name="properties"></a>Propriétés
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’information sensible de numéro de passeport de Luxemburg.
-ms.openlocfilehash: dc7fc8c7e54f265e7c6f1584dafedd2ea61418b7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d13296b0eab1663caac1f711dfa3ce8ea72ea7db
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996840"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381608"
 ---
 # <a name="luxemburg-passport-number"></a>Numéro de passeport luxembourgeois
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -46,7 +49,7 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 
 - L’expression régulière `Regex_luxemburg_eu_passport_number` trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste `Keywords_eu_passport_number`ou `Keywords_luxemburg_eu_passport_number` est trouvé.
-- L’expression `Regex_eu_passport_date3` régulière recherche la date au format DD MM AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
+- L’expression `Regex_eu_passport_date3` régulière recherche la date au format JJ MM AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
 Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
@@ -81,15 +84,15 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Passeport #
-- Passeport #
-- passportid
-- Passeports
-- passportno
-- passport no
+- #passeport
+- # passeport
+- passportID
+- passeports
+- n° de passeport
+- n° de passeport
 - numéropasseport
 - numéro de passeport
-- passportnumbers
+- numérospasseport
 - numéros de passeport
 
 ### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number

@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Apps for business.
-ms.openlocfilehash: 055f148617fb51a46739d61cc06ebb41be536649
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 50d31891632be6612e7fe18d0072b4965b16fec1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664206"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186896"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurer Microsoft 365 Apps for business
 
@@ -53,7 +54,7 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
 
 2. Choisissez **Configurer** pour démarrer l’Assistant.
 
-3. La première page vous permet d’installer les applications Office sur votre ordinateur. Vous pourrez également le faire plus tard.
+3. Dans la première page, vous pouvez installer les applications Office sur votre ordinateur. Vous pouvez également le faire plus tard.
 
 3. Sur la page suivante, vous pouvez ajouter des utilisateurs. Ils reçoivent automatiquement la licence Microsoft Apps for business. Une fois que vous avez ajouté les utilisateurs, vous avez également la possibilité de partager des informations d’identification avec les nouveaux utilisateurs que vous ajoutez. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou de les télécharger.
 
@@ -61,7 +62,7 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
 
 ## <a name="install-office"></a>Installer Office
 
-Après avoir créé des comptes pour d’autres utilisateurs au sein de votre entreprise, vous et les membres de votre équipe pouvez installer la version de bureau complète d’Office (Word, Excel, Outlook, etc.). Chaque membre peut installer Office sur un maximum de 5 PC ou Mac.
+Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
   
 ::: moniker range="o365-worldwide"
 
@@ -79,19 +80,19 @@ Si vous utilisez Office 365 géré par 21Vianet, accédez à [https://portal.par
 
 2. Sélectionnez **Installer**.
 
-Vous avez besoin d’étapes plus détaillées ou vous voulez installer la version 64 bits d’Office ? Voir les [instructions d’installation détaillées](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
+Need more detailed steps or want to install the 64-bit version of Office? See [Step-by-step installation instructions](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
   
 ## <a name="set-up-mobile"></a>Configurer les applications mobiles
 
-Installez Office sur votre appareil mobile et configurez Outlook pour utiliser votre nouvelle boîte aux lettres Microsoft. Tous les membres de votre équipe doivent effectuer cette étape. Chaque membre peut installer les applications mobiles Office sur un maximum de 5 téléphones et 5 tablettes. Découvrez les étapes à suivre en fonction de votre périphérique : AndroidiOSWindows Phone
+Install Office on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
   
 Découvrez les étapes à suivre en fonction de votre appareil : [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ## <a name="store-files-online"></a>Stocker des fichiers en ligne
 
-Microsoft facilite le stockage de fichiers en ligne. Pour découvrir quels emplacements de stockage sont les plus adaptés à votre entreprise, voir [Où stocker des fichiers dans Office 365 ?](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
+Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
   
-Toutes les personnes reçoivent automatiquement un emplacement de stockage en ligne **OneDrive** lorsque vous créez des comptes Microsoft pour chacune d’entre elles. Avec OneDrive, vous pouvez accéder aux fichiers sur vos ordinateurs, téléphones et tablettes.  
+Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   
 1. Sur votre ordinateur, utilisez l’Explorateur de fichiers pour ouvrir OneDrive. Ou bien, dans [Office 365](https://www.office.com), ouvrez **OneDrive** à partir du lanceur d’applications.
 
@@ -155,5 +156,5 @@ Vous pouvez également utiliser le Centre d’administration Exchange pour impor
 
 ## <a name="set-up-onedrive-for-business"></a>Configurer OneDrive Entreprise
 
-Sélectionnez l'icône du cloud OneDrive dans votre barre des tâches et suivez les étapes pour déplacer vos fichiers vers votre nouveau dossier OneDrive Entreprise. Sélectionnez **Suivant** pour configurer Microsoft Teams.
+Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
 

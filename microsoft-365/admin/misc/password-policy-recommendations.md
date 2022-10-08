@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - Adm_O365
 - Adm_NonTOC
@@ -24,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: ab997d544a2789a4e2c6e28caa6a601a51a32bc7
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 3971fc981046dc3e3e3b2741705053c5e3d52430
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670750"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503157"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recommandations en matière de stratégie de mot de passe pour Microsoft 365
 
@@ -48,6 +50,8 @@ Pour obtenir plus d’informations sur les mots de passe Microsoft 365, consulte
 [Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)
 
 [Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur](../add-users/resend-user-password.md) (article)
+
+[Il est temps de repenser les modifications de mot de passe obligatoires](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ## <a name="understanding-password-recommendations"></a>Présentation des recommandations concernant les mots de passe
 
@@ -63,7 +67,7 @@ Les pratiques pour mot de passe recommandées sont classées en plusieurs catég
 
 La diversité des mots de passe représente l’objectif principal d’un système de mot de passe sécurisé. Votre stratégie de mot de doit contenir de nombreux mots de passe différents qui sont de plus difficiles à deviner. Voici quelques recommandations pour garantir la sécurité de votre organisation.
 
-- Appliquer une exigence de longueur minimale de huit caractères
+- Conserver une exigence de longueur minimale de 14 caractères
 
 - N'exigez pas de composition de caractères. For exemple, \*&amp;(^%$
 
@@ -79,7 +83,7 @@ La diversité des mots de passe représente l’objectif principal d’un systè
 
 ### <a name="password-guidance-for-your-users"></a>Conseils liés aux mots de passe pour vos utilisateurs
 
-Voici quelques conseils en matière de mots de passe destinés aux utilisateurs de votre organisation. Assurez-vous d'informer vos utilisateurs sur ces recommandations et d'appliquer les stratégies de mot de passe recommandées au niveau de l’organisation.
+Here's some password guidance for users in your organization. Make sure to let your users know about these recommendations and enforce the recommended password policies at the organizational level.
   
 - N’utilisez pas de mot de passe identique ou similaire à celui utilisé sur d’autres sites web
 
@@ -93,7 +97,7 @@ Voici quelques-unes des pratiques les plus couramment utilisées en matière de 
   
 ### <a name="password-expiration-requirements-for-users"></a>Exigences d’expiration du mot de passe pour les utilisateurs
 
-Les exigences d’expiration de mot de passe font plus de mal que de bien, car ces exigences font en sorte que les utilisateurs sélectionnent des mots de passe prévisibles, composés de mots séquentiels et de nombres étroitement liés les uns aux autres. Dans ce cas, le mot de passe suivant peut être déterminé en se basant sur le mot de passe précédent. Les exigences d’expiration de mot de passe n’offrent aucun avantage en matière de contenu, car les cybercriminels utilisent presque toujours les informations d’identification dès qu’ils les compromettent. Pour plus d’informations, consultez [Il est temps de reconsidérer les changements de mots de passe obligatoires](https://go.microsoft.com/fwlink/p/?linkid=861018).
+Les exigences d’expiration de mot de passe font plus de mal que de bien, car ces exigences font en sorte que les utilisateurs sélectionnent des mots de passe prévisibles, composés de mots séquentiels et de nombres étroitement liés les uns aux autres. Dans ce cas, le mot de passe suivant peut être déterminé en se basant sur le mot de passe précédent. Les exigences d’expiration de mot de passe n’offrent aucun avantage en matière de contenu, car les cybercriminels utilisent presque toujours les informations d’identification dès qu’ils les compromettent. 
   
 ### <a name="minimum-password-length-requirements"></a>Exigences minimales en matière de longueur de mot de passe
 
@@ -119,7 +123,7 @@ En revanche, voici quelques recommandations favorisant une variété des mots de
   
 ### <a name="ban-common-passwords"></a>Interdire les mots de passe courants
 
-L'exigence de mot de passe la plus importante que vous devez imposer à vos utilisateurs lors de la création de mots de passe est d'interdire l'utilisation de mots de passe courants afin de réduire la susceptibilité de votre organisation aux attaques de mot de passe par force brute. Les mots de passe utilisateur courants incluent : **abcdefg**, **password**, **monkey**.
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include: **abcdefg**, **password**, **monkey**.
   
 ### <a name="educate-users-to-not-reuse-organization-passwords-anywhere-else"></a>Former les utilisateurs à ne pas réutiliser les mots de passe de l’organisation ailleurs
 

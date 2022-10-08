@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible du numéro d’identification national de Luxemburg (personnes physiques).
-ms.openlocfilehash: 3640f35086c72262013ad3e25b5aec1bfe8b6fa3
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: b6f718c25e79a6a59f30135e579c55d17ab06a2d
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367222"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381938"
 ---
 # <a name="luxemburg-national-identification-number-natural-persons"></a>Numéro national d’identité luxembourgeois (personnes physiques)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

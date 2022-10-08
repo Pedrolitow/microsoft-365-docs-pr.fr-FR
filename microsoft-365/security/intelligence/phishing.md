@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: dda1cd5d25d75132cb6e04ad5dd7c365c4bb15ed
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: bb007a11f45742834f06d7b450272f7bdf16cbea
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739033"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233769"
 ---
 # <a name="how-to-protect-against-phishing-attacks"></a>Comment se protéger contre les attaques par hameçonnage
 
@@ -65,11 +67,11 @@ En cas de doute, contactez l’entreprise par des canaux connus pour vérifier s
 
 ## <a name="software-solutions-for-organizations"></a>Solutions logicielles pour les organisations
 
-* [Microsoft Edge](/microsoft-edge/deploy/index) et [Protection d'application Windows Defender](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) offrent une protection contre la menace croissante d’attaques ciblées à l’aide de la technologie de virtualisation Hyper-V de pointe de Microsoft. Si un site web parcouru est considéré comme non approuvé, le conteneur Hyper-V isole cet appareil du reste de votre réseau, empêchant ainsi l’accès aux données de votre entreprise.
+* [Microsoft Edge](/microsoft-edge/deploy/index) et [Windows Defender Protection d'application](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) offrent une protection contre la menace croissante d’attaques ciblées à l’aide de la technologie de virtualisation Hyper-V de pointe de Microsoft. Si un site web parcouru est considéré comme non approuvé, le conteneur Hyper-V isole cet appareil du reste de votre réseau, empêchant ainsi l’accès aux données de votre entreprise.
 
 * [Microsoft Exchange Online Protection (EOP) offre une](https://products.office.com/exchange/exchange-email-security-spam-protection) fiabilité et une protection de classe entreprise contre le courrier indésirable et les programmes malveillants, tout en conservant l’accès aux e-mails pendant et après les urgences.  À l’aide de différentes couches de filtrage, EOP peut fournir différents contrôles pour le filtrage du courrier indésirable, tels que les contrôles de courrier en bloc et le courrier indésirable international, qui amélioreront davantage vos services de protection.
 
-* Utilisez [Microsoft Defender pour Office 365](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) afin de protéger vos e-mails, fichiers et stockage en ligne contre les programmes malveillants. Il offre une protection holistique dans Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online et OneDrive Entreprise. En protégeant contre les pièces jointes non sécurisées et en développant la protection contre les liens malveillants, il complète les fonctionnalités de sécurité de Exchange Online Protection pour fournir une meilleure protection zéro jour.
+* Utilisez [Microsoft Defender pour Office 365](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) pour protéger vos e-mails, fichiers et stockage en ligne contre les programmes malveillants. Il offre une protection holistique dans Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online et OneDrive Entreprise. En protégeant contre les pièces jointes non sécurisées et en développant la protection contre les liens malveillants, il complète les fonctionnalités de sécurité de Exchange Online Protection pour fournir une meilleure protection zéro jour.
 
 ## <a name="what-to-do-if-youve-been-a-victim-of-a-phishing-scam"></a>Que faire si vous avez été victime d’une escroquerie par hameçonnage
 

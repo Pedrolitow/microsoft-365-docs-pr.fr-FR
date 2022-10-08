@@ -13,23 +13,27 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Préparez et déployez DLP sur des emplacements Power BI.
-ms.openlocfilehash: e94ab7bce1fefc7ab370425a269f6e304aee165f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+description: Préparez et déployez DLP sur des emplacements PowerBI pour aider les organisations à détecter et à protéger leurs données sensibles.
+ms.openlocfilehash: 0d88ff7ec11ba5ce8dedae5f71d1166a1dff7cdc
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66992049"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381718"
 ---
 # <a name="get-started-with-data-loss-prevention-policies-for-power-bi-preview"></a>Démarrage avec des stratégies de protection contre la perte de données pour Power BI (préversion)
 
 Pour aider les organisations à détecter et protéger leurs données sensibles, [les stratégies de protection contre la perte de données (DLP) Microsoft Purview](/microsoft-365/compliance/dlp-learn-about-dlp) prennent en charge Power BI. Lorsqu’un jeu de données Power BI correspond aux critères d’une stratégie DLP, une alerte qui explique la nature du contenu sensible peut être déclenchée. Cette alerte est également inscrite sous l’onglet **Alertes** de protection contre la perte de données du portail de conformité Microsoft pour la surveillance et la gestion par les administrateurs. En outre, les alertes par e-mail peuvent être envoyées aux administrateurs et aux utilisateurs spécifiés.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

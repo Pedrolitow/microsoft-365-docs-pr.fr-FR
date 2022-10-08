@@ -12,20 +12,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-scenario
 - highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 42d369e1f1dc399600c76e4361147687f4365d89
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d873027de355029643216aaa546b41126da3de61
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694014"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221893"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour point de terminaison déploiement
 

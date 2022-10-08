@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’information sensible de numéro de résidence du Japon.
-ms.openlocfilehash: 512a20f00dd2ff77d2f88950d83b227a717c309e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a4e9c090515f25ffcf22504e171f94e1ceaee7b3
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997389"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381696"
 ---
 # <a name="japan-residence-card-number"></a>Numéro de carte de résidence au Japon
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

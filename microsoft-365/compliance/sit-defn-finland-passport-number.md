@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro de passeport en Finlande.
-ms.openlocfilehash: d8994d4af43d391a800b33b16b18e8521b53e6a6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2ee65a27a05f5731b28d1a6f139d79ed0f2acd7a
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66992712"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379741"
 ---
 # <a name="finland-passport-number"></a>Numéro de passeport en Finlande
 
 Cette entité est disponible dans le type d’informations sensibles Numéro de passeport de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -86,15 +89,15 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Passeport #
-- Passeport #
-- passportid
-- Passeports
-- passportno
-- passport no
+- #passeport
+- # passeport
+- passportID
+- passeports
+- n° de passeport
+- n° de passeport
 - numéropasseport
 - numéro de passeport
-- passportnumbers
+- numérospasseport
 - numéros de passeport
 
 ### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number

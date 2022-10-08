@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité de la Carte nationale d’identité (CNI) en France
+title: Définition d’entité de carte d’identité nationale (CNI) en France
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définitions d’entité des type d’informations sensibles de la Carte nationale d’identité (CNI) en France.
-ms.openlocfilehash: 35a6481e657d20a83ed1b80a6d06ad8ebf1c9cdf
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+description: Définition d’entité de type d’information sensible de carte d’identité nationale (CNI) en France.
+ms.openlocfilehash: fae2db81a39de5ff583a363ce426484f54a52230
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950881"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379565"
 ---
-# <a name="france-national-id-card-cni"></a>Carte d’ID nationale (CNI) en France
+# <a name="france-national-id-card-cni"></a>Carte d’identité nationale de France (CNI)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

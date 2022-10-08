@@ -7,21 +7,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4581b3a635fdb37f359d20e547aed1893f794252
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 79d2109da8822d3859155f4b3b2867bdf3a8a15d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691956"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232163"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Intégrer des appareils sans accès Internet à Microsoft Defender pour point de terminaison
 
@@ -77,4 +79,4 @@ Selon le système d’exploitation, le proxy à utiliser pour Microsoft Defender
     Pour plus d’informations, consultez [Utilisation des stratégies de sécurité](/azure/security-center/tutorial-security-policy).
 
 > [!NOTE]
-> Tout client qui n’a pas accès à Internet ne peut pas être intégré au point de terminaison Microsoft Defender. Un client doit avoir accès directement aux URL requises, ou il doit avoir accès via un proxy.
+> Tout client qui n’a pas accès à Internet ne peut pas être intégré à Microsoft Defender point de terminaison. Un client doit avoir accès directement aux URL requises, ou il doit avoir accès via un proxy.

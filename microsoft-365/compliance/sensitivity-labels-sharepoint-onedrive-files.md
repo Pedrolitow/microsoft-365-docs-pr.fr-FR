@@ -11,18 +11,19 @@ ms.date: ''
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge des étiquettes de confidentialité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: b995d1b97676eb3251c33069ed20f9ce382a61bb
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 9bba98b57c2d677cce9f6afcc4ab1a11a49e94e3
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069666"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503531"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -65,11 +66,29 @@ Vous avez toujours le choix de désactiver les étiquettes de confidentialité p
 
 Si vous protégez actuellement des documents dans SharePoint à l’aide de la Gestion des droits relatifs à l’information SharePoint (IRM), veillez à consulter la section Gestion [des droits relatifs à l’information (IRM) et les étiquettes de confidentialité](#sharepoint-information-rights-management-irm-and-sensitivity-labels) de cette page.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="requirements"></a>Conditions requises
 
 Ces nouvelles fonctionnalités fonctionnent uniquement avec [les étiquettes de confidentialité](sensitivity-labels.md) . Si vous avez actuellement des étiquettes Azure Information Protection, commencez par les migrer vers des étiquettes de confidentialité afin de pouvoir activer ces fonctionnalités pour les nouveaux fichiers que vous chargez. Pour voir les instructions, consultez [Migration des étiquettes Azure Information Protection vers des étiquettes de confidentialité unifiées](/azure/information-protection/configure-policy-migrate-labels).
 
 Utilisez l’application Synchronisation OneDrive version 19.002.0121.0008 ou ultérieure sur Windows et la version 19.002.0107.0008 ou ultérieure sur Mac. Ces deux versions ont été publiées le 28 janvier 2019 et sont actuellement publiées sur tous les anneaux. Pour plus d’informations, consultez les [notes de publication de OneDrive](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Une fois que vous avez activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive, les utilisateurs qui exécutent une version antérieure de l’application de synchronisation sont invités à la mettre à jour.
+
+## <a name="supported-file-types"></a>Types de fichiers pris en charge
+
+Une fois que vous avez activé les étiquettes de confidentialité pour SharePoint et OneDrive, les types de fichiers suivants sont pris en charge pour les scénarios d’étiquetage de confidentialité.
+
+Application d’une étiquette de confidentialité dans Office sur le Web ou SharePoint :
+
+- **Word**: .docx, .docm
+- **Excel** : .xlsx, .xlsm, .xlsb
+- **PowerPoint** : .pptx, .ppsx
+
+Chargement d’un document étiqueté, puis extraction et affichage de cette étiquette de confidentialité :
+
+- **Word** : doc, .docx, .docm, .dot, .dotx, .dotm
+- **Excel** : .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
+- **PowerPoint** : .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
 ## <a name="limitations"></a>Limites
 
@@ -246,7 +265,7 @@ Il peut y avoir de rares occasions où un administrateur SharePoint doit supprim
 
 En guise d’alternative, un administrateur général ou un [administrateur SharePoint](/sharepoint/sharepoint-admin-role) peut exécuter l’applet de commande [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) , qui supprime à la fois l’étiquette de confidentialité et le chiffrement. Cette applet de commande s’exécute même si l’administrateur ne dispose pas des autorisations d’accès au site ou au fichier, ou si le service Azure Rights Management n’est pas disponible.
 
-Par exemple :
+Par exemple :
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"

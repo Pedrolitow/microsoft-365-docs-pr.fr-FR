@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité de secret client Azure AD (préversion)
+title: Définition d’entité de clé secrète client Azure AD
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type secret client Azure AD.
-ms.openlocfilehash: ea597fc5493db6b6f919d907dcb61af115299ea1
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b94130c5ec5a7125890c8fdd2fad4529e461bc5b
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996130"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503443"
 ---
-# <a name="azure-ad-client-secret-preview"></a>Clé secrète client Azure AD (préversion)
+# <a name="azure-ad-client-secret"></a>: clé secrète client Azure AD
 
-## <a name="format"></a>Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Ce SIT est également inclus dans le sit [groupé Toutes les informations d’identification](sit-defn-all-creds.md) .
+
+ ## <a name="format"></a>Format
 
 Combinaison d’un maximum de 40 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
@@ -47,9 +52,15 @@ par exemple :
 
 `abc7Q~defghijklmnopqrs0t123456789-_.~`
 
+## <a name="credential-example"></a>Exemple d’informations d’identification 
+
+`"AppId=01234567-abcd-abcd-abcd-abcdef012345;AppSecret=abc7Q~defghijklmnopqrstuvwxyz-_.~0123"`
+
 ## <a name="checksum"></a>Somme de contrôle
 
 Oui
+
+Les SIT qui ont des sommes de contrôle utilisent un calcul unique pour vérifier si les informations sont valides. Cela signifie que lorsque la valeur **de somme de contrôle** est **Oui**, le service peut effectuer une détection positive basée sur les données sensibles uniquement. Lorsque la valeur de somme de **contrôle** est Aucun élément (secondaire) supplémentaire **ne** doit également être détecté pour que le service effectue une détection positive.
 
 ## <a name="definition"></a>Définition
 
@@ -69,6 +80,6 @@ Les modèles sont conçus pour correspondre aux informations d’identification 
 ### <a name="keyword_appsecret"></a>Keyword_AppSecret :
 
 - Secret
-- assword
+- mot de passe
 - clé
 

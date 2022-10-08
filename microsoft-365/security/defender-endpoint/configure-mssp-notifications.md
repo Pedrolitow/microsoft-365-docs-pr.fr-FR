@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ac9a4acbd04e3df7d240e99527dc95747c79fda0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 679288f7d3744a1f64aea748e541c565fd15f5eb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695668"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186456"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>Configurer les notifications d’alerte envoyées aux MSSP
 

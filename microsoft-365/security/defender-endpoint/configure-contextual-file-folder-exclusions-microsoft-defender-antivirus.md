@@ -1,7 +1,7 @@
 ---
 title: Exclusions de fichiers et de dossiers contextuels
-description: Décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuelles pour l’antivirus Microsoft Defender sur Windows. Cette fonctionnalité vous permet d’être plus spécifique lorsque vous définissez dans quel contexte l’Antivirus Microsoft Defender ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions
-keywords: Antivirus Microsoft Defender, processus, exclusion, fichiers, analyses
+description: Décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuelles pour Microsoft Defender Antivirus sur Windows. Cette fonctionnalité vous permet d’être plus précis lorsque vous définissez dans quel contexte Microsoft Defender Antivirus ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions
+keywords: Microsoft Defender Antivirus, processus, exclusion, fichiers, analyses
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,20 +12,22 @@ ms.localizationpriority: medium
 ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 903cfb9e6a4bc618a6839b612cb3b15a840ebb8d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 377383cb959fd53accf98c80a8637c05bb7832ff
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699167"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200624"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Exclusions de fichiers et de dossiers contextuels
 
-Cet article/section décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuelles pour l’antivirus Microsoft Defender sur Windows. Cette fonctionnalité vous permet d’être plus précis lorsque vous définissez dans quel contexte l’Antivirus Microsoft Defender ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions.
+Cet article/section décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuelles pour Microsoft Defender Antivirus sur Windows. Cette fonctionnalité vous permet d’être plus spécifique lorsque vous définissez dans quel contexte Microsoft Defender Antivirus ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions.
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -54,7 +56,7 @@ Les restrictions sont généralement appliquées en ajoutant le type de restrict
 
 ### <a name="requirements"></a>Conditions requises
 
-Cette fonctionnalité nécessite l’antivirus Microsoft Defender :
+Cette fonctionnalité nécessite Microsoft Defender Antivirus :
 
 - Plateforme : **4.18.2205.7** ou version ultérieure
 - Moteur : **1.1.19300.2** ou version ultérieure

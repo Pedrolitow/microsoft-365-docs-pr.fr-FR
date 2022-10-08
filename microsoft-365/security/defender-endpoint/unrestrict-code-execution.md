@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d4f4b543af0d9953787f2346c0a4686208b779d7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6c9ecdb939c3b40a5ae6a4a5d60483b641952504
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681470"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233967"
 ---
 # <a name="remove-app-restriction-api"></a>Supprimer l’API de restriction d’application
 
@@ -54,7 +56,7 @@ Activez l’exécution de n’importe quelle application sur l’appareil.
 >
 > - L’isolation complète est disponible pour les appareils sur Windows 10, version 1703.
 > - L’isolation sélective est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure.
-> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouvent derrière un tunnel VPN complet ne pourront pas atteindre le service cloud Microsoft Defender pour point de terminaison une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionné pour Microsoft Defender pour point de terminaison et le trafic lié à la protection cloud de l’Antivirus Microsoft Defender.
+> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouvent derrière un tunnel VPN complet ne pourront pas atteindre le service cloud Microsoft Defender pour point de terminaison une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionné pour Microsoft Defender pour point de terminaison et Microsoft Defender trafic lié à la protection basée sur le cloud antivirus.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -70,6 +72,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.RestrictExecution|'Restre
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Actions de correction actives » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ## <a name="http-request"></a>Requête HTTP
 

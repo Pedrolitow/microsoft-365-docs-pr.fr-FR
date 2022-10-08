@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: cdf9d45848cb2510b704d2933e86768682458466
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5899b4280a4794799df9acc2d7a3701ff8553cdb
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687678"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233439"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>Planifier des analyses antivirus à l’aide de PowerShell
 
@@ -34,7 +36,7 @@ ms.locfileid: "67687678"
 **Plateformes**
 - Windows
 
-Cet article explique comment configurer des analyses planifiées à l’aide d’applets de commande PowerShell. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, consultez [Configurer les analyses antivirus Microsoft Defender rapides ou complètes planifiées](schedule-antivirus-scans.md). 
+Cet article explique comment configurer des analyses planifiées à l’aide d’applets de commande PowerShell. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, consultez [Configurer des analyses antivirus rapides ou complètes planifiées Microsoft Defender](schedule-antivirus-scans.md). 
 
 ## <a name="use-powershell-cmdlets-to-schedule-scans"></a>Utiliser des applets de commande PowerShell pour planifier des analyses
 
@@ -48,7 +50,7 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter](use-powershell-cmdlets-microsoft-defender-antivirus.md) les [applets](/powershell/module/defender/) de commande antivirus Microsoft Defender et Defender pour plus d’informations sur l’utilisation de PowerShell avec l’antivirus Microsoft Defender.
+Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter Microsoft Defender applets](use-powershell-cmdlets-microsoft-defender-antivirus.md) de commande [Antivirus et Defender Antivirus](/powershell/module/defender/) pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus.
 
 ## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Applets de commande PowerShell pour la planification des analyses lorsqu’un point de terminaison n’est pas utilisé
 
@@ -72,7 +74,7 @@ Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-Pour plus d’informations sur l’utilisation de [PowerShell avec l’antivirus Microsoft Defender, voir Utiliser les applets de commande PowerShell pour configurer et exécuter l’Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [defender](/powershell/module/defender/) .
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez Utiliser les applets de commande [PowerShell pour configurer et exécuter Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) antivirus et [Defender Antivirus](/powershell/module/defender/).
 
 ## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>Applets de commande PowerShell pour la planification des analyses quotidiennes
 
@@ -82,7 +84,7 @@ Utilisez les applets de commande suivantes :
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec l’antivirus Microsoft Defender, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter](use-powershell-cmdlets-microsoft-defender-antivirus.md) les [applets](/powershell/module/defender/) de commande antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter Microsoft Defender applets](use-powershell-cmdlets-microsoft-defender-antivirus.md) de commande Antivirus et [Antivirus Defender](/powershell/module/defender/).
 
 > [!TIP]
 > Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d397d17214f4a8ee4c58ef66ed7b8c0c37c287eb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 99f17d9aacb67214703a4af2647385fa1778e88a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686656"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221761"
 ---
 # <a name="update-alert"></a>Mettre à jour une alerte
 
@@ -64,6 +66,8 @@ Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrir
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Investigation des alertes » (pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md) )
 > - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -86,13 +90,13 @@ Les propriétés existantes qui ne sont pas incluses dans le corps de la demande
 
 Pour de meilleures performances, vous ne devez pas inclure les valeurs existantes qui n’ont pas changé.
 
-Propriété|Type|Description
+Propriété|Type|Description|
 :---|:---|:---
-État|Chaîne|Spécifie l’état actuel de l’alerte. Les valeurs de propriété sont : « New », « InProgress » et « Resolved ».
-assignedTo|Chaîne|Propriétaire de l’alerte
-Classification|Chaîne|Spécifie la spécification de l’alerte. Les valeurs de propriété sont : « Unknown », « FalsePositive », « TruePositive ».
-Détermination|Chaîne|Spécifie la détermination de l’alerte. Les valeurs de propriété sont : « NotAvailable », « Apt », « Malware », « SecurityPersonnel », « SecurityTesting », « UnwantedSoftware », « Other »
-Commentaire|Chaîne|Commentaire à ajouter à l’alerte.
+État|Chaîne|Spécifie l’état actuel de l’alerte. Les valeurs de propriété sont : « New », « InProgress » et « Resolved ».|
+assignedTo|Chaîne|Propriétaire de l’alerte|
+Classification|Chaîne|Spécifie la spécification de l’alerte. Les valeurs de propriété sont : `TruePositive`, `Informational, expected activity`et `FalsePositive`.|
+Détermination|Chaîne|Spécifie la détermination de l’alerte. <p>Les valeurs de détermination possibles pour chaque classification sont les suivantes : <br><li> <b>Vrai positif</b> : `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware) et `Other` (Other). <li> <b>Activité informationnelle et attendue :</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence et `Other` (Autre). <li>  <b>Faux positif :</b> `Not malicious` (Clean) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence , `Not enough data to validate` (InsufficientData) et `Other` (Autre).|
+Commentaire|Chaîne|Commentaire à ajouter à l’alerte.|
 
 >[!NOTE]
 >Vers le 29 août 2022, les valeurs de détermination d’alerte précédemment prises en charge (« Apt » et « SecurityPersonnel ») seront déconseillées et ne seront plus disponibles via l’API.

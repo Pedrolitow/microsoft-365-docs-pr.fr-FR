@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Apprenez à convertir une boîte aux lettres privée en boîte aux lettres partagée accessible par plusieurs personnes au lieu d’une seule personne. '
-ms.openlocfilehash: 07b36e5c8b2cb7b2e88dfedd80b31353cb8f7e32
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 1cc60feb7729d2ad57749b58bc246b3478fcf342
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466215"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187270"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée
 
@@ -60,7 +61,7 @@ Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux
 
 ## <a name="use-the-classic-exchange-admin-center-to-convert-a-mailbox"></a>Utiliser le Centre d’administration Exchange classique pour convertir une boîte aux lettres
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration classic Exchange</a>.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange classique</a>.
 
 2. Sélectionnez Les **boîtes aux lettres** **des destinataires**\>.
 
@@ -70,9 +71,9 @@ Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux
 
 Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, consultez [À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) et [Créer une boîte aux lettres partagée](create-a-shared-mailbox.md).
 
-## <a name="use-the-new-exchange-admin-center-to-convert-a-mailbox"></a>Utiliser le Nouveau centre d’administration Exchange pour convertir une boîte aux lettres
+## <a name="use-the-new-exchange-admin-center-to-convert-a-mailbox"></a>Utiliser le nouveau centre d’administration Exchange pour convertir une boîte aux lettres
 
-1. Accédez au <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> centre d’administration Exchange</a>.
+1. Accédez au <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> Centre d’administration Exchange</a>.
 
 2. Sélectionnez Les **boîtes aux lettres** **des destinataires**\>.
 
@@ -112,13 +113,13 @@ Après avoir supprimé un compte d’utilisateur, procédez comme suit pour conv
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Convertir la boîte aux lettres d’un utilisateur dans un environnement hybride
 
-Pour plus d’informations sur la conversion d’une boîte aux lettres utilisateur en boîte aux lettres partagée dans un environnement hybride Exchange, consultez :
+Pour plus d’informations sur la conversion d’une boîte aux lettres utilisateur en boîte aux lettres partagée dans un environnement exchange hybride, consultez :
 
 - [Applets de commande pour créer ou modifier une boîte aux lettres partagée distante dans un environnement Exchange local](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
 - [Les boîtes aux lettres partagées sont converties de manière inattendue en boîtes aux lettres utilisateur après l’exécution de la synchronisation d’annuaires dans un déploiement hybride Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
 
 > [!NOTE]
-> Si vous êtes membre du groupe de rôles Gestion de l’organisation ou Gestion des destinataires, vous pouvez utiliser le Exchange Management Shell pour remplacer une boîte aux lettres utilisateur par une boîte aux lettres partagée localement. Par exemple : `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
+> Si vous êtes membre du groupe de rôles Gestion de l’organisation ou Gestion des destinataires, vous pouvez utiliser Exchange Management Shell pour remplacer une boîte aux lettres utilisateur par une boîte aux lettres partagée localement. Par exemple : `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
 ## <a name="related-content"></a>Contenu associé
 

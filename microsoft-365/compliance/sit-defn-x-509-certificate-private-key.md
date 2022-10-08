@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type clé privée de certificat X.509.
-ms.openlocfilehash: 144eff9826dcbb3bcfc03930442a4d4e3a36e22c
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 4b847efe2b3b7495834cb8ec8d7a7c9e8f2b8232
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476130"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503113"
 ---
 # <a name="x509-certificate-private-key-preview"></a>Clé privée de certificat X.509 (préversion)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Format
+Ce SIT est également inclus dans le sit [groupé Toutes les informations d’identification](sit-defn-all-creds.md) .
+
+ ## <a name="format"></a>Format
 
 Combinaison d’un maximum de 20 000 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
@@ -69,9 +71,18 @@ par exemple :
 `-----BEGIN PRIVATE KEY-----`
 
 
+## <a name="credential-example"></a>Exemple d’informations d’identification 
+
+`-----BEGIN PRIVATE KEY----- MIIPuQIBAzCCD38GCSqGSIb3DQEHAaCCD3AEgg9sMIIPaDCCBZ8GCSqGSIb3DQEHBqCCBZAw...`
+
+> [!IMPORTANT]
+> Cet exemple a été tronqué. Il ne s’agit pas d’un exemple détectable de ce SIT.
+
 ## <a name="checksum"></a>Somme de contrôle
 
 Oui
+
+Les SIT qui ont des sommes de contrôle utilisent un calcul unique pour vérifier si les informations sont valides. Cela signifie que lorsque la valeur **de somme de contrôle** est **Oui**, le service peut effectuer une détection positive basée sur les données sensibles uniquement. Lorsque la valeur de somme de **contrôle** est Aucun élément (secondaire) supplémentaire **ne** doit également être détecté pour que le service effectue une détection positive.
 
 ## <a name="definition"></a>Définition
 

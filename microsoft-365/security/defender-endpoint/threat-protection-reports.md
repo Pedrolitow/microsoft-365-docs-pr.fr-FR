@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 11520c0ef4e565065e41d91bdfb300069618b83c
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 19c5d11368e17db0584baa18a46a19c8357af703
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727958"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232889"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison
 

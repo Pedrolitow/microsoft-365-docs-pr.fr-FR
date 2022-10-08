@@ -12,19 +12,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-scenario
 - highpri
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 467cffc0f4283e33722ace3dd6ff36e2b3770f2c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: df603a3c7739502a1225b8986c4b3282e45d78ca
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689776"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233989"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer le déploiement de Microsoft Defender pour point de terminaison
 
@@ -144,7 +145,7 @@ Choisissez le composant de Defender pour point de terminaison à utiliser et sup
 |---|---|---|
 |Endpoint Detection & Response (EDR)|Les fonctionnalités de détection et de réponse des points de terminaison Defender pour point de terminaison fournissent des détections d’attaque avancées qui sont quasiment en temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces. <p> [En savoir plus.](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)|1|
 |Gestion des vulnérabilités Microsoft Defender (MDVM)|Defender Vulnerability Management est un composant de Microsoft Defender pour point de terminaison et fournit aux administrateurs de sécurité et aux équipes des opérations de sécurité une valeur unique, notamment : <ul><li>Informations sur la détection et la réponse au point de terminaison en temps réel (EDR) corrélées avec les vulnérabilités de point de terminaison</li><li>Contexte de vulnérabilité d’appareil inestimable pendant les enquêtes sur les incidents</li><li>Processus de correction intégrés via Microsoft Intune et Microsoft System Center Configuration Manager</li></ul> <p> [En savoir plus](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).|2|
-|Protection de nouvelle génération (NGP)|L’antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants : <ul><li>Protection fournie par le cloud pour une détection et un blocage quasi instantanés des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.</li><li>Analyse always on à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelées « protection en temps réel »).</li><li>Mises à jour de protection dédiées basées sur le Machine Learning, l’analyse du Big Data humaine et automatisée, ainsi que la recherche approfondie sur la résistance aux menaces.</li></ul> <p> [En savoir plus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).|3|
+|Protection de nouvelle génération (NGP)|Microsoft Defender Antivirus est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants : <ul><li>Protection fournie par le cloud pour une détection et un blocage quasi instantanés des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.</li><li>Analyse always on à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelées « protection en temps réel »).</li><li>Mises à jour de protection dédiées basées sur le Machine Learning, l’analyse du Big Data humaine et automatisée, ainsi que la recherche approfondie sur la résistance aux menaces.</li></ul> <p> [En savoir plus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).|3|
 |Réduction de la surface d’attaque (ASR)|Les fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison aident à protéger les appareils et les applications de l’organisation contre les menaces nouvelles et émergentes. <br> [En savoir plus.](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)|4|
 |Correction d'& d’investigation automatique (AIR)|Microsoft Defender pour point de terminaison utilise des investigations automatisées pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée utilise différents algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures de correction immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. <p> [En savoir plus.](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)|Non applicable|
 |Spécialistes des menaces Microsoft (MTE)|Spécialistes des menaces Microsoft est un service de chasse managé qui fournit aux centres d’opérations de sécurité (SOC) une surveillance et une analyse de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées. <p> [En savoir plus.](/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)|Non applicable|

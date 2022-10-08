@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 64e6856be6311f8e04ea8e6f5e682b52e715ef4d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 17d1311ce08435de134e4a04643d58f780f04f1d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688920"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225831"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 

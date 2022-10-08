@@ -11,16 +11,18 @@ author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0137202f08f5b9545d744c5fb81a7c4068a1f9c4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fbd2abe360443e8a96da87e49553307768c05a7a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687150"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225809"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender pour point de terminaison Linux
 

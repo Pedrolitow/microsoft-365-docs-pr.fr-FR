@@ -10,19 +10,21 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/15/2022
+ms.date: 09/29/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 9a5add52188afcecc4df6a369f65468e79452e95
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: f84351b7f32edad98659ca27a9ae7e4d67f13364
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799393"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233857"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Access Control de stockage amovible du contrôle d’appareil
 
@@ -130,7 +132,7 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId)
 | extend MediaVendorId = tostring(parsed.VendorId)
 | extend MediaSerialNumber = tostring(parsed.SerialNumber)
-|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
+|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, FolderPath, FileSize
 | order by Timestamp desc
 ```
 

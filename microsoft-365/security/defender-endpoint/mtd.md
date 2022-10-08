@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e81e0a01b489c4741a83471c9401ae77482088bf
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 636dfcb07c021dab1c1a57224c31903aff9da516
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686920"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222003"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender pour point de terminaison - Mobile Threat Defense
 

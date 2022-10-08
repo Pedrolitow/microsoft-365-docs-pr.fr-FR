@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ec2e0928a8900e3552eecd3e2a949bb7af35c795
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 41557fc56e9ccbe64a05f3aad3d280ff544473c4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686424"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232295"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner une adresse IP associée à une alerte Microsoft Defender pour point de terminaison
 

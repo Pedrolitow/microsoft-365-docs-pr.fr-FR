@@ -12,17 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 58e259b0388aa33e5b457599c085dd0c6c74ee1f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 55325d10fd444d34664ed11c63effd7b4e8b6aff
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704631"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233747"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -112,7 +113,7 @@ Pour effectuer ce processus, vous devez disposer de privilèges d’administrate
 
    :::image type="content" source="images/monterey-install-4.png" alt-text="Préférences de sécurité des extensions système2" lightbox="images/monterey-install-4.png":::
 
-7. Ouvrez La sécurité **des préférences** \> système **& la confidentialité** et accédez à l’onglet **Confidentialité** . Accordez l’autorisation **d’accès au disque complet** à **Microsoft Defender** et **à l’extension de sécurité du point de terminaison Microsoft Defenders**.
+7. Ouvrez La sécurité **des préférences** \> système **& la confidentialité** et accédez à l’onglet **Confidentialité**. Accordez l’autorisation d’accès au **disque complet** à **Microsoft Defender** et **à l’extension de sécurité du point de terminaison Microsoft Defenders**.
 
    :::image type="content" source="images/monterey-install-5.png" alt-text="Accès au disque complet" lightbox="images/monterey-install-5.png":::
 
@@ -138,7 +139,7 @@ Pour effectuer ce processus, vous devez disposer de privilèges d’administrate
     mdatp health --field org_id
     ```
 
-    Après l’installation, vous verrez l’icône Microsoft Defender dans la barre d’état macOS dans le coin supérieur droit.
+    Après l’installation, vous verrez l’icône Microsoft Defender dans la barre d’état macOS en haut à droite.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Icône Microsoft Defender dans la barre d’état" lightbox="images/mdatp-icon-bar.png":::

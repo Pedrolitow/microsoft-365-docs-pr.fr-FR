@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos données et utilisateurs de Google Workspace vers Microsoft 365 pour les PME.
-ms.openlocfilehash: 1db772d40e6de11aeacbbbf9616355a7badef2a8
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: dbb43965bb0915851c28f080e07db2e8998b7ceb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660550"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199854"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Basculer de Google Workspace : vue d’ensemble
 

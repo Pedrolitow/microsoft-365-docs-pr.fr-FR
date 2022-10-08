@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9ec1c6546e7b4bcf2edf24fa5f1fc21ee8c7aff9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 44b7311744f4cf4e8e1978abbe9b0217693adfa0
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687788"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233901"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Résoudre les problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour point de terminaison
 

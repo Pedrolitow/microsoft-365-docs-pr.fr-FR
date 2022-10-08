@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0ff6d8074131e1595ee651c40e59a0b9b03eb063
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: cfd86b27acfa359e4446d608c276601daf46e623
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692594"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233395"
 ---
 # <a name="investigate-agent-health-issues"></a>Rechercher les problèmes d’état d’intégrité de l’agent
 
@@ -40,7 +42,7 @@ Le tableau suivant fournit des informations sur les valeurs retournées lorsque 
 |---|---|
 |automatic_definition_update_enabled|True si les mises à jour automatiques de définition d’antivirus sont activées, false dans le cas contraire.|
 |cloud_automatic_sample_submission_consent|Niveau d’envoi de l’exemple actuel. Peut être l’une des valeurs suivantes : <ul><li>**Aucun** : aucun exemple suspect n’est envoyé à Microsoft.</li><li>**Sécurisé** : seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.</li><li>**Tous** : tous les exemples suspects sont envoyés à Microsoft.</li></ul>|
-|cloud_diagnostic_enabled|True si la collecte de données de diagnostic facultative est activée, false dans le cas contraire. Pour plus d’informations sur Defender pour point de terminaison et d’autres produits et services tels que l’antivirus Microsoft Defender et Windows, consultez la [déclaration de confidentialité de Microsoft](https://go.microsoft.com/fwlink/?linkid=827576).|
+|cloud_diagnostic_enabled|True si la collecte de données de diagnostic facultative est activée, false dans le cas contraire. Pour plus d’informations sur Defender pour point de terminaison et d’autres produits et services tels que Microsoft Defender Antivirus et Windows, consultez [la Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?linkid=827576).|
 |cloud_enabled|True si la protection fournie par le cloud est activée, sinon false.|
 |conflicting_applications|Liste des applications susceptibles d’entrer en conflit avec Microsoft Defender pour point de terminaison. Cette liste inclut, sans s’y limiter, d’autres produits de sécurité et d’autres applications connus pour provoquer des problèmes de compatibilité.|
 |definitions_status|État des définitions antivirus.|

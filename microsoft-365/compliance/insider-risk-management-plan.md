@@ -11,16 +11,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d117ba643ceb15cc867e0688675b56caa3d302f7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6fe74108e484b158b292f86191425cd0aa73b0b4
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637282"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503465"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
+
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Avant de commencer à gérer [les risques internes](insider-risk-management.md) au sein de votre organisation, vos équipes de gestion des technologies de l’information et de la conformité doivent examiner d’importantes activités et considérations de planification. Une compréhension et une planification approfondies du déploiement dans les domaines suivants vous aideront à vous assurer que votre implémentation et votre utilisation des fonctionnalités de gestion des risques internes se déroulent correctement et sont alignées sur les meilleures pratiques pour la solution. 
 
@@ -33,6 +38,8 @@ Regardez la vidéo ci-dessous pour découvrir comment le flux de travail de gest
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 Regardez la [vidéo Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) sur la façon dont la gestion des risques internes et la conformité des communications fonctionnent ensemble pour réduire les risques liés aux données des utilisateurs de votre organisation.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Collaborer avec les parties prenantes de votre organisation
 

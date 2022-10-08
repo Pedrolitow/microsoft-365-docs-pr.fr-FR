@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type code personnel lituanie.
-ms.openlocfilehash: 4a8f71efb493c131452d6500f67e644b4c405c10
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 2beee7d7afa48618c8d1e28c1538e47ba9040771
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369912"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381855"
 ---
 # <a name="lithuania-personal-code"></a>Code personnel lituanien
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

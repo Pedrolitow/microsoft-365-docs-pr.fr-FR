@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible du numéro d’identification national de Luxemburg (personnes non naturelles).
-ms.openlocfilehash: 0e5a82862c51aafcc6d3033fccb1a8ec1b561671
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 01eb9f4bcd10c7441a38600dab406615271f4798
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950838"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381991"
 ---
-# <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numéro d’identification national du Luxembourg (personnes non naturelles)
+# <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numéro national d’identité luxembourgeois (personnes non physiques)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -51,14 +54,14 @@ Oui
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_luxemburg_eu_tax_file_number_non_natural` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keywords_luxemburg_eu_tax_file_number` trouvé.
+- La fonction `Func_luxemburg_eu_tax_file_number_non_natural` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_luxemburg_eu_tax_file_number` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_luxemburg_eu_tax_file_number_non_natural` recherche le contenu qui correspond au modèle.
+- La fonction `Func_luxemburg_eu_tax_file_number_non_natural` trouve un contenu qui correspond au modèle.
 
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -88,7 +91,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - luxembourg tax identifikatiounsnummer
 - numéro d’resser
 - numéro d’identification fiscal luxembourgeois
-- numéro d’identification fiscale
+- numéro d'identification fiscale
 - sécurité sociale
 - sozialunterstützung
 - sozialversécherung
@@ -100,21 +103,21 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - steueridentifikationsnummer
 - steuernummer
 - id fiscal
-- identification fiscale non
+- numéro d’identification fiscal
+- numéro d’identification fiscal
+- taxe nº#
+- nº fiscal
+- numéro de contribuable
 - numéro d’identification fiscale
-- tax no #
-- tax no
-- numéro d’impôt
-- numéro d’enregistrement fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
 - taxnumber
-- iD d’tin
-- tin no
-- Étain #
+- id de tin
+- nº de tin
+- tin#
 - Zinn #
 - Zinn
 - zinnzahl

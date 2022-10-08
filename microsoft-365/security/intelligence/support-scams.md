@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9af3446010f213beba72a894af8b7c6cad862ec0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 34f06ca8b76d2dc701ced3d20976d19e6d90e929
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737233"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233351"
 ---
 # <a name="tech-support-scams"></a>Fraudes au support technique
 
@@ -51,13 +53,13 @@ Il est également important de garder à l’esprit les points suivants :
 
 * Utilisez [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) lors de la navigation sur Internet. Il bloque les sites d’escroquerie de prise en charge connus à l’aide de Windows Defender SmartScreen (qui est également utilisé par Internet Explorer). En outre, Microsoft Edge peut arrêter les boucles de dialogue contextuelles utilisées par ces sites.
 
-* Activez [l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) dans Windows 10. Il détecte et supprime les programmes malveillants connus d’escroquerie de support.
+* Activez [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) dans Windows 10. Il détecte et supprime les programmes malveillants connus d’escroquerie de support.
 
 ## <a name="what-to-do-if-information-has-been-given-to-a-tech-support-person"></a>Que faire si des informations ont été fournies à une personne du support technique
 
 * Désinstallez les applications que les escrocs ont demandé à installer. Si l’accès a été accordé, envisagez de réinitialiser l’appareil
 
-* Exécutez une analyse complète avec l’Antivirus Microsoft Defender pour supprimer tout programme malveillant. Appliquez toutes les mises à jour de sécurité dès qu’elles sont disponibles.
+* Exécutez une analyse complète avec Microsoft Defender Antivirus pour supprimer tout programme malveillant. Appliquez toutes les mises à jour de sécurité dès qu’elles sont disponibles.
 
 * Modifiez les mots de passe.
 

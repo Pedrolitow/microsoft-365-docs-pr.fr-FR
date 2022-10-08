@@ -11,16 +11,18 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a02442bed929b8611eb902d7e1485815cd46f635
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9e2b8516867cf05f7afe4017347f617f3975b020
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686336"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233285"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planifier des analyses avec Microsoft Defender pour point de terminaison (Linux)
 

@@ -14,14 +14,16 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: fe09d845a4362e00603f947dbee076aca8e6d902
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ae2bfcf887f0cf643f9ad4eaaab80ac7d0821c44
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703971"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221717"
 ---
 # <a name="troubleshoot-network-protection"></a>Résoudre les problèmes de protection réseau
 
@@ -54,7 +56,7 @@ La protection réseau fonctionne uniquement sur les appareils avec les condition
 > [!div class="checklist"]
 >
 > - Les points de terminaison exécutent Windows 10 Professionnel ou l’édition Enterprise, version 1709 ou ultérieure.
-> - Les points de terminaison utilisent l’Antivirus Microsoft Defender comme seule application de protection antivirus. [Découvrez ce qui se passe lorsque vous utilisez une solution antivirus non Microsoft](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Les points de terminaison utilisent Microsoft Defender Antivirus comme seule application de protection antivirus. [Découvrez ce qui se passe lorsque vous utilisez une solution antivirus non Microsoft](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > - [La protection en temps réel](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) est activée.
 > - [La protection fournie par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) est activée.
 > - Le mode Audit n’est pas activé. Utilisez [stratégie de groupe](enable-network-protection.md#group-policy) pour définir la règle sur **Désactivé** (valeur : **0**).
@@ -91,7 +93,7 @@ Les options d’exclusion actuelles sont les suivantes :
 
 1. Configuration d’un indicateur d’autorisation personnalisé.
 2. Utilisation d’exclusions IP : `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
-3. À l’exclusion d’un processus entier. Pour plus d’informations, consultez [les exclusions de l’Antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md). 
+3. À l’exclusion d’un processus entier. Pour plus d’informations, consultez [Microsoft Defender exclusions antivirus](configure-exclusions-microsoft-defender-antivirus.md). 
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Collecter des données de diagnostic pour les soumissions de fichiers
 
@@ -119,7 +121,7 @@ En raison de l’environnement dans lequel la protection réseau s’exécute, M
 Set-MpPreference -ProxyServer <proxy IP address: Port>
 ```
 
----OR---
+---OU---
 
 ```powershell
 Set-MpPreference -ProxyPacUrl <Proxy PAC url>

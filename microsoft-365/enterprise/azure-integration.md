@@ -8,6 +8,7 @@ ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 f1.keywords:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Intégrez Microsoft 365 à Azure AD si vous souhaitez synchroniser le mot de passe ou l’authentification unique avec votre environnement local.
-ms.openlocfilehash: e2513290a171c0f304e1c76be07b021d1e1ea237
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 9369437e556e3faf1691c2af513ace846e0ad944
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560436"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209291"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Intégration d’Azure à Microsoft 365
 

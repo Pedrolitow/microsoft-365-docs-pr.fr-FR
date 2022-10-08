@@ -14,15 +14,15 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: 9e046c877eab1c422d660ba24b7ec2da45c2006a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 8ac45a98d31ff8ae1751104a78f3e2746b9afb03
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731075"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233659"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Bien démarrer avec Microsoft Defender pour point de terminaison Plan 1
 
@@ -67,7 +67,7 @@ La barre de navigation sur le côté gauche de l’écran vous permet de vous d�
 | **Incidents & alertes** | S’étend pour afficher **les incidents** et **les alertes**. |
 | **Incidents & alertes** >  **Incidents** | Accède à la liste **des incidents** . Des incidents sont créés lorsque des alertes sont déclenchées et/ou des menaces sont détectées. Par défaut, la liste **des incidents affiche les** données des 30 derniers jours, avec l’incident le plus récent répertorié en premier. <br/><br/> Pour en savoir plus, consultez [Incidents](view-incidents-queue.md). |
 | **Incidents & alertes** >  **Alertes** | Accède à la liste **des alertes** (également appelée file **d’attente d’alertes**). Les alertes sont déclenchées lorsqu’un fichier, un processus ou un comportement suspect ou malveillant est détecté. Par défaut, la liste **Des alertes affiche les** données des 30 derniers jours, avec la dernière alerte répertoriée en premier. <br/><br/> Pour en savoir plus, consultez [Alertes](alerts-queue.md). |
-| **Centre d’action** | Accède au Centre d’actions, qui effectue le suivi des actions de correction et de réponse manuelle. Le Centre d’action effectue le suivi des activités comme suit : <br/>- L’Antivirus Microsoft Defender rencontre un fichier malveillant, puis bloque/supprime ce fichier. <br/>- Votre équipe de sécurité isole un appareil.<br/>- Defender pour point de terminaison détecte et met en quarantaine un fichier. <br/><br/> Pour en savoir plus, consultez [le Centre d’actions](auto-investigation-action-center.md). |
+| **Centre d’action** | Accède au Centre d’actions, qui effectue le suivi des actions de correction et de réponse manuelle. Le Centre d’action effectue le suivi des activités comme suit : <br/>- Microsoft Defender Antivirus rencontre un fichier malveillant, puis bloque/supprime ce fichier. <br/>- Votre équipe de sécurité isole un appareil.<br/>- Defender pour point de terminaison détecte et met en quarantaine un fichier. <br/><br/> Pour en savoir plus, consultez [le Centre d’actions](auto-investigation-action-center.md). |
 | **Degré de sécurisation** | Affiche une représentation de la posture de sécurité de votre organisation, ainsi qu’une liste d’actions d’amélioration et de métriques. <br/><br/> Pour plus d’informations, consultez [Microsoft Secure Score](../defender/microsoft-secure-score.md). |
 | **Hub d’apprentissage** | Accédez à la liste des parcours d’apprentissage auxquels vous pouvez accéder pour en savoir plus sur les fonctionnalités de sécurité de Microsoft 365.  |
 | **Terminaison** >  **Rechercher** | Accède à une page dans laquelle vous pouvez rechercher des appareils spécifiques par nom d’appareil. Dans la liste des résultats, vous pouvez voir des détails, tels que le niveau de risque et l’état d’intégrité, en un clin d’œil. |
@@ -76,8 +76,8 @@ La barre de navigation sur le côté gauche de l’écran vous permet de vous d�
 |  **Terminaison** >  Lignes  >  **de base de & de configuration** **Bases de référence de sécurité** | Les bases de référence de sécurité sont des stratégies préconfigurées et des groupes de paramètres qui peuvent vous aider à appliquer les paramètres de sécurité recommandés de manière efficace et efficace. Les lignes de base incluent des paramètres basés sur les meilleures pratiques de l’industrie. Vous pouvez conserver les paramètres par défaut ou personnaliser vos bases de référence en fonction des besoins de votre organisation. <br/><br/> Pour plus d’informations, consultez [Utiliser les bases de référence de sécurité pour configurer Windows 10 appareils dans Intune](/mem/intune/protect/security-baselines). |
 |  **Terminaison** >  Lignes  >  **de base de & de configuration** **Gestion de la configuration** | Accède à la page **gestion de la configuration** des appareils, où vous pouvez afficher des informations sur les appareils intégrés et prendre des mesures pour intégrer davantage d’appareils. |
 | **Rapports** | Accède à vos rapports, tels que votre [rapport de protection contre les menaces](threat-protection-reports.md), le [rapport d’intégrité et de conformité des appareils et](device-health-reports.md) votre [rapport de protection web](web-protection-overview.md). |
-| **État d'intégrité** | Inclut des liens vers le **Estado de funcionamento dos serviços** et le **centre de messages**.  |
-| **Santé** >  **Estado de funcionamento dos serviços** | Accède à la page Estado de funcionamento dos serviços dans le Centre d'administration Microsoft 365. Cette page vous permet d’afficher l’état d’intégrité de tous les services disponibles avec les abonnements de votre organisation.   |
+| **État d'intégrité** | Inclut des liens vers le **État des services** et le **centre de messages**.  |
+| **Santé** >  **État des services** | Accède à la page État des services dans le Centre d'administration Microsoft 365. Cette page vous permet d’afficher l’état d’intégrité de tous les services disponibles avec les abonnements de votre organisation.   |
 | **Santé** >  **Centre de messages** | Accède au centre de messages dans le Centre d'administration Microsoft 365. Le centre de messages fournit des informations sur les modifications planifiées. Chaque message décrit ce qui s’en vient, comment il peut affecter les utilisateurs et comment gérer les modifications. |  
 | **Autorisations & rôles** | Vous permet d’accorder des autorisations pour utiliser le portail Microsoft 365 Defender. Les autorisations sont accordées via des rôles dans Azure Active Directory (Azure AD). Sélectionnez un rôle et un volet volant s’affiche. Le menu volant contient un lien vers Azure AD dans lequel vous pouvez ajouter ou supprimer des membres dans un groupe de rôles. <br/><br/> Pour plus d’informations, consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).  |
 | **Paramètres** | Accède aux paramètres généraux de votre portail Microsoft 365 Defender (listé en tant que **Centre de sécurité**) et Defender pour point de terminaison (répertoriés en tant que points de **terminaison**). <br/><br/> Pour plus d’informations, consultez [Paramètres](../defender/microsoft-365-defender-portal.md). |

@@ -11,17 +11,20 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 09/26/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 106bdd9deafe172ce31085cfee0f30f8a61bac0c
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 549cf88fe713b54ad3a37eb32deddda39cbe9e9a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520388"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233681"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -62,7 +65,7 @@ Microsoft Defender pour point de terminaison pour les clients du gouvernement de
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft Defender pour point de terminaison Server GCC|serveur Microsoft Defender pour point de terminaison pour GCC High|serveur Microsoft Defender pour point de terminaison pour DOD|
-|Microsoft Defender pour serveurs|Microsoft Defender pour serveurs - Gouvernement|Microsoft Defender pour serveurs - Gouvernement|
+|Microsoft Defender pour les serveurs|Microsoft Defender pour les serveurs - Gouvernement|Microsoft Defender pour les serveurs - Gouvernement|
 
 ## <a name="portal-urls"></a>URL du portail
 
@@ -93,7 +96,7 @@ Les versions de système d’exploitation suivantes sont prises en charge :
 
 Version du système d'exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows 11|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows 11|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 21H1 et ultérieures|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 20H2 (avec [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 2004 (avec [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), veuillez mettre à niveau|![Oui](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), veuillez mettre à niveau|![Oui](images/svg/check-yes.svg) <br /> Remarque : [Déconseillé](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), veuillez mettre à niveau
@@ -119,16 +122,17 @@ macOS|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](
 Android|![Oui.](images/svg/check-yes.svg) <br /> |![Oui](images/svg/check-yes.svg) <br /> |![Oui](images/svg/check-yes.svg) <br /> 
 iOS|![Oui.](images/svg/check-yes.svg) <br /> |![Oui](images/svg/check-yes.svg) <br /> |![Oui](images/svg/check-yes.svg) <br /> 
 
-> [!NOTE]
-> <sup>1</sup> Le correctif doit être déployé avant l’intégration de l’appareil afin de configurer Defender pour point de terminaison dans l’environnement approprié.
->
-> <sup>2</sup> Découvrez la [solution moderne unifiée pour Windows 2016 et 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). Si vous avez déjà intégré vos serveurs à l’aide de MMA, suivez les instructions fournies dans la [migration de serveur](server-migration.md) pour migrer vers la nouvelle solution.
->
-> <sup>3</sup> Lorsque vous utilisez [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) , vous devez choisir « Azure US Government » sous « Azure Cloud » si vous utilisez l’Assistant [Installation](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), ou si vous utilisez une [ligne de commande](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) ou un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) , définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1. <br /> La version minimale prise en charge par MMA est 10.20.18029 (mars 2020).
+**Footnotes**
 
-### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versions du système d’exploitation lors de l’utilisation de Microsoft Defender pour serveurs
+<sup>1</sup> Le correctif doit être déployé avant l’intégration de l’appareil afin de configurer Defender pour point de terminaison dans l’environnement approprié.
 
-Les versions de système d’exploitation suivantes sont prises en charge lors de l’utilisation [de Microsoft Defender pour les serveurs](/azure/security-center/security-center-wdatp) :
+<sup>2</sup> Découvrez la [solution moderne unifiée pour Windows 2016 et 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). Si vous avez déjà intégré vos serveurs à l’aide de MMA, suivez les instructions fournies dans la [migration de serveur](server-migration.md) pour migrer vers la nouvelle solution.
+
+<sup>3</sup> Lorsque vous utilisez [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) , vous devez choisir « Azure US Government » sous « Azure Cloud » si vous utilisez l’Assistant [Installation](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), ou si vous utilisez une [ligne de commande](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) ou un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) , définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1. <br /> La version minimale prise en charge par MMA est 10.20.18029 (mars 2020).
+
+### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versions du système d’exploitation lors de l’utilisation de Microsoft Defender pour les serveurs
+
+Les versions de système d’exploitation suivantes sont prises en charge lors [de l’utilisation de Microsoft Defender pour les serveurs](/azure/security-center/security-center-wdatp) :
 
 <br />
 
@@ -139,7 +143,7 @@ Version du système d'exploitation|GCC|GCC High|DoD
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 
 ## <a name="required-connectivity-settings"></a>Paramètres de connectivité requis
@@ -184,20 +188,18 @@ Voici les lacunes connues :
 ****
 
 |Nom de la fonctionnalité|GCC|GCC High|DoD|
-|---|:---:|:---:|:---:|
-|Rapports : Intégrité de l’appareil|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
-|Rapports : filtrage de contenu web|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
+|----|:---:|:---:|:---:|
+|Rapports : filtrage de contenu web|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
+|Rapports : Intégrité de l’appareil|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Degré de sécurisation Microsoft|![Oui](images/svg/check-yes.svg) <sup>1</sup>|![Non](images/svg/check-no.svg)|![Non](images/svg/check-no.svg)|  
 |Spécialistes des menaces Microsoft|![Non](images/svg/check-no.svg)|![Non](images/svg/check-no.svg)|![Non](images/svg/check-no.svg)|  
-> [!NOTE]
-> <sup>1</sup> Bien que le niveau de sécurité Microsoft soit disponible pour les clients GCC, certaines recommandations de sécurité ne sont pas disponibles.
+
+**Note**
+
+<sup>1</sup> Bien que le niveau de sécurité Microsoft soit disponible pour les clients GCC, certaines recommandations de sécurité ne sont pas disponibles.
 
 
 Voici les fonctionnalités et les lacunes connues pour [Mobile Threat Defense (Microsoft Defender pour point de terminaison sur Android & iOS)](mtd.md) :
-
-<br />
-
-****
 
 |Nom de la fonctionnalité|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|

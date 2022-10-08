@@ -12,18 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f000ece5715667b07222d31a9e131fed3eab552f
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: eb44b1ce51466af5c1478b894721c54c13e89b40
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648678"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503553"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
+
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Utilisez des stratégies de gestion des risques internes pour identifier les activités à risque et les outils de gestion pour agir sur les alertes de risque dans votre organisation. Effectuez les étapes suivantes pour configurer les prérequis et configurer une stratégie de gestion des risques internes.
 
@@ -31,6 +37,8 @@ Utilisez des stratégies de gestion des risques internes pour identifier les act
 > La solution de gestion des risques internes fournit une option au niveau du locataire pour aider les clients à faciliter la gouvernance interne au niveau de l’utilisateur. Les administrateurs au niveau du locataire peuvent configurer des autorisations pour fournir l’accès à cette solution aux membres de votre organisation et configurer des connecteurs de données dans le portail de conformité Microsoft Purview pour importer les données pertinentes afin de prendre en charge l’identification au niveau utilisateur de l’activité potentiellement risquée. Les clients reconnaissent les insights liés au comportement, au caractère ou aux performances de l’utilisateur individuel en rapport avec l’emploi peuvent être calculés par l’administrateur et mis à la disposition d’autres membres de l’organisation. En outre, les clients reconnaissent qu’ils doivent mener leur propre enquête complète sur le comportement, le caractère ou les performances de l’utilisateur individuel en rapport avec l’emploi, et pas seulement s’appuyer sur les insights du service de gestion des risques internes. Les clients sont uniquement responsables de l’utilisation du service de gestion des risques internes et de toute fonctionnalité ou service associé conformément à toutes les lois applicables, y compris les lois relatives à l’identification des utilisateurs individuels et aux actions de correction.
 
 Pour plus d’informations sur la façon dont les stratégies de risque interne peuvent vous aider à gérer les risques au sein de votre organisation, consultez [En savoir plus sur la gestion des risques internes](insider-risk-management.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et licences
 

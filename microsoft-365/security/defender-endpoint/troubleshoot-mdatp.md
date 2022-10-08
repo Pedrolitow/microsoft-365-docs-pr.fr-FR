@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: eabaf627d882544d377e0cea61d83c5858fe3ac7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 94e4fc6130e35097c7cae1f01ef00b5b706977d7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690796"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233791"
 ---
 # <a name="troubleshoot-service-issues"></a>Résoudre des problèmes de service
 
@@ -57,7 +59,7 @@ Consultez [Vérifier les événements et les erreurs à l’aide de observateur 
 
 Si l’intégration des appareils se termine correctement, mais que Microsoft Defender pour point de terminaison ne démarre pas après un redémarrage et affiche l’erreur 577, vérifiez que Windows Defender n’est pas désactivé par une stratégie.
 
-Pour plus d’informations, consultez [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Pour plus d’informations, consultez [Vérifier que Microsoft Defender Antivirus n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="known-issues-with-regional-formats"></a>Problèmes connus avec les formats régionaux
 
@@ -85,7 +87,7 @@ La prise en charge de l’utilisation de virgules comme séparateur dans les nom
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender pour point de terminaison locataire a été automatiquement créé en Europe
 
-Lorsque vous utilisez Microsoft Defender pour cloud pour surveiller les serveurs, un locataire Microsoft Defender pour point de terminaison est automatiquement créé. Les données Microsoft Defender pour point de terminaison sont stockées en Europe par défaut.
+Lorsque vous utilisez Microsoft Defender pour le cloud pour surveiller les serveurs, un locataire Microsoft Defender pour point de terminaison est automatiquement créé. Les données Microsoft Defender pour point de terminaison sont stockées en Europe par défaut.
 
 ## <a name="related-topics"></a>Voir aussi
 

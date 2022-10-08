@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1714469bcfaa35db17f7ad771aa2701d5e66d2d7
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 6c1af9c31add2d02886bab36e72ec3650dbebae7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799107"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233593"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -133,22 +135,22 @@ Le package contient les dossiers suivants :
 |CollectionSummaryReport.xls|Ce fichier est un résumé de la collection de packages d’investigation, il contient la liste des points de données, la commande utilisée pour extraire les données, l’état d’exécution et le code d’erreur en cas d’échec. Vous pouvez utiliser ce rapport pour suivre si le package inclut toutes les données attendues et identifier s’il y a eu des erreurs.|
 |
 
-## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Exécuter l’analyse antivirus Microsoft Defender sur les appareils
+## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Exécuter Microsoft Defender analyse antivirus sur les appareils
 
 Dans le cadre du processus d’investigation ou de réponse, vous pouvez lancer à distance une analyse antivirus pour identifier et corriger les programmes malveillants susceptibles d’être présents sur un appareil compromis.
 
 > [!IMPORTANT]
 > - Cette action n’est actuellement pas prise en charge pour macOS et Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md)
-> - Une analyse antivirus Microsoft Defender peut s’exécuter en même temps que d’autres solutions antivirus, que l’antivirus Microsoft Defender soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Une analyse antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender Antivirus soit la solution antivirus active ou non. Microsoft Defender Antivirus peut être en mode passif. Pour plus d’informations, consultez [Microsoft Defender compatibilité](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility) antivirus.
 
 Vous avez sélectionné **Exécuter l’analyse antivirus**, sélectionnez le type d’analyse que vous souhaitez exécuter (rapide ou complet) et ajoutez un commentaire avant de confirmer l’analyse.
 
 :::image type="content" source="images/run-antivirus.png" alt-text="Notification pour sélectionner l’analyse rapide ou l’analyse complète et ajouter un commentaire" lightbox="images/run-antivirus.png":::
 
-Le Centre d’action affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement, ce qui indique qu’une action d’analyse a été envoyée sur l’appareil. Les alertes de l’Antivirus Microsoft Defender reflètent toutes les détections qui ont été signalées pendant l’analyse.
+Le Centre d’action affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement, ce qui indique qu’une action d’analyse a été envoyée sur l’appareil. Microsoft Defender alertes antivirus reflètent toutes les détections qui ont été signalées pendant l’analyse.
 
 > [!NOTE]
-> Lors du déclenchement d’une analyse à l’aide de l’action de réponse Defender pour point de terminaison, la valeur « ScanAvgCPULoadFactor » de l’antivirus Microsoft Defender s’applique toujours et limite l’impact de l’analyse sur le processeur.
+> Lorsque vous déclenchez une analyse à l’aide de l’action de réponse Defender pour point de terminaison, Microsoft Defender valeur de l’antivirus « ScanAvgCPULoadFactor » s’applique toujours et limite l’impact de l’analyse sur le processeur.
 > Si ScanAvgCPULoadFactor n’est pas configuré, la valeur par défaut est une limite de 50 % de charge maximale de l’UC pendant une analyse.
 > Pour plus d’informations, consultez [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
@@ -158,7 +160,7 @@ En plus de contenir une attaque en arrêtant des processus malveillants, vous po
 
 > [!IMPORTANT]
 > - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, Windows 11 et Windows Server 2019 ou version ultérieure. 
-> - Cette fonctionnalité est disponible si votre organisation utilise l’antivirus Microsoft Defender.
+> - Cette fonctionnalité est disponible si votre organisation utilise Microsoft Defender Antivirus.
 > - Cette action doit répondre aux Windows Defender formats de stratégie d’intégrité du code Application Control et aux exigences de signature. Pour plus d’informations, consultez [les formats de stratégie d’intégrité du code et la signature](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
 Pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction peut aider à empêcher un attaquant de contrôler les appareils compromis et d’effectuer d’autres activités malveillantes.
@@ -187,7 +189,7 @@ Selon la gravité de l’attaque et la sensibilité de l’appareil, vous pouvez
 > - L’isolation des appareils du réseau n’est actuellement pas prise en charge pour les appareils exécutant macOS ou Linux. Pour macOS, utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md).
 > - L’isolation complète est disponible pour les appareils exécutant Windows 11, Windows 10, version 1703 ou ultérieure, Windows Server 2022, Windows Server 2019 et Windows Server 2016.
 > - L’isolation sélective est disponible pour les appareils exécutant Windows 10, version 1709 ou ultérieure et Windows 11.
-> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouvent derrière un tunnel VPN complet ne pourront pas atteindre le service cloud Microsoft Defender pour point de terminaison une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionné pour Microsoft Defender pour point de terminaison et le trafic lié à la protection cloud de l’Antivirus Microsoft Defender.
+> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouvent derrière un tunnel VPN complet ne pourront pas atteindre le service cloud Microsoft Defender pour point de terminaison une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionné pour Microsoft Defender pour point de terminaison et Microsoft Defender trafic lié à la protection basée sur le cloud antivirus.
 
 Cette fonctionnalité d’isolation de l’appareil déconnecte l’appareil compromis du réseau tout en conservant la connectivité au service Defender pour point de terminaison, qui continue de surveiller l’appareil.
 

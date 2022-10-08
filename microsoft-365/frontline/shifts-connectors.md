@@ -13,15 +13,16 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: c211e066a1b5c6ad610c2f3be703d50be3ecf6af
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: b3faa651939b5866e5bb99dbf3ace05d9b86dfe0
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992309"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381740"
 ---
 # <a name="shifts-connectors"></a>Connecteurs de Plannings
 
@@ -37,14 +38,22 @@ Cet article vous donne une vue d’ensemble des connecteurs Plannings et de leur
 
 Les connecteurs synchronisent les données de planification entre votre système WFM et Plannings, en intégrant les planifications de votre organisation dans Teams. Les équipes sont l’endroit où vos employés de première ligne s’engagent pour leurs besoins en matière de planification. Votre système de WFM est le système d’enregistrement pour les règles d’entreprise, la conformité et l’intelligence.
 
-Les flux de données via le connecteur permettent de s’assurer que les planifications sont toujours à jour. Les planifications de votre système WFM sont synchronisées avec Plannings. De plus, les modifications apportées aux planifications dans Plannings sont synchronisées avec votre système WFM en temps réel. En tant que système d’enregistrement, toutes les règles d’entreprise sont appliquées par votre système WFM avant l’enregistrement des données dans Plannings.
+Les flux de données via le connecteur permettent de s’assurer que les planifications sont toujours à jour. Les planifications de votre système WFM sont synchronisées avec Plannings. De plus, les modifications apportées aux planifications dans shifts sont synchronisées avec votre système WFM. En tant que système d’enregistrement, toutes les règles d’entreprise sont appliquées par votre système WFM avant l’enregistrement des données dans Plannings.
 
+<a name="prereq"> </a>
+<a name="schedules"> </a>
 ## <a name="managed-shifts-connectors"></a>Connecteurs Plannings managés
 
 Les connecteurs Plannings managés sont des connecteurs développés en collaboration avec nos partenaires. Les connecteurs managés sont hébergés et gérés par nous ou nos partenaires. Avec les connecteurs managés, seule une configuration minimale est nécessaire.
 
-### <a name="microsoft-teams-shifts-connector-for-blue-yonder"></a>Connecteur Microsoft Teams Plannings pour Blue Yonder
+|Connector|Description|Conditions requises|
+|---------|---------|---------|
+|[Connecteur Microsoft Teams Plannings pour Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Utilisez ce connecteur pour intégrer Shifts à Blue Yonder Workforce Management. Ce connecteur est hébergé et géré par Microsoft.|Conditions préalables à la configuration d’une connexion : <ul><li>Utilisation de [l’Assistant Connecteur Shifts](shifts-connector-wizard.md#prerequisites) dans le Centre d'administration Microsoft 365<br>Avant d’exécuter l’Assistant, [supprimez les planifications des équipes existantes que vous souhaitez mapper](shifts-connector-wizard.md#remove-schedules-from-teams-you-want-to-map).</li><li>Utilisation de [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
+|[Connecteur Microsoft Teams Shifts pour les dimensions UKG](#microsoft-teams-shifts-connector-for-ukg-dimensions)|Utilisez ce connecteur pour intégrer Shifts à UKG Dimensions. Ce connecteur est hébergé et géré par Microsoft.|Conditions préalables à la configuration d’une connexion : <ul><li>Utilisation de [l’Assistant Connecteur Shifts](shifts-connector-wizard-ukg.md#prerequisites) dans le Centre d'administration Microsoft 365<br>Avant d’exécuter l’Assistant, [supprimez les planifications des équipes existantes que vous souhaitez mapper](shifts-connector-wizard-ukg.md#remove-schedules-from-teams-you-want-to-map)</li><li>Utilisation de [PowerShell](shifts-connector-ukg-powershell-setup.md#prerequisites)</li></ul>|
+|[Connecteur Reflexis Plannings pour Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Utilisez ce connecteur pour intégrer Shifts à Reflexis Workforce Scheduler. Ce connecteur est hébergé et géré par Zebra. |Pour plus d'informations, accédez au <https://connect.zebra.com/microsoft-connectors>.|
+
 <a name="blue_yonder"> </a>
+### <a name="microsoft-teams-shifts-connector-for-blue-yonder"></a>Connecteur Microsoft Teams Plannings pour Blue Yonder
 
 Le connecteur Teams Plannings pour Blue Yonder est une offre interne hébergée et gérée par Microsoft Corporation. Avec ce connecteur, vous pouvez intégrer Plannings à Blue Yonder Workforce Management (Blue Yonder WFM) versions 2020.3, 2021.1 ou 2021.2 pour gérer vos planifications et les tenir à jour.  
 
@@ -80,11 +89,11 @@ Lorsqu’un responsable ou un travailleur de première ligne tente d’effectuer
 
 Eden, un responsable, publie une planification dans Blue Yonder WFM, qui est synchronisée avec Plannings dans Teams via le connecteur. Alex, un membre du personnel, est averti dans Teams sur son appareil mobile, et affiche son horaire et les équipes attribuées.
 
-Alex doit prendre un peu de congé et demande un jour de congé à l’aide de Plannings. La demande est envoyée à Blue Yonder WFM via le connecteur en temps réel. Blue Yonder WFM garantit que la demande est conforme aux règles d’entreprise et que la demande est créée. Eden voit et approuve la demande dans Blue Yonder WFM, et l’approbation est synchronisée avec Teams. (Eden peut également voir et approuver la demande dans Plannings). Alex est informé dans Teams que sa demande est approuvée et affiche son calendrier mis à jour.
+Alex doit prendre un peu de congé et demande un jour de congé à l’aide de Plannings. La demande est envoyée à Blue Yonder WFM via le connecteur. Blue Yonder WFM garantit que la demande est conforme aux règles d’entreprise et que la demande est créée. Eden voit et approuve la demande dans Blue Yonder WFM, et l’approbation est synchronisée avec Teams. (Eden peut également voir et approuver la demande dans Plannings). Alex est informé dans Teams que sa demande est approuvée et affiche son calendrier mis à jour.
 
 Alex veut échanger un shift avec un collègue. Dans Shifts, Alex voit une liste de tous les shifts qui sont éligibles à un échange en fonction des règles d’entreprise dans Blue Yonder WFM. Alex choisit un shift actuellement attribué à Gena. Gena est averti dans Teams sur son appareil mobile et accepte la demande d’échange. Eden voit et approuve la demande dans Plannings, et l’approbation est synchronisée avec Blue Yonder WFM. (Eden peut également voir et approuver la demande dans Blue Yonder WFM). Alex et Gena sont avertis dans Teams et affichent leurs planifications mises à jour.
 
-#### <a name="set-up-a-connection"></a>Configurer une connexion
+#### <a name="set-up-a-connection-to-blue-yonder-workforce-management"></a>Configurer une connexion à Blue Yonder Workforce Management
 
 L’intégration de Plannings à Blue Yonder WFM à l’aide du connecteur ne prend que quelques étapes. Vous pouvez utiliser l’Assistant Connecteur Plannings dans le Centre d'administration Microsoft 365 pour configurer rapidement une connexion. L’Assistant configure le connecteur en fonction des paramètres que vous choisissez et crée la connexion. Si vous préférez utiliser PowerShell, nous fournissons également des scripts PowerShell que vous pouvez utiliser pour vous connecter.
 
@@ -93,7 +102,68 @@ Pour obtenir des conseils pas à pas, consultez :
 - [Utiliser l’Assistant Connecteur Plannings pour connecter Plannings à Blue Yonder Workforce Management](shifts-connector-wizard.md)
 - [Utiliser PowerShell pour connecter Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
 
-Une fois la connexion configurée, vous pouvez utiliser PowerShell pour mettre à jour et modifier les paramètres de connexion à tout moment, si nécessaire. En ce qui concerne le connecteur lui-même, vous n’avez pas besoin de vous soucier des mises à niveau ou de la maintenance. On s’en occupe.
+Une fois la connexion configurée, vous pouvez mettre à jour et modifier les paramètres de connexion à tout moment, si nécessaire. Pour en savoir plus, reportez-vous à la rubrique :
+
+- [Utilisez le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
+- [Utilisez PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
+
+En ce qui concerne le connecteur lui-même, vous n’avez pas besoin de vous soucier des mises à niveau ou de la maintenance. On s’en occupe.
+
+### <a name="microsoft-teams-shifts-connector-for-ukg-dimensions"></a>Connecteur Microsoft Teams Shifts pour les dimensions UKG
+
+[!INCLUDE [preview-feature](includes/preview-feature.md)]
+
+Le connecteur Teams Shifts pour UKG Dimensions est une offre interne hébergée et gérée par Microsoft. Avec ce connecteur, vous pouvez intégrer Shifts à UKG Dimensions pour gérer vos planifications et les tenir à jour.  
+
+:::image type="content" source="media/shifts-connector-ukg-dimensions.png" alt-text="Capture d’écran montrant Shifts sur un appareil mobile, une demande de congé et une planification dans UKG Dimensions." lightbox="media/shifts-connector-ukg-dimensions.png":::
+
+Les responsables de première ligne peuvent :
+
+- Publiez des décalages et des planifications dans les dimensions UKG et affichez-les dans Shifts.
+- Créez, gérez et attribuez des décalages ouverts dans les dimensions UKG et affichez-les dans les dimensions UKG et shifts.
+- Créez, modifiez et supprimez des congés dans les dimensions UKG et affichez-les dans Shifts.
+- Affichez et approuvez les demandes de planification des travailleurs dans les dimensions UKG et shifts.
+- Définissez et mettez à jour la disponibilité des workers dans les dimensions UKG et affichez-les dans Shifts.
+
+Les travailleurs de première ligne peuvent :
+
+- Consulter les horaires et les horaires de leur équipe et de leur équipe dans Plannings;
+- Demandez un congé, affichez les informations sur les congés et affichez les décalages ouverts de l’équipe dans Shifts.
+- Afficher et publier des entrées de carte de temps dans Shifts.
+- Demandez des shifts ouverts et des shifts d’échange dans shifts.
+- Définir leur disponibilité dans Plannings.
+
+Les éléments suivants ne sont pas pris en charge actuellement :
+
+- Ajouter, modifier, supprimer, enregistrer ou publier des décalages dans Plannings;
+- Ajouter, modifier, supprimer, enregistrer ou publier des congés dans Plannings;
+- Ajouter, modifier, supprimer, enregistrer ou publier des décalages ouverts dans Plannings.
+
+Lorsqu’un responsable ou un travailleur de première ligne tente d’effectuer l’une de ces actions dans Plannings, il reçoit un message lui indiquant que l’action n’est pas prise en charge.
+
+#### <a name="example-scenario"></a>Exemple de scénario
+
+Ravi, un responsable, publie une planification dans UKG Dimensions, qui est synchronisée avec Shifts dans Teams via le connecteur. Camille, membre du personnel, est avertie dans Teams sur son appareil mobile et affiche son planning et le planning de son équipe. Dans les équipes affectées, Camille peut également voir des informations détaillées, telles que des tâches, définies par le responsable.
+
+Camille a besoin de prendre un peu de congé et demande un jour de congé à l’aide de Shifts. La demande est envoyée aux dimensions UKG via le connecteur. UKG Dimensions garantit que la demande est conforme aux règles métier et que la demande est créée. Ravi voit et approuve la demande dans UKG Dimensions, et l’approbation est synchronisée avec Teams. (Ravi peut également voir et approuver la demande dans Shifts). Camille est avertie dans Teams que la demande est approuvée et affiche son calendrier mis à jour.
+
+Camille veut échanger un shift avec un collègue. Dans Shifts, Camille voit une liste de tous les shifts éligibles à un échange basé sur les règles d’entreprise dans UKG Dimensions. Camille choisit une équipe qui est actuellement affectée à Kristen. Elle est avertie dans Teams sur son appareil mobile et accepte la demande d’échange. Ravi voit et approuve la demande dans Shifts, et l’approbation est synchronisée avec UKG Dimensions. (Ravi peut également voir et approuver la demande dans UKG Dimensions). Camille et Kristen sont avertis dans Teams et affichent leurs planifications mises à jour.
+
+#### <a name="set-up-a-connection-to-ukg-dimensions"></a>Configurer une connexion à UKG Dimensions
+
+L’intégration de Shifts à UKG Dimensions à l’aide du connecteur ne prend que quelques étapes. Vous pouvez utiliser l’Assistant Connecteur Plannings dans le Centre d'administration Microsoft 365 pour configurer rapidement une connexion. L’Assistant configure le connecteur en fonction des paramètres que vous choisissez et crée la connexion. Si vous préférez utiliser PowerShell, nous fournissons également des scripts PowerShell que vous pouvez utiliser pour vous connecter.
+
+Pour obtenir des conseils pas à pas, consultez :
+
+- [Utiliser l’Assistant Connecteur Shifts pour connecter Shifts aux dimensions UKG](shifts-connector-wizard-ukg.md)
+- [Utiliser PowerShell pour connecter shifts aux dimensions UKG](shifts-connector-ukg-powershell-setup.md)
+
+Une fois la connexion configurée, vous pouvez mettre à jour et modifier les paramètres de connexion à tout moment, si nécessaire. Pour en savoir plus, reportez-vous à la rubrique :
+
+- [Utilisez la Centre d'administration Microsoft 365 pour gérer votre connexion Shifts aux dimensions UKG](shifts-connector-ukg-admin-center-manage.md)
+- [Utiliser PowerShell pour gérer votre connexion Shifts aux dimensions UKG](shifts-connector-ukg-powershell-manage.md)
+
+En ce qui concerne le connecteur lui-même, vous n’avez pas besoin de vous soucier des mises à niveau ou de la maintenance. On s’en occupe.
 
 ### <a name="reflexis-shifts-connector-for-microsoft-teams"></a>Connecteur Reflexis Plannings pour Microsoft Teams
 
@@ -115,7 +185,7 @@ Les travailleurs de première ligne peuvent :
 - Consulter les horaires et les horaires de leur équipe et de leur équipe dans Plannings;
 - Demander un congé, ouvrir des équipes, échanger et proposer des changements dans Plannings.
 
-Pour plus d'informations, accédez au https://connect.zebra.com/microsoft-connectors.
+Pour plus d'informations, accédez au <https://connect.zebra.com/microsoft-connectors>.
 
 ## <a name="related-articles"></a>Articles connexes
 

@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 1b483c75137d3731afbc507e67960201da2ce328
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: a76e73e5b602fef3dbd6820483a47c2ef32c9833
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737981"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233835"
 ---
 # <a name="how-to-run-attack-simulations-for-your-team"></a>Comment exécuter des simulations d’attaque pour votre équipe
 
@@ -30,7 +33,7 @@ Exercice de simulation d'attaque vous permet d’exécuter des scénarios de cyb
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
-- Microsoft Defender pour Office 365 Plan 2 (inclus dans E5)
+- Microsoft Defender pour Office 365 plan 2 (inclus dans le cadre de l’E5)
 - Autorisations suffisantes (rôle Administrateur de sécurité)
 - 5 à 10 minutes pour effectuer les étapes ci-dessous.
 
@@ -58,4 +61,4 @@ Exercice de simulation d'attaque vous permet d’exécuter des scénarios de cyb
 
 ### <a name="further-reading"></a>Lire plus en détail
 
-Pour savoir comment fonctionne la simulation d’attaque, consultez [Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque - Office 365 | Microsoftova dokumentacija](../../office-365-security/attack-simulation-training.md)
+Pour savoir comment fonctionne la simulation d’attaque, consultez [Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)

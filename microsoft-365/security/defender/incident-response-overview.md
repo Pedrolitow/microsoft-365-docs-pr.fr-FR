@@ -16,17 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bb6189c92057b3c58a518bab3768011c4a1cffe4
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 655858dab8b590909073f42c54148f7d0cbe4f06
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480951"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503509"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Examiner et répondre avec Microsoft 365 Defender
 
@@ -55,7 +56,7 @@ Si votre organisation utilise Microsoft 365 Defender, votre équipe chargée des
 
 Une fois l’enquête automatisée terminée, un verdict est rendu pour chaque élément de preuve d’un incident. Selon le verdict, les actions de correction sont identifiées. Dans certains cas, les actions de correction sont effectuées automatiquement ; dans d’autres cas, les actions de correction attendent l’approbation par le biais du centre d’action Microsoft 365 Defender. 
 
-Pour plus [d’informations, consultez examen automatisé et réponse dans Microsoft 365 Defender](m365d-autoir.md).
+Pour plus d’informations, consultez [Examen automatisé et réponse dans Microsoft 365 Defender](m365d-autoir.md).
 
 ## <a name="proactive-search-for-threats-with-advanced-hunting"></a>Recherche proactive des menaces avec repérage avancé
 
@@ -85,6 +86,6 @@ Pour plus d’informations, consultez [Analyse des menaces dans Microsoft 365 De
 
 ## <a name="collaborate-with-microsoft-experts"></a>Collaborer avec des experts Microsoft
 
-Spécialistes des menaces Microsoft : les notifications d’attaque ciblée sont un service de chasse aux menaces managé. Une fois que vous appliquez et que vous êtes accepté, vous recevez des notifications d’attaque ciblée de la part d’experts en menaces Microsoft, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation. Spécialistes des menaces Microsoft – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée et vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement supplémentaire.
+Les notifications d’attaque de point de terminaison (précédemment appelées Spécialistes des menaces Microsoft - Notifications d’attaque ciblées) sont un service de chasse aux menaces managée. Une fois que vous avez présenté votre demande et que vous êtes accepté, vous recevrez des notifications d’attaque de point de terminaison de la part d’experts microsoft en matière de menaces, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation. Microsoft Defender Experts – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée et vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement supplémentaire.
 
-Pour plus d’informations, consultez [Spécialistes des menaces Microsoft dans la vue d’ensemble de Microsoft 365](/microsoft-365/security/defender/microsoft-threat-experts).
+Pour plus d’informations, consultez [Microsoft Defender Présentation des experts dans Microsoft 365](/microsoft-365/security/defender/microsoft-threat-experts).

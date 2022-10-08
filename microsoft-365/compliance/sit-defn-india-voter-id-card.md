@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité Carte d’identité de l’électeur de l’Inde
+title: Définition de l’entité Carte d’identité d’électeur de l’Inde
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible de carte d’électeur de l’Inde.
-ms.openlocfilehash: 4556824999f44f6407e996fbca7c82e79fe2cafc
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+description: Définition d’entité de type d’entité de type d’information sensible de carte d’identité d’électeur de l’Inde.
+ms.openlocfilehash: 168cf756e547f1b8090735cad22aeeaabb68d404
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996239"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379763"
 ---
-# <a name="india-voter-id-card"></a>Carte d’ID d’vote pour l’Inde
+# <a name="india-voter-id-card"></a>Carte d’identité de l’électeur de l’Inde
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -77,5 +80,5 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 - voteridcard
 - carte d’identité de photo électorale
 - ÉPIQUE
-- ECI
+- Eci
 - élection commmision

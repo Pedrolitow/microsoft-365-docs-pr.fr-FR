@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: ffa155a0b1d9598d19af5842553f68372f30b076
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 3cca5d1ddf3ad23bdbd699c15f6919b83565f356
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851719"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233307"
 ---
 # <a name="machine-resource-type"></a>Type de ressource de machine
 
@@ -69,7 +71,7 @@ ms.locfileid: "67851719"
 |osPlatform|Chaîne|Plateforme du système d’exploitation.|
 |onboardingstatus|Chaîne|État de l’intégration de l’ordinateur. Les valeurs possibles sont : « onboarded », « CanBeOnboarded », « Unsupported » et « InsufficientInfo ».|
 |osProcessor|Chaîne|Processeur de système d’exploitation. Utilisez plutôt la propriété osArchitecture.|
-|version|String|Version du système d’exploitation.|
+|version|Chaîne|Version du système d’exploitation.|
 |osBuild|Valeur nullable longue|Numéro de build du système d’exploitation.|
 |lastIpAddress|Chaîne|Dernière adresse IP sur la carte réseau locale sur [l’ordinateur](machine.md).|
 |lastExternalIpAddress|Chaîne|Dernière adresse IP via laquelle [l’ordinateur](machine.md) a accédé à Internet.|

@@ -12,15 +12,17 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 1482ca9587c5e09c33b909029fd2697745768d3d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: ec3cadaa674311f19a08d1455293649c84e84962
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578463"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233461"
 ---
 # <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de la navigation web
 
