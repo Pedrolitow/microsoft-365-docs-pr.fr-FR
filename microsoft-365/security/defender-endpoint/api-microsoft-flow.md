@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 0b90fd4ecade2f79cac895c61a4a7327de8aaf66
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: eea3d1b8adb1a89072b741dba6314e5287777e32
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701959"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151868"
 ---
 # <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Comment utiliser le connecteur Power Automate pour configurer un flux pour les événements
 
@@ -37,7 +39,7 @@ ms.locfileid: "67701959"
 
 L’automatisation des procédures de sécurité est une exigence standard pour chaque centre d’opérations de sécurité (SOC) moderne. Pour que les équipes SOC fonctionnent de la manière la plus efficace, l’automatisation est indispensable. Utilisez Microsoft Power Automate pour vous aider à créer des workflows automatisés et à créer une automatisation de procédure de bout en bout en quelques minutes. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela.  
 
-Utilisez cet article pour vous guider dans la création d’automatisations déclenchées par un événement, par exemple lorsqu’une nouvelle alerte est créée dans votre locataire. L’API Microsoft Defender dispose d’un connecteur Power Automate officiel avec de nombreuses fonctionnalités. 
+Utilisez cet article pour vous guider dans la création d’automatisations déclenchées par un événement, par exemple lorsqu’une nouvelle alerte est créée dans votre locataire. Microsoft Defender API dispose d’un connecteur Power Automate officiel avec de nombreuses fonctionnalités. 
 
 :::image type="content" source="images/api-flow-0.png" alt-text="Page Actions dans le portail Microsoft Defender 365" lightbox="images/api-flow-0.png" :::
 
@@ -54,9 +56,9 @@ L’exemple suivant montre comment créer un flux déclenché chaque fois qu’u
 
     :::image type="content" source="images/api-flow-1.png" alt-text="Volet Nouveau flux sous l’élément de menu Mes flux dans le portail Microsoft Defender 365" lightbox="images/api-flow-1.png":::
 
-3. Choisissez un nom pour votre flux, recherchez « Déclencheurs Microsoft Defender ATP » comme déclencheur, puis sélectionnez le nouveau déclencheur d’alertes.
+3. Choisissez un nom pour votre flux, recherchez « Microsoft Defender déclencheurs ATP » comme déclencheur, puis sélectionnez le nouveau déclencheur Alertes.
 
-    :::image type="content" source="images/api-flow-2.png" alt-text=" Section Choisir le déclencheur de votre flux dans le portail Microsoft Defender 365" lightbox="images/api-flow-2.png" :::
+    :::image type="content" source="images/api-flow-2.png" alt-text="Section Choisir le déclencheur de votre flux dans le portail Microsoft Defender 365" lightbox="images/api-flow-2.png" :::
 
 Vous disposez maintenant d’un flux qui est déclenché chaque fois qu’une nouvelle alerte se produit.
 
@@ -82,7 +84,7 @@ Le déclencheur d’alerte fournit uniquement l’ID d’alerte et l’ID de mac
 
 2. Vérifiez si la gravité de **l’alerte est égale à** Élevé.
 
-   Si oui, ajoutez l’action **Microsoft Defender ATP - Isoler l’ordinateur** avec l’ID d’ordinateur et un commentaire.
+   Si oui, ajoutez **l’Microsoft Defender ATP - Isoler l’action de l’ordinateur** avec l’ID d’ordinateur et un commentaire.
 
     :::image type="content" source="images/api-flow-5.png" alt-text="Volet Actions"  lightbox="images/api-flow-5.png":::
 

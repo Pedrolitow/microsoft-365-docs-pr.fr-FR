@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Playbook normatif pour le personnel SecOps afin de gérer Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2c22dd6e0d6fef3607bc51325d66691e2b9fc979
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0e21a534ef438396bb94221df992e8c343dbda4b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595760"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072264"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guide des opérations de sécurité Microsoft Defender pour Office 365
 
@@ -90,7 +90,7 @@ La gestion des faux positifs et faux négatifs et les personnages responsables s
 |Envoyez des faux positifs et des faux négatifs à Microsoft à l’adresse <https://security.microsoft.com/reportsubmission>.|Journalière|Fournissez des signaux à Microsoft en signalant des détections incorrectes d’e-mail, d’URL et de fichiers.|Équipe des opérations de sécurité|
 |Analysez les détails de la soumission de l’administrateur.|Journalière|Comprenez les facteurs suivants pour les soumissions que vous faites à Microsoft : <ul><li>Ce qui a provoqué le faux positif ou le faux négatif.</li><li>État de votre configuration Defender pour Office 365 au moment de la soumission.</li><li>Indique si vous devez apporter des modifications à votre configuration Defender pour Office 365.</li></ul>|Équipe des opérations de sécurité <br/><br/> Administration de la sécurité|
 |Ajoutez des entrées de bloc dans la liste d’autorisations/de blocs du locataire à l’adresse <https://security.microsoft.com/tenantAllowBlockList>.|Journalière|Utilisez la liste d’autorisation/de blocage du locataire pour ajouter des entrées de bloc pour les détections d’URL, de fichier ou d’expéditeur faux négatifs si nécessaire.|Équipe des opérations de sécurité|
-|Libérer les faux négatifs de la quarantaine.|Journalière|Une fois que le destinataire a confirmé que le message a été mis en quarantaine incorrectement, vous pouvez libérer ou approuver les demandes de mise en production pour les utilisateurs. <br/><br/> Pour contrôler ce que les utilisateurs peuvent faire pour leurs propres messages mis en quarantaine (y compris la mise en production ou la demande de mise en quarantaine), consultez [Stratégies de quarantaine](quarantine-policies.md).|Équipe des opérations de sécurité <br/><br/> Équipe de messagerie|
+|Libérer le faux positif de la mise en quarantaine.|Journalière|Une fois que le destinataire a confirmé que le message a été mis en quarantaine incorrectement, vous pouvez libérer ou approuver les demandes de mise en production pour les utilisateurs. <br/><br/> Pour contrôler ce que les utilisateurs peuvent faire pour leurs propres messages mis en quarantaine (y compris la mise en production ou la demande de mise en quarantaine), consultez [Stratégies de quarantaine](quarantine-policies.md).|Équipe des opérations de sécurité <br/><br/> Équipe de messagerie|
 
 ### <a name="review-phishing-and-malware-campaigns-that-resulted-in-delivered-mail"></a>Passer en revue les campagnes de hameçonnage et de programmes malveillants qui ont abouti à la remise du courrier
 

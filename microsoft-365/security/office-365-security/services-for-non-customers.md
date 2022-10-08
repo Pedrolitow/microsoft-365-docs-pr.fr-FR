@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8fb45e71d79458c6d990f226d8c2d81d7efe3681
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 428e1c0096811fa13674a47fec2cdf777642e12f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496744"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088462"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Services pour les non-clients qui envoient des messages à Microsoft 365
 
@@ -36,12 +36,12 @@ Cette vue d’ensemble fournit des informations sur les avantages que nous offro
 |---|---|
 |Ce contenu d'aide en ligne|Fournit : <ul><li>Point de départ pour toute question relative à la remise de communications aux utilisateurs EOP.</li><li>Inclut un guide en ligne simple avec nos stratégies et exigences.</li><li>Vue d’ensemble des filtres de courrier indésirable et des technologies d’authentification utilisées par Microsoft.</li><ul>|
 |[Support technique Microsoft](#microsoft-support)|Offre un support autonome et de transmission à une instance supérieure pour les problèmes de remise.|
-|[Portail de suppression d’adresses IP anti-courrier indésirable](#anti-spam-ip-delist-portal)|Un outil permettant d'envoyer une demande de suppression d'adresse IP de la liste. Avant d'envoyer cette demande, il incombe à l'expéditeur de s'assurer que tout autre courrier provenant de l'adresse IP en question n'est pas abusif ou malveillant.|
+|[Portail de suppression d’adresses IP anti-courrier indésirable](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
 |[Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Empêche l’envoi de courrier indésirable et de courrier indésirable à partir de Exchange Online et encombre l’Internet et votre système de messagerie.|
 
 ## <a name="microsoft-support"></a>Support technique Microsoft
 
-Microsoft offre plusieurs options de support pour les personnes ayant des problèmes d’envoi de courrier aux destinataires Microsoft 365. Nous vous recommandons d'effectuer les actions suivantes :
+Microsoft offre plusieurs options de support pour les personnes ayant des problèmes d’envoi de courrier aux destinataires Microsoft 365. Nous vous recommandons d’effectuer les actions suivantes :
 
 - Suivez les instructions fournies dans les rapports de non-remise que vous recevez.
 

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 9b30c6180bbdffa2538bb78f2a4d0a75bdc8266b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 551c29054747498a1728399b280381cfa7331f23
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701651"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157499"
 ---
 # <a name="alert-resource-type"></a>Type de ressource d’alerte
 
@@ -72,8 +74,8 @@ ms.locfileid: "67701651"
 |relatedUser|Chaîne|Détails de l’utilisateur liés à une alerte spécifique.|
 |Sévérité |Énum|Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified », « Informational », « Low », « Medium » et « High ».|
 |status|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown », « New », « InProgress » et « Resolved ».|
-|classification|Énumération nullable|Spécification de l’alerte. Les valeurs possibles sont : « Unknown », « FalsePositive », « TruePositive ».|
-|Détermination|Énumération nullable|Spécifie la détermination de l’alerte. Les valeurs possibles sont : « NotAvailable », « Apt », « Malware », « SecurityPersonnel », « SecurityTesting », « UnwantedSoftware », « Other ».|
+|classification|Énumération nullable|Spécification de l’alerte. Les valeurs possibles sont : `TruePositive`, `Informational, expected activity`et `FalsePositive`.|
+|Détermination|Énumération nullable|Spécifie la détermination de l’alerte. <p>Les valeurs de détermination possibles pour chaque classification sont les suivantes : <br><li> <b>Vrai positif</b> : `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware) et `Other` (Other). <li> <b>Activité informationnelle et attendue :</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence et `Other` (Autre). <li>  <b>Faux positif :</b> `Not malicious` (Clean) : envisagez de modifier le nom de l’énumération dans l’API publique en conséquence , `Not enough data to validate` (InsufficientData) et `Other` (Autre).|
 |category|String|Catégorie de l’alerte.|
 |detectionSource|Chaîne|Source de détection.|
 |threatFamilyName|Chaîne|Famille de menaces.|

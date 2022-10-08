@@ -1,5 +1,6 @@
 ---
 title: Contenu stocké dans des boîtes aux lettres Exchange Online
+description: Le contenu produit par les applications cloud dans Microsoft 365 est stocké ou associé à la boîte aux lettres Exchange Online d’un utilisateur. Ce contenu peut être recherché à l’aide des outils Microsoft eDiscovery.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,19 +10,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: ''
-description: Le contenu produit par les applications cloud dans Microsoft 365 est stocké ou associé à la boîte aux lettres Exchange Online d’un utilisateur. Ce contenu peut être recherché à l’aide des outils Microsoft eDiscovery.
-ms.openlocfilehash: 10caceac9bd5d3fdc499ea7132acecc4b72ff16f
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 47fef9022ecfc5ef2d3a36de637ab4e48c63358f
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67825761"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68121090"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenu stocké dans Exchange Online boîtes aux lettres pour eDiscovery
 

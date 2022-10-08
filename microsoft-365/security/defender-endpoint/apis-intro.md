@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: ee17892fcfed07b92bb8852f0c000174ab6037d3
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: bd2bc8dad27774609000e6c28921c8cfbc63e816
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812455"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151846"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Accéder aux API Microsoft Defender pour point de terminaison
 

@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: edcadbe618ccb34a41eb9f20682d2387c621aa51
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b2b7434ee3746fad883eec0a456b52f7a0e553e2
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480446"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68089210"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 

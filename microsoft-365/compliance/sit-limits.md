@@ -11,18 +11,19 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur le nombre d’instances et d’autres limites de type d’informations sensibles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a1f01e26fa36496affbc696befaba60effa6c08
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a09a2b81d04e706996cdee1fcd2a19a56f6aa990
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477994"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68117548"
 ---
 # <a name="sensitive-information-type-limits"></a>Limites des types d’informations sensibles
 

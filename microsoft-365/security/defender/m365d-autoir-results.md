@@ -17,19 +17,19 @@ ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: be8cdaf9912c9039f9eb12ae7555a0052e8e502e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 238c2f90c47338e9ece876bf0a9146bdfaa9427c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481391"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069664"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 

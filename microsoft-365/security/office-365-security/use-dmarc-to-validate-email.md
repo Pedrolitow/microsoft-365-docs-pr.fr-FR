@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a2544943b861b991f976957d3b15fd080e2706ab
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: c81843c9d8ed40cdd14d854e05f9d7b50de35229
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597689"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072302"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -87,7 +87,7 @@ Lorsque vous utilisez DMARC, le serveur de réception effectue aussi une vérifi
 
 ## <a name="what-is-a-dmarc-txt-record"></a>Qu’est-ce qu’un enregistrement TXT DMARC ?
 
-À l'instar des enregistrements DNS pour SPF, l'enregistrement pour DMARC est un enregistrement DNS au format texte (TXT) qui empêche l'usurpation d'identité et le hameçonnage. Vous publiez les enregistrements TXT DMARC dans le système DNS. Les enregistrements TXT DMARC valident l'origine des messages électroniques en comparant l'adresse IP de l'auteur de l'e-mail à celle du prétendu propriétaire du domaine d'expédition. L'enregistrement TXT DMARC identifie les serveurs de messagerie sortants autorisés. Les systèmes de messagerie électronique de destination peuvent alors vérifier si les messages reçus proviennent de serveurs de messagerie sortants autorisés.
+Like the DNS records for SPF, the record for DMARC is a DNS text (TXT) record that helps prevent spoofing and phishing. You publish DMARC TXT records in DNS. DMARC TXT records validate the origin of email messages by verifying the IP address of an email's author against the alleged owner of the sending domain. The DMARC TXT record identifies authorized outbound email servers. Destination email systems can then verify that messages they receive originate from authorized outbound email servers.
 
 Un enregistrement TXT DMARC de Microsoft se présente comme suit :
 
@@ -139,7 +139,7 @@ Pour obtenir les meilleurs résultats, vérifiez que votre enregistrement TXT SP
 
 Une fois que vous avez configuré SPF, vous devez configurer DKIM. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Si vous ne configurez pas DKIM et autorisez à la place Microsoft 365 à utiliser la configuration DKIM par défaut pour votre domaine, DMARC peut échouer. Cet échec peut se produire car la configuration DKIM par défaut utilise votre domaine *onmicrosoft.com* d’origine comme adresse *5321.MailFrom*, et non comme domaine *personnalisé* . Cela crée une incompatibilité entre les adresses *5321.MailFrom* et *5322.From* dans tous les e-mails envoyés depuis votre domaine.
 
-Si des expéditeurs tiers envoient des messages en votre nom et que les adresses 5321.MailFrom et 5322.From de ces messages ne correspondent pas, DMARC rejettera ce message électronique. Pour éviter ce problème, vous devez configurer DKIM en définissant spécifiquement cet expéditeur tiers pour votre domaine. Cela permet à Microsoft 365 d'authentifier les messages envoyés par ce service tiers. Toutefois, cela autorise également d'autres entités, par exemple, Yahoo, Gmail et Comcast, à vérifier le courrier électronique qui leur est envoyé par le tiers comme s'il s'agissait de messages envoyés par vous-même. C'est un avantage, car, d'un côté, cela renforce la confiance que les clients peuvent avoir en votre domaine, quel que soit l'endroit où se trouvent leurs boîtes aux lettres et, de l'autre, Microsoft 365 ne marquera pas un message comme spam pour cause d'usurpation d'identité, car cet e-mail aura été accepté par les vérifications d'authentification pour votre domaine.
+If you have third-party senders that send mail on your behalf and the mail they send has mismatched 5321.MailFrom and 5322.From addresses, DMARC will fail for that email. To avoid this, you need to set up DKIM for your domain specifically with that third-party sender. This allows Microsoft 365 to authenticate email from this 3rd-party service. However, it also allows others, for example, Yahoo, Gmail, and Comcast, to verify email sent to them by the third-party as if it was email sent by you. This is beneficial because it allows your customers to build trust with your domain no matter where their mailbox is located, and at the same time Microsoft 365 won't mark a message as spam due to spoofing because it passes authentication checks for your domain.
 
 Pour obtenir des instructions sur la configuration de DKIM pour votre domaine, y compris sur la façon de configurer DKIM pour les expéditeurs tiers pour leur permettre d'usurper votre domaine, consultez [Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé](use-dkim-to-validate-outbound-email.md).
 
@@ -153,13 +153,13 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 Où :
 
-- *domain* est le domaine que vous souhaitez protéger. Par défaut, l’enregistrement protège le courrier issu du domaine et de tous ses sous-domaines. Par exemple, si vous spécifiez \_dmarc.contoso.com, DMARC protège le courrier issu de ce domaine et tous ses sous-domaines, par exemple housewares.contoso.com ou plumbing.contoso.com.
+- *domain* is the domain you want to protect. By default, the record protects mail from the domain and all subdomains. For example, if you specify \_dmarc.contoso.com, then DMARC protects mail from the domain and all subdomains, such as housewares.contoso.com or plumbing.contoso.com.
 
-- La valeur *TTL* doit toujours être équivalente à une heure. L’unité utilisée pour TTL, que ce soit les heures (1 heure), les minutes (60 minutes) ou les secondes (3 600 secondes), varie selon le bureau d’enregistrement de votre domaine.
+- *TTL* should always be the equivalent of one hour. The unit used for TTL, either hours (1 hour), minutes (60 minutes), or seconds (3600 seconds), will vary depending on the registrar for your domain.
 
 - *pct=100* indique que cette règle doit être utilisée pour 100 % des e-mails.
 
-- *policy* indique la stratégie que vous souhaitez que le serveur de réception suive si un message est rejeté par DMARC. Vous pouvez définir la stratégie sur none (Aucune), quarantine (Mettre en quarantaine) ou reject (Rejeter).
+- *policy* specifies what policy you want the receiving server to follow if DMARC fails. You can set the policy to none, quarantine, or reject.
 
 Pour plus d'informations sur les options à utiliser, familiarisez-vous avec les concepts de la section [Meilleures pratiques pour la mise en œuvre de DMARC dans Microsoft 365](#best-practices-for-implementing-dmarc-in-microsoft-365).
 
@@ -197,7 +197,7 @@ Dans cet exemple d’enregistrement TXT DMARC : , vous pouvez voir l’adresse r
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Meilleures pratiques pour la mise en œuvre de DMARC dans Microsoft 365
 
-Vous pouvez implémenter DMARC progressivement sans que cela n’ait de répercussions sur le reste de votre flux de messagerie. Créez et mettez en œuvre un plan de déploiement qui suit la procédure ci-dessous. Effectuez d’abord chaque étape avec un sous-domaine, puis avec d’autres, et enfin avec le domaine de niveau supérieur de votre organisation avant de passer à l’étape suivante.
+You can implement DMARC gradually without impacting the rest of your mail flow. Create and implement a roll-out plan that follows these steps. Do each of these steps first with a sub-domain, then other sub-domains, and finally with the top-level domain in your organization before moving on to the next step.
 
 1. Contrôlez les effets de l’implémentation DMARC
 
@@ -211,13 +211,13 @@ Vous pouvez implémenter DMARC progressivement sans que cela n’ait de répercu
 
 3. Demandez que les systèmes de messagerie externes n’acceptent pas les messages qui échouent aux vérifications de DMARC
 
-    L'étape finale consiste à mettre en œuvre une stratégie de rejet. Une stratégie de rejet est un enregistrement TXT DMARC dont la stratégie est définie de manière à effectuer un rejet (p=reject). Lorsque vous effectuez cette opération, vous demandez aux récepteurs DMARC ne pas accepter les messages qui échouent aux tests DMARC.
+    The final step is implementing a reject policy. A reject policy is a DMARC TXT record that has its policy set to reject (p=reject). When you do this, you're asking DMARC receivers not to accept messages that fail the DMARC checks.
 
 4. Comment configurer DMARC pour le sous-domaine ?
 
    DMARC est implémenté en publiant une stratégie en tant qu’enregistrement TXT dans DNS et est hiérarchique (par exemple, une stratégie publiée pour contoso.com s’appliquera à sub.domain.contonos.com sauf si une stratégie différente est explicitement définie pour le sous-domaine). Cela est utile car les organisations peuvent spécifier un plus petit nombre d’enregistrements DMARC de haut niveau pour une couverture plus large. Veillez à configurer des enregistrements DMARC de sous-domaine explicites lorsque vous ne souhaitez pas que les sous-domaines héritent de l’enregistrement DMARC du domaine de premier niveau.
 
-   En outre, vous pouvez ajouter une stratégie de type caractère générique pour DMARC lorsque les sous-domaines ne doivent pas envoyer de message électronique, en ajoutant la valeur `sp=reject`. Par exemple :
+   Aussi pouvez-vous ajouter une stratégie de type générique pour DMARC lorsque les sous-domaines ne doivent pas envoyer de courrier électronique, en ajoutant la `sp=reject` valeur. Par exemple:
 
    ```text
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
@@ -266,7 +266,7 @@ L’ensemble ou la majorité des messages électroniques seront d’abord achemi
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 
-Vous voulez plus d’informations sur DMARC ? Ces ressources peuvent vous aider.
+Want more information about DMARC? These resources can help.
 
 - [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md) comprend la syntaxe et les champs d'en-tête utilisés par Microsoft 365 pour les vérifications DMARC.
 

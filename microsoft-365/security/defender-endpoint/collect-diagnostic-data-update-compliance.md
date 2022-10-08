@@ -1,7 +1,7 @@
 ---
 title: Collecter des données de diagnostic pour une mise à jour de la conformité de l’antivirus Microsoft Defender
 description: Utilisez un outil pour collecter des données afin de résoudre les problèmes de conformité des mises à jour lors de l’utilisation du complément d’évaluation antivirus Microsoft Defender.
-keywords: résolution des problèmes, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Microsoft Defender AV, Antivirus Microsoft Defender
+keywords: résoudre les problèmes, erreur, correction, mise à jour de conformité, oms, surveiller, signaler, Microsoft Defender AV, antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -16,16 +16,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0cf46c7cdb7b36d07fafb87e1ad5b114e66ec51b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ac85a1860fa86a05cf4aed6db6ced0e2ce84b904
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703179"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157433"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Collecter les données de diagnostic de conformité des mises à jour pour l’évaluation de l’antivirus Microsoft Defender
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Collecter les données de diagnostic de conformité de mise à jour pour Microsoft Defender’évaluation antivirus
 
 
 **S’applique à :**
@@ -33,9 +35,9 @@ ms.locfileid: "67703179"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Cet article explique comment collecter des données de diagnostic qui peuvent être utilisées par les équipes de support et d’ingénierie Microsoft pour aider à résoudre les problèmes que vous pouvez rencontrer lors de l’utilisation de la section Évaluation de l’antivirus Microsoft Defender dans le complément Mise à jour de conformité.
+Cet article explique comment collecter des données de diagnostic qui peuvent être utilisées par les équipes de support et d’ingénierie Microsoft pour aider à résoudre les problèmes que vous pouvez rencontrer lors de l’utilisation de la section Microsoft Defender’évaluation antivirus dans le complément Mise à jour de conformité.
 
-Avant de tenter ce processus, assurez-vous d’avoir lu [la résolution des problèmes liés aux rapports de l’Antivirus Microsoft Defender](troubleshoot-reporting.md), de respecter toutes les conditions préalables requises et d’effectuer d’autres étapes de dépannage suggérées.
+Avant de tenter ce processus, assurez-vous d’avoir lu [la résolution des problèmes Microsoft Defender rapports antivirus](troubleshoot-reporting.md), satisfait à toutes les conditions préalables requises et pris toutes les autres étapes de dépannage suggérées.
 
 Sur au moins deux appareils qui ne signalent pas ou ne s’affichent pas dans Update Compliance, obtenez le fichier de diagnostic .cab en effectuant les étapes suivantes :
 
@@ -73,4 +75,4 @@ Sur au moins deux appareils qui ne signalent pas ou ne s’affichent pas dans Up
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Résoudre les problèmes de création de rapports sur l’antivirus Microsoft Defender](troubleshoot-reporting.md)
+- [Résoudre les problèmes de création de rapports antivirus Microsoft Defender](troubleshoot-reporting.md)

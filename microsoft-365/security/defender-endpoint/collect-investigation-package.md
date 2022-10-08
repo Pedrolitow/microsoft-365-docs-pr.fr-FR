@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 31b8f1a7e4a4def4641d5330ad16d05318192828
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: abd9d821c60655c9df5f632dd45bed77772b16ac
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701893"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151626"
 ---
 # <a name="collect-investigation-package-api"></a>Collecter l’API de package d’investigation
 
@@ -65,6 +67,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.CollectForensics|'Collect
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Investigation des alertes » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ## <a name="http-request"></a>Requête HTTP
 

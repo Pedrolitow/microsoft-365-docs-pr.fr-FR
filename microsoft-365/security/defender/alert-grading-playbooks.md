@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 83935f8ad4fda1848a15bfe34599b80683ee95fe
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: bdb8acc0e3b56d59f6afb6fcbf8a3f6c4c538874
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477404"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68089144"
 ---
 # <a name="alert-grading-playbooks"></a>Playbooks de notation d’alerte
 

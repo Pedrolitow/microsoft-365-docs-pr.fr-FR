@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bf5e73b8e382d392673a8f82616089c8990ea2a8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5cac34b5ee0e6cc0d40755aef920040d621c49af
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695778"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157477"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Android
 
@@ -37,9 +39,12 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 >
 > Si les utilisateurs ne peuvent pas accéder au Play Store, l’application peut être mise à jour via le portail d’entreprise. 
 
+## <a name="microsoft-defender-for-endpoint-on-company-owned-personally-enabled-devices"></a>Microsoft Defender pour point de terminaison sur les appareils personnels appartenant à l’entreprise
+MDE est désormais en disponibilité générale sur les appareils AE COPE. Les entreprises peuvent intégrer des appareils en mode COPE et envoyer (push) MDE aux appareils de l’utilisateur via le [Centre de Endpoint Manager Administration Microsoft](https://endpoint.microsoft.com). Avec cette prise en charge, les appareils Android Enterprise COPE bénéficieront des fonctionnalités complètes de notre offre sur Android, notamment le hameçonnage et la protection web, l’analyse des programmes malveillants, la protection réseau (préversion) et la prévention des violations supplémentaires grâce à l’intégration avec Microsoft Endpoint Manager et l’accès conditionnel. Lisez l’annonce [ici](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
+
 ## <a name="privacy-controls"></a>Contrôles de confidentialité
 
-Microsoft Defender pour point de terminaison sur Android active les contrôles de confidentialité pour les administrateurs et les utilisateurs finaux. Cela inclut les contrôles pour les appareils inscrits (GPM) et non inscrits (MAM) (en préversion). Les administrateurs peuvent configurer la confidentialité dans le rapport d’alerte, tandis que les utilisateurs finaux peuvent configurer les informations partagées avec leur organisation. Pour plus d’informations, consultez [contrôles de confidentialité (GPM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) et [contrôles de confidentialité (MAM).](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls)
+Microsoft Defender pour point de terminaison sur Android active les contrôles de confidentialité pour les administrateurs et les utilisateurs finaux. Cela inclut les contrôles pour les appareils inscrits (GPM) et non inscrits (MAM). Les administrateurs peuvent configurer la confidentialité dans le rapport d’alerte, tandis que les utilisateurs finaux peuvent configurer les informations partagées avec leur organisation. Pour plus d’informations, consultez [contrôles de confidentialité (GPM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) et [contrôles de confidentialité (MAM).](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls)
 
 ## <a name="optional-permissions-and-disable-web-protection"></a>Autorisations facultatives et désactivation de la protection web
 
@@ -57,7 +62,7 @@ Il inclut plusieurs contrôles d’administration pour offrir de la flexibilité
 Si vous souhaitez participer à cette préversion publique, partagez votre ID de locataire avec nous sur networkprotection@microsoft.com. Pour plus d’informations, consultez [la protection réseau](/microsoft-365/security/defender-endpoint/android-configure).
 
 >[!NOTE]
->Microsoft Defender n’est plus pris en charge pour les versions inférieures à 1.0.3011.0302. Les utilisateurs sont invités à effectuer une mise à niveau vers les dernières versions pour sécuriser leurs appareils.
+>Microsoft Defender n’est plus prise en charge pour les versions inférieures à 1.0.3011.0302. Les utilisateurs sont invités à effectuer une mise à niveau vers les dernières versions pour sécuriser leurs appareils.
 Pour mettre à jour, les utilisateurs peuvent utiliser les étapes suivantes :
 >1. Dans votre profil professionnel, accédez à Managed Play Store.
 >2. Appuyez sur l’icône de profil en haut à droite, puis sélectionnez « Gérer les applications et l’appareil ».
@@ -65,9 +70,9 @@ Pour mettre à jour, les utilisateurs peuvent utiliser les étapes suivantes :
 >
 >Si vous rencontrez des problèmes, [envoyez des commentaires dans l’application](/security/defender-endpoint/android-support-signin#send-in-app-feedback).
 
-## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Microsoft Defender pour point de terminaison est désormais Microsoft Defender dans le Play Store
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Microsoft Defender pour point de terminaison est maintenant Microsoft Defender dans le Play Store
 
-Microsoft Defender pour point de terminaison est désormais disponible en tant que **Microsoft Defender** dans le play store. Avec cette mise à jour, l’application sera disponible en préversion pour **les consommateurs de la région des États-Unis**. En fonction de la façon dont vous vous connectez à l’application avec votre compte professionnel ou personnel, vous aurez accès aux fonctionnalités de Microsoft Defender pour point de terminaison ou aux fonctionnalités de Microsoft Defender pour les particuliers. Pour plus d’informations, consultez [ce blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) .
+Microsoft Defender pour point de terminaison est désormais disponible en **tant que Microsoft Defender** dans le play store. Avec cette mise à jour, l’application sera disponible en préversion pour **les consommateurs de la région des États-Unis**. En fonction de la façon dont vous vous connectez à l’application avec votre compte professionnel ou personnel, vous aurez accès aux fonctionnalités de Microsoft Defender pour point de terminaison ou aux fonctionnalités de Microsoft Defender pour les particuliers. Pour plus d’informations, consultez [ce blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) .
 
 ## <a name="vulnerability-management"></a>Gestion des vulnérabilités
 

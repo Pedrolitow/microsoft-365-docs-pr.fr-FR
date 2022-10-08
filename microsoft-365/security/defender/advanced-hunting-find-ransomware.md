@@ -17,17 +17,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
 - m365solution-ransomware
 - highpri
+- tier1
 ms.topic: article
-ms.openlocfilehash: e65655154cb326ddf6d4086b944afeb1a599aa64
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2df1a06e1148a496674dba7c5679859e0fb678d8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479034"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68089166"
 ---
 # <a name="hunt-for-ransomware"></a>Repérer des menaces de ransomware
 

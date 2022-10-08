@@ -5,23 +5,24 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
+- tier1
 search.appverid: MET150
 ms.reviewer: shlomiakirav
 description: Obtenez de l’aide ou contactez le support technique si vous rencontrez des problèmes avec Defender Entreprise.
-ms.openlocfilehash: dbb60d5c74b3662967690dd8bb89e5052f44225b
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+ms.openlocfilehash: d67c5f08e2c4e38ebb5183baed29dd5cb040b3e1
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600332"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68114272"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business"></a>Obtenir de l’aide et du support pour Microsoft Defender pour entreprises
 
@@ -37,6 +38,9 @@ ms.locfileid: "67600332"
 
 3. Sélectionnez un élément dans la liste des résultats. Si vous ne voyez pas la réponse à votre question, sélectionnez **Contacter le support** technique en bas du volet volant. Pour plus d’informations, consultez [Obtenir un support](../../admin/get-help-support.md)
 
+## <a name="resources-for-partners"></a>Ressources pour les partenaires
+
+Si vous êtes un partenaire Microsoft qui aide votre client avec des fonctionnalités de sécurité dans Defender entreprise, consultez [Microsoft Defender pour entreprises et les ressources des partenaires Microsoft](mdb-partners.md).
 
 ## <a name="see-also"></a>Voir aussi
 

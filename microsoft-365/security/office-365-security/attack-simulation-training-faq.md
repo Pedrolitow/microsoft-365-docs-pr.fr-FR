@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ''
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les considérations relatives au déploiement et poser fréquemment des questions sur la simulation d’attaque et la formation dans les organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f0a4bf3f408b48a4feb48ae4fad39cfe1e11420d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 75dfa3281785dc06906ed66384e63d3867f617b2
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480600"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088704"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
 
@@ -185,7 +185,7 @@ R : Non. Actuellement, les simulations entre locataires ne sont pas prises en c
 
 ### <a name="q-how-does-region-aware-delivery-work"></a>Q : Comment fonctionne la livraison tenant compte de la région ?
 
-R : La remise en fonction de la région utilise l’attribut TimeZone de la boîte aux lettres de l’utilisateur ciblé et la logique « pas avant » pour déterminer quand remettre le message. Prenons l’exemple du scénario suivant :
+R : La remise en fonction de la région utilise l’attribut TimeZone de la boîte aux lettres de l’utilisateur ciblé et la logique « pas avant » pour déterminer quand remettre le message. Par exemple, envisagez le scénario suivant :
 
 - À 7h00 dans le fuseau horaire pacifique (UTC-8), un administrateur crée et planifie une campagne pour démarrer à 9h00 le même jour.
 - UserA se trouve dans le fuseau horaire est (UTC-5).

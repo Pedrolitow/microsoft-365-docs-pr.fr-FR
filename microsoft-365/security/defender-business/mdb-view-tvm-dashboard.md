@@ -6,7 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -15,21 +15,22 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: b0b14216737eea49c7a5875b62d2ba93c1fc422e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: d3bfaa93e390a61d7c70e3763929247398a59481
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597953"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110598"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Utiliser votre tableau de bord de gestion des vulnérabilités dans Microsoft Defender pour entreprises
 
 Defender entreprise inclut un tableau de bord de gestion des vulnérabilités conçu pour économiser du temps et des efforts de votre équipe de sécurité. En plus de fournir un score d’exposition, ce tableau de bord vous permet d’afficher des informations sur les appareils exposés et de consulter les recommandations de sécurité pertinentes. Vous pouvez utiliser votre tableau de bord Gestion des vulnérabilités Defender pour :
 
 - Affichez votre score d’exposition, qui est associé aux appareils de votre entreprise.
-- Affichez vos principales recommandations de sécurité, telles que la résolution des problèmes de communication avec les appareils, l’activation de la protection pare-feu ou la mise à jour des définitions de l’Antivirus Microsoft Defender.
+- Affichez vos principales recommandations de sécurité, telles que la résolution des problèmes de communication avec les appareils, l’activation de la protection pare-feu ou la mise à jour Microsoft Defender définitions antivirus.
 - Visualisez les activités de remédiation, comme les fichiers qui ont été envoyés en quarantaine ou les vulnérabilités trouvées sur les appareils.
 
 ## <a name="vulnerability-management-features-and-capabilities"></a>Fonctionnalités et fonctionnalités de gestion des vulnérabilités

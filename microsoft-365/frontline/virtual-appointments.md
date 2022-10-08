@@ -12,19 +12,21 @@ description: Découvrez les fonctionnalités de Microsoft Teams pour la planific
 ms.localizationpriority: high
 ms.collection:
 - m365-frontline
+- highpri
 - m365solution-frontline
 - m365solution-scenario
+- highpri
 f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: e4047d051a12c34f18cf8d13de2f5827cdc5c426
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
-ms.translationtype: HT
+ms.openlocfilehash: cb026906491818709939c7c3796c5e8e76fc5b3b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100094"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68071466"
 ---
 # <a name="virtual-appointments-with-microsoft-teams"></a>Rendez-vous virtuels avec Microsoft Teams
 

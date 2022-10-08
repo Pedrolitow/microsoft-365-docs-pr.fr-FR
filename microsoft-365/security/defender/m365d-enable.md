@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-getstarted
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: cac5660ca9ee61aa11fffe61cc67e1d2a6594231
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: ebdba814c93ee4262c6d1861f4239281d5d3cef6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475975"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088880"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activer Microsoft 365 Defender
 
@@ -80,7 +81,7 @@ Microsoft 365 Defender stocke et traite les données au [même emplacement que c
 **Sélectionnez Besoin d’aide dans** le portail Microsoft 365 Defender pour contacter le support Microsoft concernant l’approvisionnement Microsoft 365 Defender dans un autre emplacement de centre de données.
 
 > [!NOTE]
-> Par le passé, Microsoft Defender pour point de terminaison automatiquement approvisionné dans les centres de données de l’Union européenne (UE) lorsqu’ils sont activés via Microsoft Defender pour le cloud. Microsoft 365 Defender provisionne automatiquement dans le même centre de données de l’UE pour les clients qui ont provisionné Defender pour point de terminaison de cette manière par le passé.
+> Par le passé, Microsoft Defender pour point de terminaison provisionnées automatiquement dans les centres de données de l’Union européenne (UE) lorsqu’ils sont activés via Microsoft Defender pour le cloud. Microsoft 365 Defender provisionne automatiquement dans le même centre de données de l’UE pour les clients qui ont provisionné Defender pour point de terminaison de cette manière par le passé.
 
 ### <a name="confirm-that-the-service-is-on"></a>Vérifiez que le service est activé
 

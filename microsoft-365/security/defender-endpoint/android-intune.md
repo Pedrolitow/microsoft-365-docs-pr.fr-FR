@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 389912b3df98ad23c553f3f24d2c55859116bc4c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 69dbf0631750f90c63d4d21b034e4594b2bfafa6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683800"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157543"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune
 
@@ -127,7 +128,7 @@ Suivez les étapes ci-dessous pour ajouter Microsoft Defender pour point de term
     Par défaut, Google Play géré sélectionne **Conserver approuvé lorsque l’application demande de nouvelles autorisations**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ffecfdda1c4df14148f1526c22cc0236.png" alt-text=" Page d’achèvement de la configuration des paramètres d’approbation dans le portail Microsoft Defender 365" lightbox="images/ffecfdda1c4df14148f1526c22cc0236.png":::
+    > :::image type="content" source="images/ffecfdda1c4df14148f1526c22cc0236.png" alt-text="Page d’achèvement de la configuration des paramètres d’approbation dans le portail Microsoft Defender 365" lightbox="images/ffecfdda1c4df14148f1526c22cc0236.png":::
 
 6. Une fois la sélection des autorisations de gestion effectuée, sélectionnez **Synchroniser** pour synchroniser Microsoft Defender pour point de terminaison avec votre liste d’applications.
 
@@ -152,8 +153,8 @@ Suivez les étapes ci-dessous pour ajouter Microsoft Defender pour point de term
 
         - Nom : Microsoft Defender pour point de terminaison.
         - Choisissez **Android Enterprise** comme plateforme.
-        - Choisissez **profil professionnel uniquement** en tant que type de profil.
-        - Cliquez sur **Sélectionner l’application**, choisissez **Microsoft Defender ATP**, sélectionnez **OK** , puis **Suivant**.
+        - Choisissez profil professionnel appartenant **à l’utilisateur uniquement** ou **profil professionnel entièrement géré, dédié et appartenant à l’entreprise uniquement** en tant que type de profil.
+        - Cliquez sur **Sélectionner l’application**, choisissez **Microsoft Defender**, sélectionnez **OK**, puis **Suivant**.
 
         :::image type="content" source="images/android-create-app.png" alt-text=" Capture d’écran du volet Détails de l’application associée." lightbox="images/android-create-app.png":::
      
@@ -164,7 +165,7 @@ Suivez les étapes ci-dessous pour ajouter Microsoft Defender pour point de term
        - **Octroi automatique** : approuve automatiquement sans en informer l’utilisateur.
        - **Refus automatique** : refuse automatiquement sans en informer l’utilisateur. 
 
-    1. Dans la page **Paramètres** , accédez à la section **Paramètres de configuration** et choisissez **« Utiliser le concepteur de configuration »** au format Paramètres de configuration. 
+    1. Accédez à la section **Paramètres de configuration** et choisissez **« Utiliser le concepteur de configuration »** au format Paramètres de configuration. 
 
        :::image type="content" alt-text="Image de la stratégie de configuration d’application de création d’application Android." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
 
@@ -182,12 +183,10 @@ Suivez les étapes ci-dessous pour ajouter Microsoft Defender pour point de term
 
     1. Dans la page **Vérifier + créer** qui vient ensuite, passez en revue toutes les informations, puis sélectionnez **Créer**.
 
-        La stratégie de configuration de l’application pour Defender pour point de terminaison en grantant automatiquement l’autorisation de stockage est désormais affectée au groupe d’utilisateurs sélectionné.
+        La stratégie de configuration d’application pour Defender pour point de terminaison est désormais affectée au groupe d’utilisateurs sélectionné.
 
-        > [!div class="mx-imgBorder"]
-        > :::image type="content" source="images/android-review-create.png" alt-text="Onglet Vérifier + créer dans la page Créer une stratégie de configuration d’application" lightbox="images/android-review-create.png":::
 
-10. Sélectionnez l’application **Microsoft Defender ATP** dans la liste \> Modifier **les affectations de propriétés** \>  \> **.**
+10. Sélectionnez **Microsoft Defender** application dans la liste \> **Modifier les affectations de propriétés** \>  \> **.**
 
     :::image type="content" source="images/mda-properties.png" alt-text="Option Modifier sur la page Propriétés" lightbox="images/mda-properties.png":::
 
@@ -269,14 +268,14 @@ Le profil de configuration de l’appareil est maintenant affecté au groupe d�
 
 ### <a name="set-up-microsoft-defender-in-personal-profile"></a>Configurer Microsoft Defender dans profil personnel
 
-Les administrateurs peuvent accéder au Centre d’administration [Microsoft Endpoint Management](https://endpoint.microsoft.com) pour configurer et configurer la prise en charge de Microsoft Defender dans des profils personnels en procédant comme suit :
+Les administrateurs peuvent accéder au Centre d’administration [Microsoft Endpoint Management](https://endpoint.microsoft.com) pour configurer et configurer Microsoft Defender la prise en charge des profils personnels en procédant comme suit :
 
 1. Accédez à **Applications> stratégies de configuration d’application** , puis cliquez sur **Ajouter**. Sélectionnez **Appareils gérés**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de l’ajout d’une stratégie de configuration d’application.](images/addpolicy.png)
 
-1. Entrez **le nom** et **la description** pour identifier de manière unique la stratégie de configuration. Sélectionnez **la plateforme « Android Enterprise »,** le type de profil **« Profil professionnel personnel uniquement »** et l’application ciblée **« Microsoft Defender** ».
+1. Entrez **le nom** et **la description** pour identifier de manière unique la stratégie de configuration. Sélectionnez **la plateforme « Android Enterprise »,** le type de profil **« Profil professionnel appartenant à** l’utilisateur uniquement » et l’application ciblée **« Microsoft Defender** ».
 
     > [!div class="mx-imgBorder"]
     > ![Image de la stratégie de configuration de nommage.](images/selectapp.png)
@@ -286,7 +285,7 @@ Les administrateurs peuvent accéder au Centre d’administration [Microsoft End
     > [!div class="mx-imgBorder"]
     > ![Image de la configuration d’un profil personnel.](images/addconfiguration.png)
 
-1. La configuration sélectionnée est répertoriée. Remplacez la **valeur de configuration par 1** pour activer les profils personnels de prise en charge de Microsoft Defender. Une notification s’affiche pour informer l’administrateur de la même chose. Cliquez sur **Suivant**.
+1. La configuration sélectionnée est répertoriée. Remplacez la **valeur de configuration par 1** pour activer Microsoft Defender prendre en charge les profils personnels. Une notification s’affiche pour informer l’administrateur de la même chose. Cliquez sur **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de la modification de la valeur de configuration.](images/changeconfigvalue.png)
@@ -300,7 +299,7 @@ Les administrateurs peuvent également configurer **des contrôles de confidenti
 
 Les organisations peuvent communiquer avec leurs utilisateurs pour protéger leur profil personnel avec Microsoft Defender sur leurs appareils BYOD inscrits.
 
-- Prérequis : Microsoft Defender doit déjà être installé et actif dans le profil professionnel pour activer Microsoft Defender dans des profils personnels.
+- Prérequis : Microsoft Defender doit déjà être installé et actif dans le profil professionnel pour être activé Microsoft Defender dans les profils personnels.
 
 ### <a name="to-complete-onboarding-a-device"></a>Pour terminer l’intégration d’un appareil
 

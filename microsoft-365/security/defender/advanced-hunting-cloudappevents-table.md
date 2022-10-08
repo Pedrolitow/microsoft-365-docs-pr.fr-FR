@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 8892a672cb9fc77b4cf606f32581c1928decc45f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: ef7518ee3c6663e8ebc542d1fed8937cb4d5ed3d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470140"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68089562"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 

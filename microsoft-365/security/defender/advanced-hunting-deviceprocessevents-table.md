@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 5f250c18a8bacb728143ada220a09525f4f1f6b1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b28fb5b05ae0bfdb34d8793e1e0f63814c4dd597
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476833"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68089496"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -101,7 +103,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessSignerType` | `string` | Type de signataire de fichier du processus (fichier image) qui a initié l’événement |
 | `InitiatingProcessSignatureStatus` | `string` | Informations sur l’état de signature du processus (fichier image) qui a initié l’événement |
 | `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
-| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
+| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Protection d'application pour isoler l’activité du navigateur |
 | `AdditionalFields` | `string` | Informations supplémentaires sur l’événement au format tableau JSON |
 
 

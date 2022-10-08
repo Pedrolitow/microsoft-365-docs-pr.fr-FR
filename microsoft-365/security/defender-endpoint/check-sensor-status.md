@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 04/24/2018
 search.appverid: met150
-ms.openlocfilehash: 353dad94d14ccfd807a946161d3879815526899d
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 4763b5dd37510b1d63fac67dd764fc2b0a0f135a
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799085"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157455"
 ---
 # <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Vérifier l’état d’intégrité du capteur à Microsoft Defender pour point de terminaison
 

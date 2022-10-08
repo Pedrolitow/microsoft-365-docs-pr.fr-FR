@@ -1,6 +1,6 @@
 ---
-title: Utiliser la ligne de commande pour gérer l’antivirus Microsoft Defender
-description: Exécutez les analyses de l’Antivirus Microsoft Defender et configurez la protection de nouvelle génération avec un utilitaire de ligne de commande dédié.
+title: Utiliser la ligne de commande pour gérer Microsoft Defender Antivirus
+description: Exécutez Microsoft Defender analyses antivirus et configurez la protection de nouvelle génération avec un utilitaire de ligne de commande dédié.
 keywords: exécuter l’analyse windows defender, exécuter l’analyse antivirus à partir de la ligne de commande, exécuter l’analyse windows defender à partir de la ligne de commande, mpcmdrun, defender
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -14,16 +14,18 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: c8855237c4864e58d53591e4ae88e84a67495c9d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 57fc2406410b3a24394ae6a11d5c06b0e6110418
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702355"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68153254"
 ---
-# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer l’antivirus Microsoft Defender avec l’outil en ligne de commande mpcmdrun.exe
+# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer Microsoft Defender Antivirus avec l’outil en ligne de commande mpcmdrun.exe
 
 **S’applique à :**
 
@@ -33,10 +35,10 @@ ms.locfileid: "67702355"
 **Plateformes**
 - Windows
 
-Vous pouvez effectuer différentes fonctions dans l’Antivirus Microsoft Defender à l’aide de l’outil en ligne de commande dédié **mpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser les tâches de l’Antivirus Microsoft Defender. Vous pouvez trouver l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Exécutez-le à partir d’une invite de commandes.
+Vous pouvez effectuer différentes fonctions dans Microsoft Defender Antivirus à l’aide de l’outil en ligne de commande dédié **mpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Microsoft Defender tâches antivirus. Vous pouvez trouver l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Exécutez-le à partir d’une invite de commandes.
 
 > [!TIP]
-> Vous devrez peut-être ouvrir une version au niveau de l’administrateur de l’invite de commandes. Lorsque vous **recherchez l’invite de commandes** dans le menu Démarrer, choisissez **Exécuter en tant qu’administrateur**. Si vous exécutez une version mise à jour de la plateforme anti-programme malveillant Microsoft Defender, exécutez-la `MpCmdRun` à partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. Pour plus d’informations sur la plateforme anti-programme malveillant, consultez [les mises à jour et les lignes de base de l’Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
+> Vous devrez peut-être ouvrir une version au niveau de l’administrateur de l’invite de commandes. Lorsque vous **recherchez l’invite de commandes** dans le menu Démarrer, choisissez **Exécuter en tant qu’administrateur**. Si vous exécutez une version mise à jour Microsoft Defender plateforme anti-programme malveillant, exécutez-la `MpCmdRun` à partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. Pour plus d’informations sur la plateforme anti-programme malveillant, consultez [Microsoft Defender mises à jour antivirus et les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 L’utilitaire MpCmdRun utilise la syntaxe suivante :
 
@@ -78,7 +80,7 @@ Le tableau suivant répertorie les erreurs courantes qui peuvent se produire lor
 
 |Message d’erreur|Raison possible|
 |---|---|
-|**ValidateMapsConnection a échoué (800106BA)** ou **0x800106BA**|Le service Antivirus Microsoft Defender est désactivé. Activez le service et réessayez. Si vous avez besoin d’aide pour réactiver l’Antivirus Microsoft Defender, consultez [Réinstaller/activer l’antivirus Microsoft Defender sur vos points de terminaison](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **CONSEIL** : Dans Windows 10 1909 ou version antérieure, et Windows Server 2019 ou version antérieure, le service était auparavant appelé *Antivirus Windows Defender*.|
+|**ValidateMapsConnection a échoué (800106BA)** ou **0x800106BA**|Le service antivirus Microsoft Defender est désactivé. Activez le service et réessayez. Si vous avez besoin d’aide pour réactiver Microsoft Defender Antivirus, consultez [Réinstaller/activer Microsoft Defender Antivirus sur vos points de terminaison](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **CONSEIL** : Dans Windows 10 1909 ou version antérieure, et Windows Server 2019 ou version antérieure, le service était auparavant appelé *antivirus Windows Defender*.|
 |**0x80070667**|Vous exécutez la `-ValidateMapsConnection` commande à partir d’un ordinateur Windows 10 version 1607 ou ultérieure, ou Windows Server 2016 ou une version antérieure. Exécutez la commande à partir d’un ordinateur qui est Windows 10 version 1703 ou ultérieure, ou Windows Server 2019 ou version ultérieure.|
 |**MpCmdRun n’est pas reconnu comme une commande interne ou externe, un programme opérable ou un fichier batch.**|L’outil doit être exécuté à partir de l’un ou de l’autre `%ProgramFiles%\Windows Defender` ou `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` (où `2012.4-0` peut différer étant donné que les mises à jour de la plateforme sont mensuelles à l’exception de mars)|
 |**ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070005 httpcode=450)**|La commande a été tentée en utilisant des privilèges insuffisants. Utilisez l’invite de commandes (cmd.exe) en tant qu’administrateur.|

@@ -1,8 +1,8 @@
 ---
-title: Comment s’abonner à Microsoft Defender Experts for Hunting
+title: Comment s’abonner à Microsoft Defender Experts pour la chasse
 ms.reviewer: ''
 description: Si vous débutez avec Microsoft 365 Defender et Defender Experts for Hunting, c’est ainsi que vous vous abonnez
-keywords: service de chasse aux menaces managée, repérage de menaces managée, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft, MTE-TAN, notification d’attaque ciblée, notifications d’experts defender, notifications d’attaque de point de terminaison, experts Microsoft Defender pour la chasse, la chasse aux menaces et l’analyse.
+keywords: service de repérage des menaces managées, repérage des menaces managées, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft, MTE-TAN, notification d’attaque ciblée, notifications d’experts defender, notifications d’attaque de point de terminaison, Microsoft Defender experts pour la chasse, la chasse aux menaces et l’analyse.
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -15,18 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: e8aa0cab5f3b7c756b2b4baf5cab046cf35287e0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8b13a000f40cc7728716b6121767996b305f2db6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684042"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088924"
 ---
-# <a name="start-using-microsoft-defender-experts-for-hunting"></a>Commencer à utiliser microsoft Defender Experts pour la chasse
+# <a name="start-using-microsoft-defender-experts-for-hunting"></a>Commencer à utiliser Microsoft Defender Experts pour la chasse
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -127,11 +127,11 @@ L’option **Demander aux experts Defender** est disponible à plusieurs endroit
 - Nous avons récemment vu un billet de blog sur une menace qui cible notre industrie. Pouvez-vous nous aider à comprendre quelle protection Microsoft 365 Defender fournit contre cet acteur de menace ?
 - Nous avons récemment observé une campagne de hameçonnage menée contre notre organisation. Pouvez-vous nous dire s’il s’agissait spécifiquement de notre entreprise ou verticalement?
 
-### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Microsoft Defender Experts for Hunting alert communications
+### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Microsoft Defender experts pour les communications d’alerte de chasse
 
 - Votre équipe de réponse aux incidents peut-elle nous aider à traiter la notification Defender Experts que nous avons obtenue ?
-- Nous avons reçu cette notification defender experts de Microsoft Defender Experts pour la chasse. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment pouvons-nous contenir l’incident ?
-- Nous avons reçu une notification defender experts de Microsoft Defender Experts pour la chasse. Quelles données pouvez-vous nous fournir que nous pouvons transmettre à notre équipe de réponse aux incidents ?
+- Nous avons reçu cette notification defender experts de Microsoft Defender experts pour la chasse. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment pouvons-nous contenir l’incident ?
+- Nous avons reçu une notification defender experts de Microsoft Defender experts pour la chasse. Quelles données pouvez-vous nous fournir que nous pouvons transmettre à notre équipe de réponse aux incidents ?
 
 ### <a name="next-step"></a>Étape suivante
 

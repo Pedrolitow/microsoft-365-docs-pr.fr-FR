@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez en tant qu’expéditeur invité comment augmenter la possibilité de remettre des e-mails aux utilisateurs dans Microsoft 365. Découvrez également comment signaler les courriers indésirables & les tentatives d’hameçonnage en tant qu’invité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fb7ffcbe016056a20aaeca761c2991c362a2482b
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 39bfe2ebe7c05d5e2b95e068e0431144cdf38a07
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497222"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072236"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envoi de courrier à Microsoft 365
 

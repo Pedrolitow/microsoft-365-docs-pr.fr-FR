@@ -11,14 +11,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 mesures pour les recommandations en matière de performances réseau
-ms.openlocfilehash: 70ece78add656a5482885a2cb020d2108f7f9811
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 5f720d0bfa9a37880ac62fe194e4e729e344e8ff
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670408"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169362"
 ---
 # <a name="office-365-measurements-for-network-performance-recommendations"></a>Office 365 mesures pour les recommandations en matière de performances réseau

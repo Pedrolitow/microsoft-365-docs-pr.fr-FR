@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: cab16efa7f5118a4b9fce44713536dc043dd6b7b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a262927b45a1f24f0f3aa93de9521a1d9ed0d124
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482381"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069686"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Résoudre les faux positifs ou les faux négatifs dans Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Les sections suivantes décrivent comment effectuer ces tâches.
 
 |Scénario |Service |Procédure |
 |--------|--------|--------|
-|- Une alerte est déclenchée par une utilisation légitime <br/>- Une alerte est inexacte    |[Microsoft Defender for Cloud Apps](/cloud-app-security)<br/> ou <br/>[Protection contre les menaces Azure](/azure/security/fundamentals/threat-detection)         |[Gérer les alertes dans le portail Defender pour Cloud Apps](/cloud-app-security/managing-alerts)         |
+|- Une alerte est déclenchée par une utilisation légitime <br/>- Une alerte est inexacte    |[Microsoft Defender for Cloud Apps](/cloud-app-security)<br/> or <br/>[Protection contre les menaces Azure](/azure/security/fundamentals/threat-detection)         |[Gérer les alertes dans le portail Defender pour Cloud Apps](/cloud-app-security/managing-alerts)         |
 |Un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sécurisé|[Microsoft Defender pour point de terminaison](/windows/security/threat-protection) |[Créer un indicateur personnalisé avec une action « Autoriser »](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annuler une action de correction qui a été effectuée sur un appareil

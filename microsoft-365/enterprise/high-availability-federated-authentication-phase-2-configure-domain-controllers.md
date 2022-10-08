@@ -6,27 +6,29 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Résumé : Configurez les contrôleurs de domaine et le serveur de synchronisation d’annuaires pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 765ccb0aaf2611947f505b53b5689009dadd5148
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 6d6b955b88385c3d44eebde0ab6bfd7ba6953f39
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940687"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186654"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
 Dans cette phase de déploiement de la haute disponibilité pour l’authentification fédérée Microsoft 365 dans les services d’infrastructure Azure, vous configurez deux contrôleurs de domaine et le serveur de synchronisation d’annuaires dans le réseau virtuel Azure. Les requêtes web client d’authentification peuvent ensuite être authentifiées dans le réseau virtuel Azure, plutôt que d’envoyer ce trafic d’authentification sur le VPN de site à site à votre réseau local.
   
 > [!NOTE]
-> Les services de fédération Active Directory (AD FS) ne peuvent pas utiliser Azure Active Directory (Azure AD) comme substitut aux contrôleurs de domaine Active Directory Domain Services (AD DS). 
+> Services ADFS (AD FS) ne peut pas utiliser Azure Active Directory (Azure AD) comme substitut aux contrôleurs de domaine services de domaine Active Directory (AD DS). 
   
 Vous devez terminer cette phase avant de passer à la [phase 3 : Configurer les serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Consultez [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
   
@@ -65,7 +67,7 @@ Le bloc de commandes Azure PowerShell suivant permet de créer les machines vir
 Rappelez-vous que vous avez défini les tables R, V, S, I et A dans [la phase 1 : Configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Consultez [Prise en main d’Azure PowerShell](/powershell/azure/get-started-azureps). 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [Prise en main de Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Lorsque vous avez indiqué toutes les valeurs correctes, exécutez le bloc résultant à l’invite de commandes Azure PowerShell ou dans l’environnement d'écriture de scripts intégré de Windows PowerShell (ISE) sur votre ordinateur local.
   
@@ -144,11 +146,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Étant donné que ces machines virtuelles sont destinées à une application intranet, aucune adresse IP publique ni étiquette de nom de domaine DNS ne leur est affectée et elles ne sont pas connectées à Internet. Toutefois, cela signifie également que vous ne pouvez pas vous y connecter à partir du portail Azure. L’option de **connexion** n’est pas disponible lorsque vous affichez les propriétés de la machine virtuelle. Utilisez l’accessoire de connexion Bureau à distance ou un autre outil de Bureau à distance pour vous connecter à la machine virtuelle à l’aide de son adresse IP privée ou de son nom DNS intranet.
+> Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.
   
 ## <a name="configure-the-first-domain-controller"></a>Configurer le premier contrôleur de domaine
 
-Utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance pour la machine virtuelle du premier contrôleur de domaine. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
+Use the remote desktop client of your choice and create a remote desktop connection to the first domain controller virtual machine. Use its intranet DNS or computer name and the credentials of the local administrator account.
   
 Ensuite, ajoutez le disque de données supplémentaire au premier contrôleur de domaine avec cette commande à partir d’une invite de commandes Windows PowerShell **sur la première machine virtuelle du contrôleur de domaine** :
   
@@ -158,7 +160,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 
 Ensuite, testez la connectivité du premier contrôleur de domaine vers des emplacements du réseau de votre organisation à l'aide de la commande **ping** pour effectuer un test ping des noms et des adresses IP des ressources du réseau de votre organisation.
   
-Cette procédure permet de vérifier que la résolution de noms DNS fonctionne correctement (que la machine virtuelle est configurée correctement avec les serveurs DNS locaux) et que des paquets peuvent être envoyés vers et depuis le réseau virtuel intersites. Si ce test de base échoue, contactez votre service informatique pour résoudre les problèmes de résolution de noms DNS et de livraison de paquets.
+This procedure ensures that DNS name resolution is working correctly (that the virtual machine is correctly configured with on-premises DNS servers) and that packets can be sent to and from the cross-premises virtual network. If this basic test fails, contact your IT department to troubleshoot the DNS name resolution and packet delivery issues.
   
 Ensuite, à partir de l’invite de commandes Windows PowerShell sur le premier contrôleur de domaine, exécutez les commandes suivantes :
   
@@ -169,11 +171,11 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 ```
 
-Vous êtes invité à fournir les informations d’identification d’un compte Administrateur de domaine. L’ordinateur redémarre.
+You will be prompted to supply the credentials of a domain administrator account. The computer will restart.
   
 ## <a name="configure-the-second-domain-controller"></a>Configurer le deuxième contrôleur de domaine
 
-Utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance pour la machine virtuelle du deuxième contrôleur de domaine. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
+Use the remote desktop client of your choice and create a remote desktop connection to the second domain controller virtual machine. Use its intranet DNS or computer name and the credentials of the local administrator account.
   
 Ensuite, vous devez ajouter le disque de données supplémentaire au deuxième contrôleur de domaine avec cette commande à partir d’une invite de commandes Windows PowerShell **sur la deuxième machine virtuelle du contrôleur de domaine** :
   
@@ -191,7 +193,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 ```
 
-Vous êtes invité à fournir les informations d’identification d’un compte Administrateur de domaine. L’ordinateur redémarre.
+Vous êtes invité à fournir les informations d'identification d'un compte Administrateur de domaine. L'ordinateur redémarre.
   
 Ensuite, vous devez mettre à jour les serveurs DNS pour votre réseau virtuel afin que Azure affecte aux machines virtuelles les adresses IP des deux nouveaux contrôleurs de domaine à utiliser comme serveurs DNS. Renseignez les variables, puis exécutez ces commandes à partir d’une invite de commandes Windows PowerShell sur votre ordinateur local :
   
@@ -217,9 +219,9 @@ Restart-AzVM -ResourceGroupName $adrgName -Name $firstDCName
 Restart-AzVM -ResourceGroupName $adrgName -Name $secondDCName
 ```
 
-Notez que nous redémarrons les deux contrôleurs de domaine afin qu’ils ne soient pas configurés avec les serveurs DNS locaux comme serveurs DNS. Comme ils sont tous les deux des serveurs DNS, ils ont été automatiquement configurés avec les serveurs DNS locaux comme redirecteurs DNS lorsqu’ils ont été promus comme contrôleurs de domaine.
+Note that we restart the two domain controllers so that they are not configured with the on-premises DNS servers as DNS servers. Because they are both DNS servers themselves, they were automatically configured with the on-premises DNS servers as DNS forwarders when they were promoted to domain controllers.
   
-Ensuite, nous devons créer un site de réplication Active Directory pour vérifier que les serveurs du réseau virtuel Azure utilisent les contrôleurs de domaine locaux. Connectez-vous à l’un des contrôleurs de domaine avec un compte Administrateur de domaine et exécutez les commandes suivantes à partir d’une invite de commandes Windows PowerShell au niveau de l’administrateur :
+Next, we need to create an Active Directory replication site to ensure that servers in the Azure virtual network use the local domain controllers. Connect to either domain controller with a domain administrator account and run the following commands from an administrator-level Windows PowerShell prompt:
   
 ```powershell
 $vnet="<Table V - Item 1 - Value column>"
@@ -232,7 +234,7 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 Utilisez le client bureau à distance de votre choix et créez une connexion bureau à distance à la machine virtuelle du serveur de synchronisation d’annuaires. Utilisez son nom d'ordinateur ou son nom DNS intranet et les informations d'identification du compte Administrateur local.
   
-Ensuite, joignez-le au domaine AD DS approprié avec ces commandes à l’invite Windows PowerShell.
+Ensuite, joignez-le au domaine AD DS approprié avec ces commandes à l’invite de Windows PowerShell.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"

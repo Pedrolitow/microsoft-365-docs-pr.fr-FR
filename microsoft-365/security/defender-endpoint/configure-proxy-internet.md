@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
-ms.topic: article
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 4ec9f997cca5b118745a82ea11e7557383303ba5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7d76deeb278e460a2518cb922b0a087273e16d6b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702927"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186588"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -67,7 +67,7 @@ Configurez un capteur de détection et de réponse de point de terminaison (EDR)
 > [!NOTE]
 > Lorsque vous utilisez cette option sur Windows 10, ou Windows 11, ou Windows Server 2019 ou Windows Server 2022, il est recommandé de disposer des correctifs cumulatifs et de build suivants (ou ultérieurs) :
 >
-> - Windows 11
+> - Windows 11
 > - Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 -<https://support.microsoft.com/kb/5001384>
 > - Windows 10, version 1909 -<https://support.microsoft.com/kb/4601380>
 > - Windows 10, version 2004 -<https://support.microsoft.com/kb/4601382>
@@ -96,7 +96,7 @@ Le proxy statique est configurable via une stratégie de groupe (GP), les deux p
 | Configurer les expériences et la télémétrie des utilisateurs connectés | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Par exemple : ```10.0.0.6:8080``` (REG_SZ) |
 
 > [!NOTE]
-> Si vous utilisez le paramètre « TelemetryProxyServer » sur des appareils qui sont autrement **entièrement hors connexion**, il est recommandé d’ajouter le paramètre `PreferStaticProxyForHttpRequest` de Registre supplémentaire avec la valeur .`1`<br>
+> Si vous utilisez le paramètre « TelemetryProxyServer » sur des appareils qui sont autrement **complètement hors connexion**, ce qui signifie que le système d’exploitation ne peut pas se connecter pour la liste de révocation de certificats en ligne ou Windows Update, il est recommandé d’ajouter le paramètre `PreferStaticProxyForHttpRequest` de Registre supplémentaire avec la valeur .`1`<br>
 > L’emplacement du chemin d’accès au Registre parent pour « PreferStaticProxyForHttpRequest » est « HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection »<br>
 > La commande suivante peut être utilisée pour insérer la valeur de Registre à l’emplacement approprié :<br>
 > ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
@@ -104,17 +104,17 @@ Le proxy statique est configurable via une stratégie de groupe (GP), les deux p
 
 
 
-## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configurer un proxy statique pour l’antivirus Microsoft Defender
+## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configurer un proxy statique pour Microsoft Defender Antivirus
 
-La [protection fournie par le cloud de](cloud-protection-microsoft-defender-antivirus.md) l’Antivirus Microsoft Defender offre une protection quasi instantanée et automatisée contre les menaces nouvelles et émergentes. Notez que la connectivité est requise pour [les indicateurs personnalisés](manage-indicators.md) lorsque l’antivirus Defender est votre solution anti-programme malveillant active. Pour [EDR en mode bloc](edr-in-block-mode.md) a la solution anti-programme malveillant principale lors de l’utilisation d’une solution non-Microsoft.
+Microsoft Defender [Protection antivirus fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md) fournit une protection quasi instantanée et automatisée contre les menaces nouvelles et émergentes. Notez que la connectivité est requise pour [les indicateurs personnalisés](manage-indicators.md) lorsque l’antivirus Defender est votre solution anti-programme malveillant active. Pour [EDR en mode bloc](edr-in-block-mode.md) a la solution anti-programme malveillant principale lors de l’utilisation d’une solution non-Microsoft.
 
 Configurez le proxy statique à l’aide des stratégie de groupe disponibles dans les modèles d’administration :
 
-1. **Modèles d’administration > composants Windows > l’antivirus Microsoft Defender > Définir un serveur proxy pour la connexion au réseau**. 
+1. **Modèles d’administration > composants Windows > Microsoft Defender antivirus > Définir un serveur proxy pour la connexion au réseau**. 
 
-2. Définissez-le sur **Activé** et définissez le serveur proxy. Notez que l’URL doit avoir http:// ou https://. Pour les versions prises en charge pour https://, consultez [Gérer les mises à jour de l’Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
+2. Définissez-le sur **Activé** et définissez le serveur proxy. Notez que l’URL doit avoir http:// ou https://. Pour les versions prises en charge pour https://, consultez [Gérer les mises à jour antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Serveur proxy pour l’antivirus Microsoft Defender" lightbox="images/proxy-server-mdav.png":::
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Serveur proxy pour Microsoft Defender Antivirus" lightbox="images/proxy-server-mdav.png":::
 
 3. Sous la clé de Registre, la stratégie `HKLM\Software\Policies\Microsoft\Windows Defender`définit la valeur `ProxyServer` de Registre comme REG_SZ. 
 
@@ -128,11 +128,11 @@ Configurez le proxy statique à l’aide des stratégie de groupe disponibles da
 
 > [!NOTE]
 >
-> Pour des raisons de résilience et pour la nature en temps réel de la protection fournie par le cloud, l’Antivirus Microsoft Defender met en cache le dernier proxy actif connu. Vérifiez que votre solution proxy n’effectue pas d’inspection SSL. Cela va interrompre la connexion cloud sécurisée. 
+> Pour des raisons de résilience et pour la nature en temps réel de la protection fournie par le cloud, Microsoft Defender Antivirus met en cache le dernier proxy actif connu. Vérifiez que votre solution proxy n’effectue pas d’inspection SSL. Cela va interrompre la connexion cloud sécurisée. 
 >
-> L’Antivirus Microsoft Defender n’utilise pas le proxy statique pour se connecter à Windows Update ou à Microsoft Update pour télécharger les mises à jour. Au lieu de cela, il utilise un proxy à l’échelle du système s’il est configuré pour utiliser Windows Update, ou la source de mise à jour interne configurée en fonction de [l’ordre de secours configuré](manage-protection-updates-microsoft-defender-antivirus.md). 
+> Microsoft Defender Antivirus n’utilise pas le proxy statique pour se connecter à Windows Update ou Microsoft Update pour télécharger les mises à jour. Au lieu de cela, il utilise un proxy à l’échelle du système s’il est configuré pour utiliser Windows Update, ou la source de mise à jour interne configurée en fonction de [l’ordre de secours configuré](manage-protection-updates-microsoft-defender-antivirus.md). 
 >
-> Si nécessaire, vous pouvez utiliser **des modèles d’administration > composants Windows > l’antivirus Microsoft Defender > définir la configuration automatique du proxy (.pac)** pour la connexion au réseau. Si vous devez configurer des configurations avancées avec plusieurs proxys, utilisez des modèles d’administration **> composants Windows > l’Antivirus Microsoft Defender > Définir des adresses** pour contourner le serveur proxy et empêcher l’Antivirus Microsoft Defender d’utiliser un serveur proxy pour ces destinations. 
+> Si nécessaire, vous pouvez utiliser **des modèles d’administration > composants Windows > Microsoft Defender Antivirus > Définir la configuration automatique du proxy (.pac)** pour la connexion au réseau. Si vous devez configurer des configurations avancées avec plusieurs proxys, utilisez des modèles d’administration **> composants Windows > Microsoft Defender Antivirus > Définir des adresses** pour contourner le serveur proxy et empêcher Microsoft Defender Antivirus d’utiliser un serveur proxy pour ces destinations. 
 >
 > Vous pouvez utiliser PowerShell avec l’applet `Set-MpPreference` de commande pour configurer ces options : 
 >
@@ -241,7 +241,7 @@ Les caractères génériques (\*) utilisés dans \*les points de terminaison d�
 Le \*point de terminaison d’URL .blob.core.windows.net peut être remplacé par les URL indiquées dans la section « Règle de pare-feu : \*.blob.core.windows.net » des résultats du test.
 
 > [!NOTE]
-> Dans le cas de l’intégration via Microsoft Defender pour cloud, plusieurs espaces de travail peuvent être utilisés. Vous devez effectuer la procédure TestCloudConnection.exe sur l’ordinateur intégré à partir de chaque espace de travail (pour déterminer s’il y a des modifications apportées aux URL *.blob.core.windows.net entre les espaces de travail).
+> Dans le cas de l’intégration via Microsoft Defender pour le cloud, plusieurs espaces de travail peuvent être utilisés. Vous devez effectuer la procédure TestCloudConnection.exe sur l’ordinateur intégré à partir de chaque espace de travail (pour déterminer s’il y a des modifications apportées aux URL *.blob.core.windows.net entre les espaces de travail).
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Vérifier la connectivité du client aux URL de service Microsoft Defender pour point de terminaison
 
@@ -293,6 +293,6 @@ Toutefois, si les résultats du contrôle de la connectivité indiquent un éche
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Utiliser stratégie de groupe paramètres pour configurer et gérer l’antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
+- [Utiliser stratégie de groupe paramètres pour configurer et gérer Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Résoudre les problèmes d’intégration Microsoft Defender pour point de terminaison](troubleshoot-onboarding.md)

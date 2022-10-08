@@ -15,17 +15,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 724ddc1c4958811609e6b442f781f4e3371c0edb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a6c7257194c90f0e0fd09147a10aeec20a906750
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479707"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088682"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender fonctionnalités en préversion
 

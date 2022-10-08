@@ -6,21 +6,24 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
+ms.collection:
+- tier1
+- m365-security
 ms.date: 09/15/2022
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment mettre à niveau vos appareils Windows vers Windows 10 Professionnel avec Microsoft 365 Business Premium.
-ms.openlocfilehash: c2108d6ddaac381ccf5598d09974dad247b71809
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f79a60e745c62a5855a32480634d1d1a14ea8991
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738223"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110576"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau des appareils Windows vers Windows 10 Professionnel
 
@@ -75,7 +78,7 @@ Vous pouvez choisir parmi plusieurs méthodes à mettre à niveau :
 
 3. Sélectionnez l’option de mise à niveau vers Windows 10/11 Professionnel.
 
-4. Choisissez **Mer informasjon** ou **Installer**, puis suivez les invites. Notez que vous devrez peut-être acheter Windows 10 Professionnel.
+4. Choisissez **En savoir plus** ou **Installer**, puis suivez les invites. Notez que vous devrez peut-être acheter Windows 10 Professionnel.
   
 ## <a name="see-also"></a>Voir aussi
 

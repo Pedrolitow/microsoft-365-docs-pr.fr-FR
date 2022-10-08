@@ -6,26 +6,27 @@ manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appveyor:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
 - NOCSH
 description: Utilisez les conseils du service de migration de boîtes aux lettres pour surveiller les retards dans les demandes de migration de boîte aux lettres dans votre organisation.
-ms.openlocfilehash: fe6f60b75fb7d27781d442faf82ff981ac54808a
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 1be39c430b790a63263d668edd198ccd80401799
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810734"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169428"
 ---
 # <a name="service-advisories-for-mrs-source-delays-in-exchange-online-monitoring"></a>Avis de service pour les retards de source MRS dans la surveillance Exchange Online
 
-Les avis de service de retard du service de réplication des boîtes aux lettres (MRS) vous informent des limitations de stockage ou des problèmes d’utilisation élevée du processeur côté client (source de migration) qui peuvent retarder les migrations de boîtes aux lettres dans votre organisation Microsoft 365. Ces conseils de service incluent également des liens vers des ressources Microsoft pour vous aider à résoudre ces problèmes.
+Les avis de service de retard du service de réplication de boîte aux lettres (MRS) vous informent des limitations de stockage ou des problèmes d’utilisation élevée du processeur côté client (source de migration) qui peuvent retarder les migrations de boîtes aux lettres dans votre organisation Microsoft 365. Ces conseils de service incluent également des liens vers des ressources Microsoft pour vous aider à résoudre ces problèmes.
 
 Ces avis de service sont affichés dans le Centre d'administration Microsoft 365. Pour afficher ces avis de service, accédez à **Health** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**État des services**</a> >  **Exchange Online**, puis cliquez sur l’onglet **Problèmes actifs**.
 
@@ -62,7 +63,7 @@ Pour plus d’informations sur les migrations mrs et de boîte aux lettres, cons
 
 - [La boîte aux lettres se déplace dans Exchange](/exchange/recipients/mailbox-moves)
 
-- [Microsoft 365 et Office 365 performances de migration et meilleures pratiques](/exchange/mailbox-migration/office-365-migration-best-practices)
+- [Performances et bonnes pratiques de migration de Microsoft 365 et Office 365](/exchange/mailbox-migration/office-365-migration-best-practices)
 
 - [Analyse des performances de migration de boîte aux lettres](https://techcommunity.microsoft.com/t5/exchange-team-blog/mailbox-migration-performance-analysis/ba-p/587134)
 
