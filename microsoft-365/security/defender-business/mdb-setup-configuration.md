@@ -15,15 +15,16 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: 8f04e3d557b6cce71a64f62f3b91f76641b4b5d3
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 9663ae2d53fac191cd8ffdf7ced47219da5b513b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598019"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68098058"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Configurer et configurer Microsoft Defender pour entreprises
 

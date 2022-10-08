@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment obtenir de l’aide et du support.
-ms.openlocfilehash: 5648c17aa87f41164c89113f35615a0226d6d433
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 8a9a032d0838119a478924382d06586f19b35b9f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599295"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202120"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Obtenir de l’aide et du support pour Microsoft 365 Lighthouse 
 

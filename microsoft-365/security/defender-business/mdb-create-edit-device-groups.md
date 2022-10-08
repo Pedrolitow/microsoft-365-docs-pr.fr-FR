@@ -11,17 +11,19 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: 600386ff5c5fccaa32ce8efde2ad7bd0d30c49b2
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+- tier1
+ms.openlocfilehash: 178130ff301f1874b5ebeafdeb6ccb62203519c8
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600310"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68098189"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>Groupes d’appareils dans Microsoft Defender pour entreprises
 

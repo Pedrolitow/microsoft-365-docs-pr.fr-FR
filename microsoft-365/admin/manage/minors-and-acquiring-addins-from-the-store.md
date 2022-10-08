@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez les réglementations du Règlement général sur la protection des données (RGPD) qui régissent les données personnelles des mineurs.
-ms.openlocfilehash: 9b348ce47b5deef8f012428a402a4a83eaa6dcf1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a3effed0efb2dc03ba769dd8a9d0d8685f3b6f34
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094237"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208455"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>Mineurs et acquisition de compléments à partir du Store
 
@@ -37,14 +38,14 @@ Un utilisateur est déterminé comme étant mineur en fonction des données spé
 
 Si le parent/tuteur consent à un mineur à l’aide d’un complément spécifique, l’administrateur de l’organisation peut utiliser le déploiement centralisé pour déployer ce complément sur tous les mineurs qui ont le consentement.
 
-Pour être conforme au RGPD pour les mineurs, vous devez vous assurer que l’une des builds suivantes de Office est déployée dans votre établissement scolaire/organisation.
+Pour être conforme au RGPD pour les mineurs, vous devez vous assurer que l’une des builds suivantes d’Office est déployée dans votre établissement scolaire/organisation.
 
  **Pour Word, Excel, PowerPoint et Project** :
 
 |Plateforme|Numéro de build|
 |---|---|
 |Applications Microsoft 365 pour les grandes entreprises (canal actuel)|9001.2138|
-|Applications Microsoft 365 pour les grandes entreprises (canal de Enterprise semi-annuel)|8431.2159|
+|Applications Microsoft 365 pour les grandes entreprises (canal d’entreprise semi-annuel)|8431.2159|
 |Office 2016 pour Windows|16.0.4672.1000|
 |Office 2013 pour Windows|15.0.5023.1000|
 |Office 2016 pour Mac|16.11.18020200|
@@ -57,21 +58,21 @@ Pour être conforme au RGPD pour les mineurs, vous devez vous assurer que l’un
 |Outlook 2016 pour Windows (MSI)|Build No TBD|
 |Outlook 2016 pour Windows (C2R)|16.0.9323.1000|
 |Office 2016 pour Mac|16.0.9318.1000|
-|Outlook mobile pour iOS|2.75.0|
-|Outlook mobile pour Android|2.2.145|
+|Outlook Mobile pour iOS|2.75.0|
+|Outlook Mobile pour Android|2.2.145|
 |Outlook.com|S/O|
 
- **exigences Office 2013**
+ **Conditions requises pour Office 2013**
 
 Word, Excel et PowerPoint 2013 pour Windows prendront en charge les mêmes vérifications mineures si la bibliothèque d’authentification Active Directory (ADAL) est activée. Il existe deux options de conformité, comme expliqué ci-après.
 
-- **Activez ADAL**. Cet article explique comment activer la bibliothèque ADAL pour Office 2013 : [Utilisation de Microsoft 365 l’authentification moderne avec Office clients](../../enterprise/modern-auth-for-office-2013-and-2016.md).<br/>Vous devez également définir les clés de Registre pour activer la bibliothèque ADAL, comme expliqué dans [Activer l’authentification moderne pour Office 2013 sur Windows appareils](../security-and-compliance/enable-modern-authentication.md).<br/>En outre, vous devez installer les mises à jour d’avril suivantes pour Office 2013 :
+- **Activez ADAL**. Cet article explique comment activer la bibliothèque ADAL pour Office 2013 : [Utilisation de l’authentification moderne Microsoft 365 avec les clients Office](../../enterprise/modern-auth-for-office-2013-and-2016.md).<br/>Vous devez également définir les clés de Registre pour activer ADAL, comme expliqué dans [Activer l’authentification moderne pour Office 2013 sur les appareils Windows](../security-and-compliance/enable-modern-authentication.md).<br/>En outre, vous devez installer les mises à jour d’avril suivantes pour Office 2013 :
 
   - [Description de la mise à jour de sécurité pour Office 2013 : 10 avril 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
 
   - [Mise à jour du 3 avril 2018 pour Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
 
-- **N’activez pas ADAL**. Si vous ne parvenez pas à activer la bibliothèque ADAL dans Office 2013, nous vous recommandons d’utiliser stratégie de groupe pour désactiver le Windows Store pour les clients Office. Vous trouverez [ici](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15)) des informations sur la façon de désactiver l’application pour Office paramètres.
+- **N’activez pas ADAL**. Si vous ne parvenez pas à activer la bibliothèque ADAL dans Office 2013, nous vous recommandons d’utiliser stratégie de groupe pour désactiver le Windows Store pour les clients Office. Vous trouverez [ici](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15)) des informations sur la désactivation de l’application pour les paramètres Office.
 
 ## <a name="related-articles"></a>Articles connexes
 

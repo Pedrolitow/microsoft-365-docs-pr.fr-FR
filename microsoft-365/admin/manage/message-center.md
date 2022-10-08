@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’ensemble du Centre de messages Microsoft 365 et de son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
-ms.openlocfilehash: 8368e86e0ab4431aeb07c387daf0a57f89ea1827
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c7ebc03e1420a2fea66018f68aa7465ad419142d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322912"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208521"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Suivre les fonctionnalités nouvelles et modifiées dans le Centre de messages Microsoft 365
 
@@ -51,7 +52,7 @@ Vous pouvez également utiliser [l’application Administration Microsoft 365](h
 
 Pour vous désabonner des e-mails du Centre de messages, consultez [Désabonnement des e-mails du Centre de](#unsubscribe-from-message-center-emails) messages dans cet article.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 <br>
 

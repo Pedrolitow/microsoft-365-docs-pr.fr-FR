@@ -13,15 +13,17 @@ ms.localizationpriority: medium
 ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: f5df3cdfa8b7bb699126e9362de53a7cfa52b8fc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 89bc4d056743c2f6f4628ff58feeb2ed4e97b16a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576228"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223829"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Protéger votre organisation contre les menaces web
 
@@ -39,7 +41,7 @@ La protection contre les menaces web fait partie de la [protection web](web-prot
 > [!NOTE]
 > La réception de nouveaux indicateurs personnalisés peut prendre jusqu’à deux heures pour les appareils.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 La protection web utilise la protection réseau pour assurer la sécurité de la navigation web sur Microsoft Edge et les navigateurs web tiers.
 

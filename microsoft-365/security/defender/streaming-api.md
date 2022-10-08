@@ -14,14 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 726e7e614b6e0cee53af2764af9c5c1f0a6bcb29
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e0066d33aa0066b01e32a1f5ad02dfc7f780dce1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679864"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084460"
 ---
 # <a name="streaming-api"></a>API de diffusion en continu
 

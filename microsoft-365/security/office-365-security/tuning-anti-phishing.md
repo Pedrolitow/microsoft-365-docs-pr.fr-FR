@@ -10,18 +10,18 @@ ms.topic: how-to
 ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons pour lesquelles et comment un message de hameçonnage a été transmis dans Microsoft 365, et ce qu’il faut faire pour empêcher d’autres messages de hameçonnage à l’avenir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: cb33889abf59900d7840590930386b0253d0b57e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f206894cee57a497506a6dce1a652e52140f1028
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590609"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086484"
 ---
 # <a name="tune-anti-phishing-protection"></a>Régler la protection anti-hameçonnage
 

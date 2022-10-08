@@ -6,25 +6,27 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-scenario
+- highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bc950e1f850dab3a5d3474566145979be34b6ab9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d213154ded15187e5041b6dda55a30245b0b34fe
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688658"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223543"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
@@ -135,9 +137,9 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
    :::image type="content" source="images/mdatp-download-package.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft11" lightbox="images/mdatp-download-package.png":::
 
 4. Enregistrez le package à un emplacement accessible.
-5. Dans Microsoft Endpoint Configuration Manager, accédez à : **Ressources et conformité > Vue d’ensemble > Endpoint Protection > stratégies Microsoft Defender ATP**.
+5. Dans Microsoft Endpoint Configuration Manager, accédez à : **Ressources et conformité > Vue d’ensemble > Endpoint Protection > Microsoft Defender stratégies ATP**.
 
-6. Cliquez avec le bouton droit sur **Stratégies Microsoft Defender ATP** , puis sélectionnez **Créer une stratégie Microsoft Defender ATP**.
+6. Cliquez avec le bouton droit **sur Microsoft Defender stratégies ATP**, puis sélectionnez **Créer Microsoft Defender stratégie ATP**.
 
     :::image type="content" source="images/configmgr-create-policy.png" alt-text="Assistant Configuration Manager du point de terminaison Microsoft12" lightbox="images/configmgr-create-policy.png":::
 
@@ -196,7 +198,7 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
    - Windows 8.1
    - Windows 7
    - Windows Server 2016
-   - Windows Server 2012 R2
+   - Windows Server 2012 R2
    - Windows Server 2008 R2
 
    Plus précisément, pour Windows 7 SP1, les correctifs suivants doivent être installés :
@@ -210,7 +212,7 @@ Une fois l’opération terminée, vous devez voir les points de terminaison int
 
 ### <a name="next-generation-protection"></a>Protection de nouvelle génération
 
-L’Antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs.
+Microsoft Defender Antivirus est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs.
 
 1. Dans la console Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** et choisissez **Créer une stratégie anti-programme malveillant**.
 
@@ -250,7 +252,7 @@ L’Antivirus Microsoft Defender est une solution anti-programme malveillant int
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Volet de protection de nouvelle génération11" lightbox="images/configmgr-select-collection.png":::
 
-Une fois cette tâche terminée, vous avez correctement configuré l’antivirus Microsoft Defender.
+Une fois cette tâche terminée, vous avez correctement configuré Microsoft Defender Antivirus.
 
 ### <a name="attack-surface-reduction"></a>Réduction de la surface d'attaque
 

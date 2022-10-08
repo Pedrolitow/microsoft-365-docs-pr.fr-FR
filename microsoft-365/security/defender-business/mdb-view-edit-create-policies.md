@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: 1e0070cf8d5e99ef6b9133cb38f4387255b78a5a
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 626287dcd8c1bed6dac91d55f020d9f5a5780cff
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595560"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097750"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Afficher ou modifier des stratégies dans Microsoft Defender pour entreprises
 
@@ -49,7 +50,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous. 
 
-2. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**). 
+2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
 3. Sélectionnez un onglet de système d’exploitation (par exemple, **Clients Windows**), puis passez en revue la liste des stratégies sous les catégories **Protection nouvelle génération** et **Pare-feu**. 
 
@@ -59,7 +60,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous. 
 
-2. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**). 
+2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
 3. Sélectionnez un onglet de système d’exploitation (par exemple, **Clients Windows**), puis passez en revue la liste des stratégies sous les catégories **Protection nouvelle génération** et **Pare-feu**. 
 
@@ -92,7 +93,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous. 
 
-2. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**). 
+2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
 3. Sélectionnez un onglet de système d’exploitation (par exemple, **Clients Windows**), puis passez en revue la liste des stratégies **Protection nouvelle génération**. 
 

@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f1a77d7889411d5455140db68a5af4016747ee49
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 90e6977d6660cb475a4172d863080878957407f5
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797809"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223697"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
@@ -50,7 +51,7 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
 
 - Corrige un blocage du noyau observé sur certaines charges de travail client exécutant mdatp version 101.75.43. Après l’analyse de la cause première, cela a été attribué à une condition de concurrence lors de la libération de la propriété d’un descripteur de fichier de capteur. La condition de concurrence a été exposée en raison d’un changement récent du produit dans le chemin d’arrêt. Les clients sur les versions de noyau plus récentes (5.1+) ne sont pas affectés par ce problème.
 
-- Lors de la mise à niveau à partir de mdatp version 101.75.43, exécutez les commandes suivantes avant de tenter la mise à niveau vers la version 101.80.97
+- Lors de la mise à niveau à partir de mdatp version 101.75.43 ou 101.78.13, exécutez les commandes suivantes avant de tenter la mise à niveau vers la version 101.80.97
 
 ```
 sudo mdatp config real-time-protection --value=disabled
@@ -60,6 +61,25 @@ sudo systemctl disable mdatp
 
 <br/><br/>
 </details>
+
+<details>
+   <summary>Août 2022 (Build : 101.78.13, | Version de version : 30.122072.17813.0)</summary>
+
+ &ensp;Publication : **24 août 2022**<br/>
+ &ensp;Publication : **24 août 2022**<br/>
+ &ensp;Build : **101.78.13**<br/>
+ &ensp;Version de version : **30.122072.17813.0**<br/>
+ &ensp;Version du moteur : **1.1.19300.3**<br/>
+ &ensp;Version de signature : **1.369.395.0**<br/>
+
+ **Nouveautés**
+
+ - Restauration en raison de problèmes de fiabilité
+
+ </br>
+
+ <br/><br/>
+ </details>
 
 <details>
   <summary>Août 2022 (Build : 101.75.43 | Version de version : 30.122071.17543.0)</summary>

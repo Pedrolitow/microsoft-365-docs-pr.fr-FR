@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e5b1e6a861117b1b1096bd3fb7775a3410cd2d1a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b1b83240c0aa9394bc75a2389d278bb41408ebef
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371015"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208278"
 ---
-# <a name="contact-support-for-guinea-bissau"></a>Contactez le support technique Guinea-Bissau
+# <a name="contact-support-for-guinea-bissau"></a>Contacter le support technique pour Guinea-Bissau
 
 [Rechercher un autre pays ou une autre région](../get-help-support.md).
 
@@ -33,8 +35,8 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Portugais : 8 h à 21 h
+Portugais: 8h-21h
 
 Anglais : 24h/24, 7j/7
 
-Les frais d’appels internationaux s’appliquent
+Des frais d’appel internationaux s’appliquent

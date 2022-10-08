@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer les messages mis en quarantaine.
-ms.openlocfilehash: beead122e36f7282e1857bec32d0a1be8d09a473
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 90e77f972b40c43ea707824f46443f7126425ebf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599382"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202032"
 ---
 # <a name="overview-of-quarantined-messages-in-microsoft-365-lighthouse"></a>Vue d’ensemble des messages mis en quarantaine dans Microsoft 365 Lighthouse
 
@@ -44,7 +45,7 @@ La section **État des messages** fournit une vue consolidée des locataires él
 
 Les données reflètent les 30 derniers jours ; toutefois, vous pouvez utiliser le filtre **d’intervalle de temps** pour modifier la vue.
 
-La section Raison de la **quarantaine** contient une répartition des nombres de quarantaines par type de stratégie Exchange Online Protection (EOP) et Microsoft Defender pour Office 365 Plan 1 (MDO). Ces types incluent
+La section Raison de la **quarantaine** contient une répartition des nombres de quarantaines par Exchange Online Protection (EOP) et Microsoft Defender pour le type de stratégie Office 365 Plan 1 (MDO). Ces types incluent
 
 - Programme malveillant
 - Hameçonnage

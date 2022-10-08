@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment piloter la fonctionnalité de messagerie depuis mon domaine personnalisé vers une boîte aux lettres Microsoft 365 à l’aide de deux comptes de test uniquement.
-ms.openlocfilehash: cc977afd32c1b3b660ec01285c36132a8e1d27b2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: f48da1748b8ace33e291054cb698e3887fd23684
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323736"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192660"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloter Microsoft 365 depuis mon domaine personnalisé
 
@@ -118,11 +119,11 @@ Voici les deux étapes à suivre :
 
 Assurez-vous que vous avez effectué les opérations suivantes dans Microsoft 365 ou Office 365 :
 
-1. Pour configurer des connecteurs, vous avez besoin d'autorisations attribuées avant de pouvoir commencer. Pour vérifier les autorisations dont vous avez besoin, consultez l'entrée Connecteurs Microsoft 365 et Office 365 dans la rubrique [Autorisations de fonctionnalité dans Exchange Online](/exchange/permissions-exo/feature-permissions).
+1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions) topic.
 
 2. Si vous voulez que vos courriers électroniques soient relayés par EOP ou Exchange Online de vos serveurs de messagerie vers Internet, deux solutions sont possibles :
 
-   - Utilisez un certificat configuré avec un nom de sujet qui correspond à un domaine accepté dans Microsoft 365 ou Office 365. Nous vous recommandons que le nom commun ou le nom alternatif du sujet de votre certificat corresponde au domaine SMTP principal de votre organisation. Pour plus de détails, voir [Conditions préalables pour votre environnement de messagerie sur site](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
+   - Use a certificate configured with a subject name that matches an accepted domain in Microsoft 365 or Office 365. We recommend that your certificate's common name or subject alternative name matches the primary SMTP domain for your organization. For details, see [Prerequisites for your on-premises email environment](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
 
    - OU -
 
@@ -133,17 +134,17 @@ Assurez-vous que vous avez effectué les opérations suivantes dans Microsoft 36
 3. Indiquez si vous souhaitez utiliser des règles de flux de courrier (également appelées règles de transport) ou des noms de domaine pour remettre le courrier de Microsoft 365 ou Office 365 vers vos serveurs de courrier. La plupart des entreprises choisit de remettre les messages pour tous les domaines acceptés. Pour plus d'informations, consultez la rubrique [Scénario : routage des messages conditionnels dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
 
 > [!NOTE]
-> Vous pouvez configurer des règles de flux de messagerie comme décrit dans [Actions des règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). Par exemple, vous pouvez utiliser des règles de flux de messagerie avec des connecteurs si votre courrier est actuellement dirigé via des listes de distribution vers plusieurs sites.
+> You can set up mail flow rules as described in [Mail flow rule actions in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). For example, you might want to use mail flow rules with connectors if your mail is currently directed via distribution lists to multiple sites.
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurer un connecteur depuis Microsoft 365 ou Office 365 vers votre serveur de messagerie.
 
-Pour créer un connecteur dans Microsoft 365 ou Office 365, sélectionnez **Admin** > **Exchange** pour accéder au Centre d’administration Exchange. Ensuite, sélectionnez **flux de messagerie** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**Connecteurs**</a>.
+To create a connector in Microsoft 365 or Office 365, select **Admin** > **Exchange** to go to the Exchange admin center. Next, select **mail flow** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**Connectors**</a>.
 
 Configuration de connecteurs à l’aide de l’Assistant.
 
 Pour démarrer l’Assistant, cliquez sur le signe plus **+**. Dans le premier écran, sélectionnez **De** Office 365 et **À** votre serveur de courrier de l’organisation.
 
-Cliquez sur **Suivant**, et suivez les instructions de l'Assistant. Cliquez sur les liens **Aide** ou **En savoir plus** si vous avez besoin de plus d'informations. L'Assistant vous guide pour la configuration. À la fin, vérifiez que votre connecteur est validé. Si le connecteur n'est pas validé, double-cliquez sur le message affiché pour obtenir plus d'informations, et consultez [Valider les connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) pour obtenir de l'aide et résoudre les problèmes.
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, double-click the message displayed to get more information, and see [Validate connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) for help resolving issues.
 
 
 
@@ -159,7 +160,7 @@ Connectez-vous au site Web de votre fournisseur d’hébergement DNS, puis suive
 
     Par exemple, « v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all ».
 
-    Si vous ne disposez pas d’enregistrement SPF, modifiez celui recommandé par Microsoft 365 pour y inclure le domaine de votre fournisseur de messagerie actuel, puis ajoutez spf.protection.outlook.com. Cette opération autorise les messages sortants des deux systèmes de messagerie.
+    If you don't have an SPF record, modify the one recommended by Microsoft 365 to include the domain for your current email provider, and add spf.protection.outlook.com. This authorizes outgoing messages from both email systems.
 
 ### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>Étape 8 : configurez le transfert de messages électroniques sur votre fournisseur actuel
 
@@ -190,6 +191,6 @@ Une fois cette étape terminée, tous les messages envoyés à usera@yourcompany
 
 ### <a name="step-10-move-mailbox-contents"></a>Étape 10 : déplacez le contenu de la boîte aux lettres
 
-Étant donné que vous ne déplacez que deux utilisateurs de test et que l'utilisateur A et l'utilisateur B utilisent tous les deux Outlook, vous pouvez déplacer l'e-mail en ouvrant l'ancien fichier .PST dans le nouveau profil Outlook et en copiant les messages, les éléments de calendrier, les contacts, etc. . Pour plus d'informations, voir [Importer des e-mails, des contacts et un calendrier à partir d'un fichier Outlook .pst](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+Because you are moving only two test users, and User A and User B are both using Outlook, you can move the email by opening the old .PST file in the new Outlook profile and copying the messages, calendar items, contacts, and so on. For more information, see [Import email, contacts, and calendar from an Outlook .pst file](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 Une fois que vous les avez importés aux emplacements appropriés dans la boîte aux lettres Microsoft 365, ces éléments sont accessibles à partir de n’importe quel appareil, où que vous soyez.

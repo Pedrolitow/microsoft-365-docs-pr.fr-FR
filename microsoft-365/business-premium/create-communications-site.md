@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- tier1
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un site de communication SharePoint pour votre campagne ou votre entreprise et protégez votre équipe contre les cyberattaques et les incursions contre les programmes malveillants et d’autres menaces en raison d’un partage de fichiers incorrect.
-ms.openlocfilehash: b70d2726a983d02ce5157815623936472077ad2b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: c4cd224eb127063453d080a8db8a645e4b4e468b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738091"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097728"
 ---
 # <a name="create-a-communications-site"></a>Créer un site de communication
 
@@ -65,7 +66,7 @@ Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprim
 
 1. Connectez-vous à [https://Office.com](https://Office.com).
 
-2. Dans le coin supérieur gauche de la page, sélectionnez l'icône du lanceur d'applications Icône du lanceur d'applications Office 365, puis la vignette **SharePoint**. Si la vignette **SharePoint** n'apparaît pas, cliquez sur la vignette **Sites** ou sur **Tout** si SharePoint n'est pas visible.
+2. In the top-left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint isn't visible.
 
 3. En haut de la page d'accueil SharePoint, cliquez sur **+ Créer un site** et choisissez l'option **Site de communication**.
 
@@ -77,4 +78,4 @@ Si vous ne voyez pas le lien **+ Créer** un site, il se peut que la création d
 
 ## <a name="next-mission"></a>Prochaine mission
 
-Félicitations &mdash; vous avez terminé la mission ! À présent, concentrez-vous immédiatement sur la [protection des appareils gérés](m365bp-protect-devices.md) pour l’ensemble de l’organisation !
+Congratulations &mdash; you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-devices.md) for the entire org!

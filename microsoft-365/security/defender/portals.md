@@ -13,15 +13,16 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f0ca8e03bf89afd148611c0af26c9ad4ca30f269
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: dd22c4dd782cf4fed54b7c61dc3c68bc0a0da640
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479751"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084658"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité et centres d’administration Microsoft
 
@@ -42,7 +43,7 @@ Les opérateurs de sécurité et les administrateurs peuvent accéder aux portai
 | Portail Microsoft 365 Defender | Surveillez et répondez à l’activité des menaces et renforcez la posture de sécurité de vos identités, e-mails, données, points de terminaison et applications avec [Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Centre de sécurité Microsoft Defender | Surveillez et répondez à l’activité de menace sur vos points de terminaison à l’aide des fonctionnalités fournies avec [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).  **NOTE:** La plupart des locataires doivent maintenant être redirigés vers le portail Microsoft 365 Defender à [security.microsoft.com](https://security.microsoft.com/).  | [securitycenter.windows.com](https://securitycenter.windows.com) |
 | Centre de sécurité et conformité Office 365 | Gérez [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) et [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) pour protéger vos services de messagerie et de collaboration et garantir la conformité aux différentes réglementations de gestion des données.  **NOTE:** La plupart des locataires qui utilisent les sections de sécurité du Centre de sécurité & conformité Office 365 doivent maintenant être redirigés vers le portail Microsoft 365 Defender à [security.microsoft.com](https://security.microsoft.com/). | [protection.office.com](https://protection.office.com) |
-| Portail Defender pour cloud | Utiliser [Microsoft Defender pour cloud pour](/azure/security-center/security-center-intro) renforcer la posture de sécurité de vos centres de données et de vos charges de travail hybrides dans le cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
+| Portail Defender pour cloud | Utilisez [Microsoft Defender for Cloud pour](/azure/security-center/security-center-intro) renforcer la posture de sécurité de vos centres de données et de vos charges de travail hybrides dans le cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Portail Microsoft Defender pour l’identité | Identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes à l’aide de signaux Active Directory avec [Microsoft Defender pour Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Portail Defender for Cloud Apps | Utilisez [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) pour obtenir une visibilité enrichie, un contrôle sur les déplacements de données et des analyses sophistiquées pour identifier et combattre les cybermenaces sur les services cloud | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
 | portail Renseignement de sécurité Microsoft | Obtenir des mises à jour du renseignement de sécurité pour Microsoft Defender pour point de terminaison, envoyer des exemples et explorer l’encyclopédie des menaces | [microsoft.com/wdsi](https://microsoft.com/wdsi) |

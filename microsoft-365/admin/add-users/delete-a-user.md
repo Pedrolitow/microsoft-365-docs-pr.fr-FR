@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - SPO_Content
@@ -19,13 +20,13 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Découvrez comment supprimer un compte d’utilisateur Microsoft 365, comment faire avec l’e-mail de l’utilisateur et OneDrive contenu, et s’il faut conserver la licence de produit.
-ms.openlocfilehash: faa971fa8419f6bcc80855fd9dcd559a542e00a8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Découvrez comment supprimer un compte d’utilisateur Microsoft 365, comment faire avec l’e-mail de l’utilisateur et le contenu OneDrive, et s’il faut conserver la licence de produit.
+ms.openlocfilehash: 1eb9354352f81ff3934b2bb5a0b7d2af4c69a581
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436776"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192748"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
@@ -33,24 +34,24 @@ ms.locfileid: "65436776"
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Seules les personnes qui disposent [d’Microsoft 365 autorisations d’administrateur général](about-admin-roles.md) ou de gestion des utilisateurs pour l’entreprise ou l’école peuvent supprimer des comptes d’utilisateur.
+- Seules les personnes disposant d’autorisations d’administrateur général ou de gestion des utilisateurs [Microsoft 365](about-admin-roles.md) pour l’entreprise ou l’établissement scolaire peuvent supprimer des comptes d’utilisateur.
 - Vous disposez de 30 jours pour [restaurer](restore-user.md) le compte avant que les données de l'utilisateur ne soient définitivement supprimées.
 - Si vous voulez conserver les données OneDrive de l'utilisateur, déplacez-le à un autre emplacement. Vous pouvez même déplacer les données jusqu’à 30 jours après la suppression du compte. Voir [Accéder aux données d'un ancien utilisateur et les sauvegarder](get-access-to-and-back-up-a-former-user-s-data.md). Vous ne devez pas déplacer ses fichiers SharePoint ; vous y aurez toujours accès.
-- Si vous souhaitez conserver les courriers de l'utilisateur, **AVANT** de supprimer le compte, déplacez les courriers vers un autre emplacement. Si vous avez déjà supprimé le compte depuis moins de 30 jours, vous pouvez le restaurer, déplacer les courriers, puis supprimer le compte. Voir [Accéder aux données d'un ancien utilisateur et les sauvegarder](get-access-to-and-back-up-a-former-user-s-data.md).
-- Si vous avez un abonnement Enterprise comme Office 365 Entreprise E3, vous pouvez conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé en le transformant en *boîte aux lettres inactive*. Pour en savoir plus, voir [Gestion des boîtes aux lettres inactives dans Exchange Online](../../compliance/inactive-mailboxes-in-office-365.md).
+- If you want to keep the user's email, **BEFORE** you delete the account, move the email to a different location. If you've already deleted the account: if it's been less than 30 days you can restore it, then move the email data, then delete the account. See [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
+- Si vous disposez d’un abonnement Entreprise comme Office 365 Entreprise E3, vous pouvez conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé en le transformant en *boîte aux lettres inactive*. Pour en savoir plus, voir [Gestion des boîtes aux lettres inactives dans Exchange Online](../../compliance/inactive-mailboxes-in-office-365.md).
 
-## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>Administrateur général : Supprimer un utilisateur, arrêter de payer sa licence et choisir ce qu’il faut faire avec son e-mail et OneDrive contenu
+## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>Administrateur général : Supprimer un utilisateur, arrêter de payer sa licence et choisir ce qu’il faut faire avec son e-mail et son contenu OneDrive
 
 Si vous êtes administrateur général, lorsque vous supprimez un utilisateur, vous pouvez également accorder à un autre utilisateur l’accès à son courrier électronique et choisir ce qu’il faut faire avec son contenu OneDrive.
 
 ### <a name="things-to-consider"></a>Informations importantes
 
-Avant de commencer, réfléchissez à ce que vous voulez faire avec l’e-mail de l’utilisateur et OneDrive contenu, et si vous souhaitez conserver la licence ou arrêter de payer pour elle.
+Avant de commencer, réfléchissez à ce que vous voulez faire avec l’e-mail de l’utilisateur et le contenu OneDrive, et si vous souhaitez conserver la licence ou arrêter de payer pour elle.
   
 |Élément | Description |
 |:-----|:-----|
 |Licences de produit  <br/> |Vous pouvez supprimer la licence de l’utilisateur et la supprimer de vos abonnements pour arrêter de payer cette licence. Si vous sélectionnez cette option, la licence sera supprimée automatiquement de vos abonnements.  <br/><br/> **Vous ne pouvez pas supprimer la licence** si vous l’avez achetée par le biais d’un partenaire ou d’une licence en volume. Si vous payez pour un plan annuel ou si vous êtes au milieu d’un cycle de facturation, vous ne pourrez pas supprimer la licence de votre abonnement tant que votre engagement n’est pas terminé.  <br/> |
-|contenu OneDrive  <br/> |Si l’utilisateur a enregistré ses fichiers dans OneDrive, vous pouvez accorder à un autre utilisateur l’accès à ces fichiers.  <br/><br/> Vous devez déplacer les fichiers que vous souhaitez conserver dans la période de rétention définie pour OneDrive fichiers. **Par défaut, la période de rétention est de 30 jours.** Si vous ne déplacez pas les fichiers dans la période de rétention après la suppression de l’utilisateur, le OneDrive de l’utilisateur supprimé est déplacé vers la corbeille de la collection de sites, où elle est conservée pendant 93 jours. Pendant ce temps, les utilisateurs ne pourront plus accéder à du contenu partagé dans le OneDrive. Pour restaurer la OneDrive, vous devez utiliser PowerShell. Pour plus d’informations, consultez [Restaurer un OneDrive supprimé](/onedrive/restore-deleted-onedrive).<br/><br/> Pour augmenter le nombre de jours pendant lesquels vous conservez OneDrive fichiers pour les comptes supprimés, consultez [Définir la rétention OneDrive pour les utilisateurs supprimés](/onedrive/set-retention).  <br/><br/> **Important!** Si l’utilisateur supprimé a utilisé un ordinateur personnel pour télécharger des fichiers à partir de SharePoint et OneDrive, il n’existe aucun moyen de réinitialiser les fichiers qu’il a stockés sur son ordinateur. Ils continueront d’avoir accès à tous les fichiers qui ont été synchronisés à partir de OneDrive.           |
+|Contenu OneDrive  <br/> |Si l’utilisateur a enregistré ses fichiers dans OneDrive, vous pouvez accorder à un autre utilisateur l’accès à ces fichiers.  <br/><br/> Vous devez déplacer les fichiers que vous souhaitez conserver dans la période de rétention définie pour les fichiers OneDrive. **Par défaut, la période de rétention est de 30 jours.** Si vous ne déplacez pas les fichiers dans la période de rétention après la suppression de l’utilisateur, le OneDrive de l’utilisateur supprimé est déplacé vers la corbeille de la collection de sites, où il est conservé pendant 93 jours. Pendant ce temps, les utilisateurs ne pourront plus accéder à du contenu partagé dans OneDrive. Pour restaurer OneDrive, vous devez utiliser PowerShell. Pour plus d’informations, consultez [Restaurer un OneDrive supprimé](/onedrive/restore-deleted-onedrive).<br/><br/> Pour augmenter le nombre de jours pendant lesquels vous conservez des fichiers OneDrive pour les comptes supprimés, consultez [Définir la rétention OneDrive pour les utilisateurs supprimés](/onedrive/set-retention).  <br/><br/> **Important!** Si l’utilisateur supprimé a utilisé un ordinateur personnel pour télécharger des fichiers à partir de SharePoint et OneDrive, il n’existe aucun moyen de réinitialiser les fichiers qu’il a stockés sur son ordinateur. Ils continueront d’avoir accès à tous les fichiers qui ont été synchronisés à partir de OneDrive.           |
 |E-mail  <br/> | Accorder à un autre utilisateur l’accès à l’e-mail de l’utilisateur supprimé convertit la boîte aux lettres de l’utilisateur supprimé en boîte aux lettres partagée. Le nouveau propriétaire de boîte aux lettres peut ensuite accéder à la boîte aux lettres et surveiller le nouvel e-mail. Vous disposez également des options suivantes :  <br/>  <br/>Modifier le nom d’affichage : nous vous recommandons de modifier le nom d’affichage afin qu’il soit facile d’identifier la boîte aux lettres partagée dans la liste **des utilisateurs actifs** .  <br/>  <br/>  Activer les réponses automatiques : nous avons déjà écrit une réponse automatique polie pour vous. Vous pouvez envoyer différentes réponses automatiques à des personnes au sein de votre organisation et à des personnes extérieures à votre organisation. <br/> <br/> [Supprimez toutes les autorisations de calendrier existantes](/powershell/module/exchange/remove-mailboxfolderpermission?view=exchange-ps) à l’aide de PowerShell. <br/> <br/> Nettoyer les alias : les alias sont des adresses e-mail supplémentaires pour les utilisateurs. Certaines organisations ne les utilisent pas, donc si vous n’en avez pas, vous n’avez rien à faire d’autre ici. Si l’utilisateur a des alias, nous vous recommandons de les supprimer afin que vous puissiez réutiliser ces adresses e-mail. Sinon, vous ne pouvez pas réutiliser ces adresses e-mail tant que la période de rétention des boîtes aux lettres supprimées n’est pas passée. Par défaut, une boîte aux lettres supprimée peut être récupérée pendant 30 jours. Pour plus d’informations, consultez [Supprimer ou restaurer des boîtes aux lettres utilisateur dans Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
 |Active Directory  <br/> |Si votre entreprise utilise **Active Directory** qui se synchronise avec Azure Active Directory, vous devez supprimer le compte d'utilisateur d'Active Directory. Vous ne pouvez pas le faire via Office 365. Pour obtenir des instructions, consultez [Supprimer un compte d’utilisateur](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).  <br/> |
 
@@ -127,13 +128,13 @@ Voici les problèmes les plus courants rencontrés lors de la suppression d’un
   
 - **Un message d'erreur du type « Nous ne pouvons pas supprimer l'utilisateur. Merci de réessayer plus tard. » apparaît.** Vérifiez si le transfert de courrier électronique est configuré sur le compte ou s’il a été converti en boîte aux lettres partagée. Ces deux situations peuvent être à l'origine de cette erreur. Ne supprimez pas le compte s’il a été transféré par e-mail ou s’il a été converti en boîte aux lettres partagée.
 
-- **Vous n'avez pas les autorisations appropriées pour supprimer un utilisateur**. Seules les personnes qui sont [Microsoft 365 administrateurs généraux ou administrateurs de gestion des utilisateurs](about-admin-roles.md) peuvent supprimer des utilisateurs. Il s'agit généralement du support technique de votre établissement scolaire ou de votre entreprise.
+- **Vous n'avez pas les autorisations appropriées pour supprimer un utilisateur**. Seules les personnes qui sont [des administrateurs généraux Microsoft 365 ou des administrateurs de gestion des utilisateurs](about-admin-roles.md) peuvent supprimer des utilisateurs. Il s'agit généralement du support technique de votre établissement scolaire ou de votre entreprise.
 
 - **Lorsque vous supprimez l'utilisateur, son nom apparaît toujours dans votre carnet d'adresses global**. Cela se produit lorsqu'une entreprise utilise Active Directory. Vous devez supprimer le compte d’utilisateurs d’Active Directory. Pour obtenir des instructions, consultez [Supprimer un compte d’utilisateur.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
 
 **Voulez-vous supprimer Microsoft 365 de votre ordinateur ? Accédez à [Annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).**
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Restaurer un utilisateur](restore-user.md) (article)\
 [Supprimer définitivement une boîte aux lettres](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)\

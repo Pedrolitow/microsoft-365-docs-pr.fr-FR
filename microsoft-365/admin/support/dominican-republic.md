@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7cd5697b737f872c4bfd315a3e4c7cc289e7de51
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: af265df3f28ad8fd938dfd5e28135c7c3bb41f0f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371759"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197852"
 ---
 # <a name="contact-support-for-dominican-republic"></a>Contacter le support pour la République dominicaine
 
@@ -33,12 +35,12 @@ Entrer le code 7007
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Espagnol : Mon-Fri 9 h à 17 h
+Espagnol : Mon-Fri de 9h00 à 17h00
 
 ### <a name="technical-support"></a>Support technique :
 
 Espagnol : 24 heures sur 24, 7 jours sur 7
 
-Autre Téléphone numéro : 1 809 200 8794
+Autre numéro de téléphone : 1 809 200 8794
 
-(Cellulaire gratuit)
+(Sans frais cellulaires)

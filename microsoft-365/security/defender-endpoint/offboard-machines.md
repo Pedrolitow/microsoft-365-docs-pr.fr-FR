@@ -6,21 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 076ee98c8885cd48416e7e2cfdce73a792155a29
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9dbdf4340197420eedb1e7124c3346f045eed31c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686832"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223961"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Désintégrage des appareils du service Microsoft Defender pour point de terminaison
 

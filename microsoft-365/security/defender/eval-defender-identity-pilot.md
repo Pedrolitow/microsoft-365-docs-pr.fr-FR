@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: b6cf54408fff8139f1cd06a303f91c9785cca98a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c5ca701732bd76eff22eeeadf64502f11e2ca5cc
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481281"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086088"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Microsoft Defender pour Identity pilote
 
@@ -38,9 +39,9 @@ ms.locfileid: "67481281"
 
 Cet article est [l’étape 3 sur 3](eval-defender-identity-overview.md) du processus de configuration de l’environnement d’évaluation pour Microsoft Defender pour Identity. Pour plus d’informations sur ce processus, consultez [l’article de présentation](eval-defender-identity-overview.md).
 
-Utilisez les étapes suivantes pour configurer le pilote pour Microsoft Defender pour l’identité. Notez que les recommandations n’incluent pas la configuration d’un groupe pilote. La meilleure pratique consiste à installer le capteur sur tous vos serveurs exécutant services de domaine Active Directory (AD DS) et les services fédérés Active Directory (AD FS).
+Suivez les étapes suivantes pour configurer le pilote pour Microsoft Defender pour l’identité. Notez que les recommandations n’incluent pas la configuration d’un groupe pilote. La meilleure pratique consiste à installer le capteur sur tous vos serveurs exécutant services de domaine Active Directory (AD DS) et les services fédérés Active Directory (AD FS).
 
-:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Étapes de pilotage Microsoft Defender pour Identity dans l’environnement d’évaluation Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Étapes de pilotage des Microsoft Defender pour Identity dans l’environnement d’évaluation Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 Le tableau suivant décrit les étapes de l’illustration.
 

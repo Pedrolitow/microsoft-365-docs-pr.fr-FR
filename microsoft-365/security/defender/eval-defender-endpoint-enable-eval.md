@@ -12,23 +12,24 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.date: 07/09/2021
+ms.date: 09/22/2022
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: d441c2c5d985ebf19a20af68ce9924106b5259c6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2d4de8ce1507635187c140830e92fd50ad8ec3e6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480380"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084812"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour point de terminaison environnement d’évaluation
 
@@ -81,13 +82,13 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du processus d’
 
 Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison à intégrer.
 
-Point de terminaison | Options de l’outil
-:---|:---
-**Fenêtres** | [Script local (jusqu’à 10 appareils)](../defender-endpoint/configure-endpoints-script.md), [stratégie de groupe](../defender-endpoint/configure-endpoints-gp.md), [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](../defender-endpoint/configure-endpoints-mdm.md), [Configuration Manager de point de terminaison Microsoft](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [intégration à Microsoft Defender pour le cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
-**MacOS** | [Scripts locaux](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), [Mobile Gestion des appareils](../defender-endpoint/mac-install-with-other-mdm.md)
-**Serveur Linux** | [Script local](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
-**iOS** | [Basé sur l’application](../defender-endpoint/ios-install.md)
-**Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)
+| Point de terminaison | Options de l’outil |
+|:---|:---|
+| **Fenêtres** |- [Script local (jusqu’à 10 appareils)](../defender-endpoint/configure-endpoints-script.md)<br/>- [stratégie de groupe](../defender-endpoint/configure-endpoints-gp.md)<br/>- [Microsoft Endpoint Manager/ Mobile Gestionnaire de périphériques](../defender-endpoint/configure-endpoints-mdm.md)<br/>- [Configuration Manager de point de terminaison Microsoft](../defender-endpoint/configure-endpoints-sccm.md)<br/>- [Scripts VDI](../defender-endpoint/configure-endpoints-vdi.md) |
+| **MacOS** | - [Scripts locaux](../defender-endpoint/mac-install-manually.md)<br/>- [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)<br/>- [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)<br/>- [Gestion des appareils mobiles](../defender-endpoint/mac-install-with-other-mdm.md) |
+| **Serveur Linux** | - [Script local](../defender-endpoint/linux-install-manually.md)<br/>- [Marionnette](../defender-endpoint/linux-install-with-puppet.md)<br/>- [Ansible](../defender-endpoint/linux-install-with-ansible.md) |
+| **iOS** | [Basé sur l’application](../defender-endpoint/ios-install.md) |
+| **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md) |
 
 
 

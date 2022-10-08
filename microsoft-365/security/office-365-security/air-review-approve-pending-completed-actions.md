@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Découvrez les actions de correction dans les fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: f7a8c1b4ae7df1d69d48dbcb1f1954e4fae3e51b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 0342ad8b4319d82205889785cd243b0a6aa5d9e2
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67468700"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086044"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 

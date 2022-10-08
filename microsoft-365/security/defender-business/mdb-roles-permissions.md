@@ -15,15 +15,16 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: 91c2a2fd4a63816775b5b192b1ef9d0712650eab
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 6ba902089a7949e242be554ac763d0c873626a6e
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595582"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097772"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Attribuer des rôles et des autorisations dans Microsoft Defender pour entreprises
 

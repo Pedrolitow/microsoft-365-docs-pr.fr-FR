@@ -7,22 +7,24 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Graphique de comparaison qui montre les différences de fonctionnalités entre l’application web Bookings et l’application Bookings Teams.
-ms.openlocfilehash: 8ceaddf1d7cd8124ab8e4d1e0cd2f19c5779cb1b
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 40c7f3ce90287a2c86ba4a5e6f16e3720978f71e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637271"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202275"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Graphique de comparaison : application web Bookings et application Bookings Teams
 
 L’application Bookings dans Teams permet aux planificateurs de gérer leurs tâches principales et de modifier certains paramètres. Toutefois, le site web Bookings inclut des fonctionnalités et des paramètres avancés qui ne sont pas encore disponibles dans l’application Teams.
 
-Teams fonctionnalités d’application sont ajoutées en permanence et nous continuerons à mettre à jour cette liste. Pour plus d’informations, consultez la section « **Toutes les fonctionnalités de l’application web Bookings d’origine sont-elles disponibles dans Microsoft Teams ?** ».[](bookings-faq.yml)
+Les fonctionnalités de l’application Teams sont ajoutées en permanence et nous continuerons à mettre à jour cette liste. Pour plus d’informations, consultez la section Toutes **les fonctionnalités de l’application web Bookings d’origine disponibles dans Microsoft Teams.** [](bookings-faq.yml)
 
-| Fonctionnalité | application web Bookings | application Bookings Teams |
+| Fonctionnalité | Application web Bookings | Application Bookings Teams |
 |:---|:---|:---|
 | Créer des calendriers de réservation | Oui | Oui |
 | Ajouter et supprimer du personnel d’un calendrier de réservation | Oui | Oui |

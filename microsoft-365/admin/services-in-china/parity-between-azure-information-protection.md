@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +21,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure Information Protection (AIP) pour Office 365 géré par 21Vianet et comment le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 80cd8d9b848235fc3486ad1952fa58f9d7d1570d
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: b1e140b1862cdfaa8662a3c3794125cd9e156f47
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530165"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192638"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Prise en charge d’Azure Information Protection pour les Office 365 exploités par 21Vianet
 
@@ -149,7 +150,7 @@ Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine
 
 Téléchargez et installez le client d’étiquetage unifié AIP à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Documentation AIP](/azure/information-protection/)
 - [Historique des versions AIP et stratégie de support](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
@@ -229,7 +230,7 @@ Pour plus d’informations, consultez [Qu’est-ce qu’Azure Information Protec
 
     Le scanneur dispose désormais d’un jeton pour s’authentifier auprès d’Azure AD. Ce jeton est valide pendant un an, deux ans ou jamais, en fonction de votre configuration de la clé secrète client **d’application web/API** dans Azure AD. Lorsque le jeton expire, vous devez répéter cette procédure.
 
-1. Exécutez l’applet de commande [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) pour définir le scanneur pour qu’il fonctionne en mode hors connexion. Courir:
+1. Exécutez l’applet de commande [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) pour définir le scanneur pour qu’il fonctionne en mode hors connexion. Exécuter : 
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
@@ -293,7 +294,7 @@ Le tableau suivant répertorie les applets de commande PowerShell pertinentes po
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Définit les paramètres d’un référentiel existant dans votre travail d’analyse de contenu. |
 | | |
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Qu’est-ce que le scanneur d’étiquetage unifié Azure Information Protection ?](/azure/information-protection/deploy-aip-scanner)
 - [Configuration et installation du scanneur d’étiquetage unifié Azure Information Protection (AIP)](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)
