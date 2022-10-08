@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 64b6db32974a7755c46ff4cd87eea87512d8bfc5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 93d113959b138b1b4477fe779c0ce61fd6540634
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683294"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231877"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -588,7 +589,7 @@ Spécifiez si les utilisateurs peuvent envoyer des commentaires à Microsoft en 
 
 
 
-#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Contrôler la connexion à la version grand public de Microsoft Defender
+#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Contrôler la connexion à la version consommateur de Microsoft Defender
 
 Spécifiez si les utilisateurs peuvent se connecter à la version consommateur de Microsoft Defender.
 

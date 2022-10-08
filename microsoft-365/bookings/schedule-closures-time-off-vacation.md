@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
-ms.openlocfilehash: bc119e3d45c625ec89cc4edccbeea34508b6b012
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: 8af013fe6aff3d70c00b28204a66afd367ca2db2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185190"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192110"
 ---
 # <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Planifier les fermetures d’entreprises Bookings, les congés et les congés
 

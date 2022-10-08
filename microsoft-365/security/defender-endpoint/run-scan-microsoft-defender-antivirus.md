@@ -1,5 +1,5 @@
 ---
-title: Exécuter et personnaliser des analyses à la demande dans l’Antivirus Microsoft Defender
+title: Exécuter et personnaliser des analyses à la demande dans Microsoft Defender Antivirus
 description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, de Windows Management Instrumentation ou individuellement sur des points de terminaison avec l’application Sécurité Windows
 keywords: analyse, à la demande, dos, intune, analyse instantanée
 ms.service: microsoft-365-security
@@ -15,14 +15,16 @@ ms.date: 10/22/2021
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 20ba75d7d3cf7b9b2921b14ee902ed6ff1f272b2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 47ad4df4995aad0889ad220b4c7a8b77853a382e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690978"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229655"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender
 
@@ -39,7 +41,7 @@ Vous pouvez exécuter une analyse à la demande sur des points de terminaison in
 Combinée à une protection en temps réel toujours activée, qui examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur accède à un dossier, une analyse rapide permet de fournir une protection forte contre les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. Dans la plupart des cas, une analyse rapide est suffisante et est l’option recommandée pour les analyses planifiées ou à la demande. [En savoir plus sur les types d’analyse](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 
 > [!IMPORTANT]
-> L’Antivirus Microsoft Defender s’exécute dans le contexte du compte [LocalSystem](/windows/win32/services/localsystem-account) lors d’une analyse locale. Pour les analyses réseau, il utilise le contexte du compte d’appareil. Si le compte d’appareil de domaine ne dispose pas des autorisations appropriées pour accéder au partage, l’analyse ne fonctionnera pas. Vérifiez que l’appareil dispose des autorisations d’accès au partage réseau.
+> Microsoft Defender Antivirus s’exécute dans le contexte du compte [LocalSystem](/windows/win32/services/localsystem-account) lors d’une analyse locale. Pour les analyses réseau, il utilise le contexte du compte d’appareil. Si le compte d’appareil de domaine ne dispose pas des autorisations appropriées pour accéder au partage, l’analyse ne fonctionnera pas. Vérifiez que l’appareil dispose des autorisations d’accès au partage réseau.
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Utiliser Microsoft Endpoint Manager pour exécuter une analyse
 
@@ -64,7 +66,7 @@ Utilisez le paramètre suivant :`-scan`
 mpcmdrun.exe -scan -scantype 1
 ```
 
-Pour plus d’informations sur l’utilisation de l’outil et des paramètres supplémentaires, notamment le démarrage d’une analyse complète ou la définition de chemins d’accès, consultez [l’outil de ligne de commande mpcmdrun.exe pour configurer et gérer l’antivirus Microsoft Defender](command-line-arguments-microsoft-defender-antivirus.md).
+Pour plus d’informations sur l’utilisation de l’outil et des paramètres supplémentaires, notamment le démarrage d’une analyse complète ou la définition de chemins d’accès, consultez [l’outil de ligne de commande mpcmdrun.exe pour configurer et gérer Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md).
 
 ## <a name="use-microsoft-intune-to-run-a-scan"></a>Utiliser Microsoft Intune pour exécuter une analyse
 
@@ -86,7 +88,7 @@ Utilisez l’applet de commande suivante :
 Start-MpScan
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec l’Antivirus Microsoft Defender, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter](use-powershell-cmdlets-microsoft-defender-antivirus.md) les [applets](/powershell/module/defender/) de commande antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter Microsoft Defender applets](use-powershell-cmdlets-microsoft-defender-antivirus.md) de commande Antivirus et [Antivirus Defender](/powershell/module/defender/).
 
 ## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>Utiliser WMI (Windows Management Instruction) pour exécuter une analyse
 
