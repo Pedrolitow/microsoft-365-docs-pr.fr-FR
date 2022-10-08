@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Découvrez comment intégrer l’investigation et la réponse automatisées à une solution de création de rapports personnalisée ou tierce.
 ms.date: 01/29/2021
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ff0326e755b6f2be96e99bc9e1894cf1c721ade8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3fa8841972a521515c6952116d25b8fb1654650f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480126"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084218"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Solutions de création de rapports personnalisées ou tierces pour Microsoft Defender pour Office 365
 

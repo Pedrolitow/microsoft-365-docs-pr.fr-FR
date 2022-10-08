@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correction des menaces
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9b9a51bfbfe7cd5ec754c6f3925b91612e58a2d6
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 18b7405baa44bb37b697422826c6977c6c7b9749
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496854"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68083800"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les courriers malveillants remis dans Office 365
 
