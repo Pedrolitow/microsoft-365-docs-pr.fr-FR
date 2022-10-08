@@ -11,15 +11,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Insights
-ms.openlocfilehash: 3f5413d0fe4b55a74b06d743e454da2eb76c0f5b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: ce5200708ffd0ec3b9beb3de43b8a5f75fb734c1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672312"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191956"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365 Network Insights
 

@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: Cet article fournit des liens pour les administrateurs système qui planifient les besoins en bande passante réseau ou améliorent les performances de Skype Entreprise Online.
-ms.openlocfilehash: f1cdd649a80e41fe67dae52abcdd9aff1c7eccf4
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 5ff812b22aa580c5b48cdfbf2369b6a526838e9c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671872"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191868"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimiser les performances de Skype Entreprise Online
 

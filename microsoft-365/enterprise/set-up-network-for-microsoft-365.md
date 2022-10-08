@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -20,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Recherchez des liens vers des articles contenant des informations pour vous aider à configurer votre réseau pour Microsoft 365, notamment une vue d’ensemble de la connectivité réseau et la liste des points de terminaison.
-ms.openlocfilehash: c15935d2b3801bb072c2fdf189726545fa6700ce
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 64b8a73d3e069f095b4f9615151920f152b94325
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670860"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191890"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurer votre réseau pour Microsoft 365
 
@@ -47,17 +48,17 @@ Pour obtenir des conseils sur l’amélioration des performances, consultez [Pla
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Prise en charge de la mise en réseau Microsoft 365 en tant que fournisseur d’équipement réseau
 
-Si vous êtes un fournisseur d’équipement réseau, rejoignez le[programme de partenariat mise en réseau d’Office 365](microsoft-365-networking-partner-program.md). Inscrivez-vous au programme pour développer les principes de connectivité réseau Office 365 dans vos produits et solutions. 
+If you are a network equipment vendor, join the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
 
 ## <a name="office-365-endpoints"></a>Points de terminaison Office 365
 
 Les points de terminaison sont l’ensemble des adresses IP de destination, noms de domaine DNS et URL pour le trafic sur Internet Office 365. 
 
-Pour optimiser les performances aux services Office 365 basés sur le cloud, certains points de terminaison nécessitent une gestion spéciale par les autres navigateurs client et les appareils dans votre réseau de périmètre. Ces appareils incluent pare-feux, SSL Break and Inspect et des appareils d’inspection des paquets, et systèmes de protection contre la perte de données.
+To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
 
 Voir [Gestion des points de terminaison d’Office 365 ](managing-office-365-endpoints.md) pour plus d’informations.
 
-Il existe actuellement cinq différents clouds Office 365. Ce tableau vous permet d’accéder à la liste des points de terminaison pour chacun d’eux.
+Il existe actuellement cinq clouds Office 365 différents. Ce tableau vous permet d’accéder à la liste des points de terminaison pour chacun d’eux.
 
 | Points de terminaison | Description |
 |:-------|:-----|

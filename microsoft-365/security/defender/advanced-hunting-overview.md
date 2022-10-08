@@ -15,17 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: 0203f5df758a530c48bee22d4a3ea6371f1f57a7
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: e3d34f5ed3c62c8f41c4b304215d819345da4146
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812525"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68089188"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherche proactive des menaces avec repérage avancé dans Microsoft 365 Defender
 

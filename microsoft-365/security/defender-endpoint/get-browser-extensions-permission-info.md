@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 5ea24ee248e71cd06b44881da74d84c5e720612c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c67b731e313e6ac703b6990193bad245b10f20c6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698780"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190768"
 ---
 # <a name="get-browser-extensions-permission-information"></a>Obtenir les informations d’autorisation des extensions de navigateur
 

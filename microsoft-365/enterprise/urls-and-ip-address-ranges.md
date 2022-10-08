@@ -3,12 +3,13 @@ title: URL et plages d’adresses IP Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/29/2022
+ms.date: 09/29/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -22,27 +23,27 @@ search.appverid:
 - MOM160
 - BCS160
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
-description: 'Résumé : Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients utilisant des plans Office 365, y compris GCC (Government Community Cloud).'
+description: 'Summary: Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 062116692c0e06d0c16cff84d26d3df6351dd1cc
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: b52c3a4e197fa69e8db85e6ea1a542dd754b16f1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669846"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191832"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL et plages d’adresses IP Office 365
 
-Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients utilisant des plans Office 365, y compris GCC (Government Community Cloud).
+Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).
   
 *Office 365 dans le monde entier (+Cloud de la communauté du secteur public)*\|[Office 365 géré par 21 vianet](urls-and-ip-address-ranges-21vianet.md)\|[Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) \| [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) \|
 
 |Remarques|Télécharger|Utilisation|
 |---|---|---|
-|**Dernière mise à jour :** 29/08/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au journal des modifications](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).|**Utilisation :** nos [fichiers PAC](managing-office-365-endpoints.md#pacfiles) proxy|
+|**Dernière mise à jour :** 29/09/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au journal des modifications](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).|**Utilisation :** nos [fichiers PAC](managing-office-365-endpoints.md#pacfiles) proxy|
 |
 
-Commencez avec la [Gestion des points de terminaison Office 365](managing-office-365-endpoints.md) afin de comprendre nos recommandations pour gérer la connectivité réseau à l’aide de ces données. Les données de points de terminaison sont mises à jour au début de chaque mois avec de nouvelles adresses IP et URL publiées 30 jours avant d’être activées. Cela permet aux clients qui n’ont pas encore de mises à jour automatisées de terminer leurs processus avant qu’une nouvelle connectivité soit requise. Les points de terminaison peuvent également être mis à jour au cours du mois si besoin est pour traiter les demandes de support, les incidents de sécurité ou autres exigences opérationnelles immédiates. Les données contenues sur la page ci-dessous sont générées à partir des services web REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devriez aller directement au [service web](microsoft-365-ip-web-service.md).
+Start with [Managing Office 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated as needed at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This cadence allows for customers who don't yet have automated updates to complete their processes before new connectivity is required. Endpoints may also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page below is all generated from the REST-based web services. If you're using a script or a network device to access this data, you should go to the [Web service](microsoft-365-ip-web-service.md) directly.
 
 Les données de point de terminaison ci-dessous répertorient les conditions requises pour la connectivité de l’ordinateur d’un utilisateur à Office 365. Pour plus d’informations sur les adresses IP utilisées pour les connexions réseau de Microsoft vers un réseau client, parfois appelées connexions réseau entrantes ou hybrides, voir [Points de terminaison supplémentaires](additional-office365-ip-addresses-and-urls.md) pour plus d’informations.
 
@@ -50,19 +51,19 @@ Les points de terminaison sont regroupés en quatre zones de service représenta
 
 Les colonnes de données affichées sont :
 
-- **ID** : numéro d’identification de la ligne, également connu sous forme d’un ensemble de points de terminaison. Cet ID est le même que celui retourné par le service web pour l’ensemble de points de terminaison.
+- **ID**: The ID number of the row, also known as an endpoint set. This ID is the same as is returned by the web service for the endpoint set.
 
-- **Catégorie** : Indique si l'ensemble de points de terminaison est classé dans la catégorie **Optimiser**, **Autoriser** ou **Par défaut**. Cette colonne indique également les ensembles des points de terminaison qui doivent avoir une connectivité réseau. Pour les ensembles des points de terminaison qui ne sont pas tenus d'avoir une connectivité réseau, nous fournissons des notes dans ce champ pour indiquer la fonctionnalité qui manquerait si l'ensemble des points de terminaison était bloqué. Si vous excluez une zone de service entière, les ensembles de points de terminaison énumérés comme requis ne nécessitent pas de connectivité.
+- **Category**: Shows whether the endpoint set is categorized as **Optimize**, **Allow**, or **Default**. This column also lists which endpoint sets are required to have network connectivity. For endpoint sets that aren't required to have network connectivity, we provide notes in this field to indicate what functionality would be missing if the endpoint set is blocked. If you're excluding an entire service area, the endpoint sets listed as required don't require connectivity.
 
    Vous pouvez en savoir plus sur ces catégories et des conseils pour leur gestion dans [les nouvelles catégories de points de terminaison Office 365](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories).
 
-- **ER** : ceci est **oui** si l’ensemble de points de terminaison est pris en charge sur Azure ExpressRoute avec des préfixes de route Office 365. La communauté BGP qui inclut les préfixes d’itinéraire affichés s’aligne sur la zone de service répertoriée. Lorsque l’ER a la valeur **Non**, cela signifie qu’ExpressRoute n’est pas pris en charge pour cet ensemble de points de terminaison.
+- **ER**: This is **Yes** if the endpoint set is supported over Azure ExpressRoute with Office 365 route prefixes. The BGP community that includes the route prefixes shown aligns with the service area listed. When ER is **No**, this means that ExpressRoute is not supported for this endpoint set.
 
    Certains itinéraires peuvent être publiés dans plusieurs communautés BGP, ce qui permet aux points de terminaison d’une plage d’adresses IP donnée de traverser le circuit ER, mais ne sont toujours pas pris en charge. Dans tous les cas, la valeur de la colonne ER d’un jeu de points de terminaison donné doit être respectée. Pour plus d’informations sur les communautés BGP, consultez [Utilisation de communautés BGP dans les scénarios ExpressRoute pour Office 365](bgp-communities-in-expressroute.md#key-planning-considerations-to-using-bgp-communities).
 
-- **Adresses** : répertorie les noms de domaine complets ou les noms de domaine génériques et les plages d’adresses IP pour l’ensemble de points de terminaison. Notez qu’une plage d’adresses IP est au format CIDR et peut inclure de nombreuses adresses IP individuelles dans le réseau spécifié.
+- **Addresses**: Lists the FQDNs or wildcard domain names and IP address ranges for the endpoint set. Note that an IP address range is in CIDR format and may include many individual IP addresses in the specified network.
 
-- **Ports** : répertorie les ports TCP ou UDP qui sont combinés avec les adresses IP répertoriées pour former le point de terminaison réseau. Vous remarquerez peut-être une duplication dans les plages d’adresses IP où différents ports sont répertoriés.
+- **Ports**: Lists the TCP or UDP ports that are combined with listed IP addresses to form the network endpoint. You may notice some duplication in IP address ranges where there are different ports listed.
 
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 

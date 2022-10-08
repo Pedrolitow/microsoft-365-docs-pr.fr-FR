@@ -1,6 +1,6 @@
 ---
 title: Étapes de configuration rapide des stratégies de sécurité prédéfinies Standard ou Strict pour Microsoft Defender pour Office 365
-description: Étape de configuration des stratégies de sécurité prédéfinies dans Microsoft Defender pour Office 365 afin que vous ayez la sécurité recommandée par le produit. Les stratégies prédéfinies définissent un profil de sécurité *standard* ou *strict*. Définissez ces paramètres et Microsoft Defender pour Office 365 gérerez et conservez ces contrôles de sécurité pour vous.
+description: Étape de configuration des stratégies de sécurité prédéfinies dans Microsoft Defender pour Office 365 afin que vous ayez la sécurité recommandée par le produit. Les stratégies prédéfinies définissent un profil de sécurité *standard* ou *strict*. Définissez ces contrôles et Microsoft Defender pour Office 365 gérerez et conservez ces contrôles de sécurité pour vous.
 search.product: ''
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -13,29 +13,32 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 70ec57955b2f7ce9c79c464334842659a3db57f3
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 927fbd7c8e2e6b9a671ab18abda4d190544f1b79
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740267"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222201"
 ---
 # <a name="set-up-steps-for-the-standard-or-strict-preset-security-policies-in-microsoft-defender-for-office-365"></a>Configurer les étapes des stratégies de sécurité prédéfinies Standard ou Strict dans Microsoft Defender pour Office 365
 
-Microsoft Defender pour Office 365 vous a-t-il donné un moyen d’appliquer des stratégies de sécurité qu’il conserverait ensuite ?
+Est-ce que Microsoft Defender pour Office 365 vous a donné un moyen d’appliquer des stratégies de sécurité qu’elle conserverait alors ?
 
 Saviez-vous que lorsqu’une bonne pratique pour un contrôle de sécurité change en raison de l’évolution du paysage des menaces ou que de nouveaux contrôles sont ajoutés, Microsoft met *automatiquement* à jour les paramètres de contrôle de sécurité pour les utilisateurs affectés à une stratégie de sécurité *prédéfinies Standard* ou *Strict* ?
 
 En utilisant des stratégies de sécurité prédéfinies (*Standard* ou *Strict*), vous disposerez toujours de *la configuration recommandée par Microsoft, meilleure pratique,* pour vos utilisateurs.
 
-**Suivez les étapes ci-dessous** pour appliquer des stratégies de sécurité prédéfinies et disposer de Microsoft Defender pour Office 365 gérer et gérer les contrôles de sécurité *pour vous*.
+**Suivez les étapes ci-dessous** pour appliquer des stratégies de sécurité prédéfinies et avoir Microsoft Defender pour Office 365 gérer et gérer les contrôles de sécurité *pour vous*.
 
 ## <a name="what-you-will-need"></a>Ce dont vous aurez besoin
-- Microsoft Defender pour Office 365 plan 1 ou ultérieur (inclus dans E5)
+- Microsoft Defender pour Office 365 plan 1 ou supérieur (inclus dans E5)
 - Autorisations suffisantes (rôle Administrateur de sécurité)
 - 5 minutes pour effectuer les étapes ci-dessous.
 
@@ -63,7 +66,7 @@ Une fois que vous avez choisi entre les stratégies de préréglage de sécurit�
 1. Sélectionnez **Stratégies de sécurité prédéfinies** sous le titre **Stratégies modèles**
 1. Sélectionnez **Gérer** sous la présélection de protection Standard.
 1. Sélectionnez **Tous les destinataires** à appliquer Exchange Online Protection à l’échelle du locataire, ou sélectionnez **Destinataires spécifiques** pour ajouter manuellement des utilisateurs, des groupes ou des domaines auxquels vous souhaitez appliquer la stratégie de protection. Cliquez sur le bouton **Suivant** .
-1. Sélectionnez **Tous les destinataires** pour appliquer Defender pour Office 365 Protection à l’échelle du locataire, ou sélectionnez **Destinataires spécifiques** pour ajouter manuellement des utilisateurs, des groupes ou des domaines auxquels vous souhaitez appliquer la stratégie de protection. Cliquez sur le bouton **Suivant** .
+1. Sélectionnez **Tous les destinataires** pour appliquer Defender pour Office 365 protection à l’échelle du locataire, ou sélectionnez **Destinataires spécifiques** pour ajouter manuellement des utilisateurs, des groupes ou des domaines auxquels vous souhaitez appliquer la stratégie de protection. Cliquez sur le bouton **Suivant** .
 1. Dans la section **Protection** de l’emprunt d’identité, ajoutez des adresses e-mail & domaines à protéger contre les attaques d’emprunt d’identité, puis ajoutez les expéditeurs approuvés et les domaines auxquelles vous ne souhaitez pas appliquer la protection d’emprunt d’identité, puis appuyez sur **Suivant**.
 1. Cliquez sur le bouton **Confirmer** .
 1. Sélectionnez le lien **Gérer** dans la présélection De protection stricte.

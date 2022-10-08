@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et d’autres services sur Windows DNS basé sur Windows microsoft.
-ms.openlocfilehash: 0349366e1cb3af23de1161a69b9b37305cc1237a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Apprenez à vérifier votre domaine et à configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services dans DNS windows pour Microsoft.
+ms.openlocfilehash: 8a72bb2a6620f5eb52153c8d4c237a2733b21fcd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313480"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206936"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements pour Microsoft à l'aide de DNS Windows
 
@@ -36,74 +37,74 @@ ms.locfileid: "63313480"
    
 Si vous hébergez vos propres enregistrements DNS à l'aide du DNS Windows, suivez les étapes décrites dans cet article pour configurer vos enregistrements associés au courrier, à Skype Entreprise Online, etc.
   
-Pour commencer, vous devez trouver vos enregistrements [DNS dans Windows DNS basé sur un système DNS](#find-your-dns-records-in-windows-based-dns) afin de pouvoir les mettre à jour. En outre, si vous envisagez de synchroniser votre annuaire Active Directory local avec Microsoft, consultez l’adresse de messagerie [non routable utilisée en tant qu’UPN dans active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory) local.
+Pour commencer, vous devez [rechercher vos enregistrements DNS dans DNS basé sur Windows](#find-your-dns-records-in-windows-based-dns) afin de pouvoir les mettre à jour. En outre, si vous envisagez de synchroniser votre Active Directory local avec Microsoft, consultez [l’adresse e-mail non routable utilisée en tant qu’UPN dans votre annuaire Active Directory local](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
   
-Trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+Problèmes liés au flux de courrier ou à d’autres problèmes après l’ajout d’enregistrements DNS. Consultez [Résolution des problèmes après la modification de votre nom de domaine ou de vos enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Rechercher vos enregistrements DNS dans un DNS Windows
-<a name="BKMK_find_your_dns_1"> </a> Go to the page that has the DNS records for your domain. Si vous travaillez dans Windows Server 2008, allez à **StartRun** > . Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et **r**. Tapez **dnsmgmnt.msc**, puis sélectionnez **OK**. Dans le Gestionnaire DNS, développez **zones\<DNS server name\>\> de recherche avant**. Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
+<a name="BKMK_find_your_dns_1"> </a> Accédez à la page qui contient les enregistrements DNS de votre domaine. Si vous travaillez dans Windows Server 2008, accédez à **Démarrer** > **l’exécution**. Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et **r**. Tapez **dnsmgmnt.msc**, puis sélectionnez **OK**. Dans le Gestionnaire DNS, **développez\<DNS server name\>\> Zones de recherche avancée**. Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
    
 ## <a name="add-mx-record"></a>Ajouter l'enregistrement MX
 <a name="BKMK_add_MX"> </a>
 
-Ajoutez un enregistrement MX afin que le courrier électronique de votre domaine soit envoyé à Microsoft.
-- L’enregistrement MX que vous allez ajouter inclut une valeur  (la valeur d’adresse Points vers) \<MX token\>qui ressemble à ceci : .mail.protection.outlook.com, \<MX token\> où est une valeur comme MSxxxxxxx. 
-- À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Microsoft, copiez la valeur répertoriée sous Adresse des points. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
-- Dans la page Gestionnaire DNS du domaine, sélectionnez **ActionMail** >  **Exchanger (MX).** Pour trouver cette page pour le domaine, voir Rechercher vos enregistrements [DNS dans Windows DNS basé sur un nom de domaine.](#find-your-dns-records-in-windows-based-dns)  
-- Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes : 
-    - Nom de l’hôte :  
-    - @Address : collez la valeur d’adresse points que vous avez copiée ici à partir de Microsoft.  
-    - Préf : 
+Ajoutez un enregistrement MX pour que le courrier électronique de votre domaine soit envoyé à Microsoft.
+- L’enregistrement MX que vous allez ajouter inclut une valeur (la valeur **points à adresse** ) qui ressemble à ceci : \<MX token\>.mail.protection.outlook.com, où \<MX token\> se trouve une valeur comme MSxxxxxxxxx. 
+- À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Microsoft, copiez la valeur répertoriée sous Points to address. Vous allez utiliser cette valeur dans l’enregistrement que vous créez dans cette tâche. 
+- Dans la page Gestionnaire DNS du domaine, accédez à **Action** > **Mail Exchanger (MX).** Pour trouver cette page pour le domaine, consultez [Rechercher vos enregistrements DNS dans DNS basé sur Windows](#find-your-dns-records-in-windows-based-dns).  
+- Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes : 
+    - Nom d’hôte : 
+    - @Address : collez les points pour la valeur d’adresse que vous venez de copier à partir de Microsoft ici.  
+    - Pref: 
 - Sélectionnez **Enregistrer les modifications**.
-- Supprimez les enregistrements MX obsolètes. Si vous avez d’anciens enregistrements MX pour ce domaine qui routent le courrier électronique ailleurs, cochez la case en regard de chaque ancien enregistrement, puis sélectionnez **DeleteOK** > . 
+- Supprimez les enregistrements MX obsolètes. Si vous avez d’anciens enregistrements MX pour ce domaine qui routent l’e-mail ailleurs, activez la case à cocher en regard de chaque ancien enregistrement, puis **sélectionnez Supprimer** > **OK**. 
    
 ## <a name="add-cname-records"></a>Ajouter les enregistrements CNAME
 <a name="BKMK_add_CNAME"> </a>
 
-Ajoutez les enregistrements CNAME requis pour Microsoft. Si d’autres enregistrements CNAME sont répertoriés dans Microsoft, ajoutez-les en suivant les mêmes étapes générales que celles indiquées ici.
+Ajoutez les enregistrements CNAME requis pour Microsoft. Si des enregistrements CNAME supplémentaires sont répertoriés dans Microsoft, ajoutez ceux qui suivent les mêmes étapes générales que celles présentées ici.
   
 > [!IMPORTANT]
-> Si vous avez la gestion des périphériques mobiles (MDM) pour Microsoft, vous devez créer deux enregistrements CNAME supplémentaires. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. (Si vous n’avez pas de gestion des mdm, vous pouvez ignorer cette étape.) 
+> Si vous avez Mobile Gestion des appareils (MDM) pour Microsoft, vous devez créer deux enregistrements CNAME supplémentaires. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. (Si vous n’avez pas de GPM, vous pouvez ignorer cette étape.) 
 
-- Dans la page Gestionnaire DNS du domaine, sélectionnez **ActionCNAME** >  **(CNAME).**
-- Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
+- Dans la page Gestionnaire DNS du domaine, accédez à **Action** > **CNAME (CNAME).**
+- Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes :  
     - Nom d’hôte : découverte automatique
     - Type : 
     - CNAMEAddress : autodiscover.outlook.com
-- **Sélectionnez OK**.
+- Sélectionnez **O** K.
 
 Ajoutez l'enregistrement CNAME SIP. 
-- Dans la page Gestionnaire DNS du domaine, sélectionnez **Action** \> **CNAME (CNAME).** 
-- Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
+- Dans la page Gestionnaire DNS du domaine, accédez à **Action** \> **CNAME (CNAME).** 
+- Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes :  
     - Nom d’hôte : sip
     - Type : CNAME
     - Adresse : sipdir.online.lync.com
 - Sélectionnez **OK**.
 
 Ajoutez l'enregistrement de découverte automatique CNAME Skype Entreprise Online.  
-- Dans la page Gestionnaire DNS du domaine, sélectionnez **Action** \> **CNAME (CNAME).** Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
+- Dans la page Gestionnaire DNS du domaine, accédez à **Action** \> **CNAME (CNAME).** Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes :  
     - Nom d’hôte : lyncdiscover
     - Type : CNAME
     - Adresse : webdir.online.lync.com
 - Sélectionnez **OK**.
    
-### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Ajouter deux enregistrements CNAME pour la gestion des périphériques mobiles (MDM) pour Microsoft
+### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Ajouter deux enregistrements CNAME pour Mobile Gestion des appareils (MDM) pour Microsoft
 
 > [!IMPORTANT]
-> Si vous avez la gestion des périphériques mobiles (MDM) pour Microsoft, vous devez créer deux enregistrements CNAME supplémentaires. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. >(Si vous n’avez pas de gestion des mdm, vous pouvez ignorer cette étape.) 
+> Si vous avez Mobile Gestion des appareils (MDM) pour Microsoft, vous devez créer deux enregistrements CNAME supplémentaires. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. >(Si vous n’avez pas de GPM, vous pouvez ignorer cette étape.) 
   
 
 Ajoutez l'enregistrement CNAME Enterpriseregistration MDM.  
-- Dans la page Gestionnaire DNS du domaine, sélectionnez **Action** \> **CNAME (CNAME).** 
-- Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
+- Dans la page Gestionnaire DNS du domaine, accédez à **Action** \> **CNAME (CNAME).** 
+- Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes :  
 - Nom d’hôte : enterpriseregistration
 - Type : CNAME
 - Adresse : enterpriseregistration.windows.net
 - Sélectionnez **OK**. 
 
 Ajoutez l'enregistrement CNAME Enterpriseenrollment MDM. 
--  Dans la page Gestionnaire DNS du domaine, sélectionnez **Action** \> **CNAME (CNAME).** 
--  Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
+-  Dans la page Gestionnaire DNS du domaine, accédez à **Action** \> **CNAME (CNAME).** 
+-  Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes :  
     - Nom d’hôte : enterpriseenrollment
     - Type : CNAME
     - Adresse : enterpriseenrollment-s.manage.microsoft.com
@@ -117,11 +118,11 @@ Ajoutez l'enregistrement CNAME Enterpriseenrollment MDM.
   
 Ajoutez l'enregistrement TXT SPF pour votre domaine pour éviter le courrier indésirable.
   
-- Vous disposez peut-être déjà d'autres chaînes dans la valeur TXT pour cet enregistrement (telles que les chaînes pour la courrier électronique publicitaire). Vous pouvez les conserver. Conservez ces chaînes et ajoutez celle-ci, en plaçant des guillemets autour de chaque chaîne pour les séparer. 
-- Dans la page Gestionnaire DNS de votre domaine, sélectionnez **Texte de l’action** \> **(TXT).** 
--  Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes. 
+- You might already have other strings in the TXT value for this record (such as strings for marketing email), which is fine. Leave those strings in place and add this one, placing double-quotes around each string to separate them. 
+- Dans la page Gestionnaire DNS de votre domaine, accédez à Texte **d’action** \> **(TXT).** 
+-  Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes. 
  > [!IMPORTANT]
-> Dans certaines versions du Gestionnaire DNS Windows, le domaine a peut-être été mis en place de sorte que lorsque vous créez un enregistrement txt, le nom d’accueil se définisse par défaut sur le domaine parent. Dans cette situation, lors de l'ajout d'un enregistrement TXT, définissez le nom d'hôte sur vide (sans valeur) au lieu de le définir sur @ ou sur le nom de domaine. 
+> Dans certaines versions de Windows DNS Manager, le domaine a peut-être été configuré de sorte que lorsque vous créez un enregistrement txt, le nom d’accueil est défini par défaut sur le domaine parent. Dans cette situation, lors de l'ajout d'un enregistrement TXT, définissez le nom d'hôte sur vide (sans valeur) au lieu de le définir sur @ ou sur le nom de domaine. 
 
 -  Type d’hôte : @
 -  Type d’enregistrement : TXT
@@ -135,9 +136,9 @@ Ajoutez l'enregistrement TXT SPF pour votre domaine pour éviter le courrier ind
 Ajoutez les deux enregistrements SRV requis pour Microsoft.
 
 Ajoutez l'enregistrement SRV SIP pour les conférences web Skype Entreprise Online.  <br/> 
--  Dans la page Gestionnaire DNS de votre domaine, sélectionnez **Action** \> **Autres nouveaux enregistrements**. 
--   Dans la **fenêtre Type d’enregistrement** de ressource, sélectionnez **Emplacement du service (SRV),** puis **sélectionnez Créer un enregistrement**. 
--   Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
+-  Dans la page Gestionnaire DNS de votre domaine, accédez à **Action** \> **Other New Records**. 
+-   Dans la fenêtre **Type d’enregistrement** de ressource, sélectionnez **L’emplacement du service (SRV),** puis **sélectionnez Créer un enregistrement**. 
+-   Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes :  
     -  Service : _sip
     -  Protocole : _tls
     -  Priorité : 100
@@ -148,9 +149,9 @@ Ajoutez l'enregistrement SRV SIP pour les conférences web Skype Entreprise Onli
 
 
 Ajoutez l'enregistrement SRV SIP pour la fédération Skype Entreprise Online.  
--  Dans la page Gestionnaire DNS de votre domaine, sélectionnez **Action** \> **Autres nouveaux enregistrements**.  
--  Dans la **fenêtre Type d’enregistrement** de ressource, sélectionnez **Emplacement du service (SRV),** puis **sélectionnez Créer un enregistrement**. 
--   Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
+-  Dans la page Gestionnaire DNS de votre domaine, accédez à **Action** \> **Other New Records**.  
+-  Dans la fenêtre **Type d’enregistrement** de ressource, sélectionnez **L’emplacement du service (SRV),** puis **sélectionnez Créer un enregistrement**. 
+-   Dans la boîte **de dialogue Nouvel enregistrement de ressource** , vérifiez que les champs sont définis avec précision sur les valeurs suivantes :  
     -  Service : _sipfederationtls
     -  Protocole : _tcp
     -  Priorité : 100
@@ -162,54 +163,54 @@ Ajoutez l'enregistrement SRV SIP pour la fédération Skype Entreprise Online.
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Ajouter un enregistrement pour vérifier que vous êtes propriétaire du domaine, si ce n'est déjà fait
 <a name="BKMK_verify"> </a>
 
-Avant d’ajouter les enregistrements DNS pour configurer votre services Microsoft, Microsoft doit confirmer que vous êtes propriétaire du domaine que vous ajoutez. Pour ce faire, vous ajoutez un enregistrement, en suivant les étapes ci-dessous.
+Avant d’ajouter les enregistrements DNS pour configurer vos services Microsoft, Microsoft doit confirmer que vous êtes propriétaire du domaine que vous ajoutez. Pour ce faire, vous ajoutez un enregistrement, en suivant les étapes ci-dessous.
   
 > [!NOTE]
-> Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. 
+> Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine, il n’a pas d’autre fonction. 
   
 
-1. Recueillir des informations de Microsoft.  <br/> 
+1. Collectez des informations auprès de Microsoft.  <br/> 
 2. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>. 
-3. Dans la page **Domaines** , dans la colonne **Actions** du domaine que vous vérifiez, sélectionnez **Démarrer la configuration**. 
-4. Dans la page **Ajouter un domaine à Microsoft** , sélectionnez **Démarrer l’étape 1**. 
-5. On the **Confirm that you own your domain** page, in the **See instructions for performing this step with** drop-down list, choose **General instructions**. 
+3. Dans la page **Domaines** , dans la colonne **Actions** du domaine que vous vérifiez, **sélectionnez Démarrer l’installation**. 
+4. Dans la page **Ajouter un domaine à Microsoft** , **sélectionnez Démarrer l’étape 1**. 
+5. Dans la page **Confirmer que vous êtes propriétaire de votre domaine** , dans les **instructions voir pour effectuer cette étape avec** la liste déroulante, choisissez **Instructions générales**. 
 6. Dans le tableau, copiez la valeur Adresse de destination ou de pointage. Vous en aurez besoin au cours de l'étape suivante. Nous vous recommandons de copier et coller cette valeur, afin que l'espacement reste correct.
 
 Ajoutez un enregistrement TXT. 
--  Dans la page Gestionnaire DNS de votre domaine, sélectionnez **Texte de l’action** \> **(TXT).** 
--   Dans la **boîte de dialogue Nouvel enregistrement de** ressource, sélectionnez **Modifier**.  
--  Dans la **zone Noms d’hôte** personnalisés de la boîte de dialogue Nouvel enregistrement de ressource, assurez-vous que les champs sont définies sur les valeurs suivantes. 
+-  Dans la page Gestionnaire DNS de votre domaine, accédez à Texte **d’action** \> **(TXT).** 
+-   Dans la boîte **de dialogue Nouvel enregistrement de ressource** , **sélectionnez Modifier**.  
+-  Dans la zone **Noms d’hôte personnalisés** de la boîte de dialogue **Nouvel enregistrement de ressource** , assurez-vous que les champs sont définis avec précision sur les valeurs suivantes. 
 
 > [!IMPORTANT] 
-> Dans certaines versions du Gestionnaire DNS Windows, le domaine a peut-être été mis en place de sorte que lorsque vous créez un enregistrement txt, le nom d’accueil se définisse par défaut sur le domaine parent. Dans cette situation, lors de l'ajout d'un enregistrement TXT, définissez le nom d'hôte sur vide (sans valeur) au lieu de le définir sur @ ou sur le nom de domaine. 
+> Dans certaines versions de Windows DNS Manager, le domaine a peut-être été configuré de sorte que lorsque vous créez un enregistrement txt, le nom d’accueil est défini par défaut sur le domaine parent. Dans cette situation, lors de l'ajout d'un enregistrement TXT, définissez le nom d'hôte sur vide (sans valeur) au lieu de le définir sur @ ou sur le nom de domaine. 
 
 - Nom d’hôte : @
 - Type : TXT
-- Adresse : collez la valeur Destination ou Pointe vers l’adresse que vous avez copiée ici à partir de Microsoft.  
-- **Sélectionnez OKDone** > .
+- Adresse : collez ici la valeur Destination ou Points to Address que vous venez de copier à partir de Microsoft.  
+- Sélectionnez **OK** > **Terminé**.
 
 Vérifiez votre domaine dans Microsoft.  
 > [!IMPORTANT]
-> Patientez environ 15 minutes avant de le faire, afin que l’enregistrement que vous venons de créer puisse être mis à jour sur Internet.       
+> Attendez environ 15 minutes avant de procéder ainsi, afin que l’enregistrement que vous venez de créer puisse être mis à jour sur Internet.       
 
-- Revenir à Microsoft et suivez les étapes ci-dessous pour demander une vérification. La vérification recherche l'enregistrement TXT que vous avez ajouté à l'étape précédente. Lorsqu'elle trouve l'enregistrement TXT correct, le domaine est vérifié.  
-1. Dans le centre d’administration, allez à la page **Domaines** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">d’installation</a> .
-2. Dans la page **Domaines** , dans la colonne **Action** du domaine que vous vérifiez, sélectionnez **Démarrer la configuration**. 
-3. Dans la page **Confirmer que vous** êtes propriétaire de votre domaine, sélectionnez Terminé **, vérifiez** maintenant, puis, dans la boîte de dialogue de confirmation, sélectionnez **Terminer**. 
+- Retour à Microsoft et suivez les étapes ci-dessous pour demander une vérification de vérification. La vérification recherche l'enregistrement TXT que vous avez ajouté à l'étape précédente. Lorsqu'elle trouve l'enregistrement TXT correct, le domaine est vérifié.  
+1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a> **d’installation**\>.
+2. Dans la page **Domaines** , dans la colonne **Action** du domaine que vous vérifiez, **sélectionnez Démarrer l’installation**. 
+3. Dans la page **Confirmer que vous êtes propriétaire de votre domaine** , sélectionnez **Terminé, Vérifiez maintenant**, puis dans la boîte de dialogue de confirmation, **sélectionnez Terminer**. 
    
 > [!NOTE]
->  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Adresse de courrier non routable utilisée en tant qu'UPN dans votre annuaire Active Directory local
 <a name="BKMK_ADNote"> </a>
 
-Si vous envisagez de synchroniser votre annuaire Active Directory local avec Microsoft, vous devez vous assurer que le suffixe du nom d’utilisateur principal (UPN) Active Directory est un suffixe de domaine valide, et non un suffixe de domaine non pris en compte tel que @contoso.local. Si vous devez modifier votre suffixe UPN, voir Comment préparer un domaine [non routable pour la synchronisation d’annuaires](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md).
+Si vous envisagez de synchroniser votre Active Directory local avec Microsoft, vous devez vous assurer que le suffixe de nom d’utilisateur principal (UPN) Active Directory est un suffixe de domaine valide et non un suffixe de domaine non pris en charge tel que @contoso.local. Si vous devez modifier votre suffixe UPN, consultez [Comment préparer un domaine non routable pour la synchronisation d’annuaires](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md).
   
 > [!NOTE]
->  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Transférer un domaine de Microsoft 365 vers un autre hôte](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (article)\
+[Transférer un domaine de Micrsoft 365 vers un autre hôte](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (article)\
 [Pilote Microsoft 365 à partir de mon domaine personnalisé](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)\
 [FAQ sur les domaines](../setup/domains-faq.yml) (article)

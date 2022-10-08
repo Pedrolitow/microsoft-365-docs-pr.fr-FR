@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: a26ce96ba8ffbea080baa941cff5258d186ed568
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 58a3280723c5473bb45b11bf86107883aeb02c37
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737265"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222669"
 ---
 # <a name="troubleshooting-malware-submission-errors-caused-by-administrator-block"></a>Résolution des erreurs d’envoi de programmes malveillants provoquées par un bloc administrateur
 
@@ -91,7 +93,7 @@ Si aucune de ces options ne résout le problème, essayez les étapes suivantes 
 
 4. Passez en revue les autorisations requises par l’application, puis sélectionnez **Accepter**.
 
-5. Vérifiez que les autorisations sont appliquées dans le [Azure-Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/ce60a464-5fca-4819-8423-bcb46796b051).
+5. Vérifiez que les autorisations sont appliquées dans le [Portail Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/ce60a464-5fca-4819-8423-bcb46796b051).
 
    ![Vérifiez que les autorisations sont appliquées.](../../media/security-intelligence-images/msi-permissions.jpg)
 

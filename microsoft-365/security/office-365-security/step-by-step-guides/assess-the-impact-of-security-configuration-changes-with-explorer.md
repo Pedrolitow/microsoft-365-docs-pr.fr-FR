@@ -14,15 +14,18 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 search.appverid: met150
-ms.openlocfilehash: ea00bf5375d94a3ea7722fcde32c2ada543b187f
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: d088aac7c27533533656bf92f2c44680223a4a20
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799327"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222889"
 ---
 # <a name="assess-the-impact-of-security-configuration-changes-with-explorer"></a>Évaluer l’impact des modifications de configuration de sécurité avec l’Explorateur
 

@@ -15,12 +15,13 @@ f1.keywords:
 - NOCSH
 description: Cet article contient des informations sur l’utilisation de fenêtres contextuelles allégées pour améliorer les performances de téléchargement des messages dans Outlook sur le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 85045c1227509c42eea432a1fb72d639693aa299
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.collection: scotvorg
+ms.openlocfilehash: d266ba44930adbdc41f06c2e4b1658f9efa9bc35
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671828"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191714"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Utiliser des fenêtres contextuelles maigres pour réduire la mémoire utilisée lors de la lecture des messages électroniques
 

@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom:
@@ -18,12 +20,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: Découvrez comment utiliser PowerShell pour déplacer du contenu à partir d’un système de messagerie source au fil du temps à l’aide d’une migration intermédiaire vers Microsoft 365.
-ms.openlocfilehash: 4fc95a075b377e89d7fcc186515ef852a0bb0c5a
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: be60b6469b8e432728ef174104403900e115e68f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669142"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191692"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration intermédiaire vers Microsoft 365
 
@@ -36,11 +38,11 @@ Cet article décrit les tâches nécessaires pour effectuer une migration de mes
 > [!NOTE]
 > Vous pouvez également utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a> pour effectuer une migration intermédiaire. Voir [Effectuer une migration intermédiaire de l’e-mail vers Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 Durée d'exécution estimée de cette tâche : entre 2 et 5 minutes pour créer un lot de migration. Une fois la migration du lot commencée, la durée de l'opération varie en fonction du nombre de boîtes aux lettres incluses dans le lot, de la taille de chacune d'elles et de la capacité réseau disponible. Pour plus d’informations sur d’autres facteurs qui affectent le temps nécessaire pour migrer des boîtes aux lettres vers Microsoft 365, consultez [Performances de migration](/Exchange/mailbox-migration/office-365-migration-best-practices).
 
-Des autorisations doivent vous être attribuées que vous puissiez exécuter cette procédure. Pour connaître les autorisations nécessaires, consultez l'entrée « Migration » dans la rubrique [Autorisations des destinataires](/exchange/recipients-permissions-exchange-2013-help).
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in the [Recipients Permissions](/exchange/recipients-permissions-exchange-2013-help) topic.
 
 Pour utiliser les cmdlets Exchange Online PowerShell, vous devez vous connecter et importer les cmdlets dans votre session Windows PowerShell locale. Pour obtenir des instructions[, consultez Se connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -52,14 +54,14 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
 
 Avant de migrer des boîtes aux lettres vers Microsoft 365 à l’aide d’une migration intermédiaire, vous devez apporter quelques modifications à votre environnement Exchange.
 
- **Configurer Outlook Anywhere sur votre Exchange Server local** Le service de migration de la messagerie utilise Outlook Anywhere (également appelé RPC sur HTTP) pour se connecter à votre Exchange Server local. Pour plus d'informations sur la configuration d'Outlook Anywhere pour Exchange Server 2007 et Exchange 2003, consultez les rubriques suivantes :
+ **Configure Outlook Anywhere on your on-premises Exchange Server** The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. For information about how to set up Outlook Anywhere for Exchange Server 2007, and Exchange 2003, see the following:
 
 - [Exchange 2007 : Procédure d'activation d'Outlook Anywhere](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
 
 - [Procédure de configuration d'Outlook Anywhere avec Exchange 2003](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
 
 > [!IMPORTANT]
-> Vous devez utiliser un certificat émis par une autorité de certification (AC) approuvée pour votre configuration Outlook Anywhere. Outlook Anywhere ne peut pas être configuré avec un certificat auto-signé. Pour plus d'informations, consultez la rubrique [Procédure de configuration de SSL pour Outlook Anywhere](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
+> You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
 
  **Facultatif : vérifiez que vous pouvez vous connecter à votre organisation Exchange à l'aide d'Outlook Anywhere** Pour tester vos paramètres de connexion, essayez l'une des méthodes suivantes :
 
@@ -93,11 +95,11 @@ Pour migrer les boîtes aux lettres, l’administrateur doit disposer de l’un 
 
 Pour obtenir des instructions sur la définition de ces autorisations, consultez [Affecter des autorisations pour migrer des boîtes aux lettres vers Microsoft 365](/Exchange/mailbox-migration/assign-permissions-for-migration).
 
- **Désactiver la messagerie unifiée (MU)** Si la messagerie unifiée est activée pour les boîtes aux lettres locales que vous migrez, désactivez-la avant la migration. Réactivez-la ensuite pour les boîtes aux lettres une fois la migration terminée. Pour la procédure correspondante, voir [Désactivation d'une messagerie unifiée pour un utilisateur](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80)).
+ **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see[disable unified messaging](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80)).
 
  **Utilisez la synchronisation d’annuaires pour créer des utilisateurs dans Microsoft 365.** Vous utilisez la synchronisation d’annuaires pour créer tous les utilisateurs locaux de votre organisation Microsoft 365.
 
-Vous devez attribuer une licence aux utilisateurs créés. Vous disposez pour cela de 30 jours à compter de leur création. Pour la procédure d'ajout de licences, voir [Étape 8 : Exécutez les tâches post-migration](#step-8-complete-post-migration-tasks).
+You need to license the users after they're created. You have 30 days to add licenses after the users are created. For steps to add licenses, see [Step 8: Complete post-migration tasks](#step-8-complete-post-migration-tasks).
 
  Vous pouvez utiliser l’outil de synchronisation Microsoft Azure Active Directory (Azure AD) ou les services de synchronisation Microsoft Azure AD pour synchroniser et créer vos utilisateurs locaux dans Microsoft 365. Une fois les boîtes aux lettres migrées vers Microsoft 365, vous gérez les comptes d’utilisateur dans votre organisation locale et ils sont synchronisés avec votre organisation Microsoft 365. Pour plus d'informations, voir [Intégration d'annuaire](/previous-versions/azure/azure-services/jj573653(v=azure.100)).
 
@@ -110,7 +112,7 @@ Après avoir identifié les utilisateurs dont vous souhaitez migrer des boîtes 
 
  **Attributs pris en charge**
 
-Le fichier CSV destiné à une migration intermédiaire prend en charge les trois attributs suivants. Chaque ligne du fichier CSV correspond à une boîte aux lettres et doit contenir une valeur pour chacun des attributs ci-dessous.
+The CSV file for a staged migration supports the following three attributes. Each row in the CSV file corresponds to a mailbox and must contain a value for each of these attributes.
 
 |**Attribut**|**Description**|**Requis ?**|
 |:-----|:-----|:-----|
@@ -122,7 +124,7 @@ Le fichier CSV destiné à une migration intermédiaire prend en charge les troi
 
 Voici un exemple de format pour le fichier CSV. Dans cet exemple, trois boîtes aux lettres locales sont migrées vers Microsoft 365.
 
-La première ligne, ou ligne d'en-tête, du fichier CSV répertorie les noms des attributs, ou champs, spécifiés dans les lignes qui suivent. Les noms d'attributs sont séparés par des virgules.
+The first row, or header row, of the CSV file lists the names of the attributes, or fields, specified in the rows that follow. Each attribute name is separated by a comma.
 
 ```powershell
 EmailAddress,Password,ForceChangePassword
@@ -131,12 +133,12 @@ tobyn@contoso.com,Pa$$w0rd,False
 briant@contoso.com,Pa$$w0rd,False
 ```
 
-Chaque ligne sous la ligne d’en-tête représente un utilisateur et fournit les informations qui seront utilisées pour migrer la boîte aux lettres de l’utilisateur. Les valeurs d’attribut de chaque ligne doivent respecter l’ordre des noms d’attribut dans la ligne d’en-tête.
+Each row under the header row represents one user and supplies the information that will be used to migrate the user's mailbox. The attribute values in each row must be in the same order as the attribute names in the header row.
 
-Pour créer le fichier CSV, utilisez un éditeur de texte ou une application telle qu’Excel. Enregistrez le fichier au format .csv ou .txt.
+Use any text editor, or an application like Excel , to create the CSV file. Save the file as a .csv or .txt file.
 
 > [!NOTE]
-> Si le fichier CSV contient des caractères non ASCII ou des caractères spéciaux, enregistrez-le avec l’encodage UTF-8 ou un autre encodage Unicode. Selon l’application, l’enregistrement du fichier CSV avec l’encodage UTF-8 ou un autre encodage Unicode peut être facilité lorsque les paramètres régionaux système de l’ordinateur correspondent à la langue utilisée dans le fichier CSV.
+> If the CSV file contains non-ASCII or special characters, save the CSV file with UTF-8 or other Unicode encoding. Depending on the application, saving the CSV file with UTF-8 or other Unicode encoding can be easier when the system locale of the computer matches the language used in the CSV file.
 
 ### <a name="step-3-create-a-migration-endpoint"></a>Étape 3 : Créez un point de terminaison de migration
 
@@ -157,7 +159,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscove
 Pour plus d'informations sur la cmdlet **New-MigrationEndpoint**, voir [New-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint).
 
 > [!NOTE]
-> La cmdlet **New-MigrationEndpoint** peut être utilisée pour spécifier une base de données pour le service à l'aide de l'option **-TargetDatabase**. Sinon, une base de données est affectée de manière aléatoire à partir du site Services ADFS (Active Directory Federation Services) 2.0 où se trouve la boîte aux lettres de gestion.
+> The **New-MigrationEndpoint** cmdlet can be used to specify a database for the service to use by using the **-TargetDatabase** option. Otherwise a database is randomly assigned from the Active Directory Federation Services (AD FS) 2.0 site where the management mailbox is located.
 
 #### <a name="verify-it-worked"></a>Vérifier que l’opération a fonctionné
 
@@ -169,7 +171,7 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 
 ### <a name="step-4-create-and-start-a-stage-migration-batch"></a>Étape 4 : Créez et démarrez un lot de migration intermédiaire
 
-La cmdlet **New-MigrationBatch** d'Exchange Online PowerShell permet de créer un lot pour une migration à basculement. Vous pouvez créer un lot de migration et démarrer automatiquement son traitement en incluant le paramètre _AutoStart_. Vous pouvez également créer un lot de migration, puis démarrer manuellement son traitement par la suite à l'aide de la cmdlet **Start-MigrationBatch**. Cet exemple de code crée un lot de migration appelé « StagedBatch1 » et utilise le point de terminaison de migration créé à l'étape précédente.
+You can use the **New-MigrationBatch** cmdlet in Exchange Online PowerShell to create a migration batch for a cutover migration. You can create a migration batch and start it automatically by including the _AutoStart_ parameter. Alternatively, you can create the migration batch and then manually start it afterwards by using the **Start-MigrationBatch** cmdlet. This example creates a migration batch called "StagedBatch1" and uses the migration endpoint that was created in the previous step.
 
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart

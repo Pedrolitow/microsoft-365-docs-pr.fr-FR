@@ -1,6 +1,6 @@
 ---
 title: Exécuter l’analyse du client sur Windows
-description: Découvrez comment exécuter l’analyseur client Pertahanan Microsoft untuk Titik Akhir sur Windows.
+description: Découvrez comment exécuter l’analyseur client Microsoft Defender pour point de terminaison sur Windows.
 keywords: analyseur client, capteur de dépannage, analyseur, mdeanalyzer, fenêtres
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d348a1c48ac44a0e05768eea684efd3ad27dcb4f
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 3e75975065643e83401b6b9d22effe5cc12183ad
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741629"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222691"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
