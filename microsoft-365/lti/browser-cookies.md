@@ -6,22 +6,22 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Découvrez comment autoriser les cookies pour les URL LMS dans les navigateurs Edge, Chrome et Firefox et Safari.
-ms.openlocfilehash: 84ba252f9d3854fad4e89bd6e9dac8d0b020cf3a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: fcaae51c9cdbab3a052a3c29d24e5386f4f852ee
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414781"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167360"
 ---
 # <a name="allow-cookies-for-lms-urls-in-your-browser"></a>Autoriser les cookies pour les URL LMS dans votre navigateur
 
-Des cookies de navigateur tiers sont nécessaires pour terminer l’établissement de la liaison LTI 1.3 conformément aux normes ims globales. Par conséquent, lors du lancement de l’outil LTI à partir d’un Learning Management System (LMS), le paramètre de navigateur doit autoriser les cookies tiers pour l’URL LMS.
+Des cookies de navigateur tiers sont nécessaires pour terminer l’établissement de la liaison LTI 1.3 conformément aux normes ims globales. Par conséquent, lors du lancement de l’outil LTI à partir d’un système de gestion de l’apprentissage (LMS), le paramètre de navigateur doit autoriser les cookies tiers pour l’URL LMS.
 
 Voici les étapes à suivre pour autoriser les cookies dans votre navigateur.
 
@@ -38,7 +38,7 @@ Si vous devez bloquer les cookies tiers :
 2. Sous **Autoriser**, **sélectionnez Ajouter** pour ajouter l’URL de domaine de la plateforme LMS.
    1. Par exemple, si la plateforme LMS est hébergée sur `https://contoso.com`, cette URL doit être ajoutée sous **Autoriser**.
 
-![Capture d’écran de Microsoft Edge page paramètres de cookie](media/edge-cookies.png)
+![Capture d’écran de la page paramètres des cookies Microsoft Edge](media/edge-cookies.png)
 
 # <a name="google-chrome"></a>[Google Chrome](#tab/chrome)
 

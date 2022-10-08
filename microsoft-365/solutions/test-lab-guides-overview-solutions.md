@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,18 +18,18 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: Utilisez les guides de laboratoire de test pour créer des solutions et des scénarios Microsoft 365 dans un environnement de développement/test.
-ms.openlocfilehash: 5d3caf0bc24652921c9d78de24fb3e4dba111bd0
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6d3e5b04cb58753fe7e79dee185cd0f383551fd3
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730306"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986353"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guides pour les laboratoires de tests pour les solutions et scénarios
 
-Les guides de laboratoire de test vous permettent de vous familiariser rapidement avec les produits Microsoft. Ils fournissent des instructions normatives sur la configuration d’environnements de test simplifiés mais représentatifs. Vous pouvez utiliser ces environnements pour la démonstration, la personnalisation ou la création de preuves de concept complexes pour la durée d’un abonnement d’évaluation ou payant. 
+Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative test environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription. 
 
-Les guides de laboratoire de test sont conçus pour être modulaires. Ils s’appuient les uns sur les autres pour créer plusieurs configurations qui correspondent mieux à vos besoins de configuration d’apprentissage ou de test. L’expérience pratique du type « je l’ai créé moi-même et ça fonctionne » vous permet de comprendre les exigences de déploiement d’un nouveau produit ou scénario afin que vous puissiez mieux planifier son hébergement lors de la production.
+TLGs are designed to be modular. They build upon each other to create multiple configurations that more closely match your learning or test configuration needs. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or scenario so you can better plan for hosting it in production.
 
 Les guides de laboratoire de test vous permettent également de créer des environnements représentatifs pour le développement et le test d’applications, également connus sous le nom d’environnements de développement/test.
   

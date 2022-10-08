@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -20,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Découvrez les numéros d’inscription et les notifications sous-évaluées lorsque vous achetez des produits ou services Microsoft.
 ms.date: 02/02/2022
-ms.openlocfilehash: f287903ae9cded49a81e1c775388e579f2a4f0b8
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 70177ab7b8129e9623912b9d24360d7e28cd98f5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714194"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167712"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>À propos des numéros d’inscription et des notifications en cours d’examen
 
@@ -51,7 +52,7 @@ Si vous n’avez pas de numéro d’inscription valide, consultez [numéros d’
 
 ## <a name="what-should-i-do-if-i-get-an-under-review-notification"></a>Que dois-je faire si je reçois une notification en cours de révision ?  
 
-Lorsque vous effectuez un achat, vous pouvez recevoir une notification indiquant que votre compte est en cours d’examen. Pendant le processus de révision, vous pouvez vérifier l’état en accédant à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">comptes BillingBilling</a>  >  et en sélectionnant le compte que vous avez utilisé pour terminer votre achat.
+Lorsque vous effectuez un achat, vous pouvez recevoir une notification indiquant que votre compte est en cours d’examen. Pendant le processus de révision, vous pouvez vérifier l’état en accédant **à la** >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Comptes de facturation</a> et en sélectionnant le compte que vous avez utilisé pour terminer votre achat.
 
 Le processus de révision prend normalement environ une journée, mais peut prendre plus de temps.
 

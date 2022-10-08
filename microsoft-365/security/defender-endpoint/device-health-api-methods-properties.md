@@ -1,7 +1,7 @@
 ---
-title: L’antivirus Microsoft Defender exporte les propriétés et les méthodes de l’API des détails de l’antivirus de l’appareil
-description: Découvrez comment exporter une liste des détails d’intégrité des appareils antivirus Microsoft Defender.
-keywords: api, api graphe, api prises en charge, get, api d’intégrité de l’appareil, Pertahanan Microsoft untuk Titik Akhir api de rapports microsoft defender de rapport, api de création de rapports microsoft defender pour point de terminaison, api de création de rapports Windows Defender, api de création de rapports defender pour point de terminaison, API de rapport Windows Defender
+title: Microsoft Defender l’antivirus exporte les propriétés et les méthodes de l’API d’intégrité de l’antivirus
+description: Découvrez comment exporter une liste de Microsoft Defender détails d’intégrité des appareils antivirus.
+keywords: api, api graphe, api prises en charge, get, api d’intégrité de l’appareil, Microsoft Defender pour point de terminaison api de rapport api rapports microsoft defender, api de création de rapports microsoft defender pour point de terminaison, api de création de rapports Windows Defender, api de création de rapports Defender pour point de terminaison, API de rapport Windows Defender
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,17 +12,20 @@ ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- EngageScoreSep2022
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7e86424e2b0e1d97878818a6ef836c20ddf8fd50
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: d252a5cfa74924a34674ecc2dd4c81366b84a125
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739799"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363714"
 ---
 # <a name="export-device-antivirus-health-details-api-methods-and-properties"></a>Exporter les méthodes et propriétés de l’API des détails d’intégrité de l’antivirus de l’appareil
 
@@ -41,7 +44,7 @@ ms.locfileid: "67739799"
 
 ## <a name="export-device-antivirus-health-details-api-description"></a>Exporter la description de l’API des détails d’intégrité de l’antivirus de l’appareil
 
-Récupère une liste des détails d’intégrité des appareils antivirus Microsoft Defender. Cette API a différents appels d’API (méthodes) pour obtenir différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
+Récupère une liste de Microsoft Defender détails d’intégrité des appareils antivirus. Cette API a différents appels d’API (méthodes) pour obtenir différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
 - **Réponse JSON**  L’API extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour _les petites organisations avec moins de 100 K d’appareils_. La réponse étant paginée, vous pouvez utiliser le \@champ odata.nextLink de la réponse pour extraire les résultats suivants.
 
@@ -56,22 +59,17 @@ Les données collectées à l’aide de la _« réponse JSON_ ou _par le biais d
 > Actuellement, seule la **réponse JSON d’intégrité antivirus** est généralement disponible. **L’API Antivirus Health via des fichiers** est actuellement disponible uniquement en préversion publique.
 >
 > La **requête personnalisée De chasse avancée** n’est actuellement disponible qu’en préversion publique, même si les requêtes sont toujours visibles.
-
-> [!IMPORTANT]
 >
-> Pour que Windows&nbsp;Server&nbsp;2012&nbsp;R2 et Windows&nbsp;Server&nbsp;2016 apparaissent dans les rapports d’intégrité des appareils, ces appareils doivent être intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
-
-> [!NOTE]
+> Pour que Windows Server 2012 R2 et Windows Server 2016 apparaissent dans les rapports d’intégrité des appareils, ces appareils doivent être intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 >
-> Pour plus d’informations sur l’utilisation de l’outil de création de rapports sur **l’intégrité des appareils et la conformité antivirus** dans le tableau de bord Sécurité microsoft 365, consultez : Rapport sur l’intégrité [des appareils et les antivirus dans Pertahanan Microsoft untuk Titik Akhir](device-health-reports.md).
->
+> Pour plus d’informations sur l’utilisation de l’outil de création de rapports sur **l’intégrité des appareils et la conformité antivirus** dans le tableau de bord Sécurité de Microsoft 365, consultez : [Rapport sur l’intégrité des appareils et les antivirus dans Microsoft Defender pour point de terminaison](device-health-reports.md).
 
 ### <a name="11-export-device-antivirus-health-details-api-methods"></a>1.1 Exporter les méthodes d’API des détails d’intégrité de l’antivirus de l’appareil
 
 Méthode|Type de données|Description
 :---|:---|:---
-**(Réponse JSON)**|Intégrité de l’antivirus Microsoft Defender par collection d’appareils. Voir : [1.2 Exporter les propriétés de l’API des détails d’intégrité de l’antivirus de l’appareil (réponse JSON)](#12-export-device-antivirus-health-details-api-properties-json-response)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. | L’API extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour les petites organisations avec moins de 100 K d’appareils. La réponse étant paginée, vous pouvez utiliser le champ @odata.nextLink à partir de la réponse pour extraire les résultats suivants.
-**(via des fichiers)**|Intégrité de l’antivirus Microsoft Defender par collection d’appareils. Voir : [1.3 Exporter les propriétés \(de l’API des détails d’intégrité de l’antivirus de l’appareil via des fichiers\)](#13-export-device-antivirus-health-details-api-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. |Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger toutes vos données à partir du Stockage Azure comme suit : <ol><li>Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.</li><li>Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol>
+**(Réponse JSON)**|Microsoft Defender’intégrité antivirus par collection d’appareils. Voir : [1.2 Exporter les propriétés de l’API des détails d’intégrité de l’antivirus de l’appareil (réponse JSON)](#12-export-device-antivirus-health-details-api-properties-json-response)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. | L’API extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour les petites organisations avec moins de 100 K d’appareils. La réponse étant paginée, vous pouvez utiliser le champ @odata.nextLink à partir de la réponse pour extraire les résultats suivants.
+**(via des fichiers)**|Microsoft Defender’intégrité antivirus par collection d’appareils. Voir : [1.3 Exporter les propriétés \(de l’API des détails d’intégrité de l’antivirus de l’appareil via des fichiers\)](#13-export-device-antivirus-health-details-api-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. |Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger toutes vos données à partir du Stockage Azure comme suit : <ol><li>Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.</li><li>Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol>
 
 ### <a name="12-export-device-antivirus-health-details-api-properties-json-response"></a>1.2 Exporter les propriétés de l’API d’intégrité de l’antivirus de l’appareil (réponse JSON)
 
@@ -103,10 +101,10 @@ Méthode|Type de données|Description
 | machineId | Chaîne | Machine GUID | « 30a8fa2826abf24d24379b23f8a44d471f00feab » |
 | osKind | Chaîne | Type de système d’exploitation | « windows », « mac », « linux » |
 | osPlatform | Chaîne | Nom de la version principale du système d’exploitation | Windows 10, macOs |
-| osVersion | String | Version du système d'exploitation | 10.0.18363.1440, 12.4.0.0 |
+| osVersion | Chaîne | Version du système d'exploitation | 10.0.18363.1440, 12.4.0.0 |
 | quickScanError | Chaîne | Codes d’erreur de l’analyse rapide | « 0x80508023 » |
 | quickScanResult | Chaîne | Résultat de l’analyse rapide de cet appareil | « Terminé » <br>« Annulé » <br>« Échec » |
-| quickScanTime | DateTimeOffset | Date et heure de fin de l’analyse rapide   | « 2022-08-04T12:44:02Z » |
+| quickScanTime | DateTimeOffset | Date et heure de fin de l’analyse rapide | « 2022-08-04T12:44:02Z » |
 | rbacGroupId | Entier long | ID de groupe d’appareils auquel appartient cet ordinateur | 712 |
 | rbacGroupName | Chaîne | Nom du groupe d’appareils auquel appartient cet ordinateur | « SampleGroup » |
 

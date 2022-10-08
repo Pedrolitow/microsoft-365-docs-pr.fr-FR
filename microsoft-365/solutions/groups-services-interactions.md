@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interactions des services de groupes
-ms.openlocfilehash: d3091027c2c5850129b351507a2a09db0a999c58
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: bac612841ca5fb61e27f633c5492f4b09426da1c
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731009"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986793"
 ---
 # <a name="groups-services-interactions"></a>Interactions des services de groupes
 
@@ -56,7 +56,7 @@ Groupes Microsoft 365 peuvent être créés et gérés à partir de différentes
 
 ### <a name="administrative-experiences"></a>Expériences administratives
 
-Les administrateurs peuvent créer et gérer des groupes Microsoft 365 à partir de plusieurs centres d’administration de charge de travail, d’interfaces de ligne de commande qui prennent en charge les scripts, ainsi que d’applications personnalisées qui interagissent avec le Graph API. La seule exception à cela est les groupes Yammer, qui doivent être créés à partir de l’interface web Yammer.
+Les administrateurs peuvent créer et gérer des groupes Microsoft 365 à partir de plusieurs centres d’administration de charge de travail, d’interfaces de ligne de commande qui prennent en charge les scripts, ainsi que d’applications personnalisées qui interagissent avec le API Graph. La seule exception à cela est les groupes Yammer, qui doivent être créés à partir de l’interface web Yammer.
 
 **Paramètres associés**
 
@@ -150,7 +150,7 @@ Azure AD fournit les fonctionnalités de gestion des identités sous-jacentes da
 
 **Azure AD peut-il créer un groupe ?**
 
-Oui, Groupes Microsoft 365 pouvez être créé à partir d’Azure AD via le portail web d’administration, via PowerShell ou Graph API.
+Oui, Groupes Microsoft 365 pouvez être créé à partir d’Azure AD via le portail web d’administration, via PowerShell ou API Graph.
 
 **Azure AD existe-t-il sans groupe ?**
 

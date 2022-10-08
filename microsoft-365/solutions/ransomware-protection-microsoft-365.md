@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware géré par l’homme, ransomware géré par l’homme, HumOR, attaque par attaque par attaque de ransomware, chiffrement, cryptovirologie, confiance zéro
 description: Protection pas à pas de vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 04cce5e1001e456a1e590e5abcc7cef8138f0084
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6196feca7236fa98513e0d735d91cfbd2a6bd2ea
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730921"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986001"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Déployer la protection contre les rançongiciels pour votre client Microsoft 365
 
@@ -146,7 +146,7 @@ Cette solution utilise les principes de [confiance zéro](/security/zero-trust/)
 - **Utilisez l’accès selon le privilège minimum :** Limitez l’accès des utilisateurs avec un accès juste-à-temps et juste-suffisant (JIT/JEA), des stratégies adaptatives basées sur les risques et la protection des données.
 - **Supposons une violation :** Réduisez le rayon d’explosion et l’accès aux segments. Vérifiez le chiffrement de bout en bout et utilisez l’analyse pour obtenir la visibilité, détecter les menaces et améliorer les défenses.
 
-Contrairement à l’accès intranet classique, qui approuve tout ce qui se trouve derrière le pare-feu d’une organisation, La confiance zéro traite chaque connexion et accès comme s’il provenait d’un réseau non contrôlé, qu’il se trouve derrière le pare-feu de l’organisation ou sur Internet. La confiance zéro nécessite une protection pour le réseau, l’infrastructure, les identités, les points de terminaison, les applications et les données.
+Unlike conventional intranet access, which trusts everything behind an organization's firewall, Zero Trust treats each sign-in and access as though it originated from an uncontrolled network, whether it's behind the organization firewall or on the Internet. Zero Trust requires protection for the network, infrastructure, identities, endpoints, apps, and data.
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Fonctionnalités de Microsoft 365
 

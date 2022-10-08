@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez la protection des informations dans Microsoft 365 pour les réglementations de confidentialité des données telles que le RGPD et le CCPA (California Consumer Privacy Act), notamment Microsoft Teams, SharePoint et le courrier électronique.
-ms.openlocfilehash: 2152d3dd78eba3803d06f7d9fa8f2a863de6196e
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 30482b5640f155da4947f7d29623880faead2ca7
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812159"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986771"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 

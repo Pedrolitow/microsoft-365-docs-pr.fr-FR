@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour les Territoires du Sud français
+title: Informations de support pour Français territoires du Sud (terres antarctiques)
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6c304a26bfe01c2ac5f611005973977505cb344c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7d9606cb2c8715e73fe8616a0cf04fac225e40f0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372527"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167655"
 ---
-# <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>Contacter le support pour les Territoires du Sud français
+# <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>Contacter le support technique pour Français Territoires du Sud (terres antarctiques)
 
 [Rechercher un autre pays ou une autre région](../get-help-support.md).
 
@@ -29,14 +31,14 @@ ms.locfileid: "61372527"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 13:00 à 21:00
+Français : Mon-Fri 13h-21h
 
-Anglais : Mon-Fri 13:00 à 21:00
+Anglais : Mon-Fri 13h-21h
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 12:00-23:00
+Français : Mon-Fri de 12h à 23h
 
 Anglais : 24h/24, 7j/7
 
-Les frais d’appels internationaux s’appliquent
+Des frais d’appel internationaux s’appliquent

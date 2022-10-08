@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Options de fin de cycle de vie pour les groupes, les équipes et Yammer.
-ms.openlocfilehash: a3b5ec7a0a15c2bd5dc5e19420adbbd7503dc8dd
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 80092ae3d8c843778de6be5cdc3d784415ddbfd8
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730138"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986903"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Options de fin de cycle de vie pour les groupes, les équipes et Yammer
 
@@ -83,7 +83,7 @@ Il est important d’effectuer des révisions d’invités et de comprendre si l
 
 Le contenu spécifique à Teams se présente principalement sous la forme de conversations.
 
-Les conversations dans les canaux ne peuvent pas être copiées ou déplacées à l’aide des fonctionnalités natives de Microsoft Teams. Ils peuvent toutefois être exportés à l’aide de la Graph API.
+Les conversations dans les canaux ne peuvent pas être copiées ou déplacées à l’aide des fonctionnalités natives de Microsoft Teams. Ils peuvent toutefois être exportés à l’aide de la API Graph.
 
 En outre, si une stratégie de rétention est appliquée à Teams, les conversations sont conservées et disponibles par le biais de recherches eDiscovery. À l’aide d’eDiscovery (Premium), vous pouvez [reconstruire une conversation de conversation Teams](/microsoft-365/compliance/conversation-review-sets).
 

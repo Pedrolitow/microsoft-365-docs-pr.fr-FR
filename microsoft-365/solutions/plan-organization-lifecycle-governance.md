@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Se pencher sur les options de gouvernance du cycle de vie pour les outils de collaboration dans Microsoft 365
-ms.openlocfilehash: 0b4ca2da65736d703f1a33df7e43e7488dd6dd0e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 5e5c112ecd13572c09252df88434443daa0c2005
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727191"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986485"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planifier l’organisation et la gouvernance du cycle de vie pour les groupes Microsoft 365 et Microsoft Teams
 

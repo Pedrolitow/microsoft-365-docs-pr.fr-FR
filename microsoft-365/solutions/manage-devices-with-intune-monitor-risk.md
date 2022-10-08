@@ -1,5 +1,5 @@
 ---
-title: Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité
+title: Step 6. Monitor device risk and compliance to security baselines
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 description: Découvrez comment connecter Microsoft Intune à Defender pour point de terminaison et surveiller le risque de l’appareil en tant que condition d’accès.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -22,14 +22,14 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 10b6e23042b777e2e747899999b093bd7d26e689
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: a532477d25d0eb3de07af08033f13c7a8112454c
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730724"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986551"
 ---
-# <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité
+# <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux lignes de base de sécurité
 
 Une fois que votre organisation a déployé Microsoft Defender pour point terminaison, vous pouvez obtenir des informations et une protection plus étendues de vos appareils en intégrant Microsoft Intune à Microsoft Defender pour point de terminaison. Pour les appareils mobiles, cela inclut la possibilité de surveiller les risques des appareils en tant que condition d’accès. Pour les appareils Windows, vous pouvez surveiller la conformité de ces appareils aux lignes de base de sécurité. 
 
@@ -55,7 +55,7 @@ Une fois Microsoft Defender pour point de terminaison déployé, vous pouvez ti
 
 Pour Android et iOS/iPadOS, les signaux de menace peuvent être utilisés dans vos stratégies de protection des applications (APP). Pour plus d’informations sur cette configuration, voir [Créer et affecter une stratégie de protection des applications pour définir le niveau de risque de l’appareil](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-Pour toutes les plateformes, vous pouvez définir le niveau de risque dans les stratégies existantes de conformité des appareils. Voir [Créer une stratégie d’accès conditionnel](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
+Pour toutes les plateformes, vous pouvez définir le niveau de risque dans les stratégies existantes de conformité des appareils. Consultez [Créer une stratégie d’accès conditionnel](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>Déployer les lignes de base de sécurité et surveiller la conformité à ces paramètres
 
@@ -77,7 +77,7 @@ Pour déployer les lignes de base de sécurité et surveiller la conformité à 
 |Étape  |Description  |
 |---------|---------|
 |1     |Examinez les concepts clés et comparez Microsoft Defender pour point de terminaison et les linges de base de sécurité Windows Intune. <br><br>Pour plus d’informations sur les recommandations, voir [Augmenter la conformité à la ligne de base de sécurité de Microsoft Defender pour point de terminaison](../security/defender-endpoint/configure-machines-security-baseline.md).<br><br>Voir [Utiliser les lignes de base de sécurité pour configurer des appareils Windows dans Intune](/mem/intune/protect/security-baselines) afin d’examiner la liste des lignes de base de sécurité disponibles et de savoir comment éviter les conflits.         |
-|2     |  Déployez les paramètres de base de référence de sécurité Windows. Vous l’avez peut-être déjà fait si vous avez suivi les instructions de l’[Étape 5. Déployer des profils de configuration](manage-devices-with-intune-configuration-profiles.md).        |
+|2     |  Deploy Windows security baseline settings for Intune. You might have already accomplished this if you followed the guidance in [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).        |
 |3    |  Déployez les paramètres de ligne de base Defender pour point de terminaison pour Intune. Voir [Gérer les profils de ligne de base de sécurité Microsoft Intune](/mem/intune/protect/security-baselines-configure) pour créer le profil et choisir la version de ligne de base.<br><br>Vous pouvez également suivre les instructions ici : [Examiner et affecter la ligne de base de sécurité Microsoft Defender pour les points de terminaison](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline).     |
 |4     | Dans Defender pour point de terminaison, examinez la [Carte de ligne de base de sécurité sur la gestion de la configuration des appareils](../security/defender-endpoint/configure-machines.md).          |
 

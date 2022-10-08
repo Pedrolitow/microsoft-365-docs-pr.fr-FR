@@ -1,5 +1,5 @@
 ---
-title: 'Étape 1 : renforcer la sécurité de connexion pour les travailleurs hybrides à l’aide d’une authentification multifacteur (MFA)'
+title: Step 1. Increase sign-in security for hybrid workers with MFA
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Demandez à vos travailleurs hybrides de se connecter à l’aide de l’authentification multifacteur (MFA).
-ms.openlocfilehash: ebb4b02db1dbaed6f4b22c2cc4b9d67f1e52429f
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 5c3beda36249141b997dd64f85a6ca75aaa109b1
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727675"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987013"
 ---
-# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Étape 1 : renforcer la sécurité de connexion pour les travailleurs hybrides à l’aide d’une authentification multifacteur (MFA)
+# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Étape 1. Renforcer la sécurité de connexion pour les travailleurs hybrides à l’aide d’une authentification multifacteur (MFA)
 
 Pour renforcer la sécurité des connexions de vos travailleurs hybrides, utilisez l’authentification multifacteur (MFA). L’authentification multifacteur exige que les connexions des utilisateurs fassent l’objet d’une vérification supplémentaire, au-delà du mot de passe du compte d’utilisateur. Même si un utilisateur malveillant détermine un mot de passe de compte d’utilisateur, il doit également répondre à une vérification supplémentaire, par exemple, un message texte envoyé vers un smartphone, avant que l’accès ne lui soit accordé.
 

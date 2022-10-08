@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : déployer les applications et les services de productivité des travailleurs à distance'
+title: Step 5. Deploy hybrid worker productivity apps and services
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Permettez à vos utilisateurs d’être productifs grâce à Teams, Exchange, SharePoint et les autres services Microsoft 365.
-ms.openlocfilehash: 315058c31b221411ba8df81041e6dc4178128cb0
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: b79e5c19b6f5176d1d079da5438846ccec19c19a
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728535"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986969"
 ---
-# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Étape 5 : déployer les applications et les services de productivité des travailleurs à distance
+# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Étape 5. Déployer les applications et les services de productivité des travailleurs hybrides
 
 Pour être productifs, les employés doivent communiquer et collaborer les uns avec les autres. Ils doivent pouvoir se réunir, discuter par voie vocale ou textuelle, créer du contenu, partager des informations et des fichiers, échanger des messages électroniques et gérer les calendriers et les tâches. Microsoft 365 fournit des services cloud pour toutes ces fonctions essentielles :
 

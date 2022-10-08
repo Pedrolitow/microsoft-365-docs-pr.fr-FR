@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez le modèle d’identité approprié pour vos locataires Microsoft 365 et appliquez des connexions utilisateur fortes.
-ms.openlocfilehash: 149b433a78dd163abc5a6a6a4080de81d69a93ce
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: b31bbc089d6c6824eacc9cce00f71a877052ec72
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727609"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986419"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 3. Identité de votre Microsoft 365 pour les locataires d’entreprise
 
@@ -35,8 +35,8 @@ Voici les deux types de modèles d’identité et leurs meilleurs ajustement et 
 
 | Modèle | Description | Comment Microsoft 365 authentifie les informations d’identification de l’utilisateur | Idéal pour | Plus grand avantage |
 |:-------|:-----|:-----|:-----|:-----|
-| Cloud uniquement | Le compte d’utilisateur existe uniquement dans le locataire Azure AD pour votre locataire Microsoft 365. | Le locataire Azure AD pour votre locataire Microsoft 365 effectue l’authentification avec le compte d’identité cloud. | Organisations qui n’ont pas ou ont besoin d’un жергілікті Active Directory. | Simple à utiliser. Aucun serveur ou outil d’annuaire supplémentaire n’est requis. |
-| Hybride |  Le compte d’utilisateur existe dans votre жергілікті Active Directory Domain Services (AD DS) et une copie se trouve également dans le locataire Azure AD pour votre locataire Microsoft 365. Azure AD Connect s’exécute sur un serveur local pour synchroniser les modifications AD DS avec votre locataire Azure AD. Le compte d’utilisateur dans Azure AD peut également inclure une version hachée du mot de passe du compte d’utilisateur AD DS déjà haché. | Le locataire Azure AD de votre locataire Microsoft 365 gère le processus d’authentification ou redirige l’utilisateur vers un autre fournisseur d’identité. | Organisations utilisant AD DS ou un autre fournisseur d’identité. | Les utilisateurs peuvent utiliser les mêmes informations d’identification lors de l’accès aux ressources locales ou cloud. |
+| Cloud uniquement | Le compte d’utilisateur existe uniquement dans le locataire Azure AD pour votre locataire Microsoft 365. | Le locataire Azure AD pour votre locataire Microsoft 365 effectue l’authentification avec le compte d’identité cloud. | Organisations qui n’ont pas ou ont besoin d’un Active Directory local. | Simple à utiliser. Aucun serveur ou outil d’annuaire supplémentaire n’est requis. |
+| Hybride |  Le compte d’utilisateur existe dans votre Active Directory local Domain Services (AD DS) et une copie se trouve également dans le locataire Azure AD pour votre locataire Microsoft 365. Azure AD Connect s’exécute sur un serveur local pour synchroniser les modifications AD DS avec votre locataire Azure AD. Le compte d’utilisateur dans Azure AD peut également inclure une version hachée du mot de passe du compte d’utilisateur AD DS déjà haché. | Le locataire Azure AD de votre locataire Microsoft 365 gère le processus d’authentification ou redirige l’utilisateur vers un autre fournisseur d’identité. | Organisations utilisant AD DS ou un autre fournisseur d’identité. | Les utilisateurs peuvent utiliser les mêmes informations d’identification lors de l’accès aux ressources locales ou cloud. |
 ||||||
 
 Voici les composants de base de l’identité cloud uniquement.

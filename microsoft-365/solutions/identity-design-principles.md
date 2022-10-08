@@ -6,7 +6,7 @@ author: brendacarter
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -15,12 +15,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 88eec0ad7b452f0624c298ef21812dd9d8587f37
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: bd2aaa7bcb6321255f7ab83b7a04865152d30f8d
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67810734"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986287"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>À l’identité et au-delà : point de vue d’un architecte
 

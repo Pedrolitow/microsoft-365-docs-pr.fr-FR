@@ -12,15 +12,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b00a9f02f4cd370985dfa5c094c6be36aa34ab1e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9b153af03780b5803f622ee53faedc15ba20413c
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679512"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363670"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Intégrer vos outils SIEM à Microsoft Defender pour point de terminaison
 
@@ -72,7 +74,7 @@ Utilisation du module complémentaire Microsoft 365 Defender pour Splunk qui pre
 - Ingestion d’alertes Microsoft Defender pour point de terminaison
 - Mise à jour des alertes dans Microsoft Defender pour point de terminaison à partir de Splunk
 
-Pour plus d’informations sur le module complémentaire Microsoft 365 Defender pour Splunk, consultez [splunkbase](https://splunkbase.splunk.com/app/4959/).
+Pour plus d’informations sur le module complémentaire Microsoft 365 Defender pour Splunk, consultez [splunkbase](https://splunkbase.splunk.com/app/6207/).
 
 ### <a name="datadog"></a>Datadog
 
@@ -96,7 +98,7 @@ SmartConnector remplace le FlexConnector précédent pour Microsoft 365 Defender
 >[!NOTE]
 >L’intégration d’IBM QRadar à Microsoft 365 Defender, qui inclut Microsoft Defender pour point de terminaison, est désormais prise en charge par le nouveau module de support d’appareil Microsoft 365 Defender (DSM) qui appelle le [ Microsoft 365 Defender API de streaming](../defender/streaming-api.md) qui permet d’ingérer des données d’événement de streaming à partir de produits Microsoft 365 Defender, y compris Microsoft Defender pour point de terminaison. Pour plus d’informations sur le nouveau QRadar Microsoft 365 Defender DSM, consultez [la documentation du produit IBM QRadar](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender) et pour plus d’informations sur les types d’événements pris en charge par l’API de streaming, consultez [Types d’événements pris en charge](../defender/supported-event-types.md).
 
-Les nouveaux clients ne sont plus intégrés à l’aide du module DSM (Device Support Module) Microsoft Defender ATP (QRadar) précédent, et les clients existants sont encouragés à adopter le nouveau Microsoft 365 Defender DSM comme point d’intégration unique avec tous les produits Microsoft 365 Defender.
+Les nouveaux clients ne sont plus intégrés à l’aide du module DSM (Device Support Module) QRadar Microsoft Defender atp, et les clients existants sont encouragés à adopter le nouveau Microsoft 365 Defender DSM comme point d’intégration unique avec tous les produits Microsoft 365 Defender.
 
 ## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Ingestion d’événements Microsoft Defender pour point de terminaison à partir de l’API de streaming d’événements Microsoft 365 Defender
 

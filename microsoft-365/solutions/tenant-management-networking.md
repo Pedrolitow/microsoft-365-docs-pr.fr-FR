@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos locataires Microsoft 365.
-ms.openlocfilehash: 526330cb7f0cdf19ac3633988f60df259bde4206
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: dda7343c1b3377b537b334646444506fe7de2602
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731219"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986441"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
 

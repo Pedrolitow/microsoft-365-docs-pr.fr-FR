@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instructions pour entrer des informations sur les offres de service, notamment le nom du service, la description, l’emplacement, la durée et la tarification. Vous pouvez également marquer les employés qui sont qualifiés pour fournir le service.
-ms.openlocfilehash: 2daae2139e3d2d4107f4aaed1b94ca655877000a
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: a97155f4639fb89773520a51f85cdd4518c45ff3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185080"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167734"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Définir vos offres de service dans Bookings
 
@@ -46,13 +48,13 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
      - Un lien vers une réunion Teams ou Skype, propre à la réservation, sera ajouté à l’événement de calendrier sur les calendriers du personnel et des clients, ainsi que des informations de connexion.
      - Le lien pour participer à la réunion sera ajouté à tous les e-mails de confirmation et de rappel, comme illustré dans l’exemple suivant :
 
-       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exemple de lien pour rejoindre Teams réunion dans Bookings.":::
+       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exemple de lien pour rejoindre une réunion Teams dans Bookings.":::
 
        > [!NOTE]
-       > Teams réunions peuvent être jointes via l’application mobile Teams, l’application de bureau Teams, dans un navigateur web ou via la connexion téléphonique. Nous vous recommandons vivement d’activer Teams en tant que service de réunion en ligne par défaut pour votre locataire, pour une expérience optimale de réservation de rendez-vous virtuels.
+       > Les réunions Teams peuvent être jointes via l’application mobile Teams, l’application de bureau Teams, dans un navigateur web ou via le numéro de téléphone. Nous vous recommandons vivement d’activer Teams en tant que service de réunion en ligne par défaut pour votre locataire, pour une expérience optimale de réservation de rendez-vous virtuels.
 
    - Handicapés:
-     - Rendez-vous ne contient pas d’option de réunion, et tous les champs liés à la réunion qui s’affichent lorsque **l’option Ajouter une réunion en ligne** est activée ne s’affichent pas.
+     - Les rendez-vous ne contiendront pas d’option de réunion, et tous les champs liés à la réunion qui apparaissent lorsque **l’option Ajouter une réunion en ligne** est activée ne s’afficheront pas.
 
    **Durée** : il s’agit de la durée pendant laquelle toutes les réunions seront réservées. L’heure est bloquée à partir de l’heure de début, qui est sélectionnée lors de la réservation. Le temps de rendez-vous complet sera bloqué dans les calendriers du personnel.
 
@@ -102,17 +104,17 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
 
    :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Un e-mail de confirmation de Bookings.":::
 
-   Vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur le replanification ou sur ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, vu dans le champ **Informations supplémentaires sur la confirmation par e-mail** :
+   Vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur le replanification ou sur ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, vu dans les **informations supplémentaires pour Email champ Confirmation** :
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un e-mail Bookings.":::
 
-9. **Activer les notifications par SMS pour votre client** S’il est sélectionné, SMS messages sont envoyés au client, mais uniquement s’ils y sont abonnés.
+9. **Activer les notifications par SMS pour votre client** S’il est sélectionné, les SMS sont envoyés au client, mais uniquement s’ils y sont abonnés.
 
    - Zone d’acceptation sur la page de réservation manuelle et de Self-Service :
 
      :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’acceptation dans Bookings.":::
 
-   - Les notifications par SMS se présentent comme suit (notez que SMS notifications ne sont actuellement disponibles que dans Amérique du Nord) :
+   - Les notifications par SMS se présentent comme suit (notez que les notifications SMS ne sont actuellement disponibles que dans Amérique du Nord) :
 
      :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Notification textuelle de Bookings.":::
 

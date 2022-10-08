@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -24,19 +25,20 @@ ms.custom:
 - AdminTemplateSet
 description: Si vous avez acheté Microsoft 365 Business Standard auprès d’un magasin de détail, découvrez comment utiliser la clé de produit et activer votre abonnement.
 ms.date: 08/18/2022
-ms.openlocfilehash: d5af4dc5ccb82e738c6419e5831760aa5e9c0cc2
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 2e786fe7299c91272b69f15820aa7174e6c020ae
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660198"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167580"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business Standard
 
 Si vous avez acheté Microsoft 365 Business Standard auprès d’un magasin de détail, cet article vous aide à activer votre abonnement.
   
- **Besoin d’autre chose ?** **Pour obtenir de l’aide Microsoft 365 Famille ou Microsoft 365 Personnel**, voir [Utilisation des clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
- **Client du programme de licence en volume ?** Si vous avez acheté Microsoft 365 pour les entreprises via un [Programme de licences Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), consultez l’article, [Entrer votre clé de produit achetée auprès de Microsoft Open](purchases-from-microsoft-open.md).
+ **Vous avez besoin d’autres informations ?**
+ **Pour obtenir de l’aide Microsoft 365 Famille ou Microsoft 365 Personnel**, voir [Utilisation des clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
+ **Volume licensing customer?** If you bought Microsoft 365 for business through a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), see the article, [Enter your product key purchased from Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Activer un nouvel abonnement
 
@@ -70,5 +72,5 @@ Sinon, [appelez le Support Microsoft](../admin/get-help-support.md).
 ## <a name="related-content"></a>Contenu associé
 
 [Mettre à niveau vers un autre plan](./subscriptions/upgrade-to-different-plan.md) (article)\
-[Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 pour les entreprises ?](./subscriptions/what-if-my-subscription-expires.md) (article)\
+[What happens to my data and access when my Microsoft 365 for business subscription ends?](./subscriptions/what-if-my-subscription-expires.md) (article)\
 [Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises](./licenses/subscriptions-and-licenses.md) (article)

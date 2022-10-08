@@ -14,14 +14,16 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: fa5fdf8b7da64de21c8c984431a9caafdef56240
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d77f369e6247e1adf72fa060f38fe7efaa365572
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701189"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167162"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -122,7 +124,7 @@ Pour System Center 2012 Configuration Manager, voir [Comment déployer la strat�
 
 7. Sélectionnez **Activé** pour activer la protection contre les applications potentiellement indésirables (PUA).
 
-8. Dans **Options**, sélectionnez **Bloquer** pour bloquer les applications potentiellement indésirables ou **Mode Audit** pour tester le fonctionnement du setting dans votre environnement. Sélectionnez **OK**.
+8. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting works in your environment. Select **OK**.
 
 9. Déployez votre objet de stratégie de groupe comme vous le faites habituellement.
 
@@ -183,7 +185,7 @@ Consultez [Résoudre des problèmes relatifs aux ID d’événement](troubleshoo
 
 ## <a name="view-pua-events-using-advanced-hunting"></a>Afficher les événements des applications potentiellement indésirables (PUA) à l’aide du repérage avancé
 
-Si vous utilisez [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md), vous pouvez utiliser une requête de repérage avancé pour afficher les événements des applications potentiellement indésirables (PUA). Voici un exemple de requête :
+If you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), you can use an advanced hunting query to view PUA events. Here's an example query:
 
 ```console
 DeviceEvents

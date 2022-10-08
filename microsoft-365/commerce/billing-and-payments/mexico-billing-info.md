@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -20,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 monikerRange: o365-worldwide
 ms.date: 08/08/2022
-ms.openlocfilehash: 7e2a2f073f45bfb0d77392599abb4e2999960a23
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: ed5ab050b0289b00648025bb8d93c782092d1083
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280672"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167602"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Informations de facturation pour Microsoft 365 pour les entreprises au Mexique
 

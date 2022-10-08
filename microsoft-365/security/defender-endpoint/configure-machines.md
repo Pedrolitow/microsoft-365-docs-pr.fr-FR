@@ -11,17 +11,19 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ad0cc865362578597620fa4658c83c79dc7ebf02
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6ca8123f75e9bed18a6383b96ab74094b62c9f9f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702971"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167316"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Vérifier que vos appareils sont correctement configurés
 

@@ -11,6 +11,7 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: 88cd23d805d52762ca0d3bb4e7e0ea8fa0c57022
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: b16e3dd298b5106446d882b1d950b8aacd68d708
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671256"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298076"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
@@ -41,7 +42,7 @@ Pour les emplacements de données Azure Active Directory, consultez [Résidence 
 
 Si votre adresse de facturation est en dehors de l’Europe et que vous disposez d’un abonnement Office 365 Éducation, malgré la section « Emplacement des données client au repos pour core Online Services » de l’OST, Microsoft peut approvisionner votre locataire Office 365, transférer vos données vers et stocker vos données au repos n’importe où en Europe ou Amérique du Nord.  Si votre adresse de facturation se trouve en Europe et que vous disposez d’un abonnement Office 365 Éducation, malgré la section « Emplacement des données client au repos pour core Online Services » de l’OST, Microsoft peut approvisionner votre locataire Office 365, transférer vos données et stocker vos données au repos n’importe où dans l’Union européenne.
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum aux questions
 
 ### <a name="how-does-microsoft-define-data"></a>Comment Microsoft définit-il des données ?
 <details><summary>Cliquez pour développer</summary>
@@ -136,7 +137,7 @@ Microsoft ne stocke pas les données clientes Intune au repos en dehors de la zo
 - Il est nécessaire pour Microsoft de fournir un support technique, de résoudre les problèmes de service ou de respecter les exigences légales.
 - Le client configure un compte afin d’autoriser le stockage des données client, y compris en utilisant les éléments suivants :
   - Fonctionnalités conçues pour fonctionner globalement, telles que le réseau de distribution de contenu (CDN), qui fournit un service de mise en cache global et qui stocke les données client à des emplacements géographiques dans le monde entier.
-  - Azure Active Directory (Azure AD), qui peut stocker les données d’annuaire de façon globale. Cela ne s’applique pas aux déploiements Azure AD aux États-Unis (où les données Azure AD sont stockées uniquement aux États-Unis) ou en Europe (où les données Azure AD sont stockées en Europe ou aux États-Unis).
+  - Azure Active Directory (Azure AD), which may store directory data globally. This does not apply to Azure AD deployments in the United States (where Azure AD data is stored solely in the United States) or in Europe (where Azure AD data is stored in Europe or the United States).
   - Version d’évaluation, bêta ou autres services de mise à jour, qui stockent généralement les données client aux États-Unis, mais peuvent les stocker dans le monde entier.
 
 Quoi qu’il en soit, Microsoft ne contrôle pas ou ne limite pas la géolocalisation à partir de laquelle les clients ou les utilisateurs finaux peuvent accéder aux données des clients. De même, lorsque les données des clients d'autres services sont ensuite intégrées dans Intune, les données des clients d'origine continueront d'être stockées sous réserve des engagements Geo propres à l'autre service (le cas échéant) ; seule la copie des données des clients intégrée dans Intune sera stockée dans le Geo indiqué pour Intune.
@@ -580,7 +581,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Forms | États-Unis |
 | Viva Connections | Australie |
 | Sujets Viva | Australie |
-| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Australie |
 | Viva Insights - Personnel | Australie |
 | Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
