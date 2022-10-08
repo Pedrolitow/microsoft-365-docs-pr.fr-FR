@@ -7,9 +7,10 @@ author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,20 +24,20 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 79c4c4bcdb7036fcf32e8d8ee98f29ce49e4c3dd
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: 1c1c5539b553b26680c826c0329f5a69a6d5c798
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639589"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503839"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
 Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
-Vous pouvez facilement voir comment les personnes de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier qui utilise beaucoup un service et atteint des quotas, ou qui n'a peut-être pas du tout besoin d'une licence Microsoft 365. Le modèle de licence perpétuelle ne sera pas inclus dans les rapports. 
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
   
-Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
 
 ## <a name="watch-act-on-a-usage-report-in-microsoft-365"></a>Regarder : Agir sur un rapport d’utilisation dans Microsoft 365
   
@@ -58,7 +59,7 @@ Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://g
 
 ::: moniker-end
 
-2. Cliquez sur le bouton **Afficher plus** à partir de la carte d’activité en un coup d’œil pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Sur cette page, différents rapports pour le service sont fournis sous forme d’onglets.
+2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
 
    :::image type="content" alt-text="Tableau de bord d'utilisation." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
@@ -66,7 +67,7 @@ Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://g
 
 Les personnes disposant des autorisations suivantes : 
 
-- Administrateurs généraux : nous vous recommandons de n’attribuer ce rôle qu’à quelques personnes de votre organisation. Cela permet de limiter les risques.
+- Global admins: We recommend that only a few people in your company have this role. It reduces the risk to your business.
 
 - Administrateurs Exchange
 
@@ -131,7 +132,7 @@ N/A<sup>2</sup> : le service n’est pas disponible dans l’environnement, donc
 
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Afficher les informations d’utilisation pour un utilisateur spécifique
 
-Utilisez les rapports de service pour déterminer le niveau d’utilisation du service par un utilisateur spécifique. Par exemple, pour déterminer la quantité de stockage de boîte aux lettres consommée par un utilisateur spécifique, ouvrez le rapport Utilisation des boîtes aux lettres et triez les utilisateurs par nom. Si vous avez des milliers d’utilisateurs, exportez le rapport vers Excel pour filtrer la liste rapidement.
+Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
 
 Vous ne pouvez pas générer de rapport pour un compte d’utilisateur afin d’obtenir la liste des services associés et le niveau d’utilisation.
 
@@ -169,9 +170,9 @@ Le rapport contient uniquement une propriété Paramètre de confidentialité. P
 
 Il faudra quelques minutes pour que ces modifications prennent effet sur les rapports dans le tableau de bord des rapports. Ce paramètre s'applique également aux rapports d'utilisation de Microsoft 365 dans [Microsoft Graph](/graph/api/resources/report) et [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) et [aux rapports d'utilisation dans le centre d'administration Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft Purview.
 
-## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
+## <a name="what-happens-to-usage-data-when-a-user-account-is-deleted"></a>Qu’advient-il des données d’utilisation lorsqu’un compte d’utilisateur est supprimé ?
 
-Lorsque vous fermez un compte utilisateur, Microsoft supprime les données d’utilisation de celui-ci dans un délai de 30 jours. Cet utilisateur sera toujours inclus dans les totaux du graphique d'activité pour les périodes au cours desquelles il a été actif, mais n'apparaîtra pas dans le tableau Détails de l'utilisateur.
+Chaque fois que vous supprimez le compte d’un utilisateur, Microsoft supprime les données d’utilisation de cet utilisateur dans les 30 jours. Les utilisateurs supprimés seront toujours inclus dans les totaux du graphique d’activité pour les périodes où ils étaient actifs, mais ils n’apparaîtront pas dans la table Détails de l’utilisateur.
 
 Cependant, lorsque vous sélectionnez un jour particulier, jusqu'à 28 jours à compter de la date actuelle, le rapport affiche l'utilisation de l'utilisateur pour ce jour dans le tableau Détails de l'utilisateur.
 

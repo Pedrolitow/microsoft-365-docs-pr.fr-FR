@@ -17,14 +17,16 @@ ms.custom:
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 6d059ffd745d0013e6e9e61ca22f12250a309bd8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ea28a3f60be9fa27032e9f3273a3f6ad29fe56b1
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704301"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226117"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mieux ensemble : Antivirus Microsoft Defender et Office 365
 
@@ -42,7 +44,7 @@ ms.locfileid: "67704301"
 
 Vous savez peut-être déjà que :
 
-- **L’antivirus Microsoft Defender protège votre appareil Windows contre les menaces logicielles, telles que les virus, les logiciels malveillants et les logiciels espions**. L’Antivirus Microsoft Defender est votre protection complète et continue, intégrée à Windows 10 et Windows 11, et prête à l’utilisation. [Antivirus Microsoft Defender est votre protection nouvelle génération](./microsoft-defender-antivirus-in-windows-10.md). 
+- **Microsoft Defender Antivirus protège votre appareil Windows contre les menaces logicielles, telles que les virus, les programmes malveillants et les logiciels espions**. Microsoft Defender Antivirus est votre protection complète et continue, intégrée à Windows 10 et Windows 11, et prête à l’être. [Antivirus Microsoft Defender est votre protection nouvelle génération](./microsoft-defender-antivirus-in-windows-10.md). 
 
 - **Office 365 inclut la protection anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant**. Avec votre abonnement Office 365, vous bénéficiez de courriers et de calendriers Premium, d’applications Office, de 1 To de stockage cloud (via OneDrive) et d’une sécurité avancée sur tous vos appareils. C’est vrai pour les utilisateurs professionnels et domestiques. Et si vous êtes un utilisateur professionnel et que votre organisation utilise Office 365 E5, vous bénéficiez d’une protection encore plus accrue par le biais de Microsoft Defender pour Office 365 [Protéger contre les menaces avec Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 

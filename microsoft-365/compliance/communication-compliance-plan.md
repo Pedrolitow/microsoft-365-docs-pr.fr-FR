@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71537e949d68d2171d3c3fb0f6dff5d55fe5b3bf
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: f491cbc346bf79824be782403b4ae3a7d54431a6
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787075"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504015"
 ---
 # <a name="plan-for-communication-compliance"></a>Planifier la conformité des communications
+
+>[!IMPORTANT]
+>Conformité des communications Microsoft Purview fournit les outils nécessaires pour aider les organisations à détecter les violations de conformité réglementaire (par exemple sec ou FINRA), telles que les informations sensibles ou confidentielles, le harcèlement ou la menace de langue, et le partage de contenu pour adultes. Créés avec la confidentialité par conception, les noms d’utilisateur sont pseudonymés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont choisis par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Avant de commencer à vous familiariser avec [la conformité des communications](/microsoft-365/compliance/communication-compliance) au sein de votre organisation, vos équipes de gestion des technologies de l’information et de la conformité doivent examiner les activités et considérations de planification importantes. Une bonne compréhension et une planification approfondies du déploiement dans les domaines suivants vous aideront à garantir que votre implémentation et votre utilisation des fonctionnalités de conformité des communications se déroulent correctement et sont alignées sur les meilleures pratiques pour la solution.
 
@@ -36,6 +39,8 @@ Vous pouvez également consulter la [vidéo Microsoft Mechanics](https://www.you
 
 > [!IMPORTANT]
 > La conformité des communications est actuellement disponible dans les locataires hébergés dans des régions géographiques et des pays pris en charge par les dépendances du service Azure. Pour vérifier que la conformité des communications est prise en charge pour votre organisation, consultez [la disponibilité des dépendances Azure par pays/région](/troubleshoot/azure/general/dependency-availability-by-country).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transition de la supervision dans Office 365
 
@@ -120,7 +125,7 @@ Utilisez le graphique suivant pour vous aider à configurer des groupes dans vot
 | **Membre de stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie <br> Groupes Microsoft 365 avec appartenance dynamique |
-| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Aucun | Groupes de distribution <br> Groupes de distribution dynamique <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
 
 ### <a name="privacy"></a>Confidentialité
 

@@ -16,16 +16,16 @@ ms.custom: asr
 ms.topic: conceptual
 ms.subservice: mde
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 ms.date: 05/16/2022
 search.appverid: met150
-ms.openlocfilehash: d42a3d22faac7cc5e382343305ab2bc5f7e25117
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 685affecba6ae95f227c5bd60161dd19800c15f4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691780"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226095"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -110,7 +110,7 @@ Vous pouvez activer le mode audit à l’aide de stratégie de groupe, PowerShel
 | Options d’audit | Comment activer le mode audit | Comment afficher des événements |
 |---|---|---|
 | L’audit s’applique à tous les événements | [Activer l’accès contrôlé aux dossiers](enable-controlled-folders.md) | [Événements d’accès contrôlé aux dossiers](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| L’audit s’applique à des règles individuelles | [Étape 1 : Tester des règles ASR à l’aide du mode Audit](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Étape 2 : Comprendre la page de création de rapports sur les règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| L’audit s’applique à des règles individuelles | [Étape 1 : Tester des règles ASR à l’aide du mode Audit](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Étape 2 : Comprendre la page de création de rapports sur les règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | L’audit s’applique à tous les événements | [Activer la protection réseau](enable-network-protection.md) | [Événements de protection réseau](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | L’audit s’applique aux atténuations individuelles | [Activer la protection la protection contre les codes malveillants exploitant une faille de sécurité](enable-exploit-protection.md) | [Exploiter les événements de protection](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
@@ -297,10 +297,10 @@ Comme mentionné dans la vidéo, Defender pour point de terminaison inclut plusi
 | [Contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Utilisez le contrôle d’application pour que vos applications puissent gagner en confiance pour s’exécuter. |
 | [Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md) | Fournit des détails sur chaque règle de réduction de la surface d’attaque. |
 | [Guide de déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md) | Présente les informations de vue d’ensemble et les prérequis pour le déploiement des règles de réduction de la surface d’attaque, suivis de conseils pas à pas pour le test (mode audit), l’activation (mode bloc) et la surveillance. |
-| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêchez les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système de clés (nécessite l’antivirus Microsoft Defender). |
+| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêchez les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système de clés (nécessite Microsoft Defender Antivirus). |
 | [Contrôle des appareils](device-control-report.md) | Protège contre la perte de données en surveillant et en contrôlant les supports utilisés sur les appareils, tels que le stockage amovible et les lecteurs USB, dans votre organisation. |
 | [Exploit Protection](exploit-protection.md) | Protégez les systèmes d’exploitation et les applications utilisés par votre organisation contre l’exploitation. Exploit Protection fonctionne également avec des solutions antivirus tierces. |
 | [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et conservez l’intégrité d’un système au démarrage et pendant son exécution. Validez l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation des conteneurs pour Microsoft Edge afin de vous protéger contre les sites web malveillants. |
-| [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite l’antivirus Microsoft Defender). |
+| [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite Microsoft Defender Antivirus). |
 | [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md) | Fournit des étapes pour utiliser le mode audit pour tester les règles de réduction de la surface d’attaque. |
 | [Protection web](web-protection-overview.md) | La protection web vous permet de sécuriser vos appareils contre les menaces web et vous aide à réglementer le contenu indésirable. |

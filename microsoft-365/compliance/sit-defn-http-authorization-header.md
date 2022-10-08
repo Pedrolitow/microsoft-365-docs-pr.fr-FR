@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité d’en-tête d’autorisation Http (préversion)
+title: Définition d’entité d’en-tête d’autorisation Http
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles d’en-tête d’autorisation Http.
-ms.openlocfilehash: b72934a88f85c0245320baa4b774d3c69196eb47
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 052323c22f75a2ff9e843ed34b0340e11726aafa
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997649"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503861"
 ---
-# <a name="http-authorization-header-preview"></a>En-tête d’autorisation Http (préversion)
+# <a name="http-authorization-header"></a>En-tête d’autorisation HTTP
 
-## <a name="format"></a>Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Ce SIT est également inclus dans le sit [groupé Toutes les informations d’identification](sit-defn-all-creds.md) .
+
+ ## <a name="format"></a>Format
 
 En-tête d’autorisation utilisé dans la requête HTTP.
 
@@ -41,9 +46,15 @@ Différents formats d’en-tête d’authentification, par exemple :
 `authorization: digest ********` <br>
 `authorization: negotiate ********` <br>
 
+## <a name="credential-example"></a>Exemple d’informations d’identification 
+
+`Authorization: Basic ABCDEFGHIJKLMNOPQRS0123456789;`
+
 ## <a name="checksum"></a>Somme de contrôle
 
 Non
+
+Les SIT qui ont des sommes de contrôle utilisent un calcul unique pour vérifier si les informations sont valides. Cela signifie que lorsque la valeur **de somme de contrôle** est **Oui**, le service peut effectuer une détection positive basée sur les données sensibles uniquement. Lorsque la valeur de somme de **contrôle** est Aucun élément (secondaire) supplémentaire **ne** doit également être détecté pour que le service effectue une détection positive.
 
 ## <a name="definition"></a>Définition
 

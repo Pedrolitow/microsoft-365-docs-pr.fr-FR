@@ -11,17 +11,19 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4097a916e83905f717e24df0b3c6e0b6b9a24be9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3f4108bb160b814f584f42b0cbbd08cea504cfd9
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687546"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225897"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -34,11 +36,15 @@ ms.locfileid: "67687546"
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
+
 ## <a name="what-is-web-content-filtering"></a>Qu’est-ce que le filtrage de contenu web ?
 
 Le filtrage de contenu web fait partie des fonctionnalités de [protection web](web-protection-overview.md) dans Microsoft Defender pour point de terminaison et Microsoft Defender pour entreprises. Le filtrage de contenu web permet à votre organisation de suivre et de réglementer l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites Web (même s’ils ne sont pas malveillants) peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies entre vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs des groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous collectez des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs verront une notification de blocage si un élément de la page qu’ils consultent effectue des appels à une ressource bloquée.
+
+> [!NOTE]
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 Le filtrage de contenu web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et Network Protection (Chrome, Firefox, Brave et Opera). Pour plus d’informations sur la prise en charge des navigateurs, consultez la section [des prérequis](#prerequisites) .
 
@@ -49,7 +55,7 @@ Le filtrage de contenu web est disponible sur les principaux navigateurs web, av
 - Si vous utilisez Defender pour point de terminaison, votre équipe de sécurité peut facilement déployer des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans [Microsoft Defender pour point de terminaison paramètres de contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac).
 - Si vous utilisez Defender entreprise, vous pouvez définir une stratégie de filtrage de contenu web qui sera appliquée à tous les utilisateurs. 
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 Avant d’essayer cette fonctionnalité, veillez à respecter les exigences décrites dans le tableau suivant :
 

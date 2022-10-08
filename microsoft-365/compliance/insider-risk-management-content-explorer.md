@@ -11,15 +11,20 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: c193325608feef3bc8114b50af9d5e5832eb9d66
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.collection:
+- tier1
+- purview-compliance
+ms.openlocfilehash: 9bcd30f68f73d3596a55e1cd74a77aff32889df7
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642544"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503927"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorateur de contenu de gestion des risques internes
+
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 **L’Explorateur de** contenu de gestion des risques internes permet aux utilisateurs ayant le rôle *d’enquêteurs de gestion des risques internes* d’examiner le contexte et les détails du contenu associé à l’activité dans les alertes. Les données de cas dans l’Explorateur de contenu sont actualisées quotidiennement pour inclure une nouvelle activité. Pour toutes les alertes confirmées dans un cas, les copies des fichiers de données et de messages sont archivées en tant qu’instantané dans le temps des éléments, tout en conservant les fichiers et messages d’origine dans les sources de stockage. Si nécessaire, les fichiers de données de cas peuvent être exportés en tant que fichier de document portable (PDF) ou au format de fichier d’origine.
 
@@ -31,6 +36,8 @@ Si le contenu inclut des autorisations De gestion des droits relatifs à l’inf
 
 > [!NOTE]
 > L’Explorateur de contenu inclut les activités des utilisateurs liées aux fichiers de service Microsoft 365, telles que l’activité utilisateur sur SharePoint, Exchange, Microsoft Teams et OneDrive Entreprise.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="column-options"></a>Options de colonne
 
@@ -49,9 +56,9 @@ Pour ajouter ou supprimer des en-têtes de colonne pour la file d’attente de c
 | **Heure de création** | Heure de création du fichier ou de l’e-mail. |
 | **Date (UTC)** | Pour la messagerie électronique, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents, date de dernière modification d’un document. La date est en temps universel coordonné (UTC).|
 | **Thème dominant** | Thème dominant tel qu’il est calculé pour l’analytique. |
-| **ID de l’ensemble de courriers électroniques** | ID de groupe pour tous les messages du même ensemble de courriers électroniques. |
+| **Email définir l’ID** | ID de groupe pour tous les messages du même ensemble de courriers électroniques. |
 | **ID de famille** | L’ID de famille regroupe tous les éléments; pour l’e-mail, cette colonne inclut le message et toutes les pièces jointes ; pour les documents, cette colonne inclut le document et tous les éléments incorporés. |
-| **Classe de fichier** | Pour le contenu de SharePoint et OneDrive : **Document** ; pour le contenu d’Exchange : **e-mail** ou **pièce jointe**. |
+| **Classe de fichier** | Pour le contenu de SharePoint et OneDrive : **Document** ; pour le contenu d’Exchange : **Email** ou **pièce jointe**. |
 | **ID de fichier** | Identificateur de document unique dans le cas. |
 | **Icône de type de fichier** | Extension d’un fichier ; par exemple, docx, un, pptx ou xlsx. Ce champ est la même propriété que la propriété de site FileExtension. |
 | **ID** | Identificateur GUID du fichier. |
@@ -71,7 +78,7 @@ Pour ajouter ou supprimer des en-têtes de colonne pour la file d’attente de c
 | **Étiquettes de confidentialité** | Étiquettes de confidentialité appliquées au contenu. |
 | **Sent** | Date à laquelle un message électronique a été envoyé par l’expéditeur. Ce champ est la même propriété que la propriété d’e-mail envoyé. |
 | **Size** | Pour la messagerie électronique et les documents, taille de l’élément (en octets). |
-| **Subject** | Texte de la ligne d’objet d’un message électronique. |
+| **Sujet** | Texte de la ligne d’objet d’un message électronique. |
 | **Objet/titre** | Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. Comme expliqué précédemment, la propriété Title est des métadonnées spécifiées dans les documents Microsoft Office. Vous pouvez taper le nom de plusieurs sujets/titres, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur OR. |
 | **Liste de thèmes** | Les thèmes sont répertoriés comme calculés pour l’analytique. |
 | **Titre** | Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document. |
@@ -90,7 +97,7 @@ Vous pouvez utiliser un ou plusieurs filtres pour affiner l’étendue d’une r
 | **Source** | Emplacement du document dans votre organisation. Par exemple, un emplacement de site SharePoint spécifique. |
 | **Objet/titre** | Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. La propriété Title dans les documents est des métadonnées spécifiées dans les documents Microsoft Office. Vous pouvez taper le nom de plusieurs sujets/titres, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur OR. |
 
-### <a name="email-filters"></a>Filtres d’e-mail
+### <a name="email-filters"></a>filtres Email
 
 | **Filtre** | **Description** |
 |:---------------------|:----------------|

@@ -13,28 +13,31 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: jarogers
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 1a15aa2549b13edf8bbdddb389d1c358154394e5
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: fe12a267f4d2ea6419d4121f152fde41b8f2878e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740223"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226424"
 ---
 # <a name="set-up-a-digest-notification-of-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>Configurer une notification digeste des modifications apportées à Microsoft Defender pour Office 365 à l’aide du centre de messages
 
-Serait-il pratique si, chaque semaine, un e-mail de synthèse de Microsoft Defender pour Office 365 modifications du centre de messages Microsoft arrivent dans votre boîte de réception ?
+Serait-il pratique si, chaque semaine, un e-mail de synthèse de Microsoft Defender pour Office 365 modifications du centre de messages Microsoft atterrissait dans votre boîte de réception ?
 
-Le centre de messages est l’endroit où les administrateurs découvrent *les annonces de service officielles et les changements de fonctionnalités*, en visitant le site (application de bureau ou mobile), en consultant Microsoft Planner ou *par e-mail*.
+Le centre de messages est l’endroit où les administrateurs découvrent *les annonces de service officielles et les changements de fonctionnalités*, en visitant le site (application de bureau ou mobile), en consultant Planificateur Microsoft ou *par e-mail*.
 
 Suivez les étapes ci-dessous pour que cet e-mail de synthèse utile se produise.
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
-- Microsoft Defender pour Office 365 Plan 1 ou 2
+- Microsoft Defender pour Office 365 plan 1 ou 2
 - Autorisations suffisantes (lecteur du Centre de messages au minimum)
 - 5 minutes pour effectuer les étapes ci-dessous.
 

@@ -17,15 +17,15 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 3114dbd6d94d425c8117f24631dc65f8762fedf7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 94a1e3646a8b10f6569d03d23becb0b683913a79
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687863"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226226"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -65,11 +65,11 @@ Regardez cette vidéo pour découvrir comment la protection réseau permet de r�
 
 ## <a name="requirements-for-network-protection"></a>Configuration requise pour la protection réseau
 
-La protection réseau nécessite Windows 10 ou 11 (Professionnel ou Entreprise), Windows Server version 1803 ou ultérieure, macOS version 11 ou ultérieure, ou versions Linux prises en charge par Defender et protection en temps réel de l’Antivirus Microsoft Defender.
+La protection réseau nécessite Windows 10 ou 11 (Professionnel ou Entreprise), Windows Server version 1803 ou ultérieure, macOS version 11 ou ultérieure, ou versions Linux prises en charge par Defender, et Microsoft Defender protection antivirus en temps réel.
 
 | Version de Windows | Antivirus Microsoft Defender |
 |:---|:---|
-| Windows 10 version 1709 ou ultérieure <br/> Windows 11 <br/> Windows Server 1803 ou version ultérieure | Assurez-vous que la protection en temps réel et [la protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) de [l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) sont activées (actives). |
+| Windows 10 version 1709 ou ultérieure <br/> Windows 11 <br/> Windows Server 1803 ou version ultérieure | [Assurez-vous que Microsoft Defender protection antivirus en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md) et [la protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) sont activées (actives). |
 
 ## <a name="why-network-protection-is-important"></a>Pourquoi la protection réseau est-elle importante ?
 
@@ -170,7 +170,7 @@ Microsoft Defender pour point de terminaison les administrateurs peuvent configu
 La protection réseau est activée par appareil, ce qui est généralement fait à l’aide de votre infrastructure de gestion. Pour connaître les méthodes prises en charge, consultez [Activer la protection réseau](enable-network-protection.md).
 
 > [!NOTE]
-> L’antivirus Microsoft Defender doit être actif pour activer la protection réseau.
+> Microsoft Defender Antivirus doit être actif pour activer la protection réseau.
 
 Vous pouvez activer la protection réseau en mode **Audit** ou **Bloquer** . Si vous souhaitez évaluer l’impact de l’activation de la protection réseau avant de bloquer réellement les adresses IP ou LES URL, vous pouvez activer la protection réseau en mode Audit pendant un certain temps pour collecter des données sur ce qui serait bloqué. Les journaux d’activité en mode audit lorsque les utilisateurs finaux se sont connectés à une adresse ou à un site qui aurait autrement été bloqué par la protection réseau.
 
@@ -295,7 +295,7 @@ Voici un exemple de fonctionnement :
 
 1. Supposons qu’un utilisateur tente d’accéder à un site web sur son appareil. Le site est hébergé sur un domaine dangereux et doit être bloqué par la protection réseau.  
 
-2. L’établissement d’une liaison triple via TCP/IP commence. Avant de se terminer, une `NetworkConnectionEvents` action est journalisée et est `ActionType` répertoriée comme `ConnectionSuccess`. Toutefois, dès que le processus de négociation triple est terminé, la protection réseau bloque l’accès au site. Tout cela se produit rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) ; c’est lorsque l’établissement d’une négociation à trois est terminé qu’une détermination est effectuée et que l’accès à un site est bloqué ou autorisé.
+2. L’établissement d’une liaison triple via TCP/IP commence. Avant de se terminer, une `NetworkConnectionEvents` action est journalisée et est `ActionType` répertoriée comme `ConnectionSuccess`. Toutefois, dès que le processus de négociation triple est terminé, la protection réseau bloque l’accès au site. Tout cela se produit rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) ; c’est lorsque l’établissement d’une liaison à trois est terminé qu’une détermination est effectuée et que l’accès à un site est bloqué ou autorisé.
 
 3. Dans le portail Microsoft 365 Defender, une alerte est répertoriée dans la [file d’attente des alertes](alerts-queue.md). Les détails de cette alerte incluent à la fois `NetworkConnectionEvents` et `AlertEvents`. Vous pouvez voir que le site a été bloqué, même si vous avez également un `NetworkConnectionEvents` élément avec l’ActionType de `ConnectionSuccess`.
 
@@ -328,7 +328,7 @@ Pour Windows Server version 1803 ou ultérieure et Windows 10 Entreprise multise
 
 ## <a name="network-protection-troubleshooting"></a>Résolution des problèmes de protection réseau
 
-En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft peut ne pas être en mesure de détecter les paramètres de proxy du système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas atteindre le service cloud. Pour résoudre le problème de connectivité, [configurez un proxy statique pour l’antivirus Microsoft Defender](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
+En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft peut ne pas être en mesure de détecter les paramètres de proxy du système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas atteindre le service cloud. Pour résoudre le problème de connectivité, [configurez un proxy statique pour Microsoft Defender Antivirus](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
 
 ## <a name="optimizing-network-protection-performance"></a>Optimisation des performances de protection réseau
 

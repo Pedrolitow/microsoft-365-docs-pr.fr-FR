@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1e1317826b208411536dcf79d71a29b3ae514aea
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: ffbadd821aa533b870c9e2c7b612a0ea930c5474
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796849"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226248"
 ---
 # <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareils
 
@@ -33,6 +35,9 @@ ms.locfileid: "67796849"
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Ajoutez des balises sur les appareils pour créer une affiliation de groupe logique. Les balises d’appareil prennent en charge le mappage approprié du réseau, ce qui vous permet d’attacher différentes balises pour capturer le contexte et d’activer la création de liste dynamique dans le cadre d’un incident. Les balises peuvent être utilisées comme filtre dans l’affichage **Inventaire** des appareils ou pour regrouper des appareils. Pour plus d’informations sur le regroupement d’appareils, consultez [Créer et gérer des groupes d’appareils](machine-groups.md).
+
+> [!NOTE]
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 Vous pouvez ajouter des balises sur des appareils en utilisant les méthodes suivantes :
 
@@ -79,11 +84,11 @@ Vous pouvez également supprimer des balises de cette vue.
 > [!NOTE]
 > Applicable uniquement sur les appareils suivants :
 >
-> - Windows 11
+> - Windows 11
 > - Windows 10, version 1709 ou ultérieure
 > - Windows Server, version 1803 ou ultérieure
 > - Windows Server 2016
-> - Windows Server 2012 R2
+> - Windows Server 2012 R2
 > - Windows Server 2008 R2 SP1
 > - Windows 8.1
 > - Windows 7 SP1

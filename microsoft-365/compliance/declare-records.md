@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
-description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 6a68f63c3f304ed4a5f3d79445cd713125327bd2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+description: Pour déclarer des documents et des e-mails en tant qu’enregistrements, utilisez des étiquettes de rétention Microsoft 365 qui marquent des éléments comme un enregistrement ou un enregistrement réglementaire.
+ms.openlocfilehash: 53ff0da40f3c7b8916d3dd70cbb0fc0e4d9aaeb9
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624286"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382048"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
@@ -33,6 +34,8 @@ Pour déclarer des documents et courriers électroniques comme [enregistrements]
 Si vous n’êtes pas certain d’utiliser un enregistrement ou un enregistrement réglementaire, voir [comparer les restrictions relatives aux actions autorisées ou bloquées](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Si vous avez besoin d’utiliser des enregistrements réglementaires, vous devez commencer par exécuter une commande PowerShell, comme décrit dans la section suivante.
 
 Vous pouvez soit publier ces étiquettes dans une stratégie d’étiquette de rétention pour permettre aux utilisateurs et aux administrateurs de les appliquer au contenu, ou pour les étiquettes qui marquent les éléments comme enregistrements ( mais pas enregistrements réglementaire) appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Comment afficher l’option de marquage du contenu en tant qu’enregistrement réglementaire
 

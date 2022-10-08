@@ -1,7 +1,7 @@
 ---
 title: Référence des règles de réduction de la surface d’attaque
-description: Répertorie des détails sur les règles de réduction de la surface d’attaque par règle.
-keywords: Règles de réduction de la surface d’attaque, ASR, règles asr, hanches, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, antiexploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR, description des règles ASR
+description: Répertorie des détails sur les règles de réduction de la surface d’attaque (ASR) Microsoft Defender pour point de terminaison (MDE) par règle.
+keywords: Règles de réduction de la surface d’attaque Microsoft, Microsoft Defender pour point de terminaison règles ASR, liste de règles ASR, RÈGLES ASR, règles asr, hanches, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploit, antiexploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR, description de la règle ASR
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,17 +15,18 @@ ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.date: 08/10/2022
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 778e21e2eefb4f0fd457e4c5c179d431225ce6c4
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: a53e024218cd8ef81b9310107d12838bb400603f
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811567"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503993"
 ---
-# <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
+# <a name="attack-surface-reduction-asr-rules-reference"></a>Référence des règles de réduction de la surface d’attaque (ASR)
 
 **S’applique à :**
 
@@ -38,16 +39,44 @@ ms.locfileid: "67811567"
 
 - Windows
 
-Cet article fournit des informations sur les règles de réduction des attaques :
+Cet article fournit des informations sur Microsoft Defender pour point de terminaison règles de réduction de la surface d’attaque (ASR) :
 
-- [Versions de système d’exploitation prises en charge](#supported-operating-systems)
-- [Systèmes de gestion de configuration pris en charge](#supported-configuration-management-systems)
-- [Détails des alertes et des notifications par règle](#per-rule-alert-and-notification-details)
+- [Règles ASR prises en charge des versions de système d’exploitation](#asr-rules-supported-operating-systems)
+- [Règles ASR prises en charge par les systèmes de gestion de configuration](#asr-rules-supported-configuration-management-systems)
+- [Par alerte de règle ASR et détails de notification](#per-asr-rule-alert-and-notification-details)
 - [Règle ASR à matrice GUID](#asr-rule-to-guid-matrix)
 - [Modes de règle ASR](#asr-rule-modes)
 - [Descriptions par règle](#per-rule-descriptions)
 
-## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
+## <a name="attack-surface-reduction-rules-by-type"></a>Règles de réduction de la surface d’attaque par type
+
+Les règles ASR sont classées comme l’un des deux types suivants :
+
+1. **Règles de protection standard** : ensemble minimal de règles que Microsoft vous recommande d’activer toujours, pendant que vous évaluez l’impact et les besoins de configuration des autres règles ASR. Ces règles ont généralement un impact minimal à aucun sur l’utilisateur final.
+1. **Autres règles** : règles qui nécessitent une certaine mesure de suivre les étapes de déploiement documentées [Plan > Test (audit) > Enable (block/warn modes)], comme décrit dans le [guide de déploiement des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
+
+Pour obtenir la méthode la plus simple pour activer les règles de protection standard, consultez : [Option de protection standard simplifiée](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
+
+| Nom de la règle ASR : | Règle de protection standard ? | Autre règle ? |
+|:---|:---|:---|
+| Bloquer l’abus de pilotes signés vulnérables exploités| Oui | |
+| Empêcher Adobe Reader de créer des processus enfants | | Oui |
+| Empêcher toutes les applications Office de créer des processus enfants | | Oui |
+| Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe) | Oui | |
+| Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web | | Oui |
+| Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée | | Oui |
+| Bloquer l’exécution de scripts potentiellement masqués | | Oui |
+| Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé | | Oui |
+| Empêcher les applications Office de créer du contenu exécutable | | Oui |
+| Empêcher les applications Office d’injecter du code dans d’autres processus | | Oui |
+| Empêcher l’application de communication Office de créer des processus enfants | | Oui |
+| Bloquer la persistance via l’abonnement aux événements WMI | Oui | |
+| Bloquer les créations de processus provenant des commandes PSExec et WMI | | Oui |
+| Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB | | Oui |
+| Bloquer les appels d’API Win32 à partir de macros Office | | Oui |
+| Utiliser une protection avancée contre les ransomware | | Oui |
+
+## <a name="asr-rules-supported-operating-systems"></a>Règles ASR prises en charge par les systèmes d’exploitation
 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles actuellement publiées en disponibilité générale. Les règles sont répertoriées par ordre alphabétique dans ce tableau.
 
@@ -82,28 +111,28 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 (<a id="fn1">3</a>) La version et le numéro de build s’appliquent uniquement à Windows&nbsp;10.
 
-## <a name="supported-configuration-management-systems"></a>Systèmes de gestion de configuration pris en charge
+## <a name="asr-rules-supported-configuration-management-systems"></a>Règles ASR prises en charge par les systèmes de gestion de configuration
 
 Les liens vers des informations sur les versions du système de gestion de la configuration référencées dans ce tableau sont répertoriés sous ce tableau.
 
-|Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |<sup>stratégie de groupe[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
-|---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquer l’abus de pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v  |
-|[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v |   |  | v  | v  |
-|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
-|[Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
-|[Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) | v |  |v <br><br> CB 1710 | v | v  |
-|[Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v |   | v <br><br> CB 1802 |  v |  v |
-|[Bloquer l’exécution de scripts potentiellement masqués](#block-execution-of-potentially-obfuscated-scripts) | v |   |  v  <br><br> CB 1710 | v  | v  |
-|[Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v |   | v <br><br> CB 1710 | v  | v  |
-|[Empêcher les applications Office de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v |  |v <br><br> CB 1710 | v  | v  |
-|[Empêcher les applications Office d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes) | v |  | v <br><br> CB 1710 | v  | v  |
-|[Empêcher l’application de communication Office de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v |  |v <br><br> CB 1710 | v  | v  |
-|[Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) |  |  |  |v   | v  |
-|[Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v |   |   |  v | v  |
-|[Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v |   |v <br><br> CB 1802  | v  | v  |
-|[Bloquer les appels d’API Win32 à partir de macros Office](#block-win32-api-calls-from-office-macros) | v |   | v <br><br> CB 1710  | v  |  v |
-|[Utiliser une protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v |   | v <br><br> CB 1802 | v  | v  |
+|Nom de la règle | Microsoft Intune | Microsoft Endpoint Configuration Manager |<sup>stratégie de groupe[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
+|---|:---:|:---:|:---:|:---:|
+|[Bloquer l’abus de pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v |   | v  |  v  |
+|[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v |  | v  | v  |
+|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v |v <br><br> CB 1710 | v  | v  |
+|[Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  | v <br><br>CB 1802 | v  | v  |
+|[Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) | v |v <br><br> CB 1710 | v | v  |
+|[Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v | v <br><br> CB 1802 |  v |  v |
+|[Bloquer l’exécution de scripts potentiellement masqués](#block-execution-of-potentially-obfuscated-scripts) | v |v  <br><br> CB 1710 | v  | v  |
+|[Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v |v <br><br> CB 1710 | v  | v  |
+|[Empêcher les applications Office de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v |v <br><br> CB 1710 | v  | v  |
+|[Empêcher les applications Office d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes) | v |v <br><br> CB 1710 | v  | v  |
+|[Empêcher l’application de communication Office de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v |v <br><br> CB 1710 | v  | v  |
+|[Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) |v  |  |v   | v  |
+|[Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v |   |  v | v  |
+|[Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v |v <br><br> CB 1802  | v  | v  |
+|[Bloquer les appels d’API Win32 à partir de macros Office](#block-win32-api-calls-from-office-macros) | v |v <br><br> CB 1710  | v  |  v |
+|[Utiliser une protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v |v <br><br> CB 1802 | v  | v  |
 
   (<a id="fn1">1</a>) Vous pouvez configurer des règles de réduction de la surface d’attaque sur une base par règle à l’aide du GUID de n’importe quelle règle.
 
@@ -112,7 +141,7 @@ Les liens vers des informations sur les versions du système de gestion de la co
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM est désormais Configuration Manager de point de terminaison Microsoft._
 
-## <a name="per-rule-alert-and-notification-details"></a>Détails des alertes et des notifications par règle
+## <a name="per-asr-rule-alert-and-notification-details"></a>Par alerte de règle ASR et détails de notification
 
 Les notifications toast sont générées pour toutes les règles en mode bloc. Les règles d’un autre mode ne génèrent pas de notifications toast
 
@@ -230,7 +259,7 @@ Type d’action de chasse avancé :
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
-Dépendances : Antivirus Microsoft Defender
+Dépendances : antivirus Microsoft Defender
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Empêcher toutes les applications Office de créer des processus enfants
 
@@ -249,7 +278,7 @@ Type d’action de chasse avancé :
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
 
-Dépendances : Antivirus Microsoft Defender
+Dépendances : antivirus Microsoft Defender
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows
 
@@ -274,7 +303,7 @@ Type d’action de chasse avancé :
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
-Dépendances : Antivirus Microsoft Defender
+Dépendances : antivirus Microsoft Defender
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web
 
@@ -294,7 +323,7 @@ Type d’action de chasse avancé :
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
 
-Dépendances : Antivirus Microsoft Defender
+Dépendances : antivirus Microsoft Defender
 
 > [!NOTE]
 > La règle **Bloquer le contenu exécutable du client de messagerie et de la messagerie web** contient les descriptions alternatives suivantes, en fonction de l’application que vous utilisez :
@@ -325,7 +354,7 @@ Type d’action de chasse avancé :
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
-Dépendances : Antivirus Microsoft Defender, Protection cloud
+Dépendances : antivirus Microsoft Defender, protection cloud
 
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Bloquer l’exécution de scripts potentiellement masqués
 
@@ -350,7 +379,7 @@ Type d’action de chasse avancé :
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Dépendances : Antivirus Microsoft Defender, interface d’analyse anti-programme malveillant (AMSI)
+Dépendances : antivirus Microsoft Defender, interface d’analyse anti-programme malveillant (AMSI)
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé
 
@@ -369,7 +398,7 @@ Type d’action de chasse avancé :
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
-Dépendances : Antivirus Microsoft Defender, AMSI
+Dépendances : antivirus Microsoft Defender, AMSI
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher les applications Office de créer du contenu exécutable
 
@@ -388,7 +417,7 @@ Type d’action de chasse avancé :
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
 
-Dépendances : Antivirus Microsoft Defender, RPC
+Dépendances : antivirus Microsoft Defender, RPC
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher les applications Office d’injecter du code dans d’autres processus
 
@@ -411,7 +440,7 @@ Type d’action de chasse avancé :
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
-Dépendances : Antivirus Microsoft Defender
+Dépendances : antivirus Microsoft Defender
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher l’application de communication Office de créer des processus enfants
 
@@ -433,7 +462,7 @@ Type d’action de chasse avancé :
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
 
-Dépendances : Antivirus Microsoft Defender
+Dépendances : antivirus Microsoft Defender
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquer la persistance via l’abonnement aux événements WMI
 
@@ -455,7 +484,7 @@ Type d’action de chasse avancé :
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
-Dépendances : Antivirus Microsoft Defender, RPC
+Dépendances : antivirus Microsoft Defender, RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloquer les créations de processus provenant des commandes PSExec et WMI
 
@@ -475,7 +504,7 @@ Type d’action de chasse avancé :
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
-Dépendances : Antivirus Microsoft Defender
+Dépendances : antivirus Microsoft Defender
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB
 
@@ -495,7 +524,7 @@ Type d’action de chasse avancé :
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
 
-Dépendances : Antivirus Microsoft Defender
+Dépendances : antivirus Microsoft Defender
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à partir de macros Office
 
@@ -521,7 +550,7 @@ Type d’action de chasse avancé :
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
 
-Dépendances : Antivirus Microsoft Defender, AMSI
+Dépendances : antivirus Microsoft Defender, AMSI
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Utiliser une protection avancée contre les ransomware
 
@@ -547,4 +576,14 @@ Type d’action de chasse avancé :
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
 
-Dépendances : Antivirus Microsoft Defender, Protection cloud
+Dépendances : antivirus Microsoft Defender, protection cloud
+
+## <a name="see-also"></a>Voir aussi
+
+- [Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
+- [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+- [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
+- [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+- [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Rapport des règles ASR\) de réduction de \(la surface d’attaque](attack-surface-reduction-rules-report.md)
+- [Référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md)

@@ -11,18 +11,25 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7f2a2f40d79db0fd344ca2a78f09840fd39939c8
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: d4a8d948f460bf44d7d159a39eedcf2a0ca65c73
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648722"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503883"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+
 L’examen des activités des utilisateurs à risque est une première étape importante dans la réduction des risques internes pour votre organisation. Ces risques peuvent être des activités qui génèrent des alertes à partir de stratégies de gestion des risques internes, ou des risques liés à des activités détectées par des stratégies, mais qui ne créent pas immédiatement une alerte de gestion des risques internes pour les utilisateurs. Vous pouvez examiner ces types d’activités à l’aide des **rapports d’activité utilisateur (préversion)** ou du **tableau de bord Alerte**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="user-activity-reports-preview"></a>Rapports d’activité utilisateur (préversion)
 

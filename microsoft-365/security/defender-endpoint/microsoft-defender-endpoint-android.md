@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1f9f48e78fd45b0120bdccecd7315321dfef4d53
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a69004f41b461353ce51999c1b640081e3ebf702
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691982"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226578"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
@@ -43,7 +43,7 @@ Cette rubrique explique comment installer, configurer, mettre à jour et utilise
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Comment installer Microsoft Defender pour point de terminaison sur Android
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Configuration requise
 
 - **Pour les utilisateurs finaux** :
   - Une licence Microsoft Intune doit être attribuée à l’utilisateur final. Pour plus d’informations sur l’attribution de licences, consultez [Affecter des licences aux utilisateurs](/azure/active-directory/users-groups-roles/licensing-groups-assign).

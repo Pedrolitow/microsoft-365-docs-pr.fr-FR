@@ -16,21 +16,22 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
-ms.openlocfilehash: b130a3166db16d36c43e15545cf0f6c14d432e08
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: bf9c43caf1dc520b14d923b78a8696be258f2439
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736803"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226688"
 ---
 #  <a name="live-response-library-methods-and-properties"></a>Les méthodes et les propriétés de la bibliothèque de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** [Pertahanan Microsoft untuk Titik Akhir](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité d’entité de type d’information sensible de numéro de passeport en Italie.
-ms.openlocfilehash: 5ee8c1d55fd29ccd370d645711125ed10b1bf740
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 57817ff2e6865215109829e6cdb6e2256d991dbe
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996739"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382268"
 ---
 # <a name="italy-passport-number"></a>Numéro de passeport italien
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -84,15 +87,15 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- Passeport #
-- Passeport #
-- passportid
-- Passeports
-- passportno
-- passport no
+- #passeport
+- # passeport
+- passportID
+- passeports
+- n° de passeport
+- n° de passeport
 - numéropasseport
 - numéro de passeport
-- passportnumbers
+- numérospasseport
 - numéros de passeport
 
 ### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
