@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Utilisez les classes Microsoft Teams avec Blackboard Learn Ultra.
-ms.openlocfilehash: 6e133b01dc2c70e87812e88590055fb48b6cbb99
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: c6170c60b7a9fe0f00c30c1d3ec07a0a65e31731
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275909"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169208"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Utiliser des classes Microsoft Teams avec Blackboard Learn Ultra
 
