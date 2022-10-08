@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 86d0ebd7978e80b101a9cf46665102cf642166e4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1920604a8b6582561d8c4ab5b8f0a222f4deee3b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692440"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68219187"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Ressources de Microsoft Defender pour point de terminaison utiles
 

@@ -10,23 +10,24 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/15/2022
+ms.date: 09/26/2022
 ms.reviewer: shlomiakirav
 ms.collection:
 - SMB
 - m365-initiative-defender-business
-- m365-security-compliance
+- m365-security
+- tier1
 f1.keywords: NOCSH
-ms.openlocfilehash: e3255ed8e5e3d8a7d1ba1dcf34286a8c663da5f6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: a944ed80c6fc5473fe2011dab05492c7cf122ebb
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736451"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097267"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparer les fonctionnalités de sécurité dans les plans Microsoft 365 pour les petites et moyennes entreprises
 
-Microsoft offre un large éventail de solutions et de services cloud, notamment des plans pour les petites et moyennes entreprises. Par exemple, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) inclut des fonctionnalités de sécurité et de gestion des appareils, ainsi que des fonctionnalités de productivité telles que les applications Office. Cet article décrit les fonctionnalités de sécurité dans Microsoft 365 Business Premium, Microsoft Defender pour entreprises et [Pertahanan Microsoft untuk Titik Akhir](../defender-endpoint/microsoft-defender-endpoint.md).
+Microsoft offre un large éventail de solutions et de services cloud, notamment des plans pour les petites et moyennes entreprises. Par exemple, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) inclut des fonctionnalités de sécurité et de gestion des appareils, ainsi que des fonctionnalités de productivité telles que les applications Office. Cet article décrit les fonctionnalités de sécurité dans Microsoft 365 Business Premium, Microsoft Defender pour entreprises et [Microsoft Defender pour point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md).
 
 
 **Utilisez cet article pour** :
@@ -39,8 +40,11 @@ Microsoft offre un large éventail de solutions et de services cloud, notamment 
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparer Microsoft Defender pour entreprises à Microsoft 365 Business Premium
 
-> [!NOTE]
-> Cet article fournit une vue d’ensemble générale des fonctionnalités et fonctionnalités incluses dans Microsoft Defender pour entreprises (en tant que plan autonome) et Microsoft 365 Business Premium (qui inclut Defender entreprise). Il ne s’agit pas d’une description de service ou d’un document de contrat de licence. Pour plus d’informations, consultez les [instructions relatives aux licences Microsoft 365 pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> [!IMPORTANT]
+> Cet article fournit une vue d’ensemble générale des fonctionnalités et fonctionnalités incluses dans Microsoft Defender pour entreprises (en tant que plan autonome) et Microsoft 365 Business Premium (qui inclut Defender entreprise). Il ne s’agit pas d’une description de service ou d’un document de contrat de licence. Pour plus d’informations, consultez les ressources suivantes :
+> - [Conseils sur les licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> - [Microsoft 365 Éducation](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
+
 
 | Planification | Description |
 |:---|:---|
@@ -48,13 +52,13 @@ Microsoft offre un large éventail de solutions et de services cloud, notamment 
 | **[Microsoft 365 Business Premium](../../business-premium/index.md)** | **Fonctionnalités de Defender entreprise, ainsi que des fonctionnalités de productivité et de sécurité supplémentaires**<ul><li>[Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (applications et services Office et Microsoft Teams)</li><li>[Activation d’ordinateur partagé](/deployoffice/overview-shared-computer-activation) (pour le déploiement de Microsoft 365 Apps)</li><li>[Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (mise à niveau à partir des versions précédentes de Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (pour la configuration et la configuration des appareils Windows)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (anti-hameçonnage, antispam, logiciel anti-programme malveillant et usurpation d’identité pour le courrier électronique)</li><li>[Microsoft Defender pour Office 365 Plan 1](/microsoft-365/office-365-security/overview) (anti-hameçonnage avancé, détections en temps réel, pièces jointes sécurisées, liens fiables)</li><li>[Extension automatique de l’archivage](../../compliance/autoexpanding-archiving.md) (pour l’e-mail)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (gestion des identités)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (intégration et gestion des appareils)</li><li>[Azure Information Protection Premium Plan 1](/azure/information-protection/what-is-information-protection) (protection des informations sensibles)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (machines virtuelles gérées de manière centralisée et sécurisées dans le cloud)</li></ul> |
 
   
-<a id="fna">a)</a> Microsoft Intune est requis pour modifier ou personnaliser les règles de réduction de la surface d’attaque. Intune peut être ajouté à la version autonome de Defender entreprise. Intune est inclus dans Microsoft 365 Business Premium.
+<a id="fna">a)</a> Microsoft Intune est nécessaire pour modifier ou personnaliser les règles de réduction de la surface d’attaque. Intune peut être ajouté à la version autonome de Defender entreprise. Intune est inclus dans Microsoft 365 Business Premium.
 
-<a id="fnb">(b</a>) Microsoft Intune est requis pour intégrer des appareils iOS et Android. Consultez [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md).
+<a id="fnb">b</a>) Microsoft Intune est nécessaire pour intégrer des appareils iOS et Android. Consultez [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md).
 
-## <a name="compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2"></a>Comparer Microsoft Defender pour entreprises à Pertahanan Microsoft untuk Titik Akhir Plans 1 et 2
+## <a name="compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2"></a>Comparer Microsoft Defender pour entreprises à Microsoft Defender pour point de terminaison Plans 1 et 2
 
-Defender entreprise apporte les fonctionnalités de niveau entreprise de Defender pour point de terminaison aux petites et moyennes entreprises. Le tableau suivant compare les fonctionnalités et fonctionnalités de sécurité de Defender entreprise aux offres d’entreprise, Pertahanan Microsoft untuk Titik Akhir plans 1 et 2.
+Defender entreprise apporte les fonctionnalités de niveau entreprise de Defender pour point de terminaison aux petites et moyennes entreprises. Le tableau suivant compare les fonctionnalités et fonctionnalités de sécurité de Defender entreprise aux offres d’entreprise, Microsoft Defender pour point de terminaison Plans 1 et 2.
 
 |Fonctionnalité/fonctionnalité|[Défenseur des affaires](mdb-overview.md)<br/>(autonome)|[Defender pour Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(pour les clients d’entreprise) |[Defender pour point de terminaison Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(pour les clients d’entreprise) |
 |---|---|---|---|
@@ -93,7 +97,7 @@ Defender entreprise apporte les fonctionnalités de niveau entreprise de Defende
 (<a id="fn8">8</a>) La possibilité d’afficher les incidents entre locataires à l’aide de Defender pour point de terminaison est une nouveauté !
 
 > [!TIP]
-> Consultez également [Comparer les plans de sécurité des points de terminaison Microsoft](../defender-endpoint/defender-endpoint-plan-1-2.md).
+> Consultez également [Comparer les plans de sécurité des points de terminaison Microsoft](../defender-endpoint/defender-endpoint-plan-1-2.md) et les [conseils de licences Microsoft 365 pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="next-steps"></a>Prochaines étapes
 

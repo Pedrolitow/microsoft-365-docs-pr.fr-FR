@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Découvrez comment un administrateur peut définir une stratégie d’expiration des mots de passe pour votre entreprise, votre établissement scolaire ou votre association dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 71174355dbc01d03fb64ad261dc058d901fafb20
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 92fb8a20bbd05aa25b0935acfd26e1df3484207a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660462"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206672"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -41,13 +42,13 @@ ms.locfileid: "67660462"
 
 Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](/microsoft-365/admin/add-users/about-admin-roles)
 
-En tant qu'administrateur, vous pouvez faire en sorte qu'ils expirent après un certain nombre de jours ou qu'ils n'expirent jamais. Par défaut, les mots de passe sont configurés pour ne jamais expirer dans votre organisation.
+As an admin, you can make user passwords expire after a certain number of days, or set passwords to never expire. By default, passwords are set to never expire for your organization.
 
 Des recherches actuelles indiquent sans équivoque que les changements de mot de passe imposés ne sont pas forcément bénéfiques. Ils poussent les utilisateurs à choisir des mots de passe peu fiables, à réutiliser des mots de passe ou à mettre à jour d'anciens mots de passe de façon qu'ils sont facilement devinables de la part des pirates. Nous vous recommandons d’activer [Authentification multifacteur](../security-and-compliance/set-up-multi-factor-authentication.md). Pour en savoir plus sur la stratégie de mot de passe, vérifiez les [recommandations sur la stratégie de mot de passe ](../misc/password-policy-recommendations.md).
 
 Vous devez être un [Administrateur général](../add-users/about-admin-roles.md) pour procéder à ces étapes.
 
-Si vous êtes un utilisateur, vous n'avez pas les autorisations pour paramétrer votre mot de passe pour qu'il n'expire jamais. Demandez au support technique de votre bureau ou de votre école d'effectuer les opérations de cet article pour vous.
+If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
 
 > [!TIP]
 > Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
@@ -64,18 +65,18 @@ Si vous voulez que les mots de passe utilisateur expirent après un certain temp
   
 1. Si vous ne voulez pas que les utilisateurs aient à modifier les mots de passe, décochez la case en regard de **Définir les mots de passe pour qu’ils n’expirent jamais**.
 
-1. Entrez la fréquence d'expiration des mots de passe. Choisissez un nombre de jours compris entre 14 et 730.
+1. Type how often passwords should expire. Choose a number of days from 14 to 730.
  
 > [!IMPORTANT]
 > Les notifications d’expiration de mot de passe ne sont plus prises en charge dans les applications web Office ou le [centre d’administration](https://portal.office.com).
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Points importants dont vous devez tenir compte concernant la fonctionnalité d’expiration de mot de passe
   
-Les personnes qui utilisent uniquement l’application Outlook ne sont pas obligées de réinitialiser leur mot de passe Microsoft 365 tant que ce dernier n’a pas expiré dans le cache. Cela peut se produire quelques jours après la date d’expiration. Il n’existe aucune solution de contournement à ce problème pour les administrateurs.
+People who only use the Outlook app won't be forced to reset their Microsoft 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.
 
 ## <a name="prevent-last-password-from-being-used-again"></a>Empêcher la réutilisation du dernier mot de passe
 
-Si vous le souhaitez, vous pouvez empêcher vos utilisateurs de recycler d’anciens mots de passe en appliquant l’historique de mot de passe dans Active Directory (AD) local. Consultez [Créer une stratégie de mot de passe personnalisée](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
+If you want to prevent your users from recycling old passwords, you can do so by enforcing password history in on-premises Active Directory (AD). See [Create a custom password policy](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
 Dans Azure AD, le dernier mot de passe ne peut pas être réutilisé lorsque l’utilisateur modifie un mot de passe. La stratégie de mot de passe est appliquée à tous les comptes d’utilisateurs qui sont créés et gérés directement dans Azure AD. Cette stratégie de mot de passe ne peut pas être modifiée. Consultez [Stratégies de mot de passe Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
 

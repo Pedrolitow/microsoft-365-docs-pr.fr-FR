@@ -1,12 +1,12 @@
 ---
-title: Microsoft 365 identité cloud uniquement
+title: Identité microsoft 365 cloud uniquement
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -17,6 +17,7 @@ ms.custom:
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -26,14 +27,14 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment créer des utilisateurs et des groupes lorsque votre abonnement Microsoft 365 utilise une identité cloud uniquement.
-ms.openlocfilehash: 7b2ad2cee32f075302ea591806214b697fa9b206
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 17298d6f6c07ddfa571610d6038326bcf9ec91cf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091366"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198490"
 ---
-# <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identité cloud uniquement
+# <a name="microsoft-365-cloud-only-identity"></a>Identité microsoft 365 cloud uniquement
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
@@ -51,11 +52,11 @@ Les utilisateurs et leurs comptes d’utilisateur dans les organisations peuvent
 
 Faites le point sur les types d’utilisateurs de votre organisation. Quels sont les regroupements ? Par exemple, vous pouvez regrouper des utilisateurs par fonction ou objectif de haut niveau auprès de votre organisation.
 
-Par ailleurs, certains services cloud peuvent être partagés avec des utilisateurs externes à votre organisation sans comptes d’utilisateur. Vous devrez identifier ces groupes d’utilisateurs également.
+Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
 
-Vous pouvez utiliser des groupes dans Azure AD à plusieurs fins qui simplifient la gestion de votre environnement cloud. Par exemple, avec Azure AD groupes, vous pouvez :
+Vous pouvez utiliser des groupes dans Azure AD à plusieurs fins qui simplifient la gestion de votre environnement cloud. Par exemple, avec des groupes Azure AD, vous pouvez :
 
-- Utilisez des licences basées sur des groupes pour attribuer automatiquement des licences pour Microsoft 365 à vos comptes d’utilisateurs dès qu’ils sont ajoutés en tant que membres.
+- Utilisez les licences basées sur des groupes pour attribuer automatiquement des licences pour Microsoft 365 à vos comptes d’utilisateurs dès qu’ils sont ajoutés en tant que membres.
 - Ajoutez des comptes d’utilisateur à des groupes spécifiques dynamiquement en fonction des attributs de compte d’utilisateur, tels que le nom du service.
 - Provisionnez automatiquement les utilisateurs pour les applications SaaS (Software as a Service) et protégez l’accès à ces applications avec l’authentification multifacteur (MFA) et d’autres stratégies d’accès conditionnel.
 - Provisionnez les autorisations et les niveaux d’accès pour les équipes et les sites d’équipe SharePoint Online.

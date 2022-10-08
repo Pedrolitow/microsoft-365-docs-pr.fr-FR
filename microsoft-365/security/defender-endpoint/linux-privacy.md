@@ -11,16 +11,18 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6eea1b25da4a81f17ee1f22322f69dcd5088548d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 810ad7177a46435554746eca1bded13c2c8549ed
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730526"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227281"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité des Microsoft Defender pour point de terminaison sur Linux
 

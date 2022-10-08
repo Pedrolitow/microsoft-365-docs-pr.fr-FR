@@ -1,6 +1,6 @@
 ---
-title: Activer et configurer les fonctionnalités de protection antivirus Microsoft Defender
-description: Activer et configurer des fonctionnalités de protection en temps réel de l’Antivirus Microsoft Defender, telles que la surveillance du comportement, l’heuristique et le Machine Learning
+title: Activer et configurer Microsoft Defender fonctionnalités de protection antivirus
+description: Activer et configurer Microsoft Defender fonctionnalités de protection antivirus en temps réel telles que la surveillance du comportement, l’heuristique et le Machine Learning
 keywords: antivirus, protection en temps réel, rtp, machine learning, surveillance du comportement, heuristiques
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -14,14 +14,16 @@ ms.topic: article
 ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 9d86bdffb1a4560769b9eecac72ca41403894bfb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c304ac83f2036f5faaee37a36b7bc8acbe6e321c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697954"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198898"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Activer et configurer la protection antivirus Microsoft Defender pour qu’il soit toujours activé dans les stratégies de groupe
 
@@ -40,7 +42,7 @@ Ces activités incluent des événements, tels que des processus qui apportent d
 
 ## <a name="enable-and-configure-always-on-protection-in-group-policy"></a>Activer et configurer la protection always on dans stratégie de groupe
 
-Vous pouvez utiliser **l’éditeur de stratégie de groupe local** pour activer et configurer les paramètres de protection always on de l’antivirus Microsoft Defender.
+Vous pouvez utiliser **l’Éditeur de stratégie de groupe local** pour activer et configurer Microsoft Defender paramètres de protection always on antivirus.
 
 Pour activer et configurer la protection always on :
 
@@ -52,17 +54,17 @@ Pour activer et configurer la protection always on :
     
        :::image type="content" source="images/gpedit-search.png" alt-text="Résultat de la recherche dans la barre des tâches GPEdit dans le panneau de configuration" lightbox="images/gpedit-search.png":::
 
-2. Dans le volet gauche de **l’Éditeur de stratégie de groupe local**, développez l’arborescence sur **Modèles d’administration** de **configuration** \> par ordinateur **Composants** \> \> Windows **Antivirus Microsoft Defender**.
+2. Dans le volet gauche de **l’Éditeur de stratégie de groupe local**, développez l’arborescence sur **Modèles d’administration** de **configuration** \> par ordinateur **composants** \> \> Windows **Microsoft Defender Antivirus**.
 
-3. Configurez le paramètre de stratégie de service anti-programme malveillant antivirus Microsoft Defender.
+3. Configurez le paramètre de stratégie de service antivirus anti-programme malveillant Microsoft Defender.
 
-   Dans le volet d’informations de **l’Antivirus Microsoft Defender** à droite, double-cliquez sur **Autoriser le démarrage du service anti-programme malveillant avec une priorité normale** et **définissez-le sur Activé**.
+   Dans le **volet Microsoft Defender Détails de l’antivirus** à droite, double-cliquez sur **Autoriser le service anti-programme malveillant à démarrer avec une priorité normale** et **définissez-le sur Activé**.
 
    Puis sélectionnez **OK**.
 
-4. Configurez les paramètres de stratégie de protection en temps réel de l’Antivirus Microsoft Defender, comme suit :
+4. Configurez les paramètres de stratégie de protection en temps réel de l’antivirus Microsoft Defender, comme suit :
 
-    1. Dans le volet d’informations de **l’Antivirus Microsoft Defender** , double-cliquez sur **Protection en temps réel**. Ou, dans l’arborescence **de l’Antivirus Microsoft Defender** dans le volet gauche, sélectionnez **Protection en temps réel**.
+    1. Dans le **volet Microsoft Defender Détails de l’antivirus**, double-cliquez sur **Protection en temps réel**. Ou, dans **l’arborescence Microsoft Defender Antivirus** dans le volet gauche, sélectionnez **Protection en temps réel**.
 
     2. Dans le volet Détails de **la protection en temps réel** à droite, double-cliquez sur le paramètre de stratégie spécifié dans [les paramètres de stratégie de protection en temps réel](#real-time-protection-policy-settings) (plus loin dans cet article).
 
@@ -72,7 +74,7 @@ Pour activer et configurer la protection always on :
 
 5. Configurez le paramètre de stratégie d’analyse antivirus Microsoft Defender, comme suit :
 
-    1. Dans l’arborescence **de l’Antivirus Microsoft Defender** dans le volet gauche, sélectionnez **Analyser**.
+    1. Dans **l’arborescence Microsoft Defender Antivirus** dans le volet gauche, sélectionnez **Analyser**.
     
    2. Dans le volet **Détails** de l’analyse à droite, double-cliquez **sur Activer l’heuristique** et **définissez-la sur Activé**. 
 
@@ -86,7 +88,7 @@ Pour activer et configurer la protection always on :
 |---|---|
 |Activer la surveillance du comportement <p> Le moteur antivirus surveille les processus de fichiers, les modifications apportées aux fichiers et au Registre, ainsi que d’autres événements sur vos points de terminaison, en cas d’activité malveillante suspecte et connue.|Activé|
 |Analyser tous les fichiers et pièces jointes téléchargés <p> Les fichiers téléchargés et les pièces jointes sont analysés automatiquement. Cette analyse s’ajoute au filtre SmartScreen Windows Defender, qui analyse les fichiers avant et pendant le téléchargement.|Activé|
-|Surveiller l’activité des fichiers et des programmes sur votre ordinateur <p> Le moteur antivirus Microsoft Defender prend note des modifications apportées aux fichiers (écritures de fichiers, telles que les déplacements, les copies ou les modifications) et de l’activité générale du programme (programmes ouverts ou en cours d’exécution et qui entraînent l’exécution d’autres programmes).|Activé|
+|Surveiller l’activité des fichiers et des programmes sur votre ordinateur <p> Le moteur antivirus Microsoft Defender prend note des modifications apportées aux fichiers (écritures de fichiers, telles que les déplacements, les copies ou les modifications) et de l’activité générale du programme (programmes ouverts ou en cours d’exécution qui entraînent l’exécution d’autres programmes).|Activé|
 |Activer les notifications d’écriture de volume brut <p> Les informations sur les écritures de volume brut sont analysées par analyse du comportement.|Activé|
 |Activer l’analyse des processus chaque fois que la protection en temps réel est activée <p> Vous pouvez activer indépendamment le moteur antivirus Microsoft Defender pour analyser les processus en cours d’exécution à la recherche de modifications ou de comportements suspects. Cela est utile si vous avez temporairement désactivé la protection en temps réel et que vous souhaitez analyser automatiquement les processus qui ont démarré alors qu’ils étaient désactivés.|Activé|
 |Définir la taille maximale des fichiers téléchargés et des pièces jointes à analyser <p> Vous pouvez définir la taille en kilo-octets.|Activé|
@@ -111,7 +113,7 @@ La principale fonctionnalité de protection en temps réel est activée par déf
    1. Dans votre Windows 10 ou Windows 11 zone de recherche de barre des tâches, tapez **gpedit**.
    2. Sous **Correspondance optimale**, **sélectionnez Modifier la stratégie de groupe** pour lancer **l’éditeur de stratégie de groupe local**.
 
-2. Dans le volet gauche de **l’Éditeur de stratégie de groupe local**, développez l’arborescence sur **Modèles d’administration** de **configuration** \> par ordinateur **Composants** \> \> Windows Protection en **temps réel** de l’antivirus \> **Microsoft Defender**.
+2. Dans le volet gauche de **l’Éditeur de stratégie de groupe local**, développez l’arborescence sur **Modèles d’administration** de **configuration** \> par ordinateur **Composants** \> \> Windows **Microsoft Defender Protection antivirus** \> **en temps réel**.
 
 3. Dans le volet Détails de **la protection en temps** réel à droite, double-cliquez sur **Désactiver la protection en temps réel**.
 

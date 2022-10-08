@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 - m365initiative-coredeploy
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Démarrage rapide Office 365 Content Delivery Network (CDN)
-ms.openlocfilehash: 8eefd20386431f653ef7c247bc07119113e78ef4
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: c94f8ae3e464f3fdfe9c95b352bc567e609f1d41
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670584"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198358"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Démarrage rapide Office 365 Content Delivery Network (CDN)
 

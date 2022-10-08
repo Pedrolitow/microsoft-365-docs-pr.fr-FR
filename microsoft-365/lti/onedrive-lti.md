@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Créez et classez des devoirs, générez et organisez du contenu de cours, et collaborez sur des fichiers en temps réel avec Microsoft OneDrive LTI pour Canvas.
-ms.openlocfilehash: 659493f624b2c269c2e5eb51e1d902ab249e0cc7
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 405a47ee9ff510e452fa632eaef52b07aba2876b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709528"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203901"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Intégrer Microsoft OneDrive LTI à Canvas
 
@@ -68,7 +68,7 @@ L’intégration de Microsoft OneDrive LTI à Canvas est un processus en deux é
     > [!TIP]
     > **Étape facultative :** Si les enseignants de votre établissement scolaire souhaitent contrôler eux-mêmes les liens qui apparaissent dans la navigation de leurs cours, vous pouvez modifier le ``default`` paramètre dans le JSON copié. Le ``default`` paramètre est défini ``enabled`` automatiquement ; toutefois, la modification du ``default`` paramètre permet aux ``disabled`` enseignants de choisir la navigation de leurs propres cours.
     >
-    > Pour plus d’informations sur la façon dont les enseignants peuvent modifier leurs liens de navigation de cours, consultez [如何实现 gérer les liens de navigation des cours ?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
+    > Pour plus d’informations sur la façon dont les enseignants peuvent modifier leurs liens de navigation de cours, consultez [Comment faire gérer les liens de navigation des cours ?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
 
 7. Ensuite, développez la liste déroulante **Paramètres supplémentaires** et **définissez le niveau de confidentialité** sur **Public**. 
   

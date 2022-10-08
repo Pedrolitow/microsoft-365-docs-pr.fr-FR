@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: 055cd0e6e6f2d3279d028e2af210f40b62f329ee
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 06e3e116886ef719f6c57c9711ef770704a53bfb
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598580"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096432"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>Désintégrage d’un appareil à partir de Microsoft Defender pour entreprises
 
@@ -43,7 +44,7 @@ Si vous souhaitez déconnecter un appareil, utilisez l’une des procédures sui
 
 5. Dans l’écran de confirmation, passez en revue les informations, puis choisissez **Télécharger** pour continuer.
 
-6. Sélectionnez **Télécharger le package de retrait** Nous vous recommandons d’enregistrer le package de retrait sur un lecteur amovible.
+6. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
 
 7. Exécutez le script sur chaque appareil que vous souhaitez déclasser.
 
