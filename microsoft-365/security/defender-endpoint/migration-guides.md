@@ -9,19 +9,20 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 07/01/2022
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 46ac26b8351c4b0d85f6d34c196f49b230cd3726
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 473757482d95d2d3178326ede42e911ffe47638f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682986"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221167"
 ---
 # <a name="move-to-microsoft-defender-for-endpoint"></a>Passer à Microsoft Defender pour point de terminaison
 
@@ -40,7 +41,7 @@ Si vous envisagez de passer à Defender pour point de terminaison, nous avons de
 |---|---|
 |Vous n’avez pas encore de solution endpoint protection en place et vous souhaitez en savoir plus sur Defender pour point de terminaison. Vous souhaitez voir comment Defender pour point de terminaison fonctionne avant de le déployer dans votre environnement.|[laboratoire d’évaluation Microsoft Defender pour point de terminaison](evaluation-lab.md)|
 |Vous disposez déjà de Defender pour point de terminaison et vous souhaitez obtenir de l’aide pour tout configurer.|[Guide de déploiement de Microsoft Defender pour point de terminaison](deployment-phases.md)|
-|Vous envisagez de passer d’une solution de protection de point de terminaison non Microsoft à Defender pour point de terminaison, qui inclut l’antivirus Microsoft Defender. Vous souhaitez obtenir une vue d’ensemble du processus de migration et comment effectuer le basculement.|[Basculer vers Microsoft Defender pour point de terminaison](switch-to-mde-overview.md)|
+|Vous envisagez de passer d’une solution de protection de point de terminaison non Microsoft à Defender pour point de terminaison, qui inclut Microsoft Defender Antivirus. Vous souhaitez obtenir une vue d’ensemble du processus de migration et comment effectuer le basculement.|[Basculer vers Microsoft Defender pour point de terminaison](switch-to-mde-overview.md)|
 |Vous avez déjà migré ou intégré à Defender pour point de terminaison. Vous souhaitez obtenir de l’aide pour les étapes suivantes, telles que la gestion de vos paramètres de sécurité, la configuration d’autres fonctionnalités ou l’optimisation de vos stratégies de sécurité.|[Gérer Microsoft Defender pour point de terminaison, après la migration](manage-mde-post-migration.md)|
 
 

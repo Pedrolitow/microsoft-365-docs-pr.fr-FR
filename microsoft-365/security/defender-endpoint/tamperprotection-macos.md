@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d27272464938b4dc3a5a53bc447fcb227614f345
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1eea32f9f8844e89ce2572e856366a8de39b2f65
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689380"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229039"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
 
@@ -79,7 +80,6 @@ Vous pouvez configurer le mode de protection contre les falsifications en fourni
 
 - Versions macOS prises en charge : Monterey (12), Big Sur (11), Catalina (10.15+).
 - Version minimale requise pour Defender pour point de terminaison : 101.70.19.
-- Vous devez être sur un canal de mise à jour hors production ([préversion ou bêta](/deployoffice/office-insider/deploy/microsoft-autoupdate)), tandis que la fonctionnalité de protection contre les falsifications est en préversion. Si vous êtes sur le canal de production, le mode de protection contre les falsifications configuré est ignoré.
 
 **Paramètres fortement recommandés :**
 

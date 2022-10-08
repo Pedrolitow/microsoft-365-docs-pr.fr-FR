@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: sunasing
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9892b5eafdbcbabf2038a287a7ae4e58081f72bc
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e7b7117703fccd95c40f2ec6ec979cca526d6319
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688812"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221189"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour point de terminaison sur iOS
 
@@ -34,13 +35,17 @@ ms.locfileid: "67688812"
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## <a name="vulnerability-assessment-of-apps"></a>Évaluation des vulnérabilités des applications
+
+L’évaluation des vulnérabilités des applications sur Microsoft Defender pour point de terminaison pour iOS est désormais en préversion publique. Defender pour point de terminaison sur iOS prend en charge les évaluations des vulnérabilités des applications uniquement pour les appareils inscrits (GPM). Pour plus d’informations, consultez [Configurer l’évaluation des vulnérabilités des applications](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps). Si vous souhaitez participer à la préversion, partagez le nom et l’ID de votre locataire avec nous : mdatpmobile@microsoft.com.
+
 ## <a name="network-protection"></a>Protection réseau
 
 La protection réseau sur Microsoft Defender pour point de terminaison est désormais en préversion publique. La protection réseau offre une protection contre les menaces non autorisées Wi-Fi connexes, le matériel non fiable comme les périphériques d’ananas et avertit l’utilisateur si une menace associée est détectée. Les utilisateurs verront également une expérience guidée pour se connecter à des réseaux sécurisés et modifier des réseaux lorsqu’ils sont connectés à une connexion non sécurisée.
 
 Il inclut plusieurs contrôles d’administration pour offrir de la flexibilité, tels que la possibilité de configurer la fonctionnalité à partir du centre microsoft Endpoint Manager Administration. Les administrateurs peuvent également activer les contrôles de confidentialité pour configurer les données envoyées par Defender pour point de terminaison à partir d’appareils iOS. Pour plus d’informations, consultez [Configurer la protection réseau](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
-La protection réseau pour iOS est déjà activée pour votre locataire. Les utilisateurs finaux qui testent la fonctionnalité de protection réseau peuvent installer la préversion de l’application via TestFlight. Accédez à https://aka.ms/mdeiospp l’appareil iOS. Cela vous invite à installer l’application TestFlight sur votre appareil ou à ouvrir TestFlight au cas où elle serait déjà installée. Dans l’application TestFlight, suivez les instructions à l’écran pour installer le point de terminaison Microsoft Defender. Vérifiez que le numéro de version de MDE est 1.1.29270104.
+La protection réseau pour iOS est déjà activée pour votre locataire. Les utilisateurs finaux qui testent la fonctionnalité de protection réseau peuvent installer la préversion de l’application via TestFlight. Accédez à https://aka.ms/mdeiospp l’appareil iOS. Cela vous invite à installer l’application TestFlight sur votre appareil ou à ouvrir TestFlight au cas où elle serait déjà installée. Dans l’application TestFlight, suivez les instructions à l’écran pour installer Microsoft Defender point de terminaison. Vérifiez que le numéro de version de MDE est 1.1.29270104.
 
 ## <a name="privacy-controls"></a>Contrôles de confidentialité
 
@@ -60,7 +65,7 @@ Microsoft Defender pour point de terminaison sur iOS peut désormais s’intégr
 
 Microsoft Defender pour point de terminaison sur iOS dispose désormais d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, compte tenu des fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Il peut également fournir une protection web **sans configurer de VPN local sur l’appareil**. Cela offre aux utilisateurs finaux une expérience transparente tout en étant protégés contre le hameçonnage et d’autres attaques basées sur le web. Pour plus d’informations, consultez [cette documentation](ios-install.md#complete-deployment-for-supervised-devices)
 
-## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender pour point de terminaison est désormais Microsoft Defender dans l’App Store
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender pour point de terminaison est maintenant Microsoft Defender dans l’App Store
 
 Microsoft Defender pour point de terminaison est désormais disponible en tant que **Microsoft Defender** dans l’App Store. Avec cette mise à jour, l’application sera disponible en préversion pour **les consommateurs de la région des États-Unis**. En fonction de la façon dont vous vous connectez à l’application avec votre compte professionnel ou personnel, vous avez accès aux fonctionnalités de Microsoft Defender pour point de terminaison ou aux fonctionnalités de Microsoft Defender pour les particuliers. Pour plus d’informations, consultez [ce billet de blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals).
 
@@ -108,7 +113,7 @@ Le 25 janvier 2022, nous avons annoncé la disponibilité générale de la gesti
 
 - **La détection de jailbreak** est en préversion. Pour plus d’informations, consultez [la stratégie d’accès conditionnel d’installation basée sur les signaux de risque de l’appareil](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
 - **La configuration automatique du profil VPN** est en préversion pour les appareils inscrits via Microsoft Endpoint Manager (Intune). Pour plus d’informations, consultez [profil VPN de configuration automatique pour les appareils iOS inscrits](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
-- Le nom du produit Microsoft Defender ATP a été mis à jour pour Microsoft Defender pour point de terminaison dans l’App Store.
+- Le nom du produit ATP Microsoft Defender a été mis à jour pour Microsoft Defender pour point de terminaison dans l’App Store.
 - Amélioration de l’expérience de connexion.
 - Corrections de bogues.
 

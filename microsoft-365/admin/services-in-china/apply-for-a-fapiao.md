@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 description: Découvrez comment envoyer votre demande Fapiao au système de gestion 21Vianet Fapiao après avoir effectué un paiement dans le Office 365 géré par 21Vianet en Chine.
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 8d74a40502fbe1af04a34acfde005980e3784053
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 48184de0ba5a2e1d253bdc0567e7ae87717b0889
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101929"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206804"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Demander un Fapiao pour Office 365 géré par 21Vianet
 
@@ -109,7 +110,7 @@ Lorsque Fapiao est hors service, le système affiche un avis et indique l’heur
   
 ![Message d’erreur affiché lorsque le système de gestion 21Vianet Fapiao est hors d’utilisation.](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a>Foire aux questions
+## <a name="faqs"></a>FAQ
 
 ### <a name="what-services-can-i-get-from-online-support"></a>Quels services puis-je obtenir du support en ligne ?
 
@@ -119,7 +120,7 @@ Si vous voulez changer le titre fapiao, veuillez nous renvoyer le Fapiao et nous
   
 ![Formulaire de support du Centre d’administration utilisé pour renvoyer un Fapiao pour demander une modification de titre.](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
-### <a name="how-do-i-change-my-login-email-address-and-password"></a>如何实现 modifier mon adresse e-mail de connexion et mon mot de passe ?
+### <a name="how-do-i-change-my-login-email-address-and-password"></a>Comment faire modifier mon adresse e-mail de connexion et mon mot de passe ?
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">système de gestion Fapiao</a>, puis sélectionnez **Modifier l’adresse e-mail**.
 
@@ -131,7 +132,7 @@ Si vous voulez changer le titre fapiao, veuillez nous renvoyer le Fapiao et nous
   
 3. Si vous avez oublié votre adresse e-mail de connexion, contactez le service clientèle 21Vianet au (86) 400-089-0365.
 
-### <a name="how-do-i-find-my-order-id"></a>如何实现 trouver mon ID de commande ?
+### <a name="how-do-i-find-my-order-id"></a>Comment faire trouver mon ID de commande ?
 
 1. Dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=850627), accédez à la page **Facturation** \> **& paiements** .
 

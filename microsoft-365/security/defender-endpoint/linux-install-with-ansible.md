@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a15b15b5fabeb51a5ce3445ad3e98e9f7d843f3d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5c0c5e4eea9a639364f1750c960102740d071163
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692462"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229479"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 
@@ -52,7 +53,7 @@ En outre, pour le déploiement Ansible, vous devez connaître les tâches d’ad
 - SSH doit être configuré pour un compte d’administrateur entre le nœud de contrôle et tous les nœuds managés (appareils sur lesquels Defender pour point de terminaison sera installé), et il est recommandé d’être configuré avec l’authentification par clé publique.
 - Les logiciels suivants doivent être installés sur tous les nœuds managés :
   - Curl
-  - python-apt
+  - python-apt (si vous déployez sur des distributions à l’aide d’apt en tant que gestionnaire de package)
 
 - Tous les nœuds managés doivent être répertoriés au format suivant dans le fichier ou le `/etc/ansible/hosts` fichier approprié :
 

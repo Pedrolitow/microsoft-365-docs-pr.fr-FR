@@ -11,22 +11,24 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 12/13/2021
 search.appverid: met150
-ms.openlocfilehash: 4938a221cd23f3d99a9bdd32b981a28828c0eff3
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: d4ac6d95335bbdef0e897dc4995af3b8074ecfd0
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739959"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221145"
 ---
 # <a name="how-microsoft-identifies-malware-and-potentially-unwanted-applications"></a>Comment Microsoft identifie les programmes malveillants et les applications potentiellement indésirables
 
 Microsoft vise à offrir une expérience Windows agréable et productive en travaillant pour vous assurer que vous êtes en sécurité et dans le contrôle de vos appareils. Microsoft vous aide à vous protéger contre les menaces potentielles en identifiant et en analysant les logiciels et le contenu en ligne. Lorsque vous téléchargez, installez et exécutez des logiciels, nous vérifions la réputation des programmes téléchargés et nous vérifions que vous êtes protégé contre les menaces connues. Vous êtes également averti des logiciels qui nous sont inconnus.  
 
-Vous pouvez aider Microsoft [en soumettant des logiciels inconnus ou suspects à des fins d’analyse](https://www.microsoft.com/wdsi/filesubmission/). Cela permet de s’assurer que les logiciels inconnus ou suspects sont analysés par notre système pour commencer à établir la réputation. [Mer informasjon sur l’envoi de fichiers à des fins d’analyse](submission-guide.md)
+Vous pouvez aider Microsoft [en soumettant des logiciels inconnus ou suspects à des fins d’analyse](https://www.microsoft.com/wdsi/filesubmission/). Cela permet de s’assurer que les logiciels inconnus ou suspects sont analysés par notre système pour commencer à établir la réputation. [En savoir plus sur l’envoi de fichiers à des fins d’analyse](submission-guide.md)
 
 Les sections suivantes fournissent une vue d’ensemble des classifications que nous utilisons pour les applications et des types de comportements qui mènent à cette classification.
 
@@ -167,11 +169,11 @@ Les publicités qui vous sont présentées doivent :
 
 #### <a name="consumer-opinion"></a>Opinion des consommateurs
 
-Microsoft gère un réseau mondial d’analystes et de systèmes d’intelligence où vous pouvez [soumettre des logiciels à des fins d’analyse](https://www.microsoft.com/wdsi/filesubmission). Votre participation permet à Microsoft d’identifier rapidement les nouveaux programmes malveillants. Après analyse, Microsoft crée des informations de sécurité pour les logiciels qui répondent aux critères décrits. Cette intelligence de sécurité identifie le logiciel comme logiciel malveillant et est disponible pour tous les utilisateurs via l’antivirus Microsoft Defender et d’autres solutions anti-programme malveillant Microsoft.
+Microsoft gère un réseau mondial d’analystes et de systèmes d’intelligence où vous pouvez [soumettre des logiciels à des fins d’analyse](https://www.microsoft.com/wdsi/filesubmission). Votre participation permet à Microsoft d’identifier rapidement les nouveaux programmes malveillants. Après analyse, Microsoft crée des informations de sécurité pour les logiciels qui répondent aux critères décrits. Cette intelligence de sécurité identifie le logiciel comme logiciel malveillant et est disponible pour tous les utilisateurs via Microsoft Defender antivirus et d’autres solutions anti-programme malveillant Microsoft.
 
 ## <a name="potentially-unwanted-application-pua"></a>Application potentiellement indésirable (PUA)
 
-Notre protection PUA vise à protéger la productivité des utilisateurs et à garantir des expériences Windows agréables. Cette protection permet d’offrir des expériences Windows plus productives, performantes et agréables. Pour obtenir des instructions sur l’activation de la protection PUA dans Chromium Microsoft Edge et l’Antivirus Microsoft Defender, consultez [Détecter et bloquer les applications potentiellement indésirables](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+Notre protection PUA vise à protéger la productivité des utilisateurs et à garantir des expériences Windows agréables. Cette protection permet d’offrir des expériences Windows plus productives, performantes et agréables. Pour obtenir des instructions sur l’activation de la protection PUA dans Chromium Microsoft Edge et Microsoft Defender Antivirus, consultez [Détecter et bloquer les applications potentiellement indésirables](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 *Les applications potentiellement malveillantes ne sont pas considérées comme des programmes malveillants.*
 

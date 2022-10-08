@@ -11,17 +11,19 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 33b39519dc984d4371808dc2fd19192819442639
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: afa61d24804157c484912f158679ae8f9dd32357
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700507"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190667"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtenir les bases de connaissances manquantes par ID logiciel
 

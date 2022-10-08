@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,12 +20,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell.'
-ms.openlocfilehash: b133a4d1535005cb48447037ee0ec04937143234
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: f252c963d0f3f654f116410f06be2401b2f8a4e0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851411"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199062"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell
 
@@ -55,7 +57,7 @@ Avant de pouvoir gérer l’ensemble de Microsoft 365 à partir d’une seule in
 - Vous devez installer les modules requis pour Azure Active Directory (Azure AD), Exchange Online, Defender pour Office 365, la conformité Microsoft Purview, SharePoint Online et Teams :
 
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
-  - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+  - [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
   - [Module Teams PowerShell](/microsoftteams/teams-powershell-overview)
   - [Installer et gérer le module PowerShell Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)
   - [Aperçu de Teams PowerShell](/microsoftteams/teams-powershell-overview)
@@ -91,7 +93,7 @@ Voici les étapes à suivre pour vous connecter à tous les services dans une fe
    ```
 
    > [!NOTE]
-   > PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les cmdlets ayant *Msol* dans leur nom. Vous devez exécuter ces cmdlets à partir de PowerShell.
+   > PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You must run these cmdlets from PowerShell.
 
 4. Exécutez ces commandes pour vous connecter à SharePoint Online. Spécifiez le nom de l’organisation de votre domaine. Par exemple, pour « litwareinc\.onmicrosoft.com », la valeur nom de l’organisation est « litwareinc ».
 

@@ -9,8 +9,9 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 09/23/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom:
@@ -18,15 +19,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 486b77e2f4c60508170bfe2f119880e4b30033b8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5f2a87f1fa8ff8130e460f46c9ac94275ba0735d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686775"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221321"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -41,7 +42,7 @@ ms.locfileid: "67686775"
 
 La protection contre les falsifications est disponible pour les appareils qui exécutent l’une des versions suivantes de Windows :
 
-- Windows 11
+- Windows 11
 - Multisession Windows 11 Entreprise 
 - Windows 10
 - Windows 10 Entreprise à sessions multiples
@@ -49,7 +50,7 @@ La protection contre les falsifications est disponible pour les appareils qui ex
 - Windows Server 2019
 - Windows Server, version 1803 ou ultérieure
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 
 > [!NOTE]
 > La protection contre les falsifications dans Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
@@ -68,9 +69,14 @@ Pendant certains types de cyberattaques, les mauvais acteurs essaient de désact
 - Suppression des notifications dans l’application Sécurité Windows
 - Désactivation de l’analyse des archives et des fichiers réseau
 
+> [!IMPORTANT]
+> La protection intégrée (préversion) inclut l’activation de la protection contre les falsifications par défaut. Pour en savoir plus sur la protection intégrée, consultez :
+> - [La protection intégrée permet de se protéger contre les ransomware](built-in-protection.md) (article)
+> - [La protection contre les falsifications sera activée pour tous les clients d’entreprise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (billet de blog Tech Community)
+
 ### <a name="how-it-works"></a>Mode de fonctionnement
 
-La protection contre les falsifications verrouille essentiellement l’Antivirus Microsoft Defender sur ses valeurs sécurisées par défaut et empêche la modification de vos paramètres de sécurité par le biais d’applications et de méthodes telles que :
+La protection contre les falsifications verrouille essentiellement Microsoft Defender Antivirus à ses valeurs sécurisées par défaut et empêche la modification de vos paramètres de sécurité par le biais d’applications et de méthodes telles que :
 
 - Configuration des paramètres dans l’Éditeur du Registre sur votre appareil Windows
 - Modification des paramètres via les applets de commande PowerShell

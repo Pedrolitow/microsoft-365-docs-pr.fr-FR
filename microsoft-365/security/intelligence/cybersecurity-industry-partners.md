@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 9c273652dbe0f074e112906d348eecbe65e31936
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: df54e7fd14fe4c0e94b15bc0c98a3ddad2710081
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738508"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221057"
 ---
 # <a name="industry-collaboration-programs"></a>Programmes de collaboration du secteur d’activité
 

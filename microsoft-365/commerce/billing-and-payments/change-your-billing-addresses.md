@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment mettre à jour vos adresses de facturation ou l’adresse e-mail utilisée pour recevoir des notifications de facturation pour Microsoft 365 pour les entreprises.
 ms.date: 01/24/2022
-ms.openlocfilehash: 3421cdfa1951d4bcde91d8b0eb97612054980ced
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6a15d5e1b2f13f4cf7dd8f9757ff1616d9b4bc9b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493372"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206254"
 ---
 # <a name="change-your-microsoft-365-for-business-billing-addresses"></a>Modifier vos adresses de facturation Microsoft 365 pour les entreprises
 
@@ -36,7 +37,7 @@ Votre facture contient trois adresses :
 
 - **Adresse de facturation** Ceci est l'adresse de votre service de facturation et est généralement la même que l'adresse de **vente**.
 
-- **Adresse d'utilisation du service** L'adresse de l'endroit où le service est utilisé, généralement le même que l'adresse de **vente**. Si votre organisation compte des utilisateurs distants ou plusieurs sites, nous vous conseillons d'utiliser l'adresse où sont regroupés la plupart de vos utilisateurs.
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
 Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une autre adresse e-mail pour recevoir des notifications de facturation et modifier l’adresse e-mail de remplacement pour d’autres administrateurs.
 

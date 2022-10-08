@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos fichiers vers OneDrive.
-ms.openlocfilehash: 173dc5f779c986d25f14f7c2cda51c4a85856126
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 84b41d0b159f4ace06ab82d2969b56334c6baa5d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662792"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206693"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Déplacer des fichiers vers OneDrive Entreprise
 

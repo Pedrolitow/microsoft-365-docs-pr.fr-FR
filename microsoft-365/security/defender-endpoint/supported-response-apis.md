@@ -13,15 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
+ms.custom: api
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: cc13b1fcb9c396133d63cb0019a49933d34e10f9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 9086bae05ecfcea2bd055de23137fbe147e77be4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585903"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221409"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>API de requête Microsoft Defender pour point de terminaison prises en charge
 
@@ -54,7 +57,7 @@ Découvrez les appels d’API liés à la réponse pris en charge que vous pouve
 |Arrêt et fichier mis en quarantaine|Exécutez cet appel pour arrêter l’exécution de processus, mettre en quarantaine des fichiers et supprimer la persistance, comme les clés de Registre.|
 |Demander un exemple|Exécutez cet appel pour demander un exemple de fichier à partir d’un appareil spécifique. Le fichier sera collecté à partir de l’appareil et chargé dans un stockage sécurisé.|
 |Bloquer le fichier|Exécutez cette API pour empêcher la propagation d’une attaque dans votre organisation en interdisant les fichiers potentiellement malveillants ou les programmes malveillants suspectés.|
-|Débloquer le fichier|Autorisez l’exécution d’un fichier dans l’organisation à l’aide de l’antivirus Microsoft Defender.|
+|Débloquer le fichier|Autorisez l’exécution d’un fichier dans l’organisation à l’aide de Microsoft Defender Antivirus.|
 |Obtenir l’URI SAS du package|Exécutez cette API pour obtenir un URI qui permet de télécharger un package d’investigation.|
 |Obtenir l’objet MachineAction|Exécutez cette API pour obtenir l’objet MachineAction.|
 |Obtenir la collection MachineActions|Exécutez cette commande pour obtenir la collection MachineAction.|

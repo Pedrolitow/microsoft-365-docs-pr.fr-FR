@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 231fce344ef9b9b617f58bc3a355ea748283e8ba
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 73b5c3aa284d16ec57156d2e0fe8c39f5d54619e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741255"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229193"
 ---
 # <a name="how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains"></a>Comment activer la création de rapports DMARC pour Microsoft Online Email l’adresse de routage (MOERA) et les domaines parqués
 
@@ -35,8 +38,8 @@ Ce guide est conçu pour vous aider à configurer DMARC pour les domaines non co
 
 ## <a name="what-youll-need"></a>Ce dont vous aurez besoin
 
-- Microsoft 365 系統管理中心 et l’accès à votre fournisseur DNS hébergeant vos domaines.
-- Autorisations suffisantes en tant que Administration globales pour apporter les modifications appropriées dans le Microsoft 365 系統管理中心.
+- Centre d'administration Microsoft 365 et l’accès à votre fournisseur DNS hébergeant vos domaines.
+- Autorisations suffisantes en tant que Administration globales pour apporter les modifications appropriées dans le Centre d'administration Microsoft 365.
 - 10 minutes pour effectuer les étapes décrites dans cet article.
 
 ## <a name="activate-dmarc-for-moera-domain"></a>Activer DMARC pour le domaine MOERA
@@ -54,7 +57,7 @@ Ce guide est conçu pour vous aider à configurer DMARC pour les domaines non co
 
 ## <a name="active-dmarc-for-parked-domains"></a>DMARC actif pour les domaines parqués
 
-1. Vérifiez si SPF est déjà configuré pour votre domaine parqué. Pour obtenir des instructions, consultez [Configurer SPF pour empêcher l’usurpation d’identité - Office 365 | Microsoftova dokumentacija](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing#how-to-handle-subdomains)
+1. Vérifiez si SPF est déjà configuré pour votre domaine parqué. Pour obtenir des instructions, consultez [Configurer SPF pour empêcher l’usurpation d’identité - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing#how-to-handle-subdomains)
 1. Contactez votre fournisseur de domaine DNS.
 1. Demandez à ajouter cet enregistrement Txt DMARC avec vos adresses e-mail appropriées : `v=DMARC1; p=reject; rua=mailto:d@rua.contoso.com;ruf=mailto:d@ruf.contoso.com`.
 
@@ -64,6 +67,6 @@ Attendez que les modifications DNS soient propagées et essayez d’usurper les 
 
 ## <a name="more-information"></a>Informations supplémentaires
 
-[Configurer SPF pour empêcher l’usurpation d’identité - Office 365 | Microsoftova dokumentacija](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)
+[Configurer SPF pour empêcher l’usurpation d’identité - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing)
 
-[Utiliser DMARC pour valider l’e-mail, les étapes de configuration - Office 365 | Microsoftova dokumentacija](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
+[Utiliser DMARC pour valider l’e-mail, les étapes de configuration - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)

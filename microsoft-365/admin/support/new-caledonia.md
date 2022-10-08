@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour la Nouvelle-Calédienne
+title: Informations de support pour la Nouvelle-Calédonie
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b87139528b7a169920d8c6bf51f5fe6bd6a37a4c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0a53f0fefb3b912d242bdfb71df2d97f3fc38283
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371651"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199502"
 ---
-# <a name="contact-support-for-new-caledonia"></a>Contacter le support pour la Nouvelle-Calédienne
+# <a name="contact-support-for-new-caledonia"></a>Contacter le support technique pour la Nouvelle-Calédonie
 
 [Rechercher un autre pays ou une autre région](../get-help-support.md).
 
@@ -29,14 +31,14 @@ ms.locfileid: "61371651"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 19h00 à 15h00
+Français : Mon-Fri 19h-3h
 
-Anglais : Mon-Fri 19:00-15:00
+Anglais : Mon-Fri 19h-3h
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 18h00 à 17h00
+Français : Mon-Fri de 18 h à 7 h
 
 Anglais : 24h/24, 7j/7
 
-Les frais d’appels internationaux s’appliquent
+Des frais d’appel internationaux s’appliquent

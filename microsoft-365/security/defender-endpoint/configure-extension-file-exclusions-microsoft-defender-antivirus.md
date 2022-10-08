@@ -1,6 +1,6 @@
 ---
 title: Configurer et valider des exclusions en fonction de l’extension, du nom ou de l’emplacement
-description: Excluez les fichiers des analyses de l’Antivirus Microsoft Defender en fonction de leur extension de fichier, nom de fichier ou emplacement.
+description: Excluez les fichiers des analyses antivirus Microsoft Defender en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
 keywords: exclusions, fichiers, extension, type de fichier, nom de dossier, nom de fichier, analyses
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -14,14 +14,16 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 87d950b1ca116982ebdeca172764e0a1db3dbf82
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 2d7e53aa67331a4eca9b5c918d1861d640374ecd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850170"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198952"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -35,13 +37,13 @@ ms.locfileid: "67850170"
 
 - Windows
 
-Vous pouvez définir des exclusions pour l’antivirus Microsoft Defender qui s’appliquent aux [analyses planifiées](schedule-antivirus-scans.md), aux [analyses à la demande](run-scan-microsoft-defender-antivirus.md) et à la [protection et à la surveillance en temps réel en permanence](configure-real-time-protection-microsoft-defender-antivirus.md). **En règle générale, vous n’avez pas besoin d’appliquer des exclusions**. Si vous devez appliquer des exclusions, vous pouvez choisir parmi les éléments suivants :
+Vous pouvez définir des exclusions pour Microsoft Defender Antivirus qui s’appliquent aux [analyses planifiées](schedule-antivirus-scans.md), aux [analyses à la demande](run-scan-microsoft-defender-antivirus.md) et à la [protection et à la surveillance en temps réel en permanence](configure-real-time-protection-microsoft-defender-antivirus.md). **En règle générale, vous n’avez pas besoin d’appliquer des exclusions**. Si vous devez appliquer des exclusions, vous pouvez choisir parmi les éléments suivants :
 
 - Exclusions basées sur les extensions de fichier et les emplacements des dossiers (décrits dans cet article)
 - [Exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Les exclusions de l’Antivirus Microsoft Defender ne s’appliquent pas à d’autres fonctionnalités Microsoft Defender pour point de terminaison, telles que les [règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction.md) et l’accès [contrôlé aux dossiers](controlled-folders.md). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes de détection de point de terminaison et de réponse (EDR) et d’autres détections.
+> Microsoft Defender les exclusions antivirus ne s’appliquent pas à d’autres fonctionnalités Microsoft Defender pour point de terminaison, telles que les [règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction.md) et [l’accès contrôlé aux dossiers](controlled-folders.md). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes de détection de point de terminaison et de réponse (EDR) et d’autres détections.
 > Pour exclure les fichiers de manière générale, ajoutez-les aux [indicateurs personnalisés](manage-indicators.md) Microsoft Defender pour point de terminaison.
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -50,7 +52,7 @@ Consultez [Recommandations pour définir des exclusions](configure-exclusions-mi
 
 ## <a name="exclusion-lists"></a>Listes d’exclusions
 
-Pour exclure certains fichiers des analyses de l’Antivirus Microsoft Defender, modifiez vos listes d’exclusion. L’Antivirus Microsoft Defender inclut de nombreuses exclusions automatiques basées sur les comportements connus du système d’exploitation et les fichiers de gestion classiques, tels que ceux utilisés dans la gestion d’entreprise, la gestion des bases de données et d’autres scénarios et situations d’entreprise.
+Pour exclure certains fichiers des analyses antivirus Microsoft Defender, modifiez vos listes d’exclusion. Microsoft Defender Antivirus inclut de nombreuses exclusions automatiques basées sur les comportements connus du système d’exploitation et les fichiers de gestion classiques, tels que ceux utilisés dans la gestion d’entreprise, la gestion des bases de données et d’autres scénarios et situations d’entreprise.
 
 > [!NOTE]
 > Les exclusions s’appliquent également aux [détections d’applications potentiellement indésirables (PUA](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) ).
@@ -76,7 +78,7 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 - N’excluez pas les lecteurs réseau mappés. Spécifiez le chemin d’accès réseau réel.
 
-- Les dossiers qui sont des points d’analyse sont créés après le démarrage du service Antivirus Microsoft Defender, et ceux qui ont été ajoutés à la liste d’exclusion ne seront pas inclus. Redémarrez le service en redémarrant Windows pour les nouveaux points d’analyse à reconnaître comme cible d’exclusion valide.
+- Les dossiers qui sont des points d’analyse sont créés après le démarrage du service antivirus Microsoft Defender, et ceux qui ont été ajoutés à la liste d’exclusion ne seront pas inclus. Redémarrez le service en redémarrant Windows pour les nouveaux points d’analyse à reconnaître comme cible d’exclusion valide.
 
 - Les exclusions s’appliquent aux [analyses planifiées](scheduled-catch-up-scans-microsoft-defender-antivirus.md), aux [analyses à la demande](run-scan-microsoft-defender-antivirus.md) et à la [protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md), mais pas à toutes les fonctionnalités de Defender pour point de terminaison. Pour définir des exclusions entre Defender pour point de terminaison, utilisez [des indicateurs personnalisés](manage-indicators.md).
 
@@ -86,14 +88,14 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 ## <a name="configure-the-list-of-exclusions-based-on-folder-name-or-file-extension"></a>Configurer la liste des exclusions en fonction du nom du dossier ou de l’extension de fichier
 
-Vous pouvez choisir parmi plusieurs méthodes pour définir des exclusions pour l’antivirus Microsoft Defender.
+Vous pouvez choisir parmi plusieurs méthodes pour définir des exclusions pour Microsoft Defender Antivirus.
 
 ### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Intune pour configurer les exclusions de nom de fichier, de dossier ou d’extension de fichier
 
 Consultez les articles suivants :
 
 - [Configurer des paramètres de restriction d’appareils dans Microsoft Intune](/intune/device-restrictions-configure)
-- [Paramètres de restriction d’appareil antivirus Microsoft Defender pour les Windows 10 dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [Microsoft Defender paramètres de restriction d’appareil antivirus pour les Windows 10 dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Configuration Manager pour configurer les exclusions de nom de fichier, de dossier ou d’extension de fichier
 
@@ -108,7 +110,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme malveilla
 
 2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **la configuration de l’ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence vers **les composants Windows exclusions** \> **de l’antivirus** \> Microsoft Defender.
+3. Développez l’arborescence sur **les composants** \> Windows Microsoft Defender **exclusions** **antivirus**\>.
 
 4. Ouvrez le paramètre **Exclusions de chemin** d’accès à modifier et ajoutez vos exclusions.
 
@@ -159,7 +161,7 @@ Le tableau suivant répertorie les valeurs que vous pouvez utiliser dans la `<ex
 > [!IMPORTANT]
 > Si vous avez créé une liste, avec `Set-MpPreference` ou `Add-MpPreference`, l’utilisation de l’applet `Set-MpPreference` de commande remplacera à nouveau la liste existante.
 
-Par exemple, l’extrait de code suivant entraîne l’exclusion des analyses antivirus Microsoft Defender de tout fichier avec l’extension de `.test` fichier :
+Par exemple, l’extrait de code suivant entraîne Microsoft Defender analyses antivirus pour exclure tout fichier avec l’extension de `.test` fichier :
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
@@ -299,7 +301,7 @@ Vous pouvez récupérer les éléments de la liste d’exclusion à l’aide de 
 
 Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières :
 
-- Récupérez l’état de toutes les préférences de l’Antivirus Microsoft Defender. Chaque liste s’affiche sur des lignes distinctes, mais les éléments de chaque liste sont combinés dans la même ligne.
+- Récupérez l’état de toutes les préférences antivirus Microsoft Defender. Chaque liste s’affiche sur des lignes distinctes, mais les éléments de chaque liste sont combinés dans la même ligne.
 - Écrivez l’état de toutes les préférences dans une variable et utilisez cette variable pour appeler uniquement la liste spécifique qui vous intéresse. Chaque utilisation est `Add-MpPreference` écrite dans une nouvelle ligne.
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Valider la liste d’exclusion à l’aide de MpCmdRun
@@ -314,7 +316,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La vérification des exclusions avec MpCmdRun nécessite microsoft Defender Antivirus CAMP version 4.18.2111-5.0 (publiée en décembre 2021) ou version ultérieure.
+> La vérification des exclusions avec MpCmdRun nécessite Microsoft Defender antivirus CAMP version 4.18.2111-5.0 (publiée en décembre 2021) ou version ultérieure.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passez en revue la liste des exclusions avec toutes les autres préférences antivirus Microsoft Defender à l’aide de PowerShell
 
@@ -358,7 +360,7 @@ Dans l’extrait de code PowerShell suivant, remplacez-le par `test.txt` un fich
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-Si l’Antivirus Microsoft Defender signale un programme malveillant, la règle ne fonctionne pas. S’il n’existe aucun rapport de programmes malveillants et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est le même que celui décrit sur le [site web du fichier de test EICAR](http://www.eicar.org/86-0-Intended-use.html).
+Si Microsoft Defender Antivirus signale des programmes malveillants, la règle ne fonctionne pas. S’il n’existe aucun rapport de programmes malveillants et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est le même que celui décrit sur le [site web du fichier de test EICAR](http://www.eicar.org/86-0-Intended-use.html).
 
 Vous pouvez également utiliser le code PowerShell suivant, qui appelle la classe WebClient .NET pour télécharger le fichier de test , comme avec l’applet de commande ; remplacez-le `Invoke-WebRequest` `c:\test.txt` par un fichier conforme à la règle que vous validez :
 
@@ -387,7 +389,7 @@ Vous pouvez également copier la chaîne dans un fichier texte vide et tenter de
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer et valider les exclusions dans les analyses de l’Antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configurer et valider les exclusions dans les analyses antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurer et valider les exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configurer les exclusions de l’Antivirus Microsoft Defender sur Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configurer Microsoft Defender exclusions antivirus sur Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Erreurs courantes à éviter lors de la définition d’exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)

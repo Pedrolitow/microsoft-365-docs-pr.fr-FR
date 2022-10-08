@@ -18,14 +18,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 2c5b0858897f555757682c52f0310497c23fef54
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 96b7600931d78e6ad1ada5197a79393efb4f1abb
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699837"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229303"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>Signaler et résoudre les problèmes Microsoft Defender pour point de terminaison règles ASR
 
@@ -111,9 +113,9 @@ Pour y accéder, ouvrez Windows observateur d'événements et accédez aux **jou
 
 :::image type="content" source="images/eventviewerscrnew.png" alt-text="Page observateur d'événements" lightbox="images/eventviewerscrnew.png":::
 
-## <a name="microsoft-defender-antimalware-protection-logs"></a>Journaux microsoft Defender Antimalware Protection
+## <a name="microsoft-defender-antimalware-protection-logs"></a>journaux de protection anti-programme malveillant Microsoft Defender
 
-Vous pouvez également afficher les événements de règle via l’outil en ligne de commande dédié de l’Antivirus Microsoft Defender, appelé `*mpcmdrun.exe*`, qui peut être utilisé pour gérer et configurer, et automatiser les tâches si nécessaire.
+Vous pouvez également afficher les événements de règle via l’outil en ligne de commande dédié à l’antivirus Microsoft Defender, appelé `*mpcmdrun.exe*`, qui peut être utilisé pour gérer et configurer, et automatiser les tâches si nécessaire.
 
 Vous trouverez cet utilitaire dans *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. Vous devez l’exécuter à partir d’une invite de commandes avec élévation de privilèges (autrement dit, exécuter en tant que Administration).
 

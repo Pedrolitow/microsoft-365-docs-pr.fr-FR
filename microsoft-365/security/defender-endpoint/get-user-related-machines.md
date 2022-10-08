@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b9f452d719dee0f7116a9ce46f04884ba3367e37
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5901e3fbcf5f1506009793cd96f5e7491665d14c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697566"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190592"
 ---
 # <a name="get-user-related-machines-api"></a>Obtenir l’API des machines associées à l’utilisateur
 
@@ -62,6 +64,8 @@ Déléguée (compte professionnel ou scolaire) | Machine.ReadWrite | « Lire et
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données ». Pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md)
 > - La réponse inclut uniquement les appareils auxquels l’utilisateur peut accéder, en fonction des paramètres du groupe d’appareils. Pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md).
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2. 
 
 ## <a name="http-request"></a>Requête HTTP
 

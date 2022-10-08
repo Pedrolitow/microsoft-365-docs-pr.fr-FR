@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 78118709bb503e13f15973b2283d6f756519c873
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6d733c7b27528a25097bd8aa666f14a60989cbfc
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736429"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221035"
 ---
 # <a name="microsoft-safety-scanner-download"></a>téléchargement Scanner de sécurité Microsoft
 
@@ -40,7 +42,7 @@ Scanner de sécurité Microsoft est un outil d’analyse conçu pour rechercher 
 
 - Le scanneur de sécurité est un exécutable portable qui n’apparaît pas dans le menu Démarrer de Windows ou sous forme d’icône sur le bureau. Notez où vous avez enregistré ce téléchargement.
 
-- Cet outil ne remplace pas votre produit anti-programme malveillant. Pour une protection en temps réel avec des mises à jour automatiques, utilisez [l’Antivirus Microsoft Defender sur Windows 11, Windows 10 et Windows 8](https://www.microsoft.com/windows/comprehensive-security) ou [Microsoft Security Essentials sur Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). Ces produits anti-programme malveillant offrent également de puissantes fonctionnalités de suppression de programmes malveillants. Si vous rencontrez des difficultés à supprimer des programmes malveillants avec ces produits, vous pouvez consulter notre aide sur la [suppression des menaces difficiles](https://www.microsoft.com/wdsi/help/troubleshooting-infection).
+- Cet outil ne remplace pas votre produit anti-programme malveillant. Pour une protection en temps réel avec des mises à jour automatiques, utilisez [Microsoft Defender Antivirus sur Windows 11, Windows 10 et Windows 8](https://www.microsoft.com/windows/comprehensive-security) ou [Microsoft Security Essentials sur Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). Ces produits anti-programme malveillant offrent également de puissantes fonctionnalités de suppression de programmes malveillants. Si vous rencontrez des difficultés à supprimer des programmes malveillants avec ces produits, vous pouvez consulter notre aide sur la [suppression des menaces difficiles](https://www.microsoft.com/wdsi/help/troubleshooting-infection).
 
 ## <a name="system-requirements"></a>Configuration requise
 

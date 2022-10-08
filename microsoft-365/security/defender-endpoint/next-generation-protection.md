@@ -14,14 +14,16 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 search.appverid: met150
-ms.openlocfilehash: 28df68cefb8f559e270a6e3d5c0c43d34f9f4135
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f24b7bcbf884a5b2498e53d5d9667956d36b966f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691890"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221343"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 
@@ -49,7 +51,7 @@ Microsoft Defender pour point de terminaison inclut une protection nouvelle gén
 Pour obtenir des informations sur la configuration des services de protection nouvelle génération, voir [Configurer les fonctionnalités de l'Antivirus Microsoft Defender](configure-microsoft-defender-antivirus-features.md).
 
 > [!NOTE]
-> La configuration et la gestion sont en grande partie les mêmes dans Windows Server que dans les clients Windows. Il existe cependant certaines différences. 
+> Configuration and management is largely the same in Windows Server as in Windows clients. However, there are some differences. 
 
 > [!TIP]
 > Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :

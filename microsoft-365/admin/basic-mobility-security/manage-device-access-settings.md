@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Pour les appareils que vous ne pouvez pas gérer avec La mobilité et la sécurité de base, bloquez Exchange ActiveSync’accès de l’application à la messagerie électronique et utilisez Azure AD PowerShell pour obtenir des détails sur les appareils d’organisation.
-ms.openlocfilehash: 4e66ee6aff2ce3df43eee0c6fa8a83699732378a
-ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.openlocfilehash: 22b4afd36043c10b093e3afaf6ff76f337ad5a7d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67651357"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190526"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans Mobilité et sécurité de base
 
@@ -94,7 +95,7 @@ Pour plus d’informations sur ces étapes, consultez [Se connecter à Microsoft
 
 2. Dans la boîte de dialogue Windows PowerShell Demande d’informations d’identification, tapez le nom d’utilisateur et le mot de passe de votre compte d’administrateur général Microsoft 365, puis sélectionnez **OK**.
 
-3. Exécutez la commande suivante.
+3. Exécutez la commande suivante :
 
    ```powershell
    Connect-MsolService -Credential $UserCredential
@@ -109,7 +110,7 @@ Pour exécuter le script Get-MsolUserDeviceComplianceStatus.ps1, vous devez acti
 
 1. Dans votre Bureau Windows, **sélectionnez Démarrer, puis tapez** Windows PowerShell. Cliquez avec le bouton droit sur Windows PowerShell, puis sélectionnez **Exécuter en tant qu’administrateur**.
 
-2. Exécutez la commande suivante.
+2. Exécutez la commande suivante :
 
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -121,7 +122,7 @@ Pour exécuter le script Get-MsolUserDeviceComplianceStatus.ps1, vous devez acti
 
 1. Ouvrez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
-2. Exécutez la commande suivante.
+2. Exécutez la commande suivante :
 
    ```powershell
    Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}

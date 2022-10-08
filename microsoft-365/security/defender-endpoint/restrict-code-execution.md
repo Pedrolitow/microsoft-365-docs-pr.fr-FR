@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b93330f549089cd0a5252fa871a0ef63c8249a3b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a50aa7c1771469f7ba55f93d02deaaee98824deb
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684484"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229391"
 ---
 # <a name="restrict-app-execution-api"></a>Restreindre l’API d’exécution d’application
 
@@ -53,7 +55,7 @@ Limitez l’exécution de toutes les applications sur l’appareil, à l’excep
 > [!IMPORTANT]
 >
 > - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, et sur Windows 11.
-> - Cette fonctionnalité est disponible si votre organisation utilise l’antivirus Microsoft Defender.
+> - Cette fonctionnalité est disponible si votre organisation utilise Microsoft Defender Antivirus.
 > - Cette action doit répondre aux Windows Defender formats de stratégie d’intégrité du code Application Control et aux exigences de signature. Pour plus d’informations, consultez [les formats de stratégie d’intégrité du code et la signature](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 ## <a name="permissions"></a>Autorisations
@@ -70,6 +72,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.RestrictExecution|'Restre
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Actions de correction actives » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 ## <a name="http-request"></a>Requête HTTP
 

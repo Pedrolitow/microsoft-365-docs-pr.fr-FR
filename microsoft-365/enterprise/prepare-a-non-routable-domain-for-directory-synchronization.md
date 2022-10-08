@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - O365E_SetupDirSyncLocalDir
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Découvrez ce qu’il faut faire si vous avez un domaine non routable associé à vos comptes d’utilisateur locaux avant de les synchroniser avec votre locataire Microsoft 365.
-ms.openlocfilehash: 551cb50686742577f78649bddee824637e87fa5e
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: e88daebce6ae11ec8741a49894e15509471a5701
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672378"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189734"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 

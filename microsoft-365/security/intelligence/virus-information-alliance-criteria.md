@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 98060c3fb41283bff671057947ef3dfb35af1b50
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 5e129246a5eefdf532b686a5f19e660e401afe1b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742286"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229567"
 ---
 # <a name="virus-information-alliance"></a>Virus Information Alliance
 

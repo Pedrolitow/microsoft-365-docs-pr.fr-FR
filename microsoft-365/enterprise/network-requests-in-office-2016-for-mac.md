@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -17,12 +19,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Cet article décrit les points de terminaison et LES URL que Office pour Mac applications tentent d’atteindre, ainsi que les services fournis.
-ms.openlocfilehash: 81567f823226adf66bbe7c4eea5b87dca5bcb786
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e42f5c8f9878ebd3e4ac40d77f96aa115c875e54
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700815"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189756"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Requêtes réseau dans Office pour Mac
 
@@ -127,7 +129,7 @@ Les points de terminaison réseau suivants s’appliquent aux activations d’ab
   
 Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |Ss  <br/> |Nouveautés de la page JSON.  <br/> |
    
@@ -135,7 +137,7 @@ Les points de terminaison réseau suivants s’appliquent uniquement à l’abon
   
 Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://entity.osi.office.net/```  <br/> |W  <br/> |Cs  <br/> |Service web de recherche  <br/> |
 |```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |Cs  <br/> |Contenu statique du chercheur  <br/> |
@@ -145,7 +147,7 @@ Les points de terminaison réseau suivants s’appliquent uniquement à l’abon
   
 Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Microsoft 365 et de licences de vente au détail/volume.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |Cs  <br/> |Insights Web Service  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |Cs  <br/> |Bibliothèque JQuery  <br/> |
@@ -157,7 +159,7 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
   
 Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |Cs  <br/> |Service web PowerPoint Designer  <br/> |
    
@@ -165,7 +167,7 @@ Les points de terminaison réseau suivants s’appliquent uniquement à l’abon
   
 Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |Cs  <br/> |Service web De démarrage rapide PowerPoint  <br/> |
    
@@ -173,7 +175,7 @@ Les points de terminaison réseau suivants s’appliquent uniquement à l’abon
   
 Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Microsoft 365 et de licences de vente au détail/volume.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |Cs  <br/> |Envoyer un service Smile  <br/> |
    
@@ -181,7 +183,7 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
   
 Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Microsoft 365 et de licences de vente au détail/volume.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |Cs  <br/> |Contacter le service de support technique  <br/> |
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |Cs  <br/> |Service de support dans l’application  <br/> |
@@ -190,7 +192,7 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
   
 Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Microsoft 365 et de licences de vente au détail/volume.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://wordcs.officeapps.live.com/```  <br/> |W  <br/> |Cs  <br/> |Service de conversion de documents Word (PDF)  <br/> |
    
@@ -228,7 +230,7 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
   
 Le point de terminaison réseau suivant s’applique à toutes les applications Office pour l’abonnement Microsoft 365 uniquement.
   
-|**URL**|**Type (Type)**|**Description**|
+|**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |```https://*.oscs.protection.outlook.com/```  <br/> |Cs  <br/> |Microsoft Safe Link Service  <br/> |
    
@@ -236,7 +238,7 @@ Le point de terminaison réseau suivant s’applique à toutes les applications 
   
 Le point de terminaison réseau suivant s’applique à toutes les applications Office pour les activations d’abonnement Microsoft 365 et de licences de vente au détail/volume. Lorsqu’un processus se bloque de manière inattendue, un rapport est généré et envoyé au service Watson.
   
-|**URL**|**Type (Type)**|**Description**|
+|**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |```https://watson.microsoft.com/```  <br/> |St  <br/> |Service de création de rapports d’erreurs Microsoft  <br/> |
 |```https://officeci.azurewebsites.net/```  <br/> |St  <br/> |Office Collaborative Insights Service  <br/> |

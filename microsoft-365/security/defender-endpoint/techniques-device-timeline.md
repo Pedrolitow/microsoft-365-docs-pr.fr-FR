@@ -13,15 +13,17 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 89e29ccddb3ee7da6affb6133665b43a4d5dffdb
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b028d9d571721ee933c3caa694b4578755b9f57f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586289"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221387"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Techniques dans la chronologie de l’appareil
 

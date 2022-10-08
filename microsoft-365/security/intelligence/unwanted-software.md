@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: db9a37bf18296e23763e6652bc25d0c50fd282cc
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 5d40a1862e65f0028fe72a41a6ae3f6ac8e4e266
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742308"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229589"
 ---
 # <a name="unwanted-software"></a>Logiciels indésirables
 
@@ -49,7 +51,7 @@ Pour éviter toute infection logicielle indésirable, téléchargez les logiciel
 
 Utilisez [Microsoft Edge](/microsoft-edge/deploy/index) lors de la navigation sur Internet. Microsoft Edge inclut des protections supplémentaires qui bloquent efficacement les modificateurs de navigateur qui peuvent modifier les paramètres de votre navigateur. Microsoft Edge bloque également les sites web connus hébergeant des logiciels indésirables à l’aide [de Windows Defender SmartScreen](/microsoft-edge/deploy/index) (également utilisé par Internet Explorer).
 
-Activez [l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) dans Windows 10. Il fournit une protection en temps réel contre les menaces et détecte et supprime les logiciels indésirables connus.
+Activez [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) dans Windows 10. Il fournit une protection en temps réel contre les menaces et détecte et supprime les logiciels indésirables connus.
 
 Téléchargez [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201) pour une protection en temps réel dans Windows 7 ou Windows Vista.
 
