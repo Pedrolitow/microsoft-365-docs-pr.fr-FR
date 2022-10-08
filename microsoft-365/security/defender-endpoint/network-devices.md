@@ -12,18 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8aed77cb861aa02e07ed6059b82a6b3c2716c142
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: b0f614a15957c625bff66a34581ec8477b529778
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710936"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233571"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Détection d’appareils réseau et gestion des vulnérabilités
 

@@ -14,23 +14,28 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2413cee978fa2fe66a2672e307e8cad12a7b803b
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 0fbe9108f6f0f33ecaad3d44354c6c85f66c9195
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787032"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506651"
 ---
 # <a name="use-communication-compliance-with-siem-solutions"></a>Utiliser la conformité des communications avec les solutions SIEM
+
+>[!IMPORTANT]
+>Conformité des communications Microsoft Purview fournit les outils nécessaires pour aider les organisations à détecter les violations de conformité réglementaire (par exemple sec ou FINRA), telles que les informations sensibles ou confidentielles, le harcèlement ou la menace de langue, et le partage de contenu pour adultes. Créés avec la confidentialité par conception, les noms d’utilisateur sont pseudonymés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont choisis par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 [La conformité des communications](/microsoft-365/compliance/communication-compliance) est une solution à risque interne dans Microsoft Purview qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les solutions SIEM (Security Information and Event Management) telles que [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) ou [Splunk](https://www.splunk.com/) sont couramment utilisées pour agréger et suivre les menaces au sein d’une organisation.
 
 Un besoin courant pour les organisations consiste à intégrer les alertes de conformité des communications et ces solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. Par exemple, un employé envoie un message offensant à un autre employé et ce message est détecté par une stratégie de conformité des communications pour le contenu inapproprié. Ces événements sont suivis dans l’audit Microsoft 365 (également appelé « journal d’audit unifié ») par la solution de conformité des communications et importés dans la solution SIEM. Une alerte est ensuite déclenchée dans la solution SIEM pour l’organisation à partir d’événements inclus dans l’audit Microsoft 365 associés aux alertes de conformité des communications. Les enquêteurs sont avertis de l’alerte dans les solutions SIEM, puis ils examinent et corrigent l’alerte dans la solution de conformité des communications.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertes de conformité des communications dans l’audit Microsoft 365
 
@@ -77,7 +82,7 @@ Lorsque vous utilisez Microsoft Sentinel pour agréger les correspondances de st
 
 1. [Intégration à Microsoft Sentinel](/azure/sentinel/quickstart-onboard). Dans le cadre du processus d’intégration, vous allez configurer vos sources de données.
 2. Configurez le [connecteur de données](/azure/sentinel/data-connectors-reference#microsoft-office-365) Microsoft Sentinel Microsoft Office 365 et, sous configuration du connecteur, sélectionnez *Exchange*.
-3. Configurez la requête de recherche pour récupérer les alertes de conformité des communications. Par exemple :
+3. Configurez la requête de recherche pour récupérer les alertes de conformité des communications. Par exemple :
 
     *| OfficeActivity | où OfficeWorkload == « Exchange » et Operation == « SupervisionRuleMatch » | trier par TimeGenerated*
 

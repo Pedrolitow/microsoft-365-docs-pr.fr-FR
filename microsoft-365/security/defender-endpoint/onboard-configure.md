@@ -6,23 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 82f5b8ae244950759c57a5b3efc3206650019d8c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4b6d682f74356154bc8fdbefacfb6485948427aa
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688416"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506519"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison
 
@@ -52,6 +52,8 @@ Defender pour point de terminaison prend en charge deux façons de gérer les au
 - **Gestion des autorisations de base** : définit les autorisations sur un accès complet ou en lecture seule. Les utilisateurs disposant de rôles d’administrateur général ou d’administrateur de sécurité dans Azure Active Directory (Azure AD) ont un accès complet. Le rôle lecteur de sécurité dispose d’un accès en lecture seule et n’accorde pas l’accès pour afficher l’inventaire des machines/appareils.
 
 - **Contrôle d’accès en fonction du rôle (RBAC)** : définit des autorisations granulaires en définissant des rôles, en affectant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations. consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).
+    > [!NOTE]
+    > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 Nous vous recommandons d’utiliser RBAC pour vous assurer que seuls les utilisateurs disposant d’une justification métier peuvent accéder à Defender pour point de terminaison.
 
@@ -72,10 +74,10 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 
 | Point de terminaison     | Options de l’outil                       |
 |--------------|------------------------------------------|
-| **Client Windows**  |     [Mobile Gestion des appareils / Microsoft Intune](configure-endpoints-mdm.md) <br> [Stratégie de groupe](configure-endpoints-gp.md) <br> [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>[Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
-| **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **Client Windows**  |     [Mobile Gestion des appareils / Microsoft Intune](configure-endpoints-mdm.md) <br> [Stratégie de groupe](configure-endpoints-gp.md) <br> [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>[Scripts VDI](configure-endpoints-vdi.md)  |
+| **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](configure-server-endpoints.md)  |
 | **MacOS**    | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
-| **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)     |
+| **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)   |
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)           |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
@@ -93,10 +95,10 @@ Après avoir intégré les appareils, vous devez configurer les autres fonctionn
 | Fonctionnalité | Description |
 |-|-|
 | [Configurer Gestion des vulnérabilités Microsoft Defender (MDVM)](tvm-prerequisites.md) | Defender Vulnerability Management est un composant de Microsoft Defender pour point de terminaison et fournit aux administrateurs de sécurité et aux équipes des opérations de sécurité une valeur unique, notamment : <br><br> - Insights de détection et de réponse des points de terminaison en temps réel (EDR) corrélés avec les vulnérabilités de point de terminaison. <br><br> - Contexte de vulnérabilité d’appareil inestimable pendant les enquêtes sur les incidents. <br><br> - Processus de correction intégrés via Microsoft Intune et Microsoft System Center Configuration Manager.  |
-| [Configurer la protection nouvelle génération (NGP)](configure-microsoft-defender-antivirus-features.md) | L’antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants :<br> <br>- Protection fournie par le cloud pour la détection quasi instantanée et le blocage des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.<br> <br> - Analyse en permanence à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelées « protection en temps réel »).<br><br> - Mises à jour de protection dédiées basées sur le Machine Learning, l’analyse du Big Data humaine et automatisée, ainsi que la recherche approfondie sur la résistance aux menaces. |
+| [Configurer la protection nouvelle génération (NGP)](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender Antivirus est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants :<br> <br>- Protection fournie par le cloud pour la détection quasi instantanée et le blocage des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.<br> <br> - Analyse en permanence à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelées « protection en temps réel »).<br><br> - Mises à jour de protection dédiées basées sur le Machine Learning, l’analyse du Big Data humaine et automatisée, ainsi que la recherche approfondie sur la résistance aux menaces. |
 | [Configurer la réduction de la surface d’attaque (ASR)](overview-attack-surface-reduction.md) | Les fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison aident à protéger les appareils et les applications de l’organisation contre les menaces nouvelles et émergentes. |
 | [Configurer les fonctionnalités air (Auto Investigation & Remediation)](configure-automated-investigations-remediation.md) | Microsoft Defender pour point de terminaison utilise des investigations automatisées pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée utilise différents algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures de correction immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. |
-| [Configurer les fonctionnalités Spécialistes des menaces Microsoft (MTE)](configure-microsoft-threat-experts.md) | Spécialistes des menaces Microsoft est un service de chasse managé qui fournit aux centres d’opérations de sécurité (SOC) une surveillance et une analyse de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées.      |
+| [Configurer les fonctionnalités Microsoft Defender Experts](configure-microsoft-threat-experts.md) | Microsoft Defender Experts est un service de chasse managé qui fournit aux centres d’opérations de sécurité (SOC) une surveillance et une analyse de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées.      |
 
 Pour plus d’informations, consultez [Fonctionnalités de Microsoft Defender pour point de terminaison prises en charge par plateforme](supported-capabilities-by-platform.md).
 
