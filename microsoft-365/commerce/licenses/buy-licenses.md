@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_o365
 ms.custom:
@@ -22,13 +23,13 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 pour les entreprises.
-ms.date: 08/18/2022
-ms.openlocfilehash: 1641b16f7f04b163c31ae1e03de3d0f7631a5efe
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.date: 09/29/2022
+ms.openlocfilehash: d479308940983183fb6956aa3c5bc6129b6c1d3a
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388053"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298054"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Acheter ou supprimer des licences Microsoft 365 pour un abonnement
 
@@ -82,7 +83,9 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 5. Sélectionnez **Enregistrer**.
 
 > [!NOTE]
-> Vous ne pouvez pas réduire le nombre de licences pour votre abonnement si toutes les licences sont actuellement attribuées aux utilisateurs. Pour réduire le nombre de licences, [supprimez d’abord une ou plusieurs licences des utilisateurs](../../admin/manage/remove-licenses-from-users.md), puis supprimez les licences de l’abonnement.
+> 
+> - Vous ne pouvez pas réduire le nombre de licences pour votre abonnement si toutes les licences sont actuellement attribuées aux utilisateurs. Pour réduire le nombre de licences, [supprimez d’abord une ou plusieurs licences des utilisateurs](../../admin/manage/remove-licenses-from-users.md), puis supprimez les licences de l’abonnement.
+> - Si vous avez acheté votre abonnement par le biais d’un représentant Microsoft, contactez-les directement pour obtenir de l’aide sur la réduction du nombre de licences.
 
 ## <a name="add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Ajouter des licences à un abonnement prépayé à l’aide d’une clé de produit Microsoft 365
 

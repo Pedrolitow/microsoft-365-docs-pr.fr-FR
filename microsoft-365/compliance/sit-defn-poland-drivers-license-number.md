@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro de permis de conduire en Pologne.
-ms.openlocfilehash: 120e000e5d7666d213062d812b2b5d6b6555c18e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: def6b2204052c56243194ab297ae52be47b6d336
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325702"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472780"
 ---
 # <a name="poland-drivers-license-number"></a>Numéro de permis de conduire polonais
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

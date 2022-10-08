@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ab6d8af542254994a39728dc2cac7b198f8d6eb6
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4a988a9d28ffdae2d9629413fa64d033eea263ca
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691044"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231679"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>vue d’ensemble de Microsoft Defender for Cloud Apps dans Defender pour point de terminaison
 

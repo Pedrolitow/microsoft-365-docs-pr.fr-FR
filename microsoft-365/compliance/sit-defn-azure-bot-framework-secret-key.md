@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité de clé secrète Azure Bot Framework (préversion)
+title: Définition d’entité de clé secrète Azure Bot Framework
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type clé secrète Azure Bot Framework.
-ms.openlocfilehash: c436436b00dda8a5273939665920ef709ff164c5
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: bb515b37f16dfe4e810ea38ef30a09563b966693
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996070"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503403"
 ---
-# <a name="azure-bot-framework-secret-key-preview"></a>Clé secrète Azure Bot Framework (préversion)
+# <a name="azure-bot-framework-secret-key"></a>Clé secrète Azure Bot Framework
 
-## <a name="format"></a>Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Ce SIT est également inclus dans le sit [groupé Toutes les informations d’identification](sit-defn-all-creds.md) .
+
+ ## <a name="format"></a>Format
 
 Combinaison de 55 caractères composés de lettres, de chiffres et de caractères spéciaux.
 
@@ -58,7 +63,7 @@ Combinaison de 11 caractères :
 - ou soulignements (_)
 - un point
 
-Combinaison de 3 caractères :
+Combinaison de trois caractères :
 
 - a-z (non sensible à la casse)
 - 0-9
@@ -66,7 +71,7 @@ Combinaison de 3 caractères :
 - ou soulignements (_)
 - un point
 
-Combinaison de 3 caractères :
+Combinaison de trois caractères :
 
 - a-z (non sensible à la casse)
 - 0-9
@@ -86,9 +91,15 @@ par exemple :
 `abcdefghijk.lmn.opq.rstuvwxyz0123456789-_ABCDEFGHIJKLMNOPQRSTUV`
 
 
+## <a name="credential-example"></a>Exemple d’informations d’identification 
+
+`host: webchat.botframework.com/?s=abcdefghijklmnopqrstuvwxyz.0123456789_ABCDEabcdefghijkl&`
+
 ## <a name="checksum"></a>Somme de contrôle
 
 Non
+
+Les SIT qui ont des sommes de contrôle utilisent un calcul unique pour vérifier si les informations sont valides. Cela signifie que lorsque la valeur **de somme de contrôle** est **Oui**, le service peut effectuer une détection positive basée sur les données sensibles uniquement. Lorsque la valeur de somme de **contrôle** est Aucun élément (secondaire) supplémentaire **ne** doit également être détecté pour que le service effectue une détection positive.
 
 ## <a name="definition"></a>Définition
 
@@ -97,12 +108,12 @@ Ce SIT est conçu pour correspondre aux informations de sécurité utilisées po
 Il utilise plusieurs ressources principales :
 
 - Modèles de clé symétrique codée en 328 bits de l’URL Base64.
-- Modèles de clé symétrique codée en 360 bits d’URL base64.
+- Modèles de clé symétrique codée en 360 bits de l’URL Base64.
 - Modèles de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 - Modèles de valeurs de maquette, de réactions et d’espaces réservés.
 - Dictionnaire de vocabulaire.
 
-Les modèles sont conçus pour correspondre aux informations d’identification réelles avec une confiance raisonnable. Les modèles ne correspondent pas aux informations d’identification mises en forme en tant qu’exemples. Les valeurs de maquette, les valeurs expurgées et les espaces réservés, tels que le type d’informations d’identification ou les descriptions d’utilisation, dans la position où une valeur secrète réelle doit être présente ne seront pas mises en correspondance.
+Les modèles sont conçus pour correspondre aux informations d’identification réelles avec une confiance raisonnable. Les modèles ne correspondent pas aux informations d’identification mises en forme en tant qu’exemples. Les valeurs de maquette, les valeurs redépliquées et les espaces réservés, tels que le type d’informations d’identification ou les descriptions d’utilisation, dans la position où une valeur secrète réelle doit être présente ne seront pas mises en correspondance.
 
 ## <a name="keywords"></a>Mots-clés
 

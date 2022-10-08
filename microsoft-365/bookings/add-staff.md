@@ -7,13 +7,14 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection: scotvorg
 description: Utilisez cette page pour créer votre liste de membres du personnel et gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: b9acf72e9026b230702ed4cad232a92842b51028
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: 6bdbdfa1e6ae366af9ea51dcada8f38f950f5e73
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185146"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210721"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 

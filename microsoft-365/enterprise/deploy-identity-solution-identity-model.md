@@ -6,15 +6,17 @@ manager: scotv
 audience: Admin
 ms.date: 09/30/2020
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,12 +28,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Étape 1. Déterminer votre modèle d’identité cloud Microsoft
-ms.openlocfilehash: a2e5d57d353527061a08d3bb6b116f3c52be3753
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: d609576e84ef01bee8a3513807a38ebec9bfe5ae
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749174"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171364"
 ---
 # <a name="step-1-determine-your-cloud-identity-model"></a>Étape 1. Déterminer votre modèle d’identité cloud
 

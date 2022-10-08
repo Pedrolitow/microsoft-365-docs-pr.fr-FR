@@ -15,15 +15,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: d57c9bbdfb0a649c1712af078ae5b45577cb24c6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 3d44c157cb14b7438ffe40c74354a890c0b4b070
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740289"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68147512"
 ---
 # <a name="cancel-machine-action-api"></a>API Annuler l’action de l’ordinateur
 
@@ -68,8 +70,8 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
-|Content-Type|string|application/json. Obligatoire.|
+|Autorisation|Chaîne|Bearer {token}. Required.|
+|Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>Corps de la demande
 

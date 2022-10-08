@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -20,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Résumé : Découvrez comment configurer un réseau virtuel Azure intersites pour les charges de travail de serveur Office avec une connexion VPN de site à site.'
-ms.openlocfilehash: 1c890987bd12504e475c10b85a556cc642e27aec
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 2056f8b901a366143c5869c903002528439fce18
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560392"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194860"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connecter un réseau local à Microsoft Azure Virtual Network
 
@@ -35,19 +36,19 @@ Par exemple, un serveur de synchronisation d’annuaires s’exécutant sur une 
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configurer un réseau virtuel Azure interstrés
 
-Vos machines virtuelles dans Azure n'ont pas besoin d'être isolées de votre environnement local. Pour connecter des machines virtuelles Azure à des ressources réseau locales, vous devez configurer un réseau virtuel Azure local. Le diagramme suivant montre les composants requis pour déployer un réseau virtuel Azure entre différents locaux avec une machine virtuelle dans Azure.
+Your virtual machines in Azure don't have to be isolated from your on-premises environment. To connect Azure virtual machines to your on-premises network resources, you must configure a cross-premises Azure virtual network. The following diagram shows the required components to deploy a cross-premises Azure virtual network with a virtual machine in Azure.
   
 ![Réseau local connecté à Microsoft Azure par une connexion VPN de site à site.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
  
-Dans le diagramme, il existe deux réseaux connectés par une connexion VPN de site à site : le réseau local et le réseau virtuel Azure. La connexion VPN de site à site est :
+In the diagram, there are two networks connected by a site-to-site VPN connection: the on-premises network and the Azure virtual network. The site-to-site VPN connection is:
 
 - entre deux points de terminaison qui sont adressables et se trouvent sur l’Internet public ;
 - terminée par un appareil VPN sur le réseau local et une passerelle VPN Azure sur le réseau virtuel Azure.
 
-Le réseau virtuel Azure héberge des machines virtuelles. Le trafic réseau provenant des machines virtuelles sur le réseau virtuel Azure est transféré vers la passerelle VPN, qui transfère ensuite le trafic via la connexion VPN de site à site à l’appareil VPN sur le réseau local. L’infrastructure de routage sur le réseau local transfère par la suite le trafic à sa destination.
+The Azure virtual network hosts virtual machines. Network traffic originating from virtual machines on the Azure virtual network gets forwarded to the VPN gateway, which then forwards the traffic across the site-to-site VPN connection to the VPN device on the on-premises network. The routing infrastructure of the on-premises network then forwards the traffic to its destination.
 
 >[!Note]
->Vous pouvez aussi utiliser [ExpressRoute](https://azure.microsoft.com/services/expressroute/), une connexion directe entre votre organisation et le réseau de Microsoft. Le trafic sur ExpressRoute ne passe pas sur l’Internet public. Cet article ne décrit pas l’utilisation d’ExpressRoute.
+>You can also use [ExpressRoute](https://azure.microsoft.com/services/expressroute/), which is a direct connection between your organization and Microsoft's network. Traffic over ExpressRoute does not travel over the public Internet. This article does not describe the use of ExpressRoute.
 >
   
 Pour configurer la connexion VPN entre votre réseau Azure Virtual Network et votre réseau local, procédez comme suit : 
@@ -66,11 +67,11 @@ Après avoir établi la connexion VPN de site à site, vous ajoutez des machines
 ### <a name="prerequisites"></a>Conditions préalables
 <a name="Prerequisites"></a>
 
-- Un abonnement Azure. Pour plus d’informations sur les abonnements Azure, accédez à la [page décrivant comment acheter Azure](https://azure.microsoft.com/pricing/purchase-options/).
+- An Azure subscription. For information about Azure subscriptions, go to the [How To Buy Azure page](https://azure.microsoft.com/pricing/purchase-options/).
     
 - Un espace d’adressage IPv4 privé disponible à affecter au réseau virtuel et à ses sous-réseaux, avec suffisamment d’espace pour leur croissance afin d’accueillir le nombre de machines virtuelles nécessaires maintenant et à l’avenir.
     
-- Un périphérique VPN disponible dans votre réseau local pour marquer la fin de la connexion VPN de site à site qui prend en charge la configuration requise IPsec. Pour plus d'informations, voir [À propos des périphériques VPN pour les connexions de réseau virtuel de site à site](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+- An available VPN device in your on-premises network to terminate the site-to-site VPN connection that supports the requirements for IPsec. For more information, see [About VPN devices for site-to-site virtual network connections](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
     
 - La modification de votre infrastructure de routage pour que le trafic routé vers l'espace d'adressage du réseau virtuel Azure soit acheminé vers le périphérique VPN qui héberge la connexion VPN de site à site.
     
@@ -80,13 +81,13 @@ Après avoir établi la connexion VPN de site à site, vous ajoutez des machines
 
 La liste suivante répertorie les choix de conception qui ont été faits pour l’architecture de cette solution. 
   
-- Cette solution utilise un seul réseau virtuel Azure avec une connexion VPN de site à site. Le réseau virtuel Azure héberge un sous-réseau unique qui contient plusieurs machines virtuelles. 
+- This solution uses a single Azure virtual network with a site-to-site VPN connection. The Azure virtual network hosts a single subnet that can contain multiple virtual machines. 
     
-- Vous pouvez utiliser le service Routage et accès distant (RRAS) dans Windows Server 2016 ou Windows Server 2012 pour établir une connexion VPN de site à site IPsec entre le réseau local et le réseau virtuel Azure. Vous pouvez également utiliser d'autres options, telles que des périphériques VPN Cisco ou Juniper Networks.
+- You can use the Routing and Remote Access Service (RRAS) in Windows Server 2016 or Windows Server 2012 to establish an IPsec site-to-site VPN connection between the on-premises network and the Azure virtual network. You can also use other options, such as Cisco or Juniper Networks VPN devices.
     
-- Le réseau local peut tout de même disposer de services réseau, tels qu’un AD DS (Active Directory Domain Services), un système DNS (Domain Name System) et des serveurs proxy. Selon vos besoins, il peut être utile de placer certaines de ces ressources réseau dans le réseau virtuel Azure.
+- The on-premises network might still have network services like Active Directory Domain Services (AD DS), Domain Name System (DNS), and proxy servers. Depending on your requirements, it might be beneficial to place some of these network resources in the Azure virtual network.
     
-Pour un réseau virtuel Azure existant comportant un ou plusieurs sous-réseaux, déterminez s'il reste assez d'espace d'adressage pour qu'un sous-réseau supplémentaire puisse héberger les machines virtuelles dont vous avez besoin. Si vous n'avez pas assez d'espace d'adressage restant pour un sous-réseau supplémentaire, créez un réseau virtuel supplémentaire qui dispose de sa propre connexion VPN de site à site.
+For an existing Azure virtual network with one or more subnets, determine whether there is remaining address space for an additional subnet to host your needed virtual machines, based on your requirements. If you don't have remaining address space for an additional subnet, create an additional virtual network that has its own site-to-site VPN connection.
   
 ### <a name="plan-the-routing-infrastructure-changes-for-the-azure-virtual-network"></a>Planification des modifications d’infrastructure de routage pour le réseau virtuel Azure
 
@@ -147,17 +148,17 @@ Pour les paramètres du réseau virtuel, remplissez le tableau V.
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Nom du réseau virtuel  <br/> |Nom à affecter au réseau virtuel Azure (par exemple, DirSyncNet).  <br/> |![Ligne.](../media/Common-Images/TableLine.png) |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure qui contiendra le réseau virtuel (par exemple, Ouest des États-Unis).  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l’interface de votre périphérique VPN sur Internet. Renseignez-vous auprès de votre service informatique pour déterminer cette adresse.  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Espace d’adressage du réseau virtuel  <br/> |Espace d’adressage (défini dans un préfixe d’adresse privée unique) pour le réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d’adressage. L’espace d’adressage doit être au format de routage CIDR (Classless Interdomain Routing), également appelé format de préfixe de réseau. Par exemple, 10.24.64.0/20.  <br/> |![Ligne.](../media/Common-Images/TableLine.png) <br/> |
-|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, qui sera utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer la valeur de cette clé, puis stockez-la dans un emplacement sécurisé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![Ligne.](../media/Common-Images/TableLine.png) <br/> |
+|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet. Renseignez-vous auprès de votre service informatique pour déterminer cette adresse.  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Espace d’adressage du réseau virtuel  <br/> |The address space (defined in a single private address prefix) for the virtual network. Work with your IT department to determine this address space. The address space should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.  <br/> |![Ligne.](../media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |Clé partagée IPsec  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value and then store it in a secure location. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![Ligne.](../media/Common-Images/TableLine.png) <br/> |
    
 Remplissez le tableau S pour les sous-réseaux de cette solution.
   
-- Pour le premier sous-réseau, déterminez un espace d'adressage 28 bits (avec une longueur de préfixe de /28) pour le sous-réseau de passerelle Azure. Voir la rubrique sur le [calcul de l'espace d'adressage de sous-réseau de passerelle pour les réseaux virtuels Azure](/archive/blogs/solutions_advisory_board/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks) pour savoir comment déterminer cet espace d'adressage.
+- For the first subnet, determine a 28-bit address space (with a /28 prefix length) for the Azure gateway subnet. See [Calculating the gateway subnet address space for Azure virtual networks](/archive/blogs/solutions_advisory_board/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks) for information about how to determine this address space.
     
 - Pour le deuxième sous-réseau, indiquez un nom convivial, un espace d’adressage IP unique fondé sur l’espace d’adressage de réseau virtuel et une description de l’objectif.
     
-Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d’adressage à partir de l’espace d’adressage de réseau virtuel. Les deux espaces d’adressage doivent être au format CIDR.
+Work with your IT department to determine these address spaces from the virtual network address space. Both address spaces should be in CIDR format.
   
  **Tableau S : sous-réseaux dans le réseau virtuel**
   
@@ -166,7 +167,7 @@ Renseignez-vous auprès de votre service informatique pour déterminer ces espac
 |1.  <br/> |GatewaySubnet  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par la passerelle Azure.  <br/> |
 |2.  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |![Ligne.](../media/Common-Images/TableLine.png)  <br/> |
    
-Concernant les serveurs DNS locaux qui doivent être utilisés par les machines virtuelles du réseau virtuel, remplissez le tableau D. Donnez un nom convivial et une adresse IP unique à chaque serveur DNS. Ce nom convivial n’a pas besoin de correspondre au nom d’hôte ou au nom de l’ordinateur du serveur DNS. Notez que le tableau comporte deux entrées vides, mais vous pouvez en ajouter d’autres. Renseignez-vous auprès de votre service informatique pour déterminer cette liste.
+For the on-premises DNS servers that you want the virtual machines in the virtual network to use, fill in Table D. Give each DNS server a friendly name and a single IP address. This friendly name does not need to match the host name or computer name of the DNS server. Note that two blank entries are listed, but you can add more. Work with your IT department to determine this list.
   
  **Tableau D : serveurs DNS locaux**
   
@@ -177,7 +178,7 @@ Concernant les serveurs DNS locaux qui doivent être utilisés par les machines 
    
 Pour acheminer les paquets du réseau virtuel Azure vers le réseau de votre organisation par le biais de la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local. Ce réseau local possède la liste des espaces d’adressage (au format CIDR) pour l’ensemble des emplacements sur le réseau local de votre organisation que les machines virtuelles du réseau virtuel doivent atteindre. Il peut s’agir de l’ensemble des emplacements sur le réseau local ou un sous-ensemble. La liste des espaces d’adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec les espaces d’adressage utilisés pour ce réseau virtuel ou les autres réseaux virtuels intersites.
   
-Pour l’ensemble des espaces d’adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d’en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste.
+For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list.
   
  **Tableau L : préfixes d'adresse pour le réseau local**
   
@@ -201,7 +202,7 @@ La création du réseau virtuel entre différents locaux et l'ajout de machines 
 ### <a name="phase-1-prepare-your-on-premises-network"></a>Phase 1 : préparer votre réseau local
 <a name="Phase1"></a>
 
-Vous devez configurer votre réseau local avec un itinéraire qui pointe vers l’espace d’adressage du réseau virtuel et remet finalement le trafic qui y est destiné au routeur sur le périmètre du réseau local. Contactez votre administrateur réseau pour savoir comment ajouter l’itinéraire à l’infrastructure de routage de votre réseau local.
+You must configure your on-premises network with a route that points to and ultimately delivers traffic destined for the address space of the virtual network to the router on the edge of the on-premises network. Consult with your network administrator to determine how to add the route to the routing infrastructure of your on-premises network.
   
 Voici la configuration finale.
   
@@ -210,7 +211,7 @@ Voici la configuration finale.
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Phase 2 : créer le réseau virtuel entre différents locaux dans Azure
 <a name="Phase2"></a>
 
-Tout d’abord, ouvrez une invite PowerShell Azure. Si vous n’avez pas installé Azure PowerShell, reportez-vous à l’article [Prise en main d’Azure PowerShell](/powershell/azure/get-started-azureps).
+First, open an Azure PowerShell prompt. If you have not installed Azure PowerShell, see [Get started with Azure PowerShell](/powershell/azure/get-started-azureps).
 
  
 Ensuite, connectez-vous à votre compte Azure avec cette commande.
@@ -225,14 +226,14 @@ Obtenez le nom de votre abonnement à l’aide de la commande suivante.
 Get-AzSubscription | Sort SubscriptionName | Select SubscriptionName
 ```
 
-Définissez votre abonnement Azure avec les commandes suivantes. Remplacez tout le texte entre guillemets, y compris les caractères < et >, par le nom d’abonnement correct.
+Set your Azure subscription with these commands. Replace everything within the quotes, including the < and > characters, with the correct subscription name.
   
 ```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
-Ensuite, créez un nouveau groupe de ressources pour votre réseau virtuel. Pour déterminer un nom de groupe de ressources unique, utilisez cette commande pour répertorier vos groupes de ressources existants.
+Next, create a new resource group for your virtual network. To determine a unique resource group name, use this command to list your existing resource groups.
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
@@ -306,7 +307,7 @@ Voici la configuration finale.
   
 ![Le réseau virtuel dispose maintenant d’une passerelle.](../media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-Ensuite, configurez votre périphérique VPN local de sorte qu'il se connecte à la passerelle VPN Azure. Pour plus d'informations, voir [À propos des périphériques VPN pour les connexions du réseau virtuel Azure de site à site](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [About VPN Devices for site-to-site Azure Virtual Network connections](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Pour configurer votre périphérique VPN, vous avez besoin des éléments suivants :
   
@@ -320,7 +321,7 @@ Voici la configuration finale.
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Phase 3 (facultative) : ajouter des machines virtuelles
 
-Créez les machines virtuelles dont vous avez besoin dans Azure. Pour plus d’informations, reportez-vous à [Créer une machine virtuelle Windows avec le portail Azure](https://go.microsoft.com/fwlink/p/?LinkId=393098).
+Create the virtual machines you need in Azure. For more information, see [Create a Windows virtual machine with the Azure portal](https://go.microsoft.com/fwlink/p/?LinkId=393098).
   
 Utilisez les paramètres suivants :
   
@@ -328,7 +329,7 @@ Utilisez les paramètres suivants :
     
 - Dans l’onglet **Mise en réseau**, sélectionnez le nom de votre réseau virtuel et le sous-réseau pour l’hébergement de machines virtuelles (pas GatewaySubnet). Tous les autres paramètres conservent leurs valeurs par défaut.
     
-Vérifiez que votre machine virtuelle utilise le DNS correctement en vérifiant votre DNS interne pour vous assurer que les enregistrements d’adresse (A) ont été ajoutés pour votre nouvelle machine virtuelle. Pour accéder à Internet, vos machines virtuelles Azure doivent être configurées pour utiliser le serveur proxy de votre réseau local. Contactez votre administrateur réseau pour les étapes de configuration supplémentaires à effectuer sur le serveur.
+Verify that your virtual machine is using DNS correctly by checking your internal DNS to ensure that Address (A) records were added for you new virtual machine. To access the Internet, your Azure virtual machines must be configured to use your on-premises network's proxy server. Contact your network administrator for additional configuration steps to perform on the server.
   
 Voici la configuration finale.
   

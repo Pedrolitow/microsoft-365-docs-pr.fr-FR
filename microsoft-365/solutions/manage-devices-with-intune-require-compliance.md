@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Créez une stratégie d’accès conditionnel dans Azure AD pour exiger des appareils conformes, en conservant la sécurité des données d’entreprise lorsque les utilisateurs travaillent à partir de n’importe quel appareil dans n’importe quel emplacement.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 ms.custom: ''
-ms.openlocfilehash: 0ae76d5bab0a1b0cb0d6ae4ce246dc62e0730c2b
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 1425f01b5cd2cf2c50cfa1f31acb358cda871e39
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730614"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986111"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>Étape 4. Exiger des appareils sains et conformes avec Intune
 

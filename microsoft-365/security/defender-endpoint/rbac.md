@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: da8876804d220081b7e8b637b08fb70a8ce03416
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f55ca70c94fa73c26cefd067f2006f174ce4b15c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686700"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232669"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle
 
@@ -29,8 +31,8 @@ ms.locfileid: "67686700"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Azure Active Directory
-- Office 365
+- Azure Active Directory
+- Office 365
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
@@ -40,11 +42,11 @@ ms.locfileid: "67686700"
 
 Les grandes équipes d’opérations de sécurité géodistribuées adoptent généralement un modèle basé sur un niveau pour attribuer et autoriser l’accès aux portails de sécurité. Les niveaux classiques incluent les trois niveaux suivants :
 
-Niveau|Description|
-:---|:---|
-Niveau 1|**Équipe des opérations de sécurité locale/équipe informatique** <br> Cette équipe trie et examine généralement les alertes contenues dans sa géolocalisation et passe au niveau 2 dans les cas où une correction active est nécessaire.|
-Niveau 2|**Équipe des opérations de sécurité régionales** <br> Cette équipe peut voir tous les appareils de leur région et effectuer des actions de correction.|
-Niveau 3|**Équipe des opérations de sécurité globale** <br> Cette équipe se compose d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail.|
+|Niveau |Description  |
+|---------|---------|
+|Niveau 1    | **Équipe des opérations de sécurité locale/équipe informatique** <br> Cette équipe trie et examine généralement les alertes contenues dans sa géolocalisation et passe au niveau 2 dans les cas où une correction active est nécessaire.        |
+|Niveau 2    | **Équipe des opérations de sécurité régionales** <br> Cette équipe peut voir tous les appareils de leur région et effectuer des actions de correction.        |
+|Niveau 3     |**Équipe des opérations de sécurité globale** <br> Cette équipe se compose d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail.         |
 
 > [!NOTE]
 > Pour les ressources de niveau 0, reportez-vous à [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) pour que les administrateurs de sécurité fournissent un contrôle plus précis des Microsoft Defender pour point de terminaison et des Microsoft 365 Defender.  
@@ -55,6 +57,8 @@ Defender pour point de terminaison RBAC est conçu pour prendre en charge votre 
   - Créez des rôles personnalisés et contrôlez les fonctionnalités de Defender pour point de terminaison aux laquelle ils peuvent accéder avec granularité.
 - **Contrôler qui peut afficher des informations sur des groupes ou des groupes d’appareils spécifiques**
   - [Créez des groupes d’appareils](machine-groups.md) selon des critères spécifiques tels que des noms, des balises, des domaines et d’autres, puis accordez-leur l’accès au rôle à l’aide d’un groupe d’utilisateurs Azure Active Directory (Azure AD) spécifique.
+    > [!NOTE]
+    > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
 
 Pour implémenter l’accès en fonction du rôle, vous devez définir des rôles d’administrateur, attribuer des autorisations correspondantes et affecter des groupes d’utilisateurs Azure AD affectés aux rôles.
 

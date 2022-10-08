@@ -12,17 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 20501814ccf87cfbbda6080b60515be374516cd2
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+- highpri
+- tier1
+ms.openlocfilehash: 5e0d29d96eeafe418d1773e20a73e33b402389fa
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648612"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503487"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Découvrez et configurez la détection des signaux du navigateur de gestion des risques internes
+
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Les navigateurs web sont souvent utilisés par les utilisateurs pour accéder aux fichiers sensibles et non sensibles au sein d’une organisation. La gestion des risques internes permet à votre organisation de détecter et d’agir sur les signaux d’exfiltration de navigateur pour tous les fichiers non exécutables affichés dans les navigateurs [Microsoft Edge](https://www.microsoft.com/edge) et [Google Chrome](https://www.google.com/chrome) . Avec ces signaux, les analystes et les enquêteurs peuvent agir rapidement lorsque l’une des activités suivantes est effectuée par des utilisateurs de stratégie dans l’étendue lors de l’utilisation de ces navigateurs :
 
@@ -43,6 +48,8 @@ Le tableau suivant récapitule les activités détectées et la prise en charge 
 | Fichiers transférés ou copiés vers un partage réseau | Extension          | Extension         |
 | Fichiers copiés sur des périphériques USB                    | Extension          | Extension         |
 | Navigation sur des sites web à risque                        | Extension          | Extension         |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="common-requirements"></a>Conditions courantes
 

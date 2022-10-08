@@ -11,16 +11,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso utilise les fonctionnalités de protection des informations dans Microsoft 365 pour les entreprises afin de sécuriser leurs ressources numériques dans le cloud.
-ms.openlocfilehash: 29c31138a11966510a393dafbe2f5a3741b78f5b
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: f63a0b7992602acc873350714cc68ab40f905fb7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851433"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209181"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 

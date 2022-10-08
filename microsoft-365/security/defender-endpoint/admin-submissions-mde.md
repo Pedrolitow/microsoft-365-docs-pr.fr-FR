@@ -17,15 +17,15 @@ localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: FPFN
-ms.openlocfilehash: da714f4c6b2eb495e66d862558efaf15a2b9c1f2
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 89da86f56b391179b27ccff9146de211062ccbfc
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678688"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145840"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envoyer des fichiers dans Microsoft Defender pour point de terminaison
 

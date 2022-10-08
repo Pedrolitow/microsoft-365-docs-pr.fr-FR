@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: Feuille de route pour configurer vos services cloud pour Microsoft 365.
-ms.openlocfilehash: a59999e683b01f907553efddcc92961ca2c81e1d
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 0f8abf82ea099babc1f478ccfa3095e22f496328
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556301"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199084"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Feuille de route des services cloud pour Microsoft 365
 

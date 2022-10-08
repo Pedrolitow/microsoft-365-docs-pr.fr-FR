@@ -8,20 +8,21 @@ metadata:
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: faq
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.custom: commerce_vl
+  ms.collection: scotvorg
   ms.localizationpriority: medium
   description: Activation du service en ligne pour les questions fréquentes sur le programme Open
-  ms.openlocfilehash: 9bc7be1d04c28ad2f4a67e4bd6eb76461f7eb258
-  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+  ms.openlocfilehash: 86ad4f43a4655d9db563384def45638036eaeace
+  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64713776"
+  ms.lasthandoff: 09/29/2022
+  ms.locfileid: "68197214"
 title: Activation du service en ligne pour les questions fréquentes sur le programme Open
 summary: ''
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: >
       Comment faire activer services en ligne acheté via les programmes Open (Open, Open Value et Open Value Subscription) ?
@@ -42,15 +43,15 @@ sections:
 
       L’activation réussie est terminée dans un délai de 48 heures sur le site web d’activation du service en ligne de licence en volume.
 
-      Pour plus d’informations sur l’activation de Microsoft Azure, consultez [Prise en main avec Azure dans Open Licensing](https://azure.microsoft.com/offers/ms-azr-0111p/).
+      Pour plus d’informations sur l’activation de Microsoft Azure, consultez [Prise en main d’Azure dans Open Licensing](https://azure.microsoft.com/offers/ms-azr-0111p/).
   - question: >
       Je ne vois pas ma commande Azure. Que dois-je faire ?
     answer: >
-      Les commandes Azure sont activées par le biais de clés. Obtenez vos clés sous l’onglet Téléchargements et clés dans le VLSC et entrez la clé dans le Prise en main avec [Azure dans la page Open Licensing](https://azure.microsoft.com/offers/azure-open/).
+      Les commandes Azure sont activées par le biais de clés. Obtenez vos clés sous l’onglet Téléchargements et clés dans le VLSC et entrez la clé dans la [page Prise en main d’Azure dans la page Licences ouvertes](https://azure.microsoft.com/offers/azure-open/).
   - question: >
       Qu’est-ce qu’un compte professionnel ou scolaire et pourquoi ai-je besoin d’un compte pour activer services en ligne ?
     answer: >
-      Un compte professionnel ou scolaire est destiné aux utilisateurs pour se connecter à l’organisation services Microsoft. La connexion utilise généralement le formulaire username@orgname.com ou username@orgname.onmicrosoft.com, où *orgname* est le nom de domaine de messagerie de son organisation.
+      Un compte professionnel ou scolaire est destiné aux utilisateurs pour se connecter aux services Microsoft de l’organisation. La connexion utilise généralement le formulaire username@orgname.com ou username@orgname.onmicrosoft.com, où *orgname* est le nom de domaine de messagerie de son organisation.
   - question: >
       Comment faire savoir si mon organisation dispose déjà d’un compte ?
     answer: "Le nom de l’organisation associé à votre compte professionnel ou scolaire est extrait de l’ID de licence du service que vous activez. S’il existe un compte, le nom de l’organisation est prérempli dans la configuration du compte d’organisation et déjà lié à votre organisation à partir de la commande de service en ligne d’origine. Le processus d’inscription vérifie si votre organisation dispose d’un compte. \n\nSi le champ **Entreprise** est disponible, terminez le processus d’inscription pour vous connecter et activer le service. Si ce champ n’est pas disponible, vous devez inscrire l’organisation. Vous devez être un Administrateur général pour inscrire une organisation pour un compte.\n\nLorsque vous demandez un compte professionnel ou scolaire, votre demande est envoyée à l’administrateur client de votre organisation qui accorde ou refuse votre demande d’inscription. Utilisez ce compte professionnel ou scolaire lorsque vous vous connectez à Microsoft VLSC Online Service Activation.\n"

@@ -11,15 +11,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: Outil de test de la connectivité du réseau Microsoft 365
-ms.openlocfilehash: e4045a8fde1d33bdc0072fbce9368d0ef8774ae7
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: c7243e7a48b5ef7f9930c12fc9a5c643398cfcac
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670562"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187842"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Outil de test de la connectivité du réseau Microsoft 365
 
@@ -287,7 +288,7 @@ L’outil de ligne de commande utilise les services d’emplacement Windows pour
 
 L’outil de ligne de commande tente d’installer le .NET Framework s’il n’est pas déjà installé. Il télécharge également l’exécutable de test principal à partir de l’outil de test de connectivité réseau Microsoft 365 et le lance.
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 Voici les réponses à certaines de nos questions fréquemment posées.
 

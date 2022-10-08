@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article explique les modifications apportées aux fonctionnalités de protection dans Azure Information Protection
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b4d57227e07695f334a70cd8ad5f28e34f8a3895
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 18342febeb31f690cb557235ad5b07f15da3c23e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472763"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084152"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Fonctionnalités de protection dans Azure Information Protection déployées sur des locataires existants
 

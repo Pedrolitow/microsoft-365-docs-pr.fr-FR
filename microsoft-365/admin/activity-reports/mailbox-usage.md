@@ -5,9 +5,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Découvrez comment obtenir le rapport d’utilisation de la boîte aux lettres pour connaître les niveaux d’activité des utilisateurs disposant d’une boîte aux lettres utilisateur, ainsi que les informations de stockage et de quota pour chacun d’entre elles.
-ms.openlocfilehash: 4df0859930d2fe8a11623a775c96454fd3c9aaa7
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: 882a6ec5fb889a145cc9c9ec939948725a10f57f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004283"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192770"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Rapports Microsoft 365 dans le centre d’administration - Utilisation de la boîte aux lettres
 
@@ -40,7 +41,10 @@ Le **rapport d’utilisation de la boîte aux lettres** fournit des informations
 
 Vous pouvez obtenir une vue de l’utilisation de la boîte aux lettres de votre organisation en consultant les graphiques **boîte aux lettres**, **Stockage** et **Quota** .
 
-Pour accéder aux informations de boîte aux lettres partagées, remplacez la sélection déroulante en haut à droite des graphiques par **Shared**.  Si votre locataire n’a pas de boîtes aux lettres partagées, vous ne pourrez pas afficher les informations de boîte aux lettres partagées.  Notez également que si vous avez choisi d’afficher des graphiques partagés, vous ne pourrez pas exporter les informations du graphique. Il s’agit d’un problème connu qui sera corrigé dans une itération ultérieure.
+Pour accéder aux informations de boîte aux lettres partagées, remplacez la sélection déroulante en haut à droite des graphiques par **Shared**.  Si votre locataire n’a pas de boîtes aux lettres partagées, vous ne pourrez pas afficher les informations de boîte aux lettres partagées.
+
+> [!NOTE]
+> Actuellement, vous ne pourrez pas exporter les informations du graphique récapitulatif pour les boîtes aux lettres partagées. Il s’agit d’un problème connu qui sera corrigé dans une itération ultérieure.
   
 :::image type="content" alt-text="Rapport d’utilisation de la boîte aux lettres." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
@@ -48,7 +52,10 @@ Le rapport **Utilisation des boîtes aux lettres** permet d'observer les tendanc
 
 ### <a name="the-mailbox-chart"></a>Graphique de boîte aux lettres
 
-Le graphique **boîte aux lettres** affiche le nombre total de boîtes aux lettres utilisateur ou partagées dans votre organisation, ainsi que le nombre total d’utilisateurs actifs à un jour donné de la période de rapport. Un utilisateur ou une boîte aux lettres partagée est considéré comme actif s’il a reçu un e-mail d’envoi, de lecture, de création de rendez-vous, d’envoi de réunion, d’acceptation de réunion, de refus de réunion et d’annulation de l’activité de réunion.
+Le graphique **des boîtes aux lettres** affiche le nombre total de boîtes aux lettres utilisateur ou partagées dans votre organisation, ainsi que le nombre total de boîtes aux lettres utilisateur actives un jour donné de la période de création de rapports. Une boîte aux lettres utilisateur est considérée comme active si elle avait un e-mail d’envoi, de lecture, de création de rendez-vous, d’envoi de réunion, d’acceptation de réunion, de refus de réunion et d’annulation de l’activité de réunion.
+
+> [!NOTE]
+> Les boîtes aux lettres partagées n’ayant pas d’activité indépendante d’une boîte aux lettres utilisateur, seul un nombre de boîtes aux lettres partagées s’affiche lorsque ce type de boîte aux lettres est sélectionné.
 
 Dans le graphique des boîtes aux lettres :
 - L’axe Y correspond au nombre de boîtes aux lettres utilisateur ou partagées. 

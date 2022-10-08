@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_NonTOC
 ms.custom:
@@ -23,19 +24,19 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment choisir les applications mobiles que les utilisateurs peuvent utiliser pour accéder à la messagerie, au calendrier et aux contacts.
-ms.openlocfilehash: 5f5a96a0ac44757cfe168db87deb494019759c36
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: bc5fa5734db8dffb90b2c62a28f85a072fd4c752
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780234"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198006"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Gérer l’accès aux applications de messagerie dans le Centre d'administration Microsoft 365
 
 Utilisez les paramètres d’accès aux e-mails mobiles pour choisir les applications mobiles que les membres de votre organisation peuvent utiliser pour accéder à leur compte professionnel ou scolaire pour accéder à la messagerie, au calendrier et aux contacts.
   
 > [!IMPORTANT]
-> Votre organisation aura accès à ce paramètre, sauf si vous utilisez Microsoft Intune ou si vous avez configuré les paramètres de gestion des appareils mobiles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>.
+> Votre organisation aura accès à ce paramètre, sauf si vous utilisez Microsoft Intune ou si vous avez configuré les paramètres de gestion des appareils mobiles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
   
 ## <a name="manage-email-app-options"></a>Gérer les options de l’application de messagerie
 
@@ -48,11 +49,11 @@ Utilisez les paramètres d’accès aux e-mails mobiles pour choisir les applica
   
 Choisissez l’option permettant de définir la façon dont les utilisateurs de votre organisation accèdent à leur compte professionnel ou scolaire à partir de leurs appareils mobiles
   
-- **Outlook uniquement** : les utilisateurs de votre organisation doivent utiliser le Outlook pour Android ou Outlook pour l’application iOS sur leur appareil mobile.
+- **Outlook uniquement** : les utilisateurs de votre organisation doivent utiliser l’application Outlook pour Android ou Outlook pour iOS sur leur appareil mobile.
 
 - **N’importe quelle application de messagerie :** tous les utilisateurs de votre organisation sont invités à utiliser Outlook, mais ils peuvent choisir d’utiliser n’importe quelle application de messagerie.
 
-- **Toute application e-mail** - les nouveaux utilisateurs ou appareils de votre organisation seront invités une fois à utiliser Outlook, mais ils peuvent choisir d’utiliser n’importe quelle application de messagerie.
+- **N’importe quelle application de messagerie** - les nouveaux utilisateurs ou appareils de votre organisation seront invités une fois à utiliser Outlook, mais ils peuvent choisir d’utiliser n’importe quelle application de messagerie.
 
 Pour plus d’informations, consultez [Options d’accès à la messagerie à partir de votre appareil mobile](access-email-from-a-mobile-device.md).
   

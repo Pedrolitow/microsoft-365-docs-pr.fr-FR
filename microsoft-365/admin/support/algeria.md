@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: afb1d6c9bcd8e21b9c0fa7bd2ee2aad1c5d19346
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 712114689398acd684830b1a0ddc42f774c1ed70
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370811"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202824"
 ---
 # <a name="contact-support-for-algeria"></a>Contacter le support pour l’Algérie
 
@@ -35,7 +37,7 @@ Entrer le code 7703
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Arabe : Sun-Thu 9h00 à 17h00
+Arabe : Sun-Thu 9h-17h
 
 Français : Lun.-ven. 9H-17h
 
@@ -43,7 +45,7 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Arabe : Sun-Thu 9h00 à 17h00
+Arabe : Sun-Thu 9h-17h
 
 Français : Lun.-ven. 8H-19h
 
