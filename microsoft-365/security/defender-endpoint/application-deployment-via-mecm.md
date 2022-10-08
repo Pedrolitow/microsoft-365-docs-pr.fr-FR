@@ -13,14 +13,16 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
-ms.openlocfilehash: feac94002669ae3e5fa1ddf58b8f191dc507f1c4
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: a7cc35decd9c6168b3c22af8ea7d20baca75d25b
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67810821"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68149976"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Migration de serveurs de Microsoft Monitoring Agent vers la solution unifiée
 
@@ -31,7 +33,7 @@ ms.locfileid: "67810821"
 
 Cet article vous guide dans la migration de serveurs de bas niveau de Microsoft Monitoring Agent (MMA) vers la solution unifiée.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 - Microsoft Endpoint Configuration Manager (MECM) antérieur à 2207.
 - Appareils de système d’exploitation de bas niveau dans votre environnement intégrés à Microsoft Monitoring Agent. Pour confirmer, vérifiez qu’il `MsSenseS.exe` est en cours d’exécution dans le Gestionnaire des tâches.

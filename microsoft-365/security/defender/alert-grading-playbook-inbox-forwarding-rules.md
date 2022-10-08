@@ -15,19 +15,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - met150
-ms.openlocfilehash: 9d02727df9684e8c3da9f5abf003ef9a4c7012b6
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 086314f7a5218dcbae9cec3032e6aa9ad4b4b307
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711002"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68079994"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Classement des alertes pour les règles de transfert de boîte de réception suspectes
 

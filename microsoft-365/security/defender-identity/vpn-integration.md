@@ -8,14 +8,14 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
-ms.openlocfilehash: 02a0ecf0dea5b4e3fc820280a389c30b79b5fb43
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 06d34e00d271bea8f26036bdb5c8f7b71c453dcf
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682280"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68080346"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Intégration de Defender pour Identity VPN dans Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ Cet article explique comment intégrer un VPN à [Microsoft Defender pour Identi
 - Check Point
 - Cisco ASA
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 Pour activer l’intégration VPN, veillez à définir les paramètres suivants :
 

@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2dba3d88b2df64a5d3ee9890e42116fb239b41b4
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 9bef9d4503ed409d9bca0a094b69201ed3509efb
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811261"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142122"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
@@ -81,7 +81,9 @@ Utilisez la vue Détails de l’examen pour afficher les activités passées, ac
 Dans la vue Détails de l’examen, vous pouvez consulter des informations sur les onglets **Graphique de l'examen**, **Alertes**, **Appareils**, **Identités**, **Principales conclusions**, **Entités**, **Journal** et **Actions en attente**, comme décrit dans le tableau suivant.
 
 > [!NOTE]
-> Les onglets spécifiques que vous voyez dans une page de détails d’investigation dépendent de ce que votre abonnement inclut. Par exemple, si votre abonnement n’inclut pas Microsoft Defender pour Office 365 plan 2, vous ne verrez pas d’onglet **Boîtes aux lettres**.
+> - Les onglets spécifiques que vous voyez dans une page de détails d’investigation dépendent de ce que votre abonnement inclut. Par exemple, si votre abonnement n’inclut pas Microsoft Defender pour Office 365 plan 2, vous ne verrez pas d’onglet **Boîtes aux lettres**.
+>
+> - La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 |Tab|Description|
 |---|---|

@@ -13,7 +13,7 @@ ms.date: 09/08/2021
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez la protection des liens sécurisés dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez les liens fiables Teams et consultez les graphiques des messages Liens fiables.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 501e75e2c81d12d99b1f093991b864c7ad43519e
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 048de0ae500dfbeeb9f4981af50d4297a80b6e9c
+ms.sourcegitcommit: c550d73b153ad4856188c9109d9d80f02ca989b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612898"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68140917"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -90,6 +90,9 @@ Cet article inclut des descriptions détaillées des types suivants de paramètr
 
   - [Liste « Bloquer les URL suivantes » pour les liens fiables](#block-the-following-urls-list-for-safe-links)
 
+  > [!NOTE]
+  > Le menu **Paramètres globaux** et la liste **Bloquer les URL suivantes pour les liens sécurisés** sont en cours de dépréciation. Utilisez plutôt des entrées de bloc pour les URL dans la [liste d’autorisations/de blocs du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) .
+
 Le tableau suivant décrit les scénarios de liaisons sécurisées dans Microsoft 365 et les organisations Office 365 qui incluent des Defender pour Office 365 (notez que l’absence de licences n’est jamais un problème dans les exemples).
 
 |Scénario|Résultat|
@@ -97,7 +100,6 @@ Le tableau suivant décrit les scénarios de liaisons sécurisées dans Microsof
 |Jean est membre du service marketing. La protection des liens sécurisés pour les applications Office est activée dans une stratégie de liens fiables qui s’applique aux membres du service marketing. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par des liens fiables. <p> Jean est inclus dans une stratégie liens sécurisés dans laquelle la protection des liens sécurisés pour les applications Office est activée. <p> Pour plus d’informations sur la configuration requise pour la protection des liens sécurisés dans les applications Office, consultez la section [Liens sécurisés pour les applications Office](#safe-links-settings-for-office-apps) plus loin dans cet article.|
 |Aucune stratégie de liens fiables n’est configurée dans l’organisation Microsoft 365 E5 de Chris. Chris reçoit un e-mail d’un expéditeur externe qui contient une URL vers un site web malveillant qu’il clique finalement.|Chris est protégé par des liens fiables. <p> La **stratégie de sécurité** prédéfinie de protection intégrée fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de sécurité prédéfinies Standard ou Strict ou dans des stratégies de liens sécurisés personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).|
 |Dans l’organisation de Pat, les administrateurs ont créé une stratégie liens sécurisés qui applique Pat, mais la protection des liens sécurisés pour les applications Office est désactivée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par des liens fiables. <p> Bien que Pat soit inclus dans une stratégie de liens sécurisés active, la protection des liens sécurisés pour les applications Office est désactivée dans cette stratégie, de sorte que la protection ne peut pas être appliquée.|
-|Dans l’organisation de Lee, `https://tailspintoys.com` est configuré dans la liste **Bloquer les URL suivantes** dans les paramètres globaux des liens fiables. Une stratégie liens sécurisés qui inclut Lee existe déjà. Lee reçoit un e-mail qui contient l’URL `https://tailspintoys.com/aboutus/trythispage`. Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; cela dépend de l’entrée d’URL dans la liste et du client d’e-mail Lee utilisé. Pour plus d’informations, consultez la [liste « Bloquer les URL suivantes » pour la section Liens fiables](#block-the-following-urls-list-for-safe-links) plus loin dans cet article.|
 |Jamie et Julia travaillent pour contoso.com. Il y a longtemps, les administrateurs ont configuré des stratégies safe links qui s’appliquent à la fois à Jamie et Julia. Jamie envoie un e-mail à Julia, ne sachant pas que l’e-mail contient une URL malveillante.|Julia est protégée par liens sécurisés **si** la stratégie liens sécurisés qui s’applique à elle est configurée pour s’appliquer aux messages entre destinataires internes. Pour plus d’informations, consultez la section [Liens sécurisés pour les messages électroniques](#safe-links-settings-for-email-messages) plus loin dans cet article.|
 
 ## <a name="recipient-filters-in-safe-links-policies"></a>Filtres de destinataires dans les stratégies liens fiables
@@ -164,8 +166,6 @@ Les paramètres des stratégies liens fiables qui s’appliquent aux messages é
 2. L’utilisateur ouvre le message dans sa boîte aux lettres et clique sur une URL dans le message.
 
 3. Safe Links vérifie immédiatement l’URL avant d’ouvrir le site web :
-
-   - Si l’URL est incluse dans la liste **Bloquer les URL suivantes** , un [avertissement d’URL bloquée](#blocked-url-warning) s’ouvre.
 
    - Si l’URL pointe vers un site web qui a été déterminé comme malveillant, une page [d’avertissement de site web malveillant](#malicious-website-warning) (ou une autre page d’avertissement) s’ouvre.
 
@@ -275,7 +275,7 @@ Pour plus d’informations sur l’ordre de priorité et la façon dont plusieur
 ## <a name="block-the-following-urls-list-for-safe-links"></a>Liste « Bloquer les URL suivantes » pour les liens fiables
 
 > [!NOTE]
-> Vous pouvez désormais gérer les entrées d’URL de bloc dans la [liste d’autorisations/de blocs du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). La liste « Bloquer les URL suivantes » est en cours de dépréciation. Nous allons essayer de migrer des entrées existantes de la liste « Bloquer les URL suivantes » pour bloquer les entrées d’URL dans la liste d’autorisations/de blocs du locataire. Les messages contenant l’URL bloquée seront mis en quarantaine.
+> La liste **Bloquer les URL suivantes pour les liens sécurisés** est en cours de dépréciation. Utilisez plutôt des entrées de bloc pour les URL dans la [liste d’autorisations/de blocs du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) . Les messages contenant l’URL bloquée sont mis en quarantaine.
 
 La liste **Bloquer les URL suivantes** définit les liens qui sont toujours bloqués par l’analyse des liens fiables aux emplacements suivants :
 
@@ -305,7 +305,7 @@ Les exemples des valeurs que vous pouvez entrer et leurs résultats sont décrit
 
 |Valeur|Résultat|
 |---|---|
-|`contoso.com` <p> ou <p> `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès. Par exemple, `https://www.contoso.com`, `https://sub.contoso.com`et `https://contoso.com/abc` sont bloqués.|
+|`contoso.com` <p> or <p> `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès. Par exemple, `https://www.contoso.com`, `https://sub.contoso.com`et `https://contoso.com/abc` sont bloqués.|
 |`https://contoso.com/a`|Blocs `https://contoso.com/a` , mais pas des sous-chemins supplémentaires comme `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|Blocs `https://contoso.com/a` et sous-chemins supplémentaires comme `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Bloque un sous-domaine (`toys` dans cet exemple), mais autorise les clics sur d’autres URL de domaine (like `https://contoso.com` ou `https://home.contoso.com`).|

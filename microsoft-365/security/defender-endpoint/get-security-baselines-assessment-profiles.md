@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 5aa9ba2cc42784c39f183346f41b72f24424f6a9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 71c005591d1dda839c9db2cf2d0d5454a73f5229
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694588"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192836"
 ---
 # <a name="list-all-security-baselines-assessment-profiles"></a>Répertorier tous les profils d’évaluation des bases de référence de sécurité
 
@@ -67,8 +69,8 @@ Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 |nom | Chaîne | Nom du profil.
 |description | Chaîne | Description du profil.
 |Référence | Chaîne | Benchmark de profil.
-|version | String | Version du profil.
-|operatingSystem|String|Système d’exploitation applicable au profil.
+|version | Chaîne | Version du profil.
+|operatingSystem|Chaîne|Système d’exploitation applicable au profil.
 |operatingSystemVersion|Chaîne|Version du système d’exploitation applicable au profil.
 |status|Boolean|Indique si le profil est actif ou non
 |complianceLevel|Chaîne|Niveau de conformité choisi pour le profil.

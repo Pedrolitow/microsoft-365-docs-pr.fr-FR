@@ -1,6 +1,6 @@
 ---
-title: Configurer les options d’analyse pour l’antivirus Microsoft Defender
-description: Vous pouvez configurer l’Antivirus Microsoft Defender pour analyser les fichiers de stockage de courrier électronique, les points de sauvegarde ou d’analyse, les fichiers réseau et les fichiers archivés (tels que les fichiers .zip).
+title: Configurer les options d’analyse pour Microsoft Defender Antivirus
+description: Vous pouvez configurer Microsoft Defender Antivirus pour analyser les fichiers de stockage de courrier électronique, les points de sauvegarde ou d’analyse, les fichiers réseau et les fichiers archivés (tels que les fichiers .zip).
 keywords: analyses avancées, analyse, e-mail, archive, zip, rar, archive, analyse d’analyse
 ms.pagetype: security
 ms.service: microsoft-365-security
@@ -14,15 +14,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.date: 12/03/2021
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: how-to
 search.appverid: met150
-ms.openlocfilehash: 8e169a8b63d0e19ccc4e199500ff93a562f7a792
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9280bb06c6701c05b42be5fa5c5686bfedfaf434
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697932"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151472"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
@@ -36,7 +38,7 @@ ms.locfileid: "67697932"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Utiliser Microsoft Intune pour configurer les options d’analyse
 
-Pour plus d’informations, consultez [Configurer les paramètres de restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure) et les [paramètres de restriction d’appareil antivirus Microsoft Defender pour Windows 10 dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+Pour plus d’informations, consultez [Configurer les paramètres de restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure) et [Microsoft Defender paramètres de restriction d’appareil antivirus pour Windows 10 dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Utiliser Microsoft Endpoint Manager pour configurer les options d’analyse
 
@@ -55,7 +57,7 @@ Pour plus d’informations sur la configuration de Microsoft Endpoint Manager (c
 
 3. Dans **l’éditeur de gestion stratégie de groupe**, **accédez à Configuration de l’ordinateur**, puis cliquez sur **Modèles d’administration**.
 
-4. Développez l’arborescence sur **les composants** \> Windows de **l’Antivirus Microsoft Defender**, puis sélectionnez un emplacement (reportez-vous aux [paramètres et emplacements](#settings-and-locations) de cet article).
+4. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender Antivirus**, puis sélectionnez un emplacement (reportez-vous aux [paramètres et emplacements](#settings-and-locations) de cet article).
 
 5. Modifiez l’objet de stratégie.
 
@@ -83,10 +85,10 @@ Pour plus d’informations sur la configuration de Microsoft Endpoint Manager (c
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Utiliser PowerShell pour configurer les options d’analyse
 
-Pour plus d’informations sur l’utilisation de PowerShell avec l’antivirus Microsoft Defender, consultez
+Pour plus d’informations sur l’utilisation de PowerShell avec Microsoft Defender Antivirus, consultez
 
-- [Gérer l’antivirus Microsoft Defender avec des applets de commande PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Applets de commande antivirus Microsoft Defender](/powershell/module/defender/)
+- [Gérer Microsoft Defender Antivirus avec des applets de commande PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [applets de commande antivirus Microsoft Defender](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Utiliser WMI pour configurer les options d’analyse
 
@@ -100,9 +102,9 @@ Email’analyse permet d’analyser les fichiers de courrier utilisés par Outlo
 - Mbx
 - MIME
 
-Les fichiers PST utilisés par Outlook 2003 ou version antérieure (où le type d’archive est défini sur non unicode) sont également analysés, mais l’Antivirus Microsoft Defender ne peut pas corriger les menaces détectées dans les fichiers PST.
+Les fichiers PST utilisés par Outlook 2003 ou version antérieure (où le type d’archive est défini sur non unicode) sont également analysés, mais Microsoft Defender Antivirus ne peut pas corriger les menaces détectées dans les fichiers PST.
 
-Si l’Antivirus Microsoft Defender détecte une menace à l’intérieur d’un e-mail, il affiche les informations suivantes pour vous aider à identifier l’e-mail compromis, afin que vous puissiez corriger la menace manuellement :
+Si Microsoft Defender Antivirus détecte une menace à l’intérieur d’un e-mail, il affiche les informations suivantes pour vous aider à identifier l’e-mail compromis, afin que vous puissiez corriger la menace manuellement :
 
 - Sujet de l’e-mail
 - Nom de la pièce jointe
@@ -123,7 +125,7 @@ Sur n’importe quel système d’exploitation, seuls les lecteurs réseau mapp�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Personnaliser, lancer et passer en revue les résultats des analyses et des corrections de l’Antivirus Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personnaliser, lancer et examiner les résultats des analyses et des corrections de Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender](run-scan-microsoft-defender-antivirus.md)
-- [Configurer les analyses planifiées de l’Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Configurer des analyses antivirus Microsoft Defender planifiées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

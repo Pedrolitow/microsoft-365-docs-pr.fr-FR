@@ -17,17 +17,18 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-asr-rules
 - highpri
+- tier1
 ms.date: 09/19/2022
 search.appverid: met150
-ms.openlocfilehash: dbfdf76791309f637e3380d748ff4c6533d1daa8
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 347392494d920da486f8928380310b3b75abbbd1
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811810"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146566"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>Activer des règles de réduction de la surface d’attaque (ASR)
 
@@ -101,7 +102,7 @@ Pour plus d’informations sur chaque règle, consultez la rubrique de référen
 
 2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **Configuration de l’ordinateur**, puis cliquez sur **Modèles d’administration**.
 
-3. Développez l’arborescence sur **les composants** \> Windows de **l’antivirus** \> **Microsoft Defender Microsoft Defender Exploit Guard** \> **Pour réduire la surface d’attaque**.
+3. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender antivirus** \> Microsoft Defender **la réduction de la surface d’attaque** **Exploit Guard**\>.
 
 4. Double-cliquez sur le paramètre **Exclure les fichiers et les chemins d’accès du paramètre Règles de réduction de la surface d’attaque** et définissez l’option **sur Activé**. Sélectionnez **Afficher** et entrez chaque fichier ou dossier dans la colonne **Nom de** la valeur. Entrez **0** dans la colonne **Valeur** de chaque élément.
 

@@ -1,13 +1,14 @@
 ---
 title: rapports d’activité Centre d'administration Microsoft 365 Viva Insights
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -18,12 +19,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un Microsoft 365 Apps pour le rapport d’utilisation afin d’en savoir plus, par exemple, sur l’adoption par les utilisateurs de Viva Insights par les utilisateurs actifs.
-ms.openlocfilehash: 4de137fe18020d637316b858ccc68c812b043e3f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: abdc884dc59636974760db131ee53c8434af767c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663127"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194046"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - activité Viva Insights
 

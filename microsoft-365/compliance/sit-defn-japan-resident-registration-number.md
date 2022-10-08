@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles du numéro d’enregistrement résident du Japon.
-ms.openlocfilehash: 2cdff586ac9fe92e66a5844eae824f7df335eb31
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 59e9b4a8eeef1ecc206cccd34ecccbf27de1a2e7
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950533"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382576"
 ---
-# <a name="japan-resident-registration-number"></a>Numéro d’inscription des résidents du Japon
+# <a name="japan-resident-registration-number"></a>Matricule de résident Japon
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -42,10 +45,10 @@ Non
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_jp_resident_registration_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keyword_jp_resident_registration_number` trouvé.
+- La fonction `Func_jp_resident_registration_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keyword_jp_resident_registration_number` est trouvé.
 
 ```xml
 <!-- Japan Resident Registration Number -->

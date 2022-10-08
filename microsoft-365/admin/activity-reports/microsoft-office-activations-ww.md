@@ -5,9 +5,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Découvrez comment obtenir un rapport d’activation Office pour savoir quels utilisateurs ont activé leur abonnement Office et identifier les utilisateurs susceptibles d’avoir besoin d’une aide supplémentaire.
-ms.openlocfilehash: b859aace7ee0c71fb6d162b27ec7b7bc81a00208
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: dd5080e235e4c564a3c4c492245c54a6e9116dbe
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663149"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194134"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Rapports Microsoft 365 dans le Centre d’administration - Activations de Microsoft Office
 
@@ -47,11 +48,11 @@ Vous pouvez afficher les activations dans le rapport Office 365 en choisissant l
 
 Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. 
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur.  <br/> |
-|Nom d’affichage  <br/> |Nom complet de l’utilisateur.  <br/> |
+|Nom  <br/> |Nom complet de l’utilisateur.  <br/> |
 |Licences de produit  <br/> |Produits affectés à cet utilisateur.  <br/> |
 |Date de dernière activation (UTC)  <br/> |Date à laquelle l’utilisateur a activé Office sur un bureau ou un appareil.  <br/> |
 |Activation sur les ordinateurs Windows  <br/> |Nombre de bureaux Windows sur lequel un utilisateur a activé Office.  <br/> |

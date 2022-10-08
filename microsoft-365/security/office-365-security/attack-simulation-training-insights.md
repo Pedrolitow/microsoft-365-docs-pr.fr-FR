@@ -8,17 +8,18 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Les administrateurs peuvent découvrir comment Exercice de simulation d'attaque dans le portail Microsoft 365 Defender affecte les utilisateurs et peuvent obtenir des insights à partir des résultats de simulation et de formation.
 ms.subservice: mdo
-ms.openlocfilehash: af3a1e9f7a2b991b7ece6f36595e2f7759eccb9d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 2e6ac342a5d9bdc1b7a2c1476b64a25080272277
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483121"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077796"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Insights et rapports pour Exercice de simulation d'attaque dans Defender pour Office 365
 
@@ -61,8 +62,8 @@ La sélection de **Lancer une simulation** démarre l’Assistant création de s
 
 Les données du graphique elle-même affichent les informations suivantes :
 
-- Taux <sup>\*</sup>**de compromission prédit** : taux de compromission moyen pour les simulations Exercice de simulation d'attaque qui utilisent le même type de charge utile dans toutes les autres organisations Microsoft 365.
-- Taux de <sup>\*</sup>**compromission réel** : pourcentage réel d’utilisateurs qui ont diminué pour la simulation.
+- **Taux de compromission prédit** : données historiques dans Microsoft 365 qui prédit le pourcentage de personnes qui seront compromises par cette simulation (utilisateurs compromis/ nombre total d’utilisateurs qui reçoivent la simulation).
+- **Taux de compromission réel** : pourcentage réel de personnes qui ont été compromises par la simulation (nombre total d’utilisateurs réels compromis/ nombre total d’utilisateurs de votre organisation qui ont reçu la simulation).
 
 Si vous pointez sur un point de données dans le graphique, les valeurs de pourcentage réelles sont affichées.
 

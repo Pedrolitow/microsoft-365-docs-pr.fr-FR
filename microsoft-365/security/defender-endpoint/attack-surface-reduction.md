@@ -18,15 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 38b38a43c2531ab7ce4932ad9f00a04c9289fdc8
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: c0bd85618ec90b193728b9705d473eadc45712af
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811766"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68148722"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 
@@ -51,7 +51,13 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 De tels comportements logiciels sont parfois observés dans les applications légitimes. Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment utilisés par les attaquants par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque basés sur les logiciels et contribuer à la sécurité de votre organisation.
 
-Pour plus d’informations sur la configuration des règles de réduction de la surface d’attaque, consultez [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md).
+Pour un processus séquentiel de bout en bout de gestion des règles ASR, consultez :
+
+- [Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
+- [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+- [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
+- [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+- [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="assess-rule-impact-before-deployment"></a>Évaluer l’impact des règles avant le déploiement
 
@@ -78,17 +84,17 @@ Le mode d’avertissement permet à votre organisation de mettre en place des r�
 Le mode d’avertissement est pris en charge sur les appareils exécutant les versions suivantes de Windows :
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809) ou version ultérieure
-- Windows 11
+- Windows 11
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809) ou ultérieure
 
-L’antivirus Microsoft Defender doit s’exécuter avec une protection en temps réel en [mode Actif](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
+Microsoft Defender Antivirus doit s’exécuter avec une protection en temps réel en [mode Actif](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
-Assurez-vous également que les [mises à jour antivirus et anti-programme malveillant Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) sont installées.
+Assurez-vous également que [Microsoft Defender mises à jour antivirus et anti-programme malveillant](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) sont installées.
 
 - Condition de mise en production minimale de la plateforme : `4.18.2008.9`
 - Condition de mise en production minimale du moteur : `1.1.17400.5`
 
-Pour plus d’informations et pour obtenir vos mises à jour, consultez [Update for Microsoft Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
+Pour plus d’informations et obtenir vos mises à jour, consultez [Mise à jour pour Microsoft Defender plateforme anti-programme malveillant](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Cas où le mode d’avertissement n’est pas pris en charge
 
@@ -108,7 +114,7 @@ En outre, lorsque certaines règles de réduction de la surface d’attaque sont
 
 Les notifications et les alertes générées peuvent être affichées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>.
 
-Pour plus d’informations sur les fonctionnalités de notification et d’alerte, consultez : Informations sur les [alertes par règle et les notifications](attack-surface-reduction-rules-reference.md#per-rule-alert-and-notification-details), dans l’article référence sur les **règles de réduction de la surface** d’attaque.
+Pour plus d’informations sur les fonctionnalités de notification et d’alerte, consultez : Informations sur les [alertes par règle et les notifications](attack-surface-reduction-rules-reference.md#per-asr-rule-alert-and-notification-details), dans l’article référence sur les **règles de réduction de la surface** d’attaque.
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Événements avancés de chasse et de réduction de la surface d’attaque
 
@@ -137,7 +143,7 @@ Bien que les règles de réduction de la surface d’attaque ne nécessitent pas
 - Surveillance, analytique et flux de travail disponibles dans [Defender pour point de terminaison](microsoft-defender-endpoint.md)
 - Fonctionnalités de création de rapports et de configuration dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3. Toutefois, si vous disposez de ces licences, vous pouvez utiliser observateur d'événements et les journaux de l’Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
+Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3. Toutefois, si vous disposez de ces licences, vous pouvez utiliser observateur d'événements et Microsoft Defender journaux antivirus pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Examiner les événements de réduction de la surface d’attaque dans le portail Microsoft 365 Defender
 
@@ -176,8 +182,18 @@ Vous pouvez créer une vue personnalisée qui filtre les événements pour affic
 
 La « version du moteur » répertoriée pour les événements de réduction de la surface d’attaque dans le journal des événements est générée par Defender pour point de terminaison, et non par le système d’exploitation. Defender pour point de terminaison étant intégré à Windows 10 et Windows 11, cette fonctionnalité fonctionne sur tous les appareils avec Windows 10 ou Windows 11 installés.
 
+## <a name="see-also"></a>Voir aussi
+
+- [Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
+- [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+- [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
+- [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+- [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Rapport des règles ASR\) de réduction de \(la surface d’attaque](attack-surface-reduction-rules-report.md)
+
 > [!TIP]
 > Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
+>
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS](mac-preferences.md)
 > - [Microsoft Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

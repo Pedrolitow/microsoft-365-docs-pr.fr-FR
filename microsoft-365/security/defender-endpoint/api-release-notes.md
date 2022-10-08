@@ -1,7 +1,7 @@
 ---
-title: notes de publication de l’API Pertahanan Microsoft untuk Titik Akhir
-description: Notes de publication pour les mises à jour apportées à l’ensemble Pertahanan Microsoft untuk Titik Akhir d’API.
-keywords: Pertahanan Microsoft untuk Titik Akhir notes de publication de l’API, mde, API, API Pertahanan Microsoft untuk Titik Akhir, mises à jour, notes, publication
+title: notes de publication de l’API Microsoft Defender pour point de terminaison
+description: Notes de publication pour les mises à jour apportées à l’ensemble Microsoft Defender pour point de terminaison d’API.
+keywords: Microsoft Defender pour point de terminaison notes de publication de l’API, mde, API, API Microsoft Defender pour point de terminaison, mises à jour, notes, publication
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: deploy
@@ -12,18 +12,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1a0d5fc868c9b024125e4c5ff27adab24a033211
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 619fe25a2390a79fee11fde078b6ca9a3579705e
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742024"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68150086"
 ---
-# <a name="microsoft-defender-for-endpoint-api-release-notes"></a>notes de publication de l’API Pertahanan Microsoft untuk Titik Akhir
+# <a name="microsoft-defender-for-endpoint-api-release-notes"></a>notes de publication de l’API Microsoft Defender pour point de terminaison
 
 **S’applique à :** 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -31,7 +33,7 @@ ms.locfileid: "67742024"
 
 >Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Les informations suivantes répertorient les mises à jour apportées aux API Pertahanan Microsoft untuk Titik Akhir et les dates de leur création.
+Les informations suivantes répertorient les mises à jour apportées aux API Microsoft Defender pour point de terminaison et les dates de leur création.
 
 > [!TIP]
 > Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux :

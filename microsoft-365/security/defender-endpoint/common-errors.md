@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 05feb4b20f1f2ae5e6ade0e3155ab21978ec762d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a96aacfc4c2133b8aae436c97bfd438f2f478123
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696526"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142426"
 ---
 # <a name="common-rest-api-error-codes"></a>Codes d’erreur courants de l’API REST
 
@@ -81,7 +83,7 @@ Le nom de propriété de ce paramètre est « target ».
 
 Lorsque vous nous contactez au sujet d’une erreur, l’attachement de cet ID vous aidera à trouver la cause racine du problème.
 
-## <a name="examples"></a>範例
+## <a name="examples"></a>Exemples
 
 ```json
 {

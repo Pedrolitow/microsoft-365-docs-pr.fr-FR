@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les PME peut vous accompagner dans le processus du Règlement général sur la protection des données (RGPD).
-ms.openlocfilehash: b0d0131c807d111a3b5f9b5024a07040ca47fdfd
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: c89efa8b64dcfc5392a9be2da8fecf708197fb8e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664272"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193804"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplifié : Un guide pour votre petite entreprise
 
@@ -92,12 +93,12 @@ Cette section décrit les mesures qu’une petite entreprise peut prendre pour l
 Un bon moyen pour une petite entreprise de prendre en main le RGPD est de veiller à appliquer les principes clés suivants lors de la collection de données personnelles :
 
 - Recueillez des données personnelles avec des objectifs clairement définis pour leur utilisation et ne les utilisez pas pour une autre raison. Par exemple, si vous demandez à vos clients de vous fournir leur adresse e-mail pour qu’ils reçoivent de nouvelles offres et promotions, vous pouvez uniquement utiliser leur adresse de courrier à cette seule fin.
-- Ne recueillez pas plus de données que nécessaire. Par exemple, si vous entreprise nécessite une adresse pour la livraison d’articles, vous avez besoin du nom et de l’adresse du client, mais vous n’avez pas besoin de la situation de famille de la personne.
+- Don’t collect more data than you need. For example, if your business requires a mailing address for you to deliver goods, you need a customer's address and a name, but you don’t need to know the person's marital status.
 
 
 ### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Étape 1 : être au fait des données personnelles que vous collectez et utilisez dans votre entreprise, et des raisons dont vous en avez besoin
 
-En tant que petite entreprise, l’une des premières étapes à suivre est d’établir un inventaire des données personnelles que vous collectez et utilisez dans votre entreprise, et la raison justifiant leur collecte. Cela inclut les données de vos employés et de vos clients.
+As a small business, one of the first steps you should take is to make an inventory of the personal data you collect and use within your business, and why it's needed. This includes data on both your employees and your customers.
 
 Par exemple, vous pouvez avoir besoin des données personnelles de votre employé pour le contrat de travail et pour ces raisons juridiques (à titre d’exemple, pour la déclaration d’impôts à l’administration fiscale).
 
@@ -109,7 +110,7 @@ La [Protection des données Microsoft Purview](/microsoft-365/compliance/informa
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Étape 2 : informez vos clients, employés et autres individus que vous devez collecter leurs données personnelles
 
-Les particuliers doivent savoir que vous traitez leurs données personnelles, ainsi que le but. Par exemple, si un client doit créer un profil client pour accéder à au site en ligne de votre entreprise, veillez à déclarer spécifiquement ce que vous avez l’intention de faire avec leurs informations.
+Individuals must know that you process their personal data and for which purpose. For example, if a customer needs to create a customer profile to access your business's online site, make sure you state specifically what you intend to do with their information.
 
 Il n’est cependant pas nécessaire d’informer des individus lorsqu’ils savent déjà comment vous utilisez les données. Par exemple, lorsqu’ils vous fournissent une adresse de domicile pour la livraison qu’ils ont commandée.
 
@@ -127,10 +128,10 @@ Les [Étiquettes et stratégies de rétention](/microsoft-365/compliance/retenti
 
 ### <a name="step-4-secure-the-personal-data-you-are-processing"></a>Étape 4 : sécuriser les données personnelles que vous traitez
 
-Si vous stockez des données personnelles dans un système informatique, limitez l’accès aux fichiers contenant les données par un mot de passe fort, par exemple. Mettez régulièrement à jour les paramètres de sécurité de votre système.
+If you store personal data on an IT system, limit the access to the files containing the data, for example, by a strong password. Regularly update the security settings of your system.
 
 > [!NOTE]
-> Le RGPD ne prescrit pas l’utilisation d’un système informatique spécifique, mais observe que le système doit avoir un niveau de sécurité approprié. Voir [Article 32 du RGPD : Sécurité du traitement](https://gdpr.eu/article-32-security-of-processing/) pour plus d’informations.
+> The GDPR does not prescribe the use of any specific IT system, but make that the system has the appropriate level of security. See [GDRP Article 32: Security of Processing](https://gdpr.eu/article-32-security-of-processing/) for more information.
 
 Si vous stockez des documents physiques avec des données personnelles, vérifiez qu’elles ne sont pas accessibles aux personnes non autorisées.
 
@@ -171,7 +172,7 @@ Si vous sous-traitez le traitement des données personnelles à une autre entrep
  
 Pour mieux protéger les données personnelles, les organisations devront peut-être nommer un <b>Délégué à la protection des données (DPO)</b>. Toutefois, vous n’aurez peut-être pas besoin de nommer un Délégué à la protection des données si le traitement des données personnelles ne fait pas partie intégrante de votre entreprise ou si vous êtes une petite entreprise. Par exemple, si votre entreprise collecte uniquement des données sur vos clients pour la livraison à domicile, vous n’aurez pas besoin de nommer un DPO. Même si vous devez utiliser les services d’un DPO, ces fonctions peuvent être assignées à un employé existant, en supplément de ses fonctions courantes. Vous pouvez également décider d’embaucher un consultant extérieur pour cette fonction, le cas échéant.
 
-Vous n’avez généralement pas besoin d’effectuer une [analyse d'impact relative à la protection des données](https://gdpr.eu/article-35-impact-assessment/). Celle-ci est destinée aux entreprises présentant plus de risques en matière de données personnelles (par exemple, si elles effectuent une surveillance à grande échelle d’une zone accessible au public telle que la surveillance vidéo).
+You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for businesses that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
 
 Si vous êtes une petite entreprise gérant les salaires des employés et une liste de clients, vous n’avez typiquement pas besoin d’effectuer une Analyse d'impact relative à la protection des données.  
  

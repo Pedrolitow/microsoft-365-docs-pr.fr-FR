@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: article
-ms.openlocfilehash: 014802107d564fc24cf5e50a7513c390dcc943d5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e17bd79428ea857b3a581b4948ed37840ba4e32c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480059"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68080016"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exemple de repérage avancé pour Microsoft Defender pour Office 365
 

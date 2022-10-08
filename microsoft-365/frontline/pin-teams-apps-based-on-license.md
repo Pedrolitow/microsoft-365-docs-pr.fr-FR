@@ -13,20 +13,18 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 24393b11abc9bb7ba4c6736daca4dfa5969f94b8
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 7cf2adb04f27a01970eb516a82f5fbb35a5cc2f6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992321"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082326"
 ---
 # <a name="tailor-teams-apps-for-your-frontline-workers"></a>Personnaliser les applications Teams pour vos employés de première ligne
-
-> [!NOTE]
-> Cette fonctionnalité est en cours de déploiement et n’est peut-être pas encore disponible dans votre organisation. Pour rester informé des fonctionnalités teams à venir, consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams).
 
 ## <a name="overview"></a>Vue d’ensemble
 

@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Découvrez les vues de campagne dans Microsoft Defender pour Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7d705e77e7d288ea6cee594d02277d2c9bb54db1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 61f5f6269d4d6fa01aa5866063d716a3cface0ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473961"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082788"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -128,7 +128,7 @@ Les propriétés de campagne filtrables disponibles dans le bouton **Type** de c
   - **Type de campagne** : Sélectionnez **Programme malveillant** ou **Hameçonnage**. L’effacement des sélections a le même résultat que la sélection des deux.
   - **Nom de la campagne**
   - **Sous-type de campagne**
-  - **Expéditeur**
+  - **Sender**
   - **Destinataires**
   - **Domaine de l’expéditeur**
   - **Sujet**

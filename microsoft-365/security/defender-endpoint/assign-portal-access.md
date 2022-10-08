@@ -14,14 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
-ms.openlocfilehash: 1a02bcd596043ee27fc250f60ab68e627246bf62
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: aca5eb43b29076e0a320b472e55f35abfbaa42a6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811633"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146795"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>Attribuer l’accès utilisateur au centre de sécurité Microsoft Defender.
 
@@ -29,8 +31,8 @@ ms.locfileid: "67811633"
 
 
 **S’applique à :**
-- Azure Active Directory
-- Office 365
+- Azure Active Directory
+- Office 365
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -44,10 +46,11 @@ Defender pour point de terminaison prend en charge deux façons de gérer les au
 
 > [!NOTE]
 > Si vous avez déjà affecté des autorisations de base, vous pouvez basculer vers RBAC à tout moment. Prenez en compte les points suivants avant d’effectuer le commutateur :
->
 > - Les utilisateurs disposant d’un accès complet (utilisateurs auxquels le rôle d’administrateur général ou d’administrateur de sécurité est attribué dans Azure AD) se voient automatiquement attribuer le rôle d’administrateur Defender pour point de terminaison par défaut, qui dispose également d’un accès complet. Des groupes d’utilisateurs Azure AD supplémentaires peuvent être affectés au rôle d’administrateur Defender pour point de terminaison après le basculement vers RBAC. Seuls les utilisateurs affectés au rôle d’administrateur Defender pour point de terminaison peuvent gérer les autorisations à l’aide de RBAC. 
 > - Les utilisateurs disposant d’un accès en lecture seule (lecteurs de sécurité) perdront l’accès au portail jusqu’à ce qu’un rôle leur soit attribué. Notez que seuls les groupes d’utilisateurs Azure AD peuvent se faire attribuer un rôle sous RBAC.
 > - Après avoir basculé vers RBAC, vous ne pourrez plus revenir à l’utilisation de la gestion des autorisations de base.
+>
+>  La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
 
 ## <a name="related-topics"></a>Voir aussi
 

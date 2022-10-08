@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -15,12 +15,13 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser la carte de flux de messagerie dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour visualiser et suivre la façon dont les flux de messagerie vers et depuis leur organisation sont acheminés sur des connecteurs et sans utiliser de connecteurs.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 36ab396e626f50adc2e5d420563fe100d579bbfc
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 46b9fbf868d12a92b505bd6470cee53ed53f15b7
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597843"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077686"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Carte de flux de messagerie dans le Centre de sécurité & conformité
 

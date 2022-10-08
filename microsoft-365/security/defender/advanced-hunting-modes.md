@@ -15,17 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier2
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: f65baf6052ebdad6fb5ca91179018736fa47dbf4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1c47ebc606c4dc2e4fd0b7e5d41a5e7a5ea035d1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67742545"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68078203"
 ---
 # <a name="choose-between-guided-and-advanced-modes-to-hunt-in-microsoft-365-defender"></a>Choisissez entre les modes guidés et avancés pour chasser dans Microsoft 365 Defender
 
@@ -61,7 +62,7 @@ Pour effectuer la visite guidée, **sélectionnez Prendre une visite guidée** l
 
 Suivez les bulles d’enseignement bleues qui apparaissent dans la page et sélectionnez **Suivant** pour passer d’une étape à l’autre.
 
-Vous pouvez reprendre la visite à tout moment en accédant aux **ressources** >  d’aide **Mer informasjon** et en sélectionnant **Prendre la visite guidée**.
+Vous pouvez reprendre la visite à tout moment en accédant aux ressources  > **d’aide****En savoir plus** et en sélectionnant **Prendre la visite guidée**.
 
 ![Capture d’écran des ressources d’aide](../../media/guided-hunting/help-resources.png)
 
@@ -83,7 +84,7 @@ Nous vous recommandons de suivre ces étapes pour commencer rapidement avec la c
 |--|--|--|
 | **Apprendre la langue** | La chasse avancée est basée sur le [langage de requête Kusto](/azure/kusto/query/), prenant en charge la même syntaxe et les mêmes opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
 | **Découvrez comment utiliser les résultats de la requête** | Découvrez les graphiques et les différentes façons d’afficher ou d’exporter vos résultats. Découvrez comment modifier rapidement les requêtes, explorer les détails pour obtenir des informations plus détaillées et prendre des mesures de réponse. | - [Utiliser les résultats de la requête en mode avancé](advanced-hunting-query-results.md)<br /> - [Agir sur les résultats de la requête](advanced-hunting-take-action.md) <br /> - [Lier les résultats de la requête à un incident](advanced-hunting-link-to-incident.md)  |
-| **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | - [Référence de schéma](advanced-hunting-schema-tables.md) <br />- [Transition à partir de Pertahanan Microsoft untuk Titik Akhir](advanced-hunting-migrate-from-mde.md) |
+| **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | - [Référence de schéma](advanced-hunting-schema-tables.md) <br />- [Transition à partir de Microsoft Defender pour point de terminaison](advanced-hunting-migrate-from-mde.md) |
 | **Obtenir des conseils et des exemples d’experts** | Entraînez-vous gratuitement avec des guides d’experts Microsoft. Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Obtenir une formation d’expert](advanced-hunting-expert-training.md) <br />- [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md) <br />- [Aller à la chasse](advanced-hunting-go-hunt.md) <br />- [Rechercher les menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md) |
 | **Optimiser les requêtes et gérer les erreurs** | Découvrez comment créer des requêtes efficaces et sans erreur. | - [Meilleures pratiques de requête](advanced-hunting-best-practices.md)<br />- [Gérer les erreurs](advanced-hunting-errors.md) |
 | **Créer les règles de détection personnalisées** | Découvrez comment utiliser des requêtes de chasse avancées pour déclencher des alertes et effectuer automatiquement des actions de réponse. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md) <br />- [Règles de détection personnalisées](custom-detection-rules.md)|

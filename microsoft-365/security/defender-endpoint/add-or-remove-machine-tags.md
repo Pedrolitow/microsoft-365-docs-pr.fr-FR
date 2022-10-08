@@ -1,6 +1,6 @@
 ---
 title: Ajouter ou supprimer une API d’étiquettes de machine
-description: Découvrez comment utiliser l’API Ajouter ou supprimer des balises de machine pour ajouter ou supprimer une balise pour un ordinateur dans Pertahanan Microsoft untuk Titik Akhir.
+description: Découvrez comment utiliser l’API Ajouter ou supprimer des balises de machine pour ajouter ou supprimer une balise pour un ordinateur dans Microsoft Defender pour point de terminaison.
 keywords: api, api graphe, api prises en charge, balises, balises d’ordinateur
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -11,24 +11,26 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 4cc445eac8f8c458f37489f493d4113836379802
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 3f6139d50e0c1f565952e853f80a325af3afb26e
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742090"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68150240"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>Ajouter ou supprimer une API d’étiquettes d’ordinateur
 
 **S’applique à :**
 
-- [plan Pertahanan Microsoft untuk Titik Akhir 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [plan Pertahanan Microsoft untuk Titik Akhir 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [plan Microsoft Defender pour point de terminaison 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

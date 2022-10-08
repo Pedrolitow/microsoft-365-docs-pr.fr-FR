@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,14 +23,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez une boîte aux lettres partagée et configurez certains paramètres pour ses utilisateurs, tels que le transfert de courrier électronique et les réponses automatiques.
-ms.openlocfilehash: b3de51a8407c8f9786d6a1677137f2a564744ac0
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: ff17c9d16f84da5ef93d777e10eaf1fcfb99c55f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437148"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194002"
 ---
-# <a name="configure-microsoft-365-shared-mailbox-settings"></a>Configurer Microsoft 365 paramètres de boîte aux lettres partagée
+# <a name="configure-microsoft-365-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée Microsoft 365
 
 Une fois que vous avez [créé une boîte aux lettres partagée](create-a-shared-mailbox.md), vous devez configurer certains paramètres pour les utilisateurs de la boîte aux lettres, tels que le transfert de courrier électronique et les réponses automatiques. Par la suite, vous souhaiterez peut-être modifier d’autres paramètres, tels que le nom de la boîte aux lettres, les membres ou les autorisations de membre. 
 
@@ -37,7 +38,7 @@ Une fois que vous avez [créé une boîte aux lettres partagée](create-a-shared
 
 1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
-2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis **sélectionnez Modifier** en regard du **nom, de l’e-mail et des alias de messagerie**.
+2. Sélectionnez la boîte aux lettres partagée à modifier, puis **sélectionnez Modifier** en regard de **Nom, Email Email alias**.
 
 3. Entrez un nouveau nom ou ajoutez un autre alias. Si vous souhaitez modifier l’adresse e-mail principale, votre boîte aux lettres doit avoir plusieurs alias de messagerie.
 
@@ -49,7 +50,7 @@ Vous n’avez pas besoin d’attribuer une licence à la boîte aux lettres part
 
 1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
-2. Sélectionnez la boîte aux lettres partagée à modifier, puis sélectionnez **Modifier** **le transfert de** \> courrier électronique.
+2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **Email modification de** \> transfert **.**
     
 3. Définissez le bouton bascule **sur Activé** et entrez une adresse e-mail vers laquelle transférer les messages. Il peut s’agir de n’importe quelle adresse e-mail valide. Pour transférer vers plusieurs adresses, vous devez [créer un groupe de distribution](/office365/admin/setup/create-distribution-lists) pour les adresses, puis entrer le nom du groupe dans cette zone.
     
@@ -71,7 +72,7 @@ Vous n’avez pas besoin d’attribuer une licence à la boîte aux lettres part
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Autoriser tout le monde à voir le courrier envoyé (les réponses)
 
-Par défaut, les courriers envoyés à partir de la boîte aux lettres partagée ne sont pas enregistrés dans le dossier Éléments envoyés de la boîte aux lettres partagée. En revanche, ils sont enregistrés dans le dossier Éléments envoyés de la personne qui a envoyé le courrier.
+By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
 
 Si vous souhaitez autoriser tout le monde à voir l’e-mail envoyé, dans le centre d’administration, modifiez les paramètres de boîte aux lettres partagée, puis sélectionnez **Éléments envoyés** \> **Modifier**.
 
@@ -80,7 +81,7 @@ Si vous souhaitez autoriser tout le monde à voir l’e-mail envoyé, dans le ce
 
 1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
-2. Sélectionnez la boîte aux lettres partagée à modifier, puis sélectionnez **Modifier** les **applications** \> de messagerie.
+2. Sélectionnez la boîte aux lettres partagée à modifier, puis sélectionnez **Email applications** \> **Modifier**.
 
 3. Définissez le bouton bascule **sur Activé** pour toutes les applications que vous souhaitez que les membres puissent utiliser pour accéder à la boîte aux lettres partagée. Définissez le bouton bascule **sur Désactivé** pour toutes les applications que vous ne souhaitez pas qu’elles utilisent. 
 

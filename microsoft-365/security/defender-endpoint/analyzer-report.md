@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c9ba1865710dbaaf0c35cfbd37c4985ad4fa1ad1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4628f6bdc5bd3b38665fa044150e38c756db0059
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702597"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145774"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprendre le rapport HTML de l’analyseur client
 
@@ -40,9 +42,9 @@ Utilisez l’exemple suivant pour comprendre le rapport.
 
 - En haut, la version du script et le runtime de script sont répertoriés pour référence.
 - La section **Informations** sur l’appareil fournit des identificateurs de système d’exploitation et d’appareil de base pour identifier de manière unique l’appareil sur lequel l’analyseur s’est exécuté.
-- Les **détails de sécurité** du point de terminaison fournissent des informations générales sur les processus liés à Microsoft Defender pour point de terminaison, notamment l’antivirus Microsoft Defender et le processus de capteur. Si les processus importants ne sont pas en ligne comme prévu, la couleur passe en rouge.
+- Les **détails de sécurité** du point de terminaison fournissent des informations générales sur les processus liés à Microsoft Defender pour point de terminaison, notamment Microsoft Defender Antivirus et le processus de capteur. Si les processus importants ne sont pas en ligne comme prévu, la couleur passe en rouge.
   
--   Les **détails de sécurité** du point de terminaison fournissent des informations générales sur les processus liés à Microsoft Defender pour point de terminaison, notamment l’antivirus Microsoft Defender et le processus de capteur. Si les processus importants ne sont pas en ligne comme prévu, la couleur passe en rouge.
+-   Les **détails de sécurité** du point de terminaison fournissent des informations générales sur les processus liés à Microsoft Defender pour point de terminaison, notamment Microsoft Defender Antivirus et le processus de capteur. Si les processus importants ne sont pas en ligne comme prévu, la couleur passe en rouge.
 
     :::image type="content" source="images/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="Page Résumé des résultats de la vérification" lightbox="images/85f56004dc6bd1679c3d2c063e36cb80.png":::
 

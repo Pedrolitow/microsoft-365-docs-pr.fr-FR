@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: afc07028f8334c52fb243b7a9fe9e1a0c176b693
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: be03c9cbf3bb7d14d7050fd9664567f45cfd056a
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698504"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145752"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>File d’attente des alertes dans Microsoft 365 Defender
 

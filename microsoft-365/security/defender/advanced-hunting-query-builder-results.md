@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.openlocfilehash: 7b14628c50e16c976471f3daf8764166f6cdd0a2
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3e125b8fef6c1c42f125f3a2744ce5c060293ac6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476081"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68078170"
 ---
 # <a name="work-with-query-results-in-guided-mode"></a>Utiliser les résultats de la requête en mode guidé
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

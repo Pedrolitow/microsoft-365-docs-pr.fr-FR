@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 - m365solution-frontline
 - m365solution-scenario
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -22,12 +24,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 020862c14e02b06718a7816ab6200341969404c8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 35fa2bb9551b4cfd4d3583145e866b306562a1f1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472005"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082238"
 ---
 # <a name="simplify-business-processes-for-frontline-teams"></a>Simplifier les processus métier pour les équipes de première ligne
 

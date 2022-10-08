@@ -1,7 +1,7 @@
 ---
 title: Blocage et confinement comportementaux
-description: En savoir plus sur les fonctionnalités de blocage comportemental et d’endiguement à Pertahanan Microsoft untuk Titik Akhir
-keywords: Pertahanan Microsoft untuk Titik Akhir, EDR en mode bloc, blocage en mode passif
+description: En savoir plus sur les fonctionnalités de blocage comportemental et d’endiguement à Microsoft Defender pour point de terminaison
+keywords: Microsoft Defender pour point de terminaison, EDR en mode bloc, blocage en mode passif
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -16,14 +16,16 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: ba259111f758bfb2ce34210e436f9838c0ccf060
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 8871a9ebaa683a81ceaa4123d2f9cc52bbac9222
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740486"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142078"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
@@ -47,7 +49,7 @@ Les fonctionnalités de blocage comportemental et d’endiguement peuvent aider 
 
 Les fonctionnalités de blocage et d’endiguement comportementaux fonctionnent avec plusieurs composants et fonctionnalités de Defender pour point de terminaison pour arrêter immédiatement les attaques et empêcher la progression des attaques.
 
-- [La protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md) (qui inclut l’antivirus Microsoft Defender) peut détecter les menaces en analysant les comportements et arrêter les menaces qui ont commencé à s’exécuter.
+- [La protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md) (qui inclut Microsoft Defender Antivirus) peut détecter les menaces en analysant les comportements et arrêter les menaces qui ont commencé à s’exécuter.
 
 - [La détection et la réponse](overview-endpoint-detection-response.md) des points de terminaison (EDR) reçoivent des signaux de sécurité sur votre réseau, vos appareils et le comportement du noyau. Lorsque des menaces sont détectées, des alertes sont créées. Plusieurs alertes du même type sont agrégées en incidents, ce qui facilite l’examen et la réponse de votre équipe des opérations de sécurité.
 
@@ -67,7 +69,7 @@ L’image suivante montre un exemple d’alerte déclenchée par des fonctionnal
 
 - **[Le blocage des boucles de commentaires](feedback-loop-blocking.md)** (également appelé protection rapide) les détections de menaces sont observées par le biais de l’intelligence comportementale. Les menaces sont arrêtées et empêchées de s’exécuter sur d’autres points de terminaison. (Le blocage de boucle de commentaires est activé par défaut.)
 
-- **[Détection et réponse des points de terminaison (EDR) en mode bloc](edr-in-block-mode.md)** Les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. L’EDR en mode bloc fonctionne même si l’antivirus Microsoft Defender n’est pas la solution antivirus principale. (EDR en mode bloc n’est pas activé par défaut ; vous l’activez à Microsoft 365 Defender.)
+- **[Détection et réponse des points de terminaison (EDR) en mode bloc](edr-in-block-mode.md)** Les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. EDR en mode bloc fonctionne même si Microsoft Defender Antivirus n’est pas la solution antivirus principale. (EDR en mode bloc n’est pas activé par défaut ; vous l’activez à Microsoft 365 Defender.)
 
 Attendez-vous à plus d’informations dans le domaine du blocage comportemental et de l’endiguement, car Microsoft continue d’améliorer les fonctionnalités et fonctionnalités de protection contre les menaces. Pour voir ce qui est planifié et en cours de déploiement, consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -132,7 +134,7 @@ Cet exemple montre qu’avec les fonctionnalités de blocage comportemental et d
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Mer informasjon sur Defender pour point de terminaison](overview-endpoint-detection-response.md)
+- [En savoir plus sur Defender pour point de terminaison](overview-endpoint-detection-response.md)
 
 - [Configurer vos règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 

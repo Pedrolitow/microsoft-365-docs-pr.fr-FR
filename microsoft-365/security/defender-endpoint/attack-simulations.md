@@ -14,14 +14,16 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
-ms.openlocfilehash: 8e934c166aca10ff7913e4c6bc7bc7ad42f2af11
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 3c8ed9f44908b8a8c912bba6c8cfd473085aef0c
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812433"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146676"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Expérience Microsoft Defender pour point de terminaison par le biais d’attaques simulées 
 

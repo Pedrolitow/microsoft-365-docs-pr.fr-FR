@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
 ms.date: 03/27/2020
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 45b40cd4f893ca9fab4f07f2bd1e36f7c8690b81
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e9623dbf66826d3654e987ef41ca9006c0548888
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703333"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145796"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
@@ -64,16 +66,16 @@ Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dang
 
 #### <a name="understanding-alert-severity"></a>Présentation de la gravité de l’alerte
 
-Les gravités d’alerte de l’Antivirus Microsoft Defender et de Defender pour point de terminaison sont différentes, car elles représentent différentes étendues.
+Microsoft Defender gravités des alertes antivirus et Defender pour point de terminaison sont différentes, car elles représentent des étendues différentes.
 
-La gravité des menaces de l’Antivirus Microsoft Defender représente la gravité absolue de la menace détectée (programme malveillant) et est affectée en fonction du risque potentiel pour l’appareil individuel, s’il est infecté.
+Le Microsoft Defender gravité des menaces antivirus représente la gravité absolue de la menace détectée (programme malveillant) et est attribué en fonction du risque potentiel pour l’appareil individuel, s’il est infecté.
 
 La gravité de l’alerte Defender pour point de terminaison représente la gravité du comportement détecté, le risque réel pour l’appareil, mais surtout le risque potentiel pour l’organisation.
 
 Par exemple :
 
 - La gravité d’une alerte Defender pour point de terminaison concernant un antivirus Microsoft Defender a détecté une menace qui a été évitée et qui n’a pas infecté l’appareil est classée comme « Informationnelle », car il n’y a pas eu de dommages réels.
-- Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigée par l’antivirus Microsoft Defender, est classée comme « Faible », car elle peut avoir causé des dommages à l’appareil individuel, mais ne présente aucune menace organisationnelle.
+- Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigée par Microsoft Defender Antivirus est classée comme « Faible », car elle peut avoir causé des dommages à l’appareil individuel, mais ne présente aucune menace organisationnelle.
 - Une alerte sur les programmes malveillants détectés lors de l’exécution, qui peut constituer une menace non seulement pour l’appareil individuel, mais aussi pour l’organisation, qu’elle ait finalement été bloquée, peut être classée comme « Moyen » ou « Élevé ».
 - Les alertes comportementales suspectes, qui n’ont pas été bloquées ou corrigées, seront classées « Bas », « Moyen » ou « Élevé » en suivant les mêmes considérations relatives aux menaces organisationnelles.
 
@@ -103,7 +105,7 @@ Filtrez les alertes en fonction des sources de service suivantes :
 - AAD Identity Protection
 
 > [!NOTE]
-> Le filtre Antivirus s’affiche uniquement si les appareils utilisent l’antivirus Microsoft Defender comme produit anti-programme malveillant en temps réel par défaut.
+> Le filtre Antivirus s’affiche uniquement si les appareils utilisent Microsoft Defender Antivirus comme produit anti-programme malveillant de protection en temps réel par défaut.
 
 ### <a name="tags"></a>Balises
 

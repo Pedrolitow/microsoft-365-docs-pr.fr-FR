@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Les administrateurs peuvent en savoir plus sur les types d’adresses e-mail acceptées ou rejetées par Exchange Online Protection (EOP) et Outlook.com pour empêcher le hameçonnage.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a4687ca9d9135a8feef66f4caabfcb7a3a2313b4
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 873f529e6dff8e805e947e3be3366c56215e1661
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598404"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077642"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse From pour empêcher le hameçonnage
 

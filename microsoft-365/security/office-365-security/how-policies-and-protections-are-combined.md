@@ -11,18 +11,19 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’ordre des applications des protections dans Exchange Online Protection (EOP) et comment la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b976c738bb77d6a6e3264e1e1cde76a7afdfe005
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 5bb3f1a8b15c2d6407ba09ffd2fafaa1987c010f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598360"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082590"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection par e-mail
 

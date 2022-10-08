@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: bedf3170ede7c7fa566d46ce53c37a7fd73d7a96
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: aacc37a64890d045e165b9a4eb4bba317afea9f0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701057"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192924"
 ---
 # <a name="get-ip-statistics-api"></a>Obtenir l’API de statistiques IP
 

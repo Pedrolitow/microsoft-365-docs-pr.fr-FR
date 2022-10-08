@@ -15,19 +15,19 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: eaf2529b76677b9a25056426cb83b4ca927870da
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 546e8dcf7b4e93c13c6374c14a291bcef9da0c9c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681950"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68079708"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour la sécurisation des sites et fichiers SharePoint
 

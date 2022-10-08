@@ -14,18 +14,18 @@ ms.date: 08/31/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: cd89030a72f025c620d75506554f305e342e9d50
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 9d9c8429d5bc2ca21576c42cc60f0dd94ea53e41
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812389"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68143904"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
@@ -87,7 +87,7 @@ Toutes les actions de correction, qu’elles soient en attente ou terminées, so
 Votre abonnement doit inclure [Defender pour point de terminaison](microsoft-defender-endpoint.md) ou [Defender Entreprise](../defender-business/mdb-overview.md).
 
 > [!NOTE]
-> L’investigation et la réponse automatisées nécessitent l’antivirus Microsoft Defender pour l’exécution en mode passif ou actif. Si l’antivirus Microsoft Defender est désactivé ou désinstallé, l’investigation et la réponse automatisées ne fonctionnent pas correctement.
+> L’investigation et la réponse automatisées nécessitent Microsoft Defender Antivirus pour l’exécution en mode passif ou actif. Si Microsoft Defender Antivirus est désactivé ou désinstallé, l’investigation et la réponse automatisées ne fonctionnent pas correctement.
 
 Actuellement, AIR prend uniquement en charge les versions de système d’exploitation suivantes :
 
@@ -98,7 +98,7 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 - Windows 10, version 1709 (build du système d’exploitation 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) ou ultérieure
 - Windows 10, version 1803 (build du système d’exploitation 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) ou ultérieure
 - Windows 10, version [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ou ultérieure
-- Windows 11
+- Windows 11
 
 > [!NOTE]
 > L’examen et la réponse automatisés sur Windows Server 2012 R2 et Windows Server 2016 nécessitent l’installation de [l’agent unifié](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). 

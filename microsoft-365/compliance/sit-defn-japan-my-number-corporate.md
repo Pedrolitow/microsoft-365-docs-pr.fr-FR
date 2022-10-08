@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Japan My Number - Définition d’entité de type Informations sensibles d’entreprise.
-ms.openlocfilehash: 083e8b0bca98d11ea65e6b5644186be1232f296d
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: c509bf75a560792724c7a9f6768e1d0cf04e55d7
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367288"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383324"
 ---
 # <a name="japan-my-number---corporate"></a>Japon Mon numéro - Entreprise
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

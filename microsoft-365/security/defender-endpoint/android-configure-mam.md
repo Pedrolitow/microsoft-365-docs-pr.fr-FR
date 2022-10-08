@@ -14,15 +14,16 @@ manager: dansimp
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: f8417501dbf1583cf2eb3e062e39822e6b0c2108
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8465046f816880b68f51211ee0c9b2ffb209909e
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67679666"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145862"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configurer Microsoft Defender pour point de terminaison signaux de risque à l’aide de stratégies de protection des applications (MAM)
 
@@ -50,7 +51,7 @@ Les utilisateurs finaux doivent également prendre des mesures pour installer Mi
 
 ## <a name="admin-prerequisites"></a>Administration prérequis
 
-- **Vérifier que le connecteur Microsoft Defender pour Endpoint-Intune est activé**
+- **Vérifier que le Microsoft Defender pour Endpoint-Intune connecteur est activé**
 
   a. Allez à security.microsoft.com. 
 
@@ -79,7 +80,7 @@ Les utilisateurs finaux doivent également prendre des mesures pour installer Mi
 - **Créer une stratégie de protection des applications** 
  
 Bloquez l’accès ou réinitez les données d’une application managée en fonction de Microsoft Defender pour point de terminaison signaux de risque en créant une stratégie de protection des applications.
-Microsoft Defender pour point de terminaison peut être configuré pour envoyer des signaux de menace à utiliser dans les stratégies de protection des applications (APP, également appelée GAM). Avec cette fonctionnalité, vous pouvez utiliser Microsoft Defender pour point de terminaison pour protéger les applications gérées.
+Microsoft Defender pour point de terminaison peut être configuré pour envoyer des signaux de menace à utiliser dans les stratégies de protection des applications (APP, également appelée GAM). Avec cette fonctionnalité, vous pouvez utiliser Microsoft Defender pour point de terminaison pour protéger les applications gérées. 
 
 1. Créer une stratégie <br>
 Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une stratégie peut être une règle qui est appliquée lorsque l’utilisateur tente d’accéder à des données « d’entreprise » ou de les déplacer, ou s’il tente un ensemble d’actions interdites ou surveillées lorsqu’il se trouve dans l’application. 
@@ -133,11 +134,34 @@ Sélectionnez **Paramètre > niveau maximal autorisé de menace d’appareil** d
 
 6. Sélectionnez **Continuer** à vous connecter à l’application managée. 
 
-## <a name="configure-privacy-controls"></a>Configurer les contrôles de confidentialité 
->[!IMPORTANT]
->Les contrôles de confidentialité sur Microsoft Defender pour point de terminaison sur la gestion des applications mobiles sont en préversion publique. Les informations suivantes concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
->**Si vous souhaitez essayer cette fonctionnalité ou fournir des commentaires, contactez-nous à mdatpmobile@microsoft.com.**
+## <a name="configure-web-protection"></a>Configurer la protection web 
+Defender pour point de terminaison sur Android permet aux administrateurs informatiques de configurer la protection web. La protection web est disponible dans le [centre de Endpoint Manager Administration Microsoft](https://endpoint.microsoft.com).
 
+La protection web permet de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Notez que l’anti-hameçonnage et les indicateurs personnalisés (URL et adresses IP) sont pris en charge dans le cadre de la protection web. Le filtrage de contenu web n’est actuellement pas pris en charge sur les plateformes mobiles.
+
+1. Dans le Centre d’administration Microsoft Endpoint Manager, accédez aux stratégies de **configuration d’applications > App > Ajouter des applications managées >**.
+
+2. Donner à la stratégie un **nom**.
+
+3. Sous **Sélectionner les applications publiques, choisissez** **Microsoft Defender pour point de terminaison** comme application cible.
+
+4. Dans la page **Paramètres** , sous **Paramètres de configuration général**, ajoutez les clés suivantes et définissez leur valeur en fonction des besoins.
+    - **antihameçonnage** 
+    - **VPN** 
+    
+   Pour désactiver la protection web, entrez 0 pour les valeurs d’anti-hameçonnage et de VPN.
+   Pour désactiver uniquement l’utilisation du VPN par la protection web, entrez les valeurs suivantes :
+    - 0 pour vpn
+    - 1 pour l’anti-hameçonnage
+    
+1. Ajoutez la clé **DefenderMAMConfigs** et définissez la valeur sur 1.
+
+5. Affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur false.
+
+6. Examinez et créez la stratégie.
+
+
+## <a name="configure-privacy-controls"></a>Configurer les contrôles de confidentialité
 Les administrateurs peuvent utiliser les étapes suivantes pour activer la confidentialité et ne pas collecter le nom de domaine, les détails de l’application et les informations réseau dans le cadre du rapport d’alerte pour les menaces correspondantes.
 
 1. Dans le Centre d’administration Microsoft Endpoint Manager, accédez aux **stratégies de configuration des applications > app > Ajouter des applications managées >**.
@@ -146,17 +170,15 @@ Les administrateurs peuvent utiliser les étapes suivantes pour activer la confi
 
 3. Sous Sélectionner les applications publiques, choisissez **Microsoft Defender pour point de terminaison** comme application cible.
 
-4. Dans la page Paramètres, sous Paramètres de configuration générale, ajoutez **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** comme clés et valeur true.
+4. Dans la page Paramètres, sous Paramètres de configuration générale, ajoutez **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** comme clés et valeur true. 
+
+1. Ajoutez la clé **DefenderMAMConfigs** et définissez la valeur sur 1.
 
 5. Affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur false.
 
 6. Examinez et créez la stratégie.
 
 ## <a name="optional-permissions"></a>Autorisations facultatives 
->[!IMPORTANT]
->Les autorisations facultatives sur Microsoft Defender pour point de terminaison sont en préversion publique. Les informations suivantes concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
->**Si vous souhaitez essayer cette fonctionnalité ou fournir des commentaires, contactez-nous à mdatpmobile@microsoft.com.**
-
 Microsoft Defender pour point de terminaison sur Android active les autorisations facultatives dans le flux d’intégration. Actuellement, les autorisations requises par MDE sont obligatoires dans le flux d’intégration. Avec cette fonctionnalité, l’administrateur peut déployer MDE sur des appareils Android avec des stratégies GAM sans appliquer les autorisations VPN et d’accessibilité obligatoires lors de l’intégration. Les utilisateurs finaux peuvent intégrer l’application sans les autorisations obligatoires et passer en revue ultérieurement ces autorisations. 
 
 ### <a name="configure-optional-permission"></a>Configurer l’autorisation facultative
@@ -169,7 +191,9 @@ Utilisez les étapes suivantes pour activer les autorisations facultatives pour 
 
 3. Sélectionnez **Microsoft Defender pour point de terminaison*** dans les applications publiques.
 
-4. Dans la page Paramètres, **sélectionnez Utiliser le concepteur de configuration** et ajoutez **DefenderOptionalVPN** ou **DefenderOptionalAccessibility** , ou **les deux** comme type clé et valeur booléen. 
+4. Dans la page Paramètres, **sélectionnez Utiliser le concepteur de configuration** et **DefenderOptionalVPN** ou **DefenderOptionalAccessibility** , ou **les deux** comme type clé et valeur booléen. 
+
+1. Ajoutez la clé **DefenderMAMConfigs** et définissez la valeur sur 1.
 
 5. Pour activer les autorisations facultatives, entrez la valeur **true** et affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur false.
 Pour les utilisateurs avec la clé définie comme true, les utilisateurs pourront intégrer l’application sans accorder ces autorisations.

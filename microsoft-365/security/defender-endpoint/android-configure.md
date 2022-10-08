@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8f2d1200d3d703e89959dbe8446838f266d1731a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e6a97b532098631a14850be0afd06b9bc9e2e11d
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703365"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68150108"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour point de terminaison pour des fonctionnalités Android
 
@@ -62,12 +63,12 @@ Cette fonctionnalité offre une protection contre les menaces non autorisées Wi
 
 Il inclut plusieurs contrôles d’administration pour offrir de la flexibilité, tels que la possibilité de configurer la fonctionnalité à partir du centre microsoft Endpoint Manager Administration et d’ajouter des certificats approuvés. Les administrateurs peuvent également activer [les contrôles de confidentialité](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) pour configurer les données envoyées par Defender pour point de terminaison à partir d’appareils Android.
 
-La protection réseau dans Microsoft Defender pour point de terminaison est activée par défaut. Les administrateurs peuvent utiliser les étapes suivantes pour **configurer la protection réseau sur les appareils Android.**
+La protection réseau dans Microsoft Defender pour le point de terminaison est activée par défaut. Les administrateurs peuvent utiliser les étapes suivantes pour **configurer la protection réseau sur les appareils Android.**
 
 1. Dans Microsoft Endpoint Manager Administration, accédez aux stratégies de configuration d’applications > App. Créez une stratégie de configuration d’application.
     > [!div class="mx-imgBorder"]
     > ![Image montrant comment créer une stratégie.](images/android-mem.png)
-1. Fournissez un nom et une description pour identifier de manière unique la stratégie. Sélectionnez **« Android Enterprise »** comme plateforme et **« Profil professionnel appartenant à l’utilisateur uniquement »** comme type de profil et **« Microsoft Defender »** comme application ciblée.
+1. Fournissez un nom et une description pour identifier de manière unique la stratégie. Sélectionnez **« Android Enterprise »** comme plateforme et **« Profil professionnel appartenant à** l’utilisateur uniquement » comme type de profil et **« Microsoft Defender »** comme application ciblée.
     > [!div class="mx-imgBorder"]
     > ![Image des détails de la stratégie.](images/appconfigdetails.png)
 1. Dans la page Paramètres, sélectionnez **« Utiliser le concepteur de configuration »** et ajoutez **« Activer la protection réseau dans Microsoft Defender »** comme clé et valeur **« 0 »** pour désactiver la protection réseau. (La protection réseau est activée par défaut)

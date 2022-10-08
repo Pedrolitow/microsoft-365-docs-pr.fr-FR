@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fd1d9d60140ebce0f718a2f23e192ada37b2f3bd
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 8147dfbc5e93f6297a48c5080bf64c5744ec1837
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797975"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082700"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -62,7 +62,7 @@ Regardez cette courte vidéo pour découvrir comment gérer les messages mis en 
 
   **Remarques** :
 
-  - L'ajout d'utilisateurs au rôle Azure Active Directory Domain Services correspondant dans le centre d'administration Microsoft 365 donne aux utilisateurs les autorisations _et_ autorisations requises pour d'autres fonctionnalités dans Microsoft 365. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
   - <sup>\*</sup>Les membres du groupe de **rôles Administrateur** de la quarantaine dans Email & rôles de **collaboration** dans le [portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) doivent également être membres du groupe de rôles Gestion de **l’hygiène** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour effectuer des procédures de quarantaine dans Exchange Online PowerShell .
 
@@ -208,7 +208,7 @@ Les actions suivantes sont disponibles après avoir cliqué sur ![l’icône Aut
   - **Copier l'en-tête du message** : Cliquez sur ce lien pour copier l'en-tête du message (tous les champs d'en-tête) dans votre presse-papiers.
   - **Analyseur d'en-tête de message Microsoft Corporation** : Pour analyser en profondeur les champs et les valeurs de l'en-tête, cliquez sur ce lien pour accéder à l'analyseur d'en-tête de message. Collez l'en-tête du message dans la section **Insérez l'en-tête du message que vous souhaitez analyser** (CTRL+V ou cliquez avec le bouton droit de la souris et choisissez **Coller**), puis cliquez sur **Analyser les en-têtes**.
 
-- ![Icône de prévisualisation de message ](../../media/m365-cc-sc-preview-message-icon.png) **Prévisualisation de message** : Dans le menu flottant qui apparaît, sélectionnez l'un des onglets suivants :
+- ![Afficher l’icône de prévisualisation du message.](../../media/m365-cc-sc-preview-message-icon.png) **Message d’aperçu** : dans le menu volant qui s’affiche, choisissez l’un des onglets suivants :
   - **Affichage Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
   - **Texte simple** : affiche le corps du message au format texte brut.
 

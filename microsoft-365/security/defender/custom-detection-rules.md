@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier2
 ms.topic: article
-ms.openlocfilehash: 100eb64b5c99cb2292c7b10bb2345ebf634b61e6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 304883b0d0ba554c5f2f0d4044c03445662d5fe9
+ms.sourcegitcommit: ef0c7a914782999d148c79240b2d3f7be53e5690
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477888"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68138164"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -127,9 +128,9 @@ Avec la requête dans l’éditeur de requête, sélectionnez **Créer une règl
 Lorsque vous enregistrez une nouvelle règle, elle s’exécute et vérifie les correspondances des 30 derniers jours de données. La règle s’exécute ensuite à intervalles fixes, en appliquant une durée de recherche en fonction de la fréquence choisie :
 
 - **Toutes les 24 heures** : s’exécute toutes les 24 heures, en vérifiant les données des 30 derniers jours
-- **Toutes les 12 heures**: s’exécute toutes les 12 heures, en vérifiant les données des dernières 24 heures
-- **Toutes les 3 heures** : s’exécute toutes les 3 heures, en vérifiant les données des 6 dernières heures
-- **Toutes les heures** : s’exécute toutes les heures, en vérifiant les données des 2 dernières heures
+- **Toutes les 12 heures** : s’exécute toutes les 12 heures, en vérifiant les données des dernières 48 heures
+- **Toutes les 3 heures** : s’exécute toutes les 3 heures, en vérifiant les données des 12 dernières heures
+- **Toutes les heures** : s’exécute toutes les heures, en vérifiant les données des dernières 4 heures
 
 Lorsque vous modifiez une règle, elle s’exécute avec les modifications appliquées lors de la prochaine exécution planifiée en fonction de la fréquence que vous définissez. La fréquence de la règle est basée sur l’horodatage des événements et non sur l’heure d’ingestion.
 
@@ -152,7 +153,7 @@ Votre règle de détection personnalisée peut effectuer automatiquement des act
 Ces actions sont appliquées aux appareils dans la colonne `DeviceId`des résultats de la requête:
 - **Isoler l’appareil** : utilise Microsoft Defender pour point de terminaison pour appliquer une isolation réseau complète, empêchant l’appareil de se connecter à n’importe quelle application ou service. [En savoir plus sur l’isolation Microsoft Defender pour point de terminaison machine](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Collecter le package d’investigation** : collecte les informations sur l’appareil dans un fichier ZIP. [En savoir plus sur le package d’investigation Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Exécuter l’analyse antivirus** : effectue une analyse complète de l’antivirus Microsoft Defender sur l’appareil
+- **Exécuter l’analyse antivirus** : effectue une analyse antivirus complète Microsoft Defender sur l’appareil
 - **Lancer une enquête** : lance une [enquête automatisée](m365d-autoir.md) sur l’appareil
 - **Restreindre l’exécution de l’application** : définit des restrictions sur l’appareil pour autoriser uniquement l’exécution des fichiers signés avec un certificat émis par Microsoft. [En savoir plus sur les restrictions d’application avec Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 

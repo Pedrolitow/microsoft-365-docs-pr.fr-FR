@@ -14,15 +14,16 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_FLW
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 81ebf6305ca4e60a33eb262fc277efe298d19c43
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 59c1e275925a398f30db933f479617bfe5122e6c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331838"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082216"
 ---
 # <a name="changing-from-a-microsoft-365-e-plan-to-a-microsoft-365-f-plan"></a>Passage d’une offre Microsoft 365 E à une offre Microsoft 365 F
 

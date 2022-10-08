@@ -6,11 +6,13 @@ manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,13 +21,13 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: Dans cet article, découvrez comment utiliser PowerShell pour Microsoft 365 afin de gérer SharePoint utilisateurs, groupes et sites en ligne.
-ms.openlocfilehash: 78c829e476c63e435d9543b3a4175cdbbccb76e8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dans cet article, découvrez comment utiliser PowerShell pour Microsoft 365 afin de gérer les utilisateurs, les groupes et les sites SharePoint Online.
+ms.openlocfilehash: da85322f2e849c83701457071ab61c1b8a958c9a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100674"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193320"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec PowerShell
 
@@ -33,11 +35,11 @@ ms.locfileid: "65100674"
 
 Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes d’utilisateurs ou de groupes et souhaite un moyen plus simple de les gérer, vous pouvez utiliser PowerShell pour Microsoft 365.
 
-Avant de commencer, les procédures décrites dans cet article vous obligent à vous connecter à SharePoint Online. Pour obtenir des instructions, consultez [Connecter pour SharePoint PowerShell en ligne](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Avant de commencer, les procédures décrites dans cet article vous obligent à vous connecter à SharePoint Online. Pour obtenir des instructions, consultez [Se connecter à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Obtenir une liste de sites, de groupes et d’utilisateurs
 
-Avant de commencer à gérer les utilisateurs et les groupes, vous devez obtenir les listes de vos sites, groupes et utilisateurs. Vous pouvez ensuite utiliser ces informations pour travailler à partir de l’exemple figurant dans cet article.
+Before we start to manage users and groups, you need to get lists of your sites, groups, and users. You can then use this information to work through the example in this article.
 
 Vous pouvez obtenir la liste des sites de votre client avec la commande suivante :
 
@@ -79,7 +81,7 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-Vous pouvez copier et coller ces commandes dans Bloc-notes, modifier les valeurs de variables pour $tenant, $site et $user en valeurs réelles de votre environnement, puis les coller dans votre fenêtre SharePoint Online Management Shell pour les exécuter.
+Vous pouvez copier et coller ces commandes dans le Bloc-notes, modifier les valeurs des variables pour $tenant, $site et $user en valeurs réelles de votre environnement, puis les coller dans votre fenêtre SharePoint Online Management Shell pour les exécuter.
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>Ajouter un utilisateur à d’autres groupes de collections de sites
 
@@ -132,7 +134,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 Parfois, vous devez supprimer un utilisateur d’un site ou même de tous les sites. Peut-être que l’employé passe d’une division à une autre ou quitte l’entreprise. Vous pouvez le faire facilement pour un employé dans l’interface utilisateur, mais cela n’est pas facile quand vous devez déplacer une division complète d’un site à un autre.
 
-Toutefois, en utilisant les fichiers SharePoint Online Management Shell et CSV, cela est rapide et facile. Dans cette tâche, vous allez utiliser Windows PowerShell pour supprimer un utilisateur d’un groupe de sécurité de collection de sites. Vous utiliserez ensuite un fichier CSV et supprimerez de nombreux utilisateurs de différents sites.
+Toutefois, à l’aide des fichiers SharePoint Online Management Shell et CSV, cela est rapide et facile. Dans cette tâche, vous allez utiliser Windows PowerShell pour supprimer un utilisateur d’un groupe de sécurité de collection de sites. Vous utiliserez ensuite un fichier CSV et supprimerez de nombreux utilisateurs de différents sites.
 
 Nous allons utiliser l’applet de commande « Remove-SPOUser » pour supprimer un seul utilisateur Microsoft 365 d’un groupe de collections de sites afin de voir la syntaxe de commande. Voici à quoi ressemble la syntaxe :
 
@@ -167,7 +169,7 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>Automatiser la gestion des grandes listes d’utilisateurs et de groupes
 
-Pour ajouter un grand nombre de comptes à SharePoint sites et leur accorder des autorisations, vous pouvez utiliser les Centre d'administration Microsoft 365, les commandes PowerShell individuelles ou PowerShell et un fichier CSV. Parmi tous ces choix, le fichier CSV est le moyen le plus rapide d’automatiser cette tâche.
+Pour ajouter un grand nombre de comptes à des sites SharePoint et leur accorder des autorisations, vous pouvez utiliser les Centre d'administration Microsoft 365, les commandes PowerShell individuelles ou PowerShell et un fichier CSV. Parmi tous ces choix, le fichier CSV est le moyen le plus rapide d’automatiser cette tâche.
 
 Le processus de base consiste à créer un fichier CSV qui possède des en-têtes (colonnes) correspondant aux paramètres dont le script Windows PowerShell a besoin. Vous pouvez facilement créer une telle liste dans Excel, puis l’exporter en tant que fichier CSV. Ensuite, vous utilisez un script Windows PowerShell pour parcourir les enregistrements (lignes) dans le fichier CSV, en ajoutant les utilisateurs à des groupes et les groupes à des sites.
 
@@ -270,13 +272,13 @@ Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wra
 
 Nous avons dû modifier uniquement la variable **$site** . La **variable $tenant** conserve sa valeur au cours des trois exécutions de la commande.
 
-Mais que faire si vous souhaitez effectuer cette action pour chaque site ? Vous pouvez le faire sans avoir à entrer tous ces sites web à l’aide de cette commande :
+However, what if you wanted to do this for every site? You can do this without having to type all those websites by using this command:
 
 ```powershell
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapports plus spécifiques ou des rapports qui contiennent des informations plus détaillées. Toutefois, cela devrait vous donner une idée de l’utilisation du SharePoint Online Management Shell pour gérer les utilisateurs dans l’environnement SharePoint Online.
+Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapports plus spécifiques ou des rapports qui contiennent des informations plus détaillées. Mais cela devrait vous donner une idée de l’utilisation de SharePoint Online Management Shell pour gérer les utilisateurs dans l’environnement SharePoint Online.
 
 ## <a name="see-also"></a>Voir aussi
 

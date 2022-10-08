@@ -8,18 +8,19 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.collection:
+- scotvorg
 - Ent_O365
 search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
 description: Recherchez des informations et des ressources à mettre à niveau à partir de SharePoint Server 2013 et SharePoint Foundation 2013. Prise en charge des deux extrémités le 11 avril 2023.
-ms.openlocfilehash: 3e79c47af055765c92c65a6900af533d83c8bc8b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: cd2c9b233685aeeee329b5ebeafcb3ff3a27f4b3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670066"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193276"
 ---
 # <a name="upgrading-from-sharepoint-2013"></a>Mise à niveau à partir de SharePoint 2013
 

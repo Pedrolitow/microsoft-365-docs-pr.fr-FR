@@ -12,15 +12,16 @@ description: En savoir plus sur les licences F1 et F3 pour le Microsoft 365 SKU 
 ms.localizationpriority: high
 ms.collection:
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 52514773fd8c5f5ac61c0ec04d40e8c8fb131cc8
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 3435c0d3ac9b23a288dbb71e7c5496e1fe59f807
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992363"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68079620"
 ---
 # <a name="understand-frontline-worker-user-types-and-licensing"></a>Comprendre les types d’utilisateurs et les licences des employés en ligne
 

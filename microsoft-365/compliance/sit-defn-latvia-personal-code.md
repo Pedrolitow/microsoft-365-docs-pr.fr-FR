@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Letton personal code sensitive information type entity definition.
-ms.openlocfilehash: 16e736220fa402df6ebcb87e947e75090b4a0f57
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: cfcd9dd792494154601a9cafda179be64fb08078
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66992711"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384182"
 ---
 # <a name="latvia-personal-code"></a>Code personnel lettons
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -107,7 +110,7 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - numéro électronique
 - code fiscal
 - numéro d’utilisateur de soins de santé
-- Id #
+- id#
 - id-code
 - numéro d’identification
 - identifikācijas numurs
