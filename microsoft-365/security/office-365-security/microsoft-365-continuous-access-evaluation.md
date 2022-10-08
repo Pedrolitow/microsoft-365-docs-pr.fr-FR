@@ -14,18 +14,18 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - m365solution-identitydevice
 - m365solution-scenario
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 7e47cfc93c3514ed206cd7235dcbb1d31e64b89b
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 3de2fd16014c1347c70ad8500090d85e18a672a6
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710782"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68297725"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Évaluation continue de l’accès pour Microsoft 365
 
@@ -82,11 +82,13 @@ Les services Microsoft 365 suivants prennent actuellement en charge l’évaluat
 |---|---|---|---|
 |**Événements critiques :**||||
 |Révocation d’utilisateurs|Pris en charge|Pris en charge|Pris en charge|
-|Risque de l’utilisateur|Pris en charge|Non pris en charge|Non pris en charge|
+|Risque de l’utilisateur|Pris en charge|Non pris en charge|Pris en charge|
 |**Évaluation de la stratégie d’accès conditionnel :**||||
-|Stratégie d’emplacement d’adresse IP|Pris en charge|Pris en charge\*|Pris en charge|
+|Stratégie d’emplacement d’adresse IP|Pris en charge|Pris en charge\*|Soutenu\**|
 
 \* L’accès au navigateur web SharePoint Office prend en charge l’application instantanée de la stratégie IP en activant le mode strict. Sans mode strict, la durée de vie du jeton d’accès est d’une heure.
+
+\** Les appels, les réunions et les conversations dans Teams ne sont pas conformes aux stratégies d’accès conditionnel basées sur IP.
 
 Pour plus d’informations sur la configuration d’une stratégie d’accès conditionnel, consultez [cet article](/azure/active-directory/conditional-access/overview).
 

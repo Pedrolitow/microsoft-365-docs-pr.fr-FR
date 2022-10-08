@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: acd80978831668890f1767b172cbbfb4d7e91403
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 1a0c4638f54198a1794daeac563c2cabaa683c2a
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797953"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363604"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes Microsoft Defender pour point de terminaison
 
@@ -106,7 +108,7 @@ Créez des règles personnalisées pour contrôler quand les alertes sont suppri
 
 #### <a name="view-the-list-of-suppression-rules"></a>Afficher la liste des règles de suppression
 
-1. Dans le volet de navigation, sélectionnez **Suppression des alertes de paramètres**\>.
+1. Dans le volet de navigation, sélectionnez **Suppression des alertes** de **règles** \> de **paramètres** \> de points de terminaison.\>
 
 2. La liste des règles de suppression affiche toutes les règles que les utilisateurs de votre organisation ont créées.
 

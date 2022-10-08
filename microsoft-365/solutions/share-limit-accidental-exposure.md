@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment limiter l’exposition accidentelle des informations lorsque vous partagez des fichiers avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 8d9410f1eaffd926bed810b8193df70f0898301d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6053f0a9e01a485709fb61f0d12fdb33f123e693
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727213"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985430"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation
 
@@ -37,7 +37,7 @@ Si des membres de votre organisation doivent effectuer un partage non authentifi
 
 Nous vous recommandons de laisser les liens *Tout le monde* activés pour le contenu approprié parce qu’il s’agit de la manière la plus simple de partager des documents et de réduire le risque que des utilisateurs recherchent d’autres solutions en dehors du contrôle de votre service informatique. Les liens *Tout le monde* peuvent être transférés à d’autres personnes mais l’accès aux fichiers est disponible uniquement pour les personnes qui dispose du lien.
 
-Si vous souhaitez que les personnes extérieures à votre organisation s'authentifient toujours lorsqu'elles accèdent au contenu dans Microsoft Office SharePoint Online, les groupes ou les équipes, vous pouvez désactiver le partage avec *tout le monde*. Cela empêchera les utilisateurs de partager du contenu non authentifié.
+If you always want people outside your organization to authenticate when accessing content in SharePoint, Groups, or Teams, you can turn off *Anyone* sharing. This will prevent users from unauthenticated sharing of content.
 
 Si vous désactivez les liens *Tout le monde*, les utilisateurs peuvent tout de même partager facilement du contenu avec des invités à l’aide de liens *Personnes spécifiques*. Dans ce cas, toutes les personnes extérieures à votre organisation devront s’authentifier avant de pouvoir accéder au contenu partagé.
 
@@ -99,7 +99,7 @@ Limiter le partage externe aux membres d’un groupe de sécurité
 
     ![Capture d’écran du volet Gérer les groupes de sécurité.](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
-4. Dans la boîte **Ajouter un groupe de sécurité**, entrez un nom pour un groupe de sécurité. La boîte du groupe de sécurité s’affiche.
+4. In the **Add a security group** box, enter a name for a security group. The security group box appears.
 
 5. En regard du nom du groupe de sécurité, dans le menu déroulant **Peut partager avec**, sélectionnez l’une des options suivantes :
 

@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Portugal physical addresses sensitive information type entity definition.
-ms.openlocfilehash: 814137be25a027cb142e5991d1e5e4a7f4ca5353
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e9a0ab68f64e296690e2e4221e534611a471746b
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950530"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472692"
 ---
-# <a name="portugal-physical-addresses"></a>Adresses physiques du Portugal
+# <a name="portugal-physical-addresses"></a>Adresses physiques portugaises
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Portugal. Il est également inclus dans l’entité SIT toutes [les adresses physiques](sit-defn-all-physical-addresses.md) regroupées.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique du Portugal. Elle est également incluse dans l’entité nommée [Toutes les adresses physiques](sit-defn-all-physical-addresses.md) (SIT).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Niveau de confiance
 

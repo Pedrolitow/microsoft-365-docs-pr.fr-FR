@@ -15,18 +15,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: 0b282686554edb1668cf25318d349a1ed9704a21
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d94bd5353aecbf93ca59651878af7b6261e00d1d
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812323"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68332159"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World pour Microsoft 365 Defender API REST
 
@@ -140,7 +142,7 @@ $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 # This URL contains the type of query and the time filter we created above.
 # Note that `$filter` does not refer to a local variable in our script --
 # it's actually an OData operator and part of the API's syntax.
-$url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
+$url = "https://api.security.microsoft.com/api/incidents`?`$filter=lastUpdateTime+ge+$dateTime"
 
 # Set the webrequest headers
 $headers = @{

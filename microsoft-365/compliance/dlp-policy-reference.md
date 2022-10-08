@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/02/2022
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,23 +14,27 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - SPO_Content
 recommendations: false
-description: Informations de référence sur le composant de stratégie DLP et la configuration
+description: Composant de stratégie DLP et référence de configuration. Cet article fournit une anatomie détaillée d’une stratégie DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 6368a534f40606d906efa2b8a9f6ca920fcd6ce1
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d566d924240878e967a308b5940989c949ce76b4
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812115"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492569"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
 les stratégies Protection contre la perte de données Microsoft Purview (DLP) ont de nombreux composants à configurer. Pour créer une stratégie efficace, vous devez comprendre quel est l’objectif de chaque composant et comment sa configuration modifie le comportement de la stratégie. Cet article fournit une anatomie détaillée d’une stratégie DLP.
 
-## <a name="policy-templates"></a>Modèles de stratégie 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="policy-templates"></a>Modèles de stratégie
 
 Les modèles de stratégie DLP sont pré triés en quatre catégories :
 
@@ -39,7 +43,7 @@ Les modèles de stratégie DLP sont pré triés en quatre catégories :
 - Qui peuvent détecter et protéger les types d’informations de **confidentialité** .
 - Modèle **personnalisé** que vous pouvez utiliser pour créer votre propre stratégie si l’un des autres ne répond pas aux besoins de votre organisation.
 
-Ce tableau répertorie tous les modèles de stratégie et les types d’informations sensibles (SIT) qu’ils couvrent. 
+Ce tableau répertorie tous les modèles de stratégie et les types d’informations sensibles (SIT) qu’ils couvrent.
 
 mise à jour : 23/06/2021
 
@@ -77,8 +81,8 @@ mise à jour : 23/06/2021
 |Confidentialité| France Personally Identifiable Information (PII) Data|- [Numéro de sécurité sociale en France (INSEE)](sit-defn-france-social-security-number.md) </br> - [Numéro de permis de conduire en France](sit-defn-france-drivers-license-number.md) </br> - [Numéro de passeport en France](sit-defn-france-passport-number.md) </br> - [Carte d’identité nationale de France (CNI)](sit-defn-france-national-id-card.md)|
 |Confidentialité| Règlement général sur la protection des données (RGPD) amélioré|- [Adresses physiques en Autriche](sit-defn-austria-physical-addresses.md) </br> - [Adresses physiques belges](sit-defn-belgium-physical-addresses.md) </br> - [Adresses physiques bulgares](sit-defn-bulgaria-physical-addresses.md) </br> - [Adresses physiques croates](sit-defn-croatia-physical-addresses.md) </br> - [Adresses physiques de Chypre](sit-defn-cyprus-physical-addresses.md) </br> - [Adresses physiques de la République tchèque](sit-defn-czech-republic-physical-addresses.md)</br> - [Adresses physiques du Danemark](sit-defn-denmark-physical-addresses.md)</br> - [Adresses physiques estoniennes](sit-defn-estonia-physical-addresses.md)</br> - [Adresses physiques en Finlande](sit-defn-finland-physical-addresses.md)</br> - [Adresses physiques de la France](sit-defn-france-physical-addresses.md)</br> - [Adresses physiques allemandes](sit-defn-germany-physical-addresses.md)</br> - [Adresses physiques de la Grèce](sit-defn-greece-physical-addresses.md)</br> - [Adresses physiques en Hongrie](sit-defn-hungary-physical-addresses.md)</br> - [Adresses physiques de l’Irlande](sit-defn-ireland-physical-addresses.md)</br> - [Adresses physiques en Italie](sit-defn-italy-physical-addresses.md)</br> - [Adresses physiques lettones](sit-defn-latvia-physical-addresses.md)</br> - [Adresses physiques lituaniennes](sit-defn-lithuania-physical-addresses.md)</br> - [Adresses physiques luxembourgeoises](sit-defn-luxemburg-physical-addresses.md)</br> - [Adresses physiques de Malte](sit-defn-malta-physical-addresses.md)</br> - [Adresses physiques des Pays-Bas](sit-defn-netherlands-physical-addresses.md)</br> - [Adresses physiques en Pologne](sit-defn-poland-physical-addresses.md)</br> - [Adresses physiques portugaises](sit-defn-portugal-physical-addresses.md)</br> - [Adresses physiques en Roumanie](sit-defn-romania-physical-addresses.md)</br> - [Adresses physiques en Slovaquie](sit-defn-slovakia-physical-addresses.md)</br> - [Adresses physiques slovènes](sit-defn-slovenia-physical-addresses.md)</br> - [Adresses physiques en Espagne](sit-defn-spain-physical-addresses.md)</br> - [Adresses physiques en Suède](sit-defn-sweden-physical-addresses.md)</br> - [Numéro de sécurité sociale en Autriche](sit-defn-austria-social-security-number.md) </br> - [Numéro de sécurité sociale en France (INSEE)](sit-defn-france-social-security-number.md)</br> - [Numéro de sécurité sociale en Grèce (AMKA)](sit-defn-greece-social-security-number.md)</br> - [Numéro de sécurité sociale hongrois (TAJ)](sit-defn-hungary-social-security-number.md)</br> - [Numéro de sécurité sociale en Espagne (SSN)](sit-defn-spain-social-security-number.md)</br> - [Carte d’identité d’Autriche](sit-defn-austria-identity-card.md) </br> - [Carte d’identité de Chypre](sit-defn-cyprus-identity-card.md) </br> - [Numéro de carte d’identité d’Allemagne](sit-defn-germany-identity-card-number.md)</br> - [Numéro de carte d’identité de Malte](sit-defn-malta-identity-card-number.md)</br> - [Carte d’identité nationale de France (CNI)](sit-defn-france-national-id-card.md)</br> - [Carte nationale d’ID de Grèce](sit-defn-greece-national-id-card.md)</br> - [ID national de la Finlande](sit-defn-finland-national-id.md)</br> - [Poland National ID (PESEL)](sit-defn-poland-national-id.md)</br> - [ID national de la Suède](sit-defn-sweden-national-id.md)</br> - [Numéro d’identification personnelle croate (OIB)](sit-defn-croatia-personal-identification-number.md) </br> - [Numéro d’identité personnelle tchèque](sit-defn-czech-personal-identity-number.md)</br> - [Numéro d’identification personnelle du Danemark](sit-defn-denmark-personal-identification-number.md)</br> - [Code d’identification personnelle de l’Estonie](sit-defn-estonia-personal-identification-code.md)</br> - [Numéro d’identification personnelle en Hongrie](sit-defn-hungary-personal-identification-number.md)</br> - [Luxemburg National Identification Number natural persons](sit-defn-luxemburg-national-identification-number-natural-persons.md)</br> - [Numéro d’identification national du Luxembourg (personnes non naturelles)](sit-defn-luxemburg-national-identification-number-non-natural-persons.md)</br> - [Code fiscal de l’Italie](sit-defn-italy-fiscal-code.md)</br> - [Code personnel letton](sit-defn-latvia-personal-code.md)</br> - [Code personnel lituanien](sit-defn-lithuania-personal-code.md)</br> - [Code numérique personnel roumain (CNP)](sit-defn-romania-personal-numeric-code.md)</br> - [Numéro du BSN (Netherlands Citizen’s Service)](sit-defn-netherlands-citizens-service-number.md)</br> - [Numéro de service public personnel (PPS) en Irlande](sit-defn-ireland-personal-public-service-number.md)</br> - [Numéro civil uniforme en Bulgarie](sit-defn-bulgaria-uniform-civil-number.md) </br> - [Numéro national de belgique](sit-defn-belgium-national-number.md) </br> - [Espagne DNI](sit-defn-spain-dni.md)</br> - [Slovénie Unique Master Citizen Number](sit-defn-slovenia-unique-master-citizen-number.md)</br> - [Numéro personnel en Slovaquie](sit-defn-slovakia-personal-number.md)</br> - [Numéro de carte de citoyen du Portugal](sit-defn-portugal-citizen-card-number.md)</br> - [Numéro d’ID fiscal de Malte](sit-defn-malta-tax-identification-number.md)</br> - [Numéro d’identification fiscale en Autriche](sit-defn-austria-tax-identification-number.md) </br> - [Numéro d’identification fiscale de Chypre](sit-defn-cyprus-tax-identification-number.md) </br> -[Numéro d’identification fiscale en France (numéro SPI.)](sit-defn-france-tax-identification-number.md)</br> - [Numéro d’identification fiscale en Allemagne](sit-defn-germany-tax-identification-number.md)</br> - [Numéro d’identification fiscale grecque](sit-defn-greece-tax-identification-number.md)</br> - [Numéro d’identification fiscale en Hongrie](sit-defn-hungary-tax-identification-number.md)</br> - [Numéro d’identification fiscale aux Pays-Bas](sit-defn-netherlands-tax-identification-number.md)</br> - [Numéro d’identification fiscale en Pologne](sit-defn-poland-tax-identification-number.md)</br> - [Numéro d’identification fiscale du Portugal](sit-defn-portugal-tax-identification-number.md)</br> - [Numéro d’identification fiscale en Slovénie](sit-defn-slovenia-tax-identification-number.md)</br> - [Numéro d’identification fiscale en Espagne](sit-defn-spain-tax-identification-number.md)</br> - [Numéro d’identification fiscale en Suède](sit-defn-sweden-tax-identification-number.md)</br> - [Permis de conduire en Autriche](sit-defn-austria-drivers-license-number.md) </br> - [Numéro de permis de conduire en Belgique](sit-defn-belgium-drivers-license-number.md) </br> - [Numéro de permis de conduire en Bulgarie](sit-defn-bulgaria-drivers-license-number.md) </br> - [Numéro de permis de conduire en Croatie](sit-defn-croatia-drivers-license-number.md) </br> - [Numéro de permis de conduire de Chypre](sit-defn-cyprus-drivers-license-number.md) </br> - [Numéro de permis de conduire tchèque](sit-defn-czech-drivers-license-number.md) </br> - [Numéro de permis de conduire au Danemark](sit-defn-denmark-drivers-license-number.md)</br> - [Numéro de permis de conduire estonien](sit-defn-estonia-drivers-license-number.md)</br> - [Numéro de permis de conduire en Finlande](sit-defn-finland-drivers-license-number.md)</br> - [Numéro de permis de conduire en France](sit-defn-france-drivers-license-number.md)</br> - [Numéro de permis de conduire allemand](sit-defn-germany-drivers-license-number.md)</br> - [Numéro de permis de conduire en Grèce](sit-defn-greece-drivers-license-number.md) </br> - [Numéro de permis de conduire en Hongrie](sit-defn-hungary-drivers-license-number.md)</br> - [Numéro de permis de conduire en Irlande](sit-defn-ireland-drivers-license-number.md)</br> - [Numéro de permis de conduire en Italie](sit-defn-italy-drivers-license-number.md)</br> - [Numéro de permis de conduire letton](sit-defn-latvia-drivers-license-number.md)</br> - [Numéro de permis de conduire en Lituanie](sit-defn-lithuania-drivers-license-number.md)</br> - [Numéro de permis de conduire du Luxemburg](sit-defn-luxemburg-drivers-license-number.md)</br> - [Numéro de permis de conduire de Malte](sit-defn-malta-drivers-license-number.md)</br> - [Numéro de permis de conduire aux Pays-Bas](sit-defn-netherlands-drivers-license-number.md)</br> - [Numéro de permis de conduire en Pologne](sit-defn-poland-drivers-license-number.md)</br> - [Numéro de permis de conduire au Portugal](sit-defn-portugal-drivers-license-number.md)</br> - [Numéro de permis de conduire en Roumanie](sit-defn-romania-drivers-license-number.md)</br> - [Numéro de permis de conduire en Slovaquie](sit-defn-slovakia-drivers-license-number.md)</br> - [Numéro de permis de conduire en Slovénie](sit-defn-slovenia-drivers-license-number.md)</br> - [Numéro de permis de conduire en Espagne](sit-defn-spain-drivers-license-number.md)</br> - [Numéro de permis de conduire en Suède](sit-defn-sweden-drivers-license-number.md)</br> - [Numéro de passeport en Autriche](sit-defn-austria-passport-number.md) </br> - [Numéro de passeport en Belgique](sit-defn-belgium-passport-number.md) </br> - [Numéro de passeport en Bulgarie](sit-defn-bulgaria-passport-number.md) </br> - [Numéro de passeport en Croatie](sit-defn-croatia-passport-number.md) </br> - [Numéro de passeport de Chypre](sit-defn-cyprus-passport-number.md) </br> - [Numéro de passeport de la République tchèque](sit-defn-czech-passport-number.md) </br> - [Numéro de passeport du Danemark](sit-defn-denmark-passport-number.md)</br> - [Numéro de passeport estonien](sit-defn-estonia-passport-number.md)</br> - [Numéro de passeport en Finlande](sit-defn-finland-passport-number.md)</br> - [Numéro de passeport en France](sit-defn-france-passport-number.md)</br> - [Numéro de passeport allemand](sit-defn-germany-passport-number.md)</br> - [Numéro de passeport en Grèce](sit-defn-greece-passport-number.md)</br> - [Numéro de passeport en Hongrie](sit-defn-hungary-passport-number.md)</br> - [Numéro de passeport en Irlande](sit-defn-ireland-passport-number.md)</br> - [Numéro de passeport en Italie](sit-defn-italy-passport-number.md)</br> - [Numéro de passeport letton](sit-defn-latvia-passport-number.md)</br> - [Numéro de passeport en Lituanie](sit-defn-lithuania-passport-number.md)</br> - [Numéro de passeport de Luxemburg](sit-defn-luxemburg-passport-number.md)</br> - [Numéro de passeport maltais](sit-defn-malta-passport-number.md)</br> - [Numéro de passeport des Pays-Bas](sit-defn-netherlands-passport-number.md)</br> - [Passeport pologne](sit-defn-poland-passport-number.md)</br> - [Numéro de passeport du Portugal](sit-defn-portugal-passport-number.md)</br> - [Numéro de passeport en Roumanie](sit-defn-romania-passport-number.md)</br> - [Numéro de passeport en Slovaquie](sit-defn-slovakia-passport-number.md)</br> - [Numéro de passeport en Slovénie](sit-defn-slovenia-passport-number.md)</br> - [Numéro de passeport en Espagne](sit-defn-spain-passport-number.md)</br> - [Numéro de passeport en Suède](sit-defn-sweden-passport-number.md)</br> - [Numéro de carte de débit de l’UE](sit-defn-eu-debit-card-number.md)</br> - [Tous les noms complets](sit-defn-all-full-names.md)|
 |Confidentialité| Règlement général sur la protection des données (RGPD)|- [Numéro de carte de débit de l’UE](sit-defn-eu-debit-card-number.md) </br> - [Numéro de permis de conduire de l’UE](sit-defn-eu-drivers-license-number.md) </br> - [Numéro d’identification nationale de l’UE](sit-defn-eu-national-identification-number.md)</br> - [Numéro de passeport de l’UE](sit-defn-eu-passport-number.md) </br> - [Numéro de sécurité sociale de l’UE ou identification équivalente](sit-defn-eu-social-security-number-equivalent-identification.md)</br> - [Numéro d’identification fiscale de l’UE](sit-defn-eu-tax-identification-number.md)|
-|Confidentialité| Germany Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire en Allemagne](sit-defn-germany-drivers-license-number.md) </br> - [Numéro de passeport en Allemagne](sit-defn-germany-passport-number.md)| 
-|Confidentialité| Israel Personally Identifiable Information (PII) Data|- [Numéro d’identification nationale d’Israël](sit-defn-israel-national-identification-number.md)| 
+|Confidentialité| Germany Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire en Allemagne](sit-defn-germany-drivers-license-number.md) </br> - [Numéro de passeport en Allemagne](sit-defn-germany-passport-number.md)|
+|Confidentialité| Israel Personally Identifiable Information (PII) Data|- [Numéro d’identification nationale d’Israël](sit-defn-israel-national-identification-number.md)|
 |Confidentialité| Israel Protection of Privacy|- [Numéro d’identification nationale d’Israël](sit-defn-israel-national-identification-number.md)</br> - [Numéro de compte bancaire en Israël](sit-defn-israel-bank-account-number.md)|
 |Confidentialité| Amélioration des données d’informations d’identification personnelle (PII) au Japon|- [Numéro d’assurance sociale du Japon (SIN)](sit-defn-japan-social-insurance-number.md)</br> - [Japon Mon numéro - Personnel](sit-defn-japan-my-number-personal.md)</br> - [Numéro de passeport au Japon](sit-defn-japan-passport-number.md)</br> - [Numéro de permis de conduire au Japon](sit-defn-japan-drivers-license-number.md)</br> - [Tous les noms complets](sit-defn-all-full-names.md)</br> - [Adresses physiques du Japon](sit-defn-all-physical-addresses.md)|
 |Confidentialité| Japan Personally Identifiable Information (PII) Data|- [Numéro d’inscription des résidents du Japon](sit-defn-japan-resident-registration-number.md) </br> - [Numéro d’assurance sociale du Japon (SIN)](sit-defn-japan-social-insurance-number.md)|
@@ -120,7 +124,7 @@ Si vous choisissez d’inclure ou d’exclure des comptes ou groupes OneDrive sp
 
 ### <a name="location-support-for-how-content-can-be-defined"></a>Prise en charge de l’emplacement pour la façon dont le contenu peut être défini
 
-Les stratégies DLP détectent les éléments sensibles en les mettant en correspondance avec un type d’informations sensibles (SIT), une étiquette de confidentialité ou une étiquette de rétention. Chaque emplacement prend en charge différentes méthodes de définition de contenu sensible. Lorsque vous combinez des emplacements dans une stratégie, la façon dont le contenu peut être défini peut changer par la façon dont il peut être défini par un emplacement unique. 
+Les stratégies DLP détectent les éléments sensibles en les mettant en correspondance avec un type d’informations sensibles (SIT), une étiquette de confidentialité ou une étiquette de rétention. Chaque emplacement prend en charge différentes méthodes de définition de contenu sensible. Lorsque vous combinez des emplacements dans une stratégie, la façon dont le contenu peut être défini peut changer par la façon dont il peut être défini par un emplacement unique.
 
 > [!IMPORTANT]
 > Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez des sites SharePoint uniquement, la stratégie prend en charge la détection d’éléments sensibles par un ou plusieurs sit, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez des sites SharePoint ***et*** des emplacements de messages de conversation et de canal Teams, la stratégie prend uniquement en charge la détection des éléments sensibles par SIT.
@@ -169,11 +173,11 @@ Les règles sont la logique métier des stratégies DLP. Elles se composent des 
 #### <a name="hosted-service-workloads"></a>Charges de travail de service hébergées
 
 Pour les charges de travail de service hébergées, telles que Exchange Online, SharePoint Online et OneDrive Entreprise, chaque règle reçoit une priorité dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite.
-  
+
 ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
 
 Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles, la première règle évaluée avec l’action la *plus* restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la *règle 3* est appliquée, car il s’agit de la règle la plus prioritaire et la plus restrictive :
-  
+
 - Règle 1 : informe seulement les utilisateurs
 - Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur
 - *Règle 3 : informe les utilisateurs, restreint l’accès et n’autorise pas les remplacements d’utilisateurs*
@@ -182,14 +186,14 @@ Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’o
 Les règles 1, 2 et 4 seraient évaluées, mais pas appliquées. Dans cet exemple, les correspondances pour toutes les règles sont enregistrées dans les journaux d’audit et affichées dans les rapports DLP, même si seule la règle la plus restrictive est appliquée.
 
 Vous pouvez utiliser une règle pour répondre à une exigence de protection particulière, puis utiliser une stratégie DLP pour regrouper des spécifications requises communes en matière de protection, par exemple l’ensemble des règles requises pour se conformer à une réglementation spécifique.
-  
+
 Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la présence d’informations visées par la loi américaine sur l’assurance maladie (Health Insurance Portability Accountability Act, ou HIPAA). Cette stratégie DLP peut contribuer à protéger les données HIPAA (quoi) sur tous les sites SharePoint Online et tous les sites OneDrive Entreprise (où) en recherchant les documents contenant ces informations sensibles partagées avec des personnes extérieures à votre organisation (conditions), et en bloquant l’accès au document et en envoyant une notification (actions). Ces conditions sont stockées en tant que règles individuelles et regroupées sous la forme d’une stratégie DLP pour simplifier la gestion et la création de rapports.
-  
+
 ![Diagramme montrant que la stratégie DLP contient les règles et les emplacements](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
 #### <a name="for-endpoints"></a>Pour les points de terminaison
 
-La priorité des règles sur les points de terminaison est également affectée en fonction de l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
+La priorité des règles sur les points de terminaison est également affectée en fonction de l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite.
 
 Lorsqu’un fichier sur un point de terminaison correspond à plusieurs stratégies DLP, la première règle activée avec l’application la plus restrictive [sur les activités de point](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) de terminaison est celle qui est appliquée sur le contenu. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 2 est prioritaire sur les autres règles, car elle est la plus restrictive.
 
@@ -211,7 +215,7 @@ Toutes les autres règles sont évaluées, mais leurs actions ne sont pas appliq
 Les conditions sont inclusives et vous définissez ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à la règle &#8212; lorsque vous trouvez un élément qui ressemble à *ceci* et qui est utilisé comme *cela* &#8212; il s’agit d’une correspondance et les autres actions de la stratégie doivent être effectuées sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
 
 > [!NOTE]
-> Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation. 
+> Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation.
 
 #### <a name="content-contains"></a>Le contenu contient
 
@@ -220,7 +224,7 @@ Les conditions sont inclusives et vous définissez ce que vous souhaitez que la 
 - [types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [étiquettes de confidentialité](sensitivity-labels.md)
 - [étiquettes de rétention](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
-- [Classifieurs pouvant être formés](classifier-learn-about.md) (en préversion) 
+- [Classifieurs pouvant être formés](classifier-learn-about.md) (en préversion)
 
 selon [l’emplacement auquel](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer la stratégie.
 
@@ -278,7 +282,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 - L’importance du message est
 
 ##### <a name="conditions-sharepoint-supports"></a>Conditions prises en charge par SharePoint
- 
+
 - Le contenu contient
 - Le contenu est partagé à partir de Microsoft 365
 - Document créé par
@@ -305,17 +309,17 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 
 - Le contenu contient
 - Le contenu est partagé à partir de Microsoft 365
-- L’expéditeur est 
-- Le domaine de l’expéditeur est 
-- Le domaine du destinataire est 
-- Le destinataire est 
+- L’expéditeur est
+- Le domaine de l’expéditeur est
+- Le domaine du destinataire est
+- Le destinataire est
 
 ##### <a name="conditions-devices-supports"></a>Conditions prises en charge par les appareils
 
 - Le contenu contient
-- (préversion) Le document ou la pièce jointe est protégé par mot de passe (.pdf, les fichiers Office et les fichiers chiffrés PGP Symantec sont entièrement pris en charge). Ce prédicat ne détecte pas les fichiers chiffrés DRM (Digital Rights Managed) ni les fichiers protégés par des autorisations. 
+- (préversion) Le document ou la pièce jointe est protégé par mot de passe (.pdf, les fichiers Office et les fichiers chiffrés PGP Symantec sont entièrement pris en charge). Ce prédicat ne détecte pas les fichiers chiffrés DRM (Digital Rights Managed) ni les fichiers protégés par des autorisations.
 - (préversion) Le contenu n’est pas étiqueté (.pdf, les fichiers Office sont entièrement pris en charge). Ce prédicat détecte le contenu qui n’a pas d’étiquette de confidentialité appliquée. Pour vous assurer que seuls les types de fichiers pris en charge sont détectés, vous devez utiliser cette condition avec **l’extension de fichier ou** le **type de fichier est** des conditions.
-- (préversion) L’utilisateur a accédé à un site web sensible à partir de Edge. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains)  
+- (préversion) L’utilisateur a accédé à un site web sensible à partir de Edge. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) 
 - L’extension de fichier est
 - Le type de fichier est
 - Consultez les activités de point de terminaison sur [laquelle vous pouvez surveiller et prendre des mesures](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -340,15 +344,15 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 Parfois, vous avez besoin d’une règle pour identifier une seule chose, comme tout le contenu qui contient un numéro de sécurité sociale des États-Unis, qui est défini par un sit unique. Toutefois, dans de nombreux scénarios, où les types d’éléments que vous essayez d’identifier sont plus complexes et, par conséquent, plus difficiles à définir, il est nécessaire de disposer d’une plus grande flexibilité dans la définition des conditions.
 
 Par exemple, pour identifier le contenu soumis à la réglementation des États-Unis sur le Health Insurance Act (HIPAA), vous devez rechercher :
-  
+
 - Le contenu qui contient certains types d’informations sensibles, par exemple un numéro de sécurité sociale ou le numéro émis par l’agence du médicament (DEA).
-    
+
     AND
-    
+
 - Le contenu plus difficile à identifier, comme les communications relatives aux soins du patient ou la description des services médicaux fournis. L’identification de ce contenu nécessite des mots clés correspondants à partir de listes de mots clés volumineux, telles que la Classification internationale des maladies (ICD-9-CM ou ICD-10-CM).
-    
+
 Vous pouvez identifier ce type de données en regroupant des conditions et en utilisant des opérateurs logiques (AND, OR) entre les groupes.
-    
+
 Pour la **Loi américaine sur l’assurance maladie (HIPPA),** les conditions sont regroupées comme suit :
 
 ![Conditions de stratégie HIPPA](../media/dlp-rules-condition-groups-booleans.png)
@@ -357,7 +361,7 @@ Le premier groupe contient les SIT qui identifient et individuels, et le deuxiè
 
 ### <a name="exceptions"></a>Exceptions
 
-Dans les règles, les exceptions définissent des conditions utilisées pour exclure un élément de la stratégie. Logiquement, conditions exclusives qui sont évaluées après les conditions inclusives et le contexte. Ils indiquent à la règle &#8212; lorsque vous trouvez un élément qui ressemble à *ceci* et qui est utilisé comme *suit* : il s’agit d’une correspondance et les autres actions de la stratégie doivent être effectuées ***dessus, sauf si***... &#8212; 
+Dans les règles, les exceptions définissent des conditions utilisées pour exclure un élément de la stratégie. Logiquement, conditions exclusives qui sont évaluées après les conditions inclusives et le contexte. Ils indiquent à la règle &#8212; lorsque vous trouvez un élément qui ressemble à *ceci* et qui est utilisé comme *suit* : il s’agit d’une correspondance et les autres actions de la stratégie doivent être effectuées ***dessus, sauf si***... &#8212;
 
 Par exemple, en respectant la stratégie HIPPA, nous pourrions modifier la règle pour exclure tout élément qui contient un numéro de permis de conduire belge, comme suit :
 
@@ -371,15 +375,15 @@ Tout comme tous les emplacements prennent en charge la condition inclusive :
 
 l’exception serait la suivante :
 
-- **Sauf si** le contenu contient 
+- **Sauf si** le contenu contient
 
-### <a name="actions"></a>Actions 
+### <a name="actions"></a>Actions
 
 Tout élément qui le fait via les filtres inclus ***conditions** _ et _*_exceptions exclusives_*_ aura toutes les _*_actions_*_ définies dans la règle qui lui est appliquée. Vous devrez configurer les options requises pour prendre en charge l’action. Par exemple, si vous sélectionnez Exchange avec l’action _ *Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365**, vous devez choisir parmi les options suivantes :
 
 - Empêcher les utilisateurs d’accéder au contenu SharePoint, OneDrive et Teams partagé
-    - Bloquez tout le monde. Seuls le propriétaire du contenu, le dernier modificateur et l’administrateur de site continueront d’avoir accès
-    - Bloquez uniquement les personnes extérieures à votre organisation. Les utilisateurs au sein de votre organisation continueront d’avoir accès.
+  - Bloquez tout le monde. Seuls le propriétaire du contenu, le dernier modificateur et l’administrateur de site continueront d’avoir accès
+  - Bloquez uniquement les personnes extérieures à votre organisation. Les utilisateurs au sein de votre organisation continueront d’avoir accès.
 - Chiffrer les courriers (applicable uniquement au contenu dans Exchange)
 
 Les actions disponibles dans une règle dépendent des emplacements sélectionnés. Si vous sélectionnez un seul emplacement pour la stratégie à appliquer, les actions disponibles sont répertoriées ci-dessous.
@@ -441,14 +445,13 @@ Lorsque vous configurez les **domaines de service cloud Allow/Block** et la list
 Avec l’option **Activités de fichier pour toutes les applications** , vous sélectionnez **Ne pas restreindre les activités de fichier** ou **Appliquer des restrictions à des activités spécifiques**. Lorsque vous sélectionnez d’appliquer des restrictions à des activités spécifiques, les actions que vous sélectionnez ici sont appliquées lorsqu’un utilisateur a accédé à un élément protégé DLP. Vous pouvez indiquer à DLP , `Audit only``Block with override``Block` (les actions) sur ces activités utilisateur :
 
 - **Copier dans le Presse-papiers**
-- **Copier sur un lecteur amovible USB** 
+- **Copier sur un lecteur amovible USB**
 - **Copier vers un partage réseau**
 - **Print**
 - **Copier ou déplacer à l’aide d’une application Bluetooth non autorisée**
 - **Services de bureau à distance**
 
-
-##### <a name="restricted-app-activities"></a>Activités d'application restreintes  
+##### <a name="restricted-app-activities"></a>Activités d'application restreintes
 
 Précédemment appelé applications non autorisées, vous définissez une liste d’applications dans les paramètres DLP du point de terminaison sur lesquels vous souhaitez appliquer des restrictions. Lorsqu’un utilisateur tente d’accéder à un fichier protégé DLP à l’aide d’une application figurant dans la liste, vous pouvez `Audit only`soit , `Block with override`soit `Block` l’activité. Les actions DLP **définies dans les activités d’application restreintes sont remplacées** si l’application est membre d’un groupe d’applications restreint. Ensuite, les actions définies dans le groupe d’applications restreintes sont appliquées.
 
@@ -462,7 +465,7 @@ Vous définissez vos groupes d’applications restreints dans les paramètres DL
 
 Quand vous sélectionnez l’une des options *Appliquer les restrictions* et qu’un utilisateur tente d’accéder à un fichier protégé par DLP à l’aide d’une application qui se trouve dans le groupe d’applications restreintes, vous pouvez `Audit only`, `Block with override`ou `Block` par activité. Les actions DLP que vous définissez ici remplacent les actions **définies dans les activités d’application restreintes** et **les activités de fichier pour toutes les applications** de l’application.
 
-Pour plus d’informations, consultez [applications restreintes et groupes d’applications](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) . 
+Pour plus d’informations, consultez [applications restreintes et groupes d’applications](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
 
 #### <a name="microsoft-defender-for-cloud-apps-actions"></a>actions Microsoft Defender for Cloud Apps
 
@@ -496,7 +499,7 @@ Si vous sélectionnez au moins deux emplacements non Exchange pour la stratégie
 
 AND
 
-- toutes les actions pour les emplacements non Exchange 
+- toutes les actions pour les emplacements non Exchange
 
 actions seront disponibles.
 
@@ -511,18 +514,16 @@ Si vous sélectionnez Appareils et Microsoft Defender for Cloud Apps, ces action
 - Auditer ou restreindre les activités sur les appareils Windows
 - Restreindre les applications tierces
 
-L’effet ou non d’une action dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher l’info-bulle de stratégie en sélectionnant la **première option Tester** . Vous choisissez d’exécuter la stratégie dès qu’une heure après sa création en sélectionnant l’option **Activer immédiatement** , ou vous pouvez choisir de l’enregistrer et d’y revenir plus tard en sélectionnant **l’option Conserver** . 
-
+L’effet ou non d’une action dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher l’info-bulle de stratégie en sélectionnant la **première option Tester** . Vous choisissez d’exécuter la stratégie dès qu’une heure après sa création en sélectionnant l’option **Activer immédiatement** , ou vous pouvez choisir de l’enregistrer et d’y revenir plus tard en sélectionnant **l’option Conserver** .
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
 
-
 ### <a name="user-notifications-and-policy-tips"></a>Notifications utilisateur et conseils de stratégie
 
-<!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
+<!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to
 
-- https://learn.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
-- https://learn.microsoft.com/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
+- /microsoft-365/compliance/use-notifications-and-policy-tips
+- /microsoft-365/compliance/dlp-policy-tips-reference
 
 for where they are used/expected behavior-->
 
@@ -535,6 +536,7 @@ Par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive Entrepri
 ![La barre des messages affiche le conseil de stratégie dans Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 > [!IMPORTANT]
+>
 > - Les e-mails de notification sont envoyés sans protection.
 > - Email notifications sont prises en charge uniquement pour les services Microsoft 365.
 
@@ -544,13 +546,13 @@ Par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive Entrepri
 |---------|---------|
 |Appareils     |- Non pris en charge         |
 |Exchange + Appareils     |- Pris en charge pour Exchange </br>- Non pris en charge pour les appareils  |
-|Exchange    |- Pris en charge        |
+|Exchange    |-Soutenu        |
 |SharePoint + Appareils  |- Pris en charge pour SharePoint </br>- Non pris en charge pour les appareils         |
-|SharePoint    |- Pris en charge |
+|SharePoint    |-Soutenu |
 |Exchange + SharePoint    |- Pris en charge pour Exchange </br>- Pris en charge pour SharePoint  |
 |Appareils + SharePoint + Exchange    |- Non pris en charge pour les appareils </br>- Pris en charge pour SharePoint </br> Pris en charge pour Exchange |
 |Teams    |- Non pris en charge |
-|OneDrive Entreprise   |- Pris en charge         |
+|OneDrive Entreprise   |-Soutenu         |
 |OneDrive Entreprise + Appareils     |- Pris en charge pour OneDrive Entreprise </br>- Non pris en charge pour les appareils         |
 |Power-BI|- Non pris en charge|
 |Microsoft Defender for Cloud Apps|- Non pris en charge|
@@ -566,15 +568,11 @@ Les options de configuration des notifications utilisateur et des conseils de st
 - Conversation et canal Teams
 - Defender for Cloud Apps
 
-
-
-
-
 Vous pouvez activer/désactiver les notifications utilisateur pour différentes applications Microsoft. Consultez [les informations de référence sur les conseils de stratégie de protection contre la perte de données](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 
 - Vous pouvez activer/désactiver les notifications avec un conseil de stratégie.
-    - notifications par e-mail à l’utilisateur qui a envoyé, partagé ou modifié pour la dernière fois le contenu OU
-    - avertir des personnes spécifiques
+  - notifications par e-mail à l’utilisateur qui a envoyé, partagé ou modifié pour la dernière fois le contenu OU
+  - avertir des personnes spécifiques
 
 et personnalisez le texte de l’e-mail, l’objet et le texte de l’info-bulle de stratégie.
 
@@ -582,7 +580,7 @@ et personnalisez le texte de l’e-mail, l’objet et le texte de l’info-bulle
 
 Si vous avez sélectionné Appareils uniquement, vous obtenez toutes les mêmes options disponibles pour Exchange, SharePoint, OneDrive, Teams Chat and Channel et Defender for Cloud Apps, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur l’appareil Windows 10.
 
-![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour les appareils](../media/dlp-user-notification-devices.png)  
+![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour les appareils](../media/dlp-user-notification-devices.png)
 
 Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces paramètres. Le texte du corps prend en charge les éléments suivants :
 
@@ -594,7 +592,6 @@ Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces param
 |action | %%AppliedActions%% | collage du contenu du document du Presse-papiers à une autre application |
 
 **%%AppliedActions%%** remplace ces valeurs dans le corps du message :
-
 
 |nom commun de l’action |valeur remplacée par le paramètre %%AppliedActions%% |
 |---------|---------|
@@ -610,36 +607,35 @@ Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces param
 
 Utilisation de ce texte personnalisé
 
-*%%AppliedActions%% Le nom de fichier %%FileName%% via %%ProcessName%% n’est pas autorisé par votre organisation. Cliquez sur « Autoriser » si vous souhaitez contourner la stratégie %%PolicyName%%* 
+*%%AppliedActions%% Le nom de fichier %%FileName%% via %%ProcessName%% n’est pas autorisé par votre organisation. Cliquez sur « Autoriser » si vous souhaitez contourner la stratégie %%PolicyName%%*
 
 produit ce texte dans la notification personnalisée :
 
 *Collage à partir du nom de fichier du Presse-papiers : contoso doc 1 via WINWORD.EXE n’est pas autorisé par votre organisation. Cliquez sur le bouton « Autoriser » si vous souhaitez contourner la stratégie Contoso hautement confidentielle*
- 
 
 > [!NOTE]
 > Les notifications utilisateur et les conseils de stratégie ne sont pas disponibles pour l’emplacement local
-
-> [!NOTE]
+>
 > Uniquement le conseil de stratégie de la priorité la plus élevée, la règle la plus restrictive est affichée. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
 
-Pour en savoir plus sur la configuration et l’utilisation des notifications utilisateur et des conseils de stratégie, notamment sur la personnalisation de la notification et du texte de l’info-bulle, consultez 
+Pour en savoir plus sur la configuration et l’utilisation des notifications utilisateur et des conseils de stratégie, notamment sur la personnalisation de la notification et du texte de l’info-bulle, consultez
+
 - [Envoyer des notifications par e-mail et afficher des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
-  
+
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
-  
+
 In addition to sending an email notification, a user notification displays a policy tip:
-  
+
 - In Outlook and Outlook on the web.
-    
+
 - For the document on a SharePoint Online or OneDrive for Business site.
-    
+
 - In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
-    
+
 The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
-  
+
 Here's what a policy tip looks like in a OneDrive for Business account.
-  
+
 ![Policy tip for a document in a OneDrive account](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
  To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
@@ -660,24 +656,23 @@ Ce tableau présente le comportement de blocage et de notification DLP pour les 
 |- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation** |  - **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Empêcher les utilisateurs de recevoir des e-mails ou d’accéder aux fichiers SharePoint, OneDrive et Teams partagés** est sélectionné </br>- **Bloquer tout le monde** est sélectionné        | - **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné         | - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**        |Les notifications sont envoyées lorsqu’un fichier est partagé avec un utilisateur externe et qu’un utilisateur externe accède à ce fichier.         |
 |- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation**     |- **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Bloquer uniquement les personnes qui ont reçu l’accès au contenu via l’option « Toute personne ayant le lien »** est sélectionnée.         |  - **Notifications utilisateur définies** **sur Activé** </br>- **Notifier les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné.  </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné     |- **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé**   </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**       |Les notifications sont envoyées dès qu’un fichier est chargé         |
 
-
 ### <a name="user-overrides"></a>Remplacements par l’utilisateur
 
-L’objectif des **remplacements d’utilisateurs** est de donner aux utilisateurs un moyen de contourner, avec justification, les actions de blocage de stratégie DLP sur les éléments sensibles dans Exchange, SharePoint, OneDrive ou Teams afin qu’ils puissent continuer leur travail. Les remplacements d’utilisateurs sont activés uniquement lorsque la notification aux **utilisateurs dans les services Office 365 avec un conseil de stratégie** est activée. Par conséquent, les remplacements utilisateur vont de pair avec les notifications et les conseils de stratégie. 
+L’objectif des **remplacements d’utilisateurs** est de donner aux utilisateurs un moyen de contourner, avec justification, les actions de blocage de stratégie DLP sur les éléments sensibles dans Exchange, SharePoint, OneDrive ou Teams afin qu’ils puissent continuer leur travail. Les remplacements d’utilisateurs sont activés uniquement lorsque la notification aux **utilisateurs dans les services Office 365 avec un conseil de stratégie** est activée. Par conséquent, les remplacements utilisateur vont de pair avec les notifications et les conseils de stratégie.
 
 ![Options de remplacement d’utilisateur pour une stratégie DLP](../media/dlp-user-overrides.png)
 
 > [!NOTE]
 > Les remplacements d’utilisateurs ne sont pas disponibles pour l’emplacement des référentiels locaux.
 
-En règle générale, les remplacements d’utilisateurs sont utiles lorsque votre organisation déploie une stratégie pour la première fois. Les commentaires que vous obtenez à partir de toute justification de remplacement et l’identification de faux positifs vous aident à paramétrer la stratégie. 
+En règle générale, les remplacements d’utilisateurs sont utiles lorsque votre organisation déploie une stratégie pour la première fois. Les commentaires que vous obtenez à partir de toute justification de remplacement et l’identification de faux positifs vous aident à paramétrer la stratégie.
 
-<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
+<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
 - Si les conseils de stratégie de la règle la plus restrictive autorisent les utilisateurs à remplacer la règle, toute autre règle également mise en correspondance avec le contenu est aussi remplacée.
- 
+
 <!--![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)-->
- 
+
 Pour en savoir plus sur les remplacements d’utilisateurs, consultez :
 
 - [Afficher la justification soumise par un utilisateur pour une substitution](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
@@ -686,9 +681,8 @@ Pour en savoir plus sur les remplacements d’utilisateurs, consultez :
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
-
-https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
-https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
+/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
+/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
 Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Le rapport contient des informations sur l’élément qui a été mis en correspondance, le contenu réel correspondant à la règle et le nom de la personne qui a modifié le contenu pour la dernière fois. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
 

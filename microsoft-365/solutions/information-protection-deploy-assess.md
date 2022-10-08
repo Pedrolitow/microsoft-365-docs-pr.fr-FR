@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Déterminez les réglementations relatives à la confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: 8ce944c8caee3c89def04d7367efbd4f46bf51e7
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 2615244f76fc17181fa2aa2d04a11c99f05474a1
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730790"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985693"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques liés à la confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -50,7 +50,7 @@ L’adhésion à d’autres normes comme ISO 27001 a également été reconnue p
 
 D’autres réglementations importantes en matière de confidentialité des données spécifient également des exigences pour la gestion des données personnelles.
 
-Dans le Estados Unidos, il s’agit notamment de la California Consumer Protection Act ([CCPA](/compliance/regulatory/ccpa-faq)), HIPAA-HITECH (Estados Unidos health care privacy act) et de la Graham Leach Bliley Act (GLBA). D’autres réglementations spécifiques à l’État sont également en place ou en cours de développement.
+Dans le États-Unis, il s’agit de la California Consumer Protection Act ([CCPA](/compliance/regulatory/ccpa-faq)), HIPAA-HITECH (États-Unis health care privacy act) et de la Graham Leach Bliley Act (GLBA). D’autres réglementations spécifiques à l’État sont également en place ou en cours de développement.
 
 Dans le monde entier, d’autres exemples incluent la Loi d’implémentation du RGPD national (BDSG) allemande, la Loi sur la protection des données du Brésil (LGPD) et bien d’autres.
 
@@ -114,7 +114,7 @@ Vous devez évaluer l’exposition au risque de confidentialité des données en
 
 - Données des employés nécessaires pour effectuer des fonctions métier quotidiennes
 - Données que l’organisation a sur ses clients professionnels, ses partenaires et d’autres relations dans le scénario B2B
-- Les données de l’organisation concernant les consommateurs qui fournissent des informations à serviços online que l’organisation gère dans le scénario B2C (Business-to-Customer)
+- Les données de l’organisation concernant les consommateurs qui fournissent des informations à services en ligne que l’organisation gère dans le scénario B2C (Business-to-Customer)
 
 Voici un exemple des différents types de données pour les services typiques d’une organisation.
 
@@ -151,7 +151,7 @@ La collecte d’informations B2B est également un défi, car votre organisation
 
 En règle générale, les contrats avec des clients externes, des partenaires et les autres entités avec lesquelles l’organisation fait affaire ont un langage traitant de la gestion de ces données, notamment la protection, la rétention et la suppression pendant et après que l’entité a une relation avec l’organisation.
 
-### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>Données de l’organisation sur les consommateurs qui fournissent des informations à serviços online que l’organisation gère dans le scénario B2C
+### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>Données de l’organisation sur les consommateurs qui fournissent des informations aux services en ligne que l’organisation gère dans le scénario B2C
 
 Cette catégorie est celle à laquelle la plupart des personnes pensent pour la confidentialité des données, en raison de nombreuses instances publiques de fuite de données client. Cela peut être intentionnel, tel qu’un tiers sous contrat avec le fournisseur, ou involontaire, comme l’exfiltration par un acteur malveillant. La protection des données des consommateurs est l’une des principales raisons pour lesquelles l’UE et d’autres ont adopté ces réglementations. Les réglementations relatives à la confidentialité des données telles que le RGPD et le CCPA vous obligent à planifier les opérations suivantes :
 
@@ -176,7 +176,7 @@ La plupart des organisations auront une certaine exposition à l’un des scéna
 
 Bien que spécifiques au RGPD, les questions posées dans [l’outil d’évaluation gratuit du RGPD Microsoft](https://clouddamcdnprodep.azureedge.net/gdc/1863571/original) constituent un bon point de départ pour comprendre votre préparation globale à la confidentialité des données.
 
-Les organisations soumises à d’autres réglementations sur la confidentialité des données, telles que le CCPA dans le Estados Unidos ou le LGPD du Brésil, peuvent également tirer parti de l’inventaire de préparation de cet outil en raison du chevauchement des dispositions avec le RGPD.
+Les organisations soumises à d’autres réglementations sur la confidentialité des données, telles que le CCPA dans le États-Unis ou le LGPD du Brésil, peuvent également tirer parti de l’inventaire de préparation de cet outil en raison du chevauchement des dispositions avec le RGPD.
 
 L’évaluation du RGPD se compose des sections suivantes :
 

@@ -6,19 +6,19 @@ author: samanro
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.date: 02/11/2022
 ms.localizationpriority: medium
 ms.collection:
 - highpri
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 30a778f554ae694a0741f9b0f7dcc26fc8d9f3b4
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 5060fa58409ae2652d3fe6cb9e8dc1c80f39b30e
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730834"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986265"
 ---
 # <a name="microsoft-365-and-microsoft-teams-infographics-for-your-users"></a>Infographies Microsoft 365 et Microsoft Teams pour vos utilisateurs
 

@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie, zéro virus
 description: Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 11a2c88773c8601c99975d14ca0e1288f5dd4721
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: db1733e326de45597b0b69638bb2033e7e8892be
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731373"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986023"
 ---
 # <a name="step-1-configure-security-baselines"></a>Étape 1. Configurer les lignes de base de sécurité
 
@@ -39,7 +39,7 @@ Ces lignes de base contiennent des paramètres de configuration et des règles c
 
 Tout d’abord, évaluez et mesurez votre niveau de sécurité à l’aide du [Niveau de sécurité Microsoft](/microsoft-365/security/defender/microsoft-secure-score), puis suivez les instructions pour l’améliorer selon vos besoins.
 
-Ensuite, utilisez [des règles de réduction de la surface d'attaque](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) pour aider à bloquer les activités suspectes et le contenu vulnérable. Ces règles comprennent la prévention :
+Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) to help block suspicious activity and vulnerable content. These rules include preventing:
 
 - Création de processus enfants par toutes les applications Office
 - Contenu exécutable à partir du client de messagerie et du courrier web

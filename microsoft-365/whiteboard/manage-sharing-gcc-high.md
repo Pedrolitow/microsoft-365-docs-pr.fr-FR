@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft dans les environnements GCC High.
-ms.openlocfilehash: 2c87290fb7a6ebbcf9c27ac95e76c8b5ae5f0d88
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 4da8d87e13cfbe46e340f0a69e8b25cdf9e6c54b
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598172"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300297"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer le partage pour le tableau blanc Microsoft dans les environnements GCC High
 
@@ -32,9 +32,7 @@ La plupart des comptes d’appareils externes et partagés disposent de davantag
 
 Dans ce cas, le tableau blanc fournit un affichage temporaire et une collaboration sur le tableau blanc pendant la réunion Teams uniquement. Un lien de partage n’est pas créé et le Tableau blanc n’accorde pas l’accès au fichier.
 
-Si le partage externe est activé pour OneDrive Entreprise, aucune autre action n’est requise.
-
-Si vous limitez le partage externe pour OneDrive Entreprise, vous pouvez le limiter et simplement activer un nouveau paramètre pour que les comptes d’appareils externes et partagés fonctionnent. Pour ce faire, procédez comme suit :
+Pour activer ce comportement, procédez comme suit :
 
 1. Vérifiez que le tableau blanc est activé pour votre organisation. Pour plus d’informations, consultez [Gérer l’accès au Tableau blanc](manage-whiteboard-access-gcc-high.md).
 

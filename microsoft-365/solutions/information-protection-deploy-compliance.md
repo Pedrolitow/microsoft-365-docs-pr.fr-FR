@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 09/29/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Découvrez comment utiliser le score de conformité et le Gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: 65a69ca40df3bcbaff8092c50d74d32868b419b4
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: f5cc20e77e480369a6f6e606ea9245a928368184
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730746"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986221"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utiliser le Gestionnaire de conformité pour gérer les actions d’amélioration
 
@@ -93,7 +93,7 @@ Voici quelques conseils importants pour utiliser le Gestionnaire de conformité 
 
 - Chaque réglementation sur la confidentialité des données comprend une combinaison de contrôles techniques, de spécifications de documentation et d’exigences opérationnelles, de processus et de création de rapports. Tous ces éléments apparaissent dans les actions d’amélioration.
 
-- Pour concentrer l’affichage des actions d’amélioration sur votre domaine d’intérêt, vous pouvez filtrer par type d’action dans l’onglet **Solutions** de l’administrateur du Gestionnaire de conformité. Mer informasjon sur le [filtrage de l’affichage du tableau de bord du Gestionnaire de conformité](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
+- Pour concentrer l’affichage des actions d’amélioration sur votre domaine d’intérêt, vous pouvez filtrer par type d’action dans l’onglet **Solutions** de l’administrateur du Gestionnaire de conformité. En savoir plus sur [le filtrage de l’affichage du tableau de bord du Gestionnaire de conformité](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
 
 - L’importance relative et la priorité des actions d’amélioration identifiées dans le Gestionnaire de conformité doivent être prises en compte dans le cadre d’un examen plus large des risques, ainsi que du risque de confidentialité des données que vous avez déterminé que votre organisation doit gérer.
 

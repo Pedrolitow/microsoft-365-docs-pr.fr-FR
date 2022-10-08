@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’informations sensibles DNI en Espagne.
-ms.openlocfilehash: 9128e04b9462b2d3768a62157e3798ddea17e54c
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 046c7ed6bcc567f5260bafa9c87a40a10a5a1a6a
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367332"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472955"
 ---
 # <a name="spain-dni"></a>Document national d’identité espagnol
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,18 +20,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base vous aident à sécuriser et à gérer les appareils mobiles avec des stratégies qui contrôlent l’accès à la messagerie et aux documents Microsoft 365 de l’organisation.
-ms.openlocfilehash: 540d4de54deff7236313fca3471e836c293a9665
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: e0a59651974c22428738e38ed42ece0beda2936f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796805"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166898"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
 La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer des appareils mobiles tels que les iPhone, iPad, Android et Windows Phone utilisés par les utilisateurs microsoft 365 sous licence de votre organisation. Vous pouvez créer des stratégies de gestion des appareils mobiles avec des paramètres qui peuvent aider à contrôler l’accès aux e-mails et documents Microsoft 365 de votre organisation pour les appareils mobiles et les applications pris en charge. En cas de perte ou de vol d’un appareil, vous pouvez le réinitialiser à distance pour supprimer les informations sensibles de l’organisation qu’il contient.
 
-## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
+## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge
 
 Suivez le guide des systèmes d’exploitation Microsoft Intune pour connaître le minimum de systèmes d’exploitation pris en charge pour les appareils par Mobilité et sécurité de base. Pour plus d’informations, consultez [Intune systèmes d’exploitation pris en charge](/mem/intune/fundamentals/supported-devices-browsers).
 
@@ -145,7 +146,7 @@ L’option suivante peut empêcher les utilisateurs d’accéder à leur message
 
 |Nom du paramètre|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Bloquer la capture d’écran|Oui|Non|Oui|
+|Bloquer la capture d'écran|Oui|Non|Oui|
 |Empêcher l’envoi de données de diagnostic à partir de l’appareil|Oui|Non|Oui|
 
 ## <a name="application-settings"></a>Paramètres d’application
@@ -154,7 +155,7 @@ L’option suivante peut empêcher les utilisateurs d’accéder à leur message
 |---|---|---|---|
 |Bloquer les vidéoconférences sur l’appareil<sup>1</sup>|Oui|Non|Non|
 |Bloquer l’accès au magasin d’applications<sup>1</sup>|Oui|Non|Oui|
-|Exiger un mot de passe pour accéder au magasin d’applications|Non|Oui|Oui|
+|Exiger un mot de passe en cas d'accès au magasin d'applications|Non|Oui|Oui|
 
 <sup>1</sup> Pour fonctionner, ces paramètres nécessitent des appareils iOS supervisés. 
 

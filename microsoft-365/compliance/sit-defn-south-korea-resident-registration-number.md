@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles du numéro d’enregistrement résident sud-coréen.
-ms.openlocfilehash: 94de2ebb31e8bd7a0d9c175e318e166da691bbca
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d775cadefa4007b2770b42901530c8a78e7f0eb2
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66992723"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472437"
 ---
 # <a name="south-korea-resident-registration-number"></a>Matricule de résident Corée du Sud
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

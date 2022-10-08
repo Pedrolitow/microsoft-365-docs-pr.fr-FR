@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: da2c331dcbe3b76a6c546eaac62684f0709f6ebd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: bb7476a4608d7d89fa522529914a0f075311b8cd
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480885"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68297857"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Exemple d’attaque par e-mail de hameçonnage
 
@@ -37,7 +38,7 @@ ms.locfileid: "67480885"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender pouvez aider à détecter les pièces jointes malveillantes fournies par e-mail. Étant donné que le [Centre de sécurité et de conformité Office 365](https://protection.office.com/) s’intègre à Microsoft 365 Defender, les analystes de sécurité peuvent avoir une visibilité sur les menaces provenant de Office 365, telles que les pièces jointes.
+Microsoft 365 Defender pouvez aider à détecter les pièces jointes malveillantes fournies par e-mail et les analystes de sécurité peuvent avoir une visibilité sur les menaces provenant de Office 365, telles que les pièces jointes.
 
 Par exemple, un incident à plusieurs étapes a été attribué à un analyste.
  

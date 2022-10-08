@@ -14,17 +14,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de mot de passe de définition de paramètre de publication Azure.
-ms.openlocfilehash: 9cbca08dc1414241f494a415cf3aafea9e505a6e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: bb26108257a1105d5a3ce1a90bf30fc1b39fe252
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995929"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298691"
 ---
 # <a name="azure-publish-setting-password"></a>Mot de passe du paramètre de publication Azure
 

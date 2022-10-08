@@ -8,7 +8,7 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkSPO
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: d38a9459def8603322d32abc46b3802172fb811d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 97ceafca28ec3ac56c7b5dd7a4daec420046f24a
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731329"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986397"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurer une équipe avec une isolation des problèmes de sécurité dans un environnement de test/développement
 
@@ -49,7 +49,7 @@ Dans cette phase, vous créez et vous configurez le groupe et les utilisateurs A
 
 Créez tout d’abord un groupe de sécurité à l’aide du portail Microsoft Azure.
 
-1. Créez un onglet distinct dans votre navigateur, puis accédez au portail Azure à l'adresse [https://portal.azure.com](https://portal.azure.com). Si nécessaire, connectez-vous avec les informations d'identification du compte d'administrateur global pour votre essai ou abonnement payant Microsoft 365 E5.
+1. Create a separate tab in your browser, and then go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Microsoft 365 E5 trial or paid subscription.
 
 2. Dans le portail Azure, cliquez sur **Azure Active Directory > Groupes**.
 
@@ -101,7 +101,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 ```
 
 > [!NOTE]
-> L'utilisation d'un mot de passe commun vise à automatiser et à faciliter la configuration d'un environnement de développement ou de test. Évidemment, cela est fortement déconseillé pour les abonnements de production.
+> The use of a common password here is for automation and ease of configuration for a dev/test environment. Obviously, this is highly discouraged for production subscriptions.
 
 Utilisez ces étapes pour vérifier que la gestion des licences basée sur un groupe fonctionne correctement.
 
@@ -147,7 +147,11 @@ Procédez comme suit :
 1. Tapez **Stratégie d’entreprise** comme nom d’étiquette.
 1. Tapez **Documents de stratégie de la direction de l’entreprise** sous forme d’info-bulle, puis cliquez **Suivant**.
 1. Sur la page **Chiffrement**, dans le menu déroulant **Chiffrement**, sélectionnez **Appliquer**.
-1. Pour ajouter des autorisations d’équipe :<br>a. Cliquez sur **Attribuer des autorisations**.<br>b. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez **La stratégie de l’entreprise**, enfin cliquez sur **Ajouter**.<br>c. Cliquez sur **Choisir les autorisations**.<br>d. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.<br>
+1. Pour ajouter des autorisations d’équipe :<br>
+  a. Click **Assign permissions**.<br>
+  b. Click **Add users or groups**, select **Company Strategy**, and then click **Add**.<br>
+  c. Click **Choose permissions**.<br>
+  d. Choose **Co-Author** from the dropdown list, and then click **Save**.<br>
 1. Cliquez sur **Suivant**.
 1. Dans la page **Marque de contenu**, cliquez sur **Suivant**.
 1. Dans la page **Paramètres de site et de groupe**, configurez **Paramètres de site et de groupe** sur **Activé**.

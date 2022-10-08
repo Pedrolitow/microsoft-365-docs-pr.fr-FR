@@ -17,19 +17,19 @@ ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9a44ea87a38228c5ec012f0fe507bb3c9d6f66bb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 884c0af44414e56109995bad4f9ee0bdd6e0f487
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475479"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300363"
 ---
 # <a name="the-action-center"></a>Centre de notifications
 
@@ -52,7 +52,6 @@ Le centre d’actions unifié ([https://security.microsoft.com/action-center](ht
 
 Par exemple : 
 
-- Si vous utilisiez précédemment le Centre de conformité & sécurité Office 365 ([https://protection.office.com](https://protection.office.com)), essayez le centre d’action unifié dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>.
 - Si vous utilisiez le centre d’action dans le Centre de sécurité Microsoft Defender ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), essayez le centre d’action unifié dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>.
 - Si vous utilisiez déjà le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, vous verrez plusieurs améliorations dans le Centre d’actions ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 
@@ -135,7 +134,7 @@ Pour effectuer des tâches, telles que l’approbation ou le rejet d’actions e
 |Action de correction |Rôles et des autorisations requis |
 |--|----|
 |correction Microsoft Defender pour point de terminaison (appareils) |**Rôle Administrateur de sécurité** attribué dans Azure Active Directory (Azure AD) ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- ou ---<br/>**Rôle d’actions de correction active** attribué dans Microsoft Defender pour point de terminaison <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle (Microsoft Defender pour point de terminaison)](../defender-endpoint/user-roles.md)  |
-|correction Microsoft Defender pour Office 365 (contenu office et e-mail)  |**Rôle Administrateur de la sécurité** attribué dans Azure AD ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>**Rôle de recherche et de vidage** attribué dans le Centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT** : Si vous avez le rôle **Administrateur de la sécurité** attribué uniquement dans le Centre de conformité & sécurité (Office 365 Security & Compliance Center [https://protection.office.com](https://protection.office.com)), vous ne pourrez pas accéder au Centre d’actions ou aux fonctionnalités de Microsoft 365 Defender. Le rôle **Administrateur de la sécurité** doit être attribué dans Azure AD ou le Centre d'administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|correction Microsoft Defender pour Office 365 (contenu office et e-mail)  |**Rôle Administrateur de la sécurité** attribué dans Azure AD ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>**Rôle de recherche et de vidage** attribué dans les [rôles de collaboration Microsoft 365 Defender > Email &](https://security.microsoft.com/emailandcollabpermissions) <br/><br/>**IMPORTANT** : Si vous avez le rôle **Administrateur de la sécurité** attribué uniquement dans les rôles [de collaboration Microsoft 365 Defender > Email &](https://security.microsoft.com/emailandcollabpermissions), vous ne pourrez pas accéder au Centre d’actions ou aux fonctionnalités Microsoft 365 Defender. Le rôle Administrateur de la sécurité doit être attribué dans Azure AD ou le Centre d'administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Les utilisateurs auxquels le rôle **Administrateur général** est attribué dans Azure AD peuvent approuver ou rejeter toute action en attente dans le Centre d’actions. Toutefois, en guise de bonne pratique, votre organisation doit limiter le nombre de personnes auxquelles le rôle **Administrateur général** est attribué. Nous vous recommandons d’utiliser **l’administrateur de sécurité**, **les actions de correction active** et les rôles **de recherche et de vidage** répertoriés dans le tableau précédent pour les autorisations du Centre d’actions.

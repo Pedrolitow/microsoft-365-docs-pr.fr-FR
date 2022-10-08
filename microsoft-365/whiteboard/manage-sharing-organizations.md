@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft.
-ms.openlocfilehash: 2aba307ceae06639e67c8af35e2452edd648f451
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: aeb6da3d6bd66c02468ff19efa072af4d7084389
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644266"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492505"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Gérer le partage pour le Tableau blanc Microsoft
 
@@ -31,9 +31,7 @@ Il existe davantage de fonctionnalités de collaboration temporaire par des comp
 
 Dans ce cas, le tableau blanc fournit un affichage temporaire et une collaboration sur le tableau blanc pendant la réunion Teams uniquement. Un lien de partage n’est pas créé et le Tableau blanc n’accorde pas l’accès au fichier.
 
-Si le partage externe est activé pour OneDrive Entreprise, aucune autre action n’est requise.
-
-Si vous limitez le partage externe pour OneDrive Entreprise, vous pouvez le limiter et simplement activer un nouveau paramètre pour que les comptes d’appareils externes et partagés fonctionnent. Pour ce faire, procédez comme suit :
+Pour activer ce comportement, procédez comme suit :
 
 1. Vérifiez que le tableau blanc est activé pour votre organisation. Pour plus d’informations, consultez [Gérer l’accès au Tableau blanc](manage-whiteboard-access-organizations.md).
 
@@ -65,9 +63,7 @@ Ces modifications doivent prendre environ 60 minutes pour s’appliquer à l’e
 |Démarrer le tableau blanc à partir d’un Surface Hub ou d’un Salles Microsoft Teams|Stockage : Azure (les fichiers tableau blanc seront déplacés vers OneDrive Entreprise à l’avenir)<br><br>Propriétaire : participant à la réunion|Non applicable|Utilisateurs in-tenants : peuvent lancer, afficher et collaborer<br><br>Utilisateurs externes : peut afficher et collaborer pendant la réunion uniquement<br><br> Comptes d’appareil partagés : peut afficher et collaborer pendant la réunion uniquement|
 
 > [!NOTE]
->Si un tableau blanc est stocké dans OneDrive et déjà attaché à une réunion, il ne peut pas être lancé sur un Surface Hub ou un appareil Salles Microsoft Teams. Un utilisateur authentifié sur un autre appareil doit le faire. Nous prévoyons d’activer cette fonctionnalité dans une prochaine version.
-
-
+> Si un tableau blanc est stocké dans OneDrive et déjà attaché à une réunion, il ne peut pas être lancé sur un Surface Hub ou un appareil Salles Microsoft Teams. Un utilisateur authentifié sur un autre appareil doit le faire. Nous prévoyons d’activer cette fonctionnalité dans une prochaine version.
 
 ## <a name="add-as-a-tab-in-teams-channels-and-chats"></a>Ajouter sous la forme d’un onglet dans les canaux et les conversations Teams
 
@@ -95,5 +91,7 @@ Lorsque vous partagez des tableaux blancs à partir de clients web, de bureau ou
 [Gérer l’accès au Tableau blanc](manage-whiteboard-access-organizations.md)
 
 [Gérer les données pour le tableau blanc](manage-data-organizations.md)
+
+[Configuration réseau requise pour Microsoft Defender des applications cloud](/defender-cloud-apps/network-requirements)
 
 [Déployer le tableau blanc sur Windows](deploy-on-windows-organizations.md)

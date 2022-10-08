@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - M365-collaboration
@@ -19,12 +19,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez la différence entre la collaboration invité et les canaux partagés dans Teams et comment choisir celui à utiliser.
-ms.openlocfilehash: 28411531e46d5ef0ab10c1ce722c6c87ab658a1b
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 57499660183de73356c1f2ba44243f183972d67b
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730350"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985518"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planifier une collaboration externe avec des conversations de canal, une collaboration de fichiers et des applications partagées
 

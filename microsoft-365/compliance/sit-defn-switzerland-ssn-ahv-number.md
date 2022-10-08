@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro SSN Suisse.
-ms.openlocfilehash: d4f5971a1ee2d0dcf96ee023ff609ba70f6ec052
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: a1e7cecf3dcd49842abb520aedcf88d971e33c35
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67368166"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472977"
 ---
 # <a name="switzerland-ssn-ahv-number"></a>Numéro SSN AHV suisse
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

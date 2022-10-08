@@ -8,14 +8,16 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement à Microsoft 365 pour entreprise. Dans certains cas, vous pouvez payer par facture.
+description: Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement Microsoft 365 pour les entreprises.
 ms.custom:
 - commerce_billing
 - VSBFY23
@@ -24,13 +26,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 08/04/2022
-ms.openlocfilehash: 6e56a5386cbc78b1fbe241c2afef0fdb1f7d2847
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.date: 09/28/2022
+ms.openlocfilehash: 76223238cda024c5748e9228dd4940778f1d69aa
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660220"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492591"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -46,18 +48,45 @@ Les cartes de débit, de crédit et les informations bancaires sont acceptées p
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être un administrateur global ou de facturation pour effectuer les étapes décrites dans cet article. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
-- Le mode de paiement choisi à la validation de l’achat est le mode qui sera utilisé pour toutes les périodes de facturation futures. Vous pouvez le modifier à tout moment.
+- You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- The payment method that you choose during checkout is the payment method that we use for all future billing periods. You can change it at any time.
 
 ## <a name="directives-from-the-reserve-bank-of-india"></a>Directives de la Banque de réserve de l'Inde
 
-Actuellement, certaines transactions par carte de crédit, notamment celles qui dépassent 5 000 INR, sont bloquées en raison d'une directive de la Banque de réserve de l'Inde. Cela pourrait affecter les paiements automatiques, ce qui signifie que vous pourriez devoir effectuer des paiements manuellement dans le centre d'administration de Microsoft 365. Cette directive n’affecte pas les frais d’utilisation. 
+Actuellement, certaines transactions par carte de crédit, notamment celles qui dépassent 5 000 INR, sont bloquées en raison d'une directive de la Banque de réserve de l'Inde. Cela pourrait affecter les paiements automatiques, ce qui signifie que vous pourriez devoir effectuer des paiements manuellement dans le centre d'administration de Microsoft 365. Cette directive n’affecte pas les frais d’utilisation.
 
 [En savoir plus sur la réglementation de la Banque de réserve de l'Inde concernant les paiements récurrents](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
 À compter du 30 septembre 2022, Microsoft et d’autres marchands en ligne ne stockeront plus les informations de carte de crédit. Microsoft supprimera tous les détails de la carte stockée du Centre d’administration Microsoft 365. Pour éviter une interruption de service, vous devez ajouter et vérifier un mode de paiement pour tous les abonnements et profils de facturation.
 
 [Découvrez la directive Banque de réserve de l'Inde pour le stockage de cartes](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+
+> [!IMPORTANT]
+> En raison de la suppression des informations de carte de crédit, lorsque vous affichez votre liste de modes de paiement, les colonnes **Date d’expiration** et **État** indiquent uniquement « Inconnu ».
+
+### <a name="upi-and-netbanking-payment-options"></a>Options de paiement UPI et NetBanking
+
+Le Centre d'administration Microsoft 365 prend en charge deux autres options de paiement pour les clients en Inde :
+
+- Le paiement UPI (Unified Paiements Interface) est un mode de paiement en temps réel.
+- NetBanking (Internet Banking) permet aux clients d’accéder aux services bancaires sur une plateforme en ligne.
+
+> [!IMPORTANT]
+> UPI et NetBanking ne sont pris en charge que pour les transactions uniques.
+
+#### <a name="how-do-i-make-a-payment-with-upi-or-netbanking"></a>Comment faire effectuer un paiement avec UPI ou NetBanking ?
+
+1. Si vous êtes un client de retour, lorsque vous effectuez un paiement, sélectionnez **UPI /NetBanking** **dans la liste** déroulante mode de paiement, puis sélectionnez M **ake payment**. Passez à l’étape 4.
+2. Pour les nouveaux clients, lorsque vous effectuez votre premier paiement, sélectionnez **Ajouter un mode de paiement**.
+3. Sélectionnez **UPI /NetBanking**, puis **Effectuez le paiement**.
+4. Vous êtes redirigé vers le partenaire de paiement, BillDesk, où vous choisissez UPI ou NetBanking pour votre mode de paiement.
+5. Suivez les instructions de BillDesk pour terminer la transaction.
+
+Après avoir soumis le paiement, laissez le temps au paiement d’apparaître dans le centre d’administration.
+
+#### <a name="how-am-i-refunded-if-i-made-a-payment-with-upi-or-netbanking"></a>Comment suis-je remboursé si j’ai effectué un paiement avec UPI ou NetBanking ?
+
+Les remboursements sont traités comme des frais réguliers et sont remboursés sur votre compte bancaire.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Payer par carte de crédit, carte de débit, ou compte bancaire
 
@@ -95,15 +124,15 @@ Si nous ne parvenons pas à vous facturer via le mode de paiement enregistré, n
 Si vous avez ajouté personnellement un mode de paiement ayant un montant impayé, vous pouvez utiliser **Régler le solde** pour effectuer un paiement. Le mode de paiement que vous utilisez pour payer le montant en souffrance devient le nouveau mode de paiement pour tous les abonnements qui ont utilisé le mode de paiement refusé.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > **Factures et paiements** puis sélectionnez l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modes de paiement</a>.
-1. Un message d'avertissement indique quel mode de paiement a été refusé. Sélectionnez **Régler le solde**.
-1. Dans le volet droit, choisissez un mode de paiement différent ou sélectionnez **Ajouter un nouveau mode de paiement**.
-1. Une fois les informations du mode de paiement mises à jour, sélectionnez **Enregistrer**.
+2. A warning message says which payment method was declined. Select **Settle balance**.
+3. Dans le volet droit, choisissez un mode de paiement différent ou sélectionnez **Ajouter un nouveau mode de paiement**.
+4. Une fois les informations du mode de paiement mises à jour, sélectionnez **Enregistrer**.
 
 Si vous n’avez pas ajouté le mode de paiement actuellement utilisé pour le règlement de l’abonnement, remplacez-le par un mode que vous avez précédemment ajouté, ou ajoutez-en un autre.
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 
-[Consultez votre facture](view-your-bill-or-invoice.md) pour obtenir des instructions de paiement pour votre pays ou région. Si vous ne savez pas combien vous devez, vous pouvez consulter votre historique des factures et des paiements en ligne sous l’onglet **Factures** de la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Factures et paiements</a> .
+[Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country or region. If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 > [!NOTE]
 > - Le paiement par chèque n'est disponible que pour quelques pays ou régions seulement.

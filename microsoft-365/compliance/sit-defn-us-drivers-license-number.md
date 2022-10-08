@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité du numéro de permis de conduire américain.
-ms.openlocfilehash: d25de827c913781c0426d8c6262bcb9f421ee73e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9659bfce35958409e54ffe7ff15e948e5b980d6f
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950175"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472560"
 ---
 # <a name="us-drivers-license-number"></a>Numéro de permis de conduire américain
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -45,17 +48,17 @@ Non
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_new_york_drivers_license_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keyword_[state_name]_drivers_license_name` trouvé.
-- Un mot clé est `Keyword_us_drivers_license` trouvé.
+- La fonction `Func_new_york_drivers_license_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keyword_[state_name]_drivers_license_name` est trouvé.
+- Un mot clé figurant dans la liste `Keyword_us_drivers_license` est trouvé.
 
-Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance faible ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_new_york_drivers_license_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keyword_[state_name]_drivers_license_name` trouvé.
-- Un mot clé est `Keyword_us_drivers_license_abbreviations` trouvé.
+- La fonction `Func_new_york_drivers_license_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keyword_[state_name]_drivers_license_name` est trouvé.
+- Un mot clé figurant dans la liste `Keyword_us_drivers_license_abbreviations` est trouvé.
 - Aucun mot clé n’est `Keyword_us_drivers_license` trouvé.
 
 ```xml
@@ -80,27 +83,27 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 
 ### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
-- DL
-- DLS
-- CDL
-- CDLS
+- PC
+- PC
+- PCD
+- PCD
 - ID
 - Id
-- DL #
-- DLS #
-- CDL #
-- CDLS #
-- ID #
+- # PC
+- # PC
+- # PCD
+- # PCD
+- Id #
 - Id #
 - Numéro d’identification
 - Numéros d’identification
-- LIC
-- LIC #
-- DLN
+- Lic
+- Lic #
+- Dln
 
 ### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
-- DriverLic
+- PermisConduire
 - DriverLics
 - DriverLicense
 - DriverLicenses
@@ -108,26 +111,26 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 - Permis conduire
 - Permis de conduire
 - Permis de conduire
-- DriversLic
+- PermisConduire
 - DriversLics
 - DriversLicense
-- DriversLicenses
+- PermisConduire
 - Permis conduire
 - Permis conduire
 - Permis de conduire
 - Permis de conduire
 - Driver’Lic
-- Driver’Lics
-- Driver’License
-- Licences de pilote
+- Permisconduire
+- Permisdeconduire
+- Permisdeconduire
 - Permis conduire
 - Permis conduire
 - Permis de conduire
 - Permis de conduire
-- Driver’sLic
-- Driver’sLics
-- Driver’sLicense
-- Driver’sLicenses
+- PermisConduire
+- Driver'sLics
+- Driver'sLicense
+- Driver'sLicenses
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
@@ -139,34 +142,34 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 - cartes d’identité
 - carte d’identification
 - cartes d’identification
-- DriverLic #
-- DriverLics #
-- DriverLicense #
-- DriverLicenses #
+- #PermisConduire
+- DriverLics#
+- DriverLicense#
+- DriverLicenses#
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- DriversLic #
-- DriversLics #
-- DriversLicense #
-- DriversLicenses #
+- #PermisConduire
+- DriversLics#
+- DriversLicense#
+- DriversLicenses#
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- Driver’Lic #
-- Driver’Lics #
-- Driver’License #
-- Licences de pilote #
+- Driver’Lic#
+- #Permisconduire
+- #Permisdeconduire
+- #Permisdeconduire
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- Driver’sLic #
-- Driver’sLics #
-- Driver’sLicense #
-- Driver’sLicenses #
+- #PermisConduire
+- Driver'sLics#
+- Driver'sLicense#
+- Driver'sLicenses#
 - #Permisconduire
 - #Permisconduire
 - #Permis de conduire

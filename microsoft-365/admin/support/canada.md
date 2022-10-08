@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 61afb48d417646a079b5409015d8f38a746e133c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: HT
+ms.openlocfilehash: 5d9b560dd2d959d9d82068642f5e669b2d785046
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373211"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164324"
 ---
 # <a name="contact-support-for-canada"></a>Contacter l’assistance à la clientèle pour le Canada
 

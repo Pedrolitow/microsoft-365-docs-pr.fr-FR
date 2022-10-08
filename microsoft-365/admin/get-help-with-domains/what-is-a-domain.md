@@ -1,5 +1,5 @@
 ---
-title: Qu'est-ce qu'un domaine ?
+title: Qu’est-ce qu’un domaine ?
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -7,9 +7,11 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +27,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 76604297cb563185deec23b8c70ad8f6672de7ac
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: f1b7f2a050ca051a8085f126473dc675f74d75f2
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661451"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492178"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 

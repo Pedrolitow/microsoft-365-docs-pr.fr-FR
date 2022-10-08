@@ -1,6 +1,6 @@
 ---
 title: Exécuter l’analyseur client sur macOS ou Linux
-description: Découvrez comment exécuter l’analyseur client Pertahanan Microsoft untuk Titik Akhir sur macOS ou Linux
+description: Découvrez comment exécuter l’analyseur client Microsoft Defender pour point de terminaison sur macOS ou Linux
 keywords: analyseur client, capteur de dépannage, analyseur, mdeanalyzer, macos, linux, mdeanalyzer
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4e8d05844f812ee91f135deaf339f62dd90493d6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f7c3bc6abbb4340ae04f94b2f1fb0e031e69fa9d
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741804"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492222"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
@@ -36,7 +38,7 @@ ms.locfileid: "67741804"
 1. Téléchargez l’outil [Analyseur client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
 
    > [!NOTE]
-   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : « bf102a79626c88fe58b5be3034640835f96f54230292486716d72f515875966c ».
+   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : « BF102A79626C88FE58B5BE3034640835F96F54230292486716D72F515875966C »
 
 2. Extrayez le contenu de XMDEClientAnalyzer.zip sur l’ordinateur.
 
@@ -71,7 +73,7 @@ Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les comm
 > - En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
 >
 > - Si vous exécutez sur un ordinateur qui ne peut pas utiliser Python 3 ou extraire le composant lxml, vous pouvez télécharger une version binaire de l’analyseur qui n’a pas les exigences suivantes : [binaire de l’analyseur client XMDE](https://aka.ms/XMDEClientAnalyzerBinary). <br> Notez que le binaire n’est actuellement pas signé. Pour autoriser l’exécution du package sur MacOS, vous devez utiliser la syntaxe « spctl --add /Path/To/Application.app ».
-> - Le hachage SHA256 actuel de « XMDEClientAnalyzerBinary.zip » téléchargé à partir du lien ci-dessus est : « 7FE67373CDF493BF2748FD778BD106EE85A71C968D594BCC67C7374620506EF2 »
+> - Le hachage SHA256 actuel de « XMDEClientAnalyzerBinary.zip » téléchargé à partir du lien ci-dessus est : « 6FEB44EF2D9FEB8C8093A016FAB2B5F3ED580931008066BF134E8B1E04CAB222 »
 >
 > - Si votre appareil se trouve derrière un proxy, vous pouvez simplement passer le serveur proxy en tant que variable d’environnement au script mde_support_tool.sh. Par exemple : `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
@@ -87,13 +89,13 @@ Aide sur la syntaxe supplémentaire :
 **Performance** \# Performance<br>
 \# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande. Permet `--length=<seconds>` de spécifier la durée du benchmark.
 
-**-o** \# Sortie<br>
+**-O** \# Sortie<br>
 \# Spécifier le chemin d’accès de destination pour le fichier de résultats
 
-**-nz** \# No-Zip<br>
+**-Nz** \# No-Zip<br>
 \# S’il est défini, un répertoire est créé au lieu d’un fichier d’archive résultant
 
-**-f** \# Force<br>
+**-F** \# Force<br>
 \# Remplacer si la sortie existe déjà dans le chemin de destination
 
 ## <a name="result-package-contents-on-macos-and-linux"></a>Contenu du package de résultats sur macOS et Linux
@@ -106,7 +108,7 @@ Aide sur la syntaxe supplémentaire :
 
   Description : Même sortie de diagnostic générée lors de l’exécution de *la création de diagnostic mdatp* sur [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  ou
+  or
 
   [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
@@ -116,7 +118,7 @@ Aide sur la syntaxe supplémentaire :
 
 - Processes_information.txt
 
-  Description : contient les détails des processus Pertahanan Microsoft untuk Titik Akhir en cours d’exécution sur le système.
+  Description : contient les détails des processus Microsoft Defender pour point de terminaison en cours d’exécution sur le système.
 
 - Log.txt
 

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Vue d’ensemble de la planification, du déploiement et du fonctionnement continu de vos locataires Microsoft 365.
-ms.openlocfilehash: 11f0e0306788a48eaa67796030972727969692d8
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: bf0ef402bf583054712d302035cefdc3aa9df153
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730592"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67983077"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Gestion des locataires pour Microsoft 365 pour les entreprises
 
@@ -42,7 +42,7 @@ Mais tout d’abord, prenons un moment pour comprendre ce qu’est un locataire 
 
 ## <a name="a-microsoft-365-tenant-defined"></a>Un locataire Microsoft 365 défini
 
-Un locataire Microsoft 365 est une instance dédiée des services de Microsoft 365 et des données de votre organisation stockées dans un emplacement par défaut spécifique, tel que l’Europe ou 北米. Cet emplacement est spécifié lorsque vous créez le locataire pour votre organisation. Chaque locataire Microsoft 365 est distinct, unique et distinct de tous les autres locataires Microsoft 365. Vous créez un locataire Microsoft 365 lorsque vous achetez un ou plusieurs produits auprès de Microsoft, tels que Microsoft 365 E3 ou E5, ainsi qu’un ensemble de licences pour chacun d’eux.
+Un locataire Microsoft 365 est une instance dédiée des services de Microsoft 365 et des données de votre organisation stockées dans un emplacement par défaut spécifique, tel que l’Europe ou Amérique du Nord. Cet emplacement est spécifié lorsque vous créez le locataire pour votre organisation. Chaque locataire Microsoft 365 est distinct, unique et distinct de tous les autres locataires Microsoft 365. Vous créez un locataire Microsoft 365 lorsque vous achetez un ou plusieurs produits auprès de Microsoft, tels que Microsoft 365 E3 ou E5, ainsi qu’un ensemble de licences pour chacun d’eux.
 
 Votre locataire Microsoft 365 inclut également un locataire Azure Active Directory (Azure AD), qui est une instance dédiée d’Azure AD pour les comptes d’utilisateur, les groupes et d’autres objets. Chaque locataire Azure AD est distinct, unique et distinct de tous les autres locataires Azure AD. Bien que votre organisation puisse avoir plusieurs locataires Azure AD que vous pouvez configurer avec des abonnements Azure, les locataires Microsoft 365 ne peuvent utiliser qu’un seul locataire Azure AD, celui qui a été créé lors de la création du locataire.
 
@@ -65,7 +65,7 @@ Voici les éléments :
   - Vous avez configuré les noms de domaine DNS corrects.
   - Pour les réseaux d’entreprise, vous avez optimisé le trafic réseau vers le réseau Microsoft pour les travailleurs sur site.
   - Vous avez optimisé le trafic réseau pour les travailleurs distants qui utilisent un client VPN.
-- Vous avez synchronisé vos comptes, groupes et autres objets Active Directory 域服务 (AD DS).
+- Vous avez synchronisé vos comptes, groupes et autres objets services de domaine Active Directory (AD DS).
   - Vos comptes de locataire Azure AD sont mappés à Exchange Online boîtes aux lettres avec les domaines DNS appropriés pour les adresses e-mail.
   - Les licences appropriées ont été attribuées à vos comptes d’utilisateur à partir des produits achetés corrects (par exemple, Microsoft 365 E3 ou E5).
 - Vous avez configuré une gestion forte des identités et des accès.
@@ -101,7 +101,7 @@ Les sections et le tableau suivants répertorient les fonctionnalités clés et 
 |Déplacer des données de base vers une nouvelle zone géographique de centre de données|À mesure que Microsoft ajoute de nouvelles zones géographiques de centre de données pour des ressources de capacité et de calcul supplémentaires, vous pouvez demander un déplacement géographique du centre de données pour la résidence des données en zone géographique pour vos données client principales.|Microsoft 365 E3 ou E5|
 ||||
 
-### <a name="networking"></a>Réseau
+### <a name="networking"></a>Mise en réseau
 
 |Fonctionnalité|Description|Licence|
 |---|---|---|
@@ -113,7 +113,7 @@ Les sections et le tableau suivants répertorient les fonctionnalités clés et 
 
 |Fonctionnalité|Description|Licence|
 |---|---|---|
-|Synchroniser жергілікті Active Directory Domain Services (AD DS) avec votre locataire Azure AD|Tirez parti de votre fournisseur d’identité local pour les comptes d’utilisateur, les groupes et d’autres objets.|Microsoft 365 E3 ou E5|
+|Synchroniser Active Directory local Domain Services (AD DS) avec votre locataire Azure AD|Tirez parti de votre fournisseur d’identité local pour les comptes d’utilisateur, les groupes et d’autres objets.|Microsoft 365 E3 ou E5|
 |Authentification multifacteur appliquée avec paramètres de sécurité par défaut|Protégez-vous contre les identités compromises et les appareils en imposant une deuxième forme d’authentification pour les connexions. La sécurité par défaut nécessite l’authentification multifacteur pour tous les comptes d’utilisateurs.|Microsoft 365 E3 ou E5|
 |Authentification multifacteur appliquée avec accès conditionnel|Exiger l’authentification multifacteur en fonction des attributs de la connexion avec des stratégies d’accès conditionnel.|Microsoft 365 E3 ou E5|
 |Authentification multifacteur appliquée avec accès conditionnel basé sur les risques|Requiert une authentification multifacteur basée sur le risque de connexion de l’utilisateur avec Microsoft Defender pour identité.|Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2|

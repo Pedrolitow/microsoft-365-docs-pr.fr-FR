@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -17,12 +18,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: 898b6a8f15d67fbf3530f6db269f47d5031f3676
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 4ff41bba3f2b0302e6608781c34bc60973eebf37
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359228"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499880"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Vue d’ensemble de l’intégration de la prise en charge Microsoft 365 avec la configuration ServiceNow
 
@@ -38,17 +39,19 @@ Voici les principales fonctionnalités que vous obtiendrez avec l’application 
 
 - Incidents d’intégrité des services : informations sur les incidents d’intégrité des services Microsoft connus, notamment l’impact sur l’utilisateur, l’étendue, l’état actuel et la prochaine mise à jour attendue. À l’aide du Machine Learning, les incidents ServiceNow sont mis en correspondance avec les incidents d’intégrité du service Microsoft en fonction du champ de description abrégé.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" alt-text="Champ de description des incidents d’intégrité du service.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" lightbox="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" alt-text="Champ de description des incidents d’intégrité du service.":::
 
 - Solutions recommandées : les descriptions des tâches et des incidents sont utilisées pour recommander des solutions ciblées précises et des articles pertinents de Microsoft alimentés par le Machine Learning. Vous pouvez également utiliser La recherche pour trouver d’autres solutions, si nécessaire.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Champ de description des solutions recommandées.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_recommended_articles.png" lightbox="../../media/ServiceNow-guide/servicenow_recommended_articles.png" alt-text="Champ de description des solutions recommandées.":::
 
-- Demande de service Microsoft : faites remonter les problèmes aux agents de support Microsoft et recevez des mises à jour d’état pour votre cas.
+- Demande de service Microsoft : faites remonter les problèmes aux agents de support Microsoft et recevez les mises à jour d’état de votre demande. Avec un flux de travail mis à jour, vous pouvez désormais créer une demande de service en ajoutant votre titre, votre description et vos informations de contact préférés semblables à ce qui se trouve dans le portail d’administration Microsoft 365.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Formulaire de demande de service.":::
+    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation.png" alt-text="Capture d’écran montrant le champ de description des solutions recommandées.":::
 
-## <a name="prerequisites"></a>Conditions préalables
+    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation2.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation2.png" alt-text="Capture d’écran montrant le champ de description des solutions recommandées.":::
+
+## <a name="prerequisites"></a>Configuration requise
 
 ### <a name="permissions-requirements"></a>Conditions requises pour les autorisations
 
@@ -82,12 +85,17 @@ Autorisations requises :
 
 Une fois l’application d’intégration du support Microsoft 365 installée, deux accès inter-étendues d’application sont créés. Si elles ne sont pas créées correctement, créez-les manuellement.
 
-## <a name="setup-the-integration"></a>Configurer l’intégration
+## <a name="set-up-the-integration"></a>Configurer l’intégration
 
 Une fois que vous avez téléchargé l’application, accédez à l’Assistant Installation de Microsoft 365 dans votre environnement SNOW pour terminer le processus d’installation.
-:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Assistant Configuration de snow":::
+
+:::image type="content" source="../../media/ServiceNow-guide/Agree.png" lightbox="../../media/ServiceNow-guide/Agree.png" alt-text="Capture d’écran montrant le champ de description des solutions recommandées.":::
 
 Pour en savoir plus sur les étapes, consultez les pages suivantes :
+- Si vous souhaitez commencer sans configurer l’application d’intégration de support Microsoft 365, vous pouvez sélectionner l’option **Continuer sans aucune option d’installation** . Cette option continuera à fournir des solutions recommandées de base.
+
+    :::image type="content" source="../../media/ServiceNow-guide/No_setup.png" lightbox="../../media/ServiceNow-guide/No_setup.png" alt-text="Champ de description des solutions recommandées.":::
+    
 - Si votre environnement ServiceNow autorise l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions de [configuration de l’intégration de la prise en charge de Microsoft 365 à l’authentification de base ServiceNow](servicenow-basic-authentication.md).
 - Si votre environnement ServiceNow n’autorise PAS l’authentification de base (accès avec les informations d’identification de l’utilisateur ServiceNow) pour les appels de service web entrants, suivez les instructions fournies dans [Configurer l’intégration de la prise en charge de Microsoft 365 avec le jeton d’authentification Azure AD](servicenow-aad-oauth-token.md).
   - Cette configuration nécessite un locataire d’authentification unique pour que le jeton d’authentification AAD fonctionne correctement.

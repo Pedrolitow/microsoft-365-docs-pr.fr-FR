@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 03548e71f73259f241b77656e94958d22266538a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7d5056470331bc52318ca4a5e433edbe37cabf03
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691538"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68337307"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances AuditD liés à Microsoft Defender pour point de terminaison sur Linux 
 
@@ -54,10 +54,14 @@ Pour résoudre ces problèmes, commencez par [collecter les journaux MDEClientAn
 > [!NOTE]
 > En règle générale, il est recommandé de mettre à jour [l’agent Microsoft Defender pour point de terminaison vers la dernière version disponible](linux-whatsnew.md) et de confirmer que le problème persiste avant d’approfondir l’examen.
 
+> [!NOTE]
+> Qu’il existe des configurations supplémentaires qui peuvent affecter la contrainte de processeur du sous-système AuditD. <BR>
+> Plus précisément, dans [auditd.conf](https://linux.die.net/man/8/auditd.conf), la valeur de **disp_qos** peut être définie sur « lossy » pour réduire la consommation élevée du processeur. <BR>
+> Toutefois, cela signifie que certains événements peuvent être supprimés pendant la consommation maximale du processeur. <BR>
 
 ## <a name="xmdeclientanalyzer"></a>XMDEClientAnalyzer 
 
-Lorsque vous utilisez XMDEClientAnalyzer, les fichiers suivants affichent une sortie qui fournit des insights pour vous aider à résoudre les problèmes.
+Lorsque vous utilisez [XMDEClientAnalyzer](run-analyzer-macos-linux.md), les fichiers suivants affichent la sortie qui fournit des insights pour vous aider à résoudre les problèmes.
 - auditd_info.txt
 - auditd_log_analysis.txt
 

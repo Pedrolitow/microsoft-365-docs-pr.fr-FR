@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: La Turquie adresse physiquement la définition d’entité de type d’informations sensibles.
-ms.openlocfilehash: 96c98fda5de438582f3b4e0d2f9f90ba51891ee6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ffc50f7fe938341452fbe2ddd48c9a3a3c61a5b1
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995710"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472626"
 ---
 # <a name="turkey-physical-addresses"></a>Adresses physiques en Turquie
 
-Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Turquie. Il est également inclus dans l’entité SIT toutes [les adresses physiques](sit-defn-all-physical-addresses.md) regroupées.
+Cette entité nommée non groupée détecte les modèles liés à l’adresse physique de la Turquie. Elle est également incluse dans l’entité nommée [Toutes les adresses physiques](sit-defn-all-physical-addresses.md) (SIT).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Niveau de confiance
 

@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: ca156b12909b3bce27375f35a5fbfab16e6ca579
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3a2365dbc2e58d33b11c75faeca7e8f3fb39dfb8
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701541"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492613"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Créer des rapports personnalisés à l’aide de Power BI
 
@@ -37,6 +39,9 @@ ms.locfileid: "67701541"
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+> [!NOTE]
+>**Avant de commencer** : vous devez d’abord [créer une application](/microsoft-365/security/defender-endpoint/apis-intro).
 
 Dans cette section, vous allez apprendre à créer un rapport Power BI sur les API Defender pour point de terminaison.
 
@@ -54,55 +59,58 @@ Le premier exemple montre comment connecter Power BI à l’API de repérage ava
 
 4. Copiez ce qui suit et collez-le dans l’éditeur :
 
-```
-    let
-        AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
-
-        HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
-
-        Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
-
-        TypeMap = #table(
-            { "Type", "PowerBiType" },
-            {
-                { "Double",   Double.Type },
-                { "Int64",    Int64.Type },
-                { "Int32",    Int32.Type },
-                { "Int16",    Int16.Type },
-                { "UInt64",   Number.Type },
-                { "UInt32",   Number.Type },
-                { "UInt16",   Number.Type },
-                { "Byte",     Byte.Type },
-                { "Single",   Single.Type },
-                { "Decimal",  Decimal.Type },
-                { "TimeSpan", Duration.Type },
-                { "DateTime", DateTimeZone.Type },
-                { "String",   Text.Type },
-                { "Boolean",  Logical.Type },
-                { "SByte",    Logical.Type },
-                { "Guid",     Text.Type }
-            }),
-
-        Schema = Table.FromRecords(Response[Schema]),
-        TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
-        Results = Response[Results],
-        Rows = Table.FromRecords(Results, Schema[Name]),
-        Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
-
-    in Table
-```
+   ```
+       let
+           AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
+   
+           HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
+   
+           Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
+   
+           TypeMap = #table(
+               { "Type", "PowerBiType" },
+               {
+                   { "Double",   Double.Type },
+                   { "Int64",    Int64.Type },
+                   { "Int32",    Int32.Type },
+                   { "Int16",    Int16.Type },
+                   { "UInt64",   Number.Type },
+                   { "UInt32",   Number.Type },
+                   { "UInt16",   Number.Type },
+                   { "Byte",     Byte.Type },
+                   { "Single",   Single.Type },
+                   { "Decimal",  Decimal.Type },
+                   { "TimeSpan", Duration.Type },
+                   { "DateTime", DateTimeZone.Type },
+                   { "String",   Text.Type },
+                   { "Boolean",  Logical.Type },
+                   { "SByte",    Logical.Type },
+                   { "Guid",     Text.Type }
+               }),
+   
+           Schema = Table.FromRecords(Response[Schema]),
+           TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
+           Results = Response[Results],
+           Rows = Table.FromRecords(Results, Schema[Name]),
+           Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
+   
+       in Table
+   ```
 
 5. Sélectionnez **Terminé**.
 
 6. Sélectionnez **Modifier les informations d’identification**.
+
    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="Élément de menu Modifier les informations d’identification" lightbox="images/power-bi-edit-credentials.png":::
 
 7. Sélectionnez **Connexion au** compte \> **d’organisation**.
+
    :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="Option De connexion dans l’élément de menu Compte professionnel" lightbox="images/power-bi-set-credentials-organizational.png":::
 
 8. Entrez vos informations d’identification et attendez d’être connecté.
 
-9. Sélectionnez **Connexion**. </br>
+9. Sélectionnez **Connexion**.
+
    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="Message de confirmation de connexion dans l’élément de menu Compte professionnel" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
 À présent, les résultats de votre requête s’affichent sous forme de tableau et vous pouvez commencer à créer des visualisations dessus !
@@ -111,7 +119,7 @@ Vous pouvez dupliquer cette table, la renommer et modifier la requête Advanced 
 
 ## <a name="connect-power-bi-to-odata-apis"></a>Connecter Power BI aux API OData
 
-La seule différence par rapport à l’exemple précédent est la requête à l’intérieur de l’éditeur. Suivez les étapes 1 à 3 ci-dessus. 
+La seule différence par rapport à l’exemple précédent est la requête à l’intérieur de l’éditeur. Suivez les étapes 1 à 3 ci-dessus.
 
 À l’étape 4, au lieu du code de cet exemple, copiez le code ci-dessous et collez-le dans l’éditeur pour extraire toutes les **actions** de machine de votre organisation :
 
@@ -138,6 +146,6 @@ Affichez les Microsoft Defender pour point de terminaison exemples de rapport Po
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [API Defender pour point de terminaison](apis-intro.md) 
-- [API de recherche avancée de menaces](run-advanced-query-api.md) 
+- [API Defender pour point de terminaison](apis-intro.md)
+- [API de recherche avancée de menaces](run-advanced-query-api.md)
 - [Utilisation des requêtes OData](exposed-apis-odata-samples.md)

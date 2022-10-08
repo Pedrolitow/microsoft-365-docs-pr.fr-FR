@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Découvrez les stratégies de rétention Microsoft 365 qui s’appliquent à Microsoft Teams afin de pouvoir gérer la rétention automatique ou la suppression des messages Teams pour votre organisation.
-ms.openlocfilehash: da8275ff3a5792df3cbc72aea7b8e483a0a5f4f3
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: 799556ea2f36f2c90c8182ae5cef0b5311cd9a75
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441815"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495141"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -41,16 +42,20 @@ Pour les autres charges de travail, consultez:
 - [Découvrir la rétention pour Yammer](retention-policies-yammer.md)
 - [Découvrir la rétention pour Exchange](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
 > [!NOTE]
 > Les stratégies de rétention prennent en charge [les canaux partagés](/MicrosoftTeams/shared-channels). Tous les canaux partagés héritent des paramètres de rétention du canal parent.
+> 
+> Les stratégies de rétention prennent également en charge les messages publiés avec la fonctionnalité [de conversation avec vous-même](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) .
 
-Les messages de conversation, les messages de canal et les messages de canal privé Teams peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte contenu dans les messages, les éléments suivants peuvent être conservés pour des raisons de conformité : images incorporées, tableaux, liens hypertexte et liens vers d’autres messages et fichiers Teams, et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation et les messages de canal privé incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
+Les messages de conversation Teams, les messages de canal et les messages de canal privé peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte des messages, les éléments suivants peuvent être conservés pour des raisons de conformité : clips vidéo, images incorporées, tables, liens hypertexte, liens vers d’autres messages et fichiers Teams, et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation et les messages de canal privé incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
 
 L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams, les miniatures, les images d’annonce, et les réactions des autres utilisateurs sous la forme d’émoticônes.
 
-Les messages électroniques et les fichiers que vous utilisez avec Teams ne sont pas inclus dans les stratégies de rétention pour Teams. Ces éléments ont leurs propres stratégies de rétention.
+Emails and files that you use with Teams aren't included in retention policies for Teams. These items have their own retention policies.
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Fonctionnement de la rétention avec Microsoft Teams
 
@@ -188,7 +193,7 @@ Comme le montre cet exemple, même si vous parvenez à configurer une stratégie
 
 Lorsqu’une conversation Skype Entreprise intervient dans Teams, celle-ci devient un message de la conversation Teams et est stockée dans la boîte aux lettres appropriée. Les stratégies de conservation Teams appliqueront ces messages du fil de conversation Teams. 
 
-Cependant, si l’historique des conversations est activé pour Skype Entreprise et depuis le côté client Skype Entreprise, celui-ci est enregistré dans une boîte aux lettres. Ces données de conversation ne sont pas gérées par une stratégie de rétention Teams. Pour ce contenu, utilisez une stratégie de rétention configurée pour Skype Entreprise.
+However, if conversation history is turned on for Skype for Business and from the Skype for Business client side that history is being saved into a mailbox, that chat data isn't handled by a Teams retention policy. For this content, use a retention policy that's configured for Skype for Business.
 
 ## <a name="messages-and-external-users"></a>Messages et utilisateurs externes
 

@@ -6,18 +6,18 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.custom: ''
 f1.keywords: NOCSH
 ms.collection:
 - highpri
-ms.openlocfilehash: af14a61405040028f5a915fca81639e351324f80
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 1683cfed06e887790d9bac600ae4d7439aa8d5d6
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731141"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985364"
 ---
 # <a name="microsoft-365-architecture-templates-and-icons"></a>Modèles et icônes d’architecture Microsoft 365
 

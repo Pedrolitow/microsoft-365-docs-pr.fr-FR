@@ -1,6 +1,6 @@
 ---
 title: Utiliser Microsoft Defender pour Office 365 dans SharePoint Online
-description: Étapes permettant de vous assurer que vous pouvez utiliser Et obtenir la valeur de Microsoft Defender pour Office 365 dans SharePoint Online et OneDrive Entreprise
+description: Les étapes pour vous assurer que vous pouvez utiliser et obtenir la valeur à partir de Microsoft Defender pour Office 365 dans SharePoint Online et OneDrive Entreprise
 search.product: ''
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -13,16 +13,19 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: b6a4b5ff8b523860204225f7ae8020e7e8fca9ae
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: a6f527c8cbc7815da0c54d0958a24b459e0bb8f9
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737448"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363560"
 ---
 # <a name="use-microsoft-defender-for-office-365-with-sharepoint-online"></a>Utiliser Microsoft Defender pour Office 365 avec SharePoint Online
 
@@ -36,24 +39,25 @@ Microsoft Office SharePoint Online est un outil de collaboration utilisateur et 
 - Cinq à dix minutes pour effectuer ces étapes.
 
 ## <a name="turn-on-microsoft-defender-for-office-365-in-sharepoint-online"></a>Activer Microsoft Defender pour Office 365 dans SharePoint Online
-Si vous disposez d’une licence Microsoft Defender pour Office 365 **(évaluation gratuite de 90 jours disponible à aka.ms/trymdo),** vous pouvez garantir une protection transparente contre les programmes malveillants zero day et la protection contre les clics dans Microsoft Teams.
+
+Si vous disposez d’une licence pour Microsoft Defender pour Office 365 **(évaluation gratuite de 90 jours disponible à aka.ms/trymdo),** vous pouvez garantir une protection transparente contre les programmes malveillants zero day et la protection contre les clics dans Microsoft Teams.
 
 Pour plus d’informations, consultez [l’étape 1 : Utilisez le portail Microsoft 365 Defender pour activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams).
 
-1.  Connectez-vous à la [page de configuration des pièces jointes sécurisées du centre de sécurité](https://security.microsoft.com/safeattachmentv2).
-1.  Sélectionnez **Paramètres généraux**.
-1.  Vérifiez que **l’option Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** est **activée**.
-1.  Sélectionnez **Enregistrer**.
-
+1. Connectez-vous à la [page de configuration des pièces jointes sécurisées du centre de sécurité](https://security.microsoft.com/safeattachmentv2).
+1. Sélectionnez **Paramètres généraux**.
+1. Vérifiez que **l’option Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** est **activée**.
+1. Sélectionnez **Enregistrer**.
 
 ## <a name="stop-infected-file-downloads-from-sharepoint-online"></a>Arrêter les téléchargements de fichiers infectés à partir de SharePoint Online
 
-Par défaut, les utilisateurs ne peuvent pas ouvrir, déplacer, copier ou partager des fichiers malveillants détectés par les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams. Toutefois, l’option *Télécharger* est toujours disponible et doit être *désactivée*. 
+Par défaut, les utilisateurs ne peuvent pas ouvrir, déplacer, copier ou partager des fichiers malveillants détectés par les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams. Toutefois, l’option *Télécharger* est toujours disponible et doit être *désactivée*.
 
 Pour plus d’informations, consultez [l’étape 2 : (*recommandé*) Utiliser SharePoint Online PowerShell pour empêcher les utilisateurs de télécharger des fichiers malveillants](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 
-1.  Ouvrez [et connectez-vous à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-1.  Exécutez la commande suivante : **Set-SPOTenant -DisallowInfectedFileDownload $true**.
+1. Ouvrez [et connectez-vous à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Exécutez la commande suivante : **Set-SPOTenant -DisallowInfectedFileDownload $true**.
 
 ### <a name="further-reading"></a>Lire plus en détail
+
 [Recommandations de stratégie pour la sécurisation des sites et fichiers SharePoint](/microsoft-365/security/office-365-security/sharepoint-file-access-policies)

@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: f8e6ba02d21c380a21efe0f3551d3a1ad17c9e9a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 06a784a64cb62bb6c8fa395c42072399bfa443e7
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730812"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985957"
 ---
 # <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Configurer une équipe avec l’isolation de sécurité à l’aide d’une étiquette de confidentialité unique
 
@@ -89,7 +89,7 @@ Pour créer une équipe pour les informations sensibles
 3. Sélectionnez **Créer une équipe à partir de zéro**.
 4. Dans la liste **Sensibilité**, conservez la valeur par défaut.
 5. Sous **Confidentialité**, cliquez sur **Privée**.
-6. Tapez un nom pour l'équipe qui est lié à votre projet sensible. Par exemple, **Projet Saturne**.
+6. Type a name for the team that is related to your sensitive project. For example, **Project Saturn**.
 7. Cliquez sur **Créer**.
 8. Ajoutez des utilisateurs à l’équipe, puis cliquez sur **Fermer**.
 
@@ -114,7 +114,7 @@ Pour créer une étiquette de confidentialité
 
 1. Ouvrez le portail de conformité Microsoft Purview, puis sous **Solutions**, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des données**</a>.
 1. Cliquez sur **Créer une étiquette**.
-1. Entrez un nom pour l’étiquette. Nous vous suggérons de donner le même nom que l’équipe avec qui vous allez l’utiliser.
+1. Give the label a name. We suggest naming it after the team that you'll be using it with.
 1. Tapez un nom et une description, puis cliquez sur **Suivant**.
 1. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
 1. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, sélectionnez **Chiffrer les fichiers et les e-mails**, puis cliquez sur **Suivant**.

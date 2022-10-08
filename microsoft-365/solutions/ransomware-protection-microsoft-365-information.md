@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : Vérifier les informations'
+title: Step 5. Protect information
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
 description: Utilisez l’accès contrôlé aux dossiers, Microsoft Purview Information Protection, DLP, et Microsoft Defender for Cloud Apps pour protéger vos données sensibles Microsoft 365.
-ms.openlocfilehash: a52d06198f8a3cf4ea7e35cc569b8fa1d705d0d3
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 4200d7bdf5acb71710047478704f9083d83579aa
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728097"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986045"
 ---
-# <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
+# <a name="step-5-protect-information"></a>Étape 5. Protéger les informations
 
 Étant donné que les attaquants par rançongiciel vont également examiner vos données sur site situées sur des fichiers, des bases de données et d’autres types de serveurs, l’une des meilleures façons de protéger ces données consiste à les migrer vers votre client Microsoft 365. Une fois à cet emplacement, ils peuvent être protégés par des fonctionnalités intégrées d’atténuation et de récupération telles que le [contrôle de version, la corbeille et restauration de fichiers](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
@@ -70,7 +70,7 @@ Une fois qu’un pirate de rançongiciel a infiltré votre client, il tente d’
 En fonction de ce comportement d’attaquant classique, il existe deux niveaux de difficulté pour la personne malveillante :
 
 - **Faible :** Une personne malveillante peut utiliser un compte à faible autorisation et découvrir vos informations sensibles en raison d’un large accès dans votre client.
-- **Supérieur :** Une personne malveillante ne peut pas utiliser un compte à autorisation faible et découvrir vos informations sensibles en raison d’autorisations strictes. Elle devrait escalader ses autorisations en déterminant puis en compromettant les informations d'identification d'un compte qui a accès à un emplacement contenant des informations sensibles, mais ne pourrait alors ne pouvoir effectuer qu'un ensemble limité d'actions.
+- **Higher:** An attacker can't use a low-permission account and discover your sensitive information because of strict permissions. They must escalate their permissions by determining and then compromising the credentials of an account that has access to a location with sensitive information, but then may only be able to do a limited set of actions.
 
 Pour les informations sensibles, vous devez rendre le niveau de difficulté aussi élevé que possible.
 

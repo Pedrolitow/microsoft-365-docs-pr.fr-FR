@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: En savoir plus sur les interactions de paramètres entre Groupes Microsoft 365, Teams et SharePoint
-ms.openlocfilehash: 4a4c92227927a5065b7c6a8afb355d5fe5b8025d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6d66b7e84d922108e83e8fa3e045272c82fd8f51
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731053"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986331"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Paramètres des interactions entre les groupes Microsoft 365, Teams et SharePoint
 

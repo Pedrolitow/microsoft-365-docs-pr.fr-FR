@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
 description: Utilisez des connexions sécurisées et l’accès conditionnel pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 040c61447feffbdec4d03aac6d2b05aecc0f2175
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 33559370794de182addee0ea40ccadfe0cca0bf0
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727653"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985474"
 ---
 # <a name="step-3-protect-identities"></a>Étape 3. Protéger vos identités
 
@@ -54,7 +54,7 @@ Utilisez les meilleures pratiques ci-après :
 - Implémentez le principe des [privilèges minimum](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) et utilisez la protection par mot de passe comme décrit dans [Augmenter la sécurité de la connexion](#increase-sign-in-security) pour les comptes d’utilisateur qui utilisent encore des mots de passe pour leurs connexions. 
 - Évitez d’utiliser des comptes de service de niveau administrateur à l’échelle du domaine. 
 - Limitez les privilèges d’administration locaux pour restreindre l’installation de Chevaux de Troie autorisant un accès à distance (RAT) et d’autres applications indésirables.
-- Utilisez l’accès conditionnel Azure AD pour valider explicitement la confiance des utilisateurs et des stations de travail avant d’autoriser l’accès aux portails d’administration. Voir [cet exemple](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) du portail Azure.
+- Use Azure AD Conditional Access to explicitly validate the trust of users and workstations before allowing access to administrative portals. See [this example](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) for the Azure portal.
 - Activez la gestion des mots de passe de l’administrateur local.
 - Déterminez l’endroit où les comptes à privilèges élevés se connectent et exposent des informations d’identification. Les comptes à privilèges élevés ne doivent pas être présents sur les stations de travail.
 - Désactivez le stockage local des mots de passe et des informations d’identification.

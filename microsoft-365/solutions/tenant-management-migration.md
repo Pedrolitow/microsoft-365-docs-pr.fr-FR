@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Migrez vos appareils Windows, vos applications clientes Office et vos serveurs Office pour vos locataires Microsoft 365.
-ms.openlocfilehash: b0c08bb17edba7e19639c48829724457643b02cb
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 03689cdecc778ecce3b0eeed43772eedd3460469
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730768"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67983099"
 ---
-# <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 4. Migration pour votre Microsoft 365 pour les locataires d’entreprise
+# <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 4. Migration pour votre Microsoft 365 pour les locataires d’entreprise
 
 La plupart des organisations d’entreprise ont un environnement hétérogène qui inclut plusieurs versions de systèmes d’exploitation, de logiciels clients et de logiciels serveur. Microsoft 365 pour entreprise inclut les versions les plus sécurisées des composants clés de votre infrastructure informatique. Il inclut également des fonctionnalités de productivité conçues pour tirer parti des technologies cloud.
 

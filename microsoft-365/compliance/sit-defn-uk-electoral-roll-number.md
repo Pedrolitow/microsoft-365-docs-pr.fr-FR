@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Royaume-Uni définition d’entité de type d’information sensible de numéro de liste électorale.
-ms.openlocfilehash: d821878a155ec6c2393150265ddac1dc18fc5f10
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c4eb8c66e389f81c1f9f99e7fd3e662203e07ed7
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995690"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472911"
 ---
 # <a name="uk-electoral-roll-number"></a>Royaume-Uni numéro de roll de la série de nœuds
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

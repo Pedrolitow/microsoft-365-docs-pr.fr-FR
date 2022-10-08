@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Royaume-Uni définition d’entité de type d’information sensible de numéro de service de santé national.
-ms.openlocfilehash: d636be281b1652934fa7b4b83b3a4b5da7794a09
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b16ac1cc66b53bff232967aedc8b9f5265908d0e
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995689"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472253"
 ---
 # <a name="uk-national-health-service-number"></a>Royaume-Uni numéro de service de santé national
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 
@@ -51,7 +54,7 @@ Oui
 Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction `Func_uk_nhs_number` trouve un contenu qui correspond au modèle.
-- L’une des affirmations suivantes est vraie :
+- L’un des cas suivants est vrai :
     - Un mot clé figurant dans la liste `Keyword_uk_nhs_number` est trouvé.
     - Un mot clé figurant dans la liste `Keyword_uk_nhs_number1` est trouvé.
     - Un mot clé figurant dans la liste `Keyword_uk_nhs_number_dob` est trouvé.
@@ -89,8 +92,8 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 
 ### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
-- GP
+- Gp
 - DOB
-- D.D.N
+- D.d.n
 - Date of Birth
 - Birth Date

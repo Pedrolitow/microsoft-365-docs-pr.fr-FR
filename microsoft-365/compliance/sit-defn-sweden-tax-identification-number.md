@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro d’identification fiscale en Suède.
-ms.openlocfilehash: 538a3edf488c346f43f005d0614f25d2d04e2f0c
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 8e7691d478ab23a1b454bab0f0a739f60d9ac59e
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67368012"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472582"
 ---
 # <a name="sweden-tax-identification-number"></a>Numéro d’identifiant fiscal suédois
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Format
 

@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:
@@ -19,12 +20,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilisez l’outil Diagnostics de page pour SharePoint pour analyser le portail moderne SharePoint Online et les pages de publication classiques par rapport à un ensemble prédéfini de critères de performances.
-ms.openlocfilehash: 0d89d16ead05a5a683fbfbf7b1dde35cde4dcde9
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: c97a2a62cd75bdfe153f4794962c0f5f1ad22669
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670198"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300473"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utiliser l’outil Diagnostics de page pour SharePoint
 
@@ -38,7 +39,10 @@ L’outil Diagnostics de page pour SharePoint peut être installé pour :
 >[!TIP]
 >La version **2.0.0** et ultérieure inclut la prise en charge des pages modernes en plus des pages de site classiques. Si vous ne savez pas quelle version de l’outil que vous utilisez, vous pouvez sélectionner le lien **About** ou les points de suspension (...) pour vérifier votre version. **Toujours mettre à jour vers la dernière version** lors de l’utilisation de l’outil.
 
-L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pour le nouveau Microsoft Edge (les navigateurs https://www.microsoft.com/edge) et Chrome que vous pouvez utiliser pour analyser les pages de sites de publication SharePoint classiques et les portails modernes. Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
+L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pour le nouveau Microsoft Edge (les navigateurs https://www.microsoft.com/edge) et Chrome que vous pouvez utiliser pour analyser les pages de sites de publication SharePoint classiques et les portails modernes. 
+
+> [!IMPORTANT]
+> Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint ou sur une page d’application SharePoint. Le type de page d’application est conçu pour être utilisé pour des applications métier spécifiques dans SharePoint Online et non pour les portails. L’outil est conçu pour optimiser les pages du portail et les pages de site Teams.
 
 L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfini de règles et affiche des informations détaillées lorsque les résultats d’un test se trouvent en dehors de la valeur de référence. Les administrateurs et concepteurs SharePoint Online peuvent utiliser l’outil pour résoudre les problèmes de performances et s’assurer que les nouvelles pages sont optimisées avant la publication.
 

@@ -12,15 +12,16 @@ search.appverid: MET150
 ms.localizationpriority: medium
 ms.collection:
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: c916afef567c0edeebf4afe274cec5e3818f7204
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 08db9f99ac5a7fd5dc2c116a1f2ef9f35e7f71c7
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811853"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495032"
 ---
 # <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Commencez par un déploiement pilote de Microsoft 365 pour les travailleurs de première ligne
 
