@@ -7,19 +7,20 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Inviter des utilisateurs à rejoindre Microsoft 365 Business Standard organisation
-ms.openlocfilehash: 30896a963c3a60e3124e0d1a750bb17a44941037
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 3ebee814a0241a6f4c6f7bc13e21209693cda6b8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644244"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168922"
 ---
 # <a name="invite-users-to-a-microsoft-365-for-business-subscription-admin"></a>Inviter des utilisateurs à un abonnement Microsoft 365 pour les entreprises (Administration)
 
@@ -51,7 +52,7 @@ Vérifiez que vous êtes déjà [inscrit à Microsoft 365 Business Standard](sig
 
 Effectuez un suivi auprès de vos utilisateurs et assurez-vous qu’ils ont reçu l’invitation que vous avez envoyée au sujet du partage de votre abonnement Microsoft 365 Business Standard.
 
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>J’ai partagé une invitation par e-mail, mais l’utilisateur n’a pas reçu l’e-mail ?
 

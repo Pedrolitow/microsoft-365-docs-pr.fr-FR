@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment définir une stratégie dans le Centre d'administration Microsoft 365 pour permettre aux utilisateurs de réinitialiser leurs propres mots de passe à l’aide de l’outil de réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 7ee0d3aa8053c4156eba999a77a5ea5d1643cd98
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: d9c962b26343cf5e2ddd6c1f4b2c8126b2b157fa
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662330"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195190"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
@@ -64,7 +65,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
   
 - Vous bénéficiez gratuitement de la réinitialisation de mot de passe en libre-service **pour les** utilisateurs du cloud avec n’importe quel plan Microsoft 365 professionnel, éducatif ou payant à but non lucratif. Il ne fonctionne pas avec la version d’évaluation de Microsoft 365.
 
-- Elle utilise Azure. Vous bénéficierez automatiquement et **gratuitement** de cette fonction dans Azure lorsque vous effectuerez ces étapes. L'activation de la réinitialisation du mot de passe libre-service ne vous coûtera rien si vous n'utilisez aucune autre fonctionnalité Azure.
+- It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.
 
 - **Si vous utilisez un Active Directory local**, les deux points ci-dessus ne s’appliquent pas. Au lieu de cela, vous pouvez configurer cette option, mais **elle nécessite un abonnement payant à Azure AD Premium**.
 

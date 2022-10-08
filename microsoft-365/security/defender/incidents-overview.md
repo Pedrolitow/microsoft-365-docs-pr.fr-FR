@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9293cf55f769f86d16a8f63aaebee7d1a524c32c
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d1c43e36c4f05bfd6d3324453e641a7120ac2771
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811545"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060909"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Réponse aux incidents avec Microsoft 365 Defender
 
@@ -196,7 +196,7 @@ Vous pouvez configurer Microsoft 365 Defender pour informer votre personnel avec
  
 **Obtenez plus de granularité avec des sources de détection spécifiques** : vous ne pouvez recevoir des notifications que pour une source de détection spécifique. 
 
-**Définissez la gravité par détection ou source de service** : vous pouvez choisir d’obtenir des notifications par e-mail uniquement sur des gravités spécifiques par source. Par exemple, vous pouvez recevoir une notification pour les alertes moyenne et élevée pour EDR et toutes les gravités pour les experts Microsoft Defender.  
+**Définissez la gravité par détection ou source de service** : vous pouvez choisir d’obtenir des notifications par e-mail uniquement sur des gravités spécifiques par source. Par exemple, vous pouvez être averti pour les alertes moyennes et élevées pour EDR et toutes les gravités pour Microsoft Defender Experts.  
 
 La notification par e-mail contient des détails importants sur l’incident, comme le nom, la gravité et les catégories de l’incident, entre autres. Vous pouvez également accéder directement à l’incident et commencer votre analyse immédiatement. Pour plus d’informations, consultez [Examiner les incidents](investigate-incidents.md).
 

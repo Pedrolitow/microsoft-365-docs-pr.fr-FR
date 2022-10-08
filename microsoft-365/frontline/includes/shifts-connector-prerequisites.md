@@ -4,13 +4,13 @@ ms.author: v-lanachin
 ms.date: 03/31/2022
 ms.topic: include
 audience: admin
-ms.service: msteams
-ms.openlocfilehash: ab375a876eb62e5f41e5dd7cda3743d4010b95ff
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.service: microsoft-365-frontline
+ms.openlocfilehash: 89752e9d13f8647b1c99f6ad99c2baa096b74e02
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822436"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300070"
 ---
 Avant de commencer, assurez-vous d'avoir les prérequis suivants :
 
@@ -35,6 +35,6 @@ Avant de commencer, assurez-vous d'avoir les prérequis suivants :
      - proxyHeader : X-MS-AuthToken
 
 - Au moins une équipe est configurée dans Teams.
-- Vous avez ajouté votre compte système Microsoft 365 en tant que propriétaire d'équipe à toutes les équipes que vous souhaitez mapper.</br> [Créez ce compte dans Microsoft 365](/microsoft-365/admin/add-users/add-users) et attribuez-lui une licence Microsoft 365. Ensuite, ajoutez le compte en tant que propriétaire d'équipe à toutes les équipes que vous souhaitez mapper. Le connecteur Shifts utilise ce compte lors de la synchronisation des modifications Shifts à partir de Blue Yonder WFM.
+- Vous avez ajouté un compte système Microsoft 365 en tant que propriétaire d’équipe à toutes les équipes que vous souhaitez mapper.</br> [Créez ce compte dans Microsoft 365](/microsoft-365/admin/add-users/add-users) et attribuez-lui une licence Microsoft 365. Ensuite, ajoutez le compte en tant que propriétaire d'équipe à toutes les équipes que vous souhaitez mapper. Le connecteur Shifts utilise ce compte lors de la synchronisation des modifications Shifts à partir de Blue Yonder WFM.
 
     Nous vous recommandons de créer un compte spécifiquement à cet effet et de ne pas utiliser votre compte utilisateur.

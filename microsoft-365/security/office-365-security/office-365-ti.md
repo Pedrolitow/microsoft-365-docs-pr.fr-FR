@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les fonctionnalités d’investigation et de réponse aux menaces dans Microsoft Defender pour Office 365 Plan.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0227662a5a4531a609f1011ca8a85fbcfd01ba04
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: ed5c9fe16201a2cc82fb6a6869018145da9a1024
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851653"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060491"
 ---
 # <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 

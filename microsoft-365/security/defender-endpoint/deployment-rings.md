@@ -12,18 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - highpri
-ms.topic: article
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f87554eccfbd4123d36c3cb5800997ddc7613f50
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 25332c75c9f4362e456f34999f77ef7d83fb8c4e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697992"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194354"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Déployer Microsoft Defender pour point de terminaison en anneaux
 
@@ -81,7 +82,7 @@ Le tableau suivant présente les points de terminaison pris en charge et l’out
 
 |Point de terminaison|Outil de déploiement|
 |---|---|
-|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br> REMARQUE : Si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous.<br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
+|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br> REMARQUE : Si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous.<br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) |
 |**MacOS**|[Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md)|
 |**Serveur Linux**|[Script local](linux-install-manually.md) <br> [Marionnette](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[Microsoft Endpoint Manager](ios-install.md)|

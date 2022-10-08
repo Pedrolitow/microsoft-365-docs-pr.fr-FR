@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b4830362aa975274651a27568fa1221d1ef0bc41
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8d728bd4e59371783725844fe83e16b4be62311d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696856"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168461"
 ---
 # <a name="export-browser-extensions-assessment-per-device"></a>Exporter l’évaluation des extensions de navigateur par appareil
 

@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres asf (Advanced Spam Filter) disponibles dans les stratégies anti-courrier indésirable dans Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 67b35aceb9507683ebe83c7a5bcde2c2bcec4d94
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3a4b68d88b63a7c6a572f96fec866d1a4e6ccbff
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473610"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060601"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres asf (Advanced Spam Filter) dans EOP
 

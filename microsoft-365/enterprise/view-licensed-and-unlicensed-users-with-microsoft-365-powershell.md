@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Cet article explique comment utiliser PowerShell pour afficher les comptes d’utilisateurs Microsoft 365 sous licence et sans licence.
-ms.openlocfilehash: a1dc6b77f249d9c7af7c7b4c067e4ce4b6a3e66e
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: cd33a9ef5eaadd9c8ccf03dfb9c2f0c283016ebe
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669956"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194486"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Afficher les utilisateurs Microsoft 365 sous licence et sans licence avec PowerShell
 

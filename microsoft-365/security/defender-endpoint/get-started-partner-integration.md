@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: cef657818549e28375ea1ab44de815dc46f6da86
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bbe02015673c1faf00cfe4eb558d041c46de314f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696042"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169120"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Devenir un partenaire Microsoft Defender pour point de terminaison
 

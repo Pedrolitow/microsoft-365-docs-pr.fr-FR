@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -20,12 +21,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 ms.date: 05/26/2022
-ms.openlocfilehash: cb7d4bec9ae41d05be5b588f78a5197ed9ccbac0
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 1124d4041f8d8e230b2a530732a9a21a29d9852c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685632"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194992"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Comment payer votre abonnement avec un profil de facturation
 
@@ -59,13 +60,13 @@ Pour disposer de cette option, vous devez :
 - Devoir régler un abonnement dont le coût dépasse un montant qui varie en fonction de l’emplacement du service
 - Satisfaire à une vérification de solvabilité
 
-Si une vérification du crédit est nécessaire, vous en êtes informé lors de l'achat de votre abonnement. Si vous acceptez d'être contacté, vous recevez un courriel contenant de plus amples informations sur la demande d'approbation de crédit. Les vérifications de crédit sont généralement effectuées dans les deux jours ouvrables.
+If a credit check is required, you’re notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
 Si votre profil de facturation est soutenu par une facture, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être affiché. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande dans votre profil de facturation, ce numéro apparaît dans votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 
-[Consultez votre facture](view-your-bill-or-invoice.md) pour obtenir des instructions de paiement pour votre pays ou région. Si vous ne savez pas combien vous devez, vous pouvez consulter votre historique des factures et des paiements en ligne sous l’onglet **Factures** de la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Factures et paiements</a> .
+[Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country or region. If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 > [!NOTE]
 > Le paiement par chèque n'est disponible que pour quelques pays ou régions seulement.

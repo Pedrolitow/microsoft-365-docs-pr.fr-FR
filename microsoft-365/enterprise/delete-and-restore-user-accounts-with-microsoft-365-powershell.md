@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Découvrez comment utiliser différents modules dans PowerShell pour supprimer des comptes d’utilisateurs Microsoft 365.
-ms.openlocfilehash: 3ee58698400944b27f6e19d154d7a9d0c8bfccc1
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: d804e39da078189baea22aaa0ae5d68fb9b69163
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560216"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168724"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Supprimer des comptes d’utilisateur Microsoft 365 avec PowerShell
 
@@ -77,7 +79,7 @@ $userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le Module Microsoft Azure Active Directory pour Windows PowerShell.
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
 Lorsque vous supprimez un compte d’utilisateur via le module Microsoft Azure Active Directory pour Windows PowerShell, le compte n’est pas supprimé définitivement. En effet, vous pouvez le restaurer dans les 30 jours.
 
@@ -90,7 +92,7 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande avec *Msol* dans leur nom. Exécutez ces applets de commande à partir de Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
 >
 
 Cet exemple montre comment supprimer le compte d’utilisateur *BelindaN@litwareinc.com*.

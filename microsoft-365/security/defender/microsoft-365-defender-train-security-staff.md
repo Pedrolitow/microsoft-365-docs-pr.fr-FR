@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3dcf5904bb4d1f620c9b4bbd44299408b6fc21eb
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: e75ec1f0264f2b31526209ccce1ea3ee510228d9
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811917"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060821"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Former votre personnel de sécurité pour Microsoft 365 Defender
 

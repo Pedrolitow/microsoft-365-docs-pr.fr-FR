@@ -13,31 +13,26 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 8c4aa1036af00eaaf7d776c267648141bf4db733
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 6a1062fe9e06e0b73f2c8eebd8f17b87684c0709
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992238"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300444"
 ---
 # <a name="use-the-shifts-connector-wizard-to-connect-shifts-to-blue-yonder-workforce-management"></a>Utilisez l’Assistant Connecteur Shifts pour connecter Shifts à Blue Yonder Workforce Management
 
 ## <a name="overview"></a>Vue d’ensemble
 
-L’Assistant Connecteur Shifts dans le Centre d'administration Microsoft 365 vous permet d’intégrer l’application Shifts dans Microsoft Teams à votre système de gestion du personnel (WFM). Une fois que vous avez configuré une connexion, vos employés de première ligne peuvent afficher et gérer en toute transparence leurs planifications dans votre système WFM à partir de Shifts.
-
-L’Assistant configure le connecteur Shifts, crée une connexion à votre système WFM et applique les paramètres de synchronisation et les mappages d’équipe que vous choisissez. Les paramètres de synchronisation déterminent les informations de planification synchronisées entre votre système WFM et Shifts. Les mappages d’équipe définissent la relation de synchronisation entre vos instances WFM et les équipes dans Teams. Vous pouvez mapper aux équipes existantes et aux nouvelles équipes.
-
-Vous pouvez configurer plusieurs connexions, chacune avec des paramètres de synchronisation différents. Par exemple, si votre organisation possède plusieurs emplacements avec des exigences de planification différentes, créez une connexion avec des paramètres de synchronisation uniques pour chaque emplacement. N’oubliez pas qu’une instance WFM ne peut être mappée qu’à une seule équipe à un moment donné. Si une instance WFM est déjà mappée à une équipe, elle ne peut pas être mappée à une autre équipe.
-
-Avec votre système WFM comme système d’enregistrement, vos employés de première ligne peuvent voir et échanger des shifts, gérer leur disponibilité et demander des congés dans Shifts sur leurs appareils. Les responsables de première ligne peuvent continuer à utiliser votre système WFM pour configurer des planifications.
+[!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
 
 ## <a name="integrate-shifts-with-blue-yonder-workforce-management"></a>Intégrer Shifts à Blue Yonder Workforce Management
 
-Actuellement, l’assistant prend en charge le connecteur [Microsoft Teams Shifts pour Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder). Ce connecteur vous permet d’intégrer Shifts avec Blue Yonder Workforce Management (Blue Yonder WFM) pour gérer vos horaires et les tenir à jour. Dans cet article, nous vous présentons comment exécuter l’Assistant pour configurer une connexion à Blue Yonder WFM via le connecteur.
+Le [connecteur Microsoft Teams Shifts pour Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) vous permet d’intégrer Shifts à Blue Yonder Workforce Management (Blue Yonder WFM) pour gérer vos planifications et les tenir à jour. Dans cet article, nous vous présentons comment exécuter l’Assistant pour configurer une connexion à Blue Yonder WFM via le connecteur.
 
 > [!NOTE]
 > Vous pouvez également utiliser PowerShell pour intégrer Shifts à Blue Yonder WFM. Pour en savoir plus, consultez [Utiliser PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md).
@@ -60,7 +55,7 @@ Vous devez être administrateur général de Microsoft 365 pour exécuter l’As
 
 Utilisez PowerShell pour supprimer des planifications des équipes.
 
-1. Tout d’abord, vous devez installer les modules PowerShell et être configuré. Suivez les étapes pour [configurer votre environnement](shifts-connector-powershell-manage.md#set-up-your-environment).
+1. Tout d’abord, vous devez installer les modules PowerShell et être configuré. Suivez les étapes pour [configurer votre environnement](shifts-connector-powershell-manage.md#set-up-your-environment)
 1. Exécutez la commande suivante :
 
     ```powershell
@@ -79,7 +74,7 @@ Pour en savoir plus, consultez la rubrique [Remove-CsTeamsShiftsScheduleRecord](
 1. Sélectionnez **Connecter votre système de gestion du personnel**. Ici, vous pouvez en savoir plus sur les connecteurs Shifts et l’expérience de travail et de gestionnaire de première ligne lorsque vous connectez Shifts à votre système WFM.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Capture d’écran de la page de détails de l’Assistant Connecteur Shifts dans le Centre d’administration Microsoft 365." lightbox="media/shifts-connector-wizard-get-started.png":::
 1. Lorsque vous êtes prêt, sélectionnez **Démarrage**.
-1. Sélectionnez **Suivant** pour créer une connexion Blue Yonder WFM.
+1. Dans la page Choisir votre connecteur, choisissez **Blue Yonder Workforce Management**, puis sélectionnez **Suivant** pour créer une connexion Blue Yonder WFM.
 
 ### <a name="enter-connection-details"></a>Entrer les détails de la connexion
 <a name="connection_details"> </a>
@@ -100,7 +95,8 @@ Dans la page Paramètres de synchronisation, vous choisissez les informations à
 1. Sous **Destinataires des notifications par e-mail**, choisissez qui reçoit les notifications par e-mail concernant cette connexion. Vous pouvez ajouter des utilisateurs et des groupes individuels. Les notifications par e-mail contiennent des informations sur l’état de l’installation de la connexion et sur les éventuels problèmes ou erreurs susceptibles de se produire après la configuration de la connexion.
 1. Choisissez vos paramètres de synchronisation :
     1. Sous **Planification et shifts**, choisissez les données WFM Blue Yonder que les utilisateurs de Shifts peuvent voir ou modifier, puis définissez la fréquence de synchronisation.
-    2. Sous **Demandes**, choisissez les types de demandes que les utilisateurs Shifts peuvent voir et créer.
+    1. Sous **Carte de temps**, choisissez l’action que les utilisateurs peuvent effectuer avec les entrées de temps.
+    1. Sous **Demandes**, choisissez les types de demandes que les utilisateurs Shifts peuvent voir et créer.
 
     > [!IMPORTANT]
     > Si vous avez choisi l’une des options suivantes pour désactiver les shifts ouverts, les demandes de shift ouverts, les demandes d’échange ou les demandes de congé, vous devez effectuer une autre étape pour masquer la fonctionnalité dans Shifts.
@@ -130,25 +126,7 @@ Sélectionnez les instances que vous souhaitez mapper.
 <a name="search_teams"> </a> Ensuite, mappez chaque instance à une équipe dans Teams. Vous pouvez mapper une instance à une équipe existante ou créer une équipe.
 :::image type="content" source="media/shifts-connector-wizard-search-team.png" alt-text="Capture d’écran du volet montrant l’option d’équipe de recherche et créer une option d’équipe." lightbox="media/shifts-connector-wizard-search-team.png":::
 
-##### <a name="to-map-an-instance-to-an-existing-team"></a>Pour mapper une instance à une équipe existante
-
-1. Sélectionnez le nom de l’instance.
-2. Dans le volet, recherchez l’équipe, puis sélectionnez-la. Gardez à l’esprit que les équipes qui sont déjà mappées à une instance de cette connexion ne s’affichent pas dans la recherche.
-3. Choisissez le fuseau horaire et la ville la plus proche.
-4. Sélectionnez **Enregistrer**, puis **Suivant**.
-
-##### <a name="to-map-an-instance-to-a-new-team"></a>Pour mapper une instance à une nouvelle équipe
-
-1. Sélectionnez le nom de l’instance.
-2. Dans le volet, choisissez **Créer une équipe**. Vous accédez à un nouvel onglet dans votre navigateur, où vous pouvez créer une équipe dans le Centre d’administration Microsoft 365.
-    1. Entrez un nom et une description facultative pour l’équipe.
-    1. Ajoutez un ou plusieurs propriétaires d’équipe. Veillez à ajouter le compte système Microsoft 365 en tant que propriétaire.
-    1. Ajouter des membres de l'équipe.
-    1. Ajoutez une adresse e-mail d’équipe et choisissez un paramètre de confidentialité.
-    1. Passez en revue vos paramètres, puis choisissez **Ajouter une équipe**. Lorsque votre équipe est créée, choisissez **Fermer**.
-3. Revenez à l’Assistant, recherchez, puis sélectionnez la nouvelle équipe que vous avez créée.
-4. Choisissez le fuseau horaire et la ville la plus proche.
-5. Sélectionnez **Enregistrer**, puis **Suivant**.
+[!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
 #### <a name="use-a-csv-file-to-map-instances-to-teams"></a>Utiliser un fichier CSV pour mapper des instances à des équipes
 
@@ -219,13 +197,22 @@ Pour masquer les équipes ouvertes, les demandes de permutation et les demandes 
 
 Pour masquer les demandes de shifts ouverts dans Shifts, accédez à **Paramètres** dans Shifts, puis désactivez le paramètre **Ouvrir les shifts** .
 
-## <a name="if-you-need-to-make-changes-to-a-connection"></a>Si vous devez apporter des modifications à une connexion
+## <a name="manage-your-connection"></a>Gérer votre connexion
 <a name="update_connection"> </a>
 
-Une fois qu’une connexion est configurée, vous utilisez PowerShell pour y apporter des modifications. Par exemple, vous pouvez mettre à jour les paramètres de synchronisation, les mappages d'équipe et désactiver la synchronisation pour une connexion. Pour obtenir des instructions pas à pas, consultez [Utiliser PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
+Une fois la connexion configurée, vous pouvez la gérer et y apporter des modifications dans le Centre d'administration Microsoft 365 ou à l’aide de PowerShell.
+
+### <a name="use-the-microsoft-365-admin-center"></a>Utiliser le Centre d'administration Microsoft 365
+
+La page Gestion des connecteurs répertorie chaque connexion que vous avez configurée, ainsi que des informations telles que l’état d’intégrité et les détails de l’intervalle de synchronisation. Vous pouvez également accéder à l’Assistant pour apporter des modifications à l’une de vos connexions. Par exemple, vous pouvez mettre à jour les paramètres de synchronisation et les mappages d’équipe.
+
+Pour plus d’informations, consultez [Utiliser le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
+
+### <a name="use-powershell"></a>Utiliser PowerShell
+
+Vous pouvez utiliser PowerShell pour afficher un rapport d’erreurs, modifier les paramètres de connexion, désactiver la synchronisation, etc. Pour obtenir des instructions pas à pas, consultez [Utiliser PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
 
 ## <a name="related-articles"></a>Articles connexes
 
 - [Connecteurs de Plannings](shifts-connectors.md)
-- [Utilisez PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
 - [Gérer l’application Shifts pour votre organisation dans Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

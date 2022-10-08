@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour l’Afrique
+title: Informations de support pour le Bénin
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 843e66d4261d4520be1727389635226214ffa26e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 1972886a90e93fae350005ccd252a657231689eb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372839"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168812"
 ---
-# <a name="contact-support-for-benin"></a>Contacter le support technique pour l’Sénégal
+# <a name="contact-support-for-benin"></a>Contacter le support technique pour le Bénin
 
 [Rechercher un autre pays ou une autre région](../get-help-support.md).
 
@@ -39,4 +41,4 @@ Français : Lun.-ven. 8H-19h
 
 Anglais : 24h/24, 7j/7
 
-Les frais d’appels internationaux s’appliquent
+Des frais d’appel internationaux s’appliquent

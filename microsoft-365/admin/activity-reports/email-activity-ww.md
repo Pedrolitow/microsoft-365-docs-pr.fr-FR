@@ -5,9 +5,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,14 +20,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Découvrez comment obtenir un rapport d’activité de messagerie et comprendre les tendances des e-mails des utilisateurs à l’aide du tableau de bord Rapports Microsoft 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 2cbea5265976f46be41379843981afb5a5a057de
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: b443dc43449ec3de0db0fad135269a9d297c8554
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662097"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195278"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Rapports Microsoft 365 dans le centre d’administration - Activité de messagerie
+# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - activité Email
 
 Le tableau de bord Rapports Microsoft 365 affiche la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
@@ -35,14 +36,14 @@ Par exemple, vous pouvez obtenir une vue d'ensemble du trafic de courrier au sei
 ## <a name="how-to-get-to-the-email-activity-report"></a>Comment accéder au rapport d'activité de courrier
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
-2. Sélectionnez **Afficher plus** sous **Activité e-mail**. 
-3. Dans la liste **déroulante Activité e-mail**, sélectionnez **Activité e-mail** **Exchange**\>.
+2. Sélectionnez **Afficher plus** sous **Email activité**. 
+3. Dans la liste **déroulante Email activité**, sélectionnez **l’activité Exchange** \> **Email**.
   
 ## <a name="interpret-the-email-activity-report"></a>Interpréter le rapport d'activité de courrier
 
 Vous pouvez visualiser l'activité de courrier d'un utilisateur à l'aide des graphiques **Activité** et **Utilisateurs**. 
   
-![Rapport d’activité d’e-mail.](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
+![Email rapport d’activité.](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
 
 Le rapport **Activité de courrier** permet d'observer des tendances sur les 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré). Les données de chaque rapport couvrent généralement jusqu’aux dernières 24 à 48 heures.
 
@@ -61,10 +62,10 @@ Vous pouvez filtrer la série que vous voyez sur le graphique en sélectionnant 
  Le tableau présente la répartition des activités de courrier par utilisateur. Il répertorie tous les utilisateurs auxquels un produit Exchange est affecté, ainsi que les activités de courrier de chacun d'eux.
 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |Nom d’utilisateur  |Adresse e-mail de l’utilisateur. |
-|Nom d’affichage |Nom complet de l’utilisateur. |
+|Nom |Nom complet de l’utilisateur. |
 |Deleted |Fait référence à l’utilisateur dont l’état actuel est supprimé, mais qui a été actif pendant une partie de la période de création de rapports du rapport. |
 |Date de suppression |Date à laquelle l’utilisateur a été supprimé. |
 |Date de la dernière activité  | La dernière fois que l’utilisateur a effectué une activité de lecture ou d’envoi de courrier électronique. |
@@ -80,9 +81,9 @@ Si la politique de votre organisation vous empêche de consulter les rapports su
 
 **Sélectionnez Choisir des colonnes** pour ajouter ou supprimer des colonnes du rapport.  
 
-![Rapport d’activité de messagerie : choisissez des colonnes.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)
+![Email rapport d’activité : choisissez des colonnes.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)
 
 Vous pouvez également exporter les données du rapport dans un fichier Excel .csv, en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. 
    
 > [!NOTE]
-> Le rapport d’activité e-mail est disponible uniquement pour les boîtes aux lettres associées aux utilisateurs disposant de licences.
+> Le rapport d’activité Email est disponible uniquement pour les boîtes aux lettres associées aux utilisateurs disposant de licences.

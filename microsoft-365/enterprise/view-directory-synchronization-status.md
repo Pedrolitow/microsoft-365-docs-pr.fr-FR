@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -21,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Dans cet article, découvrez comment vérifier l’état de votre synchronisation d’annuaires dans Office 365.
-ms.openlocfilehash: 050c4f4abfb8e4d925af3d65117d6c9ae8cb26e7
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 2318bed115921cd2eb2d44f12822b9a94f79bd80
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670474"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194508"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Afficher l’état de synchronisation d’annuaires dans Microsoft 365
 

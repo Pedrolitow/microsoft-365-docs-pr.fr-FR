@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.openlocfilehash: c66794d8f09d93b2582938d3eda996be7f9b5400
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d8c3fd2579798845c4b61222feff333b85401478
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471056"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060777"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-identity-to-microsoft-365-defender"></a>Redirection de comptes de Microsoft Defender pour Identity vers Microsoft 365 Defender
 

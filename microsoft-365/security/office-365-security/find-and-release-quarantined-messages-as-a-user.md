@@ -14,19 +14,19 @@ search.appverid:
 - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: eb53982c581dc44a4a8f0b4144803a43dfdc9aa0
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: c356ff685d2ab64fe46c5d79d53473b23ce9b83d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796937"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060535"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -35,9 +35,9 @@ ms.locfileid: "67796937"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans EOP](quarantine-email-messages.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 
 En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités **par défaut** à votre disposition en tant que destinataire d’un message mis en quarantaine sont décrites dans le tableau suivant :
 
@@ -45,15 +45,15 @@ En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités
 |---|:---:|:---:|:---:|
 |**Stratégies anti-courrier indésirable**||||
 |En nombre|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Courrier indésirable|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Courrier indésirable|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Courrier fortement suspecté d’être indésirable|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Hameçonnage|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Hameçonnage à haute fiabilité||||
 |**Stratégies anti-hameçonnage**||||
-|Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Protection contre l’emprunt d’identité de l’utilisateur dans Defender pour Office 365|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection contre l’emprunt d’identité de l’utilisateur dans Defender pour Office 365|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |**Stratégies anti-programme malveillant**||||
 |Messages électroniques avec pièces jointes mis en quarantaine en tant que programmes malveillants.||||
 |**Pièces jointes sécurisées dans Defender pour Office 365**||||
@@ -171,25 +171,25 @@ Pour donner suite au message, consultez la section suivante.
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
 > [!NOTE]
-> Votre capacité à prendre des mesures sur les messages mis en quarantaine est contrôlée par la [stratégie de mise en quarantaine](quarantine-policies.md) qui s’applique au type de message mis en quarantaine (qui peut être la [stratégie de quarantaine par défaut pour la raison de mise en quarantaine](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). Cette section décrit toutes les actions disponibles.
+> Your ability to take action on quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). This section describes all available actions.
 
 Après avoir sélectionné un message en quarantaine dans la liste, les actions suivantes sont disponibles dans le flyout des détails :
 
 :::image type="content" source="../../media/quarantine-user-message-details-flyout-actions.png" alt-text="Les actions disponibles dans les détails du menu flottant d'un message en quarantaine" lightbox="../../media/quarantine-user-message-details-flyout-actions.png":::
 
-- ![Icône d’e-mail de version.](../../media/m365-cc-sc-check-mark-icon.png) **E-mail de version**<sup>\*</sup> : Transmet le message dans votre boîte de réception.
+- ![Icône de version d’e-mail](../../media/m365-cc-sc-check-mark-icon.png) **E-mail**<sup>\*</sup> de publication : remet le message à votre boîte de réception.
 
 - ![Afficher l’icône des en-têtes de messages.](../../media/m365-cc-sc-eye-icon.png) **Afficher les en-têtes de message** : Sélectionnez ce lien pour voir le texte de l'en-tête du message. Le flyout de **l'en-tête de message** apparaît avec les liens suivants :
 - **Copier l'en-tête du message** : Cliquez sur ce lien pour copier l'en-tête du message (tous les champs d'en-tête) dans votre presse-papiers.
 - **Analyseur d'en-tête de message Microsoft Corporation** : Pour analyser en profondeur les champs et les valeurs de l'en-tête, cliquez sur ce lien pour accéder à l'analyseur d'en-tête de message. Collez l'en-tête du message dans la section **Insérez l'en-tête du message que vous souhaitez analyser** (CTRL+V ou cliquez avec le bouton droit de la souris et choisissez **Coller**), puis cliquez sur **Analyser les en-têtes**.
 
-Les actions suivantes sont disponibles après avoir cliqué sur l'icône. ![Autres actions ](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** :
+Les actions suivantes sont disponibles après avoir cliqué sur ![l’icône Autres actions.](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** :
 
-- ![Icône de prévisualisation de message ](../../media/m365-cc-sc-eye-icon.png) **Prévisualisation de message** : Dans le menu flottant qui apparaît, sélectionnez l'un des onglets suivants :
+- ![Preview message icon.](../../media/m365-cc-sc-eye-icon.png) **Preview message**: In the flyout that appears, choose one of the following tabs:
   - **Affichage Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
   - **Texte simple** : affiche le corps du message au format texte brut.
 
-- ![Icône Supprimer de la quarantaine.](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la quarantaine** : Après avoir cliqué sur **Oui** dans l'avertissement qui apparaît, le message est immédiatement supprimé sans être envoyé aux destinataires d'origine.
+- ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.
 
 - ![Icône Télécharger l’e-mail.](../../media/m365-cc-sc-download-icon.png) **Télécharger l’e-mail** : dans le menu volant qui s’affiche, configurez les paramètres suivants :
   - **Motif du téléchargement du fichier** : entrez du texte descriptif.
@@ -226,4 +226,4 @@ Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (
 :::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="La liste déroulante d'actions groupées pour les messages en quarantaine" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
 - ![Icône des messages de publication](../../media/m365-cc-sc-check-mark-icon.png) **Libérer les messages** : Transférer les messages dans votre boîte de réception
-- ![Icône Supprimer de la quarantaine](../../media/m365-cc-sc-delete-icon.png) **Supprimer les messages** :  Après avoir cliqué sur **Oui** dans l'avertissement qui apparaît, les messages sont immédiatement supprimés de la quarantaine sans être envoyés aux destinataires d'origine.
+- ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.

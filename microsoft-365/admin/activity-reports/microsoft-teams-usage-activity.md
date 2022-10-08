@@ -1,14 +1,15 @@
 ---
 title: rapports d’activité d’utilisation Centre d'administration Microsoft 365 Teams
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Le rapport d’utilisation de Teams vous montre comment les utilisateurs communiquent et collaborent dans Teams, y compris le nombre d’utilisateurs actifs, de canaux et de messages.
-ms.openlocfilehash: 700ceb8396224b27a29d34b9a84eb527a1dce956
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 319705a14d9d09e5f5fee0a0601ce1519541662f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66992053"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169164"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-usage-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité d’utilisation de Microsoft Teams
 

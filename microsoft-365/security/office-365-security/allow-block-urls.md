@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150manage-tenant-allows.md
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des URL dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ccfbd345edf69a1ebc0aef3bdfe5ab070659d819
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 399bf9b5747a62759959b42dc986b1ab525d2c15
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644310"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060579"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des URL utilisant la liste Autoriser/Bloquer des clients
 
@@ -63,7 +63,7 @@ Vous gérez les entrées d’autorisation et de blocage des URL dans le portail 
 
   **Remarques** :
 
-  - L'ajout d'utilisateurs au rôle Azure Active Directory Domain Services correspondant dans le centre d'administration Microsoft 365 donne aux utilisateurs les autorisations *et* autorisations requises pour d'autres fonctionnalités dans Microsoft 365. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 ## <a name="create-block-entries-for-urls"></a>Créer des entrées de bloc pour les URL
@@ -447,8 +447,8 @@ Les entrées suivantes ne sont pas valides :
 - **Valeurs de domaine manquantes ou non valides** :
 
   - Contoso
-  - \*.contoso.\*
-  - \*.com
+  - \*.Contoso.\*
+  - \*.Com
   - \*.pdf
 
 - **Caractère générique sur le texte ou sans caractères d’espacement** :

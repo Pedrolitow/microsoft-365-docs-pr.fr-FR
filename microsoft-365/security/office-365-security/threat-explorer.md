@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Utilisez l’Explorateur et les détections en temps réel dans le portail Microsoft 365 Defender pour examiner et répondre efficacement aux menaces.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7710b2eb156845ccc0e79550a76a9b61ac90327f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a8f0c4267c915930da60887540b1d58aaa65b4bb
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597258"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298032"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -35,7 +35,7 @@ ms.locfileid: "67597258"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si votre organisation dispose [d’Microsoft Defender pour Office 365](defender-for-office-365.md) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de **détections** **d’Explorateur** ou en temps réel (anciennement *rapports en temps réel* , [découvrez les nouveautés](#new-features-in-threat-explorer-and-real-time-detections)!). Dans le Centre de sécurité & conformité, accédez à **Gestion des menaces**, puis choisissez **l’Explorateur** _ou_ **les détections en temps réel**.
+Si votre organisation dispose [d’Microsoft Defender pour Office 365](defender-for-office-365.md) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de **détections** **d’Explorateur** ou en temps réel (anciennement *rapports en temps réel* , [découvrez les nouveautés](#new-features-in-threat-explorer-and-real-time-detections)!). Accédez à **Gestion des menaces**, puis choisissez **Explorateur** _ou_ **Détections en temps réel**.
 
 |Avec Microsoft Defender pour Office 365 Plan 2, vous voyez :|Avec Microsoft Defender pour Office 365 plan 1, vous voyez :|
 |---|---|
@@ -43,7 +43,7 @@ Si votre organisation dispose [d’Microsoft Defender pour Office 365](defender-
 
 Les détections de l’Explorateur ou en temps réel aident votre équipe chargée des opérations de sécurité à examiner et à répondre efficacement aux menaces. Le rapport ressemble à l’image suivante :
 
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Élément de menu Explorateur dans le portail sécurité & conformité" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Capture d’écran montrant l’élément de menu Explorateur." lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 Avec ce rapport, vous pouvez :
 
@@ -58,8 +58,6 @@ Avec ce rapport, vous pouvez :
 
 Aujourd’hui, si vous naviguez d’une alerte à l’Explorateur de menaces, elle ouvre une vue filtrée dans l’Explorateur, avec la vue filtrée par ID de stratégie d’alerte (ID de stratégie étant un identificateur unique pour une stratégie d’alerte).
 Nous rendons cette intégration plus pertinente en introduisant l’ID d’alerte (voir un exemple d’ID d’alerte ci-dessous) dans l’Explorateur de menaces et les détections en temps réel afin que vous voyiez les messages pertinents pour l’alerte spécifique, ainsi qu’un nombre d’e-mails. Vous pourrez également voir si un message faisait partie d’une alerte, ainsi que naviguer entre ce message et l’alerte spécifique.
-
-L’ID d’alerte est disponible dans l’URL lorsque vous affichez une alerte individuelle ; un exemple étant `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Filtrage de l’ID d’alerte" lightbox="../../media/AlertID-Filter.png":::
@@ -325,7 +323,7 @@ Pour passer en revue les messages de hameçonnage et rechercher des utilisateurs
 
 Cet exemple utilise l’Explorateur de menaces.
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com) (https://protection.office.com)choisissez Threat Management > Explorer (ou détections en temps réel).
+1. Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), choisissez **l’Explorateur** **de gestion des** >  **menaces (ou les détections en temps réel**).
 
 2. Dans le menu Affichage, choisissez Email > Hameçonnage.
 
@@ -419,7 +417,7 @@ Suivez ce chemin pour accéder au même emplacement dans le rapport de détectio
 
 Supposons que vous souhaitez voir les programmes malveillants détectés dans les e-mails triés par la technologie Microsoft 365. Pour ce faire, utilisez la [vue Email > Programmes malveillants](threat-explorer-views.md#email--malware) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le Centre de sécurité & conformité (<https://protection.office.com>), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
+1. Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
 
 2. Dans le menu **Affichage**, choisissez **Email** \> **Programme malveillant**.
 
@@ -446,7 +444,7 @@ Supposons que vous souhaitiez voir des tentatives de hameçonnage via des URL pa
 
 Pour passer en revue les URL de hameçonnage dans les messages et cliquer sur les URL dans les messages de hameçonnage, utilisez la vue [**Email** >  **Phish**](threat-explorer-views.md#email--phish) de l’Explorateur ou des détections en temps réel.
 
-1. Dans le Centre de sécurité & conformité (<https://protection.office.com>), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
+1. Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
 
 2. Dans le menu **Affichage**, choisissez **Email** \> **Hameçonnage**.
 
@@ -493,7 +491,7 @@ Dans les menus volants Email ou URL, les clics principaux ainsi que dans nos exp
 
 Supposons que vous souhaitiez voir les messages électroniques signalés par les utilisateurs de votre organisation comme *courrier indésirable*, *non indésirable* ou *hameçonnage* via le [complément Message](enable-the-report-message-add-in.md) de rapport ou le [complément d’hameçonnage de rapport](enable-the-report-phish-add-in.md). Pour les voir, utilisez la vue [**Email** >  **Submissions**](threat-explorer-views.md#email--submissions) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le Centre de sécurité & conformité (<https://protection.office.com>), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
+1. Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), choisissez **l’Explorateur** **de gestion des** \> **menaces (ou les détections en temps réel**). (Cet exemple utilise l’Explorateur.)
 
 2. Dans le menu **Affichage**, choisissez **Email** \> **Soumissions**.
 
@@ -536,7 +534,7 @@ Vous devez avoir [Microsoft Defender pour Office 365](defender-for-office-365.md
 
 Pour afficher et utiliser des détections d’Explorateur ou en temps réel, vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité.
 
-- Pour le Centre de sécurité & conformité, vous devez disposer de l’un des rôles suivants :
+- Pour le portail Microsoft 365 Defender, l’un des rôles suivants doit être attribué :
 
   - Gestion de l’organisation
   - Administrateur de sécurité (cela peut être attribué dans le Centre d’administration Azure Active Directory (<https://aad.portal.azure.com>)
@@ -545,7 +543,7 @@ Pour afficher et utiliser des détections d’Explorateur ou en temps réel, vou
 - Pour Exchange Online, vous devez disposer de l’un des rôles suivants attribués dans le Centre d’administration Exchange (EAC) ou [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) :
 
   - Gestion de l’organisation
-  - Afficher uniquement la gestion de l’organisation
+  - Gestion de l'organisation en affichage seul
   - Afficher uniquement les destinataires
   - Gestion de la conformité
 

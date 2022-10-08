@@ -6,19 +6,19 @@ manager: serdars
 ms.reviewer: sovaish
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer des classes Microsoft Teams à Canvas
-ms.openlocfilehash: 10024e124ce50ab542e6e68a5c237a47e1f7af83
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: abff070c5981570f6afb8f712e5a4e8026050248
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923016"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194420"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Utiliser des classes Microsoft Teams avec Canvas
 
@@ -27,11 +27,11 @@ Les classes Microsoft Teams sont une application d’interopérabilité des outi
 ## <a name="prerequisites-before-deployment"></a>Prérequis avant le déploiement
 
 > [!NOTE]
-> L’interface LTI des classes Teams actuelle prend uniquement en charge la synchronisation des utilisateurs canvas avec Microsoft Azure Active Directory (AAD) dans une étendue limitée.
+> Les classes Teams actuelles prennent uniquement en charge la synchronisation des utilisateurs canvas avec Microsoft Azure Active Directory (AAD) dans une étendue limitée.
 >
 > - Votre locataire doit disposer d’une licence Microsoft Education (A1 ou ultérieure).
 > - Un seul locataire Microsoft peut être utilisé pour le mappage des utilisateurs entre Canvas et Microsoft.
-> - Votre locataire doit avoir une correspondance exacte entre un champ Canvas (e-mail, ID d’utilisateur unique, ID SIS ou ID d’intégration) et un champ dans AAD (Nom d’utilisateur principal (UPN), Adresse e-mail principale (courrier) ou Alias de messagerie (mailNickname)).
+> - Votre locataire doit avoir une correspondance exacte entre un champ Canvas (e-mail, ID d’utilisateur unique, ID SIS ou ID d’intégration) et un champ dans AAD (nom d’utilisateur principal (UPN), adresse de Email principale (courrier) ou alias Email (mailNickname)).
 > - Si vous utilisez SDS pour créer des classes et des groupes, nous vous recommandons de désactiver l’option de création d’équipe dans SDS et d’effectuer un [nettoyage de groupe](/schooldatasync/group-cleanup) pour éviter la duplication des classes. SDS peut toujours être utilisé pour synchroniser l’organisation et les données utilisateur.
 
 ## <a name="enable-the-microsoft-teams-app-in-canvas"></a>Activer l’application Microsoft Teams dans Canvas
@@ -42,7 +42,7 @@ Pour commencer l’intégration, vous devez activer l’application dans Canvas 
 
 1. Connectez-vous à Canvas en tant qu’administrateur.
 
-2. Sélectionnez le lien **Administrateur** dans la navigation globale, puis sélectionnez votre compte.
+2. Sélectionnez le lien **Administration** dans la navigation globale, puis sélectionnez votre compte.
 3. Dans le volet de navigation de l’administrateur, sélectionnez le lien **Clés** du développeur, puis sélectionnez l’onglet **Hérité** .
 4. Activez les applications LTI que vous allez déployer en sélectionnant l’état **ON** pour chacune des applications appropriées.
 
@@ -55,7 +55,7 @@ Pour commencer l’intégration, vous devez activer l’application dans Canvas 
 7. Renseignez les champs suivants avec les informations appropriées. Ces champs seront utilisés pour mettre en correspondance les utilisateurs dans Canvas avec les utilisateurs dans AAD.
    - Le **nom du locataire** est votre nom de locataire Microsoft.
    - **L’attribut login** est l’un des attributs utilisateur Canvas suivants utilisés pour le mappage :
-      - **L’e-mail** est l’adresse e-mail par défaut de l’utilisateur Canvas. Si les utilisateurs modifient leur adresse e-mail par défaut dans Canvas, leur inscription à un cours peut être bloquée pour la synchronisation avec Teams.
+      - **Email** est l’adresse e-mail par défaut de l’utilisateur Canvas. Si les utilisateurs modifient leur adresse e-mail par défaut dans Canvas, leur inscription à un cours peut être bloquée pour la synchronisation avec Teams.
       - **L’ID d’utilisateur unique** est l’ID de connexion Canvas de l’utilisateur.
       - **L’ID d’utilisateur SIS** est la valeur d’ID qui est renseignée à partir du système SIS (Student Information System) et qui est visible sur la page de profil de l’utilisateur.
       - **L’ID d’intégration** est rempli uniquement via des importations SIS et est visible sur la page de profil de l’utilisateur. En règle générale, cet identificateur unique est fourni par l’institution et utilisé dans les approbations de compte ou les situations de consortium pour identifier les utilisateurs sur plusieurs comptes.
@@ -65,7 +65,7 @@ Pour commencer l’intégration, vous devez activer l’application dans Canvas 
 
 8. Sélectionnez **Mettre à jour les paramètres**.
 
-9. Pour approuver l’accès à l’application **Azure Microsoft-Teams-Sync-for-Canvas** de Canvas, sélectionnez le lien **Accorder l’accès au locataire** . Vous êtes redirigé vers le point de terminaison de consentement administrateur de la plateforme d’identités Microsoft.
+9. Pour approuver l’accès à l’application **Azure Microsoft-Teams-Sync-for-Canvas** de Canvas, sélectionnez le lien **Accorder l’accès au locataire** . Vous êtes redirigé vers le point de terminaison de consentement de la plateforme d’identités Microsoft Administration.
 
    ![Autorisations.](media/permissions.png)
 
@@ -80,7 +80,7 @@ Après avoir activé la synchronisation et approuvé l’application Azure, l’
 
 **Pour ajouter l’application LTI des classes Teams à l’environnement Canvas** :
 
-1. Sous l’onglet **Applications** des **paramètres d’administration**, sélectionnez **+ Application** pour ajouter les applications LTI Teams.
+1. Sous l’onglet **Applications** dans **Administration paramètres**, sélectionnez **+ Application** pour ajouter les applications LTI Teams.
 
    ![external-apps.](media/external-apps.png)
 

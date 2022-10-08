@@ -8,16 +8,17 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et charges utiles spécifiques qui sont lancées lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 plan 2.
 ms.subservice: mdo
-ms.openlocfilehash: 0099373996cee691eacab8b6469d368d711128eb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 0fb6e45150d04e8a376964584506fc4ac876bd08
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476141"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060623"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour Exercice de simulation d'attaque
 
@@ -89,7 +90,7 @@ Si vous **sélectionnez Manuellement**, vous devez sélectionner une ou plusieur
 - **Technique** : vous devez sélectionner au moins une charge utile par technique que vous avez sélectionnée sur la page précédente.
 - **Langue** : Les valeurs disponibles sont : **anglais**, **espagnol**, **allemand**, **japonais**, **Français**, **portugais**, **néerlandais**, **italien**, **suédois**, **chinois (simplifié),****norvégien bokmål**, **polonais**, **russe**, **finnois**, **coréen**, **turc**, **hongrois**, **hébreu**, **thaï**, **arabe**, **vietnamien**, **slovaque**, **grec**, **indonésien**, **roumain**, **slovène**, **croate**, **catalan** ou **autre**.
 - **Taux de clic** : nombre de personnes ayant cliqué sur cette charge utile.
-- **Taux de compromission prédit** : données historiques de la charge utile dans Microsoft 365 qui prédit le pourcentage de personnes qui seront compromises par cette charge utile.
+- **Taux de compromission prédit** : données historiques dans Microsoft 365 qui prédisent le pourcentage de personnes qui seront compromises par cette charge utile (utilisateurs compromis/ nombre total d’utilisateurs qui reçoivent la charge utile).
 - **Les simulations lancées** comptent le nombre de fois où cette charge utile a été utilisée dans d’autres simulations.
 
 Dans l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Dans** la zone de recherche, vous pouvez taper une partie du nom de la charge utile et appuyer sur Entrée pour filtrer les résultats.

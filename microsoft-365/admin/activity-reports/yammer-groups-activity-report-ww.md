@@ -2,14 +2,15 @@
 title: Centre d'administration Microsoft 365 les rapports d’activité des groupes Yammer
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport d’activité des groupes Yammer pour en savoir plus sur le nombre de groupes Yammer créés et utilisés dans votre organisation et leur activité.
-ms.openlocfilehash: c4a967a10763d702cdd798059783f15ec6482927
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 768cd976545e42c0163cb50880418f64817d5a4f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662567"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195234"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Rapports Microsoft 365 dans le Centre d’administration - Rapport d’activité des groupes Yammer
 
@@ -50,7 +51,7 @@ Vous pouvez également exporter les données du rapport dans un fichier Excel .c
 
 Le rapport **Activité des groupes Yammer** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom du groupe  |Nom du groupe. |

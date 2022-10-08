@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 f1.keywords:
@@ -20,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Résumé : Décrit les certificats SSL nécessaires pour Exchange local et hybride, l’authentification unique à l’aide d’AD FS, des services Exchange Online et des services web Exchange.'
-ms.openlocfilehash: 948801e151edd75c42896ae78803e72f69d3e684
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 2a1a26bdead36af39f6873e06e43004b9c1dd30a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672532"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169186"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>Planifier les certificats SSL tiers pour Microsoft 365
 

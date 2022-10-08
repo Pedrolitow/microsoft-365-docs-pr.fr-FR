@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 51de6f79f3293d488e10ec7a90c5d0f5e949b127
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e73cc30a22f7263f349e154a4d4541ff92d441bb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694742"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194200"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>Liste des configurations d’évaluation des lignes de base de sécurité
 

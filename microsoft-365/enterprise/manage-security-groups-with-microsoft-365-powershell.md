@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Découvrez comment utiliser PowerShell pour gérer des groupes de sécurité.
-ms.openlocfilehash: c1ae74e60eb00e74efe5ad881e9ce3c0ebb3cf12
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 18f2f7760b5b827f6c013ebe3ec23a7a636db68a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099408"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194712"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Gérer des groupes de sécurité avec PowerShell
 
@@ -34,7 +36,7 @@ Cet article décrit la liste, la création, la modification des paramètres et l
 
 Lorsqu’un bloc de commandes de cet article requiert que vous spécifiez des valeurs de variable, procédez comme suit.
 
-1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou l’environnement de script intégré PowerShell (ISE).
+1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans le Bloc-notes ou l’environnement ISE (Integrated Script Environment) PowerShell.
 2. Renseignez les valeurs de variable et supprimez les caractères « < » et « > ».
 3. Exécutez les commandes dans la fenêtre PowerShell ou l’ise PowerShell.
 

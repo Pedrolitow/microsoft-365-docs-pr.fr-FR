@@ -13,16 +13,16 @@ search.appverid:
 - MBS150
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans Exchange Online boîtes aux lettres. La plupart de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le web.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9f8c5ed64526b03cb4a47b06962be94274517789
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2a96902e16ef372e5d9cd1198f15ce2541943aa1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483473"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060513"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -57,7 +57,7 @@ Les administrateurs peuvent utiliser Exchange Online PowerShell pour configurer 
 
 - Vous devez disposer d’autorisations dans Exchange Online avant de pouvoir effectuer les procédures décrites dans cet article. Plus précisément, vous avez besoin du rôle **Destinataires du courrier** (qui est attribué aux groupes de rôles Gestion de l’organisation, **Gestion** **des destinataires et Destinataires du courrier personnalisé** par défaut) ou du rôle **Options utilisateur** (qui est attribué aux groupes de rôles Gestion de **l’organisation** et **Support** technique par défaut). Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, consultez [Modifier les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Notez que les utilisateurs disposant d’autorisations par défaut peuvent effectuer ces mêmes procédures sur leur propre boîte aux lettres, tant qu’ils ont [accès à Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
 
-- Dans les environnements hybrides où EOP protège les boîtes aux lettres Exchange sur site, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans Exchange sur site. Ces règles de flux de messagerie traduisent le verdict de filtrage du courrier indésirable EOP afin que la règle de courrier indésirable dans la boîte aux lettres puisse déplacer le message vers le dossier Courrier indésirable. Pour plus de détails, voir [Configurer EOP pour envoyer du spam dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+- In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange. These mail flow rules translate the EOP spam filtering verdict so the junk email rule in the mailbox can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - Les expéditeurs approuvés pour les boîtes aux lettres partagées ne sont pas synchronisés avec Azure AD et EOP par conception.
 
@@ -108,7 +108,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 > - Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, vous pouvez recevoir une erreur lorsque vous exécutez les commandes précédentes. Pour supprimer cette erreur pour les opérations en bloc, ajoutez `-ErrorAction SilentlyContinue` à la commande **Set-MailboxJunkEmailConfiguration** .
 > - Le filtre Outlook Junk Email contient des paramètres de collecte de liste de sécurité supplémentaires (par exemple, **ajouter automatiquement des personnes que j’envoie par e-mail à la liste des expéditeurs approuvés**). Pour plus d'informations, voir [Utiliser les filtres de courrier indésirable pour contrôler les messages affichés](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
-### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien configuré la collection de listes fiables d’une boîte aux lettres, suivez l’une des procédures suivantes :
 

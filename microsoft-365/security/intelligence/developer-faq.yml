@@ -14,15 +14,15 @@ metadata:
   ms.localizationpriority: medium
   manager: dansimp
   audience: ITPro
-  ms.collection: M365-security-compliance
+  ms.collection: m365-security
   ms.topic: faq
   ms.technology: m365d
-  ms.openlocfilehash: 79788aea9133d98097b5f944fa97b46450e665d0
-  ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+  ms.openlocfilehash: 3981dbd7d01f5a2cb5053de5bb462a68f07dc590
+  ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/16/2022
-  ms.locfileid: "67738530"
+  ms.lasthandoff: 09/27/2022
+  ms.locfileid: "68060689"
 title: FAQ pour les développeurs de logiciels
 summary: Cette page fournit des réponses aux questions courantes que nous recevons des développeurs de logiciels. Pour obtenir des conseils généraux sur l’envoi de programmes malveillants ou de fichiers détectés de manière incorrecte, consultez le guide de soumission.
 sections:
@@ -33,7 +33,7 @@ sections:
     answer: >
       Non. Nous n’acceptons pas ces demandes des développeurs de logiciels. La signature des fichiers de votre programme de manière cohérente, avec un certificat numérique émis par une autorité racine approuvée, permet à notre équipe de recherche d’identifier rapidement la source d’un programme et d’appliquer les connaissances acquises précédemment. Dans certains cas, cela peut entraîner l’ajout rapide de votre programme à la liste connue. Beaucoup moins fréquemment, in ajoutera votre certificat numérique à une liste d’éditeurs approuvés.
   - question: >
-      如何实现 contester la détection de mon programme ?
+      Comment faire contester la détection de mon programme ?
     answer: >
       Envoyez le fichier en question en tant que développeur de logiciels. Attendez que votre soumission soit définitivement déterminée.
 
@@ -53,7 +53,7 @@ sections:
   - question: >
       Pourquoi le pare-feu Windows Defender bloque-t-il mon programme ?
     answer: >
-      Les blocs de pare-feu ne sont pas liés à l’antivirus Microsoft Defender et à d’autres logiciels anti-programme malveillant Microsoft. [Découvrez Windows Defender Pare-feu](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md).
+      Les blocs de pare-feu ne sont pas liés à Microsoft Defender Antivirus et à d’autres logiciels anti-programme malveillant Microsoft. [Découvrez Windows Defender Pare-feu](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md).
   - question: >
-      Pourquoi Microsoft Defender SmartScreen indique-t-il que mon programme n’est pas généralement téléchargé ?
-    answer: Cela n’est pas lié à l’antivirus Microsoft Defender et à d’autres logiciels anti-programme malveillant Microsoft. [En savoir plus sur Microsoft Defender SmartScreen](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)
+      Pourquoi le Microsoft Defender SmartScreen indique-t-il que mon programme n’est pas généralement téléchargé ?
+    answer: Cela n’est pas lié à Microsoft Defender Antivirus et à d’autres logiciels anti-programme malveillant Microsoft. [En savoir plus sur Microsoft Defender SmartScreen](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)

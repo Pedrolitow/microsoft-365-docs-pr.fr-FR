@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -20,13 +21,13 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Découvrez comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour retarder le chargement des images et javaScript non essentiels.
-ms.openlocfilehash: 8252e169e36dc6976a7be0b4815915ee72283eff
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+description: Découvrez comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour retarder le chargement d’images et javaScript non essentiel.
+ms.openlocfilehash: 0914b318554badac3cb5ea28e4db641cbb6370e7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754729"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194794"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
@@ -34,9 +35,9 @@ Cet article explique comment réduire le temps de chargement des pages SharePoin
   
 Les images peuvent affecter négativement les vitesses de chargement des pages sur SharePoint Online. Par défaut, la plupart des navigateurs Internet modernes pré-extraient des images lors du chargement d’une page HTML. Cela peut ralentir inutilement le chargement de la page si les images ne sont pas visibles à l’écran tant que l’utilisateur n’a pas fait défiler vers le bas. Les images peuvent empêcher le navigateur de charger la partie visible de la page. Pour contourner ce problème, vous pouvez utiliser JavaScript pour ignorer le chargement des images en premier. En outre, le chargement de JavaScript non essentiel peut également ralentir les temps de téléchargement sur vos pages SharePoint. Cette rubrique décrit certaines méthodes que vous pouvez utiliser pour améliorer les temps de chargement des pages avec JavaScript dans SharePoint Online.
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Améliorer les temps de chargement des pages en retardant le chargement d’images dans SharePoint pages en ligne à l’aide de JavaScript
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Améliorer les temps de chargement des pages en retardant le chargement d’images dans les pages SharePoint Online à l’aide de JavaScript
 
-Vous pouvez utiliser JavaScript pour empêcher un navigateur web de pré-extraire des images. Cela accélère le rendu global des documents. Pour ce faire, vous supprimez la valeur de l’attribut src de la balise et vous la \<img\> remplacez par le chemin d’accès à un fichier dans un attribut de données tel que : data-src. Par exemple :
+Vous pouvez utiliser JavaScript pour empêcher un navigateur web de pré-extraire des images. Cela accélère le rendu global des documents. Pour ce faire, vous supprimez la valeur de l’attribut src de la balise et vous la \<img\> remplacez par le chemin d’accès à un fichier dans un attribut de données tel que : data-src. Par exemple :
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -88,7 +89,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Pour SharePoint Online, vous devez attacher la fonction suivante à l’événement de défilement sur la balise #s4-workspace\<div\>. Cela est dû au fait que les événements de fenêtre sont remplacés afin de garantir que le ruban reste attaché en haut de la page.
+Pour SharePoint Online, vous devez attacher la fonction suivante à l’événement de défilement sur la balise #s4-workspace \<div\> . Cela est dû au fait que les événements de fenêtre sont remplacés afin de garantir que le ruban reste attaché en haut de la page.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -117,11 +118,11 @@ La capture d’écran suivante montre le reste des images qui sont téléchargé
   
 Retarder le chargement d’images à l’aide de JavaScript peut être une technique efficace pour augmenter les performances ; Toutefois, si la technique est appliquée sur un site web public, les moteurs de recherche ne sont pas en mesure d’analyser les images de la même façon qu’ils analysent une image régulièrement formée. Cela peut affecter les classements sur les moteurs de recherche, car les métadonnées de l’image elle-même ne sont pas vraiment présentes tant que la page n’est pas chargée. Les analyseurs du moteur de recherche lisent uniquement le code HTML et ne voient donc pas les images comme du contenu sur la page. Les images sont l’un des facteurs utilisés pour classer les pages dans les résultats de la recherche. Une façon de contourner ce problème consiste à utiliser du texte d’introduction pour vos images.
   
-## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub exemple de code : Injection de JavaScript pour améliorer les performances
+## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Exemple de code GitHub : Injection de JavaScript pour améliorer les performances
 
 Ne manquez pas l’article et l’exemple de code sur [l’injection JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) fournie sur GitHub.
   
-## <a name="see-also"></a>Articles associés
+## <a name="see-also"></a>Voir aussi
 
 [Navigateurs pris en charge dans Office 2013 et Applications Microsoft 365 pour les grandes entreprises](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   

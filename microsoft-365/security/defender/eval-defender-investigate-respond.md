@@ -17,18 +17,19 @@ ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: b795896521bdf4f7230e2011f753d140a5bbddd3
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c1e3514ea87ae40ba1ed23319ddca624143fc7fa
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481787"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060931"
 ---
 # <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Étape 6. Examiner et répondre à l’aide de Microsoft 365 Defender dans un environnement pilote
 

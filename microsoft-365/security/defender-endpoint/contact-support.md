@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bc0141afc700be2339f66ac3456be601089bba29
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0e956ef81cd3303b59670788bef5f0252faf186e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705115"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168570"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -41,7 +43,7 @@ Le nouveau widget permet aux clients de :
 - Trouver des solutions aux problèmes courants
 - Soumettre un cas de support à l’équipe du support technique Microsoft
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 Il est important de connaître les rôles spécifiques qui ont l’autorisation d’ouvrir des cas de support.
 

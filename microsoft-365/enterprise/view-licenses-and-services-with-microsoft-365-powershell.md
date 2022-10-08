@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explique comment utiliser PowerShell pour afficher des informations sur les plans de licence, les services et les licences disponibles dans votre organisation Microsoft 365.
-ms.openlocfilehash: 739c79fe66871125a5ea9d35226d9acd6f99abf4
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 4473acb93f8ebcf81d3b805dbb1f5a09a3d9350d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669780"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194530"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Afficher les licences et services Microsoft 365 avec PowerShell
 
