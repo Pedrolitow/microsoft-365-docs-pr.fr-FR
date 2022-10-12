@@ -10,15 +10,16 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: bc405ee52ba469b342c143ba720e0dc027a0addd
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: ccff4f54a26ec02249a524eacaa1ac8edf52a0cf
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408372"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542560"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -31,6 +32,8 @@ Si ce paramètre n’est pas activé pour votre client, les utilisateurs doivent
 En outre, l'activation de cette fonctionnalité entraîne la prise en charge de la fonctionnalité [Enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) pour ces fichiers étiquetés et chiffrés.
 
 Pour lire l’annonce de la publication, consultez le billet de blog [la co-édition sur des documents chiffrés par Microsoft Information Protection et des mises à jour d'étiquetage est généralement disponible](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Modifications des métadonnées pour les étiquettes de niveau de confidentialité
 
@@ -53,7 +56,7 @@ Pour en savoir plus sur le changement de métadonnées à partir des ressources 
 
 - Ouvrir spécifications : [2.6.3 LabelInfo et propriétés de document personnalisées](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-En raison de ces modifications, n'activez pas ce paramètre si vous avez des applications, services, scripts ou outils dans votre organisation qui lisent ou écrivent des métadonnées d'étiquetage à l'ancien emplacement. Dans ce cas, voici quelques exemples de conséquences :
+Because of these changes, do not enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location. If you do, some example consequences:
 
 - Un document étiqueté apparaît comme sans étiquette pour les utilisateur.
 
@@ -84,6 +87,7 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
     - **Client et scanneur d’étiquetage unifié Azure Information Protection :**
         - Version minimale[ 2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620)que vous pouvez installer à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
         - Pour les applications Office, il faut disposer des versions minimales indiquées pour Microsoft 365 Apps pour entreprise.
+        - En outre, vous n’utilisez pas le [chiffrement à double clé](double-key-encryption.md) dans le même locataire
     
     - **Application de synchronisation OneDrive pour Windows ou macOS :**
         - Version minimale 19.002.0121.0008
@@ -97,7 +101,7 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
     - **Applications et services qui utilisent le Kit de développement logiciel (SDK) Microsoft Information Protection :** 
         - Version minimale 1.7 
 
-Les services Microsoft 365 prennent automatiquement en charge les nouvelles métadonnées d'étiquetage lorsque vous activez cette fonction. Par exemple :
+Microsoft 365 services automatically support the new labeling metadata when you turn on this feature. For example:
 
 - [Stratégies d’étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Stratégies de protection contre la perte de données qui utilisent des étiquettes de confidentialité en tant que conditions](dlp-sensitivity-label-as-condition.md)
@@ -111,10 +115,9 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
     
     Spécifique à Excel : les métadonnées pour une étiquette de confidentialité qui n’applique pas le chiffrement peuvent être supprimées d’un fichier si quelqu’un modifie et enregistre ce fichier à l’aide d’une version d’Excel qui ne prend pas en charge les modifications des métadonnées pour les étiquettes de niveau de sécurité.
 
-- La co-création et l'enregistrement automatique ne sont pas pris en charge et ne fonctionnent pas pour les documents Office étiquetés et chiffrés qui utilisent l'une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings) :
-    - **Autoriser les utilisateurs à attribuer des autorisations lorsqu'ils appliquent l'étiquette** et la case à cocher **Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier les autorisations** est sélectionnée. Cette configuration est parfois appelée « autorisations définies par l'utilisateur ».
+- La co-création et l’enregistrement automatique ne sont pas pris en charge et ne fonctionnent pas pour les documents Office étiquetés et chiffrés qui utilisent l’une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings) :
+    - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
     - **L’expiration de l'accès des utilisateurs au contenu** est définie sur une valeur autre que **Jamais**.
-    - **Chiffrement à double clé** est sélectionnée.
     
     Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes s’affichent dans les applications Office. Toutefois, lorsque les utilisateurs sélectionnent ces étiquettes et que personne d’autre ne modifie le document, ils sont avertis que la co-création et l’enregistrement automatique ne seront pas disponibles. Si quelqu’un d’autre modifie le document, un message indique à l’utilisateur que les étiquettes ne peuvent pas être appliquées.
 
@@ -125,7 +128,7 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Comment activer la co-édition pour les fichiers avec les étiquettes de confidentialité
 
 > [!CAUTION]
-> L'activation de ce paramètre est une action à sens unique. Lorsque la fonctionnalité est en préversion, activez-la uniquement après avoir lu et compris les modifications apportées aux métadonnées, conditions préalables, limitations et problèmes connus consignés sur cette page.
+> Turning on this setting is a one-way action. Enable it only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
 1. Connectez-vous au [Portail de conformité Microsoft Purview](https://compliance.microsoft.com) en tant qu’administrateur général de votre client.
 
