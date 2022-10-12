@@ -8,21 +8,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: e5a83446613b28b633472f5c6368d92d5e850049
-ms.sourcegitcommit: 55672e44de74209f2e23b4bd9ca74a2ee7e88cd9
+ms.openlocfilehash: 64cf18c8cf307259fc01be5e8d67048585bcbbf6
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2022
-ms.locfileid: "68319440"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542978"
 ---
+<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
+
 # <a name="controlled-folder-access-cfa-demonstrations-block-ransomware"></a>Démonstrations d’accès contrôlé aux dossiers (CFA) (block ransomware)
 
 L’accès contrôlé aux dossiers vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomwares. Toutes les applications (tout fichier exécutable, y compris les fichiers .exe, .scr, .dll et autres) sont évaluées par Microsoft Defender Antivirus, qui détermine ensuite si l’application est malveillante ou sécurisée. Si l’application est déterminée comme malveillante ou suspecte, elle ne sera pas autorisée à apporter des modifications à des fichiers dans un dossier protégé.

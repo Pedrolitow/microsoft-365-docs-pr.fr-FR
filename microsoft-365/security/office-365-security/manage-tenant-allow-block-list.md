@@ -17,12 +17,12 @@ ms.custom: ''
 description: Découvrez comment gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5d26a013199156b5aeff9ca21dcbebea5c64ebbf
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: e46cabba3e2d0f765937a8ff34bbcea918204974
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68092421"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542472"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire
 
@@ -57,7 +57,7 @@ Utilisez le portail Soumissions (également appelé *soumission d’administrate
 
 - **Fichiers** : Email messages contenant ces fichiers bloqués sont bloqués en tant que *programmes malveillants*.
 
-- **URL** : Email messages contenant ces URL bloquées sont bloqués en tant *qu’hameçonnage à haut niveau de confiance*.
+- **URL** : Email messages contenant ces URL bloquées sont bloqués en tant *qu’hameçonnage à haut niveau de confiance*. Les messages contenant les URL bloquées sont mis en quarantaine.
 
 Dans la liste d’autorisation/de blocage du locataire, vous pouvez également créer directement des entrées de bloc pour les types d’éléments suivants :
 

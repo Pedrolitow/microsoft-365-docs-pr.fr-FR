@@ -18,12 +18,12 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 7d76deeb278e460a2518cb922b0a087273e16d6b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 51f50014c5a937223ca2ada3f8bf0dac851f5e9a
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186588"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543176"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -35,7 +35,7 @@ ms.locfileid: "68186588"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Le capteur Defender pour point de terminaison nécessite Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Defender pour point de terminaison. Le capteur Defender pour point de terminaison incorporé s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise Microsoft Windows HTTP Services (WinHTTP) pour activer la communication avec le service cloud Defender pour point de terminaison.
+Le capteur Defender pour point de terminaison nécessite Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Defender pour point de terminaison. Le capteur Defender pour point de terminaison incorporé s’exécute dans le contexte système à l’aide du compte LocalSystem.
 
 > [!TIP]
 > Pour les organisations qui utilisent des proxys de transfert comme passerelle vers Internet, vous pouvez utiliser la protection réseau pour [examiner les événements de connexion qui se produisent derrière les proxys de transfert](investigate-behind-proxy.md).

@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d237e48990a5b05811baf0df5406718242904200
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 37e2b1ba06070fd0b302e62cf7f549f7136f61ca
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063835"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542604"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -195,7 +195,7 @@ Pour plus d’informations sur ce paramètre, consultez [Seuils de hameçonnage 
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Seuil d’e-mail d’hameçonnage** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**2 - Agressif** <br><br> `2`|**3 - Plus agressif** <br><br> `3`||
+|**Seuil d’e-mail d’hameçonnage** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**3 - Plus agressif** <br><br> `2`|**4 - Plus agressif** <br><br> `3`||
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 

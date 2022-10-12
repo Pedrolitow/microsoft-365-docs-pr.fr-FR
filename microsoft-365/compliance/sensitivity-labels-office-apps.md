@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06c3ba12cbea34b4b81acf84b579c56cfc50cd22
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 46008cae997bd71a9c5d165226a728a011d7f058
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68362857"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542538"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -145,7 +145,9 @@ Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide 
 
 ## <a name="office-file-types-supported"></a>Types de fichiers Office pris en charge
 
-Office apps that have built-in labeling for Word, Excel, and PowerPoint files support the Open XML format (such as .docx and .xlsx) but not the Microsoft Office 97-2003 format (such as .doc and .xls), Open Document Format (such as .odt and .ods), or other formats. When a file type is not supported for built-in labeling, the **Sensitivity** button is not available in the Office app.
+En règle générale, les applications Office qui ont un étiquetage intégré pour les fichiers Word, Excel et PowerPoint prennent en charge le format Open XML (par exemple, .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (par exemple, .doc et .xls), le format open document (par exemple, .odt et .ods) ou d’autres formats. Lorsqu’un type de fichier n’est pas pris en charge pour l'étiquetage intégré, le bouton **Niveau de confidentialité** n’est pas disponible dans l’application Office.
+
+Pour obtenir des types de fichiers spécifiques pris en charge pour SharePoint et OneDrive lorsque ces services sont activés pour les étiquettes de confidentialité, consultez [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 
 Le client d’étiquetage unifié Azure Information Protection prend en charge les formats Open XML et Microsoft Office 97-2003. Pour plus d’informations, consultez [Types de fichiers pris en charge par le client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) à partir du guide d’administration de ce client.
 
@@ -474,19 +476,17 @@ Dans le cadre de cette visibilité élevée, ces étiquettes prennent également
 
 Les étiquettes nouvellement créées n’ont pas de couleur par défaut. Si vos étiquettes ont été [migrées à partir d’Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) ou si vous avez configuré des couleurs d’étiquette pour le client d’étiquetage unifié Azure Information Protection, ces couleurs d’étiquette sont désormais affichées dans les applications qui les prennent en charge.
 
-Utilisez la portail de conformité Microsoft Purview pour sélectionner l’une des 10 couleurs standard pour les étiquettes de confidentialité. Cette configuration se trouve sur la première page de la configuration de l’étiquette après le nom et la description de l’étiquette.
+Utilisez la portail de conformité Microsoft Purview pour sélectionner l’une des 10 couleurs standard pour les étiquettes de confidentialité. La configuration des **couleurs** d’étiquette se trouve sur la première page de la configuration de l’étiquette après le nom et la description de l’étiquette.
 
 Vous ne pouvez pas sélectionner de couleurs pour les sous-étiquettes, car elles héritent automatiquement de la couleur d’étiquette de leur étiquette parente.
 
-Si l’étiquette est configurée pour une couleur différente de l’une des 10 couleurs, une option de **couleur personnalisée** est sélectionnée et les options de couleur standard ne sont pas disponibles :
+Si une étiquette est configurée pour une couleur différente de l’une des 10 couleurs par défaut, une case à cocher **Utiliser les couleurs du client précédemment attribuée est cochée** et les options de couleur standard ne sont pas disponibles. Vous pouvez remplacer la couleur personnalisée par l’une des couleurs standard en désactivant d’abord la case à cocher, puis en sélectionnant l’une des couleurs standard. 
 
-![Configuration des couleurs d’étiquette de sensibilité lorsque l’étiquette a une couleur personnalisée.](../media/label-custom-color-configuration.png)
-
-Vous pouvez remplacer la couleur personnalisée par l’une des couleurs standard en supprimant d’abord la sélection de couleurs personnalisées, puis en sélectionnant l’une des couleurs standard. Toutefois, vous ne pouvez pas utiliser le portail de conformité pour configurer une couleur personnalisée différente. Utilisez plutôt PowerShell, comme décrit dans la section suivante.
+Vous ne pouvez pas utiliser le portail de conformité pour configurer une couleur personnalisée différente. Utilisez plutôt PowerShell, comme décrit dans la section suivante.
 
 #### <a name="configuring-custom-colors-by-using-powershell"></a>Configuration de couleurs personnalisées à l’aide de PowerShell 
 
-Vous pouvez utiliser la **couleur** de paramètre avancé [du Centre de sécurité & conformité PowerShell](/powershell/exchange/scc-powershell) pour définir une couleur pour une étiquette de confidentialité. Cette configuration prend en charge les couleurs que vous ne pouvez pas configurer dans le portail de conformité Microsoft Purview.
+Vous pouvez utiliser la **couleur** de paramètre avancée [PowerShell sécurité & conformité](/powershell/exchange/scc-powershell) pour définir une couleur pour une étiquette de confidentialité. Cette configuration prend en charge les couleurs que vous ne pouvez pas configurer dans le portail de conformité Microsoft Purview.
 
 Pour spécifier votre choix de couleur, utilisez un code de triplet hexadécimal pour les composants rouge, vert et bleu (RVB) de la couleur. Par exemple, #40e0d0 est la valeur hexadécimale RVB pour la couleur turquoise.
 

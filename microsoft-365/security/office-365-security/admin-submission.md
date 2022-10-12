@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails légitimes bloqués, des e-mails suspects, des e-mails suspects de hameçonnage, du courrier indésirable, d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a9b8c64e989c14d0e5bfd9c3b8ca03dbcd93ae20
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: d0b783b5a9ab5735b116a07fe164096c5031d1aa
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072786"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543066"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL, des e-mails légitimes bloqués et des pièces jointes à Microsoft
 
@@ -235,7 +235,7 @@ Après quelques instants, l’entrée d’autorisation s’affiche dans l’ongl
 > - Lorsque vous remplacez le verdict dans l’insight d’intelligence de l’usurpation d’identité, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisation/de blocage du locataire.
 > - Si l’expéditeur n’a pas encore été bloqué, l’envoi de l’e-mail à Microsoft ne crée pas d’entrée d’autorisation dans la liste d’autorisation/de blocage du locataire.
 > - Les autorisations sont ajoutées pendant le flux de messagerie, en fonction des filtres qui ont déterminé que le message était malveillant. Par exemple, si l’expéditeur et une URL du message ont été déterminés comme étant incorrects, une entrée d’autorisation est créée pour l’expéditeur et une entrée d’autorisation est créée pour l’URL.
-> - Lorsque cette entité (adresse de domaine ou e-mail, URL, fichier) est à nouveau rencontrée, tous les filtres associés à cette entité sont ignorés.
+> - Lorsque cette entité (adresse de domaine ou e-mail, URL, fichier) est à nouveau rencontrée, tous les filtres associés à cette entité sont ignorés. Pour un e-mail, toutes les autres entités sont toujours évaluées par le système de filtrage avant de prendre une décision.
 > - Pendant le flux de courrier, si les messages du domaine ou de l’adresse e-mail passent d’autres vérifications dans la pile de filtrage, les messages sont remis. Par exemple, si [l’authentification par e-mail](email-validation-and-authentication.md) réussit, un message d’un expéditeur dans l’entrée d’autorisation est remis.
 
 ## <a name="report-good-email-attachments-to-microsoft"></a>Signaler de bonnes pièces jointes à Microsoft

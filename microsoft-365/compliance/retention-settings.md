@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Découvrez les paramètres que vous pouvez configurer pour les stratégies de conservation et les étiquettes de conservation de Microsoft 365 afin de conserver ou de supprimer les données de votre organisation.
-ms.openlocfilehash: c0c5003a1e4a8b8aba231a0f3790aa0a82f26e15
-ms.sourcegitcommit: a1c86e51f6fec7517356251c3b99b1a86705c8c5
+ms.openlocfilehash: cd48e941cfece12812b91927090acfdaf7d05ab3
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336707"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543154"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -39,6 +40,8 @@ Pour connaître les scénarios qui prennent en charge ces stratégies de rétent
 Les paramètres spécifiques à chaque scénario sont expliqués dans leur documentation respective.
 
 Pour en savoir plus sur les stratégies de rétention et le fonctionnement de la rétention dans Microsoft 365, consultez la page [Découvrir les stratégies et étiquettes de rétention](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="scopes---adaptive-and-static"></a>Étendues : adaptatives et statiques
 
@@ -63,7 +66,7 @@ Lorsque vous choisissez d’utiliser des étendues adaptatives, vous êtes invit
 
 Les noms des propriétés des sites sont basés sur les propriétés gérées des sites SharePoint. Pour plus d'informations sur les attributs personnalisés, voir [Utilisation de propriétés de site SharePoint personnalisées pour appliquer la rétention Microsoft 365 avec des étendues de politique adaptative](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-Les noms d’attributs des utilisateurs et des groupes sont [basés sur des propriétés de destinataire filtrables](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) qui sont mappées aux attributs Azure AD. Par exemple :
+Les noms d’attributs des utilisateurs et des groupes sont [basés sur des propriétés de destinataire filtrables](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) qui sont mappées aux attributs Azure AD. Par exemple :
 
 - **Alias** mappé au nom LDAP **mailNickname** qui s’affiche comme **Email** dans le Centre d’administration Azure AD.
 - **Email adresses** correspond aux **adresses proxyAddresses** de nom LDAP qui s’affichent en tant **qu’adresse proxy** dans le Centre d’administration Azure AD.
@@ -91,7 +94,7 @@ Pour les sites SharePoint, une configuration SharePoint supplémentaire peut êt
     - Si vous utilisez la solution de gestion du cycle de vie des données :
        - **Solutions** \> **Gestion du cycle de vie des** \> données **Microsoft 365** \> **Onglet Étendues adaptatives** \> + **Créer une étendue**
     
-    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les invites de la configuration pour sélectionner d’abord le type d’étendue, puis sélectionnez les attributs ou propriétés que vous souhaitez utiliser pour générer l’appartenance dynamique, puis tapez les valeurs d’attribut ou de propriété.
     
@@ -200,9 +203,9 @@ Pour exécuter une requête à l’aide de PowerShell :
     ```
     
     > [!TIP]
-    > Lorsque vous utilisez ces commandes pour valider une étendue utilisateur, si le nombre de destinataires renvoyés est supérieur à celui attendu, cela peut être dû au fait qu’elle inclut les utilisateurs qui n’ont pas de licence valide pour les étendues adaptatives. Les paramètres de rétention ne sont pas appliqués à ces utilisateurs.
+    > When you use these commands to validate a user scope, if the number of recipients returned is higher than expected, it might be because it includes users who don't have a valid license for adaptive scopes. These users won't have the retention settings applied to them.
     > 
-    > Par exemple, dans un environnement hybride, vous pouvez avoir des comptes d’utilisateurs synchronisés sans licence sans boîte aux lettres Exchange localement ou dans Exchange Online. Vous pouvez identifier ces utilisateurs en exécutant la commande suivante : `Get-User -RecipientTypeDetails User`
+    > For example, in a hybrid environment, you might have unlicensed synchronized user accounts without an Exchange mailbox on-premises or in Exchange Online. You can identify these users by running the following command: `Get-User -RecipientTypeDetails User`
 
 3. Vérifiez que la sortie correspond aux utilisateurs ou groupes attendus pour votre étendue adaptative. Si ce n’est pas le cas, vérifiez votre requête et les valeurs auprès de l’administrateur approprié pour Azure AD ou Exchange.
  
@@ -222,20 +225,20 @@ Lorsque vous choisissez d’utiliser des étendues statiques, vous devez décide
 
 À l’exception de Skype Entreprise, la valeur par défaut est que toutes les instances des emplacements sélectionnés sont automatiquement incluses dans la stratégie sans que vous ayez à les spécifier comme inclus.
 
-Par exemple, Tous les **destinataires** pour l'emplacement de la **messagerie Exchange**. Avec ce paramètre par défaut, toutes les boîtes aux lettres utilisateur existantes seront incluses dans la stratégie, et toute nouvelle boîte aux lettres créée après l'application de la stratégie héritera automatiquement de celle-ci.
+For example, **All recipients** for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
 
 #### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou des exclusions spécifiques
 
-Sachez que si vous utilisez la configuration optionnelle pour étendre vos paramètres de rétention à des utilisateurs spécifiques, des groupes Microsoft 365 spécifiques ou des sites spécifiques, il faut tenir compte de certaines limites par politique. Pour plus d’informations, voir [Limites des stratégies de rétention et stratégies d’étiquettes de rétention](retention-limits.md). 
+Be aware that if you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of. For more information, see [Limits for retention policies and retention label policies](retention-limits.md). 
 
 Pour utiliser la configuration optionnelle afin de définir vos paramètres de conservation, assurez-vous que **le statut** de ce lieu est **activé**, puis utilisez les liens pour inclure ou exclure des utilisateurs, des groupes Microsoft 365 ou des sites spécifiques.
 
 > [!WARNING]
 > Si vous configurez des instances à inclure, et supprimez la dernière, la configuration revient à **tous** pour l’emplacement.  Assurez-vous qu'il s'agit bien de la configuration que vous souhaitez avant d'enregistrer la stratégie.
 >
-> Par exemple, si vous spécifiez un site SharePoint à inclure dans votre stratégie de conservation configurée pour supprimer les données, puis que vous supprimez ce site unique, tous les sites SharePoint seront alors soumis par défaut à la stratégie de conservation qui supprime définitivement les données. Il en va de même pour les inclusions de destinataires Exchange, de comptes OneDrive, d'utilisateurs de chats Teams.
+> For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange recipients, OneDrive accounts, Teams chat users, and so on.
 >
-> Dans ce scénario, désactivez l'emplacement si vous ne voulez pas que le paramètre **Tout** de l'emplacement soit soumis à la stratégie de conservation. Vous pouvez également spécifier d'exclure les instances qui seront exemptées de la stratégie.
+> In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify exclude instances to be exempt from the policy.
 
 ## <a name="locations"></a>Emplacements
 
@@ -245,7 +248,7 @@ Les emplacements dans les stratégies de rétention identifient des services Mic
 
 L’emplacement de **Courrier Exchange** et l’emplacement des **dossiers publics Exchange** nécessitent que les boîtes aux lettres aient au moins 10 Mo de données avant que les paramètres de rétention ne s’appliquent à celles-ci.
 
-L’emplacement de l’**E-mail Exchange** prend en charge la rétention pour la messagerie, le calendrier et d’autres éléments de boîte aux lettres des utilisateurs, en appliquant des paramètres de rétention au niveau d’une boîte aux lettres. Les boîtes aux lettres partagées et les boîtes aux lettres de ressources pour l’équipement et les salles sont également prises en charge.
+The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes and resource mailboxes for equipment and rooms are also supported.
 
 Les contacts de messagerie et les boîtes aux lettres de groupe Microsoft 365 ne sont pas pris en charge pour les e-mails Exchange. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** . Bien que l’emplacement Exchange autorise initialement la sélection d’une boîte aux lettres de groupe pour une étendue statique, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur indiquant que « RemoteGroupMailbox » n’est pas une sélection valide pour cet emplacement.
 
@@ -269,9 +272,7 @@ L’emplacement **Dossiers publics Exchange** applique les paramètres de réten
 
 Lorsque vous configurez une stratégie d’application automatique qui utilise des types d’informations sensibles et sélectionnez l’emplacement **e-mail Exchange** :
 
-- Les boîtes aux lettres de groupe Microsoft 365 sont incluses.
-
-- Toutes les boîtes aux lettres sont automatiquement incluses, même si vous configurez une étendue adaptative pour identifier des boîtes aux lettres spécifiques. Si vous avez choisi une étendue de stratégie statique, vous ne pourrez pas spécifier les destinataires à inclure ou exclure.
+- Consultez la légende importante pour [appliquer automatiquement des étiquettes au contenu avec des types spécifiques d’informations sensibles](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information).
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informations de configuration pour les sites SharePoint et les comptes OneDrive
 
@@ -327,7 +328,7 @@ Pour revenir à la valeur par défaut de la boîte aux lettres et du site ShareP
 
 Lorsque vous configurez une stratégie d’application automatique qui utilise des types d’informations sensibles et sélectionnez l’emplacement **Groupes Microsoft 365** :
 
-- Les boîtes aux lettres de groupe Microsoft 365 ne sont pas incluses. Pour inclure ces boîtes aux lettres dans votre stratégie, sélectionnez plutôt l'emplacement de la **messagerie Exchange**.
+- Microsoft 365 group mailboxes aren't included. To include these mailboxes in your policy, select the **Exchange email** location instead.
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Que se passe-t-il si un groupe Microsoft 365 est supprimé après l'application d'une stratégie
 
@@ -350,7 +351,7 @@ Au contraire de Courrier Exchange, il est impossible de basculer l’état de l�
 
 Après avoir sélectionné cette option **Modifier**, dans le volet **Skype Entreprise**, vous pouvez inclure rapidement tous les utilisateurs en sélectionnant la zone masquée avant la colonne **Nom**. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion particulière dans la stratégie. Par conséquent, si vous incluez 1 000 utilisateurs en sélectionnant cette zone équivaut à sélectionner manuellement 1 000 utilisateurs à inclure, ce qui est le maximum pris en charge pour Skype Entreprise.
 
-Sachez que **l'historique des conversations**, un dossier dans Outlook, est une fonction qui n'a rien à voir avec l'archivage de Skype. **L'historique des conversations** peut être désactivé par l'utilisateur final, mais l'archivage de Skype se fait en stockant une copie des conversations Skype dans un dossier caché inaccessible à l'utilisateur mais disponible pour l'eDiscovery.
+Be aware that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Paramètres pour la conservation et la suppression de contenu
 
@@ -360,7 +361,7 @@ En choisissant les paramètres de conservation et de suppression de contenu, vot
     
     Pour cette configuration, choisissez les options suivantes :
     
-    - Pour les stratégies de rétention : sur la page **Décider si vous souhaitez conserver du contenu, le supprimer ou les deux**, sélectionnez **Conserver les éléments pendant une période spécifique**, spécifiez la période de rétention, puis pour **À la fin de la période de rétention**, sélectionnez **Ne rien faire** pour que les paramètres de rétention à supprimer. Vous pouvez également conserver sans date de fin en sélectionnant **Conserver les éléments indéfiniment** sur cette page.
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Retain items for a specific period**, specify the retention period and then for **At end of the retention period** select **Do nothing** for the retention settings to be removed.  Or to retain without an end date, select **Retain items forever** on this page.
     
     - Pour les étiquettes de rétention : dans la **page Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pendant une période spécifique**, puis :
         - Pour que les paramètres de rétention ne soient plus en vigueur sur le contenu étiqueté après une durée spécifique : dans la page **Définir la période de rétention**, pour **Conserver les éléments pendant**, spécifiez la période. Ensuite, dans la page **Choisir ce qui se passe après la période de rétention**, sélectionnez **Désactiver les paramètres de rétention**. L’étiquette reste sur le contenu, mais sans aucune restriction, comme s’il s’agissait d’une [étiquette qui classe simplement](retention.md#classifying-content-without-applying-any-actions).
@@ -372,7 +373,7 @@ En choisissant les paramètres de conservation et de suppression de contenu, vot
     
     - Pour les stratégies de rétention : sur la page **Décider si vous souhaitez conserver du contenu, le supprimer ou les deux**, sélectionnez **Conserver les éléments pendant une période spécifique**, spécifiez la période de rétention, puis pour **À la fin de la période de rétention**, sélectionnez **Supprimer automatiquement les éléments**.
     
-    - Pour les étiquettes de rétention : dans la page **Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pendant une période spécifique**, spécifiez la période de rétention, puis pour **Choisir ce qui se passe après la période de rétention**, sélectionnez **Supprimer automatiquement** ou **Démarrer une révision avant destruction**. Pour obtenir des informations sur les révisions avant destruction, voir [Révision avant destruction](disposition.md#disposition-reviews).
+    - For retention labels: On the **Define label settings** page, select **Retain items indefinitely or for a specific period**, specify the retention period and then for **Choose what happens after the retention period**, select either **Delete items automatically** or **Start a disposition review**. For information about disposition reviews, see [Disposition review](disposition.md#disposition-reviews).
 
 - Supprimer uniquement
 
@@ -390,15 +391,15 @@ Pour le début de la période de rétention, vous pouvez choisir le moment où l
 
 Exemples :
 
-- SharePoint : si vous souhaitez conserver des éléments dans une collection de site pendant sept ans après la date de dernière modification du contenu et qu’un document de cette collection de site n’a pas été modifié depuis six ans, celui-ci ne sera conservé que pendant une autre année sauf s’il est modifié entre-temps. Si le document est de nouveau modifié, l’âge du document est calculé à partir de la date de dernière modification, et il sera conservé pendant sept années supplémentaires.
+- SharePoint: If you want to retain items in a site collection for seven years after this content is last modified, and a document in that site collection hasn't been modified in six years, the document will be retained for only another year if it's not modified. If the document is edited again, the age of the document is calculated from the new last modified date, and it will be retained for another seven years.
 
-- Exchange : Si vous souhaitez conserver les éléments dans une boîte aux lettres pendant sept ans et qu’un message a été envoyé il y a six ans, celui-ci ne sera conservé que pendant une autre année. Pour les éléments Exchange, l’âge est basé sur la date de réception du courrier entrant et d’envoi du courrier sortant. La rétention d’éléments sur la base de la date de dernière modification ne s’applique qu’au contenu de site sur OneDrive et SharePoint.
+- Exchange: If you want to retain items in a mailbox for seven years, and a message was sent six years ago, the message will be retained for only one year. For Exchange items, the age is based on the date received for incoming email, or the date sent for outgoing email. Retaining items based on when it was last modified applies only to site content in OneDrive and SharePoint.
 
-À la fin de la période de rétention, vous choisissez de supprimer définitivement le contenu. Par exemple, pour les stratégies de rétention :
+At the end of the retention period, you choose whether you want the content to be permanently deleted. For example, for retention policies:
 
 ![Page Paramètres de rétention.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
-Comme nous l’expliquons dans la section suivante, les étiquettes de rétention disposent d’une autre option : appliquer une autre étiquette de rétention avec sa propre période de rétention.
+Les étiquettes de rétention ont deux autres options. Comme décrit dans la section suivante, ils peuvent appliquer une autre étiquette de rétention avec sa propre période de rétention. Ils peuvent également [déclencher un flux Power Automate](retention-label-flow.md) pour les actions personnalisées.
 
 Avant de configurer la rétention, familiarisez-vous tout d’abord avec les limites de capacité et de stockage pour les charges de travail respectives :
 
@@ -406,12 +407,9 @@ Avant de configurer la rétention, familiarisez-vous tout d’abord avec les lim
 
 - Pour Exchange, Teams et Yammer, où les messages conservés sont stockés dans des boîtes aux lettres, consultez [Limites Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) et activez [Archivage à extension automatique](autoexpanding-archiving.md).
     
-    Dans les cas extrêmes où un volume élevé d’e-mails est supprimé sur une courte période, soit par des utilisateurs, soit automatiquement à partir des paramètres de stratégie, vous devrez peut-être également configurer Exchange pour déplacer plus fréquemment des éléments du dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur vers le dossier Éléments récupérables de leur boîte aux lettres d’archivage. Pour obtenir des instructions pas à pas, consultez [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+    In extreme cases where a high volume of email is deleted in a short time period, either by users or automatically from policy settings, you might also need to configure Exchange to more frequently move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. For step-by-step instructions, see [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 #### <a name="relabeling-at-the-end-of-the-retention-period"></a>Réétiquetage à la fin de la période de rétention
-
-> [!NOTE]
-> Cette option est en aperçu et est sujette à modifications.
 
 Lorsque vous configurez une étiquette de rétention pour appliquer automatiquement une autre étiquette de rétention à la fin de la période de rétention, l’élément est alors soumis aux paramètres de rétention de l’étiquette de rétention nouvellement sélectionnée. Cette option vous permet de modifier automatiquement les paramètres de rétention de l’élément.
 
@@ -461,7 +459,7 @@ Les réviseurs avant destruction peuvent également sélectionner manuellement u
 
 Les paramètres de rétention peuvent conserver puis supprimer des éléments, ou bien supprimer de vieux éléments sans les conserver.
 
-Dans les deux cas, si vos paramètres de rétention suppriment des éléments, il est important de comprendre que la période que vous spécifiez n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée. Par exemple, à partir du moment où l’élément a été créé, modifié ou étiqueté.
+In both cases, if your retention settings delete items, it's important to understand that the time period you specify isn't calculated from the time the policy was assigned, but according to the start of the retention period specified. For example, from the time when the item was created or modified, or labeled.
 
 Pour cette raison, tenez d’abord compte de l’âge du contenu existant et de la façon dont les paramètres peuvent affecter ce contenu. Envisagez de communiquer les paramètres de votre choix à vos utilisateurs et au support technique avant application des paramètres au contenu, ce qui leur donne le temps d’évaluer l’impact possible.
 
@@ -471,20 +469,20 @@ Lorsque vous choisissez des emplacements, à l’exception de Skype Entreprise, 
 
 Quand une stratégie de rétention s’applique sur une combinaison d’emplacements entiers, le nombre de destinataires, sites, comptes, groupes, etc., que la stratégie peut inclure n’est pas limité.
 
-Par exemple, si la stratégie inclut tous les courriers électroniques sur Exchange et tous les sites sur SharePoint, tous les sites et destinataires seront inclus, quel qu’en soit le nombre. Pour Exchange, toute nouvelle boîte aux lettres créée après l’application de la stratégie hérite automatiquement de la stratégie.
+For example, if a policy includes all Exchange email and all SharePoint sites, all sites and recipients will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou des exclusions spécifiques
 
-Sachez que si vous utilisez la configuration optionnelle pour étendre vos paramètres de rétention à des utilisateurs spécifiques, des groupes Microsoft 365 spécifiques ou des sites spécifiques, il faut tenir compte de certaines limites par politique. Pour plus d’informations, voir [Limites des stratégies de rétention et stratégies d’étiquettes de rétention](retention-limits.md). 
+Be aware that if you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of. For more information, see [Limits for retention policies and retention label policies](retention-limits.md). 
 
 Pour utiliser la configuration optionnelle afin de définir vos paramètres de conservation, assurez-vous que **le statut** de ce lieu est **activé**, puis utilisez les liens pour inclure ou exclure des utilisateurs, des groupes Microsoft 365 ou des sites spécifiques.
 
 > [!WARNING]
 > Si vous configurez inclut et supprimez ensuite le dernier, la configuration revient à **Tout** pour l’emplacement.  Assurez-vous qu'il s'agit bien de la configuration que vous souhaitez avant d'enregistrer la stratégie.
 >
-> Par exemple, si vous spécifiez un site SharePoint à inclure dans votre stratégie de conservation configurée pour supprimer les données, puis que vous supprimez ce site, tous les sites SharePoint seront alors soumis par défaut à la stratégie de conservation qui supprime définitivement les données. Il en va de même pour les inclusions de destinataires Exchange, de comptes OneDrive, d'utilisateurs de chats Teams.
+> For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange recipients, OneDrive accounts, Teams chat users etc.
 >
-> Dans ce scénario, désactivez l'emplacement si vous ne voulez pas que le paramètre **Tout** de l'emplacement soit soumis à la politique de conservation. Vous pouvez également spécifier des exclusions pour être exempté de la stratégie.
+> In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify excludes to be exempt from the policy.
 
 ## <a name="updating-policies-for-retention"></a>Mise à jour des stratégies pour la rétention
 
@@ -493,7 +491,7 @@ Certains paramètres ne peuvent pas être modifiés une fois la stratégie de r�
 
 Si vous modifiez une stratégie de rétention et que des éléments y sont déjà sujets aux paramètres originaux, vos paramètres mis à jour seront automatiquement appliqués à ces éléments en plus des éléments qui seront nouvellement identifiés.
 
-En règle générale, cette mise à jour est assez rapide, mais peut prendre plusieurs jours. Une fois la réplication de stratégie sur vos emplacements Microsoft 365 terminée, l’état de la stratégie de rétention dans le portail de conformité Microsoft Purview passe de **Activé (en attente)** à **Activé (opération réussie)**.
+Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft Purview compliance portal change from **On (Pending)** to **On (Success)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Verrouillage de la stratégie pour empêcher toute modification
 

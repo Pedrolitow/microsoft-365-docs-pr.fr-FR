@@ -20,12 +20,12 @@ description: Découvrez les actions de correction dans les fonctionnalités d’
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 0342ad8b4319d82205889785cd243b0a6aa5d9e2
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 82a81a4b34fb5842fe21ec61321fd6d592472ba3
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68086044"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543110"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
@@ -39,7 +39,9 @@ ms.locfileid: "68086044"
 - Suppression réversible de messages électroniques ou de clusters
 - Désactivation du transfert de courrier externe
 
-Ces actions de correction ne sont pas effectuées tant que votre équipe chargée des opérations de sécurité ne les approuve pas. Nous vous recommandons d’examiner et d’approuver toutes les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu. Dans certains cas, vous pouvez reconsidérer les actions soumises.  Vous devez faire partie du rôle De recherche & purge avant d’effectuer des actions.
+Ces actions de correction ne sont pas effectuées tant que votre équipe chargée des opérations de sécurité ne les approuve pas. Nous vous recommandons d’examiner et d’approuver toutes les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu. Vous devez faire partie du rôle De recherche & purge avant d’effectuer des actions.
+
+Nous avons ajouté des vérifications supplémentaires pour les investigations en double ou qui se chevauchent avec les mêmes clusters approuvés plusieurs fois. Si le même cluster d’investigation est déjà approuvé au cours de l’heure précédente, la nouvelle correction en double ne sera pas traitée à nouveau. Ce comportement ne supprime pas les investigations en double ou les preuves d’investigation . Il déduit simplement les actions approuvées pour améliorer la vitesse de traitement des corrections. Pour les investigations de cluster approuvées en double, vous ne verrez pas les détails de l’action dans le panneau latéral [du centre d’actions](https://security.microsoft.com/action-center/history) . 
 
 ## <a name="approve-or-reject-pending-actions"></a>Approuver (ou rejeter) les actions en attente
 

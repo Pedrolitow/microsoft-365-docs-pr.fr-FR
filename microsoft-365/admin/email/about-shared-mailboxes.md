@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées servent lorsque plusieurs personnes doivent accéder à la même boîte aux lettres. Découvrez les éléments à connaître avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: d7d4bf06fa9e91bca7a3847a9db99aee0a6ca97f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9c34cf0658f9028a14d8fa37380b7df812089495
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204956"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542516"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 
@@ -67,7 +67,7 @@ Avant de [créer une boîte aux lettres partagée](create-a-shared-mailbox.md), 
 
 
 > [!NOTE]
-> Pour accéder à une boîte aux lettres partagée, un utilisateur doit disposer d’une licence Exchange Online, mais la boîte aux lettres partagée ne nécessite pas de licence séparée. Chaque boîte aux lettres partagée a un compte d'utilisateur correspondant. Vous n'avez pas été invité à fournir un mot de passe lors de la création de la boîte aux lettres partagée ? Le compte a un mot de passe qui est généré par le système (inconnu). Vous ne devez pas utiliser le compte pour vous connecter à la boîte aux lettres partagée. Sans licence, les boîtes aux lettres partagées sont limitées à 50 Go. Pour augmenter la taille limite à 100 Go, une licence Exchange Online Plan 2 doit être attribuée à la boîte aux lettres partagée. La licence Exchange Online Plan 1 avec une licence de module complémentaire d’archivage Exchange Online augmente uniquement la taille de la boîte aux lettres d’archivage. Cela vous permet également d’activer l’archivage à extension automatique pour une capacité de stockage d’archivage supplémentaire. De même, si vous voulez placer une boîte aux lettres partagée au maintien d’un litige, la boîte aux lettres partagée doit avoir une licence Exchange Online Plan 2 ou une licence Exchange Online Plan 1 avec une licence de composant additionnel archivage Exchange Online. Si vous souhaitez appliquer des fonctionnalités avancées telles que Microsoft Defender pour Office 365, eDiscovery (Premium) ou des stratégies de rétention automatique, la boîte aux lettres partagée doit être concédée sous licence pour ces fonctionnalités.
+> Pour accéder à une boîte aux lettres partagée, un utilisateur doit disposer d’une licence Exchange Online, mais la boîte aux lettres partagée ne nécessite pas de licence séparée. Chaque boîte aux lettres partagée a un compte d'utilisateur correspondant. Vous n'avez pas été invité à fournir un mot de passe lors de la création de la boîte aux lettres partagée ? Le compte a un mot de passe qui est généré par le système (inconnu). Vous ne devez pas utiliser le compte pour vous connecter à la boîte aux lettres partagée. Sans licence, les boîtes aux lettres partagées sont limitées à 50 Go. Pour augmenter la taille limite à 100 Go, une licence Exchange Online Plan 2 doit être attribuée à la boîte aux lettres partagée. La licence Exchange Online Plan 1 avec une licence de module complémentaire d’archivage Exchange Online augmente uniquement la taille de la boîte aux lettres d’archivage. Cela vous permet également d’activer l’archivage à extension automatique pour une capacité de stockage d’archivage supplémentaire. De même, si vous voulez placer une boîte aux lettres partagée au maintien d’un litige, la boîte aux lettres partagée doit avoir une licence Exchange Online Plan 2 ou une licence Exchange Online Plan 1 avec une licence de composant additionnel archivage Exchange Online. Si vous souhaitez appliquer des fonctionnalités avancées telles que Microsoft Defender pour Office 365, eDiscovery (Premium) ou des stratégies de rétention, la boîte aux lettres partagée doit être concédée sous licence pour ces fonctionnalités.
 
 > [!NOTE]
 > Avant juillet 2018, toutes les boîtes aux lettres partagées sans licence avaient une taille de 100 Go. Pour plus [d’informations, consultez Correction de l’approvisionnement et du dimensionnement des boîtes aux lettres partagées](https://techcommunity.microsoft.com/t5/exchange-team-blog/correcting-shared-mailbox-provisioning-and-sizing/ba-p/607991).

@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des URL dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 399bf9b5747a62759959b42dc986b1ab525d2c15
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: a30ccde16fb52f672ecc0643b2c8c24d682b3bd9
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68060579"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542780"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des URL utilisant la liste Autoriser/Bloquer des clients
 
@@ -34,7 +34,7 @@ ms.locfileid: "68060579"
 
 Cet article explique comment créer et gérer des entrées d’autorisation et de blocage d’URL disponibles dans la liste d’autorisations/de blocs du locataire. Pour plus d’informations sur la liste d’autorisations/blocages du locataire, consultez [Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire](manage-tenant-allow-block-list.md).
 
-Vous gérez les entrées d’autorisation et de blocage des URL dans le portail Microsoft 365 Defender ou dans Exchange Online PowerShell.
+Vous gérez les entrées d’autorisation et de blocage des URL dans le portail Microsoft 365 Defender ou dans Exchange Online PowerShell. Les messages contenant les URL bloquées sont mis en quarantaine.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
