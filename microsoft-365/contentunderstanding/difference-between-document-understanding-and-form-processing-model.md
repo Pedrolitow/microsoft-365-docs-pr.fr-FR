@@ -1,5 +1,5 @@
 ---
-title: Différences entre les modèles personnalisés dans Microsoft SharePoint Syntex
+title: Différences entre les modèles personnalisés dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez les principales différences entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: b17ab57cd7252c9a1cee7abb5a81359a965ca477
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Découvrez les principales différences entre un modèle de compréhension de document et un modèle de traitement de formulaire dans Microsoft Syntex.
+ms.openlocfilehash: 2d5d131ffb2176afabaf85474312bc07894491d9
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812093"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547881"
 ---
-# <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Différences entre les modèles personnalisés dans Microsoft SharePoint Syntex 
+# <a name="differences-between-custom-models-in-microsoft-syntex"></a>Différences entre les modèles personnalisés dans Microsoft Syntex 
 
-La compréhension du contenu dans Microsoft SharePoint Syntex vous permet d’identifier et de classer les documents chargés dans les bibliothèques de documents SharePoint, puis d’extraire les informations pertinentes de chaque fichier. Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
+La compréhension du contenu dans Microsoft Syntex vous permet d’identifier et de classifier les documents chargés dans les bibliothèques de documents SharePoint, puis d’extraire les informations pertinentes de chaque fichier. Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
 
 La compréhension de contenu vous permet de créer des *modèles* pour identifier et extraire les informations dont vous avez besoin. Les modèles peuvent vous aider à résoudre des problèmes commerciaux liés à la recherche, aux processus commerciaux, à la conformité et bien d’autres.
 
@@ -34,13 +34,13 @@ Vous pouvez utiliser deux types de modèles personnalisés :
 Bien que les deux modèles soient généralement utilisés dans le même but, les principales différences répertoriées ci-dessous affectent ceux que vous pouvez utiliser.
 
 > [!NOTE]
-> Pour plus d’informations sur le traitement des formulaires et les exemples de scénarios de compréhension des documents, consultez la rubrique [Prise en main de l’adoption de SharePoint Syntex](./adoption-getstarted.md).
+> Pour plus d’informations sur le traitement des formulaires et les exemples de scénarios de compréhension des documents, consultez la rubrique [Prise en main de l’adoption de Syntex](./adoption-getstarted.md) .
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenu structuré, contenu non structuré ou contenu semi-structuré
 
 Utilisez des modèles de compréhension de document pour identifier et extraire des données de documents non structurés, comme des lettres ou des contrats, dans lesquels les entités de texte que vous souhaitez extraire se trouvent dans des phrases ou des zones spécifiques du document. Par exemple, un document non structuré peut être une lettre de renouvellement de contrat, qui peut être rédigée de différentes manières. Toutefois, les informations existent de manière cohérente dans le corps de chaque document de renouvellement de contrat, comme la chaîne `Service start date of` de texte suivie d’une date réelle.
 
-Utilisez des modèles de traitement de formulaire pour identifier les fichiers et extraire des données de documents structurés ou semi-structurés, tels que des formulaires ou des factures. Les modèles de traitement de formulaire sont formés pour comprendre la mise en page de votre formulaire à partir d’exemples de documents et apprendre à rechercher les données que vous devez extraire à partir d’emplacements similaires. En effet, les formulaires ont une mise en page plus structurée et les entités se trouvent à la même place (par exemple, un numéro de sécurité sociale sur un formulaire fiscal).
+Use form processing models to identify files and extract data from structured or semi-structured documents, such as forms or invoices. Form processing models are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number in a tax form).
 
 > [!NOTE]
 > Vous devez avoir accès à un site de type centre de contenu pour créer un modèle de compréhension de document ou pour en appliquer un à une bibliothèque de documents SharePoint. 
@@ -82,7 +82,7 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 | Intégration aux métadonnées gérées | Non | Oui, par l’extracteur de l’entité de formation qui fait référence à un champ de métadonnées gérées configurée.|
 | Intégration des fonctionnalités de conformité à Protection des données Microsoft Purview | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité à venir. | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité publiées. |
 | Régions pris en charge| Le traitement des formulaires s’appuie sur la plateforme Power. Pour plus d’informations sur la disponibilité globale de la plateforme Power et du Générateur d’intelligence artificielle, consultez [Disponibilité de la plateforme Power](https://dynamics.microsoft.com/geographic-availability/). | Disponible dans toutes les régions.|
-| Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>3,5 Ko de crédits sont inclus pour chaque licence SharePoint Syntex par mois.<br>1M de crédits permet de traiter un fichier de 2 000 pages.<br>| Non applicable |
+| Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>3,5 000 crédits sont inclus pour chaque licence Syntex par mois.<br>1M de crédits permet de traiter un fichier de 2 000 pages.<br>| Non applicable |
 | Capacité | Utilise l’environnement de plateforme Power par défaut (environnements personnalisés pris en charge par la base de données de dataverse). | Ne comprend pas de restrictions de capacité.|
 | Langues prises en charge| Prise en charge linguistique pour plus de [73 langues](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : l’allemand, le suédois, le Français, l’espagnol, l’italien et le portugais.|
 
@@ -95,4 +95,4 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 
 [Vue d’ensemble du traitement des formulaires](form-processing-overview.md)
 
-[Introduction à SharePoint Syntex](index.md)
+[Présentation de Microsoft Syntex](index.md)

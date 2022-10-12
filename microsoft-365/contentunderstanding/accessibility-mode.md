@@ -1,5 +1,5 @@
 ---
-title: Mode d’accessibilité dans Microsoft SharePoint Syntex
+title: Mode d’accessibilité dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment utiliser le mode fonctionnalités d’accessibilité lors de l’apprentissage et de l’utilisation des modèles dans SharePoint Syntex.
-ms.openlocfilehash: 1355e48b42ab74c9d03f5b2944f3a7d146b4dd18
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Découvrez comment utiliser le mode fonctionnalités d’accessibilité lors de l’entraînement et de l’utilisation de modèles dans Microsoft Syntex.
+ms.openlocfilehash: b3571118fe409e04140f9e45cb77e43ea7e45aca
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026444"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547377"
 ---
-# <a name="accessibility-mode-in-microsoft-sharepoint-syntex"></a>Mode d’accessibilité dans Microsoft SharePoint Syntex
+# <a name="accessibility-mode-in-microsoft-syntex"></a>Mode d’accessibilité dans Microsoft Syntex
 
-Dans [SharePoint Syntex](index.md), les utilisateurs peuvent activer le mode d’accessibilité à toutes les étapes de l’entraînement du modèle (étiquette, apprentissage, test) lors de l’utilisation d’exemples de documents. L’utilisation du mode d’accessibilité peut aider les utilisateurs malvoyants à faciliter l’accessibilité au clavier à mesure qu’ils naviguent et étiquettent des éléments dans la visionneuse de documents.
+Dans [Microsoft Syntex](index.md), les utilisateurs peuvent activer le mode d’accessibilité à toutes les étapes de l’entraînement du modèle (étiquette, apprentissage, test) lors de l’utilisation d’exemples de documents. L’utilisation du mode d’accessibilité peut aider les utilisateurs malvoyants à faciliter l’accessibilité au clavier à mesure qu’ils naviguent et étiquettent des éléments dans la visionneuse de documents.
 
 Cela permet aux utilisateurs d’utiliser leurs claviers pour parcourir le texte dans la visionneuse de documents et entendre une narration des valeurs sélectionnées, mais aussi des actions (par exemple, l’étiquetage ou la suppression de l’étiquetage du texte sélectionné) ou des valeurs d’étiquette prédites lorsque vous entraînez le modèle avec d’autres exemples de documents. 
 

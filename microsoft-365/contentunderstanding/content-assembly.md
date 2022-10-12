@@ -1,5 +1,5 @@
 ---
-title: Créer des documents à l’aide d’un assembly de contenu dans Microsoft SharePoint Syntex
+title: Créer des documents à l’aide d’un assembly de contenu dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,22 +12,22 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide d’un modèle moderne dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 9aaaea0c4bba533ea3ba27753b167aea1a4cf489
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide d’un modèle moderne dans Microsoft Syntex.
+ms.openlocfilehash: e254f0dbf0ac4e415da32a088ae5970e5b02873a
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224159"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547903"
 ---
-# <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Créer des documents à l’aide d’un assembly de contenu dans Microsoft SharePoint Syntex
+# <a name="create-documents-using-content-assembly-in-microsoft-syntex"></a>Créer des documents à l’aide d’un assembly de contenu dans Microsoft Syntex
 
-Vous pouvez utiliser SharePoint Syntex pour vous aider à générer automatiquement des documents métier répétitifs standard, tels que des contrats, des déclarations de travail, des contrats de service, des lettres de consentement, des présentations commerciales et de la correspondance. Vous pouvez faire tout cela plus rapidement, de manière plus cohérente et avec moins d’erreurs en utilisant l’assembly de contenu dans SharePoint Syntex.
+Vous pouvez utiliser Microsoft Syntex pour vous aider à générer automatiquement des documents métier répétitifs standard, tels que des contrats, des instructions de travail, des contrats de service, des lettres de consentement, des présentations commerciales et de la correspondance. Vous pouvez faire tout cela plus rapidement, de manière plus cohérente et avec moins d’erreurs à l’aide de l’assembly de contenu dans Syntex.
 
 Avec l’assembly de contenu, vous pouvez utiliser un document existant pour créer un *modèle moderne*, puis utiliser ce modèle pour générer automatiquement du contenu à l’aide de listes SharePoint ou d’entrées manuelles comme source de données.
 
 > [!NOTE]
-> Vous devez disposer d’une licence SharePoint Syntex utilisateur pour accéder aux fonctionnalités d’assembly de contenu et les utiliser. Vous devez également disposer des autorisations nécessaires pour gérer les listes SharePoint.
+> Vous devez être un utilisateur Syntex sous licence pour accéder aux fonctionnalités d’assembly de contenu et les utiliser. Vous devez également disposer des autorisations nécessaires pour gérer les listes SharePoint.
 
 ## <a name="create-a-modern-template"></a>Créer un modèle moderne
 
@@ -177,7 +177,7 @@ Vous pouvez utiliser un modèle moderne *publié* pour créer rapidement des doc
 
    ![Capture d’écran de la bibliothèque de documents montrant la création d’un document à partir d’un panneau de modèle.](../media/content-understanding/content-assembly-create-document-2b.png)
 
-   Pour réduire le temps et les efforts nécessaires pour remplir les valeurs des espaces réservés, SharePoint Syntex fournit :
+   Pour réduire le temps et les efforts impliqués dans le remplissage des valeurs pour les espaces réservés, Syntex fournit :
 
       - Suggestions pour vous aider à sélectionner facilement des valeurs lors de la sélection de valeurs dans une liste.
       - Remplissage automatique des valeurs d’espace réservé s’ils sont en mesure d’identifier de manière unique un enregistrement pour les espaces réservés associés à la même liste.

@@ -1,5 +1,5 @@
 ---
-title: Créer un extracteur dans Microsoft SharePoint Syntex
+title: Créer un extracteur dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: e80100c7a1f5614c3057188a630ae81182e87f7c
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Découvrez comment créer un extracteur dans Microsoft Syntex.
+ms.openlocfilehash: b47633d7e9489da46e82bb9f7b3699c65b663a08
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026532"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547596"
 ---
-# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
+# <a name="create-an-extractor-in-microsoft-syntex"></a>Créer un extracteur dans Microsoft Syntex
 
 
 <br/>
@@ -190,4 +190,4 @@ Si vous avez des entités en double et que vous souhaitez extraire une seule val
 
 [Appliquer un modèle](apply-a-model.md)
 
-[Mode d’accessibilité Syntex de SharePoint](accessibility-mode.md)
+[Mode d’accessibilité Syntex](accessibility-mode.md)

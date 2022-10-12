@@ -1,5 +1,5 @@
 ---
-title: Types d’explications dans Microsoft SharePoint Syntex
+title: Types d’explications dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explications de proximité dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: acf691561e2935d982786fb60a0fe8cb4b410f42
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explications de proximité dans Microsoft Syntex.
+ms.openlocfilehash: a85272830dcbc64266456774c56ea02ceb6245e6
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580945"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547947"
 ---
-# <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Types d’explications dans Microsoft SharePoint Syntex
+# <a name="explanation-types-in-microsoft-syntex"></a>Types d’explications dans Microsoft Syntex
 
-Les explications sont utilisées pour vous permettre de définir les informations que vous souhaitez étiqueter et extraire dans vos modèles de compréhension de documents dans Microsoft SharePoint Syntex. Lorsque vous créez une explication, vous devez sélectionner un type d’explication. Cet article vous permet de comprendre les différents types d’explications et comment ils sont utilisés.
+Des explications sont utilisées pour vous aider à définir les informations que vous souhaitez étiqueter et extraire dans vos modèles de compréhension de document dans Microsoft Syntex. Lorsque vous créez une explication, vous devez sélectionner un type d’explication. Cet article vous permet de comprendre les différents types d’explications et comment ils sont utilisés.
 
 ![Capture d’écran du panneau Créer une explication montrant les trois types d’explications.](../media/content-understanding/explanation-types.png)
 
@@ -89,11 +89,11 @@ Cette expression se compose de cinq parties, dans cet ordre :
 
 1. Un des caractères spéciaux suivants :
 
-   a. Lettres de a à z
+   a. Letters from a to z
 
-   b. Chiffres entre 0 et 9
+   b. Numbers from 0-9
 
-   c. Point, trait de soulignement, pourcentage ou tiret
+   c. Period, underscore, percent, or dash
 
 2. Le symbole @
 
@@ -151,7 +151,7 @@ Le tableau suivant illustre des exemples sur la façon de déterminer le nombre 
 |Expression|Nombre de jetons|Explication|
 |---|---|---|
 |`Dog`|1|Un seul mot sans ponctuation ni espaces.|
-|`RMT33W`|1|Numéro de localisateur d’enregistrement. Il peut inclure des chiffres et des lettres, mais n’a pas de ponctuation.|
+|`RMT33W`|1|A record locator number. It might include numbers and letters, but doesn't have punctuation.|
 |`425-555-5555`|5|Un numéro de téléphone. Chaque signe de ponctuation équivaut à un seul jeton, donc `425-555-5555` correspond à 5 jetons :<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555`|
 |`https://luis.ai`|7 |`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`|
 
@@ -226,4 +226,4 @@ Lorsque vous entraînez un classifieur, il y a quelques éléments à garder à 
 
 ### <a name="see-also"></a>Voir aussi
 
-[Utiliser des modèles d’explication dans SharePoint Syntex](explanation-templates.md)
+[Utiliser des modèles d’explication dans Microsoft Syntex](explanation-templates.md)

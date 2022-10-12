@@ -1,26 +1,26 @@
 ---
-title: Dupliquer un modèle dans Microsoft SharePoint Syntex
+title: Dupliquer un modèle dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment et pourquoi dupliquer un modèle de compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 56e05389cad4ad9010324a3efd48bf679700be76
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+description: Découvrez comment et pourquoi dupliquer un modèle de compréhension de document dans Microsoft Syntex.
+ms.openlocfilehash: 4cacd968082bb875e9b9bfdfd1df13d87dba3cb6
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882239"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547859"
 ---
-# <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Dupliquer un modèle dans Microsoft SharePoint Syntex
+# <a name="duplicate-a-model-in-microsoft-syntex"></a>Dupliquer un modèle dans Microsoft Syntex
 
 La duplication d'un modèle de compréhension de document peut vous faire gagner du temps et vous épargner des efforts si vous devez créer un nouveau modèle et si vous savez qu'un modèle existant est très similaire à ce dont vous avez besoin.
 
@@ -66,4 +66,4 @@ Suivez ces étapes pour dupliquer un modèle de compréhension de document.
 
 [Appliquer un modèle](apply-a-model.md) 
 
-[Mode d’accessibilité Syntex de SharePoint](accessibility-mode.md)
+[Mode d’accessibilité Syntex](accessibility-mode.md)

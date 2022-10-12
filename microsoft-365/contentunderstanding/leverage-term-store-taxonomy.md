@@ -1,5 +1,5 @@
 ---
-title: Tirez parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft SharePoint Syntex
+title: Tirer parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: Utilisez la taxonomie du magasin de termes lors de la création d’un extracteur dans votre modèle de compréhension de document via Microsoft SharePoint Syntex.
-ms.openlocfilehash: 551acd46d2ccf8336bbdf6b6fda7e7cb448dd66c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Utilisez la taxonomie du magasin de termes lors de la création d’un extracteur dans votre modèle de compréhension de document dans Microsoft Syntex.
+ms.openlocfilehash: f36d8a1f398031103ec308e89b8587eebfcaacdf
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579267"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547727"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Tirez parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft SharePoint Syntex
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-syntex"></a>Tirer parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft Syntex
 
 </br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "67579267"
 
 </br>
 
-Lorsque vous créez un extracteur dans votre modèle de compréhension de document via SharePoint Syntex, vous pouvez tirer parti des ensembles de termes globaux [Services de métadonnées gérées](/sharepoint/managed-metadata) pour afficher les termes recommandés concernant les données extraites.  
+Lorsque vous créez un extracteur dans votre modèle de compréhension de document à l’aide de Microsoft Syntex, vous pouvez tirer parti des ensembles de termes globaux dans le [magasin de termes](/sharepoint/managed-metadata) pour afficher les termes préférés pour les données que vous extrayez.  
 
 Par exemple, votre modèle identifie et classe tous les documents **Contrat** chargés dans la bibliothèque de documents.  De plus, le modèle extrait également une valeur de **service de contrat** de chaque contrat et l’affiche dans une colonne de la vue de la bibliothèque. Les diverses valeurs de services des contrats incluent plusieurs éléments plus anciens, à présent inutilisés par votre société et renommés. Par exemple, toutes les références aux termes *Conception*, *Graphiques* ou *Topographie* (services de contrat) doivent à présent recevoir l’appellation *Créatif*. Chaque fois que votre modèle extrait l’un des termes obsolètes d’un document contractuel, il doit afficher le terme à jour, à savoir Créatif, dans la vue de la bibliothèque. Dans l’exemple ci-après, lors de la formation du modèle, nous constatons qu’un exemple de document contient le terme obsolète *Conception*.
 

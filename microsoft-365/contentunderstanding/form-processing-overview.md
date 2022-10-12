@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble sur le traitement de formulaires dans Microsoft SharePoint Syntex
+title: Vue d’ensemble du traitement des formulaires dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,26 +12,26 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment utiliser ai build pour créer des modèles de traitement de formulaires dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 327a8b91842f032a1176ab32e84b3f568079e8d2
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Découvrez comment utiliser ai build pour créer des modèles de traitement de formulaires dans Microsoft Syntex.
+ms.openlocfilehash: a29ab194f42331218bf75671cfb776c706d2ee46
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812499"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547508"
 ---
-# <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble sur le traitement de formulaires dans Microsoft SharePoint Syntex
+# <a name="form-processing-overview-in-microsoft-syntex"></a>Vue d’ensemble du traitement des formulaires dans Microsoft Syntex
 
  ![Générateur d’intelligence artificielle.](../media/content-understanding/ai-builder.png)</br>
 
-Microsoft SharePoint Syntex utilise le traitement de formulaire Microsoft PowerApps [AI Builder](/ai-builder/overview) pour créer des modèles au sein de bibliothèques de documents SharePoint.
+Microsoft Syntex utilise le traitement des formulaires AI [Builder](/ai-builder/overview) Microsoft Power Apps pour créer des modèles dans les bibliothèques de documents SharePoint.
 
 Vous pouvez utiliser le traitement de formulaire AI Builder pour créer des modèles IA qui utilisent la technologie machine learning pour identifier et extraire des paires clé-valeur et des données de table à partir de documents structurés ou semi-structurés, tels que des formulaires et des factures.
 
 Les organisations reçoivent souvent des factures en grande quantité à partir de diverses sources, telles que le courrier, la télécopie et le courrier électronique. Le traitement de ces documents et leur saisie manuelle dans une base de données peuvent prendre beaucoup de temps. L’utilisation de l’AI pour extraire le texte, les paires clé/valeur et les tables de vos documents, le traitement de formulaire automatise ce processus. 
 
 > [!NOTE]
-> Pour plus d’informations sur les exemples de scénarios de traitement de formulaires, consultez l’article [SharePoint Syntex adoption : Guide de démarrage](./adoption-getstarted.md).
+> Consultez le [guide d’adoption de Syntex : prise en main](./adoption-getstarted.md) pour plus d’informations sur les exemples de scénarios de traitement des formulaires.
 
 Par exemple, vous pouvez créer un modèle de traitement de formulaire qui identifie tous les documents de bon de commande téléchargés dans la bibliothèque de documents. À partir de chaque bon de commande, vous pouvez ensuite extraire et afficher des données spécifiques qui sont importantes pour vous, telles que le *numéro* de bon de commande, *la date* ou *le coût total*.
 
@@ -53,7 +53,7 @@ Le traitement des formulaires prend en charge les documents dans plus de 73 lang
 
 ## <a name="multi-geo-environments"></a>Microsoft 365 Multigéographie
 
-Lors de la configuration de SharePoint Syntex dans un[environnement Microsoft 365 Multigéographie](../enterprise/microsoft-365-multi-geo.md), vous pouvez seulement le configurer pour utiliser le traitement des formulaires à l’emplacement central. Si vous souhaitez utiliser le traitement de formulaires dans un emplacement satellite, contactez le support Microsoft.
+Lors de la configuration de Syntex dans un [environnement multigéographique Microsoft 365](../enterprise/microsoft-365-multi-geo.md), vous ne pouvez le configurer que pour utiliser le traitement des formulaires à l’emplacement central. Si vous souhaitez utiliser le traitement de formulaires dans un emplacement satellite, contactez le support Microsoft.
 
 ## <a name="custom-environments"></a>Environnements personnalisés
 

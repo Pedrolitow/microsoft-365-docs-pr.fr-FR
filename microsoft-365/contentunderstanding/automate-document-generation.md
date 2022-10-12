@@ -1,5 +1,5 @@
 ---
-title: Automatiser la génération de documents avec SharePoint Syntex et Power Automate (préversion)
+title: Automatiser la génération de documents avec Microsoft Syntex et Power Automate (préversion)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,19 +12,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide de SharePoint Syntex et de Power Automate.
-ms.openlocfilehash: 7ed0756b4aaed2ef564dd4796368e25d7f78dd97
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide de Microsoft Syntex et Power Automate.
+ms.openlocfilehash: 616a88bf7a6de912e731fb96bc4af2f856089de0
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584897"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547815"
 ---
-# <a name="automate-document-generation-with-sharepoint-syntex-and-power-automate-preview"></a>Automatiser la génération de documents avec SharePoint Syntex et Power Automate (préversion)
+# <a name="automate-document-generation-with-microsoft-syntex-and-power-automate-preview"></a>Automatiser la génération de documents avec Microsoft Syntex et Power Automate (préversion)
 
-À l’aide de l’assembly de contenu dans SharePoint Syntex avec Power Automate, vous pouvez automatiser la génération de documents à l’aide de modèles modernes. 
+À l’aide de l’assembly de contenu dans Microsoft Syntex avec Power Automate, vous pouvez automatiser la génération de documents à l’aide de modèles modernes. 
 
-Cette préversion est une action Power Automate dans un connecteur SharePoint. L’action est nommée « Générer un document à l’aide de SharePoint Syntex (préversion) » et présente des fonctionnalités limitées pour la préversion. 
+Cette préversion est une action Power Automate dans un connecteur SharePoint. L’action est nommée « Générer un document à l’aide de Syntex (préversion) » et présente des fonctionnalités limitées pour la préversion. 
 
 ## <a name="scope-of-the-preview"></a>Étendue de la préversion 
 
@@ -60,9 +60,9 @@ Suivez ces étapes pour générer automatiquement des documents à l’aide d’
 
    ![Capture d’écran du déclencheur When a document is created or modified showing a sample site address and site name.](../media/content-understanding/document-generation-trigger.png)
 
-5. Sélectionnez à nouveau le connecteur SharePoint. Dans la zone de recherche, recherchez et sélectionnez l’action **Générer le document à l’aide de SharePoint Syntex (préversion).**
+5. Sélectionnez à nouveau le connecteur SharePoint. Dans la zone de recherche, recherchez et sélectionnez l’action **Générer le document à l’aide de Syntex (préversion).**
 
-   ![Capture d’écran de l’onglet Actions du connecteur SharePoint montrant l’action Générer un document à l’aide de SharePoint Syntex (préversion).](../media/content-understanding/document-generation-action.png) 
+   ![Capture d’écran de l’onglet Actions du connecteur SharePoint montrant l’action Générer un document à l’aide de Syntex (préversion).](../media/content-understanding/document-generation-action.png) 
 
 6. Entrez les informations de site et sélectionnez la bibliothèque de documents qui contient le modèle moderne. 
 
@@ -78,4 +78,4 @@ Suivez ces étapes pour générer automatiquement des documents à l’aide d’
 
 ## <a name="see-also"></a>Voir aussi
 
- [Créer des documents à l’aide d’un assembly de contenu dans SharePoint Syntex](content-assembly.md)
+ [Créer des documents à l’aide d’un assembly de contenu dans Microsoft Syntex](content-assembly.md)

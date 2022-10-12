@@ -11,10 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MOE150
 - MET150
@@ -22,12 +25,12 @@ description: Découvrez comment les étiquettes de confidentialité de Microsoft
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 97c507a9e3cae483018254a150bb9f8b2689dbf9
-ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.openlocfilehash: bb3f26d4d4e516b95000339221a6d144db1d6cc8
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67498458"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547618"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -38,7 +41,7 @@ ms.locfileid: "67498458"
 >
 > Les informations sur cette page sont destinées aux administrateurs informatiques qui peuvent créer et configurer ces étiquettes.
 
-Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes internes ou externes à votre organisation. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
+To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
 
 Les étiquettes de confidentialité de Protection des données Microsoft Purview vous permettent de classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises.
 
@@ -59,7 +62,7 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Protéger le contenu dans les applications Office sur différents appareils et plateformes.** Pris en charge par Word, Excel, PowerPoint et Outlook sur les applications Office pour ordinateur de bureau et Office sur le web. Pris en charge sur Windows, macOS, iOS et Android.
 
-- **Protéger le contenu dans des applications et des services tiers** à l’aide de Microsoft Defender pour les applications cloud. Avec Defender for Cloud Apps, vous pouvez détecter, classer, étiqueter et protéger du contenu dans des applications et services tiers, tels que SalesForce, Box ou DropBox, même si l’application ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de confidentialité.
+- **Protect content in third-party apps and services** by using Microsoft Defender for Cloud Apps. With Defender for Cloud Apps, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
 - **Protégez les conteneurs** qui incluent Teams, les groupes Microsoft 365 et les sites SharePoint. Par exemple, définissez les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
 
@@ -67,7 +70,7 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Étendre les étiquettes de confidentialité aux ressources dans Mappage de données Microsoft Purview** : lorsque vous activez cette fonctionnalité, actuellement en préversion vous pouvez appliquer vos étiquettes de confidentialité aux fichiers et ressources de données schématisées dans Mappage de données Microsoft Purview. Les ressources de données schématisées incluent SQL, Azure SQL, Azure Synapse, Azure Cosmos et AWS RDS.
 
-- **Étendre les étiquettes de confidentialité aux applications et services tiers.** À l’aide du kit de développement logiciel (SDK) Microsoft Information Protection, les applications tierces peuvent lire les étiquettes de confidentialité et appliquer des paramètres de protection.
+- **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
 - **Classifier du contenu sans utiliser les paramètres de protection.** Vous pouvez également simplement affecter une étiquette en tant que résultat d’une classification de contenu. Cette action fournit aux utilisateurs un mappage visuel de classification des noms d’étiquettes de votre organisation et ils peuvent utiliser les étiquettes pour générer des rapports d’usage et afficher les données d’activité pour votre contenu sensible. En se basant sur ces informations, vous pouvez toujours choisir d’appliquer les paramètres de protection plus tard.
 
@@ -75,13 +78,15 @@ Dans tous ces cas, les étiquettes de confidentialité de Microsoft Purview peuv
 
 Pour plus d’informations sur ces actions et d’autres scénarios pris en charge par les étiquettes de confidentialité, consultez [Scénarios courants pour les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). De nouvelles fonctionnalités sont constamment développées qui prennent en charge les étiquettes de confidentialité. Vous trouverez donc peut-être utile de consulter la [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="what-a-sensitivity-label-is"></a>Qu’est-ce qu’une étiquette de confidentialité ?
 
 Lorsque vous attribuez une étiquette de confidentialité à du contenu, elle ressemble à un cachet appliqué et est :
 
 - **Personnalisables.** Propres aux besoins de votre organisation et de votre activité, vous pouvez créer des catégories pour différents niveaux de contenu sensible dans votre organisation. Par exemple, vous pouvez commencer par utiliser des étiquettes telles que Personnel, Public, Général, Confidentiel et Hautement confidentiel.
 
-- **Texte clair.** Une étiquette étant stockée sous forme de texte clair dans les métadonnées pour les fichiers et les courriers, les applications et services tiers peuvent la lire, puis appliquer leurs propres actions de protection, le cas échéant.
+- **Clear text.** Because a label is stored in clear text in the metadata for files and emails, third-party apps and services can read it and then apply their own protective actions, if required.
 
 - **Permanentes.** Étant donné que l’étiquette est stockée dans les métadonnées des fichiers et des e-mails, l’étiquette reste avec le contenu, quel que soit l’emplacement où elle est enregistrée ou stockée. L'identification unique d’étiquette devient la base pour appliquer et faire respecter les stratégies que vous configurez.
 
@@ -94,7 +99,7 @@ Chaque élément qui prend en charge les étiquettes de confidentialité peut se
 
 ## <a name="what-sensitivity-labels-can-do"></a>Fonction des étiquettes de niveau de confidentialité
 
-Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou à un document, tous les paramètres de protection configurés pour cette étiquette sont appliqués au contenu. Vous pouvez configurer une étiquette de confidentialité pour :
+After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. You can configure a sensitivity label to:
 
 - **Chiffrer** des courriers électroniques et des documents pour empêcher l’accès à ces données par des personnes non autorisées. Vous pouvez en outre choisir les utilisateurs ou le groupe autorisés à effectuer telle ou telle action et la durée de l’autorisation. Par exemple, vous pouvez décider d’autoriser tous les utilisateurs de votre organisation à modifier un document tandis qu’un groupe spécifique d’une autre organisation peut uniquement l’afficher. Par ailleurs, au lieu d’autorisations définies par l'administrateur, vous pouvez autoriser vos utilisateurs à attribuer des autorisations au contenu lorsqu’ils appliquent l’étiquette. 
     
@@ -108,7 +113,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     Avez-vous besoin de vérifier la date de l’application des marques de contenu ? Veuillez consulter la section [Délai de marquage et de chiffrage de contenus par les applications Office](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    Si vous avez des modèles ou des flux de travail basés sur des documents spécifiques, testez ces documents avec les marquages de contenu que vous avez choisis avant de rendre l’étiquette disponible pour les utilisateurs. Certaines restrictions de longueur de chaîne à connaître :
+    If you have templates or workflows that are based on specific documents, test those documents with your chosen content markings before you make the label available for users. Some string length restrictions to be aware of:
     
     Les filigranes sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1 024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel.
 
@@ -116,7 +121,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     Vous ne pouvez pas configurer les paramètres de protection pour les groupes et les sites tant que vous n’activez pas cette fonctionnalité. Cette configuration d’étiquettes ne permet pas aux documents ni aux e-mails d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel le contenu est stocké. Ces paramètres incluent les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
 
-- **Appliquer automatiquement l’étiquette aux fichiers et e-mails, ou recommandez une étiquette.** Choisissez comment identifier les informations sensibles vous souhaitez étiqueter et vous pouvez appliquer l’étiquette automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte souhaité. Par exemple :
+- **Apply the label automatically to files and emails, or recommend a label.** Choose how to identify sensitive information that you want labeled, and the label can be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
     ![Invitation de mise à attribuer une étiquette requise.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
@@ -158,11 +163,11 @@ Cependant, l’ordre des sous-étiquettes est utilisé avec l'[étiquetage autom
 
 ### <a name="sublabels-grouping-labels"></a>Sous-étiquettes (regroupement d’étiquettes)
 
-Avec les sous-étiquettes, vous pouvez regrouper plusieurs étiquettes sous une étiquette parente visible par l’utilisateur dans une application Office. Par exemple, sous Confidentiel, votre organisation peut utiliser différentes étiquettes pour des types spécifiques de cette classification. Dans cet exemple, comme l’étiquette Confidentiel parente est simplement une étiquette de texte sans paramètre de protection et comme elle a des sous-étiquettes, elle ne peut pas être appliquée au contenu. Dans ce cas, les utilisateurs doivent sélectionner Confidentiel pour afficher les sous-étiquettes, puis choisir une sous-étiquette à appliquer au contenu.
+With sublabels, you can group one or more labels below a parent label that a user sees in an Office app. For example, under Confidential, your organization might use several different labels for specific types of that classification. In this example, the parent label Confidential is simply a text label with no protection settings, and because it has sublabels, it can't be applied to content. Instead, users must choose Confidential to view the sublabels, and then they can choose a sublabel to apply to content.
 
-Les sous-étiquettes sont simplement un moyen de présenter des étiquettes à des utilisateurs dans des groupes logiques. Les sous-étiquettes n’héritent pas des paramètres de leur étiquette parent. Lorsque vous publiez une sous-étiquette pour un utilisateur, celui-ci peut ensuite l’appliquer au contenu, mais il ne peut pas uniquement employer l’étiquette parente.
+Les sous-étiquettes sont simplement un moyen de présenter des étiquettes à des utilisateurs dans des groupes logiques. Les sous-étiquettes n’héritent d’aucun paramètre de leur étiquette parente, à l’exception de leur couleur d’étiquette. Lorsque vous publiez une sous-étiquette pour un utilisateur, cet utilisateur peut ensuite appliquer cette sous-étiquette au contenu et aux conteneurs, mais ne peut pas appliquer uniquement l’étiquette parente.
 
-Ne choisissez pas une étiquette parent en tant qu’étiquette par défaut ou configurez une étiquette parent pour qu’elle soit automatiquement appliquée (ou recommandée). Dans le cas contraire, l’étiquette parent ne sera pas appliquée au contenu.
+Ne choisissez pas une étiquette parent en tant qu’étiquette par défaut ou configurez une étiquette parent pour qu’elle soit automatiquement appliquée (ou recommandée). Si c’est le cas, l’étiquette parente ne peut pas être appliquée.
 
 Exemple d’affichage de sous-étiquettes pour les utilisateurs :
 
@@ -182,7 +187,7 @@ Contrairement aux étiquettes de rétention qui sont publiées dans des emplacem
 
 Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
-- **Choisissez les utilisateurs et les groupes pouvant voir les étiquettes.** Les étiquettes peuvent être publiées vers un utilisateur ou un groupe de sécurité à extension de courrier, à un groupe de distribution ou à un groupe Microsoft 365 (pouvant avoir [l’appartenance dynamique](/azure/active-directory/users-groups-roles/groups-create-rule)) dans Azure AD.
+- **Choose which users and groups see the labels.** Labels can be published to any specific user or email-enabled security group, distribution group, or Microsoft 365 group (which can have [dynamic membership](/azure/active-directory/users-groups-roles/groups-create-rule)) in Azure AD.
 
 - **Spécifiez une étiquette** par défaut pour les documents et les e-mails non étiquetés, les nouveaux conteneurs (lorsque vous avez [activé les étiquettes de sensibilité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)), ainsi qu'une étiquette par défaut pour le [contenu Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Vous pouvez spécifier la même étiquette pour les quatre types d’éléments ou des étiquettes différentes. Les utilisateurs peuvent modifier l’étiquette de sensibilité par défaut appliquée pour mieux correspondre à la sensibilité de leur contenu ou conteneur.
     
@@ -200,7 +205,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
 - **Demandez aux utilisateurs d’appliquer une étiquette** aux documents et aux e-mails, uniquement aux documents, pour les conteneurs et le contenu Power BI. Également connues sous le nom d'étiquetage obligatoire, ces options permettent d’assurer qu’une étiquette soit appliquée avant que les utilisateurs puissent enregistrer des documents, envoyer des e-mails, créer des groupes ou des sites et lorsqu’ils utilisent du contenu non étiqueté pour Power BI.
     
-    Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l’option d’étiquette par défaut précédemment décrite). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
+    For documents and emails, a label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option previously described). An example prompt when a user is required to assign a label:
 
     ![Invite demandant à l’utilisateur Outlook d’appliquer l’étiquette requise.](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
@@ -212,7 +217,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
     
     Envisagez d’utiliser cette option pour vous permettre d'augmenter la couverture d’étiquetage. Il faut noter que, sans formation des utilisateurs, ces paramètres peuvent entraîner un étiquetage incorrect. De plus, sauf si vous avez également défini une étiquette correspondante par défaut, l’étiquetage obligatoire risque de contrarier vos utilisateurs qui reçoivent de fréquentes invites.
 
-- **Fournir un lien d’aide vers une page d’aide personnalisée.** Si vos utilisateurs ne sont pas sûrs de savoir ce que signifient vos étiquettes de confidentialité ou comment elles doivent être utilisées, vous pouvez fournir une URL de type En savoir plus, qui apparaît en bas du menu **Étiquette de confidentialité** dans les applications Office :
+- **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
 
     ![Lien En savoir plus sur le bouton Niveau de confidentialité dans le ruban.](../media/Sensitivity-label-learn-more.png)
 
@@ -245,13 +250,13 @@ De même pour les utilisateurs du service juridique, qui se voient attribuer la 
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Étiquettes de niveau de confidentialité et étiquettes Azure Information Protection
 
-Les étiquettes de confidentialité intégrées à Microsoft 365 Apps sur Windows, macOS, iOS et Android s’affichent et se comportent très de la même façon sur ces appareils pour offrir aux utilisateurs une expérience d’étiquetage cohérente. Toutefois, sur les ordinateurs Windows, vous pouvez également utiliser le client [Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Ce client est désormais en [mode maintenance](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
+Les étiquettes de confidentialité intégrées à Microsoft 365 Apps sur Windows, macOS, iOS et Android s’affichent et se comportent très de la même façon sur ces appareils pour offrir aux utilisateurs une expérience d’étiquetage cohérente. Toutefois, sur les ordinateurs Windows, vous pouvez également utiliser le client [Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Ce client est maintenant en [mode maintenance](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) et, lorsqu’il est installé, il n’est plus le client d’étiquetage par défaut pour les dernières applications Office.
 
-Si vous utilisez le client AIP, consultez [Pourquoi choisir l’étiquetage intégré AIP sur le complément AIP pour les applications Office](sensitivity-labels-aip.md) pour comprendre et gérer vos choix d’étiquetage pour les ordinateurs Windows.
+Si vous utilisez le client AIP pour l’étiquetage dans les applications Office, nous vous recommandons de passer à l’étiquetage intégré. Pour plus d’informations, consultez [Migrer le complément Azure Information Protection (AIP) vers l’étiquetage intégré pour les applications Office](sensitivity-labels-aip.md).
 
 ### <a name="azure-information-protection-labels"></a>Étiquettes Azure Information Protection
 
-La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le Portail Azure a été retirée le **31 mars 2021**. En savoir plus dans l’[Avis de désapprobation](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
+La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le portail Azure a été retiré le **31 mars 2021**. Pour plus d’informations, consultez l’[avis de retrait](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
 
 Si votre client n’est pas encore sur la [plateforme d’étiquetage unifié](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), vous devez d’abord activer l’étiquette unifiée avant d’utiliser des étiquettes de confidentialité. Pour voir les instructions, consultez [Migration des étiquettes Azure Information Protection vers des étiquettes de confidentialité unifiées](/azure/information-protection/configure-policy-migrate-labels).
 

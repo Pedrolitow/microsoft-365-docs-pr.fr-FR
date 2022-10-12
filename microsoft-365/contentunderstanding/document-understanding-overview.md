@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
+title: Vue d’ensemble de la compréhension des documents dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez la compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 345ca5aea2e575c7d893ff225e8d8ec06b9e847d
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+description: Découvrez la compréhension des documents dans Microsoft Syntex.
+ms.openlocfilehash: d6b374d55840a53f1d78c22f69deebdbb5d89958
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300275"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547640"
 ---
-# <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
+# <a name="document-understanding-overview-in-microsoft-syntex"></a>Vue d’ensemble de la compréhension des documents dans Microsoft Syntex
 
 
 </br>
@@ -33,7 +33,7 @@ ms.locfileid: "68300275"
 La compréhension de document utilise les modèles de renseignements artificiels pour automatiser la classification des fichiers et l’extraction des informations. Il fonctionne de façon optimale avec les documents non structurés, tels que les lettres ou les contrats. Ces documents doivent comporter du texte qui peut être identifié sur la base de phrases ou de modèles. Le texte identifié désigne à la fois le type de fichier (sa classification) et ce que vous voulez extraire (ses extracteurs).
 
 > [!NOTE]
-> Pour plus d’informations sur les exemples de scénarios relatifs aux exemples de scénarios, consultez l’article [SharePoint Syntex adoption : Guide de démarrage](./adoption-getstarted.md).
+> Consultez le [guide d’adoption de Syntex : prise en main](./adoption-getstarted.md) pour plus d’informations sur les exemples de scénarios de compréhension de document.
 
 Les modèles de compréhension de document sont créés et gérés dans un site de type SharePoint appelé un *centre de contenu* . Lorsqu’il est appliqué à une bibliothèque de documents SharePoint, le modèle associé à un type de contenu inclut des colonnes pour stocker les informations extraites. Le type de contenu que vous créez est stocké dans la Galerie de types de contenu SharePoint. Vous pouvez également choisir d’utiliser des types de contenu existants pour utiliser leur schéma.
 
@@ -134,4 +134,4 @@ Les modèles de compréhension des documents prennent en charge *toutes les* lan
   
 [Vue d’ensemble du traitement des formulaires](form-processing-overview.md)
 
-[Mode d’accessibilité Syntex de SharePoint](accessibility-mode.md)
+[Mode d’accessibilité Syntex](accessibility-mode.md)

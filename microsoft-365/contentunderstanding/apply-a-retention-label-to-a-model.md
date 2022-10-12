@@ -1,5 +1,5 @@
 ---
-title: Application d’une étiquette de rétention à un modèle dans SharePoint Syntex.
+title: Appliquer une étiquette de rétention à un modèle dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment appliquer une étiquette de rétention à un modèle dans SharePoint Syntex.
-ms.openlocfilehash: 2176826634b1f682f86989d418b251f9706100ed
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Découvrez comment appliquer une étiquette de rétention à un modèle dans Microsoft Syntex.
+ms.openlocfilehash: 9ae81daccf6373d6e876935488edc354e3779bee
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585661"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547969"
 ---
-# <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Application d’une étiquette de rétention à un modèle dans SharePoint Syntex.
+# <a name="apply-a-retention-label-to-a-model-in-microsoft-syntex"></a>Appliquer une étiquette de rétention à un modèle dans Microsoft Syntex
 
 </br>
 
@@ -28,7 +28,7 @@ ms.locfileid: "67585661"
 
 </br>
 
-Vous pouvez facilement appliquer une [étiquette de rétention](../compliance/retention.md) à un modèle dans Microsoft SharePoint Syntex. Vous pouvez le faire pour la compréhension des documents et les modèles de traitement des formulaires.
+Vous pouvez facilement appliquer une [étiquette de rétention](../compliance/retention.md) à un modèle dans Microsoft Syntex. Vous pouvez le faire pour la compréhension des documents et les modèles de traitement des formulaires.
 
 Les étiquettes de rétention vous permettent d’appliquer des paramètres de rétention aux documents identifiés par vos modèles.  Par exemple, vous souhaitez que votre modèle identifie tous les documents d’*avis d’assurance* qui sont téléchargés dans votre bibliothèque de documents, mais également qu’il leur applique une étiquette de rétention *Entreprise*, afin que ces documents ne puissent pas être supprimés de la bibliothèque de documents pendant la période spécifiée ( les cinq prochains mois, par exemple).
 

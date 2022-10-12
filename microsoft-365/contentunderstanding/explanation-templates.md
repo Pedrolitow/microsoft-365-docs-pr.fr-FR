@@ -1,5 +1,5 @@
 ---
-title: Utiliser des modèles d’explication dans Microsoft SharePoint Syntex
+title: Utiliser des modèles d’explication dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: En savoir plus sur l’utilisation et l’enregistrement des modèles d’explication dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 27c25bf9520f64dc6c91afe1ea736af8e784e74f
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: En savoir plus sur l’utilisation et l’enregistrement des modèles d’explication dans Microsoft Syntex.
+ms.openlocfilehash: ef1e3cd3575d5e943c2ea39e98f7c85046de32ec
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578331"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547749"
 ---
-# <a name="use-explanation-templates-in-microsoft-sharepoint-syntex"></a>Utiliser des modèles d’explication dans Microsoft SharePoint Syntex
+# <a name="use-explanation-templates-in-microsoft-syntex"></a>Utiliser des modèles d’explication dans Microsoft Syntex
 
 Bien que vous puissiez ajouter manuellement différentes valeurs de liste d'expressions pour votre explication, il peut être plus facile d’utiliser les modèles qui vous sont fournis dans la bibliothèque d’explications.
 
@@ -118,4 +118,4 @@ Vous pouvez enregistrer une explication en tant que modèle pour la rendre dispo
 
 ### <a name="see-also"></a>Voir aussi
 
-[Types d’explications dans Microsoft SharePoint Syntex](explanation-types-overview.md)
+[Types d’explications dans Microsoft Syntex](explanation-types-overview.md)

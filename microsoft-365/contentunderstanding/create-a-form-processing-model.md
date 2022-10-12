@@ -1,5 +1,5 @@
 ---
-title: Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
+title: Créer un modèle de traitement de formulaire dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: Découvrez comment créer un modèle de traitement de formulaire dans SharePoint Syntex.
-ms.openlocfilehash: b045de5b0f67d56f0ddfe726fbe0c1dd25391866
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Découvrez comment créer un modèle de traitement de formulaire dans Microsoft Syntex.
+ms.openlocfilehash: 445f1bb4bdbdd8a93e0feaf9c6c841329ea4ccd0
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812279"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547574"
 ---
-# <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
+# <a name="create-a-form-processing-model-in-microsoft-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft Syntex
 
 </br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "67812279"
 
 </br>
 
-Grâce à [AI Builder](/ai-builder/overview), une fonctionnalité de Microsoft PowerApps, les utilisateurs de SharePoint Syntex peuvent créer un [modèle de traitement de formulaire](form-processing-overview.md) directement à partir d’une bibliothèque de documents SharePoint. 
+À l’aide [d’AI Builder](/ai-builder/overview) - fonctionnalité de Microsoft Power Apps - Les utilisateurs de Microsoft Syntex peuvent créer un [modèle de traitement de formulaire](form-processing-overview.md) directement à partir d’une bibliothèque de documents SharePoint. 
 
 Pour créer un modèle de traitement de formulaire, vous devez suivre les étapes suivantes :
 
@@ -130,7 +130,7 @@ Vous devez baliser les documents pour apprendre au modèle à comprendre les cha
 
     ![Bouton Informations.](../media/content-understanding/info-button.png)  
 
-3. Téléchargez des fichiers dans votre bibliothèque de documents. Tous les fichiers que le modèle identifie comme son type de contenu répertorient les fichiers dans votre vue et affichent les données extraites dans les colonnes.
+3. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
 
     ![OK.](../media/content-understanding/doc-lib-done.png) 
 
@@ -159,15 +159,15 @@ Deux flux sont disponibles pour traiter un fichier sélectionné ou un lot de fi
 
 ### <a name="classification-date-field"></a>Champ Date de classification
 
-Lorsqu’un modèle de traitement de formulaire SharePoint Syntex (ou un modèle de compréhension de document) est appliqué à une bibliothèque de documents, le champ **Date de classification** est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide. Toutefois, lorsque les documents sont traités et classés par un modèle, ce champ est mis à jour avec un horodatage de date et heure de fin. 
+Lorsqu’un modèle de traitement de formulaire Syntex (ou un modèle de compréhension de document) est appliqué à une bibliothèque de documents, le champ **Date de classification** est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide. Toutefois, lorsque les documents sont traités et classés par un modèle, ce champ est mis à jour avec un horodatage de date et heure de fin. 
 
-Lorsqu’un modèle est marqué avec la **date de classification**, vous pouvez utiliser **l’option Envoyer un e-mail après SharePoint Syntex traite un** flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traité et classifié par un modèle dans la bibliothèque de documents SharePoint.
+Lorsqu’un modèle est marqué avec la **date de classification**, vous pouvez utiliser **l’e-mail Envoyer un e-mail après que Syntex a traité un** flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traité et classifié par un modèle dans la bibliothèque de documents SharePoint.
 
 Pour exécuter le flux :
 
 1. Sélectionnez un fichier, puis **sélectionnez Intégrer** > **Power Automate** > **Créer un flux**.
 
-2. Dans le panneau **Créer un flux**, sélectionnez **Envoyer un e-mail après SharePoint Syntex traite un fichier**.
+2. Dans le panneau **Créer un flux** , sélectionnez **Envoyer un e-mail après que Syntex a traité un fichier**.
 
     ![Capture d’écran montrant le panneau Créer un flux et l’option de flux mis en évidence.](../media/content-understanding/integrate-create-flow.png) 
 

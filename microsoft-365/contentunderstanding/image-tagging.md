@@ -1,11 +1,11 @@
 ---
-title: Balisage d’image dans SharePoint Syntex
+title: Balisage d’images dans Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.custom: admindeeplinkMAC
 search.appverid: ''
 ms.collection:
@@ -13,19 +13,19 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Présentation du balisage d’image dans SharePoint Syntex
-ms.openlocfilehash: e0b9b1669efb069942b81aaad7fb5e7e3aa57c1c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: En savoir plus sur le balisage d’images dans Microsoft Syntex.
+ms.openlocfilehash: 7d125fafc0667456a4a0345305baddca4aeecf8b
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415879"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547355"
 ---
-# <a name="image-tagging-in-sharepoint-syntex"></a>Balisage d’image dans SharePoint Syntex
+# <a name="image-tagging-in-microsoft-syntex"></a>Balisage d’images dans Microsoft Syntex
 
 (Bientôt disponible)
 
-Le balisage d’image dans SharePoint Syntex permet aux utilisateurs de trouver des images en effectuant une recherche sur des balises d’image, puis de créer des flux de travail en fonction de balises d’image. Par défaut, le balisage de base des images est activé pour SharePoint et OneDrive. Les images chargées dans l’un des emplacements sont automatiquement analysées et des balises valables sont appliquées, le cas échéant, à partir d’une liste de 37 balises de base. Les utilisateurs peuvent trouver des images en effectuant une recherche sur les balises d’images.
+Avec le balisage d’images dans Microsoft Syntex, les utilisateurs peuvent rechercher des images par le biais d’une recherche sur des balises d’image et créer des flux de travail basés sur des balises d’image. Par défaut, le balisage de base des images est activé pour SharePoint et OneDrive. Les images chargées dans l’un des emplacements sont automatiquement analysées et des balises valables sont appliquées, le cas échéant, à partir d’une liste de 37 balises de base. Les utilisateurs peuvent trouver des images en effectuant une recherche sur les balises d’images.
 
 Lorsqu’un utilisateur charge une image, le processus de balisage s’exécute automatiquement. Si une image est modifiée, le processus de balisage s’exécute à nouveau pour la mise à jour des balises.
 
@@ -38,7 +38,7 @@ Si vous désactivez l’option de balisage, les images ne seront plus marquées 
 
 ## <a name="configure-image-tagging"></a>Configurer le balisage d’image
 
-Après avoir [configuré SharePoint Syntex](set-up-content-understanding.md), vous pouvez configurer le balisage d’image dans le Centre d’administration Microsoft 365.
+Après [avoir configuré Syntex](set-up-content-understanding.md), vous pouvez configurer l’étiquetage des images dans le Centre d'administration Microsoft 365.
 
 Pour activer ou désactiver le balisage d’images
 
