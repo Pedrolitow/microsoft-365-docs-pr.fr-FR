@@ -1,5 +1,6 @@
 ---
 title: Archiver des données de la plateforme CellTrust SL2 vers Microsoft 365
+description: Découvrez comment configurer et utiliser un connecteur de données CellTrust SL2 pour importer et archiver des données de communications mobiles.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Découvrez comment configurer et utiliser un connecteur de données CellTrust SL2 pour importer et archiver des données de communications mobiles.
-ms.openlocfilehash: 6fe835dcd7e2e6819c500afce81e7f9d2320ba75
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: e3b5714a60765e513297eaed06343a2e596c14e7
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67824507"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534253"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiver des données de CellTrust SL2 vers Microsoft 365
 
 CellTrust SL2 capture les données de communications mobiles et s’intègre aux technologies d’archivage de pointe pour répondre aux exigences de découverte électronique pour les réglementations telles que FINRA, HIPAA, FOIA et TCPA. Le connecteur de données SL2 importe des éléments de communication mobile vers Microsoft 365. Cet article décrit le processus d’intégration de SL2 à Microsoft 365 à l’aide du connecteur de données CellTrust SL2 pour l’archivage. L’exécution de ce processus suppose que vous êtes abonné au service CellTrust SL2 et que vous êtes familiarisé avec l’architecture SL2. Pour plus d’informations sur CellTrust SL2, consultez <https://www.celltrust.com>.
 
 Une fois les données importées dans les boîtes aux lettres des utilisateurs dans Microsoft 365, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, eDiscovery, les stratégies de rétention Microsoft 365 et la conformité des communications. L’utilisation du connecteur de données CellTrust SL2 pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-with-the-celltrust-sl2-data-connector"></a>Vue d’ensemble de l’archivage avec le connecteur de données CellTrust SL2
 
@@ -53,21 +58,21 @@ La plateforme SL2 de CellTrust capture les données de communication provenant d
 
 La première étape consiste à créer un connecteur de données dans le portail de conformité.
 
-1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données** dans le volet de navigation gauche et cliquez dessus.
+1. Accédez et <https://compliance.microsoft.com> sélectionnez **Les connecteurs de données** dans le volet de navigation gauche.
 
-2. Sous l’onglet **Vue d’ensemble** , cliquez sur **Filtrer** , sélectionnez **By CellTrust**, puis appliquez le filtre.
+2. Sous l’onglet **Vue d’ensemble** , sélectionnez **Filtrer** , sélectionnez **Par CellTrust**, puis appliquez le filtre.
 
-   ![Configurez le filtre pour afficher les connecteurs CellTrust.](../media/DataConnectorsFilter.png)
+   ![Configurez le filtre pour afficher les connecteurs CellTrust.](../media/dataconnectorsFilter.png)
 
-3. Cliquez sur **CellTrust SL2 (préversion).**
+3. Sélectionnez **CellTrust SL2 (préversion).**
 
-4. Dans la page de description du produit **CellTrust SL2 (préversion),** cliquez sur **Ajouter un connecteur**.
+4. Dans la page de description du produit **CellTrust SL2 (préversion),** sélectionnez **Ajouter un connecteur**.
 
-5. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+5. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-6. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**. Le nom que vous entrez identifie le connecteur dans la page **Connecteurs de données** une fois que vous l’avez créé.
+6. Entrez un nom unique qui identifie le connecteur, puis sélectionnez **Suivant**. Le nom que vous entrez identifie le connecteur dans la page **Connecteurs de données** une fois que vous l’avez créé.
 
-7. Dans la page **Se connecter à votre compte CellTrust** , cliquez sur **Se connecter à CellTrust**. Vous serez redirigé vers le **portail CellTrust pour Microsoft 365** dans une nouvelle fenêtre de navigateur.
+7. Dans la page **Se connecter à votre compte CellTrust** , sélectionnez **Se connecter à CellTrust**. Vous serez redirigé vers le **portail CellTrust pour Microsoft 365** dans une nouvelle fenêtre de navigateur.
 
 ## <a name="step-2-select-the-domains-or-ous-to-archive"></a>Étape 2 : Sélectionner les domaines ou les unités d’organisation à archiver
 
@@ -93,7 +98,7 @@ La dernière étape consiste à mapper les utilisateurs et à terminer la config
 
 1. Dans la page **De mappage d’utilisateurs** , **sélectionnez Activer le mappage automatique des utilisateurs** si l’adresse e-mail des utilisateurs est identique dans SL2 et Microsoft 365. Sinon, vous devez charger manuellement des adresses e-mail utilisateur en chargeant un fichier CSV qui mappe l’adresse SL2 des utilisateurs à leur adresse Microsoft 365.
 
-2. Cliquez sur **Suivant**, passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+2. Sélectionnez **Suivant**, passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
    Le nouveau connecteur est ajouté à la liste de la page **Connecteurs de données** .
 

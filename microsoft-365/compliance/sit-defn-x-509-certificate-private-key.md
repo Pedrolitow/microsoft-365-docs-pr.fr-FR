@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité de clé privée de certificat X.509 (préversion)
+title: Définition d’entité de clé privée de certificat X.509
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,12 +20,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type clé privée de certificat X.509.
-ms.openlocfilehash: 4b847efe2b3b7495834cb8ec8d7a7c9e8f2b8232
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: ad38c72281e0c07f82f1129a23e88079721a1317
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503113"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537311"
 ---
 # <a name="x509-certificate-private-key-preview"></a>Clé privée de certificat X.509 (préversion)
 
@@ -56,7 +56,7 @@ par exemple :
 
 `MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
 
-or
+ou
 
 cinq tirets (-)
 

@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4ade60286c1869f70716528e13f12b2632fd1870
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 319a6c63e88e250020d275c2b311eaff8500d3c7
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699979"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536299"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -45,7 +47,7 @@ Les actions de réponse s’exécutent en haut de la page du fichier et incluent
 - Arrêter et mettre en quarantaine le fichier
 - Ajouter un indicateur
 - Télécharger un fichier
-- Consulter un spécialiste des menaces
+- Demander à Defender Experts
 - Centre de notifications
 
 Vous pouvez également envoyer des fichiers pour une analyse approfondie afin d’exécuter le fichier dans un bac à sable cloud sécurisé. Une fois l’analyse terminée, vous obtenez un rapport détaillé qui fournit des informations sur le comportement du fichier. Vous pouvez envoyer des fichiers pour une analyse approfondie et lire des rapports passés en sélectionnant l’onglet **Analyse approfondie** . Il se trouve sous les cartes d’informations de fichier.
@@ -70,7 +72,7 @@ Vous pouvez contenir une attaque dans votre organisation en arrêtant le process
 >
 > - L’appareil sur lequel vous effectuez l’action est en cours d’exécution Windows 10, version 1703 ou ultérieure, et Windows 11
 > - Le fichier n’appartient pas à des éditeurs tiers approuvés ou n’est pas signé par Microsoft
-> - L’Antivirus Microsoft Defender doit au moins s’exécuter en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Antivirus doit au moins s’exécuter en mode passif. Pour plus d’informations, consultez [Microsoft Defender compatibilité](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility) antivirus.
 
 L’action **Arrêter et mettre en quarantaine le fichier** inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
 
@@ -83,7 +85,7 @@ Cette action prend effet sur les appareils avec Windows 10, version 1703 ou ult�
 
 1. Sélectionnez le fichier que vous souhaitez arrêter et mettre en quarantaine. Vous pouvez sélectionner un fichier dans l’une des vues suivantes ou utiliser la zone de recherche :
 
-   - **Alertes** : cliquez sur les liens correspondants à partir de la description ou des détails dans la chronologie de l’histoire des alertes
+   - **Alertes** : sélectionnez les liens correspondants dans la description ou les détails dans la chronologie de l’histoire des alertes
    - **Zone de recherche** : sélectionnez **Fichier** dans le menu déroulant et entrez le nom du fichier
 
    > [!NOTE]
@@ -108,7 +110,7 @@ Cette action prend effet sur les appareils avec Windows 10, version 1703 ou ult�
 
 4. Sélectionnez l’un des indicateurs d’état pour afficher plus d’informations sur l’action. Par exemple, sélectionnez **Échec** pour voir où l’action a échoué.
 
-#### <a name="notification-on-device-userf"></a>Notification sur device userf
+#### <a name="notification-on-device-user"></a>Notification sur l’utilisateur de l’appareil
 
 Lorsque le fichier est supprimé d’un appareil, la notification suivante s’affiche :
 
@@ -152,7 +154,7 @@ Par défaut, vous devez être en mesure de télécharger les fichiers en quarant
 
 ### <a name="download-quarantined-files"></a>Télécharger des fichiers mis en quarantaine
 
-Les fichiers qui ont été mis en quarantaine par l’Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés de manière conforme en fonction de vos [exemples de configurations de soumission](enable-cloud-protection-microsoft-defender-antivirus.md). Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité est activée par défaut**.
+Les fichiers qui ont été mis en quarantaine par Microsoft Defender Antivirus ou votre équipe de sécurité sont enregistrés de manière conforme en fonction de vos [exemples de configurations de soumission](enable-cloud-protection-microsoft-defender-antivirus.md). Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité est activée par défaut**.
 
 L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. Pour en savoir plus sur la protection des données de Microsoft à partir du portail d’approbation de services, consultez https://aka.ms/STP.
 
@@ -162,12 +164,12 @@ Le fait d’activer ce paramètre peut aider les équipes de sécurité à exami
 
 Les utilisateurs peuvent être invités à fournir un consentement explicite avant de sauvegarder le fichier mis en quarantaine, en fonction de votre [exemple de configuration de soumission](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection).
 
-Cette fonctionnalité ne fonctionnera pas si l’exemple de soumission est désactivé. Si la soumission automatique d’exemples est définie pour demander l’autorisation de l’utilisateur, seuls les exemples que l’utilisateur accepte d’envoyer sont collectés.
+Cette fonctionnalité ne fonctionnera pas si l’envoi d’exemples est désactivé. Si la soumission automatique d’exemples est définie pour demander l’autorisation de l’utilisateur, seuls les exemples que l’utilisateur accepte d’envoyer sont collectés.
 
 > [!IMPORTANT]
 > Télécharger les exigences relatives aux fichiers mis en quarantaine :
 >
-> - Votre organisation utilise l’antivirus Microsoft Defender en mode actif
+> - Votre organisation utilise Microsoft Defender Antivirus en mode actif
 > - La version du moteur antivirus est 1.1.17300.4 ou ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - La protection basée sur le cloud est activée. Voir [Activer la protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - L’exemple de soumission est activé
@@ -185,7 +187,7 @@ Empêchez la propagation d’une attaque dans votre organisation en interdisant 
 
 > [!IMPORTANT]
 >
-> - Cette fonctionnalité est disponible si votre organisation utilise l’antivirus Microsoft Defender et que la protection fournie par le cloud est activée. Pour plus d’informations, consultez [Gérer la protection fournie par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Cette fonctionnalité est disponible si votre organisation utilise Microsoft Defender protection antivirus et fournie par le cloud est activée. Pour plus d’informations, consultez [Gérer la protection fournie par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La version du client Antimalware doit être 4.18.1901.x ou ultérieure.
 > - Cette fonctionnalité est conçue pour empêcher le téléchargement de logiciels malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables (PE), y compris _les fichiers.exe_ et _.dll_ . La couverture sera prolongée au fil du temps.
@@ -215,9 +217,9 @@ Vous pouvez également modifier les indicateurs à partir de la page **Paramètr
 
 ## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 
-Consultez un expert en menaces Microsoft pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft sont engagés directement à partir du portail Microsoft 365 Defender pour obtenir une réponse rapide et précise. Les experts fournissent des insights sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblées. Ils peuvent également fournir des informations sur les alertes ou un contexte de renseignement sur les menaces que vous voyez dans le tableau de bord de votre portail.
+Sélectionnez Demander aux experts Defender d’obtenir plus d’informations auprès d’experts Microsoft sur un appareil potentiellement compromis ou déjà compromis. Microsoft Defender experts sont engagés directement à partir du portail Microsoft 365 Defender pour obtenir une réponse rapide et précise. Les experts fournissent des insights sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblées. Ils peuvent également fournir des informations sur les alertes ou un contexte de renseignement sur les menaces que vous voyez dans le tableau de bord de votre portail.
 
-Pour plus [d’informations, consultez un expert Microsoft sur les menaces](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) .
+Pour plus d’informations, consultez [Demandez aux experts Defender](experts-on-demand.md) .
 
 ## <a name="check-activity-details-in-action-center"></a>Vérifier les détails de l’activité dans le Centre de notifications
 

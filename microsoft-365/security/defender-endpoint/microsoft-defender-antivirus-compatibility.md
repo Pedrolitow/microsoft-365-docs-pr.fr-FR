@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 08/30/2022
-ms.topic: article
+ms.date: 10/03/2022
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 3f27053cd822d265e509f694312e8b5a518d3805
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1bcbaf6d0be4ae12fddb959b82bcbd63723eafec
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225017"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536343"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender compatibilité de l’antivirus avec d’autres produits de sécurité
 
@@ -187,6 +187,14 @@ Vous pouvez utiliser l’une des plusieurs méthodes pour confirmer l’état de
 - [Utilisez le Gestionnaire des tâches pour confirmer que Microsoft Defender Antivirus est en cours d’exécution](#use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running).
 - [Utilisez Windows PowerShell pour confirmer que Microsoft Defender Antivirus est en cours d’exécution](#use-windows-powershell-to-confirm-that-microsoft-defender-antivirus-is-running).
 - [Utilisez Windows PowerShell pour confirmer que la protection antivirus est en cours d’exécution](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running).
+
+> [!IMPORTANT]
+> À partir de [la plateforme version 4.18.2208.0 et ultérieure](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions) : si un serveur a été intégré à Microsoft Defender pour point de terminaison, le paramètre de stratégie de [groupe](configure-endpoints-gp.md#update-endpoint-protection-configuration) « Désactiver Windows Defender » ne désactive plus complètement Windows Defender Antivirus activé Windows Server 2012 R2 et versions ultérieures. Au lieu de cela, il le place en mode passif. En outre, la fonctionnalité [de protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) permet de basculer en mode actif, mais pas en mode passif.
+> 
+> - Si « Désactiver Windows Defender » est déjà en place avant l’intégration à Microsoft Defender pour point de terminaison, aucune modification n’est apportée et l’antivirus Defender reste désactivé.
+> - Pour basculer l’antivirus Defender en mode passif, même s’il a été désactivé avant l’intégration, vous pouvez appliquer la [configuration ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) avec la valeur .`1` Pour la placer en mode actif, basculez vers cette valeur à la `0` place.
+> 
+> Notez la logique modifiée pour `ForceDefenderPassiveMode` le moment où la protection contre les falsifications est activée : une fois que Microsoft Defender Antivirus est activé en mode actif, la protection contre les falsifications l’empêche de revenir en mode passif, même lorsque `ForceDefenderPassiveMode` la valeur est définie `1`sur .
 
 ### <a name="use-the-windows-security-app-to-identify-your-antivirus-app"></a>Utiliser l’application Sécurité Windows pour identifier votre application antivirus
 

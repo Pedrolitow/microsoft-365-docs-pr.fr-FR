@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données de conversation ICE
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de l’outil ICE Chat dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de l’outil ICE Chat dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 53ccc3420d46439a9f5bb90ac7d87cc8d6e8f76c
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: e71099d5693deeac062e4dae1be76683a20fd0f0
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67827059"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534143"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurer un connecteur pour archiver les données de conversation ICE
 
 Utilisez un connecteur natif dans le portail de conformité Microsoft Purview pour importer et archiver les données de conversation des services financiers à partir de l’outil ice Chat Collaboration. Après avoir configuré et configuré un connecteur, il se connecte au site ICE Chat secure FTP (SFTP) de votre organisation une fois par jour, convertit le contenu des messages de conversation au format de message électronique, puis importe ces éléments dans des boîtes aux lettres dans Microsoft 365.
 
 Une fois les données de conversation ICE stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, l’archivage, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données ice Chat. Par exemple, vous pouvez rechercher des messages ice Chat à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données ice Chat à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur ICE Chat pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-ice-chat-data"></a>Vue d’ensemble de l’archivage des données ice Chat
 
@@ -65,19 +70,19 @@ Les étapes de cette section vous montrent comment configurer un connecteur ICE 
 
 La première étape consiste à obtenir une copie des clés publiques pour Pretty Good Privacy (PGP) et Secure Shell (SSH). Vous utilisez ces clés à l’étape 2 pour configurer le site ICE Chat SFTP afin d’autoriser le connecteur (que vous créez à l’étape 3) à se connecter au site SFTP et à transférer les données ice Chat vers les boîtes aux lettres Microsoft 365. Vous obtenez également une adresse IP dans cette étape, que vous utilisez lors de la configuration du site ICE Chat SFTP.
 
-1. Accédez et [https://compliance.microsoft.com](https://compliance.microsoft.com) cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux [https://compliance.microsoft.com](https://compliance.microsoft.com) **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Dans la page **Connecteurs de données** sous **ICE Chat**, cliquez sur **Affichage**.
+2. Dans la page **Connecteurs de données** sous **Ice Chat**, sélectionnez **Afficher**.
 
-3. Dans la page **de conversation ICE** , cliquez sur **Ajouter un connecteur**.
+3. Dans la page **de conversation ICE** , sélectionnez **Ajouter un connecteur**.
 
-4. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+4. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-5. Dans la page **Ajouter des informations d’identification pour la source de contenu** , cliquez sur **Je veux utiliser les clés publiques PGP et SSH fournies par Microsoft**.
+5. Dans la page **Ajouter des informations d’identification pour la source de contenu** , sélectionnez **Je veux utiliser les clés publiques PGP et SSH fournies par Microsoft**.
 
    ![Sélectionnez l’option permettant d’utiliser des clés publiques.](../media/ICEChatPublicKeysOption.png)
 
-6. À l’étape 1, cliquez sur la **clé Télécharger SSH**, **téléchargez la clé PGP** et téléchargez les liens d’adresse **IP** pour enregistrer une copie de chaque fichier sur votre ordinateur local.
+6. À l’étape 1, **sélectionnez la clé SSH de téléchargement**, **téléchargez la clé PGP** et téléchargez les liens d’adresse **IP** pour enregistrer une copie de chaque fichier sur votre ordinateur local.
 
    ![Liens vers le téléchargement des clés publiques et de l’adresse IP.](../media/ICEChatPublicKeyDownloadLinks.png)
 
@@ -89,7 +94,7 @@ La première étape consiste à obtenir une copie des clés publiques pour Prett
 
    - Adresse IP : le site ICE Chat SFTP est configuré pour accepter une demande de connexion uniquement à partir de cette adresse IP, qui est utilisée par le connecteur ICE Chat que vous créez à l’étape 3.
 
-7. Cliquez sur **Annuler** pour fermer l’Assistant. Vous revenez à cet Assistant à l’étape 3 pour créer le connecteur.
+7. Sélectionnez **Annuler** pour fermer l’Assistant. Vous revenez à cet Assistant à l’étape 3 pour créer le connecteur.
 
 ### <a name="step-2-configure-the-ice-chat-sftp-site"></a>Étape 2 : Configurer le site ICE Chat SFTP
 
@@ -99,17 +104,17 @@ L’étape suivante consiste à utiliser les clés publiques PGP et SSH et l’a
 
 La dernière étape consiste à créer un connecteur ICE Chat dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour se connecter au site ICE Chat SFTP et transférer des messages de conversation vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez et [https://compliance.microsoft.com](https://compliance.microsoft.com) cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux [https://compliance.microsoft.com](https://compliance.microsoft.com) **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Dans la page **Connecteurs de données** sous **ICE Chat**, cliquez sur **Affichage**.
+2. Dans la page **Connecteurs de données** sous **Ice Chat**, sélectionnez **Afficher**.
 
-3. Dans la page **de conversation ICE** , cliquez sur **Ajouter un connecteur**.
+3. Dans la page **de conversation ICE** , sélectionnez **Ajouter un connecteur**.
 
-4. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+4. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-5. Dans la page **Ajouter des informations d’identification pour la source de contenu** , cliquez sur **Je veux utiliser les clés publiques PGP et SSH**.
+5. Dans la page **Ajouter des informations d’identification pour la source de contenu** , sélectionnez **Je veux utiliser les clés publiques PGP et SSH**.
 
-6. À l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Valider la connexion**.
+6. À l’étape 3, entrez les informations requises dans les zones suivantes, puis sélectionnez **Valider la connexion**.
 
    - **Code ferme :** ID de votre organisation, qui est utilisé comme nom d’utilisateur pour le site ICE Chat SFTP.
 
@@ -119,7 +124,7 @@ La dernière étape consiste à créer un connecteur ICE Chat dans le portail de
 
    - **Port SFTP :** Numéro de port pour le site ICE Chat SFTP. Le connecteur utilise ce port pour se connecter au site SFTP.
 
-7. Une fois la connexion validée, cliquez sur **Suivant**.
+7. Une fois la connexion validée, sélectionnez **Suivant**.
 
 8. Dans la page **Définir l’utilisateur** , spécifiez les utilisateurs pour lequel importer des données.
 
@@ -132,7 +137,7 @@ La dernière étape consiste à créer un connecteur ICE Chat dans le portail de
    > [!NOTE]
    > Comme expliqué précédemment, le fichier CSV de fichier de mappage personnalisé contient l’ID de conversation ICE et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur. Si vous activez le mappage automatique des utilisateurs et fournissez un mappage personnalisé, pour chaque élément de conversation, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide qui correspond à l’ID de conversation ICE d’un utilisateur, le connecteur importe l’élément dans les boîtes aux lettres pour les utilisateurs spécifiés dans les propriétés *SenderEmail* et *RecipientEmail* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide par mappage automatique ou personnalisé, l’élément n’est pas importé.
 
-10. Cliquez sur **Suivant**, passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+10. Sélectionnez **Suivant**, passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
 11. Accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 
@@ -146,23 +151,23 @@ Si votre organisation a utilisé des clés privées PGP et SSH pour configurer u
 
 Pour obtenir l’adresse IP :
 
-1. Accédez et <https://compliance.microsoft.com> cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Dans la page **Connecteurs de données** sous **ICE Chat**, cliquez sur **Affichage**.
+2. Dans la page **Connecteurs de données** sous **Ice Chat**, sélectionnez **Afficher**.
 
-3. Dans la page de description du produit **ICE Chat** , cliquez sur **Ajouter un connecteur**
+3. Dans la page de description du produit **ICE Chat** , sélectionnez **Ajouter un connecteur**
 
-4. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+4. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-5. Dans la page **Ajouter des informations d’identification pour la source de contenu** , cliquez sur **Je veux utiliser des clés privées PGP et SSH**.
+5. Dans la page **Ajouter des informations d’identification pour la source de contenu** , sélectionnez **Je veux utiliser des clés privées PGP et SSH**.
 
    ![Sélectionnez l’option permettant d’utiliser des clés privées.](../media/ICEChatPrivateKeysOption.png)
 
-6. À l’étape 1, cliquez sur **Télécharger l’adresse IP** pour enregistrer une copie du fichier d’adresse IP sur votre ordinateur local.
+6. À l’étape 1, **sélectionnez Télécharger l’adresse IP** pour enregistrer une copie du fichier d’adresse IP sur votre ordinateur local.
 
    ![Téléchargez l’adresse IP.](../media/ICEChatConnectorIPAddress.png)
 
-7. Cliquez sur **Annuler** pour fermer l’Assistant. Vous revenez à cet Assistant à l’étape 2 pour créer le connecteur.
+7. Sélectionnez **Annuler** pour fermer l’Assistant. Vous revenez à cet Assistant à l’étape 2 pour créer le connecteur.
 
 Vous devez travailler avec le support client ICE Chat pour configurer votre site ICE Chat SFTP afin d’accepter les demandes de connexion à partir de cette adresse IP.
 
@@ -170,17 +175,17 @@ Vous devez travailler avec le support client ICE Chat pour configurer votre site
 
 Une fois votre site ICE Chat SFTP configuré, l’étape suivante consiste à créer un connecteur ICE Chat dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour se connecter au site ICE Chat SFTP et transférer des messages électroniques vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365. Pour effectuer cette étape, veillez à avoir des copies des mêmes clés privées et phrases secrètes clés que celles que vous avez utilisées pour configurer votre site ICE Chat SFTP.
 
-1. Accédez et <https://compliance.microsoft.com> cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Dans la page **Connecteurs de données** sous **ICE Chat**, cliquez sur **Affichage**.
+2. Dans la page **Connecteurs de données** sous **Ice Chat**, sélectionnez **Afficher**.
 
-3. Dans la page de description du produit **ICE Chat** , cliquez sur **Ajouter un connecteur**
+3. Dans la page de description du produit **ICE Chat** , sélectionnez **Ajouter un connecteur**
 
-4. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+4. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-5. Dans la page **Ajouter des informations d’identification pour la source de contenu** , cliquez sur **Je veux utiliser des clés privées PGP et SSH**.
+5. Dans la page **Ajouter des informations d’identification pour la source de contenu** , sélectionnez **Je veux utiliser des clés privées PGP et SSH**.
 
-6. À l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Valider la connexion**.
+6. À l’étape 3, entrez les informations requises dans les zones suivantes, puis sélectionnez **Valider la connexion**.
 
       - **Nom:** Nom du connecteur. Il doit être unique dans votre organisation.
 
@@ -200,7 +205,7 @@ Une fois votre site ICE Chat SFTP configuré, l’étape suivante consiste à cr
 
       - **Phrase secrète de clé SSH :** Phrase secrète pour la clé privée SSH.
 
-7. Une fois la connexion validée, cliquez sur **Suivant**.
+7. Une fois la connexion validée, sélectionnez **Suivant**.
 
 8. Dans la page **Définir l’utilisateur** , spécifiez les utilisateurs pour lequel importer des données.
 
@@ -213,6 +218,6 @@ Une fois votre site ICE Chat SFTP configuré, l’étape suivante consiste à cr
    > [!NOTE]
    > Comme expliqué précédemment, le fichier CSV de fichier de mappage personnalisé contient l’ID de conversation ICE et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur. Si vous activez le mappage automatique des utilisateurs et fournissez un mappage personnalisé, pour chaque élément de conversation, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide qui correspond à l’ID de conversation ICE d’un utilisateur, le connecteur importe l’élément dans les boîtes aux lettres pour les utilisateurs spécifiés dans les propriétés *SenderEmail* et *RecipientEmail* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide par mappage automatique ou personnalisé, l’élément n’est pas importé.
 
-10. Cliquez sur **Suivant**, passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+10. Sélectionnez **Suivant**, passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
-11. Accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur. Cliquez sur le connecteur pour afficher la page de menu volant, qui contient des informations sur le connecteur.
+11. Accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur. Sélectionnez le connecteur pour afficher la page de menu volant, qui contient des informations sur le connecteur.

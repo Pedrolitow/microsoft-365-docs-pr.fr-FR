@@ -18,12 +18,12 @@ ms.collection:
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c81843c9d8ed40cdd14d854e05f9d7b50de35229
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: f6f460e0a0252f938e351ead0f44e0987fa78359
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072302"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536409"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -215,7 +215,7 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
 
 4. Comment configurer DMARC pour le sous-domaine ?
 
-   DMARC est implémenté en publiant une stratégie en tant qu’enregistrement TXT dans DNS et est hiérarchique (par exemple, une stratégie publiée pour contoso.com s’appliquera à sub.domain.contonos.com sauf si une stratégie différente est explicitement définie pour le sous-domaine). Cela est utile car les organisations peuvent spécifier un plus petit nombre d’enregistrements DMARC de haut niveau pour une couverture plus large. Veillez à configurer des enregistrements DMARC de sous-domaine explicites lorsque vous ne souhaitez pas que les sous-domaines héritent de l’enregistrement DMARC du domaine de premier niveau.
+   DMARC est implémenté en publiant une stratégie en tant qu’enregistrement TXT dans DNS et est hiérarchique (par exemple, une stratégie publiée pour contoso.com s’applique à sub.domain.contoso.com sauf si une stratégie différente est explicitement définie pour le sous-domaine). Cela est utile car les organisations peuvent spécifier un plus petit nombre d’enregistrements DMARC de haut niveau pour une couverture plus large. Veillez à configurer des enregistrements DMARC de sous-domaine explicites lorsque vous ne souhaitez pas que les sous-domaines héritent de l’enregistrement DMARC du domaine de premier niveau.
 
    Aussi pouvez-vous ajouter une stratégie de type générique pour DMARC lorsque les sous-domaines ne doivent pas envoyer de courrier électronique, en ajoutant la `sp=reject` valeur. Par exemple:
 

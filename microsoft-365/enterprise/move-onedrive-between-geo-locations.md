@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Recherchez des informations sur le déplacement d’un site OneDrive vers un autre emplacement géographique, notamment la planification des déplacements de site et la communication des attentes aux utilisateurs.
-ms.openlocfilehash: a6de4b0efc2b45652d89d5261b71dff415c740d6
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bafe97fd1dc049b1a9fbb0bdcc2d9d1660baead4
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703311"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536541"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Déplacer un site OneDrive vers un autre emplacement géographique
 
@@ -34,7 +34,7 @@ Les procédures décrites dans cet article nécessitent le [module Microsoft Sha
 
 ## <a name="communicating-to-your-users"></a>Communication avec vos utilisateurs
 
-Lors du déplacement de sites OneDrive entre différents emplacements géographiques, il est important de communiquer à vos utilisateurs ce à quoi ils doivent s’attendre. Cela peut vous aider à réduire la confusion des utilisateurs et diminuer le nombre d’appels à votre support technique. Prévenez vos utilisateurs par courriel avant le déplacement et faites-leur part des informations suivantes :
+When moving OneDrive sites between geo locations, it's important to communicate to your users what to expect. This can help reduce user confusion and calls to your help desk. Email your users before the move and let them know the following information:
 
 - La date de début prévue du déplacement et la durée attendue de l’opération.
 - L’emplacement géographique vers lequel est déplacé leur espace OneDrive et l’URL permettant d’accéder au nouvel emplacement.
@@ -46,7 +46,7 @@ N’oubliez pas d’envoyer un courrier électronique à vos utilisateurs une fo
 
 ## <a name="scheduling-onedrive-site-moves"></a>Planification de déplacements de site OneDrive
 
-Vous pouvez planifier les déplacements de site OneDrive à l’avance (décrit plus loin dans cet article). Nous vous recommandons de commencer avec un petit nombre d’utilisateurs pour valider vos stratégies de communication et de flux de travail. Une fois que vous êtes habitué au processus, vous pouvez planifier des déplacements comme suit :
+You can schedule OneDrive site moves in advance (described later in this article). We recommend that you start with a small number of users to validate your workflows and communication strategies. Once you are comfortable with the process, you can schedule moves as follows:
 
 - Vous pouvez planifier jusqu’à 4 000 déplacements à la fois.
 - Lorsque les déplacements commencent, vous pouvez planifier plus d’informations, avec un maximum de 4 000 déplacements dans la file d’attente et à un moment donné.
@@ -80,7 +80,7 @@ Pour vous assurer que tous les emplacements géographiques sont compatibles, ex�
 Get-SPOGeoMoveCrossCompatibilityStatus
 ```
 
-Une liste de vos emplacements géographiques s’affichera et le contenu que vous pourrez déplacer entre ces emplacements sera marqué « Compatible ». Si la commande renvoie « Incompatible », réessayez de valider l’état plus tard.
+Cela a pour effet d’afficher les emplacements géographiques et d’indiquer si leur environnement est compatible avec l’emplacement géographique cible. Si un emplacement géographique est incompatible, cela signifie qu’une mise à jour est en cours à cet emplacement. Réessayez dans quelques jours.
 
 Si un OneDrive contient, par exemple, un sous-site, il ne peut pas être déplacé. Vous pouvez utiliser la cmdlet Start-SPOUserAndContentMove avec le paramètre -ValidationOnly pour contrôler si le site OneDrive peut être déplacé :
 
@@ -88,7 +88,7 @@ Si un OneDrive contient, par exemple, un sous-site, il ne peut pas être déplac
 Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly
 ```
 
-Ceci renvoie Opération réussie si le site OneDrive est prêt à être déplacé ou Échec s’il existe une conservation légale ou un sous-site qui empêche le déplacement. Une fois que vous avez contrôlé que le site OneDrive est prêt à être déplacé, vous pouvez commencer le déplacement.
+This will return Success if the OneDrive is ready to be moved or Fail if there is a legal hold or subsite that would prevent the move. Once you have validated that the OneDrive is ready to move, you can start the move.
 
 ## <a name="start-a-onedrive-geo-move"></a>Démarrer un déplacement géographique OneDrive
 
@@ -113,8 +113,8 @@ Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.co
 
 Pour planifier un déplacement géographique à un autre moment, utilisez l’un des paramètres suivants :
 
-- _PreferredMoveBeginDate_ : le déplacement commencera probablement à l’heure spécifiée. L’heure doit être spécifiée en Temps universel coordonné (UTC).
-- _PreferredMoveEndDate_ : le déplacement se terminera probablement d’ici l’heure spécifiée, dans la mesure du possible. L’heure doit être spécifiée en Temps universel coordonné (UTC).
+- _PreferredMoveBeginDate_ – The move will likely begin at this specified time. Time must be specified in Coordinated Universal Time (UTC).
+- _PreferredMoveEndDate_ – The move will likely be completed by this specified time, on a best effort basis. Time must be specified in Coordinated Universal Time (UTC).
 
 ## <a name="cancel-a-onedrive-geo-move"></a>Annuler un déplacement géographique OneDrive
 
@@ -155,7 +155,7 @@ Vous pouvez également ajouter le paramètre *Détaillé* pour obtenir des descr
 
 ## <a name="user-experience"></a>Expérience de l’utilisateur
 
-Les utilisateurs de OneDrive devraient observer des perturbations minimales si leur site OneDrive est déplacé vers un autre emplacement géographique. Excepté un état de lecture seule bref lors du déplacement, les autorisations et liens existants continueront à fonctionner comme prévu une fois le déplacement terminé.
+Users of OneDrive should notice minimal disruption if their OneDrive is moved to a different geo location. Aside from a brief read-only state during the move, existing links and permissions will continue to work as expected once the move is completed.
 
 ### <a name="users-onedrive"></a>Lecteur OneDrive d’un utilisateur
 
@@ -177,7 +177,7 @@ Lorsque le déplacement géographique de OneDrive est terminé, les liens partag
 
 ### <a name="onenote-experience"></a>Expérience OneNote
 
-Le client OneNote win32 client et l’application UWP (universelle) détecteront automatiquement et synchroniseront en toute transparence les blocs-notes avec le nouvel emplacement OneDrive à la fin du déplacement géographique de OneDrive. L’utilisateur n’a pas besoin de se connecter à nouveau ou d’effectuer une autre action. Le seul indicateur visible pour l’utilisateur est l’échec de la synchronisation des blocs-notes lorsque le déplacement géographique de OneDrive est en cours. Cette expérience est disponible sur les versions de client OneNote suivantes :
+OneNote win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new OneDrive location once OneDrive geo move is complete. The user does not need to sign-in again or take any other action. The only visible indicator to the user is notebook sync would fail when OneDrive geo move is in progress. This experience is available on the following OneNote client versions:
 
 - OneNote win32 – Version 16.0.8326.2096 (et versions ultérieures)
 - OneNote UWP – Version 16.0.8431.1006 (et versions ultérieures)
@@ -185,7 +185,7 @@ Le client OneNote win32 client et l’application UWP (universelle) détecteront
 
 ### <a name="teams-app"></a>Application Teams
 
-Lorsque le déplacement géographique de OneDrive est terminé, les utilisateurs ont accès à leurs fichiers OneDrive sur l’application Teams. En outre, les fichiers partagés via la conversation Teams de leur site OneDrive avant le déplacement géographique continuent à fonctionner après le déplacement.
+Upon OneDrive geo move completion, users will have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive prior to geo move will continue to work after move is complete.
 
 ### <a name="onedrive-mobile-app-ios"></a>OneDrive Mobile App (iOS)
 

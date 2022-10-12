@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données WeChat dans Microsoft 365
+description: Configurez et utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données WeChat dans Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Configurez et utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données WeChat dans Microsoft 365.
-ms.openlocfilehash: 50a508fa13cb3e51314354a6a8cc2d1033d8422c
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: d71d61fa16f7a356fa02cc9b4d114b205989d1ef
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67820766"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534957"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>Configurer un connecteur pour archiver les données WeChat
 
 Utilisez le connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver les appels WeChat et WeCom, les conversations, les pièces jointes, les fichiers et les messages rappelés. Après avoir configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation et importe la communication mobile des employés à l’aide de l’archiveur WeChat TeleMessage vers des boîtes aux lettres dans Microsoft 365.
 
 Une fois que les données du connecteur WeChat Archiver sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, eDiscovery, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données de communication WeChat. Par exemple, vous pouvez effectuer une recherche dans la communication WeChat à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant les données du connecteur d’archivage WeChat à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur d’archivage WeChat pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations et aux stratégies réglementaires de gouvernance d’entreprise.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-wechat-communication-data"></a>Vue d’ensemble de l’archivage des données de communication WeChat
 
@@ -57,13 +62,13 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 Suivez les étapes décrites dans cette section pour créer un connecteur Archiver WeChat dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour se connecter au site TeleMessage et transférer les données de communication WeChat vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez à l’archiveur <https://compliance.microsoft.com>**WeChat** **des connecteurs de données**, puis cliquez dessus > .
+1. Accédez à l’archiveur <https://compliance.microsoft.com>**WeChat** **des connecteurs** >  de données, puis sélectionnez-le.
 
-2. Dans la page de description du produit **WeChat Archiver** , cliquez sur **Ajouter un connecteur**
+2. Dans la page de description du produit **WeChat Archiver** , sélectionnez **Ajouter un connecteur**
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
+4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis sélectionnez **Suivant**.
 
     - **Nom d’utilisateur** : nom d’utilisateur TeleMessage.
 
@@ -73,7 +78,7 @@ Suivez les étapes décrites dans cette section pour créer un connecteur Archiv
 
 6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs. Vous pouvez également charger un fichier CSV de mappage d’utilisateur personnalisé.
 
-7. Cliquez sur **Suivant**, passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+7. Sélectionnez **Suivant**, passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
 8. Accédez à l’onglet **Connecteurs** de la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 

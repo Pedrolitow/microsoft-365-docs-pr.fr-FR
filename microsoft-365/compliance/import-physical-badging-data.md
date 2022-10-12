@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour importer des données de badging physiques
+description: Les administrateurs peuvent configurer un connecteur de données pour importer des données du système de badging physique de leur organisation vers Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,15 +13,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-description: Les administrateurs peuvent configurer un connecteur de données pour importer des données du système de badging physique de leur organisation vers Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
-ms.openlocfilehash: a04ae3c929948a7a30b3f7fb5b224ab14a193323
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 2b08302d0259731f4fa283def3f966e797d684da
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826091"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536937"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de badging physiques (préversion)
 
@@ -39,6 +42,8 @@ La configuration d’un connecteur de badging physique se compose des tâches su
 - Si vous le souhaitez, vous pouvez planifier l’exécution automatique du script pour importer des données actuellement incorrectes physiques.
 
 Si vous souhaitez participer à la préversion, contactez l’équipe à dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
@@ -144,11 +149,11 @@ L’étape suivante consiste à créer un connecteur de mise en échec physique 
 
 1. Accédez au portail de conformité, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Connecteurs de données**</a>.
 
-2. Dans la page **Connecteurs de données** sous **Échec physique**, cliquez sur **Affichage**.
+2. Dans la page **Connecteurs de données** sous **Badging physique**, sélectionnez **Affichage**.
 
-3. Dans la page **De badging physique** , cliquez sur **Ajouter un connecteur**.
+3. Dans la page **De badging physique** , sélectionnez **Ajouter un connecteur**.
 
-4. Dans la page **Informations d’identification d’authentification** , procédez comme suit, puis cliquez sur **Suivant** :
+4. Dans la page **Informations d’identification d’authentification** , procédez comme suit, puis sélectionnez **Suivant** :
 
    1. Tapez ou collez l’ID d’application Azure AD pour l’application Azure que vous avez créée à l’étape 1.
 
@@ -156,17 +161,17 @@ L’étape suivante consiste à créer un connecteur de mise en échec physique 
 
    3. Tapez un nom unique pour le connecteur de badging physique.
 
-5. Dans la page **Révision** , passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+5. Dans la page **Révision** , passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
 6. Une page d’état s’affiche pour confirmer la création du connecteur. Cette page contient également l’ID de travail. Vous pouvez copier l’ID du travail à partir de cette page ou de la page de menu volant du connecteur. Vous avez besoin de cet ID de travail lors de l’exécution du script.
 
    La page d’état contient également un lien vers le script. Reportez-vous à ce script pour comprendre comment publier le fichier JSON sur le point de terminaison de l’API.
 
-7. Cliquez sur **Terminé**.
+7. Sélectionnez **Terminé**.
 
    Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs** .
 
-8. Cliquez sur le connecteur de badging physique que vous venez de créer pour afficher la page de menu volant, qui contient des propriétés et d’autres informations sur le connecteur.
+8. Sélectionnez le connecteur de badging physique que vous venez de créer pour afficher la page de menu volant, qui contient des propriétés et d’autres informations sur le connecteur.
 
 ## <a name="step-4-run-the-script-to-post-your-json-file-containing-physical-badging-data"></a>Étape 4 : Exécutez le script pour PUBLIER votre fichier JSON contenant des données de mauvais fonctionnement physiques
 
@@ -179,7 +184,7 @@ Après avoir exécuté le script, le fichier JSON contenant les données de badg
 
 1. Accédez à [ce site GitHub](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) pour accéder à l’exemple de script.
 
-2. Cliquez sur le bouton **Brut** pour afficher le script en mode texte
+2. Sélectionnez le bouton **Brut** pour afficher le script en mode texte
 
 3. Copiez toutes les lignes de l’exemple de script, puis enregistrez-les dans un fichier texte.
 
@@ -225,11 +230,11 @@ Une fois que vous avez créé le connecteur de badging physique et envoyé (push
 
 1. Accédez au portail de conformité, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Connecteurs de données**</a>.
 
-2. Cliquez sur l’onglet **Connecteurs** , puis sélectionnez le connecteur de badging physique pour afficher la page de menu volant. Cette page contient les propriétés et les informations sur le connecteur.
+2. Sélectionnez l’onglet **Connecteurs** , puis sélectionnez le connecteur de badging physique pour afficher la page de menu volant. Cette page contient les propriétés et les informations sur le connecteur.
 
    ![Page de menu volant d’état pour le connecteur de badging physique.](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. Sous **Dernière importation**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque exécution du script et le chargement des données du fichier JSON dans le cloud Microsoft.
+3. Sous **Dernière importation**, **sélectionnez** le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque exécution du script et le chargement des données du fichier JSON dans le cloud Microsoft.
 
    ![Le fichier journal du connecteur de badging physique affiche le nombre d’objets du fichier JSON qui ont été chargés.](..\media\PhysicalBadgingConnectorLogFile.png)
 
@@ -243,11 +248,11 @@ Pour vous assurer que les dernières données de badging physiques de votre orga
 
 Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
+1. Sur votre ordinateur local, sélectionnez le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
 
-2. Cliquez sur l’application **Du planificateur de tâches** pour l’ouvrir.
+2. Sélectionnez l’application **Du planificateur de tâches** pour l’ouvrir.
 
-3. Dans la section **Actions** , cliquez sur **Créer une tâche**.
+3. Dans la section **Actions** , sélectionnez **Créer une tâche**.
 
 4. Sous l’onglet **Général** , tapez un nom descriptif pour la tâche planifiée ; par exemple, **script de connecteur de badging physique**. Vous pouvez également ajouter une description facultative.
 
@@ -257,34 +262,34 @@ Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour 
 
    2. Vérifiez que la case à cocher **Exécuter avec les privilèges les plus élevés** est cochée.
 
-6. Sélectionnez l’onglet Déclencheurs, cliquez sur **Nouveau**, puis effectuez les **opérations suivantes** :
+6. Sélectionnez l’onglet Déclencheurs, sélectionnez **Nouveau**, puis effectuez les **opérations suivantes** :
 
    1. Sous **Paramètres**, sélectionnez l’option **Quotidienne** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
 
    2. Sous **Paramètres avancés**, vérifiez que la case à cocher **Activé** est cochée.
 
-   3. Cliquez sur **OK**.
+   3. Sélectionnez **OK**.
 
-7. Sélectionnez l’onglet **Actions** , cliquez sur **Nouveau**, puis effectuez les opérations suivantes :
+7. Sélectionnez l’onglet **Actions** , sélectionnez **Nouveau**, puis effectuez les opérations suivantes :
 
    ![Paramètres d’action pour créer une tâche planifiée pour le script de connecteur de badging physique.](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. Dans la liste déroulante **Action** , vérifiez que **l’option Démarrer un programme** est sélectionnée.
 
-   2. Dans la zone **Programme/script** , cliquez sur **Parcourir, accédez** à l’emplacement suivant et sélectionnez-le pour que le chemin d’accès s’affiche dans la zone : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. Dans la zone **Programme/script** , **sélectionnez Parcourir, accédez** à l’emplacement suivant et sélectionnez-le pour que le chemin d’accès s’affiche dans la zone : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
    3. Dans la zone **Ajouter des arguments (facultatif),** collez la commande de script que vous avez exécutée à l’étape 4. Par exemple, .\PhysicalBadging.ps1-tenantId « d5723623-11cf-4e2e-b5a5-01d1506273g9 » -appId « c12823b7-b55a-4989-faba-02de41bb97c3 » -appSecret « MNubVGbcQDkGCnn » -jobId « e081f4f4-3831-48d6-7bb3-fcfab1581458 » -jsonFilePath « C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json »
 
    4. Dans la zone **Démarrer (facultatif),** collez l’emplacement du dossier du script que vous avez exécuté à l’étape 4. Par exemple, C:\Users\contosoadmin\Desktop\Scripts.
 
-   5. Cliquez sur **Ok** pour enregistrer les paramètres de la nouvelle action.
+   5. Sélectionnez **OK** pour enregistrer les paramètres de la nouvelle action.
 
-8. Dans la fenêtre **Créer une tâche** , cliquez sur **Ok** pour enregistrer la tâche planifiée. Vous pouvez être invité à entrer les informations d’identification de votre compte d’utilisateur.
+8. Dans la fenêtre **Créer une tâche** , sélectionnez **Ok** pour enregistrer la tâche planifiée. Vous pouvez être invité à entrer les informations d’identification de votre compte d’utilisateur.
 
    La nouvelle tâche s’affiche dans la bibliothèque du planificateur de tâches.
 
    ![La nouvelle tâche s’affiche dans la bibliothèque du planificateur de tâches.](..\media\SchedulePhysicalBadgingScript2.png)
 
-La dernière fois que le script s’est exécuté et la prochaine fois qu’il est planifié pour s’exécuter s’affiche. Vous pouvez double-cliquer sur la tâche pour la modifier.
+La dernière fois que le script s’est exécuté et la prochaine fois qu’il est planifié pour s’exécuter s’affiche. Vous pouvez double-sélectionner la tâche pour la modifier.
 
 Vous pouvez également vérifier la dernière fois que le script s’est exécuté sur la page de menu volant du connecteur de badging physique correspondant dans le centre de conformité.

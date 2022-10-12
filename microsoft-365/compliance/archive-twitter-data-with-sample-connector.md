@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver des données Twitter
+description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur natif pour importer des données Twitter dans Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,15 +13,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur natif pour importer des données Twitter dans Microsoft 365.
-ms.openlocfilehash: 210ceed7b629ae1a71981f15b4606418a6fc0873
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: c32fe8046a5ec067e405e6d0e0a097eb71b7351e
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823494"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533857"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Configurer un connecteur Microsoft pour archiver les données Twitter (préversion)
 
@@ -31,6 +34,8 @@ Une fois les données Twitter importées, vous pouvez appliquer aux données Twi
 Une fois les données Twitter importées, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données stockées dans la boîte aux lettres. Par exemple, vous pouvez rechercher des données Twitter à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données sont stockées avec un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur pour importer et archiver des données Twitter dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 Si vous souhaitez participer à la préversion, contactez l’équipe à dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
@@ -73,7 +78,7 @@ Pour déployer le code source de l’application de connecteur Twitter :
 
 1. Accédez à [ce site GitHub](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).
 
-2. Cliquez sur **Déployer sur Azure**.
+2. Sélectionnez **Déployer sur Azure**.
 
 Pour obtenir des instructions pas à pas, consultez [Déployer le service web du connecteur à partir de GitHub sur votre compte Azure](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 

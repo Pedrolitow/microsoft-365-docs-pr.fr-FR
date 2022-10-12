@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données à partir de TeleMessage Enterprise Number Archiver
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données SMS et MMS à partir de TeleMessage Enterprise Number Archiver. Cela vous permet d’archiver des données de sources de données tierces dans Microsoft Purview afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données SMS et MMS à partir de TeleMessage Enterprise Number Archiver. Cela vous permet d’archiver des données de sources de données tierces dans Microsoft Purview afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: c367f7c5c661f374376163e15a0caa63951dcf35
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: f1547c8f382c243367e7130795282bef8bf13797
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67824441"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535551"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configurer un connecteur pour archiver les données de numéro d’entreprise
 
 Utilisez un connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des messages MMS (Short Messaging Service) et Multimedia Messaging Service (MMS), des messages de conversation, des enregistrements d’appels vocaux et des journaux d’appels vocaux à partir de l’archiveur numéro d’entreprise. Après avoir configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation une fois par jour et importe les données de communication mobile des employés à l’aide de l’archiveur numéro d’entreprise TeleMessage dans des boîtes aux lettres dans Microsoft 365.
 
 Une fois que les données du connecteur TeleMessage Enterprise Number Archiver sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données de l’archiveur de numéros d’entreprise. Par exemple, vous pouvez rechercher les SMS, MMS et appels vocaux de TeleMessage Enterprise Number Archiver à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur Enterprise Number Archiver à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur Enterprise Number Archiver pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-enterprise-number-data"></a>Vue d’ensemble de l’archivage des données de numéro d’entreprise
 
@@ -55,13 +60,13 @@ Certaines des étapes d’implémentation requises pour archiver les données de
 
 Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur Enterprise Number Archiver dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transférer des SMS, MMS et des messages d’appel vocal vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez à l’archiveur [https://compliance.microsoft.com](https://compliance.microsoft.com/) de **numéro d’entreprise** **des connecteurs de données**, puis cliquez dessus\>.
+1. Accédez, [https://compliance.microsoft.com](https://compliance.microsoft.com/) puis sélectionnez **Connecteurs** \> de données **Enterprise Number Archiver**.
 
-2. Dans la page de description du produit **Enterprise Number Archiver** , cliquez sur **Ajouter un connecteur**
+2. Dans la page de description du produit **Enterprise Number Archiver** , **sélectionnez Ajouter un connecteur**
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
+4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis sélectionnez **Suivant**.
 
    - **Nom d'utilisateur:** Votre nom d’utilisateur TeleMessage.
 
@@ -69,9 +74,9 @@ Une fois que vous avez rempli les conditions préalables décrites dans la secti
 
 5. Une fois le connecteur créé, vous pouvez fermer la fenêtre contextuelle et accéder à la page suivante.
 
-6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs. Pour activer le mappage personnalisé, chargez un fichier CSV qui contient les informations de mappage utilisateur, puis cliquez sur **Suivant**.
+6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs. Pour activer le mappage personnalisé, chargez un fichier CSV qui contient les informations de mappage utilisateur, puis sélectionnez **Suivant**.
 
-7. Passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+7. Passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
 8. Accédez à l’onglet Connecteurs de la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 

@@ -3,6 +3,7 @@ title: Envoyer (push) des types de contenu à un hub
 description: Découvrez comment envoyer (push) des types de contenu à un hub
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: shrganguly
 manager: serdars
 audience: admin
 ms.topic: article
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: f3e3e314d0527e48cb2566b45e48f2e7158f0cf4
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 9a90c076d8097a2497a536db89f1879b91279105
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584614"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536387"
 ---
 # <a name="push-content-types-to-a-hub"></a>Envoyer (push) des types de contenu à un hub
 
@@ -42,7 +43,7 @@ Pour envoyer (push) des types de contenu à un hub
 5. Sélectionnez les sites concentrateurs de votre choix, puis **OK**.
 6. Cliquez sur **Enregistrer**.
 
-Lors du premier envoi (push) d’un type de contenu à un hub existant et à ses sites associés, la mise à jour des paramètres sur le site peut prendre jusqu’à une heure à compter de la visite du hub ou des sites associés. Pour les nouvelles associations au hub, ce temps d’attente ne sera pas nécessaires, et la prise en compte des paramètres ne prendra que quelques minutes.
+When you push a content type to an existing hub & its existing associated sites for the first time, it can take up to an hour from when the hub or associated sites are visited, for the settings to update in the site. Any new associations to the hub won't require this wait and will have the settings reflected in a few minutes.
 
 Une fois les paramètres mis à jour, le type de contenu avec ces paramètres sera disponible dans tout site récemment associé avec le hub dans quelques minutes. L’affichage de la bibliothèque par défaut sera changé en l’un de ces affichages créés automatiquement. S’il existe plusieurs types de contenu placés dans la même bibliothèque, le dernier (en fonction de l’ordre d’action du déplacement de ces types de contenu vers le hub appartenant à cette bibliothèque) est celui qui est défini en tant qu’affichage par défaut.  Ensuite, le type de contenu est automatiquement ajouté à la nouvelle liste ou bibliothèque quelques minutes après la création de celle-ci. Un type de contenu envoyé (push) est ajouté à une bibliothèque de documents uniquement s’il provient directement ou indirectement du type de contenu Document. D’autre part, un type de contenu est ajouté à une liste uniquement s’il ne provient pas directement ou indirectement du type de contenu Document.
 

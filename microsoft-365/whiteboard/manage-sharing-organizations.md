@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft.
-ms.openlocfilehash: aeb6da3d6bd66c02468ff19efa072af4d7084389
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 2d788474a1c72baec448bf20dbc78a12e1afd1e2
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492505"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537333"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Gérer le partage pour le Tableau blanc Microsoft
 
@@ -53,6 +53,8 @@ Ce paramètre s’applique uniquement aux tableaux blancs et remplace les param�
 
 > [!NOTE]
 > Par défaut, le paramètre de réunion Teams **permettant aux utilisateurs anonymes d’interagir avec les applications dans les réunions** est activé. Si vous l’avez désactivé, les utilisateurs anonymes (par opposition aux invités ou aux utilisateurs fédérés) n’auront pas accès au tableau blanc pendant la réunion.
+>
+> Si vous souhaitez que les comptes d’appareils partagés aient accès au Tableau blanc dans les réunions Teams, mais pas aux utilisateurs anonymes, vous pouvez désactiver **les utilisateurs anonymes qui peuvent interagir avec les applications dans les réunions** tout en **activant AllowAnonymousMeetingParticipantsToAccessWhiteboards**
 
 Ces modifications doivent prendre environ 60 minutes pour s’appliquer à l’ensemble de votre location.
 

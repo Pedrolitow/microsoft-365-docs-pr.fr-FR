@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données de Bell SMS/MMS Network
+description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données SMS et MMS à partir du réseau Bell. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données SMS et MMS à partir du réseau Bell. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 69d5944450dd209793081feae95ab799f97bf72e
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 4eceb194ff62000255020492242027bdd6f4868f
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67818762"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535595"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>Configurer un connecteur pour archiver les données du réseau Bell
 
 Utilisez un connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des messages MMS (Short Messaging Service) et Multimedia Messaging Service (MMS) à partir du réseau Bell. Une fois que vous avez configuré et configuré un connecteur, il se connecte au réseau Bell de votre organisation une fois par jour et importe des messages SMS et MMS dans des boîtes aux lettres dans Microsoft 365.
 
 Une fois les messages SMS et MMS stockés dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données de Bell Network. Par exemple, vous pouvez effectuer une recherche par SMS/MMS bell network à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant les données du connecteur Bell Network à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur Bell Network pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-bell-network-data"></a>Vue d’ensemble de l’archivage des données de Bell Network
 
@@ -61,13 +66,13 @@ Certaines des étapes d’implémentation requises pour archiver les données du
 
 La dernière étape consiste à créer un connecteur Bell Network dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transférer des messages SMS/MMS vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez, [https://compliance.microsoft.com](https://compliance.microsoft.com) puis cliquez sur **Connecteurs** >  de données **Bell SMS/MMS Network Archiver**.
+1. Accédez, [https://compliance.microsoft.com](https://compliance.microsoft.com) puis sélectionnez **Connecteurs** >  de données **Bell SMS/MMS Network Archiver**.
 
-2. Dans la page de description du produit **Bell Network** , cliquez sur **Ajouter un connecteur**
+2. Dans la page de description du produit **Bell Network** , sélectionnez **Ajouter un connecteur**
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
+4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis sélectionnez **Suivant**.
 
    - **Nom d'utilisateur:** Votre nom d’utilisateur TeleMessage.
 
@@ -75,9 +80,9 @@ La dernière étape consiste à créer un connecteur Bell Network dans le portai
 
 5. Une fois le connecteur créé, vous pouvez fermer la fenêtre contextuelle et accéder à la page suivante.
 
-6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs. Pour activer le mappage personnalisé, chargez un fichier CSV qui contient les informations de mappage utilisateur, puis cliquez sur **Suivant**.
+6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs. Pour activer le mappage personnalisé, chargez un fichier CSV qui contient les informations de mappage utilisateur, puis sélectionnez **Suivant**.
 
-7. Passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+7. Passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
 8. Accédez à l’onglet **Connecteurs** de la page **Connecteurs de données** dans le centre de conformité pour voir la progression du processus d’importation du nouveau connecteur.
 

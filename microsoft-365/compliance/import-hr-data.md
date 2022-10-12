@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour importer des données RH
+description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’employés à partir du système de ressources humaines de leur organisation vers Microsoft 365. Cela vous permet d’utiliser les données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de poser une menace interne à votre organisation.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,15 +13,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’employés à partir du système de ressources humaines de leur organisation vers Microsoft 365. Cela vous permet d’utiliser les données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de poser une menace interne à votre organisation.
-ms.openlocfilehash: 8ba4b7df9125a9eb85806ebe7052d3556c6203d8
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 193b45e50d76f6647d871fd84bda70f9be2b324c
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67820302"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537273"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -29,13 +32,15 @@ Vous pouvez configurer un connecteur de données dans le portail de conformité 
 La configuration d’un connecteur pour les données RH que les stratégies de gestion des risques internes peuvent utiliser pour générer des indicateurs de risque consiste à créer un fichier CSV contenant les données RH, à créer une application dans Azure Active Directory utilisée pour l’authentification, à créer un connecteur de données RH dans le portail de conformité, puis à exécuter un script (planifié) qui ingère les données RH dans les fichiers CSV dans le cloud Microsoft afin qu’elles soient disponibles à la solution de gestion des risques internes.
 
 > [!IMPORTANT]
-> Une nouvelle version du connecteur RH est désormais disponible pour la préversion publique. Pour créer un connecteur RH ou importer des données pour le [nouveau scénario de profil d’employé](#csv-file-for-employee-profile-data-preview) pour le scénario de stratégie de santé pour la gestion des risques **internes** , accédez à la page Connecteurs de données dans le portail de conformité, sélectionnez l’onglet **Connecteurs** , puis cliquez sur **Ajouter un connecteur > RH (préversion)** pour démarrer la configuration. Les connecteurs RH existants continueront de fonctionner sans interruption.
+> Une nouvelle version du connecteur RH est désormais disponible pour la préversion publique. Pour créer un connecteur RH ou importer des données pour le [nouveau scénario de profil d’employé](#csv-file-for-employee-profile-data-preview) pour le scénario de stratégie de santé pour la gestion des risques **internes** , accédez à la page Connecteurs de données dans le portail de conformité, sélectionnez l’onglet **Connecteurs** , puis sélectionnez **Ajouter un connecteur > RH (préversion)** pour démarrer la configuration. Les connecteurs RH existants continueront de fonctionner sans interruption.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Déterminez les scénarios rh et les données à importer dans Microsoft 365. Cela vous aidera à déterminer le nombre de fichiers CSV et de connecteurs RH que vous devez créer, ainsi que la façon de générer et de structurer les fichiers CSV. Les données RH que vous importez sont déterminées par les stratégies de gestion des risques internes que vous souhaitez implémenter. Pour plus d’informations, consultez l’étape 1.
 
-- Déterminez comment récupérer ou exporter les données à partir du système RH de votre organisation (et régulièrement) et les ajouter aux fichiers CSV que vous créez à l’étape 1. Le script que vous exécutez à l’étape 4 charge les données RH dans les fichiers CSV dans le cloud Microsoft.
+- Déterminez comment récupérer ou exporter les données à partir du système RH de votre organisation (et régulièrement) et ajoutez-les aux fichiers CSV que vous créez à l’étape 1. Le script que vous exécutez à l’étape 4 charge les données RH dans les fichiers CSV dans le cloud Microsoft.
 
 - L’utilisateur qui crée le connecteur RH à l’étape 3 doit disposer du rôle Administration connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
@@ -167,7 +172,7 @@ Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’�
 ### <a name="csv-file-for-employee-profile-data-preview"></a>Fichier CSV pour les données de profil des employés (préversion)
 
 > [!NOTE]
-> La possibilité de créer un connecteur RH pour les données de profil des employés est en préversion publique. Pour créer un connecteur RH qui prend en charge les données de profil des employés, accédez à la page **Connecteurs de données** dans le portail de conformité, sélectionnez l’onglet **Connecteurs**, puis cliquez sur **Ajouter un connecteur** > **RH (préversion).** Suivez les étapes pour créer un connecteur à [l’étape 3 : Créer le connecteur RH](#step-3-create-the-hr-connector).
+> La possibilité de créer un connecteur RH pour les données de profil des employés est en préversion publique. Pour créer un connecteur RH qui prend en charge les données de profil des employés, accédez à la page **Connecteurs de données** dans le portail de conformité, sélectionnez l’onglet **Connecteurs**, puis **sélectionnez Ajouter un connecteur** > **RH (préversion).** Suivez les étapes pour créer un connecteur à [l’étape 3 : Créer le connecteur RH](#step-3-create-the-hr-connector).
 
 Voici un exemple de fichier CSV pour les données des données de profil d’employé.
 
@@ -240,7 +245,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ### <a name="adding-the-hrscenario-column-to-a-csv-file-that-contains-a-single-data-type"></a>Ajout de la colonne HRScenario à un fichier CSV qui contient un seul type de données
 
-En fonction des systèmes RH de votre organisation et de la façon dont vous exporterez des données RH vers un fichier CSV, vous devrez peut-être créer plusieurs fichiers CSV qui contiennent un seul type de données RH. Dans ce cas, vous pouvez toujours créer un seul connecteur RH pour importer des données à partir de différents fichiers CSV. Pour ce faire, vous devez simplement ajouter une colonne HRScenario au fichier CSV et spécifier le type de données RH. Vous pouvez ensuite exécuter le script pour chaque fichier CSV, mais utiliser le même ID de travail pour le connecteur. Voir [l'étape 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
+En fonction des systèmes RH de votre organisation et de la façon dont vous allez exporter des données RH vers un fichier CSV, vous devrez peut-être créer plusieurs fichiers CSV qui contiennent un seul type de données RH. Dans ce cas, vous pouvez toujours créer un seul connecteur RH pour importer des données à partir de différents fichiers CSV. Pour ce faire, vous devez simplement ajouter une colonne HRScenario au fichier CSV et spécifier le type de données RH. Vous pouvez ensuite exécuter le script pour chaque fichier CSV, mais utiliser le même ID de travail pour le connecteur. Voir [l'étape 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2 : Créer une application dans Azure Active Directory
 
@@ -262,23 +267,23 @@ Une fois cette étape terminée, veillez à copier l’ID de travail généré l
 
 1. Accédez au portail de conformité, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Connecteurs de données**</a>.
 
-2. Dans la page **Connecteurs de données**, cliquez sur **HR (préversion).**
+2. Dans la page **Connecteurs de données**, sélectionnez **RH (préversion).**
 
-3. Dans la page **RH (préversion),** cliquez sur **Ajouter un connecteur**.
+3. Dans la page **RH (préversion),** **sélectionnez Ajouter un connecteur**.
 
-4. Dans la page **Configurer la connexion** , procédez comme suit, puis cliquez sur **Suivant** :
+4. Dans la page **Configurer la connexion** , procédez comme suit, puis sélectionnez **Suivant** :
 
    1. Tapez ou collez l’ID d’application Azure AD pour l’application Azure que vous avez créée à l’étape 2.
 
    2. Tapez un nom pour le connecteur RH.
 
-5. Dans la page Scénarios RH, sélectionnez un ou plusieurs scénarios RH pour lesquels vous souhaitez importer des données, puis cliquez sur **Suivant**.
+5. Dans la page Scénarios RH, sélectionnez un ou plusieurs scénarios RH pour lesquels vous souhaitez importer des données, puis sélectionnez **Suivant**.
 
    ![Sélectionnez un ou plusieurs scénarios RH.](../media/HRConnectorScenarios.png)
 
-6. Dans la page de méthode de mappage de fichiers, sélectionnez un type de fichier si nécessaire, puis sélectionnez l’une des options suivantes, puis cliquez sur **Suivant**.
+6. Dans la page de méthode de mappage de fichiers, sélectionnez un type de fichier si nécessaire, puis sélectionnez l’une des options suivantes, puis **sélectionnez Suivant**.
 
-   - **Chargez un exemple de fichier**. Si vous sélectionnez cette option, cliquez sur **Charger l’exemple de fichier** pour charger le fichier CSV que vous avez préparé à l’étape 1. Cette option vous permet de sélectionner rapidement des noms de colonnes dans votre fichier CSV dans une liste déroulante pour les mapper aux types de données pour les scénarios RH que vous avez sélectionnés précédemment.
+   - **Chargez un exemple de fichier**. Si vous sélectionnez cette option, **sélectionnez Charger l’exemple de fichier** pour charger le fichier CSV que vous avez préparé à l’étape 1. Cette option vous permet de sélectionner rapidement des noms de colonnes dans votre fichier CSV dans une liste déroulante pour les mapper aux types de données pour les scénarios RH que vous avez sélectionnés précédemment.
 
    OR
 
@@ -290,7 +295,7 @@ Une fois cette étape terminée, veillez à copier l’ID de travail généré l
 
     - Si vous avez sélectionné plusieurs types de données à l’étape ci-dessus, vous devez entrer le nom de colonne d’identificateur qui identifie le type de données RH dans votre fichier CSV. Après avoir entré le nom de colonne d’identificateur, tapez la valeur qui identifie ce type de données RH, puis tapez les noms d’en-tête de colonne pour les types de données sélectionnés à partir du ou des fichiers CSV que vous avez créés à l’étape 1 dans chacune des zones appropriées pour chaque type de données sélectionné. Comme expliqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de colonnes dans votre fichier CSV.
 
-8. Dans la page **Révision** , passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+8. Dans la page **Révision** , passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
    Une page d’état s’affiche pour confirmer la création du connecteur. Cette page contient deux éléments importants que vous devez effectuer à l’étape suivante pour exécuter l’exemple de script pour charger vos données RH.
 
@@ -298,19 +303,19 @@ Une fois cette étape terminée, veillez à copier l’ID de travail généré l
 
    1. **ID du travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez la copier à partir de cette page ou de la page de menu volant du connecteur.
 
-   2. **Lien vers un exemple de script.** Cliquez sur le lien **ci-après** pour accéder au site GitHub pour accéder à l’exemple de script (le lien ouvre une nouvelle fenêtre). Laissez cette fenêtre ouverte pour pouvoir copier le script à l’étape 4. Vous pouvez également marquer la destination ou copier l’URL pour pouvoir y accéder à nouveau lorsque vous exécutez le script. Ce lien est également disponible sur la page de menu volant du connecteur.
+   2. **Lien vers un exemple de script.** Sélectionnez le lien **ici** pour accéder au site GitHub pour accéder à l’exemple de script (le lien ouvre une nouvelle fenêtre). Laissez cette fenêtre ouverte pour pouvoir copier le script à l’étape 4. Vous pouvez également marquer la destination ou copier l’URL pour pouvoir y accéder à nouveau lorsque vous exécutez le script. Ce lien est également disponible sur la page de menu volant du connecteur.
 
-9. Cliquez sur **Terminé**.
+9. Sélectionnez **Terminé**.
 
    Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs** .
 
-10. Cliquez sur le connecteur RH que vous venez de créer pour afficher la page de menu volant, qui contient des propriétés et d’autres informations sur le connecteur.
+10. Sélectionnez le connecteur RH que vous venez de créer pour afficher la page de menu volant, qui contient des propriétés et d’autres informations sur le connecteur.
 
    ![Page de menu volant pour le nouveau connecteur RH.](../media/HRConnectorWizard7.png)
 
 Si vous ne l’avez pas déjà fait, vous pouvez copier les valeurs de **l’ID de Azure App** et de **l’ID de travail du connecteur**. Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page de menu volant (ou le télécharger à l’aide du lien à l’étape suivante).)
 
-Vous pouvez également cliquer sur **Modifier** pour modifier l’ID Azure App ou les noms d’en-tête de colonne que vous avez définis sur la page **de mappage de fichiers**.
+Vous pouvez également sélectionner **Modifier** pour modifier l’ID Azure App ou les noms d’en-tête de colonne que vous avez définis sur la page **de mappage de fichiers**.
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Étape 4 : Exécuter l’exemple de script pour charger vos données RH
 
@@ -318,7 +323,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
 1. Accédez à la fenêtre que vous avez laissée ouverte à l’étape précédente pour accéder au site GitHub avec l’exemple de script. Vous pouvez également ouvrir le site avec signet ou utiliser l’URL que vous avez copiée. Vous pouvez également accéder au script [ici](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
-2. Cliquez sur le bouton **Brut** pour afficher le script en mode texte.
+2. Sélectionnez le bouton **Brut** pour afficher le script en mode texte.
 
 3. Copiez toutes les lignes de l’exemple de script, puis enregistrez-les dans un fichier texte.
 
@@ -362,11 +367,11 @@ Après avoir créé le connecteur RH et exécuté le script pour charger vos don
 
 1. Accédez au portail de conformité, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Connecteurs de données**</a>.
 
-2. Cliquez sur l’onglet **Connecteurs** , puis sélectionnez le connecteur RH pour afficher la page de menu volant. Cette page contient les propriétés et les informations sur le connecteur.
+2. Sélectionnez l’onglet **Connecteurs** , puis sélectionnez le connecteur RH pour afficher la page de menu volant. Cette page contient les propriétés et les informations sur le connecteur.
 
    ![Page de menu volant du connecteur RH avec les propriétés et l’état.](../media/HRConnectorFlyout1.png)
 
-3. Sous **Progression**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque exécution du script et le chargement des données du fichier CSV dans le cloud Microsoft. 
+3. Sous **Progression**, **sélectionnez** le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque exécution du script et le chargement des données du fichier CSV dans le cloud Microsoft. 
 
    ![Le fichier journal du connecteur RH affiche les lignes numériques du fichier CSV qui ont été chargées.](../media/HRConnectorLogFile.png)
 
@@ -380,11 +385,11 @@ Pour vous assurer que les dernières données RH de votre organisation sont disp
 
 Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
+1. Sur votre ordinateur local, sélectionnez le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
 
-2. Cliquez sur l’application **Du planificateur de tâches** pour l’ouvrir.
+2. Sélectionnez l’application **Du planificateur de tâches** pour l’ouvrir.
 
-3. Dans la section **Actions** , cliquez sur **Créer une tâche**.
+3. Dans la section **Actions** , sélectionnez **Créer une tâche**.
 
 4. Sous l’onglet **Général** , tapez un nom descriptif pour la tâche planifiée ; par exemple, **script du connecteur RH**. Vous pouvez également ajouter une description facultative.
 
@@ -394,37 +399,76 @@ Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour 
 
    1. Vérifiez que la case à cocher **Exécuter avec les privilèges les plus élevés** est cochée.
 
-6. Sélectionnez l’onglet Déclencheurs, cliquez sur **Nouveau**, puis effectuez les **opérations suivantes** :
+6. Sélectionnez l’onglet Déclencheurs, sélectionnez **Nouveau**, puis effectuez les **opérations suivantes** :
 
    1. Sous **Paramètres**, sélectionnez l’option **Quotidienne** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
 
    1. Sous **Paramètres avancés**, vérifiez que la case à cocher **Activé** est cochée.
 
-   1. Cliquez sur **OK**.
+   1. Sélectionnez **OK**.
 
-7. Sélectionnez l’onglet **Actions** , cliquez sur **Nouveau**, puis effectuez les opérations suivantes :
+7. Sélectionnez l’onglet **Actions** , sélectionnez **Nouveau**, puis effectuez les opérations suivantes :
 
    ![Paramètres d’action pour créer une tâche planifiée pour le script du connecteur RH.](../media/HRConnectorScheduleTask1.png)
 
    1. Dans la liste déroulante **Action** , vérifiez que **l’option Démarrer un programme** est sélectionnée.
 
-   1. Dans la zone **Programme/script** , cliquez sur **Parcourir, accédez** à l’emplacement suivant et sélectionnez-le pour que le chemin d’accès s’affiche dans la zone : `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
+   1. Dans la zone **Programme/script** , **sélectionnez Parcourir, accédez** à l’emplacement suivant et sélectionnez-le pour que le chemin d’accès s’affiche dans la zone : `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
 
    1. Dans la zone **Ajouter des arguments (facultatif),** collez la commande de script que vous avez exécutée à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    1. Dans la zone **Démarrer (facultatif),** collez l’emplacement du dossier du script que vous avez exécuté à l’étape 4. Par exemple : `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   1. Cliquez sur **Ok** pour enregistrer les paramètres de la nouvelle action.
+   1. Sélectionnez **OK** pour enregistrer les paramètres de la nouvelle action.
 
-8. Dans la fenêtre **Créer une tâche** , cliquez sur **Ok** pour enregistrer la tâche planifiée. Vous pouvez être invité à entrer les informations d’identification de votre compte d’utilisateur.
+8. Dans la fenêtre **Créer une tâche** , sélectionnez **Ok** pour enregistrer la tâche planifiée. Vous pouvez être invité à entrer les informations d’identification de votre compte d’utilisateur.
 
    La nouvelle tâche s’affiche dans la bibliothèque du planificateur de tâches.
 
    ![La nouvelle tâche s’affiche dans la bibliothèque du planificateur de tâches.](../media/HRConnectorTaskSchedulerLibrary.png)
 
-   La dernière fois que le script s’est exécuté et la prochaine fois qu’il est planifié pour s’exécuter s’affiche. Vous pouvez double-cliquer sur la tâche pour la modifier.
+   La dernière fois que le script s’est exécuté et la prochaine fois qu’il est planifié pour s’exécuter s’affiche. Vous pouvez double-sélectionner la tâche pour la modifier.
 
    Vous pouvez également vérifier la dernière fois que le script s’est exécuté sur la page de menu volant du connecteur RH correspondant dans le centre de conformité.
+
+## <a name="optional-step-7-upload-data-using-power-automate-templates"></a>(Facultatif) Étape 7 : Charger des données à l’aide de modèles Power Automate
+
+Vous pouvez charger des données RH à l’aide de modèles Power Automate et définir des déclencheurs. Par exemple, vous pouvez configurer un modèle Power Automate pour qu’il se déclenche lorsque de nouveaux fichiers de connecteur RH sont disponibles dans les emplacements SharePoint ou OneDrive. Vous pouvez également simplifier ce processus en stockant des informations confidentielles telles que le secret d’application Azure AD (créé à **l’étape 2**) dans Azure Key Vault et en l’utilisant avec Power Automate pour l’authentification.
+
+Effectuez les étapes suivantes pour charger automatiquement les données RH lorsque de nouveaux fichiers sont disponibles sur OneDrive Entreprise :
+
+1.  Téléchargez le package *ImportHRDataforIRM.zip* à partir du [site GitHub](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/ImportHRDataforIRM.zip).
+2. Dans [Power Automate](https://make.preview.powerautomate.com), accédez à **Mes flux**.
+3.  Sélectionnez **Importer** et chargez le package *ImportHRDataforIRM.zip* .
+4.  Une fois le package chargé, mettez à jour le contenu (nom & OneDrive Entreprise connexion), puis sélectionnez **Importer**.
+
+    ![Importation de flux Power Automate.](../media/hr-connector-pa-import-flow.png)
+
+5.  Sélectionnez **Ouvrir le flux** et mettez à jour les paramètres. Le tableau suivant décrit les paramètres à utiliser dans ce flux Power Automate et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
+
+    |**Paramètre**|**Description**|
+    |:------------|:--------------|
+    | ID de l’application | Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à **l’étape 2**. Azure AD l’utilise pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. |
+    | Secret de l’application | Il s’agit du secret d’application Azure AD pour l’application que vous avez créée dans Azure AD à **l’étape 2**. Utilisé pour l’authentification. |
+    | Emplacement du fichier | Il s’agit de l’emplacement OneDrive Entreprise où Power Automate surveille les activités « nouveau fichier créé » pour déclencher ce flux.|
+    | N° du travail | Identificateur du connecteur RH créé à **l’étape 3**. Cela permet d’associer les données RH chargées dans le cloud Microsoft au connecteur RH. |
+    | ID client | Identificateur de votre organisation Microsoft 365 obtenu à **l’étape 2**. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue d’ensemble** du Centre d’administration Azure AD. Cela permet d’identifier votre organisation. |
+    | URI | Vérifiez que la valeur de ce paramètre est *https://webhook.ingestion.office.com/api/signals* |
+
+    ![Flux Power Automate.](../media/hr-connector-pa-flow.png)
+
+6.  Sélectionnez **Enregistrer**.
+7.  Accédez à **la vue d’ensemble de Flow** , puis **sélectionnez Activer**.
+
+    ![Activez le flux Power Automate.](../media/hr-connector-pa-turn-on.png)
+
+8.  Testez le flux manuellement en chargeant un nouveau fichier dans votre dossier OneDrive Entreprise et vérifiez qu’il s’est exécuté correctement. Cette opération peut prendre quelques minutes après le chargement avant le déclenchement du flux.
+
+    ![Test de flux Power Automate.](../media/hr-connector-pa-test.png)
+
+9.  Vous pouvez maintenant surveiller le connecteur RH comme décrit à **l’étape 5**.
+
+Si nécessaire, vous pouvez mettre à jour le flux pour créer des déclencheurs en fonction de la disponibilité des fichiers et des événements de modification sur SharePoint et d’autres sources de données prises en charge par Power Automate Flows.
 
 ## <a name="existing-hr-connectors"></a>Connecteurs RH existants
 

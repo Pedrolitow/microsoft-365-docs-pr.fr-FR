@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4b6d682f74356154bc8fdbefacfb6485948427aa
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 843b4c18c62bf9f06a9ea999862b6ebd853a031c
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506519"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536475"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison
 
@@ -98,7 +98,7 @@ Après avoir intégré les appareils, vous devez configurer les autres fonctionn
 | [Configurer la protection nouvelle génération (NGP)](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender Antivirus est une solution anti-programme malveillant intégrée qui fournit une protection de nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants :<br> <br>- Protection fournie par le cloud pour la détection quasi instantanée et le blocage des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.<br> <br> - Analyse en permanence à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelées « protection en temps réel »).<br><br> - Mises à jour de protection dédiées basées sur le Machine Learning, l’analyse du Big Data humaine et automatisée, ainsi que la recherche approfondie sur la résistance aux menaces. |
 | [Configurer la réduction de la surface d’attaque (ASR)](overview-attack-surface-reduction.md) | Les fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison aident à protéger les appareils et les applications de l’organisation contre les menaces nouvelles et émergentes. |
 | [Configurer les fonctionnalités air (Auto Investigation & Remediation)](configure-automated-investigations-remediation.md) | Microsoft Defender pour point de terminaison utilise des investigations automatisées pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée utilise différents algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures de correction immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. |
-| [Configurer les fonctionnalités Microsoft Defender Experts](configure-microsoft-threat-experts.md) | Microsoft Defender Experts est un service de chasse managé qui fournit aux centres d’opérations de sécurité (SOC) une surveillance et une analyse de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées.      |
+| [Configurer les fonctionnalités Microsoft Defender Experts](../defender/defender-experts-for-hunting.md) | Microsoft Defender Experts est un service de chasse managé qui fournit aux centres d’opérations de sécurité (SOC) une surveillance et une analyse de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées.      |
 
 Pour plus d’informations, consultez [Fonctionnalités de Microsoft Defender pour point de terminaison prises en charge par plateforme](supported-capabilities-by-platform.md).
 

@@ -1,29 +1,33 @@
 ---
 title: Configurer un connecteur pour archiver les données Cisco Jabber dans Microsoft 365
+description: Découvrez comment configurer et utiliser un connecteur Cisco Jabber DataParser 17a-4 pour importer et archiver des données Cisco Jabber dans Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Découvrez comment configurer et utiliser un connecteur Cisco Jabber DataParser 17a-4 pour importer et archiver des données Cisco Jabber dans Microsoft 365.
-ms.openlocfilehash: c8020ca9d9138e677b3d5133ec7f742792942e8b
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 8457f50d582b10ed63de4482de49d4c6c119eafe
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817772"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534715"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Configurer un connecteur pour archiver les données Cisco Jabber
 
 Utilisez [Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) de 17a-4 LLC pour importer et archiver des données de Cisco Jabber vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur Cisco Jabber configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Cisco Jabber DataParser convertit les données Cisco Jabber au format de message électronique, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 
 Une fois que les données Cisco Jabber sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Cisco Jabber pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-cisco-jabber-data"></a>Vue d’ensemble de l’archivage des données Cisco Jabber
 
@@ -51,13 +55,13 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 La première étape consiste à accéder à la page Connecteurs de données dans le portail de conformité et à créer un connecteur 17a-4 pour les données Cisco Jabber.
 
-1. Accédez aux <https://compliance.microsoft.com> **connecteurs** >  de données **Cisco Jabber DataParser**, puis cliquez dessus.
+1. Accédez à <https://compliance.microsoft.com> Cisco **Jabber DataParser**, puis sélectionnez **connecteurs** >  de données.
 
-2. Dans la page de description **du produit Cisco Jabber DataParser** , cliquez sur **Ajouter un connecteur**.
+2. Dans la page de description **du produit Cisco Jabber DataParser** , sélectionnez **Ajouter un connecteur**.
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**.
+4. Entrez un nom unique qui identifie le connecteur, puis sélectionnez **Suivant**.
 
 5. Connectez-vous à votre compte 17a-4 et suivez les étapes de l’Assistant Connexion Cisco Jabber DataParser.
 
@@ -73,11 +77,11 @@ Le connecteur Cisco Jabber DataParser mappe automatiquement les utilisateurs à 
 
 Après avoir créé un connecteur Cisco Jabber DataParser, vous pouvez afficher l’état du connecteur dans le portail de conformité.
 
-1. Accédez et <https://compliance.microsoft.com> cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Cliquez sur l’onglet **Connecteurs** , puis sélectionnez le connecteur Cisco Jabber DataParser que vous avez créé pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
+2. Sélectionnez l’onglet **Connecteurs** , puis sélectionnez le connecteur Cisco Jabber DataParser que vous avez créé pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
+3. Sous **État du connecteur avec source**, **sélectionnez** le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problèmes connus
 

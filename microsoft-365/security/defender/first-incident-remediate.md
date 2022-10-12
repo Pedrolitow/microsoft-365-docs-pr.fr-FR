@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 63c9e47f30e113a6b79e0b290d19b8fe9e9a6399
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: bdb13779935290840e81211e69f54cf2d05fbe86
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482293"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536145"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
@@ -49,7 +50,7 @@ Microsoft 365 Defender propose plusieurs actions de correction que les analystes
 - **Lancer une investigation automatisée** : vous pouvez démarrer une nouvelle enquête automatisée à usage général sur l’appareil. Pendant l’exécution d’une enquête, toute autre alerte générée à partir de l’appareil est ajoutée à une enquête automatisée en cours jusqu’à ce que cette enquête soit terminée. En outre, si la même menace est visible sur d’autres appareils, ces appareils sont ajoutés à l’enquête.
 - **Lancer une réponse en direct** : la réponse en direct est une fonctionnalité qui vous donne un accès instantané à un appareil à l’aide d’une connexion d’interpréteur de commandes distante. Cela vous donne la possibilité d’effectuer un travail d’investigation approfondi et de prendre des mesures de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel. La réponse dynamique est conçue pour améliorer les investigations en vous permettant de collecter des données légales, d’exécuter des scripts, d’envoyer des entités suspectes à des fins d’analyse, de corriger les menaces et de rechercher de manière proactive les menaces émergentes.
 - **Collecter le package d’enquête** : dans le cadre du processus d’investigation ou de réponse, vous pouvez collecter un package d’enquête à partir d’un appareil. En collectant le package d’investigation, vous pouvez identifier l’état actuel de l’appareil et mieux comprendre les outils et techniques utilisés par l’attaquant. 
-- **Consultez un expert en menaces** (disponible à la fois dans Actions sur les appareils et les fichiers) : vous pouvez consulter un expert en menaces Microsoft pour obtenir plus d’informations sur les appareils ou appareils potentiellement compromis qui sont déjà compromis. Les experts en menaces Microsoft peuvent être engagés directement à partir de Microsoft 365 Defender pour une réponse rapide et précise. 
+- **Demandez aux experts Defender** (disponibles à la fois dans Actions sur les appareils et les fichiers) : vous pouvez consulter un expert Microsoft Defender pour obtenir plus d’informations sur les appareils ou appareils potentiellement compromis qui sont déjà compromis. Microsoft Defender experts peuvent être engagés directement à partir de Microsoft 365 Defender pour une réponse rapide et précise.
 
 ## <a name="actions-on-files"></a>Actions sur les fichiers
 

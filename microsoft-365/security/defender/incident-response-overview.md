@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 655858dab8b590909073f42c54148f7d0cbe4f06
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: de6df0dd19823dd864e0ca97e3daaada60f42b80
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503509"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536431"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Examiner et répondre avec Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ Voici les principales tâches d’examen et de réponse pour Microsoft 365 Defen
 - [Examiner et approuver les actions de correction automatique](#automated-investigation-and-remediation)
 - [Rechercher des menaces connues dans vos données](#proactive-search-for-threats-with-advanced-hunting)
 - [Comprendre les dernières cyberattaques](#get-ahead-of-emerging-threats-with-threat-analytics)
-- [Obtenir de l’aide](#collaborate-with-microsoft-experts)
+- [Obtenir de l’aide](#collaborate-with-microsoft-defender-experts)
 
 ## <a name="incident-response"></a>Réponse aux incidents
 
@@ -54,7 +54,7 @@ Pour chaque incident, utilisez votre flux de travail de réponse aux incidents p
 
 Si votre organisation utilise Microsoft 365 Defender, votre équipe chargée des opérations de sécurité reçoit une alerte dans le portail Microsoft 365 Defender chaque fois qu’une activité ou un artefact malveillant ou suspect est détecté. Étant donné le flux sans fin de menaces qui peuvent entrer, les équipes de sécurité sont souvent confrontées au défi de résoudre le volume élevé d’alertes. Heureusement, Microsoft 365 Defender inclut des fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent aider votre équipe chargée des opérations de sécurité à traiter les menaces plus efficacement et plus efficacement.
 
-Une fois l’enquête automatisée terminée, un verdict est rendu pour chaque élément de preuve d’un incident. Selon le verdict, les actions de correction sont identifiées. Dans certains cas, les actions de correction sont effectuées automatiquement ; dans d’autres cas, les actions de correction attendent l’approbation par le biais du centre d’action Microsoft 365 Defender. 
+Une fois l’enquête automatisée terminée, un verdict est rendu pour chaque élément de preuve d’un incident. Selon le verdict, les actions de correction sont identifiées. Dans certains cas, les actions de correction sont effectuées automatiquement ; dans d’autres cas, les actions de correction attendent l’approbation par le biais du centre d’action Microsoft 365 Defender.
 
 Pour plus d’informations, consultez [Examen automatisé et réponse dans Microsoft 365 Defender](m365d-autoir.md).
 
@@ -84,8 +84,8 @@ Chaque menace identifiée comprend un rapport d’analyste, une analyse complèt
 
 Pour plus d’informations, consultez [Analyse des menaces dans Microsoft 365 Defender](threat-analytics.md).
 
-## <a name="collaborate-with-microsoft-experts"></a>Collaborer avec des experts Microsoft
+## <a name="collaborate-with-microsoft-defender-experts"></a>Collaborer avec des experts Microsoft Defender
 
-Les notifications d’attaque de point de terminaison (précédemment appelées Spécialistes des menaces Microsoft - Notifications d’attaque ciblées) sont un service de chasse aux menaces managée. Une fois que vous avez présenté votre demande et que vous êtes accepté, vous recevrez des notifications d’attaque de point de terminaison de la part d’experts microsoft en matière de menaces, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation. Microsoft Defender Experts – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée et vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement supplémentaire.
+Les notifications d’attaque de point de terminaison (précédemment appelées Spécialistes des menaces Microsoft - Notifications d’attaque ciblées) sont un service de chasse aux menaces managée. Une fois que vous avez appliqué et accepté, vous recevrez des notifications d’attaque de point de terminaison de Microsoft Defender experts, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation. Microsoft Defender Experts – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée et vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement supplémentaire.
 
-Pour plus d’informations, consultez [Microsoft Defender Présentation des experts dans Microsoft 365](/microsoft-365/security/defender/microsoft-threat-experts).
+Pour plus d’informations, consultez [Microsoft Defender Présentation des experts dans Microsoft 365](../defender-endpoint/experts-on-demand.md).

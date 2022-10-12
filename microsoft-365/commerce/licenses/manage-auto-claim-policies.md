@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment créer et gérer des stratégies de revendication automatique qui attribuent automatiquement des licences aux utilisateurs pour certaines applications.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 13618b44262199d71bd719576df01fd298813c8e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 94bfcb3e9d7b210a6ca794e0e7fa88e0161de848
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163576"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534781"
 ---
 # <a name="manage-microsoft-teams-auto-claim-policies"></a>Gérer les stratégies de revendication automatique Microsoft Teams
 
@@ -36,7 +36,7 @@ Une stratégie de revendication automatique permet aux utilisateurs de réclamer
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur général, utilisateur ou licence pour créer et gérer des stratégies de revendication automatique. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur général pour créer et gérer des stratégies de revendication automatique. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Activer ou désactiver la fonctionnalité de stratégie de revendication automatique
 

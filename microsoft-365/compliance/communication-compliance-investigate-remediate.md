@@ -14,20 +14,23 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1dffcf448bf3273cc845aae269a29ab3653a5bea
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 21fadb41e5e63780ccd25f5089af9d39ec96016d
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728141"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533505"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
+
+>[!IMPORTANT]
+>Conformité des communications Microsoft Purview fournit les outils nécessaires pour aider les organisations à détecter les violations de conformité réglementaire (par exemple sec ou FINRA), telles que les informations sensibles ou confidentielles, le harcèlement ou la menace de langue, et le partage de contenu pour adultes. Créés avec la confidentialité par conception, les noms d’utilisateur sont pseudonymés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont choisis par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Une fois que vous avez configuré vos [stratégies de conformité des communications](/microsoft-365/compliance/communication-compliance-policies), vous commencerez à recevoir des alertes dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com) pour les problèmes de message qui correspondent à vos conditions de stratégie. Pour afficher et agir sur les alertes, les utilisateurs doivent disposer des autorisations suivantes :
 
@@ -35,6 +38,8 @@ Une fois que vous avez configuré vos [stratégies de conformité des communicat
 - Être affecté en tant que réviseur dans la stratégie associée à l’alerte
 
 Une fois que vous disposez des autorisations requises, suivez les instructions de flux de travail ici pour examiner et corriger les problèmes d’alerte.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="investigate-alerts"></a>Examiner des alertes
 
@@ -109,7 +114,7 @@ Après avoir examiné les principes de base du message, il est temps d’ouvrir 
 
 - **Pièces jointes** : cette option vous permet d’examiner les pièces jointes modernes qui correspondent aux conditions de stratégie. Le contenu des pièces jointes modernes est extrait sous forme de texte et peut être consulté dans le tableau de bord Des alertes en attente pour une stratégie. Pour plus d’informations, consultez la [référence des fonctionnalités de conformité des communications](/microsoft-365/compliance/communication-compliance-channels).
 - **Source** : cette vue est la vue de message standard couramment observée dans la plupart des plateformes de messagerie web. Les informations d’en-tête sont mises en forme dans le style normal et le corps du message prend en charge les fichiers graphiques imbeddés et le texte encapsulé dans le mot. Si la [reconnaissance optique de caractères (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) est activée pour la stratégie, les images contenant du texte imprimé ou manuscrit qui correspondent à la condition de stratégie sont considérées comme un élément enfant pour le message associé dans cette vue.
-- **Texte brut** : affichage texte qui affiche une vue de texte numérotée en ligne uniquement du message et inclut la mise en surbrillance des mots clés dans les messages et pièces jointes pour les termes de type d’informations sensibles, les termes identifiés par les classifieurs intégrés affectés à une stratégie ou pour les termes inclus dans un dictionnaire de mots clés dédié affecté à une stratégie. La mise en surbrillance des mots clés peut vous aider à vous diriger vers la zone d’intérêt pour les longs messages et pièces jointes. Dans certains cas, le texte mis en surbrillance peut se trouver uniquement dans les pièces jointes pour les messages correspondant aux conditions de stratégie. Les fichiers incorporés ne sont pas affichés et la numérotation de ligne dans cette vue est utile pour référencer des détails pertinents parmi plusieurs réviseurs.
+- **Texte brut** : affichage texte qui affiche une vue de texte numérotée en ligne uniquement du message et inclut la mise en surbrillance des mots clés dans les messages et pièces jointes pour les termes de type d’informations sensibles, les termes identifiés par les classifieurs intégrés affectés à une stratégie ou pour les termes inclus dans un dictionnaire de mots clés dédié affecté à une stratégie. La mise en surbrillance des mots clés, actuellement disponible uniquement en anglais, peut vous aider à vous diriger vers la zone d’intérêt pour les longs messages et pièces jointes. Dans certains cas, le texte mis en surbrillance peut se trouver uniquement dans les pièces jointes pour les messages correspondant aux conditions de stratégie. Les fichiers incorporés ne sont pas affichés et la numérotation de ligne dans cette vue est utile pour référencer des détails pertinents parmi plusieurs réviseurs.
 - **Conversation (préversion)** : disponible pour les messages de conversation Microsoft Teams, cette vue affiche jusqu’à cinq messages avant et après un message d’alerte pour aider les réviseurs à afficher l’activité dans le contexte conversationnel. Ce contexte permet aux réviseurs d’évaluer rapidement les messages et de prendre des décisions de résolution de messages plus éclairées. Les ajouts de messages en temps réel aux conversations sont affichés, y compris toutes les images incluses, emojis et autocollants disponibles dans Teams. Les pièces jointes d’image ou de fichier texte aux messages ne sont pas affichées. Les notifications sont automatiquement affichées pour les messages qui ont été modifiés ou pour les messages qui ont été supprimés de la fenêtre de conversation. Lorsqu’un message est résolu, les messages conversationnels associés ne sont pas conservés avec le message résolu. Les messages de conversation sont disponibles jusqu’à 60 jours après l’identification du message d’alerte.
 - **Historique des utilisateurs** : le mode historique des utilisateurs affiche toutes les autres alertes générées par une stratégie de conformité des communications pour l’utilisateur qui envoie le message.
 - **Notification détectée par le modèle** : de nombreuses actions de harcèlement et d’intimidation au fil du temps et impliquent la récurrence d’instances du même comportement par un utilisateur. La notification *détectée par le modèle* s’affiche dans les détails de l’alerte et attire l’attention sur l’alerte. La détection des modèles est effectuée par stratégie et évalue le comportement au cours des 30 derniers jours quand au moins deux messages sont envoyés au même destinataire par un expéditeur. Les enquêteurs et les réviseurs peuvent utiliser cette notification pour identifier le comportement répété afin d’évaluer l’alerte comme il convient.

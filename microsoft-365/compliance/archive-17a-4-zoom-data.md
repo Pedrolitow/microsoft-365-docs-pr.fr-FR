@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données zoom dans Microsoft 365
+description: Découvrez comment configurer et utiliser un connecteur DataParser Zoom 17a-4 pour importer et archiver des données zoom dans Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Découvrez comment configurer et utiliser un connecteur DataParser Zoom 17a-4 pour importer et archiver des données zoom dans Microsoft 365.
-ms.openlocfilehash: 916243c23dab015c1d26d5e736108774e627714c
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: a8147dfb801df0c0c98aa4ab3852698da7554a05
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67818828"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535837"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-data"></a>Configurer un connecteur pour archiver les données de zoom
 
 Utilisez Zoom [DataParser](https://www.17a-4.com/dataparser/) de 17a-4 LLC pour importer et archiver des données de la plateforme Zoom vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. DataParser inclut un connecteur Zoom configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Zoom DataParser convertit les données zoom au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
 
 Une fois les données zoom stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Zoom pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-zoom-data"></a>Vue d’ensemble de l’archivage des données de zoom
 
@@ -33,7 +38,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec la version 17a-4 pour configurer et configurer Zoom DataParser.
 
-2. Régulièrement, les éléments de zoom sont collectés par dataParser. DataParser convertit également le contenu d’un message au format de message électronique.
+2. Régulièrement, les éléments de zoom sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
 3. Le connecteur DataParser Zoom que vous créez dans le portail de conformité Microsoft Purview se connecte à DataParser et transfère les messages vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
@@ -51,13 +56,13 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 La première étape consiste à accéder à la page Connecteurs de données dans le portail de conformité et à créer un connecteur 17a-4 pour les données zoom.
 
-1. Accédez, <https://compliance.microsoft.com> puis cliquez sur **Data Connectors** > **Zoom DataParser**.
+1. Accédez à <https://compliance.microsoft.com> , puis sélectionnez **Data Connectors** > **Zoom DataParser**.
 
-2. Dans la page de description **du produit Zoom DataParser** , cliquez sur **Ajouter un connecteur**.
+2. Dans la page de description **du produit Zoom DataParser** , sélectionnez **Ajouter un connecteur**.
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**.
+4. Entrez un nom unique qui identifie le connecteur, puis sélectionnez **Suivant**.
 
 5. Connectez-vous à votre compte 17a-4 et suivez les étapes de l’Assistant De connexion Zoom DataParser.
 
@@ -73,11 +78,11 @@ Le connecteur Zoom DataParser mappe automatiquement les utilisateurs à leurs ad
 
 Après avoir créé un connecteur DataParser Zoom, vous pouvez afficher l’état du connecteur dans le portail de conformité.
 
-1. Accédez et <https://compliance.microsoft.com> cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Cliquez sur l’onglet **Connecteurs** , puis sélectionnez le connecteur DataParser Zoom que vous avez créé pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
+2. Sélectionnez l’onglet **Connecteurs** , puis sélectionnez le connecteur DataParser Zoom que vous avez créé pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
+3. Sous **État du connecteur avec source**, **sélectionnez** le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problèmes connus
 

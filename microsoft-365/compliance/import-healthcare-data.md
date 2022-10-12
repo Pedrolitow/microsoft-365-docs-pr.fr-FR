@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour importer des données d’audit de santé génériques
+description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (DSE) à partir de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données DSE dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,14 +13,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (DSE) à partir de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données DSE dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: c78d5c686bb8e3894363dd60818fb6ec011004fb
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: e3863d0d08c5881212e6765a9772fd1c9b19435b
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823010"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537377"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit DSE de santé (préversion)
 
@@ -38,6 +41,8 @@ La configuration d’un connecteur Healthcare se compose des tâches suivantes :
 - Vous pouvez également planifier l’exécution automatique du script pour importer les données d’audit.
 
 Si vous souhaitez participer à la préversion, contactez l’équipe à dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
@@ -83,23 +88,23 @@ Le tableau suivant répertorie les champs qui sont nécessaires pour activer les
 
 L’étape suivante consiste à créer un connecteur Healthcare dans le portail de conformité. Après avoir exécuté le script à l’étape 4, le fichier texte que vous avez créé à l’étape 2 est traité et envoyé (push) au point de terminaison d’API que vous avez configuré à l’étape 1. Dans cette étape, veillez à copier le JobId généré lorsque vous créez le connecteur. Vous allez utiliser JobId lorsque vous exécutez le script.
 
-1. Accédez, <https://compliance.microsoft.com> puis cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez à <https://compliance.microsoft.com> , puis sélectionnez **Connecteurs de données** dans le volet de navigation gauche.
 
-2. Sous l’onglet **Vue d’ensemble**, cliquez sur **Santé (préversion).**
+2. Sous l’onglet **Vue d’ensemble**, sélectionnez **Healthcare (préversion).**
 
-3. Dans la page **Santé (préversion),** cliquez sur **Ajouter un connecteur**.
+3. Dans la page **Santé (préversion),** **sélectionnez Ajouter un connecteur**.
 
 4. Acceptez les conditions d’utilisation.
 
-5. Dans la page **Informations d’identification d’authentification** , procédez comme suit, puis cliquez sur **Suivant** :
+5. Dans la page **Informations d’identification d’authentification** , procédez comme suit, puis sélectionnez **Suivant** :
 
     1. Tapez ou collez l’ID d’application Azure AD pour l’application Azure que vous avez créée à l’étape 1.
 
     2. Tapez un nom pour le connecteur de soins de santé.
 
-6. Dans la page méthode **de mappage de fichiers** , sélectionnez l’une des options suivantes, puis cliquez sur **Suivant**.
+6. Dans la page méthode **de mappage de fichiers** , sélectionnez l’une des options suivantes, puis sélectionnez **Suivant**.
 
-   - **Chargez un exemple de fichier**. Si vous sélectionnez cette option, cliquez sur **Charger l’exemple de fichier** pour charger le fichier que vous avez préparé à l’étape 2. Cette option vous permet de sélectionner rapidement les noms de colonnes dans votre fichier texte dans une liste déroulante pour mapper les colonnes au schéma requis pour le connecteur de soins de santé. 
+   - **Chargez un exemple de fichier**. Si vous sélectionnez cette option, **sélectionnez Charger l’exemple de fichier** pour charger le fichier que vous avez préparé à l’étape 2. Cette option vous permet de sélectionner rapidement les noms de colonnes dans votre fichier texte dans une liste déroulante pour mapper les colonnes au schéma requis pour le connecteur de soins de santé. 
 
     Ou
 
@@ -113,23 +118,23 @@ L’étape suivante consiste à créer un connecteur Healthcare dans le portail 
 
    - Pour chaque champ, tapez le nom de colonne à partir du fichier que vous avez préparé à l’étape 2 qui correspond au champ du connecteur de soins de santé.
 
-8. Dans la page **Révision** , passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+8. Dans la page **Révision** , passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
    Une page d’état s’affiche pour confirmer la création du connecteur. Cette page contient deux éléments importants dont vous avez besoin pour effectuer l’étape suivante afin d’exécuter l’exemple de script pour charger vos données d’audit DSE de santé.
 
     - **ID du travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez la copier à partir de cette page ou de la page de menu volant du connecteur.
 
-    - **Lien vers un exemple de script.** Cliquez sur le lien **ci-après** pour accéder au site GitHub pour accéder à l’exemple de script (le lien ouvre une nouvelle fenêtre). Laissez cette fenêtre ouverte pour pouvoir copier le script à l’étape 4. Vous pouvez également marquer la destination ou copier l’URL pour pouvoir y accéder à nouveau lorsque vous exécutez le script. Ce lien est également disponible sur la page de menu volant du connecteur.
+    - **Lien vers un exemple de script.** Sélectionnez le lien **ici** pour accéder au site GitHub pour accéder à l’exemple de script (le lien ouvre une nouvelle fenêtre). Laissez cette fenêtre ouverte pour pouvoir copier le script à l’étape 4. Vous pouvez également marquer la destination ou copier l’URL pour pouvoir y accéder à nouveau lorsque vous exécutez le script. Ce lien est également disponible sur la page de menu volant du connecteur.
 
-9. Cliquez sur **Terminé**.
+9. Sélectionnez **Terminé**.
 
    Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs** .
 
-10. Cliquez sur le connecteur Healthcare que vous venez de créer pour afficher la page de menu volant, qui contient des propriétés et d’autres informations sur le connecteur.
+10. Sélectionnez le connecteur Healthcare que vous venez de créer pour afficher la page de menu volant, qui contient des propriétés et d’autres informations sur le connecteur.
 
 Si vous ne l’avez pas déjà fait, vous pouvez copier les valeurs de **l’ID de Azure App** et de **l’ID de travail du connecteur**. Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page de menu volant (ou le télécharger à l’aide du lien à l’étape suivante).)
 
-Vous pouvez également cliquer sur **Modifier** pour modifier l’ID Azure App ou les noms d’en-tête de colonne que vous avez définis sur la page **de mappage de fichiers**.
+Vous pouvez également sélectionner **Modifier** pour modifier l’ID Azure App ou les noms d’en-tête de colonne que vous avez définis sur la page **de mappage de fichiers**.
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-healthcare-ehr-auditing-data"></a>Étape 4 : Exécuter l’exemple de script pour charger vos données d’audit de DSE de santé
 
@@ -140,7 +145,7 @@ La dernière étape de la configuration d’un connecteur Healthcare consiste à
 
 1. Accédez à la fenêtre que vous avez laissée ouverte à l’étape précédente pour accéder au site GitHub avec l’exemple de script. Vous pouvez également ouvrir le site avec signet ou utiliser l’URL que vous avez copiée. Vous pouvez également accéder au script [ici](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
-2. Cliquez sur le bouton **Brut** pour afficher le script en mode texte.
+2. Sélectionnez le bouton **Brut** pour afficher le script en mode texte.
 
 3. Copiez toutes les lignes de l’exemple de script, puis enregistrez-les dans un fichier texte.
 
@@ -182,11 +187,11 @@ Si le chargement réussit, le script affiche le message **De réussite** du char
 
 Après avoir créé le connecteur Healthcare et envoyé (push) vos données d’audit EHR, vous pouvez afficher le connecteur et charger l’état dans le portail de conformité. Si vous planifiez l’exécution automatique du script régulièrement, vous pouvez également afficher l’état actuel après la dernière exécution du script.
 
-1. Accédez et <https://compliance.microsoft.com> cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Cliquez sur l’onglet **Connecteurs** , puis sélectionnez le connecteur Healthcare pour afficher la page de menu volant. Cette page contient les propriétés et les informations sur le connecteur.
+2. Sélectionnez l’onglet **Connecteurs** , puis sélectionnez le connecteur Healthcare pour afficher la page de menu volant. Cette page contient les propriétés et les informations sur le connecteur.
 
-3. Sous **Dernière importation**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque exécution du script et le chargement des données du fichier texte dans le cloud Microsoft.
+3. Sous **Dernière importation**, **sélectionnez** le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque exécution du script et le chargement des données du fichier texte dans le cloud Microsoft.
 
     Le `RecordsSaved` champ indique le nombre de lignes dans le fichier texte chargé. Par exemple, si le fichier texte contient quatre lignes, la valeur des `RecordsSaved` champs est 4, si le script a correctement chargé toutes les lignes du fichier texte.
 
@@ -198,11 +203,11 @@ Pour vous assurer que les données d’audit les plus récentes de votre systèm
 
 Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
+1. Sur votre ordinateur local, sélectionnez le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
 
-2. Cliquez sur l’application **Du planificateur de tâches** pour l’ouvrir.
+2. Sélectionnez l’application **Du planificateur de tâches** pour l’ouvrir.
 
-3. Dans la section **Actions** , cliquez sur **Créer une tâche**.
+3. Dans la section **Actions** , sélectionnez **Créer une tâche**.
 
 4. Sous l’onglet **Général** , tapez un nom descriptif pour la tâche planifiée ; par exemple, **le script du connecteur Healthcare**. Vous pouvez également ajouter une description facultative.
 
@@ -212,34 +217,34 @@ Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour 
 
     2. Vérifiez que la case à cocher **Exécuter avec les privilèges les plus élevés** est cochée.
 
-6. Sélectionnez l’onglet Déclencheurs, cliquez sur **Nouveau**, puis effectuez les **opérations suivantes** :
+6. Sélectionnez l’onglet Déclencheurs, sélectionnez **Nouveau**, puis effectuez les **opérations suivantes** :
 
     1. Sous **Paramètres**, sélectionnez l’option **Quotidienne** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
 
     2. Sous **Paramètres avancés**, vérifiez que la case à cocher **Activé** est cochée.
 
-    3. Cliquez sur **OK**.
+    3. Sélectionnez **OK**.
 
-7. Sélectionnez l’onglet **Actions** , cliquez sur **Nouveau**, puis effectuez les opérations suivantes :
+7. Sélectionnez l’onglet **Actions** , sélectionnez **Nouveau**, puis effectuez les opérations suivantes :
 
    ![Paramètres d’action pour créer une tâche planifiée pour le script du connecteur de soins de santé.](../media/GenericHealthCareConnectorScheduleTask1.png)
 
     1. Dans la liste déroulante **Action** , vérifiez que **l’option Démarrer un programme** est sélectionnée.
 
-    2. Dans la zone **Programme/script** , cliquez sur **Parcourir, accédez** à l’emplacement suivant et sélectionnez-le pour que le chemin d’accès s’affiche dans la zone : C:.0.exe.
+    2. Dans la zone **Programme/script** , **sélectionnez Parcourir, accédez** à l’emplacement suivant et sélectionnez-le pour que le chemin d’accès s’affiche dans la zone : C:.0.exe.
 
     3. Dans la zone **Ajouter des arguments (facultatif),** collez la commande de script que vous avez exécutée à l’étape 4. Par exemple, `.\HealthcareConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
 
     4. Dans la zone **Démarrer (facultatif),** collez l’emplacement du dossier du script que vous avez exécuté à l’étape 4. Par exemple, C:\Healthcare\audit.
 
-    5. Cliquez sur **Ok** pour enregistrer les paramètres de la nouvelle action.
+    5. Sélectionnez **OK** pour enregistrer les paramètres de la nouvelle action.
 
-8. Dans la fenêtre **Créer une tâche** , cliquez sur **Ok** pour enregistrer la tâche planifiée. Vous pouvez être invité à entrer les informations d’identification de votre compte d’utilisateur.
+8. Dans la fenêtre **Créer une tâche** , sélectionnez **Ok** pour enregistrer la tâche planifiée. Vous pouvez être invité à entrer les informations d’identification de votre compte d’utilisateur.
 
    La nouvelle tâche s’affiche dans la bibliothèque du planificateur de tâches.
 
    ![La nouvelle tâche du script du connecteur de soins de santé s’affiche dans la bibliothèque du planificateur de tâches.](../media/HealthcareConnectorTaskSchedulerLibrary.png)
 
-   La dernière fois que le script s’est exécuté et la prochaine fois qu’il est planifié pour s’exécuter s’affiche. Vous pouvez double-cliquer sur la tâche pour la modifier.
+   La dernière fois que le script s’est exécuté et la prochaine fois qu’il est planifié pour s’exécuter s’affiche. Vous pouvez double-sélectionner la tâche pour la modifier.
 
    Vous pouvez également vérifier la dernière fois que le script s’est exécuté sur la page de menu volant du connecteur Healthcare correspondant dans le centre de conformité.

@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéographique et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fed86c6e974795ac251433d6b9bf9338426639e8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b1a9787887f34d89faf87dbe20984c39762f3b9f
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694422"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536893"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -93,7 +93,7 @@ Il n’est pas possible de déplacer des sites avec :
 - InfoPath Forms
 - Modèles d’IRM (Gestion des Droits relatifs à l’Information) appliqués
 
-Pour vous assurer que tous les emplacements géographiques sont compatibles, exécutez la cmdlet `Get-SPOGeoMoveCrossCompatibilityStatus`. Cela a pour effet d’afficher les emplacements géographiques et d’indiquer si leur environnement est compatible avec l’emplacement géographique cible.
+Pour vous assurer que tous les emplacements géographiques sont compatibles, exécutez la cmdlet `Get-SPOGeoMoveCrossCompatibilityStatus`. Cela a pour effet d’afficher les emplacements géographiques et d’indiquer si leur environnement est compatible avec l’emplacement géographique cible. Si un emplacement géographique est incompatible, cela signifie qu’une mise à jour est en cours à cet emplacement. Réessayez dans quelques jours.
 
 Pour vérifier si votre site peut être déplacé, utilisez la cmdlet `Start-SPOSiteContentMove` avec le paramètre `-ValidationOnly`. Par exemple :
 

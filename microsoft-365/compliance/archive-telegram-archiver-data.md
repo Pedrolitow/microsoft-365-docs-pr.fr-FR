@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données de communication Telegram dans Microsoft 365
+description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données de communication Telegram dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données de communication Telegram dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: fe6657c4e528db3ca574a364f410b9dc9a0bac07
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 8cb0a764d8026a49150509b754e83ed666067f98
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822218"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535097"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Configurer un connecteur pour archiver les données de communication Telegram
 
 Utilisez le connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des conversations, des pièces jointes, des fichiers et des messages et appels supprimés Telegram. Après avoir configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation et importe la communication mobile des employés à l’aide de l’archiveur Telegram vers les boîtes aux lettres dans Microsoft 365.
 
 Une fois que les données du connecteur d’archivage Telegram sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données de communication Telegram. Par exemple, vous pouvez effectuer une recherche dans la communication Telegram à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur Archiver Telegram à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur Telegram Archiver pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations et aux stratégies réglementaires de gouvernance d’entreprise.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-telegram-communications-data"></a>Vue d’ensemble de l’archivage des données de communication Telegram
 
@@ -57,13 +62,13 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer le connecteur Archiver Telegram dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour se connecter au site TeleMessage et transfère les données de communication Telegram vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez, <https://compliance.microsoft.com> puis cliquez sur **Connecteurs de données** > T **elegram Archiver**.
+1. Accédez à <https://compliance.microsoft.com> et sélectionnez **Connecteurs de données** > T **elegram Archiver**.
 
-2. Dans la page de description du produit **Telegram Archiver** , cliquez sur **Ajouter un connecteur**.
+2. Dans la page de description du produit **Archiveur Telegram** , sélectionnez **Ajouter un connecteur**.
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
+4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis sélectionnez **Suivant**.
 
     - **Nom d'utilisateur:** Votre nom d’utilisateur TeleMessage.
 
@@ -71,9 +76,9 @@ Une fois que vous avez rempli les conditions préalables décrites dans la secti
 
 5. Une fois le connecteur créé, vous pouvez fermer la fenêtre contextuelle et accéder à la page suivante.
 
-6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs. Pour activer le mappage personnalisé, chargez un fichier CSV qui contient les informations de mappage utilisateur, puis cliquez sur **Suivant**.
+6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs. Pour activer le mappage personnalisé, chargez un fichier CSV qui contient les informations de mappage utilisateur, puis sélectionnez **Suivant**.
 
-7. Passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+7. Passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
 8. Accédez à l’onglet Connecteurs de la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 

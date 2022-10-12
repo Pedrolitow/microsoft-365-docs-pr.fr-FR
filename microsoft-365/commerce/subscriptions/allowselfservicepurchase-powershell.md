@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’applet de commande PowerShell AllowSelfServicePurchase pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 4/7/2022
-ms.openlocfilehash: 8bc0771c259df759ecf900872db048b86a338443
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.date: 10/10/2022
+ms.openlocfilehash: 77e1fa8fe85861381c4eb5128148c08f0997bcfc
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163511"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533299"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 
@@ -35,9 +35,10 @@ Le module **MSCommerce** PowerShell est désormais disponible sur [PowerShell Ga
 
 Vous pouvez utiliser le module **MSCommerce** PowerShell pour :
 
-- Afficher l’état par défaut de la valeur du paramètre **AllowSelfServicePurchase** , qu’elle soit activée ou désactivée
-- Afficher la liste des produits applicables et déterminer si l’achat en libre-service est activé ou désactivé
+- Afficher l’état par défaut de la valeur du paramètre **AllowSelfServicePurchase** , qu’elle soit activée, désactivée ou autorise des essais sans mode de paiement
+- Afficher la liste des produits applicables et déterminer si l’achat en libre-service est activé, désactivé ou autorise des essais sans mode de paiement
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
+- Afficher ou modifier le paramètre des essais sans modes de paiement
 
 ## <a name="requirements"></a>Conditions requises
 
@@ -92,33 +93,44 @@ Pour afficher la liste de tous les produits d’achat en libre-service disponibl
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-Le tableau suivant répertorie les produits disponibles et leur **ProductId**.
+Le tableau suivant répertorie les produits disponibles et leur **ProductId**. Il indique également quels produits ont une version d’évaluation disponible et ne nécessitent pas de mode de paiement. Le cas échéant, tous les autres essais nécessitent un mode de paiement. Pour les produits dont la version d’évaluation sans mode de paiement est activée, vous pouvez activer la version d’évaluation, tout en conservant la possibilité d’acheter le produit désactivé. Pour obtenir des exemples de commandes, consultez Afficher ou définissez l’état de **AllowSelfServicePurchase**.
 
-| Produit | Productid |
-|-----------------------------|--------------|
-| Power Apps par utilisateur* | CFQ7TTC0LH2H |
-| Power Automate par utilisateur | CFQ7TTC0KP0N |
-| Power Automate RPA | CFQ7TTC0KXG6  |
-| Power BI Premium (autonome) | CFQ7TTC0KXG7  |
-| Power BI Pro | CFQ7TTC0L3PB |
-| Project (plan 1)* | CFQ7TTC0HDB1 |
-| Project (plan 3)* | CFQ7TTC0HDB0 |
-| Visio (plan 1)* | CFQ7TTC0HD33 |
-| Visio (plan 2)* | CFQ7TTC0HD32 |
-| Windows 365 Entreprise | CFQ7TTC0HHS9 |
-| Windows 365 Business | CFQ7TTC0J203 |
-| Windows 365 Affaires avec Windows Hybrid Benefit | CFQ7TTC0HX99 |
-| Microsoft 365 F3 | CFQ7TTC0LH05 |
-| Dynamics 365 Marketing | CFQ7TTC0LH3N |
-| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | 
-| Application supplémentaire Dynamics 365 Marketing | CFQ7TTC0LHVK |
-| Dynamics 365 Marketing - Application non prod supplémentaire | CFQ7TTC0LHWM |
+| Produit | Productid | La version d’évaluation sans mode de paiement est-elle activée ? |
+|-----------------------------|--------------|--------------|
+| Power Apps par utilisateur* | CFQ7TTC0LH2H | Non |
+| Power Automate par utilisateur | CFQ7TTC0KP0N | Non |
+| Power Automate RPA | CFQ7TTC0KXG6  | Non |
+| Power BI Premium (autonome) | CFQ7TTC0KXG7  | Non |
+| Power BI Pro | CFQ7TTC0L3PB | Non |
+| Project (plan 1)* | CFQ7TTC0HDB1 | Oui |
+| Project (plan 3)* | CFQ7TTC0HDB0 | Non |
+| Visio (plan 1)* | CFQ7TTC0HD33 | Non |
+| Visio (plan 2)* | CFQ7TTC0HD32 | Non |
+| Windows 365 Entreprise | CFQ7TTC0HHS9 | Non |
+| Windows 365 Business | CFQ7TTC0J203 | Non |
+| Windows 365 Affaires avec Windows Hybrid Benefit | CFQ7TTC0HX99 | Non |
+| Microsoft 365 F3 | CFQ7TTC0LH05 | Non |
+| Dynamics 365 Marketing | CFQ7TTC0LH3N | Non |
+| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | Non |
+| Application supplémentaire Dynamics 365 Marketing | CFQ7TTC0LHVK | Non |
+| Dynamics 365 Marketing - Application non prod supplémentaire | CFQ7TTC0LHWM | Non |
 
-*Ces ID ont changé. Si vous avez précédemment bloqué des produits à l’aide des anciens ID, ils sont automatiquement bloqués à l’aide des nouveaux ID. Aucun travail supplémentaire n’est nécessaire.
+*Ces ID ont changé. Si vous avez précédemment bloqué des produits à l’aide des anciens ID, ils sont automatiquement bloqués à l’aide des nouveaux ID. Aucun autre travail n’est requis.
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Afficher ou définir l’état de AllowSelfServicePurchase
 
-Une fois que vous avez affiché la liste des produits disponibles pour l’achat en libre-service, vous pouvez afficher ou modifier le paramètre d’un produit spécifique.
+Vous pouvez définir le paramètre **Value** pour **AllowSelfServicePurchase** afin d’autoriser ou d’empêcher les utilisateurs d’effectuer un achat en libre-service. Vous pouvez également utiliser la valeur **OnlyTrialsWithoutPaymentMethod** pour permettre aux utilisateurs d’essayer des produits qui n’ont pas d’essais requis de paiement. Reportez-vous à la liste des produits ci-dessus pour voir quels produits ces essais sont activés. Les utilisateurs ne peuvent acheter le produit qu’une fois l’essai terminé si **AllowSelfServicePurchase** est activé.
+
+> [!NOTE]
+> La modification de la valeur de **AllowSelfServicePurchase** ou **OnlyTrialsWithoutPaymentMethod** affecte uniquement les essais ou les achats effectués pour le produit spécifié à partir de ce point. Les essais ou achats existants pour le produit spécifié ne sont pas affectés.
+
+Le tableau suivant décrit les paramètres du paramètre **Value** .
+
+| **Paramètre** | **Impact** |
+|---|---|
+| Activé | Les utilisateurs peuvent effectuer des achats en libre-service et acquérir des essais pour le produit. |
+| OnlyTrialsWithoutPaymentMethod | Les utilisateurs ne peuvent pas effectuer d’achats en libre-service, mais peuvent acquérir des essais gratuits pour les produits qui ne nécessitent pas qu’ils ajoutent un mode de paiement. Une fois la version d’évaluation expirée, un utilisateur ne peut pas acheter la version payante du produit. |
+| Désactivé | Les utilisateurs ne peuvent pas effectuer d’achats en libre-service ou acquérir des essais pour le produit. |
 
 Pour obtenir le paramètre de stratégie pour un produit spécifique, exécutez la commande suivante :
 
@@ -129,13 +141,19 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TT
 Pour activer le paramètre de stratégie pour un produit spécifique, exécutez la commande suivante :
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Enabled"
 ```
 
 Pour désactiver le paramètre de stratégie pour un produit spécifique, exécutez la commande suivante :
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Disabled"
+```
+
+Pour permettre aux utilisateurs d’essayer un produit spécifique sans mode de paiement, exécutez la commande suivante :
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Exemple de script pour désactiver AllowSelfServicePurchase
@@ -146,14 +164,14 @@ L’exemple suivant vous guide tout au long de l’importation du module **MSCom
 Import-Module -Name MSCommerce
 Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate per user'}
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Value "Disabled"
 ```
 
 S’il existe plusieurs valeurs pour le produit, vous pouvez exécuter la commande individuellement pour chaque valeur, comme indiqué dans l’exemple suivant :
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
 ```
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
@@ -164,14 +182,14 @@ Le message d’erreur suivant s’affiche :
 
 > HandleError : Échec de la récupération de la stratégie avec PolicyId « AllowSelfServicePurchase », ErrorMessage : la connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’un envoi.
 
-Cela peut être dû à une version antérieure de TLS (Transport Layer Security). Pour connecter ce service, vous devez utiliser TLS 1.2 ou version ultérieure
+Cela peut être dû à une version antérieure de TLS (Transport Layer Security). Lorsque vous vous connectez à ce service, vous devez utiliser TLS 1.2 ou version ultérieure
 
 ### <a name="solution"></a>Solution
 
 Effectuez une mise à niveau vers TLS 1.2. La syntaxe suivante met à jour le protocole de sécurité ServicePointManager pour autoriser TLS1.2 :
 
 ```powershell
- [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 ```
 
 Pour en savoir plus, consultez [Comment activer TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
@@ -189,6 +207,5 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>Contenu associé
 
-[Gérer les achats en libre-service (Administration)](manage-self-service-purchases-admins.md) (article)
-
+[Gérer les achats en libre-service (Administration)](manage-self-service-purchases-admins.md) (article)\
 [FAQ sur l’achat en libre-service](self-service-purchase-faq.yml) (article)

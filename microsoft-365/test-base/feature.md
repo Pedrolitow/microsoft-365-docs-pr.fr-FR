@@ -14,42 +14,38 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 02693d1dc9637b97d6d567a6bc362eaef24adc5d
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: bd681f6dceec9182d3fbe80e6bb3beeae510c65a
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315497"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68540002"
 ---
 # <a name="windows-feature-update-validation"></a>Validation de la mise à jour des fonctionnalités Windows
 
-Avez-vous besoin d’informations sur les performances de vos applications avec la prochaine version de Windows 10 ou de Windows 11 , sans avoir à gérer un environnement pour valider les nouvelles fonctionnalités de Windows ? 
+Avez-vous besoin d’informations sur la façon dont vos applications fonctionneront avec les dernières fonctionnalités de Windows , avant qu’elles ne soient disponibles sur le marché et sans que vous mainteniez un environnement ? 
 
-Voulez-vous exécuter vos tests de validation sur les builds du programme Windows Insider dans notre environnement Azure ?
+Voulez-vous exécuter vos tests de validation sur les builds du programme Windows Insider dans notre environnement Azure ? 
 
-**La validation des mises à jour** de fonctionnalités sur la base de test pour M365 peut vous aider à atteindre tous ces objectifs et bien plus encore !
+**La validation des mises à jour** de fonctionnalités sur la base de test pour Microsoft 365 peut vous aider à atteindre tous ces objectifs et bien plus encore ! 
 
-Consultez le plan pas à pas ci-dessous pour savoir comment accéder à cette nouvelle fonctionnalité dans la base de test pour le service M365.
+Consultez le plan détaillé ci-dessous pour savoir comment accéder à cette nouvelle fonctionnalité dans la base de test pour le service Microsoft 365. 
 
-Pour commencer ```Feature update validation``` à utiliser la base de test pour M365, chargez vos applications (et les fichiers associés) via le portail d’intégration en libre-service. 
+Pour commencer à valider la mise à jour des fonctionnalités dans La base de test pour Microsoft 365, chargez vos applications (et les fichiers associés) via le portail d’intégration en libre-service. 
 
-Vous trouverez ci-dessous les étapes à suivre lorsque vous renseignez les **détails du test :**
+Vous trouverez ci-dessous les étapes à suivre lorsque vous remplissez la **matrice de test** : 
 
-1. Sélectionnez **Mise à jour des fonctionnalités** comme type de mise à jour du système d’exploitation :
+Pour configurer les mises à jour des fonctionnalités, vous devez spécifier le produit cible et son canal d’aperçu dans la liste déroulante « Insider Channel ». 
 
-![Type de système d’exploitation de validation de mise à jour des fonctionnalités.](Media/Feature-update-validation-01.png)
+![Type de système d’exploitation de validation de mise à jour des fonctionnalités.](Media/windowsfeatureupdatevalidation01-featureupdate.png)
 
-2. Choisissez le canal Windows Insider sur lequel vous souhaitez que votre application soit validée.  
+Votre sélection inscrit votre application pour les tests automatiques sur les dernières mises à jour de fonctionnalités de votre canal de produit sélectionné et toutes les nouvelles mises à jour futures dans les dernières versions Windows Insider Preview de votre sélection. 
 
-![Validation de la mise à jour des fonctionnalités. Choix du canal bêta Insider.](Media/Feature-update-validation-02.png)
+Vous pouvez également définir votre système d’exploitation actuel dans « Base de référence du système d’exploitation pour Insight ». Nous vous fournirons plus d’insights de test en effectuant une analyse de régression de votre environnement de système d’exploitation en l’état et du système d’exploitation cible le plus récent. 
 
-3. Sélectionnez une version sur le marché de Windows 10 ou Windows 11 comme base de référence pour votre test (et les insights résultants!) et fournissez les autres détails nécessaires pour intégrer votre package avec succès.
+![Validation de la mise à jour des fonctionnalités. Choix du canal bêta Insider.](Media/windowsfeatureupdatevalidation02-osbaseline.png) 
 
-![Validation des mises à jour de fonctionnalités avec les versions publiées de Windows 10 et de Windows 11.](Media/Feature-update-validation-03.png)
-
-4. Pour afficher les résultats de la validation de votre application par rapport aux mises à jour de fonctionnalités Windows 10 préversion, visitez le ```Feature Updates Test Results```site .
-
-![La validation des mises à jour de fonctionnalités vous permet d’examiner rapidement les résultats.](Media/Feature-update-validation-04.png)
+Pour en savoir plus sur les builds Windows Insider Preview, [reportez-vous à Flight Hub - Programme Windows Insider | Microsoft Docs](/../../../../MicrosoftDocs/windows-insider/tree/public/wip/flight-hub/index.md).
 
 
 ## <a name="next-steps"></a>Prochaines étapes

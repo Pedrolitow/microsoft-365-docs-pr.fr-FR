@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 7cec39a88c5b589959a8cd5b9fd3103f465ca60c
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: b2bb536df28f2b63114aa604241688458428760e
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68481693"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68539980"
 ---
 # <a name="uploading-a-pre-built-zip-package"></a>Chargement d’un package zip prédéfagé
 
@@ -126,30 +126,46 @@ Dans le menu de gauche sous **Catalogue de packages**, sélectionnez le **nouvea
 
 4. Une fois toutes les informations requises renseignées, vous pouvez passer à l’étape 4 en sélectionnant le bouton Suivant en bas.
 
-### <a name="step-4-test-matrix"></a>Étape 4. Matrice de test
+### <a name="step-4-set-test-matrix"></a>Étape 4. Définir la matrice de test
 
-1. Sous l’onglet Matrice de test, sélectionnez le **type de mise à jour du système d’exploitation**. Deux types de mises à jour du système d’exploitation sont pris en charge.
-
-   - Les **mises à jour de sécurité** permettent de tester votre package par rapport aux évolutions incrémentielles des mises à jour de sécurité mensuelles préversion de Windows.
-   - Les **mises à jour des fonctionnalités** permettent de tester votre package sur les builds de mises à jour de fonctionnalités bi-annuelles préversion windows du programme Windows Insider.
-
-2. Sélectionnez la ou les versions du système d’exploitation pour les tests de mise à jour de sécurité.
-
-   Si **les mises à jour de sécurité** sont sélectionnées dans le type de mise à jour du système d’exploitation, vous devez sélectionner la ou les versions du système d’exploitation de Windows sur laquelle votre package sera testé.
-
-   > [!NOTE]
-   > Si vous sélectionnez de tester votre package sur les systèmes d’exploitation serveur et client, assurez-vous que le package est compatible et qu’il peut s’exécuter sur les deux systèmes d’exploitation.
-
-3. Sélectionnez les options pour les tests de mise à jour des fonctionnalités.
-
-   - Si **les mises à jour des fonctionnalités** sont sélectionnées dans le type de mise à jour du système d’exploitation, vous devez terminer les options suivantes.
-   - Pour **le canal Insider**, sélectionnez le canal du programme Windows Insider comme build sur laquelle vos packages doivent être testés. Nous utilisons actuellement des builds en version d’évaluation dans le **canal bêta Insider**.
-   - Pour la **base de référence du système d’exploitation pour Insight**, sélectionnez la version du système d’exploitation Windows à utiliser comme base de référence pour comparer vos résultats de test.
+L’onglet Matrice de test vous permet d’indiquer le programme de mise à jour Windows spécifique ou le produit Windows sur lequel vous souhaitez peut-être exécuter votre test.
 
    > [!div class="mx-imgBorder"]
-   > [![](Media/uploadingzip11-test-matrix.png) Matrice de test ](Media/uploadingzip11-test-matrix.png#lightbox)
+   > ![Définir un nouveau package de matrice de test](Media/settestmatrix01-newpackage.png)
 
-4. Une fois toutes les informations requises renseignées, vous pouvez passer à l’étape 5 (dernière étape) en sélectionnant le bouton Suivant en bas.
+1. Choisir le **type de mise à jour du système d’exploitation**
+   - La base de tests fournit des tests planifiés pour vous assurer que les performances de vos applications ne seront pas interrompues par les dernières mises à jour windows. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir la matrice de test choisir osupdate](Media/settestmatrix02-chooseosupdate.png)
+
+   - Il existe 2 options disponibles :
+   
+     - Les **mises à jour de sécurité** permettent de tester votre package par rapport aux évolutions incrémentielles des mises à jour de sécurité mensuelles Windows.
+     - Les **mises à jour des fonctionnalités** permettent de tester votre package par rapport aux nouvelles fonctionnalités des dernières versions Windows Insider Preview du programme Windows Insider.
+
+2. Configurer la **mise à jour de sécurité** Pour configurer les mises à jour de sécurité, vous devez spécifier le ou les produits Windows que vous souhaitez tester dans la liste déroulante « Versions de système d’exploitation à tester ».
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir la matrice de test pour configurer securityupdate](Media/settestmatrix03-configuresecurityupdate.png)
+
+   - Votre sélection inscrit votre application pour les séries de tests automatiques sur la version B des mises à jour de qualité mensuelles Windows des produits sélectionnés.
+     - Pour les clients disposant d’un accès par défaut sur la base de test, leurs applications sont validées par rapport à la version finale des mises à jour de sécurité de la version B, à partir de Patch Tuesday.
+     - Pour les clients disposant d’un accès complet sur la base de test, leurs applications sont validées par rapport aux versions préliminaires des mises à jour de sécurité de la version B, à compter de 3 semaines avant le correctif mardi. Cela permet aux clients d’accès complet de prendre des mesures proactives pour résoudre les problèmes détectés lors des tests avant la publication finale du correctif mardi.  
+       (Comment devenir un client d’accès complet ? Reportez-vous à [la demande de modification du niveau d’accès | Microsoft Docs](accesslevel.md))
+
+3. Configurer **la mise à jour des fonctionnalités**
+   - Pour configurer les mises à jour des fonctionnalités, vous devez spécifier le produit cible et son canal d’aperçu dans la liste déroulante « Insider Channel ».
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir la matrice de test pour configurer featureupdate](Media/settestmatrix04-configurefeatureupdate.png)
+
+   - Votre sélection inscrit votre application pour les tests automatiques sur les dernières mises à jour de fonctionnalités de votre canal de produit sélectionné et toutes les nouvelles mises à jour futures dans les dernières versions Windows Insider Preview de votre sélection.
+
+   - Vous pouvez également définir votre système d’exploitation actuel dans « Base de référence du système d’exploitation pour Insight ». Nous vous fournirons plus d’insights de test en effectuant une analyse de régression de votre environnement de système d’exploitation en l’état et du système d’exploitation cible le plus récent.
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir le système d’exploitation de jeu de matrices de test](Media/settestmatrix05-setos.png)  
 
 ### <a name="step-5-review--publish"></a>Étape 5. Vérifier + publier
 

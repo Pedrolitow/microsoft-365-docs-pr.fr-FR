@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base vous aident à sécuriser et à gérer les appareils mobiles avec des stratégies qui contrôlent l’accès à la messagerie et aux documents Microsoft 365 de l’organisation.
-ms.openlocfilehash: e0a59651974c22428738e38ed42ece0beda2936f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 44934f10173759c971bb1bc5052624ac5ad00b69
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166898"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534937"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
@@ -155,7 +155,7 @@ L’option suivante peut empêcher les utilisateurs d’accéder à leur message
 |---|---|---|---|
 |Bloquer les vidéoconférences sur l’appareil<sup>1</sup>|Oui|Non|Non|
 |Bloquer l’accès au magasin d’applications<sup>1</sup>|Oui|Non|Oui|
-|Exiger un mot de passe en cas d'accès au magasin d'applications|Non|Oui|Oui|
+|Exiger un mot de passe en cas d'accès au magasin d'applications|Oui|Non|Non|
 
 <sup>1</sup> Pour fonctionner, ces paramètres nécessitent des appareils iOS supervisés. 
 

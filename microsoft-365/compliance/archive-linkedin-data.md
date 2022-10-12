@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver des données LinkedIn
+description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page d’entreprise LinkedIn vers Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,21 +13,25 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page d’entreprise LinkedIn vers Microsoft 365.
-ms.openlocfilehash: 890ae9e618728cded8035dc69afe23b95a33d526
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 260409689360bf2bc24c28b619dca6fd55833288
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822262"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534033"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
 Utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données à partir de pages LinkedIn Company. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte pour la page LinkedIn Company spécifique une fois toutes les 24 heures. Le connecteur convertit les messages publiés dans la page Entreprise en message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 
 Une fois les données de page LinkedIn Company stockées dans une boîte aux lettres, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation du contentieux, la recherche de contenu, l’archivage In-Place, l’audit et les stratégies de rétention Microsoft 365 aux données LinkedIn. Par exemple, vous pouvez rechercher ces éléments à l’aide de la recherche de contenu ou associer la boîte aux lettres de stockage à un consignateur dans un cas Microsoft Purview eDiscovery (Premium). La création d’un connecteur pour importer et archiver des données LinkedIn dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
@@ -38,29 +43,29 @@ Une fois les données de page LinkedIn Company stockées dans une boîte aux let
 
 ## <a name="create-a-linkedin-connector"></a>Créer un connecteur LinkedIn
 
-1. Accédez aux <https://compliance.microsoft.com>**pages LinkedIn Company** **des connecteurs de données**, puis cliquez dessus > .
+1. Accédez aux <https://compliance.microsoft.com>**pages LinkedIn Company** **des connecteurs** >  de données, puis sélectionnez-les.
 
-2. Dans la page produit **des pages d’entreprise LinkedIn** , cliquez sur **Ajouter un connecteur**.
+2. Dans la page produit **des pages d’entreprise LinkedIn** , sélectionnez **Ajouter un connecteur**.
 
 3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Dans la page **Se connecter avec LinkedIn** , cliquez sur **Se connecter avec LinkedIn**.
+4. Dans la page **Se connecter avec LinkedIn** , sélectionnez **Se connecter avec LinkedIn**.
 
    La page de connexion LinkedIn s’affiche.
 
    ![Page de connexion LinkedIn.](../media/LinkedInSigninPage.png)
 
-5. Dans la page de connexion LinkedIn, entrez l’adresse e-mail (ou le numéro de téléphone) et le mot de passe du compte LinkedIn associé à la page d’entreprise que vous souhaitez archiver, puis cliquez sur **Se connecter**.
+5. Dans la page de connexion LinkedIn, entrez l’adresse e-mail (ou le numéro de téléphone) et le mot de passe du compte LinkedIn associé à la page d’entreprise que vous souhaitez archiver, puis sélectionnez **Se connecter**.
 
    Une page d’Assistant s’affiche avec la liste de toutes les pages d’entreprise LinkedIn associées au compte auquel vous vous êtes connecté. Un connecteur ne peut être configuré que pour une seule page d’entreprise. Si votre organisation a plusieurs pages d’entreprise LinkedIn, vous devez créer un connecteur pour chacune d’elles.
 
    ![Une page contenant la liste des pages d’entreprise LinkedIn s’affiche.](../media/LinkedInSelectCompanyPage.png)
 
-6. Sélectionnez la page d’entreprise à partir de laquelle vous souhaitez archiver les éléments, puis cliquez sur **Suivant**.
+6. Sélectionnez la page d’entreprise à partir de laquelle vous souhaitez archiver les éléments, puis sélectionnez **Suivant**.
 
-7. Dans la page **Choisir l’emplacement de stockage** , cliquez dans la zone, sélectionnez l’adresse e-mail d’une boîte aux lettres Microsoft 365 vers laquelle les éléments LinkedIn seront importés, puis cliquez sur **Suivant**. Les éléments sont importés dans le dossier de boîte de réception de cette boîte aux lettres. La boîte aux lettres utilisée doit avoir une licence Exchange Online Plan 1 ou Plan 2.
+7. Dans la page **Choisir l’emplacement de stockage** , sélectionnez dans la zone, sélectionnez l’adresse e-mail d’une boîte aux lettres Microsoft 365 vers laquelle les éléments LinkedIn seront importés, puis sélectionnez **Suivant**. Les éléments sont importés dans le dossier de boîte de réception de cette boîte aux lettres. La boîte aux lettres utilisée doit avoir une licence Exchange Online Plan 1 ou Plan 2.
 
-8. Cliquez sur **Suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer la configuration du connecteur.
+8. Sélectionnez **Suivant** pour passer en revue les paramètres du connecteur, puis **sélectionnez Terminer** pour terminer la configuration du connecteur.
 
 Après avoir créé le connecteur, vous pouvez revenir à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur (sélectionnez **Actualiser** si nécessaire pour mettre à jour la liste des connecteurs). La valeur de la colonne **État** est **En attente de démarrage**. Le démarrage du processus d’importation initial prend jusqu’à 24 heures. Après la première exécution et l’importation des éléments LinkedIn par le connecteur, le connecteur s’exécute toutes les 24 heures et importe tous les nouveaux éléments créés sur la page d’entreprise LinkedIn au cours des 24 heures précédentes.
 

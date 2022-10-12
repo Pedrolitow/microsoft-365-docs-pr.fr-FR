@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données mobiles Android
+description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des SMS, MMS et appels vocaux à partir de téléphones mobiles Android. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des SMS, MMS et appels vocaux à partir de téléphones mobiles Android. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 2b4bf66e38b2a3024774643dc22ab6a2eb30d419
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 89dc10f966d829bc03675cf627fe8166bf3c2df5
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826860"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535727"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Configurer un connecteur pour archiver les données mobiles Android
 
 Utilisez un connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des SMS, MMS, appels vocaux et journaux d’appels à partir de téléphones mobiles Android. Après avoir configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation une fois par jour et importe la communication mobile des employés à l’aide de TeleMessage Android Archiver vers des boîtes aux lettres dans Microsoft 365.
 
 Une fois que les données des téléphones mobiles Android sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données d’archiveur Android. Par exemple, vous pouvez effectuer une recherche dans la communication mobile Android Archiver à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant les données du connecteur Android Archiver à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur Android Archiver pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-android-mobile-data"></a>Vue d’ensemble de l’archivage des données mobiles Android
 
@@ -57,23 +62,23 @@ Certaines des étapes d’implémentation requises pour archiver les données de
 
 La dernière étape consiste à créer un connecteur Archiver Android dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour se connecter au site TeleMessage et transférer la communication Android vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez aux [https://compliance.microsoft.com](https://compliance.microsoft.com) connecteurs de données **Android Archiver** et cliquez **dessus** > .
+1. Accédez à **l’archiveur**[https://compliance.microsoft.com](https://compliance.microsoft.com) Android des **connecteurs** >  de données et sélectionnez-le.
 
-2. Dans la page de description du produit **Android Archiver** , cliquez sur **Ajouter un connecteur**.
+2. Dans la page de description du produit **Android Archiver** , sélectionnez **Ajouter un connecteur**.
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis cliquez sur **Suivant**.
+4. Dans la page **Connexion à TeleMessage** , sous l’étape 3, entrez les informations requises dans les zones suivantes, puis sélectionnez **Suivant**.
 
    - **Nom d'utilisateur:** Votre nom d’utilisateur TeleMessage.
 
    - **Mot de passe:** Votre mot de passe TeleMessage.
 
-5. Une fois le connecteur créé, fermez la fenêtre contextuelle, puis cliquez sur **Suivant**.
+5. Une fois le connecteur créé, fermez la fenêtre contextuelle et sélectionnez **Suivant**.
 
-6. Dans la page **De mappage d’utilisateurs** , activez le mappage automatique des utilisateurs, puis cliquez sur **Suivant**. Si vous avez besoin d’un mappage personnalisé, chargez un fichier CSV, puis cliquez sur **Suivant**.
+6. Dans la page **Mappage d’utilisateurs** , activez le mappage automatique des utilisateurs et sélectionnez **Suivant**. Si vous avez besoin d’un mappage personnalisé, chargez un fichier CSV, puis sélectionnez **Suivant**.
 
-7. Passez en revue vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+7. Passez en revue vos paramètres, puis sélectionnez **Terminer** pour créer le connecteur.
 
 8. Accédez à l’onglet Connecteurs de la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 

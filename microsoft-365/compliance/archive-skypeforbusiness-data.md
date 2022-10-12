@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données Skype Entreprise dans Microsoft 365
+description: Découvrez comment configurer et utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données de Skype Entreprise vers Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Découvrez comment configurer et utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données de Skype Entreprise vers Microsoft 365.
-ms.openlocfilehash: 943f13179e5943864ae558177f5bf3fedb693d4c
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: b1b82ec14e979598967fe5393c9acbce2d99e354
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67821492"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535177"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configurer un connecteur pour archiver les données Skype Entreprise
 
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la plateforme Skype Entreprise vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [Skype Entreprise](https://www.veritas.com/en/au/insights/merge1/skype-for-business) configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les messages entre les utilisateurs, les conversations persistantes et les messages de conférence de Skype Entreprise au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
 Une fois Skype Entreprise données stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Skype Entreprise pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-skype-for-business-data"></a>Vue d’ensemble de l’archivage Skype Entreprise données
 
@@ -51,13 +56,13 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 La première étape consiste à accéder à la page **Connecteurs de données** dans le portail de conformité et à créer un connecteur pour Skype Entreprise données.
 
-1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données et cliquez dessus** >  **Skype Entreprise**.
+1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données** **et sélectionnez-les** >  Skype Entreprise.
 
-2. Dans la page **Skype Entreprise** description du produit, cliquez sur **Ajouter un connecteur**.
+2. Dans la **page Skype Entreprise** description du produit, sélectionnez **Ajouter un connecteur**.
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**.
+4. Entrez un nom unique qui identifie le connecteur, puis sélectionnez **Suivant**.
 
 5. Connectez-vous à votre compte Merge1 pour configurer le connecteur.
 
@@ -65,7 +70,7 @@ La première étape consiste à accéder à la page **Connecteurs de données** 
 
 La deuxième étape consiste à configurer le connecteur Skype Entreprise sur le site Veritas Merge1. Pour plus d’informations sur la configuration du connecteur Skype Entreprise, consultez le [Guide d’utilisation des connecteurs tiers Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Skype%20for%20Business%20%20User%20Guide.pdf).
 
-Une fois que vous avez cliqué sur **Enregistrer & Terminer**, la page De **mappage utilisateur** de l’Assistant Connecteur dans le portail de conformité s’affiche.
+Une fois que vous avez sélectionné **Enregistrer & Terminer**, la page de **mappage utilisateur** de l’Assistant Connecteur dans le portail de conformité s’affiche.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : Mapper les utilisateurs et terminer la configuration du connecteur
 
@@ -73,17 +78,17 @@ Pour mapper les utilisateurs et terminer la configuration du connecteur dans le 
 
 1. Dans la page **Carte Skype Entreprise utilisateurs vers les utilisateurs Microsoft 365**, activez le mappage automatique des utilisateurs. Les éléments Skype Entreprise incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
-2. Cliquez sur **Suivant**, passez en revue vos paramètres, puis accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
+2. Sélectionnez **Suivant**, passez en revue vos paramètres, puis accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 
 ## <a name="step-4-monitor-the-skype-for-business-connector"></a>Étape 4 : Surveiller le connecteur Skype Entreprise
 
 Après avoir créé le connecteur Skype Entreprise, vous pouvez afficher l’état du connecteur dans le portail de conformité.
 
-1. Accédez et <https://compliance.microsoft.com/> cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux <https://compliance.microsoft.com/> **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Cliquez sur l’onglet **Connecteurs**, puis sélectionnez le **connecteur Skype Entreprise** pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
+2. Sélectionnez l’onglet **Connecteurs**, puis sélectionnez le **connecteur Skype Entreprise** pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
+3. Sous **État du connecteur avec source**, **sélectionnez** le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problèmes connus
 
