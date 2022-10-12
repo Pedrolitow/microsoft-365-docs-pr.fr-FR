@@ -1,5 +1,5 @@
 ---
-title: Créer un modèle sur un site SharePoint local avec Microsoft SharePoint Syntex
+title: Créer un modèle sur un site SharePoint local avec Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,19 +12,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment créer un modèle local sur un site SharePoint local avec SharePoint Syntex.
-ms.openlocfilehash: 6a3d9098ef8f61d2ffe40c2871313ef1b2e2e0f7
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+description: Découvrez comment créer un modèle local sur un site SharePoint local avec Microsoft Syntex.
+ms.openlocfilehash: 812fc68559223f2bf801fe7d1f8d2ef5b7d03e23
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560502"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547552"
 ---
-# <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-sharepoint-syntex"></a>Créer un modèle sur un site SharePoint local avec Microsoft SharePoint Syntex
+# <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-syntex"></a>Créer un modèle sur un site SharePoint local avec Microsoft Syntex
 
-SharePoint Syntex offre désormais la possibilité de créer et d’entraîner des modèles localement sur votre propre site SharePoint. Ces modèles peuvent être utilisés uniquement sur le site où ils sont créés. 
+Microsoft Syntex offre désormais la possibilité de créer et d’entraîner des modèles localement sur votre propre site SharePoint. Ces modèles peuvent être utilisés uniquement sur le site où ils sont créés. 
 
-En activant la classification et l’extraction de documents sur votre site SharePoint, SharePoint Syntex vous permet de classifier des fichiers dans des bibliothèques de documents, d’extraire des informations à partir de nouveaux fichiers et d’automatiser les activités en fonction des informations extraites.
+En activant la classification et l’extraction de documents sur votre site SharePoint, Syntex vous permet de classifier des fichiers dans des bibliothèques de documents, d’extraire des informations à partir de nouveaux fichiers et d’automatiser les activités en fonction des informations extraites.
 
 Lorsque vous activez la création de modèle local, les listes et bibliothèques suivantes sont ajoutées à votre site :
 
@@ -41,7 +41,7 @@ Cette fonctionnalité est disponible uniquement pour la création de [modèles d
 
     ![Capture d’écran d’une bibliothèque de documents SharePoint avec l’option Classifier et extraire mise en évidence.](../media/content-understanding/local-model-classify-and-extract-option.png) 
 
-2. La première fois que vous utilisez cette fonctionnalité, vous activez SharePoint Syntex sur votre site. Le message suivant s’affiche.
+2. La première fois que vous utilisez cette fonctionnalité, vous activez Syntex sur votre site. Le message suivant s’affiche.
 
     ![Capture d’écran de la page Activer la classification et l’extraction de documents.](../media/content-understanding/local-model-first-run-activate-message.png) 
 
