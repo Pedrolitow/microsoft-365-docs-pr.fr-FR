@@ -13,17 +13,19 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les emplacements de protection contre la perte de données de point de terminaison.
-ms.openlocfilehash: eef4e62f013c95788d723a250b5d8b833bf574b8
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: f8e74219a796b46f681caceefdb532e1678f0a74
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497836"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537003"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -37,6 +39,8 @@ Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et 
 >- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 >- [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -54,23 +58,23 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 3. Dans le cadre de ce scénario, sélectionnez **Confidentialité**, **Données d’informations d’identification personnelles (PII) pour les États-Unis** puis sélectionnez **Suivant**.
 
-4. Désactivez le champ **État** pour tous les emplacements, à l’exception de **Appareils**. Sélectionnez **Suivant**.
+4. Toggle the **Status** field to off for all locations except **Devices**. Choose **Next**.
 
 5. Acceptez la sélection par défaut **Vérifier et personnaliser les paramètres du modèle**, puis sélectionnez **Suivant**.
 
 6. Acceptez les valeurs par défaut **Actions de protection** et choisissez **Suivant**.
 
-7. Sélectionnez **Auditer ou restreindre les activités sur les appareils Windows** et laissez les actions définies sur **Audit uniquement**. Sélectionnez **Suivant**.
+7. Select **Audit or restrict activities on Windows devices** and leave the actions set to **Audit only**. Choose **Next**.
 
-8. Acceptez la valeur par défaut, **Je veux d’abord tester** et sélectionnez **Afficher les conseils de stratégie en mode de test**. Sélectionnez **Suivant**.
+8. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
 
 9. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
 
 10. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
 
-11. Recherchez dans l’explorateur d’activité les données des points de terminaison surveillés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie. Ensuite, filtrez par nom de stratégie pour voir l’impact de cette stratégie ; consultez l’article [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
+11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
-12. Essayez de partager un élément de test dont le contenu déclenchera la condition relative aux données américaines d'informations personnelles identifiables (PII) avec une personne extérieure à votre organisation. Cela devrait déclencher la politique.
+12. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
 13. Consultez l’Explorateur d’activités pour l’événement.
 
@@ -94,7 +98,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
 
-9. Essayez de partager un élément de test dont le contenu déclenchera la condition relative aux données américaines d'informations personnelles identifiables (PII) avec une personne extérieure à votre organisation. Cela devrait déclencher la politique.
+9. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
 10. Consultez l’Explorateur d’activités pour l’événement.
 
@@ -119,7 +123,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
 
-9. Essayez de partager un élément de test dont le contenu déclenchera la condition relative aux données américaines d'informations personnelles identifiables (PII) avec une personne extérieure à votre organisation. Cela devrait déclencher la politique.
+9. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
    Une fenêtre contextuelle semblable à celle-ci s’affiche sur l’appareil client :
 
@@ -130,7 +134,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 ## <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Scénario 4 : évitez de boucler les notifications DLP à partir d’applications de synchronisation cloud avec mise en quarantaine automatique (préversion).
 
-### <a name="before-you-begin"></a>Avant de commencer
+## <a name="before-you-begin-scenario-4"></a>Avant de commencer le scénario 4
 
 Dans ce scénario, la synchronisation des fichiers avec l’étiquette de confidentialité **Hautement confidentiel** sur OneDrive est bloquée. Il s’agit d’un scénario complexe avec plusieurs composants et procédures. Vous aurez besoin de :
 
@@ -157,7 +161,7 @@ Il existe trois procédures.
 
 6. Activez **Mise en quarantaine automatique pour les applications non autorisées**.
 
-7. Entrez le chemin d’accès au dossier sur les ordinateurs locaux dans lequel vous souhaitez déplacer les fichiers sensibles d’origine. Par exemple:
+7. Enter the path to the folder on local machines where you want the original sensitive files to be moved to. For example:
    
     **« %homedrive%%homepath%\Microsoft DLP\Quarantine »** pour le nom d’utilisateur *Isaiah langer* placera les éléments déplacés dans un dossier nommé :  
 
@@ -168,7 +172,7 @@ Il existe trois procédures.
     > [!NOTE]
     > La mise en quarantaine automatique DLP crée des sous-dossiers pour les fichiers de chaque application non autorisée. Par conséquent, si vous avez le *Bloc-notes* et *OneDrive* dans votre liste d’applications non autorisées, un sous-dossier sera créé pour **\OneDrive** et un autre sous-dossier pour **\Bloc-notes**.
 
-8. Choisissez **Remplacer les fichiers par un fichier .txt qui contient le texte suivant**, puis entrez le texte souhaité dans le fichier d’espace réservé. Par exemple, pour un fichier appelé *auto quar 1.docx* :
+8. Choose **Replace the files with a .txt file that contains the following text** and enter the text you want in the placeholder file. For example for a file named *auto quar 1.docx*:
     
     > %%FileName%% contient des informations sensibles que votre organisation protège avec la stratégie de protection contre la perte de données (DLP) %%PolicyName%% et a été déplacée vers le dossier de mise en quarantaine : %%QuarantinePath%%
     
@@ -201,7 +205,7 @@ Il existe trois procédures.
     
 8. Choisissez **Enregistrer** et **Suivant**.
 
-9. Choisissez **L’activer immédiatement**. Choisissez **Suivant**.
+9. Choose **Turn it on right away**. Choose **Next**.
 
 10. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
 
@@ -214,7 +218,7 @@ Il existe trois procédures.
 
 1. Connectez-vous à l’ordinateur Windows 10 avec le compte d’utilisateur que vous avez spécifié dans [Configurez une stratégie pour bloquer la synchronisation OneDrive des fichiers avec l’étiquette de confidentialité Hautement confidentiel](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) à l’étape 5.
 
-2. Créer un dossier dont le contenu ne sera pas synchronisé avec OneDrive.
+2. Create a folder whose contents will not be synchronized to OneDrive. For example:
 
     *Dossier source C:\ mise en quarantaine automatique*
 
@@ -234,13 +238,13 @@ Il existe trois procédures.
 
 7. Ouvrez le dossier de quarantaine et vérifiez que le fichier d’origine existe.
  
-8. Recherchez dans l’explorateur d’activité les données des points de terminaison surveillés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie. Ensuite, filtrez par nom de stratégie pour voir l’impact de cette stratégie ; consultez l’article [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
+8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
 9. Consultez l’Explorateur d’activités pour l’événement.
 
 ## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>Scénario 5 : Limiter le partage involontaire à des applications et services en nuage non autorisés.
 
-Avec Endpoint DLP et le navigateur Web Microisoft Edge, vous pouvez restreindre le partage involontaire d'éléments sensibles vers des applications et services en nuage non autorisés. Edge comprend quand un élément est restreint par une politique DLP et applique les restrictions d'accès.
+Avec Endpoint DLP et le navigateur web Microsoft Edge, vous pouvez limiter le partage involontaire d’éléments sensibles aux applications et services cloud non autorisés. Edge comprend quand un élément est restreint par une politique DLP et applique les restrictions d'accès.
 
 Lorsque vous sélectionnez **Appareils** comme emplacement dans une politique DLP correctement configurée et que vous utilisez le navigateur Microsoft Edge, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent aux contrôles de votre politique DLP. Au lieu de cela, les utilisateurs sont redirigés vers des Microsoft Edge qui, avec leur compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
 
@@ -299,14 +303,137 @@ Voici quelques exemples :
 1. Sélectionnez **Enregistrer**.
 1. Sélectionnez **Stratégies**.
 1. Créez et définissez une politique qui s'applique uniquement aux **dispositifs**. Pour plus d’informations sur la création [d’une stratégie, consultez, créez, testez et paramétrez une stratégie DLP](create-test-tune-dlp-policy.md) .
-1. Créez une règle qui utilise **l’utilisateur qui a accédé à un site sensible à partir de Edge**, et l’action **Auditer ou restreindre les activités lorsque les utilisateurs accèdent à des sites sensibles dans le navigateur Microsoft Edge sur les appareils Windows**.
-1. Dans l’action, sélectionnez **Ajouter ou supprimer des groupes de sites sensibles**.
+1. Créez une règle qui utilise **l’utilisateur qui a accédé à un site sensible à partir de Edge**, et l’action **Auditer ou restreindre les activités sur les appareils**.
+1. Dans **le domaine de service et les activités de navigateur,** **sélectionnez Charger vers un domaine de service cloud restreint ou l’accès à partir d’un navigateur non autorisé** , puis définissez l’action **sur Audit uniquement**. Cela définit l’action globale pour tous les groupes de sites.
 1. Sélectionnez les **groupes de sites sensibles** souhaités.
 1. Sélectionnez **Ajouter**.
+1. FACULTATIF : si vous souhaitez créer une exception (généralement une liste verte) à l’action globale pour un ou plusieurs groupes de sites, sélectionnez **Configurer les exceptions de domaine de service sensibles**, ajoutez le groupe de sites pour lequel vous souhaitez l’exception, configurez l’action souhaitée et **enregistrez** la configuration.
 1. Sélectionnez les activités de l'utilisateur que vous souhaitez surveiller ou restreindre et les actions que la DLP doit entreprendre en réponse à ces activités.
 1. Terminez la configuration de la règle et de la stratégie et appliquez-la.
 
+## <a name="scenario-7-authorization-groups-preview"></a>Scénario 7 Groupes d’autorisation (préversion)
 
+> [!IMPORTANT]
+> Avant de pouvoir utiliser des **groupes d’imprimantes**, des **groupes d’appareils de stockage amovibles**, des **groupes de partage réseau** et **des exceptions réseau/VPN** , vous devez vous inscrire [ici](https://forms.office.com/r/GNVTFvxuZv).
+
+Ces scénarios nécessitent que les appareils soient déjà intégrés et reportés dans l’Explorateur d’activités. Si vous n’avez pas encore intégré d’appareils, consultez l’article [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md).
+
+Les groupes d’autorisation sont principalement utilisés comme listes d’autorisation. Vous avez affecté des actions de stratégie au groupe qui sont différentes des actions de stratégie globales. Dans ce scénario, nous allons définir un groupe d’imprimantes, puis configurer une stratégie avec des actions de blocage pour toutes les activités d’impression, à l’exception des imprimantes du groupe. Ces procédures sont essentiellement les mêmes pour les **groupes d’appareils de stockage amovibles** et les **groupes de partage réseau**.
+
+Dans ce scénario, nous allons définir un groupe d’imprimantes que le service juridique utilise pour les contrats d’impression. Les contrats d’impression sur d’autres imprimantes sont bloqués.
+
+### <a name="create-and-use-printer-groups"></a>Créer et utiliser des groupes d’imprimantes
+
+1. Dans le portail de conformité Microsoft Purview ouvrir les **groupes d’imprimantes** **des paramètres DLP** du point de terminaison de **protection contre la** >  perte de  >  données.
+1. Sélectionnez **Créer un groupe d’imprimantes** et donnez un nom au groupe. Dans ce scénario, nous allons utiliser `Legal printers`.
+1. Sélectionnez **Ajouter une imprimante** et indiquez un nom. Vous pouvez définir des imprimantes en :
+    1. Nom de l’imprimante conviviale 
+    1. ID de produit USB
+    1. ID du fournisseur USB
+    1. Plage d’adresses IP
+    1. Imprimer dans un fichier
+    1. Impression universelle déployée sur une imprimante
+    1. Imprimante d’entreprise
+    1. Imprimer sur local
+1. Sélectionnez **Fermer**.
+
+### <a name="configure-policy-printing-actions"></a>Configurer les actions d’impression de stratégie
+
+1. Ouvrez l’onglet **Stratégies** .
+
+1. Sélectionnez **Créer une stratégie** et sélectionnez le modèle de stratégie personnalisé.
+1. Étendue de l’emplacement uniquement aux **appareils**.
+
+1. Créez une règle dans laquelle :
+    1. **Le contenu contient** =  **Classifieurs pouvant être formés**, **Affaires juridiques**
+    1. **Actions** =  **Auditer ou restreindre les activités sur les appareils**
+    1. Sélectionnez ensuite **les activités de fichier sur toutes les applications**
+    1. Sélection **Appliquer des restrictions à une activité spécifique**
+    1. Sélectionner **Bloc d’impression** = 
+1. **Sélectionnez Choisir différentes restrictions d’impression**
+1. Sous **Restrictions de groupe d’imprimantes**, **sélectionnez Ajouter un groupe** , puis Les **imprimantes légales**.
+1. Définir **l’action** = **Autoriser**.
+    > [!TIP]
+    > L’événement **Autoriser** l’enregistrement et l’audit de l’action dans le journal d’audit, mais ne génère pas d’alerte ou de notification. 
+10. Sauvegarder.
+11. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test**. Cliquez sur **Suivant**.
+
+12. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
+
+13. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
+
+## <a name="scenario-8-network-exceptions-preview"></a>Scénario 8 Exceptions réseau (préversion)
+
+> [!IMPORTANT]
+> Avant de pouvoir utiliser des **groupes d’imprimantes**, des **groupes d’appareils de stockage amovibles**, des **groupes de partage réseau** et **des exceptions réseau/VPN** , vous devez vous inscrire [ici](https://forms.office.com/r/GNVTFvxuZv).
+
+Ces scénarios nécessitent que les appareils soient déjà intégrés et reportés dans l’Explorateur d’activités. Si vous n’avez pas encore intégré d’appareils, consultez l’article [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md).
+
+Dans ce scénario, nous allons définir une liste de VPN utilisés par les workers hybrides pour accéder aux ressources de l’organisation.
+
+### <a name="create-and-use-a-network-exception"></a>Créer et utiliser une exception réseau
+
+Les exceptions réseau vous permettent de configurer autoriser, auditer uniquement, bloquer avec remplacement et bloquer les actions de fichiers en fonction du réseau à partir de lequel les utilisateurs accèdent au fichier. Vous pouvez sélectionner dans la liste [des paramètres VPN](dlp-configure-endpoint-settings.md#vpn-settings-preview) que vous avez définie et l’option **Réseau d’entreprise** . Les actions peuvent être appliquées individuellement ou collectivement à ces activités utilisateur :
+
+- Copier dans le Presse-papiers
+- Copier sur un appareil amovible USB
+- Copier vers un partage réseau
+- Imprimer
+- Copier ou déplacer à l'aide d'une application Bluetooth non autorisée
+- Copier ou déplacer à l’aide de RDP
+
+#### <a name="get-the-server-address-or-network-address"></a>Obtenir l’adresse du serveur ou l’adresse réseau
+
+1. Sur un appareil Windows surveillé par DLP, ouvrez une fenêtre **Windows PowerShell** en tant qu’administrateur.
+1. Exécuter cette applet de commande
+
+```powershell-interactive
+Get-VpnConnection
+```
+
+3. L’exécution de cette applet de commande retourne plusieurs champs et valeurs.
+1. Recherchez le champ **ServerAddress** et enregistrez cette valeur. Vous l’utiliserez lorsque vous créerez une entrée VPN dans la liste VPN.
+1. Recherchez le champ **Nom** et enregistrez cette valeur. Le champ **Nom** correspond au champ **Adresse réseau** lorsque vous créez une entrée VPN dans la liste VPN.
+
+#### <a name="add-a-vpn"></a>Ajouter un VPN
+
+1. Ouvrez [portail de conformité Microsoft Purview](https://compliance.microsoft.com) >  **Paramètres VPN des paramètres** >  DLP du point de terminaison de **protection contre la** >  perte **de données**.
+1. Sélectionnez **Ajouter ou modifier des adresses VPN**.
+1. Indiquez **l’adresse du serveur** ou **l’adresse réseau** à partir de l’exécution de Get-VpnConnection.
+1. Sélectionnez **Enregistrer**.
+1. Fermez l’élément.
+
+#### <a name="configure-policy-actions"></a>Configurer des actions de stratégie
+
+1. Ouvrez l’onglet **Stratégies** .
+
+1. Sélectionnez **Créer une stratégie** et sélectionnez le modèle de stratégie personnalisé.
+1. Étendue de l’emplacement uniquement aux **appareils**.
+
+1. Créez une règle dans laquelle :
+    1. **Le contenu contient** =  **Classifieurs pouvant être formés**, **Affaires juridiques**
+    1. **Actions** =  **Auditer ou restreindre les activités sur les appareils**
+    1. Sélectionnez ensuite **les activités de fichier sur toutes les applications**
+    1. Sélection **Appliquer des restrictions à une activité spécifique**
+    1. Sélectionnez les actions pour lesquelles vous souhaitez configurer **les exceptions réseau** .
+1. Sélectionnez **Copier dans le Presse-papiers** et l’action **Audit uniquement**
+1. **Sélectionnez Choisir une autre copie dans les restrictions du Presse-papiers**.
+1. Sélectionnez **VPN** et définissez l’action sur **Bloquer avec remplacement**.
+
+> [!IMPORTANT]
+> Lorsque vous souhaitez contrôler les activités d’un utilisateur lorsqu’il est connecté via un VPN, *vous devez* sélectionner le VPN et faire du VPN la priorité absolue dans la configuration **des exceptions réseau** . Sinon, si l’option **Réseau d’entreprise** est sélectionnée, cette action définie pour l’entrée **réseau d’entreprise** sera appliquée.
+
+> [!CAUTION]
+> L’option **Appliquer à toutes les activités** copie les exceptions réseau définies ici et les applique à toutes les autres activités spécifiques configurées, telles que **Imprimer** et **Copier sur un partage réseau**. **_Cela remplacera les exceptions réseau sur les autres activités La dernière configuration enregistrée l’emporte._**  
+
+8. Sauvegarder.
+1. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test**. Cliquez sur **Suivant**.
+
+1. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
+
+1. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
+ 
+ 
 ## <a name="see-also"></a>Voir aussi
 
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)

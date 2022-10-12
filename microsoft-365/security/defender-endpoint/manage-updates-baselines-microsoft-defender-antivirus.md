@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/27/2022
+ms.date: 10/10/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 317f2b6e59ee5c0a787dd78e23d7a96f7377efb5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 48fb6a2e4ec0c77a17e1ea0fedd95244485232bc
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231833"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536453"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
@@ -89,6 +89,37 @@ Toutes nos mises à jour contiennent
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Septembre-2022 (Plateforme : 4.18.2209.x | Moteur : 1.1.19700.3)</summary>
+
+&ensp;Version de la mise à jour du renseignement de sécurité : **1.377.8.0**<br/>
+&ensp;Date de publication : **10 octobre 2022**<br/>
+&ensp;Plateforme : **4.18.2209.x**<br/>
+&ensp;Moteur : **1.1.19700.3**<br/>
+&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+
+Version du moteur : 1.1.19700.3<br/>
+Version de la mise à jour du renseignement de sécurité : 1.377.8.0<br/>
+
+### <a name="whats-new"></a>Nouveautés
+
+- Amélioration du traitement de l’ordre de secours Defender sur la référence SKU du serveur
+- Correction des mises à jour Defender pendant le processus OOBE
+- Correction de la vulnérabilité du descripteur de sécurité du programme d’installation approuvé
+- Correction [Microsoft Defender visibilité des exclusions antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- Correction de la sortie de l’ordre de secours de l’applet de commande PowerShell
+- Correction d’un échec de mise à jour de la plateforme Defender sur les références SKU Server Core 2019
+- Amélioration de la prise en charge du durcissement pour les configurations de désactivation Defender sur les références SKU serveur
+- Amélioration des logiques de configuration defender pour la [protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) sur les serveurs
+- Amélioration du mode WARN pour la [règle ASR](attack-surface-reduction-rules-reference.md)
+- Amélioration de la gestion des certificats d’OSX  
+- Journalisation améliorée pour l’analyse de l’emplacement FilesStash
+- À compter de la plateforme version 4.18.2208.0 et ultérieure : si un serveur a été [intégré à Microsoft Defender pour point de terminaison](onboard-configure.md#onboard-devices-to-the-service), le paramètre de stratégie de [groupe](configure-endpoints-gp.md#update-endpoint-protection-configuration) « Désactiver Windows Defender » ne désactive plus complètement Windows Defender Antivirus activé Windows Server 2012 systèmes d’exploitation R2 et ultérieurs. Au lieu de cela, il est ignoré (si [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) est configuré explicitement) ou il place Microsoft Defender Antivirus en [mode passif](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (s’il `ForceDefenderPassiveMode` n’est pas configuré). En outre, la [protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) permet de basculer vers le mode actif en passant `ForceDefenderPassiveMode` en `0`mode passif, mais pas en mode passif. Ces modifications s’appliquent uniquement aux serveurs intégrés à Microsoft Defender pour point de terminaison. Pour plus d’informations, reportez-vous à [Microsoft Defender compatibilité antivirus avec d’autres produits de sécurité](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
+
+### <a name="known-issues"></a>Problèmes connus
+
+- Certains clients ont peut-être reçu les mises à jour de plateforme 4.18.2209.2 à partir de la préversion. Cela peut entraîner le blocage du service à l’état de démarrage après la mise à jour.  
+<br/><br/>
+</details><details>
 <summary>Août-2022 (Plateforme : 4.18.2207.7 | Moteur : 1.1.19600.3)</summary>
 
 &ensp;Version de la mise à jour du renseignement de sécurité : **1.373.1647.0**<br/>
@@ -132,7 +163,7 @@ Version de la mise à jour du renseignement de sécurité : 1.373.219.0 <br/>
 - Amélioration des performances de la mise en cache [AMSI (AntiMalware Scan Interface)](/windows/win32/amsi/antimalware-scan-interface-portal) 
 - Amélioration de la détection et de la correction pour les macros associées à [Microsoft Visual Basic pour Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) 
 - Amélioration du traitement des exclusions AMSI 
-- Correction de la détection des interblocages dans le traitement des règles HIPS (Host Intrusion Prevention System). (Pour plus d’informations sur HIPS et Defender pour point de terminaison, consultez [Migration d’un HIPS tiers vers des règles ASR](migrating-asr-rules.md).) 
+- Correction de la détection des interblocages dans le traitement des règles HIPS (Host Intrusion Prevention System). (Pour plus d’informations sur HIPS et Defender pour point de terminaison, consultez [Migration d’un hips tiers vers des règles ASR](migrating-asr-rules.md).) 
 - Correction de la fuite de mémoire pour laquelle `MsMpEng.exe` consommait des octets privés. (Si une utilisation élevée de l’UC est également un problème, consultez [Utilisation élevée du processeur en raison de l’antivirus Microsoft Defender](troubleshooting-mode-scenarios.md)) 
 - Correction d’un blocage avec [surveillance du comportement](configure-real-time-protection-microsoft-defender-antivirus.md) 
 - Amélioration de la validation de l’approbation 
@@ -151,14 +182,21 @@ Version de la mise à jour du renseignement de sécurité : 1.373.219.0 <br/>
 - Les clients qui déploient la mise à jour de plateforme 4.18.2207.5 peuvent rencontrer un retard de performances réseau susceptibles d’avoir un impact sur les applications.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédentes : prise en charge de la mise à niveau technique uniquement
+
+Une fois qu’une nouvelle version de package est publiée, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
+
+<details>
 <summary>Mai 2022 (Plateforme : 4.18.2205.7 | Moteur : 1.1.19300.2)</summary>
 
 &ensp;version de mise à jour du renseignement de sécurité : **1.369.88.0**<br/>
 &ensp;publiée : **22 juin 2022**<br/>
 plateforme&ensp;: **4.18.2205.7**<br/>
 &ensp;moteur: **1.1.19300.2**<br/>
-&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+&ensp;Phase de support : **support technique de mise à niveau (uniquement)**<br/>
 
 Version du moteur : 1.1.19300.2<br/>
 Version de mise à jour du renseignement de sécurité : 1.369.88.0<br/>
@@ -178,14 +216,7 @@ Version de mise à jour du renseignement de sécurité : 1.369.88.0<br/>
 Aucun problème connu
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédentes : prise en charge de la mise à niveau technique uniquement
-
-Une fois qu’une nouvelle version de package est publiée, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
-
-<details>
+</details><details>
 <summary>Mars 2022 *MISE À JOUR* (Plateforme : 4.18.2203.5 | Moteur : 1.1.19200.5)</summary>
 
 Les *clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft Corporation a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version précédente. Il est recommandé aux clients de mettre à jour vers au moins cette nouvelle version de moteur du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour.*
@@ -407,7 +438,7 @@ Aucun problème connu
 - Nouveaux contrôles pour la gestion du processus de déploiement progressif des mises à jour Microsoft Defender. Consultez [Gérer le processus de déploiement progressif des mises à jour Microsoft Defender](manage-gradual-rollout.md).
 - Amélioration du moteur de surveillance du comportement
 - Améliorations apportées au déploiement des définitions de logiciel anti-programme malveillant
-- Inspections d’événements réseau Edge étendus
+- Inspections étendues des événements réseau Microsoft Edge
 
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
@@ -810,6 +841,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 Pour plus d’informations, consultez [Mise à jour de Microsoft Defender pour les images d’installation du système d’exploitation Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220929.1</summary>
+
+&ensp;Version du package : **20220929.1**<br/>
+&ensp;Version de la plateforme : **4.18.2207.7**<br/>
+&ensp;Version du moteur : **1.1.19600.3**<br/>
+&ensp;Version de signature : **1.373.1243.0**<br/>
+
+### <a name="fixes"></a>Correctifs
+- Aucun
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Aucun
+
+<br/>
+</details><details>
 <summary>20220925.2</summary>
 
 &ensp;Version du package : **20220925.2**<br/>

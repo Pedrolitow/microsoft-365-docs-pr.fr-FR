@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft dans les environnements GCC.
-ms.openlocfilehash: 2e22e55920f3ea8518ead6d117f0ac090690eb54
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 48b1b517bb75977f2537d8365b3a00d01e077858
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68297805"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536981"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-environments"></a>Gérer le partage pour le tableau blanc Microsoft dans les environnements GCC
 
@@ -52,6 +52,8 @@ Ce paramètre s’applique uniquement aux tableaux blancs et remplace les param�
 
 > [!NOTE]
 > Par défaut, le paramètre de réunion Teams **permettant aux utilisateurs anonymes d’interagir avec les applications dans les réunions** est activé par défaut. Si vous l’avez désactivé, les utilisateurs anonymes (par opposition aux invités ou aux utilisateurs fédérés) n’auront pas accès au tableau blanc pendant la réunion.
+>
+> Si vous souhaitez que les comptes d’appareils partagés aient accès au Tableau blanc dans les réunions Teams, mais pas aux utilisateurs anonymes, vous pouvez désactiver **les utilisateurs anonymes qui peuvent interagir avec les applications dans les réunions** tout en **activant AllowAnonymousMeetingParticipantsToAccessWhiteboards**
 
 Ces modifications doivent prendre environ 60 minutes pour s’appliquer à l’ensemble de votre location.
 

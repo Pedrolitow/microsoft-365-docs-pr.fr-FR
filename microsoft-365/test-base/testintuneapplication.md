@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 2fbe3a21762f6bf048d5f35485a359389df93ce2
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: 4ebfff151c96752af0bca757c43f3df49a3d2ede
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315983"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68540024"
 ---
 # <a name="test-your-intune-application-on-test-base"></a>Tester votre application Intune sur la base de test 
   > [!Note] 
@@ -71,14 +71,49 @@ En tant que client Intune qui dispose d’un package Intune, qui a déjà été 
 4. Vérifiez les fichiers binaires de **dépendances qui ont été chargés** placés sous le dossier **guid** .
 5. Vous pouvez modifier les scripts en fonction des besoins et les enregistrer.
     > [!Note] 
-    > Si le package de dépendances n’a pas été chargé, test base ne génère pas de commandes d’installation/désinstallation pour celui-ci.
+    > Si le package de dépendances n’a pas été chargé, test base ne génère pas de commandes d’installation/désinstallation pour celui-ci.  
 
 
-**Étape 4 : Tester la matrice**
-1. Vérifiez les sélections par défaut présentes dans la liste du système d’exploitation pour les types de test correspondants.
-    - La base de test prend en charge la sélection de plusieurs mises à jour cumulatives Windows **à partir de Windows 10 1909, sauf Windows 10 2004**, mais Intune application Win est affectée avec une version de versions égales ou supérieures à **Windows 10 1607**.
-    - La liste du système d’exploitation inclut par défaut tous les systèmes d’exploitation pris en charge par la base de test, ce qui est supérieur au système d’exploitation minimal spécifié pour l’application Win Intune.
-2. Les utilisateurs sont autorisés à modifier la sélection du système d’exploitation en fonction des besoins.
+**Étape 4. Définir la matrice de test**
+
+L’onglet Matrice de test vous permet d’indiquer le programme de mise à jour Windows spécifique ou le produit Windows sur lequel vous souhaitez peut-être exécuter votre test.
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir un nouveau package de matrice de test](Media/settestmatrix01-newpackage.png)
+
+1. Choisir le **type de mise à jour du système d’exploitation**
+   - La base de tests fournit des tests planifiés pour vous assurer que les performances de vos applications ne seront pas interrompues par les dernières mises à jour windows. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir la matrice de test choisir osupdate](Media/settestmatrix02-chooseosupdate.png)
+
+   - Il existe 2 options disponibles :
+   
+     - Les **mises à jour de sécurité** permettent de tester votre package par rapport aux évolutions incrémentielles des mises à jour de sécurité mensuelles Windows.
+     - Les **mises à jour des fonctionnalités** permettent de tester votre package par rapport aux nouvelles fonctionnalités des dernières versions Windows Insider Preview du programme Windows Insider.
+
+2. Configurer la **mise à jour de sécurité** Pour configurer les mises à jour de sécurité, vous devez spécifier le ou les produits Windows que vous souhaitez tester dans la liste déroulante « Versions de système d’exploitation à tester ».
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir la matrice de test pour configurer securityupdate](Media/settestmatrix03-configuresecurityupdate.png)
+
+   - Votre sélection inscrit votre application pour les séries de tests automatiques sur la version B des mises à jour de qualité mensuelles Windows des produits sélectionnés.
+     - Pour les clients disposant d’un accès par défaut sur la base de test, leurs applications sont validées par rapport à la version finale des mises à jour de sécurité de la version B, à partir de Patch Tuesday.
+     - Pour les clients disposant d’un accès complet sur la base de test, leurs applications sont validées par rapport aux versions préliminaires des mises à jour de sécurité de la version B, à compter de 3 semaines avant le correctif mardi. Cela permet aux clients d’accès complet de prendre des mesures proactives pour résoudre les problèmes détectés lors des tests avant la publication finale du correctif mardi.  
+       (Comment devenir un client d’accès complet ? Reportez-vous à [la demande de modification du niveau d’accès | Microsoft Docs](accesslevel.md))
+
+3. Configurer **la mise à jour des fonctionnalités**
+   - Pour configurer les mises à jour des fonctionnalités, vous devez spécifier le produit cible et son canal d’aperçu dans la liste déroulante « Insider Channel ».
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir la matrice de test pour configurer featureupdate](Media/settestmatrix04-configurefeatureupdate.png)
+
+   - Votre sélection inscrit votre application pour les tests automatiques sur les dernières mises à jour de fonctionnalités de votre canal de produit sélectionné et toutes les nouvelles mises à jour futures dans les dernières versions Windows Insider Preview de votre sélection.
+
+   - Vous pouvez également définir votre système d’exploitation actuel dans « Base de référence du système d’exploitation pour Insight ». Nous vous fournirons plus d’insights de test en effectuant une analyse de régression de votre environnement de système d’exploitation en l’état et du système d’exploitation cible le plus récent.
+
+   > [!div class="mx-imgBorder"]
+   > ![Définir le système d’exploitation de jeu de matrices de test](Media/settestmatrix05-setos.png)  
 
 
 **Étape 5 : Vérifier + publier** <br/>

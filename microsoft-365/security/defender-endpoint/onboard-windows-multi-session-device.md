@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a4af85a358d51b039d9a8596bd911eaf12f3d54f
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 572c24f1147dacf5e2c96bffceb0eb999d141a0a
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231613"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537135"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Intégrer des appareils Windows dans Azure Virtual Desktop
 
@@ -168,4 +168,4 @@ Seul Microsoft Edge est pris en charge pour le filtrage web dans Windows 10 mult
 
 #### <a name="related-links"></a>Liens connexes
 
-[Ajouter des exclusions pour Defender pour point de terminaison via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-by-using-powershell)
+[Ajouter des exclusions pour Defender pour point de terminaison via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-for-cloud-by-using-powershell)

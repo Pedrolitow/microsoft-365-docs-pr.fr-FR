@@ -1,5 +1,6 @@
 ---
 title: Configurer un connecteur pour archiver les données DataParser ServiceNow 17a-4 dans Microsoft 365
+description: Découvrez comment configurer et utiliser un connecteur DataParser ServiceNow 17a-4 pour importer et archiver des données ServiceNow dans Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Découvrez comment configurer et utiliser un connecteur DataParser ServiceNow 17a-4 pour importer et archiver des données ServiceNow dans Microsoft 365.
-ms.openlocfilehash: 5376d88d5eaa9634400d12b70005f97ae400a0f6
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 3569244e90a4147a24c7c5a728575add710a3e3e
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826882"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534385"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>Configurer un connecteur pour archiver les données à partir de ServiceNow
 
 Utilisez [ServiceNow DataParser](https://www.17a-4.com/dataparser/) de 17a-4 LLC pour importer et archiver des données de ServiceNow vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. DataParser inclut un connecteur ServiceNow configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DataParser ServiceNow convertit les données ServiceNow au format de message électronique, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 
 Une fois les données ServiceNow stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur ServiceNow pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-servicenow-data"></a>Vue d’ensemble de l’archivage des données ServiceNow
 
@@ -33,7 +38,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation fonctionne avec la version 17a-4 pour configurer serviceNow DataParser.
 
-2. Régulièrement, les éléments ServiceNow sont collectés par dataParser. DataParser convertit également le contenu d’un message au format de message électronique.
+2. Régulièrement, les éléments ServiceNow sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
 3. Le connecteur DataParser ServiceNow que vous créez dans le portail de conformité Microsoft Purview se connecte à DataParser et transfère les messages vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
@@ -51,13 +56,13 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 La première étape consiste à accéder à la page Connecteurs de données dans le portail de conformité et à créer un connecteur 17a-4 pour les données ServiceNow.
 
-1. Accédez, <https://compliance.microsoft.com> puis cliquez sur **Connecteurs** >  de données **ServiceNow DataParser**.
+1. Accédez, <https://compliance.microsoft.com> puis sélectionnez **Connecteurs** >  de données **ServiceNow DataParser**.
 
-2. Dans la page de description **du produit ServiceNow DataParser** , cliquez sur **Ajouter un connecteur**.
+2. Dans la page de description **du produit ServiceNow DataParser** , sélectionnez **Ajouter un connecteur**.
 
-3. Dans la page **Conditions d’utilisation** , cliquez sur **Accepter**.
+3. Dans la page **Conditions d’utilisation** , sélectionnez **Accepter**.
 
-4. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**.
+4. Entrez un nom unique qui identifie le connecteur, puis sélectionnez **Suivant**.
 
 5. Connectez-vous à votre compte 17a-4 et effectuez les étapes décrites dans l’Assistant Connexion De DonnéesParser ServiceNow.
 
@@ -73,11 +78,11 @@ Le connecteur DataParser ServiceNow mappe automatiquement les utilisateurs à le
 
 Après avoir créé un connecteur DataParser ServiceNow, vous pouvez afficher l’état du connecteur dans le portail de conformité.
 
-1. Accédez et <https://compliance.microsoft.com> cliquez sur **Connecteurs de données** dans le volet de navigation gauche.
+1. Accédez aux <https://compliance.microsoft.com> **connecteurs de données** et sélectionnez-les dans le volet de navigation gauche.
 
-2. Cliquez sur l’onglet **Connecteurs** , puis sélectionnez le connecteur DataParser ServiceNow que vous avez créé pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
+2. Sélectionnez l’onglet **Connecteurs** , puis sélectionnez le connecteur DataParser ServiceNow que vous avez créé pour afficher la page de menu volant, qui contient les propriétés et les informations sur le connecteur.
 
-3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
+3. Sous **État du connecteur avec source**, **sélectionnez** le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft. Pour plus d’informations, consultez [Afficher les journaux d’administration pour les connecteurs de données](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problèmes connus
 
