@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 7cf2adb04f27a01970eb516a82f5fbb35a5cc2f6
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: debc8a975d132c83183fce4a4f0d4f6905dcbb40
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082326"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565959"
 ---
 # <a name="tailor-teams-apps-for-your-frontline-workers"></a>Personnaliser les applications Teams pour vos employés de première ligne
 
@@ -38,6 +38,7 @@ Avec l’expérience d’application de première ligne personnalisée, vos empl
 
 Les applications sont épinglées à la barre des applications. Il s’agit de la barre située sur le côté du client de bureau Teams et en bas des clients mobiles Teams (iOS et Android). Les applications suivantes sont épinglées pour les utilisateurs disposant d’une [licence F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt) :
 
+- [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) ([bientôt disponible](#coming-soon))
 - [Activité](https://support.microsoft.com/office/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56)
 - [Conversation](https://support.microsoft.com/office/get-started-with-chat-0b506ce2-eb6d-4fca-9668-e56980ba755e)
 - [Teams](https://support.microsoft.com/office/teams-and-channels-in-microsoft-teams-c6d0e61d-a61e-44a6-a972-04f2a8fa4155)
@@ -99,6 +100,20 @@ La fonctionnalité est désactivée.   | L’employé de première ligne obtient
 
 > [!NOTE]
 > Vous ne pouvez pas modifier les applications ou l’ordre des applications dans l’expérience d’application de première ligne personnalisée. Pour l’instant, si vous souhaitez apporter des modifications, vous pouvez configurer votre propre expérience personnalisée. Pour ce faire, commencez par désactiver la fonctionnalité. Ensuite, [créez une stratégie d’installation d’application personnalisée](/microsoftteams/teams-app-setup-policies) et [attribuez-la à des utilisateurs ou des groupes](/microsoftteams/assign-policies-users-and-groups).
+
+### <a name="coming-soon"></a>Bientôt disponible
+
+ Viva Connections fera bientôt partie de l’expérience des applications personnalisées de première ligne. Les utilisateurs de première ligne qui voient l’expérience d’application personnalisée auront Viva Connections épinglés en première position sur les appareils mobiles et de bureau.
+
+Cette expérience inclut un tableau de bord par défaut avec des cartes de première ligne pertinentes telles que Tâches, Shifts, Approbations et Actualités qui peuvent être personnalisées pour répondre aux besoins de votre organisation. Si votre organisation a déjà configuré un Viva Connections site d’accueil, elle est prioritaire sur l’expérience par défaut. Pour en savoir plus, consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=99706).
+
+**Teams Mobile**
+
+:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Capture d’écran montrant Viva Connections dans l’expérience d’application de première ligne personnalisée sur teams mobile." lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
+
+**Bureau Teams**
+
+:::image type="content" source="media/tailored-teams-apps-viva-connections-desktop.png" alt-text="Capture d’écran montrant Viva Connections dans l’expérience d’application de première ligne personnalisée sur le bureau Teams." lightbox="media/tailored-teams-apps-viva-connections-desktop.png":::
 
 ## <a name="related-articles"></a>Articles connexes
 

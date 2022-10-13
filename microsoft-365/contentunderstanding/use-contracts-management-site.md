@@ -1,5 +1,5 @@
 ---
-title: Utiliser le modèle de site Gestion des contrats pour Microsoft SharePoint Syntex
+title: Utiliser le modèle de site Gestion des contrats pour Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment approvisionner, utiliser et personnaliser le modèle de site Gestion des contrats dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 271ff008aad60434f1e52a9eca233b2d1b7aeb3d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Découvrez comment approvisionner, utiliser et personnaliser le modèle de site Gestion des contrats dans Microsoft Syntex.
+ms.openlocfilehash: 028afdbe0f82143c8ee84cdd773c859f7064cf47
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582469"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565529"
 ---
-# <a name="use-the-contracts-management-site-template-for-microsoft-sharepoint-syntex"></a>Utiliser le modèle de site Gestion des contrats pour Microsoft SharePoint Syntex
+# <a name="use-the-contracts-management-site-template-for-microsoft-syntex"></a>Utiliser le modèle de site Gestion des contrats pour Microsoft Syntex
 
-Le site Gestion des contrats est un modèle de site SharePoint prêt à être déployé et personnalisable qui permet à votre organisation d’optimiser la valeur de SharePoint Syntex. Le site est conçu pour vous permettre de créer un site professionnel pour gérer, traiter et suivre l’état des contrats dans votre organisation.
+Le site Gestion des contrats est un modèle de site SharePoint prêt à être déployé et personnalisable qui permet à votre organisation d’optimiser la valeur de Microsoft Syntex. Le site est conçu pour vous permettre de créer un site professionnel pour gérer, traiter et suivre l’état des contrats dans votre organisation.
 
 ## <a name="features-of-the-site"></a>Fonctionnalités du site
 
@@ -30,7 +30,7 @@ Le site Gestion des contrats est un modèle de site SharePoint prêt à être d�
 
 Le site Gestion des contrats inclut les pages préremplies, les composants WebPart et la navigation de site. Le site peut être personnalisé pour intégrer la personnalisation, les informations sur les employés, les informations de stratégie et de planification, le flux de travail, les contacts et les ressources de votre organisation.
 
-Le site utilise la puissance d’un modèle SharePoint Syntex s’exécutant sur une bibliothèque de documents SharePoint pour classifier des documents et extraire des métadonnées. Le site fournit des bibliothèques de documents prédéfinies pour vous aider à démarrer rapidement, mais vous pouvez également créer les vôtres en fonction des besoins. Le site inclut les bibliothèques suivantes :
+Le site utilise la puissance d’un modèle Syntex s’exécutant sur une bibliothèque de documents SharePoint pour classifier des documents et extraire des métadonnées. Le site fournit des bibliothèques de documents prédéfinies pour vous aider à démarrer rapidement, mais vous pouvez également créer les vôtres en fonction des besoins. Le site inclut les bibliothèques suivantes :
 
 - **Régions** : classifier les documents de contrat par zone géographique, pays ou région.
 
@@ -42,7 +42,7 @@ Le site utilise la puissance d’un modèle SharePoint Syntex s’exécutant sur
 
 - **Modèles** : utilisez le modèle de cette bibliothèque pour classifier des documents et extraire des métadonnées. Les utilisateurs peuvent créer leurs propres modèles pour répondre à leurs besoins et les ajouter à cette bibliothèque.
 
-- **Bibliothèque d’exemples de contrats** : recherchez les fichiers qui ont été classés et dont les métadonnées ont été extraites à l’aide du modèle SharePoint Syntex. 
+- **Bibliothèque d’exemples de contrats** : recherchez les fichiers qui ont été classés et dont les métadonnées ont été extraites à l’aide du modèle Syntex. 
 
 Il existe une vue distincte dans la bibliothèque dans laquelle vous pouvez suivre d’autres métadonnées telles que l’état, et qui utilise la mise en forme de la bibliothèque de documents pour l’afficher de manière plus visuelle.
 
@@ -53,9 +53,9 @@ Le site Gestion des contrats peut être approvisionné à partir du [service loo
 ![Capture d’écran de la page d’approvisionnement du modèle de site Contracts Management.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
-> Vous devez être administrateur général ou administrateur SharePoint dans Microsoft 365 pour configurer le site. Vous devez également disposer d’une licence SharePoint Syntex pour ajouter ce modèle de site à votre organisation.
+> Vous devez être administrateur général ou administrateur SharePoint dans Microsoft 365 pour configurer le site. Vous devez également disposer d’une licence Syntex pour ajouter ce modèle de site à votre organisation.
 
-1. Dans la page principale du [look book SharePoint](https://lookbook.microsoft.com/), dans le menu **Afficher les conceptions**, sélectionnez **SharePoint Syntex** >  **SharePoint Syntex Gestion des contrats**.
+1. Dans la page principale du [look book SharePoint](https://lookbook.microsoft.com/), dans le menu **Afficher les conceptions** , sélectionnez **Syntex Syntex** > **Contracts Management**.
 
 2. Dans la page **Gestion des contrats** , sélectionnez **Ajouter à votre locataire**.
 
@@ -104,9 +104,9 @@ Vous contrôlez la navigation du site pour le site Gestion des contrats. Utilise
 Le site Gestion des contrats contient les composants dont vous avez besoin pour commencer, mais vous pouvez également inclure des composants supplémentaires, tels que :
 
 - Utilisez un [flux Power Automate](/power-automate/getting-started) pour déclencher un flux de travail lorsqu’un nouveau contrat est ajouté à la bibliothèque **de demandes de contrat** .
-- Créez des [modèles SharePoint Syntex](/microsoft-365/contentunderstanding/#models) supplémentaires.
+- Créez des [modèles Syntex](/microsoft-365/contentunderstanding/#models) supplémentaires.
 - Utilisez la fonctionnalité [d’assembly de contenu](content-assembly.md) dans la bibliothèque **Templates** .
-- Créez une [solution de gestion des contrats](solution-manage-contracts-in-microsoft-365.md) à l’aide de SharePoint Syntex avec d’autres composants de Microsoft 365.
+- Créez une [solution de gestion des contrats](solution-manage-contracts-in-microsoft-365.md) à l’aide de Syntex avec d’autres composants de Microsoft 365.
 
 ## <a name="share-the-site-with-others"></a>Partager le site avec d’autres personnes
 
