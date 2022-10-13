@@ -1,6 +1,6 @@
 ---
 title: Étude de cas - Contoso configure une stratégie de texte inappropriée
-description: Une étude de cas pour Contoso et comment ils configurent rapidement une stratégie de conformité des communications pour détecter le texte inapproprié dans les communications Microsoft Teams, Exchange Online et Yammer.
+description: Une étude de cas pour Contoso et comment ils configurent rapidement une stratégie de conformité des communications pour détecter le texte inapproprié dans Les communications Microsoft Teams, Exchange Online et Yammer.
 keywords: Microsoft 365, Microsoft Purview, conformité, conformité des communications
 f1.keywords:
 - NOCSH
@@ -18,22 +18,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- remotework
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 17b80d00cfb8c5855dda7d21371097dd413fb707
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: e221275185476eda23cd96926c203403630dd9e3
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685654"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565441"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas - Contoso configure rapidement une stratégie de texte inappropriée pour les communications Microsoft Teams, Exchange et Yammer
 
-[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages contenant du texte inapproprié dans votre organisation. le texte inapproprié peut inclure des blasphèmes, des menaces, du harcèlement et des images inappropriées. Les stratégies prédéfinies et [personnalisées](/microsoft-365/compliance/communication-compliance-policies) vous permettent d’analyser les communications internes et externes pour rechercher les correspondances de stratégie afin qu’elles puissent être examinées par des réviseurs désignés. Les réviseurs peuvent [examiner les alertes](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) de courrier électronique, Microsoft Teams, Yammer ou des communications tierces dans votre organisation et prendre [les mesures de correction](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
+>[!IMPORTANT]
+>Conformité des communications Microsoft Purview fournit les outils nécessaires pour aider les organisations à détecter les violations de conformité réglementaire (par exemple sec ou FINRA), telles que les informations sensibles ou confidentielles, le harcèlement ou la menace de langue, et le partage de contenu pour adultes. Créés avec la confidentialité par conception, les noms d’utilisateur sont pseudonymés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont choisis par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+
+[Conformité des communications Microsoft Purview](/microsoft-365/compliance/communication-compliance) permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages contenant du texte inapproprié dans votre organisation. le texte inapproprié peut inclure des blasphèmes, des menaces, du harcèlement et des images inappropriées. Les stratégies prédéfinies et [personnalisées](/microsoft-365/compliance/communication-compliance-policies) vous permettent d’analyser les communications internes et externes pour rechercher les correspondances de stratégie afin qu’elles puissent être examinées par des réviseurs désignés. Les réviseurs peuvent [examiner les alertes](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) de courrier électronique, Microsoft Teams, Yammer ou des communications tierces dans votre organisation et prendre [les mesures de correction](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
 
 Contoso Corporation est une organisation fictive qui doit configurer rapidement une stratégie pour détecter le texte inapproprié. Ils ont principalement utilisé Microsoft 365 pour le courrier électronique, Microsoft Teams et yammer pour leurs utilisateurs, mais ont de nouvelles exigences pour appliquer la stratégie de l’entreprise concernant le harcèlement au travail. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont une compréhension de base des principes fondamentaux de l’utilisation de Microsoft 365 et recherchent des conseils de bout en bout pour savoir comment prendre rapidement en main la conformité des communications.
 
@@ -44,9 +46,11 @@ Cette étude de cas aborde les principes de base de la configuration rapide d’
 - [Étape 3 : Configuration des prérequis et création d’une stratégie de conformité des communications](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
 - [Étape 4 : Examiner et corriger les alertes](#step-4-investigate-and-remediate-alerts)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="step-1-planning-for-communication-compliance"></a>Étape 1 : Planification de la conformité des communications
 
-Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont participé à des webinaires en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aideront à répondre aux exigences mises à jour de la stratégie d’entreprise pour réduire le harcèlement au travail. En travaillant ensemble, ils ont élaboré un plan pour créer et activer une stratégie de conformité des communications qui détectera les messages inappropriés. Cette configuration inclut la détection de texte pour les conversations envoyées dans Microsoft Teams, les messages privés et les conversations de la communauté dans Yammer, ainsi que dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut les déterminations suivantes :
+Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont participé à des webinaires en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aideront à répondre aux exigences mises à jour de la stratégie d’entreprise pour réduire le harcèlement au travail. En travaillant ensemble, ils ont élaboré un plan pour créer et activer une stratégie de conformité des communications qui détectera les messages inappropriés. Cette configuration inclut la détection du texte pour les conversations envoyées dans Microsoft Teams, les messages privés et les conversations de la communauté dans Yammer, ainsi que les messages électroniques envoyés dans Exchange Online. Leur plan inclut les déterminations suivantes :
 
 - Administrateurs informatiques qui ont besoin d’accéder aux fonctionnalités de conformité des communications.
 - Spécialistes de la conformité qui doivent créer et gérer des stratégies de communication.
@@ -57,17 +61,17 @@ Les administrateurs informatiques et les spécialistes de la conformité de Cont
 
 La première étape consiste à confirmer que la licence Microsoft 365 de Contoso inclut la prise en charge de la solution de conformité des communications. Pour accéder à la conformité des communications et l’utiliser, les administrateurs informatiques de Contoso doivent vérifier que Contoso dispose de l’une des opérations suivantes :
 
-- Abonnement Microsoft 365 E5/A5/F5/G5 (version payante ou d’évaluation)
-- Abonnement Microsoft 365 E3/A3/F3/G5 + module complémentaire conformité Microsoft 365 E5/A5/F5/G5
-- Abonnement Microsoft 365 E3/A3/F3/G5 + module complémentaire Microsoft 365 E5/A5/F5/G5 Insider Risk Management
+- abonnement Microsoft 365 E5/A5/F5/G5 (version payante ou d’évaluation)
+- Microsoft 365 E3/A3/F3/G5 + le module complémentaire conformité Microsoft 365 E5/A5/F5/G5
+- Microsoft 365 E3/A3/F3/G5 + le module complémentaire de gestion des risques internes Microsoft 365 E5/A5/F5/G5
 - Office 365 Entreprise abonnement E5 (version payante ou d’évaluation)
 - abonnement Office 365 A5 (version payante ou d’évaluation)
-- Office 365 Entreprise abonnement E3 + le module complémentaire de conformité avancée Office 365 (plus disponible pour les nouveaux abonnements, voir note)
+- Office 365 Entreprise abonnement E3 + le module complémentaire Conformité avancée Office 365 (plus disponible pour les nouveaux abonnements, voir la note)
 
 L’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de conformité des communications. Pour plus d’informations sur les abonnements et les licences, consultez les [conseils microsoft 365 pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 > [!IMPORTANT]
-> Office 365 conformité avancée n’est plus vendue en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contiennent les mêmes fonctionnalités de conformité ou d’autres.
+> Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contiennent les mêmes fonctionnalités de conformité ou d’autres.
 
 Les administrateurs informatiques de Contoso effectuent les étapes suivantes pour vérifier la prise en charge des licences pour Contoso :
 
@@ -79,19 +83,19 @@ Les administrateurs informatiques de Contoso effectuent les étapes suivantes po
 
 ### <a name="permissions-for-communication-compliance"></a>Autorisations pour la conformité des communications
 
-Cinq groupes de rôles sont utilisés pour configurer des autorisations pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des communications** disponible en tant qu’option de menu dans le portail de conformité Microsoft Purview et pour poursuivre ces étapes de configuration, le rôle *Administrateur de conformité* des communications est attribué aux administrateurs de Contoso.
+Cinq groupes de rôles sont utilisés pour configurer des autorisations pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des communications** disponible en tant qu’option de menu dans portail de conformité Microsoft Purview et pour poursuivre ces étapes de configuration, le rôle *Administrateurs de conformité des* communications est attribué aux administrateurs de Contoso.
 
 Contoso décide d’utiliser le groupe de rôles *Conformité* des communications pour affecter tous les administrateurs de conformité des communications, les analystes, les enquêteurs et les observateurs au groupe. Cette configuration de groupe de rôles permet à Contoso de commencer rapidement et de mieux répondre à ses exigences de gestion de la conformité.
 
 |**Role**|**Autorisations de rôle**|
 |:-----|:-----|
 | **Conformité des communications** | Utilisez ce groupe de rôles pour gérer la conformité des communications pour votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et observateurs désignés, vous pouvez configurer les autorisations de conformité des communications dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité de communication. Cette configuration de groupe de rôles est le moyen le plus simple de démarrer rapidement avec la conformité des communications et convient parfaitement aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
-| **Administrateur de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications et, plus tard, pour séparer les administrateurs de conformité des communications dans un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des attributions de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
-| **Analyste de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui joueront le rôle d’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies à l’endroit où ils sont affectés en tant que réviseurs, afficher les métadonnées de message (et non le contenu du message), effectuer une escalade vers des réviseurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
-| **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui joueront le rôle d’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas eDiscovery (Premium), envoyer des notifications aux utilisateurs et résoudre l’alerte. |
-| **Visionneuse de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
+| **Administrateurs de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications et, plus tard, pour séparer les administrateurs de conformité des communications dans un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des attributions de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
+| **Analystes de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui joueront le rôle d’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies à l’endroit où ils sont affectés en tant que réviseurs, afficher les métadonnées de message (et non le contenu du message), effectuer une escalade vers des réviseurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
+| **Enquêteurs de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui joueront le rôle d’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas eDiscovery (Premium), envoyer des notifications aux utilisateurs et résoudre l’alerte. |
+| **Visionneuses de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
 
-1. Les administrateurs informatiques de Contoso se connectent à la page d’autorisations du [portail de conformité Microsoft Purview](https://compliance.microsoft.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
+1. Les administrateurs informatiques de Contoso se connectent à la page [d’autorisations portail de conformité Microsoft Purview](https://compliance.microsoft.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
 2. Dans le portail de conformité Microsoft Purview, ils accédent à <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Autorisations**</a> et sélectionnent le lien pour afficher et gérer les rôles dans Office 365.
 3. Les administrateurs sélectionnent le groupe de rôles *Conformité des communications* , puis sélectionnent **Modifier le groupe de rôles**.
 4. Les administrateurs **sélectionnent Choisir des membres** dans le volet de navigation gauche, puis sélectionnez **Modifier**.
@@ -104,7 +108,7 @@ Contoso décide d’utiliser le groupe de rôles *Conformité* des communication
 Après avoir configuré les autorisations pour la conformité des communications, les administrateurs informatiques et les spécialistes de conformité contoso affectés au groupe de rôles Conformité des communications peuvent accéder à la solution de conformité des communications dans Microsoft Purview. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont plusieurs façons d’accéder à la conformité des communications et de commencer à créer une stratégie :
 
 - Démarrage direct à partir de la solution de conformité des communications
-- À partir du portail de conformité Microsoft Purview
+- À partir de la portail de conformité Microsoft Purview
 - À partir du catalogue de solutions Microsoft Purview
 - À partir de la Centre d'administration Microsoft 365
 
@@ -114,21 +118,21 @@ Le moyen le plus rapide d’accéder à la solution consiste à se connecter dir
 
 ![Accueil de conformité des communications.](../media/communication-compliance-home.png)
 
-### <a name="starting-from-the-microsoft-purview-compliance-portal"></a>À partir du portail de conformité Microsoft Purview
+### <a name="starting-from-the-microsoft-purview-compliance-portal"></a>À partir de la portail de conformité Microsoft Purview
 
-Un autre moyen simple pour les administrateurs informatiques et les spécialistes de la conformité contoso d’accéder à la solution de conformité des communications consiste à se connecter directement au [portail de conformité Microsoft Purview](https://compliance.microsoft.com). Une fois connectés, les utilisateurs doivent simplement sélectionner le contrôle **Afficher tout** pour afficher toutes les solutions de conformité, puis sélectionner la solution de **conformité des communications** pour commencer.
+Un autre moyen simple pour les administrateurs informatiques et les spécialistes de la conformité de Contoso d’accéder à la solution de conformité des communications consiste à se connecter directement au [portail de conformité Microsoft Purview](https://compliance.microsoft.com). Une fois connectés, les utilisateurs doivent simplement sélectionner le contrôle **Afficher tout** pour afficher toutes les solutions de conformité, puis sélectionner la solution de **conformité des communications** pour commencer.
 
 ![Centre de conformité.](../media/communication-compliance-compliance-portal.png)
 
 ### <a name="starting-from-the-microsoft-purview-solution-catalog"></a>À partir du catalogue de solutions Microsoft Purview
 
-Les administrateurs informatiques et les spécialistes de la conformité de Contoso peuvent également choisir d’accéder à la solution de conformité des communications en sélectionnant le catalogue de solutions Microsoft Purview. En sélectionnant **Catalog** dans la section **Solutions** de la navigation de gauche dans le **portail de conformité Microsoft Purview**, ils peuvent ouvrir le catalogue de solutions répertoriant toutes les solutions Microsoft Purview. En faisant défiler jusqu’à la section **Gestion des risques Insider** , les administrateurs informatiques de Contoso peuvent sélectionner La conformité des communications pour commencer. Les administrateurs informatiques de Contoso décident également d’utiliser le contrôle Afficher dans la navigation pour épingler la solution de conformité des communications au volet de navigation gauche pour un accès plus rapide lorsqu’ils se connectent à l’avenir.
+Les administrateurs informatiques et les spécialistes de la conformité de Contoso peuvent également choisir d’accéder à la solution de conformité des communications en sélectionnant le catalogue de solutions Microsoft Purview. En sélectionnant **Catalog** dans la section **Solutions** du volet de navigation gauche dans le **portail de conformité Microsoft Purview**, ils peuvent ouvrir le catalogue de solutions répertoriant toutes les solutions Microsoft Purview. En faisant défiler jusqu’à la section **Gestion des risques Insider** , les administrateurs informatiques de Contoso peuvent sélectionner La conformité des communications pour commencer. Les administrateurs informatiques de Contoso décident également d’utiliser le contrôle Afficher dans la navigation pour épingler la solution de conformité des communications au volet de navigation gauche pour un accès plus rapide lorsqu’ils se connectent à l’avenir.
 
 ![Catalogue de solutions.](../media/m365-solution-catalog-home.png)
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>À partir de la Centre d'administration Microsoft 365
 
-Pour accéder à la conformité des communications à partir du Centre d'administration Microsoft 365, les administrateurs informatiques et les spécialistes de la conformité contoso se connectent au [Centre d'administration Microsoft 365](https://admin.microsoft.com) et accèdent au [portail de conformité Microsoft Purview](https://compliance.microsoft.com)
+Pour accéder à la conformité des communications à partir du Centre d'administration Microsoft 365, les administrateurs informatiques et les spécialistes de la conformité de Contoso se connectent au [Centre d'administration Microsoft 365](https://admin.microsoft.com) et accèdent à [ portail de conformité Microsoft Purview](https://compliance.microsoft.com)
 
 ![Lien de conformité des communications.](../media/communication-compliance-case-compliance-link.png)
 

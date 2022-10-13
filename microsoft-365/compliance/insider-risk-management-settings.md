@@ -12,18 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 30804601a463a47f2c11b0d8054a2435acdca486
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: 0bf0edeb32b23a941ef653823e95f6e63b4a686f
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648744"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564540"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques internes
+
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Les paramètres de gestion des risques internes s’appliquent à toutes les stratégies de gestion des risques internes, quel que soit le modèle que vous choisissez lors de la création d’une stratégie. Les paramètres sont configurés à l’aide du contrôle **des paramètres de risque Insider** situé en haut de toutes les pages de gestion des risques internes. Ces paramètres contrôlent les composants de stratégie pour les domaines suivants :
 
@@ -40,6 +46,8 @@ Les paramètres de gestion des risques internes s’appliquent à toutes les str
 - [notifications Administration](#admin-notifications)
 
 Avant de commencer et de créer des stratégies de gestion des risques internes, il est important de comprendre ces paramètres et de choisir les niveaux de définition les mieux adaptés aux besoins de conformité de votre organisation.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="privacy"></a>Confidentialité
 
@@ -64,7 +72,7 @@ Les signaux sont collectés et les alertes sont déclenchées par des stratégie
 - **Indicateurs de paramètres globaux : les indicateurs** activés dans les paramètres globaux pour la gestion des risques internes définissent à la fois les indicateurs disponibles pour la configuration dans les stratégies et les types de signaux d’activité utilisateur collectés par la gestion des risques internes. Par exemple, si un utilisateur copie des données vers des services de stockage cloud personnels ou des périphériques de stockage portables et que ces indicateurs sont sélectionnés uniquement dans les paramètres globaux, cette activité sera disponible pour examen dans l’Explorateur d’activités. Toutefois, étant donné que cette activité n’a pas été définie dans une stratégie de gestion des risques internes, l’activité ne reçoit pas de score de risque ou ne génère pas d’alerte.
 - **Indicateurs de** stratégie : les indicateurs inclus dans les stratégies de gestion des risques internes sont utilisés pour déterminer un score de risque pour un utilisateur dans l’étendue. Les indicateurs de stratégie sont activés à partir d’indicateurs définis dans les paramètres globaux et ne sont activés qu’après qu’un événement déclencheur se produit pour un utilisateur.  Certains exemples d’indicateurs de stratégie sont lorsqu’un utilisateur copie des données vers des services de stockage cloud personnels ou des périphériques de stockage portables, si un compte d’utilisateur est supprimé d’Azure Active Directory ou si un utilisateur partage des fichiers et dossiers internes avec des parties externes non autorisées.
 
-Certains indicateurs de stratégie peuvent également être utilisés pour personnaliser les événements de déclenchement pour des modèles de stratégie spécifiques. Lorsqu’ils sont configurés dans l’Assistant Stratégie pour *les fuites de données générales* ou *les fuites de données par les modèles d’utilisateurs prioritaires* , ces indicateurs vous offrent plus de flexibilité et de personnalisation pour vos stratégies et lorsque les utilisateurs sont dans l’étendue d’une stratégie. En outre, vous pouvez définir des seuils d’activité individuels pour ces indicateurs déclencheurs pour un contrôle plus précis dans une stratégie.
+Certains indicateurs et séquences de stratégie peuvent également être utilisés pour personnaliser les événements de déclenchement pour des modèles de stratégie spécifiques. Lorsqu’ils sont configurés dans l’Assistant Stratégie pour *les fuites de données générales* ou *les fuites de données par des modèles d’utilisateurs prioritaires* , ces indicateurs ou séquences vous offrent plus de flexibilité et de personnalisation pour vos stratégies et lorsque les utilisateurs sont dans l’étendue d’une stratégie. En outre, vous pouvez définir des seuils d’activité individuels pour ces indicateurs déclencheurs pour un contrôle plus précis dans une stratégie.
 
 Les indicateurs de stratégie sont segmentés dans les domaines suivants. Vous pouvez choisir les indicateurs pour activer et personnaliser les limites d’événements d’indicateur pour chaque niveau d’indicateur lors de la création d’une stratégie de risque interne :
 
@@ -663,3 +671,32 @@ Si vous préférez désactiver les notifications d’administration et d’analy
     - **Envoyer une notification par e-mail quand Analytics est désactivé**
 
 4. Sélectionnez **Enregistrer** pour configurer et quitter.
+
+## <a name="inline-alert-customization-preview"></a>Personnalisation des alertes inline (préversion)
+
+La personnalisation des alertes incluses vous permet d’ajuster rapidement une stratégie de gestion des risques internes directement à partir du **tableau de bord d’alerte** lors de l’examen de l’alerte. Les alertes sont générées lorsqu’une activité atteint les seuils configurés dans la stratégie associée. Pour réduire le nombre d’alertes que vous obtenez de cette activité, vous pouvez modifier les seuils de l’activité ou supprimer complètement l’activité de la stratégie.
+
+Vous pouvez activer la personnalisation des alertes en ligne pour permettre aux utilisateurs *affectés aux groupes de rôles Analystes de gestion des risques internes* et *Enquêteurs de la gestion des risques internes* de modifier les seuils de stratégie et de désactiver des indicateurs spécifiques. Si la personnalisation des alertes inline n’est pas activée, seuls les utilisateurs affectés aux groupes de rôles *Insider Risk Management Administration* ou *Insider Risk Management* peuvent modifier ces conditions de stratégie. La personnalisation des alertes incluses est prise en charge pour les alertes, quel que soit l’état actuel de l’alerte, ce qui permet aux analystes et aux enquêteurs de mettre à jour les stratégies pour les alertes *ignorées* et *résolues* si nécessaire.
+
+Effectuez les étapes suivantes pour activer la personnalisation des alertes inline :
+
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez aux paramètres de **risque insider de la gestion** > **des risques internes**.
+2. Sélectionnez la page de **personnalisation des alertes inline (préversion** ).
+3. Activez la personnalisation des alertes inline pour la gestion des risques internes.
+4. Sélectionnez **Enregistrer** pour configurer et quitter.
+
+> [!NOTE]
+> L’activation de la personnalisation des alertes en ligne prend environ une heure avant d’être disponible dans les alertes de stratégie nouvelles et existantes.
+
+Lorsque cette option est activée, les analystes et les enquêteurs peuvent sélectionner **Réduire les alertes pour cette activité pour** une alerte dans le **tableau de bord Alerte** et peuvent afficher des détails sur l’activité et les indicateurs associés à l’alerte. En outre, les seuils de stratégie actuels sont affichés pour le nombre d’événements utilisés pour créer des alertes de gravité faible, moyenne et élevée. Si **l’option Réduire les alertes pour cette activité** est sélectionnée et qu’une modification de stratégie précédente a été effectuée qui modifie le seuil ou a supprimé l’indicateur associé, vous verrez un message de notification détaillant les modifications précédentes apportées à la stratégie.
+
+Les analystes et les enquêteurs peuvent choisir parmi les options suivantes dans le volet **Réduire les alertes pour ce volet d’activité afin** de modifier rapidement la stratégie qui a créé l’alerte :
+
+- **Réduire les alertes à l’aide des seuils recommandés par Microsoft** : nous augmenterons automatiquement les seuils dans la stratégie pour vous. Vous pourrez passer en revue les nouveaux paramètres de seuil recommandés avant de modifier la stratégie.
+- **Réduisez les alertes en choisissant vos propres seuils** : vous pouvez augmenter manuellement les seuils de ce type d’activité pour les alertes actuelles et futures. Vous pourrez passer en revue les paramètres de seuil actuels et configurer les nouveaux paramètres de seuil avant de modifier la stratégie.
+- **Arrêtez d’obtenir des alertes pour cette activité** : cet indicateur est supprimé de la stratégie et cette activité ne sera plus détectée par la stratégie. Cela s’applique à tous les indicateurs, même si l’indicateur est basé sur un seuil.
+
+Après avoir choisi une option, les analystes et les enquêteurs peuvent choisir deux options pour mettre à jour la stratégie :
+
+- **Enregistrer et ignorer l’alerte** : enregistre les modifications apportées à la stratégie et met à jour l’état de l’alerte sur *Résolu*.
+- **Enregistrer uniquement** : enregistre les modifications apportées à la stratégie, mais l’état de l’alerte reste le même.

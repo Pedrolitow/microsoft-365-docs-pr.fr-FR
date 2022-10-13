@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 66b34f4b158bc23467a0f147e57330e7ee736f5a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: a26b31caeb695718b3a7c747265615490fc92321
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224775"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564211"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Mac
 
@@ -37,6 +37,28 @@ ms.locfileid: "68224775"
 Pour plus d’informations sur les Microsoft Defender pour point de terminaison sur d’autres systèmes d’exploitation : 
 - [Nouveautés de Microsoft Defender pour point de terminaison sur Linux](linux-whatsnew.md) 
 - [Nouveautés de Microsoft Defender pour point de terminaison sur iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Oct-2022 (Build : 101.82.21 | Version de version : 20.122082.18221.0)</summary>
+
+&ensp;Build : **101.82.21**<br/>
+&ensp;Version de version : **20.122082.18221.0**<br/>
+&ensp;Version du moteur : **1.1.19400.3**<br/>
+&ensp;Version de signature : **1.369.962.0**<br/>
+
+**Nouveautés**
+
+- Mac TP en mode Bloc provoquant le blocage de l’appareil lors de l’arrêt/blocage au redémarrage
+- Ajouter un commutateur de ligne de commande mdatp pour afficher l’historique d’analyse à la demande
+- Améliorer les performances du propriétaire de l’appareil sur MacOs
+- Prêt pour macOS Ventura (13.0)
+- Correctifs de bogues et de performances
+
+<br/>
+</details>
+
+> [!IMPORTANT]
+> Il s’agit d’une version MDE minimale sans problèmes connus sur macOS Ventura le jour de la publication des notes de publication. D’ici là et macOS Ventura GA, Apple peut encore publier Ventura Beta avec des changements de plateforme qui ont un impact sur l’expérience MDE. Consultez ces notes de publication autour de la date de disponibilité générale de Ventura pour le numéro de version MDE Ventura-compatible final recommandé.
 
 <details>
   <summary>Août 2022 (Build : 101.78.13 | Version de version : 20.122072.17813.0)</summary>
@@ -54,7 +76,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 - Correction de l’incident de l’interface utilisateur sur Ventura
 - Correctif pour les définitions qui ne sont pas téléchargées juste après l’installation
 - Autres correctifs de bogues
-
+    
 <br/>
 </details>
 

@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 9c776de6300c3b2b58b5d2778f351829a1c183f3
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: bac87e202ebf656f8da6986738e42f847b8e098a
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063527"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563249"
 ---
 # <a name="manage-mobile-devices-for-frontline-workers"></a>Gérer les appareils mobiles pour les employés de première ligne
 
@@ -93,14 +93,6 @@ Outre les appareils appartenant à votre entreprise, vous pouvez [inscrire](/mem
 Dans certains cas, les utilisateurs peuvent être réticents à inscrire leurs appareils personnels dans la gestion. Si l’inscription des appareils n’est pas une option, vous pouvez choisir une approche de gestion des applications mobiles (GAM) et utiliser des [stratégies de protection des applications](/mem/intune/apps/app-protection-policies) pour gérer les applications qui contiennent des données d’entreprise. Par exemple, vous pouvez appliquer des stratégies de protection des applications aux applications mobiles Teams et Office pour empêcher la copie des données d’entreprise vers des applications personnelles sur l’appareil.
 
 Pour plus d’informations, consultez [« Appareils personnels et appareils appartenant à l’organisation » dans le guide de planification Intune](/mem/intune/fundamentals/intune-planning-guide#personal-devices-vs-organization-owned-devices) et les [conseils de déploiement : Inscrire des appareils dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
-
-### <a name="off-shift-access-controls-in-teams"></a>Contrôles d’accès hors décalage dans Teams
-
-Les contrôles d’accès hors décalage vous aident à limiter l’accès à Teams lorsque les employés sont hors équipe. Avec cette fonctionnalité, vous pouvez définir Teams pour afficher un message lorsque les employés accèdent à l’application en dehors des heures de travail. Les travailleurs de première ligne doivent cliquer sur J’accepte pour accepter le message avant de pouvoir utiliser Teams.
-
-Le message par défaut informe l’employé qu’il ne sera pas payé pour le temps passé sur Teams en dehors des heures de travail. Vous pouvez utiliser le message par défaut, choisir un message prédéfini ou afficher le vôtre. Cette fonctionnalité permet de s’assurer que les employés ne travaillent pas involontairement lorsqu’ils ne travaillent pas en équipe et aide à se conformer aux réglementations du travail.
-
-Pour plus d’informations, consultez [L’accès hors équipe à Teams](manage-shift-based-access-flw.md#off-shift-access-to-teams).
 
 ## <a name="related-articles"></a>Articles connexes
 

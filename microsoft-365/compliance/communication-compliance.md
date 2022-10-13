@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7ea484e30330819f67f1ac0a8eaf7b7e789503c
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 5082d07b9b0b0552917dff6071662ee713a7769b
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503179"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565074"
 ---
 # <a name="learn-about-communication-compliance"></a>En savoir plus sur la conformité des communications
 
@@ -135,6 +135,13 @@ Les stratégies de conformité des communications analysent et capturent les mes
 
 Pour en savoir plus sur la prise en charge des canaux de messagerie dans les stratégies de conformité des communications, consultez [Détecter les signaux de canal avec la conformité des communications](/microsoft-365/compliance/communication-compliance-channels).
 
+## <a name="integration-with-insider-risk-management-preview"></a>Intégration à la gestion des risques internes (préversion)
+
+La conformité des communications peut fournir des signaux disgruntlement détectés dans les messages aux stratégies de disgruntlement de la gestion des risques internes. À l’aide d’une stratégie [de détection de texte inappropriée](/microsoft-365/compliance/communication-compliance-policies#policy-templates) dédiée dans la conformité des communications, vous pouvez choisir d’ajouter cette stratégie à une [fuite de données par des employés mécontents](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) ou [des violations de stratégie de sécurité par la stratégie des employés mécontents](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) dans la gestion des risques internes. Le disgruntlement détecté dans les messages par la stratégie de conformité des communications agit comme un événement déclencheur pour placer les utilisateurs dans l’étendue des stratégies de gestion des risques internes.
+
+Pour en savoir plus sur l’intégration à la gestion des risques internes, consultez [Créer et gérer des stratégies de conformité des communications](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview).
+Pour en savoir plus sur la gestion des risques internes, consultez [En savoir plus sur la gestion des risques internes](/microsoft-365/compliance/insider-risk-management).
+
 ## <a name="get-started-with-recommended-actions-preview"></a>Prise en main des actions recommandées (préversion)
 
 Que vous configuriez la conformité des communications pour la première fois ou que vous commenciez à créer de nouvelles stratégies, la nouvelle expérience [d’actions recommandées](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) peut vous aider à tirer le meilleur parti des fonctionnalités de conformité des communications. Les actions recommandées incluent la configuration d’autorisations, la création de groupes de distribution, la création d’une stratégie, etc.
@@ -156,8 +163,8 @@ Dans cette étape de flux de travail, vous identifiez vos exigences de conformit
 
 Vous pouvez choisir parmi les modèles de stratégie suivants dans le portail de conformité Microsoft Purview :
 
-- **Surveiller le texte inapproprié** : utilisez ce modèle pour créer rapidement une stratégie qui utilise des classifieurs intégrés pour détecter automatiquement le texte dans les messages qui peuvent être considérés comme inappropriés, abusifs ou offensants.
-- **Surveiller les images inappropriées** : utilisez ce modèle pour créer rapidement une stratégie qui utilise des classifieurs intégrés pour détecter automatiquement le contenu qui contient des images adultes et osées qui peuvent être considérées comme inappropriées dans votre organisation.
+- **Détecter le texte inapproprié** : utilisez ce modèle pour créer rapidement une politique qui utilise des classificateurs intégrés pour détecter automatiquement le texte dans les messages qui peuvent être considérés comme inappropriés, abusifs ou offensants.
+- **Détecter les images inappropriées** : Utilisez ce modèle pour créer rapidement une stratégie qui utilise des classificateurs intégrés pour détecter automatiquement le contenu contenant des images adultes et racoleuses qui peuvent être considérées comme inappropriées dans votre organisation.
 - **Surveiller les informations sensibles** : utilisez ce modèle pour créer rapidement une stratégie pour analyser les communications contenant des types d’informations sensibles définis ou des mots clés afin de vous assurer que les données importantes ne sont pas partagées avec des personnes qui ne doivent pas avoir accès.
 - **Surveiller la conformité aux réglementations financières** : utilisez ce modèle pour créer rapidement une stratégie afin d’analyser les communications à la recherche de références aux termes financiers standard associés aux normes réglementaires.
 - **Surveillance des conflits d'intérêts** : Utilisez ce modèle pour créer rapidement une stratégie visant à détecter les communications entre deux groupes ou deux utilisateurs afin d'éviter les conflits d'intérêts.

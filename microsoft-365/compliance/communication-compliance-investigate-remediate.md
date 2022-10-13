@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 21fadb41e5e63780ccd25f5089af9d39ec96016d
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 34202379220a6a36194662f4b8b2a74a71258b6f
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533505"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565221"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -251,7 +251,7 @@ Lorsque les messages sont résolus, ils sont supprimés de l’affichage onglet 
 
 Pour annuler l’exécution des messages, effectuez les étapes suivantes :
 
-1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un utilisateur affecté aux groupes de *rôles Analyste de conformité des communications* ou *Enquêteur de conformité des communications* dans votre organisation Microsoft 365.
+1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un utilisateur affecté aux *groupes de rôles Analystes de conformité des communications* ou *Enquêteurs de conformité des communications* dans votre organisation Microsoft 365.
 2. Dans le portail de conformité Microsoft Purview, accédez à **La conformité des communications**.
 3. Sélectionnez l’onglet **Stratégies** , puis sélectionnez une stratégie qui contient le message d’alerte résolu, double-cliquez pour ouvrir la page **Stratégie** .
 4. Dans la page **Stratégie** , sélectionnez l’onglet **Résolu** .

@@ -11,13 +11,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-description: Référence de format SKOS pour la taxonomie SharePoint
-ms.openlocfilehash: 0c40109f11d904db399effc874c24d3efd776a39
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Découvrez les références de format SKOS pour la taxonomie SharePoint.
+ms.openlocfilehash: 794b1d444ca49a7b33e0a60b46cefe896dd8578a
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026049"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564189"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>Référence de format SKOS pour la taxonomie SharePoint
 

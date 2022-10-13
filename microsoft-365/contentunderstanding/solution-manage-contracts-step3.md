@@ -12,20 +12,20 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Découvrez comment utiliser Power Automate pour créer votre flux afin de traiter vos contrats à l’aide d’une solution Microsoft 365.
-ms.openlocfilehash: 0a449fbac6fe7a0dd9c66e49a0ba6dd57b649b15
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: fbdf155fa1cd8e9b9b94a98dee09d1544c8e439e
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578849"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564649"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Étape 3. Utiliser Power Automate pour créer le flux de traitement de vos contrats
 
-Vous avez créé votre canal de gestion des contrats et attaché votre bibliothèque de documents SharePoint. L’étape suivante consiste à créer un flux Power Automate pour traiter vos contrats que votre modèle SharePoint Syntex identifie et classifie. Vous pouvez effectuer cette étape [en créant un flux Power Automate dans votre bibliothèque de documents SharePoint](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+Vous avez créé votre canal de gestion des contrats et attaché votre bibliothèque de documents SharePoint. L’étape suivante consiste à créer un flux Power Automate pour traiter vos contrats que votre modèle Syntex identifie et classifie. Vous pouvez effectuer cette étape [en créant un flux Power Automate dans votre bibliothèque de documents SharePoint](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
 Pour votre solution de gestion des contrats, vous souhaitez créer un flux Power Automate pour effectuer les actions suivantes :
 
--  Une fois qu’un contrat a été classé par votre modèle de SharePoint Syntex, remplacez l’état du contrat par **En révision**.
+-  Une fois qu’un contrat a été classé par votre modèle Syntex, remplacez l’état du contrat par **En révision**.
 - Le contrat est ensuite examiné et est approuvé ou rejeté.
 - Pour les contrats approuvés, les informations de contrat sont publiées dans un onglet pour le traitement des paiements.
 - Pour les contrats rejetés, l’équipe est avertie pour une analyse plus approfondie. 
@@ -36,7 +36,7 @@ Le diagramme suivant montre le flux Power Automate pour la solution de gestion d
 
 ## <a name="prepare-your-contract-for-review"></a>Préparer votre contrat pour révision
 
-Lorsqu’un contrat est identifié et classifié par votre modèle de compréhension de document SharePoint Syntex, le flux Power Automate remplace d’abord l’état **Par révision**.
+Lorsqu’un contrat est identifié et classifié par votre modèle de compréhension de document Syntex, le flux Power Automate remplace d’abord l’état **Par révision**.
 
 ![Mettre à jour l’état.](../media/content-understanding/flow-overview.png)
 

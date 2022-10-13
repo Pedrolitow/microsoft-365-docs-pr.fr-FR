@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 26aa7bd217092ad28932ff91113f130122cdfeb2
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: d356c89866cc1a0f3727bf647fd451cc4339d8ae
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506035"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564430"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
@@ -198,7 +198,7 @@ Pour les organisations du secteur de la santé, des études récentes ont révé
 
 ### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Actions et comportements des utilisateurs mécontents (préversion)
 
-Les événements stressants liés à l’emploi peuvent avoir un impact sur le comportement des utilisateurs de plusieurs manières liées aux risques internes. Ces facteurs de stress peuvent être une révision des performances médiocre, une rétrogradation de position ou le placement de l’utilisateur sur un plan d’évaluation des performances. Bien que la plupart des utilisateurs ne répondent pas de manière malveillante à ces événements, le stress de ces actions peut entraîner le comportement de certains utilisateurs d’une manière qu’ils peuvent normalement ne pas prendre en compte dans des circonstances normales. Pour vous aider à identifier ces types d’activités à risque, les modèles de stratégie de gestion des risques internes suivants utilisent le connecteur Microsoft 365 HR et commencent à noter les indicateurs de risque liés aux comportements qui peuvent se produire à proximité des événements du stresseur d’emploi :
+Les événements du stresseur d’emploi peuvent avoir un impact sur le comportement des utilisateurs de plusieurs manières liées aux risques internes. Ces facteurs de stress peuvent être une révision des performances médiocre, une rétrogradation de position ou le placement de l’utilisateur sur un plan d’évaluation des performances. Les facteurs de stress peuvent également entraîner des comportements potentiellement inappropriés, tels que les utilisateurs qui envoient des propos potentiellement menaçants, harcelants ou discriminatoires dans le courrier électronique et d’autres messages. Bien que la plupart des utilisateurs ne répondent pas de manière malveillante à ces événements, le stress de ces actions peut entraîner le comportement de certains utilisateurs d’une manière qu’ils peuvent normalement ne pas prendre en compte dans des circonstances normales. Pour vous aider à identifier ces types d’activités à risque, les modèles de stratégie de gestion des risques internes suivants peuvent utiliser le connecteur RH et/ou l’intégration à une [stratégie de conformité des communications dédiée](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) afin d’étendre les utilisateurs aux stratégies de gestion des risques internes et de commencer à noter les indicateurs de risque liés aux comportements susceptibles de se produire à proximité des événements de stress de l’emploi :
 
 - [Fuites de données par des utilisateurs mécontents (préversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Violations de stratégie de sécurité par un utilisateur mécontent (préversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

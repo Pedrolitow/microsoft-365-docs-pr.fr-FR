@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d4a8d948f460bf44d7d159a39eedcf2a0ca65c73
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 5487b2292901cd34599664215f18b4bbdc7cd943
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503883"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564627"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -133,9 +133,11 @@ Pour plus d’informations sur l’alerte, utilisez les sections et onglets suiv
 Cette section contient des informations générales sur l’utilisateur et l’alerte. Ces informations sont disponibles pour le contexte tout en examinant des informations détaillées sur l’activité détectée incluse dans l’alerte pour l’utilisateur :
 
 - **Activité qui a généré cette alerte** : affiche l’activité à risque supérieur et la correspondance de stratégie pendant la période d’évaluation de l’activité qui a conduit à la génération de l’alerte.
-- **Événement de déclenchement** : affiche l’événement de déclenchement le plus récent qui a invité la stratégie à commencer à attribuer des scores de risque à l’activité de l’utilisateur.
+- **Événement de déclenchement** : affiche l’événement de déclenchement le plus récent qui a invité la stratégie à commencer à attribuer des scores de risque à l’activité de l’utilisateur. Si vous avez configuré [l’intégration à la conformité des communications](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) pour *les fuites de données par des utilisateurs mécontents* ou *des violations de stratégie de sécurité par des stratégies d’utilisateurs mécontents* , l’événement déclenchant ces alertes sera limité à l’activité de conformité des communications.
 - **Profil utilisateur** : affiche des informations générales sur l’utilisateur affecté à l’alerte. Si l’anonymisation est activée, les champs nom d’utilisateur, adresse e-mail, alias et organisation sont rendus anonymes.
 - **Historique des alertes** utilisateur : affiche une liste d’alertes pour l’utilisateur au cours des 30 derniers jours. Inclut un lien permettant d’afficher l’historique complet des alertes pour l’utilisateur.
+
+Les alertes générées à partir de stratégies limitées aux activités qui incluent uniquement le [contenu de priorité](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) incluent la *seule activité avec un contenu de priorité qui a été notée pour cette notification d’alerte* dans cette section.
 
 ### <a name="all-risk-factors"></a>Tous les facteurs de risque
 
@@ -176,7 +178,7 @@ Le graphique **d’activité utilisateur** est l’un des outils les plus puissa
     - **Catégorie de risque** : Filtrer les activités selon les catégories de risque suivantes : *Activités avec des scores de risque > 15 (sauf dans une séquence)* et *activités de séquence*.
     - **Type d’activité** : Filtrez les activités selon les types suivants : *Accès*, *Suppression*, *Collection*, *Exfiltration*, *Infiltration*, *Obfuscation* et *Sécurité*.
     - **Trier par** : répertorie les activités de chronologie par *date ou* *score de risque*.
-4. **Séquence de** risques : l’ordre chronologique des activités à risque est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus grande. Cette vue des activités peut aider les enquêteurs à « connecter les points » littéralement aux activités à risque qui auraient pu être considérées comme des événements isolés ou ponctuels. Sélectionnez une bulle dans la séquence pour afficher les détails de toutes les activités à risque associées. Les détails sont les suivants :
+4. **Séquence de** risques : l’ordre chronologique des activités à risque est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus grande. Les séquences sont également identifiées dans cette vue par une icône positionnée au-dessus des activités de séquence par rapport au score de risque de la séquence. Pointez sur l’icône pour afficher la date et l’heure de l’activité à risque associée à cette séquence. Cette vue des activités peut aider les enquêteurs à « connecter les points » littéralement aux activités à risque qui auraient pu être considérées comme des événements isolés ou ponctuels. Sélectionnez l’icône ou n’importe quelle bulle dans la séquence pour afficher les détails de toutes les activités à risque associées. Les détails sont les suivants :
 
     - **Nom** de la séquence.
     - **Plage de dates** ou **de dates** de la séquence.
@@ -266,6 +268,7 @@ L’examen, l’examen et l’action sur les alertes de risque interne sont des 
 
 - **Ajustez vos stratégies de risque interne** : la sélection et la configuration de la stratégie de risque interne correcte sont la méthode la plus simple pour traiter le type et le volume d’alertes. En commençant par le [modèle de stratégie](insider-risk-management-policies.md#policy-templates) approprié, vous pouvez concentrer les types d’activités et d’alertes à risque que vous verrez. Les autres facteurs susceptibles d’avoir un impact sur le volume d’alertes sont la taille de l’utilisateur et des groupes dans l’étendue, ainsi que le contenu et [les canaux qui sont hiérarchisés](insider-risk-management-policies.md#prioritize-content-in-policies). Envisagez d’ajuster les stratégies pour affiner ces domaines à ce qui est le plus important pour votre organisation.
 - **Modifiez vos paramètres de risque interne : les paramètres** de risque Insider incluent une grande variété d’options de configuration qui peuvent avoir un impact sur le volume et les types d’alertes que vous recevrez. Ces paramètres incluent les [paramètres des indicateurs de stratégie](insider-risk-management-settings.md#indicators), [des seuils d’indicateurs](insider-risk-management-settings.md#indicator-level-settings-preview) et [des périodes de stratégie](insider-risk-management-settings.md#policy-timeframes). Envisagez de configurer des options de [détection intelligente](insider-risk-management-settings.md#intelligent-detections) pour exclure des types de fichiers spécifiques, de définir des seuils minimaux avant que vos stratégies ne signalent les alertes d’activité et de remplacer la configuration du volume d’alerte par un paramètre inférieur.
+- **Activer la personnalisation des alertes en ligne (préversion)** : l’activation de [la personnalisation des alertes inline](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) permet aux analystes et aux enquêteurs de modifier rapidement les stratégies lors de l’examen des alertes. Ils peuvent mettre à jour les seuils de détection d’activité avec des recommandations Microsoft, configurer des seuils personnalisés ou choisir d’ignorer le type d’activité qui a créé l’alerte. Si cette option n’est pas activée, seuls les utilisateurs affectés au groupe de rôles *Insider Risk Management* peuvent utiliser la personnalisation des alertes inline.
 - **Suppression en bloc des alertes le cas échéant** : cela peut vous aider à gagner du temps de triage pour que vos analystes et vos enquêteurs [ignorent immédiatement plusieurs alertes](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) à la fois. Vous pouvez sélectionner jusqu’à 400 alertes à ignorer à la fois.
 
 ### <a name="not-familiar-with-the-alert-triage-process"></a>Non familiarisé avec le processus de triage des alertes

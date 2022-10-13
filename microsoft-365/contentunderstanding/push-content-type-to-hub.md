@@ -1,6 +1,6 @@
 ---
 title: Envoyer (push) des types de contenu à un hub
-description: Découvrez comment envoyer (push) des types de contenu à un hub
+description: Découvrez comment envoyer (push) des types de contenu à un hub.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: shrganguly
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 9a90c076d8097a2497a536db89f1879b91279105
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 3437073029cae2611d10a53b6f07d4d56ca19722
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536387"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565463"
 ---
 # <a name="push-content-types-to-a-hub"></a>Envoyer (push) des types de contenu à un hub
 
@@ -30,7 +30,7 @@ ms.locfileid: "68536387"
 </br>
 
 
-Pour mettre les types de contenu importants systématiquement à la disposition des bibliothèques et des listes SharePoint, vous pouvez les pousser vers les hubs de votre choix. L’application des types de contenu les ajoute automatiquement à toutes les listes et bibliothèques créées sur les sites associés au hub, ainsi qu’à tous les nouveaux sites ajoutés à ce dernier. Cette fonctionnalité nécessite une licence [SharePoint Syntex](index.md).
+Pour mettre les types de contenu importants systématiquement à la disposition des bibliothèques et des listes SharePoint, vous pouvez les pousser vers les hubs de votre choix. L’application des types de contenu les ajoute automatiquement à toutes les listes et bibliothèques créées sur les sites associés au hub, ainsi qu’à tous les nouveaux sites ajoutés à ce dernier. Cette fonctionnalité nécessite une licence [Microsoft Syntex](index.md) .
 
 Pour que cette fonctionnalité soit opérationnelle, les types de contenu envoyés par commande push doivent être déjà publiés.
 

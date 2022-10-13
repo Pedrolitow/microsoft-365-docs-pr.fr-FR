@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: eb44b1ce51466af5c1478b894721c54c13e89b40
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 9b8ef92016ea87e69cf1284c4ae740a3978f1fba
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503553"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564583"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -285,35 +285,37 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 8. Sélectionnez **Suivant** pour continuer.
 9. Sur la page **Contenu à prioriser**, vous pouvez attribuer (le cas échéant) les sources à hiérarchiser, ce qui augmente les possibilités de générer une alerte de gravité élevée pour ces sources. Sélectionnez l'une des options suivantes :
 
-    - **Je souhaite spécifier des sites SharePoint, des étiquettes de confidentialité, des types d’informations sensibles et/ou des extensions de fichier comme contenu prioritaire**. La sélection de cette option active les pages détaillées dans l’Assistant pour configurer ces canaux.
-    - **Je ne souhaite pas indiquer de contenu prioritaire pour le moment (vous pourrez le faire après la création de la stratégie)**. La sélection de cette option permettra d’ignorer les pages détaillées du canal dans l’Assistant.
+    - **Je veux hiérarchiser le contenu**. La sélection de cette option vous permet de hiérarchiser les *sites SharePoint*, *les étiquettes de confidentialité, les* *types d’informations sensibles* et les types de contenu *d’extensions* de fichier. Si vous choisissez cette option, vous devez sélectionner au moins un type de contenu prioritaire.
+    - **Je ne veux pas spécifier de contenu prioritaire pour le moment**. La sélection de cette option ignore les pages de détails de contenu prioritaires dans l’Assistant.
 
 10. Sélectionnez **Suivant** pour continuer.
 
-11. Si vous avez sélectionné **je souhaite spécifier des sites SharePoint, des étiquettes de confidentialité, des types d’informations sensibles et/ou des extensions de fichier comme contenu prioritaire** à l’étape précédente, vous verrez les pages de détails pour les *sites SharePoint*, *les types d’informations sensibles*, *les étiquettes de confidentialité* et *les extensions de fichier*. Utilisez ces pages de détails pour définir les types d’informations sensibles SharePoint, les étiquettes de confidentialité et les extensions de fichier à hiérarchiser dans la stratégie.
+11. Si vous avez sélectionné **je souhaite hiérarchiser le contenu à** l’étape précédente, vous verrez les pages de détails pour les *sites SharePoint*, *les types d’informations sensibles*, *les étiquettes de confidentialité*, *les extensions de fichier et le* *scoring*. Utilisez ces pages de détails pour définir les types d’informations sensibles SharePoint, les étiquettes de confidentialité et les extensions de fichier à hiérarchiser dans la stratégie. La page *détails du scoring* vous permet d’étendre la stratégie pour attribuer uniquement des scores de risque et générer des alertes pour les activités spécifiées qui incluent du contenu prioritaire.
 
     - **Sites SharePoint** : sélectionnez **Ajouter un site SharePoint**, puis sélectionnez les sites SharePoint auxquels vous avez accès et que vous souhaitez classer. Par exemple, *« groupe1@contoso.sharepoint.com/sites/group1 »*.
     - **Type d’information sensible** : sélectionnez **Ajouter un type d’information confidentielle**, puis les types de confidentialité que vous souhaitez classer. Par exemple, *« Numéro de compte bancaire américain »* et *« Numéro de carte de crédit »*.
     - **Étiquette de confidentialité** : sélectionnez **Ajouter une étiquette de confidentialité**, puis les étiquettes que vous souhaitez classer. Par exemple, *« Confidentiel »* et *« Secret »*.
-    - Extensions de fichier : ajoutez jusqu’à 50 extensions de fichier. Vous pouvez inclure ou omettre le « . » avec l’extension de fichier. Par exemple, *.py* ou *py* hiérarchiserait les fichiers Python.
+    - **Extensions de fichier** : ajoutez jusqu’à 50 extensions de fichier. Vous pouvez inclure ou omettre le « . » avec l’extension de fichier. Par exemple, *.py* ou *py* hiérarchiserait les fichiers Python.
+    - **Scoring** : déterminez s’il faut attribuer des scores de risque à toutes les activités détectées par cette stratégie ou uniquement pour les activités qui incluent du contenu de priorité. Choisissez **Obtenir des alertes pour toutes les activités** ou **Obtenez des alertes uniquement pour l’activité qui inclut le contenu prioritaire**.
 
     > [!NOTE]
     > Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites SharePoint prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 
 12. Sélectionnez **Suivant** pour continuer.
-13. Si vous avez sélectionné les *fuites de données générales ou les fuites* de *données par des modèles d’utilisateurs prioritaires* , vous verrez des options sur les **déclencheurs** de cette page de stratégie pour les événements de déclenchement personnalisé et les indicateurs de stratégie. Vous avez le choix de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue pour le scoring d’activité. Si vous sélectionnez **l’option d’événement de déclenchement de stratégie de protection contre la perte de données (DLP),** vous devez sélectionner une stratégie DLP dans la liste déroulante de la stratégie DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez **l’utilisateur exécute une option d’événement de déclenchement d’activité d’exfiltration** , vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement de déclenchement de stratégie.
+13. Si vous avez sélectionné les *fuites de données générales ou les fuites* de *données par des modèles d’utilisateurs prioritaires* , vous verrez des options sur les **déclencheurs de cette page de stratégie** pour les événements de déclenchement personnalisé et les indicateurs de stratégie. Vous avez le choix de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue pour le scoring d’activité. Si vous sélectionnez **l’option d’événement de déclenchement de stratégie de protection contre la perte de données (DLP),** vous devez sélectionner une stratégie DLP dans la liste déroulante de la stratégie DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez **l’utilisateur exécute une option d’événement de déclenchement d’activité d’exfiltration** , vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement de déclenchement de stratégie.
 
     > [!IMPORTANT]
-    > Si vous ne parvenez pas à sélectionner un indicateur répertorié, c’est qu’il n’est pas activé pour votre organisation. Pour les rendre disponibles pour sélectionner et affecter à la stratégie, activez les indicateurs dans les **indicateurs** de stratégie **des paramètres** de gestion  >  des  > **risques internes**.
+    > Si vous ne parvenez pas à sélectionner un indicateur ou une séquence répertorié, c’est parce qu’ils ne sont pas actuellement activés pour votre organisation. Pour les rendre disponibles pour sélectionner et affecter à la stratégie, sélectionnez l’invite **Activer les indicateurs** .
 
     Si vous avez sélectionné d’autres modèles de stratégie, les événements de déclenchement personnalisés ne sont pas pris en charge. Les événements de déclenchement de stratégie intégrés s’appliquent et vous passez à l’étape 23 sans définir d’attributs de stratégie.
 
-14. Sélectionnez **Suivant** pour continuer.
-15. Si vous avez sélectionné les *fuites de données générales ou les fuites* de *données par des modèles d’utilisateurs prioritaires* et que vous avez sélectionné l’utilisateur **effectue une activité d’exfiltration et les indicateurs associés**, vous pouvez choisir des seuils personnalisés ou par défaut pour l’indicateur déclenchant les événements que vous avez sélectionnés. Choisissez les **seuils d’utilisation par défaut (recommandés)** ou **utilisez des seuils personnalisés pour les événements déclencheurs**.
-16. Sélectionnez **Suivant** pour continuer.
-17. Si vous avez sélectionné **Utiliser des seuils personnalisés pour les événements de déclenchement**, pour chaque indicateur d’événement de déclenchement que vous avez sélectionné à l’étape 13, choisissez le niveau approprié pour générer le niveau souhaité d’alertes d’activité. Vous pouvez utiliser les seuils recommandés, les seuils personnalisés ou les seuils basés sur des activités anormales (pour certains indicateurs) au-dessus de la norme quotidienne pour les utilisateurs.
-18. Sélectionnez **Suivant** pour continuer.
-19. Dans la page **Indicateurs** de stratégie, vous verrez [les indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles dans la page **Indicateurs des paramètres de** >  risque Insider. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
+14. Si vous avez sélectionné les *fuites de données par des utilisateurs mécontents* ou *des violations de stratégie de sécurité par des modèles d’utilisateurs mécontents* , vous verrez des options sur les **déclencheurs de cette page de stratégie pour** l’intégration à la conformité des communications et aux événements du connecteur de données RH. Vous avez le choix d’attribuer des scores de risque lorsque les utilisateurs envoient des messages qui contiennent des propos potentiellement menaçants, de harcèlement ou discriminatoires, ou de placer les utilisateurs dans l’étendue de la stratégie après que des événements disgruntlement ont été signalés dans votre système RH. Si vous sélectionnez les **déclencheurs disgruntlement dans l’option conformité des communications (préversion),** vous pouvez accepter la stratégie de conformité des communications par défaut (créée automatiquement), choisir une étendue de stratégie précédemment créée pour ce déclencheur ou créer une autre stratégie délimitée. Si vous sélectionnez **des événements de connecteur de données RH**, vous devez configurer un connecteur de données RH pour votre organisation.
+15. Sélectionnez **Suivant** pour continuer.
+16. Si vous avez sélectionné les *fuites de données générales ou les fuites* de *données par des modèles d’utilisateurs prioritaires* et que vous avez sélectionné l’utilisateur **effectue une activité d’exfiltration et les indicateurs associés**, vous pouvez choisir des seuils personnalisés ou par défaut pour l’indicateur déclenchant les événements que vous avez sélectionnés. Choisissez les **seuils d’utilisation par défaut (recommandés)** ou **utilisez des seuils personnalisés pour les événements déclencheurs**.
+17. Sélectionnez **Suivant** pour continuer.
+18. Si vous avez sélectionné **Utiliser des seuils personnalisés pour les événements de déclenchement**, pour chaque indicateur d’événement de déclenchement que vous avez sélectionné à l’étape 13, choisissez le niveau approprié pour générer le niveau souhaité d’alertes d’activité. Vous pouvez utiliser les seuils recommandés, les seuils personnalisés ou les seuils basés sur des activités anormales (pour certains indicateurs) au-dessus de la norme quotidienne pour les utilisateurs.
+19. Sélectionnez **Suivant** pour continuer.
+20. Dans la page **Indicateurs** de stratégie, vous verrez [les indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles dans la page **Indicateurs des paramètres de** >  risque Insider. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
 
     > [!IMPORTANT]
     > Si les indicateurs sur cette page ne peuvent pas être sélectionnés, vous sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies. Vous pouvez utiliser le bouton **Activer les indicateurs** dans l’Assistant ou sélectionner des indicateurs sur la page **Gestion des risques internes** > **Paramètres** > **Indicateurs de stratégie**.
@@ -322,10 +324,10 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
     Si vous avez sélectionné un modèle de stratégie *Vol de données* ou *Fuites de données*, choisissez au moins une des méthodes **Détection de séquence** et une méthode **Détection d’exfiltration cumulée** à appliquer à la stratégie.
     Si vous avez sélectionné le modèle de stratégie *d’utilisation du navigateur à risque* , sélectionnez un ou plusieurs **des indicateurs de navigation**.
 
-20. Sélectionnez **Suivant** pour continuer.
-21. Dans la page **Décider d’utiliser des seuils d’indicateurs par défaut ou personnalisés** , choisissez des seuils personnalisés ou par défaut pour les indicateurs de stratégie que vous avez sélectionnés. Choisissez les **seuils d’utilisation par défaut pour tous les indicateurs** ou **spécifiez des seuils personnalisés** pour les indicateurs de stratégie sélectionnés. Si vous avez sélectionné Spécifier des seuils personnalisés, choisissez le niveau approprié pour générer le niveau d’alertes d’activité souhaité pour chaque indicateur de stratégie.
-22. Sélectionnez **Suivant** pour continuer.
-23. Sur la page **Évaluation**, examinez les paramètres choisis pour la stratégie et toute suggestion ou tout avertissement pour vos sélections. Sélectionnez **Modifier** pour changer toute valeur de stratégie ou **Soumettre** pour créer et activer la stratégie.
+21. Sélectionnez **Suivant** pour continuer.
+22. Dans la page **Décider d’utiliser des seuils d’indicateurs par défaut ou personnalisés** , choisissez des seuils personnalisés ou par défaut pour les indicateurs de stratégie que vous avez sélectionnés. Choisissez les **seuils d’utilisation par défaut pour tous les indicateurs** ou **spécifiez des seuils personnalisés** pour les indicateurs de stratégie sélectionnés. Si vous avez sélectionné Spécifier des seuils personnalisés, choisissez le niveau approprié pour générer le niveau d’alertes d’activité souhaité pour chaque indicateur de stratégie.
+23. Sélectionnez **Suivant** pour continuer.
+24. Sur la page **Évaluation**, examinez les paramètres choisis pour la stratégie et toute suggestion ou tout avertissement pour vos sélections. Sélectionnez **Modifier** pour changer toute valeur de stratégie ou **Soumettre** pour créer et activer la stratégie.
 
 ## <a name="next-steps"></a>Prochaines étapes
 

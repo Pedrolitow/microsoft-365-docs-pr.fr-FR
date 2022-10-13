@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le score d’adoption de Microsoft reflète les mesures de l’expérience des personnes et de la technologie et les compare à des organisations de taille similaire.
-ms.openlocfilehash: 372d9d13b02b8d0087c40a1e97c870dbfc6cb97b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: eff127b92aa14a80756827f93583e43df72f7456
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205022"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563491"
 ---
 # <a name="microsoft-adoption-score"></a>Score d’adoption de Microsoft 
 
@@ -47,16 +47,29 @@ Nous fournissons des mesures, des informations et des recommandations dans deux 
 
     Pour chacune des catégories mentionnées, nous examinons la recherche publique pour identifier des pratiques recommandées et des avantages associés sous la forme d’une efficacité organisationnelle. Par exemple, les recherches Forrester ont montré que lorsque des personnes collaborent et partagent du contenu dans le cloud (au lieu d’envoyer des pièces jointes par courrier électronique), elles peuvent enregistrer jusqu’à 100 minutes par semaine. De plus, nous quantifions l’utilisation de ces pratiques recommandées au sein de votre organisation pour vous aider à déterminer où vous êtes sur votre transformation numérique. 
 
-- **Expériences technologiques :** votre organisation dépend de technologies fiables et performantes, ainsi que de l’utilisation efficace de Microsoft 365. Les [analyses de point de terminaison](https://aka.ms/endpointanalytics) vous aident à comprendre comment l’organisateur peut être affectée par des problèmes de performances et d’intégrité de votre matériel et de vos logiciels. L’état d’intégrité des applications Microsoft 365 vous permet de comprendre si les appareils de votre organisation exécutent les applications Microsoft 365 sur les canaux recommandés.
-
-## <a name="before-you-begin"></a>Avant de commencer
-
-Pour plus d’informations et pour obtenir des informations sur les conditions préalables, voir [Qu’est-ce qu’Endpoint Analytics ?](/mem/analytics/overview). Pour en savoir plus sur les informations relatives à la connectivité réseau de Microsoft 365, consultez la [vue d’ensemble de la connectivité réseau](../../enterprise/microsoft-365-networking-overview.md).
-
-Pour les données sur les expériences des personnes, vous avez besoin d’un abonnement Microsoft 365 Entreprise ou Office 365 Entreprise. Pour les données d’analyse de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous disposez d’Intune, vous pouvez activer les analyses de point de terminaison au sein de l’expérience Intune. Pour en savoir plus sur Microsoft Intune, voir la [Documentation Microsoft Intune](/mem/intune/). 
+- **Expériences technologiques :** votre organisation dépend de technologies fiables et performantes, ainsi que de l’utilisation efficace de Microsoft 365. Les [analyses de point de terminaison](https://aka.ms/endpointanalytics) vous aident à comprendre comment l’organisateur peut être affectée par des problèmes de performances et d’intégrité de votre matériel et de vos logiciels. [La connectivité réseau](../../enterprise/microsoft-365-networking-overview.md) vous aide à comprendre les performances d’Exchange, SharePoint et Microsoft Teams sur votre architecture réseau. Vous pouvez passer en revue et mettre à jour les paramètres réseau pour améliorer la connectivité. L’état d’intégrité des applications Microsoft 365 vous permet de comprendre si les appareils de votre organisation exécutent les applications Microsoft 365 sur les canaux recommandés.
 
 > [!NOTE]
-> Une licence d’Analyse du temps de travail n’est pas nécessaire pour obtenir les fonctionnalités du score d’adoption.
+> Tous les insights sont calculés à l’aide de données au niveau de l’organisation, et non au niveau individuel.
+
+## <a name="how-to-turn-on-adoption-score"></a>Comment activer le score d’adoption
+
+Pour activer le score d’adoption :
+
+1. Connectez-vous au Centre d'administration Microsoft 365 en tant qu’administrateur général et accédez au **score d’adoption** **des rapports** > 
+2. Sélectionnez **Activer le score d’adoption**. La disponibilité des insights peut prendre jusqu’à 24 heures.
+
+> [!NOTE]
+> Seul un professionnel de l’informatique doté du rôle d’administrateur général peut accepter le score d’adoption.
+
+Visitez [les contrôles de confidentialité du score d’adoption pour](privacy.md) en savoir plus sur les options de configuration des expériences des personnes pour votre organisation.
+
+## <a name="adoption-score-prerequisites"></a>Conditions préalables au score d’adoption
+
+Pour les données sur les expériences des personnes, vous avez besoin d’un abonnement Microsoft 365 Entreprise ou Office 365 Entreprise. Pour les données d’analyse de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous disposez d’Intune, vous pouvez activer les analyses de point de terminaison au sein de l’expérience Intune. Pour en savoir plus sur Microsoft Intune, voir la [Documentation Microsoft Intune](/mem/intune/).
+
+> [!NOTE]
+> Une licence pour Viva Insights n’est pas nécessaire pour obtenir les fonctionnalités du score d’adoption.
 
 Le score d’adoption n’est disponible que dans le Centre d'administration Microsoft 365 et est accessible uniquement aux professionnels de l’informatique qui ont l’un des rôles suivants :  
 
@@ -68,9 +81,7 @@ Le score d’adoption n’est disponible que dans le Centre d'administration Mic
 - Lecteur général
 - Lecteur de rapports
 - Lecteur Rapports de synthèse de l’utilisation
-
-> [!NOTE]
-> Seul un professionnel de l’informatique doté du rôle Administrateur général peut s’inscrire ou choisir un locataire pour le score d’adoption.
+- Gestionnaire de réussite de l’expérience utilisateur
 
 Le modèle de contrôle d’accès en fonction du rôle pour le score d’adoption aide les organisations à poursuivre les efforts de transformation numérique avec Microsoft 365 en offrant la flexibilité nécessaire pour attribuer des rôles aux professionnels de l’informatique au sein d’une organisation.
 
@@ -82,7 +93,7 @@ Vous pouvez accéder à l’expérience à partir de Administration Microsoft 36
 
 Votre score d’adoption est basé sur les scores combinés de vos personnes et des catégories d’expériences technologiques. Chaque catégorie est pondérée de façon égale, avec un total de 100 points. Le score d’adoption le plus élevé possible est 800.
 
-### <a name="score-categories"></a>Catégories de niveau 
+### <a name="score-categories"></a>Catégories de niveau
 
 - Communication (100 points)
 - Réunions (100 points)

@@ -1,26 +1,26 @@
 ---
-title: Utiliser un modèle prédéfini pour extraire des informations à partir de factures ou de reçus dans Microsoft SharePoint Syntex
+title: Utiliser un modèle prédéfini pour extraire des informations à partir de factures ou de reçus dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment créer et configurer un modèle prédéfini dans SharePoint Syntex.
-ms.openlocfilehash: f3b262ca94e0bfc6886a2ce84ae614569c584bf1
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+description: Découvrez comment créer et configurer un modèle prédéfini dans Microsoft Syntex.
+ms.openlocfilehash: 7ec51b86bc6645e2ebe13923969155e1b6b309b7
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738425"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563271"
 ---
-# <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>Utiliser un modèle prédéfini pour extraire des informations à partir de factures ou de reçus dans Microsoft SharePoint Syntex
+# <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-syntex"></a>Utiliser un modèle prédéfini pour extraire des informations à partir de factures ou de reçus dans Microsoft Syntex
 
 Les modèles prédéfinis sont préentraînés pour reconnaître les documents et les informations structurées dans les documents. Au lieu de devoir créer un modèle personnalisé à partir de zéro, vous pouvez itérer sur un modèle préentraîné existant pour ajouter des champs spécifiques qui répondent aux besoins de votre organisation. 
 
@@ -34,7 +34,7 @@ D’autres modèles prédéfinis seront disponibles dans les versions ultérieur
 
 ## <a name="create-a-prebuilt-model"></a>Créer un modèle prédéfini
 
-Suivez ces étapes pour créer un modèle prédéfini pour classer les documents dans SharePoint Syntex.
+Suivez ces étapes pour créer un modèle prédéfini pour classifier des documents dans Syntex.
 
 1. Dans la page **Modèles** , sélectionnez **Créer un modèle**.
 

@@ -1,26 +1,26 @@
 ---
-title: Renommer un modèle dans Microsoft SharePoint Syntex
+title: Renommer un modèle dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment et pourquoi renommer un modèle de compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0044b237705e6a716efb6133db392c68b82c7a25
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+description: Découvrez comment et pourquoi renommer un modèle de compréhension de document dans Microsoft Syntex.
+ms.openlocfilehash: 3629475a9579886f20c12031fa402fda68c0636e
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916136"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564277"
 ---
-# <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Renommer un modèle dans Microsoft SharePoint Syntex
+# <a name="rename-a-model-in-microsoft-syntex"></a>Renommer un modèle dans Microsoft Syntex
 
 À un moment donné, vous pouvez vouloir renommer un modèle de compréhension de document. Par exemple, lorsque vous créez une première version d'un modèle, vous n'avez peut-être pas beaucoup réfléchi au nom final (par exemple, vous l'avez peut-être nommé «AlexWilburModel1»). À l’approche de la finalisation du modèle et de l’utilisation du modèle, vous rendez compte qu’un nom plus approprié serait « Renouvellement du contrat » et que vous souhaitez le renommer.  
 

@@ -28,12 +28,12 @@ ms.custom:
 - adminvideo
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 01/25/2022
-ms.openlocfilehash: e04cf46ceba2886fc0e939ead05a49147e4aa759
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 06c509641bc4eea370680fd65171e1d38bc579f5
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165710"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565397"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Afficher la facture ou la facture de votre abonnement Microsoft 365 pour les entreprises
 
@@ -73,8 +73,8 @@ Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://g
 
 ::: moniker-end
 
-2. Sous l’onglet **Factures**, sélectionnez une plage de dates dans la liste déroulante, puis sélectionnez l’ordre à afficher.
-3. Dans la page résumé, vous pouvez voir les éléments, la quantité, le prix, la remise et le total de tous les articles de la facture.
+2. Sous l’onglet **Factures** , choisissez la facture à afficher. Si vous ne voyez pas de facture, utilisez le filtre de dates et sélectionnez **Les 3 derniers mois**, **les 6 derniers mois** ou **spécifiez la plage de dates**.
+3. Dans la page **Récapitulatif** de la facture, vous voyez les détails de la facture, notamment la liste des éléments, le prix de chaque élément et le coût total de tous les éléments de la facture.
 4. Pour imprimer ou enregistrer une copie PDF de la facture, sélectionnez **Télécharger un fichier PDF**.
 
 Si vous souhaitez recevoir une copie de votre relevé de facturation par e-mail, consultez [Gérer les notifications de facturation et les pièces jointes aux factures](manage-billing-notifications.md).

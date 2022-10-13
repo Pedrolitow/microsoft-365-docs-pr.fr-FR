@@ -14,12 +14,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: cfd17d6aeb21b05aef13c95489780ddcd209fbf0
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 144d1788b861566c496ced4e927a8591647a93b8
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048921"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68566011"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque dans Defender pour Office 365
 
@@ -311,7 +311,7 @@ Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 ### <a name="landing-page"></a>Page d’accueil
 
-Dans la **page d’accueil** , vous configurez la page web vers laquelle l’utilisateur est amené s’il ouvre la charge utile dans la simulation.
+Dans la **page d’accueil** , vous configurez la page web vers laquelle les utilisateurs sont amenés s’ils ouvrent la charge utile dans la simulation.
 
 Les pages d’accueil organisées par Microsoft sont disponibles en 12 langues : chinois (simplifié), chinois (traditionnel), anglais, Français, allemand, italien, japonais, coréen, portugais, russe, espagnol et néerlandais.
 
@@ -527,6 +527,7 @@ Les paramètres suivants sont disponibles :
     - **Sélectionner l’heure de lancement**
 - **Configurez le nombre de jours pour terminer la simulation après** : la valeur par défaut est 2.
 - **Activer la distribution de fuseau horaire prenant en charge la région** : fournissez des messages d’attaque simulés à vos employés pendant leurs heures de travail en fonction de leur région.
+- **Afficher la page de données interstitielles de la technique drive-by :** vous pouvez afficher la superposition qui s’affiche pour les attaques de la technique d’URL drive-by. Pour masquer cette superposition et accéder directement à la page d’accueil, désélectionnez cette option.
 
 - **Afficher la page de données interstitielles de la technique drive-by :** ce paramètre n’est disponible que si vous avez sélectionné **l’URL drive-by** dans la [page sélectionner une page technique](#select-a-social-engineering-technique) . Vous pouvez afficher la superposition qui s’affiche pour les attaques par technique d’URL drive-by. Pour masquer la superposition et accéder directement à la page d’accueil, ne sélectionnez pas cette option.
 

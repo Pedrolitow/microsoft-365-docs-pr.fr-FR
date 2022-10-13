@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur le niveau de confiance du courrier indésirable (SCL) appliqué aux messages dans Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 52287e2e264cd8b6281bc7b0f85b315cc0047494
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 498a2ea8b0fc50e426c870bace29d2b34a1f06ec
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082568"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563771"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Niveau de confiance du courrier indésirable (SCL) dans EOP
 
@@ -42,9 +42,9 @@ Ce que signifie la liste de contrôle de contrôle d’accès et les actions par
 |-1|Le message a ignoré le filtrage du courrier indésirable. Par exemple, le message provient d’un expéditeur sûr, a été envoyé à un destinataire sécurisé ou provient d’un serveur source de courrier sur la liste d’autorisations IP. Pour plus d’informations, consultez [Créer des listes d’expéditeurs sécurisés dans EOP](create-safe-sender-lists-in-office-365.md).|Le message est remis dans la boîte aux lettres des destinataires.|
 |0, 1|Le filtrage du courrier indésirable a déterminé que le message n’était pas du courrier indésirable.|Le message est remis dans la boîte aux lettres des destinataires.|
 |5, 6|Filtrage du courrier indésirable marqué comme **courrier indésirable**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
-|9 |Le filtrage du courrier indésirable a marqué le message comme **courrier indésirable à haut niveau de confiance**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
+|8, 9|Le filtrage du courrier indésirable a marqué le message comme **courrier indésirable à haut niveau de confiance**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
 
-Vous remarquerez que SCL 2, 3, 4, 7 et 8 ne sont pas utilisés par le filtrage du courrier indésirable.
+Vous remarquerez que SCL 2, 3, 4 et 7 ne sont pas utilisés par le filtrage du courrier indésirable.
 
 Vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour marquer la liste de contrôle d’accès aux messages. Si vous utilisez une règle de flux de courrier pour définir la liste SCL, les valeurs 5 ou 6 déclenchent l’action de filtrage du courrier indésirable pour le **courrier indésirable**, et les valeurs 7, 8 ou 9 déclenchent l’action de filtrage du courrier indésirable pour le **courrier indésirable à haut niveau de confiance**. Pour plus d’informations, consultez [Utiliser des règles de flux de messagerie pour définir le niveau de probabilité de courrier indésirable (SCL) dans les messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 

@@ -1,5 +1,5 @@
 ---
-title: Étape 1. Utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données
+title: Étape 1. Utiliser Microsoft Syntex pour identifier les fichiers de contrat et extraire des données
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Découvrez comment utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données à l’aide d’une solution Microsoft 365.
-ms.openlocfilehash: 115c1e3fbcd18bcc766132afaff308d25cf989fe
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Découvrez comment utiliser Microsoft Syntex pour identifier les fichiers de contrat et extraire des données à l’aide d’une solution Microsoft 365.
+ms.openlocfilehash: 19a62850e2a6749e9a7cabbafbc8959af81367fe
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582491"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563293"
 ---
-# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Étape 1. Utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données
+# <a name="step-1-use-microsoft-syntex-to-identify-contract-files-and-extract-data"></a>Étape 1. Utiliser Microsoft Syntex pour identifier les fichiers de contrat et extraire des données
 
-Votre organisation a besoin d’un moyen d’identifier et de classer tous les documents de contrat à partir des nombreux fichiers que vous recevez. Vous souhaitez également être en mesure d’afficher rapidement plusieurs éléments clés dans chacun des fichiers de contrat identifiés (par exemple, *client*, *entrepreneur* et *montant des frais*). Pour ce faire, vous pouvez utiliser [SharePoint Syntex](index.md) pour créer un modèle de compréhension de document et l’appliquer à une bibliothèque de documents.
+Votre organisation a besoin d’un moyen d’identifier et de classer tous les documents de contrat à partir des nombreux fichiers que vous recevez. Vous souhaitez également être en mesure d’afficher rapidement plusieurs éléments clés dans chacun des fichiers de contrat identifiés (par exemple, *client*, *entrepreneur* et *montant des frais*). Pour ce faire, vous pouvez utiliser [Syntex](index.md) pour créer un modèle de compréhension de document et l’appliquer à une bibliothèque de documents.
 
 ## <a name="overview-of-the-process"></a>Vue d’ensemble du processus
 
@@ -31,7 +31,7 @@ Les modèles de compréhension des documents utilisent la technologie OCR (Optic
 
 1. Tout d’abord, vous devez trouver au moins cinq exemples de fichiers que vous pouvez utiliser pour « entraîner » le modèle afin de rechercher des caractéristiques spécifiques au type de contenu que vous essayez d’identifier (un contrat). 
 
-2. À l’aide de SharePoint Syntex, créez un modèle de compréhension de document. À l’aide de vos exemples de fichiers, vous devez [créer un classifieur](create-a-classifier.md). En formant le classifieur avec vos exemples de fichiers, vous lui apprenez à rechercher des caractéristiques spécifiques à ce que vous verriez dans les contrats de votre entreprise. Par exemple, [créez une « explication »](create-a-classifier.md#create-an-explanation) qui recherche des chaînes spécifiques dans vos contrats, telles que le *Contrat de service*, les *Conditions d’accord* et la *Compensation*. Vous pouvez même entraîner votre explication à rechercher ces chaînes dans des sections spécifiques du document, ou à côté d’autres chaînes. Lorsque vous pensez avoir formé votre classifieur avec les informations dont il a besoin, vous pouvez tester votre modèle sur un exemple d’exemple de fichiers pour voir à quel point il est efficace. Après le test, si nécessaire, vous pouvez choisir d’apporter des modifications à vos explications pour les rendre plus efficaces. 
+2. À l’aide de Syntex, créez un modèle de compréhension de document. À l’aide de vos exemples de fichiers, vous devez [créer un classifieur](create-a-classifier.md). En formant le classifieur avec vos exemples de fichiers, vous lui apprenez à rechercher des caractéristiques spécifiques à ce que vous verriez dans les contrats de votre entreprise. Par exemple, [créez une « explication »](create-a-classifier.md#create-an-explanation) qui recherche des chaînes spécifiques dans vos contrats, telles que le *Contrat de service*, les *Conditions d’accord* et la *Compensation*. Vous pouvez même entraîner votre explication à rechercher ces chaînes dans des sections spécifiques du document, ou à côté d’autres chaînes. Lorsque vous pensez avoir formé votre classifieur avec les informations dont il a besoin, vous pouvez tester votre modèle sur un exemple d’exemple de fichiers pour voir à quel point il est efficace. Après le test, si nécessaire, vous pouvez choisir d’apporter des modifications à vos explications pour les rendre plus efficaces. 
 
 3. Dans votre modèle, vous pouvez [créer un extracteur](create-an-extractor.md) pour extraire des éléments de données spécifiques de chaque contrat. Par exemple, pour chaque contrat, les informations qui vous préoccupent le plus sont qui est le client, le nom de l’entrepreneur et le coût total.
 

@@ -26,12 +26,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2a9174b1cb9e9090b7010798041c539608ace616
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 57676d0f1f037c1c780d0a6f7f0611dc79ab5a7e
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68077445"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564979"
 ---
 # <a name="schedule-owner-for-shift-management"></a>Planifier le propriétaire pour la gestion des shifts
 
@@ -89,4 +89,3 @@ Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ScheduleOwnerPo
 ## <a name="related-articles"></a>Articles connexes
 
 - [Gérer l’application Shifts pour votre organisation dans Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
-- [Gérer l'accès par shift dans Teams pour les travailleurs de première ligne](manage-shift-based-access-flw.md)

@@ -12,12 +12,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Découvrez comment utiliser Microsoft Teams pour créer votre canal de gestion des contrats à l’aide d’une solution Microsoft 365.
-ms.openlocfilehash: 10d7598400f095dce34ed5fbb572608a7bd01306
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 5c4f674ce315aa9e047ff56276bebc224738ce44
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579201"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563793"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Étape 2. Utiliser Microsoft Teams pour créer votre canal de gestion des contrats
 
@@ -36,7 +36,7 @@ Lorsque votre organisation configure une solution de gestion des contrats, vous 
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Attacher votre bibliothèque de documents SharePoint à l’onglet Contrats
 
-Après avoir créé un onglet **Contrats** dans votre canal Gestion des contrats, vous devez [y joindre votre bibliothèque de documents SharePoint](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La bibliothèque de documents SharePoint à joindre est celle à laquelle vous avez appliqué votre modèle de compréhension de document SharePoint Syntex dans la section précédente.
+Après avoir créé un onglet **Contrats** dans votre canal Gestion des contrats, vous devez [y joindre votre bibliothèque de documents SharePoint](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La bibliothèque de documents SharePoint à joindre est celle à laquelle vous avez appliqué votre modèle de compréhension de document Syntex dans la section précédente.
 
 Après avoir attaché la bibliothèque de documents SharePoint, vous pouvez afficher tous les contrats classifiés par le biais d’un affichage de liste par défaut.
 
@@ -47,7 +47,7 @@ Après avoir attaché la bibliothèque de documents SharePoint, vous pouvez affi
 > [!NOTE]
 > Cette section fait référence à des exemples de code contenus dans le fichier [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) inclus dans le [référentiel des ressources de la solution de gestion des contrats](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management).
 
-Bien que Teams vous permet d’afficher vos contrats dans une vue en mosaïque, vous pouvez les personnaliser pour afficher les données de contrat que vous souhaitez rendre visibles dans la carte de contrat. Par exemple, pour l’onglet Contrats, il est important que **les** membres voient le client, l’entrepreneur et le montant des frais sur la carte de contrat. Tous ces champs ont été extraits de chaque contrat par le biais de votre modèle SharePoint Syntex qui a été appliqué à votre bibliothèque de documents. Vous souhaitez également pouvoir modifier la barre d’en-tête de vignette en différentes couleurs pour chaque état afin que les membres puissent facilement voir où se trouve le contrat dans le processus d’approbation. Par exemple, tous les contrats approuvés ont une barre d’en-tête bleue.
+Bien que Teams vous permet d’afficher vos contrats dans une vue en mosaïque, vous pouvez les personnaliser pour afficher les données de contrat que vous souhaitez rendre visibles dans la carte de contrat. Par exemple, pour l’onglet Contrats, il est important que **les** membres voient le client, l’entrepreneur et le montant des frais sur la carte de contrat. Tous ces champs ont été extraits de chaque contrat via votre modèle Syntex qui a été appliqué à votre bibliothèque de documents. Vous souhaitez également pouvoir modifier la barre d’en-tête de vignette en différentes couleurs pour chaque état afin que les membres puissent facilement voir où se trouve le contrat dans le processus d’approbation. Par exemple, tous les contrats approuvés ont une barre d’en-tête bleue.
 
    ![Vue mosaïque de la bibliothèque SharePoint.](../media/content-understanding/tile.png)
 
@@ -106,7 +106,7 @@ Le code suivant vous permet de définir l’état de chaque carte de titre. Note
 
 ## <a name="extracted-fields"></a>Champs extraits
 
-Chaque carte de contrat affiche trois champs qui ont été extraits pour chaque contrat (*client*, *entrepreneur* et *montant des frais*). En outre, vous souhaitez également afficher l’heure/la date à laquelle le fichier a été classé par le modèle SharePoint Syntex utilisé pour l’identifier.
+Chaque carte de contrat affiche trois champs qui ont été extraits pour chaque contrat (*client*, *entrepreneur* et *montant des frais*). En outre, vous souhaitez également afficher l’heure/date à laquelle le fichier a été classifié par le modèle Syntex utilisé pour l’identifier.
 
 Dans le fichier [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) , les sections suivantes définissent chacune d’elles.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 0541fb9994a567f0ded9377380dd402522ad9e19
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 279fdd6738811dda31a237e57b91558fb439d81b
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536959"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565880"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -36,7 +36,7 @@ En plus d’utiliser des [étiquettes de confidentialité](sensitivity-labels.md
 - Accès des utilisateurs externes
 - Partage externe à partir des sites SharePoint
 - Accès à partir d’appareils enregistrés
-- Contextes d’authentification (en préversion)
+- Contextes d’authentification
 - Lien de partage par défaut pour un site SharePoint (configuration PowerShell uniquement)
 - Paramètres de partage de site (configuration PowerShell uniquement)
 
@@ -121,7 +121,7 @@ Une fois les étiquettes de confidentialité activées pour les conteneurs, comm
             
             Pour plus d’informations sur la configuration, consultez [Plus d’informations sur les dépendances de l’option d’appareils non gérés](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) à la fin de cette section.
             
-        - **Choisir un contexte d’authentification existant** : actuellement en version préliminaire, cette option vous permet d’appliquer des conditions d’accès plus strictes lorsque les utilisateurs accèdent aux sites SharePoint sur lequel cette étiquette est appliquée. Ces conditions sont appliquées lorsque vous sélectionnez un contexte d’authentification existant qui a été créé et publié pour le déploiement de l’accès conditionnel de votre organisation. Si les utilisateurs ne respectent pas les conditions configurées ou s'ils utilisent des applications qui ne prennent pas en charge les contextes d'authentification, l'accès leur est refusé.
+        - **Choisissez un contexte d’authentification existant** : cette option vous permet d’appliquer des conditions d’accès plus strictes lorsque les utilisateurs accèdent à des sites SharePoint auxquels cette étiquette est appliquée. Ces conditions sont appliquées lorsque vous sélectionnez un contexte d’authentification existant qui a été créé et publié pour le déploiement de l’accès conditionnel de votre organisation. Si les utilisateurs ne respectent pas les conditions configurées ou s'ils utilisent des applications qui ne prennent pas en charge les contextes d'authentification, l'accès leur est refusé.
             
             Pour plus d’informations sur la configuration, consultez [Plus d’informations sur les dépendances de l’option de contexte d’authentification](#more-information-about-the-dependencies-for-the-authentication-context-option) à la fin de cette section.
             
@@ -174,7 +174,7 @@ Not all apps support authentication contexts. If a user with an unsupported app 
     - iOS : déploiement dans la mise à jour 12.30
     - Android : pas encore pris en charge
 
-Restrictions connues pour cette version préliminaire :
+Limitations connues :
 
 - Pour l'application de synchronisation OneDrive, prise en charge pour OneDrive uniquement et non pour les autres sites.
 

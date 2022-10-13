@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f491cbc346bf79824be782403b4ae3a7d54431a6
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: d632963b9e06215bc84e6b70559a6584e6f5a7a2
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504015"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565177"
 ---
 # <a name="plan-for-communication-compliance"></a>Planifier la conformité des communications
 
@@ -79,9 +79,9 @@ Six groupes de rôles sont utilisés pour configurer les autorisations initiales
 - portail de conformité Microsoft Purview groupe [*de rôles Gestion de l’organisation*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 - groupe de [*rôles administrateur de conformité*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portail de conformité Microsoft Purview
 - *Groupe de rôles Conformité des communications*
-- *Groupe de rôles Administration conformité des communications*
+- *Groupe de rôles Administrateurs de conformité des communications*
 
-Les membres des rôles suivants disposent des mêmes autorisations de solution incluses dans le groupe de rôles *Administration conformité* des communications :
+Les membres des rôles suivants disposent des mêmes autorisations de solution incluses dans le groupe de *rôles Administrateurs de conformité des communications* :
 
 - *Administrateur général* Azure Active Directory
 - *Administrateur de conformité* Azure Active Directory
@@ -89,7 +89,7 @@ Les membres des rôles suivants disposent des mêmes autorisations de solution i
 - *Administrateur de conformité* portail de conformité Microsoft Purview
 
 > [!IMPORTANT]
-> Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de *rôles Conformité* des communications ou Conformité des communications *Administration* (selon l’option que vous choisissez) afin que votre configuration de conformité des communications n’accède pas à un scénario « zéro administrateur » si des utilisateurs spécifiques quittent votre organisation.
+> Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de rôles *Conformité* des communications ou *Administrateurs de conformité des* communications (en fonction de l’option que vous choisissez) afin que votre configuration de conformité des communications n’accède pas à un scénario « zéro administrateur » si des utilisateurs spécifiques quittent votre organisation.
 
 Selon la façon dont vous souhaitez gérer les stratégies et les alertes de conformité des communications, vous devez affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de conformité des communications. Vous avez la possibilité d’affecter des utilisateurs ayant des responsabilités de conformité différentes à des groupes de rôles spécifiques pour gérer différents domaines de fonctionnalités de conformité des communications. Vous pouvez également décider d’affecter tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et observateurs désignés au groupe de rôles *Conformité des communications* . Utilisez un seul groupe de rôles ou plusieurs groupes de rôles pour répondre au mieux à vos exigences de gestion de la conformité.
 
@@ -98,10 +98,10 @@ Choisissez parmi ces options de groupe de rôles de solution lors de la configur
 |**Role**|**Autorisations de rôle**|
 |:-----|:-----|
 | **Conformité des communications** | Utilisez ce groupe de rôles pour gérer la conformité des communications pour votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et observateurs désignés, vous pouvez configurer les autorisations de conformité des communications dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité de communication. Cette configuration est le moyen le plus simple de prendre rapidement en main la conformité des communications et convient parfaitement aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. Les utilisateurs qui créent des stratégies en tant qu’administrateur de conformité des communications doivent avoir leur boîte aux lettres hébergée sur Exchange Online. |
-| **Administrateur de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications et, plus tard, pour séparer les administrateurs de conformité des communications dans un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des attributions de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. Les utilisateurs qui créent des stratégies en tant qu’administrateur de conformité des communications doivent avoir leur boîte aux lettres hébergée sur Exchange Online. |
-| **Analyste de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui joueront le rôle d’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies à l’endroit où ils sont affectés en tant que réviseurs, afficher les métadonnées de message (et non le contenu du message), effectuer une escalade vers des réviseurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
-| **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui joueront le rôle d’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas eDiscovery (Premium), envoyer des notifications aux utilisateurs et résoudre l’alerte. |
-| **Visionneuse de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
+| **Administrateurs de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications et, plus tard, pour séparer les administrateurs de conformité des communications dans un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des attributions de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. Les utilisateurs qui créent des stratégies en tant qu’administrateur de conformité des communications doivent avoir leur boîte aux lettres hébergée sur Exchange Online. |
+| **Analystes de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui joueront le rôle d’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies à l’endroit où ils sont affectés en tant que réviseurs, afficher les métadonnées de message (et non le contenu du message), effectuer une escalade vers des réviseurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
+| **Enquêteurs de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui joueront le rôle d’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas eDiscovery (Premium), envoyer des notifications aux utilisateurs et résoudre l’alerte. |
+| **Visionneuses de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
 
 ### <a name="supervised-users"></a>Utilisateurs supervisés
 
@@ -112,7 +112,7 @@ Avant de commencer à utiliser la conformité des communications, vous devez dé
 
 ### <a name="reviewers"></a>Relecteurs
 
-Lorsque vous créez une stratégie de conformité des communications, vous devez déterminer qui examine les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Tous les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online, être affectés aux groupes de *rôles Analyste de conformité des communications* ou *Enquêteur de conformité des communications* et être affectés dans la stratégie à examiner. Lorsque les réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un e-mail qui les avertit de l’attribution à la stratégie et fournit des liens vers des informations sur le processus de révision.
+Lorsque vous créez une stratégie de conformité des communications, vous devez déterminer qui examine les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Tous les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online, doivent être *affectés aux groupes de rôle Analystes de conformité des communications* ou *Enquêteurs de conformité des communications*, et doivent être affectés dans la stratégie qu’ils doivent examiner. Lorsque les réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un e-mail qui les avertit de l’attribution à la stratégie et fournit des liens vers des informations sur le processus de révision.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Groupes pour les utilisateurs supervisés et les réviseurs
 
@@ -133,7 +133,7 @@ La protection de la confidentialité des utilisateurs qui ont des correspondance
 
 Pour les utilisateurs ayant une correspondance de conformité des communications, vous pouvez choisir l’un des paramètres suivants dans les **paramètres de conformité des communications** :
 
-- **Afficher les versions anonymes des noms d’utilisateur** : les noms d’utilisateur sont anonymes pour empêcher les utilisateurs du groupe de *rôles Analyste de conformité des communications* de voir qui est associé aux alertes de stratégie. Les utilisateurs du groupe de *rôles Enquêteur de conformité des communications* voient toujours les noms d’utilisateur, et non les versions anonymes. Par exemple, un utilisateur « Grace Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de conformité des communications. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails de l’alerte de conformité des communications ne sont pas disponibles lorsque cette option est choisie. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateurs s’affichent pour tous les utilisateurs qui ont des correspondances de stratégie actuelles ou passées.
+- **Afficher les versions anonymes des noms d’utilisateur** : les noms d’utilisateur sont anonymes pour empêcher les utilisateurs du groupe de *rôles Analystes de conformité des communications* de voir qui est associé aux alertes de stratégie. Les utilisateurs du groupe de *rôles Enquêteurs de conformité des communications* voient toujours les noms d’utilisateur, et non les versions anonymes. Par exemple, un utilisateur « Grace Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de conformité des communications. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails de l’alerte de conformité des communications ne sont pas disponibles lorsque cette option est choisie. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateurs s’affichent pour tous les utilisateurs qui ont des correspondances de stratégie actuelles ou passées.
 - **Ne pas afficher les versions anonymes des noms d’utilisateur** : les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelles et passées pour les alertes de conformité des communications. Les informations de profil utilisateur (nom, titre, alias et organisation ou service) s’affichent pour l’utilisateur pour toutes les alertes de conformité des communications.
 
 ## <a name="plan-for-policies"></a>Planifier des stratégies

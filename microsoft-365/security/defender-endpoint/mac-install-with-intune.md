@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 83d2bf85a6e6edf612975b7679e40769d06a3a89
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: b45ebdd1bd6ea920614a50266232261ce8620c37
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221585"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565683"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>déploiement basé sur Intune pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -43,6 +43,7 @@ Cette rubrique explique comment déployer des Microsoft Defender pour point de t
 1. [Publier l'application](#publish-application)
 
 ## <a name="prerequisites-and-system-requirements"></a>Prérequis et configuration requise
+
 
 Avant de commencer, consultez [la page principale Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des prérequis et de la configuration système requise pour la version actuelle du logiciel.
 
@@ -99,7 +100,7 @@ Dans le [Centre d’administration Microsoft Endpoint Manager](https://endpoint.
 
 ### <a name="onboarding-blob"></a>Objet blob d’intégration
 
-Ce profil contient des informations de licence pour Microsoft Defender pour point de terminaison. Sans ce profil, Microsoft Defender pour point de terminaison signale qu’il n’est pas sous licence.
+Ce profil contient des informations de licence pour Microsoft Defender pour point de terminaison. Sans informations de licence, Microsoft Defender pour point de terminaison signale qu’elle n’est pas sous licence.
 
 1. Sélectionnez **Créer un profil** sous **Profils de configuration**.
 1. Sélectionnez **Plateforme**=**macOS**,**modèles** **de type de profil**=. **Nom du modèle**= **Personnalisé**. Cliquez sur **Créer**.

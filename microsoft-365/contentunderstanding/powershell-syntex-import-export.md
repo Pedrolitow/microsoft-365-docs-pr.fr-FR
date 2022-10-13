@@ -12,20 +12,20 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Découvrez comment exporter et importer des modèles de compréhension de document avec PowerShell dans SharePoint Syntex.
-ms.openlocfilehash: a022ee3be11470892cc62dda06173e83ee50f865
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Découvrez comment exporter et importer des modèles de compréhension de document avec PowerShell dans Microsoft Syntex.
+ms.openlocfilehash: bea95d65c39e08ea2ac6714e48e9cbafe573d1a8
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585221"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564671"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>Exporter et importer des modèles de compréhension de document avec PowerShell
 
 > [!IMPORTANT]
-> Les applets de commande PowerShell SharePoint Syntex et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
+> Les applets de commande Microsoft Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
-SharePoint Syntex modèles peuvent être exportés en tant que modèles PnP, ce qui permet une réutilisation entre les centres de contenu ou les locataires.
+Les modèles Syntex peuvent être exportés en tant que modèles PnP, ce qui permet une réutilisation entre les centres de contenu ou les locataires.
 
 ## <a name="export-all-models-in-a-content-center"></a>Exporter tous les modèles dans un centre de contenu
 

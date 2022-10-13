@@ -15,12 +15,12 @@ search.appverid:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour bloquer les messages entrants dans Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 967c368ab8b77de205a45f704dae132247468136
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 6a53c888b1817ca490ce0be71f37080bc3aaa7ac
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68090814"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565814"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Créer des listes d’expéditeurs bloqués dans EOP
 
@@ -58,7 +58,7 @@ Un message électronique SMTP standard est constitué d’une _enveloppe de mes
 
 Souvent, les adresses et `5322.From` les `5321.MailFrom` adresses sont les mêmes (communication de personne à personne). Toutefois, lorsque l’e-mail est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes.
 
-Les listes d’expéditeurs bloquées et les listes de domaines bloquées dans les stratégies anti-courrier indésirable dans EOP inspectent à la fois les adresses et `5322.From` les `5321.MailFrom` adresses. Les expéditeurs bloqués Outlook utilisent uniquement l’adresse `5322.From` .
+Les listes d’expéditeurs bloquées et les listes de domaines bloquées dans les stratégies anti-courrier indésirable dans EOP inspectent uniquement les `5322.From` adresses. Ce comportement est similaire aux expéditeurs bloqués Outlook qui utilisent l’adresse `5322.From` .
 
 ## <a name="use-outlook-blocked-senders"></a>Utiliser des expéditeurs bloqués Outlook
 
@@ -71,7 +71,7 @@ Lorsque les messages sont bloqués en raison de la liste des expéditeurs bloqu�
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Utiliser des listes d’expéditeurs bloquées ou des listes de domaines bloquées
 
-Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large. La meilleure option suivante est donc de bloquer les listes d’expéditeurs ou les listes de domaines bloquées dans les stratégies anti-courrier indésirable. Les messages des expéditeurs figurant sur les listes sont marqués comme **courrier indésirable** (et non **courrier indésirable à haut niveau de confiance**) et l’action que vous avez configurée pour le verdict de filtre **de courrier indésirable** est effectuée sur le message. Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
+Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large. La meilleure option suivante est donc de bloquer les listes d’expéditeurs ou les listes de domaines bloquées dans les stratégies anti-courrier indésirable. Les messages des expéditeurs figurant sur les listes sont marqués comme **courrier indésirable à haut niveau de confiance**, et l’action que vous avez configurée pour le verdict du filtre **de courrier indésirable à haut niveau de confiance** est effectuée sur les messages. Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
 
 La limite maximale pour ces listes est d’environ 1 000 entrées.
 

@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 558f322c8e22ae6146f90baa4d9ce19f00a6cea5
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+ms.openlocfilehash: 44d6c198afe6da28e29670bbdc0c059ef2761311
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68025346"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563168"
 ---
 # <a name="term-store-reports"></a>Rapports de banque de termes
 
-Vous pouvez accéder aux rapports pour le <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">magasin de termes</a> dans le Centre d’administration SharePoint. Cette fonctionnalité nécessite une licence [SharePoint Syntex](index.md).
+Vous pouvez accéder aux rapports pour le <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">magasin de termes</a> dans le Centre d’administration SharePoint. Cette fonctionnalité nécessite une licence [Microsoft Syntex](index.md) .
 
 Développez **Rapports**, puis cliquez sur **Services de contenu**.
 

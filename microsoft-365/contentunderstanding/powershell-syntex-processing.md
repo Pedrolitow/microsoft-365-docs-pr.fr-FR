@@ -12,18 +12,18 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Découvrez comment utiliser PowerShell pour demander le traitement par un modèle de compréhension de document SharePoint Syntex.
-ms.openlocfilehash: a0806910e268585f27f320e541bb8f30c2bec7db
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Découvrez comment utiliser PowerShell pour demander le traitement par un modèle de compréhension de document Microsoft Syntex.
+ms.openlocfilehash: 1f537c3759ee8783c18bee5e8241e004c73f2eec
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68025994"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563227"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Utiliser PowerShell pour demander le traitement par un modèle de compréhension de document
 
 > [!IMPORTANT]
-> Les applets de commande PowerShell SharePoint Syntex et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
+> Les applets de commande Microsoft Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
 Les modèles de compréhension de document traitent les fichiers nouvellement chargés dans une bibliothèque. Il est également possible de demander manuellement le traitement dans l’interface utilisateur. Toutefois, il peut y avoir des scénarios où il est plus efficace de déclencher le traitement via PowerShell.
 

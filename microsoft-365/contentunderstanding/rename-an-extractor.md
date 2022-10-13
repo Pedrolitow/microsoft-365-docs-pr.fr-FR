@@ -1,5 +1,5 @@
 ---
-title: Renommer un extracteur dans Microsoft SharePoint Syntex
+title: Renommer un extracteur dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Apprenez comment et pourquoi renommer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 81c325e937378b5c00bac354f14e43d9ab676724
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Découvrez comment et pourquoi renommer un extracteur dans Microsoft Syntex.
+ms.openlocfilehash: 8900eb68a5efab4d69911d193c35e82e6d58cbf6
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576822"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565639"
 ---
-# <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Renommer un extracteur dans Microsoft SharePoint Syntex
+# <a name="rename-an-extractor-in-microsoft-syntex"></a>Renommer un extracteur dans Microsoft Syntex
 
 À un moment donné, vous devrez peut-être renommer un extracteur si vous souhaitez faire référence à un champ de données extrait par un nom différent. Par exemple, votre organisation décide d'apporter des modifications à ses documents contractuels et désigne les «clients» par le terme «clients» dans ses documents. Si vous extrayez un champ «Client» dans votre modèle, vous pouvez choisir de le renommer en «Client».
 

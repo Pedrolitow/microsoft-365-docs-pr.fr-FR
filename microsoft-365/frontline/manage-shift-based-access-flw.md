@@ -17,18 +17,19 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: bcbf2a52e14b2a382581612c026589df4612e374
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 86e3977db3a4c338f2f4d4317cf252684ddd8ba9
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068784"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565419"
 ---
 # <a name="manage-shift-based-access-for-frontline-workers-in-teams"></a>Gérer l'accès par shift dans Teams pour les travailleurs de première ligne
 
-## <a name="overview"></a>Vue d’ensemble
+> [!IMPORTANT]
+> Cette fonctionnalité a été déconseillée.
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
+## <a name="overview"></a>Vue d’ensemble
 
 La présence dans Microsoft Teams indique la disponibilité et l'état actuels de l'utilisateur à d'autres utilisateurs. La présence de travailleurs de première ligne est souvent moins prévisible que les autres employés, car leurs heures de travail ne sont généralement pas les mêmes chaque jour. En tant qu’administrateur, vous pouvez configurer Teams de manière à afficher un ensemble d’états de présence basés sur les shifts pour les travailleurs de première ligne de votre organisation afin d’indiquer quand ils sont en déplacement ou en congé.
 
@@ -123,7 +124,7 @@ Dans cet exemple, nous affectons une stratégie nommée Message personnalité d�
 Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName "Off Shift Teams Access Custom Message"
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-articles"></a>Articles connexes
 
 - [Gérer l’application Shifts pour votre organisation dans Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Présentation de Teams PowerShell](/microsoftteams/teams-powershell-overview)

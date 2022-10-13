@@ -12,18 +12,18 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Découvrez comment utiliser SharePoint Syntex explication du modèle de compréhension de document dans PowerShell.
-ms.openlocfilehash: f81281e28977e842188e1dcc02906eedaad09738
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Découvrez comment utiliser les explications du modèle de compréhension de document Microsoft Syntex dans PowerShell.
+ms.openlocfilehash: c2ffc7493e91adc4e990da56e5a29408121eded2
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578353"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564693"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Utiliser des explications de modèle de compréhension de document dans PowerShell
 
 > [!IMPORTANT]
-> Les applets de commande PowerShell SharePoint Syntex et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
+> Les applets de commande Microsoft Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
 Les modèles d’explication personnalisés sont stockés dans une liste dans un centre de contenu. Étant donné que ces explications sont stockées en tant qu’éléments de liste, PowerShell peut être utilisé pour interagir avec eux.
 

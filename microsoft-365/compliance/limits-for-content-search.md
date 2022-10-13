@@ -1,5 +1,6 @@
 ---
 title: Limites pour la recherche de contenu et eDiscovery (Standard) dans le centre de conformité
+description: Découvrez les limites en vigueur pour les fonctionnalités de recherche de contenu et eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,25 +11,26 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Découvrez les limites en vigueur pour les fonctionnalités de recherche de contenu et eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 52239b2f82b46feecc18685b309c1420255b9039
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 1b3adc70796e2a4cc25fb23eb6076fc5cc6ff4db
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67819268"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564255"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limites pour la recherche eDiscovery
 
 Différentes limites sont appliquées aux outils de recherche eDiscovery dans le portail de conformité Microsoft Purview. Cela inclut les recherches exécutées sur la page **de recherche de contenu** et les recherches associées à un cas eDiscovery sur la page **eDiscovery (Standard).** Ces limites contribuent à maintenir la santé et la qualité des services fournis aux organisations. Il existe également des limites liées à l’indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier les limites des recherches eDiscovery ou de l’indexation des e-mails, mais vous devez les connaître afin de pouvoir prendre en compte ces limites lors de la planification, de l’exécution et de la résolution des problèmes liés aux recherches eDiscovery.
 
 Pour connaître les limites liées à l’outil Microsoft Purview eDiscovery (Premium), consultez [Limites dans eDiscovery (Premium)](limits-ediscovery20.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="search-limits"></a>Limites de la recherche
 
@@ -119,9 +121,6 @@ Le tableau suivant décrit les limites d’indexation qui peuvent entraîner le 
 |||
 
 ## <a name="jobs-limits"></a>Limites des travaux
-
-> [!NOTE]
-> Les travaux eDiscovery (Premium) sont comptabilisés dans les limites eDiscovery (Standard). Par exemple, si vous avez 50 travaux en cours d’exécution dans eDiscovery (Premium), vous ne pourrez pas démarrer des travaux dans eDiscovery (Standard). Les travaux eDiscovery (Standard) ne sont pas comptabilisés dans les limites eDiscovery (Premium).
 
 |Description|Limite|
 |---|---|

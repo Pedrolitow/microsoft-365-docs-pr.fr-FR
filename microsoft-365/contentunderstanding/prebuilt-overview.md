@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble des modèles prédéfinis dans Microsoft SharePoint Syntex
+title: Vue d’ensemble des modèles prédéfinis dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,23 +7,23 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez les modèles prédéfinis dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 04247a627c30e4a13209f11bcdf40c3b24e8aea0
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+description: Découvrez les modèles prédéfinis dans Microsoft Syntex.
+ms.openlocfilehash: 8d5d2c9a4103c02e4acab10f653ae658679a1c07
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497580"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563173"
 ---
-# <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble des modèles prédéfinis dans Microsoft SharePoint Syntex
+# <a name="prebuilt-models-overview-in-microsoft-syntex"></a>Vue d’ensemble des modèles prédéfinis dans Microsoft Syntex
 
-En plus de [documenter la compréhension des modèles](document-understanding-overview.md) et des [modèles de traitement des formulaires](form-processing-overview.md), SharePoint Syntex fournit des modèles prédéfinis pour automatiser l’extraction des informations.
+En plus de [documenter la compréhension des modèles](document-understanding-overview.md) et des [modèles de traitement des formulaires](form-processing-overview.md), Microsoft Syntex fournit des modèles prédéfinis pour automatiser l’extraction des informations.
 
 Les modèles prédéfinis sont préentraînés pour reconnaître les documents et les informations structurées dans les documents. Au lieu de devoir créer un modèle personnalisé à partir de zéro, vous pouvez itérer sur un modèle préentraîné existant pour ajouter des champs spécifiques qui répondent aux besoins de votre organisation. 
 

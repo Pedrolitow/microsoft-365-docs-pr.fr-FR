@@ -1,5 +1,5 @@
 ---
-title: Rechercher des métadonnées dans les bibliothèques de documents dans Microsoft SharePoint Syntex
+title: Rechercher des métadonnées dans les bibliothèques de documents dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,22 +12,22 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-description: Découvrez comment utiliser la recherche avancée de métadonnées et la recherche de colonnes de site personnalisées pour rechercher des éléments dans des bibliothèques de documents SharePoint à l’aide SharePoint Syntex.
-ms.openlocfilehash: db13be1ce22becc10d04bf7e18becc9208784844
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+description: Découvrez comment utiliser la recherche avancée de métadonnées et rechercher des colonnes de site personnalisées pour rechercher des éléments dans les bibliothèques de documents SharePoint à l’aide de Microsoft Syntex.
+ms.openlocfilehash: 359bde29850c54a9c1a338d95aa826894b1b3dcf
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560172"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565858"
 ---
-# <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Rechercher des métadonnées dans les bibliothèques de documents dans Microsoft SharePoint Syntex
+# <a name="search-for-metadata-in-document-libraries-in-microsoft-syntex"></a>Rechercher des métadonnées dans les bibliothèques de documents dans Microsoft Syntex
 
-La fonctionnalité de recherche avancée de métadonnées SharePoint Syntex vous permet d’effectuer des requêtes spécifiques basées sur des métadonnées sur SharePoint bibliothèques de documents. Vous pouvez effectuer des requêtes plus rapides et plus précises basées sur des valeurs de colonne de métadonnées spécifiques, plutôt que de simplement rechercher des mots clés.
+La fonctionnalité de recherche avancée de métadonnées dans Microsoft Syntex vous permet d’effectuer des requêtes spécifiques basées sur les métadonnées sur les bibliothèques de documents SharePoint. Vous pouvez effectuer des requêtes plus rapides et plus précises basées sur des valeurs de colonne de métadonnées spécifiques, plutôt que de simplement rechercher des mots clés.
 
 La recherche avancée de métadonnées vous permet d’utiliser les métadonnées associées à un document pour vous aider à localiser le fichier dans SharePoint bibliothèque de documents. Cette fonctionnalité est particulièrement utile lorsque vous avez des informations spécifiques à rechercher, comme la dernière modification d’un document, une personne spécifique associée à un fichier ou un type de fichier spécifique.
 
 > [!NOTE]
-> Cette fonctionnalité est disponible uniquement pour les utilisateurs titulaires d’une licence SharePoint Syntex. 
+> Cette fonctionnalité est disponible uniquement pour les utilisateurs titulaires d’une licence Syntex. 
 
 ## <a name="to-use-advanced-metadata-search"></a>Pour utiliser la recherche avancée de métadonnées
 
@@ -56,4 +56,4 @@ La recherche avancée de métadonnées vous permet d’utiliser les métadonnée
 
     ![Capture d’écran du menu Ajouter d’autres options dans le volet de recherche de métadonnées.](../media/content-understanding/metadata-search-add-more-options.png)
 
-4. Sélectionnez **Rechercher**. Les documents qui correspondent à votre recherche de métadonnées sont affichés sur la page de résultats. 
+4. Sélectionner **Rechercher**. Les documents qui correspondent à votre recherche de métadonnées sont affichés sur la page de résultats. 

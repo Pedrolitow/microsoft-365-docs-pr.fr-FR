@@ -11,19 +11,16 @@ ms.collection:
 - scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings avec moi pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: afda2699bb5d4d5c588ab96e2153de7c27661ca7
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7eea946472e94fb6d4e2ae144a1127a6b8e09c72
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188127"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565485"
 ---
 # <a name="bookings-with-me"></a>Bookings avec moi
 
 **Bookings with me** in Outlook est une page de planification personnelle basée sur le web qui s’intègre aux informations de disponibilité de votre calendrier Outlook. Les réservations avec moi permettent aux gens de planifier une réunion ou un rendez-vous avec vous. Vous pouvez créer des types de réunion personnalisés à partager avec d’autres personnes afin qu’elles puissent facilement planifier du temps avec vous en fonction de votre disponibilité et de vos préférences. Vous recevez une confirmation par e-mail et les participants peuvent mettre à jour ou annuler des réunions planifiées avec vous à partir de votre page Bookings avec moi.
-
-> [!NOTE]
-> Bookings avec moi est disponible dans le monde entier en préversion. Les fonctionnalités incluses dans la préversion peuvent ne pas être complètes et peuvent subir des modifications avant d’être disponibles dans la version publique.
 
 Bookings avec moi a deux vues différentes :
 
@@ -223,6 +220,12 @@ Utilisez les commandes **Get-CASMailbox** et **Set-CASMailbox** pour vérifier l
     ```PowerShell
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
+
+### <a name="create-bookings-with-me"></a>Créer bookings avec moi
+
+1. Ouvrez [Outlook sur le web](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Sélectionnez **Calendrier**.
+3. Sélectionnez le lien **Créer une page de réservations** qui s’affiche dans votre calendrier pour créer Bookings avec moi.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 

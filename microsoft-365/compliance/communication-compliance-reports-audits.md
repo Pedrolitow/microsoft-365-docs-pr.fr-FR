@@ -14,19 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a3348ccc2458252aca84762d89d58dbeb9ebe92a
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: b4697afae9745934437084927ed347582c4a300a
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851587"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565089"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Utiliser les rapports et audits de conformité des communications
+
+>[!IMPORTANT]
+>Conformité des communications Microsoft Purview fournit les outils nécessaires pour aider les organisations à détecter les violations de conformité réglementaire (par exemple sec ou FINRA), telles que les informations sensibles ou confidentielles, le harcèlement ou la menace de langue, et le partage de contenu pour adultes. Créés avec la confidentialité par conception, les noms d’utilisateur sont pseudonymés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont choisis par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="reports"></a>Rapports
 
@@ -145,7 +150,7 @@ Dans certains cas, vous devez fournir des informations aux auditeurs de régleme
 > [!IMPORTANT]
 > L’audit doit être activé pour votre organisation avant l’enregistrement des événements de conformité des communications. Pour activer l’audit, consultez [Activer le journal d’audit](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). Lorsque les activités déclenchent des événements capturés dans le journal d’audit Microsoft 365, l’affichage de ces événements dans les stratégies de conformité des communications peut prendre jusqu’à 48 heures.
 
-Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Pour exporter les activités de mise à jour, vous devez disposer des rôles *de Administration Administration globale* ou de *conformité* des communications. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
+Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Vous devez disposer des *rôles d’administrateurs* *Administration globaux* ou de conformité des communications pour exporter les activités de mise à jour. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
 |Champ|Détails|
 |---|---|
@@ -154,7 +159,7 @@ Pour afficher les activités de mise à jour de la stratégie de conformité des
 | **Operations** | Opérations de mise à jour effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la principale source de données pour toutes les activités de mise à jour de stratégie. Toutes les activités de mise à jour sont enregistrées et séparées par des séparateurs de virgules. |
 
-Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Pour exporter les activités de révision, vous devez disposer des rôles *Administration globale* ou Conformité des communications *Administration*. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
+Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Vous devez disposer des *rôles d’administrateurs* *Administration globaux* ou de conformité des communications pour exporter les activités de révision. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
 |Champ|Détails|
 |---|---|

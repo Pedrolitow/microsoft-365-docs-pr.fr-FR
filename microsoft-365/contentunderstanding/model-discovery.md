@@ -1,26 +1,26 @@
 ---
-title: Publier et découvrir des modèles dans Microsoft SharePoint Syntex
+title: Publier et découvrir des modèles dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment mettre des modèles entraînés à la disposition d’autres utilisateurs et comment appliquer d’autres modèles formés dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 758f6886af6606c57c50c5c4c88e35f7aeeaefe4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+description: Découvrez comment mettre des modèles entraînés à la disposition d’autres utilisateurs et comment appliquer d’autres modèles formés dans Microsoft Syntex.
+ms.openlocfilehash: d39bbf3301e2e699db937ec4da3f8a7d3b624bdc
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916268"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565001"
 ---
-# <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Publier et découvrir des modèles dans Microsoft SharePoint Syntex
+# <a name="publish-and-discover-models-in-microsoft-syntex"></a>Publier et découvrir des modèles dans Microsoft Syntex
 
 Vous pouvez rendre vos modèles de compréhension de documents entraînés disponibles pour que d’autres personnes les voient et les utilisent directement à partir de la SharePoint de documents. 
 

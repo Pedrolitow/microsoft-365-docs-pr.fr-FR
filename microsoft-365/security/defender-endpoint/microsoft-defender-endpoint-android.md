@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a69004f41b461353ce51999c1b640081e3ebf702
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 434d598177d57475395d6caa789e4ee2c8854596
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226578"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563904"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
@@ -73,7 +73,7 @@ Cette rubrique explique comment installer, configurer, mettre à jour et utilise
 
 ### <a name="installation-instructions"></a>Instructions d’installation
 
-Microsoft Defender pour point de terminaison sur Android prend en charge l’installation sur les deux modes d’appareils inscrits : les modes Administrateur d’appareil hérité et Android Entreprise. **Actuellement, les appareils appartenant à l’utilisateur avec profil professionnel et les inscriptions d’appareils utilisateur entièrement gérés appartenant à l’entreprise sont pris en charge dans Android Enterprise. La prise en charge d’autres modes Android Entreprise sera annoncée lorsque vous serez prêt.**
+Microsoft Defender pour point de terminaison sur Android prend en charge l’installation sur les deux modes d’appareils inscrits : les modes Administrateur d’appareil hérité et Android Entreprise. **Actuellement, les appareils appartenant à l’utilisateur avec profil professionnel, appartenant à l’entreprise, activés personnellement et appartenant à l’entreprise sont pris en charge dans Android Enterprise. La prise en charge d’autres modes Android Entreprise sera annoncée lorsque vous serez prêt.**
 
 - Le déploiement de Microsoft Defender pour point de terminaison sur Android se fait via Microsoft Intune (GPM). Pour plus d’informations, consultez [Déployer Microsoft Defender pour point de terminaison sur Android avec Microsoft Intune](android-intune.md).
 - Installation de Microsoft Defender pour point de terminaison sur les appareils qui ne sont pas inscrits à l’aide de Intune gestion des appareils mobiles (GPM), consultez [Configurer Microsoft Defender pour point de terminaison signaux de risque dans la stratégie de protection des applications (MAM).](android-configure-mam.md)

@@ -25,23 +25,23 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de mise en production pour les mises à jour de nouveaux produits et fonctionnalités dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: b407269d12307014befd8e07f2401f59f84cdeb4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9cd35f76c839bf234eb434b774e98ef49e7ed095
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68164830"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564167"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de mise en production standard ou ciblée
 
 > [!IMPORTANT]
-> Les mises à jour de Microsoft 365 décrites dans cet article s’appliquent à Microsoft 365, SharePoint Online et Exchange Online. Ces options de mise en production sont ciblées et offrent les meilleurs moyens de publier les modifications apportées à Microsoft 365, mais ne peuvent pas être garanties à tout moment ou pour toutes les mises à jour. Elles ne s’appliquent pas aux services Microsoft 365 Apps, Skype Entreprise, Microsoft Teams et associés. Pour plus d’informations sur les options de mise en production pour Microsoft 365 Apps, consultez [Vue d’ensemble des canaux de mise à jour pour Microsoft 365 Apps](/deployoffice/overview-update-channels).
+> Les mises à jour Microsoft 365 décrites dans cet article s’appliquent à OneDrive Entreprise, SharePoint Online, Office sur le Web, Centre d'administration Microsoft 365 et certains composants de Exchange Online. Ces options de mise en production sont ciblées et offrent les meilleurs moyens de publier les modifications apportées à Microsoft 365, mais ne peuvent pas être garanties à tout moment ou pour toutes les mises à jour. Actuellement, elles ne s’appliquent pas aux services autres que ceux répertoriés précédemment. Pour plus d’informations sur les options de mise en production pour Microsoft 365 Apps, consultez [Vue d’ensemble des canaux de mise à jour pour Microsoft 365 Apps](/deployoffice/overview-update-channels).
 
 Avec Microsoft 365, vous recevez de nouvelles mises à jour et fonctionnalités de produit à mesure qu’elles deviennent disponibles au lieu d’effectuer des mises à jour coûteuses tous les quelques années. Vous n'avez donc plus besoin de procéder à des mises à jour onéreuses chaque année. De plus, vous pouvez gérer la manière dont votre organisation reçoit ces mises à jour. Par exemple, vous pouvez vous inscrire à une publication anticipée et faire profiter l'ensemble de votre organisation des mises à jour en avance, ou sélectionner un panel restreint d'utilisateurs qui les testeront. Vous pouvez également décider de rester sur le programme de publication standard et recevoir les mises à jour plus tard. Cet article explique les différentes options de mise en production et la façon dont vous pouvez les utiliser pour votre organisation.
 
 ## <a name="how-it-works---release-validation"></a>Mode de fonctionnement - Validation de publication
 
-Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalités, puis par l’ensemble de l’équipe de fonctionnalités Microsoft 365, suivie de l’ensemble de Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante. 
+Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalités, puis par l’ensemble de l’équipe de fonctionnalités Microsoft 365, suivie de l’ensemble de Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante.
   
 ![Anneaux de validation de mise en production pour Microsoft 365.](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
@@ -54,22 +54,21 @@ Pour les mises à jour importantes, les clients sont initialement avertis par la
 
 Il s’agit de l’option par défaut dans laquelle vous et vos utilisateurs recevez les dernières mises à jour lorsqu’ils sont publiés à grande échelle pour tous les clients.
   
-Une bonne pratique consiste à laisser la majorité des utilisateurs dans la **version Standard** et les professionnels de l’informatique et les utilisateurs d’alimentation dans la **version ciblée** pour évaluer les nouvelles fonctionnalités et préparer les équipes à prendre en charge les utilisateurs professionnels et les cadres. 
+Une bonne pratique consiste à laisser la majorité des utilisateurs dans la **version Standard** et les professionnels de l’informatique et les utilisateurs d’alimentation dans la **version ciblée** pour évaluer les nouvelles fonctionnalités et préparer les équipes à prendre en charge les utilisateurs professionnels et les cadres.
   
 > [!NOTE]
-> Si, après avoir souscrit au programme de publication ciblée, vous décidez de revenir au programme de publication standard, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication standard. 
+> Si, après avoir souscrit au programme de publication ciblée, vous décidez de revenir au programme de publication standard, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication standard.
   
 ## <a name="targeted-release"></a>Version ciblée
 
 With this option, you and your users can be the first to see the latest updates and help shape the product by providing early feedback. You can choose to have individuals or the entire organization receive updates early.
   
 > [!IMPORTANT]
-> - Large or complex updates may take longer than others so that no users are adversely affected. There is no guarantee on the exact timeline of a release.
-> - La version ciblée n’est actuellement pas disponible pour les clients disposant du plan Office 365 GCC ou du plan Office 365 GCC High et DoD.
+> Les mises à jour d'envergure ou complexes peuvent demander plus de temps avant d'être diffusées, de sorte qu'aucun utilisateur ne soit affecté. Aucune garantie ne peut être apportée quant au calendrier exact des publications. La version ciblée n’est actuellement pas disponible pour les clients disposant du plan Office 365 GCC ou du plan Office 365 GCC High et DoD.
   
 ### <a name="targeted-release-for-entire-organization"></a>Publication ciblée pour l'organisation entière
 
-Si vous [configurez l’option de mise en production dans le Centre d’administration](#set-up-the-release-option-in-the-admin-center) pour cette option, tous vos utilisateurs bénéficieront de l’expérience de publication ciblée. Aux organisations comptant plus de 300 utilisateurs, nous recommandons d'utiliser un abonnement d'essai pour cette option. Pour plus d'informations sur les abonnements d'essai, veuillez vous adresser à votre contact Microsoft. 
+Si vous [configurez l’option de mise en production dans le Centre d’administration](#set-up-the-release-option-in-the-admin-center) pour cette option, tous vos utilisateurs bénéficieront de l’expérience de publication ciblée. Aux organisations comptant plus de 300 utilisateurs, nous recommandons d'utiliser un abonnement d'essai pour cette option. Pour plus d'informations sur les abonnements d'essai, veuillez vous adresser à votre contact Microsoft.
   
 ### <a name="targeted-release-for-selected-users"></a>Publication ciblée pour des utilisateurs sélectionnés
 
@@ -83,32 +82,32 @@ Si vous [configurez l’option de mise en production dans le Centre d’administ
 La version ciblée permet aux administrateurs, aux responsables des modifications ou à toute autre personne responsable des mises à jour de Microsoft 365 de se préparer aux modifications à venir en les laissant :
   
 - tester et valider les nouvelles mises à jour avant qu'elles soient publiées pour tous les utilisateurs au sein de l'organisation ;
-    
+
 - préparer la notification et la documentation à l'adresse des utilisateurs avant la publication des mises à jour à l'échelle mondiale ;
-    
+
 - préparer le support technique interne aux changements à venir ;
-    
+
 - effectuer les contrôles de sécurité et de conformité ;
-    
+
 - utiliser des contrôles de fonctionnalité, le cas échéant, pour contrôler la publication des mises à jour aux utilisateurs finaux.
-    
+
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurer l’option de mise en production dans le Centre d’administration
 
 Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour de Microsoft 365 en procédant comme suit. Vous devez être administrateur général dans Microsoft 365 pour accepter.
   
 > [!IMPORTANT]
-> L’application des modifications ci-dessous dans Microsoft 365 peut prendre jusqu’à 24 heures. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 
+> L’application des modifications ci-dessous dans Microsoft 365 peut prendre jusqu’à 24 heures. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée.
   
 1. Dans le centre d’administration, accédez au **Paramètres** > **de l’organisation** et, sous <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">l’onglet **Profil de l’organisation**</a>, choisissez **Préférences de publication**.
 
-5. Pour désactiver la version ciblée, sélectionnez **Version standard**, puis **Enregistrer les modifications**. 
+5. Pour désactiver la version ciblée, sélectionnez **Version standard**, puis **Enregistrer les modifications**.
     
-6. Pour activer la mise en production ciblée pour tous les utilisateurs de votre organisation, sélectionnez **Publication ciblée pour tout le monde**, puis **sélectionnez Enregistrer les modifications**. 
+6. Pour activer la mise en production ciblée pour tous les utilisateurs de votre organisation, sélectionnez **Publication ciblée pour tout le monde**, puis **sélectionnez Enregistrer les modifications**.
     
-7. Pour activer la mise en production ciblée pour certaines personnes de votre organisation, sélectionnez **Publication ciblée pour les utilisateurs sélectionnés**, puis **sélectionnez Enregistrer les modifications**. 
-    
+7. Pour activer la mise en production ciblée pour certaines personnes de votre organisation, sélectionnez **Publication ciblée pour les utilisateurs sélectionnés**, puis **sélectionnez Enregistrer les modifications**.
+
 8. **Choisissez Sélectionner des utilisateurs** pour ajouter des utilisateurs un par un, ou **Charger des utilisateurs** pour les ajouter en bloc.
-    
+
 9. Lorsque vous avez terminé d’ajouter des utilisateurs, **sélectionnez Enregistrer les modifications**.
   
 ## <a name="next-steps"></a>Prochaines étapes
