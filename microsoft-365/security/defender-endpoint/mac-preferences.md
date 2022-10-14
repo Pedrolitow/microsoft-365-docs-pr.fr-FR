@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 93d113959b138b1b4477fe779c0ce61fd6540634
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 972240c3683b469587d82ec5f729b35d79a40c0c
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231877"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573444"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -102,8 +102,8 @@ Active ou désactive la fonctionnalité de calcul de hachage de fichier. Lorsque
 |---|---|
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|enableFileHashComputation|
-|**Type de données**|Chaîne|
-|**Valeurs possibles**|désactivé (par défaut) <p> activé|
+|**Type de données**|Valeur booléenne|
+|**Valeurs possibles**|false (par défaut) <p> true|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.73.77 ou ultérieure.|
 
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions
