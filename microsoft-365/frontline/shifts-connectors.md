@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: b3faa651939b5866e5bb99dbf3ace05d9b86dfe0
-ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.openlocfilehash: d3a89c9ca4641f23135696dab13f69f09c2c5b94
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68381740"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573326"
 ---
 # <a name="shifts-connectors"></a>Connecteurs de Plannings
 
@@ -120,7 +120,7 @@ Le connecteur Teams Shifts pour UKG Dimensions est une offre interne hébergée 
 Les responsables de première ligne peuvent :
 
 - Publiez des décalages et des planifications dans les dimensions UKG et affichez-les dans Shifts.
-- Créez, gérez et attribuez des décalages ouverts dans les dimensions UKG et affichez-les dans les dimensions UKG et shifts.
+- Créez, affichez, gérez et attribuez des décalages ouverts dans les dimensions ukg et les shifts sur le bureau Teams et l’application web Teams. (Actuellement, les gestionnaires ne peuvent pas afficher ou affecter des décalages ouverts dans Shifts sur Teams mobile.)
 - Créez, modifiez et supprimez des congés dans les dimensions UKG et affichez-les dans Shifts.
 - Affichez et approuvez les demandes de planification des travailleurs dans les dimensions UKG et shifts.
 - Définissez et mettez à jour la disponibilité des workers dans les dimensions UKG et affichez-les dans Shifts.
@@ -131,7 +131,7 @@ Les travailleurs de première ligne peuvent :
 - Demandez un congé, affichez les informations sur les congés et affichez les décalages ouverts de l’équipe dans Shifts.
 - Afficher et publier des entrées de carte de temps dans Shifts.
 - Demandez des shifts ouverts et des shifts d’échange dans shifts.
-- Définir leur disponibilité dans Plannings.
+- Définissez leur disponibilité dans Shifts sur Teams Mobile.
 
 Les éléments suivants ne sont pas pris en charge actuellement :
 

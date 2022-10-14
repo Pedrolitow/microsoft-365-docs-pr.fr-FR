@@ -21,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez Mobilité et sécurité de base pour créer des stratégies d’appareil qui protègent les informations de votre organisation.
-ms.openlocfilehash: 5557f6c0d26d1870860b63f7236295ddd39e1171
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 2a6124992f9126cd69dad4a8fcb5a1a84f8c39c6
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172002"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573722"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Créer des stratégies de sécurité des appareils dans Mobilité et sécurité de base
 
@@ -125,13 +125,13 @@ Lorsque vous appliquez une stratégie aux appareils utilisateur, l’impact sur 
 |**Stratégie de sécurité**|**Android**|**Samsung KNOX**|**iOS**|**Remarques**|
 |:-----|:-----|:-----|:-----|:-----|
 |Exiger la sauvegarde chiffrée|Non|Oui|Oui|Sauvegarde chiffrée iOS requise.|
-|Bloquer la sauvegarde sur le cloud|Oui|Oui|Oui|Sauvegarde Google bloquée sur Android (grisé), sauvegarde sur le cloud sous iOS.|
-|Bloquer la synchronisation de documents|Non|Non|Oui|iOS : bloquer les documents dans le cloud.|
+|Bloquer la sauvegarde sur le cloud|Oui|Oui|Oui|Bloquer la sauvegarde Google sur Android (grisé), sauvegarde cloud sur iOS supervisé.|
+|Bloquer la synchronisation de documents|Non|Non|Oui|iOS : bloquer des documents dans le cloud sur des appareils iOS supervisés.|
 |Bloquer la synchronisation de photos |Non|Non|Oui|iOS (natif) : bloquer le flux de photos.|
 |Bloquer la capture d'écran |Non|Oui|Oui|Bloqué lors de la tentative.|
-|Bloquer la visioconférence |Non|Non|Oui|FaceTime bloqué sur iOS, pas sur Skype ou d’autres.|
+|Bloquer la visioconférence |Non|Non|Oui|FaceTime bloqué sur les appareils iOS supervisés, et non sur Skype ou d’autres.|
 |Bloquer l’envoi de données de diagnostic |Non|Oui|Oui|Bloquer l’envoi des rapports d’incident Google sur Android.|
-|Bloquer l’accès au magasin d’applications |Non|Oui|Oui|Icône du magasin d’applications manquante sur la page d’accueil Android, désactivée sous Windows, manquante sous iOS.|
+|Bloquer l’accès au magasin d’applications |Non|Oui|Oui|Icône de l’App Store manquante sur la page d’accueil Android, désactivée sur Windows et appareils iOS supervisés.|
 |Exiger le mot de passe pour le magasin d’applications |Non|Non|Oui|iOS : Mot de passe requis pour les achats iTunes.|
 |Bloquer la connexion au stockage amovible |Non|Oui|N/A|Android : la carte SD est grisée dans les paramètres, Windows avertit l’utilisateur, les applications installées ne sont pas disponibles|
 |Bloquer la connexion Bluetooth |Voir les notes|Voir les notes|Oui|Nous ne pouvons pas désactiver BlueTooth en tant que paramètre sur Android. Au lieu de cela, nous désactivons toutes les transactions qui nécessitent BlueTooth : distribution audio avancée, contrôle à distance audio/vidéo, appareils mains libres, casque, accès au carnet de téléphone et port série. Un petit message flottant apparaît en bas de la page lorsque l’une d’entre elles est utilisée.|
