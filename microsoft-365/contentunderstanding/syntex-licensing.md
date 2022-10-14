@@ -13,16 +13,16 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Découvrez les licences pour Microsoft Syntex.
-ms.openlocfilehash: c3c78d407aacb260d6b9d6edb9597d9fc3a4c38c
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 206d68d8d1be54a21c4f857830a1d85672c95a04
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565045"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68574008"
 ---
 # <a name="licensing-for-microsoft-syntex"></a>Gestion des licences pour Microsoft Syntex
 
-Pour utiliser SharePoint Syntex, vous devez disposer d’une licence pour chaque utilisateur Syntex. Si vous supprimez toutes les licences SharePoint Syntex de votre locataire à une date ultérieure (ou si votre version d’évaluation expire), les utilisateurs ne pourront plus créer, publier ou exécuter des modèles de compréhension de document ou de traitement de formulaire. En outre, les rapports des magasins à terme, l'importation de la taxonomie SKOS et la poussée des types de contenu ne seront plus disponibles. Aucun modèle, contenu ou métadonnées ne sera supprimé et les autorisations de site ne seront pas modifiées.
+Pour utiliser Microsoft Syntex, vous devez disposer d’une licence pour chaque utilisateur Syntex. Si vous supprimez toutes les licences Syntex de votre locataire à une date ultérieure (ou si votre version d’évaluation expire), les utilisateurs ne pourront plus créer, publier ou exécuter des modèles de compréhension de document ou de traitement de formulaire. En outre, les rapports des magasins à terme, l'importation de la taxonomie SKOS et la poussée des types de contenu ne seront plus disponibles. Aucun modèle, contenu ou métadonnées ne sera supprimé et les autorisations de site ne seront pas modifiées.
  
 > [!NOTE] 
 > Syntex est une licence de module complémentaire qui exige que les utilisateurs disposent également d’une licence pour Microsoft 365.
