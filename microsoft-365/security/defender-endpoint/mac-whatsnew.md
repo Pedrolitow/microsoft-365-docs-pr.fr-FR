@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a26b31caeb695718b3a7c747265615490fc92321
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1fe5cc67fe2d07dd18111fb2e866158328591028
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564211"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573700"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Mac
 
@@ -48,7 +48,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 **Nouveautés**
 
-- Mac TP en mode Bloc provoquant le blocage de l’appareil lors de l’arrêt/blocage au redémarrage
+- Correctif de bogue : Mac TP en mode bloc provoquant le blocage de l’appareil lors de l’arrêt/des plantages au redémarrage
 - Ajouter un commutateur de ligne de commande mdatp pour afficher l’historique d’analyse à la demande
 - Améliorer les performances du propriétaire de l’appareil sur MacOs
 - Prêt pour macOS Ventura (13.0)

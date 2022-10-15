@@ -13,18 +13,18 @@ manager: dansimp
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 06/28/2022
+ms.date: 10/13/2022
 ms.reviewer: mkaminska; pahuijbr
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: df6bc61380ef74f0944f7d9969e74d18fa1134d2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d49087d5dffd5bd2d726296b68b5407cc487e898
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195410"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573854"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -36,6 +36,13 @@ ms.locfileid: "68195410"
 
 **Plateformes**
 - Windows
+
+> [!TIP]
+> Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux :
+>
+> ```https
+> https://github.com/MicrosoftDocs/microsoft-365-docs/commits/public/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus.md.atom
+> ```
 
 Pour vous assurer que Microsoft Defender protection antivirus fournie par le cloud fonctionne correctement, votre équipe de sécurité doit configurer votre réseau pour autoriser les connexions entre vos points de terminaison et certains serveurs Microsoft. Cet article répertorie les connexions qui doivent être autorisées à utiliser les règles de pare-feu. Il fournit également des instructions pour valider votre connexion. La configuration correcte de votre protection garantit que vous recevez la meilleure valeur de vos services de protection fournis par le cloud.
 

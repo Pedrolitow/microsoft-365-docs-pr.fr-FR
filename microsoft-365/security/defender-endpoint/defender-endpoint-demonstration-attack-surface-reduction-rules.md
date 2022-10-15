@@ -18,15 +18,13 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 772600ddb31b5819718a23e340b832dde18ced6e
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: c89d259225f4820bb24d7ccfbe0f60d1cbedff55
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543220"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573261"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="attack-surface-reduction-rules-demonstrations"></a>Démonstrations de règles de réduction de la surface d’attaque
 
 Les règles de réduction de la surface d’attaque ciblent des comportements spécifiques qui sont généralement utilisés par les programmes malveillants et les applications malveillantes pour infecter les machines, par exemple :
@@ -60,14 +58,21 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-CD74-433A-B99E-2ECDC0
 Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A1CE869 -AttackSurfaceReductionRules_Actions AuditMode
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions AuditMode
 ```
-### <a name="states"></a>États
-- Activé = Mode bloc (1)
-- AuditMode = Mode Audit (2)
-- Disabled = Off (0)
+
+### <a name="rule-states"></a>États de règle
+
+|État | Mode| Valeur numérique |
+|:---|:---|:---|
+| AuditMode | = Mode Audit | 2 |
+| Activé | = Mode bloc | 1 |
+| Désactivé | = Désactivé | 0 |
 
 ### <a name="verify-configuration"></a>Vérifier la configuration
 
-- Get-MpPreference
+```powershell
+
+Get-MpPreference
+```
 
 ## <a name="test-files"></a>Fichiers de test
 
@@ -92,12 +97,17 @@ Remarque : certains fichiers de test ont plusieurs exploits incorporés et décl
 
 ### <a name="setup"></a>Configuration
 
-Téléchargez et exécutez ce [script d’installation](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip). Avant d’exécuter la stratégie d’exécution du script, définissez La stratégie d’exécution sur Unrestricted à l’aide de cette commande PowerShell : Set-ExecutionPolicy Unrestricted
+Téléchargez et exécutez ce [script d’installation](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip). Avant d’exécuter la stratégie d’exécution du script, définissez La stratégie d’exécution sur Unrestricted à l’aide de cette commande PowerShell :
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+
+```
 
 Vous pouvez effectuer ces étapes manuelles à la place :
 
 1. Créer un dossier sous c : démonstration nommée, « c:\demo »
-2. Enregistrez ce [fichier propre](https://demo.wd.microsoft.com/Content/testfile_safe.txt) dans c:\demo (nous avons besoin de quelque chose pour chiffrer)
+2. Enregistrez ce [fichier propre](https://demo.wd.microsoft.com/Content/testfile_safe.txt) dans c:\demo.
 3. Activez toutes les règles à l’aide des commandes PowerShell ci-dessus.
 
 ### <a name="scenario-1-asr-blocks-a-test-file-with-multiple-vulnerabilities"></a>Scénario 1 : L’ASR bloque un fichier de test avec plusieurs vulnérabilités
@@ -112,7 +122,7 @@ Une notification « Action bloquée » doit s’afficher immédiatement.
 ### <a name="scenario-2-asr-rule-blocks-the-test-file-with-the-corresponding-vulnerability"></a>Scénario 2 : La règle ASR bloque le fichier de test avec la vulnérabilité correspondante
 
 1. Configurez la règle que vous souhaitez tester à l’aide de la commande PowerShell ci-dessus.
-2. Exemple : Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4Efc-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions activé
+2. Exemple : `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
 3. Téléchargez et ouvrez le fichier/document de test pour la règle que vous souhaitez tester liée ci-dessus, activez la modification et le contenu si vous y êtes invité
 4. Exemple : [Empêcher les applications Office de créer des processus enfants](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
