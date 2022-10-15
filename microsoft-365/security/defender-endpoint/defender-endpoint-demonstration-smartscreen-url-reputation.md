@@ -18,15 +18,13 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 7303d0eb27a13d296a353d10b16b5fa32bcc0267
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 338ec04b01d66116e06f7afb4894bdd06fe9ef9e
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542582"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573283"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="url-reputation-demonstrations"></a>Démonstrations de réputation d’URL
 
 Testez comment Microsoft Defender SmartScreen vous aide à identifier les sites web de hameçonnage et de programmes malveillants en fonction de la réputation de l’URL.

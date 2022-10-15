@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 04/06/2022
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
@@ -18,15 +17,15 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: Cette rubrique vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du locataire qui affectent la sécurité de votre environnement Microsoft 365.
+description: Configurations manuelles pour Exchange Online Protection, Microsoft Defender pour Office 365, Plan 1 et 2 et Microsoft 365 Defender, pour une protection complète de votre abonnement Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 196ef4299f371e00a662b6e6bd0a38cc04955bb5
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 0ef5c7987895f984fd59662298617a72504dda67
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68086528"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573370"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 
@@ -37,12 +36,21 @@ ms.locfileid: "68086528"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Cette rubrique vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du locataire qui affectent la sécurité de votre environnement Microsoft 365. Vos besoins en matière de sécurité peuvent nécessiter une sécurité plus ou moins importante. Utilisez ces recommandations comme point de départ.
+Les besoins de votre organisation nécessitent une sécurité.
 
+Les spécificités sont propres à votre entreprise.
+
+Cette rubrique vous guide tout au long de la configuration manuelle des paramètres à l’échelle du locataire qui affectent la sécurité de votre environnement Microsoft 365. Utilisez ces recommandations comme point de départ.
 
 ## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>Paramétrer les stratégies de gestion des menaces dans le portail Microsoft 365 Defender
 
-Le portail Microsoft 365 Defender inclut des fonctionnalités qui protègent votre environnement. Il inclut également des rapports et des tableaux de bord que vous pouvez utiliser pour surveiller et prendre des mesures. Certaines zones sont associées à des configurations de stratégie par défaut. Certaines zones n’incluent pas de stratégies ou de règles par défaut. Consultez ces stratégies sous **Email &** stratégies de collaboration \> **& règles Stratégies** \> de menace pour paramétrer les paramètres de gestion des menaces pour un environnement plus sécurisé.
+Le portail Microsoft 365 Defender offre des fonctionnalités de protection et de création de rapports. Il contient des tableaux de bord que vous pouvez utiliser pour surveiller et prendre des mesures en cas de menaces.
+
+Gardez à l’esprit que certains domaines sont fournis avec *des configurations de stratégie par défaut*. Certaines zones n’incluent pas de stratégies ou de règles par défaut.
+
+Par exemple, la configuration *recommandée* de Microsoft Defender pour Office 365 (plan 1 et plan 2) est décrite par ce guide pratique pas à pas, ici : « [Garantir une sécurité optimale](step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md) ». Mais, même si, certains administrateurs optent pour une approche plus pratique de ce produit.
+
+Pour automatiser votre configuration de Microsoft Defender pour Office 365 visitez les stratégies Standard et Strict sous Email & stratégies de **collaboration** \> **& les stratégies** \> **de menace** afin d’ajuster les paramètres de gestion des menaces pour un environnement plus sécurisé.
 
 |Zone|Stratégie par défaut ?|Recommandation|
 |---|---|---|
@@ -51,14 +59,27 @@ Le portail Microsoft 365 Defender inclut des fonctionnalités qui protègent vot
 |**Pièces jointes sécurisées dans Defender pour Office 365**|Non|Configurez les paramètres globaux pour les pièces jointes sécurisées et créez une stratégie de pièces jointes sécurisées comme décrit ici : [Configurer les paramètres des pièces jointes sécurisées dans Microsoft Defender pour Office 365](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> Plus d’informations : <ul><li>[Paramètres de pièces jointes fiables recommandés](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Pièces jointes sécurisées dans Microsoft Defender pour Office 365](safe-attachments.md)</li><li>[Définir des stratégies de pièces jointes fiables](set-up-safe-attachments-policies.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Documents sécurisés dans Microsoft 365 E5](safe-docs.md)</li></ul>|
 |**Liens sécurisés dans Microsoft Defender pour Office 365**|Non|Créez une stratégie liens sécurisés comme décrit ici : [configurez les paramètres liens fiables dans Microsoft Defender pour Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> Plus d’informations : <ul><li>[Paramètres de liens fiables recommandés](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Configuration des stratégies de liens fiables](set-up-safe-links-policies.md)</li><li>[Liens sécurisés dans Microsoft Defender pour Office 365](safe-links.md)</li></ul>|
 |**Anti-courrier indésirable (filtrage de courrier)**|Oui|Configurer la stratégie anti-courrier indésirable par défaut comme décrit ici : [Configurer les paramètres de protection anti-courrier indésirable dans EOP](protect-against-threats.md#part-3---anti-spam-protection-in-eop) <p> Plus d’informations : <ul><li>[Paramètres de stratégie anti-courrier indésirable recommandés](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[Protection anti-courrier indésirable dans EOP](anti-spam-protection.md)</li><li>[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)</li></ul>|
-|***Authentification Email***|Oui|Email’authentification utilise des enregistrements DNS pour ajouter des informations vérifiables aux messages électroniques concernant la source et l’expéditeur du message. Microsoft 365 configure automatiquement l’authentification par e-mail pour son domaine par défaut (onmicrosoft.com), mais les administrateurs microsoft 365 peuvent également configurer l’authentification par e-mail pour les domaines personnalisés. Trois méthodes d’authentification sont utilisées : <ul><li>Framework de stratégie d’expéditeur (ou SPF).</li><ul><li>Pour l’installation, consultez [Configurer SPF dans Microsoft 365 pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>DomainKeys Identified Mail (DKIM).</li><ul><li>Consultez [Utiliser DKIM pour valider les e-mails sortants envoyés à partir de votre domaine personnalisé](use-dkim-to-validate-outbound-email.md).</li><li>Une fois que vous avez configuré DKIM, activez-le dans le portail Microsoft 365 Defender.</li></ul><li>Authentification, création de rapports et conformité des messages basée sur le domaine (DMARC).</li><ul><li>Pour la configuration DMARC [, utilisez DMARC pour valider les e-mails dans Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
+|***Email Authentication** _|Oui|Email’authentification utilise des enregistrements DNS pour ajouter des informations vérifiables aux messages électroniques concernant la source et l’expéditeur du message. Microsoft 365 configure automatiquement l’authentification par e-mail pour son domaine par défaut (onmicrosoft.com), mais les administrateurs microsoft 365 peuvent également configurer l’authentification par e-mail pour les domaines personnalisés. Trois méthodes d’authentification sont utilisées : <ul><li>_ *Sender Policy Framework (ou SPF).**</li><ul><li> Pour l’installation, consultez [Configurer SPF dans Microsoft 365 pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>** DomainKeys Identified Mail (DKIM **).</li><ul><li> Consultez [Utiliser DKIM pour valider les e-mails sortants envoyés à partir de votre domaine personnalisé](use-dkim-to-validate-outbound-email.md).</li><li> Une fois que vous avez configuré DKIM, activez-le dans le portail Microsoft 365 Defender.</li></ul><li>** Authentification, création de rapports et conformité des messages basée sur le domaine (DMARC **).</li><ul><li> Pour la configuration DMARC [, utilisez DMARC pour valider les e-mails dans Microsoft 365](use-dmarc-to-validate-email.md).</li></ul><li> Une fois que vous avez configuré DKIM, activez-le dans le portail Microsoft 365 Defender.</li></ul><ul><li>** Chaîne de réception authentifiée (ARC) dans Microsoft 365 Defender pour Office.** <ul><li>Répertoriez vos [sealers ARC approuvés](use-arc-exceptions-to-mark-trusted-arc-senders.md) afin que les intermédiaires *légitimes* soient approuvés même s’ils modifient la messagerie.</li></ul>|
 
 > [!NOTE]
 > Pour les déploiements non standard de SPF, les déploiements hybrides et la résolution des problèmes : [comment Microsoft 365 utilise Sender Policy Framework (SPF) pour empêcher l’usurpation d’identité](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 ## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>Afficher les tableaux de bord et les rapports dans le portail Microsoft 365 Defender
 
-Consultez ces rapports et tableaux de bord pour en savoir plus sur l’intégrité de votre environnement. Les données contenues dans ces rapports s’enrichiront à mesure que votre organisation utilisera Office 365 services. Pour l’instant, familiarisez-vous avec ce que vous pouvez surveiller et prendre des mesures.
+Accédez à [security.microsoft.com](https://security.microsoft.com). Le menu de Microsoft 365 Defender est divisé en sections qui commencent, dans l’ordre, Accueil, Email & Collaboration, Applications cloud et Rapports (vous pouvez voir *tout ou partie* de ces sections en  fonction de votre plan). Vous recherchez des rapports.
+
+1. Accédez à [security.microsoft.com](https://security.microsoft.com).
+2. Cliquez sur **Rapports** dans le menu.
+    1. Ici, vous pouvez afficher des informations sur les tendances de sécurité et suivre l’état de protection de vos identités, données, appareils, applications et infrastructure.
+
+Les données contenues dans ces rapports s’enrichiront à mesure que votre organisation utilisera Office 365 services, gardez cela à l’esprit si vous effectuez des tests ou des tests pilotes. Pour l’instant, familiarisez-vous avec ce que vous pouvez surveiller et prendre des mesures.
+
+À l’intérieur de chaque rapport, vous verrez des cartes pour les zones spécifiques surveillées.
+
+1. Cliquez sur les **rapports Email & Collaboration**.
+1. Prenez note des fiches de rapport disponibles.
+    1. Tout, des *programmes malveillants détectés dans les e-mails*, *aux détections de courrier indésirable*, *aux utilisateurs compromis*, aux *messages signalés par l’utilisateur* et *aux soumissions les deux derniers* , avec un bouton lié aux soumissions.
+1. Cliquez sur un rapport, tel que le *résumé de l’état* du flux de courrier, puis cliquez sur le bouton **Afficher les détails** pour explorer les données (qui inclut même une vue en entonnoir pour faciliter l’interprétation du flux de courrier total par rapport aux messages bloqués, courrier indésirable et e-mails de hameçonnage, etc.).
 
 |Tableau de bord|Description|
 |---|---|

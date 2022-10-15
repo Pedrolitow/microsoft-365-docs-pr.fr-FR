@@ -15,14 +15,14 @@ ms.collection:
 - m365-security
 - m365initiative-defender-office365
 ms.custom: ''
-description: Microsoft Defender pour Office 365 clients E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque e-mail avec la page d’entité de messagerie.
+description: Microsoft Defender pour Office 365 clients E5 et P1 et P2 peuvent voir les détails de l’e-mail dans l’Explorateur (Explorateur de menaces), notamment les en-têtes de courrier pour la copie, les détails de détection, les menaces détectées, les emplacements de remise les plus récents et originaux, les actions de remise et les ID tels que l’ID de message réseau, etc.
 search.appverid: met150
-ms.openlocfilehash: 1ba5117de0b87d4d151733c7869110d3b93b3a43
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 2cf260b477a5e10e3502cd381e625e0024bc034f
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082678"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573905"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -40,20 +40,25 @@ ms.locfileid: "68082678"
 
 Les administrateurs de Microsoft Defender pour Office 365 E5 et Defender pour Office P1 et P2 ont une vue à 360 degrés de l’e-mail à l’aide de la **page d’entité Email**. Cette page d’e-mail go-to a été créée pour améliorer les informations [fournies dans le menu volant « Détails de l’e-mail » de l’Explorateur de menaces](threat-explorer-views.md).
 
-## <a name="reach-the-email-entity-page"></a>Atteindre la page d’entité d’e-mail
+Consultez les détails de l’e-mail dans l’Explorateur/l’Explorateur des menaces, y compris les en-têtes de courrier *avec l’option de copie*, les détails de détection, les menaces détectées, les emplacements de remise les plus récents et d’origine, les actions de remise et les ID tels que l’ID de message réseau, etc.
 
-La page d’entité de messagerie est disponible dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> **Email & Collaboration** \> **Explorer**. Ou, pour accéder directement à la page **Explorateur** , utilisez <https://security.microsoft.com/threatexplorer>.
+## <a name="how-to-get-to-the-email-entity-page"></a>Comment accéder à la page d’entité d’e-mail
 
-Dans **l’Explorateur**, sélectionnez l’objet d’un e-mail que vous examinez. Une barre d’or s’affiche en haut du menu volant du courrier électronique. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d’entité de messagerie avec des données enrichies... ». Sélectionnez cette option pour afficher la nouvelle page.
+Accédez au portail Microsoft 365 Defender dans <https://security.microsoft.com>**l’Explorateur** de **collaboration** \> Email &. Ou, pour accéder directement à la page **Explorateur** , utilisez <https://security.microsoft.com/threatexplorer>.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="Bannière d’or avec les mots *Essayez notre nouvelle page d’entité e-mail avec des données enrichies* pour accéder à la nouvelle expérience" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
+1. Dans **l’Explorateur**, sélectionnez l’objet d’un e-mail que vous examinez.
+1. Le menu volant de l’e-mail pour ce courrier s’ouvre.
+1. Vous verrez **l’entité Ouvrir l’e-mail**.
+1. Sélectionnez-le pour la présentation approfondie de votre e-mail.
+
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="Une fois l’e-mail sélectionné, vous obtenez un menu volant avec des détails et la page Ouvrir l’entité pour l’e-mail en haut." lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="Graphique de la page d’entité d’e-mail qui se concentre sur les titres que vous verrez" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > Les autorisations nécessaires pour afficher et utiliser cette page sont les mêmes que pour afficher **l’Explorateur**. L’administrateur doit être membre de l’administrateur général ou du lecteur général, ou administrateur de sécurité ou lecteur de sécurité. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-## <a name="read-the-email-entity-page"></a>Lire la page d’entité d’e-mail
+## <a name="how-to-read-the-email-entity-page"></a>Guide pratique pour lire la page d’entité d’e-mail
 
 La structure est conçue pour être facile à lire et à parcourir en un clin d’œil. Différents onglets en haut de la page vous permettent d’examiner plus en détail. Voici comment fonctionne la disposition :
 
@@ -69,7 +74,7 @@ La structure est conçue pour être facile à lire et à parcourir en un clin d�
 
     :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="Panneau principal de la page qui inclut l’en-tête d’e-mail et l’état de l’authentification" lightbox="../../media/email-entities-4-middle-panel.png":::
 
-### <a name="use-email-entity-page-tabs"></a>Utiliser des onglets de page d’entité de messagerie
+### <a name="how-to-use-the-email-entity-page-tabs"></a>Comment utiliser les onglets de page d’entité d’e-mail
 
 Les onglets situés en haut de la page d’entité vous permettent d’examiner efficacement les e-mails.
 
@@ -79,9 +84,9 @@ Les onglets situés en haut de la page d’entité vous permettent d’examiner 
 4. **URL** : cet onglet répertorie les URL trouvées dans l’e-mail avec d’autres détails sur les URL. Le nombre d’URL est limité à 10 actuellement, mais ces 10 sont prioritaires pour afficher *d’abord les URL malveillantes*. La hiérarchisation vous permet de gagner du temps et de deviner du travail. Les URL qui ont été jugées malveillantes et détonées seront également affichées ici.
 5. **E-mails similaires** : cet onglet répertorie tous les e-mails similaires à la combinaison *id de message réseau + destinataire* spécifique à cet e-mail. La similarité est basée uniquement sur le *corps du message*. Les déterminations prises sur les messages électroniques pour les classer comme « similaires » n’incluent pas une considération des *pièces jointes*.
 
-## <a name="new-to-the-email-entity-page"></a>Nouveautés de la page d’entité d’e-mail
+## <a name="available-on-the-email-entity-page"></a>Disponible sur la page d’entité d’e-mail
 
-De nouvelles fonctionnalités sont disponibles avec cette page d’entité de messagerie. Voici la liste.
+Voici quelques informations utiles pour commencer.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>Email préversion pour les boîtes aux lettres cloud
 
@@ -110,7 +115,7 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Résumé de la détonation montrant la chaîne, le résumé, les détails de la détonation et la capture d’écran sous le titre *Analyse approfondie*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
-### <a name="other-innovations"></a>Autres innovations
+### <a name="other-features-that-make-the-email-entity-page-helpful"></a>Autres fonctionnalités qui rendent la page d’entité Email utile
 
 *Balises* : il s’agit de balises appliquées aux utilisateurs. Si l’utilisateur est un destinataire, les administrateurs voient une balise *de destinataire* . De même, si l’utilisateur est un expéditeur, une balise *d’expéditeur* . Cela apparaît dans le côté gauche de la page d’entités de messagerie (dans la partie qui est décrite comme *collante* et, par conséquent, ancrée à la page).
 
@@ -167,7 +172,8 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
   - Aucun : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine d’envoi dans DNS.
 
 *Authentification composite* : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification par e-mail comme SPF, DKIM et DMARC, pour déterminer si le message est authentique. Il utilise le domaine *From :* du courrier comme base d’évaluation.
-## <a name="actions-into-email-entity-page"></a>Actions dans Email page d’entité
+
+## <a name="actions-you-can-take-on-the-email-entity-page"></a>Actions que vous pouvez effectuer sur la page d’entité Email
 
 Les équipes de sécurité peuvent désormais effectuer des actions de courrier électronique telles que la suppression réversible et la suppression définitive, passer au courrier indésirable, passer à la boîte de réception, déclencher une enquête, envoyer à Microsoft pour révision en ligne, et ainsi de suite. **Les** actions de bloc au niveau du locataire, telles que le fichier et l’URL ou l’expéditeur, peuvent également être déclenchées à partir de la page d’entité Email.  
 
@@ -182,7 +188,7 @@ Nous apportons également l’URL de bloc au niveau du locataire et la pièce jo
 Consultez [les autorisations](permissions-microsoft-365-security-center.md) requises pour effectuer ces actions. 
 
  
-### <a name="email-summary-panel"></a>Email panneau récapitulatif
+### <a name="the-email-summary-panel"></a>Panneau récapitulatif Email
 
 Le panneau récapitulatif de l’e-mail est une vue récapitulative de la page d’entité de messagerie complète. Il contient des détails standardisés sur l’e-mail (par exemple, les détections), ainsi que des informations spécifiques au contexte (par exemple, pour les métadonnées de mise en quarantaine ou de soumission). Le panneau récapitulatif de l’e-mail remplace les menus volants traditionnels Détections en temps réel, Explorateur de menaces, Soumissions et Rapports.
 

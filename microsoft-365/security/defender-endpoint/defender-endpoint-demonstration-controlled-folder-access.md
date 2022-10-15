@@ -18,15 +18,13 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 64cf18c8cf307259fc01be5e8d67048585bcbbf6
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 525955cff6ed0b4463d8135e8f20dfd2b2785a66
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542978"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573217"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="controlled-folder-access-cfa-demonstrations-block-ransomware"></a>Démonstrations d’accès contrôlé aux dossiers (CFA) (block ransomware)
 
 L’accès contrôlé aux dossiers vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomwares. Toutes les applications (tout fichier exécutable, y compris les fichiers .exe, .scr, .dll et autres) sont évaluées par Microsoft Defender Antivirus, qui détermine ensuite si l’application est malveillante ou sécurisée. Si l’application est déterminée comme malveillante ou suspecte, elle ne sera pas autorisée à apporter des modifications à des fichiers dans un dossier protégé.
@@ -38,26 +36,41 @@ L’accès contrôlé aux dossiers vous permet de protéger les données précie
 
 ## <a name="powershell-commands"></a>Commandes PowerShell
 
-- Set-MpPreference -EnableControlledFolderAccess (État)
-- Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```powershell
+Set-MpPreference -EnableControlledFolderAccess (State)
+```
 
-États
-- Activé = Mode bloc (1)
-- AuditMode = Mode Audit (2)
-- Disabled = Off (0)
+```powershell
+Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```
+
+## <a name="rule-states"></a>États de règle
+
+|État | Mode| Valeur numérique |
+|:---|:---|:---|
+| AuditMode | = Mode Audit | 2 |
+| Activé | = Mode bloc | 1 |
+| Désactivé | = Désactivé | 0 |
 
 ## <a name="verify-configuration"></a>Vérifier la configuration
 
+```powershell
 Get-MpPreference
+```
 
 ## <a name="test-file"></a>Fichier de test
+
 [Fichier de test ransomware CFA](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
 
 ## <a name="scenarios"></a>Scénarios
 
 ### <a name="setup"></a>Configuration
 
-Téléchargez et exécutez ce [script d’installation](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip). Avant d’exécuter la stratégie d’exécution du script, définissez La stratégie d’exécution sur Unrestricted à l’aide de cette commande PowerShell : Set-ExecutionPolicy Unrestricted
+Téléchargez et exécutez ce [script d’installation](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip). Avant d’exécuter la stratégie d’exécution du script, définissez La stratégie d’exécution sur Unrestricted à l’aide de cette commande PowerShell : 
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+```
 
 Vous pouvez effectuer ces étapes manuelles à la place :
 
@@ -67,18 +80,33 @@ Vous pouvez effectuer ces étapes manuelles à la place :
 
 ### <a name="scenario-1-cfa-blocks-ransomware-test-file"></a>Scénario 1 : LE CFA bloque le fichier de test ransomware
 
-1. Activer CFA à l’aide de la commande PowerShell : Set-MpPreference -EnableControlledFolderAccess Enabled
-2. Ajoutez le dossier de démonstration à la liste des dossiers protégés à l’aide de la commande PowerShell : Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+1. Activez CFA à l’aide de la commande PowerShell : 
+  
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Enabled
+```
+
+2. Ajoutez le dossier de démonstration à la liste des dossiers protégés à l’aide de la commande PowerShell :
+
+```powershell
+Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```
+
 3. Télécharger le [fichier de test](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe) ransomware
 4. Exécuter le fichier de test ransomware *ce n’est pas ransomware, il tente simplement de chiffrer c:\demo
 
 #### <a name="scenario-1-expected-results"></a>Résultats attendus du scénario 1
 
-5 secondes après l’exécution du fichier de test ransomware, vous devriez voir une notification CFA l’a bloqué
+5 secondes après l’exécution du fichier de test ransomware, vous devriez voir une notification CFA bloquer la tentative de chiffrement.
 
 ### <a name="scenario-2-what-would-happen-without-cfa"></a>Scénario 2 : Que se passerait-il sans CFA ?
 
-1. Désactivez CFA à l’aide de cette commande PowerShell : Set-MpPreference -EnableControlledFolderAccess Disabled
+1. Désactivez CFA à l’aide de cette commande PowerShell : 
+
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Disabled
+```
+
 2. Exécuter le [fichier de test](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe) ransomware
 
 #### <a name="scenario-2-expected-results"></a>Résultats attendus du scénario 2
@@ -90,8 +118,11 @@ Vous pouvez effectuer ces étapes manuelles à la place :
 
 Téléchargez et [exécutez ce script de nettoyage](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip). Vous pouvez effectuer ces étapes manuelles à la place :
 
-- Set-MpPreference -EnableControlledFolderAccess Désactivé
-- Nettoyer c:\demo encryption exécuter le [fichier de chiffrement/déchiffrement](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Disabled
+```
+
+Nettoyer c:\demo encryption exécuter le [fichier de chiffrement/déchiffrement](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## <a name="see-also"></a>Voir aussi
 [Accès contrôlé aux dossiers](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
