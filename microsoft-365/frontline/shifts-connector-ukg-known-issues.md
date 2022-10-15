@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 10c1f0aff03fb302cc12cae78cf003d2f337a01a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 452eb4d826ddedddc31bffa25edfcbc8b88526f1
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68234186"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68574096"
 ---
 # <a name="known-issues-team-shifts-connector-for-ukg-dimensions"></a>Problèmes connus : Connecteur Team Shifts pour les dimensions UKG
 
@@ -45,6 +45,16 @@ Pour contourner ce problème, conservez le paramètre de fuseau horaire tel qu�
 
 La fonctionnalité d’arrêt de début et de fin de la fonctionnalité d’horloge temporelle n’est pas prise en charge dans une intégration à UKG Dimensions. Les utilisateurs ne seront pas en mesure d’expirer ou de faire une pause, même si les boutons sont affichés dans Shifts.
 
+## <a name="availability-settings-of-users-dont-apply-to-the-current-week"></a>Les paramètres de disponibilité des utilisateurs ne s’appliquent pas à la semaine en cours
+
+Les utilisateurs mobiles Teams peuvent définir leur disponibilité personnelle dans Shifts. Toutefois, si un utilisateur définit sa disponibilité après le jour défini comme début de la semaine dans UKG Dimensions, sa disponibilité s’applique à la semaine suivante et non à la semaine en cours. Par exemple, le dimanche est défini comme début de la semaine dans les dimensions UKG, et le lundi de la semaine en cours, un utilisateur modifie sa disponibilité pour le jeudi et le vendredi. Dans ce scénario, leurs paramètres de disponibilité sont appliqués à la semaine suivante.
+
+## <a name="users-see-a-red-x-when-a-coworker-accepts-their-swap-request-and-the-manager-declines-the-request"></a>Les utilisateurs voient un « X » rouge lorsqu’un collègue accepte leur demande d’échange et que le responsable refuse la demande.
+
+Actuellement, si un utilisateur crée une demande d’échange avec un collègue et que le collègue accepte la demande, mais que le responsable la refuse, l’utilisateur voit de manière inattendue un « X » rouge en regard de la réponse du collègue et du responsable.
+
+Le comportement correct et attendu est une coche verte pour indiquer que le collègue a accepté la demande et un « X » rouge pour indiquer que le responsable a refusé la demande.
+
 ## <a name="a-user-cant-perform-some-actions-in-shifts-in-the-teams-web-app-after-signing-in-with-a-different-account"></a>Un utilisateur ne peut pas effectuer certaines actions dans Shifts dans l’application web Teams après s’être connecté avec un autre compte
 
 Ce problème peut se produire si un utilisateur disposant de plusieurs comptes dans Teams effectue des actions dans Shifts qui nécessitent l’authentification unique (SSO) dans UKG Dimensions et que cet utilisateur change de compte dans l’application web Teams dans le même navigateur.
@@ -53,7 +63,7 @@ Par exemple, un utilisateur se connecte à Teams, approuve une demande de congé
 
 Dans ce scénario, un problème de mise en cache se produit dans lequel l’utilisateur est connecté à Teams et Shifts sur un compte et connecté à UKG Dimensions sur l’autre compte.
 
-Pour contourner ce problème, effectuez l’une des opérations suivantes :
+Pour contourner ce problème, effectuez l’une des actions suivantes :
 
 - Effacez les cookies et les données de site pour le site mykronos.com dans le navigateur. Pour plus d’informations, consultez [Supprimer les cookies dans Microsoft Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) ou [Effacer, activer et gérer les cookies dans Chrome](https://support.google.com/chrome/answer/95647).
 - Utilisez l’application web Teams dans une fenêtre InPrivate dans Microsoft Edge ou en mode Incognito dans Google Chrome.

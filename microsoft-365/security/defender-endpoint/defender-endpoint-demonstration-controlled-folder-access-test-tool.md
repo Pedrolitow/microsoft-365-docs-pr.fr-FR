@@ -18,15 +18,13 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 71c9840c67fc69b54962d8a184df6a8c608ca433
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 67f3d0cb89992410d973959bf27c5a0de83697aa
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543135"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573920"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="controlled-folder-access-cfa-demonstration-test-tool-block-script"></a>Outil de test de démonstration d’accès contrôlé aux dossiers (CFA) (script de bloc)
 
 L’accès contrôlé aux dossiers vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomwares. Toutes les applications (tout fichier exécutable, y compris les fichiers .exe, .scr, .dll et autres) sont évaluées par Microsoft Defender Antivirus, qui détermine ensuite si l’application est malveillante ou sécurisée. Si l’application est déterminée comme malveillante ou suspecte, elle ne sera pas autorisée à apporter des modifications à des fichiers dans un dossier protégé.
@@ -42,29 +40,43 @@ L’accès contrôlé aux dossiers vous permet de protéger les données précie
 Set-MpPreference -EnableControlledFolderAccess <State>
 ```
 
-États:
-- Activé = Mode bloc (1)
-- AuditMode = Mode Audit (2)
-- Disabled = Off (0)
+États de règle
+
+|État | Mode| Valeur numérique |
+|:---|:---|:---|
+| AuditMode | = Mode Audit | 2 |
+| Activé | = Mode bloc | 1 |
+| Désactivé | = Désactivé | 0 |
 
 ### <a name="verify-configuration"></a>Vérifier la configuration
 
 ```powershell
 Get-MpPreference
 ```
+
 ## <a name="scenario"></a>Scénario
 
 ### <a name="setup"></a>Configuration
 
-Téléchargez et exécutez ce [script d’installation](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip). Avant d’exécuter la stratégie d’exécution du script, définissez La stratégie d’exécution sur Unrestricted à l’aide de cette commande PowerShell : Set-ExecutionPolicy Unrestricted
+Téléchargez et exécutez ce [script d’installation](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip). Avant d’exécuter la stratégie d’exécution du script, définissez La stratégie d’exécution sur Unrestricted à l’aide de cette commande PowerShell :
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+```
 
 Vous pouvez effectuer ces étapes manuelles à la place :
-1. Activer CFA à l’aide de la commande powershell : Set-MpPreference -EnableControlledFolderAccess Enabled
+
+1. Activez CFA à l’aide de la commande PowerShell :
+
+  ```powershell
+  Set-MpPreference -EnableControlledFolderAccess Enabled
+  ```
+
 2. Télécharger [l’outil de test](https://demo.wd.microsoft.com/Content/CFAtool.exe) CFA
 3. Exécuter les commandes PowerShell ci-dessus
 
-
 ## <a name="scenario-use-the-cfa-test-tool-to-simulate-an-untrusted-process-writing-to-a-protected-folder"></a>Scénario : Utiliser l’outil de test CFA pour simuler l’écriture d’un processus non approuvé dans un dossier protégé
+
 1. Lancer l’outil de test CFA
 2. Sélectionnez le dossier souhaité et créez un fichier
 - Vous trouverez plus d’informations [ici](/windows/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
@@ -73,7 +85,9 @@ Vous pouvez effectuer ces étapes manuelles à la place :
 
 Téléchargez et [exécutez ce script de nettoyage](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip). Vous pouvez effectuer ces étapes manuelles à la place :
 
-- Set-MpPreference -EnableControlledFolderAccess Désactivé
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Disabled
+```
 
 ## <a name="see-also"></a>Voir aussi
 [Accès contrôlé aux dossiers](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)

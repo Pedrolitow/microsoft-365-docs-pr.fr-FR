@@ -18,15 +18,13 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 6b3519fe6358de1e65d2dbb38a4dafad1757608e
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 08d3e258bbc004240d26f6683fec16e2eb332d1d
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543000"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573480"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="smartscreen-app-reputation-demonstration"></a>Démonstration de la réputation de l’application SmartScreen
 
 Testez comment Microsoft Defender pour point de terminaison SmartScreen vous aide à identifier les sites web de hameçonnage et de programmes malveillants en fonction de la réputation de l’application.
@@ -73,7 +71,7 @@ Ce téléchargement est un programme malveillant connu ; SmartScreen doit empêc
 
   Le lancement de ce lien doit afficher un message similaire à ce qui suit :
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="SmartScreen détecte un téléchargement de fichiers dont la réputation n’est pas sûre.; le téléchargement est bloqué.":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Capture d’écran montrant comment SmartScreen détecte un téléchargement de fichiers avec une réputation non sécurisée.; le téléchargement est bloqué.":::
 
 ## <a name="learn-more"></a>En savoir plus
 
