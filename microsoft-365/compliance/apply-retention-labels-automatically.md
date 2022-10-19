@@ -1,5 +1,5 @@
 ---
-title: Appliquer automatiquement une étiquette de rétention
+title: Appliquer automatiquement une étiquette de rétention aux éléments Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: 441755ac0154e4c63225a66b38ca4fa4e13bb70b
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: 2320b7d882c999bace37bb3aeea79f23926e0969
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495228"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68574074"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -335,7 +335,7 @@ Vous devrez créer des stratégies de rétention distinctes si vous souhaitez co
 
 - Les éléments suivants ne sont pas pris en charge en tant que pièces jointes cloud qui peuvent être conservées :
   - SharePoint sites, pages, listes, formulaires, dossiers, ensembles de documents et pages OneNote pages.
-  - Fichiers partagés par des utilisateurs qui n’ont pas accès à ces fichiers.
+  - Fichiers partagés par les utilisateurs qui n’ont pas accès à ces fichiers au moment du partage.
   - Fichiers supprimés ou déplacés avant l’envoi de la pièce jointe cloud. Par exemple, un utilisateur copie et colle une pièce jointe partagée précédemment à partir d’un autre message, sans confirmer au préalable que le fichier est toujours disponible. Ou bien, quelqu’un envoie un ancien message lorsque le fichier est maintenant supprimé.
   - Fichiers partagés par des invités ou des utilisateurs externes à votre organisation
   - Fichiers dans les messages électroniques provisoires et les messages qui ne sont pas envoyés

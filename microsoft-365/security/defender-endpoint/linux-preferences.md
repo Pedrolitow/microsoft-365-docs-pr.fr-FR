@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 38d8710b121a445c24abfb9a67a9e0f60cf520ec
-ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.openlocfilehash: dd14c5ff33f53701d39a47438bd57ab01bc8c6c2
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68379983"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573445"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -104,8 +104,8 @@ Active ou désactive la fonctionnalité de calcul de hachage de fichier. Lorsque
 |Description|Valeur|
 |---|---|
 |**Clé**|enableFileHashComputation|
-|**Type de données**|Chaîne|
-|**Valeurs possibles**|désactivé (par défaut) <p> activé|
+|**Type de données**|Valeur booléenne|
+|**Valeurs possibles**|false (par défaut) <p> true|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.73.77 ou ultérieure.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions

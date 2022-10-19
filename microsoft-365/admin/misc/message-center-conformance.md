@@ -11,16 +11,19 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenir une vue d’ensemble des métadonnées de conformité pour les publications du Centre de messages
-ms.openlocfilehash: 93259a813990bf106dc91729f042f5a10b727599
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1205c5429427741f6383fd48205730db1ccbfc98
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68566343"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573942"
 ---
 # <a name="conformance-metadata-for-message-center-posts"></a>Métadonnées de conformité pour les publications du Centre de messages
 
-Lors de la planification de nouvelles fonctionnalités ou déploiements de services, vous devez comprendre et évaluer les modifications en fonction de votre secteur d’activité, de votre région et de votre pays. Nous avons entendu vos commentaires indiquant que, s’il n’y a pas suffisamment d’informations de conformité sur une fonctionnalité nouvelle ou modifiée, vous devez effectuer vos propres recherches sur la fonctionnalité ou contacter le Programme de conformité avec des questions.  
+> [!IMPORTANT]
+> Ce document privé s’adresse uniquement aux utilisateurs de métadonnées change management: Conformance. Ne partagez pas ce document au-delà de ceux qui sont directement impliqués dans le pilote.
+
+Lors de la planification de nouvelles fonctionnalités ou déploiements de services, vous souhaitez comprendre et évaluer les modifications en fonction de votre secteur d’activité, de votre région et de votre pays. Nous avons entendu vos commentaires lorsqu’il n’y a pas suffisamment d’informations de conformité sur une fonctionnalité nouvelle ou changeante, vous devez effectuer vos propres recherches sur la fonctionnalité ou contacter le Programme de conformité avec des questions.  
 
 Dans ce programme pilote, nous souhaitons fournir de manière proactive des métadonnées pour les fonctionnalités et services Microsoft 365 nouveaux et mis à jour. Notre objectif est de vous aider à évaluer efficacement vos exigences de conformité et à vous aider à prendre des décisions en matière d’adoption et de gestion des changements.  
 
