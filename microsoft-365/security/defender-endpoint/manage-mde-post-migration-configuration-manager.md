@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 43fb93dc01517372bdeeaba05c012aa5d4bb6a29
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: c80c8bd30900783c4c5e327c4adada97469ec605
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232933"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627146"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Gérer Microsoft Defender pour point de terminaison avec Configuration Manager
 

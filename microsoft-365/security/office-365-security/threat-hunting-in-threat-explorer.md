@@ -6,7 +6,7 @@ ms.author: dansimp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
@@ -18,12 +18,12 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 4e581dadd7b17552aee277fa978b788f914607f3
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: bd785632dcc90ad1e6f38ed9964b34529d1260d2
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68054751"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636735"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Repérage des menaces dans l’Explorateur de menaces pour Microsoft Defender pour Office 365
 

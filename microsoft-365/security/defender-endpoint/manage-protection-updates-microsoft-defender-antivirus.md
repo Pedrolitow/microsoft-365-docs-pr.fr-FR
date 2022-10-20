@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: c794e03ec7879c78d2023cee3f54bba830831a2a
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 10d29ea309b57901d4d53f3203cd25d568146c57
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300341"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635463"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 

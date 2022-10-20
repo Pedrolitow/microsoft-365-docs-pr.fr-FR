@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services dans Cloudflare pour Microsoft.
-ms.openlocfilehash: 22cbf5478bf7dab301eb29854755606970324389
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b0945bb5cc6a3ac975692fc1857f29a5fb9fa1e0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187336"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630005"
 ---
 # <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Connecter vos enregistrements DNS dans Cloudflare à Microsoft 365
 
@@ -263,7 +263,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
     |Type|Nom|Service|Protocole|Durée de vie|Priorité|Pondération|Port|Target|
     |---|---|---|---|---|---|---|---|---|
     |SRV|Utilisez votre *domain_name*; par exemple, contoso.com|_sip|TLS|30 minutes|100|1|443|sipfed.online.lync.com|
-    |SRV|_sipfederationtls|TCP|Utilisez votre *domain_name*; par exemple, contoso.com|30 minutes|100|1|5061|sipfed.online.lync.com|
+    |SRV|Utilisez votre *domain_name*; par exemple, contoso.com|_sipfederationtls|TCP|30 minutes|100|1|5061|sipfed.online.lync.com|
 
 1. Sélectionnez **Enregistrer**.
 

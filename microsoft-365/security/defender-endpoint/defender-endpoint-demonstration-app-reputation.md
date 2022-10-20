@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 08d3e258bbc004240d26f6683fec16e2eb332d1d
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 82a0eab112545e8bbb78356f4a26baf6af903648
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573480"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631939"
 ---
 # <a name="smartscreen-app-reputation-demonstration"></a>Démonstration de la réputation de l’application SmartScreen
 

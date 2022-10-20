@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1eea32f9f8844e89ce2572e856366a8de39b2f65
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 115b1159bb425688fe808652ab7e2b61170f3f8e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229039"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637483"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
 

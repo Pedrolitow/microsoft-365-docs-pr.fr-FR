@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 6fe74108e484b158b292f86191425cd0aa73b0b4
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: e5243e403ffb110a2c7c1559869ae194c3e110a8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503465"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621227"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
@@ -64,15 +64,19 @@ Selon la façon dont vous souhaitez gérer les stratégies et alertes de gestion
 
 Vous choisirez parmi ces options de groupe de rôles et actions de solution lorsque vous travaillez avec la gestion des risques internes :
 
-|**Actions**|**Gestion des risques internes**|**Administration de gestion des risques internes**|**Analystes de la gestion des risques internes.**|**Enquêteurs sur la gestion des risques internes.**|**Auditeurs de gestion des risques internes**|
-|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
-| Configurer des stratégies et des paramètres | Oui | Oui | Non | Non | Non |
-| Access Analytics Insights | Oui | Oui | Oui | Non | Non |
-| Accéder & examiner les alertes | Oui | Non | Oui | Oui | Non |
-| Accès & examiner les cas | Oui | Non | Oui | Oui | Non |
-| Accéder & afficher l’Explorateur de contenu | Oui | Non | Non | Oui | Non |
-| Configurer des modèles d’avis | Oui | Non | Oui | Oui | Non |
-| Afficher & exporter les journaux d’audit | Oui | Non | Non | Non | Oui |
+|**Actions**|**Gestion des risques internes**|**Administration de gestion des risques internes**|**Analystes de la gestion des risques internes.**|**Enquêteurs sur la gestion des risques internes.**|**Auditeurs de gestion des risques internes**|**Approbateurs de gestion des risques internes**|
+|---|---|---|---|---|---|---|
+|Configurer des stratégies et des paramètres|Oui|Oui|Non|Non|Non|Non|
+|Access Analytics Insights|Oui|Oui|Oui|Non|Non|Non|
+|Accéder & examiner les alertes|Oui|Non|Oui|Oui|Non|Non|
+|Accès & examiner les cas|Oui|Non|Oui|Oui|Non|Non|
+|Accéder & afficher l’Explorateur de contenu|Oui|Non|Non|Oui|Non|Non|
+|Configurer des modèles d’avis|Oui|Non|Oui|Oui|Non|Non|
+|Afficher & exporter les journaux d’audit|Oui|Non|Non|Non|Oui|Non|
+|Accès & afficher les captures de preuves légales|Oui|Non|Non|Oui|Non|Non|
+|Créer une demande de capture de preuves légales|Oui|Oui|Non|Non|Non|Non|
+|Approuver les demandes de capture de preuves légales|Oui|Non|Non|Non|Non|Oui|
+|Afficher le rapport d’intégrité de l’appareil|Oui|Oui|Non|Non|Non|Non|
 
 >[!IMPORTANT]
 >Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de *rôles Insider Risk Management* ou *Insider Risk Management Administration* (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’accède pas à un scénario « zéro administrateur » si des utilisateurs spécifiques quittent votre organisation.
@@ -126,3 +130,4 @@ Prêt à configurer la gestion des risques internes pour votre organisation ? Pa
 
 - [Commencez à utiliser les paramètres de gestion des risques internes](insider-risk-management-settings.md) pour configurer les paramètres de stratégie globale.
 - [Prise en main de la gestion des risques internes](insider-risk-management-configure.md) pour configurer les prérequis, créer des stratégies et commencer à recevoir des alertes.
+- [Commencez à utiliser les preuves légales de gestion des risques internes](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) pour obtenir des instructions pas à pas pour configurer la capture de preuves légales dans votre organisation.

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: 662e53d4d0a590260936227776f9a17b733ee194
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: a1a02fa28291a38d080b2969019638a1fc7dfe6b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504916"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629895"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>La protection intégrée permet de se prémunir contre les ransomwares
 
@@ -41,7 +41,7 @@ La protection intégrée est un ensemble de paramètres par défaut qui sont dé
 
 | Phase | Action exécutée |
 |:---|:---|
-| La protection intégrée est déployée en [préversion](preview.md) | Les clients qui ont choisi de recevoir des fonctionnalités en préversion reçoivent une [notification](#what-does-the-notification-look-like) indiquant que la protection intégrée est à venir. S’il n’est pas déjà configuré, la protection contre les falsifications est activée pour les clients qui ont Defender pour point de terminaison Plan 2 ou Microsoft 365 E5. |
+| La protection intégrée (préversion) est déployée | Les clients qui ont choisi de recevoir des fonctionnalités en préversion reçoivent une [notification](#what-does-the-notification-look-like) indiquant que la protection intégrée est à venir. S’il n’est pas déjà configuré, la protection contre les falsifications est activée pour les clients qui ont Defender pour point de terminaison Plan 2 ou Microsoft 365 E5. |
 | La protection intégrée devient disponible pour votre locataire | Vous serez [averti](#what-does-the-notification-look-like) que votre locataire est sur le point de recevoir une protection intégrée et quand la protection contre les falsifications sera activée (si elle n’est pas déjà configurée). |
 | La protection intégrée arrive | La protection contre les falsifications sera activée pour votre locataire et appliquée aux appareils Windows de votre organisation. Vous pouvez [désactiver](#can-i-opt-out) ou [modifier vos paramètres de protection intégrés](#can-i-change-built-in-protection-settings). |
 | Une fois la protection intégrée arrivée | Chaque fois que de nouveaux appareils sont intégrés à Defender pour point de terminaison, les paramètres de protection intégrés sont appliqués à tous les nouveaux appareils exécutant Windows. Vous pouvez toujours [modifier vos paramètres de protection intégrés](#can-i-change-built-in-protection-settings). |

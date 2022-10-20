@@ -18,13 +18,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 7d997269be209e88602eede18af43c8d1acaeae0
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: d24a67f6323e0f556e25021470d808b2fc67d918
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68051825"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637043"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 

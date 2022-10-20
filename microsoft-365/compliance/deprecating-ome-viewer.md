@@ -15,21 +15,24 @@ search.appverid:
 - MOE150
 ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 description: L’application de visionneuse Office 365 Message Encryption (OME) a été supprimée des magasins Android et Apple en 2018.
-ms.openlocfilehash: 2e1e0ead7d34761a3159b4b51368ea4460acb596
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ee3d8e351d76e7107aa07114c7cd457d38ab3638
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630078"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632335"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>Dépréciation de l’application visionneuse de chiffrement des messages
 
 Le 15 août 2018, nous avons supprimé l’application mobile OME (Message Encryption) Office 365 des magasins Android et Apple. L’application mobile Office 365 Message Encryption Viewer était nécessaire pour lire les messages électroniques et les pièces jointes chiffrés avec la version précédente d’OME sur les téléphones Apple et Android. Outre la suppression de l’application Visionneuse OME, nous n’apportons aucune autre modification à la version précédente d’OME.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="changes-from-august-2018"></a>Modifications à partir d’août 2018
 
 Comme annoncé en septembre 2017, nous avons publié une nouvelle version de [Office 365 Chiffrement](https://aka.ms/ome2017) des messages afin que les utilisateurs puissent envoyer des messages chiffrés et protégés à toute personne à l’intérieur ou à l’extérieur de l’organisation sans avoir besoin de l’application mobile. Depuis, nous avons ajouté des fonctionnalités supplémentaires :

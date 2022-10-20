@@ -11,16 +11,18 @@ author: alekyaj
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
-ms.topic: article
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0e9a48788aee0e14240d970a21ea1f1b3cf030cb
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: cb1d4f3b234bdfa811e4c0de01edd697bba6f6ed
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492765"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632643"
 ---
 # <a name="professional-services-supported-by-microsoft-365-defender"></a>Services professionnels pris en charge par Microsoft 365 Defender
 

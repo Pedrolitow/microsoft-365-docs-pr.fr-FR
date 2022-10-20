@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: d356c89866cc1a0f3727bf647fd451cc4339d8ae
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 889589330ddc79b434d8fa07b11fa20e784c4762
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564430"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621249"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
@@ -132,7 +132,7 @@ Les alertes sont résolues par l'ouverture d'un nouveau cas, l'affectation de l'
 
 ### <a name="investigate"></a>Examiner
 
-Examinez rapidement toutes les activités d’un utilisateur sélectionné avec [des rapports d’activité utilisateur (préversion).](insider-risk-management-activities.md#user-activity-reports-preview) Ces rapports permettent aux enquêteurs de votre organisation d’examiner les activités de certains utilisateurs pendant une période définie sans avoir à les affecter temporairement ou explicitement à une stratégie de gestion des risques internes. Après avoir examiné les activités d’un utilisateur, les enquêteurs peuvent ignorer les activités individuelles comme étant bénignes, partager ou envoyer par e-mail un lien vers le rapport avec d’autres enquêteurs, ou choisir d’affecter temporairement ou explicitement l’utilisateur à une stratégie de gestion des risques internes.
+Examinez rapidement toutes les activités d’un utilisateur sélectionné avec [des rapports d’activité utilisateur](insider-risk-management-activities.md#user-activity-reports). Ces rapports permettent aux enquêteurs de votre organisation d’examiner les activités de certains utilisateurs pendant une période définie sans avoir à les affecter temporairement ou explicitement à une stratégie de gestion des risques internes. Après avoir examiné les activités d’un utilisateur, les enquêteurs peuvent ignorer les activités individuelles comme étant bénignes, partager ou envoyer par e-mail un lien vers le rapport avec d’autres enquêteurs, ou choisir d’affecter temporairement ou explicitement l’utilisateur à une stratégie de gestion des risques internes.
 
 [Les cas](insider-risk-management-cases.md) sont créés pour les alertes qui nécessitent un examen et une investigation plus approfondis des détails et des circonstances de l’activité autour de la correspondance de stratégie. La **Tableau de bord des cas** fournit un affichage total de tous les cas actifs, des cas ouverts au fil du temps et des statistiques sur les cas pour votre organisation. Les réviseurs peuvent filtrer rapidement les cas par état, la date à laquelle le cas a été ouvert et la date de la dernière mise à jour du cas.
 
@@ -203,11 +203,9 @@ Les événements du stresseur d’emploi peuvent avoir un impact sur le comporte
 - [Fuites de données par des utilisateurs mécontents (préversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Violations de stratégie de sécurité par un utilisateur mécontent (préversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-### <a name="risky-browser-usage-that-could-result-in-a-security-incident-preview"></a>Utilisation risquée du navigateur qui peut entraîner un incident de sécurité (préversion)
+### <a name="visual-context-for-potentially-risky-user-activities-with-forensic-evidence-preview"></a>Contexte visuel pour les activités utilisateur potentiellement risquées avec des preuves légales (préversion)
 
-La plupart des organisations fournissent aux utilisateurs des règles et des instructions qui précisent la façon dont les appareils et l’accès à Internet d’une organisation doivent être utilisés. Ces stratégies aident à protéger l’organisation et les utilisateurs contre les risques de sécurité et de réglementation. Pour vous aider à identifier ces types d’actions à risque, le modèle de stratégie de gestion des risques internes suivant peut vous aider à détecter et à activer le scoring des risques pour les comportements de navigation web susceptibles d’entraîner un incident de sécurité des données, tels que la visite de sites qui fournissent des programmes malveillants ou des outils de piratage.
-
-- [Utilisation générale des navigateurs à risque (préversion)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
+Le contexte visuel est essentiel pour les équipes de sécurité pendant les investigations judiciaires afin d’obtenir de meilleures informations sur les activités utilisateur potentiellement risquées susceptibles d’entraîner un incident de sécurité. Cela peut inclure la capture visuelle de ces activités pour aider à évaluer si elles sont effectivement risquées ou prises hors contexte et non potentiellement risquées. Pour les activités jugées risquées, les captures de preuves légales peuvent aider les enquêteurs et votre organisation à mieux atténuer, comprendre et répondre à ces activités. Pour faciliter ce scénario, [activez la capture de preuves légales pour les](insider-risk-management-forensic-evidence.md) appareils en ligne et hors connexion de votre organisation.
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 

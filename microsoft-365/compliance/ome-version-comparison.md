@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Cet article explique les différences entre les différentes versions du chiffrement des messages.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 44eb59a160af9ecbe171e1c9b63f67e6ac608fe0
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 355ae33ff7e9860bb9ef151d3bcdf538857e9d25
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276260"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630751"
 ---
 # <a name="compare-versions-of-message-encryption"></a>Comparer les versions de chiffrement de messages
 
@@ -31,6 +31,8 @@ ms.locfileid: "67276260"
 Le reste de cet article compare le chiffrement de message hérité Office 365 (OME) à Chiffrement de messages Microsoft Purview et Microsoft Purview Advanced Message Encryption. Chiffrement de messages Microsoft Purview est une fusion et une version plus récente d’OME et de gestion des droits relatifs à l’information (IRM). Les caractéristiques uniques du déploiement dans GCC High sont également décrites. Les deux peuvent coexister dans votre organisation. Pour plus d’informations sur le fonctionnement des nouvelles fonctionnalités, consultez [Office 365 chiffrement des messages (OME).](ome.md)
 
 Cet article fait partie d’une plus grande série d’articles sur le chiffrement des messages. Cet article est destiné aux administrateurs et aux itpros. Si vous recherchez simplement des informations sur l’envoi ou la réception d’un message chiffré, consultez la liste des articles dans [le chiffrement](ome.md) des messages et recherchez l’article qui répond le mieux à vos besoins.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Vue d’ensemble de la dépréciation d’AD RMS dans Exchange Online
 

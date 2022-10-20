@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9b8ef92016ea87e69cf1284c4ae740a3978f1fba
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5d3e889966576f4255de2442e7725d616448d555
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564583"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645030"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -98,15 +98,19 @@ Selon la façon dont vous souhaitez gérer les stratégies et alertes de gestion
 
 Vous choisirez parmi ces options de groupe de rôles et actions de solution lorsque vous travaillez avec la gestion des risques internes :
 
-|Actions|Gestion des risques internes|Administration de gestion des risques internes|Analystes de la gestion des risque internes.|Enquêteurs de la gestion des risque internes.|Auditeurs de gestion des risques internes|
-|---|---|---|---|---|---|
-|Configurer des stratégies et des paramètres|Oui|Oui|Non|Non|Non|
-|Access Analytics Insights|Oui|Oui|Oui|Non|Non|
-|Accéder & examiner les alertes|Oui|Non|Oui|Oui|Non|
-|Accès & examiner les cas|Oui|Non|Oui|Oui|Non|
-|Accéder & afficher l’Explorateur de contenu|Oui|Non|Non|Oui|Non|
-|Configurer des modèles d’avis|Oui|Non|Oui|Oui|Non|
-|Afficher & exporter les journaux d’audit|Oui|Non|Non|Non|Oui|
+|**Actions**|**Gestion des risques internes**|**Administration de gestion des risques internes**|**Analystes de la gestion des risques internes.**|**Enquêteurs sur la gestion des risques internes.**|**Auditeurs de gestion des risques internes**|**Approbateurs de gestion des risques internes**|
+|---|---|---|---|---|---|---|
+|Configurer des stratégies et des paramètres|Oui|Oui|Non|Non|Non|Non|
+|Access Analytics Insights|Oui|Oui|Oui|Non|Non|Non|
+|Accéder & examiner les alertes|Oui|Non|Oui|Oui|Non|Non|
+|Accès & examiner les cas|Oui|Non|Oui|Oui|Non|Non|
+|Accéder & afficher l’Explorateur de contenu|Oui|Non|Non|Oui|Non|Non|
+|Configurer des modèles d’avis|Oui|Non|Oui|Oui|Non|Non|
+|Afficher & exporter les journaux d’audit|Oui|Non|Non|Non|Oui|Non|
+|Accès & afficher les captures de preuves légales|Oui|Non|Non|Oui|Non|Non|
+|Créer une demande de capture de preuves légales|Oui|Oui|Non|Non|Non|Non|
+|Approuver les demandes de capture de preuves légales|Oui|Non|Non|Non|Non|Oui|
+|Afficher le rapport d’intégrité de l’appareil|Oui|Oui|Non|Non|Non|Non|
 
 > [!IMPORTANT]
 > Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de rôles intégrés *Insider Risk Management* ou *Insider Risk Management Administration* (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’entre pas dans un scénario d'« administrateur zéro » si des utilisateurs spécifiques quittent votre organisation.
@@ -237,6 +241,12 @@ Si vous créez des stratégies de violation de la sécurité, vous devez avoir M
 
 Consultez l’article [Configurer les fonctionnalités avancées dans l’article Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) pour obtenir des conseils pas à pas sur la configuration de Defender pour point de terminaison pour l’intégration de la gestion des risques internes. Une fois que vous avez configuré le Microsoft Defender pour point de terminaison, revenez à ces étapes de configuration.
 
+### <a name="configure-forensic-evidence-optional"></a>Configurer des preuves légales (facultatif)
+
+Le contexte visuel est essentiel pour les équipes de sécurité pendant les investigations judiciaires afin d’obtenir de meilleures informations sur les activités utilisateur à risque qui peuvent entraîner un incident de sécurité. Avec les déclencheurs d’événements personnalisables et les contrôles intégrés de protection de la confidentialité des utilisateurs, les preuves légales permettent la capture personnalisable sur les appareils pour aider votre organisation à mieux atténuer, comprendre et répondre aux risques potentiels de données tels que l’exfiltration de données non autorisées de données sensibles.
+
+Consultez l’article Sur la prise [en main des preuves légales de gestion des risques internes](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) pour obtenir des instructions détaillées sur la configuration des preuves légales pour votre organisation.
+
 ## <a name="step-5-required-configure-insider-risk-settings"></a>Étape 5 (obligatoire) : Configurer les paramètres de risque interne
 
 [Les paramètres de risque interne s’appliquent](insider-risk-management-settings.md) à toutes les stratégies de gestion des risques internes, quel que soit le modèle que vous avez choisi lors de la création d’une stratégie. Les paramètres sont configurés à l’aide des **Paramètres de risque internes** contrôle situés en haut de tous les onglets de gestion des risques internes. Ces paramètres contrôlent la confidentialité, les indicateurs, les détections intelligentes, etc.
@@ -262,7 +272,7 @@ Avant de configurer une stratégie, définissez les paramètres de risque intern
 8. Dans la page **flux Power Automate** , configurez un flux à partir de modèles de flux à risque interne ou créez un flux. Consultez l’article [Sur la prise en main des paramètres de gestion des risques internes](insider-risk-management-settings.md#power-automate-flows-preview) pour obtenir des conseils pas à pas.
 9. Dans la **page Ressources prioritaires**, configurez les ressources de priorité pour utiliser les données de votre plateforme de contrôle physique et d’accès importées par le connecteur de badging physique. Consultez l’article [Sur la prise en main des paramètres de gestion des risques internes](insider-risk-management-settings.md#priority-physical-assets-preview) pour obtenir des conseils pas à pas.
 10. Dans la page **Microsoft Teams** , activez l’intégration de Microsoft Teams à la gestion des risques internes pour créer automatiquement une équipe pour la collaboration de cas ou d’utilisateur. Consultez l’article [Sur la prise en main des paramètres de gestion des risques internes](insider-risk-management-settings.md#microsoft-teams-preview) pour obtenir des conseils pas à pas.
-11. Sélectionnez **Enregistrer** pour activer ces paramètres pour vos stratégies de risque interne.
+12. Sélectionnez **Enregistrer** pour activer ces paramètres pour vos stratégies de risque interne.
 
 ## <a name="step-6-required-create-an-insider-risk-management-policy"></a>Étape 6 (obligatoire) : Créer une stratégie de gestion des risques internes
 

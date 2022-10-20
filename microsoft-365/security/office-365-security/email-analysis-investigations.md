@@ -6,7 +6,7 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1d7c4f0f01f1aff00e36e5930fa9566e1f6a7993
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: caf4431aa172c9a169b664320f319ca3c2125b35
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048635"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628552"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>analyse Email dans les enquêtes sur les Microsoft Defender pour Office 365
 

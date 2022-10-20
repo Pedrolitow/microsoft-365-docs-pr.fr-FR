@@ -15,17 +15,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: 0507707d946ea14be53a12c7e45fc8f9b317e749
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 279a5bc782803adc5bd26c8d0bceebbf03e68ad1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222713"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635023"
 ---
 # <a name="turn-on-definition-retirement"></a>Activer la mise hors service des définitions
 

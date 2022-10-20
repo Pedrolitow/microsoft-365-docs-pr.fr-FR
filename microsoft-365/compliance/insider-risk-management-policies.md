@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a377fe3dee4f38666b13ba26301b9ad1f681f6cd
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 732582dbd65358f7743a8420ac52317b184af469
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564605"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626531"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -295,6 +295,7 @@ Utilisez le tableau suivant pour déterminer le nombre maximum d’utilisateurs 
 |Violation de la stratégie de sécurité par des utilisateurs prioritaires|1 000|
 |Violations de stratégie de sécurité par des utilisateurs quittant l’entreprise|15 000|
 |Violations de stratégie de sécurité par des utilisateurs mécontents|7 500|
+|Preuves légales|5 utilisateurs pour la préversion|
 
 ## <a name="create-a-new-policy"></a>Créer une stratégie
 

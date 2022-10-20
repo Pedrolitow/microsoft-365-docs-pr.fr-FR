@@ -13,14 +13,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: e84e53a2883348c7a233d2225058aed2b495b07d
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 269670d86676896a1a217f224c74776c73388fa9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68091254"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631015"
 ---
 # <a name="device-profile-page"></a>Page Profil d’appareil
 

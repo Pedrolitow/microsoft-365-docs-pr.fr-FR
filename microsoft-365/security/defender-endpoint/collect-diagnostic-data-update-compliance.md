@@ -15,17 +15,17 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: ac85a1860fa86a05cf4aed6db6ced0e2ce84b904
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 6359603424d85cdab84bb25231bfdec86f9a8d41
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68157433"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641642"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Collecter les données de diagnostic de conformité de mise à jour pour Microsoft Defender’évaluation antivirus
 
