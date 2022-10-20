@@ -6,7 +6,7 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d2ad16d558ea9843670d51dfc7f64b7652e1c881
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: cb99c8938aac9b0cb8a721db7c23bd0396866819
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055323"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625080"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’investigation et de la réponse automatisées dans Microsoft Defender pour Office 365
 

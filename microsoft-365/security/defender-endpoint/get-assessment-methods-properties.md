@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: bc186dc9808febf2e770c78f57ee199c57461329
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 03404df675dfb018e4fdcae538ba7c0710db4248
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167184"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624464"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter des méthodes et des propriétés d’évaluation par appareil
 
