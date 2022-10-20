@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: eddb1d30adcf2db443b615a693c6bf96d0d70605
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: dae696dea94a821a2fd3ae7b9fc6b175587bb246
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68054729"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628442"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 

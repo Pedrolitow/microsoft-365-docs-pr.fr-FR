@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 953fa012fa50ab28e94fefa20ea61be526e29ea1
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6cf2a895cde875a4cd7180269dd1bd68fb41bf03
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68179964"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634030"
 ---
 # <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs d’ouverture de session de la machine
 

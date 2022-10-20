@@ -18,13 +18,13 @@ ms.collection:
 - m365-security
 - tier3
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.openlocfilehash: e1119fbb07f38d4cb9375af99ded96026102ef56
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 7c541e1e86fdc2967444d5e4297ed04460a47bf5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68084592"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645624"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft 365 Defender pour diffuser en continu des événements advanced hunting vers votre compte de stockage
 

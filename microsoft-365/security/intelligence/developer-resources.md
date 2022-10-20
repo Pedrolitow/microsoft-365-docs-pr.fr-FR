@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: d7cf54a1808ae323ea96d2dcae6d8ade2063edc1
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 47045070289e28878ed0d9d8610dd167cc81eee2
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233945"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625212"
 ---
 # <a name="software-developer-resources"></a>Ressources pour les développeur de logiciels
 

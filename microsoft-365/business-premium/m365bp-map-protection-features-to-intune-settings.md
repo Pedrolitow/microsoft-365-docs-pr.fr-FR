@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - tier1
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment les fonctionnalités de protection de Microsoft 365 Business Premium mappent aux paramètres Intune. L’abonnement vous fournit une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: 185eda9e5b5e214716608d4232a0ea81c00d6b4b
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: c8e46dc763fdd7acdc079295c8e00ed111230480
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096366"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647406"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Comment les fonctionnalités de protection dans Microsoft 365 Business Premium sont mappées aux paramètres Intune
 
@@ -55,11 +55,11 @@ Sous **Gérer la façon dont les utilisateurs accèdent aux fichiers Office sur 
 |Obliger les utilisateurs à enregistrer les fichiers de travail dans OneDrive Entreprise  <br/> Notez que seul OneDrive Entreprise est autorisé  |Sélectionnez dans quels services de stockage les données d'entreprise peuvent être enregistrées  |
 |Chiffrer les fichiers professionnels  |Chiffrer les données des applications  |
 |Sous **Gérer la façon dont les utilisateurs accèdent aux fichiers Office sur appareils mobiles** ||
-|Exiger un code confidentiel ou une empreinte pour accéder aux applications Office  | Exiger un code confidentiel d'accès  <br/>  Cela définit également :  <br/> **Autoriser un code confidentiel simple** sur **Oui** <br/> **Longueur du code confidentiel** sur 4  <br/> **Autoriser les empreintes digitales à la place du code confidentiel** sur **Oui** <br/> **Désactiver le code confidentiel de l'application quand le code confidentiel de l'appareil est géré** sur **Non** |
+|Exiger un code confidentiel ou une empreinte digitale pour accéder aux applications Microsoft 365  | Exiger un code confidentiel d'accès  <br/>  Cela définit également :  <br/> **Autoriser un code confidentiel simple** sur **Oui** <br/> **Longueur du code confidentiel** sur 4  <br/> **Autoriser les empreintes digitales à la place du code confidentiel** sur **Oui** <br/> **Désactiver le code confidentiel de l'application quand le code confidentiel de l'appareil est géré** sur **Non** |
 |Réinitialiser le code pin en cas d’échec de la connexion ce nombre de fois (cette option est désactivée si le code pin n’est pas obligatoire)  |Nombre de tentatives avant réinitialisation du code confidentiel  |
-|Obliger les utilisateurs à se reconnecter après que les applications Office ont été inactives (cette option est désactivée si le code pin n’est pas requis)  | Revérifier les conditions d'accès requises après (minutes)  <br/>  Cela définit également ce qui suit :  <br/> Le **Délai expiration** est défini en minutes  <br/>  Il s'agit du nombre de minutes défini dans Microsoft 365 Entreprise.  <br/> **Période de grâce hors connexion** est défini sur 720 minutes par défaut  |
+|Obliger les utilisateurs à se reconnecter une fois que les applications Microsoft 365 ont été inactives (cette option est désactivée si le code confidentiel n’est pas obligatoire)  | Revérifier les conditions d'accès requises après (minutes)  <br/>  Cela définit également ce qui suit :  <br/> Le **Délai expiration** est défini en minutes  <br/>  Il s'agit du nombre de minutes défini dans Microsoft 365 Entreprise.  <br/> **Période de grâce hors connexion** est défini sur 720 minutes par défaut  |
 |Refuser l'accès aux fichiers professionnels sur les appareils jailbreakés ou rootés  |Bloquer l'exécution des applications gérées sur les appareils jailbreakés ou rootés  |
-|Autoriser les utilisateurs à copier le contenu des applications Office dans des applications personnelles  | Restreindre les opérations Couper, Copier et Coller avec d’autres applications  <br/>  Si l’option Microsoft 365 Business Premium est définie sur **Activé**, ces trois options sont également définies sur **Toutes les applications** dans Intune :  <br/> **Autoriser l'application à transférer des données vers d'autres applications** <br/> **Autoriser l'application à recevoir des données d'autres applications** <br/> **Restreindre les opérations couper, copier et coller avec d'autres applications** <br/>  Si l'option Microsoft 365 Entreprise est **Activée**, toutes les options Intune sont définies comme suit :  <br/> **Autoriser l'application à transférer des données vers d'autres applications** est défini sur **Applications gérées par une stratégie** <br/> **Autoriser l'application à recevoir des données d'autres applications** est défini sur **Toutes les applications** <br/> **Restreindre les opérations couper, copier et coller avec d'autres applications** est défini sur **Applications gérées par une stratégie avec Coller dans** |
+|Autoriser les utilisateurs à copier du contenu à partir d’applications Microsoft 365 dans des applications personnelles  | Restreindre les opérations Couper, Copier et Coller avec d’autres applications  <br/>  Si l’option Microsoft 365 Business Premium est définie sur **Activé**, ces trois options sont également définies sur **Toutes les applications** dans Intune :  <br/> **Autoriser l'application à transférer des données vers d'autres applications** <br/> **Autoriser l'application à recevoir des données d'autres applications** <br/> **Restreindre les opérations couper, copier et coller avec d'autres applications** <br/>  Si l'option Microsoft 365 Entreprise est **Activée**, toutes les options Intune sont définies comme suit :  <br/> **Autoriser l'application à transférer des données vers d'autres applications** est défini sur **Applications gérées par une stratégie** <br/> **Autoriser l'application à recevoir des données d'autres applications** est défini sur **Toutes les applications** <br/> **Restreindre les opérations couper, copier et coller avec d'autres applications** est défini sur **Applications gérées par une stratégie avec Coller dans** |
    
 ## <a name="windows-10-app-protection-settings"></a>Paramètres de protection des applications Windows 10
 

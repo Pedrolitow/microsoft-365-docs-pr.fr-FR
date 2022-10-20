@@ -26,18 +26,19 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment vous inscrire à un abonnement Microsoft 365 Business Basic.
-ms.openlocfilehash: 6b21646cf04d22133fd0cf90b3ae7813bf715156
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c00ddf1c1c4a3d732c3e15ce29574bc5762e877b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68196994"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624794"
 ---
 # <a name="sign-up-for-microsoft-365-business-basic"></a>S’inscrire à Microsoft 365 Business Basic
 
 Vous voulez vous inscrire à un Microsoft 365 Business Basic ?
 
 Il existe deux façons de commencer :
+
 - **[Achetez Microsoft 365 Business Basic et terminez](https://go.microsoft.com/fwlink/?linkid=2181424) la configuration**. [Suivez les étapes ci-dessous pour plus d’informations sur l’achat](#sign-up-steps).
 - **Pour les partenaires Microsoft** : **avons-nous un lien ici ?**
 
@@ -45,7 +46,7 @@ Il existe deux façons de commencer :
 
 - [Inscrivez-vous à un plan familial ou familial](https://go.microsoft.com/fwlink/?linkid=2109398) si vous n’achetez pas pour une entreprise.
 
-> [!Note]
+> [!NOTE]
 > Microsoft 365 Business Basic abonnement est destiné aux clients professionnels.
 
 ## <a name="sign-up-steps"></a>Étapes d’inscription
@@ -59,8 +60,8 @@ Pour acheter et vous inscrire à Microsoft 365 Business Basic abonnement, effect
 2. Dans la page **Merci d’avoir choisi Microsoft 365 Business Basic** page, entrez une adresse e-mail que vous utilisez déjà. Il peut s’agir de n’importe quelle adresse que Microsoft doit utiliser pour communiquer avec vous pendant l’installation. Il s’agit également de l’adresse à laquelle nous vous enverrons des informations sur votre facture et vos renouvellements. Sélectionnez **Suivant**.
 3. Sélectionnez **Configurer le compte** et entrez votre nom, votre numéro de téléphone professionnel, votre taille d’entreprise, votre nom d’entreprise et votre emplacement. Sélectionnez **Suivant**.
 
-> [!NOTE]
-> Nous affichons le nom de votre entreprise dans le Centre d'administration Microsoft 365. C’est là que vous gérez les utilisateurs, les licences et d’autres fonctionnalités et services. Nous l’incluons également dans toutes les URL de site SharePoint internes.
+   > [!NOTE]
+   > Nous affichons le nom de votre entreprise dans le Centre d'administration Microsoft 365. C’est là que vous gérez les utilisateurs, les licences et d’autres fonctionnalités et services. Nous l’incluons également dans toutes les URL de site SharePoint internes.
 
 4. Aidez-nous à nous assurer qu’il s’agit de vous. Entrez un nombre que nous pouvons utiliser pour vous joindre, puis sélectionnez **Envoyer le code de vérification**. Vous recevrez un texte. Entrez votre code, puis **sélectionnez Vérifier**.
 
@@ -68,7 +69,7 @@ Pour acheter et vous inscrire à Microsoft 365 Business Basic abonnement, effect
 
 6. Sélectionnez le nombre de licences professionnelles souhaitées pour votre organisation, sélectionnez **Ajouter un mode de paiement** , puis passez à l’extraction de la **commande**.
 
-3. Dans la page **Détails de la confirmation** , nous vous donnerons plus d’informations sur votre abonnement. Vous pouvez maintenant accéder au Centre d'administration Microsoft 365 pour ajouter des utilisateurs, installer des applications Office, inviter votre équipe à utiliser Microsoft 365 et bien plus encore. Nous vous enverrons également un e-mail avec les étapes de configuration.
+7. Dans la page **Détails de la confirmation** , nous vous donnerons plus d’informations sur votre abonnement. Vous pouvez maintenant accéder au Centre d'administration Microsoft 365 pour ajouter des utilisateurs, installer des applications Office, inviter votre équipe à utiliser Microsoft 365 et bien plus encore. Nous vous enverrons également un e-mail avec les étapes de configuration.
 
 Suivez ces étapes pour [terminer la configuration](setup-apps-for-business.md) de votre abonnement Microsoft Business Basic. Vous pouvez également [ajouter un domaine](../setup/add-domain.md) lorsque vous êtes prêt.
 
@@ -84,11 +85,11 @@ Lors de l’inscription à Microsoft 365 Business Basic, vous disposez de 2 opti
 
 Le tableau ci-dessous décrit chaque choix.
 
-||**Option 1** : se connecter avec Outlook, Hotmail, Yahoo, Gmail ou un autre compte de messagerie [(inscription simplifiée)](#terms-of-service-update-for-simplified-sign-up-mode)|**Option 2** : Ajouter un domaine professionnel et créer un compte de messagerie professionnel |
-|:-----|:-----|:-----|
-|Applications et services disponibles  <br/> |Utilisez Word pour le web, Excel sur le Web, PowerPoint sur le Web, Teams pour le web et Access pour le web. OneDrive et l’application de bureau SharePoint sont inclus. Cet ensemble d’applications est idéal pour les très petites entreprises qui n’ont pas besoin de courrier électronique de marque immédiatement, ou qui utilisent déjà des e-mails de marque d’un autre fournisseur et qui n’ont pas l’intention de changer d’utilisation de Microsoft Exchange.  Vous utiliserez Outlook avec votre compte de messagerie existant (que ce soit outlook.com, Hotmail, Yahoo, Gmail ou autre).  <br/> |Utilisez Word pour le web, Excel sur le Web, PowerPoint sur le Web, Teams pour le web et Access pour le web. OneDrive et l’application de bureau SharePoint sont inclus. Microsoft 365 Business Basic avec l’option 2 vous permet également d’accéder à un large éventail de services supplémentaires : nouveaux comptes de messagerie professionnels de marque avec Outlook, calendriers partagés au sein de votre entreprise, planification des rendez-vous bookings et enregistrements de réunion. Le stockage de documents partagés et les sites SharePoint, Planificateur Microsoft et Listes Microsoft, Microsoft 365 Business Basic et Applications Microsoft 365 pour les PME offrent des services supplémentaires avec Option 2. Partage de documents plus facile au sein de votre entreprise, prise en charge des besoins de conformité pour votre secteur, Accès et contrôle sur l’utilisation des services par vos employés et la plus large gamme d’intégrations d’applications non Microsoft (par exemple, Salesforce, Adobe) qui fonctionnent dans Teams et Office. <br/> |
-|Connaissances requises  <br/> |Commençons sans savoir-faire technique.  <br/> |Nécessite l’achat d’un domaine ou la propriété d’un domaine.  Vous aurez peut-être besoin de connaissances techniques pour prouver la propriété du domaine. <br/> |
-|Traitement des données  <br/> |Disponible dans le cadre du Supplément au [Contrat de services Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) , il est préférable pour les entreprises qui souhaitent des outils de travail et de collaboration à distance et qui sont à l’aise avec Microsoft agissant comme contrôleur pour vos données dans le cadre de la [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Les abonnés aux services qui utilisent cette option n’ont pas accès au contenu ou aux données utilisateur d’une personne tant qu’un domaine n’est pas attaché. Les abonnés doivent évaluer les considérations relatives à la propriété des données et aux droits de propriété intellectuelle en fonction de leurs besoins. Par exemple, si vous travaillez en collaboration avec d’autres utilisateurs sur un document stocké dans leur compte, ils peuvent choisir de rendre ces documents inaccessibles à vous. Par conséquent, vous devez évaluer les considérations relatives à la propriété des données et aux droits de propriété intellectuelle en conséquence.  Séparément, les utilisateurs peuvent choisir de ne pas transférer de documents dans leur compte Sign-Up simplifié vers votre abonnement de compte de domaine, même après les avoir invités à le faire. Cela signifie que leurs documents peuvent également ne pas être accessibles à vous même si vous ajoutez un compte de domaine ultérieurement.  <br/> |Disponible dans le cadre du [Contrat d’abonnement Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) , il est préférable pour les entreprises qui ont besoin de Microsoft d’agir en tant que processeur pour leurs données sous l’addendum [protection](https://go.microsoft.com/fwlink/p/?linkid=2180314) des données de Microsoft et qui ont besoin de notre suite complète d’outils de travail à distance et de collaboration. Les abonnés qui se trouvent dans des secteurs réglementés ou qui recherchent un contrôle accru, à la fois sur l’utilisation des services par vos employés et sur le traitement des données associées par Microsoft, doivent choisir l’option 2 et attacher un domaine et s’inscrire dans le cadre du contrat de niveau entreprise du compte de domaine. <br/> |
+|&nbsp;|**Option 1** : se connecter avec Outlook, Hotmail, Yahoo, Gmail ou un autre compte de messagerie [(inscription simplifiée)](#terms-of-service-update-for-simplified-sign-up-mode)|**Option 2** : Ajouter un domaine professionnel et créer un compte de messagerie professionnel |
+|---|---|---|
+|Applications et services disponibles|Utilisez Word pour le web, Excel sur le Web, PowerPoint sur le Web, Teams pour le web et Access pour le web. OneDrive et l’application de bureau SharePoint sont inclus. Cet ensemble d’applications est idéal pour les très petites entreprises qui n’ont pas besoin de courrier électronique de marque immédiatement, ou qui utilisent déjà des e-mails de marque d’un autre fournisseur et qui n’ont pas l’intention de changer d’utilisation de Microsoft Exchange. Vous utiliserez Outlook avec votre compte de messagerie existant (que ce soit outlook.com, Hotmail, Yahoo, Gmail ou autre).|Utilisez Word pour le web, Excel sur le Web, PowerPoint sur le Web, Teams pour le web et Access pour le web. OneDrive et l’application de bureau SharePoint sont inclus. Microsoft 365 Business Basic avec l’option 2 vous permet également d’accéder à un large éventail de services supplémentaires : nouveaux comptes de messagerie professionnels de marque avec Outlook, calendriers partagés au sein de votre entreprise, planification des rendez-vous bookings et enregistrements de réunion. Le stockage de documents partagés et les sites SharePoint, Planificateur Microsoft et Listes Microsoft, Microsoft 365 Business Basic et Applications Microsoft 365 pour les PME offrent des services supplémentaires avec Option 2. Partage de documents plus facile au sein de votre entreprise, prise en charge des besoins de conformité pour votre secteur, Accès et contrôle sur l’utilisation des services par vos employés et la plus large gamme d’intégrations d’applications non Microsoft (par exemple, Salesforce, Adobe) qui fonctionnent dans Teams et Office.|
+|Connaissances requises|Commençons sans savoir-faire technique.|Nécessite l’achat d’un domaine ou la propriété d’un domaine. Vous aurez peut-être besoin de connaissances techniques pour prouver la propriété du domaine.|
+|Traitement des données|Disponible dans le cadre du Supplément au [Contrat de services Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) , il est préférable pour les entreprises qui souhaitent des outils de travail et de collaboration à distance et qui sont à l’aise avec Microsoft agissant comme contrôleur pour vos données dans le cadre de la [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Les abonnés aux services qui utilisent cette option n’ont pas accès au contenu ou aux données utilisateur d’une personne tant qu’un domaine n’est pas attaché. Les abonnés doivent évaluer les considérations relatives à la propriété des données et aux droits de propriété intellectuelle en fonction de leurs besoins. Par exemple, si vous travaillez en collaboration avec d’autres utilisateurs sur un document stocké dans leur compte, ils peuvent choisir de rendre ces documents inaccessibles à vous. Par conséquent, vous devez évaluer les considérations relatives à la propriété des données et aux droits de propriété intellectuelle en conséquence. Séparément, les utilisateurs peuvent choisir de ne pas transférer de documents dans leur compte Sign-Up simplifié vers votre abonnement de compte de domaine, même après les avoir invités à le faire. Cela signifie que leurs documents peuvent également ne pas être accessibles à vous même si vous ajoutez un compte de domaine ultérieurement.|Disponible dans le cadre du [Contrat d’abonnement Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) , il est préférable pour les entreprises qui ont besoin de Microsoft d’agir en tant que processeur pour leurs données sous l’addendum [protection](https://go.microsoft.com/fwlink/p/?linkid=2180314) des données de Microsoft et qui ont besoin de notre suite complète d’outils de travail à distance et de collaboration. Les abonnés qui se trouvent dans des secteurs réglementés ou qui recherchent un contrôle accru, à la fois sur l’utilisation des services par vos employés et sur le traitement des données associées par Microsoft, doivent choisir l’option 2 et attacher un domaine et s’inscrire dans le cadre du contrat de niveau entreprise du compte de domaine.|
 
 Utilisez ces trois facteurs pour déterminer laquelle des deux options convient le mieux aux besoins de votre entreprise.
 
@@ -104,7 +105,7 @@ Vous vous connecterez à Microsoft 365 avec cette adresse e-mail. Par exemple, a
 
 3. Dans la page **Détails de la confirmation** , nous vous donnerons plus d’informations sur votre abonnement. Vous pouvez maintenant accéder au Centre d'administration Microsoft 365 pour ajouter des utilisateurs, installer des applications Office, inviter votre équipe à utiliser Microsoft 365 et bien plus encore. Nous vous enverrons également un e-mail avec les étapes de configuration pour Microsoft 365 Business Basic.
 
-N’oubliez pas que cette option ne fournit pas d’e-mail de marque, de contrôle d’administration pour l’utilisation des services par d’autres utilisateurs ou de prise en charge de la conformité spécifique à l’industrie.  Les abonnés n’ont aucun accès ou contrôle sur l’utilisation ou les documents d’autres utilisateurs (employés) sous cette option Les utilisateurs peuvent choisir de ne pas transférer les données créées dans le stockage, telles que OneDrive/Teams, vers votre compte de domaine mis à niveau au niveau de l’entreprise si vous ne choisissez pas l’option 2 immédiatement.
+N’oubliez pas que cette option ne fournit pas d’e-mail de marque, de contrôle d’administration pour l’utilisation des services par d’autres utilisateurs ou de prise en charge de la conformité spécifique à l’industrie. Les abonnés n’ont aucun accès ou contrôle sur l’utilisation ou les documents d’autres utilisateurs (employés) sous cette option Les utilisateurs peuvent choisir de ne pas transférer les données créées dans le stockage, telles que OneDrive/Teams, vers votre compte de domaine mis à niveau au niveau de l’entreprise si vous ne choisissez pas l’option 2 immédiatement.
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
@@ -129,7 +130,7 @@ Si vous avez déjà utilisé le mode d’inscription simplifié pour acheter un 
 
 Les conditions d’utilisation simplifiées de l’inscription ont été récemment mises à jour, notamment pour clarifier les licences et la propriété des données pour les abonnements professionnels multi-utilisateurs. Pour le service continu de votre abonnement professionnel, vous pouvez soit visiter le Centre d’administration [Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) et rester à l’aide de **l’inscription simplifiée** (et accepter d’utiliser le Contrat de services Microsoft supplémentaire), soit visiter le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) et ajouter un **domaine d’entreprise** (et utiliser le Contrat de services en ligne Microsoft). Pour vous aider à choisir parmi ces deux modes les mieux adaptés à vos besoins, consultez le tableau en haut de cet article.
 
-Si vous choisissez de ne pas accepter les conditions mises à jour pour l’inscription simplifiée ou d’ajouter un domaine professionnel, votre abonnement ne se renouvelle pas automatiquement et, à la fin de votre contrat d’abonnement actuel, vous perdez l’accès aux applications Office.  Vos données OneDrive seront conservées pendant 90 jours pour vous permettre de les copier, puis elles seront supprimées.
+Si vous choisissez de ne pas accepter les conditions mises à jour pour l’inscription simplifiée ou d’ajouter un domaine professionnel, votre abonnement ne se renouvelle pas automatiquement et, à la fin de votre contrat d’abonnement actuel, vous perdez l’accès aux applications Office. Vos données OneDrive seront conservées pendant 90 jours pour vous permettre de les copier, puis elles seront supprimées.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
@@ -147,7 +148,7 @@ Il existe trois options pour obtenir un e-mail professionnel.
 
 ### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>Pourquoi dois-je vérifier mon domaine pour créer un e-mail professionnel ?
 
-Si vous choisissez d’utiliser un domaine que vous possédez déjà, vous pouvez l’utiliser pour votre adresse e-mail avec Microsoft 365. Dans le cadre du processus d’inscription, nous vous demandons de vérifier le domaine afin que vous puissiez envoyer des e-mails via Microsoft 365.  Cela confirme que vous êtes le propriétaire du domaine qui envoie des e-mails avec cette identité, ce qui améliore la sécurité et empêche les activités frauduleuses.
+Si vous choisissez d’utiliser un domaine que vous possédez déjà, vous pouvez l’utiliser pour votre adresse e-mail avec Microsoft 365. Dans le cadre du processus d’inscription, nous vous demandons de vérifier le domaine afin que vous puissiez envoyer des e-mails via Microsoft 365. Cela confirme que vous êtes le propriétaire du domaine qui envoie des e-mails avec cette identité, ce qui améliore la sécurité et empêche les activités frauduleuses.
 
 ### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>Y a-t-il un avantage à payer mensuellement ou annuellement ?
 
@@ -168,4 +169,3 @@ Contactez nos experts du support technique pour les petites entreprises qui peuv
 ## <a name="set-up-microsoft-365-business-basic"></a>Configurer Microsoft 365 Business Basic
 
 Pour savoir comment acheter ou ajouter un domaine, consultez [Configurer Microsoft 365 Business Basic avec un domaine nouveau ou existant](../setup/setup-business-basic.md).
-

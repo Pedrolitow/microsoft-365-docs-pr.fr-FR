@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 3/21/2022
+ms.date: 10/14/2022
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.custom: ''
 description: Découvrez comment identifier les personnes critiques d’une organisation et ajouter la balise de compte prioritaire pour leur fournir une protection supplémentaire.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0133a684780ab59514d576bf619ebe2c4aa45099
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 964427f26df1f572f78f3b98602883ad69ac9a34
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066583"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645272"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes Priority dans Microsoft Defender pour Office 365
 
@@ -80,7 +80,7 @@ Les effets de la protection de compte prioritaire sont visibles dans les fonctio
 - [Stratégies d’alerte personnalisées](../../compliance/alert-policies.md#view-alerts)
 - [Explorateur de menaces et détections en temps réel](threat-explorer.md)
 - [Rapport utilisateur compromis](view-email-security-reports.md#compromised-users-report)
-- [Page de l’entité d’e-mail](mdo-email-entity-page.md#other-innovations)
+- [Page de l’entité d’e-mail](mdo-email-entity-page.md)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
 - [Rapport des principaux expéditeurs et destinataires](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Simulation d’attaque](attack-simulation-training.md#target-users)

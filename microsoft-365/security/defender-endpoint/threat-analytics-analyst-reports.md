@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 221703cfa0161d0f0dfc18d7ee3da9dea67d0826
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 951630b17435519f81e69a5bcf0fe5dccfe71bd5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224687"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625806"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>Rapport d’analyste dans l’analyse des menaces
 

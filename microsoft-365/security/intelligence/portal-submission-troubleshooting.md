@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 58a3280723c5473bb45b11bf86107883aeb02c37
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 96c218ff64f4063596f6d21b6da796dc3a5a6a1d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222669"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633260"
 ---
 # <a name="troubleshooting-malware-submission-errors-caused-by-administrator-block"></a>Résolution des erreurs d’envoi de programmes malveillants provoquées par un bloc administrateur
 

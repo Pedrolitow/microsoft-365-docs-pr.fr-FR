@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e85038909d9cd68a96d2eb91ebea8fb9dbf6801e
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5b8bf60554d33cc99f59b1949e51d3d3f85a501e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233197"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646680"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 

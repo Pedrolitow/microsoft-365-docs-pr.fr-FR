@@ -16,15 +16,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 17eb5fbb7249ba3ff38c30267632447d0c594f17
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 33563b83c65894d86b07490c2ed0c6a1f8e1ed70
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68078060"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631059"
 ---
 # <a name="get-incident-information-api"></a>Obtenir l’API d’informations sur les incidents
 

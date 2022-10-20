@@ -13,16 +13,17 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Dans cet article, lisez une vue d’ensemble des différentes formes de chiffrement utilisées pour sécuriser les données client dans le cloud Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3105da5d17b1656ffa0d29da4f4aa02c9a9f9064
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: bc28109558cd48b8d78081b73c192f84910cc9ef
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633914"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644992"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Chiffrement dans Microsoft Cloud
 
@@ -51,6 +52,8 @@ Le chiffrement des données client au repos est fourni par plusieurs technologie
 Pour les données client en transit, tous les serveurs Office 365 négocient des sessions sécurisées à l’aide de TLS par défaut avec les machines clientes pour sécuriser les données client. Par exemple, Office 365 négocie des sessions sécurisées pour Skype Entreprise, Outlook et Outlook sur le web, les clients mobiles et les navigateurs web.
 
 (Tous les serveurs orientés client négocient vers TLS 1.2 par défaut.)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="related-links"></a>Liens connexes
 

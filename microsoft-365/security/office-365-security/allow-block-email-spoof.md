@@ -1,5 +1,5 @@
 ---
-title: Autoriser ou bloquer des courriers utilisant la liste Autoriser/Bloquer des clients
+title: Autoriser ou bloquer l’e-mail à l’aide de la liste d’autorisation/de blocage du locataire
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.collection:
 - m365-security
-description: Les administrateurs peuvent apprendre à autoriser ou bloquer les e-mails et les entrées d’expéditeur usurpés dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
+description: Les administrateurs peuvent apprendre à autoriser ou bloquer les entrées de courrier électronique et d’expéditeur usurpé dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9a954b820b584d9fdb6b210971423e9f17c15de6
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 90e8a8e84c26385457bc31533ca2e26b2500f69f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066803"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640299"
 ---
-# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des courriers utilisant la liste Autoriser/Bloquer des clients
+# <a name="allow-or-block-email-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer l’e-mail à l’aide de la liste d’autorisation/de blocage du locataire
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -138,13 +138,13 @@ Vous ne pouvez pas créer d’entrées d’autorisation pour les domaines et les
 Pour obtenir des instructions, consultez [Signaler un bon e-mail à Microsoft](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Étant donné que Microsoft gère les entrées d’autorisation pour vous, les entrées d’autorisation inutiles pour les domaines et les adresses e-mail seront supprimées. Ce comportement protège votre organisation et permet d’éviter les entrées d’autorisation mal configurées. Si vous n’êtes pas d’accord avec le verdict, vous devrez peut-être ouvrir une demande de support pour déterminer pourquoi un message est toujours considéré comme incorrect.
+> Microsoft ne vous permet pas de créer des entrées d’autorisation directement, car cela entraîne la création d’autorisations qui ne sont pas nécessaires, exposant ainsi votre organisation à des e-mails malveillants qui auraient pu autrement être filtrés par le système.
 >
-> Si le domaine ou l’adresse e-mail n’a pas encore été bloqué, aucune entrée d’autorisation pour le domaine ou l’adresse e-mail n’est créée.
+> Microsoft gère le processus de création d’autorisation à partir de l’envoi en créant des autorisations pour les entités (domaines ou adresses e-mail, expéditeurs usurpés, URL, fichiers) qui ont été jugées malveillantes par des filtres pendant le flux de messagerie. Par exemple, si l’expéditeur et une URL du message ont été déterminés comme étant incorrects, une entrée d’autorisation est créée pour l’expéditeur et une entrée d’autorisation est créée pour l’URL.
 >
-> Dans la plupart des cas où le message a été déterminé comme un faux positif qui a été bloqué de manière incorrecte, l’entrée d’autorisation est supprimée à la date d’expiration spécifiée.
+> Lorsque cette entité (adresse de domaine ou e-mail, URL, fichier) est à nouveau rencontrée, tous les filtres associés à cette entité sont ignorés.
 >
-> Pour créer des entrées d’autorisation pour les expéditeurs usurpés, consultez la section [Créer des entrées d’autorisation pour les expéditeurs usurpés](#create-allow-entries-for-spoofed-senders) plus loin dans cet article.
+> Pendant le flux de courrier, si les messages du domaine ou de l’adresse e-mail passent d’autres vérifications dans la pile de filtrage, les messages sont remis. Par exemple, si [l’authentification par e-mail](email-validation-and-authentication.md) réussit, un message d’un expéditeur dans l’entrée d’autorisation est remis.
 
 ### <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Utilisez le portail Microsoft 365 Defender pour afficher les entrées d’autorisation ou de blocage pour les domaines et les adresses e-mail dans la liste d’autorisation/de blocage du locataire
 
@@ -215,6 +215,10 @@ Lorsque vous modifiez des entrées d’autorisation ou de blocage pour les domai
    - **Remarque facultative**
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+
+Notez qu’avec **la gestion des expirations autorisées** (actuellement en préversion privée), si Microsoft n’a pas appris à partir de l’autorisation, Microsoft étendra automatiquement le délai d’expiration des autorisations, qui expireront bientôt, de 30 jours pour empêcher les messages légitimes d’être de nouveau indésirables ou mis en quarantaine. Si Microsoft n’apprend pas dans les 90 jours du calendrier à partir de la date de création de l’autorisation, Microsoft supprime l’autorisation.
+
+Si Microsoft a appris de l’autorisation, l’autorisation sera supprimée et vous recevrez une alerte vous informant à ce sujet.
 
 > [!NOTE]
 > Pour autoriser les entrées uniquement, si vous sélectionnez l’entrée en cliquant n’importe où dans la ligne autre que la case à cocher, vous pouvez sélectionner ![l’icône Afficher la soumission.](../../media/m365-cc-sc-view-submission-icon.png) **Affichez la soumission** dans le menu volant des détails qui semble accéder à la page **Soumissions** à l’adresse <https://security.microsoft.com/reportsubmission>.

@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: ce7d7f1973f618984e0ee63270ce7fca5d7fdc87
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1b273fbaf02277e20634a7daa37b61e5cbb27ec4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193056"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631675"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Utiliser Microsoft Defender pour point de terminaison API
 

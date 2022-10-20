@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +18,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 90e6977d6660cb475a4172d863080878957407f5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 14b687f7b9221d73a314517db11709cb2da7948b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223697"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627299"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
@@ -49,14 +50,19 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
 
 **Nouveautés**
 
-- Corrige un blocage du noyau observé sur certaines charges de travail client exécutant mdatp version 101.75.43. Après l’analyse de la cause première, cela a été attribué à une condition de concurrence lors de la libération de la propriété d’un descripteur de fichier de capteur. La condition de concurrence a été exposée en raison d’un changement récent du produit dans le chemin d’arrêt. Les clients sur les versions de noyau plus récentes (5.1+) ne sont pas affectés par ce problème.
+- Corrige un blocage du noyau observé sur certaines charges de travail client exécutant mdatp version 101.75.43. Après l’analyse de la cause première, cela a été attribué à une condition de concurrence lors de la libération de la propriété d’un descripteur de fichier de capteur. La condition de concurrence a été exposée en raison d’un changement récent du produit dans le chemin d’arrêt. Les clients sur les versions de noyau plus récentes (5.1+) ne sont pas affectés par ce problème. Vous trouverez plus d’informations sur le problème sous-jacent au [blocage du système en raison de tâches bloquées dans le code fanotify](https://access.redhat.com/solutions/2838901).
+    
+**Problèmes connus**
 
-- Lors de la mise à niveau à partir de mdatp version 101.75.43 ou 101.78.13, exécutez les commandes suivantes avant de tenter la mise à niveau vers la version 101.80.97
+- Lors de la mise à niveau à partir de mdatp version 101.75.43 ou 101.78.13, vous pouvez rencontrer un blocage du noyau. Exécutez les commandes suivantes avant de tenter la mise à niveau vers la version 101.80.97. Cela doit empêcher le problème de se produire.
 
 ```
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
+Après avoir exécuté ce qui précède, utilisez votre gestionnaire de package pour effectuer la mise à niveau. 
+    
+En guise d’alternative à ce qui précède, vous pouvez suivre les instructions de [désinstallation](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), puis [installer](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) la dernière version du package.
 </br>
 
 <br/><br/>

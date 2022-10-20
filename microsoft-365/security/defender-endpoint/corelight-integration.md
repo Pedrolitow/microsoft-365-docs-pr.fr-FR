@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 01b584710aafb6f1f9d88a9870294fcc26d61a24
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fac3ff549e4ac18fa7af4c65ffa724ad5a7c4164
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200536"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635749"
 ---
 # <a name="enable-corelight-data-integration"></a>Permettre l'intégration des données Corelight
 

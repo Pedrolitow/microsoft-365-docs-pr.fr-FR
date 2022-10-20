@@ -20,14 +20,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f325ec8c2024bb5e1f00c42811863c7673eeced2
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 08b773fe3a8605853e0550bd0da9dfa64b9d6fdc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68084416"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640497"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprendre le rapport d’analyste dans l’analyse des menaces dans Microsoft 365 Defender
 

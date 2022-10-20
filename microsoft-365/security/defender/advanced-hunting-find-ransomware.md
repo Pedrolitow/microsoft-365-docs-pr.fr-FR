@@ -21,13 +21,13 @@ ms.collection:
 - m365solution-ransomware
 - highpri
 - tier1
-ms.topic: article
-ms.openlocfilehash: 2df1a06e1148a496674dba7c5679859e0fb678d8
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 0decdcf0302b9cd3ea7db3aeda53a1d15d49c61d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68089166"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640739"
 ---
 # <a name="hunt-for-ransomware"></a>Repérer des menaces de ransomware
 

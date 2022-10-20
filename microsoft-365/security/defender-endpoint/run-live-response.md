@@ -17,15 +17,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 205cce10d0f443724b6d99c83d4b2075e8031d4f
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 4ef4a02be76d24d99b77272f751b646fa526827e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227985"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628046"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 

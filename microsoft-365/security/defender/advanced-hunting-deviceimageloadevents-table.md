@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: cd8de23e9296c54845072f61bf6b56d32545c4dd
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: ea920d35f155609cc777e231ecbd0f744e986c15
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68089540"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625498"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 

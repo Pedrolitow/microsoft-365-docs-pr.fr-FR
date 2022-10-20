@@ -6,7 +6,7 @@ ms.author: dansimp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
@@ -18,12 +18,12 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 8c1456fed9e264cbf61f8e156100f6eb204fc2b4
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 99f6d3b1d556b15c71389bd4cfce86cb0f78fdfd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68083910"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642236"
 ---
 # <a name="explorer-and-real-time-detections"></a>Détections de l’Explorateur et en temps réel
 

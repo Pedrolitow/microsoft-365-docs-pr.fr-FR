@@ -7,23 +7,24 @@ author: kccross
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- tier1
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Découvrez les demandes Customer Lockbox qui vous permettent de contrôler la façon dont un ingénieur du support Technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: 7094de30722c4419e3c1c33d0c06f2cdb6d37290
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8e1edd826f3e0b77d6bd0c65521acc68c0f63821
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642171"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627606"
 ---
 # <a name="microsoft-purview-customer-lockbox"></a>Microsoft Purview Customer Lockbox
 
@@ -34,6 +35,8 @@ Pour voir les options de licence permettant à vos utilisateurs de tirer parti d
 Customer Lockbox garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer des opérations de service sans votre approbation explicite. Customer Lockbox vous permet d’entrer dans le processus de flux de travail d’approbation utilisé par Microsoft pour vous assurer que seules les demandes autorisées autorisent l’accès à votre contenu. Pour en savoir plus sur le processus de flux de travail de Microsoft, consultez [Privileged Access Management](privileged-access-management-solution-overview.md).
 
 Parfois, les ingénieurs Microsoft aident à résoudre les problèmes qui surviennent avec le service. En règle générale, les ingénieurs corrigent les problèmes à l’aide d’outils de télémétrie et de débogage étendus mis en place par Microsoft pour ses services. Toutefois, dans certains cas, un ingénieur Microsoft doit accéder à votre contenu pour déterminer la cause racine et résoudre le problème. Customer Lockbox exige que l’ingénieur vous demande l’accès en tant que dernière étape du flux de travail d’approbation. Cela vous donne la possibilité d’approuver ou de refuser la demande pour votre organisation, et de fournir un contrôle d’accès direct à votre contenu.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="customer-lockbox-overview-video"></a>Vidéo de vue d’ensemble de Customer Lockbox
 
@@ -189,7 +192,7 @@ Lorsqu’une personne de votre organisation approuve ou refuse une demande Custo
 | Adresse IP | L’adresse IP de l’ordinateur utilisé par l’approbateur pour approuver ou refuser une demande. |
 | Utilisateur       | Le compte de service BOXServiceAccount@\[customerforest.prod.outlook.com\].            |
 | Activité   | Set-AccessToCustomerDataRequest :il s’agit de l’activité d’audit enregistrée lorsque vous approuvez ou refusez une demande d’accès au Customer Lockbox.                                |
-| Item       | Guid de la demande Customer Lockbox                             |
+| Élément       | Guid de la demande Customer Lockbox                             |
 
 La capture d’écran suivante montre un exemple d’enregistrement d’audit qui correspond à une demande Customer Lockbox approuvée. Si une demande Customer Lockbox a été refusée, la valeur du `ApprovalDecision` paramètre est `Deny`.
 
@@ -197,7 +200,7 @@ La capture d’écran suivante montre un exemple d’enregistrement d’audit qu
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>L’enregistrement d’audit d’une action effectuée par un ingénieur Microsoft
 
-Les actions effectuées par un ingénieur Microsoft après l’approbation d’une demande de Customer Lockbox (et qui peuvent entraîner l’accès au contenu client) sont enregistrées dans le journal d’audit. Ces enregistrements contiennent les informations suivantes.
+The actions performed by a Microsoft engineer after a Customer Lockbox request is approved (and that may result in accessing customer content) are logged in the audit log. These records contain the following information.
 
 | Propriété de l’enregistrement d’audit| Description|
 |:---------- |:----------|
@@ -207,7 +210,7 @@ Les actions effectuées par un ingénieur Microsoft après l’approbation d’u
 | Activité   | Le nom de l’activité effectuée par l’ingénieur Microsoft.|
 | Élément       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>À quels services Microsoft 365 Customer Lockbox s’applique-t-il ?
 
@@ -285,7 +288,7 @@ Chaque demande Customer Lockbox contient un numéro de demande de service Micros
 
 ### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Quand une demande Customer Lockbox est approuvée, combien de temps les autorisations sont-ils valides ?
 
-Actuellement, la période maximale pour les autorisations d'accès accordées à l'ingénieur Microsoft est de 4 heures. L'ingénieur Microsoft peut également demander une période plus courte.
+Currently, the maximum period for the access permissions granted to the Microsoft engineer is 4 hours. The Microsoft engineer can also request a shorter period.
 
 ### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>Comment puis-je obtenir l’historique de toutes les demandes Customer Lockbox ?
 

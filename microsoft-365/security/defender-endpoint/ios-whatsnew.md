@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e7b7117703fccd95c40f2ec6ec979cca526d6319
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: da1e100386680e6ea870e78f89524408ba823ede
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221189"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627343"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour point de terminaison sur iOS
 
@@ -45,7 +45,7 @@ La protection réseau sur Microsoft Defender pour point de terminaison est déso
 
 Il inclut plusieurs contrôles d’administration pour offrir de la flexibilité, tels que la possibilité de configurer la fonctionnalité à partir du centre microsoft Endpoint Manager Administration. Les administrateurs peuvent également activer les contrôles de confidentialité pour configurer les données envoyées par Defender pour point de terminaison à partir d’appareils iOS. Pour plus d’informations, consultez [Configurer la protection réseau](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
-La protection réseau pour iOS est déjà activée pour votre locataire. Les utilisateurs finaux qui testent la fonctionnalité de protection réseau peuvent installer la préversion de l’application via TestFlight. Accédez à https://aka.ms/mdeiospp l’appareil iOS. Cela vous invite à installer l’application TestFlight sur votre appareil ou à ouvrir TestFlight au cas où elle serait déjà installée. Dans l’application TestFlight, suivez les instructions à l’écran pour installer Microsoft Defender point de terminaison. Vérifiez que le numéro de version de MDE est 1.1.29270104.
+La protection réseau pour iOS est déjà activée pour votre locataire. Les utilisateurs finaux qui testent la fonctionnalité de protection réseau peuvent installer la préversion de l’application via TestFlight. Accédez à https://aka.ms/mdeiospp l’appareil iOS. Cela vous invite à installer l’application TestFlight sur votre appareil ou à ouvrir TestFlight au cas où elle serait déjà installée. Dans l’application TestFlight, suivez les instructions à l’écran pour installer Microsoft Defender point de terminaison. Vérifiez que le numéro de version de MDE est 1.1.33070102.
 
 ## <a name="privacy-controls"></a>Contrôles de confidentialité
 

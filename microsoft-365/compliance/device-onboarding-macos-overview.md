@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: En savoir plus sur l’intégration d’appareils macOS dans des solutions de conformité
-ms.openlocfilehash: 6cf9d5233f66f1afd62644f774b3f9301a477e2e
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 9966ed77aac5935cabc2bc33b4738f35107610e4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343500"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621746"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils macOS dans Microsoft 365
 
@@ -30,9 +31,11 @@ Les appareils MacOS peuvent être intégrés aux solutions Microsoft Purview à 
 - [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 - [Gestion des risques internes](insider-risk-management.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Avant de commencer à utiliser endpoint DLP sur les appareils macOS (Catalina 10.15 ou version ultérieure), vous devez vous familiariser avec les articles suivants :
+Avant de commencer à utiliser endpoint DLP sur les appareils macOS (trois dernières versions publiées), vous devez vous familiariser avec les articles suivants :
 
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
 - [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
@@ -56,7 +59,7 @@ Vos appareils macOS doivent déjà être gérés via Intune ou JAMF Pro.
 
 ### <a name="supported-browsers"></a>Navigateurs pris en charge
 
-Endpoint DLP prend en charge ces navigateurs sur macOS Catalina 10.15 ou version ultérieure :
+Endpoint DLP prend en charge ces navigateurs sur macOS (trois dernières versions publiées) :
 
 - Microsoft Edge (dernière version)
 - Safari (dernière version, macOS uniquement)
