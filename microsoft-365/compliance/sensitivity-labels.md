@@ -25,12 +25,12 @@ description: Découvrez comment les étiquettes de confidentialité de Microsoft
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bb3f26d4d4e516b95000339221a6d144db1d6cc8
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 6c14a533ecd52eb05f85c16cb562df4c689eabfd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547618"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626399"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -157,7 +157,7 @@ Lorsque vous créez vos étiquettes de sensibilité dans le portail de conformit
 
 Vous pouvez appliquer une seule étiquette de confidentialité à un élément tel qu’un document, un e-mail ou un conteneur. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Toutefois, cette option ne s’applique pas aux sous-étiquettes qui partagent la priorité de leur étiquette parente.
 
-Cependant, l’ordre des sous-étiquettes est utilisé avec l'[étiquetage automatique](apply-sensitivity-label-automatically.md). Lorsque vous configurez les étiquettes pour les appliquer automatiquement ou en tant que recommandation, plusieurs correspondances peuvent se produire pour plus d'une étiquette. Pour déterminer l’étiquette à appliquer ou à recommander, l’ordre d’étiquettes est utilisé : la dernière étiquette de confidentialité est sélectionnée, puis, le cas échéant, la dernière sous-étiquette.
+Toutefois, l’ordre des [sous-étiquettes est utilisé avec les stratégies d’étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange). Lorsque vous configurez plusieurs stratégies d’étiquetage automatique pour le même emplacement, plusieurs correspondances peuvent se produire pour plusieurs étiquettes. Pour déterminer l’étiquette à appliquer, le classement des étiquettes est utilisé même avec les sous-étiquettes : la dernière étiquette sensible est sélectionnée, puis, le cas échéant, la dernière sous-étiquette.
 
 ![Option de création d’une sous-étiquette.](../media/Sensitivity-label-sublabel-options.png)
 

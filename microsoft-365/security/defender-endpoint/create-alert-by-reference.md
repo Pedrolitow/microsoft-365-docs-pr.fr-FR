@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1a8eaf8afc7b9d583618d48d5f0b556c23e16348
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 817bfec55a38cef0404c392bce9765d1aef14686
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68210193"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623143"
 ---
 # <a name="create-alert-api"></a>Créer une API d’alerte
 

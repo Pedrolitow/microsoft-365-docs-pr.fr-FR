@@ -24,12 +24,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5d79ae1a158a5c6b3663a5596594d905cea51874
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: db0327982fa4dc281ba5ea2c4c0c013eaeee934d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565287"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620764"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -280,7 +280,7 @@ Pour plus d’informations sur la configuration de Yammer en mode natif, consult
 
     - Choisissez si vous souhaitez inclure des types d’informations sensibles. Cette étape vous permet de sélectionner les types d’informations sensibles par défaut et personnalisés. Choisissez parmi les types d’informations sensibles personnalisés existants ou les dictionnaires de mots clés personnalisés dans l’Assistant Stratégie de conformité des communications. Vous pouvez créer ces éléments avant d’exécuter l’Assistant si nécessaire. Vous pouvez également créer de nouveaux types d’informations sensibles à partir de l’Assistant Stratégie de conformité des communications.
 
-    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter la langue et les images inappropriées envoyées ou reçues dans le corps des messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menaces*, *blasphèmes*, *harcèlement ciblé*, *images adultes*, *images racées* et *images Gory*.
+    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter la langue et les images potentiellement inappropriées envoyées ou reçues dans le corps des messages électroniques ou d’autres types de texte. Vous pouvez choisir [des classifieurs intégrés spécifiques aux stratégies de conformité des communications](/microsoft-365/compliance/communication-compliance-policies#classifiers).
 
     - Activez la [reconnaissance optique des caractères (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) pour analyser les images incorporées ou attachées dans les messages pour rechercher du texte imprimé ou manuscrit qui correspond aux conditions de stratégie. Pour les stratégies personnalisées, un ou plusieurs paramètres conditionnels associés au texte, aux mots clés, aux classifieurs ou aux types d’informations sensibles doivent être configurés dans la stratégie pour permettre la sélection de l’analyse optique de la reconnaissance de caractères.
 

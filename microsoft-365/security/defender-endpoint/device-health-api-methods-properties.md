@@ -6,26 +6,26 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security
-- EngageScoreSep2022
+- ContentEngagementFY23
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d252a5cfa74924a34674ecc2dd4c81366b84a125
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: d2056fc380aa1d133c68b8a4ddfe697fd76283a0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363714"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621183"
 ---
 # <a name="export-device-antivirus-health-details-api-methods-and-properties"></a>Exporter les méthodes et propriétés de l’API des détails d’intégrité de l’antivirus de l’appareil
 

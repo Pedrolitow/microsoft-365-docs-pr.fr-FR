@@ -9,37 +9,37 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 5/12/2022
+ms.date: 10/14/2022
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-description: Découvrez comment Office 365 administrateurs généraux peuvent appliquer la personnalisation de votre organisation aux messages électroniques chiffrés & contenu du portail de chiffrement.
-ms.openlocfilehash: bf6f3b9de64185778be7eeb4da6cc8e537f0305a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Découvrez comment les administrateurs généraux de Microsoft 365 peuvent appliquer la personnalisation de votre organisation aux messages électroniques chiffrés & contenu du portail de chiffrement.
+ms.openlocfilehash: ec15a4d6c284293074cebf7c4ba49510d60e3f1c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637018"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624750"
 ---
-# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés Microsoft 365 for business Message Encryption
+# <a name="add-your-organizations-brand-to-your-microsoft-purview-message-encryption-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés Chiffrement de messages Microsoft Purview
 
-Vous pouvez appliquer la personnalisation de votre entreprise pour personnaliser l’apparence des messages électroniques de votre organisation et du portail de chiffrement. Vous devez appliquer des autorisations d’administrateur général à votre compte professionnel ou scolaire avant de commencer. Une fois que vous disposez de ces autorisations, utilisez les applets de commande Get-OMEConfiguration et Set-OMEConfiguration dans Exchange Online PowerShell pour personnaliser ces parties des messages électroniques chiffrés :
+Appliquez la personnalisation de votre entreprise pour personnaliser l’apparence des messages électroniques de votre organisation et du portail de chiffrement. Vous devez appliquer des autorisations d’administrateur général à votre compte professionnel ou scolaire avant de commencer. Utilisez les applets de commande Get-OMEConfiguration et Set-OMEConfiguration dans Exchange Online PowerShell pour personnaliser ces parties des messages électroniques chiffrés :
 
 - Texte d’introduction
 - Disclaimer text
 - URL de la déclaration de confidentialité de votre organisation
-- Texte dans le portail OME
-- Logo qui s’affiche dans le message électronique et le portail OME, ou s’il faut utiliser un logo
-- Couleur d’arrière-plan dans le message électronique et le portail OME
+- Texte dans le portail des messages chiffrés
+- Logo qui s’affiche dans le message électronique et le portail des messages chiffrés, ou s’il faut utiliser un logo
+- Couleur d’arrière-plan dans le message électronique et le portail des messages chiffrés
 
 Vous pouvez également rétablir l’apparence par défaut à tout moment.
 
@@ -51,17 +51,19 @@ Si vous souhaitez plus de contrôle, utilisez Microsoft Purview Advanced Message
 - Indique si vous souhaitez autoriser la révocation des e-mails
 - Indiquez si vous souhaitez que les e-mails envoyés à des destinataires externes expirent après un nombre spécifié de jours.
 
-Une fois que vous avez créé les modèles, vous pouvez les appliquer à des e-mails chiffrés à l’aide de règles de flux de messagerie Exchange. Si vous avez Microsoft Purview Advanced Message Encryption, vous pouvez révoquer tout e-mail que vous avez marqué à l’aide de ces modèles.
+Une fois que vous avez créé les modèles, appliquez-les aux e-mails chiffrés envoyés à partir de votre boîte aux lettres en ligne à l’aide de règles de flux de messagerie Exchange. Si vous avez Microsoft Purview Advanced Message Encryption, vous pouvez révoquer tout e-mail que vous avez marqué.
 
-## <a name="work-with-ome-branding-templates"></a>Utiliser des modèles de personnalisation OME
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-Vous pouvez modifier plusieurs fonctionnalités dans un modèle de personnalisation. Vous pouvez modifier, mais pas supprimer, le modèle par défaut. Si vous disposez d’Advanced Message Encryption, vous pouvez également créer, modifier et supprimer des modèles personnalisés. Utilisez Exchange Online PowerShell pour travailler avec un modèle de personnalisation à la fois.
+## <a name="work-with-branding-templates"></a>Utiliser des modèles de personnalisation
+
+Vous pouvez modifier plusieurs fonctionnalités dans un modèle de personnalisation et modifier, mais pas supprimer, le modèle par défaut. Si vous disposez d’Advanced Message Encryption, vous pouvez également créer, modifier et supprimer des modèles personnalisés. Utilisez Exchange Online PowerShell pour travailler avec un modèle de personnalisation à la fois.
 
 - [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) : modifiez le modèle de personnalisation par défaut ou un modèle de personnalisation personnalisé que vous avez créé.
 - [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) : créez un modèle de personnalisation, Advanced Message Encryption uniquement.
 - [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration) - Supprimer un modèle de personnalisation personnalisé, Advanced Message Encryption uniquement. Vous ne pouvez pas supprimer le modèle de personnalisation par défaut.
 
-## <a name="modify-an-ome-branding-template"></a>Modifier un modèle de personnalisation OME
+## <a name="modify-a-branding-template"></a>Modifier un modèle de personnalisation
 
 Utilisez Exchange Online PowerShell pour modifier un modèle de personnalisation à la fois. Si vous disposez d’Advanced Message Encryption, vous pouvez également créer, modifier et supprimer des modèles personnalisés.
 
@@ -73,20 +75,20 @@ Utilisez Exchange Online PowerShell pour modifier un modèle de personnalisation
 
 |Pour personnaliser cette fonctionnalité de l’expérience de chiffrement|Utiliser ces commandes|
 |---|---|
-|Couleur d’arrière-plan|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> Pour plus d’informations sur les couleurs d’arrière-plan, consultez la section [Couleurs d’arrière-plan](#background-color-reference) plus loin dans cet article.|
-|Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff <p> Taille optimale de fichier de logo : moins de 40 ko <p> Taille optimale de l’image du logo : 170 x 70 pixels. Si votre image dépasse ces dimensions, le service redimensionnera votre logo pour l’afficher dans le portail. Le service ne modifie pas le fichier graphique lui-même. Pour de meilleurs résultats, utilisez la taille optimale.|
-|Texte en regard du nom et de l’adresse e-mail de l’expéditeur|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|Texte qui s’affiche sur le bouton « Lire le message »|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|Texte qui s’affiche sous le bouton « Lire le message »|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|URL du lien Déclaration de confidentialité|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|Couleur d’arrière-plan|`Set-OMEConfiguration -Identity "<ConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> Pour plus d’informations sur les couleurs d’arrière-plan, consultez la section [Couleurs d’arrière-plan](#background-color-reference) plus loin dans cet article.|
+|Logo|`Set-OMEConfiguration -Identity "<ConfigurationName>" -Image <Byte[]>` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff <p> Taille optimale de fichier de logo : moins de 40 ko <p> Taille optimale de l’image du logo : 170 x 70 pixels. Si votre image dépasse ces dimensions, le service redimensionnera votre logo pour l’afficher dans le portail. Le service ne modifie pas le fichier graphique lui-même. Pour de meilleurs résultats, utilisez la taille optimale.|
+|Texte en regard du nom et de l’adresse e-mail de l’expéditeur|`Set-OMEConfiguration -Identity "<ConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|Texte qui s’affiche sur le bouton « Lire le message »|`Set-OMEConfiguration -Identity "<ConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -ReadButtonText "Read Secure Message."`|
+|Texte qui s’affiche sous le bouton « Lire le message »|`Set-OMEConfiguration -Identity "<ConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|URL du lien Déclaration de confidentialité|`Set-OMEConfiguration -Identity "<ConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
 |Déclaration de non-responsabilité du message électronique qui contient le message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|Texte qui s’affiche en haut du portail d’affichage du message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|Texte qui s’affiche en haut du portail d’affichage du message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Message encryption cfonfiguration" -PortalText "ContosoPharma secure email portal."`|
 |Pour activer ou désactiver l’authentification avec un code de passe unique pour ce modèle personnalisé|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <p> **Exemples :** <br/>Pour activer des codes secrets uniques pour ce modèle personnalisé <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <p> Pour désactiver les codes secrets uniques pour ce modèle personnalisé <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |Pour activer ou désactiver l’authentification avec des identités Microsoft, Google ou Yahoo pour ce modèle personnalisé|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <p> **Exemples :** <br/>Pour activer les ID sociaux pour ce modèle personnalisé <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <p> Pour désactiver les ID sociaux pour ce modèle personnalisé <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
-## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Créer un modèle de personnalisation OME (Advanced Message Encryption)
+## <a name="create-an-encrypted-message-branding-template-advanced-message-encryption"></a>Créer un modèle de personnalisation de message chiffré (Advanced Message Encryption)
 
-Si vous avez Microsoft Purview Advanced Message Encryption, vous pouvez créer des modèles de personnalisation personnalisés pour votre organisation à l’aide de l’applet de commande [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) . Une fois que vous avez créé le modèle, vous modifiez le modèle à l’aide de l’applet de commande Set-OMEConfiguration comme décrit dans [Modifier un modèle de personnalisation OME](#modify-an-ome-branding-template). Vous pouvez créer plusieurs modèles.
+Si vous avez Microsoft Purview Advanced Message Encryption, vous pouvez créer des modèles de personnalisation personnalisés pour votre organisation à l’aide de l’applet de commande [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) . Une fois que vous avez créé le modèle, vous modifiez le modèle à l’aide de l’applet de commande Set-OMEConfiguration comme décrit dans [Modifier un modèle de personnalisation](#modify-a-branding-template). Vous pouvez créer plusieurs modèles.
 
 Pour créer un modèle de personnalisation personnalisé :
 
@@ -116,11 +118,11 @@ Pour supprimer toutes les modifications du modèle par défaut, y compris les pe
 
    |Pour annuler cette fonctionnalité de chiffrement et rétablir le texte et l’image par défaut|Utiliser ces commandes|
    |:-----|:-----|
-   |Texte par défaut fourni avec des messages électroniques chiffrés. Texte par défaut qui s’affiche au-dessus des instructions relatives à l’affichage des messages chiffrés|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |Déclaration de non-responsabilité du message électronique qui contient le message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-   |Texte qui s’affiche en haut du portail d’affichage du message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <p> **Exemple de retour à la valeur par défaut :** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-   |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <p> **Exemple de retour à la valeur par défaut :** <p> `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-   |Couleur d’arrière-plan|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <p> **Exemple de retour à la valeur par défaut :** <p> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |Texte par défaut fourni avec des messages électroniques chiffrés. Texte par défaut qui s’affiche au-dessus des instructions relatives à l’affichage des messages chiffrés|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -EmailText ""`|
+   |Déclaration de non-responsabilité du message électronique qui contient le message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **Exemple :** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -DisclaimerText ""`|
+   |Texte qui s’affiche en haut du portail d’affichage du message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <p> **Exemple de retour à la valeur par défaut :** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -PortalText ""`|
+   |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <p> **Exemple de retour à la valeur par défaut :** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -Image $null`|
+   |Couleur d’arrière-plan|`Set-OMEConfiguration -Identity "<ConfigurationName>" -BackgroundColor "$null">` <p> **Exemple de retour à la valeur par défaut :** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -BackgroundColor $null`|
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>Supprimer un modèle de personnalisation personnalisé (Advanced Message Encryption)
 
@@ -128,12 +130,12 @@ Vous pouvez uniquement supprimer ou supprimer les modèles de personnalisation q
 
 Pour supprimer un modèle de personnalisation :
 
-1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, connectez-vous à Exchange Online PowerShell. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, [connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Utilisez l’applet **de commande Remove-OMEConfiguration** comme suit :
 
    ```powershell
-   Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
+   Remove-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
    Par exemple :
@@ -144,27 +146,27 @@ Pour supprimer un modèle de personnalisation :
 
    Pour plus d’informations, consultez [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Créer une règle de flux de messagerie Exchange qui applique votre personnalisation aux e-mails chiffrés
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails-sent-from-your-online-organization-to-external-recipients"></a>Créer une règle de flux de messagerie Exchange qui applique votre personnalisation aux e-mails chiffrés envoyés de votre organisation en ligne à des destinataires externes
 
 > [!IMPORTANT]
-> Les applications tierces qui analysent et modifient le courrier peuvent empêcher l’application correcte de la personnalisation OME.
+> Les applications tierces qui analysent et modifient le courrier peuvent empêcher l’application correcte de la personnalisation.
 
-Après avoir modifié le modèle par défaut ou créé de nouveaux modèles de personnalisation, vous pouvez créer des règles de flux de messagerie Exchange pour appliquer votre personnalisation en fonction de certaines conditions. Plus important encore, l’e-mail doit être chiffré. Une telle règle applique la personnalisation dans les scénarios suivants :
+Après avoir modifié le modèle par défaut ou créé de nouveaux modèles de personnalisation, vous pouvez créer des règles de flux de messagerie Exchange pour appliquer votre personnalisation en fonction de certaines conditions. Plus important encore, l’e-mail doit être chiffré. Une telle règle applique la personnalisation aux messages envoyés à partir de votre boîte aux lettres en ligne dans les scénarios suivants :
 
 - Si l’e-mail a été chiffré manuellement par l’utilisateur final à l’aide d’Outlook ou de Outlook sur le web, anciennement Outlook Web App
 - Si l’e-mail a été automatiquement chiffré par une règle de flux de messagerie Exchange ou une stratégie de Protection contre la perte de données Microsoft Purview
 
-Pour vous assurer Chiffrement de messages Microsoft Purview appliquez votre personnalisation, configurez une règle de flux de messagerie pour chiffrer vos messages électroniques. La priorité de la règle de chiffrement doit être supérieure à la règle de personnalisation afin que la règle de chiffrement soit traitée en premier. Par défaut, si vous créez la règle de chiffrement avant la règle de personnalisation, la règle de chiffrement aura une priorité plus élevée. Pour plus d’informations sur la création d’une règle de flux de messagerie Exchange qui applique le chiffrement, consultez [Définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md). Pour plus d’informations sur la définition de la priorité d’une règle de flux de messagerie, consultez [Gérer les règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
+Pour vous assurer Chiffrement de messages Microsoft Purview appliquez votre personnalisation, configurez une règle de flux de messagerie pour chiffrer vos messages. La priorité de la règle de chiffrement doit être supérieure à la règle de personnalisation afin que la règle de chiffrement soit traitée en premier. Par défaut, si vous créez la règle de chiffrement avant la règle de personnalisation, la règle de chiffrement aura une priorité plus élevée. Pour plus d’informations, consultez [Définir des règles de flux de courrier pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md). Pour plus d’informations sur la définition de la priorité d’une règle de flux de messagerie, consultez [Gérer les règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
 1. Dans un navigateur web, à l’aide d’un compte professionnel ou scolaire qui a reçu des autorisations d’administrateur général, [connectez-vous à Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
 2. Choisissez la vignette **Administration**.
 
-3. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choisissez **Administration centres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. Dans le Centre d'administration Microsoft 365, choisissez **Administration centres** \> **Exchange**.
 
 4. Dans le CENTRE, accédez aux **règles** de **flux** \> de messagerie et sélectionnez **l’icône Nouveau** ![nouveau.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle**. Pour plus d’informations sur l’utilisation de la CAE, consultez [le Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center).
 
-5. Dans **Nom**, tapez un nom pour la règle, par exemple Personnalisation pour le service des ventes.
+5. Dans **Nom**, tapez un nom pour la règle, par exemple **Personnalisation pour le service des ventes**.
 
 6. Dans **Appliquer cette règle si**, sélectionnez la condition **L’expéditeur se trouve dans l’organisation** et les autres conditions souhaitées dans la liste des conditions disponibles. Par exemple, vous pouvez appliquer un modèle de personnalisation particulier à :
 
@@ -172,13 +174,13 @@ Pour vous assurer Chiffrement de messages Microsoft Purview appliquez votre pers
    - E-mails chiffrés envoyés avec un certain mot clé tel que « Externe » ou « Partenaire »
    - E-mails chiffrés envoyés à un domaine particulier
 
-7. Si vous avez déjà défini une règle de flux de messagerie pour appliquer le chiffrement, ignorez cette étape. Dans **le cas contraire**, pour configurer la règle de flux de messagerie pour appliquer le chiffrement, sélectionnez **Modifier la sécurité des messages**, puis **appliquez Office 365 chiffrement des messages et la protection des droits**. Sélectionnez un modèle RMS dans la liste, puis choisissez **ajouter une action**.
+7. Si vous avez déjà défini une règle de flux de messagerie pour appliquer le chiffrement, ignorez cette étape. Sinon, pour configurer la règle de flux de messagerie afin d’appliquer **le** chiffrement, sélectionnez **Modifier la sécurité des messages**, puis **appliquer Office 365 chiffrement des messages et la protection des droits**. Sélectionnez un modèle RmS (Rights Management Service) dans la liste, puis sélectionnez **Ajouter une action**.
 
    La liste des modèles inclut les modèles et options par défaut, ainsi que tous les modèles personnalisés que vous créez. Si la liste est vide, vérifiez que vous avez configuré Chiffrement de messages Microsoft Purview. Pour obtenir des instructions, consultez [Configurer Chiffrement de messages Microsoft Purview](set-up-new-message-encryption-capabilities.md). Pour plus d’informations sur les modèles par défaut, consultez [Configuration et gestion des modèles pour Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). Pour plus d’informations sur l’option **Ne pas transférer** , consultez [l’option Ne pas transférer pour les e-mails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Pour plus d’informations sur l’option **Chiffrer uniquement** , consultez [l’option Chiffrer uniquement pour les e-mails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 8. Dans **Faire ce qui suit**, sélectionnez **Modifier la sécurité** \> des messages **Appliquer la personnalisation aux messages OME**. Ensuite, dans la liste déroulante, sélectionnez un modèle de personnalisation.
 
-   Choisissez **Ajouter une action** si vous souhaitez spécifier une autre action, ou **sélectionnez Enregistrer**, puis choisissez **OK**.
+   Sélectionnez **Ajouter une action** si vous souhaitez spécifier une autre action, ou **sélectionnez Enregistrer**, puis sélectionnez **OK**.
 
 ## <a name="background-color-reference"></a>Référence de couleur d’arrière-plan
 

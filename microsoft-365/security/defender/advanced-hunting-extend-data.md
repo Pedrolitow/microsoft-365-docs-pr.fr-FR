@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
-ms.openlocfilehash: 744838b211efafef76c816c7a9f3493fcf15fdcf
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 1c2e0ef6b07f746ba88e190807ef914a9948b8f8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68064649"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625410"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Étendre la couverture de chasse avancée avec les paramètres appropriés
 

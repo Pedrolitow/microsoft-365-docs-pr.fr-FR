@@ -14,17 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier2
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Les administrateurs peuvent apprendre à créer des règles de flux de courrier (règles de transport) pour chiffrer et déchiffrer des messages à l’aide de Chiffrement de messages Microsoft Purview.
-ms.openlocfilehash: 75abd302bf661fda50b144f431572c8c6dfc8bcc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b244cd1847d46f80bd56ec5a9aec09eadc6781cd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635696"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620720"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Définir des règles de flux de courrier pour chiffrer les courriers électroniques
 
@@ -38,6 +39,8 @@ Pour plus d’informations sur les composants qui composent les règles de flux 
 
 > [!IMPORTANT]
 > Pour les environnements Exchange hybrides, les utilisateurs locaux peuvent envoyer et recevoir des messages chiffrés à l’aide du chiffrement des messages uniquement si les e-mails sont acheminés via Exchange Online. Pour configurer le chiffrement des messages dans un environnement Exchange hybride, vous devez d’abord [configurer l’environnement hybride à l’aide de l’Assistant Configuration hybride](/Exchange/exchange-hybrid), puis [configurer le courrier pour qu’il transite de Office 365 vers votre serveur de messagerie](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) et [configurer le flux de courrier de votre serveur de messagerie vers Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Une fois que vous avez configuré la messagerie pour qu’elle transite par Office 365, vous pouvez configurer des règles de flux de messagerie pour le chiffrement des messages à l’aide de ces conseils.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-microsoft-purview-message-encryption"></a>Créer des règles de flux de courrier pour chiffrer les messages électroniques avec Chiffrement de messages Microsoft Purview
 

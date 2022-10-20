@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft dans les environnements GCC.
-ms.openlocfilehash: 48b1b517bb75977f2537d8365b3a00d01e077858
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 045626581bdc2e19ada18e016a7786c648b32120
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536981"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626684"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-environments"></a>Gérer le partage pour le tableau blanc Microsoft dans les environnements GCC
 
@@ -28,7 +28,7 @@ ms.locfileid: "68536981"
 
 Lorsque vous partagez un tableau blanc dans une réunion Teams, le tableau blanc crée un lien de partage. Ce lien est accessible à toute personne au sein de l’organisation. Le tableau blanc est également partagé avec tous les utilisateurs in-tenants de la réunion. Les tableaux blancs sont partagés à l’aide de liens partageables par l’entreprise, quel que soit le paramètre par défaut. La prise en charge du type de lien de partage par défaut est planifiée.
 
-La plupart des comptes d’appareils externes et partagés disposent de davantage de fonctionnalités de collaboration temporaire pendant une réunion. Les utilisateurs peuvent temporairement afficher et collaborer sur des tableaux blancs lorsqu’ils sont partagés dans une réunion Teams, comme PowerPoint Live partage.
+Lors d’une réunion Teams, les comptes d’appareils externes et partagés (généralement utilisés dans les surface hubs et les appareils salles Teams) ont plus de possibilités de collaboration temporaire. Les utilisateurs peuvent temporairement afficher et collaborer sur des tableaux blancs partagés dans une réunion, de la même façon que PowerPoint Live partage.
 
 Dans ce cas, le tableau blanc fournit un affichage temporaire et une collaboration sur le tableau blanc pendant la réunion Teams uniquement. Un lien de partage n’est pas créé et le Tableau blanc n’accorde pas l’accès au fichier.
 
@@ -51,8 +51,9 @@ Pour activer ce comportement, procédez comme suit :
 Ce paramètre s’applique uniquement aux tableaux blancs et remplace les paramètres précédemment partagés : **OneDriveLoopSharingCapability** et **CoreLoopSharingCapability**. Ces paramètres ne sont plus applicables et peuvent être ignorés.
 
 > [!NOTE]
-> Par défaut, le paramètre de réunion Teams **permettant aux utilisateurs anonymes d’interagir avec les applications dans les réunions** est activé par défaut. Si vous l’avez désactivé, les utilisateurs anonymes (par opposition aux invités ou aux utilisateurs fédérés) n’auront pas accès au tableau blanc pendant la réunion.
->
+> Par défaut, le paramètre de réunion Teams **permettant aux utilisateurs anonymes d’interagir avec les applications dans les réunions** est activé par défaut. Si vous l’avez désactivé, tout utilisateur anonyme (par opposition aux invités ou aux utilisateurs fédérés) n’aura pas accès au tableau blanc pendant la réunion.
+
+> [!NOTE]
 > Si vous souhaitez que les comptes d’appareils partagés aient accès au Tableau blanc dans les réunions Teams, mais pas aux utilisateurs anonymes, vous pouvez désactiver **les utilisateurs anonymes qui peuvent interagir avec les applications dans les réunions** tout en **activant AllowAnonymousMeetingParticipantsToAccessWhiteboards**
 
 Ces modifications doivent prendre environ 60 minutes pour s’appliquer à l’ensemble de votre location.

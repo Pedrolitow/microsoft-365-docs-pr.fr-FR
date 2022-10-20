@@ -14,15 +14,16 @@ search.appverid:
 ms.collection:
 - Strat_O365_Enterprise
 - purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Découvrez comment Office 365 utilise le chiffrement BitLocker, ce qui réduit le risque de vol de données en raison de la perte ou du vol d’ordinateurs et de disques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9c7d88f3dedb94a4b9abbee58f84aa75fa8c76a
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: d72040d4cac4b76637877482e18a025a160d2484
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68122322"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620654"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker et Distributed Key Manager (DKM) pour le chiffrement
 

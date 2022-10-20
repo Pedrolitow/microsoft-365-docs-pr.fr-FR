@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 ms.audience: Admin
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 ms.localizationpriority: high
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a968a74ab113b79148dfb502091e0c84b485d54a
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 2fbf1cbdeedcbca9a29a8a161bd9bde2c803e97c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68090564"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624882"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Autorisations dans le Portail Microsoft 365 Defender
 

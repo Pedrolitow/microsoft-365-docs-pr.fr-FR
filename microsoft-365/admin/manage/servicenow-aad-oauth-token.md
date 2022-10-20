@@ -18,12 +18,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: 6502e3301dab653c14980acb4e91f2dd8ed2a589
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 724517e0ac268ecc1d857f59b3e0352cecfd1903
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173124"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624838"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>Configurer l’intégration de la prise en charge de Microsoft 365 avec le jeton d’authentification Azure AD
 
@@ -83,7 +83,7 @@ Ces prérequis sont nécessaires pour configurer l’intégration du support Mic
 
     - URL du jeton : `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - URL de redirection : `https://{service-now-instance-name``}.service-now.com/oauth_redirect.do`
+    - URL de redirection : `https://{your-servicenow-instance}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
@@ -95,7 +95,7 @@ Ces prérequis sont nécessaires pour configurer l’intégration du support Mic
 
 1. Accédez au **registre d’applications OAuth &gt; système**.
 
-1. Sélectionnez **Nouveau**, puis **créez un fournisseur Open ID Connect**.
+1. Sélectionnez **Nouveau**, puis **sélectionnez Configurer et fournisseur OIDC pour vérifier les jetons d’ID**.
 
 1. Dans **la configuration du fournisseur OAuth OIDC**, sélectionnez **Rechercher** et créez une nouvelle configuration de fournisseur OIDC sous **oidc\_provider\_configuration.list** avec les valeurs suivantes :
 
@@ -109,7 +109,7 @@ Ces prérequis sont nécessaires pour configurer l’intégration du support Mic
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="Interface utilisateur graphique, texte, description de l’application généré automatiquement":::
 
-1. Créez une application en sélectionnant **Configurer un fournisseur OIDC pour vérifier les jetons d’ID** avec les valeurs suivantes :
+1. Dans cette nouvelle application, renseignez les champs avec les valeurs suivantes :
 
     - Nom : **{Nom du locataire\_}\_API entrante\_d’application\_** (exemple : api entrante\_d’application\_contoso\_)
 
@@ -119,7 +119,7 @@ Ces prérequis sont nécessaires pour configurer l’intégration du support Mic
 
     - Configuration du fournisseur OAuth OIDC : fournisseur OIDC créé à l’étape précédente
 
-    - URL de redirection : `https://{service-now-instance-name}.service-now.com/oauth\_redirect.do`
+    - URL de redirection : `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image25.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image25.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 

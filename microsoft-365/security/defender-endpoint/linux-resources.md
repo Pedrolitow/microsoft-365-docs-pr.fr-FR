@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5e3f8cb9cc826894f816fcebf28ef73213548f22
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: c5b7b70113cdb7ebf0099dd653d0991ed4b788af
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233329"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622997"
 ---
 # <a name="resources"></a>Ressources
 
@@ -146,7 +146,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Gestion de la quarantaine|Ajouter un fichier détecté comme une menace à la mise en quarantaine|`mdatp threat quarantine add --id [threat-id]`|
 |Gestion de la quarantaine|Supprimer un fichier détecté comme une menace de la mise en quarantaine|`mdatp threat quarantine remove --id [threat-id]`|
 |Gestion de la quarantaine|Restaurer un fichier à partir de la mise en quarantaine|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
-|Détection et réponse du point de terminaison|Définir la préversion anticipée (inutilisée)|`mdatp edr early-preview [enable|disable]`|
+|Détection et réponse du point de terminaison|Définir la préversion anticipée |`mdatp edr early-preview [enabled\|disabled]`|
 |Détection et réponse du point de terminaison|Définir l’ID de groupe|`mdatp edr group-ids --group-id [group-id]`|
 |Détection et réponse du point de terminaison|Définir/supprimer une balise, uniquement `GROUP` prise en charge|`mdatp edr tag set --name GROUP --value [tag]`|
 |Détection et réponse du point de terminaison|Exclusions de liste (racine)|`mdatp edr exclusion list [processes|paths|extensions|all]`|

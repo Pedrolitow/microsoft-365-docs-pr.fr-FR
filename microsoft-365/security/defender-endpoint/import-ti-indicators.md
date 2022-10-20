@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 905dfbb9aa8a5aee3af9a8d54fff9f4e0e9e5712
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d22a686d4a1bac29002d15d876daa15f89a410d8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232515"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621117"
 ---
 # <a name="import-indicators-api"></a>API Importer des indicateurs
 
