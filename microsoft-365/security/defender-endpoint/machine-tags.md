@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ffbadd821aa533b870c9e2c7b612a0ea930c5474
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 21c86977c965c63e25822b9248a742ef48e1f647
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226248"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633744"
 ---
 # <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareils
 

@@ -17,15 +17,15 @@ ms.collection:
 - m365solution-scenario
 - highpri
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: df603a3c7739502a1225b8986c4b3282e45d78ca
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5511570e9714b7abe6b289421b517052639a277e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233989"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628134"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer le déploiement de Microsoft Defender pour point de terminaison
 

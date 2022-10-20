@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 1a84ba0441892239ade7373829bba28e28045d27
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: dfc6817679f217cd6f0e77f6be33385d471a459b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233043"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628789"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Gérer les incidents Microsoft Defender pour point de terminaison
 

@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 50b67b70952146d756d4220499ab94e231d621a7
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1ff70c961a8598465634525928b994e2e310c0ea
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233703"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626070"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Créer une règle de notification lorsqu’un script d’intégration ou de désintégrage local est utilisé
 

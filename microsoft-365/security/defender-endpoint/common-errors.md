@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: a96aacfc4c2133b8aae436c97bfd438f2f478123
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: d845be5f3d67ad92c9b1f745c87aa2102a358190
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68142426"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632071"
 ---
 # <a name="common-rest-api-error-codes"></a>Codes d’erreur courants de l’API REST
 

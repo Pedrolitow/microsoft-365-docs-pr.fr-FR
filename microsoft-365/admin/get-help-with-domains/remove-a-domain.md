@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
-ms.openlocfilehash: 71525192b5515a5921882f35c8d75f107726b9cf
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d7dca16ad65e97940b268b300975f242accaf137
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204846"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629300"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
@@ -166,7 +166,7 @@ Pour modifier vos enregistrements NS, consultez [Modifier les serveurs de noms p
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Combien de temps faut-il pour qu'un domaine soit supprimé ?
 
-La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minutes s’il n’est pas référencé dans un grand nombre d’emplacements tels que des groupes de sécurité, des listes de distribution, des utilisateurs et des groupes Microsoft 365. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
+La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à cinq minutes s’il n’est pas référencé dans un grand nombre d’emplacements tels que les groupes de sécurité, les listes de distribution, les utilisateurs, les alias, les boîtes aux lettres partagées, les boîtes aux lettres de ressources et les groupes Microsoft 365. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
 
 If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
 

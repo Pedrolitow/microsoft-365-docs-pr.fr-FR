@@ -13,18 +13,18 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/18/2021
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: db2bddee6bae8c314dfcb1d721f5742a00b04584
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cfbad83a62db423eab510dcde5658974bc781005
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193122"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628244"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurer le délai de blocage du cloud
 

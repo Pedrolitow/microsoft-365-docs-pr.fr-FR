@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 87f73410cfe5eef6d6e161f1943d5af3737cc087
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: f03493e095c639489edbc6f8f14773f8d2a92210
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227347"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635067"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Scénarios de mode de dépannage dans Microsoft Defender pour point de terminaison 
 

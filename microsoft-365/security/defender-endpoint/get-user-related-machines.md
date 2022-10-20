@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 5901e3fbcf5f1506009793cd96f5e7491665d14c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 48acbb210ae97021e9dba87aaf71c36cded48d7b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190592"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628700"
 ---
 # <a name="get-user-related-machines-api"></a>Obtenir l’API des machines associées à l’utilisateur
 

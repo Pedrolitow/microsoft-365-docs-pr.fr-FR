@@ -20,16 +20,16 @@ ms.collection:
 - m365solution-symantecmigrate
 - highpri
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: c5a2ff2a4896f6356aa440abe645d6c8d7756683
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 47f1f54c6e67ee6506729c2808875f0f49c54836
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226446"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625784"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Basculer vers Microsoft Defender pour point de terminaison - Phase 2 : Configuration
 

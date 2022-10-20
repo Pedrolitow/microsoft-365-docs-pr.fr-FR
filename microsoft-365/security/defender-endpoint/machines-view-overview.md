@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8f75da0a4eac19ce74ac26c5cdd38fc8e3644a19
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: da7f840c17c1de69be10a620dded4bdc3180d34d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363186"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628838"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 

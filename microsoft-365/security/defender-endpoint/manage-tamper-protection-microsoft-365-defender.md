@@ -10,7 +10,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 467c415f7912d0e02d3468d842f8cb8e3f871455
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ce36dacb8b16e068dbe6dec483eacbe82ba30fc2
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227105"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627036"
 ---
 # <a name="manage-tamper-protection-for-your-organization-using-microsoft-365-defender-portal"></a>Gérer la protection contre les falsifications pour votre organisation à l’aide du portail Microsoft 365 Defender
 

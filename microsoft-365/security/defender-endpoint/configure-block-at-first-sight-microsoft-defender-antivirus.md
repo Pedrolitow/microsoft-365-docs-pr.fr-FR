@@ -13,17 +13,17 @@ manager: dansimp
 ms.custom: nextgen
 ms.date: 07/11/2022
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 33f8aa1f9fc9ad2411c4705cf92666f7983a2b29
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 79ff6f3b138ee45fce58564394fa79a1466be9ec
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193166"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632907"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 

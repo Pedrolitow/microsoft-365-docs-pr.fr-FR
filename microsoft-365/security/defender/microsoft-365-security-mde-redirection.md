@@ -20,13 +20,13 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.openlocfilehash: 3f7d7bab51a8dfb29b25701ccc87e49b437529ab
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 593a9d05f60f833d259af2fa06a8548272e1a41b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072610"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633524"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirection de comptes de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender
 

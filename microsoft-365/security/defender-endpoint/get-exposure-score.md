@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 63603fb4104b5ee49a6513e180a278846ceb1d6f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e382d3befdb556e4c14a48affa3a8738aa1272d4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180008"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634165"
 ---
 # <a name="get-exposure-score"></a>Obtenir un score d'exposition
 

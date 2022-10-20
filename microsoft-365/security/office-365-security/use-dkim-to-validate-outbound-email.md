@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 ms.date: 04/05/2021
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ee5162af6ce00cb70da78d21b1927e300887f583
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 31eca37a3fa2b8fd47ad2628f940b4938c34c509
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68090418"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640013"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 

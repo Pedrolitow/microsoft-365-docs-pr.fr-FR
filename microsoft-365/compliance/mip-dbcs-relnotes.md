@@ -9,17 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Notes de publication pour la prise en charge des jeux de caractères à double octets.
-ms.openlocfilehash: 593e1db04c5e4dc56bc4cc1a7fd11d907d4fe09d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 3851b0d0b49faecc123704ee2930fbd3d6ce6360
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622412"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631807"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>Prise en charge des notes de publication des jeux de caractères à double octets
 
@@ -31,6 +32,8 @@ ms.locfileid: "66622412"
 - Japanese
 
 Cette prise en charge est disponible pour les types d’informations sensibles et les dictionnaires de mots-clés et sera reflétée dans la protection contre la perte de données Microsoft Purview (pour Exchange Online, Share Point Online, OneDrive Entreprise et Teams), la conformité des communications, la détection automatique dans les applications Office et Microsoft Defender for Cloud Apps.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="known-issues"></a>Problèmes détectés
 
@@ -46,7 +49,7 @@ Cette prise en charge est disponible pour les types d’informations sensibles e
   - « La pièce jointe contient l’un de ces mots »
   - « La pièce jointe contient l’un de ces mots »
 
-- Les stratégies de protection contre la perte de données sont appliquées sur les appareils macOS (préversion) exécutant la version Catalina 10.15 ou ultérieure, à l’exception des conditions mentionnées ci-dessous pour les langues d’Asie orientale, y compris le japonais.
+- Les stratégies de protection contre la perte de données sont applicables sur les appareils macOS (préversion) exécutant trois versions publiées les plus récentes, à l’exception des conditions mentionnées ci-dessous pour les langues d’Asie de l’Est, y compris le japonais.
   - Les numéros à pleine chasse ne sont pas détectés, par exemple à l’aide d’un modèle intégré tel qu’un numéro de compte bancaire japonais
   - Les nombres sans séparateur ne sont pas détectés
   - Les mots clés séparés par un espace demi-chasse ne sont pas détectés pour un type d’informations sensibles. Par exemple : le mot japonais est défini sur le type d’informations sensibles et le dictionnaire n’est pas détecté s’il se trouve dans une phrase

@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f01ae007afc3250b89de4565f2eef3c69949a96f
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 2fd2b81082f4f6af6cbc6d1c4e3e3f5305019e10
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224049"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630071"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour point de terminaison
 

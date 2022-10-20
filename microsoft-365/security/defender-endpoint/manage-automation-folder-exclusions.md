@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7b6a2cdfaf420e04e8964b955934f5aea9ca86f9
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d7dd4fd8fe8961bc18dccc4720effc62de493768
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233109"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633700"
 ---
 # <a name="manage-automation-folder-exclusions"></a>Gérer les exclusions du dossier d’automatisation
 

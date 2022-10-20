@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/09/2022
+ms.date: 10/18/2022
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: mde
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: 8e3603887a7b4c1713c72bfe4640c63d71f44c1b
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 900e3424218cab4ab461339278ca64cbe8837805
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68219099"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628002"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurer des analyses antivirus Microsoft Defender rapides ou complètes
 
@@ -50,6 +50,8 @@ Outre la protection en temps réel et les analyses antivirus à [la demande](run
 - Par défaut, Microsoft Defender Antivirus recherche une mise à jour 15 minutes avant l’heure des analyses planifiées. Vous pouvez [gérer la planification du moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) pour remplacer cette valeur par défaut.
 
 - Si un appareil est débranché et en cours d’exécution sur batterie pendant une analyse complète planifiée, l’analyse planifiée s’arrête avec l’événement 1002, qui indique que l’analyse s’est arrêtée avant la fin. Microsoft Defender Antivirus exécutera une analyse complète à l’heure planifiée suivante.
+
+- Les analyses planifiées s’exécutent en fonction du fuseau horaire local de l’appareil.
 
 ## <a name="quick-scan-full-scan-and-custom-scan"></a>Analyse rapide, analyse complète et analyse personnalisée
 

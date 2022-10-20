@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 manager: dansimp
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 10/13/2022
 ms.reviewer: mkaminska; pahuijbr
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: d49087d5dffd5bd2d726296b68b5407cc487e898
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: edef2df59e0a5bef2b45bc1226084dfdb771adcb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573854"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634429"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 

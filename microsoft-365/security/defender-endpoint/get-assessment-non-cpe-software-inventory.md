@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d284fecce74d56770c59ee6cc21ea8b06aa281bd
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 869342240c81c1a337b5241a0b5e2e8308f843b5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207179"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629718"
 ---
 # <a name="export-non-product-code-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel du code non produit par appareil
 

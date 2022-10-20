@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 528e0580ffa47b4406a48a386ebdb32ba04f6a92
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bedf51ab7dd4a9332b4527c41cd54d2d79480541
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68171034"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638321"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>Rechercher des informations sur l’appareil par API IP interne
 

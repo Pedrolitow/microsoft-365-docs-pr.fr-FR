@@ -14,17 +14,17 @@ ms.date: 10/19/2021
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 2f3b65f5f5b2cac619abf9a302055ebc420c12bb
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: b6beeb4039891403ac8645117d4c55f0c2be9b51
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233505"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626026"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Restaurer des fichiers mis en quarantaine dans l’antivirus Microsoft Defender
 

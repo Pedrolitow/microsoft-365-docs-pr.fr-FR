@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 25eae9cdff9b60d2559e1d9f0f6667d16fc28815
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8cd5900210240e322328aecb0cf28a65166cfe96
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190666"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634143"
 ---
 # <a name="get-file-related-machines-api"></a>Obtenir l’API des machines liées aux fichiers
 

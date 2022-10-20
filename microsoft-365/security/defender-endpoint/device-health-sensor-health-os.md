@@ -17,15 +17,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 611fa76162094b8dd24a56c92f7f3b9b6e75a635
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4c23e28c8f199a2121c531d75a6d6019ef1dc82b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68168398"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632863"
 ---
 # <a name="device-health-sensor-health--os-report"></a>Intégrité de l’appareil, rapport sur l’intégrité du capteur & système d’exploitation
 

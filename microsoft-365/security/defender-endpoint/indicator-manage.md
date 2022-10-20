@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3822f02dcee98f218819f9d9aff80db7f8440eba
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 938f3d67693cabb15049d5ba73c066fa949853bd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228534"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636647"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
