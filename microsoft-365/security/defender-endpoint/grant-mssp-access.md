@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 280bac711494cd06d5fe54784e0f7d27b32e5945
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: fcd01ba8a26f8ff997bfeed94e9f173607135eef
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224533"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637925"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Accorder l’accès au fournisseur de services de sécurité managé (MSSP) (préversion)
 

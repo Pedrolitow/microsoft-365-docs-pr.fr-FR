@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -23,12 +23,12 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 764c3dbe14a384ac5667607d24698c7f2497bd3f
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: ed8d3ed2d210fc8754a0fed6781a63064f9efa7b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68083932"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645052"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configurations des identités Zéro confiance et de l’accès aux appareils
 

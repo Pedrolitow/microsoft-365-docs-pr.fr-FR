@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: ec3cadaa674311f19a08d1455293649c84e84962
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: cae27a4dc7cef385cc1390038d793918896414e4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233461"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641047"
 ---
 # <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de la navigation web
 

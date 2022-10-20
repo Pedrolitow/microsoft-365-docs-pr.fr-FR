@@ -7,7 +7,7 @@ author: MSFTTracyp
 manager: dansimp
 ms.date: 04/23/2018
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - o365_security_incident_response
 - m365-security
@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les règles Outlook et 
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 372959b1522f65a41ed0bd936dd3f4bf93227e2e
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: f7894929a6c104e6f5a23ccfc3dc1b573912e9ce
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048745"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642280"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et corriger les règles Outlook et les attaques par injection de formulaires personnalisés
 

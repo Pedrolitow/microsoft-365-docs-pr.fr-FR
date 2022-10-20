@@ -15,16 +15,16 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2cfbb87d3ce2edad9156f73898fd7765f2aad3f3
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: f343c6b0d1acb409b081e11f65eb6215ac328199
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363318"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647736"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Intégrer des appareils Windows à l’aide de Configuration Manager
 

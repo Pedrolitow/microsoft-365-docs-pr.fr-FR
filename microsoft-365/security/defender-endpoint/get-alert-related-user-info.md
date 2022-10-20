@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d30d67d5212ceb1c95027d98e5a4513c43f6429f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cb8b57469e257a88e0c2fec3a504def9dbcd788d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68169142"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647164"
 ---
 # <a name="get-alert-related-user-information-api"></a>Obtenir l’API d’informations utilisateur associées aux alertes
 

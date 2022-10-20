@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: e3ccfa67a66d9326b945bde49a1ccfc0187879c2
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 0f9bb664fbbbb6a9791ec20c41bf5a2cda874fb5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573019"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643336"
 ---
 # <a name="block-at-first-sight-bafs-demonstration"></a>Démonstration de bloquer à la première consultation (BAFS)
 

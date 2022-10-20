@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 99bf1ffbb7f356434eaaa469cf9e4b7201c7b6e0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f5a63939747234a236901735be1fc0d4a970d299
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200316"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638371"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -56,7 +57,7 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
 
 2. Choisissez **HKEY_LOCAL_MACHINE** dans le menu latéral.
 
-3. Parcourez les menus imbriqués pour accéder aux stratégies **LOGICIELLEs** \>  \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
+3. Parcourez les menus imbriqués pour accéder aux stratégies **LOGICIELLEs** \>  \> **Microsoft** \> **Windows Defender** \> **Policy Manager**.
 
 Si la clé est manquante, accédez à **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
@@ -154,7 +155,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur les ordin
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Network Protection**.
+3. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender Antivirus** \> **Microsoft Defender Exploit Guard** \> **Network Protection**.
 
    > [!NOTE]
    > Sur les versions antérieures de Windows, le chemin d’accès à la stratégie de groupe peut indiquer « antivirus Windows Defender » au lieu de « antivirus Microsoft Defender ».

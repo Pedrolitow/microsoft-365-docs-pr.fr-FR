@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 551c29054747498a1728399b280381cfa7331f23
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 7beb38fc816530b0d44d393feee992d6463d6090
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68157499"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646372"
 ---
 # <a name="alert-resource-type"></a>Type de ressource d’alerte
 

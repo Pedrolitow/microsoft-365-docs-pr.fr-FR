@@ -20,14 +20,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a47884f4918359278b192c3314e5b2374d64f3f
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 44c12c77e141490df39b774e3c3d5f399cb2310d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68362835"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645712"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Comprendre le rapport Defender Experts for Hunting dans Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "68362835"
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender experts pour la chasse couches intelligence humaine et une technologie formée par des experts pour aider Microsoft 365 Defender clients à comprendre les menaces importantes qu’ils font face. Il montre comment les compétences de Defender Expert en matière de chasse aux menaces, une compréhension approfondie du paysage des menaces et la connaissance des menaces émergentes peuvent vous aider à identifier, hiérarchiser et résoudre ces menaces dans votre environnement. 
+Experts Microsoft Defender pour la détection superpose l’intelligence humaine et la technologie formée par des experts pour aider Microsoft 365 Defender clients à comprendre les menaces importantes auxquelles ils sont confrontés. Il montre comment les compétences de Defender Expert en matière de chasse aux menaces, une compréhension approfondie du paysage des menaces et la connaissance des menaces émergentes peuvent vous aider à identifier, hiérarchiser et résoudre ces menaces dans votre environnement. 
 
 Le service Defender Experts for Hunting publie des rapports mensuels pour vous aider à comprendre toutes les menaces que le service de chasse a exposées dans votre environnement, ainsi que les alertes générées par vos produits Microsoft 365 Defender.
 
@@ -57,7 +57,7 @@ Chaque section du rapport est conçue pour fournir des insights supplémentaires
 
 Reportez-vous à la capture d’écran suivante d’un exemple de rapport :
 
-![Capture d’écran d’un rapport Microsoft Defender Experts pour la chasse dans Microsoft 365 Defender portail.](../../media/mte/defenderexperts/defender-experts-report.png)
+![Capture d’écran d’un rapport Experts Microsoft Defender pour la détection dans Microsoft 365 Defender portail.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Afficher les notifications des experts Defender
 

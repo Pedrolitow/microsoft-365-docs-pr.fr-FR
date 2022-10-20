@@ -14,17 +14,17 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: a53e024218cd8ef81b9310107d12838bb400603f
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 238fe0e3b1ec061736cab53e0f55fe49e5d966d7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503993"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638783"
 ---
 # <a name="attack-surface-reduction-asr-rules-reference"></a>Référence des règles de réduction de la surface d’attaque (ASR)
 

@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 6c9ecdb939c3b40a5ae6a4a5d60483b641952504
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 99ca9e1ec459551f67888e4371b82afebfd4fc08
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233967"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644304"
 ---
 # <a name="remove-app-restriction-api"></a>Supprimer l’API de restriction d’application
 

@@ -13,7 +13,7 @@ author: dcurwin
 manager: dansimp
 ms.date: 07/06/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: dff0aca75740441d60f148d35eb27873e5ccaea0
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b9297de25d99b14da9326ea594b7907340f60522
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68075467"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645569"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft Defender pour Identity dans Microsoft 365 Defender
 

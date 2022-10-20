@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/27/2022
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: efe0701a8108e1fe25991bbad4f7fb82af98b6ad
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9d07abfee0e40df25d976ee5aa6df0f86e897976
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207289"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642984"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>MICROSOFT DEFENDER POUR POINT DE TERMINAISON API à l’aide de PowerShell
 

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 2beb52d4d307bf9fab3e8f9e9857f82bb281e586
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6f5c91ff837213f0824fbc2f2b149430ea9b3266
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68174905"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643006"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>Intégrer avec Microsoft Defender pour IoT
 

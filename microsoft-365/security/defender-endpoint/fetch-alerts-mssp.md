@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1afc1527a352a6257345dfea829828c61162d560
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 364e3a57ad590c5be36ed8ef044fac31e01738ab
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180059"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641435"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du locataire client MSSP
 

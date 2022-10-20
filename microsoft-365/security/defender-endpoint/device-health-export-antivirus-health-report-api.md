@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 53562757025102c4f62e7d22b246892e5f54da56
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6742c4518cece4b9f8bb920a4411accf973cad93
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207443"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643116"
 ---
 # <a name="export-device-antivirus-health-report"></a>Exportation du rapport de santé antivirus de l'appareil
 

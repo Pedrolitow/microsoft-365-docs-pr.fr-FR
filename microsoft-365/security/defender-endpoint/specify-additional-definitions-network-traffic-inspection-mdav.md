@@ -15,17 +15,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 53bf1b15e2d9b76e755c3c8484c0b1f1b7ad5043
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 25a1fcc55a564d734f64b587474ff6a5610ffaaf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221739"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646130"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau
 

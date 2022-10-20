@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: f913d45e943ad73f95a7542451d712a6eab436af
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4ed0f968eb9dd163e90edcdee856add7d99c7853
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190724"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647014"
 ---
 # <a name="get-file-information-api"></a>Obtenir l’API d’informations sur les fichiers
 

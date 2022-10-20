@@ -18,15 +18,15 @@ ms.collection:
 - m365-security
 - m365initiative-m365-defender
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: e3d34f5ed3c62c8f41c4b304215d819345da4146
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 6078124ff5d66b05af1f6f1e9266e52ec43db98c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68089188"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643996"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherche proactive des menaces avec repérage avancé dans Microsoft 365 Defender
 

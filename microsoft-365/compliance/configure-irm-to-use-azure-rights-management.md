@@ -15,15 +15,16 @@ search.appverid:
 ms.assetid: 1b1f8c8b-f3b4-439b-910c-cf2f89a07a15
 ms.collection:
 - purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations sur Chiffrement de messages Microsoft Purview.
-ms.openlocfilehash: 4ac78e623470fc6c096b6e4ecd40bf74732d74a1
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: d136bbb01143847771fb404328ccb930329833e8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68122864"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647802"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurer IRM pour utiliser Azure Rights Management
 

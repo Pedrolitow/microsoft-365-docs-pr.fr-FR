@@ -13,7 +13,7 @@ author: dansimp
 manager: dansimp
 ms.date: 04/21/2021
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 23e79f77c3ef84cd464a4425953311ddf179b86e
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: ab130af9f0212d444d6caa2228ddd4e1d669f9be
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072654"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640585"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender pour point de terminaison dans Microsoft 365 Defender
 

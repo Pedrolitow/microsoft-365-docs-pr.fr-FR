@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ee800ab745a83219da8052a8681aa1f405356cf3
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 9412dec5731058b526e28a750e181b331111e05a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232691"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635309"
 ---
 # <a name="configure-general-defender-for-endpoint-settings"></a>Configurer les paramètres généraux de Defender pour point de terminaison
 

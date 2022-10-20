@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 572c24f1147dacf5e2c96bffceb0eb999d141a0a
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: f3933df20e0f2e63729a62c625af02d93d929dd5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537135"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641334"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Intégrer des appareils Windows dans Azure Virtual Desktop
 

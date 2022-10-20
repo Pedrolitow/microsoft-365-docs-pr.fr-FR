@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 95b8a23eb24a9b7f467ce7877e9d5eab19eb8dd7
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cf54d230f99ffc9394ad3814ac46e3f41546b173
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173652"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638233"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 

@@ -15,7 +15,7 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - m365solution-asr-rules
@@ -23,12 +23,12 @@ ms.collection:
 - tier1
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: ecd5b5cc93d1068ce42ba4f7ca6b5a33748b2a18
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: 2682fa5f877e429f515aa16b647098c5fe14c188
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495076"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638827"
 ---
 # <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Planifier le déploiement des règles de réduction de surface d’attaque (ASR)
 

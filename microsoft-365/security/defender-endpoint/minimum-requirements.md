@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 23c02b6df071c8eabd21ecce48d5d0ec2c33e3a2
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 530a10beecab3c0f371db7a607e1b2a5d441c5a9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232207"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635419"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Exigences minimales pour Microsoft Defender pour point de terminaison
 
@@ -44,7 +44,7 @@ Il existe des exigences minimales pour l’intégration d’appareils au service
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Les versions autonomes de [Defender pour point de terminaison Plan 1 et Plan 2](defender-endpoint-plan-1-2.md), même lorsqu’elles sont incluses dans le cadre d’autres plans Microsft 365, n’incluent pas de licences serveur. Pour intégrer des serveurs à ces plans, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus, consultez la vue d’ensemble de [Microsoft Defender pour les serveurs](/azure/defender-for-cloud/defender-for-servers-introduction).
+Les versions autonomes de [Defender pour point de terminaison Plan 1 et Plan 2](defender-endpoint-plan-1-2.md), même lorsqu’elles sont incluses dans le cadre d’autres plans Microsoft 365, n’incluent pas de licences serveur. Pour intégrer des serveurs à ces plans, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus, consultez la vue d’ensemble de [Microsoft Defender pour les serveurs](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 Pour plus d’informations sur les exigences en matière de licences pour Microsoft Defender pour point de terminaison, consultez [Microsoft Defender pour point de terminaison informations sur les licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -88,7 +88,8 @@ L’accès à Defender pour point de terminaison s’effectue via un navigateur,
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 ou ultérieure
-  - Windows Server 2019
+  - Windows Server 2019 et versions ultérieures
+  - Windows Server 2019 Core Edition
   - Windows Server 2022
 - Windows Virtual Desktop
 - Windows 365

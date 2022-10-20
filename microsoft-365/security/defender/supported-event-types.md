@@ -17,13 +17,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 84923e4940585a5c98dead3d7f09a6bcf078bf06
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.topic: conceptual
+ms.openlocfilehash: 2bcd6ad83cbffca69f4b26c0088c7fe6b996c93d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565923"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640519"
 ---
 # <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>Prise en charge Microsoft 365 Defender types d’événements de streaming dans l’API de streaming d’événements
 

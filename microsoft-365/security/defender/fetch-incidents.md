@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection:
 - m65-security-compliance
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
-ms.openlocfilehash: bdd3065b7d0699ae90d7e1ec9799fd176af508b3
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 968fbce5b913835b303246144fe049761b8d2bf9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072698"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645602"
 ---
 # <a name="fetch-microsoft-365-defender-incidents"></a>Récupérer les incidents Microsoft 365 Defender 
 

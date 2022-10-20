@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 5e8f971a02ec0ec019d239460f32d4eb7ae289a5
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 7b8a4837e347bbb8b7c813549edf63f24b0d2453
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573612"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638453"
 ---
 # <a name="cloud-delivered-protection-demonstration"></a>Démonstration de la protection fournie par le cloud
 
