@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 027ce4e88d142b08115f664aff6c9ade9742bf25
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d46400787d98cf3bf7620ae9003b9fd47e581381
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225237"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644150"
 ---
 # <a name="respond-to-web-threats"></a>Répondre aux menaces web
 

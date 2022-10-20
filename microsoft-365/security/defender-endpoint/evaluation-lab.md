@@ -16,15 +16,15 @@ ms.collection:
 - m365solution-evalutatemtp
 - highpri
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e939fc616c2ffc0120fcfa5fcba5366b46f4e7ac
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b1525f13f0b870ac7bdf2fb98e4a74f4111b8c96
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201680"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630685"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>laboratoire d’évaluation Microsoft Defender pour point de terminaison
 

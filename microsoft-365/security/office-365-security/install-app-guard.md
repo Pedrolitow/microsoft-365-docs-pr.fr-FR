@@ -7,7 +7,7 @@ ms.author: maccruz
 author: schmurky
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.collection: m365-security
 description: Obtenez la dernière version de l’isolation basée sur le matériel. Empêchez les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5213703a3c0793334f7131a4a2882057f7decc19
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 14f5cdffb0bc7aeeda6fac383c8d716260dba15e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565507"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633215"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protection d'application pour Office pour les administrateurs
 

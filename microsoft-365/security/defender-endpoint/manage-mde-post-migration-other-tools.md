@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 9d70c8f58bd49335ec6c2071a13efad62070d8d8
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: e7ed6cf607d22c7e4a624aa22947a3b2b4925752
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233637"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633590"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Gérer Microsoft Defender pour point de terminaison avec PowerShell, WMI et MPCmdRun.exe
 

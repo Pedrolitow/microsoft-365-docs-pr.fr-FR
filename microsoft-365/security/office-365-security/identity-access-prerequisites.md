@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -22,12 +22,12 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 02b5bfc9c4a1384996b4fbf305f6a212a6ac3e6c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 17f605e368f523d40aacaf7a5d301aadb7c3e27d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68054971"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624970"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Travail requis pour implémenter Confiance nulle stratégies d’identité et d’accès aux appareils
 

@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.collection:
 description: En savoir plus sur la validation des messages signés DKIM dans Exchange Online Protection et Exchange Online
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f615304f18cbc4ed09e6915a0507baaca7360c9b
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 410180d764d0ed96d1cb13fe3c2a39604604778a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048525"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633127"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Prise en charge de la validation des messages signés DKIM
 

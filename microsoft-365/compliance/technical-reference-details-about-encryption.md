@@ -10,22 +10,22 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
-- Strat_O365_IP
+- tier1
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Découvrez les différents certificats, technologies et suites de chiffrement TLS (Transport Layer Security) utilisés pour le chiffrement dans Office 365 et Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b5df1f9e983ab2e8add09b50c2dfbd30dc1243e
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: a26d54a4532c7c6fe5c07f59368bd143a53b5285
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67679304"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644744"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Détails techniques de référence sur le chiffrement
 
@@ -34,6 +34,8 @@ Reportez-vous à cet article pour en savoir plus sur les certificats, les techno
 - Si vous recherchez des informations de vue d’ensemble, consultez [Chiffrement dans Office 365](encryption.md).
 - Si vous recherchez des informations d’installation, consultez [Configurer le chiffrement dans Office 365 Entreprise](set-up-encryption.md).
 - Pour plus d’informations sur les suites de chiffrement prises en charge par des versions spécifiques de Windows, consultez [Suites de chiffrement dans TLS/SSL (Schannel SSP).](/windows/desktop/SecAuthN/cipher-suites-in-schannel)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Gestion et propriété de certificats Microsoft Office 365
 

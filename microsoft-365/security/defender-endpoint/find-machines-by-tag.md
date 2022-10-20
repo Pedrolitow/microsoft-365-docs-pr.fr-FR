@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: f1ebce553d82273fb9d17d686d84f487ff3cf743
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 12cc979056856d8bf6242c38366be0b83744ba9d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201629"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627417"
 ---
 # <a name="find-devices-by-tag-api"></a>Rechercher des appareils par API de balise
 

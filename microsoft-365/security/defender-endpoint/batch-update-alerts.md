@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 502d5a72fdde17a18f11cf9a3e20069a6664e677
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: f0ad2f2892433dd145cf991caa181b2e84bb2d10
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68153320"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630115"
 ---
 # <a name="batch-update-alerts"></a>Alertes de mise à jour par lot
 

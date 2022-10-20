@@ -18,14 +18,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
-ms.openlocfilehash: 3d44c157cb14b7438ffe40c74354a890c0b4b070
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 9db5698699385cafe02ab74c49e8070e3cd92678
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68147512"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621845"
 ---
 # <a name="cancel-machine-action-api"></a>API Annuler l’action de l’ordinateur
 

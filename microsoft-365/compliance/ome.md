@@ -13,24 +13,26 @@ ms.date: 02/07/2020
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation.
-ms.openlocfilehash: 0501aeb833d41048e6e3f8848f20b3e4b0bc217b
-ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
+ms.openlocfilehash: 7d08c865735c3ae8f9e6396940b03af4625aad0e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "67427111"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644832"
 ---
 # <a name="message-encryption"></a>Chiffrement des messages
 
-Les messageries électroniques sont souvent utilisées pour échanger des informations sensibles. Par exemple : rapports et états financiers, contrats juridiques, informations confidentielles sur des produits, comptes rendus et prévisions de ventes, données médicales relatives à des patients ou informations sur les clients et le personnel. Il s'en suit que les boîtes aux lettres deviennent vite des référentiels contenant de gros volumes d'informations potentiellement sensibles. C'est pourquoi, toute fuite d'informations peut constituer une véritable menace pour votre organisation.
+People often use email to exchange sensitive information, such as financial data, legal contracts, confidential product information, sales reports and projections, patient health information, or customer and employee information. As a result, mailboxes can become repositories for large amounts of potentially sensitive information and information leakage can become a serious threat to your organization.
 
 Avec chiffrement de messages Office 365, votre organisation peur envoyer et recevoir des messages chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo !, Gmail et d’autres services de messagerie. Le chiffrement de messages vous permet de vous assurer que seuls les destinataires prévus peuvent afficher le contenu des courriers.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-message-encryption-works"></a>Fonctionnement du chiffrement des messages
 
@@ -48,7 +50,7 @@ Pour obtenir une liste détaillée des différences entre la version précédent
 
 Lorsqu’une personne envoie un e-mail qui correspond à une règle de flux de messagerie de chiffrement, le message est chiffré avant d’être envoyé. Tous les utilisateurs finaux de Microsoft 365 qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives et de première classe pour les messages chiffrés et protégés par des droits, même s’ils ne font pas dans la même organisation que l’expéditeur. Les clients Outlook pris en charge incluent Outlook Desktop, Outlook Mac, Outlook Mobile sur iOS et Android, et Outlook sur le web (anciennement Outlook Web App).
 
-Les destinataires de messages chiffrés qui reçoivent des messages chiffrés ou protégés par des droits envoyés à leurs comptes Outlook.com, Gmail et Yahoo reçoivent un wrapper qui les dirige vers le portail de messages chiffrés où ils peuvent facilement s’authentifier à l’aide d’un compte Microsoft, de Gmail ou d’informations d’identification Yahoo.
+Les destinataires de messages chiffrés qui reçoivent des messages chiffrés ou protégés par des droits envoyés à leurs comptes Gmail et Yahoo reçoivent un wrapper qui les dirige vers le portail OME où ils peuvent facilement s’authentifier à l’aide d’un compte Microsoft, de Gmail ou d’informations d’identification Yahoo.
 
 Les utilisateurs finaux qui lisent des messages chiffrés ou protégés par des droits sur des clients autres qu’Outlook utilisent également le portail de messages chiffrés pour afficher les messages chiffrés et protégés par des droits qu’ils reçoivent.
 

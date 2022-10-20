@@ -17,15 +17,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: ec5703664a1949ab763ef7d676655934b13041b9
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8e3f9c132daf5b26f110056a77acad5a3da524da
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68209731"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647538"
 ---
 # <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 

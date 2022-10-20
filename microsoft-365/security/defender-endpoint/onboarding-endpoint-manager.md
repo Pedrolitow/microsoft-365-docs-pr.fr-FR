@@ -17,15 +17,15 @@ ms.collection:
 - m365solution-scenario
 - highpri
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 596488f105e2b7be1c6047a37cca7a2fbc297c79
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: b488891950eb789f82933b07a580745718371b26
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564014"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635353"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 

@@ -7,7 +7,7 @@ author: kccross
 manager: laurawi
 ms.date: 6/29/2018
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ ms.custom:
 description: Cet article explique les modifications apportées aux fonctionnalités de protection dans Azure Information Protection
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 18342febeb31f690cb557235ad5b07f15da3c23e
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: d26b4b3567c76e8a6384a6ec420562839d9cc2b1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68084152"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622175"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Fonctionnalités de protection dans Azure Information Protection déployées sur des locataires existants
 

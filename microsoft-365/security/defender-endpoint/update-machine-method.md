@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 24a346074c32810b4c00a3c9386a4273ba5176c4
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 640a5ec91fbfefe674f692e29ef9544dc54f14e1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225479"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644218"
 ---
 # <a name="update-machine"></a>Mettre à jour l’ordinateur 
 
@@ -91,7 +91,7 @@ Pour de meilleures performances, vous ne devez pas inclure les valeurs existante
 
 Propriété|Type|Description
 :---|:---|:---
-machineTags|String collection|Ensemble de balises [d’ordinateur](machine.md) .
+machineTags|Collection de chaînes|Ensemble de balises [d’ordinateur](machine.md) .
 deviceValue|Énumération nullable|[Valeur de l’appareil](tvm-assign-device-value.md). Les valeurs possibles sont : ' Normal', 'Low' et 'High'.
 
 ## <a name="response"></a>Réponse

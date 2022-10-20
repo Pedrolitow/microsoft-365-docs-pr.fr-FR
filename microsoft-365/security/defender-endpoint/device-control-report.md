@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: deniseb
 author: denisebmsft
 ms.reviewer: dansimp
-ms.topic: article
+ms.topic: conceptual
 manager: dansimp
 audience: ITPro
 ms.subservice: mde
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: 245e49f22f4846c0a48a2ebfb0855a07d0b66841
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 451e255e09e87493c895f57d330ca957e01196b8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68210127"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620456"
 ---
 # <a name="device-control-report"></a>Rapport de contrôle d’appareil
 

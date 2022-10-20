@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la configuration et de la sécurisation des appareils gérés contre les menaces de sécurité et les cyberattaques. Implémentez des défenses de cybersécurité et une protection des points de terminaison par le biais de l’inscription et de l’intégration de tous les appareils. Découvrez comment configurer des stratégies d’appareil et gérer des groupes d’appareils.
-ms.openlocfilehash: c93d8bc41be59b370ec67c2807aa02c10c87fea8
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: a12dc38ecd744509351951e9ea7f7c3a7b36eea1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68097970"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621933"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configurer et sécuriser des appareils gérés
 
@@ -41,7 +41,7 @@ Vos objectifs sont les suivants :
 - [Mettez à niveau les appareils Windows exécutant Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel vers Windows 10 ou 11 Professionnel](m365bp-upgrade-windows-10-pro.md).
 - [Intégrer des appareils à Defender entreprise et appliquer des stratégies de sécurité](m365bp-onboard-devices-mdb.md).
 - [Utilisez Windows Autopilot pour configurer et configurer de nouveaux appareils, ou pour réinitialiser, réaffecter et récupérer des appareils](/mem/autopilot/windows-autopilot).
-- [Installer Microsoft 365 Apps](../admin/setup/install-applications.md) sur tous les appareils qui n’ont pas encore d’applications Office
+- [Installer Microsoft 365 Apps](../admin/setup/install-applications.md) sur tous les appareils qui n’ont pas encore d’applications Microsoft 365
 
 Une fois ces objectifs atteints, votre mission globale de protection de l’organisation contre les cyberattaques et les autres menaces de cybersécurité est accomplie ! À présent, veillez à configurer vos équipes d’intervention pour gérer toute situation susceptible de survenir tout en défendant l’intégrité du système. Découvrez les étapes suivantes !
 

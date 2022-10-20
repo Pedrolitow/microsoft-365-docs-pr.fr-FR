@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 for frontline workers - affiches de scénario
-description: Découvrez les scénarios que vous pouvez facilement implémenter pour les travailleurs de première ligne de votre organisation avec ces affiches téléchargeables.
+description: Téléchargez ces affiches PDF pour en savoir plus sur les scénarios que vous pouvez facilement implémenter pour les employés de première ligne de votre organisation.
 search.appverid: MET150
 author: samanro
 ms.author: samanro
@@ -14,20 +14,23 @@ ms.collection:
 - highpri
 - m365solution-frontline
 - m365solution-scenario
+- EngageScoreOct2022
 ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 3cdc1433e419a8179d4de60465788602e4f1b532
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 056590f985c6fc4d0d5653e61beae5989e2f0084
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082458"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644678"
 ---
 # <a name="microsoft-365-for-frontline-workers---scenario-posters"></a>Microsoft 365 for frontline workers - affiches de scénario
 
-Utilisez ces vues d’ensemble de scénarios pour commencer à envisager ce que votre organisation peut faire avec Microsoft 365 pour les employés de première ligne, puis suivez les liens pour savoir comment implémenter ces scénarios. Vous pouvez télécharger ces affiches au format PDF ou Visio et les personnaliser pour votre organisation.
+Utilisez ces présentations de scénario pour commencer à envisager ce que votre organisation peut faire avec Microsoft 365 for frontline workers. Vous pouvez télécharger ces affiches au format PDF ou Visio et les personnaliser pour votre organisation.
+
+Pour en savoir plus sur la façon dont Microsoft 365 peut aider vos employés de première ligne, consultez [Choisir vos scénarios pour Microsoft 365 for frontline workers](flw-choose-scenarios.md). Pour en savoir plus sur la planification et l’implémentation de scénarios, consultez [le Guide de planification technique pour le déploiement de solutions de première ligne (livre blanc).](flw-technical-planning-guide-deployment.md)
 
 ## <a name="scenarios-for-frontline-workers"></a>Scénarios pour les travailleurs de première ligne
 

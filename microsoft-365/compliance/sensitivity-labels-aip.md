@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour Office 365 applications, comprenez la migration du complément Azure Information Protection (AIP) vers l’étiquetage intégré pour protéger les données sensibles.
-ms.openlocfilehash: b2cf7289bd93d29494625f23bc77cd759fc50920
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 80cc5a22f3fe604f2579b321bd12546502386988
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547793"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644766"
 ---
 # <a name="migrate-the-azure-information-protection-aip-add-in-to-built-in-labeling-for-office-apps"></a>Migrer le complément Azure Information Protection (AIP) vers l’étiquetage intégré pour les applications Office
 
@@ -146,6 +146,8 @@ Si, après avoir apporté ces modifications, le bouton **Confidentialité** ne s
 Dans les [versions plus récentes d’Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps), le complément AIP est désactivé par défaut. Pour l’activer, vous devez configurer un nouveau paramètre Office sous **Configuration utilisateur/Modèles d’administration/Microsoft Office 2016/Paramètres de sécurité** :
 
 - **Utilisez le complément Azure Information Protection pour l’étiquetage de confidentialité**. Définissez la valeur sur **1**.
+
+Ce nouveau paramètre est toujours en cours de déploiement. Si vous ne le voyez pas encore, patientez encore quelques jours et réessayez.
 
 Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](/DeployOffice/overview-office-cloud-policy-service).
 

@@ -12,16 +12,18 @@ author: alekyaj
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ea8f6cb27f85860532aa449f6bb7eda2187bfa36
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 60010492f7f59a380b274f2b7d3f4a3cea1b2a93
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492749"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646108"
 ---
 # <a name="technological-partners-of-microsoft-365-defender"></a>Partenaires technologiques de Microsoft 365 Defender
 

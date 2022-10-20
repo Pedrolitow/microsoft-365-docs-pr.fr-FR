@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 6d733c7b27528a25097bd8aa666f14a60989cbfc
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: de510420a3d4f91fc713e2514f9d0f88b609d479
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221035"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625146"
 ---
 # <a name="microsoft-safety-scanner-download"></a>téléchargement Scanner de sécurité Microsoft
 
@@ -46,7 +46,7 @@ Scanner de sécurité Microsoft est un outil d’analyse conçu pour rechercher 
 
 ## <a name="system-requirements"></a>Configuration requise
 
-Le scanneur de sécurité permet de supprimer les logiciels malveillants des ordinateurs exécutant Windows 11, Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008. Pour plus d’informations, reportez-vous à la politique de [cycle de vie Microsoft](/lifecycle/).
+Le scanneur de sécurité permet de supprimer les logiciels malveillants des ordinateurs exécutant Windows 11, Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012 ou Windows Server 2008 R2. Pour plus d’informations, reportez-vous à la politique de [cycle de vie Microsoft](/lifecycle/).
 
 ## <a name="how-to-run-a-scan"></a>Comment exécuter une analyse
 

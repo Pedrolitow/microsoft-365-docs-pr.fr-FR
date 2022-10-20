@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: b0593bb5ada76274a4fa53ec2877087352bf6afb
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: d3b38a9125979f33e4d22277b8967f4f3d37c349
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533461"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621359"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
 
@@ -49,7 +49,7 @@ Avant de commencer, vous devez configurer vos paramètres DLP.
 
 ### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Paramètres de point de terminaison DLP Windows 10/11 et macOS
 
-|Setting |Windows 10, 1809 et ultérieures, Windows 11  |macOS Catalina 10.15 ou version ultérieure |Notes  |
+|Setting |Windows 10, 1809 et ultérieures, Windows 11  |macOS (trois dernières versions publiées) |Notes  |
 |---------|---------|---------|---------|
 |Exclusions de chemin d’accès de fichier     |Pris en charge         |Pris en charge         |macOS inclut une liste recommandée d'exclusions activée par défaut          |
 |Applications restreintes     |Pris en charge         |Pris en charge         |         |
@@ -241,19 +241,58 @@ Pour les appareils macOS, vous devez ajouter le chemin d’accès complet au fic
 > [!NOTE]
 > Le paramètre **Domaines de service** s’applique uniquement aux fichiers téléchargés à l’aide de Microsoft Edge ou de Google Chrome avec l’[extension Microsoft Purview](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installée.
 
-Vous pouvez déterminer si les fichiers sensibles protégés par vos stratégies peuvent être téléchargés vers des domaines de service spécifiques à partir de Microsoft Edge.
+Vous pouvez contrôler si les fichiers sensibles protégés par vos stratégies peuvent être chargés vers des domaines de service spécifiques à partir de Microsoft Edge.
 
-Si le mode liste est défini sur **Bloquer**, l’utilisateur ne peut pas charger d’éléments sensibles dans ces domaines. Lorsqu’une action de téléchargement est bloquée parce qu’un élément correspond à une stratégie DLP, DLP génère un avertissement ou bloque le téléchargement de l’élément sensible.
+##### <a name="allow"></a>Autoriser
 
-Si le mode liste est défini sur **Autoriser**, les utilisateurs peuvent charger des éléments sensibles **_uniquement_** vers ces domaines, et l’accès au chargement vers tous les autres domaines n’est pas autorisé.
+Lorsque la liste **des domaines de service** est définie sur **Autoriser**, les stratégies DLP ne sont pas appliquées lorsqu’un utilisateur tente de charger un fichier sensible dans l’un des domaines de la liste.
+
+Si le mode liste est défini sur **Autoriser**, toute activité utilisateur impliquant un élément sensible et un domaine figurant dans la liste est auditée. L’activité est autorisée. Lorsqu’un utilisateur tente une activité impliquant un élément sensible et un domaine qui *ne figure pas* dans la liste, les stratégies DLP et les actions définies dans les stratégies sont appliquées.
+
+Par exemple, avec cette configuration :
+
+- Le mode de liste **des domaines de** service est défini sur **Autoriser**.
+    - Contoso.com est sur la liste.
+-  Une stratégie DLP est définie sur **Bloquer** le chargement d’éléments sensibles qui contiennent des numéros de carte de crédit.
+ 
+L’utilisateur tente de :
+
+- Chargez un fichier sensible avec des numéros de carte de crédit sur contoso.com.
+    - L’activité utilisateur est autorisée, auditée, un événement est généré, mais elle ne répertorie pas le nom de la stratégie ou le nom de la règle de déclenchement dans les détails de l’événement, et aucune alerte n’est générée. 
+
+mais si un utilisateur tente de : 
+
+- Chargez un fichier sensible avec des numéros de carte de crédit sur wingtiptoys.com (qui ne figure pas dans la liste).
+    - La stratégie est appliquée et l’activité de l’utilisateur est bloquée. Un événement est généré et une alerte est générée. 
+ 
+##### <a name="block"></a>Bloquer
+ 
+Lorsque la liste **des domaines de service** est définie sur **Bloquer**, les stratégies DLP sont appliquées lorsqu’un utilisateur tente de charger un fichier sensible dans l’un des domaines de la liste.
+
+Si le mode liste est défini sur **Bloquer**, lorsqu’un utilisateur tente une activité impliquant un élément sensible et un domaine figurant dans la liste, les stratégies DLP et les actions définies dans les stratégies de police sont appliquées. Toute activité impliquant un élément sensible et un domaine qui ne figure pas dans la liste est auditée et l’activité utilisateur est autorisée.
+
+Par exemple, avec cette configuration :
+
+- Le mode de liste **des domaines de** service est défini sur **Bloquer**.
+    - Contoso.com est sur la liste.
+-  Une stratégie DLP est définie sur **Bloquer avec remplacement** pour le chargement d’éléments sensibles qui contiennent des numéros de carte de crédit.
+ 
+L’utilisateur tente de :
+
+- Chargez un fichier sensible avec des numéros de carte de crédit sur contoso.com.
+    - L’activité de l’utilisateur est bloquée, mais l’utilisateur peut remplacer le bloc, un événement est généré et une alerte est déclenchée.
+
+mais si un utilisateur tente de : 
+
+- Chargez un fichier sensible avec des numéros de carte de crédit sur wingtiptoys.com (qui ne figure pas dans la liste).
+    - La stratégie *n’est pas* appliquée et l’activité de l’utilisateur est auditée. Un événement est généré, mais il ne répertorie pas le nom de la stratégie ou le nom de la règle de déclenchement dans les détails de l’événement, et aucune alerte n’est générée. 
 
 > [!IMPORTANT]
 > Lorsque le mode de restriction de service est configuré sur « Autoriser », vous devez configurer au moins un domaine de service avant l’application des restrictions.
 
-Utiliser le format de nom de domaine complet du domaine de service sans la fin `.` 
+Utilisez le format FQDN du domaine de service sans fin `.` lorsque vous ajoutez un domaine à la liste.
 
 Par exemple :
-
 
 | Input | Comportement de correspondance des URL |
 |---|---|

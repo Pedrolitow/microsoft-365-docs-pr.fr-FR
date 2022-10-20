@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1afe71e8a25b0c623be2039c471c75d707c5c50a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: a7b880f1e5636eff5e271211cc8bada3979f15fa
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226534"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644568"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’envoi ou de mise à jour de l’indicateur
 

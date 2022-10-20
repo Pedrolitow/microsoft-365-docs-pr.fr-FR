@@ -13,17 +13,18 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
+- tier3
 - Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: Dans cet article, vous allez découvrir les risques liés à Office 365 et les technologies de chiffrement disponibles pour la protection.
-ms.openlocfilehash: 3e57ac67506320d549b0ff3208c6763b046367bb
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7afb32e0676bde43032490a82650bff1ab1bb25c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635170"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620522"
 ---
 # <a name="encryption-risks-and-protections"></a>Protections et les risques de chiffrement
 
@@ -41,9 +42,11 @@ Certains scénarios à risque et les technologies de chiffrement actuellement di
 | TLS entre Microsoft 365 et les clients | Exchange Online, SharePoint Online, OneDrive Entreprise, Skype Entreprise, Teams et Yammer | Microsoft, Customer | Attaque de l’intercepteur ou d’une autre attaque pour appuyer sur le flux de données entre Microsoft 365 et les ordinateurs clients sur Internet. | Cette implémentation apporte de la valeur à Microsoft et aux clients et garantit l’intégrité des données au fur et à mesure qu’elles transitent entre Microsoft 365 et le client. |
 | TLS entre les centres de données Microsoft | Exchange Online, SharePoint Online, OneDrive Entreprise et Skype Entreprise | Microsoft | Attaque de l’intercepteur ou d’une autre attaque pour appuyer sur le flux de données client entre les serveurs Microsoft 365 situés dans différents centres de données Microsoft. | Cette implémentation est une autre méthode pour protéger les données contre les attaques entre les centres de données Microsoft. |
 | Azure Rights Management (inclus dans Microsoft 365 ou Azure Information Protection) | Exchange Online, SharePoint Online et OneDrive Entreprise | Client | Les données sont entre les mains d’une personne qui ne doit pas avoir accès aux données. | Azure Information Protection utilise Azure RMS, qui offre de la valeur aux clients à l’aide de stratégies de chiffrement, d’identité et d’autorisation pour sécuriser les fichiers et les e-mails sur plusieurs appareils. Azure RMS offre une valeur ajoutée aux clients où tous les e-mails provenant de Microsoft 365 qui correspondent à certains critères (c’est-à-dire tous les e-mails à une certaine adresse) peuvent être chiffrés automatiquement avant d’être envoyés à un autre destinataire. |
-| S/MIME | Exchange Online | Client | Le courrier électronique tombe entre les mains d’une personne qui n’est pas le destinataire prévu. | S/MIME apporte de la valeur aux clients en veillant à ce que les e-mails chiffrés avec S/MIME ne puissent être déchiffrés que par le destinataire direct de l’e-mail. |
-| Chiffrement de messages Office 365 | Exchange Online, SharePoint Online | Client | Le courrier électronique, y compris les pièces jointes protégées, tombe entre les mains d’une personne à l’intérieur ou à l’extérieur de Microsoft 365 qui n’est pas le destinataire prévu de l’e-mail. | OME offre une valeur ajoutée aux clients où tous les e-mails provenant de Microsoft 365 qui correspondent à certains critères (c’est-à-dire tous les e-mails à une certaine adresse) sont automatiquement chiffrés avant d’être envoyés à un autre destinataire interne ou externe. |
-| SMTP TLS avec l’organisation partenaire | Exchange Online | Client | Le courrier électronique est intercepté par le biais d’une attaque de l’intercepteur ou d’une autre attaque en transit d’un locataire Microsoft 365 vers une autre organisation partenaire. | Ce scénario offre une valeur ajoutée au client afin qu’il puisse envoyer/recevoir tous les e-mails entre son locataire Microsoft 365 et l’organisation de messagerie de son partenaire à l’intérieur d’un canal SMTP chiffré. |
+| S/MIME | Exchange Online | Client | Email tombe entre les mains d’une personne qui n’est pas le destinataire prévu. | S/MIME apporte de la valeur aux clients en veillant à ce que les e-mails chiffrés avec S/MIME ne puissent être déchiffrés que par le destinataire direct de l’e-mail. |
+| Chiffrement de messages Office 365 | Exchange Online, SharePoint Online | Client | Email, y compris les pièces jointes protégées, tombe entre les mains d’une personne à l’intérieur ou à l’extérieur de Microsoft 365 qui n’est pas le destinataire prévu de l’e-mail. | OME offre une valeur ajoutée aux clients où tous les e-mails provenant de Microsoft 365 qui correspondent à certains critères (c’est-à-dire tous les e-mails à une certaine adresse) sont automatiquement chiffrés avant d’être envoyés à un autre destinataire interne ou externe. |
+| SMTP TLS avec l’organisation partenaire | Exchange Online | Client | Email est intercepté par le biais d’une attaque de l’intercepteur ou d’une autre attaque en transit d’un locataire Microsoft 365 vers une autre organisation partenaire. | Ce scénario offre une valeur ajoutée au client afin qu’il puisse envoyer/recevoir tous les e-mails entre son locataire Microsoft 365 et l’organisation de messagerie de son partenaire à l’intérieur d’un canal SMTP chiffré. |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="encryption-technologies-available-in-multi-tenant-environments"></a>Technologies de chiffrement disponibles dans les environnements multilocataires
 

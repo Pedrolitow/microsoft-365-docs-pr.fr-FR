@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier1
 search.appverid: met150
-ms.openlocfilehash: f24b7bcbf884a5b2498e53d5d9667956d36b966f
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 00cb26a558917d538014a3a981a93a69b69ea0f4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221343"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635375"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 

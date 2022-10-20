@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5679af9f5f8e1bf1fd7d45b3905bfb42da37bcb8
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: e3a50a2f194c6a82a28082acd8b86fe4b4466301
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68092566"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630927"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Actions de correction dans Microsoft Defender pour Office 365
 

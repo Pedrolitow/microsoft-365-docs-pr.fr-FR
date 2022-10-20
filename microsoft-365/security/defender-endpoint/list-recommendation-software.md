@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 6b1987da2ebacaf9dcda7dcb780a39dbe59c19b6
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5fa57ce72dccde9d754915b50c4e4de79bda83cd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226710"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624178"
 ---
 # <a name="list-software-by-recommendation"></a>Répertorier les logiciels par recommandation
 

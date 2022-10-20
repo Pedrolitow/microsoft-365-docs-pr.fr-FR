@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 99f17d9aacb67214703a4af2647385fa1778e88a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 15835e73585a3a7c1cfc3531067cac34e8341a9a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221761"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644229"
 ---
 # <a name="update-alert"></a>Mettre à jour une alerte
 

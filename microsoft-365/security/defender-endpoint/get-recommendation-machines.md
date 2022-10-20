@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 45dda4b9f75ab11ceb0f621d2af35a0c3ecb5a9b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 05a59484226f2cbd9c80bc906effbb276c5e7ff5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173388"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624266"
 ---
 # <a name="list-devices-by-recommendation"></a>Répertorier les appareils par recommandation
 

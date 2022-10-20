@@ -15,18 +15,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - tier3
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 26d42a815991ab350b5bbedae8ce0f36bd722434
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 25cb3e5a6001a8689ded0532a77a4ccccba47269
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68069576"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633392"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>Intégrer des tickets ServiceNow dans le portail Microsoft 365 Defender et le centre de conformité
 

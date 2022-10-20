@@ -20,13 +20,13 @@ ms.collection:
 - m365-security
 - m365initiative-m365-defender
 - tier1
-ms.topic: article
-ms.openlocfilehash: 9664fbcd1b4fe7796f3d2e30a7a44563635105d4
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 33754f78bad357e7bca5d58e710144173e5bc70a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68091342"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631169"
 ---
 # <a name="link-query-results-to-an-incident"></a>Lier les résultats d'une requête à un incident
 

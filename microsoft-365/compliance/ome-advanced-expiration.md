@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: Utilisez Microsoft Purview Advanced Message Encryption pour étendre votre sécurité de messagerie en définissant une date d’expiration sur les e-mails via un modèle personnalisé de marque.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b93aad4f217f956561b686b1415c64456a4360db
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 96d9acafd7c192e24768bcc9cf3e015fffb4db4c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635148"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634583"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Microsoft Purview
 
@@ -39,6 +39,8 @@ Lorsqu’un utilisateur final reçoit un courrier dont la date d’expiration es
 Vous pouvez uniquement définir des dates d’expiration pour les e-mails envoyés à des destinataires externes.
 
 Avec Microsoft Purview Advanced Message Encryption, chaque fois que vous appliquez une personnalisation, le Office 365 applique le wrapper à l’e-mail qui correspond à la règle de flux de messagerie à laquelle vous appliquez le modèle. En outre, vous ne pouvez utiliser l’expiration que si vous utilisez la personnalisation.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Créer un modèle de personnalisation pour forcer l’expiration du courrier à l’aide de PowerShell
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble de la configuration de Microsoft 365 Entreprise pour les campagnes ou d’autres entreprises
-ms.openlocfilehash: 8c88a1c519a4174342049b5c5dac85f24eac8d32
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 769cf1141ce2734020e9247fad1f95cc6e2b5069
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096608"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620953"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuration de Microsoft 365 Entreprises
 
@@ -72,7 +72,7 @@ Les utilisateurs qui ont été ajoutés à votre abonnement Microsoft 365 pour C
 2. Connectez-vous à l’aide du nom d’utilisateur et du mot de passe du compte. Les utilisateurs disposent de ces informations dans l’e-mail qu’ils reçoivent lorsqu’ils sont ajoutés en tant qu’utilisateurs. S’il ne trouve pas l’e-mail, vérifiez que [l’utilisateur n’a pas reçu d’e-mail d’invitation](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
 > [!TIP]
-> Fournissez à votre personnel un lien vers le [guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md) pour obtenir de l’aide sur la connexion, l’obtention d’applications Office et l’enregistrement, la copie et le partage de fichiers.
+> Fournissez à votre personnel un lien vers le [guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md) pour obtenir de l’aide pour se connecter, obtenir des applications Microsoft 365 et enregistrer, copier et partager des fichiers.
 
 ## <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personnaliser votre page de connexion avec un avis de confidentialité et de consentement
 

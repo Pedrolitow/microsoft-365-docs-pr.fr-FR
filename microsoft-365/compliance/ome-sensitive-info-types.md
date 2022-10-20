@@ -13,23 +13,25 @@ ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 - Strat_O365_Enterprise
 description: Découvrez comment créer une stratégie de type d’informations sensibles pour votre organisation à l’aide de Office 365 Chiffrement des messages.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 0974c30882177eb9fc46c2a2fcf65bc2edb43078
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a3c6797750c25e876e1df159d75f1a269decee80
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633430"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634539"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement des messages
 
 Vous pouvez utiliser des règles de flux de messagerie Exchange ou la protection contre la perte de données (DLP) Microsoft Purview pour créer une stratégie de type d’informations sensibles avec Office 365 Chiffrement des messages. Pour créer une règle de flux de messagerie Exchange, vous pouvez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange (EAC)</a> ou PowerShell.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Pour créer la stratégie à l’aide de règles de flux de messagerie dans le CAE
 
@@ -45,7 +47,7 @@ Exécutez les commandes suivantes dans PowerShell pour créer une règle de flux
 
 - Numéro de routage ABA
 - Numéro de carte de crédit
-- Numéro de la Drug Enforcement Agency (DEA)
+- Numéro de l’Agence de contrôle de la drogue (DEA)
 - États-Unis / Royaume-Uni numéro de passeport
 - Numéro de compte bancaire américain
 - Numéro d’identification fiscale individuel (ITIN) États-Unis

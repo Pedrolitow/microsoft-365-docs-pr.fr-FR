@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: bee57e8abb60715fff5f3aca3f64e3c1e5f76b94
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 7b232e01894472b3a01c9f13c02f0b3447ae3c30
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228029"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644524"
 ---
 # <a name="raw-data-streaming-api"></a>API de streaming de données brutes
 

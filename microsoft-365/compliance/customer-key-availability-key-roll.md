@@ -10,19 +10,22 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 description: Découvrez comment restaurer les clés racine du client stockées dans Azure Key Vault qui sont utilisées avec la clé client. Les services incluent des fichiers Exchange Online, Skype Entreprise, SharePoint Online, OneDrive Entreprise et Teams.
-ms.openlocfilehash: 474df9b4776df09b4a46ca002f506155606bdb52
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 22071e7e7c7168da2117cd9e7d0abcb07f9e211e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636488"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647780"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Echanger ou alterner entre une clé client ou de disponibilité
 
 > [!CAUTION]
 > Exécutez uniquement une clé de chiffrement que vous utilisez avec la clé client lorsque vos exigences de sécurité ou de conformité vous imposent de la déployer. En outre, ne supprimez pas les clés qui sont ou ont été associées à des stratégies. Lorsque vous roulez vos clés, le contenu est chiffré avec les clés précédentes. Par exemple, bien que les boîtes aux lettres actives soient rechiffrées fréquemment, les boîtes aux lettres inactives, déconnectées et désactivées peuvent toujours être chiffrées avec les clés précédentes. SharePoint Online effectue une sauvegarde du contenu à des fins de restauration et de récupération. Il peut donc toujours y avoir du contenu archivé à l’aide de clés plus anciennes.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="about-rolling-the-availability-key"></a>À propos du déploiement de la clé de disponibilité
 
@@ -35,7 +38,7 @@ Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux cl
 
 Lorsque vous déployez une clé, vous demandez une nouvelle version d’une clé existante. Pour demander une nouvelle version d’une clé existante, vous utilisez la même applet de commande, [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey), avec la même syntaxe que celle utilisée pour créer la clé. Une fois que vous avez terminé de déployer une clé associée à une stratégie de chiffrement des données (DEP), exécutez une autre applet de commande pour vous assurer que la clé client commence à utiliser la nouvelle clé. Effectuez cette étape dans chaque Key Vault Azure (AKV).
 
-Par exemple :
+Par exemple :
 
 1. Connectez-vous à votre abonnement Azure avec Azure PowerShell. Pour obtenir des instructions, consultez [Se connecter avec Azure PowerShell](/powershell/azure/authenticate-azureps).
 

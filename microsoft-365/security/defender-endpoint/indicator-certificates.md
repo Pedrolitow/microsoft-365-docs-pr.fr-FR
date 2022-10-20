@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ca15e36c0de968a2afddb14a5c8c74cffe969953
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 6d1662a948d0f8cd8298aa0f5226f374db661ead
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232493"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646284"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 

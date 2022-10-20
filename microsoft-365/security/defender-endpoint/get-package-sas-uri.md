@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 71b95d2d5aaeb0029bfb206967297e4565f7ac42
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1ba21f4b16640c99f8c3acc37e6557b656117c3c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68168526"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638079"
 ---
 # <a name="get-package-sas-uri-api"></a>Obtenir l’API d’URI SAS de package
 

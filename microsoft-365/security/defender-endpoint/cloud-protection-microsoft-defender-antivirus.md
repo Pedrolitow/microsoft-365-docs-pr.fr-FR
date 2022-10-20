@@ -12,18 +12,18 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/18/2021
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 7a1949848e3080cf6ca65950727de11390d07258
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 3d9e9df1383a258f930741199659fc2c9728abb3
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68148656"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632951"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Protection cloud et Antivirus Microsoft Defender
 

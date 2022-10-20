@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 176a2077b3f4325f56486eaabec7594c52410a9a
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f61cdd62caaa73e6b06abc2dd4a5fa0b26beb29a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173608"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629542"
 ---
 # <a name="get-ip-related-alerts-api"></a>Obtenir l’API d’alertes liées à l’adresse IP
 

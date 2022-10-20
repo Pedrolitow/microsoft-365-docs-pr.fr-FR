@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: 1a3d4ba96f7c470fc350ce212b6bb451f8ebdda0
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: add1445f684243581f081dac9d090a7adee18d02
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096344"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629278"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurer Microsoft 365 Business Premium
 
@@ -55,7 +55,7 @@ Microsoft 365 Business Premium inclut un processus guidé. La vidéo suivante mo
 Dès que vous avez terminé le processus de configuration guidé, veillez à [Renforcer la sécurité](m365bp-security-overview.md).
 
 > [!TIP]
-> Une fois que vous avez ajouté des utilisateurs, donnez-leur un lien vers le [Guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md). Le guide les oriente tout au long de la connexion, de l’obtention de Office applications et de l’enregistrement, de la copie et du partage de fichiers.
+> Une fois que vous avez ajouté des utilisateurs, donnez-leur un lien vers le [Guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md). Le guide les guide tout au long de la connexion, de l’obtention d’applications Microsoft 365 et de l’enregistrement, de la copie et du partage de fichiers.
 
 
 ## <a name="work-with-a-microsoft-partner"></a>Collaborer avec un partenaire Microsoft

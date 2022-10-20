@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 3886e1b8e70ba16e02e039171b60c4a209a83ec4
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 66bce3514890b579668c6f8104b38b54c95adfb0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68049405"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631499"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gérer les erreurs de repérage avancées
 

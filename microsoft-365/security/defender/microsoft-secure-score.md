@@ -16,19 +16,19 @@ ms.collection:
 - m365-security
 - Adm_TOC
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b37def0b71311e28ff8df9cd580749347540cf82
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 84a7aee597a324b1c9d916a9befa25d3857f3c33
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68091034"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622417"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 

@@ -1,6 +1,6 @@
 ---
-title: Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?
-description: Dans cet article de présentation, découvrez les principales fonctionnalités fournies avec Microsoft Defender Threat Intelligence (Defender TI).
+title: Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ? -Sauvegarde
+description: Dans cet article de présentation, découvrez les principales fonctionnalités fournies avec Microsoft Defender Threat Intelligence (Defender TI). -Sauvegarde
 author: alexroland24
 ms.author: aroland
 manager: dolmont
@@ -8,14 +8,14 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: bed8b4ed1aefb1a401f61256161f6dce5c593e18
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 1e8ba342f6bf68bd61353e43a8641859251d674e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67879211"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623782"
 ---
-# <a name="what-is-microsoft-defender-threat-intelligence-defender-ti"></a>Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?
+# <a name="what-is-microsoft-defender-threat-intelligence-defender-ti---backup"></a>Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ? -Sauvegarde
 
 Microsoft Defender Threat Intelligence (Defender TI) est une plateforme qui simplifie le triage, la réponse aux incidents, la chasse aux menaces, la gestion des vulnérabilités et les flux de travail des analystes de cybermenaces lors de l’analyse de l’infrastructure des menaces et de la collecte de renseignements sur les menaces. Les analystes consacrent beaucoup de temps à la découverte, à la collecte et à l’analyse des données, au lieu de se concentrer sur ce qui aide réellement leur organisation à se défendre, en dérivant des insights sur les acteurs par le biais de l’analyse et de la corrélation.
 

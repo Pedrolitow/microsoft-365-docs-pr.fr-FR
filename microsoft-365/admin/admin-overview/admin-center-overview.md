@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou la vue de tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: 162f57a15a57db284eaec6729fe7d95721ea145f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e32c63bee3e780668fe447662d7e840712878744
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205176"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627738"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -231,5 +231,6 @@ Le Centre d’administration Microsoft 365 est entièrement localisé dans 40 l
 ## <a name="related-content"></a>Contenu associé
 
 [Qu’est-ce qu’un administrateur Microsoft 365 ?](../add-users/about-admin-roles.md) (vidéo)\
+[Gérer les équipes dans le Centre d’administration Microsoft Teams](/microsoftteams/manage-teams-in-modern-portal)\
 [Attribuer des rôles d’administrateur](../add-users/assign-admin-roles.md) (vidéo)\
 [Personnaliser le thème Microsoft 365 pour votre organisation](../setup/customize-your-organization-theme.md) (article)

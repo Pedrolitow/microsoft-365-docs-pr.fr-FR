@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 075fa91c00fb349cf047ac11f9e64edc4da5199e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f5789cdd5bb469fdecae59297c324330c0ad40b9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201504"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630466"
 ---
 # <a name="get-alert-related-domain-information-api"></a>Obtenir l’API d’informations de domaine liées aux alertes
 

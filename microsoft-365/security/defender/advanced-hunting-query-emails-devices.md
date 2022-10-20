@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
-ms.openlocfilehash: 8be215f0b9707e6f8d53787433f49d8d1af9b3da
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: d6a9333fabe555552b31c673b0ae1d93554ca4d7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066957"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625344"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Repérer des menaces sur les appareils, les e-mails, les applications, et les identités
 

@@ -16,13 +16,14 @@ ms.service: microsoft-365-security
 ms.collection:
 - m365-security
 - tier2
+- ContentEngagementFY23
 search.appverid: met150
-ms.openlocfilehash: 7fe1ca66ff803fa03ff6c97f8657152be5723ec6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b3f9ec32541fc77e1ac1191019cb589fb1829e43
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180162"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634363"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -60,11 +61,11 @@ Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d’intel
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Utilisez stratégie de groupe pour activer la fonctionnalité d’intelligence de sécurité partagée :
 
-1. Sur votre ordinateur de gestion stratégie de groupe, ouvrez la console de gestion stratégie de groupe, cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Modifier**.
+1. Sur votre ordinateur de gestion stratégie de groupe, ouvrez la console de gestion stratégie de groupe, cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier**.
 
-2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **la configuration de l’ordinateur**.
+2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **Configuration de l’ordinateur**.
 
-3. Cliquez sur **Modèles d’administration**.
+3. Sélectionnez **Modèles d’administration**.
 
 4. Développez l’arborescence sur **les composants** \> Windows **Microsoft Defender** \> **Mises à jour Antivirus Security Intelligence**.
 
@@ -72,13 +73,13 @@ Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d’intel
 
 6. Entrez `\\<sharedlocation\>\wdav-update` (pour obtenir de l’aide sur cette valeur, consultez [Télécharger et décompresser](#download-and-unpackage-the-latest-updates)).
 
-7. Cliquez sur **OK**.
+7. Sélectionnez **OK**.
 
 8. Déployez l’objet de stratégie de groupe sur les machines virtuelles que vous souhaitez tester.
 
 ### <a name="use-powershell-to-enable-the-shared-security-intelligence-feature"></a>Utiliser PowerShell pour activer la fonctionnalité d’intelligence de sécurité partagée
 
-Utilisez l’applet de commande suivante pour activer la fonctionnalité. Vous devez ensuite envoyer (push) cette stratégie, car vous envoyez normalement des stratégies de configuration basées sur PowerShell sur les machines virtuelles :
+Utilisez l’applet de commande suivante pour activer la fonctionnalité. Vous devez ensuite envoyer (push) la mise à jour, car normalement, vous envoyez (push) des stratégies de configuration basées sur PowerShell sur les machines virtuelles :
 
 ```PowerShell
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
@@ -138,7 +139,7 @@ Cela est possible lorsque les appareils disposent des autorisations de partage e
 
 3. Accédez à l’onglet **Actions** . Sélectionnez **Nouveau...** Entrez **PowerShell** dans le champ **Programme/Script** . Entrez `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` le champ **Ajouter des arguments** . Sélectionnez **OK**.
 
-4. Vous pouvez choisir de configurer des paramètres supplémentaires si vous le souhaitez.
+4. Vous pouvez choisir de configurer d’autres paramètres si vous le souhaitez.
 
 5. Sélectionnez **OK** pour enregistrer la tâche planifiée.
 
@@ -259,7 +260,7 @@ Cette stratégie force une analyse si la machine virtuelle a manqué au moins de
 
 3. Définissez la stratégie **sur Activé**.
 
-4. Cliquez sur **OK**.
+4. Sélectionnez **OK**.
 
 5. Déployez votre objet stratégie de groupe comme d’habitude.
 

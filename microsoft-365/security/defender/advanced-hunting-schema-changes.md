@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 1360ba4535dc9eaa18c320313382b1500cd8cee6
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 41a46fce2c1767dc815006e0c15a0bb9b50a7706
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68049119"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622725"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de chasse avancé - Modifications de nommage
 

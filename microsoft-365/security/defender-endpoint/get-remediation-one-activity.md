@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: a696b7ba96f244a68d9059b2894ea64d12c6e68a
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fa31c0cd5180b286f574e8697678e39af600bb97
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68170990"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628767"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par son ID
 

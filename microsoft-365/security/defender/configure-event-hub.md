@@ -20,13 +20,13 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.openlocfilehash: 3c8de468422b5da737b5446c5eac172b71e0ecd8
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: b26fabe5f5995f1abf3983144b4503c2da7c3adb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055653"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622681"
 ---
 # <a name="configure-your-event-hubs"></a>Configurer vos hubs d’événements
 

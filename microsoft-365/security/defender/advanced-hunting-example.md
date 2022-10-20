@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
-ms.openlocfilehash: e17bd79428ea857b3a581b4948ed37840ba4e32c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 29212f30cfb0628a8fc51bd5acdeea60ec9aac55
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68080016"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631455"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exemple de repérage avancé pour Microsoft Defender pour Office 365
 

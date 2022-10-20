@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 06614d99f4f97ab5d9a42a0d9545568114b2b13d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 879eba8c31e2338d8310dde07b2c51c57654ecbc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186258"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624600"
 ---
 # <a name="get-installed-software"></a>Obtenir les logiciels installés
 

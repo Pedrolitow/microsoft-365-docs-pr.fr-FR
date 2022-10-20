@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 4d8c60e9323b7260ab73635753bea5a4ad5079ab
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: c5021854af82cdc9e3337162b47d4ca8d21ff99b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68087231"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644084"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 

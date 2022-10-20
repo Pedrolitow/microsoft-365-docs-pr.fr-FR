@@ -16,14 +16,14 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 43ed97b37acde59a44dc17c1ee051ea00c151fec
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 20f77106a290462ea01e2897c840c1b40e240d51
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180294"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621808"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>Intégrer les appareils Windows utilisant un script local
 

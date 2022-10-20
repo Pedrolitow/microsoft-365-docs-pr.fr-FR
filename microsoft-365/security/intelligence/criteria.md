@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/13/2021
 search.appverid: met150
-ms.openlocfilehash: d4ac6d95335bbdef0e897dc4995af3b8074ecfd0
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 8f39e194015b22177f1418449cbef825c45ce1f9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221145"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633348"
 ---
 # <a name="how-microsoft-identifies-malware-and-potentially-unwanted-applications"></a>Comment Microsoft identifie les programmes malveillants et les applications potentiellement indésirables
 

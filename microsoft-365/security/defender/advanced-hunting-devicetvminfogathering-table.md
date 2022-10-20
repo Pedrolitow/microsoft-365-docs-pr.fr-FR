@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: cea1dfaed44832c9049961344fda311112c64a1c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 9021b592b346516e1b2ee958582f0c68775a816d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68089320"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645866"
 ---
 # <a name="devicetvminfogathering"></a>DeviceTvmInfoGathering
 

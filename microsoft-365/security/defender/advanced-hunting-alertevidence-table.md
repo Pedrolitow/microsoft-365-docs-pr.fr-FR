@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 4361f6a17c8782bede535dde0633eb224e49a94b
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 731d72ff5e42b85a5ddc68ed58e8914e142cea9f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68062273"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636977"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 

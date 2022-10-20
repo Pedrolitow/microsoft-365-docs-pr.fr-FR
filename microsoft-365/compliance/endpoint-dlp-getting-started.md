@@ -13,25 +13,30 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez la prévention des pertes de données Endpoint pour surveiller les activités des fichiers et mettre en œuvre des actions de protection pour ces fichiers sur les terminaux.
-ms.openlocfilehash: 6800eaeec80bddda35a3b297d6fb9689800cc244
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 777269fc9e2dd7edd88b0d554c6bb1218c1c3ff7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343434"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634671"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main des points de terminaison de protection contre la perte de données
 
 Endpoint Data Loss Prevention (Endpoint DLP) fait partie de la suite de fonctionnalités Microsoft Purview Data Loss Prevention (DLP) que vous pouvez utiliser pour découvrir et protéger les éléments sensibles dans les services Microsoft 365. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md). Pour en savoir plus sur la DLP du Point de terminaison , consultez [Découvrir la protection contre la perte de données](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP vous permet de surveiller les appareils [Windows 10 intégrés et Windows 11](device-onboarding-overview.md) et [macOS intégrés](device-onboarding-macos-overview.md) exécutant Catalina 10.15 et versions ultérieures. Une fois qu’un appareil est intégré, DLP détecte quand des éléments sensibles sont utilisés et partagés. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre.
+Microsoft Endpoint DLP vous permet de surveiller les [Windows 10 intégrés, ainsi que Windows 11](device-onboarding-overview.md) et [les appareils macOS intégrés](device-onboarding-macos-overview.md) exécutant trois dernières versions publiées. Une fois qu’un appareil est intégré, DLP détecte quand des éléments sensibles sont utilisés et partagés. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

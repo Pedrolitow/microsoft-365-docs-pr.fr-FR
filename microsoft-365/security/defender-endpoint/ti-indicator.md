@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: fb3d766b7e7c9c0ee81aa4428d25f9bf5219e445
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 0cc1df14f60088efe72a48bea5a755ea375cd7e7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228973"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635118"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource d’indicateur
 

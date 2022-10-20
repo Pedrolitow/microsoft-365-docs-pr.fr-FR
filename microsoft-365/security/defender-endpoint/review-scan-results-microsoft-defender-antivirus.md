@@ -14,17 +14,17 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: fb507f6249a5a421675908ede074267d389313ba
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 6f346e56d9e422c1308363097c22523689da8022
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231701"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637615"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Passer en revue Microsoft Defender résultats de l’analyse antivirus
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - tier1
@@ -19,17 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 ROBOTS: NO INDEX, NO FOLLOW
-description: Découvrez comment installer automatiquement les applications Office 32 bits sur les ordinateurs Windows et les maintenir à jour dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 48357de681d1647e3ce9cc84fedb831588e27ed8
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+description: Découvrez comment installer automatiquement les applications Microsoft 365 32 bits sur les ordinateurs Windows et les mettre à jour dans Microsoft 365 Business Premium.
+ms.openlocfilehash: bb88f426cb5c252da291e2a851260dbeca5f9159
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68097070"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634847"
 ---
-# <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Préparer l'installation automatique d'applications Office sur des ordinateurs clients
+# <a name="prepare-to-automatically-install-microsoft-365-apps-to-client-computers"></a>Préparer l’installation automatique des applications Microsoft 365 sur les ordinateurs clients
 
-Utilisez Microsoft 365 Business Premium pour iautomatiquement les applications Office 32 bits sur les ordinateurs Windows et les tenir à jour.
+Utilisez Microsoft 365 Business Premium pour installer automatiquement les applications Microsoft 365 32 bits sur les ordinateurs Windows et les tenir à jour avec les mises à jour.
   
 L’installation automatique fonctionne mieux si l’ordinateur : 
 
@@ -49,7 +49,7 @@ Travaille avec :
 
 Ne fonctionne pas avec : 
 
-- 64-bit Office apps (example: Word, Excel, PowerPoint). If 64-bit Office apps are required, then this feature isn't a good fit because there's no support for triggering a 64-bit 2016 Click-to-Run version of Office from the Microsoft 365 for business admin console.
+- Applications Microsoft 365 64 bits (exemple : Word, Excel, PowerPoint). Si des applications Microsoft 365 64 bits sont requises, cette fonctionnalité n’est pas adaptée, car il n’existe aucune prise en charge du déclenchement d’une version 64 bits 2016 « Démarrer en un clic » d’Office à partir de la console d’administration Microsoft 365 pour les entreprises.
 
 - Any 2016 Windows Installer (MSI) standalone apps (for example, Visio or Project). Microsoft 365 for business upgrades Office to the Click-to-Run version of Office 2016, and that doesn't work with Office 2016 MSI standalone applications.
 
@@ -60,11 +60,11 @@ Le tableau suivant indique l’action que les utilisateurs finaux ou les adminis
 |:-----|:-----|:-----|
 |Aucune suite Office installée  |Aucune  |Office 2016 32 bits est installé à l’aide du mode Démarrer en un clic  |
 |Version 32 bits « Démarrer en un clic » d'Office présente (2016 ou versions antérieures) et aucune application autonome  |Aucune  |Mise à niveau vers la dernière version 32 bits « Démarrer en un clic » d'Office 2016, le cas échéant **\*** |
-|Version 32 bits « Démarrer en un clic » existante d’Office et « Démarrer en un clic » 32 bits ou 64 bits d’applications Office autonomes (par exemple, Visio, Project)  |Aucun  |Standalone apps aren't affected. Suite is upgraded to Click-to-Run 32-bit version of Office 2016  |
-|Version 32 bits « Démarrer en un clic » d'Office présente et applications autonomes 32 ou 64 bits MSI (à l'exception de 2016) présentes  |Aucune  |Standalone apps aren't affected. Suite is upgraded to Click-to-Run 32-bit version of Office 2016  |
-|Version 64 bits « Démarrer en un clic » d'Office présente  |Désinstallez les applications Office 64 bits, si vous pouvez les remplacer par des applications Office 32 bits  |Si les applications 64 bits d'Office sont supprimées, la version 32 bits « Démarrer en un clic » d'Office 2016 est installée  |
-|Installation MSI d'Office 2016 existante, avec ou sans applications autonomes  |Désinstaller la version MSI d'Office 2016.  |Click-to-Run 32-bit version of Office 2016 is installed. No change to standalone apps  |
-|Installation MSI d'Office 2013 (ou version antérieure) présente et/ou des applications Office autonomes présentes  |Aucune  |Coexistence de la version 32 bits « Démarrer en un clic » d'Office 2016 avec l'installation MSI d'Office préexistante (et les applications autonomes)  |
+|Version 32 bits « Démarrer en un clic » d’Office et « Démarrer en un clic » 32 bits ou 64 bits d’applications Microsoft 365 autonomes (par exemple, Visio, Project)  |Aucun  |Les applications autonomes ne sont pas affectées. Mise à niveau de la suite vers la version 32 bits « Démarrer en un clic » d'Office 2016  |
+|Version 32 bits « Démarrer en un clic » existante d’Office et toutes les applications Microsoft 365 autonomes MSI 32 bits ou 64 bits (à l’exception de 2016)  |Aucun  |Standalone apps aren't affected. Suite is upgraded to Click-to-Run 32-bit version of Office 2016  |
+|Version 64 bits « Démarrer en un clic » d'Office présente  |Désinstallez les applications Microsoft 365 64 bits, si vous pouvez les remplacer par des applications Microsoft 365 32 bits.  |Si les applications 64 bits d'Office sont supprimées, la version 32 bits « Démarrer en un clic » d'Office 2016 est installée  |
+|Installation MSI d'Office 2016 existante, avec ou sans applications autonomes  |Désinstaller la version MSI d'Office 2016.  |La version 32 bits « Démarrer en un clic » d'Office 2016 est installée. Aucune modification apportée aux applications autonomes.  |
+|Installation MSI existante d’Office 2013 (ou version antérieure) et/ou d’applications Microsoft 365 autonomes  |Aucune  |Coexistence de la version 32 bits « Démarrer en un clic » d'Office 2016 avec l'installation MSI d'Office préexistante (et les applications autonomes)  |
 
  **(\*) Note:** Does not upgrade to Click-to-Run 32-bit version of Office 2016 due to a known bug. A fix is in progress. 
 

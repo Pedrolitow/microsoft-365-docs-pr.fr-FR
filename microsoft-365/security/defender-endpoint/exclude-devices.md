@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: fc31918e3ccb7a6df0fd3f18bc1ff41427b16019
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 25affe4bd9385bfb7de1521749739b75705015e3
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68210105"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628266"
 ---
 # <a name="exclude-devices"></a>Exclure des appareils
 

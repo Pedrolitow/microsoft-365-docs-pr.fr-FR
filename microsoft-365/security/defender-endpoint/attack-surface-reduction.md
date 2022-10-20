@@ -16,17 +16,17 @@ manager: dansimp
 ms.custom:
 - asr
 - admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: c0bd85618ec90b193728b9705d473eadc45712af
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: e8c0e3ab05f4f6cf5f8d04dbf7ee4eff3a34a99c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68148722"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647340"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 

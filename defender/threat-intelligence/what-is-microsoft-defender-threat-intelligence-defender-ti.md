@@ -8,16 +8,16 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 62e3df65479bec45896504dc8eda006e2a41d75b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: e1c59f07cd321491bebf9cd13a7a8a3d68323d73
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739265"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623584"
 ---
 # <a name="what-is-microsoft-defender-threat-intelligence-defender-ti"></a>Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?
 
-Microsoft Defender Threat Intelligence (Defender TI) est une plateforme qui simplifie le triage, la réponse aux incidents, la chasse aux menaces, la gestion des vulnérabilités et les flux de travail des analystes de cybermenaces lors de l’analyse de l’infrastructure des menaces et de la collecte de renseignements sur les menaces. Les analystes consacrent beaucoup de temps à la découverte, à la collecte et à l’analyse des données, au lieu de se concentrer sur ce qui aide réellement leur organisation à se défendre, en dérivant des insights sur les acteurs par le biais de l’analyse et de la corrélation.
+Microsoft Defender Threat Intelligence (Defender TI) est une plateforme qui simplifie le triage, la réponse aux incidents, la chasse aux menaces, la gestion des vulnérabilités et les flux de travail des analystes de cybermenaces lors de l’analyse de l’infrastructure des menaces et de la collecte de renseignements sur les menaces. Les analystes consacrent beaucoup de temps à la découverte, à la collecte et à l’analyse des données, au lieu de se concentrer sur ce qui aide réellement leur organisation à se défendre, en dérivant des insights sur les acteurs par l’analyse et la corrélation.
 
 Souvent, les analystes doivent accéder à plusieurs référentiels pour obtenir les jeux de données critiques dont ils ont besoin pour évaluer un domaine, un hôte ou une adresse IP suspects. Les données DNS, les informations WHOIS, les programmes malveillants et les certificats SSL fournissent un contexte important pour les indicateurs de compromission ( IOC), mais ces référentiels sont largement distribués et ne partagent pas toujours une structure de données commune, ce qui rend difficile la garantie que les analystes disposent de toutes les données pertinentes nécessaires pour effectuer une évaluation appropriée et en temps opportun de l’infrastructure suspecte.
 

@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ec69925ed68898dff04e63a5a316c235d77d2d23
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: a2a23f180b84150aae2ed7d75746b1d8666fa812
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224819"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627277"
 ---
 # <a name="live-response-command-examples"></a>Exemples de commande Live response
 

@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 9b388cf1b133025a4782b5179cfb8581e83db173
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: faaafb94f1b3278900d7f184ba462638deac375c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232273"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636429"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource d’investigation
 

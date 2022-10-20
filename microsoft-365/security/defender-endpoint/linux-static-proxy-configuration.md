@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: dec808cc347e4e6078c1275821275b7db8992345
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: e58e81044e296f675c375e6caa5169e75eba51e6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536739"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622945"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurer Microsoft Defender pour point de terminaison sur Linux pour la découverte de proxy statique
 
@@ -71,7 +71,16 @@ Notez que l’installation et la désinstallation ne échoueront pas nécessaire
 
 ## <a name="post-installation-configuration"></a>Configuration après l’installation
 
-Après l’installation, la `HTTPS_PROXY` variable d’environnement doit être définie dans le fichier de service Defender pour point de terminaison. Pour ce faire, exécutez `sudo systemctl edit --full mdatp.service`.
+Après l’installation, configurez Defender pour point de terminaison avec un proxy statique à l’aide de l’une des méthodes suivantes :
+
+```bash
+mdatp config proxy set --value http://address:port
+```
+> [!NOTE]
+> Cette méthode fonctionne pour chaque distribution de Defender pour point de terminaison sur Linux et est **recommandée**.
+
+
+La `HTTPS_PROXY` variable d’environnement doit être définie dans le fichier de service Defender pour point de terminaison. Pour ce faire, exécutez `sudo systemctl edit --full mdatp.service`.
 Vous pouvez ensuite propager la variable au service de deux manières :
 
 - Supprimez les marques de commentaire de la ligne `#Environment="HTTPS_PROXY=http://address:port"` et spécifiez votre adresse proxy statique.
@@ -91,4 +100,4 @@ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 > Pour supprimer les ajouts que vous avez pu effectuer avant la désinstallation`mdatp`, supprimez le fichier personnalisé.`/etc/systemd/system`
 
 > [!NOTE]
-> Red Hat Enterprise Linux 6.X et CentOS 6.X ne prennent pas en charge **systemctl**. Pour configurer le proxy de statuc pour MDE, utilisez  **mdatp config proxy set --value http://address:port**. Cette méthode fonctionne également pour toutes les autres distributions Linux.
+> Red Hat Enterprise Linux 6.X et CentOS 6.X ne prennent pas en charge les méthodes **systemctl** et **/etc/environment** . Pour configurer le proxy statique pour MDE sur ces distributions, utilisez la méthode de **jeu de proxy de configuration mdatp** recommandée.

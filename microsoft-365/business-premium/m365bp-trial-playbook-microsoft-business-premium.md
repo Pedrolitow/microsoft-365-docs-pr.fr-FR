@@ -12,18 +12,18 @@ ms.collection:
 - tier1
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 10/03/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 9937fc7e841a823fd8ab6334dd434f5508564ab7
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: 1a846998749a234bcb4334f74ead9d8631e55ddd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501248"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646504"
 ---
 # <a name="trial-user-guide-microsoft-365-business-premium"></a>Guide de l’utilisateur d’évaluation : Microsoft 365 Business Premium
 
@@ -44,7 +44,7 @@ Lorsque vous [commencer une version d’évaluation ou acheter Microsoft 365 Bus
 
    - [Liens fiables](../security/office-365-security/safe-links.md), [pièces jointes fiables](../security/office-365-security/safe-attachments.md)et stratégies [anti-hameçonnage](../security/office-365-security/anti-phishing-protection.md) qui s’appliquent à l’ensemble du locataire ou au sous-ensemble d’utilisateurs que vous avez peut-être choisis pendant le processus de configuration de l’évaluation. (Votre abonnement d’évaluation est destiné à un maximum de 25 utilisateurs.)
 
-   - Protection des applications de productivité, telles que [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Approsoft Office](/deployoffice/about-microsoft-365-apps) et [Microsoft Teams](/microsoftteams/teams-overview).
+   - Protection pour les applications de productivité, telles que [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), les [applications Microsoft 365](/deployoffice/about-microsoft-365-apps) et [Microsoft Teams](/microsoftteams/teams-overview).
 
 ## <a name="add-a-domain"></a>Ajouter un domaine
 

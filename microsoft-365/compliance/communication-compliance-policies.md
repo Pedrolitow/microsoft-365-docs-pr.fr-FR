@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2f64d869ce6a362e543a78fa4f9e390a4ae7f891
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 684fbfde05c334ffadae16bae7e5c613e7fc8589
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68574052"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636691"
 ---
 # <a name="create-and-manage-communication-compliance-policies"></a>Créer et gérer des stratégies de conformité des communications
 
->[!IMPORTANT]
->Conformité des communications Microsoft Purview fournit les outils nécessaires pour aider les organisations à détecter les violations de conformité réglementaire (par exemple sec ou FINRA), telles que les informations sensibles ou confidentielles, le harcèlement ou la menace de langue, et le partage de contenu pour adultes. Créés avec la confidentialité par conception, les noms d’utilisateur sont pseudonymés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont choisis par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+> [!IMPORTANT]
+> Conformité des communications Microsoft Purview fournit les outils nécessaires pour aider les organisations à détecter les violations de conformité réglementaire (par exemple sec ou FINRA), telles que les informations sensibles ou confidentielles, le harcèlement ou la menace de langue, et le partage de contenu pour adultes. Créés avec la confidentialité par conception, les noms d’utilisateur sont pseudonymés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont choisis par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -63,13 +63,13 @@ Dans le cadre d’une défense en couches pour détecter et corriger les message
 
 Activée par défaut dans le [Centre d’administration Teams](/microsoftteams/manage-teams-in-modern-portal), l’option *Signaler une préoccupation* dans les messages Teams permet aux utilisateurs de votre organisation d’envoyer des messages de conversation internes et de groupe inappropriés pour révision par les réviseurs de conformité des communications pour la stratégie. Ces messages sont pris en charge par une stratégie système par défaut qui prend en charge la création de rapports de messages dans des conversations privées et de groupe Teams.
 
-![La conformité des communications signale une préoccupation.](../media/communication-compliance-report-a-concern-full-menu.png)
+![La conformité des communications signale une préoccupation](../media/communication-compliance-report-a-concern-full-menu.png)
 
 Lorsqu’un utilisateur envoie un message de conversation Teams à réviser, le message est copié dans la stratégie de message signalé par l’utilisateur. Les messages signalés restent visibles initialement pour tous les membres de conversation et il n’existe aucune notification aux membres de conversation ou à l’expéditeur indiquant qu’un message a été signalé dans des conversations de canal, privées ou de groupe. Un utilisateur ne peut pas signaler le même message plusieurs fois et le message reste visible pour tous les utilisateurs inclus dans la session de conversation pendant le processus de révision de stratégie.
 
 Pendant le processus de révision, les réviseurs de conformité des communications peuvent effectuer toutes les [actions de correction](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) standard sur le message, y compris la suppression du message de la conversation Teams. Selon la façon dont les messages sont corrigés, l’expéditeur et les destinataires des messages verront différents [messages de notification](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) dans les conversations Teams après la révision.
 
-![Stratégie de messages signalés par l’utilisateur de conformité des communications.](../media/communication-compliance-user-reported-messages-policy.png)
+![Stratégie de messages signalés par l’utilisateur de conformité des communications](../media/communication-compliance-user-reported-messages-policy.png)
 
 Les messages signalés par l’utilisateur à partir de conversations Teams sont les seuls messages traités par la stratégie de message signalé par l’utilisateur et seuls les réviseurs affectés pour la stratégie peuvent être modifiés. Toutes les autres propriétés de stratégie ne sont pas modifiables. Lorsque la stratégie est créée, les réviseurs initiaux affectés à la stratégie sont tous membres du groupe de *rôles Administrateurs* de conformité des communications (s’il est rempli avec au moins un utilisateur) ou tous les membres du groupe de rôles *Global Administration* de votre organisation. Le créateur de stratégie est un utilisateur sélectionné de manière aléatoire dans le groupe de *rôles Administrateurs de conformité des communications* (s’il est rempli avec au moins un utilisateur) ou un utilisateur sélectionné de manière aléatoire dans le groupe de rôles *Global Administration* de votre organisation.  
 
@@ -162,8 +162,8 @@ Pour identifier une stratégie plus ancienne, consultez la colonne *Dernière an
 
 Chaque stratégie de conformité des communications a une taille limite de stockage de 100 Go ou 1 million de messages, selon ce qui est atteint en premier. À mesure que la stratégie approche de ces limites, les e-mails de notification sont automatiquement envoyés aux utilisateurs affectés aux groupes de rôles *Conformité des communications* ou *Administrateurs de conformité des* communications. Les messages de notifications sont envoyés lorsque la taille de stockage ou le nombre de messages atteint 80, 90 et 95 % de la limite. Lorsque la limite de stratégie est atteinte, la stratégie est automatiquement désactivée et la stratégie cesse de traiter les messages pour les alertes.
 
->[!IMPORTANT]
->Si une stratégie est désactivée en raison de l’atteinte des limites de stockage et de message, veillez à évaluer comment gérer la stratégie désactivée. Si vous supprimez la stratégie, tous les messages, les pièces jointes associées et les alertes de message seront définitivement supprimés. Si vous devez conserver ces éléments pour une utilisation ultérieure, ne supprimez pas la stratégie désactivée.
+> [!IMPORTANT]
+> Si une stratégie est désactivée en raison de l’atteinte des limites de stockage et de message, veillez à évaluer comment gérer la stratégie désactivée. Si vous supprimez la stratégie, tous les messages, les pièces jointes associées et les alertes de message seront définitivement supprimés. Si vous devez conserver ces éléments pour une utilisation ultérieure, ne supprimez pas la stratégie désactivée.
 
 Pour gérer les stratégies qui approchent des limites de stockage et de message, envisagez d’effectuer une copie de la stratégie pour maintenir la continuité de la couverture ou de prendre les mesures suivantes pour réduire la taille de stockage et le nombre de messages de stratégie actuels :
 
@@ -205,21 +205,34 @@ Configurez des dictionnaires de mots clés personnalisés (ou lexicons) pour fou
 
 ### <a name="classifiers"></a>Classificateurs
 
-[Les classifieurs intégrés et globaux pouvant être formés analysent les messages envoyés](/microsoft-365/compliance/classifier-learn-about) ou reçus sur tous les canaux de communication de votre organisation pour rechercher différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d'intelligence artificielle et de mots clés pour identifier le langage dans les messages susceptibles d'enfreindre les stratégies anti-harcèlement.
+[Les classifieurs intégrés et globaux pouvant être formés inspectent les messages envoyés](/microsoft-365/compliance/classifier-learn-about) ou reçus sur tous les canaux de communication de votre organisation pour détecter différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d'intelligence artificielle et de mots clés pour identifier le langage dans les messages susceptibles d'enfreindre les stratégies anti-harcèlement. 
 
-La conformité des communications utilise des classifieurs intégrés et globaux pouvant être formés pour analyser les communications à la recherche de termes, d’images et de sentiments pour les types de langage et de contenu suivants :
+Les stratégies utilisant des classifieurs inspectent et évaluent les messages dont le nombre de mots est égal ou supérieur à six. Les messages contenant moins de six mots ne sont pas évalués dans les stratégies à l’aide de classifieurs. Pour identifier et prendre des mesures sur les messages plus courts contenant du contenu inapproprié, nous vous recommandons d’inclure un dictionnaire de mots clés personnalisé pour les stratégies de conformité de communication qui détectent ce type de contenu.
 
-- **Images pour adultes** : analyse les images qui sont sexuellement explicites par nature.
-- **Plaintes des clients** : recherche les commentaires et les plaintes concernant les produits ou services de votre organisation.
-- **Discrimination** : recherche un langage discriminatoire explicite et est particulièrement sensible à la langue discriminatoire à l’égard des communautés afro-américaines/noires par rapport à d’autres communautés.
-- **Images gory** : recherche des images qui décrivent la violence et le gore.
-- **Harcèlement** : Analyses de comportements offensants ciblant des personnes concernant la race, la couleur, la religion, l’origine nationale.
-- **Blasphème** : Recherche les expressions profanes qui gênent la plupart des gens.
-- **Images racées** : recherche des images qui sont sexuellement suggestifs dans la nature, mais qui contiennent moins de contenu explicite que les images considérées comme adultes.
-- **Menace** : recherche les menaces de violence ou de dommages physiques à une personne ou à des biens.
+La conformité des communications peut utiliser des classifieurs intégrés et évolutifs spécifiques pour inspecter les communications pour les types de langage et de contenu suivants :
+
+|**Classifieur**|**Description**|
+|:-------------|:--------------|
+| **Images pour adultes** | Détecte les images qui sont potentiellement sexuellement explicites dans la nature. |
+| **Sabotage d’entreprise (préversion)** | Détecte les messages qui peuvent mentionner des actes qui endommagent ou détruisent des biens ou des biens d’entreprise. Ce classifieur peut aider les clients à gérer les obligations de conformité réglementaire telles que les normes neRC Critical Infrastructure Protection ou les réglementations d’état telles que le chapitre 9.05 RCW dans l’État de Washington.  |
+| **Plaintes des clients (préversion)** | Détecte les messages susceptibles de suggérer des plaintes des clients concernant les produits ou services de votre organisation, comme l’exige la loi pour les secteurs réglementés. Ce classifieur peut aider les clients à gérer les obligations de conformité réglementaire telles que la règle 4530 de la FINRA, la FINRA 4513, la FINRA 2111, le Bureau de protection financière des consommateurs, le titre 21 du Code des règlements fédéraux intitulé 21 : Food and Drugs et la Federal Trade Commission Act.  |
+| **Discrimination** | Détecte une langue discriminatoire potentiellement explicite et est particulièrement sensible à la langue discriminatoire à l’égard des communautés afro-américaines/noires par rapport à d’autres communautés. |
+| **Cadeaux & divertissement (préversion)** | Détecte les messages qui peuvent suggérer l’échange de cadeaux ou de divertissements en échange de services, ce qui viole les réglementations relatives à la corruption. Ce classifieur peut aider les clients à gérer les obligations de conformité réglementaire telles que le Foreign Corrupt Practices Act (FCPA), uk corruption Act et finRA Rule 2320.  |
+| **Images Gory** | Détecte les images qui pourraient représenter la violence et le gore. |
+| **Harcèlement** | Détecte une conduite potentiellement offensante ciblant des personnes concernant la race, la couleur, la religion, l’origine nationale. |
+| **Blanchiment d’argent (préversion)** | Détecte les signes qui peuvent suggérer le blanchiment d’argent ou l’engagement dans des actes pour cacher ou masquer l’origine ou la destination des produits. Ce classifieur peut aider les clients à gérer les obligations de conformité réglementaire telles que la Bank Secrecy Act, la USA Patriot Act, la règle FINRA 3310 et la Loi de 2020 sur la lutte contre le blanchiment d’argent. |
+| **Vulgarité** | Détecte les expressions potentiellement profanes qui gênent la plupart des gens. |
+| **Images racées** | Détecte les images potentiellement sexuellement suggestifs, mais qui contiennent moins de contenu explicite que les images considérées comme adultes. |
+| **Connivence réglementaire (préversion)** | Détecte les messages susceptibles de violer les exigences réglementaires en matière de lutte contre la corruption, comme une tentative de dissimulation d’informations sensibles. Ce classifieur peut aider les clients à gérer les obligations de conformité réglementaire, telles que la Loi Sur les trusts de Sherman, la Securities Exchange Act de 1933, la Securities Exchange Act de 1934, la Loi sur les conseillers en placement de 1940, la Loi de la Commission fédérale et la loi Robinson-Patman. |
+| **Manipulation de stock (préversion)** | Détecte les signes d’une manipulation possible des actions, comme des recommandations d’achat, de vente ou de conservation d’actions qui peuvent suggérer une tentative de manipulation du cours des actions. Ce classifieur peut aider les clients à gérer les obligations de conformité réglementaire telles que la loi securities Exchange Act de 1934, la règle FINRA 2372 et la règle 5270 de la FINRA. |
+| **Menace** | Détecte les menaces potentielles de violence ou de dommages physiques à une personne ou à des biens. |
+| **Divulgation non autorisée (préversion)** | Détecte le partage d’informations contenant du contenu explicitement désigné comme confidentiel ou interne à des personnes non autorisées.Ce classifieur peut aider les clients à gérer les obligations de conformité réglementaire telles que la règle FINRA 2010 et la règle SEC 10b-5. |
+
+> [!IMPORTANT]
+> Les classifieurs d’aperçu peuvent détecter un grand volume de contenu d’expéditeur/bulletin d’informations en bloc en raison d’un problème connu. Bien que ces classifieurs soient en préversion, vous pouvez atténuer la détection de grands volumes de contenu d’expéditeur/bulletin d’informations en bloc en ajoutant que le [*message n’est envoyé à aucune de ces conditions de domaines*](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) à vos stratégies avec une liste de domaines à exclure.
 
 > [!NOTE]
-> Les stratégies utilisant des classifieurs inspectent et évaluent les messages dont le nombre de mots est égal ou supérieur à six. Les messages contenant moins de six mots ne sont pas évalués dans les stratégies à l’aide de classifieurs. Pour identifier et prendre des mesures sur les messages plus courts contenant du contenu inapproprié, nous vous recommandons d’inclure un dictionnaire de mots clés personnalisé pour les stratégies de conformité de communication qui détectent ce type de contenu.
+> Les stratégies utilisant des classifieurs de menace, de harcèlement et de vulgarité en langue anglaise inspectent et évaluent les messages avec un nombre de mots supérieur ou égal à trois. Les messages contenant moins de trois mots ne sont pas évalués dans les stratégies utilisant ces types de classifieurs. Pour identifier et prendre des mesures sur les messages plus courts contenant du contenu inapproprié, nous vous recommandons d’inclure un dictionnaire de mots clés personnalisé pour les stratégies de conformité de communication qui détectent ce type de contenu.
 
 ### <a name="optical-character-recognition-ocr"></a>Reconnaissance optique des caractères
 

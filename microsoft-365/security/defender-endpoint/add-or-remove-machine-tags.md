@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 3f6139d50e0c1f565952e853f80a325af3afb26e
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 3117817f8172a7cfc2d0c819e5307d54143bed4a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68150240"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627541"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>Ajouter ou supprimer une API d’étiquettes d’ordinateur
 

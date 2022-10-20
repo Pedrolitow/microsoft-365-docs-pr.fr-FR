@@ -17,13 +17,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 44e49bab1f0db3eda9216f3b5f6ec0deaac24306
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.topic: conceptual
+ms.openlocfilehash: 65a26cf05531ecea3c5c1f95e4013d283d677adf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68149844"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647285"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration de à Microsoft Defender pour le cloud
 

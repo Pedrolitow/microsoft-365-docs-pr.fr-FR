@@ -11,9 +11,9 @@ f1.keywords:
 ms.author: dacurwin
 author: dcurwin
 manager: dansimp
-ms.date: 08/21/2022
+ms.date: 08/04/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: a918a77f4aee962f126a3fdc47ee783c291e5765
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 9097a48dee61ea0dc96345331f83b07d1796fb2d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055345"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622536"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps dans Microsoft 365 Defender (préversion)
 
@@ -48,13 +48,12 @@ En savoir plus sur les avantages : [Vue d’ensemble de Microsoft 365 Defender](
 
 ## <a name="quick-reference"></a>Référence rapide
 
-L’image et le tableau ci-dessous répertorient les modifications apportées à la navigation entre Microsoft Defender for Cloud Apps et Microsoft 365 Defender.
+Les images et les tableaux ci-dessous répertorient les modifications apportées à la navigation entre Microsoft Defender for Cloud Apps et Microsoft 365 Defender.
 
-> [!NOTE]
-> Certaines pages n’ont pas encore été migrées et doivent être accessibles à partir du portail Defender pour Cloud Apps.
+### <a name="discover"></a>Découvrir
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/defender-cloud-apps-m365-defender.png" alt-text="Nouveaux emplacements dans le portail Microsoft 365 Defender" lightbox="../../media/defender-cloud-apps-m365-defender.png":::
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-discover.png" alt-text="Nouveaux emplacements pour les fonctionnalités Cloud Discovery dans le portail Microsoft 365 Defender" lightbox="../../media/defender-cloud-apps-m365-defender-discover.png":::
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
@@ -66,19 +65,64 @@ L’image et le tableau ci-dessous répertorient les modifications apportées à
 | Appareils | onglet sur la page Cloud Discovery |
 | Catalogue d’applications cloud |  Applications cloud -> catalogue d’applications cloud |
 | Créer un rapport d’instantané Cloud Discovery | Dans la page Cloud Discovery, sous Actions |
+
+### <a name="investigate"></a>Examiner
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-investigate.png" alt-text="Nouveaux emplacements pour les fonctionnalités d’investigation dans le portail Microsoft 365 Defender" lightbox="../../media/defender-cloud-apps-m365-defender-investigate.png":::
+
+| Defender for Cloud Apps | Microsoft 365 Defender |
+|---------|---------|
 | Journal d’activité | Applications cloud -> journal d’activité |
-| Fichiers | reste dans le portail Defender pour Cloud Apps |
+| Fichiers | Applications cloud - fichiers > |
 | Utilisateurs et comptes | Ressources -> identités |
-| Configuration de la sécurité | reste dans le portail Defender pour Cloud Apps |
+| Configuration de la sécurité | disponible dans [Microsoft Defender pour le cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) |
 | Posture de sécurité des identités | [Évaluations de la sécurité des identités de Microsoft Defender for Identity](/defender-for-identity/isp-overview) |
 | Applications OAuth | Applications cloud -> applications OAuth |
-| Applications connectées | reste dans le portail Defender pour Cloud Apps |
+| Applications connectées | Paramètres -> Applications cloud -> Applications connectées |
 
-> [!NOTE]
-> La nouvelle expérience Defender pour Cloud Apps dans le portail Microsoft 365 Defender est actuellement disponible pour tous les utilisateurs détaillés dans [Gérer l’accès administrateur](/defender-cloud-apps/manage-admins), à l’exception des éléments suivants :
->
-> - **Administrateur d’applications/instances**, **administrateur de groupe d’utilisateurs**, **administrateur général cloud discovery** et **administrateur de rapports Cloud Discovery**, tels que définis dans les [rôles d’administrateur intégrés dans Defender pour Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
-> - Groupes de confidentialité des utilisateurs tels que définis dans la [confidentialité de l’activité](/defender-cloud-apps/activity-privacy)
+### <a name="control"></a>Contrôle
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-control.png" alt-text="Nouveaux emplacements pour les fonctionnalités de contrôle dans le portail Microsoft 365 Defender" lightbox="../../media/defender-cloud-apps-m365-defender-control.png":::
+
+| Defender for Cloud Apps | Microsoft 365 Defender |
+|---------|---------|
+| Politiques | Applications cloud - gestion des stratégies > |
+| Modèles | Applications cloud - modèles de stratégie > |
+
+### <a name="settings"></a>Paramètres
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-settings.png" alt-text="Nouveaux emplacements des paramètres dans le portail Microsoft 365 Defender" lightbox="../../media/defender-cloud-apps-m365-defender-settings.png":::
+
+| Defender for Cloud Apps | Microsoft 365 Defender |
+|---------|---------|
+| Paramètres | Paramètres - applications cloud > |
+| Paramètres système | Paramètres - applications cloud > |
+| Paramètres/Journal de gouvernance | Applications cloud -> journal de gouvernance |
+| Extensions de sécurité | Paramètres - applications cloud > |
+| Playbooks | Paramètres - applications cloud > |
+| Agents SIEM | Paramètres - applications cloud > |
+| DLP externe | Paramètres - applications cloud > |
+| Jetons d’API | Paramètres - applications cloud > |
+| Gérer l’accès administrateur | Rôles > d’applications cloud > autorisations |
+| Rapports exportés | Rapports -> applications cloud -> rapports exportés |
+| Déploiement et confidentialité délimités | Autorisations -> applications cloud -> autorisations de confidentialité des activités |
+| Connecteurs d’applications connectées/d’application | Paramètres -> Cloud Apps -> Applications connectées |
+| Contrôle d’application d’accès conditionnel | Paramètres -> applications cloud -> applications de contrôle d’application d’accès conditionnel |
+| Plages d’adresses IP              | Paramètres - applications cloud >                                      |
+| Groupes d’utilisateurs                    | Paramètres - applications cloud >                                      |
+
+## <a name="limitations"></a>Limites
+
+- La nouvelle expérience Defender pour Cloud Apps dans le portail Microsoft 365 Defender est actuellement disponible pour tous les utilisateurs détaillés dans [Gérer l’accès administrateur](/defender-cloud-apps/manage-admins), à l’exception des éléments suivants :
+  - **Administrateur d’applications/instances**, **administrateur de groupe d’utilisateurs**, **administrateur général cloud discovery** et **administrateur de rapports Cloud Discovery**, tels que définis dans les [rôles d’administrateur intégrés dans Defender pour Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
+  - Groupes de confidentialité des utilisateurs tels que définis dans la [confidentialité de l’activité](/defender-cloud-apps/activity-privacy)
+
+- La nouvelle expérience est actuellement disponible pour les licences Microsoft Defender for Cloud Apps complètes uniquement.
+- Les nouveaux clients doivent d’abord se connecter au portail Microsoft Defender for Cloud Apps.
+- Certains liens peuvent vous rediriger vers le portail Defender pour Cloud Apps.
 
 ## <a name="whats-changed"></a>Fonctionnalités modifiées
 
@@ -93,6 +137,10 @@ La recherche globale dans Microsoft 365 Defender (à l’aide de la barre de rec
 ### <a name="assets-and-identities"></a>Ressources et identités
 
 Dans le cadre de la création d’une section **Ressources** dédiées couvrant l’ensemble de l’expérience Microsoft 365 Defender, la section **Utilisateurs et comptes** de Defender pour Cloud Apps est renommée en tant que section **Identités**. Aucune modification des fonctionnalités n’est attendue.
+
+## <a name="related-videos"></a>Vidéos connexes
+
+- [Protection des applications cloud dans Microsoft 365 Defender](https://www.microsoft.com/videoplayer/embed/RE59yVU)
 
 ## <a name="related-information"></a>Informations connexes
 

@@ -15,17 +15,17 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 94350aa289b4c2d4e0c816c3332894ec4685d65f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 82cdf185f36bc337aa0c783d6d37a2fbb6e4036c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201658"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635705"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Personnaliser, lancer et examiner les résultats des analyses et des corrections de Microsoft Defender Antivirus
 

@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 5e129246a5eefdf532b686a5f19e660e401afe1b
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ff4cfa92e1c2a9f2e02e3492fff87267efec170e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229567"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639069"
 ---
 # <a name="virus-information-alliance"></a>Virus Information Alliance
 

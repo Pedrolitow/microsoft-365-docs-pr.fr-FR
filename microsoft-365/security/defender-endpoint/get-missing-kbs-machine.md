@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 087339b0b2d1f23998951b44f80878f74e5ff09d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cfae817432961636c9daa00025d120394cbf795e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173524"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647015"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtenir les bases de connaissances manquantes par ID d’appareil
 

@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d878f70ab7c10323186a0607a50be70c4e7bb894
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: a77b156491548e24623e914b5b2cd5ae536078f6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233483"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634979"
 ---
 # <a name="release-device-from-isolation-api"></a>Libérer l’appareil de l’API d’isolation
 

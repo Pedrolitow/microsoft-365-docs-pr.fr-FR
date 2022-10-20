@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 0ec60d1fa459872d8bcababc500a533fce066267
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ceaa8a9c86acba92ff8d0e3ff2f48f7645bf4813
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229017"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627168"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Gérer Microsoft Defender pour point de terminaison avec Intune
 

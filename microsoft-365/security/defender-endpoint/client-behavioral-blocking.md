@@ -9,7 +9,7 @@ ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 6a58cef549f8a3e9453d923f5db08503eb8e727d
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 434cf46c8c037ce38946786bb6ad9c95afcf6f32
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68151582"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635837"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 

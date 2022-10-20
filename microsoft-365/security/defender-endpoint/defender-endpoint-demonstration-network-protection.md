@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 44e40e5675787a9e1ddad62dfaa576391cb499de
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 1d6693e625c1fd088d7275fc15dcbcde1a67c26c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573678"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638431"
 ---
 # <a name="network-protection-demonstrations"></a>Démonstrations de la protection réseau
 
@@ -42,11 +42,11 @@ Set-MpPreference -EnableNetworkProtection Enabled
 
 ## <a name="rule-states"></a>États de règle
 
-|État | Mode| Valeur numérique |
-|:---|:---|:---|
-| AuditMode | = Mode Audit | 2 |
-| Activé | = Mode bloc | 1 |
-| Désactivé | = Désactivé | 0 |d
+|État|Mode|Valeur numérique|
+|---|---|---|
+|AuditMode|= Mode Audit|2|
+|Activé|= Mode bloc|1|
+|Désactivé|= Désactivé|0|
 
 ## <a name="verify-configuration"></a>Vérifier la configuration
 
@@ -58,10 +58,9 @@ Get-MpPreference
 
 1. Activez la protection réseau à l’aide de la commande PowerShell :
 
-```powershell
-Set-MpPreference -EnableNetworkProtection Enabled
-
-```
+   ```powershell
+   Set-MpPreference -EnableNetworkProtection Enabled
+   ```
 
 2. À l’aide du navigateur de votre choix (et non de Microsoft Edge*), accédez au [test du site web Protection réseau](https://smartscreentestratings2.net/). Microsoft Edge a mis en place d’autres mesures de sécurité pour protéger contre cette vulnérabilité (SmartScreen).
 

@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
 ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+- purview-compliance
+- tier1
 description: Découvrez comment Exchange Online et Microsoft 365 utilisent TLS (Transport Layer Security) et le secret de transfert (FS) pour sécuriser les communications par e-mail. Obtenez également des informations sur le certificat émis par Microsoft pour Exchange Online.
-ms.openlocfilehash: 127e72fd756754b11cf27316a006fab08fc459fb
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 1b3133cd9111531efa10f18cad15556fd4833a80
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432328"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626553"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie
 
 Découvrez comment Exchange Online et Microsoft 365 utilisent TLS (Transport Layer Security) et le secret de transfert (FS) pour sécuriser les communications par e-mail. Fournit également des informations sur le certificat émis par Microsoft pour Exchange Online.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Principes de base de TLS pour Microsoft 365 et Exchange Online
 
 Les protocoles TLS (Transport Layer Security) et SSL (antérieur au protocole TLS) sont des protocoles de chiffrement qui sécurisent les communications sur un réseau à l’aide de certificats de sécurité pour chiffrer une connexion entre plusieurs ordinateurs. Le protocole TLS remplace le protocole SSL et est couramment appelé SSL 3.1. Exchange Online utilise TLS pour chiffrer les connexions entre les serveurs Exchange et les connexions entre les serveurs Exchange et d’autres serveurs tels que vos serveurs Exchange locaux ou les serveurs de messagerie de vos destinataires. Une fois la connexion chiffrée, toutes les données envoyées via cette connexion sont envoyées par le biais du canal chiffré. Toutefois, si vous transférez un message envoyé via une connexion chiffrée par TLS à une organisation de destinataires qui ne prend pas en charge le chiffrement TLS, ce message n’est pas nécessairement chiffré. TLS ne chiffre pas le message, mais uniquement la connexion.

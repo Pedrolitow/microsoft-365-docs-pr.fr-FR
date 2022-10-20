@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 8d728bd4e59371783725844fe83e16b4be62311d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 89f3b34534ac95b8e6ce6d054c38604866c37e07
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68168461"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629036"
 ---
 # <a name="export-browser-extensions-assessment-per-device"></a>Exporter l’évaluation des extensions de navigateur par appareil
 

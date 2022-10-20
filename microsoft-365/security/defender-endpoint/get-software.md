@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 51ed091b7444f30fff8b9f149a48fba5f2916d77
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fad1ba105699a0bea833051f1be742288330562b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192858"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628699"
 ---
 # <a name="list-software-inventory-api"></a>Répertorier l’API d’inventaire logiciel
 

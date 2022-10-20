@@ -20,16 +20,16 @@ ms.collection:
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 3fa3691d20688796b98c506947a0b8c77f569e7c
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: e44e514811940e065988617e772222afaf70b222
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225325"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637527"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Basculer vers Microsoft Defender pour point de terminaison - Phase 3 : Intégration
 

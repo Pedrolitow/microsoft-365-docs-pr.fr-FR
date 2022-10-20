@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 1f5d1d35a673f3ba93f82961353e0fc9c83297d5
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: a30582f8525e87715f3d2991fcc55ff5d27bb75a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68051759"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645756"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 

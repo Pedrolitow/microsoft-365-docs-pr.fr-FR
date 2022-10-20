@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: afa61d24804157c484912f158679ae8f9dd32357
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7d81103f0f87ccf5acddc4392ceb881c5e0a7df9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190667"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647013"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtenir les bases de connaissances manquantes par ID logiciel
 

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 1eb7b12c77231a475d745903d1b665da77430cf0
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 0af4f8d51b335514b8770dab761b224a8324735f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542934"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635595"
 ---
 <!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
 

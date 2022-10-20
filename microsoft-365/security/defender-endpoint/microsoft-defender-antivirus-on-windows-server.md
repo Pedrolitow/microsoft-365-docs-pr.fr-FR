@@ -11,17 +11,18 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/10/2022
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 74d56fe8f7c2ceeee23017a7932cd642438a3a69
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: f93485e5c184a2cedc4ca3458e8d8c1d563236a9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536189"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620940"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 

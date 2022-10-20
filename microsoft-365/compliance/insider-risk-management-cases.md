@@ -11,16 +11,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 678d500b5d523c2b656f4f30fa4ef4a4ed5015a7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 254fb4f17331be8b688463599dea86b9f3748ca8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628702"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634627"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
+
+>[!IMPORTANT]
+>Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Les cas sont au cœur de la gestion des risques internes et vous permettent d’examiner et d’agir en profondeur sur les problèmes générés par les indicateurs de risque définis dans vos stratégies. Les cas sont créés manuellement à partir d’alertes dans des situations où une action supplémentaire est nécessaire pour résoudre un problème lié à la conformité pour un utilisateur. Chaque cas est limité à un seul utilisateur et plusieurs alertes pour l’utilisateur peuvent être ajoutées à un cas existant ou à un nouveau cas.
 
@@ -32,6 +37,8 @@ Après avoir examiné les détails d’un cas, vous pouvez prendre les mesures s
 - faire remonter le cas d’une enquête eDiscovery (Premium)
 
 Consultez la [vidéo sur l’examen et l’escalade de la gestion des risques internes](https://www.youtube.com/watch?v=UONUSmkRC8s) pour obtenir une vue d’ensemble de la façon dont les cas sont examinés et gérés dans la gestion des risques internes.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="cases-dashboard"></a>Tableau de bord Cas
 
@@ -80,7 +87,7 @@ L’onglet **Vue d’ensemble du cas** récapitule les détails du cas pour les 
 - **État** : état actuel du cas, Actif ou Fermé.
 - **Cas créé le** : date et heure de création du cas.
 - **Score de risque de l’utilisateur** : niveau de risque calculé actuel de l’utilisateur pour le cas. Ce score est calculé toutes les 24 heures et utilise les scores de risque d’alerte de toutes les alertes actives associées à l’utilisateur.
-- **E-mail** : alias de messagerie de l’utilisateur pour le cas.
+- **Email** : alias de messagerie de l’utilisateur pour le cas.
 - **Organisation ou service** : organisation ou service auquel l’utilisateur est affecté.
 - **Nom du gestionnaire** : nom du responsable de l’utilisateur.
 - **E-mail du responsable** : alias de messagerie du responsable de l’utilisateur.
@@ -126,6 +133,12 @@ Utilisez le contrôle de filtre pour filtrer les alertes par plusieurs attributs
 **L’onglet Explorateur d’activités** permet aux analystes de risque et aux enquêteurs d’examiner les détails de l’activité associés aux alertes de risque. Par exemple, dans le cadre des actions de gestion des cas, les enquêteurs et les analystes devront peut-être examiner toutes les activités à risque associées au cas pour plus d’informations. Avec **l’Explorateur d’activités**, les réviseurs peuvent rapidement passer en revue une chronologie des activités à risque détectées et identifier et filtrer toutes les activités à risque associées aux alertes.
 
 Pour plus d’informations sur l’Explorateur d’activités, consultez l’article [sur les activités de gestion des risques internes](insider-risk-management-activities.md#activity-explorer) .
+
+### <a name="forensic-evidence-preview"></a>Preuves légales (préversion)
+
+L’onglet **Preuves légales (préversion)** permet aux enquêteurs des risques d’examiner les captures visuelles associées aux activités à risque incluses dans les cas. Par exemple, dans le cadre des actions de gestion des cas, les enquêteurs peuvent avoir besoin d’aider à clarifier le contexte de l’activité utilisateur en cours d’examen. L’affichage des clips réels de l’activité peut aider l’enquêteur à déterminer si l’activité de l’utilisateur est potentiellement risquée et peut entraîner un incident de sécurité.
+
+Pour plus d’informations sur les preuves judiciaires, consultez l’article [En savoir plus sur les preuves légales de gestion des risques internes](/microsoft-365/compliance/insider-risk-management-forensic-evidence) .
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 

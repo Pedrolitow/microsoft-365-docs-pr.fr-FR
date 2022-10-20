@@ -5,7 +5,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: Découvrez comment accélérer le processus de détection et de traitement des comptes d’utilisateur compromis avec des fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5cf0574629bc39f987ab5ee4ad2968937ed4bc64
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 1e55f3aaec89429be06f97ed0e7947461da9015a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68064187"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622219"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis avec une investigation et une réponse automatisées
 

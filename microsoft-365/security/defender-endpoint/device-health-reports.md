@@ -17,15 +17,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 7bd1848793b72740a988b83661aa42bd66963749
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b309a55f00957da8fdc3f9f5f283191fa7ac55c5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193012"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634253"
 ---
 # <a name="device-health-reports-in-microsoft-defender-for-endpoint"></a>Rapports d’intégrité des appareils dans Microsoft Defender pour point de terminaison
 

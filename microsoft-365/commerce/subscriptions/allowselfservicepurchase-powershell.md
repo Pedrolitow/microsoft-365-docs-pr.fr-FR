@@ -22,12 +22,12 @@ search.appverid:
 description: Découvrez comment utiliser l’applet de commande PowerShell AllowSelfServicePurchase pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 10/10/2022
-ms.openlocfilehash: 77e1fa8fe85861381c4eb5128148c08f0997bcfc
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 3ce3c30a7a51987407c9040e6b8317d092ff491f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533299"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627650"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 
@@ -44,10 +44,10 @@ Vous pouvez utiliser le module **MSCommerce** PowerShell pour :
 
 Pour utiliser le module **MSCommerce** PowerShell, vous avez besoin des éléments suivants :
 
-- Un appareil Windows 10
+- Un système d’exploitation Windows 10 ou ultérieur.
 - PowerShell 5 ou version ultérieure. Actuellement, PowerShell 6.x/7.x n’est pas pris en charge avec ce module.
-- Autorisation administrateur pour l’appareil
-- Rôle de Administration globale ou de facturation pour votre locataire
+- Rôle d’administrateur général ou de facturation pour que votre locataire modifie les stratégies de produit **MSCommerce** .
+- Rôle de lecteur global pour votre locataire afin d’afficher une liste en lecture seule des stratégies de produit **MSCommerce** .
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Installer le module MSCommerce PowerShell
 

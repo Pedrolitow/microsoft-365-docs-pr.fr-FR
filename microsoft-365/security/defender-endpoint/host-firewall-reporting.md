@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -18,12 +18,12 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: e2ffc8a81fcd52ac254e022c80455bc3b3d91d53
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 4ee445ba46eebf912251849b2f4f2aec0edb9282
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226292"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644590"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison
 

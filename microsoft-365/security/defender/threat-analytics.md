@@ -19,15 +19,15 @@ ms.collection:
 - m365-security
 - m365initiative-m365-defender
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: 2e88c8ba70f966a63d734f07249250c708b772ca
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 8845a3f8da6befa5a3482b871257d548c73a6314
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68069796"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645492"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Analyse des menaces dans Microsoft 365 Defender
 

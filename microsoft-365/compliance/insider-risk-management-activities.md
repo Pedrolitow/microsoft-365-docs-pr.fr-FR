@@ -15,23 +15,23 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 5487b2292901cd34599664215f18b4bbdc7cd943
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5d56550ce32c8e26af1dd777cd8477e7a59788d0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564627"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630225"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
 >[!IMPORTANT]
 >Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou involontaires, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Créés avec la confidentialité par conception, les utilisateurs sont pseudonymes par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
-L’examen des activités des utilisateurs à risque est une première étape importante dans la réduction des risques internes pour votre organisation. Ces risques peuvent être des activités qui génèrent des alertes à partir de stratégies de gestion des risques internes, ou des risques liés à des activités détectées par des stratégies, mais qui ne créent pas immédiatement une alerte de gestion des risques internes pour les utilisateurs. Vous pouvez examiner ces types d’activités à l’aide des **rapports d’activité utilisateur (préversion)** ou du **tableau de bord Alerte**.
+L’examen des activités des utilisateurs à risque est une première étape importante dans la réduction des risques internes pour votre organisation. Ces risques peuvent être des activités qui génèrent des alertes à partir de stratégies de gestion des risques internes, ou des risques liés à des activités détectées par des stratégies, mais qui ne créent pas immédiatement une alerte de gestion des risques internes pour les utilisateurs. Vous pouvez examiner ces types d’activités à l’aide des **rapports d’activité utilisateur** ou du **tableau de bord Alerte**.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="user-activity-reports-preview"></a>Rapports d’activité utilisateur (préversion)
+## <a name="user-activity-reports"></a>Rapports d'activité des utilisateurs
 
 Les rapports d’activité utilisateur vous permettent d’examiner les activités de certains utilisateurs pendant une période définie sans avoir à les affecter temporairement ou explicitement à une stratégie de gestion des risques internes. Dans la plupart des scénarios de gestion des risques internes, les utilisateurs sont explicitement définis dans les stratégies, et ils peuvent avoir des alertes de stratégie (en fonction du déclenchement d’événements) et des scores de risque associés aux activités. Toutefois, dans certains scénarios, vous souhaiterez peut-être examiner les activités des utilisateurs qui ne sont pas explicitement définis dans une stratégie. Ces activités peuvent être destinées aux utilisateurs auxquels vous avez reçu un conseil sur l’utilisateur et les activités potentiellement risquées, ou aux utilisateurs qui n’ont généralement pas besoin d’être affectés à une stratégie de gestion des risques internes.
 
@@ -50,10 +50,11 @@ Les nouveaux rapports prennent généralement jusqu’à 10 heures avant d’êt
 
 ![Rapport d’activité des utilisateurs de gestion des risques internes.](../media/insider-risk-user-activity-report.png)
 
-Le **rapport d’activité utilisateur** de l’utilisateur sélectionné contient les onglets **Activité de l’utilisateur** et **Explorateur d’activités** :
+Le **rapport d’activité utilisateur** de l’utilisateur sélectionné contient les onglets **Activité** utilisateur, **Explorateur d’activités** et **Preuves légales (préversion)** :
 
 - **Activité de l’utilisateur** : utilisez cette vue de graphique pour examiner les activités et afficher les activités potentielles qui se produisent dans des séquences. Cet onglet est structuré pour permettre un examen rapide d’un cas, y compris une chronologie historique de toutes les activités, les détails de l’activité, le score de risque actuel pour l’utilisateur dans le cas, la séquence d’événements à risque et les contrôles de filtrage pour faciliter les efforts d’investigation.
 - **Explorateur d’activités** : **l’onglet Explorateur d’activités** fournit aux enquêteurs des risques un outil analytique complet qui fournit des informations détaillées sur les activités. Avec l’Explorateur d’activités, les réviseurs peuvent rapidement passer en revue une chronologie des activités à risque détectées et identifier et filtrer toutes les activités à risque associées aux alertes. Pour en savoir plus sur l’utilisation de l’Explorateur d’activités, consultez la section *Explorateur d’activités* plus loin dans cet article.
+- **Preuves légales (préversion)** : l’onglet **Preuves judiciaires (préversion)** permet d’accéder aux captures de preuves légales associées aux activités susceptibles d’entraîner des incidents de sécurité pour les utilisateurs. Les preuves légales permettent la capture visuelle personnalisable sur les appareils pour aider votre organisation à mieux atténuer, comprendre et répondre aux risques de données potentiels, tels que l’exfiltration de données non autorisées de données sensibles. Pour en savoir plus sur l’utilisation des preuves judiciaires, consultez [En savoir plus sur les preuves légales de gestion des risques internes](/microsoft-365/compliance/insider-risk-management-forensic-evidence).
 
 ## <a name="alert-dashboard"></a>Tableau de bord d’alerte
 
@@ -195,11 +196,11 @@ Le graphique **d’activité utilisateur** est l’un des outils les plus puissa
 > [!NOTE]
 > L’Explorateur d’activités est disponible dans la zone de gestion des alertes pour les utilisateurs qui ont déclenché des événements une fois cette fonctionnalité disponible dans votre organisation.
 
-L’Explorateur d’activités fournit aux enquêteurs et aux analystes des risques un outil analytique complet qui fournit des informations détaillées sur les alertes. Avec l’Explorateur d’activités, les réviseurs peuvent rapidement passer en revue une chronologie des activités à risque détectées et identifier et filtrer toutes les activités à risque associées aux alertes. 
+L’Explorateur d’activités fournit aux enquêteurs et aux analystes des risques un outil analytique complet qui fournit des informations détaillées sur les alertes. Avec l’Explorateur d’activités, les réviseurs peuvent rapidement passer en revue une chronologie des activités à risque détectées et identifier et filtrer toutes les activités à risque associées aux alertes.
 
 Pour filtrer les alertes sur l’Explorateur d’activités pour les informations de colonne, sélectionnez le contrôle Filtre. Vous pouvez filtrer les alertes par un ou plusieurs attributs répertoriés dans le volet d’informations de l’alerte. L’Explorateur d’activités prend également en charge les colonnes personnalisables pour aider les enquêteurs et les analystes à concentrer le tableau de bord sur les informations les plus importantes pour eux.
 
-Utilisez l’étendue d’activité et les filtres d’insights sur les risques pour afficher et trier les activités et les insights pour les zones suivantes.
+Utilisez *l’étendue d’activité* et les filtres *d’insights sur les risques* pour afficher et trier les activités et les insights pour les zones suivantes.
 
 - **Filtres d’étendue d’activité** : filtre toutes les activités notées pour l’utilisateur.
   - Toutes les activités notées pour cet utilisateur
@@ -250,8 +251,8 @@ Une fois le cas créé, les enquêteurs et les analystes peuvent gérer et agir 
 
 Pour réduire le nombre d’éléments plus anciens qui fournissent une valeur actuelle limitée, la conservation et les limites suivantes s’appliquent aux alertes de gestion des risques internes, aux cas et aux rapports d’activité des utilisateurs :
 
-|Élément|Rétention/limite|
-|---|---|
+|**Élément**|**Rétention/limite**|
+|:-------|:------------------|
 |Alertes avec l’état de révision des besoins|120 jours après la création de l’alerte, puis supprimé automatiquement|
 |Cas actifs (et artefacts associés)|Rétention indéfinie, jamais expirer|
 |Cas résolus (et artefacts associés)|120 jours à partir de la résolution de cas, puis supprimé automatiquement|

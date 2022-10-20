@@ -16,13 +16,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
-ms.openlocfilehash: a7cc35decd9c6168b3c22af8ea7d20baca75d25b
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.topic: conceptual
+ms.openlocfilehash: 82c4a9e5bc61377209a1f05e24f13452f587ff2e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68149976"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638871"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Migration de serveurs de Microsoft Monitoring Agent vers la solution unifiée
 

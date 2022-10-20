@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: d1aca56b87d037a90498baba9a6151ec3878d0f2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bc93ecda200dc207f39c95a2e2ce3f3f97c2251c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68175015"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628288"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Prise en main du mode de résolution des problèmes dans Microsoft Defender pour point de terminaison 
 
@@ -83,7 +83,7 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
   :---|:---|:---
   21H2/SV1|>=22000.593|[KB5011563 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011563)
   20H1/20H2/21H1|>=19042.1620<br/> >=19041.1620<br/> >=19043.1620|[KB5011543 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011543)
-  Windows Server 2022|>=20348.617|[KB5011558 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
+  Windows Server 2022|>=20348.617|[KB5011558 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
   Windows Server 2019 (RS5)|>=17763.2746|[KB5011551 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011551)
 
 - Le mode de résolution des problèmes est également disponible pour les machines exécutant la solution unifiée moderne pour Windows Server 2012 R2 et Windows Server 2016. Pendant le mode de dépannage, utilisez-le `Set-MPPreference -DisableTamperProtection $true` pour désactiver temporairement la protection contre les falsifications sur votre appareil et apporter les modifications de configuration nécessaires. Avant d’utiliser le mode de résolution des problèmes, vérifiez que tous les composants suivants sont à jour :

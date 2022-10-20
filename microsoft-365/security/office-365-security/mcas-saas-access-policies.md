@@ -3,7 +3,7 @@ title: Stratégies de Microsoft Defender for Cloud Apps recommandées pour les a
 description: Décrit les stratégies recommandées pour l’intégration à Microsoft Defender for Cloud Apps.
 author: BrendaCarter
 manager: laurawi
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 ms.author: bcarter
 ms.date: 03/22/2021
@@ -18,12 +18,12 @@ ms.collection:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 18ff675bfe1a649869d87506d89f10f125a084d5
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 522b4d1bf1a6d99cf38f3dc6dafb116cfd39111c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68079950"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626948"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Stratégies de Microsoft Defender for Cloud Apps recommandées pour les applications SaaS
 

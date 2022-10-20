@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités dans les licences de votre locataire. Recherchez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: 350b13242d457309f7d81c2ca710d64af42dd12b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c0d08945fb1cff97704a30ebd645a2096b49d18e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68179348"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626311"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -139,10 +139,6 @@ Utilisez le guide [planifier votre déploiement sans mot de passe](https://aka.m
 Permettre aux utilisateurs de modifier ou de réinitialiser leur mot de passe indépendamment, si leur compte est verrouillé ou s’ils oublient leur mot de passe sans avoir à contacter un ingénieur du support technique.
 
 Utilisez le guide [de déploiement de la réinitialisation de mot de passe en libre-service](https://aka.ms/SSPRSetupGuide) pour recevoir des articles et des instructions pertinents pour configurer les options de Portail Azure appropriées pour vous aider à déployer la réinitialisation de mot de passe dans votre environnement.
-
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>conseiller de déploiement Services ADFS (AD FS)
-
-Le [conseiller de déploiement AD FS](https://aka.ms/adfsguidance) vous fournit des conseils pas à pas sur le déploiement d’une infrastructure AD FS locale qui authentifie les utilisateurs pour Les services Microsoft 365 et Office 365. Avec ce guide, votre organisation peut passer en revue les composants et les exigences AD FS, acquérir et installer des certificats SSL nécessaires au déploiement et installer un serveur proxy d’application web requis.
 
 ## <a name="guides-for-security-and-compliance"></a>Guides de sécurité et de conformité
 

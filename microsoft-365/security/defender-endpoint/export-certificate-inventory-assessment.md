@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: c20f09fe95668d229ab9716ac43818bd0569a22d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 81574ddb6fcf0dcb9c1def425f5d14587df617ee
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200250"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634209"
 ---
 # <a name="export-certificate-inventory-per-device"></a>Exporter l’inventaire des certificats par appareil
 

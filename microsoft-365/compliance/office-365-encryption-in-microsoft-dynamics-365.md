@@ -11,15 +11,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: ''
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- purview-compliance
+- tier3
 description: Découvrez comment Microsoft utilise la technologie de chiffrement pour protéger les données client dans Microsoft Dynamics 365 au repos dans une base de données Microsoft et en transit.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a11b854f9757eaf6ed7ea88c9d7254ee5f7918b
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 1bbbdc37e431522e5c6155e9365177c35a54d961
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68574030"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644964"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Chiffrement dans Microsoft Dynamics 365
 
