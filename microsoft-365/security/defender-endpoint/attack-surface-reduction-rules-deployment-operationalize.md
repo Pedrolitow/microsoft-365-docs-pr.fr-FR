@@ -15,7 +15,7 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - m365solution-asr-rules
@@ -23,12 +23,12 @@ ms.collection:
 - tier1
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: 2ff38c373548adf50a0ae8db91b46872c4d3e572
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 98aa168624b4093923ed6afa476e3385248ce3c2
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68146588"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624640"
 ---
 # <a name="operationalize-attack-surface-reduction-asr-rules"></a>Utiliser des règles de réduction de la surface d’attaque (ASR)
 

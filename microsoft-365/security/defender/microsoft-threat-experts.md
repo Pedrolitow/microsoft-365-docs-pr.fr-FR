@@ -15,18 +15,18 @@ author: martyav
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier1
-ms.openlocfilehash: 4ed40bbde797bd258af547dd7c5a48faad523b64
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 9e6b7d16606d9f98b4ae5e5c5ddb473d7e1d1d4b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68090990"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622373"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>vue d’ensemble de Spécialistes des menaces Microsoft dans Microsoft 365
+# <a name="microsoft-defender-experts-in-microsoft-365-overview"></a>Vue d’ensemble des experts Microsoft Defender dans Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,23 +42,23 @@ ms.locfileid: "68090990"
 
 Les notifications d’attaque de point de terminaison (précédemment appelées Spécialistes des menaces Microsoft - Notification d’attaque ciblée) sont un service de chasse aux menaces managée. Une fois que vous avez appliqué et accepté, vous recevrez des notifications d’attaque de point de terminaison de la part d’experts en menaces Microsoft, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation.
 
-Spécialistes des menaces Microsoft – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée. Vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement.
+Microsoft Defender Experts – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée. Vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement.
 
 ## <a name="apply-for-endpoint-attack-notifications"></a>Appliquer pour les notifications d’attaque de point de terminaison
 
 > [!IMPORTANT]
 > Avant de présenter votre demande, veillez à discuter des conditions d’éligibilité pour les notifications d’attaque de point de terminaison avec votre fournisseur de services techniques Microsoft et votre équipe de compte.
 
-Si vous avez déjà Microsoft Defender pour point de terminaison et Microsoft 365 Defender, vous pouvez demander des notifications d’attaque de point de terminaison via leur portail Microsoft 365 Defender. Accédez aux **paramètres > points de terminaison > fonctionnalités générales > avancées > notifications d’attaque de** point de terminaison, puis **sélectionnez Appliquer**. Pour obtenir une description complète, consultez [Configurer les fonctionnalités de Spécialistes des menaces Microsoft](./configure-microsoft-threat-experts.md).
+Si vous avez déjà Microsoft Defender pour point de terminaison et Microsoft 365 Defender, vous pouvez demander des notifications d’attaque de point de terminaison via leur portail Microsoft 365 Defender. Accédez aux **paramètres > points de terminaison > fonctionnalités générales > avancées > notifications d’attaque de** point de terminaison, puis **sélectionnez Appliquer**. Pour obtenir une description complète, consultez [Configurer les fonctionnalités de Microsoft Defender Experts](./configure-microsoft-threat-experts.md).
 
-Une fois votre application approuvée, vous commencerez à recevoir des notifications d’attaque de point de terminaison chaque fois que les experts en menace détectent une menace pour votre environnement.
+Une fois votre application approuvée, vous commencerez à recevoir des notifications d’attaque de point de terminaison chaque fois que les experts Defender détectent une menace pour votre environnement.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>S’abonner à Spécialistes des menaces Microsoft - Experts à la demande
+## <a name="subscribe-to-microsoft-defender-experts---experts-on-demand"></a>S’abonner à Microsoft Defender Experts - Experts à la demande
 
 > [!NOTE]
 > Experts à la demande n’est pas un service de réponse aux incidents de sécurité. Il vise à mieux comprendre les menaces complexes qui affectent votre organisation. Collaborez avec votre propre équipe de réponse aux incidents de sécurité pour résoudre les problèmes urgents de réponse aux incidents de sécurité. Si vous n’avez pas votre propre équipe de réponse aux incidents de sécurité et que vous souhaitez obtenir l’aide de Microsoft, créez une demande de support dans le [Hub De services Premier](/services-hub/).
 
-Contactez votre représentant Microsoft pour vous abonner à Experts à la demande.  Pour plus d’informations, consultez [Configurer les fonctionnalités de Spécialistes des menaces Microsoft](./configure-microsoft-threat-experts.md).
+Contactez votre représentant Microsoft pour vous abonner à Experts à la demande.  Pour plus d’informations, consultez [Configurer les fonctionnalités de Microsoft Defender Experts](./configure-microsoft-threat-experts.md).
 
 ## <a name="receive-endpoint-attack-notification"></a>Recevoir une notification d’attaque de point de terminaison
 
@@ -103,4 +103,4 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les fonctionnalités de Spécialistes des menaces Microsoft](./configure-microsoft-threat-experts.md)
+- [Configurer les fonctionnalités Microsoft Defender Experts](./configure-microsoft-threat-experts.md)

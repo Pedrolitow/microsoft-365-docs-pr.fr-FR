@@ -24,12 +24,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: 770a5d5ac44f5b60485287979395732f7303c755
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b9429afee03d59e1fe88beb9d8f77549de1a5294
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055389"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622615"
 ---
 # <a name="what-is-microsoft-365-defender"></a>Qu’est-ce que Microsoft 365 Defender ?
 
@@ -43,7 +43,7 @@ Microsoft 365 Defender est une suite de défense d’entreprise pré-et post-vio
 
 Grâce à la solution intégrée Microsoft 365 Defender, les professionnels de la sécurité peuvent assembler les signaux de menace que chacun de ces produits reçoit et déterminer l’étendue et l’impact complets de la menace , comment elle est entrée dans l’environnement, ce qu’elle est affectée et comment elle impacte actuellement l’organisation. Microsoft 365 Defender prend des mesures automatiques pour empêcher ou arrêter l’attaque et guérir automatiquement les boîtes aux lettres, les points de terminaison et les identités d’utilisateur affectés.
 
-<center><h2>Services Microsoft 365 Defender</center></h2>
+<center><h2>produits Microsoft 365 Defender</center></h2>
 <table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Microsoft Defender pour point de terminaison</b></center></a></td>
 <td><center><b><a href="/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management"><b>Gestion des vulnérabilités Microsoft Defender</b></center></a></td>
 <td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Microsoft Defender pour Office 365</b></center></a></td>
@@ -52,6 +52,8 @@ Grâce à la solution intégrée Microsoft 365 Defender, les professionnels de l
 </tr>
 </table>
 <br>
+
+En dehors de ces éléments, Microsoft 365 Defender travaille en étroite collaboration avec Azure Active Directory Identity Protection, la gouvernance des applications et Microsoft Data Loss Prevention pour fournir une protection intégrée contre les attaques sophistiquées. 
 
 ## <a name="microsoft-365-defender-interactive-guide"></a>Microsoft 365 Defender guide interactif
 
@@ -66,7 +68,7 @@ Microsoft 365 Defender services protègent :
 - **Points de terminaison avec Defender pour point de terminaison** - Defender pour point de terminaison est une plateforme de point de terminaison unifiée pour la protection préventive, la détection post-violation, l’investigation automatisée et la réponse.
 - **Ressources avec Defender Vulnerability Management** : Gestion des vulnérabilités Microsoft Defender offre une visibilité continue des ressources, des évaluations intelligentes basées sur les risques et des outils de correction intégrés pour aider vos équipes informatiques et de sécurité à hiérarchiser et à résoudre les vulnérabilités critiques et les erreurs de configuration au sein de votre organisation.
 - **Email et la collaboration avec Defender pour Office 365** - Defender pour Office 365 protège votre organisation contre les menaces malveillantes posées par les e-mails, les liens (URL) et les outils de collaboration.
-- **Identités avec Defender pour l’identité et Azure Active Directory (Azure AD) Identity Protection** - Defender pour Identity utilise vos signaux AD DS (Domain Services) Active Directory local pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation. Azure AD Identity Protection automatise la détection et la correction des risques basés sur l’identité dans votre azure AD basé sur le cloud.
+- **Identités avec Defender pour Identity et Azure Active Directory (Azure AD) Identity Protection** : Microsoft Defender pour Identity est une solution de sécurité basée sur le cloud qui tire parti de votre Active Directory local  signaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation. Azure AD Identity Protection utilise les apprentissages que Microsoft a acquis à partir de sa position dans les organisations avec Azure AD, l’espace grand public avec les comptes Microsoft et dans les jeux avec Xbox pour protéger vos utilisateurs.
 - **Applications avec Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps est une solution multisaS complète offrant une visibilité approfondie, des contrôles de données forts et une protection renforcée contre les menaces pour vos applications cloud.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
@@ -107,3 +109,7 @@ Microsoft 365 Defender exigences de licence doivent être remplies avant de pouv
 
 - [Conditions de licence](prerequisites.md#licensing-requirements)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
+
+## <a name="see-also"></a>Voir aussi
+
+- [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)

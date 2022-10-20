@@ -16,15 +16,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b32a565455a632aa411c2aca053755238862b2c3
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d5b90408220a72a01497692fcbcd91bed1cad109
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228578"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621095"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
