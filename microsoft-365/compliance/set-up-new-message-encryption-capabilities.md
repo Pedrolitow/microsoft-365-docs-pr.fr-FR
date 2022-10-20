@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: Découvrez le chiffrement de messages Microsoft Purview qui permet la communication par e-mail protégée avec des personnes à l’intérieur et à l’extérieur de votre organisation.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 4b47296ec6e445df20a0694e5cff7ed5b2216852
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
-ms.translationtype: HT
+ms.openlocfilehash: 9deff0d084a8a9cf498614da355f36320f6e44ae
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099456"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639881"
 ---
 # <a name="set-up-message-encryption"></a>Configurer le chiffrement des messages
 
@@ -34,13 +34,15 @@ Le chiffrement de messages Microsoft Purview permet aux organisations de partage
 
 Suivez les étapes ci-dessous pour vous assurer que le chiffrement de messages Microsoft Purview est disponible dans votre organisation.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="verify-that-azure-rights-management-is-active"></a>Vérifiez que Azure Rights Management est activé.
 
 Le chiffrement de messages Microsoft Purview tire parti des fonctionnalités de protection [d’Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection), la technologie utilisée par [Azure Information Protection](/azure/information-protection/what-is-azure-rms) pour protéger les e-mails et les documents via le chiffrement et les contrôles d’accès.
 
 La seule condition préalable à l’utilisation du chiffrement de messages Microsoft Purview est qu’[Azure Rights Management](/azure/information-protection/what-is-azure-rms) doit être activé dans le locataire de votre organisation. Si c’est le cas, Microsoft 365 active automatiquement le chiffrement des messages et vous n’avez rien à faire.
 
-Azure RMS est également activé automatiquement pour la plupart des offres éligibles, de sorte que vous n’avez probablement pas besoin d’effectuer quoi que ce soit à cet égard. Voir [Activation de Microsoft Azure Rights Management](/azure/information-protection/activate-service) pour plus d’informations.
+Azure RMS is also activated automatically for most eligible plans, so you probably don't have to do anything in this regard either. See [Activating Azure Rights Management](/azure/information-protection/activate-service) for more information.
 
 > [!IMPORTANT]
 > Si vous utilisez Active Directory Rights Management service (AD RMS) avec Exchange Online, vous devez [migrer vers Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) avant de pouvoir utiliser le chiffrement des messages. Le chiffrement de messages Microsoft Purview n’est pas compatible avec AD RMS.
@@ -138,6 +140,6 @@ Pour mettre à jour les règles existantes afin d’utiliser le chiffrement de m
 3. Pour chaque règle, dans **Procédez comme suit** :
     - Sélectionnez **Modifier la sécurité des messages**.
     - Sélectionnez **Appliquer le chiffrement des messages Office 365 et la protection des droits**.
-    - Sélectionnez un modèle RMS dans la liste.
+    - Sélectionnez **Chiffrer** dans la liste des modèles RMS.
     - Cliquez sur **Enregistrer**.
     - Sélectionnez **OK**.

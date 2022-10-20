@@ -17,13 +17,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
-ms.openlocfilehash: aca5eb43b29076e0a320b472e55f35abfbaa42a6
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.topic: conceptual
+ms.openlocfilehash: 162993f4d6c897dbac127c7377beffc90beff063
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68146795"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623848"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>Attribuer l’accès utilisateur au centre de sécurité Microsoft Defender.
 

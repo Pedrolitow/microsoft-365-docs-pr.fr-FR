@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: fa03a2b2d91598b65e523d520b4c87b708202d18
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 2769321a4abd534987cf15b5b51f36f004eede16
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221484"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642412"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender pour point de terminaison installation de l’appareil Device Control
 
@@ -138,7 +138,7 @@ Empêcher l’installation d’appareils amovibles
 Ce paramètre de stratégie vous permet de spécifier une liste d’ID matériels Plug-and-Play et d’ID compatibles pour les appareils que Windows n’est pas autorisé à installer. Par défaut, ce paramètre de stratégie est prioritaire sur tout autre paramètre de stratégie qui permet à Windows d’installer un appareil.
 
 > [!NOTE]
-> Pour activer **l’option Autoriser l’installation d’appareils qui correspondent à l’un de ces paramètres de stratégie d’ID d’instance d’appareil** pour remplacer ce paramètre de stratégie pour les appareils applicables, **activez l’ordre d’évaluation appliquer en couches pour autoriser et empêcher les stratégies d’installation des appareils sur tous les paramètres de stratégie de correspondance d’appareil** .
+> Pour activer **l’option Autoriser l’installation d’appareils qui correspondent à l’un de ces paramètres de stratégie d’ID d’instance d’appareil** pour remplacer ce paramètre de stratégie pour les appareils applicables, **activez l’ordre d’évaluation appliquer en couches pour autoriser et empêcher les stratégies d’installation des appareils sur tous les paramètres de stratégie de correspondance d’appareil** . En outre, la stratégie d’autorisation n’est pas prioritaire si l’option **Bloquer le stockage amovible** est sélectionnée dans Device Control.
 
 Si vous activez ce paramètre de stratégie, Windows n’est pas autorisé à installer un appareil dont l’ID matériel ou l’ID compatible apparaît dans la liste que vous créez. Si vous activez ce paramètre de stratégie sur un serveur de bureau distant, le paramètre de stratégie affecte la redirection des appareils spécifiés à partir d’un client bureau à distance vers le serveur bureau à distance.
 

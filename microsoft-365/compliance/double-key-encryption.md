@@ -12,13 +12,14 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - purview-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 60769757cbfc4c6f31131fde070a393201bc6031
-ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+ms.openlocfilehash: 8ad1313b609d4322e9b5b6cf0c9b3272c00bfbb8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68472187"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642896"
 ---
 # <a name="double-key-encryption"></a>Chiffrement à double clé
 

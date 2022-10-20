@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 739e4464a7c7a85d3a3ea75130e4e0a0bade000d
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 288588be3b9f519da5e123ef1a07e6c216702fdf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224841"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633788"
 ---
 # <a name="troubleshoot-issues-for-microsoft-defender-for-endpoint-on-linux-rhel6"></a>Résoudre les problèmes de Microsoft Defender pour point de terminaison sur Linux RHEL6
 

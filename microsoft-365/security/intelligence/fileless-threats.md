@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 41444a5fbc49aee61fe95359a876de83b72ba67c
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: b86ccbfeef82833d3df8597cd1a82cd25f1ab383
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227303"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640409"
 ---
 # <a name="fileless-threats"></a>Menaces sans fichier
 

@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
-ms.openlocfilehash: 805f493ef1dd50e2ac1ce059ad7e21b8edef959a
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 805778b8837e4da69606c21b5b4c6cb4f67487b6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68059303"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639508"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utiliser des requêtes partagées dans un repérage avancé
 

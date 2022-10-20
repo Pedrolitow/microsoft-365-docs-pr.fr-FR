@@ -13,18 +13,18 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 06/16/2022
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: f1941346e4cff7853db34cbb11e938fe2dd77816
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 2319c34629d187a092bb34c5a0fd3643c932bb2f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68157389"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642786"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Erreurs courantes à éviter lors de la définition d’exclusions
 

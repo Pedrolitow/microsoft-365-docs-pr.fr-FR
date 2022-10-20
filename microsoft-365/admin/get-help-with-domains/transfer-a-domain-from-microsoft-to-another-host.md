@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Recherchez les étapes ci-dessous pour transférer un domaine de Microsoft vers un autre bureau d’enregistrement. '
-ms.openlocfilehash: 7209d17caf8e89760a3abe9543f78c3c86c39bc4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 68b145dfdd11cf58a2a56bfdcbba1cc45fccc519
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193914"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642082"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Transférer un domaine de Microsoft vers un autre hôte
 
@@ -37,7 +37,7 @@ Vous ne pouvez pas transférer un domaine Microsoft 365 vers un autre bureau d�
 > [!NOTE]
 > Une requête _Whois_ montre un bureau d’enregistrement de domaines acheté par Microsoft en tant que Wild West Domains LLC. Toutefois, seul Microsoft doit être contacté concernant votre domaine acheté par Microsoft 365.
 
-Suivez ces étapes pour obtenir un code sur Microsoft 365, puis accédez à l’autre site web du bureau d’enregistrement de domaines pour configurer le transfert de votre nom de domaine vers le nouveau bureau d’enregistrement.
+Connectez-vous en tant qu’administrateur général, suivez ces étapes pour obtenir un code sur Microsoft 365, puis accédez à l’autre site web du bureau d’enregistrement de domaines pour configurer le transfert de votre nom de domaine vers le nouveau bureau d’enregistrement.
 
 ## <a name="transfer-a-domain"></a>Transférer un domaine
 

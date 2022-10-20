@@ -6,7 +6,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: martyav
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security
 - tier1
 search.appverid: met150
-ms.openlocfilehash: 2c8428256fb7e4d061caee6bb22680698ba567a7
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 3b8f1779eb78df07e5379a4aa56aeb3acd19abc6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227721"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637351"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 

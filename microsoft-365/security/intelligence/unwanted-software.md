@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 5d40a1862e65f0028fe72a41a6ae3f6ac8e4e266
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ab64cf13c2f219296ab6ee0831714098fd08e73f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229589"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640365"
 ---
 # <a name="unwanted-software"></a>Logiciels indésirables
 

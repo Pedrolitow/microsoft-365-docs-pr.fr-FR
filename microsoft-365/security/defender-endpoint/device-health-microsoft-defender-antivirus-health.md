@@ -17,15 +17,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: a1688fc03bfa31a72bbfc7a984553c09f7681c31
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a5641725f9f259064c7d380da470353395335363
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68175059"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635551"
 ---
 # <a name="device-health-microsoft-defender-antivirus-health-report"></a>État d’intégrité de l’appareil, Microsoft Defender rapport d’intégrité antivirus
 

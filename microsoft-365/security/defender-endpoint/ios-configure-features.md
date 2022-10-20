@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c1d909699cdcbf993351a5232f2b12cbf84b5ca1
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: fb5736f0de612e4de3bc19f873721a2577ca6521
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222911"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630049"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS
 
@@ -81,7 +81,7 @@ Cette configuration est disponible à la fois pour les appareils inscrits (GPM) 
     - Dans [le Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez **aux** >  stratégies  >  de **configuration d’applications****Ajouter** >  des **appareils gérés**.
     - Donnez à la stratégie un nom, **Platform > iOS/iPadOS**.
     - Sélectionnez Microsoft Defender pour point de terminaison comme application cible.
-    - Dans la page Paramètres, sélectionnez Utiliser le concepteur de configuration et ajoutez **WebProtection** comme clé et type valeur **booléen**.
+    - Dans la page Paramètres, sélectionnez Utiliser le concepteur de configuration et ajoutez **WebProtection** comme clé et type valeur **string**.
         - Par défaut, **WebProtection= true**.
         - Administration devez rendre **WebProtection = false** pour désactiver la protection web.
         - Defender envoie la pulsation au portail Microsoft 365 Defender chaque fois que l’utilisateur ouvre l’application.

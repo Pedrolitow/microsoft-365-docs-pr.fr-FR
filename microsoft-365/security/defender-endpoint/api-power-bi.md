@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 3a2365dbc2e58d33b11c75faeca7e8f3fb39dfb8
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: d0da5976cf6c6bb22642e94a98ffb9e07eddc14e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492613"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626202"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Créer des rapports personnalisés à l’aide de Power BI
 

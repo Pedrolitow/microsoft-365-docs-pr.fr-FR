@@ -11,21 +11,21 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 05/02/2022
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: En tant qu’administrateur et en tant qu’expéditeur de messages, vous pouvez révoquer certains e-mails chiffrés avec Microsoft Purview Advanced Message Encryption.
-ms.openlocfilehash: b27ea41d1d91b825450d39ade96afdef04c0fdea
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 739165155817f3063bfb87aaae0bce7b3aa02931
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639421"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643578"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Révoquer les e-mails chiffrés par Advanced Message Encryption
 
-La révocation des e-mails est proposée dans le cadre du chiffrement avancé des messages Microsoft Purview. Microsoft Purview Advanced Message Encryption est inclus dans [Microsoft 365 Entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Pour utiliser les fonctions de révocation et d’expiration d’Advanced Message Encryption, activez l’option **Chiffrement Premium dans Office 365** de votre licence E5.
+Email révocation est proposée dans le cadre de Microsoft Purview Advanced Message Encryption. Microsoft Purview Advanced Message Encryption est inclus dans [Microsoft 365 Entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Pour utiliser les fonctions de révocation et d’expiration d’Advanced Message Encryption, activez l’option **Chiffrement Premium dans Office 365** de votre licence E5.
 
 Si votre organisation dispose d’un abonnement qui n’inclut pas Microsoft Purview Advanced Message Encryption, vous pouvez l’acheter avec le module complémentaire de référence SKU Microsoft 365 E5 Conformité pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le Conformité avancée Office 365 module complémentaire SKU pour Microsoft 365 E3, Microsoft 365 E3 (Prix du personnel à but non lucratif) ou Office 365 références SKU.
 
@@ -36,6 +36,8 @@ Si un message a été chiffré à l’aide de Microsoft Purview Advanced Message
 > [!NOTE]
 > Pour garantir que la possibilité de suivre et de révoquer les messages OME est disponible, vous devez ajouter un modèle de personnalisation. Voir [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="encrypted-emails-that-you-can-revoke"></a>E-mails chiffrés que vous pouvez révoquer
 
 Les administrateurs et les expéditeurs de messages peuvent révoquer des e-mails chiffrés si le destinataire a reçu un e-mail chiffré de marque basé sur un lien. Si le destinataire a reçu une expérience inline native dans un client Outlook pris en charge, vous ne pouvez pas révoquer le message.

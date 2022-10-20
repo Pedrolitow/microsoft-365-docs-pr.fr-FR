@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-description: Découvrez comment configurer la clé client.
-ms.openlocfilehash: d285d19eb00afdaea6c5c591caf32a9b4a482987
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+- purview-compliance
+- tier1
+description: Cet article décrit les étapes de création et de configuration des ressources Azure requises, puis fournit les étapes de configuration de la clé client.
+ms.openlocfilehash: 4d6c82efc996d0d10b619bf152ffbfb3d27b9d5f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642193"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641818"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
@@ -28,6 +29,8 @@ Configurez Azure avant de pouvoir utiliser la clé client. Cet article décrit l
 > [!IMPORTANT]
 > Nous vous recommandons vivement de suivre les meilleures pratiques décrites dans cet article. Ceux-ci sont appelés comme **TIP** et **IMPORTANT**. La clé client vous permet de contrôler les clés de chiffrement racine dont l’étendue peut être aussi grande que l’ensemble de votre organisation. Cela signifie que les erreurs commises avec ces clés peuvent avoir un impact général et entraîner des interruptions de service ou une perte irrévocable de vos données.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-set-up-customer-key"></a>Avant de configurer la clé client
 
 Avant de commencer, vérifiez que vous disposez des abonnements Azure et des licences M365/O365 appropriés pour votre organisation. Vous devez utiliser des abonnements Azure payants. Les abonnements que vous avez obtenu via des abonnements gratuits, d’évaluation, de parrainages, d’abonnements MSDN et ceux sous support hérité ne sont pas éligibles.
@@ -35,7 +38,7 @@ Avant de commencer, vérifiez que vous disposez des abonnements Azure et des lic
 > [!IMPORTANT]
 > Les licences M365/O365 valides qui offrent la clé client M365 sont les suivantes :
 >
-> - Office 365 E5
+> - Office 365 E5
 > - Microsoft 365 E5
 > - Microsoft 365 E5 Conformité
 > - références SKU de gouvernance Microsoft 365 E5 Information Protection &
@@ -201,7 +204,7 @@ Vous devez définir trois ensembles d’autorisations distincts pour chaque coff
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore

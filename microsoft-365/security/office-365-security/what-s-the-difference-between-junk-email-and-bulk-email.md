@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir les différences entre le courrier indésirable (courrier indésirable) et le courrier en bloc (courrier gris) dans Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6613502c858a87096b4220b17d94b8821b0f9835
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 5adbe73cc7c1970c0cdc9698cf8868d42a9541f7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066143"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633083"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre le courrier indésirable et le courrier électronique en bloc dans EOP ?
 
@@ -81,4 +81,4 @@ Les organisations sans plan 2 Defender pour Office 365 peuvent essayer les fonct
 
 3. Une fois que vous avez identifié les expéditeurs souhaités et indésirables, ajustez le seuil en bloc au niveau souhaité. S’il existe des expéditeurs en bloc avec un score BCL qui ne correspond pas à votre seuil en bloc, [envoyez les messages à Microsoft à des fins d’analyse](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), ce qui ajoute l’expéditeur en tant qu’entrée d’autorisation à la liste d’autorisation/de blocage du locataire.
 
-Les administrateurs peuvent suivre les [valeurs de seuil en bloc recommandées](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) ou choisir une valeur de seuil en bloc qui répond aux besoins de leur organisation.
+Les administrateurs peuvent suivre les [valeurs de seuil en bloc recommandées](recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) ou choisir une valeur de seuil en bloc qui répond aux besoins de leur organisation.

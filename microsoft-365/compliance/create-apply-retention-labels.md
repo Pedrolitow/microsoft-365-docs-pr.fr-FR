@@ -11,19 +11,20 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: a477157b024d3b58483fe90549ba75e820f34a2f
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: c21a586e7d1738ea12a4b037854998bb7f1fff40
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67335735"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641978"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
 
@@ -45,6 +46,8 @@ La mise à disposition des étiquettes de rétention aux membres de votre organi
 ![Diagramme des rôles et des tâches pour les étiquettes.](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
 
 Utilisez les instructions suivantes pour les deux étapes d’administration.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -84,7 +87,7 @@ Pour modifier une stratégie d’étiquette de rétention existante (le type de 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Lorsque les étiquettes de rétention sont disponibles à l’application
 
-Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, ces étiquettes apparaissent généralement pour que les utilisateurs les sélectionnent dans un délai d’un jour. Toutefois, vous pouvez autoriser jusqu’à sept jours. 
+If you publish retention labels to SharePoint or OneDrive, those labels typically appear for users to select within one day. However, allow up to seven days. 
 
 Si vous publiez des étiquettes de rétention dans Exchange, l’affichage de ces étiquettes de rétention pour les utilisateurs peut prendre jusqu’à sept jours. Comme avec tous les paramètres de rétention pour Exchange, la boîte aux lettres doit contenir au moins 10 Mo de données.
 
@@ -110,7 +113,7 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, vérifiez l
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Vérifier l’état des étiquettes de rétention publiées dans Exchange
 
-Dans Exchange Online, les étiquettes de rétention deviennent disponibles pour les utilisateurs finals par l’intermédiaire d’un processus qui s’exécute tous les sept jours. À l’aide de Visual de Windows PowerShell, vous pouvez découvrir la date de la dernière exécution du processus et déterminer la date de sa prochaine exécution.
+In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using PowerShell, you can see when this process last ran and therefore identify when it will run again.
   
 1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
@@ -148,7 +151,7 @@ After content is labeled, see the following information to understand when the a
 
 ### Manually apply retention labels 
 
-End users, as well as administrators, can manually apply retention labels from the following locations:  
+End users, as well as administrators, can manually apply retention labels from the following locations:
 
 - Outlook and Outlook on the web
     
@@ -220,6 +223,10 @@ For SharePoint, but not OneDrive, you can create a view of the library that cont
 #### Applying retention labels using Microsoft 365 groups
 
 When you publish retention labels to the **Microsoft 365 Groups** location, the retention labels appear in the SharePoint teams site but aren't supported by any email client for group mailboxes. The experience of applying a retention label in the site is identical to that for documents in SharePoint.
+
+Users can also apply the retention labels directly in Teams, from the **Files** tab:
+
+![Applying a retention label in a Teams channel, Files tab.](../media/retention-label-teams-files.gif)
 
 ### Applying a default retention label to all content in a SharePoint library, folder, or document set
 

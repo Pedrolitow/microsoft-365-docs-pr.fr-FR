@@ -17,13 +17,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
-ms.openlocfilehash: 3c8ed9f44908b8a8c912bba6c8cfd473085aef0c
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.topic: conceptual
+ms.openlocfilehash: 06edefee70ffd1c506f8934a9c5207357bb8e0fb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68146676"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636143"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Expérience Microsoft Defender pour point de terminaison par le biais d’attaques simulées 
 

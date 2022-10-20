@@ -8,7 +8,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS: ''
-ms.openlocfilehash: 1171c30edc22df889973ac45d7c7f5905f5c2233
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 297435fbea9e70ba0b23401a17bbb756b638ff4c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476856"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621977"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Essayer Microsoft Defender pour Office 365
 

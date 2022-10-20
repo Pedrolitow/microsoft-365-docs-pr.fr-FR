@@ -10,18 +10,21 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 description: Après avoir configuré la clé client, découvrez comment la gérer en restaurant les clés AKV, en gérant les autorisations et en créant et en affectant des stratégies de chiffrement des données.
-ms.openlocfilehash: 4f02b9228dc581e1b1d2a2f533d65d97bffe572e
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 31cc70e94bd11c86cd66a8d2cc8b4033b4c0b2eb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433463"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641906"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
 Une fois que vous avez configuré la clé client, vous devez créer et affecter une ou plusieurs stratégies de chiffrement des données (DEP). Une fois que vous avez affecté vos dep, vous pouvez gérer vos clés comme décrit dans cet article. En savoir plus sur la clé client dans les rubriques connexes.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Créer un DEP à utiliser avec plusieurs charges de travail pour tous les utilisateurs locataires
 
@@ -303,7 +306,7 @@ Avant d’effectuer une restauration, utilisez les fonctionnalités de récupér
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
-Par exemple :
+Par exemple :
 
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -321,7 +324,7 @@ Pour afficher les autorisations du coffre de clés, exécutez l’applet de comm
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-Par exemple :
+Par exemple :
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -333,7 +336,7 @@ Pour supprimer les autorisations d’un administrateur, exécutez l’applet de 
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-Par exemple :
+Par exemple :
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com

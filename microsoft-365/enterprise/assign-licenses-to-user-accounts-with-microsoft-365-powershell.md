@@ -23,12 +23,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Dans cet article, découvrez comment utiliser PowerShell pour attribuer une licence Microsoft 365 à des utilisateurs sans licence.
-ms.openlocfilehash: 17e2afda1eca7b91f8f43e4466c64298313d8259
-ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.openlocfilehash: 0ebd6a4133c3e757e2a17936938904f5773ae4e1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68484322"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646460"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Attribuer des licences Microsoft 365 à des comptes d’utilisateur avec PowerShell
 
@@ -52,12 +52,12 @@ Les comptes synchronisés à partir de vos services de domaine Active Directory 
 
 Tout [d’abord, connectez-vous à votre locataire Microsoft 365](/graph/powershell/get-started#authentication).
 
-L’attribution et la suppression de licences pour un utilisateur nécessitent l’étendue d’autorisation User.ReadWrite.All ou l’une des autres autorisations répertoriées dans la [page de référence « Attribuer une licence » API Graph](/graph/api/user-assignlicense).
+L’attribution et la suppression de licences pour un utilisateur nécessitent l’étendue d’autorisation User.ReadWrite.All ou l’une des autres autorisations répertoriées dans la [page de référence « Attribuer une licence » microsoft API Graph](/graph/api/user-assignlicense).
 
 L’étendue d’autorisation Organization.Read.All est nécessaire pour lire les licences disponibles dans le locataire.
 
 ```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+Connect-MgGraph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 Exécutez la `Get-MgSubscribedSku` commande pour afficher les plans de licence disponibles et le nombre de licences disponibles dans chaque plan de votre organisation. Le nombre de licences disponibles dans chaque plan est **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Pour plus d’informations sur les plans de licence, les licences et les services, consultez [Afficher les licences et les services avec PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
@@ -374,3 +374,5 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+
+Utiliser l’utilisateur Microsoft Graph [: assignLicense](/graph/api/user-assignlicense) et [les API subscribedSku](/graph/api/resources/subscribedsku)

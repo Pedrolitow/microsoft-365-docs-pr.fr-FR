@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 33cbe799c9263fa6d5d403eafb08447f264358ea
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d29e0d30c3672ce3a6987059b2d1ddf9a4e07919
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228007"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631895"
 ---
 # <a name="offboard-machine-api"></a>API de l’ordinateur hors carte
 

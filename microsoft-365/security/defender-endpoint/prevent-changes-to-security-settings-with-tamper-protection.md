@@ -22,12 +22,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 5f2a87f1fa8ff8130e460f46c9ac94275ba0735d
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 06434a3f3211726ccde4642fd13de81304cd3c0f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221321"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635221"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -39,6 +39,7 @@ ms.locfileid: "68221321"
 
 **Plateformes**
 - Windows
+- macOS
 
 La protection contre les falsifications est disponible pour les appareils qui exécutent l’une des versions suivantes de Windows :
 
@@ -55,6 +56,12 @@ La protection contre les falsifications est disponible pour les appareils qui ex
 > [!NOTE]
 > La protection contre les falsifications dans Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
+La protection contre les falsifications est disponible pour les appareils qui exécutent l’une des versions suivantes de macOS :
+
+- Monterey (12)
+- Big Sur (11)
+- Catalina (10.15+)
+
 ## <a name="overview"></a>Vue d’ensemble
 
 Pendant certains types de cyberattaques, les mauvais acteurs essaient de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos machines. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils. La protection contre les falsifications permet d’éviter que ces types de choses se produisent. Avec la protection contre les falsifications, les applications malveillantes sont empêchées d’effectuer des actions telles que :
@@ -70,7 +77,7 @@ Pendant certains types de cyberattaques, les mauvais acteurs essaient de désact
 - Désactivation de l’analyse des archives et des fichiers réseau
 
 > [!IMPORTANT]
-> La protection intégrée (préversion) inclut l’activation de la protection contre les falsifications par défaut. Pour en savoir plus sur la protection intégrée, consultez :
+> La protection intégrée inclut l’activation de la protection contre les falsifications par défaut. Pour en savoir plus sur la protection intégrée, consultez :
 > - [La protection intégrée permet de se protéger contre les ransomware](built-in-protection.md) (article)
 > - [La protection contre les falsifications sera activée pour tous les clients d’entreprise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (billet de blog Tech Community)
 

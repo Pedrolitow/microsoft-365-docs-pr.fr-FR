@@ -6,7 +6,7 @@ ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 description: Configurations manuelles pour Exchange Online Protection, Microsoft Defender pour Office 365, Plan 1 et 2 et Microsoft 365 Defender, pour une protection complète de votre abonnement Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0ef5c7987895f984fd59662298617a72504dda67
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: ffdf0c66bc7cc15d3d65b5734a48e240f25d765b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573370"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622021"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 
@@ -79,11 +79,11 @@ Les données contenues dans ces rapports s’enrichiront à mesure que votre org
 1. Cliquez sur les **rapports Email & Collaboration**.
 1. Prenez note des fiches de rapport disponibles.
     1. Tout, des *programmes malveillants détectés dans les e-mails*, *aux détections de courrier indésirable*, *aux utilisateurs compromis*, aux *messages signalés par l’utilisateur* et *aux soumissions les deux derniers* , avec un bouton lié aux soumissions.
-1. Cliquez sur un rapport, tel que le *résumé de l’état* du flux de courrier, puis cliquez sur le bouton **Afficher les détails** pour explorer les données (qui inclut même une vue en entonnoir pour faciliter l’interprétation du flux de courrier total par rapport aux messages bloqués, courrier indésirable et e-mails de hameçonnage, etc.).
+1. Cliquez sur un rapport, par exemple le *résumé de l’état* du flux de courrier, puis cliquez sur le bouton **Afficher les détails** pour explorer les données (qui inclut même une vue en entonnoir pour faciliter l’interprétation du flux de courrier total par rapport au flux de courrier bloqué, au courrier indésirable et aux e-mails de hameçonnage, etc.).
 
 |Tableau de bord|Description|
 |---|---|
-|Email rapports de sécurité|Ces rapports sont disponibles dans Exchange Online Protection. Pour plus d’informations, consultez [Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender](view-email-security-reports.md).|
+|Rapports de sécurité| Identités et rapports de sécurité des appareils tels que les utilisateurs et les appareils avec détections de programmes malveillants, conformité des appareils et utilisateurs à risque.|
 |Rapports Defender pour Office 365|Les rapports sont disponibles uniquement dans Defender pour Office 365. Pour plus d’informations, consultez [Afficher les rapports Defender pour Office 365 dans le portail Microsoft 365 Defender](view-reports-for-mdo.md).|
 |Rapports et insights de flux de courrier|Ces rapports et insights sont disponibles dans le Centre d’administration Exchange (EAC). Pour plus d’informations, consultez [les rapports de flux de courrier](/exchange/monitoring/mail-flow-reports/mail-flow-reports) et [les insights sur les flux de courrier](/exchange/monitoring/mail-flow-insights/mail-flow-insights).|
 |[Threat Explorer (et détections en temps réel)](threat-explorer.md)|Si vous examinez ou rencontrez une attaque contre votre locataire, utilisez l’Explorateur (ou les détections en temps réel) pour analyser les menaces. L’Explorateur (et le rapport de détections en temps réel) vous indiquent le volume d’attaques au fil du temps, et vous pouvez analyser ces données par familles de menaces, infrastructure des attaquants, etc. Vous pouvez également marquer tout e-mail suspect pour la liste des incidents.|

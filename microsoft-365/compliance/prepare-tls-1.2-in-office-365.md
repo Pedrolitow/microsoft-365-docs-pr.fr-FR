@@ -11,16 +11,21 @@ ms.service: O365-seccomp
 ms.topic: article
 ms.author: shmehta
 ms.reviewer: krowley
+ms.collection:
+- tier3
+- purview-compliance
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 9edbbb463d04447ee4babcd66b4d6e320663209a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b49327d78f1394f07fb7de6776e6c4bb90e9833a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639751"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624706"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="summary"></a>Résumé
 

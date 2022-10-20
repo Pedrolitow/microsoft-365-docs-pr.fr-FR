@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le score d’adoption de Microsoft reflète les mesures de l’expérience des personnes et de la technologie et les compare à des organisations de taille similaire.
-ms.openlocfilehash: eff127b92aa14a80756827f93583e43df72f7456
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 83170a50a473c24656e10ce57cea4bc44c3767fc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563491"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621028"
 ---
 # <a name="microsoft-adoption-score"></a>Score d’adoption de Microsoft 
 
@@ -88,6 +88,9 @@ Le modèle de contrôle d’accès en fonction du rôle pour le score d’adopti
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
 Vous pouvez accéder à l’expérience à partir de Administration Microsoft 365 domicile sous Score **d’adoption** **des rapports** > .
+
+> [!NOTE]
+> Cette fonctionnalité n’est pas disponible dans les locataires GCC High, GCC et DOD.
   
 ## <a name="how-the-score-is-calculated"></a>Mode de calcul du score
 

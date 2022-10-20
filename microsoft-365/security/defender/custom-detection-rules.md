@@ -20,13 +20,13 @@ ms.collection:
 - m365-security
 - m365initiative-m365-defender
 - tier2
-ms.topic: article
-ms.openlocfilehash: 304883b0d0ba554c5f2f0d4044c03445662d5fe9
-ms.sourcegitcommit: ef0c7a914782999d148c79240b2d3f7be53e5690
+ms.topic: conceptual
+ms.openlocfilehash: 3a02055f13fae9f944eaf66e0addd6db55137f1d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68138164"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639464"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 

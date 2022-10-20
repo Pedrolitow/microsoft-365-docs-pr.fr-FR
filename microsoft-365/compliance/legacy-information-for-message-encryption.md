@@ -14,18 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Découvrez comment effectuer la transition des fichiers hérités vers Office 365 chiffrement des messages (OME) pour votre organisation.
-ms.openlocfilehash: b34ccbcf077238ba3caee9da3b337cd0d32cf458
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 97333df898dfd8aaff0670cc73b3c67a9325fd47
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642522"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626421"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -40,6 +41,8 @@ Voici quelques exemples :
 - Un courtier hypothécaire demande des informations financières à un client pour une demande de prêt
 - Un fournisseur de soins de santé envoie des informations sur les soins de santé aux patients
 - Un avocat envoie des informations confidentielles à un client ou à un autre avocat
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Fonctionnement Office 365 Message Encryption sans les nouvelles fonctionnalités
 
@@ -270,7 +273,7 @@ Oui. Les réponses restent chiffrées pendant toute la durée du thread.
 
  **Q. Office 365 chiffrement des messages assure-t-il la localisation ?**
 
-Le contenu HTML et les messages électroniques entrants sont localisés en fonction des paramètres de messagerie de l’expéditeur. Le portail d’affichage est localisé en fonction des paramètres de navigateur du destinataire. Cependant, le corps réel (le contenu) du message chiffré n’est pas localisé.
+Incoming email and HTML content is localized based on sender email settings. The viewing portal is localized based on recipient's browser settings. However, the actual body (content) of encrypted message isn't localized.
 
  **Q. Quelle méthode de chiffrement est utilisée pour Office 365 chiffrement des messages ?**
 
@@ -278,13 +281,13 @@ Office 365 Message Encryption utilise Rights Management Services (RMS) comme inf
 
 - Si vous utilisez Microsoft Azure RMS pour obtenir les clés, le mode de chiffrement 2 est utilisé. Le mode de chiffrement 2 est un processus de chiffrement AD RMS amélioré et mis à jour. Il prend en charge RSA 2048 pour la signature et le chiffrement, et SHA 256 pour la signature.
 
-- Si vous utilisez Active Directory (AD) RMS pour obtenir les clés, le mode de chiffrement 1 ou 2 est utilisé. La méthode utilisée dépend de votre déploiement AD RMS local. Le mode de chiffrement 1 est le processus de chiffrement d’origine AD RMS. Il prend en charge RSA 1024 pour la signature et le chiffrement, et SHA-1 pour la signature. Ce mode est encore pris en charge par toutes les versions actuelles de RMS.
+- If you use Active Directory (AD) RMS to obtain the keys, either Cryptographic Mode 1 or Cryptographic Mode 2 is used. The method used depends on your on-premises AD RMS deployment. Cryptographic Mode 1 is the original AD RMS cryptographic implementation. It supports RSA 1024 for signature and encryption, and supports SHA-1 for signature. This mode continues to be supported by all current versions of RMS.
 
 Pour plus d’informations, consultez [Modes de chiffrement AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).
 
 **Q. Pourquoi certains messages chiffrés disent-ils provenir de** Office365@messaging.microsoft.com ?
 
-Lorsqu’une réponse chiffrée est envoyée à partir du portail de chiffrement ou via l’application Visionneuse OME, l’adresse de messagerie de l’expéditeur est définie sur Office365@messaging.microsoft.com, car le message chiffré est envoyé par le biais d’un point de terminaison Microsoft. Cela permet d’éviter que les messages chiffrés soient marqués comme courrier indésirable. Le nom affiché dans le message électronique et l’adresse dans le portail de chiffrement ne sont pas modifiés en raison de cet étiquetage. En outre, cet étiquetage s’applique uniquement aux messages envoyés via le portail, et non par le biais de n’importe quel autre client de messagerie.
+When an encrypted reply is sent from the encryption portal or through the OME Viewer app, the sending email address is set to Office365@messaging.microsoft.com because the encrypted message is sent through a Microsoft endpoint. This helps to prevent encrypted messages from being marked as spam. The displayed name on the email and the address within the encryption portal aren't changed because of this labeling. Also, this labeling only applies to messages sent through the portal, not through any other email client.
 
  **Q. Je suis abonné à Exchange Hosted Encryption (EHE). Où puis-je en savoir plus sur la mise à niveau vers Office 365 Chiffrement des messages ?**
 

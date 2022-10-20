@@ -6,7 +6,7 @@ author: alekyaj
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
@@ -16,12 +16,12 @@ ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 66e64fb83af5e0ad22d21b9d96ecec6ab14640c4
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 4da3b103597802b309a643876c40668d436ca37d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224313"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641378"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Migration de serveurs de Microsoft Defender pour point de terminaison vers Microsoft Defender pour le cloud
 

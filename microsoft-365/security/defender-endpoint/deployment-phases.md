@@ -17,15 +17,15 @@ ms.collection:
 - m365solution-overview
 - highpri
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1390369222c1abeb8b4ef1e0552f7a7039f90f46
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8316bb05d3fed831479ebadc3c6f2bb5e318e5fd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205418"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642742"
 ---
 # <a name="microsoft-defender-for-endpoint-deployment-overview"></a>Vue d’ensemble du déploiement Microsoft Defender pour point de terminaison
 

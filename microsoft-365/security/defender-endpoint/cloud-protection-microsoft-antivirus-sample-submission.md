@@ -12,18 +12,18 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 02/24/2022
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: aa5527416d0596a5a54bb0c2c1d7607391c426bd
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 3b256251044726d3ada1d19ca17f4b3aaff08746
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68146500"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639772"
 ---
 # <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Protection cloud et soumission d’exemples sur Microsoft Defender Antivirus
 

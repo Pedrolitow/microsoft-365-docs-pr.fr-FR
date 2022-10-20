@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 335067ac03e02f842975ef32110b4836e88422e1
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: adc65d8cde79acd782b88c47bf281fe6cead61ea
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205264"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642522"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Répertorier le score d’exposition par groupe d’appareils
 

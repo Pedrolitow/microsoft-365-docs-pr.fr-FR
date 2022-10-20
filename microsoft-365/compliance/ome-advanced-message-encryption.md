@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 05/12/2022
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Advanced Message Encryption aide les organisations à respecter leurs obligations de conformité en permettant aux administrateurs d’en faire encore plus avec les messages protégés.
-ms.openlocfilehash: a4b970c005b49067e59254ff549200a9118f6cd4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f70b05fffa62011afda1d758ea9268ee40d81c59
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632154"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620500"
 ---
 # <a name="advanced-message-encryption"></a>Chiffrement avancé des messages
 
@@ -30,6 +30,8 @@ Microsoft Purview Advanced Message Encryption est inclus dans [Microsoft 365 Ent
 Advanced Message Encryption aide les clients à respecter les obligations de conformité qui nécessitent des contrôles plus flexibles sur les destinataires externes et leur accès aux e-mails chiffrés. Avec Advanced Message Encryption dans Office 365, vous pouvez contrôler les e-mails sensibles partagés en dehors de l’organisation avec des stratégies automatiques et suivre ces activités via les journaux d’accès au portail de messages chiffrés. Vous configurez ces stratégies pour identifier les types d’informations sensibles tels que les ID piI, financiers ou d’intégrité, ou vous pouvez utiliser des mots clés pour améliorer la protection. Une fois que vous avez configuré les stratégies, vous associez des stratégies à des modèles de messagerie personnalisés de marque, puis ajoutez une date d’expiration pour un contrôle supplémentaire des e-mails qui correspondent à la stratégie. En outre, les administrateurs peuvent contrôler davantage les e-mails chiffrés accessibles en externe via un portail web sécurisé en révoquer l’accès à la messagerie à tout moment.
 
 Vous pouvez uniquement révoquer et définir une date d’expiration pour les e-mails envoyés aux destinataires externes.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="get-started-with-microsoft-purview-advanced-message-encryption"></a>Prise en main de Microsoft Purview Advanced Message Encryption
 

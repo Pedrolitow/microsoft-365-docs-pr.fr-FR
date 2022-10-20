@@ -14,18 +14,21 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 9032fccf08d64374ffc3c38d47b74db224becf45
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1c402d93628a25baf3e7e904459172a000d8013d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232559"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639267"
 ---
 # <a name="submit-files-for-analysis"></a>Envoyer des fichiers à analyser
 
 Si vous avez un fichier que vous soupçonnez être un programme malveillant ou est mal détecté, vous pouvez nous le soumettre à des fins d’analyse. Cette page contient des réponses à certaines questions courantes sur l’envoi d’un fichier à des fins d’analyse.
+
+> [!TIP]
+> Si l’abonnement de votre organisation inclut [Microsoft Defender pour point de terminaison Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint), [Microsoft Defender pour Office 365 Plan 2](/microsoft-365/security/office-365-security/defender-for-office-365) ou [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender), vous pouvez utiliser le [nouveau plan unifié portail des soumissions](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770). Pour plus d’informations, consultez [Envoyer des fichiers dans Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/admin-submissions-mde).
 
 ## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>Comment faire envoyer un fichier à Microsoft à des fins d’analyse ?
 

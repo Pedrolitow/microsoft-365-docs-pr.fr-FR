@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: af00cc62ae86b31c440353a8885941856b94d6d7
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: a69fb646ade6bab7d03e07cac387705216017d21
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225545"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641179"
 ---
 # <a name="user-resource-type"></a>Type de ressource utilisateur
 

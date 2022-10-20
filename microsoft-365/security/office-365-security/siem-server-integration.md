@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/18/2019
 ms.localizationpriority: medium
 ms.collection:
@@ -19,12 +19,12 @@ description: Obtenir une vue d’ensemble de l’intégration du serveur SIEM (S
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 172cf340817b5afc212c2f8296e374e99a6125e1
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: e405ee835ed2b93daca5c849b852d5c748d600e6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072269"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640057"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration du serveur SIEM (Security Information and Event Management) aux applications et services Microsoft 365
 

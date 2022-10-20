@@ -1,5 +1,5 @@
 ---
-title: Installer Office applications sur tous les appareils dans Microsoft 365 Business Premium
+title: Installer des applications Microsoft 365 sur tous les appareils dans Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,40 +23,40 @@ search.appverid:
 - MET150
 - MOE150
 description: Comment installer Office sur tous les appareils dans Microsoft 365 Business Premium.
-ms.openlocfilehash: cb879c21b0b7c60536ed977305f727888b0bf560
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: affed595cb6f6b2b1814f865a2f58337d1d04618
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096586"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642060"
 ---
-# <a name="install-office-apps-on-all-devices"></a>Installer Office sur tous vos appareils
+# <a name="install-microsoft-365-apps-on-all-devices"></a>Installer des applications Microsoft 365 sur tous les appareils
 
-Ok, vous avez configuré Microsoft 365 Business Premium et vous pouvez désormais demander aux utilisateurs d’installer des applications Office individuelles sur leur Mac, PC ou appareils mobiles. C’est quelque chose que vos utilisateurs doivent faire pour faire partie des lignes de front et aider à protéger l’organisation contre les attaques.
+Ok, vous avez configuré Microsoft 365 Business Premium, et maintenant vous pouvez demander aux utilisateurs d’installer des applications Microsoft 365 individuelles sur leur Mac, PC ou appareils mobiles. C’est quelque chose que vos utilisateurs doivent faire pour faire partie des lignes de front et aider à protéger l’organisation contre les attaques.
   
-## <a name="watch-install-office-apps"></a>Regarder : Installer les applications Office
+## <a name="watch-install-microsoft-365-apps"></a>Regarder : Installer des applications Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
-Pour tous les membres de l’organisation, les applications Microsoft Office sont disponibles dans le menu **Démarrer**. Si vous ne les voyez pas, chaque utilisateur doit les installer.
+Pour tous les membres de l’organisation, les applications Microsoft Microsoft 365 sont disponibles dans le menu **Démarrer** . Si vous ne les voyez pas, chaque utilisateur doit les installer.
 
 Faites-les effectuer les opérations suivantes :
 
 1. Accédez à [https://office.com](https://office.com)et connectez-vous à l’aide de votre compte professionnel.
 2. Sélectionnez **Installer Office**  >   **Microsoft 365 apps**  >  **Exécuter**, puis sélectionnez **Oui**.
-3. Les applications Office sont installées. Le processus peut prendre plusieurs minutes. Une fois l’opération terminée, sélectionnez **Fermer**.
+3. Les applications Microsoft 365 sont installées. Le processus peut prendre plusieurs minutes. Une fois l’opération terminée, sélectionnez **Fermer**.
 4. Pour installer Microsoft Teams, accédez à la [page office.com](https://office.com), puis choisissez  **Teams**.
 5. Obtenez l’application Windows, puis sélectionnez **Exécuter**. Teams affiche une invite à la fin de l’installation.
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 Business Premium
 
-Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
+Suivez les instructions suivantes pour installer Office sur un iPhone ou un téléphone Android. Après avoir suivi ces étapes, vos fichiers de travail créés dans les applications Microsoft 365 sont protégés par Microsoft 365 pour les entreprises.
 
-L’exemple concerne Outlook, mais s’applique à toutes les autres applications Office que vous souhaitez installer.
+L’exemple concerne Outlook, mais s’applique à toutes les autres applications Microsoft 365 que vous souhaitez installer.
 
 ## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
-Visionnez une courte vidéo sur la configuration des applications Office sur les appareils iOS avec Microsoft 365 pour les PME.<br><br>
+Regardez une courte vidéo sur la configuration d’applications Microsoft 365 sur des appareils iOS avec Microsoft 365 pour les entreprises.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -88,7 +88,7 @@ Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and ver
 
 Pour plus d'informations sur la procédure, suivez ces liens :
   
-- Installer les applications Office : [Installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Installer des applications Microsoft 365 :  [installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Installer d’autres applications : [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710) ou [Skype Entreprise](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb) 
 
@@ -134,7 +134,7 @@ Pour plus de détails et d’informations :
 
 - Configurer la messagerie dans Outlook : [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) ou [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
  
-- [Mettre à niveau les utilisateurs vers les applications les plus récentes](../admin/setup/upgrade-users-to-latest-office-client.md)
+- [Mettre à niveau les utilisateurs vers les dernières applications Microsoft 365](../admin/setup/upgrade-users-to-latest-office-client.md)
 
 Pour plus de détails et d’informations :
 
@@ -142,11 +142,11 @@ Pour plus de détails et d’informations :
 
 - Configurer la messagerie dans Outlook : [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) ou [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
  
-- [Mettre à niveau les utilisateurs vers les applications les plus récentes](../admin/setup/upgrade-users-to-latest-office-client.md)
+- [Mettre à niveau les utilisateurs vers les dernières applications Microsoft 365](../admin/setup/upgrade-users-to-latest-office-client.md)
 
 Pour plus d'informations sur la procédure, suivez ces liens :
   
-- Installer les applications Office : [Installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Installer des applications Microsoft 365 :  [installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Installer d’autres applications : [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710) ou [Skype Entreprise](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 

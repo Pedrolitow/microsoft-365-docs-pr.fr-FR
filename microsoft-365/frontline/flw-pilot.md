@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 08db9f99ac5a7fd5dc2c116a1f2ef9f35e7f71c7
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: bebdd76ce0725ec4338825bd52cff143896b7e5d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495032"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641774"
 ---
 # <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Commencez par un déploiement pilote de Microsoft 365 pour les travailleurs de première ligne
 
@@ -152,7 +152,7 @@ Après avoir configuré Teams et créé vos équipes et canaux, vous pouvez conf
 
 - [Réservations](bookings-virtual-visits.md) pour planifier des rendez-vous avec des clients ou des clients.
 - [Se déplace](shifts-for-teams-landing-page.md) pour planifier votre personnel de première ligne.
-- [Apprentissage Viva](/sharepoint/build-learning-and-training-experiences-for-employees) créer des expériences d’apprentissage et de formation pour les employés.
+- [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) créer des expériences d’apprentissage et de formation pour les employés.
 
 ### <a name="communicate"></a>Communiquer
 

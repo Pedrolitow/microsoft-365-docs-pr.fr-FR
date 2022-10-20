@@ -16,15 +16,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 865ff4645c8adce9f1a25d00dbe17b86cf524f1c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 02af8ad1c552394ce988782b7b5ec142a59549ae
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68064363"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639377"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
 

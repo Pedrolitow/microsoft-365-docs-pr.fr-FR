@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 377383cb959fd53accf98c80a8637c05bb7832ff
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 95db55c5aaa785dd5898956c17c232e79ea622c4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200624"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641532"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Exclusions de fichiers et de dossiers contextuels
 

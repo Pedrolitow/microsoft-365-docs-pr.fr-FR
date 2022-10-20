@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4d6dcb43ea34c253f97b6f5a3085470b460d3b1a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 86b5acf38969a3b110a6b3f7535c25569397d1ea
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229633"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636253"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender paramètres de fuseau horaire
 

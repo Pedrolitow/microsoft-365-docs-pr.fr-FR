@@ -9,8 +9,9 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 10/17/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom:
@@ -21,12 +22,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: f316687fc0a894cc72578d8e556dc1e1ab322fed
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7446892236a4b6976c67d8332e618b8089f8869d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180021"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641510"
 ---
 # <a name="frequently-asked-questions-on-tamper-protection"></a>Forum aux questions sur la protection contre les falsifications
 
@@ -67,11 +68,11 @@ Si vous êtes une organisation qui utilise [Microsoft Defender pour point de ter
 
 ## <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Comment la configuration de la protection contre les falsifications dans Intune affecte-t-elle la façon dont je gère Microsoft Defender Antivirus avec stratégie de groupe ?
 
-Si vous utilisez actuellement Intune pour configurer et gérer la « protection contre les falsifications », vous devez continuer à utiliser Intune. 
+Si vous utilisez actuellement Intune pour configurer et gérer la protection contre les falsifications, vous devez continuer à utiliser Intune. 
 
-La stratégie de groupe ne s’applique pas à la protection contre les falsifications. Les modifications apportées aux paramètres antivirus Microsoft Defender à l’aide de stratégie de groupe sont ignorées lorsque la protection contre les falsifications est activée ou lorsque la protection contre les falsifications est configurée avec Intune.
+Lorsque la protection contre les falsifications est activée et que vous utilisez stratégie de groupe pour apporter des modifications à Microsoft Defender paramètres antivirus, les paramètres protégés contre les falsifications sont ignorés. 
 
-## <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>Si nous utilisons Microsoft Intune pour configurer la « protection contre les falsifications », s’applique-t-elle uniquement à l’ensemble de l’organisation ?
+## <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>Si nous utilisons Microsoft Intune pour configurer la protection contre les falsifications, s’applique-t-elle uniquement à l’ensemble de l’organisation ?
 
 Vous disposez d’une certaine flexibilité dans la configuration de la protection contre les falsifications avec Intune. Vous pouvez cibler l’ensemble de votre organisation ou sélectionner des appareils et des groupes d’utilisateurs spécifiques.
 
@@ -88,7 +89,7 @@ Actuellement, la configuration de la protection contre les falsifications dans I
 
 ## <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>Je suis un client d’entreprise. Les administrateurs locaux peuvent-ils modifier la protection contre les falsifications sur leurs appareils ?
 
-Non. Les administrateurs locaux ne peuvent pas modifier les paramètres de « protection contre les falsifications ».
+Non. Les administrateurs locaux ne peuvent pas modifier les paramètres de protection contre les falsifications.
 
 ## <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>Que se passe-t-il si mon appareil est intégré à Microsoft Defender pour point de terminaison puis passe à un état hors-carte ?
 

@@ -17,13 +17,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: e0066d33aa0066b01e32a1f5ad02dfc7f780dce1
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 52db61b11629b1a8f999394b60616ccbc95d2b96
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68084460"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643798"
 ---
 # <a name="streaming-api"></a>API de diffusion en continu
 

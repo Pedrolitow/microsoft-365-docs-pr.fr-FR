@@ -21,12 +21,12 @@ ms.collection:
 recommendations: false
 description: Composant de stratégie DLP et référence de configuration. Cet article fournit une anatomie détaillée d’une stratégie DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d566d924240878e967a308b5940989c949ce76b4
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 0d5f89887c241ee6dbfa7b85ee515b2ebca3abc0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492569"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634803"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -140,8 +140,7 @@ Les stratégies DLP détectent les éléments sensibles en les mettant en corres
 |Référentiels locaux| Oui| Oui| Non|
 |Power BI|Oui | Oui| Non|
 
-> [!NOTE]
-> DLP prend en charge (en préversion) l’utilisation de classifieurs pouvant être formés comme condition pour détecter les documents sensibles. Le contenu peut être défini par des classifieurs pouvant être formés dans des Exchange Online, des sites SharePoint Online, des comptes OneDrive Entreprise, des canaux de conversation et des appareils Teams. Pour plus d’informations, consultez [Classifieurs pouvant être formés](classifier-learn-about.md).
+DLP prend en charge l’utilisation de classifieurs pouvant être formés comme condition pour détecter les documents sensibles. Le contenu peut être défini par des classifieurs pouvant être formés dans des Exchange Online, des sites SharePoint Online, des comptes OneDrive Entreprise, des canaux de conversation et des appareils Teams. Pour plus d’informations, consultez [Classifieurs pouvant être formés](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP prend en charge la détection des étiquettes de confidentialité sur les e-mails et les pièces jointes. Pour plus d’informations, consultez [Utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -224,7 +223,7 @@ Les conditions sont inclusives et vous définissez ce que vous souhaitez que la 
 - [types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [étiquettes de confidentialité](sensitivity-labels.md)
 - [étiquettes de rétention](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
-- [Classifieurs pouvant être formés](classifier-learn-about.md) (en préversion)
+- [Classifieurs pouvant être formés](classifier-learn-about.md) 
 
 selon [l’emplacement auquel](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer la stratégie.
 

@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: e5736296499cdf9ce63ead7b57505c9751c8c436
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 6f27f6a3a72be07388491b5968371ddde43b43df
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68051781"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625520"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 

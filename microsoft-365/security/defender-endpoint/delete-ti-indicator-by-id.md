@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 38a7cfff0d1ae3681a3f238f03462ff6e222047e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 310b111b65f652dd475e97e35cc0b3f33aa9b71c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68194398"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643160"
 ---
 # <a name="delete-indicator-api"></a>SUPPRIMER L’API d’indicateur
 

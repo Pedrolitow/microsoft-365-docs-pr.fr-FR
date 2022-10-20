@@ -7,15 +7,18 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.collection:
+- purview-compliance
+- tier1
 search.appverid:
 - MET150
 description: Découvrez la clé de disponibilité utilisée pour récupérer les clés client perdues.
-ms.openlocfilehash: 8a5cf75aaef5f71f25b5d34ed6db481446907abf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3a6fcebcd9ccc3a6e81728803e19b3b21a62432a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631092"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641950"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Découvrir la clé de disponibilité pour la clé client
 
@@ -33,6 +36,8 @@ Le partage de la responsabilité de protéger vos données, à l’aide de diver
 
 Pour plus d’informations sur la façon dont nous sécurisons les clés, consultez le Centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) .
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="availability-key-uses"></a>Utilisations de la clé de disponibilité
 
 La clé de disponibilité fournit la fonctionnalité de récupération pour les scénarios dans lesquels un insider malveillant externe ou malveillant vole le contrôle de votre coffre de clés, ou lorsque la mauvaise gestion accidentelle entraîne la perte de clés racine. Cette fonctionnalité de récupération s’applique à tous les services Microsoft 365 compatibles avec la clé client. Les services individuels utilisent la clé de disponibilité différemment. Microsoft 365 utilise uniquement la clé de disponibilité comme décrit ci-dessous.

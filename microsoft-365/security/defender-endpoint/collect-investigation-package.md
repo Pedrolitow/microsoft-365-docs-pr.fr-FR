@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: abd9d821c60655c9df5f632dd45bed77772b16ac
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 20ed8dd85c3c9fc174921a13c4798da02054eb17
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68151626"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639728"
 ---
 # <a name="collect-investigation-package-api"></a>Collecter l’API de package d’investigation
 

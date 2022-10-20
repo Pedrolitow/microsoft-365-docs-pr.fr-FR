@@ -13,18 +13,23 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
+ms.collection:
+- tier3
+- purview-compliance
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La version précédente de Office 365 Message Encryption dépend de Microsoft Azure Rights Management (anciennement Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 386056c282ea5f4ad996cc7ae7c50926436fe720
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3c27ef38c73e4a1f3d325fc083e8e99f34b83157
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641359"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647758"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurer Azure Rights Management pour la version précédente de Message Encryption
 
 Cette rubrique décrit les étapes à suivre pour activer et configurer Azure Rights Management (RMS), qui fait partie d’Azure Information Protection, à utiliser avec la version précédente de Office 365 Message Encryption (OME).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Cet article s’applique uniquement à la version précédente d’OME
 

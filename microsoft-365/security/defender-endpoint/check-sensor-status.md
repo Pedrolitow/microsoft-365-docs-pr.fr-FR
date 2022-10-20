@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/24/2018
 search.appverid: met150
-ms.openlocfilehash: 4763b5dd37510b1d63fac67dd764fc2b0a0f135a
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: a67b2cbb81c4d57aabd642c82029dde54cec3075
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68157455"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639829"
 ---
 # <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Vérifier l’état d’intégrité du capteur à Microsoft Defender pour point de terminaison
 

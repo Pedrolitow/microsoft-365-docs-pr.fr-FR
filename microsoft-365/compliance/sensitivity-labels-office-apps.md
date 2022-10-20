@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 939aa04f9326e202610887c52111ae8c5c58b66d
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 61302c27f9c59cbedb9bc7f3456ca6e8a1fecbb7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68546850"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621889"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -43,12 +43,12 @@ Le [client d’étiquetage unifié Azure Information Protection (AIP)](/azure/in
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Prise en charge des fonctionnalités d’étiquette de confidentialité dans les applications
 
-Les tableaux suivants répertorient la version minimale Office qui a introduit des fonctionnalités spécifiques pour les étiquettes de confidentialité intégrées aux applications Office. Ou, si la fonctionnalité d’étiquette est en préversion publique ou en cours d’examen pour une version ultérieure :
+Les tableaux suivants répertorient la version minimale d’Office qui a introduit des fonctionnalités spécifiques pour les étiquettes de confidentialité intégrées aux applications Office. Ou, si la fonctionnalité d’étiquette est en préversion publique ou en cours d’examen pour une version ultérieure :
 
-- Tableau : [Fonctionnalités d’étiquette de confidentialité dans Word, Excel et PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-- Tableau : [Fonctionnalités d’étiquette de confidentialité dans Outlook](#sensitivity-label-capabilities-in-outlook)
+- [Tableau des fonctionnalités pour Word, Excel et PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- [Tableau des fonctionnalités pour Outlook](#sensitivity-label-capabilities-in-outlook)
 
-Utilisez la [Microsoft 365 feuille de route pour](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) plus d’informations sur les nouvelles fonctionnalités prévues pour les prochaines publication.
+Utilisez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) pour plus d’informations sur les nouvelles fonctionnalités d’étiquetage prévues pour les versions ultérieures.
 
 Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour Windows, vous obtenez les nouvelles fonctionnalités plus tôt lorsque vous êtes sur le canal actuel ou le canal Enterprise mensuel, plutôt que sur Semi-Annual Enterprise canal. Les numéros de version minimum peuvent également être différents d’un canal de mise à jour à l’autre. Pour plus d’informations, voir [Vue d’ensemble des](/deployoffice/overview-update-channels) canaux de mise à jour Microsoft 365 Apps et historique des mises à jour [pour Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 

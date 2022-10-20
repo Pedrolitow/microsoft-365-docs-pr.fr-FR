@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez la protection des liens sécurisés dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez les liens fiables Teams et consultez les graphiques des messages Liens fiables.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 048de0ae500dfbeeb9f4981af50d4297a80b6e9c
-ms.sourcegitcommit: c550d73b153ad4856188c9109d9d80f02ca989b6
+ms.openlocfilehash: 9365cc73239eb9086c565468aeb8f3104ad35b6f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68140917"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626860"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -255,8 +255,6 @@ Ces paramètres s’appliquent aux liens sécurisés dans les applications de me
 - **Suivre les clics de l’utilisateur** : activez ou désactivez le stockage des données de clic liens sécurisés pour les URL sur qui vous avez cliqué. Nous vous recommandons de laisser ce paramètre sélectionné (activé).
 
   Dans Liens sécurisés pour les applications Office, ce paramètre s’applique aux versions de bureau Word, Excel, PowerPoint et Visio.
-
-  Le suivi des clics d’URL pour les liens dans les messages électroniques envoyés entre des expéditeurs internes et des destinataires internes n’est actuellement pas pris en charge.
 
   Si vous sélectionnez ce paramètre, les paramètres suivants sont disponibles :
 

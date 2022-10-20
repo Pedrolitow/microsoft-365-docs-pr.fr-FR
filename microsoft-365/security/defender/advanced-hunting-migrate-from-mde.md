@@ -19,14 +19,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58079a1b4aa1b41a216da4d2f4f5fac733a7f1fe
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 9081b40333804211a44384e98186409a569a26d5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055565"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639640"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrer des requêtes de chasse avancées à partir de Microsoft Defender pour point de terminaison
 

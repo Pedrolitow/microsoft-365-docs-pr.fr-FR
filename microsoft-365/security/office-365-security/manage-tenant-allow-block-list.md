@@ -17,12 +17,12 @@ ms.custom: ''
 description: Découvrez comment gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e46cabba3e2d0f765937a8ff34bbcea918204974
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 20dc3a8a9b69da2df684d5f0f35f8b552f3b1f4f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542472"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622153"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire
 
@@ -83,20 +83,20 @@ La liste suivante décrit ce qui se passe dans la liste d’autorisations/blocag
 
 - **Email** : si un message a été bloqué par la pile de filtrage Microsoft 365, une entrée d’autorisation peut être créée dans la liste d’autorisation/de blocage du locataire :
 
-  - Si le message a été bloqué par [l’intelligence de l’usurpation](learn-about-spoof-intelligence.md) d’identité, une entrée d’autorisation pour l’expéditeur est créée et s’affiche sous l’onglet **Expéditeurs usurpés** dans la liste verte des locataires.
+  - Si le message a été bloqué par [l’intelligence](learn-about-spoof-intelligence.md) de l’usurpation d’identité, une entrée d’autorisation pour l’expéditeur est créée et s’affiche sous l’onglet **Expéditeurs usurpés** dans la liste verte du locataire.
 
   - Si le message a été bloqué par une protection d’emprunt d’identité de [domaine ou d’utilisateur](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans Defender pour Office 365, une entrée d’autorisation n’est pas créée dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, le domaine ou l’expéditeur est ajouté à la **section Expéditeurs approuvés et domaines** dans la [stratégie anti-hameçonnage](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) qui a détecté le message.
 
-  - Si le message a été bloqué pour d’autres raisons, une entrée d’autorisation pour l’expéditeur est créée et s’affiche sous l’onglet **Domaines & adresses** dans la liste verte des locataires.
+  - Si le message a été bloqué pour d’autres raisons, une entrée d’autorisation pour l’expéditeur est créée et s’affiche sous l’onglet **Domaines & adresses** dans la liste de blocs d’autorisation du locataire.
 
-  - Si le message n’a pas été bloqué et que l’entrée d’autorisation de l’expéditeur n’est pas créée, il ne se trouve pas sous l’onglet **Expéditeurs usurpés** ou l’onglet **Domaines & adresses** .
+  - Si le message n’a pas été bloqué et qu’aucune entrée d’autorisation n’est créée pour l’expéditeur, il ne se trouve pas sous l’onglet **Expéditeurs usurpés** ou l’onglet **Domaines & adresses** .
 
 Par défaut, autorisez les **entrées pour les domaines et les adresses e-mail**, **les fichiers** et **les URL** qui expirent après 30 jours, ce qui est également le maximum. Les entrées autorisées pour **les expéditeurs usurpés** n’expirent jamais.
 
 > [!NOTE]
-> Étant donné que Microsoft gère les entrées d’autorisation pour vous, les entrées d’autorisation **inutiles pour les domaines et les adresses e-mail**, **les URL** ou **les fichiers** seront supprimées. Ce comportement protège votre organisation et permet d’éviter les entrées d’autorisation mal configurées. Si vous n’êtes pas d’accord avec le verdict, vous devrez peut-être ouvrir une demande de support pour déterminer pourquoi un message est toujours considéré comme incorrect.
+> Microsoft ne vous permet pas de créer des entrées d’autorisation directement, car cela entraîne la création d’autorisations qui ne sont pas nécessaires, exposant ainsi le locataire du client à des e-mails malveillants qui auraient pu autrement être filtrés par le système.
 >
-> Les autorisations sont ajoutées pendant le flux de messagerie, en fonction des filtres qui ont déterminé que le message était malveillant. Par exemple, si l’expéditeur et une URL du message ont été déterminés comme étant incorrects, une entrée d’autorisation est créée pour l’expéditeur et une entrée d’autorisation est créée pour l’URL.
+> Microsoft gère le processus de création d’autorisation à partir de l’envoi en créant des autorisations pour les entités (domaines ou adresses e-mail, expéditeurs usurpés, URL, fichiers) qui ont été jugées malveillantes par des filtres pendant le flux de messagerie. Par exemple, si l’expéditeur et une URL du message ont été déterminés comme étant incorrects, une entrée d’autorisation est créée pour l’expéditeur et une entrée d’autorisation est créée pour l’URL.
 >
 > Lorsque cette entité (adresse de domaine ou e-mail, URL, fichier) est à nouveau rencontrée, tous les filtres associés à cette entité sont ignorés.
 >
@@ -107,3 +107,7 @@ Par défaut, autorisez les **entrées pour les domaines et les adresses e-mail**
 Après avoir ajouté une entrée d’autorisation via le portail Soumissions ou une entrée de bloc dans la liste d’autorisation/de blocage du locataire, l’entrée doit commencer à fonctionner immédiatement 99,999 % du temps. Pour le reste, cela peut prendre jusqu’à 24 heures.
 
 Nous vous recommandons de laisser les entrées expirer automatiquement après 30 jours pour voir si le système a découvert l’autorisation ou le bloc. Si ce n’est pas le cas, vous devez faire une autre entrée pour donner au système encore 30 jours pour apprendre.
+
+Avec **la gestion des expirations autorisées** (actuellement en préversion privée), si Microsoft n’a pas appris de l’entrée d’autorisation, Microsoft étendra automatiquement le délai d’expiration des entrées d’autorisation qui expireront bientôt de 30 jours. Cette extension permet d’empêcher les courriers légitimes d’accéder à nouveau au courrier indésirable ou à la mise en quarantaine. Si Microsoft n’apprend pas dans les 90 jours du calendrier à partir de la date de création d’origine de l’entrée verte, Microsoft supprime l’entrée d’autorisation.
+
+Si Microsoft a appris de l’entrée d’autorisation, l’entrée sera supprimée et vous recevrez une alerte vous informant à ce sujet.

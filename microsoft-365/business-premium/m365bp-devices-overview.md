@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la configuration de tous les appareils BYOD avec protection contre les cyberattaques et autres menaces et vulnérabilités malveillantes.
-ms.openlocfilehash: 33246deae1f9284e5168dd566468a46d4f20cb96
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: e45c9840e2d884e1ec43d272348b33c67fd6601a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68093757"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620830"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Configurer des appareils non gérés (BYOD)
 
@@ -39,7 +39,7 @@ Chaque appareil est une voie d'attaque possible vers votre réseau et doit être
 Vos objectifs sont les suivants :
 
 - [Obtenez tout le monde pour configurer l’authentification multifacteur](m365bp-multifactor-authentication.md).
-- [Obtenez les applications installées sur des appareils](m365bp-install-office-apps.md).
+- [Installez les applications Microsoft 365 sur les appareils](m365bp-install-office-apps.md).
 - [Protégés des appareils Windows et Mac non gérés](m365bp-protect-pcs-macs.md).
 
 Une fois que vous aurez atteint ces objectifs, passez à [Utiliser l’e-mail en toute sécurité](m365bp-protect-email-overview.md).

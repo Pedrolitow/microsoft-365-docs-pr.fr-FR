@@ -14,20 +14,23 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 11fa05644d5f65ee4f835027636d41da1dd37adc
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 734fa013a54a3ad8184fbc3b4a44289cb4fe9715
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229523"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645316"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virus Initiative
 
 Microsoft Virus Initiative (MVI) aide les organisations à développer des solutions de sécurité plus performantes, fiables et alignées sur la technologie et la stratégie Microsoft.
 
 ## <a name="become-a-member"></a>Devenir membre
+
+> [!NOTE]
+> Le programme MVI n’accepte actuellement pas de nouvelles demandes d’adhésion. Pour plus d’informations, contactez MVI@microsoft.com.
 
 Vous pouvez demander l’adhésion si vous êtes un représentant d’une organisation qui développe et produit des logiciels anti-programme malveillant ou une technologie antivirus. 
 

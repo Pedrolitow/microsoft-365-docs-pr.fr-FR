@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs avec des balises utilisateur dans Microsoft Defender pour Office 365 Plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans Microsoft Defender pour Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 28e1df8bd94cb9829bc8c68e6f13e376cf54126c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: d6a3a2ca0fbb0a7297ce8d53e73ea4be37359036
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066341"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639969"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -48,7 +48,7 @@ Après avoir appliqué des balises système ou personnalisées aux utilisateurs,
 - [Stratégies d’alerte personnalisées](../../compliance/alert-policies.md#view-alerts)
 - [Explorateur de menaces et détections en temps réel](threat-explorer.md)
 - [Rapport utilisateur compromis](view-email-security-reports.md#compromised-users-report)
-- [Page de l’entité d’e-mail](mdo-email-entity-page.md#other-innovations)
+- [Page de l’entité d’e-mail](mdo-email-entity-page.md)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
 - [Rapport des principaux expéditeurs et destinataires](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Simulation d’attaque](attack-simulation-training.md#target-users)

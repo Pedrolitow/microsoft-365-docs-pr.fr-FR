@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m - m365-security - tier2
-ms.topic: article
-ms.openlocfilehash: a257a38dc9a46d983c4b7a6446ecf0117aac1bb3
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 8cf385296243556ce9e131a47e5b00dca42e5864
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68059259"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640673"
 ---
 # <a name="custom-detections-overview"></a>Vue d’ensemble des détections personnalisées
 

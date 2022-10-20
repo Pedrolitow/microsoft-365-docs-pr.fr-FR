@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 619fe25a2390a79fee11fde078b6ca9a3579705e
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: b965bac9f70ff921299a38d664dd2811f5fcb67f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68150086"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627497"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>notes de publication de l’API Microsoft Defender pour point de terminaison
 

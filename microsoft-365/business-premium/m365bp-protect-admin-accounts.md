@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment configurer et protéger vos comptes d’administrateur dans Microsoft 365 Business Premium.
-ms.openlocfilehash: c1d7358fd0c117b20b35870b2a04cfd03885bf7a
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 8fa85f823294e32e923fb9eebbe5472733a175e1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68097048"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632379"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Protéger vos comptes d’administrateur dans Microsoft 365 Business Premium
 
@@ -43,7 +43,7 @@ Lorsque vous vous inscrivez à Microsoft 365 et entrez vos informations, vous de
 
 ## <a name="create-other-admin-accounts"></a>Créer d'autres comptes d'administrateur
 
-Utilisez les comptes d'administrateur uniquement pour l'administration de Microsoft 365. Les administrateurs doivent disposer d'un compte d'utilisateur distinct pour leur utilisation régulière des applications Office et n'utiliser leur compte administratif que lorsque cela est nécessaire pour gérer les comptes et les appareils, et lorsqu'ils travaillent sur d'autres fonctions d'administration. C'est également une bonne idée de supprimer la licence Microsoft 365 de vos comptes d'administrateur afin de ne pas avoir à payer pour des licences supplémentaires.
+Utilisez les comptes d'administrateur uniquement pour l'administration de Microsoft 365. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour leur utilisation régulière des applications Microsoft 365, et utiliser uniquement leur compte d’administration si nécessaire pour gérer des comptes et des appareils, et tout en travaillant sur d’autres fonctions d’administration. C'est également une bonne idée de supprimer la licence Microsoft 365 de vos comptes d'administrateur afin de ne pas avoir à payer pour des licences supplémentaires.
 
 Vous souhaiterez configurer au moins un autre compte d'administrateur global pour donner un accès administrateur à un autre employé de confiance. Vous pouvez également créer des comptes d’administrateur distincts pour la gestion des utilisateurs (ce rôle est appelé **administrateur de gestion des utilisateurs**). Pour plus d’informations, consultez les [rôles d’administrateur](/office365/admin/add-users/about-admin-roles).
 

@@ -2,7 +2,7 @@
 title: Migration d’un hips tiers vers des règles ASR
 description: Décrit comment aborder une migration à partir d’une solution HIPS (Host Intrusion Prevention System) tierce vers des règles ASR.
 keywords: Règles de réduction de la surface d’attaque, asr, règles asr, hanches, système de prévention des intrusions de l’hôte, règles de protection, anti-exploitation, antiexploitation, exploit, prévention des infections, Microsoft Defender pour point de terminaison
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: edbf7121a23bd5effda50256fdc07a6d58e09493
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5c13a63125c8b2906bf61f0a36cb4ff97f6f6f0f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231635"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646526"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles ASR
 

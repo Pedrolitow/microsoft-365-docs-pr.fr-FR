@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - o365_security_incident_response
 - m365-security
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 4ddd978a4ac75680f10413a3064586ce38967f29
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 7a6e5b02593247cc3ee5ab0111fb496d58e60f9b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072478"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642324"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 

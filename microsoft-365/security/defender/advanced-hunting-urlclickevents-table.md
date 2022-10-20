@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: e3e0f5e25535a685f62c6b0e7471b5731cdf8287
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 11e8ac2fd7f67cb2d72ef466a4843bc689932fc1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048987"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625234"
 ---
 # <a name="urlclickevents"></a>UrlClickEvents
 

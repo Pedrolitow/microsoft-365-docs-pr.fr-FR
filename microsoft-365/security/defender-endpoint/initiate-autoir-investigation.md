@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: bb37a160f3ba008490ad7300c16c8325b8431d9f
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 956a443778db52a40d85974dace4bc12ebba7224
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710870"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636517"
 ---
 # <a name="start-investigation-api"></a>API Démarrer l’investigation
 
@@ -58,7 +60,7 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 - Windows 10, version 1709 (build du système d’exploitation 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) ou ultérieure
 - Windows 10, version 1803 (build du système d’exploitation 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) ou ultérieure
 - Windows 10, version [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ou ultérieure
-- Windows 11
+- Windows 11
 
 ## <a name="permissions"></a>Autorisations
 
@@ -74,6 +76,8 @@ Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrir
 >
 > - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Actions de correction actives » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+>
+> La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2. 
 
 ## <a name="http-request"></a>Requête HTTP
 

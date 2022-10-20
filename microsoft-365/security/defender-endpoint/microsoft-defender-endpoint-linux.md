@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 429a3a1bdfe6e762f81f585612ab2c538539f778
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: aa50312eba19928dcbfeafe3c47ad64e5dee1fd3
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222757"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646636"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -121,7 +121,7 @@ Si vous rencontrez des échecs d’installation, [reportez-vous à la résolutio
     - Pour 6.7 : 2.6.32-573.*
     - Pour 6.8 : 2.6.32-642.*
     - Pour 6.9 : 2.6.32-696.* (sauf 2.6.32-696.el6.x86_64)
-    - Pour 6.10 : 2.6.32.754.2.1.el6.x86_64 à 2.6.32-754.47.1 :
+    - Pour 6.10 : 2.6.32.754.2.1.el6.x86_64 au 2.6.32-754.48.1 :
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64
@@ -148,6 +148,7 @@ Si vous rencontrez des échecs d’installation, [reportez-vous à la résolutio
        - 2.6.32-754.41.2.el6.x86_64
        - 2.6.32-754.43.1.el6.x86_64
        - 2.6.32-754.47.1.el6.x86_64
+       - 2.6.32-754.48.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 

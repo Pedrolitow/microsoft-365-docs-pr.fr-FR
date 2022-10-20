@@ -10,26 +10,29 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment créer des alertes pour les activités dans le Gestionnaire de conformité Microsoft Purview qui peuvent avoir un impact sur votre score de conformité.
-ms.openlocfilehash: 499d1f005b67b2a9583d7138ce784b2e7ae1c8ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 532dd4523d7364895ee385f5c2b6f96a9e3d51a0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642237"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636099"
 ---
 # <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview
 
 **Dans cet article :** Découvrez comment **définir des alertes** pour certaines activités dans le Gestionnaire de conformité, comment gérer les alertes et comment **créer des stratégies d’alerte** pour définir des conditions d’alerte.
 
-## <a name="overview"></a>Aperçu
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="overview"></a>Vue d’ensemble
 Le Gestionnaire de conformité peut vous avertir des modifications dès qu’elles se produisent afin que vous puissiez suivre vos objectifs de conformité. Par exemple, vous pouvez configurer des alertes pour vous informer quand la valeur de score d’une action d’amélioration a augmenté ou diminué en raison d’un changement de configuration dans votre locataire, ou lorsqu’une action d’amélioration a été affectée à un utilisateur pour effectuer un travail d’implémentation ou de test. Affichez les [types d’événements](#create-an-alert-policy) pour lesquels vous pouvez créer des alertes.
 
 Pour créer des alertes, vous devez d’abord configurer une stratégie d’alerte pour décrire les conditions qui déclenchent une alerte et la fréquence des notifications. Lorsque nous détectons une correspondance avec vos conditions de stratégie, vous recevez une notification par e-mail avec des détails afin que vous puissiez déterminer s’il faut examiner ou prendre d’autres mesures.
@@ -71,7 +74,7 @@ Le tableau ci-dessous décrit les utilisateurs qui peuvent créer et modifier de
 En savoir plus sur les [rôles Azure dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
-| Role | Peut créer et modifier des stratégies | Peut modifier des alertes | 
+| Rôle | Peut créer et modifier des stratégies | Peut modifier des alertes | 
 | :------------- | :-------------: | :------------: |
 | **Administration du Gestionnaire de conformité**| Oui  | Oui | 
 | **Évaluateur du Gestionnaire de conformité**| Oui | Oui | 
@@ -228,7 +231,7 @@ Pour effectuer une action sur une alerte, sélectionnez sa ligne dans la page **
 
 **Affecter l’alerte** : vous pouvez affecter l’alerte à un utilisateur pour examiner ou vérifier les événements à l’origine de l’alerte. Lorsque vous choisissez cette option, un panneau s’ouvre dans lequel vous pouvez sélectionner un utilisateur de votre organisation et lui attribuer l’alerte. Vous pouvez filtrer votre affichage des alertes en sélectionnant **Filtres** dans la page **Alertes** et en entrant le nom de l’utilisateur dans le champ **Affecté au** champ.
 
-**Alerte par e-mail** : vous pouvez envoyer un e-mail à l’utilisateur associé à l’activité de l’alerte pour confirmer qu’il a pris l’action. Lorsque vous avez choisi cette option, elle ouvre un modèle de messagerie contenant des informations de base sur l’alerte, que vous pouvez personnaliser avec d’autres instructions et envoyer à l’utilisateur.
+**Email alerte** : vous pouvez envoyer un e-mail à l’utilisateur associé à l’activité de l’alerte pour confirmer qu’il a pris l’action. Lorsque vous avez choisi cette option, elle ouvre un modèle de messagerie contenant des informations de base sur l’alerte, que vous pouvez personnaliser avec d’autres instructions et envoyer à l’utilisateur.
 
 **Afficher les détails** de la stratégie : vous souhaiterez peut-être passer en revue les paramètres de la stratégie qui a déclenché l’alerte. Notez que lorsque vous sélectionnez cette option, vous accédez directement à la page **Stratégies d’alerte** avec le panneau détails de la stratégie déjà ouvert. Vous ne serez plus sur votre page **Alertes** lorsque vous fermerez le panneau des détails de la stratégie.
 
@@ -251,7 +254,7 @@ Une fois qu’une alerte est générée, son état est indépendant de l’état
 
 Lorsqu’une stratégie est supprimée, toutes les alertes qui ont été générées par cette stratégie restent sur votre page **Alertes** , mais aucune nouvelle alerte n’est générée.
 
-## <a name="email-notifications-of-alerts"></a>Notifications par e-mail d’alertes
+## <a name="email-notifications-of-alerts"></a>Email notifications d’alertes
 
 Lorsque vous créez une stratégie, un e-mail est envoyé à l’utilisateur qui a créé la stratégie pour l’avertir qu’une correspondance a été détectée. Vous pouvez choisir d’envoyer ces notifications par e-mail à d’autres utilisateurs de votre organisation. Les alertes se produisent en quasi-temps réel et les notifications par e-mail sont envoyées dès qu’une alerte est générée. L’e-mail contient le nom de l’événement, la gravité, l’heure détectée et un lien pour afficher l’alerte dans le Gestionnaire de conformité.
 

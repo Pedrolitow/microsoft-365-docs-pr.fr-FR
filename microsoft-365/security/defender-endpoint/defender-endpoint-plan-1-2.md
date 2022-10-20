@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/26/2022
+ms.date: 10/18/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - m365-security
 - tier1
-ms.openlocfilehash: 2d627357f4242d74fbec8a7d6a15925f60a32f63
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 89d4865dfafede716077aa0f73e31a897383ad68
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180206"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643226"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Comparer les plans de sécurité des points de terminaison Microsoft
 
@@ -47,7 +47,7 @@ Le tableau suivant récapitule ce qui est inclus dans les plans de sécurité de
 | Planification | Inclus |
 |:---|:---|
 | [Defender pour Endpoint Plan 1](defender-endpoint-plan-1.md)  | <ul><li>[Protection de nouvelle génération](defender-endpoint-plan-1.md#next-generation-protection) (inclut le logiciel anti-programme malveillant et l’antivirus)</li><li>[Réduction de la surface d’attaque](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [Actions de réponse manuelle](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Gestion centralisée](defender-endpoint-plan-1.md#centralized-management)</li><li>[Rapports de sécurité](defender-endpoint-plan-1.md#reporting)</li><li>[API](defender-endpoint-plan-1.md#apis)</li><li>[Prise en charge des appareils Windows 10, iOS, Android os et macOS](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
-| [Defender pour point de terminaison Plan 2](microsoft-defender-endpoint.md)  | Toutes les fonctionnalités de Defender pour point de terminaison Plan 1, ainsi que :<ul><li>[Découverte d’appareils](device-discovery.md)</li><li>[Inventaire des appareils](machines-view-overview.md)</li><li>[Fonctionnalités de gestion des vulnérabilités Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Analyse des menaces](threat-analytics.md)</li><li>[Examen et réponse automatisés](automated-investigations.md)</li><li>[Repérage avancé](advanced-hunting-overview.md)</li><li>[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)</li><li>[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)</li><li>Prise en charge des [plateformes Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
+| [Defender pour point de terminaison Plan 2](microsoft-defender-endpoint.md)  | Toutes les fonctionnalités de Defender pour point de terminaison Plan 1, ainsi que :<ul><li>[Découverte d’appareils](device-discovery.md)</li><li>[Inventaire des appareils](machines-view-overview.md)</li><li>[Fonctionnalités de gestion des vulnérabilités Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Analyse des menaces](threat-analytics.md)</li><li>[Examen et réponse automatisés](automated-investigations.md)</li><li>[Repérage avancé](advanced-hunting-overview.md)</li><li>[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)</li><li>[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)</li><li>Prise en charge des [plateformes Windows](configure-endpoints.md) (client uniquement) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
 | [Module complémentaire Gestion des vulnérabilités Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Autres fonctionnalités de gestion des vulnérabilités defender pour Defender pour le plan de point de terminaison 2 :<ul><li>[Évaluation des bases de référence de sécurité](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Bloquer les applications vulnérables](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Extensions de navigateur](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Évaluation des certificats numériques](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Analyse du partage réseau](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>Prise en charge des [plateformes Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
 | [Defender pour Entreprises](../defender-business/mdb-overview.md) <sup>[[1](#fn1)]</sup>  | [Les services optimisés pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md) sont les suivants : <ul><li>protection Email</li><li>Protection anti-courrier indésirable</li><li>Protection anti-programme malveillant</li><li>Protection de nouvelle génération</li><li>Réduction de la surface d'attaque</li><li>Détection et réponse du point de terminaison</li><li>Enquêtes et réponses automatisées </li><li>Gestion des vulnérabilités</li><li>Rapports centralisés</li><li>API (pour l’intégration avec des applications personnalisées ou des solutions de création de rapports)</li><li>[Intégration à Microsoft 365 Lighthouse](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
 
