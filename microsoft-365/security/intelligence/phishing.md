@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: bb007a11f45742834f06d7b450272f7bdf16cbea
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 2c93e2defdbffd9d676625c988d83e2bc1d6c559
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233769"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633304"
 ---
 # <a name="how-to-protect-against-phishing-attacks"></a>Comment se protéger contre les attaques par hameçonnage
 

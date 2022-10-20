@@ -1,5 +1,6 @@
 ---
-title: Exporter des documents d’un jeu à réviser
+title: Exporter des documents à partir d’un ensemble de révisions dans eDiscovery (Premium)
+description: Découvrez comment sélectionner et exporter du contenu à partir d’un ensemble de révisions eDiscovery (Premium) pour les présentations ou les révisions externes.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,19 +11,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: Découvrez comment sélectionner et exporter du contenu à partir d’un ensemble de révisions eDiscovery (Premium) pour les présentations ou les révisions externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 59adbdd86eedb7cb06e3ea9e2a43af848f2fb872
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 5ff08e00966a81e936b8960e51af462dbbb362e9
+ms.sourcegitcommit: cf3811117bf20cdd27c43390cb2f10c6afc525c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826728"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68648385"
 ---
 # <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>Exporter des documents à partir d’un ensemble de révisions dans eDiscovery (Premium)
 
@@ -32,16 +34,18 @@ Exporter les documents d’un jeu à réviser :
 
 1. Dans le portail de conformité Microsoft Purview, ouvrez le cas eDiscovery (Premium), sélectionnez l’onglet **Ensembles** de révision, puis sélectionnez l’ensemble de révisions à exporter.
 
-2. Dans le jeu de révision, cliquez sur **Exportation d’action** > .
+2. Dans le jeu à réviser, sélectionnez **Action** > **Exportation**.
 
    L’outil Exporter affiche la page de menu volant avec les paramètres pour configurer l’exportation. Certaines options sont sélectionnées par défaut, mais vous pouvez les modifier. Consultez la section suivante pour obtenir des descriptions des options d’exportation que vous pouvez configurer.
 
-   ![Options de configuration pour l’exportation d’éléments à partir d’un ensemble de révisions.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![Options de configuration pour l’exportation d’éléments à partir d’un ensemble de révisions.](../media/ediscovery-review-set-export-options.png)
 
-3. Après avoir configuré l’exportation, cliquez sur **Exporter** pour démarrer le processus d’exportation. Selon l’option que vous avez sélectionnée dans la section **Options de sortie** , vous pouvez accéder aux fichiers d’exportation par téléchargement direct ou dans le compte stockage Azure de votre organisation.
+3. Après avoir configuré l’exportation, sélectionnez **Exporter** pour démarrer le processus d’exportation. Selon l’option que vous avez sélectionnée dans la section **Options de sortie** , vous pouvez accéder aux fichiers d’exportation par téléchargement direct ou dans le compte stockage Azure de votre organisation.
 
 > [!NOTE]
 > Les travaux d’exportation sont conservés pendant toute la durée de vie du cas. Toutefois, vous devez télécharger le contenu à partir d’une tâche d’exportation dans les 30 jours suivant la fin de la tâche d’exportation.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="export-options"></a>Options d’exportation
 
@@ -76,8 +80,6 @@ Utilisez les options suivantes pour configurer l’exportation. Certaines option
   - Fichiers texte : cette option inclut les versions de texte extraites des fichiers natifs dans l’exportation.
   
   - Remplacez les fichiers natifs expurgés par des fichiers PDF convertis : si des fichiers PDF supprimés sont générés lors de la révision, ces fichiers sont disponibles pour l’exportation. Vous pouvez choisir d’exporter uniquement les fichiers natifs qui ont été supprimés (en ne sélectionnant pas cette option) ou vous pouvez sélectionner cette option pour exporter les fichiers PDF qui contiennent les actions réelles.
-
-  - Fichiers PDF de conversation au lieu de messages de conversation individuels : activez cette case à cocher pour exporter les conversations de conversation dans un fichier PDF. Tous les messages de conversation de la même conversation sont exportés dans le même fichier PDF. Si vous ne cochez pas cette case, chaque message unique d’une conversation de conversation est exporté en tant qu’élément autonome. Le fichier est exporté au même format qu’il a été enregistré dans la boîte aux lettres. Pour une conversation spécifique, vous recevez plusieurs fichiers .msg.
 
 Les sections suivantes décrivent la structure des dossiers pour les fichiers libres et les options de structure de répertoire condensé. Les exportations sont partitionnées en fichiers ZIP avec une taille maximale de contenu non compressé de 75 Go. Si la taille d’exportation est inférieure à 75 Go, l’exportation se compose d’un fichier récapitulatif et d’un fichier ZIP unique. Pour les exportations supérieures à 75 Go de données non compressées, plusieurs fichiers ZIP sont créés. Une fois téléchargés, les fichiers ZIP peuvent être décompressés dans un emplacement unique pour recréer l’exportation complète.
 

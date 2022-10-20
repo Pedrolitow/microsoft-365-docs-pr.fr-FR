@@ -13,17 +13,17 @@ audience: ITPro
 ms.reviewer: mimilone, julih
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: d77f369e6247e1adf72fa060f38fe7efaa365572
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5b427786b31451391f78625bce98f283e33f9a44
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167162"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634319"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 

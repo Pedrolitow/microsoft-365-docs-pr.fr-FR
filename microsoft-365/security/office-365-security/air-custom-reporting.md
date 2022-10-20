@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 3fa8841972a521515c6952116d25b8fb1654650f
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: d3a758551c7de3000f4e03f39c333c385efd80de
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68084218"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639113"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Solutions de création de rapports personnalisées ou tierces pour Microsoft Defender pour Office 365
 

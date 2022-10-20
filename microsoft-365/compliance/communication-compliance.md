@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5082d07b9b0b0552917dff6071662ee713a7769b
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 0c1950e2c3927db06143a63754ea61350b121d05
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565074"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629322"
 ---
 # <a name="learn-about-communication-compliance"></a>En savoir plus sur la conformité des communications
 
@@ -114,7 +114,7 @@ Les workflows de correction intégrés vous permettent d’identifier et d’agi
 - **Historique des utilisateurs** : la vue historique de toutes les activités de correction des messages utilisateur, telles que les notifications passées et les escalades pour les correspondances de stratégie, fournit désormais aux réviseurs plus de contexte pendant le processus de flux de travail de correction. Les premières instances ou répétitions de correspondances de stratégie pour les utilisateurs sont désormais archivées et facilement visibles.
 - **Notification détectée par le modèle** : de nombreuses actions de harcèlement et d’intimidation ont lieu au fil du temps et impliquent la récurrence d’instances du même comportement par un utilisateur. La nouvelle notification détectée par le modèle affichée dans les détails de l’alerte permet d’attirer l’attention sur ces alertes et ce type de comportement.
 - **Traduction** : examinez rapidement les détails des messages dans huit langues à l’aide de la prise en charge de la traduction dans le flux de travail de correction. Les messages dans d’autres langues sont automatiquement convertis en la langue d’affichage du réviseur.
-- **Détection des pièces jointes** : analysez, détectez et examinez le contenu lié (pièces jointes modernes) de OneDrive et Microsoft Teams qui correspondent aux classifieurs de stratégie et aux conditions des messages Microsoft Teams. Le contenu de la pièce jointe est automatiquement extrait dans un fichier texte pour une révision et une action détaillées.
+- **Détection des pièces jointes** : détectez, identifiez et examinez le contenu lié (pièces jointes modernes) de OneDrive et Microsoft Teams qui correspondent aux classifieurs de stratégie et aux conditions pour les messages Microsoft Teams. Le contenu de la pièce jointe est automatiquement extrait dans un fichier texte pour une révision et une action détaillées.
 
 ### <a name="actionable-insights"></a>Informations exploitables
 
