@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Découvrez comment entraîner un modèle de traitement de document structuré dans Microsoft Syntex.
-ms.openlocfilehash: c4bea3f71e3cfaaa79863443db21ab038826db8a
-ms.sourcegitcommit: fa5a1699c8c863a1e61e427e522b3c40855a4f7a
+ms.openlocfilehash: 12bc46578d6cd26b4847baeb77856ff37b7d246c
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68667817"
+ms.locfileid: "68660317"
 ---
 # <a name="train-a-structured-document-processing-model-in-microsoft-syntex"></a>Entraîner un modèle de traitement de document structuré dans Microsoft Syntex
 
@@ -35,6 +35,8 @@ Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—S
 --->
 
 Suivez les instructions fournies dans [Créer un modèle dans Syntex](create-syntex-model.md) pour créer un modèle de traitement de document structuré dans un centre de contenu. Vous pouvez également suivre les instructions fournies dans [Créer un modèle sur un site SharePoint local](create-local-model.md) pour créer le modèle sur un site local. Utilisez ensuite cet article pour effectuer l’apprentissage de votre modèle.
+
+![Diagramme du flux de travail pour entraîner un modèle AI Builder.](../media/content-understanding/train-aib-model.png)
 
 Pour entraîner un modèle de traitement de document structuré, procédez comme suit :
 
@@ -82,7 +84,7 @@ Vous devez baliser les documents pour apprendre au modèle à comprendre les cha
 --->
 3. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
 
-    ![OK.](../media/content-understanding/doc-lib-done.png) 
+    ![Capture d’écran montrant les données extraites.](../media/content-understanding/doc-lib-done.png) 
 
 > [!NOTE]
 > Si un modèle de traitement de document de forme libre ou structurée et un modèle de traitement de document non structuré sont appliqués à la même bibliothèque, le fichier est classé à l’aide du modèle de traitement de document non structuré et de tous les extracteurs formés pour ce modèle. S’il existe des colonnes vides qui correspondent au modèle de traitement du document, les colonnes sont remplies à l’aide de ces valeurs extraites.
