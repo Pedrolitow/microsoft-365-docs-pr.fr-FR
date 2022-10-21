@@ -6,21 +6,23 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: En savoir plus sur l’utilisation et l’enregistrement des modèles d’explication dans Microsoft Syntex.
-ms.openlocfilehash: ef1e3cd3575d5e943c2ea39e98f7c85046de32ec
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: c075a084077479fe1cbb9890203f7e2e6b15843d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547749"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662816"
 ---
 # <a name="use-explanation-templates-in-microsoft-syntex"></a>Utiliser des modèles d’explication dans Microsoft Syntex
+
+<sup>**S’applique à :**  &ensp; &#10003; traitement de documents non structurés</sup>
 
 Bien que vous puissiez ajouter manuellement différentes valeurs de liste d'expressions pour votre explication, il peut être plus facile d’utiliser les modèles qui vous sont fournis dans la bibliothèque d’explications.
 
@@ -30,8 +32,8 @@ Par exemple, au lieu d’ajouter manuellement toutes les variantes de *Date*, vo
 
 La bibliothèque d’explications comprend des explications de *liste d’expressions* couramment utilisées, notamment :
 
-- Date : Dates du calendrier, tous les formats. Inclut du texte et des chiffres (par exemple, « 9 décembre 2020 »).
-- Date (numérique) : Dates du calendrier, tous les formats. Inclut les numéros (par exemple 1-11-2020).
+- Date : Dates du calendrier, tous les formats. Inclut du texte et des nombres (par exemple, « 9 décembre 2022 »).
+- Date (numérique) : Dates du calendrier, tous les formats. Inclut des nombres (par exemple, 1-11-2022).
 - Heure : formats 12 heures et 24 heures.
 - Nombre : Nombres positifs et négatifs jusqu'à deux décimales.
 - Pourcentage : Une liste de motifs représentant un pourcentage. Par exemple : 1%, 11%, 100%, ou 11.11%.
@@ -118,4 +120,4 @@ Vous pouvez enregistrer une explication en tant que modèle pour la rendre dispo
 
 ### <a name="see-also"></a>Voir aussi
 
-[Types d’explications dans Microsoft Syntex](explanation-types-overview.md)
+[Types d’explication dans Microsoft Syntex](explanation-types-overview.md)

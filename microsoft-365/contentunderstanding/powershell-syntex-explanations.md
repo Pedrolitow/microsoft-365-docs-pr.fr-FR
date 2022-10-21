@@ -1,33 +1,35 @@
 ---
-title: Utiliser des explications de modèle de compréhension de document dans PowerShell
+title: Utiliser des explications pour les modèles de traitement de documents non structurés dans PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Découvrez comment utiliser les explications du modèle de compréhension de document Microsoft Syntex dans PowerShell.
-ms.openlocfilehash: c2ffc7493e91adc4e990da56e5a29408121eded2
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Découvrez comment utiliser des explications de modèle Microsoft Syntex dans PowerShell.
+ms.openlocfilehash: b4f647bbd168b89bf6306c63f2d6d9ee86ac2a5c
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564693"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659936"
 ---
-# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Utiliser des explications de modèle de compréhension de document dans PowerShell
+# <a name="work-with-explanations-for-unstructured-document-processing-models-in-powershell"></a>Utiliser des explications pour les modèles de traitement de documents non structurés dans PowerShell
+
+<sup>**S’applique à :**  &ensp; &#10003; traitement de documents non structurés</sup>
 
 > [!IMPORTANT]
 > Les applets de commande Microsoft Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
-Les modèles d’explication personnalisés sont stockés dans une liste dans un centre de contenu. Étant donné que ces explications sont stockées en tant qu’éléments de liste, PowerShell peut être utilisé pour interagir avec eux.
+Les modèles d’explication personnalisés sont stockés dans une liste au sein d’un centre de contenu. Étant donné que ces explications sont stockées sous forme d’éléments de liste, PowerShell peut être utilisé pour interagir avec eux.
 
-## <a name="list-saved-explanations"></a>Répertorier les explications enregistrées
+## <a name="list-saved-explanations"></a>Lister les explications enregistrées
 
 Cet exemple montre comment afficher tous les modèles d’explication personnalisés qui ont été enregistrés sur un centre de contenu spécifique.
 
@@ -106,7 +108,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## <a name="create-a-regular-expression-explanation"></a>Créer une explication d’expression régulière
 
-Cet exemple montre comment créer un modèle d’explication d’expression régulière personnalisée.
+Cet exemple montre comment créer un modèle d’explication d’expression régulière personnalisé.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -133,7 +135,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>Créer une explication de liste d’expressions basée sur un ensemble de termes
 
-Cet exemple montre comment créer un modèle d’explication de liste d’expressions personnalisée en prenant les valeurs d’un ensemble de termes. Cela inclut les noms de termes préférés et tous les synonymes.
+Cet exemple montre comment créer un modèle d’explication de liste d’expressions personnalisée en prenant les valeurs d’un ensemble de termes. Cela inclut les noms de termes préférés et les synonymes éventuels.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"

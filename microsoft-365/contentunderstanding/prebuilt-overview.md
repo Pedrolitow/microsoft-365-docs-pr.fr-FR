@@ -6,69 +6,52 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.customer: intro-overview
-ms.service: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les modèles prédéfinis dans Microsoft Syntex.
-ms.openlocfilehash: 8d5d2c9a4103c02e4acab10f653ae658679a1c07
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 0ec44b2f7b0b0360eedceadb71ddf9abdc6e2941
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563173"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659146"
 ---
-# <a name="prebuilt-models-overview-in-microsoft-syntex"></a>Vue d’ensemble des modèles prédéfinis dans Microsoft Syntex
+# <a name="overview-of-prebuilt-models-in-microsoft-syntex"></a>Vue d’ensemble des modèles prédéfinis dans Microsoft Syntex
 
-En plus de [documenter la compréhension des modèles](document-understanding-overview.md) et des [modèles de traitement des formulaires](form-processing-overview.md), Microsoft Syntex fournit des modèles prédéfinis pour automatiser l’extraction des informations.
+En plus des [modèles personnalisés](model-types-overview.md#custom-models), Microsoft Syntex fournit des *modèles prédéfinis* pour automatiser l’extraction des informations.
 
-Les modèles prédéfinis sont préentraînés pour reconnaître les documents et les informations structurées dans les documents. Au lieu de devoir créer un modèle personnalisé à partir de zéro, vous pouvez itérer sur un modèle préentraîné existant pour ajouter des champs spécifiques qui répondent aux besoins de votre organisation. 
+Les modèles prédéfinis sont préconfigurés pour reconnaître les documents et les informations structurées dans les documents. Au lieu d’avoir à créer un modèle personnalisé à partir de zéro, vous pouvez itérer sur un modèle préentraîné existant pour ajouter des champs spécifiques qui répondent aux besoins de votre organisation. 
 
-Les modèles prédéfinis utilisent la reconnaissance optique de caractères (OCR) combinée avec des modèles d’apprentissage profond pour identifier et extraire du texte prédéfini et des champs de données communs à des types de documents spécifiques. Vous commencez par analyser l’un de vos fichiers sur le modèle prédéfini. Vous sélectionnez ensuite les champs détectés qui ont un sens pour votre objectif. Si le modèle ne détecte pas les champs dont vous avez besoin, vous pouvez analyser à nouveau à l’aide d’un autre fichier.
+Les modèles prédéfinis utilisent la reconnaissance optique de caractères (OCR) combinée à des modèles deep learning pour identifier et extraire des champs de texte et de données prédéfinis communs à des types de documents spécifiques. Vous commencez par analyser l’un de vos fichiers par rapport au modèle prédéfini. Vous sélectionnez ensuite les champs détectés qui sont pertinents pour votre objectif. Si le modèle ne détecte pas les champs dont vous avez besoin, vous pouvez analyser à nouveau à l’aide d’un autre fichier.
 
-Comme les modèles de compréhension de document, les modèles prédéfinis sont créés et gérés dans le [centre de contenu](create-a-content-center.md). Lorsqu’il est appliqué à une bibliothèque de documents SharePoint, le modèle est associé à un type de contenu et comporte des colonnes pour stocker les informations extraites. 
+Comme les autres modèles, les modèles prédéfinis sont créés et gérés dans le [centre de contenu](create-a-content-center.md). Lorsqu’il est appliqué à une bibliothèque de documents SharePoint, le modèle est associé à un type de contenu et comporte des colonnes pour stocker les informations extraites. 
 
 Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour l’appliquer à toute bibliothèque de documents SharePoint à laquelle vous avez accès.  
 
+## <a name="available-prebuilt-models"></a>Modèles prédéfinis disponibles
+
+Actuellement, deux modèles prédéfinis sont disponibles : [les factures](prebuilt-model-invoice.md) et [les reçus](prebuilt-model-receipt.md).
+
+- Le *modèle de factures* analyse et extrait les informations clés des factures de vente. L’API analyse les factures dans différents formats et [extrait des informations clés sur les factures](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) , telles que le nom du client, l’adresse de facturation, la date d’échéance et le montant dû.
+
+- Le *modèle de reçus* analyse et extrait les informations clés des reçus. L’API analyse les reçus imprimés et manuscrits et [extrait les informations de reçu clé](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) telles que le nom du commerçant, le numéro de téléphone du commerçant, la date de transaction, la taxe et le total de la transaction.
+
+D’autres modèles prédéfinis seront disponibles dans les versions ultérieures.
+
 ## <a name="requirements"></a>Conditions requises
 
-- Formats de fichier pris en charge : JPEG, PNG, BMP, TIFF et PDF (texte incorporé ou analysé).
-
-- Langues prises en charge : seules les factures en anglais de la États-Unis sont actuellement prises en charge. Les recettes de ventes anglaises provenant de l’Australie, du Canada, du États-Unis, de la Grande-Bretagne et de l’Inde sont prises en charge.
-
-- Les fichiers PDF incorporés au texte sont préférables pour éliminer le risque d’erreur dans l’extraction et l’emplacement des caractères.
-
-- Pour PDF et TIFF, jusqu’à 2 000 pages peuvent être traitées.
-
-- La taille du fichier doit être inférieure à 50 Mo.
-
-- Les dimensions de l’image doivent être comprises entre 50 x 50 pixels et 10 000 x 10 000 pixels.
-
-- Les dimensions PDF sont jusqu’à 17 x 17 pouces, correspondant à la taille de papier Legal ou A3, ou plus petite.
-
-- La taille totale des données d’apprentissage est de 500 pages ou moins.
-
-### <a name="file-limitations"></a>Limitations de fichier
-
-Notez les différences suivantes concernant les fichiers texte Microsoft Office et les fichiers analysés par OCR (PDF, image ou TIFF) :
-
-- Fichiers Office : tronqués à 64 000 caractères (lorsqu’ils sont exécutés sur des fichiers dans une bibliothèque de documents).
-
-- Fichiers numérisés par OCR : la limite est de 20 pages.  
-
-## <a name="model-considerations"></a>Considérations relatives au modèle
-
-- Si deux modèles prédéfinis ou plus sont appliqués à la même bibliothèque, le fichier est classé à l’aide du modèle qui a le score de confiance moyen le plus élevé. Les entités extraites proviennent uniquement du modèle appliqué.
-
-- Si un modèle prédéfini est appliqué à une bibliothèque qui a un modèle de traitement de formulaire personnalisé, le fichier est classé à l’aide du modèle prédéfini et des extracteurs détectés pour ce modèle. S’il existe des colonnes vides qui correspondent au modèle de traitement de formulaire, les colonnes sont remplies à l’aide de ces valeurs extraites.
-
-- L’application de plusieurs modèles de traitement de formulaire personnalisés à une bibliothèque n’est pas prise en charge.
+Pour plus d’informations sur les exigences à prendre en compte lors du choix de ce modèle, consultez [Configuration requise et limitations des modèles dans Microsoft Syntex](requirements-and-limitations.md). 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utiliser un modèle prédéfini pour extraire des informations à partir de factures ou de reçus](prebuilt-models.md)
+[Utiliser un modèle prédéfini pour extraire des informations à partir de factures](prebuilt-model-invoice.md)
+
+[Utiliser un modèle prédéfini pour extraire des informations des reçus](prebuilt-model-receipt.md)
+
  
 

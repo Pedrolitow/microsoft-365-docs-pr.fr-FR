@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: b16e3dd298b5106446d882b1d950b8aacd68d708
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 0b1a21871fefb075a4939f134f26f1baa5b42a1d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68298076"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661146"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
@@ -40,7 +40,7 @@ Recherchez des informations sur les engagements contractuels pour l’emplacemen
 
 Pour les emplacements de données Azure Active Directory, consultez [Résidence des données dans Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
 
-Si votre adresse de facturation est en dehors de l’Europe et que vous disposez d’un abonnement Office 365 Éducation, malgré la section « Emplacement des données client au repos pour core Online Services » de l’OST, Microsoft peut approvisionner votre locataire Office 365, transférer vos données vers et stocker vos données au repos n’importe où en Europe ou Amérique du Nord.  Si votre adresse de facturation se trouve en Europe et que vous disposez d’un abonnement Office 365 Éducation, malgré la section « Emplacement des données client au repos pour core Online Services » de l’OST, Microsoft peut approvisionner votre locataire Office 365, transférer vos données et stocker vos données au repos n’importe où dans l’Union européenne.
+Si votre adresse de facturation se trouve en dehors de l’Europe et que vous disposez d’un abonnement Office 365 Éducation, en dépit de la section « Emplacement des données client au repos pour les services principaux en ligne » de l’OST, Microsoft peut approvisionner votre locataire Office 365, transférer vos données et stocker vos données au repos n’importe où en Europe ou Amérique du Nord.  Si votre adresse de facturation se trouve en Europe et que vous disposez d’un abonnement Office 365 Éducation, en dépit de la section « Emplacement des données client au repos pour les services principaux en ligne » de l’OST, Microsoft peut approvisionner votre locataire Office 365, transférer vos données et stocker vos données au repos n’importe où dans l’Union européenne.
 
 ## <a name="faq"></a>Forum aux questions
 
@@ -166,7 +166,7 @@ Les zones géographiques régionales suivantes peuvent stocker des données au r
 
 | Zones géographiques régionales | Emplacements pouvant stocker des données client |
 | --- | --- |
-| Zone géographique 1 – EMEA (Europe, Moyen-Orient et Afrique) | Autriche, Finlande, France, Irlande, Pays-Bas, Suède |
+| Géographie régionale 1 – EMEA (Europe, Moyen-Orient et Afrique) | Autriche, Finlande, France, Irlande, Pays-Bas, Suède |
 | Géographie régionale 2 – Asie-Pacifique | Hong Kong, Japon, Malaisie, Singapour, Corée du Sud |
 | Géographie régionale 3 - Amériques | Brésil, Chili, États-Unis |
 
@@ -5192,8 +5192,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online Protection | Qatar* |
 | Microsoft Defender pour Office P1 | Qatar* |
 | Microsoft Teams | Qatar* |
-| Office pour le Web | Qatar* |
-| Office pour mobile | Qatar* |
+| Office pour le web | Qatar* |
+| Office pour les appareils mobiles | Qatar* |
 | Services OneNote | Qatar* |
 | Flux | Qatar* |
 | Tableau blanc collaboratif | Qatar* |
@@ -6752,6 +6752,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
+| Viva Goals | États-Unis |
 </p></details>
 
 ## <a name="uruguay"></a>Uruguay

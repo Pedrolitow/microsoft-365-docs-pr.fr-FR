@@ -1,35 +1,37 @@
 ---
-title: Utiliser PowerShell pour demander le traitement par un modèle de compréhension de document
+title: Utiliser PowerShell pour demander le traitement par un modèle personnalisé
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Découvrez comment utiliser PowerShell pour demander le traitement par un modèle de compréhension de document Microsoft Syntex.
-ms.openlocfilehash: 1f537c3759ee8783c18bee5e8241e004c73f2eec
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Découvrez comment utiliser PowerShell pour demander le traitement par un modèle personnalisé Microsoft Syntex.
+ms.openlocfilehash: b28bc8945c4704354d351185a5ff2cf1c72031ea
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563227"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662070"
 ---
-# <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Utiliser PowerShell pour demander le traitement par un modèle de compréhension de document
+# <a name="use-powershell-to-request-processing-by-a-custom-model"></a>Utiliser PowerShell pour demander le traitement par un modèle personnalisé
+
+<sup>**S’applique à :**  &ensp; &#10003; Tous les modèles personnalisés</sup>
 
 > [!IMPORTANT]
 > Les applets de commande Microsoft Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
-Les modèles de compréhension de document traitent les fichiers nouvellement chargés dans une bibliothèque. Il est également possible de demander manuellement le traitement dans l’interface utilisateur. Toutefois, il peut y avoir des scénarios où il est plus efficace de déclencher le traitement via PowerShell.
+Les modèles personnalisés traitent les fichiers nouvellement chargés dans une bibliothèque. Il est également possible de demander manuellement le traitement dans l’interface utilisateur. Toutefois, il peut y avoir des scénarios où il est plus efficace de déclencher le traitement via PowerShell.
 
-## <a name="request-processing-of-all-items-that-have-not-been-previously-classified"></a>Traitement des demandes de tous les éléments qui n’ont pas été précédemment classés
+## <a name="request-processing-of-all-items-that-havent-been-previously-classified"></a>Traitement des demandes de tous les éléments qui n’ont pas été classés précédemment
 
-Vous pouvez demander le traitement de tous les éléments de la bibliothèque qui n’ont pas déjà été classés à l’aide de cette commande :
+Vous pouvez demander le traitement de tous les éléments de la bibliothèque qui n’ont pas été classés précédemment à l’aide de cette commande :
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -38,11 +40,11 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-Pour un traitement de priorité inférieure, vous pouvez également envisager d’utiliser le paramètre -OffPeak, qui met en file d’attente les fichiers pour le traitement en dehors des heures d’ouverture où se trouve votre locataire. Pour plus d’informations, consultez [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) .
+Pour le traitement de priorité inférieure, vous pouvez également envisager d’utiliser le paramètre -OffPeak, qui met en file d’attente les fichiers à traiter en dehors des heures d’ouverture où se trouve votre locataire. Pour plus d’informations, consultez [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html).
 
-## <a name="request-processing-of-all-items-in-a-library"></a>Demande de traitement de tous les éléments d’une bibliothèque
+## <a name="request-processing-of-all-items-in-a-library"></a>Demander le traitement de tous les éléments d’une bibliothèque
 
-Vous pouvez demander le traitement de tous les fichiers de la bibliothèque, même s’ils ont été précédemment classifiés. Cela peut être utile si vous avez mis à jour un modèle ou ajouté un autre modèle à la bibliothèque.
+Vous pouvez demander le traitement de tous les fichiers de la bibliothèque, même s’ils ont été précédemment classifiés. Cette étape peut être utile si vous avez mis à jour un modèle ou ajouté un autre modèle à la bibliothèque.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -52,11 +54,11 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 ```
 
 > [!NOTE]
-> L’utilisation de l’option -Force avec plus de 5 000 éléments active automatiquement le traitement de pointe.
+> L’utilisation de l’option -Force avec plus de 5 000 éléments active automatiquement le traitement en dehors des heures creuses.
 
-## <a name="request-processing-of-all-items-based-on-a-property"></a>Demander le traitement de tous les éléments en fonction d’une propriété
+## <a name="request-processing-of-all-items-based-on-a-property"></a>Traitement des demandes de tous les éléments en fonction d’une propriété
 
-Si vous souhaitez limiter le traitement à un sous-ensemble spécifique d’éléments dans une bibliothèque, vous pouvez utiliser un script pour sélectionner un groupe spécifique de fichiers. Dans l’exemple suivant, le script permet de sélectionner un champ et de filtrer une valeur de champ. Des requêtes plus complexes peuvent être effectuées à l’aide de [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
+Si vous souhaitez limiter le traitement à un sous-ensemble spécifique d’éléments dans une bibliothèque, vous pouvez utiliser un script pour sélectionner un groupe spécifique de fichiers. Dans l’exemple suivant, le script autorise la sélection d’un champ et la valeur d’un champ à filtrer. Des requêtes plus complexes peuvent être effectuées à l’aide [de Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -82,7 +84,7 @@ foreach ($listItem in $targetItems) {
 Invoke-PnPBatch -Batch $batch
 ```
 
-## <a name="request-processing-of-specific-files"></a>Demande de traitement de fichiers spécifiques
+## <a name="request-processing-of-specific-files"></a>Demander le traitement de fichiers spécifiques
 
 Le traitement peut également être demandé pour des fichiers spécifiques.
 

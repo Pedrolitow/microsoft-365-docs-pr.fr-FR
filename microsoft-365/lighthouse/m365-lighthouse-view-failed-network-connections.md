@@ -1,10 +1,10 @@
 ---
-title: Afficher une connexion réseau d’entreprise pc cloud ayant échoué dans Microsoft 365 Lighthouse
+title: Afficher la connexion réseau d’un PC cloud d’entreprise dans Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: katmartin
+ms.reviewer: katmartin
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -17,17 +17,17 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher un PC cloud d’entreprise ayant échoué à la connexion réseau.
-ms.openlocfilehash: 594727cf50ea8eb5424d939eaf8401221568ad33
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Pour les fournisseurs de services managés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment afficher une connexion réseau ayant échoué à un PC cloud d’entreprise.
+ms.openlocfilehash: 9d4fc475408c1567298e2f91f260ca99157c6e13
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167426"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662530"
 ---
-# <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Afficher une connexion réseau d’entreprise pc cloud ayant échoué dans Microsoft 365 Lighthouse
+# <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Afficher la connexion réseau d’un PC cloud d’entreprise dans Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse fournit l’état de connexion entre vos locataires clients et Azure Active Directory (Azure AD). Lorsqu’un PC cloud a une connexion réseau ayant échoué, vous pouvez afficher des informations détaillées dans le Centre d’administration Microsoft Endpoint Manager.
+Microsoft 365 Lighthouse fournit l’état de connexion entre vos locataires clients et Azure Active Directory (Azure AD). Lorsqu’un PC cloud a une connexion réseau défaillante, vous pouvez afficher des informations détaillées dans le Centre d’administration Microsoft Endpoint Manager.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -40,18 +40,18 @@ Microsoft 365 Lighthouse fournit l’état de connexion entre vos locataires cli
 
 2. Sélectionnez l’onglet **Connexions réseau Azure** .
 
-3. Dans la barre de couleur count-annotation, sélectionnez **Connexions ayant échoué**.
+3. Dans la barre d’annotation de nombre de couleurs, sélectionnez **Connexions ayant échoué**.
 
-4. Dans la liste filtrée, sélectionnez **Afficher les détails de la connexion dans Microsoft Endpoint Manager** en regard de la connexion à examiner.
+4. Dans la liste filtrée, sélectionnez **Afficher les détails de connexion dans Microsoft Endpoint Manager** en regard de la connexion que vous souhaitez examiner.
 
 5. Dans le Centre d’administration Microsoft Endpoint Manager, sélectionnez **Afficher les détails** pour en savoir plus sur l’erreur.
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Pour résoudre les problèmes de connexion, consultez [Résolution des problèmes de connexion réseau locale](/windows-365/enterprise/troubleshoot-on-premises-network-connection).
+Pour résoudre les problèmes de connexion, consultez [Résoudre les problèmes de connexion réseau locale](/windows-365/enterprise/troubleshoot-on-premises-network-connection).
 
 ## <a name="related-content"></a>Contenu associé
 
-[Contrôle d’accès en fonction du rôle pc cloud ](/windows-365/enterprise/role-based-access)(article)\
+[Contrôle d’accès en fonction du rôle du PC cloud ](/windows-365/enterprise/role-based-access)(article)\
 [Jonction de domaine Active Directory](/windows-365/enterprise/troubleshoot-on-premises-network-connection#active-directory-domain-join) (article)\
-[Azure Active Directory device Sync](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (article)
+[Azure Active Directory Device Sync](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (article)

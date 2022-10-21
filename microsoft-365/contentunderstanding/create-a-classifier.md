@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -14,15 +14,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Découvrez comment créer un classifieur dans Microsoft Syntex.
-ms.openlocfilehash: 9b8f78ed01a6fc366f7f84d85d7202c8cdb99b31
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 7f459145bafbf9b50146ae375dc1c98b1f54ffc0
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547771"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661564"
 ---
 # <a name="create-a-classifier-in-microsoft-syntex"></a>Créer un classifieur dans Microsoft Syntex
 
+<sup>**S’applique à :**  &ensp; &#10003; traitement de documents non structurés</sup>
 
 </br>
 
@@ -54,9 +55,15 @@ Pour créer un classifieur, vous devez :
 
 La première étape de création de votre modèle consiste à lui attribuer un nom :
 
-1. Dans le centre de contenu, sélectionnez **Nouveau**, puis **Créer un modèle**.
-2. Dans le volet **Nouveau modèle de compréhension de document**, renseignez le champ **Nom** avec le nom du modèle. Par exemple, si vous souhaitez identifier les documents de renouvellement de contrat, vous pouvez nommer le modèle *Renouvellement de contrat*.
-3. Sélectionnez **Créer**. Cette opération permet de créer une page d’accueil pour le modèle.</br>
+1. Dans le centre de contenu, sélectionnez **Nouveau**, puis **Modèle**.
+
+2. Dans la page **Options de création de modèle** , sélectionnez **Méthode d’enseignement**.
+
+3. Dans la page **Méthode d’enseignement : Détails** , sélectionnez **Suivant**.
+
+4. Dans la page **Créer un modèle avec la méthode d’enseignement** , dans le champ **Nom** du modèle, tapez le nom du modèle. Par exemple, si vous souhaitez identifier les documents de renouvellement de contrat, vous pouvez nommer le modèle *Renouvellement de contrat*.
+
+5. Sélectionnez **Créer**. Cette opération permet de créer une page d’accueil pour le modèle.
 
     ![Page d’accueil du modèle de classifieur.](../media/content-understanding/model-home.png)
 
@@ -68,12 +75,15 @@ Sélectionnez **Paramètres avancés** si vous souhaitez mapper ce modèle à un
 
 ## <a name="add-your-example-files"></a>Ajouter vos exemples de fichiers
 
-Sur la page d’accueil du modèle, ajoutez vos exemples de fichiers dont vous aurez besoin pour entraîner le modèle à identifier votre type de document. </br>
+Sur la page d’accueil du modèle, ajoutez vos exemples de fichiers dont vous aurez besoin pour entraîner le modèle à identifier votre type de document. 
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D0iX] 
 
 </br>
+--->
 
 > [!NOTE]
 > Vous devez utiliser les mêmes fichiers pour le classifieur et l’[entraînement de l’extracteur](create-an-extractor.md). Vous pouvez toujours ajouter d’autres fichiers ultérieurement, mais l’ensemble déjà ajouté d’exemples de fichiers est en général complet. Étiquetez certains d’entre eux pour entraîner votre modèle, puis testez les autres non étiquetés pour évaluer l’adéquation du modèle. 
@@ -149,8 +159,6 @@ Si vous avez reçu une correspondance sur vos fichiers échantillons étiquetés
 ## <a name="see-also"></a>Voir aussi
 
 [Créer un extracteur](create-an-extractor.md)
-
-[Présentation de la compréhension de document](document-understanding-overview.md)
 
 [Types d’explications](explanation-types-overview.md)
 

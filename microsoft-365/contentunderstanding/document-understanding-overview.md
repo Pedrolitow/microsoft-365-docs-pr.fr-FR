@@ -1,46 +1,52 @@
 ---
-title: Vue d’ensemble de la compréhension des documents dans Microsoft Syntex
+title: Vue d’ensemble du traitement de documents non structurés dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.customer: intro-overview
-ms.service: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez la compréhension des documents dans Microsoft Syntex.
-ms.openlocfilehash: d6b374d55840a53f1d78c22f69deebdbb5d89958
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Découvrez le modèle de traitement de document non structuré dans Microsoft Syntex.
+ms.openlocfilehash: 93ca7e2900098f9067f8c63ea9eae857f61bb7a0
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547640"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662355"
 ---
-# <a name="document-understanding-overview-in-microsoft-syntex"></a>Vue d’ensemble de la compréhension des documents dans Microsoft Syntex
+# <a name="overview-of-unstructured-document-processing-in-microsoft-syntex"></a>Vue d’ensemble du traitement de documents non structurés dans Microsoft Syntex
 
+> [!NOTE]
+> *Le traitement des documents non structurés* était connu sous le nom *de compréhension de document* dans les versions précédentes.
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
 
 </br>
+--->
 
-La compréhension de document utilise les modèles de renseignements artificiels pour automatiser la classification des fichiers et l’extraction des informations. Il fonctionne de façon optimale avec les documents non structurés, tels que les lettres ou les contrats. Ces documents doivent comporter du texte qui peut être identifié sur la base de phrases ou de modèles. Le texte identifié désigne à la fois le type de fichier (sa classification) et ce que vous voulez extraire (ses extracteurs).
+Utilisez le modèle de traitement de document non structuré ([méthode d’apprentissage](create-syntex-model.md#train-a-custom-model)) pour classifier automatiquement les fichiers et extraire des informations. Il fonctionne mieux pour les documents non structurés, tels que les lettres ou les contrats. 
 
-> [!NOTE]
-> Consultez le [guide d’adoption de Syntex : prise en main](./adoption-getstarted.md) pour plus d’informations sur les exemples de scénarios de compréhension de document.
-
-Les modèles de compréhension de document sont créés et gérés dans un site de type SharePoint appelé un *centre de contenu* . Lorsqu’il est appliqué à une bibliothèque de documents SharePoint, le modèle associé à un type de contenu inclut des colonnes pour stocker les informations extraites. Le type de contenu que vous créez est stocké dans la Galerie de types de contenu SharePoint. Vous pouvez également choisir d’utiliser des types de contenu existants pour utiliser leur schéma.
+Le modèle de traitement de documents non structuré (anciennement appelé modèle de compréhension de document) utilise l’intelligence artificielle (IA) pour traiter les documents. Ces documents doivent comporter du texte qui peut être identifié sur la base de phrases ou de modèles. Le texte identifié désigne à la fois le type de fichier (sa classification) et ce que vous voulez extraire (ses extracteurs).
 
 > [!NOTE]
-> Les types de contenus scellés ou en lecture seule ne peuvent pas être mis à jour. Ils ne peuvent donc pas être utilisés dans un modèle.
+> Pour plus d’informations sur l’utilisation de Syntex et des exemples de scénarios, consultez [Prise en main de l’adoption de Microsoft Syntex](./adoption-getstarted.md) et [Scénarios et cas d’usage pour Microsoft Syntex](./adoption-scenarios.md).
 
-Ajoutez *des classifieurs* et *des extracteurs* à vos modèles de compréhension de document pour effectuer les actions suivantes :
+Les modèles de traitement de documents non structurés sont créés et gérés dans un type de site SharePoint appelé [centre de contenu](create-a-content-center.md). Lorsqu’il est appliqué à une bibliothèque de documents SharePoint, le modèle associé à un type de contenu inclut des colonnes pour stocker les informations extraites. Le type de contenu que vous créez est stocké dans la Galerie de types de contenu SharePoint. Vous pouvez également choisir d’utiliser des types de contenu existants pour utiliser leur schéma.
+
+> [!NOTE]
+> Les types de contenu en lecture seule ou scellés ne pouvant pas être mis à jour, ils ne peuvent pas être utilisés dans un modèle.
+
+Ajoutez [des classifieurs](create-a-classifier.md) et [des extracteurs](create-an-extractor.md) à vos modèles de traitement de documents non structurés pour effectuer les actions suivantes :
 
 - Les classificateurs sont utilisés pour identifier et classer les documents téléchargés vers la bibliothèque de documents. Par exemple, un classifieur peut être « exercé » pour identifier tous les documents *renouvellement de contrat* qui sont chargés dans la bibliothèque. Le type de contenu renouvellement contrat est défini par vous lorsque vous créez votre classifieur.
 
@@ -50,88 +56,11 @@ Vous pouvez utiliser des fichiers d’exemple pour former et tester vos classifi
 
 Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour l’appliquer à toute bibliothèque de documents SharePoint à laquelle vous avez accès.  
 
-## <a name="file-limitations"></a>Limitations de fichier
+## <a name="requirements"></a>Conditions requises
 
-Les modèles de compréhension de document utilisent la technologie de reconnaissance optique de caractères (OCR) pour analyser les fichiers PDF, les images et les fichiers TIFF. Les fichiers sont analysés lorsque vous entraînez un modèle avec des exemples de fichiers et lorsque vous exécutez le modèle sur des fichiers dans une bibliothèque de documents.
-
-Notez les différences suivantes concernant les fichiers texte Microsoft Office et les fichiers analysés par OCR (PDF, image ou TIFF) :
-
-- Fichiers Office : nous avons tronqué à 64 000 caractères (lors de la formation et de l’exécution sur des fichiers dans une bibliothèque de documents).
-
-- Fichiers numérisés par OCR : la limite est de 20 pages.  
-
-### <a name="requirements"></a>Conditions requises
-
-Le traitement OCR fonctionne mieux sur des documents respectant les conditions requises suivantes :
-
-- Format JPG, PNG ou PDF (texte ou numérisé). Les PDF à texte incorporé sont meilleurs car il n’existe aucune erreur d’emplacement et d’extraction de caractères.
-
-- Si vos PDF sont verrouillés par mot de passe, vous devez supprimer le verrou avant de les envoyer.
-
-- La taille de fichier combinée des documents par collection utilisés pour la formation ne doit pas dépasser 50 Mo et les documents PDF ne doivent pas contenir plus de 500 pages.
-
-- Pour les images, les dimensions doivent être comprises entre 50 x 50 et 10 000 x 10 000 pixels.
-   > [!NOTE]
-   > Les images très larges ou ayant des dimensions spéciales (par exemple, des plans au sol) peuvent être tronquées dans le processus OCR et perdre en précision.
-
-- Pour les fichiers PDF, les dimensions doivent se situer à 17 x 17 pouces au maximum, ce qui correspond à des tailles de papier A3 ou Légal, ou plus petites.
-
-- S’ils sont numérisés à partir de documents sur papier, les numérisations devraient être des images de qualité supérieure.
-
-- Doit utiliser l’alphabet latin (caractères anglais).
-
-### <a name="supported-file-types"></a>Types de fichiers pris en charge
-
-Les modèles de compréhension des documents suivent les types de fichiers suivants :
-
-- Csv
-- doc
-- docx
-- eml
-- heic
-- heif
-- htm
-- html
-- jpeg
-- jpg
-- Markdown
-- md
-- msg
-- pdf
-- png
-- ppt
-- pptx
-- rtf
-- tif
-- tiff
-- txt
-- xls
-- xlsx
-
-### <a name="supported-languages"></a>Langues prises en charge
-
-Les modèles de compréhension des documents prennent en charge *toutes les* langues latines, notamment :
-
-- Anglais
-- Français
-- Allemand
-- Italien
-- Espagnol
+Pour plus d’informations sur les exigences à prendre en compte lors du choix de ce modèle, consultez [Configuration requise et limitations des modèles dans Microsoft Syntex](requirements-and-limitations.md#unstructured-document-processing).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer un classifieur](create-a-classifier.md)
+[Comparer des modèles personnalisés](difference-between-document-understanding-and-form-processing-model.md)
 
-[Créer un extracteur](create-an-extractor.md)
-
-[Créer un centre de contenu](create-a-content-center.md)
-
-[Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)
-
-[Appliquer un modèle](apply-a-model.md)
-
-[Différence entre la compréhension de document et les modèles de traitement de formulaire](difference-between-document-understanding-and-form-processing-model.md)
-  
-[Vue d’ensemble du traitement des formulaires](form-processing-overview.md)
-
-[Mode d’accessibilité Syntex](accessibility-mode.md)
