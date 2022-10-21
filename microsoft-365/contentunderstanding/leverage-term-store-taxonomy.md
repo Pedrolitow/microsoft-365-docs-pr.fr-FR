@@ -6,36 +6,40 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: Utilisez la taxonomie du magasin de termes lors de la création d’un extracteur dans votre modèle de compréhension de document dans Microsoft Syntex.
-ms.openlocfilehash: f36d8a1f398031103ec308e89b8587eebfcaacdf
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Utilisez la taxonomie du magasin de termes lors de la création d’un extracteur dans votre modèle dans Microsoft Syntex.
+ms.openlocfilehash: 71ac6c7452303362d503132d6a049acf86e59bf1
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547727"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659606"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-syntex"></a>Tirer parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft Syntex
 
+<sup>**S’applique à :**  &ensp; &#10003; traitement de documents non structurés</sup>
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJJ]  
 
 </br>
+--->
 
-Lorsque vous créez un extracteur dans votre modèle de compréhension de document à l’aide de Microsoft Syntex, vous pouvez tirer parti des ensembles de termes globaux dans le [magasin de termes](/sharepoint/managed-metadata) pour afficher les termes préférés pour les données que vous extrayez.  
+Lorsque vous créez un extracteur dans votre modèle de traitement de document non structuré à l’aide de Microsoft Syntex, vous pouvez tirer parti des ensembles de termes globaux dans le [magasin](/sharepoint/managed-metadata) de termes pour afficher les termes préférés pour les données que vous extrayez.  
 
-Par exemple, votre modèle identifie et classe tous les documents **Contrat** chargés dans la bibliothèque de documents.  De plus, le modèle extrait également une valeur de **service de contrat** de chaque contrat et l’affiche dans une colonne de la vue de la bibliothèque. Les diverses valeurs de services des contrats incluent plusieurs éléments plus anciens, à présent inutilisés par votre société et renommés. Par exemple, toutes les références aux termes *Conception*, *Graphiques* ou *Topographie* (services de contrat) doivent à présent recevoir l’appellation *Créatif*. Chaque fois que votre modèle extrait l’un des termes obsolètes d’un document contractuel, il doit afficher le terme à jour, à savoir Créatif, dans la vue de la bibliothèque. Dans l’exemple ci-après, lors de la formation du modèle, nous constatons qu’un exemple de document contient le terme obsolète *Conception*.
+Par exemple, votre modèle identifie et classe tous les documents **Contrat** chargés dans la bibliothèque de documents.  De plus, le modèle extrait également une valeur de **service de contrat** de chaque contrat et l’affiche dans une colonne de la vue de la bibliothèque. Les diverses valeurs de services des contrats incluent plusieurs éléments plus anciens, à présent inutilisés par votre société et renommés. Par exemple, toutes les références aux termes *Conception*, *Graphiques* ou *Topographie* (services de contrat) doivent à présent recevoir l’appellation *Créatif*. Chaque fois que votre modèle extrait l’une des conditions obsolètes d’un document de contrat, vous souhaitez qu’il affiche le terme actuel( *Creative*) dans votre vue de bibliothèque. Dans l’exemple suivant, lors de l’entraînement du modèle, nous voyons qu’un exemple de document contient le terme obsolète *De conception*.
 
    ![Magasin de termes.](../media/content-understanding/design.png)</br>
 
-## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Utiliser une colonne de métadonnées gérées dans l’extracteur
+## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Utiliser une colonne de métadonnées managées dans votre extracteur
 
 Les ensembles de termes sont configurés dans le magasin de termes MMS (Managed Metadata Services) du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>. Dans l’exemple ci-dessous, *l’ensemble de termes* [Services de contrat](/sharepoint/managed-metadata#term-set) est configuré pour inclure un nombre de termes, y compris *Créatif*.  Les détails indiquent que le terme a trois synonymes (*Conception*, *Graphiques* et *Topographie*). Il convient de les renommer *Créatif*. 
 
@@ -52,9 +56,10 @@ Une fois votre modèle appliqué à la bibliothèque de documents, lors du charg
    ![Colonne Service de contrat.](../media/content-understanding/creative.png)</br>
 
 > [!NOTE]
-> Si l’ensemble de termes est ouvert, toutes les valeurs extraites qui ne correspondent pas à un terme ou à une valeur de synonyme préféré sont ajoutées en tant que nouveau terme à la racine de l’ensemble de termes. Ces nouveaux termes peuvent être déplacés, fusionnés ou rendus synonymes dans le magasin de termes où réside l’ensemble de termes.
+> Si l’ensemble de termes est ouvert, toutes les valeurs extraites qui ne correspondent pas à une valeur de terme ou de synonyme préférée sont ajoutées en tant que nouveau terme à la racine de l’ensemble de termes. Ces nouveaux termes peuvent être déplacés, fusionnés ou créés en synonymes dans le magasin de termes où réside l’ensemble de termes.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Présentation des métadonnées gérées](/sharepoint/managed-metadata#terms)
 
 [Créer un extracteur](create-an-extractor.md)

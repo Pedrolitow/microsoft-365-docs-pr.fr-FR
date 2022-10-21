@@ -6,22 +6,23 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un extracteur dans Microsoft Syntex.
-ms.openlocfilehash: b47633d7e9489da46e82bb9f7b3699c65b663a08
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 4e2ff7f0452e72d66a46ead73919b1bce2bc80c6
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547596"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660376"
 ---
 # <a name="create-an-extractor-in-microsoft-syntex"></a>Créer un extracteur dans Microsoft Syntex
 
+<sup>**S’applique à :**  &ensp; &#10003; traitement de documents non structurés</sup>
 
 <br/>
 
@@ -31,25 +32,25 @@ ms.locfileid: "68547596"
 
 La création d’un modèle de classifieur sert à automatiser l’identification et la classification de types de documents spécifiques. Avant ou après cette opération, vous pouvez, si vous le souhaitez, ajouter des extracteurs à votre modèle pour extraire des informations spécifiques de ces documents. Par exemple, vous souhaiterez peut-être que votre modèle identifie tous les documents *Renouvellement de contrat* ajoutés à votre bibliothèque de documents. Vous voudrez également qu’il affiche la *Date de démarrage du service* de chaque document sous la forme d’une valeur de colonne dans la bibliothèque de documents.
 
-Vous devez créer un extracteur pour chaque entité dans le document à extraire. Dans notre exemple, nous voulons extraire la **date de début du service** pour chaque document **de renouvellement de contrat** identifié par le modèle. Nous voulons voir une vue dans la bibliothèque de documents de tous les documents **de renouvellement** de contrat, avec une colonne qui affiche la valeur de date de **début du service** de chaque document.
+Vous devez créer un extracteur pour chaque entité dans le document à extraire. Dans notre exemple, nous voulons extraire la **date de début du service** pour chaque document **de renouvellement de contrat** identifié par le modèle. Nous voulons pouvoir voir une vue dans la bibliothèque de documents de tous les documents **de renouvellement de contrat** , avec une colonne qui affiche la valeur de date de **début du service** de chaque document.
 
 > [!NOTE]
 > Pour créer un extracteur, utilisez les fichiers déjà chargés pour entraîner le classifieur.
 
 ## <a name="name-your-extractor"></a>Nommer votre extracteur
 
-1. Dans la page d’accueil du modèle, dans la vignette **Créer et entraîner des extracteurs** , sélectionnez **l’extracteur Train**.
+1. Dans la page d’accueil du modèle, dans la vignette **Créer et entraîner des extracteurs** , sélectionnez **Entraîner l’extracteur**.
 
 2. À l’écran **Nouvel extracteur d’entités**, tapez le nom de votre extracteur dans le champ **Nom du nouvel extracteur**. Par exemple, nommez-le **Date de démarrage du service** si vous souhaitez extraire la date de démarrage du service à partir de chaque document Renouvellement de contrat. Vous pouvez également choisir de réutiliser une colonne précédemment créée (par exemple, une colonne de métadonnées gérées).
 
-    Par défaut, le type de colonne est **une seule ligne de texte**. Si vous souhaitez modifier le type de colonne, sélectionnez **Paramètres** >  avancés Type de **colonne**, puis sélectionnez le type que vous souhaitez utiliser.
+    Par défaut, le type de colonne est **Une seule ligne de texte**. Si vous souhaitez modifier le type de colonne, sélectionnez **Paramètres** > **avancés Type** de colonne, puis sélectionnez le type que vous souhaitez utiliser.
 
     ![Capture d’écran de la partie Paramètres avancés du panneau Nouvel extracteur d’entité montrant l’option Type de colonne.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > Pour les extracteurs avec le type **de colonne Ligne unique de texte**, la limite de caractères maximale est de 255. Tous les caractères que vous sélectionnez dépassent la limite sont tronqués. Pour sélectionner plus de 255 caractères, choisissez plusieurs **lignes de type de colonne de texte lors de** la création de l’extracteur.
+    > Pour les extracteurs de type colonne **Ligne de texte unique**, la limite maximale de caractères est de 255. Tous les caractères que vous sélectionnez dépassant la limite sont tronqués. Pour sélectionner plus de 255 caractères, choisissez le type **de colonne Plusieurs lignes de texte lors de** la création de l’extracteur.
     >
-    >Par défaut, **plusieurs lignes de colonnes de texte** sont créées avec une limite à la quantité de texte qui peut être ajoutée. Dans ce cas, le texte extrait peut apparaître tronqué. Si cela se produit, le paramètre de colonne **Autoriser une longueur illimitée dans les bibliothèques de documents** peut être utilisé pour supprimer la limite.
+    >Par défaut, **plusieurs lignes de colonnes de texte** sont créées avec une limite à la quantité de texte pouvant être ajoutée. Dans ce cas, le texte extrait peut apparaître tronqué. Si cela se produit, le paramètre de colonne **Autoriser la longueur illimitée dans les bibliothèques de documents** peut être utilisé pour supprimer la limite.
 
 3. Lorsque vous avez terminé, sélectionnez **Créer**.
 
@@ -59,8 +60,8 @@ L’étape suivante consiste à étiqueter l’entité à extraire dans vos exem
 
 Creating the extractor opens the extractor page. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
 
-1. Dans la visionneuse, sélectionnez les données à extraire des fichiers. Par exemple, si vous souhaitez extraire la *date de démarrage du service*, mettez en évidence la valeur de date du premier fichier (*lundi 14 octobre 2019*). puis **sélectionnez Enregistrer**. Normalement, la valeur sera affichée dans la liste d’exemples étiquetés du fichier, sous la colonne **Étiquette**.
-2. Sélectionnez **Fichier suivant** pour l’enregistrement automatique et ouvrez le fichier suivant dans la liste de la visionneuse. Vous pouvez également sélectionner **Enregistrer**, puis sélectionner un autre fichier dans la liste **Exemples étiquetés**.
+1. Dans la visionneuse, sélectionnez les données à extraire des fichiers. Par exemple, si vous souhaitez extraire la *date de début du service*, vous mettez en surbrillance la valeur de date dans le premier fichier (*lundi 14 octobre 2022*). puis sélectionnez **Enregistrer**. Normalement, la valeur sera affichée dans la liste d’exemples étiquetés du fichier, sous la colonne **Étiquette**.
+2. Sélectionnez **Suivant fichier** pour enregistrer automatiquement et ouvrez le fichier suivant dans la liste de la visionneuse. Vous pouvez également sélectionner **Enregistrer**, puis sélectionner un autre fichier dans la liste **Exemples étiquetés**.
 3. Dans la visionneuse, répétez les étapes 1 et 2, puis répétez l’opération jusqu’à enregistrer l’étiquette dans les cinq fichiers.
 
     ![Paramètres avancés.](../media/content-understanding/select-service-start-date.png)
@@ -77,13 +78,13 @@ La fonctionnalité Rechercher est utile si vous effectuez une recherche dans un 
 
 ## <a name="add-an-explanation"></a>Ajouter une explication
 
-Pour notre exemple, nous allons créer une explication qui fournit un indicateur sur le format d’entité lui-même et les variantes qu’il peut avoir dans les exemples de documents. Par exemple, une valeur de date peut être dans plusieurs formats différents, tels que :
+Pour notre exemple, nous allons créer une explication qui fournit une indication sur le format d’entité lui-même et les variantes qu’il peut avoir dans les exemples de documents. Par exemple, une valeur de date peut être dans plusieurs formats différents, tels que :
 
-- 14/10/2019
-- 14 octobre 2019
-- Lundi 14 octobre 2019
+- 10/14/2022
+- 14 octobre 2022
+- Lundi 14 octobre 2022
 
-Pour identifier la *date de début du service*, vous pouvez créer une explication de modèle.
+Pour vous aider à identifier la *date de début du service*, vous pouvez créer une explication de modèle.
 
 1. Dans la section Explication, sélectionnez **Nouveau**, puis tapez un nom (par exemple, *Date*).
 2. Type : sélectionnez **Liste de modèles**.
@@ -99,9 +100,9 @@ Pour identifier la *date de début du service*, vous pouvez créer une explicati
 
 ### <a name="use-the-explanation-library"></a>Utiliser la bibliothèque d’explications
 
-Pour créer des explications pour des éléments tels que des dates, il est plus facile [d’utiliser la bibliothèque d’explications](./explanation-types-overview.md) que d’entrer manuellement toutes les variantes. La bibliothèque d’explications est un ensemble d’explications de modèles et d’expressions prédéfinies. La bibliothèque tente de fournir tous les formats pour les listes d’expressions ou de modèles courants, telles que les dates, les numéros de téléphone, les codes postaux et bien d’autres.
+Pour créer des explications pour des éléments tels que des dates, il est plus facile [d’utiliser la bibliothèque d’explications](./explanation-types-overview.md) que d’entrer manuellement toutes les variantes. La bibliothèque d’explications est un ensemble d’explications de modèles et d’expressions prédéfinies. La bibliothèque tente de fournir tous les formats pour les listes d’expressions ou de modèles courants, tels que les dates, les numéros de téléphone, les codes postaux et bien d’autres.
 
-Pour l’exemple *de date de début du service* , il est plus efficace d’utiliser l’explication prédéfinifiée de *Date* dans la bibliothèque d’explications :
+Pour l’exemple *Date de début du service* , il est plus efficace d’utiliser l’explication prédéfinie pour *Date* dans la bibliothèque d’explications :
 
 1. Dans la section **Explication**, sélectionnez **Nouveau**, puis **Depuis la bibliothèque d’explications**.
 2. Depuis la bibliothèque d’explications, sélectionnez **Date**. Vous pouvez afficher toutes les variations de date reconnues.
@@ -115,15 +116,15 @@ Pour l’exemple *de date de début du service* , il est plus efficace d’utili
 
 ## <a name="train-the-model"></a>Entraîner le modèle
 
-L’enregistrement de votre explication démarre l’entraînement. Si votre modèle a suffisamment d’informations pour extraire les données de vos exemples de fichiers étiquetés, vous verrez chaque fichier étiqueté avec **Match**.
+L’enregistrement de votre explication démarre la formation. Si votre modèle dispose d’informations suffisantes pour extraire les données de vos exemples de fichiers étiquetés, vous verrez chaque fichier étiqueté avec **Correspondance**.
 
 ![Correspondance.](../media/content-understanding/match2.png)
 
-Si l’explication ne contient pas suffisamment d’informations pour trouver les données que vous souhaitez extraire, chaque fichier est étiqueté avec **incompatibilité**. Vous pouvez sélectionner des fichiers **incompatibles** pour afficher plus d’informations sur la raison d’une incompatibilité.
+Si l’explication ne contient pas suffisamment d’informations pour trouver les données que vous souhaitez extraire, chaque fichier est étiqueté avec **l’incompatibilité**. Vous pouvez sélectionner **Fichiers incompatibles** pour afficher plus d’informations sur la raison de l’incompatibilité.
 
 ## <a name="add-another-explanation"></a>Ajouter une autre explication
 
-Souvent, l’incompatibilité est une indication que l’explication que nous avons fournie n’a pas fourni suffisamment d’informations pour extraire la valeur de date de début du service pour correspondre à nos fichiers étiquetés. Vous devrez peut-être le modifier ou ajouter une autre explication.
+Souvent, l’incompatibilité indique que l’explication que nous avons fournie n’a pas fourni suffisamment d’informations pour extraire la valeur de date de début du service pour qu’elle corresponde à nos fichiers étiquetés. Vous devrez peut-être le modifier ou ajouter une autre explication.
 
 Dans notre exemple, vous remarquerez que la chaîne de texte *Date de démarrage du service du* précède toujours la valeur réelle. Pour identifier plus facilement la date de démarrage du service, vous devez créer une explication d’expression.
 
@@ -142,9 +143,9 @@ Si vous recevez de nouveau une **incompatibilité** sur vos fichiers étiquetés
 
 ## <a name="test-your-model"></a>Tester votre modèle
 
-Si vous recevez une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés. Cette étape est facultative, mais utile pour évaluer la « condition physique » ou la préparation du modèle avant de l’utiliser, en le testant sur des fichiers que le modèle n’a pas vus auparavant.
+Si vous recevez une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés. Cette étape est facultative, mais utile pour évaluer l’adéquation ou la préparation du modèle avant de l’utiliser, en le testant sur des fichiers que le modèle n’a pas vus auparavant.
 
-1. Dans la page d’accueil du modèle, sélectionnez l’onglet **Test** .  Cela exécute le modèle sur vos exemples de fichiers sans étiquette.
+1. Dans la page d’accueil du modèle, sélectionnez l’onglet **Test** .  Cela exécutera le modèle sur vos exemples de fichiers sans étiquette.
 
 2. Dans la liste **Fichiers de test**, vos exemples de fichiers affichés indiquent si le modèle peut extraire les informations nécessaires. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
@@ -152,11 +153,11 @@ Si vous recevez une correspondance sur vos fichiers échantillons étiquetés, v
 
 ## <a name="further-refine-an-extractor"></a>Affiner davantage un extracteur
 
-Si vous avez des entités en double et que vous souhaitez extraire une seule valeur ou un certain nombre de valeurs, vous pouvez définir une règle pour spécifier la façon dont vous souhaitez qu’elle soit traitée. Pour ajouter une règle pour affiner les informations extraites, procédez comme suit :
+Si vous avez des entités en double et que vous souhaitez extraire une seule valeur ou un certain nombre de valeurs, vous pouvez définir une règle pour spécifier la façon dont vous souhaitez qu’elle soit traitée. Pour ajouter une règle afin d’affiner les informations extraites, procédez comme suit :
 
-1. Dans la page d’accueil du modèle, dans la section **Extracteurs d’entité** , sélectionnez l’extracteur que vous souhaitez affiner, puis **sélectionnez Affiner les informations extraites**.
+1. Dans la page d’accueil du modèle, dans la section **Extracteurs** d’entités, sélectionnez l’extracteur que vous souhaitez affiner, puis sélectionnez **Affiner les informations extraites**.
 
-    ![Capture d’écran de la section Extracteurs d’entité montrant l’option Affiner les informations extraites mise en évidence.](../media/content-understanding/refine-extracted-info.png)
+    ![Capture d’écran de la section Extracteurs d’entités montrant l’option Affiner les informations extraites mise en surbrillance.](../media/content-understanding/refine-extracted-info.png)
 
 2. Dans la page **Affiner les informations extraites** , sélectionnez l’une des règles suivantes :
 
@@ -166,17 +167,17 @@ Si vous avez des entités en double et que vous souhaitez extraire une seule val
     - Conserver une ou plusieurs des premières lignes
     - Conserver une ou plusieurs des dernières lignes
 
-    ![Capture d’écran de la page Affiner les informations extraites montrant les options de règles.](../media/content-understanding/refine-extracted-info-page.png)
+    ![Capture d’écran de la page Affiner les informations extraites montrant les options des règles.](../media/content-understanding/refine-extracted-info-page.png)
 
 3. Entrez le nombre de lignes ou de valeurs que vous souhaitez utiliser, puis sélectionnez **Affiner**.
 
-4. Si vous souhaitez modifier une règle en modifiant le nombre de lignes ou de valeurs, sélectionnez l’extracteur à modifier, sélectionnez **Affiner les informations extraites**, modifiez le nombre, puis **sélectionnez Enregistrer**.
+4. Si vous souhaitez modifier une règle en modifiant le nombre de lignes ou de valeurs, sélectionnez l’extracteur que vous souhaitez modifier, sélectionnez **Affiner les informations extraites**, modifiez le nombre, puis sélectionnez **Enregistrer**.
 
-5. Lorsque vous testez l’extracteur, vous pouvez voir l’affinement dans la colonne des **résultats d’affinement** de la liste **Fichiers de test** .
+5. Lorsque vous testez l’extracteur, vous pouvez voir l’affinement dans la colonne **Résultat de l’affinement** de la liste **Fichiers de test** .
 
-    ![Liste Fichiers de test montrant la colonne de résultat d’affinement.](../media/content-understanding/test-filies-extractor-2.png)
+    ![Liste des fichiers de test montrant la colonne Résultat de l’affinement.](../media/content-understanding/test-filies-extractor-2.png)
 
-6. Si vous souhaitez supprimer une règle d’affinement sur un extracteur, sélectionnez l’extracteur à partir duquel vous souhaitez supprimer la règle, **sélectionnez Affiner les informations extraites**, puis **sélectionnez Supprimer**.
+6. Si vous souhaitez supprimer une règle d’affinement sur un extracteur, sélectionnez l’extracteur dont vous souhaitez supprimer la règle, sélectionnez **Affiner les informations extraites**, puis **Supprimer**.
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -185,9 +186,5 @@ Si vous avez des entités en double et que vous souhaitez extraire une seule val
 [Types d’explications](explanation-types-overview.md)
 
 [Utiliser la taxonomie du magasin de termes lors de la création d’un extracteur](leverage-term-store-taxonomy.md)
-
-[Présentation de la compréhension de document](document-understanding-overview.md)
-
-[Appliquer un modèle](apply-a-model.md)
 
 [Mode d’accessibilité Syntex](accessibility-mode.md)

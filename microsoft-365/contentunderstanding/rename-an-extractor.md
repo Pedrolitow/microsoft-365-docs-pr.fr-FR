@@ -6,21 +6,23 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment et pourquoi renommer un extracteur dans Microsoft Syntex.
-ms.openlocfilehash: 8900eb68a5efab4d69911d193c35e82e6d58cbf6
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 15da5f905a622173758b4d8f1ac2b4c2de219014
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565639"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661256"
 ---
 # <a name="rename-an-extractor-in-microsoft-syntex"></a>Renommer un extracteur dans Microsoft Syntex
+
+<sup>**S’applique à :**  &ensp; &#10003; traitement de documents non structurés</sup>
 
 À un moment donné, vous devrez peut-être renommer un extracteur si vous souhaitez faire référence à un champ de données extrait par un nom différent. Par exemple, votre organisation décide d'apporter des modifications à ses documents contractuels et désigne les «clients» par le terme «clients» dans ses documents. Si vous extrayez un champ «Client» dans votre modèle, vous pouvez choisir de le renommer en «Client».
 
@@ -52,16 +54,7 @@ Suivez ces étapes pour renommer un extracteur d'entité.
 5. Sélectionnez **Renommer**.
 
 ## <a name="see-also"></a>Voir aussi
+
 [Créer un extracteur](create-an-extractor.md)
 
-[Créer un classificateur](create-a-classifier.md)
 
-[Renommer un modèle](rename-a-model.md)
-
-[Types d’explications](explanation-types-overview.md)
-
-[Utiliser la taxonomie du magasin de termes lors de la création d’un extracteur](leverage-term-store-taxonomy.md)
-
-[Présentation de la compréhension de document](document-understanding-overview.md)
-
-[Appliquer un modèle](apply-a-model.md) 
