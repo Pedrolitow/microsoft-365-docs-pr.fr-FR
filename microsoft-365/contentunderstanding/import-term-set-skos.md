@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.topic: article
 ms.collection:
 - enabler-strategic
@@ -13,16 +13,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: ad533e7f869e3680c9e4b8e5085881040fadd22e
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 389d211a3f094fa8e6956a2c7882d6efef5aa795
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547705"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659980"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importer un ensemble de termes avec un format SKOS
 
-Importer un ensemble de termes avec un format basé sur SKOS. Si vous souhaitez en savoir plus sur le format, veuillez consulter la rubrique [Référence de format SKOS pour la taxonomie SharePoint](skos-format-reference.md). Cette fonctionnalité nécessite une licence [Microsoft Syntex](index.md) .
+Importer un ensemble de termes avec un format basé sur SKOS. Si vous souhaitez en savoir plus sur le format, veuillez consulter la rubrique [Référence de format SKOS pour la taxonomie SharePoint](skos-format-reference.md). Cette fonctionnalité nécessite une [licence Microsoft Syntex](syntex-licensing.md).
 
 Nous vous recommandons d’inclure moins de 20 000 termes dans vos fichiers d’importation. Les fichiers plus volumineux peuvent augmenter le temps de validation et d’importation.
 
@@ -48,6 +48,6 @@ Une fois le fichier correctement importé, un message de réussite s’affiche, 
 
 [Présentation des métadonnées gérées](/sharepoint/managed-metadata)
 
-[Présentation de la compréhension de document](document-understanding-overview.md)
+[Vue d’ensemble du traitement des documents non structurés](document-understanding-overview.md)
 
 [Importer des ensembles de termes (niveau du site)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

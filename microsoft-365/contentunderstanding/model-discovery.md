@@ -1,35 +1,32 @@
 ---
-title: Publier et découvrir des modèles dans Microsoft Syntex
+title: Partager un modèle d’entreprise dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment mettre des modèles entraînés à la disposition d’autres utilisateurs et comment appliquer d’autres modèles formés dans Microsoft Syntex.
-ms.openlocfilehash: d39bbf3301e2e699db937ec4da3f8a7d3b624bdc
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Découvrez comment mettre des modèles entraînés à la disposition d’autres utilisateurs et comment appliquer d’autres modèles entraînés dans Microsoft Syntex.
+ms.openlocfilehash: 031c5334d2937b077df0dd4f6816c368afab7b11
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565001"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662377"
 ---
-# <a name="publish-and-discover-models-in-microsoft-syntex"></a>Publier et découvrir des modèles dans Microsoft Syntex
+# <a name="share-an-enterprise-model-in-microsoft-syntex"></a>Partager un modèle d’entreprise dans Microsoft Syntex
 
-Vous pouvez rendre vos modèles de compréhension de documents entraînés disponibles pour que d’autres personnes les voient et les utilisent directement à partir de la SharePoint de documents. 
+<sup>**S’applique à :**  &ensp; &#10003; Tous les modèles &ensp; | &ensp; personnalisés &#10003; Tous les modèles prédéfinis</sup>
 
-Vous pouvez également rechercher et évaluer des modèles entraînés dans d’autres centres de contenu créés par d’autres membres de votre organisation. Sélectionnez le modèle le plus utile pour classer vos fichiers ou en extraire des informations spécifiques. 
+Vous pouvez rendre vos modèles d’entreprise entraînés disponibles pour que d’autres utilisateurs puissent l’afficher et l’utiliser directement à partir d’une bibliothèque de documents SharePoint. Les modèles d’entreprise sont créés et entraînés dans le [centre de contenu](create-a-content-center.md). 
 
-> [!NOTE]
-> Cette fonctionnalité n’est pas encore disponible pour les modèles de traitement de formulaire.
-
-## <a name="make-your-model-discoverable-to-others"></a>Rendre votre modèle accessible à d’autres personnes
+## <a name="share-your-model-with-others"></a>Partager votre modèle avec d’autres personnes
 
 Pour rendre votre modèle entraîné disponible pour d’autres personnes à utiliser :
 
@@ -37,7 +34,7 @@ Pour rendre votre modèle entraîné disponible pour d’autres personnes à uti
 
 2. Dans le **volet Paramètres du modèle,** dans la section **Sites où** ce modèle est disponible, sélectionnez **Modifier**.
 
-3. À ce stade, le panneau Sélectionner les **sites** où ce modèle est disponible sera différent selon que vous êtes administrateur ou non. 
+3. À ce stade, le panneau **Sélectionner les sites où ce modèle est disponible** est différent selon que vous êtes administrateur ou non. 
 
     Si vous êtes administrateur SharePoint, cette vue s’affiche.
 
@@ -45,7 +42,7 @@ Pour rendre votre modèle entraîné disponible pour d’autres personnes à uti
 
     - **Non disponible sur les sites** : le modèle ne sera pas disponible pour d’autres personnes.
     - **Tous les sites** : le modèle sera disponible dans la galerie de types de contenu que d’autres utilisateurs pourront utiliser.
-    - **Seuls les sites** sélectionnés : vous pouvez choisir le ou les sites dans lesquels le modèle sera disponible. Cliquez dans la zone de texte pour rechercher et choisir les sites sur lesquels vous souhaitez appliquer le modèle. Vous ne verrez que les sites pour lesquels vous avez accès.
+    - **Seuls les sites** sélectionnés : vous pouvez choisir le ou les sites dans lesquels le modèle sera disponible. Utilisez la zone de texte pour rechercher et choisir les sites auxquels vous souhaitez appliquer le modèle. Vous ne verrez que les sites pour lesquels vous avez accès.
 
     Si vous *n’êtes pas* administrateur SharePoint, cette vue s’affiche.
 
@@ -55,68 +52,6 @@ Pour rendre votre modèle entraîné disponible pour d’autres personnes à uti
 
 4. Sélectionnez les sites où vous souhaitez que le modèle soit disponible pour les autres utilisateurs à appliquer, puis sélectionnez **Enregistrer**.
 
-## <a name="discover-other-trained-models"></a>Découvrir d’autres modèles entraînés
-
-Pour trouver des modèles entraînés qui peuvent convenir à votre contenu :
-
-1. Dans la bibliothèque de documents de votre modèle, **sélectionnez**  >  **Automatiser l’affichage des modèles de compréhension du document.**
-
-2. Dans la page Examiner les modèles et en appliquer de nouveaux, vous pouvez passer en revue les **modèles appliqués** et les modèles disponibles pour être appliqués à votre bibliothèque de documents.
-
-    ![Capture d’écran des modèles de révision et application de nouvelles pages affichant les onglets Appliqué et Disponible.](../media/content-understanding/review-models-apply-new-ones.png)
-
-   - Sous **l’onglet** Appliqué, consultez les modèles qui ont été appliqués à votre bibliothèque. Sélectionnez **Afficher les détails du modèle** pour afficher des informations sur le modèle, telles que la description, les extracteurs et d’autres paramètres.
-   
-   - Sous **l’onglet** Disponible, consultez les modèles entraînés qui peuvent être appliqués à votre bibliothèque.
-
-
-### <a name="apply-a-trained-model-to-your-library"></a>Appliquer un modèle entraîné à votre bibliothèque
-
-Vous pouvez évaluer les modèles entraînés par rapport à votre contenu pour vous aider à trouver le modèle le plus approprié. Pour sélectionner un modèle à appliquer à votre bibliothèque :
-
-1. Dans la page **Examiner les modèles** et en appliquer de nouveaux, **sélectionnez l’onglet** Disponible pour passer en revue les modèles de la liste.
-
-    ![Capture d'écran de la page "Revoir les modèles et en appliquer de nouveaux" montrant les modèles de l'onglet « Disponible ».](../media/content-understanding/available-models-to-apply.png)
-
-2. Choisissez le modèle qui, selon vous, vous permettra d’obtenir les meilleurs résultats, sélectionnez Afficher les **détails** du modèle, puis sélectionnez Appliquer **à la bibliothèque.**
-
-### <a name="get-a-recommendation-for-a-trained-model"></a>Obtenir une recommandation pour un modèle entraîné
-
-Si vous ne savez pas quel modèle convient le mieux à vos fichiers, vous pouvez demander une recommandation. Votre recommandation peut inclure jusqu’à 10 modèles.
-
-1. Dans la page **Examiner les modèles et en** appliquer de nouveaux, sélectionnez **l’onglet** Disponible.
-
-2. Sur la première vignette, sélectionnez **Obtenir une recommandation.**
-
-    ![Capture d'écran de la page Réviser les modèles et en appliquer de nouveaux, montrant l'option Obtenir une recommandation dans l'onglet Disponible.](../media/content-understanding/get-recommendation.png)
-
-3. Dans la page **Sélectionner un ou plusieurs** modèles d’analyse, sélectionnez les modèles qui, selon vous, sont les plus adaptés, puis sélectionnez **Suivant.**
-
-    ![Capture d’écran de la page Sélectionner un ou plusieurs modèles affichant les modèles recommandés avec deux modèles sélectionnés.](../media/content-understanding/recommendation-results.png)
-
-4. Dans la page **Sélectionner un fichier à analyser,** sélectionnez un fichier du même type ou d’un type similaire qui sera stocké dans votre bibliothèque. Ensuite, choisissez **Sélectionner.**
-
-    ![Capture d’écran de la page Sélectionner un fichier à analyser affichant les fichiers disponibles avec un fichier sélectionné.](../media/content-understanding/file-to-analyze.png)
-
-5. Dans les **résultats de l’examen et sélectionnez une** page de modèle, sous Notre **recommandation,** vous verrez le fichier recommandé. Vous n’avez pas besoin d’appliquer le modèle recommandé. Vous pouvez choisir d’appliquer un autre modèle si vous pensez qu’il est plus adapté.
-
-    ![Capture d’écran des résultats de la révision et sélection d’une page de modèle affichant les modèles recommandés.](../media/content-understanding/review-results.png)
-
-6. Pour le modèle que vous pensez obtenir les meilleurs résultats, sélectionnez Afficher les **détails** du modèle, puis sélectionnez Appliquer **à la bibliothèque.**
-
-7. S’il n’existe aucun modèle recommandé basé sur le fichier sélectionné, vous pouvez revenir en arrière et sélectionner un autre fichier ou sélectionner différents modèles.
-
-### <a name="remove-an-applied-model"></a>Supprimer un modèle appliqué
-
-Pour supprimer un modèle appliqué de votre bibliothèque de documents :
-
-1. Dans la page Révision des modèles et application de nouveaux **modèles,** sous l’onglet **Appliqué, consultez les modèles qui ont été appliqués à votre bibliothèque**.
-
-2. Sur le modèle que vous souhaitez supprimer, sélectionnez Afficher les **détails** du modèle, puis **sélectionnez Supprimer de la bibliothèque.**
-
-
 ## <a name="see-also"></a>Voir aussi
 
-[Appliquer un modèle de compréhension de document](apply-a-model.md)
-
-[Vue d’ensemble de la compréhension de document](document-understanding-overview.md)
+[Découvrir d’autres modèles entraînés](discover-other-trained-models.md)

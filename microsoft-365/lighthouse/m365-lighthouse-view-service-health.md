@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: chboyd
+ms.reviewer: chboyd
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -17,23 +17,23 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher l’intégrité du service client.
-ms.openlocfilehash: fa207ffe5519a31e7abd709c473794deccc1bda1
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Pour les fournisseurs de services managés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment afficher l’intégrité du service client.
+ms.openlocfilehash: 17e20fd4f95bc5ba3cfba8bdada49d715a13f7e2
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187622"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663036"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Afficher l’intégrité du service client dans Microsoft 365 Lighthouse
 
-Vous pouvez afficher l’intégrité du service pour les locataires que vous gérez dans Microsoft 365 Lighthouse. État des services inclut des incidents et des conseils pour plusieurs services, notamment Microsoft Intune, les services d’identité Azure Active Directory (Azure AD) et les services cloud de gestion des appareils mobiles (GPM). Vous pouvez également voir combien de vos locataires gérés sont affectés par des incidents. Par exemple, si l’un de vos locataires rencontre des problèmes, vous pouvez consulter la page État des services pour déterminer s’il s’agit d’un problème connu avec une résolution en cours ou si une modification récente peut les affecter. Cela peut vous faire gagner du temps pour résoudre les problèmes et réduire les appels de support.
+Vous pouvez afficher l’intégrité du service pour les locataires que vous gérez dans Microsoft 365 Lighthouse. État des services comprend des incidents et des avis pour plusieurs services, notamment Microsoft Intune, les services d’identité Azure Active Directory (Azure AD) et les services cloud de gestion des appareils mobiles (GPM). Vous pouvez également voir combien de vos locataires gérés sont affectés par des incidents. Par exemple, si l’un de vos locataires rencontre des problèmes, vous pouvez consulter la page État des services pour déterminer s’il s’agit d’un problème connu avec une résolution en cours ou si une modification récente peut les affecter. Cela peut vous faire gagner du temps pour résoudre les problèmes et réduire les appels de support.
 
 Si vous ne pouvez pas vous connecter à Lighthouse, vous pouvez utiliser la [page d’état d’intégrité du service Microsoft 365](https://status.office365.com/) pour rechercher les problèmes connus qui vous empêchent de vous connecter à votre locataire partenaire. En outre, inscrivez-vous pour suivre [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour voir des informations sur des incidents de service spécifiques.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour afficher l’intégrité du service, vous avez besoin d’un rôle Azure AD dans le locataire partenaire avec l’ensemble de **propriétés suivant : microsoft.office365.serviceHealth/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, consultez [les rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
+Pour afficher l’intégrité du service, vous avez besoin d’un rôle Azure AD dans le locataire partenaire avec la propriété suivante définie : **microsoft.office365.serviceHealth/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, consultez [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="view-service-health-status-for-all-tenants"></a>Afficher l’état d’intégrité du service pour tous les locataires
 
@@ -43,13 +43,13 @@ Pour afficher l’intégrité du service, vous avez besoin d’un rôle Azure AD
 
    - Nombre total d’incidents
    - Nombre total d’avis affectant l’un des locataires gérés
-   - Nombre de services avec des incidents actifs.
+   - Nombre de services avec incidents actifs.
 
 3. Sous l’onglet **Tous les services** , passez en revue les problèmes par service.
 
 4. Sous l’onglet **Tous les problèmes** , passez en revue tous les problèmes actuels.
 
-## <a name="review-issue-details"></a>Examiner les détails du problème
+## <a name="review-issue-details"></a>Passer en revue les détails du problème
 
 1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **État des services**.
 
@@ -57,9 +57,9 @@ Pour afficher l’intégrité du service, vous avez besoin d’un rôle Azure AD
 
 3. Sélectionnez un problème dans la liste.
 
-4. Dans le volet détails du problème, passez en revue les informations détaillées, notamment le type de problème, les locataires affectés, l’impact sur l’utilisateur et l’historique des problèmes.
+4. Dans le volet détails du problème, passez en revue des informations détaillées, notamment le type de problème, les locataires affectés, l’impact sur l’utilisateur et l’historique des problèmes.
 
-Sous l’onglet **Locataires affectés** , vous pouvez exporter une liste de locataires affectés vers un fichier de valeurs séparées par des virgules (.csv) afin de pouvoir la partager avec vos équipes de support technique.
+Sous l’onglet **Locataires affectés** , vous pouvez exporter une liste de locataires concernés vers un fichier de valeurs séparées par des virgules (.csv) afin de pouvoir la partager avec vos équipes de support technique.
 
 ## <a name="related-content"></a>Contenu associé
 

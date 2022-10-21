@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: c21a586e7d1738ea12a4b037854998bb7f1fff40
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: a6566e9d3896ea4960848c5fc8158a6c92ad031f
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68641978"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663278"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
 
@@ -65,7 +65,7 @@ Déterminez avant de créer votre stratégie d’étiquette de rétention si ell
         - **Solutions** > **Gestion des enregistrements** > > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
     
     - Si vous utilisez la solution de gestion du cycle de vie des données :
-        - **Solutions** >  **Gestion du cycle de vie des** >  données **Microsoft 365** >  **Onglet Stratégies d’étiquette** > **Publier des étiquettes**
+        - **Solutions** >  **Gestion du cycle de vie des** >  données **Microsoft 365** >  **Onglet Stratégies** d’étiquette > **Publier des étiquettes**
     
     Vous ne voyez pas immédiatement votre solution dans le volet de navigation? Sélectionnez tout d’abord **Afficher tout**. 
 
@@ -145,7 +145,7 @@ Use the following sections to learn how published retention labels can be applie
 
 - [Automatically applying a retention label to email by using rules](#automatically-applying-a-retention-label-to-email-by-using-rules)
 
-In addition, when you use [SharePoint Syntex](../contentunderstanding/index.md) and publish retention labels to SharePoint locations, you can [apply a retention label to a document understanding model](../contentunderstanding/apply-a-retention-label-to-a-model.md) so that identified documents are automatically labeled.
+In addition, when you use [SharePoint Syntex](/microsoft-365/contentunderstanding/) and publish retention labels to SharePoint locations, you can [apply a retention label to a document understanding model](../contentunderstanding/apply-a-retention-label-to-a-model.md) so that identified documents are automatically labeled.
 
 After content is labeled, see the following information to understand when the applied label can be removed or changed: [Only one retention label at a time](retention.md#only-one-retention-label-at-a-time).
 

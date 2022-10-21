@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.custom: admindeeplinkSPO
 ms.collection:
@@ -14,29 +14,32 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un centre de contenu dans Microsoft Syntex.
-ms.openlocfilehash: 392203db0de4aa5f13761a1bc15947862c1f1fce
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: aa74e6bb350074586ba233f9d88d41da2505f8ce
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547925"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660398"
 ---
 # <a name="create-a-content-center-in-microsoft-syntex"></a>Créer un centre de contenu dans Microsoft Syntex
 
+<sup>**S’applique à :**  &ensp; &#10003; Tous les modèles &ensp; | &ensp; personnalisés &#10003; Tous les modèles prédéfinis</sup>
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CPSF]
 
 </br>
+--->
 
-Pour créer et gérer des modèles de présentation de documents, vous devez d’abord utiliser un centre de contenu. Le centre de contenu est l’interface de création de modèles et contient également des informations sur les bibliothèques de documents auxquelles les modèles publiés ont été appliqués.
+Pour créer et gérer des modèles d’entreprise, vous avez d’abord besoin d’un centre de contenu. Le centre de contenu est l’interface de création de modèles et contient également des informations sur les bibliothèques de documents auxquelles les modèles publiés ont été appliqués.
 
    ![Sélectionnez une bibliothèque de documents.](../media/content-understanding/content-center-page.png)
 
-Vous créez un centre de contenu par défaut lors de [l’installation](set-up-content-understanding.md). Mais un administrateur SharePoint peut également choisir de créer d’autres centres au besoin. Bien qu’il soit possible qu’un seul centre de contenu soit adapté aux environnements pour lesquels vous voulez regrouper toutes les activités du modèle, vous souhaiterez peut-être disposer de centres supplémentaires pour plusieurs services au sein de votre organisation, lesquels peuvent avoir des besoins et des autorisations différents pour leurs modèles.
+Vous créez un centre de contenu par défaut lors de [l’installation](set-up-content-understanding.md). Mais un administrateur SharePoint peut également choisir de créer d’autres centres au besoin. Bien qu’un seul centre de contenu puisse convenir pour les environnements pour lesquels vous souhaitez un cumul de toutes les activités de modèle, vous souhaiterez peut-être avoir des centres supplémentaires pour plusieurs services au sein de votre organisation, qui peuvent avoir des besoins et des exigences d’autorisation différents pour leurs modèles.
 
-En outre, si vous souhaitez essayer Syntex, vous pouvez créer un centre de contenu en suivant les instructions de cet article sans acheter de licences. Les utilisateurs sans licence peuvent créer des modèles de compréhension de document, mais ne peuvent pas les appliquer à une bibliothèque de documents.
+En outre, si vous souhaitez essayer Syntex, vous pouvez créer un centre de contenu en suivant les instructions de cet article sans acheter de licences. Les utilisateurs sans licence peuvent créer des modèles, mais ne peuvent pas les appliquer à une bibliothèque de documents.
 
 > [!NOTE]
 > Dans un [Microsoft 365 Multigéographie](../enterprise/microsoft-365-multi-geo.md), si vous avez un centre de contenu par défaut unique dans votre emplacement central, vous pouvez seulement fournir un suivi de l’activité du modèle à partir de cet emplacement. Vous ne pouvez pas actuellement obtenir de déploiement de l’activité de modèle au-delà des limites de la batterie de serveurs dans l’environnement multigéographique. 
@@ -47,20 +50,20 @@ Un administrateur SharePoint peut créer un site de centre de contenu comme ils 
 
 Pour créer un nouveau centre de contenu, procédez comme suit :
 
-1. Sur le Centre d'administration Microsoft 365, accédez au <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">Centre d’administration SharePoint > **sites actifs**</a>.
+1. Dans la Centre d'administration Microsoft 365, accédez au <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">Centre  > **d’administration SharePoint****Sites actifs**</a>.
 
-2. Dans la page **Sites actifs**, cliquez sur **Créer**, puis sélectionnez **Autres options**.
+2. Dans la page **Sites actifs** , sélectionnez **Créer**, puis **Autres options**.
 
 3. Dans le menu **Choisir un modèle** , sélectionnez **Centre de contenu**.
 
-4. Pour le nouveau site, fournissez un **Nom de site**, **Administrateur principal** et une **Langue**.</br>
+4. Pour le nouveau site, indiquez un **nom de site**, un **administrateur principal** et une **langue**.</br>
 
    > [!NOTE] 
    > Vous pouvez sélectionner un site de centre de contenu à afficher dans l’une des langues disponibles, mais notez que les modèles actuellement peuvent uniquement être créés pour les fichiers en anglais. Notez également que comme les autres modèles de site, la langue du site par défaut ne peut pas être modifiée une fois le site créé.
 
 5. Sélectionnez **Terminé**.
  
-Une fois que vous avez créé un site de centre de contenu, il apparaît sur les <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sites Actifs**</a> dans le Centre d’administration SharePoint. 
+Une fois que vous avez créé un site de centre de contenu, celui-ci est répertorié sur <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a> dans le Centre d’administration SharePoint. 
 
 ### <a name="give-access-to-additional-users"></a>Accorder l’accès à d’autres utilisateurs
  
@@ -68,25 +71,17 @@ Une fois le site créé, vous pouvez autoriser d’autres utilisateurs à accéd
 
 ### <a name="roll-up-of-models-in-the-default-content-center"></a>Cumul des modèles dans le centre de contenu par défaut
 
-Dans Syntex, le premier centre de contenu créé lors de l’installation est le *centre de contenu par défaut*. Si des centres de contenu suivants sont créés, leurs modèles sont affichés dans la vue du centre de contenu par défaut.
+Dans Syntex, le premier centre de contenu créé pendant l’installation est le *centre de contenu par défaut*. Si des centres de contenu suivants sont créés, leurs modèles sont affichés dans la vue du centre de contenu par défaut.
 
 ![Capture d’écran de la bibliothèque de modèles dans le centre de contenu par défaut.](../media/content-understanding/model-library-default-content-center.png)
 
-La bibliothèque de **Modèles** dans l’affichage centre de contenu par défaut regroupe les modèles créés par centre de contenu pour obtenir une vue récapitulative de tous les modèles de compréhension de document et modèles de traitement de formulaire qui ont été créés.
+La bibliothèque **De modèles** dans l’affichage centre de contenu par défaut regroupe les modèles créés par centre de contenu pour une vue récapitulative de tous les modèles qui ont été créés.
 
 > [!NOTE]
 > Vous ne pouvez pas modifier le centre de contenu par défaut désigné. Il s’agit toujours du premier centre de contenu créé lors de l’installation. 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer un classifieur](create-a-classifier.md)
+[Vue d’ensemble des types de modèle](model-types-overview.md)
 
-[Créer un extracteur](create-an-extractor.md)
 
-[Créer un centre de contenu](create-a-content-center.md)
-
-[Présentation de la présentation des documents](document-understanding-overview.md)
-
-[Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)
-
-[Appliquer un modèle](apply-a-model.md)

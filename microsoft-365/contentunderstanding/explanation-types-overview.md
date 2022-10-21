@@ -1,28 +1,30 @@
 ---
-title: Types d’explications dans Microsoft Syntex
+title: Types d’explication dans Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explications de proximité dans Microsoft Syntex.
-ms.openlocfilehash: a85272830dcbc64266456774c56ea02ceb6245e6
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explication de proximité dans Microsoft Syntex.
+ms.openlocfilehash: 8509dee0fcfe4141371c8dbb7412f716fceaba35
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547947"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661674"
 ---
-# <a name="explanation-types-in-microsoft-syntex"></a>Types d’explications dans Microsoft Syntex
+# <a name="explanation-types-in-microsoft-syntex"></a>Types d’explication dans Microsoft Syntex
 
-Des explications sont utilisées pour vous aider à définir les informations que vous souhaitez étiqueter et extraire dans vos modèles de compréhension de document dans Microsoft Syntex. Lorsque vous créez une explication, vous devez sélectionner un type d’explication. Cet article vous permet de comprendre les différents types d’explications et comment ils sont utilisés.
+<sup>**S’applique à :**  &ensp; &#10003; traitement de documents non structurés</sup>
+
+Les explications sont utilisées pour vous aider à définir les informations que vous souhaitez étiqueter et extraire dans vos modèles de traitement de documents non structurés dans Microsoft Syntex. Lorsque vous créez une explication, vous devez sélectionner un type d’explication. Cet article vous permet de comprendre les différents types d’explications et comment ils sont utilisés.
 
 ![Capture d’écran du panneau Créer une explication montrant les trois types d’explications.](../media/content-understanding/explanation-types.png)
 
@@ -214,15 +216,15 @@ Vous pouvez choisir l'une des trois options suivantes :
 
 ## <a name="considerations-when-configuring-explanations"></a>Considérations relatives à la configuration des explications
 
-Lorsque vous entraînez un classifieur, il y a quelques éléments à garder à l’esprit qui produisent des résultats plus prévisibles :
+Lors de l’entraînement d’un classifieur, il y a quelques éléments à garder à l’esprit qui produiront des résultats plus prévisibles :
 
-- Plus vous entraînerez de documents, plus le classifieur sera précis.  Si possible, utilisez plus de 5 documents corrects et utilisez plus d’un document incorrect.  Si les bibliothèques avec qui vous travaillez ont plusieurs types de documents différents, plusieurs de chaque type entraînent des résultats plus prévisibles.
-- L’étiquetage du document joue un rôle important dans le processus d’entraînement.  Ils sont utilisés avec des explications pour entraîner le modèle.  Vous pouvez voir des anomalies lors de l’apprentissage d’un classifieur avec des documents qui n’ont pas beaucoup de contenu.  L’explication peut ne pas correspondre à quoi que ce soit dans le document, mais étant donné qu’il a été étiqueté comme un « bon » document, vous pouvez voir qu’il s’agit d’une correspondance pendant l’entraînement.
-- Lors de la création d’explications, il utilise la logique OR en combinaison avec l’étiquette pour déterminer s’il s’agit d’une correspondance.  L’expression régulière qui utilise la logique AND peut être plus prévisible.  Voici un exemple d’expression régulière à utiliser sur des documents réels pour les former.  Notez que le texte mis en surbrillance en rouge est la ou les expressions que vous recherchez.
+- Plus vous effectuez l’apprentissage de documents avec, plus le classifieur sera précis.  Si possible, utilisez plus de 5 bons documents et utilisez plus d’un document incorrect.  Si les bibliothèques avec lesquelles vous travaillez ont plusieurs types de documents différents, plusieurs de chaque type mènent à des résultats plus prévisibles.
+- L’étiquetage du document joue un rôle important dans le processus de formation.  Ils sont utilisés avec des explications pour entraîner le modèle.  Vous pouvez voir des anomalies lors de l’apprentissage d’un classifieur avec des documents qui n’ont pas beaucoup de contenu.  L’explication peut ne pas correspondre à quoi que ce soit dans le document, mais étant donné qu’elle a été étiquetée comme un « bon » document, vous pouvez voir qu’il s’agit d’une correspondance pendant l’entraînement.
+- Lors de la création d’explications, il utilise la logique OR en combinaison avec l’étiquette pour déterminer s’il s’agit d’une correspondance.  L’expression régulière qui utilise la logique AND peut être plus prévisible.  Voici un exemple d’expression régulière à utiliser sur des documents réels pour les entraîner.  Notez que le texte mis en surbrillance en rouge est la ou les expressions que vous recherchez.
 
     <pre>(?=.*network provider)(?=.*participating providers).*</pre>
 
-- Les étiquettes et les explications fonctionnent ensemble et sont utilisées pour entraîner le modèle.  Il ne s’agit pas d’une série de règles qui peuvent être dissociées et des pondérations ou prédictions précises appliquées à chaque variable qui a été configurée.  Plus la variation des documents utilisés dans l’entraînement est importante, plus le modèle est précis.
+- Les étiquettes et les explications fonctionnent ensemble et sont utilisées dans l’apprentissage du modèle.  Il ne s’agit pas d’une série de règles qui peuvent être découplées et des pondérations précises ou une prédiction appliquées à chaque variable configurée.  Plus la variation des documents utilisés dans l’entraînement est grande, plus le modèle sera plus précis.
 
 ### <a name="see-also"></a>Voir aussi
 
