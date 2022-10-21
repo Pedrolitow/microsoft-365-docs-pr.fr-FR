@@ -1,28 +1,28 @@
 ---
 title: Rapports de banque de termes
-description: Découvrez comment signaler l’activité du magasin de termes.
+description: Découvrez comment créer des rapports sur l’activité du magasin de termes.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 44d6c198afe6da28e29670bbdc0c059ef2761311
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 80a3aeb0acfffa599da101f5985b8915b2d52e58
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563168"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659826"
 ---
 # <a name="term-store-reports"></a>Rapports de banque de termes
 
-Vous pouvez accéder aux rapports pour le <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">magasin de termes</a> dans le Centre d’administration SharePoint. Cette fonctionnalité nécessite une licence [Microsoft Syntex](index.md) .
+Vous pouvez accéder aux rapports pour le <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">magasin de termes</a> dans le Centre d’administration SharePoint. Cette fonctionnalité nécessite une [licence Microsoft Syntex](syntex-licensing.md).
 
 Développez **Rapports**, puis cliquez sur **Services de contenu**.
 

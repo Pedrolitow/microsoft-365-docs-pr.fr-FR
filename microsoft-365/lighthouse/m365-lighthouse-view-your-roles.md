@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: magarlan, chrigreen
+ms.reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -17,21 +17,21 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les techniciens du fournisseur de services managés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher vos rôles Azure Active Directory (Azure AD) sur les différents locataires clients gérés par votre organisation.
-ms.openlocfilehash: cdc38d77a7397c1b4a79f59b9050f4522ad21abb
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Pour les techniciens msp (Managed Service Provider) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher vos rôles Azure Active Directory (Azure AD) sur les différents locataires clients gérés par votre organisation.
+ms.openlocfilehash: dce01eea5904ee785e2b56adc32c8b51867a876a
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201988"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659322"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Afficher vos rôles Azure Active Directory dans Microsoft 365 Lighthouse
 
-Cet article fournit des instructions sur la façon d’afficher vos rôles Azure Active Directory (Azure AD) sur les différents locataires clients gérés par votre organisation. Votre rôle détermine les actions que vous pouvez effectuer dans Lighthouse.
+Cet article fournit des instructions pour afficher vos rôles Azure Active Directory (Azure AD) sur les différents locataires clients gérés par votre organisation. Votre rôle détermine les actions que vous pouvez effectuer dans Lighthouse.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez avoir accès à un locataire partenaire qui a été intégré au service Microsoft 365 Lighthouse.
+Vous devez avoir accès à un locataire partenaire qui a intégré le service Microsoft 365 Lighthouse.
 
 ## <a name="view-your-roles"></a>Afficher vos rôles
 
@@ -41,15 +41,15 @@ Vous devez avoir accès à un locataire partenaire qui a été intégré au serv
 
 3. En regard de **Rôles**, sélectionnez le lien indiquant le nombre de rôles que vous détenez dans le locataire. La page **Rôles** s’ouvre.
 
-    Si vous conservez un ou plusieurs rôles dans un locataire client, une coche verte s’affiche dans la colonne **Activé** pour ce locataire, ainsi que le nombre de rôles que vous détenez. Si vous n’avez aucun rôle dans un locataire, un **X** rouge s’affiche.
+    Si vous détenez un ou plusieurs rôles dans un locataire client, vous verrez une coche verte dans la colonne **Activé** pour ce locataire, ainsi que le nombre de rôles que vous détenez. Si vous ne possédez aucun rôle dans un locataire, vous verrez un **X** rouge.
  
-4. Pour les locataires clients avec une coche verte à côté d’eux, développez le locataire pour afficher la liste des rôles que vous détenez dans ce locataire. Pour plus d’informations sur les rôles Azure AD et les autorisations qu’ils accordent, consultez [les rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
+4. Pour les locataires clients avec une coche verte en regard d’eux, développez le locataire pour afficher la liste des rôles que vous détenez dans ce locataire. Pour plus d’informations sur les rôles Azure AD et les autorisations qu’ils accordent, consultez [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
 
-    La page **Rôles** affiche également toutes les balises personnalisées qui ont été appliquées à vos locataires. Vous pouvez filtrer les données sur la page en fonction des rôles ou balises attribués.
+    La page **Rôles** affiche également toutes les balises personnalisées qui ont été appliquées à vos locataires. Vous pouvez filtrer les données de la page par rôles ou balises attribués.
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Si vous n’êtes pas autorisé à effectuer une action que vous devez effectuer dans Lighthouse, contactez un administrateur de votre locataire partenaire qui peut vous attribuer le rôle approprié pour l’action que vous essayez d’effectuer.
+Si vous n’avez pas l’autorisation d’effectuer une action que vous devez effectuer dans Lighthouse, contactez un administrateur de votre locataire partenaire qui peut vous attribuer le rôle approprié pour l’action que vous essayez d’effectuer.
 
 ## <a name="related-content"></a>Contenu associé
 

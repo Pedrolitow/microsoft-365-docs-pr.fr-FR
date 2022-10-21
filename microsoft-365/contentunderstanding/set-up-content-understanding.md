@@ -6,7 +6,7 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -15,33 +15,33 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Configurez Microsoft Syntex.
-ms.openlocfilehash: 5fab513e50bba1e0ccc975b724f589aebec914c4
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: b6a7309e9ae833f643930d9f308c1b748afeb0f5
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564233"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659584"
 ---
 # <a name="set-up-microsoft-syntex"></a>Configurer Microsoft Syntex
 
-Les administrateurs peuvent utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> pour configurer [Microsoft Syntex](index.md). 
+Les administrateurs peuvent utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> pour configurer Microsoft Syntex. 
 
 Tenez compte des informations suivantes avant de démarrer :
 
-- Dans quels sites SharePoint allez-vous activer le traitement des formulaires ? Tous les sites, certains sites ou des sites sélectionnés ?
+- Dans quels sites SharePoint allez-vous activer le traitement des documents ? Tous les sites, certains sites ou des sites sélectionnés ?
 - Comment allez-vous nommer votre centre de contenu par défaut ?
 
 Vous pouvez modifier vos paramètres après la configuration initiale dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
-- Sites SharePoint dans lesquels vous souhaitez activer le traitement des formulaires : tous les sites, certains sites ou des sites sélectionnés
+- Les sites SharePoint dans lesquels vous souhaitez activer le traitement des documents - tous, certains ou certains sites sélectionnés
 - Le nom et les administrateurs de votre centre de contenu 
 
 ## <a name="requirements"></a>Configuration requise 
 
 > [!NOTE]
-> Vous devez disposer d’autorisations d’administrateur général ou d’administrateur SharePoint pour pouvoir accéder au Centre d'administration Microsoft 365 et configurer Syntex.
+> Vous devez disposer des autorisations d’administrateur général ou d’administrateur SharePoint pour pouvoir accéder au Centre d'administration Microsoft 365 et configurer Syntex.
 
 En tant qu’administrateur, vous pouvez également modifier vos paramètres sélectionnés à tout moment après la configuration, ainsi que les paramètres de gestion de la compréhension de contenu dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
@@ -49,7 +49,7 @@ En tant qu’administrateur, vous pouvez également modifier vos paramètres sé
 
 Si vous envisagez d’utiliser un environnement Platform Power personnalisé, vous devez installer l’application *Générateur d’IA pour Project Cortex* dans cet environnement. Pour plus d’informations, consultez [Gérer les applications Dynamics 365](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) et recherchez l’application *Générateur d’IA pour Projet Cortex* dans la liste des applications Dynamics 365.
 
-Vous devez également [allouer des crédits Générateur d’IA](/power-platform/admin/capacity-add-on) à l’environnement personnalisé avant de pouvoir créer des modèles de traitement de formulaire. 
+Vous devez également [allouer des crédits AI Builder](/power-platform/admin/capacity-add-on) à l’environnement personnalisé avant de pouvoir créer des modèles de traitement de documents. 
 
 When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. See [Assign a security role to a user](/power-platform/admin/assign-security-roles) for more information.
 
@@ -57,15 +57,15 @@ Les utilisateurs qui créent des modèles dans un [site de centre de contenu](/m
 
 ### <a name="licensing"></a>Gestion des licences
 
-Pour utiliser Syntex, votre organisation doit disposer d’un abonnement à Syntex et chaque utilisateur doit disposer d’une licence. Les licences yntex incluent les applications suivantes, qui doivent toutes être affectées :
+Pour utiliser Syntex, votre organisation doit disposer d’un abonnement à Syntex, et chaque utilisateur doit disposer d’une licence affectée. Les licences Syntex incluent les applications suivantes, qui doivent toutes être affectées :
 
-- Microsoft Syntex
-- Microsoft Syntex - Type de SPO
-- Common Data Service pour Microsoft Syntex
+- Syntex
+- Syntex - Type SPO
+- Common Data Service pour Syntex
 
-Pour utiliser le traitement des formulaires, vous avez également besoin de AI Builder crédits. Pour chaque utilisateur sous licence de Syntex, une allocation de crédits AI Builder est fournie chaque mois.
+Pour utiliser des modèles de traitement de documents structurés ou de forme libre, vous avez également besoin de crédits AI Builder. Pour chaque utilisateur sous licence de Syntex, une allocation de crédits AI Builder est fournie chaque mois.
 
-Pour plus d’informations sur les licences Syntex, consultez [licences Syntex](syntex-licensing.md).
+Pour plus d’informations sur les licences Syntex, consultez [Licences Microsoft Syntex](syntex-licensing.md)
 
 ## <a name="to-set-up-syntex"></a>Pour configurer Syntex
 
@@ -78,7 +78,7 @@ Pour plus d’informations sur les licences Syntex, consultez [licences Syntex](
     > [!div class="mx-imgBorder"]
     > ![Commencer la configuration.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. Sur la page **Configurer le traitement des formulaires**, vous pouvez choisir d’autoriser ou non les utilisateurs à créer des modèles de traitement de formulaire dans des bibliothèques de documents SharePoint spécifiques. Une option de menu **Créer un modèle de traitement de formulaire** sera disponible dans les rubans des bibliothèques de documents SharePoint où le traitement des formulaires est activé.
+4. Dans la page **Configurer le traitement des** formulaires, vous pouvez choisir si vous souhaitez permettre aux utilisateurs de créer des modèles de traitement de documents dans des bibliothèques de documents SharePoint spécifiques. Une option de menu **Créer un modèle de traitement de formulaire** sera disponible dans les rubans des bibliothèques de documents SharePoint où le traitement des formulaires est activé.
  
      Concernant les **bibliothèques SharePoint qui doivent afficher l’option de création d’un modèle de traitement de formulaire**, vous pouvez sélectionner les éléments suivants :</br>
       - **Les bibliothèques dans les sites SharePoint** pour rendre cette option disponible dans toutes les bibliothèques SharePoint au sein de votre organisation.</br>
@@ -86,14 +86,14 @@ Pour plus d’informations sur les licences Syntex, consultez [licences Syntex](
       - **Aucune bibliothèque SharePoint** si cette option ne doit être disponible sur aucun site (vous pouvez modifier ce paramètre après la configuration).
 
    > [!div class="mx-imgBorder"]
-   > ![Configurer les options du site de traitement des formulaires.](../media/content-understanding/admin-configforms.png)
+   > ![Configurer les options de site de traitement des documents.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
-   > La suppression d’un site une fois inclus n’affecte pas les modèles existants appliqués aux bibliothèques de ce site. Cette action ne vous empêche pas non plus d’appliquer des modèles de compréhension de document à une bibliothèque. 
+   > La suppression d’un site après son inclusion n’affecte pas les modèles existants appliqués aux bibliothèques de ce site ni la possibilité d’appliquer des modèles de traitement de documents non structurés à une bibliothèque. 
     
-    Si vous avez plusieurs environnements Power Platform configurés, vous pouvez choisir celui à utiliser avec le traitement des formulaires. (Cette option ne s’affiche pas si vous n’avez qu’un seul environnement.)
+    Si plusieurs environnements Power Platform sont configurés, vous pouvez choisir celui avec lequel vous souhaitez utiliser pour le traitement des documents. (Cette option ne s’affiche pas si vous n’avez qu’un seul environnement.)
 
-    ![Configurer les options de Power Platform de traitement des formulaires.](../media/content-understanding/setup-power-platform-env.png)
+    ![Configurer les options Power Platform pour le traitement des documents.](../media/content-understanding/setup-power-platform-env.png)
 
     Pour l’**environnement Power Platform**, vous pouvez sélectionner :
     - **Utilisez l’environnement par défaut** pour utiliser votre environnement Power Platform par défaut.
@@ -101,7 +101,7 @@ Pour plus d’informations sur les licences Syntex, consultez [licences Syntex](
 
     Cliquez sur **Suivant**.
 
-5. Sur la page **Créer un centre de contenu**, vous pouvez créer un site de centre de contenu SharePoint sur lequel vos utilisateurs peuvent créer et gérer des modèles de compréhension de documents. Si vous avez déjà créé un centre de contenu à partir du Centre d’administration SharePoint, ces informations s’affichent ici et vous pouvez simplement sélectionner **Suivant**.
+5. Dans la page **Créer un centre** de contenu, vous pouvez créer un site de centre de contenu SharePoint où vos utilisateurs peuvent créer et gérer des modèles de traitement de documents non structurés. Si vous avez déjà créé un centre de contenu à partir du Centre d’administration SharePoint, ces informations s’affichent ici et vous pouvez simplement sélectionner **Suivant**.
 
     1. Dans le champ **Nom du site**, tapez le nom souhaité pour votre site de centre de contenu.
     
@@ -120,7 +120,7 @@ Pour plus d’informations sur les licences Syntex, consultez [licences Syntex](
 
 ## <a name="assign-licenses"></a>Attribuer des licences
 
-Une fois que vous avez configuré Syntex, vous devez attribuer des licences aux utilisateurs qui utiliseront des fonctionnalités Syntex.
+Une fois que vous avez configuré Syntex, vous devez attribuer des licences aux utilisateurs qui utiliseront les fonctionnalités de Syntex.
 
 Pour attribuer des licences :
 
@@ -130,7 +130,7 @@ Pour attribuer des licences :
 
 3. Sélectionnez **Applications** dans le menu déroulant.
 
-4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
+4. Sélectionnez **Afficher les applications pour Syntex**. Sous **Applications**, vérifiez que **Common Data Service pour Syntex**, **Syntex** et **Syntex - Type SPO** sont tous sélectionnés.
 
     > [!div class="mx-imgBorder"]
     > ![Licences Syntex dans le Centre d'administration Microsoft 365.](../media/content-understanding/sharepoint-syntex-licenses.png)
@@ -139,8 +139,6 @@ Pour attribuer des licences :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue d’ensemble du modèle de traitement de formulaire](/ai-builder/form-processing-model-overview)
-
-[Étape par étape : créer un modèle de compréhension de document (vidéo)](https://www.youtube.com/watch?v=DymSHObD-bg)
+[Vue d’ensemble du modèle de traitement de document dans AI Builder](/ai-builder/form-processing-model-overview)
 
 [Créer et gérer des environnements dans le Centre d'administration Power Platform](/power-platform/admin/create-environment)
