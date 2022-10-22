@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/13/2022
+ms.date: 10/21/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: da95c91fcf376ac4c2d0b25efa0762f067455e5d
-ms.sourcegitcommit: 3d2bbc20ac4e0258778cfca1b6b465f3c8c2c297
+ms.openlocfilehash: 94f2818f2e470807b9e4ed7f4ee23334106e2d50
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68576658"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68673170"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
@@ -91,53 +91,53 @@ Toutes nos mises à jour contiennent
 <details>
 <summary>Septembre-2022 (Plateforme : 4.18.2209.7 | Moteur : 1.1.19700.3)</summary>
 
-&ensp;Version de la mise à jour du renseignement de sécurité : **1.377.8.0**<br/>
+&ensp;Version de mise à jour du renseignement de sécurité : **1.377.8.0**<br/>
 &ensp;Date de publication : **10 octobre 2022**<br/>
 &ensp;Plateforme : **4.18.2209.7**<br/>
 &ensp;Moteur : **1.1.19700.3**<br/>
 &ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
 
 Version du moteur : 1.1.19700.3<br/>
-Version de la mise à jour du renseignement de sécurité : 1.377.8.0<br/>
+Version de mise à jour du renseignement de sécurité : 1.377.8.0<br/>
 
 ### <a name="whats-new"></a>Nouveautés
 
 - Amélioration du traitement de l’ordre de secours Defender sur la référence SKU du serveur
-- Correction des mises à jour Defender pendant le processus OOBE
+- Correction des mises à jour de Defender pendant le processus OOBE
 - Correction de la vulnérabilité du descripteur de sécurité du programme d’installation approuvé
-- Correction [Microsoft Defender visibilité des exclusions antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- Correction Microsoft Defender la visibilité [des exclusions antivirus](configure-exclusions-microsoft-defender-antivirus.md)
 - Correction de la sortie de l’ordre de secours de l’applet de commande PowerShell
-- Correction d’un échec de mise à jour de la plateforme Defender sur les références SKU Server Core 2019
-- Amélioration de la prise en charge du durcissement pour les configurations de désactivation Defender sur les références SKU serveur
-- Amélioration des logiques de configuration defender pour la [protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) sur les serveurs
+- Correction de l’échec de mise à jour de la plateforme Defender sur les références SKU Server Core 2019
+- Amélioration de la prise en charge du renforcement des configurations de désactivation de Defender sur les références SKU de serveur
+- Amélioration des logiques de configuration Defender pour la [protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) sur les serveurs
 - Amélioration du mode WARN pour la [règle ASR](attack-surface-reduction-rules-reference.md)
 - Amélioration de la gestion des certificats d’OSX  
 - Journalisation améliorée pour l’analyse de l’emplacement FilesStash
-- À compter de la plateforme version 4.18.2208.0 et ultérieure : si un serveur a été [intégré à Microsoft Defender pour point de terminaison](onboard-configure.md#onboard-devices-to-the-service), le paramètre de stratégie de [groupe](configure-endpoints-gp.md#update-endpoint-protection-configuration) « Désactiver Windows Defender » ne désactive plus complètement Windows Defender Antivirus activé Windows Server 2012 systèmes d’exploitation R2 et ultérieurs. Au lieu de cela, il est ignoré (si [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) est configuré explicitement) ou il place Microsoft Defender Antivirus en [mode passif](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (s’il `ForceDefenderPassiveMode` n’est pas configuré). En outre, la [protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) permet de basculer vers le mode actif en passant `ForceDefenderPassiveMode` en `0`mode passif, mais pas en mode passif. Ces modifications s’appliquent uniquement aux serveurs intégrés à Microsoft Defender pour point de terminaison. Pour plus d’informations, reportez-vous à [Microsoft Defender compatibilité antivirus avec d’autres produits de sécurité](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
+- À compter de la version de plateforme 4.18.2208.0 et versions ultérieures : si un serveur a été [intégré à Microsoft Defender pour point de terminaison](onboard-configure.md#onboard-devices-to-the-service), le paramètre de stratégie de [groupe](configure-endpoints-gp.md#update-endpoint-protection-configuration) « Désactiver Windows Defender » ne désactive plus complètement Windows Defender Antivirus sur Windows Server 2012 systèmes d’exploitation R2 et ultérieurs. Au lieu de cela, il est ignoré (si [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) est configuré explicitement) ou place Microsoft Defender Antivirus en [mode passif](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (si `ForceDefenderPassiveMode` n’est pas configuré). En outre, la [protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) permet de passer en mode actif en passant `ForceDefenderPassiveMode` en `0`mode passif, mais pas en mode passif. Ces modifications s’appliquent uniquement aux serveurs intégrés à Microsoft Defender pour point de terminaison. Pour plus d’informations, reportez-vous à [Microsoft Defender compatibilité antivirus avec d’autres produits de sécurité](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 ### <a name="known-issues"></a>Problèmes connus
 
-- Certains clients ont peut-être reçu les mises à jour de plateforme 4.18.2209.2 à partir de la préversion. Cela peut entraîner le blocage du service à l’état de démarrage après la mise à jour.  
+- Certains clients ont peut-être reçu des mises à jour de plateforme 4.18.2209.2 à partir de la préversion. Cela peut entraîner le blocage du service à l’état de démarrage après la mise à jour.  
 <br/><br/>
 </details><details>
-<summary>Août-2022 (Plateforme : 4.18.2207.7 | Moteur : 1.1.19600.3)</summary>
+<summary>Août 2022 (Plateforme : 4.18.2207.7 | Moteur : 1.1.19600.3)</summary>
 
-&ensp;Version de la mise à jour du renseignement de sécurité : **1.373.1647.0**<br/>
+&ensp;Version de mise à jour du renseignement de sécurité : **1.373.1647.0**<br/>
 &ensp;Date de publication : **6 septembre 2022**<br/>
 &ensp;Plateforme : **4.18.2207.7**<br/>
 &ensp;Moteur : **1.1.19600.3**<br/>
 &ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
 
 Version du moteur : 1.1.19600.3<br/>
-Version de la mise à jour du renseignement de sécurité : 1.373.1647.0 <br/>
+Version de mise à jour du renseignement de sécurité : 1.373.1647.0 <br/>
 
 ### <a name="whats-new"></a>Nouveautés
 
-- Résolution des problèmes de programme d’installation de l’agent unifié sur le serveur WS2012R2 et Windows Server 2016
+- Résolution des problèmes liés au programme d’installation de l’agent unifié sur le serveur et le Windows Server 2016 WS2012R2
 - Correction d’un problème de correction pour la détection personnalisée
-- Correction d’une condition de concurrence liée à la surveillance du comportement
+- Correction de la condition de concurrence liée à la surveillance du comportement
 - Résolution de plusieurs scénarios d’interblocage dans les DLL Defender
-- Amélioration de la fréquence de notification des toasts Windows pour les règles ASR
+- Amélioration de la fréquence des notifications toasts Windows pour les règles ASR
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -147,14 +147,14 @@ Version de la mise à jour du renseignement de sécurité : 1.373.1647.0 <br/>
 </details><details>
 <summary>Juillet-2022 (Plateforme : 4.18.2207.5 | Moteur : 1.1.19500.2)</summary>
 
-&ensp;Version de la mise à jour du renseignement de sécurité : **1.373.219.0**<br/>
+&ensp;Version de mise à jour du renseignement de sécurité : **1.373.219.0**<br/>
 &ensp;Date de publication : **15 août 2022**<br/>
 &ensp;Plateforme : **4.18.2207.5**<br/>
 &ensp;Moteur : **1.1.19500.2**<br/>
 &ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
 
 Version du moteur : 1.1.19300.2<br/>
-Version de la mise à jour du renseignement de sécurité : 1.373.219.0 <br/>
+Version de mise à jour du renseignement de sécurité : 1.373.219.0 <br/>
 
 ### <a name="whats-new"></a>Nouveautés
 
@@ -163,23 +163,23 @@ Version de la mise à jour du renseignement de sécurité : 1.373.219.0 <br/>
 - Amélioration des performances de la mise en cache [AMSI (AntiMalware Scan Interface)](/windows/win32/amsi/antimalware-scan-interface-portal) 
 - Amélioration de la détection et de la correction pour les macros associées à [Microsoft Visual Basic pour Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) 
 - Amélioration du traitement des exclusions AMSI 
-- Correction de la détection des interblocages dans le traitement des règles HIPS (Host Intrusion Prevention System). (Pour plus d’informations sur HIPS et Defender pour point de terminaison, consultez [Migration d’un hips tiers vers des règles ASR](migrating-asr-rules.md).) 
+- Correction de la détection des interblocages dans le traitement des règles HIPS (Host Intrusion Prevention System). (Pour plus d’informations sur HIPS et Defender pour point de terminaison, consultez [Migration d’un HIPS tiers vers des règles ASR](migrating-asr-rules.md).) 
 - Correction de la fuite de mémoire pour laquelle `MsMpEng.exe` consommait des octets privés. (Si une utilisation élevée de l’UC est également un problème, consultez [Utilisation élevée du processeur en raison de l’antivirus Microsoft Defender](troubleshooting-mode-scenarios.md)) 
 - Correction d’un blocage avec [surveillance du comportement](configure-real-time-protection-microsoft-defender-antivirus.md) 
 - Amélioration de la validation de l’approbation 
 - Résolution du problème d’incident du moteur sur les plateformes d’exploitation héritées 
 - Mises à jour de l’Analyseur de performance v3 : Ajout de la prise en charge du chemin d'accès supérieur, des informations sur le saut d'analyse et de l'analyse à la demande. Consultez [Analyseur de performances pour Antivirus Microsoft Defender](tune-performance-defender-antivirus.md). 
 - Améliorations des performances de Defender pendant les opérations de copie de fichiers
-- Ajout d’améliorations pour [le mode de résolution des problèmes](enable-troubleshooting-mode.md)  
-- Ajout d’un correctif pour les canaux DEFENDER WINEVT lors des mises à jour/redémarrages. (Pour plus d’informations sur WINEVT, consultez le [journal des événements Windows](/windows/win32/api/_wes/) .)
-- Ajout d’un correctif pour le bogue [de gestion WMI Defender](use-wmi-microsoft-defender-antivirus.md) lors du démarrage/des mises à jour 
-- Ajout d’un correctif pour les [événements opérationnels observateur d'événements Windows](troubleshoot-microsoft-defender-antivirus.md) 2010/2011 dupliqués 
-- Ajout de la prise en charge du renforcement des jetons [des processus de pile Defender pour point](microsoft-defender-endpoint.md) de terminaison 
+- Ajout d’améliorations pour le [mode résolution des problèmes](enable-troubleshooting-mode.md)  
+- Ajout du correctif pour les canaux Defender WINEVT entre les mises à jour et les redémarrages. (Pour plus d’informations sur WINEVT, consultez journal [des événements Windows](/windows/win32/api/_wes/) .)
+- Ajout d’un correctif pour le bogue [de gestion WMI de Defender](use-wmi-microsoft-defender-antivirus.md) lors du démarrage/des mises à jour 
+- Ajout du correctif pour la version 2010/2011 dans les [événements Windows observateur d'événements Operational](troubleshoot-microsoft-defender-antivirus.md) 
+- Ajout de la prise en charge du renforcement des jetons des processus de pile [defender pour point de terminaison](microsoft-defender-endpoint.md) 
 
 
 ### <a name="known-issues"></a>Problèmes connus
 
-- Les clients qui déploient la mise à jour de plateforme 4.18.2207.5 peuvent rencontrer un retard de performances réseau susceptibles d’avoir un impact sur les applications.
+- Les clients qui déploient la mise à jour de la plateforme 4.18.2207.5 peuvent rencontrer des performances réseau en retard, ce qui peut avoir un impact sur les applications.
 
 <br/><br/>
 </details>
@@ -438,7 +438,7 @@ Aucun problème connu
 - Nouveaux contrôles pour la gestion du processus de déploiement progressif des mises à jour Microsoft Defender. Consultez [Gérer le processus de déploiement progressif des mises à jour Microsoft Defender](manage-gradual-rollout.md).
 - Amélioration du moteur de surveillance du comportement
 - Améliorations apportées au déploiement des définitions de logiciel anti-programme malveillant
-- Inspections étendues des événements réseau Microsoft Edge
+- Inspections d’événements réseau Microsoft Edge étendus
 
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
@@ -841,6 +841,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 Pour plus d’informations, consultez [Mise à jour de Microsoft Defender pour les images d’installation du système d’exploitation Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20221014.1</summary>
+
+&ensp;Version du package : **20221014.1**<br/>
+&ensp;Version de la plateforme : **4.18.2209.7**<br/>
+&ensp;Version du moteur : **1.1.19700.3**<br/>
+&ensp;Version de signature : **1.373.208.0**<br/>
+
+### <a name="fixes"></a>Correctifs
+- Aucun
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Aucun
+
+<br/>
+</details><details>
 <summary>20220929.1</summary>
 
 &ensp;Version du package : **20220929.1**<br/>

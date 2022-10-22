@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un modèle moderne dans Microsoft Syntex.
-ms.openlocfilehash: 022f46531e54041d5a11b43d75b21d0e033095ca
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: af64b97c104e218ca851182ce043e3a65e72a159
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661586"
+ms.locfileid: "68673126"
 ---
 # <a name="create-a-modern-template-in-microsoft-syntex"></a>Créer un modèle moderne dans Microsoft Syntex
 
@@ -151,27 +151,6 @@ Une fois que vous avez terminé d’ajouter tous les champs pertinents au modèl
 
 2. Pour afficher, modifier ou annuler la publication de modèles *publiés* à partir du menu déroulant **Modèles publiés** de la section **Modèles modernes** , sélectionnez **Nouveau** > **menu Modifier nouveau** dans la bibliothèque de documents. 
 
-## <a name="edit-a-modern-template"></a>Modifier un modèle moderne
+## <a name="see-also"></a>Voir aussi
 
-Si vous devez modifier un modèle existant ou supprimer ou annuler la publication d’un modèle, procédez comme suit.
-
-1. Dans une bibliothèque de documents SharePoint, sélectionnez **Nouveau** > **menu Modifier nouveau**.
-
-   ![Capture d’écran de la bibliothèque de documents avec l’option de menu Modifier nouveau mise en évidence.](../media/content-understanding/content-assembly-edit-template-1.png)
-
-2. Dans le panneau **de menu Modifier nouveau** , dans la section **Modèles modernes** , sélectionnez le modèle publié ou brouillon que vous souhaitez modifier.
-
-   ![Capture d’écran du panneau de menu Modifier nouveau montrant la section Modèles modernes.](../media/content-understanding/content-assembly-edit-template-2.png)
-
-3. Pour modifier un modèle publié ou un brouillon de modèle :
-
-   - Pour **Modèles publiés**, sélectionnez **Modifier** pour ouvrir le studio de modèles dans lequel vous pouvez modifier le modèle publié. Vous pouvez également choisir de supprimer ou d’annuler la publication du modèle.
-
-      ![Capture d’écran de la section Modèles modernes montrant les modèles publiés.](../media/content-understanding/content-assembly-edit-published.png)
-
-   - Pour **Brouillons de modèles**, sélectionnez **Modifier** pour ouvrir le studio de modèles dans lequel vous pouvez modifier le modèle brouillon. Vous pouvez également choisir de supprimer ou de publier le modèle.
-
-      ![Capture d’écran de la section Modèles modernes montrant les brouillons de modèles.](../media/content-understanding/content-assembly-edit-draft.png)
-
-> [!div class="nextstepaction"]
-> [Étape suivante > Créer un document à partir d’un modèle moderne](content-assembly-create-document.md)
+[Modifier un modèle moderne](content-assembly-edit-template.md)

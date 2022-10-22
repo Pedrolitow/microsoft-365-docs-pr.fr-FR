@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: d3b38a9125979f33e4d22277b8967f4f3d37c349
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: eaa286aa1767b1cbf401d44035d1ed240131af69
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621359"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68672950"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
 
@@ -94,7 +94,7 @@ Vous pouvez utiliser cette logique pour créer vos chemins d'exclusion pour les 
 
 - Chemin d’accès au fichier valide qui se termine par `\`, ce qui signifie uniquement les fichiers directement sous dossier. <br/>Par exemple : `C:\Temp\`
 
-- Chemin d’accès de fichier valide qui se termine par `\*`, ce qui signifie uniquement les fichiers sous les sous-dossiers. Les fichiers directement sous le dossier ne sont pas exclus. <br/>Par exemple : `C:\Temp\*`
+- Chemin d’accès de fichier valide qui se termine par `\*`, ce qui signifie uniquement les fichiers sous-dossiers. Les fichiers situés directement sous le dossier ne sont pas exclus. <br/>Par exemple : `C:\Temp\*`
 
 - Chemin d’accès au fichier valide qui se termine sans `\` ou `\*`, ce qui signifie tous les fichiers directement sous dossier et tous les sous-dossiers. <br/>Par exemple : `C:\Temp`
 
@@ -167,7 +167,7 @@ Les configurations des **activités d’application restreintes** et les **activ
 
 Voici un exemple :
 
-Si Notepad.exe est ajouté aux **applications restreintes** et **aux activités de fichiers pour toutes les applications** est configuré pour **appliquer des restrictions à une activité spécifique** et les deux sont configurés comme suit :
+Si Notepad.exe est ajouté aux **applications restreintes** et activités **de fichier pour toutes les applications** est configuré pour **Appliquer des restrictions à une activité spécifique** et les deux sont configurés comme suit :
 
 |Paramètre dans la stratégie  |Nom de l'application  |Activité utilisateur  |Action DLP à effectuer  |
 |---------|---------|---------|---------|
@@ -186,7 +186,7 @@ L’utilisateur A ouvre un fichier protégé par DLP à l’aide Bloc-notes. DLP
    
 ##### <a name="file-activities-for-all-apps-only"></a>Activités de fichier pour toutes les applications uniquement
 
-Si une application ne figure pas dans **les activités de fichier pour les applications dans des groupes d’applications restreints** ou ne figure pas dans la liste **des activités d’application restreintes** ou se trouve dans la liste **des activités d’application restreintes** avec une action `Audit only`, ou « Bloquer avec remplacement », toutes **les restrictions définies dans les activités fichier pour toutes les applications** sont appliquées dans la même règle.  
+Si une application n’est pas dans activités de fichier **pour les applications dans des groupes d’applications restreints** ou n’est pas dans la liste **Activités d’application restreintes** ou dans la liste **Activités d’application restreintes** avec une action de `Audit only`, ou « Bloquer avec remplacement », toutes les restrictions définies dans les **activités de fichier pour toutes les applications** sont appliquées dans la même règle.  
 
 #### <a name="macos-devices"></a>appareils macOS
 
@@ -226,7 +226,7 @@ Empêchez les fichiers sensibles, qui correspondent à vos stratégies, d’êtr
 
 #### <a name="unallowed-browsers"></a>Navigateurs non autorisés
 
-Pour les appareils Windows, vous ajoutez des navigateurs, identifiés par leurs noms exécutables, qui ne pourront pas accéder aux fichiers qui correspondent aux conditions d’une stratégie DLP appliquée où la restriction de chargement vers les services cloud est définie sur bloquer ou bloquer le remplacement. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient une notification toast leur demandant d’ouvrir le fichier via Microsoft Edge.
+Pour les appareils Windows, vous ajoutez des navigateurs, identifiés par leurs noms exécutables, qui seront bloqués pour accéder aux fichiers qui correspondent aux conditions d’une stratégie DLP appliquée où la restriction de chargement vers les services cloud est définie pour bloquer ou bloquer le remplacement. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient une notification toast leur demandant d’ouvrir le fichier via Microsoft Edge.
 
 Pour les appareils macOS, vous devez ajouter le chemin d’accès complet au fichier. Pour trouver le chemin complet des applications Mac :
 
@@ -241,51 +241,51 @@ Pour les appareils macOS, vous devez ajouter le chemin d’accès complet au fic
 > [!NOTE]
 > Le paramètre **Domaines de service** s’applique uniquement aux fichiers téléchargés à l’aide de Microsoft Edge ou de Google Chrome avec l’[extension Microsoft Purview](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installée.
 
-Vous pouvez contrôler si les fichiers sensibles protégés par vos stratégies peuvent être chargés vers des domaines de service spécifiques à partir de Microsoft Edge.
+Vous pouvez contrôler si les fichiers sensibles protégés par vos stratégies peuvent être chargés dans des domaines de service spécifiques à partir de Microsoft Edge.
 
 ##### <a name="allow"></a>Autoriser
 
-Lorsque la liste **des domaines de service** est définie sur **Autoriser**, les stratégies DLP ne sont pas appliquées lorsqu’un utilisateur tente de charger un fichier sensible dans l’un des domaines de la liste.
+Lorsque la liste **domaines de service** est définie sur **Autoriser**, les stratégies DLP ne sont pas appliquées lorsqu’un utilisateur tente de charger un fichier sensible dans l’un des domaines de la liste.
 
-Si le mode liste est défini sur **Autoriser**, toute activité utilisateur impliquant un élément sensible et un domaine figurant dans la liste est auditée. L’activité est autorisée. Lorsqu’un utilisateur tente une activité impliquant un élément sensible et un domaine qui *ne figure pas* dans la liste, les stratégies DLP et les actions définies dans les stratégies sont appliquées.
+Si le mode liste est défini sur **Autoriser**, toute activité utilisateur impliquant un élément sensible et un domaine figurant dans la liste sera auditée. L’activité est autorisée. Lorsqu’un utilisateur tente une activité impliquant un élément sensible et un domaine qui *ne figure pas* dans la liste, les stratégies DLP et les actions définies dans les stratégies sont appliquées.
 
 Par exemple, avec cette configuration :
 
-- Le mode de liste **des domaines de** service est défini sur **Autoriser**.
-    - Contoso.com est sur la liste.
+- Le mode de liste **des domaines de service** est défini sur **Autoriser**.
+    - Contoso.com figure dans la liste.
 -  Une stratégie DLP est définie sur **Bloquer** le chargement d’éléments sensibles qui contiennent des numéros de carte de crédit.
  
 L’utilisateur tente de :
 
-- Chargez un fichier sensible avec des numéros de carte de crédit sur contoso.com.
-    - L’activité utilisateur est autorisée, auditée, un événement est généré, mais elle ne répertorie pas le nom de la stratégie ou le nom de la règle de déclenchement dans les détails de l’événement, et aucune alerte n’est générée. 
+- Chargez un fichier sensible avec des numéros de carte de crédit dans contoso.com.
+    - L’activité de l’utilisateur est autorisée, auditée, un événement est généré, mais il ne répertorie pas le nom de la stratégie ou le nom de la règle de déclenchement dans les détails de l’événement, et aucune alerte n’est générée. 
 
 mais si un utilisateur tente de : 
 
-- Chargez un fichier sensible avec des numéros de carte de crédit sur wingtiptoys.com (qui ne figure pas dans la liste).
+- Chargez un fichier sensible avec des numéros de carte de crédit dans wingtiptoys.com (qui ne figure pas dans la liste).
     - La stratégie est appliquée et l’activité de l’utilisateur est bloquée. Un événement est généré et une alerte est générée. 
  
 ##### <a name="block"></a>Bloquer
  
-Lorsque la liste **des domaines de service** est définie sur **Bloquer**, les stratégies DLP sont appliquées lorsqu’un utilisateur tente de charger un fichier sensible dans l’un des domaines de la liste.
+Lorsque la liste **domaines de service** est définie sur **Bloquer**, les stratégies DLP sont appliquées lorsqu’un utilisateur tente de charger un fichier sensible dans l’un des domaines de la liste.
 
-Si le mode liste est défini sur **Bloquer**, lorsqu’un utilisateur tente une activité impliquant un élément sensible et un domaine figurant dans la liste, les stratégies DLP et les actions définies dans les stratégies de police sont appliquées. Toute activité impliquant un élément sensible et un domaine qui ne figure pas dans la liste est auditée et l’activité utilisateur est autorisée.
+Si le mode liste est défini sur **Bloquer**, lorsqu’un utilisateur tente une activité impliquant un élément sensible et un domaine figurant dans la liste, les stratégies DLP et les actions définies dans les stratégies sont appliquées. Toute activité impliquant un élément sensible et un domaine qui ne figure pas dans la liste sera auditée et l’activité de l’utilisateur est autorisée.
 
 Par exemple, avec cette configuration :
 
-- Le mode de liste **des domaines de** service est défini sur **Bloquer**.
-    - Contoso.com est sur la liste.
+- Le mode de liste **des domaines de service** est défini sur **Bloquer**.
+    - Contoso.com figure dans la liste.
 -  Une stratégie DLP est définie sur **Bloquer avec remplacement** pour le chargement d’éléments sensibles qui contiennent des numéros de carte de crédit.
  
 L’utilisateur tente de :
 
-- Chargez un fichier sensible avec des numéros de carte de crédit sur contoso.com.
+- Chargez un fichier sensible avec des numéros de carte de crédit dans contoso.com.
     - L’activité de l’utilisateur est bloquée, mais l’utilisateur peut remplacer le bloc, un événement est généré et une alerte est déclenchée.
 
 mais si un utilisateur tente de : 
 
-- Chargez un fichier sensible avec des numéros de carte de crédit sur wingtiptoys.com (qui ne figure pas dans la liste).
-    - La stratégie *n’est pas* appliquée et l’activité de l’utilisateur est auditée. Un événement est généré, mais il ne répertorie pas le nom de la stratégie ou le nom de la règle de déclenchement dans les détails de l’événement, et aucune alerte n’est générée. 
+- Chargez un fichier sensible avec des numéros de carte de crédit dans wingtiptoys.com (qui ne figure pas dans la liste).
+    - La stratégie *n’est pas* appliquée et l’activité de l’utilisateur est auditée. Un événement est généré, mais il ne répertorie pas le nom de la stratégie ou de la règle de déclenchement dans les détails de l’événement, et aucune alerte n’est générée. 
 
 > [!IMPORTANT]
 > Lorsque le mode de restriction de service est configuré sur « Autoriser », vous devez configurer au moins un domaine de service avant l’application des restrictions.
@@ -307,9 +307,9 @@ Lorsque vous répertoriez un site web dans des domaines de services sensibles, v
 - imprimer à partir d’un site web
 - copier des données à partir d’un site web
 - enregistrer un site web en tant que fichiers locaux
-- charger un fichier sensible sur un site web exclu (ceci est configuré dans la stratégie)
+- charger un fichier sensible sur un site web exclu (configuré dans la stratégie)
 
-Pour les actions d’impression, de copie de données et d’enregistrement, chaque site web doit être répertorié dans un groupe de sites web et l’utilisateur doit accéder au site web via Microsoft Edge. Pour l’action de chargement, l’utilisateur peut utiliser Microsoft Edge ou Google Chrome avec l’extension Purview. Les domaines de service sensibles sont utilisés conjointement avec une stratégie DLP pour les appareils. Vous pouvez également définir des groupes de sites web auxquels vous souhaitez affecter des actions de stratégie différentes des actions de groupe de sites web globales. Pour plus d’informations, consultez le [scénario 6 Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
+Pour les actions d’impression, de copie des données et d’enregistrement, chaque site web doit être répertorié dans un groupe de sites web et l’utilisateur doit accéder au site web via Microsoft Edge. Pour l’action de chargement, l’utilisateur peut utiliser Microsoft Edge ou Google Chrome avec l’extension Purview. Les domaines de service sensibles sont utilisés conjointement avec une stratégie DLP pour les appareils. Vous pouvez également définir des groupes de sites web auxquels vous souhaitez affecter des actions de stratégie différentes des actions de groupe de sites web globales. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
 
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Paramètres supplémentaires pour le point de terminaison DLP
@@ -342,30 +342,30 @@ Lors de l’intégration d’appareils, l’activité DLP pour les fichiers Offi
 L’activité des fichiers est toujours auditée pour les appareils intégrés, qu’ils soient inclus dans une stratégie active ou non.
 
 > [!IMPORTANT]
-> Avant de pouvoir utiliser des [groupes d’imprimantes (préversion),](#printer-groups-preview) des [groupes d’appareils de stockage amovibles](#removable-storage-device-groups-preview), des [groupes de partage réseau](#network-share-groups-preview) et [des paramètres VPN](#vpn-settings-preview) , vous devez vous inscrire [ici](https://forms.office.com/r/GNVTFvxuZv).
+> Avant de pouvoir utiliser [les groupes d’imprimantes (préversion),](#printer-groups-preview) les [groupes de périphériques de stockage amovibles](#removable-storage-device-groups-preview), les [groupes de partage réseau](#network-share-groups-preview) et [les paramètres VPN](#vpn-settings-preview) , vous devez vous inscrire [ici](https://forms.office.com/r/GNVTFvxuZv).
 
 ### <a name="printer-groups-preview"></a>Groupes d’imprimantes (préversion)
 
-Utilisez ce paramètre pour définir des groupes d’imprimantes auxquels vous souhaitez affecter des actions de stratégie différentes des actions d’impression globales. Par exemple, supposons que vous souhaitez que votre stratégie DLP bloque l’impression des contrats sur toutes les imprimantes, à l’exception des imprimantes qui se trouvent dans le service juridique.
+Utilisez ce paramètre pour définir des groupes d’imprimantes auxquels vous souhaitez affecter des actions de stratégie qui sont différentes des actions d’impression globales. Par exemple, supposons que vous souhaitiez que votre stratégie DLP bloque l’impression des contrats sur toutes les imprimantes, à l’exception des imprimantes qui se trouvent dans le service juridique.
 
-Cette fonctionnalité est disponible pour les appareils exécutant l’une des versions windows suivantes :  
+Cette fonctionnalité est disponible pour les appareils exécutant l’une des versions suivantes de Windows :  
 
 - Windows 10 et versions ultérieures (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
+- Victoire 11 21H2, 22H2
 - Windows Server 2022
 
 Vous définissez une imprimante en fonction des paramètres suivants :
 
-- Nom convivial de l’imprimante : obtenez la valeur du nom de l’imprimante conviviale à partir des détails de la propriété de l’appareil d’imprimante dans le gestionnaire d’appareils.
-- ID de produit USB : obtenez la valeur du chemin d’accès de l’instance d’appareil à partir des détails de la propriété de l’appareil d’imprimante dans le gestionnaire d’appareils. Convertissez-le au format ID de produit et ID de fournisseur. Consultez [les identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers).
-- ID du fournisseur USB : obtenez la valeur du chemin d’accès de l’instance d’appareil à partir des détails de la propriété de l’appareil d’imprimante dans le gestionnaire d’appareils. Convertissez-le au format ID de produit et ID de fournisseur. Consultez [les identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Nom convivial de l’imprimante : obtenez la valeur Nom de l’imprimante conviviale à partir des détails de la propriété du périphérique d’imprimante dans le gestionnaire de périphériques.
+- ID de produit USB : obtenez la valeur du chemin d’accès de l’instance de périphérique à partir des détails de la propriété du périphérique d’imprimante dans le gestionnaire de périphériques. Convertissez-le au format ID de produit et ID de fournisseur, consultez [Identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers).
+- ID du fournisseur USB : obtenez la valeur chemin d’accès de l’instance de périphérique à partir des détails de la propriété du périphérique d’imprimante dans le gestionnaire de périphériques. Convertissez-le au format ID de produit et ID de fournisseur, consultez [Identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers).
 - Plage d’adresses IP
-- Imprimer dans un fichier : par exemple, Microsoft Print au format PDF ou Microsoft XPS Document Writer.
-- Impression universelle déployée sur une imprimante - Voir, [configurer l’impression universelle](/universal-print/fundamentals/universal-print-getting-started.md) pour plus d’informations sur les imprimantes universelles
-- Imprimante d’entreprise : est une file d’attente d’impression partagée via le serveur d’impression Windows local dans votre domaine. Son chemin d’accès peut ressembler  \\à print-server\contoso.com\legal_printer_001
-- Imprimer sur local
+- Imprimer dans un fichier : par exemple, Microsoft Print to PDF ou Microsoft XPS Document Writer.
+- Impression universelle déployée sur une imprimante - Voir [Configurer l’impression universelle](/universal-print/fundamentals/universal-print-getting-started.md) pour plus d’informations sur les imprimantes universelles
+- Imprimante d’entreprise : est une file d’attente d’impression partagée via un serveur d’impression Windows local dans votre domaine. Son chemin peut ressembler à  \\print-server\contoso.com\legal_printer_001
+- Imprimer en local
 
-Vous attribuez un **nom d’affichage** à chaque imprimante du groupe. Le nom apparaît uniquement dans la console Purview. Ainsi, en continuant avec l’exemple, vous allez créer un groupe d’imprimantes nommé **Imprimantes légales** et ajouter des imprimantes individuelles (avec un alias) par leur nom convivial, comme `legal_printer_001`, `legal_printer_002` et `legal_color_printer`.
+Vous attribuez à chaque imprimante du groupe un **nom d’affichage**. Le nom apparaît uniquement dans la console Purview. Par conséquent, en continuant avec l’exemple, vous devez créer un groupe **d’imprimantes nommé Imprimantes légales** et ajouter des imprimantes individuelles (avec un alias) par leur nom convivial, comme `legal_printer_001`, `legal_printer_002` et `legal_color_printer`.
 
 Vous pouvez sélectionner plusieurs paramètres pour vous aider à identifier sans ambiguïté une imprimante spécifique.
 
@@ -373,44 +373,44 @@ Vous pouvez affecter ces actions de stratégie au groupe dans une stratégie DLP
 
 - Autoriser (auditer sans notifications ou alertes utilisateur)
 - Auditer uniquement (vous pouvez ajouter des notifications et des alertes)
-- Bloquer avec remplacement (bloque l’action, mais l’utilisateur peut le remplacer)
-- Bloquer (blocs, quoi qu’il arrive)
+- Bloquer avec remplacement (bloque l’action, mais l’utilisateur peut remplacer)
+- Bloquer (blocs quoi qu’il arrive)
 
 #### <a name="create-a-printer-group"></a>Créer un groupe d’imprimantes
 
-1. Ouvrez [portail de conformité Microsoft Purview](https://compliance.microsoft.com) >  **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
+1. Ouvrez [portail de conformité Microsoft Purview Paramètres](https://compliance.microsoft.com) >  **DLP** >  du point de terminaison Protection **contre la** >  perte de données **Groupes d’imprimantes**.
 1. Sélectionnez **Créer un groupe d’imprimantes**.
 1. Donnez un nom au groupe.
 1. Sélectionnez **Ajouter une imprimante**.
-1. Donnez à l’imprimante un **Alias qui n’apparaîtra qu’ici.
-1. Sélectionnez les paramètres et fournissez les valeurs pour identifier sans ambiguïté l’imprimante spécifique.
+1. Donnez à l’imprimante un **Alias qui s’affiche uniquement ici.
+1. Sélectionnez les paramètres et fournissez les valeurs pour identifier de manière non ambiguë l’imprimante spécifique.
 1. Sélectionnez **Ajouter**.
 1. Ajoutez d’autres imprimantes en fonction des besoins.
 1. Sélectionnez **Fermer**.
 
-Le cas d’usage le plus courant consiste à utiliser des groupes d’imprimantes comme liste verte, comme dans l’exemple ci-dessus, pour autoriser l’impression de contrats uniquement sur les imprimantes qui se trouvent dans le service juridique. Une fois que vous avez défini un groupe d’imprimantes ici, il est disponible pour être utilisé dans vos stratégies qui sont limitées aux **appareils**. Consultez le [scénario 7 Groupes d’autorisation](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) pour plus d’informations sur la configuration des actions de stratégie pour utiliser des groupes d’autorisation.
+Le cas d’usage le plus courant consiste à utiliser des groupes d’imprimantes comme liste d’autorisation comme dans l’exemple ci-dessus pour autoriser l’impression des contrats uniquement pour les imprimantes qui se trouvent dans le service juridique. Une fois que vous avez défini un groupe d’imprimantes ici, il peut être utilisé dans vos stratégies étendues à **Appareils**. Pour plus d’informations sur la configuration des actions de stratégie pour utiliser des groupes d’autorisation, consultez [Le scénario 7 Groupes d’autorisation](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) .
 
-### <a name="removable-storage-device-groups-preview"></a>Groupes d’appareils de stockage amovibles (préversion)
+### <a name="removable-storage-device-groups-preview"></a>Groupes de périphériques de stockage amovibles (préversion)
 
-Utilisez ce paramètre pour définir des groupes d’appareils de stockage amovibles, tels que les lecteurs usb, auxquels vous souhaitez affecter des actions de stratégie différentes des actions d’impression globales. Par exemple, supposons que votre stratégie DLP bloque la copie d’éléments avec des spécifications d’ingénierie sur tous les périphériques de stockage amovibles, à l’exception des disques durs connectés à USB qui sont utilisés pour sauvegarder des données et qui sont ensuite envoyés hors site.
+Utilisez ce paramètre pour définir des groupes de périphériques de stockage amovibles, tels que des lecteurs USB, auxquels vous souhaitez affecter des actions de stratégie qui sont différentes des actions d’impression globales. Par exemple, supposons que votre stratégie DLP bloque la copie d’éléments avec des spécifications d’ingénierie sur tous les périphériques de stockage amovibles, à l’exception des disques durs usb connectés qui sont utilisés pour sauvegarder les données et qui sont ensuite envoyés hors site.
 
-Cette fonctionnalité est disponible pour les appareils exécutant l’une des versions windows suivantes :  
+Cette fonctionnalité est disponible pour les appareils exécutant l’une des versions suivantes de Windows :  
 
 - Windows 10 et versions ultérieures (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
-- Windows 10 RS5 (KB 5006744) et Windows Server 2022 
+- Victoire 11 21H2, 22H2
+- Windows 10 RS5 (Kb 5006744) et Windows Server 2022 
 
-Vous pouvez définir des périphériques de stockage amovibles en fonction des paramètres suivants :
+Vous pouvez définir des périphériques de stockage pouvant être supprimés par les paramètres suivants :
 
-- Nom convivial de l’appareil de stockage : obtenez la valeur du nom convivial à partir des détails de la propriété de l’appareil de stockage dans le gestionnaire d’appareils.
-- ID de produit USB : obtenez la valeur du chemin d’accès de l’instance d’appareil à partir des détails de la propriété de l’appareil d’imprimante dans le gestionnaire d’appareils. Convertissez-le au format ID de produit et ID de fournisseur. Consultez [les identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers).
-- ID du fournisseur USB : obtenez la valeur du chemin d’accès de l’instance d’appareil à partir des détails de la propriété de l’appareil d’imprimante dans le gestionnaire d’appareils. Convertissez-le au format ID de produit et ID de fournisseur. Consultez [les identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers).
-- ID de numéro de série : obtenez la valeur d’ID de numéro de série à partir des détails de la propriété de l’appareil de stockage dans le gestionnaire d’appareils.
-- ID d’appareil : obtenez la valeur de l’ID de l’appareil à partir des détails de la propriété de l’appareil de stockage dans le gestionnaire d’appareils.
-- ID de chemin d’accès de l’instance : obtenez la valeur de l’ID de l’appareil à partir des détails de la propriété de l’appareil de stockage dans le gestionnaire d’appareils.
-- ID matériel : obtenez la valeur de l’ID matériel à partir des détails de la propriété de l’appareil de stockage dans le gestionnaire d’appareils.
+- Nom convivial de l’appareil de stockage : obtenez la valeur nom convivial à partir des détails de la propriété du périphérique de stockage dans le gestionnaire de périphériques.
+- ID de produit USB : obtenez la valeur chemin d’accès de l’instance de périphérique à partir des détails de la propriété du périphérique USB dans le gestionnaire de périphériques. Convertissez-le au format ID de produit et ID de fournisseur, consultez [Identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers).
+- ID du fournisseur USB : obtenez la valeur chemin d’accès de l’instance de périphérique à partir des détails de la propriété du périphérique USB dans le gestionnaire de périphériques. Convertissez-le au format ID de produit et ID de fournisseur, consultez [Identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers).
+- ID de numéro de série : obtenez la valeur d’ID de numéro de série à partir des détails de la propriété du périphérique de stockage dans le gestionnaire de périphériques.
+- ID d’appareil : obtenez la valeur de l’ID d’appareil à partir des détails de la propriété du périphérique de stockage dans le Gestionnaire de périphériques.
+- ID du chemin d’accès de l’instance : obtenez la valeur de l’ID d’appareil à partir des détails de la propriété du périphérique de stockage dans le gestionnaire de périphériques.
+- ID matériel : obtenez la valeur de l’ID matériel à partir des détails de la propriété du périphérique de stockage dans le gestionnaire de périphériques.
 
-Vous attribuez un **alias** à chaque périphérique de stockage amovible du groupe. L’alias est un nom qui apparaît uniquement dans la console Purview. Ainsi, en continuant avec l’exemple, vous allez créer un groupe d’appareils de stockage amovible nommé **Sauvegarde** et ajouter des appareils individuels (avec un alias) par leur nom convivial, par exemple `backup_drive_001`, et `backup_drive_002`.
+Vous attribuez un **Alias** à chaque périphérique de stockage amovible du groupe. L’alias est un nom qui apparaît uniquement dans la console Purview. Par conséquent, pour poursuivre avec l’exemple, vous devez créer un groupe de périphériques de stockage amovible nommé **Sauvegarde** et ajouter des appareils individuels (avec un alias) par leur nom convivial, comme `backup_drive_001`, et `backup_drive_002`.
 
 Vous pouvez sélectionner plusieurs paramètres et le groupe d’imprimantes inclut tous les appareils qui répondent à ces paramètres.
 
@@ -418,33 +418,33 @@ Vous pouvez affecter ces actions de stratégie au groupe dans une stratégie DLP
 
 - Autoriser (auditer sans notifications ou alertes utilisateur)
 - Auditer uniquement (vous pouvez ajouter des notifications et des alertes)
-- Bloquer avec remplacement (bloque l’action, mais l’utilisateur peut le remplacer)
-- Bloquer (blocs, quoi qu’il arrive)
+- Bloquer avec remplacement (bloque l’action, mais l’utilisateur peut remplacer)
+- Bloquer (blocs quoi qu’il arrive)
 
 #### <a name="create-a-removable-storage-device-group"></a>Créer un groupe d’appareils de stockage amovible
 
-1. Ouvrez [portail de conformité Microsoft Purview](https://compliance.microsoft.com) >  **Data loss prevention** > **Endpoint DLP settings** > **Removable storage device groups**.
+1. Ouvrez [portail de conformité Microsoft Purview](https://compliance.microsoft.com) >  **Protection contre la** >  perte de données **Paramètres** >  DLP du point de terminaison **Groupes de périphériques de stockage amovibles**.
 1. Sélectionnez **Créer un groupe d’appareils de stockage amovible**.
 1. Indiquez un **nom de groupe**.
 1. Sélectionnez **Ajouter un périphérique de stockage amovible**.
-1. Indiquez un **alias**.
-1. Sélectionnez les paramètres et fournissez les valeurs pour identifier sans ambiguïté l’appareil spécifique.
+1. Fournissez un **alias**.
+1. Sélectionnez les paramètres et fournissez les valeurs pour identifier de manière non ambiguë l’appareil spécifique.
 1. Sélectionnez **Ajouter**.
 1. Ajoutez d’autres appareils au groupe en fonction des besoins.
 1. Sélectionnez **Fermer**.
 
-Le cas d’usage le plus courant consiste à utiliser des groupes d’appareils de stockage amovibles comme liste verte, comme dans l’exemple ci-dessus, pour autoriser la copie de fichiers uniquement sur les appareils qui se trouvent dans le groupe **Sauvegarde** . Une fois que vous avez défini un groupe d’appareils de stockage amovible ici, il est disponible pour être utilisé dans vos stratégies qui sont limitées aux **appareils**. Consultez le [scénario 7 Groupes d’autorisation](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) pour plus d’informations sur la configuration des actions de stratégie pour utiliser des groupes d’autorisation. Bien que le scénario 7 utilise des groupes d’autorisation d’imprimante comme exemple, les principes sont identiques. La seule chose qui change sont les noms des groupes et les actions que vous sélectionnez.
+Le cas d’usage le plus courant consiste à utiliser des groupes de périphériques de stockage amovibles comme liste d’autorisation, comme dans l’exemple ci-dessus, pour autoriser la copie de fichiers uniquement sur les appareils qui se trouvent dans le groupe **Sauvegarde** . Une fois que vous avez défini un groupe d’appareils de stockage amovible ici, il peut être utilisé dans vos stratégies étendues à **Appareils**. Pour plus d’informations sur la configuration des actions de stratégie pour utiliser des groupes d’autorisation, consultez [Le scénario 7 Groupes d’autorisation](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) . Bien que le scénario 7 utilise des groupes d’autorisation d’imprimante comme exemple, les principes sont identiques. La seule chose qui change sont les noms des groupes et les actions que vous sélectionnez.
 
 ### <a name="network-share-groups-preview"></a>Groupes de partage réseau (préversion)
 
-Utilisez ce paramètre pour définir des groupes de chemins d’accès de partage réseau auxquels vous souhaitez affecter des actions de stratégie différentes des actions de chemin de partage réseau globales. Par exemple, supposons que votre stratégie DLP soit bloquée lorsque les utilisateurs tentent d’enregistrer ou de copier des fichiers protégés sur des partages réseau, à l’exception des partages réseau de ce groupe.
+Utilisez ce paramètre pour définir des groupes de chemins de partage réseau auxquels vous souhaitez affecter des actions de stratégie qui sont différentes des actions de chemin de partage réseau global. Par exemple, supposons que votre stratégie DLP soit bloquée lorsque les utilisateurs tentent d’enregistrer ou de copier des fichiers protégés dans des partages réseau, à l’exception des partages réseau de ce groupe.
 
 
-Cette fonctionnalité est disponible pour les appareils exécutant l’une des versions windows suivantes :  
+Cette fonctionnalité est disponible pour les appareils exécutant l’une des versions suivantes de Windows :  
 
 - Windows 10 et versions ultérieures (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
-- Windows 10 RS5 (KB 5006744) et Windows Server 2022 
+- Victoire 11 21H2, 22H2
+- Windows 10 RS5 (Kb 5006744) et Windows Server 2022 
 
 
 Vous incluez des chemins de partage réseau en définissant le préfixe avec lequel ils commencent tous. Par exemple :
@@ -453,36 +453,36 @@ Vous incluez des chemins de partage réseau en définissant le préfixe avec leq
     -  Dossier \Library et tous ses sous-dossiers.
 
 - Vous pouvez utiliser des caractères génériques, par exemple «\\ Users\*\Desktop » correspond à :
-    - '\\USers\user1\Desktop'
-    - '\\USers\user1\user2\Desktop'
+    - « \\USers\user1\Desktop »
+    - « \\USers\user1\user2\Desktop »
     - '\\Users\*\Desktop'
 
-- Vous pouvez utiliser des variables environnementales, par exemple :
+- Vous pouvez utiliser des variables d’environnement, par exemple :
     - %AppData%\app123
 
 Vous pouvez affecter ces actions de stratégie au groupe dans une stratégie DLP :
 
 - Autoriser (auditer sans notifications ou alertes utilisateur)
 - Auditer uniquement (vous pouvez ajouter des notifications et des alertes)
-- Bloquer avec remplacement (bloque l’action, mais l’utilisateur peut le remplacer)
-- Bloquer (blocs, quoi qu’il arrive)
+- Bloquer avec remplacement (bloque l’action, mais l’utilisateur peut remplacer)
+- Bloquer (blocs quoi qu’il arrive)
 
 #### <a name="create-a-network-share-group"></a>Créer un groupe de partage réseau
 
-1. Ouvrez [portail de conformité Microsoft Purview](https://compliance.microsoft.com) >  **Data loss prevention** > **Endpoint DLP settings** > **Network share groups**.
-1. Sélectionnez **Créer un groupe de partage réseau**.
+1. Ouvrez [portail de conformité Microsoft Purview Paramètres](https://compliance.microsoft.com) >  **DLP** >  du point de terminaison Protection **contre la** >  perte de données Groupes **de partage réseau**.
+1.Sélectionnez **Créer un groupe de partage réseau**.
 1. Indiquez un **nom de groupe**.
-1. Ajoutez le chemin d’accès au fichier au partage.
+1. Ajoutez le chemin d’accès au partage.
 1. Sélectionnez **Ajouter**.
-1. Ajoutez d’autres chemins d’accès de partage au groupe en fonction des besoins.
+1. Ajoutez d’autres chemins de partage au groupe en fonction des besoins.
 1. Sélectionnez **Fermer**.
 
 
-Le cas d’usage le plus courant consiste à utiliser le groupe de partages réseau comme liste verte, comme dans l’exemple ci-dessus, pour permettre aux utilisateurs d’enregistrer ou de copier des fichiers protégés uniquement sur les partages réseau définis dans le groupe. Une fois que vous avez défini un groupe de partage de réseaux ici, il est disponible pour être utilisé dans vos stratégies qui sont limitées aux **appareils**. Consultez le [scénario 7 Groupes d’autorisation](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) pour plus d’informations sur la configuration des actions de stratégie pour utiliser des groupes d’autorisation.
+Le cas d’usage le plus courant consiste à utiliser un groupe de partage réseau comme liste d’autorisation, comme dans l’exemple ci-dessus, pour permettre aux utilisateurs d’enregistrer ou de copier des fichiers protégés uniquement dans les partages réseau définis dans le groupe. Une fois que vous avez défini un groupe de partage de réseaux ici, il est disponible pour être utilisé dans vos stratégies qui sont étendues à **Appareils**. Pour plus d’informations sur la configuration des actions de stratégie pour utiliser des groupes d’autorisation, consultez [Le scénario 7 Groupes d’autorisation](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) .
 
 ### <a name="vpn-settings-preview"></a>Paramètres VPN (préversion)
 
-Utilisez la liste VPN pour contrôler uniquement les actions qui sont effectuées sur ce VPN.
+Utilisez la liste VPN pour contrôler uniquement les actions effectuées sur ce VPN.
 
 Cette fonctionnalité est disponible pour les appareils exécutant l’une des versions suivantes de Windows :  
     
@@ -490,50 +490,50 @@ Cette fonctionnalité est disponible pour les appareils exécutant l’une des v
 - Windows 11 21H2, 22H2
 - Windows 10 RS5 (KB 5006744)
 
-Lorsque vous répertoriez un VPN dans **les paramètres VPN** , vous pouvez leur affecter ces actions de stratégie :
+Lorsque vous répertoriez un VPN dans **les paramètres VPN,** vous pouvez lui attribuer ces actions de stratégie :
 
 - Autoriser (auditer sans notifications ou alertes utilisateur)
 - Auditer uniquement (vous pouvez ajouter des notifications et des alertes)
-- Bloquer avec remplacement (bloque l’action, mais l’utilisateur peut le remplacer)
-- Bloquer (blocs, quoi qu’il arrive)
+- Bloquer avec remplacement (bloque l’action, mais l’utilisateur peut remplacer)
+- Bloquer (blocs quoi qu’il arrive)
 
 Ces actions peuvent être appliquées individuellement ou collectivement à ces activités utilisateur :
 
 - Copier dans le Presse-papiers
-- Copier sur un appareil amovible USB
+- Copier sur un périphérique usb amovible
 - Copier vers un partage réseau
 - Imprimer
 - Copier ou déplacer à l'aide d'une application Bluetooth non autorisée
 - Copier ou déplacer à l’aide de RDP
 
-Lors de la configuration d’une stratégie DLP pour restreindre l’activité sur les appareils, vous pouvez contrôler ce qui se passe pour chaque activité effectuée lorsque les utilisateurs sont connectés à votre organisation dans l’un des VPN répertoriés.
+Lorsque vous configurez une stratégie DLP pour restreindre l’activité sur les appareils, vous pouvez contrôler ce qui se passe pour chaque activité effectuée lorsque les utilisateurs sont connectés à votre organisation dans l’un des VPN répertoriés.
 
-Vous définissez vpN par ces paramètres Adresse **de serveur** ou **adresse réseau**. 
+Vous définissez le VPN par ces paramètres **Adresse du serveur** ou **Adresse réseau**. 
 
 #### <a name="get-the-server-address-or-network-address"></a>Obtenir l’adresse du serveur ou l’adresse réseau
 
-1. Sur un appareil Windows surveillé par DLP, ouvrez une fenêtre **Windows PowerShell** en tant qu’administrateur.
+1. Sur un appareil Windows supervisé par DLP, ouvrez une fenêtre **Windows PowerShell** en tant qu’administrateur.
 1. Exécuter cette applet de commande
 
 ```powershell-interactive
 Get-VpnConnection
 ```
 3. L’exécution de cette applet de commande retourne plusieurs champs et valeurs.
-1. Recherchez le champ **ServerAddress** et enregistrez cette valeur. Vous l’utiliserez lorsque vous créerez une entrée VPN dans la liste VPN.
-1. Recherchez le champ **Nom** et enregistrez cette valeur. Le champ **Nom** correspond au champ **Adresse réseau** lorsque vous créez une entrée VPN dans la liste VPN.
+1. Recherchez le champ **ServerAddress** et enregistrez cette valeur. Vous l’utiliserez lorsque vous créerez une entrée VPN dans la liste DES VPN.
+1. Recherchez le champ **Nom** et enregistrez cette valeur. Le champ **Nom** est mappé au champ **Adresse réseau** lorsque vous créez une entrée VPN dans la liste VPN.
 
 #### <a name="add-a-vpn"></a>Ajouter un VPN
 
-1. Ouvrez [portail de conformité Microsoft Purview](https://compliance.microsoft.com) >  **Paramètres VPN des paramètres** >  DLP du point de terminaison de **protection contre la** >  perte **de données**.
+1. Ouvrez [portail de conformité Microsoft Purview Paramètres](https://compliance.microsoft.com) >  **VPN** **de protection contre la** >  perte de données Paramètres **du point de terminaison DLP** > .
 1. Sélectionnez **Ajouter ou modifier des adresses VPN**.
-1. Indiquez **l’adresse du serveur** ou **l’adresse réseau** à partir de l’exécution de Get-VpnConnection.
+1. Indiquez **l’adresse du serveur** ou **l’adresse réseau** de l’exécution de Get-VpnConnection.
 1. Sélectionnez **Enregistrer**.
 1. Fermez l’élément.
 
 > [!IMPORTANT]
-> Lorsque vous utilisez la liste VPN pour définir les actions d’une stratégie, vous voyez également le **réseau d’entreprise** comme option. Les connexions **réseau d’entreprise** sont toutes des connexions aux ressources de votre organisation. Ces connexions peuvent inclure des VPN. 
+> Lorsque vous utilisez la liste VPN pour définir les actions d’une stratégie, vous voyez également **Réseau d’entreprise** comme option. **Les connexions réseau d’entreprise** sont toutes des connexions aux ressources de votre organisation. Ces connexions peuvent inclure des VPN. 
 
-Consultez le [scénario 8 Exceptions réseau](endpoint-dlp-using.md#scenario-8-network-exceptions-preview)pour plus d’informations sur la configuration des actions de stratégie pour utiliser des exceptions réseau.
+Pour plus d’informations sur la configuration des actions de stratégie pour utiliser des exceptions réseau, consultez [Scénario 8 Exceptions](endpoint-dlp-using.md#scenario-8-network-exceptions-preview)réseau.
 
 ## <a name="see-also"></a>Voir aussi
 
