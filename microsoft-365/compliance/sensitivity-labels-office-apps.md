@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61302c27f9c59cbedb9bc7f3456ca6e8a1fecbb7
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 24ddef2f66af1a707e061f40fcfced27d4094613
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621889"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68685017"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -43,7 +43,7 @@ Le [client d’étiquetage unifié Azure Information Protection (AIP)](/azure/in
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Prise en charge des fonctionnalités d’étiquette de confidentialité dans les applications
 
-Les tableaux suivants répertorient la version minimale d’Office qui a introduit des fonctionnalités spécifiques pour les étiquettes de confidentialité intégrées aux applications Office. Ou, si la fonctionnalité d’étiquette est en préversion publique ou en cours d’examen pour une version ultérieure :
+Les tableaux suivants répertorient la version minimale d’Office qui a introduit des fonctionnalités spécifiques pour les étiquettes de confidentialité intégrées aux applications Office. Ou, si la fonctionnalité d’étiquette est en préversion publique ou en cours de révision pour une version ultérieure :
 
 - [Tableau des fonctionnalités pour Word, Excel et PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
 - [Tableau des fonctionnalités pour Outlook](#sensitivity-label-capabilities-in-outlook)
@@ -52,7 +52,7 @@ Utilisez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft
 
 Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour Windows, vous obtenez les nouvelles fonctionnalités plus tôt lorsque vous êtes sur le canal actuel ou le canal Enterprise mensuel, plutôt que sur Semi-Annual Enterprise canal. Les numéros de version minimum peuvent également être différents d’un canal de mise à jour à l’autre. Pour plus d’informations, voir [Vue d’ensemble des](/deployoffice/overview-update-channels) canaux de mise à jour Microsoft 365 Apps et historique des mises à jour [pour Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
-Les nouvelles fonctionnalités en préversion privée ne sont pas incluses dans les tables, mais vous pourrez peut-être rejoindre ces préversions en nommant votre organisation pour le [Protection des données Microsoft programme de préversion privée](https://aka.ms/mip-preview).
+Les nouvelles fonctionnalités qui sont en préversion privée ne sont pas incluses dans les tables, mais vous pouvez peut-être rejoindre ces préversions en nommant votre organisation pour le [programme de préversion privée Protection des données Microsoft](https://aka.ms/mip-preview).
 
 Office pour iOS et Office pour Android : les étiquettes de niveau de confidentialité sont intégrées dans l’[application Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
@@ -81,11 +81,11 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Marquages dynamiques avec des variables](#dynamic-markings-with-variables).                                              | Canal actuel : 2010+ <br /><br> Canal mensuel des entreprises : 2010+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> - Demander aux utilisateurs des autorisations personnalisées (utilisateurs et groupes)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Canal actuel : 2004+ <br /><br> Canal Entreprise mensuel : 2004+ <br /><br> Semi-Annual Enterprise canal : 2008+ | 16.35+   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
-|[Permettre aux utilisateurs d’attribuer des autorisations : <br /> - Demander aux utilisateurs des autorisations personnalisées (utilisateurs, groupes et organisations)](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Aperçu : déploiement sur le[Canal actuel (prévisualisation)](https://office.com/insider)  | En cours de révision   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Permettre aux utilisateurs d’attribuer des autorisations : <br /> - Demander aux utilisateurs des autorisations personnalisées (utilisateurs, groupes et organisations)](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Préversion : déploiement sur le [Canal bêta](https://office.com/insider)  | En cours de révision   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Audit de l’activité des utilisateurs liée à une étiquette](#auditing-labeling-activities)                      | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semestriel | 16.43+ | 2.46+ | 16.0.13628+ | Oui |
 |[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actuel : 2101+ <br /><br> Canal Entreprise mensuel : 2101+ <br /><br> Canal d’entreprise semestriel | 16.45+         | 2.47+ | 16.0.13628+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision | En cours de révision | [En cours de révision |
 |[Prise en charge de la co-édition et de l'enregistrement automatique](sensitivity-labels-coauthoring.md) pour les documents étiquetés et chiffrés | Canal actuel : 2107+ <br /><br> Canal mensuel des entreprises : 2107+ <br /><br> Canal d’entreprise semi-annuel : 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Prise en charge du format PDF](#pdf-support)| Canal actuel : 2208+ <br /><br> Canal Entreprise mensuel : 2208+ <br /><br> Semi-Annual Enterprise canal : en cours de révision|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 |[Barre de sensibilité](#sensitivity-bar) et [couleur d’étiquette d’affichage](#label-colors) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider) | En cours de révision | En cours de révision | En cours de révision | En cours de révision |
@@ -125,12 +125,12 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 
 ## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client d’étiquetage intégré à Office et client Azure Information Protection
 
-Si le [client Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) est installé sur leurs ordinateurs Windows, les étiquettes intégrées constituent la nouvelle valeur par défaut des dernières applications Windows Office qui [prennent en charge l’étiquetage](#labeling-client-for-desktop-apps). Étant donné que les étiquettes intégrées n’utilisent pas de complément Office, telles qu’elles sont utilisées par le client AIP, elles bénéficient d’une stabilité accrue et de meilleures performances. Ils prennent également en charge les fonctionnalités les plus récentes, telles que les classifieurs avancés.
+Si le [client Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) est installé sur les ordinateurs Windows des utilisateurs, les étiquettes intégrées sont la nouvelle valeur par défaut pour les dernières applications Windows Office qui [prennent en charge l’étiquetage](#labeling-client-for-desktop-apps). Étant donné que les étiquettes intégrées n’utilisent pas de complément Office, telles qu’elles sont utilisées par le client AIP, elles bénéficient d’une stabilité accrue et de meilleures performances. Ils prennent également en charge les fonctionnalités les plus récentes, telles que les classifieurs avancés.
 
 > [!NOTE]
 > Si vous ne voyez pas les fonctionnalités d’étiquetage attendues sur les ordinateurs Windows, même si vous confirmez les versions minimales prises en charge pour votre canal de mise à jour Office, cela peut être dû au fait que vous devez [désactiver le complément AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) pour les versions antérieures d’Office.
 
-Pour en savoir plus sur la prise en charge de l’étiquetage avec le client AIP et sur la désactivation de ce client uniquement dans les applications Office, consultez [Migrer le complément Azure Information Protection (AIP) vers l’étiquetage intégré pour les applications Office](sensitivity-labels-aip.md).
+Pour en savoir plus sur la prise en charge de l’étiquetage avec le client AIP et sur la façon de désactiver ce client uniquement dans les applications Office, consultez [Migrer le complément Azure Information Protection (AIP) vers l’étiquetage intégré pour les applications Office](sensitivity-labels-aip.md).
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Si vous devez désactiver l’étiquetage intégré dans Office applications sur Windows
 
@@ -152,9 +152,9 @@ Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide 
 
 ## <a name="office-file-types-supported"></a>Types de fichiers Office pris en charge
 
-En règle générale, les applications Office qui ont un étiquetage intégré pour les fichiers Word, Excel et PowerPoint prennent en charge le format Open XML (par exemple, .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (par exemple, .doc et .xls), le format open document (par exemple, .odt et .ods) ou d’autres formats. Lorsqu’un type de fichier n’est pas pris en charge pour l'étiquetage intégré, le bouton **Niveau de confidentialité** n’est pas disponible dans l’application Office.
+En règle générale, les applications Office qui disposent d’un étiquetage intégré pour les fichiers Word, Excel et PowerPoint prennent en charge le format Open XML (par exemple, .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (par exemple, .doc et .xls), le format Open Document (tel que .odt et .ods) ou d’autres formats. Lorsqu’un type de fichier n’est pas pris en charge pour l'étiquetage intégré, le bouton **Niveau de confidentialité** n’est pas disponible dans l’application Office.
 
-Pour obtenir des types de fichiers spécifiques pris en charge pour SharePoint et OneDrive lorsque ces services sont activés pour les étiquettes de confidentialité, consultez [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
+Pour connaître les types de fichiers spécifiques pris en charge pour SharePoint et OneDrive lorsque ces services sont activés pour les étiquettes de confidentialité, voir [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 
 Le client d’étiquetage unifié Azure Information Protection prend en charge les formats Open XML et Microsoft Office 97-2003. Pour plus d’informations, consultez [Types de fichiers pris en charge par le client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) à partir du guide d’administration de ce client.
 
@@ -208,17 +208,17 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 ## <a name="encryption-based-label-matching-for-documents"></a>Correspondance d’étiquette basée sur le chiffrement pour les documents
 
-Lorsqu’un document a été chiffré avec des autorisations définies par l’administrateur, la stratégie de chiffrement est incorporée dans le document. Cela se produit indépendamment de l’étiquetage. Par exemple, lorsqu’une pièce jointe Office hérite du chiffrement d’un message électronique ou qu’un utilisateur a appliqué un modèle de protection à l’aide de la gestion des droits relatifs à l’information (IRM) dans son application Office. Si une étiquette de confidentialité dans le locataire correspond à cette même stratégie de chiffrement, les applications Office attribuent automatiquement cette étiquette correspondante au document.
+Lorsqu’un document a été chiffré avec des autorisations définies par l’administrateur, la stratégie de chiffrement est incorporée dans le document. Cela se produit indépendamment de l’étiquetage. Par exemple, lorsqu’une pièce jointe Office hérite du chiffrement d’un e-mail ou qu’un utilisateur a appliqué un modèle de protection à l’aide de la gestion des droits relatifs à l’information (IRM) dans son application Office. Si une étiquette de confidentialité dans le locataire correspond à cette même stratégie de chiffrement, les applications Office attribuent automatiquement cette étiquette correspondante au document.
 
-Dans ce scénario, l’étiquette de confidentialité correspondante peut étiqueter un document sans étiquette et remplacer une étiquette existante qui n’applique pas le chiffrement. Par exemple, l’étiquette **Général** est remplacée par **Confidentiel/Tous les employés**. Les marquages de contenu de l’étiquette correspondante ne sont pas appliqués automatiquement, sauf si le document n’a pas été précédemment étiqueté et que vous utilisez le complément AIP.
+Dans ce scénario, l’étiquette de confidentialité correspondante peut étiqueter un document sans étiquette et remplacer une étiquette existante qui n’applique pas de chiffrement. Par exemple, l’étiquette **Général** est remplacée par **Confidentiel/ Tous les employés**. Les marquages de contenu de l’étiquette correspondante ne sont pas appliqués automatiquement, sauf si le document n’a pas été étiqueté précédemment et que vous utilisez le complément AIP.
 
-Ce scénario permet de déplacer des solutions de chiffrement plus anciennes des modèles de protection aux étiquettes de confidentialité qui appliquent le chiffrement.
+Ce scénario permet de déplacer les anciennes solutions de chiffrement des modèles de protection vers les étiquettes de confidentialité qui appliquent le chiffrement.
 
-Toutefois, vous verrez également ce comportement avec un scénario d’étiquetage pour les pièces jointes de courrier lorsqu’elles sont ouvertes par le destinataire. Par exemple :
+Toutefois, vous verrez également ce comportement avec un scénario d’étiquetage pour les pièces jointes des e-mails lorsqu’elles sont ouvertes par le destinataire. Par exemple :
 
-1. Un utilisateur crée un e-mail et attache un document Office non chiffré, puis applique une étiquette à l’e-mail.
+1. Un utilisateur crée un e-mail et joint un document Office non chiffré, puis applique une étiquette à l’e-mail.
     
-    L’étiquette applique le chiffrement avec les autorisations définies par l’administrateur, plutôt que les options Ne pas transférer ou Encrypt-Only. Par exemple, pour la configuration de l’étiquette, l’administrateur sélectionne **Attribuer des autorisations maintenant** et spécifie que tous les employés disposent d’un accès en lecture.
+    L’étiquette applique le chiffrement avec des autorisations définies par l’administrateur, plutôt que les options Ne pas transférer ou Encrypt-Only. Par exemple, pour la configuration de l’étiquette, l’administrateur sélectionne **Attribuer des autorisations maintenant** et spécifie que tous les employés disposent d’un accès en lecture.
 
 2. Lorsque l’e-mail est envoyé, la [pièce jointe hérite automatiquement du chiffrement, mais pas de l’étiquette](encryption-sensitivity-labels.md#email-attachments-for-encrypted-email-messages).
 
@@ -226,7 +226,7 @@ Toutefois, vous verrez également ce comportement avec un scénario d’étiquet
     
     En tant qu’événement d’audit affiché dans l’Explorateur d’activités, cet utilisateur a appliqué l’étiquette, et non l’expéditeur de l’e-mail.
 
-La correspondance d’étiquette basée sur le chiffrement fonctionne uniquement dans le locataire, pour les autorisations définies par l’administrateur, et l’étiquette de confidentialité correspondante doit être publiée pour l’utilisateur qui ouvre le document. L’étiquette correspondante persiste si le document est enregistré.
+La correspondance d’étiquette basée sur le chiffrement fonctionne uniquement au sein du locataire, pour les autorisations définies par l’administrateur, et l’étiquette de confidentialité correspondante doit être publiée à l’utilisateur qui ouvre le document. L’étiquette correspondante est conservée si le document est enregistré.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilité des étiquettes de confidentialité
 
@@ -252,11 +252,11 @@ Cela signifie que si vous partagez des documents avec une autre organisation qui
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Partage de documents chiffrés avec des utilisateurs externes
 
-Bien que vous puissiez restreindre l’accès aux utilisateurs de votre propre organisation, vous pouvez également étendre l’accès à tout autre utilisateur disposant d’un compte dans Azure Active Directory (Azure AD). Par défaut, ces utilisateurs externes sont authentifiés sans aucune configuration supplémentaire. Toutefois, il peut y avoir une configuration supplémentaire requise pour [les paramètres d’accès interlocataire des identités externes](/azure/active-directory/external-identities/cross-tenant-access-overview) Azure AD et [l’accès conditionnel](/azure/active-directory/conditional-access/overview). 
+Bien que vous puissiez restreindre l’accès aux utilisateurs de votre propre organisation, vous pouvez également étendre l’accès à tout autre utilisateur disposant d’un compte dans Azure Active Directory (Azure AD). Par défaut, ces utilisateurs externes sont authentifiés sans configuration supplémentaire. Toutefois, une configuration supplémentaire peut être requise pour [les paramètres d’accès interlocataire des identités externes](/azure/active-directory/external-identities/cross-tenant-access-overview) Azure AD et [l’accès conditionnel](/azure/active-directory/conditional-access/overview). 
 
-Si les utilisateurs externes n’ont pas de compte dans Azure AD, ils peuvent s’authentifier à l’aide de comptes invités dans votre locataire. Ces comptes invités peuvent également être utilisés pour accéder à des documents partagés dans SharePoint ou OneDrive lorsque vous avez [activé des étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Si les utilisateurs externes n’ont pas de compte dans Azure AD, ils peuvent s’authentifier à l’aide de comptes invités dans votre locataire. Ces comptes invités peuvent également être utilisés pour accéder à des documents partagés dans SharePoint ou OneDrive lorsque vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-Pour plus d’informations sur les fonctionnalités Facultatives d’Azure AD et l’utilisation de comptes invités pour les exigences d’authentification, consultez [configuration Azure AD pour le contenu de chiffrement](encryption-azure-ad-configuration.md).
+Pour plus d’informations sur les fonctionnalités Azure AD facultatives et sur l’utilisation de comptes invités pour les exigences d’authentification, consultez [Configuration Azure AD pour le contenu de chiffrement](encryption-azure-ad-configuration.md).
 
 Toutes les applications Office et autres [applications RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) peuvent ouvrir des documents chiffrés une fois que l’utilisateur s’est authentifié correctement. 
 
@@ -401,7 +401,7 @@ Lorsque l’application Outlook ne prend pas en charge la désactivation de l’
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Configurer une étiquette pour appliquer la protection S/MIME dans Outlook
 
 > [!NOTE]
-> Cette fonctionnalité est actuellement déployée pour l’étiquetage intégré et à différentes étapes de mise en production sur les plateformes. Identifiez les versions minimales d’Outlook qui prennent en charge cette fonctionnalité à l’aide du [tableau des fonctionnalités d’Outlook](#sensitivity-label-capabilities-in-outlook) sur cette page et de la ligne **Appliquer la protection S/MIME**.
+> Cette fonctionnalité est actuellement en cours de déploiement pour l’étiquetage intégré et à différentes phases de mise en production sur les plateformes. Identifiez les versions minimales d’Outlook qui prennent en charge cette fonctionnalité à l’aide du [tableau des fonctionnalités d’Outlook](#sensitivity-label-capabilities-in-outlook) sur cette page et de la ligne **Appliquer la protection S/MIME**.
 > 
 > Si vous configurez une étiquette pour appliquer la protection S/MIME, mais qu’Outlook sur Windows ne la prend pas encore en charge, l’étiquette est toujours affichée et peut être appliquée, mais les paramètres S/MIME sont ignorés. Vous ne pourrez pas sélectionner cette étiquette pour les stratégies d’étiquetage automatique Exchange.
 
@@ -460,17 +460,17 @@ Scénarios PDF non pris en charge :
 
 Pour plus d’informations sur cette fonctionnalité, consultez l’annonce [Appliquer des étiquettes de confidentialité aux fichiers PDF créés avec les applications Office](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
 
-Pour obtenir la documentation de l’utilisateur final, consultez [Créer des fichiers PDF protégés à partir de fichiers Office](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
+Pour obtenir la documentation de l’utilisateur final, voir [Créer des fichiers PDF protégés à partir de fichiers Office](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
 
-## <a name="sensitivity-bar"></a>Barre de confidentialité
+## <a name="sensitivity-bar"></a>Barre de sensibilité
 
-Nouvellement pris en charge en préversion pour les étiquettes intégrées dans Word, Excel et PowerPoint, mais pas encore pour Outlook ou Office sur le Web, consultez les tableaux de la section [des fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour identifier les versions minimales.
+Récemment pris en charge en préversion pour les étiquettes intégrées dans Word, Excel et PowerPoint, mais pas encore pour Outlook ou Office sur le Web, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour identifier les versions minimales.
 
 Pour les applications prises en charge, les étiquettes de confidentialité sont désormais affichées dans une barre de confidentialité, en regard du nom de fichier dans la barre de fenêtre supérieure. Par exemple :
 
 ![Étiquettes de confidentialité dans la barre de titre de la fenêtre.](../media/sensitivity-bar-example.png)
 
-Les informations sur les étiquettes et la possibilité de sélectionner ou de modifier une étiquette sont également intégrées aux flux de travail utilisateur qui incluent enregistrer et renommer, exporter, partager, imprimer et [convertir au format PDF](#pdf-support). Pour plus d’informations et des exemples de captures d’écran, consultez l’annonce du billet de blog, [Nouvelle barre de confidentialité dans Office pour Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
+Les informations sur les étiquettes et la possibilité de sélectionner ou de modifier une étiquette sont également intégrées aux flux de travail utilisateur, notamment l’enregistrement et le changement de nom, l’exportation, le partage, l’impression et [la conversion au format PDF](#pdf-support). Pour plus d’informations et des exemples de captures d’écran, consultez l’annonce du billet de blog, [Nouvelle barre de confidentialité dans Office pour Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 
 Dans le cadre de cette visibilité élevée, ces étiquettes prennent également en charge les couleurs. Pour plus d’informations, consultez la section suivante.
 
@@ -479,25 +479,25 @@ Dans le cadre de cette visibilité élevée, ces étiquettes prennent également
 > [!IMPORTANT]
 > Si vos applications d’étiquetage ne prennent pas en charge cette fonctionnalité, elles n’affichent pas les couleurs d’étiquette configurées.
 > 
-> Le client d’étiquetage unifié Azure Information Protection prend en charge les couleurs d’étiquette. Pour l’étiquetage intégré à Office, les couleurs d’étiquette sont actuellement prises en charge en préversion pour Word, Excel et PowerPoint sur Windows, mais pas encore pour Outlook, macOS ou Office sur le Web. Pour plus d’informations, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page.
+> Le client d’étiquetage unifié Azure Information Protection prend en charge les couleurs des étiquettes. Pour l’étiquetage intégré à Office, les couleurs des étiquettes sont actuellement prises en charge en préversion pour Word, Excel et PowerPoint sur Windows, mais pas encore pour Outlook, macOS ou Office sur le Web. Pour plus d’informations, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page.
 
 Les étiquettes nouvellement créées n’ont pas de couleur par défaut. Si vos étiquettes ont été [migrées à partir d’Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) ou si vous avez configuré des couleurs d’étiquette pour le client d’étiquetage unifié Azure Information Protection, ces couleurs d’étiquette sont désormais affichées dans les applications qui les prennent en charge.
 
-Utilisez la portail de conformité Microsoft Purview pour sélectionner l’une des 10 couleurs standard pour les étiquettes de confidentialité. La configuration des **couleurs** d’étiquette se trouve sur la première page de la configuration de l’étiquette après le nom et la description de l’étiquette.
+Utilisez la portail de conformité Microsoft Purview pour sélectionner l’une des 10 couleurs standard pour les étiquettes de confidentialité. La configuration **de la couleur de** l’étiquette se trouve sur la première page de la configuration de l’étiquette après le nom et la description de l’étiquette.
 
 Vous ne pouvez pas sélectionner de couleurs pour les sous-étiquettes, car elles héritent automatiquement de la couleur d’étiquette de leur étiquette parente.
 
-Si une étiquette est configurée pour une couleur différente de l’une des 10 couleurs par défaut, une case à cocher **Utiliser les couleurs du client précédemment attribuée est cochée** et les options de couleur standard ne sont pas disponibles. Vous pouvez remplacer la couleur personnalisée par l’une des couleurs standard en désactivant d’abord la case à cocher, puis en sélectionnant l’une des couleurs standard. 
+Si une étiquette est configurée pour une couleur différente de l’une des 10 couleurs par défaut, une case **Utiliser une couleur personnalisée précédemment affectée** est cochée et les options de couleur standard ne sont pas disponibles. Vous pouvez remplacer la couleur personnalisée par l’une des couleurs standard en décochant d’abord la case, puis en sélectionnant l’une des couleurs standard. 
 
-Vous ne pouvez pas utiliser le portail de conformité pour configurer une couleur personnalisée différente. Utilisez plutôt PowerShell, comme décrit dans la section suivante.
+Vous ne pouvez pas utiliser le portail de conformité pour configurer une autre couleur personnalisée. Utilisez plutôt PowerShell, comme décrit dans la section suivante.
 
 #### <a name="configuring-custom-colors-by-using-powershell"></a>Configuration de couleurs personnalisées à l’aide de PowerShell 
 
-Vous pouvez utiliser la **couleur** de paramètre avancée [PowerShell sécurité & conformité](/powershell/exchange/scc-powershell) pour définir une couleur pour une étiquette de confidentialité. Cette configuration prend en charge les couleurs que vous ne pouvez pas configurer dans le portail de conformité Microsoft Purview.
+Vous pouvez utiliser la **couleur** avancée du paramètre [Sécurité & Conformité PowerShell](/powershell/exchange/scc-powershell) pour définir une couleur pour une étiquette de confidentialité. Cette configuration prend en charge les couleurs que vous ne pouvez pas configurer dans le portail de conformité Microsoft Purview.
 
-Pour spécifier votre choix de couleur, utilisez un code de triplet hexadécimal pour les composants rouge, vert et bleu (RVB) de la couleur. Par exemple, #40e0d0 est la valeur hexadécimale RVB pour la couleur turquoise.
+Pour spécifier votre choix de couleur, utilisez un code triplet hexadécimal pour les composants RVB (rouge, vert et bleu) de la couleur. Par exemple, #40e0d0 est la valeur hexadécimale RVB pour la couleur turquoise.
 
-Pour plus d’informations sur ces codes, consultez la [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) page de la documentation web MSDN, et vous pouvez également trouver [RapidTables](https://www.rapidtables.com/web/color/RGB_Color.html) utile. Vous pouvez identifier ces codes dans de nombreuses applications qui vous permettent de modifier des images. Par exemple, Microsoft Paint vous permet de choisir une couleur personnalisée dans une palette et les valeurs RVB s’affichent automatiquement. Vous pouvez ensuite les copier.
+Pour plus d’informations sur ces codes, consultez la [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) page de la documentation web MSDN. Vous pouvez également trouver [RapidTables](https://www.rapidtables.com/web/color/RGB_Color.html) utile. Vous pouvez identifier ces codes dans de nombreuses applications qui vous permettent de modifier des images. Par exemple, Microsoft Paint vous permet de choisir une couleur personnalisée dans une palette et les valeurs RVB s’affichent automatiquement. Vous pouvez ensuite les copier.
 
 Exemple de commande PowerShell, où le GUID de l’étiquette de confidentialité est **8faca7b8-8d20-48a3-8ea2-0f96310a848e**
 
@@ -505,7 +505,7 @@ Exemple de commande PowerShell, où le GUID de l’étiquette de confidentialit�
 Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{color="#40e0d0"}
 ```
 
-Pour plus d’informations pour vous aider à spécifier des paramètres avancés PowerShell pour les étiquettes de confidentialité, consultez [les conseils PowerShell pour spécifier les paramètres avancés](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+Pour plus d’informations pour vous aider à spécifier les paramètres avancés PowerShell pour les étiquettes de confidentialité, consultez [Conseils PowerShell pour spécifier les paramètres avancés](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
 ## <a name="auditing-labeling-activities"></a>Audit des activités d’étiquetage
 
