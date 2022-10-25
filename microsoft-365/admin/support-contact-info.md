@@ -1,5 +1,5 @@
 ---
-title: Rechercher les numéros de support téléphonique Microsoft 365 pour les entreprises par pays ou région
+title: Rechercher des numéros de téléphone de support Microsoft 365 pour les entreprises par pays ou région
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -12,28 +12,29 @@ ms.collection:
 - highpri
 - Adm_O365
 ms.custom: VSBFY23
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
-description: Découvrez comment obtenir un support téléphonique pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: 9b5a91ae3cfd335ec196a022abbcdb78d02167eb
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+description: Découvrez comment obtenir un support téléphonique pour votre abonnement Microsoft 365 pour les entreprises. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
+ms.date: 10/20/2022
+ms.openlocfilehash: c73a473a1ca19463efc2f8de76898f505e07ab74
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643189"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688500"
 ---
-# <a name="find-microsoft-365-for-business-phone-support-numbers-by-country-or-region"></a>Rechercher les numéros de support téléphonique Microsoft 365 pour les entreprises par pays ou région
+# <a name="find-microsoft-365-for-business-support-phone-numbers-by-country-or-region"></a>Rechercher des numéros de téléphone de support Microsoft 365 pour les entreprises par pays ou région
 
-La prise en charge de la facturation pour les produits et services Microsoft 365 pour les entreprises est fournie en anglais de 9 h à 17 h (9 h à 18 h en Australie), du lundi au vendredi.\
-Le support technique est proposé en anglais 24 heures sur 24, 7 jours sur 7.
+Dans la plupart des pays ou régions, la prise en charge de la facturation des produits et services Microsoft 365 pour les entreprises est fournie en anglais de 9 h à 17 h, du lundi au vendredi. La prise en charge des langues locales varie selon le pays ou la région.
+
+Le support technique est fourni en anglais 24 heures sur 24, 7 jours sur 7 et, dans certains cas, dans les langues locales, comme indiqué.
 
 Vous, en tant qu'administrateur, devez avoir vos informations de compte à disposition lorsque vous appelez le support.
 
 > [!NOTE]
 > Pour renforcer la protection de votre organisation, nous avons ajouté une étape de vérification basée sur des codes confidentiels à notre processus de vérification par téléphone existant. Si vous contactez le support technique de Microsoft à partir d’un numéro qui n’a pas été enregistré avec votre profil d’organisation, le technicien du support technique Microsoft envoie un code de vérification au courrier ou numéro de téléphone de votre centre d’administration Microsoft 365. Vous devez fournir ce code au représentant du support technique pour lui accorder l’accès au compte de votre organisation.
 
-## <a name="frequently-referenced-countries-and-regions"></a>Régions et pays fréquemment référencés
+## <a name="frequently-referenced-countries-and-regions"></a>Pays et régions fréquemment référencés
 
 :::row:::
    :::column:::
@@ -61,7 +62,7 @@ Vous, en tant qu'administrateur, devez avoir vos informations de compte à dispo
 
 Si votre pays ou région n’est pas répertorié ci-dessus, utilisez les sections ci-dessous pour trouver les informations de support pour votre pays ou région.
 
-[Amérique du Nord / Amérique](#north-america--central-america) |  centrale[Caraïbes](#caribbean) | [Amérique du Sud Europe](#south-america) | [Afrique](#europe) | [](#africa) | [Moyen-Orient](#middle-east) | [Asie](#asia) | [Australie / Pacifique](#australia--pacific)
+[Amérique du Nord / Amérique](#north-america--central-america) |  centrale[Caraïbes](#caribbean) | [Amérique du Sud Europe](#south-america) | [](#europe) | [Afrique](#africa) | [Moyen-Orient](#middle-east) | [Asie](#asia) | [Australie / Pacifique](#australia--pacific)
 
 ## <a name="north-america--central-america"></a>Amérique du Nord / Amérique centrale
 
@@ -81,7 +82,7 @@ Si votre pays ou région n’est pas répertorié ci-dessus, utilisez les sectio
    :::column:::
 [Nicaragua](#nicaragua)\
 [Panama](#panama)\
-[Saint Pierre et Miquelon](#saint-pierre-and-miquelon)\
+[Saint-Pierre-et-Miquelon](#saint-pierre-and-miquelon)\
 [États-Unis](#united-states)
    :::column-end:::
 :::row-end:::
@@ -94,7 +95,7 @@ Si votre pays ou région n’est pas répertorié ci-dessus, utilisez les sectio
 001 212 497 6305
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -110,7 +111,7 @@ Anglais : 24h/24, 7j/7
 1 877 639 9636
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -126,7 +127,7 @@ Anglais : 24h/24, 7j/7
 1 800 865 9408
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi de 9h00 à 17h00 locale\
+Anglais : du lundi au vendredi de 9h00 à 17h00 local\
 Français : du lundi au vendredi, de 9 h à 17 h HE
    :::column-end:::
    :::column:::
@@ -144,7 +145,7 @@ Français : du lundi au vendredi, de 9 h à 17 h HE
 0800 012 1447
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -158,10 +159,10 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
    :::column:::
 **Numéro de téléphone :**\
 800 6676\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -178,7 +179,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 7h00 à 15h00
+Anglais : du lundi au vendredi, de 7 h à 15 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -192,10 +193,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 1 800 300 0069\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -215,7 +216,7 @@ Après la numérotation, entrez :\
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
 
 **Heures de support technique :**\
 Espagnol : 24 heures sur 24, 7 jours sur 7
@@ -230,11 +231,11 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 800 563 0605
 
 Autre numéro de téléphone : 55 4738 6567\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
 
 **Heures de support technique :**\
 Espagnol : 24 heures sur 24, 7 jours sur 7
@@ -253,7 +254,7 @@ Après la numérotation, entrez :\
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
 
 **Heures de support technique :**\
 Espagnol : 24 heures sur 24, 7 jours sur 7
@@ -266,10 +267,10 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
    :::column:::
 **Numéro de téléphone :**\
 00800 051 0398\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -286,12 +287,12 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 6h à 14h\
-Anglais : du lundi au vendredi, de 6h00 à 14h00
+Français : du lundi au vendredi, de 6 h à 14 h\
+Anglais : du lundi au vendredi, de 6 h à 14 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 5h à 18h\
+Français : du lundi au vendredi, de 5 h à 18 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -304,7 +305,7 @@ Anglais : 24h/24, 7j/7
 1 800 865 9408
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -323,7 +324,7 @@ Anglais : 24h/24, 7j/7
 [Barbade](#barbados)\
 [Bermudes](#bermuda)\
 [Bonaire](#bonaire)\
-[Îles Vierges Britanniques](#british-virgin-islands)\
+[Îles Vierges britanniques](#british-virgin-islands)\
 [Îles Caïmans](#cayman-islands)\
 [Curaçao](#curaçao)
    :::column-end:::
@@ -341,14 +342,14 @@ Anglais : 24h/24, 7j/7
    :::column-end:::
    :::column:::
 [Saint Barthélemy](#saint-barthélemy)\
-[Saint-Kitts-et-Nevis](#saint-kitts-and-nevis)\
+[Saint-Christophe-et-Nevis](#saint-kitts-and-nevis)\
 [Sainte-Lucie](#saint-lucia)\
 [Saint Martin](#saint-martin)\
-[Saint Vincent et les Grenadines](#saint-vincent-and-the-grenadines)\
-[Sint Eustache](#sint-eustatius)\
-[Sint Maarten](#sint-maarten)\
+[Saint-Vincent-et-les-Mormons](#saint-vincent-and-the-grenadines)\
+[Saint-Eustache](#sint-eustatius)\
+[Saint-Martin](#sint-maarten)\
 [Trinité-et-Tobago](#trinidad-and-tobago)\
-[Îles Turks et Caicos](#turks-and-caicos-islands)\
+[Îles Turks-et-Caïques](#turks-and-caicos-islands)\
 [Îles Vierges des États-Unis](#us-virgin-islands)
    :::column-end:::
 :::row-end:::
@@ -362,7 +363,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -379,7 +380,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -396,8 +397,8 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Néerlandais : du lundi au vendredi, 4 h-midi\
-Anglais : du lundi au vendredi, de 4 h à midi
+Néerlandais: du lundi au vendredi, 4h-midi\
+Anglais : du lundi au vendredi, 4h00-midi
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -411,10 +412,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 00800 051 0398\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -430,7 +431,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 1 877 639 0597
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -447,8 +448,8 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Néerlandais : du lundi au vendredi, 4 h-midi\
-Anglais : du lundi au vendredi, de 4 h à midi
+Néerlandais: du lundi au vendredi, 4h-midi\
+Anglais : du lundi au vendredi, 4h00-midi
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -462,10 +463,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 800-865-9408\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -481,7 +482,7 @@ Anglais : 24h/24, 7j/7
 1 877 308 6465
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -498,7 +499,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -515,7 +516,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 11h à 19h
+Espagnol: du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -529,14 +530,14 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
    :::column:::
 **Numéro de téléphone :**\
 1 800 751 3455\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 Autre numéro de téléphone : 1 809 200 8794\
-(Sans frais cellulaires)
+(Cellulaire gratuit)
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
 
 **Heures de support technique :**\
 Espagnol : 24 heures sur 24, 7 jours sur 7
@@ -552,7 +553,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -569,12 +570,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 6 h à midi\
-Anglais : du lundi au vendredi, de 6h00 à 13h00
+Français: du lundi au vendredi, de 6 h à midi\
+Anglais : du lundi au vendredi, de 6 h à 13 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 6h00 à 13h00\
+Français : du lundi au vendredi, de 6 h à 13 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -588,12 +589,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 3h00 à 11h00\
-Anglais : du lundi au vendredi, de 3h00 à 11h00
+Français : du lundi au vendredi, de 3 h à 11 h
+Anglais : du lundi au vendredi, 3 h-11 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 14h à 15h\
+Français : du lundi au vendredi, de 2 h à 15 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -606,7 +607,7 @@ Anglais : 24h/24, 7j/7
 1 800 865 9408
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -623,12 +624,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français du lundi au vendredi, 6 h-midi\
-Anglais : du lundi au vendredi, de 6h00 à 13h00
+Français du lundi au vendredi, 6h00-midi\
+Anglais : du lundi au vendredi, de 6 h à 13 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 6h00 à 13h00\
+Français : du lundi au vendredi, de 6 h à 13 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -642,7 +643,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -658,8 +659,8 @@ Anglais : 24h/24, 7j/7
 1 800 865 9408
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Espagnol: du lundi au vendredi, 9h-17h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -677,7 +678,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -695,11 +696,11 @@ Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
 Français : du lundi au vendredi, de 4 h à 12 h\
-Anglais : du lundi au vendredi, de 4h00 à 12h00
+Anglais : du lundi au vendredi, de 4 h à 12 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 15h à 16h\
+Français : du lundi au vendredi, de 3 h à 16 h 00
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -712,7 +713,7 @@ Anglais : 24h/24, 7j/7
 1 877 302 1308
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -729,7 +730,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -746,12 +747,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, 4 h-midi\
-Anglais : du lundi au vendredi, de 4 h à midi
+Français: du lundi au vendredi, de 4 h à midi\
+Anglais : du lundi au vendredi, 4h00-midi
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 15h à 16h\
+Français : du lundi au vendredi, de 3 h à 16 h 00
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -765,7 +766,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -782,7 +783,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -799,7 +800,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -815,7 +816,7 @@ Anglais : 24h/24, 7j/7
 1 855 214 7711
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -832,7 +833,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -848,7 +849,7 @@ Anglais : 24h/24, 7j/7
 800 865 9408
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -875,7 +876,7 @@ Anglais : 24h/24, 7j/7
 [Pérou](#peru)
    :::column-end:::
    :::column:::
-[Géorgie du Sud et îles Sandwich du Sud](#south-georgia-and-south-sandwich-islands)\
+[Géorgie du Sud et Îles Sandwich du Sud](#south-georgia-and-south-sandwich-islands)\
 [Suriname](#suriname)\
 [Uruguay](#uruguay)\
 [Venezuela](#venezuela)
@@ -890,11 +891,11 @@ Anglais : 24h/24, 7j/7
 0800 266 1512
 
 Autre numéro de téléphone : 011 5354 2347\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
 
 **Heures de support technique :**\
 Espagnol : 24 heures sur 24, 7 jours sur 7
@@ -909,7 +910,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 800 110 263
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -925,13 +926,13 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 0800 762 1146
 
 Autre numéro de téléphone :\
-0800 047 4958 (gratuit local)\
-11 4700 1999 (Les frais d’appel locaux s’appliquent.)
+0800 047 4958 (Numéro gratuit local)\
+11 4700 1999 (Des frais d’appel local s’appliquent.)
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Portugais : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Portugais : du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Portugais : 24 heures sur 24, 7 jours sur 7\
@@ -947,11 +948,11 @@ Anglais : 24h/24, 7j/7
 800 226 826
 
 Autre numéro de téléphone : 123 002 000 05\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
 
 **Heures de support technique :**\
 Espagnol : 24 heures sur 24, 7 jours sur 7
@@ -966,7 +967,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 01 800 518 1781
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -986,7 +987,7 @@ Après la numérotation, entrez :\
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
 
 **Heures de support technique :**\
 Espagnol : 24 heures sur 24, 7 jours sur 7
@@ -1002,7 +1003,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1024,7 +1025,7 @@ Anglais : du lundi au vendredi, de 5 h à 13 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 16h à 17h\
+Français : du lundi au vendredi, de 4 h à 17 h
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1038,7 +1039,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1052,10 +1053,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 800 6676\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1071,7 +1072,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 009 800 441 0088
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1088,7 +1089,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1105,7 +1106,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Néerlandais : du lundi au vendredi, de 5h00 à 13h00\
+Néerlandais : du lundi au vendredi, de 5 h à 13 h\
 Anglais : du lundi au vendredi, de 5 h à 13 h
    :::column-end:::
    :::column:::
@@ -1122,7 +1123,7 @@ Anglais : 24h/24, 7j/7
 000 411 002 7131
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1138,7 +1139,7 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
 0800 100 8763
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00
+Espagnol : du lundi au vendredi, 9 h-17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1221,10 +1222,10 @@ Espagnol : 24 heures sur 24, 7 jours sur 7
    :::column:::
 **Numéro de téléphone :**\
 08009 8462\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1238,12 +1239,12 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 04 451 5151\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -1259,12 +1260,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 10h00 à 18h00\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Espagnol: du lundi au vendredi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Espagnol : du lundi au vendredi, de 9h00 à 22h00\
+Espagnol : du lundi au vendredi, de 9 h à 22 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1275,16 +1276,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 010 541 082\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1297,15 +1298,15 @@ Anglais : 24h/24, 7j/7
 0800 080 650
 
 Autre numéro de téléphone : 01 206 09 15 78\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Allemand : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Allemand : du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Allemand : du lundi au vendredi, de 8h à 21h\
+Allemand : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1316,16 +1317,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 01 24 37 35 55\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1336,15 +1337,15 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 8 820 0071 0003\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1357,16 +1358,16 @@ Anglais : 24h/24, 7j/7
 0800 81174
 
 Autre numéro de téléphone : 02 200 88 84\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Néerlandais : du lundi au vendredi, de 9h00 à 17h00\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Néerlandais : du lundi au vendredi, 9 h-17 h\
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1377,14 +1378,14 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 0800 20 230\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 Autre numéro de téléphone : +387 33 606 100\
 Frais d’appel international applicables.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -1399,7 +1400,7 @@ Anglais : 24h/24, 7j/7
 00800 118 4446
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1413,10 +1414,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 0800 222 225\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1430,10 +1431,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 8009 2519\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1449,15 +1450,15 @@ Anglais : 24h/24, 7j/7
 800 701 371
 
 Autre numéro de téléphone : 239 016 433\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Tchèque : du lundi au vendredi, de 9h00 à 18h00\
+Tchèque : du lundi au vendredi, de 9 h à 18 h\
 Anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Tchèque : du lundi au vendredi, de 8h00 à 18h00\
+Tchèque : du lundi au vendredi, 8h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1470,11 +1471,11 @@ Anglais : 24h/24, 7j/7
 80 34 76 23
 
 Autre numéro de téléphone : 38 48 70 67\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -1489,7 +1490,7 @@ Anglais : 24h/24, 7j/7
 800 0044 483
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1506,7 +1507,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1522,11 +1523,11 @@ Anglais : 24h/24, 7j/7
 0800 98462
 
 Autre numéro de téléphone : 09 72 51 96 30\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -1541,15 +1542,15 @@ Anglais : 24h/24, 7j/7
 0805 540 594
 
 Autre numéro de téléphone : 01 57 32 42 97\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1560,16 +1561,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 032 297 0124\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1582,15 +1583,15 @@ Anglais : 24h/24, 7j/7
 0800 589 2332
 
 Autre numéro de téléphone : 069 380 789 508\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Allemand : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Allemand : du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Allemand : du lundi au vendredi, de 8h à 21h\
+Allemand : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1604,7 +1605,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1618,10 +1619,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 00800 4414 2831\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1638,7 +1639,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1654,14 +1655,14 @@ Anglais : 24h/24, 7j/7
 +36 80 983 899
 
 Autre numéro de téléphone : +36 1 778 9292\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Hongrois : du lundi au vendredi, de 8h à 18h\
+Hongrois : du lundi au vendredi, 8h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1674,7 +1675,7 @@ Anglais : 24h/24, 7j/7
 800 9609
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1690,11 +1691,11 @@ Anglais : 24h/24, 7j/7
 1 800 995309
 
 Autre numéro de téléphone : 01 656 9837\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -1710,7 +1711,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1726,15 +1727,15 @@ Anglais : 24h/24, 7j/7
 800 917 919
 
 Autre numéro de téléphone : 02 6943 0746\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Italien : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Italien : du lundi au vendredi, 9h-17h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Italien : du lundi au vendredi, de 8h à 21h\
+Italien : du lundi au vendredi, 8h-21h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1765,7 +1766,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1782,7 +1783,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1796,10 +1797,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 8000 42 33\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1815,15 +1816,15 @@ Anglais : 24h/24, 7j/7
 +41 800 000 300
 
 Autre numéro de téléphone : +41 22 76 141 14\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Allemand : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Allemand : du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Allemand : du lundi au vendredi, de 8h à 21h\
+Allemand : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1834,10 +1835,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 8800 30 960\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1853,17 +1854,17 @@ Anglais : 24h/24, 7j/7
 800 21094
 
 Autre numéro de téléphone : 24 87 15 10\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Allemand : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Allemand : du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
-Allemand : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
+Allemand : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1874,10 +1875,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 8006 2231\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1891,11 +1892,11 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 022 20 13 34\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1912,12 +1913,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -1928,10 +1929,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 080 081 110\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1947,11 +1948,11 @@ Anglais : 24h/24, 7j/7
 0800 020 2546
 
 Autre numéro de téléphone : 020 203 5362\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Néerlandais : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Néerlandais : du lundi au vendredi, 9 h-17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -1971,7 +1972,7 @@ Après la numérotation, entrez :\
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -1986,11 +1987,11 @@ Anglais : 24h/24, 7j/7
 800 31068
 
 Autre numéro de téléphone : 22 31 07 48\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -2005,15 +2006,15 @@ Anglais : 24h/24, 7j/7
 800 70 23 20
 
 Autre numéro de téléphone : 022 306 05 17\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Polonais : du lundi au vendredi, de 8h à 18h\
-Anglais : du lundi au vendredi, de 8h00 à 18h00
+Polonais: du lundi au vendredi, 8h-18h\
+Anglais : du lundi au vendredi, de 8 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Polonais : du lundi au vendredi, de 8h à 18h\
+Polonais: du lundi au vendredi, 8h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2026,14 +2027,14 @@ Anglais : 24h/24, 7j/7
 800 208 745
 
 Autre numéro de téléphone : 21 366 5030\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Portugais : du lundi au vendredi, de 8h00 à 18h00\
+Portugais : du lundi au vendredi, de 8 h à 18 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2046,11 +2047,11 @@ Anglais : 24h/24, 7j/7
 0800 896 956
 
 Autre numéro de téléphone : 372 741 961\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -2065,15 +2066,15 @@ Anglais : 24h/24, 7j/7
 8 10 800 2548 1044
 
 Autre numéro de téléphone : 499 922 86 23\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2087,12 +2088,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Italien : du lundi au vendredi, de 10h00 à 18h00\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Italien: du lundi au vendredi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Italien : du lundi au vendredi, de 9h00 à 22h00\
+Italien : du lundi au vendredi, 9h-22h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2105,7 +2106,7 @@ Anglais : 24h/24, 7j/7
 0800 190 095
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2121,11 +2122,11 @@ Anglais : 24h/24, 7j/7
 0800 102 365
 
 Autre numéro de téléphone : 026 862 2111\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -2140,7 +2141,7 @@ Anglais : 24h/24, 7j/7
 080 080 922
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2156,15 +2157,15 @@ Anglais : 24h/24, 7j/7
 900 814 197
 
 Autre numéro de téléphone : 912 718 160\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Espagnol: du lundi au vendredi, 9h-17h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Espagnol : du lundi au vendredi, de 8h à 21h\
+Espagnol : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2194,11 +2195,11 @@ Anglais : 24h/24, 7j/7
 020 160 5899
 
 Autre numéro de téléphone : 08 5176 1966\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -2213,19 +2214,19 @@ Anglais : 24h/24, 7j/7
 0800 000 300
 
 Autre numéro de téléphone : 022 76 141 14\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Allemand : du lundi au vendredi, de 9h00 à 17h00\
-Italien : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Allemand : du lundi au vendredi, de 9 h à 17 h\
+Italien : du lundi au vendredi, 9h-17h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
-Allemand : du lundi au vendredi, de 8h à 21h\
-Italien : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
+Allemand : du lundi au vendredi, de 8 h à 21 h\
+Italien : du lundi au vendredi, 8h-21h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2238,12 +2239,12 @@ Anglais : 24h/24, 7j/7
 0 850 3902777
 
 **Heures de support de facturation :**\
-Turc : du lundi au vendredi, de 9h00 à 18h00\
+Turc : du lundi au vendredi, de 9 h à 18 h\
 Anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Turc : du lundi au vendredi, de 8h00 à 18h00\
+Turc : du lundi au vendredi, de 8 h à 18 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2256,12 +2257,12 @@ Anglais : 24h/24, 7j/7
 0800 502 285
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2274,11 +2275,11 @@ Anglais : 24h/24, 7j/7
 0800 032 6417
 
 Autre numéro de téléphone : 0203 450 6455\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -2293,15 +2294,15 @@ Anglais : 24h/24, 7j/7
 800 917 919
 
 Autre numéro de téléphone : 02 6943 0746\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Italien : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Italien : du lundi au vendredi, 9h-17h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Italien : du lundi au vendredi, de 9h00 à 18h00\
+Italien : du lundi au vendredi, 9h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2327,13 +2328,13 @@ Anglais : 24h/24, 7j/7
 [Côte d’Ivoire](#côte-divoire)\
 [Djibouti](#djibouti)\
 [Égypte](#egypt)\
-[Guinée équatoriale](#equatorial-guinea)\
+[Guinée équato-guinéenne](#equatorial-guinea)\
 [Érythrée](#eritrea)\
 [Eswatini](#eswatini)
    :::column-end:::
    :::column:::
 [Ethiopie](#ethiopia)\
-[Français territoires du Sud](#french-southern-territories)\
+[Français Territoires du Sud](#french-southern-territories)\
 [Gabon](#gabon)\
 [Gambie](#gambia)\
 [Ghana](#ghana)\
@@ -2358,7 +2359,7 @@ Anglais : 24h/24, 7j/7
 [Nigeria](#nigeria)\
 [Réunion](#réunion)\
 [Rwanda](#rwanda)\
-[São Tomé et Príncipe](#são-tomé-and-príncipe)\
+[São Tomé-et-Príncipe](#são-tomé-and-príncipe)\
 [Sénégal](#senegal)\
 [Seychelles](#seychelles)\
 [Sierra Leone](#sierra-leone)\
@@ -2381,18 +2382,18 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 021 89 10 70\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 9h à 17h\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Arabe : du dimanche au jeudi, 9h-17h\
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 9h à 17h\
-Français : du lundi au vendredi, de 8h à 21h\
+Arabe : du dimanche au jeudi, 9h-17h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2406,11 +2407,11 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Portugais : du lundi au vendredi, de 9h00 à 22h00\
+Portugais : du lundi au vendredi, de 9 h à 22 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2424,12 +2425,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2443,7 +2444,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2460,7 +2461,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2477,12 +2478,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 8h à 16h\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Français: du lundi au vendredi, 8h-16h\
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 7h à 20h\
+Français : du lundi au vendredi, de 7 h à 20 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2496,12 +2497,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Français : du lundi au vendredi, de 10 h à 18 h
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 9h à 22h\
+Français: du lundi au vendredi, de 9 h à 22 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2515,11 +2516,11 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Portugais : du lundi au vendredi, de 7h à 20h\
+Portugais : du lundi au vendredi, de 7 h à 20 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2530,16 +2531,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +225 20 24 24 90\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
 Français : du lundi au vendredi, de 8 h à 16 h\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2553,12 +2554,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2572,12 +2573,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2590,12 +2591,12 @@ Anglais : 24h/24, 7j/7
 +1 312 843 5147
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 11h à 19h\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Français: du lundi au vendredi, de 11h à 19h\
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 10h à 23h\
+Français : du lundi au vendredi, de 10 h à 23 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2606,16 +2607,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 225 20 24 24 90\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2629,12 +2630,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2645,16 +2646,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 020 24 24 90\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
 Français : du lundi au vendredi, de 8 h à 16 h\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 7h à 20h\
+Français : du lundi au vendredi, de 7 h à 20 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2668,12 +2669,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 11h à 19h\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Français: du lundi au vendredi, de 11h à 19h\
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 10h à 23h\
+Français : du lundi au vendredi, de 10 h à 23 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2686,12 +2687,12 @@ Anglais : 24h/24, 7j/7
 0800 000 0325
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2705,12 +2706,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Espagnol : du lundi au vendredi, de 9h00 à 17h00\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Espagnol: du lundi au vendredi, 9h-17h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Espagnol : du lundi au vendredi, de 8h à 21h\
+Espagnol : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2721,16 +2722,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +974 44 119418\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2744,7 +2745,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2761,7 +2762,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2778,12 +2779,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 13h à 21h\
-Anglais : du lundi au vendredi, de 13h à 21h
+Français : du lundi au vendredi, de 13 h à 21 h\
+Anglais : du lundi au vendredi, de 13 h à 21 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 12h à 23h\
+Français : du lundi au vendredi, de 12 h à 23 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2797,12 +2798,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2816,7 +2817,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2830,11 +2831,11 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +234 1 271 0156\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2851,7 +2852,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2868,11 +2869,11 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Portugais : 8h-21h\
+Portugais : 8 h-21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2883,11 +2884,11 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 020 286 8800\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2904,7 +2905,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2921,7 +2922,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2935,16 +2936,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +965 2243 1071\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Arabe : du dimanche au jeudi, 9h-17h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 9h à 17h\
+Arabe : du dimanche au jeudi, 9h-17h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2958,12 +2959,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 11h à 19h\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Français: du lundi au vendredi, de 11h à 19h\
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 10h à 23h\
+Français : du lundi au vendredi, de 10 h à 23 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -2977,7 +2978,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -2995,11 +2996,11 @@ Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
 Français : du lundi au vendredi, de 8 h à 16 h\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 7h à 20h\
+Français: du lundi au vendredi, 7h-20h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3010,16 +3011,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +974 44 119418\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 8h00 à 16h00\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Arabe : du dimanche au jeudi, 8 h-16 h\
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 8h00 à 16h00\
+Arabe : du dimanche au jeudi, 8 h-16 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3032,12 +3033,12 @@ Anglais : 24h/24, 7j/7
 802 044 0086
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 11h à 19h\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Français: du lundi au vendredi, de 11h à 19h\
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 11 h à minuit\
+Français: du lundi au vendredi, 11h00-minuit\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3051,12 +3052,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 11h à 19h\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Français: du lundi au vendredi, de 11h à 19h\
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 10h à 23h\
+Français : du lundi au vendredi, de 10 h à 23 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3067,18 +3068,18 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 0801 000 809\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 8h00 à 16h00\
+Arabe : du dimanche au jeudi, 8 h-16 h\
 Français : du lundi au vendredi, de 8 h à 16 h\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Anglais : du lundi au vendredi, de 8 h à 16 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 8h00 à 16h00\
-Français : du lundi au vendredi, de 7h à 20h\
+Arabe : du dimanche au jeudi, 8 h-16 h\
+Français : du lundi au vendredi, de 7 h à 20 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3096,7 +3097,7 @@ Anglais : du lundi au vendredi, de 7 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Portugais : du lundi au vendredi, de 9h00 à 19h00\
+Portugais : du lundi au vendredi, 9h-19h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3107,11 +3108,11 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 061 292 5016\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3128,12 +3129,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 8h à 21h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3144,11 +3145,11 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 01 912 5070\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3162,15 +3163,15 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +1 312 843 5147\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de midi à 20 h\
-Anglais : du lundi au vendredi, de midi à 20h
+Français: du lundi au vendredi, midi-20h\
+Anglais : du lundi au vendredi, midi-20h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 11h à 23h\
+Français : du lundi au vendredi, de 11 h à 23 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3181,21 +3182,21 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +225 20 24 24 90\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Français : du lundi au vendredi, de 10 h à 18 h
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 9h à 22h\
+Français: du lundi au vendredi, de 9 h à 22 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
 
-### <a name="so-tom-and-prncipe"></a>São Tomé et Príncipe
+### <a name="so-tom-and-prncipe"></a>São Tomé-et-Príncipe
 
 :::row:::
    :::column:::
@@ -3204,11 +3205,11 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Portugais : du lundi au vendredi, de 8h00 à 21h00\
+Portugais : du lundi au vendredi, 8h-21h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3226,10 +3227,10 @@ Après la numérotation, entrez :\
    :::column:::
 **Heures de support de facturation :**\
 Français : du lundi au vendredi, de 8 h à 16 h\
-Anglais : du lundi au vendredi, de 8h00 à 16h00
+Anglais : du lundi au vendredi, de 8 h à 16 h
 
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 7h à 20h\
+Français : du lundi au vendredi, de 7 h à 20 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3243,7 +3244,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 13h à 21h
+Anglais : du lundi au vendredi, de 13 h à 21 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3260,7 +3261,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3274,16 +3275,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +974 44 119418\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3296,11 +3297,11 @@ Anglais : 24h/24, 7j/7
 080 020 2883
 
 Autre numéro de téléphone : 021 427 3315\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -3316,7 +3317,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3333,7 +3334,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3347,11 +3348,11 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +254 20 286 8800\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3368,12 +3369,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 8 h à 4 h\
-Anglais : du lundi au vendredi, de 8 h à 4 h
+Français: du lundi au vendredi, 8h-4h00\
+Anglais : du lundi au vendredi, 8 h-4 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 7h à 8h\
+Français: du lundi au vendredi, de 7h00 à 8h00\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3384,18 +3385,18 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 71 168 700\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 9h à 17h\
-Français : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Arabe : du dimanche au jeudi, 9h-17h\
+Français: du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 9h à 17h\
-Français : du lundi au vendredi, de 8h à 21h\
+Arabe : du dimanche au jeudi, 9h-17h\
+Français : du lundi au vendredi, de 8 h à 21 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3409,7 +3410,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3426,7 +3427,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3443,7 +3444,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3481,11 +3482,11 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +92 21 111 674 357\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3501,12 +3502,12 @@ Anglais : 24h/24, 7j/7
 800 81 250
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3517,16 +3518,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +965 2221 9876\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3539,12 +3540,12 @@ Anglais : 24h/24, 7j/7
 1 809 344 179
 
 **Heures de support de facturation :**\
-Hébreu : du dimanche au jeudi, de 9h00 à 18h00\
+Hébreu: du dimanche au jeudi, 9h-18h\
 Anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Hébreu : du dimanche au jeudi, de 9h00 à 18h00\
+Hébreu: du dimanche au jeudi, 9h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3561,11 +3562,11 @@ Après la numérotation, entrez :\
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
 
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3576,16 +3577,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +965 22219876\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3596,16 +3597,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 01 97 40 81\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3616,15 +3617,15 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 800 73332\
-Sélectionnez « Entreprise », puis « Microsoft 365 »
+Sélectionnez « Business », puis « Microsoft 365 »
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 11h à 20h\
+Arabe : du dimanche au jeudi, 11h-20h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3635,16 +3636,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +962 6 5503451\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3655,16 +3656,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 44 119418\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3677,12 +3678,12 @@ Anglais : 24h/24, 7j/7
 800 844 4558
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3696,12 +3697,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 11h à 20h\
+Arabe : du dimanche au jeudi, 11h-20h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3712,16 +3713,16 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 +974 44 119418\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
+Sélectionnez « Business », puis « Microsoft 365 » \
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Arabe : du dimanche au jeudi, 10h-18h\
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Arabe : du dimanche au jeudi, de 10h à 18h\
+Arabe : du dimanche au jeudi, 10h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3736,7 +3737,7 @@ Anglais : 24h/24, 7j/7
 [Cambodge](#cambodia)\
 [Chine](#china)\
 [Christmas Island](#christmas-island)\
-[Cocos (Quilles) Îles](#cocos-keeling-islands)\
+[Îles Cocos (Keeling)](#cocos-keeling-islands)\
 [Hong Kong (R.A.S.)](#hong-kong-sar)\
 [Inde](#india)\
 [Indonésie](#indonesia)\
@@ -3747,7 +3748,7 @@ Anglais : 24h/24, 7j/7
 [Corée](#korea)\
 [Kirghizistan](#kyrgyzstan)\
 [Laos](#laos)\
-[Macao (R.A.S.](#macao-sar)\
+[Macao (R.S.)](#macao-sar)\
 [Malaisie](#malaysia)\
 [Maldives](#maldives)\
 [Mongolie](#mongolia)\
@@ -3781,7 +3782,7 @@ Après la numérotation, entrez :\
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -3797,7 +3798,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3817,7 +3818,7 @@ Après la numérotation, entrez :\
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -3833,7 +3834,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3851,12 +3852,12 @@ Anglais : 24h/24, 7j/7
 Autre numéro de téléphone : 400 920 0365 (mobile)
 
 **Heures de support de facturation :**\
-Chinois (mandarin) : du lundi au vendredi, de 9 h à 18 h\
+Chinois (mandarin): du lundi au vendredi, 9h-18h\
 Anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Chinois (mandarin) : du lundi au vendredi, de 9 h à 18 h\
+Chinois (mandarin): du lundi au vendredi, 9h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3865,7 +3866,7 @@ Anglais : 24h/24, 7j/7
 
 ![Code QR WeChat.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
-#### <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>Contacter le support technique pour Office 365 géré par 21Vianet uniquement
+#### <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>Contacter le support technique pour les Office 365 gérées par 21Vianet uniquement
 
 :::row:::
    :::column:::
@@ -3877,8 +3878,8 @@ Chinois et anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Prise en charge des téléphones chinois et anglais : du lundi au vendredi, de 9 h à 21 h\
-Prise en charge en ligne en chinois et en anglais (via le centre d’administration) : 24 heures sur 24, 7 jours sur 7
+Support téléphonique en chinois et en anglais : du lundi au vendredi, de 9 h à 21 h\
+Support en ligne chinois et anglais (via le centre d’administration) : 24 heures sur 24, 7 jours sur 7
    :::column-end:::
 :::row-end:::
 
@@ -3891,7 +3892,7 @@ Prise en charge en ligne en chinois et en anglais (via le centre d’administrat
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3908,7 +3909,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -3922,17 +3923,17 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 3 071 3055\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Cantonais : du lundi au vendredi, de 9h à 18h\
-Mandarin : du lundi au vendredi, de 9h à 18h\
+Cantonais : du lundi au vendredi, de 9 h à 18 h\
+Mandarin : du lundi au vendredi, de 9 h à 18 h\
 Anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Cantonais : du lundi au vendredi, de 9h à 18h\
-Mandarin : du lundi au vendredi, de 9h à 18h\
+Cantonais : du lundi au vendredi, de 9 h à 18 h\
+Mandarin : du lundi au vendredi, de 9 h à 18 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3943,7 +3944,7 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 000 800 440 2038\
-Gratuit local
+Numéro gratuit local
 
 **Heures de support de facturation :**\
 Anglais : du lundi au vendredi, de 9 h à 18 h
@@ -3963,12 +3964,12 @@ Anglais : 24h/24, 7j/7
 001 803 442 304 (Indosat)
 
 **Heures de support de facturation :**\
-Bahasa Indonésie : du lundi au vendredi, de 8 h à 17 h\
+Bahasa Indonésie: du lundi au vendredi, 8h-17h\
 Anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Bahasa Indonésie : du lundi au vendredi, de 8 h à 17 h\
+Bahasa Indonésie: du lundi au vendredi, 8h-17h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -3979,12 +3980,12 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 0120 996 680 (Office 365 Entreprise)\
-0120 628 860 (autres plans)
+0120 628 860 (autres plans, comme Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Microsoft 365 Business Premium)
 
-Numéros de téléphone alternatifs :\
+Autres numéros de téléphone :\
 03 4332 5493 (Office 365 Entreprise)\
-03 4332 6257 (autres plans)\
-Des frais d’appel locaux s’appliquent.
+03 4332 6257 (autres plans, tels que Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Microsoft 365 Business Premium)\
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
 Japonais : du lundi au vendredi, 9:00-17:00\
@@ -4000,7 +4001,8 @@ Japonais : 24 heures sur 24, 7 jours sur 7\
 Anglais : 24h/24, 7j/7
 
 **Autres plans :**\
-Le support technique téléphonique est disponible de 9h00 à 17h30 les jours de la semaine. Pour les problèmes de gravité élevée, le support technique est disponible 24 heures sur 24, 7 jours sur 7.
+Le support technique téléphonique est disponible de 9h00 à 17h30 en semaine.\
+Pour les problèmes de gravité élevée, le support technique est disponible 24 heures sur 24, 7 jours sur 7.
    :::column-end:::
 :::row-end:::
 
@@ -4013,12 +4015,12 @@ Le support technique téléphonique est disponible de 9h00 à 17h30 les jours de
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4031,15 +4033,15 @@ Anglais : 24h/24, 7j/7
 080 495 0880
 
 Autre numéro de téléphone : 02 3483 1937\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Coréen : du lundi au vendredi, de 9h00 à 18h00\
+Coréen : du lundi au vendredi, de 9 h à 18 h\
 Anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Coréen : du lundi au vendredi, de 9h00 à 18h00\
+Coréen : du lundi au vendredi, de 9 h à 18 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4053,12 +4055,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4072,7 +4074,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4080,7 +4082,7 @@ Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
 
-### <a name="macao-sar"></a>Macao (R.A.S.
+### <a name="macao-sar"></a>Macao (R.S.)
 
 :::row:::
    :::column:::
@@ -4091,14 +4093,14 @@ Après la numérotation, entrez :\
 877 860 4890
 
 **Heures de support de facturation :**\
-Cantonais : du lundi au vendredi, de 9h à 17h\
-Mandarin : du lundi au vendredi, de 9h à 17h\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Cantonais : du lundi au vendredi, de 9 h à 17 h\
+Mandarin : du lundi au vendredi, de 9 h à 17 h\
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Cantonais : du lundi au vendredi, de 9h à 17h\
-Mandarin : du lundi au vendredi, de 9h à 17h\
+Cantonais : du lundi au vendredi, de 9 h à 17 h\
+Mandarin : du lundi au vendredi, de 9 h à 17 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4111,7 +4113,7 @@ Anglais : 24h/24, 7j/7
 1800 22 0030
 
 Autre numéro de téléphone : 03 6207 4606\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
@@ -4131,7 +4133,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4148,12 +4150,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4167,7 +4169,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4197,11 +4199,11 @@ Non disponible par téléphone
    :::column:::
 **Numéro de téléphone :**\
 021 111 674 357\
-Sélectionnez « Entreprise », puis « Microsoft 365 » \
-Des frais d’appel locaux s’appliquent.
+Sélectionnez « Business », puis « Microsoft 365 » \
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4218,7 +4220,7 @@ Anglais : 24h/24, 7j/7
 1800 8908 6422 (Globe)
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4234,7 +4236,7 @@ Anglais : 24h/24, 7j/7
 1 800 622 1856
 
 Autre numéro de téléphone : 6622 1855\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
@@ -4251,7 +4253,7 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 2423 254\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
 Anglais : du lundi au vendredi, de 9 h à 18 h
@@ -4270,15 +4272,15 @@ Anglais : 24h/24, 7j/7
 0800 666 802
 
 Autre numéro de téléphone : 02 2656 7301\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Chinois (mandarin) : du lundi au vendredi, de 9 h à 18 h\
-Anglais : du lundi au vendredi, de 9h00 à 18h00 locales
+Chinois (mandarin): du lundi au vendredi, 9h-18h\
+Anglais : du lundi au vendredi, de 9 h à 18 h (local)
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Chinois (mandarin) : du lundi au vendredi, de 9 h à 18 h\
+Chinois (mandarin): du lundi au vendredi, 9h-18h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4292,12 +4294,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4310,12 +4312,12 @@ Anglais : 24h/24, 7j/7
 001 800 441 2619
 
 **Heures de support de facturation :**\
-Thaï : du lundi au vendredi, de 9h00 à 17h00\
+Thaï : du lundi au vendredi, 9h-17h\
 Anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Thaï : du lundi au vendredi, de 9h00 à 17h00\
+Thaï : du lundi au vendredi, 9h-17h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4329,12 +4331,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Portugais: du lundi au vendredi, 21h-5h\
-Anglais : du lundi au vendredi, de 21h à 5h
+Portugais : du lundi au vendredi, 21h-5h\
+Anglais : du lundi au vendredi, de 21 h à 5 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Portugais : 24 heures sur 24, entre lun midi et sam midi\
+Portugais: 24 heures sur 24, entre midi et samedi midi\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4348,12 +4350,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4370,12 +4372,12 @@ Après la numérotation, entrez :\
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Russe : du lundi au vendredi, de 10h00 à 19h00 Moscou\
-Anglais : du lundi au vendredi, de 9h00 à 17h00 Londres
+Russe: du lundi au vendredi, 10h-19h Moscou\
+Anglais : du lundi au vendredi, 9h00-17h00 Londres
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Russe : du lundi au vendredi, de 7 h à 20 h Moscou\
+Russe: du lundi au vendredi, 7h-20h Moscou\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4388,7 +4390,7 @@ Anglais : 24h/24, 7j/7
 120 852 137
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4402,7 +4404,7 @@ Anglais : 24h/24, 7j/7
    :::column:::
 [Samoa américaines](#american-samoa)\
 [Australie](#australia)\
-[Îles Cook](#cook-islands)\
+[Cook (îles)](#cook-islands)\
 [Fidji](#fiji)\
 [Français Polynésie](#french-polynesia)\
 [Guam](#guam)\
@@ -4439,10 +4441,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 800-865-9408\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 6h00 à 14h00
+Anglais : du lundi au vendredi, de 6 h à 14 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4458,7 +4460,7 @@ Anglais : 24h/24, 7j/7
 1800 197 503
 
 Autre numéro de téléphone : 02 8223 9959\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
@@ -4478,7 +4480,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 10h00 à 18h00
+Anglais : du lundi au vendredi, de 10 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4498,7 +4500,7 @@ Après la numérotation, entrez :\
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
 
 **Heures de support technique :**\
 Anglais : 24h/24, 7j/7
@@ -4514,12 +4516,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du dimanche au vendredi, de 22h à 6h\
-Anglais : du dimanche au vendredi, de 22h00 à 6h00
+Français : du dimanche au vendredi, de 22h à 6h00\
+Anglais : du dimanche au vendredi, de 22 h à 6 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 21h à 10h\
+Français: du lundi au vendredi, 21h-10h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4530,10 +4532,10 @@ Anglais : 24h/24, 7j/7
    :::column:::
 **Numéro de téléphone :**\
 800-865-9408\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 15h00 à 12h00
+Anglais : du lundi au vendredi, 3 h-12 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4550,7 +4552,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4567,7 +4569,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4584,7 +4586,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 13h à 21h
+Anglais : du lundi au vendredi, de 13 h à 21 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4601,7 +4603,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4618,7 +4620,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4635,12 +4637,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français : du lundi au vendredi, de 19h à 3h\
+Français: du lundi au vendredi, de 19 h à 3 h\
 Anglais : du lundi au vendredi, de 19 h à 3 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 18h à 7h\
+Français : du lundi au vendredi, de 18 h à 7 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
@@ -4653,7 +4655,7 @@ Anglais : 24h/24, 7j/7
 0800 194 197
 
 Autre numéro de téléphone : 09 912 7298\
-Des frais d’appel locaux s’appliquent.
+Des frais d’appel local s’appliquent.
    :::column-end:::
    :::column:::
 **Heures de support de facturation :**\
@@ -4673,7 +4675,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4690,7 +4692,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 12h à 20h
+Anglais : du lundi au vendredi, de 12 h à 20 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4707,7 +4709,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4724,7 +4726,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4741,7 +4743,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 11h00 à 19h00
+Anglais : du lundi au vendredi, 11h-19h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4758,7 +4760,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4775,7 +4777,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 14h à 22h
+Anglais : du lundi au vendredi, de 14 h à 22 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4792,7 +4794,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4809,7 +4811,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 14h à 22h
+Anglais : du lundi au vendredi, de 14 h à 22 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4826,7 +4828,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 14h à 22h
+Anglais : du lundi au vendredi, de 14 h à 22 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4843,7 +4845,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4860,7 +4862,7 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Anglais : du lundi au vendredi, de 9h00 à 17h00
+Anglais : du lundi au vendredi, de 9 h à 17 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
@@ -4877,12 +4879,12 @@ Anglais : 24h/24, 7j/7
 Frais d’appel international applicables.
 
 **Heures de support de facturation :**\
-Français: du dimanche au vendredi, de 20h à 4h\
-Anglais : du dimanche au vendredi, de 20h à 4h
+Français : du dimanche au vendredi, de 20 h à 4 h
+Anglais : du dimanche au vendredi, de 20 h à 4 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Français : du lundi au vendredi, de 19h à 8h\
+Français : du lundi au vendredi, de 19 h à 8 h\
 Anglais : 24h/24, 7j/7
    :::column-end:::
 :::row-end:::
