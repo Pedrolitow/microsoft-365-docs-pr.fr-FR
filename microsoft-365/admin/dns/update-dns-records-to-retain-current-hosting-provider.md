@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -24,13 +25,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Découvrez comment acheminer le trafic vers un site web public existant hébergé en dehors de Microsoft, si vous avez défini Microsoft pour gérer les enregistrements DNS pour votre domaine personnalisé.
-ms.openlocfilehash: ad7a2c61c8eb7223b9f6c0dfabbe896ab651b275
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Découvrez comment acheminer le trafic vers un site web public existant hébergé en dehors de Microsoft, si vous avez configuré Microsoft pour gérer les enregistrements DNS pour votre domaine personnalisé.
+ms.openlocfilehash: ec6d62f5de7b4fdd6f06b482c818c8a6fbb1533f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188612"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729102"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Mettre à jour les enregistrements DNS pour conserver votre site web chez votre fournisseur d'hébergement actuel
 
@@ -43,9 +44,9 @@ ms.locfileid: "68188612"
 
 1. Dans la page **Domaines** , sélectionnez le domaine, puis choisissez **Enregistrements DNS**.
 
-1. Sélectionnez **+ Ajouter un enregistrement** et entrez ce qui suit : 
+1. Sélectionnez **+ Ajouter un enregistrement** et entrez les éléments suivants : 
     
-   - Pour **type** , entrez : **A (Adresse)**
+   - Pour **le type** , entrez : **A (Adresse)**
     
    - Pour **Nom d'hôte ou Alias**, tapez **@**.
     
@@ -57,9 +58,9 @@ ms.locfileid: "68188612"
     
 De plus, vous pouvez créer un enregistrement CNAME pour aider les clients à trouver votre site web.
   
-1. Sélectionnez **+ Ajouter un enregistrement** et entrez ce qui suit : 
+1. Sélectionnez **+ Ajouter un enregistrement** et entrez les éléments suivants : 
     
-   - Pour **entrer le type** : **CNAME (Alias)**
+   - Pour **le type** , entrez **: CNAME (Alias)**
     
    - Pour **Nom d'hôte ou Alias**, tapez **www**
     
@@ -69,6 +70,6 @@ De plus, vous pouvez créer un enregistrement CNAME pour aider les clients à tr
     
 Pour terminer, procédez comme suit :
   
-[Mettez à jour les enregistrements NS de votre domaine pour qu’ils](../setup/add-domain.md) pointent vers Microsoft. 
+[Mettez à jour les enregistrements NS de votre domaine](../setup/add-domain.md) pour qu’ils pointent vers Microsoft. 
   
-Lorsque les enregistrements NS ont été mis à jour pour pointer vers Microsoft, votre domaine est configuré. Email sera routée vers Microsoft, et le trafic vers votre adresse de site web continuera d’être acheminé vers votre hôte de site web actuel.
+Lorsque les enregistrements NS ont été mis à jour pour pointer vers Microsoft, votre domaine est configuré. Email sera acheminé vers Microsoft, et le trafic vers l’adresse de votre site web continuera d’être acheminé vers l’hôte de votre site web actuel.

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 description: Découvrez comment attribuer un compte d’utilisateur à chaque membre de l’équipe afin qu’il puisse disposer de licences Microsoft 365, d’informations d’identification de connexion et de boîtes aux lettres Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: 188e4def65212c775a32b9205db3ab14ce9a1bae
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e0485ac1ed66c40b19ec4645fc8b00dc85b686a7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200184"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722129"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
@@ -116,49 +117,49 @@ Toutes les méthodes suivantes permettent d’ajouter de multiples utilisateurs 
 
 ## <a name="create-edit-or-delete-custom-user-views"></a>Créer, modifier ou supprimer des vues utilisateur personnalisées
 
-Si vous êtes administrateur général ou de gestion des utilisateurs d’un abonnement Microsoft 365 pour les entreprises, vous pouvez créer jusqu’à 50 vues utilisateur personnalisées pour afficher les sous-ensembles d’utilisateurs. Ces vues s’ajoutent à l’ensemble standard de vues. Vous pouvez créer, modifier ou supprimer des vues utilisateur personnalisées, et les vues personnalisées que vous créez sont disponibles pour tous les administrateurs.
+Si vous êtes administrateur général ou administrateur de gestion des utilisateurs d’un abonnement Microsoft 365 pour les entreprises, vous pouvez créer jusqu’à 50 vues utilisateur personnalisées pour afficher des sous-ensembles d’utilisateurs. Ces vues s’ajoutent à l’ensemble standard de vues. Vous pouvez créer, modifier ou supprimer des vues utilisateur personnalisées, et les vues personnalisées que vous créez sont disponibles pour tous les administrateurs.
 
 Lorsque vous créez, modifiez ou supprimez un affichage utilisateur personnalisé, les modifications sont affichées dans la liste **Filtre** que tous les administrateurs de votre entreprise voient lorsqu’ils accèdent à la page **Utilisateurs** .
 
 > [!TIP]
-> Les vues utilisateur standard sont affichées par défaut dans la liste déroulante **Filtres** . Les filtres standard incluent **tous les utilisateurs**, **utilisateurs sous licence**, **utilisateurs invités**,  **connexion autorisée**, **connexion bloquée**, **utilisateurs sans licence**, **utilisateurs avec erreurs**, **administrateurs de facturation**, **administrateurs généraux**, **administrateurs du support** technique, **administrateurs de service** et **administrateurs de gestion des utilisateurs**. Vous ne pouvez pas modifier ou supprimer des vues standard. 
+> Les vues utilisateur standard sont affichées par défaut dans la liste déroulante **Filtres** . Les filtres standard incluent **Tous les utilisateurs**, **Utilisateurs sous licence**, **Utilisateurs invités**,  **Connexion autorisée**, **Connexion bloquée**, **Utilisateurs sans licence**, **Utilisateurs avec erreurs**, **Administrateurs de facturation**, **Administrateurs généraux**, **Administrateurs du support technique**, **Administrateurs de service** et **Administrateurs de gestion des utilisateurs**. Vous ne pouvez pas modifier ou supprimer des vues standard. 
 
-Quelques points à noter sur les vues standard : 
+Voici quelques points à noter sur les vues standard : 
 
-- Certaines vues standard affichent une liste non triée s’il y a plus de 2 000 utilisateurs dans la liste. Pour localiser des utilisateurs spécifiques dans cette liste, utilisez la zone de recherche. 
+- Certaines vues standard affichent une liste non triée si la liste contient plus de 2 000 utilisateurs. Pour localiser des utilisateurs spécifiques dans cette liste, utilisez la zone de recherche. 
 - Si vous n’avez pas acheté Microsoft 365 auprès de Microsoft, **les administrateurs de facturation** n’apparaissent pas dans la liste des affichages standard. Pour plus d'informations, consultez la rubrique [Affectation de rôles d'administrateur](assign-admin-roles.md). 
   
-### <a name="choose-the-filters-for-your-custom-user-view"></a>Choisir les filtres de votre affichage utilisateur personnalisé
+### <a name="choose-the-filters-for-your-custom-user-view"></a>Choisir les filtres de votre vue utilisateur personnalisée
 
-Vous pouvez créer et modifier vos vues personnalisées dans le volet **Filtre personnalisé** . Si vous sélectionnez plusieurs options de filtre, vous obtenez des résultats qui contiennent des utilisateurs qui correspondent à tous les critères sélectionnés. L’exemple suivant vous montre comment créer une vue personnalisée nommée « Utilisateurs canadiens » qui montre tous les utilisateurs d’un domaine spécifique qui se trouvent au Canada. 
+Vous pouvez créer et modifier vos vues personnalisées dans le volet **Filtre personnalisé** . Si vous sélectionnez plusieurs options de filtre, vous obtenez des résultats qui contiennent des utilisateurs qui correspondent à tous les critères sélectionnés. L’exemple suivant montre comment créer une vue personnalisée nommée « Utilisateurs canadiens » qui affiche tous les utilisateurs d’un domaine spécifique qui se trouvent au Canada. 
 
- **A - Domaine** Si vous disposez de plusieurs domaines pour votre organisation, vous pouvez choisir parmi une liste déroulante des domaines disponibles. 
+ **A - Domaine** Si vous avez plusieurs domaines pour votre organisation, vous pouvez choisir parmi une liste déroulante de domaines disponibles. 
   
- **B - État de connexion** Choisissez les utilisateurs autorisés ou bloqués. 
+ **B - État de la connexion** Choisissez les utilisateurs autorisés ou bloqués. 
   
  **C - Emplacement** Choisissez un emplacement dans une liste déroulante de pays. 
   
- **D - Licence de produit affectée** Choisissez parmi une liste déroulante de licences disponibles dans votre organisation. Utilisez ce filtre pour afficher les utilisateurs auxquels la licence que vous avez sélectionnée leur a été attribuée. Les utilisateurs peuvent également avoir des licences supplémentaires. 
+ **D - Licence de produit affectée** Choisissez dans une liste déroulante des licences disponibles dans votre organisation. Utilisez ce filtre pour afficher les utilisateurs auxquels la licence que vous avez sélectionnée leur a été attribuée. Les utilisateurs peuvent également disposer de licences supplémentaires. 
   
-Vous pouvez également filtrer en fonction des détails de profil utilisateur supplémentaires utilisés dans votre organisation, tels que le département, la ville, l’état ou la province, le pays ou la région, ou le titre du travail.
+Vous pouvez également filtrer par des détails de profil utilisateur supplémentaires utilisés dans votre organisation, tels que le département, la ville, l’état ou la province, le pays ou la région ou la fonction.
   
  **Autres conditions :**
   
-- **Utilisateurs synchronisés uniquement** Sélectionnez cette zone pour afficher tous les utilisateurs qui ont été synchronisés avec l’Active Directory local, que les utilisateurs aient été activés ou non. 
+- **Utilisateurs synchronisés uniquement** Cochez cette case pour afficher tous les utilisateurs qui ont été synchronisés avec l’Active Directory local, que les utilisateurs aient été activés ou non. 
 
-- **Utilisateurs avec des erreurs** Sélectionnez cette zone pour afficher les utilisateurs susceptibles d’avoir des erreurs d’approvisionnement. 
+- **Utilisateurs avec des erreurs** Cochez cette case pour afficher les utilisateurs qui peuvent avoir des erreurs d’approvisionnement. 
 
-- **Utilisateurs sans licence** Sélectionnez cette zone pour rechercher tous les utilisateurs qui n’ont pas reçu de licence. Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une boîte aux lettres Exchange, mais qui n’ont pas de licence. Pour suivre ces utilisateurs spécifiquement, utilisez les **utilisateurs sans licence avec des boîtes aux lettres ou des archives Exchange**. Les résultats de cette vue peuvent également inclure les utilisateurs qui disposent d’une archive Exchange, mais qui n’ont pas de licence.
+- **Utilisateurs sans licence** Cochez cette case pour rechercher tous les utilisateurs à qui aucune licence n’a été attribuée. Les résultats de cette vue peuvent également inclure des utilisateurs qui disposent d’une boîte aux lettres Exchange, mais qui n’ont pas de licence. Pour suivre spécifiquement ces utilisateurs, utilisez le filtre **Utilisateurs sans licence avec des boîtes aux lettres ou des archives Exchange**. Les résultats de cette vue peuvent également inclure des utilisateurs qui disposent d’une archive Exchange, mais qui n’ont pas de licence.
 
-- **Utilisateurs sans licence avec des boîtes aux lettres ou des archives Exchange** Sélectionnez cette zone pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n’ont pas reçu de licence Microsoft 365. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont reçu une archive Exchange. 
+- **Utilisateurs sans licence avec des boîtes aux lettres ou des archives Exchange** Cochez cette case pour afficher les comptes d’utilisateur créés dans Exchange Online et disposant d’une boîte aux lettres Exchange, mais qui n’ont pas reçu de licence Microsoft 365. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont reçu une archive Exchange. 
 
 > [!NOTE]
-> Le filtre **des utilisateurs sans licence avec boîtes aux lettres Exchange** fonctionne quand :
+> Le filtre **Utilisateurs sans licence avec boîtes aux lettres Exchange** fonctionne dans les cas suivants :
 
-1. La boîte aux lettres a été récemment convertie de **partagé** en **utilisateur** et n’a pas de licence.
-2. La boîte aux lettres a été récemment migrée vers Microsoft 365, mais aucune licence n’a été attribuée.
+1. La boîte aux lettres a été récemment convertie de **partagée** en **utilisateur** et elle n’a pas de licence.
+2. La boîte aux lettres a récemment été migrée vers Microsoft 365, mais aucune licence n’a été attribuée.
 3. La boîte aux lettres a été créée à l’aide de PowerShell et aucune licence n’a été attribuée.
-4. Une nouvelle boîte aux lettres créée localement avec une applet de commande New-RemoteMailbox est provisionnée pour l’utilisateur.
+4. Une boîte aux lettres créée localement avec une applet de commande New-RemoteMailbox est provisionnée pour l’utilisateur.
 
 > [!TIP]
 > Si vous créez une vue personnalisée qui retourne plus de 2 000 utilisateurs, la liste d’utilisateurs obtenue n’est pas triée. Dans ce cas, utilisez la zone de recherche pour rechercher des utilisateurs ou modifiez votre vue personnalisée pour affiner votre recherche. 
@@ -167,13 +168,13 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a>.
+1. Dans le Centre d’administration, accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">actifs</a>.  
+1. Dans le Centre d’administration, accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.  
 
 ::: moniker-end
     
@@ -185,22 +186,22 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a>.
+1. Dans le Centre d’administration, accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">actifs</a>. 
+1. Dans le Centre d’administration, accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
 ::: moniker-end 
     
-2. Dans la page **Utilisateurs actifs** , sélectionnez **Filtrer**, sélectionnez le filtre à modifier, puis **sélectionnez Modifier le filtre**. 
+2. Dans la page **Utilisateurs actifs** , sélectionnez **Filtrer**, sélectionnez le filtre que vous souhaitez modifier, puis sélectionnez **Modifier le filtre**. 
     
     > [!TIP]
     > Vous pouvez modifier uniquement les vues personnalisées. 
   
-3. Dans la page **Filtre personnalisé** , modifiez les informations en fonction des besoins, puis **sélectionnez Enregistrer**. Ou, pour supprimer le filtre, en bas de la page, **sélectionnez Supprimer**.
+3. Dans la page **Filtre personnalisé** , modifiez les informations en fonction des besoins, puis sélectionnez **Enregistrer**. Ou, pour supprimer le filtre, en bas de la page, sélectionnez **Supprimer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

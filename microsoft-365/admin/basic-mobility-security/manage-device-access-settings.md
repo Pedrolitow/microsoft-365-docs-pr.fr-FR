@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,17 +19,17 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Pour les appareils que vous ne pouvez pas gérer avec La mobilité et la sécurité de base, bloquez Exchange ActiveSync’accès de l’application à la messagerie électronique et utilisez Azure AD PowerShell pour obtenir des détails sur les appareils d’organisation.
-ms.openlocfilehash: 22b4afd36043c10b093e3afaf6ff76f337ad5a7d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Pour les appareils que vous ne pouvez pas gérer avec mobilité et sécurité de base, bloquez Exchange ActiveSync’accès aux applications à la messagerie électronique et utilisez Azure AD PowerShell pour obtenir des détails sur les appareils de l’organisation.
+ms.openlocfilehash: 833f155570e3234c5731ac23541ca8db7948c403
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190526"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720479"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans Mobilité et sécurité de base
 
-Si vous utilisez la mobilité et la sécurité de base, il peut y avoir des appareils que vous ne pouvez pas gérer avec la mobilité et la sécurité de base. Si c’est le cas, vous devez bloquer Exchange ActiveSync’accès de l’application à la messagerie Microsoft 365 pour les appareils mobiles qui ne sont pas pris en charge par mobilité et sécurité de base. Cela permet de sécuriser les informations de votre organisation sur d’autres appareils.
+Si vous utilisez Mobilité et sécurité de base, il se peut qu’il existe des appareils que vous ne pouvez pas gérer avec mobilité et sécurité de base. Si c’est le cas, vous devez bloquer Exchange ActiveSync’accès de l’application à la messagerie Microsoft 365 pour les appareils mobiles qui ne sont pas pris en charge par Mobilité et sécurité de base. Cela permet de sécuriser les informations de votre organisation sur d’autres appareils.
 
 Procédez comme suit :
 
@@ -37,45 +38,45 @@ Procédez comme suit :
 2. Dans votre navigateur, tapez : <https://protection.office.com/>.
 
     > [!IMPORTANT]
-    > S’il s’agit de la première fois que vous utilisez la mobilité et la sécurité de base pour Microsoft 365 Business Standard, [activez-la ici : Activer la sécurité et la mobilité de base](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Une fois que vous l’avez activé, gérez vos appareils avec [Office 365 Sécurité & Conformité](https://protection.office.com/).
+    > S’il s’agit de la première fois que vous utilisez Mobilité et sécurité de base pour Microsoft 365 Business Standard, activez-la ici : [Activer la sécurité de base et la mobilité](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Une fois que vous l’avez activé, gérez vos appareils avec [Office 365 Sécurité & Conformité](https://protection.office.com/).
 
-3. Accédez aux stratégies d’appareil de **gestion des** \> appareils de **protection contre la** \> perte de données **, puis** sélectionnez **Gérer les paramètres d’accès aux appareils à l’échelle de l’organisation**.
+3. Accédez à **Protection contre la** \> perte de données **Gestion des** \> appareils **Stratégies d’appareil**, puis sélectionnez **Gérer les paramètres d’accès aux appareils à l’échelle de l’organisation**.
 
-4. Sélectionnez **Access**.
+4. Sélectionnez **Accès**.
 
-    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Case à cocher Mobilité et sécurité de base pour bloquer l’accès.":::
+    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Case à cocher Mobilité et sécurité de base bloquer l’accès.":::
 
 5. Sélectionnez **Enregistrer**.
 
-Pour savoir quels appareils la mobilité et la sécurité de base prennent en charge, consultez [Fonctionnalités de mobilité et de sécurité de base](capabilities.md).
+Pour en savoir plus sur les appareils pris en charge par Basic Mobility and Security, consultez [Fonctionnalités de mobilité et de sécurité de base](capabilities.md).
 
-## <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtenir des détails sur les appareils gérés par Mobilité et sécurité de base
+## <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtenir des détails sur les appareils gérés par la mobilité et la sécurité de base
 
-En outre, vous pouvez utiliser Azure AD PowerShell pour obtenir des détails sur les appareils de votre organisation que vous avez configurés pour la mobilité et la sécurité de base.
+En outre, vous pouvez utiliser Azure AD PowerShell pour obtenir des détails sur les appareils de votre organisation que vous avez configurés pour Mobilité et sécurité de base.
 
-Voici une répartition des détails de l’appareil disponibles.
+Voici une répartition des détails de l’appareil à votre disposition.
 
 |Détails|Éléments à rechercher dans PowerShell|
 |---|---|
-|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de mobilité et de sécurité de base](enroll-your-mobile-device.md)|La valeur du paramètre *isManaged* est :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit.|
+|L’appareil est inscrit dans Mobilité et sécurité de base. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du paramètre *isManaged* est :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit.|
 |L’appareil est conforme aux stratégies de sécurité de votre appareil. Pour plus d’informations, consultez [Créer des stratégies de sécurité d’appareil](create-device-security-policies.md)|La valeur du paramètre *isCompliant* est :<br/>**True** = l’appareil est conforme aux stratégies.<br/>**False** = l’appareil n’est pas conforme aux stratégies.|
 
-:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell de mobilité et de sécurité de base.":::
+:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell mobilité et sécurité de base.":::
 
 > [!NOTE]
 > Les commandes et les scripts qui suivent retournent également des détails sur les appareils gérés par [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
-Voici quelques éléments que vous devez configurer pour exécuter les commandes et les scripts qui suivent :
+Voici quelques éléments que vous devez configurer pour exécuter les commandes et les scripts suivants :
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Étape 1 : Télécharger et installer le module Azure Active Directory pour Windows PowerShell
 
 Pour plus d’informations sur ces étapes, consultez [Se connecter à Microsoft 365 avec PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
 
-1. Accédez à [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi) et **sélectionnez Télécharger pour Microsoft Online Services Sign-in Assistant**.
+1. Accédez à [Microsoft Online Services Sign-In Assistant pour les professionnels de l’informatique RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi) et sélectionnez **Télécharger pour l’Assistant De connexion microsoft Online Services**.
 
 2. Téléchargez et installez le Module Microsoft Azure Active Directory pour Windows PowerShell en procédant comme suit :
 
-    1. Ouvrez une invite de commandes PowerShell au niveau de l’administrateur.
+    1. Ouvrez une invite de commandes PowerShell de niveau administrateur.
 
     2. Exécutez la commande `Install-Module MSOnline`.
 
@@ -93,7 +94,7 @@ Pour plus d’informations sur ces étapes, consultez [Se connecter à Microsoft
    $UserCredential = Get-Credential
    ```
 
-2. Dans la boîte de dialogue Windows PowerShell Demande d’informations d’identification, tapez le nom d’utilisateur et le mot de passe de votre compte d’administrateur général Microsoft 365, puis sélectionnez **OK**.
+2. Dans la boîte de dialogue Demande d’informations d’identification Windows PowerShell, tapez le nom d’utilisateur et le mot de passe de votre compte d’administrateur général Microsoft 365, puis sélectionnez **OK**.
 
 3. Exécutez la commande suivante :
 
@@ -108,7 +109,7 @@ Pour plus d’informations sur ces étapes, consultez [Se connecter à Microsoft
 
 Pour exécuter le script Get-MsolUserDeviceComplianceStatus.ps1, vous devez activer l’exécution de scripts PowerShell.
 
-1. Dans votre Bureau Windows, **sélectionnez Démarrer, puis tapez** Windows PowerShell. Cliquez avec le bouton droit sur Windows PowerShell, puis sélectionnez **Exécuter en tant qu’administrateur**.
+1. À partir de votre Bureau Windows, sélectionnez **Démarrer**, puis tapez Windows PowerShell. Cliquez avec le bouton droit sur Windows PowerShell, puis sélectionnez **Exécuter en tant qu’administrateur**.
 
 2. Exécutez la commande suivante :
 
@@ -197,9 +198,9 @@ Tout d’abord, enregistrez le script sur votre ordinateur.
    }
    ```
 
-2. Enregistrez-le en tant que fichier de script Windows PowerShell à l’aide de l’extension de fichier .ps1 ; par exemple, Get-MsolUserDeviceComplianceStatus.ps1.
+2. Enregistrez-le en tant que fichier de script Windows PowerShell à l’aide de l’extension .ps1 , par exemple, Get-MsolUserDeviceComplianceStatus.ps1.
 
-### <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Exécuter le script pour obtenir des informations sur l’appareil pour un compte d’utilisateur unique
+### <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Exécuter le script pour obtenir des informations sur l’appareil pour un seul compte d’utilisateur
 
 1. Ouvrez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
@@ -221,9 +222,9 @@ Tout d’abord, enregistrez le script sur votre ordinateur.
    .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
    ```
 
-Les informations sont exportées vers votre Bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
+Les informations sont exportées vers votre bureau Windows sous la forme d’un fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-### <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Exécuter le script pour obtenir des informations sur l’appareil pour un groupe d’utilisateurs
+### <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Exécuter le script pour obtenir des informations sur l’appareil d’un groupe d’utilisateurs
 
 1. Ouvrez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
@@ -245,7 +246,7 @@ Les informations sont exportées vers votre Bureau Windows en tant que fichier C
    .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
    ```
 
-Les informations sont exportées vers votre Bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
+Les informations sont exportées vers votre bureau Windows sous la forme d’un fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
 ## <a name="related-content"></a>Contenu associé
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -30,12 +31,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un iPhone ou un téléphone Android, et vos fichiers professionnels dans les applications Office seront protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 4bcb19af85c348541153e7079d5b3f273f5b1923
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d1fc58b3d3d7140319b04e9188089df20dd856d5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68189602"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728178"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 pour les PME
 
@@ -99,15 +100,15 @@ Dans l'application Outlook, appuyez sur **Prise en main**, puis ajoutez votre co
   
 Dans la boîte de dialogue indiquant que vous devez installer l'application Portail d'entreprise Intune, appuyez sur **Accéder au magasin**.
   
-![Appuyez sur Go pour stocker pour obtenir Portail d'entreprise Intune application.](../../media/a702d712-5622-45dd-a511-b1adaee63071.png)
+![Appuyez sur Accéder au magasin pour obtenir Portail d'entreprise Intune’application.](../../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
 Dans le Play Store, installez l'application Portail d'entreprise Intune.
   
-![Capture d’écran montrant le bouton Installer pour Portail d'entreprise Intune dans Google Play Store.](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
+![Capture d’écran montrant le bouton d’installation pour Portail d'entreprise Intune dans Google Play Store.](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
 Ouvrez Outlook à nouveau, et entrez et confirmez un code confidentiel. Vous pouvez maintenant utiliser l'application Outlook.
   
-![Définir le code confidentiel de l’application Outlook dans Android.](../../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
+![Définir le code confidentiel pour l’application Outlook dans Android.](../../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
 ## <a name="related-content"></a>Contenu associé
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -26,12 +27,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 708a153f0af5bb4a8e43fd48a34401d127b40d73
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 46f6efdf5821f87f997879bcfd07fde13833f565
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68164786"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728640"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -41,7 +42,7 @@ Si vous avez acheté un domaine auprès d’un fournisseur d’hébergement tier
 
 Si vous n’ajoutez pas de domaine, les membres de votre organisation utiliseront le domaine onmicrosoft.com pour leur adresse de messagerie jusqu’à ce que vous le fassiez. Il est important d’ajouter votre domaine avant d’ajouter des utilisateurs, de sorte que vous n’ayez pas à les reconfigurer.
 
-Si vous avez déjà créé des utilisateurs et souhaitez modifier leur domaine, suivez les étapes décrites dans [Modifier votre adresse e-mail pour utiliser votre domaine personnalisé à l’aide de la Centre d'administration Microsoft 365](/microsoft-365/admin/email/change-email-address#change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center).
+Si vous avez déjà créé des utilisateurs et que vous souhaitez modifier leur domaine, suivez les étapes décrites dans [Modifier votre adresse e-mail pour utiliser votre domaine personnalisé à l’aide de la Centre d'administration Microsoft 365](/microsoft-365/admin/email/change-email-address#change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center).
 
 [Consultez la FAQ dédiée aux domaines](../setup/domains-faq.yml) si vous ne trouvez pas ci-dessous ce que vous recherchez .
 

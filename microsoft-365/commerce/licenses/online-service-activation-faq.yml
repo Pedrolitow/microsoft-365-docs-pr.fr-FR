@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Faq sur l’activation du service en ligne pour le programme Open
+  title: FAQ sur l’activation du service en ligne pour le programme Open
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -10,68 +10,70 @@ metadata:
   ms.topic: faq
   ms.service: microsoft-365-business
   ms.custom: commerce_vl
-  ms.collection: scotvorg
+  ms.collection:
+  - Tier2
+  - scotvorg
   ms.localizationpriority: medium
-  description: Activation du service en ligne pour les questions fréquentes sur le programme Open
-  ms.openlocfilehash: 86ad4f43a4655d9db563384def45638036eaeace
-  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+  description: Forum aux questions sur l’activation du service en ligne pour le programme Open
+  ms.openlocfilehash: c6184228f94b6cfb2d6b8ad9bb7f848261851316
+  ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/29/2022
-  ms.locfileid: "68197214"
-title: Activation du service en ligne pour les questions fréquentes sur le programme Open
+  ms.lasthandoff: 10/27/2022
+  ms.locfileid: "68735306"
+title: Forum aux questions sur l’activation du service en ligne pour le programme Open
 summary: ''
 sections:
 - name: Généralités
   questions:
   - question: >
-      Comment faire activer services en ligne acheté via les programmes Open (Open, Open Value et Open Value Subscription) ?
+      Comment faire activer les services en ligne achetés via les programmes Open (Open, Open Value et Open Value Subscription) ?
     answer: >
       Les clients ouverts peuvent activer services en ligne de deux manières :
 
-      - Après avoir commandé votre services en ligne par le biais de la famille de programmes Open, vous recevrez un e-mail avec un lien et des instructions pour activer vos services.
+      - Après avoir passé commande de votre services en ligne via la famille de programmes Open, vous recevez un e-mail avec un lien et des instructions pour activer vos services.
 
       OR
 
-      - À partir du Centre de gestion [des licences en volume (VLSC),](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) les clients du programme Open peuvent accéder à la section Activation du service en ligne et sélectionner la licence à gérer :
+      - À partir du programme Open du [Centre de gestion des licences en volume (VLSC),](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) les clients peuvent accéder à la section Activation du service en ligne et sélectionner la licence à gérer :
 
 
-      1. Sélectionnez le lien Gérer l’activation, puis sélectionnez Démarrer l’activation. Une fenêtre d’activation de produit s’ouvre et préremplit la clé.
+      1. Sélectionnez le lien Gérer l’activation, puis sélectionnez Démarrer l’activation. Une fenêtre d’activation de produit s’ouvre et préremplir la clé.
 
       2. Poursuivez les étapes d’activation restantes pour terminer l’activation du produit.
 
 
-      L’activation réussie est terminée dans un délai de 48 heures sur le site web d’activation du service en ligne de licence en volume.
+      L’activation réussie est effectuée dans les 48 heures sur le site web d’activation du service en ligne de gestion des licences en volume.
 
       Pour plus d’informations sur l’activation de Microsoft Azure, consultez [Prise en main d’Azure dans Open Licensing](https://azure.microsoft.com/offers/ms-azr-0111p/).
   - question: >
       Je ne vois pas ma commande Azure. Que dois-je faire ?
     answer: >
-      Les commandes Azure sont activées par le biais de clés. Obtenez vos clés sous l’onglet Téléchargements et clés dans le VLSC et entrez la clé dans la [page Prise en main d’Azure dans la page Licences ouvertes](https://azure.microsoft.com/offers/azure-open/).
+      Les commandes Azure sont activées via des clés. Obtenez vos clés via l’onglet Téléchargements et clés dans VLSC, puis entrez la clé dans la [page Prise en main d’Azure dans Open Licensing](https://azure.microsoft.com/offers/azure-open/).
   - question: >
-      Qu’est-ce qu’un compte professionnel ou scolaire et pourquoi ai-je besoin d’un compte pour activer services en ligne ?
+      Qu’est-ce qu’un compte professionnel ou scolaire et pourquoi en ai-je besoin pour activer services en ligne ?
     answer: >
-      Un compte professionnel ou scolaire est destiné aux utilisateurs pour se connecter aux services Microsoft de l’organisation. La connexion utilise généralement le formulaire username@orgname.com ou username@orgname.onmicrosoft.com, où *orgname* est le nom de domaine de messagerie de son organisation.
+      Un compte professionnel ou scolaire est destiné aux utilisateurs pour se connecter aux services Microsoft de l’organisation. La connexion utilise généralement le formulaire username@orgname.com ou username@orgname.onmicrosoft.com, où *orgname* est le nom de domaine de messagerie de l’organisation.
   - question: >
       Comment faire savoir si mon organisation dispose déjà d’un compte ?
-    answer: "Le nom de l’organisation associé à votre compte professionnel ou scolaire est extrait de l’ID de licence du service que vous activez. S’il existe un compte, le nom de l’organisation est prérempli dans la configuration du compte d’organisation et déjà lié à votre organisation à partir de la commande de service en ligne d’origine. Le processus d’inscription vérifie si votre organisation dispose d’un compte. \n\nSi le champ **Entreprise** est disponible, terminez le processus d’inscription pour vous connecter et activer le service. Si ce champ n’est pas disponible, vous devez inscrire l’organisation. Vous devez être un Administrateur général pour inscrire une organisation pour un compte.\n\nLorsque vous demandez un compte professionnel ou scolaire, votre demande est envoyée à l’administrateur client de votre organisation qui accorde ou refuse votre demande d’inscription. Utilisez ce compte professionnel ou scolaire lorsque vous vous connectez à Microsoft VLSC Online Service Activation.\n"
+    answer: "Le nom de l’organisation associé à votre compte professionnel ou scolaire provient de l’ID de licence du service que vous activez. S’il existe un compte, le nom de l’organisation est prérempli dans la configuration du compte d’organisation et est déjà lié à votre organisation à partir de la commande de service en ligne d’origine. Le processus d’inscription vérifie si votre organisation dispose d’un compte. \n\nSi le champ **Entreprise** est disponible, terminez le processus d’inscription pour vous connecter et activer le service. Si ce champ n’est pas disponible, vous devez inscrire l’organisation. Vous devez être un Administrateur général pour inscrire une organisation pour un compte.\n\nLorsque vous demandez un compte professionnel ou scolaire, votre demande est envoyée à l’administrateur client de votre organisation qui accorde ou refuse votre demande d’inscription. Utilisez ce compte professionnel ou scolaire lorsque vous vous connectez à Microsoft VLSC Online Service Activation.\n"
   - question: >
       Pourquoi le portail d’activation me déconnecte-t-il après avoir activé un service en ligne ?
     answer: "Lors de l’activation des services en ligne dans le cadre du programme Open License, chaque contrat est activé séparément. Pour vous assurer que les licences ne sont pas activées sur le mauvais locataire, chaque activation est gérée dans une session distincte. \n"
   - question: >
-      Comment l’activation de service en ligne fonctionne-t-elle pour les achats de licences ouvertes ?
+      Comment l’activation du service en ligne fonctionne-t-elle pour les achats open license ?
     answer: >
-      Microsoft Online Services for Open Agreements est passé à un modèle d’activation de gestion sans clé. Après avoir commandé Open services en ligne, vous recevez un e-mail avec un lien et des instructions pour activer vos services.
+      Microsoft Online Services for Open Agreements est passé à un modèle d’activation de gestion sans clé. Après avoir passé commande d’Open services en ligne, vous recevez un e-mail avec un lien et des instructions pour activer vos services.
   - question: >
       Que se passe-t-il si je souhaite affecter mon achat à une autre organisation ?
     answer: >
-      Pour affecter des produits à une nouvelle organisation, effectuez les étapes d’inscription pour créer une organisation. À partir de là, vous pouvez attribuer des sièges ou des produits que vous avez achetés.
+      Pour affecter des produits à une nouvelle organisation, suivez les étapes d’inscription pour créer une nouvelle organisation. À partir de là, vous pouvez attribuer des sièges ou des produits que vous avez achetés.
   - question: >
-      Je viens d’activer mon service en ligne. Pourquoi indique-t-il toujours que j’ai besoin d’activer mon service dans la page Gérer les activations du Centre de gestion des licences en volume ?
+      Je viens d’activer mon service en ligne. Pourquoi indique-t-il que je dois toujours activer mon service dans la page Gérer les activations du Centre de gestion des licences en volume ?
     answer: >
-      L’affichage de l’état **Activé** sur la page **Gérer les activations** peut prendre jusqu’à 24 heures.
+      Jusqu’à 24 heures peuvent être nécessaires pour que le service que vous avez activé apparaisse en tant qu’état **Activé** dans la page **Gérer les activations** .
   - question: >
       Comment faire contacter le support technique ?
     answer: >
-      Pour obtenir de l’aide par téléphone ou sur le web, consultez [Contactez-nous](/licensing/contact-us). Microsoft répond aux soumissions de formulaires web dans les 24 heures.
+      Pour obtenir un support téléphonique ou web, consultez [Nous contacter](/licensing/contact-us). Microsoft répond aux soumissions de formulaires web dans les 24 heures.
 additionalContent: "\n## <a name=\"additional-resources\"></a>Ressources supplémentaires\n\n- [FAQ sur les clés de produit](product-keys-faq.yml)\n\n- [Faq sur les téléchargements](downloads-faq.yml)"

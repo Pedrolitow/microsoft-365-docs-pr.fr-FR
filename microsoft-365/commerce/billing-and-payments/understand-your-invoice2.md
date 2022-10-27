@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -25,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre Microsoft 365 pour les factures professionnelles.
 ms.date: 05/24/2022
-ms.openlocfilehash: b85f04d112562ed3d2e25d2b55130b61e4d55260
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c2e0ae40c51d8d42c005f58b0463dece7e5ad1af
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195916"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727738"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -39,7 +40,7 @@ Votre facture fournit un récapitulatif des frais pour votre abonnement et inclu
 > [!NOTE]
 > Si vous avez d’autres abonnements au lieu ou en plus de Microsoft 365, consultez [Comprendre votre facture ou note](understand-your-invoice.md).
 
-## <a name="watch-understand-your-bill-or-invoice"></a>Regarder : Comprendre votre facture ou facture
+## <a name="watch-understand-your-bill-or-invoice"></a>Regarder : Comprendre votre facture
 
 Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2209539).
 
@@ -60,7 +61,7 @@ Le montant facturé pour votre abonnement reflète le prix de licence multiplié
 Si le montant facturé est différent de celui prévu, cela peut se produire pour quelques raisons :
 
 - Vous avez ajouté ou supprimé des licences de votre abonnement. Les licences modifiées à mi-terme sont répercutées sur la facture suivante. Vous pourrez voir un crédit et une refacturation pour la période de service précédente pour prendre en compte cette modification. Pour plus d’informations sur ce à quoi cela ressemble dans votre facture, consultez la [Page deux](#page-two) ci-dessous.
-- L’abonnement a été annulé. Vous recevez une facture après l’annulation avec tout solde en attente moins les crédits.
+- L’abonnement a été annulé. Vous recevez une facture après l’annulation avec tout solde impayé moins les crédits.
 - Votre abonnement est renouvelé pour un nouveau terme et le prix de la licence a changé.
 
 ## <a name="overview-of-the-invoice-pdf"></a>Vue d’ensemble de la facture. PDF
@@ -99,9 +100,9 @@ Pour mettre à jour l’adresse **Vendue**, consultez [Modifier l’adresse de v
 
 #### <a name="order-details"></a>Détails de la commande
 
-Sur la page 1 de votre facture, le **produit** est « Services en ligne », terme générique que nous utilisons pour décrire votre abonnement. La page deux répertorie les produits individuels dans votre commande.
+Dans la page 1 de votre facture, le **produit** est « Services en ligne », le terme générique que nous utilisons pour décrire votre abonnement. La page deux répertorie les produits individuels dans votre commande.
 
-Le **Numéro de bon de commande client** est le numéro de bon de commande que vous spécifiez. Vous ne pouvez pas ajouter un numéro de bon de commande pour une facture existante. Si vous mettez à jour le numéro de bon de commande, il est inclus dans les futures factures. Pour modifier le numéro de bon de commande, consultez [Modifier votre numéro de bon de commande](#change-your-purchase-order-number).
+Le **Numéro de bon de commande client** est le numéro de bon de commande que vous spécifiez. Vous ne pouvez pas ajouter un numéro de bon de commande pour une facture existante. Si vous mettez à jour le numéro de bon de commande, il est inclus dans les factures futures. Pour modifier le numéro de bon de commande, consultez [Modifier votre numéro de bon de commande](#change-your-purchase-order-number).
 
 Le **Numéro de commande** est l’identificateur global unique (GUID) qui identifie votre commande. Chaque fois que vous achetez un nouvel abonnement, une nouvelle commande avec un nouveau numéro de commande est créée. Vous recevez une facture pour chaque commande à chaque période de facturation.
 
@@ -127,7 +128,7 @@ Si vous payez par carte de crédit, vous voyez « VEUILLEZ NE PAS PAYER. Vous se
 
 ### <a name="electronic-fund-transfer-eft-and-check"></a>Transfert électronique de fonds (EFT) et vérification
 
-Si vous avez choisi « facture » comme mode de paiement d’abonnement, la page 1 contient la section **Transfert de fonds électroniques** qui affiche les informations du compte bancaire Microsoft pour les paiements électroniques (câble, ACH, SEPA, etc.). En règle générale, votre banque dispose d’un champ de référence que vous complétez lorsque vous envoyez un paiement. Veillez à référencer le numéro de facture dans ce champ.
+Si vous avez choisi « facture » comme mode de paiement de votre abonnement, la page 1 contient la section **Transfert de fonds électronique** qui affiche les informations de compte bancaire Microsoft pour les paiements électroniques (virement bancaire, ACH, SEPA, etc.). En règle générale, votre banque dispose d’un champ de référence que vous complétez lorsque vous envoyez un paiement. Veillez à référencer le numéro de facture dans ce champ.
 
 Si nous acceptons les paiements par chèque en provenance de votre pays ou région, vous voyez également une section **Vérifier** qui contient le nom et l’adresse de courrier du bénéficiaire. Veillez à référencer votre numéro de facture sur le chèque.
 

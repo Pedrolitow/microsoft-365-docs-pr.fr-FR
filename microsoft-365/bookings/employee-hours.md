@@ -8,23 +8,24 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
-ms.openlocfilehash: 84627c77ab1f4f6e73a8efccce8141759695ab9b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4fc72e614227164f9bea776066cb7c87197aaedd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68169736"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728398"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Heures de travail des employés dans Microsoft Bookings
 
-La définition des heures de travail des employés garantit que leur disponibilité est indiquée avec précision lorsque vos clients tentent de les réserver. Par défaut, les heures de travail de chacun de vos employés correspondent aux heures d’ouverture que vous avez établies dans l’application Microsoft Bookings. Consultez la section « Définir vos heures d’ouverture » [d’Entrée d’informations professionnelles](enter-business-information.md).
+La définition des heures de travail des employés garantit que leur disponibilité est affichée avec précision lorsque vos clients essaient de les réserver. Par défaut, les heures de travail de chacun de vos employés correspondent aux heures d’ouverture que vous avez établies dans l’application Microsoft Bookings. Consultez la section « Définir vos heures d’ouverture » dans [Entrer des informations professionnelles](enter-business-information.md).
 
 Dans la page **Personnel** , vous pouvez personnaliser les heures de travail des employés en fonction des besoins de votre entreprise et de vos employés.
 
-Si vous souhaitez réserver des congés pour les membres du personnel afin que les clients ne puissent pas les réserver pendant qu’ils ne sont pas au bureau, consultez [Planifier les fermetures d’entreprise, les congés et les congés](schedule-closures-time-off-vacation.md) pour obtenir des instructions.
+Si vous souhaitez réserver des congés pour les membres du personnel afin que les clients ne puissent pas les réserver lorsqu’ils sont absents du bureau, consultez [Planifier les fermetures d’entreprise, les congés et les vacances](schedule-closures-time-off-vacation.md) pour obtenir des instructions.
 
 ## <a name="watch-set-employee-working-hours"></a>Regarder : Définir les heures de travail des employés
 
@@ -34,31 +35,31 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour définir les heures 
 
 ## <a name="steps"></a>Étapes
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **Bookings**.
 
 1. Choisissez votre calendrier.
 
 1. Dans le volet de navigation, sélectionnez **Personnel**, puis sélectionnez le membre du personnel dont vous souhaitez définir les heures.
 
-1. Sous Heures de travail, désactivez la case à cocher **Utiliser les heures d’ouverture** .
+1. Sous Heures de travail, décochez la case **Utiliser les heures d’ouverture** .
 
-1. Utilisez les listes déroulantes pour sélectionner les heures de début et de fin pour chaque jour. Les heures sont disponibles par incréments de 15 minutes.
+1. Utilisez les listes déroulantes pour sélectionner les heures de début et de fin de chaque jour. Les heures sont disponibles par incréments de 15 minutes.
 
    ![Image de l’écran des heures de travail du personnel de Bookings.](../media/bookings-staff-hours.png)
 
-1. Sélectionnez **+** cette option pour ajouter des sélecteurs de début et de fin.
+1. Sélectionnez cette option **+** pour ajouter des sélecteurs d’heure de début et de fin.
 
 1. Sélectionnez Enregistrer.
 
 ## <a name="set-an-employees-days-off"></a>Définir les jours de congé d’un employé
 
-Lorsque vous planifiez un jour de congé pour un employé, cet employé apparaîtra indisponible sur la page de réservation. Les clients qui utilisent la page de réservation ne pourront pas planifier son service ce jour-là.
+Lorsque vous planifiez un jour de congé pour un employé, celui-ci apparaît indisponible sur la page de réservation. Les clients qui utilisent la page de réservation ne pourront pas le planifier pour le service ce jour-là.
 
-1. Dans l’écran des heures de travail, sélectionnez le **x** à côté du jour où l’employé aura désactivé.
+1. Sur l’écran des heures de travail, sélectionnez le **x** en regard du jour où l’employé aura congé.
 
-   ![Image de l’écran des heures de travail du personnel de Bookings avec le bouton pointant sur x.](../media/bookings-staff-time-off.png)
+   ![Image de l’écran des heures de travail du personnel de Bookings avec la souris sur x bouton.](../media/bookings-staff-time-off.png)
 
-1. Si vous souhaitez planifier un jour précédemment marqué comme un jour de congé, sélectionnez le **+** signe en regard du jour que vous souhaitez planifier.
+1. Si vous souhaitez planifier un jour qui a été précédemment marqué comme un jour de congé, sélectionnez le **+** signe en regard du jour que vous souhaitez planifier.
 
 > [!TIP]
-> Si vous planifiez des congés pour les employés ou d’autres grands blocs de congés, consultez la section « Planifier les congés des employés » dans [Planifier les fermetures d’entreprise, les congés et les congés](schedule-closures-time-off-vacation.md#schedule-employee-time-off).
+> Si vous planifiez des congés d’un employé ou d’autres grands blocs de congés, consultez la section « Planifier les congés des employés » de [Planifier les fermetures d’entreprise, les congés et les congés](schedule-closures-time-off-vacation.md#schedule-employee-time-off).

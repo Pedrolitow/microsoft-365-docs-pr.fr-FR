@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: 3971fc981046dc3e3e3b2741705053c5e3d52430
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 7189d9af375c4013f7962ae162abb1cc8fe02877
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503157"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729080"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recommandations en matière de stratégie de mot de passe pour Microsoft 365
 
@@ -99,7 +100,7 @@ Voici quelques-unes des pratiques les plus couramment utilisées en matière de 
 
 Les exigences d’expiration de mot de passe font plus de mal que de bien, car ces exigences font en sorte que les utilisateurs sélectionnent des mots de passe prévisibles, composés de mots séquentiels et de nombres étroitement liés les uns aux autres. Dans ce cas, le mot de passe suivant peut être déterminé en se basant sur le mot de passe précédent. Les exigences d’expiration de mot de passe n’offrent aucun avantage en matière de contenu, car les cybercriminels utilisent presque toujours les informations d’identification dès qu’ils les compromettent. 
   
-### <a name="minimum-password-length-requirements"></a>Exigences minimales en matière de longueur de mot de passe
+### <a name="minimum-password-length-requirements"></a>Exigences relatives à la longueur minimale du mot de passe
 
 <!--Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing down their passwords, reusing them, or storing them unencrypted in their documents.-->
 

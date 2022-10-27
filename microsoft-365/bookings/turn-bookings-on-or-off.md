@@ -9,28 +9,29 @@ ms.service: bookings
 ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Découvrez comment accéder à Microsoft Bookings dans Microsoft 365.
-ms.openlocfilehash: 2e417afd9312a86d612a2abac1c8d2d0990f7a4c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 52fe958d37dde7bd07602a03846566aa24c10488
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68177549"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728970"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Activer ou désactiver Microsoft bookings
 
-Les réservations peuvent être activées ou désactivées pour l’ensemble de votre organisation ou pour des utilisateurs spécifiques. Lorsque vous activez Bookings pour les utilisateurs, ils peuvent créer une page Bookings, créer un calendrier et autoriser d’autres personnes à réserver du temps avec eux. Cet article s’applique aux propriétaires et administrateurs qui gèrent Bookings pour leur organisation.
+Les réservations peuvent être activées ou désactivées pour l’ensemble de votre organisation ou pour des utilisateurs spécifiques. Lorsque vous activez Bookings pour les utilisateurs, ils peuvent créer une page Bookings, créer un calendrier et permettre à d’autres personnes de réserver du temps avec eux. Cet article est destiné aux propriétaires et administrateurs qui gèrent Bookings pour leur organisation.
 
 > [!NOTE]
-> Les contrôles d’administration décrits dans ces sections ne sont pas disponibles pour Office 365 Exploité par les clients 21Vianet (Chine).
+> Les contrôles d’administration décrits dans ces sections ne sont pas disponibles pour Office 365 gérés par les clients 21Vianet (Chine).
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Activez ou désactivez Bookings pour votre organisation à l’aide de la Centre d'administration Microsoft 365
 
 1. Connectez-vous au Centre d'administration Microsoft 365 en tant qu’administrateur général.
 
-2. Dans le centre d’administration, accédez aux **paramètres** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**l’organisation paramètres**</a>.
+2. Dans le Centre d’administration, accédez à **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**de l’organisation**</a>.
 
 3. Cochez la case **Autoriser votre organisation à utiliser Bookings** pour activer ou désactiver Bookings pour votre organisation.
 
@@ -49,31 +50,31 @@ Pour activer ou désactiver Bookings pour votre organisation à l’aide de l’
 
 ### <a name="granular-controls"></a>Contrôles granulaires
 
-Utilisez les paramètres ci-dessous pour contrôler qui peut utiliser Bookings, déterminer quelles informations Bookings sont partagées et si le personnel a besoin d’approbation avant de pouvoir être ajouté à un calendrier Booking.
+Utilisez les paramètres ci-dessous pour contrôler qui peut utiliser Bookings, décider des informations de Bookings qui sont partagées et si le personnel doit être approuvé avant de pouvoir être ajouté à un calendrier Booking.
 
-:::image type="content" source="../media/control-access-sharing-bookings.png" alt-text="Capture d’écran : paramètres qui vous permettent de contrôler qui peut utiliser Bookings, de décider quelles informations Bookings sont partagées et l’approbation du personnel":::
+:::image type="content" source="../media/control-access-sharing-bookings.png" alt-text="Capture d’écran : Paramètres qui vous permettent de contrôler qui peut utiliser Bookings, de décider quelles informations Bookings sont partagées et d’approuver le personnel":::
 
-### <a name="block-bookings-from-outside-your-organization"></a>Bloquer les réservations en dehors de votre organisation
+### <a name="block-bookings-from-outside-your-organization"></a>Bloquer les réservations provenant de l’extérieur de votre organisation
 
-Vous pouvez configurer Bookings pour que seules les personnes de votre organisation puissent réserver des rendez-vous. Seuls les utilisateurs de votre organisation qui se sont connectés et qui sont authentifiés peuvent réserver des rendez-vous.
+Vous pouvez configurer Bookings afin que seules les personnes de votre organisation puissent prendre rendez-vous. Seuls les utilisateurs de votre organisation qui se sont connectés et qui sont authentifiés peuvent prendre rendez-vous.
 
 ### <a name="block-social-sharing-options"></a>Bloquer les options de partage social
 
-Vous pouvez contrôler la façon dont les pages de réservation sont partagées sur les réseaux sociaux. Ce paramètre est disponible dans le Centre d'administration Microsoft 365 sous **Paramètres des paramètres** ->  -> **de l’organisation****Bookings**.
+Vous pouvez contrôler la façon dont les pages de réservation sont partagées sur les réseaux sociaux. Ce paramètre est disponible dans le Centre d'administration Microsoft 365 sous **Paramètres Paramètres** -> **Paramètres de l’organisation** -> **Bookings**.
 
 ### <a name="block-sharing-staff-details-with-customers"></a>Bloquer le partage des détails du personnel avec les clients
 
-Les détails du personnel, tels que les coordonnées, ne seront jamais envoyés aux clients par e-mail ou toute autre communication.
+Les informations du personnel, telles que les coordonnées, ne seront jamais envoyées aux clients par e-mail ou toute autre communication.
 
-### <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Exiger l’approbation du personnel avant de partager des informations de disponibilité
+### <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Exiger les approbations du personnel avant de partager les informations de disponibilité
 
-Vous pouvez demander aux employés de votre organisation de s’inscrire avant que leurs informations de disponibilité ne soient partagées via Bookings et avant qu’elles puissent être réservées via une page de réservation.
+Vous pouvez demander aux employés de votre organisation de s’inscrire avant que leurs informations de disponibilité soient partagées via Bookings et avant qu’ils puissent être réservés via une page de réservation.
 
-Lorsque ce paramètre est activé, les personnes ajoutées en tant que personnel dans les calendriers de réservation reçoivent un e-mail avec un lien pour **approuver/rejeter** la demande.
+Lorsque ce paramètre est activé, les personnes ajoutées en tant que personnel dans les calendriers de réservation reçoivent un e-mail avec un lien **pour Approuver/Rejeter** la demande.
 
 ## <a name="restrict-collection-of-customer-data"></a>Restreindre la collecte des données client
 
-Pour des raisons de conformité, il se peut que vous ne souhaitiez pas collecter certaines informations client. Si vous cochez une case pour l’une de ces options, ces champs ne seront pas inclus dans les formulaires présentés à vos clients ou clients.
+Pour des raisons de conformité, vous ne souhaiterez peut-être pas collecter certaines informations client. Si vous cochez une case pour l’une de ces options, ces champs ne seront pas inclus dans les formulaires présentés à vos clients ou clients.
 
 :::image type="content" source="../media/restrict-collection-customer-data.png" alt-text="Capture d’écran : cochez les cases pour empêcher les clients de partager des données sensibles avec vous":::
 
@@ -81,24 +82,24 @@ Pour des raisons de conformité, il se peut que vous ne souhaitiez pas collecter
 
 Vous pouvez désactiver Bookings pour des utilisateurs individuels.
 
-1. Accédez à la Centre d'administration Microsoft 365, puis sélectionnez **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs**</a>.
+1. Accédez à la Centre d'administration Microsoft 365, puis sélectionnez **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Utilisateurs actifs**</a>.
 
 1. Sélectionnez l’utilisateur souhaité, puis sélectionnez **Licences et applications**.
 
-1. Développez **Applications** et désactivez la case à cocher pour Microsoft Bookings.
+1. Développez **Applications** et décochez la case pour Microsoft Bookings.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Autoriser uniquement les utilisateurs sélectionnés à créer des calendriers Bookings
 
-En utilisant des restrictions de stratégie, vous pouvez empêcher les utilisateurs sous licence de créer des calendriers Bookings. Tous les utilisateurs de votre organisation disposent de licences Bookings, mais seules celles incluses dans la stratégie peuvent créer des calendriers Bookings et avoir un contrôle total sur les personnes qui peuvent accéder aux calendriers qu’ils créent.
+En utilisant des restrictions de stratégie, vous pouvez empêcher les utilisateurs sous licence de créer des calendriers Bookings. Tous les utilisateurs de votre organisation auront des licences Bookings, mais seuls ceux inclus dans la stratégie peuvent créer des calendriers Bookings et avoir un contrôle total sur les personnes autorisées à accéder aux calendriers qu’ils créent.
 
-Les utilisateurs inclus dans cette stratégie peuvent créer des calendriers Bookings et être ajoutés en tant que personnel dans n’importe quelle capacité (y compris le rôle d’administrateur) aux calendriers Bookings existants. Les utilisateurs qui ne sont pas inclus dans cette stratégie ne pourront pas créer de calendriers Bookings et recevront un message d’erreur s’ils tentent de le faire.
+Les utilisateurs inclus dans cette stratégie peuvent créer des calendriers Bookings et peuvent être ajoutés en tant que personnel dans n’importe quelle capacité (y compris le rôle d’administrateur) aux calendriers Bookings existants. Les utilisateurs qui ne sont pas inclus dans cette stratégie ne pourront pas créer de calendriers Bookings et recevront un message d’erreur s’ils tentent de le faire.
 
-Vous devez exécuter les commandes suivantes à l’aide de Exchange Online PowerShell. Pour plus d’informations sur l’exécution Exchange Online applets de commande, consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Vous devez exécuter les commandes suivantes à l’aide de Exchange Online PowerShell. Pour plus d’informations sur l’exécution des applets de commande Exchange Online, consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!IMPORTANT]
 > Les étapes ci-dessous supposent qu’aucune autre stratégie de boîte aux lettres Outlook Web App (OWA) n’a été créée dans votre organisation.
 
-1. Créez une stratégie de boîte aux lettres pour les utilisateurs qui doivent être autorisés à créer des calendriers Bookings. (La création du calendrier Bookings est autorisée par défaut par les nouvelles stratégies de boîte aux lettres.)
+1. Créez une stratégie de boîte aux lettres pour les utilisateurs qui doivent être autorisés à créer des calendriers Bookings. (La création de calendrier Bookings est autorisée par défaut par les nouvelles stratégies de boîte aux lettres.)
 
    ```PowerShell
    New-OwaMailboxPolicy -Name "BookingsCreators"
@@ -106,7 +107,7 @@ Vous devez exécuter les commandes suivantes à l’aide de Exchange Online Powe
 
    Pour plus d’informations, consultez [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy).
 
-2. Affectez cette stratégie aux utilisateurs concernés en exécutant cette commande pour chaque utilisateur que vous souhaitez accorder l’autorisation de créer des calendriers Bookings.
+2. Affectez cette stratégie aux utilisateurs concernés en exécutant cette commande pour chaque utilisateur que vous souhaitez accorder à l’autorisation de créer des calendriers Bookings.
 
    ```PowerShell
    Set-CASMailbox -Identity <someCreator@emailaddress> -OwaMailboxPolicy "BookingsCreators"

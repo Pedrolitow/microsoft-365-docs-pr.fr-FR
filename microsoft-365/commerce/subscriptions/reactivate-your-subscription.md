@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,14 +22,14 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: Les administrateurs peuvent réactiver un abonnement lorsqu’il expire, est désactivé ou annulé, ou si vous avez annulé au milieu d’une période d’abonnement.
+description: Les administrateurs peuvent réactiver un abonnement lorsqu’il expire, est désactivé ou annulé, ou si vous l’avez annulé au milieu d’une période d’abonnement.
 ms.date: 04/07/2021
-ms.openlocfilehash: 4852c4e006bb9a9ae6b45df9ab84290e48b99c87
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a731e1563ad86e83fc33e3b6f8466702c945863d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195740"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735262"
 ---
 # <a name="reactivate-your-microsoft-subscription"></a>Réactiver votre abonnement Microsoft
 
@@ -36,7 +37,7 @@ Vous pouvez réactiver votre abonnement dans le Centre d’administration si : l
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur général ou de facturation pour réactiver un abonnement. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur général ou administrateur de facturation pour réactiver un abonnement. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 **Vous n’êtes pas administrateur ?** Contactez votre administration pour réactiver votre abonnement.
 

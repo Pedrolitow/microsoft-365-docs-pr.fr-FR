@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS auprès de Solutions réseau à Microsoft 365
+title: Connecter vos enregistrements DNS dans Network Solutions à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,21 +22,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: Apprenez à vérifier votre domaine et à configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services dans Les solutions réseau pour Microsoft.
-ms.openlocfilehash: 67939d1c221550ca702c9522541de8e455c1be72
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Apprenez à vérifier votre domaine et à configurer des enregistrements DNS pour le courrier électronique, Skype Entreprise Online et d’autres services dans Solutions réseau pour Microsoft.
+ms.openlocfilehash: f108bf8caef2485c35ded7af9de888798764cadd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178336"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727584"
 ---
-# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Connecter vos enregistrements DNS auprès de Solutions réseau à Microsoft 365
+# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Connecter vos enregistrements DNS dans Network Solutions à Microsoft 365
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
 Si Network Solutions est votre fournisseur d'hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
 
-Une fois ces enregistrements ajoutés à Network Solutions, votre domaine est configuré pour fonctionner avec les services Microsoft.
+Une fois que vous avez ajouté ces enregistrements dans Network Solutions, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
@@ -49,7 +50,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
 
-1. Dans la page d’accueil, sélectionnez **Noms de domaine**.
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
 
 1. Cochez la case en regard du domaine que vous souhaitez modifier.
 
@@ -57,9 +58,9 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste déroulante.":::
 
-1. Faites défiler vers le bas pour sélectionner **Outils avancés**, puis, en regard des **enregistrements DNS avancés**, sélectionnez **GÉRER**.
+1. Faites défiler vers le bas pour sélectionner **Outils avancés**, puis en regard de **Enregistrements DNS avancés**, sélectionnez **GÉRER**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard des enregistrements DNS avancés, sélectionnez GÉRER.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard de Enregistrements DNS avancés, sélectionnez GÉRER.":::
 
    Vous devrez peut-être sélectionner **Continuer** pour accéder à la page Gérer les enregistrements DNS avancés.
 
@@ -80,7 +81,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-add.png" alt-text="Sélectionnez AJOUTER.":::
 
    > [!NOTE]
-   > Sélectionnez **Affichage classique** en haut à droite pour afficher l’enregistrement TXT que vous avez créé.
+   > Sélectionnez **Affichage classique** dans le coin supérieur droit pour afficher l’enregistrement TXT que vous avez créé.
 
    Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
 
@@ -88,9 +89,9 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
 
-1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
+1. Dans le Centre d’administration, accédez aux **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
 
-1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer l’installation**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
@@ -105,17 +106,17 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
 
-1. Dans la page d’accueil, sélectionnez **Noms de domaine**.
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
 
 1. Cochez la case en regard du domaine que vous souhaitez modifier.
 
-1. Sous **Actions**, sélectionnez les trois points, puis **sélectionnez Gérer** dans la liste déroulante.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste déroulante.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste déroulante.":::
 
-1. Faites défiler vers le bas pour sélectionner **Outils avancés**, puis, en regard des **enregistrements DNS avancés**, sélectionnez **GÉRER**.
+1. Faites défiler vers le bas pour sélectionner **Outils avancés**, puis en regard de **Enregistrements DNS avancés**, sélectionnez **GÉRER**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard des enregistrements DNS avancés, sélectionnez GÉRER.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard de Enregistrements DNS avancés, sélectionnez GÉRER.":::
 
    Vous devrez peut-être sélectionner **Continuer** pour accéder à la page Gérer les enregistrements DNS avancés.
 
@@ -129,16 +130,16 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
    |Se rapporte à|Serveur de messagerie|Priorité|Durée de vie|
    |---|---|---|---|
-   |@|*\<domain-key\>*.mail.protection.outlook.com  <br/> **Cette valeur NE PEUT PAS se terminer par un point (.)** <br/> **Note:** Obtenez votre *\<domain-key\>* fichier à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|1 Hour|
+   |@|*\<domain-key\>*.mail.protection.outlook.com  <br/> **Cette valeur NE PEUT PAS se terminer par un point (.)** <br/> **Note:** Obtenez votre à *\<domain-key\>* partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|1 Hour|
 
 1. Sélectionnez **AJOUTER**.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-MX-add.png" alt-text="Sélectionnez AJOUTER.":::
 
    > [!NOTE]
-   > Sélectionnez **Affichage classique** en haut à droite pour afficher l’enregistrement TXT que vous avez créé.
+   > Sélectionnez **Affichage classique** dans le coin supérieur droit pour afficher l’enregistrement TXT que vous avez créé.
 
-1. S’il existe d’autres enregistrements MX, supprimez-les tous en sélectionnant l’outil d’édition, puis **supprimez** pour chaque enregistrement.
+1. S’il existe d’autres enregistrements MX, supprimez-les tous en sélectionnant l’outil d’édition, puis **Supprimer** pour chaque enregistrement.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-edit.png" alt-text="Sélectionnez l’outil Modifier.":::
 
@@ -146,17 +147,17 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
 
-1. Dans la page d’accueil, sélectionnez **Noms de domaine**.
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
 
 1. Cochez la case en regard du domaine que vous souhaitez modifier.
 
-1. Sous **Actions**, sélectionnez les trois points, puis **sélectionnez Gérer** dans la liste déroulante.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste déroulante.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste déroulante.":::
 
-1. Sélectionnez **Outils avancés**, puis, en regard des **enregistrements DNS avancés**, sélectionnez **GÉRER**.
+1. Sélectionnez **Outils avancés**, puis en regard de **Enregistrements DNS avancés**, sélectionnez **GÉRER**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard des enregistrements DNS avancés, sélectionnez GÉRER.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard de Enregistrements DNS avancés, sélectionnez GÉRER.":::
 
    Vous devrez peut-être sélectionner **Continuer** pour accéder à la page Gérer les enregistrements DNS avancés.
 
@@ -166,13 +167,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Sous **Type**, sélectionnez **CNAME** dans la liste déroulante.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname.png" alt-text="Sélectionnez le type CNAME dans la liste déroulante.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname.png" alt-text="Sélectionnez type CNAME dans la liste déroulante.":::
 
-1. Dans les zones de l’enregistrement CNAME, tapez ou copiez et collez les valeurs du tableau suivant.
+1. Dans les zones de l’enregistrement CNAME, tapez ou copiez-collez les valeurs du tableau suivant.
 
    |Se rapporte à|Nom d’hôte|Alias to (Alias vers)|Durée de vie|
    |---|---|---|---|
-   |Autre hôte|autodiscover|autodiscover.outlook.com **Cette valeur NE PEUT PAS se terminer par un point (.)** <br/> 1 Hour|
+   |Autre hôte|autodiscover|autodiscover.outlook.com **Cette valeur ne peut pas se terminer par un point (.)** <br/> 1 Hour|
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname-values.png" alt-text="Tapez ou copiez et collez les valeurs CNAME de la table dans la fenêtre.":::
 
@@ -188,17 +189,17 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
 
-1. Dans la page d’accueil, sélectionnez **Noms de domaine**.
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
 
 1. Cochez la case en regard du domaine que vous souhaitez modifier.
 
-1. Sous **Actions**, sélectionnez les trois points, puis **sélectionnez Gérer** dans la liste déroulante.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste déroulante.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste déroulante.":::
 
-1. Sélectionnez **Outils avancés**, puis, en regard des **enregistrements DNS avancés**, sélectionnez **GÉRER**.
+1. Sélectionnez **Outils avancés**, puis en regard de **Enregistrements DNS avancés**, sélectionnez **GÉRER**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard des enregistrements DNS avancés, sélectionnez GÉRER.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard de Enregistrements DNS avancés, sélectionnez GÉRER.":::
 
    Vous devrez peut-être sélectionner **Continuer** pour accéder à la page Gérer les enregistrements DNS avancés.
 
@@ -225,23 +226,23 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
 ## <a name="advanced-option-skype-for-business"></a>Option avancée : Skype Entreprise
 
-Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que la conversation, les téléconférences et les appels vidéo, en plus de Microsoft Teams. Skype a besoin de 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur-utilisateur et 2 enregistrements CNAME pour se connecter et connecter les utilisateurs au service.
+Sélectionnez cette option uniquement si votre organisation utilise Skype Entreprise pour les services de communication en ligne tels que les conversations, les téléconférences et les appels vidéo, en plus de Microsoft Teams. Skype a besoin de 4 enregistrements : 2 enregistrements SRV pour la communication utilisateur à utilisateur et 2 enregistrements CNAME pour se connecter et connecter les utilisateurs au service.
 
 ### <a name="add-the-two-required-srv-records"></a>Ajouter les deux enregistrements SRV requis
 
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
 
-1. Dans la page d’accueil, sélectionnez **Noms de domaine**.
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
 
 1. Cochez la case en regard du domaine que vous souhaitez modifier.
 
-1. Sous **Actions**, sélectionnez les trois points, puis **sélectionnez Gérer** dans la liste déroulante.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste déroulante.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste déroulante.":::
 
-1. Sélectionnez **Outils avancés**, puis, en regard des **enregistrements DNS avancés**, sélectionnez **GÉRER**.
+1. Sélectionnez **Outils avancés**, puis en regard de **Enregistrements DNS avancés**, sélectionnez **GÉRER**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard des enregistrements DNS avancés, sélectionnez GÉRER.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard de Enregistrements DNS avancés, sélectionnez GÉRER.":::
 
    Vous devrez peut-être sélectionner **Continuer** pour accéder à la page Gérer les enregistrements DNS avancés.
 
@@ -274,21 +275,21 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-### <a name="add-the-two-required-cname-records-for-skype-for-business"></a>Ajouter les deux enregistrements CNAME requis pour Skype Entreprise
+### <a name="add-the-two-required-cname-records-for-skype-for-business"></a>Ajoutez les deux enregistrements CNAME requis pour Skype Entreprise
 
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
 
-1. Dans la page d’accueil, sélectionnez **Noms de domaine**.
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
 
 1. Cochez la case en regard du domaine que vous souhaitez modifier.
 
-1. Sous **Actions**, sélectionnez les trois points, puis **sélectionnez Gérer** dans la liste déroulante.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste déroulante.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste déroulante.":::
 
-1. Sélectionnez **Outils avancés**, puis, en regard des **enregistrements DNS avancés**, sélectionnez **GÉRER**.
+1. Sélectionnez **Outils avancés**, puis en regard de **Enregistrements DNS avancés**, sélectionnez **GÉRER**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard des enregistrements DNS avancés, sélectionnez GÉRER.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard de Enregistrements DNS avancés, sélectionnez GÉRER.":::
 
    Vous devrez peut-être sélectionner **Continuer** pour accéder à la page Gérer les enregistrements DNS avancés.
 
@@ -298,9 +299,9 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
 1. Sous **Type**, sélectionnez **CNAME** dans la liste déroulante.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname.png" alt-text="Sélectionnez le type CNAME dans la liste déroulante.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname.png" alt-text="Sélectionnez type CNAME dans la liste déroulante.":::
 
-1. Dans les zones de l’enregistrement CNAME, tapez ou copiez et collez les valeurs du tableau suivant.
+1. Dans les zones de l’enregistrement CNAME, tapez ou copiez-collez les valeurs du tableau suivant.
 
    |Type|Se rapporte à|Nom d’hôte|Alias to (Alias vers)|Durée de vie|
    |---|---|---|---|---|
@@ -321,23 +322,23 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et mobile Gestion des appareils pour Microsoft 365
 
-Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. Mobile Gestion des appareils a besoin de 2 enregistrements CNAME pour permettre aux utilisateurs d’inscrire des appareils auprès du service.
+Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. Mobile Gestion des appareils a besoin de 2 enregistrements CNAME pour permettre aux utilisateurs d’inscrire des appareils au service.
 
-### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Ajouter les deux enregistrements CNAME requis pour Mobile Gestion des appareils
+### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Ajoutez les deux enregistrements CNAME requis pour Mobile Gestion des appareils
 
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
 
-1. Dans la page d’accueil, sélectionnez **Noms de domaine**.
+1. Sur la page d’accueil, sélectionnez **Noms de domaine**.
 
 1. Cochez la case en regard du domaine que vous souhaitez modifier.
 
-1. Sous **Actions**, sélectionnez les trois points, puis **sélectionnez Gérer** dans la liste déroulante.
+1. Sous **Actions**, sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste déroulante.
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste déroulante.":::
 
-1. Sélectionnez **Outils avancés**, puis, en regard des **enregistrements DNS avancés**, sélectionnez **GÉRER**.
+1. Sélectionnez **Outils avancés**, puis en regard de **Enregistrements DNS avancés**, sélectionnez **GÉRER**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard des enregistrements DNS avancés, sélectionnez GÉRER.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En regard de Enregistrements DNS avancés, sélectionnez GÉRER.":::
 
    Vous devrez peut-être sélectionner **Continuer** pour accéder à la page Gérer les enregistrements DNS avancés.
 
@@ -347,9 +348,9 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
 1. Sous **Type**, sélectionnez **CNAME** dans la liste déroulante.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname.png" alt-text="Sélectionnez le type CNAME dans la liste déroulante.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname.png" alt-text="Sélectionnez type CNAME dans la liste déroulante.":::
 
-1. Dans les zones de l’enregistrement CNAME, tapez ou copiez et collez les valeurs du tableau suivant.
+1. Dans les zones de l’enregistrement CNAME, tapez ou copiez-collez les valeurs du tableau suivant.
 
    |Type|Se rapporte à|Nom d’hôte|Alias to (Alias vers)|Durée de vie|
    |---|---|---|---|---|

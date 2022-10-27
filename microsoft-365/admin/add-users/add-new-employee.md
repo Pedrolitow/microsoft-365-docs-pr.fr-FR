@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,19 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
-description: Les administrateurs peuvent apprendre à ajouter de nouveaux employés à Microsoft 365 pour les entreprises et à leur donner accès aux applications de messagerie, Skype et Office.
-ms.openlocfilehash: a913a9d09fc53b90b04606ad4660c62fb7018c9e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Les administrateurs peuvent apprendre à ajouter de nouveaux employés à Microsoft 365 pour les entreprises et à leur donner accès à la messagerie, Skype et aux applications Office.
+ms.openlocfilehash: 6e30e31f41bb714324b3a8e0f7caf9e03e6ccd5f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165248"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722195"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Ajouter un nouvel employé à Microsoft 365
 
-Cet article vous aide à intégrer un nouvel employé à Microsoft 365 pour les entreprises. Nous partons du principe que vous êtes un Administration et que vous avez déjà [terminé la configuration de Microsoft 365](../setup/setup.md), et que vous avez maintenant un nouveau membre de votre entreprise.
+Cet article vous aide à intégrer un nouvel employé à Microsoft 365 pour les entreprises. Nous supposons que vous êtes un Administration et que vous avez déjà terminé la [configuration de Microsoft 365](../setup/setup.md), et que vous avez maintenant une nouvelle personne qui rejoint votre entreprise.
   
-Vous êtes au bon endroit si votre nouvel employé a besoin de Microsoft 365 et que vous utilisez un [plan Microsoft 365](https://products.office.com/business/compare-office-365-for-business-plans) qui vous permet d’installer des applications Office comme Word et Excel sur un ordinateur. 
+Vous êtes au bon endroit si votre nouvel employé a besoin de Microsoft 365 et que vous utilisez une [offre Microsoft 365](https://products.office.com/business/compare-office-365-for-business-plans) qui vous permet d’installer des applications Office telles que Word et Excel sur un ordinateur. 
   
  **Vous n’êtes pas administrateur ?** [Apprenez à vous y retrouver Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) aide les entreprises et les particuliers à s'installer. 
   
@@ -46,19 +47,19 @@ Voici une vue d’ensemble rapide :
 |**Étape**|**Pourquoi faire ça ?**|
 |:-----|:-----|
 |[Étape 1 : Créer un compte Microsoft 365 pour l’employé](#step-1-create-a-microsoft-365-account-for-the-employee) <br/> |Chaque fois qu’un nouvel employé rejoint votre entreprise, créez un compte pour lui afin qu’il puisse commencer à utiliser Microsoft 365.  <br/> |
-|[Étape 2 : Donner à l’employé son ID d’utilisateur et son mot de passe](#step-2-give-the-employee-their-user-id-and-password) <br/> |Lorsque vous créez un compte, vous obtenez un ID et un mot de passe que vous pouvez transmettre à votre employé afin qu’il puisse se connecter.  <br/> |
+|[Étape 2 : Donnez à l’employé son ID d’utilisateur et son mot de passe](#step-2-give-the-employee-their-user-id-and-password) <br/> |Lorsque vous créez un compte, vous obtenez un ID et un mot de passe que vous pouvez passer à votre employé pour qu’il puisse se connecter.  <br/> |
 |[Étape 3 : Expliquer où se connecter](#step-3-explain-where-to-sign-in) <br/> |L’emplacement de connexion est [https://www.office.com](https://www.office.com) <br/> |
-|[Étape 4 : Aider votre employé à démarrer](#step-4-help-your-employee-get-started) <br/> |Indiquez à votre employé comment utiliser OneDrive ou tous les sites d’équipe de votre organisation.  <br/> |
+|[Étape 4 : Aider votre employé à démarrer](#step-4-help-your-employee-get-started) <br/> |Indiquez à votre employé comment utiliser OneDrive ou n’importe quel site d’équipe de votre organisation.  <br/> |
    
 ## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>Étape 1 : Créer un compte Microsoft 365 pour l’employé
 
 
-Pour obtenir des instructions, consultez [Ajouter des utilisateurs et attribuer des licences en même temps](add-users.md). Lorsque vous configurez votre nouvel employé, vous pouvez choisir d’envoyer des détails de connexion au compte personnel de l’employé. De cette façon, ils recevront un e-mail de Microsoft Online Service Team qui leur indique comment se connecter à Microsoft 365.
+Pour obtenir des instructions, consultez [Ajouter des utilisateurs et attribuer des licences en même temps](add-users.md). Lorsque vous configurez votre nouvel employé, vous pouvez choisir d’envoyer les détails de connexion au compte personnel de l’employé. De cette façon, ils recevront un e-mail de l’équipe Microsoft Online Service qui leur indique comment se connecter à Microsoft 365.
   
-## <a name="step-2-give-the-employee-their-user-id-and-password"></a>Étape 2 : Donner à l’employé son ID d’utilisateur et son mot de passe
+## <a name="step-2-give-the-employee-their-user-id-and-password"></a>Étape 2 : Donnez à l’employé son ID d’utilisateur et son mot de passe
 
 
-Sauf si vous l’avez envoyé à son adresse e-mail personnelle, imprimez le nom de connexion et le mot de passe de l’employé, puis remettez-le-lui. Ou dites-leur les au téléphone.
+Sauf si vous l’avez envoyé à son adresse e-mail personnelle, imprimez le nom de connexion et le mot de passe de l’employé, puis passez-les à leur disposition. Ou dites-leur les informations par téléphone.
   
 Étant donné qu’ils n’auront pas encore accès à leur adresse e-mail, n’envoyez pas les informations à cette adresse e-mail.
   
@@ -74,7 +75,7 @@ Tout comme Facebook, Amazon ou Gmail, votre employé se connecte pour utiliser M
 ## <a name="step-4-help-your-employee-get-started"></a>Étape 4 : Aider votre employé à démarrer
 
 
-Partagez avec eux la [configuration rapide de l’employé pour Que Microsoft 365](../setup/employee-quick-setup.md) se connecte, installe des logiciels, configure le courrier électronique, etc. 
+Partagez avec eux la [configuration rapide des employés pour Microsoft 365](../setup/employee-quick-setup.md) pour se connecter, installer des logiciels, configurer la messagerie électronique, etc. 
   
 Voici une référence rapide pour les aider à démarrer :
   

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +20,12 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Pour les fournisseurs de services managés (MSP), découvrez comment Microsoft 365 Lighthouse peuvent vous aider à sécuriser et à gérer les locataires clients dans un emplacement unique.
-ms.openlocfilehash: 209c7ef0ea18ff9835d62161e4fa69732abb1342
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: bcdd9c4c9ce65ba6ff24f5759cb7632a28dbc95d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68663080"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720743"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble de Microsoft 365 Lighthouse
 

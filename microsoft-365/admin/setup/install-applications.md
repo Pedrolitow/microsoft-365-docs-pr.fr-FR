@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -28,12 +29,12 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Maintenant que vous avez configuré Microsoft 365, découvrez comment installer des applications Office individuelles sur votre Mac, PC ou appareils mobiles.
-ms.openlocfilehash: 7b2e6a981ddaa0e2497fb722687d3ad0774c830c
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: fd23bee7ca20b3be2de501849cc0ae9bdcee1d5d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492200"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727782"
 ---
 # <a name="install-office-applications"></a>Installer les applications Office
 
@@ -45,7 +46,7 @@ Maintenant que vous avez configuré Microsoft 365, vous pouvez installer des app
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
-Les applications Microsoft Office sont disponibles dans votre menu  **Démarrer** . Si vous ne les voyez pas, vous pouvez les installer vous-même.
+Les applications Microsoft Office se trouvent dans votre menu  **Démarrer** . Si vous ne les voyez pas, vous pouvez les installer vous-même.
 
 1. Accédez à Office.com. Vous devrez peut-être vous connecter avec votre compte professionnel.
 2. Sélectionnez **Installer Office**  >   **Microsoft 365 apps**  >  **Exécuter**, puis sélectionnez **Oui**.
@@ -55,7 +56,7 @@ Les applications Microsoft Office sont disponibles dans votre menu  **Démarrer*
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Suivez ces liens pour plus d’informations sur les éléments suivants :
+Suivez ces liens pour plus d’informations sur la façon de :
   
 - Installer les applications Office : [Installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 

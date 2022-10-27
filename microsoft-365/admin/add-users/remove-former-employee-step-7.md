@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Une fois que vous avez enregistré et accédé à toutes les données utilisateur d’un ancien employé, vous pouvez supprimer le compte de l’ancien employé dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: ad3d40aada0b73f82ffad702aebbbea3605b985d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 2ebcb18bfadbce8be55585d031bc0d3bb59710a2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205242"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721623"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : Supprimer le compte d’utilisateur d’un ancien employé
 
@@ -41,10 +42,10 @@ Une fois que vous avez enregistré et consulté les données utilisateur de l'an
 > Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-2. Sélectionnez le nom de l’employé à supprimer.
-3. Sous le nom de l’utilisateur, **sélectionnez Supprimer l’utilisateur**. Choisissez les options souhaitées pour cet utilisateur, puis sélectionnez **Supprimer l’utilisateur**. Si vous avez déjà accordé à un autre utilisateur l’accès à l’e-mail de cet utilisateur et à OneDrive, vous n’avez pas à le refaire ici.
+2. Sélectionnez le nom de l’employé que vous souhaitez supprimer.
+3. Sous le nom de l’utilisateur, sélectionnez **Supprimer l’utilisateur**. Choisissez les options souhaitées pour cet utilisateur, puis sélectionnez **Supprimer l’utilisateur**. Si vous avez déjà accordé à un autre utilisateur l’accès à l’e-mail de cet utilisateur et à OneDrive, vous n’avez pas besoin de le refaire ici.
 
-Lorsque vous supprimez un utilisateur, le compte devient inactif pendant 30 jours environ. Vous avez d’ici là à restaurer le compte avant qu’il ne soit définitivement supprimé.
+Lorsque vous supprimez un utilisateur, le compte devient inactif pendant 30 jours environ. Vous devez restaurer le compte avant sa suppression définitive.
 
 ## <a name="watch-delete-a-former-employees-user-account"></a>Regarder : Supprimer le compte d’utilisateur d’un ancien employé
 

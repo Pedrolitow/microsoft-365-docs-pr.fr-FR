@@ -16,6 +16,7 @@ ms.collection:
 - Strat_O365_IP
 - m365initiative-defender-office365
 - EngageScoreSep2022
+- ContentEngagementFY23
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -23,12 +24,12 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2ad4ab1bb3a3cdd4eb4cd05f4fefc0deedb326b1
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 98adc937847fbdf831d29902dbd5f96a6e5df0bb
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68069180"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736494"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -53,7 +54,7 @@ Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
 - **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains during the last 7 days, and allow or block those senders. For more information, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
-- **Autoriser ou bloquer les expéditeurs usurpés dans la liste d’autorisation/de** blocage du locataire : lorsque vous remplacez le verdict dans l’insight d’intelligence de l’usurpation d’identité, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisations/blocs du locataire. Vous pouvez également créer manuellement des entrées d'autorisation ou de blocage pour les faux expéditeurs avant qu'ils ne soient détectés par la veille contre l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](manage-tenant-allow-block-list.md).
+- **Autoriser ou bloquer les expéditeurs usurpés dans la liste verte/bloquée du locataire** : lorsque vous remplacez le verdict dans l’insight d’usurpation d’identité, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Expéditeurs usurpés** dans la liste verte/bloquée du locataire. Vous pouvez également créer manuellement des entrées d'autorisation ou de blocage pour les faux expéditeurs avant qu'ils ne soient détectés par la veille contre l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](manage-tenant-allow-block-list.md).
 
 - **Stratégies anti-hameçonnage** : dans EOP et Microsoft Defender pour Office 365, les stratégies anti-hameçonnage contiennent les paramètres suivants contre l’usurpation d’adresse :
   - Activer ou désactiver la veille contre l’usurpation d’identité.
@@ -169,7 +170,7 @@ Pour aider les messages de la liste de diffusion à passer les vérifications d�
 
   - Créez des règles de boîte aux lettres dans votre client de messagerie électronique pour déplacer les messages vers la Boîte de réception. Vous pouvez également demander à vos administrateurs de configurer les remplacements, comme décrit dans [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md) et [Gérer les listes rouge/verte du client](manage-tenant-allow-block-list.md).
 
-  - Utilisez la liste d’adresses client autoriser/bloquer pour créer un remplacement pour la liste de publipostage afin de la traiter comme légitime. Pour plus d’informations, consultez [Créer des entrées d’autorisation pour les expéditeurs usurpés d’identité](allow-block-email-spoof.md#create-allow-entries-for-spoofed-senders).
+  - Utilisez la liste d’adresses client autoriser/bloquer pour créer un remplacement pour la liste de publipostage afin de la traiter comme légitime. Pour plus [d’informations, consultez Créer des entrées d’autorisation pour les expéditeurs usurpés](allow-block-email-spoof.md#create-allow-entries-for-spoofed-senders).
 
 En cas d’échec de l’opération, vous pouvez signaler le message à Microsoft comme étant un faux positif. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 

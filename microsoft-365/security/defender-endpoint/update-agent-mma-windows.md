@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 10/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: pahuijbr
 search.appverid: met150
-ms.openlocfilehash: 48642c497be5b379e5d72c4e6538ffd1997b30bf
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: d55378b288159b4dcf79c4297e1aeb04e9e364a2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688947"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728156"
 ---
 # <a name="updating-mma-on-windows-devices-for-microsoft-defender-for-endpoint"></a>Mise à jour de MMA sur les appareils Windows pour Microsoft Defender pour point de terminaison
 
@@ -33,14 +33,12 @@ ms.locfileid: "68688947"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Si vous utilisez Microsoft Monitoring Agent (MMA) sur des appareils Windows, vous devez maintenir cet agent à jour. Avec l’agent moderne et unifié pour Windows Server 2012 R2 et Windows Server 2016, vous devez plutôt migrer vers la nouvelle solution. 
+Si vous utilisez Microsoft Monitoring Agent (MMA) sur des appareils Windows, il est important de maintenir cet agent à jour. Pour Windows Server 2012 R2 et Windows Server 2016, Microsoft recommande la mise à niveau vers le nouvel agent unifié pour Defender pour point de terminaison. Cet article décrit les opérations suivantes : 
 
-- [Mettre à jour Microsoft Monitoring Agent (MMA) sur vos appareils](#option-1-update-mma-on-your-devices)
-- [Utiliser un nouvel agent sur Windows Server 2012 R2 ou Windows Server 2016](#option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016)
+- **[Mettez à jour MMA sur vos appareils](#update-mma-on-your-devices)** (pour les appareils exécutant Windows 7 SP1 Entreprise, Windows 7 SP1 Professionnel, Windows 8.1 Professionnel, Windows 8.1 Entreprise et Windows Server 2008 R2 SP1).
+- **[Effectuez une mise à niveau vers le nouvel agent unifié pour Defender pour point de terminaison](#upgrade-to-the-new-unified-agent-for-defender-for-endpoint)** (pour les appareils exécutant Windows Server 2012 R2 et Windows Server 2016).
 
-Cet article décrit les deux options et inclut des liens vers des informations supplémentaires.
-
-## <a name="option-1-update-mma-on-your-devices"></a>Option 1 : Mettre à jour MMA sur vos appareils
+## <a name="update-mma-on-your-devices"></a>Mettre à jour MMA sur vos appareils
 
 *Cette option s’applique aux appareils exécutant Windows 7 SP1 Entreprise, Windows 7 SP1 Professionnel, Windows 8.1 Professionnel, Windows 8.1 Entreprise et Windows Server 2008 R2 SP1.* 
 
@@ -53,7 +51,7 @@ Cet article décrit les deux options et inclut des liens vers des informations s
    - **Agent Windows 64 bits** : [https://go.microsoft.com/fwlink/?LinkId=828603](https://go.microsoft.com/fwlink/?LinkId=828603)
    - **Agent Windows 32 bits** : [https://go.microsoft.com/fwlink/?LinkId=828604](https://go.microsoft.com/fwlink/?LinkId=828604)
 
-## <a name="option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016"></a>Option 2 : Utiliser un nouvel agent sur Windows Server 2012 R2 ou Windows Server 2016
+## <a name="upgrade-to-the-new-unified-agent-for-defender-for-endpoint"></a>Mise à niveau vers le nouvel agent unifié pour Defender pour point de terminaison
 
 *Cette option s’applique aux serveurs exécutant Windows Server 2012 R2 et Windows Server 2016.*
 
@@ -77,3 +75,9 @@ Un nouvel agent a été publié en avril 2022 pour Windows Server 2012 R2 et Win
 
 > [!IMPORTANT]
 > Les appareils exécutant Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 ou Windows Server 2016 qui n’ont pas été mis à niveau vers la [nouvelle solution unifiée](application-deployment-via-mecm.md) restent dépendants de MMA. Dans ce cas, [AMA](/azure/azure-monitor/agents/agents-overview) ne peut pas être utilisé comme substitut de Defender pour point de terminaison. 
+
+## <a name="see-also"></a>Voir aussi
+
+- [Passez de la protection de point de terminaison non-Microsoft à Microsoft Defender pour point de terminaison](switch-to-mde-overview.md)
+- [Vue d’ensemble du déploiement Microsoft Defender pour point de terminaison](deployment-phases.md)
+- [Intégrer au service Microsoft Defender pour point de terminaison](onboarding.md)

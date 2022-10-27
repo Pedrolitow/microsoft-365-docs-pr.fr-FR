@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,28 +23,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur ou retournez la licence pour ne pas la payer. '
+description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’attribuer à un autre utilisateur ou renvoyez la licence afin que vous ne la payiez pas. '
 ms.date: 04/22/2022
-ms.openlocfilehash: 94b9a6948d6ecbd3d6e34ae9e3e8402f4c1e0d36
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bc54065556b7c23e135c774f446bf8f8776be5ce
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166788"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727430"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
-Les boîtes aux lettres partagées ne nécessitent généralement pas de licence. Suivez ces instructions pour supprimer une licence d’une boîte aux lettres partagée afin de pouvoir l’attribuer à un utilisateur ou renvoyer la licence afin de ne pas payer pour une licence dont vous n’avez pas besoin.
+Les boîtes aux lettres partagées ne nécessitent généralement pas de licence. Suivez ces instructions pour supprimer une licence d’une boîte aux lettres partagée afin de pouvoir l’attribuer à un utilisateur ou retourner la licence afin de ne pas payer pour une licence dont vous n’avez pas besoin.
 
 > [!NOTE]
 >
 > Une licence Exchange Online Plan 2 est requise dans les scénarios suivants :
 >
-> - La boîte aux lettres partagée contient plus de 50 Go de stockage.
+> - La boîte aux lettres partagée a plus de 50 Go de stockage en cours d’utilisation.
 > - La boîte aux lettres partagée utilise l’archivage sur place.
-> - La boîte aux lettres partagée est placée en conservation des litiges.
+> - La boîte aux lettres partagée est placée en attente pour litige.
 > 
-> Pour obtenir des instructions pas à pas sur l’attribution de licences, consultez [Affecter des licences aux utilisateurs](/microsoft-365/admin/manage/assign-licenses-to-users). 
+> Pour obtenir des instructions pas à pas sur l’attribution de licences, consultez [Attribuer des licences à des utilisateurs](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 
 ## <a name="remove-the-license"></a>Supprimer la licence
@@ -61,15 +62,15 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
 ::: moniker-end
 
    > [!NOTE]
-   > Vous devez supprimer la licence de la page Utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page boîte aux lettres partagée, car les licences sont des paramètres utilisateur.
+   > Vous devez supprimer la licence de la page Utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page Boîte aux lettres partagée, car les licences sont des paramètres utilisateur.
   
 2. Sélectionnez la boîte aux lettres partagée.
 
-3. Dans l’onglet **Licences et applications** , développez **Licences** et décochez la case correspondant à la licence à supprimer.
+3. Dans l’onglet **Licences et applications** , développez **Licences** et décochez la case de la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer les modifications**.
 
-5. Lorsque vous revenez à la page **Utilisateurs actifs** , l’état de la boîte aux **lettres** partagée est désactivé.
+5. Lorsque vous revenez à la page **Utilisateurs actifs** , l’état de la boîte aux lettres partagée est **Sans licence**.
 
 6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement](../../commerce/licenses/buy-licenses.md).
 

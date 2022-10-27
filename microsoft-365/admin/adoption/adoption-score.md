@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 monikerRange: o365-worldwide
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,17 +22,17 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Découvrez comment le score d’adoption de Microsoft reflète les mesures de l’expérience des personnes et de la technologie et les compare à des organisations de taille similaire.
-ms.openlocfilehash: 83170a50a473c24656e10ce57cea4bc44c3767fc
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+description: Découvrez comment le score d’adoption de Microsoft reflète les mesures de l’expérience des personnes et de la technologie et comparez-les à des organisations de taille similaire.
+ms.openlocfilehash: 46af48a0cbb8b686657a40502a8ea1e5206baa53
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621028"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721227"
 ---
 # <a name="microsoft-adoption-score"></a>Score d’adoption de Microsoft 
 
-Adoption Score prend en charge le parcours de transformation numérique avec des insights sur la façon dont votre organisation utilise Microsoft 365 et les expériences technologiques qui la prennent en charge. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies, et vous pouvez le comparer aux benchmarks d’organisations d’une taille semblable à la vôtre.
+Le score d’adoption prend en charge le parcours vers la transformation numérique avec des insights sur la façon dont votre organisation utilise Microsoft 365 et les expériences technologiques qui le prennent en charge. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies, et vous pouvez le comparer aux benchmarks d’organisations d’une taille semblable à la vôtre.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53oqt?autoplay=false]
 
@@ -47,31 +48,31 @@ Nous fournissons des mesures, des informations et des recommandations dans deux 
 
     Pour chacune des catégories mentionnées, nous examinons la recherche publique pour identifier des pratiques recommandées et des avantages associés sous la forme d’une efficacité organisationnelle. Par exemple, les recherches Forrester ont montré que lorsque des personnes collaborent et partagent du contenu dans le cloud (au lieu d’envoyer des pièces jointes par courrier électronique), elles peuvent enregistrer jusqu’à 100 minutes par semaine. De plus, nous quantifions l’utilisation de ces pratiques recommandées au sein de votre organisation pour vous aider à déterminer où vous êtes sur votre transformation numérique. 
 
-- **Expériences technologiques :** votre organisation dépend de technologies fiables et performantes, ainsi que de l’utilisation efficace de Microsoft 365. Les [analyses de point de terminaison](https://aka.ms/endpointanalytics) vous aident à comprendre comment l’organisateur peut être affectée par des problèmes de performances et d’intégrité de votre matériel et de vos logiciels. [La connectivité réseau](../../enterprise/microsoft-365-networking-overview.md) vous aide à comprendre les performances d’Exchange, SharePoint et Microsoft Teams sur votre architecture réseau. Vous pouvez passer en revue et mettre à jour les paramètres réseau pour améliorer la connectivité. L’état d’intégrité des applications Microsoft 365 vous permet de comprendre si les appareils de votre organisation exécutent les applications Microsoft 365 sur les canaux recommandés.
+- **Expériences technologiques :** votre organisation dépend de technologies fiables et performantes, ainsi que de l’utilisation efficace de Microsoft 365. Les [analyses de point de terminaison](https://aka.ms/endpointanalytics) vous aident à comprendre comment l’organisateur peut être affectée par des problèmes de performances et d’intégrité de votre matériel et de vos logiciels. [La connectivité réseau](../../enterprise/microsoft-365-networking-overview.md) vous aide à comprendre les performances d’Exchange, SharePoint et Microsoft Teams sur votre architecture réseau. Vous pouvez consulter et mettre à jour les paramètres réseau pour améliorer la connectivité. L’état d’intégrité des applications Microsoft 365 vous permet de comprendre si les appareils de votre organisation exécutent les applications Microsoft 365 sur les canaux recommandés.
 
 > [!NOTE]
-> Tous les insights sont calculés à l’aide de données au niveau de l’organisation, et non au niveau individuel.
+> Toutes les informations sont calculées à l’aide de données au niveau de l’organisation, et non au niveau individuel.
 
 ## <a name="how-to-turn-on-adoption-score"></a>Comment activer le score d’adoption
 
 Pour activer le score d’adoption :
 
-1. Connectez-vous au Centre d'administration Microsoft 365 en tant qu’administrateur général et accédez au **score d’adoption** **des rapports** > 
+1. Connectez-vous au Centre d'administration Microsoft 365 en tant qu’administrateur général et accédez au **score d’adoption** **des rapports** > .
 2. Sélectionnez **Activer le score d’adoption**. La disponibilité des insights peut prendre jusqu’à 24 heures.
 
 > [!NOTE]
-> Seul un professionnel de l’informatique doté du rôle d’administrateur général peut accepter le score d’adoption.
+> Seul un professionnel de l’informatique disposant du rôle Administrateur général peut accepter le score d’adoption.
 
-Visitez [les contrôles de confidentialité du score d’adoption pour](privacy.md) en savoir plus sur les options de configuration des expériences des personnes pour votre organisation.
+Consultez [contrôles de confidentialité pour le score d’adoption](privacy.md) pour en savoir plus sur les options de configuration des expériences de personnes pour votre organisation.
 
-## <a name="adoption-score-prerequisites"></a>Conditions préalables au score d’adoption
+## <a name="adoption-score-prerequisites"></a>Prérequis pour le score d’adoption
 
 Pour les données sur les expériences des personnes, vous avez besoin d’un abonnement Microsoft 365 Entreprise ou Office 365 Entreprise. Pour les données d’analyse de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous disposez d’Intune, vous pouvez activer les analyses de point de terminaison au sein de l’expérience Intune. Pour en savoir plus sur Microsoft Intune, voir la [Documentation Microsoft Intune](/mem/intune/).
 
 > [!NOTE]
 > Une licence pour Viva Insights n’est pas nécessaire pour obtenir les fonctionnalités du score d’adoption.
 
-Le score d’adoption n’est disponible que dans le Centre d'administration Microsoft 365 et est accessible uniquement aux professionnels de l’informatique qui ont l’un des rôles suivants :  
+Le score d’adoption n’est disponible que dans le Centre d'administration Microsoft 365 et n’est accessible que par les professionnels de l’informatique qui ont l’un des rôles suivants :  
 
 - Administrateur général
 - Administrateurs Exchange
@@ -83,18 +84,18 @@ Le score d’adoption n’est disponible que dans le Centre d'administration Mic
 - Lecteur Rapports de synthèse de l’utilisation
 - Gestionnaire de réussite de l’expérience utilisateur
 
-Le modèle de contrôle d’accès en fonction du rôle pour le score d’adoption aide les organisations à poursuivre les efforts de transformation numérique avec Microsoft 365 en offrant la flexibilité nécessaire pour attribuer des rôles aux professionnels de l’informatique au sein d’une organisation.
+Le modèle de contrôle d’accès en fonction du rôle pour le score d’adoption aide les organisations à poursuivre leurs efforts de transformation numérique avec Microsoft 365 en offrant la flexibilité nécessaire pour attribuer des rôles aux professionnels de l’informatique au sein d’une organisation.
 
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
-Vous pouvez accéder à l’expérience à partir de Administration Microsoft 365 domicile sous Score **d’adoption** **des rapports** > .
+Vous pouvez accéder à l’expérience à partir de Administration Microsoft 365 accueil sous **Score d’adoption** **des rapports** > .
 
 > [!NOTE]
 > Cette fonctionnalité n’est pas disponible dans les locataires GCC High, GCC et DOD.
   
 ## <a name="how-the-score-is-calculated"></a>Mode de calcul du score
 
-Votre score d’adoption est basé sur les scores combinés de vos personnes et des catégories d’expériences technologiques. Chaque catégorie est pondérée de façon égale, avec un total de 100 points. Le score d’adoption le plus élevé possible est 800.
+Votre score d’adoption est basé sur les scores combinés de vos catégories de personnes et d’expériences technologiques. Chaque catégorie est pondérée de façon égale, avec un total de 100 points. Le score d’adoption le plus élevé possible est de 800.
 
 ### <a name="score-categories"></a>Catégories de niveau
 
@@ -112,15 +113,15 @@ Dans chaque catégorie de score, nous quantifions les indicateurs clés qui dét
 
 ### <a name="products-included-in-adoption-score"></a>Produits inclus dans le score d’adoption 
 
-Le score d’adoption inclut les données d’Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer et Skype.
+Le score d’adoption inclut des données provenant d’Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer et Skype.
 
 Le score de votre organisation est mis à jour quotidiennement et reflète les actions des utilisateurs effectuées au cours des 28 derniers jours (y compris le jour actuel).
 
 ## <a name="interpreting-your-organizations-adoption-score"></a>Interprétation du score d’adoption de votre organisation 
 
-La page d’accueil du score d’adoption affiche l’historique des scores et des scores totaux de votre organisation, ainsi que l’insight principal pour chaque catégorie.
+La page d’accueil Score d’adoption affiche le score total et l’historique des scores de votre organisation, ainsi que les informations principales pour chaque catégorie.
 
-:::image type="content" source="../../media/prodscore-landing.png" alt-text="Page Score d’adoption dans les rapports." lightbox="../../media/prodscore-landing.png":::
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Page Score d’adoption dans Rapports." lightbox="../../media/prodscore-landing.png":::
 
 **Le scorede votre organisation** s’affiche sous la forme d’une valeur en pourcentage et en points. Vous pouvez voir les points au niveau du numérateur et le nombre maximal de points possibles dans le dénominateur.
 
@@ -133,7 +134,7 @@ Le point de référence par les pairs de l’analyse de point de terminaison inc
 
 Pour la connectivité réseau, le point de référence recommandé est de 80 points.
 
-La section **Répartition du score** fournit une répartition de votre score d’adoption avec des critères par personnes et des domaines d’expérience technologique.
+La section **Répartition** des scores fournit une répartition de votre score d’adoption avec des points de référence par personnes et domaines d’expérience technologique.
 
 L’historique des niveaux indique la façon dont votre niveau dans chaque catégorie a évolué au cours des six derniers mois.
 
@@ -174,7 +175,7 @@ Ce rapport permet aux organisations de comprendre les éléments suivants :
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 
-Partagez vos idées sur le score d’adoption et vos idées sur la façon de l’améliorer. Utilisez les sections **Commentaires** dans le produit et/ou contactez l’équipe du score d’adoption à **adoptscorefeedback@microsoft.com**.
+Partagez vos réflexions sur le score d’adoption et vos idées sur la façon de l’améliorer. Utilisez les sections **Commentaires** dans le produit et/ou contactez l’équipe de score d’adoption à **adoptscorefeedback@microsoft.com**.
 
 ## <a name="related-content"></a>Contenu connexe
 

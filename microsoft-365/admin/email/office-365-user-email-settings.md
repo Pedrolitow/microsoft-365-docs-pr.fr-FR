@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.collection:
+- Tier1
 - scotvorg
 - Adm_O365
 - Adm_TOC
@@ -18,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Cet article vous offre des informations sur la gestion des paramètres pour vos utilisateurs.
-ms.openlocfilehash: 7084210b34c29e2b1b83b6a00fda1e226f732a2a
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cf977625e4bd538481670c730a97eb7855fcdfd0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190350"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727474"
 ---
 # <a name="user-email-settings-in-microsoft-365"></a>Paramètres de la messagerie utilisateur dans Microsoft 365
 
@@ -32,7 +33,7 @@ En tant qu’administrateur d’une organisation, vous pouvez gérer les paramè
 ## <a name="manage-email-settings"></a>Gérer les paramètres de courrier
 
 1. Accédez au centre d’administration sur <https://admin.microsoft.com>.
-2. Accédez à **Utilisateurs** > **actifs** et sélectionnez l’utilisateur pour lequel vous souhaitez gérer les paramètres de messagerie.
+2. Accédez à **Utilisateurs** > **Utilisateurs Utilisateurs actifs** et sélectionnez l’utilisateur pour lequel vous souhaitez gérer les paramètres de messagerie.
 3. Dans le nouveau volet, sélectionnez **Courrier** pour gérer les paramètres de messagerie.
 
 ## <a name="summary-of-email-settings"></a>Synthèse des paramètres de courrier

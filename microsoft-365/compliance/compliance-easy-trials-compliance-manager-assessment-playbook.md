@@ -1,5 +1,5 @@
 ---
-title: Guide de l’utilisateur d’évaluation du Gestionnaire de conformité Microsoft Purview Premium
+title: Guide de l’utilisateur pour les évaluations Premium du Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,18 +16,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Guide de l’utilisateur d’évaluation du Gestionnaire de conformité Microsoft Purview Premium.
+description: Guide de l’utilisateur de l’essai des évaluations Premium du Gestionnaire de conformité Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 1ac89c8a139c0decde42aa2a87733e02f9def957
-ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
+ms.openlocfilehash: e287b12661c57df6bd0f07a1a097d944b37fceab
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68500029"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728068"
 ---
 # <a name="trial-user-guide-microsoft-purview-compliance-manager-premium-assessments"></a>Guide de l’utilisateur d’évaluation : Évaluations Premium du Gestionnaire de conformité Microsoft Purview
 
-Bienvenue dans le guide de l’utilisateur d’évaluation premium du Gestionnaire de conformité Microsoft Purview.
+Bienvenue dans le guide de l’utilisateur de l’évaluation premium du Gestionnaire de conformité Microsoft Purview.
 
 Ce manuel vous aidera à utiliser au mieux votre version d’évaluation gratuite de 90 jours en vous enseignant comment utiliser l’ensemble complet de modèles d’évaluation premium (modules).
 
@@ -45,7 +45,7 @@ Notre [page de vue d’ensemble du Gestionnaire de conformité](compliance-manag
 1. [Filtrer l’affichage de votre tableau de bord](compliance-manager-setup.md#filtering-your-dashboard-view)
 1. [En savoir plus sur les actions d’amélioration](compliance-manager-setup.md#improvement-actions-page)
 1. [Comprendre les évaluations](compliance-manager.md#assessments)
-1. [Effectuez une analyse rapide de votre environnement à l'aide de Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
+1. [Vérifiez rapidement votre environnement à l’aide de l’Configuration Manager conformité Microsoft](compliance-manager-mcca.md)
 
 ## <a name="step-2-configure-compliance-manager"></a>Étape 2 : Configurer le Gestionnaire de conformité
 
@@ -92,7 +92,7 @@ Après avoir démarré la version d’évaluation Premium, vous resterez inform�
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-**Microsoft Learn** : Obtenez des informations détaillées sur le fonctionnement des évaluations Premium du Gestionnaire de conformité et sur la meilleure façon de les implémenter pour votre organisation. Visitez [la documentation.](compliance-manager-templates.md)
+**Microsoft Learn** : Obtenez des informations détaillées sur le fonctionnement des évaluations Premium du Gestionnaire de conformité et sur la façon de les implémenter au mieux pour votre organisation. Visitez [la documentation.](compliance-manager-templates.md)
 
 **Vidéos d’apprentissage** : pour en savoir plus, consultez les vidéos suivantes :
 

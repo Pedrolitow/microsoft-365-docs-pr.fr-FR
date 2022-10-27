@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -25,13 +26,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou la vue de tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: e32c63bee3e780668fe447662d7e840712878744
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou l’affichage tableau de bord pour les paramètres et les tâches plus complexes.
+ms.openlocfilehash: 577ffe7b0193a9838077865eb4e867bb201489f9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68627738"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721406"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 

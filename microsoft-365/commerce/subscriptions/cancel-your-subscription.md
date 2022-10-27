@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
 ms.date: 07/07/2022
-ms.openlocfilehash: 7bce380b2814c9a4235e1e95d78a1caf242df66c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b3d53d5c73a31fcee82c10aa2723c2d45c30849e
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68185818"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720831"
 ---
 # <a name="cancel-your-microsoft-business-subscription"></a>Annuler votre abonnement Microsoft Business
 

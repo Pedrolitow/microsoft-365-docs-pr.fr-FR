@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -23,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment annuler l’abonnement Google Workspace, mais conserver votre domaine.
-ms.openlocfilehash: 1e712e889d0ecc50ec75dfa1ad2dd8a9d47ab258
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Découvrez comment annuler l’abonnement Google Workspace tout en conservant votre domaine.
+ms.openlocfilehash: a6bd04156910f16d413bf502d27fa3deb5c2eb53
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204560"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728442"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Annuler l’abonnement Google Workspace
 
@@ -37,8 +38,8 @@ ms.locfileid: "68204560"
 1. Dans la liste **Abonnements** , choisissez votre abonnement G Suite, **Annuler l’abonnement**, puis **choisissez Continuer**.
 
     > [!IMPORTANT]
-    > votre abonnement sera immédiatement annulé et vous ne pourrez pas annuler cette action.
+    > votre abonnement sera immédiatement annulé et vous ne pouvez pas annuler cette action.
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Capture d’écran de la page De facturation Google Administration.":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Capture d’écran de la page Google Administration Facturation.":::
 
-Notez que vous risquez de ne pas voir l’inscription de domaine dans votre liste d’abonnements si votre fournisseur d’hôte DNS n’est pas des domaines Google.
+Notez que l’inscription de domaine peut ne pas apparaître dans votre liste d’abonnements si votre fournisseur d’hôte DNS n’est pas des domaines Google.
