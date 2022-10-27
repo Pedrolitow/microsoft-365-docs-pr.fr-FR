@@ -1,6 +1,6 @@
 ---
 title: Gestion des risques internes
-description: Découvrez comment configurer la gestion des risques internes.
+description: Découvrez comment configurer la gestion des risques internes. La gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque.
 keywords: Microsoft 365, Microsoft Purview, risque interne, gestion des risques, conformité
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -12,39 +12,45 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: efa2872d7dbece729bd45cfc890fead44b8162d3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+- highpri
+ms.openlocfilehash: c3d4e6662806cbf2a821e0ef4228e5efa87a012e
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621136"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733590"
 ---
 # <a name="insider-risk-management"></a>Gestion des risques internes
 
-De plus en plus, les employés ont davantage accès à la création, à la gestion et au partage de données sur un large éventail de plateformes et de services. Dans la plupart des cas, les organisations disposent de ressources et d’outils limités pour identifier et atténuer les risques à l’échelle de l’organisation tout en répondant aux exigences de conformité et aux normes de confidentialité des employés. Ces risques peuvent inclure le vol de données en quittant les employés et les fuites de données d’informations en dehors de votre organisation par le surpartage accidentel ou une intention malveillante.
+> [!IMPORTANT]
+> Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou par inadvertance, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Conçu avec la confidentialité par défaut, les utilisateurs sont pseudonymisés par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
-Gestion des risques internes Microsoft Purview utilise l’étendue complète du service et des indicateurs tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. En utilisant les journaux d’activité de Microsoft 365 et Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque. Après avoir identifié les risques, vous pouvez prendre des mesures pour atténuer ces risques.
+Les employés ont désormais plus d’accès pour créer, gérer et partager des données sur un large éventail de plateformes et de services. Dans la plupart des cas, les organisations disposent de ressources et d’outils limités pour identifier et atténuer les risques à l’échelle de l’organisation tout en répondant aux exigences de conformité et aux normes de confidentialité des employés. Ces risques incluent le vol potentiel de données par des employés sortants et le risque de fuites de données d’informations en dehors de votre organisation par surpartage accidentel ou intention malveillante.
 
-Regardez les vidéos ci-dessous pour découvrir comment la gestion des risques internes peut aider votre organisation à prévenir, détecter et contenir des risques :
-<br>
-<br>
+Gestion des risques internes Microsoft Purview utilise toute l’étendue des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur les activités potentiellement risquées. En utilisant les journaux de Microsoft 365 et de Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque. Après avoir identifié les risques, vous pouvez prendre des mesures pour atténuer ces risques et, si nécessaire, ouvrir des dossiers d’enquête et prendre les mesures juridiques appropriées.
+
+Regardez les vidéos ci-dessous pour découvrir comment la gestion des risques internes peut aider votre organisation à prévenir, détecter et contenir les risques :
+
 
 **Solution de gestion des risques internes & développement** :
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
 <br>
 
-**Flux de travail de gestion des risques internes** :
+**Workflow de gestion des risques internes** :
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="configure-insider-risk-management"></a>Configurer la gestion des risques internes
 
 Procédez comme suit pour configurer la gestion des risques internes pour votre organisation :
 
-![Étapes de gestion des risques internes de la solution à risque interne.](../media/ir-solution-ir-steps.png)
+![Étapes de gestion des risques internes de la solution de risque interne](../media/ir-solution-ir-steps.png)
 
 1. En savoir plus sur [la gestion des risques internes](insider-risk-management.md)
 2. Planifier [la gestion des risques internes et vérifier les licences](insider-risk-management-plan.md)

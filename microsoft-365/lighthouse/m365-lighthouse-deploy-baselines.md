@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services managés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment déployer Microsoft 365 Lighthouse bases de référence.
-ms.openlocfilehash: cf23c84f4be87f6e6f9618097822c9ea138a64ae
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: a733c912b0344b548c4a4157221fd2488bf81da9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659036"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734654"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer des bases de référence Microsoft 365 Lighthouse
 

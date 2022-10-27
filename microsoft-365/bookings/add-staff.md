@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
-ms.collection: scotvorg
+ms.collection:
+- Tier1
+- scotvorg
 description: Utilisez cette page pour créer votre liste de membres du personnel et gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: 6bdbdfa1e6ae366af9ea51dcada8f38f950f5e73
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: dbdf0be6c08c0ed0bf0ef7ce22a415d7728cd93d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68210721"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730444"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 
@@ -32,7 +34,7 @@ Bien Bookings est une fonctionnalité de Microsoft 365, tous les membres de votr
 
 1. Choisissez votre calendrier dans la page d’accueil.
 
-2. Accédez à l’option Personnel dans le volet gauche et **sélectionnez Ajouter un nouveau personnel**.
+2. Accédez à l’option Personnel dans le volet gauche, puis sélectionnez **Ajouter un nouveau personnel**.
 
 3. Lorsque vous ajoutez du personnel au sein de votre organisation, tapez son nom dans le **Ajouter des personnes** champ et sélectionnez-les lorsqu’ils apparaissent dans le menu déroulant. Les autres champs sont automatiquement remplis.
 
@@ -43,11 +45,11 @@ Bien Bookings est une fonctionnalité de Microsoft 365, tous les membres de votr
     > [!NOTE]
     > Le personnel externe à votre client ne pourra pas partager les informations de disponibilité avec Bookings.
 
-5. Pour chaque membre du personnel, sélectionnez un rôle : Membre de l’équipe, Planificateur, Visionneuse ou Invité.
-    - **Les membres de l’équipe** peuvent gérer les réservations sur leur propre calendrier et leur disponibilité dans la boîte aux lettres de réservation. Lors de l’ajout ou de la modification d’une réservation dans leur calendrier, ils sont affectés en tant que personnel.
-    - **Le planificateur** peut gérer les réservations sur le calendrier et les détails du client. Ils ont accès en lecture seule aux paramètres, au personnel et aux services.
+5. Pour chaque membre du personnel, sélectionnez un rôle : Membre d’équipe, Planificateur, Visionneuse ou Invité.
+    - **Le membre de l’équipe** peut gérer les réservations sur son propre calendrier et leur disponibilité dans la boîte aux lettres de réservation. Lors de l’ajout ou de la modification d’une réservation dans leur calendrier, ils sont affectés en tant que personnel.
+    - **Scheduler** peut gérer les réservations sur le calendrier et les détails du client. Ils disposent d’un accès en lecture seule aux paramètres, au personnel et aux services.
     - **La visionneuse** peut voir toutes les réservations dans le calendrier, mais elle ne peut pas les modifier ou les supprimer. Ils ont un accès en lecture seule aux paramètres.
-    - **L’invité** peut être affecté aux réservations, mais il ne peut pas ouvrir la boîte aux lettres de réservation.
+    - **Le client** peut être affecté à des réservations, mais il ne peut pas ouvrir la boîte aux lettres de réservation.
 
 6. Sélectionnez **Avertir tout le personnel par e-mail lorsqu’une réservation qui lui est attribuée est créée ou modifiée** pour activer les e-mails du personnel. Voici un exemple de signature électronique :
 

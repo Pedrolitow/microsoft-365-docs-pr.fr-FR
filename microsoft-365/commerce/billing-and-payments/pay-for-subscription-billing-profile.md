@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,24 +22,24 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 ms.date: 05/26/2022
-ms.openlocfilehash: 1124d4041f8d8e230b2a530732a9a21a29d9852c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c3ce7793e6b27cb2bfd6151d3c4f27d635d105da
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68194992"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730920"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Comment payer votre abonnement avec un profil de facturation
 
-Lorsque vous achetez un abonnement, vous le payez avec un profil de facturation. Le profil de facturation est lié à un mode de paiement spécifique et peut être une carte de crédit ou de débit, ou une facture, mais pas un compte bancaire.
+Lorsque vous achetez un abonnement, vous payez pour celui-ci avec un profil de facturation. Le profil de facturation est lié à un mode de paiement spécifique et peut être une carte de crédit ou de débit, ou une facture, mais pas un compte bancaire.
 
 Si vous ne savez pas si votre compte dispose d’un profil de facturation, consultez la rubrique [Comprendre les profils de facturation](manage-billing-profiles.md). Si vous n’avez pas de profil de facturation, consultez [Comment payer votre abonnement](pay-for-your-subscription.md).
 
 ## <a name="paying-with-recurring-billing-turned-on-or-off"></a>Paiement avec facturation périodique activée ou désactivée
 
-Par défaut, la facturation périodique est automatiquement activée pour tous les abonnements payants qui utilisent la facturation périodique. Chaque période de facturation, nous facturons automatiquement le mode de paiement associé au profil de facturation pour payer les abonnements qui utilisent ce profil de facturation. Si votre mode de paiement est refusé, vous pouvez utiliser le bouton **Payer maintenant** sur votre facture pour effectuer un paiement unique pour votre abonnement.
+Par défaut, la facturation périodique est automatiquement activée pour tous les abonnements payants qui utilisent la facturation périodique. À chaque période de facturation, nous facturons automatiquement le mode de paiement associé au profil de facturation pour payer tous les abonnements qui utilisent ce profil de facturation. Si votre mode de paiement est refusé, vous pouvez utiliser le bouton **Payer maintenant** sur votre facture pour effectuer un paiement unique pour votre abonnement.
 
-Si la facturation périodique est désactivée pour un profil de facturation, vous pouvez utiliser le bouton **Payer maintenant** de votre facture pour le payer chaque période de facturation, quel que soit le mode de paiement lié au profil de facturation. Vous pouvez également payer par chèque ou transfert électronique de fonds (EFT). Des instructions sur la procédure à suivre sont incluses dans la copie PDF de votre facture.
+Si la facturation périodique est désactivée pour un profil de facturation, vous pouvez utiliser le bouton **Payer maintenant** sur votre facture pour payer chaque période de facturation, quel que soit le mode de paiement lié au profil de facturation. Vous pouvez également payer par chèque ou par virement électronique (EFT). Des instructions sur la façon de procéder sont incluses dans la copie PDF de votre facture.
 
 ## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Nouvelles réglementations de la Reserve Bank of India
 
@@ -52,7 +53,7 @@ Le 30 septembre 2022, Microsoft et d’autres marchands en ligne ne stockeront p
 
 ## <a name="paying-by-invoice"></a>Payer par facture
 
-Si vous disposez d’un profil de facturation configuré pour être payé par facture, vous pouvez payer votre abonnement avec un chèque ou eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton **Payer maintenant** sur votre facture.
+Si vous disposez d’un profil de facturation configuré pour être payé par facture, vous pouvez payer votre abonnement avec un chèque ou un EFT. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton **Payer maintenant** sur votre facture.
 
 Pour disposer de cette option, vous devez :
 
@@ -62,7 +63,7 @@ Pour disposer de cette option, vous devez :
 
 If a credit check is required, you’re notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
-Si votre profil de facturation est soutenu par une facture, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être affiché. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande dans votre profil de facturation, ce numéro apparaît dans votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
+Si votre profil de facturation est soutenu par une facture, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être consulté. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande dans votre profil de facturation, le numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 
@@ -77,11 +78,11 @@ Si la facturation périodique est désactivée pour votre profil de facturation,
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Puis-je changer le mode de paiement actuel pour régler par facture ?
 
-Si votre profil de facturation est sauvegardé par carte de crédit ou de débit, vous ne pouvez modifier le mode de paiement qu’en une autre carte de crédit ou de débit. Vous ne pouvez pas passer au paiement par facture.
+Si votre profil de facturation est sauvegardé par carte de crédit ou de débit, vous pouvez uniquement remplacer le mode de paiement par une autre carte de crédit ou de débit. Vous ne pouvez pas passer au paiement par facture.
 
 ## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Puis-je changer le mode de paiement pour cesser de régler par facture ?
 
-Si votre profil de facturation est soutenu par des paiements par facture, vous ne pouvez pas modifier le mode de paiement. Vous pouvez utiliser le bouton **Payer maintenant** sur votre facture pour payer avec une carte de crédit ou de débit, ou par chèque ou EFT.
+Si votre profil de facturation est adossé à des paiements par facture, vous ne pouvez pas modifier le mode de paiement. Vous pouvez utiliser le bouton **Payer maintenant** sur votre facture pour payer avec une carte de crédit ou de débit, ou par chèque ou EFT.
 
 ## <a name="related-content"></a>Contenu associé
 

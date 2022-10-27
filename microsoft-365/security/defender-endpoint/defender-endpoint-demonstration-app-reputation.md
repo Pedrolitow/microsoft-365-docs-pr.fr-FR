@@ -1,7 +1,7 @@
 ---
-title: démonstration de la réputation de l’application Microsoft Defender pour point de terminaison SmartScreen
-description: Tester la façon dont Microsoft Defender pour point de terminaison SmartScreen vous aide à identifier les sites web de hameçonnage et de programmes malveillants
-keywords: Microsoft Defender pour point de terminaison, site web de hameçonnage, site web de programmes malveillants, réputation de l’application,
+title: Microsoft Defender pour point de terminaison démonstration de la réputation de l’application SmartScreen
+description: Tester comment Microsoft Defender pour point de terminaison SmartScreen vous aide à identifier les sites web d’hameçonnage et de programmes malveillants
+keywords: Microsoft Defender pour point de terminaison, site web d’hameçonnage, site web malveillant, réputation des applications,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -16,34 +16,34 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 82a0eab112545e8bbb78356f4a26baf6af903648
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: cc7081f8c6e71e321e68016f45c5d400e3a1c3cd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68631939"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730268"
 ---
-# <a name="smartscreen-app-reputation-demonstration"></a>Démonstration de la réputation de l’application SmartScreen
+# <a name="smartscreen-app-reputation-demonstration"></a>Démonstration de la réputation des applications SmartScreen
 
-Testez comment Microsoft Defender pour point de terminaison SmartScreen vous aide à identifier les sites web de hameçonnage et de programmes malveillants en fonction de la réputation de l’application.
+Testez la façon dont Microsoft Defender pour point de terminaison SmartScreen vous aide à identifier les sites web d’hameçonnage et de programmes malveillants en fonction de la réputation des applications.
 
 ## <a name="scenario-requirements-and-setup"></a>Configuration requise et configuration du scénario
 
 - Windows 10
-- Navigateur Internet Explorer ou Microsoft Edge requis
-- Pour activer/désactiver, accédez à La mise à jour **des paramètres** > **& Sécurité** >  **Sécurité Windows** >  **Dépendant Sécurité Windows** >  **App & contrôle** >  de navigateur **Vérifier les applications et les fichiers**
+- Internet Explorer ou navigateur Microsoft Edge requis
+- Pour activer/désactiver, accédez à **Paramètres** > **Mise à jour & sécurité** >  **Sécurité Windows** >  **Ouvrir Sécurité Windows** >  App **& contrôle du** >  navigateur **Vérifier les applications et les fichiers**
 
 ## <a name="scenario-demos"></a>Démonstrations de scénario
 
-### <a name="known-good-program"></a>Bon programme connu
+### <a name="known-good-program"></a>Programme correct connu
 
 Ce programme a une bonne réputation; le téléchargement doit s’exécuter sans interruption :
 
-- [Un bon téléchargement de programme connu](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
+- [Téléchargement de programme correct connu](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
 
   Le lancement de ce lien doit afficher un message similaire à ce qui suit :
 
@@ -51,27 +51,23 @@ Ce programme a une bonne réputation; le téléchargement doit s’exécuter san
 
 ### <a name="unknown-program"></a>Programme inconnu
 
-Étant donné que le téléchargement du programme n’a pas la réputation suffisante pour garantir sa fiabilité, SmartScreen affiche un avertissement avant d’exécuter le téléchargement du programme.
+Étant donné que le téléchargement du programme n’a pas une réputation suffisante pour garantir sa fiabilité, SmartScreen affiche un avertissement avant d’exécuter le téléchargement du programme.
 
 - [Programme inconnu](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
   
   Le lancement de ce lien doit afficher un message similaire à ce qui suit :
 
-  :::image type="content" source="images/smartscreen-app-reputation-unknown.png" alt-text="SmartScreen ne dispose pas d’informations de réputation suffisantes sur le fichier de téléchargement et avertit l’utilisateur d’arrêter ou de continuer avec précaution.":::
+  :::image type="content" source="images/smartscreen-app-reputation-unknown.png" alt-text="SmartScreen ne dispose pas d’informations de réputation suffisantes sur le fichier de téléchargement et avertit l’utilisateur d’arrêter ou de procéder avec prudence.":::
 
 ### <a name="known-malware"></a>Programmes malveillants connus
 
-Ce téléchargement est un programme malveillant connu ; SmartScreen doit empêcher l’exécution de ce programme.
+Ce téléchargement est un programme malveillant connu ; SmartScreen doit bloquer l’exécution de ce programme.
 
 - [Programmes malveillants connus](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
 
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->  
-
   Le lancement de ce lien doit afficher un message similaire à ce qui suit :
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Capture d’écran montrant comment SmartScreen détecte un téléchargement de fichiers avec une réputation non sécurisée.; le téléchargement est bloqué.":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Capture d’écran montrant comment SmartScreen détecte un téléchargement de fichier avec une réputation dangereuse. le téléchargement est bloqué.":::
 
 ## <a name="learn-more"></a>En savoir plus
 
@@ -79,4 +75,4 @@ Ce téléchargement est un programme malveillant connu ; SmartScreen doit empêc
 
 ## <a name="see-also"></a>Voir aussi
 
-[Microsoft Defender pour point de terminaison - Scénarios de démonstration](defender-endpoint-demonstrations.md)
+[Microsoft Defender pour point de terminaison - scénarios de démonstration](defender-endpoint-demonstrations.md)

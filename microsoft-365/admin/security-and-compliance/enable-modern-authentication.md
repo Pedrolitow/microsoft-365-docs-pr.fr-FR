@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Découvrez comment définir des clés de Registre pour activer l’authentification moderne pour les appareils sur 2013 installés.
-ms.openlocfilehash: a272eacc546aa4d9dadbf9acac1ae1372f332209
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: f27bb813e113d34975f2848786122806d2f8a744
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68663321"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730620"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Activer l’authentification moderne pour Office 2013 sur les appareils Windows
 

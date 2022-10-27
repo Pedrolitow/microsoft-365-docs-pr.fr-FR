@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Business Basic.
-ms.openlocfilehash: 592f3553e0e403276fc8d91028545dca5210e91e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8114e41a4a69c98843f711ee7d8c8ff598405052
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68168966"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734096"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Configurer Microsoft 365 Business Basic
 

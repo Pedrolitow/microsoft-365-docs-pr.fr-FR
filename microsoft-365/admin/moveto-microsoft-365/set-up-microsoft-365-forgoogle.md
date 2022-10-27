@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer Microsoft 365 pour qu’il soit prêt pour la migration à partir de Google Workspace.
-ms.openlocfilehash: f98c41818f2080af3952885e728f413cec8fee88
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 53ce2de34e72afbf97aab220e6b1b839d7b5a55f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188370"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730048"
 ---
 # <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Configurer la migration de Microsoft 365 pour Google Workspace
 
@@ -43,13 +44,13 @@ Pour migrer la messagerie, le calendrier et les contacts à partir de Google Wor
 
 1. Connectez-vous à [office.com](https://office.com) et choisissez **Administration**.
 1. Dans le Centre d'administration Microsoft 365, choisissez **Accéder à la configuration guidée**. 
-1. Si vous le souhaitez, installez les applications Office, puis **sélectionnez Continuer**. 
-1. Étant donné que vous effectuez une migration à partir de Google Workspace, choisissez le domaine par défaut, puis **sélectionnez Utiliser ce domaine**. 
-1. Entrez les noms de votre utilisateur et les noms d’utilisateur souhaités, vérifiez votre adresse e-mail afin de recevoir les mots de passe de votre utilisateur, puis **sélectionnez Ajouter des utilisateurs et attribuez des licences**. 
-1. Entrez les adresses e-mail où vos utilisateurs recevront leurs nouvelles informations d’identification, sélectionnez **Envoyer un e-mail et continuez**.
-1. **Poursuivez** ensuite pour connecter votre domaine temporaire. 
-1. Si vous le souhaitez, choisissez d’informer les utilisateurs de votre organisation sur Teams, puis **sélectionnez Continuer**.
-1. Développez et passez en revue vos **paramètres Android et iOS**, puis **sélectionnez Créer une stratégie de gestion des applications mobiles**.
-1. Fournissez des commentaires, si vous le souhaitez, et **choisissez Accéder au Centre d’administration**.
+1. Si vous le souhaitez, installez les applications Office, puis sélectionnez **Continuer**. 
+1. Étant donné que vous effectuez une migration à partir de Google Workspace, choisissez le domaine par défaut, puis sélectionnez **Utiliser ce domaine**. 
+1. Entrez les noms de votre utilisateur et les noms d’utilisateur souhaités, vérifiez votre adresse e-mail afin de pouvoir recevoir les mots de passe de votre utilisateur, puis sélectionnez **Ajouter des utilisateurs et attribuer des licences**. 
+1. Entrez les adresses e-mail où vos utilisateurs recevront leurs nouvelles informations d’identification, sélectionnez **Envoyer un e-mail et continuer**.
+1. Ensuite **, continuez** à nouveau pour connecter votre domaine temporaire. 
+1. Si vous le souhaitez, choisissez d’informer les utilisateurs de votre organisation sur Teams, puis sélectionnez **Continuer**.
+1. Développez et passez en revue vos **paramètres Android et iOS**, puis sélectionnez **Créer une stratégie de gestion des applications mobiles**.
+1. Fournissez des commentaires, si vous le souhaitez, puis choisissez **Accéder au centre d’administration**.
 
 L’étape suivante du processus consistera à configurer des protections pour votre organisation.

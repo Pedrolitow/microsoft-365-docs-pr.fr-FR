@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services managés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment rechercher des utilisateurs.
-ms.openlocfilehash: 554b1dbd787a20f9ea08d719141c8857c59099aa
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 2ab204f3ef3ebfee3e6cec0dbd462fa7b56d26b0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659760"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734514"
 ---
 # <a name="search-for-users-in-microsoft-365-lighthouse"></a>Rechercher des utilisateurs dans Microsoft 365 Lighthouse
 

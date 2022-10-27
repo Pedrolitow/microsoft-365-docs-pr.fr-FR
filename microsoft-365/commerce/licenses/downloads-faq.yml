@@ -10,30 +10,32 @@ metadata:
   ms.topic: faq
   ms.service: microsoft-365-business
   ms.custom: commerce_vl
-  ms.collection: scotvorg
+  ms.collection:
+  - Tier2
+  - scotvorg
   ms.localizationpriority: medium
   description: Forum aux questions sur les téléchargements Centre d'administration Microsoft 365.
-  ms.openlocfilehash: c256c3e7c98437c1769f22efc660fc0c22f36314
-  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+  ms.openlocfilehash: 745890ff8b88f6616181cd02e5846dc0681b999f
+  ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/29/2022
-  ms.locfileid: "68206144"
-title: Questions fréquentes sur les téléchargements
+  ms.lasthandoff: 10/27/2022
+  ms.locfileid: "68727188"
+title: Forum aux questions sur les téléchargements
 summary: ''
 sections:
 - name: Généralités
   questions:
   - question: >
       Quelles sont les conditions requises pour télécharger des logiciels à partir de la Centre d'administration Microsoft 365 ?
-    answer: "Vous devez acheter une licence pour les produits que vous prévoyez de télécharger et avoir accès à une clé de produit valide pour chaque licence pour terminer l’installation. Vérifiez votre contrat de licence avant de télécharger les produits.\n\nVous pouvez trouver la configuration système requise pour chaque produit en vous connectant au centre d’administration et en accédant à la page **Téléchargements de** **vos produits** >  > **description du produit**. \n\n> [!NOTE]\n> Tous les produits ne nécessitent pas de clé de produit.\n"
+    answer: "Vous devez acheter une licence pour les produits que vous envisagez de télécharger et avoir accès à une clé de produit valide pour chaque licence afin de terminer l’installation. Vérifiez votre contrat de licence avant de télécharger les produits.\n\nVous trouverez la configuration système requise pour chaque produit en vous connectant au Centre d’administration et en accédant à la page **Téléchargements** de **vos produits** >  > **Description du produit**. \n\n> [!NOTE]\n> Tous les produits ne nécessitent pas une clé de produit.\n"
   - question: >
       Quels produits puis-je télécharger à partir du Centre d’administration ?
     answer: >
       Si vos droits de téléchargement sont associés au programme Open License, Open Value ou Open Value Subscription, vous pouvez télécharger uniquement les produits que vous avez déjà achetés. Le Centre d’administration affiche les téléchargements uniquement pour les licences que vous avez achetées.
 
 
-      D’autres programmes de licence (Select Plus, Enterprise, Campus ou School) vous permettent de télécharger n’importe quel produit à partir du catalogue avant d’acheter des licences.
+      D’autres programmes de licence (Sélectionnez Plus, Entreprise, Campus ou École) vous permettent de télécharger n’importe quel produit à partir du catalogue avant d’acheter des licences.
 
 
       Si votre profil est lié à Open et à d’autres programmes de licence, vous pouvez afficher l’intégralité du catalogue.
@@ -41,18 +43,18 @@ sections:
 
       Pour déterminer si un produit est éligible au téléchargement :
 
-        1. Sélectionnez **Licences en volume**, puis sélectionnez le produit ou **afficher les téléchargements**.
-        2. Sous **Téléchargement**, si le produit n’est pas disponible, vous verrez « Ce produit n’est pas disponible en téléchargement ».
+        1. Sélectionnez **Licences en volume**, puis sélectionnez le produit ou **Afficher les téléchargements**.
+        2. Sous **Télécharger**, si le produit n’est pas disponible, vous verrez « Ce produit n’est pas disponible en téléchargement ».
   - question: >
       Qu’est-ce qu’une licence d’accès client (CAL) ?
     answer: >
       Une licence d’accès client (CAL) est une licence qui donne à un utilisateur le droit d’accéder aux services du serveur.
 
 
-      Vous n’avez pas besoin d’un fichier de téléchargement de logiciel ou d’une clé de produit pour activer un cal. Au lieu de cela, le produit est activé et installé via l’Assistant d’activation directement à partir de votre ordinateur.
+      Vous n’avez pas besoin d’un fichier de téléchargement de logiciel ou d’une clé de produit pour activer une licence d’accès client. Au lieu de cela, le produit est activé et installé via l’Assistant Activation directement à partir de votre ordinateur.
 
 
-      Voici quelques exemples de licences d’accès conditionnel :
+      Voici quelques exemples de licences d’accès client :
         - Windows Server
         - SQL Server
         - Exchange Server
@@ -63,53 +65,53 @@ sections:
   - question: "Comment faire télécharger Office pour Mac ? \n"
     answer: >
       Pour exécuter une version de licence en volume de Office pour Mac, vous devez télécharger et installer les fichiers suivants :
-        - Package [sérialiseur de licence en volume situé](/deployoffice/mac/volume-license-serializer) dans le fichier de téléchargement Office pour Mac.
-        - Package [d’installation Office pour Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Les fichiers de package du programme d’installation pour des applications individuelles sont également disponibles sur le Centre d'administration Microsoft 365. Office pour Mac ne nécessite pas de clé de produit, car le sérialiseur VL est utilisé pour activer une version sous licence en volume de Office pour Mac.
+        - Le package [sérialiseur de licence en volume (VL)](/deployoffice/mac/volume-license-serializer) situé dans le fichier de téléchargement Office pour Mac.
+        - Package [d’installation Office pour Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Les fichiers de package du programme d’installation pour les applications individuelles sont également disponibles sur le Centre d'administration Microsoft 365. Office pour Mac ne nécessite pas de clé de produit, car le sérialiseur VL est utilisé pour activer une version sous licence en volume de Office pour Mac.
   - question: >
-      Comment faire télécharger des produits dans le Centre d’administration ?
-    answer: "Pour télécharger des produits dans le Centre d’administration :\n1. Sélectionnez **Licences en volume**, puis sélectionnez le produit ou **afficher les téléchargements**.\n2. Sous **Télécharger**, sélectionnez un composant et sélectionnez une action de téléchargement ou l’icône de téléchargement. \n\nPour accéder aux téléchargements dans le Centre d’administration, un administrateur VLSC de votre organisation peut fournir l’accès en vous attribuant l’un des rôles suivants :\n  - Administrateur\n  - Télécharger\n  - Software Assurance Manager\n"
+      Comment faire télécharger des produits dans le centre d’administration ?
+    answer: "Pour télécharger des produits dans le centre d’administration :\n1. Sélectionnez **Licences en volume**, puis sélectionnez le produit ou **Afficher les téléchargements**.\n2. Sous **Télécharger**, sélectionnez un composant et sélectionnez une action de téléchargement ou l’icône de téléchargement. \n\nPour accéder aux téléchargements dans le centre d’administration, un administrateur VLSC de votre organisation peut fournir l’accès en vous attribuant l’un des rôles suivants :\n  - Administrateur\n  - Télécharger\n  - Software Assurance Manager\n"
   - question: >
       Comment faire modifier mes paramètres de téléchargement ?
     answer: >
-      Pour accéder aux paramètres de téléchargement dans le Centre d’administration :
+      Pour accéder aux paramètres de téléchargement dans le centre d’administration :
 
-      1. Sélectionnez **Licences en volume**, puis sélectionnez le produit ou **afficher les téléchargements**.
+      1. Sélectionnez **Licences en volume**, puis sélectionnez le produit ou **Afficher les téléchargements**.
 
-      2. Sous **Télécharger**, sélectionnez le **type de langage** et **de système d’exploitation**.
+      2. Sous **Télécharger**, **sélectionnez langue et** **type de système d’exploitation**.
 
 
       > [!NOTE]
 
-      > Les bloqueurs contextuels peuvent bloquer les téléchargements. Assurez-vous que les bloqueurs contextuels sont désactivés lorsque vous téléchargez des logiciels à partir du Centre d’administration.
+      > Les bloqueurs de fenêtres contextuelles peuvent bloquer les téléchargements. Assurez-vous que les bloqueurs de fenêtres contextuelles sont désactivés lorsque vous téléchargez des logiciels à partir du centre d’administration.
   - question: >
       Que sont les fichiers EXE et ISO ?
-    answer: "Vous pouvez sélectionner deux types de fichiers lorsque vous téléchargez des produits à partir du Centre d’administration :\n  \n  - **Les fichiers exécutables (EXE)** peuvent être téléchargés et installés sur le même système, mais vous ne pouvez pas créer de disques de démarrage distincts pour l’installation sur d’autres ordinateurs.\n  - Les **fichiers image ISO (International Standards Organization)** sont des représentations exactes du contenu et du format logique. Vous pouvez les installer sur l’ordinateur utilisé pour télécharger le package ou écrire les fichiers sur des disques pour la distribution et l’installation sur d’autres ordinateurs.\n\n> [!NOTE]\n> Tous les produits ne sont pas disponibles dans tous les langages et dans tous les formats.\n"
+    answer: "Vous pouvez sélectionner deux types de fichiers lorsque vous téléchargez des produits à partir du centre d’administration :\n  \n  - **Les fichiers exécutables (EXE)** peuvent être téléchargés et installés sur le même système, mais vous ne pouvez pas créer de disques de démarrage distincts pour une installation sur d’autres ordinateurs.\n  - Les **fichiers image ISO (International Standards Organization)** sont des représentations exactes du contenu et du format logique. Vous pouvez les installer sur l’ordinateur utilisé pour télécharger le package ou écrire les fichiers sur des disques à des fins de distribution et d’installation sur d’autres ordinateurs.\n\n> [!NOTE]\n> Tous les produits ne sont pas disponibles dans toutes les langues et dans tous les formats.\n"
   - question: >
-      Comment faire utiliser le logiciel de fichier image ISO pour télécharger et enregistrer le fichier image ISO sur un CD-R ou un disque DVD-R ?
+      Comment faire utiliser un logiciel de fichier image ISO pour télécharger et enregistrer un fichier image ISO sur un disque CD-R ou DVD-R ?
     answer: >
-      Si vous utilisez un PC avec le système d’exploitation Windows, vous n’avez pas besoin de logiciels supplémentaires pour graver un CD-R ou UN DVD-R. Double-cliquez sur le fichier ISO que vous avez téléchargé, puis suivez les étapes de l’Assistant Graveur d’images.
+      Si vous utilisez un PC avec le système d’exploitation Windows, vous n’avez pas besoin de logiciels supplémentaires pour graver un CD-R ou un DVD-R. Double-cliquez sur le fichier ISO que vous avez téléchargé, puis suivez les étapes de l’Assistant Graveur d’images.
 
 
-      Si vous utilisez un système d’exploitation autre que Windows, vous aurez peut-être besoin de logiciels supplémentaires. Si votre ordinateur est équipé d’un graveur DE CD/DVD, le logiciel est probablement chargé sur votre PC. La plupart des logiciels d’écriture CD-R/DVD-R vous permettent de créer un disque à partir d’un fichier image. Sélectionnez un élément de menu tel **que Copier l’image sur CD** ou **Graver l’image pour accéder** à cette fonctionnalité.
+      Si vous utilisez un système d’exploitation autre que Windows, vous aurez peut-être besoin de logiciels supplémentaires. Si votre ordinateur est équipé d’un graveur CD/DVD, le logiciel est probablement chargé sur votre PC. La plupart des logiciels d’écriture CD-R/DVD-R vous permettent de créer un disque à partir d’un fichier image. Sélectionnez un élément de menu tel **que Copier l’image sur CD** ou **Graver l’image pour accéder** à cette fonctionnalité.
   - question: >
-      Comment faire monter et accéder aux fichiers ISO en tant qu’appareil virtuel ?
+      Comment faire monter et accéder à des fichiers ISO en tant qu’appareil virtuel ?
     answer: >
-      Si vous n’avez pas de graveur de CD/DVD installé sur votre ordinateur ou si aucun support n’est disponible, vous pouvez monter le fichier ISO en tant que lecteur virtuel. Avec cette méthode, votre ordinateur croit que le fichier est un lecteur de disque réel, et vous pouvez lire des fichiers à partir de ce disque virtuel.
+      Si aucun graveur de CD/DVD n’est installé sur votre ordinateur ou si le support n’est pas disponible, vous pouvez monter le fichier ISO en tant que lecteur virtuel. Avec cette méthode, votre ordinateur croit que le fichier est un lecteur de disque réel, et vous pouvez lire des fichiers à partir de ce disque virtuel.
 
 
       > [!NOTE]
 
-      > Cette approche est recommandée uniquement pour l’installation d’applications telles qu’Office ou des mises à niveau système mineures. Vous ne pouvez pas installer un système d’exploitation à l’aide de cette approche, car le lecteur virtuel disparaît pendant l’installation.
+      > Cette approche est recommandée uniquement pour l’installation d’applications telles qu’Office ou des mises à niveau mineures du système. Vous ne pouvez pas installer un système d’exploitation à l’aide de cette approche, car le lecteur virtuel disparaît pendant l’installation.
   - question: >
       Comment faire obtenir un support pour les produits téléchargés ?
     answer: >
-      Pour obtenir la liste des options de support, consultez [Support Microsoft](https://support.microsoft.com/). Certains clients de licences en volume peuvent utiliser le support de résolution de problèmes, un avantage Software Assurance. Passez en revue vos avantages Software Assurance pour vérifier votre éligibilité.
+      Pour obtenir la liste des options de support, consultez [Support Microsoft](https://support.microsoft.com/). Certains clients de licence en volume peuvent utiliser le support de résolution des problèmes, un avantage Software Assurance. Passez en revue vos avantages Software Assurance pour vérifier votre éligibilité.
   - question: >
-      Où puis-je trouver de l’aide pour les rubriques traitées dans ce FAQ ?
+      Où puis-je trouver du support pour les sujets abordés dans ce FAQ ?
     answer: >
-      Pour plus de ressources de formation, notamment des vidéos, consultez la [formation et les ressources du Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
+      Pour plus de ressources de formation, y compris des vidéos, consultez Formation [et ressources du Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
   - question: >
       Comment puis-je contacter Support Microsoft ?
     answer: >
-      Pour obtenir la prise en charge des formulaires web ou par téléphone du client VLSC, consultez [Contactez-nous](/licensing/contact-us). Microsoft répond aux soumissions de formulaires web dans les 24 heures.
-additionalContent: "\n## <a name=\"additional-resources\"></a>Ressources supplémentaires\n\n- [FAQ sur les clés de produit](product-keys-faq.yml)\n\n- [Faq sur l’activation des services en ligne pour les programmes ouverts](online-service-activation-faq.yml)"
+      Pour la prise en charge des formulaires web ou par téléphone client VLSC, consultez [Contactez-nous](/licensing/contact-us). Microsoft répond aux soumissions de formulaires web dans les 24 heures.
+additionalContent: "\n## <a name=\"additional-resources\"></a>Ressources supplémentaires\n\n- [FAQ sur les clés de produit](product-keys-faq.yml)\n\n- [FAQ sur l’activation des services en ligne pour les programmes Ouverts](online-service-activation-faq.yml)"

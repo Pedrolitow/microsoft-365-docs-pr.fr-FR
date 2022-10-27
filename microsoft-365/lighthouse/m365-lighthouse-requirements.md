@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services managés (MSP), obtenez la liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: ebfe68f7c07b1aabc9d83ef57bd973595309e921
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: b61a960326543b71e34d72486a358a11e4210b3a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68662948"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734558"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Configuration requise pour Microsoft 365 Lighthouse
 
@@ -43,7 +44,7 @@ En outre, chaque locataire du client MSP doit se qualifier pour Lighthouse en re
 
 Pour afficher les appareils clients sur les pages de gestion des appareils, un MSP doit :
 
-- Inscrire tous les appareils des clients dans Microsoft Endpoint Manager (MEM). Pour plus d’informations, consultez [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
+- Inscrire tous les appareils clients dans Microsoft Endpoint Manager (MEM). Pour plus d’informations, consultez [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
 - Attribuez des stratégies de conformité à tous les appareils des clients. Pour plus d’informations, consultez [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## <a name="requirements-for-enabling-user-management"></a>Configuration requise pour activer la gestion des utilisateurs

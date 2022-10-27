@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: 254c20dc7fc709b4217a92f0102d802a79286df1
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 62fc287bf493a9e8f3f1977b199228f4ee999046
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688447"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729806"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Obtenir un support pour Microsoft 365 pour les entreprises
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les stratégies de rétention Microsoft 365 qui s’appliquent à Microsoft Teams afin de pouvoir gérer la rétention automatique ou la suppression des messages Teams pour votre organisation.
-ms.openlocfilehash: cea95093a48aeda2e93c77c975b0838ae1962ba2
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 417c98f4e9510d1fc02e7b485e41d50a621690fa
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68633039"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729982"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -47,11 +47,11 @@ Pour les autres charges de travail, consultez:
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
 > [!NOTE]
-> Les stratégies de rétention prennent en charge [les canaux partagés](/MicrosoftTeams/shared-channels). Tous les canaux partagés héritent des paramètres de rétention du canal parent.
+> Les stratégies de rétention prennent en charge [les canaux partagés](/MicrosoftTeams/shared-channels). Tous les canaux partagés héritent des paramètres de rétention de l’équipe parente.
 > 
 > Les stratégies de rétention prennent également en charge les messages publiés avec la fonctionnalité [de conversation avec vous-même](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) .
 
-Les messages de conversation Teams, les messages de canal et les messages de canal privé peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte des messages, les éléments suivants peuvent être conservés pour des raisons de conformité : [clips vidéo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), images incorporées, tables, liens hypertexte, liens vers d’autres messages et fichiers Teams, et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation et les messages de canal privé incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
+Les messages de conversations Teams, les messages de canal et les messages de canal privé peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte des messages, les éléments suivants peuvent être conservés pour des raisons de conformité : [clips vidéo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), images incorporées, tableaux, liens hypertexte, liens vers d’autres messages et fichiers Teams et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation et les messages de canal privé incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
 
 L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams, les miniatures, les images d’annonce, et les réactions des autres utilisateurs sous la forme d’émoticônes.
 
@@ -199,7 +199,7 @@ However, if conversation history is turned on for Skype for Business and from th
 
 Lorsque des utilisateurs externes sont inclus dans une réunion ou une conversation que votre organisation héberge :
 
-- Si un utilisateur externe se joint à l’aide d’un compte invité dans votre locataire, tous les messages Teams sont stockés dans la boîte aux lettres de vos utilisateurs et dans une boîte aux lettres fantôme qui est accordée au compte invité. Toutefois, les stratégies de rétention ne sont pas prises en charge pour les boîtes instantanées, même si elles peuvent être signalées comme incluses dans une stratégie de rétention pour l’ensemble de l’emplacement (parfois appelée « stratégie à l’échelle de l’organisation »).
+- Si un utilisateur externe rejoint à l’aide d’un compte invité dans votre locataire, tous les messages Teams sont stockés dans la boîte aux lettres de vos utilisateurs et dans une boîte aux lettres fantôme accordée au compte invité. Toutefois, les stratégies de rétention ne sont pas prises en charge pour les boîtes instantanées, même si elles peuvent être signalées comme incluses dans une stratégie de rétention pour l’ensemble de l’emplacement (parfois appelée « stratégie à l’échelle de l’organisation »).
 
 - Si un utilisateur externe se connecte à l’aide d’un compte d’une autre organisation Microsoft 365, vos stratégies de rétention ne peuvent pas supprimer les messages de cet utilisateur, car ils sont stockés dans sa boîte aux lettres dans un autre client. Toutefois, pour la même réunion ou conversation, vos stratégies de rétention peuvent supprimer des messages pour vos utilisateurs.
 

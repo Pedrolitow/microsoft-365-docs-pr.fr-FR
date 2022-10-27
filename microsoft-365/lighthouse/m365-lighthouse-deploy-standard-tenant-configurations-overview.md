@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services managés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment utiliser des bases de référence pour déployer des configurations de locataire standard.
-ms.openlocfilehash: f5c3336aa7b77f29dcf0ec41181567c9bd07c9b9
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 089a1cc932e13c12786337d0a1fa636f0ef4e138
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688150"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729916"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation des bases de référence Microsoft 365 Lighthouse pour déployer des configurations de locataire standard 
 
@@ -44,9 +45,9 @@ Les configurations de base lighthouse sont conçues pour garantir que tous les l
 | Exiger l’authentification multifacteur pour les administrateurs | Stratégie d’accès conditionnel nécessitant une authentification multifacteur pour tous les administrateurs. Elle est obligatoire pour toutes les applications cloud. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger l’authentification multifacteur pour tous les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
 | Exiger l’authentification multifacteur pour les utilisateurs finaux | Stratégie d’accès conditionnel qui nécessite une authentification multifacteur pour tous les utilisateurs.  Elle est obligatoire pour toutes les applications cloud. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
 | Bloquer l’authentification héritée | Une stratégie d’accès conditionnel pour bloquer l’authentification du client hérité. Pour plus d’informations sur cette base de référence, consultez [Bloquer l’authentification héritée sur Azure AD avec l’accès conditionnel](/azure/active-directory/conditional-access/block-legacy-authentication).|
-| Configurer l’inscription des appareils | L’inscription des appareils permet à vos appareils clients de s’inscrire dans Microsoft Endpoint Manager et de fournir une visibilité de Endpoint Analytics sur vos appareils via la surveillance de l’intégrité des appareils. Cette configuration s’effectue en configurant l’inscription automatique entre Azure Active Directory et Microsoft Endpoint Manager. Pour plus d’informations sur cette base de référence, consultez [Configurer l’inscription pour les appareils Windows](/mem/intune/enrollment/windows-enroll). |
+| Configurer l’inscription des appareils | L’inscription des appareils permet à vos appareils clients de s’inscrire dans Microsoft Endpoint Manager et de fournir à Endpoint Analytics une visibilité sur vos appareils via la surveillance de l’intégrité des appareils. Cette configuration est effectuée en configurant l’inscription automatique entre Azure Active Directory et Microsoft Endpoint Manager. Pour plus d’informations sur cette base de référence, consultez [Configurer l’inscription pour les appareils Windows](/mem/intune/enrollment/windows-enroll). |
 | Configurer la stratégie de protection des applications | Ensemble de stratégies de protection qui vous permettent de gérer et de protéger les données de l’organisation d’un locataire géré au sein d’une application, indépendamment de toute solution de gestion des appareils mobiles (GPM). Les données de l’organisation seront protégées avec ou sans inscription d’appareils dans une solution GPM. |
-| Configurer Microsoft Defender pour entreprises | Approvisionne le locataire pour Microsoft Defender pour entreprises et intègre les appareils déjà inscrits dans Microsoft Endpoint Manager à Microsoft Defender pour entreprises. Pour plus d’informations, consultez [Qu’est-ce que Microsoft Defender pour entreprises ?](../security/defender-business/mdb-overview.md) |
+| Configurer Microsoft Defender pour entreprises | Approvisionne le locataire pour Microsoft Defender pour entreprises et intègre les appareils déjà inscrits dans Microsoft Endpoint Manager pour Microsoft Defender pour entreprises. Pour plus d’informations, consultez [Qu’est-ce que Microsoft Defender pour entreprises ?](../security/defender-business/mdb-overview.md) |
 | Configurer Exchange Online Protection et Microsoft Defender pour Office 365 | Une stratégie pour appliquer les stratégies recommandées contre le courrier indésirable, les programmes malveillants, l’anti-hameçonnage, les liens sécurisés et les pièces jointes sécurisées à vos locataires Exchange Online boîtes aux lettres. |
 | Configurer Microsoft Defender Antivirus pour Windows 10 et versions ultérieures | Profil de configuration d’appareil pour les appareils Windows avec des paramètres d’antivirus Microsoft Defender préconfigurés. Pour plus d’informations sur cette base de référence, consultez [Configurer Microsoft Defender pour point de terminaison dans Intune](/mem/intune/protect/advanced-threat-protection-configure).|
 | Configurer Microsoft Defender Pare-feu pour Windows 10 et versions ultérieures | Une stratégie de pare-feu pour sécuriser les appareils en empêchant le trafic réseau indésirable et non autorisé. Pour plus d’informations sur cette base de référence, consultez [Bonnes pratiques pour configurer Windows Defender Pare-feu](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
