@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services managés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment configurer la sécurité du portail.
-ms.openlocfilehash: 8e03e4315db77b98543b72ca06996c20fb608374
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: bad697382459e356faa29e3cc13e8149faf5fa33
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68662618"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734756"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurer Microsoft 365 Lighthouse sécurité du portail
 

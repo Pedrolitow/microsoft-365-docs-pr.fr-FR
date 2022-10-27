@@ -1,5 +1,5 @@
 ---
-title: Vérification par l’ICANN des informations de contact
+title: Vérification des informations de contact par l’ICANN
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,20 +22,20 @@ search.appverid:
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: Découvrez comment valider vos informations de contact pour se conformer aux réglementations de l’ICANN.
-ms.openlocfilehash: 9c7b59d964567d51bbf01cabd7961cc338396cea
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b61a4bc52c548dcdc70fa5a0b4b1802ecb9f44c7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186962"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736054"
 ---
-# <a name="icann-verification-of-contact-information"></a>Vérification par l’ICANN des informations de contact
+# <a name="icann-verification-of-contact-information"></a>Vérification des informations de contact par l’ICANN
 
-Lorsque vous achetez un domaine ou modifiez les informations de contact d’un domaine, le bureau d’enregistrement doit valider vos informations de contact pour se conformer aux réglementations de l’ICANN.
+Lorsque vous achetez un domaine ou apportez des modifications aux informations de contact d’un domaine, le bureau d’enregistrement est tenu de valider vos informations de contact pour se conformer aux réglementations de l’ICANN.
 
-Pour validation, un e-mail est envoyé à l’adresse de l’inscrit.
+Pour la validation, un e-mail est envoyé à l’adresse de l’inscrit.
 
- **Pour vérifier vos informations de contact, sélectionnez le lien dans l’e-mail de vérification.** Si les propriétaires de domaine ne vérifient pas l’adresse e-mail, le domaine est suspendu. Ensuite, accédez à la [page Domaines](https://admin.microsoft.com/adminportal/home?ref=Domains) dans le centre d’administration et vérifiez l’état de votre domaine.
+ **Pour vérifier vos informations de contact, sélectionnez le lien dans l’e-mail de vérification.** Si les propriétaires de domaine ne vérifient pas l’adresse e-mail, le domaine est suspendu. Ensuite, accédez à la [page Domaines](https://admin.microsoft.com/adminportal/home?ref=Domains) dans le Centre d’administration et vérifiez l’état de votre domaine.
 
 L’e-mail se présente comme suit :
 
