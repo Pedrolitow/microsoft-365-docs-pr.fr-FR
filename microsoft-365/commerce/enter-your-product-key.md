@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -23,18 +24,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Si vous avez acheté Microsoft 365 Business Standard auprès d’un magasin de détail, découvrez comment utiliser la clé de produit et activer votre abonnement.
+description: Si vous avez acheté Microsoft 365 Business Standard auprès d’un magasin de vente au détail, découvrez comment utiliser la clé de produit et activer votre abonnement.
 ms.date: 08/18/2022
-ms.openlocfilehash: 2e786fe7299c91272b69f15820aa7174e6c020ae
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 83b6ff9278053c993378aacb5bb66872ed6a7cdc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167580"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719995"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business Standard
 
-Si vous avez acheté Microsoft 365 Business Standard auprès d’un magasin de détail, cet article vous aide à activer votre abonnement.
+Si vous avez acheté Microsoft 365 Business Standard auprès d’un magasin de vente au détail, cet article vous aide à activer votre abonnement.
   
  **Vous avez besoin d’autres informations ?**
  **Pour obtenir de l’aide Microsoft 365 Famille ou Microsoft 365 Personnel**, voir [Utilisation des clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
