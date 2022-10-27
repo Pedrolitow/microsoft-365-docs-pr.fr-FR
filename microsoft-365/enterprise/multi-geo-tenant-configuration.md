@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: Dans cet article, découvrez l’ajout d’emplacements satellites et la configuration de votre client pour Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 3c8071616aa754888aa6cab9bc5a0373552497e5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 72de636c8b6641047160c4f8dd95c10bdff2c3f5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687238"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726461"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuration de client multigéographique dans Microsoft 365
 
@@ -30,7 +30,7 @@ Avant de configurer votre client pour Microsoft 365 Multi-Geo, assurez-vous que 
 
 Pour utiliser Microsoft 365 Multi-Geo, vous avez besoin du plan _Fonctionnalités multigéographiques dans Microsoft 365_. Travaillez avec votre équipe des comptes pour ajouter cette offre à votre client. Votre équipe des comptes vous mettra en contact avec le spécialiste en gestion des licences approprié et votre client sera configuré.
 
-Notez que le plan des _fonctionnalités multigéographiques dans Microsoft 365_ est un plan de service au niveau utilisateur. Vous avez besoin d’une licence pour chaque utilisateur que vous souhaitez héberger dans un emplacement satellite. Vous pouvez ajouter des licences supplémentaires au fur et à mesure que vous ajoutez des utilisateurs dans des emplacements satellites.
+Note that the _Multi-Geo Capabilities in Microsoft 365_ plan are a user-level service plan. You need a license for each user that you want to host in a satellite location. You can add more licenses over time as you add users in satellite locations.
 
 Une fois que votre client a été approvisionné avec l’offre _Fonctionnalités multigéographiques dans Microsoft 365_, l’onglet **Emplacements géographiques** est disponible dans les centres d’administration OneDrive et SharePoint.
 
@@ -40,11 +40,11 @@ Vous devez ajouter un emplacement satellite à chaque emplacement géographique 
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-![Capture d’écran de la page Emplacements géographiques dans le Centre d’administration SharePoint.](../media/sharepoint-multi-geo-admin-center.png)
+![Capture d’écran de la page des emplacements géographiques dans le Centre d’administration SharePoint.](../media/sharepoint-multi-geo-admin-center.png)
 
 Pour ajouter un emplacement satellite
 
-1. Ouvrez le Centre d’administration SharePoint. et accédez aux <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**emplacements géographiques**</a>.
+1. Ouvrez le Centre d’administration SharePoint. et accédez à <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Emplacements géographiques**</a>.
 
 1. Sélectionnez **Ajouter un emplacement**.
 
@@ -54,15 +54,15 @@ Pour ajouter un emplacement satellite
 
 1. Sélectionnez **Fermer**.
 
-La configuration peut prendre jusqu’à 72 heures selon la taille de votre client. Une fois que la configuration d’un emplacement satellite est terminée, vous recevez un e-mail de confirmation. Lorsque le nouvel emplacement géographique s’affiche en bleu sur la carte sur l’onglet **Emplacements géographiques** dans le centre d’administration OneDrive, vous pouvez définir l’emplacement des données par défaut des utilisateurs sur cet emplacement géographique.
+Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location.
 
 > [!IMPORTANT]
-> Votre nouvel emplacement satellite est configuré avec des paramètres par défaut. Cela vous permettra de configurer cet emplacement satellite en fonction de vos besoins de conformité locale.
+> Your new satellite location will be set up with default settings. This will allow you to configure that satellite location as appropriate for your local compliance needs.
 
 ## <a name="setting-users-preferred-data-location"></a>Configuration de l’emplacement des données par défaut des utilisateurs
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span>
 
-Lorsque vous activez les emplacements satellites nécessaires, vous pouvez mettre à jour vos comptes d’utilisateur pour utiliser l’emplacement de données par défaut approprié. Nous vous recommandons de définir un emplacement de données par défaut pour chaque utilisateur, même si cet utilisateur reste dans l’emplacement central.
+Once you enable the needed satellite locations, you can update your user accounts to use the appropriate preferred data location. We recommend that you set a preferred data location for every user, even if that user is staying in the central location.
 
 > [!IMPORTANT]
 > Si l’emplacement des données par défaut d’un utilisateur est défini sur un emplacement qui n’a pas été configuré en tant qu’emplacement satellite ou emplacement central, le système envoie les données par défaut vers l’emplacement central lorsqu’il approvisionne les sites OneDrive et SharePoint, ainsi que les boîtes aux lettres de groupe.
@@ -81,7 +81,7 @@ Suivez le processus de [Azure Active Directory Connect Sync : configurer l’em
 Nous vous recommandons d’inclure la configuration de l’emplacement des données par défaut de l’utilisateur dans le cadre de votre flux de travail de création utilisateur standard.
 
 > [!IMPORTANT]
-> Pour les nouveaux utilisateurs sans OneDrive approvisionnés, concédez une licence au compte et attendez au moins 48 heures après la synchronisation du fichier PDL d’un utilisateur avec Azure AD pour que les modifications se propagent avant que l’utilisateur se connecte à OneDrive Entreprise. (Configurer l’emplacement des données par défaut avant que l’utilisateur ne se connecte pour approvisionner son OneDrive Entreprise permet de s’assurer que le nouveau OneDrive de l’utilisateur est approvisionné à l’emplacement approprié.)
+> Pour les nouveaux utilisateurs sans OneDrive provisionné, attribuez une licence au compte et attendez au moins 48 heures après la synchronisation du PDL d’un utilisateur avec Azure AD pour que les modifications se propagent avant que l’utilisateur ne se connecte à OneDrive Entreprise. (Configurer l’emplacement des données par défaut avant que l’utilisateur ne se connecte pour approvisionner son OneDrive Entreprise permet de s’assurer que le nouveau OneDrive de l’utilisateur est approvisionné à l’emplacement approprié.)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Configurer l’emplacement des données par défaut pour les utilisateurs cloud uniquement
 
@@ -91,13 +91,13 @@ Les procédures de cette section nécessitent le [module Microsoft Azure Active 
 
 1. [Connectez-vous et enregistrez-vous](/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell&preserve-view=true) avec un ensemble d’informations d’identification d’administrateur général pour votre client.
 
-2. Utilisez la cmdlet [Set-MsolUser](/powershell/module/msonline/set-msoluser?view=azureadps-1.0&preserve-view=true) pour définir l’emplacement des données par défaut pour chacun de vos utilisateurs. Par exemple :
+2. Use the [Set-MsolUser](/powershell/module/msonline/set-msoluser?view=azureadps-1.0&preserve-view=true) cmdlet to set the preferred data location for each of your users. For example:
 
    ```powershell
    Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
    ```
 
-    Vous pouvez vérifier pour confirmer que l’emplacement des données par défaut a été correctement mis à jour à l’aide de la cmdlet Get-MsolUser. Par exemple :
+    Vous pouvez vérifier que l’emplacement de données préféré a été correctement mis à jour à l’aide de l’applet de commande Get-MsolUser. Par exemple :
 
    ```powershell
    (Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation
@@ -108,14 +108,14 @@ Les procédures de cette section nécessitent le [module Microsoft Azure Active 
 Nous vous recommandons d’inclure la configuration de l’emplacement des données par défaut de l’utilisateur dans le cadre de votre flux de travail de création utilisateur standard.
 
 > [!IMPORTANT]
-> Pour les nouveaux utilisateurs sans OneDrive approvisionnés, concédez une licence au compte et attendez au moins 48 heures après la définition du fichier PDL d’un utilisateur pour que les modifications se propagent avant que l’utilisateur se connecte à OneDrive. (Configurer l’emplacement des données par défaut avant que l’utilisateur ne se connecte pour approvisionner son OneDrive Entreprise permet de s’assurer que le nouveau OneDrive de l’utilisateur est approvisionné à l’emplacement approprié.)
+> Pour les nouveaux utilisateurs sans OneDrive provisionné, attribuez une licence au compte et attendez au moins 48 heures après la définition du PDL d’un utilisateur pour que les modifications se propagent avant que l’utilisateur ne se connecte à OneDrive. (Configurer l’emplacement des données par défaut avant que l’utilisateur ne se connecte pour approvisionner son OneDrive Entreprise permet de s’assurer que le nouveau OneDrive de l’utilisateur est approvisionné à l’emplacement approprié.)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Configuration de OneDrive et l’effet de PDL
 
-Si l’utilisateur possède déjà un site OneDrive créé dans le client, configurer son emplacement des données par défaut ne déplace pas automatiquement son OneDrive existant. Pour déplacer le OneDrive d’un utilisateur, consultez [OneDrive Entreprise Déplacement géographique](move-onedrive-between-geo-locations.md).
+Si l’utilisateur possède déjà un site OneDrive créé dans le client, configurer son emplacement des données par défaut ne déplace pas automatiquement son OneDrive existant. Pour déplacer le OneDrive d’un utilisateur, consultez [OneDrive Entreprise déplacement géographique](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
-> Exchange Online déplace automatiquement la boîte aux lettres de l’utilisateur si le PLD change et que mailboxRegion ne correspond plus au code emplacement géographique de la base de données de boîte aux lettres. Pour plus d’informations, consultez [Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique](./administering-exchange-online-multi-geo.md).
+> Exchange Online déplace automatiquement la boîte aux lettres de l’utilisateur si la pdL change et que mailboxRegion ne correspond plus au code emplacement géographique de la base de lettres. Pour plus d’informations, consultez [Administration de boîtes aux lettres Exchange Online dans un environnement multigéographique](./administering-exchange-online-multi-geo.md).
 
 Si l’utilisateur ne dispose pas d’un site OneDrive dans le client, OneDrive est approvisionné pour lui conformément à la valeur de son emplacement des données par défaut en supposant que ce dernier correspond à l’un des emplacements satellites de l’entreprise.
 
@@ -146,14 +146,14 @@ Sélectionnez OneDrive à partir du lanceur d’applications de Microsoft 365 e
 
 Connectez-vous à votre application mobile OneDrive avec vos informations d’identification de compte de test. Confirmez que vous pouvez voir vos fichiers OneDrive Entreprise et que vous pouvez interagir avec eux à partir de votre appareil mobile.
 
-**client Synchronisation OneDrive** :
+**Synchronisation OneDrive client** :
 
-Vérifiez que le client de synchronisation OneDrive détecte automatiquement l’emplacement géographique de OneDrive Entreprise dès la connexion. Si vous devez télécharger le client de synchronisation, vous pouvez cliquer sur **Synchroniser** dans la bibliothèque OneDrive.
+Confirm that the OneDrive sync client automatically detects your OneDrive for Business geo location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
 
 **Applications Office** :
 
-Confirmez que vous pouvez utiliser OneDrive Entreprise en vous connectant à partir d’une application Office, telle que Word. Ouvrez l’application Office, puis sélectionnez « OneDrive- \<TenantName\> ». Office détecte votre emplacement OneDrive et affiche les fichiers que vous pouvez ouvrir.
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – \<TenantName\>". Office will detect your OneDrive location and show you the files that you can open.
 
 **Partage** :
 
-Essayez de partager des fichiers OneDrive. Vérifiez que le sélecteur de personnes affiche tous vos utilisateurs SharePoint en ligne indépendamment de leur emplacement géographique.
+Essayez de partager des fichiers OneDrive. Vérifiez que le sélecteur de personnes affiche tous vos utilisateurs SharePoint Online, quel que soit leur emplacement géographique.

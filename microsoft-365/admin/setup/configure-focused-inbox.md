@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si vous êtes chargé de la configuration des paramètres de messagerie pour tout le monde dans une entreprise, cette article explique comment configurer la Boîte de réception Prioritaire pour les utilisateurs.
-ms.openlocfilehash: fd2a8e82297eb7b3298688e72a0f01f7c0b98fc6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7e627e077ee5e906f78300cda8366199692dd511
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68169098"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726395"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurez la boîte de réception Prioritaire pour tous les membres de votre organisation
 

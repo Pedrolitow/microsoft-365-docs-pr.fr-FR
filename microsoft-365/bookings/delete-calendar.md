@@ -8,27 +8,28 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: Utilisez la Centre d'administration Microsoft 365 ou Windows PowerShell pour supprimer les calendriers Bookings.
-ms.openlocfilehash: 6bbac74968eb4c7aa01f27bbe6c3aba71797e5e0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Utilisez le Centre d'administration Microsoft 365 ou le Windows PowerShell pour supprimer les calendriers Bookings.
+ms.openlocfilehash: b301cf5355ae3be368b464d68a3c257abc99d297
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68199260"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719511"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Supprimer un calendrier de réservation dans Bookings
 
-Cet article explique comment supprimer un calendrier de réservation indésirable. Vous pouvez supprimer le calendrier de réservation dans le Centre d'administration Microsoft 365 ou utiliser PowerShell. Le calendrier Bookings étant une boîte aux lettres dans Exchange Online vous supprimez le compte d’utilisateur correspondant pour supprimer le calendrier de réservation.
+Cet article explique comment supprimer un calendrier de réservation indésirable. Vous pouvez supprimer le calendrier de réservation dans le Centre d'administration Microsoft 365 ou utiliser PowerShell. Le calendrier Bookings est une boîte aux lettres dans Exchange Online vous supprimez donc le compte d’utilisateur correspondant pour supprimer le calendrier de réservation.
 
 > [!IMPORTANT]
-> Tous les calendriers de réservation que vous avez créés en 2017 ou avant doivent être supprimés à l’aide des instructions PowerShell de cette rubrique. Tous les calendriers de réservation créés en 2018 ou après peuvent être supprimés dans le Centre d'administration Microsoft 365.
+> Tous les calendriers de réservation que vous avez créés en 2017 ou avant doivent être supprimés à l’aide des instructions PowerShell sur cette rubrique. Tous les calendriers de réservation créés en 2018 ou après peuvent être supprimés dans le Centre d'administration Microsoft 365.
 
-Le calendrier de réservation est l’endroit où toutes les informations pertinentes sur ce calendrier de réservation et les données sont stockées, notamment :
+Le calendrier de réservation est l’endroit où sont stockées toutes les informations pertinentes sur ce calendrier de réservation et les données, notamment :
 
 - Informations professionnelles, logo et heures de travail ajoutées lors de la création du calendrier de réservation
-- Personnel et services pertinents ajoutés lors de la création du calendrier de réservation
+- Personnel et services appropriés ajoutés lors de la création du calendrier de réservation
 - Toutes les réservations et les rendez-vous de congé ajoutés au calendrier de réservation une fois qu’il a été créé.
 
 > [!WARNING]
@@ -40,11 +41,11 @@ Le calendrier de réservation est l’endroit où toutes les informations pertin
 
 1. Dans le centre d'administration, sélectionnez **Utilisateurs**.
 
-   ![Image de l’interface utilisateur utilisateur utilisateur dans Centre d'administration Microsoft 365.](../media/bookings-admin-center-users.png)
+   ![Image de l’interface utilisateur utilisateurs dans Centre d'administration Microsoft 365.](../media/bookings-admin-center-users.png)
 
-1. Dans la page **Utilisateurs actifs** , choisissez le nom du calendrier de réservation à supprimer, puis **sélectionnez Supprimer l’utilisateur**.
+1. Dans la page **Utilisateurs actifs** , choisissez le nom du calendrier de réservation que vous souhaitez supprimer, puis sélectionnez **Supprimer l’utilisateur**.
 
-   ![Image de l’interface utilisateur Supprimer l’utilisateur dans Centre d'administration Microsoft 365.](../media/bookings-delete-user.png)
+   ![Image de Supprimer l’interface utilisateur dans Centre d'administration Microsoft 365.](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Supprimer un calendrier de réservation à l’aide de Exchange Online PowerShell
 

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -27,12 +28,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 09/28/2022
-ms.openlocfilehash: 76223238cda024c5748e9228dd4940778f1d69aa
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 204d7c9e886af4080100be10845c02837b4c969f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492591"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718587"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -66,27 +67,27 @@ Actuellement, certaines transactions par carte de crédit, notamment celles qui 
 
 ### <a name="upi-and-netbanking-payment-options"></a>Options de paiement UPI et NetBanking
 
-Le Centre d'administration Microsoft 365 prend en charge deux autres options de paiement pour les clients en Inde :
+Le Centre d'administration Microsoft 365 prend en charge deux options de paiement alternatives pour les clients en Inde :
 
 - Le paiement UPI (Unified Paiements Interface) est un mode de paiement en temps réel.
 - NetBanking (Internet Banking) permet aux clients d’accéder aux services bancaires sur une plateforme en ligne.
 
 > [!IMPORTANT]
-> UPI et NetBanking ne sont pris en charge que pour les transactions uniques.
+> UPI et NetBanking ne sont pris en charge que pour les transactions ponctuelles.
 
 #### <a name="how-do-i-make-a-payment-with-upi-or-netbanking"></a>Comment faire effectuer un paiement avec UPI ou NetBanking ?
 
-1. Si vous êtes un client de retour, lorsque vous effectuez un paiement, sélectionnez **UPI /NetBanking** **dans la liste** déroulante mode de paiement, puis sélectionnez M **ake payment**. Passez à l’étape 4.
+1. Si vous êtes un client de retour, lorsque vous effectuez un paiement, sélectionnez **UPI / NetBanking** dans la liste déroulante **Mode** de paiement, puis sélectionnez M **ake payment**. Passez à l’étape 4.
 2. Pour les nouveaux clients, lorsque vous effectuez votre premier paiement, sélectionnez **Ajouter un mode de paiement**.
-3. Sélectionnez **UPI /NetBanking**, puis **Effectuez le paiement**.
+3. Sélectionnez **UPI / NetBanking**, puis **Sélectionnez Effectuer le paiement**.
 4. Vous êtes redirigé vers le partenaire de paiement, BillDesk, où vous choisissez UPI ou NetBanking pour votre mode de paiement.
 5. Suivez les instructions de BillDesk pour terminer la transaction.
 
-Après avoir soumis le paiement, laissez le temps au paiement d’apparaître dans le centre d’administration.
+Après avoir envoyé le paiement, prévoyez le temps nécessaire pour que le paiement apparaisse dans le centre d’administration.
 
 #### <a name="how-am-i-refunded-if-i-made-a-payment-with-upi-or-netbanking"></a>Comment suis-je remboursé si j’ai effectué un paiement avec UPI ou NetBanking ?
 
-Les remboursements sont traités comme des frais réguliers et sont remboursés sur votre compte bancaire.
+Les remboursements sont considérés comme des frais réguliers et sont remboursés sur votre compte bancaire.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Payer par carte de crédit, carte de débit, ou compte bancaire
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -33,24 +34,24 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers dans Microsoft 365.
-ms.openlocfilehash: 591dea47ee8b73a7858fae79191b1338c08a8c0d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bdd62dd0e5c525933b5e0d5c14322c4ac681bb70
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68203176"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731874"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurer le partage et le stockage de fichiers dans Microsoft 365
 
 Pour configurer le stockage et le partage des fichiers pour votre entreprise, nous vous recommandons d'utiliser OneDrive avec un site d’équipe. Cette configuration est idéale si vous avez une petite entreprise ne comptant que quelques employés.
 
-## <a name="watch-where-to-store-files-in-office-365"></a>Regarder : où stocker des fichiers dans Office 365
+## <a name="watch-where-to-store-files-in-office-365"></a>Regarder : Où stocker les fichiers dans Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
-## <a name="microsoft-365-document-storage-and-management"></a>Gestion et stockage de documents Microsoft 365
+## <a name="microsoft-365-document-storage-and-management"></a>Stockage et gestion des documents Microsoft 365
 
 - Nous avons conçu OneDrive pour un usage individuel et le partage occasionnel de fichiers.
 
@@ -58,7 +59,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 Tant OneDrive que les sites d'équipe vous offrent ainsi qu'à vos employés un accès en tout lieu.
   
-![Diagramme montrant comment les produits Microsoft 365 peuvent utiliser des sites OneDrive ou Team.](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Diagramme qui montre comment les produits Microsoft 365 peuvent utiliser OneDrive ou les sites d’équipe.](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Voici quelques recommandations relatives aux éléments à stocker dans les divers emplacements lorsque vous utilisez à la fois OneDrive et des sites d'équipe :<br/>
 
@@ -99,7 +100,7 @@ Voici comment chaque membre de votre équipe peut configurer OneDrive, puis part
   
 5. Après avoir indiqué les personnes avec lesquelles vous voulez partager le lien, sélectionnez **Envoyer**. Le programme envoie immédiatement l’e-mail aux personnes que vous invitez.
 
-    ![Partagez un lien montrant la liste des noms.](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![Partagez un lien affichant la liste des noms.](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. Voici ce à quoi ressemble l’e-mail. 
 
@@ -148,11 +149,11 @@ Pour synchroniser des fichiers sur votre site d’équipe avec votre ordinateur 
   
 5. Si vous n’avez pas encore synchronisé votre OneDrive, un écran **Voici votre dossier OneDrive** peut apparaître. Consultez le chemin d’accès sous **Voici votre dossier OneDrive**. Sélectionnez **Changer d’emplacement** si vous souhaitez utiliser un autre chemin d’accès, puis sélectionnez **Suivant**.
 
-    ![Modifiez votre dossier local à cet écran.](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![Modifiez votre dossier local dans cet écran.](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. Les fichiers de vos sites d’équipe apparaissent dans le volet gauche de l’Explorateur de fichiers, sous le nom de votre organisation. Les fichiers de OneDrive apparaissent sous « OneDrive : \<Name of Organization\> »
 
-    ![Découvrez ce qui a été synchronisé dans votre dossier local.](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![Consultez ce qui a été synchronisé dans votre dossier local.](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. Testez la synchronisation en ouvrant un fichier dans le dossier de l’équipe sur votre ordinateur. Apportez une modification, puis sélectionnez **Enregistrer**.
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
-ms.openlocfilehash: d7dca16ad65e97940b268b300975f242accaf137
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 76b64bc8e937a83ab4333cdd6ff774525f7ddd99
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68629300"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731346"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
@@ -58,17 +59,17 @@ Supprimez-vous votre domaine parce que vous souhaitez l’ajouter à un autre pl
 
 ::: moniker-end
 
-2. Sélectionnez **Utilisateurs** > **actifs**.
+2. Sélectionnez **Utilisateurs** > **Utilisateurs actifs**.
 
-3. Sélectionnez les zones en regard des noms de tous les utilisateurs que vous souhaitez déplacer.
+3. Sélectionnez les cases en regard des noms de tous les utilisateurs que vous souhaitez déplacer.
 
-4. En haut de la page, puis **choisissez Modifier les domaines**.
+4. En haut de la page, puis choisissez **Modifier les domaines**.
 
 5. Dans le volet **Modifier les domaines** , sélectionnez un autre domaine.
 
 You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
 
-#### <a name="move-yourself"></a>Déplacer vous-même
+#### <a name="move-yourself"></a>Se déplacer
 
 ::: moniker range="o365-worldwide"
 
@@ -82,11 +83,11 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 
 ::: moniker-end
 
-2. Accédez à **Utilisateurs** \> **actifs** et sélectionnez votre compte dans la liste.
+2. Accédez à **Utilisateurs** \> **Utilisateurs actifs**, puis sélectionnez votre compte dans la liste.
 
 3. Sous l’onglet **Compte** , sélectionnez **Gérer le nom d’utilisateur**, puis choisissez un autre domaine.
 
-4. En haut, sélectionnez le nom de votre compte, puis **déconnectez-vous**.
+4. En haut, sélectionnez le nom de votre compte, puis se **déconnecter**.
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -96,17 +97,17 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Groupes**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes**>.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **.**
 
 ::: moniker-end
 
-2. Sélectionnez le nom du groupe, puis sous l’onglet **Général** sous **Email adresse, Principal**, **sélectionnez Modifier**.
+2. Sélectionnez le nom du groupe, puis sous l’onglet **Général** sous **Email’adresse, Principal**, sélectionnez **Modifier**.
 
 3. Utilisez la liste déroulante pour choisir un autre domaine.
 
@@ -117,7 +118,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Si vous supprimez un domaine personnalisé, consultez [supprimer un domaine personnalisé](#remove-a-custom-domain) avant de continuer.
+> Si vous supprimez un domaine personnalisé, consultez [Supprimer un domaine personnalisé](#remove-a-custom-domain) avant de continuer.
 
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
@@ -125,13 +126,13 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domaines</a> **d’installation**\>.
+1. Dans le Centre d’administration, accédez à la page **Domaines d’installation**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a>
 
 ::: moniker-end
 
-2. Dans la page **Domaines** , sélectionnez le domaine à supprimer.
+2. Dans la page **Domaines** , sélectionnez le domaine que vous souhaitez supprimer.
 
-3. Dans le volet droit, **sélectionnez Supprimer**.
+3. Dans le volet droit, sélectionnez **Supprimer**.
 
 4. Suivez les invites supplémentaires, puis sélectionnez **Fermer**.
 
@@ -166,7 +167,7 @@ Pour modifier vos enregistrements NS, consultez [Modifier les serveurs de noms p
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Combien de temps faut-il pour qu'un domaine soit supprimé ?
 
-La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à cinq minutes s’il n’est pas référencé dans un grand nombre d’emplacements tels que les groupes de sécurité, les listes de distribution, les utilisateurs, les alias, les boîtes aux lettres partagées, les boîtes aux lettres de ressources et les groupes Microsoft 365. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
+La suppression d’un domaine peut prendre jusqu’à cinq minutes si Microsoft 365 n’est pas référencé dans un grand nombre d’endroits tels que des groupes de sécurité, des listes de distribution, des utilisateurs, des alias, des boîtes aux lettres partagées, des boîtes aux lettres de ressources et des groupes Microsoft 365. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
 
 If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
 
@@ -175,7 +176,7 @@ If you have hundreds or thousands of users, use PowerShell to query for all user
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Vous ne pouvez pas supprimer le domaine [« onmicrosoft.com »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateur reviendront à l’adresse « .onmicrosoft.com » en tant que SMTP/UserprincipalName principal.
+> Vous ne pouvez pas supprimer le domaine [« onmicrosoft.com »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateur reviennent à l’adresse « . onmicrosoft.com » en tant que SMTP/UserprincipalName principal.
 
 Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../../business-video/get-help-support.md) et nous vous aiderons à effectuer cette tâche.
 
@@ -184,7 +185,7 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Vous ne pouvez pas supprimer le domaine [« .partner.onmschina.cn »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateur reviendront à l’adresse « .partner.onmschina.cn » en tant que SMTP/UserprincipalName principal.
+> Vous ne pouvez pas supprimer le domaine [« .partner.onmschina.cn »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateur reviennent à l’adresse « . partner.onmschina.cn » en tant que SMTP/UserprincipalName principal.
 
 Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true) et nous vous aiderons à effectuer cette tâche.
 

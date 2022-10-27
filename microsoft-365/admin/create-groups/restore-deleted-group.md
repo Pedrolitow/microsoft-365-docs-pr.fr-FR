@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,23 +23,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: Un groupe supprimé est conservé pendant 30 jours et vous pouvez toujours restaurer le groupe. Après 30 jours, le groupe et son contenu sont définitivement supprimés.
-ms.openlocfilehash: 54d68170256a59ac1e20d53a829a0bb87e1ef61c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Un groupe supprimé est conservé pendant 30 jours et vous pouvez toujours le restaurer. Après 30 jours, le groupe et son contenu sont supprimés définitivement.
+ms.openlocfilehash: ea154fa9a1533fdabf4cc9b1a8a6c50cd62cacff
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188634"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726725"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurer un groupe Microsoft 365 supprimé
 
-Si vous avez supprimé un groupe, il est conservé pendant 30 jours par défaut. Cette période de 30 jours est considérée comme une « suppression réversible », car vous pouvez toujours restaurer le groupe. Après 30 jours, le groupe et son contenu associé sont définitivement supprimés et ne peuvent pas être restaurés.
+Si vous avez supprimé un groupe, il est conservé pendant 30 jours par défaut. Cette période de 30 jours est considérée comme une « suppression réversible », car vous pouvez toujours restaurer le groupe. Après 30 jours, le groupe et son contenu associé sont supprimés définitivement et ne peuvent pas être restaurés.
 
 En cas de restauration d'un groupe, le contenu suivant est restauré :
   
 - Azure Active Directory (AD) Groupes Microsoft 365 objet, propriétés et membres.
     
-- adresses de messagerie du groupe.
+- Adresses de messagerie du groupe.
     
 - Exchange Online boîte de réception et calendrier partagés.
     
@@ -50,12 +51,12 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Teams
 
-- Contenu de groupe et de groupe Yammer (si le groupe Microsoft 365 a été créé à partir de Yammer)
+- Contenu du groupe et du groupe Yammer (si le groupe Microsoft 365 a été créé à partir de Yammer)
 
-- Espace [de travail](/power-bi/collaborate-share/service-create-workspaces) Power BI Classic
+- [Espace de travail](/power-bi/collaborate-share/service-create-workspaces) Power BI Classic
 
 > [!NOTE]
-> Cet article décrit la restauration de groupes Microsoft 365 uniquement. Tous les autres groupes ne peuvent pas être restaurés une fois supprimés.
+> Cet article décrit la restauration des groupes Microsoft 365 uniquement. Tous les autres groupes ne peuvent pas être restaurés une fois supprimés.
 
 ## <a name="restore-a-group"></a>Restaurer un groupe
 
@@ -65,20 +66,20 @@ Si vous êtes propriétaire d’un groupe Microsoft 365, vous pouvez restaurer l
 
 1. Dans la [page Groupes supprimés](https://outlook.office.com/people/group/deleted), sélectionnez l’option **Gérer les groupes** sous le nœud **Groupes** , puis choisissez **Supprimé**.
 
-2. Cliquez sur l’onglet **Restaurer** en regard du groupe à restaurer.
+2. Cliquez sur l’onglet **Restaurer** en regard du groupe que vous souhaitez restaurer.
 
 Si le groupe supprimé n’apparaît pas ici, contactez un administrateur.
 
-# <a name="admin-center"></a>[centre de Administration](#tab/admin-center)
+# <a name="admin-center"></a>[centre Administration](#tab/admin-center)
 
 Si vous êtes administrateur général ou administrateur de groupes, vous pouvez restaurer un groupe supprimé dans le Centre d'administration Microsoft 365 :
 
 1. Allez au [centre administratif](https://admin.microsoft.com).      
 2. Développez **Groupes**, puis cliquez sur **Groupes supprimés**.
-3. Sélectionnez le groupe à restaurer, puis cliquez sur Restaurer le **groupe**.
+3. Sélectionnez le groupe que vous souhaitez restaurer, puis cliquez sur **Restaurer le groupe**.
 
 > [!NOTE]
-> Dans certains cas, la restauration de toutes les données du groupe peut prendre jusqu’à 24 heures. 
+> Dans certains cas, la restauration du groupe et de toutes ses données peut prendre jusqu’à 24 heures. 
 
 ---
 

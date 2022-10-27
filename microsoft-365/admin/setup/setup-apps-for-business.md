@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -27,12 +28,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Apps for business.
-ms.openlocfilehash: 50d31891632be6612e7fe18d0072b4965b16fec1
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7739e98e1873f23931cfe9b6c5f5288160985d42
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186896"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731676"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurer Microsoft 365 Apps for business
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -32,12 +33,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d’administration Microsoft 365 en ajoutant un enregistrement DNS sur votre hôte DNS.
-ms.openlocfilehash: 6e60aba3c9ac4525ae6c5e92cf69a1044d7db587
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bb2bfac3d9d258a73ea17350ba996adb45de2b5f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166524"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725691"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -100,7 +101,7 @@ Suivez ces étapes pour ajouter, configurer ou poursuivre la configuration d’u
     1. Choisissez **Ajouter les enregistrements DNS pour moi** si votre bureau d’enregistrement prend en charge [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365) et que Microsoft [configurera automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md) en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365.
     2. Choose **I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **Choose this option if you know exactly what you're doing.**
 
-7. Si vous avez choisi *d’ajouter vous-même des enregistrements DNS*, sélectionnez **Suivant** et vous verrez une page contenant tous les enregistrements que vous devez ajouter à votre site web de bureaux d’enregistrement pour configurer votre domaine. 
+7. Si vous avez choisi *d’ajouter vous-même des enregistrements DNS*, sélectionnez **Suivant** . Une page contenant tous les enregistrements que vous devez ajouter au site web de votre bureau d’enregistrement pour configurer votre domaine s’affiche. 
 
     Si le portail ne reconnaît pas votre bureau d'enregistrement, vous pouvez [suivre ces instructions générales](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
     
@@ -161,7 +162,7 @@ Chaque organisation Microsoft 365 peut avoir jusqu’à cinq domaines onmicrosof
 
 > [!NOTE]
 > Vous devez être administrateur général ou administrateur de nom de domaine pour ajouter un domaine.
-> La création d’un domaine .onmicrosoft supplémentaire et son utilisation par défaut n’entraînent pas de changement de nom pour SharePoint Online. Pour apporter des modifications à votre domaine SharePoint .onmicrosoft, vous devez utiliser la [préversion du changement de nom de domaine SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actuellement disponible pour tout locataire avec moins de 10 000 sites).
+> La création d’un domaine .onmicrosoft supplémentaire et son utilisation par défaut n’entraînent pas de changement de nom pour SharePoint Online. Pour apporter des modifications à votre domaine SharePoint .onmicrosoft, vous devez utiliser la [préversion du renommage de domaine SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actuellement disponible pour tout locataire avec moins de 10 000 sites).
 > Si vous utilisez les services de messagerie Microsoft 365, la suppression de votre domaine .onmicrosoft initial n’est pas prise en charge.
 
 
@@ -176,18 +177,18 @@ Pour ajouter un domaine onmicrosoft.com :
 
 3. Sous l’onglet **Vue d’ensemble** , sélectionnez **Ajouter le domaine onmicrosoft.com**.
 
-    ![Capture d’écran des propriétés de domaine.](../../media/add-onmicrosoft-domain-link.png)
+    ![Capture d’écran des propriétés du domaine.](../../media/add-onmicrosoft-domain-link.png)
 
-4. Dans la page **Ajouter un domaine onmicrosoft** , dans la zone **Nom de domaine** , entrez le nom de votre nouveau domaine onmicrosoft.com. 
+4. Dans la page **Ajouter un domainemicrosoft** , dans la zone **Nom de domaine** , entrez le nom de votre nouveau domaine onmicrosoft.com. 
 
-    ![Capture d’écran de l’ajout d’un domaine onmicrosoft.](../../media/add-an-onmicrosoftcom-domain-page.png)
+    ![Capture d’écran de l’ajout d’un domaine microsoft.](../../media/add-an-onmicrosoftcom-domain-page.png)
 
     > [!NOTE]
-    > Veillez à vérifier l’orthographe et la précision du nom de domaine que vous avez entré. Vous êtes limité à cinq domaines onmicrosoft.com et ne peuvent pas être supprimés une fois créés.     
+    > Veillez à vérifier l’orthographe et l’exactitude du nom de domaine que vous avez entré. Vous êtes limité à cinq domaines onmicrosoft.com et ne peuvent pas être supprimés une fois qu’ils ont été créés.     
 
-5. Sélectionnez **Ajouter un domaine**. Une fois l’ajout réussi, vous verrez un message indiquant cela. 
+5. Sélectionnez **Ajouter un domaine**. Une fois l’ajout réussi, un message s’affiche. 
     
-    ![Capture d’écran de l’ajout réussi du domaine.](../../media/domain-added.png)
+    ![Capture d’écran du domaine ajouté avec succès.](../../media/domain-added.png)
 
 Vous pouvez définir n’importe quel domaine que vous possédez comme domaine par défaut. 
 

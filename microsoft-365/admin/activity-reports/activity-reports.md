@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 1c1c5539b553b26680c826c0329f5a69a6d5c798
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 568ef9e05da62ad8833f1a517bc535ad82402fcd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503839"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68724944"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -93,7 +94,7 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 
 |Rapport|Public|GCC|GCC-High|DoD|Office 365 géré par 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|No<sup>1</sup>|No<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|
+|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|No<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
 |[Activité de messagerie](email-activity-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation des applications de messagerie](email-apps-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation des boîtes aux lettres](mailbox-usage.md)|Oui|Oui|Oui|Oui|Oui|
@@ -111,7 +112,7 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 |[Activité sur Yammer](yammer-activity-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Utilisation de Yammer sur des appareils](yammer-device-usage-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Rapport d’activité des groupes Yammer](yammer-groups-activity-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
-|[Utilisation des formulaires](forms-activity-ww.md)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|
+|[Utilisation des formulaires](forms-activity-ww.md)|Oui|Oui|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
 |[Activité vocale pour le client Dynamics 365](forms-pro-activity-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Activité Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|
 |[Activité d’organisation de conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|
@@ -172,7 +173,7 @@ Il faudra quelques minutes pour que ces modifications prennent effet sur les rap
 
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-deleted"></a>Qu’advient-il des données d’utilisation lorsqu’un compte d’utilisateur est supprimé ?
 
-Chaque fois que vous supprimez le compte d’un utilisateur, Microsoft supprime les données d’utilisation de cet utilisateur dans les 30 jours. Les utilisateurs supprimés seront toujours inclus dans les totaux du graphique d’activité pour les périodes où ils étaient actifs, mais ils n’apparaîtront pas dans la table Détails de l’utilisateur.
+Chaque fois que vous supprimez le compte d’un utilisateur, Microsoft supprime les données d’utilisation de cet utilisateur dans les 30 jours. Les utilisateurs supprimés seront toujours inclus dans les totaux du graphique d’activité pour les périodes pendant lesquelles ils étaient actifs, mais n’apparaîtront pas dans le tableau Détails de l’utilisateur.
 
 Cependant, lorsque vous sélectionnez un jour particulier, jusqu'à 28 jours à compter de la date actuelle, le rapport affiche l'utilisation de l'utilisateur pour ce jour dans le tableau Détails de l'utilisateur.
 

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +20,18 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid: MET150
-description: Découvrez comment déplacer des utilisateurs entre des abonnements.
+description: Découvrez comment déplacer des utilisateurs d’un abonnement à l’autre.
 ms.date: 05/12/2022
-ms.openlocfilehash: b0a69cb06f180facfc002fe5e33b6042966708e7
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 230996448d333076d150a0ff051f268e72d55363
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68189976"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719445"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
-Si vous avez plusieurs produits, si vous avez des utilisateurs disposant d’une licence pour un produit, mais que vous souhaitez les déplacer vers un autre produit, vous pouvez remplacer leur licence existante par une licence différente.
+Si vous avez plusieurs produits, que vous avez des utilisateurs disposant d’une licence pour un produit, mais que vous souhaitez les déplacer vers un autre produit, vous pouvez remplacer leur licence existante par une autre.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -54,25 +55,25 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 
 3. Dans la partie supérieure, sélectionnez **Gérer des licences de produits**.
 
-4. Dans le volet **Gérer les licences de produit** , **sélectionnez Remplacer**  et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
+4. Dans le volet **Gérer les licences de produit** , sélectionnez **Remplacer**  , puis sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
 
-5. En bas, **sélectionnez Enregistrer les modifications** \> **close**.
+5. En bas, sélectionnez **Enregistrer les modifications** \> **Fermer**.
 
-## <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sauvegarder des données avant de changer de plan Microsoft 365 pour les entreprises
+## <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sauvegarder les données avant de changer de plan Microsoft 365 pour les entreprises
 
-Si un utilisateur est basculé vers un autre abonnement qui a moins de services liés aux données ou si un utilisateur quitte l’organisation, vous pouvez télécharger une copie de ses données stockées dans Microsoft 365 avant de passer au nouvel abonnement.
+Si un utilisateur passe à un autre abonnement qui a moins de services liés aux données ou qu’un utilisateur quitte l’organisation, vous pouvez télécharger une copie de ses données stockées dans Microsoft 365 avant de passer au nouvel abonnement.
 
-Si vous déplacez un utilisateur vers un abonnement qui a les mêmes services ou plus, vous n’avez pas besoin de sauvegarder les données utilisateur.
+Si vous déplacez un utilisateur vers un abonnement qui a le même ou plusieurs services, vous n’avez pas besoin de sauvegarder les données utilisateur.
   
 ### <a name="save-a-copy-of-outlook-information"></a>Enregistrer une copie des informations Outlook
 
-Si les utilisateurs disposent d’Outlook, ils peuvent [exporter ou sauvegarder des e-mails, des contacts et du calendrier vers un fichier .pst Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) avant que leur plan ne soit basculé.
+Si les utilisateurs disposent d’Outlook, ils peuvent [exporter ou sauvegarder des e-mails, des contacts et du calendrier dans un fichier .pst Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) avant que leur plan ne soit basculé.
   
-Une fois le basculement vers le nouveau plan terminé, les utilisateurs peuvent [importer des e-mails, des contacts et un calendrier à partir d’un fichier .pst Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+Une fois le passage au nouveau plan terminé, les utilisateurs peuvent [importer des e-mails, des contacts et du calendrier à partir d’un fichier .pst Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
   
 ### <a name="save-files-stored-in-onedrive-for-business"></a>Enregistrer les fichiers stockés dans OneDrive Entreprise
 
-Avant de passer à un autre abonnement, les [utilisateurs peuvent télécharger des fichiers et dossiers à partir de OneDrive ou SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) vers un autre emplacement, tel qu’un dossier sur le disque dur de leur ordinateur ou un partage de fichiers sur le réseau de l’organisation.
+Avant de passer à un autre abonnement, les utilisateurs peuvent [télécharger des fichiers et des dossiers à partir de OneDrive ou SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) vers un autre emplacement, tel qu’un dossier sur le disque dur de leur ordinateur ou un partage de fichiers sur le réseau de l’organisation.
   
 ### <a name="save-yammer-information"></a>Enregistrer les informations Yammer
 
@@ -82,26 +83,26 @@ Les administrateurs peuvent exporter tous les messages, notes, fichiers, rubriqu
 
 Si un utilisateur passe d’un abonnement avec SharePoint Online à un abonnement qui ne l’a pas, la vignette **SharePoint** n’apparaît plus dans son menu Microsoft 365.
   
-Toutefois, tant que le nouvel abonnement se trouve dans la même organisation que celui à partir de lequel ils sont basculés, les utilisateurs peuvent toujours accéder au site d’équipe SharePoint. Ils peuvent afficher et mettre à jour des blocs-notes, des documents, des tâches et des calendriers à l’aide de l’URL directe vers le site d’équipe.
+Toutefois, tant que le nouvel abonnement se trouve dans la même organisation que celle à partir de laquelle ils sont transférés, les utilisateurs peuvent toujours accéder au site d’équipe SharePoint. Ils peuvent afficher et mettre à jour des notebooks, des documents, des tâches et des calendriers à l’aide de l’URL directe du site d’équipe.
   
 > [!TIP]
-> Nous recommandons aux utilisateurs d’accéder au site d’équipe avant que leur abonnement ne soit basculé et d’enregistrer l’URL en tant que favori ou signet dans leur navigateur.
+> Nous recommandons aux utilisateurs d’accéder au site d’équipe avant le basculement de leur abonnement et d’enregistrer l’URL en tant que favori ou signet dans leur navigateur.
   
-Par défaut, l’URL du site web de l’équipe se présente sous la forme suivante :
+Par défaut, l’URL du site web d’équipe se présente sous la forme suivante :
   
 ```html
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-où  _\<orgDomain\>_ se trouve l’URL de l’organisation.
+où  _\<orgDomain\>_ est l’URL de l’organisation.
   
 Par exemple, si le domaine de l’organisation est contoso.onmicrosoft.com, l’URL directe vers le site d’équipe est `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx`.
   
-Bien sûr, les utilisateurs peuvent également télécharger des documents SharePoint Online à partir du site d’équipe SharePoint sur leur ordinateur local ou vers un autre emplacement à tout moment.
+Bien entendu, les utilisateurs peuvent également télécharger des documents SharePoint Online à partir du site d’équipe SharePoint sur leur ordinateur local ou à un autre emplacement à tout moment.
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
+Si vous n’envisagez pas de [réaffecter les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez de [supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
 
 ## <a name="related-content"></a>Contenu associé
 

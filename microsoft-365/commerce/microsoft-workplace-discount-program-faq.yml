@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Questions fréquentes (FAQ) sur le programme de remises microsoft workplace
+  title: FAQ sur le programme de remise Microsoft Workplace
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -10,6 +10,7 @@ metadata:
   ms.service: microsoft-365-business
   ms.localizationpriority: medium
   ms.collection:
+  - Tier2
   - scotvorg
   - M365-subscription-management
   - Adm_O365
@@ -18,85 +19,85 @@ metadata:
   - okr_SMB
   - AdminSurgePortfolio
   search.appverid: MET150
-  description: Forum aux questions (FAQ) sur le Programme de remises sur le temps de travail Microsoft.
+  description: Questions fréquentes (FAQ) sur le programme de remise Microsoft Workplace.
   ms.date: 07/19/2022
-  ms.openlocfilehash: d8c0c4a3fe14fbbd62288005b7246e9d36700692
-  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+  ms.openlocfilehash: 7dfe8fe5a0d1bbd5ccb89ce85c4e972cfd03707a
+  ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/29/2022
-  ms.locfileid: "68198688"
-title: Questions fréquentes (FAQ) sur le Programme de remises sur le temps de travail Microsoft
+  ms.lasthandoff: 10/27/2022
+  ms.locfileid: "68719467"
+title: Forum aux questions (FAQ) sur le programme de remise Microsoft Workplace
 summary: >
-  Les clients de licences en volume utilisent le Programme de remise sur le temps de travail Microsoft (anciennement le Programme d’utilisation à domicile ou HUP) sur le [site web Microsoft Store pour Entreprises](https://go.microsoft.com/fwlink/?linkid=2139192) ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+  Les clients de licence en volume utilisent le programme de remise Microsoft Workplace (anciennement appelé programme HUP) dans le [site web Microsoft Store pour Entreprises](https://go.microsoft.com/fwlink/?linkid=2139192) ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 
-  Tous les autres clients accèdent au programme de remise sur le lieu de travail à l’aide de cette étape :
+  Tous les autres clients accèdent au programme de remises sur le lieu de travail à l’aide de cette étape :
 
 
-  - Dans le Centre d’administration Microsoft, accédez à la page **Facturation** > [**de vos produits**](https://go.microsoft.com/fwlink/p/?linkid=842054), sélectionnez l’onglet **Avantages**, puis sélectionnez le **nom d’avantage** du programme de remise Microsoft Workplace.
+  - Dans le Centre d’administration Microsoft, accédez à la page **Facturation** > [**de vos produits**](https://go.microsoft.com/fwlink/p/?linkid=842054), sélectionnez l’onglet **Avantages**, puis sélectionnez le **nom de l’avantage** pour microsoft Workplace Discount Program.
 sections:
 - name: Ignoré
   questions:
   - question: >
-      Qu’est-ce que le programme microsoft workplace discount ?
+      Qu’est-ce que le programme de remise Microsoft Workplace ?
     answer: >
-      Le programme de remise Microsoft Workplace permet aux employés des entreprises éligibles d’acheter des produits de consommation Microsoft à prix réduit. Vous pouvez vérifier les remises actuelles pour chaque offre de produit en visitant la [page produit du Programme de remises](https://www.microsoft.com/workplace-discount-program) sur l’espace de travail.
+      Le programme de remise Microsoft Workplace permet aux employés des entreprises éligibles d’acheter des produits de consommation Microsoft à prix réduit. Vous pouvez vérifier les remises actuelles pour chaque offre de produit en visitant la [page du produit programme de remise sur le lieu de travail](https://www.microsoft.com/workplace-discount-program).
   - question: >
-      Dans quels marchés le programme de remise sur le temps de travail est-il offert?
-    answer: "Les remises sur les abonnements Microsoft 365 Famille et personnels sont offertes aux entreprises éligibles dans le monde entier, à l’exception des suivantes :\n\n- Liban, Macao, Russie et Venezuela : Cette offre n’est pas disponible sur ces marchés.\n- Chine et Hong Kong : un abonnement d’un an est disponible sur ces marchés. Pour la Chine, visitez [Microsoft 365 en Chine](https://www.microsoftstore.com.cn/home-use-program/invite). Pour Hong Kong, [visitez Acheter Microsoft 365 à un prix réduit](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Des remises sur certains appareils Surface et accessoires sont offertes aux entreprises éligibles sur certains marchés. \n"
+      Dans quels marchés le Programme de remise sur le lieu de travail est-il offert?
+    answer: "Les remises sur les abonnements Microsoft 365 Famille et Personnel sont proposées aux entreprises éligibles dans le monde entier, à quelques exceptions près :\n\n- Liban, Macao, Russie et Venezuela : cette offre n’est pas disponible sur ces marchés.\n- Chine et Hong Kong : un abonnement d’un an est disponible sur ces marchés. Pour la Chine, visitez [Microsoft 365 en Chine](https://www.microsoftstore.com.cn/home-use-program/invite). Pour Hong Kong, visitez [Acheter Microsoft 365 à un prix réduit](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Des remises sur certains appareils et accessoires Surface sont offertes aux entreprises éligibles dans certains marchés. \n"
   - question: >
-      Comment une organisation peut-elle bénéficier des avantages du Programme de remise sur le temps de travail Microsoft ?
-    answer: "Pour que les employés tirent parti de l’avantage du Programme de remise microsoft workplace, ils doivent disposer d’une adresse e-mail d’entreprise valide et d’un compte Microsoft actif, et votre organisation doit répondre à l’un des critères suivants :\n\n- Clients qui disposent d’une software assurance active pour les applications Office éligibles\n- Clients disposant de Microsoft 365/Microsoft 365 E3/E5 à partir de Software Assurance\n- Clients commerciaux et gouvernementaux qui ont acheté au moins 2 000 licences d’une ou d’une combinaison de Microsoft 365 E3/E5\n- Clients de l’éducation et des organismes sans but lucratif\n- Clients commerciaux et gouvernementaux qui ont dépensé 250 000 USD ou plus au cours des 12 derniers mois sur des appareils Power BI, Office, Surface & accessoires éligibles, Windows et Enterprise Mobility \n"
+      Comment une organisation peut-elle bénéficier des avantages du programme de remise Microsoft Workplace ?
+    answer: "Pour que les employés puissent tirer parti de l’avantage du programme de remise Microsoft Workplace, ils doivent disposer d’une adresse e-mail d’entreprise valide et d’un compte Microsoft actif, et votre organisation doit répondre à l’un des critères suivants :\n\n- Clients qui disposent d’une Software Assurance active pour les applications Office éligibles\n- Clients disposant de Microsoft 365/Microsoft 365 E3/E5 à partir de Software Assurance\n- Clients commerciaux et gouvernementaux qui ont acheté au moins 2 000 licences d’une ou d’une combinaison de Microsoft 365 E3/E5\n- Clients de l’éducation et des organismes à but non lucratif\n- Clients commerciaux et gouvernementaux qui ont dépensé 250 000 USD ou plus au cours des 12 mois précédents sur des appareils Power BI, Office, Surface & accessoires éligibles, Windows et Enterprise Mobility \n"
   - question: >
-      Qu’est-il arrivé au Programme d’utilisation à domicile ?
+      Qu’est-il arrivé au programme d’utilisation à domicile ?
     answer: >
-      Le Programme d'utilisation à domicile Microsoft est toujours disponible. Le nom du programme a été remplacé par microsoft Workplace Discount Program. Les produits à prix réduit achetés précédemment ne sont pas affectés par la modification du nom du programme.  Vous continuerez à recevoir des tarifs réduits sur les abonnements qualifiés, à condition que le renouvellement automatique reste activé.
+      Le Programme d'utilisation à domicile Microsoft est toujours disponible. Le nom du programme a changé en Programme de remise Microsoft Workplace. Les produits à prix réduit précédemment achetés ne sont pas affectés par la modification du nom du programme.  Vous continuerez à bénéficier de tarifs réduits sur les abonnements éligibles, à condition que le renouvellement automatique soit activé.
   - question: >
       Pourquoi dois-je créer un compte Azure Active Directory (AAD) pour utiliser le programme de remise sur l’espace de travail ?
     answer: >
-      Pour mettre à jour et moderniser le programme de remises sur le lieu de travail en vue d’offrir un plus large éventail de licences et d’avantages pour les produits, nous avons modifié la façon dont nous remplissions le programme. Microsoft Store pour Entreprises est utilisé pour la validation de l’éligibilité et pour attribuer les avantages, et s’appuie sur AAD pour connecter des informations à partir de VLSC et pour valider les domaines de messagerie sur lesquels se trouvent les employés de votre organisation. Pour plus d’informations, consultez [Inscription à Microsoft Store pour Entreprises ou Microsoft Store pour Éducation](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome). Vous pouvez également utiliser l’onglet **Avantages** de la page **Vos produits** du [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) pour gérer les avantages du programme.
+      Pour mettre à jour et moderniser le programme de remises sur le lieu de travail pour une gamme plus large d’avantages de licence et de produit, nous avons changé la façon dont nous remplissons le programme. Microsoft Store pour Entreprises est utilisé pour la validation de l’éligibilité et pour attribuer les avantages, et s’appuie sur AAD pour connecter les informations de VLSC et pour valider les domaines de messagerie sur lesquels se trouvent les employés de votre organisation. Pour plus d’informations, consultez [S’inscrire pour Microsoft Store pour Entreprises ou Microsoft Store pour Éducation](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome). Vous pouvez également utiliser l’onglet **Avantages** de la page **Vos produits** du [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) pour gérer les avantages du programme.
   - question: >
-      Comment faire devenir le Administration informatique affecté d’un locataire géré ?
+      Comment faire devenir le Administration informatique affecté d’un locataire managé ?
     answer: >
       Vous devez créer un enregistrement spécial dans DNS pour prouver que vous êtes propriétaire de votre domaine d’entreprise, par exemple, contoso.com.
 
 
-      Pour obtenir un processus pas à pas pour devenir un locataire géré, consultez [Prendre le contrôle d’un annuaire non managé en tant qu’administrateur dans Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+      Pour obtenir un processus pas à pas pour devenir un locataire managé, consultez [Prendre le contrôle d’un annuaire non managé en tant qu’administrateur dans Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
   - question: >
-      Quelles sont les ressources disponibles pour promouvoir l’avantage du Programme de remise sur le temps de travail pour les employés?
+      Quelles ressources sont disponibles pour promouvoir l’avantage du Programme de remise sur le lieu de travail auprès des employés?
     answer: >
-      Utilisez les ressources situées sur la page d’accueil [du Programme de remise](http://www.microsoft.com/workplace-discount-program/employer-resources) sur le temps de travail pour vous aider à promouvoir le programme auprès de vos employés. Vous trouverez des prospectus numériques et imprimables, des commentaires à utiliser dans les e-mails et les bulletins d’information, ainsi que des conseils sur la meilleure façon de promouvoir le programme de remises sur le temps de travail.
+      Utilisez les ressources disponibles sur la page d’accueil [du programme de remises](http://www.microsoft.com/workplace-discount-program/employer-resources) sur le lieu de travail pour vous aider à promouvoir le programme auprès de vos employés. Vous trouverez des flyers numériques et imprimables, du verbiage à utiliser dans des e-mails et des bulletins d’informations, ainsi que des conseils sur la meilleure façon de promouvoir le programme de remise sur le lieu de travail.
   - question: >
-      Quelles sont les étapes à suivre pour qu’un employé éligible effectue un achat dans le cadre d’un programme de remise Microsoft Workplace ?
+      Quelles sont les étapes à suivre pour qu’un employé éligible effectue un achat du programme de remise Microsoft Workplace ?
     answer: >
-      1. **S'enregistrer** Accédez à la [page Microsoft Workplace Discount Program](http://www.microsoft.com/workplace-discount-program) et **sélectionnez le bouton Prise en main** . Les employés entrent leur adresse e-mail d’entreprise.
+      1. **S'enregistrer** Accédez à la [page Programme de remise Microsoft Workplace](http://www.microsoft.com/workplace-discount-program), puis sélectionnez le bouton **Prise en main** . Les employés entrent leur adresse e-mail d’entreprise.
 
-      2. **Confirmer**  Un e-mail est envoyé à sa boîte de réception d’adresse e-mail d’entreprise avec un lien qui authentifie son éligibilité au programme.
+      2. **Confirmer**  Un e-mail est envoyé à leur boîte de réception d’adresse e-mail d’entreprise avec un lien qui authentifie leur éligibilité au programme.
 
-      3. **Connexion** Une fois qu’ils ont été authentifiés, ils commencent le processus d’achat en fournissant le compte Microsoft associé à leur adresse e-mail personnelle, ce qui leur permet d’afficher les remises sur les produits qui leur sont offerts en fonction de l’avantage du Programme de remise sur le temps de travail de l’organisation. Pour plus d’informations, consultez [Comment se connecter à votre compte Microsoft](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+      3. **Connexion** Une fois qu’ils ont été authentifiés, ils commencent le processus d’achat en fournissant le compte Microsoft associé à leur adresse e-mail personnelle, ce qui leur permet d’afficher les remises sur les produits qui leur sont disponibles en fonction de l’avantage du programme de remise sur le lieu de travail de l’organisation. Pour plus d’informations, consultez [Comment se connecter à votre compte Microsoft](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
 
       4. **Boutique** L’achat est traité et terminé dans le Microsoft Store.
   - question: >
-      Si un employé s’abonne à Microsoft 365 par le biais du Programme de remises Microsoft Workplace, quel impact cela a-t-il sur l’abonnement microsoft 365 entreprise et la limite d’appareils de notre organisation ?
+      Si un employé s’abonne à Microsoft 365 via le Programme de remise Microsoft Workplace, quel est l’impact de l’abonnement microsoft 365 entreprise et de la limite d’appareils de notre organisation ?
     answer: >
-      Les installations effectuées via le programme de remise sur le temps de travail n’ont aucun impact sur l’abonnement Microsoft 365 business de votre organisation. Lorsque les employés activent Microsoft 365 sur leurs appareils personnels, ils utilisent leur compte Microsoft personnel, et non leur compte professionnel. Les administrateurs informatiques de votre organisation ne gèrent ni ne prennent en charge les achats effectués par le biais du Programme de remise sur le temps de travail.
+      Les installations effectuées par le biais du programme de remise sur le lieu de travail n’ont aucun impact sur l’abonnement Microsoft 365 Business de votre organisation. Lorsque les employés activent Microsoft 365 sur leurs appareils personnels, ils utilisent leur compte Microsoft personnel, et non leur compte professionnel. Les administrateurs informatiques de votre organisation ne gèrent ni ne prennent en charge les achats effectués dans le cadre du programme de remise sur le lieu de travail.
   - question: >
-      Je ne parviens pas à gérer l’avantage microsoft workplace discount program de mon organisation. Où puis-je obtenir de l’aide ?
+      J’ai des difficultés à gérer l’avantage du programme Microsoft Workplace Discount Program de mon organisation. Où puis-je obtenir de l’aide ?
     answer: >
-      Pour obtenir de la prise en charge des problèmes de migration à partir du Centre de gestion des licences en volume ou pour accéder à Microsoft Store pour Entreprises, consultez [le support VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
+      Pour obtenir la prise en charge des problèmes de migration à partir du Centre de gestion des licences en volume ou pour accéder à Microsoft Store pour Entreprises, consultez [Prise en charge de VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
 
 
-      Pour les problèmes d’affichage de l’avantage une fois que vous avez déjà accédé à Microsoft Store pour Entreprises, consultez la [prise en charge des Administration du Store pour Entreprises](/microsoft-store/)
+      Pour les problèmes d’affichage de l’avantage après avoir déjà accédé à Microsoft Store pour Entreprises, consultez Prise en [charge du Windows Store pour Entreprises Administration](/microsoft-store/)
   - question: >
-      Que se passe-t-il si mes employés ont des questions sur ce programme ou ont besoin de support pour l’achat et l’installation ?
+      Que se passe-t-il si mes employés ont des questions sur ce programme ou ont besoin d’aide pour l’achat et l’installation ?
     answer: >
-      Si les employés ont des questions, reportez-vous aux ressources suivantes :
+      Si les employés ont des questions, reportez-les aux ressources suivantes :
 
 
-      - [Faq sur l’achat et l’installation après l’achat](https://www.microsoft.com/microsoft-365/microsoft-365-for-home-and-school-faq?rtc=1)
+      - [FAQ après l’achat et l’installation](https://www.microsoft.com/microsoft-365/microsoft-365-for-home-and-school-faq?rtc=1)
 
-      - [FAQ sur les employés du programme de remise sur le temps de travail](http://www.microsoft.com/workplace-discount-program/faq)
+      - [Faq sur les employés du programme de remise sur le lieu de travail](http://www.microsoft.com/workplace-discount-program/faq)
 
        Pour obtenir de l’aide sur les problèmes techniques, consultez [Support Microsoft](https://support.microsoft.com/). Vous trouverez de l’aide pour :
 
@@ -108,13 +109,13 @@ sections:
 
       - Connexion à Office
   - question: >
-      Pourquoi mon entreprise devrait-elle participer au programme de remises sur le temps de travail ?
-    answer: "Le programme de remise sur le temps de travail permet à votre entreprise d’optimiser le retour sur investissement de Microsoft. Les avantages de la participation au programme sont les suivants : \n\n- Réduction du besoin de formation informatique \n- Réduction des coûts de support technique et de formation \n- Permettre aux employés de se familiariser avec Microsoft 365 à domicile \n- Amélioration des compétences logicielles, ce qui peut augmenter la productivité \n"
+      Pourquoi mon entreprise devrait-elle participer au programme de remises sur le lieu de travail?
+    answer: "Le programme de remise sur l’espace de travail aide votre entreprise à optimiser le retour sur investissement de Microsoft. Les avantages de la participation au programme sont les suivants : \n\n- Réduction du besoin de formation informatique \n- Réduction des coûts de support technique et de formation \n- Permettre aux employés de se familiariser avec Microsoft 365 à domicile \n- Augmentation des compétences logicielles, ce qui peut augmenter la productivité \n"
   - question: >
-      En quoi le Programme de remise sur le temps de travail Microsoft bénéficie-t-il aux employés ?
+      En quoi le programme microsoft workplace discount program est-il bénéfique pour les employés ?
     answer: >
-      Lorsque les employés achètent des produits Microsoft 365 avec une remise importante, ils peuvent utiliser le même logiciel à la maison qu’ils utilisent au bureau. Cela permet d’accroître leur productivité, d’améliorer leurs compétences et d’améliorer la satisfaction au travail.
+      Lorsque les employés achètent des produits Microsoft 365 avec une remise importante, ils peuvent utiliser le même logiciel à la maison qu’au bureau. Cela permet d’accroître leur productivité, d’améliorer leurs compétences et d’améliorer la satisfaction au travail.
   - question: >
       Que se passe-t-il lorsqu’un employé quitte l’entreprise ?
-    answer: "Pour les employés qui sont éligibles à l’offre d’abonnement Microsoft 365 et qui ont acheté par le biais du programme, le prix réduit s’applique tant que l’abonnement de l’employé reste actif, quel que soit son statut professionnel auprès de votre organisation. \n"
-additionalContent: "\n## <a name=\"related-content\"></a>Contenu associé\n  [Questions fréquentes (FAQ) sur le Programme de remise sur le temps de travail Microsoft](http://www.microsoft.com/workplace-discount-program/faq). (article)\\\n  [Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (page de liens)\\\n  [prise en charge Microsoft Store pour Entreprises Administration](/microsoft-store/) (page de liens)\\\n  [Microsoft Store pour Entreprises](https://go.microsoft.com/fwlink/?linkid=2139192) (page de liens)\\\n  [Magasin d’employés du Programme de remise sur le temps](http://www.microsoft.com/workplace-discount-program/faq) de travail (page de liens)\\\n  [Licences Microsoft : Vue d’ensemble du programme de remise](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) sur le temps de travail (page de lien)"
+    answer: "Pour les employés éligibles à l’offre d’abonnement Microsoft 365 et qui ont acheté dans le cadre du programme, le prix réduit s’applique tant que l’abonnement de l’employé reste actif, quel que soit son statut professionnel auprès de votre organisation. \n"
+additionalContent: "\n## <a name=\"related-content\"></a>Contenu associé\n  [FAQ sur le programme de remise Microsoft Workplace](http://www.microsoft.com/workplace-discount-program/faq). (article)\\\n  [Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (page de liens)\\\n  [Microsoft Store pour Entreprises Administration support](/microsoft-store/) (page de liens)\\\n  [Microsoft Store pour Entreprises](https://go.microsoft.com/fwlink/?linkid=2139192) (page de liens)\\\n  [Magasin d’employés du Programme de remise sur](http://www.microsoft.com/workplace-discount-program/faq) le lieu de travail (page de liens)\\\n  [Gestion des licences Microsoft : Vue d’ensemble du programme de remise sur l’espace de travail](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (page de liens)"

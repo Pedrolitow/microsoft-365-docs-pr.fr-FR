@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: Apprenez à personnaliser les rapports dans le navigateur et Power BI Desktop.
-ms.openlocfilehash: 97ff462478b7172382aa797e8c4acb3a863bbe3f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+description: Découvrez comment personnaliser les rapports dans le navigateur et Power BI Desktop.
+ms.openlocfilehash: 1d2931ed5cd956da10bb555c87017da8d8ee2026
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193518"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725625"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personnaliser les rapports dans l’analytique de l’utilisation de Microsoft 365
 
@@ -40,21 +41,21 @@ Les deux exemples suivants montrent comment modifier un élément visuel existan
 
 ### <a name="modify-an-existing-visual"></a>Modifier un élément visuel existant
 
-Cet exemple montre comment modifier l’onglet **Activation** dans le rapport **Activation/Licences** .
+Cet exemple montre comment modifier l’onglet **Activation** dans le rapport **Activation/Licence** .
 
-1. Dans le rapport **Activation/Licences** , sélectionnez **l’onglet Activation** .
+1. Dans le rapport **Activation/Licence** , sélectionnez l’onglet **Activation** .
 
-2. Entrez le mode d’édition en choisissant le bouton **Modifier** en haut par le biais du ![bouton Plus de page dans Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) .
+2. Entrez en mode d’édition en choisissant le bouton **Modifier** en haut via le ![bouton Plus de page dans Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) .
 
-    ![Cliquez sur Modifier le rapport en haut à droite.](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![Cliquez sur Modifier le rapport dans le volet de navigation en haut à droite.](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
 
 3. En haut à droite, choisissez **Dupliquer cette page**.
 
     ![Choisissez Dupliquer cette page.](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
 
-4. En bas à droite, choisissez l’un des graphiques à barres montrant le nombre d’utilisateurs qui s’activent en fonction du système d’exploitation, comme Android, iOS, Mac, etc.
+4. En bas à droite, choisissez l’un des graphiques à barres montrant le nombre d’utilisateurs qui s’activent en fonction du système d’exploitation, par exemple Android, iOS, Mac, etc.
 
-5. Dans la zone **Visualisations** à droite, pour supprimer **Mac Count** du visuel, sélectionnez le **X** en regard de celui-ci.
+5. Dans la zone **Visualisations** à droite, pour supprimer le nombre de **Mac** du visuel, sélectionnez le **X** en regard de celui-ci.
 
     ![Supprimez le nombre de Mac.](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
 
@@ -62,23 +63,23 @@ Cet exemple montre comment modifier l’onglet **Activation** dans le rapport **
 
 L'exemple suivant montre comment créer un élément visuel pour assurer le suivi mensuel des nouveaux utilisateurs de Yammer.
 
-1. Accédez au rapport **d’utilisation du produit** à l’aide du volet de navigation gauche et sélectionnez l’onglet **Yammer** .
+1. Accédez au rapport **Utilisation du produit** à l’aide de la navigation de gauche et sélectionnez l’onglet **Yammer** .
 
-2. Basculez en mode Édition en ![choisissant le bouton Plus de page dans Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) et **Modifier**.
+2. Basculez vers le mode d’édition en choisissant ![le bouton Plus de page dans Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) et **Modifier**.
 
-3. En bas de la page, sélectionnez ![Bouton Ajouter une page dans Power BI.](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) pour créer une page.
+3. En bas de la page, sélectionnez le bouton ![Bouton Ajouter une page dans Power BI.](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) pour créer une page.
 
-4. Dans la zone **Visualisations** à droite, choisissez le **graphique à barres empilées** (ligne supérieure, en premier à partir de la gauche).
+4. Dans la zone **Visualisations** à droite, choisissez le **graphique à barres empilées** (ligne supérieure, d’abord à partir de la gauche).
 
     ![Sélectionnez Graphique à barres.](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
 
-5. Sélectionnez le bas à droite de cette visualisation et faites-la glisser pour la rendre plus grande.
+5. Sélectionnez le bas à droite de cette visualisation et faites glisser pour l’agrandir.
 
 6. Dans la zone **Champs** à droite, développez la table **Calendrier** .
 
 7. Faites glisser **MonthName** vers la zone Champs, juste en-dessous du titre **Axe** de la zone **Visualisations**.
 
-    ![Faites glisser le nom du mois.](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![Faites glisser Le nom du mois.](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
 
 8. Dans la zone **Champs** de droite, développez la table **TenantProductUsage**.
 
@@ -90,7 +91,7 @@ L'exemple suivant montre comment créer un élément visuel pour assurer le suiv
 
     ![Cochez la case Yammer.](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
 
-12. Juste en dessous de la liste des visualisations, choisissez l’icône **Format** de l’icône ![Format dans Power BI Visualizaions.](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)
+12. Juste en dessous de la liste des visualisations, choisissez l’icône ![**Icône Format** dans Les visuels Power BI.](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)
 
 13. Développez Titre et remplacez la valeur **Texte du titre** par **Nouveaux utilisateurs de Yammer par mois**.
 
@@ -98,7 +99,7 @@ L'exemple suivant montre comment créer un élément visuel pour assurer le suiv
 
 15. Modifiez le titre de la nouvelle page en modifiant le nom de la page en bas à droite.
 
-16. Enregistrez le rapport en cliquant sur **Mode Lecture** en haut, puis **enregistrez**.
+16. Enregistrez le rapport en cliquant sur le **mode Lecture** en haut, puis **sur Enregistrer**.
 
 ## <a name="customizing-the-reports-in-power-bi-desktop"></a>Personnaliser les rapports dans Power BI Desktop
 
@@ -106,19 +107,19 @@ For most customers modifying the reports and chart visuals in Power BI web will 
 
 ### <a name="use-the-reporting-apis"></a>Utiliser les API de création de rapports
 
-Vous pouvez commencer par vous connecter directement aux API de création de rapports ODATA de Microsoft 365 qui alimentent ces rapports.
+Vous pouvez commencer par vous connecter directement aux API de création de rapports ODATA à partir de Microsoft 365 qui alimentent ces rapports.
 
 1. Accédez à **Obtenir des données** \> **Autres** \> **Flux ODATA** \> **Connexion**.
 
 2. Dans la fenêtre URL, entrez « https://<i></i> reports.office.com/pbi/v1.0/\<tenantid\> »
 
-    **NOTE:** Les API de création de rapports sont en préversion et peuvent être modifiées jusqu’à ce qu’elles passent en production.
+    **NOTE:** Les API de création de rapports sont en préversion et sont susceptibles d’être modifiées jusqu’à ce qu’elles soient mises en production.
 
     ![URL du flux OData pour Power BI Desktop.](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
 
-3. Entrez vos informations d’identification d’administrateur Microsoft 365 (organisation ou école) pour vous authentifier auprès de Microsoft 365 lorsque vous y êtes invité.
+3. Entrez vos informations d’identification d’administrateur Microsoft 365 (organisation ou établissement scolaire) pour vous authentifier auprès de Microsoft 365 lorsque vous y êtes invité.
 
-    Pour plus d’informations sur les personnes autorisées à accéder aux rapports d’application modèle d’adoption de Microsoft 365, consultez la [FAQ](usage-analytics.md#faq) .
+    Pour plus d’informations sur les personnes autorisées à accéder aux rapports d’application du modèle d’adoption De Microsoft 365, consultez la [FAQ](usage-analytics.md#faq) .
 
 4. Une fois la connexion autorisée, la fenêtre du Navigateur affichera les jeux de données auxquels vous pouvez vous connecter.
 

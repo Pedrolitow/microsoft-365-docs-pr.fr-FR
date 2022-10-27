@@ -11,6 +11,7 @@ f1.keywords:
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 ms.date: 08/08/2022
-ms.openlocfilehash: 15b07a95e981244b1c4643b857ce348222341285
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: a80bb3d593f6ef8765c8bab427f6186c9a0ef3c3
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492483"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725339"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -46,7 +47,7 @@ Si vous avez un abonnement Microsoft 365 uniquement, consultez [Comprendre votre
 
 ## <a name="how-often-and-when-am-i-billed"></a>À quelle fréquence et quand suis-je facturé ?
 
-Selon la fréquence de facturation que vous avez choisie lors de l’achat de votre abonnement, vous recevez une facture mensuelle, tous les 3 mois, tous les 6 mois ou chaque année. La durée depuis la dernière date de la facture est appelée période de facturation et est affichée sur la page 1 de la facture, au-dessus de la section Résumé de la facturation. Cette période représente la plage de dates pendant laquelle les frais s’accumulent pour la facture actuelle. Si vous avez apporté une modification à votre abonnement en dehors de cette plage de dates, comme l’ajout ou la suppression de licences, les frais associés apparaissent sur la facture pour la période de facturation suivante.
+Selon la fréquence de facturation que vous avez choisie lors de l’achat de votre abonnement, vous recevez une facture mensuelle, tous les 3 mois, tous les 6 mois ou annuellement. La durée écoulée depuis la date de la dernière facture est appelée Période de facturation et s’affiche à la page 1 de la facture, au-dessus de la section Résumé de facturation. Cette période représente la plage de dates pendant laquelle les frais s’accumulent pour la facture actuelle. Si vous avez apporté une modification à votre abonnement en dehors de cette plage de dates, comme l’ajout ou la suppression de licences, les frais associés apparaissent sur la facture pour la période de facturation suivante.
 
 À partir de la page 2 de la facture, vous voyez les frais regroupés par commande de produit. Pour les clients Azure, les frais peuvent être organisés par section de facture.
 
@@ -152,7 +153,7 @@ Les instructions de paiement dépendent de votre mode de paiement et sont dispon
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Pourquoi ne puis-je pas voir l’acompte Azure comme mode de paiement ?
 
-Le paiement anticipé Azure est disponible en tant que mode de paiement uniquement pour les produits et services Azure éligibles
+Le prépaiement Azure est disponible comme mode de paiement uniquement pour les produits et services Azure éligibles
 
 ## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
 
@@ -162,7 +163,7 @@ Si vous avez des questions ou si vous avez besoin d’aide relativement à votre
 
 ## <a name="related-content"></a>Contenu associé
 
-[Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)\
+[Comprendre votre facture pour Microsoft 365 pour les entreprises](understand-your-invoice2.md) (article)\
 [Suivre Contrat client Microsoft solde de crédit Azure](/azure/billing/billing-mca-check-azure-credits-balance) (article)\
 [Passez en revue votre facture Contrat client Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill) (article)\
 [Prise en main de votre compte de facturation Contrat client Microsoft](/azure/billing/billing-mca-overview) (article)

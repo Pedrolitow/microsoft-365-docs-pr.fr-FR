@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -28,12 +29,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Le système de nom de domaine mappe les noms d’hôtes de l’ordinateur vers les adresses IP et comprendre les informations de base du bureau d'enregistrement de domaines et du DNS peut vous aider à gérer des domaines.
-ms.openlocfilehash: d2399c7e5fa739fe36d4893db8653d0e70d92bcb
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1ed2c07005d40c8ee010ba62c72ffcd31f9fe677
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166656"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731434"
 ---
 # <a name="dns-basics"></a>Principes de base
 

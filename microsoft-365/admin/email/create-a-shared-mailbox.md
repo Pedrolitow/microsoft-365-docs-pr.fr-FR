@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 80ff53bc6c98760fe59001574f3e334f7d6dd738
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b44c1bfdf7db3f58f41c574368b1b76318da78db
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198072"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718851"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
