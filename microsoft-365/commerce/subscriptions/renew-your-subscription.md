@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment renouveler la plupart des abonnements Microsoft 365 Entreprises en activant ou en désactivant la facturation récurrente.
 ms.date: 08/18/2022
-ms.openlocfilehash: c5f8fbaa743f75e4db3d0c38a6868f282c6e4dda
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e692641dbc281ca8e742bdc07e07c599710be1d7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180734"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735174"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
@@ -76,9 +77,9 @@ If you prepaid for your subscription with a product key, your subscription will 
     > - Si vous désactivez la **Facturation récurrente**, l’abonnement reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration sur la page Détails de l’abonnement dans la section **Abonnement et paramètres de paiement** .
     > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
 
-## <a name="extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Étendre la date d’expiration de votre abonnement prépayé à l’aide d’une clé de produit Microsoft 365
+## <a name="extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Prolonger la date d’expiration de votre abonnement prépayé à l’aide d’une clé de produit Microsoft 365
 
-Les licences de produit prépayées vous sont délivrées sous la forme d’un code alphanumérique de 25 caractères, appelé clé de produit. Si vous achetez un autre abonnement pré-payé pour un produit que vous possédez déjà, vous pouvez utiliser la clé de produit pour prolonger la date d’expiration de votre abonnement. Vous pouvez également utiliser une clé de produit pour [ajouter d’autres licences à votre abonnement](../licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
+Les licences de produit prépayées vous sont émises sous la forme d’un code alphanumérique à 25 caractères, appelé clé de produit. Si vous achetez un autre abonnement prépayé pour un produit que vous possédez déjà, vous pouvez utiliser la clé de produit pour prolonger la date d’expiration de votre abonnement. Vous pouvez également utiliser une clé de produit pour [ajouter d’autres licences à votre abonnement](../licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
 
 ::: moniker range="o365-worldwide"
 
@@ -94,15 +95,15 @@ Les licences de produit prépayées vous sont délivrées sous la forme d’un c
 
 2. Sous l’onglet **Produits** , sélectionnez l’abonnement que vous souhaitez étendre.
 
-3. Dans la page détails de l’abonnement, dans la section **Abonnement et paramètres de paiement** , sélectionnez **Étendre la date de fin**.
+3. Dans la page détails de l’abonnement, dans la section **Paramètres d’abonnement et de paiement** , sélectionnez **Étendre la date de fin**.
 
-4. Dans la page **Renouveler ou ajouter des licences utilisateur** , **sélectionnez Utiliser une clé de produit nouvelle et inutilisée**, puis **sélectionnez Suivant**.
+4. Dans la page **Renouveler ou ajouter des licences utilisateur** , sélectionnez **Utiliser une clé de produit nouvelle et inutilisée**, puis sélectionnez **Suivant**.
 
 5. Entrez la clé de produit, puis sélectionnez **Suivant**.
     > [!NOTE]
     > Si vous avez plusieurs clés de produit, vous pouvez sélectionner **Ajouter une autre clé de produit** pour les entrer.
 
-6. Passez en revue les détails de votre commande, puis **sélectionnez Utiliser**.
+6. Passez en revue les détails de votre commande, puis sélectionnez **Échanger**.
 
 ## <a name="related-content"></a>Contenu associé
 

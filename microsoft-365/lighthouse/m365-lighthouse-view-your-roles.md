@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les techniciens msp (Managed Service Provider) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher vos rôles Azure Active Directory (Azure AD) sur les différents locataires clients gérés par votre organisation.
-ms.openlocfilehash: dce01eea5904ee785e2b56adc32c8b51867a876a
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 148ce429811f570fec0691cc9ec81c04aec6624d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659322"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736208"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Afficher vos rôles Azure Active Directory dans Microsoft 365 Lighthouse
 

@@ -1,6 +1,6 @@
 ---
-title: démonstrations de réputation d’URL Microsoft Defender pour point de terminaison SmartScreen
-description: Montre comment Microsoft Defender SmartScreen identifie les sites web de hameçonnage et de programmes malveillants en fonction de la réputation de l’URL.
+title: Microsoft Defender pour point de terminaison démonstrations de réputation d’URL SmartScreen
+description: Montre comment Microsoft Defender SmartScreen identifie les sites web d’hameçonnage et de programmes malveillants en fonction de la réputation des URL.
 keywords: Microsoft Defender pour point de terminaison, protection contre le hameçonnage de site web, protection contre les programmes malveillants de site web, réputation d’URL, démonstration,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,18 +16,20 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 721ba2fb07d7d8f94b9a3de4e9858bbaf889e519
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: 3f00b4cf32c3813bfcf67e2390f503156097d9f2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68620356"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729630"
 ---
 # <a name="url-reputation-demonstrations"></a>Démonstrations de réputation d’URL
 
-Testez comment Microsoft Defender SmartScreen vous aide à identifier les sites web de hameçonnage et de programmes malveillants en fonction de la réputation de l’URL.
+Testez comment Microsoft Defender SmartScreen vous aide à identifier les sites web d’hameçonnage et de programmes malveillants en fonction de la réputation des URL.
 Configuration requise et configuration du scénario
 
 - Windows 10 ou 11
@@ -38,15 +40,15 @@ Configuration requise et configuration du scénario
 
 ### <a name="is-this-phishing"></a>S’agit-il d’un hameçonnage ?
 
-Avertit l’utilisateur d’une page suspecte et demande des commentaires :
+Alerte l’utilisateur à une page suspecte et demande des commentaires :
 
 - [S’agit-il d’un hameçonnage ?](https://demo.smartscreen.msft.net/other/areyousure.html)
 
   Le lancement de ce lien doit afficher un message similaire à la capture d’écran suivante :
 
-  :::image type="content" source="images/smartscreen-url-reputation-is-this-phishing.png" alt-text="SmartScreen avertit l’utilisateur que le site est potentiellement un site de hameçonnage et peut-être dangereux":::
+  :::image type="content" source="images/smartscreen-url-reputation-is-this-phishing.png" alt-text="SmartScreen avertit l’utilisateur que le site est potentiellement un site d’hameçonnage et potentiellement dangereux":::
 
-### <a name="phishing-page"></a>Page Hameçonnage
+### <a name="phishing-page"></a>Page d’hameçonnage
 
 Page connue pour le hameçonnage qui doit être bloquée :
 
@@ -54,13 +56,13 @@ Page connue pour le hameçonnage qui doit être bloquée :
 
   Le lancement de ce lien doit afficher un message similaire à l’exemple suivant :
 
-  :::image type="content" source="images/smartscreen-url-reputation-this-is-phishing.png" alt-text="SmartScreen signale que le site est connu pour contenir des menaces de hameçonnage":::
+  :::image type="content" source="images/smartscreen-url-reputation-this-is-phishing.png" alt-text="SmartScreen signale que le site est connu pour contenir des menaces d’hameçonnage":::
 
-### <a name="malware-page"></a>Page Programmes malveillants
+### <a name="malware-page"></a>Page Des programmes malveillants
 
 Page qui héberge des programmes malveillants et qui doit être bloquée :
 
-- [Page des programmes malveillants connus](https://demo.smartscreen.msft.net/other/malware.html)
+- [Une page de programmes malveillants connus](https://demo.smartscreen.msft.net/other/malware.html)
 
   Le lancement de ce lien doit afficher un message similaire à la capture d’écran suivante :
 
@@ -72,28 +74,28 @@ Blocage du téléchargement en raison de sa réputation d’URL
 
 - [Téléchargement bloqué en raison de la réputation de l’URL](https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe)
 
-  Le lancement de ce lien doit afficher un message similaire au message de la page Programmes malveillants.
+  Le lancement de ce lien doit afficher un message similaire au message de la page Programme malveillant.
 
 ### <a name="exploit-page"></a>Page Exploit
 
 Page qui attaque une vulnérabilité de navigateur
 
-- [Page d’exploit de navigateur connue](https://demo.smartscreen.msft.net/other/exploit.html)
+- [Page d’exploitation du navigateur connu](https://demo.smartscreen.msft.net/other/exploit.html)
 
-  Le lancement de ce lien doit afficher un message similaire au message de la page Programmes malveillants.
+  Le lancement de ce lien doit afficher un message similaire au message de la page Programme malveillant.
 
 ### <a name="malvertising"></a>Malvertisation
 
-Une page bénigne hébergeant une publicité malveillante
+Page inoffensive hébergeant une publicité malveillante
 
-- [Page connue pour contenir des publicités malveillantes](https://demo.smartscreen.msft.net/other/exploit_frame.html)
+- [Une page connue pour contenir des publicités malveillantes](https://demo.smartscreen.msft.net/other/exploit_frame.html)
 
   Le lancement de ce lien doit afficher un message similaire à la capture d’écran suivante :
 
-  :::image type="content" source="images/smartscreen-url-reputation-malvertising.png" alt-text="Démonstration de la façon dont SmartScreen répond à un cadre d’une page détectée comme malveillante. Seul le cadre malveillant est bloqué":::
+  :::image type="content" source="images/smartscreen-url-reputation-malvertising.png" alt-text="Démonstration de la façon dont SmartScreen répond à un cadre sur une page détectée comme malveillante. Seule la trame malveillante est bloquée":::
 
 ## <a name="see-also"></a>Voir aussi
 
 [documentation Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
-[Microsoft Defender pour point de terminaison - Scénarios de démonstration](defender-endpoint-demonstrations.md)
+[Microsoft Defender pour point de terminaison - scénarios de démonstration](defender-endpoint-demonstrations.md)
