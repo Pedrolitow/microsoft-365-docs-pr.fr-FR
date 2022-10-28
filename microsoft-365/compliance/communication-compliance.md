@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3ce5d5498deb1029b00125dc510e0c67c23d8970
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: f2bc78b9b742d47b9421af758d7109650dd6f28a
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68768157"
+ms.locfileid: "68777953"
 ---
 # <a name="learn-about-communication-compliance"></a>En savoir plus sur la conformité des communications
 
@@ -137,7 +137,7 @@ Pour en savoir plus sur la prise en charge des canaux de messagerie dans les str
 
 ## <a name="integration-with-insider-risk-management-preview"></a>Intégration à la gestion des risques internes (préversion)
 
-La conformité des communications peut fournir des signaux de mécontentement détectés dans les messages destinés aux stratégies de désintégancement de la gestion des risques internes. À l’aide d’une stratégie [de détection de texte inapproprié](/microsoft-365/compliance/communication-compliance-policies#policy-templates) dédiée dans la conformité des communications, vous pouvez choisir d’ajouter cette stratégie à une [stratégie de fuites de données par des employés mécontents](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) ou [à des violations de stratégie de sécurité par des employés mécontents](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) dans la gestion des risques internes. Les problèmes détectés dans les messages par la stratégie de conformité des communications agissent comme un événement déclencheur pour amener les utilisateurs dans l’étendue des stratégies de gestion des risques internes.
+La conformité des communications peut fournir des signaux de risque détectés dans les messages destinés aux stratégies utilisateur à risque de gestion des risques internes. À l’aide d’une stratégie [de détection de texte inapproprié](/microsoft-365/compliance/communication-compliance-policies#policy-templates) dédiée dans la conformité des communications, vous pouvez choisir d’ajouter cette stratégie à une [stratégie fuites de données par des employés à risque](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) ou [violations de stratégie de sécurité par les employés à risque](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) dans la gestion des risques internes. Les utilisateurs à risque détectés dans les messages par la stratégie de conformité des communications agissent comme un événement déclencheur pour amener les utilisateurs dans l’étendue des stratégies de gestion des risques internes.
 
 Pour en savoir plus sur l’intégration à la gestion des risques internes, consultez [Créer et gérer des](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) stratégies de conformité des communications.
 Pour en savoir plus sur la gestion des risques internes, consultez [En savoir plus sur la gestion des risques internes](/microsoft-365/compliance/insider-risk-management).

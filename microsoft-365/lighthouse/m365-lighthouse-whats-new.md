@@ -19,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services managés (MSP) utilisant Microsoft 365 Lighthouse, consultez ce qui a été ajouté, modifié et corrigé dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: 2c63cd304fc8893c5a767212ef540939e9954793
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 483902edcd0cfdf9d3c9e5101fe7dd82311b5ece
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68735064"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777611"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 
@@ -32,6 +32,18 @@ Nous ajoutons continuellement de nouvelles fonctionnalités à [Microsoft 365 Li
 
 > [!NOTE]
 > Certaines fonctionnalités sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, vous devriez la voir bientôt.
+
+## <a name="october-2022"></a>Octobre 2022
+
+### <a name="app-protection-policies"></a>Stratégies de protection des applications
+
+Les fournisseurs de services managés peuvent désormais déployer des stratégies de protection des applications pour leurs locataires gérés à partir de la base de référence par défaut dans Microsoft 365 Lighthouse, ce qui permet une meilleure protection des données d’entreprise des locataires. Ces stratégies utilisent la gestion des applications mobiles (GAM) sur les appareils iOS et Android pour fournir la protection la plus sécurisée pour les données d’entreprise.
+
+### <a name="device-health-monitoring"></a>Surveillance de l’intégrité des appareils
+
+Nous avons ajouté une nouvelle sous-tâche de déploiement appelée **Activer la surveillance de l’intégrité des** appareils dans la base de référence par défaut sous la tâche **Configurer l’inscription des appareils** . Une fois la nouvelle sous-tâche activée et la tâche de déploiement déployée, l’analyse des points de terminaison dans Microsoft Endpoint Manager sera en mesure d’analyser les données de l’appareil et de recommander des logiciels, d’améliorer les performances de démarrage et de résoudre les problèmes de support courants.
+
+Pour plus d’informations, consultez [Qu’est-ce que l’analytique de point de terminaison ?](/mem/analytics/overview).
 
 ## <a name="september-2022"></a>Septembre 2022
 

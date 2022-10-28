@@ -8,8 +8,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 ms.date: 09/06/2022
 manager: dansimp
@@ -20,13 +20,15 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 9e8e54f6d788a8a4c35da2f318f55c0f7921ce67
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 3ae1ea891933d6b7731316c3fb83635d2a999d29
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770346"
+ms.locfileid: "68777130"
 ---
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
+
 # <a name="device-health-microsoft-defender-antivirus-health-report"></a>Rapport d’intégrité de l’appareil, Microsoft Defender Antivirus
 
 **S’applique à :**

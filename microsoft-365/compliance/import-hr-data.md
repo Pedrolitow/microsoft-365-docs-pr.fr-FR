@@ -18,12 +18,12 @@ ms.collection:
 - purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 53d4ef19554f5916e603610158197daa6e946593
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 04bb63b5494f12570ea089693d0729c74cbcfe5c
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770280"
+ms.locfileid: "68777751"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -67,10 +67,10 @@ Le type de données RH à importer dépend de la stratégie de gestion des risqu
 |  Modèle de stratégie |  Type de données RH |
 |:------------------------------|:--------------------------------|
 | Vol de données par des employés quittant votre organisation | Démissions d’employés|
-| Fuites de données générales                             | Non applicable|
+| Fuites de données                             | Non applicable|
 | Fuites de données par des utilisateurs prioritaires                   | Non applicable |
 | Fuites de données par des utilisateurs à risque                | Changements au niveau du travail, révisions des performances, plans d’amélioration des performances|
-| Violations générales de la stratégie de sécurité             | Non applicable |
+| Violations de stratégie de sécurité             | Non applicable |
 | Violations de stratégie de sécurité par des utilisateurs quittant l’entreprise  | Démissions d’employés|
 | Violations de la stratégie de sécurité par des utilisateurs prioritaires   | Non applicable|
 | Violations de stratégie de sécurité par les utilisateurs à risque| Changements au niveau du travail, révisions des performances, plans d’amélioration des performances |

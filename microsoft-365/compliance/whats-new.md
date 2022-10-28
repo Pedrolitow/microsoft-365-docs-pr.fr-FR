@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 28e1dedac97d692ae1f797fe4fe4a056a5d4a7b5
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 70ba18d1471ea5fc5d145f64b68c6fef1691124c
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68731478"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777646"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Nouveautés des solutions de conformité et de risque Microsoft Purview
 
@@ -47,12 +47,12 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
-- **En préversion** : Nouvelle intégration de la conformité des communications [à la gestion des risques internes](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). La conformité des communications peut désormais fournir des signaux de mécontentement détectés dans les messages destinés aux stratégies de désintégancement de la gestion des risques internes. Les problèmes détectés dans les messages par la stratégie de conformité des communications agissent comme un événement déclencheur pour amener les utilisateurs dans l’étendue des stratégies de gestion des risques internes.
+- **En préversion** : Nouvelle intégration de la conformité des communications [à la gestion des risques internes](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). La conformité des communications peut désormais fournir des signaux de risque détectés dans les messages aux stratégies de gestion des risques internes. Les utilisateurs à risque détectés dans les messages par la stratégie de conformité des communications agissent comme un événement déclencheur pour amener les utilisateurs dans l’étendue des stratégies de gestion des risques internes.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
 - **En préversion** : La gestion des risques internes introduit des [preuves d’investigation](/microsoft-365/compliance/insider-risk-management-forensic-evidence), qui permet de capturer des activités visuelles personnalisables sur plusieurs appareils pour aider votre organisation à mieux atténuer, comprendre et répondre aux risques potentiels liés aux données, comme l’exfiltration de données sensibles non autorisées.
-- **En préversion** : Intégration de la gestion des risques internes [à la conformité des communications](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview) lors de l’utilisation *des modèles de stratégie Fuites de données par des utilisateurs mécontents* ou Violations de *stratégie de sécurité par des utilisateurs mécontents* . La conformité des communications peut désormais fournir des signaux de mécontentement détectés dans les messages destinés aux stratégies de désintégancement de la gestion des risques internes.
+- **En préversion** : Intégration de la gestion des risques internes [à la conformité des communications](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview) lors de l’utilisation *des modèles de stratégie Fuites de données par les utilisateurs à risque* ou Violations de *stratégie de sécurité par les utilisateurs à risque* . La conformité des communications peut désormais fournir des signaux de risque détectés dans les messages aux stratégies de gestion des risques internes.
 - **En préversion** : la nouvelle [personnalisation des alertes inline](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) permet aux analystes et aux enquêteurs de modifier rapidement les stratégies lors de l’examen des alertes.
 - Nouvelles [mises à jour de scoring de contenu de priorité](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) qui vous permettent de choisir d’attribuer des scores de risque à toutes les activités détectées par une stratégie ou uniquement aux activités qui incluent du contenu prioritaire.
 - Les équipes de sécurité sont désormais en mesure de [personnaliser un déclencheur de sécurité](/microsoft-365/compliance/insider-risk-management-policies#policy-templates) dans la stratégie « fuites de données » pour qu’il s’affiche lorsqu’un utilisateur effectue une séquence, ce qui leur permet de répondre aux actions de l’utilisateur qui peuvent être considérées comme plus risquées.

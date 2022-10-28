@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 19161f8b797f73ec2e724e19bd0a1aefd127fb8f
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: d4b9994f95e6555ae12a5fa56e8f1bf1a4ce4de8
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300407"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777805"
 ---
 # <a name="use-powershell-to-manage-your-shifts-connection-to-blue-yonder-workforce-management"></a>Utilisez PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management
 
@@ -30,7 +30,7 @@ ms.locfileid: "68300407"
 
 Le [connecteur Microsoft Teams Shifts pour Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) vous permet d’intégrer l'application Shifts dans Microsoft Teams avec Blue Yonder Workforce Management (Blue Yonder WFM). Une fois que vous avez configuré une connexion, vos employés de première ligne peuvent afficher et gérer en toute transparence leurs plannings dans le WFM Blue Yonder à partir de Shifts.
 
-Vous pouvez utiliser [l’Assistant Connecteur Shifts](shifts-connector-wizard.md) dans le Centre d’administration Microsoft 365 ou [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) pour configurer une connexion. Une fois qu’une connexion est configurée, vous pouvez la gérer à l’aide des [applets de commande PowerShell du connecteur Shifts](#shifts-connector-cmdlets).
+Vous pouvez utiliser [l’Assistant Connecteur Shifts](shifts-connector-wizard.md) dans le Centre d’administration Microsoft 365 ou [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) pour configurer une connexion. Une fois la connexion configurée, vous pouvez la gérer à l’aide [des applets de commande PowerShell du connecteur Shifts](#shifts-connector-cmdlets).
 
 Cet article explique comment utiliser PowerShell pour effectuer les opérations suivantes :
 
@@ -44,7 +44,7 @@ Cet article explique comment utiliser PowerShell pour effectuer les opérations 
 Cet article part du principe que vous avez déjà configuré une connexion à Blue Yonder WFM, à l’aide de l’Assistant ou de PowerShell.
 
 > [!NOTE]
-> Vous pouvez également gérer votre connexion dans le Centre d'administration Microsoft 365. Par exemple, vous pouvez vérifier l’état d’intégrité et accéder à l’Assistant pour modifier les paramètres de connexion. Pour plus d’informations, consultez [Utiliser le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
+> Vous pouvez également gérer votre connexion dans le Centre d'administration Microsoft 365. Par exemple, vous pouvez vérifier l’état d’intégrité et accéder à l’Assistant pour modifier les paramètres de connexion. Pour en savoir plus, consultez [Utiliser la Centre d'administration Microsoft 365 pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -76,13 +76,13 @@ Cet article part du principe que vous avez déjà configuré une connexion à Bl
 [!INCLUDE [shifts-connector-view-error-report](includes/shifts-connector-view-error-report.md)]
 
 > [!NOTE]
-> Pour obtenir la liste complète des messages d’erreur, consultez [la liste des messages d’erreur](#list-of-error-messages) plus loin dans cet article.
+> Pour obtenir la liste complète des messages d’erreur, consultez [Liste des messages d’erreur](#list-of-error-messages) plus loin dans cet article.
 
 ## <a name="resolve-connection-errors"></a>Résoudre les erreurs de connexion
 
 ### <a name="user-mapping-errors"></a>Erreurs de mappage d’utilisateurs
 
-Des erreurs de mappage d’utilisateurs peuvent se produire si un ou plusieurs utilisateurs d’une instance WFM n’est pas membre de l’équipe mappée dans Teams. Pour résoudre ce problème, assurez-vous que les utilisateurs de l’équipe mappée correspondent aux utilisateurs de l’instance WFM.
+Des erreurs de mappage d’utilisateurs peuvent se produire si un ou plusieurs utilisateurs d’une instance WFM ne sont pas membres de l’équipe mappée dans Teams. Pour résoudre ce problème, assurez-vous que les utilisateurs de l’équipe mappée correspondent aux utilisateurs de l’instance WFM.
 
 Pour afficher les détails des utilisateurs non mappés, [configurez votre environnement](#set-up-your-environment) (si ce n’est pas déjà fait), puis exécutez le script suivant.
 
@@ -272,7 +272,7 @@ Write-Host "Success"
 
 ## <a name="disable-sync-for-a-connection"></a>Désactiver la synchronisation pour une connexion
 
-Utilisez ce script pour désactiver la synchronisation d’une connexion. Gardez à l’esprit que ce script ne supprime pas une connexion. Elle désactive la synchronisation afin qu’aucune donnée ne soit synchronisée entre Shifts et votre système WFM pour la connexion que vous spécifiez.
+Utilisez ce script pour désactiver la synchronisation d’une connexion. Gardez à l’esprit que ce script ne supprime pas une connexion. Il désactive la synchronisation afin qu’aucune donnée ne soit synchronisée entre Shifts et votre système WFM pour la connexion que vous spécifiez.
 
 [Configurez votre environnement](#set-up-your-environment) (si vous ne l’avez pas déjà fait), puis exécutez le script suivant.
 
@@ -357,11 +357,11 @@ Voici la liste des messages d’erreur que vous pouvez rencontrer et des informa
 
 |Type d’erreur |Détails de l’erreur |Résolution |
 |---------|---------|---------|
-|Impossible d’authentifier le système de gestion de la main-d’œuvre.|Les informations d’identification du compte du système de gestion du personnel que vous avez fournies ne sont pas valides ou ce compte ne dispose pas des autorisations requises.|Mettez à jour les informations d’identification de votre compte de service WFM dans les paramètres de connexion. Pour cela, appliquez l’une des méthodes suivantes :<ul><li>Dans le Centre d'administration Microsoft 365, choisissez **Modifier** dans la page Gestion des connecteurs ou la page des détails de connexion pour accéder à l’Assistant Connecteur Shifts.</li><li>Utilisez l’applet de commande [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) ou Update-CsTeamsShiftConnectionInstance.</li><li>Utilisez [ce script PowerShell](#change-connection-settings).</li></ul>|
+|Impossible d’authentifier le système de gestion du personnel.|Les informations d’identification du compte système de gestion de la main-d’œuvre que vous avez fournies ne sont pas valides ou ce compte ne dispose pas des autorisations requises.|Mettez à jour les informations d’identification de votre compte de service WFM dans les paramètres de connexion. Pour cela, appliquez l’une des méthodes suivantes :<ul><li>Dans la Centre d'administration Microsoft 365, choisissez **Modifier** dans la page Gestion des connecteurs ou dans la page des détails de connexion pour accéder à l’Assistant Connecteur Shifts.</li><li>Utilisez l’applet de [commande Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) ou [Update-CsTeamsShiftsConnectionInstance](/powershell/module/teams/update-csteamsshiftsconnectioninstance) .</li><li>Utilisez [ce script PowerShell](#change-connection-settings).</li></ul>|
 |Impossible d’authentifier Graph. |Échec de l’authentification. Vérifiez que vous avez entré des informations d’identification valides pour l’acteur désigné et que vous disposez des autorisations requises.|Assurez-vous que votre compte système Microsoft 365 (également appelé acteur désigné) est ajouté en tant que propriétaire d’équipe.<br> Vous pouvez également mettre à jour les informations d’identification de votre compte système Microsoft 365 dans les paramètres de connexion.|
-|Certains utilisateurs n’ont pas pu mapper correctement|Le mappage a échoué pour certains utilisateurs : \<X\> utilisateurs AAD ayant \<X\> échoué et \<X\> utilisateurs du système de gestion de la main-d’œuvre défaillants.|Utilisez l’applet de commande [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult) ou [ce script PowerShell](#user-mapping-errors) pour identifier les utilisateurs pour lesquels le mappage a échoué. Assurez-vous que les utilisateurs de l’équipe mappée correspondent aux utilisateurs de l’instance WFM.|
+|Certains utilisateurs n’ont pas pu mapper correctement|Le mappage a échoué pour certains utilisateurs : \<X\> réussite, \<X\> échec des utilisateurs AAD et \<X\> échec du ou des utilisateurs du système de gestion de la main-d’œuvre.|Utilisez l’applet de commande [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult) ou [ce script PowerShell](#user-mapping-errors) pour identifier les utilisateurs pour lesquels le mappage a échoué. Assurez-vous que les utilisateurs de l’équipe mappée correspondent aux utilisateurs de l’instance WFM.|
 |Impossible de mapper une équipe ou des équipes dans ce lot. |Ce profil d’acteur désigné n’a pas de privilèges de propriété d’équipe. |Assurez-vous que votre compte système Microsoft 365 (également appelé acteur désigné) est ajouté en tant que propriétaire d’équipe.<br>Si vous avez modifié votre compte système Microsoft 365, ajoutez ce compte en tant que propriétaire d’équipe et mettez à jour les paramètres de connexion pour utiliser ce compte.|
-|    |Cette équipe est déjà mappée à une instance de connecteur existante. |Supprimez l’équipe de la connexion existante à l’aide de l’applet de commande [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) . Vous pouvez également créer une connexion pour remapper l’équipe.|
+|    |Cette équipe est déjà mappée à une instance de connecteur existante. |Annulez le mappage de l’équipe de la connexion existante à l’aide de l’applet de commande [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) . Vous pouvez également créer une connexion pour remapper l’équipe.|
 |    |Ce fuseau horaire n’est pas valide. Le fuseau horaire passé n’utilise pas le format de base de données tz.|Vérifiez que le fuseau horaire est correct, puis remapper l’équipe.|
 |    |Nous ne trouvons pas cette instance de connecteur.|Mappez l’équipe à une connexion existante.|
 |    |Cette équipe AAD est introuvable.|Assurez-vous que l’équipe existe ou créez-en une.|
@@ -374,6 +374,7 @@ Pour obtenir de l’aide sur les applets de commande du connecteur Shifts, reche
 - [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance)
 - [Get-CsTeamsShiftsConnectionInstance](/powershell/module/teams/get-csteamsshiftsconnectioninstance)
 - [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance)
+- [Update-CsTeamsShiftsConnectionInstance](/powershell/module/teams/update-csteamsshiftsconnectioninstance)
 - [Remove-CsTeamsShiftsConnectionInstance](/powershell/module/teams/remove-csteamsshiftsconnectioninstance)
 - [Test-CsTeamsShiftsConnectionValidate](/powershell/module/teams/test-csteamsshiftsconnectionvalidate)
 - [New-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/new-csteamsshiftsconnectionteammap)

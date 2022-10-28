@@ -1,5 +1,5 @@
 ---
-title: Utiliser PowerShell pour connecter Shifts à Blue Yonder Workforce Management
+title: Utiliser PowerShell pour connecter Shifts à UKG Dimensions
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
@@ -8,46 +8,47 @@ ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Découvrez comment utiliser PowerShell pour intégrer Shifts à Blue Yonder Workforce Management.
+description: Découvrez comment utiliser PowerShell pour intégrer Shifts à UKG Dimensions.
 ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
-- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 8d94fdbf97ab8debeda7bfb0607fa81a50ed2d4b
+ms.openlocfilehash: 22449be5194adf4057e334dfae0ea4a769cbdf14
 ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777913"
+ms.locfileid: "68777671"
 ---
-# <a name="use-powershell-to-connect-shifts-to-blue-yonder-workforce-management"></a>Utiliser PowerShell pour connecter Shifts à Blue Yonder Workforce Management
+# <a name="use-powershell-to-connect-shifts-to-ukg-dimensions"></a>Utiliser PowerShell pour connecter Shifts à UKG Dimensions
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Utilisez le [connecteur Microsoft Teams Shifts pour Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) pour intégrer l'application Shifts dans Microsoft Teams avec Blue Yonder Workforce Management (Blue Yonder WFM). Une fois la connexion établie, vos employés de première ligne peuvent afficher et gérer leurs horaires de manière transparente dans Blue Yonder WFM à partir de Shifts.
+[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Dans cet article, nous vous expliquons comment utiliser PowerShell pour installer et configurer le connecteur afin d'intégrer Shifts à Blue Yonder WFM..
+Utilisez le [connecteur Microsoft Teams Shifts pour UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) pour intégrer l’application Shifts dans Microsoft Teams avec UKG Dimensions. Une fois qu’une connexion est configurée, vos employés de première ligne peuvent afficher et gérer en toute transparence leurs planifications dans ukG Dimensions à partir de Shifts.
 
-Pour configurer la connexion, vous exécutez un script PowerShell. Le script configure le connecteur, applique les paramètres de synchronisation, crée la connexion et mappe les instances Blue Yonder WFM aux équipes. Les paramètres de synchronisation déterminent les fonctionnalités activées dans Shifts et les informations de planification synchronisées entre Blue Yonder WFM et Shifts.. Les mappages définissent la relation de synchronisation entre vos instances Blue Yonder WFM et les équipes dans Teams.. Vous pouvez mapper aux équipes existantes et aux nouvelles équipes.
+Dans cet article, nous vous guiderons tout au long de l’utilisation de PowerShell pour configurer le connecteur afin d’intégrer Shifts à UKG Dimensions.
+
+Pour configurer la connexion, vous exécutez un script PowerShell. Le script configure le connecteur, applique les paramètres de synchronisation, crée la connexion et mappe les instances UKG Dimensions aux équipes. Les paramètres de synchronisation déterminent les fonctionnalités activées dans Shifts et les informations de planification synchronisées entre ukG Dimensions et Shifts. Les mappages définissent la relation de synchronisation entre vos instances UKG Dimensions et les équipes dans Teams. Vous pouvez mapper aux équipes existantes et aux nouvelles équipes.
 
 Nous fournissons deux scripts. Vous pouvez utiliser l'un ou l'autre des scripts, selon que vous souhaitez mapper sur des équipes existantes ou créer de nouvelles équipes à mapper..
 
-Vous pouvez configurer plusieurs connexions, chacune avec des paramètres de synchronisation différents. Par exemple, si votre organisation possède plusieurs emplacements avec des exigences de planification différentes, créez une connexion avec des paramètres de synchronisation uniques pour chaque emplacement. Gardez à l'esprit qu'une instance Blue Yonder WFM ne peut être associée qu'à une seule équipe à la fois.. Si une instance est déjà mappée à une équipe, elle ne peut pas être mappée à une autre équipe.
+Vous pouvez configurer plusieurs connexions, chacune avec des paramètres de synchronisation différents. Par exemple, si votre organisation possède plusieurs emplacements avec des exigences de planification différentes, créez une connexion avec des paramètres de synchronisation uniques pour chaque emplacement. N’oubliez pas qu’une instance UKG Dimensions ne peut être mappée qu’à une seule équipe à un moment donné. Si une instance est déjà mappée à une équipe, elle ne peut pas être mappée à une autre équipe.
 
-Avec Blue Yonder WFM comme système d’enregistrement, vos employés de première ligne peuvent gérer efficacement leurs horaires et leur disponibilité dans Shifts sur leurs appareils. Les responsables de première ligne peuvent continuer à utiliser Blue Yonder WFM pour établir des horaires.
+Avec UKG Dimensions comme système d’enregistrement, vos employés de première ligne peuvent gérer efficacement leurs plannings et leur disponibilité dans Shifts sur leurs appareils. Les responsables de première ligne peuvent continuer à utiliser UKG Dimensions pour configurer des planifications.
 
 > [!NOTE]
-> Vous pouvez également utiliser l’[Assistant connecteur Shifts](shifts-connector-wizard.md) dans le centre d'administration Microsoft 365 pour connecter Shifts à Blue Yonder WFM.
+> Vous pouvez également utiliser [l’Assistant Connecteur Shifts](shifts-connector-wizard-ukg.md) dans le Centre d'administration Microsoft 365 pour connecter Shifts à UKG Dimensions.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 ### <a name="prerequisites"></a>Configuration requise
 
-[!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
+[!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
 
 ### <a name="admin-role-to-manage-the-connector-using-powershell"></a>Rôle d’administrateur pour gérer le connecteur à l’aide de PowerShell
 
@@ -70,7 +71,7 @@ Lorsque vous y êtes invité, connectez-vous à l’aide de vos informations d�
 ## <a name="identify-the-teams-you-want-to-map"></a>Identifier les équipes que vous souhaitez mapper
 
 > [!NOTE]
-> Effectuez cette étape si vous mappez des instances Blue Yonder WFM à des équipes existantes. Si vous créez des équipes à mapper, vous pouvez ignorer cette étape.
+> Effectuez cette étape si vous mappez des instances UKG Dimensions à des équipes existantes. Si vous créez des équipes à mapper, vous pouvez ignorer cette étape.
 
 Dans le portail Azure, accédez à la page [Tous les groupes](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) pour obtenir une liste des ID d’équipes de votre organisation.
 
@@ -88,20 +89,20 @@ Exécutez le script :
 
 Le script effectue les opérations suivantes. Vous serez invité à entrer les détails de l’installation et de la configuration.
 
-1. Teste et vérifie la connexion à Blue Yonder WFM à l'aide des informations d'identification du compte de service Blue Yonder WFM et des URL de service que vous entrez.
+1. Teste et vérifie la connexion à UKG Dimensions à l’aide des informations d’identification du compte de service UKG Dimensions et des URL de service que vous entrez.
 1. Configure le connecteur Shifts.
-1. Applique les paramètres de synchronisation. Ces paramètres incluent la fréquence de synchronisation (en minutes) et les données de planification synchronisées entre Blue Yonder WFM et Shifts. Les données de planification sont définies dans les paramètres suivants :
+1. Applique les paramètres de synchronisation. Ces paramètres incluent la fréquence de synchronisation (en minutes) et les données de planification synchronisées entre les dimensions et les shifts UKG. Les données de planification sont définies dans les paramètres suivants :
 
-    - Le paramètre **enabledConnectorScenarios** définit les données synchronisées de Blue Yonder WFM vers Shifts. Les options sont `Shift`, `SwapRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
-    - Le paramètre **enabledWfiScenarios** définit les données synchronisées de Shifts vers Blue Yonder WFM. Les options sont `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
+    - Le paramètre **enabledConnectorScenarios définit les** données synchronisées entre UKG Dimensions et Shifts. Les options sont `Shift`, `SwapRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
+    - Le paramètre **enabledWfiScenarios définit les** données synchronisées entre Shifts et UKG Dimensions. Les options sont `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
 
     Pour en savoir plus, consultez [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). Pour voir la liste des options de synchronisation prises en charge pour chaque paramètre, exécutez [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
 
     > [!IMPORTANT]
-    > Le script active la synchronisation pour toutes ces options. Si vous souhaitez modifier les paramètres de synchronisation, vous pouvez le faire une fois la connexion configurée. Pour en savoir plus, consultez [Utiliser PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
+    > Le script active la synchronisation pour toutes ces options. Si vous souhaitez modifier les paramètres de synchronisation, vous pouvez le faire une fois la connexion configurée. Pour plus d’informations, consultez [Utiliser PowerShell pour gérer votre connexion Shifts à UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 1. Crée la connexion.
-1. Mappe les instances WFM Blue Yonder WFM aux équipes. Les mappages sont basés sur les ID d'instance Blue Yonder WFM et les ID d’équipes que vous entrez ou sur les nouvelles équipes que vous créez, selon le script que vous exécutez. Si une équipe a un planification existante, le script supprime les données de planification pour la plage de dates et d'heures que vous spécifiez.
+1. Mappe les instances UKG Dimensions aux équipes. Les mappages sont basés sur les ID d’instance UKG Dimensions et TeamIds que vous entrez, ou sur les nouvelles équipes que vous créez, en fonction du script que vous exécutez. Si une équipe a un planification existante, le script supprime les données de planification pour la plage de dates et d'heures que vous spécifiez.
 
 Un message de réussite à l’écran indique que votre connexion est correctement configurée.
 
@@ -113,11 +114,11 @@ Une fois la connexion configurée, vous pouvez la gérer et y apporter des modif
 
 La page Gestion des connecteurs répertorie chaque connexion que vous avez configurée, ainsi que des informations telles que l’état d’intégrité et les détails de l’intervalle de synchronisation. Vous pouvez également accéder à l’Assistant pour apporter des modifications à vos connexions. Par exemple, vous pouvez mettre à jour les paramètres de synchronisation et les mappages d’équipe.
 
-Pour en savoir plus, consultez [Utiliser la Centre d'administration Microsoft 365 pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
+Pour plus d’informations, consultez [Utiliser la Centre d'administration Microsoft 365 pour gérer votre connexion Shifts aux dimensions UKG](shifts-connector-ukg-admin-center-manage.md).
 
 ### <a name="use-powershell"></a>Utiliser PowerShell
 
-Vous pouvez utiliser PowerShell pour afficher un rapport d’erreurs, modifier les paramètres de connexion, désactiver la synchronisation, etc. Pour obtenir des instructions pas à pas, consultez [Utiliser PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
+Vous pouvez utiliser PowerShell pour afficher un rapport d’erreurs, modifier les paramètres de connexion, désactiver la synchronisation, etc. Pour obtenir des instructions pas à pas, consultez [Utiliser PowerShell pour gérer votre connexion Shifts à UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 ## <a name="scripts"></a>Scripts
 
@@ -141,12 +142,12 @@ Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
 #List connector types available (comment out if not implemented for preview)
 Write-Host "Listing connector types available"
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
+$UkgId = "95BF2848-2DDA-4425-B0EE-D62AEED4C0A0"
 $connectors = Get-CsTeamsShiftsConnectionConnector
 write $connectors
-$blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
-$enabledConnectorScenario = $blueYonder.SupportedScenario
-$wfiSupportedScenario = $blueYonder.wfiSupportedScenario
+$Ukg = $connectors | where {$_.Id -match $UkgId}
+$enabledConnectorScenario = $Ukg.SupportedScenario
+$wfiSupportedScenario = $Ukg.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
 $WfmUserName = Read-Host -Prompt 'Input your WFM user name'
@@ -156,23 +157,24 @@ $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropSe
 #Test connection settings
 Write-Host "Testing connection settings"
 $InstanceName = Read-Host -Prompt 'Input connection instance name'
-$adminApiUrl = Read-Host -Prompt 'Input admin api url'
-$cookieAuthUrl = Read-Host -Prompt 'Input cookie authorization url'
-$essApiUrl = Read-Host -Prompt 'Input ess api url'
-$federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
-$retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
-$siteManagerUrl = Read-Host -Prompt 'Input site manager url'
+$apiUrl = Read-Host -Prompt 'Input connector api url'
+$ssoUrl = Read-Host -Prompt 'Input connector sso url'
+$clientId = Read-Host -Prompt 'Input connector client id'
+$AppKey = Read-Host -Prompt 'Input your app key' -AsSecureString
+$plainKey =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($AppKey))
+$ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
+$plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
+
 $testResult = Test-CsTeamsShiftsConnectionValidate `
     -Name $InstanceName `
-    -ConnectorId $BlueYonderId `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -ConnectorId $UkgId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
         })
@@ -204,21 +206,20 @@ if ($decision -eq 1) {
 }
 }
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-    -ConnectorId $BlueYonderId `
+    -ConnectorId $UkgId `
     -ConnectorAdminEmail $AdminEmailList `
     -DesignatedActorId $teamsUserId `
     -EnabledConnectorScenario $enabledConnectorScenario `
     -EnabledWfiScenario $wfiSupportedScenario `
     -Name $InstanceName `
     -SyncFrequencyInMin $syncFreq `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
         })
@@ -305,7 +306,7 @@ Disconnect-MgGraph
 ### <a name="set-up-a-connection-and-map-to-existing-teams"></a>Configurer une connexion et mapper aux équipes existantes
 
 ```powershell
-#Map WFM sites to existing teams script
+#Map WFM instances to existing teams script
 Write-Host "Map WFM sites to existing teams"
 Start-Sleep 1
 
@@ -322,12 +323,12 @@ Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
 #List connector types available (comment out if not implemented for preview)
 Write-Host "Listing connector types available"
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
+$UkgId = "95BF2848-2DDA-4425-B0EE-D62AEED4C0A0"
 $connectors = Get-CsTeamsShiftsConnectionConnector
 write $connectors
-$blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
-$enabledConnectorScenario = $blueYonder.SupportedScenario
-$wfiSupportedScenario = $blueYonder.wfiSupportedScenario
+$ukg = $connectors | where {$_.Id -match $UkgId}
+$enabledConnectorScenario = $ukg.SupportedScenario
+$wfiSupportedScenario = $ukg.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
 $WfmUserName = Read-Host -Prompt 'Input your WFM user name'
@@ -337,23 +338,24 @@ $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropSe
 #Test connection settings
 Write-Host "Testing connection settings"
 $InstanceName = Read-Host -Prompt 'Input connection instance name'
-$adminApiUrl = Read-Host -Prompt 'Input admin api url'
-$cookieAuthUrl = Read-Host -Prompt 'Input cookie authorization url'
-$essApiUrl = Read-Host -Prompt 'Input ess api url'
-$federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
-$retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
-$siteManagerUrl = Read-Host -Prompt 'Input site manager url'
+$apiUrl = Read-Host -Prompt 'Input connector api url'
+$ssoUrl = Read-Host -Prompt 'Input connector sso url'
+$clientId = Read-Host -Prompt 'Input connector client id'
+$AppKey = Read-Host -Prompt 'Input your app key' -AsSecureString
+$plainKey =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($AppKey))
+$ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
+$plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
+
 $testResult = Test-CsTeamsShiftsConnectionValidate `
     -Name $InstanceName `
-    -ConnectorId $BlueYonderId `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -ConnectorId $UkgId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
         })
@@ -363,7 +365,7 @@ if ($testResult.Code -ne $NULL) {
 }
 Write-Host "Test complete, no conflicts found"
 
-#Create an instance (includes WFM site team ids)
+#Create a connection instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
 $designatorName = Read-Host -Prompt "Input designated actor's user name"
 $domain = $designatorName.Split("@")[1]
@@ -386,24 +388,23 @@ if ($decision -eq 1) {
 }
 
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-    -ConnectorId $BlueYonderId `
+    -ConnectorId $UkgId `
     -ConnectorAdminEmail $AdminEmailList `
     -DesignatedActorId $teamsUserId `
     -EnabledConnectorScenario $enabledConnectorScenario `
     -EnabledWfiScenario $wfiSupportedScenario `
     -Name $InstanceName `
     -SyncFrequencyInMin $syncFreq `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
-    })
+        })
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
@@ -412,7 +413,7 @@ if ($InstanceId -ne $null){
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of instances
+#Retrieve the list of sites
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
@@ -487,8 +488,8 @@ Pour obtenir de l'aide sur les applets de commande du connecteur Shifts, y compr
 ## <a name="related-articles"></a>Articles connexes
 
 - [Connecteurs de Plannings](shifts-connectors.md)
-- [Utilisez PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
-- [Utilisez le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
+- [Utiliser PowerShell pour gérer votre connexion Shifts aux dimensions UKG](shifts-connector-ukg-powershell-manage.md)
+- [Utilisez le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts aux dimensions UKG](shifts-connector-ukg-admin-center-manage.md)
 - [Gérer l’application Shifts](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Présentation de Teams PowerShell](/microsoftteams/teams-powershell-overview)
 - [Référence de l'applet de commande Teams PowerShell](/powershell/teams/intro)
