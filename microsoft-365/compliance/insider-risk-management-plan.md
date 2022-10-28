@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b9814616fb09388775c748db694826d17133cf87
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6c49afa544e72110ff6646fc68f6ea3da498547d
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728310"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767648"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
@@ -103,7 +103,7 @@ Si vous n’avez pas d’offre Microsoft 365 Entreprise E5 existante et que vous
 - Lorsque vous utilisez le modèle **Vol de données par des utilisateurs sortants** , vous devez configurer un connecteur Microsoft 365 HR pour importer régulièrement les informations de date de démission et d’arrêt pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des instructions détaillées sur la configuration du connecteur Microsoft 365 HR.
 - Lorsque vous utilisez le modèle **Fuites de données**, vous devez configurer au moins une stratégie Protection contre la perte de données Microsoft Purview (DLP) pour définir des informations sensibles dans votre organisation et recevoir des alertes de risque interne pour les alertes de stratégie DLP de gravité élevée. Consultez l’article [Créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP.
 - Lorsque vous utilisez le modèle **de violation de stratégie de sécurité**, vous devez activer Microsoft Defender pour point de terminaison pour l’intégration de la gestion des risques internes dans Defender Security Center pour importer les alertes de violation de sécurité. Pour obtenir des instructions pas à pas pour activer l’intégration de Defender pour point de terminaison à la gestion des risques internes, consultez [Configurer des fonctionnalités avancées dans Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
-- Lorsque vous utilisez le modèle **utilisateur mécontent** , vous devez configurer un connecteur Microsoft 365 HR pour importer régulièrement les informations d’état des performances ou de la rétrogradation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des instructions détaillées sur la configuration du connecteur Microsoft 365 HR.
+- Lorsque vous utilisez le modèle **d’utilisateur à risque** , vous devez configurer un connecteur Microsoft 365 HR pour importer régulièrement les informations d’état de performances ou de rétrogradation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des instructions détaillées sur la configuration du connecteur Microsoft 365 HR.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Tester avec un petit groupe d’utilisateurs dans un environnement de production
 

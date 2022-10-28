@@ -18,12 +18,12 @@ description: Les administrateurs peuvent découvrir les stratégies anti-hameço
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 420ad079e76c22f8706813743696b79567e6a030
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: e994a0e8fb5621444fd88fdc0d3f8de93f698391
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684741"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767882"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -50,7 +50,7 @@ Les principales différences entre les stratégies anti-hameçonnage dans EOP et
 |Stratégie par défaut créée automatiquement|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Créer des stratégies d'accès externe personnalisées|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Paramètres de stratégie courants<sup>\*</sup>|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Paramètres d’usurpation d’identité|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Paramètres d’usurpation d’identité|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Conseil de sécurité du premier contact|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
 |Paramètres d’emprunt d’identité||![Coche](../../media/checkmark.png)|
 |Seuils d’hameçonnage avancés||![Coche](../../media/checkmark.png)|
@@ -242,7 +242,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   > [!NOTE]
   >
   > - Si les messages système Microsoft 365 des expéditeurs suivants sont identifiés comme des tentatives d’emprunt d’identité, vous pouvez ajouter les expéditeurs à la liste des expéditeurs approuvés :
-  >   - `⁠noreply@email.teams.microsoft.com`
+  >   - `noreply@email.teams.microsoft.com`
   >   - `noreply@emeaemail.teams.microsoft.com`
   >   - `no-reply@sharepointonline.com`
   >

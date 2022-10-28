@@ -20,12 +20,12 @@ ms.collection:
 - tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 82573c583ffd8dcb9ea94ed7cf6aab3de56f0eab
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 50a541c6a2252fac14137dff4c4d82ba190b204e
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730708"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767834"
 ---
 <!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
 
@@ -52,7 +52,7 @@ La protection réseau permet de réduire la surface d’attaque de vos appareils
 - Exploits
 - autres contenus malveillants sur Internet
 
-La protection réseau étend l’étendue de Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) pour bloquer tout le trafic HTTP sortant qui tente de se connecter à des sources de mauvaise réputation. Les blocs sur le trafic HTTP sortant sont basés sur le domaine ou le nom d’hôte.
+La protection réseau étend l’étendue de Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) pour bloquer tout le trafic HTTP sortant qui tente de se connecter à des sources de mauvaise réputation. Les blocs sur le trafic HTTP sortant sont basés sur le domaine ou le nom d’hôte.
 
 ## <a name="web-content-filtering-for-linux"></a>Filtrage de contenu web pour Linux
 
@@ -81,13 +81,13 @@ Déployer Linux manuellement, consultez [Déployer Microsoft Defender pour point
 L’exemple suivant montre la séquence de commandes nécessaires au package mdatp sur ubuntu 20.04 pour insiders-Slow channel.
 
 ```bash
-curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list 
-sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list 
-sudo apt-get install gpg 
-curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add - 
-sudo apt-get install apt-transport-https 
-sudo apt-get update 
-sudo apt install -y mdatp 
+curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list
+sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list
+sudo apt-get install gpg
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt install -y mdatp
 ```
 
 ### <a name="device-onboarding"></a>Intégration d’appareils
@@ -95,17 +95,18 @@ sudo apt install -y mdatp
 Pour intégrer l’appareil, vous devez télécharger le package d’intégration Python pour le serveur Linux à partir de Microsoft 365 Defender -> Settings -> Gestion des appareils -> Onboarding et exécuter :
 
 ```bash
-sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py 
+sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 ```
 
 ### <a name="manually-enable-network-protection"></a>Activer manuellement la protection réseau
 
-1. Activez la fonctionnalité « networkProtection », modifiez « /etc/opt/microsoft/mdatp/wdavcfg » et définissez **networkProtection** sur **activé**.  
+1. Activez la fonctionnalité « networkProtection », modifiez « /etc/opt/microsoft/mdatp/wdavcfg » et définissez **networkProtection** sur **activé**.
 2. Redémarrez le service mdatp en exécutant la commande suivante :
 
 ```bash
-sudo systemctl restart mdatp 
+sudo systemctl restart mdatp
 ```
+
 > :::image type="content" source="images/network-protection-linux-mdatp-restart.png" alt-text="Affiche le redémarrage de mdatp Linux." lightbox="images/network-protection-linux-mdatp-restart.png":::
 
 ### <a name="configure-the-enforcement-level"></a>Configurer le niveau d’application
@@ -120,7 +121,7 @@ La protection réseau est désactivée par défaut, mais elle peut être configu
 sudo mdatp config network-protection enforcement-level --value block
 ```
 
-or
+ou
 
 ```bash
 sudo mdatp config network-protection enforcement-level --value audit
@@ -142,8 +143,8 @@ R. Vérifiez que la protection réseau a un effet sur les sites toujours bloqué
 B. Inspecter les journaux de diagnostic
 
 ```bash
-$ sudo mdatp log level set --level debug 
-$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log 
+$ sudo mdatp log level set --level debug
+$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log
 ```
 
 #### <a name="to-exit-the-validation-mode"></a>Pour quitter le mode de validation
@@ -160,7 +161,7 @@ Par défaut, la protection réseau Linux est active sur la passerelle par défau
 Pour personnaliser les interfaces réseau, remplacez le paramètre **networkSetupMode** par le fichier de configuration **/opt/microsoft/mdatp/conf/**  et redémarrez le service :
 
 ```bash
-sudo systemctl restart  mdatp 
+sudo systemctl restart  mdatp
 ```
 
 Le fichier de configuration permet également à l’utilisateur de personnaliser :
@@ -175,7 +176,7 @@ Les valeurs par défaut ont été testées pour toutes les distributions, comme 
 
 ### <a name="microsoft-defender-portal"></a>portail Microsoft Defender
 
-Vérifiez également que dans **Microsoft Defender** >  **Paramètres** >  Points de **terminaison****Fonctionnalités avancées** > , le bouton bascule **« Indicateurs réseau personnalisés »** est _activé_.
+Vérifiez également que dans **Microsoft Defender** \> **Paramètres Fonctionnalités** \> **avancées des** \> **points** de terminaison, le bouton bascule **« Indicateurs réseau personnalisés »** est _activé_.
 
 > [!IMPORTANT]
 > Le bouton bascule **« Indicateurs réseau personnalisés »** ci-dessus contrôle l’activation des **indicateurs personnalisés** **pour toutes les plateformes prenant en charge la protection réseau, y compris Windows. Rappelez-vous que, sur Windows, pour que les indicateurs soient appliqués, la protection réseau doit également être activée explicitement.
@@ -188,13 +189,15 @@ Vérifiez également que dans **Microsoft Defender** >  **Paramètres** >  Point
    - La protection contre les menaces web fait partie de la protection web dans Microsoft Defender pour point de terminaison. Il utilise la protection réseau pour sécuriser vos appareils contre les menaces web.
 2. Exécutez le flux [Indicateurs personnalisés de compromission](indicator-ip-domain.md) pour obtenir des blocs sur le type d’indicateur personnalisé.
 3. Explorez [le filtrage de contenu web](web-content-filtering.md).
+
    > [!NOTE]
    > Si vous supprimez une stratégie ou modifiez des groupes d’appareils en même temps, cela peut entraîner un retard dans le déploiement de la stratégie.
    > Conseil professionnel : vous pouvez déployer une stratégie sans sélectionner de catégorie sur un groupe d’appareils. Cette action crée une stratégie d’audit uniquement pour vous aider à comprendre le comportement des utilisateurs avant de créer une stratégie de bloc.
    >
-   > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.  
+   > La création de groupes d’appareils est prise en charge dans Defender pour point de terminaison Plan 1 et Plan 2.
  
 4. [Intégrez Microsoft Defender pour point de terminaison à Defender for Cloud Apps](/defender-cloud-apps/mde-integration) et vos appareils macOS compatibles avec la protection réseau disposeront de fonctionnalités d’application de stratégie de point de terminaison.
+
    > [!NOTE]
    > La découverte et d’autres fonctionnalités ne sont actuellement pas prises en charge sur ces plateformes.
 

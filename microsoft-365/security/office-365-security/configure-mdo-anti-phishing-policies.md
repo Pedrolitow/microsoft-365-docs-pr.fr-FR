@@ -17,12 +17,12 @@ description: Les administrateurs peuvent apprendre à créer, modifier et suppri
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: d0358aa6c266a112c67873223553d550f6eb303d
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 3e28695935c351f010d595d4bc7184f4be688751
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684815"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770500"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -193,7 +193,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
      > [!NOTE]
      >
      > - Si les messages système Microsoft 365 des expéditeurs suivants sont identifiés comme des tentatives d’emprunt d’identité, vous pouvez ajouter les expéditeurs à la liste des expéditeurs approuvés :
-     >   - `⁠noreply@email.teams.microsoft.com`
+     >   - `noreply@email.teams.microsoft.com`
      >   - `noreply@emeaemail.teams.microsoft.com`
      >   - `no-reply@sharepointonline.com`
      >

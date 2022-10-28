@@ -1,7 +1,7 @@
 ---
-title: Résoudre les problèmes d’installation pour Microsoft Defender pour point de terminaison sur Mac
+title: Résoudre les problèmes d’installation de Microsoft Defender pour point de terminaison sur Mac
 description: Résoudre les problèmes d’installation dans Microsoft Defender pour point de terminaison sur Mac.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, install
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, install, catalina, big sur, monterey, ventura, mde pour mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9e507e4625804da819845466cd7d16ab94996369
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1ac3f82c713673a236816a5279e0e5cb772cfbff
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226600"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769138"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’installation de Microsoft Defender pour point de terminaison sur macOS
 
@@ -40,9 +40,9 @@ ms.locfileid: "68226600"
 
 ## <a name="installation-failed"></a>Échec de l’installation
 
-Pour une installation manuelle, la page Résumé de l’Assistant Installation indique : « Une erreur s’est produite pendant l’installation. Le programme d’installation a rencontré une erreur qui a provoqué l’échec de l’installation. Contactez l’éditeur de logiciels pour obtenir de l’aide. » Pour les déploiements GPM, il s’affiche également comme un échec d’installation générique.
+Pour l’installation manuelle, la page Résumé de l’Assistant Installation indique : « Une erreur s’est produite lors de l’installation. Le programme d’installation a rencontré une erreur qui a provoqué l’échec de l’installation. Contactez l’éditeur du logiciel pour obtenir de l’aide. » Pour les déploiements GPM, il s’affiche également en tant qu’échec d’installation générique.
 
-Bien que nous n’affichions pas d’erreur exacte pour l’utilisateur final, nous conservons un fichier journal avec la progression de l’installation.`/Library/Logs/Microsoft/mdatp/install.log` Chaque session d’installation s’ajoute à ce fichier journal. Vous pouvez utiliser `sed` cette option pour générer la dernière session d’installation uniquement :
+Bien que nous n’affichions pas d’erreur exacte à l’utilisateur final, nous conservons un fichier journal avec la progression de l’installation dans `/Library/Logs/Microsoft/mdatp/install.log`. Chaque session d’installation s’ajoute à ce fichier journal. Vous pouvez utiliser `sed` pour générer la dernière session d’installation uniquement :
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -56,12 +56,12 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
 Dans cet exemple, la raison réelle est précédée de `[ERROR]`.
-L’installation a échoué, car une rétrograde entre ces versions n’est pas prise en charge.
+L’installation a échoué, car une rétrogradation entre ces versions n’est pas prise en charge.
 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Journal d’installation MDATP manquant ou non mis à jour
 
 Dans de rares cas, l’installation ne laisse aucune trace dans le fichier /Library/Logs/Microsoft/mdatp/install.log de MDATP.
-Tout d’abord, vérifiez qu’une installation s’est produite. Analysez ensuite les erreurs possibles en interrogeant les journaux macOS. Il est utile de le faire dans les déploiements GPM, lorsqu’il n’y a pas d’interface utilisateur cliente. Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et filtrer par le nom du processus de journalisation, car il y aura une grande quantité d’informations.
+Tout d’abord, vérifiez qu’une installation a eu lieu. Analysez ensuite les erreurs possibles en interrogeant les journaux macOS. Il est utile de le faire dans les déploiements MDM, lorsqu’il n’y a pas d’interface utilisateur cliente. Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et filtrer en fonction du nom du processus de journalisation, car il y aura une grande quantité d’informations.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

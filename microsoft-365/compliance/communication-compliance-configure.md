@@ -24,17 +24,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 650447ae4e910fa0b9ebf22d22859a8fd0bf520d
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: c837bee4ccbab7f146c553b97a8d44bff8ae2949
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728816"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769972"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
->[!IMPORTANT]
->Conformité des communications Microsoft Purview fournit les outils pour aider les organisations à détecter les violations de conformité réglementaire (par exemple SEC ou FINRA), telles que des informations sensibles ou confidentielles, des propos harcelants ou menaçants, et le partage de contenu pour adultes. Conçu avec la confidentialité par défaut, les noms d’utilisateur sont pseudonymisés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont activés par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+> [!IMPORTANT]
+> Conformité des communications Microsoft Purview fournit les outils pour aider les organisations à détecter les violations de conformité réglementaire (par exemple SEC ou FINRA), telles que des informations sensibles ou confidentielles, des propos harcelants ou menaçants, et le partage de contenu pour adultes. Conçu avec la confidentialité par défaut, les noms d’utilisateur sont pseudonymisés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont activés par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Utilisez des stratégies de conformité des communications pour identifier les communications utilisateur à des fins d’analyse par des réviseurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de conformité des communications peuvent vous aider à détecter les communications dans votre organisation, consultez Stratégies de [conformité des communications](/microsoft-365/compliance/communication-compliance-policies). Si vous souhaitez voir comment Contoso a configuré rapidement une stratégie de conformité des communications pour détecter du contenu potentiellement inapproprié dans les communications Microsoft Teams, Exchange Online et Yammer, consultez cette [étude de cas](/microsoft-365/compliance/communication-compliance-case-study).
 
@@ -237,11 +237,11 @@ Pour plus d’informations sur la configuration de Yammer en mode natif, consult
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Étape 5 (obligatoire) : Créer une stratégie de conformité des communications
 
->[!IMPORTANT]
->L’utilisation de PowerShell pour créer et gérer des stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité des communications](https://compliance.microsoft.com/supervisoryreview).
+> [!IMPORTANT]
+> L’utilisation de PowerShell pour créer et gérer des stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité des communications](https://compliance.microsoft.com/supervisoryreview).
 
->[!TIP]  
->Vous souhaitez voir une procédure pas à pas détaillée de la configuration d’une nouvelle stratégie de conformité des communications et de la correction d’une alerte ? Regardez [cette vidéo de 15 minutes](/microsoft-365/compliance/communication-compliance-plan#creating-a-communication-compliance-policy-walkthrough) pour voir une démonstration de la façon dont les stratégies de conformité des communications peuvent vous aider à détecter les messages potentiellement inappropriés, à examiner les violations potentielles et à corriger les problèmes de conformité.
+> [!TIP]
+> Vous souhaitez voir une procédure pas à pas détaillée de la configuration d’une nouvelle stratégie de conformité des communications et de la correction d’une alerte ? Regardez [cette vidéo de 15 minutes](/microsoft-365/compliance/communication-compliance-plan#creating-a-communication-compliance-policy-walkthrough) pour voir une démonstration de la façon dont les stratégies de conformité des communications peuvent vous aider à détecter les messages potentiellement inappropriés, à examiner les violations potentielles et à corriger les problèmes de conformité.
 
 1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte administrateur dans votre organisation Microsoft 365.
 

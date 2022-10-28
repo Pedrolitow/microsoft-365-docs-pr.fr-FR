@@ -11,19 +11,20 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour Microsoft 365 pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: 768f2711c873696aabfc71df8817b0be6beec891
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: ca63433629740846824e22abead7e816f47fa6fd
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942359"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770025"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -31,17 +32,20 @@ ms.locfileid: "66942359"
 
 Lorsque vous utilisez les [stratégies de rétention et stratégies d’étiquette de rétention](retention.md#retention-policies-and-retention-labels) pour conserver ou supprimer automatiquement des données pour votre organisation, vous devez prendre connaissance de certains nombres maximum.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="maximum-number-of-retention-labels-per-tenant"></a>Nombre maximal d’étiquettes de rétention par client
 
 Un maximum de 1 000 étiquettes de rétention sont supportés par client.
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Nombre maximal de stratégies par client
 
-Un client unique peut avoir un maximum de 10 000 stratégies (n’importe quelle configuration). Ce nombre maximal inclut les différentes stratégies de rétention et d’autres stratégies de conformité, telles que les stratégies de protection contre la perte de données, les obstacles à l’information, les conservations eDiscovery et les étiquettes de confidentialité. Toutefois, cette valeur maximale exclut :
+Un client unique peut avoir un maximum de 10 000 stratégies (n’importe quelle configuration). Ce nombre maximal inclut les différentes stratégies de rétention et d’autres stratégies de conformité, telles que les stratégies pour DLP, les obstacles à l’information, les conservations eDiscovery, les conservations In-Place et les étiquettes de confidentialité. Toutefois, cette valeur maximale exclut :
 
 - Stratégies d’étiquetage automatique pour SharePoint et OneDrive, sauf s’il s’agit de pièces jointes cloud.
 - Les stratégies d’étiquette SharePoint et OneDrive qui ne font que supprimer, plutôt que de les conserver ou de les conserver, puis les supprimer.
 - Exchange stratégies de rétention à partir de [la gestion des enregistrements de messagerie (MRM).](/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
+- Contentieux en attente
 
 Dans cette limite de 10 000 stratégies, il existe également des limites sur le nombre maximal de stratégies de rétention par charge de travail :
 
@@ -51,7 +55,7 @@ Dans cette limite de 10 000 stratégies, il existe également des limites sur le
 - SharePoint ou OneDrive (emplacements spécifiques inclus ou exclus) : 2 600
 
 > [!NOTE]
-> Ces chiffres maximums pour Exchange et SharePoint ne sont pas exclusifs à la rétention, mais sont partagés avec d’autres types de stratégies de conservation qui incluent les conservations eDiscovery, les conservations pour litige et les conservations inaltérables.
+> Ces nombres maximums pour Exchange et SharePoint ne sont pas exclusifs à la rétention, mais sont partagés avec d’autres types de stratégies de conservation qui incluent les conservations eDiscovery et les conservations In-Place.
 
 Bien que les stratégies de rétention pour Microsoft Teams et Yammer utilisent des boîtes aux lettres pour stocker des données à des fins de rétention, le nombre maximal de stratégies pour Exchange Online exclut les stratégies de rétention pour Teams et Yammer.
 
@@ -100,7 +104,7 @@ Exemple d'échange :
 
 - **Solution** : Créer une politique de conservation pour le courrier électronique d'échange avec une période de conservation de 7 ans et exclure le sous-ensemble des utilisateurs. Ensuite, créez une deuxième politique de conservation pour le courrier électronique d 'echange avec une période de conservation de 5 ans et incluez le sous-ensemble des utilisateurs.
 
-    Dans les deux cas, le nombre de boîtes aux lettres incluses et exclues est inférieur au nombre maximal de boîtes aux lettres spécifiées pour une seule politique, et le sous-ensemble d'utilisateurs doit être explicitement exclu de la première politique parce qu'elle a une [période de rétention plus longue](retention.md#the-principles-of-retention-or-what-takes-precedence) que la deuxième politique. Si le sous-ensemble d'utilisateurs avait besoin d'une politique de rétention plus longue, vous n'auriez pas besoin de les exclure de la première stratégie.
+    In both cases, the number included and excluded is below the maximum number of specified mailboxes for a single policy, and the subset of users must be explicitly excluded from the first policy because it has a [longer retention period](retention.md#the-principles-of-retention-or-what-takes-precedence) than the second policy. If the subset of users required a longer retention policy, you wouldn't need to exclude them from the first policy.
 
     Avec cette solution, si une nouvelle personne rejoint l'organisation, sa boîte aux lettres est automatiquement incluse dans la première politique pendant 7 ans et il n'y a aucun impact sur le nombre maximum de personnes prises en charge. Cependant, les nouveaux utilisateurs qui ont besoin de la période de conservation de 5 ans s'ajoutent aux numéros d'inclusion et d'exclusion, et cette limite serait atteinte à 1 000.
 
@@ -112,7 +116,7 @@ Exemple de SharePoint :
 
     Comme il n'est pas nécessaire de conserver tous les sites SharePoint, vous devez créer des politiques de conservation qui spécifient les sites spécifiques. Comme une stratégie de conservation ne prend pas en charge plus de 100 sites spécifiques, vous devez créer plusieurs stratégies pour les deux périodes de conservation. Ces stratégies de rétention ont le nombre maximum de sites inclus, de sorte que le prochain nouveau site à conserver nécessiterait une nouvelle stratégie de rétention, quelle que soit la période de rétention.
 
-## <a name="maximum-number-of-items-for-disposition"></a>Nombre maximal d’éléments pour la destruction
+## <a name="maximum-numbers-for-disposition"></a>Nombres maximum pour la destruction
 
 Pour la [destruction de contenu](disposition.md), il existe des limites à prendre en compte :
 
@@ -125,3 +129,8 @@ Pour la [destruction de contenu](disposition.md), il existe des limites à prend
   - Preuve de la destruction pendant un délai maximal de 7 ans après destruction de l’élément, avec une limite de 1 000 000 éléments par étiquette de rétention pour cette période.
 
     Si vous avez besoin d’une preuve de destruction supérieure à cette limite de 1 000 000 pour des éléments entrant comme enregistrements, contactez le [Support Microsoft](../admin/get-help-support.md).
+
+- Nombre maximal de réviseurs de destruction :
+    - 10 réviseurs par étape de destruction dans n’importe quelle combinaison d’utilisateurs individuels et de groupes de sécurité à extension messagerie
+    - 200 réviseurs par locataire dans n’importe quelle combinaison d’utilisateurs individuels et de groupes de sécurité à extension messagerie. En raison de cette limite, nous vous recommandons d’utiliser des groupes de sécurité à extension messagerie dans la mesure du possible pour les grandes organisations.
+

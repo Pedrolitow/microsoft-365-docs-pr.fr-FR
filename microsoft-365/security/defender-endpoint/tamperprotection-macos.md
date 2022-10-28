@@ -1,7 +1,7 @@
 ---
 title: Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
 description: Utilisez la protection contre les falsifications pour empêcher les applications malveillantes de modifier les paramètres de sécurité macOS importants.
-keywords: macos, protection contre les falsifications, paramètres de sécurité, programmes malveillants
+keywords: macos, protection contre les falsifications, paramètres de sécurité, logiciels malveillants
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 115b1159bb425688fe808652ab7e2b61170f3f8e
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 2f4371ab45d53168aeb0b48f02cb445412d1ab67
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68637483"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769202"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
 
@@ -36,7 +36,7 @@ ms.locfileid: "68637483"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 
-La protection contre les falsifications dans macOS permet d’empêcher les modifications indésirables apportées aux paramètres de sécurité par des utilisateurs non autorisés. La protection contre les falsifications permet d’empêcher la suppression non autorisée de Microsoft Defender pour point de terminaison sur macOS. Cette fonctionnalité permet également aux fichiers de sécurité, aux processus et aux paramètres de configuration importants d’être falsifiés.
+La protection contre les falsifications dans macOS permet d’empêcher les modifications indésirables apportées aux paramètres de sécurité par des utilisateurs non autorisés. La protection contre les falsifications permet d’empêcher la suppression non autorisée de Microsoft Defender pour point de terminaison sur macOS. Cette fonctionnalité aide également les fichiers de sécurité, les processus et les paramètres de configuration importants à ne pas être falsifiés.
 
 Vous pouvez définir la protection contre les falsifications dans les modes suivants :
 
@@ -46,24 +46,24 @@ Vous pouvez définir la protection contre les falsifications dans les modes suiv
 |Audit|Les opérations de falsification sont journalisées, mais pas bloquées|
 |Bloquer|La protection contre les falsifications est activée, les opérations de falsification sont bloquées|
 
-Lorsque la protection contre les falsifications est définie sur le mode audit ou bloquer, vous pouvez vous attendre aux résultats suivants :
+Lorsque la protection contre les falsifications est définie sur le mode d’audit ou de blocage, vous pouvez vous attendre aux résultats suivants :
 
-**Mode Audit** :
+**Mode d’audit** :
 
-- Les actions pour désinstaller Defender pour l’agent de point de terminaison sont journalisées (auditées)
-- La modification/modification des fichiers Defender pour point de terminaison est enregistrée (auditée)
-- La création de nouveaux fichiers sous l’emplacement defender pour point de terminaison est enregistrée (auditée)
-- La suppression des fichiers Defender pour point de terminaison est journalisée (auditée)
-- Le changement de nom des fichiers Defender pour point de terminaison est enregistré (audité)
+- Les actions de désinstallation de l’agent Defender pour point de terminaison sont journalisées (auditées)
+- La modification/modification des fichiers Defender pour point de terminaison est journalisée (audité)
+- La création de fichiers sous l’emplacement Defender pour point de terminaison est journalisée (audité)
+- La suppression des fichiers Defender pour point de terminaison est journalisée (audité)
+- Le changement de nom des fichiers Defender pour point de terminaison est journalisé (audité)
 
-**Mode bloc** :
+**Mode bloquer** :
 
 - Les actions de désinstallation de l’agent Defender pour point de terminaison sont bloquées
-- La modification/modification des fichiers Defender pour point de terminaison est bloquée
-- La création de nouveaux fichiers sous l’emplacement de Defender pour point de terminaison est bloquée
+- La modification des fichiers Defender pour point de terminaison est bloquée
+- La création de fichiers sous l’emplacement defender pour point de terminaison est bloquée
 - La suppression des fichiers Defender pour point de terminaison est bloquée
 - Le changement de nom des fichiers Defender pour point de terminaison est bloqué
-- Les commandes pour arrêter l’agent échouent
+- Échec des commandes pour arrêter l’agent
 
 Voici un exemple de message système en réponse à une action bloquée :
 
@@ -73,12 +73,12 @@ Vous pouvez configurer le mode de protection contre les falsifications en fourni
 
 > [!NOTE]
 >
-> - La modification du mode s’applique immédiatement.
-> - Si vous avez utilisé JAMF pendant la configuration initiale, vous devez également mettre à jour la configuration à l’aide de JAMF.
+> - Le changement de mode s’applique immédiatement.
+> - Si vous avez utilisé JAMF lors de la configuration initiale, vous devez également mettre à jour la configuration à l’aide de JAMF.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Versions macOS prises en charge : Monterey (12), Big Sur (11), Catalina (10.15+).
+- Versions macOS prises en charge : Big Sur (11) ou version ultérieure.
 - Version minimale requise pour Defender pour point de terminaison : 101.70.19.
 
 **Paramètres fortement recommandés :**
@@ -97,7 +97,7 @@ Il existe plusieurs façons de configurer la protection contre les falsification
 ### <a name="before-you-begin"></a>Avant de commencer
 
 Vérifiez que « tamper_protection » est défini sur « désactivé » ou « audit » pour observer le changement d’état.
-Assurez-vous également que « release_ring » ne signale pas « Production ».
+Vérifiez également que « release_ring » ne signale pas « Production ».
 
 ```bash
 mdatp health
@@ -151,7 +151,7 @@ full_disk_access_enabled                    : true
    ![Image de la commande de configuration manuelle](images/manual-config-cmd.png)
 
    > [!NOTE]
-   > Si vous utilisez la configuration manuelle pour activer la protection contre les falsifications, vous pouvez également désactiver la protection contre les falsifications manuellement à tout moment. Par exemple, vous pouvez révoquer manuellement l’accès au disque complet de Defender dans préférences système. Vous devez utiliser MDM au lieu d’une configuration manuelle pour empêcher un administrateur local de le faire.
+   > Si vous utilisez la configuration manuelle pour activer la protection contre les falsifications, vous pouvez également désactiver la protection contre les falsifications manuellement à tout moment. Par exemple, vous pouvez révoquer manuellement l’accès au disque complet à partir de Defender dans préférences système. Vous devez utiliser GPM au lieu d’une configuration manuelle pour empêcher un administrateur local de le faire.
 
 2. Vérifiez le résultat.
 
@@ -196,11 +196,11 @@ full_disk_access_enabled                    : true
   full_disk_access_enabled                    : true
   ```
 
-Notez que « tamper_protection » est maintenant défini sur « block ».
+Notez que « tamper_protection » est maintenant défini sur « bloquer ».
 
 ### <a name="jamf"></a>JAMF
 
-Configurez le mode de protection contre les falsifications dans Microsoft Defender pour point de terminaison [profil de configuration](mac-jamfpro-policies.md), en ajoutant les paramètres suivants :
+Configurez le mode de protection contre les falsifications dans Microsoft Defender pour point de terminaison [profil de configuration](mac-jamfpro-policies.md) en ajoutant les paramètres suivants :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -226,7 +226,7 @@ Suivez l’exemple de profil Intune documenté pour configurer la protection con
 Ajoutez la configuration suivante dans votre profil Intune :
 
 > [!NOTE]
-> Pour Intune configuration, vous pouvez créer un fichier de configuration de profil pour ajouter la configuration de protection contre les falsifications, ou ajouter ces paramètres à celui existant.
+> Pour Intune configuration, vous pouvez créer un fichier de configuration de profil pour ajouter la configuration de protection contre les falsifications, ou vous pouvez ajouter ces paramètres à l’existant.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -287,15 +287,15 @@ Vérifiez l’état de la protection contre les falsifications en exécutant la 
 
 `mdatp health --field tamper_protection`
 
-Le résultat affiche « block » si la protection contre les falsifications est activée :
+Le résultat affiche « bloquer » si la protection contre les falsifications est activée :
 
 ![Image de la protection contre les falsifications en mode bloc](images/tp-block-mode.png)
 
-Vous pouvez également exécuter l’exécution complète `mdatp health` et rechercher le « tamper_protection » dans la sortie
+Vous pouvez également exécuter full `mdatp health` et rechercher le « tamper_protection » dans la sortie
 
-## <a name="verify-tamper-protection-preventive-capabilities"></a>Vérifier les fonctionnalités préventives de protection contre les falsifications
+## <a name="verify-tamper-protection-preventive-capabilities"></a>Vérifier les fonctionnalités préventives de la protection contre les falsifications
 
-Vous pouvez vérifier que la protection contre les falsifications est activée de différentes manières.
+Vous pouvez vérifier que la protection contre les falsifications est activée de différentes façons.
 
 ### <a name="verify-block-mode"></a>Vérifier le mode bloc
 
@@ -305,16 +305,16 @@ L’alerte de falsification est déclenchée dans le portail Microsoft 365 Defen
 
 ### <a name="verify-block-mode-and-audit-modes"></a>Vérifier le mode bloc et les modes d’audit
 
-- À l’aide de la chasse avancée, vous verrez apparaître des alertes de falsification
-- Les événements de falsification se trouvent dans les journaux d’activité des appareils locaux : `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
+- À l’aide de la chasse avancée, des alertes de falsification s’affichent
+- Les événements de falsification se trouvent dans les journaux d’activité de l’appareil local : `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![Image du journal de protection contre les falsifications](images/tamper-protection-log.png)
 
-### <a name="diy-scenarios"></a>Scénarios de diy
+### <a name="diy-scenarios"></a>Scénarios de bricolage
 
-- Avec la protection contre les falsifications définie sur « block », essayez différentes méthodes pour désinstaller Defender pour point de terminaison. Par exemple, faites glisser la vignette de l’application dans la corbeille ou désinstallez la protection contre les falsifications à l’aide de la ligne de commande.
+- Avec la protection contre les falsifications définie sur « bloquer », essayez différentes méthodes pour désinstaller Defender pour point de terminaison. Par exemple, faites glisser la vignette de l’application dans la Corbeille ou désinstallez la protection contre les falsifications à l’aide de la ligne de commande.
 - Essayez d’arrêter le processus Defender pour point de terminaison (kill).
-- Essayez de supprimer, renommer, modifier, déplacer des fichiers Defender pour point de terminaison (semblables à ce qu’un utilisateur malveillant ferait), par exemple :
+- Essayez de supprimer, de renommer, de modifier, de déplacer des fichiers Defender pour point de terminaison (comme le ferait un utilisateur malveillant), par exemple :
 
   - /Applications/Microsoft Defender ATP.app/
   - /Library/LaunchDaemons/com.microsoft.fresno.plist
@@ -339,7 +339,7 @@ sudo mdatp config tamper-protection enforcement-level - -value disabled
 ```
 
 ## <a name="jamf"></a>JAMF
-Remplacez la `enforcementLevel` valeur par « désactivée » dans votre profil de configuration et envoyez-la à l’ordinateur :
+Remplacez la `enforcementLevel` valeur par « désactivé » dans votre profil de configuration et envoyez-la à l’ordinateur :
 
 ```console
 <?xml version="1.0" encoding="UTF-8"?>
@@ -416,9 +416,9 @@ Ajoutez la configuration suivante dans votre profil Intune :
 
 ## <a name="troubleshooting-configuration-issues"></a>Résolution des problèmes de configuration
 
-### <a name="issue-tamper-protection-is-reported-as-disabled"></a>Problème : La protection contre les falsifications est signalée comme désactivée
+### <a name="issue-tamper-protection-is-reported-as-disabled"></a>Problème : la protection contre les falsifications est signalée comme désactivée
 
-Si l’exécution de la commande `mdatp health` indique que la protection contre les falsifications est désactivée, même si vous l’avez activée et que plus d’une heure s’est écoulée depuis l’intégration, vous pouvez vérifier si vous disposez de la configuration appropriée en exécutant la commande suivante :
+Si l’exécution de la commande `mdatp health` indique que la protection contre les falsifications est désactivée, même si vous l’avez activée et que plus d’une heure s’est écoulée depuis l’intégration, vous pouvez vérifier si vous disposez de la bonne configuration en exécutant la commande suivante :
 
 ```console
 $ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log | tail -n 1
@@ -426,4 +426,4 @@ $ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/
 
 ```
 
-Le mode doit être « block » (ou « audit »). Si ce n’est pas le cas, vous n’avez pas défini le mode de protection contre les falsifications par le biais de `mdatp config` la commande ou de Intune.
+Le mode doit être « block » (ou « audit »). Si ce n’est pas le cas, vous n’avez pas défini le mode de protection contre les falsifications via `mdatp config` la commande ou via Intune.

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: c49a9037b87709858b93fa15e68f4e931f9d7fff
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 391756321722122c699ce4477d9cf495909d8d07
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68732960"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769114"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -175,11 +175,11 @@ La gestion des risques internes prend en charge l’importation de données util
 
 Le connecteur Microsoft 365 HR est requis lors de l’utilisation des modèles de stratégie suivants :
 
-- Fuites de données provoquées par un utilisateur mécontent
+- Fuites de données par des utilisateurs à risque
 - Vol de données utilisateur sortant
 - Mauvaise utilisation des données générales sur les patients
 - Violations de stratégie de sécurité par des utilisateurs quittant l’entreprise
-- Violations de stratégie de sécurité par des utilisateurs mécontents
+- Violations de stratégie de sécurité par les utilisateurs à risque
 
 Consultez l’article [Configurer un connecteur pour importer des données RH](import-hr-data.md) pour obtenir des instructions détaillées sur la configuration du connecteur Rh Microsoft 365 pour votre organisation. Une fois que vous avez configuré le connecteur RH, revenez à ces étapes de configuration.
 
@@ -321,7 +321,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 
     Si vous avez sélectionné d’autres modèles de stratégie, les événements de déclenchement personnalisés ne sont pas pris en charge. Les événements déclencheurs de stratégie intégrés s’appliquent et vous passez à l’étape 23 sans définir d’attributs de stratégie.
 
-14. Si vous avez sélectionné *les modèles Fuites de données par des utilisateurs mécontents* ou Violations de stratégie de *sécurité par des utilisateurs mécontents, vous verrez* des options dans la page **Déclencheurs de cette stratégie pour** l’intégration aux événements de connecteur de données RH et de conformité des communications. Vous avez le choix d’attribuer des scores de risque lorsque les utilisateurs envoient des messages qui contiennent un langage potentiellement menaçant, harcelant ou discriminatoire, ou d’amener les utilisateurs dans l’étendue de la stratégie après que des événements de mécontentement sont signalés dans votre système RH. Si vous sélectionnez l’option **Disgruntlement triggers from communication compliance (préversion),** vous pouvez accepter la stratégie de conformité des communications par défaut (créée automatiquement), choisir une étendue de stratégie précédemment créée pour ce déclencheur ou créer une autre stratégie délimitée. Si vous sélectionnez **événements de connecteur de données RH**, vous devez configurer un connecteur de données RH pour votre organisation.
+14. Si vous avez sélectionné *les modèles Fuites de données par les utilisateurs à risque* ou *Violations de stratégie de sécurité par les utilisateurs à risque* , vous verrez des options dans la page **Déclencheurs de cette stratégie pour** l’intégration aux événements de conformité de la communication et de connecteur de données RH. Vous avez le choix d’attribuer des scores de risque lorsque les utilisateurs envoient des messages qui contiennent un langage potentiellement menaçant, harcelant ou discriminatoire, ou d’amener les utilisateurs dans l’étendue de la stratégie après que des événements utilisateur à risque ont été signalés dans votre système RH. Si vous sélectionnez l’option **Déclencheurs à risque à partir de la conformité des communications (préversion),** vous pouvez accepter la stratégie de conformité des communications par défaut (créée automatiquement), choisir une étendue de stratégie créée précédemment pour ce déclencheur ou créer une autre stratégie délimitée. Si vous sélectionnez **événements de connecteur de données RH**, vous devez configurer un connecteur de données RH pour votre organisation.
 15. Sélectionnez **Suivant** pour continuer.
 16. Si vous avez sélectionné les *modèles Fuites de données générales* ou *Fuites de données par les utilisateurs prioritaires* et que vous avez sélectionné l’utilisateur **effectue une activité d’exfiltration et les indicateurs associés**, vous pouvez choisir des seuils personnalisés ou par défaut pour les événements déclencheurs d’indicateur que vous avez sélectionnés. Choisissez **l’option Utiliser les seuils par défaut (recommandé)** ou **Utiliser des seuils personnalisés pour les événements de déclenchement**.
 17. Sélectionnez **Suivant** pour continuer.

@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8ba2035f18dbdfde53ed71c125a82c98df6587ce
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 17ac1b6ad7a590b2ae14e39cc3f978712b843ca2
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728332"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767649"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Détecter les signaux des canaux à l’aide de la conformité des communications
 
->[!IMPORTANT]
->Conformité des communications Microsoft Purview fournit les outils pour aider les organisations à détecter les violations de conformité réglementaire (par exemple SEC ou FINRA), telles que des informations sensibles ou confidentielles, des propos harcelants ou menaçants, et le partage de contenu pour adultes. Conçu avec la confidentialité par défaut, les noms d’utilisateur sont pseudonymisés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont activés par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+> [!IMPORTANT]
+> Conformité des communications Microsoft Purview fournit les outils pour aider les organisations à détecter les violations de conformité réglementaire (par exemple SEC ou FINRA), telles que des informations sensibles ou confidentielles, des propos harcelants ou menaçants, et le partage de contenu pour adultes. Conçu avec la confidentialité par défaut, les noms d’utilisateur sont pseudonymisés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont activés par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 Avec les stratégies de conformité des communications, vous pouvez choisir d’analyser les messages dans une ou plusieurs des plateformes de communication suivantes en tant que groupe ou en tant que sources autonomes. Les messages d’origine capturés sur ces plateformes sont conservés à l’emplacement de la plateforme d’origine conformément aux stratégies de [rétention et de conservation](/microsoft-365/compliance/information-governance) de votre organisation. Les copies des messages utilisés par les stratégies de conformité des communications à des fins d’analyse et d’investigation sont conservées tant que la stratégie est en place, même si les utilisateurs quittent votre organisation et que leurs boîtes aux lettres sont supprimées. Lorsqu’une stratégie de communication est supprimée, des copies des messages associés à la stratégie sont également supprimées.
 

@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 - highpri
-ms.openlocfilehash: 5dacc7f3b387e9d89b13ee4ea8a5153168e513d3
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 25eea10436c0cc98024f947887a8289f309cd0f0
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68732116"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768652"
 ---
 # <a name="communication-compliance"></a>Conformité des communications
 
->[!IMPORTANT]
->Conformité des communications Microsoft Purview fournit les outils pour aider les organisations à détecter les violations de conformité réglementaire (par exemple SEC ou FINRA), telles que des informations sensibles ou confidentielles, des propos harcelants ou menaçants, et le partage de contenu pour adultes. Conçu avec la confidentialité par défaut, les noms d’utilisateur sont pseudonymisés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont activés par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+> [!IMPORTANT]
+> Conformité des communications Microsoft Purview fournit les outils pour aider les organisations à détecter les violations de conformité réglementaire (par exemple SEC ou FINRA), telles que des informations sensibles ou confidentielles, des propos harcelants ou menaçants, et le partage de contenu pour adultes. Conçu avec la confidentialité par défaut, les noms d’utilisateur sont pseudonymisés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont activés par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 La protection des informations sensibles et la détection des incidents de harcèlement en milieu de travail et leur action sont des éléments importants de la conformité aux politiques et normes internes. Conformité des communications Microsoft Purview permet de réduire ces risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour la messagerie électronique et les communications Microsoft Teams. Il s’agit notamment de communications potentiellement inappropriées contenant des grossièretés, des menaces, du harcèlement et des communications qui partagent des informations sensibles à l’intérieur et à l’extérieur de votre organisation.
 

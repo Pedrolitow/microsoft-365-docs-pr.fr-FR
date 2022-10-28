@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e3c1af1557e92888fb7f121afbc2431b2ab00831
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: be05acf1ca9028915a836d95f737e64ee1324f72
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728090"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769576"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques internes
 
@@ -243,9 +243,9 @@ Pour chacun des paramètres de domaine suivants, vous pouvez entrer jusqu’à 5
  
 ### <a name="sensitive-info-types-exclusion"></a>Exclusion des types d’informations sensibles
 
-En excluant les types d’informations sensibles, vous pouvez spécifier les types mappés aux indicateurs et déclencheurs impliquant des activités liées aux fichiers pour Point de terminaison, SharePoint, Teams, OneDrive et Exchange. Pour les fichiers qui contiennent des types d’informations sensibles identifiés ici, ils seront évalués en tant qu’activités impliquant du contenu lié aux types d’informations sensibles. Pour obtenir la liste complète, consultez [Définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md).
+Les types d’informations sensibles exclus dans les paramètres sont mappés à des indicateurs et des déclencheurs impliquant des activités liées aux fichiers pour Point de terminaison, SharePoint, Teams, OneDrive et Exchange. Ces types seront traités comme des types d’informations non sensibles. Pour les fichiers qui contiennent des types d’informations sensibles identifiés ici, ils seront évalués en tant qu’activités impliquant du contenu lié aux types d’informations sensibles. Pour obtenir la liste complète, consultez [Définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md).
 
-Vous pouvez sélectionner les types d’informations sensibles à exclure de la liste de tous les types disponibles (out-of-box et custom) disponibles dans le locataire. La gestion des risques internes exclut plusieurs types d’informations sensibles par défaut, tels que le numéro de routage ABA. Vous pouvez choisir jusqu’à 100 types d’informations sensibles à exclure.
+Vous pouvez sélectionner les types d’informations sensibles à exclure de la liste de tous les types disponibles (out-of-box et custom) disponibles dans le locataire. La gestion des risques internes exclut plusieurs types d’informations sensibles par défaut, tels que le numéro de routage ABA. Vous pouvez choisir jusqu’à 500 types d’informations sensibles à exclure.
 
 > [!NOTE]
 > La liste d’exclusion des types d’informations sensibles est prioritaire sur la liste de [contenu prioritaire](insider-risk-management-policies.md#prioritize-content-in-policies) .

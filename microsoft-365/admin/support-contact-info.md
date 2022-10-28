@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment obtenir un support téléphonique pour votre abonnement Microsoft 365 pour les entreprises. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
 ms.date: 10/20/2022
-ms.openlocfilehash: c73a473a1ca19463efc2f8de76898f505e07ab74
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 7c39bd1b4641ad74bf5ee4e8e66d11ee4eb9473a
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688500"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767684"
 ---
 # <a name="find-microsoft-365-for-business-support-phone-numbers-by-country-or-region"></a>Rechercher des numéros de téléphone de support Microsoft 365 pour les entreprises par pays ou région
 
@@ -3878,7 +3878,7 @@ Chinois et anglais : du lundi au vendredi, de 9 h à 18 h
    :::column-end:::
    :::column:::
 **Heures de support technique :**\
-Support téléphonique en chinois et en anglais : du lundi au vendredi, de 9 h à 21 h\
+Support téléphonique en chinois et en anglais : du lundi au vendredi, de 9 h à 18 h\
 Support en ligne chinois et anglais (via le centre d’administration) : 24 heures sur 24, 7 jours sur 7
    :::column-end:::
 :::row-end:::

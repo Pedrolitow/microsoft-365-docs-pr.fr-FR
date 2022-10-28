@@ -1,7 +1,7 @@
 ---
 title: Se connecter à Jamf Pro
 description: Se connecter à Jamf Pro
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde pour mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 522af18268c6cc8ec369af78946d59c703fa3d65
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: cc6ea39b779135039195982ba6e8894bb7e0da3e
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228468"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770434"
 ---
 # <a name="log-in-to-jamf-pro"></a>Se connecter à Jamf Pro
 
@@ -43,7 +43,7 @@ ms.locfileid: "68228468"
 
    :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="Tableau de bord Jamf Pro2" lightbox="images/jamf-pro-dashboard.png":::
 
-3. Vous verrez les paramètres disponibles.
+3. Les paramètres disponibles s’affichent.
 
    :::image type="content" source="images/jamfpro-settings.png" alt-text="Tableau de bord Jamf Pro3" lightbox="images/jamfpro-settings.png":::
 

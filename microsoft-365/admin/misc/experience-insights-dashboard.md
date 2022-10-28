@@ -11,12 +11,12 @@ ms.collection:
 - Tier1
 - scotvorg
 description: Obtenez un rapport périodique sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d’informations.
-ms.openlocfilehash: 2489cbfe16ff82fa4e58340ff8586af21ff64a0c
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6f560628bc2ce602dca03dda4935d0071e00e2da
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68725801"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769466"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Tableau de bord Microsoft 365 Experience Insights
 
@@ -35,7 +35,7 @@ Si vous êtes membre du rôle lecteur de rapports, une fois que vous vous connec
 
 :::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Capture d’écran : Image montrant une vue d’ensemble du tableau de bord Experience Insights":::
 
-Pour en savoir plus, consultez [À propos des rôles d’administrateur](../add-users/about-admin-roles.md) et [Attribuer des rôles d’administrateur](../add-users/assign-admin-roles.md).
+Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-users/about-admin-roles.md) et [Attribuer des rôles d'administrateur](../add-users/assign-admin-roles.md).
 
 ## <a name="apps-and-services-data"></a>Données d’applications et de services
 

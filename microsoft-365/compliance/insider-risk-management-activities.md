@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e35809f3cf95bd9995c21b638e5a4c1fef8027df
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 540d7bd367f32399004b276ee9d7c92bc70b70a3
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734910"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770302"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -138,7 +138,7 @@ Pour plus d’informations sur l’alerte, utilisez les sections et onglets suiv
 Cette section contient des informations générales sur l’utilisateur et l’alerte. Ces informations sont disponibles pour le contexte lors de l’examen d’informations détaillées sur l’activité de gestion des risques détectée incluse dans l’alerte pour l’utilisateur :
 
 - **Activité qui a généré cette alerte** : affiche l’activité potentiellement risquée et la correspondance de stratégie la plus haute pendant la période d’évaluation de l’activité qui a conduit à la génération de l’alerte.
-- **Événement déclencheur** : affiche l’événement déclencheur le plus récent qui a invité la stratégie à commencer à attribuer des scores de risque à l’activité de l’utilisateur. Si vous avez configuré [l’intégration avec la conformité des communications](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) pour *les fuites de données par des utilisateurs mécontents ou les* violations de stratégie de *sécurité par des stratégies d’utilisateurs mécontents* , l’événement de déclenchement de ces alertes sera limité à l’activité de conformité des communications.
+- **Événement déclencheur** : affiche l’événement déclencheur le plus récent qui a invité la stratégie à commencer à attribuer des scores de risque à l’activité de l’utilisateur. Si vous avez configuré [l’intégration avec la conformité des communications](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) pour *les fuites de données par les utilisateurs à risque* ou les violations de stratégie de *sécurité par des stratégies d’utilisateurs à risque* , l’événement déclencheur de ces alertes est limité à l’activité de conformité des communications.
 - **Profil utilisateur** : affiche des informations générales sur l’utilisateur affecté à l’alerte. Si l’anonymisation est activée, le nom d’utilisateur, l’adresse e-mail, l’alias et les champs d’organisation sont rendus anonymes.
 - **Historique des alertes utilisateur** : affiche une liste d’alertes pour l’utilisateur au cours des 30 derniers jours. Inclut un lien permettant d’afficher l’historique complet des alertes de l’utilisateur.
 

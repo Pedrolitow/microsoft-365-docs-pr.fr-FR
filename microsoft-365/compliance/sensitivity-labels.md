@@ -25,12 +25,12 @@ description: Découvrez comment les étiquettes de confidentialité de Microsoft
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c14a533ecd52eb05f85c16cb562df4c689eabfd
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: abb6fc63ee5991d216450bfc627ac88ba8123bd1
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626399"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769246"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -157,7 +157,7 @@ Lorsque vous créez vos étiquettes de sensibilité dans le portail de conformit
 
 Vous pouvez appliquer une seule étiquette de confidentialité à un élément tel qu’un document, un e-mail ou un conteneur. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Toutefois, cette option ne s’applique pas aux sous-étiquettes qui partagent la priorité de leur étiquette parente.
 
-Toutefois, l’ordre des [sous-étiquettes est utilisé avec les stratégies d’étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange). Lorsque vous configurez plusieurs stratégies d’étiquetage automatique pour le même emplacement, plusieurs correspondances peuvent se produire pour plusieurs étiquettes. Pour déterminer l’étiquette à appliquer, le classement des étiquettes est utilisé même avec les sous-étiquettes : la dernière étiquette sensible est sélectionnée, puis, le cas échéant, la dernière sous-étiquette.
+Cependant, l’ordre des sous-étiquettes est utilisé avec l'[étiquetage automatique](apply-sensitivity-label-automatically.md). Lorsque vous configurez des stratégies d’étiquetage automatique, plusieurs correspondances peuvent se produire pour plusieurs étiquettes. Ensuite, la dernière étiquette sensible est sélectionnée, puis, le cas échéant, la dernière sous-étiquette. Lorsque vous configurez des sous-étiquettes elles-mêmes (plutôt que des stratégies d’étiquetage automatique) pour l’étiquetage automatique ou recommandé, le comportement est légèrement différent lorsque les sous-étiquettes partagent la même étiquette parente. Par exemple, une sous-étiquette configurée pour l’étiquetage automatique est préférable à une sous-étiquette configurée pour l’étiquetage recommandé. Pour plus d’informations, consultez [Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plusieurs étiquettes](apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label).
 
 ![Option de création d’une sous-étiquette.](../media/Sensitivity-label-sublabel-options.png)
 
@@ -165,7 +165,7 @@ Toutefois, l’ordre des [sous-étiquettes est utilisé avec les stratégies d�
 
 With sublabels, you can group one or more labels below a parent label that a user sees in an Office app. For example, under Confidential, your organization might use several different labels for specific types of that classification. In this example, the parent label Confidential is simply a text label with no protection settings, and because it has sublabels, it can't be applied to content. Instead, users must choose Confidential to view the sublabels, and then they can choose a sublabel to apply to content.
 
-Les sous-étiquettes sont simplement un moyen de présenter des étiquettes à des utilisateurs dans des groupes logiques. Les sous-étiquettes n’héritent d’aucun paramètre de leur étiquette parente, à l’exception de leur couleur d’étiquette. Lorsque vous publiez une sous-étiquette pour un utilisateur, cet utilisateur peut ensuite appliquer cette sous-étiquette au contenu et aux conteneurs, mais ne peut pas appliquer uniquement l’étiquette parente.
+Les sous-étiquettes sont simplement un moyen de présenter des étiquettes à des utilisateurs dans des groupes logiques. Les sous-étiquettes n’héritent d’aucun paramètre de leur étiquette parente, à l’exception de leur couleur d’étiquette. Lorsque vous publiez une sous-étiquette pour un utilisateur, celui-ci peut ensuite appliquer cette sous-étiquette au contenu et aux conteneurs, mais ne peut pas appliquer uniquement l’étiquette parente.
 
 Ne choisissez pas une étiquette parent en tant qu’étiquette par défaut ou configurez une étiquette parent pour qu’elle soit automatiquement appliquée (ou recommandée). Si c’est le cas, l’étiquette parente ne peut pas être appliquée.
 
@@ -250,7 +250,7 @@ De même pour les utilisateurs du service juridique, qui se voient attribuer la 
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Étiquettes de niveau de confidentialité et étiquettes Azure Information Protection
 
-Les étiquettes de confidentialité intégrées à Microsoft 365 Apps sur Windows, macOS, iOS et Android s’affichent et se comportent très de la même façon sur ces appareils pour offrir aux utilisateurs une expérience d’étiquetage cohérente. Toutefois, sur les ordinateurs Windows, vous pouvez également utiliser le client [Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Ce client est maintenant en [mode maintenance](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) et, lorsqu’il est installé, il n’est plus le client d’étiquetage par défaut pour les dernières applications Office.
+Les étiquettes de confidentialité intégrées à Microsoft 365 Apps sur Windows, macOS, iOS et Android s’affichent et se comportent très de la même façon sur ces appareils pour offrir aux utilisateurs une expérience d’étiquetage cohérente. Toutefois, sur les ordinateurs Windows, vous pouvez également utiliser le client [Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Ce client est maintenant en [mode maintenance](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) et, lorsqu’il est installé, n’est plus le client d’étiquetage par défaut pour les dernières applications Office.
 
 Si vous utilisez le client AIP pour l’étiquetage dans les applications Office, nous vous recommandons de passer à l’étiquetage intégré. Pour plus d’informations, consultez [Migrer le complément Azure Information Protection (AIP) vers l’étiquetage intégré pour les applications Office](sensitivity-labels-aip.md).
 

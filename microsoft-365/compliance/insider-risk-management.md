@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 3745707ed7b6e6e4988bbb64583227ffad09fbf4
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 1a6175a0f0d64e72ca14e334cb16d970315bb797
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730356"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769840"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
@@ -99,12 +99,12 @@ Vous pouvez choisir parmi les modèles de stratégie suivants pour commencer rap
 - [Vol de données par des employés quittant votre organisation](insider-risk-management-policies.md#data-theft-by-departing-users)
 - [Fuites de données générales](insider-risk-management-policies.md#general-data-leaks)
 - [Fuites de données par des utilisateurs prioritaires (aperçu)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Fuites de données par des utilisateurs mécontents (préversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Fuites de données par des utilisateurs à risque (préversion)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 - [Violations générales de la stratégie de sécurité (préversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Mauvaise utilisation générale des données des patients (préversion)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [Violations de stratégie de sécurité par des utilisateurs sortants (préversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Violations de la stratégie de sécurité par des utilisateurs prioritaires (préversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Violations de stratégie de sécurité par un utilisateur mécontent (préversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Violations de stratégie de sécurité par les utilisateurs à risque (préversion)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ![Tableau de bord de stratégie de gestion des risques internes.](../media/insider-risk-policy-dashboard.png)
 
@@ -170,7 +170,7 @@ Dans la plupart des cas, les utilisateurs font de leur mieux pour gérer correct
 
 - [Fuites de données générales](insider-risk-management-policies.md#general-data-leaks)
 - [Fuites de données par des utilisateurs prioritaires (aperçu)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Fuites de données par des utilisateurs mécontents (préversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Fuites de données par des utilisateurs à risque (préversion)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 
 ### <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Violations intentionnelles ou involontaires de la stratégie de sécurité (préversion)
 
@@ -179,7 +179,7 @@ Les utilisateurs ont généralement un grand degré de contrôle lors de la gest
 - [Violations générales de la stratégie de sécurité (préversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Violations de stratégie de sécurité par des utilisateurs sortants (préversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Violations de la stratégie de sécurité par des utilisateurs prioritaires (préversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Violations de stratégie de sécurité par un utilisateur mécontent (préversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Violations de stratégie de sécurité par les utilisateurs à risque (préversion)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ### <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Stratégies pour les utilisateurs basées sur la position, le niveau d’accès ou l’historique des risques (préversion)
 
@@ -194,12 +194,12 @@ Pour les organisations du secteur de la santé, des études récentes ont révé
 
 - [Mauvaise utilisation générale des données des patients (préversion)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
-### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Actions et comportements d’utilisateurs mécontents (préversion)
+### <a name="actions-and-behaviors-by-risky-users-preview"></a>Actions et comportements des utilisateurs à risque (préversion)
 
 Les événements stressants liés à l’emploi peuvent avoir un impact sur le comportement de l’utilisateur de plusieurs manières liées aux risques internes. Ces facteurs de stress peuvent être une évaluation médiocre des performances, une rétrogradation de poste ou l’utilisateur placé sur un plan d’évaluation des performances. Les facteurs de stress peuvent également entraîner un comportement potentiellement inapproprié, comme l’envoi par des utilisateurs d’un langage potentiellement menaçant, harcelant ou discriminatoire dans des e-mails et d’autres messages. Bien que la plupart des utilisateurs ne répondent pas de manière malveillante à ces événements, le stress de ces actions peut conduire certains utilisateurs à se comporter d’une manière qu’ils ne peuvent normalement pas envisager dans des circonstances normales. Pour aider à identifier ces types d’activités potentiellement risquées, les modèles de stratégie de gestion des risques internes suivants peuvent utiliser le connecteur RH et/ou l’intégration avec une stratégie de [conformité de communication dédiée](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) pour amener les utilisateurs dans l’étendue des stratégies de gestion des risques internes et commencer à évaluer les indicateurs de risque liés aux comportements qui peuvent se produire :
 
-- [Fuites de données par des utilisateurs mécontents (préversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [Violations de stratégie de sécurité par un utilisateur mécontent (préversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Fuites de données par des utilisateurs à risque (préversion)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
+- [Violations de stratégie de sécurité par les utilisateurs à risque (préversion)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ### <a name="visual-context-for-potentially-risky-user-activities-with-forensic-evidence-preview"></a>Contexte visuel pour les activités potentiellement risquées des utilisateurs avec des preuves forensiques (préversion)
 

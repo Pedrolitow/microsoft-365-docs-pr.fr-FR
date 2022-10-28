@@ -19,21 +19,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3a722d2310b0144501af390f05983ed2764edbf3
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 54f54379da472c818f9fd07902d999b4dabe2561
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68732138"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769070"
 ---
 # <a name="use-communication-compliance-with-siem-solutions"></a>Utiliser la conformité des communications avec les solutions SIEM
 
->[!IMPORTANT]
->Conformité des communications Microsoft Purview fournit les outils pour aider les organisations à détecter les violations de conformité réglementaire (par exemple SEC ou FINRA), telles que des informations sensibles ou confidentielles, des propos harcelants ou menaçants, et le partage de contenu pour adultes. Conçu avec la confidentialité par défaut, les noms d’utilisateur sont pseudonymisés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont activés par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
+> [!IMPORTANT]
+> Conformité des communications Microsoft Purview fournit les outils pour aider les organisations à détecter les violations de conformité réglementaire (par exemple SEC ou FINRA), telles que des informations sensibles ou confidentielles, des propos harcelants ou menaçants, et le partage de contenu pour adultes. Conçu avec la confidentialité par défaut, les noms d’utilisateur sont pseudonymisés par défaut, les contrôles d’accès en fonction du rôle sont intégrés, les enquêteurs sont activés par un administrateur et les journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 [La conformité des communications](/microsoft-365/compliance/communication-compliance) est une solution de risque interne dans Microsoft Purview qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur les messages potentiellement inappropriés dans votre organisation. Les solutions SIEM (Security Information and Event Management) telles que [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) ou [Splunk](https://www.splunk.com/) sont couramment utilisées pour agréger et suivre les menaces au sein d’une organisation.
 
-Un besoin courant pour les organisations est d’intégrer les alertes de conformité des communications et leurs solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. 
+Un besoin courant pour les organisations est d’intégrer les alertes de conformité des communications et leurs solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur.
 
 Par exemple, un employé envoie un message offensant à un autre employé et ce message est détecté par une stratégie de conformité des communications pour du contenu potentiellement inapproprié. Les événements de ce type sont suivis dans Microsoft 365 Audit (également appelé « journal d’audit unifié ») par la solution de conformité des communications, puis importés dans la solution SIEM. Les alertes déclenchées dans la solution SIEM incluses dans l’audit Microsoft 365 sont ensuite associées à des alertes de conformité des communications. Les enquêteurs sont avertis de ces alertes dans leur solution SIEM, puis ils peuvent examiner et corriger les alertes correspondantes dans le tableau de bord de conformité des communications.
 
@@ -115,7 +115,7 @@ Le tableau suivant présente des exemples de résultats de recherche pour diffé
 | Les types de stratégies | Exemple de résultats de recherche |
 | :------------------ | :--------------------------------------- |
 | Stratégie détectant une liste de mots clés de type d’informations sensibles personnalisée | { <br> CreationTime : 2022-09-17T16:29:57 <br> ID : 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit : true <br> Objectid: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Opération : SupervisionRuleMatch <br> OrganizationId : d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType : 68 <br> ResultStatus : {"ItemClass »:"IPM. Remarque »,"CcsiResults »:"leak"} <br> SRPolicyMatchDetails : { [+] } <br> UserId : user1@contoso.OnMicrosoft.com <br> UserKey : SupervisionStoreDeliveryAgent <br> UserType : 0 <br> Version : 1 <br> Charge de travail : Exchange <br> } |
-| Stratégie de détection d’une langue potentiellement inappropriée | { <br> CreationTime : 2022-09-17T23:44:35 <br> ID : e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit : true <br> Objectid: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Opération : SupervisionRuleMatch <br> OrganizationId : d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType : 68 <br> ResultStatus : {"ItemClass »:"IPM. Yammer.Message »,"CcsiResults »:""} <br> SRPolicyMatchDetails : { [+] } <br> UserId : user1@contoso.com <br> UserKey : SupervisionStoreDeliveryAgent <br> UserType : 0 <br> Version : 1 <br> }  |
+| Stratégie de détection d’une langue potentiellement inappropriée | { <br> CreationTime : 2022-09-17T23:44:35 <br> ID : e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit : true <br> Objectid: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Opération : SupervisionRuleMatch <br> OrganizationId : d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType : 68 <br> ResultStatus : {"ItemClass »:"IPM. Yammer.Message »,"CcsiResults »:""} <br> SRPolicyMatchDetails : { [+] } <br> UserId : user1@contoso.com <br> UserKey : SupervisionStoreDeliveryAgent <br> UserType : 0 <br> Version : 1 <br> } |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Configurer la conformité des communications avec d’autres solutions SIEM
 
@@ -133,11 +133,13 @@ Par exemple, voici un exemple de recherche utilisant le paramètre **Operations*
 ```powershell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch | ft CreationDate,UserIds,AuditData
 ```
+
 Voici un exemple de recherche utilisant le paramètre **RecordsType** et la valeur *ComplianceSupervisionExchange* :
 
 ```powershell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType ComplianceSuperVisionExchange | ft CreationDate,UserIds,AuditData
 ```
+
 ## <a name="resources"></a>Ressources
 
 - [Audit de conformité des communications](/microsoft-365/compliance/communication-compliance-reports-audits#audit)

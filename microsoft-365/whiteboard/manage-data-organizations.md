@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez la conservation des données pour Le Tableau blanc Microsoft dans Azure et OneDrive Entreprise.
-ms.openlocfilehash: 136506afcec7fe067a270e0577678b5b6a9ec9ff
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: f450c8a715f6dc865c4bcdb889e98288ad9d1561
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68662838"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769885"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Gérer les données pour le Tableau blanc Microsoft
 
@@ -27,7 +27,7 @@ Pour gérer les données, vous devez d’abord vous assurer que le Tableau blanc
 
 ## <a name="azure-storage-overview"></a>Vue d’ensemble du stockage Azure
 
->[!NOTE]
+> [!NOTE]
 > Les informations suivantes s’appliquent aux tableaux blancs stockés dans Azure.
 
 Le tableau blanc stocke actuellement le contenu en toute sécurité dans Azure. Les données peuvent être stockées dans différents emplacements, selon le pays et le moment où le Tableau blanc a basculé vers le stockage du nouveau contenu dans ces emplacements. Pour vérifier où les nouvelles données sont [créées, consultez Où vos données client Microsoft 365 sont stockées](/microsoft-365/enterprise/o365-data-locations).
@@ -38,7 +38,7 @@ Le contenu dans Azure ne prend pas en charge la protection contre la perte de do
 
 Nous modifions la façon dont les tableaux blancs sont stockés lorsque le compte d’un utilisateur est supprimé dans Azure. Avant la modification, tous les tableaux blancs appartenant au compte d’un utilisateur supprimé ont également été supprimés. Toutefois, les tableaux blancs partagés avec d’autres personnes n’ont pas été supprimés.
 
->[!NOTE]
+> [!NOTE]
 > Les tableaux blancs stockés dans OneDrive Entreprise seront gérés comme tout autre contenu dans OneDrive Entreprise. Pour plus d’informations, consultez [Définir la rétention OneDrive pour les utilisateurs supprimés](/onedrive/set-retention).
 
 Depuis le **1er juin 2022**, le comportement des tableaux blancs sur Azure a changé. Tous les tableaux blancs partagés avec d’autres utilisateurs seront supprimés.

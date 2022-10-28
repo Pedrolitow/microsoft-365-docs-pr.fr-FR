@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.subservice: mde
 ms.date: 10/21/2022
-ms.openlocfilehash: b8f8f33d0fc47c395d19e67286eb43f7b9552dbe
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: cb04dc9817de63c3966c3168743d36fe36f66210
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734427"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770390"
 ---
 # <a name="microsoft-defender-for-endpoint---demonstration-scenarios"></a>Microsoft Defender pour point de terminaison - scénarios de démonstration
 
@@ -62,7 +62,8 @@ Le tableau suivant répertorie les démonstrations disponibles par ordre alphab�
 ## <a name="see-also"></a>Voir aussi
 
 [Protection \( de la surface d’attaque Vue d’ensemble de l’ASR\)](overview-attack-surface-reduction.md) [Règles de réduction de](attack-surface-reduction-rules-deployment-test.md)
- la surface d’attaque[De nouvelle génération Vue d’ensemble de la protection NGP\) de la protection \(](next-generation-protection.md)des points de[terminaison et de la réponse \(EDR Vue d’ensemble de l’EDR\)](overview-endpoint-detection-response.md) [Microsoft Defender pour point de terminaison blog sécurité](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)
+ la surface d’attaque[De nouvelle génération Vue d’ensemble de la protection NGP\) de la protection \(](next-generation-protection.md)des points de[terminaison et de la réponse \(EDR Vue d’ensemble de l’EDR\)](overview-endpoint-detection-response.md) [Microsoft Defender pour point de terminaison blog sécurité](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog)
+
 
 
 

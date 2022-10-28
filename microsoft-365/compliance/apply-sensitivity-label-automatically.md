@@ -10,19 +10,20 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: b986d875bc8a3368cdb6e85aa00c23b4783eaa46
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 78b20b6ef96da9bc6abcde0f32b013fd49efec06
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476569"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768608"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -51,7 +52,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
 
 - **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint ou dans OneDrive) ou est envoyé par e-mail (traité par Exchange Online)** : utilisez une stratégie d’étiquetage automatique.
     
-    Cette méthode est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et des données en transit (e-mails envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres).
+    You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes).
     
     Comme cet étiquetage est appliqué par les services plutôt que par les applications, vous n’avez pas à vous soucier des applications des utilisateurs et de leur version. Par conséquent, cette fonctionnalité est immédiatement disponible dans toute l’organisation et est appropriée pour l’étiquetage à grande échelle. Les stratégies d’étiquetage automatique ne prennent pas en charge l’étiquetage recommandé, car l’utilisateur n’interagit pas avec le processus d’étiquetage. Au lieu de cela, l’administrateur exécute les stratégies dans la simulation pour garantir l’étiquetage correct du contenu avant d’appliquer réellement l’étiquette.
 
@@ -69,7 +70,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
 
     Spécifique à l’étiquetage automatique pour Exchange :
     
-    - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes au format PDF ainsi que les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
+    - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there's a match, the email is labeled but not the attachment.
         - Pour les fichiers PDF, si l'étiquette applique le chiffrement, ces fichiers sont chiffrés en utilisant le [chiffrement des messages](ome.md) lorsque votre client est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-). Les paramètres de chiffrement appliqués sont hérités du courrier.
         - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement et que ces fichiers ne sont pas chiffrés, ils sont désormais chiffrés à l’aide du [chiffrement des messages](ome.md). Les paramètres de chiffrement sont hérités du courrier.
     - Si vous avez des règles de flux d'e-mails Exchange ou des stratégies de prévention des pertes de données (DLP) Microsoft Purview qui appliquent le cryptage IRM : Lorsque le contenu est identifié par ces règles ou stratégies et une stratégie d'étiquetage automatique, l'étiquette est appliquée. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
@@ -78,11 +79,13 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     - Lorsque l’étiquette applique le chiffrement, l’[émetteur Rights Management et propriétaire Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) est la personne qui envoie l’e-mail lorsque l’expéditeur est de votre propre organisation. Lorsque l’expéditeur est en dehors de votre organisation, vous pouvez spécifier un propriétaire Rights Management pour les e-mails entrants étiquetés et chiffrés par votre stratégie.
     - Si l’étiquette est configurée pour appliquer [marquages dynamiques](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), sachez que pour les e-mails entrants, cette configuration peut entraîner l’affichage des noms des personnes extérieures à votre organisation.
 
-> [!TIP]
+> [!NOTE]
 > Pour certains nouveaux clients, nous offrons la configuration automatique des paramètres d’étiquetage automatique par défaut pour l’étiquetage côté client et l’étiquetage côté service. Même si vous n’êtes pas éligible à cette configuration automatique, vous pouvez trouver utile de référencer leur configuration. Par exemple, vous pouvez configurer manuellement des étiquettes existantes et créer vos propres stratégies d’étiquetage automatique avec les mêmes paramètres pour accélérer votre déploiement d’étiquetage.
 > 
 > Pour plus d'informations, voir [Étiquettes et politiques par défaut pour Microsoft Purview Information Protection](mip-easy-trials.md).
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparer l’étiquetage automatique pour les applications Office et les stratégies d’étiquetage automatique
 
@@ -108,7 +111,17 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plusieurs étiquettes
 
-Les étiquettes sont classées pour évaluation en fonction de leur position que vous spécifiez dans la stratégie: l’étiquette positionné a tout d’abord la position la plus basse (au moins sensible) et l’étiquette positionnée a dernière position plus élevée (plus sensible). Pour plus d’informations sur la priorité, voir [Priorité étiquettes (ordre aspects importants)](sensitivity-labels.md#label-priority-order-matters).
+Les étiquettes sont classées pour évaluation en fonction de leur position que vous spécifiez dans le portail de conformité : l’étiquette positionnée en premier a la position la plus basse (la moins sensible, donc la priorité la plus basse) et l’étiquette positionnée en dernier a la position la plus élevée (la plus sensible, donc la priorité la plus élevée). L’étiquette avec le numéro de commande le plus élevé est sélectionnée.
+
+Ce comportement est également vrai pour l’étiquetage automatique côté service (stratégies d’étiquetage automatique) lorsque les sous-étiquettes partagent la même étiquette parente : si, après évaluation et classement, plusieurs sous-étiquettes de la même étiquette parente répondent aux conditions d’étiquetage automatique, la sous-étiquette avec le numéro d’ordre le plus élevé est sélectionnée et appliquée.
+
+Toutefois, le comportement est légèrement différent pour l’étiquetage automatique côté client (paramètres d’étiquetage automatique dans l’étiquette). Si plusieurs sous-étiquettes de la même étiquette parente correspondent aux conditions :
+
+- Si un fichier n’est pas déjà étiqueté, la sous-étiquette d’ordre le plus élevé configurée pour l’étiquetage automatique est toujours sélectionnée, plutôt que la sous-étiquette d’ordre le plus élevé configurée pour l’étiquetage recommandé. Si aucune de ces sous-étiquettes n’est configurée pour l’étiquetage automatique, mais uniquement l’étiquetage recommandé, la sous-étiquette d’ordre le plus élevé est sélectionnée et recommandée.
+
+- Si un fichier est déjà étiqueté avec une sous-étiquette du même parent, aucune action n’est effectuée et la sous-étiquette existante reste. Ce comportement s’applique même si la sous-étiquette existante était une étiquette par défaut ou automatiquement appliquée.
+
+Pour plus d’informations sur la priorité des étiquettes, consultez [Priorité des étiquettes (ordre important).](sensitivity-labels.md#label-priority-order-matters)
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>Ne configurez pas une étiquette parent pour l’appliquer automatiquement ou la recommander.
 
@@ -130,15 +143,17 @@ Comportement par défaut indiquant si l’étiquetage automatique remplace une �
 - L’étiquetage automatique remplace une [étiquette de confidentialité de priorité inférieure](sensitivity-labels.md#label-priority-order-matters) qui a été appliquée automatiquement, mais pas une étiquette de priorité plus élevée.
     
     > [!TIP]
-    > Par exemple, l'étiquette de sensibilité en haut de la liste dans le portail de conformité Microsoft Purview s'appelle **Public** avec un numéro d'ordre (priorité) de 0, et l'étiquette de sensibilité en bas de la liste s'appelle **Hautement confidentiel** avec un numéro d'ordre (priorité) de 4. L'étiquette **Hautement confidentiel** peut remplacer l'étiquette **Public**, mais pas l'inverse.
+    > For example, the sensitivity label at the top of the list in the Microsoft Purview compliance portal is named **Public** with an order number (priority) of 0, and the sensitivity label at the bottom of the list is named **Highly Confidential** with an order number (priority of 4). The **Highly Confidential** label can override the **Public** label but not the other way around.
 
 Pour les stratégies d’étiquetage automatique des e-mails uniquement, vous pouvez sélectionner un paramètre pour toujours remplacer une étiquette de confidentialité existante, quelle que soit la façon dont elle a été appliquée.
 
 |Étiquette existante |Remplacer par le paramètre d’étiquette : étiquetage automatique pour les fichiers et les e-mails  |Remplacer par la stratégie : étiquetage automatique|
 |:-----|:-----|:-----|
 |Appliqué manuellement, n’importe quelle priorité|Word, Excel, PowerPoint : Non <br /><br> Outlook : Non  |SharePoint et OneDrive : Non <br /><br> Exchange : Non par défaut, mais configurable |
-|Application automatique ou étiquette par défaut de la stratégie, priorité inférieure |Word, Excel, PowerPoint : Oui <br /><br> Outlook : Oui | SharePoint et OneDrive : Oui <br /><br> Exchange : Oui |
+|Application automatique ou étiquette par défaut de la stratégie, priorité inférieure |Word, Excel, PowerPoint : Oui \* <br /><br> Outlook : Oui \* | SharePoint et OneDrive : Oui <br /><br> Exchange : Oui |
 |Application automatique ou étiquette par défaut de la stratégie, priorité supérieure |Word, Excel, PowerPoint : Non <br /><br> Outlook : Non |SharePoint et OneDrive : Non <br /><br> Exchange : Non par défaut, mais configurable |
+
+\* Il existe une [exception pour les sous-étiquettes qui partagent la même étiquette parente](#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)
 
 Le paramètre configurable pour les stratégies d’étiquetage automatique de l’e-mail se trouve sur la page **Paramètres supplémentaires pour le courrier électronique**. Cette page s’affiche une fois que vous avez sélectionné une étiquette de confidentialité pour une stratégie d’étiquetage automatique qui inclut l’emplacement Exchange.
 
@@ -156,7 +171,7 @@ Les paramètres d’étiquetage automatique des applications Office sont disponi
 
 ![Conditions de l’étiquetage automatique dans les applications Office.](../media/sensitivity-labels-conditions.png)
 
-Lorsqu’une étiquette de confidentialité est appliquée automatiquement, l’utilisateur voit une notification dans son application Office. Par exemple :
+When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
 ![Notification qu’un document a été étiqueté automatiquement](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
@@ -166,7 +181,7 @@ Lorsque vous sélectionnez l’option **Types d’informations sensibles** , vou
 
 ![Types d’informations sensibles pour l’étiquetage automatique dans les applications Office.](../media/sensitivity-labels-sensitive-info-types.png)
 
-De même, lorsque vous configurez les stratégies DLP, vous pouvez affiner votre condition en modifiant le nombre d’instances et la précision de correspondance. Par exemple :
+Similarly to when you configure DLP policies, you can then refine your condition by changing the instance count and match accuracy. For example:
 
 ![Options de précision de correspondance et de nombre d’instances.](../media/sit-confidence-level.png)
 
@@ -175,10 +190,10 @@ Vous pouvez en savoir plus sur ces options de configuration dans la documentatio
 > [!IMPORTANT]
 > Les types d’informations sensibles ont deux manières différentes de définir le nombre maximal de paramètres de d’instances uniques. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
-De même, comme pour la configuration de la stratégie DLP, vous pouvez choisir si une condition doit détecter tous les types d’informations sensibles, ou un seul d’entre eux. Pour rendre vos conditions plus flexibles ou complexes, vous pouvez ajouter[ groups et utiliser des opérateurs](data-loss-prevention-policies.md).
+Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](data-loss-prevention-policies.md).
 
 > [!NOTE]
-> L’étiquetage automatique basé sur des types d’informations sensibles personnalisés s’applique uniquement au contenu nouvellement créé ou modifié dans OneDrive et SharePoint ; pas au contenu existant. Cette limitation s’applique également aux stratégies d’étiquetage automatique.
+> Auto-labeling based on custom sensitive information types applies only to newly created or modified content in OneDrive and SharePoint; not to existing content. This limitation also applies to auto-labeling polices.
 
 #### <a name="custom-sensitive-information-types-with-exact-data-match"></a>Types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte
 
@@ -188,7 +203,7 @@ Si vous configurez une étiquette de confidentialité avec uniquement EDM comme 
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configuration des classifieurs pouvant être formés pour une étiquette
 
-Si vous utilisez cette option avec Microsoft 365 Apps pour Windows version 2106 ou inférieure, ou Microsoft 365 Apps pour Mac version 16.50 ou inférieure, assurez-vous que vous avez publié dans votre locataire au moins une autre étiquette de sensibilité configurée pour l'étiquetage automatique et l'[option des types d'informations sensibles](#configuring-sensitive-info-types-for-a-label). Cette exigence n’est pas nécessaire lorsque vous utilisez des versions ultérieures sur ces plateformes.
+If you use this option with Microsoft 365 Apps for Windows version 2106 or lower, or Microsoft 365 Apps for Mac version 16.50 or lower, make sure you've published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label). This requirement isn't necessary when you use later versions on these platforms.
 
 Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, sélectionnez un ou plusieurs classifieurs pouvant être formés ou personnalisés :
 
@@ -200,21 +215,21 @@ Pour plus d’informations sur ces classifieurs, voir [En savoir plus sur les cl
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Recommander que l’utilisateur applique une étiquette de critère de sensibilité
 
-Si vous le souhaitez, vous pouvez recommander à vos utilisateurs qu’ils appliquent l’étiquette. Cette option permet à vos utilisateurs d’accepter la classification et toute protection associée ou faire disparaitre la valeur recommandée si l’étiquette n’est pas adaptée à leur contenu.
+If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
 ![Option pour recommander une étiquette de confidentialité à des utilisateurs.](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Voici un exemple d’une invite du client de l’étiquetage unifié d’Azure Information Protection lorsque vous configurez une condition pour appliquer une étiquette comme action recommandée avec un conseil de stratégie personnalisé. Vous pouvez choisir le texte qui s’affiche dans le conseil de stratégie.
+Here's an example of a prompt from the Azure Information Protection unified labeling client when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
 ![Invite à appliquer une étiquette recommandée.](../media/Sensitivity-label-prompt-for-required-label.png)
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>Quand les étiquettes automatiques ou recommandées sont appliquées
 
-L’implémentation de l’étiquetage automatique et recommandé dans les applications Office varie selon que vous utilisez l’étiquetage intégré à Office ou le client de l’étiquetage unifié d’Azure Information Protection. Toutefois, dans les deux cas :
+The implementation of automatic and recommended labeling in Office apps depend on whether you're using labeling that's built into Office, or the Azure Information Protection unified labeling client. In both cases, however:
 
-- Vous ne pouvez pas utiliser l’étiquetage automatique pour les documents et les e-mails qui ont été précédemment étiquetés manuellement ou automatiquement avec un niveau de confidentialité supérieur. N’oubliez pas que vous ne pouvez appliquer qu’une seule étiquette de confidentialité à un document ou un e-mail (en plus d’une seule étiquette de rétention).
+- You can't use automatic labeling for documents and emails that were previously manually labeled, or previously automatically labeled with a higher sensitivity. Remember, you can only apply a single sensitivity label to a document or email (in addition to a single retention label).
 
-- Vous ne pouvez pas utiliser l’étiquetage recommandé pour les documents ou e-mails qui ont été précédemment étiquetés avec un niveau de confidentialité supérieur. Lorsque le contenu est déjà étiqueté avec un niveau de confidentialité supérieur, l’utilisateur ne voit pas l’invite avec la recommandation et le conseil de stratégie.
+- You can't use recommended labeling for documents or emails that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
 
 Spécifique à l’étiquetage intégré :
 
@@ -256,7 +271,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Conditions préalables pour les stratégies d’étiquetage automatique
 
 - Mode de simulation :
-  - L’audit de Microsoft 365 doit être activé. Si vous devez activer l’audit ou si vous ne savez pas si l’audit est déjà activé, consultez [Activez ou désactivez la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
+  - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
   - Pour afficher le contenu d’un fichier ou d’un e-mail dans la vue source, vous devez disposer du rôle **Visionneuse de contenu de classification des données**, qui est inclus dans le groupe de rôles **Visionneuse de contenu de l’Explorateur de contenu**  ou les groupes de rôles **Information Protection** et **Investigateurs Information Protection** (actuellement en préversion). Sans le rôle requis, vous ne voyez pas le volet d’aperçu lorsque vous sélectionnez un élément à partir de l’onglet **Éléments correspondants**. Les administrateurs généraux n’ont pas ce rôle par défaut.
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
@@ -267,7 +282,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
   - Les types d’informations de confidentialité personnalisées s’appliquent uniquement au contenu ajouté ou modifié dans SharePoint ou OneDrive une fois les types d’informations de confidentialité personnalisés créés.
   - Pour tester de nouveaux types d’informations sensibles personnalisés, créez-les avant de créer votre stratégie d’étiquetage automatique, puis créez de nouveaux documents avec des exemples de données pour pouvoir les tester.
 
-- Une ou plusieurs étiquettes de confidentialité [créées et publiées ](create-sensitivity-labels.md)(à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes : 
+- One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
   - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction.
   - Si les étiquettes que vous souhaitez utiliser pour l'étiquetage automatique sont configurées pour utiliser des marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
   - Si les étiquettes appliquent le [chiffrement](encryption-sensitivity-labels.md) :
@@ -311,7 +326,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     ![Onglet étiquetage automatique.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > Si vous ne voyez pas l’onglet **Étiquetage azure**, cette fonctionnalité n’est pas disponible dans votre région en raison d’une dépendance Azure principale. Pour plus d’informations, consultez [ Disponibilité des dépendances Azure par country](/troubleshoot/azure/general/dependency-availability-by-country).
+    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region because of a backend Azure dependency. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 3. Sélectionnez **+ créer une stratégie d’étiquetage automatique**. Cette opération démarre la Nouvelle configuration de stratégie :
 
@@ -333,11 +348,11 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     
     - Pour les comptes OneDrive, consultez [Obtenir une liste de toutes les URL OneDrive utilisateur de votre organisation](/onedrive/list-onedrive-urls) pour vous aider à spécifier des comptes OneDrive individuels à inclure ou exclure.
 
-7. Pour la page **Configurer des règles communes ou avancées** : conservez la valeur par défaut de **Règles communes** pour définir des règles qui identifient le contenu à étiqueter dans tous vos emplacements sélectionnés. Si vous avez besoin de règles différentes par emplacement, sélectionnez **Règles avancées**. Sélectionnez ensuite **Suivant**.
+7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
     Les règles utilisent des conditions qui incluent des [types d’informations sensibles](sensitive-information-type-learn-about.md), [des classifieurs pouvant être formés et des](classifier-learn-about.md) options de partage :
-    - Pour sélectionner un type d’informations sensibles ou un classifieur pouvant être formé en tant que condition, sous **Contenu contient**, sélectionnez **Ajouter**, puis choisissez **Types d’informations sensibles** ou **Classifieurs Pouvant être formés**.
-    - Pour sélectionner les options de partage comme condition, sous **Contenu partagé**, choisissez **uniquement avec des personnes au sein de mon organisation** ou **avec des personnes extérieures à mon organisation**.
+    - Pour sélectionner un type d’informations sensibles ou un classifieur pouvant être entraîné en tant que condition, sous **Contenu contient**, sélectionnez **Ajouter**, puis choisissez **Types d’informations sensibles** ou **Classifieurs trainables**.
+    - Pour sélectionner des options de partage comme condition, sous **Le contenu est partagé**, choisissez **uniquement avec des personnes au sein de mon organisation** ou **avec des personnes extérieures à mon organisation**.
 
     Si votre seul emplacement est **Exchange**, et vous avez sélectionné **Règles avancées**, vous pouvez sélectionner d'autres conditions :
     - L’adresse IP de l’expéditeur est
@@ -370,7 +385,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     
     - **Remplacez automatiquement les étiquettes existantes ayant la même priorité ou une priorité inférieure**: applicable aux e-mails entrants et sortants, lorsque vous sélectionnez ce paramètre, une étiquette de confidentialité correspondante est toujours appliquée. Si vous ne sélectionnez pas ce paramètre, une étiquette de confidentialité correspondante ne sera pas appliquée aux e-mails qui ont une étiquette de confidentialité existante avec une [priorité plus élevée](sensitivity-labels.md#label-priority-order-matters) ou qui ont été étiquetés manuellement.
     
-    - **Application du chiffrement aux e-mails reçus en dehors de votre organisation** : lorsque vous sélectionnez cette option, vous devez attribuer un [propriétaire de Gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) pour vous assurer qu’une personne autorisée de votre organisation dispose [des droits utilisateur](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) de contrôle total pour les e-mails envoyés en dehors de votre organisation et vos étiquettes de stratégie avec chiffrement. Ce rôle peut être nécessaire pour supprimer ultérieurement le chiffrement ou attribuer différents droits d’utilisation pour les utilisateurs de votre organisation.
+    - **Apply encryption to email received from outside your organization**: When you select this option, you must assign a [Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) to ensure that an authorized person in your organization has Full Control [usage rights](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) for emails sent from your outside your organization and your policy labels with encryption. This role might be needed to later remove the encryption, or assign different usage rights for users in your organization.
         
         Pour **Affecter un propriétaire Rights Management**, spécifiez un utilisateur unique par une adresse e-mail appartenant à votre organisation. Ne spécifiez pas de contact de messagerie, de boîte aux lettres partagée ou de type de groupe, car ceux-ci ne sont pas pris en charge pour ce rôle.
 
