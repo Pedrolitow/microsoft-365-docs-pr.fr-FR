@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: d89e0c65c22995d10ddadf9e2e8789a2cd2152f9
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: 70c71510ba73425d17276d3188ed8a7fb8a5f8ea
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777967"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785966"
 ---
 # <a name="use-the-microsoft-365-admin-center-to-manage-your-shifts-connection-to-blue-yonder-workforce-management"></a>Utilisez le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts à Blue Yonder Workforce Management
 

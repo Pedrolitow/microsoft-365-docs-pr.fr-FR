@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 ms.reviewer: aaglick
 manager: pamgreen
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 3435c0d3ac9b23a288dbb71e7c5496e1fe59f807
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 36750474bfea82ea4d7c4dc90486296a21e61f97
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68079620"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785438"
 ---
 # <a name="understand-frontline-worker-user-types-and-licensing"></a>Comprendre les types d’utilisateurs et les licences des employés en ligne
 

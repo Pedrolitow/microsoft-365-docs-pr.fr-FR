@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91f037fa35396e87bba4b007c1c09fb628a06165
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: c4ae1dfd9d38650a7f34287685a3f00b34c1234e
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777703"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786758"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -146,7 +146,7 @@ Si ces deux conditions sont remplies, mais que vous devez désactiver les étiqu
 
 Si vous devez rétablir cette configuration ultérieurement, remplacez la valeur par **1**. Vous devrez peut-être également remplacer cette valeur par 1 si le bouton **Sensibilité** n’est pas affiché sur le ruban comme prévu. Par exemple, un administrateur précédent a désactivé ce paramètre d’étiquetage.
  
-Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](/DeployOffice/overview-office-cloud-policy-service). Le paramètre prend effet au redémarrage de ces applications Office. 
+Déployez ce paramètre à l’aide de stratégie de groupe ou à l’aide du [service De stratégie cloud pour Microsoft 365](/DeployOffice/overview-office-cloud-policy-service). Le paramètre prend effet au redémarrage de ces applications Office. 
 
 Étant donné que ce paramètre est spécifique aux applications Windows Office, il n’a aucun impact sur les autres applications sur Windows qui prennent en charge les étiquettes de confidentialité (telles que Power BI) ou d’autres plateformes (telles que macOS, les appareils mobiles et Office pour le web). Si vous ne souhaitez pas que certains ou tous les utilisateurs voient et utilisent des étiquettes de confidentialité sur toutes les applications, toutes les plateformes, n’affectent pas de stratégie d’étiquette de confidentialité à ces utilisateurs.
 

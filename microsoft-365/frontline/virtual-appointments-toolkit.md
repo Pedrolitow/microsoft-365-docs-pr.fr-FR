@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: end-user-help
 ms.service: microsoft-365-frontline
 search.appverid: ''
 searchScope:
@@ -24,12 +24,12 @@ description: Ressources personnalisables et infographies que vous pouvez ajouter
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 80cf404830e2f66a4457ddbfcf4f1fab1c610eb9
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 48a584769980bea2257bf5f2f629a0bd9f77428c
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68672928"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786692"
 ---
 # <a name="help-your-clients-and-customers-use-virtual-appointments-scheduled-with-bookings"></a>Aider vos clients et clients à utiliser des rendez-vous virtuels planifiés avec Bookings
 

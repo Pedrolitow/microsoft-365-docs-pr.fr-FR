@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour Office 365 applications, comprenez la migration du complément Azure Information Protection (AIP) vers l’étiquetage intégré pour protéger les données sensibles.
-ms.openlocfilehash: eb12c7cff4b3ca27f49503a3528a775af794901a
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 0567f90ac308458653ceb1eaec8404a9e8b25a81
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684944"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786494"
 ---
 # <a name="migrate-the-azure-information-protection-aip-add-in-to-built-in-labeling-for-office-apps"></a>Migrer le complément Azure Information Protection (AIP) vers l’étiquetage intégré pour les applications Office
 
@@ -127,7 +127,7 @@ Pour vos applications Windows Office qui prennent en charge l'étiquetage intég
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](/DeployOffice/overview-office-cloud-policy-service).
+Déployez ce paramètre à l’aide de stratégie de groupe ou à l’aide du [service De stratégie cloud pour Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the AIP add-in might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
@@ -149,7 +149,7 @@ Dans les [versions plus récentes d’Office](#how-to-disable-the-aip-add-in-to-
 
 Ce nouveau paramètre est toujours en cours de déploiement. Si vous ne le voyez pas encore, patientez quelques jours de plus et réessayez.
 
-Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](/DeployOffice/overview-office-cloud-policy-service).
+Déployez ce paramètre à l’aide de stratégie de groupe ou à l’aide du [service De stratégie cloud pour Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 Paramètres Office supplémentaires que vous devrez peut-être configurer :
 

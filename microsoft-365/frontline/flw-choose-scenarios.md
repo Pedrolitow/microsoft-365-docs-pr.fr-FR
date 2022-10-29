@@ -6,7 +6,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
@@ -19,12 +19,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: cfa44bdccad320ba0b9e0bb3593d7b8cf3bfe9c1
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4f33fc714b4b76dd1c815f71131b46aae4a2b4ac
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068732"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785108"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Choisissez vos scénarios pour les Microsoft 365 pour les travailleurs de première ligne
 
@@ -32,13 +32,13 @@ Microsoft 365 pour les employés de première ligne peuvent vous aider à connec
 
 :::image type="content" source="media/flw-maturity-model.png" alt-text="Modèle de maturité numérique pour le front-end, de l’activation à la transformation.":::
 
-## <a name="download-a-poster-with-scenario-overviews"></a>Télécharger une affiche avec des présentations de scénarios
+## <a name="download-a-poster-with-scenario-overviews"></a>Télécharger une affiche avec des vues d’ensemble des scénarios
 
 Utilisez ces vues d’ensemble de scénarios pour commencer à envisager ce que votre organisation peut faire avec Microsoft 365 pour les employés de première ligne, puis suivez les liens pour savoir comment implémenter ces scénarios.
 
 | Élément | Description |
 |:-----|:-----|
-|[![Microsoft 365 pour les scénarios de travail de première ligne.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez mettre en œuvre pour votre personnel de première ligne afin d’accroître les communications, d’améliorer le bien-être et l’engagement, de former et d’intégrer vos travailleurs, et de gérer votre main-d’œuvre et vos opérations.|
+|[![Microsoft 365 pour les scénarios de travail de première ligne.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne afin d’augmenter les communications, d’améliorer le bien-être et l’engagement, de former et d’intégrer vos employés, et de gérer votre personnel et vos opérations.|
 
 ## <a name="communications"></a>Communications
 
@@ -56,7 +56,7 @@ Regardez la vidéo suivante pour voir un exemple de la façon dont vous pouvez a
 | [Communication et collaboration en équipe](flw-team-collaboration.md) | Aidez votre personnel de première ligne à communiquer au sein de son magasin, de son shift ou de son équipe avec Microsoft Teams. Les connexions Viva vous aident à créer un tableau de bord qui place les informations dont ils ont besoin sur leurs appareils, afin qu’ils puissent contacter chaque fois qu’ils en ont besoin. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Connections<br>Power Platform et Power Apps | Approbations, conversation, fichiers, listes, réunion, compliment, shifts, tâches, talkie-walkie |
 | [Communications d’entreprise](flw-corp-comms.md) | L’engagement des employés contribue beaucoup à la satisfaction de l’entreprise, à la fidélité et à la productivité au niveau de toute organisation. Découvrez comment tenir tout le monde informé et engagé à l’aide de SharePoint, Teams, Stream et Yammer. Rassemblez tout cela avec les connexions Viva. | Microsoft Teams<br>Outlook<br>SharePoint<br>Yammer<br>Viva Connections | Participez à des réunions |
 
-Consultez également ces ressources pour découvrir comment Yammer peut travailler pour vos employés de première ligne : [Yammer Ten Communities](https://aka.ms/Yam10Communities) et [Yammer Lookbook](https://aka.ms/Yammer/Lookbook).
+Consultez également ces ressources pour découvrir comment Yammer peut fonctionner pour vos employés de première ligne : [Yammer Ten Communities](https://aka.ms/Yam10Communities) et [Yammer Lookbook](https://aka.ms/Yammer/Lookbook).
 
 ## <a name="wellbeing--engagement"></a>Bien-être et engagement
 
@@ -111,7 +111,7 @@ Regardez la vidéo suivante pour voir un exemple de la façon dont vous pouvez s
 
 Utilisez Microsoft Bookings et Microsoft Teams pour planifier et héberger des rendez-vous virtuels avec des clients et des clients. Vous pouvez intégrer Forms à votre expérience de rendez-vous virtuel pour obtenir les informations appropriées sur vos clients, ou dans le cadre de votre expérience de support client pour découvrir ce dont vos clients ont besoin.
 
-Regardez la vidéo suivante pour voir un exemple de rendez-vous virtuels dans les organisations de soins de santé : 
+Regardez la vidéo suivante pour voir un exemple de rendez-vous virtuel dans les organisations de santé : 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
@@ -120,13 +120,13 @@ Informations complémentaires : [Rendez-vous virtuels avec Microsoft Teams et l�
 
 ## <a name="help-your-team-clients-and-customers"></a>Aider votre équipe, vos clients et vos clients
 
-Trouvez des ressources à partager avec votre équipe pour les aider à se familiariser avec l’utilisation des applications et fonctionnalités Teams. Obtenez des infographies et du contenu web personnalisables pour aider vos clients et clients à utiliser des rendez-vous virtuels avec votre organisation.
+Trouvez des ressources à partager avec votre équipe pour l’aider à se familiariser avec les applications et fonctionnalités Teams. Obtenez des infographies et du contenu web personnalisables pour aider vos clients et clients à utiliser des rendez-vous virtuels avec votre organisation.
 
 | Scénario | Description |
 | --- | --- |
-|[Aidez vos clients et clients à utiliser des rendez-vous virtuels](virtual-appointments-toolkit.md) |Infographies et FAQ personnalisables que vous pouvez ajouter à votre site web pour permettre à vos clients d’utiliser facilement des rendez-vous virtuels avec votre organisation. |
+|[Aidez vos clients et clients à utiliser des rendez-vous virtuels](virtual-appointments-toolkit.md) |Infographies personnalisables et FAQ que vous pouvez ajouter à votre site web pour permettre à vos clients d’utiliser facilement des rendez-vous virtuels avec votre organisation. |
 |[Aider vos employés de première ligne à suivre le temps et la présence](shifts-toolkit.md) |Vidéos pour aider vos responsables et employés de première ligne à découvrir comment utiliser Shifts dans Microsoft Teams. |
-|[Aider vos employés de première ligne à utiliser les applications et fonctionnalités de collaboration](collab-features-apps-toolkit.md) |Vidéos pour aider votre équipe de première ligne à utiliser les applications et fonctionnalités Microsoft Teams. |
+|[Aider vos employés de première ligne à utiliser des applications et des fonctionnalités de collaboration](collab-features-apps-toolkit.md) |Vidéos pour aider votre équipe de première ligne à utiliser les applications et fonctionnalités Microsoft Teams. |
 
 ## <a name="more-scenarios-and-solutions-with-the-digital-ecosystem"></a>Autres scénarios et solutions avec l’écosystème numérique
 

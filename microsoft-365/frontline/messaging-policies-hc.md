@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -25,12 +25,12 @@ appliesto:
 ms.reviewer: ''
 description: Découvrez comment personnaliser une stratégie de messagerie sécurisée pour Microsoft Teams qui peut inclure des accusés de lecture et des notifications de priorité.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 59e6690e7ff9eb36e531d4a1254503ba98bb07e6
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b1cf8983dbe880b8b874da233df4ca05b406ba63
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057258"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786296"
 ---
 # <a name="secure-messaging-for-healthcare-organizations"></a>Messagerie sécurisée pour les organismes de santé
 

@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 709ed072ea7539c2c4f91aff6bc584d28e1c11bd
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: ef783d210b3ec2c7b202df724228ee47d92860da
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057346"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785460"
 ---
 # <a name="learn-where-to-start-with-a-frontline-deployment"></a>Découvrez où commencer avec un déploiement en ligne
 

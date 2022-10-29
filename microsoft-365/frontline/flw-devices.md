@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: mabolan
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: bac87e202ebf656f8da6986738e42f847b8e098a
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 3e80da42f723bb00da15a054b930a76831f8413c
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563249"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785878"
 ---
 # <a name="manage-mobile-devices-for-frontline-workers"></a>Gérer les appareils mobiles pour les employés de première ligne
 

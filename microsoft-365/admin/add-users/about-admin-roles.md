@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Découvrez les rôles d’administrateur, tels que le rôle d’administrateur général ou le rôle d’administrateur de service. Les rôles correspondent à des fonctions métier spécifiques et accordent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 0d3dcd975b6cd40ac9817bd5afce5597a6402d79
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 5921762a927e4fd6ed0364da1366f947fb923e47
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68722415"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785590"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Les rôles d'administration dans le Centre d’administration Microsoft 365
 
@@ -94,7 +94,7 @@ Vous devrez probablement attribuer les rôles suivants au sein de votre organisa
 |Administrateur de licences    |   Affectez le rôle d’administrateur de licences aux utilisateurs qui doivent attribuer et supprimer des licences d’utilisateurs et modifier leur localisation d’utilisation. <br/><br/> Les administrateurs de licences peuvent également : <br> – Retraiter les affectations de licences pour les licences basées sur des groupes <br> – Affecter des licences produit aux groupes pour les licences basées sur des groupes  |
 |Lecteur de confidentialité du Centre de messages    |   Attribuez le rôle de lecteur de confidentialité du Centre de messages aux utilisateurs qui doivent lire les messages et mises à jour de confidentialité et de sécurité dans le Centre de messages Microsoft 365. Les lecteurs de confidentialité du Centre de messages peuvent recevoir des notifications par e-mail relatives à la confidentialité des données, en fonction de leurs préférences, et ils peuvent se désabonner à l’aide des préférences du Centre de messages. Seuls les administrateurs généraux et les lecteurs de confidentialité du Centre de messages peuvent lire les messages de confidentialité des données. Ce rôle n’a pas l’autorisation d’afficher, de créer ou de gérer les demandes de service. <br><br>Les lecteurs de confidentialité du Centre de messages peuvent également : <br> - Surveiller toutes les notifications dans le Centre de messages, y compris les messages de confidentialité des données <br> - Afficher les groupes, domaines et abonnements   |
 |Lecteur du Centre de messages |   Attribuez le rôle de Lecteur de Centre de messages aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Surveiller les notifications du Centre de Messages <br> – Recevoir les résumés hebdomadaires de courrier sur les mises à jour et des publications du Centre de messages <br> – Partager des billets du Centre de messages <br> – Avoir un accès en lecture seule aux services Azure AD, tels que des utilisateurs et des groupes|
-|Administrateur d'applications Office    |   Attribuez le rôle d’administrateur d'applications Office aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Utiliser le service de stratégie cloud Office pour créer et gérer des stratégies basées sur le cloud pour Office <br> – Créer et gérer des demandes de service <br> – Gérer le contenu des nouveautés que les utilisateurs peuvent afficher dans les applications Office   <br> – Surveiller l’état d’intégrité des services  |
+|Administrateur d'applications Office    |   Attribuez le rôle d’administrateur d'applications Office aux utilisateurs qui doivent effectuer les opérations suivantes : <br> - Utiliser le service De stratégie cloud pour Microsoft 365 pour créer et gérer des stratégies cloud pour Office <br> – Créer et gérer des demandes de service <br> – Gérer le contenu des nouveautés que les utilisateurs peuvent afficher dans les applications Office   <br> – Surveiller l’état d’intégrité des services  |
 |Administrateur de mots de passe  |   Affectez le rôle d'administrateur de mots de passe à un utilisateur qui doit réinitialiser des mots de passe pour les non administrateurs et les administrateurs de mots de passe.   |
 |Administrateur Power Platform |   Attribuez le rôle d’administrateur de Power Platform aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Gérer toutes les fonctionnalités d’administrateur des Power Apps Power Automate, et la protection contre la perte de données de Microsoft Purview <br> – Créer et gérer des demandes de service <br> – Surveiller l’état d’intégrité des services  |
 |Lecteur de rapports |   Attribuez le rôle de Lecteur de rapports aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Afficher les données d’utilisation et les rapports d’activité dans le Centre d’administration Microsoft 365 <br> – Avoir accès au pack de contenu d’adoption de Power BI <br> – Avoir accès au rapports de connexion et d’activité dans Azure AD <br> – Afficher les données renvoyées par l’API de compte-rendu Microsoft Graph|

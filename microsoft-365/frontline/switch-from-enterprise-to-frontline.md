@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 59c1e275925a398f30db933f479617bfe5122e6c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4b8580759cef1319a53eb425d20a2b0fb87d7016
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082216"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786670"
 ---
 # <a name="changing-from-a-microsoft-365-e-plan-to-a-microsoft-365-f-plan"></a>Passage d’une offre Microsoft 365 E à une offre Microsoft 365 F
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les stratégies de rétention Microsoft 365 qui s’appliquent à Microsoft Teams afin de pouvoir gérer la rétention automatique ou la suppression des messages Teams pour votre organisation.
-ms.openlocfilehash: 417c98f4e9510d1fc02e7b485e41d50a621690fa
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 70aa52c8d6b9fd63a4f9f44a7a36152dad414ec7
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68729982"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786582"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -51,7 +51,7 @@ Pour les autres charges de travail, consultez:
 > 
 > Les stratégies de rétention prennent également en charge les messages publiés avec la fonctionnalité [de conversation avec vous-même](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) .
 
-Les messages de conversations Teams, les messages de canal et les messages de canal privé peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte des messages, les éléments suivants peuvent être conservés pour des raisons de conformité : [clips vidéo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), images incorporées, tableaux, liens hypertexte, liens vers d’autres messages et fichiers Teams et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation et les messages de canal privé incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
+Les messages de conversations Teams, les messages de canal et les messages de canal privé peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte des messages, les éléments suivants peuvent être conservés pour des raisons de conformité : [clips vidéo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), images incorporées, tableaux, liens hypertexte, liens vers d’autres messages et fichiers Teams et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les enregistrements de données d’appel nouvellement créés, qui sont des messages générés par le système, sont également inclus. Les messages de conversation et les messages de canal privé incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
 
 L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams, les miniatures, les images d’annonce, et les réactions des autres utilisateurs sous la forme d’émoticônes.
 

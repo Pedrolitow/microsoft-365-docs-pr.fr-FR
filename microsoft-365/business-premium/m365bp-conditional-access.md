@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/26/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées à l’identité en fournissant des paramètres de sécurité préconfigurés pour Microsoft 365 Business Premium.
-ms.openlocfilehash: ed201a05714f5d32d5b23e6300e53a05f9fb741b
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 2c989983a8282be161856b9da5abab1d32ca1349
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68093779"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785526"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Authentification multifacteur et sécurité par défaut.
 
@@ -46,7 +46,7 @@ Cet article fournit des informations sur :
 
 Les paramètres de sécurité par défaut ont été conçus pour protéger les comptes d’utilisateur de votre entreprise dès le départ. Lorsqu’ils sont activés, les paramètres de sécurité par défaut fournissent des paramètres sécurisés par défaut qui vous aident à sécuriser votre entreprise en :
 
-- Demander à tous les utilisateurs et administrateurs de s’inscrire à l’authentification multifacteur à l’aide de l’application Microsoft Authenticator.
+- Demander à tous les utilisateurs et administrateurs de s’inscrire à l’authentification multifacteur à l’aide de [l’application Microsoft Authenticator](/azure/active-directory/authentication/concept-authentication-authenticator-app) ou de toute application tierce utilisant [OATH TOTP](/azure/active-directory/authentication/concept-authentication-oath-tokens#oath-software-tokens).
 - Difficultés pour les utilisateurs avec l’authentification multifacteur, principalement lorsqu’ils apparaissent sur un nouvel appareil ou une nouvelle application, mais plus souvent pour les rôles et les tâches critiques.
 - Désactivation de l’authentification à partir de clients d’authentification hérités qui ne peuvent pas effectuer la MFA.
 - Protection des administrateurs en exigeant une authentification supplémentaire chaque fois qu’ils se connectent.

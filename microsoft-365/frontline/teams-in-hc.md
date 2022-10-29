@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -29,12 +29,12 @@ description: Découvrez les fonctionnalités de télémédecine dans Microsoft 3
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c6a3b4c25e670b533265ede2bf4804759662848
-ms.sourcegitcommit: 597aad78b6952b4a5642a84dddf3fe3c8cc8eeff
+ms.openlocfilehash: adb3e5ec1b032093ec1a977e2e7d4b4e71b7abcf
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "68001813"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785064"
 ---
 # <a name="get-started-with-microsoft-365-for-healthcare-organizations"></a>Démarrez avec Microsoft 365 pour les organismes de santé
 
@@ -81,13 +81,13 @@ Tirez parti de ces fonctionnalités qui aident Microsoft Teams à travailler pou
 | [Messagerie sécurisée](#secure-messaging) | Attirez plus rapidement l'attention sur les messages urgents et ayez la certitude que le message a été reçu et lu. | Les utilisateurs doivent avoir une licence appropriée*.  |
 | [Modèles Teams](#teams-templates-for-healthcare-organizations) | Créez des équipes qui comprennent un modèle prédéfini de paramètres, de canaux et d'applications préinstallées pour la communication et la collaboration au sein d'un service, d'une unité ou d'un département, ou entre plusieurs services, unités et départements d'un hôpital. | Les utilisateurs doivent avoir une licence appropriée*.  |
 
-### <a name="download-a-poster-with-scenario-overviews"></a>Télécharger une affiche avec des présentations de scénarios
+### <a name="download-a-poster-with-scenario-overviews"></a>Télécharger une affiche avec des vues d’ensemble des scénarios
 
-Utilisez l’affiche suivante pour commencer à envisager ce que votre organisation peut faire avec Microsoft 365 for frontline workers.
+Utilisez l’affiche suivante pour commencer à imaginer ce que votre organisation peut faire avec Microsoft 365 for frontline workers.
 
 | Élément | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline workers : scénarios de soins de santé.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne dans un cadre de soins de santé.|
+|[![Microsoft 365 for frontline workers : Scénarios de soins de santé.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Mise à jour de septembre 2022   |Cette affiche fournit une vue d’ensemble des scénarios que vous pouvez implémenter pour votre personnel de première ligne dans un environnement de santé.|
 
 ## <a name="virtual-appointments-and-electronic-healthcare-record-ehr-integration"></a>Rendez-vous virtuels et intégration des dossiers médicaux électroniques
 
@@ -145,11 +145,11 @@ De plus, votre équipe peut utiliser des applications dans Teams pour :
 - Simplifier les approbations avec l’application Approbations
 - Créer, gérer et partager des planifications avec l’application Plannings
 
-### <a name="coordinate-over-email-with-exchange-online"></a>Coordonner par e-mail avec Exchange Online
+### <a name="coordinate-over-email-with-exchange-online"></a>Coordonner les e-mails avec Exchange Online
 
-Email est un outil de communication de base pour la plupart des lieux de travail. [Configurez le courrier électronique avec Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) pour aider vos responsables et travailleurs de première ligne à coordonner avec les membres de l’équipe de soins à d’autres endroits ou planifier des réunions pour discuter des plans de soins. Les utilisateurs doivent disposer d’une licence F3 pour disposer d’une boîte aux lettres électronique.
+Email est un outil de communication de base pour la plupart des lieux de travail. [Configurez le courrier électronique avec Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) pour aider vos gestionnaires et vos employés de première ligne à coordonner avec les membres de l’équipe de soins dans d’autres endroits ou planifier des réunions pour discuter des plans de soins. Les utilisateurs doivent disposer d’une licence F3 pour disposer d’une boîte aux lettres.
 
-Vous pouvez également configurer des boîtes aux lettres partagées pour autoriser les messages entrants des clients (par exemple, pour les demandes de service à la clientèle ou de planification) et avoir un groupe de travailleurs qui surveillent et envoient des e-mails à partir d’un alias de messagerie public comme info@contoso.com. Pour plus d’informations sur les boîtes aux lettres partagées, consultez [À propos des boîtes aux lettres partagées](../admin/email/about-shared-mailboxes.md) et [Ouvrir et utiliser une boîte aux lettres partagée dans Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
+Vous pouvez également configurer des boîtes aux lettres partagées pour autoriser les messages entrants des clients (par exemple, pour les demandes de service clientèle ou de planification) et avoir un groupe de workers qui surveillent et envoient des e-mails à partir d’un alias de messagerie public comme info@contoso.com. Pour plus d’informations sur les boîtes aux lettres partagées, voir [À propos des boîtes aux lettres partagées](../admin/email/about-shared-mailboxes.md) et [Ouvrir et utiliser une boîte aux lettres partagée dans Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
 ### <a name="share-lists-and-track-information-with-the-lists-app"></a>Partager des listes et suivre des informations avec l’application Listes
 

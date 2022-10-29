@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: aaglick
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: debc8a975d132c83183fce4a4f0d4f6905dcbb40
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 26f8039eb5160ea7555a53abe73c14e2cc3dfa1c
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565959"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786318"
 ---
 # <a name="tailor-teams-apps-for-your-frontline-workers"></a>Personnaliser les applications Teams pour vos employés de première ligne
 
@@ -103,13 +103,13 @@ La fonctionnalité est désactivée.   | L’employé de première ligne obtient
 
 ### <a name="coming-soon"></a>Bientôt disponible
 
- Viva Connections fera bientôt partie de l’expérience des applications personnalisées de première ligne. Les utilisateurs de première ligne qui voient l’expérience d’application personnalisée auront Viva Connections épinglés en première position sur les appareils mobiles et de bureau.
+ Viva Connections fera bientôt partie de l’expérience des applications personnalisées de première ligne. Les utilisateurs de première ligne qui voient l’expérience d’application personnalisée auront Viva Connections épinglées en première position sur les appareils mobiles et les ordinateurs de bureau.
 
-Cette expérience inclut un tableau de bord par défaut avec des cartes de première ligne pertinentes telles que Tâches, Shifts, Approbations et Actualités qui peuvent être personnalisées pour répondre aux besoins de votre organisation. Si votre organisation a déjà configuré un Viva Connections site d’accueil, elle est prioritaire sur l’expérience par défaut. Pour en savoir plus, consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=99706).
+Cette expérience inclut un tableau de bord par défaut avec des cartes de première ligne pertinentes, telles que Tâches, Shifts, Approbations et Top News, qui peuvent être personnalisées pour répondre aux besoins de votre organisation. Si votre organisation a déjà configuré un site d’accueil Viva Connections, il est prioritaire sur l’expérience par défaut. Pour en savoir plus, consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=99706).
 
 **Teams Mobile**
 
-:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Capture d’écran montrant Viva Connections dans l’expérience d’application de première ligne personnalisée sur teams mobile." lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
+:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Capture d’écran montrant Viva Connections dans l’expérience d’application de première ligne personnalisée sur les appareils mobiles Teams." lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
 
 **Bureau Teams**
 

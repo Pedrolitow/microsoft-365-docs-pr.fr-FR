@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 904c45ac80db210d1701c61e008f3b7993de43d6
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: a3a69b6144b51f75a95f3b68ce0325d36075a7b5
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68065989"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786384"
 ---
 # <a name="managers---get-your-team-started-with-microsoft-365-for-frontline-workers"></a>Responsables – Démarrer avec votre équipe dans Microsoft 365 for frontline workers
 

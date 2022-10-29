@@ -1,10 +1,10 @@
 ---
-title: Déployer Teams à grande échelle pour les travailleurs de première ligne
+title: Déployer Teams à grande échelle pour les employés de première ligne
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: rahuldey
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,22 +17,22 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: b20933e98870ffaca7dee5c46922cec49dbaed13
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 9c28df7d017c09f015aa650cb4592976bf5a3f4f
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68535947"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785856"
 ---
-# <a name="deploy-teams-at-scale-for-frontline-workers"></a>Déployer Teams à grande échelle pour les travailleurs de première ligne
+# <a name="deploy-teams-at-scale-for-frontline-workers"></a>Déployer Teams à grande échelle pour les employés de première ligne
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Votre organisation utilise-t-elle un grand nombre d’équipes pour favoriser la communication et la collaboration entre votre personnel de première ligne ? Cet article vous est destiné si vous devez créer et gérer des équipes à grande échelle.
+Votre organisation utilise-t-elle un grand nombre d’équipes pour favoriser la communication et la collaboration entre votre personnel de première ligne ? Cet article est destiné à vous si vous avez besoin de créer et de gérer des équipes à grande échelle.
 
-Vous pouvez utiliser PowerShell pour déployer jusqu’à 500 équipes et ajouter jusqu’à 25 utilisateurs par équipe à la fois. Vous pouvez également ajouter et supprimer des utilisateurs d’équipes existantes à grande échelle. Utilisez cette solution pour répondre aux besoins d’échelle de votre organisation et réduire considérablement le temps de déploiement.
+Vous pouvez utiliser PowerShell pour déployer jusqu’à 500 équipes et ajouter jusqu’à 25 utilisateurs par équipe à la fois. Vous pouvez également ajouter et supprimer des utilisateurs d’équipes existantes à grande échelle. Utilisez cette solution pour répondre aux besoins de mise à l’échelle de votre organisation et réduire considérablement le temps de déploiement.
 
-Le déploiement de Teams à grande échelle vous permet d’effectuer les opérations suivantes :
+Le déploiement de Teams à grande échelle vous permet d’effectuer les actions suivantes :
 
 - Créez des équipes en utilisant des modèles préétablis ou vos propres modèles personnalisés.
 - Ajoutez des utilisateurs aux équipes en tant que propriétaires ou membres.
@@ -109,7 +109,7 @@ Utilisez les exemples suivants pour vous aider à créer vos fichiers CSV. Ici, 
 
 ### <a name="step-2-set-up-your-environment"></a>Étape 2 : Configurer votre environnement
 
-Suivez ces étapes pour installer et vous connecter à la dernière version du module Teams PowerShell.
+Suivez ces étapes pour installer et vous connecter à la dernière version du module PowerShell Teams.
 
 1. Installez PowerShell version 7 ou ultérieure. Pour obtenir des conseils pas à pas, consultez [l’installation de PowerShell sur Windows](/powershell/scripting/install/installing-powershell-on-windows).
 1. Exécutez PowerShell en mode Administrateur.
@@ -120,7 +120,7 @@ Suivez ces étapes pour installer et vous connecter à la dernière version du m
     ```
 
     Si vous recevez un message d’erreur, vous êtes déjà défini. Passez à l’étape suivante.
-1. Téléchargez et installez la [dernière version du module Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams). Vous devez exécuter la version 4.7.0 (préversion) ou une version ultérieure.  
+1. Téléchargez et installez la [dernière version du module PowerShell Teams](https://www.powershellgallery.com/packages/MicrosoftTeams). Vous devez exécuter la version 4.7.0 (préversion) ou une version ultérieure.  
 
 1. Exécutez ce qui suit pour vous connecter à Teams.
 

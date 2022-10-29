@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: aaku
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -26,12 +26,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 57676d0f1f037c1c780d0a6f7f0611dc79ab5a7e
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: eb24f217a3da0a3f18b4ffd799be00c72ba74693
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564979"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786032"
 ---
 # <a name="schedule-owner-for-shift-management"></a>Planifier le propriétaire pour la gestion des shifts
 

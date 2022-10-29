@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: fe5610387744c9a9a0dcfa9c87e82741b0847a8d
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 1229b9b71d926cf03441659e2c0ee538afc107fc
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057324"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68784976"
 ---
 # <a name="set-up-microsoft-365-for-frontline-workers"></a>Configurer Microsoft 365 pour les travailleurs de première ligne
 
@@ -32,7 +32,7 @@ Pour configurer Microsoft 365 pour les employés de première ligne, suivez ce p
 1. **[Identifiez vos scénarios](#step-1-identify-your-scenarios)** : quels scénarios souhaitez-vous implémenter pour vos employés de première ligne ? Une fois que vous avez déterminé les scénarios souhaités, utilisez le tableau ci-dessous pour identifier les applications et services requis pour chaque scénario que vous souhaitez implémenter.
 1. **[Configurer votre environnement et la base de Microsoft 365](#step-2-set-up-your-environment-and-core-microsoft-365)** : suivez les guides d’installation dans le Centre d'administration Microsoft 365 pour configurer Microsoft 365. Continuez à lire pour découvrir comment accéder à ces guides.
 1. **[Configurer Microsoft Teams](#step-3-set-up-microsoft-teams)** : utilisez l’Assistant Intégration ou le processus Déployer des équipes à grande échelle pour configurer le service et créer vos équipes.
-1. **[Configurez tous les autres services nécessaires à votre scénario](#step-4-set-up-other-services)** : suivez les instructions des sections ci-dessous pour configurer ces services.
+1. **[Configurer tous les autres services nécessaires à votre scénario](#step-4-set-up-other-services)** : suivez les instructions des sections ci-dessous pour configurer ces services.
 1. **[Configurer des applications](#step-5-configure-apps-for-your-scenario)** : une fois que tout est configuré et configuré dans le Centre d’administration, vous pouvez suivre les instructions de vos scénarios pour configurer davantage les applications dont vous avez besoin pour chaque scénario.
 1. **[Appareils](#step-6-set-up-devices)** : configurez des appareils partagés et personnels pour qu’ils fonctionnent avec Microsoft 365 et Microsoft Teams et pour permettre à vos employés de première ligne de communiquer plus en toute sécurité au sein de votre organisation.
 
@@ -66,7 +66,7 @@ Le Centre d’administration Microsoft 365 propose un ensemble de [guides d’in
 
 Pour un projet pilote, vous pouvez utiliser l’Assistant Intégration de worker de première ligne pour configurer une seule équipe, configurée pour vos employés de première ligne. Pour obtenir des conseils pas à pas, consultez [l’Assistant Intégration des employés de première ligne pour mettre votre personnel de première ligne opérationnel](flw-onboarding-wizard.md).
 
-Pour les déploiements complets, suivez les instructions de [Deploy Teams à grande échelle pour les employés de première ligne](deploy-teams-at-scale.md).
+Pour les déploiements complets, suivez les instructions fournies dans [Déployer Teams à grande échelle pour les employés de première ligne](deploy-teams-at-scale.md).
 
 ## <a name="step-4-set-up-other-services"></a>Étape 4 : Configurer d’autres services
 

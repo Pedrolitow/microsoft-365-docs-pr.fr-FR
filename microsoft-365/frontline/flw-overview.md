@@ -6,7 +6,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
@@ -19,12 +19,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 1ffcc6f8cd82614f86b0c2f4b7217b6ca4e38146
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4bab9f8c2b3e0eebbfa234c554b5aebce03ade40
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068652"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786736"
 ---
 # <a name="get-started-with-microsoft-365-for-frontline-workers"></a>Prise en main de Microsoft 365 for frontline workers
 
@@ -101,7 +101,7 @@ Protégez votre entreprise avec les meilleures fonctionnalités de sécurité et
 |Fonctionnalité |Disponibilité de la licence |
 |-----------|---------------------|
 |[Assistant Intégration du personnel de première ligne](flw-onboarding-wizard.md) |Entreprise, F1, F3 |
-|[Déployer Teams à grande échelle pour les travailleurs de première ligne](deploy-teams-at-scale.md) |Entreprise, F1, F3 |
+|[Déployer Teams à grande échelle pour les employés de première ligne](deploy-teams-at-scale.md) |Entreprise, F1, F3 |
 |[Packages de stratégie Teams pour le personnel de première ligne](/microsoftteams/policy-packages-flw) |Entreprise, F1, F3 |
 
 ### <a name="secure-endpoints-and-apps-across-device-types-and-operating-systems"></a>Sécuriser les points de terminaison et les applications entre les types d’appareils et les systèmes d’exploitation

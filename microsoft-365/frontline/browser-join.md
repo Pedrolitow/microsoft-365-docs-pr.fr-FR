@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 manager: samanro
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-frontline
 search.appverid: ''
 searchScope:
@@ -26,12 +26,12 @@ description: Découvrez l'expérience de participation aux rendez-vous virtuels 
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: d9a64032610a3ef49b8d8bc5367901be80c7702a
-ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
+ms.openlocfilehash: b7b4b68c111cb8ee1dd6d77e6a124afebdf1bcb3
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68038838"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785504"
 ---
 # <a name="manage-the-join-experience-for-teams-virtual-appointments-on-browsers"></a>Gérer l'expérience de participation aux rendez-vous virtuels de Teams sur les navigateurs.
 

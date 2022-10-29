@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: aaku
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 86e3977db3a4c338f2f4d4317cf252684ddd8ba9
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 493596f7688547d19d35846746508b608e09ee52
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565419"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785174"
 ---
 # <a name="manage-shift-based-access-for-frontline-workers-in-teams"></a>Gérer l'accès par shift dans Teams pour les travailleurs de première ligne
 

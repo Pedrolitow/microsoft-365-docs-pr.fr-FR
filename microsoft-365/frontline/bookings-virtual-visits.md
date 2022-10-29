@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 manager: samanro
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 search.appverid: ''
 searchScope:
@@ -27,12 +27,12 @@ description: Découvrez comment planifier, gérer et effectuer des rendez-vous v
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 2c9439e17ce62b7fdbb0186f4efc2c52ab13232e
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: cb7407e57a8624eeb0327ae9fcb16b55be68ea49
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063593"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785086"
 ---
 # <a name="virtual-appointments-with-microsoft-teams-and-the-bookings-app"></a>Rendez-vous virtuels avec Microsoft Teams et l’application Bookings
 

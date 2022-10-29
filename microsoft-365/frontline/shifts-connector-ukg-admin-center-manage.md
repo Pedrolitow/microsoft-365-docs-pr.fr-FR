@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: a7b7845c2016e26fc540538cfecdb25771c3550f
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: 0c02385cf3733f9daf2c1e24db244e3b78afd069
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777652"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785997"
 ---
 # <a name="use-the-microsoft-365-admin-center-to-manage-your-shifts-connection-to-ukg-dimensions"></a>Utilisez le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts aux dimensions UKG
 

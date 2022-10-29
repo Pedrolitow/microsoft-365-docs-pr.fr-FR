@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: aaku
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: d3a89c9ca4641f23135696dab13f69f09c2c5b94
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 0a84f78dead461069a45c3b0cd4e19c2c024fd66
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573326"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786714"
 ---
 # <a name="shifts-connectors"></a>Connecteurs de Plannings
 
@@ -38,7 +38,7 @@ Cet article vous donne une vue d’ensemble des connecteurs Plannings et de leur
 
 Les connecteurs synchronisent les données de planification entre votre système WFM et Plannings, en intégrant les planifications de votre organisation dans Teams. Les équipes sont l’endroit où vos employés de première ligne s’engagent pour leurs besoins en matière de planification. Votre système de WFM est le système d’enregistrement pour les règles d’entreprise, la conformité et l’intelligence.
 
-Les flux de données via le connecteur permettent de s’assurer que les planifications sont toujours à jour. Les planifications de votre système WFM sont synchronisées avec Plannings. De plus, les modifications apportées aux planifications dans shifts sont synchronisées avec votre système WFM. En tant que système d’enregistrement, toutes les règles d’entreprise sont appliquées par votre système WFM avant l’enregistrement des données dans Plannings.
+Les flux de données via le connecteur permettent de s’assurer que les planifications sont toujours à jour. Les planifications de votre système WFM sont synchronisées avec Plannings. De plus, les modifications apportées aux planifications dans Shifts sont resynchronisées avec votre système WFM. En tant que système d’enregistrement, toutes les règles d’entreprise sont appliquées par votre système WFM avant l’enregistrement des données dans Plannings.
 
 <a name="prereq"> </a>
 <a name="schedules"> </a>
@@ -102,7 +102,7 @@ Pour obtenir des conseils pas à pas, consultez :
 - [Utiliser l’Assistant Connecteur Plannings pour connecter Plannings à Blue Yonder Workforce Management](shifts-connector-wizard.md)
 - [Utiliser PowerShell pour connecter Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
 
-Une fois la connexion configurée, vous pouvez mettre à jour et modifier les paramètres de connexion à tout moment, si nécessaire. Pour en savoir plus, reportez-vous à la rubrique :
+Une fois qu’une connexion est configurée, vous pouvez mettre à jour et modifier les paramètres de connexion à tout moment, en fonction des besoins. Pour en savoir plus, reportez-vous à la rubrique :
 
 - [Utilisez le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
 - [Utilisez PowerShell pour gérer votre connexion Shifts à Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
@@ -115,23 +115,23 @@ En ce qui concerne le connecteur lui-même, vous n’avez pas besoin de vous sou
 
 Le connecteur Teams Shifts pour UKG Dimensions est une offre interne hébergée et gérée par Microsoft. Avec ce connecteur, vous pouvez intégrer Shifts à UKG Dimensions pour gérer vos planifications et les tenir à jour.  
 
-:::image type="content" source="media/shifts-connector-ukg-dimensions.png" alt-text="Capture d’écran montrant Shifts sur un appareil mobile, une demande de congé et une planification dans UKG Dimensions." lightbox="media/shifts-connector-ukg-dimensions.png":::
+:::image type="content" source="media/shifts-connector-ukg-dimensions.png" alt-text="Capture d’écran montrant shifts sur un appareil mobile, une demande de congé et une planification dans UKG Dimensions." lightbox="media/shifts-connector-ukg-dimensions.png":::
 
 Les responsables de première ligne peuvent :
 
-- Publiez des décalages et des planifications dans les dimensions UKG et affichez-les dans Shifts.
-- Créez, affichez, gérez et attribuez des décalages ouverts dans les dimensions ukg et les shifts sur le bureau Teams et l’application web Teams. (Actuellement, les gestionnaires ne peuvent pas afficher ou affecter des décalages ouverts dans Shifts sur Teams mobile.)
+- Publiez des shifts et des planifications dans les dimensions UKG et affichez-les dans Shifts.
+- Créez, affichez, gérez et affectez des shifts ouverts dans ukG Dimensions and Shifts sur le bureau Teams et l’application web Teams. (Actuellement, les responsables ne peuvent pas afficher ou affecter des équipes ouvertes dans Shifts sur les appareils mobiles Teams.)
 - Créez, modifiez et supprimez des congés dans les dimensions UKG et affichez-les dans Shifts.
-- Affichez et approuvez les demandes de planification des travailleurs dans les dimensions UKG et shifts.
-- Définissez et mettez à jour la disponibilité des workers dans les dimensions UKG et affichez-les dans Shifts.
+- Affichez et approuvez les demandes de planification des travailleurs dans ukg Dimensions et Shifts.
+- Définissez et mettez à jour la disponibilité des workers dans les dimensions UKG et affichez dans Shifts.
 
 Les travailleurs de première ligne peuvent :
 
 - Consulter les horaires et les horaires de leur équipe et de leur équipe dans Plannings;
-- Demandez un congé, affichez les informations sur les congés et affichez les décalages ouverts de l’équipe dans Shifts.
-- Afficher et publier des entrées de carte de temps dans Shifts.
-- Demandez des shifts ouverts et des shifts d’échange dans shifts.
-- Définissez leur disponibilité dans Shifts sur Teams Mobile.
+- Demandez un congé, affichez les informations sur les congés et affichez les shifts ouverts de leur équipe dans Shifts.
+- Affichez et publiez les entrées de carte de temps dans Shifts.
+- Demandez des shifts ouverts et échangez des shifts dans Shifts.
+- Définissez leur disponibilité dans Shifts sur teams mobile.
 
 Les éléments suivants ne sont pas pris en charge actuellement :
 
@@ -143,24 +143,24 @@ Lorsqu’un responsable ou un travailleur de première ligne tente d’effectuer
 
 #### <a name="example-scenario"></a>Exemple de scénario
 
-Ravi, un responsable, publie une planification dans UKG Dimensions, qui est synchronisée avec Shifts dans Teams via le connecteur. Camille, membre du personnel, est avertie dans Teams sur son appareil mobile et affiche son planning et le planning de son équipe. Dans les équipes affectées, Camille peut également voir des informations détaillées, telles que des tâches, définies par le responsable.
+Ravi, un responsable, publie une planification dans UKG Dimensions, qui est synchronisée avec Shifts dans Teams via le connecteur. Camille, membre du personnel, est avertie dans Teams sur son appareil mobile et consulte son planning et l’horaire de son équipe. Dans les équipes affectées, Camille peut également voir des informations détaillées, telles que les tâches, définies par le responsable.
 
-Camille a besoin de prendre un peu de congé et demande un jour de congé à l’aide de Shifts. La demande est envoyée aux dimensions UKG via le connecteur. UKG Dimensions garantit que la demande est conforme aux règles métier et que la demande est créée. Ravi voit et approuve la demande dans UKG Dimensions, et l’approbation est synchronisée avec Teams. (Ravi peut également voir et approuver la demande dans Shifts). Camille est avertie dans Teams que la demande est approuvée et affiche son calendrier mis à jour.
+Camille a besoin de prendre un certain temps de congé et demande un jour de congé à l’aide de Shifts. La demande est envoyée à UKG Dimensions via le connecteur. UKG Dimensions garantit que la demande est conforme aux règles d’entreprise et que la demande est créée. Ravi voit et approuve la demande dans UKG Dimensions, et l’approbation est synchronisée avec Teams. (Ravi peut également voir et approuver la demande dans Shifts). Camille est avertie dans Teams que la demande est approuvée et affiche sa planification mise à jour.
 
-Camille veut échanger un shift avec un collègue. Dans Shifts, Camille voit une liste de tous les shifts éligibles à un échange basé sur les règles d’entreprise dans UKG Dimensions. Camille choisit une équipe qui est actuellement affectée à Kristen. Elle est avertie dans Teams sur son appareil mobile et accepte la demande d’échange. Ravi voit et approuve la demande dans Shifts, et l’approbation est synchronisée avec UKG Dimensions. (Ravi peut également voir et approuver la demande dans UKG Dimensions). Camille et Kristen sont avertis dans Teams et affichent leurs planifications mises à jour.
+Camille veut échanger un quart de travail avec un collègue. Dans Shifts, Camille voit une liste de tous les shifts éligibles pour un échange basé sur les règles d’entreprise dans UKG Dimensions. Camille choisit un quart de travail qui est actuellement affecté à Kristen. Kristen est avertie dans Teams sur son appareil mobile et accepte la demande d’échange. Ravi voit et approuve la demande dans Shifts, et l’approbation est synchronisée avec UKG Dimensions. (Ravi peut également voir et approuver la demande dans dimensions UKG). Camille et Kristen sont avertis dans Teams et affichent leurs plannings mis à jour.
 
 #### <a name="set-up-a-connection-to-ukg-dimensions"></a>Configurer une connexion à UKG Dimensions
 
-L’intégration de Shifts à UKG Dimensions à l’aide du connecteur ne prend que quelques étapes. Vous pouvez utiliser l’Assistant Connecteur Plannings dans le Centre d'administration Microsoft 365 pour configurer rapidement une connexion. L’Assistant configure le connecteur en fonction des paramètres que vous choisissez et crée la connexion. Si vous préférez utiliser PowerShell, nous fournissons également des scripts PowerShell que vous pouvez utiliser pour vous connecter.
+L’intégration de Shifts à UKG Dimensions à l’aide du connecteur ne nécessite que quelques étapes. Vous pouvez utiliser l’Assistant Connecteur Plannings dans le Centre d'administration Microsoft 365 pour configurer rapidement une connexion. L’Assistant configure le connecteur en fonction des paramètres que vous choisissez et crée la connexion. Si vous préférez utiliser PowerShell, nous fournissons également des scripts PowerShell que vous pouvez utiliser pour vous connecter.
 
 Pour obtenir des conseils pas à pas, consultez :
 
-- [Utiliser l’Assistant Connecteur Shifts pour connecter Shifts aux dimensions UKG](shifts-connector-wizard-ukg.md)
-- [Utiliser PowerShell pour connecter shifts aux dimensions UKG](shifts-connector-ukg-powershell-setup.md)
+- [Utiliser l’Assistant Connecteur Shifts pour connecter Shifts à UKG Dimensions](shifts-connector-wizard-ukg.md)
+- [Utiliser PowerShell pour connecter Shifts à UKG Dimensions](shifts-connector-ukg-powershell-setup.md)
 
-Une fois la connexion configurée, vous pouvez mettre à jour et modifier les paramètres de connexion à tout moment, si nécessaire. Pour en savoir plus, reportez-vous à la rubrique :
+Une fois qu’une connexion est configurée, vous pouvez mettre à jour et modifier les paramètres de connexion à tout moment, en fonction des besoins. Pour en savoir plus, reportez-vous à la rubrique :
 
-- [Utilisez la Centre d'administration Microsoft 365 pour gérer votre connexion Shifts aux dimensions UKG](shifts-connector-ukg-admin-center-manage.md)
+- [Utilisez le Centre d'administration Microsoft 365 pour gérer votre connexion Shifts aux dimensions UKG](shifts-connector-ukg-admin-center-manage.md)
 - [Utiliser PowerShell pour gérer votre connexion Shifts aux dimensions UKG](shifts-connector-ukg-powershell-manage.md)
 
 En ce qui concerne le connecteur lui-même, vous n’avez pas besoin de vous soucier des mises à niveau ou de la maintenance. On s’en occupe.

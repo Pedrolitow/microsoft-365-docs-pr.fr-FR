@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 manager: samanro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-frontline
 ms.reviewer: ''
 f1.keywords:
@@ -20,12 +20,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 477562bc3b4bea61291e8bcce86dd028913ca3bc
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 66e55c0d09b6e38a98acd4716c14b48cdbdafea6
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063483"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785042"
 ---
 # <a name="microsoft-teams-virtual-visits-usage-report"></a>Rapport d’utilisation des visites virtuelles Microsoft Teams
 

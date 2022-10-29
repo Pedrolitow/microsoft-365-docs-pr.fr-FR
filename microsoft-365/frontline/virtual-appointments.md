@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -21,12 +21,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: cb026906491818709939c7c3796c5e8e76fc5b3b
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 02f9ce9055747fa4f8abce5054b500a2f516e083
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68071466"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785570"
 ---
 # <a name="virtual-appointments-with-microsoft-teams"></a>Rendez-vous virtuels avec Microsoft Teams
 
