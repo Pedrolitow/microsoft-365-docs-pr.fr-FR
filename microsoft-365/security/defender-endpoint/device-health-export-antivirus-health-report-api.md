@@ -19,12 +19,12 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 76e200022f01836195d82d46f159d35701f77a29
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 571a5230dca05faf1bdcc3d9d48a97997239752d
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770324"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793519"
 ---
 <!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
@@ -85,7 +85,7 @@ Cette API récupère une liste des détails d’intégrité de l’antivirus des
 #### <a name="111-limitations"></a>1.1.1 Limitations
 
 - la taille maximale de la page est de 200 000
-- Les limitations de débit pour cette API sont (**_par exemple_** , 30 appels par minute et 1 000 appels par hour._)
+- Les limitations de débit pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
 
 #### <a name="odata-supported-operators"></a>Opérateurs pris en charge par OData
 

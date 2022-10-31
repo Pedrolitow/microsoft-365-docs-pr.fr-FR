@@ -11,24 +11,28 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 0fa17cd3f76290e130c768438733cd1db6515438
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 7166f8916bdd0a207cb5b32fa67d90279246e9d0
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811139"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794113"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
 L’Explorateur de contenus vous permet d’afficher en mode natif les éléments qui ont été récapitulés dans la page de vue d’ensemble.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -60,9 +64,9 @@ L’accès à l’explorateur de contenu est fortement restreint, car il vous pe
 
 Il existe deux rôles qui accordent l’accès à l’Explorateur de contenus via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Portail de conformité Microsoft Purview</a> :
 
-- **Visionneuse de contenu de l’Explorateur de contenu** : l’appartenance à ce groupe de rôles vous permet d’afficher le contenu de chaque élément de la liste. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
+- **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location in list view. The `data classification list viewer` role has been pre-assigned to this role group.
 
-- **Visionneuse de contenu de l’Explorateur de contenu** : l’appartenance à ce groupe de rôles vous permet d’afficher le contenu de chaque élément de la liste. Le rôle `data classification content viewer` a été pré-attribué à ce groupe de rôles.
+- **Content Explorer Content viewer**: Membership in this role group allows you to view the contents of each item in the list. The `data classification content viewer` role has been pre-assigned to this role group.
 
 Le compte que vous utilisez pour accéder à l’Explorateur de contenu doit se trouver dans l’un des groupes de rôles ou les deux. Il s’agit de groupes de rôles indépendants qui ne sont pas cumulatifs. Par exemple, si vous voulez accorder à un compte la possibilité d’afficher les éléments et leur emplacement uniquement, attribuez des droits à la visionneuse de liste de l’Explorateur de contenu. Si vous souhaitez que ce même compte puisse également afficher le contenu des éléments de la liste, vous pouvez également octroyer des droits de visionneuse de contenu dans l’Explorateur de contenu.
 
@@ -74,14 +78,14 @@ Un administrateur général peut attribuer la Visionneuse de liste de l’Explor
 
 Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus à leur sujet, consultez [Autorisations dans la portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus sur ces groupes, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables en préversion. Pour plus d’informations, consultez [Autorisations dans la portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -95,7 +99,7 @@ L’Explorateur de contenu présente un instantané actuel des éléments qui on
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Une [stratégie DLP](dlp-learn-about-dlp.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) provenant de nombreuses régions différentes qui sont prêtes à l’emploi. Par exemple, un numéro de carte de crédit, un numéro de compte bancaire et un numéro d’ID national.
+Une [stratégie DLP](dlp-learn-about-dlp.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) provenant de nombreuses régions différentes qui sont prêtes à l’emploi. Par exemple, un numéro de carte de crédit, des numéros de compte bancaire et des numéros d’identification nationaux.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -146,9 +150,9 @@ Vous pouvez effectuer une recherche sur les éléments suivants :
 |texte après un caractère de soulignement (_) dans le nom de fichier|`Resume` ou `1234`| 
 |extension du fichier|`txt`|
 
-## <a name="provide-matchnot-a-match-accuracy-feedback-in-content-explorer"></a>Fournir un retour de précision de correspondance/non dans l’Explorateur de contenu
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-content-explorer"></a>Fournir des commentaires sur l’exactitude des correspondances/non dans l’Explorateur de contenu
 
-Vous pouvez afficher le nombre de correspondances d’un classifieur SIT ou pouvant être formé dans **l’Explorateur de contenu**. Vous pouvez également fournir des commentaires sur la question de savoir si un élément est réellement une correspondance ou non à l’aide du mécanisme **de commentaires Match**, **Pas une** correspondance et utiliser ces commentaires pour ajuster vos classifieurs. Pour plus d’informations, voir [Augmenter la précision du classifieur (préversion](data-classification-increase-accuracy.md) ). 
+Vous pouvez afficher le nombre de correspondances d’un classifieur SIT ou pouvant être entraîné dans **l’Explorateur de contenu**. Vous pouvez également fournir des commentaires indiquant si un élément est réellement une correspondance ou non à l’aide du mécanisme de commentaires **Match**, **Not a Match** et utiliser ces commentaires pour paramétrer vos classifieurs. Pour plus d’informations, consultez [Augmenter la précision du classifieur (préversion).](data-classification-increase-accuracy.md) 
 
 
 ## <a name="see-also"></a>Voir aussi

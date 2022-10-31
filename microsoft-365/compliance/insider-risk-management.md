@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 1a6175a0f0d64e72ca14e334cb16d970315bb797
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 65ec1b52582b1cbefb9a4b995118bb7f60d0081d
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769840"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793314"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
@@ -97,11 +97,11 @@ L’identification et la résolution des activités à risque internes et des pr
 Vous pouvez choisir parmi les modèles de stratégie suivants pour commencer rapidement avec la gestion des risques internes :
 
 - [Vol de données par des employés quittant votre organisation](insider-risk-management-policies.md#data-theft-by-departing-users)
-- [Fuites de données générales](insider-risk-management-policies.md#general-data-leaks)
+- [Fuites de données](insider-risk-management-policies.md#data-leaks)
 - [Fuites de données par des utilisateurs prioritaires (aperçu)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Fuites de données par des utilisateurs à risque (préversion)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
-- [Violations générales de la stratégie de sécurité (préversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [Mauvaise utilisation générale des données des patients (préversion)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [Violations de stratégie de sécurité (préversion)](insider-risk-management-policies.md#security-policy-violations-preview)
+- [Mauvaise utilisation des données des patients (préversion)](insider-risk-management-policies.md#patient-data-misuse-preview)
 - [Violations de stratégie de sécurité par des utilisateurs sortants (préversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Violations de la stratégie de sécurité par des utilisateurs prioritaires (préversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Violations de stratégie de sécurité par les utilisateurs à risque (préversion)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
@@ -168,7 +168,7 @@ Lorsque des utilisateurs quittent une organisation, soit volontairement, soit à
 
 Dans la plupart des cas, les utilisateurs font de leur mieux pour gérer correctement les informations sensibles ou confidentielles. Mais parfois, les utilisateurs peuvent faire des erreurs et les informations sont partagées accidentellement en dehors de votre organisation ou en violation de vos stratégies de protection des informations. Dans d’autres circonstances, les utilisateurs peuvent intentionnellement divulguer ou partager des informations sensibles et confidentielles avec des intentions malveillantes et pour un gain personnel potentiel. Les stratégies de gestion des risques internes créées à l’aide des modèles de stratégie fuites de données suivants détectent automatiquement les activités généralement associées au partage d’informations sensibles ou confidentielles :
 
-- [Fuites de données générales](insider-risk-management-policies.md#general-data-leaks)
+- [Fuites de données](insider-risk-management-policies.md#data-leaks)
 - [Fuites de données par des utilisateurs prioritaires (aperçu)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Fuites de données par des utilisateurs à risque (préversion)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 
@@ -176,7 +176,7 @@ Dans la plupart des cas, les utilisateurs font de leur mieux pour gérer correct
 
 Les utilisateurs ont généralement un grand degré de contrôle lors de la gestion de leurs appareils dans l’espace de travail moderne. Ce contrôle peut inclure des autorisations pour installer ou désinstaller les applications nécessaires à l’exécution de leurs tâches ou la possibilité de désactiver temporairement les fonctionnalités de sécurité des appareils. Que cette activité à risque soit accidentelle, accidentelle ou malveillante, cette conduite peut présenter un risque pour votre organisation et il est important d’identifier et d’agir pour minimiser. Pour aider à identifier ces activités de sécurité à risque, les modèles de violation de stratégie de sécurité de gestion des risques internes suivants évaluent les indicateurs de risque de sécurité et utilisent des alertes Microsoft Defender pour point de terminaison pour fournir des insights sur les activités liées à la sécurité :
 
-- [Violations générales de la stratégie de sécurité (préversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [Violations de stratégie de sécurité (préversion)](insider-risk-management-policies.md#security-policy-violations-preview)
 - [Violations de stratégie de sécurité par des utilisateurs sortants (préversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Violations de la stratégie de sécurité par des utilisateurs prioritaires (préversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Violations de stratégie de sécurité par les utilisateurs à risque (préversion)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
@@ -192,7 +192,7 @@ Les utilisateurs de votre organisation peuvent avoir différents niveaux de risq
 
 Pour les organisations du secteur de la santé, des études récentes ont révélé un taux très élevé de violations de données internes. La détection d’une mauvaise utilisation des données des patients et des informations relatives aux dossiers médicaux est un élément essentiel de la protection de la vie privée des patients et du respect des réglementations de conformité telles que la loi HIPAA (Health Insurance Portability and Accountability Act) et la loi HITECH (Health Information Technology for Economic and Clinical Health). L’utilisation abusive des données des patients peut aller de l’accès aux dossiers privilégiés des patients à l’accès aux dossiers de patients de la famille ou des voisins avec une intention malveillante. Pour identifier ces types d’activités à risque, les modèles de stratégie de gestion des risques internes suivants utilisent le connecteur Microsoft 365 RH et un connecteur de données spécifique aux soins de santé pour commencer à évaluer les indicateurs de risque liés aux comportements qui peuvent se produire dans vos systèmes d’enregistrement de santé électronique (DSE) :
 
-- [Mauvaise utilisation générale des données des patients (préversion)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [Mauvaise utilisation des données des patients (préversion)](insider-risk-management-policies.md#patient-data-misuse-preview)
 
 ### <a name="actions-and-behaviors-by-risky-users-preview"></a>Actions et comportements des utilisateurs à risque (préversion)
 

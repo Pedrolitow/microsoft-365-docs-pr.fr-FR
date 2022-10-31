@@ -11,24 +11,27 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: 82d6a1292b5ac8c13471df8e1b2c298c8cf262b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+description: Découvrez les étapes de base pour créer un dictionnaire de mots clés dans le portail de conformité Microsoft Purview.
+ms.openlocfilehash: 7587357c8b9ce58b39f9027d56644401c6804c04
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637370"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793805"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
 La Protection contre la perte de données Microsoft Purview peut identifier, surveiller et protéger vos éléments sensibles. L’identification des éléments sensibles nécessite parfois la recherche de mots clés, en particulier lors de l’identification d’un contenu générique (comme une communication liée à la santé) ou d’un langage inapproprié ou explicite. Bien que vous puissiez créer des listes de mots clés dans des types d’informations sensibles, ces listes sont de taille limitée et nécessitent la modification du XML pour les créer ou les modifier. Les dictionnaires de mots clés facilitent la gestion des mots clés à une échelle beaucoup plus grande, en prenant en charge jusqu’à 1 Mo de termes (après compression) dans le dictionnaire. De plus, toutes les langues sont prises en charge. La limite du client est également de 1 Mo après compression. 1 Mo de limite après compression signifie que tous les dictionnaires combinés dans un client peuvent avoir près de 1 million de caractères.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="keyword-dictionary-limits"></a>Limites du dictionnaire de mots clés
 
@@ -72,15 +75,15 @@ Remove-Item $rawFile
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Étapes de base de la création d’un dictionnaire de mots clés
 
-Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le plus souvent d’un fichier (par exemple, une liste .csv ou .txt) importé dans le service ou par cmdlet PowerShell, depuis une liste à laquelle vous accédez directement dans la cmdlet PowerShell ou depuis un dictionnaire existant. Lorsque vous créez un dictionnaire de mots clés, vous suivez les mêmes étapes fondamentales :
+The keywords for your dictionary could come from various sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
 
 1. Utilisez le *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portail de conformité Microsoft Purview</a> ou connectez-vous au **Portail de conformité Microsoft Purview PowerShell**.
 
-2. **Définissez ou chargez vos mots clés à partir de la source prévue**. L’Assistant et la cmdlet acceptent tous deux une liste de mots clés séparés par des virgules pour la création d’un dictionnaire de mots clés personnalisé. Cette étape varie donc légèrement en fonction de l’origine de vos mots clés. Une fois chargés, ils sont codés et convertis en tableau d’octets avant leur importation.
+2. **Define or load your keywords from your intended source**. The wizard and the cmdlet both accept a comma-separated list of keywords to create a custom keyword dictionary, so this step will vary slightly depending on where your keywords come from. Once loaded, they're encoded and converted to a byte array before they're imported.
 
-3. **Créez votre dictionnaire** : Choisissez un nom et une description, puis créez votre dictionnaire.
+3. **Créez le dictionnaire**. Choisissez un nom et une description, puis créez votre dictionnaire.
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Créer un dictionnaire de mots clés avec le Centre de sécurité et de conformité
+## <a name="create-a-keyword-dictionary-using-the-microsoft-purview-compliance-portal"></a>Créer un dictionnaire de mots clés à l’aide du portail de conformité Microsoft Purview
 
 Procédez comme suit pour créer et importer des mots clés pour un dictionnaire personnalisé :
 
@@ -114,7 +117,7 @@ Lorsque vous devez créer un dictionnaire volumineux, c’est souvent pour utili
 
 1. Copiez les mots clés dans un fichier texte et assurez-vous que chaque mot clé est sur une ligne distincte.
 
-2. Enregistrez le fichier texte avec le codage Unicode. Dans le Bloc-notes \> **Enregistrer sous** \> **Codage** \> **Unicode**.
+2. Save the text file with Unicode encoding. In Notepad \> **Save As** \> **Encoding** \> **Unicode**.
 
 3. Lisez le fichier dans une variable en exécutant la cmdlet suivante :
 
@@ -130,7 +133,7 @@ Lorsque vous devez créer un dictionnaire volumineux, c’est souvent pour utili
 
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Utilisation des dictionnaires de mots clés dans les types d’informations sensibles personnalisés et les stratégies DLP
 
-Les dictionnaires de mots clés peuvent être utilisés dans le cadre de la configuration requise de recherche pour un type personnalisé d’informations sensibles ou en tant que type d’informations sensibles eux-mêmes. Les deux cas nécessitent que vous créez un [type personnalisé d’informations sensibles](create-a-custom-sensitive-information-type-in-scc-powershell.md). Suivez les instructions dans l’article lié pour créer un type d’informations sensibles. Une fois que vous avez le fichier XML, vous aurez besoin de l’identificateur GUID du dictionnaire pour utiliser ce dernier.
+Keyword dictionaries can be used as part of the match requirements for a custom sensitive information type, or as a sensitive information type themselves. Both require you to create a [custom sensitive information type](create-a-custom-sensitive-information-type-in-scc-powershell.md). Follow the instructions in the linked article to create a sensitive information type. Once you have the XML, you'll need the GUID identifier for the dictionary to use it.
 
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
@@ -157,7 +160,7 @@ Le résultat de la commande ressemble à ceci :
 `IsValid           : True`
 `ObjectState       : Unchanged`
 
-Collez l’identité dans le code XML de votre type personnalisé d’informations sensibles et chargez-le. Votre dictionnaire s’affiche désormais dans votre liste de types d’informations sensibles et vous pouvez l’utiliser directement dans votre stratégie en indiquant le nombre de mots clés qui doivent correspondre.
+Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
 
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
@@ -194,7 +197,7 @@ Collez l’identité dans le code XML de votre type personnalisé d’informatio
 >   1. Extrêmement confidentiel
 >   2. Document 機密性が高い, 机密的 et document 机密的
 >
-> Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple regex pour référence :
+> While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
 >
 > - `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >

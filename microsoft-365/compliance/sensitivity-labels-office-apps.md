@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4ae1dfd9d38650a7f34287685a3f00b34c1234e
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: 4e6571b59d8ab6ec3624fda0a7827118e939d2fa
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786758"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793695"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -116,7 +116,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |
 |[Prise en charge du format PDF](#pdf-support) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider)|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
-|[Appliquer la protection S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | En cours de révision |
+|[Appliquer la protection S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Préversion : [Canal bêta](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | En cours de révision |
 |[Barre de sensibilité](#sensitivity-bar) et [couleur d’étiquette d’affichage](#label-colors) | En cours de révision |  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 
 **Notes de bas de page :**
@@ -162,7 +162,7 @@ Pour les autres solutions d'étiquetage, consultez leur documentation pour conna
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>Modèles de protection et étiquettes de niveau de confidentialité
 
-Les [modèles de protection](/azure/information-protection/configure-policy-templates) définis par l’administrateur, tels que ceux que vous définissez pour le chiffrement de messages Office 365, ne sont pas visibles dans les applications Office lorsque vous utilisez un étiquetage intégré. Cette expérience simplifiée illustre le fait qu’il n’est pas nécessaire de sélectionner un modèle de protection, car les mêmes paramètres sont inclus avec les étiquettes de niveau de confidentialité dont le chiffrement est activé.
+Les modèles de [protection](/azure/information-protection/configure-policy-templates) définis par l’administrateur, tels que ceux que vous définissez pour Chiffrement de messages Microsoft Purview, ne sont pas visibles dans les applications Office lorsque vous utilisez l’étiquetage intégré. Cette expérience simplifiée illustre le fait qu’il n’est pas nécessaire de sélectionner un modèle de protection, car les mêmes paramètres sont inclus avec les étiquettes de niveau de confidentialité dont le chiffrement est activé.
 
 Vous pouvez convertir un modèle existant en étiquette de confidentialité lorsque vous utilisez la cmdlet [New-Label](/powershell/module/exchange/new-label) avec le paramètre *EncryptionTemplateId*.
 
@@ -405,7 +405,7 @@ Lorsque l’application Outlook ne prend pas en charge la désactivation de l’
 > 
 > Si vous configurez une étiquette pour appliquer la protection S/MIME, mais qu’Outlook sur Windows ne la prend pas encore en charge, l’étiquette est toujours affichée et peut être appliquée, mais les paramètres S/MIME sont ignorés. Vous ne pourrez pas sélectionner cette étiquette pour les stratégies d’étiquetage automatique Exchange.
 
-Cette configuration n’est pas disponible dans le portail de conformité Microsoft Purview. Vous devez utiliser les paramètres avancés PowerShell avec la cmd [Set-Label](/powershell/module/exchange/set-label) ou [New-Label](/powershell/module/exchange/new-label) après vous être [connecté à Office 365 Centre de sécurité et de conformité PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Cette configuration n’est pas disponible dans le portail de conformité Microsoft Purview. Vous devez utiliser les paramètres avancés PowerShell avec le cmd [Set-Label](/powershell/module/exchange/set-label) ou [New-Label](/powershell/module/exchange/new-label) une fois que vous êtes [connecté à PowerShell Security & Compliance](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 Utilisez ces paramètres uniquement lorsque vous disposez d’un [déploiement S/MIME](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) opérationnel et que vous souhaitez qu’une étiquette applique automatiquement cette méthode de protection pour les e-mails plutôt [que la protection par défaut qui utilise Rights Management chiffrement à partir de Azure Information Protection](encryption-sensitivity-labels.md). La protection obtenue est la même que lorsqu’un utilisateur sélectionne manuellement les options S/MIME dans Outlook.
 

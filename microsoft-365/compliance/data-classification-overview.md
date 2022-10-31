@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur la classification des données
+title: Comment utiliser le tableau de bord de classification des données Microsoft
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -11,22 +11,25 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
-description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 188cb8b28f2a1468fd72236cf160a01e99c16634
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Le tableau de bord de classification de conformité microsoft Purview fournit une visibilité sur la quantité de données sensibles trouvées et classifiées dans votre organisation.
+ms.openlocfilehash: 07bad3c98cd5df9fa4d3265808bb25f401f7d972
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579333"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794223"
 ---
-# <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
+# <a name="how-to-use-the-microsoft-data-classification-dashboard"></a>Comment utiliser le tableau de bord de classification des données Microsoft
 
 En tant qu’administrateur Microsoft 365 ou administrateur de conformité, vous pouvez évaluer et baliser le contenu de votre organisation afin de contrôler sa circulation, de le protéger peut importe son emplacement et vous assurer qu’il est conservé et supprimé selon les besoins de votre organisation. Pour ce faire, vous devez utiliser les [étiquettes de confidentialité](sensitivity-labels.md), les [étiquettes de rétention](retention.md#retention-labels) et la classification des informations sensibles par types. Il existe différentes façons de procéder à la découverte, l’évaluation et le balisage, mais au final, vous pouvez avoir un très grand nombre de documents et d’e-mails marqués et classés avec l’une de ces étiquettes, ou les deux. Après avoir appliqué vos étiquettes de rétention et vos étiquettes de confidentialité, vous souhaiterez voir de quelle manière elles sont utilisées par vos clients. La page classification des données fournit une visibilité dans ce corps de contenu, notamment :
 
@@ -52,6 +55,8 @@ Suivez une visite guidée par vidéo sur nos fonctionnalités de classification 
 
 La classification de données analyse votre contenu sensible et le contenu étiqueté avant votre création de stratégies. Cette opération est appelée **zéro gestion des modifications**. Cela vous permet de voir l’impact de toutes les étiquettes de rétention et de confidentialité sur votre environnement, et de vous aider à évaluer vos besoins en matière de protection et de stratégie de gouvernance.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="prerequisites"></a>Configuration requise
 
 ### <a name="permissions"></a>Autorisations
@@ -68,18 +73,18 @@ La classification de données analyse votre contenu sensible et le contenu étiq
 > [!NOTE]
 > Il est recommandé de toujours utiliser le rôle avec le moins de privilèges pour garantir l’accès à la classification des données de Microsoft 365.
 
-#### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
+#### <a name="roles-and-role-groups"></a>Rôles et groupes de rôles
 
 Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus à leur sujet, consultez [Autorisations dans la portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus sur ces groupes, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus à leur sujet, consultez [Autorisations dans la portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -100,7 +105,7 @@ Pour déterminer le nombre d’éléments dans une catégorie de classification 
 ![détail de pointage des principaux types d’informations sensibles.](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> Si la carte affiche le message « Aucune donnée trouvée avec des informations sensibles », cela signifie qu’aucun élément de votre organisation n’a été classé comme étant un type d’informations sensibles ou qu’aucun élément n’a été analysé. Pour commencer à utiliser les étiquettes, voir :
+> If the card displays the message "No data found with sensitive information", it means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md)
 >- [Prise en main de la gestion des enregistrements](get-started-with-records-management.md)
 >- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
@@ -121,7 +126,7 @@ La carte d’étiquette de confidentialité affiche le nombre d’éléments (ad
 ![répartition du contenu par capture d’écran de l’espace réservé pour la classification des étiquettes de confidentialité.](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Si vous n’avez pas créé ou publié d’étiquettes de confidentialité ou si aucune étiquette de confidentialité n’a été appliquée à votre contenu, cette carte affiche le message « Aucune étiquette de confidentialité détectée ». Pour commencer à utiliser les étiquettes de confidentialité, consultez :
+> If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected". To get started with sensitivity labels, see:
 >- [Commencez avec les étiquettes de sensibilité](get-started-with-sensitivity-labels.md) ou pour AIP [Configurer la politique de protection des informations sur Azure](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Principales étiquettes de rétention appliquées au contenu
@@ -133,7 +138,7 @@ La carte étiquettes de rétention les plus utilisées vous indique le nombre d�
 ![capture d’écran de l’espace réservé pour les étiquettes de rétention les plus utilisées.](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> Si cette carte affiche le message, « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucun contenu n’a eu d’étiquette appliquée. Pour commencer à utiliser les étiquettes de confidentialité, consultez :
+> If this card displays the message, "No retention labels detected", it means you haven't created or published any retention labels or no content has had a retention label applied. To get started with retention labels, see:
 >- [Prise en main de la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md)
 
 ## <a name="top-activities-detected"></a>Principales activités détectées
@@ -141,15 +146,15 @@ La carte étiquettes de rétention les plus utilisées vous indique le nombre d�
 Cette carte décrit brièvement les actions les plus courantes que les utilisateurs effectuent sur les éléments étiquetés comme sensibles. Vous pouvez utiliser [L’explorateur d’activité](data-classification-activity-explorer.md) pour explorer en profondeur les différentes activités que Microsoft 365 suit sur le contenu étiqueté et le contenu qui se trouve sur les points de terminaison de Windows 10.
 
 > [!NOTE]
-> Si cette carte affiche le message « Aucune activité détectée », cela signifie qu’il n’y a eu aucune activité sur les fichiers, ou que l’audit de l’utilisateur et de l’administrateur n’est pas activé. Pour activer les journaux d’audit, consultez :
->- [Effectuer des recherches dans le journal d’audit depuis le centre de sécurité et conformité](search-the-audit-log-in-security-and-compliance.md)
+> If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
+>- [Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="sensitivity-and-retention-labeled-data-by-location"></a>Données étiquetées confidentielles ou retenues par emplacement
 
 L’objectif de la création de rapports sur la classification des données est de fournir une visibilité sur le nombre d’éléments qui ont une étiquette, ainsi que leur emplacement. Ces cartes vous permettent de connaître le nombre d’éléments étiquetés dans Exchange, SharePoint, OneDrive, etc.
 
 > [!NOTE]
-> Si cette carte affiche le message, « Aucun emplacement détecté », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de confidentialité ou qu’aucune étiquette de confidentialité n’a été appliquée à votre contenu. Pour commencer à utiliser les étiquettes de confidentialité, consultez :
+> If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied. To get started with sensitivity labels, see:
 >- [Étiquettes de confidentialité](sensitivity-labels.md)
 
 ## <a name="public-preview-release-notes"></a>Notes de publication de la préversion publique 

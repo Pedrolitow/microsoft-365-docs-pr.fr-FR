@@ -11,25 +11,27 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur d’activités vous permet de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: 0091c1b48544f4e693554901aec5ef645b5a908c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: fd537c4157347a2984af0c1fa2097278abadd6a8
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478616"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793761"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activités
 
-La [vue d’ensemble de la classification des données](data-classification-overview.md) et les onglets [de l’Explorateur de contenu](data-classification-content-explorer.md) vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, ainsi que l’emplacement de ce contenu. [L’Explorateur d’activités](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) complète cette suite de fonctionnalités en vous permettant de surveiller ce qui est fait avec votre contenu étiqueté. L’Explorateur d’activités fournit une vue historique des activités sur votre contenu étiqueté. Les informations d’activité sont collectées à partir des journaux d’audit unifiés Microsoft 365, transformées et mises à disposition dans l’interface utilisateur de l’Explorateur d’activités. L’Explorateur d’activités fournit des rapports sur jusqu’à 30 jours de données.
+Les onglets [Vue d’ensemble de la classification des données](data-classification-overview.md) et [Explorateur de contenu](data-classification-content-explorer.md) vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, et sur l’emplacement de ce contenu. [L’Explorateur](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) d’activités complète cette suite de fonctionnalités en vous permettant de surveiller ce qui est fait avec votre contenu étiqueté. L’Explorateur d’activités fournit une vue historique des activités sur votre contenu étiqueté. Les informations d’activité sont collectées à partir des journaux d’audit unifiés Microsoft 365, transformées et mises à disposition dans l’interface utilisateur de l’Explorateur d’activités. L’Explorateur d’activités signale jusqu’à 30 jours de données.
 
-![Capture d’écran de la capture d’écran de l’explorateur d’activités de l’espace réservé.](../media/data-classification-activity-explorer-1.png)
+![capture d’écran de la vue d’ensemble de l’explorateur d’activités d’espace réservé.](../media/data-classification-activity-explorer-1.png)
 
 Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figurent :
 
@@ -43,6 +45,8 @@ Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figure
 - Stratégie DLP
 
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -63,14 +67,14 @@ Un compte doit se voir attribuer explicitement l’appartenance à l’un de ces
 
 Il existe des rôles et des groupes de rôles que vous pouvez utiliser pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles applicables que vous pouvez utiliser. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables que vous pouvez utiliser. Pour en savoir plus à leur sujet, consultez [Autorisations dans la portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles applicables que vous pouvez utiliser. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables que vous pouvez utiliser. Pour en savoir plus sur, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -95,11 +99,11 @@ Voici une liste des groupes de rôles applicables que vous pouvez utiliser. Pour
 - Administrateur de sécurité
 - Lecteur de sécurité
 
-## <a name="activity-types"></a>Types d’activités
+## <a name="activity-types"></a>Types d’activité
 
-L’Explorateur d’activités collecte des informations d’activité à partir des journaux d’audit sur plusieurs sources d’activités. Pour plus d’informations sur l’activité d’étiquetage dans l’Explorateur d’activités, consultez [Événements d’étiquetage disponibles dans l’Explorateur d’activités](data-classification-activity-explorer-available-events.md).
+L’Explorateur d’activités collecte des informations d’activité à partir des journaux d’audit sur plusieurs sources d’activités. Pour plus d’informations sur l’activité d’étiquetage dans l’Explorateur d’activités, consultez [Étiquetage des événements disponibles dans l’Explorateur d’activités](data-classification-activity-explorer-available-events.md).
 
-Activités **d’étiquette de confidentialité** et **activités d’étiquetage de rétention à partir d’applications natives** Office, client et scanneur d’étiquetage unifié Azure Information Protection (AIP), SharePoint Online, Exchange Online (étiquettes de confidentialité uniquement) et OneDrive. En voici quelques exemples :
+**Activités d’étiquettes de confidentialité** et **activités d’étiquetage de rétention** à partir d’applications office natives, du client et du scanneur d’étiquetage unifié Azure Information Protection (AIP), SharePoint Online, Exchange Online (étiquettes de confidentialité uniquement) et OneDrive. En voici quelques exemples :
 
 - Étiquette appliqué
 - Étiquette modifiée (mise à niveau, rétrogradée ou supprimé)
@@ -113,7 +117,7 @@ Activités **d’étiquette de confidentialité** et **activités d’étiquetag
 - Protection supprimée
 - Fichiers découverts
 
-L’Explorateur d’activités collecte également les **événements de correspondance de stratégie DLP** à partir de Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel (préversion), des bibliothèques et des dossiers SharePoint locaux, ainsi que des partages de fichiers locaux et Windows 10 appareils via **la protection contre la perte de données de point de terminaison (DLP).** Voici quelques exemples d’événements de Windows 10 appareils :
+L’Explorateur d’activités collecte également des **correspondances de stratégie DLP** à partir d’événements de Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel (préversion), de dossiers et bibliothèques SharePoint locaux, et de partages de fichiers locaux, et Windows 10 appareils via **la protection contre la perte de données de point de terminaison (DLP).** Voici quelques exemples d’événements provenant d’appareils Windows 10 :
 
 - Suppressions
 - Créations
@@ -122,10 +126,10 @@ L’Explorateur d’activités collecte également les **événements de corresp
 - Lecture
 - Imprimé
 - Renommé
-- Copié dans un partage réseau
-- Accès par l’application non autorisée 
+- Copié dans le partage réseau
+- Accessible par une application non autorisée 
 
-Comprendre les actions effectuées avec votre contenu étiqueté sensible vous permet de voir si les contrôles que vous avez en place, tels que [les stratégies Protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md) sont efficaces ou non. Si ce n’est pas le cas ou si vous découvrez quelque chose d’inattendu tel qu’un grand nombre d’éléments qui sont étiquetés `highly confidential`et sont rétrogradés`general` vous pouvez gérer vos différentes stratégies et entreprendre de nouvelles actions pour limiter le comportement indésirable.
+Comprendre quelles actions sont effectuées avec votre contenu étiqueté sensible vous permet de voir si les contrôles que vous avez en place, tels que [les stratégies de Protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md) sont efficaces ou non. Si ce n’est pas le cas ou si vous découvrez quelque chose d’inattendu tel qu’un grand nombre d’éléments qui sont étiquetés `highly confidential`et sont rétrogradés`general` vous pouvez gérer vos différentes stratégies et entreprendre de nouvelles actions pour limiter le comportement indésirable.
 
 > [!NOTE]
 > L’explorateur d’activité ne suit pas actuellement les activités de rétention pour Exchange Online.

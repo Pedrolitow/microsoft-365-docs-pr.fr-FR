@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: be05acf1ca9028915a836d95f737e64ee1324f72
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 0dc240addd772dc820838a1f213fcfeb9aa43a07
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769576"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793365"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques internes
 
@@ -84,7 +84,7 @@ Les indicateurs de stratégie sont segmentés dans les domaines suivants. Vous p
 - **indicateurs Microsoft Defender for Cloud Apps (préversion)** : ceux-ci incluent des indicateurs de stratégie provenant d’alertes partagées de Defender for Cloud Apps. La détection des anomalies activée automatiquement dans Defender for Cloud Apps commence immédiatement à détecter et à rassembler les résultats, en ciblant de nombreuses anomalies comportementales sur vos utilisateurs et les machines et appareils connectés à votre réseau. Pour inclure ces activités de gestion des risques dans les alertes de stratégie, sélectionnez un ou plusieurs indicateurs dans cette section. Pour en savoir plus sur l’analytique et la détection des anomalies de Defender for Cloud Apps, consultez [Obtenir l’analyse comportementale et la détection des anomalies](/cloud-app-security/anomaly-detection-policy).
 - **Rappels du score de risque** : il s’agit notamment d’augmenter le score de risque pour les activités potentiellement à risque supérieures à ce qui est classique ou pour les utilisateurs dont les cas précédents ont été résolus en tant que violation de stratégie. L’activation des rappels de score de risque augmente les scores de risque et la probabilité d’alertes pour ces types d’activités. Pour l’activité de gestion des risques supérieure à ce qui est classique, les scores sont augmentés si l’activité potentiellement à risque détectée s’écarte des activités considérées comme conformes. Pour les utilisateurs dont les cas précédents ont été résolus en tant que violation de stratégie, les scores sont augmentés si un utilisateur a eu plusieurs cas précédemment résolus en tant que violation de stratégie confirmée. Les rappels de score de risque ne peuvent être sélectionnés que si un ou plusieurs indicateurs sont sélectionnés.
 
-Dans certains cas, vous pouvez limiter les indicateurs de stratégie de risque interne appliqués aux stratégies de risque interne de votre organisation. Vous pouvez désactiver les indicateurs de stratégie pour des domaines spécifiques en les désactivant de toutes les stratégies de risque interne dans les paramètres globaux. Les événements de déclenchement peuvent uniquement être modifiés pour les stratégies créées à partir des *modèles Fuites de données générales* ou *Fuites de données par les utilisateurs prioritaires* . Les stratégies créées à partir de tous les autres modèles n’ont pas d’indicateurs ou d’événements de déclenchement personnalisables.
+Dans certains cas, vous pouvez limiter les indicateurs de stratégie de risque interne appliqués aux stratégies de risque interne de votre organisation. Vous pouvez désactiver les indicateurs de stratégie pour des domaines spécifiques en les désactivant de toutes les stratégies de risque interne dans les paramètres globaux. Les événements de déclenchement peuvent uniquement être modifiés pour les stratégies *créées* à partir des fuites de données ou des *fuites de données par les utilisateurs prioritaires* . Les stratégies créées à partir de tous les autres modèles n’ont pas d’indicateurs ou d’événements de déclenchement personnalisables.
 
 Pour définir les indicateurs de stratégie de risque interne activés dans toutes les stratégies de risque interne, accédez à **Paramètres de** >  risque interne **Indicateurs** et sélectionnez un ou plusieurs indicateurs de stratégie. Les indicateurs sélectionnés dans la page Paramètres **des indicateurs** ne peuvent pas être configurés individuellement lors de la création ou de la modification d’une stratégie de risque interne dans l’Assistant Stratégie.
 
@@ -241,16 +241,16 @@ Pour chacun des paramètres de domaine suivants, vous pouvez entrer jusqu’à 5
 
 - **Domaines tiers :** Si votre organisation utilise des domaines tiers à des fins professionnelles (par exemple, le stockage cloud), incluez-les ici afin que vous puissiez recevoir des alertes pour les activités potentiellement à risque liées à l’indicateur d’appareil *Utiliser un navigateur pour télécharger du contenu à partir d’un site tiers*.
  
-### <a name="sensitive-info-types-exclusion"></a>Exclusion des types d’informations sensibles
+### <a name="sensitive-info-types-exclusion-preview"></a>Exclusion des types d’informations sensibles (préversion)
 
-Les types d’informations sensibles exclus dans les paramètres sont mappés à des indicateurs et des déclencheurs impliquant des activités liées aux fichiers pour Point de terminaison, SharePoint, Teams, OneDrive et Exchange. Ces types seront traités comme des types d’informations non sensibles. Pour les fichiers qui contiennent des types d’informations sensibles identifiés ici, ils seront évalués en tant qu’activités impliquant du contenu lié aux types d’informations sensibles. Pour obtenir la liste complète, consultez [Définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md).
+[Les types d’informations sensibles](sensitive-information-type-learn-about.md) exclus dans les paramètres sont mappés à des indicateurs et des déclencheurs impliquant des activités liées aux fichiers pour Point de terminaison, SharePoint, Teams, OneDrive et Exchange. Ces types exclus seront traités comme des types d’informations non sensibles. Pour les fichiers qui contiennent des types d’informations sensibles identifiés ici, ils seront évalués en tant qu’activités impliquant du contenu lié aux types d’informations sensibles. Pour obtenir la liste complète, consultez [Définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md).
 
-Vous pouvez sélectionner les types d’informations sensibles à exclure de la liste de tous les types disponibles (out-of-box et custom) disponibles dans le locataire. La gestion des risques internes exclut plusieurs types d’informations sensibles par défaut, tels que le numéro de routage ABA. Vous pouvez choisir jusqu’à 500 types d’informations sensibles à exclure.
+Vous pouvez sélectionner les types d’informations sensibles à exclure de la liste de tous les types disponibles (out-of-box et custom) disponibles dans le locataire. Vous pouvez choisir jusqu’à 500 types d’informations sensibles à exclure.
 
 > [!NOTE]
 > La liste d’exclusion des types d’informations sensibles est prioritaire sur la liste de [contenu prioritaire](insider-risk-management-policies.md#prioritize-content-in-policies) .
 
-Pour ajouter des types d’informations sensibles à exclure, procédez comme suit :
+Pour exclure les types d’informations sensibles, procédez comme suit :
 
 1. Dans le portail de conformité, accédez à Gestion **des** >  risques internes **Paramètres** > **Détections intelligentes**. 
 2. Dans la section **Types d’informations sensibles** , sélectionnez **Ajouter des types d’informations sensibles à exclure**.
@@ -258,6 +258,24 @@ Pour ajouter des types d’informations sensibles à exclure, procédez comme su
 4. Sélectionnez **Ajouter** accepter les modifications ou **Annuler** pour ignorer les modifications. 
 
 Pour supprimer une exclusion de type d’informations sensibles, sélectionnez l’exclusion et **Supprimer**.
+
+### <a name="trainable-classifier-exclusion-preview"></a>Exclusion du classifieur pouvant être formé (préversion)
+
+[Les classifieurs pouvant être formés](classifier-get-started-with.md) exclus dans les paramètres sont mappés à des indicateurs et des déclencheurs impliquant des activités liées aux fichiers pour SharePoint, Teams, OneDrive et Exchange. Pour les fichiers qui contiennent des classifieurs pouvant être entraînés identifiés ici, ils seront notés sur le risque, mais pas affichés en tant qu’activités impliquant du contenu lié aux classifieurs pouvant être entraînés. Pour plus d’informations, consultez [Définitions des classifieurs pouvant être formés](classifier-tc-definitions.md#trainable-classifiers-definitions) pour obtenir la liste complète de tous les classifieurs préentraînés.
+
+Vous pouvez sélectionner les classifieurs pouvant être formés à exclure de la liste de tous les types disponibles (out-of-box et custom) disponibles dans le locataire. La gestion des risques internes exclut certains classifieurs pouvant être formés par défaut, notamment les menaces, les blasphèmes, le harcèlement ciblé, le langage offensant et la discrimination. Vous pouvez choisir jusqu’à 500 classifieurs pouvant être formés à exclure.
+
+> [!NOTE]
+> Si vous le souhaitez, vous pouvez choisir des classifieurs pouvant être entraînés à inclure dans la liste de [contenu prioritaire](insider-risk-management-policies.md#prioritize-content-in-policies) .
+
+Pour exclure les classifieurs pouvant être formés, procédez comme suit :
+
+1. Dans le portail de conformité, accédez à Gestion **des** >  risques internes **Paramètres** > **Détections intelligentes**. 
+2. Dans la section **Classifieurs pouvant être formés** , sélectionnez **Ajouter des classifieurs pouvant être formés à exclure**.
+3. Dans le volet **Ajouter ou modifier des classifieurs pouvant être entraînés** , sélectionnez les classifieurs que vous souhaitez exclure.
+4. Sélectionnez **Ajouter** accepter les modifications ou **Annuler** pour ignorer les modifications. 
+
+Pour supprimer une exclusion de classifieurs pouvant être formés, sélectionnez l’exclusion et **Supprimer**.
 
 ### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
 
@@ -651,7 +669,7 @@ Pour les analyses terminées, vous verrez les risques potentiels découverts dan
 
 ![Rapport de vue d’ensemble de l’analytique de gestion des risques internes.](../media/insider-risk-analytics-overview.png)
 
-Pour afficher plus d’informations sur un insight, sélectionnez **Afficher les détails** afin d’afficher le volet d’informations de l’insight. Le volet d’informations inclut les résultats complets des insights, une recommandation de stratégie de risque interne et le bouton **Créer une stratégie** pour vous aider à créer rapidement la stratégie recommandée. Si vous sélectionnez Créer une stratégie, vous accédez à l’Assistant Stratégie et sélectionne automatiquement le modèle de stratégie recommandé lié à l’insight. Par exemple, si l’insight analytique concerne l’activité de *fuite de données* , le modèle de stratégie *Fuites de données générales* est pré-sélectionné dans l’Assistant Stratégie pour vous.
+Pour afficher plus d’informations sur un insight, sélectionnez **Afficher les détails** afin d’afficher le volet d’informations de l’insight. Le volet d’informations inclut les résultats complets des insights, une recommandation de stratégie de risque interne et le bouton **Créer une stratégie** pour vous aider à créer rapidement la stratégie recommandée. Si vous sélectionnez Créer une stratégie, vous accédez à l’Assistant Stratégie et sélectionne automatiquement le modèle de stratégie recommandé lié à l’insight. Par exemple, si l’insight analytique concerne l’activité de *fuite de données* , le modèle de stratégie *Fuites de données* est pré-sélectionné dans l’Assistant Stratégie pour vous.
 
 ![Rapport d’analyse des détails de la gestion des risques internes.](../media/insider-risk-analytics-details.png)
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 279fdd6738811dda31a237e57b91558fb439d81b
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: c394e5b40f7c01399b822db45550a1772415244f
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565880"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794201"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -121,7 +121,7 @@ Une fois les étiquettes de confidentialité activées pour les conteneurs, comm
             
             Pour plus d’informations sur la configuration, consultez [Plus d’informations sur les dépendances de l’option d’appareils non gérés](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) à la fin de cette section.
             
-        - **Choisissez un contexte d’authentification existant** : cette option vous permet d’appliquer des conditions d’accès plus strictes lorsque les utilisateurs accèdent à des sites SharePoint auxquels cette étiquette est appliquée. Ces conditions sont appliquées lorsque vous sélectionnez un contexte d’authentification existant qui a été créé et publié pour le déploiement de l’accès conditionnel de votre organisation. Si les utilisateurs ne respectent pas les conditions configurées ou s'ils utilisent des applications qui ne prennent pas en charge les contextes d'authentification, l'accès leur est refusé.
+        - **Choisir un contexte d’authentification existant** : cette option vous permet d’appliquer des conditions d’accès plus strictes lorsque les utilisateurs accèdent aux sites SharePoint auxquels cette étiquette est appliquée. Ces conditions sont appliquées lorsque vous sélectionnez un contexte d’authentification existant qui a été créé et publié pour le déploiement de l’accès conditionnel de votre organisation. Si les utilisateurs ne respectent pas les conditions configurées ou s'ils utilisent des applications qui ne prennent pas en charge les contextes d'authentification, l'accès leur est refusé.
             
             Pour plus d’informations sur la configuration, consultez [Plus d’informations sur les dépendances de l’option de contexte d’authentification](#more-information-about-the-dependencies-for-the-authentication-context-option) à la fin de cette section.
             
@@ -476,7 +476,7 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 Lorsque quelqu’une personne ajoute ou supprime une étiquette de sensibilité sur ou à partir d’un site ou d’un groupe, ces activités sont également auditées, mais l’e-mail n’est pas généré automatiquement.
 
-Ces événements d’audit peuvent être consultés dans la catégorie [Activités des d’étiquette de confidentialité](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities). Pour obtenir des instructions sur les recherches dans un journal d’audit, consultez [Effectuer des recherches dans le journal d’audit du Centre de sécurité et conformité](search-the-audit-log-in-security-and-compliance.md).
+Ces événements d’audit peuvent être consultés dans la catégorie [Activités des d’étiquette de confidentialité](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities). Pour obtenir des instructions sur la recherche dans le journal d’audit, consultez [Rechercher dans le journal d’audit dans le portail de conformité](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>Comment désactiver les étiquettes de confidentialité pour les conteneurs
 

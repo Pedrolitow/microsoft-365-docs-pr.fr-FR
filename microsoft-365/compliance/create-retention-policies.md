@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: f78df6609a501cafb086aa82d86374258f468ee6
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: c8e6540e42b6692c980b96cec859a137d866c965
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786516"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793827"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -79,7 +79,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 > [!NOTE]
 > Les stratégies de rétention prennent en charge [les canaux partagés](/MicrosoftTeams/shared-channels). Lorsque vous configurez les paramètres de rétention pour l'emplacement **des messages du canal Teams**, si une équipe a des canaux partagés, ils héritent des paramètres de rétention de leur équipe parente.
 > 
-> Les stratégies de rétention prennent également en charge les enregistrements de données d’appel nouvellement créés, qui sont des messages générés par le système. Toutefois, les enregistrements de données d’appel pour les messages de canal privé sont inclus dans l’emplacement **des conversations Teams** , au lieu de l’emplacement des **messages du canal privé Teams** .
+> Les stratégies de rétention prennent également en charge les enregistrements de données d’appel nouvellement créés, qui sont des messages générés par le système qui contiennent des [métadonnées pour les réunions et les appels](/MicrosoftTeams/ediscovery-investigation#teams-metadata). Toutefois, les enregistrements de données d’appel pour les messages de canal privé sont inclus dans l’emplacement **des conversations Teams** , au lieu de l’emplacement des **messages du canal privé Teams** .
 
 1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Gestion du cycle de vie des** >  données Stratégies de **rétention** **Microsoft 365** > .
 

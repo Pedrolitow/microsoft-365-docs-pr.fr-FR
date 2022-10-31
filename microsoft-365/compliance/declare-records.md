@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Pour déclarer des documents et des e-mails en tant qu’enregistrements, utilisez des étiquettes de rétention Microsoft 365 qui marquent des éléments comme un enregistrement ou un enregistrement réglementaire.
-ms.openlocfilehash: 53ff0da40f3c7b8916d3dd70cbb0fc0e4d9aaeb9
-ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+description: Pour déclarer des documents et des e-mails en tant qu’enregistrements, utilisez des étiquettes de rétention Microsoft 365 qui marquent les éléments en tant qu’enregistrement ou enregistrement réglementaire.
+ms.openlocfilehash: 4cae7a214cc3d41a62f3630c07ba0ef1da75a285
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68382048"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793277"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
@@ -99,7 +99,7 @@ Pour les éléments SharePoint :
 Pour les éléments Exchange :
 - Dans **Activités sur la boîte aux lettres Exchange**, sélectionnez **Message étiqueté comme enregistrement**. Cet événement d’audit est destiné aux étiquettes de rétention marquant des éléments comme enregistrements ou des enregistrements réglementaires.
 
-Pour plus d’informations sur la recherche de ces événements, consultez [Effectuer une recherche dans le journal d’audit dans le centre de sécurité et conformité](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+Pour plus d’informations sur la recherche de ces événements, consultez [Rechercher dans le journal d’audit dans le portail de conformité](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

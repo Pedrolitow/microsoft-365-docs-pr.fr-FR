@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 391756321722122c699ce4477d9cf495909d8d07
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 1ba34b942c125ec08cb0372fa09c50e68e4c1a32
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769114"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793651"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -177,7 +177,7 @@ Le connecteur Microsoft 365 HR est requis lors de l’utilisation des modèles d
 
 - Fuites de données par des utilisateurs à risque
 - Vol de données utilisateur sortant
-- Mauvaise utilisation des données générales sur les patients
+- Mauvaise utilisation des données des patients
 - Violations de stratégie de sécurité par des utilisateurs quittant l’entreprise
 - Violations de stratégie de sécurité par les utilisateurs à risque
 
@@ -189,7 +189,7 @@ La gestion des risques internes prend en charge l’importation de données util
 
 Si vous configurez plusieurs connecteurs Soins de santé ou Epic pour votre organisation, la gestion des risques internes prend automatiquement en charge les signaux d’événements et d’activités de tous les connecteurs Soins de santé et Epic. Le connecteur Microsoft 365 Healthcare ou Epic est requis lors de l’utilisation des modèles de stratégie suivants :
 
-- Mauvaise utilisation des données générales sur les patients
+- Mauvaise utilisation des données des patients
 
 Consultez l’article [Configurer un connecteur pour importer des données médicales](import-healthcare-data.md) ou [Configurer un connecteur pour importer des données Epic EHR](import-epic-data.md) pour obtenir des instructions pas à pas pour configurer un connecteur spécifique aux soins de santé pour votre organisation. Une fois que vous avez configuré un connecteur, revenez à ces étapes de configuration.
 
@@ -197,7 +197,7 @@ Consultez l’article [Configurer un connecteur pour importer des données médi
 
 La gestion des risques internes prend en charge l’utilisation de stratégies DLP pour aider à identifier l’exposition intentionnelle ou accidentelle d’informations sensibles à des parties indésirables pour les alertes DLP de niveau de gravité élevé. Lors de la configuration d’une stratégie de gestion des risques internes avec l’un des modèles **de fuites de données** , vous avez la possibilité d’affecter une stratégie DLP spécifique à la stratégie pour ces types d’alertes.
 
-Les stratégies de perte de données permettent d’identifier les utilisateurs pour activer le scoring des risques dans la gestion des risques internes pour les alertes DLP de gravité élevée pour les informations sensibles et constituent une partie importante de la configuration de la couverture complète de la gestion des risques dans votre organisation. Pour plus d’informations sur la gestion des risques internes et les considérations relatives à l’intégration et à la planification des stratégies DLP, consultez Stratégies de [gestion des risques internes](insider-risk-management-policies.md#general-data-leaks).
+Les stratégies de perte de données permettent d’identifier les utilisateurs pour activer le scoring des risques dans la gestion des risques internes pour les alertes DLP de gravité élevée pour les informations sensibles et constituent une partie importante de la configuration de la couverture complète de la gestion des risques dans votre organisation. Pour plus d’informations sur la gestion des risques internes et les considérations relatives à l’intégration et à la planification des stratégies DLP, consultez Stratégies de [gestion des risques internes](insider-risk-management-policies.md#data-leaks).
 
 > [!IMPORTANT]
 > Vérifiez que vous avez effectué les opérations suivantes :
@@ -207,7 +207,7 @@ Les stratégies de perte de données permettent d’identifier les utilisateurs 
 
 Une stratégie DLP est facultative lors de l’utilisation des modèles de stratégie suivants :
 
-- Fuites de données générales
+- Fuites de données
 - Fuites de données par des utilisateurs prioritaires
 
 Consultez l’article [Créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation. Une fois que vous avez configuré une stratégie DLP, revenez à ces étapes de configuration.
@@ -264,7 +264,8 @@ Avant de configurer une stratégie, définissez les paramètres de risque intern
     - [Volume d’alerte](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender pour point de terminaison état des alertes](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
     - [Domaines](insider-risk-management-settings.md#domains)
-    - [Exclusion du type d’informations sensibles](insider-risk-management-settings.md#sensitive-info-types-exclusion)
+    - [Exclusion du type d’informations sensibles](insider-risk-management-settings.md#sensitive-info-types-exclusion-preview)
+    - [Exclusion des classifieurs pouvant être formés](insider-risk-management-settings.md#trainable- classifier-exclusion-preview)
     - [Exclusions de chemin d’accès de fichier](insider-risk-management-settings.md#file-path-exclusions)
     - [Exclusions de site](insider-risk-management-settings.md#site-exclusions)
     - [Exclusion de mot clé](insider-risk-management-settings.md#keyword-exclusion)
@@ -302,19 +303,20 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 
 10. Sélectionnez **Suivant** pour continuer.
 
-11. Si vous avez sélectionné **Je veux hiérarchiser le contenu à** l’étape précédente, vous verrez les pages de détails pour les *sites SharePoint*, les *types d’informations sensibles*, *les étiquettes de confidentialité, les* *extensions de fichier* et le *scoring*. Utilisez ces pages de détails pour définir les sharePoint, les types d’informations sensibles, les étiquettes de confidentialité et les extensions de fichier à hiérarchiser dans la stratégie. La page *Détails du scoring* vous permet d’étendre la stratégie de manière à affecter uniquement des scores de risque et à générer des alertes pour les activités spécifiées qui incluent du contenu prioritaire.
+11. Si vous avez sélectionné **Je veux hiérarchiser le contenu à** l’étape précédente, vous verrez les pages de détails pour les *sites SharePoint*, les *types d’informations sensibles*, *les étiquettes de confidentialité, les* *extensions de fichier* et le *scoring*. Utilisez ces pages de détails pour définir les sharePoint, les types d’informations sensibles, les étiquettes de confidentialité, les classifieurs pouvant être formés et les extensions de fichier à hiérarchiser dans la stratégie. La page *Détails du scoring* vous permet d’étendre la stratégie de manière à affecter uniquement des scores de risque et à générer des alertes pour les activités spécifiées qui incluent du contenu prioritaire.
 
     - **Sites SharePoint** : sélectionnez **Ajouter un site SharePoint**, puis sélectionnez les sites SharePoint auxquels vous avez accès et que vous souhaitez classer. Par exemple, *« groupe1@contoso.sharepoint.com/sites/group1 »*.    
     - **Type d’information sensible** : sélectionnez **Ajouter un type d’information confidentielle**, puis les types de confidentialité que vous souhaitez classer. Par exemple, *« Numéro de compte bancaire américain »* et *« Numéro de carte de crédit »*.
     - **Étiquette de confidentialité** : sélectionnez **Ajouter une étiquette de confidentialité**, puis les étiquettes que vous souhaitez classer. Par exemple, *« Confidentiel »* et *« Secret »*.
+    - **Classifieurs pouvant être entraînés** : sélectionnez **Ajouter un classifieur pouvant** être entraîné et sélectionnez les classifieurs pouvant être formés que vous souhaitez hiérarchiser. Par exemple, *code source*.
     - **Extensions de fichier** : ajoutez jusqu’à 50 extensions de fichier. Vous pouvez inclure ou omettre « . » avec l’extension de fichier. Par exemple, *.py* ou *py* hiérarchise les fichiers Python.
-     - **Scoring** : déterminez s’il faut attribuer des scores de risque à toutes les activités de gestion des risques détectées par cette stratégie ou uniquement aux activités qui incluent du contenu prioritaire. Choisissez **Obtenir des alertes pour toutes les activités** ou **Obtenir des alertes uniquement pour les activités qui incluent du contenu prioritaire**.
+    - **Scoring** : déterminez s’il faut attribuer des scores de risque à toutes les activités de gestion des risques détectées par cette stratégie ou uniquement aux activités qui incluent du contenu prioritaire. Choisissez **Obtenir des alertes pour toutes les activités** ou **Obtenir des alertes uniquement pour les activités qui incluent du contenu prioritaire**.
 
     > [!NOTE]
     > Les utilisateurs qui configurent la stratégie et sélectionnent les sites SharePoint prioritaires peuvent sélectionner les sites SharePoint auxquels ils sont autorisés à accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites pour la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 
 12. Sélectionnez **Suivant** pour continuer.
-13. Si vous avez sélectionné les *modèles Fuites de données générales* ou *Fuites de données par les utilisateurs prioritaires* , vous verrez des options dans la page **Déclencheurs de cette stratégie** pour les événements et indicateurs de stratégie de déclenchement personnalisés. Vous avez le choix de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue pour le scoring d’activité. Si vous sélectionnez l’option d’événement déclencheur de stratégie De protection contre **la perte de données (DLP),** vous devez sélectionner une stratégie DLP dans la liste déroulante stratégie DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez l’option **L’utilisateur effectue un événement déclencheur d’activité d’exfiltration** , vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement de déclenchement de stratégie.
+13. Si vous avez sélectionné les *modèles Fuites de données* ou *Fuites de données par les utilisateurs prioritaires* , vous verrez des options dans la page **Déclencheurs de cette stratégie** pour les événements et indicateurs de stratégie de déclenchement personnalisés. Vous avez le choix de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue pour le scoring d’activité. Si vous sélectionnez l’option d’événement déclencheur de stratégie De protection contre **la perte de données (DLP),** vous devez sélectionner une stratégie DLP dans la liste déroulante stratégie DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez l’option **L’utilisateur effectue un événement déclencheur d’activité d’exfiltration** , vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement de déclenchement de stratégie.
 
     > [!IMPORTANT]
     > Si vous ne parvenez pas à sélectionner un indicateur ou une séquence répertoriés, c’est parce qu’ils ne sont pas actuellement activés pour votre organisation. Pour les rendre disponibles pour les sélectionner et les affecter à la stratégie, sélectionnez l’invite **Activer les indicateurs** .
@@ -323,7 +325,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 
 14. Si vous avez sélectionné *les modèles Fuites de données par les utilisateurs à risque* ou *Violations de stratégie de sécurité par les utilisateurs à risque* , vous verrez des options dans la page **Déclencheurs de cette stratégie pour** l’intégration aux événements de conformité de la communication et de connecteur de données RH. Vous avez le choix d’attribuer des scores de risque lorsque les utilisateurs envoient des messages qui contiennent un langage potentiellement menaçant, harcelant ou discriminatoire, ou d’amener les utilisateurs dans l’étendue de la stratégie après que des événements utilisateur à risque ont été signalés dans votre système RH. Si vous sélectionnez l’option **Déclencheurs à risque à partir de la conformité des communications (préversion),** vous pouvez accepter la stratégie de conformité des communications par défaut (créée automatiquement), choisir une étendue de stratégie créée précédemment pour ce déclencheur ou créer une autre stratégie délimitée. Si vous sélectionnez **événements de connecteur de données RH**, vous devez configurer un connecteur de données RH pour votre organisation.
 15. Sélectionnez **Suivant** pour continuer.
-16. Si vous avez sélectionné les *modèles Fuites de données générales* ou *Fuites de données par les utilisateurs prioritaires* et que vous avez sélectionné l’utilisateur **effectue une activité d’exfiltration et les indicateurs associés**, vous pouvez choisir des seuils personnalisés ou par défaut pour les événements déclencheurs d’indicateur que vous avez sélectionnés. Choisissez **l’option Utiliser les seuils par défaut (recommandé)** ou **Utiliser des seuils personnalisés pour les événements de déclenchement**.
+16. Si vous avez sélectionné les *modèles Fuites de données* ou *Fuites de données par les utilisateurs prioritaires* et que vous avez sélectionné l’activité **Utilisateur effectue une activité d’exfiltration et les indicateurs associés**, vous pouvez choisir des seuils personnalisés ou par défaut pour les événements déclencheurs d’indicateur que vous avez sélectionnés. Choisissez **l’option Utiliser les seuils par défaut (recommandé)** ou **Utiliser des seuils personnalisés pour les événements de déclenchement**.
 17. Sélectionnez **Suivant** pour continuer.
 18. Si vous avez sélectionné **Utiliser des seuils personnalisés pour les événements de déclenchement**, pour chaque indicateur d’événement de déclenchement que vous avez sélectionné à l’étape 13, choisissez le niveau approprié pour générer le niveau souhaité d’alertes d’activité. Vous pouvez utiliser les seuils recommandés, les seuils personnalisés ou les seuils basés sur des activités anormales (pour certains indicateurs) au-dessus de la norme quotidienne pour les utilisateurs.
 19. Sélectionnez **Suivant** pour continuer.

@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 540d7bd367f32399004b276ee9d7c92bc70b70a3
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 9e752622d40e79dd5d4a0da54b90d26c1162a40a
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770302"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793343"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -272,7 +272,7 @@ L’examen, l’examen et l’action sur les alertes internes potentiellement ri
 Être submergé par le nombre d’alertes produites par vos stratégies de gestion des risques internes peut être frustrant. Le nombre d’alertes peut être traité rapidement par des étapes simples, en fonction des types de volume d’alertes que vous recevez. Vous recevez peut-être trop d’alertes valides ou trop d’alertes obsolètes à faible risque. Envisagez d’effectuer les actions suivantes :
 
 - **Ajuster vos stratégies de risque interne** : la sélection et la configuration de la stratégie de risque interne appropriée est la méthode la plus simple pour traiter le type et le volume des alertes. Le fait de commencer par le [modèle de stratégie](insider-risk-management-policies.md#policy-templates) approprié permet de concentrer les types d’activités à risque et d’alertes que vous verrez. Les autres facteurs susceptibles d’avoir un impact sur le volume des alertes sont la taille de l’utilisateur et des groupes dans l’étendue, ainsi que le contenu et [les canaux qui sont hiérarchisés](insider-risk-management-policies.md#prioritize-content-in-policies). Envisagez d’ajuster les stratégies pour affiner ces domaines en fonction de ce qui est le plus important pour votre organisation.
-- **Modifiez vos paramètres de risque interne** : les paramètres de risque interne incluent un large éventail d’options de configuration qui peuvent avoir un impact sur le volume et les types d’alertes que vous recevrez. Il s’agit notamment des paramètres pour les [indicateurs de stratégie](insider-risk-management-settings.md#indicators), [les seuils d’indicateur](insider-risk-management-settings.md#indicator-level-settings-preview) et [les délais de stratégie](insider-risk-management-settings.md#policy-timeframes). Envisagez de configurer des options de [détection intelligente pour](insider-risk-management-settings.md#intelligent-detections) exclure des types de fichiers et des types d’informations sensibles spécifiques, définir des seuils minimaux avant que les alertes d’activité ne soient signalées par vos stratégies et modifier la configuration du volume d’alerte par un paramètre inférieur.
+- **Modifiez vos paramètres de risque interne** : les paramètres de risque interne incluent un large éventail d’options de configuration qui peuvent avoir un impact sur le volume et les types d’alertes que vous recevrez. Il s’agit notamment des paramètres pour les [indicateurs de stratégie](insider-risk-management-settings.md#indicators), [les seuils d’indicateur](insider-risk-management-settings.md#indicator-level-settings-preview) et [les délais de stratégie](insider-risk-management-settings.md#policy-timeframes). Envisagez de configurer des options de [détection intelligente pour](insider-risk-management-settings.md#intelligent-detections) exclure des types de fichiers et des types d’informations sensibles spécifiques, des classifieurs pouvant être formés, définir des seuils minimaux avant que les alertes d’activité ne soient signalées par vos stratégies et modifier la configuration du volume d’alerte par un paramètre inférieur.
 - **Activer la personnalisation des alertes inline (préversion)** : l’activation de la [personnalisation des alertes inline](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) permet aux analystes et aux enquêteurs de modifier rapidement les stratégies lors de l’examen des alertes. Ils peuvent mettre à jour les seuils de détection d’activité avec les recommandations de Microsoft, configurer des seuils personnalisés ou choisir d’ignorer le type d’activité qui a créé l’alerte. Si cette option n’est pas activée, seuls les utilisateurs affectés au groupe *de rôles Gestion des risques internes* peuvent utiliser la personnalisation des alertes inline.
 - **Suppression en bloc des alertes le cas échéant** : cela peut vous aider à gagner du temps de tri pour que vos analystes et enquêteurs [ignorent immédiatement plusieurs alertes](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) à la fois. Vous pouvez sélectionner jusqu’à 400 alertes à ignorer simultanément.
 

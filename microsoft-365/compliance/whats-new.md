@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 70ba18d1471ea5fc5d145f64b68c6fef1691124c
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: 0d84b220496fd0a8f371e57492bb9f4cdd009be8
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777646"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793739"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Nouveautés des solutions de conformité et de risque Microsoft Purview
 
@@ -63,7 +63,7 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 - **Disponibilité générale (GA)** : [réétiquetage à la fin de la période de rétention](retention-settings.md#relabeling-at-the-end-of-the-retention-period).
 - **Disponibilité générale (GA)** : [démarrage d’un enregistrement déverrouillé](declare-records.md#configuring-retention-labels-to-declare-records).
 - **Disponibilité générale (GA)** : les utilisateurs peuvent désormais appliquer des étiquettes de rétention publiées aux fichiers [directement dans Teams](create-apply-retention-labels.md#applying-retention-labels-using-microsoft-365-groups).
-- Nouvelles instructions de prise en charge de la rétention : les stratégies de rétention pour Teams prennent en charge la [fonctionnalité de conversation avec moi-même](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) et [les clips vidéo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), ainsi que les stratégies de rétention pour les [billets de support](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69) Yammer.
+- Nouvelles instructions de prise en charge de la rétention : les stratégies de rétention pour Teams prennent en charge la fonctionnalité [de conversation avec moi-même](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) , [les clips vidéo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c) et les enregistrements de données d’appel, qui sont des messages générés par le système qui contiennent des [métadonnées pour les réunions et les appels](/MicrosoftTeams/ediscovery-investigation#teams-metadata). Les stratégies de rétention pour yammer prennent en charge les [billets de scénario](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69).
 - Amélioration de l’expérience dans le produit si les stratégies de rétention comportent des erreurs : vous verrez maintenant une description détaillée de l’erreur dans le volet d’informations, avec des actions intégrées au produit à effectuer pour résoudre le problème. Par exemple, supprimez les emplacements non valides et resynchronisez la stratégie.
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
