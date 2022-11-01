@@ -15,18 +15,29 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Étape 4 de la fonctionnalité de migration interlocataire OneDrive
-ms.openlocfilehash: 971646a4f8eff31c0b1f5a3fad62ba66e00713ea
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 107bb6e2b8ab08d871b0671491bc9098e02ed034
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68806094"
+ms.locfileid: "68807736"
 ---
 # <a name="step-4-pre-creating-users-and-groups"></a>Étape 4 : Précréer des utilisateurs et des groupes
 
-Pour vous assurer que les autorisations OneDrive sont conservées dans le cadre de la migration, un fichier de mappage doit être créé pour aligner les utilisateurs du locataire source sur le locataire cible.
+Il s’agit de l’étape 4 d’une solution conçue pour effectuer une migration OneDrive interlocataire. Pour plus d’informations, consultez [Vue d’ensemble de la migration OneDrive interlocataire](cross-tenant-onedrive-migration.md).
+
+- Étape 1 : [Se connecter à la source et aux locataires cibles](cross-tenant-onedrive-migration-step1.md)
+- Étape 2 : [Établir une relation de confiance entre le locataire source et le locataire cible](cross-tenant-onedrive-migration-step2.md) 
+- Étape 3 : [Vérifier que l’approbation a été établie](cross-tenant-onedrive-migration-step3.md) 
+- **Étape 4 : [Précréer des utilisateurs et des groupes](cross-tenant-onedrive-migration-step4.md)**  
+- Étape 5 : [Préparer le mappage d’identité](cross-tenant-onedrive-migration-step5.md)
+- Étape 6 : [Démarrer une migration OneDrive interlocataire](cross-tenant-onedrive-migration-step6.md)
+- Étape 7 : [Étapes post-migration](cross-tenant-onedrive-migration-step7.md)
+
 
 ## <a name="identify-users-and-groups-to-be-migrated"></a>Identifier les utilisateurs et les groupes à migrer
+
+Pour vous assurer que les autorisations OneDrive sont conservées dans le cadre de la migration, un fichier de mappage doit être créé pour aligner les utilisateurs du locataire source sur le locataire cible.
 
 1. Identifiez la liste complète des sites OneDrive qui seront migrés de la source vers le locataire cible.
 2. Préparez une liste complète des utilisateurs et des groupes qui seront migrés vers le locataire cible.

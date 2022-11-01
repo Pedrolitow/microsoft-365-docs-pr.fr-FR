@@ -15,14 +15,24 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Étape 6 de la fonctionnalité de migration interlocataire OneDrive
-ms.openlocfilehash: 6ebf12c11388d35daa4e8261c193af721af88124
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: b12ff8d9b1aebcfa0286f7c1bc291586cb9c0f91
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68805444"
+ms.locfileid: "68807714"
 ---
 # <a name="step-6-start-a-onedrive-cross-tenant-migration"></a>Étape 6 : Démarrer une migration interlocataire OneDrive
+
+Il s’agit de l’étape 6 d’une solution conçue pour effectuer une migration OneDrive interlocataire. Pour plus d’informations, consultez [Vue d’ensemble de la migration OneDrive interlocataire](cross-tenant-onedrive-migration.md).
+
+- Étape 1 : [Se connecter à la source et aux locataires cibles](cross-tenant-onedrive-migration-step1.md)
+- Étape 2 : [Établir une relation de confiance entre le locataire source et le locataire cible](cross-tenant-onedrive-migration-step2.md) 
+- Étape 3 : [Vérifier que l’approbation a été établie](cross-tenant-onedrive-migration-step3.md) 
+- Étape 4 : [Précréer des utilisateurs et des groupes](cross-tenant-onedrive-migration-step4.md)  
+- Étape 5 : [Préparer le mappage d’identité](cross-tenant-onedrive-migration-step5.md)
+- **Étape 6 : [Démarrer une migration OneDrive interlocataire](cross-tenant-onedrive-migration-step6.md)**
+- Étape 7 : [Étapes post-migration](cross-tenant-onedrive-migration-step7.md)
 
 Vous êtes maintenant prêt à démarrer votre migration OneDrive.  Avant de commencer une migration interlocataire, procédez comme suit. 
 

@@ -15,14 +15,24 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Étape 7 de la fonctionnalité de migration interlocataire OneDrive
-ms.openlocfilehash: acd9130b6058ef0dceae0dcc8c6e60699a4fd39e
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 22d18111bc45d30fab5cc9012857a979fa510e18
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68805364"
+ms.locfileid: "68807581"
 ---
 # <a name="step-7--post-migration-steps"></a>Étape 7 : Étapes post-migration
+
+Il s’agit de l’étape 7 d’une solution conçue pour effectuer une migration OneDrive interlocataire. Pour plus d’informations, consultez [Vue d’ensemble de la migration OneDrive interlocataire](cross-tenant-onedrive-migration.md).
+
+- Étape 1 : [Se connecter à la source et aux locataires cibles](cross-tenant-onedrive-migration-step1.md)
+- Étape 2 : [Établir une relation de confiance entre le locataire source et le locataire cible](cross-tenant-onedrive-migration-step2.md) 
+- Étape 3 : [Vérifier que l’approbation a été établie](cross-tenant-onedrive-migration-step3.md) 
+- Étape 4 : [Précréer des utilisateurs et des groupes](cross-tenant-onedrive-migration-step4.md)  
+- Étape 5 : [Préparer le mappage d’identité](cross-tenant-onedrive-migration-step5.md)
+- Étape 6 : [Démarrer une migration OneDrive interlocataire](cross-tenant-onedrive-migration-step6.md)
+- **Étape 7 : [Étapes post-migration](cross-tenant-onedrive-migration-step7.md)**
 
 ## <a name="removing-trust-relationship"></a>Suppression d’une relation d’approbation
 

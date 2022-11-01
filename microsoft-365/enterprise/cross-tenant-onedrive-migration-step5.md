@@ -15,20 +15,30 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Étape 5 de la fonctionnalité de migration interlocataire OneDrive
-ms.openlocfilehash: 8ebd76f91ddb1711cb1aa5e2a66ae5fb27b71d5c
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 5e8706b88b255132bb4db36cd6010668b36b3f26
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68805502"
+ms.locfileid: "68807670"
 ---
-# <a name="step-5-cross-tenant-onedrive-migration---identity-mapping"></a>Étape 5 : Migration OneDrive interlocataire - Mappage des identités
+# <a name="step-5-identity-mapping"></a>Étape 5 : Mappage d’identité
+
+Il s’agit de l’étape 5 d’une solution conçue pour effectuer une migration OneDrive interlocataire. Pour plus d’informations, consultez [Vue d’ensemble de la migration OneDrive interlocataire](cross-tenant-onedrive-migration.md).
+
+- Étape 1 : [Se connecter à la source et aux locataires cibles](cross-tenant-onedrive-migration-step1.md)
+- Étape 2 : [Établir une relation de confiance entre le locataire source et le locataire cible](cross-tenant-onedrive-migration-step2.md) 
+- Étape 3 : [Vérifier que l’approbation a été établie](cross-tenant-onedrive-migration-step3.md) 
+- Étape 4 : [Précréer des utilisateurs et des groupes](cross-tenant-onedrive-migration-step4.md)  
+- **Étape 5 : [Préparer le mappage d’identité](cross-tenant-onedrive-migration-step5.md)**
+- Étape 6 : [Démarrer une migration OneDrive interlocataire](cross-tenant-onedrive-migration-step6.md)
+- Étape 7 : [Étapes post-migration](cross-tenant-onedrive-migration-step7.md)
+
+## <a name="create-the-identity-mapping-file"></a>Créer le fichier de mappage d’identité 
 
 Dans cette étape du processus de migration entre locataires, vous allez créer un seul fichier CSV (valeurs séparées par des virgules) qui contient le mappage des utilisateurs et des groupes sur le locataire source à leurs utilisateurs et groupes correspondants sur le locataire cible.
 
 Nous vous recommandons de prendre le temps de vérifier vos mappages, en vous assurant qu’ils sont exacts avant de commencer les migrations vers le locataire cible.
-
-## <a name="create-the-identity-mapping-file"></a>Créer le fichier de mappage d’identité 
 
 Il existe une relation un-à-un dans le fichier de mappage d’identité.  Vous ne pouvez pas mapper le même utilisateur à plusieurs utilisateurs dans le locataire cible. Par exemple, si vous avez des instances où l’administrateur est le propriétaire de plusieurs comptes OneDrive, la propriété doit être modifiée pour correspondre à l’utilisateur correspondant que vous souhaitez migrer de source vers cible.  Si ce n’est pas le cas, ces fichiers de compte ne seront pas migrés.
 

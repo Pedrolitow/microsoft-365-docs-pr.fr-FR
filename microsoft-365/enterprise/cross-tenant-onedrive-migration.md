@@ -14,27 +14,28 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Migration OneDrive interlocataire
-ms.openlocfilehash: a822c019e2c81bf23537ea4f0db139b6b433e7c8
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 6e2d925d6512df4fa62d3b8d5b71138439f836e8
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68804221"
+ms.locfileid: "68807517"
 ---
 # <a name="cross-tenant-onedrive-migration"></a>Migration OneDrive interlocataire
 
 >[!Note]
-> Cette fonctionnalité n’est actuellement pas prise en charge pour les utilisateurs du cloud du secteur public, notamment GCC, Consumer, GCC High ou DoD.
-
-
->[!Note]
-> Les informations contenues dans cet article font référence à **la migration OneDrive interlocataire**. [En savoir plus sur la migration de boîtes aux lettres entre locataires ici](/microsoft-365/enterprise/cross-tenant-mailbox-migration)
+> Les informations contenues dans cet article font référence à **la migration OneDrive interlocataire**. Pour la migration de boîtes aux lettres, consultez [Migration de boîtes aux lettres entre locataires](/microsoft-365/enterprise/cross-tenant-mailbox-migration).
 
 Pendant les fusions ou les cessions, vous avez généralement besoin de la possibilité de déplacer des comptes OneDrive d’utilisateurs vers un nouveau locataire Microsoft 365. Avec la migration OneDrive interlocataire, les administrateurs de locataires peuvent utiliser des outils familiers tels que *SharePoint Online PowerShell* pour effectuer la transition des utilisateurs vers leur nouvelle organisation.
 
 Les administrateurs SharePoint de deux locataires distincts peuvent utiliser l’applet *de commande Set-SPOCrossTenantRelationship* pour établir une relation d’organisation, et la commande *Start-SPOCrossTenantUserContentMove* pour commencer les déplacements OneDrive interlocataires.
 
 Jusqu’à 4 000 comptes OneDrive peuvent être planifiés pour la migration à l’avance à un moment donné. Une fois planifiées, les migrations se produisent sans que les données de l’utilisateur ne quittent jamais le cloud Microsoft 365 et avec une interruption minimale, ne nécessitant que quelques minutes où oneDrive d’un utilisateur sera en lecture seule. Une fois les migrations terminées, une redirection est placée à l’emplacement du OneDrive d’origine de l’utilisateur, de sorte que tous les liens vers des fichiers et des dossiers peuvent continuer à fonctionner dans le nouvel emplacement. 
+
+>[!Note]
+> Cette fonctionnalité n’est actuellement pas prise en charge pour les utilisateurs du cloud du secteur public, notamment GCC, Consumer, GCC High ou DoD.
+
+
 
 >[!Important]
 >- Chaque utilisateur disposant d’une migration interlocataire OneDrive doit disposer d’une licence pour **la migration des données utilisateur inter-locataires**.
@@ -94,8 +95,9 @@ Ces redirections restent jusqu’à ce que le locataire source soit déprovision
 - **Étape 1 :** [Se connecter à la source et aux locataires cibles](cross-tenant-onedrive-migration-step1.md).  
 - **Étape 2 :** [Établir une relation de confiance entre le locataire source et le locataire cible](cross-tenant-onedrive-migration-step2.md) 
 - **Étape 3 :** [Vérifier que l’approbation a été établie](cross-tenant-onedrive-migration-step3.md) 
-- **Étape 4 :** [Gérer les autorisations](cross-tenant-onedrive-migration-step4.md)  
+- **Étape 4 :** [Précréer des utilisateurs et des groupes](cross-tenant-onedrive-migration-step4.md)  
 - **Étape 5 :** [Préparer le mappage d’identité](cross-tenant-onedrive-migration-step5.md)
-- **Étape 6 :** [Démarrer une migration OneDrive interlocataire](cross-tenant-onedrive-migration-step6.md) 
+- **Étape 6 :** [Démarrer une migration OneDrive interlocataire]
+- **Étape 7 :** [Étapes post-migration](cross-tenant-onedrive-migration-step7.md)
 
 ## <a name="step-1-connect-to-source-and-target-tenants"></a>Étape 1 : [Se connecter aux locataires source et cible](cross-tenant-onedrive-migration-step1.md)

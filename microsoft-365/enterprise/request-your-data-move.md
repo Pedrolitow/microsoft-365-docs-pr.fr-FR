@@ -13,22 +13,23 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Les clients Office 365 existants doivent soumettre une demande avant l’échéance pour que leurs données de services Microsoft 365 soient déplacées vers leur nouvelle région géographique.
+description: Les clients Office 365 existants doivent envoyer une demande avant la date limite de leur pays pour que leurs données de services Microsoft 365 aient été déplacées vers leur nouvelle zone géographique.
 ms.custom: seo-marvel-apr2020
 ms.collection: scotvorg
-ms.openlocfilehash: bffd6c99f4df0cc89ae064d49fcc9c97d9e4dd3c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ROBOTS: NOINDEX
+ms.openlocfilehash: f70e7d54dab18a400a0c07073f57678cf4647819
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68208697"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68807385"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
-> Les informations de cette page s’appliquent uniquement aux clients qui avaient des locataires Microsoft 365 existants avant l’ouverture géographique des nouveaux centres de données dans leur centre de données. L’éligibilité à la migration dépend également de la date de provisionnement du service spécifique.  La date de création du locataire peut ne pas toujours être la date unique qui importe.
+> Les informations de cette page s’appliquent uniquement aux clients qui avaient des locataires Microsoft 365 existants avant l’ouverture géographique des nouveaux centres de données dans leur centre de données. L’éligibilité à la migration dépend également de la date d’approvisionnement du service spécifique.  La date de création du locataire peut ne pas toujours être la date unique qui importe.
   
-Les clients Microsoft 365 éligibles peuvent demander la migration pour l’ensemble des données client principales de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et auprès des clients disposant d’un pays d’inscription éligible associé à leur locataire Microsoft 365.
+Les clients Microsoft 365 éligibles peuvent demander une migration pour l’ensemble des données client de base de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et des clients dont le pays d’inscription est éligible associé à leur locataire Microsoft 365.
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 
@@ -52,16 +53,16 @@ Les clients Microsoft 365 éligibles peuvent demander la migration pour l’ense
 
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
-Les clients éligibles verront une page dans le Centre d'administration Microsoft 365, qui leur permettra de demander que leurs données client de base soient déplacées vers leur nouvelle région de centre de données.  
+Les clients éligibles verront une page dans le Centre d'administration Microsoft 365, ce qui leur permettra de demander à ce que leurs données client principales soient déplacées vers leur nouvelle région de centre de données.  
   
-Pour accéder à la page du Centre d'administration Microsoft 365, dans le volet de navigation de gauche, **développez Paramètres**, puis cliquez sur **Paramètres de l’organisation**.
+Pour accéder à la page dans le Centre d'administration Microsoft 365, dans le volet de navigation à gauche, développez **Paramètres**, puis cliquez sur **Paramètres de l’organisation**.
 Sélectionnez l’onglet **Profil d’organisation**, puis sélectionnez l’option **Résidence des données**.
   
-Cette section ne s’affiche pas si votre locataire n’est pas éligible au programme de déplacement Microsoft 365.  Si votre organisation a des exigences de résidence des données et que vous devez demander la migration, cochez la case, puis **enregistrez**.
+Vous ne verrez pas cette section si votre locataire n’est pas éligible au programme de déplacement Microsoft 365.  Si votre organisation a des exigences de résidence des données et que vous devez demander la migration, cochez la case, puis **enregistrez**.
   
 ![Écran d’action d’adhésion au centre de données.](../media/dataresidencyflyoutae.jpg)
   
-Le texte de la **section Résidence des données** change pour indiquer que **votre organisation a demandé à déplacer ses données** vers le pays et la date appropriés. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
+Le texte de la section **Résidence des données** changera pour indiquer que **votre organisation a demandé à déplacer ses données** vers le pays et la date appropriés. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
   
 ## <a name="what-happens-after-requesting-a-move"></a>Que se passe-t-il une fois la demande de déplacement effectuée ?
 
@@ -71,7 +72,7 @@ Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'éch�
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Depuis janvier 2020, les clients des pays éligibles Office 365 peuvent accepter la migration des données du service de conversation Microsoft Teams.  Les clients qui ont précédemment opté pour un déplacement Data Residency verront également Teams migrer vers leur emplacement géographique de centre de données local.  Aucune action supplémentaire n’est requise par ces clients.
+À compter de janvier 2020, les clients des pays Office 365 éligibles peuvent accepter la migration des données du service de conversation Microsoft Teams.  Les clients qui ont précédemment opté pour un déplacement de Data Residency devront également déplacer Teams vers la zone géographique de leur centre de données local.  Aucune action supplémentaire n’est requise par ces clients.
 
 ## <a name="related-topics"></a>Voir aussi
 
