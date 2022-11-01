@@ -17,12 +17,13 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans l’Union européenne
-ms.openlocfilehash: 2ceda849e5801bd986afd9731406a1d601d5dbe0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ROBOTS: NOINDEX
+ms.openlocfilehash: 956c513f12e01b0e283a292c50b4b256f68fb8c7
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198578"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798296"
 ---
 # <a name="data-locations-for-the-european-union"></a>Emplacements de données pour l’Union européenne
 

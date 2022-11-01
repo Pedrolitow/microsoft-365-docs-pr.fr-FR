@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/21/2022
+ms.date: 10/31/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 94f2818f2e470807b9e4ed7f4ee23334106e2d50
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 6ecc138f1eb02dcbac6ac3c46252e45c1e91ae37
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673170"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798252"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
@@ -89,6 +89,36 @@ Toutes nos mises à jour contiennent
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Octobre-2022 (Plateforme : 4.18.2210.4 | Moteur : 1.1.19800.x)</summary>
+
+&ensp;Version de mise à jour du renseignement de sécurité : **x.x**<br/>
+&ensp;Date de publication : **31 octobre 2022**<br/>
+&ensp;Plateforme : **4.18.2210.4**<br/>
+&ensp;Moteur : **1.1.19800.x**<br/>
+&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+
+Version du moteur : 1.1.19800.x (*numéro de version final bientôt disponible*)<br/>
+Version de mise à jour du renseignement de sécurité : x.x (*bientôt disponible*)<br/>
+
+### <a name="whats-new"></a>Nouveautés
+
+- Détection améliorée des blocages dans le moteur antivirus 
+- Ajout de l’adhésion aux mises à jour defender pendant le processus OOBE (out-of-box experience) 
+- Amélioration de la [fonctionnalité de protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md) 
+- Modification de la & de gestion des vulnérabilités (TVM) - alerte et action de blocage TVM pour bloquer pour résoudre le rapport de Intune 
+- Suppression de l’action de nettoyage de Intune stratégie pour`ThreadSeverityDefaultAction` 
+- Ajout de la configuration aléatoire des heures planifiées des tâches à Intune stratégie 
+- Ajout de la facilité de gestion pour la `DisableSMTPParsing` protection réseau 
+- Ajout d’une amélioration pour la surveillance du comportement 
+- Format de date normalisé pour l’événement 1151 pour Windows Defender 
+- Correction d’un blocage lié à la mise à jour `\device\cdrom*` des exclusions lors du montage d’un lecteur cdrom dans certaines conditions 
+- Amélioration des informations PID pour la détection des menaces 
+
+### <a name="known-issues"></a>Problèmes connus
+
+- Aucun  
+<br/><br/>
+</details><details>
 <summary>Septembre-2022 (Plateforme : 4.18.2209.7 | Moteur : 1.1.19700.3)</summary>
 
 &ensp;Version de mise à jour du renseignement de sécurité : **1.377.8.0**<br/>
@@ -144,14 +174,21 @@ Version de mise à jour du renseignement de sécurité : 1.373.1647.0 <br/>
 - Aucun
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédentes : prise en charge de la mise à niveau technique uniquement
+
+Une fois qu’une nouvelle version de package est publiée, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
+
+<details>
 <summary>Juillet-2022 (Plateforme : 4.18.2207.5 | Moteur : 1.1.19500.2)</summary>
 
 &ensp;Version de mise à jour du renseignement de sécurité : **1.373.219.0**<br/>
 &ensp;Date de publication : **15 août 2022**<br/>
 &ensp;Plateforme : **4.18.2207.5**<br/>
 &ensp;Moteur : **1.1.19500.2**<br/>
-&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+&ensp;Phase de support : **support technique de mise à niveau (uniquement)**<br/>
 
 Version du moteur : 1.1.19300.2<br/>
 Version de mise à jour du renseignement de sécurité : 1.373.219.0 <br/>
@@ -182,14 +219,7 @@ Version de mise à jour du renseignement de sécurité : 1.373.219.0 <br/>
 - Les clients qui déploient la mise à jour de la plateforme 4.18.2207.5 peuvent rencontrer des performances réseau en retard, ce qui peut avoir un impact sur les applications.
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédentes : prise en charge de la mise à niveau technique uniquement
-
-Une fois qu’une nouvelle version de package est publiée, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
-
-<details>
+</details><details>
 <summary>Mai 2022 (Plateforme : 4.18.2205.7 | Moteur : 1.1.19300.2)</summary>
 
 &ensp;version de mise à jour du renseignement de sécurité : **1.369.88.0**<br/>

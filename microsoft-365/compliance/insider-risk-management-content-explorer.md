@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - tier1
 - purview-compliance
-ms.openlocfilehash: e6b94111802c624312447bbe7bb1de5d538aa005
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6e28bf2680e15d6d49837fef00f60fc15e6e9fb8
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68733546"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798362"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Gestion des risques internes Explorateur de contenu
 
@@ -27,6 +27,13 @@ ms.locfileid: "68733546"
 > Gestion des risques internes Microsoft Purview met en corrélation différents signaux pour identifier les risques internes potentiels malveillants ou par inadvertance, tels que le vol d’adresses IP, les fuites de données et les violations de sécurité. La gestion des risques internes permet aux clients de créer des stratégies pour gérer la sécurité et la conformité. Conçu avec la confidentialité par défaut, les utilisateurs sont pseudonymisés par défaut, et des contrôles d’accès en fonction du rôle et des journaux d’audit sont en place pour garantir la confidentialité au niveau de l’utilisateur.
 
 L’Explorateur de **contenu** de gestion des risques internes permet aux utilisateurs *auxquels le rôle Enquêteur de gestion des risques internes* est attribué d’examiner le contexte et les détails du contenu associé à l’activité dans les alertes. Les données de cas dans l’Explorateur de contenu sont actualisées quotidiennement pour inclure la nouvelle activité à risque. Pour toutes les alertes confirmées dans un cas, les copies des fichiers de données et de messages sont archivées sous forme d’instantané à temps des éléments, tout en conservant les fichiers et messages d’origine dans les sources de stockage. Si nécessaire, les fichiers de données de cas peuvent être exportés en tant que fichier de document portable (PDF) ou au format de fichier d’origine.
+
+## <a name="use-the-content-explorer-to-view-details-for-a-specific-case"></a>Utiliser l’Explorateur de contenu pour afficher les détails d’un cas spécifique
+
+Pour examiner les e-mails et les fichiers capturés par les stratégies incluses dans un cas spécifique, accédez à la page **Cas** de gestion des risques internes et sélectionnez la ligne du *nom du cas* dans la liste pour le cas pour lequel vous souhaitez afficher les détails. Ensuite, dans la page des détails du cas, sélectionnez l’onglet **Explorateur de contenu** pour ouvrir l’Explorateur de contenu.
+
+> [!IMPORTANT]
+> Une fois qu’une alerte est confirmée pour un cas, l’Explorateur de contenu n’affiche aucun détail pour ce cas si l’organisation n’a pas affecté d’utilisateur au groupe de rôles *Enquêteur en gestion des risques internes* ou *Gestion des risques internes* .
 
 Pour les nouveaux cas, le remplissage du contenu dans l’Explorateur de contenu prend généralement environ une heure. Pour les cas avec de grandes quantités de contenu, la création d’un instantané peut prendre plus de temps. Si le contenu est toujours en cours de chargement dans l’Explorateur de contenu, vous verrez un indicateur de progression qui affiche le pourcentage d’achèvement.
 

@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment gérer les paramètres des scripts Office pour les utilisateurs de votre organisation.
-ms.openlocfilehash: 5fc83c585fd7edb288cc709e91f44f45b9c9d79c
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 5179c88c90a6a96b1f2d0dfcafe1c06299c5069d
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734382"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798318"
 ---
 # <a name="manage-office-scripts-settings"></a>Gérer les paramètres de Office Scripts
 
@@ -100,6 +100,12 @@ ms.locfileid: "68734382"
 8. Sélectionnez **Enregistrer**.
 
     Jusqu'à 48 heures peuvent être nécessaires pour que les modifications apportées aux paramètres d'Office Scripts prennent effet.
+
+## <a name="manage-visibility-of-the-automate-tab-by-using-group-policy"></a>Gérer la visibilité de l’onglet Automatiser à l’aide de stratégie de groupe
+
+stratégie de groupe dispose d’un paramètre pour afficher ou masquer l’onglet **Automatiser** ou tous les utilisateurs d’Excel sur le bureau de votre organisation. Vous trouverez les paramètres scripts Office sous Configuration ordinateur\Modèles d’administration\Microsoft Excel 2016\Divers dans la console de gestion stratégie de groupe.
+
+Pour plus d’informations, consultez [Utiliser stratégie de groupe pour configurer les paramètres de mise à jour pour Microsoft 365 Apps](/deployoffice/configure-update-settings-microsoft-365-apps#use-group-policy-to-configure-update-settings-for-microsoft-365-apps).
 
 ## <a name="next-steps"></a>Prochaines étapes
 

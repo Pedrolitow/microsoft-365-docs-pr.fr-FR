@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 12cc6483fdd88a3f9e9213578b21a7eee4499dfe
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 075d32e8a7e24bf688902f919ec926edcd26344b
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68725164"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798384"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -63,10 +63,7 @@ Avant de pouvoir lancer une session sur un appareil, vérifiez que vous rempliss
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) avec [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) avec [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** - Applicable uniquement pour la préversion publique, version minimale requise : 101.43.84
-
-   > [!NOTE]
-   > Actuellement, seuls les systèmes macOS Intel sont pris en charge.
+  - **macOS** : applicable uniquement pour la préversion publique, version minimale requise : 101.43.84. Pris en charge pour les appareils MacOS Basés sur Intel et ARM
 
   - **Linux** - Applicable uniquement pour la préversion publique, version minimale requise : 101.45.13
 
@@ -307,7 +304,7 @@ Si vous envisagez d’utiliser un script PowerShell non signé dans la session, 
   <command name> -type file -id <file path> - auto
   ```
 
-  or
+  ou
 
   ```powershell
   remediate file <file path> - auto`

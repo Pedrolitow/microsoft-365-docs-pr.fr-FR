@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/20/2022
+ms.date: 10/31/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 2f9f9b65804d5218f2439e85af1c888b012c9a62
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: c935c9e6131f602c582edb5a98787cc8871afbec
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661652"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798340"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender Compatibilité de l’antivirus avec d’autres produits de sécurité
 
@@ -152,7 +152,7 @@ Defender pour point de terminaison détermine si Microsoft Defender Antivirus pe
 | [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) | Oui | Non  | Non | Non | 
 | [Protection du réseau](network-protection.md)  | Oui | Non | Non | Non | 
 | [Règles de réduction de la surface d’attaque](attack-surface-reduction.md)  | Oui | Non | Non  | Non | 
-| [Disponibilité de l’analyse périodique limitée](limited-periodic-scanning-microsoft-defender-antivirus.md) | Non | Non | Oui | Non | 
+| [Disponibilité de l’analyse périodique limitée](limited-periodic-scanning-microsoft-defender-antivirus.md) | Non | Oui | Non | Non | 
 | [Informations sur l’analyse et la détection des fichiers](review-scan-results-microsoft-defender-antivirus.md) | Oui | Oui <sup>[[5](#fn5)]</sup> | Non | Oui | 
 | [Correction des menaces](configure-remediation-microsoft-defender-antivirus.md) | Oui | Voir <sup>la note [[6](#fn6)]</sup> | Non | Oui | 
 | [Mises à jour de la veille de sécurité](manage-updates-baselines-microsoft-defender-antivirus.md) | Oui | Oui <sup>[[7](#fn7)]</sup> | Non | Oui <sup>[[7](#fn7)]</sup> | 
@@ -249,7 +249,7 @@ Les sections suivantes décrivent à quoi s’attendre quand Microsoft Defender 
 
 ### <a name="active-mode"></a>Mode actif
 
-En mode actif, Microsoft Defender Antivirus est utilisé comme application antivirus sur l’ordinateur. Les paramètres configurés à l’aide de Configuration Manager, stratégie de groupe, Microsoft Intune ou d’autres produits de gestion s’appliquent. Les fichiers sont analysés, les menaces sont corrigées et les informations de détection sont signalées dans votre outil de configuration (par exemple, dans le centre d’administration Microsoft Endpoint Manager ou l’application antivirus Microsoft Defender sur le point de terminaison).  
+En mode actif, Microsoft Defender Antivirus est utilisé comme application antivirus sur l’ordinateur. Les paramètres configurés à l’aide de Configuration Manager, stratégie de groupe, Microsoft Intune ou d’autres produits de gestion s’appliquent. Les fichiers sont analysés, les menaces sont corrigées et les informations de détection sont signalées dans votre outil de configuration (par exemple, dans le Centre d’administration Microsoft Endpoint Manager ou l’application Antivirus Microsoft Defender sur le point de terminaison).  
 
 ### <a name="passive-mode-or-edr-block-mode"></a>Mode passif ou mode bloc EDR
 
