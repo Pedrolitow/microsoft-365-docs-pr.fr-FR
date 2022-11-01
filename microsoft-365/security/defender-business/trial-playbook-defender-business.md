@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender pour entreprises guide de l’utilisateur d’évaluation
+title: guide de l’utilisateur de la version d’évaluation Microsoft Defender pour entreprises
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,20 +17,20 @@ ms.subservice: mdb
 search.appverid:
 - MOE150
 - MET150
-description: Tirez le meilleur parti de votre version d’évaluation de Defender entreprise avec ce guide. Installez-vous rapidement et commencez à utiliser vos nouvelles capacités de sécurité.
+description: Utilisez ce guide pour tirer le meilleur parti de votre version d’évaluation de Defender for Business. Installez-vous rapidement et commencez à utiliser vos nouvelles capacités de sécurité.
 ms.custom: trial-playbook
-ms.openlocfilehash: 290c5eb2f6ced1816a7955fc8528a3c6cadcccc2
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: edcc5cebcce868cd11806d0a14cc33dd87f6f4fa
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501529"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804112"
 ---
 # <a name="trial-user-guide-microsoft-defender-for-business"></a>Guide de l’utilisateur d’évaluation : Microsoft Defender pour entreprises
 
 **Bienvenue dans le guide de l’utilisateur de la version d’évaluation de Defender for Business !**
 
-Ce guide vous aidera à configurer et à utiliser les fonctionnalités clés de votre version d’évaluation gratuite. À l’aide des recommandations de cet article de l’équipe Microsoft Defender, découvrez comment Defender entreprise peut vous aider à élever votre sécurité, de la protection antivirus traditionnelle à la protection de nouvelle génération, à la détection et à la réponse des points de terminaison, ainsi qu’à la gestion des vulnérabilités.
+Ce guide vous aidera à configurer et à utiliser les principales fonctionnalités de votre essai gratuit. À l’aide des recommandations de cet article de l’équipe Microsoft Defender, découvrez comment Defender entreprise peut vous aider à élever votre sécurité de la protection antivirus traditionnelle à la protection nouvelle génération, à la détection et à la réponse des points de terminaison et à la gestion des vulnérabilités.
 
 ## <a name="what-is-defender-for-business"></a>Qu’est-ce que Defender pour les PME ?
 
@@ -73,7 +73,7 @@ Defender pour entreprise a été conçu pour faire gagner du temps et de l'éner
 #### <a name="setup-wizard-flow-what-to-expect"></a>Flux de l'assistant de configuration : à quoi s'attendre
 
 > [!TIP]
-> **L'utilisation de l'assistant d'installation est facultative** (Voir [Ce qui se passe si je n’utilise pas l’Assistant ?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). Si vous choisissez de ne pas utiliser l’Assistant ou si l’Assistant est fermé avant la fin de votre processus d’installation, vous pouvez effectuer le processus d’installation et de configuration vous-même. Consultez [l’étape 4 : Configurer et configurer Defender entreprise](#step-4-set-up-and-configure-defender-for-business).
+> **L'utilisation de l'assistant d'installation est facultative** (Voir [Que se passe-t-il si je n’utilise pas l’Assistant ?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). Si vous choisissez de ne pas utiliser l’Assistant, ou si l’Assistant est fermé avant la fin de votre processus d’installation, vous pouvez effectuer le processus d’installation et de configuration par vous-même. Consultez [Étape 4 : Configurer et configurer Defender pour les entreprises](#step-4-set-up-and-configure-defender-for-business).
 
 1. **[Attribuer des autorisations aux utilisateurs](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Accordez à votre équipe de sécurité l'accès au portail Microsoft 365 Defender.
 
@@ -84,7 +84,7 @@ Defender pour entreprise a été conçu pour faire gagner du temps et de l'éner
    > [!NOTE]
    > Lorsque vous utilisez l'assistant d'installation, le système détecte si vous avez des appareils Windows qui sont déjà inscrits dans Intune. Il vous sera demandé si vous souhaitez utiliser l'intégration automatique pour tous ou certains de ces appareils. Vous pouvez embarquer tous les appareils Windows en même temps ou sélectionner des appareils spécifiques dans un premier temps, puis ajouter d'autres appareils par la suite. [En savoir plus sur l' onboarding automatique](mdb-use-wizard.md#what-is-automatic-onboarding).
 
-   Pour embarquer d'autres appareils, voir [l'étape 4](#step-4-set-up-and-configure-defender-for-business).
+   Pour intégrer d’autres appareils, consultez [Étape 4 : Configurer et configurer Defender pour les entreprises](#step-4-set-up-and-configure-defender-for-business).
 
 4. **[Afficher et modifier vos stratégies de sécurité](mdb-configure-security-settings.md)**. Defender pour entreprise comprend des stratégies de sécurité par défaut pour une protection de nouvelle génération et une protection par pare-feu qui peuvent être appliquées aux appareils de votre entreprise. Ces stratégies de sécurité préconfigurées utilisent des paramètres recommandés, de sorte que vous êtes protégé dès que vos appareils sont intégrés à Defender pour entreprise. Et vous pouvez modifier les stratégies ou en créer de nouvelles.
 
@@ -117,13 +117,13 @@ Defender entreprise inclut des stratégies de sécurité préconfigurées qui ut
 Les stratégies de sécurité à examiner et à configurer sont les suivantes :
 
 - [Stratégies de protection de nouvelle génération](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies) qui déterminent la protection antivirus et anti-programme malveillant pour les appareils de votre entreprise
-- [Protection et règles de pare-feu](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) qui déterminent le trafic réseau autorisé à circuler vers et depuis les appareils de votre entreprise
+- [Protection du pare-feu et règles](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) qui déterminent le trafic réseau autorisé à circuler vers et depuis les appareils de votre entreprise
 - [Filtrage de contenu web](mdb-configure-security-settings.md#set-up-web-content-filtering)qui empêche les utilisateurs de visiter certains sites web (URL) en fonction de catégories, telles que le contenu pour adultes ou la responsabilité légale
-- [Fonctionnalités avancées](mdb-configure-security-settings.md#review-settings-for-advanced-features) telles que l’investigation automatisée, la réponse et la détection et la réponse de point de terminaison (EDR) en mode bloc
+- [Fonctionnalités avancées](mdb-configure-security-settings.md#review-settings-for-advanced-features) telles que l’investigation et la réponse automatisées et la détection et la réponse des points de terminaison (EDR) en mode bloc
 
 ## <a name="start-using-defender-for-business"></a>Commencez à utiliser Defender pour entreprises
 
-Pour les 30 prochains jours, voici les conseils de l’équipe produit sur les principales fonctionnalités à essayer :
+Pour les 30 prochains jours, voici des conseils de l’équipe produit sur les fonctionnalités clés à essayer :
 
 1. [Utilisez votre tableau de bord Gestion des vulnérabilités Microsoft Defender](#1-use-the-defender-vulnerability-management-dashboard). 
 
@@ -133,28 +133,28 @@ Pour les 30 prochains jours, voici les conseils de l’équipe produit sur les p
 
 4. [Préparez-vous à la gestion continue de la sécurité](#4-prepare-for-ongoing-security-management).
 
-5. [Essayez le didacticiel Document Drops Backdoor](#5-try-the-document-drops-backdoor-tutorial).
+5. [Essayez le tutoriel Sur la porte dérobée du document](#5-try-the-document-drops-backdoor-tutorial).
 
-### <a name="1-use-the-defender-vulnerability-management-dashboard"></a>1. Utiliser le tableau de bord Gestion des vulnérabilités Defender
+### <a name="1-use-the-defender-vulnerability-management-dashboard"></a>1. Utiliser le tableau de bord gestion des vulnérabilités Defender
 
-Defender entreprise inclut un tableau de bord de gestion des vulnérabilités Defender conçu pour économiser du temps et des efforts de votre équipe de sécurité. Découvrez comment [utiliser votre tableau de bord Gestion des vulnérabilités Defender](mdb-view-tvm-dashboard.md).
+Defender pour les entreprises inclut un tableau de bord de gestion des vulnérabilités Defender conçu pour économiser du temps et des efforts à votre équipe de sécurité. Découvrez comment [utiliser votre tableau de bord Gestion des vulnérabilités Defender](mdb-view-tvm-dashboard.md).
 
 - Consultez votre score d'exposition, qui est associé aux appareils de votre organisation.
 - Consultez vos principales recommandations en matière de sécurité, telles que la résolution des problèmes de communication avec les appareils, l'activation de la protection par pare-feu ou la mise à jour des définitions de l'antivirus Microsoft Defender.
 - Visualisez les activités de remédiation, comme les fichiers qui ont été envoyés en quarantaine ou les vulnérabilités trouvées sur les appareils.
 
-### <a name="2-view-and-respond-to-detected-threats"></a>2. Afficher et répondre aux menaces détectées
+### <a name="2-view-and-respond-to-detected-threats"></a>2. Afficher les menaces détectées et y répondre
 
-Lorsque des menaces sont détectées et que des alertes sont déclenchées, des incidents sont créés. L'équipe de sécurité de votre organisation peut consulter et gérer les incidents dans le portail Microsoft 365 Defender. Découvrez comment [afficher et répondre aux menaces détectées](mdb-view-manage-incidents.md). 
+Lorsque des menaces sont détectées et que des alertes sont déclenchées, des incidents sont créés. L'équipe de sécurité de votre organisation peut consulter et gérer les incidents dans le portail Microsoft 365 Defender. Découvrez comment [afficher les menaces détectées et y répondre](mdb-view-manage-incidents.md). 
 
 - [Afficher et gérer les incidents](mdb-view-manage-incidents.md).
 - [Répondre aux menaces et les atténuer](mdb-respond-mitigate-threats.md).
 - [Revoir les actions de médiation dans le Centre d'action](mdb-review-remediation-actions.md).
 - [Afficher et utiliser les rapports](mdb-reports.md).
 
-### <a name="3-review-security-policies"></a>3. Examiner les stratégies de sécurité
+### <a name="3-review-security-policies"></a>3. Passer en revue les stratégies de sécurité
 
-Dans Defender pour entreprise, les paramètres de sécurité sont configurés par le biais de stratégies qui sont appliquées aux appareils. Defender entreprise inclut des stratégies préconfigurées pour protéger les appareils de votre entreprise dès qu’ils sont intégrés, en protégeant votre organisation contre les menaces de sécurité d’identité, d’appareil, d’application et de document. 
+Dans Defender pour entreprise, les paramètres de sécurité sont configurés par le biais de stratégies qui sont appliquées aux appareils. Defender entreprise inclut des stratégies préconfigurées pour vous aider à protéger les appareils de votre entreprise dès qu’ils sont intégrés, protégeant votre organisation contre les menaces de sécurité d’identité, d’appareil, d’application et de document. 
 
 Découvrez comment [passer en revue les stratégies de sécurité](mdb-view-edit-create-policies.md).
 
@@ -167,11 +167,11 @@ De nouveaux événements liés à la sécurité, tels que la détection d'une me
 - [Intégrer un appareil à Defender pour entreprise](mdb-manage-devices.md#onboard-a-device).
 - [Désinstaller un appareil de Defender pour entreprise](mdb-manage-devices.md#offboard-a-device).
 
-### <a name="5-try-the-document-drops-backdoor-tutorial"></a>5. Essayez le didacticiel sur les suppressions de porte dérobée de document
+### <a name="5-try-the-document-drops-backdoor-tutorial"></a>5. Essayez le tutoriel De la porte dérobée de document
 
-Découvrez rapidement le fonctionnement de Defender Entreprise en essayant un didacticiel.
+Découvrez rapidement le fonctionnement de Defender entreprise en essayant un tutoriel.
 
-Simuler une attaque qui introduit des programmes malveillants basés sur des fichiers sur un appareil de test. Le didacticiel explique comment utiliser le fichier de simulation et ce qu’il faut surveiller dans le portail Microsoft 365 Defender.
+Simulez une attaque qui introduit un programme malveillant basé sur un fichier sur un appareil de test. Ce tutoriel explique comment utiliser le fichier de simulation et ce qu’il faut surveiller dans le portail Microsoft 365 Defender.
 
 >[!NOTE]
 > Ce didacticiel nécessite l’installation de Microsoft Word sur votre appareil de test.
@@ -180,9 +180,9 @@ Pour accéder au didacticiel, procédez comme suit :
 
 1. Accédez au [Portail Microsoft 365 Defender](https://security.microsoft.com) et connectez-vous.
 
-2. Dans le volet de navigation, sous **Points de terminaison**, choisissez **Didacticiels**.
+2. Dans le volet de navigation, sous **Points de terminaison**, choisissez **Tutoriels**.
 
-3. Choisissez **La porte dérobée du document**.
+3. Choisissez **Le document supprime la porte dérobée**.
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

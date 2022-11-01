@@ -15,20 +15,20 @@ description: Découvrez comment créer un groupe Microsoft 365 avec un emplaceme
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-ms.openlocfilehash: ee2bc775f7274722ad2a59a253d8da8ce6795ce6
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 03a83da1d39debee28dc53c88794a1fb822b0532
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705181"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68805011"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Créer un groupe Microsoft 365 avec un emplacement de données préféré spécifique
 
-Lorsque les utilisateurs d’un environnement multigéographique créent un groupe Microsoft 365, l’emplacement de données préféré du groupe (PDL) est automatiquement défini sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
+Lorsque les utilisateurs d’un environnement multigéographique créent un groupe Microsoft 365, l’emplacement de données préféré (PDL) du groupe est automatiquement défini sur celui de l’utilisateur. Les administrateurs généraux, SharePoint et Exchange peuvent créer des groupes dans n’importe quelle _zone géographique_ qu’ils sélectionnent. 
 
-Si vous devez créer un groupe avec un fichier PDL spécifique, vous pouvez le faire à l’aide du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a> ou de l’applet de commande Exchange Online New-UnifiedGroup Microsoft PowerShell. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
+Si vous avez besoin de créer un groupe avec un pdL spécifique, vous pouvez le faire à partir du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a> ou via l’applet de commande Exchange Online New-UnifiedGroup Microsoft PowerShell. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
 
-Pour créer un groupe Microsoft 365 avec le PDL que vous spécifiez, accédez au <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a> à l’emplacement géographique où vous souhaitez créer le site de groupe.
+Pour créer un groupe Microsoft 365 avec le PDL que vous spécifiez, accédez au <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a> dans l’emplacement _Geography_ où vous souhaitez créer le site de groupe.
 
 Par exemple :
 
@@ -37,21 +37,21 @@ Si vous souhaitez créer un site de groupe à partir de votre emplacement en Aus
 1. Sélectionnez **+ Créer**.
 2. Suivez le processus pour créer un site de groupe.
 
-Votre site de groupe est configuré dans l’emplacement géographique correspondant au Centre d’administration SharePoint à partir duquel vous avez initié la demande de création de site. 
+Votre site de groupe sera approvisionné à l’emplacement _Geography_ correspondant au centre d’administration SharePoint à partir duquel vous avez lancé la demande de création de site. 
 
-Utilisation d’Exchange PowerShell 
+Utilisation d’Exchange PowerShell
 
-Connectez-vous à Exchange Online PowerShell en transmettant le paramètre *-MailBoxRegion* avec le code d’emplacement géographique.
+Connectez-vous à Exchange Online PowerShell en transmettant le paramètre _-MailBoxRegion_ avec le code d’emplacement géographique.
 
-Par exemple : 
+Par exemple :
 
 ```PowerShell
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
 ```
 
-![Capture d’écran de New-UnifiedGroup cmdlet PowerShell avec syntaxe.](../media/multi-geo-new-group-with-pdl-powershell.png)
+![Capture d’écran de New-UnifiedGroup applet de commande PowerShell avec la syntaxe.](../media/multi-geo-new-group-with-pdl-powershell.png)
 
-> [!Note]
+> [!NOTE]
 > L’approvisionnement de sites de groupe SharePoint est à la demande. Le site est approvisionné la première fois qu’un propriétaire ou un membre du groupe tente d’y accéder.
 
 ## <a name="geo-location-codes"></a>Codes d’emplacement géographique

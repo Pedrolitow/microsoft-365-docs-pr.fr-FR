@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 3ae1ea891933d6b7731316c3fb83635d2a999d29
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: 5211cbe42ec735f914eff6fb420d9fc0baf4c883
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777130"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804419"
 ---
 <!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
@@ -46,17 +46,15 @@ Le rapport Intégrité de l’appareil fournit des informations sur les appareil
 > [!IMPORTANT]
 > Pour que Windows&nbsp;Server&nbsp;2012&nbsp;R2 et Windows&nbsp;Server&nbsp;2016 apparaissent dans les rapports d’intégrité des appareils, ces appareils doivent être intégrés à l’aide du package de solution unifiée moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
-Dans le panneau de navigation du tableau de bord sécurité Microsoft 365, sélectionnez **Rapports**, puis ouvrez **Intégrité et conformité de l’appareil**.
-
-- [**L’onglet Microsoft Defender Antivirus Health**](#microsoft-defender-antivirus-health-tab) contient huit cartes qui indiquent les aspects suivants de Microsoft Defender Antivirus :
-  - [Carte du mode antivirus](#antivirus-mode-card)
-  - [Carte de version du moteur antivirus](#antivirus-engine-version-card)
-  - [Carte de version de l’antivirus Security Intelligence](#antivirus-security-intelligence-version-card)
-  - [Carte de version de la plateforme antivirus](#antivirus-platform-version-card)
-  - [Carte des résultats de l’analyse antivirus récente](#recent-antivirus-scan-results-card)
-  - [Carte de mise à jour du moteur antivirus](#antivirus-engine-updates-card)
-  - [Carte des mises à jour du renseignement de sécurité](#security-intelligence-updates-card)
-  - [Carte de mise à jour de la plateforme antivirus](#antivirus-platform-updates-card)
+Dans le panneau de navigation du tableau de bord sécurité Microsoft 365, sélectionnez **Rapports**, puis ouvrez **Intégrité et conformité de l’appareil**. [**L’onglet Microsoft Defender Antivirus Health**](#microsoft-defender-antivirus-health-tab) contient huit cartes qui indiquent les aspects suivants de Microsoft Defender Antivirus :
+- [Carte du mode antivirus](#antivirus-mode-card)
+- [Carte de version du moteur antivirus](#antivirus-engine-version-card)
+- [Carte de version de l’antivirus Security Intelligence](#antivirus-security-intelligence-version-card)
+- [Carte de version de la plateforme antivirus](#antivirus-platform-version-card)
+- [Carte des résultats de l’analyse antivirus récente](#recent-antivirus-scan-results-card)
+- [Carte de mise à jour du moteur antivirus](#antivirus-engine-updates-card)
+- [Carte des mises à jour du renseignement de sécurité](#security-intelligence-updates-card)
+- [Carte de mise à jour de la plateforme antivirus](#antivirus-platform-updates-card)
 
 ## <a name="report-access-permissions"></a>Autorisations d’accès aux rapports
 
@@ -92,12 +90,12 @@ Les six autres cartes indiquent l’état de l’antivirus Microsoft Defender po
 
 <sup>{[1](#fn1)}</sup> Pour les trois cartes de _mise à jour_ (également appelées cartes de création de rapports à jour), « **Aucune donnée disponible** » (ou valeur « Inconnue ») indique les appareils qui ne signalent pas l’état de mise à jour. Les appareils qui ne signalent pas l’état de mise à jour peuvent être dus à diverses raisons, par exemple :
 
-- L’ordinateur est déconnecté du réseau
-- L’ordinateur est hors tension ou en veille prolongée
-- Microsoft Defender Antivirus est désactivé
-- L’appareil est un appareil non Windows (Mac ou Linux)
-- La protection cloud n’est pas activée
-- L’appareil ne répond pas aux conditions préalables requises pour le moteur antivirus ou la version de la plateforme
+- L’ordinateur est déconnecté du réseau.
+- L’ordinateur est hors tension ou dans un état de mise en veille prolongée.
+- Microsoft Defender Antivirus est désactivé.
+- L’appareil est un appareil non Windows (Mac ou Linux).
+- La protection cloud n’est pas activée.
+- L’appareil ne répond pas aux prérequis du moteur antivirus ou de la version de la plateforme.
 
 ### <a name="prerequisites"></a>Configuration requise
 
@@ -106,26 +104,26 @@ Les rapports à jour génèrent des informations pour les appareils qui réponde
 - Version du moteur : 1.1.19300.2+
 - Version de la plateforme : 4.18.2202.1+
 - Protection cloud activée
-- Système d’exploitation Windows*
+- Système d’exploitation Windows
+   >[!Note]
+   >Actuellement, les rapports à jour sont disponibles uniquement pour les appareils Windows. Les appareils multiplateformes tels que Mac et Linux sont répertoriés sous « Aucune donnée disponible »/Inconnu.
 
-*Actuellement, les rapports à jour sont disponibles uniquement pour les appareils Windows. Les appareils multiplateformes tels que Mac et Linux sont répertoriés sous « Aucune donnée disponible »/Inconnu
-
->:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Affiche l’onglet Microsoft Defender Antivirus Health." lightbox="images/device-health-defender-antivirus-health-tab.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Affiche l’onglet Microsoft Defender Antivirus Health." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
 ### <a name="card-functionality"></a>Fonctionnalité de carte
 
 La fonctionnalité est essentiellement la même pour toutes les cartes. En cliquant sur une barre numérotée dans l’une des cartes, le menu volant **Microsoft Defender Antivirus details** s’ouvre, ce qui vous permet d’examiner les informations sur tous les appareils configurés avec le numéro de version d’un aspect sur cette carte.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Affiche le menu volant des détails de l’antivirus Microsoft Defender." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Affiche le menu volant des détails de l’antivirus Microsoft Defender." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
 
 Si le numéro de version sur lequel vous avez cliqué est :
 
-- Une version actuelle, puis **la correction requise** et **la recommandation de sécurité** ne sont pas présentes
+- Une version actuelle, la **correction requise** et la **recommandation de sécurité** ne sont pas présentes.
 - Une version obsolète, une notification en haut du rapport est présente, indiquant **correction requise**, et un lien **de recommandation de sécurité** est présent. Sélectionnez le lien de recommandation de sécurité pour accéder à la console Gestion des menaces et des vulnérabilités, qui peut recommander les mises à jour antivirus appropriées.
 
 Pour ajouter ou supprimer des types d’informations spécifiques dans le menu volant **détails de l’antivirus Microsoft Defender**, sélectionnez **Personnaliser les colonnes**. Dans **Personnaliser les colonnes**, sélectionnez ou effacez les éléments pour spécifier ce que vous souhaitez inclure dans le rapport détails de l’antivirus Microsoft Defender.
 
->:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Affiche les options de colonne personnalisées pour Microsoft Defender rapports d’intégrité antivirus." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
+:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Affiche les options de colonne personnalisées pour Microsoft Defender rapports d’intégrité antivirus." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
 #### <a name="new-microsoft-defender-antivirus-filter-definitions"></a>Nouvelles définitions de filtre antivirus Microsoft Defender
 
@@ -148,11 +146,11 @@ Il existe deux niveaux de rapports que vous pouvez exporter :
 
 Il existe deux fonctionnalités csv d’exportation différentes via le portail :
 
-- **Exportation de niveau supérieur** Vous pouvez utiliser le bouton **Exporter** de niveau supérieur pour collecter un rapport d’intégrité Microsoft Defender Antivirus (limite de 500 000).
+- **Exportation de niveau supérieur**. Vous pouvez utiliser le bouton **Exporter** de niveau supérieur pour collecter un rapport d’intégrité Microsoft Defender Antivirus (limite de 500 000).
 
->:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Affiche le bouton Exporter le rapport de niveau supérieur" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+   ::image type="content » source="images/device-health-defender-antivirus-health-tab-export.png » alt-text="Affiche le bouton d’exportation de rapport de niveau supérieur » lightbox="images/device-health-defender-antivirus-health-tab-export.png »:::
 
-- **Exportation au niveau du menu volant** Vous pouvez utiliser le bouton **Exporter** dans les menus volants pour exporter un rapport vers une feuille de calcul Excel (limite de 100 000).
+- **Exportation au niveau du menu volant**. Vous pouvez utiliser le bouton **Exporter** dans les menus volants pour exporter un rapport vers une feuille de calcul Excel (limite de 100 000).
 
 Les rapports exportés capturent des informations en fonction de votre point d’entrée dans le rapport de détails et des filtres ou colonnes personnalisées que vous avez définis.
 
@@ -175,13 +173,13 @@ Voici une description des six cartes qui indiquent la _version_ et les informati
 
 Dans l’une des trois cartes de _version_, sélectionnez **Afficher le rapport complet** pour afficher les neuf rapports de _version_ Microsoft Defender Antivirus les plus récents pour chacun des trois types d’appareils : Windows, Mac et Linux. S’il en existe moins de neuf, ils sont tous affichés. Une catégorie **Autre** capture les versions récentes du moteur antivirus au dixième rang et en dessous, si elles sont détectées.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Affiche la distribution des neuf premiers systèmes d’exploitation de chaque type" lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Affiche la distribution des neuf premiers systèmes d’exploitation de chaque type" lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
 
 L’un des principaux avantages des trois cartes de _version_ est qu’elles fournissent des indicateurs rapides indiquant si les versions les plus récentes des moteurs antivirus, des plateformes et du renseignement de sécurité sont utilisées. Associées aux informations détaillées liées à la carte, les cartes de versions deviennent un outil puissant pour vérifier si les versions sont à jour et collecter des informations sur des ordinateurs individuels ou des groupes d’ordinateurs.
 Dans l’idéal, lorsque vous exécutez ces rapports, ils indiquent que les versions les plus récentes de l’antivirus sont installées, par opposition aux versions antérieures.
 Utilisez ces rapports pour déterminer si votre organisation tire pleinement parti des versions les plus récentes.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Affiche Microsoft Defender détails de la version de l’antivirus" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Affiche Microsoft Defender détails de la version de l’antivirus" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
 
 Pour vous assurer que votre solution anti-programme malveillant détecte les dernières menaces, obtenez automatiquement les mises à jour dans le cadre de Windows Update.
 
@@ -203,7 +201,7 @@ Rapports sur le nombre d’appareils de votre organisation (à la date indiquée
 | 3 | Autres (Non en cours d’exécution, Inconnu) |
 | 4 | EDRBlocked |
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Affiche le filtrage Microsoft Defender modes antivirus" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Affiche le filtrage Microsoft Defender modes antivirus" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
 
 Vous trouverez ci-dessous des descriptions pour chaque mode :
 
@@ -245,7 +243,7 @@ Les cartes à jour indiquent l’état à jour des versions de mise à jour du *
 
 > [!IMPORTANT]
 >
-> La logique utilisée pour établir la détermination à jour a récemment été améliorée et simplifiée. Le nouveau comportement est documenté dans cette section.
+> La logique utilisée pour établir des déterminations à jour a récemment été améliorée et simplifiée. Le nouveau comportement est documenté dans cette section.
 
 Les définitions des informations _à jour_, _obsolètes_ et _aucune donnée disponible_ sont fournies pour chaque carte ci-dessous.
 
@@ -273,17 +271,17 @@ Pour plus d’informations sur les termes mentionnés ci-dessus, reportez-vous �
 
 Voici les définitions à jour du moteur et de la plateforme :
 
-| Le moteur/plateforme sur l’appareil est considéré comme suit : | Si : |
+| Le moteur/plateforme sur l’appareil est considéré comme suit : | Situation |
 |:---|:---|
-| **à jour** | l’appareil a communiqué avec l’événement de rapport Defender (« Heure d’actualisation de la signature ») au cours des sept derniers jours, et l’heure de génération de la version du moteur ou de la plateforme est au cours des 60 derniers jours. |
-| **obsolète** | l’appareil a communiqué avec l’événement de rapport Defender (« Heure d’actualisation de la signature ») au cours des sept derniers jours, mais le temps de génération de la version du moteur ou de la plateforme est antérieur à 60 jours. |
-| **inconnu (aucune donnée disponible)** | l’appareil n’a pas communiqué avec l’événement de rapport (« Heure d’actualisation de la signature ») depuis plus de sept jours. |
+| **à jour** | Si l’appareil a communiqué avec l’événement de rapport Defender (« Heure d’actualisation de la signature ») au cours des sept derniers jours et que l’heure de génération de la version du moteur ou de la plateforme est au cours des 60 derniers jours. |
+| **obsolète** | Si l’appareil a communiqué avec l’événement de rapport Defender (« Heure d’actualisation de la signature ») au cours des sept derniers jours, mais que l’heure de génération de la version du moteur ou de la plateforme est antérieure à 60 jours. |
+| **inconnu (aucune donnée disponible)** | Si l’appareil n’a pas communiqué avec l’événement de rapport (« Heure d’actualisation de la signature ») depuis plus de sept jours. |
 
-Voici les définitions à jour de l’intelligence de sécurité :
+Voici les définitions de la veille de sécurité à jour :
 
-| La mise à jour du renseignement de sécurité est prise en compte | Si : |
+| La mise à jour du renseignement de sécurité est prise en compte : | Situation |
 |:---|:---|
-|**À jour** | La version du renseignement de sécurité sur l’appareil a été écrite au cours des sept derniers jours et l’appareil a communiqué avec l’événement de rapport au cours des sept derniers jours. |
+|**à jour** | Si la version du renseignement de sécurité sur l’appareil a été écrite au cours des sept derniers jours et que l’appareil a communiqué avec l’événement de rapport au cours des sept derniers jours. |
 
 Pour plus d’informations, consultez l’article suivant :
 
@@ -295,7 +293,7 @@ Pour plus d’informations, consultez l’article suivant :
 
 Cette carte identifie les appareils dont les versions de moteur antivirus sont à jour ou obsolètes.
 
-**Définition générale de « _À jour_ »** : la version du moteur sur l’appareil est la version la plus récente du moteur. Le moteur est _généralement_ publié tous les mois, via Windows Update (WU)). Il y a une période de grâce de trois jours donnée à partir du jour où Windows Update (WU) est libéré.
+**Définition générale de « à jour »** : la version du moteur sur l’appareil est la version la plus récente du moteur. Le moteur est _généralement_ publié tous les mois, via Windows Update (WU)). Il y a une période de grâce de trois jours donnée à partir du jour où Windows Update (WU) est libéré.
 
 Le tableau suivant présente les valeurs possibles pour les rapports à jour pour **le moteur antivirus**. L’état signalé est basé sur la dernière fois que l’événement de création de rapports a été reçu (_heure d’actualisation de la signature_). Si l’appareil n’a pas communiqué avec les rapports depuis plus de sept jours (heure d’actualisation de la signature >7 jours), l’état est automatiquement marqué comme « Inconnu » / « Aucune donnée disponible ».
 
@@ -304,32 +302,32 @@ Le tableau suivant présente les valeurs possibles pour les rapports à jour pou
 | < 7 jours (nouveau) | tout rapport client (_à jour <br/> Obsolète <br/> inconnu)_ |
 | > 7 jours (ancienne) | _Unknown_ |
 
-Pour plus d’informations sur la gestion des versions de mise à jour de l’antivirus Microsoft Defender, consultez : [Versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+Pour plus d’informations sur la gestion des versions de mise à jour de l’antivirus Microsoft Defender, consultez [Versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 #### <a name="antivirus-platform-updates-card"></a>Carte de mise à jour de la plateforme antivirus
 
 Cette carte identifie les appareils dont les versions de plateforme antivirus sont à jour ou obsolètes.
 
-**La définition générale de « à jour »** La version de la plateforme sur l’appareil est la version de plateforme la plus récente. La plateforme est _généralement_ publiée tous les mois, via Windows Update (WU). Il y a une période de grâce de trois jours à partir du jour où WU est libéré.
+**La définition générale de « à jour »** est que la version de la plateforme sur l’appareil est la version la plus récente de la plateforme. La plateforme est _généralement_ publiée tous les mois, via Windows Update (WU). Il y a une période de grâce de trois jours à partir du jour où WU est libéré.
 
 Le tableau suivant présente les valeurs de rapport à jour possibles pour **antivirus Platform**. Les valeurs signalées sont basées sur la dernière fois que l’événement de création de rapports a été reçu (heure d’actualisation de la signature). Si l’appareil n’a pas communiqué avec les rapports depuis plus de sept jours (heure d’actualisation de la signature >7 jours), l’état est automatiquement marqué comme « Inconnu » ou « Aucune donnée disponible ».
 
-| Heure de la dernière actualisation de l’événement (également appelée « Heure d’actualisation de la signature » dans les rapports) | _État signalé_ : |
+| Heure de la dernière actualisation de l’événement (également appelée « Heure d’actualisation de la signature » dans les rapports) | _État signalé_ |
 |:----|:----|
 | < 7 jours (nouveau) | tout rapport client (_à jour <br/> Obsolète <br/> inconnu)_ |
 | > 7 jours (ancienne) | _Unknown_ |
 
-Pour plus d’informations sur la gestion des versions de mise à jour de l’antivirus Microsoft Defender, consultez : [Versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+Pour plus d’informations sur la gestion des versions de mise à jour de l’antivirus Microsoft Defender, consultez [Versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 ##### <a name="security-intelligence-updates-card"></a>Carte des mises à jour du renseignement de sécurité
 
 Cette carte identifie les appareils dont les versions de veille de sécurité sont à jour ou obsolètes.
 
-**La définition générale de « À jour »** : la version du renseignement de sécurité sur l’appareil a été écrite au cours des 7 derniers jours.
+**La définition générale de « à jour »** est que la version du renseignement de sécurité sur l’appareil a été écrite au cours des 7 derniers jours.
 
 Le tableau suivant présente les valeurs de rapport à jour possibles pour les mises à jour **du renseignement de sécurité** . Les valeurs signalées sont basées sur la dernière fois que l’événement de création de rapports a été reçu et l’heure de publication du renseignement de sécurité. Si l’appareil n’a pas communiqué avec les rapports depuis plus de sept jours (heure d’actualisation de la signature >7 jours), l’état est automatiquement marqué comme « Inconnu/Aucune donnée disponible ». Dans le cas contraire, la détermination est basée sur la question de savoir si le délai de publication des renseignements de sécurité est dans les sept jours.
 
-| Heure de la dernière actualisation de l’événement <br/> (Également appelé « Heure d’actualisation de la signature » dans les rapports) | Heure de publication de Security Intelligence | _État signalé_ : |
+| Heure de la dernière actualisation de l’événement <br/> (Également appelé « Heure d’actualisation de la signature » dans les rapports) | Heure de publication de Security Intelligence | _État signalé_ |
 |:----|:----|:----|
 | >7 jours (ancienne) | >7 jours (ancienne) | _Unknown_ |
 | <7 jours (nouveau) | >7 jours (ancienne) | _Obsolète_ |

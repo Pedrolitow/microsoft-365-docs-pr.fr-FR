@@ -1,6 +1,6 @@
 ---
 title: Obtenir des serveurs Microsoft Defender pour entreprises
-description: Découvrez comment obtenir Microsoft Defender pour entreprises serveurs, actuellement en préversion.
+description: Découvrez comment obtenir Microsoft Defender pour entreprises serveurs.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,49 +10,43 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: none
-ms.date: 08/11/2022
+ms.date: 10/26/2022
 ms.collection:
 - SMB
 - m365-security
 - tier1
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 111b3e7cd4de996b6c263312acf4368d872e7a50
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 4eab8b3bb7bebe007f65d45c26ef0da04fe69413
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68687565"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804156"
 ---
-# <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>Comment obtenir des serveurs Microsoft Defender pour entreprises (préversion)
+# <a name="how-to-get-microsoft-defender-for-business-servers"></a>Comment obtenir des serveurs Microsoft Defender pour entreprises
+
+Microsoft Defender pour entreprises serveurs est un module complémentaire à Defender for Business. Cette nouvelle offre vous permet de sécuriser vos systèmes d’exploitation serveur avec la même protection que celle que vous obtenez pour les appareils clients dans Defender for Business. Cet article explique comment obtenir Microsoft Defender pour entreprises serveurs et inclut les étapes suivantes et des informations supplémentaires.
 
 > [!IMPORTANT]
-> Si vous envisagez d’intégrer une instance de Windows Server ou Linux Server, vous aurez besoin d’une licence supplémentaire, telle que Microsoft Defender pour entreprises serveurs (préversion). Vous pouvez également utiliser [Microsoft Defender pour les serveurs](/azure/defender-for-cloud/defender-for-servers-introduction). Toutefois, votre expérience Defender entreprise peut changer lorsque vous ajoutez un plan d’entreprise, tel que Defender pour les serveurs Plan 1 ou Plan 2. Pour plus d’informations, consultez [Que se passe-t-il si j’ai une combinaison d’abonnements de sécurité de point de terminaison Microsoft ?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) et [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
+> - Pour ajouter des serveurs Microsoft Defender pour entreprises, vous avez besoin d’au moins une licence payante pour [Microsoft 365 Business Premium](../../business-premium/index.md) ou [Defender entreprise](mdb-overview.md) (autonome). 
+> - Vous aurez besoin d’une licence de serveur Microsoft Defender pour entreprises par instance de serveur.
+> - Il existe une limite de 60 licences de serveurs Microsoft Defender pour entreprises par abonnement pour Microsoft 365 Business Premium ou Defender entreprise.
+> - Vous pouvez également utiliser [Microsoft Defender pour les serveurs pour](/azure/defender-for-cloud/defender-for-servers-introduction) intégrer vos serveurs. Toutefois, votre expérience Defender entreprise peut changer lorsque vous ajoutez un plan d’entreprise, tel que Defender pour les serveurs Plan 1 ou Plan 2. Pour plus d’informations, consultez [Que se passe-t-il si j’ai une combinaison d’abonnements de sécurité de point de terminaison Microsoft ?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) et [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
 
-Microsoft Defender pour entreprises serveurs (préversion) vous permet d’intégrer un appareil exécutant Windows Server ou Linux Server à Defender for Business ou Microsoft 365 Business Premium. Lorsque la licence des serveurs Microsoft Defender pour entreprises devient en disponibilité générale, vous avez besoin d’une licence pour chaque instance de serveur.
+## <a name="get-microsoft-defender-for-business-servers"></a>Obtenir des serveurs Microsoft Defender pour entreprises
 
-**Voici comment obtenir Microsoft Defender pour entreprises serveurs (préversion)** :
+Utilisez l’une des procédures suivantes pour obtenir Microsoft Defender pour entreprises serveurs :
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous. 
+| Scénario  | Procedure  |
+|---------|---------|
+| Vous disposez actuellement [de Defender entreprise](mdb-overview.md) ou [Microsoft 365 Business Premium](../../business-premium/index.md), et vous souhaitez ajouter Microsoft Defender pour entreprises serveurs.     | <ol><li>Accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) et connectez-vous.</li><li>Dans le volet de navigation, choisissez Services **d’achat** **de facturation** > .</li><li>Dans la liste des résultats, sélectionnez la zone **Détails** pour **les serveurs Microsoft Defender pour entreprises**.</li><li>Passez en revue les informations et terminez le processus d’achat. </li></ol>*Vous aurez besoin d’une licence de serveur Microsoft Defender pour entreprises pour chaque instance de Windows Server ou Linux.*        |
+| Vous n’avez pas encore defender pour les entreprises ou Microsoft 365 Business Premium.     | <ol><li>Accédez à l’une des pages de produit suivantes : <ul><li>[Microsoft Defender pour les PME](https://aka.ms/DefenderforBusiness)</li><li>[Microsoft 365 pour les entreprises](https://www.microsoft.com/en-us/microsoft-365/business-h)</li></ul></li><li>Passez en revue les informations et démarrez votre abonnement d’évaluation ou payant dès aujourd’hui.</li></ol> |
+| Vous souhaitez retirer un ou plusieurs appareils, tels que des serveurs. | Consultez [Désactiver un appareil à partir de Microsoft Defender pour entreprises](mdb-offboard-devices.md). |
 
-2. Activer les paramètres d’aperçu. 
+## <a name="next-steps"></a>Prochaines étapes
 
-   1. Dans le volet de navigation, sélectionnez **Paramètres Points** \> **de terminaison** **Fonctionnalités avancées** \> \> **Fonctionnalités en préversion**. 
-   2. Définissez le paramètre sur **Activé**, puis sélectionnez **Enregistrer les préférences**.
+- Si vous avez démarré une version d’évaluation de Defender for Business, consultez [Guide de l’utilisateur d’évaluation : Microsoft Defender pour entreprises](trial-playbook-defender-business.md).
+- Si vous avez démarré une version d’évaluation de Microsoft 365 Business Premium, consultez [Guide de l’utilisateur d’évaluation : Microsoft 365 Business Premium](../../business-premium/m365bp-trial-playbook-microsoft-business-premium.md).
+- Si vous êtes prêt à intégrer un ou plusieurs appareils, consultez [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
 
-3. Activez l’étendue d’application pour Windows Server. 
-
-   1. Accédez à **Paramètres Points** \> **de terminaison** \> **Gestion de la configuration** \> **Étendue de l’application**. 
-   2. Sélectionnez **Utiliser MDE pour appliquer les paramètres de configuration de sécurité à partir de MEM**, sélectionnez  **Windows Server**, puis **sélectionnez Enregistrer**.
-
-4. Suivez les instructions pour Windows Server et Linux Server dans [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
-
-> [!IMPORTANT]
-> Microsoft Defender pour entreprises serveurs est actuellement en préversion. Lorsqu’il devient en disponibilité générale, il est proposé en tant que module complémentaire pour Microsoft 365 Business Premium et la version autonome de Defender pour Les Entreprises. En disponibilité générale, Microsoft Defender pour entreprises serveurs sont facturés à 3 $ par instance de serveur.
-
-## <a name="see-also"></a>Voir aussi
-
-- [Consultez le guide de l’utilisateur d’évaluation : Microsoft Defender pour entreprises](trial-playbook-defender-business.md).
-- [Utilisez l’Assistant Installation dans Microsoft Defender pour entreprises](mdb-use-wizard.md).
-- [Consultez le processus d’installation et de configuration de Defender pour Entreprise](mdb-setup-configuration.md).
-- [Découvrez comment obtenir de l’aide et du support pour Defender pour les entreprises](mdb-get-help.md) (au cas où vous en avez besoin).

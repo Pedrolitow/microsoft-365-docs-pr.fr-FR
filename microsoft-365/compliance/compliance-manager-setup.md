@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les autorisations et les rôles utilisateur du Gestionnaire de conformité Microsoft Purview et configurez le test automatisé des actions. Gérez l’historique utilisateur et filtrez l’affichage de votre tableau de bord.
-ms.openlocfilehash: 6787da712db94c0048355f4bd59d401194e520c2
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 22c23c64148f9a95b26b90e1b9097218413158ec
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730070"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68802260"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -351,7 +351,7 @@ Il existe deux façons d’effectuer une action à partir de cet écran :
 
 1. Sur la ligne de la solution prévue, sous la colonne **Actions restantes** , sélectionnez le numéro hypertexte. Vous verrez une vue filtrée de l’écran actions d’amélioration montrant les actions d’amélioration non testées pour cette solution.
 
-2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution** , sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les centres de sécurité et de conformité Microsoft 365 et Office 365 où vous pouvez effectuer l’action recommandée.
+2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution** , sélectionnez **Ouvrir**. Vous arriverez à l’emplacement de la solution dans le portail de conformité Microsoft Purview, le portail Microsoft 365 Defender ou son centre d’administration, où vous pouvez effectuer l’action recommandée.
 
 ## <a name="assessments-page"></a>Page Évaluations
 

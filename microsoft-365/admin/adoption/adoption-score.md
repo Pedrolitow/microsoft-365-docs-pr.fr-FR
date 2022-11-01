@@ -23,14 +23,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le score d’adoption de Microsoft reflète les mesures de l’expérience des personnes et de la technologie et comparez-les à des organisations de taille similaire.
-ms.openlocfilehash: 46af48a0cbb8b686657a40502a8ea1e5206baa53
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 410da81d1b10740ace40bd361768202fd6743770
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68721227"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804573"
 ---
-# <a name="microsoft-adoption-score"></a>Score d’adoption de Microsoft 
+# <a name="microsoft-adoption-score"></a>Score d’adoption de Microsoft
 
 Le score d’adoption prend en charge le parcours vers la transformation numérique avec des insights sur la façon dont votre organisation utilise Microsoft 365 et les expériences technologiques qui le prennent en charge. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies, et vous pouvez le comparer aux benchmarks d’organisations d’une taille semblable à la vôtre.
 
@@ -53,7 +53,7 @@ Nous fournissons des mesures, des informations et des recommandations dans deux 
 > [!NOTE]
 > Toutes les informations sont calculées à l’aide de données au niveau de l’organisation, et non au niveau individuel.
 
-## <a name="how-to-turn-on-adoption-score"></a>Comment activer le score d’adoption
+## <a name="how-to-enable-adoption-score"></a>Comment activer le score d’adoption
 
 Pour activer le score d’adoption :
 

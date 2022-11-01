@@ -2,7 +2,7 @@
 title: Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux
 ms.reviewer: ''
 description: Décrit comment configurer Microsoft Defender pour point de terminaison sur Linux dans les entreprises.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, installation, déployer, désinstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: dd14c5ff33f53701d39a47438bd57ab01bc8c6c2
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 8a04c1720585d8b17c95a0bd4e02ace62bcd1f26
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573445"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803960"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -38,19 +38,19 @@ ms.locfileid: "68573445"
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!IMPORTANT]
-> Cette rubrique contient des instructions sur la définition des préférences pour Defender pour point de terminaison sur Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources](linux-resources.md#configure-from-the-command-line).
+> Cette rubrique contient des instructions pour définir des préférences pour Defender pour point de terminaison sur Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources](linux-resources.md#configure-from-the-command-line).
 
-Dans les environnements d’entreprise, Defender pour point de terminaison sur Linux peut être géré via un profil de configuration. Ce profil est déployé à partir de l’outil de gestion de votre choix. Les préférences gérées par l’entreprise sont prioritaires sur celles définies localement sur l’appareil. En d’autres termes, les utilisateurs de votre entreprise ne peuvent pas modifier les préférences définies par le biais de ce profil de configuration. Si des exclusions ont été ajoutées via le profil de configuration managée, elles ne peuvent être supprimées que via le profil de configuration managée. La ligne de commande fonctionne pour les exclusions qui ont été ajoutées localement.
+Dans les environnements d’entreprise, Defender pour point de terminaison sur Linux peut être géré via un profil de configuration. Ce profil est déployé à partir de l’outil de gestion de votre choix. Les préférences gérées par l’entreprise sont prioritaires sur celles définies localement sur l’appareil. En d’autres termes, les utilisateurs de votre entreprise ne peuvent pas modifier les préférences définies par le biais de ce profil de configuration. Si des exclusions ont été ajoutées via le profil de configuration managé, elles ne peuvent être supprimées que via le profil de configuration managé. La ligne de commande fonctionne pour les exclusions qui ont été ajoutées localement.
 
 Cet article décrit la structure de ce profil (y compris un profil recommandé que vous pouvez utiliser pour commencer) et des instructions sur la façon de déployer le profil.
 
 ## <a name="configuration-profile-structure"></a>Structure du profil de configuration
 
-Le profil de configuration est un fichier .json qui se compose d’entrées identifiées par une clé (qui indique le nom de la préférence), suivie d’une valeur, qui dépend de la nature de la préférence. Les valeurs peuvent être simples, telles qu’une valeur numérique, ou complexes, telles qu’une liste imbriqué de préférences.
+Le profil de configuration est un fichier .json qui se compose d’entrées identifiées par une clé (qui indique le nom de la préférence), suivie d’une valeur, qui dépend de la nature de la préférence. Les valeurs peuvent être simples, telles qu’une valeur numérique, ou complexes, comme une liste imbriquée de préférences.
 
-En règle générale, vous utilisez un outil de gestion de configuration pour envoyer (push) un fichier portant le nom ```mdatp_managed.json``` à l’emplacement ```/etc/opt/microsoft/mdatp/managed/```.
+En règle générale, vous devez utiliser un outil de gestion de la configuration pour envoyer (push) un fichier portant le nom ```mdatp_managed.json``` à l’emplacement ```/etc/opt/microsoft/mdatp/managed/```.
 
-Le niveau supérieur du profil de configuration inclut des préférences et des entrées à l’échelle du produit pour les sous-zones du produit, qui sont expliquées plus en détail dans les sections suivantes.
+Le niveau supérieur du profil de configuration inclut les préférences et les entrées à l’échelle du produit pour les sous-zones du produit, qui sont expliquées plus en détail dans les sections suivantes.
 
 ### <a name="antivirus-engine-preferences"></a>Préférences du moteur antivirus
 
@@ -59,17 +59,17 @@ La section *antivirusEngine* du profil de configuration est utilisée pour gére
 |Description|Valeur|
 |---|---|
 |**Clé**|antivirusEngine|
-|**Type de données**|Dictionnaire (préférence imbriqué)|
+|**Type de données**|Dictionnaire (préférence imbriquée)|
 |**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 
-#### <a name="enforcement-level-for-antivirus-engine"></a>Niveau de mise en œuvre pour le moteur antivirus
+#### <a name="enforcement-level-for-antivirus-engine"></a>Niveau d’application pour le moteur antivirus
 
 Spécifie la préférence d’application du moteur antivirus. Il existe trois valeurs pour définir le niveau d’application :
 
-- En temps réel (`real_time`) : la protection en temps réel (analyser les fichiers à mesure qu’ils sont accessibles) est activée.
-- À la demande (`on_demand`) : les fichiers sont analysés uniquement à la demande. Dans ce qui suit :
+- En temps réel (`real_time`) : la protection en temps réel (analyser les fichiers au fur et à mesure qu’ils sont accessibles) est activée.
+- À la demande (`on_demand`) : les fichiers sont analysés uniquement à la demande. Dans ce cas :
   - La protection en temps réel est désactivée.
-- Passif (`passive`) : exécute le moteur antivirus en mode passif. Dans ce qui suit :
+- Passif (`passive`) : exécute le moteur antivirus en mode passif. Dans ce cas :
   - La protection en temps réel est désactivée.
   - L’analyse à la demande est activée.
   - La correction automatique des menaces est désactivée.
@@ -84,7 +84,7 @@ Spécifie la préférence d’application du moteur antivirus. Il existe trois v
 
 #### <a name="enabledisable-behavior-monitoring"></a>Activer/désactiver la surveillance du comportement 
 
-Détermine si la fonctionnalité de surveillance et de blocage du comportement est activée ou non sur l’appareil. 
+Détermine si la fonctionnalité de surveillance et de blocage du comportement est activée sur l’appareil ou non. 
 
 <br>
 
@@ -94,12 +94,12 @@ Détermine si la fonctionnalité de surveillance et de blocage du comportement e
 |---|---|
 |**Clé**|behaviorMonitoring|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|désactivé (par défaut) <p> activé|
+|**Valeurs possibles**|disabled (par défaut) <p> activé|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.45.00 ou ultérieure.|
 
 #### <a name="configure-file-hash-computation-feature"></a>Configurer la fonctionnalité de calcul de hachage de fichier
 
-Active ou désactive la fonctionnalité de calcul de hachage de fichier. Lorsque cette fonctionnalité est activée, Defender pour point de terminaison calcule les hachages des fichiers qu’il analyse. Notez que l’activation de cette fonctionnalité peut avoir un impact sur les performances de l’appareil. Pour plus d’informations, consultez : [Créer des indicateurs pour les fichiers](indicator-file.md).
+Active ou désactive la fonctionnalité de calcul de hachage de fichier. Lorsque cette fonctionnalité est activée, Defender pour point de terminaison calcule les hachages pour les fichiers qu’il analyse. Notez que l’activation de cette fonctionnalité peut avoir un impact sur les performances de l’appareil. Pour plus d’informations, reportez-vous à : [Créer des indicateurs pour les fichiers](indicator-file.md).
 
 |Description|Valeur|
 |---|---|
@@ -119,7 +119,7 @@ Spécifie s’il faut démarrer une analyse de processus après le téléchargem
 |**Valeurs possibles**|true (valeur par défaut) <p> false|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.45.00 ou ultérieure.|
 
-#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Analyser les archives (analyses antivirus à la demande uniquement)
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Archives d’analyse (analyses antivirus à la demande uniquement)
 
 Spécifie s’il faut analyser les archives pendant les analyses antivirus à la demande.
 
@@ -132,7 +132,7 @@ Spécifie s’il faut analyser les archives pendant les analyses antivirus à la
 
 #### <a name="degree-of-parallelism-for-on-demand-scans"></a>Degré de parallélisme pour les analyses à la demande
 
-Spécifie le degré de parallélisme pour les analyses à la demande. Cela correspond au nombre de threads utilisés pour effectuer l’analyse et affecte l’utilisation du processeur, ainsi que la durée de l’analyse à la demande.
+Spécifie le degré de parallélisme pour les analyses à la demande. Cela correspond au nombre de threads utilisés pour effectuer l’analyse et a un impact sur l’utilisation du processeur, ainsi que sur la durée de l’analyse à la demande.
 
 |Description|Valeur|
 |---|---|
@@ -143,7 +143,7 @@ Spécifie le degré de parallélisme pour les analyses à la demande. Cela corre
 
 #### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
 
-Spécifie la stratégie de fusion pour les exclusions. Il peut s’agir d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur (`merge`) ou uniquement d’exclusions définies par l’administrateur (`admin_only`). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
+Spécifie la stratégie de fusion pour les exclusions. Il peut s’agir d’une combinaison d’exclusions définies par l’administrateur et définies par l’utilisateur (`merge`) ou uniquement d’exclusions définies par l’administrateur (`admin_only`). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
 |Description|Valeur|
 |---|---|
@@ -160,7 +160,7 @@ Entités qui ont été exclues de l’analyse. Les exclusions peuvent être spé
 |Description|Valeur|
 |---|---|
 |**Clé**|Exclusions|
-|**Type de données**|Dictionnaire (préférence imbriqué)|
+|**Type de données**|Dictionnaire (préférence imbriquée)|
 |**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 
 ##### <a name="type-of-exclusion"></a>Type d’exclusion
@@ -175,18 +175,18 @@ Spécifie le type de contenu exclu de l’analyse.
 
 ##### <a name="path-to-excluded-content"></a>Chemin d’accès au contenu exclu
 
-Utilisé pour exclure le contenu de l’analyse par chemin d’accès complet au fichier.
+Permet d’exclure le contenu de l’analyse par chemin d’accès de fichier complet.
 
 |Description|Valeur|
 |---|---|
 |**Clé**|chemin|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|chemins valides|
+|**Valeurs possibles**|chemins d’accès valides|
 |**Commentaires**|Applicable uniquement si *$type* est *excluPath*|
 
 ##### <a name="path-type-file--directory"></a>Type de chemin d’accès (fichier/répertoire)
 
-Indique si la propriété *de chemin d’accès* fait référence à un fichier ou un répertoire.
+Indique si la propriété *path* fait référence à un fichier ou un répertoire.
 
 |Description|Valeur|
 |---|---|
@@ -197,7 +197,7 @@ Indique si la propriété *de chemin d’accès* fait référence à un fichier 
 
 ##### <a name="file-extension-excluded-from-the-scan"></a>Extension de fichier exclue de l’analyse
 
-Utilisé pour exclure du contenu de l’analyse par extension de fichier.
+Permet d’exclure le contenu de l’analyse par extension de fichier.
 
 |Description|Valeur|
 |---|---|
@@ -208,7 +208,7 @@ Utilisé pour exclure du contenu de l’analyse par extension de fichier.
 
 ##### <a name="process-excluded-from-the-scan"></a>Processus exclu de l’analyse*
 
-Spécifie un processus pour lequel toute l’activité de fichier est exclue de l’analyse. Le processus peut être spécifié par son nom (par exemple) `cat`ou son chemin d’accès complet (par exemple, `/bin/cat`).
+Spécifie un processus pour lequel toute l’activité de fichier est exclue de l’analyse. Le processus peut être spécifié par son nom (par exemple, `cat`) ou par son chemin d’accès complet (par exemple, `/bin/cat`).
 
 |Description|Valeur|
 |---|---|
@@ -234,7 +234,7 @@ Limite les actions que l’utilisateur local d’un appareil peut effectuer lors
 |---|---|
 |**Clé**|disallowedThreatActions|
 |**Type de données**|Tableau de chaînes|
-|**Valeurs possibles**|autoriser (empêche les utilisateurs d’autoriser les menaces) <p> restore (empêche les utilisateurs de restaurer les menaces à partir de la mise en quarantaine)|
+|**Valeurs possibles**|autoriser (empêche les utilisateurs d’autoriser les menaces) <p> restore (empêche les utilisateurs de restaurer les menaces à partir de la quarantaine)|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 100.83.73 ou ultérieure.|
 
 #### <a name="threat-type-settings"></a>Paramètres des types de menaces
@@ -244,7 +244,7 @@ La préférence *threatTypeSettings* dans le moteur antivirus est utilisée pour
 |Description|Valeur|
 |---|---|
 |**Clé**|threatTypeSettings|
-|**Type de données**|Dictionnaire (préférence imbriqué)|
+|**Type de données**|Dictionnaire (préférence imbriquée)|
 |**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 
 ##### <a name="threat-type"></a>Type de menace
@@ -259,10 +259,10 @@ Type de menace pour lequel le comportement est configuré.
 
 ##### <a name="action-to-take"></a>Mesures à prendre
 
-Action à effectuer lorsque vous rencontrez une menace du type spécifié dans la section précédente. Peut être :
+Action à entreprendre en cas de détection d’une menace du type spécifié dans la section précédente. Peut être :
 
-- **Audit** : L’appareil n’est pas protégé contre ce type de menace, mais une entrée relative à la menace est enregistrée.
-- **Bloc** : l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
+- **Audit** : l’appareil n’est pas protégé contre ce type de menace, mais une entrée concernant la menace est journalisée.
+- **Bloquer** : l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Désactivé** : l’appareil n’est pas protégé contre ce type de menace et rien n’est journalisé.
 
 |Description|Valeur|
@@ -282,7 +282,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 100.83.73 ou ultérieure.|
 
-#### <a name="antivirus-scan-history-retention-in-days"></a>Conservation de l’historique des analyses antivirus (en jours)
+#### <a name="antivirus-scan-history-retention-in-days"></a>Rétention de l’historique d’analyse antivirus (en jours)
 
 Spécifiez le nombre de jours pendant lesquels les résultats sont conservés dans l’historique d’analyse sur l’appareil. Les anciens résultats de l’analyse sont supprimés de l’historique. Anciens fichiers mis en quarantaine qui sont également supprimés du disque.
 
@@ -290,10 +290,10 @@ Spécifiez le nombre de jours pendant lesquels les résultats sont conservés da
 |---|---|
 |**Clé**|scanResultsRetentionDays|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|90 (valeur par défaut). Les valeurs autorisées sont comprises entre 1 jour et 180 jours.|
+|**Valeurs possibles**|90 (valeur par défaut). Les valeurs autorisées sont comprises entre 1 et 180 jours.|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.04.76 ou ultérieure.|
 
-#### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Nombre maximal d’éléments dans l’historique des analyses antivirus
+#### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Nombre maximal d’éléments dans l’historique d’analyse antivirus
 
 Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’analyse. Les entrées incluent toutes les analyses à la demande effectuées dans le passé et toutes les détections antivirus.
 
@@ -301,7 +301,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |---|---|
 |**Clé**|scanHistoryMaximumItems|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées vont de 5 000 éléments à 15 000 éléments.|
+|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont comprises entre 5 000 éléments et 1 5 000 éléments.|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.04.76 ou ultérieure.|
 
 ### <a name="cloud-delivered-protection-preferences"></a>Préférences de protection fournies par le cloud
@@ -311,12 +311,12 @@ L’entrée *cloudService* dans le profil de configuration est utilisée pour co
 |Description|Valeur|
 |---|---|
 |**Clé**|cloudService|
-|**Type de données**|Dictionnaire (préférence imbriqué)|
+|**Type de données**|Dictionnaire (préférence imbriquée)|
 |**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection fournie par le cloud
 
-Détermine si la protection fournie par le cloud est activée ou non sur l’appareil. Pour améliorer la sécurité de vos services, nous vous recommandons de maintenir cette fonctionnalité activée.
+Détermine si la protection fournie par le cloud est activée sur l’appareil ou non. Pour améliorer la sécurité de vos services, nous vous recommandons de garder cette fonctionnalité activée.
 
 |Description|Valeur|
 |---|---|
@@ -326,7 +326,7 @@ Détermine si la protection fournie par le cloud est activée ou non sur l’app
 
 #### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
 
-Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender pour point de terminaison, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour apporter des améliorations au produit. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
+Les données de diagnostic sont utilisées pour assurer la sécurité et la mise à jour de Defender pour point de terminaison, détecter, diagnostiquer et résoudre les problèmes, et apporter des améliorations au produit. Ce paramètre détermine le niveau des diagnostics envoyés par le produit à Microsoft.
 
 |Description|Valeur|
 |---|---|
@@ -337,13 +337,13 @@ Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Def
 
 #### <a name="configure-cloud-block-level"></a>Configurer le niveau de bloc cloud
 
-Ce paramètre détermine l’agressivité de Defender pour point de terminaison dans le blocage et l’analyse des fichiers suspects. Si ce paramètre est activé, Defender pour point de terminaison sera plus agressif lors de l’identification des fichiers suspects à bloquer et analyser ; sinon, il sera moins agressif et, par conséquent, bloquer et analyser avec moins de fréquence. Il existe cinq valeurs pour définir le niveau de bloc cloud :
+Ce paramètre détermine l’agressivité de Defender pour point de terminaison dans le blocage et l’analyse des fichiers suspects. Si ce paramètre est activé, Defender pour point de terminaison sera plus agressif lors de l’identification des fichiers suspects à bloquer et analyser ; sinon, il sera moins agressif et donc bloquer et analyser avec moins de fréquence. Il existe cinq valeurs pour définir le niveau de bloc cloud :
 
 - Normal (`normal`) : niveau de blocage par défaut.
-- Modéré (`moderate`) : fournit le verdict uniquement pour les détections à haut niveau de confiance.
+- Modéré (`moderate`) : fournit un verdict uniquement pour les détections à haut niveau de confiance.
 - Élevé (`high`) : bloque de manière agressive les fichiers inconnus tout en optimisant les performances (plus de chances de bloquer les fichiers non dangereux).
-- High Plus (`high_plus`) : bloque de manière agressive les fichiers inconnus et applique des mesures de protection supplémentaires (peuvent avoir un impact sur les performances de l’appareil client).
-- Tolérance zéro () :`zero_tolerance` bloque tous les programmes inconnus.
+- Plus élevé (`high_plus`) : bloque de manière agressive les fichiers inconnus et applique des mesures de protection supplémentaires (susceptibles d’avoir un impact sur les performances des appareils clients).
+- Tolérance zéro (`zero_tolerance`) : bloque tous les programmes inconnus.
 
 |Description|Valeur|
 |---|---|
@@ -352,19 +352,19 @@ Ce paramètre détermine l’agressivité de Defender pour point de terminaison 
 |**Valeurs possibles**|normal (par défaut) <p> Modérée <p> Haute <p> high_plus <p> zero_tolerance|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.56.62 ou ultérieure.|
   
-#### <a name="enable--disable-automatic-sample-submissions"></a>Activer/désactiver les soumissions automatiques d’exemples
+#### <a name="enable--disable-automatic-sample-submissions"></a>Activer/désactiver les envois automatiques d’exemples
 
-Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Il existe trois niveaux pour contrôler la soumission d’exemples :
+Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Il existe trois niveaux pour contrôler l’envoi d’exemples :
 
-- **Aucun** : aucun exemple suspect n’est envoyé à Microsoft.
-- **Sans risque** : seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.
-- **Tous** : tous les exemples suspects sont envoyés à Microsoft.
+- **Aucun** : aucun échantillon suspect n’est envoyé à Microsoft.
+- **Sécurisé** : seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut de ce paramètre.
+- **Tout** : tous les échantillons suspects sont envoyés à Microsoft.
 
 |Description|Valeur|
 |---|---|
 |**Clé**|automaticSampleSubmissionConsent|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|none <p> safe (par défaut) <p> tout|
+|**Valeurs possibles**|none <p> safe (valeur par défaut) <p> tout|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Activer/désactiver les mises à jour automatiques du renseignement de sécurité
 
@@ -378,17 +378,17 @@ Détermine si les mises à jour du renseignement de sécurité sont installées 
 
 ## <a name="recommended-configuration-profile"></a>Profil de configuration recommandé
 
-Pour commencer, nous vous recommandons le profil de configuration suivant pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection fournies par Defender pour point de terminaison.
+Pour commencer, nous vous recommandons d’utiliser le profil de configuration suivant pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection fournies par Defender pour point de terminaison.
 
 Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
   - **Les applications potentiellement indésirables (PUA)** sont bloquées
-  - **Les bombes d’archive** (fichier avec un taux de compression élevé) sont auditées dans les journaux de produit
+  - **Les bombes d’archivage** (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques du renseignement de sécurité
 - Protection fournie par le cloud
-- Activer la soumission automatique d’exemples au `safe` niveau
+- Activer l’envoi automatique d’exemples au `safe` niveau
 
 ### <a name="sample-profile"></a>Exemple de profil
 
@@ -416,9 +416,12 @@ Le profil de configuration suivant :
 }
 ```
 
-## <a name="full-configuration-profile-example"></a>Exemple de profil de configuration complète
+## <a name="full-configuration-profile-example"></a>Exemple de profil de configuration complet
 
-Le profil de configuration suivant contient des entrées pour tous les paramètres décrits dans ce document et peut être utilisé pour des scénarios plus avancés où vous souhaitez plus de contrôle sur le produit.
+Le profil de configuration suivant contient des entrées pour tous les paramètres décrits dans ce document et peut être utilisé pour des scénarios plus avancés où vous souhaitez davantage de contrôle sur le produit.
+  
+> [!NOTE]
+> Il n’est pas possible de contrôler toutes les communications Microsoft Defender pour point de terminaison avec uniquement un paramètre proxy dans ce json.
 
 ### <a name="full-profile"></a>Profil complet
 
@@ -484,12 +487,12 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
 }
 ```
 
-## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>Ajouter une balise ou un ID de groupe au profil de configuration
+## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>Ajouter une étiquette ou un ID de groupe au profil de configuration
 
-Lorsque vous exécutez la `mdatp health` commande pour la première fois, la valeur de la balise et de l’ID de groupe est vide. Pour ajouter une balise ou un ID de groupe au `mdatp_managed.json` fichier, suivez les étapes ci-dessous :
+Lorsque vous exécutez la `mdatp health` commande pour la première fois, la valeur de la balise et de l’ID de groupe est vide. Pour ajouter une balise ou un ID de groupe au `mdatp_managed.json` fichier, procédez comme suit :
   
   1. Ouvrez le profil de configuration à partir du chemin d’accès `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
-  2. Accédez au bas du fichier, où se trouve le `cloudService` bloc.
+  2. Descendez en bas du fichier, où se trouve le `cloudService` bloc.
   3. Ajoutez la balise ou l’ID de groupe requis comme exemple suivant à la fin du crochet fermant pour le `cloudService`.
 
   ```JSON
@@ -514,7 +517,7 @@ Lorsque vous exécutez la `mdatp health` commande pour la première fois, la val
   ```
 
   > [!NOTE]
-  > N’oubliez pas d’ajouter la virgule après le crochet fermant à la fin du `cloudService` bloc. Assurez-vous également qu’il existe deux crochets fermants après l’ajout du bloc Balise ou ID de groupe (consultez l’exemple ci-dessus). Pour le moment, le seul nom de clé pris en charge pour les balises est `GROUP`. 
+  > N’oubliez pas d’ajouter la virgule après le crochet fermant à la fin du `cloudService` bloc. Assurez-vous également qu’il existe deux accolades fermants après l’ajout d’une balise ou d’un bloc d’ID de groupe (consultez l’exemple ci-dessus). Pour le moment, le seul nom de clé pris en charge pour les balises est `GROUP`. 
   
 ## <a name="configuration-profile-validation"></a>Validation du profil de configuration
 
@@ -524,11 +527,11 @@ Le profil de configuration doit être un fichier au format JSON valide. Il exist
 python -m json.tool mdatp_managed.json
 ```
 
-Si le JSON est bien formé, la commande ci-dessus la renvoie au terminal et retourne un code de sortie de `0`. Sinon, une erreur qui décrit le problème s’affiche et la commande retourne un code de sortie de `1`.
+Si le json est correctement formé, la commande ci-dessus le renvoie au terminal et retourne un code de sortie de `0`. Sinon, une erreur décrivant le problème s’affiche et la commande retourne un code de sortie de `1`.
 
-## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Vérification du fonctionnement du fichier mdatp_managed.json comme prévu
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Vérification que le fichier mdatp_managed.json fonctionne comme prévu
 
-Pour vérifier que votre fichier /etc/opt/microsoft/mdatp/managed/mdatp_managed.json fonctionne correctement, vous devez voir « [managé] » en regard de ces paramètres :
+Pour vérifier que votre fichier /etc/opt/microsoft/mdatp/managed/mdatp_managed.json fonctionne correctement, vous devez voir « [géré] » en regard de ces paramètres :
 
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
@@ -537,8 +540,9 @@ Pour vérifier que votre fichier /etc/opt/microsoft/mdatp/managed/mdatp_managed.
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> Pour que le mdatp_managed.json prenne effet, aucun redémarrage du `mdatp` démon n’est requis.
+> Pour que le mdatp_managed.json prenne effet, aucun redémarrage du `mdatp` démon n’est nécessaire.
+  
 
-## <a name="configuration-profile-deployment"></a>Déploiement de profil de configuration
+## <a name="configuration-profile-deployment"></a>Déploiement du profil de configuration
 
-Une fois que vous avez créé le profil de configuration pour votre entreprise, vous pouvez le déployer via l’outil de gestion utilisé par votre entreprise. Defender pour point de terminaison sur Linux lit la configuration managée à partir du fichier */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* .
+Une fois que vous avez créé le profil de configuration pour votre entreprise, vous pouvez le déployer via l’outil de gestion que votre entreprise utilise. Defender pour point de terminaison sur Linux lit la configuration managée à partir du fichier */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* .

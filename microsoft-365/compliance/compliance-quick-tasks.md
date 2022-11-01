@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 24438848ab8437b769dd99294079fcfec84eaa3f
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 2b779ebaa99daf064cfe64eadb710bdbb4a6ad55
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68720017"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803483"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Tâches rapides pour bien démarrer avec la conformité dans Microsoft Purview
 
@@ -71,7 +71,7 @@ Microsoft fournit plusieurs stratégies d’alerte intégrées qui permettent d�
 
 Utilisez les outils de stratégie d’alerte et de tableau de bord d’alerte pour créer des stratégies d’alerte personnalisées et afficher les alertes générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions de stratégie. Il peut s’agir, par exemple, d’utiliser des stratégies d’alerte pour suivre les activités des utilisateurs et des administrateurs qui affectent les exigences de conformité, les autorisations et les incidents de perte de données dans votre organisation.
 
-Pour obtenir des instructions pas à pas pour créer des stratégies d’alerte personnalisées, consultez [Stratégies d’alerte dans le centre de sécurité et de conformité](/microsoft-365/compliance/alert-policies).
+Pour obtenir des instructions pas à pas pour créer des stratégies d’alerte personnalisées, consultez [Stratégies d’alerte dans Microsoft 365](/microsoft-365/compliance/alert-policies).
 
 ## <a name="task-5-classify-and-protect-sensitive-data"></a>Tâche 5 : Classifier et protéger les données sensibles
 

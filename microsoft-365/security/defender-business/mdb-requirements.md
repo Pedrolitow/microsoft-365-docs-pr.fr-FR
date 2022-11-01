@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 11/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mdb-setup
 - highpri
 - tier1
-ms.openlocfilehash: 2e9cddb44139867cae95090c1e73edb45406eabb
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 364c6181df1723ad553cfa6bb0eab39cf0cb7b2d
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68687567"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804989"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Microsoft Defender pour entreprises conditions requises
 
@@ -48,11 +48,11 @@ Le tableau suivant répertorie les exigences de base dont vous avez besoin pour 
 | Autorisations  | Pour vous inscrire à Defender for Business, vous devez être Administration global.<br/><br/>Pour accéder au portail Microsoft 365 Defender, les utilisateurs doivent avoir l’un des [rôles suivants dans Azure AD](mdb-roles-permissions.md) attribués :<ul><li>Lecteur de sécurité</li><li>Administrateur de la sécurité</li><li>Administrateur global</li></ul>Pour plus d’informations, consultez [Rôles et autorisations dans Defender pour les entreprises](mdb-roles-permissions.md). |
 | Configuration requise pour le navigateur | Microsoft Edge ou Google Chrome |
 | Système d’exploitation de l’appareil client | Pour gérer des appareils dans le portail Microsoft 365 Defender, vos appareils doivent exécuter l’un des systèmes d’exploitation suivants : <ul><li>Windows 10 ou 11 Business</li><li>Windows 10 ou 11 Professionnel</li><li>Windows 10 ou 11 Entreprise</li><li>Mac (les trois versions les plus actuelles sont prises en charge)</li></ul>Vérifiez que [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) est installé sur les appareils Windows. <br/><br/>Si vous gérez déjà des appareils dans Microsoft Intune, vous pouvez continuer à utiliser le Centre d’administration Microsoft Endpoint Manager.<sup> [[1](#fn1)]</sup> Dans ce cas, les autres systèmes d’exploitation suivants sont pris en charge : <ul><li>iOS et iPadOS</li><li>Système d’exploitation Android</li></ul> |
-| Configuration requise pour le serveur | Si vous envisagez d’intégrer une instance de Windows Server ou Linux Server, vous aurez besoin d’une licence supplémentaire, telle que [les serveurs Microsoft Defender pour entreprises (préversion)](get-defender-business-servers.md)<sup>[[2](#fn2)]</sup>. Vous devez respecter les conditions suivantes : <ul><li>Le paramètre **des fonctionnalités en préversion** est activé. Dans le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com)), accédez à **Paramètres** > **Endpoints** > **Général** > **Fonctions avancées** > **Fonctions de prévisualisation**.</li><li>L’étendue d’application de Windows Server est activée. Dans le portail Microsoft 365 Defender, accédez à **Paramètres Points** >  de **terminaison** > **Gestion de la configuration** > **Étendue de mise en application**. Sélectionnez **Utiliser MDE pour appliquer les paramètres de configuration de sécurité à partir de MEM**, sélectionnez  **Windows Server**, puis **sélectionnez Enregistrer**.</li><li>Les points de terminaison de serveur Linux remplissent les [conditions préalables pour Microsoft Defender pour point de terminaison sur Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).</li></ul> |
+| Configuration requise pour le serveur | Pour intégrer un appareil exécutant Windows Server ou Linux Server, vous aurez besoin d’une licence supplémentaire, telle que [Microsoft Defender pour entreprises serveurs](get-defender-business-servers.md) <sup>[[2](#fn2)]</sup> .<br/><br/>Les points de terminaison Windows Server doivent répondre aux [exigences de Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/minimum-requirements#hardware-and-software-requirements), et l’étendue d’application doit être activée.<ol><li>Dans le portail Microsoft 365 Defender, accédez à **Paramètres Points** >  de **terminaison** > **Gestion de la configuration** > **Étendue de mise en application**.</li><li>Sélectionnez **Utiliser MDE pour appliquer les paramètres de configuration de sécurité à partir de MEM**, puis sélectionnez  **Windows Server**. </li><li>Sélectionnez **Enregistrer**.</li></ol>Les points de terminaison de serveur Linux doivent remplir les [conditions préalables pour Microsoft Defender pour point de terminaison sur Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).|
 
 (<a id="fn1">1</a>) Microsoft Intune n’est pas inclus dans la version autonome de Defender pour les entreprises. Intune peuvent être ajoutés à Defender pour les entreprises. Intune est inclus dans Microsoft 365 Business Premium.
 
-(<a id="fn2">2</a>) Pour intégrer des serveurs, nous vous recommandons d’utiliser [des serveurs Microsoft Defender pour entreprises (préversion)](get-defender-business-servers.md) . Vous pouvez également utiliser [Microsoft Defender pour les serveurs](/azure/defender-for-cloud/defender-for-servers-introduction). Toutefois, votre expérience Defender entreprise peut changer lorsque vous ajoutez un plan d’entreprise, tel que Defender pour les serveurs Plan 1 ou Plan 2. Pour plus d’informations, consultez [Que se passe-t-il si j’ai une combinaison d’abonnements de sécurité de point de terminaison Microsoft ?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) et [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
+(<a id="fn2">2</a>) Pour intégrer des serveurs, nous vous recommandons d’utiliser [Microsoft Defender pour entreprises serveurs](get-defender-business-servers.md). Vous pouvez également utiliser [Microsoft Defender pour les serveurs](/azure/defender-for-cloud/defender-for-servers-introduction). Toutefois, votre expérience Defender entreprise peut changer lorsque vous ajoutez un plan d’entreprise, tel que Defender pour les serveurs Plan 1 ou Plan 2. Pour plus d’informations, consultez [Que se passe-t-il si j’ai une combinaison d’abonnements de sécurité de point de terminaison Microsoft ?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) et [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) est utilisé pour gérer les autorisations des utilisateurs et les groupes d’appareils. Azure AD est inclus dans votre abonnement Defender for Business. 

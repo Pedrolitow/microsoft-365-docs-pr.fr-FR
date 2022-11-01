@@ -12,25 +12,25 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
-description: Dans cet article, découvrez comment limiter les sites SharePoint à un emplacement géographique spécifié dans un environnement multigéographique.
-ms.openlocfilehash: 03e1738b88d10717892152655a9e4f3de7a2d847
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+description: Dans cet article, découvrez comment restreindre les sites SharePoint à un emplacement géographique spécifié dans un environnement multigéographique.
+ms.openlocfilehash: dd7048ea6eba4c8de7a0566c67d6588f395004c6
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67673038"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803658"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Circonscrire le contenu des sites 
 
-Dans certaines circonstances, vous pouvez choisir d’appliquer un site et son contenu de fichier pour qu’il reste à l’emplacement géographique où le site a été créé, soit en empêchant le déplacement du site, soit en empêchant la mise en cache du contenu du fichier du site dans un autre emplacement géographique.
+Dans certaines circonstances, vous pouvez choisir de faire en sorte qu’un site et son contenu de fichier restent à l’emplacement _Geography_ où le site a été créé, soit en empêchant le déplacement du site, soit en empêchant la mise en cache du contenu du fichier du site dans un autre emplacement _Geography_ .
 
-Vous pouvez effectuer cette tâche à l’aide de l’applet de commande [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) avec le paramètre **RestrictedToGeo** . Ce paramètre a la valeur null par défaut, mais vous pouvez la remplacer par l’une des restrictions suivantes :
+Vous pouvez effectuer cette tâche à l’aide de l’applet de commande [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) avec le paramètre **RestrictedToGeo** . Ce paramètre a la valeur par défaut NULL, mais vous pouvez le modifier en l’une des restrictions suivantes :
 
 |Restriction|Description|
 |:----------|:----------|
-|NoRestriction|Le site peut être déplacé vers un autre emplacement géographique.|
-|BlockMoveOnly|Le site ne peut pas être déplacé vers un autre emplacement géographique, mais son contenu peut être mis en cache dans d’autres emplacements géographiques.|
-|BlockFull|Le site ne peut pas être déplacé vers un autre emplacement géographique, et les fichiers qu’il contient ne sont pas mis en cache dans d’autres emplacements géographiques. Les titres (extraits du contenu), les noms et d’autres propriétés des fichiers peuvent toujours être mis en cache dans d’autres emplacements géographiques.<br>Le contenu stocké sur le site avant la définition du paramètre RestrictedToGeo sur BlockFull peut rester en cache dans d’autres emplacements géographiques.|
+|NoRestriction|Le site peut être déplacé vers un autre emplacement _Geography_ .|
+|BlockMoveOnly|Le site ne peut pas être déplacé vers un autre emplacement _Geography_ , mais le contenu du site peut être mis en cache dans d’autres emplacements _Geography_ .|
+|BlockFull|Le site ne peut pas être déplacé vers un autre emplacement _Geography_ , et le contenu complet du fichier n’est pas mis en cache dans d’autres emplacements _Geography_ . Le titre des fichiers (collecté à partir du contenu), le nom du fichier et d’autres propriétés du fichier peuvent toujours être mis en cache dans d’autres emplacements _Geography_ .<br>Le contenu stocké dans le site avant sa configuration sur BlockFull peut continuer à être mis en cache dans d’autres emplacements _Geography_ .|
 
 Utilisez la syntaxe suivante :
 

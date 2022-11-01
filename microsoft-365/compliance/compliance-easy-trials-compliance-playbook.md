@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Guide de l’utilisateur de la version d’évaluation des solutions Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 50be6466441a878acc3d93e75f75c701e894f224
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: b34caf007a9710dd351ec4a7e5ed456b5b19d840
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68719137"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801977"
 ---
 # <a name="trial-user-guide-microsoft-purview-solutions"></a>Guide de l’utilisateur d’évaluation : Solutions Microsoft Purview
 
@@ -414,7 +414,7 @@ Les stratégies de rétention du journal d’audit font partie des nouvelles fon
 1. Avant de créer une stratégie de conservation des journaux d'audit – [éléments clés à connaître](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) avant de créer votre stratégie.
 1. [Créez une stratégie de rétention du journal d’audit](audit-log-retention-policies.md#create-an-audit-log-retention-policy).
 1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
-1. [Créer et gérer des stratégies de rétention des journaux d’audit sur PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) : vous pouvez également utiliser Le Centre de sécurité & conformité PowerShell pour créer et gérer des stratégies de rétention des journaux d’audit. L’une des raisons d’utiliser PowerShell est de créer une stratégie pour un type d’enregistrement ou une activité qui n’est pas disponible dans l’interface utilisateur.
+1. [Créer et gérer des stratégies de rétention des journaux d’audit sur PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) : vous pouvez également utiliser PowerShell sécurité & conformité pour créer et gérer des stratégies de rétention des journaux d’audit. L’une des raisons d’utiliser PowerShell est de créer une stratégie pour un type d’enregistrement ou une activité qui n’est pas disponible dans l’interface utilisateur.
 
 ## <a name="additional-trials-and-add-ons"></a>Essais et modules complémentaires supplémentaires
 

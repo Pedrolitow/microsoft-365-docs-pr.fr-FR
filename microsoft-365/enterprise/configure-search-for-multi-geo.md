@@ -6,29 +6,68 @@ author: tklarsen
 manager: arnek
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Découvrez comment configurer la recherche dans un environnement multigéographique. Seuls certains clients, tels que OneDrive, peuvent retourner des résultats dans un environnement multigéographique.
-ms.openlocfilehash: a6f152a3f226befa8bc060dadd0eed1c0952523c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 2cd31d6b5b5b4f6b957741b8b9209c7693ca169f
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824923"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804639"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurer la recherche pour Microsoft 365 Multi-Geo
 
-Dans un environnement multigéographique, chaque emplacement géographique comporte son propre index de recherche et son centre de recherche. Lorsqu’un utilisateur effectue une recherche, la requête est distribuée à tous les index et les résultats renvoyés sont fusionnés.
+## <a name="configure-multi-geo-search"></a>Configurer la recherche multigéographique
 
-Par exemple, un utilisateur d’un emplacement géographique peut rechercher du contenu stocké dans un autre emplacement géographique ou du contenu sur un site SharePoint limité à un emplacement géographique différent. Si l’utilisateur a accès à ce contenu, la recherche affiche le résultat.
+Votre _locataire_ multigéographique disposera de fonctionnalités de recherche agrégée permettant à une requête de recherche de retourner des résultats à partir de n’importe où dans le _locataire_.
 
-## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Quels sont les clients de recherche qui fonctionnent dans un environnement Multi-Géo ?
+Par défaut, les recherches effectuées à partir de ces points d’entrée retournent des résultats agrégés, même si chaque index de recherche se trouve dans son emplacement _Geography_ approprié :
 
-Ces clients peuvent renvoyer des résultats de tous les emplacements géographiques :
+- OneDrive Entreprise
+- Delve
+- Page d’accueil SharePoint
+- Centre de recherche
+
+En outre, les fonctionnalités de recherche multigéographique peuvent être configurées pour vos applications de recherche personnalisées qui utilisent l’API de recherche SharePoint.
+
+Consultez [Configurer la recherche pour OneDrive Entreprise Multi-Géo](configure-search-for-multi-geo.md) pour obtenir des instructions, y compris des informations sur les limitations et les différences.
+
+## <a name="validating-the-microsoft-365-multi-geo-configuration"></a>Validation de la configuration de Microsoft 365 Multi-Geo
+
+Voici certains cas d’utilisation de base que vous pourriez vouloir inclure dans votre plan de validation avant de déployer à grande échelle Microsoft 365 Multi-Geo dans votre entreprise. Une fois que vous avez terminé ces tests et les cas d’utilisation supplémentaires éventuels et pertinents pour votre entreprise, vous pouvez choisir de commencer à ajouter des utilisateurs à votre groupe pilote initial.
+
+OneDrive Entreprise :
+
+Sélectionnez OneDrive dans le lanceur d’applications Microsoft 365 et vérifiez que vous êtes automatiquement dirigé vers l’emplacement _Géographique_ approprié pour l’utilisateur, en fonction du PDL de l’utilisateur. OneDrive Entreprise doit maintenant commencer à être approvisionné à cet emplacement. Après l’approvisionnement, essayez de charger et de télécharger quelques documents.
+
+Application mobile OneDrive :
+
+Connectez-vous à votre application mobile OneDrive avec vos informations d’identification de compte de test. Confirmez que vous pouvez voir vos fichiers OneDrive Entreprise et que vous pouvez interagir avec eux à partir de votre appareil mobile.
+
+Synchronisation OneDrive client :
+
+Vérifiez que le client Synchronisation OneDrive détecte automatiquement votre emplacement _OneDrive Entreprise Geography_ lors de la connexion. Si vous devez télécharger le client de synchronisation, vous pouvez cliquer sur **Synchroniser** dans la bibliothèque OneDrive.
+
+Applications Office :
+
+Vérifiez que vous pouvez accéder à OneDrive Entreprise en vous connectant à partir d’une application Office, telle que Word. Ouvrez l’application Office et sélectionnez **OneDrive – \<TenantName\>**. Office détecte votre emplacement OneDrive et affiche les fichiers que vous pouvez ouvrir.
+
+Partage:
+
+Essayez de partager des fichiers OneDrive. Vérifiez que le sélecteur de personnes affiche tous vos utilisateurs SharePoint Online, quel que soit leur emplacement _géographique_ .
+
+Dans un environnement multigéographique, chaque emplacement _Geography_ a son propre index de recherche et son propre centre de recherche. Lorsqu’un utilisateur effectue une recherche, la requête est distribuée à tous les index et les résultats renvoyés sont fusionnés.
+
+Par exemple, un utilisateur dans un emplacement _Geography_ peut rechercher du contenu stocké dans un autre emplacement _Geography_ , ou du contenu sur un site SharePoint limité à un autre emplacement Geography. Si l’utilisateur a accès à ce contenu, la recherche affiche le résultat.
+
+## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Quels clients de recherche fonctionnent dans un environnement multigéographique ?
+
+Ces clients peuvent retourner les résultats de tous les emplacements Geography :
 
 - OneDrive
 - Delve
@@ -38,27 +77,27 @@ Ces clients peuvent renvoyer des résultats de tous les emplacements géographiq
 
 ### <a name="onedrive"></a>OneDrive
 
-Dès que l’environnement Multi-Géo est configuré, les utilisateurs qui effectuent des recherches dans OneDrive obtiennent des résultats de tous les emplacements géographiques.
+Dès que l’environnement multigéographique a été configuré, les utilisateurs qui effectuent une recherche dans OneDrive obtiennent les résultats de tous les emplacements _Geography_ .
 
 ### <a name="delve"></a>Delve
 
-Dès que l’environnement Multi-Géo est configuré, les utilisateurs qui effectuent des recherches dans Delve obtiennent des résultats de tous les emplacements géographiques.
+Dès que l’environnement multigéographique a été configuré, les utilisateurs qui effectuent une recherche dans Delve obtiennent les résultats de tous les emplacements _Geography_ .
 
-Le flux Delve et la carte de visite affichent uniquement les aperçus des fichiers qui sont stockés dans l’emplacement central. Pour les fichiers stockés dans des emplacements satellites, l’icône du type de fichier apparaît à la place.
+Le flux Delve et la fiche de profil n’affichent que les aperçus de fichiers stockés dans l’emplacement central. Pour les fichiers stockés dans des emplacements _géographiques satellites_ , l’icône du type de fichier s’affiche à la place.
 
 ### <a name="the-sharepoint-home-page"></a>Page d’accueil SharePoint
 
-Dès que l’environnement Multi-Géo est configuré, les utilisateurs voient les actualités, les sites récents et les sites suivis de plusieurs emplacements géographiques sur leur page d’accueil SharePoint. S’ils utilisent la zone de recherche sur la page d’accueil SharePoint, ils obtiennent des résultats fusionnés provenant de plusieurs emplacements géographiques.
+Dès que l’environnement multigéographique a été configuré, les utilisateurs verront les actualités, les sites récents et suivis de plusieurs emplacements _Geography_ sur leur page d’accueil SharePoint. S’ils utilisent la zone de recherche de la page d’accueil SharePoint, ils obtiendront des résultats fusionnés à partir de plusieurs emplacements _Geography_ .
 
 ### <a name="the-search-center"></a>Centre de recherche
 
-Une fois que l’environnement Multi-Géo est configuré, chaque centre de recherche continue à afficher uniquement les résultats de son propre emplacement géographique. Les administrateurs doivent [modifier les paramètres de chaque centre de recherche](#_Set_up_a_1) pour obtenir des résultats de tous les emplacements géographiques. Par la suite, les utilisateurs qui effectuent une recherche dans le centre de recherche obtiennent des résultats de tous les emplacements géographiques.
+Une fois l’environnement multigéographique configuré, chaque centre de recherche continue d’afficher uniquement les résultats de son propre emplacement _géographique_ . Les administrateurs doivent [modifier les paramètres de chaque centre de recherche](#_Set_up_a_1) pour obtenir les résultats de tous les emplacements _Geography_ . Ensuite, les utilisateurs qui effectuent une recherche dans le Centre de recherche obtiennent les résultats de tous les emplacements _Geography_ .
 
 ### <a name="custom-search-applications"></a>Applications de recherche personnalisée
 
-Comme d’habitude, les applications de recherche personnalisée interagissent avec les index de recherche en utilisant les API REST de recherche SharePoint existantes. Pour obtenir des résultats de tous les emplacements géographiques (ou une partie), l’application doit [appeler l’API et inclure les nouveaux paramètres de requête Multi-Géo](#_Get_custom_search) dans la demande. Cela déclenche une distribution ramifiée de la requête à tous les emplacements géographiques.
+Comme d’habitude, les applications de recherche personnalisées interagissent avec les index de recherche à l’aide des API REST recherche SharePoint existantes. Pour obtenir des résultats à partir de tous ou de certains emplacements _Geography_ , l’application doit [appeler l’API et inclure les nouveaux paramètres de requête multigéographique](#_Get_custom_search) dans la requête. Cela déclenche un ventilateur hors de la requête vers tous les emplacements _Geography_ .
 
-## <a name="whats-different-about-search-in-a-multi-geo-environment"></a>Quelles différences la recherche présente-t-elle dans un environnement multigéographique ?
+## <a name="whats-different-about-search-in-a-multi-geo-environment"></a>Qu’est-ce qui diffère de la recherche dans un environnement multigéographique ?
 
 Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionnent différemment dans un environnement multigéographique.
 
@@ -73,27 +112,28 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 <tbody>
 <tr class="odd">
 <td align="left">Résultats promus</td>
-<td align="left">Vous pouvez créer des règles de requête avec des résultats promus à différents niveaux : pour le client entier, pour une collection de sites ou pour un site. Dans un environnement multigéographique, définissez les résultats promus au niveau du client pour promouvoir les résultats aux centres de recherche de tous les emplacements géographiques. Si vous souhaitez seulement promouvoir les résultats dans le centre de recherche qui se trouve dans l’emplacement géographique de la collection de sites ou du site, définissez les résultats promus au niveau de la collection de sites ou du site. Ces résultats ne sont pas promus dans d’autres emplacements géographiques.</td>
-<td align="left">Si vous n’avez pas besoin d’autres résultats promus par emplacement géographique (par exemple, des règles différentes pour les déplacements), nous vous recommandons de définir les résultats promus au niveau du client.</td>
+<td align="left">Vous pouvez créer des règles de requête avec des résultats promus à différents niveaux : pour l’ensemble du _locataire_, pour une collection de sites ou pour un site. Dans un environnement multigéographique, définissez les résultats promus au niveau _du locataire_ pour promouvoir les résultats dans les centres de recherche dans tous les emplacements _Geography_ . Si vous souhaitez uniquement promouvoir les résultats dans le Centre de recherche situé à l’emplacement _Geography_ de la collection de sites ou du site, définissez les résultats promus au niveau de la collection de sites ou du site. Ces résultats ne sont pas promus dans d’autres emplacements _Geography_ .</td>
+<td align="left">Si vous n’avez pas besoin de résultats promus différents par emplacement _Geography_ , par exemple des règles différentes pour les déplacements, nous vous recommandons de définir des résultats promus au niveau _du locataire_ .</td>
 </tr>
 <tr class="even">
 <td align="left">Affinements de la recherche</td>
-<td align="left">La recherche renvoie des affinements de tous les emplacements géographiques d’un client puis les regroupe. Le regroupement est ce qu’il y a de mieux, ce qui signifie que le nombre d’affinements peut ne pas être précis à 100 %. Pour la plupart des scénarios de recherche, cette précision est suffisante. </td>
-<td align="left">Pour les applications basées sur la recherche qui dépendent de l’intégralité de l’affinement, effectuez une requête indépendante sur chaque emplacement géographique.</td>
+<td align="left">La recherche retourne des affinements à partir de tous les emplacements _Geography_ d’un _locataire_ , puis les agrège. L’agrégation est un effort optimal, ce qui signifie que le nombre d’affinements peut ne pas être précis à 100 %. Pour la plupart des scénarios pilotés par la recherche, cette précision est suffisante.
+</td>
+<td align="left">Pour les applications pilotées par la recherche qui dépendent de l’exhaustivité de l’affinement, interrogez chaque emplacement _Geography_ indépendamment.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">La recherche multigéographique ne prend pas en charge la création dynamique de compartiments pour les affinements numériques.</td>
+<td align="left">La recherche multigéographique ne prend pas en charge le compartimentage dynamique pour les affinements numériques.</td>
 <td align="left">Utilisez le <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize »</a> pour les affinements numériques.</td>
 </tr>
 <tr class="even">
 <td align="left">ID de document</td>
-<td align="left">Si vous développez une application basée sur la recherche qui dépend des ID de document, notez que les ID de document d’un environnement multigéographique ne sont pas uniques parmi les emplacements géographiques, mais le sont par emplacement géographique.</td>
-<td align="left">Nous avons ajouté une colonne qui identifie l’emplacement géographique. Utilisez cette colonne pour atteindre l’unicité. Cette colonne est nommée « GeoLocationSource ».</td>
+<td align="left">Si vous développez une application pilotée par la recherche qui dépend des ID de document, notez que les ID de document dans un environnement multigéographique ne sont pas uniques entre les emplacements _Géographiques_ , mais sont uniques par emplacement _Geography_ .</td>
+<td align="left">Nous avons ajouté une colonne qui identifie l’emplacement _Geography_ . Utilisez cette colonne pour atteindre l’unicité. Cette colonne est nommée « GeoLocationSource ».</td>
 </tr>
 <tr class="odd">
 <td align="left">Nombre de résultats</td>
-<td align="left">La page des résultats de recherche affiche les résultats combinés des emplacements géographiques, mais il n’est pas possible d’afficher plus de 500 résultats par page.</td>
+<td align="left">La page des résultats de la recherche affiche les résultats combinés des emplacements _Geography_ , mais il n’est pas possible de mettre en page au-delà de 500 résultats.</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -122,20 +162,20 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué ne sont p
 </tr>
 <tr class="even">
 <td align="left">Invités</td>
-<td align="left">Les invités obtiennent uniquement les résultats de l’emplacement géographique à partir de laquelle ils recherchent.</td>
+<td align="left">Les invités obtiennent uniquement les résultats de l’emplacement _Geography_ à partir duquel ils effectuent des recherches.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Comment fonctionne la recherche dans un environnement multigéographique ?
+## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Comment fonctionne la recherche dans un environnement Multi-Géo ?
 
 Tous les clients de recherche utilisent les API REST de recherche SharePoint existantes pour interagir avec les index de recherche.
 
-![Diagramme montrant comment les API REST de recherche SharePoint interagissent avec les index de recherche.](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramme montrant comment les API REST Recherche SharePoint interagissent avec les index de recherche.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un client de recherche appelle le point de terminaison REST de recherche avec la propriété de requête EnableMultiGeoSearch= true.
-2. La requête est envoyée à tous les emplacements géographiques dans le client.
-3. Les résultats de recherche de chaque emplacement géographique sont fusionnés et classés.
+2. La requête est envoyée à tous les emplacements _Geography_ dans le _locataire_.
+3. Les résultats de la recherche de chaque emplacement _Geography_ sont fusionnés et classés.
 4. Le client obtient des résultats de recherche unifiés.
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Notez que nous ne fusionnons pas les résultats de recherche avant d’avoir reçu les résultats de tous les emplacements géographiques. Cela signifie que les recherches géographiques multiples souffrent d’une latence supplémentaire par rapport aux recherches dans un environnement ne comportant qu’un seul emplacement géographique.
@@ -149,7 +189,7 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 
 2. Accédez à la page des résultats de la recherche (reportez-vous à la [liste](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) des pages des résultats de la recherche)
 
-3. Sélectionnez le secteur vertical à configurer, cliquez sur l’icône d’engrenage **Paramètres** située en haut à droite, puis cliquez sur **Modifier la page**. La page des résultats de la recherche s’ouvre en mode Édition.
+3. Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.
 
    ![Modifier la sélection de page dans Paramètres.](../media/configure-search-for-multi-geo-image2.png)
 
@@ -168,7 +208,7 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Configurer des applications de recherche personnalisée pour qu’elles affichent les résultats de l’ensemble ou d’une partie des emplacements géographiques
 
-Les applications de recherche personnalisée obtiennent les résultats de l’ensemble (ou d’une partie) des emplacements géographiques en spécifiant des paramètres de requête avec la demande à l’API REST de recherche SharePoint. Selon les paramètres, la requête est distribuée à tous les emplacements géographiques ou à certains emplacements géographiques. Par exemple, si vous devez seulement interroger un sous-ensemble des emplacements géographiques pour rechercher des informations pertinentes, vous pouvez contrôler la distribution ramifiée à ces derniers uniquement. Si la demande fonctionne, l’API REST de recherche SharePoint renvoie des données de réponse.
+Les applications de recherche personnalisée obtiennent les résultats de tout ou partie des emplacements _Geography_ en spécifiant des paramètres de requête avec la requête adressée à l’API REST Recherche SharePoint. Selon les paramètres de requête, la requête est étendue à tous les emplacements _Geography_ ou à certains emplacements géographiques. Par exemple, si vous avez uniquement besoin d’interroger un sous-ensemble d’emplacements _Geography_ pour trouver des informations pertinentes, vous pouvez contrôler le ventilateur uniquement sur ceux-ci. Si la demande réussit, l’API REST Recherche SharePoint retourne les données de réponse.
 
 ### <a name="requirement"></a>Conditions requises
 
@@ -176,11 +216,11 @@ Pour chaque emplacement géographique, vous devez vous assurer que tous les util
 
 ### <a name="query-parameters"></a>Paramètres de requête
 
-EnableMultiGeoSearch : il s’agit une valeur booléenne qui spécifie si la requête doit être étendue aux index des autres emplacements géographiques du client multigéographique. Définissez-la sur **true** pour étendre la requête et sur **false** pour ne pas l’étendre. Si vous n’incluez pas ce paramètre, la valeur par défaut est **false**, sauf lorsque vous effectuez un appel de l’API REST contre un site qui utilise le modèle Centre de recherche d’entreprise, dans ce cas, la valeur par défaut est **true**. Si vous utilisez ce paramètre dans un environnement qui n’est pas multigéographique, le paramètre est ignoré.
+EnableMultiGeoSearch : il s’agit d’une valeur booléenne qui spécifie si la requête doit être transférée aux index d’autres emplacements géographiques du _locataire multigéographique_. Définissez-la sur **true** pour étendre la requête et sur **false** pour ne pas l’étendre. Si vous n’incluez pas ce paramètre, la valeur par défaut est **false**, sauf lorsque vous effectuez un appel de l’API REST contre un site qui utilise le modèle Centre de recherche d’entreprise, dans ce cas, la valeur par défaut est **true**. Si vous utilisez ce paramètre dans un environnement qui n’est pas multigéographique, le paramètre est ignoré.
 
 TypeClient : il s’agit d’une chaîne. Entrez un nom de client unique pour chaque application de recherche. Si vous n’incluez pas ce paramètre, la requête n’est pas étendue à d’autres emplacements géographiques.
 
-MultiGeoSearchConfiguration : il s’agit d’une liste facultative d’emplacements géographiques dans le client multigéographique pour étendre la requête lorsque **EnableMultiGeoSearch** est défini sur **true**. Si vous n’incluez pas ce paramètre ou que vous le laissez vide, la requête est étendue à d’autres emplacements géographiques. Pour chaque emplacement géographique, entrez les éléments suivants au format JSON :
+MultiGeoSearchConfiguration : il s’agit d’une liste facultative des emplacements géographiques dans le _locataire_ multigéographique vers lequel la requête doit être exécutée lorsque **EnableMultiGeoSearch a la** **valeur true**. Si vous n’incluez pas ce paramètre ou que vous le laissez vide, la requête est étendue à d’autres emplacements géographiques. Pour chaque emplacement géographique, entrez les éléments suivants au format JSON :
 
 <table>
 <thead>
@@ -192,7 +232,7 @@ MultiGeoSearchConfiguration : il s’agit d’une liste facultative d’emplace
 <tbody>
 <tr class="odd">
 <td align="left">DataLocation</td>
-<td align="left">L’emplacement géographique, par exemple NAM.</td>
+<td align="left">Emplacement _Geography_ , par exemple NAM.</td>
 </tr>
 <tr class="even">
 <td align="left">EndPoint</td>
@@ -205,11 +245,11 @@ MultiGeoSearchConfiguration : il s’agit d’une liste facultative d’emplace
 </tbody>
 </table>
 
-Si vous omettez DataLocation ou EndPoint, ou si une DataLocation est dupliquée, la demande échoue. [Vous pouvez obtenir des informations sur le point de terminaison des emplacements géographiques d’un client à l’aide de Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
+If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Données de réponse
 
-MultiGeoSearchStatus : il s’agit d’une propriété renvoyée par l’API de recherche SharePoint en réponse à une demande. La valeur de la propriété est une chaîne et fournit les informations suivantes sur les résultats renvoyés par l’API de recherche SharePoint :
+MultiGeoSearchStatus – This is a property that the SharePoint Search API returns in response to a request. The value of the property is a string and gives the following information about the results that the SharePoint Search API returns:
 
 <table>
 <thead>
@@ -221,18 +261,18 @@ MultiGeoSearchStatus : il s’agit d’une propriété renvoyée par l’API de
 <tbody>
 <tr class="odd">
 <td align="left">Complet</td>
-<td align="left">Résultats complets de <strong>tous</strong> les emplacements géographiques.</td>
+<td align="left">Résultats complets de <strong>tous les</strong> emplacements _Geography_ .</td>
 </tr>
 <tr class="even">
-<td align="left">Partielle</td>
-<td align="left">Résultats partiels d’un ou plusieurs emplacements géographiques. Les résultats sont incomplets en raison d’une erreur temporaire.</td>
+<td align="left">Partiel</td>
+<td align="left">Résultats partiels d’un ou de plusieurs emplacements _Geography_ . Les résultats sont incomplets en raison d’une erreur temporaire.</td>
 </tr>
 </tbody>
 </table>
 
 ### <a name="query-using-the-rest-service"></a>Requête à l’aide du service REST
 
-Avec une demande GET, spécifiez les paramètres de la requête dans l’URL. Avec une demande POST, vous transmettez les paramètres de la requête dans le corps au format JSON (JavaScript Object Notation).
+With a GET request, you specify the query parameters in the URL. With a POST request, you pass the query parameters in the body in JavaScript Object Notation (JSON) format.
 
 #### <a name="request-headers"></a>En-têtes de demande
 
@@ -322,7 +362,7 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 ### <a name="query-using-csom"></a>Requête utilisant CSOM
 
-Voici un exemple de requête CSOM étendue à **tous** les emplacements géographiques :
+Voici un exemple de requête CSOM qui est étendue à **tous les** emplacements _Geography_ :
 
 ```CSOM
 var keywordQuery = new KeywordQuery(ctx);
