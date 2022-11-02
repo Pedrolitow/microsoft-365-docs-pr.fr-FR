@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Migration OneDrive interlocataire
-ms.openlocfilehash: 0088e7088dd67fd3a4d189eacdacde5362d0ff73
-ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
+ms.openlocfilehash: d17c1ff16dc5cc4a833fb0f37823516b335ea34c
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/02/2022
-ms.locfileid: "68814096"
+ms.locfileid: "68817226"
 ---
 # <a name="cross-tenant-onedrive-migration"></a>Migration OneDrive interlocataire
 
@@ -34,7 +34,8 @@ Les administrateurs SharePoint de deux locataires distincts peuvent utiliser l�
 
 Jusqu’à 4 000 comptes OneDrive peuvent être planifiés pour la migration à l’avance à un moment donné. Une fois planifiées, les migrations se produisent sans que les données de l’utilisateur ne quittent jamais le cloud Microsoft 365 et avec une interruption minimale, ne nécessitant que quelques minutes où oneDrive d’un utilisateur sera en lecture seule. Une fois les migrations terminées, une redirection est placée à l’emplacement du OneDrive d’origine de l’utilisateur, de sorte que tous les liens vers des fichiers et des dossiers peuvent continuer à fonctionner dans le nouvel emplacement. 
 
-Cette fonctionnalité n’est pas prise en charge pour les utilisateurs du cloud public, notamment GCC, Consumer, GCC de haut niveau ou DoD.
+>[!Note]
+>Cette fonctionnalité n’est pas prise en charge pour les utilisateurs du cloud public, notamment GCC, Consumer, GCC de haut niveau ou DoD.
 
 ## <a name="licensing"></a>Licences
 
