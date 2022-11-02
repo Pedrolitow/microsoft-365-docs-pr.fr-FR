@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Cet article explique les différences entre les différentes versions du chiffrement des messages.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d77d61ce5c27dad476a67a4360eae463196385b4
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 710c7aa0830548afe569a7980dabefde8a4e4f39
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793255"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817569"
 ---
 # <a name="compare-versions-of-message-encryption"></a>Comparer les versions de chiffrement de messages
 
@@ -62,7 +62,7 @@ Les nouvelles fonctionnalités offrent les avantages suivants :
 - Les comptes en dehors de Microsoft 365, tels que les comptes Gmail, Yahoo et Microsoft, sont fédérés avec le portail OME, qui offre une meilleure expérience utilisateur à ces destinataires. Toutes les autres identités utilisent un code de passe à usage unique pour accéder aux messages chiffrés.
 - Les administrateurs peuvent personnaliser la personnalisation et créer plusieurs modèles de personnalisation.
 - Les administrateurs peuvent révoquer les e-mails chiffrés avec les nouvelles fonctionnalités.
-- Les nouvelles fonctionnalités fournissent des rapports d’utilisation détaillés via le Centre de conformité de la sécurité &amp; .
+- Les nouvelles fonctionnalités fournissent des rapports d’utilisation détaillés via le portail de conformité Microsoft Purview.
 
 ## <a name="microsoft-purview-advanced-message-encryption-capabilities"></a>Fonctionnalités avancées de chiffrement des messages Microsoft Purview
 

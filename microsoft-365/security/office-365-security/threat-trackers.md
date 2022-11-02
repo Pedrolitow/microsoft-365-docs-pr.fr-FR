@@ -19,12 +19,12 @@ ms.custom: ''
 description: Découvrez les suivis des menaces, y compris les nouveaux suivis remarquables, pour aider votre organisation à rester au courant des problèmes de sécurité.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5bc2bfb0d6592b9afd5dd1d6295b1bc1cf7d014a
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 1b0d22cbe4eb34d06e439d620b1b58d25e7ddd32
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728046"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817487"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivis des menaces - Nouveautés et remarquables
 
@@ -42,10 +42,6 @@ ms.locfileid: "68728046"
 ## <a name="what-are-threat-trackers"></a>Que sont les suivis des menaces ?
 
 Les suivis de menaces sont des widgets et des vues informatifs qui vous fournissent des informations sur différents problèmes de cybersécurité susceptibles d’impacter votre entreprise. Par exemple, vous pouvez afficher des informations sur les campagnes de programmes malveillants tendance à l’aide de suivi des menaces.
-
-La plupart des pages de suivi incluent des numéros de tendance qui sont mis à jour régulièrement, des widgets pour vous aider à comprendre quels problèmes sont les plus importants ou qui ont le plus augmenté, et un lien rapide dans la colonne **Actions** qui vous dirige vers l’Explorateur, où vous pouvez afficher des informations plus détaillées.
-
-:::image type="content" source="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png" alt-text="Exemple d’informations de campagne dans l’Explorateur" lightbox="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png":::
 
 Les trackers ne sont que quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Microsoft Defender pour Office 365 Plan 2](office-365-ti.md). Les suivis de menaces incluent [les suivis remarquables, les](#noteworthy-trackers) [suivis tendance, les](#trending-trackers) [requêtes suivies](#tracked-queries) et [les requêtes enregistrées](#saved-queries).
 
