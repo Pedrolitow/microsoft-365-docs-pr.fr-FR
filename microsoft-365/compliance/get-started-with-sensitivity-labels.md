@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Étapes normatives pour les administrateurs, les conditions requises de licence et les scénarios courants qui utilisent des étiquettes de confidentialité pour protéger les données de votre organisation.
-ms.openlocfilehash: cb956c413d975c6d0199cb9b8f2d620b35b69fdc
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: d684232f7ed44231d45a5a4e3d7ac26b834be7d7
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547991"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814228"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -35,7 +35,7 @@ ms.locfileid: "68547991"
 
 Pour en savoir plus sur les étiquettes de confidentialité et la façon dont elles peuvent vous aider à protéger les données de votre organisation, voir [Plus d'informations sur les étiquettes de confidentialité](sensitivity-labels.md).
 
-Si vous avez [Azure Information Protection](/azure/information-protection/what-is-information-protection) et que vous utilisez toujours des étiquettes Azure Information Protection qui ont été gérées à partir du Portail Azure, vous devez migrer ces étiquettes vers la [plateforme d’étiquetage unifiée](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). Nous vous recommandons ensuite de désactiver le complément AIP pour les applications Office, afin de bénéficier de l’expérience d’étiquetage intégrée la plus récente. Pour plus d’informations, consultez [Migrer le complément Azure Information Protection (AIP) vers l’étiquetage intégré pour les applications Office](sensitivity-labels-aip.md).
+Si vous avez [Azure Information Protection](/azure/information-protection/what-is-information-protection) et que vous utilisez toujours des étiquettes Azure Information Protection qui ont été gérées à partir du Portail Azure, vous devez migrer ces étiquettes vers la [plateforme d’étiquetage unifiée](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). Nous vous recommandons ensuite de désactiver le complément AIP pour les applications Office afin de bénéficier de l’expérience d’étiquetage intégrée plus récente. Pour plus d’informations, consultez [Migrer le complément Azure Information Protection (AIP) vers l’étiquetage intégré pour les applications Office](sensitivity-labels-aip.md).
 
 Lorsque vous êtes prêt à protéger les données de votre organisation en utilisant des étiquettes de confidentialité :
 
@@ -78,7 +78,7 @@ Alternatively to using the default roles, you can create a new role group and ad
 > - **Enquêteurs Information Protection**
 > - **Lecteurs Information Protection**
 >
-> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals).
 
 Pour obtenir des instructions pour ajouter des utilisateurs au groupe de rôles par défaut, rôles ou créer vos propres groupes de rôles, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 

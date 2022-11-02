@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: eaa286aa1767b1cbf401d44035d1ed240131af69
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 155de9a60966f53b1b0e8b8d41e2d1e7e8e8a063
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68672950"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68813194"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
 
@@ -253,7 +253,7 @@ Par exemple, avec cette configuration :
 
 - Le mode de liste **des domaines de service** est défini sur **Autoriser**.
     - Contoso.com figure dans la liste.
--  Une stratégie DLP est définie sur **Bloquer** le chargement d’éléments sensibles qui contiennent des numéros de carte de crédit.
+    -  Une stratégie DLP est définie sur **Bloquer** le chargement d’éléments sensibles qui contiennent des numéros de carte de crédit.
  
 L’utilisateur tente de :
 
@@ -289,6 +289,15 @@ mais si un utilisateur tente de :
 
 > [!IMPORTANT]
 > Lorsque le mode de restriction de service est configuré sur « Autoriser », vous devez configurer au moins un domaine de service avant l’application des restrictions.
+
+Tableau récapitulative
+
+
+|Paramètre de liste de domaines de service |Charger un élément sensible sur un site sur la liste  |Charger un élément sensible sur un site qui n’est pas dans la liste  |
+|---------|---------|---------|
+|Autoriser   |- Aucune stratégie DLP n’est appliquée </br> - L’activité de l’utilisateur est auditée </br> - Événement généré        | - Les stratégies DLP sont appliquées </br> - Les actions configurées sont effectuées </br>- L’événement est généré </br>- L’alerte est générée          |
+|Bloquer    | - Les stratégies DLP sont appliquées </br> - Les actions configurées sont effectuées </br> - L’événement est généré </br> - L’alerte est générée         | - Aucune stratégie DLP n’est appliquée </br> - L’activité de l’utilisateur est auditée </br>- L’événement est généré         |
+
 
 Utilisez le format FQDN du domaine de service sans fin `.` lorsque vous ajoutez un domaine à la liste.
 

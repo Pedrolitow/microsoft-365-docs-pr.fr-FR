@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Guide de l’utilisateur de la version d’évaluation des solutions Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: b34caf007a9710dd351ec4a7e5ed456b5b19d840
-ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
+ms.openlocfilehash: f3683f195982eb2bb115dbd04cec7ded44c1a171
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68801977"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815394"
 ---
 # <a name="trial-user-guide-microsoft-purview-solutions"></a>Guide de l’utilisateur d’évaluation : Solutions Microsoft Purview
 
@@ -270,7 +270,7 @@ Tirez parti des workflows de bout en bout pour vous aider à identifier, trier e
 
 Quatre groupes de rôles sont utilisés pour configurer des autorisations pour gérer les fonctionnalités de gestion des risques internes, qui ont des rôles et un niveau d’accès différents. La configuration des autorisations sur la gestion des risques internes est essentielle avant de continuer.
 
-[Ajouter des utilisateurs à un groupe de rôles de gestion des risques internes](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
+[Ajouter des utilisateurs au groupe de rôles Gestion des risques internes](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
 
 Si vous ne pouvez pas voir les autorisations, veuillez contacter votre administrateur de locataire pour attribuer les bons rôles.
 

@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0d84b220496fd0a8f371e57492bb9f4cdd009be8
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 2caf9fb9c958eae004fe8754009d325673066129
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793739"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814624"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Nouveautés des solutions de conformité et de risque Microsoft Purview
 
@@ -49,6 +49,22 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 
 - **En préversion** : Nouvelle intégration de la conformité des communications [à la gestion des risques internes](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). La conformité des communications peut désormais fournir des signaux de risque détectés dans les messages aux stratégies de gestion des risques internes. Les utilisateurs à risque détectés dans les messages par la stratégie de conformité des communications agissent comme un événement déclencheur pour amener les utilisateurs dans l’étendue des stratégies de gestion des risques internes.
 
+### <a name="data-loss-prevention"></a>Protection contre la perte de données
+
+- **En préversion** Plusieurs mises à jour pour les groupes d’autorisation dans [Configurer les paramètres DLP du point de terminaison](/microsoft-365/compliance/dlp-configure-endpoint-settings.md) et [Utilisation de la protection contre la perte de données de point de terminaison](/microsoft-365/compliance/endpoint-dlp-using.md).
+    - [Groupes d’imprimantes](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#printer-groups-preview)
+    - [Groupes de périphériques de stockage USB amovibles](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#removable-storage-device-groups-preview)
+    - [Chemins d’accès de partage réseau](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#network-share-groups-preview)
+    - [Groupes de sites web](/microsoft-365/compliance/endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)
+    - [Groupes d’emplacements réseau VPN](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#vpn-settings-preview)
+    - [Domaines de service sensibles](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#sensitive-service-domains)
+- **En préversion** Les stratégies peuvent utiliser le regroupement de conditions, l’imbrication de groupes et l’utilisation d’opérateurs booléens (AND/OR/NOT) entre elles.
+    - [Conception de règles complexes](/microsoft-365/compliance/dlp-policy-design.md#complex-rule-design-preview)
+    - [Utiliser des classifieurs pouvant être entraînés comme conditions dans les stratégies DLP](/microsoft-365/compliance/dlp-policy-reference.md#location-support-for-how-content-can-be-defined)
+-  **En préversion** Pour les points de terminaison, prise en charge de la détection des éléments sensibles qui sont protégés par mot de passe ou chiffrés.
+    - [Conditions prises en charge par les appareils](/microsoft-365/compliance/dlp-policy-reference.md#conditions-devices-supports)
+- [100 nouveaux types de fichiers qui peuvent être analysés](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments.md#supported-file-types-for-mail-flow-rule-content-inspection) en **disponibilité générale**
+
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
 - **En préversion** : La gestion des risques internes introduit des [preuves d’investigation](/microsoft-365/compliance/insider-risk-management-forensic-evidence), qui permet de capturer des activités visuelles personnalisables sur plusieurs appareils pour aider votre organisation à mieux atténuer, comprendre et répondre aux risques potentiels liés aux données, comme l’exfiltration de données sensibles non autorisées.
@@ -71,9 +87,11 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 - **En préversion** : Les stratégies de [transfert de données](/privacy/priva/risk-management-policy-data-transfer) dans La gestion des risques de confidentialité offrent désormais des conditions de limites flexibles supplémentaires : détection des transferts en fonction des attributs Azure Active Directory des utilisateurs, des transferts entre utilisateurs dans différents groupes Microsoft 365 et des transferts entre sites SharePoint.
 
 ### <a name="on-premises-scanner"></a>Scanneur local
+
 - **En préversion** : le scanneur local Azure Information Protection (AIP) est renommé **Protection des données Microsoft Purview scanneur** et la [configuration est déplacée vers le portail de conformité Microsoft Purview](/information-protection/deploy-aip-scanner-configure-install).
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
 - Appel à l’action : [Conseils de migration](sensitivity-labels-aip.md) pour vous aider à passer du complément AIP pour les applications Office, avec un [playbook de migration](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) de notre équipe CxE (Customer Experience Engineering)
 - **Disponibilité générale (GA)** : contextes d’authentification pour les groupes d’étiquettes [et les paramètres de site](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) qui fonctionnent avec les stratégies d’accès conditionnel Azure AD pour appliquer des conditions d’accès plus strictes à un site.
 - **Disponibilité générale (GA)** : [autorisations de partage de site à l’aide de PowerShell](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
@@ -81,6 +99,11 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 - **En préversion** : le complément AIP pour les applications Office est [désactivé par défaut](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) et nécessite un nouveau paramètre pour remplacer cette valeur par défaut.
 - Prise en charge : [types de fichiers pris en charge pour SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types), après activation des étiquettes de confidentialité pour ces services.
 - Nouveau [prérequis pour la co-création](sensitivity-labels-coauthoring.md#prerequisites) et le client et le scanneur d’étiquetage unifié Azure Information Protection : l’utilisation du chiffrement double clé dans le même locataire que la fonctionnalité de co-édition n’est pas prise en charge.
+
+### <a name="trainable-classifiers"></a>Classifieurs avec capacité d’apprentissage
+
+- **Dans la préversion** 20 + nouveaux classifieurs pouvant être entraînés et un article de définitions de classifieur pouvant être entraînés autonome.
+    - [Définitions des classifieurs pouvant être formés](/microsoft-365/compliance/classifier-tc-definitions.md)
 
 ## <a name="september-2022"></a>Septembre 2022
 

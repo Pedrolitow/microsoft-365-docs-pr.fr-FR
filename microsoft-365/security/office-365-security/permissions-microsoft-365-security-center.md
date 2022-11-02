@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2fbf1cbdeedcbca9a29a8a161bd9bde2c803e97c
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 10cbbb5c374e75b9bf16430de1b478fa5ee320d4
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68624882"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815526"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Autorisations dans le Portail Microsoft 365 Defender
 
@@ -63,7 +63,7 @@ Les types de rôles et de groupes de rôles suivants sont disponibles dans la pa
 
 - **Rôles Azure AD** : vous pouvez afficher les rôles et les utilisateurs attribués, mais vous ne pouvez pas les gérer directement dans le Portail Microsoft 365 Defender. Les rôles Azure AD sont des rôles centraux qui attribuent des autorisations pour **tous les services** Microsoft 365.
 
-- **Les rôles de messagerie et de collaboration** : il s’agit des mêmes groupes de rôles que ceux disponibles dans le Centre de sécurité et de conformité, mais vous pouvez les gérer directement dans le Portail Microsoft 365 Defender. Les autorisations que vous attribuez ici sont spécifiques au Portail Microsoft 365 Defender, au portail de conformité Microsoft Purview, et au Centre de sécurité et de conformité, et ne couvrent pas toutes les autorisations nécessaires dans d’autres charges de travail Microsoft 365.
+- **Email & rôles de collaboration** : vous pouvez afficher et gérer ces groupes de rôles directement dans le portail Microsoft 365 Defender. Ces autorisations sont spécifiques au portail Microsoft 365 Defender et au portail de conformité Microsoft Purview, et ne couvrent pas toutes les autorisations nécessaires dans les autres charges de travail Microsoft 365.
 
 :::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="Page Autorisations et rôles du portail Microsoft 365 Defender" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
@@ -91,9 +91,9 @@ Pour plus d’informations, consultez [Affichage et attribution des rôles d’a
 
 ### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>Rôles de collaboration et de messagerie dans le Portail Microsoft 365 Defender
 
-Lorsque vous ouvrez le portail Microsoft 365 Defender sur <https://security.microsoft.com> et accédez à **Rôles d’e-mail et de collaboration** \> **Autorisations et rôles** \> **Rôles de messagerie et de collaboration**\>**Rôles** (ou directement sur <https://security.microsoft.com/emailandcollabpermissions>), vous verrez les mêmes groupes de rôles disponibles dans le Centre de sécurité et de conformité.
+Dans le portail Microsoft 365 Defender à <https://security.microsoft.com> \> **Email &** page \> Rôles de collaboration \> **Autorisations & rôles** Email & rôles de **collaboration** \> **Rôles** (ou directement sur <https://security.microsoft.com/emailandcollabpermissions>), vous verrez les mêmes groupes de rôles que disponibles dans le portail de conformité Microsoft Purview à l’adresse <https://compliance.microsoft.com> \> \> **Page Autorisations des**  **solutions** \> Microsoft Purview Rôles (ou directement à l’adresse <https://compliance.microsoft.com/compliancecenterpermissions>).
 
-Pour plus d’informations sur ces groupes de rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](permissions-in-the-security-and-compliance-center.md).
+Pour plus d’informations sur ces groupes de rôles, consultez [Rôles et groupes de rôles dans les portails de conformité Microsoft 365 Defender et Microsoft Purview](permissions-in-the-security-and-compliance-center.md)
 
 #### <a name="modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal"></a>Modifier l’abonnement au rôle de collaboration et de messagerie dans le Portail Microsoft 365 Defender
 

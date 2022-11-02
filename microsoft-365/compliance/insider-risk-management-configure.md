@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1ba34b942c125ec08cb0372fa09c50e68e4c1a32
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 5daa694e32399e1b62cd34f1ed7c14fb654f9997
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793651"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814514"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -125,23 +125,21 @@ Les membres des rôles suivants peuvent affecter des utilisateurs à des groupes
 > [!NOTE]
 > Ces groupes de rôles ne sont actuellement pas pris en charge sur Privileged Identity Management (PIM). Pour en savoir plus sur PIM, consultez [Attribuer des rôles Azure AD dans Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
-### <a name="add-users-to-an-insider-risk-management-role-group"></a>Ajouter des utilisateurs à un groupe de rôles de gestion des risques internes
+### <a name="add-users-to-the-insider-risk-management-role-group"></a>Ajouter des utilisateurs au groupe de rôles Gestion des risques internes
 
-Effectuez les étapes suivantes pour ajouter des utilisateurs à un groupe de rôles de gestion des risques internes :
+Effectuez les étapes suivantes pour ajouter des utilisateurs à ce groupe de rôles :
 
 1. Connectez-vous [à portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte administrateur dans votre organisation Microsoft 365.
 
-2. Dans le Centre de conformité de la sécurité &amp; , accédez à **Autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+2. Sélectionnez **Autorisations** dans la navigation de gauche, **puis rôles sous** la liste **des solutions Microsoft Purview** .
 
-3. Sélectionnez le groupe de rôles de gestion des risques internes auquel vous souhaitez ajouter des utilisateurs, puis sélectionnez **Modifier le groupe de rôles**.
+3. Sélectionnez le groupe *de rôles Gestion des risques internes* , puis **sélectionnez Modifier**.
 
-4. Sélectionnez **Choisir des membres** dans le volet de navigation gauche, puis sélectionnez **Modifier**.
+4. Sélectionnez l’onglet **Choisir des utilisateurs** , puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
-5. Sélectionnez **Ajouter** , puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
+6. Choisissez **Sélectionner**, puis **Suivant**.
 
-6. Sélectionnez **Ajouter**, puis **Terminé**.
-
-7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes.
+7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Terminé** pour effectuer les étapes.
 
 ## <a name="step-2-required-enable-the-microsoft-365-audit-log"></a>Étape 2 (obligatoire) : Activer le journal d’audit Microsoft 365
 

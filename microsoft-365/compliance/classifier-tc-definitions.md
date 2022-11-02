@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Il s’agit d’une liste de tous les classifieurs pouvant être entraînés, de leurs définitions et de tous les types de fichiers qu’ils recherchent pour trouver des informations sensibles.
-ms.openlocfilehash: d62e3e9b32a7ab977c0b052725b472ac326967f3
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 91f4350250adf5f2bd20bc67183f183539887a6c
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673148"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814052"
 ---
 # <a name="trainable-classifiers-definitions"></a>Définitions des classifieurs pouvant être formés
 
 Microsoft Purview est fourni avec plusieurs classifieurs préentraînés. Ils apparaissent dans la **vue classifieurs portail de conformité Microsoft Purview** \> Classification **de données** \> **Classifiables** avec l’état .`Ready to use`
 
 
-- **Adulte, racé et gory** : détecte les images de ce type. La taille des images doit être comprise entre 50 kilo-octets (Ko) et 4 mégaoctets (Mo) et être supérieure à 50 x 50 pixels dans les dimensions de hauteur x largeur. L’analyse et la détection sont prises en charge pour Exchange Online messages électroniques, ainsi que pour les canaux et conversations Microsoft Teams. Détecte le contenu dans les fichiers .jpeg, .png, .gif et .bmp.
+- **Adulte, racé et gory** : détecte les images de ce type. La taille des images doit être comprise entre 100 kilo-octets (Ko) et 4 mégaoctets (Mo) et être supérieure à 50 x 50 pixels dans les dimensions de hauteur x largeur. L’analyse et la détection sont prises en charge pour Exchange Online messages électroniques, ainsi que pour les canaux et conversations Microsoft Teams. Détecte le contenu dans les fichiers .jpeg, .png, .gif et .bmp.
 
 - **Accords** : Détecte le contenu lié aux accords juridiques tels que les accords de non-divulgation, les énoncés de travail, les contrats de prêt et de bail, les contrats d’emploi et de non-concurrence. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 

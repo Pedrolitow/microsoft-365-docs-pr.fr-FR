@@ -24,12 +24,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c837bee4ccbab7f146c553b97a8d44bff8ae2949
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 75d25c6f138e7a48494361c9d88482bb48fce611
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769972"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814338"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -131,19 +131,19 @@ Choisissez parmi ces options de groupe de rôles de solution lors de la configur
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Option 1 : Affecter tous les utilisateurs de conformité au groupe de rôles Conformité des communications
 
-1. Connectez-vous à [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) l’aide des informations d’identification d’un compte administrateur dans votre organisation Microsoft 365.
+Effectuez les étapes suivantes pour ajouter des utilisateurs à ce groupe de rôles :
 
-2. Dans le Centre de conformité de la sécurité &amp; , accédez à **Autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte administrateur dans votre organisation Microsoft 365.
 
-3. Sélectionnez le groupe de rôles *Conformité des communications* , puis **sélectionnez Modifier le groupe de rôles**.
+2. Sélectionnez **Autorisations** dans la navigation de gauche, **puis rôles sous** la liste **des solutions Microsoft Purview** .
 
-4. Sélectionnez **Choisir des membres** dans le volet de navigation gauche, puis sélectionnez **Modifier**.
+3. Sélectionnez le groupe de rôles *Conformité des communications* , puis **modifier**.
 
-5. Sélectionnez **Ajouter** , puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles *Conformité des communications* .
+4. Sélectionnez l’onglet **Choisir des utilisateurs** , puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
-6. Sélectionnez **Ajouter**, puis **Terminé**.
+6. Choisissez **Sélectionner**, puis **Suivant**.
 
-7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes.
+7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Terminé** pour effectuer les étapes.
 
 ### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>Option 2 : Affecter des utilisateurs à des groupes de rôles de conformité des communications spécifiques
 

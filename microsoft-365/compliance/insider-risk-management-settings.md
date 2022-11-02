@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0dc240addd772dc820838a1f213fcfeb9aa43a07
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 6304ff45bb5ee9b05061f0ff4c793c875fed4233
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793365"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68812534"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques internes
 
@@ -360,15 +360,15 @@ Pour utiliser les API pour passer en revue les informations d’alerte de risque
 
 ![Paramètres d’alerte d’exportation de gestion des risques internes.](../media/insider-risk-settings-export.png)
 
-Les informations d’alerte contiennent des informations provenant du schéma d’alerte de sécurité et de conformité et du schéma commun de l’API activité de gestion Office 365.
+Les informations d’alerte contiennent des informations provenant du schéma alertes de sécurité et de conformité et du schéma commun de [l’API d’activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema).
 
-Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le schéma d’alerte Sécurité & Conformité :
+Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le schéma Alertes de sécurité et de conformité :
 
 | **Paramètre d’alerte** | **Description** |
 |:------------------|:----------------|
 | AlertType | Le type de l’alerte est *Personnalisé*.  |
 | AlertId | GUID de l’alerte. Les alertes de gestion des risques internes sont mutables. À mesure que l’état de l’alerte change, un nouveau journal avec le même Id d’alerte est généré. Cet Id d’alerte peut être utilisé pour mettre en corrélation les mises à jour d’une alerte. |
-| Catégorie | La catégorie de l’alerte est *InsiderRiskManagement*. Cette catégorie peut être utilisée pour distinguer ces alertes des autres alertes de sécurité & conformité. |
+| Catégorie | La catégorie de l’alerte est *InsiderRiskManagement*. Cette catégorie peut être utilisée pour faire la distinction entre ces alertes et les autres alertes de sécurité et de conformité. |
 | Comments | Commentaires par défaut pour l’alerte. Les valeurs sont *Nouvelle alerte* (journalisée lors de la création d’une alerte) et *Alerte mise à jour* (journalisée en cas de mise à jour d’une alerte). Utilisez alertID pour mettre en corrélation les mises à jour d’une alerte. |
 | Données | Les données de l’alerte incluent l’ID utilisateur unique, le nom d’utilisateur principal et la date et l’heure (UTC) auxquelles l’utilisateur a été déclenché dans une stratégie. |
 | Nom | Nom de la stratégie de gestion des risques internes qui a généré l’alerte. |
@@ -376,7 +376,7 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | Severity | Gravité de l’alerte. Les valeurs sont *High*, *Medium* ou *Low*. |
 | Source | Source de l’alerte. La valeur est *Office 365 Security & Compliance*. |
 | État | État de l’alerte. Les valeurs sont *Actif* (*Révision des besoins* dans le risque interne), *Examen* (*Confirmé* dans le risque interne), *Résolu* (*Résolu* dans le risque interne), *Ignoré* (*Ignoré* dans le risque interne). |
-| Version | Version du schéma d’alerte de sécurité et de conformité. |
+| Version | Version du schéma alertes de sécurité et de conformité. |
 
 Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le [schéma commun de l’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 

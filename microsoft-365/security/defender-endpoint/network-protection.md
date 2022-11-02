@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: ab9af833225c26a0c0651a6fd3adacf948881f34
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 99d1d4bfbbce6a010f9823071b2c3be8920aa409
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673192"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815548"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -96,7 +96,7 @@ La protection réseau est une partie essentielle de la pile de protection et de 
 > [!TIP]
 > Pour plus d’informations sur la protection réseau pour Windows Server, Linux, MacOS et Mobile Threat Defense (MTD), consultez [La chasse proactive aux menaces avec la chasse avancée](advanced-hunting-overview.md).
 
-### <a name="block-command-and-control-c2-attacks"></a>Bloquer les attaques de commande et de contrôle (C2)
+### <a name="block-command-and-control-attacks"></a>Bloquer les attaques de commande et de contrôle
 
 Les ordinateurs serveur de commande et de contrôle (C2) sont utilisés par des utilisateurs malveillants pour envoyer des commandes à des systèmes compromis par des programmes malveillants, puis exercer un certain type de contrôle sur les systèmes compromis. Les attaques C2 se cachent généralement dans les services cloud tels que le partage de fichiers et les services de messagerie web, ce qui permet aux serveurs C2 d’éviter la détection en se mêlant au trafic classique.
 
@@ -108,6 +108,12 @@ Les serveurs C2 peuvent être utilisés pour lancer des commandes qui peuvent :
 - Diffuser des programmes malveillants, tels que des rançongiciels
 
 Le composant de protection réseau de Defender pour point de terminaison identifie et bloque les connexions aux infrastructures C2 utilisées dans les attaques par ransomware gérées par l’homme, à l’aide de techniques telles que l’apprentissage automatique et l’identification intelligente des indicateurs de compromission (IoC).
+
+#### <a name="network-protection-c2-detection-and-remediation"></a>Protection réseau : détection et correction C2
+
+Dans sa forme initiale, le ransomware est une menace de base, préprogrammée et axée sur des résultats limités et spécifiques (par exemple, le chiffrement d’un ordinateur). Toutefois, les rançongiciels ont évolué en une menace sophistiquée pilotée par l’homme, adaptative et axée sur des résultats à plus grande échelle et plus répandus, comme la conservation des ressources ou des données d’une organisation entière contre rançon.
+
+La prise en charge des serveurs de commande et de contrôle (C2) est un élément clé de cette évolution des ransomwares et permet à ces attaques de s’adapter à l’environnement qu’elles ciblent. La rupture du lien avec l’infrastructure de commande et de contrôle arrête la progression d’une attaque à l’étape suivante. Pour plus d’informations sur la détection et la correction de C2, consultez [Détection et correction des attaques de commande et de contrôle au niveau de la couche réseau](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/detecting-and-remediating-command-and-control-attacks-at-the/ba-p/3650607).
 
 #### <a name="network-protection-new-toast-notifications"></a>Protection réseau : nouvelles notifications toast
 
@@ -158,14 +164,6 @@ Un utilisateur visite un site web :
   - **Commentaires** La notification toast présente à l’utilisateur un lien pour envoyer un ticket, que l’utilisateur peut utiliser pour envoyer des commentaires à l’administrateur dans le but de justifier l’accès au site.
 
     :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Affiche une notification de blocage du contenu d’hameçonnage connu de protection réseau." lightbox="images/network-protection-phishing-blocked.png":::
-
-### <a name="network-protection-c2-detection-and-remediation"></a>Protection réseau : détection et correction C2
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-Dans sa forme initiale, le ransomware est une menace de base, préprogrammée et axée sur des résultats limités et spécifiques (par exemple, le chiffrement d’un ordinateur). Toutefois, les rançongiciels sont devenus une menace sophistiquée pilotée par l’homme, adaptative et axée sur une plus grande échelle et des résultats plus répandus; comme la conservation des ressources ou des données d’une organisation entière contre rançon.
-
-La prise en charge des serveurs de commande et de contrôle (C2) est un élément clé de cette évolution des ransomwares et permet à ces attaques de s’adapter à l’environnement qu’elles ciblent. La rupture du lien avec l’infrastructure de commande et de contrôle arrête la progression d’une attaque à l’étape suivante.
 
 ## <a name="smartscreen-unblock"></a>Déblocage SmartScreen
 

@@ -14,17 +14,19 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Migration OneDrive interlocataire
-ms.openlocfilehash: 6e2d925d6512df4fa62d3b8d5b71138439f836e8
-ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
+ms.openlocfilehash: 0088e7088dd67fd3a4d189eacdacde5362d0ff73
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68807517"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814096"
 ---
 # <a name="cross-tenant-onedrive-migration"></a>Migration OneDrive interlocataire
 
 >[!Note]
 > Les informations contenues dans cet article font référence à **la migration OneDrive interlocataire**. Pour la migration de boîtes aux lettres, consultez [Migration de boîtes aux lettres entre locataires](/microsoft-365/enterprise/cross-tenant-mailbox-migration).
+
+## <a name="overview"></a>Vue d’ensemble
 
 Pendant les fusions ou les cessions, vous avez généralement besoin de la possibilité de déplacer des comptes OneDrive d’utilisateurs vers un nouveau locataire Microsoft 365. Avec la migration OneDrive interlocataire, les administrateurs de locataires peuvent utiliser des outils familiers tels que *SharePoint Online PowerShell* pour effectuer la transition des utilisateurs vers leur nouvelle organisation.
 
@@ -32,15 +34,13 @@ Les administrateurs SharePoint de deux locataires distincts peuvent utiliser l�
 
 Jusqu’à 4 000 comptes OneDrive peuvent être planifiés pour la migration à l’avance à un moment donné. Une fois planifiées, les migrations se produisent sans que les données de l’utilisateur ne quittent jamais le cloud Microsoft 365 et avec une interruption minimale, ne nécessitant que quelques minutes où oneDrive d’un utilisateur sera en lecture seule. Une fois les migrations terminées, une redirection est placée à l’emplacement du OneDrive d’origine de l’utilisateur, de sorte que tous les liens vers des fichiers et des dossiers peuvent continuer à fonctionner dans le nouvel emplacement. 
 
->[!Note]
-> Cette fonctionnalité n’est actuellement pas prise en charge pour les utilisateurs du cloud du secteur public, notamment GCC, Consumer, GCC High ou DoD.
+Cette fonctionnalité n’est pas prise en charge pour les utilisateurs du cloud public, notamment GCC, Consumer, GCC de haut niveau ou DoD.
 
+## <a name="licensing"></a>Licences
 
-
->[!Important]
->- Chaque utilisateur disposant d’une migration interlocataire OneDrive doit disposer d’une licence pour **la migration des données utilisateur inter-locataires**.
->- La migration OneDrive interlocataire ne peut pas être utilisée pour les clients qui utilisent Service Encryption avec la clé client Microsoft Purview. [En savoir plus sur le chiffrement de service avec la clé client Microsoft Purview - Microsoft Purview](/microsoft-365/compliance/customer-key-overview)
-
+**La migration des données utilisateur interlocataires** est disponible en tant que module complémentaire aux plans d’abonnement Microsoft 365 suivants pour les clients Accord Entreprise. Les licences utilisateur sont par migration (frais ponctuels). Pour plus d’informations, contactez l’équipe de votre compte Microsoft.
+ 
+Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive Entreprise.
 
 
 ## <a name="prerequisites-and-settings"></a>Composants requis et paramètres
@@ -97,7 +97,7 @@ Ces redirections restent jusqu’à ce que le locataire source soit déprovision
 - **Étape 3 :** [Vérifier que l’approbation a été établie](cross-tenant-onedrive-migration-step3.md) 
 - **Étape 4 :** [Précréer des utilisateurs et des groupes](cross-tenant-onedrive-migration-step4.md)  
 - **Étape 5 :** [Préparer le mappage d’identité](cross-tenant-onedrive-migration-step5.md)
-- **Étape 6 :** [Démarrer une migration OneDrive interlocataire]
+- **Étape 6 :** [Démarrer une migration OneDrive interlocataire](cross-tenant-onedrive-migration-step6.md)
 - **Étape 7 :** [Étapes post-migration](cross-tenant-onedrive-migration-step7.md)
 
 ## <a name="step-1-connect-to-source-and-target-tenants"></a>Étape 1 : [Se connecter aux locataires source et cible](cross-tenant-onedrive-migration-step1.md)

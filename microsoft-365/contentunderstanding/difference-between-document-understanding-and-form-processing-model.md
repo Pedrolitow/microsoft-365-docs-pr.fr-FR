@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les principales différences entre les modèles personnalisés dans Microsoft Syntex.
-ms.openlocfilehash: e5ef01e7d0bd575c58d5bd38867c5690fdf4a86c
-ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
+ms.openlocfilehash: a6102debf34c56807e8ca10b08c6f5abc52da3de
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68807604"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814888"
 ---
 # <a name="compare-custom-models-in-microsoft-syntex"></a>Comparer des modèles personnalisés dans Microsoft Syntex 
 
@@ -26,7 +26,9 @@ Utilisez le tableau suivant pour voir les différences dans les modèles personn
 
 | Fonctionnalité | Traitement de documents non structurés | Traitement de documents en forme libre | Traitement de document structuré |
 | ------- | ------- | ------- | ------- |
+| Méthode de création | Méthode d’entraînement | Méthode de sélection de forme libre | Layout, méthode |
 | Utiliser pour ce type de contenu | Formats de fichiers non structurés ou semi-structurés, par exemple des documents Office où il existe des différences dans la disposition, mais des informations similaires à extraire. | Formats de fichiers non structurés et de forme libre, par exemple des documents qui n’ont pas de structure définie, comme des lettres, des contrats et des instructions de travail. | Formats de fichiers structurés et semi-structurés, par exemple des fichiers PDF pour le contenu des formulaires tels que des factures ou des bons de commande dont la disposition et la mise en forme sont similaires. |
+| Méthode d’entraînement | Méthode d’enseignement | Méthode de sélection de forme libre | Layout, méthode |
 | Création de modèles | Modèle créé dans SharePoint dans un nouveau site, le centre de contenu.  | Modèle créé dans [AI Builder](/ai-builder/overview) avec un accès transparent à partir de la bibliothèque de documents SharePoint.| Modèle créé dans [AI Builder](/ai-builder/overview) avec un accès transparent à partir de la bibliothèque de documents SharePoint. |
 | Type de classification | Classifieur pouvant être formé avec des extracteurs facultatifs utilisant l’apprentissage automatique pour attribuer l’emplacement du document aux données à extraire. | Non applicable | Non applicable |
 | Emplacements | Peut être appliqué à plusieurs bibliothèques. | Peut être appliqué à plusieurs bibliothèques. | Peut être appliqué à plusieurs bibliothèques. |
