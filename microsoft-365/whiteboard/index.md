@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/14/2022
 ms.locfileid: "67681864"
 ---
-# <a name="presentation-de-microsoft-whiteboard"></a>Présentation de Microsoft Whitboard
+# <a name="presentation-de-microsoft-whiteboard"></a>Présentation de Microsoft Whiteboard
 
 Microsoft Whiteboard présent dans Microsoft 365 est un tableau blanc numérique à format libre où les personnes, le contenu et les idées se rencontrent. Whiteboard permet aux membres d'une équipe de collaborer en temps réel, où que vous soyez. Avec son tableau blanc infini conçu pour le stylet, le toucher et le clavier, donnez libre cours à vos idées.
 
